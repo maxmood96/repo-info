@@ -22,7 +22,7 @@
 ## `rocket.chat:7`
 
 ```console
-$ docker pull rocket.chat@sha256:4b9adab0ba3277a8163b0f375b5e63a5ace5d4bf803b029787337fa3807f35be
+$ docker pull rocket.chat@sha256:cab40df34f8dc1d10cd23f8a7669a1fa08593e72cccb7a1f0d2b148b6faf0493
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33,99 +33,99 @@ $ docker pull rocket.chat@sha256:4b9adab0ba3277a8163b0f375b5e63a5ace5d4bf803b029
 ### `rocket.chat:7` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:46eae788445e7cc9e27cd1beb9770c2944f024a8f3932539ccd17fe1b32fac5e
+$ docker pull rocket.chat@sha256:471de4d52d64a29a47177832c0817d225080e170e223d83cb59d32367e31f92c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **494.7 MB (494655930 bytes)**  
+-	Total Size: **494.7 MB (494654374 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b974ad6fcbb4cd240a69da24bdc83696f48594046e47f29ebb0b47a10eff3ba`
+-	Image ID: `sha256:452739671559c7fe412f5b38379903367455c3557e15560dd3c537f77e82ee56`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:28 GMT
 ENV DENO_VERSION=1.43.5
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:28 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 VOLUME [/app/uploads]
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 WORKDIR /app
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 ENV NODE_ENV=production
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 ENV RC_VERSION=7.12.0
-# Mon, 03 Nov 2025 17:47:55 GMT
+# Tue, 04 Nov 2025 04:24:22 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Mon, 03 Nov 2025 17:47:55 GMT
+# Tue, 04 Nov 2025 04:24:22 GMT
 USER rocketchat
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 WORKDIR /app/bundle
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 EXPOSE map[3000/tcp:{}]
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ccf90dcfa40ae02ccd1024b3fa340da78678bbf8f750c53f7ea1914663730ccb`  
-		Last Modified: Mon, 03 Nov 2025 17:49:11 GMT  
-		Size: 48.7 MB (48723786 bytes)  
+	-	`sha256:cb9c26066a009725fc08c6252c6e993082b0c4091b2b8bba4da7db06aa05b836`  
+		Last Modified: Tue, 04 Nov 2025 04:25:35 GMT  
+		Size: 48.7 MB (48723735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7955e8448e344d8ad5d8a7b5306b3c65aaad41ce5b9b397d2b394aa4d7ce5575`  
-		Last Modified: Mon, 03 Nov 2025 17:49:01 GMT  
-		Size: 1.2 KB (1178 bytes)  
+	-	`sha256:0d7e9f5121a6a71b5b54e8479d540da6493bc3c17120c2eb3d36c041fb66b7fc`  
+		Last Modified: Tue, 04 Nov 2025 04:25:25 GMT  
+		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13937dfd8ddbdf35552b2c964553c8cd4a61416f9a03078a7179330d9368f2f0`  
-		Last Modified: Mon, 03 Nov 2025 20:43:20 GMT  
-		Size: 366.5 MB (366504582 bytes)  
+	-	`sha256:80d4871aa792f720ba6402015f15efde12b84a88ec0c1b22d9b95b8f47768e3b`  
+		Last Modified: Tue, 04 Nov 2025 09:53:54 GMT  
+		Size: 366.5 MB (366502954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -135,27 +135,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:10894a1e393e2d23d0c02d88a344ebc1a537043f153c566fa90a61c44b0dd5ad
+$ docker pull rocket.chat@sha256:c4b2023db9c69057dda46854dd07ab10a020e9c88325b16a1096576cdbbcf94d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 KB (23671 bytes)**  
+-	Total Size: **23.7 KB (23672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:727a611272f8cb31709483e012b5b3732b1a5298a6464026de00f96690c77498`
+-	Image ID: `sha256:c31bf5b49127bd3ca906fbb73dd8cf00a707ff0674fc2fc6c8669748ee81a623`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fc3fa56aacabc81033c62afefca0b963d2d41259c9fe01eea9c71f400a5f3d7e`  
-		Last Modified: Mon, 03 Nov 2025 20:42:19 GMT  
-		Size: 23.7 KB (23671 bytes)  
+	-	`sha256:ae7b49a5c933278922b509166971b63af55e8bc52c926fbb607970cd3f75fa0d`  
+		Last Modified: Tue, 04 Nov 2025 11:42:18 GMT  
+		Size: 23.7 KB (23672 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.10`
 
 ```console
-$ docker pull rocket.chat@sha256:c639a796a821dc45138446e2c8812a6a94133e2a0aca24a8c373a8fc5a9457c8
+$ docker pull rocket.chat@sha256:9fd21d1a0e37a89483815222fbebd171241d0b32ef5220a2dab50a9434f408c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -166,99 +166,99 @@ $ docker pull rocket.chat@sha256:c639a796a821dc45138446e2c8812a6a94133e2a0aca24a
 ### `rocket.chat:7.10` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:e55a129b452447a34653c0c2f220365121e345d4d15a76f66e174ff66d2f9c1f
+$ docker pull rocket.chat@sha256:7b14976e00542a14b91a72fc9bf05a6708560480cd3d783c56edbf8f6102ec5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **472.2 MB (472191383 bytes)**  
+-	Total Size: **472.2 MB (472190150 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e4303edffe353b10f02b1966ffc6ab174289f76690068bb8e6695571eb21805`
+-	Image ID: `sha256:8d21ae24204f2ee46e072ba96356cb908932cd3d43498c270c09ea3222580cb0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 VOLUME [/app/uploads]
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 WORKDIR /app
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 ENV NODE_ENV=production
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 ENV RC_VERSION=7.10.3
-# Wed, 29 Oct 2025 17:10:13 GMT
+# Tue, 04 Nov 2025 04:25:33 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 29 Oct 2025 17:10:13 GMT
+# Tue, 04 Nov 2025 04:25:33 GMT
 USER rocketchat
-# Wed, 29 Oct 2025 17:10:14 GMT
+# Tue, 04 Nov 2025 04:25:34 GMT
 WORKDIR /app/bundle
-# Wed, 29 Oct 2025 17:10:14 GMT
+# Tue, 04 Nov 2025 04:25:34 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 29 Oct 2025 17:10:14 GMT
+# Tue, 04 Nov 2025 04:25:34 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 29 Oct 2025 17:10:14 GMT
+# Tue, 04 Nov 2025 04:25:34 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1cb9ebc280a7561997a5e5c09b5704654ffc7858787255f3f5ac5c7fed6e984`  
-		Last Modified: Wed, 29 Oct 2025 17:11:27 GMT  
-		Size: 48.7 MB (48723714 bytes)  
+	-	`sha256:554f883078bdfc30663540f6db165d77c174f7da5de524a9753ba1ac136fcc10`  
+		Last Modified: Tue, 04 Nov 2025 04:26:34 GMT  
+		Size: 48.7 MB (48723767 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5309cd1f4425580582af8ce387c896a99b219ab1e7546deaebe994a98594d7b9`  
-		Last Modified: Wed, 29 Oct 2025 17:11:21 GMT  
-		Size: 1.2 KB (1173 bytes)  
+	-	`sha256:64e9d598b4e611eff4f6f60292367c6dd0d6c13fbc53e5c406b9cecc927fa499`  
+		Last Modified: Tue, 04 Nov 2025 04:26:31 GMT  
+		Size: 1.2 KB (1174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36152b3281e3e4339b5482bebce480fca94acdf1cc2207e363d86d937aaa6fe2`  
-		Last Modified: Wed, 29 Oct 2025 19:42:56 GMT  
-		Size: 344.0 MB (344040112 bytes)  
+	-	`sha256:d1520c7c79915215764b283625a9ead38e51dbb6a5295cb58051e4568ee6e515`  
+		Last Modified: Tue, 04 Nov 2025 11:42:51 GMT  
+		Size: 344.0 MB (344038697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -268,27 +268,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.10` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:6041515a63e1d0de3ae30f5ec204706d152f987dcdd403342f4b15999c150100
+$ docker pull rocket.chat@sha256:a3cd1c787654eeeae0c8e184ae5047342955cb892c5ab647438d58742e49a4c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a7008636c2c025f5bc8f79dbf27b3039e94184a34a63573fba65204d787b67f`
+-	Image ID: `sha256:de415a0388fb934f91e0d2b356dad12ec10f5ddbdf5d6fc2055e21ada4caf5bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:987f9f2f43a50b15c6e4d4990ed27599d7d93e21453d847c4e486a6450225675`  
-		Last Modified: Wed, 29 Oct 2025 19:42:21 GMT  
+	-	`sha256:8dc5f07aef6b50fc3075fcff1f493308e6f191e908485d4eb37c4bc5e29a698a`  
+		Last Modified: Tue, 04 Nov 2025 11:42:22 GMT  
 		Size: 23.1 KB (23067 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.10.3`
 
 ```console
-$ docker pull rocket.chat@sha256:c639a796a821dc45138446e2c8812a6a94133e2a0aca24a8c373a8fc5a9457c8
+$ docker pull rocket.chat@sha256:9fd21d1a0e37a89483815222fbebd171241d0b32ef5220a2dab50a9434f408c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -299,99 +299,99 @@ $ docker pull rocket.chat@sha256:c639a796a821dc45138446e2c8812a6a94133e2a0aca24a
 ### `rocket.chat:7.10.3` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:e55a129b452447a34653c0c2f220365121e345d4d15a76f66e174ff66d2f9c1f
+$ docker pull rocket.chat@sha256:7b14976e00542a14b91a72fc9bf05a6708560480cd3d783c56edbf8f6102ec5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **472.2 MB (472191383 bytes)**  
+-	Total Size: **472.2 MB (472190150 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e4303edffe353b10f02b1966ffc6ab174289f76690068bb8e6695571eb21805`
+-	Image ID: `sha256:8d21ae24204f2ee46e072ba96356cb908932cd3d43498c270c09ea3222580cb0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 VOLUME [/app/uploads]
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 WORKDIR /app
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 ENV NODE_ENV=production
-# Wed, 29 Oct 2025 17:09:20 GMT
+# Tue, 04 Nov 2025 04:24:28 GMT
 ENV RC_VERSION=7.10.3
-# Wed, 29 Oct 2025 17:10:13 GMT
+# Tue, 04 Nov 2025 04:25:33 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 29 Oct 2025 17:10:13 GMT
+# Tue, 04 Nov 2025 04:25:33 GMT
 USER rocketchat
-# Wed, 29 Oct 2025 17:10:14 GMT
+# Tue, 04 Nov 2025 04:25:34 GMT
 WORKDIR /app/bundle
-# Wed, 29 Oct 2025 17:10:14 GMT
+# Tue, 04 Nov 2025 04:25:34 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 29 Oct 2025 17:10:14 GMT
+# Tue, 04 Nov 2025 04:25:34 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 29 Oct 2025 17:10:14 GMT
+# Tue, 04 Nov 2025 04:25:34 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1cb9ebc280a7561997a5e5c09b5704654ffc7858787255f3f5ac5c7fed6e984`  
-		Last Modified: Wed, 29 Oct 2025 17:11:27 GMT  
-		Size: 48.7 MB (48723714 bytes)  
+	-	`sha256:554f883078bdfc30663540f6db165d77c174f7da5de524a9753ba1ac136fcc10`  
+		Last Modified: Tue, 04 Nov 2025 04:26:34 GMT  
+		Size: 48.7 MB (48723767 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5309cd1f4425580582af8ce387c896a99b219ab1e7546deaebe994a98594d7b9`  
-		Last Modified: Wed, 29 Oct 2025 17:11:21 GMT  
-		Size: 1.2 KB (1173 bytes)  
+	-	`sha256:64e9d598b4e611eff4f6f60292367c6dd0d6c13fbc53e5c406b9cecc927fa499`  
+		Last Modified: Tue, 04 Nov 2025 04:26:31 GMT  
+		Size: 1.2 KB (1174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36152b3281e3e4339b5482bebce480fca94acdf1cc2207e363d86d937aaa6fe2`  
-		Last Modified: Wed, 29 Oct 2025 19:42:56 GMT  
-		Size: 344.0 MB (344040112 bytes)  
+	-	`sha256:d1520c7c79915215764b283625a9ead38e51dbb6a5295cb58051e4568ee6e515`  
+		Last Modified: Tue, 04 Nov 2025 11:42:51 GMT  
+		Size: 344.0 MB (344038697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -401,27 +401,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.10.3` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:6041515a63e1d0de3ae30f5ec204706d152f987dcdd403342f4b15999c150100
+$ docker pull rocket.chat@sha256:a3cd1c787654eeeae0c8e184ae5047342955cb892c5ab647438d58742e49a4c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a7008636c2c025f5bc8f79dbf27b3039e94184a34a63573fba65204d787b67f`
+-	Image ID: `sha256:de415a0388fb934f91e0d2b356dad12ec10f5ddbdf5d6fc2055e21ada4caf5bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:987f9f2f43a50b15c6e4d4990ed27599d7d93e21453d847c4e486a6450225675`  
-		Last Modified: Wed, 29 Oct 2025 19:42:21 GMT  
+	-	`sha256:8dc5f07aef6b50fc3075fcff1f493308e6f191e908485d4eb37c4bc5e29a698a`  
+		Last Modified: Tue, 04 Nov 2025 11:42:22 GMT  
 		Size: 23.1 KB (23067 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.11`
 
 ```console
-$ docker pull rocket.chat@sha256:b9af02fdfa4ac638c1a3a23bfa035f46fc8c7be6179e0fe82a57a73cdcae0e85
+$ docker pull rocket.chat@sha256:152bd18716fcfde5b2ccbb22c6ef883f9a5a22e5572c691f42a82863c73d8b51
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -432,99 +432,99 @@ $ docker pull rocket.chat@sha256:b9af02fdfa4ac638c1a3a23bfa035f46fc8c7be6179e0fe
 ### `rocket.chat:7.11` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:e5fed283afbb5f477e15b9d77523e341b6c71d3d2435f084689d8a7d197050da
+$ docker pull rocket.chat@sha256:bb32a65e8f15dee845ad6886cc8c83cf1e485d402135826ec9af0a2f0616a14b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **484.5 MB (484504832 bytes)**  
+-	Total Size: **484.5 MB (484504039 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d8d9189573cae06cad91289284586985d125d91b1a210efa87e4c7deb418697`
+-	Image ID: `sha256:6ca0ad53914ff29c48e5c49d4b7fecfc343108eb9ab92b346e838749ba8e03e5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 VOLUME [/app/uploads]
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 WORKDIR /app
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 ENV NODE_ENV=production
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 ENV RC_VERSION=7.11.0
-# Wed, 29 Oct 2025 17:07:41 GMT
+# Tue, 04 Nov 2025 04:24:56 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 29 Oct 2025 17:07:41 GMT
+# Tue, 04 Nov 2025 04:24:56 GMT
 USER rocketchat
-# Wed, 29 Oct 2025 17:07:41 GMT
+# Tue, 04 Nov 2025 04:24:57 GMT
 WORKDIR /app/bundle
-# Wed, 29 Oct 2025 17:07:41 GMT
+# Tue, 04 Nov 2025 04:24:57 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 29 Oct 2025 17:07:41 GMT
+# Tue, 04 Nov 2025 04:24:57 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 29 Oct 2025 17:07:41 GMT
+# Tue, 04 Nov 2025 04:24:57 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a2b37528c5a8704c06550326cb4645a3cdfb7282e43d7754a163c09a297ece5`  
-		Last Modified: Wed, 29 Oct 2025 17:08:52 GMT  
-		Size: 48.7 MB (48723737 bytes)  
+	-	`sha256:b47885a6272128d28803fc1934d628cff65feed557628f2e0c0a1ea97f16e149`  
+		Last Modified: Tue, 04 Nov 2025 04:26:02 GMT  
+		Size: 48.7 MB (48723722 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48d2e6ecb1c75dba3c6eb37585de8d5d4655d3c6f2841caae84c7d3eebb91504`  
-		Last Modified: Wed, 29 Oct 2025 17:08:49 GMT  
+	-	`sha256:acff4ac774c0010624d5cb2440ea3756c54efeb21c85fbf8b2eb0ad7c639a708`  
+		Last Modified: Tue, 04 Nov 2025 04:25:56 GMT  
 		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b990c4ea17bc803315dd07e9505524396d2d57948f07995c55da8f87c120f732`  
-		Last Modified: Wed, 29 Oct 2025 19:42:53 GMT  
-		Size: 356.4 MB (356353538 bytes)  
+	-	`sha256:80ae47cb0065d3fe1f431698171c1a5e4bc5ecde2b096a39a74407fc3a6c4b0d`  
+		Last Modified: Tue, 04 Nov 2025 11:42:50 GMT  
+		Size: 356.4 MB (356352632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -534,27 +534,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.11` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:63228deff60e7f06f0e06559028cda1fc575784104861f56cc5c8efa36baa903
+$ docker pull rocket.chat@sha256:05dadf5aec8fc2c0aee59a2101e61f750823f0513327fd2621e2ea7171839869
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 KB (23673 bytes)**  
+-	Total Size: **23.1 KB (23066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be0878409728fede6665a2e9489e3bdfd6353d17eb50f8174b302c9f1d2daa7a`
+-	Image ID: `sha256:0ab1bdd8a528312765b6c98cf2aeb57de29afb0c6978cf59d676bd27af1a135a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:15bb0bf570277449b41a3d96f6e348ab12ae7b270840708e99a1e24771bd47b4`  
-		Last Modified: Wed, 29 Oct 2025 19:42:16 GMT  
-		Size: 23.7 KB (23673 bytes)  
+	-	`sha256:960ee3f6f7dc557088e934f3dd520dbc762c12f98837ed36c3b5fc054a3608a5`  
+		Last Modified: Tue, 04 Nov 2025 11:42:30 GMT  
+		Size: 23.1 KB (23066 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.11.0`
 
 ```console
-$ docker pull rocket.chat@sha256:b9af02fdfa4ac638c1a3a23bfa035f46fc8c7be6179e0fe82a57a73cdcae0e85
+$ docker pull rocket.chat@sha256:152bd18716fcfde5b2ccbb22c6ef883f9a5a22e5572c691f42a82863c73d8b51
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -565,99 +565,99 @@ $ docker pull rocket.chat@sha256:b9af02fdfa4ac638c1a3a23bfa035f46fc8c7be6179e0fe
 ### `rocket.chat:7.11.0` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:e5fed283afbb5f477e15b9d77523e341b6c71d3d2435f084689d8a7d197050da
+$ docker pull rocket.chat@sha256:bb32a65e8f15dee845ad6886cc8c83cf1e485d402135826ec9af0a2f0616a14b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **484.5 MB (484504832 bytes)**  
+-	Total Size: **484.5 MB (484504039 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d8d9189573cae06cad91289284586985d125d91b1a210efa87e4c7deb418697`
+-	Image ID: `sha256:6ca0ad53914ff29c48e5c49d4b7fecfc343108eb9ab92b346e838749ba8e03e5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 VOLUME [/app/uploads]
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 WORKDIR /app
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 ENV NODE_ENV=production
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 ENV RC_VERSION=7.11.0
-# Wed, 29 Oct 2025 17:07:41 GMT
+# Tue, 04 Nov 2025 04:24:56 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 29 Oct 2025 17:07:41 GMT
+# Tue, 04 Nov 2025 04:24:56 GMT
 USER rocketchat
-# Wed, 29 Oct 2025 17:07:41 GMT
+# Tue, 04 Nov 2025 04:24:57 GMT
 WORKDIR /app/bundle
-# Wed, 29 Oct 2025 17:07:41 GMT
+# Tue, 04 Nov 2025 04:24:57 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 29 Oct 2025 17:07:41 GMT
+# Tue, 04 Nov 2025 04:24:57 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 29 Oct 2025 17:07:41 GMT
+# Tue, 04 Nov 2025 04:24:57 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a2b37528c5a8704c06550326cb4645a3cdfb7282e43d7754a163c09a297ece5`  
-		Last Modified: Wed, 29 Oct 2025 17:08:52 GMT  
-		Size: 48.7 MB (48723737 bytes)  
+	-	`sha256:b47885a6272128d28803fc1934d628cff65feed557628f2e0c0a1ea97f16e149`  
+		Last Modified: Tue, 04 Nov 2025 04:26:02 GMT  
+		Size: 48.7 MB (48723722 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48d2e6ecb1c75dba3c6eb37585de8d5d4655d3c6f2841caae84c7d3eebb91504`  
-		Last Modified: Wed, 29 Oct 2025 17:08:49 GMT  
+	-	`sha256:acff4ac774c0010624d5cb2440ea3756c54efeb21c85fbf8b2eb0ad7c639a708`  
+		Last Modified: Tue, 04 Nov 2025 04:25:56 GMT  
 		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b990c4ea17bc803315dd07e9505524396d2d57948f07995c55da8f87c120f732`  
-		Last Modified: Wed, 29 Oct 2025 19:42:53 GMT  
-		Size: 356.4 MB (356353538 bytes)  
+	-	`sha256:80ae47cb0065d3fe1f431698171c1a5e4bc5ecde2b096a39a74407fc3a6c4b0d`  
+		Last Modified: Tue, 04 Nov 2025 11:42:50 GMT  
+		Size: 356.4 MB (356352632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -667,27 +667,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.11.0` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:63228deff60e7f06f0e06559028cda1fc575784104861f56cc5c8efa36baa903
+$ docker pull rocket.chat@sha256:05dadf5aec8fc2c0aee59a2101e61f750823f0513327fd2621e2ea7171839869
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 KB (23673 bytes)**  
+-	Total Size: **23.1 KB (23066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be0878409728fede6665a2e9489e3bdfd6353d17eb50f8174b302c9f1d2daa7a`
+-	Image ID: `sha256:0ab1bdd8a528312765b6c98cf2aeb57de29afb0c6978cf59d676bd27af1a135a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:15bb0bf570277449b41a3d96f6e348ab12ae7b270840708e99a1e24771bd47b4`  
-		Last Modified: Wed, 29 Oct 2025 19:42:16 GMT  
-		Size: 23.7 KB (23673 bytes)  
+	-	`sha256:960ee3f6f7dc557088e934f3dd520dbc762c12f98837ed36c3b5fc054a3608a5`  
+		Last Modified: Tue, 04 Nov 2025 11:42:30 GMT  
+		Size: 23.1 KB (23066 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.12`
 
 ```console
-$ docker pull rocket.chat@sha256:4b9adab0ba3277a8163b0f375b5e63a5ace5d4bf803b029787337fa3807f35be
+$ docker pull rocket.chat@sha256:cab40df34f8dc1d10cd23f8a7669a1fa08593e72cccb7a1f0d2b148b6faf0493
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -698,99 +698,99 @@ $ docker pull rocket.chat@sha256:4b9adab0ba3277a8163b0f375b5e63a5ace5d4bf803b029
 ### `rocket.chat:7.12` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:46eae788445e7cc9e27cd1beb9770c2944f024a8f3932539ccd17fe1b32fac5e
+$ docker pull rocket.chat@sha256:471de4d52d64a29a47177832c0817d225080e170e223d83cb59d32367e31f92c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **494.7 MB (494655930 bytes)**  
+-	Total Size: **494.7 MB (494654374 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b974ad6fcbb4cd240a69da24bdc83696f48594046e47f29ebb0b47a10eff3ba`
+-	Image ID: `sha256:452739671559c7fe412f5b38379903367455c3557e15560dd3c537f77e82ee56`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:28 GMT
 ENV DENO_VERSION=1.43.5
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:28 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 VOLUME [/app/uploads]
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 WORKDIR /app
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 ENV NODE_ENV=production
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 ENV RC_VERSION=7.12.0
-# Mon, 03 Nov 2025 17:47:55 GMT
+# Tue, 04 Nov 2025 04:24:22 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Mon, 03 Nov 2025 17:47:55 GMT
+# Tue, 04 Nov 2025 04:24:22 GMT
 USER rocketchat
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 WORKDIR /app/bundle
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 EXPOSE map[3000/tcp:{}]
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ccf90dcfa40ae02ccd1024b3fa340da78678bbf8f750c53f7ea1914663730ccb`  
-		Last Modified: Mon, 03 Nov 2025 17:49:11 GMT  
-		Size: 48.7 MB (48723786 bytes)  
+	-	`sha256:cb9c26066a009725fc08c6252c6e993082b0c4091b2b8bba4da7db06aa05b836`  
+		Last Modified: Tue, 04 Nov 2025 04:25:35 GMT  
+		Size: 48.7 MB (48723735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7955e8448e344d8ad5d8a7b5306b3c65aaad41ce5b9b397d2b394aa4d7ce5575`  
-		Last Modified: Mon, 03 Nov 2025 17:49:01 GMT  
-		Size: 1.2 KB (1178 bytes)  
+	-	`sha256:0d7e9f5121a6a71b5b54e8479d540da6493bc3c17120c2eb3d36c041fb66b7fc`  
+		Last Modified: Tue, 04 Nov 2025 04:25:25 GMT  
+		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13937dfd8ddbdf35552b2c964553c8cd4a61416f9a03078a7179330d9368f2f0`  
-		Last Modified: Mon, 03 Nov 2025 20:43:20 GMT  
-		Size: 366.5 MB (366504582 bytes)  
+	-	`sha256:80d4871aa792f720ba6402015f15efde12b84a88ec0c1b22d9b95b8f47768e3b`  
+		Last Modified: Tue, 04 Nov 2025 09:53:54 GMT  
+		Size: 366.5 MB (366502954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -800,27 +800,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.12` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:10894a1e393e2d23d0c02d88a344ebc1a537043f153c566fa90a61c44b0dd5ad
+$ docker pull rocket.chat@sha256:c4b2023db9c69057dda46854dd07ab10a020e9c88325b16a1096576cdbbcf94d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 KB (23671 bytes)**  
+-	Total Size: **23.7 KB (23672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:727a611272f8cb31709483e012b5b3732b1a5298a6464026de00f96690c77498`
+-	Image ID: `sha256:c31bf5b49127bd3ca906fbb73dd8cf00a707ff0674fc2fc6c8669748ee81a623`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fc3fa56aacabc81033c62afefca0b963d2d41259c9fe01eea9c71f400a5f3d7e`  
-		Last Modified: Mon, 03 Nov 2025 20:42:19 GMT  
-		Size: 23.7 KB (23671 bytes)  
+	-	`sha256:ae7b49a5c933278922b509166971b63af55e8bc52c926fbb607970cd3f75fa0d`  
+		Last Modified: Tue, 04 Nov 2025 11:42:18 GMT  
+		Size: 23.7 KB (23672 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.12.0`
 
 ```console
-$ docker pull rocket.chat@sha256:4b9adab0ba3277a8163b0f375b5e63a5ace5d4bf803b029787337fa3807f35be
+$ docker pull rocket.chat@sha256:cab40df34f8dc1d10cd23f8a7669a1fa08593e72cccb7a1f0d2b148b6faf0493
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -831,99 +831,99 @@ $ docker pull rocket.chat@sha256:4b9adab0ba3277a8163b0f375b5e63a5ace5d4bf803b029
 ### `rocket.chat:7.12.0` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:46eae788445e7cc9e27cd1beb9770c2944f024a8f3932539ccd17fe1b32fac5e
+$ docker pull rocket.chat@sha256:471de4d52d64a29a47177832c0817d225080e170e223d83cb59d32367e31f92c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **494.7 MB (494655930 bytes)**  
+-	Total Size: **494.7 MB (494654374 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b974ad6fcbb4cd240a69da24bdc83696f48594046e47f29ebb0b47a10eff3ba`
+-	Image ID: `sha256:452739671559c7fe412f5b38379903367455c3557e15560dd3c537f77e82ee56`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:28 GMT
 ENV DENO_VERSION=1.43.5
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:28 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 VOLUME [/app/uploads]
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 WORKDIR /app
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 ENV NODE_ENV=production
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 ENV RC_VERSION=7.12.0
-# Mon, 03 Nov 2025 17:47:55 GMT
+# Tue, 04 Nov 2025 04:24:22 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Mon, 03 Nov 2025 17:47:55 GMT
+# Tue, 04 Nov 2025 04:24:22 GMT
 USER rocketchat
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 WORKDIR /app/bundle
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 EXPOSE map[3000/tcp:{}]
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ccf90dcfa40ae02ccd1024b3fa340da78678bbf8f750c53f7ea1914663730ccb`  
-		Last Modified: Mon, 03 Nov 2025 17:49:11 GMT  
-		Size: 48.7 MB (48723786 bytes)  
+	-	`sha256:cb9c26066a009725fc08c6252c6e993082b0c4091b2b8bba4da7db06aa05b836`  
+		Last Modified: Tue, 04 Nov 2025 04:25:35 GMT  
+		Size: 48.7 MB (48723735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7955e8448e344d8ad5d8a7b5306b3c65aaad41ce5b9b397d2b394aa4d7ce5575`  
-		Last Modified: Mon, 03 Nov 2025 17:49:01 GMT  
-		Size: 1.2 KB (1178 bytes)  
+	-	`sha256:0d7e9f5121a6a71b5b54e8479d540da6493bc3c17120c2eb3d36c041fb66b7fc`  
+		Last Modified: Tue, 04 Nov 2025 04:25:25 GMT  
+		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13937dfd8ddbdf35552b2c964553c8cd4a61416f9a03078a7179330d9368f2f0`  
-		Last Modified: Mon, 03 Nov 2025 20:43:20 GMT  
-		Size: 366.5 MB (366504582 bytes)  
+	-	`sha256:80d4871aa792f720ba6402015f15efde12b84a88ec0c1b22d9b95b8f47768e3b`  
+		Last Modified: Tue, 04 Nov 2025 09:53:54 GMT  
+		Size: 366.5 MB (366502954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -933,27 +933,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.12.0` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:10894a1e393e2d23d0c02d88a344ebc1a537043f153c566fa90a61c44b0dd5ad
+$ docker pull rocket.chat@sha256:c4b2023db9c69057dda46854dd07ab10a020e9c88325b16a1096576cdbbcf94d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 KB (23671 bytes)**  
+-	Total Size: **23.7 KB (23672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:727a611272f8cb31709483e012b5b3732b1a5298a6464026de00f96690c77498`
+-	Image ID: `sha256:c31bf5b49127bd3ca906fbb73dd8cf00a707ff0674fc2fc6c8669748ee81a623`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fc3fa56aacabc81033c62afefca0b963d2d41259c9fe01eea9c71f400a5f3d7e`  
-		Last Modified: Mon, 03 Nov 2025 20:42:19 GMT  
-		Size: 23.7 KB (23671 bytes)  
+	-	`sha256:ae7b49a5c933278922b509166971b63af55e8bc52c926fbb607970cd3f75fa0d`  
+		Last Modified: Tue, 04 Nov 2025 11:42:18 GMT  
+		Size: 23.7 KB (23672 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.6`
 
 ```console
-$ docker pull rocket.chat@sha256:8a1df36b23127e11706c4a5894c9d2a00f6992008122f61a36452cd501e7c3c2
+$ docker pull rocket.chat@sha256:5401cc72955f5ef122b2ac140aa78a877c73a78a28b6ee21e9a0dfc896e677db
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -964,99 +964,99 @@ $ docker pull rocket.chat@sha256:8a1df36b23127e11706c4a5894c9d2a00f6992008122f61
 ### `rocket.chat:7.6` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:63699dd45ce84dde53e339d0805d01aa0045c0bba691e296f7d953cf052aa85f
+$ docker pull rocket.chat@sha256:47ec508b17beef3b2e97b86dc16b1df48d7ea078445960573047eecb319e49bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **517.5 MB (517515060 bytes)**  
+-	Total Size: **517.5 MB (517516155 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb7de3be6e01aa8a8ee84cedc74ac106556d1a08bcc0ac790055b119a5d0ce1f`
+-	Image ID: `sha256:cf548eaa52cc2e2e1b5279ff8f23d5b05c2a3c5a68407a956de815bd286d3391`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 VOLUME [/app/uploads]
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 WORKDIR /app
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 ENV NODE_ENV=production
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 ENV RC_VERSION=7.6.6
-# Wed, 29 Oct 2025 17:10:22 GMT
+# Tue, 04 Nov 2025 04:27:50 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 29 Oct 2025 17:10:22 GMT
+# Tue, 04 Nov 2025 04:27:50 GMT
 USER rocketchat
-# Wed, 29 Oct 2025 17:10:23 GMT
+# Tue, 04 Nov 2025 04:27:51 GMT
 WORKDIR /app/bundle
-# Wed, 29 Oct 2025 17:10:23 GMT
+# Tue, 04 Nov 2025 04:27:51 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 29 Oct 2025 17:10:23 GMT
+# Tue, 04 Nov 2025 04:27:51 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 29 Oct 2025 17:10:23 GMT
+# Tue, 04 Nov 2025 04:27:51 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79a818b38aedbf489a4330af09d96f3fcbb6bef952e52f01672cb5e6f223191e`  
-		Last Modified: Wed, 29 Oct 2025 17:11:35 GMT  
-		Size: 48.7 MB (48723765 bytes)  
+	-	`sha256:9c622fbc692359276fa8d24f33490d1048c4169a7b18106e8c26f3ba52f49668`  
+		Last Modified: Tue, 04 Nov 2025 04:29:18 GMT  
+		Size: 48.7 MB (48723712 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70ad747596abeeeb02599d9ba6eb1925d26106a03eb3e937655db4b526fceab6`  
-		Last Modified: Wed, 29 Oct 2025 17:11:21 GMT  
+	-	`sha256:33b0885b7d5d7f218511621974c48f00a7ed3c043d5c2a84131879dd50d7e1a6`  
+		Last Modified: Tue, 04 Nov 2025 04:29:13 GMT  
 		Size: 1.2 KB (1176 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:175e4904d1ef554315bfd75b1203125e84aba15d73ee28fa5e4c3fbe4023b543`  
-		Last Modified: Wed, 29 Oct 2025 19:44:13 GMT  
-		Size: 389.4 MB (389363735 bytes)  
+	-	`sha256:5e625792f3a997c3c14f0dd539f34b63063fdb12d7fc750ff1c13856750ad942`  
+		Last Modified: Tue, 04 Nov 2025 11:43:29 GMT  
+		Size: 389.4 MB (389364755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -1066,27 +1066,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.6` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:306069212e155e96a53e3911903be7b1cf441444adbe7144ec1adf40b7111fda
+$ docker pull rocket.chat@sha256:da80d5496dd61b909cd967caf35cb3b02143ffb652d480b95a76e6728d5902d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:20c4aab5ed258850f8d9ff6b0e27b39adbf0adc43938c1ec520beeeeb390603f`
+-	Image ID: `sha256:cbbf45794b144523bd4083a515708da9c6a309b84c56032d27a6890e48b29a61`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d13c69b0fc248f1160c5e265c1fe3a87a1715bc88292bd705ddabc664a0ed684`  
-		Last Modified: Wed, 29 Oct 2025 19:42:38 GMT  
+	-	`sha256:b56448542adc4e4947a9a573b3b19756977d3b28584806ce33a71ddc3733ec62`  
+		Last Modified: Tue, 04 Nov 2025 11:42:40 GMT  
 		Size: 23.1 KB (23060 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.6.6`
 
 ```console
-$ docker pull rocket.chat@sha256:8a1df36b23127e11706c4a5894c9d2a00f6992008122f61a36452cd501e7c3c2
+$ docker pull rocket.chat@sha256:5401cc72955f5ef122b2ac140aa78a877c73a78a28b6ee21e9a0dfc896e677db
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1097,99 +1097,99 @@ $ docker pull rocket.chat@sha256:8a1df36b23127e11706c4a5894c9d2a00f6992008122f61
 ### `rocket.chat:7.6.6` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:63699dd45ce84dde53e339d0805d01aa0045c0bba691e296f7d953cf052aa85f
+$ docker pull rocket.chat@sha256:47ec508b17beef3b2e97b86dc16b1df48d7ea078445960573047eecb319e49bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **517.5 MB (517515060 bytes)**  
+-	Total Size: **517.5 MB (517516155 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb7de3be6e01aa8a8ee84cedc74ac106556d1a08bcc0ac790055b119a5d0ce1f`
+-	Image ID: `sha256:cf548eaa52cc2e2e1b5279ff8f23d5b05c2a3c5a68407a956de815bd286d3391`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 VOLUME [/app/uploads]
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 WORKDIR /app
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 ENV NODE_ENV=production
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:26:40 GMT
 ENV RC_VERSION=7.6.6
-# Wed, 29 Oct 2025 17:10:22 GMT
+# Tue, 04 Nov 2025 04:27:50 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 29 Oct 2025 17:10:22 GMT
+# Tue, 04 Nov 2025 04:27:50 GMT
 USER rocketchat
-# Wed, 29 Oct 2025 17:10:23 GMT
+# Tue, 04 Nov 2025 04:27:51 GMT
 WORKDIR /app/bundle
-# Wed, 29 Oct 2025 17:10:23 GMT
+# Tue, 04 Nov 2025 04:27:51 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 29 Oct 2025 17:10:23 GMT
+# Tue, 04 Nov 2025 04:27:51 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 29 Oct 2025 17:10:23 GMT
+# Tue, 04 Nov 2025 04:27:51 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79a818b38aedbf489a4330af09d96f3fcbb6bef952e52f01672cb5e6f223191e`  
-		Last Modified: Wed, 29 Oct 2025 17:11:35 GMT  
-		Size: 48.7 MB (48723765 bytes)  
+	-	`sha256:9c622fbc692359276fa8d24f33490d1048c4169a7b18106e8c26f3ba52f49668`  
+		Last Modified: Tue, 04 Nov 2025 04:29:18 GMT  
+		Size: 48.7 MB (48723712 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70ad747596abeeeb02599d9ba6eb1925d26106a03eb3e937655db4b526fceab6`  
-		Last Modified: Wed, 29 Oct 2025 17:11:21 GMT  
+	-	`sha256:33b0885b7d5d7f218511621974c48f00a7ed3c043d5c2a84131879dd50d7e1a6`  
+		Last Modified: Tue, 04 Nov 2025 04:29:13 GMT  
 		Size: 1.2 KB (1176 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:175e4904d1ef554315bfd75b1203125e84aba15d73ee28fa5e4c3fbe4023b543`  
-		Last Modified: Wed, 29 Oct 2025 19:44:13 GMT  
-		Size: 389.4 MB (389363735 bytes)  
+	-	`sha256:5e625792f3a997c3c14f0dd539f34b63063fdb12d7fc750ff1c13856750ad942`  
+		Last Modified: Tue, 04 Nov 2025 11:43:29 GMT  
+		Size: 389.4 MB (389364755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -1199,27 +1199,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.6.6` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:306069212e155e96a53e3911903be7b1cf441444adbe7144ec1adf40b7111fda
+$ docker pull rocket.chat@sha256:da80d5496dd61b909cd967caf35cb3b02143ffb652d480b95a76e6728d5902d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:20c4aab5ed258850f8d9ff6b0e27b39adbf0adc43938c1ec520beeeeb390603f`
+-	Image ID: `sha256:cbbf45794b144523bd4083a515708da9c6a309b84c56032d27a6890e48b29a61`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d13c69b0fc248f1160c5e265c1fe3a87a1715bc88292bd705ddabc664a0ed684`  
-		Last Modified: Wed, 29 Oct 2025 19:42:38 GMT  
+	-	`sha256:b56448542adc4e4947a9a573b3b19756977d3b28584806ce33a71ddc3733ec62`  
+		Last Modified: Tue, 04 Nov 2025 11:42:40 GMT  
 		Size: 23.1 KB (23060 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.7`
 
 ```console
-$ docker pull rocket.chat@sha256:3ff6e18e753c76fd53aebae64b71318e8787571e44c2598a5aa10ea69ab35ab0
+$ docker pull rocket.chat@sha256:668d5af94b05ae899f577a966b55707213b8d0777b886e6e49132ccf2417ce5f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1230,99 +1230,99 @@ $ docker pull rocket.chat@sha256:3ff6e18e753c76fd53aebae64b71318e8787571e44c2598
 ### `rocket.chat:7.7` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:35908a1b18c4a392ab19784325152485f9381aaaf95c1fefd15c8fdc23e30220
+$ docker pull rocket.chat@sha256:20684e7f953dc08a1600087718730bb98beb87c38f8906c87d5fa3f7d0234894
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **512.7 MB (512689842 bytes)**  
+-	Total Size: **512.7 MB (512688927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38322087f2176541a7bdd293252e92695fbecfe27a64d7268c803132f992edde`
+-	Image ID: `sha256:1d15abbaad392833133ac557879fa5b0149869b3f3b6591c9f9afcf435c5a575`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 VOLUME [/app/uploads]
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 WORKDIR /app
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 ENV NODE_ENV=production
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 ENV RC_VERSION=7.7.9
-# Wed, 29 Oct 2025 17:09:37 GMT
+# Tue, 04 Nov 2025 04:27:01 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 29 Oct 2025 17:09:37 GMT
+# Tue, 04 Nov 2025 04:27:01 GMT
 USER rocketchat
-# Wed, 29 Oct 2025 17:09:37 GMT
+# Tue, 04 Nov 2025 04:27:02 GMT
 WORKDIR /app/bundle
-# Wed, 29 Oct 2025 17:09:37 GMT
+# Tue, 04 Nov 2025 04:27:02 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 29 Oct 2025 17:09:37 GMT
+# Tue, 04 Nov 2025 04:27:02 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 29 Oct 2025 17:09:37 GMT
+# Tue, 04 Nov 2025 04:27:02 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a2b37528c5a8704c06550326cb4645a3cdfb7282e43d7754a163c09a297ece5`  
-		Last Modified: Wed, 29 Oct 2025 17:08:52 GMT  
-		Size: 48.7 MB (48723737 bytes)  
+	-	`sha256:b47885a6272128d28803fc1934d628cff65feed557628f2e0c0a1ea97f16e149`  
+		Last Modified: Tue, 04 Nov 2025 04:26:02 GMT  
+		Size: 48.7 MB (48723722 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48d2e6ecb1c75dba3c6eb37585de8d5d4655d3c6f2841caae84c7d3eebb91504`  
-		Last Modified: Wed, 29 Oct 2025 17:08:49 GMT  
+	-	`sha256:acff4ac774c0010624d5cb2440ea3756c54efeb21c85fbf8b2eb0ad7c639a708`  
+		Last Modified: Tue, 04 Nov 2025 04:25:56 GMT  
 		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f49ae8867ee933e512a2842e99370cab70bcdb4c69e461adccdd460f941d043`  
-		Last Modified: Wed, 29 Oct 2025 19:43:50 GMT  
-		Size: 384.5 MB (384538548 bytes)  
+	-	`sha256:064914c8910f8148652d2ab42c78281c8f592a94a39e4ba3d73d80b8cc6dac4d`  
+		Last Modified: Tue, 04 Nov 2025 11:43:01 GMT  
+		Size: 384.5 MB (384537520 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -1332,27 +1332,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.7` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:8dc07d6399e59a6944bbdfc8033a09ba66596cb84859300254c9ab5c843e43ae
+$ docker pull rocket.chat@sha256:4b92349dad7cade3c90ddcd234b0eaefc7b0d23bce0adffc7353f2feedb87966
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dd2b43e84e62bb6d30ab714909969802f3866abab3792dffb639b776633e296`
+-	Image ID: `sha256:666aa3cca47e0561f965bbce1a8938301340ec7e49bcf53288d357534bf07035`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:67e3b83c3f0c787ae84c63087eca5e332b0a0eaeaa2c57046492a992aea441b3`  
-		Last Modified: Wed, 29 Oct 2025 19:42:45 GMT  
+	-	`sha256:31f79efa0a7fea106b917f205f211875af98c81c710d99d0dc5f0f7d47d14a48`  
+		Last Modified: Tue, 04 Nov 2025 11:42:47 GMT  
 		Size: 23.1 KB (23060 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.7.9`
 
 ```console
-$ docker pull rocket.chat@sha256:3ff6e18e753c76fd53aebae64b71318e8787571e44c2598a5aa10ea69ab35ab0
+$ docker pull rocket.chat@sha256:668d5af94b05ae899f577a966b55707213b8d0777b886e6e49132ccf2417ce5f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1363,99 +1363,99 @@ $ docker pull rocket.chat@sha256:3ff6e18e753c76fd53aebae64b71318e8787571e44c2598
 ### `rocket.chat:7.7.9` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:35908a1b18c4a392ab19784325152485f9381aaaf95c1fefd15c8fdc23e30220
+$ docker pull rocket.chat@sha256:20684e7f953dc08a1600087718730bb98beb87c38f8906c87d5fa3f7d0234894
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **512.7 MB (512689842 bytes)**  
+-	Total Size: **512.7 MB (512688927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38322087f2176541a7bdd293252e92695fbecfe27a64d7268c803132f992edde`
+-	Image ID: `sha256:1d15abbaad392833133ac557879fa5b0149869b3f3b6591c9f9afcf435c5a575`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 VOLUME [/app/uploads]
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 WORKDIR /app
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 ENV NODE_ENV=production
-# Wed, 29 Oct 2025 17:06:46 GMT
+# Tue, 04 Nov 2025 04:23:51 GMT
 ENV RC_VERSION=7.7.9
-# Wed, 29 Oct 2025 17:09:37 GMT
+# Tue, 04 Nov 2025 04:27:01 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 29 Oct 2025 17:09:37 GMT
+# Tue, 04 Nov 2025 04:27:01 GMT
 USER rocketchat
-# Wed, 29 Oct 2025 17:09:37 GMT
+# Tue, 04 Nov 2025 04:27:02 GMT
 WORKDIR /app/bundle
-# Wed, 29 Oct 2025 17:09:37 GMT
+# Tue, 04 Nov 2025 04:27:02 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 29 Oct 2025 17:09:37 GMT
+# Tue, 04 Nov 2025 04:27:02 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 29 Oct 2025 17:09:37 GMT
+# Tue, 04 Nov 2025 04:27:02 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a2b37528c5a8704c06550326cb4645a3cdfb7282e43d7754a163c09a297ece5`  
-		Last Modified: Wed, 29 Oct 2025 17:08:52 GMT  
-		Size: 48.7 MB (48723737 bytes)  
+	-	`sha256:b47885a6272128d28803fc1934d628cff65feed557628f2e0c0a1ea97f16e149`  
+		Last Modified: Tue, 04 Nov 2025 04:26:02 GMT  
+		Size: 48.7 MB (48723722 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48d2e6ecb1c75dba3c6eb37585de8d5d4655d3c6f2841caae84c7d3eebb91504`  
-		Last Modified: Wed, 29 Oct 2025 17:08:49 GMT  
+	-	`sha256:acff4ac774c0010624d5cb2440ea3756c54efeb21c85fbf8b2eb0ad7c639a708`  
+		Last Modified: Tue, 04 Nov 2025 04:25:56 GMT  
 		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f49ae8867ee933e512a2842e99370cab70bcdb4c69e461adccdd460f941d043`  
-		Last Modified: Wed, 29 Oct 2025 19:43:50 GMT  
-		Size: 384.5 MB (384538548 bytes)  
+	-	`sha256:064914c8910f8148652d2ab42c78281c8f592a94a39e4ba3d73d80b8cc6dac4d`  
+		Last Modified: Tue, 04 Nov 2025 11:43:01 GMT  
+		Size: 384.5 MB (384537520 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -1465,27 +1465,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.7.9` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:8dc07d6399e59a6944bbdfc8033a09ba66596cb84859300254c9ab5c843e43ae
+$ docker pull rocket.chat@sha256:4b92349dad7cade3c90ddcd234b0eaefc7b0d23bce0adffc7353f2feedb87966
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dd2b43e84e62bb6d30ab714909969802f3866abab3792dffb639b776633e296`
+-	Image ID: `sha256:666aa3cca47e0561f965bbce1a8938301340ec7e49bcf53288d357534bf07035`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:67e3b83c3f0c787ae84c63087eca5e332b0a0eaeaa2c57046492a992aea441b3`  
-		Last Modified: Wed, 29 Oct 2025 19:42:45 GMT  
+	-	`sha256:31f79efa0a7fea106b917f205f211875af98c81c710d99d0dc5f0f7d47d14a48`  
+		Last Modified: Tue, 04 Nov 2025 11:42:47 GMT  
 		Size: 23.1 KB (23060 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.8`
 
 ```console
-$ docker pull rocket.chat@sha256:798d84221d1651c0a72ae7051f13e650ee2eca5f301befc7ae25cef9c6998732
+$ docker pull rocket.chat@sha256:5e34c527ef313d6705cf46dd996421215c3432e9619c85e3cb7b6a7d934692d3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1496,99 +1496,99 @@ $ docker pull rocket.chat@sha256:798d84221d1651c0a72ae7051f13e650ee2eca5f301befc
 ### `rocket.chat:7.8` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:17cef13137121b9aeb03cb2b02a41fedce070afb95e4c9504e37543c6f958ea3
+$ docker pull rocket.chat@sha256:8dcf7feb5561cc45c8e18f4a7904dfa5cdc20dcd9eb9b96157ed03fe4c61d6b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **471.5 MB (471534604 bytes)**  
+-	Total Size: **471.5 MB (471524023 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cc16e3ed1256d9ee7702797f7cb1a0eaae4c757323f75e8a0976def36e3aa8d`
+-	Image ID: `sha256:09cbb440166516a66b7e4c72d27db922216817de25367a30441b0ba8b8dad7d4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:28 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:28 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 VOLUME [/app/uploads]
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 WORKDIR /app
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 ENV NODE_ENV=production
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 ENV RC_VERSION=7.8.4
-# Wed, 29 Oct 2025 17:10:25 GMT
+# Tue, 04 Nov 2025 04:26:15 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 29 Oct 2025 17:10:25 GMT
+# Tue, 04 Nov 2025 04:26:15 GMT
 USER rocketchat
-# Wed, 29 Oct 2025 17:10:26 GMT
+# Tue, 04 Nov 2025 04:26:16 GMT
 WORKDIR /app/bundle
-# Wed, 29 Oct 2025 17:10:26 GMT
+# Tue, 04 Nov 2025 04:26:16 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 29 Oct 2025 17:10:26 GMT
+# Tue, 04 Nov 2025 04:26:16 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 29 Oct 2025 17:10:26 GMT
+# Tue, 04 Nov 2025 04:26:16 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74bff228b8e68eb9a7098a7eaf0f6ef90b4ced43c57790babfad970b30c4f446`  
-		Last Modified: Wed, 29 Oct 2025 17:11:36 GMT  
-		Size: 48.7 MB (48723732 bytes)  
+	-	`sha256:cb9c26066a009725fc08c6252c6e993082b0c4091b2b8bba4da7db06aa05b836`  
+		Last Modified: Tue, 04 Nov 2025 04:25:35 GMT  
+		Size: 48.7 MB (48723735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03a33a564da163833a8f0337b5066c3312ef639faa4a62cf39fb664139a9206b`  
-		Last Modified: Wed, 29 Oct 2025 17:11:32 GMT  
+	-	`sha256:0d7e9f5121a6a71b5b54e8479d540da6493bc3c17120c2eb3d36c041fb66b7fc`  
+		Last Modified: Tue, 04 Nov 2025 04:25:25 GMT  
 		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0acd0d3ff2807eb1b7815a6ec1c0ddd09817441e7d82485e0bdc4fe70d1ce94`  
-		Last Modified: Wed, 29 Oct 2025 19:44:08 GMT  
-		Size: 343.4 MB (343383315 bytes)  
+	-	`sha256:87e0a56ba7e4c782601dfca9ae763c83a94f2c602a2ab68018909349ef74ec92`  
+		Last Modified: Tue, 04 Nov 2025 11:43:07 GMT  
+		Size: 343.4 MB (343372603 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -1598,27 +1598,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.8` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:f9be18263744bb3e783c05842fe58a87820505697328eeb20582cf81d9bc2dca
+$ docker pull rocket.chat@sha256:5c7390aa71ad16097f461bddf229f9e7a346d628e09a5cdff7edb2ac8061cc78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a81e87e84b532de975e06048a165f6786bb3c17a59ee39c393c71250c6525b9`
+-	Image ID: `sha256:f0226faff5875d014059d40d5b3733cb5b0d4db419f2100b5e16208bc83e7dc0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a27bb9a567b4f728b020b5e3c70d5d09a50e053dd5bb1d95e5567bebbd43bd1`  
-		Last Modified: Wed, 29 Oct 2025 19:42:50 GMT  
+	-	`sha256:cff32fa00a2a62b5254470c506a98810448627af26cc1295d0e4b4d4d602637e`  
+		Last Modified: Tue, 04 Nov 2025 11:42:54 GMT  
 		Size: 23.1 KB (23060 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.8.4`
 
 ```console
-$ docker pull rocket.chat@sha256:798d84221d1651c0a72ae7051f13e650ee2eca5f301befc7ae25cef9c6998732
+$ docker pull rocket.chat@sha256:5e34c527ef313d6705cf46dd996421215c3432e9619c85e3cb7b6a7d934692d3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1629,99 +1629,99 @@ $ docker pull rocket.chat@sha256:798d84221d1651c0a72ae7051f13e650ee2eca5f301befc
 ### `rocket.chat:7.8.4` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:17cef13137121b9aeb03cb2b02a41fedce070afb95e4c9504e37543c6f958ea3
+$ docker pull rocket.chat@sha256:8dcf7feb5561cc45c8e18f4a7904dfa5cdc20dcd9eb9b96157ed03fe4c61d6b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **471.5 MB (471534604 bytes)**  
+-	Total Size: **471.5 MB (471524023 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cc16e3ed1256d9ee7702797f7cb1a0eaae4c757323f75e8a0976def36e3aa8d`
+-	Image ID: `sha256:09cbb440166516a66b7e4c72d27db922216817de25367a30441b0ba8b8dad7d4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:28 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:28 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 VOLUME [/app/uploads]
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 WORKDIR /app
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 ENV NODE_ENV=production
-# Wed, 29 Oct 2025 17:09:30 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 ENV RC_VERSION=7.8.4
-# Wed, 29 Oct 2025 17:10:25 GMT
+# Tue, 04 Nov 2025 04:26:15 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 29 Oct 2025 17:10:25 GMT
+# Tue, 04 Nov 2025 04:26:15 GMT
 USER rocketchat
-# Wed, 29 Oct 2025 17:10:26 GMT
+# Tue, 04 Nov 2025 04:26:16 GMT
 WORKDIR /app/bundle
-# Wed, 29 Oct 2025 17:10:26 GMT
+# Tue, 04 Nov 2025 04:26:16 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 29 Oct 2025 17:10:26 GMT
+# Tue, 04 Nov 2025 04:26:16 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 29 Oct 2025 17:10:26 GMT
+# Tue, 04 Nov 2025 04:26:16 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74bff228b8e68eb9a7098a7eaf0f6ef90b4ced43c57790babfad970b30c4f446`  
-		Last Modified: Wed, 29 Oct 2025 17:11:36 GMT  
-		Size: 48.7 MB (48723732 bytes)  
+	-	`sha256:cb9c26066a009725fc08c6252c6e993082b0c4091b2b8bba4da7db06aa05b836`  
+		Last Modified: Tue, 04 Nov 2025 04:25:35 GMT  
+		Size: 48.7 MB (48723735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03a33a564da163833a8f0337b5066c3312ef639faa4a62cf39fb664139a9206b`  
-		Last Modified: Wed, 29 Oct 2025 17:11:32 GMT  
+	-	`sha256:0d7e9f5121a6a71b5b54e8479d540da6493bc3c17120c2eb3d36c041fb66b7fc`  
+		Last Modified: Tue, 04 Nov 2025 04:25:25 GMT  
 		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0acd0d3ff2807eb1b7815a6ec1c0ddd09817441e7d82485e0bdc4fe70d1ce94`  
-		Last Modified: Wed, 29 Oct 2025 19:44:08 GMT  
-		Size: 343.4 MB (343383315 bytes)  
+	-	`sha256:87e0a56ba7e4c782601dfca9ae763c83a94f2c602a2ab68018909349ef74ec92`  
+		Last Modified: Tue, 04 Nov 2025 11:43:07 GMT  
+		Size: 343.4 MB (343372603 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -1731,27 +1731,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.8.4` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:f9be18263744bb3e783c05842fe58a87820505697328eeb20582cf81d9bc2dca
+$ docker pull rocket.chat@sha256:5c7390aa71ad16097f461bddf229f9e7a346d628e09a5cdff7edb2ac8061cc78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a81e87e84b532de975e06048a165f6786bb3c17a59ee39c393c71250c6525b9`
+-	Image ID: `sha256:f0226faff5875d014059d40d5b3733cb5b0d4db419f2100b5e16208bc83e7dc0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a27bb9a567b4f728b020b5e3c70d5d09a50e053dd5bb1d95e5567bebbd43bd1`  
-		Last Modified: Wed, 29 Oct 2025 19:42:50 GMT  
+	-	`sha256:cff32fa00a2a62b5254470c506a98810448627af26cc1295d0e4b4d4d602637e`  
+		Last Modified: Tue, 04 Nov 2025 11:42:54 GMT  
 		Size: 23.1 KB (23060 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.9`
 
 ```console
-$ docker pull rocket.chat@sha256:cb6ab73c198c577f28c452affaa437f2c0155e1d2d7db117b5a34c882a35de3c
+$ docker pull rocket.chat@sha256:f27e5e080a014a062619a6cf4a1e9459d3154810023d2c7d000aaff600dc52c3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1762,99 +1762,99 @@ $ docker pull rocket.chat@sha256:cb6ab73c198c577f28c452affaa437f2c0155e1d2d7db11
 ### `rocket.chat:7.9` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:8e3a3e0718ba52347b75ab135d77dd881639984992fbcf88032e46bcbebad7c9
+$ docker pull rocket.chat@sha256:4e5513e0a9e23ca833f6c3d9535c0562dd44e5d7a4047aca903c806b641cafed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **496.5 MB (496467518 bytes)**  
+-	Total Size: **496.5 MB (496466696 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:033ef0efc1b80454dbd878254f604daa780ad04da0bdd01cb0da6f69443c2ac9`
+-	Image ID: `sha256:e96f0cefa76c654305e7152c6162b9ddbe8cf4452df91a9d030831633002cd25`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 VOLUME [/app/uploads]
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 WORKDIR /app
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 ENV NODE_ENV=production
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 ENV RC_VERSION=7.9.5
-# Wed, 29 Oct 2025 17:10:20 GMT
+# Tue, 04 Nov 2025 04:26:22 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 29 Oct 2025 17:10:20 GMT
+# Tue, 04 Nov 2025 04:26:22 GMT
 USER rocketchat
-# Wed, 29 Oct 2025 17:10:21 GMT
+# Tue, 04 Nov 2025 04:26:23 GMT
 WORKDIR /app/bundle
-# Wed, 29 Oct 2025 17:10:21 GMT
+# Tue, 04 Nov 2025 04:26:23 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 29 Oct 2025 17:10:21 GMT
+# Tue, 04 Nov 2025 04:26:23 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 29 Oct 2025 17:10:21 GMT
+# Tue, 04 Nov 2025 04:26:23 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0077e0d7b7d554afa2120bae14f302fee9f37951a5742a672f77b945a509a701`  
-		Last Modified: Wed, 29 Oct 2025 17:11:28 GMT  
-		Size: 48.7 MB (48723762 bytes)  
+	-	`sha256:cd5f8f62e6a9338e6574f39f62ccf6af8c7340df7fdec8702c95437d194cf924`  
+		Last Modified: Tue, 04 Nov 2025 04:27:35 GMT  
+		Size: 48.7 MB (48723684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70ad747596abeeeb02599d9ba6eb1925d26106a03eb3e937655db4b526fceab6`  
-		Last Modified: Wed, 29 Oct 2025 17:11:21 GMT  
-		Size: 1.2 KB (1176 bytes)  
+	-	`sha256:e73792343c59a4ce82ec6d00e95dd184e387cbc4d2b74e4e96330bac56674f93`  
+		Last Modified: Tue, 04 Nov 2025 04:27:30 GMT  
+		Size: 1.2 KB (1174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b08715e0636ed862f53f6fd19f63766d3946ae455f3187fe21a4a6b6c3b411`  
-		Last Modified: Wed, 29 Oct 2025 19:43:56 GMT  
-		Size: 368.3 MB (368316196 bytes)  
+	-	`sha256:ef7bcedab114698d71e6d35a7ebffc716c80974ace25d5bbc221b1e19041e876`  
+		Last Modified: Tue, 04 Nov 2025 11:43:45 GMT  
+		Size: 368.3 MB (368315326 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -1864,27 +1864,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.9` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:51e2cc49024421105fe83342db2838459d116ee8b760abfaa006cad130cf78c2
+$ docker pull rocket.chat@sha256:6a03c3a8d099e879bdf06fcce5a6d7840ebc85872a697a42ad9153f2729352b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3054a89e87f52374c2312e23b13be69ddc05cc8a9ca8e44f41b2ba49da57d3e3`
+-	Image ID: `sha256:c2959acbc248eaa3069ae7892905c0ff8b23626580a3b3de43daa12e2745b469`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4a4a6e3fbf6a147a84d85bb7e86cde957087c967eec7c0cb6013fe2c256b3584`  
-		Last Modified: Wed, 29 Oct 2025 19:42:58 GMT  
+	-	`sha256:0e3ef5e77262fcb26a5440b000b716eb7b18bdc54513dafd9772dd04184e1c0b`  
+		Last Modified: Tue, 04 Nov 2025 11:43:00 GMT  
 		Size: 23.1 KB (23060 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.9.5`
 
 ```console
-$ docker pull rocket.chat@sha256:cb6ab73c198c577f28c452affaa437f2c0155e1d2d7db117b5a34c882a35de3c
+$ docker pull rocket.chat@sha256:f27e5e080a014a062619a6cf4a1e9459d3154810023d2c7d000aaff600dc52c3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1895,99 +1895,99 @@ $ docker pull rocket.chat@sha256:cb6ab73c198c577f28c452affaa437f2c0155e1d2d7db11
 ### `rocket.chat:7.9.5` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:8e3a3e0718ba52347b75ab135d77dd881639984992fbcf88032e46bcbebad7c9
+$ docker pull rocket.chat@sha256:4e5513e0a9e23ca833f6c3d9535c0562dd44e5d7a4047aca903c806b641cafed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **496.5 MB (496467518 bytes)**  
+-	Total Size: **496.5 MB (496466696 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:033ef0efc1b80454dbd878254f604daa780ad04da0bdd01cb0da6f69443c2ac9`
+-	Image ID: `sha256:e96f0cefa76c654305e7152c6162b9ddbe8cf4452df91a9d030831633002cd25`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 VOLUME [/app/uploads]
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 WORKDIR /app
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 ENV NODE_ENV=production
-# Wed, 29 Oct 2025 17:09:27 GMT
+# Tue, 04 Nov 2025 04:25:19 GMT
 ENV RC_VERSION=7.9.5
-# Wed, 29 Oct 2025 17:10:20 GMT
+# Tue, 04 Nov 2025 04:26:22 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 29 Oct 2025 17:10:20 GMT
+# Tue, 04 Nov 2025 04:26:22 GMT
 USER rocketchat
-# Wed, 29 Oct 2025 17:10:21 GMT
+# Tue, 04 Nov 2025 04:26:23 GMT
 WORKDIR /app/bundle
-# Wed, 29 Oct 2025 17:10:21 GMT
+# Tue, 04 Nov 2025 04:26:23 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 29 Oct 2025 17:10:21 GMT
+# Tue, 04 Nov 2025 04:26:23 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 29 Oct 2025 17:10:21 GMT
+# Tue, 04 Nov 2025 04:26:23 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0077e0d7b7d554afa2120bae14f302fee9f37951a5742a672f77b945a509a701`  
-		Last Modified: Wed, 29 Oct 2025 17:11:28 GMT  
-		Size: 48.7 MB (48723762 bytes)  
+	-	`sha256:cd5f8f62e6a9338e6574f39f62ccf6af8c7340df7fdec8702c95437d194cf924`  
+		Last Modified: Tue, 04 Nov 2025 04:27:35 GMT  
+		Size: 48.7 MB (48723684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70ad747596abeeeb02599d9ba6eb1925d26106a03eb3e937655db4b526fceab6`  
-		Last Modified: Wed, 29 Oct 2025 17:11:21 GMT  
-		Size: 1.2 KB (1176 bytes)  
+	-	`sha256:e73792343c59a4ce82ec6d00e95dd184e387cbc4d2b74e4e96330bac56674f93`  
+		Last Modified: Tue, 04 Nov 2025 04:27:30 GMT  
+		Size: 1.2 KB (1174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b08715e0636ed862f53f6fd19f63766d3946ae455f3187fe21a4a6b6c3b411`  
-		Last Modified: Wed, 29 Oct 2025 19:43:56 GMT  
-		Size: 368.3 MB (368316196 bytes)  
+	-	`sha256:ef7bcedab114698d71e6d35a7ebffc716c80974ace25d5bbc221b1e19041e876`  
+		Last Modified: Tue, 04 Nov 2025 11:43:45 GMT  
+		Size: 368.3 MB (368315326 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -1997,27 +1997,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.9.5` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:51e2cc49024421105fe83342db2838459d116ee8b760abfaa006cad130cf78c2
+$ docker pull rocket.chat@sha256:6a03c3a8d099e879bdf06fcce5a6d7840ebc85872a697a42ad9153f2729352b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3054a89e87f52374c2312e23b13be69ddc05cc8a9ca8e44f41b2ba49da57d3e3`
+-	Image ID: `sha256:c2959acbc248eaa3069ae7892905c0ff8b23626580a3b3de43daa12e2745b469`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4a4a6e3fbf6a147a84d85bb7e86cde957087c967eec7c0cb6013fe2c256b3584`  
-		Last Modified: Wed, 29 Oct 2025 19:42:58 GMT  
+	-	`sha256:0e3ef5e77262fcb26a5440b000b716eb7b18bdc54513dafd9772dd04184e1c0b`  
+		Last Modified: Tue, 04 Nov 2025 11:43:00 GMT  
 		Size: 23.1 KB (23060 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:latest`
 
 ```console
-$ docker pull rocket.chat@sha256:4b9adab0ba3277a8163b0f375b5e63a5ace5d4bf803b029787337fa3807f35be
+$ docker pull rocket.chat@sha256:cab40df34f8dc1d10cd23f8a7669a1fa08593e72cccb7a1f0d2b148b6faf0493
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2028,99 +2028,99 @@ $ docker pull rocket.chat@sha256:4b9adab0ba3277a8163b0f375b5e63a5ace5d4bf803b029
 ### `rocket.chat:latest` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:46eae788445e7cc9e27cd1beb9770c2944f024a8f3932539ccd17fe1b32fac5e
+$ docker pull rocket.chat@sha256:471de4d52d64a29a47177832c0817d225080e170e223d83cb59d32367e31f92c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **494.7 MB (494655930 bytes)**  
+-	Total Size: **494.7 MB (494654374 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b974ad6fcbb4cd240a69da24bdc83696f48594046e47f29ebb0b47a10eff3ba`
+-	Image ID: `sha256:452739671559c7fe412f5b38379903367455c3557e15560dd3c537f77e82ee56`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 29 Oct 2025 14:16:43 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:34:05 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV NODE_VERSION=22.21.1
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:02 GMT
+# Tue, 04 Nov 2025 00:34:26 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 29 Oct 2025 14:17:13 GMT
+# Tue, 04 Nov 2025 00:34:37 GMT
 CMD ["node"]
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:28 GMT
 ENV DENO_VERSION=1.43.5
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:28 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 VOLUME [/app/uploads]
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 WORKDIR /app
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 ENV NODE_ENV=production
-# Mon, 03 Nov 2025 17:46:59 GMT
+# Tue, 04 Nov 2025 04:23:29 GMT
 ENV RC_VERSION=7.12.0
-# Mon, 03 Nov 2025 17:47:55 GMT
+# Tue, 04 Nov 2025 04:24:22 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Mon, 03 Nov 2025 17:47:55 GMT
+# Tue, 04 Nov 2025 04:24:22 GMT
 USER rocketchat
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 WORKDIR /app/bundle
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 EXPOSE map[3000/tcp:{}]
-# Mon, 03 Nov 2025 17:47:56 GMT
+# Tue, 04 Nov 2025 04:24:23 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a64aa7870b4f95d01358c1b418b027215bab0d3ffbc0887253c52d7597ab29`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:427deb858cffe936256f73e134a5baf1b4a26a93b79e03850d2243f6bc1fb302`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ebb191ae0814668dd8527dbd57596d21a4c90e3d676fa1110f3909f425fa83`  
-		Last Modified: Wed, 29 Oct 2025 14:17:36 GMT  
-		Size: 49.5 MB (49481581 bytes)  
+	-	`sha256:45d65a4ff088ddf61684b1496e527c5c3accd5af20974f6dd6c3bc58a93412dc`  
+		Last Modified: Tue, 04 Nov 2025 00:35:04 GMT  
+		Size: 49.5 MB (49481524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d26c198d67aaa62741786af2906f12d830189bd238998b7da1224b663b38d64`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 1.7 MB (1712658 bytes)  
+	-	`sha256:a6653fee0b024a9e265d5b1d360a35e40e56d7b2212c51acbf76e66c88af4e02`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 1.7 MB (1712601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db8152ef1655038a652419b662aac0b05bd08392725130abec04a8ce22e06b2`  
-		Last Modified: Wed, 29 Oct 2025 14:17:32 GMT  
-		Size: 449.0 B  
+	-	`sha256:77b7c6f7614440681a3a5b71d3914a7eb7f5122582683ae69e336cd32f238a04`  
+		Last Modified: Tue, 04 Nov 2025 00:34:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ccf90dcfa40ae02ccd1024b3fa340da78678bbf8f750c53f7ea1914663730ccb`  
-		Last Modified: Mon, 03 Nov 2025 17:49:11 GMT  
-		Size: 48.7 MB (48723786 bytes)  
+	-	`sha256:cb9c26066a009725fc08c6252c6e993082b0c4091b2b8bba4da7db06aa05b836`  
+		Last Modified: Tue, 04 Nov 2025 04:25:35 GMT  
+		Size: 48.7 MB (48723735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7955e8448e344d8ad5d8a7b5306b3c65aaad41ce5b9b397d2b394aa4d7ce5575`  
-		Last Modified: Mon, 03 Nov 2025 17:49:01 GMT  
-		Size: 1.2 KB (1178 bytes)  
+	-	`sha256:0d7e9f5121a6a71b5b54e8479d540da6493bc3c17120c2eb3d36c041fb66b7fc`  
+		Last Modified: Tue, 04 Nov 2025 04:25:25 GMT  
+		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13937dfd8ddbdf35552b2c964553c8cd4a61416f9a03078a7179330d9368f2f0`  
-		Last Modified: Mon, 03 Nov 2025 20:43:20 GMT  
-		Size: 366.5 MB (366504582 bytes)  
+	-	`sha256:80d4871aa792f720ba6402015f15efde12b84a88ec0c1b22d9b95b8f47768e3b`  
+		Last Modified: Tue, 04 Nov 2025 09:53:54 GMT  
+		Size: 366.5 MB (366502954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -2130,19 +2130,19 @@ CMD ["node" "main.js"]
 ### `rocket.chat:latest` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:10894a1e393e2d23d0c02d88a344ebc1a537043f153c566fa90a61c44b0dd5ad
+$ docker pull rocket.chat@sha256:c4b2023db9c69057dda46854dd07ab10a020e9c88325b16a1096576cdbbcf94d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 KB (23671 bytes)**  
+-	Total Size: **23.7 KB (23672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:727a611272f8cb31709483e012b5b3732b1a5298a6464026de00f96690c77498`
+-	Image ID: `sha256:c31bf5b49127bd3ca906fbb73dd8cf00a707ff0674fc2fc6c8669748ee81a623`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fc3fa56aacabc81033c62afefca0b963d2d41259c9fe01eea9c71f400a5f3d7e`  
-		Last Modified: Mon, 03 Nov 2025 20:42:19 GMT  
-		Size: 23.7 KB (23671 bytes)  
+	-	`sha256:ae7b49a5c933278922b509166971b63af55e8bc52c926fbb607970cd3f75fa0d`  
+		Last Modified: Tue, 04 Nov 2025 11:42:18 GMT  
+		Size: 23.7 KB (23672 bytes)  
 		MIME: application/vnd.in-toto+json
