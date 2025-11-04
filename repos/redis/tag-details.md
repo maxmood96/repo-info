@@ -54,6 +54,10 @@
 -	[`redis:8.2.3-alpine`](#redis823-alpine)
 -	[`redis:8.2.3-alpine3.22`](#redis823-alpine322)
 -	[`redis:8.2.3-bookworm`](#redis823-bookworm)
+-	[`redis:8.4-rc1`](#redis84-rc1)
+-	[`redis:8.4-rc1-alpine`](#redis84-rc1-alpine)
+-	[`redis:8.4-rc1-alpine3.22`](#redis84-rc1-alpine322)
+-	[`redis:8.4-rc1-bookworm`](#redis84-rc1-bookworm)
 -	[`redis:alpine`](#redisalpine)
 -	[`redis:alpine3.22`](#redisalpine322)
 -	[`redis:bookworm`](#redisbookworm)
@@ -44062,6 +44066,22 @@ $ docker pull redis@sha256:d712e4f8026688dd18fea1ddbe90ca965fefa62fcf438089d7903
 		Last Modified: Tue, 04 Nov 2025 08:06:13 GMT  
 		Size: 29.7 KB (29672 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `redis:8.4-rc1`
+
+**does not exist** (yet?)
+
+## `redis:8.4-rc1-alpine`
+
+**does not exist** (yet?)
+
+## `redis:8.4-rc1-alpine3.22`
+
+**does not exist** (yet?)
+
+## `redis:8.4-rc1-bookworm`
+
+**does not exist** (yet?)
 
 ## `redis:alpine`
 
