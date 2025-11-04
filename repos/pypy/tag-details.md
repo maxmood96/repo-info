@@ -159,7 +159,7 @@
 ## `pypy:2`
 
 ```console
-$ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009c7d87f145f
+$ docker pull pypy@sha256:2597eb0049050f5812c49e68390878211b051c923b121d3ded3b898e4d617bcb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -176,80 +176,80 @@ $ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009
 ### `pypy:2` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2` - linux; arm64 variant v8
@@ -559,7 +559,7 @@ CMD ["pypy"]
 ## `pypy:2-7`
 
 ```console
-$ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009c7d87f145f
+$ docker pull pypy@sha256:2597eb0049050f5812c49e68390878211b051c923b121d3ded3b898e4d617bcb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -576,80 +576,80 @@ $ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009
 ### `pypy:2-7` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2-7` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2-7` - linux; arm64 variant v8
@@ -1859,7 +1859,7 @@ $ docker pull pypy@sha256:608f23f820394adea49623dca991763a0de77ef20b222ae2f874cd
 ## `pypy:2-7-trixie`
 
 ```console
-$ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094c0365e029e
+$ docker pull pypy@sha256:d64686cfdda83e742a411ccf9cd626cfaed7ddffa20966baa855ffca863bfa4e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1874,80 +1874,80 @@ $ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094
 ### `pypy:2-7-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2-7-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2-7-trixie` - linux; arm64 variant v8
@@ -2434,7 +2434,7 @@ CMD ["pypy"]
 ## `pypy:2-7.3`
 
 ```console
-$ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009c7d87f145f
+$ docker pull pypy@sha256:2597eb0049050f5812c49e68390878211b051c923b121d3ded3b898e4d617bcb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2451,80 +2451,80 @@ $ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009
 ### `pypy:2-7.3` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2-7.3` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2-7.3` - linux; arm64 variant v8
@@ -3734,7 +3734,7 @@ $ docker pull pypy@sha256:608f23f820394adea49623dca991763a0de77ef20b222ae2f874cd
 ## `pypy:2-7.3-trixie`
 
 ```console
-$ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094c0365e029e
+$ docker pull pypy@sha256:d64686cfdda83e742a411ccf9cd626cfaed7ddffa20966baa855ffca863bfa4e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3749,80 +3749,80 @@ $ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094
 ### `pypy:2-7.3-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2-7.3-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2-7.3-trixie` - linux; arm64 variant v8
@@ -4309,7 +4309,7 @@ CMD ["pypy"]
 ## `pypy:2-7.3.20`
 
 ```console
-$ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009c7d87f145f
+$ docker pull pypy@sha256:2597eb0049050f5812c49e68390878211b051c923b121d3ded3b898e4d617bcb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4326,80 +4326,80 @@ $ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009
 ### `pypy:2-7.3.20` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2-7.3.20` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2-7.3.20` - linux; arm64 variant v8
@@ -5609,7 +5609,7 @@ $ docker pull pypy@sha256:608f23f820394adea49623dca991763a0de77ef20b222ae2f874cd
 ## `pypy:2-7.3.20-trixie`
 
 ```console
-$ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094c0365e029e
+$ docker pull pypy@sha256:d64686cfdda83e742a411ccf9cd626cfaed7ddffa20966baa855ffca863bfa4e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5624,80 +5624,80 @@ $ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094
 ### `pypy:2-7.3.20-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2-7.3.20-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2-7.3.20-trixie` - linux; arm64 variant v8
@@ -7084,7 +7084,7 @@ $ docker pull pypy@sha256:608f23f820394adea49623dca991763a0de77ef20b222ae2f874cd
 ## `pypy:2-trixie`
 
 ```console
-$ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094c0365e029e
+$ docker pull pypy@sha256:d64686cfdda83e742a411ccf9cd626cfaed7ddffa20966baa855ffca863bfa4e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7099,80 +7099,80 @@ $ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094
 ### `pypy:2-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2-trixie` - linux; arm64 variant v8
@@ -7659,7 +7659,7 @@ CMD ["pypy"]
 ## `pypy:2.7`
 
 ```console
-$ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009c7d87f145f
+$ docker pull pypy@sha256:2597eb0049050f5812c49e68390878211b051c923b121d3ded3b898e4d617bcb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7676,80 +7676,80 @@ $ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009
 ### `pypy:2.7` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2.7` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2.7` - linux; arm64 variant v8
@@ -8059,7 +8059,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7`
 
 ```console
-$ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009c7d87f145f
+$ docker pull pypy@sha256:2597eb0049050f5812c49e68390878211b051c923b121d3ded3b898e4d617bcb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8076,80 +8076,80 @@ $ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009
 ### `pypy:2.7-7` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2.7-7` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2.7-7` - linux; arm64 variant v8
@@ -9359,7 +9359,7 @@ $ docker pull pypy@sha256:608f23f820394adea49623dca991763a0de77ef20b222ae2f874cd
 ## `pypy:2.7-7-trixie`
 
 ```console
-$ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094c0365e029e
+$ docker pull pypy@sha256:d64686cfdda83e742a411ccf9cd626cfaed7ddffa20966baa855ffca863bfa4e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9374,80 +9374,80 @@ $ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094
 ### `pypy:2.7-7-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2.7-7-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2.7-7-trixie` - linux; arm64 variant v8
@@ -9934,7 +9934,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.3`
 
 ```console
-$ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009c7d87f145f
+$ docker pull pypy@sha256:2597eb0049050f5812c49e68390878211b051c923b121d3ded3b898e4d617bcb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9951,80 +9951,80 @@ $ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009
 ### `pypy:2.7-7.3` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2.7-7.3` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2.7-7.3` - linux; arm64 variant v8
@@ -11234,7 +11234,7 @@ $ docker pull pypy@sha256:608f23f820394adea49623dca991763a0de77ef20b222ae2f874cd
 ## `pypy:2.7-7.3-trixie`
 
 ```console
-$ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094c0365e029e
+$ docker pull pypy@sha256:d64686cfdda83e742a411ccf9cd626cfaed7ddffa20966baa855ffca863bfa4e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11249,80 +11249,80 @@ $ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094
 ### `pypy:2.7-7.3-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2.7-7.3-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2.7-7.3-trixie` - linux; arm64 variant v8
@@ -11809,7 +11809,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.3.20`
 
 ```console
-$ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009c7d87f145f
+$ docker pull pypy@sha256:2597eb0049050f5812c49e68390878211b051c923b121d3ded3b898e4d617bcb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11826,80 +11826,80 @@ $ docker pull pypy@sha256:84de417dc5307124f7717f43dbcc0b7e3cd719bdda3ec9db90e009
 ### `pypy:2.7-7.3.20` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2.7-7.3.20` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2.7-7.3.20` - linux; arm64 variant v8
@@ -13109,7 +13109,7 @@ $ docker pull pypy@sha256:608f23f820394adea49623dca991763a0de77ef20b222ae2f874cd
 ## `pypy:2.7-7.3.20-trixie`
 
 ```console
-$ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094c0365e029e
+$ docker pull pypy@sha256:d64686cfdda83e742a411ccf9cd626cfaed7ddffa20966baa855ffca863bfa4e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13124,80 +13124,80 @@ $ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094
 ### `pypy:2.7-7.3.20-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2.7-7.3.20-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2.7-7.3.20-trixie` - linux; arm64 variant v8
@@ -14584,7 +14584,7 @@ $ docker pull pypy@sha256:608f23f820394adea49623dca991763a0de77ef20b222ae2f874cd
 ## `pypy:2.7-trixie`
 
 ```console
-$ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094c0365e029e
+$ docker pull pypy@sha256:d64686cfdda83e742a411ccf9cd626cfaed7ddffa20966baa855ffca863bfa4e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14599,80 +14599,80 @@ $ docker pull pypy@sha256:6de6ce48da5b83476630d568c057ce722d50298cdc50aae8688094
 ### `pypy:2.7-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:591f90bf655365078416f7d177158d059861f56b81606cde25fd111c3498640f
+$ docker pull pypy@sha256:178d51cb355a2a8b892e5a5cf922a58d43f69cf22cb3efdd1cfaf5c62f848eb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **412.1 MB (412057513 bytes)**  
+-	Total Size: **412.1 MB (412059168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018259c1cde880f64f8a0dfcf2be990191a89bebca74fcf8dc9ac7a3d6105b95`
+-	Image ID: `sha256:0fd01a7dc668ccf38d26ed3259bc102d6de2432864fc315d73401b5792c8b7c3`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:32 GMT
 CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a46156751d106734fd8e5d8d34e61e24a4d1c1d5b5fbfe21d429e6683bbf1c9c`  
-		Last Modified: Tue, 21 Oct 2025 11:40:29 GMT  
-		Size: 33.4 MB (33444169 bytes)  
+	-	`sha256:3e9f91d5ba3528a4af8fd70fa46847db84cb53c3a785808558605790edddb515`  
+		Last Modified: Tue, 04 Nov 2025 14:33:05 GMT  
+		Size: 33.4 MB (33444043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2.7-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:9225a8e647b39f109195551e30f3d33b03b3f0c97e0e91a1107ae9384a864224
+$ docker pull pypy@sha256:2ca9cd75d2815905680f4e3b7f73a1cb784fa5d164cd240a115af13c82c6ff84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17246752 bytes)**  
+-	Total Size: **17.2 MB (17246709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412f742784972ac7d9162211fb62eb9105aca02a910cda9525275380adacb931`
+-	Image ID: `sha256:c6c83f0133f2598449c52b290296a8d68f1b8fe4634d7eda4cc4993da1b70d6f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c2bcb62d07c13900e7f04b8b2b51ec390a0832cc3a994b64f9200f8751fe2c8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:21 GMT  
+	-	`sha256:a4d441118e4a392908fbf973c47fbd2bcf593de79cb4b35d61afcacae0a69aa7`  
+		Last Modified: Tue, 04 Nov 2025 16:38:22 GMT  
 		Size: 17.2 MB (17226206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfd49b2a8cb733731205113cafd4fdd62df22ec901f24769003be31572248e8`  
-		Last Modified: Tue, 21 Oct 2025 12:38:22 GMT  
-		Size: 20.5 KB (20546 bytes)  
+	-	`sha256:b57adabaedee0a4fab93abc7b6fba6ee824625a1b2df2c6bd68e2957aeaa40ff`  
+		Last Modified: Tue, 04 Nov 2025 16:38:23 GMT  
+		Size: 20.5 KB (20503 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2.7-trixie` - linux; arm64 variant v8
@@ -15159,7 +15159,7 @@ CMD ["pypy"]
 ## `pypy:3`
 
 ```console
-$ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592cf8407e6484
+$ docker pull pypy@sha256:86d4243f0c4c2e51febcb99ef27697fb74ec4c394e41f73279356dd14d523cb3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15176,86 +15176,86 @@ $ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592c
 ### `pypy:3` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3` - linux; arm64 variant v8
@@ -15565,7 +15565,7 @@ CMD ["pypy"]
 ## `pypy:3-7`
 
 ```console
-$ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592cf8407e6484
+$ docker pull pypy@sha256:86d4243f0c4c2e51febcb99ef27697fb74ec4c394e41f73279356dd14d523cb3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15582,86 +15582,86 @@ $ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592c
 ### `pypy:3-7` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3-7` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3-7` - linux; arm64 variant v8
@@ -16889,7 +16889,7 @@ $ docker pull pypy@sha256:3773844c81e00eaf6b53b977a64e96304585e4ebfb940df062124e
 ## `pypy:3-7-trixie`
 
 ```console
-$ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f4650011013
+$ docker pull pypy@sha256:0806e6cef7bf3e2859022703716936af6b7ae2dbdd5526d3e18cbce84ede6d02
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16904,86 +16904,86 @@ $ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f
 ### `pypy:3-7-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3-7-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3-7-trixie` - linux; arm64 variant v8
@@ -17458,7 +17458,7 @@ CMD ["pypy"]
 ## `pypy:3-7.3`
 
 ```console
-$ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592cf8407e6484
+$ docker pull pypy@sha256:86d4243f0c4c2e51febcb99ef27697fb74ec4c394e41f73279356dd14d523cb3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17475,86 +17475,86 @@ $ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592c
 ### `pypy:3-7.3` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3-7.3` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3-7.3` - linux; arm64 variant v8
@@ -18782,7 +18782,7 @@ $ docker pull pypy@sha256:3773844c81e00eaf6b53b977a64e96304585e4ebfb940df062124e
 ## `pypy:3-7.3-trixie`
 
 ```console
-$ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f4650011013
+$ docker pull pypy@sha256:0806e6cef7bf3e2859022703716936af6b7ae2dbdd5526d3e18cbce84ede6d02
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18797,86 +18797,86 @@ $ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f
 ### `pypy:3-7.3-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3-7.3-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3-7.3-trixie` - linux; arm64 variant v8
@@ -19351,7 +19351,7 @@ CMD ["pypy"]
 ## `pypy:3-7.3.20`
 
 ```console
-$ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592cf8407e6484
+$ docker pull pypy@sha256:86d4243f0c4c2e51febcb99ef27697fb74ec4c394e41f73279356dd14d523cb3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19368,86 +19368,86 @@ $ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592c
 ### `pypy:3-7.3.20` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3-7.3.20` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3-7.3.20` - linux; arm64 variant v8
@@ -20675,7 +20675,7 @@ $ docker pull pypy@sha256:3773844c81e00eaf6b53b977a64e96304585e4ebfb940df062124e
 ## `pypy:3-7.3.20-trixie`
 
 ```console
-$ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f4650011013
+$ docker pull pypy@sha256:0806e6cef7bf3e2859022703716936af6b7ae2dbdd5526d3e18cbce84ede6d02
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20690,86 +20690,86 @@ $ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f
 ### `pypy:3-7.3.20-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3-7.3.20-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3-7.3.20-trixie` - linux; arm64 variant v8
@@ -22162,7 +22162,7 @@ $ docker pull pypy@sha256:3773844c81e00eaf6b53b977a64e96304585e4ebfb940df062124e
 ## `pypy:3-trixie`
 
 ```console
-$ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f4650011013
+$ docker pull pypy@sha256:0806e6cef7bf3e2859022703716936af6b7ae2dbdd5526d3e18cbce84ede6d02
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22177,86 +22177,86 @@ $ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f
 ### `pypy:3-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3-trixie` - linux; arm64 variant v8
@@ -22731,7 +22731,7 @@ CMD ["pypy"]
 ## `pypy:3.11`
 
 ```console
-$ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592cf8407e6484
+$ docker pull pypy@sha256:86d4243f0c4c2e51febcb99ef27697fb74ec4c394e41f73279356dd14d523cb3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22748,86 +22748,86 @@ $ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592c
 ### `pypy:3.11` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3.11` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3.11` - linux; arm64 variant v8
@@ -23137,7 +23137,7 @@ CMD ["pypy"]
 ## `pypy:3.11-7`
 
 ```console
-$ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592cf8407e6484
+$ docker pull pypy@sha256:86d4243f0c4c2e51febcb99ef27697fb74ec4c394e41f73279356dd14d523cb3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23154,86 +23154,86 @@ $ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592c
 ### `pypy:3.11-7` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3.11-7` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3.11-7` - linux; arm64 variant v8
@@ -24461,7 +24461,7 @@ $ docker pull pypy@sha256:3773844c81e00eaf6b53b977a64e96304585e4ebfb940df062124e
 ## `pypy:3.11-7-trixie`
 
 ```console
-$ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f4650011013
+$ docker pull pypy@sha256:0806e6cef7bf3e2859022703716936af6b7ae2dbdd5526d3e18cbce84ede6d02
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24476,86 +24476,86 @@ $ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f
 ### `pypy:3.11-7-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3.11-7-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3.11-7-trixie` - linux; arm64 variant v8
@@ -25030,7 +25030,7 @@ CMD ["pypy"]
 ## `pypy:3.11-7.3`
 
 ```console
-$ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592cf8407e6484
+$ docker pull pypy@sha256:86d4243f0c4c2e51febcb99ef27697fb74ec4c394e41f73279356dd14d523cb3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25047,86 +25047,86 @@ $ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592c
 ### `pypy:3.11-7.3` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3.11-7.3` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3.11-7.3` - linux; arm64 variant v8
@@ -26354,7 +26354,7 @@ $ docker pull pypy@sha256:3773844c81e00eaf6b53b977a64e96304585e4ebfb940df062124e
 ## `pypy:3.11-7.3-trixie`
 
 ```console
-$ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f4650011013
+$ docker pull pypy@sha256:0806e6cef7bf3e2859022703716936af6b7ae2dbdd5526d3e18cbce84ede6d02
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26369,86 +26369,86 @@ $ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f
 ### `pypy:3.11-7.3-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3.11-7.3-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3.11-7.3-trixie` - linux; arm64 variant v8
@@ -26923,7 +26923,7 @@ CMD ["pypy"]
 ## `pypy:3.11-7.3.20`
 
 ```console
-$ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592cf8407e6484
+$ docker pull pypy@sha256:86d4243f0c4c2e51febcb99ef27697fb74ec4c394e41f73279356dd14d523cb3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26940,86 +26940,86 @@ $ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592c
 ### `pypy:3.11-7.3.20` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3.11-7.3.20` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3.11-7.3.20` - linux; arm64 variant v8
@@ -28247,7 +28247,7 @@ $ docker pull pypy@sha256:3773844c81e00eaf6b53b977a64e96304585e4ebfb940df062124e
 ## `pypy:3.11-7.3.20-trixie`
 
 ```console
-$ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f4650011013
+$ docker pull pypy@sha256:0806e6cef7bf3e2859022703716936af6b7ae2dbdd5526d3e18cbce84ede6d02
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28262,86 +28262,86 @@ $ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f
 ### `pypy:3.11-7.3.20-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3.11-7.3.20-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3.11-7.3.20-trixie` - linux; arm64 variant v8
@@ -29734,7 +29734,7 @@ $ docker pull pypy@sha256:3773844c81e00eaf6b53b977a64e96304585e4ebfb940df062124e
 ## `pypy:3.11-trixie`
 
 ```console
-$ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f4650011013
+$ docker pull pypy@sha256:0806e6cef7bf3e2859022703716936af6b7ae2dbdd5526d3e18cbce84ede6d02
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29749,86 +29749,86 @@ $ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f
 ### `pypy:3.11-trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3.11-trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3.11-trixie` - linux; arm64 variant v8
@@ -30573,7 +30573,7 @@ $ docker pull pypy@sha256:4f800862f3bb8bf4b080e06f87e2d050c0860be56a8395e626e66b
 ## `pypy:latest`
 
 ```console
-$ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592cf8407e6484
+$ docker pull pypy@sha256:86d4243f0c4c2e51febcb99ef27697fb74ec4c394e41f73279356dd14d523cb3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30590,86 +30590,86 @@ $ docker pull pypy@sha256:e4149efac53928ffe573563cdaa8940de0e32b8c72a80e728e592c
 ### `pypy:latest` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:latest` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:latest` - linux; arm64 variant v8
@@ -31627,7 +31627,7 @@ $ docker pull pypy@sha256:3773844c81e00eaf6b53b977a64e96304585e4ebfb940df062124e
 ## `pypy:trixie`
 
 ```console
-$ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f4650011013
+$ docker pull pypy@sha256:0806e6cef7bf3e2859022703716936af6b7ae2dbdd5526d3e18cbce84ede6d02
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31642,86 +31642,86 @@ $ docker pull pypy@sha256:7587fca6e13071255516f236e33751255370ab3f6de5cf781eb19f
 ### `pypy:trixie` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:26a46383965c8a7c18907714b7c3b48a4e7cbc1fabf7582ff7367cc79a415283
+$ docker pull pypy@sha256:408d680bae092b29e4bbd694fd81be8f906b9ceea25ec4fb435a93f4b5d8edec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **415.7 MB (415695039 bytes)**  
+-	Total Size: **415.7 MB (415696841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9c49f9c87d2b6f756e4f004ea8c7383620dbc001ddde6ee3bd68868bd9d47`
+-	Image ID: `sha256:c250992e68034f166463f510192e0f434372cf6cc97922b2cb23367591305481`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 04:14:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 07:42:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 10:58:37 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 ENV PYPY_VERSION=7.3.20
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Fri, 08 Aug 2025 20:00:48 GMT
+# Tue, 04 Nov 2025 14:32:35 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:795dbedde24d2c72dafd2b71fe36643552e56859c0e29cdb095ed54b825fbaa2`  
-		Last Modified: Tue, 21 Oct 2025 00:20:33 GMT  
-		Size: 49.3 MB (49284971 bytes)  
+	-	`sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33`  
+		Last Modified: Tue, 04 Nov 2025 00:13:22 GMT  
+		Size: 49.3 MB (49285628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89d573bf42b377ce6a5a0451c15388849686fa4058efd68999f3b014daeb5b55`  
-		Last Modified: Tue, 21 Oct 2025 01:42:47 GMT  
-		Size: 25.6 MB (25615545 bytes)  
+	-	`sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462`  
+		Last Modified: Tue, 04 Nov 2025 04:14:53 GMT  
+		Size: 25.6 MB (25615393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26dfe2fac1c486e9aaf41d1028ed30be2c442aa84af44462bc7bac8c148ffb13`  
-		Last Modified: Tue, 21 Oct 2025 04:47:38 GMT  
-		Size: 67.8 MB (67784857 bytes)  
+	-	`sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee`  
+		Last Modified: Tue, 04 Nov 2025 07:43:02 GMT  
+		Size: 67.8 MB (67776858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d5bd8a8d262418bf22e705535ce38c6789dc72e319d76b30aafa5c331b6924`  
-		Last Modified: Tue, 21 Oct 2025 10:24:40 GMT  
-		Size: 235.9 MB (235927971 bytes)  
+	-	`sha256:23d55a674b2e3641a37b7f2053f00af6fe4f2a89576ffb917d4b7b4deaf24591`  
+		Last Modified: Tue, 04 Nov 2025 11:23:13 GMT  
+		Size: 235.9 MB (235937246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b255bc7da6942cc4123ecf081f5cacf54da283387423b0bd0d3749f0c577ec`  
-		Last Modified: Tue, 21 Oct 2025 11:40:23 GMT  
-		Size: 3.0 MB (2976139 bytes)  
+	-	`sha256:fcbb287cffa135368461cbb2bdd6b9010557e7e1ecf565ac7c30cdd2e06bc5c1`  
+		Last Modified: Tue, 04 Nov 2025 14:33:04 GMT  
+		Size: 3.0 MB (2976112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82e7c62d8c7af5ae1b3012f1aabf2565cc8fad8b8b544ce1bd2a0868f4767c02`  
-		Last Modified: Tue, 21 Oct 2025 11:40:26 GMT  
-		Size: 34.1 MB (34105556 bytes)  
+	-	`sha256:ff99877a2b1eb53614258d5ff61b41b009d932d8c5b5e09656ff1370f246a5b9`  
+		Last Modified: Tue, 04 Nov 2025 14:33:07 GMT  
+		Size: 34.1 MB (34105604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:trixie` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:27d197e2b3a64482553640fae4b79b53eeaa2f3260ebb05d189a3141f827d5a8
+$ docker pull pypy@sha256:e1e976d475709dbe8790580b0e86f9bdf4e59e5cc33311b6a5d5d19e67ed1be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17556632 bytes)**  
+-	Total Size: **17.6 MB (17556589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a646cd264d76f4d89ab47c3c090a9dd490d6380f59c7cee28ed36cac834ad112`
+-	Image ID: `sha256:49de2c7ff23bd9e5afb5111fea8ef02691fefa71ea2d0488d147f5ef26bd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:404ec6ebaedf59ea4eb5e929a676f597d539f63d3fb3c952d1663d991a1999af`  
-		Last Modified: Tue, 21 Oct 2025 12:39:50 GMT  
+	-	`sha256:ddceda96dc24bfd3eb1d4dc3f675e335b581df9b1085dfcef01b17a6b4a822cb`  
+		Last Modified: Tue, 04 Nov 2025 16:39:35 GMT  
 		Size: 17.5 MB (17531668 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47b0ffb4c04a10b14ce25bfbdacc145f33c05358c65dcac5d26e9219ecbd45cc`  
-		Last Modified: Tue, 21 Oct 2025 12:39:51 GMT  
-		Size: 25.0 KB (24964 bytes)  
+	-	`sha256:fd9c15a9ed67e1d5948074a55acf1debee2856cd0f081048fc9d08546f6ddf16`  
+		Last Modified: Tue, 04 Nov 2025 16:39:36 GMT  
+		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:trixie` - linux; arm64 variant v8
