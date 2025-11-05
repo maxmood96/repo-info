@@ -1,18 +1,18 @@
-# `redis:8.2.2`
+# `redis:8.2.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:466e5b1da2ef27f8c769875a8b17a50edcb0731ac9207b47b0e22306d95362bd`
-- Created: `2025-10-03T12:18:48Z`
-- Virtual Size: ~ 137.22 Mb  
+- Image ID: `sha256:017b1c12abf9d52fe40dda80a195107ea2c566a0035b59ffcc67af8b4c32c736`
+- Created: `2025-11-04T00:34:13.645684567Z`
+- Virtual Size: ~ 137.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["redis-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.2.2.tar.gz`
-  - `REDIS_DOWNLOAD_SHA=e355378d7f97efd06321fff881efc452a9673cc27b3a6d0dfd2a45fbcc83349c`
+  - `REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.2.3.tar.gz`
+  - `REDIS_DOWNLOAD_SHA=42d4d3f037db92eea4437ba03f87627cd636ed15a1f2dde7af9650aa94b035d8`
 
 ## `dpkg` (`.deb`-based packages)
 
