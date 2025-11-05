@@ -140,6 +140,7 @@
 -	[`amazoncorretto:25-headful`](#amazoncorretto25-headful)
 -	[`amazoncorretto:25-headless`](#amazoncorretto25-headless)
 -	[`amazoncorretto:25-jdk`](#amazoncorretto25-jdk)
+-	[`amazoncorretto:25.0.1`](#amazoncorretto2501)
 -	[`amazoncorretto:25.0.1-al2023`](#amazoncorretto2501-al2023)
 -	[`amazoncorretto:25.0.1-al2023-headful`](#amazoncorretto2501-al2023-headful)
 -	[`amazoncorretto:25.0.1-al2023-headless`](#amazoncorretto2501-al2023-headless)
@@ -19490,6 +19491,10 @@ $ docker pull amazoncorretto@sha256:0009366b65ebb99701b82f6a12c06acfcfde35f5e96a
 		Last Modified: Fri, 31 Oct 2025 02:20:05 GMT  
 		Size: 10.3 KB (10311 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `amazoncorretto:25.0.1`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:25.0.1-al2023`
 
