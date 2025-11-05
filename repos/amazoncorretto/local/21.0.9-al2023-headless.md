@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:522836208cb12d2f94648fb382e3fb6fc0cef34bd2bffcb7a6e786e3cebc06d1`
-- Created: `2025-10-31T00:12:43.329947457Z`
+- Image ID: `sha256:c8807b89962b27607dfdb882dc08d6ef9cc654ba54177f6d7a105e4bf0095af8`
+- Created: `2025-11-05T01:06:31.556723396Z`
 - Virtual Size: ~ 396.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -472,16 +472,11 @@ $ dnf --quiet download --source --url harfbuzz-7.0.0-2.amzn2023.0.2
 https://cdn.amazonlinux.com/al2023/core/guids/fb306bc4cc1c8b2ea3bc3c38878deb2c6efae8d1e1ef66c98a45b707321e45bd/SRPMS/../../../../blobstore/3cc7971ddcf04cd18ac90b4a978eb7acf4249d5a04124a457b0913212fa1e684/harfbuzz-7.0.0-2.amzn2023.0.2.src.rpm
 ```
 
-### `rpm` package: `java-21-amazon-corretto-headless-21.0.9+10-1.amzn2023.1.x86_64`
+### `rpm` package: `java-21-amazon-corretto-headless-21.0.9+11-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
-
-```console
-$ dnf --quiet download --source --url java-21-amazon-corretto-headless-21.0.9+10-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/fb306bc4cc1c8b2ea3bc3c38878deb2c6efae8d1e1ef66c98a45b707321e45bd/SRPMS/../../../../blobstore/fdcce1e2071395ab6e78d9dc8d0186d659979a0334e3ca7a82c5b9c3431366ba/java-21-amazon-corretto-21.0.9+10-1.amzn2023.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `javapackages-filesystem-6.0.0-7.amzn2023.0.6.noarch`
 

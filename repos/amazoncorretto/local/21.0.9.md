@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d7dd07912d8c9b60ca273e0ef4fe7a55cf384e147295be2c3195942534268b59`
-- Created: `2025-10-31T00:12:25.885171121Z`
+- Image ID: `sha256:6a188df204f2bc4af05ece24df9143970b8f9cd4c02e86556716a1556b253e6f`
+- Created: `2025-11-05T01:06:08.6522732Z`
 - Virtual Size: ~ 491.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -390,7 +390,7 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/9e51c14e779e3dab14ffb3e40e635715f2db2b219f263520392856715440f68d/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-21-amazon-corretto-devel-21.0.9.10-1.x86_64`
+### `rpm` package: `java-21-amazon-corretto-devel-21.0.9.11-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
