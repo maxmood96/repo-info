@@ -8323,11 +8323,11 @@ $ docker pull debian@sha256:366ae5e156e4757b4e659e7613b0f109ce23fdb4428097519012
 
 -	Layers:
 	-	`sha256:c457bae33f3451df6a02c04e7bfc75f4c403d4f82eb8a44b78d3484ecfd48145`  
-		Last Modified: Tue, 04 Nov 2025 01:16:56 GMT  
+		Last Modified: Tue, 04 Nov 2025 22:33:07 GMT  
 		Size: 3.1 MB (3133026 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dba6ba587f1a368af75817b0d878229e769259c0d7978f0a42525bfb797e49ac`  
-		Last Modified: Tue, 04 Nov 2025 01:16:56 GMT  
+		Last Modified: Tue, 04 Nov 2025 22:33:08 GMT  
 		Size: 5.8 KB (5804 bytes)  
 		MIME: application/vnd.in-toto+json
 
