@@ -1,7 +1,7 @@
 ## `ibm-semeru-runtimes:open-21.0.9_10-jre-jammy`
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:3767b38a0289c16121458e03c08c778aa0bd66c0697ce0d8b1f36d15e6f1fd54
+$ docker pull ibm-semeru-runtimes@sha256:953bb12c7bbb4c6d309212be6b846bba469252433a16be8d8d9d6fa73f6d77ed
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -184,7 +184,7 @@ $ docker pull ibm-semeru-runtimes@sha256:9bd0e25f8adc93cad15ca640f0804d910e12ad5
 ### `ibm-semeru-runtimes:open-21.0.9_10-jre-jammy` - linux; ppc64le
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:d47dad2b8e98db11fae808491b5ad42dcc6daf0937070f994ca78e1c6afd5992
+$ docker pull ibm-semeru-runtimes@sha256:68f701007ac9425a9765820892d2d07b4001e720806baa2b6074554da409a634
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -243,24 +243,24 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 ### `ibm-semeru-runtimes:open-21.0.9_10-jre-jammy` - unknown; unknown
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:bb44ac3b3201f14789b837be6508de17f891405054f6bc150aca8b00a92e9ae6
+$ docker pull ibm-semeru-runtimes@sha256:c0ed52efa0e5788a641a513d0ff5017ccce97e205fd715e698399d59cd9dbdd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3762151 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bae998e1b320599a9189adc9605e5c824b8a6da8ee3463bd30343bfcf7c02c8d`
+-	Image ID: `sha256:01d4b5887535bee051dd72504f949531958d9e99b0b372067437f8fa5cea54bc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:33c266adbd2886d112e4949502548126150b0f0f32d0b8a5e269a9eb3789b8b7`  
-		Last Modified: Thu, 30 Oct 2025 22:46:45 GMT  
+	-	`sha256:c04098072cf3b6ecd787050a3f32d7a78226c59df726bb645efd8c72fb88b092`  
+		Last Modified: Wed, 05 Nov 2025 02:46:31 GMT  
 		Size: 3.7 MB (3736865 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1f0556d0492c934f8dbe127b2d17b28a9442ea6b68755965098b04d47ef26984`  
-		Last Modified: Thu, 30 Oct 2025 22:46:46 GMT  
+	-	`sha256:05d379882a828b6ea84ce708b815964a3d0e12d8e74db97082192d63dfd991fe`  
+		Last Modified: Wed, 05 Nov 2025 02:46:32 GMT  
 		Size: 25.3 KB (25286 bytes)  
 		MIME: application/vnd.in-toto+json
 
