@@ -1,7 +1,7 @@
 ## `golang:tip-20251102-trixie`
 
 ```console
-$ docker pull golang@sha256:fe366a4b441cde53e2a64074a035a9845a99a6e870147ce0b998ed6dc0bf33eb
+$ docker pull golang@sha256:b0deb03fcee59863b1e150f6c73c687115143c0324be412f0e91774de6f26f37
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -380,23 +380,23 @@ $ docker pull golang@sha256:870c091edf3ab1961c6a346277a2e099abb5ebc303ffab416057
 ### `golang:tip-20251102-trixie` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:c1c0056697c4c57e06bab2514dd9459d6d5c46bfe754297fc35fc5c965002c1a
+$ docker pull golang@sha256:8c5003c2c9de6593f8e2ae89340badba00427bd0a7009dfa249907529cbe2890
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **334.2 MB (334222463 bytes)**  
+-	Total Size: **334.2 MB (334229421 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:282383e8cf167b536caf3567e123d571562e1c9d8f6ac2d99e62b91030534e67`
+-	Image ID: `sha256:0cb52612f8ac4a6dc84934fc227b8897837389ffa667cc969a06003fb4be9311`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 06:28:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 16:02:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 03 Nov 2025 18:08:10 GMT
+# Tue, 04 Nov 2025 23:12:06 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 03 Nov 2025 18:07:40 GMT
 ENV GOTOOLCHAIN=local
@@ -406,35 +406,35 @@ ENV GOPATH=/go
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 03 Nov 2025 18:07:40 GMT
 COPY /target/ / # buildkit
-# Mon, 03 Nov 2025 18:08:14 GMT
+# Wed, 05 Nov 2025 05:35:19 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Mon, 03 Nov 2025 18:08:15 GMT
+# Wed, 05 Nov 2025 05:35:19 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:047d1b265d8a7d20ef8b3ccb9f133c3c5f1e4f9c92089889756590b7f20452b5`  
-		Last Modified: Tue, 21 Oct 2025 00:26:24 GMT  
-		Size: 53.1 MB (53109476 bytes)  
+	-	`sha256:3c335bb15935da0eae5ce30111cfa6a289c813162bada9fd389d8ae5510d5d66`  
+		Last Modified: Tue, 04 Nov 2025 00:20:22 GMT  
+		Size: 53.1 MB (53110127 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b62dfb88672cf0a942c4fdfcadf1912c35c9d30a3a001b18a9dad505fb960ae8`  
-		Last Modified: Tue, 21 Oct 2025 07:47:00 GMT  
-		Size: 27.0 MB (26996207 bytes)  
+	-	`sha256:31c598502b2d4d7d278f56bfb7b6960ccd64d116b7bc7b02516bad5cdad4a631`  
+		Last Modified: Tue, 04 Nov 2025 06:28:57 GMT  
+		Size: 27.0 MB (26996633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06029381e2f1b3a0885caf1b758b0461bfaf9db7b9642ca0b79ab28ed1dd4ecc`  
-		Last Modified: Tue, 21 Oct 2025 17:35:58 GMT  
-		Size: 73.0 MB (73029685 bytes)  
+	-	`sha256:1fbe8662034d4013b7fae91328f939dfb669ce78f36e4a91a9a0c68675f61828`  
+		Last Modified: Tue, 04 Nov 2025 16:03:22 GMT  
+		Size: 73.0 MB (73035332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8b8892ea040f8ffdb59a5551839a9c9b444ca569d6e9b5ac4b2e1cf5e439855`  
-		Last Modified: Mon, 03 Nov 2025 18:09:46 GMT  
-		Size: 92.8 MB (92795074 bytes)  
+	-	`sha256:e2c5b89482cdc83282e1c4dc404a03475b8d54046249f9bfaedd00a57da8fb66`  
+		Last Modified: Tue, 04 Nov 2025 23:14:13 GMT  
+		Size: 92.8 MB (92795308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1a11f1fd4cd7eff0746fa6b81e430f63f5332dd96bd03a2e634ca5fc29dcb745`  
 		Last Modified: Mon, 03 Nov 2025 18:09:48 GMT  
 		Size: 88.3 MB (88291863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e27329c12bddd5ee443948da06e76536b81b7489ceac8b5124e58e2fce6ec8f1`  
-		Last Modified: Mon, 03 Nov 2025 18:09:33 GMT  
+	-	`sha256:6eaf56799b360851f8e9524d329ebbd235a1924dcad1524c9fcea6c25c4b7122`  
+		Last Modified: Wed, 05 Nov 2025 05:36:25 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -445,24 +445,24 @@ WORKDIR /go
 ### `golang:tip-20251102-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:4224bfbf80acb6fedbcf5eee25f4de0ac06b612bc81d3f040ba6ddb80416ec43
+$ docker pull golang@sha256:791635f552722e815196f30cebe61172e9df30c044c33b38f2ff53391c7e3335
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10809268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01dc6070f3aec5072d5bda16960836c6714a6d1464ffacd2732693ab963bf085`
+-	Image ID: `sha256:6ea900deb3ac61a4a601cc36e10c57c517b6e7c20811b196eee210e6045f6407`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5bcb6cc05192aa5ff97ec3636512c1098f0dc92cde55a24fabfd9e26988371f2`  
-		Last Modified: Mon, 03 Nov 2025 21:24:09 GMT  
+	-	`sha256:7fad9af16b4a06209dbc4083360e1a5edc600c9f36f0f85b4ca57e9ada7f2b15`  
+		Last Modified: Wed, 05 Nov 2025 06:23:37 GMT  
 		Size: 10.8 MB (10780246 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:34e68720e523b97fd5a7b7b50631296d615cc64affd7f772795ca273749747ec`  
-		Last Modified: Mon, 03 Nov 2025 21:24:10 GMT  
+	-	`sha256:96a885d0b5d9b5ea89c8b7a2c82a9ce81f4dc0286740417c85e4f3f3b19773a0`  
+		Last Modified: Wed, 05 Nov 2025 06:23:38 GMT  
 		Size: 29.0 KB (29022 bytes)  
 		MIME: application/vnd.in-toto+json
 
