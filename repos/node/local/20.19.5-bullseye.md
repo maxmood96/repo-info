@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:29fd007cee22ff9f3b9c3e21d7ec1d9b7f8d627657445976b92af8e1f20eddd7`
-- Created: `2025-10-16T10:35:31Z`
+- Image ID: `sha256:dab9695d7a6cfb3a09c1fb590d4ecac73b45189f252a95234c077829b56903e3`
+- Created: `2025-11-04T11:00:37.624003334Z`
 - Virtual Size: ~ 1.00 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1352,15 +1352,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.19-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.19-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gdk-pixbuf=2.42.2+dfsg-1+deb11u3`
+### `dpkg` source package: `gdk-pixbuf=2.42.2+dfsg-1+deb11u4`
 
 Binary Packages:
 
-- `gir1.2-gdkpixbuf-2.0:amd64=2.42.2+dfsg-1+deb11u3`
-- `libgdk-pixbuf-2.0-0:amd64=2.42.2+dfsg-1+deb11u3`
-- `libgdk-pixbuf-2.0-dev:amd64=2.42.2+dfsg-1+deb11u3`
-- `libgdk-pixbuf2.0-bin=2.42.2+dfsg-1+deb11u3`
-- `libgdk-pixbuf2.0-common=2.42.2+dfsg-1+deb11u3`
+- `gir1.2-gdkpixbuf-2.0:amd64=2.42.2+dfsg-1+deb11u4`
+- `libgdk-pixbuf-2.0-0:amd64=2.42.2+dfsg-1+deb11u4`
+- `libgdk-pixbuf-2.0-dev:amd64=2.42.2+dfsg-1+deb11u4`
+- `libgdk-pixbuf2.0-bin=2.42.2+dfsg-1+deb11u4`
+- `libgdk-pixbuf2.0-common=2.42.2+dfsg-1+deb11u4`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/share/doc/libgdk-pixbuf-2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf-2.0-dev/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-bin/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -1369,13 +1369,20 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `LGPL-2`
 - `LGPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.42.2+dfsg-1+deb11u4
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg-1%2bdeb11u4.dsc' gdk-pixbuf_2.42.2+dfsg-1+deb11u4.dsc 3223 SHA256:9e343f720be9e7ccfb278db7ee582accb5b0f63ea7b5a63c54105f0350d8bc39
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.2+dfsg.orig.tar.xz 6433920 SHA256:f781dca5af4c6536befb1faaa3b82efb9750c52a350842bc82b2aa08ce129ee9
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg-1%2bdeb11u4.debian.tar.xz' gdk-pixbuf_2.42.2+dfsg-1+deb11u4.debian.tar.xz 38996 SHA256:bfab04e2fb603870e1d43f447a4fa131a892f1a7f8d24f10e71aeb2224c2c60e
+```
 
-- http://snapshot.debian.org/package/gdk-pixbuf/2.42.2+dfsg-1+deb11u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gdk-pixbuf/2.42.2+dfsg-1+deb11u4/ (for browsing the source)
+- https://sources.debian.net/src/gdk-pixbuf/2.42.2+dfsg-1+deb11u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gdk-pixbuf/2.42.2+dfsg-1+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.30.2-1+deb11u5`
 
