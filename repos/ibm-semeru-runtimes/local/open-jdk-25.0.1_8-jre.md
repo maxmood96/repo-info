@@ -1,19 +1,19 @@
-# `ibm-semeru-runtimes:open-jdk-24.0.2_12-jdk-noble`
+# `ibm-semeru-runtimes:open-jdk-25.0.1_8-jre-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3ad4b772be94f988332be34e5365b249c65bcb7aef35fd36ce3a07d430e4430`
-- Created: `2025-10-30T18:59:08.586685538Z`
-- Virtual Size: ~ 542.76 Mb  
+- Image ID: `sha256:9afc47129c4dcc8213abf1dbc6bfdd2b79f1f40b5e2e8a266b8c5738ad727f5f`
+- Created: `2025-11-04T19:13:15.833376449Z`
+- Virtual Size: ~ 312.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["/bin/bash"]`
+- Command: `["jshell"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-24.0.2+12_openj9-0.54.0`
+  - `JAVA_VERSION=jdk-25.0.1+8_openj9-0.56.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
 - Labels:
