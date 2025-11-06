@@ -1,9 +1,9 @@
-# `swift:6.2.0-jammy-slim`
+# `swift:6.2.1-jammy-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c32a1453bd1c864f908ef75288e7545055864ea54d4b0de0ad60ba494401634e`
-- Created: `2025-09-15T22:15:37Z`
+- Image ID: `sha256:b04c315ae5ac75b70206ee78511db802370a9ccad2245f0cf2cd03bfc38d426f`
+- Created: `2025-11-04T22:26:43.219582593Z`
 - Virtual Size: ~ 280.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu22.04`
-  - `SWIFT_BRANCH=swift-6.2-release`
-  - `SWIFT_VERSION=swift-6.2-RELEASE`
+  - `SWIFT_BRANCH=swift-6.2.1-release`
+  - `SWIFT_VERSION=swift-6.2.1-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -1063,11 +1063,11 @@ $ apt-get source -qq --print-uris libsepol=3.3-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.3-1build1.debian.tar.xz' libsepol_3.3-1build1.debian.tar.xz 15068 SHA512:adb210e2dab83baa49cee624dc5ae44e9f2dff6eb4a0a7bee4b958e99871580df159d0ca339feca31d9c4cdd92d0022a841c35d615436278046379eeb766f1f2
 ```
 
-### `dpkg` source package: `libssh=0.9.6-2ubuntu0.22.04.4`
+### `dpkg` source package: `libssh=0.9.6-2ubuntu0.22.04.5`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.9.6-2ubuntu0.22.04.4`
+- `libssh-4:amd64=0.9.6-2ubuntu0.22.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 
@@ -1077,9 +1077,15 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libssh=0.9.6-2ubuntu0.22.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.5.dsc' libssh_0.9.6-2ubuntu0.22.04.5.dsc 2750 SHA512:b18f8255da313d01e8883e8b29a38648bd5e40df4d37af010224aacf9cf8e2a4c1320e3d7912e969319c01efe80d97005880346cbb1975008ffa5f91c7bfc4a1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz' libssh_0.9.6.orig.tar.xz 1053056 SHA512:4040ec4af937e95be2e41313ef6d4db60b46b8d4dea10c09402398127c1d1ca8843392d207088aeee3c7ef631c6ae7b66861327dcebf78ed3af0723777619fd1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz.asc' libssh_0.9.6.orig.tar.xz.asc 833 SHA512:1b6223efe9e4ce864cd8d97d517f9f0d38c1cd502b5874fdc6a58731038c2830a72ce753f02fc062d9d4d5922107ec9a2e62fe24a704bb5dec0dcfecdb569fe6
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.5.debian.tar.xz' libssh_0.9.6-2ubuntu0.22.04.5.debian.tar.xz 67620 SHA512:d3b344a719d30b94916252a8c705dbc6c41bb522412c7cafb55b85d4a2cccb81ccaaf9a65a3cd6113a3093addf18a3b71e4c279069ef7d082992e2a43cc25e4f
+```
 
 ### `dpkg` source package: `libtasn1-6=4.18.0-4ubuntu0.1`
 
@@ -1179,20 +1185,25 @@ $ apt-get source -qq --print-uris libxcrypt=1:4.4.27-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.27-1.debian.tar.xz' libxcrypt_4.4.27-1.debian.tar.xz 7764 SHA512:02e38ba06f3555dd930fc7ed44602dc816ce48f4c29fdc085249948596d5e7e96600cb81c8c9fb2e1dc33574d5136d08feeff3eb1dd3522aa8e5cdc9037c1ae0
 ```
 
-### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.9`
+### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.10`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.9`
+- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.10`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.10
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.10.dsc' libxml2_2.9.13+dfsg-1ubuntu0.10.dsc 3034 SHA512:0a7b2308e1e21ce144787a2fde4f6bd2356fd433701707ed622b6dedf284a3b6ac2c9acab4f1044354100688685116cb7e6d170b18a14a59e116ab5b9d0edd81
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.10.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.10.debian.tar.xz 49928 SHA512:25a132aaa4a0107d6f554d5882c52316d9236ea30ab1cccdfc6d7e5cbf2eacdfaafe14c46e26ef77e8274e408ff766c19041060e1ac3607b3f5c8fb771099a07
+```
 
 ### `dpkg` source package: `libzstd=1.4.8+dfsg-3build1`
 
