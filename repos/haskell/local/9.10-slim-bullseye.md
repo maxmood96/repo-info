@@ -1,15 +1,15 @@
-# `haskell:9.10.2-slim-bullseye`
+# `haskell:9.10.3-slim-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:54145f4a50c21a5273e84c6408b6d126a105b97b64468d93e7b020b8c45697ac`
-- Created: `2025-11-04T00:18:31.320042868Z`
-- Virtual Size: ~ 3.41 Gb  
+- Image ID: `sha256:3fdc26fd61aeddbe576dd48a9595f1beba39f8a0b04fe1a8dc065c94b58d574c`
+- Created: `2025-11-05T01:03:04.842609049Z`
+- Virtual Size: ~ 3.42 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["ghci"]`
 - Environment:
-  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/ghc/9.10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/ghc/9.10.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
