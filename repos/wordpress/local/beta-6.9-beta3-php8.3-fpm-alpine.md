@@ -1,10 +1,10 @@
-# `wordpress:beta-6.9-beta2-php8.2-fpm-alpine`
+# `wordpress:beta-6.9-beta3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e6861e2837d57570b4b8d36d5851f37e1b40f918efd4670fc5c5b1e0965736d`
-- Created: `2025-10-28T20:16:21.952335357Z`
-- Virtual Size: ~ 273.96 Mb  
+- Image ID: `sha256:3d9a5eae70fb5015b093e1be4bcde14396098afcabbfeee04bf0aba0759eb96d`
+- Created: `2025-11-05T01:05:47.646593193Z`
+- Virtual Size: ~ 278.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.29`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.29.tar.xz.asc`
-  - `PHP_SHA256=475f991afd2d5b901fb410be407d929bc00c46285d3f439a02c59e8b6fe3589c`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
+  - `PHP_VERSION=8.3.27`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.27.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.27.tar.xz.asc`
+  - `PHP_SHA256=c15a09a9d199437144ecfef7d712ec4ca5c6820cf34acc24cc8489dd0cee41ba`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1251,16 +1251,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.8-r0 description:
+libxml2-2.13.9-r0 description:
 XML parsing library, version 2
 
-libxml2-2.13.8-r0 webpage:
+libxml2-2.13.9-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.8-r0 installed size:
+libxml2-2.13.9-r0 installed size:
 1050 KiB
 
-libxml2-2.13.8-r0 license:
+libxml2-2.13.9-r0 license:
 MIT
 
 ```
