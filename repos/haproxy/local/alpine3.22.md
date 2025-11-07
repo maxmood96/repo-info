@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:aeda788147fdaf79983ed3739c789a768a5a4bc454d058073c13378d0d75095c`
-- Created: `2025-10-23T17:13:31Z`
-- Virtual Size: ~ 32.47 Mb  
+- Image ID: `sha256:3f4db2d244a92b77e077abfb2e6d791588c15f7d97a66db4b0e7ca96eede1f20`
+- Created: `2025-11-05T22:37:27.18358055Z`
+- Virtual Size: ~ 33.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -204,6 +204,23 @@ Apache-2.0
 
 ```
 
+### `apk` package: `libncursesw`
+
+```console
+libncursesw-6.5_p20250503-r0 description:
+Console display library (libncursesw)
+
+libncursesw-6.5_p20250503-r0 webpage:
+https://invisible-island.net/ncurses/
+
+libncursesw-6.5_p20250503-r0 installed size:
+334 KiB
+
+libncursesw-6.5_p20250503-r0 license:
+X11
+
+```
+
 ### `apk` package: `libssl3`
 
 ```console
@@ -272,6 +289,23 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
 
+### `apk` package: `ncurses-terminfo-base`
+
+```console
+ncurses-terminfo-base-6.5_p20250503-r0 description:
+Descriptions of common terminals
+
+ncurses-terminfo-base-6.5_p20250503-r0 webpage:
+https://invisible-island.net/ncurses/
+
+ncurses-terminfo-base-6.5_p20250503-r0 installed size:
+98 KiB
+
+ncurses-terminfo-base-6.5_p20250503-r0 license:
+X11
+
+```
+
 ### `apk` package: `pcre2`
 
 ```console
@@ -289,6 +323,23 @@ BSD-3-Clause
 
 ```
 
+### `apk` package: `readline`
+
+```console
+readline-8.2.13-r1 description:
+GNU readline library
+
+readline-8.2.13-r1 webpage:
+https://tiswww.cwru.edu/php/chet/readline/rltop.html
+
+readline-8.2.13-r1 installed size:
+280 KiB
+
+readline-8.2.13-r1 license:
+GPL-3.0-or-later
+
+```
+
 ### `apk` package: `scanelf`
 
 ```console
@@ -303,6 +354,23 @@ scanelf-1.3.8-r1 installed size:
 
 scanelf-1.3.8-r1 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `socat`
+
+```console
+socat-1.8.0.3-r1 description:
+Multipurpose relay for binary protocols
+
+socat-1.8.0.3-r1 webpage:
+http://www.dest-unreach.org/socat/
+
+socat-1.8.0.3-r1 installed size:
+508 KiB
+
+socat-1.8.0.3-r1 license:
+GPL-2.0-only WITH OpenSSL-Exception
 
 ```
 
