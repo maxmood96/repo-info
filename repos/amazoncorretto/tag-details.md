@@ -1067,7 +1067,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 		Size: 62.9 MB (62934134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8bf27c0eb31621f42873cdb8cdc5f60eec7800739496fe6e48aee13c0726b20a`  
-		Last Modified: Thu, 06 Nov 2025 22:14:02 GMT  
+		Last Modified: Fri, 07 Nov 2025 08:54:52 GMT  
 		Size: 161.6 MB (161582395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4415,7 +4415,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 		Size: 62.9 MB (62934134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8bf27c0eb31621f42873cdb8cdc5f60eec7800739496fe6e48aee13c0726b20a`  
-		Last Modified: Thu, 06 Nov 2025 22:14:02 GMT  
+		Last Modified: Fri, 07 Nov 2025 08:54:52 GMT  
 		Size: 161.6 MB (161582395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -21493,7 +21493,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 		Size: 62.9 MB (62934134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e3cf84ccec6d2c8ae58c8817c070e0883d58789046db9c2458aea73e8e29c41`  
-		Last Modified: Thu, 06 Nov 2025 22:11:20 GMT  
+		Last Modified: Fri, 07 Nov 2025 08:50:45 GMT  
 		Size: 125.2 MB (125240712 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -25389,7 +25389,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 		Size: 62.9 MB (62934134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e3cf84ccec6d2c8ae58c8817c070e0883d58789046db9c2458aea73e8e29c41`  
-		Last Modified: Thu, 06 Nov 2025 22:11:20 GMT  
+		Last Modified: Fri, 07 Nov 2025 08:50:45 GMT  
 		Size: 125.2 MB (125240712 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
