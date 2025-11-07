@@ -3530,14 +3530,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler134/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=24.02.0-1ubuntu9.7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.7.dsc' poppler_24.02.0-1ubuntu9.7.dsc 3940 SHA512:161d2268ff4324675c5ea2c66a2c8d6017aa610e239edc15561584977bfcca4dd7d6bcc9ca91bdb3b19bed139207bc9a1615d84c60c9f2e2850b2effe9685cf1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0.orig.tar.gz' poppler_24.02.0.orig.tar.gz 1975230 SHA512:75fc41f94ad6848b834eab1cc9199c5ba55b30b12ffbe26d53fa85e86b9918999e752c82d2c5965d6669ace4d9658b1236159c9bfa4bbf40da2660dc00a19f37
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.7.debian.tar.xz' poppler_24.02.0-1ubuntu9.7.debian.tar.xz 43432 SHA512:e661b69bb0dc2b05669a4b7c93df3b379128c7ed9b41123ffc6fcb813c2b3d17fa72d7526e0fd225921d29a731370200dbcd991adc6a91eb761d9822b8a0834c
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 
