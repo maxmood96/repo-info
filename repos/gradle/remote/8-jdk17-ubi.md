@@ -1,7 +1,7 @@
 ## `gradle:8-jdk17-ubi`
 
 ```console
-$ docker pull gradle@sha256:79121fc2392811b7ca3897a87fe02a7c2c703ac5b14d05aa9ea88b8055820cae
+$ docker pull gradle@sha256:9af742b3576c00d324f5dcda1c7bf8591950e75429fd6771321ddfa03fd67872
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,100 +18,100 @@ $ docker pull gradle@sha256:79121fc2392811b7ca3897a87fe02a7c2c703ac5b14d05aa9ea8
 ### `gradle:8-jdk17-ubi` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:a4360b36e46ece7cd33ecbcd615b4dc946c301ba7290868fb1093feda35dcfec
+$ docker pull gradle@sha256:bd8e8bf474338f97e41fafc143021dea82f5178f3ba8188e38f9fa54f4ed3d5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **386.1 MB (386136767 bytes)**  
+-	Total Size: **389.9 MB (389921268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a6f27ab39e89023989ec2f7aabc9982304948dc61228d517bce65903653baf4`
+-	Image ID: `sha256:9dfbdc0bd69b5647bd4c8b08d633c56e30f8e578a2b328f460e362a0e5a83146`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:32 GMT
 LABEL maintainer="Red Hat, Inc."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:32 GMT
 LABEL vendor="Red Hat, Inc."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:32 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:32 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.6"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:32 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:32 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:33 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:33 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:33 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:33 GMT
 LABEL io.openshift.expose-services=""
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:33 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:33 GMT
 ENV container oci
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:34 GMT
 COPY dir:f15650dcc2939ee0c30865212b61e6718fd6c24de4e7967bf7b651b8f0b24352 in /      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:34 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:34 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:34 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:34 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:34 GMT
 COPY file:16bf5aac480286f91e3031d4f1acb4e76fb8c3be38d180e4713a0efdc39d6bad in /root/buildinfo/labels.json      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:06:35 GMT
 LABEL "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="d1b15a34ce69ea214e1d32f1f501304f6b8b8c59" "org.opencontainers.image.revision"="d1b15a34ce69ea214e1d32f1f501304f6b8b8c59" "build-date"="2025-10-15T08:06:12Z" "release"="1760515502"org.opencontainers.image.revision=d1b15a34ce69ea214e1d32f1f501304f6b8b8c59
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:31 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:31 GMT
 RUN set -eux;     microdnf install -y         gzip         tar         binutils         tzdata         wget         ca-certificates         openssl         fontconfig         glibc-langpack-en     ;     microdnf clean all # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
-ENV JAVA_VERSION=jdk-17.0.16+8
-# Fri, 01 Aug 2025 11:04:34 GMT
-RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='423416447885d9e45f96dd9e0b2c1367da5e1b0353e187cfdf9388c9820ac147';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.16_8.tar.gz';          ;;        ppc64le)          ESUM='eb020f74e00870379522be0b44fc6322c2214e77971c258400c8b5af704d5c0a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.16_8.tar.gz';          ;;        s390x)          ESUM='03dd99d34d2d1b88395765df3acbec2cb81de286f64b1d9e6df3682bee365168';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.16_8.tar.gz';          ;;        x86_64)          ESUM='166774efcf0f722f2ee18eba0039de2d685b350ee14d7b69e6f83437dafd2af1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_x64_linux_hotspot_17.0.16_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:31 GMT
+ENV JAVA_VERSION=jdk-17.0.17+10
+# Sat, 08 Nov 2025 17:58:36 GMT
+RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='dc29ca6d35beb4419b4b00419b8a3dfbf5ae551e1ae2b046b516d9a579d04533';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.17_10.tar.gz';          ;;        ppc64le)          ESUM='2a29d1be61940c1bd639018c07f4622e1f145a7ef34e7294fee877e39226d9da';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.17_10.tar.gz';          ;;        s390x)          ESUM='76327b1d00c67f6be91717754fd85fc85ce496d48876f69accb9c53ed31dc546';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.17_10.tar.gz';          ;;        x86_64)          ESUM='992f96e7995075ac7636bb1a8de52b0c61d71ed3137fafc979ab96b4ab78dd75';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_x64_linux_hotspot_17.0.17_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Sat, 08 Nov 2025 17:58:37 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:37 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:37 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:37 GMT
 CMD ["jshell"]
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:22:25 GMT
 CMD ["gradle"]
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:22:25 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:22:25 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 101 gradle     && useradd --system --gid gradle --uid 101 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle     && chmod --recursive o+rwx /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:22:25 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:22:25 GMT
 WORKDIR /home/gradle
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:23:16 GMT
 RUN set -o errexit -o nounset     && microdnf install -y         make                 findutils                 unzip         which                 git         git-lfs         subversion     && microdnf clean all         && echo "Testing common utilities"     && which awk     && which curl     && which cut     && which grep     && which gunzip     && which sha256sum     && which sed     && which tar     && which tr     && which unzip     && which wget         && echo "Testing VCSes"     && which git     && which git-lfs     && which svn # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:23:16 GMT
 ENV GRADLE_VERSION=8.14.3
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:23:16 GMT
 ARG GRADLE_DOWNLOAD_SHA256=bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:23:18 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:23:18 GMT
 USER gradle
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:23:19 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --version # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:23:19 GMT
 USER root
 ```
 
@@ -120,164 +120,164 @@ USER root
 		Last Modified: Wed, 15 Oct 2025 09:03:15 GMT  
 		Size: 39.7 MB (39653524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2fab7a879ac0c87e7dda3858c5d83b9eaa8dd466ea3e03bd25b5aeda0637816`  
-		Last Modified: Thu, 16 Oct 2025 19:27:21 GMT  
-		Size: 27.5 MB (27534685 bytes)  
+	-	`sha256:1065367bed03b574d289037052f13ad45bce9ff9e2d6376ca30dbc6601929a1c`  
+		Last Modified: Sat, 08 Nov 2025 17:59:04 GMT  
+		Size: 16.6 MB (16603148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a29c23c002cbfd29a390302bc8930fee6bfc60225929e2f520f98d4d9ddf9f9d`  
-		Last Modified: Thu, 16 Oct 2025 20:10:52 GMT  
-		Size: 144.7 MB (144701590 bytes)  
+	-	`sha256:ddfb605769eec73700945a7b7dbf98bacd74f7c7aa525687cdc599fddff7a656`  
+		Last Modified: Sat, 08 Nov 2025 18:22:21 GMT  
+		Size: 144.9 MB (144852924 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83fd6f17832f292df5cb3c49a95208a786977e8def95e3fb17cdda3be3e93a13`  
-		Last Modified: Thu, 16 Oct 2025 19:27:17 GMT  
-		Size: 130.0 B  
+	-	`sha256:d800b8a7ad4976c00870e4f10b9a9d50f690f71dea02ae491022f1bcddd37f9a`  
+		Last Modified: Sat, 08 Nov 2025 17:59:00 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b44baa589b15d8898c7df8bef4e9ad8e24d86136e620b4c487f9fa20ac87195b`  
-		Last Modified: Thu, 16 Oct 2025 19:27:17 GMT  
-		Size: 2.3 KB (2291 bytes)  
+	-	`sha256:24176df43dc3c8cc80123b86a853bc4347470a6b8ca742ae426ad74be6fc5490`  
+		Last Modified: Sat, 08 Nov 2025 17:59:00 GMT  
+		Size: 2.3 KB (2290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f4c9e4c9d5285b302393bf36fb17241119d39a96ad31ffeee67cabb59afe838`  
-		Last Modified: Thu, 16 Oct 2025 20:11:38 GMT  
-		Size: 1.7 KB (1708 bytes)  
+	-	`sha256:c56ec39f589a3e30aa88aa5f6a7ccc0f4fd5757ae402bb45e736fc734876649d`  
+		Last Modified: Sat, 08 Nov 2025 18:23:07 GMT  
+		Size: 1.4 KB (1417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b20d932c64f403ae2044c80f22a23837963af62f5cf61174ef3b65b759e3158`  
-		Last Modified: Thu, 16 Oct 2025 20:11:42 GMT  
-		Size: 36.8 MB (36792767 bytes)  
+	-	`sha256:d8eed46ba7e5b983bbace3ff91e10010287aeeee7cc1f0a2845dfed1c3a5cc76`  
+		Last Modified: Sat, 08 Nov 2025 18:24:02 GMT  
+		Size: 51.4 MB (51357699 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a78a90ae1ebef364979df296beb23bc8350dd5033dbc3e26c10a3310ee9d557e`  
-		Last Modified: Thu, 16 Oct 2025 20:12:12 GMT  
-		Size: 137.4 MB (137395136 bytes)  
+	-	`sha256:92fe1529f15f889edd94d3593675f433fe4a7262fc29908dba711fc951cac554`  
+		Last Modified: Sat, 08 Nov 2025 18:23:39 GMT  
+		Size: 137.4 MB (137395200 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:598567c37f56311e2d3bbebfed23f19394b47a5f4179c34c1c034cc4e0c2c491`  
-		Last Modified: Thu, 16 Oct 2025 20:11:38 GMT  
-		Size: 54.9 KB (54904 bytes)  
+	-	`sha256:e4e616165f0191e673ba812032f9c702232847d0868001360dc217977506acfb`  
+		Last Modified: Sat, 08 Nov 2025 18:23:46 GMT  
+		Size: 54.9 KB (54906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:8-jdk17-ubi` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:f971331b49c113e329f5b84d0244aa6cd419b235eabc0225bba0c53b704acbaa
+$ docker pull gradle@sha256:c0b2158330d133407c0ab6546ca1a82ed7d8aef94f0b0d652071aaa4ab11494f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5411783 bytes)**  
+-	Total Size: **5.4 MB (5414140 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92932f47b6b484e60c9d19930a598aab52d6a38c29b40fb4fdde67d4a12e699c`
+-	Image ID: `sha256:0e19a15ca938b9aa970d353d02f355cdfe39d9752408b62d6a28cf5331c02ff8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c4d8ef0d1c2ee0e31d7e7bf2a907cc80bf2b3a6bc52d8f164920e298a9f4eae7`  
-		Last Modified: Thu, 16 Oct 2025 23:21:34 GMT  
-		Size: 5.4 MB (5388145 bytes)  
+	-	`sha256:687979ae10f7bd8850a894b6b7af8616f19dc77cc31b3c3f3be9494f109c51be`  
+		Last Modified: Sat, 08 Nov 2025 21:27:16 GMT  
+		Size: 5.4 MB (5390541 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ee98519616f218f3f7436d5d87f19ae263656937964dfe87960e4bef17ec867a`  
-		Last Modified: Thu, 16 Oct 2025 23:21:35 GMT  
-		Size: 23.6 KB (23638 bytes)  
+	-	`sha256:f98773804dfbfe4dc515162ad7da9ea70630f8f175ca64b7d4ac2fa2ff9ba828`  
+		Last Modified: Sat, 08 Nov 2025 21:27:17 GMT  
+		Size: 23.6 KB (23599 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gradle:8-jdk17-ubi` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:abf380aab7f66e6ccf82965933fec909b867fca209d88343a4b73c6f1d60666d
+$ docker pull gradle@sha256:ead57b8d8bc6d2b65fc8092aeb70bc9d241e78e599720e082722033c5ff15576
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **383.1 MB (383120723 bytes)**  
+-	Total Size: **386.3 MB (386304870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29304158f5c302cb980c5ca324336256d64c58d705e6e8447516e33ac1131307`
+-	Image ID: `sha256:fe25fbf79253da94b1553e44ad11ebbaeb5fcbe5316fab294cad9b6f8c49ca8f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:52 GMT
 LABEL maintainer="Red Hat, Inc."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:52 GMT
 LABEL vendor="Red Hat, Inc."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:52 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:52 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.6"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:52 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:52 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:52 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:52 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:52 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:52 GMT
 LABEL io.openshift.expose-services=""
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:52 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:52 GMT
 ENV container oci
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:53 GMT
 COPY dir:a993e2e2ad3cf26c4ca4b583710869f381ee3e7df7d41715015a96348230e455 in /      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:53 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:53 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:54 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:54 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:54 GMT
 COPY file:85de04d2096a64069474160b53ad5f2cfb18b7e3f3ec2a8d26b3946f32e004c9 in /root/buildinfo/labels.json      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:10:54 GMT
 LABEL "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="d1b15a34ce69ea214e1d32f1f501304f6b8b8c59" "org.opencontainers.image.revision"="d1b15a34ce69ea214e1d32f1f501304f6b8b8c59" "build-date"="2025-10-15T08:10:36Z" "release"="1760515502"org.opencontainers.image.revision=d1b15a34ce69ea214e1d32f1f501304f6b8b8c59
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:03 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:03 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:03 GMT
 RUN set -eux;     microdnf install -y         gzip         tar         binutils         tzdata         wget         ca-certificates         openssl         fontconfig         glibc-langpack-en     ;     microdnf clean all # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
-ENV JAVA_VERSION=jdk-17.0.16+8
-# Fri, 01 Aug 2025 11:04:34 GMT
-RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='423416447885d9e45f96dd9e0b2c1367da5e1b0353e187cfdf9388c9820ac147';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.16_8.tar.gz';          ;;        ppc64le)          ESUM='eb020f74e00870379522be0b44fc6322c2214e77971c258400c8b5af704d5c0a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.16_8.tar.gz';          ;;        s390x)          ESUM='03dd99d34d2d1b88395765df3acbec2cb81de286f64b1d9e6df3682bee365168';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.16_8.tar.gz';          ;;        x86_64)          ESUM='166774efcf0f722f2ee18eba0039de2d685b350ee14d7b69e6f83437dafd2af1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_x64_linux_hotspot_17.0.16_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:03 GMT
+ENV JAVA_VERSION=jdk-17.0.17+10
+# Sat, 08 Nov 2025 17:58:10 GMT
+RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='dc29ca6d35beb4419b4b00419b8a3dfbf5ae551e1ae2b046b516d9a579d04533';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.17_10.tar.gz';          ;;        ppc64le)          ESUM='2a29d1be61940c1bd639018c07f4622e1f145a7ef34e7294fee877e39226d9da';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.17_10.tar.gz';          ;;        s390x)          ESUM='76327b1d00c67f6be91717754fd85fc85ce496d48876f69accb9c53ed31dc546';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.17_10.tar.gz';          ;;        x86_64)          ESUM='992f96e7995075ac7636bb1a8de52b0c61d71ed3137fafc979ab96b4ab78dd75';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_x64_linux_hotspot_17.0.17_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Sat, 08 Nov 2025 17:58:11 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:11 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:11 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:58:11 GMT
 CMD ["jshell"]
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:23:08 GMT
 CMD ["gradle"]
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:23:08 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:23:08 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 101 gradle     && useradd --system --gid gradle --uid 101 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle     && chmod --recursive o+rwx /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:23:08 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:23:08 GMT
 WORKDIR /home/gradle
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:24:04 GMT
 RUN set -o errexit -o nounset     && microdnf install -y         make                 findutils                 unzip         which                 git         git-lfs         subversion     && microdnf clean all         && echo "Testing common utilities"     && which awk     && which curl     && which cut     && which grep     && which gunzip     && which sha256sum     && which sed     && which tar     && which tr     && which unzip     && which wget         && echo "Testing VCSes"     && which git     && which git-lfs     && which svn # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:24:04 GMT
 ENV GRADLE_VERSION=8.14.3
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:24:04 GMT
 ARG GRADLE_DOWNLOAD_SHA256=bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:24:06 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:24:06 GMT
 USER gradle
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:24:07 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --version # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:24:07 GMT
 USER root
 ```
 
@@ -286,164 +286,164 @@ USER root
 		Last Modified: Wed, 15 Oct 2025 09:30:32 GMT  
 		Size: 37.9 MB (37896281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:239fb1b1821616d022113725fa5edaa43603378178d1f6dbf75e19abc393f748`  
-		Last Modified: Thu, 16 Oct 2025 19:27:18 GMT  
-		Size: 28.0 MB (27977216 bytes)  
+	-	`sha256:651dece7a6e73fb9ca899eabeb20e8f8f4bf839514ef4e06b6acb530e8f07ec2`  
+		Last Modified: Sat, 08 Nov 2025 17:58:41 GMT  
+		Size: 16.6 MB (16602800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57c1a762c07906f1fea2f1565daf0e854e50c2563272192bdb33bcbb483a8b12`  
-		Last Modified: Thu, 16 Oct 2025 20:10:52 GMT  
-		Size: 143.6 MB (143550765 bytes)  
+	-	`sha256:d41c5d1692fb061916b32cb81d79905385af6a001b2dc0ea6d88954d4a2d53f0`  
+		Last Modified: Sat, 08 Nov 2025 18:23:05 GMT  
+		Size: 143.7 MB (143685442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4ba7259de360b1507aa41156598a76850f130911926ddd79ee239ba87adb2e4`  
-		Last Modified: Thu, 16 Oct 2025 19:27:15 GMT  
-		Size: 128.0 B  
+	-	`sha256:cd434ef6c3645126fe28d24fafd9ade66aea57481ef9f334e572279b36d24cf8`  
+		Last Modified: Sat, 08 Nov 2025 17:58:36 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91fe39af91deb2119ed96e9ca36adb16f8a59cffcfd5713b6faf57e797849bca`  
-		Last Modified: Thu, 16 Oct 2025 19:27:15 GMT  
-		Size: 2.3 KB (2291 bytes)  
+	-	`sha256:6645bf2e242c2a98df077c7c3c2d6ce238615aaf9dc37a4ed1762a057c4bb7ae`  
+		Last Modified: Sat, 08 Nov 2025 17:58:18 GMT  
+		Size: 2.3 KB (2290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e85e2112055745ee60ef90b3b771e05b67732c2a3ba27b6fb07164b51b323bd`  
-		Last Modified: Thu, 16 Oct 2025 20:11:46 GMT  
-		Size: 1.7 KB (1708 bytes)  
+	-	`sha256:8e79382b8fcdf2e864067d1814a13b516b35534ad30f73b6b03167c1aa92c1a0`  
+		Last Modified: Sat, 08 Nov 2025 18:23:46 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55874c1c30b155edd5c4115d1e4c54ea84553e47853bfe81b43b640fd5134857`  
-		Last Modified: Thu, 16 Oct 2025 20:11:50 GMT  
-		Size: 36.2 MB (36237623 bytes)  
+	-	`sha256:985ab79cfde33f4b425789c62f0fda6c4c95ab9f9ad8b80414599c95271fd0c7`  
+		Last Modified: Sat, 08 Nov 2025 18:24:37 GMT  
+		Size: 50.7 MB (50661768 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43b7c2a248b5cc130aa811792bdfff5bad160e21950444ab52971105cddedbdc`  
-		Last Modified: Thu, 16 Oct 2025 20:12:13 GMT  
-		Size: 137.4 MB (137395154 bytes)  
+	-	`sha256:e2e61dce941fc6a34745407c27e4497d965a0d33d0aaf4fe7414e3d00a78a7c1`  
+		Last Modified: Sat, 08 Nov 2025 18:24:27 GMT  
+		Size: 137.4 MB (137395178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:478cd25c10c969076fa6b856ea78ec965643044eccd852d332b36390b5c2e620`  
-		Last Modified: Thu, 16 Oct 2025 20:11:45 GMT  
-		Size: 59.5 KB (59525 bytes)  
+	-	`sha256:e71478cc2d782cc75960d331fb9245b85091523b004703390dca0077b90847c0`  
+		Last Modified: Sat, 08 Nov 2025 18:24:33 GMT  
+		Size: 59.5 KB (59532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:8-jdk17-ubi` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:99f4eab5abc6003b95d9c64b7c6d27c87bd788b40f3f39163f2c9266490491c2
+$ docker pull gradle@sha256:0996da2784483c07463726ac32e752c3b4a628b309ba091075cbedcd878972c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5411364 bytes)**  
+-	Total Size: **5.4 MB (5413721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce199415d38c75c72917f16ba476eb8ed6ce06051a8d8d0a8a6f9ff0bc3a080d`
+-	Image ID: `sha256:8adef9845bb85db15be3b4b41a8e1498aa071e4ff13247c1412f0116e29f36de`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9b58e0ae40f8081aef98365e6b9fa9e201bacbb1a9489a660b5c0c86b653083f`  
-		Last Modified: Thu, 16 Oct 2025 23:21:40 GMT  
-		Size: 5.4 MB (5387553 bytes)  
+	-	`sha256:7efcbaec8298ff60521baeb9d205a30a099321b2ba8136745466298768abfbd7`  
+		Last Modified: Sat, 08 Nov 2025 21:27:21 GMT  
+		Size: 5.4 MB (5389949 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:145f036c750b23f1fc91d515e8f9adb5c5b4be0451fd81dcf6212d52f15094da`  
-		Last Modified: Thu, 16 Oct 2025 23:21:41 GMT  
-		Size: 23.8 KB (23811 bytes)  
+	-	`sha256:a749c58cfa756d91ae4f7e555abaf9062b9139609a470ef95ddbb1d2e7553213`  
+		Last Modified: Sat, 08 Nov 2025 21:27:22 GMT  
+		Size: 23.8 KB (23772 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gradle:8-jdk17-ubi` - linux; ppc64le
 
 ```console
-$ docker pull gradle@sha256:d031f3aecb6ed748a455d92871b587dceb09e4f4a162498f191e5d8705124439
+$ docker pull gradle@sha256:223f82206c2181d51191958ea764ae011096046bd2c8193cb9b1060a6300cf1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **394.0 MB (393975584 bytes)**  
+-	Total Size: **399.5 MB (399503788 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d741471fb85f3c80e9ee6e5de87e9bb9d05ec0b310ccee1c40f68ff919425e6`
+-	Image ID: `sha256:5bbbaf2de3e635c6bad827de6626317314151cac682654fc7e089e60b8e0a11d`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:55 GMT
 LABEL maintainer="Red Hat, Inc."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:55 GMT
 LABEL vendor="Red Hat, Inc."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:55 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:55 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.6"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:55 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:55 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:55 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:55 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:55 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:55 GMT
 LABEL io.openshift.expose-services=""
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:55 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:55 GMT
 ENV container oci
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:55 GMT
 COPY dir:449eb2f239bac2d8d364a723cb091b20b453ccb6c9e9ef4542e774b1e6a3f931 in /      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:56 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:56 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:56 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:56 GMT
 COPY file:a1ec773a4fe5bc79df5be7b721d463b5573cea3333f3a512f669f32fa8283a6b in /root/buildinfo/labels.json      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:07:56 GMT
 LABEL "architecture"="ppc64le" "vcs-type"="git" "vcs-ref"="d1b15a34ce69ea214e1d32f1f501304f6b8b8c59" "org.opencontainers.image.revision"="d1b15a34ce69ea214e1d32f1f501304f6b8b8c59" "build-date"="2025-10-15T08:07:44Z" "release"="1760515502"org.opencontainers.image.revision=d1b15a34ce69ea214e1d32f1f501304f6b8b8c59
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:57:21 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:57:21 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:57:21 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:57:21 GMT
 RUN set -eux;     microdnf install -y         gzip         tar         binutils         tzdata         wget         ca-certificates         openssl         fontconfig         glibc-langpack-en     ;     microdnf clean all # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
-ENV JAVA_VERSION=jdk-17.0.16+8
-# Fri, 01 Aug 2025 11:04:34 GMT
-RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='423416447885d9e45f96dd9e0b2c1367da5e1b0353e187cfdf9388c9820ac147';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.16_8.tar.gz';          ;;        ppc64le)          ESUM='eb020f74e00870379522be0b44fc6322c2214e77971c258400c8b5af704d5c0a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.16_8.tar.gz';          ;;        s390x)          ESUM='03dd99d34d2d1b88395765df3acbec2cb81de286f64b1d9e6df3682bee365168';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.16_8.tar.gz';          ;;        x86_64)          ESUM='166774efcf0f722f2ee18eba0039de2d685b350ee14d7b69e6f83437dafd2af1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_x64_linux_hotspot_17.0.16_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:57:21 GMT
+ENV JAVA_VERSION=jdk-17.0.17+10
+# Sat, 08 Nov 2025 18:14:35 GMT
+RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='dc29ca6d35beb4419b4b00419b8a3dfbf5ae551e1ae2b046b516d9a579d04533';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.17_10.tar.gz';          ;;        ppc64le)          ESUM='2a29d1be61940c1bd639018c07f4622e1f145a7ef34e7294fee877e39226d9da';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.17_10.tar.gz';          ;;        s390x)          ESUM='76327b1d00c67f6be91717754fd85fc85ce496d48876f69accb9c53ed31dc546';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.17_10.tar.gz';          ;;        x86_64)          ESUM='992f96e7995075ac7636bb1a8de52b0c61d71ed3137fafc979ab96b4ab78dd75';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_x64_linux_hotspot_17.0.17_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Sat, 08 Nov 2025 18:14:38 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 18:14:38 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 18:14:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 18:14:38 GMT
 CMD ["jshell"]
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 20:14:33 GMT
 CMD ["gradle"]
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 20:14:33 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 20:14:33 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 101 gradle     && useradd --system --gid gradle --uid 101 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle     && chmod --recursive o+rwx /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 20:14:33 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 20:14:33 GMT
 WORKDIR /home/gradle
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 20:24:31 GMT
 RUN set -o errexit -o nounset     && microdnf install -y         make                 findutils                 unzip         which                 git         git-lfs         subversion     && microdnf clean all         && echo "Testing common utilities"     && which awk     && which curl     && which cut     && which grep     && which gunzip     && which sha256sum     && which sed     && which tar     && which tr     && which unzip     && which wget         && echo "Testing VCSes"     && which git     && which git-lfs     && which svn # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 20:24:31 GMT
 ENV GRADLE_VERSION=8.14.3
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 20:24:31 GMT
 ARG GRADLE_DOWNLOAD_SHA256=bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 20:24:37 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 20:24:37 GMT
 USER gradle
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 20:24:39 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --version # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 20:24:39 GMT
 USER root
 ```
 
@@ -452,164 +452,164 @@ USER root
 		Last Modified: Wed, 15 Oct 2025 08:44:15 GMT  
 		Size: 44.1 MB (44050495 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e876758687ee7b24ef8e66e150458a00c077b6471ef21c521bdde430e3e50c`  
-		Last Modified: Thu, 16 Oct 2025 19:26:31 GMT  
-		Size: 30.0 MB (29971557 bytes)  
+	-	`sha256:fd418b58a61783498a7a914a92baa56a29c3bdb5efae22fc9de5972b10f54d1d`  
+		Last Modified: Sat, 08 Nov 2025 17:58:10 GMT  
+		Size: 19.9 MB (19909128 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8c12b4e688b4184bc756ea7005169c8f6401e702c6bdf65ffdb4746e88012c4`  
-		Last Modified: Fri, 17 Oct 2025 12:44:12 GMT  
-		Size: 144.4 MB (144393845 bytes)  
+	-	`sha256:c545b3c3323c1a259c7c89305aad21b17961a9ba28308e647c49005d5aa073bc`  
+		Last Modified: Sat, 08 Nov 2025 18:15:21 GMT  
+		Size: 144.5 MB (144547813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de9cadec2da00c278ab276060019fd0b207a9d852f1ed6fdb1ffa8952f371bc2`  
-		Last Modified: Thu, 16 Oct 2025 19:31:14 GMT  
-		Size: 130.0 B  
+	-	`sha256:14bd78a0f2b8d74e1576648189d42dd27271f7de84cfb0b0b40a7aceb809ac0c`  
+		Last Modified: Sat, 08 Nov 2025 18:15:27 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d24124d0bfcc02969bf248740611e30edfbe44ea4323805702d74f4f76fad3df`  
-		Last Modified: Thu, 16 Oct 2025 19:31:14 GMT  
-		Size: 2.3 KB (2290 bytes)  
+	-	`sha256:be8daf20e2a137d156696158a423617b3572ae419f18634a38c56967dffab4b3`  
+		Last Modified: Sat, 08 Nov 2025 18:15:27 GMT  
+		Size: 2.3 KB (2291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c3fcfe4b922a31eeb33510e9d629e1b3a930e4bbcf782b518e19f08f0e5b976`  
-		Last Modified: Thu, 16 Oct 2025 20:13:13 GMT  
-		Size: 1.7 KB (1713 bytes)  
+	-	`sha256:223b3511d14ef4abb8a26a64f103561d9f4f3507e1946bfff240559ef9f3661a`  
+		Last Modified: Sat, 08 Nov 2025 20:25:30 GMT  
+		Size: 1.4 KB (1417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:618ced3e852324ef4e513a71f1927fb44320308bafe7f8631d16ea0e233165de`  
-		Last Modified: Thu, 16 Oct 2025 20:16:17 GMT  
-		Size: 38.1 MB (38125387 bytes)  
+	-	`sha256:234804be7d1c01da67b018351c79576226597989f6fc32611fed4c998188af62`  
+		Last Modified: Sat, 08 Nov 2025 20:25:34 GMT  
+		Size: 53.6 MB (53562271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba30d426d0f5379cb389b430fd9ff0ca94f27cece47882ff1f5ccbafbae77168`  
-		Last Modified: Fri, 17 Oct 2025 12:44:03 GMT  
-		Size: 137.4 MB (137395127 bytes)  
+	-	`sha256:734f482173f3bc65210721541140e352752174980d2b1199fe222e4e41907657`  
+		Last Modified: Sat, 08 Nov 2025 20:25:25 GMT  
+		Size: 137.4 MB (137395203 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d47762000244f0987c20030b549889aade498aface8832efd8f4bcef1f32cd7`  
-		Last Modified: Thu, 16 Oct 2025 20:16:13 GMT  
-		Size: 35.0 KB (35008 bytes)  
+	-	`sha256:befb35f8b65e96d194ffc1745cd94f7f675ed0287a7493b705400e5aa431e7e1`  
+		Last Modified: Sat, 08 Nov 2025 20:25:30 GMT  
+		Size: 35.0 KB (35010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:8-jdk17-ubi` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:b9884b6fd0d8c318dc01a979ee431cadd7b944d28eeb031eb6325a49ac4d6503
+$ docker pull gradle@sha256:f240a8e88eb8e9eedb84f95c3c4bfb9acba481c1f500ce593cf72e921dff2c27
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5409205 bytes)**  
+-	Total Size: **5.4 MB (5411527 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bff68bcf84b83f46bd2699b159165c43d434615505d9375a244a685003e482e`
+-	Image ID: `sha256:9ded7e5433d589fd306666915e5c4877fbecfdd358e16fbc45425cd0327aba4a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c2da6f4d7d6af94f4b50c266c99f65c3c5f5f8360e01992f318f20ade90cd491`  
-		Last Modified: Thu, 16 Oct 2025 23:21:46 GMT  
-		Size: 5.4 MB (5385470 bytes)  
+	-	`sha256:3600913a38ee4d8c4abbd4bba98e9d55642a896c57e34d5f03142cb56e77d171`  
+		Last Modified: Sat, 08 Nov 2025 21:27:27 GMT  
+		Size: 5.4 MB (5387866 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a22f0c14411239e86012ef6a760ddb2956a53679420148b2942c512c4df959bf`  
-		Last Modified: Thu, 16 Oct 2025 23:21:47 GMT  
-		Size: 23.7 KB (23735 bytes)  
+	-	`sha256:e0f16e3568aea1c91d281c8c4fc146d1f6e6a5dbdf6981e9627628b09195ba49`  
+		Last Modified: Sat, 08 Nov 2025 21:27:27 GMT  
+		Size: 23.7 KB (23661 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gradle:8-jdk17-ubi` - linux; s390x
 
 ```console
-$ docker pull gradle@sha256:e18fb76c2ed00eff8edf13b545c74c51515621c06ad599d7f6daa459c366444c
+$ docker pull gradle@sha256:2a1d6876fbdc8d4f24768dcdb81544f61c21632dbd4ed685c0d30eda17052f4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **373.9 MB (373907716 bytes)**  
+-	Total Size: **377.2 MB (377170102 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b62ba9605ce9f7f654d32fdb18adb45de048d1c3d98c921092fdc79e710cd692`
+-	Image ID: `sha256:63e1e9041e5294e3616452a6e4f85e41d8387ad4228cba67596715e43b8bc256`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:13 GMT
 LABEL maintainer="Red Hat, Inc."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:13 GMT
 LABEL vendor="Red Hat, Inc."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.6"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 LABEL io.openshift.expose-services=""
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 ENV container oci
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 COPY dir:c7531cf9ca81563f111865af7c21a35f1b40cdbceb45f292beb90b52a7f09fd7 in /      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:14 GMT
 COPY file:c18f78822817f13e8af547877aa1bb6f7295fa27828e91bdb8605916bb9a08c8 in /root/buildinfo/labels.json      
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Wed, 15 Oct 2025 08:12:15 GMT
 LABEL "architecture"="s390x" "vcs-type"="git" "vcs-ref"="d1b15a34ce69ea214e1d32f1f501304f6b8b8c59" "org.opencontainers.image.revision"="d1b15a34ce69ea214e1d32f1f501304f6b8b8c59" "build-date"="2025-10-15T08:12:03Z" "release"="1760515502"org.opencontainers.image.revision=d1b15a34ce69ea214e1d32f1f501304f6b8b8c59
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:55:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:55:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:55:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:55:57 GMT
 RUN set -eux;     microdnf install -y         gzip         tar         binutils         tzdata         wget         ca-certificates         openssl         fontconfig         glibc-langpack-en     ;     microdnf clean all # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
-ENV JAVA_VERSION=jdk-17.0.16+8
-# Fri, 01 Aug 2025 11:04:34 GMT
-RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='423416447885d9e45f96dd9e0b2c1367da5e1b0353e187cfdf9388c9820ac147';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.16_8.tar.gz';          ;;        ppc64le)          ESUM='eb020f74e00870379522be0b44fc6322c2214e77971c258400c8b5af704d5c0a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.16_8.tar.gz';          ;;        s390x)          ESUM='03dd99d34d2d1b88395765df3acbec2cb81de286f64b1d9e6df3682bee365168';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.16_8.tar.gz';          ;;        x86_64)          ESUM='166774efcf0f722f2ee18eba0039de2d685b350ee14d7b69e6f83437dafd2af1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_x64_linux_hotspot_17.0.16_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 17:55:57 GMT
+ENV JAVA_VERSION=jdk-17.0.17+10
+# Sat, 08 Nov 2025 18:03:42 GMT
+RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='dc29ca6d35beb4419b4b00419b8a3dfbf5ae551e1ae2b046b516d9a579d04533';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.17_10.tar.gz';          ;;        ppc64le)          ESUM='2a29d1be61940c1bd639018c07f4622e1f145a7ef34e7294fee877e39226d9da';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.17_10.tar.gz';          ;;        s390x)          ESUM='76327b1d00c67f6be91717754fd85fc85ce496d48876f69accb9c53ed31dc546';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.17_10.tar.gz';          ;;        x86_64)          ESUM='992f96e7995075ac7636bb1a8de52b0c61d71ed3137fafc979ab96b4ab78dd75';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_x64_linux_hotspot_17.0.17_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Sat, 08 Nov 2025 18:03:44 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 18:03:44 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 18:03:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 01 Aug 2025 11:04:34 GMT
+# Sat, 08 Nov 2025 18:03:44 GMT
 CMD ["jshell"]
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:26:23 GMT
 CMD ["gradle"]
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:26:23 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:26:23 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 101 gradle     && useradd --system --gid gradle --uid 101 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle     && chmod --recursive o+rwx /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:26:23 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:26:23 GMT
 WORKDIR /home/gradle
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:32:31 GMT
 RUN set -o errexit -o nounset     && microdnf install -y         make                 findutils                 unzip         which                 git         git-lfs         subversion     && microdnf clean all         && echo "Testing common utilities"     && which awk     && which curl     && which cut     && which grep     && which gunzip     && which sha256sum     && which sed     && which tar     && which tr     && which unzip     && which wget         && echo "Testing VCSes"     && which git     && which git-lfs     && which svn # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:32:31 GMT
 ENV GRADLE_VERSION=8.14.3
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:32:31 GMT
 ARG GRADLE_DOWNLOAD_SHA256=bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:32:43 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:32:43 GMT
 USER gradle
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:32:44 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --version # buildkit
-# Mon, 29 Sep 2025 16:01:58 GMT
+# Sat, 08 Nov 2025 18:32:44 GMT
 USER root
 ```
 
@@ -618,63 +618,63 @@ USER root
 		Last Modified: Wed, 15 Oct 2025 12:11:19 GMT  
 		Size: 37.8 MB (37759797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7122be53af945934a44fcce8efaac2e8dd2ea492439aeef1841a59957e794d4`  
-		Last Modified: Thu, 16 Oct 2025 19:59:19 GMT  
-		Size: 27.6 MB (27571223 bytes)  
+	-	`sha256:7057baef8e1e56074fbebcae2ebe9fc755e75d3f376cc35d8243e5172094c140`  
+		Last Modified: Sat, 08 Nov 2025 17:56:51 GMT  
+		Size: 16.5 MB (16457363 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:609efcc00c750898b2a3b0b29c8b8af07f63a1fbaf8ef46c1d0b174c48f8ce9e`  
-		Last Modified: Fri, 17 Oct 2025 12:44:12 GMT  
-		Size: 134.7 MB (134724681 bytes)  
+	-	`sha256:2ce5a53e0854b1ef9630b5a90ab7fd03241248d09d5466a1b1e32ec4aae2e7c8`  
+		Last Modified: Sat, 08 Nov 2025 18:04:09 GMT  
+		Size: 134.9 MB (134862205 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3dd8fdd69d92f0eb93867410a4139860cf70db66da4c0bf566331f53041944ea`  
-		Last Modified: Thu, 16 Oct 2025 20:01:12 GMT  
-		Size: 130.0 B  
+	-	`sha256:69fbc1509587b754005da402c0bb20b3c3bea36542b5756fd3a8b9b0b6b7df64`  
+		Last Modified: Sat, 08 Nov 2025 18:04:20 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d97903fa99d932a6f660a5ef94649afb7b475edb1759f97c3c6b1b4f7d354103`  
-		Last Modified: Thu, 16 Oct 2025 20:01:12 GMT  
-		Size: 2.3 KB (2291 bytes)  
+	-	`sha256:7823a461112cd247b0b2e38cef85d08de9f0ce23aa36e74908af0ca3249e0d1b`  
+		Last Modified: Sat, 08 Nov 2025 18:04:19 GMT  
+		Size: 2.3 KB (2289 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b63ad6386c42f7b736f580791029bc573c0a23735694a3bde98177b74e8eb45c`  
-		Last Modified: Thu, 16 Oct 2025 20:25:42 GMT  
-		Size: 1.7 KB (1709 bytes)  
+	-	`sha256:c5eb91557f201b08cafedf071daacf41c6878049e2e9c9b8f80ab1fb515cf6db`  
+		Last Modified: Sat, 08 Nov 2025 18:34:04 GMT  
+		Size: 1.4 KB (1417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:577afa08aea9dd77dbfd986de1c768471566677f2f891884c4ddc2522a8b0e57`  
-		Last Modified: Fri, 17 Oct 2025 12:43:57 GMT  
-		Size: 36.4 MB (36417646 bytes)  
+	-	`sha256:5d14b50a124f153f6fb1f9639ac1ddd8b57857c21d80bf31e60b3f64993042e6`  
+		Last Modified: Sat, 08 Nov 2025 18:34:08 GMT  
+		Size: 50.7 MB (50656659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5beea2f16bafb473d1429134653a7bcbdce2ac916c8e2d95d8d1994031dad7de`  
-		Last Modified: Fri, 17 Oct 2025 15:16:54 GMT  
-		Size: 137.4 MB (137395201 bytes)  
+	-	`sha256:eb803bee8af67b2a18d3939e7adf92c14e9186f0b7833921448518aab9c76376`  
+		Last Modified: Sat, 08 Nov 2025 18:33:57 GMT  
+		Size: 137.4 MB (137395202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6a03d805a5d701c6d284478e2c8a1eae24d3041eb45d109b146f2fda10b1bd4`  
-		Last Modified: Thu, 16 Oct 2025 21:07:57 GMT  
-		Size: 35.0 KB (35006 bytes)  
+	-	`sha256:d6938cf0e6095af1f56a24fb3b239b5bd3c9d0e2fc01c65528202313c46582c9`  
+		Last Modified: Sat, 08 Nov 2025 18:34:03 GMT  
+		Size: 35.0 KB (35009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:8-jdk17-ubi` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:394af69e9cafc30efaad03a05e47e9267232b36debd152544701a895e402d129
+$ docker pull gradle@sha256:2fdbdac2b775ebfa0057c5a50d84933d5be0bd5ecaf67904f9cde059357ce4ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5398426 bytes)**  
+-	Total Size: **5.4 MB (5400747 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f61260283fa1418d499e0358ae19ea56693ccca07169cb7f32d19bdd4bd65a8`
+-	Image ID: `sha256:d14edd0079fafc601ada81a11d462c0261ea400441ac2b82611268a85eeb2e8c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:04335cfd33ab8535388068717f2ccb47c63e44a726b5a20a6e63fd47940ee029`  
-		Last Modified: Thu, 16 Oct 2025 23:21:52 GMT  
-		Size: 5.4 MB (5374752 bytes)  
+	-	`sha256:5a9c799da8c1972d6e3bd1fbb8b03b5337c324f8b21f5ffc5e4955dbbad6bb4f`  
+		Last Modified: Sat, 08 Nov 2025 21:27:32 GMT  
+		Size: 5.4 MB (5377148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3990d4234cdb81a328307ce78e20cbef9d2d2e291e2ad4fa69bcc1ab36ef7253`  
-		Last Modified: Thu, 16 Oct 2025 23:21:52 GMT  
-		Size: 23.7 KB (23674 bytes)  
+	-	`sha256:7775f64c1d56b844d5c898b080b1c58baa30cebde95c9b462823d4a9bf931282`  
+		Last Modified: Sat, 08 Nov 2025 21:27:33 GMT  
+		Size: 23.6 KB (23599 bytes)  
 		MIME: application/vnd.in-toto+json
