@@ -142,19 +142,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.6.7
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.7.dsc' base-passwd_3.6.7.dsc 1891 SHA256:23dafe71f85d7595d9e20efba17729c1c975a33bd469cf09bfad9e96b1f542f3
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.7.tar.xz' base-passwd_3.6.7.tar.xz 60872 SHA256:cf869870fed7862b57bfa9e99cd5cd6f365e2349705a1b65af7fc182629bd1ab
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.6.7/
 
-- https://sources.debian.net/src/base-passwd/3.6.7/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.6.7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.6.7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=5.3-1`
 
@@ -436,15 +430,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.17.0~rc3-1
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.17.0%7erc3-1.dsc' curl_8.17.0~rc3-1.dsc 3318 SHA256:0f0e527a833001227eb8133f29ac2f6f4e80fd67aba4eca148a7d706169208b4
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.17.0%7erc3.orig.tar.xz' curl_8.17.0~rc3.orig.tar.xz 2797980 SHA256:425ddb27115a34cf51164a30dd4b6f5692c5e91f466915e7544e30c855ba10e9
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.17.0%7erc3.orig.tar.xz.asc' curl_8.17.0~rc3.orig.tar.xz.asc 488 SHA256:72070915d590b8dea468976fae6beec3095ba49b36a506f6d4e96c6a738dc8d2
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.17.0%7erc3-1.debian.tar.xz' curl_8.17.0~rc3-1.debian.tar.xz 52364 SHA256:9dfe03b94c3267d583b5505d1811ab3151251e87fa1fb07f7cd34caf6f769758
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/curl/8.17.0~rc3-1/
+
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-10`
 
@@ -2504,10 +2496,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mgcv=1.9-3-1
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.9-3-1.dsc' mgcv_1.9-3-1.dsc 1826 SHA256:e0ebc9ab153c1b0ba46a80478937be0540a9f8b2673c7024fd4a34af146ab1b4
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.9-3.orig.tar.gz' mgcv_1.9-3.orig.tar.gz 1127049 SHA256:43f0ccdba176890a1d7bbe9a0a0859222e1fbcc97064c6e6ad7a3f545fd82f1d
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.9-3-1.debian.tar.xz' mgcv_1.9-3-1.debian.tar.xz 5584 SHA256:07e733e9c18e14c7a9beee77590c2386d594b16b76cfda1298a9a604b50ed728
+'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.9-3-1.dsc' mgcv_1.9-3-1.dsc 1826 SHA256:e0ebc9ab153c1b0ba46a80478937be0540a9f8b2673c7024fd4a34af146ab1b4
+'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.9-3.orig.tar.gz' mgcv_1.9-3.orig.tar.gz 1127049 SHA256:43f0ccdba176890a1d7bbe9a0a0859222e1fbcc97064c6e6ad7a3f545fd82f1d
+'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.9-3-1.debian.tar.xz' mgcv_1.9-3-1.debian.tar.xz 5584 SHA256:07e733e9c18e14c7a9beee77590c2386d594b16b76cfda1298a9a604b50ed728
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/mgcv/1.9-3-1/ (for browsing the source)
+- https://sources.debian.net/src/mgcv/1.9-3-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mgcv/1.9-3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.3.1-2`
 
