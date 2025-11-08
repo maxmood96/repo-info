@@ -1,16 +1,16 @@
-# `golang:1.25.3-trixie`
+# `golang:1.25.4-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:229b4ed95b37dd3ba9ffb0d3bf8ea87e099eda579110cfb948c22493ba423a98`
-- Created: `2025-11-04T11:01:05.91830409Z`
+- Image ID: `sha256:bc4d5657862713f14fceb288b425c209632d4d572ec14193c9feb260a6e5ebab`
+- Created: `2025-11-05T20:18:17.575810411Z`
 - Virtual Size: ~ 846.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.25.3`
+  - `GOLANG_VERSION=1.25.4`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
 
