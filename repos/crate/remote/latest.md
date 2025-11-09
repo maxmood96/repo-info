@@ -175,7 +175,7 @@ CMD ["crate"]
 
 -	Layers:
 	-	`sha256:bd8ea6f470495e95ac9ba70801dd6d46b9cae2f713269ebbdd43f06368799802`  
-		Last Modified: Tue, 09 Sep 2025 20:21:23 GMT  
+		Last Modified: Sun, 09 Nov 2025 12:01:10 GMT  
 		Size: 65.5 MB (65518001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24ee2c39130bfacf9515d5efc24ffb7082ef9cf1eb6582efaa417dc9ce65b9d7`  
