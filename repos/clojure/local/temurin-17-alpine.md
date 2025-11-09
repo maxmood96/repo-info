@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9982b02c7dc73ee482fdc00a1377918b4be4a2e58540603da0d2b740db02f124`
-- Created: `2025-09-26T15:53:20Z`
-- Virtual Size: ~ 366.33 Mb  
+- Image ID: `sha256:6988a6bfe22c6927bb701f717b664db4b43d549260c2eb80bc01eb1f1ef46407`
+- Created: `2025-11-08T18:43:06.776168038Z`
+- Virtual Size: ~ 366.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.16+8`
+  - `JAVA_VERSION=jdk-17.0.17+10`
   - `CLOJURE_VERSION=1.12.3.1577`
 
 ## `apk` (`.apk`-based packages)
@@ -1315,16 +1315,16 @@ BSD-3-Clause
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.43-r1 description:
+pcre2-10.46-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.43-r1 webpage:
+pcre2-10.46-r0 webpage:
 https://pcre.org/
 
-pcre2-10.43-r1 installed size:
-707 KiB
+pcre2-10.46-r0 installed size:
+767 KiB
 
-pcre2-10.43-r1 license:
+pcre2-10.46-r0 license:
 BSD-3-Clause
 
 ```
