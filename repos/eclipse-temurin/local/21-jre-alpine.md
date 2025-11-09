@@ -1,10 +1,10 @@
-# `eclipse-temurin:21.0.8_9-jre-alpine-3.22`
+# `eclipse-temurin:21.0.9_10-jre-alpine-3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd8085de26b22c47624f9f83b1338c46b779c59970b13f1a18413755eb802bc3`
-- Created: `2025-08-01T11:04:34Z`
-- Virtual Size: ~ 205.60 Mb  
+- Image ID: `sha256:cb895430823c34591ae6fe71fede85189d0d344383acac20889ac0b5276a9caa`
+- Created: `2025-11-08T17:59:38.69244919Z`
+- Virtual Size: ~ 205.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.8+9`
+  - `JAVA_VERSION=jdk-21.0.9+10`
 
 ## `apk` (`.apk`-based packages)
 
