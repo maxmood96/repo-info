@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:79f1a0ef17da0a9340155c0a3dde493a12ab2641fa242e0946cfa0a6a8a57317`
-- Created: `2025-10-13T20:03:28Z`
-- Virtual Size: ~ 407.22 Mb  
+- Image ID: `sha256:0a9217f3966e7a2da578fe087208a4c7694ef987106577e309e8f3e61c5c0820`
+- Created: `2025-11-08T18:36:23.885625112Z`
+- Virtual Size: ~ 407.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-25+36`
+  - `JAVA_VERSION=jdk-25.0.1+8`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -209,16 +209,16 @@ $ apt-get source -qq --print-uris bash=5.1-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.debian.tar.xz' bash_5.1-6ubuntu1.1.debian.tar.xz 99944 SHA512:d7fb6110df70232bd3280c1140a812a1903968792f6608481c184bd28760d03323ada75ed3ca4da4eb6c56a84781d6e2f441e0ee83dd9364a9e37fd0fa2211e9
 ```
 
-### `dpkg` source package: `binutils=2.38-4ubuntu2.8`
+### `dpkg` source package: `binutils=2.38-4ubuntu2.10`
 
 Binary Packages:
 
-- `binutils=2.38-4ubuntu2.8`
-- `binutils-common:amd64=2.38-4ubuntu2.8`
-- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.8`
-- `libbinutils:amd64=2.38-4ubuntu2.8`
-- `libctf-nobfd0:amd64=2.38-4ubuntu2.8`
-- `libctf0:amd64=2.38-4ubuntu2.8`
+- `binutils=2.38-4ubuntu2.10`
+- `binutils-common:amd64=2.38-4ubuntu2.10`
+- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.10`
+- `libbinutils:amd64=2.38-4ubuntu2.10`
+- `libctf-nobfd0:amd64=2.38-4ubuntu2.10`
+- `libctf0:amd64=2.38-4ubuntu2.10`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
 
@@ -226,9 +226,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.10
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.10.dsc' binutils_2.38-4ubuntu2.10.dsc 8865 SHA512:090d05bba6e4f0ee3f33137f9cee0404a50d94f4ab5be459af5aecabed2cb9fd85e4adb7598a113abee8a045fdc59dacd04e47471494128c8c21286c56a7aaab
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.10.debian.tar.xz' binutils_2.38-4ubuntu2.10.debian.tar.xz 331552 SHA512:400f1d9da1da1c24b6b778b4cf1195c4042f7a3e33a75f8ff2c53691cc18d79d829a36365204299357196c273478c304ac477b4dd7cf757b24028681fe88816e
+```
 
 ### `dpkg` source package: `brotli=1.0.9-2build6`
 
