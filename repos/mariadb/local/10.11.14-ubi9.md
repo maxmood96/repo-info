@@ -264,7 +264,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-http://mirror.grid.uchicago.edu/pub/linux/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+https://mirror.fcix.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -494,7 +494,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://mirror.grid.uchicago.edu/pub/linux/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+https://mirror.fcix.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -2078,7 +2078,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://mirror.grid.uchicago.edu/pub/linux/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+https://mirror.fcix.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2089,7 +2089,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://mirror.grid.uchicago.edu/pub/linux/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+https://mirror.fcix.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
