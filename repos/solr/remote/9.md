@@ -480,7 +480,7 @@ CMD ["solr-foreground"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fa59f41a0e620739d68aad126ce854fcefa9deb992c7a861b1d5fd9aadef3020`  
-		Last Modified: Sat, 08 Nov 2025 20:32:30 GMT  
+		Last Modified: Sun, 09 Nov 2025 03:03:08 GMT  
 		Size: 389.1 MB (389065445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8ad8b960c6d40c7123fa866a860f7749bad945aa28753ff9a09f8b53de4f8f58`  
