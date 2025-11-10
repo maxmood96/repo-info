@@ -1,7 +1,7 @@
 ## `haproxy:lts-trixie`
 
 ```console
-$ docker pull haproxy@sha256:306ff89cd0d23c0355fbfea8985f557d187db94be239d02d7955dda9c1f23236
+$ docker pull haproxy@sha256:a60058dd73115e98c9204d74c55bbdd2e681f0357c6ea16f7062a85bd684e695
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -118,42 +118,42 @@ $ docker pull haproxy@sha256:38ff7d97420724caec65274c9b354ffedfc52b1c547bbc14e40
 ### `haproxy:lts-trixie` - linux; arm variant v5
 
 ```console
-$ docker pull haproxy@sha256:6bec7115573c6ce8035dbe023860842fb4f74f5247afaf6621d95586eb467103
+$ docker pull haproxy@sha256:4acaf31c83b3374b529af0f1c466177ca977bad992101b41f505891db0766b5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.6 MB (40590778 bytes)**  
+-	Total Size: **40.6 MB (40591596 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3628e91dfc409d4f5b5c0a2d67a5e91699873e686aed79370097ccacbadf913`
+-	Image ID: `sha256:61edc2958241bd92e05808348219fd542310322ee96452b5d5ae346c7d7defec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
 
 ```dockerfile
 # Mon, 03 Nov 2025 20:44:10 GMT
 RUN # debian.sh --arch 'armel' out/ 'trixie' '@1762202650'
-# Wed, 05 Nov 2025 22:36:40 GMT
+# Mon, 10 Nov 2025 19:43:03 GMT
 RUN set -eux; 	apt-get install --update -y --no-install-recommends 		ca-certificates 		socat 	; 	apt-get dist-clean # buildkit
-# Wed, 05 Nov 2025 22:36:40 GMT
+# Mon, 10 Nov 2025 19:43:03 GMT
 RUN set -eux; 	groupadd --gid 99 --system haproxy; 	useradd 		--gid haproxy 		--home-dir /var/lib/haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
-# Wed, 05 Nov 2025 22:37:31 GMT
-ENV HAPROXY_VERSION=3.2.7
-# Wed, 05 Nov 2025 22:37:31 GMT
-ENV HAPROXY_URL=https://www.haproxy.org/download/3.2/src/haproxy-3.2.7.tar.gz
-# Wed, 05 Nov 2025 22:37:31 GMT
-ENV HAPROXY_SHA256=1f0ae9dfb0b319e2d5cb6e4cdf931a0877ad88e0090c46cf16faf008fbf54278
-# Wed, 05 Nov 2025 22:37:31 GMT
+# Mon, 10 Nov 2025 19:43:54 GMT
+ENV HAPROXY_VERSION=3.2.8
+# Mon, 10 Nov 2025 19:43:54 GMT
+ENV HAPROXY_URL=https://www.haproxy.org/download/3.2/src/haproxy-3.2.8.tar.gz
+# Mon, 10 Nov 2025 19:43:54 GMT
+ENV HAPROXY_SHA256=46703fb94720f92cce2b08049a40d9176962037ba676885c55a56bd9d625e7c2
+# Mon, 10 Nov 2025 19:43:54 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --update -y --no-install-recommends 		gcc 		libc6-dev 		liblua5.4-dev 		libpcre2-dev 		libssl-dev 		make 		wget 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-glibc 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 	'; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) makeOpts="$makeOpts ADDLIB=-latomic" ;; 	esac; 		nproc="$(nproc)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		haproxy -v # buildkit
-# Wed, 05 Nov 2025 22:37:31 GMT
+# Mon, 10 Nov 2025 19:43:54 GMT
 STOPSIGNAL SIGUSR1
-# Wed, 05 Nov 2025 22:37:31 GMT
+# Mon, 10 Nov 2025 19:43:54 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 05 Nov 2025 22:37:31 GMT
+# Mon, 10 Nov 2025 19:43:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Nov 2025 22:37:31 GMT
+# Mon, 10 Nov 2025 19:43:54 GMT
 USER haproxy
-# Wed, 05 Nov 2025 22:37:31 GMT
+# Mon, 10 Nov 2025 19:43:54 GMT
 WORKDIR /var/lib/haproxy
-# Wed, 05 Nov 2025 22:37:31 GMT
+# Mon, 10 Nov 2025 19:43:54 GMT
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
@@ -162,112 +162,20 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Last Modified: Tue, 04 Nov 2025 00:13:12 GMT  
 		Size: 27.9 MB (27946438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8be29f3d244c3e616b0d935b27f5dbb7d2c210d70c9c1a09777b568f068925c`  
-		Last Modified: Wed, 05 Nov 2025 22:37:47 GMT  
-		Size: 1.5 MB (1534916 bytes)  
+	-	`sha256:94b440211c3be9c73a4e8e0eebb3b28b3cdf01c9283f25afdb84e201538645cd`  
+		Last Modified: Mon, 10 Nov 2025 19:44:10 GMT  
+		Size: 1.5 MB (1534896 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8036f5282559a50dae222d35ddfbec45c423f5a586e7314544bae81af22a8fe4`  
-		Last Modified: Wed, 05 Nov 2025 22:37:47 GMT  
+	-	`sha256:807a9a0dc8785321afeed8baab6a1a26b62ea60ea16d0060e0b12a3b7d5ab2e4`  
+		Last Modified: Mon, 10 Nov 2025 19:44:10 GMT  
 		Size: 1.2 KB (1160 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d04c7aca08a32318902a9b03d8d30d989b873fbb9f394b7cc018516ca225dcca`  
-		Last Modified: Wed, 05 Nov 2025 22:37:52 GMT  
-		Size: 11.1 MB (11107784 bytes)  
+	-	`sha256:2b9bcf12202539ccde6f0e7c2a86eed1297591566dbbb2e9cdf25427038599fa`  
+		Last Modified: Mon, 10 Nov 2025 19:44:12 GMT  
+		Size: 11.1 MB (11108621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50846ad72b6b8239532d4a4b38006b8384ff5d0c6b7732ab1e26a02695166288`  
-		Last Modified: Wed, 05 Nov 2025 22:37:47 GMT  
-		Size: 448.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `haproxy:lts-trixie` - unknown; unknown
-
-```console
-$ docker pull haproxy@sha256:f932618c4bd43f7031ba882f6eea1b285de3ba6ed491dc9a7233406909143faf
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2139647 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4290d7880c19f592dd0bc670fa242b5eb1cfe4d13bf9bdbf8b055972c8702216`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:b0874ec7433580afe79268d98c7502b5157dd735caf9747bfe0184a6ef4208a8`  
-		Last Modified: Wed, 05 Nov 2025 22:56:59 GMT  
-		Size: 2.1 MB (2117304 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:f578baa715bf33b4a2e8c352109bc5478f454ae1aa57c98b1f6ee143cdbb4f87`  
-		Last Modified: Wed, 05 Nov 2025 22:57:00 GMT  
-		Size: 22.3 KB (22343 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `haproxy:lts-trixie` - linux; arm variant v7
-
-```console
-$ docker pull haproxy@sha256:bacb3f854f8b235d649eb1e05a4cea721709dadfbffd07ce93c182c05690918b
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.6 MB (38599219 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f48dd232179250287cfad2259f20c9f61c6c7c7e1bbbc0ee8141162021bfd745`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
-
-```dockerfile
-# Mon, 03 Nov 2025 20:44:10 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1762202650'
-# Wed, 05 Nov 2025 22:38:06 GMT
-RUN set -eux; 	apt-get install --update -y --no-install-recommends 		ca-certificates 		socat 	; 	apt-get dist-clean # buildkit
-# Wed, 05 Nov 2025 22:38:06 GMT
-RUN set -eux; 	groupadd --gid 99 --system haproxy; 	useradd 		--gid haproxy 		--home-dir /var/lib/haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
-# Wed, 05 Nov 2025 22:38:49 GMT
-ENV HAPROXY_VERSION=3.2.7
-# Wed, 05 Nov 2025 22:38:49 GMT
-ENV HAPROXY_URL=https://www.haproxy.org/download/3.2/src/haproxy-3.2.7.tar.gz
-# Wed, 05 Nov 2025 22:38:49 GMT
-ENV HAPROXY_SHA256=1f0ae9dfb0b319e2d5cb6e4cdf931a0877ad88e0090c46cf16faf008fbf54278
-# Wed, 05 Nov 2025 22:38:49 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --update -y --no-install-recommends 		gcc 		libc6-dev 		liblua5.4-dev 		libpcre2-dev 		libssl-dev 		make 		wget 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-glibc 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 	'; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) makeOpts="$makeOpts ADDLIB=-latomic" ;; 	esac; 		nproc="$(nproc)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		haproxy -v # buildkit
-# Wed, 05 Nov 2025 22:38:49 GMT
-STOPSIGNAL SIGUSR1
-# Wed, 05 Nov 2025 22:38:49 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 05 Nov 2025 22:38:49 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Nov 2025 22:38:49 GMT
-USER haproxy
-# Wed, 05 Nov 2025 22:38:49 GMT
-WORKDIR /var/lib/haproxy
-# Wed, 05 Nov 2025 22:38:49 GMT
-CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
-```
-
--	Layers:
-	-	`sha256:8945aefb71bd942499dd072e2c7c869b6b74b7c4dd83bff59c209b7b95d52a9f`  
-		Last Modified: Tue, 04 Nov 2025 00:13:33 GMT  
-		Size: 26.2 MB (26213039 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5810a94b9d52adcfe6116c9b871f77aab0fd6359cc1672b96e000015085b327e`  
-		Last Modified: Wed, 05 Nov 2025 22:39:03 GMT  
-		Size: 1.5 MB (1488867 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c62eb7550e54fa36cff3cb06a3cd15150bd23403988961d1bce914277ddf7739`  
-		Last Modified: Wed, 05 Nov 2025 22:39:02 GMT  
-		Size: 1.2 KB (1157 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d17a5f89bd1ff58372fa7e6f385a11f3e39bc46f39e770eded9cbc56320a4d25`  
-		Last Modified: Wed, 05 Nov 2025 22:39:03 GMT  
-		Size: 10.9 MB (10895675 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:170954c62ad9bffc8acb92f54117b9e6f46b9bb527d45852c50ab6766a6807f7`  
-		Last Modified: Wed, 05 Nov 2025 22:39:02 GMT  
+	-	`sha256:7d858edb8b5274b17ec1a69fa42ead44ed512532cc3062dd4dda5f1dc6609800`  
+		Last Modified: Mon, 10 Nov 2025 19:44:10 GMT  
 		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -278,24 +186,116 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ### `haproxy:lts-trixie` - unknown; unknown
 
 ```console
-$ docker pull haproxy@sha256:90b0061fe551fe21d943bcc75a56debbc785f6bb131775eb501d3b65fb44bb57
+$ docker pull haproxy@sha256:6e2d4290c95799055e33bac14a29fca908fbae69b2c8b9c0ba0cab418cb459a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2138090 bytes)**  
+-	Total Size: **2.1 MB (2139647 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9524884476ae0b7b8f476ab88558054fd31662fc37b10f164b02b6a6ece2e1eb`
+-	Image ID: `sha256:c56670ff19dde3ca6893f781d3d9c4322521486c56c7ede2503fac0f4c47c798`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:47f76f6565c075a6505415b1dad849439f1d4630f5ac090cc684b5483d9647d4`  
-		Last Modified: Wed, 05 Nov 2025 22:57:42 GMT  
+	-	`sha256:49dd43bcacd2a425b8e32def9498631f0917e5cff21008862839ffd6e403a649`  
+		Last Modified: Mon, 10 Nov 2025 19:56:36 GMT  
+		Size: 2.1 MB (2117304 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:0a4867d943531331fb10adfa1185192e76dbeab3c8289d303cb74f80f17dfc3b`  
+		Last Modified: Mon, 10 Nov 2025 19:56:37 GMT  
+		Size: 22.3 KB (22343 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `haproxy:lts-trixie` - linux; arm variant v7
+
+```console
+$ docker pull haproxy@sha256:6fc4ed3656f279fd0e9ceb90f844e1fb8f39b0a433983422e24b5d55f0fab151
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **38.6 MB (38600986 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:917b2b8f038fab68c7da3ad671b7dff17aa51bdd1513adc90b96b6a62bf82731`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
+
+```dockerfile
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1762202650'
+# Mon, 10 Nov 2025 19:43:42 GMT
+RUN set -eux; 	apt-get install --update -y --no-install-recommends 		ca-certificates 		socat 	; 	apt-get dist-clean # buildkit
+# Mon, 10 Nov 2025 19:43:42 GMT
+RUN set -eux; 	groupadd --gid 99 --system haproxy; 	useradd 		--gid haproxy 		--home-dir /var/lib/haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
+# Mon, 10 Nov 2025 19:44:26 GMT
+ENV HAPROXY_VERSION=3.2.8
+# Mon, 10 Nov 2025 19:44:26 GMT
+ENV HAPROXY_URL=https://www.haproxy.org/download/3.2/src/haproxy-3.2.8.tar.gz
+# Mon, 10 Nov 2025 19:44:26 GMT
+ENV HAPROXY_SHA256=46703fb94720f92cce2b08049a40d9176962037ba676885c55a56bd9d625e7c2
+# Mon, 10 Nov 2025 19:44:26 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --update -y --no-install-recommends 		gcc 		libc6-dev 		liblua5.4-dev 		libpcre2-dev 		libssl-dev 		make 		wget 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-glibc 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 	'; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) makeOpts="$makeOpts ADDLIB=-latomic" ;; 	esac; 		nproc="$(nproc)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		haproxy -v # buildkit
+# Mon, 10 Nov 2025 19:44:26 GMT
+STOPSIGNAL SIGUSR1
+# Mon, 10 Nov 2025 19:44:26 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 10 Nov 2025 19:44:26 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 10 Nov 2025 19:44:26 GMT
+USER haproxy
+# Mon, 10 Nov 2025 19:44:26 GMT
+WORKDIR /var/lib/haproxy
+# Mon, 10 Nov 2025 19:44:26 GMT
+CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
+```
+
+-	Layers:
+	-	`sha256:8945aefb71bd942499dd072e2c7c869b6b74b7c4dd83bff59c209b7b95d52a9f`  
+		Last Modified: Tue, 04 Nov 2025 00:13:33 GMT  
+		Size: 26.2 MB (26213039 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f162541918d365ef1c719720ad7cb6eaf9a3040de64773ccde513c60ce70db30`  
+		Last Modified: Mon, 10 Nov 2025 19:44:36 GMT  
+		Size: 1.5 MB (1488901 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6719b2950e7a3bf858f5b51b2d435c2a8a58ec643888446276493b92ed0dea9a`  
+		Last Modified: Mon, 10 Nov 2025 19:44:36 GMT  
+		Size: 1.2 KB (1158 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:90c7103cae3f09cfc815bf6b72cdad0d022b1e7582a6c51a4358891f336aced9`  
+		Last Modified: Mon, 10 Nov 2025 19:44:37 GMT  
+		Size: 10.9 MB (10897408 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:83ee824488cbabe6c1bac8526c0887118bbb98b1be2bea06d0b152dbd0fa048f`  
+		Last Modified: Mon, 10 Nov 2025 19:44:36 GMT  
+		Size: 448.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `haproxy:lts-trixie` - unknown; unknown
+
+```console
+$ docker pull haproxy@sha256:dc680dc74ccf1706df090670a1c786d7e8f3f1b77476172a0c3fbe402280a5ce
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.1 MB (2138090 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:55071368b79fe02881c56facf28f198106964e398aa96d4ef80ca1029148d046`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:73d2685575f1310415a0c7cda526f9dbebbeb3d96de7bcee9a346286e4ae333b`  
+		Last Modified: Mon, 10 Nov 2025 19:58:28 GMT  
 		Size: 2.1 MB (2115747 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1b8f8b7694122eec7e0b2fb1d69018c3cca74d5368296c9d9bca9e7b07bd0383`  
-		Last Modified: Wed, 05 Nov 2025 22:57:42 GMT  
+	-	`sha256:928061cbd9395a13f1a30d71efde13d8c788743f9a6187936c0259128bca3bc2`  
+		Last Modified: Mon, 10 Nov 2025 19:58:29 GMT  
 		Size: 22.3 KB (22343 bytes)  
 		MIME: application/vnd.in-toto+json
 
