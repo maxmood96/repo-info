@@ -1,4 +1,4 @@
-## `docker:cli`
+## `docker:29-cli`
 
 ```console
 $ docker pull docker@sha256:87858a6dd14149240f4a2c33e0ec0f32a5ac1bb2548c04f5a20694ea25cb6157
@@ -15,7 +15,7 @@ $ docker pull docker@sha256:87858a6dd14149240f4a2c33e0ec0f32a5ac1bb2548c04f5a206
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `docker:cli` - linux; amd64
+### `docker:29-cli` - linux; amd64
 
 ```console
 $ docker pull docker@sha256:85b69bff6696b21432c9a0c97d9ba577dcfa1abd09c2fe7064521f845db7ba10
@@ -107,7 +107,7 @@ CMD ["sh"]
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `docker:cli` - unknown; unknown
+### `docker:29-cli` - unknown; unknown
 
 ```console
 $ docker pull docker@sha256:edc7c416b5749e58ae06051f73f58941925ea0e92139cecb3942f82b66548726
@@ -127,7 +127,7 @@ $ docker pull docker@sha256:edc7c416b5749e58ae06051f73f58941925ea0e92139cecb3942
 		Size: 38.1 KB (38073 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `docker:cli` - linux; arm variant v6
+### `docker:29-cli` - linux; arm variant v6
 
 ```console
 $ docker pull docker@sha256:db6f1b09c83095931c62c38f3326c38fa50c08aaacfb883ef2690ba2732ba235
@@ -219,7 +219,7 @@ CMD ["sh"]
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `docker:cli` - unknown; unknown
+### `docker:29-cli` - unknown; unknown
 
 ```console
 $ docker pull docker@sha256:8068d2a5a896fd79499397ab7f094ac12aa83ee4089f75aac6336e24e4691bd7
@@ -239,7 +239,7 @@ $ docker pull docker@sha256:8068d2a5a896fd79499397ab7f094ac12aa83ee4089f75aac633
 		Size: 38.2 KB (38239 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `docker:cli` - linux; arm variant v7
+### `docker:29-cli` - linux; arm variant v7
 
 ```console
 $ docker pull docker@sha256:4ccec6e40933fa64d0334144f642a1e480f71a6780c4bc3eae361d3eb7cc39e8
@@ -331,7 +331,7 @@ CMD ["sh"]
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `docker:cli` - unknown; unknown
+### `docker:29-cli` - unknown; unknown
 
 ```console
 $ docker pull docker@sha256:958bb6a5751db20fca83307e98779011066c11405ac2a69e134b82980c08d77f
@@ -351,7 +351,7 @@ $ docker pull docker@sha256:958bb6a5751db20fca83307e98779011066c11405ac2a69e134b
 		Size: 38.2 KB (38238 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `docker:cli` - linux; arm64 variant v8
+### `docker:29-cli` - linux; arm64 variant v8
 
 ```console
 $ docker pull docker@sha256:fb78d3008a96342d542ed9cf971f8d4a833fd1efb7e514b580cb285fba8cf146
@@ -443,7 +443,7 @@ CMD ["sh"]
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `docker:cli` - unknown; unknown
+### `docker:29-cli` - unknown; unknown
 
 ```console
 $ docker pull docker@sha256:dfc45fa7a7ebd405ac76c818dd144712daa26778ce043a76705b59adadfbf594

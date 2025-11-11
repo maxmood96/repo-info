@@ -1,4 +1,4 @@
-## `docker:windowsservercore-ltsc2025`
+## `docker:29-windowsservercore-ltsc2025`
 
 ```console
 $ docker pull docker@sha256:cf52fc75c50a0b3ee0fd34f484cb9e7aa12c6b6f6187e520f1fc9cb2a96807fc
@@ -8,7 +8,7 @@ $ docker pull docker@sha256:cf52fc75c50a0b3ee0fd34f484cb9e7aa12c6b6f6187e520f1fc
 -	Platforms: 1
 	-	windows version 10.0.26100.6905; amd64
 
-### `docker:windowsservercore-ltsc2025` - windows version 10.0.26100.6905; amd64
+### `docker:29-windowsservercore-ltsc2025` - windows version 10.0.26100.6905; amd64
 
 ```console
 $ docker pull docker@sha256:d3430dae25034c55c56dd585271ca3ff7633e012a1ba11f1498b04f25693ef2d
