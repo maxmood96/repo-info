@@ -1,19 +1,19 @@
-# `haproxy:3.2.7-alpine`
+# `haproxy:3.2.8-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3f4db2d244a92b77e077abfb2e6d791588c15f7d97a66db4b0e7ca96eede1f20`
-- Created: `2025-11-05T22:37:27.18358055Z`
-- Virtual Size: ~ 33.73 Mb  
+- Image ID: `sha256:860ce603929fcbba86b21480d0c0087936d92bb86e67b3c97f9597724c28e030`
+- Created: `2025-11-10T19:46:05.305765701Z`
+- Virtual Size: ~ 33.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["haproxy","-f","/usr/local/etc/haproxy/haproxy.cfg"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `HAPROXY_VERSION=3.2.7`
-  - `HAPROXY_URL=https://www.haproxy.org/download/3.2/src/haproxy-3.2.7.tar.gz`
-  - `HAPROXY_SHA256=1f0ae9dfb0b319e2d5cb6e4cdf931a0877ad88e0090c46cf16faf008fbf54278`
+  - `HAPROXY_VERSION=3.2.8`
+  - `HAPROXY_URL=https://www.haproxy.org/download/3.2/src/haproxy-3.2.8.tar.gz`
+  - `HAPROXY_SHA256=46703fb94720f92cce2b08049a40d9176962037ba676885c55a56bd9d625e7c2`
 
 ## `apk` (`.apk`-based packages)
 
