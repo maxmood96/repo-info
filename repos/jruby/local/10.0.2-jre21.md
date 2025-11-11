@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b92dd5a97e2cbe257c71b12770d8ad3d0f52324638ef3de82cda666b74ea1215`
-- Created: `2025-10-02T19:36:17Z`
-- Virtual Size: ~ 411.89 Mb  
+- Image ID: `sha256:612801ef6e3ee1ef245c644fa352cd4eec93f4b456a99fa217c71333d08de3e9`
+- Created: `2025-11-08T18:28:58.04024682Z`
+- Virtual Size: ~ 411.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.8+9`
+  - `JAVA_VERSION=jdk-21.0.9+10`
   - `JRUBY_VERSION=10.0.2.0`
   - `JRUBY_SHA256=b8a026f38aa98461a04ed0aa0b20891ce257ecbe53e124719ce9ee5b804525f1`
   - `GEM_HOME=/usr/local/bundle`
@@ -1329,11 +1329,11 @@ $ apt-get source -qq --print-uris libsepol=3.5-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.5-2build1.debian.tar.xz' libsepol_3.5-2build1.debian.tar.xz 27716 SHA512:9b2b126368c5e4f80d80940f7611103745b1da92bec6319f43f64cc3f6a5e13bab25758bad645e973773a4aab74fa3600694061a8368ca2176252320c0d9ebf6
 ```
 
-### `dpkg` source package: `libssh=0.10.6-2ubuntu0.1`
+### `dpkg` source package: `libssh=0.10.6-2ubuntu0.2`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.10.6-2ubuntu0.1`
+- `libssh-4:amd64=0.10.6-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 
@@ -1343,9 +1343,15 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libssh=0.10.6-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.2.dsc' libssh_0.10.6-2ubuntu0.2.dsc 2723 SHA512:0ce4ad1a7c238fa3dca8523f49833309c47aa55535c7d438d0c7d6a985e5346d2071d791c1847cbeea76502ca73276e1235dda81f075fc3e0ce90240656065f0
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz' libssh_0.10.6.orig.tar.xz 561036 SHA512:40c62d63c44e882999b71552c237d73fc7364313bd00b15a211a34aeff1b73693da441d2c8d4e40108d00fb7480ec7c5b6d472f9c0784b2359a179632ab0d6c1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz.asc' libssh_0.10.6.orig.tar.xz.asc 833 SHA512:214d7920bebc80a8e6838c64ed06e070709a96fabfb4fff657b55f9588bc0e1612887fe887d23de73ad3540f3bb85288e62eb6a11ccd4bc80afbd44d34ba70d4
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.2.debian.tar.xz' libssh_0.10.6-2ubuntu0.2.debian.tar.xz 47820 SHA512:92e9d5c401b22570cabac5c80c984b809d8fbcc537b464b7e5ec69eae254046cb56bb1d5029cc7ac11c0e8010f5501bf8495261f1022770eded064e4f6bb637c
+```
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3ubuntu0.24.04.1`
 
@@ -1443,19 +1449,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-85.85`
+### `dpkg` source package: `linux=6.8.0-87.88`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-85.85`
+- `linux-libc-dev:amd64=6.8.0-87.88`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-87.88
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-87.88.dsc' linux_6.8.0-87.88.dsc 9362 SHA512:be05f1ea0f41b7f63232dedb4952da3f4f071c27c2acc9411fa621e7e1e68eee999e5109082c03aad1a2843f81d39cf1242c96b618a018fd1e8f606219026fd1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-87.88.diff.gz' linux_6.8.0-87.88.diff.gz 6068755 SHA512:51ca081be56c322a5f6de91b47cb7dd7452e62eb3453d8ae1afc57adf2ee718fe43f333e4a683ec53615db7ab3eb8c1699fdab8ddfdef14731a8cd909f9bb1f5
+```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
