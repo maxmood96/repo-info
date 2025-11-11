@@ -1,7 +1,7 @@
 ## `ghost:6-alpine3.22`
 
 ```console
-$ docker pull ghost@sha256:56198f9d1c285f0ff7b13fe9c3e42d72bd63256bd3659f60735913c60f242edd
+$ docker pull ghost@sha256:bc8468df030305978c9abea95e3b11e962c9856be2353d5e5ee963c45c133992
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull ghost@sha256:56198f9d1c285f0ff7b13fe9c3e42d72bd63256bd3659f6073591
 ### `ghost:6-alpine3.22` - linux; amd64
 
 ```console
-$ docker pull ghost@sha256:4d2968ec365b4ff09d50cef71dae5412703deb4087890b26e8f0b7e01fa0eabc
+$ docker pull ghost@sha256:78cfa58cdbd6ee246e24a679bc5d88f771c777b268fa09507c4ce8463806c7f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.1 MB (196092021 bytes)**  
+-	Total Size: **196.1 MB (196081278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccca2440a7ea101087afae5c8cc8d2b5a5a4a916b3858af43a80556ba41ab389`
+-	Image ID: `sha256:b37db19279a8dfd69131cc9cc7a8ab5a29eb69fff19299e1c652567478699c47`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -43,37 +43,37 @@ COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Wed, 29 Oct 2025 14:16:06 GMT
 CMD ["node"]
-# Wed, 05 Nov 2025 21:59:25 GMT
+# Mon, 10 Nov 2025 19:53:28 GMT
 RUN apk add --no-cache 		bash # buildkit
-# Wed, 05 Nov 2025 21:59:28 GMT
+# Mon, 10 Nov 2025 19:53:31 GMT
 ENV GOSU_VERSION=1.19
-# Wed, 05 Nov 2025 21:59:28 GMT
+# Mon, 10 Nov 2025 19:53:31 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 05 Nov 2025 21:59:28 GMT
+# Mon, 10 Nov 2025 19:53:31 GMT
 ENV NODE_ENV=production
-# Wed, 05 Nov 2025 21:59:28 GMT
+# Mon, 10 Nov 2025 19:53:31 GMT
 ENV GHOST_CLI_VERSION=1.28.3
-# Wed, 05 Nov 2025 21:59:44 GMT
+# Mon, 10 Nov 2025 19:53:42 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 05 Nov 2025 21:59:44 GMT
+# Mon, 10 Nov 2025 19:53:42 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 05 Nov 2025 21:59:44 GMT
+# Mon, 10 Nov 2025 19:53:42 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 05 Nov 2025 21:59:44 GMT
-ENV GHOST_VERSION=6.6.1
-# Wed, 05 Nov 2025 22:01:56 GMT
+# Mon, 10 Nov 2025 19:53:42 GMT
+ENV GHOST_VERSION=6.7.0
+# Mon, 10 Nov 2025 19:56:01 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		apk add --no-cache --virtual .build-deps-ghost g++ linux-headers make python3 py3-setuptools; 		gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		apk del --no-network .build-deps-ghost; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8*; 		cd current; 	gosu node node -e 'require("sqlite3"); require("sharp");' # buildkit
-# Wed, 05 Nov 2025 22:01:56 GMT
+# Mon, 10 Nov 2025 19:56:02 GMT
 WORKDIR /var/lib/ghost
-# Wed, 05 Nov 2025 22:01:56 GMT
+# Mon, 10 Nov 2025 19:56:02 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 05 Nov 2025 22:01:56 GMT
+# Mon, 10 Nov 2025 19:56:02 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 05 Nov 2025 22:01:56 GMT
+# Mon, 10 Nov 2025 19:56:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Nov 2025 22:01:56 GMT
+# Mon, 10 Nov 2025 19:56:02 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 05 Nov 2025 22:01:56 GMT
+# Mon, 10 Nov 2025 19:56:02 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -94,65 +94,65 @@ CMD ["node" "current/index.js"]
 		Last Modified: Wed, 29 Oct 2025 14:16:25 GMT  
 		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ec6a8028ab7236f97d1978aa9fb43d7d1102215102751b51b5b5407c7aa01c3`  
-		Last Modified: Wed, 05 Nov 2025 22:02:35 GMT  
-		Size: 777.0 KB (777043 bytes)  
+	-	`sha256:eaf99dca0d735623e08f1121f7c812e71c14368d9531e60dd594ac3404248771`  
+		Last Modified: Mon, 10 Nov 2025 19:56:43 GMT  
+		Size: 777.0 KB (777047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:833504618f8164d4fe271a6ffcabc97cba70f4beaee6fa8ad8a3d57776515446`  
-		Last Modified: Wed, 05 Nov 2025 22:02:35 GMT  
-		Size: 923.4 KB (923439 bytes)  
+	-	`sha256:0d0b142331f2cd7da67466b06ddd53658fdfeea70982e5a4c960a13e564eb16c`  
+		Last Modified: Mon, 10 Nov 2025 19:56:44 GMT  
+		Size: 923.4 KB (923441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7472587d72dc5c19e9ff2e0d2f56abab5f2e2ca781b8551982cc060ff2c6431f`  
-		Last Modified: Wed, 05 Nov 2025 22:02:36 GMT  
-		Size: 11.7 MB (11663934 bytes)  
+	-	`sha256:39135196d538675b88284095360d435fd108b7b8ca22313fdb677852412062b6`  
+		Last Modified: Mon, 10 Nov 2025 19:56:45 GMT  
+		Size: 11.7 MB (11663581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e255141d8248e574de7085f43723483b458da241b8853860d3dec29a5da449e`  
-		Last Modified: Wed, 05 Nov 2025 22:02:48 GMT  
-		Size: 126.1 MB (126096541 bytes)  
+	-	`sha256:5973d34135aa877e88580ad8d5b0f106d2696a9211dd821dc4f1c6d3aa6b7a3c`  
+		Last Modified: Mon, 10 Nov 2025 19:56:56 GMT  
+		Size: 126.1 MB (126086143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9c1dc20f6b3dd77f0c2d328e61493f40a2956bd456bdf22421ad48de77ba2c3`  
-		Last Modified: Wed, 05 Nov 2025 22:02:35 GMT  
-		Size: 543.0 B  
+	-	`sha256:c32b043521c97f742cf4444823bf6f29d5951234d98c18ea10f5003cb588eba0`  
+		Last Modified: Mon, 10 Nov 2025 19:56:44 GMT  
+		Size: 545.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:6-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:df6f316b95116cf1d6fb6732bfb51cb9c602be4e768cf2b932ea8a2b1ac6e2aa
+$ docker pull ghost@sha256:6f308c335ad6c187951433804f599f42509c147f46ffe05d226700adc04bda41
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.4 MB (3368467 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1664f290c3626a75f0604d0e0b487e0859ae51119bd51da49d6d6b83fe525af2`
+-	Image ID: `sha256:6110479674d157ddf2b8abb2128622d84a247b7884058ca262e33847436393d2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:677f5788b2cf864f228d949abe0a094fa3f2af2a8db524b668ab714dfcc40894`  
-		Last Modified: Wed, 05 Nov 2025 22:45:44 GMT  
+	-	`sha256:f6de07694db63eb24d51bb310a13a72dfda11eac6c57b70232d9ec1ad1409802`  
+		Last Modified: Mon, 10 Nov 2025 22:45:41 GMT  
 		Size: 3.3 MB (3342091 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:331396286e7fbbc25a2cb751ca008829d78336df1ba02a40ecb26e673de556c0`  
-		Last Modified: Wed, 05 Nov 2025 22:45:45 GMT  
+	-	`sha256:242df488e86242dc1571ccb1763167b5d18f3aff9202c532490e2e8bba67ac01`  
+		Last Modified: Mon, 10 Nov 2025 22:45:41 GMT  
 		Size: 26.4 KB (26376 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ghost:6-alpine3.22` - linux; arm64 variant v8
 
 ```console
-$ docker pull ghost@sha256:d7524f61c43a0a981cda097fc449c6c5ac18cfce24b45dad2577d8f0d49f9717
+$ docker pull ghost@sha256:8f57f38e42dad94f48c0a2629abd787fd6abe23d6d1c7102c191a3ca017ebeba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.0 MB (206970209 bytes)**  
+-	Total Size: **206.9 MB (206945932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d0b126d5544e75a2cca610964527e2d70350c97d1d2e7b7eb3156f677908a61`
+-	Image ID: `sha256:e0f81737a86513e8ca9ffbd534cd8e841665a1c5c5b15618a7c0e0b86f7a8905`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -175,37 +175,37 @@ COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Wed, 29 Oct 2025 14:59:46 GMT
 CMD ["node"]
-# Wed, 05 Nov 2025 21:55:06 GMT
+# Mon, 10 Nov 2025 19:52:52 GMT
 RUN apk add --no-cache 		bash # buildkit
-# Wed, 05 Nov 2025 21:55:08 GMT
+# Mon, 10 Nov 2025 19:52:55 GMT
 ENV GOSU_VERSION=1.19
-# Wed, 05 Nov 2025 21:55:08 GMT
+# Mon, 10 Nov 2025 19:52:55 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 05 Nov 2025 21:55:08 GMT
+# Mon, 10 Nov 2025 19:52:55 GMT
 ENV NODE_ENV=production
-# Wed, 05 Nov 2025 21:55:08 GMT
+# Mon, 10 Nov 2025 19:52:55 GMT
 ENV GHOST_CLI_VERSION=1.28.3
-# Wed, 05 Nov 2025 21:55:29 GMT
+# Mon, 10 Nov 2025 19:53:13 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 05 Nov 2025 21:55:29 GMT
+# Mon, 10 Nov 2025 19:53:13 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 05 Nov 2025 21:55:29 GMT
+# Mon, 10 Nov 2025 19:53:13 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 05 Nov 2025 21:55:29 GMT
-ENV GHOST_VERSION=6.6.1
-# Wed, 05 Nov 2025 21:58:23 GMT
+# Mon, 10 Nov 2025 19:53:13 GMT
+ENV GHOST_VERSION=6.7.0
+# Mon, 10 Nov 2025 19:56:04 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		apk add --no-cache --virtual .build-deps-ghost g++ linux-headers make python3 py3-setuptools; 		gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		apk del --no-network .build-deps-ghost; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8*; 		cd current; 	gosu node node -e 'require("sqlite3"); require("sharp");' # buildkit
-# Wed, 05 Nov 2025 21:58:24 GMT
+# Mon, 10 Nov 2025 19:56:04 GMT
 WORKDIR /var/lib/ghost
-# Wed, 05 Nov 2025 21:58:24 GMT
+# Mon, 10 Nov 2025 19:56:04 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 05 Nov 2025 21:58:24 GMT
+# Mon, 10 Nov 2025 19:56:04 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 05 Nov 2025 21:58:24 GMT
+# Mon, 10 Nov 2025 19:56:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 05 Nov 2025 21:58:24 GMT
+# Mon, 10 Nov 2025 19:56:04 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 05 Nov 2025 21:58:24 GMT
+# Mon, 10 Nov 2025 19:56:04 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -226,51 +226,51 @@ CMD ["node" "current/index.js"]
 		Last Modified: Wed, 29 Oct 2025 15:09:34 GMT  
 		Size: 444.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75cbbcc196dd58d2dc52132ac2cb6db82897638c81b59f278590a60a31acfdf7`  
-		Last Modified: Wed, 05 Nov 2025 21:59:10 GMT  
-		Size: 838.6 KB (838579 bytes)  
+	-	`sha256:b5a1ab01b5ce301b35406294597c0dc05ff7ab9a9383c9cf20891deb46eac0d7`  
+		Last Modified: Mon, 10 Nov 2025 19:56:51 GMT  
+		Size: 838.6 KB (838575 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb3d1b09673d710da6ec1c6b12316294c196c1caabdcf53ccfd90aaee0ecb4e7`  
-		Last Modified: Wed, 05 Nov 2025 21:59:12 GMT  
-		Size: 876.4 KB (876367 bytes)  
+	-	`sha256:448a9a048d22f8a498339b7e00cde6b253eafa801557cfb399463e82c0d4c441`  
+		Last Modified: Mon, 10 Nov 2025 19:56:51 GMT  
+		Size: 876.4 KB (876370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c64b9706f1061fd63ac5f6670152393969f913cadf6573770d8dc438bd593c68`  
-		Last Modified: Wed, 05 Nov 2025 21:59:11 GMT  
-		Size: 11.7 MB (11666119 bytes)  
+	-	`sha256:e3b800558a09d50b1f02928ae3ee848807ea2a0fc42a13d1aa769852ea9a8763`  
+		Last Modified: Mon, 10 Nov 2025 19:56:51 GMT  
+		Size: 11.7 MB (11665659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52d27b335bb378efee6921038be3369491fef8813604937cf9b425e6b901fe09`  
-		Last Modified: Wed, 05 Nov 2025 22:46:16 GMT  
-		Size: 136.9 MB (136912420 bytes)  
+	-	`sha256:9d95217095e0acc3d25fc0d953a70c9799b7759cd7691aa361e32924cfbb6ec4`  
+		Last Modified: Mon, 10 Nov 2025 22:46:21 GMT  
+		Size: 136.9 MB (136888603 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4af7ad22da4da47f6435b71b00ddc7f962eae965bc78bba80a567ad13cab268a`  
-		Last Modified: Wed, 05 Nov 2025 21:59:10 GMT  
-		Size: 540.0 B  
+	-	`sha256:ee648ec462c0896f01d2839444d599afe63dd7cc9db9f07064a33e061964ec81`  
+		Last Modified: Mon, 10 Nov 2025 19:56:52 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:6-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:9f23184e1c86941857ba2c94e112876df7d33f73e5babb36e3a2dffeec02a55a
+$ docker pull ghost@sha256:0e61d1dc46342e1581e2ad95b46976e3bc4843051fc4034168a44623f736718a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.4 MB (3368820 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7740521dd49dce95b030235e4236ac57cacb04629ea4983cc49e0a4dfb14587`
+-	Image ID: `sha256:8cb1c5cc332dee89a3b1cf0ab7e538f5c1ce2294b4abb385fee0951fbe72416c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9cbbc902018dd95be888b62f70b8c54e7ee9ddaff287a438777a856c127eee62`  
-		Last Modified: Wed, 05 Nov 2025 22:45:49 GMT  
+	-	`sha256:2ee76854d81cb8e395a4cd2cf66a692a636805e6c8f81701f3e2654be8bdaec2`  
+		Last Modified: Mon, 10 Nov 2025 22:45:46 GMT  
 		Size: 3.3 MB (3342247 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e0255817d94d196778522f7384cc4a8eab2b80c4da3114c1706ee9bd4f371e4f`  
-		Last Modified: Wed, 05 Nov 2025 22:45:50 GMT  
+	-	`sha256:3a2aa894a73fc8033f2e5437946ce930b00380f4cfa2bab4dd3b454ed957f421`  
+		Last Modified: Mon, 10 Nov 2025 22:45:46 GMT  
 		Size: 26.6 KB (26573 bytes)  
 		MIME: application/vnd.in-toto+json
