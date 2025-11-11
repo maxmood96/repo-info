@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:70d0a696230bffd28e88ef6605c90f7479de81fdbbe0bf358543f640698a6c41`
-- Created: `2025-09-25T07:56:28Z`
-- Virtual Size: ~ 347.18 Mb  
+- Image ID: `sha256:9bb88ba891f1d087a1908a91261b3ef4559ae3a66c545052d32f9d94967d088f`
+- Created: `2025-11-08T18:40:22.331573805Z`
+- Virtual Size: ~ 347.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh","/opt/files/startup.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.8+9`
+  - `JAVA_VERSION=jdk-21.0.9+10`
   - `BONITA_VERSION=10.3.0`
   - `BRANDING_VERSION=2025.1-u0`
   - `BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637`
