@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d5f6190cbd349965218382d7dbcec639e324a7864e008314a9ab5b657c03cdd5`
-- Created: `2025-10-31T17:21:50.702908179Z`
-- Virtual Size: ~ 618.29 Mb  
+- Image ID: `sha256:9ad717de957a8cc585acf3ec0e05b331c9d6ac7043d9424c6d423711656cf274`
+- Created: `2025-11-10T19:12:38.216207114Z`
+- Virtual Size: ~ 618.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -15,13 +15,13 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.8+9`
+  - `JAVA_VERSION=jdk-21.0.9+10`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.111`
-  - `TOMCAT_SHA512=2a955d97c6ed7d01fbf0392f3e2920129bcd541b259e894f441e411bac3bbe65576bcb3a314f06d624c9d70040828d26aa8a2c4f39d225d73f6a3db7523aa3ba`
+  - `TOMCAT_VERSION=9.0.112`
+  - `TOMCAT_SHA512=fc55589f28bf6659928167461c741649b6005b64285dd81df05bb5ee40f4c6de59b8ee3af84ff756ae1513fc47f5f73070e29313b555e27f096f25881c69841d`
   - `SWT_GTK3=0`
   - `CONVERTIGO_VERSION=8.3.10`
   - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.10/convertigo-8.3.10.war`
@@ -214,16 +214,16 @@ $ apt-get source -qq --print-uris bash=5.1-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.debian.tar.xz' bash_5.1-6ubuntu1.1.debian.tar.xz 99944 SHA512:d7fb6110df70232bd3280c1140a812a1903968792f6608481c184bd28760d03323ada75ed3ca4da4eb6c56a84781d6e2f441e0ee83dd9364a9e37fd0fa2211e9
 ```
 
-### `dpkg` source package: `binutils=2.38-4ubuntu2.8`
+### `dpkg` source package: `binutils=2.38-4ubuntu2.10`
 
 Binary Packages:
 
-- `binutils=2.38-4ubuntu2.8`
-- `binutils-common:amd64=2.38-4ubuntu2.8`
-- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.8`
-- `libbinutils:amd64=2.38-4ubuntu2.8`
-- `libctf-nobfd0:amd64=2.38-4ubuntu2.8`
-- `libctf0:amd64=2.38-4ubuntu2.8`
+- `binutils=2.38-4ubuntu2.10`
+- `binutils-common:amd64=2.38-4ubuntu2.10`
+- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.10`
+- `libbinutils:amd64=2.38-4ubuntu2.10`
+- `libctf-nobfd0:amd64=2.38-4ubuntu2.10`
+- `libctf0:amd64=2.38-4ubuntu2.10`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
 
@@ -231,9 +231,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.10
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.10.dsc' binutils_2.38-4ubuntu2.10.dsc 8865 SHA512:090d05bba6e4f0ee3f33137f9cee0404a50d94f4ab5be459af5aecabed2cb9fd85e4adb7598a113abee8a045fdc59dacd04e47471494128c8c21286c56a7aaab
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.10.debian.tar.xz' binutils_2.38-4ubuntu2.10.debian.tar.xz 331552 SHA512:400f1d9da1da1c24b6b778b4cf1195c4042f7a3e33a75f8ff2c53691cc18d79d829a36365204299357196c273478c304ac477b4dd7cf757b24028681fe88816e
+```
 
 ### `dpkg` source package: `brotli=1.0.9-2build6`
 
@@ -1155,11 +1160,11 @@ $ apt-get source -qq --print-uris libsepol=3.3-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.3-1build1.debian.tar.xz' libsepol_3.3-1build1.debian.tar.xz 15068 SHA512:adb210e2dab83baa49cee624dc5ae44e9f2dff6eb4a0a7bee4b958e99871580df159d0ca339feca31d9c4cdd92d0022a841c35d615436278046379eeb766f1f2
 ```
 
-### `dpkg` source package: `libssh=0.9.6-2ubuntu0.22.04.4`
+### `dpkg` source package: `libssh=0.9.6-2ubuntu0.22.04.5`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.9.6-2ubuntu0.22.04.4`
+- `libssh-4:amd64=0.9.6-2ubuntu0.22.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 
@@ -1169,9 +1174,15 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libssh=0.9.6-2ubuntu0.22.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.5.dsc' libssh_0.9.6-2ubuntu0.22.04.5.dsc 2750 SHA512:b18f8255da313d01e8883e8b29a38648bd5e40df4d37af010224aacf9cf8e2a4c1320e3d7912e969319c01efe80d97005880346cbb1975008ffa5f91c7bfc4a1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz' libssh_0.9.6.orig.tar.xz 1053056 SHA512:4040ec4af937e95be2e41313ef6d4db60b46b8d4dea10c09402398127c1d1ca8843392d207088aeee3c7ef631c6ae7b66861327dcebf78ed3af0723777619fd1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz.asc' libssh_0.9.6.orig.tar.xz.asc 833 SHA512:1b6223efe9e4ce864cd8d97d517f9f0d38c1cd502b5874fdc6a58731038c2830a72ce753f02fc062d9d4d5922107ec9a2e62fe24a704bb5dec0dcfecdb569fe6
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.5.debian.tar.xz' libssh_0.9.6-2ubuntu0.22.04.5.debian.tar.xz 67620 SHA512:d3b344a719d30b94916252a8c705dbc6c41bb522412c7cafb55b85d4a2cccb81ccaaf9a65a3cd6113a3093addf18a3b71e4c279069ef7d082992e2a43cc25e4f
+```
 
 ### `dpkg` source package: `libtasn1-6=4.18.0-4ubuntu0.1`
 
