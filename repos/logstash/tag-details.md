@@ -876,7 +876,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 5.1 MB (5146008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:feba5795ac88e10c36af818451049ef447d5b4d4ea79f63a5e4e37720bf925c7`  
-		Last Modified: Wed, 12 Nov 2025 00:29:33 GMT  
+		Last Modified: Wed, 12 Nov 2025 09:37:22 GMT  
 		Size: 428.6 MB (428601843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ada5ed8d4b716c793e1d9fc654bf155dd85f35850647d2710837ef164949c524`  
@@ -1243,10 +1243,10 @@ $ docker pull logstash@sha256:66afc028b57fa6b036098e91cd404a92ebba724ebff4613e3c
 
 -	Layers:
 	-	`sha256:4ae066810895bc322403d8f6c18b67188bc1753246a08c8ec916d34b66c7e408`  
-		Last Modified: Wed, 12 Nov 2025 00:27:46 GMT  
+		Last Modified: Wed, 12 Nov 2025 09:37:19 GMT  
 		Size: 2.1 MB (2100932 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f62b29df92a64c940a23f95d2b4997d33d636bba55cae436318e1d84bdf034a9`  
-		Last Modified: Wed, 12 Nov 2025 00:27:46 GMT  
+		Last Modified: Wed, 12 Nov 2025 09:37:18 GMT  
 		Size: 29.7 KB (29717 bytes)  
 		MIME: application/vnd.in-toto+json
