@@ -1,19 +1,19 @@
-# `mariadb:10.11.14-jammy`
+# `mariadb:10.11.15-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bc52d24721dab941b9ccd83845ad9b53ba779bc7b55894fdb7b78fdd6fe5e31e`
-- Created: `2025-08-08T07:40:04Z`
-- Virtual Size: ~ 326.57 Mb  
+- Image ID: `sha256:56a6bb2882ff7ac1fe3bb278ccad32b617b0e7eadc4d64e27d3213fe71f63629`
+- Created: `2025-11-10T18:50:49.168199094Z`
+- Virtual Size: ~ 330.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mariadbd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOSU_VERSION=1.17`
+  - `GOSU_VERSION=1.19`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:10.11.14+maria~ubu2204`
+  - `MARIADB_VERSION=1:10.11.15+maria~ubu2204`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:jammy`
@@ -25,7 +25,7 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=10.11.14`
+  - `org.opencontainers.image.version=10.11.15`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -461,11 +461,11 @@ $ apt-get source -qq --print-uris findutils=4.8.0-1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.8.0-1ubuntu3.debian.tar.xz' findutils_4.8.0-1ubuntu3.debian.tar.xz 27716 SHA512:f0ce8b61f4e0beabad3178424c804468dc4c57f37794887954df28c36227ce77f00383903274a1995a104f9def44270070b9e033eb46d52f5aaaedb1f5883587
 ```
 
-### `dpkg` source package: `galera-4=26.4.23-ubu2204`
+### `dpkg` source package: `galera-4=26.4.24-ubu2204`
 
 Binary Packages:
 
-- `galera-4=26.4.23-ubu2204`
+- `galera-4=26.4.24-ubu2204`
 
 Licenses: (parsed from: `/usr/share/doc/galera-4/copyright`)
 
@@ -657,6 +657,27 @@ $ apt-get source -qq --print-uris gnutls28=3.7.3-4ubuntu1.7
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz' gnutls28_3.7.3.orig.tar.xz 6119292 SHA512:3ace744affe23e284342658d6d2d2de49dd50065489cbc8be18fc7d38187253e5268ca54027ce5cd517056c249ac039a7481e4548cec04325de37ae85617d077
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz.asc' gnutls28_3.7.3.orig.tar.xz.asc 833 SHA512:cd0d30298377deddf20a835863b71e3f119588061f659906ad2684004758943179531508b1c77c730e930e2131148095e60ad9be365353cce772472d5f5345df
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.7.debian.tar.xz' gnutls28_3.7.3-4ubuntu1.7.debian.tar.xz 100000 SHA512:c42143e4563ed052b24c72cb7878eaab228976ba970deb5c0a0c897e25242c66c208bcf023e4c9efcfe61b5be538454ffe8b19d5bdda5861527063de3ad51350
+```
+
+### `dpkg` source package: `google-perftools=2.9.1-0ubuntu3`
+
+Binary Packages:
+
+- `libtcmalloc-minimal4:amd64=2.9.1-0ubuntu3`
+
+Licenses: (parsed from: `/usr/share/doc/libtcmalloc-minimal4/copyright`)
+
+- `BSD-3-clause`
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris google-perftools=2.9.1-0ubuntu3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/google-perftools/google-perftools_2.9.1-0ubuntu3.dsc' google-perftools_2.9.1-0ubuntu3.dsc 2019 SHA512:f215a41e2d6104d6bbf123c8f9de7a1b89ce7894c885683626ed3e23829d221c6506d16af7f0853f2db60e9114e6f8f648ccac46ace18da8aacf0ab9c578b983
+'http://archive.ubuntu.com/ubuntu/pool/main/g/google-perftools/google-perftools_2.9.1.orig.tar.gz' google-perftools_2.9.1.orig.tar.gz 924910 SHA512:5e07f28da9afc5f1ba3df7f06ad0e146c171d33e1779bbaab21547ed234aaced02e5278c1eb8f92fc45480abd2474d6a2d4c71644fb9378f41088c56cc1bc8ab
+'http://archive.ubuntu.com/ubuntu/pool/main/g/google-perftools/google-perftools_2.9.1-0ubuntu3.debian.tar.xz' google-perftools_2.9.1-0ubuntu3.debian.tar.xz 8256 SHA512:6748ad8faccf33557088f17cb8acf782d3c04a3ca0825371601799c6795b49776d1036a6fcf02ac429eb1758356fbd119e2084cf93063197cb127f9f7a1a4437
 ```
 
 ### `dpkg` source package: `grep=3.7-1build1`
@@ -1554,18 +1575,18 @@ $ apt-get source -qq --print-uris lz4=1.9.3-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.9.3-2build2.debian.tar.xz' lz4_1.9.3-2build2.debian.tar.xz 14088 SHA512:9f61516a672186299a96aee5b7a71d9cb1ad3db2697fa10b802fef14a63587bb3459281f7300726711a116893c10858914f558aece1d224876e287020a23dde6
 ```
 
-### `dpkg` source package: `mariadb=1:10.11.14+maria~ubu2204`
+### `dpkg` source package: `mariadb=1:10.11.15+maria~ubu2204`
 
 Binary Packages:
 
-- `libmariadb3:amd64=1:10.11.14+maria~ubu2204`
-- `mariadb-backup=1:10.11.14+maria~ubu2204`
-- `mariadb-client=1:10.11.14+maria~ubu2204`
-- `mariadb-client-core=1:10.11.14+maria~ubu2204`
-- `mariadb-common=1:10.11.14+maria~ubu2204`
-- `mariadb-server=1:10.11.14+maria~ubu2204`
-- `mariadb-server-core=1:10.11.14+maria~ubu2204`
-- `mysql-common=1:10.11.14+maria~ubu2204`
+- `libmariadb3:amd64=1:10.11.15+maria~ubu2204`
+- `mariadb-backup=1:10.11.15+maria~ubu2204`
+- `mariadb-client=1:10.11.15+maria~ubu2204`
+- `mariadb-client-core=1:10.11.15+maria~ubu2204`
+- `mariadb-common=1:10.11.15+maria~ubu2204`
+- `mariadb-server=1:10.11.15+maria~ubu2204`
+- `mariadb-server-core=1:10.11.15+maria~ubu2204`
+- `mysql-common=1:10.11.15+maria~ubu2204`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1574,9 +1595,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb=1:10.11.14+maria~ubu2204
-'http://archive.mariadb.org/mariadb-10.11.14/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.14%2bmaria%7eubu2204.dsc' mariadb_10.11.14+maria~ubu2204.dsc 4302 SHA256:1c0099f03043f03419c913585c726b593a40b7575090c1774d7b24c9469766d5
-'http://archive.mariadb.org/mariadb-10.11.14/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.14%2bmaria%7eubu2204.tar.xz' mariadb_10.11.14+maria~ubu2204.tar.xz 72022016 SHA256:e9d952f93f240193ecc90ac53d58582758850f506faf34ad759f8d250fe92e87
+$ apt-get source -qq --print-uris mariadb=1:10.11.15+maria~ubu2204
+'http://archive.mariadb.org/mariadb-10.11.15/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.15%2bmaria%7eubu2204.dsc' mariadb_10.11.15+maria~ubu2204.dsc 4305 SHA256:f83a4c2b96270d2eba1a47c581a5ae259909a9489ac7d1288757f78b6490ec5c
+'http://archive.mariadb.org/mariadb-10.11.15/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.15%2bmaria%7eubu2204.tar.xz' mariadb_10.11.15+maria~ubu2204.tar.xz 180600564 SHA256:5e3aa3c271f3243333567315073947e4baa2e826b63bc03f779d27b7355dea0c
 ```
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-3`

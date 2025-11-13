@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dfbea441e6fcfa4a0396adb35cb63b66ec14738598d117fe2697f32c9cd64a05`
-- Created: `2025-08-08T08:15:27Z`
-- Virtual Size: ~ 330.12 Mb  
+- Image ID: `sha256:7418b34b3691c3321a5616956be8be2a01a580d303817cc8339c5051da69d36c`
+- Created: `2025-11-10T18:50:08.248946296Z`
+- Virtual Size: ~ 329.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mariadbd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOSU_VERSION=1.17`
+  - `GOSU_VERSION=1.19`
   - `LANG=C.UTF-8`
   - `MARIADB_VERSION=1:12.0.2+maria~ubu2404`
 - Labels:
@@ -746,6 +746,27 @@ $ apt-get source -qq --print-uris gnutls28=3.8.3-1.1ubuntu3.4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz' gnutls28_3.8.3.orig.tar.xz 6463720 SHA512:74eddba01ce4c2ffdca781c85db3bb52c85f1db3c09813ee2b8ceea0608f92ca3912fd9266f55deb36a8ba4d01802895ca5d5d219e7d9caec45e1a8534e45a84
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz.asc' gnutls28_3.8.3.orig.tar.xz.asc 854 SHA512:8a13a834b57172b9504313eeb7d733d2c3d72971dd8adaa837bbd9d73b12fe2a67f7d07fbbaf643a34ff95acaa82458a88ce4118152ede8ece9be5a089b693c8
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.4.debian.tar.xz' gnutls28_3.8.3-1.1ubuntu3.4.debian.tar.xz 100104 SHA512:aab92b406ef2b833d663f7662fd2ac61cada09251710b44d689c1ff73bbc5b451dce04675893a752392564048b78b19118ce23532d9ce7e726a678d92e7e3d1d
+```
+
+### `dpkg` source package: `google-perftools=2.15-3build1`
+
+Binary Packages:
+
+- `libtcmalloc-minimal4t64:amd64=2.15-3build1`
+
+Licenses: (parsed from: `/usr/share/doc/libtcmalloc-minimal4t64/copyright`)
+
+- `BSD-3-clause`
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris google-perftools=2.15-3build1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/google-perftools/google-perftools_2.15-3build1.dsc' google-perftools_2.15-3build1.dsc 2384 SHA512:e75bfc0ff9a1def07e5efd81a7c09a6b77376c9990782ad17d7875a9783fbbb82e746da132181546f634b7c5b137530255846fdaf87ab6936732373082d259fd
+'http://archive.ubuntu.com/ubuntu/pool/main/g/google-perftools/google-perftools_2.15.orig.tar.gz' google-perftools_2.15.orig.tar.gz 888271 SHA512:04551bdfac50812dd8305e0fe6f6ae5b8603f18a5f9cde56657daa634982bfb5eb5303721ea6a8e02f4177aa012535216f1c99b9eda4ce92f046982df41fbcd1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/google-perftools/google-perftools_2.15-3build1.debian.tar.xz' google-perftools_2.15-3build1.debian.tar.xz 8916 SHA512:ece215262624bf3abad34cbc670cb95d16de5b7624e84f42594357ebe37aac98d242fafdd0b230b7ac9eeca9da6307e4b21c9cca0765ea026e1a5bdbcaa2e57e
 ```
 
 ### `dpkg` source package: `grep=3.11-4build1`
