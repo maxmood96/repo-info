@@ -1,17 +1,17 @@
-# `docker:28.5.2-cli`
+# `docker:29.0.0-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5e4cb425bfc36467fc053c4c826eb4c02bab2f706f3b7e6f7584315e67271c6a`
-- Created: `2025-11-05T17:10:22.966131413Z`
-- Virtual Size: ~ 213.61 Mb  
+- Image ID: `sha256:b460f9e12dba9ee2f56aee0f01e5ec9fec819cd562fa6830d4cbe499cb90cfa0`
+- Created: `2025-11-11T01:08:57.447022684Z`
+- Virtual Size: ~ 211.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=28.5.2`
+  - `DOCKER_VERSION=29.0.0`
   - `DOCKER_BUILDX_VERSION=0.29.1`
   - `DOCKER_COMPOSE_VERSION=2.40.3`
   - `DOCKER_TLS_CERTDIR=/certs`
