@@ -1,10 +1,10 @@
-# `couchdb:3.5.0-nouveau`
+# `couchdb:3.5.1-nouveau`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9f64a3eafb3b15d9df4b97709f73460df419e811a21c8ef8431619fcf11bc1a8`
-- Created: `2025-11-04T00:29:04.696135156Z`
-- Virtual Size: ~ 368.00 Mb  
+- Image ID: `sha256:3109071ca4993e06ad0d4d6b1e786c48365329326ee7287ede57b68d35188d51`
+- Created: `2025-11-11T20:13:04.129200556Z`
+- Virtual Size: ~ 368.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/usr/bin/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","/opt/nouveau/lib/nouveau-1.0-SNAPSHOT.jar","server","/opt/nouveau/etc/nouveau.yaml"]`
@@ -512,11 +512,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/9.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/9.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `couchdb=3.5.0~bookworm`
+### `dpkg` source package: `couchdb=3.5.1~bookworm`
 
 Binary Packages:
 
-- `couchdb-nouveau=3.5.0~bookworm`
+- `couchdb-nouveau=3.5.1~bookworm`
 
 Licenses: (parsed from: `/usr/share/doc/couchdb-nouveau/copyright`)
 

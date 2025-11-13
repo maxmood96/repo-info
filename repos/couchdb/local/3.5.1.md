@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d79cbaa90bb2c5a628b4b3f44026d0eb3970f6cb2b0ec893df86cdb9c68ed7b1`
-- Created: `2025-11-04T00:29:02.569927782Z`
-- Virtual Size: ~ 272.34 Mb  
+- Image ID: `sha256:14e493d383d26977710c0749ed769f8af1b2477b0298047b08eb44d409a1ba32`
+- Created: `2025-11-11T20:12:16.643207448Z`
+- Virtual Size: ~ 275.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D`
-  - `COUCHDB_VERSION=3.5.0`
+  - `COUCHDB_VERSION=3.5.1`
 - Labels:
   - `maintainer=CouchDB Developers dev@couchdb.apache.org`
 
@@ -377,11 +377,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/9.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/9.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `couchdb=3.5.0~bookworm`
+### `dpkg` source package: `couchdb=3.5.1~bookworm`
 
 Binary Packages:
 
-- `couchdb=3.5.0~bookworm`
+- `couchdb=3.5.1~bookworm`
 
 Licenses: (parsed from: `/usr/share/doc/couchdb/copyright`)
 
