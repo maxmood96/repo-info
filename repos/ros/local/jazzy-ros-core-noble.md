@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:27aa14f9b6c9b89befea3bcdc02299c8458b975d6c04dcfd0d4a3f59ab815f0f`
-- Created: `2025-06-03T04:32:14Z`
-- Virtual Size: ~ 488.24 Mb  
+- Image ID: `sha256:2944457b1a8ed0d61ede200277c61c7d8cee537cf0efebb74d5af34807313e1c`
+- Created: `2025-11-13T23:36:14.864580916Z`
+- Virtual Size: ~ 488.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -1592,11 +1592,11 @@ $ apt-get source -qq --print-uris libsepol=3.5-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.5-2build1.debian.tar.xz' libsepol_3.5-2build1.debian.tar.xz 27716 SHA512:9b2b126368c5e4f80d80940f7611103745b1da92bec6319f43f64cc3f6a5e13bab25758bad645e973773a4aab74fa3600694061a8368ca2176252320c0d9ebf6
 ```
 
-### `dpkg` source package: `libssh=0.10.6-2ubuntu0.1`
+### `dpkg` source package: `libssh=0.10.6-2ubuntu0.2`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.10.6-2ubuntu0.1`
+- `libssh-4:amd64=0.10.6-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 
@@ -1606,9 +1606,15 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libssh=0.10.6-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.2.dsc' libssh_0.10.6-2ubuntu0.2.dsc 2723 SHA512:0ce4ad1a7c238fa3dca8523f49833309c47aa55535c7d438d0c7d6a985e5346d2071d791c1847cbeea76502ca73276e1235dda81f075fc3e0ce90240656065f0
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz' libssh_0.10.6.orig.tar.xz 561036 SHA512:40c62d63c44e882999b71552c237d73fc7364313bd00b15a211a34aeff1b73693da441d2c8d4e40108d00fb7480ec7c5b6d472f9c0784b2359a179632ab0d6c1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz.asc' libssh_0.10.6.orig.tar.xz.asc 833 SHA512:214d7920bebc80a8e6838c64ed06e070709a96fabfb4fff657b55f9588bc0e1612887fe887d23de73ad3540f3bb85288e62eb6a11ccd4bc80afbd44d34ba70d4
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.2.debian.tar.xz' libssh_0.10.6-2ubuntu0.2.debian.tar.xz 47820 SHA512:92e9d5c401b22570cabac5c80c984b809d8fbcc537b464b7e5ec69eae254046cb56bb1d5029cc7ac11c0e8010f5501bf8495261f1022770eded064e4f6bb637c
+```
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3ubuntu0.24.04.1`
 
@@ -1742,21 +1748,26 @@ $ apt-get source -qq --print-uris libxcrypt=1:4.4.36-4build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.36-4build1.debian.tar.xz' libxcrypt_4.4.36-4build1.debian.tar.xz 8356 SHA512:d181e5637d40e322cf03d80dff03acb9982c0a07a73229d660d8b2fcd02f31783347c0b0208d2ebb077bdf44e87330b04a8cd10a4bc272dbb0feca7f1adfe013
 ```
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.5`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.6`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.5`
-- `libxml2-utils=2.9.14+dfsg-1.3ubuntu3.5`
+- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.6`
+- `libxml2-utils=2.9.14+dfsg-1.3ubuntu3.6`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libxml2-utils/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.6.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.6.dsc 3038 SHA512:7335b471c95fe73974736ded5dbd85cb1fcf24e0168ab939e7ff9df9735b02f5c550a1d96021023e14db18bf6defa2c72888a35641136cca75f23a45863f03bc
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.6.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.6.debian.tar.xz 48472 SHA512:8e9d2a8032b59da05cbe5be6850867e5b3ca18c4c4d8679b4a80afd36306ac4099abddecc208f90cc9067b746d9c8eb9dc7f732d8cea4187423803f7f43f34d0
+```
 
 ### `dpkg` source package: `libxslt=1.1.39-0exp1ubuntu0.24.04.2`
 
@@ -1820,19 +1831,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-85.85`
+### `dpkg` source package: `linux=6.8.0-87.88`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-85.85`
+- `linux-libc-dev:amd64=6.8.0-87.88`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-87.88
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-87.88.dsc' linux_6.8.0-87.88.dsc 9362 SHA512:be05f1ea0f41b7f63232dedb4952da3f4f071c27c2acc9411fa621e7e1e68eee999e5109082c03aad1a2843f81d39cf1242c96b618a018fd1e8f606219026fd1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-87.88.diff.gz' linux_6.8.0-87.88.diff.gz 6068755 SHA512:51ca081be56c322a5f6de91b47cb7dd7452e62eb3453d8ae1afc57adf2ee718fe43f333e4a683ec53615db7ab3eb8c1699fdab8ddfdef14731a8cd909f9bb1f5
+```
 
 ### `dpkg` source package: `lsb-release-minimal=12.0-2`
 
@@ -2912,15 +2928,15 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-defaults=3.12.3-0ubuntu2`
+### `dpkg` source package: `python3-defaults=3.12.3-0ubuntu2.1`
 
 Binary Packages:
 
-- `libpython3-dev:amd64=3.12.3-0ubuntu2`
-- `libpython3-stdlib:amd64=3.12.3-0ubuntu2`
-- `python3=3.12.3-0ubuntu2`
-- `python3-dev=3.12.3-0ubuntu2`
-- `python3-minimal=3.12.3-0ubuntu2`
+- `libpython3-dev:amd64=3.12.3-0ubuntu2.1`
+- `libpython3-stdlib:amd64=3.12.3-0ubuntu2.1`
+- `python3=3.12.3-0ubuntu2.1`
+- `python3-dev=3.12.3-0ubuntu2.1`
+- `python3-minimal=3.12.3-0ubuntu2.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2929,9 +2945,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.dsc' python3-defaults_3.12.3-0ubuntu2.dsc 3108 SHA512:397e3ab1cc49de9897a39b44f692f64bcb0288fb5bb0584fb73845ee888d82756a8fa7b40150734fe0ab6d3655174ae57b64176d949bc9bc9bc44f1beb9b5dda
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.tar.gz' python3-defaults_3.12.3-0ubuntu2.tar.gz 147715 SHA512:3c0b5b4c3fba5209c36cb7b884894c735aa3f419c2f0ca4c412f8bc44a281e2f356438517010ec5753c18c06fcd60e1e526c5cc4e4a8d103dd8bfb8b6468377e
+$ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.1.dsc' python3-defaults_3.12.3-0ubuntu2.1.dsc 3116 SHA512:34bd93d70a55ea6e57e2c8adb7fab3a23507161c2ca61b2c089208cf3706455ef7e072cc04b68af9c1ecb04ed9636e65524501d9e2eb837319f220f275582c4b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.1.tar.gz' python3-defaults_3.12.3-0ubuntu2.1.tar.gz 147765 SHA512:9a729a8df22e37d473d39b8c9c95b8c5a7ad8dfd244b3c87576d389f48543edeeaa0bd8b0557de3224d0dbd0f06e02b573cb18adf685a54c02bb485a21ec36e5
 ```
 
 ### `dpkg` source package: `python3-rosdistro-modules=1.0.1-1`
@@ -3082,11 +3098,11 @@ Licenses: (parsed from: `/usr/share/doc/ros2-apt-source/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-action-msgs=2.0.3-1noble.20250822.215441`
+### `dpkg` source package: `ros-jazzy-action-msgs=2.0.3-1noble.20251007.204356`
 
 Binary Packages:
 
-- `ros-jazzy-action-msgs=2.0.3-1noble.20250822.215441`
+- `ros-jazzy-action-msgs=2.0.3-1noble.20251007.204356`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-action-msgs/copyright`)
 
@@ -3096,11 +3112,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-action-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-actionlib-msgs=5.3.6-1noble.20250823.030750`
+### `dpkg` source package: `ros-jazzy-actionlib-msgs=5.3.6-1noble.20251007.220001`
 
 Binary Packages:
 
-- `ros-jazzy-actionlib-msgs=5.3.6-1noble.20250823.030750`
+- `ros-jazzy-actionlib-msgs=5.3.6-1noble.20251007.220001`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-actionlib-msgs/copyright`)
 
@@ -3714,11 +3730,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ament-xmllint/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-builtin-interfaces=2.0.3-1noble.20250822.214935`
+### `dpkg` source package: `ros-jazzy-builtin-interfaces=2.0.3-1noble.20251007.174212`
 
 Binary Packages:
 
-- `ros-jazzy-builtin-interfaces=2.0.3-1noble.20250822.214935`
+- `ros-jazzy-builtin-interfaces=2.0.3-1noble.20251007.174212`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-builtin-interfaces/copyright`)
 
@@ -3742,11 +3758,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-class-loader/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-common-interfaces=5.3.6-1noble.20250824.063028`
+### `dpkg` source package: `ros-jazzy-common-interfaces=5.3.6-1noble.20251007.222809`
 
 Binary Packages:
 
-- `ros-jazzy-common-interfaces=5.3.6-1noble.20250824.063028`
+- `ros-jazzy-common-interfaces=5.3.6-1noble.20251007.222809`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-common-interfaces/copyright`)
 
@@ -3756,11 +3772,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-common-interfaces/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-composition-interfaces=2.0.3-1noble.20250823.062621`
+### `dpkg` source package: `ros-jazzy-composition-interfaces=2.0.3-1noble.20251007.205937`
 
 Binary Packages:
 
-- `ros-jazzy-composition-interfaces=2.0.3-1noble.20250823.062621`
+- `ros-jazzy-composition-interfaces=2.0.3-1noble.20251007.205937`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-composition-interfaces/copyright`)
 
@@ -3785,11 +3801,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-console-bridge-vendor/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-diagnostic-msgs=5.3.6-1noble.20250823.064705`
+### `dpkg` source package: `ros-jazzy-diagnostic-msgs=5.3.6-1noble.20251007.222514`
 
 Binary Packages:
 
-- `ros-jazzy-diagnostic-msgs=5.3.6-1noble.20250823.064705`
+- `ros-jazzy-diagnostic-msgs=5.3.6-1noble.20251007.222514`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-diagnostic-msgs/copyright`)
 
@@ -3870,11 +3886,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-foonathan-memory-vendor/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-geometry-msgs=5.3.6-1noble.20250823.063939`
+### `dpkg` source package: `ros-jazzy-geometry-msgs=5.3.6-1noble.20251007.214105`
 
 Binary Packages:
 
-- `ros-jazzy-geometry-msgs=5.3.6-1noble.20250823.063939`
+- `ros-jazzy-geometry-msgs=5.3.6-1noble.20251007.214105`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-geometry-msgs/copyright`)
 
@@ -3912,11 +3928,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-gtest-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-launch-ros=0.26.9-1noble.20250915.203937`
+### `dpkg` source package: `ros-jazzy-launch-ros=0.26.9-1noble.20251007.225453`
 
 Binary Packages:
 
-- `ros-jazzy-launch-ros=0.26.9-1noble.20250915.203937`
+- `ros-jazzy-launch-ros=0.26.9-1noble.20251007.225453`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch-ros/copyright`)
 
@@ -3926,11 +3942,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch-ros/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-launch-testing-ament-cmake=3.4.6-1noble.20250806.154808`
+### `dpkg` source package: `ros-jazzy-launch-testing-ament-cmake=3.4.7-1noble.20251007.084240`
 
 Binary Packages:
 
-- `ros-jazzy-launch-testing-ament-cmake=3.4.6-1noble.20250806.154808`
+- `ros-jazzy-launch-testing-ament-cmake=3.4.7-1noble.20251007.084240`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch-testing-ament-cmake/copyright`)
 
@@ -3941,11 +3957,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch-testing-ament-cmake/cop
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-launch-testing-ros=0.26.9-1noble.20250915.204140`
+### `dpkg` source package: `ros-jazzy-launch-testing-ros=0.26.9-1noble.20251007.225748`
 
 Binary Packages:
 
-- `ros-jazzy-launch-testing-ros=0.26.9-1noble.20250915.204140`
+- `ros-jazzy-launch-testing-ros=0.26.9-1noble.20251007.225748`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch-testing-ros/copyright`)
 
@@ -3955,11 +3971,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch-testing-ros/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-launch-testing=3.4.6-1noble.20250806.154559`
+### `dpkg` source package: `ros-jazzy-launch-testing=3.4.7-1noble.20251007.084111`
 
 Binary Packages:
 
-- `ros-jazzy-launch-testing=3.4.6-1noble.20250806.154559`
+- `ros-jazzy-launch-testing=3.4.7-1noble.20251007.084111`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch-testing/copyright`)
 
@@ -3969,11 +3985,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch-testing/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-launch-xml=3.4.6-1noble.20250806.154410`
+### `dpkg` source package: `ros-jazzy-launch-xml=3.4.7-1noble.20251007.083418`
 
 Binary Packages:
 
-- `ros-jazzy-launch-xml=3.4.6-1noble.20250806.154410`
+- `ros-jazzy-launch-xml=3.4.7-1noble.20251007.083418`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch-xml/copyright`)
 
@@ -3983,11 +3999,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch-xml/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-launch-yaml=3.4.6-1noble.20250806.154420`
+### `dpkg` source package: `ros-jazzy-launch-yaml=3.4.7-1noble.20251007.083600`
 
 Binary Packages:
 
-- `ros-jazzy-launch-yaml=3.4.6-1noble.20250806.154420`
+- `ros-jazzy-launch-yaml=3.4.7-1noble.20251007.083600`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch-yaml/copyright`)
 
@@ -3997,11 +4013,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch-yaml/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-launch=3.4.6-1noble.20250806.154304`
+### `dpkg` source package: `ros-jazzy-launch=3.4.7-1noble.20251007.083225`
 
 Binary Packages:
 
-- `ros-jazzy-launch=3.4.6-1noble.20250806.154304`
+- `ros-jazzy-launch=3.4.7-1noble.20251007.083225`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch/copyright`)
 
@@ -4011,11 +4027,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-launch/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-libstatistics-collector=1.7.4-1noble.20250824.065212`
+### `dpkg` source package: `ros-jazzy-libstatistics-collector=1.7.4-1noble.20251007.224414`
 
 Binary Packages:
 
-- `ros-jazzy-libstatistics-collector=1.7.4-1noble.20250824.065212`
+- `ros-jazzy-libstatistics-collector=1.7.4-1noble.20251007.224414`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-libstatistics-collector/copyright`)
 
@@ -4040,11 +4056,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-libyaml-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-lifecycle-msgs=2.0.3-1noble.20250823.064011`
+### `dpkg` source package: `ros-jazzy-lifecycle-msgs=2.0.3-1noble.20251007.205940`
 
 Binary Packages:
 
-- `ros-jazzy-lifecycle-msgs=2.0.3-1noble.20250823.064011`
+- `ros-jazzy-lifecycle-msgs=2.0.3-1noble.20251007.205940`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-lifecycle-msgs/copyright`)
 
@@ -4054,11 +4070,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-lifecycle-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-nav-msgs=5.3.6-1noble.20250823.064738`
+### `dpkg` source package: `ros-jazzy-nav-msgs=5.3.6-1noble.20251007.214617`
 
 Binary Packages:
 
-- `ros-jazzy-nav-msgs=5.3.6-1noble.20250823.064738`
+- `ros-jazzy-nav-msgs=5.3.6-1noble.20251007.214617`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-nav-msgs/copyright`)
 
@@ -4110,11 +4126,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-python-cmake-module/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rcl-action=9.2.7-1noble.20250824.065210`
+### `dpkg` source package: `ros-jazzy-rcl-action=9.2.7-1noble.20251007.224415`
 
 Binary Packages:
 
-- `ros-jazzy-rcl-action=9.2.7-1noble.20250824.065210`
+- `ros-jazzy-rcl-action=9.2.7-1noble.20251007.224415`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rcl-action/copyright`)
 
@@ -4124,11 +4140,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rcl-action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rcl-interfaces=2.0.3-1noble.20250822.220011`
+### `dpkg` source package: `ros-jazzy-rcl-interfaces=2.0.3-1noble.20251007.205439`
 
 Binary Packages:
 
-- `ros-jazzy-rcl-interfaces=2.0.3-1noble.20250822.220011`
+- `ros-jazzy-rcl-interfaces=2.0.3-1noble.20251007.205439`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rcl-interfaces/copyright`)
 
@@ -4138,11 +4154,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rcl-interfaces/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rcl-lifecycle=9.2.7-1noble.20250824.065215`
+### `dpkg` source package: `ros-jazzy-rcl-lifecycle=9.2.7-1noble.20251007.224412`
 
 Binary Packages:
 
-- `ros-jazzy-rcl-lifecycle=9.2.7-1noble.20250824.065215`
+- `ros-jazzy-rcl-lifecycle=9.2.7-1noble.20251007.224412`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rcl-lifecycle/copyright`)
 
@@ -4194,11 +4210,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rcl-yaml-param-parser/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rcl=9.2.7-1noble.20250824.064656`
+### `dpkg` source package: `ros-jazzy-rcl=9.2.7-1noble.20251007.224150`
 
 Binary Packages:
 
-- `ros-jazzy-rcl=9.2.7-1noble.20250824.064656`
+- `ros-jazzy-rcl=9.2.7-1noble.20251007.224150`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rcl/copyright`)
 
@@ -4208,11 +4224,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rcl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rclcpp-action=28.1.12-1noble.20250912.065142`
+### `dpkg` source package: `ros-jazzy-rclcpp-action=28.1.12-1noble.20251007.230250`
 
 Binary Packages:
 
-- `ros-jazzy-rclcpp-action=28.1.12-1noble.20250912.065142`
+- `ros-jazzy-rclcpp-action=28.1.12-1noble.20251007.230250`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rclcpp-action/copyright`)
 
@@ -4222,11 +4238,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rclcpp-action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rclcpp-components=28.1.12-1noble.20250912.065358`
+### `dpkg` source package: `ros-jazzy-rclcpp-components=28.1.12-1noble.20251007.230805`
 
 Binary Packages:
 
-- `ros-jazzy-rclcpp-components=28.1.12-1noble.20250912.065358`
+- `ros-jazzy-rclcpp-components=28.1.12-1noble.20251007.230805`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rclcpp-components/copyright`)
 
@@ -4236,11 +4252,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rclcpp-components/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rclcpp-lifecycle=28.1.12-1noble.20250912.072051`
+### `dpkg` source package: `ros-jazzy-rclcpp-lifecycle=28.1.12-1noble.20251007.230420`
 
 Binary Packages:
 
-- `ros-jazzy-rclcpp-lifecycle=28.1.12-1noble.20250912.072051`
+- `ros-jazzy-rclcpp-lifecycle=28.1.12-1noble.20251007.230420`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rclcpp-lifecycle/copyright`)
 
@@ -4250,11 +4266,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rclcpp-lifecycle/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rclcpp=28.1.12-1noble.20250912.054053`
+### `dpkg` source package: `ros-jazzy-rclcpp=28.1.12-1noble.20251007.225545`
 
 Binary Packages:
 
-- `ros-jazzy-rclcpp=28.1.12-1noble.20250912.054053`
+- `ros-jazzy-rclcpp=28.1.12-1noble.20251007.225545`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rclcpp/copyright`)
 
@@ -4264,11 +4280,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rclcpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rclpy=7.1.5-1noble.20250824.072622`
+### `dpkg` source package: `ros-jazzy-rclpy=7.1.5-1noble.20251007.225057`
 
 Binary Packages:
 
-- `ros-jazzy-rclpy=7.1.5-1noble.20250824.072622`
+- `ros-jazzy-rclpy=7.1.5-1noble.20251007.225057`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rclpy/copyright`)
 
@@ -4307,11 +4323,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rcutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rmw-dds-common=3.1.0-2noble.20250824.063117`
+### `dpkg` source package: `ros-jazzy-rmw-dds-common=3.1.0-2noble.20251007.214255`
 
 Binary Packages:
 
-- `ros-jazzy-rmw-dds-common=3.1.0-2noble.20250824.063117`
+- `ros-jazzy-rmw-dds-common=3.1.0-2noble.20251007.214255`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rmw-dds-common/copyright`)
 
@@ -4321,11 +4337,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rmw-dds-common/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rmw-fastrtps-cpp=8.4.3-1noble.20250824.064015`
+### `dpkg` source package: `ros-jazzy-rmw-fastrtps-cpp=8.4.3-1noble.20251007.222258`
 
 Binary Packages:
 
-- `ros-jazzy-rmw-fastrtps-cpp=8.4.3-1noble.20250824.064015`
+- `ros-jazzy-rmw-fastrtps-cpp=8.4.3-1noble.20251007.222258`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rmw-fastrtps-cpp/copyright`)
 
@@ -4335,11 +4351,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rmw-fastrtps-cpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rmw-fastrtps-shared-cpp=8.4.3-1noble.20250824.063627`
+### `dpkg` source package: `ros-jazzy-rmw-fastrtps-shared-cpp=8.4.3-1noble.20251007.221648`
 
 Binary Packages:
 
-- `ros-jazzy-rmw-fastrtps-shared-cpp=8.4.3-1noble.20250824.063627`
+- `ros-jazzy-rmw-fastrtps-shared-cpp=8.4.3-1noble.20251007.221648`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rmw-fastrtps-shared-cpp/copyright`)
 
@@ -4363,11 +4379,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rmw-implementation-cmake/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rmw-implementation=2.15.6-1noble.20250824.064425`
+### `dpkg` source package: `ros-jazzy-rmw-implementation=2.15.6-1noble.20251007.223738`
 
 Binary Packages:
 
-- `ros-jazzy-rmw-implementation=2.15.6-1noble.20250824.064425`
+- `ros-jazzy-rmw-implementation=2.15.6-1noble.20251007.223738`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rmw-implementation/copyright`)
 
@@ -4391,11 +4407,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rmw/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros-core=0.11.0-1noble.20250915.210307`
+### `dpkg` source package: `ros-jazzy-ros-core=0.11.0-1noble.20251008.063932`
 
 Binary Packages:
 
-- `ros-jazzy-ros-core=0.11.0-1noble.20250915.210307`
+- `ros-jazzy-ros-core=0.11.0-1noble.20251008.063932`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros-core/copyright`)
 
@@ -4433,11 +4449,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros-workspace/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2action=0.32.6-1noble.20250912.054255`
+### `dpkg` source package: `ros-jazzy-ros2action=0.32.6-1noble.20251007.230044`
 
 Binary Packages:
 
-- `ros-jazzy-ros2action=0.32.6-1noble.20250912.054255`
+- `ros-jazzy-ros2action=0.32.6-1noble.20251007.230044`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2action/copyright`)
 
@@ -4447,11 +4463,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2cli-common-extensions=0.3.0-3noble.20250915.210152`
+### `dpkg` source package: `ros-jazzy-ros2cli-common-extensions=0.3.0-3noble.20251008.063743`
 
 Binary Packages:
 
-- `ros-jazzy-ros2cli-common-extensions=0.3.0-3noble.20250915.210152`
+- `ros-jazzy-ros2cli-common-extensions=0.3.0-3noble.20251008.063743`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2cli-common-extensions/copyright`)
 
@@ -4461,11 +4477,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2cli-common-extensions/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2cli=0.32.6-1noble.20250912.054110`
+### `dpkg` source package: `ros-jazzy-ros2cli=0.32.6-1noble.20251007.225712`
 
 Binary Packages:
 
-- `ros-jazzy-ros2cli=0.32.6-1noble.20250912.054110`
+- `ros-jazzy-ros2cli=0.32.6-1noble.20251007.225712`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2cli/copyright`)
 
@@ -4475,11 +4491,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2cli/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2component=0.32.6-1noble.20250912.065629`
+### `dpkg` source package: `ros-jazzy-ros2component=0.32.6-1noble.20251007.231249`
 
 Binary Packages:
 
-- `ros-jazzy-ros2component=0.32.6-1noble.20250912.065629`
+- `ros-jazzy-ros2component=0.32.6-1noble.20251007.231249`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2component/copyright`)
 
@@ -4489,11 +4505,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2component/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2doctor=0.32.6-1noble.20250912.054256`
+### `dpkg` source package: `ros-jazzy-ros2doctor=0.32.6-1noble.20251007.225910`
 
 Binary Packages:
 
-- `ros-jazzy-ros2doctor=0.32.6-1noble.20250912.054256`
+- `ros-jazzy-ros2doctor=0.32.6-1noble.20251007.225910`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2doctor/copyright`)
 
@@ -4503,11 +4519,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2doctor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2interface=0.32.6-1noble.20250912.054255`
+### `dpkg` source package: `ros-jazzy-ros2interface=0.32.6-1noble.20251007.230051`
 
 Binary Packages:
 
-- `ros-jazzy-ros2interface=0.32.6-1noble.20250912.054255`
+- `ros-jazzy-ros2interface=0.32.6-1noble.20251007.230051`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2interface/copyright`)
 
@@ -4517,11 +4533,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2interface/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2launch=0.26.9-1noble.20250915.204140`
+### `dpkg` source package: `ros-jazzy-ros2launch=0.26.9-1noble.20251007.230122`
 
 Binary Packages:
 
-- `ros-jazzy-ros2launch=0.26.9-1noble.20250915.204140`
+- `ros-jazzy-ros2launch=0.26.9-1noble.20251007.230122`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2launch/copyright`)
 
@@ -4531,11 +4547,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2launch/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2lifecycle=0.32.6-1noble.20250912.054430`
+### `dpkg` source package: `ros-jazzy-ros2lifecycle=0.32.6-1noble.20251007.230103`
 
 Binary Packages:
 
-- `ros-jazzy-ros2lifecycle=0.32.6-1noble.20250912.054430`
+- `ros-jazzy-ros2lifecycle=0.32.6-1noble.20251007.230103`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2lifecycle/copyright`)
 
@@ -4545,11 +4561,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2lifecycle/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2multicast=0.32.6-1noble.20250912.054306`
+### `dpkg` source package: `ros-jazzy-ros2multicast=0.32.6-1noble.20251008.063339`
 
 Binary Packages:
 
-- `ros-jazzy-ros2multicast=0.32.6-1noble.20250912.054306`
+- `ros-jazzy-ros2multicast=0.32.6-1noble.20251008.063339`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2multicast/copyright`)
 
@@ -4559,11 +4575,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2multicast/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2node=0.32.6-1noble.20250912.054307`
+### `dpkg` source package: `ros-jazzy-ros2node=0.32.6-1noble.20251007.225927`
 
 Binary Packages:
 
-- `ros-jazzy-ros2node=0.32.6-1noble.20250912.054307`
+- `ros-jazzy-ros2node=0.32.6-1noble.20251007.225927`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2node/copyright`)
 
@@ -4573,11 +4589,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2node/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2param=0.32.6-1noble.20250912.054501`
+### `dpkg` source package: `ros-jazzy-ros2param=0.32.6-1noble.20251007.230059`
 
 Binary Packages:
 
-- `ros-jazzy-ros2param=0.32.6-1noble.20250912.054501`
+- `ros-jazzy-ros2param=0.32.6-1noble.20251007.230059`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2param/copyright`)
 
@@ -4587,11 +4603,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2param/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2pkg=0.32.6-1noble.20250912.054311`
+### `dpkg` source package: `ros-jazzy-ros2pkg=0.32.6-1noble.20251007.230038`
 
 Binary Packages:
 
-- `ros-jazzy-ros2pkg=0.32.6-1noble.20250912.054311`
+- `ros-jazzy-ros2pkg=0.32.6-1noble.20251007.230038`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2pkg/copyright`)
 
@@ -4601,11 +4617,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2pkg/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2run=0.32.6-1noble.20250912.054342`
+### `dpkg` source package: `ros-jazzy-ros2run=0.32.6-1noble.20251007.230124`
 
 Binary Packages:
 
-- `ros-jazzy-ros2run=0.32.6-1noble.20250912.054342`
+- `ros-jazzy-ros2run=0.32.6-1noble.20251007.230124`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2run/copyright`)
 
@@ -4615,11 +4631,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2run/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2service=0.32.6-1noble.20250912.054404`
+### `dpkg` source package: `ros-jazzy-ros2service=0.32.6-1noble.20251007.230025`
 
 Binary Packages:
 
-- `ros-jazzy-ros2service=0.32.6-1noble.20250912.054404`
+- `ros-jazzy-ros2service=0.32.6-1noble.20251007.230025`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2service/copyright`)
 
@@ -4629,11 +4645,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2service/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-ros2topic=0.32.6-1noble.20250912.054311`
+### `dpkg` source package: `ros-jazzy-ros2topic=0.32.6-1noble.20251007.225925`
 
 Binary Packages:
 
-- `ros-jazzy-ros2topic=0.32.6-1noble.20250912.054311`
+- `ros-jazzy-ros2topic=0.32.6-1noble.20251007.225925`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2topic/copyright`)
 
@@ -4644,11 +4660,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-ros2topic/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rosgraph-msgs=2.0.3-1noble.20250822.220226`
+### `dpkg` source package: `ros-jazzy-rosgraph-msgs=2.0.3-1noble.20251007.205623`
 
 Binary Packages:
 
-- `ros-jazzy-rosgraph-msgs=2.0.3-1noble.20250822.220226`
+- `ros-jazzy-rosgraph-msgs=2.0.3-1noble.20251007.205623`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rosgraph-msgs/copyright`)
 
@@ -4700,11 +4716,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rosidl-cmake/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rosidl-core-generators=0.2.0-3noble.20250822.214653`
+### `dpkg` source package: `ros-jazzy-rosidl-core-generators=0.2.0-3noble.20251007.163926`
 
 Binary Packages:
 
-- `ros-jazzy-rosidl-core-generators=0.2.0-3noble.20250822.214653`
+- `ros-jazzy-rosidl-core-generators=0.2.0-3noble.20251007.163926`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rosidl-core-generators/copyright`)
 
@@ -4714,11 +4730,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rosidl-core-generators/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rosidl-core-runtime=0.2.0-3noble.20250822.214701`
+### `dpkg` source package: `ros-jazzy-rosidl-core-runtime=0.2.0-3noble.20251007.163928`
 
 Binary Packages:
 
-- `ros-jazzy-rosidl-core-runtime=0.2.0-3noble.20250822.214701`
+- `ros-jazzy-rosidl-core-runtime=0.2.0-3noble.20251007.163928`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rosidl-core-runtime/copyright`)
 
@@ -4728,11 +4744,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rosidl-core-runtime/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rosidl-default-generators=1.6.0-3noble.20250822.215808`
+### `dpkg` source package: `ros-jazzy-rosidl-default-generators=1.6.0-3noble.20251007.205127`
 
 Binary Packages:
 
-- `ros-jazzy-rosidl-default-generators=1.6.0-3noble.20250822.215808`
+- `ros-jazzy-rosidl-default-generators=1.6.0-3noble.20251007.205127`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rosidl-default-generators/copyright`)
 
@@ -4742,11 +4758,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rosidl-default-generators/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rosidl-default-runtime=1.6.0-3noble.20250822.215810`
+### `dpkg` source package: `ros-jazzy-rosidl-default-runtime=1.6.0-3noble.20251007.205126`
 
 Binary Packages:
 
-- `ros-jazzy-rosidl-default-runtime=1.6.0-3noble.20250822.215810`
+- `ros-jazzy-rosidl-default-runtime=1.6.0-3noble.20251007.205126`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rosidl-default-runtime/copyright`)
 
@@ -4812,11 +4828,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rosidl-generator-cpp/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rosidl-generator-py=0.22.1-1noble.20250822.214139`
+### `dpkg` source package: `ros-jazzy-rosidl-generator-py=0.22.2-1noble.20251007.163814`
 
 Binary Packages:
 
-- `ros-jazzy-rosidl-generator-py=0.22.1-1noble.20250822.214139`
+- `ros-jazzy-rosidl-generator-py=0.22.2-1noble.20251007.163814`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rosidl-generator-py/copyright`)
 
@@ -5008,11 +5024,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rosidl-typesupport-introspecti
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-rpyutils=0.4.1-3noble.20250424.110026`
+### `dpkg` source package: `ros-jazzy-rpyutils=0.4.2-1noble.20250919.223519`
 
 Binary Packages:
 
-- `ros-jazzy-rpyutils=0.4.1-3noble.20250424.110026`
+- `ros-jazzy-rpyutils=0.4.2-1noble.20250919.223519`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rpyutils/copyright`)
 
@@ -5022,11 +5038,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-rpyutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-sensor-msgs=5.3.6-1noble.20250823.065038`
+### `dpkg` source package: `ros-jazzy-sensor-msgs=5.3.6-1noble.20251007.214825`
 
 Binary Packages:
 
-- `ros-jazzy-sensor-msgs=5.3.6-1noble.20250823.065038`
+- `ros-jazzy-sensor-msgs=5.3.6-1noble.20251007.214825`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-sensor-msgs/copyright`)
 
@@ -5036,11 +5052,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-sensor-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-service-msgs=2.0.3-1noble.20250822.215235`
+### `dpkg` source package: `ros-jazzy-service-msgs=2.0.3-1noble.20251007.204108`
 
 Binary Packages:
 
-- `ros-jazzy-service-msgs=2.0.3-1noble.20250822.215235`
+- `ros-jazzy-service-msgs=2.0.3-1noble.20251007.204108`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-service-msgs/copyright`)
 
@@ -5050,11 +5066,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-service-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-shape-msgs=5.3.6-1noble.20250823.065952`
+### `dpkg` source package: `ros-jazzy-shape-msgs=5.3.6-1noble.20251007.215708`
 
 Binary Packages:
 
-- `ros-jazzy-shape-msgs=5.3.6-1noble.20250823.065952`
+- `ros-jazzy-shape-msgs=5.3.6-1noble.20251007.215708`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-shape-msgs/copyright`)
 
@@ -5079,11 +5095,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-spdlog-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-sros2-cmake=0.13.4-1noble.20250912.054548`
+### `dpkg` source package: `ros-jazzy-sros2-cmake=0.13.4-1noble.20251007.230043`
 
 Binary Packages:
 
-- `ros-jazzy-sros2-cmake=0.13.4-1noble.20250912.054548`
+- `ros-jazzy-sros2-cmake=0.13.4-1noble.20251007.230043`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-sros2-cmake/copyright`)
 
@@ -5093,11 +5109,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-sros2-cmake/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-sros2=0.13.4-1noble.20250912.054430`
+### `dpkg` source package: `ros-jazzy-sros2=0.13.4-1noble.20251007.225928`
 
 Binary Packages:
 
-- `ros-jazzy-sros2=0.13.4-1noble.20250912.054430`
+- `ros-jazzy-sros2=0.13.4-1noble.20251007.225928`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-sros2/copyright`)
 
@@ -5107,11 +5123,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-sros2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-statistics-msgs=2.0.3-1noble.20250822.220226`
+### `dpkg` source package: `ros-jazzy-statistics-msgs=2.0.3-1noble.20251007.205628`
 
 Binary Packages:
 
-- `ros-jazzy-statistics-msgs=2.0.3-1noble.20250822.220226`
+- `ros-jazzy-statistics-msgs=2.0.3-1noble.20251007.205628`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-statistics-msgs/copyright`)
 
@@ -5121,11 +5137,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-statistics-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-std-msgs=5.3.6-1noble.20250822.220242`
+### `dpkg` source package: `ros-jazzy-std-msgs=5.3.6-1noble.20251007.205629`
 
 Binary Packages:
 
-- `ros-jazzy-std-msgs=5.3.6-1noble.20250822.220242`
+- `ros-jazzy-std-msgs=5.3.6-1noble.20251007.205629`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-std-msgs/copyright`)
 
@@ -5135,11 +5151,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-std-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-std-srvs=5.3.6-1noble.20250823.070237`
+### `dpkg` source package: `ros-jazzy-std-srvs=5.3.6-1noble.20251007.214409`
 
 Binary Packages:
 
-- `ros-jazzy-std-srvs=5.3.6-1noble.20250823.070237`
+- `ros-jazzy-std-srvs=5.3.6-1noble.20251007.214409`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-std-srvs/copyright`)
 
@@ -5149,11 +5165,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-std-srvs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-stereo-msgs=5.3.6-1noble.20250823.065948`
+### `dpkg` source package: `ros-jazzy-stereo-msgs=5.3.6-1noble.20251007.215701`
 
 Binary Packages:
 
-- `ros-jazzy-stereo-msgs=5.3.6-1noble.20250823.065948`
+- `ros-jazzy-stereo-msgs=5.3.6-1noble.20251007.215701`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-stereo-msgs/copyright`)
 
@@ -5191,11 +5207,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-tracetools/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-trajectory-msgs=5.3.6-1noble.20250823.065138`
+### `dpkg` source package: `ros-jazzy-trajectory-msgs=5.3.6-1noble.20251007.214856`
 
 Binary Packages:
 
-- `ros-jazzy-trajectory-msgs=5.3.6-1noble.20250823.065138`
+- `ros-jazzy-trajectory-msgs=5.3.6-1noble.20251007.214856`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-trajectory-msgs/copyright`)
 
@@ -5205,11 +5221,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-trajectory-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-type-description-interfaces=2.0.3-1noble.20250822.215448`
+### `dpkg` source package: `ros-jazzy-type-description-interfaces=2.0.3-1noble.20251007.204357`
 
 Binary Packages:
 
-- `ros-jazzy-type-description-interfaces=2.0.3-1noble.20250822.215448`
+- `ros-jazzy-type-description-interfaces=2.0.3-1noble.20251007.204357`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-type-description-interfaces/copyright`)
 
@@ -5234,11 +5250,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-uncrustify-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-unique-identifier-msgs=2.5.0-3noble.20250822.215239`
+### `dpkg` source package: `ros-jazzy-unique-identifier-msgs=2.5.0-3noble.20251007.174227`
 
 Binary Packages:
 
-- `ros-jazzy-unique-identifier-msgs=2.5.0-3noble.20250822.215239`
+- `ros-jazzy-unique-identifier-msgs=2.5.0-3noble.20251007.174227`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-unique-identifier-msgs/copyright`)
 
@@ -5248,11 +5264,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-jazzy-unique-identifier-msgs/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-jazzy-visualization-msgs=5.3.6-1noble.20250823.065641`
+### `dpkg` source package: `ros-jazzy-visualization-msgs=5.3.6-1noble.20251007.215329`
 
 Binary Packages:
 
-- `ros-jazzy-visualization-msgs=5.3.6-1noble.20250823.065641`
+- `ros-jazzy-visualization-msgs=5.3.6-1noble.20251007.215329`
 
 Licenses: (parsed from: `/usr/share/doc/ros-jazzy-visualization-msgs/copyright`)
 
@@ -5525,12 +5541,12 @@ $ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.5
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.5.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.5.debian.tar.xz 35260 SHA512:a031e8f6aeefbb9ea45439a24dc82f9e74b12c3e92b6444057648cc07187c00a0ca6cf32a6c51c0e50787f41d525c687cc3dad7492b46d785fa1088b04d10ea1
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.10`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.11`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.10`
-- `libudev1:amd64=255.4-1ubuntu8.10`
+- `libsystemd0:amd64=255.4-1ubuntu8.11`
+- `libudev1:amd64=255.4-1ubuntu8.11`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -5543,9 +5559,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.11
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.11.dsc' systemd_255.4-1ubuntu8.11.dsc 7324 SHA512:911c29309ba54128641ff4dac6bc86a3b2e276778fb8446daa29747385a7f6781f339ec4ab82bf34085d8156e08da2e9965e1bcabcd1d65ee575b5d82ef18ddf
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.11.debian.tar.xz' systemd_255.4-1ubuntu8.11.debian.tar.xz 256052 SHA512:b8bf683caee235c8c46725592dd8b9c5acc08c3c0709ded98e039c089bc34c04618fc70dae70efdf8ee8bec09f2e124951d31574973c9d6f752ab935b700f7f8
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e59f899e278fed1f76c2109d800beb593aa1c4563585b810ddc178c429f37fa2`
-- Created: `2025-05-23T20:53:19Z`
+- Image ID: `sha256:40f3065d8b3834d1c8b2fa54e8585dca47f3a383187ecf1ab1ad05190a0ea929`
+- Created: `2025-11-14T01:18:23.636148184Z`
 - Virtual Size: ~ 3.51 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -514,18 +514,18 @@ $ apt-get source -qq --print-uris bash=5.2.21-2ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.21-2ubuntu4.debian.tar.xz' bash_5.2.21-2ubuntu4.debian.tar.xz 94124 SHA512:cbe580880995984a6ceb6c980d2fa87bbb1ace85d834a147ce39eaf44692af654c2c537716a19c8ed21b20e8abad9240d3f3349cc51020aeba2cd6e490802725
 ```
 
-### `dpkg` source package: `binutils=2.42-4ubuntu2.5`
+### `dpkg` source package: `binutils=2.42-4ubuntu2.6`
 
 Binary Packages:
 
-- `binutils=2.42-4ubuntu2.5`
-- `binutils-common:amd64=2.42-4ubuntu2.5`
-- `binutils-x86-64-linux-gnu=2.42-4ubuntu2.5`
-- `libbinutils:amd64=2.42-4ubuntu2.5`
-- `libctf-nobfd0:amd64=2.42-4ubuntu2.5`
-- `libctf0:amd64=2.42-4ubuntu2.5`
-- `libgprofng0:amd64=2.42-4ubuntu2.5`
-- `libsframe1:amd64=2.42-4ubuntu2.5`
+- `binutils=2.42-4ubuntu2.6`
+- `binutils-common:amd64=2.42-4ubuntu2.6`
+- `binutils-x86-64-linux-gnu=2.42-4ubuntu2.6`
+- `libbinutils:amd64=2.42-4ubuntu2.6`
+- `libctf-nobfd0:amd64=2.42-4ubuntu2.6`
+- `libctf0:amd64=2.42-4ubuntu2.6`
+- `libgprofng0:amd64=2.42-4ubuntu2.6`
+- `libsframe1:amd64=2.42-4ubuntu2.6`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`, `/usr/share/doc/libgprofng0/copyright`, `/usr/share/doc/libsframe1/copyright`)
 
@@ -533,9 +533,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.42-4ubuntu2.6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.6.dsc' binutils_2.42-4ubuntu2.6.dsc 10148 SHA512:9b5f805529b5aa0daefe004546184133989d04322017d7009c7bb39bb0a1c03f5e53f950763c27fb68c2b3c90337e29b2d640febaa34e55f187e63926f80a2cf
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42.orig.tar.xz' binutils_2.42.orig.tar.xz 27567160 SHA512:155f3ba14cd220102f4f29a4f1e5cfee3c48aa03b74603460d05afb73c70d6657a9d87eee6eb88bf13203fe6f31177a5c9addc04384e956e7da8069c8ecd20a6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.6.debian.tar.xz' binutils_2.42-4ubuntu2.6.debian.tar.xz 187016 SHA512:4209ef77a41d474615c39305ca7b3a29981ce60f0554658867b59861be484c28121c68bdd9093782e94c2b0b62380efc0696c7510a4c745c183e6bba1ade43a1
+```
 
 ### `dpkg` source package: `boost-defaults=1.83.0.1ubuntu2`
 
@@ -5066,12 +5071,12 @@ $ apt-get source -qq --print-uris libsoxr=0.1.3-4build3
 'http://archive.ubuntu.com/ubuntu/pool/universe/libs/libsoxr/libsoxr_0.1.3-4build3.debian.tar.xz' libsoxr_0.1.3-4build3.debian.tar.xz 5264 SHA512:e038c39c1891f3b31a03cfa01c9c6b7756113f45ce6e34f507d20cd414596ee70998d8255bcca50e270b61d8bea237dfdc82ba41239677a8c8b1691d2749d0b7
 ```
 
-### `dpkg` source package: `libssh=0.10.6-2ubuntu0.1`
+### `dpkg` source package: `libssh=0.10.6-2ubuntu0.2`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.10.6-2ubuntu0.1`
-- `libssh-gcrypt-4:amd64=0.10.6-2ubuntu0.1`
+- `libssh-4:amd64=0.10.6-2ubuntu0.2`
+- `libssh-gcrypt-4:amd64=0.10.6-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`, `/usr/share/doc/libssh-gcrypt-4/copyright`)
 
@@ -5081,9 +5086,15 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`, `/usr/share/doc/lib
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libssh=0.10.6-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.2.dsc' libssh_0.10.6-2ubuntu0.2.dsc 2723 SHA512:0ce4ad1a7c238fa3dca8523f49833309c47aa55535c7d438d0c7d6a985e5346d2071d791c1847cbeea76502ca73276e1235dda81f075fc3e0ce90240656065f0
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz' libssh_0.10.6.orig.tar.xz 561036 SHA512:40c62d63c44e882999b71552c237d73fc7364313bd00b15a211a34aeff1b73693da441d2c8d4e40108d00fb7480ec7c5b6d472f9c0784b2359a179632ab0d6c1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz.asc' libssh_0.10.6.orig.tar.xz.asc 833 SHA512:214d7920bebc80a8e6838c64ed06e070709a96fabfb4fff657b55f9588bc0e1612887fe887d23de73ad3540f3bb85288e62eb6a11ccd4bc80afbd44d34ba70d4
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.2.debian.tar.xz' libssh_0.10.6-2ubuntu0.2.debian.tar.xz 47820 SHA512:92e9d5c401b22570cabac5c80c984b809d8fbcc537b464b7e5ec69eae254046cb56bb1d5029cc7ac11c0e8010f5501bf8495261f1022770eded064e4f6bb637c
+```
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3ubuntu0.24.04.1`
 
@@ -5784,22 +5795,27 @@ $ apt-get source -qq --print-uris libxkbcommon=1.6.0-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon_1.6.0-1build1.debian.tar.xz' libxkbcommon_1.6.0-1build1.debian.tar.xz 8372 SHA512:9ada0e5c9682f9d19250eb6aa4b001d2a1efb83b85a4976d05ce64411a9e526028c15122040316f6bec092e5fe4c223085637dd78a85bd317c4bb954eda949ad
 ```
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.5`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.6`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.5`
-- `libxml2-dev:amd64=2.9.14+dfsg-1.3ubuntu3.5`
-- `libxml2-utils=2.9.14+dfsg-1.3ubuntu3.5`
+- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.6`
+- `libxml2-dev:amd64=2.9.14+dfsg-1.3ubuntu3.6`
+- `libxml2-utils=2.9.14+dfsg-1.3ubuntu3.6`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libxml2-dev/copyright`, `/usr/share/doc/libxml2-utils/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.6.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.6.dsc 3038 SHA512:7335b471c95fe73974736ded5dbd85cb1fcf24e0168ab939e7ff9df9735b02f5c550a1d96021023e14db18bf6defa2c72888a35641136cca75f23a45863f03bc
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.6.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.6.debian.tar.xz 48472 SHA512:8e9d2a8032b59da05cbe5be6850867e5b3ca18c4c4d8679b4a80afd36306ac4099abddecc208f90cc9067b746d9c8eb9dc7f732d8cea4187423803f7f43f34d0
+```
 
 ### `dpkg` source package: `libxmu=2:1.1.3-3build2`
 
@@ -6041,19 +6057,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-85.85`
+### `dpkg` source package: `linux=6.8.0-87.88`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-85.85`
+- `linux-libc-dev:amd64=6.8.0-87.88`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-87.88
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-87.88.dsc' linux_6.8.0-87.88.dsc 9362 SHA512:be05f1ea0f41b7f63232dedb4952da3f4f071c27c2acc9411fa621e7e1e68eee999e5109082c03aad1a2843f81d39cf1242c96b618a018fd1e8f606219026fd1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-87.88.diff.gz' linux_6.8.0-87.88.diff.gz 6068755 SHA512:51ca081be56c322a5f6de91b47cb7dd7452e62eb3453d8ae1afc57adf2ee718fe43f333e4a683ec53615db7ab3eb8c1699fdab8ddfdef14731a8cd909f9bb1f5
+```
 
 ### `dpkg` source package: `llvm-toolchain-15=1:15.0.7-14build3`
 
@@ -7785,13 +7806,13 @@ $ apt-get source -qq --print-uris pmix=5.0.1-4.1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/pmix/pmix_5.0.1-4.1build1.debian.tar.xz' pmix_5.0.1-4.1build1.debian.tar.xz 12084 SHA512:d0d3c3a7c209cf45937e8d05671d7c7a0ebafab3243c4672956861a984435b39a86ed8811adfbbe3aac7465049bd6381040e60c1df5b314b9a214b5b136585f8
 ```
 
-### `dpkg` source package: `poppler=24.02.0-1ubuntu9.7`
+### `dpkg` source package: `poppler=24.02.0-1ubuntu9.8`
 
 Binary Packages:
 
-- `libpoppler-dev:amd64=24.02.0-1ubuntu9.7`
-- `libpoppler-private-dev:amd64=24.02.0-1ubuntu9.7`
-- `libpoppler134:amd64=24.02.0-1ubuntu9.7`
+- `libpoppler-dev:amd64=24.02.0-1ubuntu9.8`
+- `libpoppler-private-dev:amd64=24.02.0-1ubuntu9.8`
+- `libpoppler134:amd64=24.02.0-1ubuntu9.8`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/doc/libpoppler-private-dev/copyright`, `/usr/share/doc/libpoppler134/copyright`)
 
@@ -7799,9 +7820,14 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=24.02.0-1ubuntu9.8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.8.dsc' poppler_24.02.0-1ubuntu9.8.dsc 3940 SHA512:d0d0bfcb54b77b1de1ef3a91b957e9bafd4a7609df7f96b1d93b1416c3fc12dd3d3c20ca8edb6eaa32fca823e5e482c7a0af923e77ea86775235fdde243603f5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0.orig.tar.gz' poppler_24.02.0.orig.tar.gz 1975230 SHA512:75fc41f94ad6848b834eab1cc9199c5ba55b30b12ffbe26d53fa85e86b9918999e752c82d2c5965d6669ace4d9658b1236159c9bfa4bbf40da2660dc00a19f37
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.8.debian.tar.xz' poppler_24.02.0-1ubuntu9.8.debian.tar.xz 43812 SHA512:0dcb44752aba54269f1215c9a865375a90250143d9500efb21886c3e2b1e8c35d80a0789a3dab407f2b5944b74f7c735475960a8c603789b182bdefcb4f34113
+```
 
 ### `dpkg` source package: `popt=1.19+dfsg-1build1`
 
@@ -8580,11 +8606,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-colcon-core=0.20.0+upstream-1`
+### `dpkg` source package: `python3-colcon-core=0.20.1+upstream-1`
 
 Binary Packages:
 
-- `python3-colcon-core=0.20.0+upstream-1`
+- `python3-colcon-core=0.20.1+upstream-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8832,15 +8858,15 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-defaults=3.12.3-0ubuntu2`
+### `dpkg` source package: `python3-defaults=3.12.3-0ubuntu2.1`
 
 Binary Packages:
 
-- `libpython3-dev:amd64=3.12.3-0ubuntu2`
-- `libpython3-stdlib:amd64=3.12.3-0ubuntu2`
-- `python3=3.12.3-0ubuntu2`
-- `python3-dev=3.12.3-0ubuntu2`
-- `python3-minimal=3.12.3-0ubuntu2`
+- `libpython3-dev:amd64=3.12.3-0ubuntu2.1`
+- `libpython3-stdlib:amd64=3.12.3-0ubuntu2.1`
+- `python3=3.12.3-0ubuntu2.1`
+- `python3-dev=3.12.3-0ubuntu2.1`
+- `python3-minimal=3.12.3-0ubuntu2.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8849,9 +8875,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.dsc' python3-defaults_3.12.3-0ubuntu2.dsc 3108 SHA512:397e3ab1cc49de9897a39b44f692f64bcb0288fb5bb0584fb73845ee888d82756a8fa7b40150734fe0ab6d3655174ae57b64176d949bc9bc9bc44f1beb9b5dda
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.tar.gz' python3-defaults_3.12.3-0ubuntu2.tar.gz 147715 SHA512:3c0b5b4c3fba5209c36cb7b884894c735aa3f419c2f0ca4c412f8bc44a281e2f356438517010ec5753c18c06fcd60e1e526c5cc4e4a8d103dd8bfb8b6468377e
+$ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.1.dsc' python3-defaults_3.12.3-0ubuntu2.1.dsc 3116 SHA512:34bd93d70a55ea6e57e2c8adb7fab3a23507161c2ca61b2c089208cf3706455ef7e072cc04b68af9c1ecb04ed9636e65524501d9e2eb837319f220f275582c4b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.1.tar.gz' python3-defaults_3.12.3-0ubuntu2.1.tar.gz 147765 SHA512:9a729a8df22e37d473d39b8c9c95b8c5a7ad8dfd244b3c87576d389f48543edeeaa0bd8b0557de3224d0dbd0f06e02b573cb18adf685a54c02bb485a21ec36e5
 ```
 
 ### `dpkg` source package: `python3-rosdep-modules=0.26.0-1`
@@ -9477,11 +9503,11 @@ Licenses: (parsed from: `/usr/share/doc/ros2-apt-source/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-action-msgs=2.3.0-2noble.20250822.220451`
+### `dpkg` source package: `ros-kilted-action-msgs=2.3.0-2noble.20251006.223422`
 
 Binary Packages:
 
-- `ros-kilted-action-msgs=2.3.0-2noble.20250822.220451`
+- `ros-kilted-action-msgs=2.3.0-2noble.20251006.223422`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-action-msgs/copyright`)
 
@@ -9491,11 +9517,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-action-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-actionlib-msgs=5.5.0-2noble.20250823.013832`
+### `dpkg` source package: `ros-kilted-actionlib-msgs=5.5.1-1noble.20251006.224528`
 
 Binary Packages:
 
-- `ros-kilted-actionlib-msgs=5.5.0-2noble.20250823.013832`
+- `ros-kilted-actionlib-msgs=5.5.1-1noble.20251006.224528`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-actionlib-msgs/copyright`)
 
@@ -9827,11 +9853,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ament-cmake-ros-core/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ament-cmake-ros=0.14.3-2noble.20250823.031230`
+### `dpkg` source package: `ros-kilted-ament-cmake-ros=0.14.3-2noble.20251007.023707`
 
 Binary Packages:
 
-- `ros-kilted-ament-cmake-ros=0.14.3-2noble.20250823.031230`
+- `ros-kilted-ament-cmake-ros=0.14.3-2noble.20251007.023707`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ament-cmake-ros/copyright`)
 
@@ -10123,11 +10149,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ament-xmllint/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-angles=1.16.0-5noble.20250424.203147`
+### `dpkg` source package: `ros-kilted-angles=1.16.1-1noble.20250923.224251`
 
 Binary Packages:
 
-- `ros-kilted-angles=1.16.0-5noble.20250424.203147`
+- `ros-kilted-angles=1.16.1-1noble.20250923.224251`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-angles/copyright`)
 
@@ -10137,11 +10163,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-angles/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-builtin-interfaces=2.3.0-2noble.20250822.215657`
+### `dpkg` source package: `ros-kilted-builtin-interfaces=2.3.0-2noble.20251006.222853`
 
 Binary Packages:
 
-- `ros-kilted-builtin-interfaces=2.3.0-2noble.20250822.215657`
+- `ros-kilted-builtin-interfaces=2.3.0-2noble.20251006.222853`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-builtin-interfaces/copyright`)
 
@@ -10151,11 +10177,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-builtin-interfaces/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-camera-calibration-parsers=6.1.2-1noble.20250823.035653`
+### `dpkg` source package: `ros-kilted-camera-calibration-parsers=6.1.2-1noble.20251007.032617`
 
 Binary Packages:
 
-- `ros-kilted-camera-calibration-parsers=6.1.2-1noble.20250823.035653`
+- `ros-kilted-camera-calibration-parsers=6.1.2-1noble.20251007.032617`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-camera-calibration-parsers/copyright`)
 
@@ -10165,11 +10191,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-camera-calibration-parsers/co
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-camera-calibration=6.0.11-1noble.20250823.051129`
+### `dpkg` source package: `ros-kilted-camera-calibration=6.0.11-1noble.20251007.034750`
 
 Binary Packages:
 
-- `ros-kilted-camera-calibration=6.0.11-1noble.20250823.051129`
+- `ros-kilted-camera-calibration=6.0.11-1noble.20251007.034750`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-camera-calibration/copyright`)
 
@@ -10179,11 +10205,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-camera-calibration/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-camera-info-manager=6.1.2-1noble.20250823.043422`
+### `dpkg` source package: `ros-kilted-camera-info-manager=6.1.2-1noble.20251007.034752`
 
 Binary Packages:
 
-- `ros-kilted-camera-info-manager=6.1.2-1noble.20250823.043422`
+- `ros-kilted-camera-info-manager=6.1.2-1noble.20251007.034752`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-camera-info-manager/copyright`)
 
@@ -10193,11 +10219,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-camera-info-manager/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-class-loader=2.8.0-2noble.20250823.031634`
+### `dpkg` source package: `ros-kilted-class-loader=2.8.0-2noble.20251007.024103`
 
 Binary Packages:
 
-- `ros-kilted-class-loader=2.8.0-2noble.20250823.031634`
+- `ros-kilted-class-loader=2.8.0-2noble.20251007.024103`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-class-loader/copyright`)
 
@@ -10207,11 +10233,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-class-loader/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-common-interfaces=5.5.0-2noble.20250823.021939`
+### `dpkg` source package: `ros-kilted-common-interfaces=5.5.1-1noble.20251007.021801`
 
 Binary Packages:
 
-- `ros-kilted-common-interfaces=5.5.0-2noble.20250823.021939`
+- `ros-kilted-common-interfaces=5.5.1-1noble.20251007.021801`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-common-interfaces/copyright`)
 
@@ -10221,11 +10247,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-common-interfaces/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-composition-interfaces=2.3.0-2noble.20250823.030102`
+### `dpkg` source package: `ros-kilted-composition-interfaces=2.3.0-2noble.20251007.020200`
 
 Binary Packages:
 
-- `ros-kilted-composition-interfaces=2.3.0-2noble.20250823.030102`
+- `ros-kilted-composition-interfaces=2.3.0-2noble.20251007.020200`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-composition-interfaces/copyright`)
 
@@ -10235,11 +10261,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-composition-interfaces/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-compressed-depth-image-transport=5.1.0-1noble.20250823.054816`
+### `dpkg` source package: `ros-kilted-compressed-depth-image-transport=5.1.1-1noble.20251007.044738`
 
 Binary Packages:
 
-- `ros-kilted-compressed-depth-image-transport=5.1.0-1noble.20250823.054816`
+- `ros-kilted-compressed-depth-image-transport=5.1.1-1noble.20251007.044738`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-compressed-depth-image-transport/copyright`)
 
@@ -10250,11 +10276,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-compressed-depth-image-transp
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-compressed-image-transport=5.1.0-1noble.20250823.054829`
+### `dpkg` source package: `ros-kilted-compressed-image-transport=5.1.1-1noble.20251007.044748`
 
 Binary Packages:
 
-- `ros-kilted-compressed-image-transport=5.1.0-1noble.20250823.054829`
+- `ros-kilted-compressed-image-transport=5.1.1-1noble.20251007.044748`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-compressed-image-transport/copyright`)
 
@@ -10279,11 +10305,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-console-bridge-vendor/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-cv-bridge=4.1.0-2noble.20250823.034719`
+### `dpkg` source package: `ros-kilted-cv-bridge=4.1.0-2noble.20251007.033219`
 
 Binary Packages:
 
-- `ros-kilted-cv-bridge=4.1.0-2noble.20250823.034719`
+- `ros-kilted-cv-bridge=4.1.0-2noble.20251007.033219`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-cv-bridge/copyright`)
 
@@ -10294,11 +10320,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-cv-bridge/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-depth-image-proc=6.0.11-1noble.20250823.053505`
+### `dpkg` source package: `ros-kilted-depth-image-proc=6.0.11-1noble.20251007.040545`
 
 Binary Packages:
 
-- `ros-kilted-depth-image-proc=6.0.11-1noble.20250823.053505`
+- `ros-kilted-depth-image-proc=6.0.11-1noble.20251007.040545`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-depth-image-proc/copyright`)
 
@@ -10308,11 +10334,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-depth-image-proc/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-diagnostic-msgs=5.5.0-2noble.20250823.020103`
+### `dpkg` source package: `ros-kilted-diagnostic-msgs=5.5.1-1noble.20251006.231518`
 
 Binary Packages:
 
-- `ros-kilted-diagnostic-msgs=5.5.0-2noble.20250823.020103`
+- `ros-kilted-diagnostic-msgs=5.5.1-1noble.20251006.231518`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-diagnostic-msgs/copyright`)
 
@@ -10322,11 +10348,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-diagnostic-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-diagnostic-updater=4.3.6-1noble.20250823.043803`
+### `dpkg` source package: `ros-kilted-diagnostic-updater=4.3.6-1noble.20251007.034326`
 
 Binary Packages:
 
-- `ros-kilted-diagnostic-updater=4.3.6-1noble.20250823.043803`
+- `ros-kilted-diagnostic-updater=4.3.6-1noble.20251007.034326`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-diagnostic-updater/copyright`)
 
@@ -10350,11 +10376,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-eigen3-cmake-module/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-fastcdr=2.3.0-2noble.20250424.202658`
+### `dpkg` source package: `ros-kilted-fastcdr=2.3.2-1noble.20251001.184941`
 
 Binary Packages:
 
-- `ros-kilted-fastcdr=2.3.0-2noble.20250424.202658`
+- `ros-kilted-fastcdr=2.3.2-1noble.20251001.184941`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-fastcdr/copyright`)
 
@@ -10364,11 +10390,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-fastcdr/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-fastdds=3.2.2-1noble.20250508.201326`
+### `dpkg` source package: `ros-kilted-fastdds=3.2.2-1noble.20251001.185228`
 
 Binary Packages:
 
-- `ros-kilted-fastdds=3.2.2-1noble.20250508.201326`
+- `ros-kilted-fastdds=3.2.2-1noble.20251001.185228`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-fastdds/copyright`)
 
@@ -10378,11 +10404,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-fastdds/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-filters=2.2.2-1noble.20250823.041725`
+### `dpkg` source package: `ros-kilted-filters=2.2.2-1noble.20251007.041731`
 
 Binary Packages:
 
-- `ros-kilted-filters=2.2.2-1noble.20250823.041725`
+- `ros-kilted-filters=2.2.2-1noble.20251007.041731`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-filters/copyright`)
 
@@ -10407,11 +10433,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-foonathan-memory-vendor/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-geometry-msgs=5.5.0-2noble.20250823.015238`
+### `dpkg` source package: `ros-kilted-geometry-msgs=5.5.1-1noble.20251006.225337`
 
 Binary Packages:
 
-- `ros-kilted-geometry-msgs=5.5.0-2noble.20250823.015238`
+- `ros-kilted-geometry-msgs=5.5.1-1noble.20251006.225337`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-geometry-msgs/copyright`)
 
@@ -10421,11 +10447,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-geometry-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-geometry2=0.41.2-1noble.20250823.053503`
+### `dpkg` source package: `ros-kilted-geometry2=0.41.2-1noble.20251007.035741`
 
 Binary Packages:
 
-- `ros-kilted-geometry2=0.41.2-1noble.20250823.053503`
+- `ros-kilted-geometry2=0.41.2-1noble.20251007.035741`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-geometry2/copyright`)
 
@@ -10463,11 +10489,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-gtest-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-image-common=6.1.2-1noble.20250823.054902`
+### `dpkg` source package: `ros-kilted-image-common=6.1.2-1noble.20251007.044704`
 
 Binary Packages:
 
-- `ros-kilted-image-common=6.1.2-1noble.20250823.054902`
+- `ros-kilted-image-common=6.1.2-1noble.20251007.044704`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-common/copyright`)
 
@@ -10477,11 +10503,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-common/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-image-geometry=4.1.0-2noble.20250823.031510`
+### `dpkg` source package: `ros-kilted-image-geometry=4.1.0-2noble.20251007.023836`
 
 Binary Packages:
 
-- `ros-kilted-image-geometry=4.1.0-2noble.20250823.031510`
+- `ros-kilted-image-geometry=4.1.0-2noble.20251007.023836`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-geometry/copyright`)
 
@@ -10492,11 +10518,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-geometry/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-image-pipeline=6.0.11-1noble.20250823.055544`
+### `dpkg` source package: `ros-kilted-image-pipeline=6.0.11-1noble.20251007.050258`
 
 Binary Packages:
 
-- `ros-kilted-image-pipeline=6.0.11-1noble.20250823.055544`
+- `ros-kilted-image-pipeline=6.0.11-1noble.20251007.050258`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-pipeline/copyright`)
 
@@ -10506,11 +10532,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-pipeline/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-image-proc=6.0.11-1noble.20250823.052422`
+### `dpkg` source package: `ros-kilted-image-proc=6.0.11-1noble.20251007.035646`
 
 Binary Packages:
 
-- `ros-kilted-image-proc=6.0.11-1noble.20250823.052422`
+- `ros-kilted-image-proc=6.0.11-1noble.20251007.035646`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-proc/copyright`)
 
@@ -10520,11 +10546,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-proc/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-image-publisher=6.0.11-1noble.20250823.051805`
+### `dpkg` source package: `ros-kilted-image-publisher=6.0.11-1noble.20251007.035239`
 
 Binary Packages:
 
-- `ros-kilted-image-publisher=6.0.11-1noble.20250823.051805`
+- `ros-kilted-image-publisher=6.0.11-1noble.20251007.035239`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-publisher/copyright`)
 
@@ -10534,11 +10560,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-publisher/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-image-rotate=6.0.11-1noble.20250823.052612`
+### `dpkg` source package: `ros-kilted-image-rotate=6.0.11-1noble.20251007.035406`
 
 Binary Packages:
 
-- `ros-kilted-image-rotate=6.0.11-1noble.20250823.052612`
+- `ros-kilted-image-rotate=6.0.11-1noble.20251007.035406`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-rotate/copyright`)
 
@@ -10548,11 +10574,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-rotate/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-image-transport-plugins=5.1.0-1noble.20250823.055823`
+### `dpkg` source package: `ros-kilted-image-transport-plugins=5.1.1-1noble.20251007.050307`
 
 Binary Packages:
 
-- `ros-kilted-image-transport-plugins=5.1.0-1noble.20250823.055823`
+- `ros-kilted-image-transport-plugins=5.1.1-1noble.20251007.050307`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-transport-plugins/copyright`)
 
@@ -10562,11 +10588,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-transport-plugins/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-image-transport=6.1.2-1noble.20250823.051143`
+### `dpkg` source package: `ros-kilted-image-transport=6.1.2-1noble.20251007.034820`
 
 Binary Packages:
 
-- `ros-kilted-image-transport=6.1.2-1noble.20250823.051143`
+- `ros-kilted-image-transport=6.1.2-1noble.20251007.034820`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-transport/copyright`)
 
@@ -10576,11 +10602,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-transport/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-image-view=6.0.11-1noble.20250823.053559`
+### `dpkg` source package: `ros-kilted-image-view=6.0.11-1noble.20251007.035854`
 
 Binary Packages:
 
-- `ros-kilted-image-view=6.0.11-1noble.20250823.053559`
+- `ros-kilted-image-view=6.0.11-1noble.20251007.035854`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-view/copyright`)
 
@@ -10590,11 +10616,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-image-view/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-kdl-parser=2.12.1-2noble.20250823.033507`
+### `dpkg` source package: `ros-kilted-kdl-parser=2.12.1-2noble.20251007.040312`
 
 Binary Packages:
 
-- `ros-kilted-kdl-parser=2.12.1-2noble.20250823.033507`
+- `ros-kilted-kdl-parser=2.12.1-2noble.20251007.040312`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-kdl-parser/copyright`)
 
@@ -10618,11 +10644,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-keyboard-handler/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-laser-filters=2.2.0-1noble.20250823.053450`
+### `dpkg` source package: `ros-kilted-laser-filters=2.2.0-1noble.20251007.042055`
 
 Binary Packages:
 
-- `ros-kilted-laser-filters=2.2.0-1noble.20250823.053450`
+- `ros-kilted-laser-filters=2.2.0-1noble.20251007.042055`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-laser-filters/copyright`)
 
@@ -10632,11 +10658,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-laser-filters/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-laser-geometry=2.10.1-1noble.20250823.044318`
+### `dpkg` source package: `ros-kilted-laser-geometry=2.10.1-1noble.20251007.034829`
 
 Binary Packages:
 
-- `ros-kilted-laser-geometry=2.10.1-1noble.20250823.044318`
+- `ros-kilted-laser-geometry=2.10.1-1noble.20251007.034829`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-laser-geometry/copyright`)
 
@@ -10646,11 +10672,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-laser-geometry/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-launch-ros=0.28.2-1noble.20250823.044019`
+### `dpkg` source package: `ros-kilted-launch-ros=0.28.3-1noble.20251007.045614`
 
 Binary Packages:
 
-- `ros-kilted-launch-ros=0.28.2-1noble.20250823.044019`
+- `ros-kilted-launch-ros=0.28.3-1noble.20251007.045614`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-launch-ros/copyright`)
 
@@ -10660,11 +10686,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-launch-ros/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-launch-testing-ament-cmake=3.8.2-1noble.20250623.171646`
+### `dpkg` source package: `ros-kilted-launch-testing-ament-cmake=3.8.4-1noble.20251006.222921`
 
 Binary Packages:
 
-- `ros-kilted-launch-testing-ament-cmake=3.8.2-1noble.20250623.171646`
+- `ros-kilted-launch-testing-ament-cmake=3.8.4-1noble.20251006.222921`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-launch-testing-ament-cmake/copyright`)
 
@@ -10675,11 +10701,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-launch-testing-ament-cmake/co
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-launch-testing-ros=0.28.2-1noble.20250823.044816`
+### `dpkg` source package: `ros-kilted-launch-testing-ros=0.28.3-1noble.20251007.045744`
 
 Binary Packages:
 
-- `ros-kilted-launch-testing-ros=0.28.2-1noble.20250823.044816`
+- `ros-kilted-launch-testing-ros=0.28.3-1noble.20251007.045744`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-launch-testing-ros/copyright`)
 
@@ -10689,11 +10715,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-launch-testing-ros/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-launch-testing=3.8.2-1noble.20250623.171616`
+### `dpkg` source package: `ros-kilted-launch-testing=3.8.4-1noble.20251006.222841`
 
 Binary Packages:
 
-- `ros-kilted-launch-testing=3.8.2-1noble.20250623.171616`
+- `ros-kilted-launch-testing=3.8.4-1noble.20251006.222841`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-launch-testing/copyright`)
 
@@ -10703,11 +10729,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-launch-testing/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-launch-xml=3.8.2-1noble.20250623.171511`
+### `dpkg` source package: `ros-kilted-launch-xml=3.8.4-1noble.20251006.222523`
 
 Binary Packages:
 
-- `ros-kilted-launch-xml=3.8.2-1noble.20250623.171511`
+- `ros-kilted-launch-xml=3.8.4-1noble.20251006.222523`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-launch-xml/copyright`)
 
@@ -10717,11 +10743,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-launch-xml/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-launch-yaml=3.8.2-1noble.20250623.171510`
+### `dpkg` source package: `ros-kilted-launch-yaml=3.8.4-1noble.20251006.222620`
 
 Binary Packages:
 
-- `ros-kilted-launch-yaml=3.8.2-1noble.20250623.171510`
+- `ros-kilted-launch-yaml=3.8.4-1noble.20251006.222620`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-launch-yaml/copyright`)
 
@@ -10731,11 +10757,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-launch-yaml/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-launch=3.8.2-1noble.20250623.171139`
+### `dpkg` source package: `ros-kilted-launch=3.8.4-1noble.20251006.222003`
 
 Binary Packages:
 
-- `ros-kilted-launch=3.8.2-1noble.20250623.171139`
+- `ros-kilted-launch=3.8.4-1noble.20251006.222003`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-launch/copyright`)
 
@@ -10761,11 +10787,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-liblz4-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-libstatistics-collector=2.0.1-2noble.20250823.033532`
+### `dpkg` source package: `ros-kilted-libstatistics-collector=2.0.1-2noble.20251007.024741`
 
 Binary Packages:
 
-- `ros-kilted-libstatistics-collector=2.0.1-2noble.20250823.033532`
+- `ros-kilted-libstatistics-collector=2.0.1-2noble.20251007.024741`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-libstatistics-collector/copyright`)
 
@@ -10790,11 +10816,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-libyaml-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-lifecycle-msgs=2.3.0-2noble.20250823.015732`
+### `dpkg` source package: `ros-kilted-lifecycle-msgs=2.3.0-2noble.20251007.021144`
 
 Binary Packages:
 
-- `ros-kilted-lifecycle-msgs=2.3.0-2noble.20250823.015732`
+- `ros-kilted-lifecycle-msgs=2.3.0-2noble.20251007.021144`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-lifecycle-msgs/copyright`)
 
@@ -10818,11 +10844,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-mcap-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-message-filters=7.1.1-1noble.20250823.050801`
+### `dpkg` source package: `ros-kilted-message-filters=7.1.3-1noble.20251007.034211`
 
 Binary Packages:
 
-- `ros-kilted-message-filters=7.1.1-1noble.20250823.050801`
+- `ros-kilted-message-filters=7.1.3-1noble.20251007.034211`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-message-filters/copyright`)
 
@@ -10832,11 +10858,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-message-filters/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-nav-msgs=5.5.0-2noble.20250823.020157`
+### `dpkg` source package: `ros-kilted-nav-msgs=5.5.1-1noble.20251007.014441`
 
 Binary Packages:
 
-- `ros-kilted-nav-msgs=5.5.0-2noble.20250823.020157`
+- `ros-kilted-nav-msgs=5.5.1-1noble.20251007.014441`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-nav-msgs/copyright`)
 
@@ -10875,11 +10901,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-osrf-pycommon/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-pcl-conversions=2.7.3-1noble.20250823.051120`
+### `dpkg` source package: `ros-kilted-pcl-conversions=2.7.3-1noble.20251007.034358`
 
 Binary Packages:
 
-- `ros-kilted-pcl-conversions=2.7.3-1noble.20250823.051120`
+- `ros-kilted-pcl-conversions=2.7.3-1noble.20251007.034358`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-pcl-conversions/copyright`)
 
@@ -10889,11 +10915,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-pcl-conversions/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-pcl-msgs=1.0.0-9noble.20250823.021054`
+### `dpkg` source package: `ros-kilted-pcl-msgs=1.0.0-9noble.20251007.015952`
 
 Binary Packages:
 
-- `ros-kilted-pcl-msgs=1.0.0-9noble.20250823.021054`
+- `ros-kilted-pcl-msgs=1.0.0-9noble.20251007.015952`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-pcl-msgs/copyright`)
 
@@ -10903,11 +10929,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-pcl-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-pcl-ros=2.7.3-1noble.20250823.052915`
+### `dpkg` source package: `ros-kilted-pcl-ros=2.7.3-1noble.20251007.051310`
 
 Binary Packages:
 
-- `ros-kilted-pcl-ros=2.7.3-1noble.20250823.052915`
+- `ros-kilted-pcl-ros=2.7.3-1noble.20251007.051310`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-pcl-ros/copyright`)
 
@@ -10917,11 +10943,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-pcl-ros/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-perception-pcl=2.7.3-1noble.20250823.054946`
+### `dpkg` source package: `ros-kilted-perception-pcl=2.7.3-1noble.20251007.053035`
 
 Binary Packages:
 
-- `ros-kilted-perception-pcl=2.7.3-1noble.20250823.054946`
+- `ros-kilted-perception-pcl=2.7.3-1noble.20251007.053035`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-perception-pcl/copyright`)
 
@@ -10931,11 +10957,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-perception-pcl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-perception=0.12.0-2noble.20250823.055905`
+### `dpkg` source package: `ros-kilted-perception=0.12.0-2noble.20251007.053302`
 
 Binary Packages:
 
-- `ros-kilted-perception=0.12.0-2noble.20250823.055905`
+- `ros-kilted-perception=0.12.0-2noble.20251007.053302`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-perception/copyright`)
 
@@ -10945,11 +10971,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-perception/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-pluginlib=5.6.0-2noble.20250823.031842`
+### `dpkg` source package: `ros-kilted-pluginlib=5.6.0-2noble.20251007.024718`
 
 Binary Packages:
 
-- `ros-kilted-pluginlib=5.6.0-2noble.20250823.031842`
+- `ros-kilted-pluginlib=5.6.0-2noble.20251007.024718`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-pluginlib/copyright`)
 
@@ -10989,11 +11015,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-python-orocos-kdl-vendor/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rcl-action=10.1.1-1noble.20250823.042749`
+### `dpkg` source package: `ros-kilted-rcl-action=10.1.2-1noble.20251007.024749`
 
 Binary Packages:
 
-- `ros-kilted-rcl-action=10.1.1-1noble.20250823.042749`
+- `ros-kilted-rcl-action=10.1.2-1noble.20251007.024749`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl-action/copyright`)
 
@@ -11003,11 +11029,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl-action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rcl-interfaces=2.3.0-2noble.20250823.024830`
+### `dpkg` source package: `ros-kilted-rcl-interfaces=2.3.0-2noble.20251006.223741`
 
 Binary Packages:
 
-- `ros-kilted-rcl-interfaces=2.3.0-2noble.20250823.024830`
+- `ros-kilted-rcl-interfaces=2.3.0-2noble.20251006.223741`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl-interfaces/copyright`)
 
@@ -11017,11 +11043,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl-interfaces/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rcl-lifecycle=10.1.1-1noble.20250823.033537`
+### `dpkg` source package: `ros-kilted-rcl-lifecycle=10.1.2-1noble.20251007.033401`
 
 Binary Packages:
 
-- `ros-kilted-rcl-lifecycle=10.1.1-1noble.20250823.033537`
+- `ros-kilted-rcl-lifecycle=10.1.2-1noble.20251007.033401`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl-lifecycle/copyright`)
 
@@ -11031,11 +11057,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl-lifecycle/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rcl-logging-interface=3.2.2-2noble.20250823.031733`
+### `dpkg` source package: `ros-kilted-rcl-logging-interface=3.2.2-2noble.20251007.024212`
 
 Binary Packages:
 
-- `ros-kilted-rcl-logging-interface=3.2.2-2noble.20250823.031733`
+- `ros-kilted-rcl-logging-interface=3.2.2-2noble.20251007.024212`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl-logging-interface/copyright`)
 
@@ -11045,11 +11071,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl-logging-interface/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rcl-logging-spdlog=3.2.2-2noble.20250823.031931`
+### `dpkg` source package: `ros-kilted-rcl-logging-spdlog=3.2.2-2noble.20251007.024359`
 
 Binary Packages:
 
-- `ros-kilted-rcl-logging-spdlog=3.2.2-2noble.20250823.031931`
+- `ros-kilted-rcl-logging-spdlog=3.2.2-2noble.20251007.024359`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl-logging-spdlog/copyright`)
 
@@ -11059,11 +11085,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl-logging-spdlog/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rcl-yaml-param-parser=10.1.1-1noble.20250823.031734`
+### `dpkg` source package: `ros-kilted-rcl-yaml-param-parser=10.1.2-1noble.20251007.024218`
 
 Binary Packages:
 
-- `ros-kilted-rcl-yaml-param-parser=10.1.1-1noble.20250823.031734`
+- `ros-kilted-rcl-yaml-param-parser=10.1.2-1noble.20251007.024218`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl-yaml-param-parser/copyright`)
 
@@ -11073,11 +11099,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl-yaml-param-parser/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rcl=10.1.1-1noble.20250823.033250`
+### `dpkg` source package: `ros-kilted-rcl=10.1.2-1noble.20251007.024539`
 
 Binary Packages:
 
-- `ros-kilted-rcl=10.1.1-1noble.20250823.033250`
+- `ros-kilted-rcl=10.1.2-1noble.20251007.024539`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl/copyright`)
 
@@ -11087,11 +11113,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rclcpp-action=29.5.2-1noble.20250823.042951`
+### `dpkg` source package: `ros-kilted-rclcpp-action=29.5.3-1noble.20251007.030138`
 
 Binary Packages:
 
-- `ros-kilted-rclcpp-action=29.5.2-1noble.20250823.042951`
+- `ros-kilted-rclcpp-action=29.5.3-1noble.20251007.030138`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rclcpp-action/copyright`)
 
@@ -11101,11 +11127,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rclcpp-action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rclcpp-components=29.5.2-1noble.20250823.034724`
+### `dpkg` source package: `ros-kilted-rclcpp-components=29.5.3-1noble.20251007.033358`
 
 Binary Packages:
 
-- `ros-kilted-rclcpp-components=29.5.2-1noble.20250823.034724`
+- `ros-kilted-rclcpp-components=29.5.3-1noble.20251007.033358`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rclcpp-components/copyright`)
 
@@ -11115,11 +11141,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rclcpp-components/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rclcpp-lifecycle=29.5.2-1noble.20250823.043142`
+### `dpkg` source package: `ros-kilted-rclcpp-lifecycle=29.5.3-1noble.20251007.033554`
 
 Binary Packages:
 
-- `ros-kilted-rclcpp-lifecycle=29.5.2-1noble.20250823.043142`
+- `ros-kilted-rclcpp-lifecycle=29.5.3-1noble.20251007.033554`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rclcpp-lifecycle/copyright`)
 
@@ -11129,11 +11155,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rclcpp-lifecycle/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rclcpp=29.5.2-1noble.20250823.033745`
+### `dpkg` source package: `ros-kilted-rclcpp=29.5.3-1noble.20251007.024939`
 
 Binary Packages:
 
-- `ros-kilted-rclcpp=29.5.2-1noble.20250823.033745`
+- `ros-kilted-rclcpp=29.5.3-1noble.20251007.024939`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rclcpp/copyright`)
 
@@ -11143,11 +11169,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rclcpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rclpy=9.1.1-1noble.20250823.042949`
+### `dpkg` source package: `ros-kilted-rclpy=9.1.1-1noble.20251007.033546`
 
 Binary Packages:
 
-- `ros-kilted-rclpy=9.1.1-1noble.20250823.042949`
+- `ros-kilted-rclpy=9.1.1-1noble.20251007.033546`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rclpy/copyright`)
 
@@ -11157,11 +11183,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rclpy/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rcpputils=2.13.4-2noble.20250822.214308`
+### `dpkg` source package: `ros-kilted-rcpputils=2.13.5-1noble.20250922.135610`
 
 Binary Packages:
 
-- `ros-kilted-rcpputils=2.13.4-2noble.20250822.214308`
+- `ros-kilted-rcpputils=2.13.5-1noble.20250922.135610`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcpputils/copyright`)
 
@@ -11186,11 +11212,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rcutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rmw-dds-common=3.2.1-2noble.20250823.024957`
+### `dpkg` source package: `ros-kilted-rmw-dds-common=4.0.0-1noble.20251007.021510`
 
 Binary Packages:
 
-- `ros-kilted-rmw-dds-common=3.2.1-2noble.20250823.024957`
+- `ros-kilted-rmw-dds-common=4.0.0-1noble.20251007.021510`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rmw-dds-common/copyright`)
 
@@ -11200,11 +11226,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rmw-dds-common/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rmw-fastrtps-cpp=9.3.2-2noble.20250823.025636`
+### `dpkg` source package: `ros-kilted-rmw-fastrtps-cpp=9.3.3-1noble.20251007.022913`
 
 Binary Packages:
 
-- `ros-kilted-rmw-fastrtps-cpp=9.3.2-2noble.20250823.025636`
+- `ros-kilted-rmw-fastrtps-cpp=9.3.3-1noble.20251007.022913`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rmw-fastrtps-cpp/copyright`)
 
@@ -11214,11 +11240,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rmw-fastrtps-cpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rmw-fastrtps-shared-cpp=9.3.2-2noble.20250823.025140`
+### `dpkg` source package: `ros-kilted-rmw-fastrtps-shared-cpp=9.3.3-1noble.20251007.022211`
 
 Binary Packages:
 
-- `ros-kilted-rmw-fastrtps-shared-cpp=9.3.2-2noble.20250823.025140`
+- `ros-kilted-rmw-fastrtps-shared-cpp=9.3.3-1noble.20251007.022211`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rmw-fastrtps-shared-cpp/copyright`)
 
@@ -11242,11 +11268,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rmw-implementation-cmake/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rmw-implementation=3.0.4-2noble.20250823.030831`
+### `dpkg` source package: `ros-kilted-rmw-implementation=3.0.4-2noble.20251007.023429`
 
 Binary Packages:
 
-- `ros-kilted-rmw-implementation=3.0.4-2noble.20250823.030831`
+- `ros-kilted-rmw-implementation=3.0.4-2noble.20251007.023429`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rmw-implementation/copyright`)
 
@@ -11270,11 +11296,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rmw-security-common/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rmw-test-fixture-implementation=0.14.3-2noble.20250823.031027`
+### `dpkg` source package: `ros-kilted-rmw-test-fixture-implementation=0.14.3-2noble.20251007.023505`
 
 Binary Packages:
 
-- `ros-kilted-rmw-test-fixture-implementation=0.14.3-2noble.20250823.031027`
+- `ros-kilted-rmw-test-fixture-implementation=0.14.3-2noble.20251007.023505`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rmw-test-fixture-implementation/copyright`)
 
@@ -11298,11 +11324,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rmw-test-fixture/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rmw-zenoh-cpp=0.6.3-1noble.20250822.215510`
+### `dpkg` source package: `ros-kilted-rmw-zenoh-cpp=0.6.5-1noble.20251006.223925`
 
 Binary Packages:
 
-- `ros-kilted-rmw-zenoh-cpp=0.6.3-1noble.20250822.215510`
+- `ros-kilted-rmw-zenoh-cpp=0.6.5-1noble.20251006.223925`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rmw-zenoh-cpp/copyright`)
 
@@ -11327,11 +11353,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rmw/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-robot-state-publisher=3.4.2-2noble.20250823.051606`
+### `dpkg` source package: `ros-kilted-robot-state-publisher=3.4.2-2noble.20251007.040525`
 
 Binary Packages:
 
-- `ros-kilted-robot-state-publisher=3.4.2-2noble.20250823.051606`
+- `ros-kilted-robot-state-publisher=3.4.2-2noble.20251007.040525`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-robot-state-publisher/copyright`)
 
@@ -11341,11 +11367,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-robot-state-publisher/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros-base=0.12.0-2noble.20250823.055458`
+### `dpkg` source package: `ros-kilted-ros-base=0.12.0-2noble.20251007.053219`
 
 Binary Packages:
 
-- `ros-kilted-ros-base=0.12.0-2noble.20250823.055458`
+- `ros-kilted-ros-base=0.12.0-2noble.20251007.053219`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros-base/copyright`)
 
@@ -11355,11 +11381,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros-base/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros-core=0.12.0-2noble.20250823.055431`
+### `dpkg` source package: `ros-kilted-ros-core=0.12.0-2noble.20251007.051646`
 
 Binary Packages:
 
-- `ros-kilted-ros-core=0.12.0-2noble.20250823.055431`
+- `ros-kilted-ros-core=0.12.0-2noble.20251007.051646`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros-core/copyright`)
 
@@ -11397,11 +11423,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros-workspace/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2action=0.38.0-1noble.20250823.050851`
+### `dpkg` source package: `ros-kilted-ros2action=0.38.1-1noble.20251007.045805`
 
 Binary Packages:
 
-- `ros-kilted-ros2action=0.38.0-1noble.20250823.050851`
+- `ros-kilted-ros2action=0.38.1-1noble.20251007.045805`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2action/copyright`)
 
@@ -11411,11 +11437,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2bag=0.32.0-2noble.20250823.051144`
+### `dpkg` source package: `ros-kilted-ros2bag=0.32.0-2noble.20251007.052031`
 
 Binary Packages:
 
-- `ros-kilted-ros2bag=0.32.0-2noble.20250823.051144`
+- `ros-kilted-ros2bag=0.32.0-2noble.20251007.052031`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2bag/copyright`)
 
@@ -11425,11 +11451,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2bag/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2cli-common-extensions=0.4.0-2noble.20250823.055401`
+### `dpkg` source package: `ros-kilted-ros2cli-common-extensions=0.4.0-2noble.20251007.051615`
 
 Binary Packages:
 
-- `ros-kilted-ros2cli-common-extensions=0.4.0-2noble.20250823.055401`
+- `ros-kilted-ros2cli-common-extensions=0.4.0-2noble.20251007.051615`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2cli-common-extensions/copyright`)
 
@@ -11439,11 +11465,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2cli-common-extensions/cop
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2cli=0.38.0-1noble.20250823.050800`
+### `dpkg` source package: `ros-kilted-ros2cli=0.38.1-1noble.20251007.045608`
 
 Binary Packages:
 
-- `ros-kilted-ros2cli=0.38.0-1noble.20250823.050800`
+- `ros-kilted-ros2cli=0.38.1-1noble.20251007.045608`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2cli/copyright`)
 
@@ -11453,11 +11479,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2cli/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2component=0.38.0-1noble.20250823.051529`
+### `dpkg` source package: `ros-kilted-ros2component=0.38.1-1noble.20251007.051131`
 
 Binary Packages:
 
-- `ros-kilted-ros2component=0.38.0-1noble.20250823.051529`
+- `ros-kilted-ros2component=0.38.1-1noble.20251007.051131`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2component/copyright`)
 
@@ -11467,11 +11493,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2component/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2doctor=0.38.0-1noble.20250823.050851`
+### `dpkg` source package: `ros-kilted-ros2doctor=0.38.1-1noble.20251007.045654`
 
 Binary Packages:
 
-- `ros-kilted-ros2doctor=0.38.0-1noble.20250823.050851`
+- `ros-kilted-ros2doctor=0.38.1-1noble.20251007.045654`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2doctor/copyright`)
 
@@ -11481,11 +11507,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2doctor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2interface=0.38.0-1noble.20250823.051435`
+### `dpkg` source package: `ros-kilted-ros2interface=0.38.1-1noble.20251007.051054`
 
 Binary Packages:
 
-- `ros-kilted-ros2interface=0.38.0-1noble.20250823.051435`
+- `ros-kilted-ros2interface=0.38.1-1noble.20251007.051054`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2interface/copyright`)
 
@@ -11495,11 +11521,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2interface/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2launch=0.28.2-1noble.20250823.051537`
+### `dpkg` source package: `ros-kilted-ros2launch=0.28.3-1noble.20251007.051129`
 
 Binary Packages:
 
-- `ros-kilted-ros2launch=0.28.2-1noble.20250823.051537`
+- `ros-kilted-ros2launch=0.28.3-1noble.20251007.051129`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2launch/copyright`)
 
@@ -11509,11 +11535,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2launch/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2lifecycle=0.38.0-1noble.20250823.051303`
+### `dpkg` source package: `ros-kilted-ros2lifecycle=0.38.1-1noble.20251007.050206`
 
 Binary Packages:
 
-- `ros-kilted-ros2lifecycle=0.38.0-1noble.20250823.051303`
+- `ros-kilted-ros2lifecycle=0.38.1-1noble.20251007.050206`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2lifecycle/copyright`)
 
@@ -11523,11 +11549,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2lifecycle/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2multicast=0.38.0-1noble.20250823.051443`
+### `dpkg` source package: `ros-kilted-ros2multicast=0.38.1-1noble.20251007.051058`
 
 Binary Packages:
 
-- `ros-kilted-ros2multicast=0.38.0-1noble.20250823.051443`
+- `ros-kilted-ros2multicast=0.38.1-1noble.20251007.051058`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2multicast/copyright`)
 
@@ -11537,11 +11563,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2multicast/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2node=0.38.0-1noble.20250823.051011`
+### `dpkg` source package: `ros-kilted-ros2node=0.38.1-1noble.20251007.045702`
 
 Binary Packages:
 
-- `ros-kilted-ros2node=0.38.0-1noble.20250823.051011`
+- `ros-kilted-ros2node=0.38.1-1noble.20251007.045702`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2node/copyright`)
 
@@ -11551,11 +11577,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2node/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2param=0.38.0-1noble.20250823.051229`
+### `dpkg` source package: `ros-kilted-ros2param=0.38.1-1noble.20251007.050042`
 
 Binary Packages:
 
-- `ros-kilted-ros2param=0.38.0-1noble.20250823.051229`
+- `ros-kilted-ros2param=0.38.1-1noble.20251007.050042`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2param/copyright`)
 
@@ -11565,11 +11591,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2param/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2pkg=0.38.0-1noble.20250823.051444`
+### `dpkg` source package: `ros-kilted-ros2pkg=0.38.1-1noble.20251007.051101`
 
 Binary Packages:
 
-- `ros-kilted-ros2pkg=0.38.0-1noble.20250823.051444`
+- `ros-kilted-ros2pkg=0.38.1-1noble.20251007.051101`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2pkg/copyright`)
 
@@ -11579,11 +11605,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2pkg/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2run=0.38.0-1noble.20250823.051550`
+### `dpkg` source package: `ros-kilted-ros2run=0.38.1-1noble.20251007.051515`
 
 Binary Packages:
 
-- `ros-kilted-ros2run=0.38.0-1noble.20250823.051550`
+- `ros-kilted-ros2run=0.38.1-1noble.20251007.051515`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2run/copyright`)
 
@@ -11593,11 +11619,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2run/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2service=0.38.0-1noble.20250823.051139`
+### `dpkg` source package: `ros-kilted-ros2service=0.38.1-1noble.20251007.050002`
 
 Binary Packages:
 
-- `ros-kilted-ros2service=0.38.0-1noble.20250823.051139`
+- `ros-kilted-ros2service=0.38.1-1noble.20251007.050002`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2service/copyright`)
 
@@ -11607,11 +11633,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2service/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros2topic=0.38.0-1noble.20250823.051026`
+### `dpkg` source package: `ros-kilted-ros2topic=0.38.1-1noble.20251007.045713`
 
 Binary Packages:
 
-- `ros-kilted-ros2topic=0.38.0-1noble.20250823.051026`
+- `ros-kilted-ros2topic=0.38.1-1noble.20251007.045713`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2topic/copyright`)
 
@@ -11622,11 +11648,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros2topic/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosbag2-compression-zstd=0.32.0-2noble.20250823.045904`
+### `dpkg` source package: `ros-kilted-rosbag2-compression-zstd=0.32.0-2noble.20251007.050803`
 
 Binary Packages:
 
-- `ros-kilted-rosbag2-compression-zstd=0.32.0-2noble.20250823.045904`
+- `ros-kilted-rosbag2-compression-zstd=0.32.0-2noble.20251007.050803`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-compression-zstd/copyright`)
 
@@ -11636,11 +11662,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-compression-zstd/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosbag2-compression=0.32.0-2noble.20250823.045627`
+### `dpkg` source package: `ros-kilted-rosbag2-compression=0.32.0-2noble.20251007.050441`
 
 Binary Packages:
 
-- `ros-kilted-rosbag2-compression=0.32.0-2noble.20250823.045627`
+- `ros-kilted-rosbag2-compression=0.32.0-2noble.20251007.050441`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-compression/copyright`)
 
@@ -11650,11 +11676,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-compression/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosbag2-cpp=0.32.0-2noble.20250823.045246`
+### `dpkg` source package: `ros-kilted-rosbag2-cpp=0.32.0-2noble.20251007.042055`
 
 Binary Packages:
 
-- `ros-kilted-rosbag2-cpp=0.32.0-2noble.20250823.045246`
+- `ros-kilted-rosbag2-cpp=0.32.0-2noble.20251007.042055`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-cpp/copyright`)
 
@@ -11664,11 +11690,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-cpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosbag2-interfaces=0.32.0-2noble.20250822.233130`
+### `dpkg` source package: `ros-kilted-rosbag2-interfaces=0.32.0-2noble.20251006.223930`
 
 Binary Packages:
 
-- `ros-kilted-rosbag2-interfaces=0.32.0-2noble.20250822.233130`
+- `ros-kilted-rosbag2-interfaces=0.32.0-2noble.20251006.223930`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-interfaces/copyright`)
 
@@ -11678,11 +11704,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-interfaces/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosbag2-py=0.32.0-2noble.20250823.050612`
+### `dpkg` source package: `ros-kilted-rosbag2-py=0.32.0-2noble.20251007.051432`
 
 Binary Packages:
 
-- `ros-kilted-rosbag2-py=0.32.0-2noble.20250823.050612`
+- `ros-kilted-rosbag2-py=0.32.0-2noble.20251007.051432`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-py/copyright`)
 
@@ -11692,11 +11718,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosbag2-storage-default-plugins=0.32.0-2noble.20250823.051101`
+### `dpkg` source package: `ros-kilted-rosbag2-storage-default-plugins=0.32.0-2noble.20251007.050520`
 
 Binary Packages:
 
-- `ros-kilted-rosbag2-storage-default-plugins=0.32.0-2noble.20250823.051101`
+- `ros-kilted-rosbag2-storage-default-plugins=0.32.0-2noble.20251007.050520`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-storage-default-plugins/copyright`)
 
@@ -11706,11 +11732,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-storage-default-plugi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosbag2-storage-mcap=0.32.0-2noble.20250823.045255`
+### `dpkg` source package: `ros-kilted-rosbag2-storage-mcap=0.32.0-2noble.20251007.042313`
 
 Binary Packages:
 
-- `ros-kilted-rosbag2-storage-mcap=0.32.0-2noble.20250823.045255`
+- `ros-kilted-rosbag2-storage-mcap=0.32.0-2noble.20251007.042313`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-storage-mcap/copyright`)
 
@@ -11720,11 +11746,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-storage-mcap/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosbag2-storage-sqlite3=0.32.0-2noble.20250823.045306`
+### `dpkg` source package: `ros-kilted-rosbag2-storage-sqlite3=0.32.0-2noble.20251007.042212`
 
 Binary Packages:
 
-- `ros-kilted-rosbag2-storage-sqlite3=0.32.0-2noble.20250823.045306`
+- `ros-kilted-rosbag2-storage-sqlite3=0.32.0-2noble.20251007.042212`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-storage-sqlite3/copyright`)
 
@@ -11734,11 +11760,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-storage-sqlite3/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosbag2-storage=0.32.0-2noble.20250823.044948`
+### `dpkg` source package: `ros-kilted-rosbag2-storage=0.32.0-2noble.20251007.041742`
 
 Binary Packages:
 
-- `ros-kilted-rosbag2-storage=0.32.0-2noble.20250823.044948`
+- `ros-kilted-rosbag2-storage=0.32.0-2noble.20251007.041742`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-storage/copyright`)
 
@@ -11748,11 +11774,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-storage/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosbag2-transport=0.32.0-2noble.20250823.045900`
+### `dpkg` source package: `ros-kilted-rosbag2-transport=0.32.0-2noble.20251007.050708`
 
 Binary Packages:
 
-- `ros-kilted-rosbag2-transport=0.32.0-2noble.20250823.045900`
+- `ros-kilted-rosbag2-transport=0.32.0-2noble.20251007.050708`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-transport/copyright`)
 
@@ -11762,11 +11788,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2-transport/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosbag2=0.32.0-2noble.20250823.051335`
+### `dpkg` source package: `ros-kilted-rosbag2=0.32.0-2noble.20251007.053149`
 
 Binary Packages:
 
-- `ros-kilted-rosbag2=0.32.0-2noble.20250823.051335`
+- `ros-kilted-rosbag2=0.32.0-2noble.20251007.053149`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2/copyright`)
 
@@ -11776,11 +11802,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosbag2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosgraph-msgs=2.3.0-2noble.20250822.233236`
+### `dpkg` source package: `ros-kilted-rosgraph-msgs=2.3.0-2noble.20251006.223949`
 
 Binary Packages:
 
-- `ros-kilted-rosgraph-msgs=2.3.0-2noble.20250822.233236`
+- `ros-kilted-rosgraph-msgs=2.3.0-2noble.20251006.223949`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosgraph-msgs/copyright`)
 
@@ -11832,11 +11858,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-cmake/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosidl-core-generators=0.3.1-2noble.20250822.215524`
+### `dpkg` source package: `ros-kilted-rosidl-core-generators=0.3.1-2noble.20251006.222412`
 
 Binary Packages:
 
-- `ros-kilted-rosidl-core-generators=0.3.1-2noble.20250822.215524`
+- `ros-kilted-rosidl-core-generators=0.3.1-2noble.20251006.222412`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-core-generators/copyright`)
 
@@ -11846,11 +11872,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-core-generators/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosidl-core-runtime=0.3.1-2noble.20250822.215529`
+### `dpkg` source package: `ros-kilted-rosidl-core-runtime=0.3.1-2noble.20251006.222456`
 
 Binary Packages:
 
-- `ros-kilted-rosidl-core-runtime=0.3.1-2noble.20250822.215529`
+- `ros-kilted-rosidl-core-runtime=0.3.1-2noble.20251006.222456`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-core-runtime/copyright`)
 
@@ -11860,11 +11886,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-core-runtime/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosidl-default-generators=1.7.1-2noble.20250822.221418`
+### `dpkg` source package: `ros-kilted-rosidl-default-generators=1.7.1-2noble.20251006.223521`
 
 Binary Packages:
 
-- `ros-kilted-rosidl-default-generators=1.7.1-2noble.20250822.221418`
+- `ros-kilted-rosidl-default-generators=1.7.1-2noble.20251006.223521`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-default-generators/copyright`)
 
@@ -11874,11 +11900,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-default-generators/cop
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosidl-default-runtime=1.7.1-2noble.20250822.220625`
+### `dpkg` source package: `ros-kilted-rosidl-default-runtime=1.7.1-2noble.20251006.223603`
 
 Binary Packages:
 
-- `ros-kilted-rosidl-default-runtime=1.7.1-2noble.20250822.220625`
+- `ros-kilted-rosidl-default-runtime=1.7.1-2noble.20251006.223603`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-default-runtime/copyright`)
 
@@ -11888,11 +11914,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-default-runtime/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosidl-dynamic-typesupport-fastrtps=0.4.1-2noble.20250822.214739`
+### `dpkg` source package: `ros-kilted-rosidl-dynamic-typesupport-fastrtps=0.4.1-2noble.20251001.195424`
 
 Binary Packages:
 
-- `ros-kilted-rosidl-dynamic-typesupport-fastrtps=0.4.1-2noble.20250822.214739`
+- `ros-kilted-rosidl-dynamic-typesupport-fastrtps=0.4.1-2noble.20251001.195424`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-dynamic-typesupport-fastrtps/copyright`)
 
@@ -11944,11 +11970,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-generator-cpp/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosidl-generator-py=0.24.1-2noble.20250822.215200`
+### `dpkg` source package: `ros-kilted-rosidl-generator-py=0.24.2-1noble.20251006.222021`
 
 Binary Packages:
 
-- `ros-kilted-rosidl-generator-py=0.24.1-2noble.20250822.215200`
+- `ros-kilted-rosidl-generator-py=0.24.2-1noble.20251006.222021`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-generator-py/copyright`)
 
@@ -12042,11 +12068,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-runtime-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosidl-typesupport-c=3.3.3-2noble.20250822.214740`
+### `dpkg` source package: `ros-kilted-rosidl-typesupport-c=3.3.3-2noble.20250922.140242`
 
 Binary Packages:
 
-- `ros-kilted-rosidl-typesupport-c=3.3.3-2noble.20250822.214740`
+- `ros-kilted-rosidl-typesupport-c=3.3.3-2noble.20250922.140242`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-typesupport-c/copyright`)
 
@@ -12056,11 +12082,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-typesupport-c/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosidl-typesupport-cpp=3.3.3-2noble.20250822.215328`
+### `dpkg` source package: `ros-kilted-rosidl-typesupport-cpp=3.3.3-2noble.20250922.140536`
 
 Binary Packages:
 
-- `ros-kilted-rosidl-typesupport-cpp=3.3.3-2noble.20250822.215328`
+- `ros-kilted-rosidl-typesupport-cpp=3.3.3-2noble.20250922.140536`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-typesupport-cpp/copyright`)
 
@@ -12070,11 +12096,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-typesupport-cpp/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosidl-typesupport-fastrtps-c=3.8.0-2noble.20250822.215320`
+### `dpkg` source package: `ros-kilted-rosidl-typesupport-fastrtps-c=3.8.1-1noble.20251001.185505`
 
 Binary Packages:
 
-- `ros-kilted-rosidl-typesupport-fastrtps-c=3.8.0-2noble.20250822.215320`
+- `ros-kilted-rosidl-typesupport-fastrtps-c=3.8.1-1noble.20251001.185505`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-typesupport-fastrtps-c/copyright`)
 
@@ -12084,11 +12110,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-typesupport-fastrtps-c
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rosidl-typesupport-fastrtps-cpp=3.8.0-2noble.20250822.215158`
+### `dpkg` source package: `ros-kilted-rosidl-typesupport-fastrtps-cpp=3.8.1-1noble.20251001.185224`
 
 Binary Packages:
 
-- `ros-kilted-rosidl-typesupport-fastrtps-cpp=3.8.0-2noble.20250822.215158`
+- `ros-kilted-rosidl-typesupport-fastrtps-cpp=3.8.1-1noble.20251001.185224`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-typesupport-fastrtps-cpp/copyright`)
 
@@ -12140,11 +12166,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rosidl-typesupport-introspect
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-rpyutils=0.6.2-2noble.20250424.202824`
+### `dpkg` source package: `ros-kilted-rpyutils=0.6.3-1noble.20250922.134928`
 
 Binary Packages:
 
-- `ros-kilted-rpyutils=0.6.2-2noble.20250424.202824`
+- `ros-kilted-rpyutils=0.6.3-1noble.20250922.134928`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-rpyutils/copyright`)
 
@@ -12154,11 +12180,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rpyutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-sensor-msgs-py=5.5.0-2noble.20250823.025054`
+### `dpkg` source package: `ros-kilted-sensor-msgs-py=5.5.1-1noble.20251007.021900`
 
 Binary Packages:
 
-- `ros-kilted-sensor-msgs-py=5.5.0-2noble.20250823.025054`
+- `ros-kilted-sensor-msgs-py=5.5.1-1noble.20251007.021900`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-sensor-msgs-py/copyright`)
 
@@ -12168,11 +12194,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-sensor-msgs-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-sensor-msgs=5.5.0-2noble.20250823.020310`
+### `dpkg` source package: `ros-kilted-sensor-msgs=5.5.1-1noble.20251007.014555`
 
 Binary Packages:
 
-- `ros-kilted-sensor-msgs=5.5.0-2noble.20250823.020310`
+- `ros-kilted-sensor-msgs=5.5.1-1noble.20251007.014555`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-sensor-msgs/copyright`)
 
@@ -12182,11 +12208,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-sensor-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-service-msgs=2.3.0-2noble.20250822.220110`
+### `dpkg` source package: `ros-kilted-service-msgs=2.3.0-2noble.20251006.222951`
 
 Binary Packages:
 
-- `ros-kilted-service-msgs=2.3.0-2noble.20250822.220110`
+- `ros-kilted-service-msgs=2.3.0-2noble.20251006.222951`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-service-msgs/copyright`)
 
@@ -12196,11 +12222,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-service-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-shape-msgs=5.5.0-2noble.20250823.021203`
+### `dpkg` source package: `ros-kilted-shape-msgs=5.5.1-1noble.20251007.020007`
 
 Binary Packages:
 
-- `ros-kilted-shape-msgs=5.5.0-2noble.20250823.021203`
+- `ros-kilted-shape-msgs=5.5.1-1noble.20251007.020007`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-shape-msgs/copyright`)
 
@@ -12239,11 +12265,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-sqlite3-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-sros2-cmake=0.15.2-1noble.20250823.051457`
+### `dpkg` source package: `ros-kilted-sros2-cmake=0.15.2-1noble.20251007.051125`
 
 Binary Packages:
 
-- `ros-kilted-sros2-cmake=0.15.2-1noble.20250823.051457`
+- `ros-kilted-sros2-cmake=0.15.2-1noble.20251007.051125`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-sros2-cmake/copyright`)
 
@@ -12253,11 +12279,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-sros2-cmake/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-sros2=0.15.2-1noble.20250823.051027`
+### `dpkg` source package: `ros-kilted-sros2=0.15.2-1noble.20251007.045715`
 
 Binary Packages:
 
-- `ros-kilted-sros2=0.15.2-1noble.20250823.051027`
+- `ros-kilted-sros2=0.15.2-1noble.20251007.045715`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-sros2/copyright`)
 
@@ -12267,11 +12293,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-sros2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-statistics-msgs=2.3.0-2noble.20250822.233243`
+### `dpkg` source package: `ros-kilted-statistics-msgs=2.3.0-2noble.20251006.223955`
 
 Binary Packages:
 
-- `ros-kilted-statistics-msgs=2.3.0-2noble.20250822.233243`
+- `ros-kilted-statistics-msgs=2.3.0-2noble.20251006.223955`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-statistics-msgs/copyright`)
 
@@ -12281,11 +12307,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-statistics-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-std-msgs=5.5.0-2noble.20250822.233244`
+### `dpkg` source package: `ros-kilted-std-msgs=5.5.1-1noble.20251006.224007`
 
 Binary Packages:
 
-- `ros-kilted-std-msgs=5.5.0-2noble.20250822.233244`
+- `ros-kilted-std-msgs=5.5.1-1noble.20251006.224007`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-std-msgs/copyright`)
 
@@ -12295,11 +12321,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-std-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-std-srvs=5.5.0-2noble.20250823.021803`
+### `dpkg` source package: `ros-kilted-std-srvs=5.5.1-1noble.20251007.021651`
 
 Binary Packages:
 
-- `ros-kilted-std-srvs=5.5.0-2noble.20250823.021803`
+- `ros-kilted-std-srvs=5.5.1-1noble.20251007.021651`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-std-srvs/copyright`)
 
@@ -12309,11 +12335,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-std-srvs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-stereo-image-proc=6.0.11-1noble.20250823.053517`
+### `dpkg` source package: `ros-kilted-stereo-image-proc=6.0.11-1noble.20251007.040605`
 
 Binary Packages:
 
-- `ros-kilted-stereo-image-proc=6.0.11-1noble.20250823.053517`
+- `ros-kilted-stereo-image-proc=6.0.11-1noble.20251007.040605`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-stereo-image-proc/copyright`)
 
@@ -12323,11 +12349,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-stereo-image-proc/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-stereo-msgs=5.5.0-2noble.20250823.021127`
+### `dpkg` source package: `ros-kilted-stereo-msgs=5.5.1-1noble.20251007.015951`
 
 Binary Packages:
 
-- `ros-kilted-stereo-msgs=5.5.0-2noble.20250823.021127`
+- `ros-kilted-stereo-msgs=5.5.1-1noble.20251007.015951`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-stereo-msgs/copyright`)
 
@@ -12337,11 +12363,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-stereo-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-bullet=0.41.2-1noble.20250823.052228`
+### `dpkg` source package: `ros-kilted-tf2-bullet=0.41.2-1noble.20251007.035039`
 
 Binary Packages:
 
-- `ros-kilted-tf2-bullet=0.41.2-1noble.20250823.052228`
+- `ros-kilted-tf2-bullet=0.41.2-1noble.20251007.035039`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-bullet/copyright`)
 
@@ -12351,11 +12377,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-bullet/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-eigen-kdl=0.41.2-1noble.20250823.033145`
+### `dpkg` source package: `ros-kilted-tf2-eigen-kdl=0.41.2-1noble.20251007.024451`
 
 Binary Packages:
 
-- `ros-kilted-tf2-eigen-kdl=0.41.2-1noble.20250823.033145`
+- `ros-kilted-tf2-eigen-kdl=0.41.2-1noble.20251007.024451`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-eigen-kdl/copyright`)
 
@@ -12365,11 +12391,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-eigen-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-eigen=0.41.2-1noble.20250823.052227`
+### `dpkg` source package: `ros-kilted-tf2-eigen=0.41.2-1noble.20251007.035045`
 
 Binary Packages:
 
-- `ros-kilted-tf2-eigen=0.41.2-1noble.20250823.052227`
+- `ros-kilted-tf2-eigen=0.41.2-1noble.20251007.035045`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-eigen/copyright`)
 
@@ -12379,11 +12405,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-eigen/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-geometry-msgs=0.41.2-1noble.20250823.052231`
+### `dpkg` source package: `ros-kilted-tf2-geometry-msgs=0.41.2-1noble.20251007.035048`
 
 Binary Packages:
 
-- `ros-kilted-tf2-geometry-msgs=0.41.2-1noble.20250823.052231`
+- `ros-kilted-tf2-geometry-msgs=0.41.2-1noble.20251007.035048`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-geometry-msgs/copyright`)
 
@@ -12393,11 +12419,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-geometry-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-kdl=0.41.2-1noble.20250823.051622`
+### `dpkg` source package: `ros-kilted-tf2-kdl=0.41.2-1noble.20251007.034847`
 
 Binary Packages:
 
-- `ros-kilted-tf2-kdl=0.41.2-1noble.20250823.051622`
+- `ros-kilted-tf2-kdl=0.41.2-1noble.20251007.034847`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-kdl/copyright`)
 
@@ -12407,11 +12433,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-msgs=0.41.2-1noble.20250823.020452`
+### `dpkg` source package: `ros-kilted-tf2-msgs=0.41.2-1noble.20251007.014624`
 
 Binary Packages:
 
-- `ros-kilted-tf2-msgs=0.41.2-1noble.20250823.020452`
+- `ros-kilted-tf2-msgs=0.41.2-1noble.20251007.014624`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-msgs/copyright`)
 
@@ -12421,11 +12447,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-py=0.41.2-1noble.20250823.043654`
+### `dpkg` source package: `ros-kilted-tf2-py=0.41.2-1noble.20251007.034148`
 
 Binary Packages:
 
-- `ros-kilted-tf2-py=0.41.2-1noble.20250823.043654`
+- `ros-kilted-tf2-py=0.41.2-1noble.20251007.034148`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-py/copyright`)
 
@@ -12435,11 +12461,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-ros-py=0.41.2-1noble.20250823.043900`
+### `dpkg` source package: `ros-kilted-tf2-ros-py=0.41.2-1noble.20251007.034328`
 
 Binary Packages:
 
-- `ros-kilted-tf2-ros-py=0.41.2-1noble.20250823.043900`
+- `ros-kilted-tf2-ros-py=0.41.2-1noble.20251007.034328`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-ros-py/copyright`)
 
@@ -12449,11 +12475,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-ros-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-ros=0.41.2-1noble.20250823.051112`
+### `dpkg` source package: `ros-kilted-tf2-ros=0.41.2-1noble.20251007.034356`
 
 Binary Packages:
 
-- `ros-kilted-tf2-ros=0.41.2-1noble.20250823.051112`
+- `ros-kilted-tf2-ros=0.41.2-1noble.20251007.034356`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-ros/copyright`)
 
@@ -12463,11 +12489,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-ros/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-sensor-msgs=0.41.2-1noble.20250823.051829`
+### `dpkg` source package: `ros-kilted-tf2-sensor-msgs=0.41.2-1noble.20251007.034944`
 
 Binary Packages:
 
-- `ros-kilted-tf2-sensor-msgs=0.41.2-1noble.20250823.051829`
+- `ros-kilted-tf2-sensor-msgs=0.41.2-1noble.20251007.034944`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-sensor-msgs/copyright`)
 
@@ -12477,11 +12503,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-sensor-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-tools=0.41.2-1noble.20250823.044318`
+### `dpkg` source package: `ros-kilted-tf2-tools=0.41.2-1noble.20251007.034727`
 
 Binary Packages:
 
-- `ros-kilted-tf2-tools=0.41.2-1noble.20250823.044318`
+- `ros-kilted-tf2-tools=0.41.2-1noble.20251007.034727`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-tools/copyright`)
 
@@ -12491,11 +12517,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-tools/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2=0.41.2-1noble.20250823.031646`
+### `dpkg` source package: `ros-kilted-tf2=0.41.2-1noble.20251007.023750`
 
 Binary Packages:
 
-- `ros-kilted-tf2=0.41.2-1noble.20250823.031646`
+- `ros-kilted-tf2=0.41.2-1noble.20251007.023750`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2/copyright`)
 
@@ -12505,11 +12531,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-theora-image-transport=5.1.0-1noble.20250823.051723`
+### `dpkg` source package: `ros-kilted-theora-image-transport=5.1.1-1noble.20251007.035239`
 
 Binary Packages:
 
-- `ros-kilted-theora-image-transport=5.1.0-1noble.20250823.051723`
+- `ros-kilted-theora-image-transport=5.1.1-1noble.20251007.035239`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-theora-image-transport/copyright`)
 
@@ -12533,11 +12559,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tinyxml2-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tracetools-image-pipeline=6.0.11-1noble.20250823.033130`
+### `dpkg` source package: `ros-kilted-tracetools-image-pipeline=6.0.11-1noble.20251007.024421`
 
 Binary Packages:
 
-- `ros-kilted-tracetools-image-pipeline=6.0.11-1noble.20250823.033130`
+- `ros-kilted-tracetools-image-pipeline=6.0.11-1noble.20251007.024421`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tracetools-image-pipeline/copyright`)
 
@@ -12561,11 +12587,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tracetools/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-trajectory-msgs=5.5.0-2noble.20250823.020452`
+### `dpkg` source package: `ros-kilted-trajectory-msgs=5.5.1-1noble.20251007.014747`
 
 Binary Packages:
 
-- `ros-kilted-trajectory-msgs=5.5.0-2noble.20250823.020452`
+- `ros-kilted-trajectory-msgs=5.5.1-1noble.20251007.014747`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-trajectory-msgs/copyright`)
 
@@ -12575,11 +12601,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-trajectory-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-type-description-interfaces=2.3.0-2noble.20250822.220203`
+### `dpkg` source package: `ros-kilted-type-description-interfaces=2.3.0-2noble.20251006.223427`
 
 Binary Packages:
 
-- `ros-kilted-type-description-interfaces=2.3.0-2noble.20250822.220203`
+- `ros-kilted-type-description-interfaces=2.3.0-2noble.20251006.223427`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-type-description-interfaces/copyright`)
 
@@ -12604,11 +12630,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-uncrustify-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-unique-identifier-msgs=2.7.0-2noble.20250822.215653`
+### `dpkg` source package: `ros-kilted-unique-identifier-msgs=2.7.0-2noble.20251006.222932`
 
 Binary Packages:
 
-- `ros-kilted-unique-identifier-msgs=2.7.0-2noble.20250822.215653`
+- `ros-kilted-unique-identifier-msgs=2.7.0-2noble.20251006.222932`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-unique-identifier-msgs/copyright`)
 
@@ -12618,11 +12644,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-unique-identifier-msgs/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-urdf-parser-plugin=2.12.2-2noble.20250823.033132`
+### `dpkg` source package: `ros-kilted-urdf-parser-plugin=2.12.2-2noble.20251007.024426`
 
 Binary Packages:
 
-- `ros-kilted-urdf-parser-plugin=2.12.2-2noble.20250823.033132`
+- `ros-kilted-urdf-parser-plugin=2.12.2-2noble.20251007.024426`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-urdf-parser-plugin/copyright`)
 
@@ -12632,11 +12658,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-urdf-parser-plugin/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-urdf=2.12.2-2noble.20250823.033303`
+### `dpkg` source package: `ros-kilted-urdf=2.12.2-2noble.20251007.033638`
 
 Binary Packages:
 
-- `ros-kilted-urdf=2.12.2-2noble.20250823.033303`
+- `ros-kilted-urdf=2.12.2-2noble.20251007.033638`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-urdf/copyright`)
 
@@ -12674,11 +12700,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-urdfdom/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-vision-opencv=4.1.0-2noble.20250823.041521`
+### `dpkg` source package: `ros-kilted-vision-opencv=4.1.0-2noble.20251007.040900`
 
 Binary Packages:
 
-- `ros-kilted-vision-opencv=4.1.0-2noble.20250823.041521`
+- `ros-kilted-vision-opencv=4.1.0-2noble.20251007.040900`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-vision-opencv/copyright`)
 
@@ -12689,11 +12715,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-vision-opencv/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-visualization-msgs=5.5.0-2noble.20250823.020945`
+### `dpkg` source package: `ros-kilted-visualization-msgs=5.5.1-1noble.20251007.015304`
 
 Binary Packages:
 
-- `ros-kilted-visualization-msgs=5.5.0-2noble.20250823.020945`
+- `ros-kilted-visualization-msgs=5.5.1-1noble.20251007.015304`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-visualization-msgs/copyright`)
 
@@ -12718,11 +12744,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-yaml-cpp-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-zenoh-cpp-vendor=0.6.3-1noble.20250821.133028`
+### `dpkg` source package: `ros-kilted-zenoh-cpp-vendor=0.6.5-1noble.20251006.222059`
 
 Binary Packages:
 
-- `ros-kilted-zenoh-cpp-vendor=0.6.3-1noble.20250821.133028`
+- `ros-kilted-zenoh-cpp-vendor=0.6.5-1noble.20251006.222059`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-zenoh-cpp-vendor/copyright`)
 
@@ -12732,11 +12758,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-zenoh-cpp-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-zstd-image-transport=5.1.0-1noble.20250823.055552`
+### `dpkg` source package: `ros-kilted-zstd-image-transport=5.1.1-1noble.20251007.050029`
 
 Binary Packages:
 
-- `ros-kilted-zstd-image-transport=5.1.0-1noble.20250823.055552`
+- `ros-kilted-zstd-image-transport=5.1.1-1noble.20251007.050029`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-zstd-image-transport/copyright`)
 
