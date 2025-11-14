@@ -337,11 +337,11 @@ $ docker pull open-liberty@sha256:66687bc22f7d574578dd4ddc66dd2ec5a8a243886d4122
 
 -	Layers:
 	-	`sha256:1832311a3bc334a13448e30cd27e264862073d899c9d134a526c3be171c895dc`  
-		Last Modified: Fri, 14 Nov 2025 00:31:54 GMT  
+		Last Modified: Fri, 14 Nov 2025 03:52:28 GMT  
 		Size: 3.9 MB (3878838 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f5e87bb762fd16496d0552a745d8966fedcaf984bafe1cd0c8172da1c1f55f33`  
-		Last Modified: Fri, 14 Nov 2025 00:31:54 GMT  
+		Last Modified: Fri, 14 Nov 2025 03:52:29 GMT  
 		Size: 39.6 KB (39633 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -667,10 +667,10 @@ $ docker pull open-liberty@sha256:b5cbbb7ff01c2c935f78106b18ef83a21182a33bbca043
 
 -	Layers:
 	-	`sha256:76ccee7082d163d8fc6ee93726e244a5d861d7704fb1649e76535389a01adbc8`  
-		Last Modified: Fri, 14 Nov 2025 00:25:17 GMT  
+		Last Modified: Fri, 14 Nov 2025 03:52:36 GMT  
 		Size: 3.9 MB (3881483 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2f2c1449bd65f7d28c7043f0bbc2d8a4803c897fe577c8c797f82067208bac35`  
-		Last Modified: Fri, 14 Nov 2025 00:25:17 GMT  
+		Last Modified: Fri, 14 Nov 2025 03:52:37 GMT  
 		Size: 39.5 KB (39494 bytes)  
 		MIME: application/vnd.in-toto+json
