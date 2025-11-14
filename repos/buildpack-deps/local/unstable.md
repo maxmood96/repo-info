@@ -2141,20 +2141,13 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`, `/usr/share/doc/l
 - `IJG`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.16-2
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.16-2.dsc' lcms2_2.16-2.dsc 1972 SHA256:3e5796b630090628b5a5662f002d4a9909592963626514241dd201e45e7b1d1c
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.16.orig.tar.gz' lcms2_2.16.orig.tar.gz 7632822 SHA256:d873d34ad8b9b4cea010631f1a6228d2087475e4dc5e763eb81acc23d9d45a51
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.16-2.debian.tar.xz' lcms2_2.16-2.debian.tar.xz 11908 SHA256:5475f5d85514c3004a33a2c103a01a7f6a8ed4fcb41d53518d098fb927b4f916
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lcms2/2.16-2/
 
-- https://sources.debian.net/src/lcms2/2.16-2/ (for browsing the source)
-- https://sources.debian.net/src/lcms2/2.16-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lcms2/2.16-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lerc=4.0.0+ds-5`
 
@@ -4804,20 +4797,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-18=18.0-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.0-1.dsc' postgresql-18_18.0-1.dsc 4420 SHA256:4621ce6b4d6d078ea66b14313ccd2f044f9f4418de84df316758bc6c11108a72
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.0.orig.tar.bz2' postgresql-18_18.0.orig.tar.bz2 22412570 SHA256:0d5b903b1e5fe361bca7aa9507519933773eb34266b1357c4e7780fdee6d6078
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.0-1.debian.tar.xz' postgresql-18_18.0-1.debian.tar.xz 22896 SHA256:f0dfbb93110f3e630e1d96567f0ba68d383a77db208165f1872b5fdf712f5419
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-18/18.0-1/
 
-- https://sources.debian.net/src/postgresql-18/18.0-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-18/18.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-18/18.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-9`
 
