@@ -1,7 +1,7 @@
 ## `flink:scala_2.12-java21`
 
 ```console
-$ docker pull flink@sha256:152895c67224cbdcf18ab5d87cd67a3cb175a22f8bc52a6e7c7ef4f7bc004ace
+$ docker pull flink@sha256:66a49f6383b60bd985d3870628c7c665e0e026c85616a557cb1bccb439365b2a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,283 +14,283 @@ $ docker pull flink@sha256:152895c67224cbdcf18ab5d87cd67a3cb175a22f8bc52a6e7c7ef
 ### `flink:scala_2.12-java21` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:87bae97a11eeae9898bfd7226b13312fdd798c6958a10d80bd4d3827af3bb8e1
+$ docker pull flink@sha256:6ef7087333bb27ae18f35eda2b316bbdbbe6134321a3516a156f8f715aa38b9a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **668.6 MB (668591462 bytes)**  
+-	Total Size: **668.6 MB (668591622 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d380d19caa732b88103ea137d34407c48f51b8caacd85064020753357b6687e1`
+-	Image ID: `sha256:60831df9e7d8302f36bd46ca38aaff10fe8d74fd724d417eb6e4655a59caa207`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Wed, 01 Oct 2025 07:05:07 GMT
+# Mon, 13 Oct 2025 17:23:18 GMT
 ARG RELEASE
-# Wed, 01 Oct 2025 07:05:07 GMT
+# Mon, 13 Oct 2025 17:23:18 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 01 Oct 2025 07:05:07 GMT
+# Mon, 13 Oct 2025 17:23:18 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 01 Oct 2025 07:05:07 GMT
+# Mon, 13 Oct 2025 17:23:18 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 01 Oct 2025 07:05:09 GMT
-ADD file:32d41b6329e8f89fa4ac92ef97c04b7cfd5e90fb74e1509c3e27d7c91195b7c7 in / 
-# Wed, 01 Oct 2025 07:05:10 GMT
+# Mon, 13 Oct 2025 17:23:20 GMT
+ADD file:d025507456f1d7d19195885b1c02a346454d60c9348cbd3be92431f2d7e2666e in / 
+# Mon, 13 Oct 2025 17:23:20 GMT
 CMD ["/bin/bash"]
-# Sat, 08 Nov 2025 17:59:57 GMT
+# Thu, 13 Nov 2025 23:21:00 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 08 Nov 2025 17:59:57 GMT
+# Thu, 13 Nov 2025 23:21:00 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 08 Nov 2025 17:59:57 GMT
+# Thu, 13 Nov 2025 23:21:00 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 08 Nov 2025 17:59:57 GMT
+# Thu, 13 Nov 2025 23:21:00 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 08 Nov 2025 17:59:57 GMT
+# Thu, 13 Nov 2025 23:21:00 GMT
 ENV JAVA_VERSION=jdk-21.0.9+10
-# Sat, 08 Nov 2025 18:00:00 GMT
+# Thu, 13 Nov 2025 23:21:31 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aeab55d064a1a27a3744b0880b9b414077b4ed2b1790817eea3df60aec946431';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_x64_linux_hotspot_21.0.9_10.tar.gz';          ;;        arm64)          ESUM='1d041073c65e834bdb4da732485a54ff829859dcd1549e7992f15bd73341be29';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.9_10.tar.gz';          ;;        ppc64el)          ESUM='4973d6a43393854ccabd32bf7a1306788831586166fc8f5fa34a9df428366014';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.9_10.tar.gz';          ;;        s390x)          ESUM='951eb9fd40e4478b0a7069b672bc0307f59045d756dd3ca6ed0b1ea12ab41ca2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_s390x_linux_hotspot_21.0.9_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Sat, 08 Nov 2025 18:00:00 GMT
+# Thu, 13 Nov 2025 23:21:31 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Sat, 08 Nov 2025 18:00:00 GMT
+# Thu, 13 Nov 2025 23:21:31 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Sat, 08 Nov 2025 18:00:00 GMT
+# Thu, 13 Nov 2025 23:21:31 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 08 Nov 2025 18:12:41 GMT
+# Fri, 14 Nov 2025 00:17:37 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 08 Nov 2025 18:12:43 GMT
+# Fri, 14 Nov 2025 00:17:39 GMT
 ENV GOSU_VERSION=1.11
-# Sat, 08 Nov 2025 18:12:43 GMT
+# Fri, 14 Nov 2025 00:17:39 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in hkps://keys.openpgp.org $(shuf -e                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true # buildkit
-# Sat, 08 Nov 2025 18:12:43 GMT
+# Fri, 14 Nov 2025 00:17:39 GMT
 ENV FLINK_TGZ_URL=https://dlcdn.apache.org/flink/flink-2.1.1/flink-2.1.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://downloads.apache.org/flink/flink-2.1.1/flink-2.1.1-bin-scala_2.12.tgz.asc GPG_KEY=5EAD34D67F105064591085E4AA69A48B2A51091D CHECK_GPG=true
-# Sat, 08 Nov 2025 18:12:43 GMT
+# Fri, 14 Nov 2025 00:17:39 GMT
 ENV FLINK_HOME=/opt/flink
-# Sat, 08 Nov 2025 18:12:43 GMT
+# Fri, 14 Nov 2025 00:17:39 GMT
 ENV PATH=/opt/flink/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 08 Nov 2025 18:12:43 GMT
+# Fri, 14 Nov 2025 00:17:39 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink # buildkit
-# Sat, 08 Nov 2025 18:12:43 GMT
+# Fri, 14 Nov 2025 00:17:39 GMT
 WORKDIR /opt/flink
-# Sat, 08 Nov 2025 18:13:22 GMT
+# Fri, 14 Nov 2025 00:17:52 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in hkps://keys.openpgp.org $(shuf -e                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;     CONF_FILE="${FLINK_HOME}/conf/config.yaml";   /bin/bash "$FLINK_HOME/bin/config-parser-utils.sh" "${FLINK_HOME}/conf" "${FLINK_HOME}/bin" "${FLINK_HOME}/lib"     "-repKV" "rest.address,localhost,0.0.0.0"     "-repKV" "rest.bind-address,localhost,0.0.0.0"     "-repKV" "jobmanager.bind-host,localhost,0.0.0.0"     "-repKV" "taskmanager.bind-host,localhost,0.0.0.0"     "-rmKV" "taskmanager.host=localhost"; # buildkit
-# Sat, 08 Nov 2025 18:13:22 GMT
+# Fri, 14 Nov 2025 00:17:52 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Sat, 08 Nov 2025 18:13:22 GMT
+# Fri, 14 Nov 2025 00:17:52 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 08 Nov 2025 18:13:22 GMT
+# Fri, 14 Nov 2025 00:17:52 GMT
 EXPOSE map[6123/tcp:{} 8081/tcp:{}]
-# Sat, 08 Nov 2025 18:13:22 GMT
+# Fri, 14 Nov 2025 00:17:52 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:af6eca94c8104c8e90d3f9efe59c2b3a02b20aad3d985e31c7cd009ea104c447`  
-		Last Modified: Wed, 01 Oct 2025 10:09:45 GMT  
-		Size: 29.5 MB (29536818 bytes)  
+	-	`sha256:7e49dc6156b0b532730614d83a65ae5e7ce61e966b0498703d333b4d03505e4f`  
+		Last Modified: Mon, 13 Oct 2025 19:13:16 GMT  
+		Size: 29.5 MB (29536798 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ac2efaf4f7327a471e1b969eaddc7e44e5ccae0df783fcaa48bf94864d07a0d`  
-		Last Modified: Sat, 08 Nov 2025 18:00:21 GMT  
-		Size: 16.2 MB (16150304 bytes)  
+	-	`sha256:e10875650961bf4063d5186970a8c79ef61cf11ca22d49b715b9d59712e0869b`  
+		Last Modified: Thu, 13 Nov 2025 23:21:30 GMT  
+		Size: 16.2 MB (16150480 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6c0a6ab39aeac3774dd534c27427e0d533f07a637624ab254c6849bda796f16`  
-		Last Modified: Sat, 08 Nov 2025 18:00:28 GMT  
-		Size: 53.0 MB (52978483 bytes)  
+	-	`sha256:4be944c6b743dbf21ecbe2d28355dc9f0e5ceadd25ba4c33e09883ea3fb27acc`  
+		Last Modified: Thu, 13 Nov 2025 23:21:56 GMT  
+		Size: 53.0 MB (52978531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc4f2a033ca8df84c1a3081f8ef917342b430ebdc1587bedf05eb381e45383ac`  
-		Last Modified: Sat, 08 Nov 2025 18:00:21 GMT  
-		Size: 160.0 B  
+	-	`sha256:82f0f6707dd14f4b50b2fcf046afafdd21c569b1c8c0d05eed070ceaa196fdf0`  
+		Last Modified: Thu, 13 Nov 2025 23:21:50 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fc3096c0eb2bbc9ac33b0cdb8552433f874659010096eb476cdd53f1aae60a3`  
-		Last Modified: Sat, 08 Nov 2025 18:00:25 GMT  
+	-	`sha256:55135a7213f6021c2f7be62142583bd9d4eef722869235128decb808bad7d3cd`  
+		Last Modified: Thu, 13 Nov 2025 23:21:50 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f800442ff9bfdc7361c1693dabc54de359101135c0a56f72bda7e2aa37cc1945`  
-		Last Modified: Sat, 08 Nov 2025 18:14:09 GMT  
-		Size: 1.2 MB (1169677 bytes)  
+	-	`sha256:9989789b471ef5da67e2120deab79aacdf33a78953b1530878d2d56540047312`  
+		Last Modified: Fri, 14 Nov 2025 00:18:45 GMT  
+		Size: 1.2 MB (1169717 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4571f1f9094ed92805d9ca4cbb6172735f60de886107102bded65e6a018527b`  
-		Last Modified: Sat, 08 Nov 2025 18:14:09 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:682c336f753d24ffba76bb52e78b58aa1ee863e780877f58136d0619fb426494`  
+		Last Modified: Fri, 14 Nov 2025 00:18:45 GMT  
+		Size: 900.5 KB (900494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:730903b864d3366fddf56287e73efbbffbfa6f4198383e191f343c8dc1dc7cb1`  
-		Last Modified: Sat, 08 Nov 2025 18:14:09 GMT  
-		Size: 4.6 KB (4590 bytes)  
+	-	`sha256:c67f25607e9a6e976dd8e16c8e3cad397abded71bb654c5b5b5f18130a9f9bd7`  
+		Last Modified: Fri, 14 Nov 2025 00:18:45 GMT  
+		Size: 4.6 KB (4594 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e572dbc3d2ec029f07dfaa52106f5782d86da15ec5c10fd085e39e4b08b3dc9`  
-		Last Modified: Sat, 08 Nov 2025 18:14:09 GMT  
+	-	`sha256:9abd9b57ad731d74171fccaf730b77b9fbf0ef6b33c7e035c4347924eb57fbeb`  
+		Last Modified: Fri, 14 Nov 2025 00:18:45 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d671323543f21e34f8efef04b7fa06a2b0b12d750e3f273a1f192d31f216be78`  
-		Last Modified: Sun, 09 Nov 2025 01:49:57 GMT  
-		Size: 567.8 MB (567846271 bytes)  
+	-	`sha256:9f7fd76354559eaf35abf79c7fe5adff3425fee0b81d3722ee2a0dd3d7ea6761`  
+		Last Modified: Fri, 14 Nov 2025 02:06:07 GMT  
+		Size: 567.8 MB (567846184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16e858221b8555813a42d42b2ce59434a715bcd3668bba17dab2dbe601752f06`  
-		Last Modified: Sat, 08 Nov 2025 18:14:09 GMT  
-		Size: 2.3 KB (2268 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `flink:scala_2.12-java21` - unknown; unknown
-
-```console
-$ docker pull flink@sha256:d98dd3bb95a7f3c902b62a42d21d1d799a5fe2df75d84ccab06309dfebdfee0a
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (4017960 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d3759a395aca3240920a0bed0a9a476131a9631a23476f6030006035808cea69`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:0222b64987a67e1a1137d2e3a449ffd0555463b8c7a77f4b6cd3e582d16c94ad`  
-		Last Modified: Sat, 08 Nov 2025 23:02:31 GMT  
-		Size: 4.0 MB (3989138 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:aae41207df4a029ab755c5807375daee68fba3a4b044fd63e895e3a5e6d238bc`  
-		Last Modified: Sat, 08 Nov 2025 23:02:31 GMT  
-		Size: 28.8 KB (28822 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `flink:scala_2.12-java21` - linux; arm64 variant v8
-
-```console
-$ docker pull flink@sha256:a7b4326337786a02eeabc6cbc9d6a92b6e59768475eecb610b300d084f3fb2d1
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **665.3 MB (665330749 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6865568c47a40b2a38f490afd5648de474905395fecbc9bddc06bde6eebd645`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["help"]`
-
-```dockerfile
-# Wed, 01 Oct 2025 07:16:10 GMT
-ARG RELEASE
-# Wed, 01 Oct 2025 07:16:10 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 01 Oct 2025 07:16:10 GMT
-LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 01 Oct 2025 07:16:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Wed, 01 Oct 2025 07:16:12 GMT
-ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
-# Wed, 01 Oct 2025 07:16:12 GMT
-CMD ["/bin/bash"]
-# Sat, 08 Nov 2025 17:59:13 GMT
-ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 08 Nov 2025 17:59:13 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 08 Nov 2025 17:59:13 GMT
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 08 Nov 2025 17:59:13 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 08 Nov 2025 17:59:13 GMT
-ENV JAVA_VERSION=jdk-21.0.9+10
-# Sat, 08 Nov 2025 17:59:17 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aeab55d064a1a27a3744b0880b9b414077b4ed2b1790817eea3df60aec946431';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_x64_linux_hotspot_21.0.9_10.tar.gz';          ;;        arm64)          ESUM='1d041073c65e834bdb4da732485a54ff829859dcd1549e7992f15bd73341be29';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.9_10.tar.gz';          ;;        ppc64el)          ESUM='4973d6a43393854ccabd32bf7a1306788831586166fc8f5fa34a9df428366014';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.9_10.tar.gz';          ;;        s390x)          ESUM='951eb9fd40e4478b0a7069b672bc0307f59045d756dd3ca6ed0b1ea12ab41ca2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_s390x_linux_hotspot_21.0.9_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Sat, 08 Nov 2025 17:59:17 GMT
-RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Sat, 08 Nov 2025 17:59:17 GMT
-COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Sat, 08 Nov 2025 17:59:17 GMT
-ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 08 Nov 2025 18:15:16 GMT
-RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 08 Nov 2025 18:15:18 GMT
-ENV GOSU_VERSION=1.11
-# Sat, 08 Nov 2025 18:15:18 GMT
-RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in hkps://keys.openpgp.org $(shuf -e                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true # buildkit
-# Sat, 08 Nov 2025 18:15:18 GMT
-ENV FLINK_TGZ_URL=https://dlcdn.apache.org/flink/flink-2.1.1/flink-2.1.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://downloads.apache.org/flink/flink-2.1.1/flink-2.1.1-bin-scala_2.12.tgz.asc GPG_KEY=5EAD34D67F105064591085E4AA69A48B2A51091D CHECK_GPG=true
-# Sat, 08 Nov 2025 18:15:18 GMT
-ENV FLINK_HOME=/opt/flink
-# Sat, 08 Nov 2025 18:15:18 GMT
-ENV PATH=/opt/flink/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 08 Nov 2025 18:15:18 GMT
-RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink # buildkit
-# Sat, 08 Nov 2025 18:15:18 GMT
-WORKDIR /opt/flink
-# Sat, 08 Nov 2025 18:15:31 GMT
-RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in hkps://keys.openpgp.org $(shuf -e                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;     CONF_FILE="${FLINK_HOME}/conf/config.yaml";   /bin/bash "$FLINK_HOME/bin/config-parser-utils.sh" "${FLINK_HOME}/conf" "${FLINK_HOME}/bin" "${FLINK_HOME}/lib"     "-repKV" "rest.address,localhost,0.0.0.0"     "-repKV" "rest.bind-address,localhost,0.0.0.0"     "-repKV" "jobmanager.bind-host,localhost,0.0.0.0"     "-repKV" "taskmanager.bind-host,localhost,0.0.0.0"     "-rmKV" "taskmanager.host=localhost"; # buildkit
-# Sat, 08 Nov 2025 18:15:31 GMT
-COPY docker-entrypoint.sh / # buildkit
-# Sat, 08 Nov 2025 18:15:31 GMT
-ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 08 Nov 2025 18:15:31 GMT
-EXPOSE map[6123/tcp:{} 8081/tcp:{}]
-# Sat, 08 Nov 2025 18:15:31 GMT
-CMD ["help"]
-```
-
--	Layers:
-	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
-		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
-		Size: 27.4 MB (27383107 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:028993be8a76c7119b0d8ee582ec1146a4a9da89a2876287461de42112766642`  
-		Last Modified: Sat, 08 Nov 2025 17:59:53 GMT  
-		Size: 16.1 MB (16066196 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcdf12991e52872631db4f5866423e61c9aa264b18e7b99735b58d5e9b7424ea`  
-		Last Modified: Sat, 08 Nov 2025 17:59:52 GMT  
-		Size: 52.1 MB (52148599 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69e39452ec2196b4a744bd1ec7029e928fad324f4e0aa146be26945045f2e628`  
-		Last Modified: Sat, 08 Nov 2025 17:59:49 GMT  
-		Size: 158.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e9c83d3140bc0663488b5277b96f30f09c76765775b653007c9573825d31d1e`  
-		Last Modified: Sat, 08 Nov 2025 17:59:50 GMT  
-		Size: 2.3 KB (2281 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31d26ef9767004af82eed81c450137e09900d8b5f5a7c37fb8965f0c63a7456f`  
-		Last Modified: Sat, 08 Nov 2025 18:16:27 GMT  
-		Size: 1.0 MB (1041866 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c51c08120505642f996fda7f519159a6a25f52847ec0834365422b8dbcb7204c`  
-		Last Modified: Sat, 08 Nov 2025 18:16:26 GMT  
-		Size: 835.4 KB (835384 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4576c9334b5ee802d3f0859c75abcfffbde34e69467ab26ac632267cd70691b8`  
-		Last Modified: Sat, 08 Nov 2025 18:16:26 GMT  
-		Size: 4.6 KB (4632 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4f75af6cd7b4b3a34ede4db7356ed5469c86247d69a1610bf8fea3321204e7b`  
-		Last Modified: Sat, 08 Nov 2025 18:16:26 GMT  
-		Size: 115.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5230f4b4ab606b8cf87d9449c6a3a99e59abc711e908afa09dd27d706b9e738e`  
-		Last Modified: Sat, 08 Nov 2025 23:05:46 GMT  
-		Size: 567.8 MB (567846144 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:660c1a39ee8a70693d125f1ccbe6820c84ec1ab0bd2d92c3882d99cdca8f367c`  
-		Last Modified: Sat, 08 Nov 2025 18:16:27 GMT  
+	-	`sha256:e09be4ceada9df8f4d85957fa8106f156477fc6aab3fe2828933efe0b1651501`  
+		Last Modified: Fri, 14 Nov 2025 00:18:45 GMT  
 		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:scala_2.12-java21` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:ee32a506470d3d99af08d240701b12e49affa12aaf944cd15de59627e7922e43
+$ docker pull flink@sha256:102c4fdae5a21915388679ad332dffbe5834d89d11315b48a9eaa8437014b334
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (4017841 bytes)**  
+-	Total Size: **4.0 MB (4017960 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66bdb20410538515a3d60d16abb5fafb33e25d1f1b755c5ad5ecb94e27f53fa7`
+-	Image ID: `sha256:811b518b74ee607b5a355788be7f37cc70165d3e89a5fbc4247c0fae27182660`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8621de6d9d207d55b53ddd3a6850ecc1a354e86ccbd7bad4de27bc1fedc396b2`  
-		Last Modified: Sat, 08 Nov 2025 20:02:31 GMT  
+	-	`sha256:11772197201191b776a8d83ad213e034e22e737ae7d7e3041b31b7905bee0bb2`  
+		Last Modified: Fri, 14 Nov 2025 02:03:00 GMT  
+		Size: 4.0 MB (3989138 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:d36973cb2b46dfacebb445671edd864aa255d2be823ef91cea52d6adcb7e8ad4`  
+		Last Modified: Fri, 14 Nov 2025 02:03:01 GMT  
+		Size: 28.8 KB (28822 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `flink:scala_2.12-java21` - linux; arm64 variant v8
+
+```console
+$ docker pull flink@sha256:fa8577e0696102995f52562a45bda5cb5c79623605e0caec0ae47cc903aee668
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **665.3 MB (665331721 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2d15853c6a68d51f1f2677de13f5aa0aa7bdc751347a130dace6994a1c275994`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["help"]`
+
+```dockerfile
+# Mon, 13 Oct 2025 17:25:16 GMT
+ARG RELEASE
+# Mon, 13 Oct 2025 17:25:16 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Mon, 13 Oct 2025 17:25:16 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Mon, 13 Oct 2025 17:25:16 GMT
+LABEL org.opencontainers.image.version=22.04
+# Mon, 13 Oct 2025 17:25:18 GMT
+ADD file:2e0e653363da35febc0204e69cb713c0d1497720522f79d3d531980a7f291a39 in / 
+# Mon, 13 Oct 2025 17:25:18 GMT
+CMD ["/bin/bash"]
+# Thu, 13 Nov 2025 23:20:42 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Thu, 13 Nov 2025 23:20:42 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 13 Nov 2025 23:20:42 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Thu, 13 Nov 2025 23:20:42 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 13 Nov 2025 23:20:42 GMT
+ENV JAVA_VERSION=jdk-21.0.9+10
+# Thu, 13 Nov 2025 23:21:21 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aeab55d064a1a27a3744b0880b9b414077b4ed2b1790817eea3df60aec946431';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_x64_linux_hotspot_21.0.9_10.tar.gz';          ;;        arm64)          ESUM='1d041073c65e834bdb4da732485a54ff829859dcd1549e7992f15bd73341be29';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.9_10.tar.gz';          ;;        ppc64el)          ESUM='4973d6a43393854ccabd32bf7a1306788831586166fc8f5fa34a9df428366014';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.9_10.tar.gz';          ;;        s390x)          ESUM='951eb9fd40e4478b0a7069b672bc0307f59045d756dd3ca6ed0b1ea12ab41ca2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_s390x_linux_hotspot_21.0.9_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Thu, 13 Nov 2025 23:21:21 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Thu, 13 Nov 2025 23:21:21 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 13 Nov 2025 23:21:21 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Fri, 14 Nov 2025 00:16:42 GMT
+RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 14 Nov 2025 00:16:44 GMT
+ENV GOSU_VERSION=1.11
+# Fri, 14 Nov 2025 00:16:44 GMT
+RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in hkps://keys.openpgp.org $(shuf -e                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true # buildkit
+# Fri, 14 Nov 2025 00:16:44 GMT
+ENV FLINK_TGZ_URL=https://dlcdn.apache.org/flink/flink-2.1.1/flink-2.1.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://downloads.apache.org/flink/flink-2.1.1/flink-2.1.1-bin-scala_2.12.tgz.asc GPG_KEY=5EAD34D67F105064591085E4AA69A48B2A51091D CHECK_GPG=true
+# Fri, 14 Nov 2025 00:16:44 GMT
+ENV FLINK_HOME=/opt/flink
+# Fri, 14 Nov 2025 00:16:44 GMT
+ENV PATH=/opt/flink/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 14 Nov 2025 00:16:44 GMT
+RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink # buildkit
+# Fri, 14 Nov 2025 00:16:44 GMT
+WORKDIR /opt/flink
+# Fri, 14 Nov 2025 00:17:18 GMT
+RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in hkps://keys.openpgp.org $(shuf -e                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;     CONF_FILE="${FLINK_HOME}/conf/config.yaml";   /bin/bash "$FLINK_HOME/bin/config-parser-utils.sh" "${FLINK_HOME}/conf" "${FLINK_HOME}/bin" "${FLINK_HOME}/lib"     "-repKV" "rest.address,localhost,0.0.0.0"     "-repKV" "rest.bind-address,localhost,0.0.0.0"     "-repKV" "jobmanager.bind-host,localhost,0.0.0.0"     "-repKV" "taskmanager.bind-host,localhost,0.0.0.0"     "-rmKV" "taskmanager.host=localhost"; # buildkit
+# Fri, 14 Nov 2025 00:17:18 GMT
+COPY docker-entrypoint.sh / # buildkit
+# Fri, 14 Nov 2025 00:17:18 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Fri, 14 Nov 2025 00:17:18 GMT
+EXPOSE map[6123/tcp:{} 8081/tcp:{}]
+# Fri, 14 Nov 2025 00:17:18 GMT
+CMD ["help"]
+```
+
+-	Layers:
+	-	`sha256:0ec3d86457676c7af7a3b6d29565e0e8b30ed98afe5d606e00e565101f812623`  
+		Last Modified: Mon, 13 Oct 2025 22:06:29 GMT  
+		Size: 27.4 MB (27383877 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f44e93e2f17680350eef250800f885c5ec5b1dfc6fb7c43cf8e92ea04d5a6f0b`  
+		Last Modified: Thu, 13 Nov 2025 23:21:06 GMT  
+		Size: 16.1 MB (16066283 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fc40a6001ee01be38cea704e5d4e64e6b569c37c42227eabc9d308b26755e806`  
+		Last Modified: Thu, 13 Nov 2025 23:21:46 GMT  
+		Size: 52.1 MB (52148587 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:19fed4c697cbdb704ffa20faeed81c4eb8b16824faa140cce1fd03b6eff14fb7`  
+		Last Modified: Thu, 13 Nov 2025 23:21:38 GMT  
+		Size: 157.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b5e329fb7a0e143a03a99f87ec4d7acded1e81048017d71ea84307eb3c34a052`  
+		Last Modified: Thu, 13 Nov 2025 23:21:42 GMT  
+		Size: 2.3 KB (2282 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4aed4adff5e69bb2e6db3d1d07daa8c847611ffc3810849296a0c8ea69606315`  
+		Last Modified: Fri, 14 Nov 2025 00:18:11 GMT  
+		Size: 1.0 MB (1041859 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5bcd16f6363302bfb0b4ee0a53e698b158525d9a54da37dd98e9ad51a922c7ce`  
+		Last Modified: Fri, 14 Nov 2025 00:18:11 GMT  
+		Size: 835.4 KB (835382 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d59b43706647e880d8e5f63ac3cdd480f4fcc9272b013127547402b9ca36d7fb`  
+		Last Modified: Fri, 14 Nov 2025 00:18:11 GMT  
+		Size: 4.6 KB (4630 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c3d1dc0d4174ae2bc9a59804a0aa7310cd518cad85b565e35cc24c03d9271f0d`  
+		Last Modified: Fri, 14 Nov 2025 00:18:11 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1a22e39a39489c96a10caf147b5719264895febe1fb1628b071f894a5249e38d`  
+		Last Modified: Fri, 14 Nov 2025 00:18:05 GMT  
+		Size: 567.8 MB (567846281 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a2c0ea6861a016ed90ff3b18ca874856970cf2bca389bf9334e74e166d9b500d`  
+		Last Modified: Fri, 14 Nov 2025 00:18:11 GMT  
+		Size: 2.3 KB (2268 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `flink:scala_2.12-java21` - unknown; unknown
+
+```console
+$ docker pull flink@sha256:bcd4492dd779b244497edb4d31b7e8b96cc0dd178f6bb46ddd104ff9f04389e0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.0 MB (4017842 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:69e22a29fa8ff01139bd360b7b72528ea90766292171fab761e5a8846e7b44de`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:875931aaa0150c3fb006cdd1521e5ddfab94d67c8b59c45e15ecf62ce9326ace`  
+		Last Modified: Fri, 14 Nov 2025 02:03:06 GMT  
 		Size: 4.0 MB (3988847 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e76f97dce2479fd598884acbaccc7789b53b11887d348e0dfa4fd16b2f6f763c`  
-		Last Modified: Sat, 08 Nov 2025 20:02:31 GMT  
-		Size: 29.0 KB (28994 bytes)  
+	-	`sha256:fb15b73f557a537c23bf2618d0469730af6f5a912eb2f0f273d9776ac1df100e`  
+		Last Modified: Fri, 14 Nov 2025 02:03:07 GMT  
+		Size: 29.0 KB (28995 bytes)  
 		MIME: application/vnd.in-toto+json
