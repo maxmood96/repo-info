@@ -1,7 +1,7 @@
 ## `couchbase:enterprise-7.2.3`
 
 ```console
-$ docker pull couchbase@sha256:8a67abce68799b767c00b3320a03b258d7704bc862fe65f26a1ae444ddb4a631
+$ docker pull couchbase@sha256:88e1ff73a197ead0b5e6f48e64e7ec2c6f11b5d5c7d46d774613b5225e28c558
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,299 +14,299 @@ $ docker pull couchbase@sha256:8a67abce68799b767c00b3320a03b258d7704bc862fe65f26
 ### `couchbase:enterprise-7.2.3` - linux; amd64
 
 ```console
-$ docker pull couchbase@sha256:43d5602c3879cd7d8c6873b66156ef3aad4536a212acacc021aeb8e61ca393b1
+$ docker pull couchbase@sha256:2b60033a516c9876a0b52c7179b7352b52635b8357cc4176da3dbf10cf38e148
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **704.7 MB (704733033 bytes)**  
+-	Total Size: **704.7 MB (704730463 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0aedcdcf0aef297973d53221d22400c3c6491b8f58ac2c1be7d495dd7d8666ad`
+-	Image ID: `sha256:00c0495e81563b2d53d9b4814f4d7152b7cf263e26cb7e29ccded40d1e62a0a9`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["couchbase-server"]`
 
 ```dockerfile
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Mon, 13 Oct 2025 17:23:18 GMT
 ARG RELEASE
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Mon, 13 Oct 2025 17:23:18 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Mon, 13 Oct 2025 17:23:18 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Mon, 13 Oct 2025 17:23:18 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 12 Jun 2025 10:43:25 GMT
-ADD file:32d41b6329e8f89fa4ac92ef97c04b7cfd5e90fb74e1509c3e27d7c91195b7c7 in / 
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Mon, 13 Oct 2025 17:23:20 GMT
+ADD file:d025507456f1d7d19195885b1c02a346454d60c9348cbd3be92431f2d7e2666e in / 
+# Mon, 13 Oct 2025 17:23:20 GMT
 CMD ["/bin/bash"]
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:15 GMT
 LABEL maintainer=docker@couchbase.com
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:15 GMT
 ARG UPDATE_COMMAND=apt-get update -y -q
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:15 GMT
 ARG CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:15 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN set -x     && ${UPDATE_COMMAND}     && apt-get install -y -q wget tzdata       lsof lshw sysstat net-tools numactl bzip2     && ${CLEANUP_COMMAND} # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:40 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN set -x     && apt-get update     && apt-get install -y gcc git make     && cd /usr/src     && git clone https://github.com/couchbasedeps/runit     && cd runit     && git checkout edb631449d89d5b452a5992c6ffaa1e384fea697     && ./package/compile     && cp ./command/* /sbin/     && apt-get purge -y --autoremove gcc git make     && apt-get clean     && rm -rf /var/lib/apt/lists/* /usr/src/runit # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:40 GMT
 ARG CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:40 GMT
 ARG CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:40 GMT
 ARG CB_SKIP_CHECKSUM=false
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:40 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:18:25 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3 CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -x     && if getent group 1000 >/dev/null; then           existing_group=$(getent group 1000 | cut -d: -f1);           groupmod --new-name couchbase "${existing_group}";        else           groupadd -g 1000 couchbase;        fi     && if getent passwd 1000 >/dev/null; then           existing_user=$(getent passwd 1000 | cut -d: -f1);           usermod --login couchbase -d /home/couchbase -m -g couchbase -s /bin/sh "${existing_user}";        else           useradd couchbase -u 1000 -g couchbase -M -s /bin/sh;        fi # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:19:26 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3 CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -x     && ${UPDATE_COMMAND}     && export INSTALL_DONT_START_SERVER=1     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch}" in          'arm64')            CB_SHA256=1ca43fd4d5c7d390974ba5ae0465875b4c42687dd497ceadb2ef6816585e3ec7            ;;          'amd64')            CB_SHA256=941ad294cc93102b655290701e4f6f6c653c146dc525ade7c734047b3797e316            ;;        esac     && CB_PACKAGE=$(echo ${CB_PACKAGE} | sed -e "s/@@ARCH@@/${dpkgArch}/")     && wget -N --no-verbose $CB_RELEASE_URL/$CB_PACKAGE     && { ${CB_SKIP_CHECKSUM} || echo "$CB_SHA256  $CB_PACKAGE" | sha256sum -c - ; }     && apt-get install -y ./$CB_PACKAGE     && rm -f ./$CB_PACKAGE     && ${CLEANUP_COMMAND}     && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:19:26 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3 CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN sed -i -e '1 s/$/\/docker/' /opt/couchbase/VARIANT.txt # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:19:26 GMT
 COPY scripts/run /etc/service/couchbase-server/run # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:19:26 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3 CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -x     && mkdir -p /etc/service/couchbase-server/supervise     && chown -R couchbase:couchbase                 /etc/service                 /etc/service/couchbase-server/supervise # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:19:26 GMT
 COPY scripts/dummy.sh /usr/local/bin/ # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:19:27 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3 CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -x     && ln -s dummy.sh /usr/local/bin/iptables-save     && ln -s dummy.sh /usr/local/bin/lvdisplay     && ln -s dummy.sh /usr/local/bin/vgdisplay     && ln -s dummy.sh /usr/local/bin/pvdisplay # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:19:27 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3 CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -ex     &&  if [ ! -e /opt/couchbase/bin/curl.real ]; then             ${UPDATE_COMMAND};             apt-get install -y chrpath;             chrpath -r '$ORIGIN/../lib' /opt/couchbase/bin/curl;             apt-get remove -y chrpath;             apt-get autoremove -y;             ${CLEANUP_COMMAND};         fi # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:19:27 GMT
 COPY scripts/entrypoint.sh / # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:19:27 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:19:27 GMT
 CMD ["couchbase-server"]
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:19:27 GMT
 EXPOSE map[11207/tcp:{} 11210/tcp:{} 11280/tcp:{} 18091/tcp:{} 18092/tcp:{} 18093/tcp:{} 18094/tcp:{} 18095/tcp:{} 18096/tcp:{} 18097/tcp:{} 8091/tcp:{} 8092/tcp:{} 8093/tcp:{} 8094/tcp:{} 8095/tcp:{} 8096/tcp:{} 8097/tcp:{} 9123/tcp:{}]
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:19:27 GMT
 VOLUME [/opt/couchbase/var]
 ```
 
 -	Layers:
-	-	`sha256:af6eca94c8104c8e90d3f9efe59c2b3a02b20aad3d985e31c7cd009ea104c447`  
-		Last Modified: Wed, 01 Oct 2025 10:09:45 GMT  
-		Size: 29.5 MB (29536818 bytes)  
+	-	`sha256:7e49dc6156b0b532730614d83a65ae5e7ce61e966b0498703d333b4d03505e4f`  
+		Last Modified: Mon, 13 Oct 2025 19:13:16 GMT  
+		Size: 29.5 MB (29536798 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1a7a54fda0fd51dd327ee8e0d77999af50ee97f945062ae1036f6795a43a36f6`  
-		Last Modified: Thu, 02 Oct 2025 04:58:59 GMT  
-		Size: 39.3 MB (39302080 bytes)  
+	-	`sha256:da87ad361d1da7fce10433add475b05135b5bf327e7540e74444cf7def222a68`  
+		Last Modified: Thu, 13 Nov 2025 23:18:05 GMT  
+		Size: 39.3 MB (39299053 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3cb2ba39713faefa4c2bb86e50b3e282559810f5c835abe77a7ddf6d98c172e5`  
-		Last Modified: Thu, 02 Oct 2025 04:58:57 GMT  
-		Size: 926.6 KB (926631 bytes)  
+	-	`sha256:742d3c6b54942dfd8f06d042436101c472866e3f4c576630b1d8b862664441de`  
+		Last Modified: Thu, 13 Nov 2025 23:18:02 GMT  
+		Size: 926.8 KB (926818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b1603b8a77dfef09f4c74cfc4bc878a83bd021247cbf6d462c4363767d1df5f`  
-		Last Modified: Thu, 02 Oct 2025 05:00:58 GMT  
-		Size: 2.0 KB (1997 bytes)  
+	-	`sha256:af109ceb1b3d07a35f6b09333ab99f2a467f4248f875b42250e8ab58f7a3cc49`  
+		Last Modified: Thu, 13 Nov 2025 23:20:32 GMT  
+		Size: 2.0 KB (1991 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24572a95bf63a1f316721cccc14c4259220a5628d833f0ee2d03f123d64d45a6`  
-		Last Modified: Thu, 02 Oct 2025 05:33:08 GMT  
-		Size: 635.0 MB (634962323 bytes)  
+	-	`sha256:2d159b3c5cdceebcee44d3cbb39d079a7d82098ad21cec2fcd332cbc9748af48`  
+		Last Modified: Fri, 14 Nov 2025 03:32:42 GMT  
+		Size: 635.0 MB (634962620 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0acb3c5744dfc7123a7654dcda6fd21edf91dcbf0172c0bfc89dface56d6561`  
-		Last Modified: Thu, 02 Oct 2025 05:00:58 GMT  
-		Size: 186.0 B  
+	-	`sha256:26363f6470113509e2d3be59e7a956bcf776ad02e47a1ae986d2599884be40dc`  
+		Last Modified: Thu, 13 Nov 2025 23:20:31 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5100fb4ea1709dd741645e143ef18b51336cf28fb36e17008246eb9f560993f4`  
-		Last Modified: Thu, 02 Oct 2025 05:00:58 GMT  
-		Size: 815.0 B  
+	-	`sha256:40a290afb41257804ba060825be58d89b1217dca6da863c097d2adb92e71c742`  
+		Last Modified: Thu, 13 Nov 2025 23:20:31 GMT  
+		Size: 816.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efaf6d05d811d3fad9e00c75ceaf50eeea732cae4954260b47fa914d22dd2641`  
-		Last Modified: Thu, 02 Oct 2025 05:00:58 GMT  
+	-	`sha256:a41b4712d1e5c166017f4a0effbbac057ac47d7804e78adcbb1e5ebf4e21a08f`  
+		Last Modified: Thu, 13 Nov 2025 23:20:31 GMT  
 		Size: 846.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b531499c2a3d32db7e5dac57afbf3fb14d53e2e6745fc3057b7710414e56cb6`  
-		Last Modified: Thu, 02 Oct 2025 05:00:58 GMT  
+	-	`sha256:d23de35fac7ae52f49e2528ae2e0ff249766eedafedab371f8ebca20f12b1379`  
+		Last Modified: Thu, 13 Nov 2025 23:20:31 GMT  
 		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f96d56d7a2a0e21f11d04fdcaacc04016f5c26fb41de390bc24a84000e620782`  
-		Last Modified: Thu, 02 Oct 2025 05:00:58 GMT  
-		Size: 217.0 B  
+	-	`sha256:3a7ed01801d924e6d0c9d0ab82b84276a74eec5f736862f5b46a66767c25e0b2`  
+		Last Modified: Thu, 13 Nov 2025 23:20:31 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2972444257ac57943dda456d34cecd28937baf0f39e5173111afd52d7475b32c`  
-		Last Modified: Thu, 02 Oct 2025 05:00:12 GMT  
-		Size: 856.0 B  
+	-	`sha256:7a66c58dd0a287c7e68b5c42538f0d189ba30af3cf1e0a75593fd8edb564450e`  
+		Last Modified: Thu, 13 Nov 2025 23:20:19 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchbase:enterprise-7.2.3` - unknown; unknown
 
 ```console
-$ docker pull couchbase@sha256:47ac9194ece7f97785cac6f29ed078d27a66ef98610496b2307a3b8fca97ba77
+$ docker pull couchbase@sha256:e87d9c3f05f86a0af38ad24b5b2c297e6a4c9a88d043ffa936763d85ebf541ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.6 KB (37565 bytes)**  
+-	Total Size: **37.5 KB (37522 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a96526d68f46e1483eae7425a4de8ad8153969bdd3ef729d3e96e78958323c25`
+-	Image ID: `sha256:6d85544dbda354383a9b7a3cc4bcf96dd41d13d480be2f06c847e42a2dcf3498`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7f834d1286977f60f60986ff1d1e11005ba0509a73c3f38a2f718da752df61cf`  
-		Last Modified: Thu, 02 Oct 2025 05:31:31 GMT  
-		Size: 37.6 KB (37565 bytes)  
+	-	`sha256:1e593ff5eb0fb88d52caf1fc3cf721308908d91252ac9fd8f5faffb0f606655f`  
+		Last Modified: Fri, 14 Nov 2025 03:31:43 GMT  
+		Size: 37.5 KB (37522 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `couchbase:enterprise-7.2.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchbase@sha256:c8e413e2d157bc4525a75799d8a4dbcbcdf8ed0f1832e908ba63e33ea513b88e
+$ docker pull couchbase@sha256:934d4112c8517623128091d251e6281c22af05549a4f99c07f4287dc287c09f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **674.9 MB (674937430 bytes)**  
+-	Total Size: **675.0 MB (674952465 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3934bf6dc42a12ca051a420c83a7cfc7b83a03230f3ae2bed5f7f21f6a3e42f`
+-	Image ID: `sha256:d22e558626d1b4e53f81f52d8b2d8aac4335c2cb2ae0fca47529ea61ad917377`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["couchbase-server"]`
 
 ```dockerfile
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Mon, 13 Oct 2025 17:25:16 GMT
 ARG RELEASE
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Mon, 13 Oct 2025 17:25:16 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Mon, 13 Oct 2025 17:25:16 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Mon, 13 Oct 2025 17:25:16 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 12 Jun 2025 10:43:25 GMT
-ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Mon, 13 Oct 2025 17:25:18 GMT
+ADD file:2e0e653363da35febc0204e69cb713c0d1497720522f79d3d531980a7f291a39 in / 
+# Mon, 13 Oct 2025 17:25:18 GMT
 CMD ["/bin/bash"]
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:26 GMT
 LABEL maintainer=docker@couchbase.com
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:26 GMT
 ARG UPDATE_COMMAND=apt-get update -y -q
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:26 GMT
 ARG CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:26 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN set -x     && ${UPDATE_COMMAND}     && apt-get install -y -q wget tzdata       lsof lshw sysstat net-tools numactl bzip2     && ${CLEANUP_COMMAND} # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:54 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN set -x     && apt-get update     && apt-get install -y gcc git make     && cd /usr/src     && git clone https://github.com/couchbasedeps/runit     && cd runit     && git checkout edb631449d89d5b452a5992c6ffaa1e384fea697     && ./package/compile     && cp ./command/* /sbin/     && apt-get purge -y --autoremove gcc git make     && apt-get clean     && rm -rf /var/lib/apt/lists/* /usr/src/runit # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:54 GMT
 ARG CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:54 GMT
 ARG CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:54 GMT
 ARG CB_SKIP_CHECKSUM=false
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:15:54 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:17:39 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3 CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -x     && if getent group 1000 >/dev/null; then           existing_group=$(getent group 1000 | cut -d: -f1);           groupmod --new-name couchbase "${existing_group}";        else           groupadd -g 1000 couchbase;        fi     && if getent passwd 1000 >/dev/null; then           existing_user=$(getent passwd 1000 | cut -d: -f1);           usermod --login couchbase -d /home/couchbase -m -g couchbase -s /bin/sh "${existing_user}";        else           useradd couchbase -u 1000 -g couchbase -M -s /bin/sh;        fi # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:18:37 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3 CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -x     && ${UPDATE_COMMAND}     && export INSTALL_DONT_START_SERVER=1     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch}" in          'arm64')            CB_SHA256=1ca43fd4d5c7d390974ba5ae0465875b4c42687dd497ceadb2ef6816585e3ec7            ;;          'amd64')            CB_SHA256=941ad294cc93102b655290701e4f6f6c653c146dc525ade7c734047b3797e316            ;;        esac     && CB_PACKAGE=$(echo ${CB_PACKAGE} | sed -e "s/@@ARCH@@/${dpkgArch}/")     && wget -N --no-verbose $CB_RELEASE_URL/$CB_PACKAGE     && { ${CB_SKIP_CHECKSUM} || echo "$CB_SHA256  $CB_PACKAGE" | sha256sum -c - ; }     && apt-get install -y ./$CB_PACKAGE     && rm -f ./$CB_PACKAGE     && ${CLEANUP_COMMAND}     && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:18:37 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3 CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN sed -i -e '1 s/$/\/docker/' /opt/couchbase/VARIANT.txt # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:18:37 GMT
 COPY scripts/run /etc/service/couchbase-server/run # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:18:38 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3 CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -x     && mkdir -p /etc/service/couchbase-server/supervise     && chown -R couchbase:couchbase                 /etc/service                 /etc/service/couchbase-server/supervise # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:18:38 GMT
 COPY scripts/dummy.sh /usr/local/bin/ # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:18:38 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3 CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -x     && ln -s dummy.sh /usr/local/bin/iptables-save     && ln -s dummy.sh /usr/local/bin/lvdisplay     && ln -s dummy.sh /usr/local/bin/vgdisplay     && ln -s dummy.sh /usr/local/bin/pvdisplay # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:18:38 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.2.3 CB_PACKAGE=couchbase-server-enterprise_7.2.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -ex     &&  if [ ! -e /opt/couchbase/bin/curl.real ]; then             ${UPDATE_COMMAND};             apt-get install -y chrpath;             chrpath -r '$ORIGIN/../lib' /opt/couchbase/bin/curl;             apt-get remove -y chrpath;             apt-get autoremove -y;             ${CLEANUP_COMMAND};         fi # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:18:38 GMT
 COPY scripts/entrypoint.sh / # buildkit
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:18:38 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:18:38 GMT
 CMD ["couchbase-server"]
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:18:38 GMT
 EXPOSE map[11207/tcp:{} 11210/tcp:{} 11280/tcp:{} 18091/tcp:{} 18092/tcp:{} 18093/tcp:{} 18094/tcp:{} 18095/tcp:{} 18096/tcp:{} 18097/tcp:{} 8091/tcp:{} 8092/tcp:{} 8093/tcp:{} 8094/tcp:{} 8095/tcp:{} 8096/tcp:{} 8097/tcp:{} 9123/tcp:{}]
-# Thu, 12 Jun 2025 10:43:25 GMT
+# Thu, 13 Nov 2025 23:18:38 GMT
 VOLUME [/opt/couchbase/var]
 ```
 
 -	Layers:
-	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
-		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
-		Size: 27.4 MB (27383107 bytes)  
+	-	`sha256:0ec3d86457676c7af7a3b6d29565e0e8b30ed98afe5d606e00e565101f812623`  
+		Last Modified: Mon, 13 Oct 2025 22:06:29 GMT  
+		Size: 27.4 MB (27383877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c80cafc9974d3bf10439744be87b2fb401924f4455e5412414ea6cf54b92325e`  
-		Last Modified: Thu, 02 Oct 2025 01:18:06 GMT  
-		Size: 38.9 MB (38857999 bytes)  
+	-	`sha256:67dccf1a4f85e5c90037c47bad3763762b42432ee2692ccbe7b1f9f260064ff8`  
+		Last Modified: Thu, 13 Nov 2025 23:17:24 GMT  
+		Size: 38.9 MB (38872164 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5128c699e102825df24e6db14b7451766bc3605500452e5bd55529eb045d61fb`  
-		Last Modified: Thu, 02 Oct 2025 01:17:59 GMT  
-		Size: 775.2 KB (775213 bytes)  
+	-	`sha256:bca78d4998f2a02fe41d92ef2987ca6356a04eac3040bbde0fefd49ef87428aa`  
+		Last Modified: Thu, 13 Nov 2025 23:17:17 GMT  
+		Size: 775.3 KB (775274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f75b9cdaaf128720e273f977aaa268c73710913fd5128e1adf577defcc8dace2`  
-		Last Modified: Thu, 02 Oct 2025 01:17:59 GMT  
-		Size: 2.0 KB (1990 bytes)  
+	-	`sha256:b17b88db77714c255705cb97a627d56fb88618825521b1644f5014d707e6e371`  
+		Last Modified: Thu, 13 Nov 2025 23:19:38 GMT  
+		Size: 2.0 KB (2001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6d084cd42493b636776ebce29d8d91bb76e63544685c1c3d6ce3a9d342d9177`  
-		Last Modified: Thu, 02 Oct 2025 02:34:01 GMT  
-		Size: 607.9 MB (607915934 bytes)  
+	-	`sha256:798e32768526bf1be8708f5259166e33a1cf7c59de303b05ecc72e546ca6a20f`  
+		Last Modified: Fri, 14 Nov 2025 03:33:32 GMT  
+		Size: 607.9 MB (607915957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560c553dffc7e6e715866ea528742d415e69cb87bf55877eaf22813dfd4122a4`  
-		Last Modified: Thu, 02 Oct 2025 01:17:59 GMT  
-		Size: 186.0 B  
+	-	`sha256:6520eca3d6e0728407779290a83803720393e0d91fb1e305d7a76fb4a60c734b`  
+		Last Modified: Thu, 13 Nov 2025 23:19:38 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1f4c433376d69eef7066ff35ffab45f79feea9b3d81d9b8ce0cce25f92aed34`  
-		Last Modified: Thu, 02 Oct 2025 01:17:59 GMT  
-		Size: 818.0 B  
+	-	`sha256:cbd4ca5d8f07bc9944132906b6854e2f8bf60703dde6625f36d2eb81b4a8dccc`  
+		Last Modified: Thu, 13 Nov 2025 23:19:38 GMT  
+		Size: 817.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1faa8fc9fed4a7a139c33a19b08256959e96adb6bbb314f8619353fa961705a6`  
-		Last Modified: Thu, 02 Oct 2025 01:17:59 GMT  
-		Size: 848.0 B  
+	-	`sha256:9f50397b655e5902805d9627eb5dbe18459396c0e3fe3adbc9341ad374f6ab20`  
+		Last Modified: Thu, 13 Nov 2025 23:19:38 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ab5a21985e58207044392dabdb50576f6806a7ef43a5da471e86adda3c0ade5`  
-		Last Modified: Thu, 02 Oct 2025 01:17:59 GMT  
-		Size: 231.0 B  
+	-	`sha256:26a717b9481117ee48aadba3cbd570fc303781d8025c1561933ef2cff818a965`  
+		Last Modified: Thu, 13 Nov 2025 23:19:38 GMT  
+		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c3823c437ae06e246d2da9a4f208fbd3c2f4a97086694cc68fd1b49bf29e505`  
-		Last Modified: Thu, 02 Oct 2025 01:17:59 GMT  
-		Size: 216.0 B  
+	-	`sha256:ced9358ca16ee83c34642b0c1c5dd0bd25b483bbeb0552b23bb04a0dede1906b`  
+		Last Modified: Thu, 13 Nov 2025 23:19:38 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb3a888bf866c82d0a8377e6f3baccc7d269cc4a7995c8cd64aff569b0aab0ec`  
-		Last Modified: Thu, 02 Oct 2025 01:17:59 GMT  
+	-	`sha256:cf640e3a73a160130b94f21958f29dde606642284e9524b3840a45ad0a721e17`  
+		Last Modified: Thu, 13 Nov 2025 23:19:38 GMT  
 		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchbase:enterprise-7.2.3` - unknown; unknown
 
 ```console
-$ docker pull couchbase@sha256:c493062de55ac610a99c2b7bb67fd2fcddc9a5b6ff95239a4e0116a16e188bca
+$ docker pull couchbase@sha256:35f1899b80b00106399e08d41632ee75a38eb64f555fec1c50eaa6d6b23a2eea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.8 KB (37750 bytes)**  
+-	Total Size: **37.7 KB (37707 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc42e4af13d4dfe34c236f0b25d7f37b12bebc39cff90d1113013d6c53e0d6bf`
+-	Image ID: `sha256:852509c24afdf3683a43ca2d8ab3a044cdcfd6ceea2febf1ca3752fa8758826c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5765b0c817ed4dc7e2c26a3ef2666166e8c0a77469338fa017fd79118d65f892`  
-		Last Modified: Thu, 02 Oct 2025 02:32:59 GMT  
-		Size: 37.8 KB (37750 bytes)  
+	-	`sha256:3b52713ac51c57735dd753b244e5206926517c0dffb0d62c683c78da61bfea3c`  
+		Last Modified: Fri, 14 Nov 2025 03:31:46 GMT  
+		Size: 37.7 KB (37707 bytes)  
 		MIME: application/vnd.in-toto+json
