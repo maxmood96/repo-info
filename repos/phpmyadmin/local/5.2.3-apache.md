@@ -363,19 +363,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8+deb13u1
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u1.dsc' base-files_13.8+deb13u1.dsc 1247 SHA256:941f3e313881224c5ef1a9257d8ac61d0f9615e87f459ef110408ed69190013d
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u1.tar.xz' base-files_13.8+deb13u1.tar.xz 68640 SHA256:52192994966d473d39c3dd4c4c986ccb418f6b2cc758f9878d893b345d588fe5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8+deb13u1/
 
-- https://sources.debian.net/src/base-files/13.8+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -2445,9 +2439,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxml2=2.12.7+dfsg+really2.9.14-2.1+deb13u1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1%2bdeb13u1.dsc' libxml2_2.12.7+dfsg+really2.9.14-2.1+deb13u1.dsc 2721 SHA256:1b5ebd1dc73f27d0633797781d3a9304c8d25a4ace8ca32c44a8247757e92b0c
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14.orig.tar.xz' libxml2_2.12.7+dfsg+really2.9.14.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1%2bdeb13u1.debian.tar.xz' libxml2_2.12.7+dfsg+really2.9.14-2.1+deb13u1.debian.tar.xz 48728 SHA256:1d83110ae29224c4e74d16f74296491b769120d3fdebe5c893c3389e49e4f51e
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1%2bdeb13u1.dsc' libxml2_2.12.7+dfsg+really2.9.14-2.1+deb13u1.dsc 2721 SHA256:1b5ebd1dc73f27d0633797781d3a9304c8d25a4ace8ca32c44a8247757e92b0c
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14.orig.tar.xz' libxml2_2.12.7+dfsg+really2.9.14.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1%2bdeb13u1.debian.tar.xz' libxml2_2.12.7+dfsg+really2.9.14-2.1+deb13u1.debian.tar.xz 48728 SHA256:1d83110ae29224c4e74d16f74296491b769120d3fdebe5c893c3389e49e4f51e
 ```
 
 Other potentially useful URLs:
