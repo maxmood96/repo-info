@@ -1,7 +1,7 @@
 ## `postgres:17-alpine3.22`
 
 ```console
-$ docker pull postgres@sha256:c4df1591a679546facd3108679b9f90e8b6582c8b71c68b37221c5d79dab9f8b
+$ docker pull postgres@sha256:9a78577340f3d26384b6aebeb475c0d46d664fd4ffa68503b4be4e4462745f94
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -790,13 +790,13 @@ $ docker pull postgres@sha256:687c41456529aafebaf4a5c2aa5b4eecb59d678c1df871f68f
 ### `postgres:17-alpine3.22` - linux; riscv64
 
 ```console
-$ docker pull postgres@sha256:72f81cfde831bc2964d49482d762d352bc006c16099af0367256375df3879a13
+$ docker pull postgres@sha256:7c8692da732bc4eec4f757bad5c47d5b8590a04eb3f460a12cc49ecb67f6f7bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.7 MB (110693207 bytes)**  
+-	Total Size: **110.7 MB (110692968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f385024f061d0fb23413cd888dd5590ca8efca58b5e19f57f13dbcb6995c00d2`
+-	Image ID: `sha256:c9306a4f63907ad80183d6ec14c3be5b4acb34dadfa14202738a0836761fbd4e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -835,17 +835,17 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN install --verbose --directory --owner postgres --group postgres --mode 1777 "$PGDATA" # buildkit
 # Fri, 14 Nov 2025 05:01:39 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 14 Nov 2025 05:01:39 GMT
+# Sat, 15 Nov 2025 06:42:25 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Fri, 14 Nov 2025 05:01:39 GMT
+# Sat, 15 Nov 2025 06:42:25 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Fri, 14 Nov 2025 05:01:39 GMT
+# Sat, 15 Nov 2025 06:42:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 14 Nov 2025 05:01:39 GMT
+# Sat, 15 Nov 2025 06:42:25 GMT
 STOPSIGNAL SIGINT
-# Fri, 14 Nov 2025 05:01:39 GMT
+# Sat, 15 Nov 2025 06:42:25 GMT
 EXPOSE map[5432/tcp:{}]
-# Fri, 14 Nov 2025 05:01:39 GMT
+# Sat, 15 Nov 2025 06:42:25 GMT
 CMD ["postgres"]
 ```
 
@@ -882,36 +882,36 @@ CMD ["postgres"]
 		Last Modified: Fri, 14 Nov 2025 05:04:57 GMT  
 		Size: 168.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8961df8700d91ed141844a9ce591789e9e762906893936a15546f32c91d28f94`  
-		Last Modified: Fri, 14 Nov 2025 05:04:57 GMT  
-		Size: 6.1 KB (6084 bytes)  
+	-	`sha256:51acceafee787db144b1f8115258302f3fe54a5b5abe4d922fa3818992b15ae6`  
+		Last Modified: Sat, 15 Nov 2025 06:43:45 GMT  
+		Size: 5.8 KB (5844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffab38723564fb06de68512b8b462134144f5ebc9bdbf9b5fa69372ac966a819`  
-		Last Modified: Fri, 14 Nov 2025 05:04:57 GMT  
-		Size: 187.0 B  
+	-	`sha256:b7eacdcb01f8e11af93d8386386b56fbf9c6587824351ff15b5b5bd988fe4001`  
+		Last Modified: Sat, 15 Nov 2025 06:43:45 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:17-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:af6263c2044510a3244b034a685a0dd9b6e627fe0eb7a819dad675f65080e18f
+$ docker pull postgres@sha256:f3826bc748f178b382b792a22f089463d2f581ab09e54f8d2d8fed7dccd0c9d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **636.7 KB (636746 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee0c523d5869ffae8bbb866762a00ed079b99fe0a2042eb6afde1ab79c68df07`
+-	Image ID: `sha256:a5b2591a1f19eaf3378cf76275024a69c598f31850da66ac8dffe7a0d8a3a662`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:598defa5927d3885511ec569f1bb08dd931b0c85f14f58d6bc73248da665a743`  
-		Last Modified: Fri, 14 Nov 2025 06:11:08 GMT  
+	-	`sha256:df0be019d0918f066f8d55b5698dc5825ec2a09dd7f7e640dd347c468374f6b6`  
+		Last Modified: Sat, 15 Nov 2025 09:08:52 GMT  
 		Size: 595.0 KB (595010 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ea5baf1f500dbd9b1f8da8e5807f835879772852a36ba99ef09e03fabeec5eea`  
-		Last Modified: Fri, 14 Nov 2025 06:11:09 GMT  
+	-	`sha256:40d074232820c1151886e4d3850a4a0040ea9e76f37c5d8c14294842c17e2688`  
+		Last Modified: Sat, 15 Nov 2025 09:08:52 GMT  
 		Size: 41.7 KB (41736 bytes)  
 		MIME: application/vnd.in-toto+json
 

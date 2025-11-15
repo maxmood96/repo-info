@@ -1,7 +1,7 @@
 ## `postgres:16-alpine3.22`
 
 ```console
-$ docker pull postgres@sha256:ac55186cd25ebb254322af8daefd355d94decb6619318a4855f5635588bf4b44
+$ docker pull postgres@sha256:79c06d285ed9186efbbc45c73413b3c3510c3c94ffede2f25d1e523f74d07f28
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -826,13 +826,13 @@ $ docker pull postgres@sha256:8eb6e60132a41ddac9473838f41465036b3989df7d67f37d0b
 ### `postgres:16-alpine3.22` - linux; riscv64
 
 ```console
-$ docker pull postgres@sha256:cfd763043b53756ab7891f37bda2ef56251699adceac965104c025cb37699e87
+$ docker pull postgres@sha256:0cedfbc501d38828a3ac8f9a05b7281f5b35f3d573cc8f8688bb6467cb6edc58
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **109.5 MB (109495322 bytes)**  
+-	Total Size: **109.5 MB (109495085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d89fd97d6dc637f39a535e11dde80180052654de272ebbe64273ce1f8a4c573`
+-	Image ID: `sha256:51cfb9f11d93a75d0f8bf7ca25489c60c0b5760ab8fc04f00ed72df239a76496`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -873,17 +873,17 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN install --verbose --directory --owner postgres --group postgres --mode 1777 "$PGDATA" # buildkit
 # Fri, 14 Nov 2025 08:31:30 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 14 Nov 2025 08:31:30 GMT
+# Sat, 15 Nov 2025 07:42:37 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Fri, 14 Nov 2025 08:31:30 GMT
+# Sat, 15 Nov 2025 07:42:38 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Fri, 14 Nov 2025 08:31:30 GMT
+# Sat, 15 Nov 2025 07:42:38 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 14 Nov 2025 08:31:30 GMT
+# Sat, 15 Nov 2025 07:42:38 GMT
 STOPSIGNAL SIGINT
-# Fri, 14 Nov 2025 08:31:30 GMT
+# Sat, 15 Nov 2025 07:42:38 GMT
 EXPOSE map[5432/tcp:{}]
-# Fri, 14 Nov 2025 08:31:30 GMT
+# Sat, 15 Nov 2025 07:42:38 GMT
 CMD ["postgres"]
 ```
 
@@ -924,37 +924,37 @@ CMD ["postgres"]
 		Last Modified: Fri, 14 Nov 2025 08:34:44 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:140f91b40b1e08c6f5b6239ef20031d1513f2e77989b81b6e249db6471366bcd`  
-		Last Modified: Fri, 14 Nov 2025 08:34:44 GMT  
-		Size: 6.1 KB (6082 bytes)  
+	-	`sha256:53f962459f3c54d9fad80b2fd4685fb8381b178db08b221138560c9c1a3fdc8f`  
+		Last Modified: Sat, 15 Nov 2025 07:43:59 GMT  
+		Size: 5.8 KB (5843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f864ff3fa8a4989ef791ba8c16b5b8a4e0658c8142c358d22aafef906ef4e2e`  
-		Last Modified: Fri, 14 Nov 2025 08:34:44 GMT  
-		Size: 186.0 B  
+	-	`sha256:3d88fb469e6d5ef194abb7c581fc9a7ea64ff792ba35694d9080678d5329af83`  
+		Last Modified: Sat, 15 Nov 2025 07:43:59 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:16-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:4000a0979952c1858501fdd7d943d07506abae44de4718ac5ab091f5571e10ad
+$ docker pull postgres@sha256:4779282dae47e559f8c87b512388ce251d14dfedfdbbf90a3488d80d189582f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **639.4 KB (639381 bytes)**  
+-	Total Size: **639.4 KB (639382 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b2c6c98d26a04b5914df3dd9ed68b029896ca50bd588e78334ca556a4262330`
+-	Image ID: `sha256:34e24fa4da9afbd3d59f05004f24764cd2a979e290fc0c0965cc03e475b94644`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e445ee228dbdd26d364fb2cbc79ae8a2a078af714d9803d402ba82e58315c9ef`  
-		Last Modified: Fri, 14 Nov 2025 12:08:36 GMT  
+	-	`sha256:5d6f9e3d9424f932344adc5dfd66b129037b49d573f18451b56d79ed7943255a`  
+		Last Modified: Sat, 15 Nov 2025 09:08:06 GMT  
 		Size: 595.0 KB (595016 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f66f43ba97ad64427ac41b6ce22b757f5ac7e373430338408f077bdf1201308c`  
-		Last Modified: Fri, 14 Nov 2025 12:08:37 GMT  
-		Size: 44.4 KB (44365 bytes)  
+	-	`sha256:7a20efac8e9b6c4dbab617861c8018dbe7ec405292835b52af92e2377a0493b0`  
+		Last Modified: Sat, 15 Nov 2025 09:08:07 GMT  
+		Size: 44.4 KB (44366 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `postgres:16-alpine3.22` - linux; s390x
