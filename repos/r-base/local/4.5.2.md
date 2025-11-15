@@ -59,19 +59,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.11
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.11.dsc' apt_3.1.11.dsc 3095 SHA256:df23ed19574b2fea79c9564314fb2795f6cbd7c0b00d30b61ec40ef9bc4fc57b
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.11.tar.xz' apt_3.1.11.tar.xz 2464296 SHA256:3e7ee580c6ca7cc3e9a0ebfc4e68c5d998c2dbdf74aeba2114e2f87e22347718
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.1.11/
 
-- https://sources.debian.net/src/apt/3.1.11/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.1.11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.1.11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -1000,21 +994,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.86.1-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.1-1.dsc' glib2.0_2.86.1-1.dsc 4947 SHA256:1be382fb1027e994edfb5b3bbe90ea7c7b6a09cfe36670ef73ea54f5ebcfec04
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.1.orig-unicode-data.tar.xz' glib2.0_2.86.1.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.1.orig.tar.xz' glib2.0_2.86.1.orig.tar.xz 5673928 SHA256:119d1708ca022556d6d2989ee90ad1b82bd9c0d1667e066944a6d0020e2d5e57
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.1-1.debian.tar.xz' glib2.0_2.86.1-1.debian.tar.xz 140976 SHA256:a0ac5743b3d58740f684d036a64fa07d4f973b8fc974185140c031b4e4f9983d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.86.1-1/
 
-- https://sources.debian.net/src/glib2.0/2.86.1-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.86.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.86.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.41-12`
 
@@ -1432,11 +1418,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.21.3-5
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.21.3-5.dsc' krb5_1.21.3-5.dsc 3983 SHA256:88e736b6439d0fe30317ae7c38c3093b7139f1b7709997debe28d756f92de353
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz' krb5_1.21.3.orig.tar.gz 9136145 SHA256:b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz.asc' krb5_1.21.3.orig.tar.gz.asc 833 SHA256:85047c935fe949ef2e275885451b168557b923dd13a5aab0ef8fe6acd27b94d7
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.21.3-5.debian.tar.xz' krb5_1.21.3-5.debian.tar.xz 104424 SHA256:521fdfaf5cda93a64cc70afd357dc31ea6f4128ff5a489b036b58887eceddd46
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3-5.dsc' krb5_1.21.3-5.dsc 3983 SHA256:88e736b6439d0fe30317ae7c38c3093b7139f1b7709997debe28d756f92de353
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz' krb5_1.21.3.orig.tar.gz 9136145 SHA256:b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz.asc' krb5_1.21.3.orig.tar.gz.asc 833 SHA256:85047c935fe949ef2e275885451b168557b923dd13a5aab0ef8fe6acd27b94d7
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3-5.debian.tar.xz' krb5_1.21.3-5.debian.tar.xz 104424 SHA256:521fdfaf5cda93a64cc70afd357dc31ea6f4128ff5a489b036b58887eceddd46
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/krb5/1.21.3-5/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.21.3-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.21.3-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lapack=3.12.1-7`
 
@@ -2456,20 +2448,13 @@ Licenses: (parsed from: `/usr/share/doc/make/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris make-dfsg=4.4.1-2
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.4.1-2.dsc' make-dfsg_4.4.1-2.dsc 1976 SHA256:c3116d3a50914a68c7c1c32ca825b5fdea1c609b8c7cdd4119b79addf7e931ce
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.4.1.orig.tar.xz' make-dfsg_4.4.1.orig.tar.xz 1125180 SHA256:3b16b00ea1079af9f8096bbc71ff7cc00c249fc6a862003da3c42308a0adb0fe
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.4.1-2.debian.tar.xz' make-dfsg_4.4.1-2.debian.tar.xz 44088 SHA256:c785b80bd83b8294f104da43aee9573ba3e175e2e9a77ac00a49f0a569d6e061
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/make-dfsg/4.4.1-2/
 
-- https://sources.debian.net/src/make-dfsg/4.4.1-2/ (for browsing the source)
-- https://sources.debian.net/src/make-dfsg/4.4.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/make-dfsg/4.4.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20250131-1`
 
