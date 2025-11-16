@@ -221,7 +221,7 @@ CMD ["neo4j"]
 		Size: 38.2 MB (38221043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3a85b60870556d9929aebe96efb449a855b71e3f7e8f11f24e50bafd69968b88`  
-		Last Modified: Fri, 14 Nov 2025 01:32:50 GMT  
+		Last Modified: Sun, 16 Nov 2025 08:49:42 GMT  
 		Size: 133.7 MB (133684346 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ddbeeab0473e9a88481abe694bc6a9a7347d3f15719c912e178fde5b5d1b59c`  
