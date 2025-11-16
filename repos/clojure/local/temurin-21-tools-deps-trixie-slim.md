@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fdce264a0f6c9b9ee2e0246a37cb1ce11a8810f39806a16419b0b9c10756af25`
-- Created: `2025-11-08T18:45:23.115564766Z`
+- Image ID: `sha256:d8beccddd4624baf3afef75490b1fffc89c98e2606801a5e75e05a97c1a3d302`
+- Created: `2025-11-14T00:55:27.609587533Z`
 - Virtual Size: ~ 555.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -168,19 +168,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8+deb13u1
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u1.dsc' base-files_13.8+deb13u1.dsc 1247 SHA256:941f3e313881224c5ef1a9257d8ac61d0f9615e87f459ef110408ed69190013d
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u1.tar.xz' base-files_13.8+deb13u1.tar.xz 68640 SHA256:52192994966d473d39c3dd4c4c986ccb418f6b2cc758f9878d893b345d588fe5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8+deb13u1/
 
-- https://sources.debian.net/src/base-files/13.8+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -429,10 +423,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=8.14.1-2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2.dsc' curl_8.14.1-2.dsc 3231 SHA256:71c691d6cb639a75279d2de44575773b5ce27af00bf6f9d7692e5f38568e33b6
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2%2bdeb13u2.dsc' curl_8.14.1-2+deb13u2.dsc 3263 SHA256:e0560e2eb4fa525d5ee89ae2cadcc8ceeeb1549783bc4034fcd3adf7d70de10a
 'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz' curl_8.14.1.orig.tar.gz 4250332 SHA256:6766ada7101d292b42b8b15681120acd68effa4a9660935853cf6d61f0d984d4
 'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz.asc' curl_8.14.1.orig.tar.gz.asc 488 SHA256:39cc2ec8ddc39d04e3e7101bbed46d858d0875cbb297a6bfa20959fa2bc7d5c7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2.debian.tar.xz' curl_8.14.1-2.debian.tar.xz 53264 SHA256:a092f75f452d610d516ec6619ecc355a4cc877afb212ab017c41e7d9c0fb1a1f
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2%2bdeb13u2.debian.tar.xz' curl_8.14.1-2+deb13u2.debian.tar.xz 56460 SHA256:1f3996d20e14356a0e81a9f184eb02f7820241ce03306c8befa2dd4dbd177e2f
 ```
 
 Other potentially useful URLs:

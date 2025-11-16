@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:99e4076635fb0cb931d908087031de873bb58c6ae69da1c6deaa809302f1bdfe`
-- Created: `2025-11-08T18:46:06.124193584Z`
+- Image ID: `sha256:0eb261d3fd0d7048ab928d2426cf554c60ab0e07cf2b21adb920d015ba7dac24`
+- Created: `2025-11-14T00:55:59.487071242Z`
 - Virtual Size: ~ 368.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -170,19 +170,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8+deb13u1
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u1.dsc' base-files_13.8+deb13u1.dsc 1247 SHA256:941f3e313881224c5ef1a9257d8ac61d0f9615e87f459ef110408ed69190013d
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u1.tar.xz' base-files_13.8+deb13u1.tar.xz 68640 SHA256:52192994966d473d39c3dd4c4c986ccb418f6b2cc758f9878d893b345d588fe5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8+deb13u1/
 
-- https://sources.debian.net/src/base-files/13.8+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
