@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d5f482c47d6f78b37f3a3a0ab1250d4c74fd2fdb18c48cbca6d9aa33331a5e0c`
-- Created: `2025-11-12T00:27:49.033602748Z`
-- Virtual Size: ~ 773.18 Mb  
+- Image ID: `sha256:7cc043d27c60d8d43925558efe5884f20b1a3e4882e3a140c8c263c1be981d35`
+- Created: `2025-11-14T01:11:27.996756012Z`
+- Virtual Size: ~ 780.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,10 +23,9 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-11-03T14:27:54Z`
+  - `build-date=2025-11-12T14:07:06Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
-  - `compose-id=RHEL-9.7.0-updates-20251029.7`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
@@ -38,11 +37,11 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.revision=02d02ad5d9d5ef0add399eb1c8d5f2a4b9261204`
-  - `release=1762180032`
+  - `org.opencontainers.image.revision=09400c6ea1039bbeb186633c5815980c077ced2a`
+  - `release=1762956380`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=02d02ad5d9d5ef0add399eb1c8d5f2a4b9261204`
+  - `vcs-ref=09400c6ea1039bbeb186633c5815980c077ced2a`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -1278,15 +1277,15 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-3.5.1-3.el9.x86_64`
+### `rpm` package: `openssl-3.5.1-4.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-3.5.1-3.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-3.el9.src.rpm
+$ dnf --quiet download --source --url openssl-3.5.1-4.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-4.el9_7.src.rpm
 ```
 
 ### `rpm` package: `openssl-fips-provider-3.0.7-8.el9.x86_64`
@@ -1311,28 +1310,38 @@ $ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-8.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.5.1-3.el9.x86_64`
+### `rpm` package: `openssl-libs-3.5.1-4.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-3.5.1-3.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-3.el9.src.rpm
+$ dnf --quiet download --source --url openssl-libs-3.5.1-4.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-4.el9_7.src.rpm
 ```
 
-### `rpm` package: `p11-kit-0.25.3-3.el9.x86_64`
+### `rpm` package: `p11-kit-0.25.3-3.el9_5.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `p11-kit-trust-0.25.3-3.el9.x86_64`
+```console
+$ dnf --quiet download --source --url p11-kit-0.25.3-3.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.25.3-3.el9_5.src.rpm
+```
+
+### `rpm` package: `p11-kit-trust-0.25.3-3.el9_5.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url p11-kit-trust-0.25.3-3.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.25.3-3.el9_5.src.rpm
+```
 
 ### `rpm` package: `pam-1.5.1-26.el9_6.x86_64`
 
