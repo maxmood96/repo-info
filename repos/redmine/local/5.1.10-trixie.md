@@ -261,19 +261,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8+deb13u1
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u1.dsc' base-files_13.8+deb13u1.dsc 1247 SHA256:941f3e313881224c5ef1a9257d8ac61d0f9615e87f459ef110408ed69190013d
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u1.tar.xz' base-files_13.8+deb13u1.tar.xz 68640 SHA256:52192994966d473d39c3dd4c4c986ccb418f6b2cc758f9878d893b345d588fe5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8+deb13u1/
 
-- https://sources.debian.net/src/base-files/13.8+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -604,10 +598,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=8.14.1-2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2.dsc' curl_8.14.1-2.dsc 3231 SHA256:71c691d6cb639a75279d2de44575773b5ce27af00bf6f9d7692e5f38568e33b6
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2%2bdeb13u2.dsc' curl_8.14.1-2+deb13u2.dsc 3263 SHA256:e0560e2eb4fa525d5ee89ae2cadcc8ceeeb1549783bc4034fcd3adf7d70de10a
 'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz' curl_8.14.1.orig.tar.gz 4250332 SHA256:6766ada7101d292b42b8b15681120acd68effa4a9660935853cf6d61f0d984d4
 'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz.asc' curl_8.14.1.orig.tar.gz.asc 488 SHA256:39cc2ec8ddc39d04e3e7101bbed46d858d0875cbb297a6bfa20959fa2bc7d5c7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2.debian.tar.xz' curl_8.14.1-2.debian.tar.xz 53264 SHA256:a092f75f452d610d516ec6619ecc355a4cc877afb212ab017c41e7d9c0fb1a1f
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2%2bdeb13u2.debian.tar.xz' curl_8.14.1-2+deb13u2.debian.tar.xz 56460 SHA256:1f3996d20e14356a0e81a9f184eb02f7820241ce03306c8befa2dd4dbd177e2f
 ```
 
 Other potentially useful URLs:
@@ -1339,9 +1333,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ghostscript=10.05.1~dfsg-1+deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u1.dsc' ghostscript_10.05.1~dfsg-1+deb13u1.dsc 3034 SHA256:368616b13123e2887c54524a685e40856ea9401be3cb3cd0b9c39ba15fcfa818
-'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg.orig.tar.xz' ghostscript_10.05.1~dfsg.orig.tar.xz 28467224 SHA256:ca4ff3a4c2b536baedd3029cb9b7bdd3bd9b27a03b53956efda062140843add1
-'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u1.debian.tar.xz' ghostscript_10.05.1~dfsg-1+deb13u1.debian.tar.xz 87492 SHA256:6490004f76429ef07f78d13d31ad4b55652414065460bd625d561009a0a6215e
+'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u1.dsc' ghostscript_10.05.1~dfsg-1+deb13u1.dsc 3034 SHA256:368616b13123e2887c54524a685e40856ea9401be3cb3cd0b9c39ba15fcfa818
+'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.05.1%7edfsg.orig.tar.xz' ghostscript_10.05.1~dfsg.orig.tar.xz 28467224 SHA256:ca4ff3a4c2b536baedd3029cb9b7bdd3bd9b27a03b53956efda062140843add1
+'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u1.debian.tar.xz' ghostscript_10.05.1~dfsg-1+deb13u1.debian.tar.xz 87492 SHA256:6490004f76429ef07f78d13d31ad4b55652414065460bd625d561009a0a6215e
 ```
 
 Other potentially useful URLs:
@@ -3140,9 +3134,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxml2=2.12.7+dfsg+really2.9.14-2.1+deb13u1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1%2bdeb13u1.dsc' libxml2_2.12.7+dfsg+really2.9.14-2.1+deb13u1.dsc 2721 SHA256:1b5ebd1dc73f27d0633797781d3a9304c8d25a4ace8ca32c44a8247757e92b0c
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14.orig.tar.xz' libxml2_2.12.7+dfsg+really2.9.14.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1%2bdeb13u1.debian.tar.xz' libxml2_2.12.7+dfsg+really2.9.14-2.1+deb13u1.debian.tar.xz 48728 SHA256:1d83110ae29224c4e74d16f74296491b769120d3fdebe5c893c3389e49e4f51e
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1%2bdeb13u1.dsc' libxml2_2.12.7+dfsg+really2.9.14-2.1+deb13u1.dsc 2721 SHA256:1b5ebd1dc73f27d0633797781d3a9304c8d25a4ace8ca32c44a8247757e92b0c
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14.orig.tar.xz' libxml2_2.12.7+dfsg+really2.9.14.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1%2bdeb13u1.debian.tar.xz' libxml2_2.12.7+dfsg+really2.9.14-2.1+deb13u1.debian.tar.xz 48728 SHA256:1d83110ae29224c4e74d16f74296491b769120d3fdebe5c893c3389e49e4f51e
 ```
 
 Other potentially useful URLs:
@@ -4599,9 +4593,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tiff=4.7.0-3+deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u1.dsc' tiff_4.7.0-3+deb13u1.dsc 2287 SHA256:2456052f090792160c4e5db9a63cb9007e7a63fadbc4ae7abaf10188e5f35e5d
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u1.debian.tar.xz' tiff_4.7.0-3+deb13u1.debian.tar.xz 26320 SHA256:50f5a0cbc8d8ccebc08ff65ec836aaaa870bf8f14aef55d5a7aa949f11834733
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3%2bdeb13u1.dsc' tiff_4.7.0-3+deb13u1.dsc 2287 SHA256:2456052f090792160c4e5db9a63cb9007e7a63fadbc4ae7abaf10188e5f35e5d
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3%2bdeb13u1.debian.tar.xz' tiff_4.7.0-3+deb13u1.debian.tar.xz 26320 SHA256:50f5a0cbc8d8ccebc08ff65ec836aaaa870bf8f14aef55d5a7aa949f11834733
 ```
 
 Other potentially useful URLs:
@@ -4851,8 +4845,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xorg=1:7.7+24
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b24.dsc' xorg_7.7+24.dsc 1970 SHA256:3bff9d33df4e1e27c64e777f2fbf68b5f0de93f3985783e953ecaa2d00a636f9
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b24.tar.xz' xorg_7.7+24.tar.xz 234100 SHA256:d3a417626799a1a989c34f76a930597e3feee46710b55a334e01a5233cf1daf2
+'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b24%2bdeb13u1.dsc' xorg_7.7+24+deb13u1.dsc 2002 SHA256:9774f8e48f9883d6ac7e907bc58c7f9b8e4899f8f16a0749d9e65951c0fbe9da
+'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b24%2bdeb13u1.tar.xz' xorg_7.7+24+deb13u1.tar.xz 234192 SHA256:e08f0221d87683d1caa73fc07788c95aa81b2c86842ff1b55b6f24dfd378659a
 ```
 
 Other potentially useful URLs:
