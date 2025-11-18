@@ -1,7 +1,7 @@
 ## `varnish:stable`
 
 ```console
-$ docker pull varnish@sha256:246126e8d9842bec3493459d96a05e000adfd7f53be276ca2f374c6e52510f34
+$ docker pull varnish@sha256:bb077f8fd7c308b777fafd5292900f191a94155438142400f428cab20f553fce
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,77 +22,77 @@ $ docker pull varnish@sha256:246126e8d9842bec3493459d96a05e000adfd7f53be276ca2f3
 ### `varnish:stable` - linux; amd64
 
 ```console
-$ docker pull varnish@sha256:c8fed1d0f415ad6b465f4cbda39c5f9eb1cc7025d756f4cbeb3e6b38a27ee139
+$ docker pull varnish@sha256:3d541edcd71cabd74f061a265b8fe0eb6b56d5126eeef556690b2be784fa0d6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.5 MB (103548965 bytes)**  
+-	Total Size: **103.5 MB (103548997 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60b2bbc0bdfb1ff53979e9a2237284ce8dd5f2aa6957f851c4568d0da1062e6a`
+-	Image ID: `sha256:c191fd8f636ff7ab2b0ff77ed36b91ad9ae668c56da02c371a3027b3547ad360`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 
 ```dockerfile
-# Mon, 03 Nov 2025 20:44:10 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
-# Tue, 04 Nov 2025 00:28:59 GMT
+# Mon, 17 Nov 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1763337600'
+# Tue, 18 Nov 2025 05:09:58 GMT
 ARG PKG_COMMIT=10da6a585eb7d8defe9d273a51df5b133500eb6b
-# Tue, 04 Nov 2025 00:28:59 GMT
+# Tue, 18 Nov 2025 05:09:58 GMT
 ARG VARNISH_VERSION=6.0.16
-# Tue, 04 Nov 2025 00:28:59 GMT
+# Tue, 18 Nov 2025 05:09:58 GMT
 ARG DIST_SHA512=40bccbb024b7909af606220510efe68f6d1009cd678df1950ab6c1d16a0f12fb3cdb812f658825c45d071e1c5afc2561f8b56645da4bc396f5d20e27ed8bd0e2
-# Tue, 04 Nov 2025 00:28:59 GMT
+# Tue, 18 Nov 2025 05:09:58 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 04 Nov 2025 00:28:59 GMT
+# Tue, 18 Nov 2025 05:09:58 GMT
 # ARGS: PKG_COMMIT=10da6a585eb7d8defe9d273a51df5b133500eb6b VARNISH_VERSION=6.0.16 DIST_SHA512=40bccbb024b7909af606220510efe68f6d1009cd678df1950ab6c1d16a0f12fb3cdb812f658825c45d071e1c5afc2561f8b56645da4bc396f5d20e27ed8bd0e2
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout "$PKG_COMMIT";     rm -rf .git;     curl -f "https://varnish-cache.org/downloads/varnish-$VARNISH_VERSION.tgz" -o $tmpdir/orig.tgz;     echo "$DIST_SHA512  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y --no-install-recommends install ../*.deb;     apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS varnish-dev;     mkdir /pkgs;     mv ../*dev*.deb /pkgs;     rm -rf /var/lib/apt/lists/* "$tmpdir"; # buildkit
-# Tue, 04 Nov 2025 00:28:59 GMT
+# Tue, 18 Nov 2025 05:09:58 GMT
 WORKDIR /etc/varnish
-# Tue, 04 Nov 2025 00:28:59 GMT
+# Tue, 18 Nov 2025 05:09:58 GMT
 COPY scripts/ /usr/local/bin/ # buildkit
-# Tue, 04 Nov 2025 00:28:59 GMT
+# Tue, 18 Nov 2025 05:09:58 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 04 Nov 2025 00:28:59 GMT
+# Tue, 18 Nov 2025 05:09:58 GMT
 EXPOSE map[80/tcp:{} 8443/tcp:{}]
-# Tue, 04 Nov 2025 00:28:59 GMT
+# Tue, 18 Nov 2025 05:09:58 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
-		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
-		Size: 28.2 MB (28228567 bytes)  
+	-	`sha256:8e44f01296e3a6fdc31a671bee1c2259c5d5ee8b49f29aec42b5d2af15600296`  
+		Last Modified: Tue, 18 Nov 2025 02:27:00 GMT  
+		Size: 28.2 MB (28228449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2cce0d5fb41d44f7c9b45ced16883470b20767497984a899fa8b6a68f51be2b`  
-		Last Modified: Tue, 04 Nov 2025 00:29:37 GMT  
-		Size: 75.3 MB (75319646 bytes)  
+	-	`sha256:15924a87e36ca6960041f400c0d973b22a0da02559e3ffab9671cdb130812468`  
+		Last Modified: Tue, 18 Nov 2025 05:10:25 GMT  
+		Size: 75.3 MB (75319793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12673bc2d8168f0e4535847515a86e619797f0699ed90349ce922556d390f126`  
-		Last Modified: Tue, 04 Nov 2025 00:29:30 GMT  
-		Size: 720.0 B  
+	-	`sha256:debf8e591f70c974fd78dbf293ba9d3f133500e58e9bd535d756209ab6d1fead`  
+		Last Modified: Tue, 18 Nov 2025 05:10:16 GMT  
+		Size: 723.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `varnish:stable` - unknown; unknown
 
 ```console
-$ docker pull varnish@sha256:3a6b2230b3ee3942efcf2e10ae6eb3924cd050cee39c9116180458cc6d329552
+$ docker pull varnish@sha256:e259b1ad93cbc959a04b426bba6671f2349f9274f84a9a801980434df58b8820
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.6 KB (12649 bytes)**  
+-	Total Size: **12.7 KB (12650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b3cfd5eba599bd89f0c7ccf944056d4d447c5bd4cb58d06231a7e422529d46f`
+-	Image ID: `sha256:a1cbf79b800ddbd3d544ea7a1ff69dddfdc695e52c265814d42586221472a224`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1f27ceddcdf6ce67bc695e8f983bb4567a6642f2d3ed4bf8cb34f35b422e1bc8`  
-		Last Modified: Tue, 04 Nov 2025 10:19:28 GMT  
-		Size: 12.6 KB (12649 bytes)  
+	-	`sha256:6d28b6f3ee154128470c8c3785f8f6293fad53d279ecc52865113f295b09737c`  
+		Last Modified: Tue, 18 Nov 2025 07:21:42 GMT  
+		Size: 12.7 KB (12650 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `varnish:stable` - linux; arm variant v7
