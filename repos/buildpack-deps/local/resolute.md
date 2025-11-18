@@ -137,13 +137,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.11
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.1.11.dsc' apt_3.1.11.dsc 3095 SHA512:62c4522448f45d9c1a6a37e0e03c57ef9186a74db5040e5564ed2550a194f50ac762c3c5a104b20ee9f03df163bb2c7f6f15f9f38a24b6a2e128df681dcb8597
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.1.11.tar.xz' apt_3.1.11.tar.xz 2464296 SHA512:38a282e41eca74f9d82a2b08e4c11fb8c3ffc67cd95cda8e9bfcaf2291e47b63964fc2b53c6d17ff344f633808f25f93e752d150dc267e4bd24cc8d7bfed912f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/3.1.11/
+
 
 ### `dpkg` source package: `architecture-properties=0.2.6`
 
@@ -259,15 +259,13 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake=1:1.18.1-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/a/automake/automake_1.18.1-2.dsc' automake_1.18.1-2.dsc 2483 SHA512:e937b3873fb65b60e196675e2caec7119bfb070165ca312fe0a69eefee1ecf1ba1952f176c3bb325333797f32ea4e101b4c4ddb875542aa6a816f796a91791d4
-'http://archive.ubuntu.com/ubuntu/pool/universe/a/automake/automake_1.18.1.orig.tar.xz' automake_1.18.1.orig.tar.xz 1652392 SHA512:8baa16831416a953a743f4e3c0f55cea5ebefe0f5a7a0e390581981d4461d02dc9038415124e974b2ec390c40daaa241802cd7d42c6fafb793f87cf355db2a61
-'http://archive.ubuntu.com/ubuntu/pool/universe/a/automake/automake_1.18.1.orig.tar.xz.asc' automake_1.18.1.orig.tar.xz.asc 488 SHA512:5a1f0e89a8f3826c766aa98617765f4a576dc278abb7a0a4c0fa04d27d15bf670b79853642914db58731eb4dc737f0b9ad65ba9a07b7bb227e763e90e2e54349
-'http://archive.ubuntu.com/ubuntu/pool/universe/a/automake/automake_1.18.1-2.debian.tar.xz' automake_1.18.1-2.debian.tar.xz 11392 SHA512:71eeb08ef6f7d701f4e613144320a58a04c4b91b4a3d5aee6b10c4d2fb29aef44db1312ed516313ea8c21aa4188dae7c226d8b187a0892db936acae903cce263
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/automake/1:1.18.1-2/
+
 
 ### `dpkg` source package: `autotools-dev=20240727.1`
 
@@ -1090,14 +1088,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-15/copyright`, `/usr/share/doc/cpp-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.2.0-7ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-7ubuntu1.dsc' gcc-15_15.2.0-7ubuntu1.dsc 52596 SHA512:440eeb0634d169c05bf9bd947af1a2527563cf4adca678627282df0a58ece707f7652d4d7202ea1e2c9a9f835f4a82d8cba3e81dd84dee454004625ee3f931bd
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0.orig.tar.gz' gcc-15_15.2.0.orig.tar.gz 105962230 SHA512:83887af5c7798105d1ad85f0e9c794daa3cf030638bf40b3bff48771b8325d95c9a0d99d7d2c86c8e45499ff87f975e1914d00b72482862357645cc7ec330d38
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-7ubuntu1.debian.tar.xz' gcc-15_15.2.0-7ubuntu1.debian.tar.xz 2692424 SHA512:13128f94539dd2efc82bb68f567f049b8131c62229eaf15711baee9e67d5f25224a5b95afbde8dbbc32d7d4223a410091ddd9ad72854be017739eae63f8402a3
-```
 
 ### `dpkg` source package: `gcc-defaults=1.229ubuntu1`
 
@@ -1455,15 +1448,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-dane0t64/copyright`, `/usr/sha
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.9-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.9-3ubuntu2.dsc' gnutls28_3.8.9-3ubuntu2.dsc 3343 SHA512:d9d3c2528f22171d08ea7739095130905996e27adee799236927fa0778ac9028d486bef877f152d05359bc1a7725802c58d73b3e66d3a006d78c24513ff12129
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz' gnutls28_3.8.9.orig.tar.xz 6847364 SHA512:b3b201671bf4e75325610a0291d4cd36a669718e22b3685246b64bde97b5bd94f463ab376ed817869869714115f4ff11bdc53c32604bb04a8ff8e10daa6d1fc7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz.asc' gnutls28_3.8.9.orig.tar.xz.asc 833 SHA512:0eb265bbbc1ee735ecf4e3d308eacf3e3aebe4a9b0848af1fb340ec18e78bb516e1c74a6a72d4764bb03086d88d3ada3cd7ed82861a8f4ca7a403d9a5eb9a3a7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.9-3ubuntu2.debian.tar.xz' gnutls28_3.8.9-3ubuntu2.debian.tar.xz 93096 SHA512:c23d1e8411c299d908c08aebe12719cc4aa24a57bafed8343398872e0307803e82673d9576b99244036de6ab332f93985126a5bf38f1f7c79678572713fbd6bf
-```
 
 ### `dpkg` source package: `graphite2=1.3.14-2ubuntu1`
 
@@ -1849,14 +1836,13 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`, `/usr/share/doc/l
 - `IJG`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.16-2
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.16-2.dsc' lcms2_2.16-2.dsc 1972 SHA512:aef216c633a66a3d25890a8b10c99484b164c001c3301b4d7304bcaf7703f4a45a1e1f9d6b4cf7ab51dd4a55588da65b17b959412380fd644158aaa7d02c023a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.16.orig.tar.gz' lcms2_2.16.orig.tar.gz 7632822 SHA512:638dd6ad6787456c8145510d18b2d0727bd0a446a13ac2934aabc9531d1156eca2a2c0fd780a453823fbd35a1895f9d8de5dc4b3cab505459dd3f0535b4e837d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.16-2.debian.tar.xz' lcms2_2.16-2.debian.tar.xz 11908 SHA512:35efa3dee1a2ab47c18f97f29247dc2dbec35b39c3c783511520eed3ac3b29b067a1398b7d0cb86b07734f6b0ba41680e8f13cbf10a26e3241afe8344f4b14a5
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/lcms2/2.16-2/
+
 
 ### `dpkg` source package: `lerc=4.0.0+ds-5ubuntu1`
 
@@ -2979,14 +2965,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.38-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.38-1build1.dsc' libxcrypt_4.4.38-1build1.dsc 2028 SHA512:5868d85c1c6ac7364f04633a99d0595a4c0d85ebeaf09bdbf5fc4dab6d8f91aa33a6e32180df7ae359fcf42c680075b90992cd21df4c2cd82f17ccd644253fbe
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.38.orig.tar.xz' libxcrypt_4.4.38.orig.tar.xz 394216 SHA512:4310a38e7cb8c337f52ea4ed47561ea548583426276f5ec1f6a52f9435e0508b8c81427947e69e7dc77dee6187fe0c16d1e90d261d857d52d0e58e737230dce4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.38-1build1.debian.tar.xz' libxcrypt_4.4.38-1build1.debian.tar.xz 8596 SHA512:52dfac83bdbd2be82e8b7a3ff8c71d3412ea3b2bb4239bd94bc01169499e78c6938b99ea45ee2cc7ee2a132e7610b36662f5d3957f0ee32a0f8f6622742a7156
-```
 
 ### `dpkg` source package: `libxdmcp=1:1.1.5-1build1`
 

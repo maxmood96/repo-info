@@ -112,13 +112,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.11
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.1.11.dsc' apt_3.1.11.dsc 3095 SHA512:62c4522448f45d9c1a6a37e0e03c57ef9186a74db5040e5564ed2550a194f50ac762c3c5a104b20ee9f03df163bb2c7f6f15f9f38a24b6a2e128df681dcb8597
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.1.11.tar.xz' apt_3.1.11.tar.xz 2464296 SHA512:38a282e41eca74f9d82a2b08e4c11fb8c3ffc67cd95cda8e9bfcaf2291e47b63964fc2b53c6d17ff344f633808f25f93e752d150dc267e4bd24cc8d7bfed912f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/3.1.11/
+
 
 ### `dpkg` source package: `attr=1:2.5.2-3build1`
 
@@ -669,14 +669,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-15-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.2.0-7ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-7ubuntu1.dsc' gcc-15_15.2.0-7ubuntu1.dsc 52596 SHA512:440eeb0634d169c05bf9bd947af1a2527563cf4adca678627282df0a58ece707f7652d4d7202ea1e2c9a9f835f4a82d8cba3e81dd84dee454004625ee3f931bd
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0.orig.tar.gz' gcc-15_15.2.0.orig.tar.gz 105962230 SHA512:83887af5c7798105d1ad85f0e9c794daa3cf030638bf40b3bff48771b8325d95c9a0d99d7d2c86c8e45499ff87f975e1914d00b72482862357645cc7ec330d38
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-7ubuntu1.debian.tar.xz' gcc-15_15.2.0-7ubuntu1.debian.tar.xz 2692424 SHA512:13128f94539dd2efc82bb68f567f049b8131c62229eaf15711baee9e67d5f25224a5b95afbde8dbbc32d7d4223a410091ddd9ad72854be017739eae63f8402a3
-```
 
 ### `dpkg` source package: `gdbm=1.26-1`
 
@@ -899,15 +894,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.9-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.9-3ubuntu2.dsc' gnutls28_3.8.9-3ubuntu2.dsc 3343 SHA512:d9d3c2528f22171d08ea7739095130905996e27adee799236927fa0778ac9028d486bef877f152d05359bc1a7725802c58d73b3e66d3a006d78c24513ff12129
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz' gnutls28_3.8.9.orig.tar.xz 6847364 SHA512:b3b201671bf4e75325610a0291d4cd36a669718e22b3685246b64bde97b5bd94f463ab376ed817869869714115f4ff11bdc53c32604bb04a8ff8e10daa6d1fc7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz.asc' gnutls28_3.8.9.orig.tar.xz.asc 833 SHA512:0eb265bbbc1ee735ecf4e3d308eacf3e3aebe4a9b0848af1fb340ec18e78bb516e1c74a6a72d4764bb03086d88d3ada3cd7ed82861a8f4ca7a403d9a5eb9a3a7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.9-3ubuntu2.debian.tar.xz' gnutls28_3.8.9-3ubuntu2.debian.tar.xz 93096 SHA512:c23d1e8411c299d908c08aebe12719cc4aa24a57bafed8343398872e0307803e82673d9576b99244036de6ab332f93985126a5bf38f1f7c79678572713fbd6bf
-```
 
 ### `dpkg` source package: `grep=3.12-1`
 
@@ -1642,14 +1631,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.38-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.38-1build1.dsc' libxcrypt_4.4.38-1build1.dsc 2028 SHA512:5868d85c1c6ac7364f04633a99d0595a4c0d85ebeaf09bdbf5fc4dab6d8f91aa33a6e32180df7ae359fcf42c680075b90992cd21df4c2cd82f17ccd644253fbe
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.38.orig.tar.xz' libxcrypt_4.4.38.orig.tar.xz 394216 SHA512:4310a38e7cb8c337f52ea4ed47561ea548583426276f5ec1f6a52f9435e0508b8c81427947e69e7dc77dee6187fe0c16d1e90d261d857d52d0e58e737230dce4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.38-1build1.debian.tar.xz' libxcrypt_4.4.38-1build1.debian.tar.xz 8596 SHA512:52dfac83bdbd2be82e8b7a3ff8c71d3412ea3b2bb4239bd94bc01169499e78c6938b99ea45ee2cc7ee2a132e7610b36662f5d3957f0ee32a0f8f6622742a7156
-```
 
 ### `dpkg` source package: `libzstd=1.5.7+dfsg-1build2`
 
