@@ -1,9 +1,9 @@
-# `gradle:9.2.0-jdk-lts-and-current-corretto`
+# `gradle:9.2.1-jdk-lts-and-current-corretto`
 
 ## Docker Metadata
 
-- Image ID: `sha256:babb0e6674f5e4ef03d1c31ad59f18d9a0f26bc348835daa044ac04e0d743fff`
-- Created: `2025-11-14T03:13:34.844854656Z`
+- Image ID: `sha256:ce761d29e765acbbb28dbc376fc8ef9e7740339468c999ee76008348e4582d95`
+- Created: `2025-11-17T19:59:55.363067635Z`
 - Virtual Size: ~ 943.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `JAVA_LTS_HOME=/usr/lib/jvm/java-25-amazon-corretto`
   - `JAVA_CURRENT_HOME=/usr/lib/jvm/java-25-amazon-corretto`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.2.0`
+  - `GRADLE_VERSION=9.2.1`
 
 ## `rpm` (`.rpm`-based packages)
 

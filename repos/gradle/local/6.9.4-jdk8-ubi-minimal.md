@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7b361d066d2c300c66a423aa474bbc82bfb3dc4ea55844aa03abc73f8b29d68`
-- Created: `2025-11-14T02:18:47.982207434Z`
-- Virtual Size: ~ 575.51 Mb  
+- Image ID: `sha256:03a2479a7b363a2c0f11ad6bdbd2567fb57fc8aa11da485a19ca1f82126a8be6`
+- Created: `2025-11-18T02:50:31.923751491Z`
+- Virtual Size: ~ 567.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=6.9.4`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-11-12T14:07:06Z`
+  - `build-date=2025-11-17T06:51:01Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,11 +34,11 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.revision=09400c6ea1039bbeb186633c5815980c077ced2a`
-  - `release=1762956380`
+  - `org.opencontainers.image.revision=f7f5876a3d86ded473c14b11d7491c2b6ddf39ce`
+  - `release=1763362218`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=09400c6ea1039bbeb186633c5815980c077ced2a`
+  - `vcs-ref=f7f5876a3d86ded473c14b11d7491c2b6ddf39ce`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`

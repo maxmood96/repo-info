@@ -1,10 +1,10 @@
-# `gradle:9.2.0-jdk21-ubi`
+# `gradle:9.2.1-jdk21-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3abcdebd38c396640f2fbb37b72941ef3f471f419438f3cd63ae121b25511286`
-- Created: `2025-11-14T02:17:53.217883919Z`
-- Virtual Size: ~ 757.46 Mb  
+- Image ID: `sha256:aa26d0178956dc351d4637066f765ed64ad6848daeb09c2b0c7e70a529eacd53`
+- Created: `2025-11-18T02:43:43.690855223Z`
+- Virtual Size: ~ 749.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.9+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.2.0`
+  - `GRADLE_VERSION=9.2.1`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-11-12T14:07:06Z`
+  - `build-date=2025-11-17T06:51:01Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,11 +34,11 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.revision=09400c6ea1039bbeb186633c5815980c077ced2a`
-  - `release=1762956380`
+  - `org.opencontainers.image.revision=f7f5876a3d86ded473c14b11d7491c2b6ddf39ce`
+  - `release=1763362218`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=09400c6ea1039bbeb186633c5815980c077ced2a`
+  - `vcs-ref=f7f5876a3d86ded473c14b11d7491c2b6ddf39ce`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`

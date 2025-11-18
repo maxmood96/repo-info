@@ -1,9 +1,9 @@
-# `gradle:9.2.0-jdk-lts-and-current-graal`
+# `gradle:9.2.1-jdk-lts-and-current-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b59b34189f2ecf7447cb949c8d860f264955ab80f0cf4a7add5a488773616fa6`
-- Created: `2025-11-13T23:23:44.292697999Z`
+- Image ID: `sha256:a7d5ce59cd7e63769541715f9e53f386b0704c063866a224206912c0a9c2fda8`
+- Created: `2025-11-17T20:00:26.427854322Z`
 - Virtual Size: ~ 1.39 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_LTS_HOME=/opt/java/graalvm25`
   - `JAVA_CURRENT_HOME=/opt/java/graalvm25`
-  - `GRADLE_VERSION=9.2.0`
+  - `GRADLE_VERSION=9.2.1`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
