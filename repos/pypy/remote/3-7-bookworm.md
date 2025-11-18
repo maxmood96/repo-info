@@ -1,7 +1,7 @@
 ## `pypy:3-7-bookworm`
 
 ```console
-$ docker pull pypy@sha256:bd39c8454dbd62800377869357fd8dd1f042560f613c37b521ec9a1acf63a2eb
+$ docker pull pypy@sha256:2f971f077e54ee85d6711922611e73ebe4c54112cdf89acef8ab827c188d1b91
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -186,84 +186,84 @@ $ docker pull pypy@sha256:903162c3c802c72b045e9650e58d8b6db54a0f0ce80a239b10cc14
 ### `pypy:3-7-bookworm` - linux; 386
 
 ```console
-$ docker pull pypy@sha256:93ac7e2a3d39d52257ac49e0aa98f63e5e960718d1fa3db0a0d23b62008594b4
+$ docker pull pypy@sha256:3adf5795bc4273a63e41d1e8b8b3c8f519999ef7c3c4b8a4ae441c2261969124
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **384.5 MB (384541040 bytes)**  
+-	Total Size: **384.5 MB (384546546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a03cc3f67c9a18efaccb4faede0836d4e703050f389ba79b28d8ac718cdd98ad`
+-	Image ID: `sha256:35e8ff86a1fd445c0ad7b2e431a78a333f008d096b71ccb5727c4bbc4c51a6bf`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Mon, 03 Nov 2025 20:44:10 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1762202650'
-# Tue, 04 Nov 2025 00:26:09 GMT
+# Mon, 17 Nov 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1763337600'
+# Tue, 18 Nov 2025 02:56:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 04 Nov 2025 01:31:36 GMT
+# Tue, 18 Nov 2025 04:08:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 04 Nov 2025 02:19:54 GMT
+# Tue, 18 Nov 2025 05:15:29 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 04 Nov 2025 03:19:27 GMT
+# Tue, 18 Nov 2025 06:30:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 04 Nov 2025 03:19:48 GMT
+# Tue, 18 Nov 2025 06:31:15 GMT
 ENV LANG=C.UTF-8
-# Tue, 04 Nov 2025 03:19:48 GMT
+# Tue, 18 Nov 2025 06:31:15 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 04 Nov 2025 03:19:48 GMT
+# Tue, 18 Nov 2025 06:31:15 GMT
 ENV PYPY_VERSION=7.3.20
-# Tue, 04 Nov 2025 03:19:48 GMT
+# Tue, 18 Nov 2025 06:31:15 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2'; 			sha256='1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-aarch64.tar.bz2'; 			sha256='9347fe691a07fd9df17a1b186554fb9d9e6210178ffef19520a579ce1f9eb741'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux32.tar.bz2'; 			sha256='d08ce15dd61e9ace5e010b047104f0137110a258184e448ea8239472f10cf99b'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libfontconfig1 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Tue, 04 Nov 2025 03:19:48 GMT
+# Tue, 18 Nov 2025 06:31:15 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:3a9907ae02a89d2535bb875a11c05038e0be4fa333c35747cd42f6f7b49e018d`  
-		Last Modified: Tue, 04 Nov 2025 00:12:58 GMT  
-		Size: 49.5 MB (49467114 bytes)  
+	-	`sha256:0c53f2648d459c8aba7ef684ca52b0fa14af1ef11e0bff818a5e40a62573ca73`  
+		Last Modified: Tue, 18 Nov 2025 01:13:02 GMT  
+		Size: 49.5 MB (49466866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ce6be8e6c76b859a7e1808f7c9de22684a829f5386b5bf2011b85482d4d192f`  
-		Last Modified: Tue, 04 Nov 2025 00:26:27 GMT  
-		Size: 24.9 MB (24864369 bytes)  
+	-	`sha256:0d1ac37f50532a7306717e1be2f4760a581740981b55bfee41fb74edf971bbbb`  
+		Last Modified: Tue, 18 Nov 2025 02:56:28 GMT  
+		Size: 24.9 MB (24864418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b596182a9b4836dc17a3bc5eadc1e2798b0aa5aa0c8f50fec56b60d802ddb375`  
-		Last Modified: Tue, 04 Nov 2025 01:32:07 GMT  
-		Size: 66.2 MB (66233815 bytes)  
+	-	`sha256:931488dec4785216610c9f2c064b20b308e9839859b58a6fb0171606dd6f0514`  
+		Last Modified: Tue, 18 Nov 2025 04:08:56 GMT  
+		Size: 66.2 MB (66233867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8549e5f91a0f0cdcf69e3e6a90e9e30045f4b8b981df64725a5dd5c77382045`  
-		Last Modified: Tue, 04 Nov 2025 03:15:28 GMT  
-		Size: 210.4 MB (210383786 bytes)  
+	-	`sha256:0d6c185d92b9a40ab45d15fa519a2c049e78267565301d35e186267bc212115f`  
+		Last Modified: Tue, 18 Nov 2025 06:19:22 GMT  
+		Size: 210.4 MB (210389386 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99cdf0f911e4df86fab9af5ff60650b425ed75460081aaae9488297b9dd19ae6`  
-		Last Modified: Tue, 04 Nov 2025 03:20:26 GMT  
-		Size: 3.1 MB (3143052 bytes)  
+	-	`sha256:4ce7efa8b597118f6fed4b7cc2a531dad72a29ab225b23f91c4d6d89df118967`  
+		Last Modified: Tue, 18 Nov 2025 06:31:44 GMT  
+		Size: 3.1 MB (3143064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1186fb3a0f98d31ccf31f509df1118b9015b01c7df2b89e0047e4472a8b73ab`  
-		Last Modified: Tue, 04 Nov 2025 03:20:30 GMT  
-		Size: 30.4 MB (30448904 bytes)  
+	-	`sha256:5a5623f7859518fd53dd52be6a43e83e0a6e155b907368f0a23a4c32ccecd07c`  
+		Last Modified: Tue, 18 Nov 2025 06:31:47 GMT  
+		Size: 30.4 MB (30448945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3-7-bookworm` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:4f800862f3bb8bf4b080e06f87e2d050c0860be56a8395e626e66b807926f650
+$ docker pull pypy@sha256:8245c539cc2e9a842dbdfab8f1698ae151b70bb4f0e4a6b2ecb58b4af83b51e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 MB (16194851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a25d007df9bb593b78e7b845b964e3246b3f09f3faa3ffd5804637107db57be`
+-	Image ID: `sha256:9429e0562e4abc4fd438e6147c31503c81175f1f06cdab63803f2a6eed98d33e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5ab8a2dd522177e9936fcb886a3ed39965b3bd5d7ffa517ae73c9b55e231a3e4`  
-		Last Modified: Tue, 04 Nov 2025 10:41:59 GMT  
+	-	`sha256:9f9de343bf8c0106e8e498eefa03afa8ba1c7beece22c387adba6fc144ceef28`  
+		Last Modified: Tue, 18 Nov 2025 07:42:19 GMT  
 		Size: 16.2 MB (16172587 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5f38aa325d60059071b52b68c2fd73c90b4676df988b0974ae414d6ecdeb470c`  
-		Last Modified: Tue, 04 Nov 2025 10:42:01 GMT  
+	-	`sha256:8a43e9ff88793ef563af68b1d80e0a539f654d07d6f5226c934e53762ffd07fe`  
+		Last Modified: Tue, 18 Nov 2025 07:42:20 GMT  
 		Size: 22.3 KB (22264 bytes)  
 		MIME: application/vnd.in-toto+json
