@@ -60,7 +60,7 @@ CMD ["lein" "repl"]
 		Size: 28.2 MB (28228449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1cf2207419dddb167c29d90929006d7657af2addf2aa43de4229d99984fc0418`  
-		Last Modified: Tue, 18 Nov 2025 06:07:39 GMT  
+		Last Modified: Tue, 18 Nov 2025 09:55:33 GMT  
 		Size: 145.0 MB (144966605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
