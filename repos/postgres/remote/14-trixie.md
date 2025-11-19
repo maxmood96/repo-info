@@ -1,7 +1,7 @@
 ## `postgres:14-trixie`
 
 ```console
-$ docker pull postgres@sha256:e0979b2d53fdb13aa68d8adeec2b7507279d7b18103e67e6c889a6e7fe19a1b9
+$ docker pull postgres@sha256:ca25035f7e6f74552655a1c5e4a9eb21f85e9d316f1f70371f790ef70095dd58
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -914,148 +914,148 @@ $ docker pull postgres@sha256:d9cf5ee1d9f0152a94fea241bbbcf6c15541a1c3677e8db84d
 ### `postgres:14-trixie` - linux; riscv64
 
 ```console
-$ docker pull postgres@sha256:5269bee05b635a0c4216cd8a5fea84207b00c8ebcced9660354fe3456e6433e0
+$ docker pull postgres@sha256:7b84942866ff92d2098b863440e413a34c4b4d9d8af7f911af9326200314bf5d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.2 MB (89232937 bytes)**  
+-	Total Size: **89.2 MB (89230158 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd2714b5a2b48bf6a22dfbe97f43ecf4796f9a48b2bbba3e75574826d13d9fe2`
+-	Image ID: `sha256:a125e8129f49fda6f822214e84d437f6051cb6b90aee6af2537b91a2076e6a6e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 03 Nov 2025 20:44:10 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1762202650'
-# Tue, 04 Nov 2025 23:37:16 GMT
+# Mon, 17 Nov 2025 00:00:00 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1763337600'
+# Wed, 19 Nov 2025 08:53:45 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	install --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit
-# Tue, 04 Nov 2025 23:38:09 GMT
+# Wed, 19 Nov 2025 08:54:39 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		less 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 04 Nov 2025 23:39:06 GMT
+# Wed, 19 Nov 2025 08:55:37 GMT
 ENV GOSU_VERSION=1.19
-# Tue, 04 Nov 2025 23:39:06 GMT
+# Wed, 19 Nov 2025 08:55:37 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Tue, 04 Nov 2025 23:40:04 GMT
+# Wed, 19 Nov 2025 08:56:36 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen; 	locale-gen; 	locale -a | grep 'en_US.utf8' # buildkit
-# Tue, 04 Nov 2025 23:40:04 GMT
+# Wed, 19 Nov 2025 08:56:36 GMT
 ENV LANG=en_US.utf8
-# Tue, 04 Nov 2025 23:40:42 GMT
+# Wed, 19 Nov 2025 08:57:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 		zstd 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 13 Nov 2025 22:03:32 GMT
+# Wed, 19 Nov 2025 08:57:14 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 13 Nov 2025 22:03:34 GMT
+# Wed, 19 Nov 2025 08:57:16 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	mkdir -p /usr/local/share/keyrings/; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /usr/local/share/keyrings/postgres.gpg.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" # buildkit
-# Thu, 13 Nov 2025 22:03:34 GMT
+# Wed, 19 Nov 2025 08:57:16 GMT
 ENV PG_MAJOR=14
-# Thu, 13 Nov 2025 22:03:34 GMT
+# Wed, 19 Nov 2025 08:57:16 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/14/bin
-# Thu, 13 Nov 2025 22:03:34 GMT
+# Wed, 19 Nov 2025 08:57:16 GMT
 ENV PG_VERSION=14.20-1.pgdg13+1
-# Fri, 14 Nov 2025 13:13:15 GMT
+# Wed, 19 Nov 2025 19:19:21 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	aptRepo="[ signed-by=/usr/local/share/keyrings/postgres.gpg.asc ] http://apt.postgresql.org/pub/repos/apt trixie-pgdg main $PG_MAJOR"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 						savedAptMark="$(apt-mark showmanual)"; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						apt-get update; 			apt-get install -y --no-install-recommends dpkg-dev; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			_update_repo() { 				dpkg-scanpackages . > Packages; 				apt-get -o Acquire::GzipIndexes=false update; 			}; 			_update_repo; 						nproc="$(nproc)"; 			export DEB_BUILD_OPTIONS="nocheck parallel=$nproc"; 			apt-get build-dep -y postgresql-common-dev; 			apt-get source --compile postgresql-common-dev; 			_update_repo; 			apt-get build-dep -y "postgresql-$PG_MAJOR=$PG_VERSION"; 			apt-get source --compile "postgresql-$PG_MAJOR=$PG_VERSION"; 									apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			_update_repo; 			grep '^Package: ' Packages; 			cd /; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version # buildkit
-# Fri, 14 Nov 2025 13:13:16 GMT
+# Wed, 19 Nov 2025 19:19:22 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample # buildkit
-# Fri, 14 Nov 2025 13:13:17 GMT
+# Wed, 19 Nov 2025 19:19:22 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
-# Fri, 14 Nov 2025 13:13:17 GMT
+# Wed, 19 Nov 2025 19:19:22 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Fri, 14 Nov 2025 13:13:17 GMT
+# Wed, 19 Nov 2025 19:19:23 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 1777 "$PGDATA" # buildkit
-# Fri, 14 Nov 2025 13:13:17 GMT
+# Wed, 19 Nov 2025 19:19:23 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sat, 15 Nov 2025 09:54:57 GMT
+# Wed, 19 Nov 2025 19:19:23 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Sat, 15 Nov 2025 09:54:58 GMT
+# Wed, 19 Nov 2025 19:19:23 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Sat, 15 Nov 2025 09:54:58 GMT
+# Wed, 19 Nov 2025 19:19:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 15 Nov 2025 09:54:58 GMT
+# Wed, 19 Nov 2025 19:19:23 GMT
 STOPSIGNAL SIGINT
-# Sat, 15 Nov 2025 09:54:58 GMT
+# Wed, 19 Nov 2025 19:19:23 GMT
 EXPOSE map[5432/tcp:{}]
-# Sat, 15 Nov 2025 09:54:58 GMT
+# Wed, 19 Nov 2025 19:19:23 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:1fea97c4573443f662afd8f2cefe2b4ac31f6f24527d29e771c1cc07a012c924`  
-		Last Modified: Tue, 04 Nov 2025 00:29:17 GMT  
-		Size: 28.3 MB (28275786 bytes)  
+	-	`sha256:4522bc4acaa9a6a70c3e44b2e1942464457bbf2cb6f2df1cd45c06cf9b8b92c3`  
+		Last Modified: Tue, 18 Nov 2025 01:46:31 GMT  
+		Size: 28.3 MB (28273126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc37d55c3011ce48efe8b5340c1d17952a31a7ccbd33740e03b4beb1fa13cd08`  
-		Last Modified: Wed, 05 Nov 2025 01:45:45 GMT  
-		Size: 1.2 KB (1165 bytes)  
+	-	`sha256:ead35b712ff5d9d8ca52f6d8dc388c182090aeef7230f12c0e05eb3edb485fd1`  
+		Last Modified: Wed, 19 Nov 2025 11:03:42 GMT  
+		Size: 1.2 KB (1169 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:740b15d328aac9b8cd6aaa0b70eb3464d2f18f8e019f9685fd9492eaacda84c3`  
-		Last Modified: Wed, 05 Nov 2025 01:45:48 GMT  
-		Size: 6.3 MB (6291276 bytes)  
+	-	`sha256:805cd2ec0bf25032c615ebe04d2bb38652c5b53a48b1cfed2f4c1fe462fd4b10`  
+		Last Modified: Wed, 19 Nov 2025 11:03:44 GMT  
+		Size: 6.3 MB (6291335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a53caf52e6aba7e4dff6229654beb9afe47145c315e2b283651efb87c5512ec`  
-		Last Modified: Wed, 05 Nov 2025 01:45:45 GMT  
-		Size: 1.2 MB (1201883 bytes)  
+	-	`sha256:30bd9c82f78034dd1233158b2ceed5652e2801f225b1942083ef6387cd103c8c`  
+		Last Modified: Wed, 19 Nov 2025 11:03:42 GMT  
+		Size: 1.2 MB (1201936 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6648770da4d060ceb20dec8e78d9224a4129eadabec3ee7fc56d287c66d5a1b`  
-		Last Modified: Wed, 05 Nov 2025 01:45:46 GMT  
-		Size: 8.2 MB (8203570 bytes)  
+	-	`sha256:1331c3a8365f0dfb78f990cc2d93424fd734fd6db628189e19912c9cda7b9b27`  
+		Last Modified: Wed, 19 Nov 2025 11:03:43 GMT  
+		Size: 8.2 MB (8203629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50b7028147a73306c16d8351b86fe10a30cc70681d2316fc2d0c3d694664899d`  
-		Last Modified: Wed, 05 Nov 2025 01:45:45 GMT  
-		Size: 1.4 MB (1402208 bytes)  
+	-	`sha256:0f0f1254c0a6888a8b60202100653213d8bfbe16398f19e33ed95324a1058b34`  
+		Last Modified: Wed, 19 Nov 2025 11:03:42 GMT  
+		Size: 1.4 MB (1402267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f67a541f6f6331fbd6d7ea6d3e646d86231d815486c4b8a6c9afaec8bba773c5`  
-		Last Modified: Fri, 14 Nov 2025 00:09:37 GMT  
+	-	`sha256:40d3b88ef3c7c5d24295612d9ca59e0997343d09a8c0f13f340dd004f2eccda1`  
+		Last Modified: Wed, 19 Nov 2025 11:03:42 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:782d3cf5a012c39ef2f2953f74e44665be00398054f1c73231da9064031cc216`  
-		Last Modified: Fri, 14 Nov 2025 00:09:37 GMT  
-		Size: 3.1 KB (3146 bytes)  
+	-	`sha256:1e6d88dfc5525c07d975efeddcc1f8cb228ecaa45372166be21dfec30503cf46`  
+		Last Modified: Wed, 19 Nov 2025 11:03:42 GMT  
+		Size: 3.1 KB (3139 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:081925467a2830573a3dac933476bcbfae1b6516fd176103c5ed100d10d78ace`  
-		Last Modified: Fri, 14 Nov 2025 13:16:04 GMT  
-		Size: 43.8 MB (43837832 bytes)  
+	-	`sha256:a16ebe3666c0658d1461f6823f08681fc6af3f10b69472f11f64e9d1ff2ce6a5`  
+		Last Modified: Wed, 19 Nov 2025 19:22:17 GMT  
+		Size: 43.8 MB (43837485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07c7314790c4322eb095ff80625656206181b8eb691b72decb67f63175aa2c4f`  
-		Last Modified: Fri, 14 Nov 2025 13:16:01 GMT  
-		Size: 9.6 KB (9635 bytes)  
+	-	`sha256:c2d116b0e319084cc5589942b743008f759adaa63b084c1e1ccde01c693b1737`  
+		Last Modified: Wed, 19 Nov 2025 19:22:13 GMT  
+		Size: 9.6 KB (9633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e93ea2d360253bfb3986e55e2f1160fd3f3c00682417831422e743706dbb782f`  
-		Last Modified: Fri, 14 Nov 2025 13:16:01 GMT  
+	-	`sha256:126a7ac53fdcab5ba46ad80517abac205fadcfb45ae8238686998b1da83585ef`  
+		Last Modified: Wed, 19 Nov 2025 19:22:12 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8223c65b9af605a04793537177b540faf56e37306f08f22dd238e51f8edc6a36`  
-		Last Modified: Fri, 14 Nov 2025 13:16:01 GMT  
+	-	`sha256:e0b40ddc160ce69e3bbfd8d167a5a82bce8fc6690e363e076bcf9a9a270a8422`  
+		Last Modified: Wed, 19 Nov 2025 19:22:12 GMT  
 		Size: 168.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4946e094de396c701f48ad4cc017eba5bd428722b7a21e0c8bc7571e223206d`  
-		Last Modified: Sat, 15 Nov 2025 09:56:34 GMT  
-		Size: 5.8 KB (5840 bytes)  
+	-	`sha256:6127467f4c39acedd9ac48ffededebdc51b7ede18894277cb091ff15198a371c`  
+		Last Modified: Wed, 19 Nov 2025 19:22:12 GMT  
+		Size: 5.8 KB (5841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03916ab55b68bd3fb25e1d1aa1cae7e3c8ebe46ddd3c2d76b88dfe4556d8a298`  
-		Last Modified: Sat, 15 Nov 2025 09:56:34 GMT  
-		Size: 184.0 B  
+	-	`sha256:f94945692b84d56ae8bdcd042f9de9a827a08bc1eba15ae2a36a70e6684fa5a7`  
+		Last Modified: Wed, 19 Nov 2025 19:22:12 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:14-trixie` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:ff36f285771cf8ba127898f9f427c8ad9855396d96b0f8e84c66dc51b25816c1
+$ docker pull postgres@sha256:4d5395ebd6d60b180abda9bf650a647df45702f90ba0305c9e0173b9f4827af7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5051870 bytes)**  
+-	Total Size: **5.1 MB (5051864 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78a114c4d1c4e6f202875fb28051be7c98561d6cd340f623f22377cca02f9dac`
+-	Image ID: `sha256:990f3c1cd597887976a5eb1503f2644614e5fb7159c80898c62ecd4bec90a39a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:99dd741c7902c939d90f838bd6777c19a9edda0b690a7fc587e3377d0022e5c7`  
-		Last Modified: Sat, 15 Nov 2025 12:09:46 GMT  
-		Size: 5.0 MB (4997946 bytes)  
+	-	`sha256:e7c10b1962dc6b43d956d2c2cf6b82f070c5cd70c084c694a0a4a8728720e5ee`  
+		Last Modified: Wed, 19 Nov 2025 21:07:47 GMT  
+		Size: 5.0 MB (4997940 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:edcb2ca9f300496278938d5988ef6dde01a304fcdeaa19575ba8fb402b757d73`  
-		Last Modified: Sat, 15 Nov 2025 12:09:47 GMT  
+	-	`sha256:a2f15f385a27464b6f0735cf20d9559f20f2ca35e5ab12aad820360614792ec3`  
+		Last Modified: Wed, 19 Nov 2025 21:07:48 GMT  
 		Size: 53.9 KB (53924 bytes)  
 		MIME: application/vnd.in-toto+json
 
