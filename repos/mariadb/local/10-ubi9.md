@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b78e54a802b98170a5d14112a0da23e540fb2a9589c19e29e3240333c0758391`
-- Created: `2025-11-14T01:15:23.089293131Z`
-- Virtual Size: ~ 519.54 Mb  
+- Image ID: `sha256:e9cd832768686ec83f08398e7699b95d9cbf17f69de6e3929c713c86503101ba`
+- Created: `2025-11-17T23:20:02.683264546Z`
+- Virtual Size: ~ 512.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=10.11.15`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-11-12T14:07:06Z`
+  - `build-date=2025-11-17T06:51:01Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,7 +34,7 @@
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=09400c6ea1039bbeb186633c5815980c077ced2a`
+  - `org.opencontainers.image.revision=f7f5876a3d86ded473c14b11d7491c2b6ddf39ce`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -43,7 +43,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=09400c6ea1039bbeb186633c5815980c077ced2a`
+  - `vcs-ref=f7f5876a3d86ded473c14b11d7491c2b6ddf39ce`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=10.11.15`
@@ -161,12 +161,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT AND GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `coreutils-single-8.32-39.el9.x86_64`
 
