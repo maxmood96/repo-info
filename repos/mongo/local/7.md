@@ -1,10 +1,10 @@
-# `mongo:7.0.25-jammy`
+# `mongo:7.0.26-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b2d200c8650208b87e833e43bc2c8b029a92adc296f1d467c8604b81f3dddff3`
-- Created: `2025-11-13T23:31:38.242534858Z`
-- Virtual Size: ~ 834.01 Mb  
+- Image ID: `sha256:c20972d6afe30795beeb37beefeabca3a85f51d828cc2b9c21bc14c8bf480661`
+- Created: `2025-11-19T23:54:13.303224005Z`
+- Virtual Size: ~ 834.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=7.0`
-  - `MONGO_VERSION=7.0.25`
+  - `MONGO_VERSION=7.0.26`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1321,17 +1321,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=7.0.25`
+### `dpkg` source package: `mongodb-org=7.0.26`
 
 Binary Packages:
 
-- `mongodb-org=7.0.25`
-- `mongodb-org-database=7.0.25`
-- `mongodb-org-database-tools-extra=7.0.25`
-- `mongodb-org-mongos=7.0.25`
-- `mongodb-org-server=7.0.25`
-- `mongodb-org-shell=7.0.25`
-- `mongodb-org-tools=7.0.25`
+- `mongodb-org=7.0.26`
+- `mongodb-org-database=7.0.26`
+- `mongodb-org-database-tools-extra=7.0.26`
+- `mongodb-org-mongos=7.0.26`
+- `mongodb-org-server=7.0.26`
+- `mongodb-org-shell=7.0.26`
+- `mongodb-org-tools=7.0.26`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
