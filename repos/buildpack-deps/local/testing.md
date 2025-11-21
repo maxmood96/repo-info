@@ -286,21 +286,13 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake=1:1.18.1-2
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.18.1-2.dsc' automake_1.18.1-2.dsc 2483 SHA256:970e9a3d9394dd569819300bfd2ab00d2999e260790233e7944a53d3add51bf1
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.18.1.orig.tar.xz' automake_1.18.1.orig.tar.xz 1652392 SHA256:168aa363278351b89af56684448f525a5bce5079d0b6842bd910fdd3f1646887
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.18.1.orig.tar.xz.asc' automake_1.18.1.orig.tar.xz.asc 488 SHA256:728ce05b02f123ea360ab9d168111bc98470afc7568253e93ee2a7582ef5ddb4
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.18.1-2.debian.tar.xz' automake_1.18.1-2.debian.tar.xz 11392 SHA256:cb829a24d9d3a0f78a6ad637423ba9027842e971877f3a0d99d3d3dc36707925
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/automake/1:1.18.1-2/
 
-- https://sources.debian.net/src/automake/1:1.18.1-2/ (for browsing the source)
-- https://sources.debian.net/src/automake/1:1.18.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/automake/1:1.18.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autotools-dev=20240727.1`
 
@@ -2179,20 +2171,13 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`, `/usr/share/doc/l
 - `IJG`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.16-2
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.16-2.dsc' lcms2_2.16-2.dsc 1972 SHA256:3e5796b630090628b5a5662f002d4a9909592963626514241dd201e45e7b1d1c
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.16.orig.tar.gz' lcms2_2.16.orig.tar.gz 7632822 SHA256:d873d34ad8b9b4cea010631f1a6228d2087475e4dc5e763eb81acc23d9d45a51
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.16-2.debian.tar.xz' lcms2_2.16-2.debian.tar.xz 11908 SHA256:5475f5d85514c3004a33a2c103a01a7f6a8ed4fcb41d53518d098fb927b4f916
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lcms2/2.16-2/
 
-- https://sources.debian.net/src/lcms2/2.16-2/ (for browsing the source)
-- https://sources.debian.net/src/lcms2/2.16-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lcms2/2.16-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lerc=4.0.0+ds-5`
 
@@ -2366,20 +2351,13 @@ Licenses: (parsed from: `/usr/share/doc/libcbor0.10/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcbor=0.10.2-2
-'http://deb.debian.org/debian/pool/main/libc/libcbor/libcbor_0.10.2-2.dsc' libcbor_0.10.2-2.dsc 2156 SHA256:45d6e3f92a54584c5a19ea861095d04415d1eb380658a0e6ee61f690f378cba3
-'http://deb.debian.org/debian/pool/main/libc/libcbor/libcbor_0.10.2.orig.tar.gz' libcbor_0.10.2.orig.tar.gz 289450 SHA256:e75f712215d7b7e5c89ef322a09b701f7159f028b8b48978865725f00f79875b
-'http://deb.debian.org/debian/pool/main/libc/libcbor/libcbor_0.10.2-2.debian.tar.xz' libcbor_0.10.2-2.debian.tar.xz 6148 SHA256:85c84ec8bafc8369fddb183ddb4c173cb23b1fc5f57bdd94e2763c4bdbccc6ad
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcbor/0.10.2-2/
 
-- https://sources.debian.net/src/libcbor/0.10.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libcbor/0.10.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcbor/0.10.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdatrie=0.2.13-4`
 
@@ -3817,20 +3795,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.16.12-2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.16.12-2.dsc' linux_6.16.12-2.dsc 214866 SHA256:ea787ce1af18384af0f99faf195b3281979f63ddd1b14a1b4b69d4743e55bdb0
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.16.12.orig.tar.xz' linux_6.16.12.orig.tar.xz 155713912 SHA256:5e9ac6caae163268a9c9d4f1769f41a261cd9bad81c24487b8d8a7c0e277d2a8
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.16.12-2.debian.tar.xz' linux_6.16.12-2.debian.tar.xz 1554112 SHA256:15717d6681aa05a5c131678be602dba263818f0ae9930110c8fe8905afc02e78
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/6.16.12-2/
 
-- https://sources.debian.net/src/linux/6.16.12-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.16.12-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.16.12-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-6`
 
@@ -5384,20 +5355,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=258.1-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258.1-2.dsc' systemd_258.1-2.dsc 8600 SHA256:851f5673e022cbfd03cec26d8b0d2a49d2d05df71dfe33fbca20e6c34f203b5a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258.1.orig.tar.gz' systemd_258.1.orig.tar.gz 16982663 SHA256:8eb34eaf2f78330217280bd7a923578f37e28d3f3ac5168e336ebc9cad84a34d
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258.1-2.debian.tar.xz' systemd_258.1-2.debian.tar.xz 184188 SHA256:f5fa17cd755227368451ffd6cc80e6c4edf06544b78d1fbdc0712d98dc2f167a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/258.1-2/
 
-- https://sources.debian.net/src/systemd/258.1-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/258.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/258.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.15-5`
 
@@ -5415,20 +5379,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.15-5
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.15-5.dsc' sysvinit_3.15-5.dsc 2382 SHA256:e786799da8e41ec5adf339fc24bb00363a2f7a47af80cf19bc1d869c1b1426a3
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.15.orig.tar.gz' sysvinit_3.15.orig.tar.gz 516469 SHA256:0979dd582056130a45bf70738260fb7f3da5cca989509b1e37ad5ad1d4cbe0bf
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.15-5.debian.tar.xz' sysvinit_3.15-5.debian.tar.xz 122868 SHA256:8d68172051f8baa895d21dfa0d3f794d89105f3835539e9999c4a03482d54cfa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.15-5/
 
-- https://sources.debian.net/src/sysvinit/3.15-5/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.15-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.15-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3.1`
 

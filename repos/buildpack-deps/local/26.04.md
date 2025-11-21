@@ -1659,14 +1659,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.2.3+dfsg1-1
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.2.3%2bdfsg1-1.dsc' imagemagick_7.1.2.3+dfsg1-1.dsc 5122 SHA512:4b683b2742c6cd1259dd3c7edd1c0e6d67e2e5b51f0018d26e6c68ac43d8624c982803fea4bf3cecfd6a357029265c26937084e131a988e368f7116640e5372a
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.2.3%2bdfsg1.orig.tar.xz' imagemagick_7.1.2.3+dfsg1.orig.tar.xz 10520388 SHA512:f275cdc61a770f4ad76c08bc271fac74a82359977b52d66725005e81039aff05d3583210215e751c877d2f28354891eda8750e425b0f9e0e6cb4c3fb8d351d6e
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.2.3%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.2.3+dfsg1-1.debian.tar.xz 268272 SHA512:2eb34f925196196c93a676ece98f38e8dde4fca65d5c609f2e47e7f807a1c540cdd25413cd4b5445fb04829a0a3bc4b68a1e95c3180aa247e1a58411af62c527
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/imagemagick/8:7.1.2.3+dfsg1-1/
+
 
 ### `dpkg` source package: `imath=3.1.12-1ubuntu3`
 
@@ -3022,14 +3021,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2-16/copyright`, `/usr/share/doc/l
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.15.1+dfsg-0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.1%2bdfsg-0.3.dsc' libxml2_2.15.1+dfsg-0.3.dsc 3073 SHA512:6585d78ad96aa901f06466ed813fd2798df1812acf6f44897f371a43bfab42a1f153f5cdd052a8b9e86a867c0a5e692e155019a2402a140767c5f8bad914d8f4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.1%2bdfsg.orig.tar.xz' libxml2_2.15.1+dfsg.orig.tar.xz 1185240 SHA512:206308977f923d6a6d17a8ea843cfca5b1d6e00a9c2a3efe7d96551bcdf89a943bf53671404de619974edba0556816dc707ac44b8b9eb147445d697bec46d96e
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.1%2bdfsg-0.3.debian.tar.xz' libxml2_2.15.1+dfsg-0.3.debian.tar.xz 34352 SHA512:c280732f03b35a19574ca1711ad9e939a26230d89a5e532c6dac61ea87c326cf12d0c4ec1678089a69e8977154bd92fe986567640b48207bc56b55349c7fd5b6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libxml2/2.15.1+dfsg-0.3/
+
 
 ### `dpkg` source package: `libxrender=1:0.9.12-1`
 
