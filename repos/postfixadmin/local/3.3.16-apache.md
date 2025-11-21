@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7bc8ed0c983e86e26de49db0e2b955db4a4785acdaa93331c2991a5669e12db7`
-- Created: `2025-11-04T04:13:12.438766153Z`
-- Virtual Size: ~ 517.38 Mb  
+- Image ID: `sha256:f74703412f676c2712a974afe198c5d5013816f6e78189da3d0da9c01779c79f`
+- Created: `2025-11-20T20:31:21.767842174Z`
+- Virtual Size: ~ 517.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.27`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.27.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.27.tar.xz.asc`
-  - `PHP_SHA256=c15a09a9d199437144ecfef7d712ec4ca5c6820cf34acc24cc8489dd0cee41ba`
+  - `PHP_VERSION=8.3.28`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.28.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.28.tar.xz.asc`
+  - `PHP_SHA256=25e3860f30198a386242891c0bf9e2955931f7b666b96c3e3103d36a2a322326`
   - `POSTFIXADMIN_VERSION=3.3.16`
   - `POSTFIXADMIN_SHA512=d1b8074c32f7912c187c2c37c5cca158432cb85fc415d9efe86cf11f70ab035117053cc579306e224cb180e70fa3c84a68335f18d62b43abf591e8105a00847d`
   - `APACHE_DOCUMENT_ROOT=/var/www/html/public`
@@ -2190,11 +2190,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.153-1`
+### `dpkg` source package: `linux=6.1.158-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.153-1`
+- `linux-libc-dev:amd64=6.1.158-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2209,17 +2209,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.153-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.153-1.dsc' linux_6.1.153-1.dsc 290931 SHA256:c224f1fd69212b4c049cbc5080db22b168f6ef166de4ae1ca2665f6fe05049e2
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.153.orig.tar.xz' linux_6.1.153.orig.tar.xz 137857256 SHA256:3cab313f1b0e0ed257888c9057334bc2588f9a0a0f59e641e28b39b07518387f
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.153-1.debian.tar.xz' linux_6.1.153-1.debian.tar.xz 1780628 SHA256:10fed58690490c38949a3018d8da39a70d13eb0e042f00ac4d5f21afb689e808
+$ apt-get source -qq --print-uris linux=6.1.158-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.158-1.dsc' linux_6.1.158-1.dsc 290931 SHA256:acb4382f765c1b983b2e9b03bb474987d8b01766d3a854504e5c6d051fb7d17e
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.158.orig.tar.xz' linux_6.1.158.orig.tar.xz 137872716 SHA256:5bf6ad9f11bf864ed30aeefe13204e286df3ecbf80c7c0fc9a2ecce6c6c29529
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.158-1.debian.tar.xz' linux_6.1.158-1.debian.tar.xz 1788940 SHA256:22569312513e9255b56d40c5d52965abb9808cabd337dd20a652a2a5c4b65f52
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.153-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.153-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.153-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.158-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.158-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.158-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.3=5.3.6-2`
 
