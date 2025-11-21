@@ -277,19 +277,13 @@ Licenses: (parsed from: `/usr/share/doc/libdebconfclient0/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.281
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.281.dsc' cdebconf_0.281.dsc 2663 SHA256:e899afa61aea145d8de73a1b148bea4c293f918e9b9db262f164ce46898ddf88
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.281.tar.xz' cdebconf_0.281.tar.xz 286448 SHA256:104799cf341fd84d8cf6adb0844d36c326e5c57931bbc91ccfa31b3de462c465
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.281/
 
-- https://sources.debian.net/src/cdebconf/0.281/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.281/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.281/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=9.7-3`
 
@@ -1689,15 +1683,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris neurodebian=0.42.3
-'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.42.3.dsc' neurodebian_0.42.3.dsc 2114 SHA256:7944a847260ec25957017310436830900b49f585abe1fc30c129f524779cf020
-'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.42.3.tar.xz' neurodebian_0.42.3.tar.xz 8324088 SHA256:d2d3fc17e1e67f6c2a94606014b40c5d8732e2076b41311138dbbc2dbec5d9a6
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.42.3%7end%2b1.dsc' neurodebian_0.42.3~nd+1.dsc 1501 SHA256:8c831e0fe9851a437cc697a1d2d58d94dde01e094cc8748c96f879c9048c0a95
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.42.3%7end%2b1.tar.xz' neurodebian_0.42.3~nd+1.tar.xz 8324452 SHA256:156800d2ef0cabb79e2b179a6192532be0a37e638c6a47f9d1bd8d1de1dd5051
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/neurodebian/0.42.3/ (for browsing the source)
-- https://sources.debian.net/src/neurodebian/0.42.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/neurodebian/0.42.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.8-3`
 
