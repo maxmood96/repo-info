@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f5d883336301d9401f01e87e40c44e8d0dbfdff34ed86d6075f12d65ed7cbc72`
-- Created: `2025-11-13T23:28:11.053492027Z`
-- Virtual Size: ~ 324.52 Mb  
+- Image ID: `sha256:0c7a6e3e40bf58195f9ecf98e1b7fd7d49a105084867c4a2211338f003cf2fb1`
+- Created: `2025-11-21T01:09:05.831139262Z`
+- Virtual Size: ~ 323.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/bin/entrypoint.sh"]`
 - Command: `["influxdb3","serve"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `INFLUXDB_VERSION=3.6.0`
+  - `INFLUXDB_VERSION=3.7.0`
   - `INFLUXDB3_PLUGIN_DIR=/plugins`
   - `INFLUXDB3_DATA_DIR=/home/influxdb3/.influxdb3`
   - `INFLUXDB3_SERVE_INVOCATION_METHOD=docker-hub`
