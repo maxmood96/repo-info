@@ -1,9 +1,9 @@
-# `nextcloud:31.0.10-fpm`
+# `nextcloud:31.0.11-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:77ee92686192e44af6aa010ac421a32751bcbc8c097f48b3bcbaa5ab8469f977`
-- Created: `2025-11-18T07:02:01.248549562Z`
+- Image ID: `sha256:48959dbb7d7c9ba7dd2327399c8a740a896270dc00a16711346d0a22a1dae1e6`
+- Created: `2025-11-21T00:58:57.361030885Z`
 - Virtual Size: ~ 1.42 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,14 +17,14 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.27`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.27.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.27.tar.xz.asc`
-  - `PHP_SHA256=c15a09a9d199437144ecfef7d712ec4ca5c6820cf34acc24cc8489dd0cee41ba`
+  - `PHP_VERSION=8.3.28`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.28.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.28.tar.xz.asc`
+  - `PHP_SHA256=25e3860f30198a386242891c0bf9e2955931f7b666b96c3e3103d36a2a322326`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=31.0.10`
+  - `NEXTCLOUD_VERSION=31.0.11`
 
 ## `dpkg` (`.deb`-based packages)
 
