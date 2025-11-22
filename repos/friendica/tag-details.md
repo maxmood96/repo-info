@@ -21719,7 +21719,7 @@ $ docker pull friendica@sha256:67a94f4ec0b26b65c9c6ab0cae80d760221b69c1399f39e5d
 
 -	Layers:
 	-	`sha256:aa337dee1cae49d2b8fe2f98e2cec0b2e6a80edca69e43e0a91dbab3d5aa4195`  
-		Last Modified: Thu, 20 Nov 2025 21:43:27 GMT  
+		Last Modified: Sat, 22 Nov 2025 00:14:46 GMT  
 		Size: 55.5 KB (55502 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -43411,7 +43411,7 @@ $ docker pull friendica@sha256:67a94f4ec0b26b65c9c6ab0cae80d760221b69c1399f39e5d
 
 -	Layers:
 	-	`sha256:aa337dee1cae49d2b8fe2f98e2cec0b2e6a80edca69e43e0a91dbab3d5aa4195`  
-		Last Modified: Thu, 20 Nov 2025 21:43:27 GMT  
+		Last Modified: Sat, 22 Nov 2025 00:14:46 GMT  
 		Size: 55.5 KB (55502 bytes)  
 		MIME: application/vnd.in-toto+json
 
