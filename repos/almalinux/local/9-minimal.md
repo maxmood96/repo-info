@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2116afb1e81d3e320a5942396b866a8dba999172a99fbac3f9c5bd967e63507`
-- Created: `2025-11-17T18:58:59.693530614Z`
-- Virtual Size: ~ 91.21 Mb  
+- Image ID: `sha256:a422816b7d2f2e75a8c782579db30161597e57017f014d0fa6ad92e7a2020577`
+- Created: `2025-11-20T18:01:23.255375Z`
+- Virtual Size: ~ 92.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,23 +13,38 @@
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `almalinux-gpg-keys-9.6-1.el9.x86_64`
+### `rpm` package: `almalinux-gpg-keys-9.7-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `almalinux-release-9.6-1.el9.x86_64`
+```console
+$ dnf --quiet download --source --url almalinux-gpg-keys-9.7-1.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/almalinux-release-9.7-1.el9.src.rpm
+```
+
+### `rpm` package: `almalinux-release-9.7-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `almalinux-repos-9.6-1.el9.x86_64`
+```console
+$ dnf --quiet download --source --url almalinux-release-9.7-1.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/almalinux-release-9.7-1.el9.src.rpm
+```
+
+### `rpm` package: `almalinux-repos-9.7-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url almalinux-repos-9.7-1.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/almalinux-release-9.7-1.el9.src.rpm
+```
 
 ### `rpm` package: `alternatives-1.24-2.el9.x86_64`
 
@@ -42,11 +57,16 @@ $ dnf --quiet download --source --url alternatives-1.24-2.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/chkconfig-1.24-2.el9.src.rpm
 ```
 
-### `rpm` package: `audit-libs-3.1.5-4.el9.x86_64`
+### `rpm` package: `audit-libs-3.1.5-7.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url audit-libs-3.1.5-7.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/audit-3.1.5-7.el9.src.rpm
+```
 
 ### `rpm` package: `basesystem-11-13.el9.noarch`
 
@@ -103,29 +123,49 @@ $ dnf --quiet download --source --url coreutils-single-8.32-39.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/coreutils-8.32-39.el9.src.rpm
 ```
 
-### `rpm` package: `crypto-policies-20250128-1.git5269e22.el9.noarch`
+### `rpm` package: `crypto-policies-20250905-1.git377cc42.el9_7.noarch`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `curl-minimal-7.76.1-31.el9_6.1.x86_64`
+```console
+$ dnf --quiet download --source --url crypto-policies-20250905-1.git377cc42.el9_7.noarch
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/crypto-policies-20250905-1.git377cc42.el9_7.src.rpm
+```
+
+### `rpm` package: `curl-minimal-7.76.1-34.el9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `cyrus-sasl-lib-2.1.27-21.el9.x86_64`
+```console
+$ dnf --quiet download --source --url curl-minimal-7.76.1-34.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/curl-7.76.1-34.el9.src.rpm
+```
+
+### `rpm` package: `cyrus-sasl-lib-2.1.27-22.el9.x86_64`
 
 Licenses (from `rpm --query`): BSD with advertising
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `dnf-data-4.14.0-25.el9.alma.1.noarch`
+```console
+$ dnf --quiet download --source --url cyrus-sasl-lib-2.1.27-22.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/cyrus-sasl-2.1.27-22.el9.src.rpm
+```
+
+### `rpm` package: `dnf-data-4.14.0-31.el9.alma.1.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url dnf-data-4.14.0-31.el9.alma.1.noarch
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/dnf-4.14.0-31.el9.alma.1.src.rpm
+```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
 
@@ -171,29 +211,49 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-1.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/gdbm-1.23-1.el9.src.rpm
 ```
 
-### `rpm` package: `glib2-2.68.4-16.el9_6.3.x86_64`
+### `rpm` package: `glib2-2.68.4-18.el9_7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `glibc-2.34-168.el9_6.24.x86_64`
+```console
+$ dnf --quiet download --source --url glib2-2.68.4-18.el9_7
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/glib2-2.68.4-18.el9_7.src.rpm
+```
 
-Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `glibc-common-2.34-168.el9_6.24.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `glibc-minimal-langpack-2.34-168.el9_6.24.x86_64`
+### `rpm` package: `glibc-2.34-231.el9_7.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url glibc-2.34-231.el9_7.2
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/glibc-2.34-231.el9_7.2.src.rpm
+```
+
+### `rpm` package: `glibc-common-2.34-231.el9_7.2.x86_64`
+
+Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+
+Source:
+
+```console
+$ dnf --quiet download --source --url glibc-common-2.34-231.el9_7.2
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/glibc-2.34-231.el9_7.2.src.rpm
+```
+
+### `rpm` package: `glibc-minimal-langpack-2.34-231.el9_7.2.x86_64`
+
+Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+
+Source:
+
+```console
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-231.el9_7.2
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/glibc-2.34-231.el9_7.2.src.rpm
+```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
 
@@ -217,11 +277,16 @@ $ dnf --quiet download --source --url gnupg2-2.3.3-4.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/gnupg2-2.3.3-4.el9.src.rpm
 ```
 
-### `rpm` package: `gnutls-3.8.3-6.el9_6.2.x86_64`
+### `rpm` package: `gnutls-3.8.3-9.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gnutls-3.8.3-9.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/gnutls-3.8.3-9.el9.src.rpm
+```
 
 ### `rpm` package: `gobject-introspection-1.68.0-11.el9.x86_64`
 
@@ -350,11 +415,16 @@ $ dnf --quiet download --source --url libblkid-2.37.4-21.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/util-linux-2.37.4-21.el9.src.rpm
 ```
 
-### `rpm` package: `libcap-2.48-9.el9_2.x86_64`
+### `rpm` package: `libcap-2.48-10.el9.x86_64`
 
 Licenses (from `rpm --query`): BSD or GPLv2
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcap-2.48-10.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libcap-2.48-10.el9.src.rpm
+```
 
 ### `rpm` package: `libcap-ng-0.8.2-7.el9.x86_64`
 
@@ -367,23 +437,38 @@ $ dnf --quiet download --source --url libcap-ng-0.8.2-7.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libcap-ng-0.8.2-7.el9.src.rpm
 ```
 
-### `rpm` package: `libcom_err-1.46.5-7.el9.x86_64`
+### `rpm` package: `libcom_err-1.46.5-8.el9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `libcurl-minimal-7.76.1-31.el9_6.1.x86_64`
+```console
+$ dnf --quiet download --source --url libcom_err-1.46.5-8.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/e2fsprogs-1.46.5-8.el9.src.rpm
+```
+
+### `rpm` package: `libcurl-minimal-7.76.1-34.el9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `libdnf-0.69.0-13.el9.alma.1.x86_64`
+```console
+$ dnf --quiet download --source --url libcurl-minimal-7.76.1-34.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/curl-7.76.1-34.el9.src.rpm
+```
+
+### `rpm` package: `libdnf-0.69.0-16.el9.alma.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libdnf-0.69.0-16.el9.alma.1
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libdnf-0.69.0-16.el9.alma.1.src.rpm
+```
 
 ### `rpm` package: `libevent-2.1.12-8.el9_4.x86_64`
 
@@ -407,11 +492,16 @@ $ dnf --quiet download --source --url libffi-3.4.2-8.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libffi-3.4.2-8.el9.src.rpm
 ```
 
-### `rpm` package: `libgcc-11.5.0-5.el9_5.alma.1.x86_64`
+### `rpm` package: `libgcc-11.5.0-11.el9.alma.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libgcc-11.5.0-11.el9.alma.1
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/gcc-11.5.0-11.el9.alma.1.src.rpm
+```
 
 ### `rpm` package: `libgcrypt-1.10.0-11.el9.x86_64`
 
@@ -501,11 +591,16 @@ $ dnf --quiet download --source --url libpeas-1.30.0-4.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libpeas-1.30.0-4.el9.src.rpm
 ```
 
-### `rpm` package: `librepo-1.14.5-2.el9.x86_64`
+### `rpm` package: `librepo-1.14.5-3.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url librepo-1.14.5-3.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/librepo-1.14.5-3.el9.src.rpm
+```
 
 ### `rpm` package: `libreport-filesystem-2.15.2-6.el9.alma.noarch`
 
@@ -540,11 +635,16 @@ $ dnf --quiet download --source --url libsemanage-3.6-5.el9_6
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libsemanage-3.6-5.el9_6.src.rpm
 ```
 
-### `rpm` package: `libsepol-3.6-2.el9.x86_64`
+### `rpm` package: `libsepol-3.6-3.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libsepol-3.6-3.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libsepol-3.6-3.el9.src.rpm
+```
 
 ### `rpm` package: `libsigsegv-2.13-4.el9.x86_64`
 
@@ -579,11 +679,16 @@ $ dnf --quiet download --source --url libsolv-0.7.24-3.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libsolv-0.7.24-3.el9.src.rpm
 ```
 
-### `rpm` package: `libstdc++-11.5.0-5.el9_5.alma.1.x86_64`
+### `rpm` package: `libstdc++-11.5.0-11.el9.alma.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libstdc++-11.5.0-11.el9.alma.1
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/gcc-11.5.0-11.el9.alma.1.src.rpm
+```
 
 ### `rpm` package: `libtasn1-4.16.0-9.el9.x86_64`
 
@@ -739,17 +844,27 @@ $ dnf --quiet download --source --url mpfr-4.1.0-7.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/mpfr-4.1.0-7.el9.src.rpm
 ```
 
-### `rpm` package: `ncurses-base-6.2-10.20210508.el9_6.2.noarch`
+### `rpm` package: `ncurses-base-6.2-12.20210508.el9.noarch`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `ncurses-libs-6.2-10.20210508.el9_6.2.x86_64`
+```console
+$ dnf --quiet download --source --url ncurses-base-6.2-12.20210508.el9.noarch
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/ncurses-6.2-12.20210508.el9.src.rpm
+```
+
+### `rpm` package: `ncurses-libs-6.2-12.20210508.el9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url ncurses-libs-6.2-12.20210508.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/ncurses-6.2-12.20210508.el9.src.rpm
+```
 
 ### `rpm` package: `nettle-3.10.1-1.el9.x86_64`
 
@@ -784,11 +899,27 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.2.2-6.el9_5.1.x86_64`
+### `rpm` package: `openssl-fips-provider-3.5.1-3.el9.x86_64`
 
-Licenses (from `rpm --query`): ASL 2.0
+Licenses (from `rpm --query`): Apache-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-fips-provider-3.5.1-3.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/openssl-3.5.1-3.el9.src.rpm
+```
+
+### `rpm` package: `openssl-libs-3.5.1-3.el9.x86_64`
+
+Licenses (from `rpm --query`): Apache-2.0
+
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-libs-3.5.1-3.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/openssl-3.5.1-3.el9.src.rpm
+```
 
 ### `rpm` package: `p11-kit-0.25.3-3.el9_5.x86_64`
 
@@ -867,23 +998,38 @@ $ dnf --quiet download --source --url readline-8.1-4.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/readline-8.1-4.el9.src.rpm
 ```
 
-### `rpm` package: `rootfiles-8.1-34.el9.noarch`
+### `rpm` package: `rootfiles-8.1-35.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `rpm-4.16.1.3-37.el9.x86_64`
+```console
+$ dnf --quiet download --source --url rootfiles-8.1-35.el9.noarch
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/rootfiles-8.1-35.el9.src.rpm
+```
+
+### `rpm` package: `rpm-4.16.1.3-39.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `rpm-libs-4.16.1.3-37.el9.x86_64`
+```console
+$ dnf --quiet download --source --url rpm-4.16.1.3-39.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/rpm-4.16.1.3-39.el9.src.rpm
+```
+
+### `rpm` package: `rpm-libs-4.16.1.3-39.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url rpm-libs-4.16.1.3-39.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/rpm-4.16.1.3-39.el9.src.rpm
+```
 
 ### `rpm` package: `sed-4.8-9.el9.x86_64`
 
@@ -907,29 +1053,49 @@ $ dnf --quiet download --source --url setup-2.13.7-10.el9.noarch
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/setup-2.13.7-10.el9.src.rpm
 ```
 
-### `rpm` package: `shadow-utils-4.9-12.el9.x86_64`
+### `rpm` package: `shadow-utils-4.9-15.el9.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `sqlite-libs-3.34.1-8.el9_6.x86_64`
+```console
+$ dnf --quiet download --source --url shadow-utils-4.9-15.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/shadow-utils-4.9-15.el9.src.rpm
+```
+
+### `rpm` package: `sqlite-libs-3.34.1-9.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `systemd-libs-252-51.el9_6.3.alma.2.x86_64`
+```console
+$ dnf --quiet download --source --url sqlite-libs-3.34.1-9.el9_7
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/sqlite-3.34.1-9.el9_7.src.rpm
+```
+
+### `rpm` package: `systemd-libs-252-55.el9_7.2.alma.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `tzdata-2025b-1.el9.noarch`
+```console
+$ dnf --quiet download --source --url systemd-libs-252-55.el9_7.2.alma.2
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/systemd-252-55.el9_7.2.alma.2.src.rpm
+```
+
+### `rpm` package: `tzdata-2025b-2.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2025b-2.el9.noarch
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/tzdata-2025b-2.el9.src.rpm
+```
 
 ### `rpm` package: `xz-libs-5.2.5-8.el9_0.x86_64`
 
