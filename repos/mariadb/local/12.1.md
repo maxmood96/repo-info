@@ -1,10 +1,10 @@
-# `mariadb:12.0.2-noble`
+# `mariadb:12.1.2-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4993dba27de422f8a3e17161c4572adf3b32da19d6aa5b475f4f3dae938aeae3`
-- Created: `2025-11-13T23:29:56.747696048Z`
-- Virtual Size: ~ 329.86 Mb  
+- Image ID: `sha256:f90bc2981a9328d1cf99f733a5c355a5cc869d78f10eea1932cf99d80328ff86`
+- Created: `2025-11-21T01:11:31.830429939Z`
+- Virtual Size: ~ 335.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.19`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:12.0.2+maria~ubu2404`
+  - `MARIADB_VERSION=1:12.1.2+maria~ubu2404`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:noble`
@@ -25,7 +25,7 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=12.0.2`
+  - `org.opencontainers.image.version=12.1.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -545,11 +545,11 @@ $ apt-get source -qq --print-uris findutils=4.9.0-5build1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.9.0-5build1.debian.tar.xz' findutils_4.9.0-5build1.debian.tar.xz 32864 SHA512:501c6e0100ac4a7b304700518c9d45c2f8a1f76bd5f12914c9b136e3b3d117115090177d5e6c863333982ca8ded70d188bbde2ff98d51c1d3c51ff247f5eb95b
 ```
 
-### `dpkg` source package: `galera-4=26.4.23-ubu2404`
+### `dpkg` source package: `galera-4=26.4.24-ubu2404`
 
 Binary Packages:
 
-- `galera-4=26.4.23-ubu2404`
+- `galera-4=26.4.24-ubu2404`
 
 Licenses: (parsed from: `/usr/share/doc/galera-4/copyright`)
 
@@ -1635,18 +1635,18 @@ $ apt-get source -qq --print-uris lz4=1.9.4-1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.9.4-1build1.1.debian.tar.xz' lz4_1.9.4-1build1.1.debian.tar.xz 8356 SHA512:deb05c99d5ba5702997608b9c5fbe72b1a383bce253e0e25c409746c44d98245c559c0744767a18d32bdb5303a575c18f5c784fe4ad0b03565a13450c86c74f1
 ```
 
-### `dpkg` source package: `mariadb=1:12.0.2+maria~ubu2404`
+### `dpkg` source package: `mariadb=1:12.1.2+maria~ubu2404`
 
 Binary Packages:
 
-- `libmariadb3:amd64=1:12.0.2+maria~ubu2404`
-- `mariadb-backup=1:12.0.2+maria~ubu2404`
-- `mariadb-client=1:12.0.2+maria~ubu2404`
-- `mariadb-client-core=1:12.0.2+maria~ubu2404`
-- `mariadb-common=1:12.0.2+maria~ubu2404`
-- `mariadb-server=1:12.0.2+maria~ubu2404`
-- `mariadb-server-core=1:12.0.2+maria~ubu2404`
-- `mysql-common=1:12.0.2+maria~ubu2404`
+- `libmariadb3:amd64=1:12.1.2+maria~ubu2404`
+- `mariadb-backup=1:12.1.2+maria~ubu2404`
+- `mariadb-client=1:12.1.2+maria~ubu2404`
+- `mariadb-client-core=1:12.1.2+maria~ubu2404`
+- `mariadb-common=1:12.1.2+maria~ubu2404`
+- `mariadb-server=1:12.1.2+maria~ubu2404`
+- `mariadb-server-core=1:12.1.2+maria~ubu2404`
+- `mysql-common=1:12.1.2+maria~ubu2404`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1655,9 +1655,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb=1:12.0.2+maria~ubu2404
-'http://archive.mariadb.org/mariadb-12.0.2/repo/ubuntu/pool/main/m/mariadb/mariadb_12.0.2%2bmaria%7eubu2404.dsc' mariadb_12.0.2+maria~ubu2404.dsc 4622 SHA256:f15bf2e45e0a54bb172814bc7783279286cd01d143d98055c32625ab8be85c5c
-'http://archive.mariadb.org/mariadb-12.0.2/repo/ubuntu/pool/main/m/mariadb/mariadb_12.0.2%2bmaria%7eubu2404.tar.xz' mariadb_12.0.2+maria~ubu2404.tar.xz 70062820 SHA256:eedd855a4ff2cae0cebcaa2cab914b813152937b75696e03e1e9f01196c27d0e
+$ apt-get source -qq --print-uris mariadb=1:12.1.2+maria~ubu2404
+'http://archive.mariadb.org/mariadb-12.1.2/repo/ubuntu/pool/main/m/mariadb/mariadb_12.1.2%2bmaria%7eubu2404.dsc' mariadb_12.1.2+maria~ubu2404.dsc 4625 SHA256:5cd030bd992b15aee879c63898c50742150c3145a18bf96c8ae78f3586c18f27
+'http://archive.mariadb.org/mariadb-12.1.2/repo/ubuntu/pool/main/m/mariadb/mariadb_12.1.2%2bmaria%7eubu2404.tar.xz' mariadb_12.1.2+maria~ubu2404.tar.xz 185008084 SHA256:08dc9dd378a35530bdde322c33efeb42e8069edcdfcefed48dd58df74e0626fd
 ```
 
 ### `dpkg` source package: `mawk=1.3.4.20240123-1build1`
