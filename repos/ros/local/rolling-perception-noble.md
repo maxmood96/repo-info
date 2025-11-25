@@ -7196,15 +7196,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-21-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-21=21.0.8+9~us1-0ubuntu1~24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.8%2b9%7eus1-0ubuntu1%7e24.04.1.dsc' openjdk-21_21.0.8+9~us1-0ubuntu1~24.04.1.dsc 5454 SHA512:19ed66d13369b845f9a84f41018be817746d9ad4a1b9acf32b4812ee20b25309369d8cf9732f245589d18d865043e4661d44de2abf14126796020e4097459fd9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.8%2b9%7eus1.orig-googletest.tar.xz' openjdk-21_21.0.8+9~us1.orig-googletest.tar.xz 613408 SHA512:6f36da71c9d2709b2ed306b84dbce4d2fb36b4a2720ccb17de928c742e6b9563d596423436e05addaa206d65372370dcf3bc51a06815b0bb3af4a481b3746810
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.8%2b9%7eus1.orig.tar.xz' openjdk-21_21.0.8+9~us1.orig.tar.xz 67437140 SHA512:23d2bc571aebe92dbed6af8617ce55fa3e11cbede672527a9148fd73363026df71b483f623f950d65e3e914fb7df945fccbaaf1dae3a970a277ef1e25995a415
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.8%2b9%7eus1-0ubuntu1%7e24.04.1.debian.tar.xz' openjdk-21_21.0.8+9~us1-0ubuntu1~24.04.1.debian.tar.xz 216908 SHA512:b90c80ae02ed4a9ba9fb55341046f958702ac77e91df998153d3166910f5c8f1adb741a8cac547c4f064f51406e0141795d17a1f16a6cf9115ca82a1bf7354df
-```
 
 ### `dpkg` source package: `openjpeg2=2.5.0-2ubuntu0.4`
 
@@ -9009,14 +9003,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/shar
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.8.dsc' python3.12_3.12.3-1ubuntu0.8.dsc 3920 SHA512:6ec5347db2f302907e401ac4bafc9f884d7f94ebd2d5972f98d0f239121d115fe50cbcc632be12bb31e40cabf26e81e91cba4a92f6f573b4902ed2413a0c2948
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.8.debian.tar.xz' python3.12_3.12.3-1ubuntu0.8.debian.tar.xz 257268 SHA512:36a58735bef1d2f760403ff898d75f4802d30badcf32ab041fb64e4c8bb0c9cc48de1dfc87f576192c6e03b9128ee50a8609975c7185cb573b51eb4d781036f3
-```
 
 ### `dpkg` source package: `pyyaml=6.0.1-2build2`
 

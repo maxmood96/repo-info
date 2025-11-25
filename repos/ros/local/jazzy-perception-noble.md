@@ -7120,15 +7120,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-21-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-21=21.0.8+9~us1-0ubuntu1~24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.8%2b9%7eus1-0ubuntu1%7e24.04.1.dsc' openjdk-21_21.0.8+9~us1-0ubuntu1~24.04.1.dsc 5454 SHA512:19ed66d13369b845f9a84f41018be817746d9ad4a1b9acf32b4812ee20b25309369d8cf9732f245589d18d865043e4661d44de2abf14126796020e4097459fd9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.8%2b9%7eus1.orig-googletest.tar.xz' openjdk-21_21.0.8+9~us1.orig-googletest.tar.xz 613408 SHA512:6f36da71c9d2709b2ed306b84dbce4d2fb36b4a2720ccb17de928c742e6b9563d596423436e05addaa206d65372370dcf3bc51a06815b0bb3af4a481b3746810
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.8%2b9%7eus1.orig.tar.xz' openjdk-21_21.0.8+9~us1.orig.tar.xz 67437140 SHA512:23d2bc571aebe92dbed6af8617ce55fa3e11cbede672527a9148fd73363026df71b483f623f950d65e3e914fb7df945fccbaaf1dae3a970a277ef1e25995a415
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.8%2b9%7eus1-0ubuntu1%7e24.04.1.debian.tar.xz' openjdk-21_21.0.8+9~us1-0ubuntu1~24.04.1.debian.tar.xz 216908 SHA512:b90c80ae02ed4a9ba9fb55341046f958702ac77e91df998153d3166910f5c8f1adb741a8cac547c4f064f51406e0141795d17a1f16a6cf9115ca82a1bf7354df
-```
 
 ### `dpkg` source package: `openjpeg2=2.5.0-2ubuntu0.4`
 
