@@ -1268,15 +1268,13 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.11.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.11.2-2.dsc' libgcrypt20_1.11.2-2.dsc 2945 SHA512:8a828ee80648fa44089bf9894c1f1ed1405b8e5649860d63e00bf8e83b9b2b644f2d81516ff2f3b11a1c55037923b6e37e9621b762e3dad28faef9032c874172
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.11.2.orig.tar.bz2' libgcrypt20_1.11.2.orig.tar.bz2 4237802 SHA512:b706cea602cc8f0896e57ce979643bf78974b05faec27c1b053b773c57d8b04250e30e95a4ef5899e1df981d01d8d08f0a36e10b5820a5ec4183e74c02e5f1f0
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.11.2.orig.tar.bz2.asc' libgcrypt20_1.11.2.orig.tar.bz2.asc 265 SHA512:236edbd12f904a75497eba1b04fd79826a9553406a4301f90e91c5598d4b6ae9f20b894027ae8f5e821d776fbaef3c8203b9ee6e077e5659782ce750aecd5e57
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.11.2-2.debian.tar.xz' libgcrypt20_1.11.2-2.debian.tar.xz 38940 SHA512:d330de7b9fafed0225083720e2abbf16ef53e51a85ebd2975eb464e4b82cb879ff1e85303fd1cb5f91e11646f0d30f1eef9b888998e5f39f940f9975877b7002
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libgcrypt20/1.11.2-2/
+
 
 ### `dpkg` source package: `libgpg-error=1.56-2`
 
@@ -1965,15 +1963,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `X11`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.9-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.9-2.dsc' p11-kit_0.25.9-2.dsc 2538 SHA512:71c392de98c196e33753a0836135260edec58ee54318816a8a0db62deec6a5f22ffe328a79ff9e0f15b2e1ae22b291f85572c9715e6940a0bbb1b93144cfd11c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.9.orig.tar.xz' p11-kit_0.25.9.orig.tar.xz 1053140 SHA512:5a079c4d362af5b6f37ebf5e4bea56a44983976a311b82121fd2f3dac6efabe9df2f2b639327940dbb192dd136c866b5860781def5feca88fd467659143a1a3e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.9.orig.tar.xz.asc' p11-kit_0.25.9.orig.tar.xz.asc 228 SHA512:82187c1e13dd5068a31f19674b258cbb5df2eb15930e2fe13acb100bb3ce51185599561b47512aa465c25c79e5b2805c1625ffb434f72f4893774985ee045528
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.9-2.debian.tar.xz' p11-kit_0.25.9-2.debian.tar.xz 24280 SHA512:341b8af81425683de80b4853567d77baba39e2758582bebc7d4894e8d23ab886606b17ddde6a7d0cac5b3d6596524c9bfb821d0d5d6cae659bb4436612590496
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/p11-kit/0.25.9-2/
+
 
 ### `dpkg` source package: `pam=1.7.0-5ubuntu2`
 
@@ -2413,15 +2409,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.5-4
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.5-4.dsc' subversion_1.14.5-4.dsc 4074 SHA512:9dc84be6b102cd4af7fd1b2129972264966a80b952c9d0ae2d052917ad968c51da725a51634f29232b03146579e25714be9faad6427661fa02c3651682c2afbe
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.5.orig.tar.gz' subversion_1.14.5.orig.tar.gz 11645728 SHA512:a8e9f5bf9f32e4fa9a5873544c9228a392af0b4ec1126389a98cd8830c0644fc9d4b88bcb800c0e2c40bd58517cfaba23d79164c774d2cb3267a897c1d599634
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.5.orig.tar.gz.asc' subversion_1.14.5.orig.tar.gz.asc 2382 SHA512:b85c4d6e77194b5edff12e3e57c7d673226253048ddf3b622bb4dee6a8aed9153d3c69477876a7caae9eebe2ff5930e42993e34c8fc33d9fa65f9a57bc005d24
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.5-4.debian.tar.xz' subversion_1.14.5-4.debian.tar.xz 300248 SHA512:8e7b39c50cbbea583f1b4fe550a618e49cbddc562392642bdaf6cd35ad6d152535cae63ae92d13eec6a362c7482affd895462f637db167872b44f81485b0d442
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/subversion/1.14.5-4/
+
 
 ### `dpkg` source package: `systemd=257.9-0ubuntu2`
 

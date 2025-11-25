@@ -1506,21 +1506,13 @@ Licenses: (parsed from: `/usr/share/doc/girepository-tools/copyright`, `/usr/sha
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.86.1-2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.1-2.dsc' glib2.0_2.86.1-2.dsc 5063 SHA256:3c6d7a5546ca1d8dc8b6b35648e1f7aace385f182eee128585b12f8859f5fc3a
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.1.orig-unicode-data.tar.xz' glib2.0_2.86.1.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.1.orig.tar.xz' glib2.0_2.86.1.orig.tar.xz 5673928 SHA256:119d1708ca022556d6d2989ee90ad1b82bd9c0d1667e066944a6d0020e2d5e57
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.1-2.debian.tar.xz' glib2.0_2.86.1-2.debian.tar.xz 143428 SHA256:51250cbc1dd11b614545f7f0f7248dec1b1ff7bea3954cfe0a51add4a921e1b4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.86.1-2/
 
-- https://sources.debian.net/src/glib2.0/2.86.1-2/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.86.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.86.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.41-12`
 
@@ -3630,20 +3622,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2-16/copyright`, `/usr/share/doc/l
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.15.1+dfsg-0.4
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.15.1%2bdfsg-0.4.dsc' libxml2_2.15.1+dfsg-0.4.dsc 3143 SHA256:bbf327a23695e742d1a24bcac4274d91f11d803f2dda1673eb635f2071050421
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.15.1%2bdfsg.orig.tar.xz' libxml2_2.15.1+dfsg.orig.tar.xz 1185240 SHA256:ed38a2ca9b296fe8106e3fff5bb2fc75374eed5fa7c4f5ad834910c49f41e69a
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.15.1%2bdfsg-0.4.debian.tar.xz' libxml2_2.15.1+dfsg-0.4.debian.tar.xz 35388 SHA256:faf03e2652b40ab0e4486dc9e5f568f814b762e2d7daa6abae81167f72df2dad
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.15.1+dfsg-0.4/
 
-- https://sources.debian.net/src/libxml2/2.15.1+dfsg-0.4/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.15.1+dfsg-0.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.15.1+dfsg-0.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.12-1`
 
