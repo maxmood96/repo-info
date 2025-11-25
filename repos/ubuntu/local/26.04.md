@@ -773,15 +773,13 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.11.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.11.2-2.dsc' libgcrypt20_1.11.2-2.dsc 2945 SHA512:8a828ee80648fa44089bf9894c1f1ed1405b8e5649860d63e00bf8e83b9b2b644f2d81516ff2f3b11a1c55037923b6e37e9621b762e3dad28faef9032c874172
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.11.2.orig.tar.bz2' libgcrypt20_1.11.2.orig.tar.bz2 4237802 SHA512:b706cea602cc8f0896e57ce979643bf78974b05faec27c1b053b773c57d8b04250e30e95a4ef5899e1df981d01d8d08f0a36e10b5820a5ec4183e74c02e5f1f0
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.11.2.orig.tar.bz2.asc' libgcrypt20_1.11.2.orig.tar.bz2.asc 265 SHA512:236edbd12f904a75497eba1b04fd79826a9553406a4301f90e91c5598d4b6ae9f20b894027ae8f5e821d776fbaef3c8203b9ee6e077e5659782ce750aecd5e57
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.11.2-2.debian.tar.xz' libgcrypt20_1.11.2-2.debian.tar.xz 38940 SHA512:d330de7b9fafed0225083720e2abbf16ef53e51a85ebd2975eb464e4b82cb879ff1e85303fd1cb5f91e11646f0d30f1eef9b888998e5f39f940f9975877b7002
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libgcrypt20/1.11.2-2/
+
 
 ### `dpkg` source package: `libgpg-error=1.56-2`
 
