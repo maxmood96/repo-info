@@ -245,9 +245,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris avahi=0.8-5ubuntu5.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.2.dsc' avahi_0.8-5ubuntu5.2.dsc 3756 SHA512:f0bb10a4442b9d37cdfd5bb2ec2cd5d40d8a94e5219b6c132de61800b8337f2a08d89bdc393b7e790a4afb5de08f262190f04c578903a090197fb5ce06281e53
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8.orig.tar.gz' avahi_0.8.orig.tar.gz 1591458 SHA512:c6ba76feb6e92f70289f94b3bf12e5f5c66c11628ce0aeb3cadfb72c13a5d1a9bd56d71bdf3072627a76cd103b9b056d9131aa49ffe11fa334c24ab3b596c7de
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.2.debian.tar.xz' avahi_0.8-5ubuntu5.2.debian.tar.xz 45172 SHA512:7953ba54ebe1c44a501825ce2b19112850b7c0854a229633ebe3d89bfb3d9bfbbabe5030d5a22f24d65d70af5fdab52d3153f803ec321853368a36e3347cc9f0
+'http://security.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.2.dsc' avahi_0.8-5ubuntu5.2.dsc 3756 SHA512:f0bb10a4442b9d37cdfd5bb2ec2cd5d40d8a94e5219b6c132de61800b8337f2a08d89bdc393b7e790a4afb5de08f262190f04c578903a090197fb5ce06281e53
+'http://security.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8.orig.tar.gz' avahi_0.8.orig.tar.gz 1591458 SHA512:c6ba76feb6e92f70289f94b3bf12e5f5c66c11628ce0aeb3cadfb72c13a5d1a9bd56d71bdf3072627a76cd103b9b056d9131aa49ffe11fa334c24ab3b596c7de
+'http://security.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.2.debian.tar.xz' avahi_0.8-5ubuntu5.2.debian.tar.xz 45172 SHA512:7953ba54ebe1c44a501825ce2b19112850b7c0854a229633ebe3d89bfb3d9bfbbabe5030d5a22f24d65d70af5fdab52d3153f803ec321853368a36e3347cc9f0
 ```
 
 ### `dpkg` source package: `base-files=12ubuntu4.7`
@@ -5255,14 +5255,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.28+6-1ubuntu1~22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.28%2b6-1ubuntu1%7e22.04.1.dsc' openjdk-lts_11.0.28+6-1ubuntu1~22.04.1.dsc 4869 SHA512:3013858164252d8316e9fee75e5d0a4d13786b5c37acb08cf88e0095406c4aeb040458e05b4ee8fabae1cc13d8e0a0b4571d14a6c8a066685cd4e021b3f1dcb7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.28%2b6.orig.tar.xz' openjdk-lts_11.0.28+6.orig.tar.xz 69281452 SHA512:e25083b5a46ec81972398a4a1ec635f7a797ca486a31d1eb89b9fb34a0f3ebab239bbcf058f229060b9f9b76b895bef6879ee7fa677091aaeb1f42c41f5ae66c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.28%2b6-1ubuntu1%7e22.04.1.debian.tar.xz' openjdk-lts_11.0.28+6-1ubuntu1~22.04.1.debian.tar.xz 171144 SHA512:f40376fe95bdfc665cec0ab6b7f230bce6d485deb1c53588ebdfcf23809f5e6b9ed221217b95f1dd27c071c051888845402d70dca10a8a27b9e59593140de6e1
-```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6ubuntu0.4`
 
@@ -5784,14 +5779,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.11
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.11.dsc' python3.10_3.10.12-1~22.04.11.dsc 3723 SHA512:c4fe28e481e1378b345d5da896de0b7f105dbde3a71139527e25731e1820859226e0c9ba072092b2d67deda6c03630e2141a2b2ed3ed002d15284794008dd69e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.11.debian.tar.xz' python3.10_3.10.12-1~22.04.11.debian.tar.xz 255884 SHA512:0422ae8d184845ee2c9f9efc88f0b9e1046fe02c89b6cf2ce7350569633502e2d9c878123c215b3a5b1b98a1c5a84d1bb66de6701366c6eda5bba8a33bc01b39
-```
 
 ### `dpkg` source package: `raptor2=2.0.15-0ubuntu4.1`
 
