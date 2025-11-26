@@ -1,10 +1,10 @@
-# `golang:tip-20251115-alpine3.21`
+# `golang:tip-20251123-alpine3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee423962132ecd9a14c56dc5b424bf0eebda8113801c13864a0670eeab174c90`
-- Created: `2025-11-18T02:41:58.712886573Z`
-- Virtual Size: ~ 256.47 Mb  
+- Image ID: `sha256:6fa4ccadb24ddc058c8dd7b5bf9194697dbf18c2775f5c5aa6d972cb9b0da53e`
+- Created: `2025-11-24T22:37:53.930570527Z`
+- Virtual Size: ~ 257.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
