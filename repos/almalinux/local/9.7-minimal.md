@@ -1,10 +1,10 @@
-# `almalinux:minimal`
+# `almalinux:9-minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a422816b7d2f2e75a8c782579db30161597e57017f014d0fa6ad92e7a2020577`
-- Created: `2025-11-20T18:01:23.255375Z`
-- Virtual Size: ~ 92.71 Mb  
+- Image ID: `sha256:f001b533cb95e8d43f7a9e209269e81c152696b0a5773dc8e057de38349201c6`
+- Created: `2025-11-25T17:16:01.880604736Z`
+- Virtual Size: ~ 93.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -101,15 +101,15 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.8-10.el9_5
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/bzip2-1.0.8-10.el9_5.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.noarch`
+### `rpm` package: `ca-certificates-2025.2.80_v9.0.305-91.el9.noarch`
 
 Licenses (from `rpm --query`): MIT AND GPL-2.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.noarch
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2025.2.80_v9.0.305-91.el9.noarch
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/ca-certificates-2025.2.80_v9.0.305-91.el9.src.rpm
 ```
 
 ### `rpm` package: `coreutils-single-8.32-39.el9.x86_64`
@@ -187,6 +187,17 @@ Source:
 ```console
 $ dnf --quiet download --source --url filesystem-3.16-5.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/filesystem-3.16-5.el9.src.rpm
+```
+
+### `rpm` package: `findutils-4.8.0-7.el9.x86_64`
+
+Licenses (from `rpm --query`): GPLv3+
+
+Source:
+
+```console
+$ dnf --quiet download --source --url findutils-4.8.0-7.el9
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/findutils-4.8.0-7.el9.src.rpm
 ```
 
 ### `rpm` package: `gawk-5.1.0-6.el9.x86_64`
@@ -899,26 +910,26 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-fips-provider-3.5.1-3.el9.x86_64`
+### `rpm` package: `openssl-fips-provider-3.5.1-4.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-fips-provider-3.5.1-3.el9
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/openssl-3.5.1-3.el9.src.rpm
+$ dnf --quiet download --source --url openssl-fips-provider-3.5.1-4.el9_7
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/openssl-3.5.1-4.el9_7.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.5.1-3.el9.x86_64`
+### `rpm` package: `openssl-libs-3.5.1-4.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-3.5.1-3.el9
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/openssl-3.5.1-3.el9.src.rpm
+$ dnf --quiet download --source --url openssl-libs-3.5.1-4.el9_7
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/openssl-3.5.1-4.el9_7.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.25.3-3.el9_5.x86_64`

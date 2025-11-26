@@ -1,10 +1,10 @@
-# `almalinux:10-minimal`
+# `almalinux:minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:136a2656f0eeab9b01480f45c245cd1314ae2943a5019ebdcd466843fde9b5d7`
-- Created: `2025-11-17T18:57:51.145792182Z`
-- Virtual Size: ~ 72.10 Mb  
+- Image ID: `sha256:f6d55f775645a8851c91f515e4844d28b0818fafefe9a190721568b2f8003589`
+- Created: `2025-11-25T17:14:49.064051491Z`
+- Virtual Size: ~ 73.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
