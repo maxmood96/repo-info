@@ -499,14 +499,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 - `FSFUL`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.4.7-1.2ubuntu7.4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.4.dsc' cups_2.4.7-1.2ubuntu7.4.dsc 3188 SHA512:505fa6ac81d714cbdca0387512918be486fd5c6db88753ccef5d52138f73b1b4b45d9460fcfcc5e43b82681d9ea5eb4c79d3690ab6139954e46115a28f409956
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7.orig.tar.gz' cups_2.4.7.orig.tar.gz 8134809 SHA512:914b574ff6d85de9f3471528b52d4a436c484c441f47651846e1bdfa00aec26774efd416ff466216d2bccf468f8a797b1e0d666b5c82abc87e77550ce8b00d39
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.4.debian.tar.xz' cups_2.4.7-1.2ubuntu7.4.debian.tar.xz 409276 SHA512:f24cd526dec8b6a1633aedb01e06765d6fe34266842079078f89c5b42e70872df622ac4d42759892802c51d94fd8d602674f1d634a4fb2321517a733b5d01099
-```
 
 ### `dpkg` source package: `curl=8.5.0-2ubuntu10.6`
 
