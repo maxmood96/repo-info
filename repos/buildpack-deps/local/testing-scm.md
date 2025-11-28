@@ -380,19 +380,13 @@ Licenses: (parsed from: `/usr/share/doc/libdebconfclient0/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.281
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.281.dsc' cdebconf_0.281.dsc 2663 SHA256:e899afa61aea145d8de73a1b148bea4c293f918e9b9db262f164ce46898ddf88
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.281.tar.xz' cdebconf_0.281.tar.xz 286448 SHA256:104799cf341fd84d8cf6adb0844d36c326e5c57931bbc91ccfa31b3de462c465
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.281/
 
-- https://sources.debian.net/src/cdebconf/0.281/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.281/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.281/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=9.7-3`
 
@@ -2525,21 +2519,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `X11`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.9-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.9-2.dsc' p11-kit_0.25.9-2.dsc 2538 SHA256:1808d12aee44deac3e290861a1cf7651034cc304480cac404db92019b4589069
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.9.orig.tar.xz' p11-kit_0.25.9.orig.tar.xz 1053140 SHA256:98a96f6602a70206f8073deb5e894b1c8efd76ef53c629ab88815d58273f2561
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.9.orig.tar.xz.asc' p11-kit_0.25.9.orig.tar.xz.asc 228 SHA256:a0fe1d0353176f572493ea5ae79ed38eb87a5410875b09e6345e903bb8860145
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.9-2.debian.tar.xz' p11-kit_0.25.9-2.debian.tar.xz 24280 SHA256:208b11595a831e05f1d73860232203020db833fe5d84fdd8ff298aedf2869277
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.25.9-2/
 
-- https://sources.debian.net/src/p11-kit/0.25.9-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.25.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.25.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-5`
 

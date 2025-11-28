@@ -2193,15 +2193,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.3-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3-1ubuntu0.3.dsc' python3.13_3.13.3-1ubuntu0.3.dsc 4440 SHA512:90a10b0e5b894650b2175160b94f17144020003848beceac70cb074a39a6be3883884afe825a49e69ed3b76080a99bbf5eeb0dc2cc2ea4de3a02a7320213bea1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3.orig.tar.xz' python3.13_3.13.3.orig.tar.xz 22654240 SHA512:f7559b6dceae69f48742af0a6497fbec42cd1e5304f64b6eb9d89222a1171ccf12fa186cc0decabb4e98d05223184967a4a7537754c01083dacdc9073cb1a578
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3.orig.tar.xz.asc' python3.13_3.13.3.orig.tar.xz.asc 963 SHA512:54f8da5f4a4dcadc9830cb07aecf695a26a2de48ab98e1f42b09fdde1c70989476d07ce7ea81337216f1e5fcbf6b688e0608c88a2545ced416b01640108e94db
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3-1ubuntu0.3.debian.tar.xz' python3.13_3.13.3-1ubuntu0.3.debian.tar.xz 287252 SHA512:b4dcf0c02d2b949e28a1f975a8edc2c7cee668e6776661774607cf08381f4d6e852fd77134f36955bc72b7a3fd47a679b8c1d0a52062f33e03afcee61cf6ae78
-```
 
 ### `dpkg` source package: `readline=8.2-6`
 

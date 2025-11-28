@@ -5507,21 +5507,13 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.24.1-2
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.24.1-2.dsc' unbound_1.24.1-2.dsc 3267 SHA256:d97d0b3291ab997cd9d8e0b4a5ab66c784685f54c93a717ab7a1fdbcc7d616c8
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.24.1.orig.tar.gz' unbound_1.24.1.orig.tar.gz 6902613 SHA256:7f2b1633e239409619ae0527f67878b0f33ae0ec0ee5a3a51c042c359ba1eeab
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.24.1.orig.tar.gz.asc' unbound_1.24.1.orig.tar.gz.asc 862 SHA256:156a45319909d0c8dce3db570fcde32fa187b25d0a5819cf12f5bde7a3d6811b
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.24.1-2.debian.tar.xz' unbound_1.24.1-2.debian.tar.xz 35696 SHA256:f1b9856a4b0083a2159fc4a487ae864eed17414aeed95cb4dbf5b96c13ef3787
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unbound/1.24.1-2/
 
-- https://sources.debian.net/src/unbound/1.24.1-2/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.24.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.24.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-29`
 

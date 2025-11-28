@@ -367,14 +367,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.45-8ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45-8ubuntu1.dsc' binutils_2.45-8ubuntu1.dsc 8951 SHA512:14e4a8d83880a7699a86b3ffa02ba807bf63ddc66094220f4c461686297fb141a3516b25e387c15fed5e0d6958b1a7f7b3f356fd16f75450167b6a515b13d975
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45.orig.tar.xz' binutils_2.45.orig.tar.xz 27868232 SHA512:c7b10a7466d9fd398d7a0b3f2a43318432668d714f2ec70069a31bdc93c86d28e0fe83792195727167743707fbae45337c0873a0786416db53bbf22860c16ce7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45-8ubuntu1.debian.tar.xz' binutils_2.45-8ubuntu1.debian.tar.xz 159252 SHA512:195ee671c6b61238dcb3d8051d0e3629e0deb8ba57d1f13785af04bdd8e5dc911b843e0c16c3b12ce65eb1c53b019e9baaa2bb3085098c0146b56946865a18db
-```
 
 ### `dpkg` source package: `brotli=1.1.0-2build6`
 
@@ -2488,14 +2483,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.50-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.50-1.dsc' libpng1.6_1.6.50-1.dsc 2254 SHA512:286e2521f1834d640bd3e91775500f44e0cce363e45baa43334ec606fd974888fba3e575df382918257f6e60957571119b177a2f4a98bcbfa84c24091b93c368
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.50.orig.tar.gz' libpng1.6_1.6.50.orig.tar.gz 1582079 SHA512:34c806e0dda960b480ce2f5ea13e2e55a9540f07c51948be25d312b901c431bc814f730f9322a2e3b6f88d4104a0c49bde9e616762b342d07db44e2c7fd5f2dc
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.50-1.debian.tar.xz' libpng1.6_1.6.50-1.debian.tar.xz 33300 SHA512:c31aef43e649f7c060cb153449aea1bcfe0ff048b58ff95dc35ef77edfd011e4d86609742094e1e8cd444c5b8dd4177a21be16aae91e295825905179b2d8f352
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.50-1/
+
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build1`
 
@@ -3140,13 +3134,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.17.0-5.5
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0-5.5.dsc' linux_6.17.0-5.5.dsc 8462 SHA512:c5f4b0119ef586b71ae33687756dd155f789a947a9dc8dc54193d0315f94ff27f1b28554f24c3716d93de418c3ab4f9f2dc5f15d9dce55fbed20993aa6244976
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0-5.5.tar.gz' linux_6.17.0-5.5.tar.gz 257708484 SHA512:c1a472a72bfea9ac56e9fe79dfc8395283c5c3091a2de1d27f647878b2b35bf20ec12c9fdc56ad3fb1fad43478ada93166b848f2657e151bcd85048893fb0f6c
-```
 
 ### `dpkg` source package: `lto-disabled-list=72`
 
