@@ -1186,14 +1186,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 - `FSFUL`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.4.7-1.2ubuntu7.4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.4.dsc' cups_2.4.7-1.2ubuntu7.4.dsc 3188 SHA512:505fa6ac81d714cbdca0387512918be486fd5c6db88753ccef5d52138f73b1b4b45d9460fcfcc5e43b82681d9ea5eb4c79d3690ab6139954e46115a28f409956
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7.orig.tar.gz' cups_2.4.7.orig.tar.gz 8134809 SHA512:914b574ff6d85de9f3471528b52d4a436c484c441f47651846e1bdfa00aec26774efd416ff466216d2bccf468f8a797b1e0d666b5c82abc87e77550ce8b00d39
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.4.debian.tar.xz' cups_2.4.7-1.2ubuntu7.4.debian.tar.xz 409276 SHA512:f24cd526dec8b6a1633aedb01e06765d6fe34266842079078f89c5b42e70872df622ac4d42759892802c51d94fd8d602674f1d634a4fb2321517a733b5d01099
-```
 
 ### `dpkg` source package: `curl=8.5.0-2ubuntu10.6`
 
@@ -6004,14 +5999,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-87.88
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-87.88.dsc' linux_6.8.0-87.88.dsc 9362 SHA512:be05f1ea0f41b7f63232dedb4952da3f4f071c27c2acc9411fa621e7e1e68eee999e5109082c03aad1a2843f81d39cf1242c96b618a018fd1e8f606219026fd1
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-87.88.diff.gz' linux_6.8.0-87.88.diff.gz 6068755 SHA512:51ca081be56c322a5f6de91b47cb7dd7452e62eb3453d8ae1afc57adf2ee718fe43f333e4a683ec53615db7ab3eb8c1699fdab8ddfdef14731a8cd909f9bb1f5
-```
 
 ### `dpkg` source package: `llvm-toolchain-15=1:15.0.7-14build3`
 
@@ -8889,14 +8879,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/shar
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.8.dsc' python3.12_3.12.3-1ubuntu0.8.dsc 3920 SHA512:6ec5347db2f302907e401ac4bafc9f884d7f94ebd2d5972f98d0f239121d115fe50cbcc632be12bb31e40cabf26e81e91cba4a92f6f573b4902ed2413a0c2948
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.8.debian.tar.xz' python3.12_3.12.3-1ubuntu0.8.debian.tar.xz 257268 SHA512:36a58735bef1d2f760403ff898d75f4802d30badcf32ab041fb64e4c8bb0c9cc48de1dfc87f576192c6e03b9128ee50a8609975c7185cb573b51eb4d781036f3
-```
 
 ### `dpkg` source package: `pyyaml=6.0.1-2build2`
 

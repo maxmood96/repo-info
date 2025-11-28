@@ -473,9 +473,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris avahi=0.8-5ubuntu5.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.2.dsc' avahi_0.8-5ubuntu5.2.dsc 3756 SHA512:f0bb10a4442b9d37cdfd5bb2ec2cd5d40d8a94e5219b6c132de61800b8337f2a08d89bdc393b7e790a4afb5de08f262190f04c578903a090197fb5ce06281e53
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8.orig.tar.gz' avahi_0.8.orig.tar.gz 1591458 SHA512:c6ba76feb6e92f70289f94b3bf12e5f5c66c11628ce0aeb3cadfb72c13a5d1a9bd56d71bdf3072627a76cd103b9b056d9131aa49ffe11fa334c24ab3b596c7de
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.2.debian.tar.xz' avahi_0.8-5ubuntu5.2.debian.tar.xz 45172 SHA512:7953ba54ebe1c44a501825ce2b19112850b7c0854a229633ebe3d89bfb3d9bfbbabe5030d5a22f24d65d70af5fdab52d3153f803ec321853368a36e3347cc9f0
+'http://security.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.2.dsc' avahi_0.8-5ubuntu5.2.dsc 3756 SHA512:f0bb10a4442b9d37cdfd5bb2ec2cd5d40d8a94e5219b6c132de61800b8337f2a08d89bdc393b7e790a4afb5de08f262190f04c578903a090197fb5ce06281e53
+'http://security.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8.orig.tar.gz' avahi_0.8.orig.tar.gz 1591458 SHA512:c6ba76feb6e92f70289f94b3bf12e5f5c66c11628ce0aeb3cadfb72c13a5d1a9bd56d71bdf3072627a76cd103b9b056d9131aa49ffe11fa334c24ab3b596c7de
+'http://security.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.2.debian.tar.xz' avahi_0.8-5ubuntu5.2.debian.tar.xz 45172 SHA512:7953ba54ebe1c44a501825ce2b19112850b7c0854a229633ebe3d89bfb3d9bfbbabe5030d5a22f24d65d70af5fdab52d3153f803ec321853368a36e3347cc9f0
 ```
 
 ### `dpkg` source package: `base-files=12ubuntu4.7`
@@ -1166,14 +1166,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `FSFUL`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.12
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.12.dsc' cups_2.4.1op1-1ubuntu4.12.dsc 3139 SHA512:c62fd1e0aa35c23293f36d7a47ce2068017ab9e853a5d6ced627d4c5fe9caccbbd4683496f5dfc7e9d294137a7fee52cc06363179865b5035377365f53782423
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1.orig.tar.gz' cups_2.4.1op1.orig.tar.gz 8113914 SHA512:74e83728fcc3baf709176442b26711250fd4d4ede1e81e35b02a5607711067e28cd5a05d5bc3337953f6b2236c5a429b13f3a7f1218a08a2d3c30a8c9b0d96fd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.12.debian.tar.xz' cups_2.4.1op1-1ubuntu4.12.debian.tar.xz 364860 SHA512:cff62fba42ca4c796ef321b26147a86e3a877acb80026227711a7588b2152b6aa80c16a5dadc4163534b024a7fb17b9eb97a16c8d9884d44564312b64fc94d15
-```
 
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.21`
 
