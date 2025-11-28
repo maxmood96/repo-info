@@ -1,10 +1,10 @@
-# `postfixadmin:3.3.16-fpm-alpine`
+# `postfixadmin:4.0.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5371bfe12b6f467a493089e74e8ec86b845a1dbb2d700814a034cfeca47dd528`
-- Created: `2025-11-20T20:32:41.146272293Z`
-- Virtual Size: ~ 95.32 Mb  
+- Image ID: `sha256:92e7e562b0b1affbce624bcb5568d06eca9adba6e714bd70dd0a7ba7e6c3e0b9`
+- Created: `2025-11-25T23:51:47.933921354Z`
+- Virtual Size: ~ 168.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -21,8 +21,9 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.3.28.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.28.tar.xz.asc`
   - `PHP_SHA256=25e3860f30198a386242891c0bf9e2955931f7b666b96c3e3103d36a2a322326`
-  - `POSTFIXADMIN_VERSION=3.3.16`
-  - `POSTFIXADMIN_SHA512=d1b8074c32f7912c187c2c37c5cca158432cb85fc415d9efe86cf11f70ab035117053cc579306e224cb180e70fa3c84a68335f18d62b43abf591e8105a00847d`
+  - `POSTFIXADMIN_VERSION=4.0.1`
+  - `POSTFIXADMIN_SHA512=88be6834257580c7a52dce33ce552e1868a1b28ba639a3378a66278939640073af4f8893fbfac690e2df5e67db0143c5726aab575bf0e4014b39a03d46916831`
+  - `COMPOSER_ALLOW_SUPERUSER=1`
 - Labels:
   - `maintainer=David Goodwin <david@codepoets.co.uk> (@DavidGoodwin)`
 
@@ -229,23 +230,6 @@ c-ares-1.34.5-r0 installed size:
 
 c-ares-1.34.5-r0 license:
 MIT
-
-```
-
-### `apk` package: `c-client`
-
-```console
-c-client-2007f-r15 description:
-UW IMAP c-client library
-
-c-client-2007f-r15 webpage:
-http://www.washington.edu/imap
-
-c-client-2007f-r15 installed size:
-979 KiB
-
-c-client-2007f-r15 license:
-Apache-2.0
 
 ```
 
