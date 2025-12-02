@@ -915,14 +915,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.21.3-5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3-5ubuntu2.dsc' krb5_1.21.3-5ubuntu2.dsc 3873 SHA512:aabd71b68ff6c98481fa82c02a78b7bd46315d5ef612a31c2d92dae0926075a009052cd4e7c766c04a6e99d65206e4854f8134a9cd1a065a77056226be01ae83
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz' krb5_1.21.3.orig.tar.gz 9136145 SHA512:87bc06607f4d95ff604169cea22180703a42d667af05f66f1569b8bd592670c42820b335e5c279e8b4f066d1e7da20f1948a1e4def7c5d295c170cbfc7f49c71
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3-5ubuntu2.debian.tar.xz' krb5_1.21.3-5ubuntu2.debian.tar.xz 169380 SHA512:3516c768ddd8ea7898ffa576d76c7774d1ddf1e8ccd77e12c219d7e8256318c1703c1f3fadad46f654500abd66f07a129655b79529218a0d3fc45ae77ea4a59b
-```
 
 ### `dpkg` source package: `libassuan=3.0.2-2`
 

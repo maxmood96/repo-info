@@ -1341,20 +1341,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-15/copyright`, `/usr/share/doc/cpp-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.2.0-8
-'http://deb.debian.org/debian/pool/main/g/gcc-15/gcc-15_15.2.0-8.dsc' gcc-15_15.2.0-8.dsc 52386 SHA256:45da649010e712afa9f234587328306b9b35589f0de276e586adbb912c7efd51
-'http://deb.debian.org/debian/pool/main/g/gcc-15/gcc-15_15.2.0.orig.tar.gz' gcc-15_15.2.0.orig.tar.gz 100989491 SHA256:3121d3e2821fe21088deb77f11ee786d80969a1c55255386a43ecca1e06b47c0
-'http://deb.debian.org/debian/pool/main/g/gcc-15/gcc-15_15.2.0-8.debian.tar.xz' gcc-15_15.2.0-8.debian.tar.xz 2734648 SHA256:6d0fe1e4f7bab933fafb9a9d53b4b0d8348589a85be8514f713376d02d98a0c0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-15/15.2.0-8/
 
-- https://sources.debian.net/src/gcc-15/15.2.0-8/ (for browsing the source)
-- https://sources.debian.net/src/gcc-15/15.2.0-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-15/15.2.0-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.229`
 
@@ -3899,21 +3892,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:11.8.3-1
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.3-1.dsc' mariadb_11.8.3-1.dsc 5621 SHA256:f69994212d76d53f905f68314b2aa66b91e530c06a242124f93b73cbf2c2578e
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.3.orig.tar.gz' mariadb_11.8.3.orig.tar.gz 119640174 SHA256:1014a85c768de8f9e9c6d4bf0b42617f3b1588be1ad371f71674ea32b87119c0
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.3.orig.tar.gz.asc' mariadb_11.8.3.orig.tar.gz.asc 833 SHA256:829244b8592ab5938379889c1a43c4f7b20fcb9f97855d22d70df717a2660178
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.3-1.debian.tar.xz' mariadb_11.8.3-1.debian.tar.xz 288480 SHA256:e3baa3b9f787404b92cacc4f3e2b4ca2478360ee3f2b42965bef35a13d890a05
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:11.8.3-1/
 
-- https://sources.debian.net/src/mariadb/1:11.8.3-1/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:11.8.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:11.8.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20250131-1`
 

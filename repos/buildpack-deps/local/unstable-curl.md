@@ -761,20 +761,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-15-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.2.0-8
-'http://deb.debian.org/debian/pool/main/g/gcc-15/gcc-15_15.2.0-8.dsc' gcc-15_15.2.0-8.dsc 52386 SHA256:45da649010e712afa9f234587328306b9b35589f0de276e586adbb912c7efd51
-'http://deb.debian.org/debian/pool/main/g/gcc-15/gcc-15_15.2.0.orig.tar.gz' gcc-15_15.2.0.orig.tar.gz 100989491 SHA256:3121d3e2821fe21088deb77f11ee786d80969a1c55255386a43ecca1e06b47c0
-'http://deb.debian.org/debian/pool/main/g/gcc-15/gcc-15_15.2.0-8.debian.tar.xz' gcc-15_15.2.0-8.debian.tar.xz 2734648 SHA256:6d0fe1e4f7bab933fafb9a9d53b4b0d8348589a85be8514f713376d02d98a0c0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-15/15.2.0-8/
 
-- https://sources.debian.net/src/gcc-15/15.2.0-8/ (for browsing the source)
-- https://sources.debian.net/src/gcc-15/15.2.0-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-15/15.2.0-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.41-12`
 

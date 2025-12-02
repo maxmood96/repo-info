@@ -423,20 +423,13 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.45-8
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.45-8.dsc' binutils_2.45-8.dsc 11453 SHA256:9cadee1553880a9e89495295be621af8a9c54a0fb1797b14b8c628ba04d35063
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.45.orig.tar.xz' binutils_2.45.orig.tar.xz 28317272 SHA256:52a73ce68ec57e00cc0b9479a3043fa06318e9e3fed5c3c0ae7930d44e6f85e3
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.45-8.debian.tar.xz' binutils_2.45-8.debian.tar.xz 147888 SHA256:d83ec2a80ab08f5db53abef49145faf38f2c82095a6ac1b3a96704b9078eb038
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/binutils/2.45-8/
 
-- https://sources.debian.net/src/binutils/2.45-8/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.45-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.45-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.1.0-2`
 
@@ -3040,21 +3033,13 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.9-2
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.9-2.dsc' libselinux_3.9-2.dsc 3011 SHA256:09c456be5461595a58c1cfd2384ab8c993d8c907e0e04dda2684d23893de834f
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.9.orig.tar.gz' libselinux_3.9.orig.tar.gz 205334 SHA256:e7ee2c01dba64a0c35c9d7c9c0e06209d8186b325b0638a0d83f915cc3c101e8
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.9.orig.tar.gz.asc' libselinux_3.9.orig.tar.gz.asc 833 SHA256:3529c5a905fdfa9e0a8e926ce0333f508213cccd9f6e35ca1011e37412042ca5
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.9-2.debian.tar.xz' libselinux_3.9-2.debian.tar.xz 38432 SHA256:bfb77d3acaf51b056c48b9d677d29915bb8a1c41b98335d410a7249f16ea5ac1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libselinux/3.9-2/
 
-- https://sources.debian.net/src/libselinux/3.9-2/ (for browsing the source)
-- https://sources.debian.net/src/libselinux/3.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libselinux/3.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsemanage=3.9-1`
 
@@ -5478,21 +5463,13 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.24.1-2
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.24.1-2.dsc' unbound_1.24.1-2.dsc 3267 SHA256:d97d0b3291ab997cd9d8e0b4a5ab66c784685f54c93a717ab7a1fdbcc7d616c8
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.24.1.orig.tar.gz' unbound_1.24.1.orig.tar.gz 6902613 SHA256:7f2b1633e239409619ae0527f67878b0f33ae0ec0ee5a3a51c042c359ba1eeab
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.24.1.orig.tar.gz.asc' unbound_1.24.1.orig.tar.gz.asc 862 SHA256:156a45319909d0c8dce3db570fcde32fa187b25d0a5819cf12f5bde7a3d6811b
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.24.1-2.debian.tar.xz' unbound_1.24.1-2.debian.tar.xz 35696 SHA256:f1b9856a4b0083a2159fc4a487ae864eed17414aeed95cb4dbf5b96c13ef3787
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unbound/1.24.1-2/
 
-- https://sources.debian.net/src/unbound/1.24.1-2/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.24.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.24.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-29`
 
