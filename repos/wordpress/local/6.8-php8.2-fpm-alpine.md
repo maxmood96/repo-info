@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4a4ebc8c694df3742798acd012a1926424bb9d35bcf6e4dbe57c0c0b4b7e6244`
-- Created: `2025-10-01T01:03:19Z`
-- Virtual Size: ~ 272.91 Mb  
+- Image ID: `sha256:3b7c70649ae97a920cc665e561f609af8f2ae0d7abc06d9c5a47128030b5a203`
+- Created: `2025-12-02T01:13:14.517300563Z`
+- Virtual Size: ~ 272.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -503,16 +503,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.3-r0 description:
+imagemagick-7.1.2.8-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.3-r0 webpage:
+imagemagick-7.1.2.8-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.3-r0 installed size:
-3658 KiB
+imagemagick-7.1.2.8-r0 installed size:
+3662 KiB
 
-imagemagick-7.1.2.3-r0 license:
+imagemagick-7.1.2.8-r0 license:
 ImageMagick
 
 ```
@@ -520,16 +520,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.3-r0 description:
+imagemagick-jpeg-7.1.2.8-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.3-r0 webpage:
+imagemagick-jpeg-7.1.2.8-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.3-r0 installed size:
+imagemagick-jpeg-7.1.2.8-r0 installed size:
 54 KiB
 
-imagemagick-jpeg-7.1.2.3-r0 license:
+imagemagick-jpeg-7.1.2.8-r0 license:
 ImageMagick
 
 ```
@@ -537,16 +537,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.3-r0 description:
+imagemagick-libs-7.1.2.8-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.3-r0 webpage:
+imagemagick-libs-7.1.2.8-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.3-r0 installed size:
-4273 KiB
+imagemagick-libs-7.1.2.8-r0 installed size:
+4265 KiB
 
-imagemagick-libs-7.1.2.3-r0 license:
+imagemagick-libs-7.1.2.8-r0 license:
 ImageMagick
 
 ```
@@ -554,16 +554,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.3-r0 description:
+imagemagick-pdf-7.1.2.8-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.3-r0 webpage:
+imagemagick-pdf-7.1.2.8-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.3-r0 installed size:
+imagemagick-pdf-7.1.2.8-r0 installed size:
 121 KiB
 
-imagemagick-pdf-7.1.2.3-r0 license:
+imagemagick-pdf-7.1.2.8-r0 license:
 ImageMagick
 
 ```
@@ -571,16 +571,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.3-r0 description:
+imagemagick-tiff-7.1.2.8-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.3-r0 webpage:
+imagemagick-tiff-7.1.2.8-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.3-r0 installed size:
+imagemagick-tiff-7.1.2.8-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.2.3-r0 license:
+imagemagick-tiff-7.1.2.8-r0 license:
 ImageMagick
 
 ```
@@ -588,16 +588,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.3-r0 description:
+imagemagick-webp-7.1.2.8-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.3-r0 webpage:
+imagemagick-webp-7.1.2.8-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.3-r0 installed size:
+imagemagick-webp-7.1.2.8-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.3-r0 license:
+imagemagick-webp-7.1.2.8-r0 license:
 ImageMagick
 
 ```
@@ -945,16 +945,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.47-r0 description:
+libpng-1.6.51-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.47-r0 webpage:
+libpng-1.6.51-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.47-r0 installed size:
+libpng-1.6.51-r0 installed size:
 181 KiB
 
-libpng-1.6.47-r0 license:
+libpng-1.6.51-r0 license:
 Libpng
 
 ```

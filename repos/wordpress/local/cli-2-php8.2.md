@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a5089afc846e0e65d04a344018b1af9001d20f4221be289f7018b426f3f4296c`
-- Created: `2025-05-07T07:03:15Z`
-- Virtual Size: ~ 189.11 Mb  
+- Image ID: `sha256:bcc677ec0bd7cd674c2a438d560eaa50d944ec330140f06198fa804a059200a7`
+- Created: `2025-12-02T01:15:18.269152489Z`
+- Virtual Size: ~ 189.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -404,16 +404,16 @@ ICU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.3-r0 description:
+imagemagick-libs-7.1.2.8-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.3-r0 webpage:
+imagemagick-libs-7.1.2.8-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.3-r0 installed size:
-4273 KiB
+imagemagick-libs-7.1.2.8-r0 installed size:
+4265 KiB
 
-imagemagick-libs-7.1.2.3-r0 license:
+imagemagick-libs-7.1.2.8-r0 license:
 ImageMagick
 
 ```
@@ -710,16 +710,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.47-r0 description:
+libpng-1.6.51-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.47-r0 webpage:
+libpng-1.6.51-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.47-r0 installed size:
+libpng-1.6.51-r0 installed size:
 181 KiB
 
-libpng-1.6.47-r0 license:
+libpng-1.6.51-r0 license:
 Libpng
 
 ```
