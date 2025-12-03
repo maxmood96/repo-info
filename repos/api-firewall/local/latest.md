@@ -1,10 +1,10 @@
-# `api-firewall:0.9.3`
+# `api-firewall:0.9.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d487ac27c315b61e6e7227514cec1c3f94bcc4b98827639cef09498699d1d9bf`
-- Created: `2025-08-19T09:20:01Z`
-- Virtual Size: ~ 47.95 Mb  
+- Image ID: `sha256:0265a524076201323ee61375745e66feea23e29281f0957d9284e95395258ed0`
+- Created: `2025-12-01T23:06:17.868194583Z`
+- Virtual Size: ~ 48.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/api-firewall:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `APIFW_PATH=/opt/api-firewall`
-  - `APIFIREWALL_VERSION=v0.9.3`
+  - `APIFIREWALL_VERSION=v0.9.4`
 
 ## `apk` (`.apk`-based packages)
 
@@ -274,16 +274,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.43-r1 description:
+pcre2-10.46-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.43-r1 webpage:
+pcre2-10.46-r0 webpage:
 https://pcre.org/
 
-pcre2-10.43-r1 installed size:
-707 KiB
+pcre2-10.46-r0 installed size:
+767 KiB
 
-pcre2-10.43-r1 license:
+pcre2-10.46-r0 license:
 BSD-3-Clause
 
 ```
