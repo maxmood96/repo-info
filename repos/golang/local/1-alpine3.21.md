@@ -1,16 +1,16 @@
-# `golang:1.25.4-alpine3.21`
+# `golang:1.25.5-alpine3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9d27fe2a9c0adcc5751b52e522f55c3738f32d25e2b9ae8d81a3addb3295d602`
-- Created: `2025-11-05T20:18:53.784867938Z`
+- Image ID: `sha256:6f6b1d6ee108589b06bc8efcb11c95edd57cbfa885ddf864770f17cdf6a7d025`
+- Created: `2025-12-02T17:47:53.085460335Z`
 - Virtual Size: ~ 214.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.25.4`
+  - `GOLANG_VERSION=1.25.5`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
 
