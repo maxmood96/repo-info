@@ -337,11 +337,11 @@ $ docker pull open-liberty@sha256:e552a407ad4836f68aabdda74fad9aacf936c4ad0abfdb
 
 -	Layers:
 	-	`sha256:a3d78b2146024a986dd78cb69d9ec5b229531ce49a586add0167ab31a6778430`  
-		Last Modified: Mon, 01 Dec 2025 22:12:58 GMT  
+		Last Modified: Wed, 03 Dec 2025 00:32:58 GMT  
 		Size: 5.8 MB (5819528 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:efb93e5fe1d2e32cc8b5d6e1d7ae8cb6c5f16318ebd745a884812fe53d0be115`  
-		Last Modified: Mon, 01 Dec 2025 22:12:58 GMT  
+		Last Modified: Wed, 03 Dec 2025 00:32:58 GMT  
 		Size: 39.6 KB (39587 bytes)  
 		MIME: application/vnd.in-toto+json
 
