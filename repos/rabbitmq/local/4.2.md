@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a18ffeb3497eadd347d2c48f114a3653204a3a4fcbb0385ecb8ce655d649227f`
-- Created: `2025-11-18T02:56:47.442970937Z`
+- Image ID: `sha256:0a1e628858900fbf4861cc07170ffe2408fd45bda517bd45a7ba8b75c5734373`
+- Created: `2025-12-02T01:21:41.866206465Z`
 - Virtual Size: ~ 238.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,6 +21,7 @@
   - `LANG=C.UTF-8`
   - `LANGUAGE=C.UTF-8`
   - `LC_ALL=C.UTF-8`
+  - `RUNNING_UNDER_SYSTEMD=true`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
