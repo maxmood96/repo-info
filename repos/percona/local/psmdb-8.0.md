@@ -1,10 +1,10 @@
-# `percona:psmdb-8.0.12`
+# `percona:psmdb-8.0.16`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5ed132bcee736b1ddf3ee93cb9decb9130993deb0a84d9925f2bb801f461fcf7`
-- Created: `2025-11-17T23:15:37.111102109Z`
-- Virtual Size: ~ 823.90 Mb  
+- Image ID: `sha256:f0d8adf3b814798a5d214bc7d3452cb0696885fcafea43790abae245cfcaf7ce`
+- Created: `2025-12-03T18:52:24.154330834Z`
+- Virtual Size: ~ 978.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PSMDB_VERSION=8.0.12-4`
+  - `PSMDB_VERSION=8.0.16-5`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=8.0.12-4.el9`
+  - `FULL_PERCONA_VERSION=8.0.16-5.el9`
   - `K8S_TOOLS_VERSION=0.5.0`
   - `PSMDB_REPO=testing`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
@@ -24,7 +24,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-11-17T06:51:01Z`
+  - `build-date=2025-12-01T08:45:48Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -38,11 +38,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.revision=f7f5876a3d86ded473c14b11d7491c2b6ddf39ce`
-  - `release=1763362218`
+  - `org.opencontainers.image.created=2025-12-01T08:45:48Z`
+  - `org.opencontainers.image.revision=aa778ff26f397863d5f50a6cf5f17a2343e5a626`
+  - `release=1764578379`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=f7f5876a3d86ded473c14b11d7491c2b6ddf39ce`
+  - `vcs-ref=aa778ff26f397863d5f50a6cf5f17a2343e5a626`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -275,11 +276,16 @@ $ dnf --quiet download --source --url dnf-data-4.14.0-31.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/d/dnf-4.14.0-31.el9.src.rpm
 ```
 
-### `rpm` package: `expat-2.5.0-5.el9_6.x86_64`
+### `rpm` package: `expat-2.5.0-5.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url expat-2.5.0-5.el9_7.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-5.el9_7.1.src.rpm
+```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
 
@@ -1092,11 +1098,16 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-12.el9_6.x86_64`
+### `rpm` package: `libxml2-2.9.13-14.el9_7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-14.el9_7.src.rpm
+```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
@@ -1385,19 +1396,19 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-mongos-8.0.12-4.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-8.0.16-5.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-server-8.0.12-4.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-server-8.0.16-5.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-tools-8.0.12-4.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-tools-8.0.16-5.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
@@ -1541,48 +1552,48 @@ $ dnf --quiet download --source --url sqlite-libs-3.34.1-9.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-9.el9_7.src.rpm
 ```
 
-### `rpm` package: `systemd-252-55.el9_7.2.x86_64`
+### `rpm` package: `systemd-252-55.el9_7.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-252-55.el9_7.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.2.src.rpm
+$ dnf --quiet download --source --url systemd-252-55.el9_7.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-252-55.el9_7.2.x86_64`
+### `rpm` package: `systemd-libs-252-55.el9_7.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-252-55.el9_7.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.2.src.rpm
+$ dnf --quiet download --source --url systemd-libs-252-55.el9_7.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
 ```
 
-### `rpm` package: `systemd-pam-252-55.el9_7.2.x86_64`
+### `rpm` package: `systemd-pam-252-55.el9_7.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-pam-252-55.el9_7.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.2.src.rpm
+$ dnf --quiet download --source --url systemd-pam-252-55.el9_7.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
 ```
 
-### `rpm` package: `systemd-rpm-macros-252-55.el9_7.2.noarch`
+### `rpm` package: `systemd-rpm-macros-252-55.el9_7.7.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-rpm-macros-252-55.el9_7.2.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.2.src.rpm
+$ dnf --quiet download --source --url systemd-rpm-macros-252-55.el9_7.7.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
 ```
 
 ### `rpm` package: `tar-1.34-7.el9.x86_64`
