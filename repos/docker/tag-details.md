@@ -17,11 +17,11 @@
 -	[`docker:29.1-windowsservercore-ltsc2022`](#docker291-windowsservercore-ltsc2022)
 -	[`docker:29.1-windowsservercore-ltsc2025`](#docker291-windowsservercore-ltsc2025)
 -	[`docker:29.1.2`](#docker2912)
--	[`docker:29.1.2-alpine3.22`](#docker2912-alpine322)
+-	[`docker:29.1.2-alpine3.23`](#docker2912-alpine323)
 -	[`docker:29.1.2-cli`](#docker2912-cli)
--	[`docker:29.1.2-cli-alpine3.22`](#docker2912-cli-alpine322)
+-	[`docker:29.1.2-cli-alpine3.23`](#docker2912-cli-alpine323)
 -	[`docker:29.1.2-dind`](#docker2912-dind)
--	[`docker:29.1.2-dind-alpine3.22`](#docker2912-dind-alpine322)
+-	[`docker:29.1.2-dind-alpine3.23`](#docker2912-dind-alpine323)
 -	[`docker:29.1.2-dind-rootless`](#docker2912-dind-rootless)
 -	[`docker:29.1.2-windowsservercore`](#docker2912-windowsservercore)
 -	[`docker:29.1.2-windowsservercore-ltsc2022`](#docker2912-windowsservercore-ltsc2022)
@@ -5270,43 +5270,78 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 
 ## `docker:29.1.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
 
-## `docker:29.1.2-alpine3.22`
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `docker:29.1.2-alpine3.23`
 
 **does not exist** (yet?)
 
 ## `docker:29.1.2-cli`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
 
-## `docker:29.1.2-cli-alpine3.22`
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `docker:29.1.2-cli-alpine3.23`
 
 **does not exist** (yet?)
 
 ## `docker:29.1.2-dind`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
 
-## `docker:29.1.2-dind-alpine3.22`
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `docker:29.1.2-dind-alpine3.23`
 
 **does not exist** (yet?)
 
 ## `docker:29.1.2-dind-rootless`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:29.1.2-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:29.1.2-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:29.1.2-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:cli`
 
