@@ -499,14 +499,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 - `FSFUL`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.4.7-1.2ubuntu7.7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.7.dsc' cups_2.4.7-1.2ubuntu7.7.dsc 3188 SHA512:311775c0a4b541230e3f150667429c9760d3cc5b20e15fe863ccdf139dc564bbd0b7ea553132583b5cc5a20f5b831c1cf2a18264b739183d188d99019244f390
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7.orig.tar.gz' cups_2.4.7.orig.tar.gz 8134809 SHA512:914b574ff6d85de9f3471528b52d4a436c484c441f47651846e1bdfa00aec26774efd416ff466216d2bccf468f8a797b1e0d666b5c82abc87e77550ce8b00d39
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.7.debian.tar.xz' cups_2.4.7-1.2ubuntu7.7.debian.tar.xz 413016 SHA512:b92827bb9644f9579eefd9fcebeb5ea6f3290e5a28773d143f26c3f9d8b1be97f25034fc409b27cf9c0d0a77ace30083d39b6a74869065b8e4ae609112cd1950
-```
 
 ### `dpkg` source package: `curl=8.5.0-2ubuntu10.6`
 
@@ -1045,10 +1040,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.4.dsc' glib2.0_2.80.0-6ubuntu3.4.dsc 4508 SHA512:a3c543aa79c11ed9653c715326890da9cee05154bc00e029d262bb7710391a8e10c4829187e7d0d5b0204473e1a6b5654f3f8331e029b8ce3fb651f6773feb28
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.4.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.4.debian.tar.xz 152380 SHA512:d7b6f2d78aa5a0995eb252bd8dd6c796e7c821f4651432eeca6d8d11cf5c0ed5bd663643f88cc1d2468ee3455b8d692f160ed3f47456851b88f7ec18e5b4c12a
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.4.dsc' glib2.0_2.80.0-6ubuntu3.4.dsc 4508 SHA512:a3c543aa79c11ed9653c715326890da9cee05154bc00e029d262bb7710391a8e10c4829187e7d0d5b0204473e1a6b5654f3f8331e029b8ce3fb651f6773feb28
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.4.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.4.debian.tar.xz 152380 SHA512:d7b6f2d78aa5a0995eb252bd8dd6c796e7c821f4651432eeca6d8d11cf5c0ed5bd663643f88cc1d2468ee3455b8d692f160ed3f47456851b88f7ec18e5b4c12a
 ```
 
 ### `dpkg` source package: `glibc=2.39-0ubuntu8.6`
