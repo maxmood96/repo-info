@@ -1904,14 +1904,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-16=16.10-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.10-0ubuntu0.24.04.1.dsc' postgresql-16_16.10-0ubuntu0.24.04.1.dsc 4336 SHA512:f4c504910339d48ef7122dd9167bf0e6fd72f627a1251fb324f230346ab072718c2bb416755517723de45c29ee79ce0d9f3798526c7bc096bfacdc9f0af9ffa0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.10.orig.tar.gz' postgresql-16_16.10.orig.tar.gz 32861700 SHA512:6ed4c77fea346536dbad5eaa427d97dc6f68b70951a2d4e658087351f68b99ba4873192d3266fa84fdc9e09f7ee97eb6f2e3ede4a09994db6d56da391cafe765
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.10-0ubuntu0.24.04.1.debian.tar.xz' postgresql-16_16.10-0ubuntu0.24.04.1.debian.tar.xz 36932 SHA512:3e77f09daf886b687eafecba2d4cfff978c477271d5008c10423bc7c2356b93bd5e811ea973a0ee6e40002d5a1740bb07ec42bb537660fb47ffe06b04ba92338
-```
 
 ### `dpkg` source package: `postgresql-common=257build1.1`
 
