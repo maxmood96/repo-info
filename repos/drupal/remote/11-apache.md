@@ -1,7 +1,7 @@
 ## `drupal:11-apache`
 
 ```console
-$ docker pull drupal@sha256:2bf3fbd25272b45043f9662596a3fdd4878c462c1293e107b28d1a96aa32ab31
+$ docker pull drupal@sha256:db22bbbd3067e38ee8c5eda9ee15aca328ced155ee0b815afd2a5dd4f6f6a61a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1044,13 +1044,13 @@ $ docker pull drupal@sha256:a5bb0363c55b88cf94df966dcf06a292943675ef9a1b140aee2d
 ### `drupal:11-apache` - linux; riscv64
 
 ```console
-$ docker pull drupal@sha256:0aecaf325465a435428ff733a7abbc8c061437d6cc73042ebf82672b16a53903
+$ docker pull drupal@sha256:fa7e7c4cfe1c523da033628887b81ebf4803a67db69db023af919ec1d83408d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.7 MB (228692909 bytes)**  
+-	Total Size: **228.7 MB (228686367 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f212c75ed2ccc1c9346ec751be6173f826c9584192e6cd4f78887aeb25769e4`
+-	Image ID: `sha256:2576dc5ce7cbcc5646247ed7e7335bde2cd58bf54178f8d1f2c3db5631311213`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1124,14 +1124,14 @@ RUN { 		echo 'output_buffering=true'; 	} > /usr/local/etc/php/conf.d/docker-php-
 # Mon, 24 Nov 2025 18:14:50 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
 # Mon, 24 Nov 2025 18:14:50 GMT
-ENV DRUPAL_VERSION=11.2.8
+ENV DRUPAL_VERSION=11.2.9
 # Mon, 24 Nov 2025 18:14:50 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
 # Mon, 24 Nov 2025 18:14:50 GMT
 WORKDIR /opt/drupal
-# Mon, 24 Nov 2025 19:29:48 GMT
+# Fri, 05 Dec 2025 08:32:20 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Mon, 24 Nov 2025 19:29:48 GMT
+# Fri, 05 Dec 2025 08:32:20 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -1216,33 +1216,33 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Mon, 24 Nov 2025 18:20:30 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e0238b37570ad2479c102c4317a95f43abea666e6d71d5d66081040f12446e3`  
-		Last Modified: Mon, 24 Nov 2025 19:34:47 GMT  
-		Size: 20.7 MB (20656542 bytes)  
+	-	`sha256:b9af3e7f8c97903791c643a6a18411fcdad54e53bcca681e606df5c315531fd0`  
+		Last Modified: Fri, 05 Dec 2025 08:37:12 GMT  
+		Size: 20.6 MB (20650000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:11-apache` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:fe3a435033e1cbb594846ac059d840f5189d119869a1b3ecfa0275ea68bf8289
+$ docker pull drupal@sha256:fe4dd205445e2e32d5000d54efed108cce88a5887b992969edf194885bfdc1c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7464962 bytes)**  
+-	Total Size: **7.5 MB (7464960 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d836e0a9ff32799d73f31c2be78a284cb6bf4699641c00fb24c9b43849e6b976`
+-	Image ID: `sha256:73a6f8600f4c100594eca3da952b956529d85fcb54095f8f62d246d1d2722454`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e03a37f6d77648e92a770977024aeae106b623399949920a9aae31ab4efcd4cc`  
-		Last Modified: Mon, 24 Nov 2025 20:56:33 GMT  
+	-	`sha256:dfca380c12b6ed26c0d083792038be41f648f19e56cbcdc9e96683862279b9bc`  
+		Last Modified: Fri, 05 Dec 2025 12:02:15 GMT  
 		Size: 7.4 MB (7415995 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:04fc5cf896197f9c63421223ec9050339d229b60b42ab976e10126c644085b3a`  
-		Last Modified: Mon, 24 Nov 2025 20:56:34 GMT  
-		Size: 49.0 KB (48967 bytes)  
+	-	`sha256:919db0f5d9f0e29ad09748ad6de8417579acc43db8a2d42fe4087c537ba727e6`  
+		Last Modified: Fri, 05 Dec 2025 12:02:15 GMT  
+		Size: 49.0 KB (48965 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:11-apache` - linux; s390x

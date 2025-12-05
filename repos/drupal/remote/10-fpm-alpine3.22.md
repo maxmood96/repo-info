@@ -1,7 +1,7 @@
 ## `drupal:10-fpm-alpine3.22`
 
 ```console
-$ docker pull drupal@sha256:9d54ae88b8d4acad5d8cdef171aaacfdef7328a8d1157903951faad8c0cd901a
+$ docker pull drupal@sha256:a504329b10c9b444170ff6bacb9a25c09c2318ef858a5ffe15100d4ced1c6118
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1090,13 +1090,13 @@ $ docker pull drupal@sha256:fdd5b4e4995cecfc69206bc2dc8df26e1363058deb1a58973227
 ### `drupal:10-fpm-alpine3.22` - linux; riscv64
 
 ```console
-$ docker pull drupal@sha256:b6d4d9c195a09841d931181c87ab886bc599ae89dc47accaf8f3d336fb58cdf7
+$ docker pull drupal@sha256:1a7253883e493f964e587a01271688ebf6fc035efa15be345bf7a0dad5b4940f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **59.2 MB (59206321 bytes)**  
+-	Total Size: **59.2 MB (59206055 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70c74a075b8e00554398fe2c4fd979490ca620ab0b0160e46c860a4e9c90dc79`
+-	Image ID: `sha256:806d88207a0d5a6d1b29f4cb99471d7ae5b5f29c616ccb4cb3e3d08659864103`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1160,14 +1160,14 @@ RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_
 # Mon, 24 Nov 2025 18:36:57 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
 # Mon, 24 Nov 2025 18:36:57 GMT
-ENV DRUPAL_VERSION=10.5.6
+ENV DRUPAL_VERSION=10.5.7
 # Mon, 24 Nov 2025 18:36:57 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
 # Mon, 24 Nov 2025 18:36:57 GMT
 WORKDIR /opt/drupal
-# Mon, 24 Nov 2025 20:56:57 GMT
+# Fri, 05 Dec 2025 10:41:59 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Mon, 24 Nov 2025 20:56:57 GMT
+# Fri, 05 Dec 2025 10:41:59 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -1236,33 +1236,33 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Mon, 24 Nov 2025 18:40:24 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30aa216286bf0c5a7ed1df9a24a5701b56aabdd7f5c6f4269042b0cf359825ca`  
-		Last Modified: Tue, 25 Nov 2025 08:01:00 GMT  
-		Size: 21.7 MB (21733177 bytes)  
+	-	`sha256:6ee2f1948e071d96308d450aeea700dafe4bd9995319790d089754ea7bf5392f`  
+		Last Modified: Fri, 05 Dec 2025 10:44:34 GMT  
+		Size: 21.7 MB (21732911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:10-fpm-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:83ab60e25cc7d33215d1119027bad78f9a720e396c77163c80d9f714448ed5e1
+$ docker pull drupal@sha256:a7b2227ffab8005f305c5d6aa52929cc69052cca7231667492e02cacdd47ffa3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **403.6 KB (403585 bytes)**  
+-	Total Size: **399.6 KB (399637 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b18b2976b2de5ba6b1f29a3d33db8471757b2fa6bca858d7f6321b19f7f689c`
+-	Image ID: `sha256:dc12b8f2cc4ab64a85d56c2efd4b650598fb24dd3a84fcc8f7976049e6876f30`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:db508a17f5e4305f65d085e50d574fdb7f50701acdef76cb0cb44b142fe211d6`  
-		Last Modified: Tue, 25 Nov 2025 08:53:41 GMT  
-		Size: 367.7 KB (367684 bytes)  
+	-	`sha256:90ddf61baa064a3c4d0336cb134be8c70a3129ddd9131ef56248dce8c9cd51eb`  
+		Last Modified: Fri, 05 Dec 2025 11:53:59 GMT  
+		Size: 365.7 KB (365710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:648b6bbfb9d9f77aac52d6fe574fd7c338e6de89542510e287e398bcb35b9749`  
-		Last Modified: Tue, 25 Nov 2025 08:53:42 GMT  
-		Size: 35.9 KB (35901 bytes)  
+	-	`sha256:ebb43dc61f3870b3727bfcf7b8b6e37b44cf2908f6ce57eaf3951e381746b32c`  
+		Last Modified: Fri, 05 Dec 2025 11:53:59 GMT  
+		Size: 33.9 KB (33927 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:10-fpm-alpine3.22` - linux; s390x
