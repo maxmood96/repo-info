@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eebdb97dd243b24b57acfd0bda4409533e803b4db1a536469260191de2397d30`
-- Created: `2025-07-26T16:25:03Z`
-- Virtual Size: ~ 137.83 Mb  
+- Image ID: `sha256:ecc9fce50ed3ae0d5085d53e522f6d7b87e1a17aed6cc3ab08a32c9d2b52f9b3`
+- Created: `2025-12-03T02:12:58.548568121Z`
+- Virtual Size: ~ 138.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.13.9`
-  - `PYTHON_SHA256=ed5ef34cda36cfa2f3a340f07cac7e7814f91c7f3c411f6d3562323a866c5c66`
+  - `PYTHON_VERSION=3.13.10`
+  - `PYTHON_SHA256=bc673c04375a1a3f0808c27ba8f0411ab811ad390a8740318ccb9c60fad8fd77`
   - `SATOSA_VERSION=8.5.1`
 
 ## `apk` (`.apk`-based packages)
@@ -208,16 +208,16 @@ GPL-3.0-or-later
 ### `apk` package: `jq`
 
 ```console
-jq-1.8.0-r0 description:
+jq-1.8.1-r0 description:
 A lightweight and flexible command-line JSON processor
 
-jq-1.8.0-r0 webpage:
+jq-1.8.1-r0 webpage:
 https://jqlang.github.io/jq/
 
-jq-1.8.0-r0 installed size:
+jq-1.8.1-r0 installed size:
 339 KiB
 
-jq-1.8.0-r0 license:
+jq-1.8.1-r0 license:
 MIT
 
 ```
