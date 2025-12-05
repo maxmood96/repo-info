@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a6b53e0894dbc4ddbd6e969267cf1f78abef4efd7e22dc352c574603dfaa94c8`
-- Created: `2025-09-01T15:19:10Z`
-- Virtual Size: ~ 270.14 Mb  
+- Image ID: `sha256:2209450bb913610a333ba104ee4e60cfd937380f91941203e4f1f5dc80d01c95`
+- Created: `2025-12-03T19:36:56.573121101Z`
+- Virtual Size: ~ 278.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["swipl"]`
@@ -1918,11 +1918,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3~deb12u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxslt=1.1.35-1+deb12u2`
+### `dpkg` source package: `libxslt=1.1.35-1+deb12u3`
 
 Binary Packages:
 
-- `libxslt1.1:amd64=1.1.35-1+deb12u2`
+- `libxslt1.1:amd64=1.1.35-1+deb12u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1931,17 +1931,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxslt=1.1.35-1+deb12u2
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u2.dsc' libxslt_1.1.35-1+deb12u2.dsc 1842 SHA256:5190c8669cfbbb30f76aa3a0db99cf66d7d452333ee975153bea863ade5e9a32
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35.orig.tar.xz' libxslt_1.1.35.orig.tar.xz 1827548 SHA256:8247f33e9a872c6ac859aa45018bc4c4d00b97e2feac9eebc10c93ce1f34dd79
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u2.debian.tar.xz' libxslt_1.1.35-1+deb12u2.debian.tar.xz 29784 SHA256:9bb447447f396c8faf3bbf39cb6848d7af04de09594670c910f1407ab5280334
+$ apt-get source -qq --print-uris libxslt=1.1.35-1+deb12u3
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u3.dsc' libxslt_1.1.35-1+deb12u3.dsc 2187 SHA256:f60527764dbce95161371132dcd6acc910661aa56b1f5cb4870b86c372f12391
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35.orig.tar.xz' libxslt_1.1.35.orig.tar.xz 1827548 SHA256:8247f33e9a872c6ac859aa45018bc4c4d00b97e2feac9eebc10c93ce1f34dd79
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u3.debian.tar.xz' libxslt_1.1.35-1+deb12u3.debian.tar.xz 29864 SHA256:837cfd5b4d57557523c748fec1bd98554f65a369a43bded82e42a00ee095abbe
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxslt/1.1.35-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxslt/1.1.35-1+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libyaml=0.2.5-1`
 
@@ -2223,12 +2223,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.5.13+dfsg-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.5.13+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.17-1~deb12u2`
+### `dpkg` source package: `openssl=3.0.17-1~deb12u3`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.17-1~deb12u2`
-- `openssl=3.0.17-1~deb12u2`
+- `libssl3:amd64=3.0.17-1~deb12u3`
+- `openssl=3.0.17-1~deb12u3`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -2240,18 +2240,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.17-1~deb12u2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u2.dsc' openssl_3.0.17-1~deb12u2.dsc 2675 SHA256:8eff0f04976f65df9a00507f286c18f42644d73124e3844258f037ff47c4f6cf
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz' openssl_3.0.17.orig.tar.gz 15344831 SHA256:dfdd77e4ea1b57ff3a6dbde6b0bdc3f31db5ac99e7fdd4eaf9e1fbb6ec2db8ce
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz.asc' openssl_3.0.17.orig.tar.gz.asc 833 SHA256:1f2f2c258e4a05affbc8a888accd4a2331a1e6867db6f0178e8bda85aecff62a
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u2.debian.tar.xz' openssl_3.0.17-1~deb12u2.debian.tar.xz 55224 SHA256:e5b4c3e1b9caad2da53572fe2b4c7ce027ec17e778630f342d194608472d52f1
+$ apt-get source -qq --print-uris openssl=3.0.17-1~deb12u3
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.17-1%7edeb12u3.dsc' openssl_3.0.17-1~deb12u3.dsc 2501 SHA256:c154f89cb343b8ecda8a3cc09b8626171282266211b23bc9fef2c6276aab672a
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.17.orig.tar.gz' openssl_3.0.17.orig.tar.gz 15344831 SHA256:dfdd77e4ea1b57ff3a6dbde6b0bdc3f31db5ac99e7fdd4eaf9e1fbb6ec2db8ce
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.17.orig.tar.gz.asc' openssl_3.0.17.orig.tar.gz.asc 833 SHA256:1f2f2c258e4a05affbc8a888accd4a2331a1e6867db6f0178e8bda85aecff62a
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.17-1%7edeb12u3.debian.tar.xz' openssl_3.0.17-1~deb12u3.debian.tar.xz 55920 SHA256:93bdec098a8c7c357b88b0b6608a66b16dcb9b02523f6764c6ee03a85a4352a2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.0.17-1~deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.17-1~deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.17-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.0.17-1~deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.17-1~deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.17-1~deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ossp-uuid=1.6.2-1.5`
 
