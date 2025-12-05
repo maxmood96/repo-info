@@ -2472,10 +2472,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.4.dsc' glib2.0_2.80.0-6ubuntu3.4.dsc 4508 SHA512:a3c543aa79c11ed9653c715326890da9cee05154bc00e029d262bb7710391a8e10c4829187e7d0d5b0204473e1a6b5654f3f8331e029b8ce3fb651f6773feb28
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.4.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.4.debian.tar.xz 152380 SHA512:d7b6f2d78aa5a0995eb252bd8dd6c796e7c821f4651432eeca6d8d11cf5c0ed5bd663643f88cc1d2468ee3455b8d692f160ed3f47456851b88f7ec18e5b4c12a
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.4.dsc' glib2.0_2.80.0-6ubuntu3.4.dsc 4508 SHA512:a3c543aa79c11ed9653c715326890da9cee05154bc00e029d262bb7710391a8e10c4829187e7d0d5b0204473e1a6b5654f3f8331e029b8ce3fb651f6773feb28
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.4.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.4.debian.tar.xz 152380 SHA512:d7b6f2d78aa5a0995eb252bd8dd6c796e7c821f4651432eeca6d8d11cf5c0ed5bd663643f88cc1d2468ee3455b8d692f160ed3f47456851b88f7ec18e5b4c12a
 ```
 
 ### `dpkg` source package: `glibc=2.39-0ubuntu8.6`
@@ -4335,14 +4335,9 @@ Licenses: (parsed from: `/usr/share/doc/libinput-bin/copyright`, `/usr/share/doc
 - `Expat`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libinput=1.25.0-1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.25.0-1ubuntu3.1.dsc' libinput_1.25.0-1ubuntu3.1.dsc 2590 SHA512:009b90dbd1a71faacbca52b5b39292b26ad0d3ee4609bdf29f65f7153df76f71f3dbde5e40652553e2c3e196597366e6bdc99e1e23beb74620817cb4bd1d6040
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.25.0.orig.tar.gz' libinput_1.25.0.orig.tar.gz 1016846 SHA512:17c668d04e3ff7d3e99519f7e7fe37377bd25e90ff36acc8c3f06f6de31265514780a0823b6fbd5712272a6b6f759bf768cb35b4f68c29828c1964899e9ee752
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.25.0-1ubuntu3.1.debian.tar.xz' libinput_1.25.0-1ubuntu3.1.debian.tar.xz 12244 SHA512:44b15250ada7e1432d553fcdbfda9527aa6399122eb42e5c8feccefbd9ea07d812a9712b50f9b808dd4318324d16180d1fa812e78a73128a67f5481540d945ec
-```
 
 ### `dpkg` source package: `libjpeg-turbo=2.1.5-2ubuntu2`
 
@@ -7783,14 +7778,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-16=16.10-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.10-0ubuntu0.24.04.1.dsc' postgresql-16_16.10-0ubuntu0.24.04.1.dsc 4336 SHA512:f4c504910339d48ef7122dd9167bf0e6fd72f627a1251fb324f230346ab072718c2bb416755517723de45c29ee79ce0d9f3798526c7bc096bfacdc9f0af9ffa0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.10.orig.tar.gz' postgresql-16_16.10.orig.tar.gz 32861700 SHA512:6ed4c77fea346536dbad5eaa427d97dc6f68b70951a2d4e658087351f68b99ba4873192d3266fa84fdc9e09f7ee97eb6f2e3ede4a09994db6d56da391cafe765
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.10-0ubuntu0.24.04.1.debian.tar.xz' postgresql-16_16.10-0ubuntu0.24.04.1.debian.tar.xz 36932 SHA512:3e77f09daf886b687eafecba2d4cfff978c477271d5008c10423bc7c2356b93bd5e811ea973a0ee6e40002d5a1740bb07ec42bb537660fb47ffe06b04ba92338
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 
