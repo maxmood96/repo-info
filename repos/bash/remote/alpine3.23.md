@@ -1,11 +1,11 @@
 ## `bash:alpine3.23`
 
 ```console
-$ docker pull bash@sha256:3f8aae8131f7c7e42e685080a2c7a47cee9bb9e0a99a9fa7ae4f3656b240f877
+$ docker pull bash@sha256:69f5b18444a177abdb2b3c64749a47abdccdd11661a1b7b2731ed23dc1d09ebd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 14
+-	Platforms: 16
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
@@ -17,6 +17,8 @@ $ docker pull bash@sha256:3f8aae8131f7c7e42e685080a2c7a47cee9bb9e0a99a9fa7ae4f36
 	-	linux; 386
 	-	unknown; unknown
 	-	linux; ppc64le
+	-	unknown; unknown
+	-	linux; riscv64
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
@@ -446,6 +448,78 @@ $ docker pull bash@sha256:b28751862c5bec15c36d0506f36d4cdc7797b4c8cf99527704d2db
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0525a31b119398d4956cfd31fb10116160fee3c5612fc2994f032c8c465da39a`  
 		Last Modified: Thu, 04 Dec 2025 22:02:35 GMT  
+		Size: 21.0 KB (21048 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `bash:alpine3.23` - linux; riscv64
+
+```console
+$ docker pull bash@sha256:f3cf60e828f464251e6182c6152165960d73afd1046967250431874acbf72bb2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.7 MB (6715091 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3bafbc29eb005506085e9c906bb238497a9b010169ce6be890c1ee342704f935`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 03 Dec 2025 19:29:39 GMT
+ADD alpine-minirootfs-3.23.0-riscv64.tar.gz / # buildkit
+# Wed, 03 Dec 2025 19:29:39 GMT
+CMD ["/bin/sh"]
+# Thu, 04 Dec 2025 23:56:58 GMT
+ENV _BASH_VERSION=5.3.8
+# Thu, 04 Dec 2025 23:56:58 GMT
+ENV _BASH_BASELINE=5.3
+# Thu, 04 Dec 2025 23:56:58 GMT
+ENV _BASH_LATEST_PATCH=8
+# Thu, 04 Dec 2025 23:56:58 GMT
+RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		patch 		tar 	; 		wget -O bash.tar.gz "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz"; 	wget -O bash.tar.gz.sig "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz.sig"; 		: "${_BASH_BASELINE_PATCH:=0}" "${_BASH_LATEST_PATCH:=0}"; 	if [ "$_BASH_LATEST_PATCH" -gt "$_BASH_BASELINE_PATCH" ]; then 		mkdir -p bash-patches; 		first="$(printf '%03d' "$(( _BASH_BASELINE_PATCH + 1 ))")"; 		last="$(printf '%03d' "$_BASH_LATEST_PATCH")"; 		majorMinor="${_BASH_VERSION%.*}"; 		for patch in $(seq -w "$first" "$last"); do 			url="https://ftp.gnu.org/gnu/bash/bash-$majorMinor-patches/bash${majorMinor//./}-$patch"; 			wget -O "bash-patches/$patch" "$url"; 			wget -O "bash-patches/$patch.sig" "$url.sig"; 		done; 	fi; 		apk add --no-cache --virtual .gpg-deps gnupg; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7C0135FB088AAF6C66C650B9BB5869F064EA74AB; 	gpg --batch --verify bash.tar.gz.sig bash.tar.gz; 	rm bash.tar.gz.sig; 	if [ -d bash-patches ]; then 		for sig in bash-patches/*.sig; do 			p="${sig%.sig}"; 			gpg --batch --verify "$sig" "$p"; 			rm "$sig"; 		done; 	fi; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apk del --no-network .gpg-deps; 		mkdir -p /usr/local/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/local/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		apk add --no-cache --virtual .patch-deps patch; 		for p in bash-patches/*; do 			patch 				--directory=/usr/local/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 		apk del --no-network .patch-deps; 	fi; 		cd /usr/local/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/local/src/bash; 		rm -rf 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/locale 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .bash-rundeps $runDeps; 	apk del --no-network .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version; 	[ "$(bash -c 'echo "${BASH_VERSION%%[^0-9.]*}"')" = "$_BASH_VERSION" ]; 	bash -c 'help' > /dev/null # buildkit
+# Thu, 04 Dec 2025 23:56:58 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Thu, 04 Dec 2025 23:56:58 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 04 Dec 2025 23:56:58 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:9929557817a4c85b33d6dbeb491f7396ef32added7e77de7ac1b644ed0975313`  
+		Last Modified: Wed, 03 Dec 2025 19:30:17 GMT  
+		Size: 3.6 MB (3583519 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b28f6fcf556527b77b56443517e55f1165b5c360323d25de82bf1ac946b95176`  
+		Last Modified: Thu, 04 Dec 2025 23:57:32 GMT  
+		Size: 3.1 MB (3131234 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a410d43bff1e9efaad31b76741ed9cfeedcc76a1501d6928dbff188214c55348`  
+		Last Modified: Thu, 04 Dec 2025 23:57:32 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `bash:alpine3.23` - unknown; unknown
+
+```console
+$ docker pull bash@sha256:f900ed33fcc8b7c287513c6868d00ffac73ec0bcc56176bf3a3407d3c76bda83
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **138.7 KB (138715 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:977b13502cefea00de585207f9459f2a6c33f8b09c8c6ec7e41aaf761d899be7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:95b18020f2977bee8133131153d59f2b91a8a853b0c31d517dbfdc4721a81edb`  
+		Last Modified: Fri, 05 Dec 2025 01:02:18 GMT  
+		Size: 117.7 KB (117667 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2abbf14449be786e4f955d03447189c59a43a34d26e99c6fbead7241f69ac000`  
+		Last Modified: Fri, 05 Dec 2025 01:02:18 GMT  
 		Size: 21.0 KB (21048 bytes)  
 		MIME: application/vnd.in-toto+json
 
