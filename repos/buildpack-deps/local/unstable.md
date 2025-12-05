@@ -4414,21 +4414,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:10.2p1-2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.2p1-2.dsc' openssh_10.2p1-2.dsc 3654 SHA256:cee74054995719d1e59d6bd2ca548b36f16ca48e7f7cddcc088e8ac9ab86d074
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.2p1.orig.tar.gz' openssh_10.2p1.orig.tar.gz 1974519 SHA256:ccc42c0419937959263fa1dbd16dafc18c56b984c03562d2937ce56a60f798b2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.2p1.orig.tar.gz.asc' openssh_10.2p1.orig.tar.gz.asc 833 SHA256:9abf9435ca9d437b896e14bf35c63993f523aea34795d93fc03539f9bf780fd7
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.2p1-2.debian.tar.xz' openssh_10.2p1-2.debian.tar.xz 199728 SHA256:7f44d9ce2475a854b2caa664e335341f5e7f114bf9b6c141d755f08ea3f39839
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:10.2p1-2/
 
-- https://sources.debian.net/src/openssh/1:10.2p1-2/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:10.2p1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:10.2p1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.5.4-1`
 
@@ -4885,19 +4877,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.13.7-1
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.13.7-1.dsc' python3-defaults_3.13.7-1.dsc 2346 SHA256:64eea756806123b01813823927d18c0dd5bef730431fad2821552086efba646a
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.13.7-1.tar.gz' python3-defaults_3.13.7-1.tar.gz 146793 SHA256:bf623672b85ead2610766ec3cceaae531e9d6ae4617cd4ab8935b245dfb4d3b6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.13.7-1/
 
-- https://sources.debian.net/src/python3-defaults/3.13.7-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.13.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.13.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.13=3.13.9-1`
 

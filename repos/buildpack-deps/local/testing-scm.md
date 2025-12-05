@@ -2625,21 +2625,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.40.1-6
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-6.dsc' perl_5.40.1-6.dsc 2372 SHA256:b521581cdc0d45d234ebba4d3c7d1e107fd9f18e1322c1bbaf7101483a7fdf08
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA256:4ea023d08101443f6ed9dc3bdd9bb5f5e08087678dc9e443d195df22da36209a
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA256:dfa20c2eef2b4af133525610bbb65dd13777ecf998c9c5b1ccf0d308e732ee3f
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-6.debian.tar.xz' perl_5.40.1-6.debian.tar.xz 172892 SHA256:3071cd0d0ddb2bc58a739d331c5e8c5b549f679714b7d8f698b7f8f7ab27b3a3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.40.1-6/
 
-- https://sources.debian.net/src/perl/5.40.1-6/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.40.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.40.1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.3.2-3`
 
@@ -3049,21 +3041,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.5-4
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.5-4.dsc' subversion_1.14.5-4.dsc 4074 SHA256:903bc067a2f0fa1bfb1a8e79b182da39bd26fdd6eeb7c6d8b5de3a6cb7aac399
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.5.orig.tar.gz' subversion_1.14.5.orig.tar.gz 11645728 SHA256:cd143fe8fdb1cd506c438eef1c772a2e87e1519e6b0be3fcd54a8c59e9022390
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.5.orig.tar.gz.asc' subversion_1.14.5.orig.tar.gz.asc 2382 SHA256:91384669ad9125c6919b0b2ab0c345e6de3cd0f89affe04ab66dfe9c5e19d673
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.5-4.debian.tar.xz' subversion_1.14.5-4.debian.tar.xz 300248 SHA256:72111e867fa72edff8e8f9eaafa17752f0a001ff56f2184eb80df6d9b1dccfe5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.14.5-4/
 
-- https://sources.debian.net/src/subversion/1.14.5-4/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.14.5-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.14.5-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=258.1-2`
 
