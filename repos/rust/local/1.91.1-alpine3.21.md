@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8b8cac8a240961d07b1a7df5b1c19d743ddeb1bef84b6e99810652f2bdc4fb43`
-- Created: `2025-11-10T20:12:42.900927067Z`
-- Virtual Size: ~ 993.65 Mb  
+- Image ID: `sha256:c6d88450a73c1448619cbdf2c156dbd4ad15bb214758a54b1a7295363bbae4e9`
+- Created: `2025-12-03T23:24:00.055788353Z`
+- Virtual Size: ~ 1.00 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -405,6 +405,23 @@ musl-1.2.5-r9 installed size:
 646 KiB
 
 musl-1.2.5-r9 license:
+MIT
+
+```
+
+### `apk` package: `musl-dev`
+
+```console
+musl-dev-1.2.5-r9 description:
+the musl c library (libc) implementation (development files)
+
+musl-dev-1.2.5-r9 webpage:
+https://musl.libc.org/
+
+musl-dev-1.2.5-r9 installed size:
+9681 KiB
+
+musl-dev-1.2.5-r9 license:
 MIT
 
 ```
