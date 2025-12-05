@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:38d4707cb77a6bec2b1e154549719354c90c5d7c61abc4281fceab734473d2fe`
-- Created: `2025-10-07T20:28:02.20143323Z`
-- Virtual Size: ~ 90.10 Mb  
+- Image ID: `sha256:62fa931b077876aa2304474c60c894bb5212ee526e964ba3d6737b9afae9c51d`
+- Created: `2025-11-27T23:15:23.57768918Z`
+- Virtual Size: ~ 90.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -382,11 +382,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.10-4
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.10-4.debian.tar.xz' diffutils_3.10-4.debian.tar.xz 14304 SHA512:447d360101e549e520210cd6da9573cce293c1b59266d960b066da4eeff8ce473c19d2269e30cd82e33e162cd6c6b870755b3bb292d8592a51511ca19e974350
 ```
 
-### `dpkg` source package: `dpkg=1.22.21ubuntu3`
+### `dpkg` source package: `dpkg=1.22.21ubuntu3.1`
 
 Binary Packages:
 
-- `dpkg=1.22.21ubuntu3`
+- `dpkg=1.22.21ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -397,9 +397,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dpkg=1.22.21ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.21ubuntu3.dsc' dpkg_1.22.21ubuntu3.dsc 3457 SHA512:b6ee366e65fe84d71d7fa8b0160b6b762e16a2bc2725795de3c255d48cbf8d0d3711aefc3a2b9a40fc924e99d34be5e30bc6d542686a0243a0e20487345b90fa
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.21ubuntu3.tar.xz' dpkg_1.22.21ubuntu3.tar.xz 5675688 SHA512:f9219c5c8643c729cc9849fe4d4b4354fd684263d3c7f0eded7001b805153d3e60b1f22d3612a4e70b9f4b9a70213c56890e9578c6bbf337dc559ec17a62cd05
+$ apt-get source -qq --print-uris dpkg=1.22.21ubuntu3.1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.21ubuntu3.1.dsc' dpkg_1.22.21ubuntu3.1.dsc 3486 SHA512:142ea330912e6c2c9fdc6de497b5613de30b394850ef2faf4888c09a50e58b48ee94d7883ea7b257432c02f50d3f9520fe6a4998c538da6e3c0abe41976663b9
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.21ubuntu3.1.tar.xz' dpkg_1.22.21ubuntu3.1.tar.xz 5672872 SHA512:7e49ffdf72eaa89e1b165aa7c54bd254c5382eb674bbec64e3f4c62037560f20c6b331661cf4022ddd81ece73df6e0e7c1085ab578523a2fcc183626118be386
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.47.2-3ubuntu2`
@@ -1202,11 +1202,11 @@ $ apt-get source -qq --print-uris procps=2:4.0.4-8ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-8ubuntu3.debian.tar.xz' procps_4.0.4-8ubuntu3.debian.tar.xz 61416 SHA512:825338b985815a665150682ef2ad378bc0a72a9a3a3f53883469e4591fffb90b275fc2119960b8ae672160f8b2961798e8275b2f3175eec91f70c552e4fb9f7a
 ```
 
-### `dpkg` source package: `rust-coreutils=0.2.2-0ubuntu2`
+### `dpkg` source package: `rust-coreutils=0.2.2-0ubuntu2.1`
 
 Binary Packages:
 
-- `rust-coreutils=0.2.2-0ubuntu2`
+- `rust-coreutils=0.2.2-0ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/rust-coreutils/copyright`)
 
@@ -1217,11 +1217,11 @@ Licenses: (parsed from: `/usr/share/doc/rust-coreutils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rust-coreutils=0.2.2-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2-0ubuntu2.dsc' rust-coreutils_0.2.2-0ubuntu2.dsc 8098 SHA512:2d66b7fc43d187ac5ef00cd4d6ebb2a67b86287f0c72a1352a07b8b09a2cf38dbbb0b10be22506a5d049ec8a9974c552b5dd44ab00c50c89f5df7a2415acf1bb
+$ apt-get source -qq --print-uris rust-coreutils=0.2.2-0ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2-0ubuntu2.1.dsc' rust-coreutils_0.2.2-0ubuntu2.1.dsc 8098 SHA512:889ac86cee4ae6a400c4ad335c68dac5e18f0cab46c3c2f2c8c8fe6f182301120fc7faf2b7690c3f373da1d4fd48d89a551774046df720aead1673f2acac18c7
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2.orig-rust-vendor.tar.xz' rust-coreutils_0.2.2.orig-rust-vendor.tar.xz 10803468 SHA512:a9b29f06270f216da761f535f303db4a840535259030695a8bbe7a5269fdab872941785700b22ab21a570b105ad0ade2750015dc1648ca4ec385b9fe4b414c52
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2.orig.tar.gz' rust-coreutils_0.2.2.orig.tar.gz 2827753 SHA512:58def9fe8f01640c6eb7c16cd182061bf62fab22124bdedcb931cdb39b25c2bd3f31523561e321a4822d9e09107dc0c5cc2ddf8e20333138ddaa19d284db609f
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2-0ubuntu2.debian.tar.xz' rust-coreutils_0.2.2-0ubuntu2.debian.tar.xz 17228 SHA512:d72221f314ba0429bec3378489392b42b4d7f91506eca6c8f2d2ffadc06ae45a369a0d4f07ee7c933db7525f1c3e1bf467732927435beca751b7ea1359175ff6
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2-0ubuntu2.1.debian.tar.xz' rust-coreutils_0.2.2-0ubuntu2.1.debian.tar.xz 19448 SHA512:e63052b47df74ae3411db007b17fd7e1be606c84eb87583c1aef774f2f72b7ac8921dc1560363f35de11cc2d60b2caa969a998e646bb0f7928c381a77f34c43f
 ```
 
 ### `dpkg` source package: `sed=4.9-2build2`
