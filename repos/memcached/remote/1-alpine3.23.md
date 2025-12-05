@@ -1,11 +1,11 @@
-## `memcached:1.6-alpine`
+## `memcached:1-alpine3.23`
 
 ```console
-$ docker pull memcached@sha256:19d0005f355b172894f82ef438cbd84f190e3c1198c31b4d2116619b40b13f3d
+$ docker pull memcached@sha256:c3c14d35ba7f220be1365bade5f0fe02b595a533f464c69bc16232b829a283d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 16
+-	Platforms: 14
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
@@ -18,12 +18,10 @@ $ docker pull memcached@sha256:19d0005f355b172894f82ef438cbd84f190e3c1198c31b4d2
 	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
-	-	linux; riscv64
-	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
-### `memcached:1.6-alpine` - linux; amd64
+### `memcached:1-alpine3.23` - linux; amd64
 
 ```console
 $ docker pull memcached@sha256:aac456c35cd29635b5501fefac58a2e954752006c9d159fbf520dd785e09cbba
@@ -93,7 +91,7 @@ CMD ["memcached"]
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `memcached:1.6-alpine` - unknown; unknown
+### `memcached:1-alpine3.23` - unknown; unknown
 
 ```console
 $ docker pull memcached@sha256:849b937b30f8457f48d4a2b4dee48812e3f3fef3740e8553fbeb950ef1e6a405
@@ -117,7 +115,7 @@ $ docker pull memcached@sha256:849b937b30f8457f48d4a2b4dee48812e3f3fef3740e8553f
 		Size: 20.5 KB (20531 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `memcached:1.6-alpine` - linux; arm variant v6
+### `memcached:1-alpine3.23` - linux; arm variant v6
 
 ```console
 $ docker pull memcached@sha256:a7003e700207ebf4fd102e5d81432129cd3e4776c613ee53fa01b0dbd5e9f19b
@@ -187,7 +185,7 @@ CMD ["memcached"]
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `memcached:1.6-alpine` - unknown; unknown
+### `memcached:1-alpine3.23` - unknown; unknown
 
 ```console
 $ docker pull memcached@sha256:95ab79e458ab0908467ebbdf5539b688045b04421a068fa6821d557eece2f67f
@@ -207,7 +205,7 @@ $ docker pull memcached@sha256:95ab79e458ab0908467ebbdf5539b688045b04421a068fa68
 		Size: 20.5 KB (20467 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `memcached:1.6-alpine` - linux; arm variant v7
+### `memcached:1-alpine3.23` - linux; arm variant v7
 
 ```console
 $ docker pull memcached@sha256:6b1fcd05fdcf13d4b7650d85e6043cdeaf423fe9ec57036c0f203e4eef6bff12
@@ -277,7 +275,7 @@ CMD ["memcached"]
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `memcached:1.6-alpine` - unknown; unknown
+### `memcached:1-alpine3.23` - unknown; unknown
 
 ```console
 $ docker pull memcached@sha256:726bec6c0e6bb11f92cf809b0eff6ee10fc86a30eae935ac85e0b82f2fc110d4
@@ -301,7 +299,7 @@ $ docker pull memcached@sha256:726bec6c0e6bb11f92cf809b0eff6ee10fc86a30eae935ac8
 		Size: 20.7 KB (20678 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `memcached:1.6-alpine` - linux; arm64 variant v8
+### `memcached:1-alpine3.23` - linux; arm64 variant v8
 
 ```console
 $ docker pull memcached@sha256:b263323af06e550df9becd8c2cf8450400be7ae4381392593565dc8247bb230f
@@ -371,7 +369,7 @@ CMD ["memcached"]
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `memcached:1.6-alpine` - unknown; unknown
+### `memcached:1-alpine3.23` - unknown; unknown
 
 ```console
 $ docker pull memcached@sha256:9e1d743b77c8856403d4e8420e9936de4aa1bc6fc88642c47112e318e10e2655
@@ -395,7 +393,7 @@ $ docker pull memcached@sha256:9e1d743b77c8856403d4e8420e9936de4aa1bc6fc88642c47
 		Size: 20.7 KB (20728 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `memcached:1.6-alpine` - linux; 386
+### `memcached:1-alpine3.23` - linux; 386
 
 ```console
 $ docker pull memcached@sha256:b3d88ad28118ac190ff8cfd6be5b29a4aff4e4f772124ba8a6cb7335eb909152
@@ -465,7 +463,7 @@ CMD ["memcached"]
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `memcached:1.6-alpine` - unknown; unknown
+### `memcached:1-alpine3.23` - unknown; unknown
 
 ```console
 $ docker pull memcached@sha256:a8428c10b46dc321be308528a9dc3904db404457e03384a035c6e8c7bf32d05e
@@ -489,7 +487,7 @@ $ docker pull memcached@sha256:a8428c10b46dc321be308528a9dc3904db404457e03384a03
 		Size: 20.5 KB (20473 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `memcached:1.6-alpine` - linux; ppc64le
+### `memcached:1-alpine3.23` - linux; ppc64le
 
 ```console
 $ docker pull memcached@sha256:6ff6570e2a8fb560a3b830e0f1475d488961b29b93e711d03fd52464844926b4
@@ -559,7 +557,7 @@ CMD ["memcached"]
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `memcached:1.6-alpine` - unknown; unknown
+### `memcached:1-alpine3.23` - unknown; unknown
 
 ```console
 $ docker pull memcached@sha256:ad7264b3f464d43618d5e997d3c544a46d5d00112555908bab3e31ddfb719fd6
@@ -583,101 +581,7 @@ $ docker pull memcached@sha256:ad7264b3f464d43618d5e997d3c544a46d5d00112555908ba
 		Size: 20.6 KB (20605 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `memcached:1.6-alpine` - linux; riscv64
-
-```console
-$ docker pull memcached@sha256:588117152fae8688e5cee8aa65963a1adb1e3851845da5da3e18c80099cdb1f5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5559076 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c983e214f48d62c0be8ffbceb2a86b504aa71c02ac195047119fe264f612c35`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["memcached"]`
-
-```dockerfile
-# Tue, 29 Jul 2025 06:54:12 GMT
-ADD alpine-minirootfs-3.22.2-riscv64.tar.gz / # buildkit
-# Tue, 29 Jul 2025 06:54:12 GMT
-CMD ["/bin/sh"]
-# Tue, 29 Jul 2025 06:54:12 GMT
-RUN set -eux; 	addgroup -g 11211 memcache; 	adduser -D -u 11211 -G memcache memcache # buildkit
-# Tue, 29 Jul 2025 06:54:12 GMT
-RUN apk add --no-cache libsasl # buildkit
-# Tue, 29 Jul 2025 06:54:12 GMT
-ENV MEMCACHED_VERSION=1.6.39
-# Tue, 29 Jul 2025 06:54:12 GMT
-ENV MEMCACHED_URL=https://memcached.org/files/memcached-1.6.39.tar.gz
-# Tue, 29 Jul 2025 06:54:12 GMT
-ENV MEMCACHED_SHA1=132d165af4d032d97081a2ccda645595d6bbb17b
-# Tue, 29 Jul 2025 06:54:12 GMT
-RUN set -eux; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		coreutils 		cyrus-sasl-dev 		dpkg-dev dpkg 		gcc 		libc-dev 		libevent-dev 		linux-headers 		make 		openssl 		openssl-dev 		perl 		perl-io-socket-ssl 		perl-utils 	; 		wget -O memcached.tar.gz "$MEMCACHED_URL"; 	echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c -; 	mkdir -p /usr/src/memcached; 	tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1; 	rm memcached.tar.gz; 		cd /usr/src/memcached; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	case "$gnuArch" in 		arm-*abihf) export ac_cv_c_alignment=need ;; 	esac; 	./configure 		--build="$gnuArch" 		--enable-extstore 		--enable-proxy 		--enable-sasl 		--enable-sasl-pwdb 		--enable-tls 	; 	nproc="$(nproc)"; 	make -j "$nproc"; 		make test PARALLEL="$nproc" || make test; 		make install; 		cd /; 	rm -rf /usr/src/memcached; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .memcached-rundeps $runDeps; 	apk del --no-network .build-deps; 		memcached -V # buildkit
-# Tue, 29 Jul 2025 06:54:12 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 29 Jul 2025 06:54:12 GMT
-RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
-# Tue, 29 Jul 2025 06:54:12 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 29 Jul 2025 06:54:12 GMT
-USER memcache
-# Tue, 29 Jul 2025 06:54:12 GMT
-EXPOSE map[11211/tcp:{}]
-# Tue, 29 Jul 2025 06:54:12 GMT
-CMD ["memcached"]
-```
-
--	Layers:
-	-	`sha256:139bee3c50b89b56dcbc72522ce83097d9beb59d9d3a5c19072ccd1ad54b11c8`  
-		Last Modified: Wed, 08 Oct 2025 21:18:33 GMT  
-		Size: 3.5 MB (3515240 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15ec1911f91425f5b1fc00d35f661d0dcb2691cdbff9a0ea4a65789eb8dd9b89`  
-		Last Modified: Thu, 09 Oct 2025 04:54:06 GMT  
-		Size: 950.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb577a02d7726836381f3dfcda7cb11472d8e99ef2feb088a9570bc2c0203f15`  
-		Last Modified: Thu, 09 Oct 2025 04:54:07 GMT  
-		Size: 107.9 KB (107909 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26d6a77fdbd897c87616b71f12d107a1db186b3944ccdad6b89e33186d2645bf`  
-		Last Modified: Thu, 09 Oct 2025 04:54:07 GMT  
-		Size: 1.9 MB (1934579 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2879148828c59fde0e744fb56e2490c68a2e98902f3c6a0d01bb8381588a58ba`  
-		Last Modified: Thu, 09 Oct 2025 04:54:07 GMT  
-		Size: 279.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00990bf09cdd6c9e756438f8b076739cea749be4889b317c88bf5d06c908e9d8`  
-		Last Modified: Thu, 09 Oct 2025 04:54:07 GMT  
-		Size: 119.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `memcached:1.6-alpine` - unknown; unknown
-
-```console
-$ docker pull memcached@sha256:da1dc0b73e866df98aacb962264ed5b50bf3f61862f76c42828b9a179c32e455
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.9 KB (114931 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b8b102978a5d01b2e4ec0cf55dd00df9776a17f5f31b8bae680908b73d2e1de`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:2de1c9249a94130556f0db88a655ed432c15ad40e151579870de604725fbc086`  
-		Last Modified: Thu, 09 Oct 2025 06:34:34 GMT  
-		Size: 94.3 KB (94283 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:0262f9b3a73d1455147e4436e4bf7da9aa19a7d385d28a807688e23d6a1f1d05`  
-		Last Modified: Thu, 09 Oct 2025 06:34:34 GMT  
-		Size: 20.6 KB (20648 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `memcached:1.6-alpine` - linux; s390x
+### `memcached:1-alpine3.23` - linux; s390x
 
 ```console
 $ docker pull memcached@sha256:b23b3b07e717d7651a02ec547a675f198e684f410c7217a09bd305de6c20e664
@@ -747,7 +651,7 @@ CMD ["memcached"]
 		Size: 120.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `memcached:1.6-alpine` - unknown; unknown
+### `memcached:1-alpine3.23` - unknown; unknown
 
 ```console
 $ docker pull memcached@sha256:db1f4e6b802cb9b4ee6a404e244522a143516b6c5dfe88d706e7d657e8a3c6c5
