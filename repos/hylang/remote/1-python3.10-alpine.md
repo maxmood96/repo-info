@@ -1,7 +1,7 @@
 ## `hylang:1-python3.10-alpine`
 
 ```console
-$ docker pull hylang@sha256:143fe89ae25180c546c70186be997afc490bdde4d893a321a9d85922074db0f7
+$ docker pull hylang@sha256:fee5729d8d9b3a0e352823a8736d624de9b524e45366d1c6d2a6175500e17f8f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -568,91 +568,91 @@ $ docker pull hylang@sha256:207723a754dc0f6197973dc23801ceb0cd9fbc1c48834216b0fc
 ### `hylang:1-python3.10-alpine` - linux; riscv64
 
 ```console
-$ docker pull hylang@sha256:cb2b7fec4e41a4e3d5d9130d348b29e7b73b61c73a56df38de50a943f8965ded
+$ docker pull hylang@sha256:f73099542b7220dca2a4c047136b20aed47039549523506598c24891ebd07302
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.6 MB (24649808 bytes)**  
+-	Total Size: **24.7 MB (24733955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:35a9002dc8ad10a08f0b6560015bf0f29c6201f5f05cfb3eebd89d22722224dc`
+-	Image ID: `sha256:6c1dfa069cf5fb43ccb409b90cb03498f610969132714f8f45227b5cd5f05ad4`
 -	Default Command: `["hy"]`
 
 ```dockerfile
-# Wed, 08 Oct 2025 11:04:56 GMT
-ADD alpine-minirootfs-3.22.2-riscv64.tar.gz / # buildkit
-# Wed, 08 Oct 2025 11:04:56 GMT
+# Wed, 03 Dec 2025 19:29:39 GMT
+ADD alpine-minirootfs-3.23.0-riscv64.tar.gz / # buildkit
+# Wed, 03 Dec 2025 19:29:39 GMT
 CMD ["/bin/sh"]
-# Thu, 09 Oct 2025 21:44:07 GMT
+# Thu, 04 Dec 2025 02:43:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Oct 2025 21:44:07 GMT
+# Thu, 04 Dec 2025 02:43:41 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Oct 2025 21:44:07 GMT
+# Thu, 04 Dec 2025 02:43:41 GMT
 RUN set -eux; 	apk add --no-cache 		ca-certificates 		tzdata 	; # buildkit
-# Thu, 09 Oct 2025 21:44:07 GMT
+# Thu, 04 Dec 2025 02:43:41 GMT
 ENV GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D
-# Thu, 09 Oct 2025 21:44:07 GMT
+# Thu, 04 Dec 2025 02:43:41 GMT
 ENV PYTHON_VERSION=3.10.19
-# Thu, 09 Oct 2025 21:44:07 GMT
+# Thu, 04 Dec 2025 02:43:41 GMT
 ENV PYTHON_SHA256=c8f4a596572201d81dd7df91f70e177e19a70f1d489968b54b5fbbf29a97c076
-# Thu, 09 Oct 2025 21:44:07 GMT
+# Thu, 04 Dec 2025 04:18:53 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bluez-dev 		bzip2-dev 		dpkg-dev dpkg 		findutils 		gcc 		gdbm-dev 		gnupg 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tar 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz 		xz-dev 		zlib-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-option-checking=fatal 		--enable-shared 		$(test "${gnuArch%%-*}" != 'riscv64' && echo '--with-lto') 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-network --virtual .python-rundeps 	; 	apk del --no-network .build-deps; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 		pip3 install 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		'setuptools==79.0.1' 		'wheel<0.46' 	; 	pip3 --version # buildkit
-# Thu, 09 Oct 2025 21:44:07 GMT
+# Thu, 04 Dec 2025 04:18:53 GMT
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Thu, 09 Oct 2025 21:44:07 GMT
+# Thu, 04 Dec 2025 04:18:53 GMT
 CMD ["python3"]
-# Sat, 22 Nov 2025 23:22:12 GMT
+# Fri, 05 Dec 2025 19:45:54 GMT
 ENV HY_VERSION=1.1.0
-# Sat, 22 Nov 2025 23:22:12 GMT
+# Fri, 05 Dec 2025 19:45:54 GMT
 ENV HYRULE_VERSION=1.0.1
-# Sat, 22 Nov 2025 23:22:12 GMT
+# Fri, 05 Dec 2025 19:45:54 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Sat, 22 Nov 2025 23:22:12 GMT
+# Fri, 05 Dec 2025 19:45:54 GMT
 CMD ["hy"]
 ```
 
 -	Layers:
-	-	`sha256:139bee3c50b89b56dcbc72522ce83097d9beb59d9d3a5c19072ccd1ad54b11c8`  
-		Last Modified: Wed, 08 Oct 2025 21:18:33 GMT  
-		Size: 3.5 MB (3515240 bytes)  
+	-	`sha256:9929557817a4c85b33d6dbeb491f7396ef32added7e77de7ac1b644ed0975313`  
+		Last Modified: Wed, 03 Dec 2025 19:30:17 GMT  
+		Size: 3.6 MB (3583519 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:879bd470fd11b0111acf6d20db06ac6a0b955448eb55f42b1ca31bc17c8f4dd9`  
-		Last Modified: Mon, 13 Oct 2025 17:53:31 GMT  
-		Size: 457.3 KB (457271 bytes)  
+	-	`sha256:795674671b4008c88a7dc89332b7f6defed1aa98dc770c63b9303273cafdc28c`  
+		Last Modified: Thu, 04 Dec 2025 03:18:59 GMT  
+		Size: 461.1 KB (461107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a4dc7ef6d9a1e223056ee4cb7e98ce6f17549cf217e94f7710d9ff0ab8f54cc`  
-		Last Modified: Tue, 14 Oct 2025 09:26:11 GMT  
-		Size: 15.4 MB (15397340 bytes)  
+	-	`sha256:91dfbbc9ce4784500e7842070db39a58d2fd788fab6f62c552b64589139afaf5`  
+		Last Modified: Thu, 04 Dec 2025 04:19:54 GMT  
+		Size: 15.4 MB (15409658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b834f7edc24ff071efdc807f769a04b98da622282387384aa29cbca534e44102`  
-		Last Modified: Tue, 14 Oct 2025 09:26:10 GMT  
-		Size: 250.0 B  
+	-	`sha256:a9d09ac7d64abf337b274c6dd5006e02e9f128f73b2b6c8f6a91a6e199190817`  
+		Last Modified: Thu, 04 Dec 2025 04:19:52 GMT  
+		Size: 251.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1a135d42664728e6b54cfad21271a1e893008be6468e35c0609812622c88c5df`  
-		Last Modified: Sat, 22 Nov 2025 23:23:00 GMT  
-		Size: 5.3 MB (5279707 bytes)  
+	-	`sha256:c0a8437e178ae145a97d392eace42fdf6eac372edb83bafdcf107f54fc0bcd2e`  
+		Last Modified: Fri, 05 Dec 2025 19:46:39 GMT  
+		Size: 5.3 MB (5279420 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:1-python3.10-alpine` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:94ce548e87a5feef10e555b884748e3986ac45f6bc496db2484a5ffcd5efa88a
+$ docker pull hylang@sha256:aa2fad6b3612a5f7e575996dca884b4215f63bacaedc35d597c4f938b8078b0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **707.5 KB (707549 bytes)**  
+-	Total Size: **708.8 KB (708844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fec755beaa66fcb9d8c0dbf794544a5a3f16a11fcfa1fef72d109d41ce9c20f1`
+-	Image ID: `sha256:00c6ead6acf887fca6cca8db80060c1250e07dfab53c800a7e39f5cc2c0b525c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7613e069b276816a7a000077273f03db10b1c50405c7d61f9ee6f9eb1442918d`  
-		Last Modified: Sun, 23 Nov 2025 00:18:13 GMT  
-		Size: 698.1 KB (698074 bytes)  
+	-	`sha256:0f4a0c203cb924a4a0b12cf49bb9e070dffb1b5969b883477c46413481bf7b31`  
+		Last Modified: Fri, 05 Dec 2025 21:18:00 GMT  
+		Size: 699.4 KB (699369 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:84d12af858960821712498a7dc296b6c0da1d79e6cbd8060c6029205d5b95791`  
-		Last Modified: Sun, 23 Nov 2025 00:18:13 GMT  
+	-	`sha256:3ea737a5796d97a045189ee37699b28e936f1569c1b8d69db5350b4c3ae136aa`  
+		Last Modified: Fri, 05 Dec 2025 21:18:00 GMT  
 		Size: 9.5 KB (9475 bytes)  
 		MIME: application/vnd.in-toto+json
 
