@@ -1,10 +1,10 @@
-# `fluentd:v1.19.0-debian-1.0`
+# `fluentd:v1.19.1-debian-1.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:31a904b3458ff5a124387f32960dfa2db38c96553803b6f1ca1aa65f98cd5c1f`
-- Created: `2025-11-18T07:11:04.108278897Z`
-- Virtual Size: ~ 175.45 Mb  
+- Image ID: `sha256:bd66d9d1a7d5268d13f4c183c9e2f0baffbc451a07a95d3a92aa413b15629db7`
+- Created: `2025-12-04T18:58:45.228521251Z`
+- Virtual Size: ~ 175.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/bin/entrypoint.sh"]`
@@ -23,7 +23,7 @@
 - Labels:
   - `Description=Fluentd docker image`
   - `Vendor=Fluent Organization`
-  - `Version=1.19.0`
+  - `Version=1.19.1`
   - `maintainer=Fluentd developers <fluentd@googlegroups.com>`
 
 ## `dpkg` (`.deb`-based packages)
