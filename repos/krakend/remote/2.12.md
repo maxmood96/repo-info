@@ -127,7 +127,7 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 
 -	Layers:
 	-	`sha256:c2fe130f4aabc917e559e7eed7d37b0e21ba13b44520101696887ca892e8c63f`  
-		Last Modified: Wed, 08 Oct 2025 16:24:46 GMT  
+		Last Modified: Sun, 07 Dec 2025 17:54:48 GMT  
 		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:822bbe1c3e290c624e3f34ceadc9f4e203f65c91fc8a10d6e72af1a9c9ed5655`  
