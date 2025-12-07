@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:84c6d09923ea74f4f00bbb609f39ddecdfea4498eef1d19e15933d0fb231067c`
-- Created: `2025-12-02T00:43:04.089831666Z`
-- Virtual Size: ~ 516.83 Mb  
+- Image ID: `sha256:deab751a46d67748d4aae6da3666c72f008d6050b974ce7a421d81a9ab5213ca`
+- Created: `2025-12-04T19:48:36.270099194Z`
+- Virtual Size: ~ 516.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=10.11.15`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-12-01T08:45:48Z`
+  - `build-date=2025-12-03T20:36:05Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2025-12-01T08:45:48Z`
+  - `org.opencontainers.image.created=2025-12-03T20:36:05Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=aa778ff26f397863d5f50a6cf5f17a2343e5a626`
+  - `org.opencontainers.image.revision=1595c1bf15cd4327d529f330e61327764327397e`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=aa778ff26f397863d5f50a6cf5f17a2343e5a626`
+  - `vcs-ref=1595c1bf15cd4327d529f330e61327764327397e`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=10.11.15`
@@ -309,7 +309,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-https://mirror.fmt-2.serverforge.org/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-5.el9_7.1.x86_64`
@@ -491,7 +491,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-https://mirror.fmt-2.serverforge.org/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -581,7 +581,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-https://mirror.fmt-2.serverforge.org/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1164,7 +1164,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.6.2-1.el9
-https://mirror.fmt-2.serverforge.org/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.5-1.el9.x86_64`
@@ -2231,7 +2231,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-https://mirror.fmt-2.serverforge.org/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2242,7 +2242,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-https://mirror.fmt-2.serverforge.org/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -2366,29 +2366,49 @@ $ dnf --quiet download --source --url sqlite-libs-3.34.1-9.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-9.el9_7.src.rpm
 ```
 
-### `rpm` package: `systemd-252-55.el9_7.2.x86_64`
+### `rpm` package: `systemd-252-55.el9_7.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `systemd-libs-252-55.el9_7.2.x86_64`
+```console
+$ dnf --quiet download --source --url systemd-252-55.el9_7.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
+```
+
+### `rpm` package: `systemd-libs-252-55.el9_7.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `systemd-pam-252-55.el9_7.2.x86_64`
+```console
+$ dnf --quiet download --source --url systemd-libs-252-55.el9_7.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
+```
+
+### `rpm` package: `systemd-pam-252-55.el9_7.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `systemd-rpm-macros-252-55.el9_7.2.noarch`
+```console
+$ dnf --quiet download --source --url systemd-pam-252-55.el9_7.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
+```
+
+### `rpm` package: `systemd-rpm-macros-252-55.el9_7.7.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url systemd-rpm-macros-252-55.el9_7.7.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
+```
 
 ### `rpm` package: `tar-1.34-7.el9.x86_64`
 
