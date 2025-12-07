@@ -66,11 +66,11 @@ $ docker pull alt@sha256:bb3b9cf89c64a1e19ee1ef0be2fab76dd48dddfc4f20afe6a0dae7d
 
 -	Layers:
 	-	`sha256:3cde3df9f006a3fd1eefd7fc6f85e56ca276972de230b5b61b330dffd69d2b35`  
-		Last Modified: Wed, 08 Oct 2025 19:07:46 GMT  
+		Last Modified: Wed, 08 Oct 2025 17:48:32 GMT  
 		Size: 2.6 MB (2602569 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fb8505a978441d22f7e3629438d4a154af8b3bf1be2280558f7438eb60a1eac6`  
-		Last Modified: Wed, 08 Oct 2025 19:07:47 GMT  
+		Last Modified: Wed, 08 Oct 2025 17:48:31 GMT  
 		Size: 6.1 KB (6121 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -125,11 +125,11 @@ $ docker pull alt@sha256:c792cc11a2c79c4768072719b2a88b15341ebaa8a9d590d0b8d93f8
 
 -	Layers:
 	-	`sha256:3c03a5cd79ad6dbebc6f94f2a3e0a10cd78df05b95bea96f8a48a0ab2a1099a8`  
-		Last Modified: Wed, 08 Oct 2025 19:07:52 GMT  
+		Last Modified: Wed, 08 Oct 2025 17:49:36 GMT  
 		Size: 2.6 MB (2601986 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d895d69ba773b49da197487434aff12ceeefc0d0ad1108d14c7c5f756b0b6cda`  
-		Last Modified: Wed, 08 Oct 2025 19:07:53 GMT  
+		Last Modified: Wed, 08 Oct 2025 17:49:36 GMT  
 		Size: 6.2 KB (6170 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -184,11 +184,11 @@ $ docker pull alt@sha256:2843779fb1a234771f92b21b7ea352224e0eb696d78a0876d68dfd1
 
 -	Layers:
 	-	`sha256:12432b238525a2a810dc9b586a0afb6be5207d98e47f6a54d860027d96336cec`  
-		Last Modified: Wed, 08 Oct 2025 19:07:58 GMT  
+		Last Modified: Wed, 08 Oct 2025 17:49:20 GMT  
 		Size: 2.6 MB (2601295 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:72aba750bb6462186a3e3b98d155565710626a2fb79436f3b80fb0b794385f8d`  
-		Last Modified: Wed, 08 Oct 2025 19:07:58 GMT  
+		Last Modified: Wed, 08 Oct 2025 17:49:20 GMT  
 		Size: 6.1 KB (6103 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -243,10 +243,10 @@ $ docker pull alt@sha256:4c4586202d185c3dc1ef2c59b44f202186bcdf3bd142170f300d8ce
 
 -	Layers:
 	-	`sha256:f7bfdc636b2df6a9b21f5a841728c7fc38e2837b0373a0258f0194e84a8428ea`  
-		Last Modified: Wed, 08 Oct 2025 19:08:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 17:50:36 GMT  
 		Size: 2.6 MB (2601237 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1442934513b0dff1f98ab9a1e4883d3be0c1bae1934aa7307f92006ea710eb3c`  
-		Last Modified: Wed, 08 Oct 2025 19:08:04 GMT  
+		Last Modified: Wed, 08 Oct 2025 17:50:35 GMT  
 		Size: 6.1 KB (6145 bytes)  
 		MIME: application/vnd.in-toto+json
