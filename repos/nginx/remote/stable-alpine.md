@@ -683,11 +683,11 @@ $ docker pull nginx@sha256:9a4523dd7f392b4f378f6cd8cfff29678d2b3482775e80e650a99
 
 -	Layers:
 	-	`sha256:c3d495da683539b7f62f9d54d6daf4e08bf7cced062b5237aba53c0281934e66`  
-		Last Modified: Thu, 09 Oct 2025 05:27:05 GMT  
+		Last Modified: Mon, 08 Dec 2025 13:43:51 GMT  
 		Size: 872.8 KB (872763 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d5c28aecb619bd6bdd14df805bd46beb146248ded6be37c769781bc719b765af`  
-		Last Modified: Thu, 09 Oct 2025 05:27:04 GMT  
+		Last Modified: Mon, 08 Dec 2025 13:43:50 GMT  
 		Size: 20.0 KB (19958 bytes)  
 		MIME: application/vnd.in-toto+json
 
