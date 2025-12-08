@@ -509,11 +509,11 @@ $ docker pull ruby@sha256:b6a8f30f02d1027ac09ac0f6699cbddf3ed91e258eccdbd52824d6
 
 -	Layers:
 	-	`sha256:d1d9541a2753df2e9f4d9ca96fbde45acb21b34bf97c015cbd127064e16f71fb`  
-		Last Modified: Thu, 09 Oct 2025 05:57:31 GMT  
+		Last Modified: Thu, 09 Oct 2025 04:53:11 GMT  
 		Size: 203.2 KB (203152 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fd8e87aa4268a43878c2803d781b6a491baa9cc9180dc2df1cfa50b96ede5dca`  
-		Last Modified: Thu, 09 Oct 2025 05:57:32 GMT  
+		Last Modified: Thu, 09 Oct 2025 04:53:11 GMT  
 		Size: 23.8 KB (23766 bytes)  
 		MIME: application/vnd.in-toto+json
 
