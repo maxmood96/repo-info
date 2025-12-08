@@ -97,10 +97,10 @@ $ docker pull chronograf@sha256:dd3236bd7a2263357f0c7258a9a36c7fef283fd9f58f17f5
 
 -	Layers:
 	-	`sha256:d62aac69b78bc656cc8510a0566537353a4cda897cdaf124ca24ad68c0fa7fb1`  
-		Last Modified: Wed, 08 Oct 2025 23:01:21 GMT  
+		Last Modified: Mon, 08 Dec 2025 03:44:43 GMT  
 		Size: 250.4 KB (250383 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7c7ffc31e817e3fff1eade663dcae6dc3da5bb4370e43abaf921eebc9dd7f0a1`  
-		Last Modified: Wed, 08 Oct 2025 23:01:21 GMT  
+		Last Modified: Mon, 08 Dec 2025 03:44:44 GMT  
 		Size: 17.9 KB (17855 bytes)  
 		MIME: application/vnd.in-toto+json
