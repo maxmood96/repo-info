@@ -95,11 +95,11 @@ $ docker pull registry@sha256:77147b33d719a9eccc5f6133efe0656b742010f4577c75b56f
 
 -	Layers:
 	-	`sha256:10657e0300c340580aa7800e7c3d6e22742c27b677e9358424b2d9a106f8c940`  
-		Last Modified: Thu, 09 Oct 2025 00:38:28 GMT  
+		Last Modified: Mon, 08 Dec 2025 02:16:14 GMT  
 		Size: 266.8 KB (266799 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c0310b50aa33f311e7f66cf8f225abc74753537b28e61ac5cf1e58b078946730`  
-		Last Modified: Thu, 09 Oct 2025 00:38:29 GMT  
+		Last Modified: Mon, 08 Dec 2025 02:16:14 GMT  
 		Size: 14.3 KB (14328 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -145,19 +145,19 @@ CMD ["/etc/distribution/config.yml"]
 		Size: 3.4 MB (3365468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c1fac3b6fb881f5bf0808e3af457392498a1e2908723e1f77cc2dec18402c977`  
-		Last Modified: Wed, 08 Oct 2025 22:09:16 GMT  
+		Last Modified: Mon, 08 Dec 2025 01:08:29 GMT  
 		Size: 292.2 KB (292217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:30983a5075f40e69c067c88150f9907c58b78b412651da32fd27a944df793cb1`  
-		Last Modified: Wed, 08 Oct 2025 22:09:16 GMT  
+		Last Modified: Mon, 08 Dec 2025 01:08:33 GMT  
 		Size: 13.7 MB (13724209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5bec58464d89f5582e9c2ddd7ee1e7ce805d6a9e4ad80e9458ad51e3ffdf2487`  
-		Last Modified: Wed, 08 Oct 2025 22:09:16 GMT  
+		Last Modified: Mon, 08 Dec 2025 01:08:35 GMT  
 		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:defc6be48712c5bfb3b2b669698868e81aa24d727c613a047b00ae392491ed23`  
-		Last Modified: Wed, 08 Oct 2025 22:09:16 GMT  
+		Last Modified: Mon, 08 Dec 2025 01:08:37 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -177,7 +177,7 @@ $ docker pull registry@sha256:4a9e3fb284578845e847e92807806ea3374062978496f33d2b
 
 -	Layers:
 	-	`sha256:9b9143b9304facbbb92218af881171fb9859743be75803872aaaafc68a75df43`  
-		Last Modified: Thu, 09 Oct 2025 00:38:32 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:09:16 GMT  
 		Size: 14.2 KB (14206 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -223,19 +223,19 @@ CMD ["/etc/distribution/config.yml"]
 		Size: 3.1 MB (3098611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:213ecfb8fca6ea80bbfde8d04df079fca5ec6e400ba137df47f9fdcee37a00fe`  
-		Last Modified: Wed, 08 Oct 2025 22:09:55 GMT  
+		Last Modified: Mon, 08 Dec 2025 01:08:23 GMT  
 		Size: 291.1 KB (291147 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:768697343a764b270d41a2259f3fce1437536244485f699ccd1bfe9095b30f0e`  
-		Last Modified: Wed, 08 Oct 2025 22:09:55 GMT  
+		Last Modified: Mon, 08 Dec 2025 01:08:30 GMT  
 		Size: 13.7 MB (13705869 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd05cbff6dd26902ee3784309fcef98a0286978cb2aeac1714ee99f92867649e`  
-		Last Modified: Wed, 08 Oct 2025 22:09:54 GMT  
+		Last Modified: Mon, 08 Dec 2025 01:08:31 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fe0459b26578bb99543d783b6a16b8361941964e19bbb4411e718e552ca93905`  
-		Last Modified: Wed, 08 Oct 2025 22:09:55 GMT  
+		Last Modified: Mon, 08 Dec 2025 01:08:35 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -255,11 +255,11 @@ $ docker pull registry@sha256:6053d59d81c4683d12bac8180ec73cfe1d6cfd9c0942e5260b
 
 -	Layers:
 	-	`sha256:6036c9d944bdc3abb7747d4cc52def9003533d6be4dbe16b2408ba5e151f17b5`  
-		Last Modified: Thu, 09 Oct 2025 00:38:35 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:09:55 GMT  
 		Size: 266.1 KB (266071 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e386559db6676eb364bafd39197db7fde3f5cebb5e8818d7d9ce02041918ea53`  
-		Last Modified: Thu, 09 Oct 2025 00:38:37 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:09:54 GMT  
 		Size: 14.4 KB (14420 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -337,11 +337,11 @@ $ docker pull registry@sha256:8033950ec982a4bd61628b784a0d816e6fe9037ceeaff222de
 
 -	Layers:
 	-	`sha256:e2fd6d546989004dd44fa00db0794c5157d709568455b82e06f4910e9caadc29`  
-		Last Modified: Thu, 09 Oct 2025 00:38:40 GMT  
+		Last Modified: Mon, 08 Dec 2025 02:27:07 GMT  
 		Size: 266.9 KB (266855 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:05fb12080fe434850d6ae3f040ea5f27fcebc62ecdc3484e1fd1576761d7b694`  
-		Last Modified: Thu, 09 Oct 2025 00:38:41 GMT  
+		Last Modified: Mon, 08 Dec 2025 02:27:07 GMT  
 		Size: 14.4 KB (14447 bytes)  
 		MIME: application/vnd.in-toto+json
 
