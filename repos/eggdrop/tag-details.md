@@ -122,11 +122,11 @@ $ docker pull eggdrop@sha256:21a697b5f5205343b075417ea8e98c92e566d1fda45d0178664
 
 -	Layers:
 	-	`sha256:b4105a3991b83709b6ff815008720b2de1381ea4bbcfeb763fc04fd92dc98654`  
-		Last Modified: Thu, 09 Oct 2025 02:30:18 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 140.5 KB (140534 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:477d91ddf68ecff868f775002a21fa94ce61d806081397a0040485b0bf98b375`  
-		Last Modified: Thu, 09 Oct 2025 02:30:19 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 18.8 KB (18770 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -445,11 +445,11 @@ $ docker pull eggdrop@sha256:21a697b5f5205343b075417ea8e98c92e566d1fda45d0178664
 
 -	Layers:
 	-	`sha256:b4105a3991b83709b6ff815008720b2de1381ea4bbcfeb763fc04fd92dc98654`  
-		Last Modified: Thu, 09 Oct 2025 02:30:18 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 140.5 KB (140534 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:477d91ddf68ecff868f775002a21fa94ce61d806081397a0040485b0bf98b375`  
-		Last Modified: Thu, 09 Oct 2025 02:30:19 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 18.8 KB (18770 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -768,11 +768,11 @@ $ docker pull eggdrop@sha256:73ab6c6f3ea8fc747d3825990cbf84a7e12e5ffe450048c5565
 
 -	Layers:
 	-	`sha256:e02cd133a16215e13428360780aa1ac9c279e175a2aa58a916b85fc70b449962`  
-		Last Modified: Thu, 09 Oct 2025 02:30:27 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:31 GMT  
 		Size: 142.9 KB (142864 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1a2a3b9d133c21b8e26c0b63873024a2ff0bcbce1a24f8fbe251c09728b049a3`  
-		Last Modified: Thu, 09 Oct 2025 02:30:28 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:31 GMT  
 		Size: 17.7 KB (17703 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1099,11 +1099,11 @@ $ docker pull eggdrop@sha256:33e473d1913ee8341924f97ebd0a17972c569e2e9550f4f3c35
 
 -	Layers:
 	-	`sha256:de4082dfbcb694cf00e6f51b12123b36173ce73dfc084c73c27f9f9d5cc0bf95`  
-		Last Modified: Thu, 09 Oct 2025 02:30:33 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:36:12 GMT  
 		Size: 1.0 MB (1046379 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:28220d2e07e771ee3aa0a818c21e600c6f0eadb32341fba513b4bac359f50dca`  
-		Last Modified: Thu, 09 Oct 2025 02:30:34 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:36:12 GMT  
 		Size: 19.4 KB (19356 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1446,11 +1446,11 @@ $ docker pull eggdrop@sha256:33e473d1913ee8341924f97ebd0a17972c569e2e9550f4f3c35
 
 -	Layers:
 	-	`sha256:de4082dfbcb694cf00e6f51b12123b36173ce73dfc084c73c27f9f9d5cc0bf95`  
-		Last Modified: Thu, 09 Oct 2025 02:30:33 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:36:12 GMT  
 		Size: 1.0 MB (1046379 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:28220d2e07e771ee3aa0a818c21e600c6f0eadb32341fba513b4bac359f50dca`  
-		Last Modified: Thu, 09 Oct 2025 02:30:34 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:36:12 GMT  
 		Size: 19.4 KB (19356 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1789,11 +1789,11 @@ $ docker pull eggdrop@sha256:47b9241bb9fb07d108fb40250d9d2769565ff9689adafb4b20f
 
 -	Layers:
 	-	`sha256:224b785f040bb93842b93a92463e44d7e1112ce1f13f0e8a307c86cfe123efba`  
-		Last Modified: Thu, 09 Oct 2025 02:30:41 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:36:18 GMT  
 		Size: 142.9 KB (142860 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2f465f436afe10853072e913dce03de9af914f7ac0d8bd375ce1f9a64435081b`  
-		Last Modified: Thu, 09 Oct 2025 02:30:42 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:36:18 GMT  
 		Size: 17.1 KB (17090 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2120,11 +2120,11 @@ $ docker pull eggdrop@sha256:21a697b5f5205343b075417ea8e98c92e566d1fda45d0178664
 
 -	Layers:
 	-	`sha256:b4105a3991b83709b6ff815008720b2de1381ea4bbcfeb763fc04fd92dc98654`  
-		Last Modified: Thu, 09 Oct 2025 02:30:18 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 140.5 KB (140534 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:477d91ddf68ecff868f775002a21fa94ce61d806081397a0040485b0bf98b375`  
-		Last Modified: Thu, 09 Oct 2025 02:30:19 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 18.8 KB (18770 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2443,11 +2443,11 @@ $ docker pull eggdrop@sha256:21a697b5f5205343b075417ea8e98c92e566d1fda45d0178664
 
 -	Layers:
 	-	`sha256:b4105a3991b83709b6ff815008720b2de1381ea4bbcfeb763fc04fd92dc98654`  
-		Last Modified: Thu, 09 Oct 2025 02:30:18 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 140.5 KB (140534 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:477d91ddf68ecff868f775002a21fa94ce61d806081397a0040485b0bf98b375`  
-		Last Modified: Thu, 09 Oct 2025 02:30:19 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 18.8 KB (18770 bytes)  
 		MIME: application/vnd.in-toto+json
 

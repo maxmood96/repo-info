@@ -113,11 +113,11 @@ $ docker pull eggdrop@sha256:47b9241bb9fb07d108fb40250d9d2769565ff9689adafb4b20f
 
 -	Layers:
 	-	`sha256:224b785f040bb93842b93a92463e44d7e1112ce1f13f0e8a307c86cfe123efba`  
-		Last Modified: Thu, 09 Oct 2025 02:30:41 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:36:18 GMT  
 		Size: 142.9 KB (142860 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2f465f436afe10853072e913dce03de9af914f7ac0d8bd375ce1f9a64435081b`  
-		Last Modified: Thu, 09 Oct 2025 02:30:42 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:36:18 GMT  
 		Size: 17.1 KB (17090 bytes)  
 		MIME: application/vnd.in-toto+json
 
