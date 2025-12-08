@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:85eb735b51da772264e223e875b80da3c76dc1971aaec94de57afdd561a63bff`
-- Created: `2025-12-02T00:44:43.170936727Z`
-- Virtual Size: ~ 373.78 Mb  
+- Image ID: `sha256:e2c6839daa90bc2c4d294a9736d8975b35025d6e08b7d126b0a0c444e37d85c7`
+- Created: `2025-12-04T19:50:04.285727839Z`
+- Virtual Size: ~ 373.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-12-01T08:45:30Z`
+  - `build-date=2025-12-03T20:39:28Z`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9/ubi`
-  - `org.opencontainers.image.created=2025-12-01T08:45:30Z`
-  - `org.opencontainers.image.revision=bd89b0898f46c7b1903073e8d2392eeef49c1341`
-  - `release=1764578509`
+  - `org.opencontainers.image.created=2025-12-03T20:39:28Z`
+  - `org.opencontainers.image.revision=6ab6aed6d7cb84504700f3d038e41e8b4b3c3116`
+  - `release=1764794285`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=bd89b0898f46c7b1903073e8d2392eeef49c1341`
+  - `vcs-ref=6ab6aed6d7cb84504700f3d038e41e8b4b3c3116`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -1920,29 +1920,49 @@ $ dnf --quiet download --source --url subscription-manager-rhsm-certificates-202
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/subscription-manager-rhsm-certificates-20220623-1.el9.src.rpm
 ```
 
-### `rpm` package: `systemd-252-55.el9_7.2.x86_64`
+### `rpm` package: `systemd-252-55.el9_7.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `systemd-libs-252-55.el9_7.2.x86_64`
+```console
+$ dnf --quiet download --source --url systemd-252-55.el9_7.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
+```
+
+### `rpm` package: `systemd-libs-252-55.el9_7.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `systemd-pam-252-55.el9_7.2.x86_64`
+```console
+$ dnf --quiet download --source --url systemd-libs-252-55.el9_7.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
+```
+
+### `rpm` package: `systemd-pam-252-55.el9_7.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `systemd-rpm-macros-252-55.el9_7.2.noarch`
+```console
+$ dnf --quiet download --source --url systemd-pam-252-55.el9_7.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
+```
+
+### `rpm` package: `systemd-rpm-macros-252-55.el9_7.7.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url systemd-rpm-macros-252-55.el9_7.7.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
+```
 
 ### `rpm` package: `tar-1.34-7.el9.x86_64`
 
