@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7d501040138c541f1d615a2ccab9dae9dc17efc869b788b25a1d85c66b9cac2`
-- Created: `2025-10-08T23:35:26Z`
-- Virtual Size: ~ 417.37 Mb  
+- Image ID: `sha256:1043c945d99391d7442056773a21e006a548199e226a677426b7bab8ffd02830`
+- Created: `2025-12-04T20:10:54.59781245Z`
+- Virtual Size: ~ 417.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -559,16 +559,16 @@ LGPL-2.1-or-later
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.3-r0 description:
+imagemagick-7.1.2.8-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.3-r0 webpage:
+imagemagick-7.1.2.8-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.3-r0 installed size:
-3658 KiB
+imagemagick-7.1.2.8-r0 installed size:
+3662 KiB
 
-imagemagick-7.1.2.3-r0 license:
+imagemagick-7.1.2.8-r0 license:
 ImageMagick
 
 ```
@@ -576,16 +576,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.3-r0 description:
+imagemagick-jpeg-7.1.2.8-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.3-r0 webpage:
+imagemagick-jpeg-7.1.2.8-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.3-r0 installed size:
+imagemagick-jpeg-7.1.2.8-r0 installed size:
 54 KiB
 
-imagemagick-jpeg-7.1.2.3-r0 license:
+imagemagick-jpeg-7.1.2.8-r0 license:
 ImageMagick
 
 ```
@@ -593,16 +593,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.3-r0 description:
+imagemagick-libs-7.1.2.8-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.3-r0 webpage:
+imagemagick-libs-7.1.2.8-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.3-r0 installed size:
-4273 KiB
+imagemagick-libs-7.1.2.8-r0 installed size:
+4265 KiB
 
-imagemagick-libs-7.1.2.3-r0 license:
+imagemagick-libs-7.1.2.8-r0 license:
 ImageMagick
 
 ```
@@ -610,16 +610,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.3-r0 description:
+imagemagick-pdf-7.1.2.8-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.3-r0 webpage:
+imagemagick-pdf-7.1.2.8-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.3-r0 installed size:
+imagemagick-pdf-7.1.2.8-r0 installed size:
 121 KiB
 
-imagemagick-pdf-7.1.2.3-r0 license:
+imagemagick-pdf-7.1.2.8-r0 license:
 ImageMagick
 
 ```
@@ -627,16 +627,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.3-r0 description:
+imagemagick-tiff-7.1.2.8-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.3-r0 webpage:
+imagemagick-tiff-7.1.2.8-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.3-r0 installed size:
+imagemagick-tiff-7.1.2.8-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.2.3-r0 license:
+imagemagick-tiff-7.1.2.8-r0 license:
 ImageMagick
 
 ```
@@ -644,16 +644,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.3-r0 description:
+imagemagick-webp-7.1.2.8-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.3-r0 webpage:
+imagemagick-webp-7.1.2.8-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.3-r0 installed size:
+imagemagick-webp-7.1.2.8-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.3-r0 license:
+imagemagick-webp-7.1.2.8-r0 license:
 ImageMagick
 
 ```
@@ -1001,16 +1001,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.47-r0 description:
+libpng-1.6.51-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.47-r0 webpage:
+libpng-1.6.51-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.47-r0 installed size:
+libpng-1.6.51-r0 installed size:
 181 KiB
 
-libpng-1.6.47-r0 license:
+libpng-1.6.51-r0 license:
 Libpng
 
 ```
@@ -1018,16 +1018,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.6-r0 description:
+libpq-17.7-r0 description:
 PostgreSQL client library
 
-libpq-17.6-r0 webpage:
+libpq-17.7-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.6-r0 installed size:
+libpq-17.7-r0 installed size:
 322 KiB
 
-libpq-17.6-r0 license:
+libpq-17.7-r0 license:
 PostgreSQL
 
 ```
@@ -1545,16 +1545,16 @@ BSD-2-Clause
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-10.0_p1-r9 description:
+openssh-client-common-10.0_p1-r10 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-10.0_p1-r9 webpage:
+openssh-client-common-10.0_p1-r10 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-10.0_p1-r9 installed size:
+openssh-client-common-10.0_p1-r10 installed size:
 2504 KiB
 
-openssh-client-common-10.0_p1-r9 license:
+openssh-client-common-10.0_p1-r10 license:
 SSH-OpenSSH
 
 ```
@@ -1562,16 +1562,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-10.0_p1-r9 description:
+openssh-client-default-10.0_p1-r10 description:
 OpenBSD's SSH client
 
-openssh-client-default-10.0_p1-r9 webpage:
+openssh-client-default-10.0_p1-r10 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-10.0_p1-r9 installed size:
+openssh-client-default-10.0_p1-r10 installed size:
 830 KiB
 
-openssh-client-default-10.0_p1-r9 license:
+openssh-client-default-10.0_p1-r10 license:
 SSH-OpenSSH
 
 ```
@@ -1579,16 +1579,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-10.0_p1-r9 description:
+openssh-keygen-10.0_p1-r10 description:
 ssh helper program for generating keys
 
-openssh-keygen-10.0_p1-r9 webpage:
+openssh-keygen-10.0_p1-r10 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-10.0_p1-r9 installed size:
+openssh-keygen-10.0_p1-r10 installed size:
 470 KiB
 
-openssh-keygen-10.0_p1-r9 license:
+openssh-keygen-10.0_p1-r10 license:
 SSH-OpenSSH
 
 ```
@@ -1613,16 +1613,16 @@ BSD-3-Clause
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.43-r1 description:
+pcre2-10.46-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.43-r1 webpage:
+pcre2-10.46-r0 webpage:
 https://pcre.org/
 
-pcre2-10.43-r1 installed size:
-707 KiB
+pcre2-10.46-r0 installed size:
+767 KiB
 
-pcre2-10.43-r1 license:
+pcre2-10.46-r0 license:
 BSD-3-Clause
 
 ```
@@ -1868,16 +1868,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.11-r0 description:
+pyc-3.12.12-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.11-r0 webpage:
+pyc-3.12.12-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.11-r0 installed size:
+pyc-3.12.12-r0 installed size:
 0 B
 
-pyc-3.12.11-r0 license:
+pyc-3.12.12-r0 license:
 PSF-2.0
 
 ```
@@ -1885,16 +1885,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.11-r0 description:
+python3-3.12.12-r0 description:
 High-level scripting language
 
-python3-3.12.11-r0 webpage:
+python3-3.12.12-r0 webpage:
 https://www.python.org/
 
-python3-3.12.11-r0 installed size:
+python3-3.12.12-r0 installed size:
 22 MiB
 
-python3-3.12.11-r0 license:
+python3-3.12.12-r0 license:
 PSF-2.0
 
 ```
@@ -1902,16 +1902,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.11-r0 description:
+python3-pyc-3.12.12-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.11-r0 webpage:
+python3-pyc-3.12.12-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.11-r0 installed size:
+python3-pyc-3.12.12-r0 installed size:
 0 B
 
-python3-pyc-3.12.11-r0 license:
+python3-pyc-3.12.12-r0 license:
 PSF-2.0
 
 ```
@@ -1919,16 +1919,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.11-r0 description:
+python3-pycache-pyc0-3.12.12-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.11-r0 webpage:
+python3-pycache-pyc0-3.12.12-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.11-r0 installed size:
+python3-pycache-pyc0-3.12.12-r0 installed size:
 10 MiB
 
-python3-pycache-pyc0-3.12.11-r0 license:
+python3-pycache-pyc0-3.12.12-r0 license:
 PSF-2.0
 
 ```
