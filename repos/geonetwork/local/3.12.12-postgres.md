@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8746862acbb2a291e2ab82d7e2b33de5cb48a2f3600187530c23769a8442543f`
-- Created: `2025-11-14T02:22:17.915546416Z`
-- Virtual Size: ~ 678.28 Mb  
+- Image ID: `sha256:e63998ea7bb33884eb655448726874410092dc97fca356d658b790a15a592ff7`
+- Created: `2025-12-08T21:19:47.537709006Z`
+- Virtual Size: ~ 678.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.112`
-  - `TOMCAT_SHA512=fc55589f28bf6659928167461c741649b6005b64285dd81df05bb5ee40f4c6de59b8ee3af84ff756ae1513fc47f5f73070e29313b555e27f096f25881c69841d`
+  - `TOMCAT_VERSION=9.0.113`
+  - `TOMCAT_SHA512=1b8d9ba5c5e2ed2b4134a3fe6f206b3bb1184391e5c112ca7ea6a49ecadca63a7fc565c83caa610f0a8341988777870302a8162a84f0880af751531cdd4a2ee5`
   - `GN_FILE=geonetwork.war`
   - `DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`
   - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC`
@@ -1882,12 +1882,12 @@ $ apt-get source -qq --print-uris pinentry=1.2.1-3ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.2.1-3ubuntu5.debian.tar.xz' pinentry_1.2.1-3ubuntu5.debian.tar.xz 19244 SHA512:7d4a8fe8920f1d6ef656ab485e2625bc646c5726ba18f91eedb3f4c95241680f2169b80791355e34a707bbebdb0de9986e264f2d8f36848e48a8300fc8497481
 ```
 
-### `dpkg` source package: `postgresql-16=16.10-0ubuntu0.24.04.1`
+### `dpkg` source package: `postgresql-16=16.11-0ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `libpq5:amd64=16.10-0ubuntu0.24.04.1`
-- `postgresql-client-16=16.10-0ubuntu0.24.04.1`
+- `libpq5:amd64=16.11-0ubuntu0.24.04.1`
+- `postgresql-client-16=16.11-0ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-16/copyright`)
 
@@ -1904,9 +1904,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `double-metaphone`
 - `nagaysau-ishii`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-16=16.11-0ubuntu0.24.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.11-0ubuntu0.24.04.1.dsc' postgresql-16_16.11-0ubuntu0.24.04.1.dsc 4336 SHA512:e55fa28ebad270e8cf26313b1747eedba633d9f3338db906e870830ff97aa1d7e6ee3c467a7e98c06a059b6c531b9a6502e4d5760c2a5e820c4bfc45caaa2c9a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.11.orig.tar.gz' postgresql-16_16.11.orig.tar.gz 32913275 SHA512:f664fef64dc704f424ac7dfb9f72cf942260b28d7142ff85815f6b1d66e4c2b402e681fdff2b60ab2dfc362609910dfcfee894c8511483f5b0fa3f9a9cae66bd
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.11-0ubuntu0.24.04.1.debian.tar.xz' postgresql-16_16.11-0ubuntu0.24.04.1.debian.tar.xz 37224 SHA512:4836682bcd30238087cea4ad1cb3a9ef5709ceea18d76fb64d8159f96d367e33317dff2dadc17cc5638dff7de02098c87e97004edc9006b5ef1671856e714508
+```
 
 ### `dpkg` source package: `postgresql-common=257build1.1`
 
