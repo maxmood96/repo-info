@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb31d86fe840cf5d99ddbbc3cc86781ad6246a201930da986efd1a9640cf736e`
-- Created: `2025-11-24T18:11:04.309243586Z`
+- Image ID: `sha256:3dad8a87547ffc3e6a1f22af01646315dd5de963941632c3f0d491d5e7897cce`
+- Created: `2025-12-08T23:47:04.644449703Z`
 - Virtual Size: ~ 1.30 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=10`
-  - `TOMCAT_VERSION=10.1.49`
-  - `TOMCAT_SHA512=a46c8e37d4767b56a16dbdd8e81b80f25ad2edd5fba68b5099b9165cfffbe32bc923a601db8bb5cba50e8b1047a7906eb8c30ca176e1c0b8dfd85fbb9c54c6c2`
+  - `TOMCAT_VERSION=10.1.50`
+  - `TOMCAT_SHA512=c7702b0304257d80dc5bd615005fe037bd0c518e3fe77d22a58e5313fe53e6af6f4a2cf00790e3e9a669d1ae5470fb11177c9ef42f8c846d2b20dfac93e2d551`
   - `XWIKI_VERSION=17.10.0`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.0`
   - `XWIKI_DOWNLOAD_SHA256=7a1942782a74736ec4ebe654ede31a4454cff230bab6818a78db09452a2d1656`
@@ -484,11 +484,11 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.1.debian.tar.xz' coreutils_9.4-3ubuntu6.1.debian.tar.xz 41308 SHA512:abbd5d534ad307d8244f5ae6112ebe050306459ec5de4231e5dd1266361157b307c821e8c1e2bbd41f7cf6c7ab796a592fb8d2ef1cb516ae90e8050fb84c1502
 ```
 
-### `dpkg` source package: `cups=2.4.7-1.2ubuntu7.4`
+### `dpkg` source package: `cups=2.4.7-1.2ubuntu7.9`
 
 Binary Packages:
 
-- `libcups2t64:amd64=2.4.7-1.2ubuntu7.4`
+- `libcups2t64:amd64=2.4.7-1.2ubuntu7.9`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 
@@ -499,9 +499,14 @@ Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 - `FSFUL`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.4.7-1.2ubuntu7.9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.9.dsc' cups_2.4.7-1.2ubuntu7.9.dsc 3188 SHA512:49aadaf466874815257b71ca96c1233c1c40397d7962620727dce95b452a8340f9ec3c44bed6855847090123dcbe932e7ee4fa3a9f617a9e047c940e7d99872d
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7.orig.tar.gz' cups_2.4.7.orig.tar.gz 8134809 SHA512:914b574ff6d85de9f3471528b52d4a436c484c441f47651846e1bdfa00aec26774efd416ff466216d2bccf468f8a797b1e0d666b5c82abc87e77550ce8b00d39
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.9.debian.tar.xz' cups_2.4.7-1.2ubuntu7.9.debian.tar.xz 418144 SHA512:cbb3dbc2d630b20f6aef4deafa907b9737ee970df8724b7af2684574fcd01c62affd8df1c95857bc6c04577c8be9a67f692e8c6bcf3f2480df06cf205ce070e3
+```
 
 ### `dpkg` source package: `curl=8.5.0-2ubuntu10.6`
 
@@ -1002,11 +1007,11 @@ $ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.debian.tar.xz' gcc-14_14.2.0-4ubuntu2~24.04.debian.tar.xz 1950240 SHA512:2b1894ebcb104b85da3c614e0a6c2e24b1f6c1f548645996d2cb0d274301284f1f4db0809c8355997b05fe64b76a73ee1b9499c7b1c229547bad79fee1954d59
 ```
 
-### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.4`
+### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.5`
 
 Binary Packages:
 
-- `libglib2.0-0t64:amd64=2.80.0-6ubuntu3.4`
+- `libglib2.0-0t64:amd64=2.80.0-6ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 
@@ -1039,11 +1044,11 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.4
-'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.4.dsc' glib2.0_2.80.0-6ubuntu3.4.dsc 4508 SHA512:a3c543aa79c11ed9653c715326890da9cee05154bc00e029d262bb7710391a8e10c4829187e7d0d5b0204473e1a6b5654f3f8331e029b8ce3fb651f6773feb28
-'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
-'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
-'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.4.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.4.debian.tar.xz 152380 SHA512:d7b6f2d78aa5a0995eb252bd8dd6c796e7c821f4651432eeca6d8d11cf5c0ed5bd663643f88cc1d2468ee3455b8d692f160ed3f47456851b88f7ec18e5b4c12a
+$ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.5.dsc' glib2.0_2.80.0-6ubuntu3.5.dsc 4542 SHA512:8f412ccd8621ae388f3a0afac5df3d4dd2fed4cb0d6e6ca995fed4160e461e385c4bb2dbeb642bb81dac41c7a152b792a4010a9098dbe5ae01677e57f8be081b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.5.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.5.debian.tar.xz 153600 SHA512:4525809fdca86b91316e814a048ae51754c783a36e026feb25b556e5eb1da051d0ed759d3e2ec797492a34855e2dbc6382769d0616fee5eada1744a020af21f4
 ```
 
 ### `dpkg` source package: `glibc=2.39-0ubuntu8.6`
@@ -3590,15 +3595,15 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.1.tar.gz' python3-defaults_3.12.3-0ubuntu2.1.tar.gz 147765 SHA512:9a729a8df22e37d473d39b8c9c95b8c5a7ad8dfd244b3c87576d389f48543edeeaa0bd8b0557de3224d0dbd0f06e02b573cb18adf685a54c02bb485a21ec36e5
 ```
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.8`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.9`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.8`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.8`
-- `libpython3.12t64:amd64=3.12.3-1ubuntu0.8`
-- `python3.12=3.12.3-1ubuntu0.8`
-- `python3.12-minimal=3.12.3-1ubuntu0.8`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.9`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.9`
+- `libpython3.12t64:amd64=3.12.3-1ubuntu0.9`
+- `python3.12=3.12.3-1ubuntu0.9`
+- `python3.12-minimal=3.12.3-1ubuntu0.9`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/libpython3.12t64/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -3620,9 +3625,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.9.dsc' python3.12_3.12.3-1ubuntu0.9.dsc 3875 SHA512:e905a92b05ea368d2193c6b0cbb810c494672be792b22a0529d4cacdc9915138eb78b8224223405e7f02e5bb9a1679c59622b97ee271e85dded8710e01e8e4f5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.9.debian.tar.xz' python3.12_3.12.3-1ubuntu0.9.debian.tar.xz 261844 SHA512:8b39c8f21474346c8b23c4823e39851c924de715c713587729d8dc921a0f094eb00510acbf4ab87e585dabd63fc0536c86f356192c200c575bba754b9b0025c7
+```
 
 ### `dpkg` source package: `raptor2=2.0.16-3ubuntu0.1`
 
