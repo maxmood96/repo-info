@@ -1,7 +1,7 @@
 ## `debian:stable`
 
 ```console
-$ docker pull debian@sha256:b27066a2afe74efc09879d16799f2622ffd17396658f14318a035e0864bf4499
+$ docker pull debian@sha256:40664777954edaded1533dc3d5aa5737d0614f85e24864ef0c6de1da4dea7b09
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -284,85 +284,85 @@ $ docker pull debian@sha256:5502a89fe38bec786bc6f3f48610c564b8d3d331a19df83425bc
 ### `debian:stable` - linux; riscv64
 
 ```console
-$ docker pull debian@sha256:5b4d1eedc120c90b937bf3fb2e9e6982aa17b400c621fd145bbd55cca4c56cf2
+$ docker pull debian@sha256:812d6b74639bc763344ad37e4ee07342dfd73595525022bd2aa30c0a5b197858
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.8 MB (47771196 bytes)**  
+-	Total Size: **47.8 MB (47771130 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9101b5e1831d7a0645241fe4baad1a1bdb720d736b025818aade53897034aef6`
+-	Image ID: `sha256:e85ea6652006c9eb2e3cdcbd3869c903737d130be445d22c0d3f5e5a0bf10bcb`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'stable' '@1763337600'
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'stable' '@1765152000'
 ```
 
 -	Layers:
-	-	`sha256:0097f4f57d7b72ff21aa1d700ec81c45dc5b93e4075b869b7b9e06d2ed964815`  
-		Last Modified: Tue, 18 Nov 2025 01:38:25 GMT  
-		Size: 47.8 MB (47771196 bytes)  
+	-	`sha256:01575f6a3c8973acf23b4444c5e1dd7233e768d8c896319a1cc8de4ad5c140c3`  
+		Last Modified: Tue, 09 Dec 2025 01:57:39 GMT  
+		Size: 47.8 MB (47771130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:stable` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:076f46458d354f6707fb9828803cbc8021575770c10c157117678515e8c7fa0e
+$ docker pull debian@sha256:918d2379fd97bd350aa1edd5447e10b435ebb2627719cef1905b16d74fba32de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.2 MB (3161793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa759303f2f99b5cf5201552d2dfa46caa261656d85f02ac8d5510594f9db051`
+-	Image ID: `sha256:7f3bd644b532f563585adf045359325cd252b6f4870065bd8dc5ce18757053ce`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:929b66418a6fda4718988e9d95d7c45c14542bfe882c586e699783dcdd30081d`  
-		Last Modified: Tue, 18 Nov 2025 04:31:02 GMT  
+	-	`sha256:61350193f5370a7e2751a0954d55b69288f2b538631c121740448f9a1ea03d6b`  
+		Last Modified: Tue, 09 Dec 2025 04:25:32 GMT  
 		Size: 3.2 MB (3161793 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:stable` - linux; s390x
 
 ```console
-$ docker pull debian@sha256:32ece9101bddead2baa063f29895f6c0c05046278b8568964b0ab023f0253f79
+$ docker pull debian@sha256:c7d127853810fd6312101a1b9f647cb58414f828438caf362bcd63b473259758
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.3 MB (49346016 bytes)**  
+-	Total Size: **49.3 MB (49345908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a28f80064e3b7dfd2599a248b235b8580a813958cb9e8c4280f1b78b0c7261b0`
+-	Image ID: `sha256:cc0dae45a254959989c8c01f0015db01b151f03090904ab16036afeea2df2d55`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'stable' '@1763337600'
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'stable' '@1765152000'
 ```
 
 -	Layers:
-	-	`sha256:3a0c301a30ae17916447993faa87319010c0e6222a5c30eac3f5c06f5ec59507`  
-		Last Modified: Tue, 18 Nov 2025 01:11:57 GMT  
-		Size: 49.3 MB (49346016 bytes)  
+	-	`sha256:c4813338a39c534cca1d15f71e852c63041903f24894135177cfcf393272a834`  
+		Last Modified: Tue, 09 Dec 2025 02:55:04 GMT  
+		Size: 49.3 MB (49345908 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:stable` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:36ae19726596c2c8aef73f8f5ab50b1e25f39cdc8f4947c70593b69d227d23bd
+$ docker pull debian@sha256:fd63fb5b423f701e8040f1b9aab310e4ccaca1ae20678cde5f3db082defca123
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.2 MB (3170927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f559782d1928cf1c0cf9514a10c9c861dc865c1dc681659fd408069b50bea784`
+-	Image ID: `sha256:b5f2f2a7c848170a2b94b198f467ca0479c146628a2cbaaddf7ddd5e66cbbd05`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b76aa068cfd4e006b41275caf3847a62116b2f888426032773ca393725f632f3`  
-		Last Modified: Tue, 18 Nov 2025 04:31:06 GMT  
+	-	`sha256:38f7e8bb3f168607cbd8c8d24fbefd529cbce08301f784572af4b27ed0ce5e99`  
+		Last Modified: Tue, 09 Dec 2025 04:25:35 GMT  
 		Size: 3.2 MB (3170927 bytes)  
 		MIME: application/vnd.in-toto+json
