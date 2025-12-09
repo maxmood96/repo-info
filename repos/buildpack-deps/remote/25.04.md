@@ -86,11 +86,11 @@ $ docker pull buildpack-deps@sha256:a5918b14115c0808e610337c9146f3870368127cb3b7
 
 -	Layers:
 	-	`sha256:997dae07431c0781d6c8d818b805fc582337ccec88cb12d3888e00f1004c95fa`  
-		Last Modified: Fri, 10 Oct 2025 04:19:40 GMT  
+		Last Modified: Thu, 09 Oct 2025 22:15:06 GMT  
 		Size: 12.0 MB (11965591 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d5fb6b17e04f97e8258d3f923b8a57bb3ff3d94c3c87c33ec51dc5fdba833003`  
-		Last Modified: Fri, 10 Oct 2025 04:19:41 GMT  
+		Last Modified: Thu, 09 Oct 2025 22:15:05 GMT  
 		Size: 10.2 KB (10189 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -236,11 +236,11 @@ $ docker pull buildpack-deps@sha256:25138521aba8cdeca3166a25010da97e9b3b8426aacb
 
 -	Layers:
 	-	`sha256:0570e0991ae32e09424b6592187bb558c961573b23db99e9da4c72740170521f`  
-		Last Modified: Fri, 10 Oct 2025 04:19:59 GMT  
+		Last Modified: Thu, 09 Oct 2025 22:14:58 GMT  
 		Size: 12.0 MB (12028847 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c807b660f8162d8153cab31ff5a0416ed3e4dd236e4bfb9c8287259af71ab783`  
-		Last Modified: Fri, 10 Oct 2025 04:20:00 GMT  
+		Last Modified: Thu, 09 Oct 2025 22:14:57 GMT  
 		Size: 10.3 KB (10268 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -461,10 +461,10 @@ $ docker pull buildpack-deps@sha256:0dba9155bb93eb59816765a64deac23e9efcb6d2a897
 
 -	Layers:
 	-	`sha256:ce3348757f86ecfae93c6b16cb73785f1ce9499fade1bc46c4ff8070832ec8dc`  
-		Last Modified: Fri, 10 Oct 2025 04:20:26 GMT  
+		Last Modified: Fri, 10 Oct 2025 01:59:35 GMT  
 		Size: 11.8 MB (11751629 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:98122349ca57d8b252ec8926e572fc614b5a92d93714521306544f8c565c07d3`  
-		Last Modified: Fri, 10 Oct 2025 04:20:27 GMT  
+		Last Modified: Fri, 10 Oct 2025 01:59:34 GMT  
 		Size: 10.2 KB (10189 bytes)  
 		MIME: application/vnd.in-toto+json
