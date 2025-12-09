@@ -13,7 +13,7 @@
 ## `fluentd:latest`
 
 ```console
-$ docker pull fluentd@sha256:00aeea8046975151285dee7de06f37fbca859a48dd9afa6b948ae7f13ba28e59
+$ docker pull fluentd@sha256:056ebdc491061079ab78aaf7ed35662018e449492c46a7d9fd05feac730c2f91
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -36,640 +36,640 @@ $ docker pull fluentd@sha256:00aeea8046975151285dee7de06f37fbca859a48dd9afa6b948
 ### `fluentd:latest` - linux; amd64
 
 ```console
-$ docker pull fluentd@sha256:6240494942204615ec7b6afc505afe5251fd9447b9f97aa1d15147b3c101433f
+$ docker pull fluentd@sha256:f1854e28f36cad811359493ee9c1e323788a38cf41f24856b433ff4253584273
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.2 MB (79219006 bytes)**  
+-	Total Size: **79.2 MB (79218641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd66d9d1a7d5268d13f4c183c9e2f0baffbc451a07a95d3a92aa413b15629db7`
+-	Image ID: `sha256:36c66715a9b546bdbe3cdecada630daf6a7fcbee47df1b8fcc2bd926586c792d`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 06:00:57 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:41:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 06:00:57 GMT
+# Mon, 08 Dec 2025 23:41:26 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:0e4bc2bd6656e6e004e3c749af70e5650bac2258243eb0949dea51cb8b7863db`  
-		Last Modified: Tue, 18 Nov 2025 02:35:01 GMT  
-		Size: 29.8 MB (29776484 bytes)  
+	-	`sha256:1733a4cd59540b3470ff7a90963bcdea5b543279dd6bdaf022d7883fdad221e5`  
+		Last Modified: Mon, 08 Dec 2025 22:17:58 GMT  
+		Size: 29.8 MB (29776496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecb0562513a544d09b243cd53af17176ae058cdb46bab21dc80e6e0e176085ac`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
-		Size: 1.3 MB (1279393 bytes)  
+	-	`sha256:43ae949789af527dd9c4bd7de681ac14f1a5fe2debe4a7a04ba3c8d0d8f5c3fb`  
+		Last Modified: Mon, 08 Dec 2025 23:44:04 GMT  
+		Size: 1.3 MB (1279388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2995c07ae76a079f87ad5194b6ae8ae189e2697989ee2ec3ff402c4bbdbaef98`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
-		Size: 190.0 B  
+	-	`sha256:94d82444e1da05ff4a53a213c6cd8ec9dc3fdf2715745f99678454cb58f004f7`  
+		Last Modified: Mon, 08 Dec 2025 23:43:52 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22a8b74c7e9beb752e09eab60f51bfed7d4156be9c8a4cb31e65c1c593e477ad`  
-		Last Modified: Tue, 18 Nov 2025 06:03:40 GMT  
-		Size: 42.2 MB (42158682 bytes)  
+	-	`sha256:102557edb4d1304b6930747c07bd40abb5f97283ca8dce01c2fcad694b84c1d0`  
+		Last Modified: Mon, 08 Dec 2025 23:44:08 GMT  
+		Size: 42.2 MB (42158459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50951878876ddf823dfebd9e0c1677361d53bec1ff62831466fd280b78c485e7`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
+	-	`sha256:b7a7a64f30f673db60828d7e540f6a9cd1e1683c146df8a193ef3781e4784660`  
+		Last Modified: Mon, 08 Dec 2025 23:44:04 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72585dd7596a87134366b4811336b292df351eb34419901e60defb1c412033a5`  
-		Last Modified: Thu, 04 Dec 2025 18:59:08 GMT  
-		Size: 6.0 MB (6002049 bytes)  
+	-	`sha256:49bf4c70db087c33e5acc082c9bc5982fc3a684f9a8a6ee949c7e7929e252fed`  
+		Last Modified: Tue, 09 Dec 2025 00:59:42 GMT  
+		Size: 6.0 MB (6001910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23d21ae1bbd8cf7a5c81316fadc4c1d605148b8f29723da71bf2c957621f4b22`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:7c96e69020f7ae05041307e1c9091e6dc01afe1ec5878d7c9c14a4539d4ffd7c`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8fa2be93123d4ff3aaff45b160afa29dd535164e2fd743708e5c83ee822cf0`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 403.0 B  
+	-	`sha256:7051ea010ff321ea91e14ce49e8613b4a3222cfca6262411c3c89e4c16cb71a1`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ccca90a00656c889b24dad43ee644103f1f035b2f65ce35b0f34d35451734c`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 479.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `fluentd:latest` - unknown; unknown
-
-```console
-$ docker pull fluentd@sha256:84fb8d8f71409aa4324f6d008d4a031861d8ec48f2cdd687031c4d9f1d0c01d0
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2301984 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e85d48d5d59e2d36d878a10af83b710812f3818fc348bf1863aca8c57d246639`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:d37abc9e254151598cd02552918a94209b0571d5807e8e2354767fee2d26f799`  
-		Last Modified: Thu, 04 Dec 2025 21:28:40 GMT  
-		Size: 2.3 MB (2280658 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:8e35172fe75a5483bc13670bb98f415318c4559e767f1a20689dff3cf3360c73`  
-		Last Modified: Thu, 04 Dec 2025 21:28:41 GMT  
-		Size: 21.3 KB (21326 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `fluentd:latest` - linux; arm variant v5
-
-```console
-$ docker pull fluentd@sha256:aaebbb2d9630e58872361a78ea08ff2f9fd24ccb3c1144b05466e656087c1382
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.1 MB (73104845 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:20088dbd13800e95c34338237e95cdad749f7d4f04f80ddf0604a06ed4eaf907`
--	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
--	Default Command: `["fluentd"]`
-
-```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:18:53 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:18:53 GMT
-RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 04:21:56 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:21:56 GMT
-RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:20 GMT
-LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:20 GMT
-LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:20 GMT
-RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:20 GMT
-EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:20 GMT
-USER fluent
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:20 GMT
-CMD ["fluentd"]
-```
-
--	Layers:
-	-	`sha256:a1c0783a82710a65871102568a0ace23c3dd0f89dba1af72c3290089eac458f2`  
-		Last Modified: Tue, 18 Nov 2025 01:14:09 GMT  
-		Size: 27.9 MB (27944147 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a8bddf98d29f007597c2419ece53918ed2a02b6807f244eba291b11a115ce2f`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 1.3 MB (1263024 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ce6e0d17644462250ed0239ef347ef83d3d46d91cc236e61f5d1ee58840ebe6`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 189.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70dba72f3360e3a96295c7cea72647313a78f2723776a3e529d977bc6fb38431`  
-		Last Modified: Tue, 18 Nov 2025 04:22:15 GMT  
-		Size: 38.0 MB (37994184 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0930b6e7a3909c3d28136a1cc19c3a553fbbb2a2d33988cd25bd43effa0a140`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 143.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6be6bc7b989da34f73dc506d83cb9f48c37ee8105fe87bd7f52bca4542d7cee2`  
-		Last Modified: Thu, 04 Dec 2025 19:00:42 GMT  
-		Size: 5.9 MB (5901093 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80c6f3399ef20bf6be1ed6a2ca72c0a24e3ad0d84b16a9ef8a0709e1c7659f8f`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 1.2 KB (1183 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b70663e3166cf0a7abf84c4ed0eafa32f04846e2058e90a97ac3e06d24369d32`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 403.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a56bfbe0d3c92ea6b9ebb1c97197ffb757b2487720ce3d2ab6a5a0538ad7bf5b`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 479.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `fluentd:latest` - unknown; unknown
-
-```console
-$ docker pull fluentd@sha256:248114ee7add057b9522b312fa3eef5e127b5ce66321a1c70af7ebcf0361e2e6
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305056 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb431f17e2b58f86b090040b8d1cbac7f7a09a0eb6151fd7d76271ab122db28d`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:1253a50e411a8bc80c1968d6d9653822decb6287cafc575af11b24f9ca7d9304`  
-		Last Modified: Thu, 04 Dec 2025 21:28:45 GMT  
-		Size: 2.3 MB (2283629 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:f6d735f6d01c1fac1cdb270eb1066ee221e9e96a36d6d1970722e33bce8fd801`  
-		Last Modified: Thu, 04 Dec 2025 21:28:46 GMT  
-		Size: 21.4 KB (21427 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `fluentd:latest` - linux; arm variant v7
-
-```console
-$ docker pull fluentd@sha256:19368b5ced494adadbccad66e2b3d118db4c880ed6a2159f28dc54906d309884
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.0 MB (70983027 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b4b6c0c43b2bade13a1281582e1f172afddcb1d640eabe2965dbe6d7f4cc2d4`
--	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
--	Default Command: `["fluentd"]`
-
-```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:59:14 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:59:14 GMT
-RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 05:01:55 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:01:55 GMT
-RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:07 GMT
-LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:07 GMT
-LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:07 GMT
-RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:07 GMT
-RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:08 GMT
-EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:08 GMT
-USER fluent
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:08 GMT
-CMD ["fluentd"]
-```
-
--	Layers:
-	-	`sha256:8202667160e65087c34b2510837039e29b29936f1b75fc737a33219ae9c06ec0`  
-		Last Modified: Tue, 18 Nov 2025 01:14:24 GMT  
-		Size: 26.2 MB (26209960 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b64d8370801a134071a40fe32d3d2fa7e0e17d18b25e5289e7237638fa8e7778`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 1.2 MB (1236519 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:926b3223558fcb7b7da07de149d35cb77b0270a5ab9574f7885d63190a335526`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 190.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0053f0fd615ae9d3957c571c9b6d06b6a892f68a64ba86fcf53aa1540117bbac`  
-		Last Modified: Tue, 18 Nov 2025 05:02:15 GMT  
-		Size: 37.9 MB (37865819 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f081e8cb5f13e31c833ade5ef8bd8bc86005b1083ad01fb5c19150cfe1b852`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 143.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b0deaf0ae9760f48e1ab076a5e92832ce7edb015a71b9617c411340ed2fabe3`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 5.7 MB (5668328 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a918df6a39f29e19adc2cfe7099cb1847628765d58e9f51891b9f7137ee0b33f`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
-		Size: 1.2 KB (1183 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e71a32294b22c81555f0bda1421dd249067a446ecc482b86b1956785045a4ff`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
-		Size: 407.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4645e19fd544b5af4ead15a19a0f7cb149338c69fe9e9cbb6765a8231b1afb9`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
+	-	`sha256:982640467ff0abcdc2d1b5a216d9700c3c835aeb1d919073746737b8969f7c8b`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
 		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:latest` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:b33da86ad731f86d80dc973681026b8a368e7c5c123c8c652c25b2b67c383343
+$ docker pull fluentd@sha256:a29a7ffb611c3adc50b9ea2dd348490ac889db53e7e26caba932c0d48453b058
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303497 bytes)**  
+-	Total Size: **2.3 MB (2301984 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc49d110e1779f25424b64b75f867f39c651900ae1b12fc1badd05db7f4a56ee`
+-	Image ID: `sha256:48f8104217d65fb0113c9bf35d715716126f09cfbc1295f4c719f64078a054c9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:edc79561200a3cdc3d20f9abf1bf47a6fd9495dc898880e298c463f493da599c`  
-		Last Modified: Thu, 04 Dec 2025 21:28:51 GMT  
+	-	`sha256:bebbcc5ba4deb0e3dbda1204c816cc666c33321345bdcf92a17412c208ca5854`  
+		Last Modified: Tue, 09 Dec 2025 03:29:19 GMT  
+		Size: 2.3 MB (2280658 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2070db97328c3a78a1e59b1f7c3cec0a9da19f2d3e7fa1fc92c46ea6e49650e2`  
+		Last Modified: Tue, 09 Dec 2025 03:29:20 GMT  
+		Size: 21.3 KB (21326 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `fluentd:latest` - linux; arm variant v5
+
+```console
+$ docker pull fluentd@sha256:f124ea40754ba08bbac0e5843e8f9023994bf2b8238ee72e8ec2d238b9b6a5b5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **73.1 MB (73104752 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cc2f4a67d52435e88678f7a653d15a7beabb5c883fa2f08bb3ac57b9aed29bb8`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 00:36:11 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
+# Tue, 09 Dec 2025 00:36:11 GMT
+RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV LANG=C.UTF-8
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_VERSION=3.4.7
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
+# Tue, 09 Dec 2025 00:39:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 09 Dec 2025 00:39:15 GMT
+RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+CMD ["irb"]
+# Tue, 09 Dec 2025 01:57:11 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Tue, 09 Dec 2025 01:57:11 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
+# Tue, 09 Dec 2025 01:57:11 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+COPY fluent.conf /fluentd/etc/ # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+COPY entrypoint.sh /bin/ # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Tue, 09 Dec 2025 01:57:11 GMT
+EXPOSE map[24224/tcp:{} 5140/tcp:{}]
+# Tue, 09 Dec 2025 01:57:11 GMT
+USER fluent
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Tue, 09 Dec 2025 01:57:11 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:d97bc71d0fa535127863fdab265dfddb07b3cda35b80de4dd2b9b67fe154c856`  
+		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
+		Size: 27.9 MB (27944187 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:60b6a68a4c64d1607140d9e7ef52b820f028d1745795db4373db1d67f60365f1`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 1.3 MB (1263005 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6fc48f102063d847095ed56df1cf3e6cfa63ed0ceb24fe7f8335198230e2ccdc`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0e5241e4c81242518e434f00d9f79a59f18fc609e23a17fc7967f5f3bd026daf`  
+		Last Modified: Tue, 09 Dec 2025 00:39:35 GMT  
+		Size: 38.0 MB (37994161 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:87f7b942b9f3410c6c1da7dc6e29bbc3b9606a378eef9f16f0fff45c912da461`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 143.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1bdcf5b9bbb7e43d0bbc8bf7fdb8750ccd78deb95d6221e87a15ec98a4eae6dc`  
+		Last Modified: Tue, 09 Dec 2025 01:57:27 GMT  
+		Size: 5.9 MB (5901010 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aa13ae067c168ac5fe27c95e549cc4238ec2133319bc03114df7a7aa8a9ecba6`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 1.2 KB (1178 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b806a6d8ca493494d796544b972cae88221361e2f48ed5ea72d5bcee6752152d`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 403.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c86fd63a29b98af5e626ce3a2ba323a6e6b866adbc779bceff239eb53f827ad9`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 476.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `fluentd:latest` - unknown; unknown
+
+```console
+$ docker pull fluentd@sha256:8ac93648d48a1a6c1b4b7160d2abd004cee13b8a907093d4ff1c16f268c39c6f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2305056 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a9edf65a7eb020bcff5df6e29b1ff7633094bc897d3a482abfb059ed3308aad5`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:a8f8885c07c68215d8e1178f95df1911fe84d553ed134051c468235e57295d34`  
+		Last Modified: Tue, 09 Dec 2025 03:29:24 GMT  
+		Size: 2.3 MB (2283629 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:326295480ebdff77047de45607a002b0b1206eaecd36eca8cf494b5df0b6a3af`  
+		Last Modified: Tue, 09 Dec 2025 03:29:25 GMT  
+		Size: 21.4 KB (21427 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `fluentd:latest` - linux; arm variant v7
+
+```console
+$ docker pull fluentd@sha256:80ed25e467765ea9179c1336cd154facbbc97b76ff1d4599a24a28a6c4820cda
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.0 MB (70983028 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8d5ef7e2cf73a40aa19447b8435c604f51e51d329862092213c7116177e0b18e`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 01:10:33 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
+# Tue, 09 Dec 2025 01:10:33 GMT
+RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV LANG=C.UTF-8
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_VERSION=3.4.7
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
+# Tue, 09 Dec 2025 01:13:21 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 09 Dec 2025 01:13:22 GMT
+RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
+# Tue, 09 Dec 2025 01:13:22 GMT
+CMD ["irb"]
+# Tue, 09 Dec 2025 02:25:30 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Tue, 09 Dec 2025 02:25:30 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
+# Tue, 09 Dec 2025 02:25:30 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+COPY fluent.conf /fluentd/etc/ # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+COPY entrypoint.sh /bin/ # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Tue, 09 Dec 2025 02:25:30 GMT
+EXPOSE map[24224/tcp:{} 5140/tcp:{}]
+# Tue, 09 Dec 2025 02:25:30 GMT
+USER fluent
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Tue, 09 Dec 2025 02:25:30 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:cfc411ffeb71f696e2a89e33e91be9b70084d6c3383474344babe3a4a21eb843`  
+		Last Modified: Mon, 08 Dec 2025 22:16:57 GMT  
+		Size: 26.2 MB (26210013 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b1e7a6dfdb7e0c4de081184afd9356a839f7025591f607c4aaebd07a86bfa633`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 1.2 MB (1236504 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:783d9710c1c77c87df8e2c7764d0abdfa7c0e08a47c4358cbcd1e8856dbb9301`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6727d5012816a8b4a36517d36f5c95dba1143f1fdc7eba217d31f5e7932ae058`  
+		Last Modified: Tue, 09 Dec 2025 01:13:41 GMT  
+		Size: 37.9 MB (37865781 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:52980762c6939f2c87a86ec276e3dd2020f2bb8cdda2a49d4dbd67eb698da3eb`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 143.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:da2811bbd5bbeea2292afee9c7e5020d6c9fa7931713a9f215c32ee1d2525d9e`  
+		Last Modified: Tue, 09 Dec 2025 02:25:47 GMT  
+		Size: 5.7 MB (5668338 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2e0d6282c7790097c8a2ed51f778f05973188b6cc525eb38ecbbfc500a88dee5`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 1.2 KB (1178 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:164fab4a951f344ebdf00612539a04256320c234576b296f68e46dea61edbba3`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 404.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9e0ece9218deaf151a88e6afb1c4e0352361105366d9b297640b43e906b9e759`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 478.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `fluentd:latest` - unknown; unknown
+
+```console
+$ docker pull fluentd@sha256:86905e76b1c132c3d0a1e5f3a4c53983f061920d595ee8c958319713624e7ab3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2303497 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:65121fab5cf409c60e1779720becd0a55afe203d6a2f9cba148cc639cee6ac3b`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:dd15196e04866dfb229371c1e0a60dd71c0e82af31dbb0c8efc2710f9d7e1030`  
+		Last Modified: Tue, 09 Dec 2025 03:29:29 GMT  
 		Size: 2.3 MB (2282070 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3e1c082bb1301e59ae044904c59fece993b0c269294fb4ebb29e5eba628915f1`  
-		Last Modified: Thu, 04 Dec 2025 21:28:53 GMT  
+	-	`sha256:e6395c6daa3e8158759a8c8b6a3e3abe898b1b141e63c1954a898dec47239ccf`  
+		Last Modified: Tue, 09 Dec 2025 03:29:30 GMT  
 		Size: 21.4 KB (21427 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull fluentd@sha256:dad79d06105b9950b09ae6c76013f79685999c3df9cf739b0ab0d1e99ab90cdb
+$ docker pull fluentd@sha256:718ca0bb84f06f7fdc37bd49d53b1940e8e499878cf52cf1b1dc9361c8cce42f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.5 MB (79536779 bytes)**  
+-	Total Size: **79.5 MB (79536732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4b2d5d26e7dec9ed23e9d93d0f2e1be085b1eaab727fc6711b593b09c4c4723a`
+-	Image ID: `sha256:009c7ecf6da6c474bbe209d4e31585761254051960b0e554b454848101a4eaf7`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:45:57 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:50:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:45:58 GMT
+# Mon, 08 Dec 2025 23:50:45 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:48:39 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:48:39 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:b89cf3ec7a3ed3a58015edd6724125187f0d284147e09b5739b511c74222b2a4`  
-		Last Modified: Tue, 18 Nov 2025 01:13:26 GMT  
-		Size: 30.1 MB (30138610 bytes)  
+	-	`sha256:f626fba1463b32b20f78d29b52dcf15be927dbb5372a9ba6a5f97aad47ae220b`  
+		Last Modified: Mon, 08 Dec 2025 22:17:19 GMT  
+		Size: 30.1 MB (30138628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:623192602c00e918197dfe6e2a1def0175e7be0d446a268ed38b6b5a621d38e0`  
-		Last Modified: Tue, 18 Nov 2025 04:48:55 GMT  
-		Size: 1.3 MB (1261685 bytes)  
+	-	`sha256:7eaf4b7d6af85fa2d477bc8c6b8ff0abab28c0132199981bdea9c0fca84569b4`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
+		Size: 1.3 MB (1261658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee5fe6e2e9edffda349665022b4300b140e6a85f15a0f7614134df0867bcd551`  
-		Last Modified: Tue, 18 Nov 2025 04:48:55 GMT  
-		Size: 189.0 B  
+	-	`sha256:4f911311bcccab7cf68fb0509ee5408de0a72daec80c6ccd44b123cc0c6e41c8`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85c522fdb9fff298474b76a11223cdcb250793d0c701b8cf389c0375800c7d5c`  
-		Last Modified: Tue, 18 Nov 2025 04:48:57 GMT  
-		Size: 42.1 MB (42145706 bytes)  
+	-	`sha256:364b5aea1f4626e813a93901f04bb24cb8787623734b3d2f15a5ecbf285d584c`  
+		Last Modified: Mon, 08 Dec 2025 23:53:35 GMT  
+		Size: 42.1 MB (42145686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3907ba9f7c5e39a58b009710a158a43136020eb8b46dc729f4426b65e03945ab`  
-		Last Modified: Tue, 18 Nov 2025 04:48:54 GMT  
+	-	`sha256:7741a8581bb0066370ece471f6aa770ab4d3f3d46eb393a106ee1d6cd6c2ac44`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
 		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62078078c49a19cbd32c8398ca08eb739eba2a5c8f7e3ec2cc12e2f4b8c3b2db`  
-		Last Modified: Thu, 04 Dec 2025 18:59:44 GMT  
-		Size: 6.0 MB (5988380 bytes)  
+	-	`sha256:f30c8ff64bcfb969527bc42ad4e1ad72b62d6cd0e6fee85af029b74e7882c8e5`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 6.0 MB (5988371 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16e731dcc3a52a3e4926909f34921ae4f16049058441be34d00049373c20519d`  
-		Last Modified: Thu, 04 Dec 2025 18:59:46 GMT  
-		Size: 1.2 KB (1186 bytes)  
+	-	`sha256:cf432b8b15239d95c4f0325fe81ff1431d64de2fd96d1b7f6863814c540228bd`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:999b33ee39bc926af8f4930b89aa17f0a6b820c5ffa7479e1bfbe6d7c3b7509e`  
-		Last Modified: Thu, 04 Dec 2025 18:59:45 GMT  
-		Size: 402.0 B  
+	-	`sha256:166d8c0a8e8736f2fe6ff7f94c1012f5ced0e92ee4185869ec3cc496e0903780`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c311d60c665f9b731977ba41c34e0d299143e31b5709d86dda8eb3f392a54e6`  
-		Last Modified: Thu, 04 Dec 2025 18:59:45 GMT  
-		Size: 479.0 B  
+	-	`sha256:f28088a956e911a8f29e5258cc83d1b1ff723af0eb15e59b56ab09146aaf024f`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:latest` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:06771e235a93cdf7216de411468857b8d19c5b37a9904e274f563c4f84e8a9f4
+$ docker pull fluentd@sha256:6d4336aa08b546a7f78742fe70aa1337eb1f9df67127f24e44ff36cea6091e0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2302387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75bbb2a23905b39c605e81cd2c26ddfe82db37d5659170919172cbdfe9b8819f`
+-	Image ID: `sha256:331fc19fc612036e9b9572fb00e561ecb40dcbce480229fbe0dacf203bb58464`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7eedf47456bd91301c20eb29396d34c6238567229f91c78d64a84385ba5b5c9b`  
-		Last Modified: Thu, 04 Dec 2025 21:28:57 GMT  
+	-	`sha256:772a37f2ff865060ea30e10008b35646b395237dcce4e85e771b3aee446e763b`  
+		Last Modified: Tue, 09 Dec 2025 03:29:34 GMT  
 		Size: 2.3 MB (2280930 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f02e697a3cb8e25e5f9c19892fe981d521d4b20a5ae978535af0a692e681d6e4`  
-		Last Modified: Thu, 04 Dec 2025 21:28:57 GMT  
+	-	`sha256:4133a1074193ccc24229fa34ed308abc4a7efae19431bd52a02f81f873bf1ca5`  
+		Last Modified: Tue, 09 Dec 2025 03:29:35 GMT  
 		Size: 21.5 KB (21457 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:latest` - linux; 386
 
 ```console
-$ docker pull fluentd@sha256:56c84a09c3ec5836ff8a1ecd8ebda47efc0d785ee4719a2920828714257f476c
+$ docker pull fluentd@sha256:599d5b7afd9f493339ccaab7d3287bbe575670d5512a0a30ddc372f2b4662333
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.3 MB (76296093 bytes)**  
+-	Total Size: **76.3 MB (76296470 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:341497361633166c5f1384541265cc4c337cdbd3c29ac2d729d25563dc2b4817`
+-	Image ID: `sha256:3226219d46e9e8d7e930a62a5f59f32c4b9bf53dedf8185fb4523fa751ae8c43`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 03:40:43 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:38:38 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 03:40:43 GMT
+# Mon, 08 Dec 2025 23:38:38 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:8fdd29f45eb19adab28e642f5b411c2aac45db9e7dfc1ab412acdcf1365af598`  
-		Last Modified: Tue, 18 Nov 2025 01:13:49 GMT  
-		Size: 31.3 MB (31293068 bytes)  
+	-	`sha256:2648c88d9207cd6090be83f4a97e2aa4080930987d8fb62195cc994194160e67`  
+		Last Modified: Mon, 08 Dec 2025 22:17:03 GMT  
+		Size: 31.3 MB (31293070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:486bef966be95a2220ea41b52e0e83a8a622f90c5f320368a5f0d7284a00c503`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
-		Size: 1.3 MB (1287214 bytes)  
+	-	`sha256:f294212caa020512a8aa004ccf0ad2b44f2f61a493fe313aac9a4e4ee4616f88`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
+		Size: 1.3 MB (1287234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31f45ed37d5457ae44f5b9a372ecc7bde1dd97d5be333bac0f4030719c7f0eca`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
+	-	`sha256:f65638b1819071ea4ed695525bf34b0382fbf37355d69b43d7e7a51da79386c2`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:402fa9c5b261b8af75a607827e3e965cc7ce4351d91e3eba319a98783514bc3d`  
-		Last Modified: Tue, 18 Nov 2025 03:43:29 GMT  
-		Size: 37.7 MB (37740240 bytes)  
+	-	`sha256:abf2a7d1e8d2815af0f490c9813945dc251f9437878cdc62fd3c2b51ed2604f6`  
+		Last Modified: Mon, 08 Dec 2025 23:41:29 GMT  
+		Size: 37.7 MB (37740224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b3646abfea40cabe9f48dabaff87823bc4de7febc7191871f992e8cdd29e5cc`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
+	-	`sha256:71d46bda2c903ca306081bb1f1b3dd1a3ed78ae7db3f6ec6878732b92d7fce01`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fee570408516d44060c51273b5d738a6205bde32c3fc376fd9ef14e4a4457dce`  
-		Last Modified: Thu, 04 Dec 2025 18:58:23 GMT  
-		Size: 6.0 MB (5973173 bytes)  
+	-	`sha256:0225134b3c4f305ef3b4ea683e6ef3ebe867bfe93748d883bf0024c8ca1d66ad`  
+		Last Modified: Tue, 09 Dec 2025 00:30:21 GMT  
+		Size: 6.0 MB (5973548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6275cd6a8a20192011b6e7b4404598eec9c28328967093f4ff56a0ed65ccaa13`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:2e1660a934088ae96a9d6badbe46ba3388e69f4f373324aeb706f83554e2e07a`  
+		Last Modified: Tue, 09 Dec 2025 00:30:20 GMT  
+		Size: 1.2 KB (1180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:573b1d8dffa356f70d09c25d0a422654add5b105c3303262e90e092f928c0476`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
+	-	`sha256:8930a2ad4093b7ed2e2ced5f3181c9b1e77a957a48fe07611c3bb512cd885fc3`  
+		Last Modified: Tue, 09 Dec 2025 00:30:21 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad3b55019ddd93dad3e462ed7516328b0c240a97a4b8c4a23e529ed5be7854ad`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
-		Size: 479.0 B  
+	-	`sha256:63f7ef0f2a1ee408469afa43876a95a3a4038339be79b2e8293dafce7e35ea9e`  
+		Last Modified: Tue, 09 Dec 2025 00:30:20 GMT  
+		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:latest` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:744c888b5dc6510967c83cc08cbce6f8dc8d337314c61a7a7dfbf1d1291665fb
+$ docker pull fluentd@sha256:ab5f503e6138fb45fb9170d4f5d73200f9526153e68920ff9958f76be1c3c399
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2299133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ee20af4a982057aade0f5e6c1d71ab447ef9f7b85bbff621c4e002211248bfa`
+-	Image ID: `sha256:cafd53262ce8b25a127db185db86996e348ec59449d1a1162e6fbfee6b3fdd20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ffd30fcff8d76a898b59a12fe9d10b319b7a244e1cfb260572d112cd4569634c`  
-		Last Modified: Thu, 04 Dec 2025 21:29:01 GMT  
+	-	`sha256:1b209f9eb778ff7a38c9febc5677c4e19fdebc04ce396244bb7ddb115ba08c76`  
+		Last Modified: Tue, 09 Dec 2025 03:29:38 GMT  
 		Size: 2.3 MB (2277846 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6e78909919782d8821393c595f47c30f5265a082863f5fc58e35484d98e0ca2a`  
-		Last Modified: Thu, 04 Dec 2025 21:29:02 GMT  
+	-	`sha256:86e1e3cad007bc87120030312a763066b158bd539e186676e1f4211bfb0416f0`  
+		Last Modified: Tue, 09 Dec 2025 03:29:39 GMT  
 		Size: 21.3 KB (21287 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -804,135 +804,135 @@ $ docker pull fluentd@sha256:0d89113916b32c598de029868776a0abbf0be9b9054737578c9
 ### `fluentd:latest` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:ed187389e39640b36c3ce9981c1cf8dd26a754d7f04203e455789fde6d108294
+$ docker pull fluentd@sha256:d452f8eb08c139dd159cc43f074781c32b152a74d1132add1b85b65ffab1a967
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.8 MB (76792846 bytes)**  
+-	Total Size: **76.8 MB (76792670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee430e9e1c0931135d40bd46f138b5f92d4fcd73fa1892a2b40a65ba99b8142d`
+-	Image ID: `sha256:becbf6430ea077e039bcd6efa5440648d1a20b46ee4bf14d10ff45ced2297003`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 05:14:24 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 01:14:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 05:14:25 GMT
+# Tue, 09 Dec 2025 01:14:29 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:14 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:14 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 USER fluent
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:3063905a9d3db554a6c1d839c1212baff57798d644d5b0d198eef84afd107192`  
-		Last Modified: Tue, 18 Nov 2025 01:13:05 GMT  
-		Size: 29.8 MB (29834372 bytes)  
+	-	`sha256:deacec5e6af82b258c59e95e3e86abeef36fad06b1d9ff2de33e88544ffb79ff`  
+		Last Modified: Mon, 08 Dec 2025 22:20:52 GMT  
+		Size: 29.8 MB (29834400 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c5be0006390772cf7f9022344d107d52c9454ddfb26a9b6aa53e4f77a9bdc5e`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 1.3 MB (1294253 bytes)  
+	-	`sha256:5720eba478777df8c646e25a1f6668894f78c60729b8066bb843a45e90174380`  
+		Last Modified: Tue, 09 Dec 2025 01:17:18 GMT  
+		Size: 1.3 MB (1294285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6df3437f72c81d0de5473522e48eb46cf20ee4ae5ae981dfae54b48d71b07c5f`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 188.0 B  
+	-	`sha256:3f32a4b1f7561f4abaafe6220c2c2f308127ee5ef35474833e833a9af097e333`  
+		Last Modified: Tue, 09 Dec 2025 01:17:18 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f67960768c1f544671789085d4901deaf00ad13d073997065fbd38e41baef3e`  
-		Last Modified: Tue, 18 Nov 2025 05:17:09 GMT  
-		Size: 39.3 MB (39287189 bytes)  
+	-	`sha256:ee309e9c6d575837e8951d02780b3dc1213cd062f43a3b89fb81bb4b5e97a4c7`  
+		Last Modified: Tue, 09 Dec 2025 01:20:37 GMT  
+		Size: 39.3 MB (39287036 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22de67f11ad5b13189744a053b706d6a38590793d5b547a05561143636a6e794`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 143.0 B  
+	-	`sha256:ff7ed7c0ce15fb53c939f10bbbaac441035b79208a1fa1e4eb1b7c771c99dbd9`  
+		Last Modified: Tue, 09 Dec 2025 01:20:33 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1dae3e7995bd0deb7b55500a6bd72b6da73d79ec0e7c0311d2a8ffe3b3a07937`  
-		Last Modified: Thu, 04 Dec 2025 19:00:57 GMT  
-		Size: 6.4 MB (6374635 bytes)  
+	-	`sha256:805d4acfff0a8924cf1d1ee4e7ab9a7ed6a24a670b5bfde2364066dcb40e5897`  
+		Last Modified: Tue, 09 Dec 2025 03:04:01 GMT  
+		Size: 6.4 MB (6374561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44422c1d3698300c20c8d82b912869f2db389e052786cf236d58d4c070a52bb6`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 1.2 KB (1182 bytes)  
+	-	`sha256:164dab4e3071b8b90875f252880a33a9469e2ef2e5143ce4181d9042b67e6cc0`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac31f9e4d8d6111baff1810add02a698b16ee337ebae0e5a04bccd34dc3d1007`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 405.0 B  
+	-	`sha256:26a434834ec1b4336e0c8c15f37b1ff420317268465a1af98cb8d9c70f629049`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f174a509e3b7c1f6a3be616887aede378dae2a6ff15ad0eecd695f67d8461275`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 479.0 B  
+	-	`sha256:94ada78e2bbe6225a83b55c223117545ce1e9f27b7d4ec7370b113e4031f9464`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 476.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:latest` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:0dadfa6115c306234fc61d311151598224464a5b584da6589aa5d497360139a5
+$ docker pull fluentd@sha256:a9acd04217a219287c7233d4a242ce3617474b2926d7c6fa65bd0f9ef3fd9c6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303429 bytes)**  
+-	Total Size: **2.3 MB (2303428 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f29918cffd01b2c59af6e28e2e0b4917359f9a0f89eda0ac5c64dd59b7dfb1e`
+-	Image ID: `sha256:0e239f395e91356318869f19f375ad7ab5a4af065670c2f07f3218ceafe26fa4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c79cd4563cae1c78685f758473a2ceab79b121ee11e164da1e6b7ab447e0d552`  
-		Last Modified: Thu, 04 Dec 2025 21:29:11 GMT  
+	-	`sha256:75008fcce7092be8bf478ab2e0af5b9d86a1ea736122f1053c5852ff7df7101c`  
+		Last Modified: Tue, 09 Dec 2025 03:29:46 GMT  
 		Size: 2.3 MB (2282103 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a21fae52c306fa690f842976aaaa9c786f47c33a5a87fa92d845c843d5e94942`  
-		Last Modified: Thu, 04 Dec 2025 21:29:13 GMT  
-		Size: 21.3 KB (21326 bytes)  
+	-	`sha256:9fcc954fcc03cff37e89153ac0395dbc6a528b01ad546cad6e42d769364f6c4b`  
+		Last Modified: Tue, 09 Dec 2025 03:29:47 GMT  
+		Size: 21.3 KB (21325 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `fluentd:v1.16-debian-1`
 
 ```console
-$ docker pull fluentd@sha256:c77b5a23d8cde8ea26de57bf7c00a98fa5f9b0833815e636c9f12d5612194b08
+$ docker pull fluentd@sha256:f9fa8f3fbc9b4883e82ae6c12d60fc6344ee6fdd619177637e4043f156e8c681
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -955,650 +955,650 @@ $ docker pull fluentd@sha256:c77b5a23d8cde8ea26de57bf7c00a98fa5f9b0833815e636c9f
 ### `fluentd:v1.16-debian-1` - linux; amd64
 
 ```console
-$ docker pull fluentd@sha256:0d69c23412f3bc0a733cbd414626620f73f23aa3c6010f7cbd2c49efe8f3eba0
+$ docker pull fluentd@sha256:deadbcff796c296ca9ffdc64a6b7639305c057ae07765c5ae670a1133a4344d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.0 MB (81977547 bytes)**  
+-	Total Size: **82.0 MB (81977823 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0eb932919d75964085c4a29d96cd6bd036f5b05198ff129914a5dea748023d6c`
+-	Image ID: `sha256:d33b5a3aa383f5276a489112a7352fa7c651cb62d06f35474133aab5a0b77dc8`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1763337600'
-# Tue, 18 Nov 2025 06:01:23 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1765152000'
+# Mon, 08 Dec 2025 23:44:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 18 Nov 2025 06:01:23 GMT
+# Mon, 08 Dec 2025 23:44:23 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV RUBY_VERSION=3.2.9
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libreadline-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 CMD ["irb"]
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.10
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 ENV TINI_VERSION=0.18.0
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.16.1  && gem install json -v 2.6.3  && gem install rexml -v 3.4.0  && gem install async -v 1.31.0  && gem install async-http -v 0.60.2  && gem install fluentd -v 1.16.10  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test # buildkit
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 USER fluent
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:8e44f01296e3a6fdc31a671bee1c2259c5d5ee8b49f29aec42b5d2af15600296`  
-		Last Modified: Tue, 18 Nov 2025 02:27:00 GMT  
-		Size: 28.2 MB (28228449 bytes)  
+	-	`sha256:ae4ce04d0e1ccb5db08fa441b79635de5590399fae652d10bd3379b231be0ead`  
+		Last Modified: Mon, 08 Dec 2025 22:17:22 GMT  
+		Size: 28.2 MB (28228418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e866b3193d2e6441b53636d4e28f58cf0d3bddf19ddcb1d61e0699552ab9892`  
-		Last Modified: Tue, 18 Nov 2025 06:03:53 GMT  
-		Size: 3.5 MB (3509694 bytes)  
+	-	`sha256:bdf90654ec570d04def48f5063f4416c75882a9d62588eae548deab0ac1282d5`  
+		Last Modified: Mon, 08 Dec 2025 23:46:43 GMT  
+		Size: 3.5 MB (3509692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9660fd9d37538af993f94c911cf40fdd3f65887f00bdd3b02d5f6beb5575f110`  
-		Last Modified: Tue, 18 Nov 2025 06:03:51 GMT  
-		Size: 190.0 B  
+	-	`sha256:851df94b051dfb4ad444cabebb97ebbca9ff8598419d1abc34c1a2e4bbe264c3`  
+		Last Modified: Mon, 08 Dec 2025 23:46:43 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:acdf0cffb9c947b88141a6cba3cd7d029546ad9e7fc7738ed734520b77518834`  
-		Last Modified: Tue, 18 Nov 2025 06:03:58 GMT  
-		Size: 36.0 MB (35963790 bytes)  
+	-	`sha256:60f3f938e3bd9d0b22ff4ea88d781932c20551f0c791760efeca4c22c25ae55c`  
+		Last Modified: Mon, 08 Dec 2025 23:46:46 GMT  
+		Size: 36.0 MB (35964105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb63ff945397c57afdf5357fc26230f517e828b379cdf66f18775e111560dc31`  
-		Last Modified: Tue, 18 Nov 2025 06:03:51 GMT  
-		Size: 142.0 B  
+	-	`sha256:47e8106e35b9bcdc5568bccbc04b882547be5b2340b99c92a1d16fec35a56815`  
+		Last Modified: Mon, 08 Dec 2025 23:46:43 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:839cf2c4069fd8585c285343c99fea7cad478b87ff35677210dca3e9708bbb38`  
-		Last Modified: Fri, 05 Dec 2025 18:25:47 GMT  
-		Size: 14.3 MB (14273222 bytes)  
+	-	`sha256:87208c1aa35513a2b30665e21b3e200b94bd4da4100b42b5c3d7154b25f805f4`  
+		Last Modified: Tue, 09 Dec 2025 00:59:59 GMT  
+		Size: 14.3 MB (14273220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79fc221b418d25f087db94bba08a37dd9a04db23f802a5a24c3498db49f04da9`  
-		Last Modified: Fri, 05 Dec 2025 18:25:46 GMT  
-		Size: 1.2 KB (1181 bytes)  
+	-	`sha256:0b13fbef3c4028cf0070a855c64738a4e2e005b4f86a4ba9c0e02df3cc617310`  
+		Last Modified: Tue, 09 Dec 2025 00:59:58 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fcd8917ca0600ec37cd3223d2a62bca4dfce5895265308515c9b69556d7eac04`  
-		Last Modified: Fri, 05 Dec 2025 18:25:46 GMT  
-		Size: 402.0 B  
+	-	`sha256:955adb2b140967dc4052ab1f9b7ed03d83f447f0572669a85d2345ac0a3ea32f`  
+		Last Modified: Tue, 09 Dec 2025 00:59:58 GMT  
+		Size: 401.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0ae14dd06eb5a0da941a7039f8b5f518709aefe12a7a81f63e98fea4494efaf`  
-		Last Modified: Fri, 05 Dec 2025 18:25:46 GMT  
+	-	`sha256:d64866f1282a89b4ae51304ee8cc6abf9156c0c8a2ca7b43f602e8874726c28e`  
+		Last Modified: Tue, 09 Dec 2025 00:59:58 GMT  
 		Size: 477.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16-debian-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:dfcaf9ee131573eda1e89f533196b1e5a76e7b971e6d4710f762e1432989ca81
+$ docker pull fluentd@sha256:7e6b2e2eeb86e1a180e52581155493724befe89d3fea6a52afeea388032618da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2689525 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:043047d3cf4f86fe49e07001f81bf7f5c6b4d053d1a7ca2f529cc727b65a65fe`
+-	Image ID: `sha256:f4a6426f2b17ec5e3cabac24a632639a73a585f564efe0237028b94bf0a52d52`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0ba0d79bac6ffb17dadd6a28cc8e9554f1e3db6876431f3d2350ba4f5154437e`  
-		Last Modified: Fri, 05 Dec 2025 21:28:47 GMT  
+	-	`sha256:ab6c33c6946f886c781a152a8818197e10ca48b1be4abd17e946f0300955cba2`  
+		Last Modified: Tue, 09 Dec 2025 03:29:11 GMT  
 		Size: 2.7 MB (2668457 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f1bddbdd3c297593bc2b0c9f2bd79f3f8806b2bb148d988ac84c68b897174bfe`  
-		Last Modified: Fri, 05 Dec 2025 21:28:47 GMT  
+	-	`sha256:7be1ed091867ec8f6e7f35e64a984e9a09736bb771266bbe4efc78dd616f9776`  
+		Last Modified: Tue, 09 Dec 2025 03:29:12 GMT  
 		Size: 21.1 KB (21068 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.16-debian-1` - linux; arm variant v5
 
 ```console
-$ docker pull fluentd@sha256:ffdd1d793ce3cc8884d29382ca4208515f46c4869614a7efe95770ef3e36bfda
+$ docker pull fluentd@sha256:e2e12997a7a1767b5d78393e1e44a4e93faa182a1687320e1eb78ce04820d74c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.4 MB (75420208 bytes)**  
+-	Total Size: **75.4 MB (75420203 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:014dacde12ae532b62b0a0b3f91af145945ff010c1bc6bc8e4869cff6015f7d0`
+-	Image ID: `sha256:4b9b2f25a76ec5a7c0b537ce221cfa63658f008133ab307d5d59442b7594cfcd`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1763337600'
-# Tue, 18 Nov 2025 04:18:41 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1765152000'
+# Tue, 09 Dec 2025 00:41:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 18 Nov 2025 04:18:41 GMT
+# Tue, 09 Dec 2025 00:41:20 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV RUBY_VERSION=3.2.9
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libreadline-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 CMD ["irb"]
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:47 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:47 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.10
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:47 GMT
 ENV TINI_VERSION=0.18.0
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:47 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.16.1  && gem install json -v 2.6.3  && gem install rexml -v 3.4.0  && gem install async -v 1.31.0  && gem install async-http -v 0.60.2  && gem install fluentd -v 1.16.10  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test # buildkit
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 USER fluent
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:c97fff5eb07550dcbd62ce4fa3fb5ea12d73e0d973b150828279c3d911c81f0f`  
-		Last Modified: Tue, 18 Nov 2025 01:13:41 GMT  
-		Size: 25.8 MB (25757530 bytes)  
+	-	`sha256:20ca79728ab9e4eb574872cf271bd965c51cf4e8ac84660ef17b281a3aeb750e`  
+		Last Modified: Mon, 08 Dec 2025 22:16:26 GMT  
+		Size: 25.8 MB (25757588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c76389c7791ac539e08f00ada6c0d8e63fb2875388ac5be539590ff77fa593d6`  
-		Last Modified: Tue, 18 Nov 2025 04:21:40 GMT  
-		Size: 3.1 MB (3079850 bytes)  
+	-	`sha256:dca6f0f7119ad646cb3d530c79074378ce57b872141dc160986b65b33fc1efb7`  
+		Last Modified: Tue, 09 Dec 2025 00:44:03 GMT  
+		Size: 3.1 MB (3079770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e58dfc7ad8f3d981491eff3548b814629f9594b76173cfba1b38d23839061a86`  
-		Last Modified: Tue, 18 Nov 2025 04:21:38 GMT  
-		Size: 190.0 B  
+	-	`sha256:26810d1c29c1cb2aadd8c07ded2b3075bd804c209564efc29996c30c591fd3a9`  
+		Last Modified: Tue, 09 Dec 2025 00:44:03 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7a479b7ac057a0f4485088567a448a9324d019e266525d79d0b4dd8b9968fa8`  
-		Last Modified: Tue, 18 Nov 2025 04:24:45 GMT  
-		Size: 32.3 MB (32327214 bytes)  
+	-	`sha256:c7846dff80ed60ee964c63340dd403c187d3e6f18f4cbc2541e2fe49e2e639bd`  
+		Last Modified: Tue, 09 Dec 2025 00:44:07 GMT  
+		Size: 32.3 MB (32327207 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:450839ed4674e7308e9f7f985d309da887b11fd14e92704dab4f77a6ebc15e9e`  
-		Last Modified: Tue, 18 Nov 2025 04:24:43 GMT  
-		Size: 143.0 B  
+	-	`sha256:588f9d47366dad52350cc7b69aafb2a018dc7f12e7d2c8b048034bdc1a542cff`  
+		Last Modified: Tue, 09 Dec 2025 00:44:03 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aac66deb734570177ea4d36c27166cecedc7ba095c5c61c397a7769c22c814d3`  
-		Last Modified: Fri, 05 Dec 2025 18:26:52 GMT  
-		Size: 14.3 MB (14253219 bytes)  
+	-	`sha256:4190a2c764882288f6dbd6762d702b9170cf3ae2b7e61cf96cfa7209cce5ff41`  
+		Last Modified: Tue, 09 Dec 2025 01:57:04 GMT  
+		Size: 14.3 MB (14253245 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40503071475b806a0e7d60d3003b741c96380e64de0c6069f60545272624b210`  
-		Last Modified: Fri, 05 Dec 2025 18:26:49 GMT  
+	-	`sha256:8a68ae1855962eb067e7d12ba8e08e709188e0fb45c1edd66d6e25475a3a69cb`  
+		Last Modified: Tue, 09 Dec 2025 01:57:03 GMT  
 		Size: 1.2 KB (1183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52df291d1daab21025237c96db864550fc7c5e688d871ea348160f7361d3faa7`  
-		Last Modified: Fri, 05 Dec 2025 18:26:49 GMT  
+	-	`sha256:1df4d1870dd92a007b4918fe38c5c96d707d8424e8b96976fb9b9ef210cf032e`  
+		Last Modified: Tue, 09 Dec 2025 01:57:03 GMT  
 		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18ba163665ad1a8e900eef7e205d81c51edf4299c599232efad9e0878d2d3858`  
-		Last Modified: Fri, 05 Dec 2025 18:26:49 GMT  
+	-	`sha256:3c29b6db3727b0eccf5fc059d3de3a85a68d3e6f75408e05113b1d090c0b06b3`  
+		Last Modified: Tue, 09 Dec 2025 01:57:03 GMT  
 		Size: 477.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16-debian-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:0366e7f6adfe026afbb600b5ef6f5e64dd67ee01d5c0d35668bffef7cd372912
+$ docker pull fluentd@sha256:9beeb8d9e82d8c4dbc134cb1366d3b003ad084413de46b0701d7e97a17bc6218
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2693397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e95993617d1d62c24ed7b0cb5e49a563360f81fc98a64e917d7a0a64dc852bc4`
+-	Image ID: `sha256:55fef8071470ed9c570578f2f006becd628b5c56aa25fec2cce71398e9528917`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:559adab67fc0f03563a20414a5a51299a8b8f2f1445381ba5a92079cd575f757`  
-		Last Modified: Fri, 05 Dec 2025 21:28:53 GMT  
+	-	`sha256:d6d649f7e6c216fae9a5253bbd7f7252fa58d7e8c15b1f3791a1b6b22cf59f00`  
+		Last Modified: Tue, 09 Dec 2025 03:29:16 GMT  
 		Size: 2.7 MB (2672252 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d8f7214e9897b65b65af2514c4acad1dab13a029ed21e21ae19b6560c564f4d1`  
-		Last Modified: Fri, 05 Dec 2025 21:28:54 GMT  
+	-	`sha256:44f95619707a0611af69bc442598b051dcebf6e4ddabd4bf048614d192595748`  
+		Last Modified: Tue, 09 Dec 2025 03:29:17 GMT  
 		Size: 21.1 KB (21145 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.16-debian-1` - linux; arm variant v7
 
 ```console
-$ docker pull fluentd@sha256:49db16220a983adaab09f0d3181de5f4b10b8408f7db70893dae299a30ad11a9
+$ docker pull fluentd@sha256:d804877bafaca44f8fd15a4771459083a825f2791d40972b02a05ab0927493d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.2 MB (73190503 bytes)**  
+-	Total Size: **73.2 MB (73190534 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f7bf8e4668b33f2f97a28b1fa45f5a057ad367fa981d754c88873324c0e3746`
+-	Image ID: `sha256:f731f70e292700ffd37d6bf0f628c4828b6babb0b47375f2859814715aa2c34d`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1763337600'
-# Tue, 18 Nov 2025 05:01:58 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1765152000'
+# Tue, 09 Dec 2025 01:12:57 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 18 Nov 2025 05:01:58 GMT
+# Tue, 09 Dec 2025 01:12:57 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV RUBY_VERSION=3.2.9
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libreadline-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 CMD ["irb"]
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.10
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 ENV TINI_VERSION=0.18.0
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.16.1  && gem install json -v 2.6.3  && gem install rexml -v 3.4.0  && gem install async -v 1.31.0  && gem install async-http -v 0.60.2  && gem install fluentd -v 1.16.10  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test # buildkit
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 USER fluent
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:56c31a75d861775217bba58452ad642136804e02ff927a701d20990b4efd6793`  
-		Last Modified: Tue, 18 Nov 2025 01:13:27 GMT  
-		Size: 23.9 MB (23934009 bytes)  
+	-	`sha256:e12d446114182318769a6ca4adfc14d21fbb73f898de1d765662812d9f21c3a6`  
+		Last Modified: Mon, 08 Dec 2025 22:16:03 GMT  
+		Size: 23.9 MB (23934020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c9c0766613dc586001c46dae6e50a767011e7d1b04c8fb27148520aba2da1a8`  
-		Last Modified: Tue, 18 Nov 2025 05:04:28 GMT  
-		Size: 2.9 MB (2912826 bytes)  
+	-	`sha256:c05cf1a8807969d3cc253b26af9a6b383e07b91a8817f0d814734ceac2c2f8e6`  
+		Last Modified: Tue, 09 Dec 2025 01:15:29 GMT  
+		Size: 2.9 MB (2912780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70b207a185365783ce19f3e94783c81921c29d626773a40b9d5fb3a7d3b5bdba`  
-		Last Modified: Tue, 18 Nov 2025 05:04:28 GMT  
-		Size: 188.0 B  
+	-	`sha256:7b41806c15ea169d472daccf6c0f6a40d769ede64fd9fc1bee31391b7ae5f714`  
+		Last Modified: Tue, 09 Dec 2025 01:15:29 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:312cd8dbd34cd26bbcf8bca420953962f7f16bbb1a87c6c0a6ef1e9875d22922`  
-		Last Modified: Tue, 18 Nov 2025 05:04:30 GMT  
-		Size: 32.2 MB (32161820 bytes)  
+	-	`sha256:e08a11c252bdc5b07bd09125c71c42c0547bbc7a8fed680ed653a66a4b3e4e75`  
+		Last Modified: Tue, 09 Dec 2025 01:15:32 GMT  
+		Size: 32.2 MB (32161935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ebbdead32f83c943b0c1c05aad20ac65d39453f37714cffded8bc274cd4f015d`  
-		Last Modified: Tue, 18 Nov 2025 05:04:28 GMT  
+	-	`sha256:d03455c95829c88ad7cf926fe1d107f2c84248ea1c5734069592266c5ac2ed89`  
+		Last Modified: Tue, 09 Dec 2025 01:15:29 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9359bca57b57ce5decd457b03b6374995dee56d6ee27a2163c22245ad2312dd`  
-		Last Modified: Fri, 05 Dec 2025 18:26:45 GMT  
-		Size: 14.2 MB (14179453 bytes)  
+	-	`sha256:7dec4a59e2b0e227c322ba7235ac5c58158d1a46eccb22f119d5e6f354e7a3c0`  
+		Last Modified: Tue, 09 Dec 2025 02:25:16 GMT  
+		Size: 14.2 MB (14179405 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a18747d651e35b63aa8c0789c3de302c89474d45b3bab9241162534507c60092`  
-		Last Modified: Fri, 05 Dec 2025 18:26:43 GMT  
-		Size: 1.2 KB (1182 bytes)  
+	-	`sha256:48ef622b6b4484116cb4a5af9b486ecfe7b42e13c37ae58be439dcf387d46268`  
+		Last Modified: Tue, 09 Dec 2025 02:25:14 GMT  
+		Size: 1.2 KB (1180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f57414e074c15233eb1f6f310f8b2b0864a0a24880aa35b3370cda510a3967c3`  
-		Last Modified: Fri, 05 Dec 2025 18:26:44 GMT  
+	-	`sha256:3ea4dcde01e45c396b5d84adf5a72bc1ea41203e1ed826947518867f71e0bb47`  
+		Last Modified: Tue, 09 Dec 2025 02:25:14 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ba390228c9b8fe6b0ac7e69ac2f1bac1a264b8107e0fcfc4f361901725cab22`  
-		Last Modified: Fri, 05 Dec 2025 18:26:44 GMT  
+	-	`sha256:66e085bd59d7ee66bdc94cf49806afe219bb7b136ad0169e83651a92ffcd7387`  
+		Last Modified: Tue, 09 Dec 2025 02:25:14 GMT  
 		Size: 479.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16-debian-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:7f717b25b9c136075cd1d04593f21535a2a04900c63964a8da9d1b1cb16baade
+$ docker pull fluentd@sha256:4836dce2f583def2ad87aa56b3247dd4f9c21a92abd7d5e0df0c0abeb7a10c3c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2691828 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:494dd76be340c350ea357d30296b61e604dbac001944f44954ed789a6ebd36af`
+-	Image ID: `sha256:ce1df7a5aaacbcb85e487bfd45a38937968ad850be883d4b640edf8d731a4d57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a7961b34e4492032b9c0f6b3ba4d24246ebedcd56fb7a83657e514720d857888`  
-		Last Modified: Fri, 05 Dec 2025 21:28:58 GMT  
+	-	`sha256:d73d17791a6f85bf726f3e64283c8de9dcf5ea6a5fbbe680b2315321232a7fc5`  
+		Last Modified: Tue, 09 Dec 2025 03:29:23 GMT  
 		Size: 2.7 MB (2670683 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0569d6a35bf871d519397845ae9375280c824b0187d11730b5b3bb957af36e9c`  
-		Last Modified: Fri, 05 Dec 2025 21:28:59 GMT  
+	-	`sha256:aee92966dc4520ecd743bb4ed5c6566845e89b3ba16498bac63226fb3697d22f`  
+		Last Modified: Tue, 09 Dec 2025 03:29:24 GMT  
 		Size: 21.1 KB (21145 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.16-debian-1` - linux; arm64 variant v8
 
 ```console
-$ docker pull fluentd@sha256:ce8a9291f4702cb25ad916ce5ad03389ecceb0487fd0f839ced74bea00ec1db8
+$ docker pull fluentd@sha256:9f367f55812d38e45de429eca991fb74b19702d6fe84fbf912cca53ea4712c48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.6 MB (81626444 bytes)**  
+-	Total Size: **81.6 MB (81626084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d867cc625278d8dcdd62cea0bb3f692ba381f4340614ebde0c0938c9c9457b7a`
+-	Image ID: `sha256:3720afdcc583b3710ab8f284684ebeefbacf5356b8def660bebcd976d30def81`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1763337600'
-# Tue, 18 Nov 2025 04:47:05 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1765152000'
+# Mon, 08 Dec 2025 23:51:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 18 Nov 2025 04:47:05 GMT
+# Mon, 08 Dec 2025 23:51:30 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV RUBY_VERSION=3.2.9
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libreadline-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 CMD ["irb"]
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.10
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 ENV TINI_VERSION=0.18.0
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.16.1  && gem install json -v 2.6.3  && gem install rexml -v 3.4.0  && gem install async -v 1.31.0  && gem install async-http -v 0.60.2  && gem install fluentd -v 1.16.10  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test # buildkit
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 USER fluent
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:1aee4545ebb8911538c1c2ebce2416c85af34096ca1a65bbe42a4ca157ca3fa2`  
-		Last Modified: Tue, 18 Nov 2025 01:13:19 GMT  
-		Size: 28.1 MB (28102207 bytes)  
+	-	`sha256:8a4a7306158c2bef7a131de3110e384f4822829cbcce20bc6b4ba32dd82a1d87`  
+		Last Modified: Mon, 08 Dec 2025 22:16:51 GMT  
+		Size: 28.1 MB (28102229 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:447d15816b20de873f108e14be26d90895500245066c7397e903586b095268a9`  
-		Last Modified: Tue, 18 Nov 2025 04:49:37 GMT  
-		Size: 3.3 MB (3340700 bytes)  
+	-	`sha256:3f89b143b73731672df7bbebf3fb265ca4fd9c7cb5104fbb565b6069656e1a45`  
+		Last Modified: Mon, 08 Dec 2025 23:53:58 GMT  
+		Size: 3.3 MB (3340609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b50837de87579b732cdad8b680bd50678beebb0cec017ce254837430cf811810`  
-		Last Modified: Tue, 18 Nov 2025 04:49:37 GMT  
-		Size: 188.0 B  
+	-	`sha256:2b922defb569578e56e4be1315642f267cf33165ad1db78a4a8d2a4241f14e0a`  
+		Last Modified: Mon, 08 Dec 2025 23:53:58 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb7a72e04d5ec1976629669c94d9c534ffbf63371ad40d3d8be38d58fc585ed1`  
-		Last Modified: Tue, 18 Nov 2025 04:49:41 GMT  
-		Size: 35.9 MB (35900784 bytes)  
+	-	`sha256:45c2b999d98bec04bf93741008e27f9a366f37c36c1fbd1b8895eaba1db083a4`  
+		Last Modified: Mon, 08 Dec 2025 23:54:01 GMT  
+		Size: 35.9 MB (35900574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8e4a0ffc3a4b590761b2aca3f8b729de43ede03f31063296c234525e772eab`  
-		Last Modified: Tue, 18 Nov 2025 04:49:36 GMT  
-		Size: 141.0 B  
+	-	`sha256:6db4383582ceef57f9a280d70723a1a2791c2b7322540de671bc558c1a58feab`  
+		Last Modified: Mon, 08 Dec 2025 23:53:58 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1059bc6c00ba46b9ab44f0326622eff8173eb7bb3c070f6bc43b4b9c2505dce5`  
-		Last Modified: Fri, 05 Dec 2025 18:26:20 GMT  
-		Size: 14.3 MB (14280359 bytes)  
+	-	`sha256:da94119cd1853dc760a2c745866d6a4aa8988f8901abec8ee1fe04607505d926`  
+		Last Modified: Tue, 09 Dec 2025 00:58:10 GMT  
+		Size: 14.3 MB (14280283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b646c2497052266cf9122da521727a2ccb61bc125653fb579b0975b682207bb`  
-		Last Modified: Fri, 05 Dec 2025 18:26:20 GMT  
-		Size: 1.2 KB (1184 bytes)  
+	-	`sha256:49b2cd3a98a75a9e96f63e617f9d26d4e9d8f526ae202d57f2ca19e857d277d6`  
+		Last Modified: Tue, 09 Dec 2025 00:58:08 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:969f39d2025613aa174e2bb0194327a2f0ea7ad701f4c0ff30c8625ef7f2ad7a`  
-		Last Modified: Fri, 05 Dec 2025 18:26:20 GMT  
-		Size: 402.0 B  
+	-	`sha256:eb90c5cd11300a450fc59ddd121a8596904a210fbf6ac318c52aa46328f22012`  
+		Last Modified: Tue, 09 Dec 2025 00:58:09 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:014ed7e31265d0680c8d530ccd9a6c3d0d377ff18c63385ac3cd26eb416bb401`  
-		Last Modified: Fri, 05 Dec 2025 18:26:20 GMT  
-		Size: 479.0 B  
+	-	`sha256:a9539b96096047d13fa792d05f14ba8f8141e5967a436a7753e46fdc83a20017`  
+		Last Modified: Tue, 09 Dec 2025 00:58:08 GMT  
+		Size: 477.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16-debian-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:9374a550eb57f8a96094a85626c09e1690e30c1dc721e563fb1805e7db303bf3
+$ docker pull fluentd@sha256:49fca2df89b1eaf2fe695c2e42af9e93e6265e54d37da8545a5304e23f33cb8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2689860 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df1fc6c85a0685756fb6cb741ed42e4936e333375c40aeb8e986302a562407b0`
+-	Image ID: `sha256:37498b1a3c4d2da5eec2556e3f75192a8be73afe7c30d0c8a680fb0eb4583a4f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2b22852d00d6f5263ed8cc239e020ddd47448be2e5ba8963337d6ea65b48d226`  
-		Last Modified: Fri, 05 Dec 2025 21:29:06 GMT  
+	-	`sha256:37cd79dec0667c66ca8a67023bbf4547a22de9fe044a562e4aaefbdf1bb3d4ab`  
+		Last Modified: Tue, 09 Dec 2025 03:29:28 GMT  
 		Size: 2.7 MB (2668697 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ab5b55417c0ac30304f3616c481cadc15a2cf4dc41540826cdd21478a8391085`  
-		Last Modified: Fri, 05 Dec 2025 21:29:07 GMT  
+	-	`sha256:de8c0c533fb0168c6c51174bd12e89a6f1a9cecf7fca0c2424a04392e29a56c9`  
+		Last Modified: Tue, 09 Dec 2025 03:29:29 GMT  
 		Size: 21.2 KB (21163 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.16-debian-1` - linux; 386
 
 ```console
-$ docker pull fluentd@sha256:cabb43c4b403a5c0bab3c9820320698d12f99c8b9dad5c5d24a0e4ab26f09519
+$ docker pull fluentd@sha256:37db8cd8c30f04adc4efdae8811191bf531ec655f06e5f2616f0dc735c100b7f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.0 MB (78950055 bytes)**  
+-	Total Size: **79.0 MB (78950077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:15ed44237617b407a4dd901163d7d769b5d130cbfab373a0c6a5e7885244ce6b`
+-	Image ID: `sha256:221deae3a87b404a697d34d15ab3554e6ba49aac61850bdfd023dfc8de1bc194`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1763337600'
-# Tue, 18 Nov 2025 03:40:07 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1765152000'
+# Mon, 08 Dec 2025 23:39:31 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 18 Nov 2025 03:40:07 GMT
+# Mon, 08 Dec 2025 23:39:31 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV RUBY_VERSION=3.2.9
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libreadline-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 CMD ["irb"]
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.10
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 ENV TINI_VERSION=0.18.0
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.16.1  && gem install json -v 2.6.3  && gem install rexml -v 3.4.0  && gem install async -v 1.31.0  && gem install async-http -v 0.60.2  && gem install fluentd -v 1.16.10  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test # buildkit
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 USER fluent
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:1fec683ccaf0cadb2cbeb7e9c391ed98964459b2aef26a05e33382cfb2bbdf87`  
-		Last Modified: Tue, 18 Nov 2025 01:13:59 GMT  
-		Size: 29.2 MB (29209704 bytes)  
+	-	`sha256:e28a7f622a043206041afc8ed0d2b3d1b9bbffe3b724b994051e9d6dbc2f8a1e`  
+		Last Modified: Mon, 08 Dec 2025 22:16:30 GMT  
+		Size: 29.2 MB (29209729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e64ae260a61c110779bd438deac4d1cd76065ff2394ea83afc9ff5529ea91071`  
-		Last Modified: Tue, 18 Nov 2025 03:42:47 GMT  
-		Size: 3.5 MB (3510984 bytes)  
+	-	`sha256:b004ff9116992f47046bbe1e9f493f4ff5d105c4eaf268a8b668b18e6ccb1fe7`  
+		Last Modified: Mon, 08 Dec 2025 23:41:55 GMT  
+		Size: 3.5 MB (3510966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4356fe9a31a02a164458a68e3f079e86eabe6530bc2f61ae1772c93ea96dfa2a`  
-		Last Modified: Tue, 18 Nov 2025 03:42:46 GMT  
-		Size: 189.0 B  
+	-	`sha256:ac76a7f945f8c3948c62700f2ae7e89bc66aa2aaa083a23fdce75c895c43b6c2`  
+		Last Modified: Mon, 08 Dec 2025 23:41:54 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0a0b280db48ee6f86ec56584743697a062ecc6953d4df02a3fe330846b9913a`  
-		Last Modified: Tue, 18 Nov 2025 03:46:03 GMT  
-		Size: 32.2 MB (32160063 bytes)  
+	-	`sha256:89cb93fe6fb2dae2bfea8e669fe75a184f29f0d326637a8988399f524a63ef59`  
+		Last Modified: Mon, 08 Dec 2025 23:41:57 GMT  
+		Size: 32.2 MB (32160008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23894894335470a52957a4ef6504faf802a94d333679fd77a4c50a500ae296d0`  
-		Last Modified: Tue, 18 Nov 2025 03:46:01 GMT  
+	-	`sha256:2dc7e9a5a7858f2c65286251180b57673f95067b7bafa0f34c400d1b2df6d58b`  
+		Last Modified: Mon, 08 Dec 2025 23:41:54 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95e415b7bb6ef4a5d762963266c62934e56b2125cb6f34f1b39ef728277babaf`  
-		Last Modified: Fri, 05 Dec 2025 18:26:24 GMT  
-		Size: 14.1 MB (14066910 bytes)  
+	-	`sha256:8d59732b50d772fc2a63ed3b3bc4898abc18cae9cccba4ef2f0333f5fb0e7ba2`  
+		Last Modified: Tue, 09 Dec 2025 00:30:34 GMT  
+		Size: 14.1 MB (14066986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3e94ff3b7389939193bf3744df950b1b6812ae8da1190dc92a51bd46b557a90`  
-		Last Modified: Fri, 05 Dec 2025 18:26:22 GMT  
-		Size: 1.2 KB (1181 bytes)  
+	-	`sha256:0b9ea49a67c48cace685d606b3f887a5fd9ff63908734b51b4890c6105e56ef4`  
+		Last Modified: Tue, 09 Dec 2025 00:30:32 GMT  
+		Size: 1.2 KB (1176 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe411b92f67b430891e936ca08a5e1cd313a928d6a0b5c895ef95462693337a2`  
-		Last Modified: Fri, 05 Dec 2025 18:26:22 GMT  
+	-	`sha256:941774d9f65ec119cd56c9bbed23a57219a6fa1911f8e062ca471bbf4fd623bc`  
+		Last Modified: Tue, 09 Dec 2025 00:30:32 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d327b0f71f766af821df3cc3f8c60633b3cc4b581716d09189138a95113c41e4`  
-		Last Modified: Fri, 05 Dec 2025 18:26:22 GMT  
-		Size: 478.0 B  
+	-	`sha256:8cc27b654da6f0b3f4382cb8960f73b1fb7c814a0a3c5cb0a3f941af4ea99a23`  
+		Last Modified: Tue, 09 Dec 2025 00:30:32 GMT  
+		Size: 476.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16-debian-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:422b75f0ad6547b0edf3629a86cb0d8bfa0a9c4568e7d948072e3fb3b19594dd
+$ docker pull fluentd@sha256:984fdedd90f9309abbc3799929f74cffc2de9f80692ecd9169b0892454e4d2ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2686680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97ddc6319f0b577f030f3468ad7f19a8242115751b6b7539e4ef77c66958c5a2`
+-	Image ID: `sha256:975aa5a37f7a2c31fc48e03ba15cfeb8c2e357fe556c3d973e45e12c02ce15a4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:35a5b26a0068614d29d7ccaa822ae455af1793e67186659baa5ac81c24c012b3`  
-		Last Modified: Fri, 05 Dec 2025 21:29:11 GMT  
+	-	`sha256:73c4ffc7140271f22dd8279f6c31f7938293e5111ecc716f02ea504e816832ba`  
+		Last Modified: Tue, 09 Dec 2025 03:29:43 GMT  
 		Size: 2.7 MB (2665636 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:19705baecb61d251c470b80f53b9a45b3631e4f9e083b03a05ef96cf7dbe57fc`  
-		Last Modified: Fri, 05 Dec 2025 21:29:12 GMT  
+	-	`sha256:d9047a70b813f621b41077afcc62fd9c5f26b6bc441acbd054403c7be9043adf`  
+		Last Modified: Tue, 09 Dec 2025 03:29:44 GMT  
 		Size: 21.0 KB (21044 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1735,137 +1735,137 @@ $ docker pull fluentd@sha256:0ffd0835a12ab2978c5ba00ce42639c63b129c6ae78a14b829d
 ### `fluentd:v1.16-debian-1` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:f69c0ac101d426fb510e2568285243cc15b5a98cfccaf14818186bc6c79cfc01
+$ docker pull fluentd@sha256:42a50aafafb7ad72a7efa905263bebb041d4584ec4ab32c4def4ac6a3979804f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.6 MB (77565937 bytes)**  
+-	Total Size: **77.6 MB (77566403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31cdef0efb4dbc46f89254da272c4ce8bbeb30e92d42b3f68cf621acc6842f28`
+-	Image ID: `sha256:4bd36bd3e4a562a31bd6d48e59c0852d0e577ba6758200ca6656433524ded4c8`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1763337600'
-# Tue, 18 Nov 2025 05:13:59 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1765152000'
+# Tue, 09 Dec 2025 01:17:41 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 18 Nov 2025 05:13:59 GMT
+# Tue, 09 Dec 2025 01:17:42 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV RUBY_VERSION=3.2.9
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libreadline-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:20:35 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:20:35 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 CMD ["irb"]
-# Fri, 05 Dec 2025 18:27:05 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Fri, 05 Dec 2025 18:27:05 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.10
-# Fri, 05 Dec 2025 18:27:05 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 ENV TINI_VERSION=0.18.0
-# Fri, 05 Dec 2025 18:27:05 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.16.1  && gem install json -v 2.6.3  && gem install rexml -v 3.4.0  && gem install async -v 1.31.0  && gem install async-http -v 0.60.2  && gem install fluentd -v 1.16.10  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test # buildkit
-# Fri, 05 Dec 2025 18:27:06 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Fri, 05 Dec 2025 18:27:06 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 USER fluent
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:9c38e4ef02fd030fdf68385dfbbfcada530597ca5203cf2638356502ae852f19`  
-		Last Modified: Tue, 18 Nov 2025 01:11:11 GMT  
-		Size: 26.9 MB (26884392 bytes)  
+	-	`sha256:00a29f44cb5b31bbcf043ec5426ee1c018bb26435350712cb5e48d56c6d95792`  
+		Last Modified: Mon, 08 Dec 2025 22:15:04 GMT  
+		Size: 26.9 MB (26884429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b7196bcb3e6bc745b16dc7a6e7435e03f41c2430ffd8c34ac4f2bf12a675f3f`  
-		Last Modified: Tue, 18 Nov 2025 05:16:34 GMT  
-		Size: 3.2 MB (3170278 bytes)  
+	-	`sha256:734cd02b018a2944d3e3e9c4c7ac4331ffa839e8decb9c0e580b9944ccad4670`  
+		Last Modified: Tue, 09 Dec 2025 01:20:38 GMT  
+		Size: 3.2 MB (3170317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b108059018115f7f88520870ada2c23aea918378f4c030a9d69dd2718b920e8`  
-		Last Modified: Tue, 18 Nov 2025 05:16:34 GMT  
-		Size: 188.0 B  
+	-	`sha256:1042d38ade2080d53e59a797ad8f138d5b2c91df16155271b1adb453bd7efa49`  
+		Last Modified: Tue, 09 Dec 2025 01:20:37 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19c181644556269bfc25c91fddc70dc96c3037ebde78ae77c288ab61f0e6e884`  
-		Last Modified: Tue, 18 Nov 2025 05:20:56 GMT  
-		Size: 33.1 MB (33098859 bytes)  
+	-	`sha256:d21003c0bedd1a5149196004c19cca898d450c5360589bb85a23713d0c779c59`  
+		Last Modified: Tue, 09 Dec 2025 01:26:16 GMT  
+		Size: 33.1 MB (33099397 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:721217bef3eacac627789c34868d8b3ff6d7a61ba3b996aaf5c6c870c8476926`  
-		Last Modified: Tue, 18 Nov 2025 05:20:53 GMT  
+	-	`sha256:bc25eccf0626368d20d6279a29703ab649c7bda27f46db0e9e3d0b81869d37c1`  
+		Last Modified: Tue, 09 Dec 2025 01:26:13 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26046c3b1abeef7c33bd45ed3e8a03d258951da45dc21e9b8373eedd1f5f5ff9`  
-		Last Modified: Fri, 05 Dec 2025 18:27:48 GMT  
-		Size: 14.4 MB (14410009 bytes)  
+	-	`sha256:e8bb14285c2856c7315efe869824464fb083b3d0d0ae6d601014335f184541fe`  
+		Last Modified: Tue, 09 Dec 2025 03:04:01 GMT  
+		Size: 14.4 MB (14409876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:125d7eec686df9edae7a6ac18850befefa7c1fac9fea4f7e3f509b6c4f1ea69a`  
-		Last Modified: Fri, 05 Dec 2025 18:27:47 GMT  
-		Size: 1.2 KB (1186 bytes)  
+	-	`sha256:d122b552c19c02e68bffefd1b9a047e3cb5299b290b2ba9a332111a6896fb8da`  
+		Last Modified: Tue, 09 Dec 2025 03:04:01 GMT  
+		Size: 1.2 KB (1176 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24e1c0056ce3c5da9d331307bfd0cce63cb6697d09cf1a3d11ccdcce013eb9f6`  
-		Last Modified: Fri, 05 Dec 2025 18:27:46 GMT  
-		Size: 403.0 B  
+	-	`sha256:1a02d1a160be676fdcfeae88fd16b53257eb5c63264b672141884741357c5fae`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a2fa10e47d9f70546b39967515c9158d8e92f3711cd82836315c081a7b49a15`  
-		Last Modified: Fri, 05 Dec 2025 18:27:47 GMT  
-		Size: 479.0 B  
+	-	`sha256:24d7919d6937c16efba57c5e4baa0f77bca15b47384990191690eafbdbf17182`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 475.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16-debian-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:7704c5dadf22a7b220a098f6d1de5a89398c85705829bc064caf381c8d1a7d2e
+$ docker pull fluentd@sha256:28efa104b4f776281691936986ec1c8086f92a4ff75b4065a1816bbee03e9f2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2686350 bytes)**  
+-	Total Size: **2.7 MB (2686349 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f746bb9d807635b7fc8fdd56a4cb32fd2bfea8b18b873c234b2d098491e5a43`
+-	Image ID: `sha256:ea5e60271481ac0174894cfcbd1d8b9d7a43c494c001ea5d73ee6c8e0468a26b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:943005098da80c1eeaefa74349ebdff4a00a402024ce9d2605fdb9aeaea2a22f`  
-		Last Modified: Fri, 05 Dec 2025 21:29:21 GMT  
+	-	`sha256:82bea9145acb0bd653bd756acb2409e5cb74d50a51cd89566c674afe05306c3c`  
+		Last Modified: Tue, 09 Dec 2025 03:29:52 GMT  
 		Size: 2.7 MB (2665282 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f91f949abc1fa4f80f64f430c7466760c232e6b1b146957ebf5d5955579ec65a`  
-		Last Modified: Fri, 05 Dec 2025 21:29:21 GMT  
-		Size: 21.1 KB (21068 bytes)  
+	-	`sha256:32e64058117bfdc56095d794cb3ae804f70fe1baacfa7c5e6de16a8c4367bd4a`  
+		Last Modified: Tue, 09 Dec 2025 03:29:53 GMT  
+		Size: 21.1 KB (21067 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `fluentd:v1.16.10-debian-1.0`
 
 ```console
-$ docker pull fluentd@sha256:c77b5a23d8cde8ea26de57bf7c00a98fa5f9b0833815e636c9f12d5612194b08
+$ docker pull fluentd@sha256:f9fa8f3fbc9b4883e82ae6c12d60fc6344ee6fdd619177637e4043f156e8c681
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1888,650 +1888,650 @@ $ docker pull fluentd@sha256:c77b5a23d8cde8ea26de57bf7c00a98fa5f9b0833815e636c9f
 ### `fluentd:v1.16.10-debian-1.0` - linux; amd64
 
 ```console
-$ docker pull fluentd@sha256:0d69c23412f3bc0a733cbd414626620f73f23aa3c6010f7cbd2c49efe8f3eba0
+$ docker pull fluentd@sha256:deadbcff796c296ca9ffdc64a6b7639305c057ae07765c5ae670a1133a4344d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.0 MB (81977547 bytes)**  
+-	Total Size: **82.0 MB (81977823 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0eb932919d75964085c4a29d96cd6bd036f5b05198ff129914a5dea748023d6c`
+-	Image ID: `sha256:d33b5a3aa383f5276a489112a7352fa7c651cb62d06f35474133aab5a0b77dc8`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1763337600'
-# Tue, 18 Nov 2025 06:01:23 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1765152000'
+# Mon, 08 Dec 2025 23:44:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 18 Nov 2025 06:01:23 GMT
+# Mon, 08 Dec 2025 23:44:23 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV RUBY_VERSION=3.2.9
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libreadline-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 06:03:36 GMT
+# Mon, 08 Dec 2025 23:46:27 GMT
 CMD ["irb"]
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.10
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 ENV TINI_VERSION=0.18.0
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.16.1  && gem install json -v 2.6.3  && gem install rexml -v 3.4.0  && gem install async -v 1.31.0  && gem install async-http -v 0.60.2  && gem install fluentd -v 1.16.10  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test # buildkit
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 USER fluent
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Fri, 05 Dec 2025 18:25:02 GMT
+# Tue, 09 Dec 2025 00:59:42 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:8e44f01296e3a6fdc31a671bee1c2259c5d5ee8b49f29aec42b5d2af15600296`  
-		Last Modified: Tue, 18 Nov 2025 02:27:00 GMT  
-		Size: 28.2 MB (28228449 bytes)  
+	-	`sha256:ae4ce04d0e1ccb5db08fa441b79635de5590399fae652d10bd3379b231be0ead`  
+		Last Modified: Mon, 08 Dec 2025 22:17:22 GMT  
+		Size: 28.2 MB (28228418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e866b3193d2e6441b53636d4e28f58cf0d3bddf19ddcb1d61e0699552ab9892`  
-		Last Modified: Tue, 18 Nov 2025 06:03:53 GMT  
-		Size: 3.5 MB (3509694 bytes)  
+	-	`sha256:bdf90654ec570d04def48f5063f4416c75882a9d62588eae548deab0ac1282d5`  
+		Last Modified: Mon, 08 Dec 2025 23:46:43 GMT  
+		Size: 3.5 MB (3509692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9660fd9d37538af993f94c911cf40fdd3f65887f00bdd3b02d5f6beb5575f110`  
-		Last Modified: Tue, 18 Nov 2025 06:03:51 GMT  
-		Size: 190.0 B  
+	-	`sha256:851df94b051dfb4ad444cabebb97ebbca9ff8598419d1abc34c1a2e4bbe264c3`  
+		Last Modified: Mon, 08 Dec 2025 23:46:43 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:acdf0cffb9c947b88141a6cba3cd7d029546ad9e7fc7738ed734520b77518834`  
-		Last Modified: Tue, 18 Nov 2025 06:03:58 GMT  
-		Size: 36.0 MB (35963790 bytes)  
+	-	`sha256:60f3f938e3bd9d0b22ff4ea88d781932c20551f0c791760efeca4c22c25ae55c`  
+		Last Modified: Mon, 08 Dec 2025 23:46:46 GMT  
+		Size: 36.0 MB (35964105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb63ff945397c57afdf5357fc26230f517e828b379cdf66f18775e111560dc31`  
-		Last Modified: Tue, 18 Nov 2025 06:03:51 GMT  
-		Size: 142.0 B  
+	-	`sha256:47e8106e35b9bcdc5568bccbc04b882547be5b2340b99c92a1d16fec35a56815`  
+		Last Modified: Mon, 08 Dec 2025 23:46:43 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:839cf2c4069fd8585c285343c99fea7cad478b87ff35677210dca3e9708bbb38`  
-		Last Modified: Fri, 05 Dec 2025 18:25:47 GMT  
-		Size: 14.3 MB (14273222 bytes)  
+	-	`sha256:87208c1aa35513a2b30665e21b3e200b94bd4da4100b42b5c3d7154b25f805f4`  
+		Last Modified: Tue, 09 Dec 2025 00:59:59 GMT  
+		Size: 14.3 MB (14273220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79fc221b418d25f087db94bba08a37dd9a04db23f802a5a24c3498db49f04da9`  
-		Last Modified: Fri, 05 Dec 2025 18:25:46 GMT  
-		Size: 1.2 KB (1181 bytes)  
+	-	`sha256:0b13fbef3c4028cf0070a855c64738a4e2e005b4f86a4ba9c0e02df3cc617310`  
+		Last Modified: Tue, 09 Dec 2025 00:59:58 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fcd8917ca0600ec37cd3223d2a62bca4dfce5895265308515c9b69556d7eac04`  
-		Last Modified: Fri, 05 Dec 2025 18:25:46 GMT  
-		Size: 402.0 B  
+	-	`sha256:955adb2b140967dc4052ab1f9b7ed03d83f447f0572669a85d2345ac0a3ea32f`  
+		Last Modified: Tue, 09 Dec 2025 00:59:58 GMT  
+		Size: 401.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0ae14dd06eb5a0da941a7039f8b5f518709aefe12a7a81f63e98fea4494efaf`  
-		Last Modified: Fri, 05 Dec 2025 18:25:46 GMT  
+	-	`sha256:d64866f1282a89b4ae51304ee8cc6abf9156c0c8a2ca7b43f602e8874726c28e`  
+		Last Modified: Tue, 09 Dec 2025 00:59:58 GMT  
 		Size: 477.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16.10-debian-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:dfcaf9ee131573eda1e89f533196b1e5a76e7b971e6d4710f762e1432989ca81
+$ docker pull fluentd@sha256:7e6b2e2eeb86e1a180e52581155493724befe89d3fea6a52afeea388032618da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2689525 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:043047d3cf4f86fe49e07001f81bf7f5c6b4d053d1a7ca2f529cc727b65a65fe`
+-	Image ID: `sha256:f4a6426f2b17ec5e3cabac24a632639a73a585f564efe0237028b94bf0a52d52`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0ba0d79bac6ffb17dadd6a28cc8e9554f1e3db6876431f3d2350ba4f5154437e`  
-		Last Modified: Fri, 05 Dec 2025 21:28:47 GMT  
+	-	`sha256:ab6c33c6946f886c781a152a8818197e10ca48b1be4abd17e946f0300955cba2`  
+		Last Modified: Tue, 09 Dec 2025 03:29:11 GMT  
 		Size: 2.7 MB (2668457 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f1bddbdd3c297593bc2b0c9f2bd79f3f8806b2bb148d988ac84c68b897174bfe`  
-		Last Modified: Fri, 05 Dec 2025 21:28:47 GMT  
+	-	`sha256:7be1ed091867ec8f6e7f35e64a984e9a09736bb771266bbe4efc78dd616f9776`  
+		Last Modified: Tue, 09 Dec 2025 03:29:12 GMT  
 		Size: 21.1 KB (21068 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.16.10-debian-1.0` - linux; arm variant v5
 
 ```console
-$ docker pull fluentd@sha256:ffdd1d793ce3cc8884d29382ca4208515f46c4869614a7efe95770ef3e36bfda
+$ docker pull fluentd@sha256:e2e12997a7a1767b5d78393e1e44a4e93faa182a1687320e1eb78ce04820d74c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.4 MB (75420208 bytes)**  
+-	Total Size: **75.4 MB (75420203 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:014dacde12ae532b62b0a0b3f91af145945ff010c1bc6bc8e4869cff6015f7d0`
+-	Image ID: `sha256:4b9b2f25a76ec5a7c0b537ce221cfa63658f008133ab307d5d59442b7594cfcd`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1763337600'
-# Tue, 18 Nov 2025 04:18:41 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1765152000'
+# Tue, 09 Dec 2025 00:41:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 18 Nov 2025 04:18:41 GMT
+# Tue, 09 Dec 2025 00:41:20 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV RUBY_VERSION=3.2.9
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libreadline-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:24:28 GMT
+# Tue, 09 Dec 2025 00:43:49 GMT
 CMD ["irb"]
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:47 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:47 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.10
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:47 GMT
 ENV TINI_VERSION=0.18.0
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:47 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.16.1  && gem install json -v 2.6.3  && gem install rexml -v 3.4.0  && gem install async -v 1.31.0  && gem install async-http -v 0.60.2  && gem install fluentd -v 1.16.10  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test # buildkit
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 USER fluent
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Fri, 05 Dec 2025 18:26:23 GMT
+# Tue, 09 Dec 2025 01:56:48 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:c97fff5eb07550dcbd62ce4fa3fb5ea12d73e0d973b150828279c3d911c81f0f`  
-		Last Modified: Tue, 18 Nov 2025 01:13:41 GMT  
-		Size: 25.8 MB (25757530 bytes)  
+	-	`sha256:20ca79728ab9e4eb574872cf271bd965c51cf4e8ac84660ef17b281a3aeb750e`  
+		Last Modified: Mon, 08 Dec 2025 22:16:26 GMT  
+		Size: 25.8 MB (25757588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c76389c7791ac539e08f00ada6c0d8e63fb2875388ac5be539590ff77fa593d6`  
-		Last Modified: Tue, 18 Nov 2025 04:21:40 GMT  
-		Size: 3.1 MB (3079850 bytes)  
+	-	`sha256:dca6f0f7119ad646cb3d530c79074378ce57b872141dc160986b65b33fc1efb7`  
+		Last Modified: Tue, 09 Dec 2025 00:44:03 GMT  
+		Size: 3.1 MB (3079770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e58dfc7ad8f3d981491eff3548b814629f9594b76173cfba1b38d23839061a86`  
-		Last Modified: Tue, 18 Nov 2025 04:21:38 GMT  
-		Size: 190.0 B  
+	-	`sha256:26810d1c29c1cb2aadd8c07ded2b3075bd804c209564efc29996c30c591fd3a9`  
+		Last Modified: Tue, 09 Dec 2025 00:44:03 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7a479b7ac057a0f4485088567a448a9324d019e266525d79d0b4dd8b9968fa8`  
-		Last Modified: Tue, 18 Nov 2025 04:24:45 GMT  
-		Size: 32.3 MB (32327214 bytes)  
+	-	`sha256:c7846dff80ed60ee964c63340dd403c187d3e6f18f4cbc2541e2fe49e2e639bd`  
+		Last Modified: Tue, 09 Dec 2025 00:44:07 GMT  
+		Size: 32.3 MB (32327207 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:450839ed4674e7308e9f7f985d309da887b11fd14e92704dab4f77a6ebc15e9e`  
-		Last Modified: Tue, 18 Nov 2025 04:24:43 GMT  
-		Size: 143.0 B  
+	-	`sha256:588f9d47366dad52350cc7b69aafb2a018dc7f12e7d2c8b048034bdc1a542cff`  
+		Last Modified: Tue, 09 Dec 2025 00:44:03 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aac66deb734570177ea4d36c27166cecedc7ba095c5c61c397a7769c22c814d3`  
-		Last Modified: Fri, 05 Dec 2025 18:26:52 GMT  
-		Size: 14.3 MB (14253219 bytes)  
+	-	`sha256:4190a2c764882288f6dbd6762d702b9170cf3ae2b7e61cf96cfa7209cce5ff41`  
+		Last Modified: Tue, 09 Dec 2025 01:57:04 GMT  
+		Size: 14.3 MB (14253245 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40503071475b806a0e7d60d3003b741c96380e64de0c6069f60545272624b210`  
-		Last Modified: Fri, 05 Dec 2025 18:26:49 GMT  
+	-	`sha256:8a68ae1855962eb067e7d12ba8e08e709188e0fb45c1edd66d6e25475a3a69cb`  
+		Last Modified: Tue, 09 Dec 2025 01:57:03 GMT  
 		Size: 1.2 KB (1183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52df291d1daab21025237c96db864550fc7c5e688d871ea348160f7361d3faa7`  
-		Last Modified: Fri, 05 Dec 2025 18:26:49 GMT  
+	-	`sha256:1df4d1870dd92a007b4918fe38c5c96d707d8424e8b96976fb9b9ef210cf032e`  
+		Last Modified: Tue, 09 Dec 2025 01:57:03 GMT  
 		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18ba163665ad1a8e900eef7e205d81c51edf4299c599232efad9e0878d2d3858`  
-		Last Modified: Fri, 05 Dec 2025 18:26:49 GMT  
+	-	`sha256:3c29b6db3727b0eccf5fc059d3de3a85a68d3e6f75408e05113b1d090c0b06b3`  
+		Last Modified: Tue, 09 Dec 2025 01:57:03 GMT  
 		Size: 477.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16.10-debian-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:0366e7f6adfe026afbb600b5ef6f5e64dd67ee01d5c0d35668bffef7cd372912
+$ docker pull fluentd@sha256:9beeb8d9e82d8c4dbc134cb1366d3b003ad084413de46b0701d7e97a17bc6218
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2693397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e95993617d1d62c24ed7b0cb5e49a563360f81fc98a64e917d7a0a64dc852bc4`
+-	Image ID: `sha256:55fef8071470ed9c570578f2f006becd628b5c56aa25fec2cce71398e9528917`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:559adab67fc0f03563a20414a5a51299a8b8f2f1445381ba5a92079cd575f757`  
-		Last Modified: Fri, 05 Dec 2025 21:28:53 GMT  
+	-	`sha256:d6d649f7e6c216fae9a5253bbd7f7252fa58d7e8c15b1f3791a1b6b22cf59f00`  
+		Last Modified: Tue, 09 Dec 2025 03:29:16 GMT  
 		Size: 2.7 MB (2672252 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d8f7214e9897b65b65af2514c4acad1dab13a029ed21e21ae19b6560c564f4d1`  
-		Last Modified: Fri, 05 Dec 2025 21:28:54 GMT  
+	-	`sha256:44f95619707a0611af69bc442598b051dcebf6e4ddabd4bf048614d192595748`  
+		Last Modified: Tue, 09 Dec 2025 03:29:17 GMT  
 		Size: 21.1 KB (21145 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.16.10-debian-1.0` - linux; arm variant v7
 
 ```console
-$ docker pull fluentd@sha256:49db16220a983adaab09f0d3181de5f4b10b8408f7db70893dae299a30ad11a9
+$ docker pull fluentd@sha256:d804877bafaca44f8fd15a4771459083a825f2791d40972b02a05ab0927493d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.2 MB (73190503 bytes)**  
+-	Total Size: **73.2 MB (73190534 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f7bf8e4668b33f2f97a28b1fa45f5a057ad367fa981d754c88873324c0e3746`
+-	Image ID: `sha256:f731f70e292700ffd37d6bf0f628c4828b6babb0b47375f2859814715aa2c34d`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1763337600'
-# Tue, 18 Nov 2025 05:01:58 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1765152000'
+# Tue, 09 Dec 2025 01:12:57 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 18 Nov 2025 05:01:58 GMT
+# Tue, 09 Dec 2025 01:12:57 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV RUBY_VERSION=3.2.9
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libreadline-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:04:12 GMT
+# Tue, 09 Dec 2025 01:15:11 GMT
 CMD ["irb"]
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.10
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 ENV TINI_VERSION=0.18.0
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.16.1  && gem install json -v 2.6.3  && gem install rexml -v 3.4.0  && gem install async -v 1.31.0  && gem install async-http -v 0.60.2  && gem install fluentd -v 1.16.10  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test # buildkit
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 USER fluent
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Fri, 05 Dec 2025 18:26:19 GMT
+# Tue, 09 Dec 2025 02:24:59 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:56c31a75d861775217bba58452ad642136804e02ff927a701d20990b4efd6793`  
-		Last Modified: Tue, 18 Nov 2025 01:13:27 GMT  
-		Size: 23.9 MB (23934009 bytes)  
+	-	`sha256:e12d446114182318769a6ca4adfc14d21fbb73f898de1d765662812d9f21c3a6`  
+		Last Modified: Mon, 08 Dec 2025 22:16:03 GMT  
+		Size: 23.9 MB (23934020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c9c0766613dc586001c46dae6e50a767011e7d1b04c8fb27148520aba2da1a8`  
-		Last Modified: Tue, 18 Nov 2025 05:04:28 GMT  
-		Size: 2.9 MB (2912826 bytes)  
+	-	`sha256:c05cf1a8807969d3cc253b26af9a6b383e07b91a8817f0d814734ceac2c2f8e6`  
+		Last Modified: Tue, 09 Dec 2025 01:15:29 GMT  
+		Size: 2.9 MB (2912780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70b207a185365783ce19f3e94783c81921c29d626773a40b9d5fb3a7d3b5bdba`  
-		Last Modified: Tue, 18 Nov 2025 05:04:28 GMT  
-		Size: 188.0 B  
+	-	`sha256:7b41806c15ea169d472daccf6c0f6a40d769ede64fd9fc1bee31391b7ae5f714`  
+		Last Modified: Tue, 09 Dec 2025 01:15:29 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:312cd8dbd34cd26bbcf8bca420953962f7f16bbb1a87c6c0a6ef1e9875d22922`  
-		Last Modified: Tue, 18 Nov 2025 05:04:30 GMT  
-		Size: 32.2 MB (32161820 bytes)  
+	-	`sha256:e08a11c252bdc5b07bd09125c71c42c0547bbc7a8fed680ed653a66a4b3e4e75`  
+		Last Modified: Tue, 09 Dec 2025 01:15:32 GMT  
+		Size: 32.2 MB (32161935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ebbdead32f83c943b0c1c05aad20ac65d39453f37714cffded8bc274cd4f015d`  
-		Last Modified: Tue, 18 Nov 2025 05:04:28 GMT  
+	-	`sha256:d03455c95829c88ad7cf926fe1d107f2c84248ea1c5734069592266c5ac2ed89`  
+		Last Modified: Tue, 09 Dec 2025 01:15:29 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9359bca57b57ce5decd457b03b6374995dee56d6ee27a2163c22245ad2312dd`  
-		Last Modified: Fri, 05 Dec 2025 18:26:45 GMT  
-		Size: 14.2 MB (14179453 bytes)  
+	-	`sha256:7dec4a59e2b0e227c322ba7235ac5c58158d1a46eccb22f119d5e6f354e7a3c0`  
+		Last Modified: Tue, 09 Dec 2025 02:25:16 GMT  
+		Size: 14.2 MB (14179405 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a18747d651e35b63aa8c0789c3de302c89474d45b3bab9241162534507c60092`  
-		Last Modified: Fri, 05 Dec 2025 18:26:43 GMT  
-		Size: 1.2 KB (1182 bytes)  
+	-	`sha256:48ef622b6b4484116cb4a5af9b486ecfe7b42e13c37ae58be439dcf387d46268`  
+		Last Modified: Tue, 09 Dec 2025 02:25:14 GMT  
+		Size: 1.2 KB (1180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f57414e074c15233eb1f6f310f8b2b0864a0a24880aa35b3370cda510a3967c3`  
-		Last Modified: Fri, 05 Dec 2025 18:26:44 GMT  
+	-	`sha256:3ea4dcde01e45c396b5d84adf5a72bc1ea41203e1ed826947518867f71e0bb47`  
+		Last Modified: Tue, 09 Dec 2025 02:25:14 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ba390228c9b8fe6b0ac7e69ac2f1bac1a264b8107e0fcfc4f361901725cab22`  
-		Last Modified: Fri, 05 Dec 2025 18:26:44 GMT  
+	-	`sha256:66e085bd59d7ee66bdc94cf49806afe219bb7b136ad0169e83651a92ffcd7387`  
+		Last Modified: Tue, 09 Dec 2025 02:25:14 GMT  
 		Size: 479.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16.10-debian-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:7f717b25b9c136075cd1d04593f21535a2a04900c63964a8da9d1b1cb16baade
+$ docker pull fluentd@sha256:4836dce2f583def2ad87aa56b3247dd4f9c21a92abd7d5e0df0c0abeb7a10c3c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2691828 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:494dd76be340c350ea357d30296b61e604dbac001944f44954ed789a6ebd36af`
+-	Image ID: `sha256:ce1df7a5aaacbcb85e487bfd45a38937968ad850be883d4b640edf8d731a4d57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a7961b34e4492032b9c0f6b3ba4d24246ebedcd56fb7a83657e514720d857888`  
-		Last Modified: Fri, 05 Dec 2025 21:28:58 GMT  
+	-	`sha256:d73d17791a6f85bf726f3e64283c8de9dcf5ea6a5fbbe680b2315321232a7fc5`  
+		Last Modified: Tue, 09 Dec 2025 03:29:23 GMT  
 		Size: 2.7 MB (2670683 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0569d6a35bf871d519397845ae9375280c824b0187d11730b5b3bb957af36e9c`  
-		Last Modified: Fri, 05 Dec 2025 21:28:59 GMT  
+	-	`sha256:aee92966dc4520ecd743bb4ed5c6566845e89b3ba16498bac63226fb3697d22f`  
+		Last Modified: Tue, 09 Dec 2025 03:29:24 GMT  
 		Size: 21.1 KB (21145 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.16.10-debian-1.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull fluentd@sha256:ce8a9291f4702cb25ad916ce5ad03389ecceb0487fd0f839ced74bea00ec1db8
+$ docker pull fluentd@sha256:9f367f55812d38e45de429eca991fb74b19702d6fe84fbf912cca53ea4712c48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.6 MB (81626444 bytes)**  
+-	Total Size: **81.6 MB (81626084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d867cc625278d8dcdd62cea0bb3f692ba381f4340614ebde0c0938c9c9457b7a`
+-	Image ID: `sha256:3720afdcc583b3710ab8f284684ebeefbacf5356b8def660bebcd976d30def81`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1763337600'
-# Tue, 18 Nov 2025 04:47:05 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1765152000'
+# Mon, 08 Dec 2025 23:51:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 18 Nov 2025 04:47:05 GMT
+# Mon, 08 Dec 2025 23:51:30 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV RUBY_VERSION=3.2.9
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libreadline-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:49:20 GMT
+# Mon, 08 Dec 2025 23:53:41 GMT
 CMD ["irb"]
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.10
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 ENV TINI_VERSION=0.18.0
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.16.1  && gem install json -v 2.6.3  && gem install rexml -v 3.4.0  && gem install async -v 1.31.0  && gem install async-http -v 0.60.2  && gem install fluentd -v 1.16.10  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test # buildkit
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 USER fluent
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Fri, 05 Dec 2025 18:25:25 GMT
+# Tue, 09 Dec 2025 00:57:49 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:1aee4545ebb8911538c1c2ebce2416c85af34096ca1a65bbe42a4ca157ca3fa2`  
-		Last Modified: Tue, 18 Nov 2025 01:13:19 GMT  
-		Size: 28.1 MB (28102207 bytes)  
+	-	`sha256:8a4a7306158c2bef7a131de3110e384f4822829cbcce20bc6b4ba32dd82a1d87`  
+		Last Modified: Mon, 08 Dec 2025 22:16:51 GMT  
+		Size: 28.1 MB (28102229 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:447d15816b20de873f108e14be26d90895500245066c7397e903586b095268a9`  
-		Last Modified: Tue, 18 Nov 2025 04:49:37 GMT  
-		Size: 3.3 MB (3340700 bytes)  
+	-	`sha256:3f89b143b73731672df7bbebf3fb265ca4fd9c7cb5104fbb565b6069656e1a45`  
+		Last Modified: Mon, 08 Dec 2025 23:53:58 GMT  
+		Size: 3.3 MB (3340609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b50837de87579b732cdad8b680bd50678beebb0cec017ce254837430cf811810`  
-		Last Modified: Tue, 18 Nov 2025 04:49:37 GMT  
-		Size: 188.0 B  
+	-	`sha256:2b922defb569578e56e4be1315642f267cf33165ad1db78a4a8d2a4241f14e0a`  
+		Last Modified: Mon, 08 Dec 2025 23:53:58 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb7a72e04d5ec1976629669c94d9c534ffbf63371ad40d3d8be38d58fc585ed1`  
-		Last Modified: Tue, 18 Nov 2025 04:49:41 GMT  
-		Size: 35.9 MB (35900784 bytes)  
+	-	`sha256:45c2b999d98bec04bf93741008e27f9a366f37c36c1fbd1b8895eaba1db083a4`  
+		Last Modified: Mon, 08 Dec 2025 23:54:01 GMT  
+		Size: 35.9 MB (35900574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8e4a0ffc3a4b590761b2aca3f8b729de43ede03f31063296c234525e772eab`  
-		Last Modified: Tue, 18 Nov 2025 04:49:36 GMT  
-		Size: 141.0 B  
+	-	`sha256:6db4383582ceef57f9a280d70723a1a2791c2b7322540de671bc558c1a58feab`  
+		Last Modified: Mon, 08 Dec 2025 23:53:58 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1059bc6c00ba46b9ab44f0326622eff8173eb7bb3c070f6bc43b4b9c2505dce5`  
-		Last Modified: Fri, 05 Dec 2025 18:26:20 GMT  
-		Size: 14.3 MB (14280359 bytes)  
+	-	`sha256:da94119cd1853dc760a2c745866d6a4aa8988f8901abec8ee1fe04607505d926`  
+		Last Modified: Tue, 09 Dec 2025 00:58:10 GMT  
+		Size: 14.3 MB (14280283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b646c2497052266cf9122da521727a2ccb61bc125653fb579b0975b682207bb`  
-		Last Modified: Fri, 05 Dec 2025 18:26:20 GMT  
-		Size: 1.2 KB (1184 bytes)  
+	-	`sha256:49b2cd3a98a75a9e96f63e617f9d26d4e9d8f526ae202d57f2ca19e857d277d6`  
+		Last Modified: Tue, 09 Dec 2025 00:58:08 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:969f39d2025613aa174e2bb0194327a2f0ea7ad701f4c0ff30c8625ef7f2ad7a`  
-		Last Modified: Fri, 05 Dec 2025 18:26:20 GMT  
-		Size: 402.0 B  
+	-	`sha256:eb90c5cd11300a450fc59ddd121a8596904a210fbf6ac318c52aa46328f22012`  
+		Last Modified: Tue, 09 Dec 2025 00:58:09 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:014ed7e31265d0680c8d530ccd9a6c3d0d377ff18c63385ac3cd26eb416bb401`  
-		Last Modified: Fri, 05 Dec 2025 18:26:20 GMT  
-		Size: 479.0 B  
+	-	`sha256:a9539b96096047d13fa792d05f14ba8f8141e5967a436a7753e46fdc83a20017`  
+		Last Modified: Tue, 09 Dec 2025 00:58:08 GMT  
+		Size: 477.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16.10-debian-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:9374a550eb57f8a96094a85626c09e1690e30c1dc721e563fb1805e7db303bf3
+$ docker pull fluentd@sha256:49fca2df89b1eaf2fe695c2e42af9e93e6265e54d37da8545a5304e23f33cb8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2689860 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df1fc6c85a0685756fb6cb741ed42e4936e333375c40aeb8e986302a562407b0`
+-	Image ID: `sha256:37498b1a3c4d2da5eec2556e3f75192a8be73afe7c30d0c8a680fb0eb4583a4f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2b22852d00d6f5263ed8cc239e020ddd47448be2e5ba8963337d6ea65b48d226`  
-		Last Modified: Fri, 05 Dec 2025 21:29:06 GMT  
+	-	`sha256:37cd79dec0667c66ca8a67023bbf4547a22de9fe044a562e4aaefbdf1bb3d4ab`  
+		Last Modified: Tue, 09 Dec 2025 03:29:28 GMT  
 		Size: 2.7 MB (2668697 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ab5b55417c0ac30304f3616c481cadc15a2cf4dc41540826cdd21478a8391085`  
-		Last Modified: Fri, 05 Dec 2025 21:29:07 GMT  
+	-	`sha256:de8c0c533fb0168c6c51174bd12e89a6f1a9cecf7fca0c2424a04392e29a56c9`  
+		Last Modified: Tue, 09 Dec 2025 03:29:29 GMT  
 		Size: 21.2 KB (21163 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.16.10-debian-1.0` - linux; 386
 
 ```console
-$ docker pull fluentd@sha256:cabb43c4b403a5c0bab3c9820320698d12f99c8b9dad5c5d24a0e4ab26f09519
+$ docker pull fluentd@sha256:37db8cd8c30f04adc4efdae8811191bf531ec655f06e5f2616f0dc735c100b7f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.0 MB (78950055 bytes)**  
+-	Total Size: **79.0 MB (78950077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:15ed44237617b407a4dd901163d7d769b5d130cbfab373a0c6a5e7885244ce6b`
+-	Image ID: `sha256:221deae3a87b404a697d34d15ab3554e6ba49aac61850bdfd023dfc8de1bc194`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1763337600'
-# Tue, 18 Nov 2025 03:40:07 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1765152000'
+# Mon, 08 Dec 2025 23:39:31 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 18 Nov 2025 03:40:07 GMT
+# Mon, 08 Dec 2025 23:39:31 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV RUBY_VERSION=3.2.9
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libreadline-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 03:45:47 GMT
+# Mon, 08 Dec 2025 23:41:41 GMT
 CMD ["irb"]
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.10
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 ENV TINI_VERSION=0.18.0
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.16.1  && gem install json -v 2.6.3  && gem install rexml -v 3.4.0  && gem install async -v 1.31.0  && gem install async-http -v 0.60.2  && gem install fluentd -v 1.16.10  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test # buildkit
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 USER fluent
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Fri, 05 Dec 2025 18:25:51 GMT
+# Tue, 09 Dec 2025 00:30:16 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:1fec683ccaf0cadb2cbeb7e9c391ed98964459b2aef26a05e33382cfb2bbdf87`  
-		Last Modified: Tue, 18 Nov 2025 01:13:59 GMT  
-		Size: 29.2 MB (29209704 bytes)  
+	-	`sha256:e28a7f622a043206041afc8ed0d2b3d1b9bbffe3b724b994051e9d6dbc2f8a1e`  
+		Last Modified: Mon, 08 Dec 2025 22:16:30 GMT  
+		Size: 29.2 MB (29209729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e64ae260a61c110779bd438deac4d1cd76065ff2394ea83afc9ff5529ea91071`  
-		Last Modified: Tue, 18 Nov 2025 03:42:47 GMT  
-		Size: 3.5 MB (3510984 bytes)  
+	-	`sha256:b004ff9116992f47046bbe1e9f493f4ff5d105c4eaf268a8b668b18e6ccb1fe7`  
+		Last Modified: Mon, 08 Dec 2025 23:41:55 GMT  
+		Size: 3.5 MB (3510966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4356fe9a31a02a164458a68e3f079e86eabe6530bc2f61ae1772c93ea96dfa2a`  
-		Last Modified: Tue, 18 Nov 2025 03:42:46 GMT  
-		Size: 189.0 B  
+	-	`sha256:ac76a7f945f8c3948c62700f2ae7e89bc66aa2aaa083a23fdce75c895c43b6c2`  
+		Last Modified: Mon, 08 Dec 2025 23:41:54 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0a0b280db48ee6f86ec56584743697a062ecc6953d4df02a3fe330846b9913a`  
-		Last Modified: Tue, 18 Nov 2025 03:46:03 GMT  
-		Size: 32.2 MB (32160063 bytes)  
+	-	`sha256:89cb93fe6fb2dae2bfea8e669fe75a184f29f0d326637a8988399f524a63ef59`  
+		Last Modified: Mon, 08 Dec 2025 23:41:57 GMT  
+		Size: 32.2 MB (32160008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23894894335470a52957a4ef6504faf802a94d333679fd77a4c50a500ae296d0`  
-		Last Modified: Tue, 18 Nov 2025 03:46:01 GMT  
+	-	`sha256:2dc7e9a5a7858f2c65286251180b57673f95067b7bafa0f34c400d1b2df6d58b`  
+		Last Modified: Mon, 08 Dec 2025 23:41:54 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95e415b7bb6ef4a5d762963266c62934e56b2125cb6f34f1b39ef728277babaf`  
-		Last Modified: Fri, 05 Dec 2025 18:26:24 GMT  
-		Size: 14.1 MB (14066910 bytes)  
+	-	`sha256:8d59732b50d772fc2a63ed3b3bc4898abc18cae9cccba4ef2f0333f5fb0e7ba2`  
+		Last Modified: Tue, 09 Dec 2025 00:30:34 GMT  
+		Size: 14.1 MB (14066986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3e94ff3b7389939193bf3744df950b1b6812ae8da1190dc92a51bd46b557a90`  
-		Last Modified: Fri, 05 Dec 2025 18:26:22 GMT  
-		Size: 1.2 KB (1181 bytes)  
+	-	`sha256:0b9ea49a67c48cace685d606b3f887a5fd9ff63908734b51b4890c6105e56ef4`  
+		Last Modified: Tue, 09 Dec 2025 00:30:32 GMT  
+		Size: 1.2 KB (1176 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe411b92f67b430891e936ca08a5e1cd313a928d6a0b5c895ef95462693337a2`  
-		Last Modified: Fri, 05 Dec 2025 18:26:22 GMT  
+	-	`sha256:941774d9f65ec119cd56c9bbed23a57219a6fa1911f8e062ca471bbf4fd623bc`  
+		Last Modified: Tue, 09 Dec 2025 00:30:32 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d327b0f71f766af821df3cc3f8c60633b3cc4b581716d09189138a95113c41e4`  
-		Last Modified: Fri, 05 Dec 2025 18:26:22 GMT  
-		Size: 478.0 B  
+	-	`sha256:8cc27b654da6f0b3f4382cb8960f73b1fb7c814a0a3c5cb0a3f941af4ea99a23`  
+		Last Modified: Tue, 09 Dec 2025 00:30:32 GMT  
+		Size: 476.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16.10-debian-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:422b75f0ad6547b0edf3629a86cb0d8bfa0a9c4568e7d948072e3fb3b19594dd
+$ docker pull fluentd@sha256:984fdedd90f9309abbc3799929f74cffc2de9f80692ecd9169b0892454e4d2ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2686680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97ddc6319f0b577f030f3468ad7f19a8242115751b6b7539e4ef77c66958c5a2`
+-	Image ID: `sha256:975aa5a37f7a2c31fc48e03ba15cfeb8c2e357fe556c3d973e45e12c02ce15a4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:35a5b26a0068614d29d7ccaa822ae455af1793e67186659baa5ac81c24c012b3`  
-		Last Modified: Fri, 05 Dec 2025 21:29:11 GMT  
+	-	`sha256:73c4ffc7140271f22dd8279f6c31f7938293e5111ecc716f02ea504e816832ba`  
+		Last Modified: Tue, 09 Dec 2025 03:29:43 GMT  
 		Size: 2.7 MB (2665636 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:19705baecb61d251c470b80f53b9a45b3631e4f9e083b03a05ef96cf7dbe57fc`  
-		Last Modified: Fri, 05 Dec 2025 21:29:12 GMT  
+	-	`sha256:d9047a70b813f621b41077afcc62fd9c5f26b6bc441acbd054403c7be9043adf`  
+		Last Modified: Tue, 09 Dec 2025 03:29:44 GMT  
 		Size: 21.0 KB (21044 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2668,137 +2668,137 @@ $ docker pull fluentd@sha256:0ffd0835a12ab2978c5ba00ce42639c63b129c6ae78a14b829d
 ### `fluentd:v1.16.10-debian-1.0` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:f69c0ac101d426fb510e2568285243cc15b5a98cfccaf14818186bc6c79cfc01
+$ docker pull fluentd@sha256:42a50aafafb7ad72a7efa905263bebb041d4584ec4ab32c4def4ac6a3979804f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.6 MB (77565937 bytes)**  
+-	Total Size: **77.6 MB (77566403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31cdef0efb4dbc46f89254da272c4ce8bbeb30e92d42b3f68cf621acc6842f28`
+-	Image ID: `sha256:4bd36bd3e4a562a31bd6d48e59c0852d0e577ba6758200ca6656433524ded4c8`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1763337600'
-# Tue, 18 Nov 2025 05:13:59 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1765152000'
+# Tue, 09 Dec 2025 01:17:41 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 18 Nov 2025 05:13:59 GMT
+# Tue, 09 Dec 2025 01:17:42 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV RUBY_VERSION=3.2.9
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libreadline-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:20:34 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:20:35 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:20:35 GMT
+# Tue, 09 Dec 2025 01:25:54 GMT
 CMD ["irb"]
-# Fri, 05 Dec 2025 18:27:05 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Fri, 05 Dec 2025 18:27:05 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.10
-# Fri, 05 Dec 2025 18:27:05 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 ENV TINI_VERSION=0.18.0
-# Fri, 05 Dec 2025 18:27:05 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.16.1  && gem install json -v 2.6.3  && gem install rexml -v 3.4.0  && gem install async -v 1.31.0  && gem install async-http -v 0.60.2  && gem install fluentd -v 1.16.10  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test # buildkit
-# Fri, 05 Dec 2025 18:27:06 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Fri, 05 Dec 2025 18:27:06 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 USER fluent
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Fri, 05 Dec 2025 18:27:07 GMT
+# Tue, 09 Dec 2025 03:03:41 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:9c38e4ef02fd030fdf68385dfbbfcada530597ca5203cf2638356502ae852f19`  
-		Last Modified: Tue, 18 Nov 2025 01:11:11 GMT  
-		Size: 26.9 MB (26884392 bytes)  
+	-	`sha256:00a29f44cb5b31bbcf043ec5426ee1c018bb26435350712cb5e48d56c6d95792`  
+		Last Modified: Mon, 08 Dec 2025 22:15:04 GMT  
+		Size: 26.9 MB (26884429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b7196bcb3e6bc745b16dc7a6e7435e03f41c2430ffd8c34ac4f2bf12a675f3f`  
-		Last Modified: Tue, 18 Nov 2025 05:16:34 GMT  
-		Size: 3.2 MB (3170278 bytes)  
+	-	`sha256:734cd02b018a2944d3e3e9c4c7ac4331ffa839e8decb9c0e580b9944ccad4670`  
+		Last Modified: Tue, 09 Dec 2025 01:20:38 GMT  
+		Size: 3.2 MB (3170317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b108059018115f7f88520870ada2c23aea918378f4c030a9d69dd2718b920e8`  
-		Last Modified: Tue, 18 Nov 2025 05:16:34 GMT  
-		Size: 188.0 B  
+	-	`sha256:1042d38ade2080d53e59a797ad8f138d5b2c91df16155271b1adb453bd7efa49`  
+		Last Modified: Tue, 09 Dec 2025 01:20:37 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19c181644556269bfc25c91fddc70dc96c3037ebde78ae77c288ab61f0e6e884`  
-		Last Modified: Tue, 18 Nov 2025 05:20:56 GMT  
-		Size: 33.1 MB (33098859 bytes)  
+	-	`sha256:d21003c0bedd1a5149196004c19cca898d450c5360589bb85a23713d0c779c59`  
+		Last Modified: Tue, 09 Dec 2025 01:26:16 GMT  
+		Size: 33.1 MB (33099397 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:721217bef3eacac627789c34868d8b3ff6d7a61ba3b996aaf5c6c870c8476926`  
-		Last Modified: Tue, 18 Nov 2025 05:20:53 GMT  
+	-	`sha256:bc25eccf0626368d20d6279a29703ab649c7bda27f46db0e9e3d0b81869d37c1`  
+		Last Modified: Tue, 09 Dec 2025 01:26:13 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26046c3b1abeef7c33bd45ed3e8a03d258951da45dc21e9b8373eedd1f5f5ff9`  
-		Last Modified: Fri, 05 Dec 2025 18:27:48 GMT  
-		Size: 14.4 MB (14410009 bytes)  
+	-	`sha256:e8bb14285c2856c7315efe869824464fb083b3d0d0ae6d601014335f184541fe`  
+		Last Modified: Tue, 09 Dec 2025 03:04:01 GMT  
+		Size: 14.4 MB (14409876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:125d7eec686df9edae7a6ac18850befefa7c1fac9fea4f7e3f509b6c4f1ea69a`  
-		Last Modified: Fri, 05 Dec 2025 18:27:47 GMT  
-		Size: 1.2 KB (1186 bytes)  
+	-	`sha256:d122b552c19c02e68bffefd1b9a047e3cb5299b290b2ba9a332111a6896fb8da`  
+		Last Modified: Tue, 09 Dec 2025 03:04:01 GMT  
+		Size: 1.2 KB (1176 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24e1c0056ce3c5da9d331307bfd0cce63cb6697d09cf1a3d11ccdcce013eb9f6`  
-		Last Modified: Fri, 05 Dec 2025 18:27:46 GMT  
-		Size: 403.0 B  
+	-	`sha256:1a02d1a160be676fdcfeae88fd16b53257eb5c63264b672141884741357c5fae`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a2fa10e47d9f70546b39967515c9158d8e92f3711cd82836315c081a7b49a15`  
-		Last Modified: Fri, 05 Dec 2025 18:27:47 GMT  
-		Size: 479.0 B  
+	-	`sha256:24d7919d6937c16efba57c5e4baa0f77bca15b47384990191690eafbdbf17182`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 475.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16.10-debian-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:7704c5dadf22a7b220a098f6d1de5a89398c85705829bc064caf381c8d1a7d2e
+$ docker pull fluentd@sha256:28efa104b4f776281691936986ec1c8086f92a4ff75b4065a1816bbee03e9f2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2686350 bytes)**  
+-	Total Size: **2.7 MB (2686349 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f746bb9d807635b7fc8fdd56a4cb32fd2bfea8b18b873c234b2d098491e5a43`
+-	Image ID: `sha256:ea5e60271481ac0174894cfcbd1d8b9d7a43c494c001ea5d73ee6c8e0468a26b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:943005098da80c1eeaefa74349ebdff4a00a402024ce9d2605fdb9aeaea2a22f`  
-		Last Modified: Fri, 05 Dec 2025 21:29:21 GMT  
+	-	`sha256:82bea9145acb0bd653bd756acb2409e5cb74d50a51cd89566c674afe05306c3c`  
+		Last Modified: Tue, 09 Dec 2025 03:29:52 GMT  
 		Size: 2.7 MB (2665282 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f91f949abc1fa4f80f64f430c7466760c232e6b1b146957ebf5d5955579ec65a`  
-		Last Modified: Fri, 05 Dec 2025 21:29:21 GMT  
-		Size: 21.1 KB (21068 bytes)  
+	-	`sha256:32e64058117bfdc56095d794cb3ae804f70fe1baacfa7c5e6de16a8c4367bd4a`  
+		Last Modified: Tue, 09 Dec 2025 03:29:53 GMT  
+		Size: 21.1 KB (21067 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `fluentd:v1.19-1`
 
 ```console
-$ docker pull fluentd@sha256:00aeea8046975151285dee7de06f37fbca859a48dd9afa6b948ae7f13ba28e59
+$ docker pull fluentd@sha256:056ebdc491061079ab78aaf7ed35662018e449492c46a7d9fd05feac730c2f91
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2821,640 +2821,640 @@ $ docker pull fluentd@sha256:00aeea8046975151285dee7de06f37fbca859a48dd9afa6b948
 ### `fluentd:v1.19-1` - linux; amd64
 
 ```console
-$ docker pull fluentd@sha256:6240494942204615ec7b6afc505afe5251fd9447b9f97aa1d15147b3c101433f
+$ docker pull fluentd@sha256:f1854e28f36cad811359493ee9c1e323788a38cf41f24856b433ff4253584273
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.2 MB (79219006 bytes)**  
+-	Total Size: **79.2 MB (79218641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd66d9d1a7d5268d13f4c183c9e2f0baffbc451a07a95d3a92aa413b15629db7`
+-	Image ID: `sha256:36c66715a9b546bdbe3cdecada630daf6a7fcbee47df1b8fcc2bd926586c792d`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 06:00:57 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:41:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 06:00:57 GMT
+# Mon, 08 Dec 2025 23:41:26 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:0e4bc2bd6656e6e004e3c749af70e5650bac2258243eb0949dea51cb8b7863db`  
-		Last Modified: Tue, 18 Nov 2025 02:35:01 GMT  
-		Size: 29.8 MB (29776484 bytes)  
+	-	`sha256:1733a4cd59540b3470ff7a90963bcdea5b543279dd6bdaf022d7883fdad221e5`  
+		Last Modified: Mon, 08 Dec 2025 22:17:58 GMT  
+		Size: 29.8 MB (29776496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecb0562513a544d09b243cd53af17176ae058cdb46bab21dc80e6e0e176085ac`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
-		Size: 1.3 MB (1279393 bytes)  
+	-	`sha256:43ae949789af527dd9c4bd7de681ac14f1a5fe2debe4a7a04ba3c8d0d8f5c3fb`  
+		Last Modified: Mon, 08 Dec 2025 23:44:04 GMT  
+		Size: 1.3 MB (1279388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2995c07ae76a079f87ad5194b6ae8ae189e2697989ee2ec3ff402c4bbdbaef98`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
-		Size: 190.0 B  
+	-	`sha256:94d82444e1da05ff4a53a213c6cd8ec9dc3fdf2715745f99678454cb58f004f7`  
+		Last Modified: Mon, 08 Dec 2025 23:43:52 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22a8b74c7e9beb752e09eab60f51bfed7d4156be9c8a4cb31e65c1c593e477ad`  
-		Last Modified: Tue, 18 Nov 2025 06:03:40 GMT  
-		Size: 42.2 MB (42158682 bytes)  
+	-	`sha256:102557edb4d1304b6930747c07bd40abb5f97283ca8dce01c2fcad694b84c1d0`  
+		Last Modified: Mon, 08 Dec 2025 23:44:08 GMT  
+		Size: 42.2 MB (42158459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50951878876ddf823dfebd9e0c1677361d53bec1ff62831466fd280b78c485e7`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
+	-	`sha256:b7a7a64f30f673db60828d7e540f6a9cd1e1683c146df8a193ef3781e4784660`  
+		Last Modified: Mon, 08 Dec 2025 23:44:04 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72585dd7596a87134366b4811336b292df351eb34419901e60defb1c412033a5`  
-		Last Modified: Thu, 04 Dec 2025 18:59:08 GMT  
-		Size: 6.0 MB (6002049 bytes)  
+	-	`sha256:49bf4c70db087c33e5acc082c9bc5982fc3a684f9a8a6ee949c7e7929e252fed`  
+		Last Modified: Tue, 09 Dec 2025 00:59:42 GMT  
+		Size: 6.0 MB (6001910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23d21ae1bbd8cf7a5c81316fadc4c1d605148b8f29723da71bf2c957621f4b22`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:7c96e69020f7ae05041307e1c9091e6dc01afe1ec5878d7c9c14a4539d4ffd7c`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8fa2be93123d4ff3aaff45b160afa29dd535164e2fd743708e5c83ee822cf0`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 403.0 B  
+	-	`sha256:7051ea010ff321ea91e14ce49e8613b4a3222cfca6262411c3c89e4c16cb71a1`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ccca90a00656c889b24dad43ee644103f1f035b2f65ce35b0f34d35451734c`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 479.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `fluentd:v1.19-1` - unknown; unknown
-
-```console
-$ docker pull fluentd@sha256:84fb8d8f71409aa4324f6d008d4a031861d8ec48f2cdd687031c4d9f1d0c01d0
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2301984 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e85d48d5d59e2d36d878a10af83b710812f3818fc348bf1863aca8c57d246639`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:d37abc9e254151598cd02552918a94209b0571d5807e8e2354767fee2d26f799`  
-		Last Modified: Thu, 04 Dec 2025 21:28:40 GMT  
-		Size: 2.3 MB (2280658 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:8e35172fe75a5483bc13670bb98f415318c4559e767f1a20689dff3cf3360c73`  
-		Last Modified: Thu, 04 Dec 2025 21:28:41 GMT  
-		Size: 21.3 KB (21326 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `fluentd:v1.19-1` - linux; arm variant v5
-
-```console
-$ docker pull fluentd@sha256:aaebbb2d9630e58872361a78ea08ff2f9fd24ccb3c1144b05466e656087c1382
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.1 MB (73104845 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:20088dbd13800e95c34338237e95cdad749f7d4f04f80ddf0604a06ed4eaf907`
--	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
--	Default Command: `["fluentd"]`
-
-```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:18:53 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:18:53 GMT
-RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 04:21:56 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:21:56 GMT
-RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:20 GMT
-LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:20 GMT
-LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:20 GMT
-RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:20 GMT
-EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:20 GMT
-USER fluent
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:20 GMT
-CMD ["fluentd"]
-```
-
--	Layers:
-	-	`sha256:a1c0783a82710a65871102568a0ace23c3dd0f89dba1af72c3290089eac458f2`  
-		Last Modified: Tue, 18 Nov 2025 01:14:09 GMT  
-		Size: 27.9 MB (27944147 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a8bddf98d29f007597c2419ece53918ed2a02b6807f244eba291b11a115ce2f`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 1.3 MB (1263024 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ce6e0d17644462250ed0239ef347ef83d3d46d91cc236e61f5d1ee58840ebe6`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 189.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70dba72f3360e3a96295c7cea72647313a78f2723776a3e529d977bc6fb38431`  
-		Last Modified: Tue, 18 Nov 2025 04:22:15 GMT  
-		Size: 38.0 MB (37994184 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0930b6e7a3909c3d28136a1cc19c3a553fbbb2a2d33988cd25bd43effa0a140`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 143.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6be6bc7b989da34f73dc506d83cb9f48c37ee8105fe87bd7f52bca4542d7cee2`  
-		Last Modified: Thu, 04 Dec 2025 19:00:42 GMT  
-		Size: 5.9 MB (5901093 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80c6f3399ef20bf6be1ed6a2ca72c0a24e3ad0d84b16a9ef8a0709e1c7659f8f`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 1.2 KB (1183 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b70663e3166cf0a7abf84c4ed0eafa32f04846e2058e90a97ac3e06d24369d32`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 403.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a56bfbe0d3c92ea6b9ebb1c97197ffb757b2487720ce3d2ab6a5a0538ad7bf5b`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 479.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `fluentd:v1.19-1` - unknown; unknown
-
-```console
-$ docker pull fluentd@sha256:248114ee7add057b9522b312fa3eef5e127b5ce66321a1c70af7ebcf0361e2e6
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305056 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb431f17e2b58f86b090040b8d1cbac7f7a09a0eb6151fd7d76271ab122db28d`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:1253a50e411a8bc80c1968d6d9653822decb6287cafc575af11b24f9ca7d9304`  
-		Last Modified: Thu, 04 Dec 2025 21:28:45 GMT  
-		Size: 2.3 MB (2283629 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:f6d735f6d01c1fac1cdb270eb1066ee221e9e96a36d6d1970722e33bce8fd801`  
-		Last Modified: Thu, 04 Dec 2025 21:28:46 GMT  
-		Size: 21.4 KB (21427 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `fluentd:v1.19-1` - linux; arm variant v7
-
-```console
-$ docker pull fluentd@sha256:19368b5ced494adadbccad66e2b3d118db4c880ed6a2159f28dc54906d309884
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.0 MB (70983027 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b4b6c0c43b2bade13a1281582e1f172afddcb1d640eabe2965dbe6d7f4cc2d4`
--	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
--	Default Command: `["fluentd"]`
-
-```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:59:14 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:59:14 GMT
-RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 05:01:55 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:01:55 GMT
-RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:07 GMT
-LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:07 GMT
-LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:07 GMT
-RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:07 GMT
-RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:08 GMT
-EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:08 GMT
-USER fluent
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:08 GMT
-CMD ["fluentd"]
-```
-
--	Layers:
-	-	`sha256:8202667160e65087c34b2510837039e29b29936f1b75fc737a33219ae9c06ec0`  
-		Last Modified: Tue, 18 Nov 2025 01:14:24 GMT  
-		Size: 26.2 MB (26209960 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b64d8370801a134071a40fe32d3d2fa7e0e17d18b25e5289e7237638fa8e7778`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 1.2 MB (1236519 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:926b3223558fcb7b7da07de149d35cb77b0270a5ab9574f7885d63190a335526`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 190.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0053f0fd615ae9d3957c571c9b6d06b6a892f68a64ba86fcf53aa1540117bbac`  
-		Last Modified: Tue, 18 Nov 2025 05:02:15 GMT  
-		Size: 37.9 MB (37865819 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f081e8cb5f13e31c833ade5ef8bd8bc86005b1083ad01fb5c19150cfe1b852`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 143.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b0deaf0ae9760f48e1ab076a5e92832ce7edb015a71b9617c411340ed2fabe3`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 5.7 MB (5668328 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a918df6a39f29e19adc2cfe7099cb1847628765d58e9f51891b9f7137ee0b33f`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
-		Size: 1.2 KB (1183 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e71a32294b22c81555f0bda1421dd249067a446ecc482b86b1956785045a4ff`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
-		Size: 407.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4645e19fd544b5af4ead15a19a0f7cb149338c69fe9e9cbb6765a8231b1afb9`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
+	-	`sha256:982640467ff0abcdc2d1b5a216d9700c3c835aeb1d919073746737b8969f7c8b`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
 		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:b33da86ad731f86d80dc973681026b8a368e7c5c123c8c652c25b2b67c383343
+$ docker pull fluentd@sha256:a29a7ffb611c3adc50b9ea2dd348490ac889db53e7e26caba932c0d48453b058
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303497 bytes)**  
+-	Total Size: **2.3 MB (2301984 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc49d110e1779f25424b64b75f867f39c651900ae1b12fc1badd05db7f4a56ee`
+-	Image ID: `sha256:48f8104217d65fb0113c9bf35d715716126f09cfbc1295f4c719f64078a054c9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:edc79561200a3cdc3d20f9abf1bf47a6fd9495dc898880e298c463f493da599c`  
-		Last Modified: Thu, 04 Dec 2025 21:28:51 GMT  
+	-	`sha256:bebbcc5ba4deb0e3dbda1204c816cc666c33321345bdcf92a17412c208ca5854`  
+		Last Modified: Tue, 09 Dec 2025 03:29:19 GMT  
+		Size: 2.3 MB (2280658 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2070db97328c3a78a1e59b1f7c3cec0a9da19f2d3e7fa1fc92c46ea6e49650e2`  
+		Last Modified: Tue, 09 Dec 2025 03:29:20 GMT  
+		Size: 21.3 KB (21326 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `fluentd:v1.19-1` - linux; arm variant v5
+
+```console
+$ docker pull fluentd@sha256:f124ea40754ba08bbac0e5843e8f9023994bf2b8238ee72e8ec2d238b9b6a5b5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **73.1 MB (73104752 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cc2f4a67d52435e88678f7a653d15a7beabb5c883fa2f08bb3ac57b9aed29bb8`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 00:36:11 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
+# Tue, 09 Dec 2025 00:36:11 GMT
+RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV LANG=C.UTF-8
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_VERSION=3.4.7
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
+# Tue, 09 Dec 2025 00:39:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 09 Dec 2025 00:39:15 GMT
+RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+CMD ["irb"]
+# Tue, 09 Dec 2025 01:57:11 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Tue, 09 Dec 2025 01:57:11 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
+# Tue, 09 Dec 2025 01:57:11 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+COPY fluent.conf /fluentd/etc/ # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+COPY entrypoint.sh /bin/ # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Tue, 09 Dec 2025 01:57:11 GMT
+EXPOSE map[24224/tcp:{} 5140/tcp:{}]
+# Tue, 09 Dec 2025 01:57:11 GMT
+USER fluent
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Tue, 09 Dec 2025 01:57:11 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:d97bc71d0fa535127863fdab265dfddb07b3cda35b80de4dd2b9b67fe154c856`  
+		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
+		Size: 27.9 MB (27944187 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:60b6a68a4c64d1607140d9e7ef52b820f028d1745795db4373db1d67f60365f1`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 1.3 MB (1263005 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6fc48f102063d847095ed56df1cf3e6cfa63ed0ceb24fe7f8335198230e2ccdc`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0e5241e4c81242518e434f00d9f79a59f18fc609e23a17fc7967f5f3bd026daf`  
+		Last Modified: Tue, 09 Dec 2025 00:39:35 GMT  
+		Size: 38.0 MB (37994161 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:87f7b942b9f3410c6c1da7dc6e29bbc3b9606a378eef9f16f0fff45c912da461`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 143.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1bdcf5b9bbb7e43d0bbc8bf7fdb8750ccd78deb95d6221e87a15ec98a4eae6dc`  
+		Last Modified: Tue, 09 Dec 2025 01:57:27 GMT  
+		Size: 5.9 MB (5901010 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aa13ae067c168ac5fe27c95e549cc4238ec2133319bc03114df7a7aa8a9ecba6`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 1.2 KB (1178 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b806a6d8ca493494d796544b972cae88221361e2f48ed5ea72d5bcee6752152d`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 403.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c86fd63a29b98af5e626ce3a2ba323a6e6b866adbc779bceff239eb53f827ad9`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 476.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `fluentd:v1.19-1` - unknown; unknown
+
+```console
+$ docker pull fluentd@sha256:8ac93648d48a1a6c1b4b7160d2abd004cee13b8a907093d4ff1c16f268c39c6f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2305056 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a9edf65a7eb020bcff5df6e29b1ff7633094bc897d3a482abfb059ed3308aad5`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:a8f8885c07c68215d8e1178f95df1911fe84d553ed134051c468235e57295d34`  
+		Last Modified: Tue, 09 Dec 2025 03:29:24 GMT  
+		Size: 2.3 MB (2283629 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:326295480ebdff77047de45607a002b0b1206eaecd36eca8cf494b5df0b6a3af`  
+		Last Modified: Tue, 09 Dec 2025 03:29:25 GMT  
+		Size: 21.4 KB (21427 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `fluentd:v1.19-1` - linux; arm variant v7
+
+```console
+$ docker pull fluentd@sha256:80ed25e467765ea9179c1336cd154facbbc97b76ff1d4599a24a28a6c4820cda
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.0 MB (70983028 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8d5ef7e2cf73a40aa19447b8435c604f51e51d329862092213c7116177e0b18e`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 01:10:33 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
+# Tue, 09 Dec 2025 01:10:33 GMT
+RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV LANG=C.UTF-8
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_VERSION=3.4.7
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
+# Tue, 09 Dec 2025 01:13:21 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 09 Dec 2025 01:13:22 GMT
+RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
+# Tue, 09 Dec 2025 01:13:22 GMT
+CMD ["irb"]
+# Tue, 09 Dec 2025 02:25:30 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Tue, 09 Dec 2025 02:25:30 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
+# Tue, 09 Dec 2025 02:25:30 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+COPY fluent.conf /fluentd/etc/ # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+COPY entrypoint.sh /bin/ # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Tue, 09 Dec 2025 02:25:30 GMT
+EXPOSE map[24224/tcp:{} 5140/tcp:{}]
+# Tue, 09 Dec 2025 02:25:30 GMT
+USER fluent
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Tue, 09 Dec 2025 02:25:30 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:cfc411ffeb71f696e2a89e33e91be9b70084d6c3383474344babe3a4a21eb843`  
+		Last Modified: Mon, 08 Dec 2025 22:16:57 GMT  
+		Size: 26.2 MB (26210013 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b1e7a6dfdb7e0c4de081184afd9356a839f7025591f607c4aaebd07a86bfa633`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 1.2 MB (1236504 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:783d9710c1c77c87df8e2c7764d0abdfa7c0e08a47c4358cbcd1e8856dbb9301`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6727d5012816a8b4a36517d36f5c95dba1143f1fdc7eba217d31f5e7932ae058`  
+		Last Modified: Tue, 09 Dec 2025 01:13:41 GMT  
+		Size: 37.9 MB (37865781 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:52980762c6939f2c87a86ec276e3dd2020f2bb8cdda2a49d4dbd67eb698da3eb`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 143.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:da2811bbd5bbeea2292afee9c7e5020d6c9fa7931713a9f215c32ee1d2525d9e`  
+		Last Modified: Tue, 09 Dec 2025 02:25:47 GMT  
+		Size: 5.7 MB (5668338 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2e0d6282c7790097c8a2ed51f778f05973188b6cc525eb38ecbbfc500a88dee5`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 1.2 KB (1178 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:164fab4a951f344ebdf00612539a04256320c234576b296f68e46dea61edbba3`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 404.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9e0ece9218deaf151a88e6afb1c4e0352361105366d9b297640b43e906b9e759`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 478.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `fluentd:v1.19-1` - unknown; unknown
+
+```console
+$ docker pull fluentd@sha256:86905e76b1c132c3d0a1e5f3a4c53983f061920d595ee8c958319713624e7ab3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2303497 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:65121fab5cf409c60e1779720becd0a55afe203d6a2f9cba148cc639cee6ac3b`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:dd15196e04866dfb229371c1e0a60dd71c0e82af31dbb0c8efc2710f9d7e1030`  
+		Last Modified: Tue, 09 Dec 2025 03:29:29 GMT  
 		Size: 2.3 MB (2282070 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3e1c082bb1301e59ae044904c59fece993b0c269294fb4ebb29e5eba628915f1`  
-		Last Modified: Thu, 04 Dec 2025 21:28:53 GMT  
+	-	`sha256:e6395c6daa3e8158759a8c8b6a3e3abe898b1b141e63c1954a898dec47239ccf`  
+		Last Modified: Tue, 09 Dec 2025 03:29:30 GMT  
 		Size: 21.4 KB (21427 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.19-1` - linux; arm64 variant v8
 
 ```console
-$ docker pull fluentd@sha256:dad79d06105b9950b09ae6c76013f79685999c3df9cf739b0ab0d1e99ab90cdb
+$ docker pull fluentd@sha256:718ca0bb84f06f7fdc37bd49d53b1940e8e499878cf52cf1b1dc9361c8cce42f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.5 MB (79536779 bytes)**  
+-	Total Size: **79.5 MB (79536732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4b2d5d26e7dec9ed23e9d93d0f2e1be085b1eaab727fc6711b593b09c4c4723a`
+-	Image ID: `sha256:009c7ecf6da6c474bbe209d4e31585761254051960b0e554b454848101a4eaf7`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:45:57 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:50:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:45:58 GMT
+# Mon, 08 Dec 2025 23:50:45 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:48:39 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:48:39 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:b89cf3ec7a3ed3a58015edd6724125187f0d284147e09b5739b511c74222b2a4`  
-		Last Modified: Tue, 18 Nov 2025 01:13:26 GMT  
-		Size: 30.1 MB (30138610 bytes)  
+	-	`sha256:f626fba1463b32b20f78d29b52dcf15be927dbb5372a9ba6a5f97aad47ae220b`  
+		Last Modified: Mon, 08 Dec 2025 22:17:19 GMT  
+		Size: 30.1 MB (30138628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:623192602c00e918197dfe6e2a1def0175e7be0d446a268ed38b6b5a621d38e0`  
-		Last Modified: Tue, 18 Nov 2025 04:48:55 GMT  
-		Size: 1.3 MB (1261685 bytes)  
+	-	`sha256:7eaf4b7d6af85fa2d477bc8c6b8ff0abab28c0132199981bdea9c0fca84569b4`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
+		Size: 1.3 MB (1261658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee5fe6e2e9edffda349665022b4300b140e6a85f15a0f7614134df0867bcd551`  
-		Last Modified: Tue, 18 Nov 2025 04:48:55 GMT  
-		Size: 189.0 B  
+	-	`sha256:4f911311bcccab7cf68fb0509ee5408de0a72daec80c6ccd44b123cc0c6e41c8`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85c522fdb9fff298474b76a11223cdcb250793d0c701b8cf389c0375800c7d5c`  
-		Last Modified: Tue, 18 Nov 2025 04:48:57 GMT  
-		Size: 42.1 MB (42145706 bytes)  
+	-	`sha256:364b5aea1f4626e813a93901f04bb24cb8787623734b3d2f15a5ecbf285d584c`  
+		Last Modified: Mon, 08 Dec 2025 23:53:35 GMT  
+		Size: 42.1 MB (42145686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3907ba9f7c5e39a58b009710a158a43136020eb8b46dc729f4426b65e03945ab`  
-		Last Modified: Tue, 18 Nov 2025 04:48:54 GMT  
+	-	`sha256:7741a8581bb0066370ece471f6aa770ab4d3f3d46eb393a106ee1d6cd6c2ac44`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
 		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62078078c49a19cbd32c8398ca08eb739eba2a5c8f7e3ec2cc12e2f4b8c3b2db`  
-		Last Modified: Thu, 04 Dec 2025 18:59:44 GMT  
-		Size: 6.0 MB (5988380 bytes)  
+	-	`sha256:f30c8ff64bcfb969527bc42ad4e1ad72b62d6cd0e6fee85af029b74e7882c8e5`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 6.0 MB (5988371 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16e731dcc3a52a3e4926909f34921ae4f16049058441be34d00049373c20519d`  
-		Last Modified: Thu, 04 Dec 2025 18:59:46 GMT  
-		Size: 1.2 KB (1186 bytes)  
+	-	`sha256:cf432b8b15239d95c4f0325fe81ff1431d64de2fd96d1b7f6863814c540228bd`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:999b33ee39bc926af8f4930b89aa17f0a6b820c5ffa7479e1bfbe6d7c3b7509e`  
-		Last Modified: Thu, 04 Dec 2025 18:59:45 GMT  
-		Size: 402.0 B  
+	-	`sha256:166d8c0a8e8736f2fe6ff7f94c1012f5ced0e92ee4185869ec3cc496e0903780`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c311d60c665f9b731977ba41c34e0d299143e31b5709d86dda8eb3f392a54e6`  
-		Last Modified: Thu, 04 Dec 2025 18:59:45 GMT  
-		Size: 479.0 B  
+	-	`sha256:f28088a956e911a8f29e5258cc83d1b1ff723af0eb15e59b56ab09146aaf024f`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:06771e235a93cdf7216de411468857b8d19c5b37a9904e274f563c4f84e8a9f4
+$ docker pull fluentd@sha256:6d4336aa08b546a7f78742fe70aa1337eb1f9df67127f24e44ff36cea6091e0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2302387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75bbb2a23905b39c605e81cd2c26ddfe82db37d5659170919172cbdfe9b8819f`
+-	Image ID: `sha256:331fc19fc612036e9b9572fb00e561ecb40dcbce480229fbe0dacf203bb58464`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7eedf47456bd91301c20eb29396d34c6238567229f91c78d64a84385ba5b5c9b`  
-		Last Modified: Thu, 04 Dec 2025 21:28:57 GMT  
+	-	`sha256:772a37f2ff865060ea30e10008b35646b395237dcce4e85e771b3aee446e763b`  
+		Last Modified: Tue, 09 Dec 2025 03:29:34 GMT  
 		Size: 2.3 MB (2280930 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f02e697a3cb8e25e5f9c19892fe981d521d4b20a5ae978535af0a692e681d6e4`  
-		Last Modified: Thu, 04 Dec 2025 21:28:57 GMT  
+	-	`sha256:4133a1074193ccc24229fa34ed308abc4a7efae19431bd52a02f81f873bf1ca5`  
+		Last Modified: Tue, 09 Dec 2025 03:29:35 GMT  
 		Size: 21.5 KB (21457 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.19-1` - linux; 386
 
 ```console
-$ docker pull fluentd@sha256:56c84a09c3ec5836ff8a1ecd8ebda47efc0d785ee4719a2920828714257f476c
+$ docker pull fluentd@sha256:599d5b7afd9f493339ccaab7d3287bbe575670d5512a0a30ddc372f2b4662333
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.3 MB (76296093 bytes)**  
+-	Total Size: **76.3 MB (76296470 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:341497361633166c5f1384541265cc4c337cdbd3c29ac2d729d25563dc2b4817`
+-	Image ID: `sha256:3226219d46e9e8d7e930a62a5f59f32c4b9bf53dedf8185fb4523fa751ae8c43`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 03:40:43 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:38:38 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 03:40:43 GMT
+# Mon, 08 Dec 2025 23:38:38 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:8fdd29f45eb19adab28e642f5b411c2aac45db9e7dfc1ab412acdcf1365af598`  
-		Last Modified: Tue, 18 Nov 2025 01:13:49 GMT  
-		Size: 31.3 MB (31293068 bytes)  
+	-	`sha256:2648c88d9207cd6090be83f4a97e2aa4080930987d8fb62195cc994194160e67`  
+		Last Modified: Mon, 08 Dec 2025 22:17:03 GMT  
+		Size: 31.3 MB (31293070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:486bef966be95a2220ea41b52e0e83a8a622f90c5f320368a5f0d7284a00c503`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
-		Size: 1.3 MB (1287214 bytes)  
+	-	`sha256:f294212caa020512a8aa004ccf0ad2b44f2f61a493fe313aac9a4e4ee4616f88`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
+		Size: 1.3 MB (1287234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31f45ed37d5457ae44f5b9a372ecc7bde1dd97d5be333bac0f4030719c7f0eca`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
+	-	`sha256:f65638b1819071ea4ed695525bf34b0382fbf37355d69b43d7e7a51da79386c2`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:402fa9c5b261b8af75a607827e3e965cc7ce4351d91e3eba319a98783514bc3d`  
-		Last Modified: Tue, 18 Nov 2025 03:43:29 GMT  
-		Size: 37.7 MB (37740240 bytes)  
+	-	`sha256:abf2a7d1e8d2815af0f490c9813945dc251f9437878cdc62fd3c2b51ed2604f6`  
+		Last Modified: Mon, 08 Dec 2025 23:41:29 GMT  
+		Size: 37.7 MB (37740224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b3646abfea40cabe9f48dabaff87823bc4de7febc7191871f992e8cdd29e5cc`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
+	-	`sha256:71d46bda2c903ca306081bb1f1b3dd1a3ed78ae7db3f6ec6878732b92d7fce01`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fee570408516d44060c51273b5d738a6205bde32c3fc376fd9ef14e4a4457dce`  
-		Last Modified: Thu, 04 Dec 2025 18:58:23 GMT  
-		Size: 6.0 MB (5973173 bytes)  
+	-	`sha256:0225134b3c4f305ef3b4ea683e6ef3ebe867bfe93748d883bf0024c8ca1d66ad`  
+		Last Modified: Tue, 09 Dec 2025 00:30:21 GMT  
+		Size: 6.0 MB (5973548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6275cd6a8a20192011b6e7b4404598eec9c28328967093f4ff56a0ed65ccaa13`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:2e1660a934088ae96a9d6badbe46ba3388e69f4f373324aeb706f83554e2e07a`  
+		Last Modified: Tue, 09 Dec 2025 00:30:20 GMT  
+		Size: 1.2 KB (1180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:573b1d8dffa356f70d09c25d0a422654add5b105c3303262e90e092f928c0476`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
+	-	`sha256:8930a2ad4093b7ed2e2ced5f3181c9b1e77a957a48fe07611c3bb512cd885fc3`  
+		Last Modified: Tue, 09 Dec 2025 00:30:21 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad3b55019ddd93dad3e462ed7516328b0c240a97a4b8c4a23e529ed5be7854ad`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
-		Size: 479.0 B  
+	-	`sha256:63f7ef0f2a1ee408469afa43876a95a3a4038339be79b2e8293dafce7e35ea9e`  
+		Last Modified: Tue, 09 Dec 2025 00:30:20 GMT  
+		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:744c888b5dc6510967c83cc08cbce6f8dc8d337314c61a7a7dfbf1d1291665fb
+$ docker pull fluentd@sha256:ab5f503e6138fb45fb9170d4f5d73200f9526153e68920ff9958f76be1c3c399
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2299133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ee20af4a982057aade0f5e6c1d71ab447ef9f7b85bbff621c4e002211248bfa`
+-	Image ID: `sha256:cafd53262ce8b25a127db185db86996e348ec59449d1a1162e6fbfee6b3fdd20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ffd30fcff8d76a898b59a12fe9d10b319b7a244e1cfb260572d112cd4569634c`  
-		Last Modified: Thu, 04 Dec 2025 21:29:01 GMT  
+	-	`sha256:1b209f9eb778ff7a38c9febc5677c4e19fdebc04ce396244bb7ddb115ba08c76`  
+		Last Modified: Tue, 09 Dec 2025 03:29:38 GMT  
 		Size: 2.3 MB (2277846 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6e78909919782d8821393c595f47c30f5265a082863f5fc58e35484d98e0ca2a`  
-		Last Modified: Thu, 04 Dec 2025 21:29:02 GMT  
+	-	`sha256:86e1e3cad007bc87120030312a763066b158bd539e186676e1f4211bfb0416f0`  
+		Last Modified: Tue, 09 Dec 2025 03:29:39 GMT  
 		Size: 21.3 KB (21287 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3589,135 +3589,135 @@ $ docker pull fluentd@sha256:0d89113916b32c598de029868776a0abbf0be9b9054737578c9
 ### `fluentd:v1.19-1` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:ed187389e39640b36c3ce9981c1cf8dd26a754d7f04203e455789fde6d108294
+$ docker pull fluentd@sha256:d452f8eb08c139dd159cc43f074781c32b152a74d1132add1b85b65ffab1a967
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.8 MB (76792846 bytes)**  
+-	Total Size: **76.8 MB (76792670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee430e9e1c0931135d40bd46f138b5f92d4fcd73fa1892a2b40a65ba99b8142d`
+-	Image ID: `sha256:becbf6430ea077e039bcd6efa5440648d1a20b46ee4bf14d10ff45ced2297003`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 05:14:24 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 01:14:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 05:14:25 GMT
+# Tue, 09 Dec 2025 01:14:29 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:14 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:14 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 USER fluent
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:3063905a9d3db554a6c1d839c1212baff57798d644d5b0d198eef84afd107192`  
-		Last Modified: Tue, 18 Nov 2025 01:13:05 GMT  
-		Size: 29.8 MB (29834372 bytes)  
+	-	`sha256:deacec5e6af82b258c59e95e3e86abeef36fad06b1d9ff2de33e88544ffb79ff`  
+		Last Modified: Mon, 08 Dec 2025 22:20:52 GMT  
+		Size: 29.8 MB (29834400 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c5be0006390772cf7f9022344d107d52c9454ddfb26a9b6aa53e4f77a9bdc5e`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 1.3 MB (1294253 bytes)  
+	-	`sha256:5720eba478777df8c646e25a1f6668894f78c60729b8066bb843a45e90174380`  
+		Last Modified: Tue, 09 Dec 2025 01:17:18 GMT  
+		Size: 1.3 MB (1294285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6df3437f72c81d0de5473522e48eb46cf20ee4ae5ae981dfae54b48d71b07c5f`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 188.0 B  
+	-	`sha256:3f32a4b1f7561f4abaafe6220c2c2f308127ee5ef35474833e833a9af097e333`  
+		Last Modified: Tue, 09 Dec 2025 01:17:18 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f67960768c1f544671789085d4901deaf00ad13d073997065fbd38e41baef3e`  
-		Last Modified: Tue, 18 Nov 2025 05:17:09 GMT  
-		Size: 39.3 MB (39287189 bytes)  
+	-	`sha256:ee309e9c6d575837e8951d02780b3dc1213cd062f43a3b89fb81bb4b5e97a4c7`  
+		Last Modified: Tue, 09 Dec 2025 01:20:37 GMT  
+		Size: 39.3 MB (39287036 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22de67f11ad5b13189744a053b706d6a38590793d5b547a05561143636a6e794`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 143.0 B  
+	-	`sha256:ff7ed7c0ce15fb53c939f10bbbaac441035b79208a1fa1e4eb1b7c771c99dbd9`  
+		Last Modified: Tue, 09 Dec 2025 01:20:33 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1dae3e7995bd0deb7b55500a6bd72b6da73d79ec0e7c0311d2a8ffe3b3a07937`  
-		Last Modified: Thu, 04 Dec 2025 19:00:57 GMT  
-		Size: 6.4 MB (6374635 bytes)  
+	-	`sha256:805d4acfff0a8924cf1d1ee4e7ab9a7ed6a24a670b5bfde2364066dcb40e5897`  
+		Last Modified: Tue, 09 Dec 2025 03:04:01 GMT  
+		Size: 6.4 MB (6374561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44422c1d3698300c20c8d82b912869f2db389e052786cf236d58d4c070a52bb6`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 1.2 KB (1182 bytes)  
+	-	`sha256:164dab4e3071b8b90875f252880a33a9469e2ef2e5143ce4181d9042b67e6cc0`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac31f9e4d8d6111baff1810add02a698b16ee337ebae0e5a04bccd34dc3d1007`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 405.0 B  
+	-	`sha256:26a434834ec1b4336e0c8c15f37b1ff420317268465a1af98cb8d9c70f629049`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f174a509e3b7c1f6a3be616887aede378dae2a6ff15ad0eecd695f67d8461275`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 479.0 B  
+	-	`sha256:94ada78e2bbe6225a83b55c223117545ce1e9f27b7d4ec7370b113e4031f9464`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 476.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:0dadfa6115c306234fc61d311151598224464a5b584da6589aa5d497360139a5
+$ docker pull fluentd@sha256:a9acd04217a219287c7233d4a242ce3617474b2926d7c6fa65bd0f9ef3fd9c6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303429 bytes)**  
+-	Total Size: **2.3 MB (2303428 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f29918cffd01b2c59af6e28e2e0b4917359f9a0f89eda0ac5c64dd59b7dfb1e`
+-	Image ID: `sha256:0e239f395e91356318869f19f375ad7ab5a4af065670c2f07f3218ceafe26fa4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c79cd4563cae1c78685f758473a2ceab79b121ee11e164da1e6b7ab447e0d552`  
-		Last Modified: Thu, 04 Dec 2025 21:29:11 GMT  
+	-	`sha256:75008fcce7092be8bf478ab2e0af5b9d86a1ea736122f1053c5852ff7df7101c`  
+		Last Modified: Tue, 09 Dec 2025 03:29:46 GMT  
 		Size: 2.3 MB (2282103 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a21fae52c306fa690f842976aaaa9c786f47c33a5a87fa92d845c843d5e94942`  
-		Last Modified: Thu, 04 Dec 2025 21:29:13 GMT  
-		Size: 21.3 KB (21326 bytes)  
+	-	`sha256:9fcc954fcc03cff37e89153ac0395dbc6a528b01ad546cad6e42d769364f6c4b`  
+		Last Modified: Tue, 09 Dec 2025 03:29:47 GMT  
+		Size: 21.3 KB (21325 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `fluentd:v1.19-debian-1`
 
 ```console
-$ docker pull fluentd@sha256:00aeea8046975151285dee7de06f37fbca859a48dd9afa6b948ae7f13ba28e59
+$ docker pull fluentd@sha256:056ebdc491061079ab78aaf7ed35662018e449492c46a7d9fd05feac730c2f91
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3740,640 +3740,640 @@ $ docker pull fluentd@sha256:00aeea8046975151285dee7de06f37fbca859a48dd9afa6b948
 ### `fluentd:v1.19-debian-1` - linux; amd64
 
 ```console
-$ docker pull fluentd@sha256:6240494942204615ec7b6afc505afe5251fd9447b9f97aa1d15147b3c101433f
+$ docker pull fluentd@sha256:f1854e28f36cad811359493ee9c1e323788a38cf41f24856b433ff4253584273
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.2 MB (79219006 bytes)**  
+-	Total Size: **79.2 MB (79218641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd66d9d1a7d5268d13f4c183c9e2f0baffbc451a07a95d3a92aa413b15629db7`
+-	Image ID: `sha256:36c66715a9b546bdbe3cdecada630daf6a7fcbee47df1b8fcc2bd926586c792d`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 06:00:57 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:41:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 06:00:57 GMT
+# Mon, 08 Dec 2025 23:41:26 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:0e4bc2bd6656e6e004e3c749af70e5650bac2258243eb0949dea51cb8b7863db`  
-		Last Modified: Tue, 18 Nov 2025 02:35:01 GMT  
-		Size: 29.8 MB (29776484 bytes)  
+	-	`sha256:1733a4cd59540b3470ff7a90963bcdea5b543279dd6bdaf022d7883fdad221e5`  
+		Last Modified: Mon, 08 Dec 2025 22:17:58 GMT  
+		Size: 29.8 MB (29776496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecb0562513a544d09b243cd53af17176ae058cdb46bab21dc80e6e0e176085ac`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
-		Size: 1.3 MB (1279393 bytes)  
+	-	`sha256:43ae949789af527dd9c4bd7de681ac14f1a5fe2debe4a7a04ba3c8d0d8f5c3fb`  
+		Last Modified: Mon, 08 Dec 2025 23:44:04 GMT  
+		Size: 1.3 MB (1279388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2995c07ae76a079f87ad5194b6ae8ae189e2697989ee2ec3ff402c4bbdbaef98`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
-		Size: 190.0 B  
+	-	`sha256:94d82444e1da05ff4a53a213c6cd8ec9dc3fdf2715745f99678454cb58f004f7`  
+		Last Modified: Mon, 08 Dec 2025 23:43:52 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22a8b74c7e9beb752e09eab60f51bfed7d4156be9c8a4cb31e65c1c593e477ad`  
-		Last Modified: Tue, 18 Nov 2025 06:03:40 GMT  
-		Size: 42.2 MB (42158682 bytes)  
+	-	`sha256:102557edb4d1304b6930747c07bd40abb5f97283ca8dce01c2fcad694b84c1d0`  
+		Last Modified: Mon, 08 Dec 2025 23:44:08 GMT  
+		Size: 42.2 MB (42158459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50951878876ddf823dfebd9e0c1677361d53bec1ff62831466fd280b78c485e7`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
+	-	`sha256:b7a7a64f30f673db60828d7e540f6a9cd1e1683c146df8a193ef3781e4784660`  
+		Last Modified: Mon, 08 Dec 2025 23:44:04 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72585dd7596a87134366b4811336b292df351eb34419901e60defb1c412033a5`  
-		Last Modified: Thu, 04 Dec 2025 18:59:08 GMT  
-		Size: 6.0 MB (6002049 bytes)  
+	-	`sha256:49bf4c70db087c33e5acc082c9bc5982fc3a684f9a8a6ee949c7e7929e252fed`  
+		Last Modified: Tue, 09 Dec 2025 00:59:42 GMT  
+		Size: 6.0 MB (6001910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23d21ae1bbd8cf7a5c81316fadc4c1d605148b8f29723da71bf2c957621f4b22`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:7c96e69020f7ae05041307e1c9091e6dc01afe1ec5878d7c9c14a4539d4ffd7c`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8fa2be93123d4ff3aaff45b160afa29dd535164e2fd743708e5c83ee822cf0`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 403.0 B  
+	-	`sha256:7051ea010ff321ea91e14ce49e8613b4a3222cfca6262411c3c89e4c16cb71a1`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ccca90a00656c889b24dad43ee644103f1f035b2f65ce35b0f34d35451734c`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 479.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `fluentd:v1.19-debian-1` - unknown; unknown
-
-```console
-$ docker pull fluentd@sha256:84fb8d8f71409aa4324f6d008d4a031861d8ec48f2cdd687031c4d9f1d0c01d0
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2301984 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e85d48d5d59e2d36d878a10af83b710812f3818fc348bf1863aca8c57d246639`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:d37abc9e254151598cd02552918a94209b0571d5807e8e2354767fee2d26f799`  
-		Last Modified: Thu, 04 Dec 2025 21:28:40 GMT  
-		Size: 2.3 MB (2280658 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:8e35172fe75a5483bc13670bb98f415318c4559e767f1a20689dff3cf3360c73`  
-		Last Modified: Thu, 04 Dec 2025 21:28:41 GMT  
-		Size: 21.3 KB (21326 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `fluentd:v1.19-debian-1` - linux; arm variant v5
-
-```console
-$ docker pull fluentd@sha256:aaebbb2d9630e58872361a78ea08ff2f9fd24ccb3c1144b05466e656087c1382
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.1 MB (73104845 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:20088dbd13800e95c34338237e95cdad749f7d4f04f80ddf0604a06ed4eaf907`
--	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
--	Default Command: `["fluentd"]`
-
-```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:18:53 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:18:53 GMT
-RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 04:21:56 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:21:56 GMT
-RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:20 GMT
-LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:20 GMT
-LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:20 GMT
-RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:20 GMT
-EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:20 GMT
-USER fluent
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:20 GMT
-CMD ["fluentd"]
-```
-
--	Layers:
-	-	`sha256:a1c0783a82710a65871102568a0ace23c3dd0f89dba1af72c3290089eac458f2`  
-		Last Modified: Tue, 18 Nov 2025 01:14:09 GMT  
-		Size: 27.9 MB (27944147 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a8bddf98d29f007597c2419ece53918ed2a02b6807f244eba291b11a115ce2f`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 1.3 MB (1263024 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ce6e0d17644462250ed0239ef347ef83d3d46d91cc236e61f5d1ee58840ebe6`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 189.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70dba72f3360e3a96295c7cea72647313a78f2723776a3e529d977bc6fb38431`  
-		Last Modified: Tue, 18 Nov 2025 04:22:15 GMT  
-		Size: 38.0 MB (37994184 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0930b6e7a3909c3d28136a1cc19c3a553fbbb2a2d33988cd25bd43effa0a140`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 143.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6be6bc7b989da34f73dc506d83cb9f48c37ee8105fe87bd7f52bca4542d7cee2`  
-		Last Modified: Thu, 04 Dec 2025 19:00:42 GMT  
-		Size: 5.9 MB (5901093 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80c6f3399ef20bf6be1ed6a2ca72c0a24e3ad0d84b16a9ef8a0709e1c7659f8f`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 1.2 KB (1183 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b70663e3166cf0a7abf84c4ed0eafa32f04846e2058e90a97ac3e06d24369d32`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 403.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a56bfbe0d3c92ea6b9ebb1c97197ffb757b2487720ce3d2ab6a5a0538ad7bf5b`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 479.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `fluentd:v1.19-debian-1` - unknown; unknown
-
-```console
-$ docker pull fluentd@sha256:248114ee7add057b9522b312fa3eef5e127b5ce66321a1c70af7ebcf0361e2e6
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305056 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb431f17e2b58f86b090040b8d1cbac7f7a09a0eb6151fd7d76271ab122db28d`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:1253a50e411a8bc80c1968d6d9653822decb6287cafc575af11b24f9ca7d9304`  
-		Last Modified: Thu, 04 Dec 2025 21:28:45 GMT  
-		Size: 2.3 MB (2283629 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:f6d735f6d01c1fac1cdb270eb1066ee221e9e96a36d6d1970722e33bce8fd801`  
-		Last Modified: Thu, 04 Dec 2025 21:28:46 GMT  
-		Size: 21.4 KB (21427 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `fluentd:v1.19-debian-1` - linux; arm variant v7
-
-```console
-$ docker pull fluentd@sha256:19368b5ced494adadbccad66e2b3d118db4c880ed6a2159f28dc54906d309884
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.0 MB (70983027 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b4b6c0c43b2bade13a1281582e1f172afddcb1d640eabe2965dbe6d7f4cc2d4`
--	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
--	Default Command: `["fluentd"]`
-
-```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:59:14 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:59:14 GMT
-RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 05:01:55 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:01:55 GMT
-RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:07 GMT
-LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:07 GMT
-LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:07 GMT
-RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:07 GMT
-RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:08 GMT
-EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:08 GMT
-USER fluent
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:08 GMT
-CMD ["fluentd"]
-```
-
--	Layers:
-	-	`sha256:8202667160e65087c34b2510837039e29b29936f1b75fc737a33219ae9c06ec0`  
-		Last Modified: Tue, 18 Nov 2025 01:14:24 GMT  
-		Size: 26.2 MB (26209960 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b64d8370801a134071a40fe32d3d2fa7e0e17d18b25e5289e7237638fa8e7778`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 1.2 MB (1236519 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:926b3223558fcb7b7da07de149d35cb77b0270a5ab9574f7885d63190a335526`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 190.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0053f0fd615ae9d3957c571c9b6d06b6a892f68a64ba86fcf53aa1540117bbac`  
-		Last Modified: Tue, 18 Nov 2025 05:02:15 GMT  
-		Size: 37.9 MB (37865819 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f081e8cb5f13e31c833ade5ef8bd8bc86005b1083ad01fb5c19150cfe1b852`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 143.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b0deaf0ae9760f48e1ab076a5e92832ce7edb015a71b9617c411340ed2fabe3`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 5.7 MB (5668328 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a918df6a39f29e19adc2cfe7099cb1847628765d58e9f51891b9f7137ee0b33f`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
-		Size: 1.2 KB (1183 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e71a32294b22c81555f0bda1421dd249067a446ecc482b86b1956785045a4ff`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
-		Size: 407.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4645e19fd544b5af4ead15a19a0f7cb149338c69fe9e9cbb6765a8231b1afb9`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
+	-	`sha256:982640467ff0abcdc2d1b5a216d9700c3c835aeb1d919073746737b8969f7c8b`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
 		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19-debian-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:b33da86ad731f86d80dc973681026b8a368e7c5c123c8c652c25b2b67c383343
+$ docker pull fluentd@sha256:a29a7ffb611c3adc50b9ea2dd348490ac889db53e7e26caba932c0d48453b058
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303497 bytes)**  
+-	Total Size: **2.3 MB (2301984 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc49d110e1779f25424b64b75f867f39c651900ae1b12fc1badd05db7f4a56ee`
+-	Image ID: `sha256:48f8104217d65fb0113c9bf35d715716126f09cfbc1295f4c719f64078a054c9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:edc79561200a3cdc3d20f9abf1bf47a6fd9495dc898880e298c463f493da599c`  
-		Last Modified: Thu, 04 Dec 2025 21:28:51 GMT  
+	-	`sha256:bebbcc5ba4deb0e3dbda1204c816cc666c33321345bdcf92a17412c208ca5854`  
+		Last Modified: Tue, 09 Dec 2025 03:29:19 GMT  
+		Size: 2.3 MB (2280658 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2070db97328c3a78a1e59b1f7c3cec0a9da19f2d3e7fa1fc92c46ea6e49650e2`  
+		Last Modified: Tue, 09 Dec 2025 03:29:20 GMT  
+		Size: 21.3 KB (21326 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `fluentd:v1.19-debian-1` - linux; arm variant v5
+
+```console
+$ docker pull fluentd@sha256:f124ea40754ba08bbac0e5843e8f9023994bf2b8238ee72e8ec2d238b9b6a5b5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **73.1 MB (73104752 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cc2f4a67d52435e88678f7a653d15a7beabb5c883fa2f08bb3ac57b9aed29bb8`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 00:36:11 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
+# Tue, 09 Dec 2025 00:36:11 GMT
+RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV LANG=C.UTF-8
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_VERSION=3.4.7
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
+# Tue, 09 Dec 2025 00:39:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 09 Dec 2025 00:39:15 GMT
+RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+CMD ["irb"]
+# Tue, 09 Dec 2025 01:57:11 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Tue, 09 Dec 2025 01:57:11 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
+# Tue, 09 Dec 2025 01:57:11 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+COPY fluent.conf /fluentd/etc/ # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+COPY entrypoint.sh /bin/ # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Tue, 09 Dec 2025 01:57:11 GMT
+EXPOSE map[24224/tcp:{} 5140/tcp:{}]
+# Tue, 09 Dec 2025 01:57:11 GMT
+USER fluent
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Tue, 09 Dec 2025 01:57:11 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:d97bc71d0fa535127863fdab265dfddb07b3cda35b80de4dd2b9b67fe154c856`  
+		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
+		Size: 27.9 MB (27944187 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:60b6a68a4c64d1607140d9e7ef52b820f028d1745795db4373db1d67f60365f1`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 1.3 MB (1263005 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6fc48f102063d847095ed56df1cf3e6cfa63ed0ceb24fe7f8335198230e2ccdc`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0e5241e4c81242518e434f00d9f79a59f18fc609e23a17fc7967f5f3bd026daf`  
+		Last Modified: Tue, 09 Dec 2025 00:39:35 GMT  
+		Size: 38.0 MB (37994161 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:87f7b942b9f3410c6c1da7dc6e29bbc3b9606a378eef9f16f0fff45c912da461`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 143.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1bdcf5b9bbb7e43d0bbc8bf7fdb8750ccd78deb95d6221e87a15ec98a4eae6dc`  
+		Last Modified: Tue, 09 Dec 2025 01:57:27 GMT  
+		Size: 5.9 MB (5901010 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aa13ae067c168ac5fe27c95e549cc4238ec2133319bc03114df7a7aa8a9ecba6`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 1.2 KB (1178 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b806a6d8ca493494d796544b972cae88221361e2f48ed5ea72d5bcee6752152d`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 403.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c86fd63a29b98af5e626ce3a2ba323a6e6b866adbc779bceff239eb53f827ad9`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 476.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `fluentd:v1.19-debian-1` - unknown; unknown
+
+```console
+$ docker pull fluentd@sha256:8ac93648d48a1a6c1b4b7160d2abd004cee13b8a907093d4ff1c16f268c39c6f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2305056 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a9edf65a7eb020bcff5df6e29b1ff7633094bc897d3a482abfb059ed3308aad5`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:a8f8885c07c68215d8e1178f95df1911fe84d553ed134051c468235e57295d34`  
+		Last Modified: Tue, 09 Dec 2025 03:29:24 GMT  
+		Size: 2.3 MB (2283629 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:326295480ebdff77047de45607a002b0b1206eaecd36eca8cf494b5df0b6a3af`  
+		Last Modified: Tue, 09 Dec 2025 03:29:25 GMT  
+		Size: 21.4 KB (21427 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `fluentd:v1.19-debian-1` - linux; arm variant v7
+
+```console
+$ docker pull fluentd@sha256:80ed25e467765ea9179c1336cd154facbbc97b76ff1d4599a24a28a6c4820cda
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.0 MB (70983028 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8d5ef7e2cf73a40aa19447b8435c604f51e51d329862092213c7116177e0b18e`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 01:10:33 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
+# Tue, 09 Dec 2025 01:10:33 GMT
+RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV LANG=C.UTF-8
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_VERSION=3.4.7
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
+# Tue, 09 Dec 2025 01:13:21 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 09 Dec 2025 01:13:22 GMT
+RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
+# Tue, 09 Dec 2025 01:13:22 GMT
+CMD ["irb"]
+# Tue, 09 Dec 2025 02:25:30 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Tue, 09 Dec 2025 02:25:30 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
+# Tue, 09 Dec 2025 02:25:30 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+COPY fluent.conf /fluentd/etc/ # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+COPY entrypoint.sh /bin/ # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Tue, 09 Dec 2025 02:25:30 GMT
+EXPOSE map[24224/tcp:{} 5140/tcp:{}]
+# Tue, 09 Dec 2025 02:25:30 GMT
+USER fluent
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Tue, 09 Dec 2025 02:25:30 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:cfc411ffeb71f696e2a89e33e91be9b70084d6c3383474344babe3a4a21eb843`  
+		Last Modified: Mon, 08 Dec 2025 22:16:57 GMT  
+		Size: 26.2 MB (26210013 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b1e7a6dfdb7e0c4de081184afd9356a839f7025591f607c4aaebd07a86bfa633`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 1.2 MB (1236504 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:783d9710c1c77c87df8e2c7764d0abdfa7c0e08a47c4358cbcd1e8856dbb9301`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6727d5012816a8b4a36517d36f5c95dba1143f1fdc7eba217d31f5e7932ae058`  
+		Last Modified: Tue, 09 Dec 2025 01:13:41 GMT  
+		Size: 37.9 MB (37865781 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:52980762c6939f2c87a86ec276e3dd2020f2bb8cdda2a49d4dbd67eb698da3eb`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 143.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:da2811bbd5bbeea2292afee9c7e5020d6c9fa7931713a9f215c32ee1d2525d9e`  
+		Last Modified: Tue, 09 Dec 2025 02:25:47 GMT  
+		Size: 5.7 MB (5668338 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2e0d6282c7790097c8a2ed51f778f05973188b6cc525eb38ecbbfc500a88dee5`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 1.2 KB (1178 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:164fab4a951f344ebdf00612539a04256320c234576b296f68e46dea61edbba3`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 404.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9e0ece9218deaf151a88e6afb1c4e0352361105366d9b297640b43e906b9e759`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 478.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `fluentd:v1.19-debian-1` - unknown; unknown
+
+```console
+$ docker pull fluentd@sha256:86905e76b1c132c3d0a1e5f3a4c53983f061920d595ee8c958319713624e7ab3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2303497 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:65121fab5cf409c60e1779720becd0a55afe203d6a2f9cba148cc639cee6ac3b`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:dd15196e04866dfb229371c1e0a60dd71c0e82af31dbb0c8efc2710f9d7e1030`  
+		Last Modified: Tue, 09 Dec 2025 03:29:29 GMT  
 		Size: 2.3 MB (2282070 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3e1c082bb1301e59ae044904c59fece993b0c269294fb4ebb29e5eba628915f1`  
-		Last Modified: Thu, 04 Dec 2025 21:28:53 GMT  
+	-	`sha256:e6395c6daa3e8158759a8c8b6a3e3abe898b1b141e63c1954a898dec47239ccf`  
+		Last Modified: Tue, 09 Dec 2025 03:29:30 GMT  
 		Size: 21.4 KB (21427 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.19-debian-1` - linux; arm64 variant v8
 
 ```console
-$ docker pull fluentd@sha256:dad79d06105b9950b09ae6c76013f79685999c3df9cf739b0ab0d1e99ab90cdb
+$ docker pull fluentd@sha256:718ca0bb84f06f7fdc37bd49d53b1940e8e499878cf52cf1b1dc9361c8cce42f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.5 MB (79536779 bytes)**  
+-	Total Size: **79.5 MB (79536732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4b2d5d26e7dec9ed23e9d93d0f2e1be085b1eaab727fc6711b593b09c4c4723a`
+-	Image ID: `sha256:009c7ecf6da6c474bbe209d4e31585761254051960b0e554b454848101a4eaf7`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:45:57 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:50:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:45:58 GMT
+# Mon, 08 Dec 2025 23:50:45 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:48:39 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:48:39 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:b89cf3ec7a3ed3a58015edd6724125187f0d284147e09b5739b511c74222b2a4`  
-		Last Modified: Tue, 18 Nov 2025 01:13:26 GMT  
-		Size: 30.1 MB (30138610 bytes)  
+	-	`sha256:f626fba1463b32b20f78d29b52dcf15be927dbb5372a9ba6a5f97aad47ae220b`  
+		Last Modified: Mon, 08 Dec 2025 22:17:19 GMT  
+		Size: 30.1 MB (30138628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:623192602c00e918197dfe6e2a1def0175e7be0d446a268ed38b6b5a621d38e0`  
-		Last Modified: Tue, 18 Nov 2025 04:48:55 GMT  
-		Size: 1.3 MB (1261685 bytes)  
+	-	`sha256:7eaf4b7d6af85fa2d477bc8c6b8ff0abab28c0132199981bdea9c0fca84569b4`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
+		Size: 1.3 MB (1261658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee5fe6e2e9edffda349665022b4300b140e6a85f15a0f7614134df0867bcd551`  
-		Last Modified: Tue, 18 Nov 2025 04:48:55 GMT  
-		Size: 189.0 B  
+	-	`sha256:4f911311bcccab7cf68fb0509ee5408de0a72daec80c6ccd44b123cc0c6e41c8`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85c522fdb9fff298474b76a11223cdcb250793d0c701b8cf389c0375800c7d5c`  
-		Last Modified: Tue, 18 Nov 2025 04:48:57 GMT  
-		Size: 42.1 MB (42145706 bytes)  
+	-	`sha256:364b5aea1f4626e813a93901f04bb24cb8787623734b3d2f15a5ecbf285d584c`  
+		Last Modified: Mon, 08 Dec 2025 23:53:35 GMT  
+		Size: 42.1 MB (42145686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3907ba9f7c5e39a58b009710a158a43136020eb8b46dc729f4426b65e03945ab`  
-		Last Modified: Tue, 18 Nov 2025 04:48:54 GMT  
+	-	`sha256:7741a8581bb0066370ece471f6aa770ab4d3f3d46eb393a106ee1d6cd6c2ac44`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
 		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62078078c49a19cbd32c8398ca08eb739eba2a5c8f7e3ec2cc12e2f4b8c3b2db`  
-		Last Modified: Thu, 04 Dec 2025 18:59:44 GMT  
-		Size: 6.0 MB (5988380 bytes)  
+	-	`sha256:f30c8ff64bcfb969527bc42ad4e1ad72b62d6cd0e6fee85af029b74e7882c8e5`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 6.0 MB (5988371 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16e731dcc3a52a3e4926909f34921ae4f16049058441be34d00049373c20519d`  
-		Last Modified: Thu, 04 Dec 2025 18:59:46 GMT  
-		Size: 1.2 KB (1186 bytes)  
+	-	`sha256:cf432b8b15239d95c4f0325fe81ff1431d64de2fd96d1b7f6863814c540228bd`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:999b33ee39bc926af8f4930b89aa17f0a6b820c5ffa7479e1bfbe6d7c3b7509e`  
-		Last Modified: Thu, 04 Dec 2025 18:59:45 GMT  
-		Size: 402.0 B  
+	-	`sha256:166d8c0a8e8736f2fe6ff7f94c1012f5ced0e92ee4185869ec3cc496e0903780`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c311d60c665f9b731977ba41c34e0d299143e31b5709d86dda8eb3f392a54e6`  
-		Last Modified: Thu, 04 Dec 2025 18:59:45 GMT  
-		Size: 479.0 B  
+	-	`sha256:f28088a956e911a8f29e5258cc83d1b1ff723af0eb15e59b56ab09146aaf024f`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19-debian-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:06771e235a93cdf7216de411468857b8d19c5b37a9904e274f563c4f84e8a9f4
+$ docker pull fluentd@sha256:6d4336aa08b546a7f78742fe70aa1337eb1f9df67127f24e44ff36cea6091e0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2302387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75bbb2a23905b39c605e81cd2c26ddfe82db37d5659170919172cbdfe9b8819f`
+-	Image ID: `sha256:331fc19fc612036e9b9572fb00e561ecb40dcbce480229fbe0dacf203bb58464`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7eedf47456bd91301c20eb29396d34c6238567229f91c78d64a84385ba5b5c9b`  
-		Last Modified: Thu, 04 Dec 2025 21:28:57 GMT  
+	-	`sha256:772a37f2ff865060ea30e10008b35646b395237dcce4e85e771b3aee446e763b`  
+		Last Modified: Tue, 09 Dec 2025 03:29:34 GMT  
 		Size: 2.3 MB (2280930 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f02e697a3cb8e25e5f9c19892fe981d521d4b20a5ae978535af0a692e681d6e4`  
-		Last Modified: Thu, 04 Dec 2025 21:28:57 GMT  
+	-	`sha256:4133a1074193ccc24229fa34ed308abc4a7efae19431bd52a02f81f873bf1ca5`  
+		Last Modified: Tue, 09 Dec 2025 03:29:35 GMT  
 		Size: 21.5 KB (21457 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.19-debian-1` - linux; 386
 
 ```console
-$ docker pull fluentd@sha256:56c84a09c3ec5836ff8a1ecd8ebda47efc0d785ee4719a2920828714257f476c
+$ docker pull fluentd@sha256:599d5b7afd9f493339ccaab7d3287bbe575670d5512a0a30ddc372f2b4662333
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.3 MB (76296093 bytes)**  
+-	Total Size: **76.3 MB (76296470 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:341497361633166c5f1384541265cc4c337cdbd3c29ac2d729d25563dc2b4817`
+-	Image ID: `sha256:3226219d46e9e8d7e930a62a5f59f32c4b9bf53dedf8185fb4523fa751ae8c43`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 03:40:43 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:38:38 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 03:40:43 GMT
+# Mon, 08 Dec 2025 23:38:38 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:8fdd29f45eb19adab28e642f5b411c2aac45db9e7dfc1ab412acdcf1365af598`  
-		Last Modified: Tue, 18 Nov 2025 01:13:49 GMT  
-		Size: 31.3 MB (31293068 bytes)  
+	-	`sha256:2648c88d9207cd6090be83f4a97e2aa4080930987d8fb62195cc994194160e67`  
+		Last Modified: Mon, 08 Dec 2025 22:17:03 GMT  
+		Size: 31.3 MB (31293070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:486bef966be95a2220ea41b52e0e83a8a622f90c5f320368a5f0d7284a00c503`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
-		Size: 1.3 MB (1287214 bytes)  
+	-	`sha256:f294212caa020512a8aa004ccf0ad2b44f2f61a493fe313aac9a4e4ee4616f88`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
+		Size: 1.3 MB (1287234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31f45ed37d5457ae44f5b9a372ecc7bde1dd97d5be333bac0f4030719c7f0eca`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
+	-	`sha256:f65638b1819071ea4ed695525bf34b0382fbf37355d69b43d7e7a51da79386c2`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:402fa9c5b261b8af75a607827e3e965cc7ce4351d91e3eba319a98783514bc3d`  
-		Last Modified: Tue, 18 Nov 2025 03:43:29 GMT  
-		Size: 37.7 MB (37740240 bytes)  
+	-	`sha256:abf2a7d1e8d2815af0f490c9813945dc251f9437878cdc62fd3c2b51ed2604f6`  
+		Last Modified: Mon, 08 Dec 2025 23:41:29 GMT  
+		Size: 37.7 MB (37740224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b3646abfea40cabe9f48dabaff87823bc4de7febc7191871f992e8cdd29e5cc`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
+	-	`sha256:71d46bda2c903ca306081bb1f1b3dd1a3ed78ae7db3f6ec6878732b92d7fce01`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fee570408516d44060c51273b5d738a6205bde32c3fc376fd9ef14e4a4457dce`  
-		Last Modified: Thu, 04 Dec 2025 18:58:23 GMT  
-		Size: 6.0 MB (5973173 bytes)  
+	-	`sha256:0225134b3c4f305ef3b4ea683e6ef3ebe867bfe93748d883bf0024c8ca1d66ad`  
+		Last Modified: Tue, 09 Dec 2025 00:30:21 GMT  
+		Size: 6.0 MB (5973548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6275cd6a8a20192011b6e7b4404598eec9c28328967093f4ff56a0ed65ccaa13`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:2e1660a934088ae96a9d6badbe46ba3388e69f4f373324aeb706f83554e2e07a`  
+		Last Modified: Tue, 09 Dec 2025 00:30:20 GMT  
+		Size: 1.2 KB (1180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:573b1d8dffa356f70d09c25d0a422654add5b105c3303262e90e092f928c0476`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
+	-	`sha256:8930a2ad4093b7ed2e2ced5f3181c9b1e77a957a48fe07611c3bb512cd885fc3`  
+		Last Modified: Tue, 09 Dec 2025 00:30:21 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad3b55019ddd93dad3e462ed7516328b0c240a97a4b8c4a23e529ed5be7854ad`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
-		Size: 479.0 B  
+	-	`sha256:63f7ef0f2a1ee408469afa43876a95a3a4038339be79b2e8293dafce7e35ea9e`  
+		Last Modified: Tue, 09 Dec 2025 00:30:20 GMT  
+		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19-debian-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:744c888b5dc6510967c83cc08cbce6f8dc8d337314c61a7a7dfbf1d1291665fb
+$ docker pull fluentd@sha256:ab5f503e6138fb45fb9170d4f5d73200f9526153e68920ff9958f76be1c3c399
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2299133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ee20af4a982057aade0f5e6c1d71ab447ef9f7b85bbff621c4e002211248bfa`
+-	Image ID: `sha256:cafd53262ce8b25a127db185db86996e348ec59449d1a1162e6fbfee6b3fdd20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ffd30fcff8d76a898b59a12fe9d10b319b7a244e1cfb260572d112cd4569634c`  
-		Last Modified: Thu, 04 Dec 2025 21:29:01 GMT  
+	-	`sha256:1b209f9eb778ff7a38c9febc5677c4e19fdebc04ce396244bb7ddb115ba08c76`  
+		Last Modified: Tue, 09 Dec 2025 03:29:38 GMT  
 		Size: 2.3 MB (2277846 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6e78909919782d8821393c595f47c30f5265a082863f5fc58e35484d98e0ca2a`  
-		Last Modified: Thu, 04 Dec 2025 21:29:02 GMT  
+	-	`sha256:86e1e3cad007bc87120030312a763066b158bd539e186676e1f4211bfb0416f0`  
+		Last Modified: Tue, 09 Dec 2025 03:29:39 GMT  
 		Size: 21.3 KB (21287 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4508,135 +4508,135 @@ $ docker pull fluentd@sha256:0d89113916b32c598de029868776a0abbf0be9b9054737578c9
 ### `fluentd:v1.19-debian-1` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:ed187389e39640b36c3ce9981c1cf8dd26a754d7f04203e455789fde6d108294
+$ docker pull fluentd@sha256:d452f8eb08c139dd159cc43f074781c32b152a74d1132add1b85b65ffab1a967
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.8 MB (76792846 bytes)**  
+-	Total Size: **76.8 MB (76792670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee430e9e1c0931135d40bd46f138b5f92d4fcd73fa1892a2b40a65ba99b8142d`
+-	Image ID: `sha256:becbf6430ea077e039bcd6efa5440648d1a20b46ee4bf14d10ff45ced2297003`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 05:14:24 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 01:14:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 05:14:25 GMT
+# Tue, 09 Dec 2025 01:14:29 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:14 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:14 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 USER fluent
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:3063905a9d3db554a6c1d839c1212baff57798d644d5b0d198eef84afd107192`  
-		Last Modified: Tue, 18 Nov 2025 01:13:05 GMT  
-		Size: 29.8 MB (29834372 bytes)  
+	-	`sha256:deacec5e6af82b258c59e95e3e86abeef36fad06b1d9ff2de33e88544ffb79ff`  
+		Last Modified: Mon, 08 Dec 2025 22:20:52 GMT  
+		Size: 29.8 MB (29834400 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c5be0006390772cf7f9022344d107d52c9454ddfb26a9b6aa53e4f77a9bdc5e`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 1.3 MB (1294253 bytes)  
+	-	`sha256:5720eba478777df8c646e25a1f6668894f78c60729b8066bb843a45e90174380`  
+		Last Modified: Tue, 09 Dec 2025 01:17:18 GMT  
+		Size: 1.3 MB (1294285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6df3437f72c81d0de5473522e48eb46cf20ee4ae5ae981dfae54b48d71b07c5f`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 188.0 B  
+	-	`sha256:3f32a4b1f7561f4abaafe6220c2c2f308127ee5ef35474833e833a9af097e333`  
+		Last Modified: Tue, 09 Dec 2025 01:17:18 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f67960768c1f544671789085d4901deaf00ad13d073997065fbd38e41baef3e`  
-		Last Modified: Tue, 18 Nov 2025 05:17:09 GMT  
-		Size: 39.3 MB (39287189 bytes)  
+	-	`sha256:ee309e9c6d575837e8951d02780b3dc1213cd062f43a3b89fb81bb4b5e97a4c7`  
+		Last Modified: Tue, 09 Dec 2025 01:20:37 GMT  
+		Size: 39.3 MB (39287036 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22de67f11ad5b13189744a053b706d6a38590793d5b547a05561143636a6e794`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 143.0 B  
+	-	`sha256:ff7ed7c0ce15fb53c939f10bbbaac441035b79208a1fa1e4eb1b7c771c99dbd9`  
+		Last Modified: Tue, 09 Dec 2025 01:20:33 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1dae3e7995bd0deb7b55500a6bd72b6da73d79ec0e7c0311d2a8ffe3b3a07937`  
-		Last Modified: Thu, 04 Dec 2025 19:00:57 GMT  
-		Size: 6.4 MB (6374635 bytes)  
+	-	`sha256:805d4acfff0a8924cf1d1ee4e7ab9a7ed6a24a670b5bfde2364066dcb40e5897`  
+		Last Modified: Tue, 09 Dec 2025 03:04:01 GMT  
+		Size: 6.4 MB (6374561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44422c1d3698300c20c8d82b912869f2db389e052786cf236d58d4c070a52bb6`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 1.2 KB (1182 bytes)  
+	-	`sha256:164dab4e3071b8b90875f252880a33a9469e2ef2e5143ce4181d9042b67e6cc0`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac31f9e4d8d6111baff1810add02a698b16ee337ebae0e5a04bccd34dc3d1007`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 405.0 B  
+	-	`sha256:26a434834ec1b4336e0c8c15f37b1ff420317268465a1af98cb8d9c70f629049`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f174a509e3b7c1f6a3be616887aede378dae2a6ff15ad0eecd695f67d8461275`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 479.0 B  
+	-	`sha256:94ada78e2bbe6225a83b55c223117545ce1e9f27b7d4ec7370b113e4031f9464`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 476.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19-debian-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:0dadfa6115c306234fc61d311151598224464a5b584da6589aa5d497360139a5
+$ docker pull fluentd@sha256:a9acd04217a219287c7233d4a242ce3617474b2926d7c6fa65bd0f9ef3fd9c6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303429 bytes)**  
+-	Total Size: **2.3 MB (2303428 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f29918cffd01b2c59af6e28e2e0b4917359f9a0f89eda0ac5c64dd59b7dfb1e`
+-	Image ID: `sha256:0e239f395e91356318869f19f375ad7ab5a4af065670c2f07f3218ceafe26fa4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c79cd4563cae1c78685f758473a2ceab79b121ee11e164da1e6b7ab447e0d552`  
-		Last Modified: Thu, 04 Dec 2025 21:29:11 GMT  
+	-	`sha256:75008fcce7092be8bf478ab2e0af5b9d86a1ea736122f1053c5852ff7df7101c`  
+		Last Modified: Tue, 09 Dec 2025 03:29:46 GMT  
 		Size: 2.3 MB (2282103 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a21fae52c306fa690f842976aaaa9c786f47c33a5a87fa92d845c843d5e94942`  
-		Last Modified: Thu, 04 Dec 2025 21:29:13 GMT  
-		Size: 21.3 KB (21326 bytes)  
+	-	`sha256:9fcc954fcc03cff37e89153ac0395dbc6a528b01ad546cad6e42d769364f6c4b`  
+		Last Modified: Tue, 09 Dec 2025 03:29:47 GMT  
+		Size: 21.3 KB (21325 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `fluentd:v1.19.0-1.0`
 
 ```console
-$ docker pull fluentd@sha256:00aeea8046975151285dee7de06f37fbca859a48dd9afa6b948ae7f13ba28e59
+$ docker pull fluentd@sha256:056ebdc491061079ab78aaf7ed35662018e449492c46a7d9fd05feac730c2f91
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4659,640 +4659,640 @@ $ docker pull fluentd@sha256:00aeea8046975151285dee7de06f37fbca859a48dd9afa6b948
 ### `fluentd:v1.19.0-1.0` - linux; amd64
 
 ```console
-$ docker pull fluentd@sha256:6240494942204615ec7b6afc505afe5251fd9447b9f97aa1d15147b3c101433f
+$ docker pull fluentd@sha256:f1854e28f36cad811359493ee9c1e323788a38cf41f24856b433ff4253584273
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.2 MB (79219006 bytes)**  
+-	Total Size: **79.2 MB (79218641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd66d9d1a7d5268d13f4c183c9e2f0baffbc451a07a95d3a92aa413b15629db7`
+-	Image ID: `sha256:36c66715a9b546bdbe3cdecada630daf6a7fcbee47df1b8fcc2bd926586c792d`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 06:00:57 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:41:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 06:00:57 GMT
+# Mon, 08 Dec 2025 23:41:26 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:0e4bc2bd6656e6e004e3c749af70e5650bac2258243eb0949dea51cb8b7863db`  
-		Last Modified: Tue, 18 Nov 2025 02:35:01 GMT  
-		Size: 29.8 MB (29776484 bytes)  
+	-	`sha256:1733a4cd59540b3470ff7a90963bcdea5b543279dd6bdaf022d7883fdad221e5`  
+		Last Modified: Mon, 08 Dec 2025 22:17:58 GMT  
+		Size: 29.8 MB (29776496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecb0562513a544d09b243cd53af17176ae058cdb46bab21dc80e6e0e176085ac`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
-		Size: 1.3 MB (1279393 bytes)  
+	-	`sha256:43ae949789af527dd9c4bd7de681ac14f1a5fe2debe4a7a04ba3c8d0d8f5c3fb`  
+		Last Modified: Mon, 08 Dec 2025 23:44:04 GMT  
+		Size: 1.3 MB (1279388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2995c07ae76a079f87ad5194b6ae8ae189e2697989ee2ec3ff402c4bbdbaef98`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
-		Size: 190.0 B  
+	-	`sha256:94d82444e1da05ff4a53a213c6cd8ec9dc3fdf2715745f99678454cb58f004f7`  
+		Last Modified: Mon, 08 Dec 2025 23:43:52 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22a8b74c7e9beb752e09eab60f51bfed7d4156be9c8a4cb31e65c1c593e477ad`  
-		Last Modified: Tue, 18 Nov 2025 06:03:40 GMT  
-		Size: 42.2 MB (42158682 bytes)  
+	-	`sha256:102557edb4d1304b6930747c07bd40abb5f97283ca8dce01c2fcad694b84c1d0`  
+		Last Modified: Mon, 08 Dec 2025 23:44:08 GMT  
+		Size: 42.2 MB (42158459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50951878876ddf823dfebd9e0c1677361d53bec1ff62831466fd280b78c485e7`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
+	-	`sha256:b7a7a64f30f673db60828d7e540f6a9cd1e1683c146df8a193ef3781e4784660`  
+		Last Modified: Mon, 08 Dec 2025 23:44:04 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72585dd7596a87134366b4811336b292df351eb34419901e60defb1c412033a5`  
-		Last Modified: Thu, 04 Dec 2025 18:59:08 GMT  
-		Size: 6.0 MB (6002049 bytes)  
+	-	`sha256:49bf4c70db087c33e5acc082c9bc5982fc3a684f9a8a6ee949c7e7929e252fed`  
+		Last Modified: Tue, 09 Dec 2025 00:59:42 GMT  
+		Size: 6.0 MB (6001910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23d21ae1bbd8cf7a5c81316fadc4c1d605148b8f29723da71bf2c957621f4b22`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:7c96e69020f7ae05041307e1c9091e6dc01afe1ec5878d7c9c14a4539d4ffd7c`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8fa2be93123d4ff3aaff45b160afa29dd535164e2fd743708e5c83ee822cf0`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 403.0 B  
+	-	`sha256:7051ea010ff321ea91e14ce49e8613b4a3222cfca6262411c3c89e4c16cb71a1`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ccca90a00656c889b24dad43ee644103f1f035b2f65ce35b0f34d35451734c`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 479.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `fluentd:v1.19.0-1.0` - unknown; unknown
-
-```console
-$ docker pull fluentd@sha256:84fb8d8f71409aa4324f6d008d4a031861d8ec48f2cdd687031c4d9f1d0c01d0
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2301984 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e85d48d5d59e2d36d878a10af83b710812f3818fc348bf1863aca8c57d246639`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:d37abc9e254151598cd02552918a94209b0571d5807e8e2354767fee2d26f799`  
-		Last Modified: Thu, 04 Dec 2025 21:28:40 GMT  
-		Size: 2.3 MB (2280658 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:8e35172fe75a5483bc13670bb98f415318c4559e767f1a20689dff3cf3360c73`  
-		Last Modified: Thu, 04 Dec 2025 21:28:41 GMT  
-		Size: 21.3 KB (21326 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `fluentd:v1.19.0-1.0` - linux; arm variant v5
-
-```console
-$ docker pull fluentd@sha256:aaebbb2d9630e58872361a78ea08ff2f9fd24ccb3c1144b05466e656087c1382
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.1 MB (73104845 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:20088dbd13800e95c34338237e95cdad749f7d4f04f80ddf0604a06ed4eaf907`
--	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
--	Default Command: `["fluentd"]`
-
-```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:18:53 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:18:53 GMT
-RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 04:21:56 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:21:56 GMT
-RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:20 GMT
-LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:20 GMT
-LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:20 GMT
-RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:20 GMT
-EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:20 GMT
-USER fluent
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:20 GMT
-CMD ["fluentd"]
-```
-
--	Layers:
-	-	`sha256:a1c0783a82710a65871102568a0ace23c3dd0f89dba1af72c3290089eac458f2`  
-		Last Modified: Tue, 18 Nov 2025 01:14:09 GMT  
-		Size: 27.9 MB (27944147 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a8bddf98d29f007597c2419ece53918ed2a02b6807f244eba291b11a115ce2f`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 1.3 MB (1263024 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ce6e0d17644462250ed0239ef347ef83d3d46d91cc236e61f5d1ee58840ebe6`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 189.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70dba72f3360e3a96295c7cea72647313a78f2723776a3e529d977bc6fb38431`  
-		Last Modified: Tue, 18 Nov 2025 04:22:15 GMT  
-		Size: 38.0 MB (37994184 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0930b6e7a3909c3d28136a1cc19c3a553fbbb2a2d33988cd25bd43effa0a140`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 143.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6be6bc7b989da34f73dc506d83cb9f48c37ee8105fe87bd7f52bca4542d7cee2`  
-		Last Modified: Thu, 04 Dec 2025 19:00:42 GMT  
-		Size: 5.9 MB (5901093 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80c6f3399ef20bf6be1ed6a2ca72c0a24e3ad0d84b16a9ef8a0709e1c7659f8f`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 1.2 KB (1183 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b70663e3166cf0a7abf84c4ed0eafa32f04846e2058e90a97ac3e06d24369d32`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 403.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a56bfbe0d3c92ea6b9ebb1c97197ffb757b2487720ce3d2ab6a5a0538ad7bf5b`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 479.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `fluentd:v1.19.0-1.0` - unknown; unknown
-
-```console
-$ docker pull fluentd@sha256:248114ee7add057b9522b312fa3eef5e127b5ce66321a1c70af7ebcf0361e2e6
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305056 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb431f17e2b58f86b090040b8d1cbac7f7a09a0eb6151fd7d76271ab122db28d`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:1253a50e411a8bc80c1968d6d9653822decb6287cafc575af11b24f9ca7d9304`  
-		Last Modified: Thu, 04 Dec 2025 21:28:45 GMT  
-		Size: 2.3 MB (2283629 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:f6d735f6d01c1fac1cdb270eb1066ee221e9e96a36d6d1970722e33bce8fd801`  
-		Last Modified: Thu, 04 Dec 2025 21:28:46 GMT  
-		Size: 21.4 KB (21427 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `fluentd:v1.19.0-1.0` - linux; arm variant v7
-
-```console
-$ docker pull fluentd@sha256:19368b5ced494adadbccad66e2b3d118db4c880ed6a2159f28dc54906d309884
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.0 MB (70983027 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b4b6c0c43b2bade13a1281582e1f172afddcb1d640eabe2965dbe6d7f4cc2d4`
--	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
--	Default Command: `["fluentd"]`
-
-```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:59:14 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:59:14 GMT
-RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 05:01:55 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:01:55 GMT
-RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:07 GMT
-LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:07 GMT
-LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:07 GMT
-RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:07 GMT
-RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:08 GMT
-EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:08 GMT
-USER fluent
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:08 GMT
-CMD ["fluentd"]
-```
-
--	Layers:
-	-	`sha256:8202667160e65087c34b2510837039e29b29936f1b75fc737a33219ae9c06ec0`  
-		Last Modified: Tue, 18 Nov 2025 01:14:24 GMT  
-		Size: 26.2 MB (26209960 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b64d8370801a134071a40fe32d3d2fa7e0e17d18b25e5289e7237638fa8e7778`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 1.2 MB (1236519 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:926b3223558fcb7b7da07de149d35cb77b0270a5ab9574f7885d63190a335526`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 190.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0053f0fd615ae9d3957c571c9b6d06b6a892f68a64ba86fcf53aa1540117bbac`  
-		Last Modified: Tue, 18 Nov 2025 05:02:15 GMT  
-		Size: 37.9 MB (37865819 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f081e8cb5f13e31c833ade5ef8bd8bc86005b1083ad01fb5c19150cfe1b852`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 143.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b0deaf0ae9760f48e1ab076a5e92832ce7edb015a71b9617c411340ed2fabe3`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 5.7 MB (5668328 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a918df6a39f29e19adc2cfe7099cb1847628765d58e9f51891b9f7137ee0b33f`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
-		Size: 1.2 KB (1183 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e71a32294b22c81555f0bda1421dd249067a446ecc482b86b1956785045a4ff`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
-		Size: 407.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4645e19fd544b5af4ead15a19a0f7cb149338c69fe9e9cbb6765a8231b1afb9`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
+	-	`sha256:982640467ff0abcdc2d1b5a216d9700c3c835aeb1d919073746737b8969f7c8b`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
 		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19.0-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:b33da86ad731f86d80dc973681026b8a368e7c5c123c8c652c25b2b67c383343
+$ docker pull fluentd@sha256:a29a7ffb611c3adc50b9ea2dd348490ac889db53e7e26caba932c0d48453b058
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303497 bytes)**  
+-	Total Size: **2.3 MB (2301984 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc49d110e1779f25424b64b75f867f39c651900ae1b12fc1badd05db7f4a56ee`
+-	Image ID: `sha256:48f8104217d65fb0113c9bf35d715716126f09cfbc1295f4c719f64078a054c9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:edc79561200a3cdc3d20f9abf1bf47a6fd9495dc898880e298c463f493da599c`  
-		Last Modified: Thu, 04 Dec 2025 21:28:51 GMT  
+	-	`sha256:bebbcc5ba4deb0e3dbda1204c816cc666c33321345bdcf92a17412c208ca5854`  
+		Last Modified: Tue, 09 Dec 2025 03:29:19 GMT  
+		Size: 2.3 MB (2280658 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2070db97328c3a78a1e59b1f7c3cec0a9da19f2d3e7fa1fc92c46ea6e49650e2`  
+		Last Modified: Tue, 09 Dec 2025 03:29:20 GMT  
+		Size: 21.3 KB (21326 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `fluentd:v1.19.0-1.0` - linux; arm variant v5
+
+```console
+$ docker pull fluentd@sha256:f124ea40754ba08bbac0e5843e8f9023994bf2b8238ee72e8ec2d238b9b6a5b5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **73.1 MB (73104752 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cc2f4a67d52435e88678f7a653d15a7beabb5c883fa2f08bb3ac57b9aed29bb8`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 00:36:11 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
+# Tue, 09 Dec 2025 00:36:11 GMT
+RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV LANG=C.UTF-8
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_VERSION=3.4.7
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
+# Tue, 09 Dec 2025 00:39:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 09 Dec 2025 00:39:15 GMT
+RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+CMD ["irb"]
+# Tue, 09 Dec 2025 01:57:11 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Tue, 09 Dec 2025 01:57:11 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
+# Tue, 09 Dec 2025 01:57:11 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+COPY fluent.conf /fluentd/etc/ # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+COPY entrypoint.sh /bin/ # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Tue, 09 Dec 2025 01:57:11 GMT
+EXPOSE map[24224/tcp:{} 5140/tcp:{}]
+# Tue, 09 Dec 2025 01:57:11 GMT
+USER fluent
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Tue, 09 Dec 2025 01:57:11 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:d97bc71d0fa535127863fdab265dfddb07b3cda35b80de4dd2b9b67fe154c856`  
+		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
+		Size: 27.9 MB (27944187 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:60b6a68a4c64d1607140d9e7ef52b820f028d1745795db4373db1d67f60365f1`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 1.3 MB (1263005 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6fc48f102063d847095ed56df1cf3e6cfa63ed0ceb24fe7f8335198230e2ccdc`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0e5241e4c81242518e434f00d9f79a59f18fc609e23a17fc7967f5f3bd026daf`  
+		Last Modified: Tue, 09 Dec 2025 00:39:35 GMT  
+		Size: 38.0 MB (37994161 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:87f7b942b9f3410c6c1da7dc6e29bbc3b9606a378eef9f16f0fff45c912da461`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 143.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1bdcf5b9bbb7e43d0bbc8bf7fdb8750ccd78deb95d6221e87a15ec98a4eae6dc`  
+		Last Modified: Tue, 09 Dec 2025 01:57:27 GMT  
+		Size: 5.9 MB (5901010 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aa13ae067c168ac5fe27c95e549cc4238ec2133319bc03114df7a7aa8a9ecba6`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 1.2 KB (1178 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b806a6d8ca493494d796544b972cae88221361e2f48ed5ea72d5bcee6752152d`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 403.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c86fd63a29b98af5e626ce3a2ba323a6e6b866adbc779bceff239eb53f827ad9`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 476.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `fluentd:v1.19.0-1.0` - unknown; unknown
+
+```console
+$ docker pull fluentd@sha256:8ac93648d48a1a6c1b4b7160d2abd004cee13b8a907093d4ff1c16f268c39c6f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2305056 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a9edf65a7eb020bcff5df6e29b1ff7633094bc897d3a482abfb059ed3308aad5`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:a8f8885c07c68215d8e1178f95df1911fe84d553ed134051c468235e57295d34`  
+		Last Modified: Tue, 09 Dec 2025 03:29:24 GMT  
+		Size: 2.3 MB (2283629 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:326295480ebdff77047de45607a002b0b1206eaecd36eca8cf494b5df0b6a3af`  
+		Last Modified: Tue, 09 Dec 2025 03:29:25 GMT  
+		Size: 21.4 KB (21427 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `fluentd:v1.19.0-1.0` - linux; arm variant v7
+
+```console
+$ docker pull fluentd@sha256:80ed25e467765ea9179c1336cd154facbbc97b76ff1d4599a24a28a6c4820cda
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.0 MB (70983028 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8d5ef7e2cf73a40aa19447b8435c604f51e51d329862092213c7116177e0b18e`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 01:10:33 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
+# Tue, 09 Dec 2025 01:10:33 GMT
+RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV LANG=C.UTF-8
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_VERSION=3.4.7
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
+# Tue, 09 Dec 2025 01:13:21 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 09 Dec 2025 01:13:22 GMT
+RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
+# Tue, 09 Dec 2025 01:13:22 GMT
+CMD ["irb"]
+# Tue, 09 Dec 2025 02:25:30 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Tue, 09 Dec 2025 02:25:30 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
+# Tue, 09 Dec 2025 02:25:30 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+COPY fluent.conf /fluentd/etc/ # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+COPY entrypoint.sh /bin/ # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Tue, 09 Dec 2025 02:25:30 GMT
+EXPOSE map[24224/tcp:{} 5140/tcp:{}]
+# Tue, 09 Dec 2025 02:25:30 GMT
+USER fluent
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Tue, 09 Dec 2025 02:25:30 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:cfc411ffeb71f696e2a89e33e91be9b70084d6c3383474344babe3a4a21eb843`  
+		Last Modified: Mon, 08 Dec 2025 22:16:57 GMT  
+		Size: 26.2 MB (26210013 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b1e7a6dfdb7e0c4de081184afd9356a839f7025591f607c4aaebd07a86bfa633`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 1.2 MB (1236504 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:783d9710c1c77c87df8e2c7764d0abdfa7c0e08a47c4358cbcd1e8856dbb9301`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6727d5012816a8b4a36517d36f5c95dba1143f1fdc7eba217d31f5e7932ae058`  
+		Last Modified: Tue, 09 Dec 2025 01:13:41 GMT  
+		Size: 37.9 MB (37865781 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:52980762c6939f2c87a86ec276e3dd2020f2bb8cdda2a49d4dbd67eb698da3eb`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 143.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:da2811bbd5bbeea2292afee9c7e5020d6c9fa7931713a9f215c32ee1d2525d9e`  
+		Last Modified: Tue, 09 Dec 2025 02:25:47 GMT  
+		Size: 5.7 MB (5668338 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2e0d6282c7790097c8a2ed51f778f05973188b6cc525eb38ecbbfc500a88dee5`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 1.2 KB (1178 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:164fab4a951f344ebdf00612539a04256320c234576b296f68e46dea61edbba3`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 404.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9e0ece9218deaf151a88e6afb1c4e0352361105366d9b297640b43e906b9e759`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 478.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `fluentd:v1.19.0-1.0` - unknown; unknown
+
+```console
+$ docker pull fluentd@sha256:86905e76b1c132c3d0a1e5f3a4c53983f061920d595ee8c958319713624e7ab3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2303497 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:65121fab5cf409c60e1779720becd0a55afe203d6a2f9cba148cc639cee6ac3b`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:dd15196e04866dfb229371c1e0a60dd71c0e82af31dbb0c8efc2710f9d7e1030`  
+		Last Modified: Tue, 09 Dec 2025 03:29:29 GMT  
 		Size: 2.3 MB (2282070 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3e1c082bb1301e59ae044904c59fece993b0c269294fb4ebb29e5eba628915f1`  
-		Last Modified: Thu, 04 Dec 2025 21:28:53 GMT  
+	-	`sha256:e6395c6daa3e8158759a8c8b6a3e3abe898b1b141e63c1954a898dec47239ccf`  
+		Last Modified: Tue, 09 Dec 2025 03:29:30 GMT  
 		Size: 21.4 KB (21427 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.19.0-1.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull fluentd@sha256:dad79d06105b9950b09ae6c76013f79685999c3df9cf739b0ab0d1e99ab90cdb
+$ docker pull fluentd@sha256:718ca0bb84f06f7fdc37bd49d53b1940e8e499878cf52cf1b1dc9361c8cce42f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.5 MB (79536779 bytes)**  
+-	Total Size: **79.5 MB (79536732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4b2d5d26e7dec9ed23e9d93d0f2e1be085b1eaab727fc6711b593b09c4c4723a`
+-	Image ID: `sha256:009c7ecf6da6c474bbe209d4e31585761254051960b0e554b454848101a4eaf7`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:45:57 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:50:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:45:58 GMT
+# Mon, 08 Dec 2025 23:50:45 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:48:39 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:48:39 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:b89cf3ec7a3ed3a58015edd6724125187f0d284147e09b5739b511c74222b2a4`  
-		Last Modified: Tue, 18 Nov 2025 01:13:26 GMT  
-		Size: 30.1 MB (30138610 bytes)  
+	-	`sha256:f626fba1463b32b20f78d29b52dcf15be927dbb5372a9ba6a5f97aad47ae220b`  
+		Last Modified: Mon, 08 Dec 2025 22:17:19 GMT  
+		Size: 30.1 MB (30138628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:623192602c00e918197dfe6e2a1def0175e7be0d446a268ed38b6b5a621d38e0`  
-		Last Modified: Tue, 18 Nov 2025 04:48:55 GMT  
-		Size: 1.3 MB (1261685 bytes)  
+	-	`sha256:7eaf4b7d6af85fa2d477bc8c6b8ff0abab28c0132199981bdea9c0fca84569b4`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
+		Size: 1.3 MB (1261658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee5fe6e2e9edffda349665022b4300b140e6a85f15a0f7614134df0867bcd551`  
-		Last Modified: Tue, 18 Nov 2025 04:48:55 GMT  
-		Size: 189.0 B  
+	-	`sha256:4f911311bcccab7cf68fb0509ee5408de0a72daec80c6ccd44b123cc0c6e41c8`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85c522fdb9fff298474b76a11223cdcb250793d0c701b8cf389c0375800c7d5c`  
-		Last Modified: Tue, 18 Nov 2025 04:48:57 GMT  
-		Size: 42.1 MB (42145706 bytes)  
+	-	`sha256:364b5aea1f4626e813a93901f04bb24cb8787623734b3d2f15a5ecbf285d584c`  
+		Last Modified: Mon, 08 Dec 2025 23:53:35 GMT  
+		Size: 42.1 MB (42145686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3907ba9f7c5e39a58b009710a158a43136020eb8b46dc729f4426b65e03945ab`  
-		Last Modified: Tue, 18 Nov 2025 04:48:54 GMT  
+	-	`sha256:7741a8581bb0066370ece471f6aa770ab4d3f3d46eb393a106ee1d6cd6c2ac44`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
 		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62078078c49a19cbd32c8398ca08eb739eba2a5c8f7e3ec2cc12e2f4b8c3b2db`  
-		Last Modified: Thu, 04 Dec 2025 18:59:44 GMT  
-		Size: 6.0 MB (5988380 bytes)  
+	-	`sha256:f30c8ff64bcfb969527bc42ad4e1ad72b62d6cd0e6fee85af029b74e7882c8e5`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 6.0 MB (5988371 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16e731dcc3a52a3e4926909f34921ae4f16049058441be34d00049373c20519d`  
-		Last Modified: Thu, 04 Dec 2025 18:59:46 GMT  
-		Size: 1.2 KB (1186 bytes)  
+	-	`sha256:cf432b8b15239d95c4f0325fe81ff1431d64de2fd96d1b7f6863814c540228bd`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:999b33ee39bc926af8f4930b89aa17f0a6b820c5ffa7479e1bfbe6d7c3b7509e`  
-		Last Modified: Thu, 04 Dec 2025 18:59:45 GMT  
-		Size: 402.0 B  
+	-	`sha256:166d8c0a8e8736f2fe6ff7f94c1012f5ced0e92ee4185869ec3cc496e0903780`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c311d60c665f9b731977ba41c34e0d299143e31b5709d86dda8eb3f392a54e6`  
-		Last Modified: Thu, 04 Dec 2025 18:59:45 GMT  
-		Size: 479.0 B  
+	-	`sha256:f28088a956e911a8f29e5258cc83d1b1ff723af0eb15e59b56ab09146aaf024f`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19.0-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:06771e235a93cdf7216de411468857b8d19c5b37a9904e274f563c4f84e8a9f4
+$ docker pull fluentd@sha256:6d4336aa08b546a7f78742fe70aa1337eb1f9df67127f24e44ff36cea6091e0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2302387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75bbb2a23905b39c605e81cd2c26ddfe82db37d5659170919172cbdfe9b8819f`
+-	Image ID: `sha256:331fc19fc612036e9b9572fb00e561ecb40dcbce480229fbe0dacf203bb58464`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7eedf47456bd91301c20eb29396d34c6238567229f91c78d64a84385ba5b5c9b`  
-		Last Modified: Thu, 04 Dec 2025 21:28:57 GMT  
+	-	`sha256:772a37f2ff865060ea30e10008b35646b395237dcce4e85e771b3aee446e763b`  
+		Last Modified: Tue, 09 Dec 2025 03:29:34 GMT  
 		Size: 2.3 MB (2280930 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f02e697a3cb8e25e5f9c19892fe981d521d4b20a5ae978535af0a692e681d6e4`  
-		Last Modified: Thu, 04 Dec 2025 21:28:57 GMT  
+	-	`sha256:4133a1074193ccc24229fa34ed308abc4a7efae19431bd52a02f81f873bf1ca5`  
+		Last Modified: Tue, 09 Dec 2025 03:29:35 GMT  
 		Size: 21.5 KB (21457 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.19.0-1.0` - linux; 386
 
 ```console
-$ docker pull fluentd@sha256:56c84a09c3ec5836ff8a1ecd8ebda47efc0d785ee4719a2920828714257f476c
+$ docker pull fluentd@sha256:599d5b7afd9f493339ccaab7d3287bbe575670d5512a0a30ddc372f2b4662333
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.3 MB (76296093 bytes)**  
+-	Total Size: **76.3 MB (76296470 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:341497361633166c5f1384541265cc4c337cdbd3c29ac2d729d25563dc2b4817`
+-	Image ID: `sha256:3226219d46e9e8d7e930a62a5f59f32c4b9bf53dedf8185fb4523fa751ae8c43`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 03:40:43 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:38:38 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 03:40:43 GMT
+# Mon, 08 Dec 2025 23:38:38 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:8fdd29f45eb19adab28e642f5b411c2aac45db9e7dfc1ab412acdcf1365af598`  
-		Last Modified: Tue, 18 Nov 2025 01:13:49 GMT  
-		Size: 31.3 MB (31293068 bytes)  
+	-	`sha256:2648c88d9207cd6090be83f4a97e2aa4080930987d8fb62195cc994194160e67`  
+		Last Modified: Mon, 08 Dec 2025 22:17:03 GMT  
+		Size: 31.3 MB (31293070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:486bef966be95a2220ea41b52e0e83a8a622f90c5f320368a5f0d7284a00c503`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
-		Size: 1.3 MB (1287214 bytes)  
+	-	`sha256:f294212caa020512a8aa004ccf0ad2b44f2f61a493fe313aac9a4e4ee4616f88`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
+		Size: 1.3 MB (1287234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31f45ed37d5457ae44f5b9a372ecc7bde1dd97d5be333bac0f4030719c7f0eca`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
+	-	`sha256:f65638b1819071ea4ed695525bf34b0382fbf37355d69b43d7e7a51da79386c2`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:402fa9c5b261b8af75a607827e3e965cc7ce4351d91e3eba319a98783514bc3d`  
-		Last Modified: Tue, 18 Nov 2025 03:43:29 GMT  
-		Size: 37.7 MB (37740240 bytes)  
+	-	`sha256:abf2a7d1e8d2815af0f490c9813945dc251f9437878cdc62fd3c2b51ed2604f6`  
+		Last Modified: Mon, 08 Dec 2025 23:41:29 GMT  
+		Size: 37.7 MB (37740224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b3646abfea40cabe9f48dabaff87823bc4de7febc7191871f992e8cdd29e5cc`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
+	-	`sha256:71d46bda2c903ca306081bb1f1b3dd1a3ed78ae7db3f6ec6878732b92d7fce01`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fee570408516d44060c51273b5d738a6205bde32c3fc376fd9ef14e4a4457dce`  
-		Last Modified: Thu, 04 Dec 2025 18:58:23 GMT  
-		Size: 6.0 MB (5973173 bytes)  
+	-	`sha256:0225134b3c4f305ef3b4ea683e6ef3ebe867bfe93748d883bf0024c8ca1d66ad`  
+		Last Modified: Tue, 09 Dec 2025 00:30:21 GMT  
+		Size: 6.0 MB (5973548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6275cd6a8a20192011b6e7b4404598eec9c28328967093f4ff56a0ed65ccaa13`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:2e1660a934088ae96a9d6badbe46ba3388e69f4f373324aeb706f83554e2e07a`  
+		Last Modified: Tue, 09 Dec 2025 00:30:20 GMT  
+		Size: 1.2 KB (1180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:573b1d8dffa356f70d09c25d0a422654add5b105c3303262e90e092f928c0476`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
+	-	`sha256:8930a2ad4093b7ed2e2ced5f3181c9b1e77a957a48fe07611c3bb512cd885fc3`  
+		Last Modified: Tue, 09 Dec 2025 00:30:21 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad3b55019ddd93dad3e462ed7516328b0c240a97a4b8c4a23e529ed5be7854ad`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
-		Size: 479.0 B  
+	-	`sha256:63f7ef0f2a1ee408469afa43876a95a3a4038339be79b2e8293dafce7e35ea9e`  
+		Last Modified: Tue, 09 Dec 2025 00:30:20 GMT  
+		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19.0-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:744c888b5dc6510967c83cc08cbce6f8dc8d337314c61a7a7dfbf1d1291665fb
+$ docker pull fluentd@sha256:ab5f503e6138fb45fb9170d4f5d73200f9526153e68920ff9958f76be1c3c399
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2299133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ee20af4a982057aade0f5e6c1d71ab447ef9f7b85bbff621c4e002211248bfa`
+-	Image ID: `sha256:cafd53262ce8b25a127db185db86996e348ec59449d1a1162e6fbfee6b3fdd20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ffd30fcff8d76a898b59a12fe9d10b319b7a244e1cfb260572d112cd4569634c`  
-		Last Modified: Thu, 04 Dec 2025 21:29:01 GMT  
+	-	`sha256:1b209f9eb778ff7a38c9febc5677c4e19fdebc04ce396244bb7ddb115ba08c76`  
+		Last Modified: Tue, 09 Dec 2025 03:29:38 GMT  
 		Size: 2.3 MB (2277846 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6e78909919782d8821393c595f47c30f5265a082863f5fc58e35484d98e0ca2a`  
-		Last Modified: Thu, 04 Dec 2025 21:29:02 GMT  
+	-	`sha256:86e1e3cad007bc87120030312a763066b158bd539e186676e1f4211bfb0416f0`  
+		Last Modified: Tue, 09 Dec 2025 03:29:39 GMT  
 		Size: 21.3 KB (21287 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5427,135 +5427,135 @@ $ docker pull fluentd@sha256:0d89113916b32c598de029868776a0abbf0be9b9054737578c9
 ### `fluentd:v1.19.0-1.0` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:ed187389e39640b36c3ce9981c1cf8dd26a754d7f04203e455789fde6d108294
+$ docker pull fluentd@sha256:d452f8eb08c139dd159cc43f074781c32b152a74d1132add1b85b65ffab1a967
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.8 MB (76792846 bytes)**  
+-	Total Size: **76.8 MB (76792670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee430e9e1c0931135d40bd46f138b5f92d4fcd73fa1892a2b40a65ba99b8142d`
+-	Image ID: `sha256:becbf6430ea077e039bcd6efa5440648d1a20b46ee4bf14d10ff45ced2297003`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 05:14:24 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 01:14:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 05:14:25 GMT
+# Tue, 09 Dec 2025 01:14:29 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:14 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:14 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 USER fluent
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:3063905a9d3db554a6c1d839c1212baff57798d644d5b0d198eef84afd107192`  
-		Last Modified: Tue, 18 Nov 2025 01:13:05 GMT  
-		Size: 29.8 MB (29834372 bytes)  
+	-	`sha256:deacec5e6af82b258c59e95e3e86abeef36fad06b1d9ff2de33e88544ffb79ff`  
+		Last Modified: Mon, 08 Dec 2025 22:20:52 GMT  
+		Size: 29.8 MB (29834400 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c5be0006390772cf7f9022344d107d52c9454ddfb26a9b6aa53e4f77a9bdc5e`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 1.3 MB (1294253 bytes)  
+	-	`sha256:5720eba478777df8c646e25a1f6668894f78c60729b8066bb843a45e90174380`  
+		Last Modified: Tue, 09 Dec 2025 01:17:18 GMT  
+		Size: 1.3 MB (1294285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6df3437f72c81d0de5473522e48eb46cf20ee4ae5ae981dfae54b48d71b07c5f`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 188.0 B  
+	-	`sha256:3f32a4b1f7561f4abaafe6220c2c2f308127ee5ef35474833e833a9af097e333`  
+		Last Modified: Tue, 09 Dec 2025 01:17:18 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f67960768c1f544671789085d4901deaf00ad13d073997065fbd38e41baef3e`  
-		Last Modified: Tue, 18 Nov 2025 05:17:09 GMT  
-		Size: 39.3 MB (39287189 bytes)  
+	-	`sha256:ee309e9c6d575837e8951d02780b3dc1213cd062f43a3b89fb81bb4b5e97a4c7`  
+		Last Modified: Tue, 09 Dec 2025 01:20:37 GMT  
+		Size: 39.3 MB (39287036 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22de67f11ad5b13189744a053b706d6a38590793d5b547a05561143636a6e794`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 143.0 B  
+	-	`sha256:ff7ed7c0ce15fb53c939f10bbbaac441035b79208a1fa1e4eb1b7c771c99dbd9`  
+		Last Modified: Tue, 09 Dec 2025 01:20:33 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1dae3e7995bd0deb7b55500a6bd72b6da73d79ec0e7c0311d2a8ffe3b3a07937`  
-		Last Modified: Thu, 04 Dec 2025 19:00:57 GMT  
-		Size: 6.4 MB (6374635 bytes)  
+	-	`sha256:805d4acfff0a8924cf1d1ee4e7ab9a7ed6a24a670b5bfde2364066dcb40e5897`  
+		Last Modified: Tue, 09 Dec 2025 03:04:01 GMT  
+		Size: 6.4 MB (6374561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44422c1d3698300c20c8d82b912869f2db389e052786cf236d58d4c070a52bb6`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 1.2 KB (1182 bytes)  
+	-	`sha256:164dab4e3071b8b90875f252880a33a9469e2ef2e5143ce4181d9042b67e6cc0`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac31f9e4d8d6111baff1810add02a698b16ee337ebae0e5a04bccd34dc3d1007`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 405.0 B  
+	-	`sha256:26a434834ec1b4336e0c8c15f37b1ff420317268465a1af98cb8d9c70f629049`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f174a509e3b7c1f6a3be616887aede378dae2a6ff15ad0eecd695f67d8461275`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 479.0 B  
+	-	`sha256:94ada78e2bbe6225a83b55c223117545ce1e9f27b7d4ec7370b113e4031f9464`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 476.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19.0-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:0dadfa6115c306234fc61d311151598224464a5b584da6589aa5d497360139a5
+$ docker pull fluentd@sha256:a9acd04217a219287c7233d4a242ce3617474b2926d7c6fa65bd0f9ef3fd9c6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303429 bytes)**  
+-	Total Size: **2.3 MB (2303428 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f29918cffd01b2c59af6e28e2e0b4917359f9a0f89eda0ac5c64dd59b7dfb1e`
+-	Image ID: `sha256:0e239f395e91356318869f19f375ad7ab5a4af065670c2f07f3218ceafe26fa4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c79cd4563cae1c78685f758473a2ceab79b121ee11e164da1e6b7ab447e0d552`  
-		Last Modified: Thu, 04 Dec 2025 21:29:11 GMT  
+	-	`sha256:75008fcce7092be8bf478ab2e0af5b9d86a1ea736122f1053c5852ff7df7101c`  
+		Last Modified: Tue, 09 Dec 2025 03:29:46 GMT  
 		Size: 2.3 MB (2282103 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a21fae52c306fa690f842976aaaa9c786f47c33a5a87fa92d845c843d5e94942`  
-		Last Modified: Thu, 04 Dec 2025 21:29:13 GMT  
-		Size: 21.3 KB (21326 bytes)  
+	-	`sha256:9fcc954fcc03cff37e89153ac0395dbc6a528b01ad546cad6e42d769364f6c4b`  
+		Last Modified: Tue, 09 Dec 2025 03:29:47 GMT  
+		Size: 21.3 KB (21325 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `fluentd:v1.19.1-debian-1.0`
 
 ```console
-$ docker pull fluentd@sha256:00aeea8046975151285dee7de06f37fbca859a48dd9afa6b948ae7f13ba28e59
+$ docker pull fluentd@sha256:056ebdc491061079ab78aaf7ed35662018e449492c46a7d9fd05feac730c2f91
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5578,640 +5578,640 @@ $ docker pull fluentd@sha256:00aeea8046975151285dee7de06f37fbca859a48dd9afa6b948
 ### `fluentd:v1.19.1-debian-1.0` - linux; amd64
 
 ```console
-$ docker pull fluentd@sha256:6240494942204615ec7b6afc505afe5251fd9447b9f97aa1d15147b3c101433f
+$ docker pull fluentd@sha256:f1854e28f36cad811359493ee9c1e323788a38cf41f24856b433ff4253584273
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.2 MB (79219006 bytes)**  
+-	Total Size: **79.2 MB (79218641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd66d9d1a7d5268d13f4c183c9e2f0baffbc451a07a95d3a92aa413b15629db7`
+-	Image ID: `sha256:36c66715a9b546bdbe3cdecada630daf6a7fcbee47df1b8fcc2bd926586c792d`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 06:00:57 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:41:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 06:00:57 GMT
+# Mon, 08 Dec 2025 23:41:26 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 06:03:23 GMT
+# Mon, 08 Dec 2025 23:43:49 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:58:44 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:58:45 GMT
+# Tue, 09 Dec 2025 00:59:27 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:0e4bc2bd6656e6e004e3c749af70e5650bac2258243eb0949dea51cb8b7863db`  
-		Last Modified: Tue, 18 Nov 2025 02:35:01 GMT  
-		Size: 29.8 MB (29776484 bytes)  
+	-	`sha256:1733a4cd59540b3470ff7a90963bcdea5b543279dd6bdaf022d7883fdad221e5`  
+		Last Modified: Mon, 08 Dec 2025 22:17:58 GMT  
+		Size: 29.8 MB (29776496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecb0562513a544d09b243cd53af17176ae058cdb46bab21dc80e6e0e176085ac`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
-		Size: 1.3 MB (1279393 bytes)  
+	-	`sha256:43ae949789af527dd9c4bd7de681ac14f1a5fe2debe4a7a04ba3c8d0d8f5c3fb`  
+		Last Modified: Mon, 08 Dec 2025 23:44:04 GMT  
+		Size: 1.3 MB (1279388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2995c07ae76a079f87ad5194b6ae8ae189e2697989ee2ec3ff402c4bbdbaef98`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
-		Size: 190.0 B  
+	-	`sha256:94d82444e1da05ff4a53a213c6cd8ec9dc3fdf2715745f99678454cb58f004f7`  
+		Last Modified: Mon, 08 Dec 2025 23:43:52 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22a8b74c7e9beb752e09eab60f51bfed7d4156be9c8a4cb31e65c1c593e477ad`  
-		Last Modified: Tue, 18 Nov 2025 06:03:40 GMT  
-		Size: 42.2 MB (42158682 bytes)  
+	-	`sha256:102557edb4d1304b6930747c07bd40abb5f97283ca8dce01c2fcad694b84c1d0`  
+		Last Modified: Mon, 08 Dec 2025 23:44:08 GMT  
+		Size: 42.2 MB (42158459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50951878876ddf823dfebd9e0c1677361d53bec1ff62831466fd280b78c485e7`  
-		Last Modified: Tue, 18 Nov 2025 06:03:38 GMT  
+	-	`sha256:b7a7a64f30f673db60828d7e540f6a9cd1e1683c146df8a193ef3781e4784660`  
+		Last Modified: Mon, 08 Dec 2025 23:44:04 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72585dd7596a87134366b4811336b292df351eb34419901e60defb1c412033a5`  
-		Last Modified: Thu, 04 Dec 2025 18:59:08 GMT  
-		Size: 6.0 MB (6002049 bytes)  
+	-	`sha256:49bf4c70db087c33e5acc082c9bc5982fc3a684f9a8a6ee949c7e7929e252fed`  
+		Last Modified: Tue, 09 Dec 2025 00:59:42 GMT  
+		Size: 6.0 MB (6001910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23d21ae1bbd8cf7a5c81316fadc4c1d605148b8f29723da71bf2c957621f4b22`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:7c96e69020f7ae05041307e1c9091e6dc01afe1ec5878d7c9c14a4539d4ffd7c`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8fa2be93123d4ff3aaff45b160afa29dd535164e2fd743708e5c83ee822cf0`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 403.0 B  
+	-	`sha256:7051ea010ff321ea91e14ce49e8613b4a3222cfca6262411c3c89e4c16cb71a1`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ccca90a00656c889b24dad43ee644103f1f035b2f65ce35b0f34d35451734c`  
-		Last Modified: Thu, 04 Dec 2025 18:59:07 GMT  
-		Size: 479.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `fluentd:v1.19.1-debian-1.0` - unknown; unknown
-
-```console
-$ docker pull fluentd@sha256:84fb8d8f71409aa4324f6d008d4a031861d8ec48f2cdd687031c4d9f1d0c01d0
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2301984 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e85d48d5d59e2d36d878a10af83b710812f3818fc348bf1863aca8c57d246639`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:d37abc9e254151598cd02552918a94209b0571d5807e8e2354767fee2d26f799`  
-		Last Modified: Thu, 04 Dec 2025 21:28:40 GMT  
-		Size: 2.3 MB (2280658 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:8e35172fe75a5483bc13670bb98f415318c4559e767f1a20689dff3cf3360c73`  
-		Last Modified: Thu, 04 Dec 2025 21:28:41 GMT  
-		Size: 21.3 KB (21326 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `fluentd:v1.19.1-debian-1.0` - linux; arm variant v5
-
-```console
-$ docker pull fluentd@sha256:aaebbb2d9630e58872361a78ea08ff2f9fd24ccb3c1144b05466e656087c1382
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.1 MB (73104845 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:20088dbd13800e95c34338237e95cdad749f7d4f04f80ddf0604a06ed4eaf907`
--	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
--	Default Command: `["fluentd"]`
-
-```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:18:53 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:18:53 GMT
-RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 04:21:56 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:21:56 GMT
-ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:21:56 GMT
-RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:21:56 GMT
-CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:20 GMT
-LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:20 GMT
-LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:20 GMT
-RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:20 GMT
-EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:20 GMT
-USER fluent
-# Thu, 04 Dec 2025 19:00:20 GMT
-ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:20 GMT
-CMD ["fluentd"]
-```
-
--	Layers:
-	-	`sha256:a1c0783a82710a65871102568a0ace23c3dd0f89dba1af72c3290089eac458f2`  
-		Last Modified: Tue, 18 Nov 2025 01:14:09 GMT  
-		Size: 27.9 MB (27944147 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a8bddf98d29f007597c2419ece53918ed2a02b6807f244eba291b11a115ce2f`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 1.3 MB (1263024 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ce6e0d17644462250ed0239ef347ef83d3d46d91cc236e61f5d1ee58840ebe6`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 189.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70dba72f3360e3a96295c7cea72647313a78f2723776a3e529d977bc6fb38431`  
-		Last Modified: Tue, 18 Nov 2025 04:22:15 GMT  
-		Size: 38.0 MB (37994184 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0930b6e7a3909c3d28136a1cc19c3a553fbbb2a2d33988cd25bd43effa0a140`  
-		Last Modified: Tue, 18 Nov 2025 04:22:12 GMT  
-		Size: 143.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6be6bc7b989da34f73dc506d83cb9f48c37ee8105fe87bd7f52bca4542d7cee2`  
-		Last Modified: Thu, 04 Dec 2025 19:00:42 GMT  
-		Size: 5.9 MB (5901093 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80c6f3399ef20bf6be1ed6a2ca72c0a24e3ad0d84b16a9ef8a0709e1c7659f8f`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 1.2 KB (1183 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b70663e3166cf0a7abf84c4ed0eafa32f04846e2058e90a97ac3e06d24369d32`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 403.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a56bfbe0d3c92ea6b9ebb1c97197ffb757b2487720ce3d2ab6a5a0538ad7bf5b`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 479.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `fluentd:v1.19.1-debian-1.0` - unknown; unknown
-
-```console
-$ docker pull fluentd@sha256:248114ee7add057b9522b312fa3eef5e127b5ce66321a1c70af7ebcf0361e2e6
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305056 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb431f17e2b58f86b090040b8d1cbac7f7a09a0eb6151fd7d76271ab122db28d`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:1253a50e411a8bc80c1968d6d9653822decb6287cafc575af11b24f9ca7d9304`  
-		Last Modified: Thu, 04 Dec 2025 21:28:45 GMT  
-		Size: 2.3 MB (2283629 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:f6d735f6d01c1fac1cdb270eb1066ee221e9e96a36d6d1970722e33bce8fd801`  
-		Last Modified: Thu, 04 Dec 2025 21:28:46 GMT  
-		Size: 21.4 KB (21427 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `fluentd:v1.19.1-debian-1.0` - linux; arm variant v7
-
-```console
-$ docker pull fluentd@sha256:19368b5ced494adadbccad66e2b3d118db4c880ed6a2159f28dc54906d309884
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.0 MB (70983027 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b4b6c0c43b2bade13a1281582e1f172afddcb1d640eabe2965dbe6d7f4cc2d4`
--	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
--	Default Command: `["fluentd"]`
-
-```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:59:14 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:59:14 GMT
-RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 05:01:55 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:01:55 GMT
-ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:01:55 GMT
-RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:01:55 GMT
-CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:07 GMT
-LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:07 GMT
-LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:07 GMT
-RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:07 GMT
-RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:08 GMT
-EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:08 GMT
-USER fluent
-# Thu, 04 Dec 2025 19:00:08 GMT
-ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:08 GMT
-CMD ["fluentd"]
-```
-
--	Layers:
-	-	`sha256:8202667160e65087c34b2510837039e29b29936f1b75fc737a33219ae9c06ec0`  
-		Last Modified: Tue, 18 Nov 2025 01:14:24 GMT  
-		Size: 26.2 MB (26209960 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b64d8370801a134071a40fe32d3d2fa7e0e17d18b25e5289e7237638fa8e7778`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 1.2 MB (1236519 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:926b3223558fcb7b7da07de149d35cb77b0270a5ab9574f7885d63190a335526`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 190.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0053f0fd615ae9d3957c571c9b6d06b6a892f68a64ba86fcf53aa1540117bbac`  
-		Last Modified: Tue, 18 Nov 2025 05:02:15 GMT  
-		Size: 37.9 MB (37865819 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f081e8cb5f13e31c833ade5ef8bd8bc86005b1083ad01fb5c19150cfe1b852`  
-		Last Modified: Tue, 18 Nov 2025 05:02:10 GMT  
-		Size: 143.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b0deaf0ae9760f48e1ab076a5e92832ce7edb015a71b9617c411340ed2fabe3`  
-		Last Modified: Thu, 04 Dec 2025 19:00:41 GMT  
-		Size: 5.7 MB (5668328 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a918df6a39f29e19adc2cfe7099cb1847628765d58e9f51891b9f7137ee0b33f`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
-		Size: 1.2 KB (1183 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e71a32294b22c81555f0bda1421dd249067a446ecc482b86b1956785045a4ff`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
-		Size: 407.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4645e19fd544b5af4ead15a19a0f7cb149338c69fe9e9cbb6765a8231b1afb9`  
-		Last Modified: Thu, 04 Dec 2025 19:00:40 GMT  
+	-	`sha256:982640467ff0abcdc2d1b5a216d9700c3c835aeb1d919073746737b8969f7c8b`  
+		Last Modified: Tue, 09 Dec 2025 00:59:41 GMT  
 		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19.1-debian-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:b33da86ad731f86d80dc973681026b8a368e7c5c123c8c652c25b2b67c383343
+$ docker pull fluentd@sha256:a29a7ffb611c3adc50b9ea2dd348490ac889db53e7e26caba932c0d48453b058
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303497 bytes)**  
+-	Total Size: **2.3 MB (2301984 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc49d110e1779f25424b64b75f867f39c651900ae1b12fc1badd05db7f4a56ee`
+-	Image ID: `sha256:48f8104217d65fb0113c9bf35d715716126f09cfbc1295f4c719f64078a054c9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:edc79561200a3cdc3d20f9abf1bf47a6fd9495dc898880e298c463f493da599c`  
-		Last Modified: Thu, 04 Dec 2025 21:28:51 GMT  
+	-	`sha256:bebbcc5ba4deb0e3dbda1204c816cc666c33321345bdcf92a17412c208ca5854`  
+		Last Modified: Tue, 09 Dec 2025 03:29:19 GMT  
+		Size: 2.3 MB (2280658 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2070db97328c3a78a1e59b1f7c3cec0a9da19f2d3e7fa1fc92c46ea6e49650e2`  
+		Last Modified: Tue, 09 Dec 2025 03:29:20 GMT  
+		Size: 21.3 KB (21326 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `fluentd:v1.19.1-debian-1.0` - linux; arm variant v5
+
+```console
+$ docker pull fluentd@sha256:f124ea40754ba08bbac0e5843e8f9023994bf2b8238ee72e8ec2d238b9b6a5b5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **73.1 MB (73104752 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cc2f4a67d52435e88678f7a653d15a7beabb5c883fa2f08bb3ac57b9aed29bb8`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 00:36:11 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
+# Tue, 09 Dec 2025 00:36:11 GMT
+RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV LANG=C.UTF-8
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_VERSION=3.4.7
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
+# Tue, 09 Dec 2025 00:39:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Tue, 09 Dec 2025 00:39:15 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 09 Dec 2025 00:39:15 GMT
+RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
+# Tue, 09 Dec 2025 00:39:15 GMT
+CMD ["irb"]
+# Tue, 09 Dec 2025 01:57:11 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Tue, 09 Dec 2025 01:57:11 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
+# Tue, 09 Dec 2025 01:57:11 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+COPY fluent.conf /fluentd/etc/ # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+COPY entrypoint.sh /bin/ # buildkit
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Tue, 09 Dec 2025 01:57:11 GMT
+EXPOSE map[24224/tcp:{} 5140/tcp:{}]
+# Tue, 09 Dec 2025 01:57:11 GMT
+USER fluent
+# Tue, 09 Dec 2025 01:57:11 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Tue, 09 Dec 2025 01:57:11 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:d97bc71d0fa535127863fdab265dfddb07b3cda35b80de4dd2b9b67fe154c856`  
+		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
+		Size: 27.9 MB (27944187 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:60b6a68a4c64d1607140d9e7ef52b820f028d1745795db4373db1d67f60365f1`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 1.3 MB (1263005 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6fc48f102063d847095ed56df1cf3e6cfa63ed0ceb24fe7f8335198230e2ccdc`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0e5241e4c81242518e434f00d9f79a59f18fc609e23a17fc7967f5f3bd026daf`  
+		Last Modified: Tue, 09 Dec 2025 00:39:35 GMT  
+		Size: 38.0 MB (37994161 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:87f7b942b9f3410c6c1da7dc6e29bbc3b9606a378eef9f16f0fff45c912da461`  
+		Last Modified: Tue, 09 Dec 2025 00:39:32 GMT  
+		Size: 143.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1bdcf5b9bbb7e43d0bbc8bf7fdb8750ccd78deb95d6221e87a15ec98a4eae6dc`  
+		Last Modified: Tue, 09 Dec 2025 01:57:27 GMT  
+		Size: 5.9 MB (5901010 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aa13ae067c168ac5fe27c95e549cc4238ec2133319bc03114df7a7aa8a9ecba6`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 1.2 KB (1178 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b806a6d8ca493494d796544b972cae88221361e2f48ed5ea72d5bcee6752152d`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 403.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c86fd63a29b98af5e626ce3a2ba323a6e6b866adbc779bceff239eb53f827ad9`  
+		Last Modified: Tue, 09 Dec 2025 01:57:26 GMT  
+		Size: 476.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `fluentd:v1.19.1-debian-1.0` - unknown; unknown
+
+```console
+$ docker pull fluentd@sha256:8ac93648d48a1a6c1b4b7160d2abd004cee13b8a907093d4ff1c16f268c39c6f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2305056 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a9edf65a7eb020bcff5df6e29b1ff7633094bc897d3a482abfb059ed3308aad5`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:a8f8885c07c68215d8e1178f95df1911fe84d553ed134051c468235e57295d34`  
+		Last Modified: Tue, 09 Dec 2025 03:29:24 GMT  
+		Size: 2.3 MB (2283629 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:326295480ebdff77047de45607a002b0b1206eaecd36eca8cf494b5df0b6a3af`  
+		Last Modified: Tue, 09 Dec 2025 03:29:25 GMT  
+		Size: 21.4 KB (21427 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `fluentd:v1.19.1-debian-1.0` - linux; arm variant v7
+
+```console
+$ docker pull fluentd@sha256:80ed25e467765ea9179c1336cd154facbbc97b76ff1d4599a24a28a6c4820cda
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.0 MB (70983028 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8d5ef7e2cf73a40aa19447b8435c604f51e51d329862092213c7116177e0b18e`
+-	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
+-	Default Command: `["fluentd"]`
+
+```dockerfile
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 01:10:33 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
+# Tue, 09 Dec 2025 01:10:33 GMT
+RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV LANG=C.UTF-8
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_VERSION=3.4.7
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
+# Tue, 09 Dec 2025 01:13:21 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV GEM_HOME=/usr/local/bundle
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
+# Tue, 09 Dec 2025 01:13:21 GMT
+ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 09 Dec 2025 01:13:22 GMT
+RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
+# Tue, 09 Dec 2025 01:13:22 GMT
+CMD ["irb"]
+# Tue, 09 Dec 2025 02:25:30 GMT
+LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
+# Tue, 09 Dec 2025 02:25:30 GMT
+LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
+# Tue, 09 Dec 2025 02:25:30 GMT
+RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+COPY fluent.conf /fluentd/etc/ # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+COPY entrypoint.sh /bin/ # buildkit
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENV FLUENTD_CONF=fluent.conf
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
+# Tue, 09 Dec 2025 02:25:30 GMT
+EXPOSE map[24224/tcp:{} 5140/tcp:{}]
+# Tue, 09 Dec 2025 02:25:30 GMT
+USER fluent
+# Tue, 09 Dec 2025 02:25:30 GMT
+ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
+# Tue, 09 Dec 2025 02:25:30 GMT
+CMD ["fluentd"]
+```
+
+-	Layers:
+	-	`sha256:cfc411ffeb71f696e2a89e33e91be9b70084d6c3383474344babe3a4a21eb843`  
+		Last Modified: Mon, 08 Dec 2025 22:16:57 GMT  
+		Size: 26.2 MB (26210013 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b1e7a6dfdb7e0c4de081184afd9356a839f7025591f607c4aaebd07a86bfa633`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 1.2 MB (1236504 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:783d9710c1c77c87df8e2c7764d0abdfa7c0e08a47c4358cbcd1e8856dbb9301`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6727d5012816a8b4a36517d36f5c95dba1143f1fdc7eba217d31f5e7932ae058`  
+		Last Modified: Tue, 09 Dec 2025 01:13:41 GMT  
+		Size: 37.9 MB (37865781 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:52980762c6939f2c87a86ec276e3dd2020f2bb8cdda2a49d4dbd67eb698da3eb`  
+		Last Modified: Tue, 09 Dec 2025 01:13:38 GMT  
+		Size: 143.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:da2811bbd5bbeea2292afee9c7e5020d6c9fa7931713a9f215c32ee1d2525d9e`  
+		Last Modified: Tue, 09 Dec 2025 02:25:47 GMT  
+		Size: 5.7 MB (5668338 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2e0d6282c7790097c8a2ed51f778f05973188b6cc525eb38ecbbfc500a88dee5`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 1.2 KB (1178 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:164fab4a951f344ebdf00612539a04256320c234576b296f68e46dea61edbba3`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 404.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9e0ece9218deaf151a88e6afb1c4e0352361105366d9b297640b43e906b9e759`  
+		Last Modified: Tue, 09 Dec 2025 02:25:46 GMT  
+		Size: 478.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `fluentd:v1.19.1-debian-1.0` - unknown; unknown
+
+```console
+$ docker pull fluentd@sha256:86905e76b1c132c3d0a1e5f3a4c53983f061920d595ee8c958319713624e7ab3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2303497 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:65121fab5cf409c60e1779720becd0a55afe203d6a2f9cba148cc639cee6ac3b`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:dd15196e04866dfb229371c1e0a60dd71c0e82af31dbb0c8efc2710f9d7e1030`  
+		Last Modified: Tue, 09 Dec 2025 03:29:29 GMT  
 		Size: 2.3 MB (2282070 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3e1c082bb1301e59ae044904c59fece993b0c269294fb4ebb29e5eba628915f1`  
-		Last Modified: Thu, 04 Dec 2025 21:28:53 GMT  
+	-	`sha256:e6395c6daa3e8158759a8c8b6a3e3abe898b1b141e63c1954a898dec47239ccf`  
+		Last Modified: Tue, 09 Dec 2025 03:29:30 GMT  
 		Size: 21.4 KB (21427 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.19.1-debian-1.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull fluentd@sha256:dad79d06105b9950b09ae6c76013f79685999c3df9cf739b0ab0d1e99ab90cdb
+$ docker pull fluentd@sha256:718ca0bb84f06f7fdc37bd49d53b1940e8e499878cf52cf1b1dc9361c8cce42f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.5 MB (79536779 bytes)**  
+-	Total Size: **79.5 MB (79536732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4b2d5d26e7dec9ed23e9d93d0f2e1be085b1eaab727fc6711b593b09c4c4723a`
+-	Image ID: `sha256:009c7ecf6da6c474bbe209d4e31585761254051960b0e554b454848101a4eaf7`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 04:45:57 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:50:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 04:45:58 GMT
+# Mon, 08 Dec 2025 23:50:45 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 04:48:38 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 04:48:39 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 04:48:39 GMT
+# Mon, 08 Dec 2025 23:53:15 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:59:13 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:59:14 GMT
+# Tue, 09 Dec 2025 00:57:51 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:b89cf3ec7a3ed3a58015edd6724125187f0d284147e09b5739b511c74222b2a4`  
-		Last Modified: Tue, 18 Nov 2025 01:13:26 GMT  
-		Size: 30.1 MB (30138610 bytes)  
+	-	`sha256:f626fba1463b32b20f78d29b52dcf15be927dbb5372a9ba6a5f97aad47ae220b`  
+		Last Modified: Mon, 08 Dec 2025 22:17:19 GMT  
+		Size: 30.1 MB (30138628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:623192602c00e918197dfe6e2a1def0175e7be0d446a268ed38b6b5a621d38e0`  
-		Last Modified: Tue, 18 Nov 2025 04:48:55 GMT  
-		Size: 1.3 MB (1261685 bytes)  
+	-	`sha256:7eaf4b7d6af85fa2d477bc8c6b8ff0abab28c0132199981bdea9c0fca84569b4`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
+		Size: 1.3 MB (1261658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee5fe6e2e9edffda349665022b4300b140e6a85f15a0f7614134df0867bcd551`  
-		Last Modified: Tue, 18 Nov 2025 04:48:55 GMT  
-		Size: 189.0 B  
+	-	`sha256:4f911311bcccab7cf68fb0509ee5408de0a72daec80c6ccd44b123cc0c6e41c8`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85c522fdb9fff298474b76a11223cdcb250793d0c701b8cf389c0375800c7d5c`  
-		Last Modified: Tue, 18 Nov 2025 04:48:57 GMT  
-		Size: 42.1 MB (42145706 bytes)  
+	-	`sha256:364b5aea1f4626e813a93901f04bb24cb8787623734b3d2f15a5ecbf285d584c`  
+		Last Modified: Mon, 08 Dec 2025 23:53:35 GMT  
+		Size: 42.1 MB (42145686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3907ba9f7c5e39a58b009710a158a43136020eb8b46dc729f4426b65e03945ab`  
-		Last Modified: Tue, 18 Nov 2025 04:48:54 GMT  
+	-	`sha256:7741a8581bb0066370ece471f6aa770ab4d3f3d46eb393a106ee1d6cd6c2ac44`  
+		Last Modified: Mon, 08 Dec 2025 23:53:31 GMT  
 		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62078078c49a19cbd32c8398ca08eb739eba2a5c8f7e3ec2cc12e2f4b8c3b2db`  
-		Last Modified: Thu, 04 Dec 2025 18:59:44 GMT  
-		Size: 6.0 MB (5988380 bytes)  
+	-	`sha256:f30c8ff64bcfb969527bc42ad4e1ad72b62d6cd0e6fee85af029b74e7882c8e5`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 6.0 MB (5988371 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16e731dcc3a52a3e4926909f34921ae4f16049058441be34d00049373c20519d`  
-		Last Modified: Thu, 04 Dec 2025 18:59:46 GMT  
-		Size: 1.2 KB (1186 bytes)  
+	-	`sha256:cf432b8b15239d95c4f0325fe81ff1431d64de2fd96d1b7f6863814c540228bd`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:999b33ee39bc926af8f4930b89aa17f0a6b820c5ffa7479e1bfbe6d7c3b7509e`  
-		Last Modified: Thu, 04 Dec 2025 18:59:45 GMT  
-		Size: 402.0 B  
+	-	`sha256:166d8c0a8e8736f2fe6ff7f94c1012f5ced0e92ee4185869ec3cc496e0903780`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c311d60c665f9b731977ba41c34e0d299143e31b5709d86dda8eb3f392a54e6`  
-		Last Modified: Thu, 04 Dec 2025 18:59:45 GMT  
-		Size: 479.0 B  
+	-	`sha256:f28088a956e911a8f29e5258cc83d1b1ff723af0eb15e59b56ab09146aaf024f`  
+		Last Modified: Tue, 09 Dec 2025 00:58:05 GMT  
+		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19.1-debian-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:06771e235a93cdf7216de411468857b8d19c5b37a9904e274f563c4f84e8a9f4
+$ docker pull fluentd@sha256:6d4336aa08b546a7f78742fe70aa1337eb1f9df67127f24e44ff36cea6091e0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2302387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75bbb2a23905b39c605e81cd2c26ddfe82db37d5659170919172cbdfe9b8819f`
+-	Image ID: `sha256:331fc19fc612036e9b9572fb00e561ecb40dcbce480229fbe0dacf203bb58464`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7eedf47456bd91301c20eb29396d34c6238567229f91c78d64a84385ba5b5c9b`  
-		Last Modified: Thu, 04 Dec 2025 21:28:57 GMT  
+	-	`sha256:772a37f2ff865060ea30e10008b35646b395237dcce4e85e771b3aee446e763b`  
+		Last Modified: Tue, 09 Dec 2025 03:29:34 GMT  
 		Size: 2.3 MB (2280930 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f02e697a3cb8e25e5f9c19892fe981d521d4b20a5ae978535af0a692e681d6e4`  
-		Last Modified: Thu, 04 Dec 2025 21:28:57 GMT  
+	-	`sha256:4133a1074193ccc24229fa34ed308abc4a7efae19431bd52a02f81f873bf1ca5`  
+		Last Modified: Tue, 09 Dec 2025 03:29:35 GMT  
 		Size: 21.5 KB (21457 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fluentd:v1.19.1-debian-1.0` - linux; 386
 
 ```console
-$ docker pull fluentd@sha256:56c84a09c3ec5836ff8a1ecd8ebda47efc0d785ee4719a2920828714257f476c
+$ docker pull fluentd@sha256:599d5b7afd9f493339ccaab7d3287bbe575670d5512a0a30ddc372f2b4662333
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.3 MB (76296093 bytes)**  
+-	Total Size: **76.3 MB (76296470 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:341497361633166c5f1384541265cc4c337cdbd3c29ac2d729d25563dc2b4817`
+-	Image ID: `sha256:3226219d46e9e8d7e930a62a5f59f32c4b9bf53dedf8185fb4523fa751ae8c43`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 03:40:43 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1765152000'
+# Mon, 08 Dec 2025 23:38:38 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 03:40:43 GMT
+# Mon, 08 Dec 2025 23:38:38 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 03:43:12 GMT
+# Mon, 08 Dec 2025 23:41:11 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 USER fluent
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 18:58:01 GMT
+# Tue, 09 Dec 2025 00:30:05 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:8fdd29f45eb19adab28e642f5b411c2aac45db9e7dfc1ab412acdcf1365af598`  
-		Last Modified: Tue, 18 Nov 2025 01:13:49 GMT  
-		Size: 31.3 MB (31293068 bytes)  
+	-	`sha256:2648c88d9207cd6090be83f4a97e2aa4080930987d8fb62195cc994194160e67`  
+		Last Modified: Mon, 08 Dec 2025 22:17:03 GMT  
+		Size: 31.3 MB (31293070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:486bef966be95a2220ea41b52e0e83a8a622f90c5f320368a5f0d7284a00c503`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
-		Size: 1.3 MB (1287214 bytes)  
+	-	`sha256:f294212caa020512a8aa004ccf0ad2b44f2f61a493fe313aac9a4e4ee4616f88`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
+		Size: 1.3 MB (1287234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31f45ed37d5457ae44f5b9a372ecc7bde1dd97d5be333bac0f4030719c7f0eca`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
+	-	`sha256:f65638b1819071ea4ed695525bf34b0382fbf37355d69b43d7e7a51da79386c2`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:402fa9c5b261b8af75a607827e3e965cc7ce4351d91e3eba319a98783514bc3d`  
-		Last Modified: Tue, 18 Nov 2025 03:43:29 GMT  
-		Size: 37.7 MB (37740240 bytes)  
+	-	`sha256:abf2a7d1e8d2815af0f490c9813945dc251f9437878cdc62fd3c2b51ed2604f6`  
+		Last Modified: Mon, 08 Dec 2025 23:41:29 GMT  
+		Size: 37.7 MB (37740224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b3646abfea40cabe9f48dabaff87823bc4de7febc7191871f992e8cdd29e5cc`  
-		Last Modified: Tue, 18 Nov 2025 03:43:26 GMT  
+	-	`sha256:71d46bda2c903ca306081bb1f1b3dd1a3ed78ae7db3f6ec6878732b92d7fce01`  
+		Last Modified: Mon, 08 Dec 2025 23:41:26 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fee570408516d44060c51273b5d738a6205bde32c3fc376fd9ef14e4a4457dce`  
-		Last Modified: Thu, 04 Dec 2025 18:58:23 GMT  
-		Size: 6.0 MB (5973173 bytes)  
+	-	`sha256:0225134b3c4f305ef3b4ea683e6ef3ebe867bfe93748d883bf0024c8ca1d66ad`  
+		Last Modified: Tue, 09 Dec 2025 00:30:21 GMT  
+		Size: 6.0 MB (5973548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6275cd6a8a20192011b6e7b4404598eec9c28328967093f4ff56a0ed65ccaa13`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:2e1660a934088ae96a9d6badbe46ba3388e69f4f373324aeb706f83554e2e07a`  
+		Last Modified: Tue, 09 Dec 2025 00:30:20 GMT  
+		Size: 1.2 KB (1180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:573b1d8dffa356f70d09c25d0a422654add5b105c3303262e90e092f928c0476`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
+	-	`sha256:8930a2ad4093b7ed2e2ced5f3181c9b1e77a957a48fe07611c3bb512cd885fc3`  
+		Last Modified: Tue, 09 Dec 2025 00:30:21 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad3b55019ddd93dad3e462ed7516328b0c240a97a4b8c4a23e529ed5be7854ad`  
-		Last Modified: Thu, 04 Dec 2025 18:58:22 GMT  
-		Size: 479.0 B  
+	-	`sha256:63f7ef0f2a1ee408469afa43876a95a3a4038339be79b2e8293dafce7e35ea9e`  
+		Last Modified: Tue, 09 Dec 2025 00:30:20 GMT  
+		Size: 478.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19.1-debian-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:744c888b5dc6510967c83cc08cbce6f8dc8d337314c61a7a7dfbf1d1291665fb
+$ docker pull fluentd@sha256:ab5f503e6138fb45fb9170d4f5d73200f9526153e68920ff9958f76be1c3c399
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2299133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ee20af4a982057aade0f5e6c1d71ab447ef9f7b85bbff621c4e002211248bfa`
+-	Image ID: `sha256:cafd53262ce8b25a127db185db86996e348ec59449d1a1162e6fbfee6b3fdd20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ffd30fcff8d76a898b59a12fe9d10b319b7a244e1cfb260572d112cd4569634c`  
-		Last Modified: Thu, 04 Dec 2025 21:29:01 GMT  
+	-	`sha256:1b209f9eb778ff7a38c9febc5677c4e19fdebc04ce396244bb7ddb115ba08c76`  
+		Last Modified: Tue, 09 Dec 2025 03:29:38 GMT  
 		Size: 2.3 MB (2277846 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6e78909919782d8821393c595f47c30f5265a082863f5fc58e35484d98e0ca2a`  
-		Last Modified: Thu, 04 Dec 2025 21:29:02 GMT  
+	-	`sha256:86e1e3cad007bc87120030312a763066b158bd539e186676e1f4211bfb0416f0`  
+		Last Modified: Tue, 09 Dec 2025 03:29:39 GMT  
 		Size: 21.3 KB (21287 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6346,127 +6346,127 @@ $ docker pull fluentd@sha256:0d89113916b32c598de029868776a0abbf0be9b9054737578c9
 ### `fluentd:v1.19.1-debian-1.0` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:ed187389e39640b36c3ce9981c1cf8dd26a754d7f04203e455789fde6d108294
+$ docker pull fluentd@sha256:d452f8eb08c139dd159cc43f074781c32b152a74d1132add1b85b65ffab1a967
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.8 MB (76792846 bytes)**  
+-	Total Size: **76.8 MB (76792670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee430e9e1c0931135d40bd46f138b5f92d4fcd73fa1892a2b40a65ba99b8142d`
+-	Image ID: `sha256:becbf6430ea077e039bcd6efa5440648d1a20b46ee4bf14d10ff45ced2297003`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Mon, 17 Nov 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1763337600'
-# Tue, 18 Nov 2025 05:14:24 GMT
+# Mon, 08 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
+# Tue, 09 Dec 2025 01:14:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
-# Tue, 18 Nov 2025 05:14:25 GMT
+# Tue, 09 Dec 2025 01:14:29 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:13 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:14 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 18 Nov 2025 05:16:46 GMT
+# Tue, 09 Dec 2025 01:20:14 GMT
 CMD ["irb"]
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.19.1
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates tini  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && export MAKEFLAGS=-j$(nproc)  && gem install oj -v 3.16.11  && gem install json -v 2.13.2  && gem install rexml -v 3.4.4  && gem install async -v 2.24.0  && gem install async-http -v 0.89.0  && gem install fluentd -v 1.19.1  && unset MAKEFLAGS  && export GEM_DIR=$(ruby -e 'puts Gem.dir')  && echo GEM_DIR=$GEM_DIR  && rm -rf $GEM_DIR/cache/*.gem  && find $GEM_DIR -maxdepth 3 -type d -name test -or -name ext -or -name spec -or -name benchmark | xargs -r rm -rfv  && find $GEM_DIR -name "*.so" | xargs -r strip  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 --no-same-owner && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps                   '*-dev'  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* # buildkit
-# Thu, 04 Dec 2025 19:00:22 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:39 GMT
 COPY fluent.conf /fluentd/etc/ # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 COPY entrypoint.sh /bin/ # buildkit
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 EXPOSE map[24224/tcp:{} 5140/tcp:{}]
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 USER fluent
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Thu, 04 Dec 2025 19:00:23 GMT
+# Tue, 09 Dec 2025 03:03:40 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:3063905a9d3db554a6c1d839c1212baff57798d644d5b0d198eef84afd107192`  
-		Last Modified: Tue, 18 Nov 2025 01:13:05 GMT  
-		Size: 29.8 MB (29834372 bytes)  
+	-	`sha256:deacec5e6af82b258c59e95e3e86abeef36fad06b1d9ff2de33e88544ffb79ff`  
+		Last Modified: Mon, 08 Dec 2025 22:20:52 GMT  
+		Size: 29.8 MB (29834400 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c5be0006390772cf7f9022344d107d52c9454ddfb26a9b6aa53e4f77a9bdc5e`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 1.3 MB (1294253 bytes)  
+	-	`sha256:5720eba478777df8c646e25a1f6668894f78c60729b8066bb843a45e90174380`  
+		Last Modified: Tue, 09 Dec 2025 01:17:18 GMT  
+		Size: 1.3 MB (1294285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6df3437f72c81d0de5473522e48eb46cf20ee4ae5ae981dfae54b48d71b07c5f`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 188.0 B  
+	-	`sha256:3f32a4b1f7561f4abaafe6220c2c2f308127ee5ef35474833e833a9af097e333`  
+		Last Modified: Tue, 09 Dec 2025 01:17:18 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f67960768c1f544671789085d4901deaf00ad13d073997065fbd38e41baef3e`  
-		Last Modified: Tue, 18 Nov 2025 05:17:09 GMT  
-		Size: 39.3 MB (39287189 bytes)  
+	-	`sha256:ee309e9c6d575837e8951d02780b3dc1213cd062f43a3b89fb81bb4b5e97a4c7`  
+		Last Modified: Tue, 09 Dec 2025 01:20:37 GMT  
+		Size: 39.3 MB (39287036 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22de67f11ad5b13189744a053b706d6a38590793d5b547a05561143636a6e794`  
-		Last Modified: Tue, 18 Nov 2025 05:17:06 GMT  
-		Size: 143.0 B  
+	-	`sha256:ff7ed7c0ce15fb53c939f10bbbaac441035b79208a1fa1e4eb1b7c771c99dbd9`  
+		Last Modified: Tue, 09 Dec 2025 01:20:33 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1dae3e7995bd0deb7b55500a6bd72b6da73d79ec0e7c0311d2a8ffe3b3a07937`  
-		Last Modified: Thu, 04 Dec 2025 19:00:57 GMT  
-		Size: 6.4 MB (6374635 bytes)  
+	-	`sha256:805d4acfff0a8924cf1d1ee4e7ab9a7ed6a24a670b5bfde2364066dcb40e5897`  
+		Last Modified: Tue, 09 Dec 2025 03:04:01 GMT  
+		Size: 6.4 MB (6374561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44422c1d3698300c20c8d82b912869f2db389e052786cf236d58d4c070a52bb6`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 1.2 KB (1182 bytes)  
+	-	`sha256:164dab4e3071b8b90875f252880a33a9469e2ef2e5143ce4181d9042b67e6cc0`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac31f9e4d8d6111baff1810add02a698b16ee337ebae0e5a04bccd34dc3d1007`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 405.0 B  
+	-	`sha256:26a434834ec1b4336e0c8c15f37b1ff420317268465a1af98cb8d9c70f629049`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f174a509e3b7c1f6a3be616887aede378dae2a6ff15ad0eecd695f67d8461275`  
-		Last Modified: Thu, 04 Dec 2025 19:00:55 GMT  
-		Size: 479.0 B  
+	-	`sha256:94ada78e2bbe6225a83b55c223117545ce1e9f27b7d4ec7370b113e4031f9464`  
+		Last Modified: Tue, 09 Dec 2025 03:04:00 GMT  
+		Size: 476.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19.1-debian-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:0dadfa6115c306234fc61d311151598224464a5b584da6589aa5d497360139a5
+$ docker pull fluentd@sha256:a9acd04217a219287c7233d4a242ce3617474b2926d7c6fa65bd0f9ef3fd9c6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303429 bytes)**  
+-	Total Size: **2.3 MB (2303428 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f29918cffd01b2c59af6e28e2e0b4917359f9a0f89eda0ac5c64dd59b7dfb1e`
+-	Image ID: `sha256:0e239f395e91356318869f19f375ad7ab5a4af065670c2f07f3218ceafe26fa4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c79cd4563cae1c78685f758473a2ceab79b121ee11e164da1e6b7ab447e0d552`  
-		Last Modified: Thu, 04 Dec 2025 21:29:11 GMT  
+	-	`sha256:75008fcce7092be8bf478ab2e0af5b9d86a1ea736122f1053c5852ff7df7101c`  
+		Last Modified: Tue, 09 Dec 2025 03:29:46 GMT  
 		Size: 2.3 MB (2282103 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a21fae52c306fa690f842976aaaa9c786f47c33a5a87fa92d845c843d5e94942`  
-		Last Modified: Thu, 04 Dec 2025 21:29:13 GMT  
-		Size: 21.3 KB (21326 bytes)  
+	-	`sha256:9fcc954fcc03cff37e89153ac0395dbc6a528b01ad546cad6e42d769364f6c4b`  
+		Last Modified: Tue, 09 Dec 2025 03:29:47 GMT  
+		Size: 21.3 KB (21325 bytes)  
 		MIME: application/vnd.in-toto+json
