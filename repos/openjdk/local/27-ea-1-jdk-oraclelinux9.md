@@ -1,18 +1,18 @@
-# `openjdk:26-ea-26-jdk-oraclelinux9`
+# `openjdk:27-ea-1-jdk-oraclelinux9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dd2395ffc43b55ea072a15cd615219ec0cb86a7130e69e872f180b6c9bd863dd`
-- Created: `2025-12-02T21:30:17.728407728Z`
-- Virtual Size: ~ 616.70 Mb  
+- Image ID: `sha256:d2bec637e7996081ccd489416bfc4c84f8581c7f77f7cf696b65ce63a150513e`
+- Created: `2025-12-06T00:36:06.088899019Z`
+- Virtual Size: ~ 617.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
-  - `PATH=/usr/java/openjdk-26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/java/openjdk-26`
+  - `PATH=/usr/java/openjdk-27/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `JAVA_HOME=/usr/java/openjdk-27`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=26-ea+26`
+  - `JAVA_VERSION=27-ea+1`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -1574,52 +1574,52 @@ https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSourc
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/sqlite-3.34.1-9.el9_7.src.rpm
 ```
 
-### `rpm` package: `systemd-252-55.0.3.el9_7.2.x86_64`
+### `rpm` package: `systemd-252-55.0.3.el9_7.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-252-55.0.3.el9_7.2
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.2.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.2.src.rpm
+$ dnf --quiet download --source --url systemd-252-55.0.3.el9_7.7
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.7.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.7.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-252-55.0.3.el9_7.2.x86_64`
+### `rpm` package: `systemd-libs-252-55.0.3.el9_7.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-252-55.0.3.el9_7.2
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.2.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.2.src.rpm
+$ dnf --quiet download --source --url systemd-libs-252-55.0.3.el9_7.7
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.7.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.7.src.rpm
 ```
 
-### `rpm` package: `systemd-pam-252-55.0.3.el9_7.2.x86_64`
+### `rpm` package: `systemd-pam-252-55.0.3.el9_7.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-pam-252-55.0.3.el9_7.2
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.2.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.2.src.rpm
+$ dnf --quiet download --source --url systemd-pam-252-55.0.3.el9_7.7
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.7.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.7.src.rpm
 ```
 
-### `rpm` package: `systemd-rpm-macros-252-55.0.3.el9_7.2.noarch`
+### `rpm` package: `systemd-rpm-macros-252-55.0.3.el9_7.7.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-rpm-macros-252-55.0.3.el9_7.2.noarch
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.2.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.2.src.rpm
+$ dnf --quiet download --source --url systemd-rpm-macros-252-55.0.3.el9_7.7.noarch
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.7.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-55.0.3.el9_7.7.src.rpm
 ```
 
 ### `rpm` package: `tar-1.34-7.el9.x86_64`
