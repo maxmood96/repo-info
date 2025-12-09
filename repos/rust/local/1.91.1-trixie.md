@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0679893db65da617fc8b8ad2c77c7c505126c33e9057be293d66158dc6cff403`
-- Created: `2025-11-18T12:03:21.025978495Z`
+- Image ID: `sha256:d9cd59c7d3dbc253688c2df205cf5c3d1edb299c4db285c5b06045da2c39d603`
+- Created: `2025-12-09T02:12:28.715237383Z`
 - Virtual Size: ~ 1.64 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -5771,11 +5771,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ucf/3.0052/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ucf/3.0052/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `unbound=1.22.0-2`
+### `dpkg` source package: `unbound=1.22.0-2+deb13u1`
 
 Binary Packages:
 
-- `libunbound8:amd64=1.22.0-2`
+- `libunbound8:amd64=1.22.0-2+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 
@@ -5798,18 +5798,18 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris unbound=1.22.0-2
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.22.0-2.dsc' unbound_1.22.0-2.dsc 3169 SHA256:de2b411106dac7607320125cb26c06322a6054d5e1b976a131f3cb7c53285cc0
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.22.0.orig.tar.gz' unbound_1.22.0.orig.tar.gz 6682466 SHA256:c5dd1bdef5d5685b2cedb749158dd152c52d44f65529a34ac15cd88d4b1b3d43
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.22.0.orig.tar.gz.asc' unbound_1.22.0.orig.tar.gz.asc 833 SHA256:1b5d91ad040b1f1c0351b8f6fe288b4123fc63b887152463512be69bc687f915
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.22.0-2.debian.tar.xz' unbound_1.22.0-2.debian.tar.xz 31464 SHA256:649b551657d84a50998a09c4a678c5e69516bb72fd420f50f0beffab5959aef1
+$ apt-get source -qq --print-uris unbound=1.22.0-2+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.22.0-2%2bdeb13u1.dsc' unbound_1.22.0-2+deb13u1.dsc 3299 SHA256:4dcd956ac3740c8fae0b0ad5b9332f90317c44dace0e899e05fab18ae7b2f1a8
+'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.22.0.orig.tar.gz' unbound_1.22.0.orig.tar.gz 6682466 SHA256:c5dd1bdef5d5685b2cedb749158dd152c52d44f65529a34ac15cd88d4b1b3d43
+'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.22.0.orig.tar.gz.asc' unbound_1.22.0.orig.tar.gz.asc 833 SHA256:1b5d91ad040b1f1c0351b8f6fe288b4123fc63b887152463512be69bc687f915
+'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.22.0-2%2bdeb13u1.debian.tar.xz' unbound_1.22.0-2+deb13u1.debian.tar.xz 41960 SHA256:ddf9aa2085d3ab1db05719f78ec5581b5d759758b34b43aaaa7d654a065e7347
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/unbound/1.22.0-2/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.22.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.22.0-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/unbound/1.22.0-2+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/unbound/1.22.0-2+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unbound/1.22.0-2+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-29`
 
