@@ -1,9 +1,9 @@
-# `silverpeas:6.4.4`
+# `silverpeas:6.4.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a99d46af11415490d691f370a6c6db970dcb6f9b6791d731f51727f091d42df4`
-- Created: `2025-11-13T23:44:22.529394553Z`
+- Image ID: `sha256:64664721a2c575511fd1cffaf469f67bd76bdff69fc79c1bad1f3f2fe4f79929`
+- Created: `2025-12-08T19:25:56.895527169Z`
 - Virtual Size: ~ 2.87 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,16 +18,16 @@
   - `JAVA_HOME=/docker-java-home`
   - `SILVERPEAS_HOME=/opt/silverpeas`
   - `JBOSS_HOME=/opt/wildfly`
-  - `SILVERPEAS_VERSION=6.4.4`
+  - `SILVERPEAS_VERSION=6.4.5`
   - `WILDFLY_VERSION=26.1.3`
 - Labels:
   - `build=1`
-  - `description=Image to install and to run Silverpeas 6.4.4`
-  - `name=Silverpeas 6.4.4`
+  - `description=Image to install and to run Silverpeas 6.4.5`
+  - `name=Silverpeas 6.4.5`
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
   - `vendor=Silverpeas`
-  - `version=6.4.4`
+  - `version=6.4.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -155,10 +155,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apparmor=3.0.4-2ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.4.dsc' apparmor_3.0.4-2ubuntu2.4.dsc 3263 SHA512:fd0eb724b2d43077a3708bd51729e884c972e361a36952f0f7ba2a686f76630ab38478b3906843943d0515997ecdd8a8807f702b1a73a0b12667433ad9a50306
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz' apparmor_3.0.4.orig.tar.gz 7796852 SHA512:1edd800771f46fab9bc5274842e64482b7fd4a5ba4de9855d621baf1d08c8236bfa7752dd9ab3dee095f8e0798129241a9aebf68ed1c994ae5597086a4a1a8ca
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz.asc' apparmor_3.0.4.orig.tar.gz.asc 870 SHA512:870d3037562ae003e642adcd244b74191e9108cebd18e6a925959e595b5a375e2dbfda686349e4cc980981cdd38239a099d3e32f1e824b4a9b477584c8d311a9
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.4.debian.tar.xz' apparmor_3.0.4-2ubuntu2.4.debian.tar.xz 136888 SHA512:da616c757022828f738e09e0a04ab9a93b1575acc30318abd2e60ef193c8ef7e3acac4d3d545ee5f3b0310347187d09db8fe0c4ec8422893a6375b9f46c424f0
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.4.dsc' apparmor_3.0.4-2ubuntu2.4.dsc 3263 SHA512:fd0eb724b2d43077a3708bd51729e884c972e361a36952f0f7ba2a686f76630ab38478b3906843943d0515997ecdd8a8807f702b1a73a0b12667433ad9a50306
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz' apparmor_3.0.4.orig.tar.gz 7796852 SHA512:1edd800771f46fab9bc5274842e64482b7fd4a5ba4de9855d621baf1d08c8236bfa7752dd9ab3dee095f8e0798129241a9aebf68ed1c994ae5597086a4a1a8ca
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz.asc' apparmor_3.0.4.orig.tar.gz.asc 870 SHA512:870d3037562ae003e642adcd244b74191e9108cebd18e6a925959e595b5a375e2dbfda686349e4cc980981cdd38239a099d3e32f1e824b4a9b477584c8d311a9
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.4.debian.tar.xz' apparmor_3.0.4-2ubuntu2.4.debian.tar.xz 136888 SHA512:da616c757022828f738e09e0a04ab9a93b1575acc30318abd2e60ef193c8ef7e3acac4d3d545ee5f3b0310347187d09db8fe0c4ec8422893a6375b9f46c424f0
 ```
 
 ### `dpkg` source package: `apt=2.4.14`
@@ -227,13 +227,13 @@ $ apt-get source -qq --print-uris audit=1:3.0.7-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.0.7-1build1.debian.tar.xz' audit_3.0.7-1build1.debian.tar.xz 17772 SHA512:cdf346fc7dc04e42b44a9089fb7c01e68ea54ccd20d3eef8100d0cd8eed8ebd0764d8fd6ceab133faa0bfeee18e3cfe7625d230600b0e34ed0c19a7b739ec783
 ```
 
-### `dpkg` source package: `avahi=0.8-5ubuntu5.2`
+### `dpkg` source package: `avahi=0.8-5ubuntu5.3`
 
 Binary Packages:
 
-- `libavahi-client3:amd64=0.8-5ubuntu5.2`
-- `libavahi-common-data:amd64=0.8-5ubuntu5.2`
-- `libavahi-common3:amd64=0.8-5ubuntu5.2`
+- `libavahi-client3:amd64=0.8-5ubuntu5.3`
+- `libavahi-common-data:amd64=0.8-5ubuntu5.3`
+- `libavahi-common3:amd64=0.8-5ubuntu5.3`
 
 Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share/doc/libavahi-common-data/copyright`, `/usr/share/doc/libavahi-common3/copyright`)
 
@@ -244,10 +244,10 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris avahi=0.8-5ubuntu5.2
-'http://security.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.2.dsc' avahi_0.8-5ubuntu5.2.dsc 3756 SHA512:f0bb10a4442b9d37cdfd5bb2ec2cd5d40d8a94e5219b6c132de61800b8337f2a08d89bdc393b7e790a4afb5de08f262190f04c578903a090197fb5ce06281e53
-'http://security.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8.orig.tar.gz' avahi_0.8.orig.tar.gz 1591458 SHA512:c6ba76feb6e92f70289f94b3bf12e5f5c66c11628ce0aeb3cadfb72c13a5d1a9bd56d71bdf3072627a76cd103b9b056d9131aa49ffe11fa334c24ab3b596c7de
-'http://security.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.2.debian.tar.xz' avahi_0.8-5ubuntu5.2.debian.tar.xz 45172 SHA512:7953ba54ebe1c44a501825ce2b19112850b7c0854a229633ebe3d89bfb3d9bfbbabe5030d5a22f24d65d70af5fdab52d3153f803ec321853368a36e3347cc9f0
+$ apt-get source -qq --print-uris avahi=0.8-5ubuntu5.3
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.3.dsc' avahi_0.8-5ubuntu5.3.dsc 4064 SHA512:1b007f42f1e3a4fba802f6bb4e14aa036a9f098685df194fe3179664ebf4e72f7398901787d4cdaadf7ccc9fd1c4dee6f30daeb8075bf9b856e0d3c1a326aa27
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8.orig.tar.gz' avahi_0.8.orig.tar.gz 1591458 SHA512:c6ba76feb6e92f70289f94b3bf12e5f5c66c11628ce0aeb3cadfb72c13a5d1a9bd56d71bdf3072627a76cd103b9b056d9131aa49ffe11fa334c24ab3b596c7de
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.3.debian.tar.xz' avahi_0.8-5ubuntu5.3.debian.tar.xz 45592 SHA512:0feffcff4865b94712fc45f3d591f64053bbd05cfe9699aa172b6935ee2b9395756c5ae9c9a1090c217618085195c853cbfe3871a2f588ca14ce7f6402e10461
 ```
 
 ### `dpkg` source package: `base-files=12ubuntu4.7`
@@ -549,11 +549,11 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.debian.tar.xz' coreutils_8.32-4.1ubuntu1.2.debian.tar.xz 44868 SHA512:7718e917f8f2c5c5574e73a079ea8fd3b32bc898f2e12168dc3711dfdd896e4727283011050b80f65e60994fca49da031d70901d453612132764dca7dec99543
 ```
 
-### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.12`
+### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.16`
 
 Binary Packages:
 
-- `libcups2:amd64=2.4.1op1-1ubuntu4.12`
+- `libcups2:amd64=2.4.1op1-1ubuntu4.16`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -564,9 +564,14 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `FSFUL`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.16
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.16.dsc' cups_2.4.1op1-1ubuntu4.16.dsc 3139 SHA512:3e25291884e658580cfad7dbdefa4638a97669f26669d9c4333b19ed6a010b7563ef3bbfd2039e4c489c02193b744a633ac47659463bbe2e8ed0f5a5bffb8f28
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1.orig.tar.gz' cups_2.4.1op1.orig.tar.gz 8113914 SHA512:74e83728fcc3baf709176442b26711250fd4d4ede1e81e35b02a5607711067e28cd5a05d5bc3337953f6b2236c5a429b13f3a7f1218a08a2d3c30a8c9b0d96fd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.16.debian.tar.xz' cups_2.4.1op1-1ubuntu4.16.debian.tar.xz 373352 SHA512:507dad6404b26c7dd3068909b05bf9b7268107681aaf743b172c47289cc19f8d1eada1d1fa20364738accfb6f898d578f94d2b1908a28283e17b8c2b2ea2fcbc
+```
 
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.21`
 
@@ -5234,14 +5239,14 @@ $ apt-get source -qq --print-uris openal-soft=1:1.19.1-2build3
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openal-soft/openal-soft_1.19.1-2build3.debian.tar.xz' openal-soft_1.19.1-2build3.debian.tar.xz 12932 SHA512:2353577b8a567a0d8559318f14ac4b4bb9f7f27594e255acd01abbd67669273ed1e3d087552afb876679e1ef6a76f539bd69aabcd895112f35eb4e02d21730d3
 ```
 
-### `dpkg` source package: `openjdk-lts=11.0.28+6-1ubuntu1~22.04.1`
+### `dpkg` source package: `openjdk-lts=11.0.29+7-1ubuntu1~22.04`
 
 Binary Packages:
 
-- `openjdk-11-jdk:amd64=11.0.28+6-1ubuntu1~22.04.1`
-- `openjdk-11-jdk-headless:amd64=11.0.28+6-1ubuntu1~22.04.1`
-- `openjdk-11-jre:amd64=11.0.28+6-1ubuntu1~22.04.1`
-- `openjdk-11-jre-headless:amd64=11.0.28+6-1ubuntu1~22.04.1`
+- `openjdk-11-jdk:amd64=11.0.29+7-1ubuntu1~22.04`
+- `openjdk-11-jdk-headless:amd64=11.0.29+7-1ubuntu1~22.04`
+- `openjdk-11-jre:amd64=11.0.29+7-1ubuntu1~22.04`
+- `openjdk-11-jre-headless:amd64=11.0.29+7-1ubuntu1~22.04`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/doc/openjdk-11-jdk-headless/copyright`, `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -5250,9 +5255,14 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openjdk-lts=11.0.29+7-1ubuntu1~22.04
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.29%2b7-1ubuntu1%7e22.04.dsc' openjdk-lts_11.0.29+7-1ubuntu1~22.04.dsc 4516 SHA512:00644c1e12eef9cf65337c0ea362a935dbf12d7ae989e6cde3080e692e0b38cdc1a39831ce999e479d29ed73857136fcb43cb99dce3d51a880f2be584e64f166
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.29%2b7.orig.tar.xz' openjdk-lts_11.0.29+7.orig.tar.xz 69281604 SHA512:f503b3897aae22856114306fbe6530036f55442bcf9bbd6f215b5aab4e4f074aa6f9645f262759d1e420b91ff7365702d1bda0ac517eec7017c2c2ea26d4cc59
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.29%2b7-1ubuntu1%7e22.04.debian.tar.xz' openjdk-lts_11.0.29+7-1ubuntu1~22.04.debian.tar.xz 172768 SHA512:8ab8dc603b768131b1659012e488d09389b802a15838cb8cea50d39c59952667b98517242695e1fdb7ed2e6140d12aba617808262dcebbe7346a2b61a779a660
+```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6ubuntu0.4`
 
@@ -5744,15 +5754,15 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.11`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.12`
 
 Binary Packages:
 
-- `libpython3.10:amd64=3.10.12-1~22.04.11`
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.11`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.11`
-- `python3.10=3.10.12-1~22.04.11`
-- `python3.10-minimal=3.10.12-1~22.04.11`
+- `libpython3.10:amd64=3.10.12-1~22.04.12`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.12`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.12`
+- `python3.10=3.10.12-1~22.04.12`
+- `python3.10-minimal=3.10.12-1~22.04.12`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -5774,9 +5784,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.12
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.12.dsc' python3.10_3.10.12-1~22.04.12.dsc 3678 SHA512:6a9698dbc690ff04b43b71a5ecf87c82f195924f3f55fb33d6a93f030305d44b3a396d9956211025acd3a8ec879b75ee6d8b509ac7d8251e2258ff98ade685c0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.12.debian.tar.xz' python3.10_3.10.12-1~22.04.12.debian.tar.xz 260200 SHA512:1e6a92c0435ec805f667e9697d4ddf771e1850fa3de8c4ffa44a84c67b5e610c210aea6834bfcc93124d032a6b073cc85dcbfcad70c8bc802f80140194927339
+```
 
 ### `dpkg` source package: `raptor2=2.0.15-0ubuntu4.1`
 
