@@ -1,10 +1,10 @@
-# `groovy:4.0.27-jdk21-alpine`
+# `groovy:5.0.3-jdk25-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:00a25eb61ee6b243d27a8341fff552e54d2ed56786ed4e4e6e7af6dcce34e0d8`
-- Created: `2025-11-08T18:25:15.58322663Z`
-- Virtual Size: ~ 395.93 Mb  
+- Image ID: `sha256:a7fc7ee536eb9cd8c4b605eed16d7e2d155f3d91ec116da1d61b1ea9759fcc2e`
+- Created: `2025-12-08T18:45:23.333625016Z`
+- Virtual Size: ~ 339.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.9+10`
+  - `JAVA_VERSION=jdk-25.0.1+8`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=4.0.27`
+  - `GROOVY_VERSION=5.0.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -361,244 +361,6 @@ FTL OR GPL-2.0-or-later
 
 ```
 
-### `apk` package: `gdbm`
-
-```console
-gdbm-1.24-r0 description:
-GNU dbm is a set of database routines that use extensible hashing
-
-gdbm-1.24-r0 webpage:
-https://www.gnu.org/software/gdbm/
-
-gdbm-1.24-r0 installed size:
-67 KiB
-
-gdbm-1.24-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gmp`
-
-```console
-gmp-6.3.0-r3 description:
-free library for arbitrary precision arithmetic
-
-gmp-6.3.0-r3 webpage:
-https://gmplib.org/
-
-gmp-6.3.0-r3 installed size:
-417 KiB
-
-gmp-6.3.0-r3 license:
-LGPL-3.0-or-later OR GPL-2.0-or-later
-
-```
-
-### `apk` package: `gnupg`
-
-```console
-gnupg-2.4.7-r0 description:
-GNU Privacy Guard 2 - meta package for full GnuPG suite
-
-gnupg-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gnupg-2.4.7-r0 installed size:
-0 B
-
-gnupg-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gnupg-dirmngr`
-
-```console
-gnupg-dirmngr-2.4.7-r0 description:
-GNU Privacy Guard 2 - network certificate management service
-
-gnupg-dirmngr-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gnupg-dirmngr-2.4.7-r0 installed size:
-629 KiB
-
-gnupg-dirmngr-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gnupg-gpgconf`
-
-```console
-gnupg-gpgconf-2.4.7-r0 description:
-GNU Privacy Guard 2 - core configuration utilities
-
-gnupg-gpgconf-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gnupg-gpgconf-2.4.7-r0 installed size:
-237 KiB
-
-gnupg-gpgconf-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gnupg-keyboxd`
-
-```console
-gnupg-keyboxd-2.4.7-r0 description:
-GNU Privacy Guard 2 - keyboxd manager
-
-gnupg-keyboxd-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gnupg-keyboxd-2.4.7-r0 installed size:
-223 KiB
-
-gnupg-keyboxd-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gnupg-utils`
-
-```console
-gnupg-utils-2.4.7-r0 description:
-GNU Privacy Guard 2 - utility programs
-
-gnupg-utils-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gnupg-utils-2.4.7-r0 installed size:
-832 KiB
-
-gnupg-utils-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gnupg-wks-client`
-
-```console
-gnupg-wks-client-2.4.7-r0 description:
-GNU Privacy Guard 2 - Web Key Service client
-
-gnupg-wks-client-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gnupg-wks-client-2.4.7-r0 installed size:
-167 KiB
-
-gnupg-wks-client-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gnutls`
-
-```console
-gnutls-3.8.8-r0 description:
-TLS protocol implementation
-
-gnutls-3.8.8-r0 webpage:
-https://www.gnutls.org/
-
-gnutls-3.8.8-r0 installed size:
-1865 KiB
-
-gnutls-3.8.8-r0 license:
-LGPL-2.1-or-later
-
-```
-
-### `apk` package: `gpg`
-
-```console
-gpg-2.4.7-r0 description:
-GNU Privacy Guard 2 - public key operations only
-
-gpg-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gpg-2.4.7-r0 installed size:
-929 KiB
-
-gpg-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gpg-agent`
-
-```console
-gpg-agent-2.4.7-r0 description:
-GNU Privacy Guard 2 - cryptographic agent
-
-gpg-agent-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gpg-agent-2.4.7-r0 installed size:
-642 KiB
-
-gpg-agent-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gpg-wks-server`
-
-```console
-gpg-wks-server-2.4.7-r0 description:
-GNU Privacy Guard 2 - Web Key Service server
-
-gpg-wks-server-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gpg-wks-server-2.4.7-r0 installed size:
-150 KiB
-
-gpg-wks-server-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gpgsm`
-
-```console
-gpgsm-2.4.7-r0 description:
-GNU Privacy Guard 2 - S/MIME version
-
-gpgsm-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gpgsm-2.4.7-r0 installed size:
-481 KiB
-
-gpgsm-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gpgv`
-
-```console
-gpgv-2.4.7-r0 description:
-GNU Privacy Guard 2 - signature verification only
-
-gpgv-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gpgv-2.4.7-r0 installed size:
-428 KiB
-
-gpgv-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
 ### `apk` package: `jansson`
 
 ```console
@@ -630,23 +392,6 @@ libapk2-2.14.9-r3 installed size:
 
 libapk2-2.14.9-r3 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `libassuan`
-
-```console
-libassuan-2.5.7-r0 description:
-IPC library used by some GnuPG related software
-
-libassuan-2.5.7-r0 webpage:
-https://www.gnupg.org/software/libassuan/index.html
-
-libassuan-2.5.7-r0 installed size:
-66 KiB
-
-libassuan-2.5.7-r0 license:
-LGPL-2.1-or-later
 
 ```
 
@@ -769,57 +514,6 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
-### `apk` package: `libgcrypt`
-
-```console
-libgcrypt-1.10.3-r1 description:
-General purpose crypto library based on the code used in GnuPG
-
-libgcrypt-1.10.3-r1 webpage:
-https://www.gnupg.org/
-
-libgcrypt-1.10.3-r1 installed size:
-1157 KiB
-
-libgcrypt-1.10.3-r1 license:
-LGPL-2.1-or-later AND GPL-2.0-or-later
-
-```
-
-### `apk` package: `libgpg-error`
-
-```console
-libgpg-error-1.55-r0 description:
-Support library for libgcrypt
-
-libgpg-error-1.55-r0 webpage:
-https://www.gnupg.org/
-
-libgpg-error-1.55-r0 installed size:
-168 KiB
-
-libgpg-error-1.55-r0 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later
-
-```
-
-### `apk` package: `libidn2`
-
-```console
-libidn2-2.3.7-r0 description:
-Encode/Decode library for internationalized domain names
-
-libidn2-2.3.7-r0 webpage:
-https://www.gnu.org/software/libidn#libidn2
-
-libidn2-2.3.7-r0 installed size:
-193 KiB
-
-libidn2-2.3.7-r0 license:
-GPL-2.0-or-later OR LGPL-3.0-or-later
-
-```
-
 ### `apk` package: `libintl`
 
 ```console
@@ -837,57 +531,6 @@ LGPL-2.1-or-later
 
 ```
 
-### `apk` package: `libksba`
-
-```console
-libksba-1.6.7-r0 description:
-Libksba is a CMS and X.509 access library
-
-libksba-1.6.7-r0 webpage:
-https://www.gnupg.org/software/libksba/index.html
-
-libksba-1.6.7-r0 installed size:
-205 KiB
-
-libksba-1.6.7-r0 license:
-LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only
-
-```
-
-### `apk` package: `libldap`
-
-```console
-libldap-2.6.8-r0 description:
-OpenLDAP libraries
-
-libldap-2.6.8-r0 webpage:
-https://www.openldap.org/
-
-libldap-2.6.8-r0 installed size:
-365 KiB
-
-libldap-2.6.8-r0 license:
-OLDAP-2.8
-
-```
-
-### `apk` package: `libncursesw`
-
-```console
-libncursesw-6.5_p20250503-r0 description:
-Console display library (libncursesw)
-
-libncursesw-6.5_p20250503-r0 webpage:
-https://invisible-island.net/ncurses/
-
-libncursesw-6.5_p20250503-r0 installed size:
-334 KiB
-
-libncursesw-6.5_p20250503-r0 license:
-X11
-
-```
-
 ### `apk` package: `libpng`
 
 ```console
@@ -902,23 +545,6 @@ libpng-1.6.47-r0 installed size:
 
 libpng-1.6.47-r0 license:
 Libpng
-
-```
-
-### `apk` package: `libsasl`
-
-```console
-libsasl-2.1.28-r8 description:
-Cyrus Simple Authentication and Security Layer (SASL) library
-
-libsasl-2.1.28-r8 webpage:
-https://www.cyrusimap.org/sasl/
-
-libsasl-2.1.28-r8 installed size:
-163 KiB
-
-libsasl-2.1.28-r8 license:
-BSD-3-Clause-Attribution AND BSD-4-Clause
 
 ```
 
@@ -970,23 +596,6 @@ libtasn1-4.20.0-r0 installed size:
 
 libtasn1-4.20.0-r0 license:
 LGPL-2.1-or-later
-
-```
-
-### `apk` package: `libunistring`
-
-```console
-libunistring-1.3-r0 description:
-Library for manipulating Unicode strings and C strings
-
-libunistring-1.3-r0 webpage:
-https://www.gnu.org/software/libunistring/
-
-libunistring-1.3-r0 installed size:
-1857 KiB
-
-libunistring-1.3-r0 license:
-GPL-2.0-or-later OR LGPL-3.0-or-later
 
 ```
 
@@ -1075,57 +684,6 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
 
-### `apk` package: `ncurses-terminfo-base`
-
-```console
-ncurses-terminfo-base-6.5_p20250503-r0 description:
-Descriptions of common terminals
-
-ncurses-terminfo-base-6.5_p20250503-r0 webpage:
-https://invisible-island.net/ncurses/
-
-ncurses-terminfo-base-6.5_p20250503-r0 installed size:
-98 KiB
-
-ncurses-terminfo-base-6.5_p20250503-r0 license:
-X11
-
-```
-
-### `apk` package: `nettle`
-
-```console
-nettle-3.10.1-r0 description:
-Low-level cryptographic library
-
-nettle-3.10.1-r0 webpage:
-https://www.lysator.liu.se/~nisse/nettle/
-
-nettle-3.10.1-r0 installed size:
-587 KiB
-
-nettle-3.10.1-r0 license:
-GPL-2.0-or-later OR LGPL-3.0-or-later
-
-```
-
-### `apk` package: `npth`
-
-```console
-npth-1.8-r0 description:
-The New GNU Portable Threads library
-
-npth-1.8-r0 webpage:
-https://gnupg.org/related_software/npth/
-
-npth-1.8-r0 installed size:
-17 KiB
-
-npth-1.8-r0 license:
-LGPL-2.0-or-later
-
-```
-
 ### `apk` package: `openssl`
 
 ```console
@@ -1177,23 +735,6 @@ BSD-3-Clause
 
 ```
 
-### `apk` package: `pinentry`
-
-```console
-pinentry-1.3.1-r0 description:
-Collection of simple PIN or passphrase entry dialogs which utilize the Assuan protocol
-
-pinentry-1.3.1-r0 webpage:
-https://www.gnupg.org/aegypten2/
-
-pinentry-1.3.1-r0 installed size:
-66 KiB
-
-pinentry-1.3.1-r0 license:
-GPL-2.0-or-later
-
-```
-
 ### `apk` package: `scanelf`
 
 ```console
@@ -1225,23 +766,6 @@ skalibs-libs-2.14.4.0-r0 installed size:
 
 skalibs-libs-2.14.4.0-r0 license:
 ISC
-
-```
-
-### `apk` package: `sqlite-libs`
-
-```console
-sqlite-libs-3.49.2-r1 description:
-C library that implements an SQL database engine (libraries)
-
-sqlite-libs-3.49.2-r1 webpage:
-https://www.sqlite.org/
-
-sqlite-libs-3.49.2-r1 installed size:
-1553 KiB
-
-sqlite-libs-3.49.2-r1 license:
-blessing
 
 ```
 

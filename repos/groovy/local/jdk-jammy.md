@@ -1,10 +1,10 @@
-# `groovy:4.0.27-jdk11`
+# `groovy:5.0.3-jdk11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:186fde93f8b85acba494236ea9044640f21405bbf753553df9b5c652dfad223b`
-- Created: `2025-11-14T00:28:49.261955572Z`
-- Virtual Size: ~ 433.44 Mb  
+- Image ID: `sha256:dbec40ed6c6569f0072afedf2f50d62c50ad91805a804f44d4c54204f10becc3`
+- Created: `2025-12-08T18:44:27.85058647Z`
+- Virtual Size: ~ 438.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.29+7`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=4.0.27`
+  - `GROOVY_VERSION=5.0.3`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
