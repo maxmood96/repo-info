@@ -525,7 +525,7 @@ $ docker pull perl@sha256:66ba45df61c83a089a8dd5af594a851648ba00a0329d006e2b291e
 
 -	Layers:
 	-	`sha256:dfc746ca589e7fe3e05906c12f0c2f33032a44e2e3c20aabe2dc0e4edbbdf0f0`  
-		Last Modified: Wed, 10 Dec 2025 03:26:35 GMT  
+		Last Modified: Thu, 11 Dec 2025 01:17:56 GMT  
 		Size: 17.5 KB (17548 bytes)  
 		MIME: application/vnd.in-toto+json
 
