@@ -1,7 +1,7 @@
 ## `matomo:fpm`
 
 ```console
-$ docker pull matomo@sha256:13a14ec0b309d11a5b11f5c0b3e3ba000e7a3522b9756856eb2a565ed4ec80c4
+$ docker pull matomo@sha256:0306b6d1e4bbb0f872c4264ff24fce51d959900b7181083b9aa32a4e9940fc61
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,13 +26,13 @@ $ docker pull matomo@sha256:13a14ec0b309d11a5b11f5c0b3e3ba000e7a3522b9756856eb2a
 ### `matomo:fpm` - linux; amd64
 
 ```console
-$ docker pull matomo@sha256:ad91f3300b87e465c623f34c444e1dc1b774fb05829544af0751a7e31dbceee0
+$ docker pull matomo@sha256:c88acd358b9e12a24ddec945dd6d20b487330298a7cb520bf35466f1de7f9788
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.0 MB (200018886 bytes)**  
+-	Total Size: **200.0 MB (200035877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3acdab23c188a6dc4b18644e2f9c0328da81d267d454e30b6481d9cfee2f59ff`
+-	Image ID: `sha256:6635df01a0731a2e7d1af7d805034922fe8922bc29d4fd2a434272c320b088e3`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -87,25 +87,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Mon, 08 Dec 2025 22:51:29 GMT
 CMD ["php-fpm"]
-# Tue, 09 Dec 2025 00:18:03 GMT
+# Thu, 11 Dec 2025 00:38:16 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Tue, 09 Dec 2025 00:18:03 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.27; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 00:18:03 GMT
+# Thu, 11 Dec 2025 00:38:16 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
+# Thu, 11 Dec 2025 00:38:16 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 09 Dec 2025 00:18:03 GMT
-ENV MATOMO_VERSION=5.6.1
-# Tue, 09 Dec 2025 00:18:15 GMT
+# Thu, 11 Dec 2025 00:38:16 GMT
+ENV MATOMO_VERSION=5.6.2
+# Thu, 11 Dec 2025 00:38:27 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 00:18:15 GMT
+# Thu, 11 Dec 2025 00:38:28 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Tue, 09 Dec 2025 00:18:15 GMT
+# Thu, 11 Dec 2025 00:38:28 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 09 Dec 2025 00:18:15 GMT
+# Thu, 11 Dec 2025 00:38:28 GMT
 VOLUME [/var/www/html]
-# Tue, 09 Dec 2025 00:18:15 GMT
+# Thu, 11 Dec 2025 00:38:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 09 Dec 2025 00:18:15 GMT
+# Thu, 11 Dec 2025 00:38:28 GMT
 CMD ["php-fpm"]
 ```
 
@@ -158,57 +158,57 @@ CMD ["php-fpm"]
 		Last Modified: Mon, 08 Dec 2025 22:51:47 GMT  
 		Size: 9.2 KB (9197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f673c5c9322bd4092c9a611b03ff28d8fe0acde55885a5f81cb9a0f14aa8645a`  
-		Last Modified: Tue, 09 Dec 2025 00:18:30 GMT  
-		Size: 2.7 MB (2684512 bytes)  
+	-	`sha256:787e92d824675bf08a9449658ad1320deea0733f0e3d61413796c437756602df`  
+		Last Modified: Thu, 11 Dec 2025 00:38:50 GMT  
+		Size: 2.7 MB (2701494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1085174982302bf1a56fafd8aafe6fc167f0bedd1bb539f0a15057dd45442613`  
-		Last Modified: Tue, 09 Dec 2025 00:18:29 GMT  
-		Size: 328.0 B  
+	-	`sha256:a894f5091df6dbeea59046f1ddd9b61cc0f40e332addf177a02beb4f6651ec29`  
+		Last Modified: Thu, 11 Dec 2025 00:38:50 GMT  
+		Size: 329.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d478b088ac3cdb6f21246e77145a34f9cf90f16cd57f578d307bee4e77cd9f0b`  
-		Last Modified: Tue, 09 Dec 2025 00:18:31 GMT  
-		Size: 22.2 MB (22239573 bytes)  
+	-	`sha256:223c182097522fbab60ff684dadb527f529ff044a13ce577adc8cd31ed7d8c38`  
+		Last Modified: Thu, 11 Dec 2025 00:38:55 GMT  
+		Size: 22.2 MB (22239578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1489789e9ecd8c57574b20c37301d718a4d097cf7b2d93f8ebdf621eaa6ddad`  
-		Last Modified: Tue, 09 Dec 2025 00:18:30 GMT  
-		Size: 340.0 B  
+	-	`sha256:62852b97c98a9150741d216697b372e4c17ccb3495c72a9a194e19f80ed10ce2`  
+		Last Modified: Thu, 11 Dec 2025 00:38:50 GMT  
+		Size: 343.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0701a9729418187c1f6fb488f7b4de92bcfea079f8e44f3f9ae80a08f1389dc`  
-		Last Modified: Tue, 09 Dec 2025 00:18:29 GMT  
+	-	`sha256:6508b9711bc349b51c64f725453c55b50015d89efee77860e7ace86dc05ce9da`  
+		Last Modified: Thu, 11 Dec 2025 00:38:49 GMT  
 		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:fpm` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:03adb052033c23673461bb0a833a89582d3f41a067a45bad211f45328b81b714
+$ docker pull matomo@sha256:21656bc113d9eb14bd3651cece9bc66b6e86fca473abafbc013739fad26f407d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **33.2 KB (33248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d5474f089f4475bcc7fe7ce878dc99d7e6c5507d540ac4cd9268c18bc9c3087`
+-	Image ID: `sha256:245b77acac6625cce0e0704cea48ffa15de86cb0e430cd9234db073c72906494`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79e8c2c4b63f974a2d9394bfcabe5743553fbf3a9ec9602d17bb379f6c90e2ba`  
-		Last Modified: Tue, 09 Dec 2025 04:13:00 GMT  
+	-	`sha256:8def6ef52516df40b7583678d8b48133af1ccf40976e101d5e86cdeeddfa155c`  
+		Last Modified: Thu, 11 Dec 2025 01:12:22 GMT  
 		Size: 33.2 KB (33248 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:fpm` - linux; arm variant v5
 
 ```console
-$ docker pull matomo@sha256:0c2e16ebac2a2e159d550efaabdff729c57776289b73c399c1141dbdf140b64e
+$ docker pull matomo@sha256:cfc1c2db1dad1c0a7da2bf9e8f094bde7cdae85f0975368d114289c513287773
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.6 MB (173612314 bytes)**  
+-	Total Size: **173.6 MB (173628755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb24485321288d7ee2f72a5acda0040307ac8f79a6af8dd385440f92d91b22ed`
+-	Image ID: `sha256:858ab0f0ee9bd1a4cb8d2fa30d2ceb236be07e3e469c45a077ade7886691f9ff`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -263,25 +263,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Mon, 08 Dec 2025 22:59:48 GMT
 CMD ["php-fpm"]
-# Tue, 09 Dec 2025 01:24:37 GMT
+# Thu, 11 Dec 2025 00:37:43 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Tue, 09 Dec 2025 01:24:37 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.27; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:24:37 GMT
+# Thu, 11 Dec 2025 00:37:43 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
+# Thu, 11 Dec 2025 00:37:43 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 09 Dec 2025 01:24:37 GMT
-ENV MATOMO_VERSION=5.6.1
-# Tue, 09 Dec 2025 01:24:52 GMT
+# Thu, 11 Dec 2025 00:37:43 GMT
+ENV MATOMO_VERSION=5.6.2
+# Thu, 11 Dec 2025 00:37:59 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:24:52 GMT
+# Thu, 11 Dec 2025 00:37:59 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Tue, 09 Dec 2025 01:24:52 GMT
+# Thu, 11 Dec 2025 00:37:59 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 09 Dec 2025 01:24:52 GMT
+# Thu, 11 Dec 2025 00:37:59 GMT
 VOLUME [/var/www/html]
-# Tue, 09 Dec 2025 01:24:52 GMT
+# Thu, 11 Dec 2025 00:37:59 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 09 Dec 2025 01:24:52 GMT
+# Thu, 11 Dec 2025 00:37:59 GMT
 CMD ["php-fpm"]
 ```
 
@@ -334,57 +334,57 @@ CMD ["php-fpm"]
 		Last Modified: Mon, 08 Dec 2025 23:00:20 GMT  
 		Size: 9.2 KB (9190 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bae4f71ca2d84bd3ca6e3b3cb9d5b2c5819df0e3ec930b7b367f450adbadc5be`  
-		Last Modified: Tue, 09 Dec 2025 01:25:08 GMT  
-		Size: 2.5 MB (2509052 bytes)  
+	-	`sha256:8e181dd5dee2d8eaf73b8bb25fd5d699ccadd153b4e71d01d3fd05d34407e7d4`  
+		Last Modified: Thu, 11 Dec 2025 00:38:14 GMT  
+		Size: 2.5 MB (2525500 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e0ec426dc4b5363b999e5d3ac65376412f8be41eae866ac189606aa9f1cf4a3`  
-		Last Modified: Tue, 09 Dec 2025 01:25:08 GMT  
-		Size: 327.0 B  
+	-	`sha256:d0b8ce189551e8e9b96ed880b9a52da59bd7fcdab291cf168afbb25eefefb100`  
+		Last Modified: Thu, 11 Dec 2025 00:38:14 GMT  
+		Size: 329.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c5aa19c8d5cdc9ec373a401ab10ca8a7ef79d13e32fceb1edd22d695dcdc1118`  
-		Last Modified: Tue, 09 Dec 2025 01:25:09 GMT  
-		Size: 22.2 MB (22236848 bytes)  
+	-	`sha256:3cd92e53299d8ff221c3c791b79325f4145fc8f945e1d1550e9cfb9a912c082c`  
+		Last Modified: Thu, 11 Dec 2025 00:38:18 GMT  
+		Size: 22.2 MB (22236837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b53f7eac695f3acbd6dc532acd718f2d38a5ac5c7e36713ed73bc918b699d93f`  
-		Last Modified: Tue, 09 Dec 2025 01:25:07 GMT  
-		Size: 340.0 B  
+	-	`sha256:9ee4c9a5aa2b2dac89715ac7107416a6896c67370ba8a3495321d916bb724ac5`  
+		Last Modified: Thu, 11 Dec 2025 00:38:14 GMT  
+		Size: 343.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1519dda68fd7b95e6035345fb25ca6d6f270159fc6ae9c79b80d873f9f6251b3`  
-		Last Modified: Tue, 09 Dec 2025 01:25:07 GMT  
-		Size: 824.0 B  
+	-	`sha256:2b82bfd1bf3a5b4498408ea9edf6576d1d582648378f1c2e82568f8676c5bb13`  
+		Last Modified: Thu, 11 Dec 2025 00:38:14 GMT  
+		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:fpm` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:2210cfb9fc3cba50ea850c839a5c713123e68f3fc0cb4c43986ef0d93ef633dd
+$ docker pull matomo@sha256:e8290a3e8c4cd46c65a3b23f7880119c85915d792826ba13f649e6ab01b71684
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.3 KB (33348 bytes)**  
+-	Total Size: **33.3 KB (33346 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea0c464648356545477249696fc76e38917306a2e7ca702951a304eeffed64a3`
+-	Image ID: `sha256:ee514c1add624aa9d05598835df50fafba0c6bbf841f9ffd8fac4b548e626c6b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bfc15b1cea06e9a951b287abeac8cf78019c7150acaf965480a8f43ad3e274ac`  
-		Last Modified: Tue, 09 Dec 2025 04:13:04 GMT  
-		Size: 33.3 KB (33348 bytes)  
+	-	`sha256:0a19345ae03ef18ac3a6b31a80c11a58b78e78d5d677c7059165bd82b510516c`  
+		Last Modified: Thu, 11 Dec 2025 01:12:25 GMT  
+		Size: 33.3 KB (33346 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:fpm` - linux; arm variant v7
 
 ```console
-$ docker pull matomo@sha256:d2584c05a510a1b4224ffe3871938470123cc5d395ddd58eab8c7c610c5e4a8b
+$ docker pull matomo@sha256:efac3b29b9a672ea56b920cef31baa4a6631fbfee4ef5a0dec6c7f0924ab2ecd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.5 MB (162458270 bytes)**  
+-	Total Size: **162.5 MB (162474716 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:399fd1817f2c6ff5517ad08eed09e41ded8242fe612a27ffaea5ee0380fa76ac`
+-	Image ID: `sha256:1e43c47824aaf26f3419f1e05aadc9379a0202dc5466420c6be45ff27e2c26f1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -439,25 +439,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Mon, 08 Dec 2025 23:04:39 GMT
 CMD ["php-fpm"]
-# Tue, 09 Dec 2025 01:44:37 GMT
+# Thu, 11 Dec 2025 00:38:40 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Tue, 09 Dec 2025 01:44:37 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.27; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:44:37 GMT
+# Thu, 11 Dec 2025 00:38:40 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
+# Thu, 11 Dec 2025 00:38:41 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 09 Dec 2025 01:44:37 GMT
-ENV MATOMO_VERSION=5.6.1
-# Tue, 09 Dec 2025 01:44:50 GMT
+# Thu, 11 Dec 2025 00:38:41 GMT
+ENV MATOMO_VERSION=5.6.2
+# Thu, 11 Dec 2025 00:38:54 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:44:50 GMT
+# Thu, 11 Dec 2025 00:38:54 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Tue, 09 Dec 2025 01:44:50 GMT
+# Thu, 11 Dec 2025 00:38:54 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 09 Dec 2025 01:44:50 GMT
+# Thu, 11 Dec 2025 00:38:54 GMT
 VOLUME [/var/www/html]
-# Tue, 09 Dec 2025 01:44:50 GMT
+# Thu, 11 Dec 2025 00:38:54 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 09 Dec 2025 01:44:50 GMT
+# Thu, 11 Dec 2025 00:38:54 GMT
 CMD ["php-fpm"]
 ```
 
@@ -510,57 +510,57 @@ CMD ["php-fpm"]
 		Last Modified: Mon, 08 Dec 2025 23:05:09 GMT  
 		Size: 9.2 KB (9198 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d11811dcc0ad54ec1ac847033da38ca6f56f41cb315f04259d2bde377832781`  
-		Last Modified: Tue, 09 Dec 2025 01:45:05 GMT  
-		Size: 2.4 MB (2391663 bytes)  
+	-	`sha256:146a68c4213840d02763cbc4403ce0aff08665bdfa22d9fcf7856dbbcb842c8d`  
+		Last Modified: Thu, 11 Dec 2025 00:39:17 GMT  
+		Size: 2.4 MB (2408217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4129c6c6a3791f14febcbac57e65ded7c0f5de490cf59a6278b2c3afbf6d2991`  
-		Last Modified: Tue, 09 Dec 2025 01:45:05 GMT  
-		Size: 329.0 B  
+	-	`sha256:b85ce61b9ed996f627270880cf4204501ce14339866e836858885922146a3e13`  
+		Last Modified: Thu, 11 Dec 2025 00:39:17 GMT  
+		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d79772d84d87afa6e0151515ae7f2477121a9f5e8b57a69dd381d18a6faba8f9`  
-		Last Modified: Tue, 09 Dec 2025 01:45:06 GMT  
-		Size: 22.2 MB (22237037 bytes)  
+	-	`sha256:edf1dfddd3717f1e45942158b73da7479fb223f250f95112668f0fdfffe7dfb6`  
+		Last Modified: Thu, 11 Dec 2025 00:39:22 GMT  
+		Size: 22.2 MB (22236928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ebe666bead53a92827f4a7c3ce7581a391bc8a5bfcdc91744823930f6563b495`  
-		Last Modified: Tue, 09 Dec 2025 01:45:05 GMT  
+	-	`sha256:6b77b9f7dec72ab89a4c231a66e6483f7f8bb364dd0c1cb01b7d26a7ea8d9278`  
+		Last Modified: Thu, 11 Dec 2025 00:39:18 GMT  
 		Size: 345.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab31c4c3393a3154e162485fc816b4257a3d711626c939a6cd6e84b04183d9f5`  
-		Last Modified: Tue, 09 Dec 2025 01:45:04 GMT  
+	-	`sha256:c857039146d6a6c242934ef58f29298aa515fba5134a82ca4e6e37daac31cbfe`  
+		Last Modified: Thu, 11 Dec 2025 00:39:18 GMT  
 		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:fpm` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:d3b8aeae042276c1c8a195ffc2b19e567de8faf29b2094d5f4373e31498820a8
+$ docker pull matomo@sha256:ce5bddfdcf8035c20faac691050d0cea86f4e10b4c84e4ccec1e91f7013ef79a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **33.3 KB (33348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01659cd9777aa5ca939f28cf865fa81d805d0ee27142bce632d25cceed478a84`
+-	Image ID: `sha256:8dccab8608781769a24604c40ec527fa4b4de63f29c65fda4b8620ab8d2422e4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9d603fb180622f0a323a1b8063e26c062bc6b7708b5b3f9a41017b2dbe9dc46b`  
-		Last Modified: Tue, 09 Dec 2025 04:13:07 GMT  
+	-	`sha256:afa97f7bca91e932637aafc458c259e24683f7b74c7019e7f73fa252b06c2fd6`  
+		Last Modified: Thu, 11 Dec 2025 01:12:28 GMT  
 		Size: 33.3 KB (33348 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull matomo@sha256:3027e289738a637c4fdd52a295eac7f854af8bf88a5c431866b6e0a4106ff666
+$ docker pull matomo@sha256:0be4eaa9ec1629b0e690dcba979d505ab47e39fbdd5531ef25c6dce6d644e79e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.4 MB (192353959 bytes)**  
+-	Total Size: **192.4 MB (192370955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2c2cf36fc85938cb21febe5cc62ca01377e5c081e9cbaa5273c879dec258752`
+-	Image ID: `sha256:89774194d3d321d6569ac805ce3eebd6e7d0fe12345b72f74c2ac6ca2bc9f97a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -615,25 +615,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Mon, 08 Dec 2025 22:51:20 GMT
 CMD ["php-fpm"]
-# Tue, 09 Dec 2025 00:24:22 GMT
+# Thu, 11 Dec 2025 00:38:30 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Tue, 09 Dec 2025 00:24:22 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.27; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 00:24:23 GMT
+# Thu, 11 Dec 2025 00:38:30 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
+# Thu, 11 Dec 2025 00:38:30 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 09 Dec 2025 00:24:23 GMT
-ENV MATOMO_VERSION=5.6.1
-# Tue, 09 Dec 2025 00:24:34 GMT
+# Thu, 11 Dec 2025 00:38:30 GMT
+ENV MATOMO_VERSION=5.6.2
+# Thu, 11 Dec 2025 00:38:41 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 00:24:35 GMT
+# Thu, 11 Dec 2025 00:38:41 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Tue, 09 Dec 2025 00:24:35 GMT
+# Thu, 11 Dec 2025 00:38:41 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 09 Dec 2025 00:24:35 GMT
+# Thu, 11 Dec 2025 00:38:41 GMT
 VOLUME [/var/www/html]
-# Tue, 09 Dec 2025 00:24:35 GMT
+# Thu, 11 Dec 2025 00:38:41 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 09 Dec 2025 00:24:35 GMT
+# Thu, 11 Dec 2025 00:38:41 GMT
 CMD ["php-fpm"]
 ```
 
@@ -686,57 +686,57 @@ CMD ["php-fpm"]
 		Last Modified: Mon, 08 Dec 2025 22:51:38 GMT  
 		Size: 9.2 KB (9195 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a69d60c1c01fab1fc49fd7ce2f114ab4973f1cc7155d8da0e91008e9ea824ac9`  
-		Last Modified: Tue, 09 Dec 2025 00:24:50 GMT  
-		Size: 2.7 MB (2665714 bytes)  
+	-	`sha256:b8b973f4b2f38df543be33debf9594da60147b723e790709a9afba98808551cc`  
+		Last Modified: Thu, 11 Dec 2025 00:39:07 GMT  
+		Size: 2.7 MB (2682657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06aec82a75126ca27ecb7561fc24566209a446e9a1bb419601e5919804a81957`  
-		Last Modified: Tue, 09 Dec 2025 00:24:49 GMT  
+	-	`sha256:d76f8107476fa5098638c627424ab79919b8f57073e3fd506b5332afbea6a64c`  
+		Last Modified: Thu, 11 Dec 2025 00:39:07 GMT  
 		Size: 328.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b750a776ea445fba3d5ec69f5c50ad899fa6312e4de9ec9fff761bd78820ace`  
-		Last Modified: Tue, 09 Dec 2025 00:24:51 GMT  
-		Size: 22.2 MB (22239004 bytes)  
+	-	`sha256:5f0062d69df70066f7cb09406a267e0cddbded1b9b474fe0e3c9ffa0d4ff5085`  
+		Last Modified: Thu, 11 Dec 2025 00:39:10 GMT  
+		Size: 22.2 MB (22239055 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28c67bc86583852967998a590de195fcc089060c6decc322ca54f751f3f36022`  
-		Last Modified: Tue, 09 Dec 2025 00:24:49 GMT  
-		Size: 344.0 B  
+	-	`sha256:295986a97a259f6956d1c3303a86aaa31a08b33b1ed0fd4eb609e735107f25ea`  
+		Last Modified: Thu, 11 Dec 2025 00:39:06 GMT  
+		Size: 345.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8d7d8b8d49e8d4343b8072ae57af87401c9f2e02abcdc3c012a4cb9bfc69bd3`  
-		Last Modified: Tue, 09 Dec 2025 00:24:49 GMT  
-		Size: 824.0 B  
+	-	`sha256:eabfc0bb2142f93b2f2bf065505271d70d67be2b0c7eba6f4acccf4c673f8a19`  
+		Last Modified: Thu, 11 Dec 2025 00:39:07 GMT  
+		Size: 825.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:fpm` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:2a8c6228ff5957903e1d8619c7b22e5021da7d51bd5b379fac5f66f5ea648800
+$ docker pull matomo@sha256:2294f67f33d29f46f49da67a276a9d43c8d57b9994037125c38840669acb20b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **33.4 KB (33381 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:828832118aeab5cad4a729cecdec7e9a1137bc346765c549f5223a5309cfa391`
+-	Image ID: `sha256:5e54a761330fcc95580c95d247ae2f90ba01d508b1906264e9898713c4d8e558`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a4da17fdca2a9bc855d1c959d97e3e95ca77237b86db03034b619f61d768cad0`  
-		Last Modified: Tue, 09 Dec 2025 04:13:10 GMT  
+	-	`sha256:5d1c42bb9c5bf83450409764c11331fa5700a8722e5c508cd2f41e3a087fb18f`  
+		Last Modified: Thu, 11 Dec 2025 01:12:31 GMT  
 		Size: 33.4 KB (33381 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:fpm` - linux; 386
 
 ```console
-$ docker pull matomo@sha256:098a863a08f75e60269b984741e5ddfd22a31788f265b8b04d88627b44d1f86a
+$ docker pull matomo@sha256:b615781b4bfa411759c35e2a42e8fb089d1c53dd72e81c26a80687e61a97e2a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.1 MB (200101683 bytes)**  
+-	Total Size: **200.1 MB (200116847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ef1e7f2709dd6b40ed96967484c3e3a5de7f053170566f4814b22f725c79e24`
+-	Image ID: `sha256:54449e3d2295bf0189edab5e112ab150fc45c5a2069d3c4a971cc490f288c2a0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -791,25 +791,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Mon, 08 Dec 2025 22:48:59 GMT
 CMD ["php-fpm"]
-# Tue, 09 Dec 2025 00:11:47 GMT
+# Thu, 11 Dec 2025 00:38:40 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Tue, 09 Dec 2025 00:11:47 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.27; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 00:11:47 GMT
+# Thu, 11 Dec 2025 00:38:40 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
+# Thu, 11 Dec 2025 00:38:41 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 09 Dec 2025 00:11:47 GMT
-ENV MATOMO_VERSION=5.6.1
-# Tue, 09 Dec 2025 00:11:58 GMT
+# Thu, 11 Dec 2025 00:38:41 GMT
+ENV MATOMO_VERSION=5.6.2
+# Thu, 11 Dec 2025 00:38:53 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 00:11:58 GMT
+# Thu, 11 Dec 2025 00:38:53 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Tue, 09 Dec 2025 00:11:58 GMT
+# Thu, 11 Dec 2025 00:38:53 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 09 Dec 2025 00:11:58 GMT
+# Thu, 11 Dec 2025 00:38:53 GMT
 VOLUME [/var/www/html]
-# Tue, 09 Dec 2025 00:11:58 GMT
+# Thu, 11 Dec 2025 00:38:53 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 09 Dec 2025 00:11:58 GMT
+# Thu, 11 Dec 2025 00:38:53 GMT
 CMD ["php-fpm"]
 ```
 
@@ -862,57 +862,57 @@ CMD ["php-fpm"]
 		Last Modified: Mon, 08 Dec 2025 22:49:16 GMT  
 		Size: 9.2 KB (9194 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15fbb9bb4e9ecab47caf04691c08cf039521dad9895b1eddc420166b71c5ff7b`  
-		Last Modified: Tue, 09 Dec 2025 00:12:11 GMT  
-		Size: 2.7 MB (2662013 bytes)  
+	-	`sha256:a4dc19f47fbc352fb0ca58ab9cd96c2a8c295cd26019b806279e20c3dab7c0d7`  
+		Last Modified: Thu, 11 Dec 2025 00:39:09 GMT  
+		Size: 2.7 MB (2677181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c6406cdd7fc1ec50b2bff90b6f7cfd03233944e98fca4d32570f6ad1f38e602`  
-		Last Modified: Tue, 09 Dec 2025 00:12:11 GMT  
-		Size: 326.0 B  
+	-	`sha256:d8950f8bf3d5842e74262b85c049f562a2cd3a9d4c036d12766b1427e0217d20`  
+		Last Modified: Thu, 11 Dec 2025 00:39:09 GMT  
+		Size: 327.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:946d8462e73a9352101fcf58a0711ebdd4c1197bc93d0a70c9cb1c39048f2822`  
-		Last Modified: Tue, 09 Dec 2025 00:12:13 GMT  
-		Size: 22.2 MB (22238316 bytes)  
+	-	`sha256:e5888dc3db95b89a382bec903e071f48d20a0ca5e42f1f6e74667f1ed1ca1895`  
+		Last Modified: Thu, 11 Dec 2025 00:46:56 GMT  
+		Size: 22.2 MB (22238311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:facaa3c799b1f72fc292dffdec9ceff4c811135b5fe32471446fd0bcf749ab2c`  
-		Last Modified: Tue, 09 Dec 2025 00:12:11 GMT  
-		Size: 341.0 B  
+	-	`sha256:6f64e3d1aeea087d16b915cd0fdea8a2340c1678d0caa9ee5564f0a5462dd1b1`  
+		Last Modified: Thu, 11 Dec 2025 00:39:09 GMT  
+		Size: 342.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a2a5c1cd636bd258664837ab102ab2ae36f02b1ff126b2bd571dc7f12a3e786`  
-		Last Modified: Tue, 09 Dec 2025 00:12:11 GMT  
-		Size: 824.0 B  
+	-	`sha256:c21242df65f2807aa65af1309e4a769646c89af7d71cb929f5ca83f8fcee4398`  
+		Last Modified: Thu, 11 Dec 2025 00:39:09 GMT  
+		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:fpm` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:e32fcda678ff40db496015b96259d9ae1ff1f5962be9b5dc907f804871781c9d
+$ docker pull matomo@sha256:ea7f22562acd3c629c3d5396255129660af76eced3add6b224099a30c6e31f14
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **33.2 KB (33212 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff6497ff591102e7399d2d28f5249cf394d72700b6ceaccaa55bc8e57fc56a23`
+-	Image ID: `sha256:44134924170c0e49a3575a52f394082584e1ffd9393e6969bf172d75c303f901`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6f4b17cad9ad2a519c729158275bc3a7a6e0785999b2f4461c64c4c51ef3fa23`  
-		Last Modified: Tue, 09 Dec 2025 04:13:12 GMT  
+	-	`sha256:3961e98a67df78a2b66b002f3cea25d7aabcc878b4b1eae630c96e702f3e7a9c`  
+		Last Modified: Thu, 11 Dec 2025 01:12:34 GMT  
 		Size: 33.2 KB (33212 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:fpm` - linux; ppc64le
 
 ```console
-$ docker pull matomo@sha256:10c20d9cb5b27b48d4ed21ea8d5407539d767bb8e57d3dc216001f4e383803f1
+$ docker pull matomo@sha256:8969df024fc8a887f269199386302e4f7182331a2318d49c45a4c483a61d74fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.4 MB (196397733 bytes)**  
+-	Total Size: **196.4 MB (196406605 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b7c13c71556551ebe56a4ac2c42706b3961e77576240cb04df9ac7d81476e71`
+-	Image ID: `sha256:ce4d5d712d42db9ebd10b3d11bd83d5f5d02434600d2e7b8aeda663c59e37ebb`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -967,25 +967,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Tue, 09 Dec 2025 01:18:00 GMT
 CMD ["php-fpm"]
-# Tue, 09 Dec 2025 06:50:43 GMT
+# Thu, 11 Dec 2025 00:37:17 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Tue, 09 Dec 2025 06:50:43 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.27; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:50:43 GMT
+# Thu, 11 Dec 2025 00:37:17 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
+# Thu, 11 Dec 2025 00:37:17 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 09 Dec 2025 06:50:43 GMT
-ENV MATOMO_VERSION=5.6.1
-# Tue, 09 Dec 2025 06:51:06 GMT
+# Thu, 11 Dec 2025 00:37:17 GMT
+ENV MATOMO_VERSION=5.6.2
+# Thu, 11 Dec 2025 00:37:39 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:51:07 GMT
+# Thu, 11 Dec 2025 00:37:40 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Tue, 09 Dec 2025 06:51:08 GMT
+# Thu, 11 Dec 2025 00:37:40 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 09 Dec 2025 06:51:08 GMT
+# Thu, 11 Dec 2025 00:37:40 GMT
 VOLUME [/var/www/html]
-# Tue, 09 Dec 2025 06:51:08 GMT
+# Thu, 11 Dec 2025 00:37:40 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 09 Dec 2025 06:51:08 GMT
+# Thu, 11 Dec 2025 00:37:40 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1038,44 +1038,44 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 09 Dec 2025 01:18:36 GMT  
 		Size: 9.2 KB (9196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b182c403c0f179353e9439436b671ce66b28ab8d1c9aecea481307976eccc0c`  
-		Last Modified: Tue, 09 Dec 2025 06:51:30 GMT  
-		Size: 2.9 MB (2941319 bytes)  
+	-	`sha256:129d1f94ffb65e96bef84be069269d339524c3e3ea78303671a1661d50e41b7e`  
+		Last Modified: Thu, 11 Dec 2025 00:38:24 GMT  
+		Size: 3.0 MB (2950115 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5afd593e401cb1c1756f69a2f10c38201ec92fbc07d5e4cea21f1712b38a4858`  
-		Last Modified: Tue, 09 Dec 2025 06:51:29 GMT  
-		Size: 328.0 B  
+	-	`sha256:ad6b55d14d89f2d729ad1ec2a703cf43cda991e338bec702abbe95a170cc6d2e`  
+		Last Modified: Thu, 11 Dec 2025 00:38:24 GMT  
+		Size: 329.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb7e5b57512578ef68914461d29064f477c02836373958f277c678ec52429010`  
-		Last Modified: Tue, 09 Dec 2025 06:51:35 GMT  
-		Size: 22.2 MB (22238861 bytes)  
+	-	`sha256:b7ed1404d60cb082fe4e029c8e306ed8b7f51f2466a7ab304ec0fc266a0b7849`  
+		Last Modified: Thu, 11 Dec 2025 00:38:25 GMT  
+		Size: 22.2 MB (22238935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b46022c62d3dcbf8f6a572728bfdc6805bf0b03280810e525451159448b566e2`  
-		Last Modified: Tue, 09 Dec 2025 06:51:30 GMT  
-		Size: 344.0 B  
+	-	`sha256:d506b383bdad36f1f282ebe256d9e871909feadd204cabda8289f91ba5beae0d`  
+		Last Modified: Thu, 11 Dec 2025 00:38:24 GMT  
+		Size: 345.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:966bf01c69b2ad880eccdc3eb928100c97d4468279cd0546c38684396ca1bac3`  
-		Last Modified: Tue, 09 Dec 2025 06:51:30 GMT  
+	-	`sha256:83c1126434d25a1769f628280408790e95c6313caf8cc53f5cf5903dbe270356`  
+		Last Modified: Thu, 11 Dec 2025 00:38:24 GMT  
 		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:fpm` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:33051f861fdc7db47d08ad52ab2f2f812e70e27cbe59060e8e0dbcb0f13d20ab
+$ docker pull matomo@sha256:4c4fa35e667227798458aecc314bcab57429f8c0cca6bfdc48419afec83c0956
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **33.3 KB (33296 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:09a319d81a76d7db0d3f752d0fdd76b7981d775955b4947732dabdb218900a3b`
+-	Image ID: `sha256:a10f41aef3b481712735537520eb6e821c140e5f4de49c4d877e2c6645052bcf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:28cce70b362775728881e87db83d6be900fbdf0332f4e052db91f59e517539a2`  
-		Last Modified: Tue, 09 Dec 2025 07:11:53 GMT  
+	-	`sha256:dcc0596977e6d74be6f6f4bd9416c36c7b2b273a93242c41f1d28361e3a9ef95`  
+		Last Modified: Thu, 11 Dec 2025 01:12:37 GMT  
 		Size: 33.3 KB (33296 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1258,13 +1258,13 @@ $ docker pull matomo@sha256:3f6497a0e1f4e8d27d8f5cf6234d586f47584d8d183cd177f3d8
 ### `matomo:fpm` - linux; s390x
 
 ```console
-$ docker pull matomo@sha256:52cae4df6d6d4d18f23d44de21075b1641f6815e4834fea3448d89f94a9ff8b4
+$ docker pull matomo@sha256:a73da59d1e3457d499b06c50cf201eae95655fd65d8db190fdaf77eb2bdbe5f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.6 MB (174625708 bytes)**  
+-	Total Size: **174.6 MB (174640208 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:857958e18bb8067583b1616c35ccd2befa62ff943d8dfa94ad8f4495957fee76`
+-	Image ID: `sha256:cd437934a99d33f0e36fcd6bafed5bdcfdaf9380aa59ad017066e16022ae78f0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1319,25 +1319,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Mon, 08 Dec 2025 23:05:38 GMT
 CMD ["php-fpm"]
-# Tue, 09 Dec 2025 02:19:10 GMT
+# Thu, 11 Dec 2025 00:36:28 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Tue, 09 Dec 2025 02:19:10 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.27; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:19:10 GMT
+# Thu, 11 Dec 2025 00:36:28 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
+# Thu, 11 Dec 2025 00:36:28 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 09 Dec 2025 02:19:10 GMT
-ENV MATOMO_VERSION=5.6.1
-# Tue, 09 Dec 2025 02:19:21 GMT
+# Thu, 11 Dec 2025 00:36:28 GMT
+ENV MATOMO_VERSION=5.6.2
+# Thu, 11 Dec 2025 00:36:36 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:19:21 GMT
+# Thu, 11 Dec 2025 00:36:36 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Tue, 09 Dec 2025 02:19:21 GMT
+# Thu, 11 Dec 2025 00:36:36 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 09 Dec 2025 02:19:21 GMT
+# Thu, 11 Dec 2025 00:36:36 GMT
 VOLUME [/var/www/html]
-# Tue, 09 Dec 2025 02:19:21 GMT
+# Thu, 11 Dec 2025 00:36:36 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 09 Dec 2025 02:19:21 GMT
+# Thu, 11 Dec 2025 00:36:36 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1390,43 +1390,43 @@ CMD ["php-fpm"]
 		Last Modified: Mon, 08 Dec 2025 23:05:59 GMT  
 		Size: 9.2 KB (9195 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:476172635cdbbef1a509e8e77b8c7d2410fb0907ca9332ba770eb78e961335be`  
-		Last Modified: Tue, 09 Dec 2025 02:19:41 GMT  
-		Size: 2.7 MB (2716370 bytes)  
+	-	`sha256:7f65f6bc3930d23df433f625d1faa070f83132017e418ecffb950084d770ccb7`  
+		Last Modified: Thu, 11 Dec 2025 00:37:14 GMT  
+		Size: 2.7 MB (2730966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de9c52537d3a915e9d9735b037f767397055c03757257d1b85acf991c1f1cf02`  
-		Last Modified: Tue, 09 Dec 2025 02:19:41 GMT  
-		Size: 328.0 B  
+	-	`sha256:9403d2f8ce25c0d5b903091881b7f44e0761f864f8eff2460b49c57390914eb8`  
+		Last Modified: Thu, 11 Dec 2025 00:37:14 GMT  
+		Size: 329.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:522653373e9f9ab846df4022d6079942c16c7da76fdcde3031d69d685faa03ae`  
-		Last Modified: Tue, 09 Dec 2025 02:19:44 GMT  
-		Size: 22.2 MB (22237711 bytes)  
+	-	`sha256:23d5e78e3046a9db41d6ae26a0b2f8e93cb0e5070cd61515f9d7d881b1aea350`  
+		Last Modified: Thu, 11 Dec 2025 00:37:16 GMT  
+		Size: 22.2 MB (22237612 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72affea02c42911aa7f78717a07e761d8c14fc3ca55a6f076f63c8e9e88dec65`  
-		Last Modified: Tue, 09 Dec 2025 02:19:41 GMT  
-		Size: 343.0 B  
+	-	`sha256:0cc25f41a47b1d0991dfeb6fb50fe9ab408b032312ffcf4e49bd6ccbc63c7076`  
+		Last Modified: Thu, 11 Dec 2025 00:37:14 GMT  
+		Size: 345.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72b08b1fc2d9bf8795130750d47eae8ec3ba0cf639be7b49a173bfcabc3df09`  
-		Last Modified: Tue, 09 Dec 2025 02:19:40 GMT  
+	-	`sha256:0e75414338c0589ffaec7173880de8aea2393526e92b102a00a6655ada58f176`  
+		Last Modified: Thu, 11 Dec 2025 00:37:14 GMT  
 		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:fpm` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:66b1dc5b5503d4160a5bf04e3264da851c0299e3da9f4b0d7b47767992d2c950
+$ docker pull matomo@sha256:8fe10fa7eb98d71d94fcfe769de0d6e0d36fb7909ae2f373e13a67c95e687f32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.2 KB (33242 bytes)**  
+-	Total Size: **33.2 KB (33241 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2cc321735dc2b71d1deda1cdf5aa43cc0dece1e34669e8da364f4abc9f94531c`
+-	Image ID: `sha256:0056febcb348d5ac5e6d4d2592be58e6bc5c957a8aabf858a20761aa63d7dadb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a4bd8c9a87ab8c9817439c8c2f3d3bac7cf31692965e59976ae7393bd35ea5a1`  
-		Last Modified: Tue, 09 Dec 2025 07:12:15 GMT  
-		Size: 33.2 KB (33242 bytes)  
+	-	`sha256:8a1cd46ea3d1856b06a52467e5918bd4a2ae51e9f4b0665e30c0da0c1a7c9d46`  
+		Last Modified: Thu, 11 Dec 2025 01:12:42 GMT  
+		Size: 33.2 KB (33241 bytes)  
 		MIME: application/vnd.in-toto+json
