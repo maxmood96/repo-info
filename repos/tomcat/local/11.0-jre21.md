@@ -1,10 +1,10 @@
-# `tomcat:11.0.14-jre21-temurin-noble`
+# `tomcat:11.0.15-jre21-temurin-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5a78ce8b8babdbd7e9ebd0e2a5e0bf4b1264844989291b0186e75958be371bbc`
-- Created: `2025-11-14T01:23:34.768167613Z`
-- Virtual Size: ~ 307.45 Mb  
+- Image ID: `sha256:ce13f324345417ce48a47267de51cae7748bbd1607a841626b257fa73148106e`
+- Created: `2025-12-08T21:12:58.43878429Z`
+- Virtual Size: ~ 307.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -19,8 +19,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=11`
-  - `TOMCAT_VERSION=11.0.14`
-  - `TOMCAT_SHA512=832a02e6b8979192b428f41f2586181d14134877d7703a13bec9760ac4722b14e604a914239437657d552dc01e3f9422e2f69b8ab94ad3d85dc03dff2eb8df8c`
+  - `TOMCAT_VERSION=11.0.15`
+  - `TOMCAT_SHA512=876beac5138cf8277f30fe8f6b519fcdd0bfe3d8ca3d20f734cab0f83e9b2e83de9395ee71052c2604f29f700d9646eddaeec72da5807a2d7edea3936096c742`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
