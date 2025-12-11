@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb5767790423f2deee85c93bba37a0c085dfdf901ba2625c8de97e7d01f40397`
-- Created: `2025-09-16T23:33:29Z`
-- Virtual Size: ~ 199.37 Mb  
+- Image ID: `sha256:6c87d2260c4e612e1984a3ab8fb61ad25fb3f50e69bbbfade33e9942b7397fe0`
+- Created: `2025-12-11T21:48:04.977615992Z`
+- Virtual Size: ~ 199.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-varnish-entrypoint"]`
@@ -512,16 +512,16 @@ X11
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.43-r1 description:
+pcre2-10.46-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.43-r1 webpage:
+pcre2-10.46-r0 webpage:
 https://pcre.org/
 
-pcre2-10.43-r1 installed size:
-707 KiB
+pcre2-10.46-r0 installed size:
+767 KiB
 
-pcre2-10.43-r1 license:
+pcre2-10.46-r0 license:
 BSD-3-Clause
 
 ```
