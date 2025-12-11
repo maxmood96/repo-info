@@ -1,9 +1,9 @@
-# `swift:6.2.1-jammy-slim`
+# `swift:6.2.2-jammy-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e0ede55791be864d03ad41e0abbc12042e9a38f9caabf024ec77b97a5e136ce3`
-- Created: `2025-11-13T23:41:13.71631241Z`
+- Image ID: `sha256:f238422e4792dda4e153f67626cbbf74ac059fcbd5b137b8bbf266fa90948f43`
+- Created: `2025-12-09T17:39:10.941932887Z`
 - Virtual Size: ~ 280.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu22.04`
-  - `SWIFT_BRANCH=swift-6.2.1-release`
-  - `SWIFT_VERSION=swift-6.2.1-RELEASE`
+  - `SWIFT_BRANCH=swift-6.2.2-release`
+  - `SWIFT_VERSION=swift-6.2.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`

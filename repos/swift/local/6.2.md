@@ -1,9 +1,9 @@
-# `swift:6.2.1`
+# `swift:6.2.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:675d824f661891504d6957578068a7a28e588fb75fe7fd73e041f2f1ab72a359`
-- Created: `2025-11-13T23:41:28.446207978Z`
+- Image ID: `sha256:d0c7f87d726c2e3963cf584e37d1860063de5d08b32b110f8186dc45f309baf1`
+- Created: `2025-12-09T17:38:36.178143069Z`
 - Virtual Size: ~ 3.82 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu24.04`
-  - `SWIFT_BRANCH=swift-6.2.1-release`
-  - `SWIFT_VERSION=swift-6.2.1-RELEASE`
+  - `SWIFT_BRANCH=swift-6.2.2-release`
+  - `SWIFT_VERSION=swift-6.2.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -222,18 +222,18 @@ $ apt-get source -qq --print-uris bash=5.2.21-2ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.21-2ubuntu4.debian.tar.xz' bash_5.2.21-2ubuntu4.debian.tar.xz 94124 SHA512:cbe580880995984a6ceb6c980d2fa87bbb1ace85d834a147ce39eaf44692af654c2c537716a19c8ed21b20e8abad9240d3f3349cc51020aeba2cd6e490802725
 ```
 
-### `dpkg` source package: `binutils=2.42-4ubuntu2.6`
+### `dpkg` source package: `binutils=2.42-4ubuntu2.7`
 
 Binary Packages:
 
-- `binutils=2.42-4ubuntu2.6`
-- `binutils-common:amd64=2.42-4ubuntu2.6`
-- `binutils-x86-64-linux-gnu=2.42-4ubuntu2.6`
-- `libbinutils:amd64=2.42-4ubuntu2.6`
-- `libctf-nobfd0:amd64=2.42-4ubuntu2.6`
-- `libctf0:amd64=2.42-4ubuntu2.6`
-- `libgprofng0:amd64=2.42-4ubuntu2.6`
-- `libsframe1:amd64=2.42-4ubuntu2.6`
+- `binutils=2.42-4ubuntu2.7`
+- `binutils-common:amd64=2.42-4ubuntu2.7`
+- `binutils-x86-64-linux-gnu=2.42-4ubuntu2.7`
+- `libbinutils:amd64=2.42-4ubuntu2.7`
+- `libctf-nobfd0:amd64=2.42-4ubuntu2.7`
+- `libctf0:amd64=2.42-4ubuntu2.7`
+- `libgprofng0:amd64=2.42-4ubuntu2.7`
+- `libsframe1:amd64=2.42-4ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`, `/usr/share/doc/libgprofng0/copyright`, `/usr/share/doc/libsframe1/copyright`)
 
@@ -2162,19 +2162,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-87.88`
+### `dpkg` source package: `linux=6.8.0-88.89`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-87.88`
+- `linux-libc-dev:amd64=6.8.0-88.89`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-88.89
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-88.89.dsc' linux_6.8.0-88.89.dsc 9321 SHA512:d63fabf135e080701fa248a19ab0e1653b6b14e74c2b68e074b1de5dfc7e5dc28e1731537859738a6d8b458972993b4f9a956b2649dc9e4883f782eebb310477
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-88.89.diff.gz' linux_6.8.0-88.89.diff.gz 6074150 SHA512:44e17e397eba9c4338d97ab1667a58f3456af8d56f7e62cd04c2c31e754eba03ae336b2b8dd37b594faf1fc97bead7f660d93cc54cbdf565f07d7f3ca10cd0db
+```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
@@ -2748,14 +2753,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.1.tar.gz' python3-defaults_3.12.3-0ubuntu2.1.tar.gz 147765 SHA512:9a729a8df22e37d473d39b8c9c95b8c5a7ad8dfd244b3c87576d389f48543edeeaa0bd8b0557de3224d0dbd0f06e02b573cb18adf685a54c02bb485a21ec36e5
 ```
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.8`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.9`
 
 Binary Packages:
 
-- `libpython3.12-dev:amd64=3.12.3-1ubuntu0.8`
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.8`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.8`
-- `libpython3.12t64:amd64=3.12.3-1ubuntu0.8`
+- `libpython3.12-dev:amd64=3.12.3-1ubuntu0.9`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.9`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.9`
+- `libpython3.12t64:amd64=3.12.3-1ubuntu0.9`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/libpython3.12t64/copyright`)
 
@@ -2777,9 +2782,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/shar
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.9.dsc' python3.12_3.12.3-1ubuntu0.9.dsc 3875 SHA512:e905a92b05ea368d2193c6b0cbb810c494672be792b22a0529d4cacdc9915138eb78b8224223405e7f02e5bb9a1679c59622b97ee271e85dded8710e01e8e4f5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.9.debian.tar.xz' python3.12_3.12.3-1ubuntu0.9.debian.tar.xz 261844 SHA512:8b39c8f21474346c8b23c4823e39851c924de715c713587729d8dc921a0f094eb00510acbf4ab87e585dabd63fc0536c86f356192c200c575bba754b9b0025c7
+```
 
 ### `dpkg` source package: `readline=8.2-4build1`
 

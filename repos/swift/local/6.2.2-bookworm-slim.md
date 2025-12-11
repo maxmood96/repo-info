@@ -1,9 +1,9 @@
-# `swift:6.2.1-bookworm-slim`
+# `swift:6.2.2-bookworm-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:808d24667dae08f9728f27161dd104c3d23b8183c56a8c13b2e158f597a815d4`
-- Created: `2025-11-18T06:04:53.302259555Z`
+- Image ID: `sha256:3c42f8cd24481b5251db34a319e4f0939a388e06e5bd1d64fd68962ef3b22e04`
+- Created: `2025-12-09T17:39:34.709474739Z`
 - Virtual Size: ~ 327.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=debian12`
-  - `SWIFT_BRANCH=swift-6.2.1-release`
-  - `SWIFT_VERSION=swift-6.2.1-RELEASE`
+  - `SWIFT_BRANCH=swift-6.2.2-release`
+  - `SWIFT_VERSION=swift-6.2.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
