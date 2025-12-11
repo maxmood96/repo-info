@@ -1,10 +1,10 @@
-# `drupal:10.5.7-php8.4-fpm-alpine3.23`
+# `drupal:10.5.8-php8.4-fpm-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:146bd20afa2ec398a9896e5a872c3e6a1a28fb225b260426909ef6f8420459c6`
-- Created: `2025-12-04T22:49:49.195589573Z`
-- Virtual Size: ~ 188.82 Mb  
+- Image ID: `sha256:a344c939d9521bcfdfc954247819a9bbfcacf3a629686dad7fde393a4ed7c62b`
+- Created: `2025-12-10T00:07:50.930256484Z`
+- Virtual Size: ~ 188.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.15.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.15.tar.xz.asc`
   - `PHP_SHA256=a060684f614b8344f9b34c334b6ba8db1177555997edb5b1aceab0a4b807da7e`
-  - `DRUPAL_VERSION=10.5.7`
+  - `DRUPAL_VERSION=10.5.8`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -437,16 +437,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.51-r1 description:
+libpng-1.6.53-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.51-r1 webpage:
+libpng-1.6.53-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.51-r1 installed size:
+libpng-1.6.53-r0 installed size:
 181 KiB
 
-libpng-1.6.51-r1 license:
+libpng-1.6.53-r0 license:
 Libpng
 
 ```

@@ -1,10 +1,10 @@
-# `drupal:11.2.9-php8.4-fpm-trixie`
+# `drupal:11.2.10-php8.4-fpm-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c013918e38dd12ce3221ceb590a41001250fc3379e0b3a545e0380cde471919`
-- Created: `2025-12-04T22:44:12.15144063Z`
-- Virtual Size: ~ 595.17 Mb  
+- Image ID: `sha256:608c16f61053b72dc22283f70925c3a1489ec49ae3c5aa495e186434fa1a64db`
+- Created: `2025-12-10T19:32:08.123776349Z`
+- Virtual Size: ~ 595.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.15.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.15.tar.xz.asc`
   - `PHP_SHA256=a060684f614b8344f9b34c334b6ba8db1177555997edb5b1aceab0a4b807da7e`
-  - `DRUPAL_VERSION=11.2.9`
+  - `DRUPAL_VERSION=11.2.10`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1649,11 +1649,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libonig/6.9.9-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libonig/6.9.9-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.48-1`
+### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u1`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.48-1`
+- `libpng16-16t64:amd64=1.6.48-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -1669,17 +1669,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.48-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1.dsc' libpng1.6_1.6.48-1.dsc 2254 SHA256:dd8742533bd0201d64c94e019460ddf28141f369fc78f52c19028d58530f87f0
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1.debian.tar.xz' libpng1.6_1.6.48-1.debian.tar.xz 33240 SHA256:647c6b09cdb628200e2213b75f6ab3fe0a4fe18f21fe78c6821ecb15e154e7d2
+$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u1.dsc' libpng1.6_1.6.48-1+deb13u1.dsc 2286 SHA256:0f0a79157e67ab9b2df6ca77192b5255277ae5d07a929d9a0ee8cba1ceedb21f
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u1.debian.tar.xz' libpng1.6_1.6.48-1+deb13u1.debian.tar.xz 39324 SHA256:416084e356fed53da55e399ec8ea720050db9013a7c28f68454f27a53cf42563
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.48-1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.48-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.48-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
