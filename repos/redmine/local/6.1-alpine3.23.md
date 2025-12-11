@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb2ec5d232f3c248df59937040f1c639f98122cd50648a94b4d54ef1d7d355b8`
-- Created: `2025-12-05T00:40:15.450076458Z`
-- Virtual Size: ~ 429.16 Mb  
+- Image ID: `sha256:d9e1a41b896e2bc5f3677dd92184a6feed673907d5d4dd1e8f9092a24b35a8ed`
+- Created: `2025-12-09T20:04:03.244567544Z`
+- Virtual Size: ~ 429.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -541,16 +541,16 @@ GPL-2.0-only
 ### `apk` package: `glib`
 
 ```console
-glib-2.86.2-r1 description:
+glib-2.86.3-r0 description:
 Low-level core library that forms the basis for projects such as GTK and GNOME
 
-glib-2.86.2-r1 webpage:
+glib-2.86.3-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.86.2-r1 installed size:
+glib-2.86.3-r0 installed size:
 5254 KiB
 
-glib-2.86.2-r1 license:
+glib-2.86.3-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1136,16 +1136,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.51-r1 description:
+libpng-1.6.53-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.51-r1 webpage:
+libpng-1.6.53-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.51-r1 installed size:
+libpng-1.6.53-r0 installed size:
 181 KiB
 
-libpng-1.6.51-r1 license:
+libpng-1.6.53-r0 license:
 Libpng
 
 ```
