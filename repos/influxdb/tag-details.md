@@ -32,6 +32,10 @@
 -	[`influxdb:2.7-alpine`](#influxdb27-alpine)
 -	[`influxdb:2.7.12`](#influxdb2712)
 -	[`influxdb:2.7.12-alpine`](#influxdb2712-alpine)
+-	[`influxdb:2.8`](#influxdb28)
+-	[`influxdb:2.8-alpine`](#influxdb28-alpine)
+-	[`influxdb:2.8.0`](#influxdb280)
+-	[`influxdb:2.8.0-alpine`](#influxdb280-alpine)
 -	[`influxdb:3-core`](#influxdb3-core)
 -	[`influxdb:3-enterprise`](#influxdb3-enterprise)
 -	[`influxdb:3.7-core`](#influxdb37-core)
@@ -4888,6 +4892,42 @@ $ docker pull influxdb@sha256:c0855268e95dc31f5a9cac070c75e0c671fb7a46b90288fefc
 		Last Modified: Mon, 08 Dec 2025 00:50:44 GMT  
 		Size: 31.0 KB (30963 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `influxdb:2.8`
+
+```console
+$ docker pull influxdb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `influxdb:2.8-alpine`
+
+```console
+$ docker pull influxdb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `influxdb:2.8.0`
+
+```console
+$ docker pull influxdb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `influxdb:2.8.0-alpine`
+
+```console
+$ docker pull influxdb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `influxdb:3-core`
 
