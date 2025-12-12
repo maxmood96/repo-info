@@ -2292,14 +2292,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 - `Expat`
 - `PSF-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-urllib3=1.26.5-1~exp1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.3.dsc' python-urllib3_1.26.5-1~exp1ubuntu0.3.dsc 2378 SHA512:f5dfddf2c1d7b1c48b4abcfc0660ad2bf7c799f02327f2c622e69aea70f6cb837f1eef39ccb2b4eb6380fdeb7ad22274afe1832dab9c7b18830f8cb97fc2c7ff
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5.orig.tar.gz' python-urllib3_1.26.5.orig.tar.gz 292865 SHA512:4a1899b223b00894d49f6dff5fc95d410e5b0ab28c11f7e3cd82d03e50438b0c5b0adf693a33fd80f1586312dc0012836713998674da15531bf82d52645881f6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.3.debian.tar.xz' python-urllib3_1.26.5-1~exp1ubuntu0.3.debian.tar.xz 17176 SHA512:e80cff99eb97af40594ce8f5c6333d0bb0617c463d02ecaac2d191463f196c23c6de3e81c1028741f1d2e73db6fb09fd6a7faee947575c6d8bba89b0bcb08b28
-```
 
 ### `dpkg` source package: `python3-defaults=3.10.6-1~22.04.1`
 
