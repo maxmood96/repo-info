@@ -1868,21 +1868,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-0+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2025b-0%2bdeb11u1.dsc' tzdata_2025b-0+deb11u1.dsc 2269 SHA256:5121967edc9e3805e104ddf325afcad8b8fac643677a5253f3443a341123f7a0
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2025b-0%2bdeb11u1.debian.tar.xz' tzdata_2025b-0+deb11u1.debian.tar.xz 108596 SHA256:42bfe4e25a15fd0ea6b3eda7e40ad52930ee1d93d923dba42891c6ea85184fab
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2025b-0+deb11u1/
 
-- https://sources.debian.net/src/tzdata/2025b-0+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2025b-0+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2025b-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unixodbc=2.3.6-0.1`
 
