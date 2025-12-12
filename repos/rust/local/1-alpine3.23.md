@@ -1,10 +1,10 @@
-# `rust:1-alpine3.21`
+# `rust:1-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c6d88450a73c1448619cbdf2c156dbd4ad15bb214758a54b1a7295363bbae4e9`
-- Created: `2025-12-03T23:24:00.055788353Z`
-- Virtual Size: ~ 1.00 Gb  
+- Image ID: `sha256:5076ac0882cba426ebd8fce7f87577ecce40d37ab855fab3df6ed3360d79bf4f`
+- Created: `2025-12-11T19:29:50.899721816Z`
+- Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.91.1`
+  - `RUST_VERSION=1.92.0`
 - Labels:
   - `org.opencontainers.image.source=https://github.com/rust-lang/docker-rust`
 
@@ -21,16 +21,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.6.8-r1 description:
+alpine-baselayout-3.7.1-r8 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.6.8-r1 webpage:
+alpine-baselayout-3.7.1-r8 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.6.8-r1 installed size:
-6532 B
+alpine-baselayout-3.7.1-r8 installed size:
+6552 B
 
-alpine-baselayout-3.6.8-r1 license:
+alpine-baselayout-3.7.1-r8 license:
 GPL-2.0-only
 
 ```
@@ -38,16 +38,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.6.8-r1 description:
+alpine-baselayout-data-3.7.1-r8 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.6.8-r1 webpage:
+alpine-baselayout-data-3.7.1-r8 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.6.8-r1 installed size:
+alpine-baselayout-data-3.7.1-r8 installed size:
 18 KiB
 
-alpine-baselayout-data-3.6.8-r1 license:
+alpine-baselayout-data-3.7.1-r8 license:
 GPL-2.0-only
 
 ```
@@ -55,16 +55,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-keys`
 
 ```console
-alpine-keys-2.5-r0 description:
+alpine-keys-2.6-r0 description:
 Public keys for Alpine Linux packages
 
-alpine-keys-2.5-r0 webpage:
+alpine-keys-2.6-r0 webpage:
 https://alpinelinux.org
 
-alpine-keys-2.5-r0 installed size:
-13 KiB
+alpine-keys-2.6-r0 installed size:
+12 KiB
 
-alpine-keys-2.5-r0 license:
+alpine-keys-2.6-r0 license:
 MIT
 
 ```
@@ -72,16 +72,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.5-r0 description:
+alpine-release-3.23.0-r0 description:
 Alpine release data
 
-alpine-release-3.21.5-r0 webpage:
+alpine-release-3.23.0-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.5-r0 installed size:
-346 B
+alpine-release-3.23.0-r0 installed size:
+343 B
 
-alpine-release-3.21.5-r0 license:
+alpine-release-3.23.0-r0 license:
 MIT
 
 ```
@@ -89,16 +89,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.6-r3 description:
+apk-tools-3.0.1-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.6-r3 webpage:
+apk-tools-3.0.1-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.6-r3 installed size:
-247 KiB
+apk-tools-3.0.1-r1 installed size:
+112 KiB
 
-apk-tools-2.14.6-r3 license:
+apk-tools-3.0.1-r1 license:
 GPL-2.0-only
 
 ```
@@ -106,16 +106,16 @@ GPL-2.0-only
 ### `apk` package: `binutils`
 
 ```console
-binutils-2.43.1-r3 description:
+binutils-2.45.1-r0 description:
 Tools necessary to build programs
 
-binutils-2.43.1-r3 webpage:
+binutils-2.45.1-r0 webpage:
 https://www.gnu.org/software/binutils/
 
-binutils-2.43.1-r3 installed size:
-9 MiB
+binutils-2.45.1-r0 installed size:
+10 MiB
 
-binutils-2.43.1-r3 license:
+binutils-2.45.1-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
 ```
@@ -123,16 +123,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r13 description:
+busybox-1.37.0-r29 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r13 webpage:
+busybox-1.37.0-r29 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r13 installed size:
-798 KiB
+busybox-1.37.0-r29 installed size:
+794 KiB
 
-busybox-1.37.0-r13 license:
+busybox-1.37.0-r29 license:
 GPL-2.0-only
 
 ```
@@ -140,16 +140,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r13 description:
+busybox-binsh-1.37.0-r29 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r13 webpage:
+busybox-binsh-1.37.0-r29 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r13 installed size:
+busybox-binsh-1.37.0-r29 installed size:
 1 B
 
-busybox-binsh-1.37.0-r13 license:
+busybox-binsh-1.37.0-r29 license:
 GPL-2.0-only
 
 ```
@@ -157,16 +157,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20250911-r0 description:
+ca-certificates-20251003-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20250911-r0 webpage:
+ca-certificates-20251003-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20250911-r0 installed size:
-248 KiB
+ca-certificates-20251003-r0 installed size:
+250 KiB
 
-ca-certificates-20250911-r0 license:
+ca-certificates-20251003-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -174,16 +174,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20250911-r0 description:
+ca-certificates-bundle-20251003-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20250911-r0 webpage:
+ca-certificates-bundle-20251003-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20250911-r0 installed size:
-214 KiB
+ca-certificates-bundle-20251003-r0 installed size:
+216 KiB
 
-ca-certificates-bundle-20250911-r0 license:
+ca-certificates-bundle-20251003-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -191,16 +191,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `gcc`
 
 ```console
-gcc-14.2.0-r4 description:
+gcc-15.2.0-r2 description:
 The GNU Compiler Collection
 
-gcc-14.2.0-r4 webpage:
+gcc-15.2.0-r2 webpage:
 https://gcc.gnu.org
 
-gcc-14.2.0-r4 installed size:
-137 MiB
+gcc-15.2.0-r2 installed size:
+163 MiB
 
-gcc-14.2.0-r4 license:
+gcc-15.2.0-r2 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -208,16 +208,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `gmp`
 
 ```console
-gmp-6.3.0-r2 description:
+gmp-6.3.0-r4 description:
 free library for arbitrary precision arithmetic
 
-gmp-6.3.0-r2 webpage:
+gmp-6.3.0-r4 webpage:
 https://gmplib.org/
 
-gmp-6.3.0-r2 installed size:
-417 KiB
+gmp-6.3.0-r4 installed size:
+413 KiB
 
-gmp-6.3.0-r2 license:
+gmp-6.3.0-r4 license:
 LGPL-3.0-or-later OR GPL-2.0-or-later
 
 ```
@@ -232,7 +232,7 @@ isl26-0.26-r1 webpage:
 http://isl.gforge.inria.fr/
 
 isl26-0.26-r1 installed size:
-2130 KiB
+2174 KiB
 
 isl26-0.26-r1 license:
 MIT
@@ -242,33 +242,50 @@ MIT
 ### `apk` package: `jansson`
 
 ```console
-jansson-2.14-r4 description:
+jansson-2.14.1-r0 description:
 lightweight JSON library
 
-jansson-2.14-r4 webpage:
+jansson-2.14.1-r0 webpage:
 http://www.digip.org/jansson/
 
-jansson-2.14-r4 installed size:
-49 KiB
+jansson-2.14.1-r0 installed size:
+85 KiB
 
-jansson-2.14-r4 license:
+jansson-2.14.1-r0 license:
 MIT
+
+```
+
+### `apk` package: `libapk`
+
+```console
+libapk-3.0.1-r1 description:
+Alpine Package Keeper - package manager for alpine
+
+libapk-3.0.1-r1 webpage:
+https://gitlab.alpinelinux.org/alpine/apk-tools
+
+libapk-3.0.1-r1 installed size:
+270 KiB
+
+libapk-3.0.1-r1 license:
+GPL-2.0-only
 
 ```
 
 ### `apk` package: `libatomic`
 
 ```console
-libatomic-14.2.0-r4 description:
+libatomic-15.2.0-r2 description:
 GCC Atomic library
 
-libatomic-14.2.0-r4 webpage:
+libatomic-15.2.0-r2 webpage:
 https://gcc.gnu.org
 
-libatomic-14.2.0-r4 installed size:
-25 KiB
+libatomic-15.2.0-r2 installed size:
+29 KiB
 
-libatomic-14.2.0-r4 license:
+libatomic-15.2.0-r2 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -276,16 +293,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.5-r0 description:
+libcrypto3-3.5.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.5-r0 webpage:
+libcrypto3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.5-r0 installed size:
-4607 KiB
+libcrypto3-3.5.4-r0 installed size:
+5083 KiB
 
-libcrypto3-3.3.5-r0 license:
+libcrypto3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -293,16 +310,16 @@ Apache-2.0
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-14.2.0-r4 description:
+libgcc-15.2.0-r2 description:
 GNU C compiler runtime libraries
 
-libgcc-14.2.0-r4 webpage:
+libgcc-15.2.0-r2 webpage:
 https://gcc.gnu.org
 
-libgcc-14.2.0-r4 installed size:
+libgcc-15.2.0-r2 installed size:
 169 KiB
 
-libgcc-14.2.0-r4 license:
+libgcc-15.2.0-r2 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -310,16 +327,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libgomp`
 
 ```console
-libgomp-14.2.0-r4 description:
+libgomp-15.2.0-r2 description:
 GCC shared-memory parallel programming API library
 
-libgomp-14.2.0-r4 webpage:
+libgomp-15.2.0-r2 webpage:
 https://gcc.gnu.org
 
-libgomp-14.2.0-r4 installed size:
-322 KiB
+libgomp-15.2.0-r2 installed size:
+330 KiB
 
-libgomp-14.2.0-r4 license:
+libgomp-15.2.0-r2 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -327,16 +344,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.5-r0 description:
+libssl3-3.5.4-r0 description:
 SSL shared libraries
 
-libssl3-3.3.5-r0 webpage:
+libssl3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.5-r0 installed size:
-779 KiB
+libssl3-3.5.4-r0 installed size:
+819 KiB
 
-libssl3-3.3.5-r0 license:
+libssl3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -344,16 +361,16 @@ Apache-2.0
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-14.2.0-r4 description:
+libstdc++-15.2.0-r2 description:
 GNU C++ standard runtime library
 
-libstdc++-14.2.0-r4 webpage:
+libstdc++-15.2.0-r2 webpage:
 https://gcc.gnu.org
 
-libstdc++-14.2.0-r4 installed size:
-2706 KiB
+libstdc++-15.2.0-r2 installed size:
+2738 KiB
 
-libstdc++-14.2.0-r4 license:
+libstdc++-15.2.0-r2 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -378,16 +395,16 @@ LGPL-3.0-or-later
 ### `apk` package: `mpfr4`
 
 ```console
-mpfr4-4.2.1-r0 description:
+mpfr4-4.2.2-r0 description:
 multiple-precision floating-point library
 
-mpfr4-4.2.1-r0 webpage:
+mpfr4-4.2.2-r0 webpage:
 https://www.mpfr.org/
 
-mpfr4-4.2.1-r0 installed size:
-665 KiB
+mpfr4-4.2.2-r0 installed size:
+661 KiB
 
-mpfr4-4.2.1-r0 license:
+mpfr4-4.2.2-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -395,16 +412,16 @@ LGPL-3.0-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r9 description:
+musl-1.2.5-r21 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r9 webpage:
+musl-1.2.5-r21 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r9 installed size:
-646 KiB
+musl-1.2.5-r21 installed size:
+650 KiB
 
-musl-1.2.5-r9 license:
+musl-1.2.5-r21 license:
 MIT
 
 ```
@@ -412,16 +429,16 @@ MIT
 ### `apk` package: `musl-dev`
 
 ```console
-musl-dev-1.2.5-r9 description:
+musl-dev-1.2.5-r21 description:
 the musl c library (libc) implementation (development files)
 
-musl-dev-1.2.5-r9 webpage:
+musl-dev-1.2.5-r21 webpage:
 https://musl.libc.org/
 
-musl-dev-1.2.5-r9 installed size:
-9681 KiB
+musl-dev-1.2.5-r21 installed size:
+9645 KiB
 
-musl-dev-1.2.5-r9 license:
+musl-dev-1.2.5-r21 license:
 MIT
 
 ```
@@ -429,16 +446,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r9 description:
+musl-utils-1.2.5-r21 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r9 webpage:
+musl-utils-1.2.5-r21 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r9 installed size:
-102 KiB
+musl-utils-1.2.5-r21 installed size:
+54 KiB
 
-musl-utils-1.2.5-r9 license:
+musl-utils-1.2.5-r21 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -446,16 +463,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.3.8-r1 description:
+scanelf-1.3.8-r2 description:
 Scan ELF binaries for stuff
 
-scanelf-1.3.8-r1 webpage:
+scanelf-1.3.8-r2 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.3.8-r1 installed size:
+scanelf-1.3.8-r2 installed size:
 65 KiB
 
-scanelf-1.3.8-r1 license:
+scanelf-1.3.8-r2 license:
 GPL-2.0-only
 
 ```
@@ -463,16 +480,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r13 description:
+ssl_client-1.37.0-r29 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r13 webpage:
+ssl_client-1.37.0-r29 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r13 installed size:
+ssl_client-1.37.0-r29 installed size:
 14 KiB
 
-ssl_client-1.37.0-r13 license:
+ssl_client-1.37.0-r29 license:
 GPL-2.0-only
 
 ```
@@ -497,16 +514,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.6-r2 description:
+zstd-libs-1.5.7-r2 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.6-r2 webpage:
+zstd-libs-1.5.7-r2 webpage:
 https://facebook.github.io/zstd/
 
-zstd-libs-1.5.6-r2 installed size:
-697 KiB
+zstd-libs-1.5.7-r2 installed size:
+693 KiB
 
-zstd-libs-1.5.6-r2 license:
+zstd-libs-1.5.7-r2 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```
