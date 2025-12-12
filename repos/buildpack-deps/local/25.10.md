@@ -373,14 +373,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.45-7ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45-7ubuntu1.1.dsc' binutils_2.45-7ubuntu1.1.dsc 9038 SHA512:8bb8492062941956afdfdb43b2086e950f0e583cccdab13e7d236d6799e66077f9ee11c44f562197ff4467d2573218df2b7c591dfd01042dc33f5160e8a4ac31
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45.orig.tar.xz' binutils_2.45.orig.tar.xz 27868232 SHA512:c7b10a7466d9fd398d7a0b3f2a43318432668d714f2ec70069a31bdc93c86d28e0fe83792195727167743707fbae45337c0873a0786416db53bbf22860c16ce7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45-7ubuntu1.1.debian.tar.xz' binutils_2.45-7ubuntu1.1.debian.tar.xz 151236 SHA512:3ef384b7d98a535cb82dcc1a51af4e29abf5023eb4bc55d10a262ec31c5495dbfed1c86dcc2fca1d1afe4f80e1fceff1e84645632ba7b48db5248967d6e2dee7
-```
 
 ### `dpkg` source package: `brotli=1.1.0-2build5`
 
@@ -3099,14 +3094,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.17.0-7.7
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0-7.7.dsc' linux_6.17.0-7.7.dsc 8706 SHA512:c5e8c5caa33838a7c83d8e69d48631c4f53f7c384a99a12a55988e6954753e1439244c74f54a4302a98e84b6c2987d01d4d694a13db1d584ef3371bfc53da8fe
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0.orig.tar.gz' linux_6.17.0.orig.tar.gz 248671329 SHA512:dc17e8dad07913ff20078194c0d9036e116db2fe1639cbddfccfaeda218cff06d0c7649f8182a07a999cf705a7b9749d26c8abe988f6b0b3c46b3142448f005f
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0-7.7.diff.gz' linux_6.17.0-7.7.diff.gz 1403615 SHA512:4da4fdba7cab2fc17de04cc8f224667b56ef247254d84a5b9601b751c7410b4614e4a0cfd0cdc2f30fa0e9c047d18ba68a96f9179587448c126e94dd54869124
-```
 
 ### `dpkg` source package: `lto-disabled-list=69`
 

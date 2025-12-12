@@ -1686,21 +1686,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-dane0t64/copyright`, `/usr/sha
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.10-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.10-3.dsc' gnutls28_3.8.10-3.dsc 3249 SHA256:0b1e68de938c7562556f7474f4c184ef335328b7f6d329cfe956fe0d3517057d
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.10.orig.tar.xz' gnutls28_3.8.10.orig.tar.xz 6909856 SHA256:db7fab7cce791e7727ebbef2334301c821d79a550ec55c9ef096b610b03eb6b7
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.10.orig.tar.xz.asc' gnutls28_3.8.10.orig.tar.xz.asc 833 SHA256:3d553a902201531938c761f86a093d673b292157c7e742d19cc6c9ccc9eebf6b
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.10-3.debian.tar.xz' gnutls28_3.8.10-3.debian.tar.xz 172712 SHA256:f25ff6ca9b3f3c23f56eeff165acb98ff22ba1a8ecb54b68fb09f9cb91cdeacd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.10-3/
 
-- https://sources.debian.net/src/gnutls28/3.8.10-3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.10-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.10-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-11`
 
@@ -3927,21 +3919,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:11.8.5-1
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5-1.dsc' mariadb_11.8.5-1.dsc 5659 SHA256:5bba63a47d137853bbc77df23345aecdfe1a8db7c2f6f3b57f643150737e14fc
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5.orig.tar.gz' mariadb_11.8.5.orig.tar.gz 119948843 SHA256:bcb7394569c08877c283e1649869504531bee8caafa30288f078e30d99fcb9f6
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5.orig.tar.gz.asc' mariadb_11.8.5.orig.tar.gz.asc 833 SHA256:2e7d4c763e0b5580f6788d57005aaeb3d0742ab6d7e4b89fbc0c9f5d3ea96f21
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5-1.debian.tar.xz' mariadb_11.8.5-1.debian.tar.xz 291336 SHA256:69b5c328c88fbd9eac76a40afd58470ce22c18c2fc39dc0e4ffc12262ac1914d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:11.8.5-1/
 
-- https://sources.debian.net/src/mariadb/1:11.8.5-1/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:11.8.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:11.8.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20250131-1`
 
@@ -4971,21 +4955,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.9-1
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.9-1.dsc' python3.13_3.13.9-1.dsc 3689 SHA256:fc2ea4ac59c7c380bdf9b43805fc0f959d0261ac29c7ff1f7ac4a29adee470e6
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.9.orig.tar.xz' python3.13_3.13.9.orig.tar.xz 22681368 SHA256:ed5ef34cda36cfa2f3a340f07cac7e7814f91c7f3c411f6d3562323a866c5c66
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.9.orig.tar.xz.asc' python3.13_3.13.9.orig.tar.xz.asc 963 SHA256:d86001c1eba764f45ff1982b49fa3defaeef6fb7a54930fc98e0270d1a8b6e08
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.9-1.debian.tar.xz' python3.13_3.13.9-1.debian.tar.xz 261592 SHA256:dbbc10e9f0e50f30136bbb17197bd3182e3c8f5982d83dde908de701b4bbbbe2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.13/3.13.9-1/
 
-- https://sources.debian.net/src/python3.13/3.13.9-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.13/3.13.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.13/3.13.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.3-3`
 
@@ -5123,20 +5099,13 @@ Licenses: (parsed from: `/usr/share/doc/sqv/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sqv=1.3.0-3
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-3.dsc' rust-sequoia-sqv_1.3.0-3.dsc 2704 SHA256:98ad852ed30d42d3b0d6ce40d2f56a96fb443cc6fa2caeaa12516fe5bbe544af
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0.orig.tar.gz' rust-sequoia-sqv_1.3.0.orig.tar.gz 140759 SHA256:8924571d26720b245292ad3c450e4061fcb24890461874790549747bffa35e60
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-3.debian.tar.xz' rust-sequoia-sqv_1.3.0-3.debian.tar.xz 3876 SHA256:be04e0365bc1206617a3e55d507bfce2e972819fb737e23a1112a717cc89b9bc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sqv/1.3.0-3/
 
-- https://sources.debian.net/src/rust-sequoia-sqv/1.3.0-3/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sqv/1.3.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sqv/1.3.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-2`
 

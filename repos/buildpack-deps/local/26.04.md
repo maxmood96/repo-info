@@ -294,13 +294,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu4.dsc' base-files_14ubuntu4.dsc 1727 SHA512:2cc9f9886eee185dd4041825b5d60babb83f5792b67631f6591d3971e3cc9ed83a6d52ec6c9b8907bf3ee9e2b4fb1a6a8dbe99ae955d74d49406c8cff33914bd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu4.tar.xz' base-files_14ubuntu4.tar.xz 96880 SHA512:19a0b42cd1acdd580151aaeddf635bffed436a8eccfff06a3b0ebf213601710ae489ad11e2a908e3865e8a1453646ab955f3b7cbd200829e69c0b70ed9559e36
-```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -1085,14 +1081,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-15/copyright`, `/usr/share/doc/cpp-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.2.0-9ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-9ubuntu1.dsc' gcc-15_15.2.0-9ubuntu1.dsc 52632 SHA512:77da374fdc5ced472fdc041e4d4d15888476493d68dd529a72ea1dc8ced2c3770160247de9ef1424afdab805e993b970377cc9c071ae40d85610f75114b20c4f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0.orig.tar.gz' gcc-15_15.2.0.orig.tar.gz 105962230 SHA512:83887af5c7798105d1ad85f0e9c794daa3cf030638bf40b3bff48771b8325d95c9a0d99d7d2c86c8e45499ff87f975e1914d00b72482862357645cc7ec330d38
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-9ubuntu1.debian.tar.xz' gcc-15_15.2.0-9ubuntu1.debian.tar.xz 2782992 SHA512:5f0120b361f371d04cbb0a9bd33c85e94d6ca8cf3aa1ece27dbc89770835c7e3630c46f7c180fcbd79aea901401b3813ce8fdc880432d891c4dc16e038803863
-```
 
 ### `dpkg` source package: `gcc-defaults=1.229ubuntu1`
 
@@ -1502,14 +1493,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=12.1.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_12.1.0-1.dsc' harfbuzz_12.1.0-1.dsc 2606 SHA512:d94042b85e43e18597d3df814e09ec69dfd1a6c9fcc93a761f3985dd01ca9740d7622b80d69b1469a721913d6a56fee3c09edae69ebd0b9fb102cbce7ce232cc
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_12.1.0.orig.tar.xz' harfbuzz_12.1.0.orig.tar.xz 18208424 SHA512:94cbc3fe8fad30f4f7871bdddc8b129c486ab55329f9b48c6336fdf15d05f09c3c96cac51f68a0218db113b4783c07ce5d6bb455ccc875b31fd2261e3e8dc559
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_12.1.0-1.debian.tar.xz' harfbuzz_12.1.0-1.debian.tar.xz 19680 SHA512:eacf3889ad343213e4bce21b92001bb8112fc88e78cabe9e9ead69fcc75977d55f41d00ff3efedeed84fc3cb48e4e22d59dbba4d78f30278ec3bc534b142d3a1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/harfbuzz/12.1.0-1/
+
 
 ### `dpkg` source package: `hicolor-icon-theme=0.18-2`
 
@@ -3204,15 +3194,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=7.0.1-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_7.0.1-2.dsc' mercurial_7.0.1-2.dsc 2881 SHA512:9c09f0df68a4eb043866ab2eb44cb33a79786fc104940bc251db2a2ab790b7e40457c2b5bebd9e2576c78e8d8bca40fa1e12da0c237d82c236f32b78fdcc70f8
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_7.0.1.orig.tar.gz' mercurial_7.0.1.orig.tar.gz 8981165 SHA512:42abab36e17c2edee2dc715a1af684540b21ab2fc7058335e5a166db90c36f9217dc15bf94daeaf45e7ac725f1fc849bf0ec54d06e9fa307a041f34d768a8fb3
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_7.0.1.orig.tar.gz.asc' mercurial_7.0.1.orig.tar.gz.asc 833 SHA512:74d47f413c4038cbfa4377f2177e26df0cc26795fd55fbc25a9b2e64005591b0e1646bd9778e6c6978004b0f9d37a828ecb9fab62f07bd581236826fa08d1dce
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_7.0.1-2.debian.tar.xz' mercurial_7.0.1-2.debian.tar.xz 55672 SHA512:cea247268a72c2f47ad9f14bebe2941f9be2450ebf4e4a23d4c769617bc4458bc95ddf3500b87751839b907f6adf007645f83c33edb23e00973484dc032c9700
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mercurial/7.0.1-2/
+
 
 ### `dpkg` source package: `mpclib3=1.3.1-2`
 
@@ -3273,15 +3261,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.4=8.4.7-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.7-0ubuntu2.dsc' mysql-8.4_8.4.7-0ubuntu2.dsc 3801 SHA512:2c61cb17114bf4ccdcc2e62179a21c45369b6b4871b142c9968927dc115baa7e03cc218b978a5f126987570bf0b533f6fa95940c3423bfd0205d4d66e7bf089f
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.7.orig.tar.gz' mysql-8.4_8.4.7.orig.tar.gz 478948308 SHA512:d9596395b176490d5e58be307c2f82f55c9acd3206c1ba29bdb8c96c67438bbe5594621f601161ccb77f56c8262d00255ab6fd8aa62db61c80a1721e3d4e45a2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.7.orig.tar.gz.asc' mysql-8.4_8.4.7.orig.tar.gz.asc 833 SHA512:51c22eef6e3611da0ce524784844339063ffabb378f0069e7abccee95a16cd8b9cc248b9eff1622adce6cb625322837b93f44fbd5668d18c79b0fd6875032798
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.7-0ubuntu2.debian.tar.xz' mysql-8.4_8.4.7-0ubuntu2.debian.tar.xz 135752 SHA512:d59d74cab353389d6cbbf6f52b8a8c2e7ca8b6bb1c8887e3fd3e3d73ffd53150fadf4722855c2783c11bf5b1bbb111a93bc85591c069d7b6b791f96adb6d5ceb
-```
 
 ### `dpkg` source package: `mysql-defaults=1.1.1ubuntu1`
 
@@ -3295,13 +3277,9 @@ Licenses: (parsed from: `/usr/share/doc/default-libmysqlclient-dev/copyright`, `
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-defaults=1.1.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-defaults/mysql-defaults_1.1.1ubuntu1.dsc' mysql-defaults_1.1.1ubuntu1.dsc 2346 SHA512:77e64232d994672d6faf8fede229f910b25255dc9a0b85272b6de36a64b3a295ed5649d7b2c0f7e1206da309c2f36176fa2a21c51ce4b57180901074fcf9024a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-defaults/mysql-defaults_1.1.1ubuntu1.tar.xz' mysql-defaults_1.1.1ubuntu1.tar.xz 7568 SHA512:8b0e5a51716845bcfa1f922f41ca83677c07587b0a14335e8251317406a14d53c126e9fefb6d5ac531bd27057533b869287b1d862ad95d277cfc57e0e131631c
-```
 
 ### `dpkg` source package: `ncurses=6.5+20250216-2build1`
 
@@ -3509,14 +3487,9 @@ Licenses: (parsed from: `/usr/share/doc/libldap-common/copyright`, `/usr/share/d
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.6.10+dfsg-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg-1ubuntu2.dsc' openldap_2.6.10+dfsg-1ubuntu2.dsc 3384 SHA512:085c9bc20ca2fef3bd3979420eba2553dfa61fda8fb636129b365febffaffd5a7c361fb6209be1c194b1c5105bd848aa14d917a69819d6fcf0ff2d722de02d4c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg.orig.tar.xz' openldap_2.6.10+dfsg.orig.tar.xz 3754560 SHA512:9c24cab12ea4002560670d1a6053c00582aea1713e3db262bbf5aae7666c6d50ef28e7b59ca4dbe5c5b5903e56268911a935a58ef852239c259830458e804f62
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg-1ubuntu2.debian.tar.xz' openldap_2.6.10+dfsg-1ubuntu2.debian.tar.xz 184436 SHA512:f21e268a12723adb55102d6cf0f1bee86b8c1f5b4aa8b8614a29a0980afed8fb5ea6aed65fc56d09be8ffeda70a97f5396dcd9090a9dc526e69a9608f21ee70c
-```
 
 ### `dpkg` source package: `openssh=1:10.0p1-5ubuntu5`
 
@@ -3852,14 +3825,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-18=18.1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-18/postgresql-18_18.1-1ubuntu1.dsc' postgresql-18_18.1-1ubuntu1.dsc 4471 SHA512:37eb33fa6a8bea578acea18d66d46660e0195ce0e3d588f0add13d7dbd2c15a321a20760d17c1eebde876a14aaa5f52c14ff8d6343fd3aed7b9b012004a95c4e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-18/postgresql-18_18.1.orig.tar.bz2' postgresql-18_18.1.orig.tar.bz2 22423920 SHA512:bac8a9bfb12c0c70b5870d92c6f322edbfd559e9ac939e841f16d8271b5c2bc4fb2628e053b407aed71b4032e9f4cba55f1e0a8dc6a3bd4933c2b701fe69ec08
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-18/postgresql-18_18.1-1ubuntu1.debian.tar.xz' postgresql-18_18.1-1ubuntu1.debian.tar.xz 24380 SHA512:ba5824ec2beb66ab03dd8574327ac3dda59c22f36c19877b070aaecd0638d38a172fe3fc804c4b8ccdb3fefb31d9e7548cc94f7e3a749f418412bb24d159fb26
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-8ubuntu3`
 
@@ -3957,15 +3925,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.9-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.9-1.dsc' python3.13_3.13.9-1.dsc 3689 SHA512:7c262d34a60f9626f017834486333a7077cee9216279ded79c06cc9fb247ecdad7cf6b60d7b518a86c4a4c4135e0d2f1124922fe8750fed4143d0e4be99d8f54
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.9.orig.tar.xz' python3.13_3.13.9.orig.tar.xz 22681368 SHA512:ffc9b6e545bf5cf8f3b945f85442eb4bd28cca9adb92d8c253f44078ec2e9758f802bf72c48e0d7e503c02b2dc754c58ee913cd3b7d8e8808fac2a0aa4e006a8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.9.orig.tar.xz.asc' python3.13_3.13.9.orig.tar.xz.asc 963 SHA512:c33fba3a6b22dccc08beb7f13bd61a25a30f609a54da7c8dfd3b3b4a3490a7b24c11f9617a835388f22709fb09375d35febc417cf104a18f5bec3b43ec999e82
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.9-1.debian.tar.xz' python3.13_3.13.9-1.debian.tar.xz 261592 SHA512:b4861ba91a22fb8868e16e64846e9aa5b2ceee55cb4c064e0ca6112cf13a76c9de8be800e6bce08913acbd7ce42e53a58b57e2e953122237b66e02fa220cc488
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.13/3.13.9-1/
+
 
 ### `dpkg` source package: `readline=8.3-3`
 
@@ -4307,14 +4273,9 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.14-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.14-4ubuntu1.dsc' sysvinit_3.14-4ubuntu1.dsc 2234 SHA512:be97da93ce36ad3b7711f196ea0ecb2ee3516a655c3dd6644a0bc1dcb8d39d77fe7de6b99e3e40c7c8f7759d6a01325b08d2077e18cb3155b8123c2e24ca2da4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.14.orig.tar.gz' sysvinit_3.14.orig.tar.gz 516357 SHA512:557b6ed9090e6594806b71c9fd054f32972fc6e7bffa4ef92a9dda42c5db08100f226b7b43c0433c1a1e9b16a3ebc483cb42d9aa29a5a3cfd5fc1c60984ef478
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.14-4ubuntu1.debian.tar.xz' sysvinit_3.14-4ubuntu1.debian.tar.xz 123480 SHA512:64c33968bbd52ef4841aff5132ba9310fcbfeacbacdf5f502aa1f04ea4fe37f211fde5848ffb6efebee230ca6d9bbc6e66dc0f89b824caec5e7b152f7576a36e
-```
 
 ### `dpkg` source package: `tar=1.35+dfsg-3.1build1`
 
