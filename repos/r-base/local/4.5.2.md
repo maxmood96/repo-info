@@ -903,14 +903,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-15/copyright`, `/usr/share/doc/cpp-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.2.0-10
-'http://http.debian.net/debian/pool/main/g/gcc-15/gcc-15_15.2.0-10.dsc' gcc-15_15.2.0-10.dsc 52415 SHA256:247368b9af6e5d26b55b7e0309b038ef385ed7aef1671668079c142913433cac
-'http://http.debian.net/debian/pool/main/g/gcc-15/gcc-15_15.2.0.orig.tar.gz' gcc-15_15.2.0.orig.tar.gz 100989491 SHA256:3121d3e2821fe21088deb77f11ee786d80969a1c55255386a43ecca1e06b47c0
-'http://http.debian.net/debian/pool/main/g/gcc-15/gcc-15_15.2.0-10.debian.tar.xz' gcc-15_15.2.0-10.debian.tar.xz 2815828 SHA256:f1e3f13de01956d00d3b97525d7599ee01ae26812efca3c501d8fc8a2676616a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gcc-15/15.2.0-10/
+
 
 ### `dpkg` source package: `gcc-defaults=1.229`
 
@@ -1109,21 +1108,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.10-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.10-3.dsc' gnutls28_3.8.10-3.dsc 3249 SHA256:0b1e68de938c7562556f7474f4c184ef335328b7f6d329cfe956fe0d3517057d
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.10.orig.tar.xz' gnutls28_3.8.10.orig.tar.xz 6909856 SHA256:db7fab7cce791e7727ebbef2334301c821d79a550ec55c9ef096b610b03eb6b7
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.10.orig.tar.xz.asc' gnutls28_3.8.10.orig.tar.xz.asc 833 SHA256:3d553a902201531938c761f86a093d673b292157c7e742d19cc6c9ccc9eebf6b
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.10-3.debian.tar.xz' gnutls28_3.8.10-3.debian.tar.xz 172712 SHA256:f25ff6ca9b3f3c23f56eeff165acb98ff22ba1a8ecb54b68fb09f9cb91cdeacd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.10-3/
 
-- https://sources.debian.net/src/gnutls28/3.8.10-3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.10-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.10-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-11`
 
@@ -1662,10 +1653,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libffi=3.5.2-2
-'http://http.debian.net/debian/pool/main/libf/libffi/libffi_3.5.2-2.dsc' libffi_3.5.2-2.dsc 1954 SHA256:4a00f5d4c5f93f06d0356619c7a3c9cb954ae270b4ce19e30db455f5c982fc85
-'http://http.debian.net/debian/pool/main/libf/libffi/libffi_3.5.2.orig.tar.gz' libffi_3.5.2.orig.tar.gz 598870 SHA256:dd19253d3007f366319a51d248a40c9e5fcace4498cbea990b566291844e4e30
-'http://http.debian.net/debian/pool/main/libf/libffi/libffi_3.5.2-2.debian.tar.xz' libffi_3.5.2-2.debian.tar.xz 10916 SHA256:7114e5fd8022f1da0e8eb0910d0e9cdbb6f82553a492fd85701055efff0d7c98
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2-2.dsc' libffi_3.5.2-2.dsc 1954 SHA256:4a00f5d4c5f93f06d0356619c7a3c9cb954ae270b4ce19e30db455f5c982fc85
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2.orig.tar.gz' libffi_3.5.2.orig.tar.gz 598870 SHA256:dd19253d3007f366319a51d248a40c9e5fcace4498cbea990b566291844e4e30
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2-2.debian.tar.xz' libffi_3.5.2-2.debian.tar.xz 10916 SHA256:7114e5fd8022f1da0e8eb0910d0e9cdbb6f82553a492fd85701055efff0d7c98
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libffi/3.5.2-2/ (for browsing the source)
+- https://sources.debian.net/src/libffi/3.5.2-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libffi/3.5.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -3311,14 +3308,13 @@ Licenses: (parsed from: `/usr/share/doc/sqv/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sqv=1.3.0-3
-'http://http.debian.net/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-3.dsc' rust-sequoia-sqv_1.3.0-3.dsc 2704 SHA256:98ad852ed30d42d3b0d6ce40d2f56a96fb443cc6fa2caeaa12516fe5bbe544af
-'http://http.debian.net/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0.orig.tar.gz' rust-sequoia-sqv_1.3.0.orig.tar.gz 140759 SHA256:8924571d26720b245292ad3c450e4061fcb24890461874790549747bffa35e60
-'http://http.debian.net/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-3.debian.tar.xz' rust-sequoia-sqv_1.3.0-3.debian.tar.xz 3876 SHA256:be04e0365bc1206617a3e55d507bfce2e972819fb737e23a1112a717cc89b9bc
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/rust-sequoia-sqv/1.3.0-3/
+
 
 ### `dpkg` source package: `sed=4.9-2`
 
@@ -3430,14 +3426,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=259~rc2-1
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_259%7erc2-1.dsc' systemd_259~rc2-1.dsc 8718 SHA256:e5485977bd345e1a40746912c9875bfb2e600f060b2e8abae8538b73564d2fd6
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_259%7erc2.orig.tar.gz' systemd_259~rc2.orig.tar.gz 17219778 SHA256:639f1f6453bce3412feb8c4471355c3839765e254afe2638f885fd7de99a37f0
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_259%7erc2-1.debian.tar.xz' systemd_259~rc2-1.debian.tar.xz 184708 SHA256:1f98ebc29761b58e6352bfaa1b25f4331d4455293f8f736bd067f162baa84120
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/systemd/259~rc2-1/
+
 
 ### `dpkg` source package: `sysvinit=3.15-6`
 
@@ -3585,11 +3580,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2025b-5
-'http://http.debian.net/debian/pool/main/t/tzdata/tzdata_2025b-5.dsc' tzdata_2025b-5.dsc 2434 SHA256:60d166fc03014c8d17c704e7bdd4d829d60ebeceb9492458d6f72b075a03f442
-'http://http.debian.net/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
-'http://http.debian.net/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
-'http://http.debian.net/debian/pool/main/t/tzdata/tzdata_2025b-5.debian.tar.xz' tzdata_2025b-5.debian.tar.xz 127568 SHA256:f388f56689ed6b2f78e1c1c21b3a08be97706ff44dc1e4c40aa2ea17ca3a6707
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-5.dsc' tzdata_2025b-5.dsc 2434 SHA256:60d166fc03014c8d17c704e7bdd4d829d60ebeceb9492458d6f72b075a03f442
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-5.debian.tar.xz' tzdata_2025b-5.debian.tar.xz 127568 SHA256:f388f56689ed6b2f78e1c1c21b3a08be97706ff44dc1e4c40aa2ea17ca3a6707
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tzdata/2025b-5/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2025b-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2025b-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0052`
 
