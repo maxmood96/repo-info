@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:74b199206486e57c8dedda7c16e44d79fab3e275554aa4e3d18214ae044382f5`
-- Created: `2025-12-03T20:23:15.735465116Z`
+- Image ID: `sha256:c31a850c957e1cec8387afa5894c4eba1a5426b808e8c229010cb4a2ca7ceb5e`
+- Created: `2025-12-11T22:11:52.733788096Z`
 - Virtual Size: ~ 441.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -213,15 +213,15 @@ $ dnf --quiet download --source --url cups-libs-1.6.3-51.amzn2.0.7
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ed87b3ff8ac5a93fc7c5cd86d09ff66187c396586c9669047a4ba311aedce47f/../../../../../blobstore/b856ec8e065cc975e4cdd3f168eb63e8acc13fc73af94ef825048d623b18426a/cups-1.6.3-51.amzn2.0.7.src.rpm
 ```
 
-### `rpm` package: `curl-8.3.0-1.amzn2.0.10.x86_64`
+### `rpm` package: `curl-8.3.0-1.amzn2.0.11.x86_64`
 
 Licenses (from `rpm --query`): curl
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-8.3.0-1.amzn2.0.10
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ed87b3ff8ac5a93fc7c5cd86d09ff66187c396586c9669047a4ba311aedce47f/../../../../../blobstore/4848f759e9b9fa80d3e68aa50e78469ecec2827649c46256babdac3a8d1cfe90/curl-8.3.0-1.amzn2.0.10.src.rpm
+$ dnf --quiet download --source --url curl-8.3.0-1.amzn2.0.11
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ed87b3ff8ac5a93fc7c5cd86d09ff66187c396586c9669047a4ba311aedce47f/../../../../../blobstore/fe446b5d7495e444a367174db045d8ef26f90fc1092eff44ac64c521bc6384f4/curl-8.3.0-1.amzn2.0.11.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-24.amzn2.0.1.x86_64`
@@ -510,15 +510,15 @@ $ dnf --quiet download --source --url giflib-4.1.6-9.amzn2.0.4
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ed87b3ff8ac5a93fc7c5cd86d09ff66187c396586c9669047a4ba311aedce47f/../../../../../blobstore/78121da9ac190c3723706f4b2199a890a5dd3a4c34930fd85d282d2490f9720a/giflib-4.1.6-9.amzn2.0.4.src.rpm
 ```
 
-### `rpm` package: `glib2-2.56.1-9.amzn2.0.11.x86_64`
+### `rpm` package: `glib2-2.56.1-9.amzn2.0.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.56.1-9.amzn2.0.11
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ed87b3ff8ac5a93fc7c5cd86d09ff66187c396586c9669047a4ba311aedce47f/../../../../../blobstore/bc7dad0770f89dd55692b6cb8986c263d0433d33013b71686ba7693f0b491178/glib2-2.56.1-9.amzn2.0.11.src.rpm
+$ dnf --quiet download --source --url glib2-2.56.1-9.amzn2.0.12
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ed87b3ff8ac5a93fc7c5cd86d09ff66187c396586c9669047a4ba311aedce47f/../../../../../blobstore/b8be8d7ed67b55fe203fb0589d7d24beaa0a586e70815a92baa98b4e6d23cb5d/glib2-2.56.1-9.amzn2.0.12.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.26-64.amzn2.0.5.i686`
@@ -1116,15 +1116,15 @@ $ dnf --quiet download --source --url libcrypt-2.26-64.amzn2.0.5
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ed87b3ff8ac5a93fc7c5cd86d09ff66187c396586c9669047a4ba311aedce47f/../../../../../blobstore/e90a9820e7394f50b5b7dd022630bcff3220d7062a174854270bd065b0479eae/glibc-2.26-64.amzn2.0.5.src.rpm
 ```
 
-### `rpm` package: `libcurl-8.3.0-1.amzn2.0.10.x86_64`
+### `rpm` package: `libcurl-8.3.0-1.amzn2.0.11.x86_64`
 
 Licenses (from `rpm --query`): curl
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-8.3.0-1.amzn2.0.10
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ed87b3ff8ac5a93fc7c5cd86d09ff66187c396586c9669047a4ba311aedce47f/../../../../../blobstore/4848f759e9b9fa80d3e68aa50e78469ecec2827649c46256babdac3a8d1cfe90/curl-8.3.0-1.amzn2.0.10.src.rpm
+$ dnf --quiet download --source --url libcurl-8.3.0-1.amzn2.0.11
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ed87b3ff8ac5a93fc7c5cd86d09ff66187c396586c9669047a4ba311aedce47f/../../../../../blobstore/fe446b5d7495e444a367174db045d8ef26f90fc1092eff44ac64c521bc6384f4/curl-8.3.0-1.amzn2.0.11.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.21-24.amzn2.0.5.x86_64`
