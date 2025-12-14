@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b5ad85cf026a916f0800136a7f3ebdb7ae01b6d09ee02ea2acd56e44f4074851`
-- Created: `2025-11-14T00:50:10.217462296Z`
-- Virtual Size: ~ 392.09 Mb  
+- Image ID: `sha256:de3f2548ecc7d7b2e66f7609023bc1bb9b7eb7c06c9fa28bb122b70b4e117679`
+- Created: `2025-12-11T22:37:09.903639843Z`
+- Virtual Size: ~ 392.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u472-b08`
-  - `CLOJURE_VERSION=1.12.3.1577`
+  - `CLOJURE_VERSION=1.12.4.1582`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -2247,14 +2247,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.11`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.12`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.11`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.11`
-- `python3.10=3.10.12-1~22.04.11`
-- `python3.10-minimal=3.10.12-1~22.04.11`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.12`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.12`
+- `python3.10=3.10.12-1~22.04.12`
+- `python3.10-minimal=3.10.12-1~22.04.12`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2276,9 +2276,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.12
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.12.dsc' python3.10_3.10.12-1~22.04.12.dsc 3678 SHA512:6a9698dbc690ff04b43b71a5ecf87c82f195924f3f55fb33d6a93f030305d44b3a396d9956211025acd3a8ec879b75ee6d8b509ac7d8251e2258ff98ade685c0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.12.debian.tar.xz' python3.10_3.10.12-1~22.04.12.debian.tar.xz 260200 SHA512:1e6a92c0435ec805f667e9697d4ddf771e1850fa3de8c4ffa44a84c67b5e610c210aea6834bfcc93124d032a6b073cc85dcbfcad70c8bc802f80140194927339
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 

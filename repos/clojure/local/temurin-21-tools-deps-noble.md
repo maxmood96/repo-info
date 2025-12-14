@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d4884a292cf365f0de99e9e49c564532363e9baf739669b1137a2f2de6ba0649`
-- Created: `2025-11-14T00:54:57.633087332Z`
-- Virtual Size: ~ 579.89 Mb  
+- Image ID: `sha256:405934cf9f9f59c283231da20e0bcf34192b1c6d43d890a0ad122c84e2c0b374`
+- Created: `2025-12-11T22:40:20.119693783Z`
+- Virtual Size: ~ 579.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.9+10`
-  - `CLOJURE_VERSION=1.12.3.1577`
+  - `CLOJURE_VERSION=1.12.4.1582`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
@@ -2319,14 +2319,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.1.tar.gz' python3-defaults_3.12.3-0ubuntu2.1.tar.gz 147765 SHA512:9a729a8df22e37d473d39b8c9c95b8c5a7ad8dfd244b3c87576d389f48543edeeaa0bd8b0557de3224d0dbd0f06e02b573cb18adf685a54c02bb485a21ec36e5
 ```
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.8`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.9`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.8`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.8`
-- `python3.12=3.12.3-1ubuntu0.8`
-- `python3.12-minimal=3.12.3-1ubuntu0.8`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.9`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.9`
+- `python3.12=3.12.3-1ubuntu0.9`
+- `python3.12-minimal=3.12.3-1ubuntu0.9`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -2348,9 +2348,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.9.dsc' python3.12_3.12.3-1ubuntu0.9.dsc 3875 SHA512:e905a92b05ea368d2193c6b0cbb810c494672be792b22a0529d4cacdc9915138eb78b8224223405e7f02e5bb9a1679c59622b97ee271e85dded8710e01e8e4f5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.9.debian.tar.xz' python3.12_3.12.3-1ubuntu0.9.debian.tar.xz 261844 SHA512:8b39c8f21474346c8b23c4823e39851c924de715c713587729d8dc921a0f094eb00510acbf4ab87e585dabd63fc0536c86f356192c200c575bba754b9b0025c7
+```
 
 ### `dpkg` source package: `readline=8.2-4build1`
 
