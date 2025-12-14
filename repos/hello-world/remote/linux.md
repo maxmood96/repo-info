@@ -408,7 +408,7 @@ CMD ["/hello"]
 
 -	Layers:
 	-	`sha256:722a8d69ffb26488e0012f5ceed02fc1d982249a24a1e527f0ae6ec081093e90`  
-		Last Modified: Fri, 15 Aug 2025 09:09:55 GMT  
+		Last Modified: Sat, 13 Dec 2025 23:25:33 GMT  
 		Size: 3.2 KB (3161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -428,7 +428,7 @@ $ docker pull hello-world@sha256:0d7af609160eb200f97cb1436a5e76900b0df1fb19a50d2
 
 -	Layers:
 	-	`sha256:15c9ff009144bf6c1c4dd2a6f536488bc1fd27981925a796fb7e5447cc20d89f`  
-		Last Modified: Fri, 15 Aug 2025 09:09:55 GMT  
+		Last Modified: Sat, 13 Dec 2025 23:25:33 GMT  
 		Size: 4.8 KB (4846 bytes)  
 		MIME: application/vnd.in-toto+json
 
