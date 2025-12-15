@@ -1,16 +1,16 @@
-# `docker:29.1.2-dind-rootless`
+# `docker:29.1.3-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2f7044c07accbc2c2fec49490a3d5822690d721f4af5e2ab2dc96ca8ff23017d`
-- Created: `2025-12-04T03:14:00.106153155Z`
-- Virtual Size: ~ 421.41 Mb  
+- Image ID: `sha256:e17a49738c68db9b440e165269dc75f5f3e74a89e9a75426199cd466b0383cd6`
+- Created: `2025-12-13T00:10:13.485617191Z`
+- Virtual Size: ~ 421.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.1.2`
+  - `DOCKER_VERSION=29.1.3`
   - `DOCKER_BUILDX_VERSION=0.30.1`
   - `DOCKER_COMPOSE_VERSION=5.0.0`
   - `DOCKER_TLS_CERTDIR=/certs`
@@ -395,16 +395,16 @@ GPL-2.0-only
 ### `apk` package: `glib`
 
 ```console
-glib-2.86.2-r1 description:
+glib-2.86.3-r0 description:
 Low-level core library that forms the basis for projects such as GTK and GNOME
 
-glib-2.86.2-r1 webpage:
+glib-2.86.3-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.86.2-r1 installed size:
+glib-2.86.3-r0 installed size:
 5254 KiB
 
-glib-2.86.2-r1 license:
+glib-2.86.3-r0 license:
 LGPL-2.1-or-later
 
 ```
