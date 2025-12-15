@@ -1,9 +1,9 @@
-# `swift:6.2.2-amazonlinux2`
+# `swift:6.2.3-amazonlinux2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0e8199e6b2c5d47daba322cc6b54895b7132f76f3c93a6770dbdce406dda27f9`
-- Created: `2025-12-09T17:39:48.765282224Z`
+- Image ID: `sha256:7cff2bd502e70e871f52a1e03e25f88d3d847a617e27ace7aea4c83175091470`
+- Created: `2025-12-12T22:44:16.040649656Z`
 - Virtual Size: ~ 4.33 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=amazonlinux2`
-  - `SWIFT_BRANCH=swift-6.2.2-release`
-  - `SWIFT_VERSION=swift-6.2.2-RELEASE`
+  - `SWIFT_BRANCH=swift-6.2.3-release`
+  - `SWIFT_VERSION=swift-6.2.3-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -439,15 +439,15 @@ $ dnf --quiet download --source --url git-core-doc-2.47.3-1.amzn2.0.1.noarch
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ed87b3ff8ac5a93fc7c5cd86d09ff66187c396586c9669047a4ba311aedce47f/../../../../../blobstore/65383cf6f6791a05485e8f304a68914d0a1b6dc2bed6e899ecfda7afe2ad3e36/git-2.47.3-1.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `glib2-2.56.1-9.amzn2.0.11.x86_64`
+### `rpm` package: `glib2-2.56.1-9.amzn2.0.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.56.1-9.amzn2.0.11
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ed87b3ff8ac5a93fc7c5cd86d09ff66187c396586c9669047a4ba311aedce47f/../../../../../blobstore/bc7dad0770f89dd55692b6cb8986c263d0433d33013b71686ba7693f0b491178/glib2-2.56.1-9.amzn2.0.11.src.rpm
+$ dnf --quiet download --source --url glib2-2.56.1-9.amzn2.0.12
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ed87b3ff8ac5a93fc7c5cd86d09ff66187c396586c9669047a4ba311aedce47f/../../../../../blobstore/b8be8d7ed67b55fe203fb0589d7d24beaa0a586e70815a92baa98b4e6d23cb5d/glib2-2.56.1-9.amzn2.0.12.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.26-64.amzn2.0.5.x86_64`

@@ -1,9 +1,9 @@
-# `swift:6.2.2-jammy`
+# `swift:6.2.3-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ce0a63689b6fa0ca70a89f434b228ce87e5e1e768b90d23b09fa0161e6fa03e2`
-- Created: `2025-12-09T17:39:16.881167205Z`
+- Image ID: `sha256:cadf68d64e66e58f87768f23554c636d565f42fd09f9a916171a0c78c82367eb`
+- Created: `2025-12-12T22:43:44.78505593Z`
 - Virtual Size: ~ 3.96 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu22.04`
-  - `SWIFT_BRANCH=swift-6.2.2-release`
-  - `SWIFT_VERSION=swift-6.2.2-RELEASE`
+  - `SWIFT_BRANCH=swift-6.2.3-release`
+  - `SWIFT_VERSION=swift-6.2.3-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -185,16 +185,16 @@ $ apt-get source -qq --print-uris bash=5.1-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.debian.tar.xz' bash_5.1-6ubuntu1.1.debian.tar.xz 99944 SHA512:d7fb6110df70232bd3280c1140a812a1903968792f6608481c184bd28760d03323ada75ed3ca4da4eb6c56a84781d6e2f441e0ee83dd9364a9e37fd0fa2211e9
 ```
 
-### `dpkg` source package: `binutils=2.38-4ubuntu2.11`
+### `dpkg` source package: `binutils=2.38-4ubuntu2.12`
 
 Binary Packages:
 
-- `binutils=2.38-4ubuntu2.11`
-- `binutils-common:amd64=2.38-4ubuntu2.11`
-- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.11`
-- `libbinutils:amd64=2.38-4ubuntu2.11`
-- `libctf-nobfd0:amd64=2.38-4ubuntu2.11`
-- `libctf0:amd64=2.38-4ubuntu2.11`
+- `binutils=2.38-4ubuntu2.12`
+- `binutils-common:amd64=2.38-4ubuntu2.12`
+- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.12`
+- `libbinutils:amd64=2.38-4ubuntu2.12`
+- `libctf-nobfd0:amd64=2.38-4ubuntu2.12`
+- `libctf0:amd64=2.38-4ubuntu2.12`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
 
@@ -202,9 +202,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.12
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.12.dsc' binutils_2.38-4ubuntu2.12.dsc 8865 SHA512:06762ac6f41bc85e93d660228b769563a44b5fbf6b9e4b8aec9b4e2246fb30554953c5605dcb93ad3c1d2da99af060036a6ae3459f21de3fa4e0308e9ab8d7dc
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.12.debian.tar.xz' binutils_2.38-4ubuntu2.12.debian.tar.xz 333584 SHA512:5af64c9f54e69c49a0dd7b7fb4f7b720b7a456cecccb6077638d88eeb5541feef036de3c35194e1391220540267ea82471b3ef24db40cc559123abec654c2055
+```
 
 ### `dpkg` source package: `brotli=1.0.9-2build6`
 
@@ -1581,11 +1586,11 @@ $ apt-get source -qq --print-uris libnsl=1.3.0-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libn/libnsl/libnsl_1.3.0-2build2.debian.tar.xz' libnsl_1.3.0-2build2.debian.tar.xz 4868 SHA512:367904106ba925eaa667cc273b37afd052ba795b7ed004cdb501c13dd26b469df971ac10acec2bf57d91fa4839f356c7dcbcd4969914891152588365844ced9a
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.37-3build5`
+### `dpkg` source package: `libpng1.6=1.6.37-3ubuntu0.1`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.37-3build5`
+- `libpng16-16:amd64=1.6.37-3ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -1601,10 +1606,10 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.37-3build5
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3build5.dsc' libpng1.6_1.6.37-3build5.dsc 2357 SHA512:8628c50bf667f1b7134192cbaf7b9c7fc00d6c264027092ea3aaee089497ed7e417a63c824245945a5169000dd56d0787f4538f5563ef312b1be381766cadea0
+$ apt-get source -qq --print-uris libpng1.6=1.6.37-3ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.1.dsc' libpng1.6_1.6.37-3ubuntu0.1.dsc 2210 SHA512:af2acaa8396f1e7f825ca1fbf1f80e6b82ef346c76259d53ff1c7297cf2c0300b3cda3701f1f715daf54364c6c4f42d36ea61a9dfcfae2e4916032e01377980a
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA512:ccb3705c23b2724e86d072e2ac8cfc380f41fadfd6977a248d588a8ad57b6abe0e4155e525243011f245e98d9b7afbe2e8cc7fd4ff7d82fcefb40c0f48f88918
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3build5.debian.tar.xz' libpng1.6_1.6.37-3build5.debian.tar.xz 32492 SHA512:58be3d57602b2c6d6d2788e16de69505cf54a381b51fbd3a1338b9708ed576965975b3994c5946231fe75055a323649667edf8971b3d4d3d736457609fca0770
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.1.debian.tar.xz' libpng1.6_1.6.37-3ubuntu0.1.debian.tar.xz 35976 SHA512:76d5c1fb2d4611d4f7ed41639511da8704d442208a1d0e57a87ea3fd9094051667323ec9e7204d9f183aab868de09ec51c49d8c28d102a031b0eaeb4704551c5
 ```
 
 ### `dpkg` source package: `libpsl=0.21.0-1.2build2`
@@ -2030,11 +2035,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-163.173`
+### `dpkg` source package: `linux=5.15.0-164.174`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-163.173`
+- `linux-libc-dev:amd64=5.15.0-164.174`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2043,10 +2048,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.15.0-163.173
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-163.173.dsc' linux_5.15.0-163.173.dsc 7758 SHA512:807bbf7589747119bcc43488f68a46bb4bca2e88fa9fde53f0b4f4a41dcdb53c00aa3d2fb8a5d694a44e9118c4dbc3fef78b19737b99defa5854d226c537e29d
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-163.173.diff.gz' linux_5.15.0-163.173.diff.gz 12289567 SHA512:f75f6a2fa85bc1cd6a2f2c9d5c2044befabb5d174d01e4eac856cd60edb63589d6d41618c91bce9cf36d21f393c527a2839d44837275dfc8bd7c36254c2d5766
+$ apt-get source -qq --print-uris linux=5.15.0-164.174
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-164.174.dsc' linux_5.15.0-164.174.dsc 7799 SHA512:520117ee0fbd25642883d05ac27a799979ce57cc846106b390e927beb39cf6c2ba45e28f686007d897cbe3915d16eefc7d1424382fb5783ea7984e25b8efac92
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-164.174.diff.gz' linux_5.15.0-164.174.diff.gz 12293399 SHA512:e61b8d5208d1e1bd80aee02a4b126e408934b939d5be67f68b6641510f5007f99754dfb5357da3584384e21cc778ba523ea0c375e77c5fcfcd12950e4332547b
 ```
 
 ### `dpkg` source package: `llvm-toolchain-13=1:13.0.1-2ubuntu2.2`
