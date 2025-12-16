@@ -969,20 +969,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.42-5
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.42-5.dsc' glibc_2.42-5.dsc 7687 SHA256:73c55f4de09807ef955cfe2929b52df4b19f0302b27a82e180a723fdaf903ebd
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.42.orig.tar.xz' glibc_2.42.orig.tar.xz 21052916 SHA256:69c1e915c8edd75981cbfc6b7654e8fc4e52a48d06b9f706f463492749a9b6fb
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.42-5.debian.tar.xz' glibc_2.42-5.debian.tar.xz 413956 SHA256:58e48e48cc3733be5c2f8bdda1f47af9202dd5db768f403f5b3800c08a1f3e0b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.42-5/
 
-- https://sources.debian.net/src/glibc/2.42-5/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.42-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.42-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5`
 
@@ -1515,20 +1508,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi8/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.5.2-2
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2-2.dsc' libffi_3.5.2-2.dsc 1954 SHA256:4a00f5d4c5f93f06d0356619c7a3c9cb954ae270b4ce19e30db455f5c982fc85
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2.orig.tar.gz' libffi_3.5.2.orig.tar.gz 598870 SHA256:dd19253d3007f366319a51d248a40c9e5fcace4498cbea990b566291844e4e30
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2-2.debian.tar.xz' libffi_3.5.2-2.debian.tar.xz 10916 SHA256:7114e5fd8022f1da0e8eb0910d0e9cdbb6f82553a492fd85701055efff0d7c98
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libffi/3.5.2-2/
 
-- https://sources.debian.net/src/libffi/3.5.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libffi/3.5.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libffi/3.5.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libfido2=1.16.0-2`
 

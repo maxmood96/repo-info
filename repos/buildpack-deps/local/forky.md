@@ -1297,20 +1297,13 @@ Licenses: (parsed from: `/usr/share/doc/libfribidi0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fribidi=1.0.16-3
-'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.16-3.dsc' fribidi_1.0.16-3.dsc 2027 SHA256:56bd6716fba3a05b142caffa8b128afb38d3c9584633dc43f2a492259416063c
-'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.16.orig.tar.xz' fribidi_1.0.16.orig.tar.xz 1098260 SHA256:1b1cde5b235d40479e91be2f0e88a309e3214c8ab470ec8a2744d82a5a9ea05c
-'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.16-3.debian.tar.xz' fribidi_1.0.16-3.debian.tar.xz 9032 SHA256:26de5779e25f2e55dd8925ac054e2dce4809b32a465df698d61f912f63733137
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/fribidi/1.0.16-3/
 
-- https://sources.debian.net/src/fribidi/1.0.16-3/ (for browsing the source)
-- https://sources.debian.net/src/fribidi/1.0.16-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fribidi/1.0.16-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-15=15.2.0-9`
 
@@ -2597,20 +2590,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi-dev/copyright`, `/usr/share/doc/l
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.5.2-2
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2-2.dsc' libffi_3.5.2-2.dsc 1954 SHA256:4a00f5d4c5f93f06d0356619c7a3c9cb954ae270b4ce19e30db455f5c982fc85
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2.orig.tar.gz' libffi_3.5.2.orig.tar.gz 598870 SHA256:dd19253d3007f366319a51d248a40c9e5fcace4498cbea990b566291844e4e30
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2-2.debian.tar.xz' libffi_3.5.2-2.debian.tar.xz 10916 SHA256:7114e5fd8022f1da0e8eb0910d0e9cdbb6f82553a492fd85701055efff0d7c98
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libffi/3.5.2-2/
 
-- https://sources.debian.net/src/libffi/3.5.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libffi/3.5.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libffi/3.5.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libfido2=1.16.0-2`
 
@@ -3326,20 +3312,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.5.4-7
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.5.4-7.dsc' libtool_2.5.4-7.dsc 2240 SHA256:5f0828de84d75ccfb41a13aef08f67106540ebc367e9d2f89fb233eedd77812d
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.5.4.orig.tar.xz' libtool_2.5.4.orig.tar.xz 1069572 SHA256:d9189031edeaa6aa74695b2aeb80a8c26df50b29d8b72c991667e01adecea42c
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.5.4-7.debian.tar.xz' libtool_2.5.4-7.debian.tar.xz 37796 SHA256:77d315f055d65baff90d987d577a4de2b2d77d0826c42e23fcc7129e9406566d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtool/2.5.4-7/
 
-- https://sources.debian.net/src/libtool/2.5.4-7/ (for browsing the source)
-- https://sources.debian.net/src/libtool/2.5.4-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtool/2.5.4-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=1.3-2`
 
@@ -3795,20 +3774,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.17.9-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.17.9-1.dsc' linux_6.17.9-1.dsc 211824 SHA256:a74072448a47bc86d610a409924c64a461de5a0989798d91aa2714cd3692e9fc
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.17.9.orig.tar.xz' linux_6.17.9.orig.tar.xz 156474828 SHA256:b7e7d139f5e1bc1932734a8142e9a42bb1e96936395da22064804b7da3d39e7d
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.17.9-1.debian.tar.xz' linux_6.17.9-1.debian.tar.xz 1479664 SHA256:bcfee9586f1f020f70536124d1118533bedd3f180831641db81e63834ee585ff
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/6.17.9-1/
 
-- https://sources.debian.net/src/linux/6.17.9-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.17.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.17.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-6`
 
@@ -4826,20 +4798,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-18=18.1-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.1-1.dsc' postgresql-18_18.1-1.dsc 4443 SHA256:c5982f041cec2e2540dadea2fee90092f465d0606a2f8790c2691f4f498bb746
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.1.orig.tar.bz2' postgresql-18_18.1.orig.tar.bz2 22423920 SHA256:ff86675c336c46e98ac991ebb306d1b67621ece1d06787beaade312c2c915d54
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.1-1.debian.tar.xz' postgresql-18_18.1-1.debian.tar.xz 23716 SHA256:8f1d8ad43fb5ccf9f3329118602bd1ef5866633c6844b0233313cee0425772a9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-18/18.1-1/
 
-- https://sources.debian.net/src/postgresql-18/18.1-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-18/18.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-18/18.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-9`
 
@@ -5339,20 +5304,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=259~rc2-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_259%7erc2-1.dsc' systemd_259~rc2-1.dsc 8718 SHA256:e5485977bd345e1a40746912c9875bfb2e600f060b2e8abae8538b73564d2fd6
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_259%7erc2.orig.tar.gz' systemd_259~rc2.orig.tar.gz 17219778 SHA256:639f1f6453bce3412feb8c4471355c3839765e254afe2638f885fd7de99a37f0
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_259%7erc2-1.debian.tar.xz' systemd_259~rc2-1.debian.tar.xz 184708 SHA256:1f98ebc29761b58e6352bfaa1b25f4331d4455293f8f736bd067f162baa84120
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/259~rc2-1/
 
-- https://sources.debian.net/src/systemd/259~rc2-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/259~rc2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/259~rc2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.15-6`
 
@@ -5455,21 +5413,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-5
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-5.dsc' tzdata_2025b-5.dsc 2434 SHA256:60d166fc03014c8d17c704e7bdd4d829d60ebeceb9492458d6f72b075a03f442
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-5.debian.tar.xz' tzdata_2025b-5.debian.tar.xz 127568 SHA256:f388f56689ed6b2f78e1c1c21b3a08be97706ff44dc1e4c40aa2ea17ca3a6707
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2025b-5/
 
-- https://sources.debian.net/src/tzdata/2025b-5/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2025b-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2025b-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0052`
 
