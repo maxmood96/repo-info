@@ -1,7 +1,7 @@
 ## `openjdk:26-ea-jdk-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:a088ebe86faaea57c384b56123be4b230e562a6b11af41f73ea314df46f7ad55
+$ docker pull openjdk@sha256:4fb8c6649121d9b71d114140fe57d5e5f691bdc245354d0f3f44279c788a7453
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull openjdk@sha256:a088ebe86faaea57c384b56123be4b230e562a6b11af41f73ea
 ### `openjdk:26-ea-jdk-bookworm` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:5041cc6ad6477ec2416ca6aafb24c98ba7fc12b6ef8e1f0ac24a77bd17097daa
+$ docker pull openjdk@sha256:f58cbedfaf39e55a931ccfb2bec68381fe6851317abfa7fba62c256d04a56854
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **381.8 MB (381783390 bytes)**  
+-	Total Size: **381.8 MB (381789880 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad48ef6a04db655a89b4fb6ac4816308bc91fd7e8dceb5af65da58682596539d`
+-	Image ID: `sha256:f48feabd80722b630553bf407fc91b9148389ed9e8a184de1cb63a759015bd05`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -30,19 +30,19 @@ RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1765152000'
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Dec 2025 00:05:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 00:49:15 GMT
+# Tue, 16 Dec 2025 00:03:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				binutils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 00:49:25 GMT
+# Tue, 16 Dec 2025 00:03:32 GMT
 ENV JAVA_HOME=/usr/local/openjdk-26
-# Tue, 09 Dec 2025 00:49:25 GMT
+# Tue, 16 Dec 2025 00:03:32 GMT
 ENV PATH=/usr/local/openjdk-26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 00:49:25 GMT
+# Tue, 16 Dec 2025 00:03:32 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Dec 2025 00:49:25 GMT
-ENV JAVA_VERSION=26-ea+27
-# Tue, 09 Dec 2025 00:49:25 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk26/27/GPL/openjdk-26-ea+27_linux-x64_bin.tar.gz'; 			downloadSha256='c219dd04012af56a87523d69c6dd07a66adce846ff11981335a361ae9e0b4472'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk26/27/GPL/openjdk-26-ea+27_linux-aarch64_bin.tar.gz'; 			downloadSha256='8b59cc8266e8d1eadc2919567b907da7098542b2c0d602eb73484728a0e7b2f7'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version # buildkit
-# Tue, 09 Dec 2025 00:49:25 GMT
+# Tue, 16 Dec 2025 00:03:32 GMT
+ENV JAVA_VERSION=26-ea+28
+# Tue, 16 Dec 2025 00:03:32 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk26/28/GPL/openjdk-26-ea+28_linux-x64_bin.tar.gz'; 			downloadSha256='a18910b0bdceb12a4f78147a1feebee50cc621ad8114c07a1ab071e58c17b09d'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk26/28/GPL/openjdk-26-ea+28_linux-aarch64_bin.tar.gz'; 			downloadSha256='d330a706e3fc611f4b39f6768f104e47d0a755ffabda31e3299dbc2e791f4f18'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version # buildkit
+# Tue, 16 Dec 2025 00:03:32 GMT
 CMD ["jshell"]
 ```
 
@@ -59,49 +59,49 @@ CMD ["jshell"]
 		Last Modified: Tue, 09 Dec 2025 00:06:16 GMT  
 		Size: 64.4 MB (64396522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f50815d52fbeb4251a518068870b5d57ab4074428a9becbc41464131e1081679`  
-		Last Modified: Tue, 09 Dec 2025 00:50:00 GMT  
-		Size: 16.9 MB (16943609 bytes)  
+	-	`sha256:4c75a27385e8f29cb290dd7d161f91d27988a7bbd2b3b46e097413775c16da9f`  
+		Last Modified: Tue, 16 Dec 2025 00:04:09 GMT  
+		Size: 16.9 MB (16944784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b8506a377266a4d6c0c5271eff31be679f59febafc799c334cb413238367520`  
-		Last Modified: Tue, 09 Dec 2025 00:50:08 GMT  
-		Size: 227.9 MB (227933188 bytes)  
+	-	`sha256:b1f20b77b168732675708bfefdb5253d308bb3100df555a6b77eadf21109f739`  
+		Last Modified: Tue, 16 Dec 2025 00:04:25 GMT  
+		Size: 227.9 MB (227938503 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:26-ea-jdk-bookworm` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:1405a71af9dd1ac1c8056db5c3ef172e22b7294ec49f7aee030e19ed38663b33
+$ docker pull openjdk@sha256:2b2083411519456dbf09dd9337d81b5d9b726de127cac4d54ee3c6c990957521
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.7 MB (8686139 bytes)**  
+-	Total Size: **8.7 MB (8686175 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bcd1108d0ff719f954652d758773a95e94c85876ffa13ac472153f2a93c52780`
+-	Image ID: `sha256:1e86708df556e6eb38257abc399ec3bc2f7e2e7a6a6956171567cfd56cac84cf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:10b8ff6ff5b51adc60b435e6d3ff06c278f492af4d95e8da16094af834c917bb`  
-		Last Modified: Tue, 09 Dec 2025 04:23:44 GMT  
-		Size: 8.7 MB (8668200 bytes)  
+	-	`sha256:1d663d4e1f456df9b846e367a4c7f693b793965c6e54547b18d381491c25566f`  
+		Last Modified: Tue, 16 Dec 2025 01:23:36 GMT  
+		Size: 8.7 MB (8668236 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:375bdb4fe886e06ab0580bbcebd8ff513ca819e145f4110b7e5895fecc2c6eeb`  
-		Last Modified: Tue, 09 Dec 2025 04:23:45 GMT  
+	-	`sha256:18bffa0381fbe4261ad557e159fe2f33bd609fd827a463c64e81ab8f8e1d94cd`  
+		Last Modified: Tue, 16 Dec 2025 01:23:39 GMT  
 		Size: 17.9 KB (17939 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `openjdk:26-ea-jdk-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:f3ccea8d094f60b841a4c98bb9a67614c82e9e9615de751c61471bdfd8114839
+$ docker pull openjdk@sha256:895c9f024f4dec69600d36f5b6cce6e3d113acba21bb82cbd1450a15afcc3804
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **379.9 MB (379906772 bytes)**  
+-	Total Size: **379.9 MB (379908109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cb65c764d12f2e0d1af6cd0ad5b82c905c82c19ef7c6916e4821722d9b5f2bf`
+-	Image ID: `sha256:6aa39f19c17613b12ec6ff4f1dd3ee2675d0b8a6ad1e95160d7608b9b13cf44a`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -111,19 +111,19 @@ RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1765152000'
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Dec 2025 00:10:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 01:20:23 GMT
+# Tue, 16 Dec 2025 00:03:35 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				binutils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 01:20:33 GMT
+# Tue, 16 Dec 2025 00:03:48 GMT
 ENV JAVA_HOME=/usr/local/openjdk-26
-# Tue, 09 Dec 2025 01:20:33 GMT
+# Tue, 16 Dec 2025 00:03:48 GMT
 ENV PATH=/usr/local/openjdk-26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 01:20:33 GMT
+# Tue, 16 Dec 2025 00:03:48 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Dec 2025 01:20:33 GMT
-ENV JAVA_VERSION=26-ea+27
-# Tue, 09 Dec 2025 01:20:33 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk26/27/GPL/openjdk-26-ea+27_linux-x64_bin.tar.gz'; 			downloadSha256='c219dd04012af56a87523d69c6dd07a66adce846ff11981335a361ae9e0b4472'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk26/27/GPL/openjdk-26-ea+27_linux-aarch64_bin.tar.gz'; 			downloadSha256='8b59cc8266e8d1eadc2919567b907da7098542b2c0d602eb73484728a0e7b2f7'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version # buildkit
-# Tue, 09 Dec 2025 01:20:33 GMT
+# Tue, 16 Dec 2025 00:03:48 GMT
+ENV JAVA_VERSION=26-ea+28
+# Tue, 16 Dec 2025 00:03:48 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk26/28/GPL/openjdk-26-ea+28_linux-x64_bin.tar.gz'; 			downloadSha256='a18910b0bdceb12a4f78147a1feebee50cc621ad8114c07a1ab071e58c17b09d'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk26/28/GPL/openjdk-26-ea+28_linux-aarch64_bin.tar.gz'; 			downloadSha256='d330a706e3fc611f4b39f6768f104e47d0a755ffabda31e3299dbc2e791f4f18'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version # buildkit
+# Tue, 16 Dec 2025 00:03:48 GMT
 CMD ["jshell"]
 ```
 
@@ -140,35 +140,35 @@ CMD ["jshell"]
 		Last Modified: Tue, 09 Dec 2025 00:11:40 GMT  
 		Size: 64.4 MB (64371489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39dc39b8a3ea4c73f2621bae92eb640baabaac67898140dfdbf5010fbf9ff0d7`  
-		Last Modified: Tue, 09 Dec 2025 01:21:11 GMT  
-		Size: 17.7 MB (17727651 bytes)  
+	-	`sha256:c2487e675900cbde25dead9f939f627e659aaf934a6528ade2f30ab91ad8002a`  
+		Last Modified: Tue, 16 Dec 2025 00:04:32 GMT  
+		Size: 17.7 MB (17728576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd0cb8e1b6c1232485f7180d34ed39e8b4767ab5ac56680d24d7a0e04af95b4d`  
-		Last Modified: Tue, 09 Dec 2025 01:22:16 GMT  
-		Size: 225.9 MB (225850314 bytes)  
+	-	`sha256:dda269c57a83bca85e5c13457fee30361a24c7c39ed453cda24bbdc2dd028d32`  
+		Last Modified: Tue, 16 Dec 2025 00:04:44 GMT  
+		Size: 225.9 MB (225850726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:26-ea-jdk-bookworm` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:90aec7092dc022a9e2a102ebffd40965da95097f2827bd12119f80a43ae1d7a9
+$ docker pull openjdk@sha256:a78a7f3e46fc0f30fdb14c6f61b8212a4f99742ac72e02e5b07b7237725bccd8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 MB (8823103 bytes)**  
+-	Total Size: **8.8 MB (8823139 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c082bd57e25c9704ad76c57c47975fcc0ea0286e493055a121cd54e23e3f207`
+-	Image ID: `sha256:05d73d4935b1c931a7a2c84207970b77b849ae644ee8067c3ba067e781d035f7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:632da9c79539188195dba0e39e30ec9d43664b5ddaea1008e6a9d4b16a657765`  
-		Last Modified: Tue, 09 Dec 2025 04:23:51 GMT  
-		Size: 8.8 MB (8805045 bytes)  
+	-	`sha256:10d3ffd957d30e6e03b2cd2cdd1f97c4ed916fbb387a9a1d371f52c5e7223f07`  
+		Last Modified: Tue, 16 Dec 2025 01:23:47 GMT  
+		Size: 8.8 MB (8805081 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d65b706534ed5b400848c1d4956d3ae7bc357846ea00bb2e80355d359f62e555`  
-		Last Modified: Tue, 09 Dec 2025 04:23:52 GMT  
+	-	`sha256:74ba6be3f04837c1be7049e2c8881ea18719091628ccbefbf7b597107696de58`  
+		Last Modified: Tue, 16 Dec 2025 01:23:48 GMT  
 		Size: 18.1 KB (18058 bytes)  
 		MIME: application/vnd.in-toto+json
