@@ -277,10 +277,10 @@ $ docker pull znc@sha256:b0d8e9b11d859e9cc8d4d23000574a77b0f2c0b892e92cd5daed2c0
 
 -	Layers:
 	-	`sha256:13cd7afefce47e2035fe8bbd34e1770dc422f824d930ce7d3fb988ebcdd013de`  
-		Last Modified: Wed, 08 Oct 2025 22:56:36 GMT  
+		Last Modified: Tue, 16 Dec 2025 11:31:26 GMT  
 		Size: 6.9 MB (6940526 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b31770e469053bbce11b9337d3196c31a04fb515ee4413415df1358e4c87bb68`  
-		Last Modified: Wed, 08 Oct 2025 22:56:35 GMT  
+		Last Modified: Tue, 16 Dec 2025 11:31:24 GMT  
 		Size: 9.7 KB (9695 bytes)  
 		MIME: application/vnd.in-toto+json
