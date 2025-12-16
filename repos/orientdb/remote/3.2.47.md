@@ -225,7 +225,7 @@ CMD ["server.sh"]
 
 -	Layers:
 	-	`sha256:6cdc0abf996c3192bfbda4018d34c282871d4be33fb369176002cb2199673adf`  
-		Last Modified: Fri, 17 Oct 2025 08:06:35 GMT  
+		Last Modified: Tue, 16 Dec 2025 10:09:21 GMT  
 		Size: 26.9 MB (26852672 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d0d6184eab1fedb00d8072befde7c3b4597274a562208d5c523cbc1138cbd17`  
