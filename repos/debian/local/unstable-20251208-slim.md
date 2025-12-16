@@ -623,20 +623,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.42-5
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.42-5.dsc' glibc_2.42-5.dsc 7687 SHA256:73c55f4de09807ef955cfe2929b52df4b19f0302b27a82e180a723fdaf903ebd
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.42.orig.tar.xz' glibc_2.42.orig.tar.xz 21052916 SHA256:69c1e915c8edd75981cbfc6b7654e8fc4e52a48d06b9f706f463492749a9b6fb
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.42-5.debian.tar.xz' glibc_2.42-5.debian.tar.xz 413956 SHA256:58e48e48cc3733be5c2f8bdda1f47af9202dd5db768f403f5b3800c08a1f3e0b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.42-5/
 
-- https://sources.debian.net/src/glibc/2.42-5/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.42-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.42-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5`
 
