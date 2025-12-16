@@ -1,10 +1,10 @@
-# `tomee:10.1.2-jre17-Temurin-alpine-webprofile`
+# `tomee:10.1.3-jre17-Temurin-alpine-webprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3e7ed1ddcd362f04c38e09681194eed72707e0cce478e238694fccbdfd1ecf9`
-- Created: `2025-11-08T18:40:04.526838459Z`
-- Virtual Size: ~ 252.94 Mb  
+- Image ID: `sha256:e8b31eba808ec8e6322edeac2fd0ca0adf64d96a77d40f7cbf230b3e5b355d42`
+- Created: `2025-12-15T19:02:16.914979881Z`
+- Virtual Size: ~ 252.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.17+10`
-  - `TOMEE_VER=10.1.2`
+  - `TOMEE_VER=10.1.3`
   - `TOMEE_BUILD=webprofile`
 
 ## `apk` (`.apk`-based packages)
@@ -177,16 +177,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.5-r0 description:
+c-ares-1.34.6-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.5-r0 webpage:
+c-ares-1.34.6-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.5-r0 installed size:
+c-ares-1.34.6-r0 installed size:
 233 KiB
 
-c-ares-1.34.5-r0 license:
+c-ares-1.34.6-r0 license:
 MIT
 
 ```
