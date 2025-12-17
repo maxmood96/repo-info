@@ -426,11 +426,11 @@ $ docker pull ruby@sha256:3ca673a4972ba5ab533d7d1dfba90429913aee1ced55ab26c36497
 
 -	Layers:
 	-	`sha256:2635ca9fc3104897d3d32800fa7063b59a71a3ede86052ebb1cd3d5556f2ac49`  
-		Last Modified: Wed, 17 Dec 2025 20:08:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 22:01:28 GMT  
 		Size: 203.8 KB (203820 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3ac75d04d6abfd94918f09e5444100eac6dcd8712745d73b45c37e398b91ca32`  
-		Last Modified: Wed, 17 Dec 2025 20:08:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 22:01:29 GMT  
 		Size: 22.4 KB (22414 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -509,11 +509,11 @@ $ docker pull ruby@sha256:5b8d17a5d593a74ce32328a2844d767b41b4a27facfb9ee3e47bc0
 
 -	Layers:
 	-	`sha256:4c99d9312daf131164d51c3e87b8e787560fb346ecd096a72a26c8aab062006d`  
-		Last Modified: Wed, 17 Dec 2025 20:16:59 GMT  
+		Last Modified: Wed, 17 Dec 2025 22:01:32 GMT  
 		Size: 201.9 KB (201928 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4703a7dce915674b4e3f0316774ccf491ea53ba452095736afe1b856b13e7a8c`  
-		Last Modified: Wed, 17 Dec 2025 20:16:59 GMT  
+		Last Modified: Wed, 17 Dec 2025 22:01:33 GMT  
 		Size: 22.5 KB (22499 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -675,10 +675,10 @@ $ docker pull ruby@sha256:4ea41a05192cb67e4ca051a593154a7c5d4f4a9fc070344d97da4b
 
 -	Layers:
 	-	`sha256:52631108b033ede3831941f4b31b2d1585c7e998ba0f51c427c6baaace13442f`  
-		Last Modified: Wed, 17 Dec 2025 20:08:36 GMT  
+		Last Modified: Wed, 17 Dec 2025 22:01:39 GMT  
 		Size: 201.9 KB (201894 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b286bc75d0752b890b5c59affbb71572d42a69fa63c04546e9b0c6361ad7787b`  
-		Last Modified: Wed, 17 Dec 2025 20:08:36 GMT  
+		Last Modified: Wed, 17 Dec 2025 22:01:40 GMT  
 		Size: 22.5 KB (22451 bytes)  
 		MIME: application/vnd.in-toto+json
