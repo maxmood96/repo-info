@@ -855,14 +855,13 @@ Licenses: (parsed from: `/usr/share/doc/libfribidi0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fribidi=1.0.16-3
-'http://http.debian.net/debian/pool/main/f/fribidi/fribidi_1.0.16-3.dsc' fribidi_1.0.16-3.dsc 2027 SHA256:56bd6716fba3a05b142caffa8b128afb38d3c9584633dc43f2a492259416063c
-'http://http.debian.net/debian/pool/main/f/fribidi/fribidi_1.0.16.orig.tar.xz' fribidi_1.0.16.orig.tar.xz 1098260 SHA256:1b1cde5b235d40479e91be2f0e88a309e3214c8ab470ec8a2744d82a5a9ea05c
-'http://http.debian.net/debian/pool/main/f/fribidi/fribidi_1.0.16-3.debian.tar.xz' fribidi_1.0.16-3.debian.tar.xz 9032 SHA256:26de5779e25f2e55dd8925ac054e2dce4809b32a465df698d61f912f63733137
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/fribidi/1.0.16-3/
+
 
 ### `dpkg` source package: `gcc-15=15.2.0-10`
 
@@ -998,11 +997,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.86.2-1
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.86.2-1.dsc' glib2.0_2.86.2-1.dsc 4911 SHA256:fa0193312b6689b594014c507b8eea74a30192603bb1f0e8a7cd5e37f34c1379
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.86.2.orig-unicode-data.tar.xz' glib2.0_2.86.2.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.86.2.orig.tar.xz' glib2.0_2.86.2.orig.tar.xz 5673792 SHA256:8a724e970855357ea8101e27727202392a0ffd5410a98336aed54ec59113e611
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.86.2-1.debian.tar.xz' glib2.0_2.86.2-1.debian.tar.xz 141244 SHA256:30e5a0139003e5c8f3990b6c1c475e5316805df751f3cd1a5ed2832664662683
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.2-1.dsc' glib2.0_2.86.2-1.dsc 4911 SHA256:fa0193312b6689b594014c507b8eea74a30192603bb1f0e8a7cd5e37f34c1379
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.2.orig-unicode-data.tar.xz' glib2.0_2.86.2.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.2.orig.tar.xz' glib2.0_2.86.2.orig.tar.xz 5673792 SHA256:8a724e970855357ea8101e27727202392a0ffd5410a98336aed54ec59113e611
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.2-1.debian.tar.xz' glib2.0_2.86.2-1.debian.tar.xz 141244 SHA256:30e5a0139003e5c8f3990b6c1c475e5316805df751f3cd1a5ed2832664662683
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glib2.0/2.86.2-1/ (for browsing the source)
+- https://sources.debian.net/src/glib2.0/2.86.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glib2.0/2.86.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.42-5`
 
@@ -1055,10 +1060,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.42-5
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.42-5.dsc' glibc_2.42-5.dsc 7687 SHA256:73c55f4de09807ef955cfe2929b52df4b19f0302b27a82e180a723fdaf903ebd
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.42.orig.tar.xz' glibc_2.42.orig.tar.xz 21052916 SHA256:69c1e915c8edd75981cbfc6b7654e8fc4e52a48d06b9f706f463492749a9b6fb
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.42-5.debian.tar.xz' glibc_2.42-5.debian.tar.xz 413956 SHA256:58e48e48cc3733be5c2f8bdda1f47af9202dd5db768f403f5b3800c08a1f3e0b
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.42-5.dsc' glibc_2.42-5.dsc 7687 SHA256:73c55f4de09807ef955cfe2929b52df4b19f0302b27a82e180a723fdaf903ebd
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.42.orig.tar.xz' glibc_2.42.orig.tar.xz 21052916 SHA256:69c1e915c8edd75981cbfc6b7654e8fc4e52a48d06b9f706f463492749a9b6fb
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.42-5.debian.tar.xz' glibc_2.42-5.debian.tar.xz 413956 SHA256:58e48e48cc3733be5c2f8bdda1f47af9202dd5db768f403f5b3800c08a1f3e0b
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glibc/2.42-5/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.42-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.42-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5`
 
@@ -1649,20 +1660,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi8/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.5.2-2
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2-2.dsc' libffi_3.5.2-2.dsc 1954 SHA256:4a00f5d4c5f93f06d0356619c7a3c9cb954ae270b4ce19e30db455f5c982fc85
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2.orig.tar.gz' libffi_3.5.2.orig.tar.gz 598870 SHA256:dd19253d3007f366319a51d248a40c9e5fcace4498cbea990b566291844e4e30
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2-2.debian.tar.xz' libffi_3.5.2-2.debian.tar.xz 10916 SHA256:7114e5fd8022f1da0e8eb0910d0e9cdbb6f82553a492fd85701055efff0d7c98
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libffi/3.5.2-2/
 
-- https://sources.debian.net/src/libffi/3.5.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libffi/3.5.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libffi/3.5.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -1810,14 +1814,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.52-1
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.52-1.dsc' libpng1.6_1.6.52-1.dsc 2254 SHA256:249b351c1dd8c068822090ce222fee88fb6f307b591816f3e91b0e442e506d72
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.52.orig.tar.gz' libpng1.6_1.6.52.orig.tar.gz 1584153 SHA256:07098f37e7b7570fc06d2ccbaaf5a47e9344fc36e773e312e334a083689a6212
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.52-1.debian.tar.xz' libpng1.6_1.6.52-1.debian.tar.xz 33484 SHA256:ae20da146e9500b93fc225dcae89d116121ac5050bd07a702a26e59ad35a35f4
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.52-1/
+
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -3576,21 +3579,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-5
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-5.dsc' tzdata_2025b-5.dsc 2434 SHA256:60d166fc03014c8d17c704e7bdd4d829d60ebeceb9492458d6f72b075a03f442
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-5.debian.tar.xz' tzdata_2025b-5.debian.tar.xz 127568 SHA256:f388f56689ed6b2f78e1c1c21b3a08be97706ff44dc1e4c40aa2ea17ca3a6707
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2025b-5/
 
-- https://sources.debian.net/src/tzdata/2025b-5/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2025b-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2025b-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0052`
 
