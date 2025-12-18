@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5d08b8b96f21f0a102934ef48a0effdfa47d30acb50dd8a40d423c9c923c1ca7`
-- Created: `2025-12-12T22:59:22.198704873Z`
-- Virtual Size: ~ 740.18 Mb  
+- Image ID: `sha256:e4e3c7e759724a6904afae2b87ba902e55323144a2ae5a12ae93487534e5ec29`
+- Created: `2025-12-18T01:26:13.478816688Z`
+- Virtual Size: ~ 740.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -76,16 +76,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.0-r0 description:
+alpine-release-3.23.2-r0 description:
 Alpine release data
 
-alpine-release-3.23.0-r0 webpage:
+alpine-release-3.23.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.0-r0 installed size:
+alpine-release-3.23.2-r0 installed size:
 343 B
 
-alpine-release-3.23.0-r0 license:
+alpine-release-3.23.2-r0 license:
 MIT
 
 ```
@@ -93,16 +93,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.1-r1 description:
+apk-tools-3.0.3-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.1-r1 webpage:
+apk-tools-3.0.3-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.1-r1 installed size:
+apk-tools-3.0.3-r1 installed size:
 112 KiB
 
-apk-tools-3.0.1-r1 license:
+apk-tools-3.0.3-r1 license:
 GPL-2.0-only
 
 ```
@@ -127,16 +127,16 @@ GPL-3.0-or-later
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r29 description:
+busybox-1.37.0-r30 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r29 webpage:
+busybox-1.37.0-r30 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r29 installed size:
+busybox-1.37.0-r30 installed size:
 794 KiB
 
-busybox-1.37.0-r29 license:
+busybox-1.37.0-r30 license:
 GPL-2.0-only
 
 ```
@@ -144,16 +144,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r29 description:
+busybox-binsh-1.37.0-r30 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r29 webpage:
+busybox-binsh-1.37.0-r30 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r29 installed size:
+busybox-binsh-1.37.0-r30 installed size:
 1 B
 
-busybox-binsh-1.37.0-r29 license:
+busybox-binsh-1.37.0-r30 license:
 GPL-2.0-only
 
 ```
@@ -178,16 +178,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.1-r1 description:
+libapk-3.0.3-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.1-r1 webpage:
+libapk-3.0.3-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.1-r1 installed size:
+libapk-3.0.3-r1 installed size:
 270 KiB
 
-libapk-3.0.1-r1 license:
+libapk-3.0.3-r1 license:
 GPL-2.0-only
 
 ```
@@ -365,16 +365,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r29 description:
+ssl_client-1.37.0-r30 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r29 webpage:
+ssl_client-1.37.0-r30 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r29 installed size:
+ssl_client-1.37.0-r30 installed size:
 14 KiB
 
-ssl_client-1.37.0-r29 license:
+ssl_client-1.37.0-r30 license:
 GPL-2.0-only
 
 ```
