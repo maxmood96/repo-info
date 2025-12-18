@@ -213,7 +213,7 @@ $ docker pull joomla@sha256:44fc58065618e1252297b88d71bf888b60c70eb3eaab1578b12e
 
 -	Layers:
 	-	`sha256:5f668f1a0572b839c0dcd661d60dbd3da722a9a520d11c9f076aefff5c62bb44`  
-		Last Modified: Thu, 18 Dec 2025 01:21:31 GMT  
+		Last Modified: Thu, 18 Dec 2025 02:44:50 GMT  
 		Size: 45.7 KB (45715 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -407,7 +407,7 @@ $ docker pull joomla@sha256:7959dfe1fafbe370ae1659ef4e88f7395a358600e66a0b7bfa14
 
 -	Layers:
 	-	`sha256:a7293df4a5bfd6587aba66a275a810e0ce0bdf6d8a3bb91db058e0c263f33bea`  
-		Last Modified: Thu, 18 Dec 2025 01:39:27 GMT  
+		Last Modified: Thu, 18 Dec 2025 02:44:53 GMT  
 		Size: 45.8 KB (45839 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -601,7 +601,7 @@ $ docker pull joomla@sha256:53b5ab0e531478e239f9da949def577ee9916b05ed836a8ca14e
 
 -	Layers:
 	-	`sha256:00e6787278013d35ceb62287ecf7d68c733db68825002e683012fe4defa48129`  
-		Last Modified: Thu, 18 Dec 2025 01:42:09 GMT  
+		Last Modified: Thu, 18 Dec 2025 02:44:55 GMT  
 		Size: 45.8 KB (45838 bytes)  
 		MIME: application/vnd.in-toto+json
 
