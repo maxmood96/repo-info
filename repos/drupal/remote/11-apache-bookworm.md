@@ -1,7 +1,7 @@
 ## `drupal:11-apache-bookworm`
 
 ```console
-$ docker pull drupal@sha256:fc0c699b1ccf330126665a56c1e075fa25a15066aae9eac9c9e12f00d42cf00a
+$ docker pull drupal@sha256:6d51cc023711e822c49b4be3665bf170582e96ad73d5a9cee26e1b2a34f2252d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -838,7 +838,7 @@ $ docker pull drupal@sha256:4a27f90689ed5001afdfe4cd6855c1341a7155564afd35580b11
 ### `drupal:11-apache-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull drupal@sha256:d43ed303594157928461ac2b43068c25e0c0d0f7b8508bb26dded58f60358037
+$ docker pull drupal@sha256:fdefe4b5d832a525b6532e7c46bb407d035d96bca10d93fdf312c51da898e835
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -1018,25 +1018,25 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 ### `drupal:11-apache-bookworm` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:8a06919717b074bb01f1563d59fa5ec7805936946068a899811466fc10e3bc73
+$ docker pull drupal@sha256:eed3b2e900dd9c22c6af20069cb628ccacbcf368f0dd3196c6fb1a211dd96d63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.1 MB (7072993 bytes)**  
+-	Total Size: **7.1 MB (7072994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:346d2f2e2d073f0c5e466164afe19a4694ad4c27c543d43faa1c8c344c044be0`
+-	Image ID: `sha256:b9d2685a34a3d06bbb56282657b17ca1e9418589756ab25ca952313246d16a9e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89d0b31d3bbec947d4ae1a98c44a7708fda26c2d481bb0523543ec0d5d2e8ee7`  
-		Last Modified: Thu, 18 Dec 2025 21:05:43 GMT  
+	-	`sha256:c4c1da666d96823251ff519e98cac4034d8a0a8a539834abcc49a89ed45b3db9`  
+		Last Modified: Fri, 19 Dec 2025 03:03:14 GMT  
 		Size: 7.0 MB (7028980 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:65c7d3da4d8240d951cfe2f3458b0d9ca19cacfa6170f6c706a522cc1744fd12`  
-		Last Modified: Thu, 18 Dec 2025 21:05:44 GMT  
-		Size: 44.0 KB (44013 bytes)  
+	-	`sha256:d7debd3e0766ae5e204f37ea1266bfef797a7d075237cd8d646838e491ceae14`  
+		Last Modified: Fri, 19 Dec 2025 03:03:14 GMT  
+		Size: 44.0 KB (44014 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:11-apache-bookworm` - linux; s390x
