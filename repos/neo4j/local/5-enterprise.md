@@ -1,10 +1,10 @@
-# `neo4j:5.26.18-enterprise-bullseye`
+# `neo4j:5.26.19-enterprise-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:117da781eaab67eb675d65ae907769f7cd36cb274d4a4943bfdf458396acb8ad`
-- Created: `2025-12-08T23:12:38.958880833Z`
-- Virtual Size: ~ 906.63 Mb  
+- Image ID: `sha256:9ef2cf9b025921587d5f5ce2090ecdf534a68cab97d854cb6b70d02b1f933199`
+- Created: `2025-12-18T18:58:33.586217174Z`
+- Virtual Size: ~ 903.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `NEO4J_SHA256=9f3d954467e43681210a4541df73dae563d4f960273333b4b6db788313ef4096`
-  - `NEO4J_TARBALL=neo4j-enterprise-5.26.18-unix.tar.gz`
+  - `NEO4J_SHA256=4090c59d7959304579e5725902d3c1cf0c5ffc5852da6e68d2f0cdd4e84bc3f2`
+  - `NEO4J_TARBALL=neo4j-enterprise-5.26.19-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
@@ -1453,11 +1453,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.244-1`
+### `dpkg` source package: `linux=5.10.247-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.244-1`
+- `linux-libc-dev:amd64=5.10.247-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1473,17 +1473,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.244-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.244-1.dsc' linux_5.10.244-1.dsc 209429 SHA256:00564a843655ac1f6e2fd7268177cfb858c967817ac763b5ac255892f9fb8141
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.244.orig.tar.xz' linux_5.10.244.orig.tar.xz 122105040 SHA256:94fe544015224ab7b5ca3b391576c0c84be3b655e5e11a49b1e7cea8aa1db6be
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.244-1.debian.tar.xz' linux_5.10.244-1.debian.tar.xz 1759388 SHA256:36ea2de74f287912a440239b6b612fa748fc5e5727c651d32abfb8e1359d696f
+$ apt-get source -qq --print-uris linux=5.10.247-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.247-1.dsc' linux_5.10.247-1.dsc 209429 SHA256:4decac0295de58278eab28e88c98ecc4df8eeaa320f197a4b3a4211b77a065f5
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.247.orig.tar.xz' linux_5.10.247.orig.tar.xz 122115324 SHA256:dce0db938fd1bd36b619301e2abaee5126420add50d8851a4312e5dad1abc3b1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.247-1.debian.tar.xz' linux_5.10.247-1.debian.tar.xz 1769544 SHA256:90014e16f6627a6b14733d55901580f5be24f99d510d5ece0228b54bcea033c1
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.244-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.244-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.244-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.247-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.247-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.247-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
