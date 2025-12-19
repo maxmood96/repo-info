@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:65489af798e36b7fe0ca5ed80460d125bc9f3791a268af6139de6e5f990b7b4d`
-- Created: `2025-12-04T02:16:31.746075935Z`
-- Virtual Size: ~ 244.41 Mb  
+- Image ID: `sha256:95759a6168bc46be7b07290a2bcae2f0ca4eea2cadae8bf111e23263ccf87b55`
+- Created: `2025-12-18T23:14:43.420412421Z`
+- Virtual Size: ~ 244.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.29`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.29.tar.xz.asc`
-  - `PHP_SHA256=475f991afd2d5b901fb410be407d929bc00c46285d3f439a02c59e8b6fe3589c`
+  - `PHP_VERSION=8.2.30`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.30.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.30.tar.xz.asc`
+  - `PHP_SHA256=bc90523e17af4db46157e75d0c9ef0b9d0030b0514e62c26ba7b513b8c4eb015`
   - `PHP_OPCACHE_VALIDATE_TIMESTAMPS=0`
   - `PHP_OPCACHE_MAX_ACCELERATED_FILES=20000`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=192`
@@ -111,16 +111,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.0-r0 description:
+alpine-release-3.23.2-r0 description:
 Alpine release data
 
-alpine-release-3.23.0-r0 webpage:
+alpine-release-3.23.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.0-r0 installed size:
+alpine-release-3.23.2-r0 installed size:
 343 B
 
-alpine-release-3.23.0-r0 license:
+alpine-release-3.23.2-r0 license:
 MIT
 
 ```
@@ -128,16 +128,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.1-r1 description:
+apk-tools-3.0.3-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.1-r1 webpage:
+apk-tools-3.0.3-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.1-r1 installed size:
+apk-tools-3.0.3-r1 installed size:
 112 KiB
 
-apk-tools-3.0.1-r1 license:
+apk-tools-3.0.3-r1 license:
 GPL-2.0-only
 
 ```
@@ -196,16 +196,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r29 description:
+busybox-1.37.0-r30 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r29 webpage:
+busybox-1.37.0-r30 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r29 installed size:
+busybox-1.37.0-r30 installed size:
 794 KiB
 
-busybox-1.37.0-r29 license:
+busybox-1.37.0-r30 license:
 GPL-2.0-only
 
 ```
@@ -213,16 +213,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r29 description:
+busybox-binsh-1.37.0-r30 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r29 webpage:
+busybox-binsh-1.37.0-r30 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r29 installed size:
+busybox-binsh-1.37.0-r30 installed size:
 1 B
 
-busybox-binsh-1.37.0-r29 license:
+busybox-binsh-1.37.0-r30 license:
 GPL-2.0-only
 
 ```
@@ -230,16 +230,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.5-r0 description:
+c-ares-1.34.6-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.5-r0 webpage:
+c-ares-1.34.6-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.5-r0 installed size:
+c-ares-1.34.6-r0 installed size:
 233 KiB
 
-c-ares-1.34.5-r0 license:
+c-ares-1.34.6-r0 license:
 MIT
 
 ```
@@ -468,16 +468,16 @@ ICU
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.1-r1 description:
+libapk-3.0.3-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.1-r1 webpage:
+libapk-3.0.3-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.1-r1 installed size:
+libapk-3.0.3-r1 installed size:
 270 KiB
 
-libapk-3.0.1-r1 license:
+libapk-3.0.3-r1 license:
 GPL-2.0-only
 
 ```
@@ -638,16 +638,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.51-r1 description:
+libpng-1.6.53-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.51-r1 webpage:
+libpng-1.6.53-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.51-r1 installed size:
+libpng-1.6.53-r0 installed size:
 181 KiB
 
-libpng-1.6.51-r1 license:
+libpng-1.6.53-r0 license:
 Libpng
 
 ```
@@ -1029,16 +1029,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r29 description:
+ssl_client-1.37.0-r30 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r29 webpage:
+ssl_client-1.37.0-r30 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r29 installed size:
+ssl_client-1.37.0-r30 installed size:
 14 KiB
 
-ssl_client-1.37.0-r29 license:
+ssl_client-1.37.0-r30 license:
 GPL-2.0-only
 
 ```
