@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0bae9904d1e65fe3b49f9828067df38eb846dd9b6d2188ebb31267ae14d642f1`
-- Created: `2025-12-11T00:38:42.538995934Z`
-- Virtual Size: ~ 169.63 Mb  
+- Image ID: `sha256:dfa0774ae5f3d1a599217a3477fe5ab1ab2059786dc1d0ef84e293f9c68d380b`
+- Created: `2025-12-19T02:16:17.355774812Z`
+- Virtual Size: ~ 169.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.15`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.15.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.15.tar.xz.asc`
-  - `PHP_SHA256=a060684f614b8344f9b34c334b6ba8db1177555997edb5b1aceab0a4b807da7e`
+  - `PHP_VERSION=8.4.16`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.16.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.16.tar.xz.asc`
+  - `PHP_SHA256=f66f8f48db34e9e29f7bfd6901178e9cf4a1b163e6e497716dfcb8f88bcfae30`
   - `PHP_MEMORY_LIMIT=256M`
   - `MATOMO_VERSION=5.6.2`
 
@@ -97,16 +97,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.0-r0 description:
+alpine-release-3.23.2-r0 description:
 Alpine release data
 
-alpine-release-3.23.0-r0 webpage:
+alpine-release-3.23.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.0-r0 installed size:
+alpine-release-3.23.2-r0 installed size:
 343 B
 
-alpine-release-3.23.0-r0 license:
+alpine-release-3.23.2-r0 license:
 MIT
 
 ```
@@ -114,16 +114,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.1-r1 description:
+apk-tools-3.0.3-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.1-r1 webpage:
+apk-tools-3.0.3-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.1-r1 installed size:
+apk-tools-3.0.3-r1 installed size:
 112 KiB
 
-apk-tools-3.0.1-r1 license:
+apk-tools-3.0.3-r1 license:
 GPL-2.0-only
 
 ```
@@ -165,16 +165,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r29 description:
+busybox-1.37.0-r30 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r29 webpage:
+busybox-1.37.0-r30 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r29 installed size:
+busybox-1.37.0-r30 installed size:
 794 KiB
 
-busybox-1.37.0-r29 license:
+busybox-1.37.0-r30 license:
 GPL-2.0-only
 
 ```
@@ -182,16 +182,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r29 description:
+busybox-binsh-1.37.0-r30 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r29 webpage:
+busybox-binsh-1.37.0-r30 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r29 installed size:
+busybox-binsh-1.37.0-r30 installed size:
 1 B
 
-busybox-binsh-1.37.0-r29 license:
+busybox-binsh-1.37.0-r30 license:
 GPL-2.0-only
 
 ```
@@ -199,16 +199,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.5-r0 description:
+c-ares-1.34.6-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.5-r0 webpage:
+c-ares-1.34.6-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.5-r0 installed size:
+c-ares-1.34.6-r0 installed size:
 233 KiB
 
-c-ares-1.34.5-r0 license:
+c-ares-1.34.6-r0 license:
 MIT
 
 ```
@@ -318,16 +318,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.1-r1 description:
+libapk-3.0.3-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.1-r1 webpage:
+libapk-3.0.3-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.1-r1 installed size:
+libapk-3.0.3-r1 installed size:
 270 KiB
 
-libapk-3.0.1-r1 license:
+libapk-3.0.3-r1 license:
 GPL-2.0-only
 
 ```
@@ -777,16 +777,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r29 description:
+ssl_client-1.37.0-r30 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r29 webpage:
+ssl_client-1.37.0-r30 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r29 installed size:
+ssl_client-1.37.0-r30 installed size:
 14 KiB
 
-ssl_client-1.37.0-r29 license:
+ssl_client-1.37.0-r30 license:
 GPL-2.0-only
 
 ```
