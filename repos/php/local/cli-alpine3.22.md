@@ -1,10 +1,10 @@
-# `php:8.5.0-cli-alpine3.22`
+# `php:8.5.1-cli-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f6a2dcb19c68aeb7ba6335ec24de402ccecb06efaf6ea876a381a489d843eb91`
-- Created: `2025-11-20T19:50:45.887020117Z`
-- Virtual Size: ~ 137.35 Mb  
+- Image ID: `sha256:49def7a32e94c50e7b40c6d47b24ff2447628add759cae10b88eae119dd73f41`
+- Created: `2025-12-18T21:14:32.620590265Z`
+- Virtual Size: ~ 137.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.0`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.0.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.0.tar.xz.asc`
-  - `PHP_SHA256=39cb6e4acd679b574d3d3276f148213e935fc25f90403eb84fb1b836a806ef1e`
+  - `PHP_VERSION=8.5.1`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.1.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.1.tar.xz.asc`
+  - `PHP_SHA256=3f5bf99ce81201f526d25e288eddb2cfa111d068950d1e9a869530054ff98815`
 
 ## `apk` (`.apk`-based packages)
 
@@ -197,16 +197,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.5-r0 description:
+c-ares-1.34.6-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.5-r0 webpage:
+c-ares-1.34.6-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.5-r0 installed size:
+c-ares-1.34.6-r0 installed size:
 233 KiB
 
-c-ares-1.34.5-r0 license:
+c-ares-1.34.6-r0 license:
 MIT
 
 ```
