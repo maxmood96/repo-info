@@ -259,15 +259,13 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake=1:1.18.1-3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake/automake_1.18.1-3.dsc' automake_1.18.1-3.dsc 2483 SHA512:d5d28a3f50ad4e4279839b5ecef7f54c2d281dc5328ee52945f75a563b643edc0ef38b8a9e954cfb664d97041bcc94f91715f4b51ecb4e9d8b771485f8a47fae
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake/automake_1.18.1.orig.tar.xz' automake_1.18.1.orig.tar.xz 1652392 SHA512:8baa16831416a953a743f4e3c0f55cea5ebefe0f5a7a0e390581981d4461d02dc9038415124e974b2ec390c40daaa241802cd7d42c6fafb793f87cf355db2a61
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake/automake_1.18.1.orig.tar.xz.asc' automake_1.18.1.orig.tar.xz.asc 488 SHA512:5a1f0e89a8f3826c766aa98617765f4a576dc278abb7a0a4c0fa04d27d15bf670b79853642914db58731eb4dc737f0b9ad65ba9a07b7bb227e763e90e2e54349
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake/automake_1.18.1-3.debian.tar.xz' automake_1.18.1-3.debian.tar.xz 22712 SHA512:0e22203d2c00fdfd2b4ca895d1f9e6762b706dfdd44776c0e9c19a6792aca7e31036765ddc5986be25ff32fcfef4205362c0ca36efa6f5cd02bb516d32db6c68
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/automake/1:1.18.1-3/
+
 
 ### `dpkg` source package: `autotools-dev=20240727.1`
 
@@ -1052,14 +1050,13 @@ Licenses: (parsed from: `/usr/share/doc/libfribidi0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fribidi=1.0.16-4
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fribidi/fribidi_1.0.16-4.dsc' fribidi_1.0.16-4.dsc 2014 SHA512:daa93326d400234271cc98db4d9f4bb221db00bf900b6054f9994712691725d19f786b8b74b2411e48727efdcdf4d6749bc651f21f59f366254037f6d7e3be8b
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fribidi/fribidi_1.0.16.orig.tar.xz' fribidi_1.0.16.orig.tar.xz 1098260 SHA512:e3a56f36155f6813e3609473639fc533de742309f561c463012dc90b412a1ac7694b765d92669b2cbfaee973ca0e92fa5e926e68a1a078921f26ef17d82ab651
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fribidi/fribidi_1.0.16-4.debian.tar.xz' fribidi_1.0.16-4.debian.tar.xz 8840 SHA512:80feaf848b1bf38095a44306d9ad9ee621dfefcf1f8ff0efe1bf91e946bb447435a9bda0bb7edc33d9d6e024eac2c58b8a2ce763c180e88874b8de373a933490
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/fribidi/1.0.16-4/
+
 
 ### `dpkg` source package: `gcc-15=15.2.0-10ubuntu1`
 
@@ -1513,14 +1510,9 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=12.1.0-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_12.1.0-1build1.dsc' harfbuzz_12.1.0-1build1.dsc 2930 SHA512:3c1cb8247931a89b39ec97f462e5b716be157a9219274b0200ae0cc5b4027fe516ff92aa4d564f3d55aeecff5380f3142b0b895a5e6553c05530d4ca6b41d883
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_12.1.0.orig.tar.xz' harfbuzz_12.1.0.orig.tar.xz 18208424 SHA512:94cbc3fe8fad30f4f7871bdddc8b129c486ab55329f9b48c6336fdf15d05f09c3c96cac51f68a0218db113b4783c07ce5d6bb455ccc875b31fd2261e3e8dc559
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_12.1.0-1build1.debian.tar.xz' harfbuzz_12.1.0-1build1.debian.tar.xz 19736 SHA512:66a2a7e4784a18d29efe351f022ceed7a326f7300b56d2f9d8a2d1f804ffe5ae7abbb2f20f70e53f8661bdb635d4ebfe28544b892eea9454f208691ec542a420
-```
 
 ### `dpkg` source package: `hicolor-icon-theme=0.18-2build1`
 
@@ -2447,14 +2439,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.51-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.51-1.dsc' libpng1.6_1.6.51-1.dsc 2254 SHA512:4e22e3aa50871451e832e706d4b718bddbf115f25cbe35f835539c9618fd878e746b7d6c91aa1820ba8cb1701c63bfd4e3d6e84a49f548773cbf5e98607055b2
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.51.orig.tar.gz' libpng1.6_1.6.51.orig.tar.gz 1579500 SHA512:3b9b320b306388d0394404dbd6a978ba115743d913b4dd8d382b7ecf1f4e1979439e9829187058f52553f0aac0f73b274091a354c00286cdc699373b5c727fde
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.51-1.debian.tar.xz' libpng1.6_1.6.51-1.debian.tar.xz 33468 SHA512:48b9dca62f0d14bea5e1de7ce84f9ec59704f1d701a3c57a746e3d414e9549e2fb03de8e0b80d73e753b0f1085e769a296725ed14292a97048ab869d20cb8467
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.51-1/
+
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build2`
 
@@ -4210,13 +4201,13 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 - `configure`
 - `installsh`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.26
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.26.dsc' sensible-utils_0.0.26.dsc 1706 SHA512:7597b6d0dc6bfcb3d63a7fa0b1191913ec1bb3c46c9cce8ac7fd1b270a99d237cdfa1452beef92487e4d35e5b6b2ef84758ee0de51fb071ac739e0b9c934ab06
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.26.tar.xz' sensible-utils_0.0.26.tar.xz 76736 SHA512:afc313ac57379987ef61f656386bb9e4ea14746a266584b4e49953449a1d4869d156d79211ab07826b2473c63e4e2903044751f67b905fab61363c6ba3967ec1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sensible-utils/0.0.26/
+
 
 ### `dpkg` source package: `serf=1.3.10-3ubuntu1`
 

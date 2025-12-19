@@ -1814,20 +1814,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=12.1.0-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.1.0-1.dsc' harfbuzz_12.1.0-1.dsc 2606 SHA256:92c7f19de1c3b16aa14a48dc54fce27879e030439a7b60765e25ce15fc7c2df1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.1.0.orig.tar.xz' harfbuzz_12.1.0.orig.tar.xz 18208424 SHA256:e5c81b7f6e0b102dfb000cfa424538b8e896ab78a2f4b8a5ec8cae62ab43369e
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.1.0-1.debian.tar.xz' harfbuzz_12.1.0-1.debian.tar.xz 19680 SHA256:d9a08582a2925ac0658a11a067e31839dbcc9ea55953f03f0e578716a7ec45bc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/12.1.0-1/
 
-- https://sources.debian.net/src/harfbuzz/12.1.0-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/12.1.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/12.1.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.18-2`
 
@@ -3893,21 +3886,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:11.8.5-2
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5-2.dsc' mariadb_11.8.5-2.dsc 5659 SHA256:4dc79d0d9588f2e931acc474cc44d87553d1c7c8f4e98ec0b3c681fc8e44f4aa
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5.orig.tar.gz' mariadb_11.8.5.orig.tar.gz 119948843 SHA256:bcb7394569c08877c283e1649869504531bee8caafa30288f078e30d99fcb9f6
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5.orig.tar.gz.asc' mariadb_11.8.5.orig.tar.gz.asc 833 SHA256:2e7d4c763e0b5580f6788d57005aaeb3d0742ab6d7e4b89fbc0c9f5d3ea96f21
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5-2.debian.tar.xz' mariadb_11.8.5-2.debian.tar.xz 291988 SHA256:26051b3cfad40bd9a26029ed5ef73437024f0d06c2d9b1e40d1aaf0e94fc879e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:11.8.5-2/
 
-- https://sources.debian.net/src/mariadb/1:11.8.5-2/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:11.8.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:11.8.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20250131-1`
 
@@ -5056,20 +5041,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.3.1-4
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-4.dsc' rust-sequoia-sq_1.3.1-4.dsc 4378 SHA256:67b8f3b4e51ee155bc613d97796dd61d69ce29e301638c0421060078aba1c1e9
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1.orig.tar.gz' rust-sequoia-sq_1.3.1.orig.tar.gz 740320 SHA256:5c04b662da1c207e79beaeff6e5ab2d713ab10c1263f64c367f8489aac815705
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-4.debian.tar.xz' rust-sequoia-sq_1.3.1-4.debian.tar.xz 5372 SHA256:2a2e482bfca29e4e022c27b211adb2cb91f35db51457744ca20c97a91778c92f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-4/
 
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-4/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.3.0-4`
 
@@ -5082,20 +5060,13 @@ Licenses: (parsed from: `/usr/share/doc/sqv/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sqv=1.3.0-4
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-4.dsc' rust-sequoia-sqv_1.3.0-4.dsc 2630 SHA256:c1064af7fe10c36230b30b2b02dddd4af0b01667daead9fffdac8dfcea67eba6
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0.orig.tar.gz' rust-sequoia-sqv_1.3.0.orig.tar.gz 140759 SHA256:8924571d26720b245292ad3c450e4061fcb24890461874790549747bffa35e60
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-4.debian.tar.xz' rust-sequoia-sqv_1.3.0-4.debian.tar.xz 3952 SHA256:71111bd1d2a9c4d34d481d4b395ee37e079f8c576f2874c1e4f58e107f89f4b7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sqv/1.3.0-4/
 
-- https://sources.debian.net/src/rust-sequoia-sqv/1.3.0-4/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sqv/1.3.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sqv/1.3.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-2`
 

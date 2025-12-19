@@ -1955,13 +1955,13 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 - `configure`
 - `installsh`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.26
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.26.dsc' sensible-utils_0.0.26.dsc 1706 SHA512:7597b6d0dc6bfcb3d63a7fa0b1191913ec1bb3c46c9cce8ac7fd1b270a99d237cdfa1452beef92487e4d35e5b6b2ef84758ee0de51fb071ac739e0b9c934ab06
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.26.tar.xz' sensible-utils_0.0.26.tar.xz 76736 SHA512:afc313ac57379987ef61f656386bb9e4ea14746a266584b4e49953449a1d4869d156d79211ab07826b2473c63e4e2903044751f67b905fab61363c6ba3967ec1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sensible-utils/0.0.26/
+
 
 ### `dpkg` source package: `shadow=1:4.17.4-2ubuntu2`
 

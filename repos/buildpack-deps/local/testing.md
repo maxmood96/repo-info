@@ -5038,20 +5038,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.3.1-4
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-4.dsc' rust-sequoia-sq_1.3.1-4.dsc 4378 SHA256:67b8f3b4e51ee155bc613d97796dd61d69ce29e301638c0421060078aba1c1e9
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1.orig.tar.gz' rust-sequoia-sq_1.3.1.orig.tar.gz 740320 SHA256:5c04b662da1c207e79beaeff6e5ab2d713ab10c1263f64c367f8489aac815705
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-4.debian.tar.xz' rust-sequoia-sq_1.3.1-4.debian.tar.xz 5372 SHA256:2a2e482bfca29e4e022c27b211adb2cb91f35db51457744ca20c97a91778c92f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-4/
 
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-4/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.3.0-3`
 
