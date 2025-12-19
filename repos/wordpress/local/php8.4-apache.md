@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c0ca2b0ee1b9f8592f940ab244057cd9dead6afcf2450517d395ff7c2ec2f5a2`
-- Created: `2025-12-09T00:05:17.642629969Z`
-- Virtual Size: ~ 740.51 Mb  
+- Image ID: `sha256:79afcb705b17925f8aedf15c688a2865367606284f5f484c02bb14308e8d77c3`
+- Created: `2025-12-19T02:12:46.78286007Z`
+- Virtual Size: ~ 740.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.15`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.15.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.15.tar.xz.asc`
-  - `PHP_SHA256=a060684f614b8344f9b34c334b6ba8db1177555997edb5b1aceab0a4b807da7e`
+  - `PHP_VERSION=8.4.16`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.16.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.16.tar.xz.asc`
+  - `PHP_SHA256=f66f8f48db34e9e29f7bfd6901178e9cf4a1b163e6e497716dfcb8f88bcfae30`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2653,11 +2653,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libpaper/2.2.5-0.3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libpaper/2.2.5-0.3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.48-1`
+### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u1`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.48-1`
+- `libpng16-16t64:amd64=1.6.48-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -2673,17 +2673,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.48-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1.dsc' libpng1.6_1.6.48-1.dsc 2254 SHA256:dd8742533bd0201d64c94e019460ddf28141f369fc78f52c19028d58530f87f0
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1.debian.tar.xz' libpng1.6_1.6.48-1.debian.tar.xz 33240 SHA256:647c6b09cdb628200e2213b75f6ab3fe0a4fe18f21fe78c6821ecb15e154e7d2
+$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u1.dsc' libpng1.6_1.6.48-1+deb13u1.dsc 2286 SHA256:0f0a79157e67ab9b2df6ca77192b5255277ae5d07a929d9a0ee8cba1ceedb21f
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u1.debian.tar.xz' libpng1.6_1.6.48-1+deb13u1.debian.tar.xz 39324 SHA256:416084e356fed53da55e399ec8ea720050db9013a7c28f68454f27a53cf42563
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.48-1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.48-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.48-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
