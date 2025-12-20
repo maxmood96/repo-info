@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:57a945053d483852b16969abcbdfbfb0fb317c22b8ceb7bf128b0ab3f2bfd9d2`
-- Created: `2025-12-09T00:15:43.390760332Z`
+- Image ID: `sha256:46e012e0bedfb633bd51d338c24801104d4b983a879dff33dc812702619465b1`
+- Created: `2025-12-18T22:11:21.295878852Z`
 - Virtual Size: ~ 677.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.28`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.28.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.28.tar.xz.asc`
-  - `PHP_SHA256=25e3860f30198a386242891c0bf9e2955931f7b666b96c3e3103d36a2a322326`
+  - `PHP_VERSION=8.3.29`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.29.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.29.tar.xz.asc`
+  - `PHP_SHA256=f7950ca034b15a78f5de9f1b22f4d9bad1dd497114d175cb1672a4ca78077af5`
   - `GOSU_VERSION=1.17`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
@@ -2601,11 +2601,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libonig/6.9.8-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libonig/6.9.8-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.39-2`
+### `dpkg` source package: `libpng1.6=1.6.39-2+deb12u1`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.39-2`
+- `libpng16-16:amd64=1.6.39-2+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -2621,17 +2621,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.39-2
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39-2.dsc' libpng1.6_1.6.39-2.dsc 2241 SHA256:c5fcfb43b423028e7f3c00ea398caddec361bf796ff1cbc18dd565b97fb1a3fe
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39-2.debian.tar.xz' libpng1.6_1.6.39-2.debian.tar.xz 31076 SHA256:c3a73a6143e18c9a62b32d6db80acbc525f03c795bca41079087d89febff0217
+$ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u1.dsc' libpng1.6_1.6.39-2+deb12u1.dsc 2273 SHA256:6b663fc339dbe78547d442c70e82096efee15840ba63681b0073d57a658b7a10
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u1.debian.tar.xz' libpng1.6_1.6.39-2+deb12u1.debian.tar.xz 37092 SHA256:a73d8896e915e623873902ec2f1f51d0aa4c93d8f51c11f56a627cd79336c9ba
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.39-2/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.39-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.39-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1`
 
