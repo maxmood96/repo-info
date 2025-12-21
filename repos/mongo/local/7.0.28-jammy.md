@@ -1,10 +1,10 @@
-# `mongo:7.0.26-jammy`
+# `mongo:7.0.28-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c20972d6afe30795beeb37beefeabca3a85f51d828cc2b9c21bc14c8bf480661`
-- Created: `2025-11-19T23:54:13.303224005Z`
-- Virtual Size: ~ 834.44 Mb  
+- Image ID: `sha256:78d3fc6a30aa004341d3477bd22a5493dba15f8fbcc883384d546124a9e809a3`
+- Created: `2025-12-19T18:55:51.370867948Z`
+- Virtual Size: ~ 843.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=7.0`
-  - `MONGO_VERSION=7.0.26`
+  - `MONGO_VERSION=7.0.28`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1292,11 +1292,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20200120-3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20200120-3.debian.tar.xz' mawk_1.3.4.20200120-3.debian.tar.xz 7520 SHA512:bc4f5401de313108595ba91b17f44b5c67d7650b5557eef8a6c63c75e2ccee5dfd8900576d7e81f0ab1ac2e570f64fa75f38f56f6d4535437c803029216501af
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.13.0`
+### `dpkg` source package: `mongodb-database-tools=100.14.0`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.13.0`
+- `mongodb-database-tools=100.14.0`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1306,11 +1306,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.5.9`
+### `dpkg` source package: `mongodb-mongosh=2.5.10`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.5.9`
+- `mongodb-mongosh=2.5.10`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1321,17 +1321,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=7.0.26`
+### `dpkg` source package: `mongodb-org=7.0.28`
 
 Binary Packages:
 
-- `mongodb-org=7.0.26`
-- `mongodb-org-database=7.0.26`
-- `mongodb-org-database-tools-extra=7.0.26`
-- `mongodb-org-mongos=7.0.26`
-- `mongodb-org-server=7.0.26`
-- `mongodb-org-shell=7.0.26`
-- `mongodb-org-tools=7.0.26`
+- `mongodb-org=7.0.28`
+- `mongodb-org-database=7.0.28`
+- `mongodb-org-database-tools-extra=7.0.28`
+- `mongodb-org-mongos=7.0.28`
+- `mongodb-org-server=7.0.28`
+- `mongodb-org-shell=7.0.28`
+- `mongodb-org-tools=7.0.28`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
