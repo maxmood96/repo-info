@@ -152,12 +152,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Boost and MIT and Python
 
-Source:
-
-```console
-$ dnf --quiet download --source --url boost-program-options-1.75.0-12.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/b/boost-1.75.0-12.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `bzip2-libs-1.0.8-10.el9_5.x86_64`
 
@@ -321,7 +316,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-5.el9_7.1.x86_64`
@@ -503,7 +498,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -593,7 +588,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1176,7 +1171,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.6.2-1.el9
-http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.5-1.el9.x86_64`
@@ -2243,7 +2238,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2254,7 +2249,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
