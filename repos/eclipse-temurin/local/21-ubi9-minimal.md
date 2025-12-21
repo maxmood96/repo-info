@@ -103,23 +103,13 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): GPLv3+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url binutils-2.35.2-67.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/binutils-2.35.2-67.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `binutils-gold-2.35.2-67.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url binutils-gold-2.35.2-67.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/binutils-2.35.2-67.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `bzip2-libs-1.0.8-10.el9_5.x86_64`
 
