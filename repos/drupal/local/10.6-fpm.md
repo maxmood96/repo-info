@@ -1,9 +1,9 @@
-# `drupal:10.6.0-php8.4-fpm-trixie`
+# `drupal:10.6.1-php8.4-fpm-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f8b2a18048cb4ce6a9be0fbcf44f10d30a616bf909c9b78a3bd045ccc3205b61`
-- Created: `2025-12-18T02:16:25.101321678Z`
+- Image ID: `sha256:58830674a2414a0ba52f408b27dfac7b5c6ea9cd2c4d613a6e71cf0c22691f9f`
+- Created: `2025-12-19T02:14:43.345121783Z`
 - Virtual Size: ~ 598.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,11 +17,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.15`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.15.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.15.tar.xz.asc`
-  - `PHP_SHA256=a060684f614b8344f9b34c334b6ba8db1177555997edb5b1aceab0a4b807da7e`
-  - `DRUPAL_VERSION=10.6.0`
+  - `PHP_VERSION=8.4.16`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.16.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.16.tar.xz.asc`
+  - `PHP_SHA256=f66f8f48db34e9e29f7bfd6901178e9cf4a1b163e6e497716dfcb8f88bcfae30`
+  - `DRUPAL_VERSION=10.6.1`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
