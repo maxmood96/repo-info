@@ -1,10 +1,10 @@
-# `neo4j:2025.10.1-enterprise-ubi9`
+# `neo4j:2025.11.2-enterprise-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b3cbcb9cdfde40ff51ad4a263432ba648131d315537b8244a27c0bab245560a1`
-- Created: `2025-12-04T19:49:30.603343816Z`
-- Virtual Size: ~ 864.61 Mb  
+- Image ID: `sha256:40128098e30d4be307ca144288b73eecc06c06d112438d4e573ecefbeeede459`
+- Created: `2025-12-19T18:36:57.513110052Z`
+- Virtual Size: ~ 868.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=6ddde9170f21067bde1dbb3f910d6f5faddf48026177e3c43d1410d4b5cd3b76`
-  - `NEO4J_TARBALL=neo4j-enterprise-2025.10.1-unix.tar.gz`
+  - `NEO4J_SHA256=22fe6ea9bb332e5a1250b0fd1c226539e0a4babec699e0b1e7d2aa5043f65e05`
+  - `NEO4J_TARBALL=neo4j-enterprise-2025.11.2-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
@@ -121,17 +121,27 @@ $ dnf --quiet download --source --url bash-5.1.8-9.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/bash-5.1.8-9.el9.src.rpm
 ```
 
-### `rpm` package: `binutils-2.35.2-67.el9.x86_64`
+### `rpm` package: `binutils-2.35.2-67.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `binutils-gold-2.35.2-67.el9.x86_64`
+```console
+$ dnf --quiet download --source --url binutils-2.35.2-67.el9_7.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/binutils-2.35.2-67.el9_7.1.src.rpm
+```
+
+### `rpm` package: `binutils-gold-2.35.2-67.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url binutils-gold-2.35.2-67.el9_7.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/binutils-2.35.2-67.el9_7.1.src.rpm
+```
 
 ### `rpm` package: `bzip2-libs-1.0.8-10.el9_5.x86_64`
 
@@ -613,11 +623,16 @@ $ dnf --quiet download --source --url hostname-3.23-6.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/h/hostname-3.23-6.el9.src.rpm
 ```
 
-### `rpm` package: `java-21-openjdk-headless-21.0.9.0.10-1.el9.x86_64`
+### `rpm` package: `java-21-openjdk-headless-21.0.9.0.10-2.el9.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url java-21-openjdk-headless-21.0.9.0.10-2.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/j/java-21-openjdk-21.0.9.0.10-2.el9.src.rpm
+```
 
 ### `rpm` package: `javapackages-filesystem-6.4.0-1.el9.noarch`
 
@@ -663,7 +678,7 @@ $ dnf --quiet download --source --url json-glib-1.6.6-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/j/json-glib-1.6.6-1.el9.src.rpm
 ```
 
-### `rpm` package: `kernel-headers-5.14.0-611.11.1.el9_7.x86_64`
+### `rpm` package: `kernel-headers-5.14.0-611.16.1.el9_7.x86_64`
 
 Licenses (from `rpm --query`): ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-2-Clause) AND ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-3-Clause) AND ((GPL-2.0-only WITH Linux-syscall-note) OR CDDL-1.0) AND ((GPL-2.0-only WITH Linux-syscall-note) OR Linux-OpenIB) AND ((GPL-2.0-only WITH Linux-syscall-note) OR MIT) AND ((GPL-2.0-or-later WITH Linux-syscall-note) OR BSD-3-Clause) AND ((GPL-2.0-or-later WITH Linux-syscall-note) OR MIT) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-Clear AND GFDL-1.1-no-invariants-or-later AND GPL-1.0-or-later AND (GPL-1.0-or-later OR BSD-3-Clause) AND (GPL-1.0-or-later WITH Linux-syscall-note) AND GPL-2.0-only AND (GPL-2.0-only OR Apache-2.0) AND (GPL-2.0-only OR BSD-2-Clause) AND (GPL-2.0-only OR BSD-3-Clause) AND (GPL-2.0-only OR CDDL-1.0) AND (GPL-2.0-only OR GFDL-1.1-no-invariants-or-later) AND (GPL-2.0-only OR GFDL-1.2-no-invariants-only) AND (GPL-2.0-only WITH Linux-syscall-note) AND GPL-2.0-or-later AND (GPL-2.0-or-later OR BSD-2-Clause) AND (GPL-2.0-or-later OR BSD-3-Clause) AND (GPL-2.0-or-later OR CC-BY-4.0) AND (GPL-2.0-or-later WITH GCC-exception-2.0) AND (GPL-2.0-or-later WITH Linux-syscall-note) AND ISC AND LGPL-2.0-or-later AND (LGPL-2.0-or-later OR BSD-2-Clause) AND (LGPL-2.0-or-later WITH Linux-syscall-note) AND LGPL-2.1-only AND (LGPL-2.1-only OR BSD-2-Clause) AND (LGPL-2.1-only WITH Linux-syscall-note) AND LGPL-2.1-or-later AND (LGPL-2.1-or-later WITH Linux-syscall-note) AND (Linux-OpenIB OR GPL-2.0-only) AND (Linux-OpenIB OR GPL-2.0-only OR BSD-2-Clause) AND Linux-man-pages-copyleft AND MIT AND (MIT OR GPL-2.0-only) AND (MIT OR GPL-2.0-or-later) AND (MIT OR LGPL-2.1-only) AND (MPL-1.1 OR GPL-2.0-only) AND (X11 OR GPL-2.0-only) AND (X11 OR GPL-2.0-or-later) AND Zlib AND (copyleft-next-0.3.1 OR GPL-2.0-or-later)
 
@@ -1571,17 +1586,27 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssh-8.7p1-46.el9.x86_64`
+### `rpm` package: `openssh-8.7p1-47.el9_7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `openssh-clients-8.7p1-46.el9.x86_64`
+```console
+$ dnf --quiet download --source --url openssh-8.7p1-47.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-8.7p1-47.el9_7.src.rpm
+```
+
+### `rpm` package: `openssh-clients-8.7p1-47.el9_7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssh-clients-8.7p1-47.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-8.7p1-47.el9_7.src.rpm
+```
 
 ### `rpm` package: `openssl-3.5.1-4.el9_7.x86_64`
 
@@ -1759,23 +1784,38 @@ $ dnf --quiet download --source --url publicsuffix-list-dafsa-20210518-3.el9.noa
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/publicsuffix-list-20210518-3.el9.src.rpm
 ```
 
-### `rpm` package: `python-unversioned-command-3.9.23-2.el9.noarch`
+### `rpm` package: `python-unversioned-command-3.9.25-2.el9_7.noarch`
 
 Licenses (from `rpm --query`): Python
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `python3-3.9.23-2.el9.x86_64`
+```console
+$ dnf --quiet download --source --url python-unversioned-command-3.9.25-2.el9_7.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.25-2.el9_7.src.rpm
+```
+
+### `rpm` package: `python3-3.9.25-2.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Python
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `python3-libs-3.9.23-2.el9.x86_64`
+```console
+$ dnf --quiet download --source --url python3-3.9.25-2.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.25-2.el9_7.src.rpm
+```
+
+### `rpm` package: `python3-libs-3.9.25-2.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Python
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url python3-libs-3.9.25-2.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.25-2.el9_7.src.rpm
+```
 
 ### `rpm` package: `python3-pip-wheel-21.3.1-1.el9.noarch`
 
@@ -1959,11 +1999,16 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `tzdata-java-2025b-2.el9.noarch`
+### `rpm` package: `tzdata-java-2025c-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-java-2025c-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2025c-1.el9.src.rpm
+```
 
 ### `rpm` package: `util-linux-2.37.4-21.el9.x86_64`
 
