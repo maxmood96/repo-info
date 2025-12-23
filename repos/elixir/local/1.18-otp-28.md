@@ -8842,21 +8842,13 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.1-0/copyright`, `
 - `MPL-1.1`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris webkit2gtk=2.50.3-1~deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.50.3-1%7edeb13u1.dsc' webkit2gtk_2.50.3-1~deb13u1.dsc 4947 SHA256:0df61c09f89e1b66cc75966d144061f67bb7dad9eaa4c20ca8cd2e36c12bccd3
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.50.3.orig.tar.xz' webkit2gtk_2.50.3.orig.tar.xz 43772540 SHA256:70a006b4695bb6b2e157e801f5a0d029f4110f050c6f0882decd8a3bf594d54f
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.50.3.orig.tar.xz.asc' webkit2gtk_2.50.3.orig.tar.xz.asc 195 SHA256:ce3c3de459b0a7748424ae1d3605d8a270cede0e40977f78b0dd436d8de805a9
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.50.3-1%7edeb13u1.debian.tar.xz' webkit2gtk_2.50.3-1~deb13u1.debian.tar.xz 91468 SHA256:9f44313d0ffa141d87bf11228c2e769ad568d29919026f32a2b54581c528e81b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/webkit2gtk/2.50.3-1~deb13u1/
 
-- https://sources.debian.net/src/webkit2gtk/2.50.3-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/webkit2gtk/2.50.3-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/webkit2gtk/2.50.3-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
