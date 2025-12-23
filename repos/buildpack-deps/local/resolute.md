@@ -1093,14 +1093,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-15/copyright`, `/usr/share/doc/cpp-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.2.0-10ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-10ubuntu1.dsc' gcc-15_15.2.0-10ubuntu1.dsc 52625 SHA512:a584f9ed1f83201ec6816da55479aa97af8ad639d4e4d819b0d6586bf5549f25ca267ca4cb7fc8e7c2f9cb97ca22513a6a6f6cf79dcaf7deff9a546170d73c0a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0.orig.tar.gz' gcc-15_15.2.0.orig.tar.gz 105962230 SHA512:83887af5c7798105d1ad85f0e9c794daa3cf030638bf40b3bff48771b8325d95c9a0d99d7d2c86c8e45499ff87f975e1914d00b72482862357645cc7ec330d38
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-10ubuntu1.debian.tar.xz' gcc-15_15.2.0-10ubuntu1.debian.tar.xz 2819216 SHA512:7bbda437406c6a1b5243c3f197c5d59642f5ef4ca721e06e8cc33fcc0f7ee98c771826c9a8064f20411b38961bdbaca36d0fbee036f985d2b59c6972bd9f2e68
-```
 
 ### `dpkg` source package: `gcc-defaults=1.229ubuntu1`
 
@@ -1229,15 +1224,13 @@ Licenses: (parsed from: `/usr/share/doc/girepository-tools/copyright`, `/usr/sha
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.86.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.86.2-1.dsc' glib2.0_2.86.2-1.dsc 4911 SHA512:75d50e7fdc2006af13b128714a27d638e37c2b338a7353e5822302acf1c3d06582de8d332fa51199b9873745868cd6ee574dc2f706c5aed5cbec957d47e6daba
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.86.2.orig-unicode-data.tar.xz' glib2.0_2.86.2.orig-unicode-data.tar.xz 660708 SHA512:09546f4f69b7b911fbde1fea66b11ae32a9e1320d2ede32cdfdd0f15843de985070edceb68b0a6bcb2477ef7b7cc298eefc261d26db5fc6b198fd67eaee35097
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.86.2.orig.tar.xz' glib2.0_2.86.2.orig.tar.xz 5673792 SHA512:b9ef7ea7e1eeff142a8ab76fb0552331fd642133a31505e2939f57d7d9c5ec86dcefddc725c715925a42c348d71e2a8bf2eb399150108199b6daeca2761e08d6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.86.2-1.debian.tar.xz' glib2.0_2.86.2-1.debian.tar.xz 141244 SHA512:f13922cb067fe47ec44e5ebab8ee3aeefcacaa246234eb45fdade3fa9125883035458bc98aed2b9285cb7b1a9dc177435de1df074acbacf1360a46cbb9ac4c80
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.86.2-1/
+
 
 ### `dpkg` source package: `glibc=2.42-2ubuntu2`
 
@@ -3096,14 +3089,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.17.0-8.8
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0-8.8.dsc' linux_6.17.0-8.8.dsc 8747 SHA512:fee907629a87a3286e38d1aedab5e54b4f73ac64972051779a107eca4cec4295573540243fd039dda72d4f42593de3e083deb71f4c881a0e6246fa9ecee3de98
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0.orig.tar.gz' linux_6.17.0.orig.tar.gz 248671329 SHA512:dc17e8dad07913ff20078194c0d9036e116db2fe1639cbddfccfaeda218cff06d0c7649f8182a07a999cf705a7b9749d26c8abe988f6b0b3c46b3142448f005f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0-8.8.diff.gz' linux_6.17.0-8.8.diff.gz 1405275 SHA512:3b5a303fcbf8908de52a520e73a3030754df3b8576162720463de87f3480fe3e30ad058e71b510074e17145888edc530d7d413651cc0ed8f1fe374e7e3aed174
-```
 
 ### `dpkg` source package: `lto-disabled-list=72`
 
@@ -3199,15 +3187,9 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 - `GPL-2.0-only`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mawk=1.3.4.20250131-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20250131-1build1.dsc' mawk_1.3.4.20250131-1build1.dsc 2993 SHA512:a39573b1440ce985f71defe9f5834b1028ddb5ca74b724aab69a671dcb2bb30baaaa559eade762a069bed75efe682d0f010610ac434172caca15addb094d5201
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20250131.orig.tar.gz' mawk_1.3.4.20250131.orig.tar.gz 433213 SHA512:100b1f5ee190d2841d5dee449c53601a6d32453e47b232de919f3489f6f7040d0c6d21f6c7d30df616b04abde2db9799c5eb16570c1f88dbc10fcd75c5838042
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20250131.orig.tar.gz.asc' mawk_1.3.4.20250131.orig.tar.gz.asc 729 SHA512:0d8ac93bdafcd8915b0d2d2b675f8d5cf2aeba655cd04af4b4037336b74b320e02db360b7d18b796aedc09fbabc8a42e471766ea24219bad7a1cbff4f7679552
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20250131-1build1.debian.tar.xz' mawk_1.3.4.20250131-1build1.debian.tar.xz 16072 SHA512:ca2258118c955bb2215a8909dbe90bc11b5af5fc1645cf32131b0b96535826b8298c2a2d9c715cc68660727cb61c53abb789066bcf10cb589a9be455ff7c002e
-```
 
 ### `dpkg` source package: `media-types=14.0.0`
 
@@ -3219,13 +3201,13 @@ Licenses: (parsed from: `/usr/share/doc/media-types/copyright`)
 
 - `ad-hoc`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris media-types=14.0.0
-'http://archive.ubuntu.com/ubuntu/pool/main/m/media-types/media-types_14.0.0.dsc' media-types_14.0.0.dsc 1917 SHA512:542529bde4bee8b26d8f2941ca68ff202ac62353d378be6b78f15339dde1344a76e2f0c48b520471c3a5d07c2e1fa236abad67d38510749ea9c164554651ce7f
-'http://archive.ubuntu.com/ubuntu/pool/main/m/media-types/media-types_14.0.0.tar.xz' media-types_14.0.0.tar.xz 65204 SHA512:a1a973ea115068718fc3b6c57d33c6ad0c7db99b2fa32b4d789e51b80006b4ac2d685926ecc070e6b2a17c53e16c03a51a58e23323aa5e46975d535ab1eceef8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/media-types/14.0.0/
+
 
 ### `dpkg` source package: `mercurial=7.1.1-1ubuntu1`
 
@@ -4440,14 +4422,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-5ubuntu1.dsc' tzdata_2025b-5ubuntu1.dsc 2439 SHA512:44b445d9e597886beb6374a23472354e8855d98f2eea5dd9de5bbe68d3751792cad0003b57fc8bbfb4c0f85caa68164e7b6184457eb46fe2b39814509be97418
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-5ubuntu1.debian.tar.xz' tzdata_2025b-5ubuntu1.debian.tar.xz 188720 SHA512:6c61a1cd62fb0e43324e3fde60dbf24d7d97d9374e6dbf00ebd5c890f534ce79e2b38f3e99a71290834d34f9b67485830b94fb3ec52ec53ac9ac797824b5f217
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 
