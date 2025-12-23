@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4254545ccc792295fed0aebf758cfe4d63b40cc98eb9ba62914690ba5347912b`
-- Created: `2025-12-02T01:15:07.227173521Z`
+- Image ID: `sha256:8baa318d69a25b7d72aa8c4324d70573666a057ecf670d416d342c872fcd9e0f`
+- Created: `2025-12-20T00:09:04.539007456Z`
 - Virtual Size: ~ 185.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.33`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.33.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.33.tar.xz.asc`
-  - `PHP_SHA256=9db83bf4590375562bc1a10b353cccbcf9fcfc56c58b7c8fb814e6865bb928d1`
+  - `PHP_VERSION=8.1.34`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.34.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.34.tar.xz.asc`
+  - `PHP_SHA256=ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.12.0`
   - `WORDPRESS_CLI_SHA512=be928f6b8ca1e8dfb9d2f4b75a13aa4aee0896f8a9a0a1c45cd5d2c98605e6172e6d014dda2e27f88c98befc16c040cbb2bd1bfa121510ea5cdf5f6a30fe8832`
@@ -234,16 +234,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.5-r0 description:
+c-ares-1.34.6-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.5-r0 webpage:
+c-ares-1.34.6-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.5-r0 installed size:
+c-ares-1.34.6-r0 installed size:
 233 KiB
 
-c-ares-1.34.5-r0 license:
+c-ares-1.34.6-r0 license:
 MIT
 
 ```
@@ -693,16 +693,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.47-r0 description:
+libpng-1.6.53-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.47-r0 webpage:
+libpng-1.6.53-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.47-r0 installed size:
+libpng-1.6.53-r0 installed size:
 181 KiB
 
-libpng-1.6.47-r0 license:
+libpng-1.6.53-r0 license:
 Libpng
 
 ```
@@ -914,16 +914,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r6 description:
+libxml2-2.13.9-r0 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r6 webpage:
+libxml2-2.13.9-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r6 installed size:
-1054 KiB
+libxml2-2.13.9-r0 installed size:
+1050 KiB
 
-libxml2-2.13.4-r6 license:
+libxml2-2.13.9-r0 license:
 MIT
 
 ```

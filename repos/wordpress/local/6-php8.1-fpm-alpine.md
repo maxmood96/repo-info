@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cac24d86bd51807e3b1ddaf735937215b89fc65dafafc770874eb05141df27b3`
-- Created: `2025-12-03T23:27:48.421614841Z`
+- Image ID: `sha256:0e0a9b9bfb8029c1fba8fea0f32240d2d779f0ff348d5e1490dc1a762d45b4b4`
+- Created: `2025-12-20T00:07:54.682365932Z`
 - Virtual Size: ~ 269.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.33`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.33.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.33.tar.xz.asc`
-  - `PHP_SHA256=9db83bf4590375562bc1a10b353cccbcf9fcfc56c58b7c8fb814e6865bb928d1`
+  - `PHP_VERSION=8.1.34`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.34.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.34.tar.xz.asc`
+  - `PHP_SHA256=ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251`
 
 ## `apk` (`.apk`-based packages)
 
@@ -248,16 +248,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.5-r0 description:
+c-ares-1.34.6-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.5-r0 webpage:
+c-ares-1.34.6-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.5-r0 installed size:
+c-ares-1.34.6-r0 installed size:
 233 KiB
 
-c-ares-1.34.5-r0 license:
+c-ares-1.34.6-r0 license:
 MIT
 
 ```
@@ -928,16 +928,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.47-r0 description:
+libpng-1.6.53-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.47-r0 webpage:
+libpng-1.6.53-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.47-r0 installed size:
+libpng-1.6.53-r0 installed size:
 181 KiB
 
-libpng-1.6.47-r0 license:
+libpng-1.6.53-r0 license:
 Libpng
 
 ```
@@ -1234,16 +1234,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r6 description:
+libxml2-2.13.9-r0 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r6 webpage:
+libxml2-2.13.9-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r6 installed size:
-1054 KiB
+libxml2-2.13.9-r0 installed size:
+1050 KiB
 
-libxml2-2.13.4-r6 license:
+libxml2-2.13.9-r0 license:
 MIT
 
 ```
