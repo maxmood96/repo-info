@@ -1,7 +1,7 @@
 ## `jetty:12-jdk21-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:9c094bbe27cce653a7a191a5eadc6dea230399ac33446b29edcd77f566903352
+$ docker pull jetty@sha256:36da5a78d65f3a0259c54f703f15c579bcbbb7841251730880ef25168d3a3101
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull jetty@sha256:9c094bbe27cce653a7a191a5eadc6dea230399ac33446b29edcd7
 ### `jetty:12-jdk21-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:9d1cedd1210fec94e76ffa77319d747b105c9a4c47e1aabc17e7036bc28fa6cb
+$ docker pull jetty@sha256:03914df79a0f5733e9e80001fb3365a34f797009a72a083a9b7ff7cca7c7e27a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.6 MB (256633923 bytes)**  
+-	Total Size: **256.7 MB (256700849 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee8a4e4c75a9be25c8b2a9ab2e69c42b3aafdc9f8d473758c8e5853b74f6613e`
+-	Image ID: `sha256:bf34214b33a24c5e204409d2406524e0c0b28d944a87ec27dd3fa526c1954bea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -57,33 +57,33 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 13 Nov 2025 23:21:51 GMT
 CMD ["jshell"]
-# Fri, 14 Nov 2025 00:22:22 GMT
-ENV JETTY_VERSION=12.1.3
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:18 GMT
+ENV JETTY_VERSION=12.1.4
+# Wed, 24 Dec 2025 05:11:18 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:18 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:18 GMT
 ENV TMPDIR=/tmp/jetty
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:18 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 14 Nov 2025 00:22:22 GMT
-ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.3/jetty-home-12.1.3.tar.gz
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:18 GMT
+ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.4/jetty-home-12.1.4.tar.gz
+# Wed, 24 Dec 2025 05:11:18 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:18 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:18 GMT
 WORKDIR /var/lib/jetty
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:18 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:18 GMT
 USER jetty
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:18 GMT
 EXPOSE map[8080/tcp:{}]
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:18 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -108,53 +108,53 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Thu, 13 Nov 2025 23:22:14 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69b75b392e46c92edcaaa7bac1599a4a70fdc5748156522a30dafb14b40856cb`  
-		Last Modified: Fri, 14 Nov 2025 00:22:42 GMT  
-		Size: 46.1 MB (46106276 bytes)  
+	-	`sha256:3e4a566f6f67ab289fd371c91707015c26ce4c438d64e545f3b351356e10ace4`  
+		Last Modified: Wed, 24 Dec 2025 05:11:41 GMT  
+		Size: 46.2 MB (46173202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8be90ba5e6d694182dcb765f73debaff4825ff3594488b80bcc3df61467bf90`  
-		Last Modified: Fri, 14 Nov 2025 00:22:37 GMT  
+	-	`sha256:0287027aa240c52ed660f2c8f7d0ee0bdc023a834051c84eb5c4d13d9123c9bc`  
+		Last Modified: Wed, 24 Dec 2025 05:11:37 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12-jdk21-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:af8050ada1f6b571f70cd9b40ea0a9978be7215fb41d1e0e1b3c80d219e06d19
+$ docker pull jetty@sha256:53b40aef985d86dd59b926c907e8b5c4ff6f511a4204ac56c06a155f6098a065
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.9 MB (3881300 bytes)**  
+-	Total Size: **3.9 MB (3881276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c00ba1dec9ae5ba495c68663ceafa1f45db0ee0f6471d00c615a66606d945275`
+-	Image ID: `sha256:bf3023d51d9195c5d648391867e987e74ab47eb269e13e63c50ab012840287ec`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:67be3942ff224f3cf433ec81ea583b64cf1a5640d81da26fa4c4e7ee58adbc66`  
-		Last Modified: Fri, 14 Nov 2025 03:20:36 GMT  
-		Size: 3.9 MB (3857385 bytes)  
+	-	`sha256:70eec99f354606a8e4771458141387aee5f7a7654fcc12ad14826dfefc7e6753`  
+		Last Modified: Wed, 24 Dec 2025 06:16:37 GMT  
+		Size: 3.9 MB (3857361 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:717b2f494e08f097fd6b90419fc8305296bb76111744e6b1862a78fcca7bb10e`  
-		Last Modified: Fri, 14 Nov 2025 03:20:37 GMT  
+	-	`sha256:ae743f319e5cc29996767d5a0e2ed17e0d5564d1b7be5120c9729dd0aaf8088e`  
+		Last Modified: Wed, 24 Dec 2025 06:16:37 GMT  
 		Size: 23.9 KB (23915 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12-jdk21-eclipse-temurin` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:5d982acbd4e71ceff2715f4276419289651b1337f38d6c14fac221efd8b89543
+$ docker pull jetty@sha256:390f165f47258ecbf082667ceebf00c83ed0607c030f993151b38cbb2d4bfbf0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.2 MB (255247508 bytes)**  
+-	Total Size: **255.3 MB (255314474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27c2dbc63f43c69a93870a9468d302c8b2d837e39301fc8a7ffab56e32614f1d`
+-	Image ID: `sha256:1ff9697ceaa047eeacce782ac68072cac762ac447aa01e9660e7976746bc10f3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -191,33 +191,33 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 13 Nov 2025 23:21:22 GMT
 CMD ["jshell"]
-# Fri, 14 Nov 2025 00:22:22 GMT
-ENV JETTY_VERSION=12.1.3
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:19 GMT
+ENV JETTY_VERSION=12.1.4
+# Wed, 24 Dec 2025 05:11:19 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:19 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:19 GMT
 ENV TMPDIR=/tmp/jetty
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:19 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 14 Nov 2025 00:22:22 GMT
-ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.3/jetty-home-12.1.3.tar.gz
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:19 GMT
+ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.4/jetty-home-12.1.4.tar.gz
+# Wed, 24 Dec 2025 05:11:19 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
-# Fri, 14 Nov 2025 00:22:22 GMT
+# Wed, 24 Dec 2025 05:11:19 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Fri, 14 Nov 2025 00:22:23 GMT
+# Wed, 24 Dec 2025 05:11:19 GMT
 WORKDIR /var/lib/jetty
-# Fri, 14 Nov 2025 00:22:23 GMT
+# Wed, 24 Dec 2025 05:11:19 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Fri, 14 Nov 2025 00:22:23 GMT
+# Wed, 24 Dec 2025 05:11:19 GMT
 USER jetty
-# Fri, 14 Nov 2025 00:22:23 GMT
+# Wed, 24 Dec 2025 05:11:19 GMT
 EXPOSE map[8080/tcp:{}]
-# Fri, 14 Nov 2025 00:22:23 GMT
+# Wed, 24 Dec 2025 05:11:19 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 14 Nov 2025 00:22:23 GMT
+# Wed, 24 Dec 2025 05:11:19 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -242,39 +242,39 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Thu, 13 Nov 2025 23:21:50 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ac4c65bed879c71a977413b83c0d738afaafdf41902c63cd2110ac06d0d2f1a`  
-		Last Modified: Fri, 14 Nov 2025 00:22:46 GMT  
-		Size: 46.1 MB (46106221 bytes)  
+	-	`sha256:efbea8a1fe0d1c6490bef6369011f521150ca11e645bb351b82afd512dcb3906`  
+		Last Modified: Wed, 24 Dec 2025 05:11:45 GMT  
+		Size: 46.2 MB (46173187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b34ac1644e3667329a9c72023a9108c8fcf976a89a4f6b660e3a4776d06cbfd`  
-		Last Modified: Fri, 14 Nov 2025 00:22:41 GMT  
+	-	`sha256:878fa11a34d4435f4fd3843f173081680155d15eff5b8bc1359e84537d208fa8`  
+		Last Modified: Wed, 24 Dec 2025 05:11:27 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12-jdk21-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:f638f23ffcd6add43b0a74a36aa4a586d3e9886513c6c05a621d8244a4345560
+$ docker pull jetty@sha256:dd4d4249ac1646d43df45e2c3c17b0caabed2bf2bbac41c6ce94f7e5a62c6e88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (4013165 bytes)**  
+-	Total Size: **4.0 MB (4013141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be7ee01ae84d8e6ae4e654602763e46172905a40a22131c056afe36048505e11`
+-	Image ID: `sha256:1eaa3ada8671b59a9c05c7d3755df33901617ab3f1f535e06e84704541e4bab4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2dc3dd5815918675cd3d921b71ed41975fff5a0094f54974a86d3f7e68f29e50`  
-		Last Modified: Fri, 14 Nov 2025 03:20:41 GMT  
-		Size: 4.0 MB (3989026 bytes)  
+	-	`sha256:c7b2f3907bd1b6ab4c02e7f99665e8dadd459397ee4edb79d958620140cbd88c`  
+		Last Modified: Wed, 24 Dec 2025 06:16:42 GMT  
+		Size: 4.0 MB (3989002 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b5a60d36e678b9f7f105ebe72cb7364c7f7618ef4a19215368c29a3892a80874`  
-		Last Modified: Fri, 14 Nov 2025 03:20:42 GMT  
+	-	`sha256:4c1d6d409daf7228a2cb4dedef631c2f2c5eae5bdf3d1ea67e6f806183d4ed75`  
+		Last Modified: Wed, 24 Dec 2025 06:16:43 GMT  
 		Size: 24.1 KB (24139 bytes)  
 		MIME: application/vnd.in-toto+json
