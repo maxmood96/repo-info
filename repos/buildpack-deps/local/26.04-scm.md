@@ -1184,14 +1184,9 @@ Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20250104-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libedit/libedit_3.1-20250104-1build1.dsc' libedit_3.1-20250104-1build1.dsc 2288 SHA512:b1b7350ea9c627c8376d45c976ac312a24f21daba0ff653fe725e46adf36096ae2c59150e932b893cde0c9cb6e8b5d06c927987c33a7628501cd6ac5f4133245
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libedit/libedit_3.1-20250104.orig.tar.gz' libedit_3.1-20250104.orig.tar.gz 546745 SHA512:4b4a8b4b1f2cb952bbb3d128605eba9bc7cd0ad35c44b2c099f067c8bea69455bd11faae4ff20384bbe0ea901b25a1249d8323dea4ccd6141a17393f62bb8df2
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libedit/libedit_3.1-20250104-1build1.debian.tar.xz' libedit_3.1-20250104-1build1.debian.tar.xz 16784 SHA512:b8fed1c14886a8be6bd91c39a884d4d9104ad790f5c87ba23bef32980b591e2a9de4d66c74e4e814f3995b8388f589e36faec9535c2d3f2fd7f122055f3652ac
-```
 
 ### `dpkg` source package: `liberror-perl=0.17030-1`
 

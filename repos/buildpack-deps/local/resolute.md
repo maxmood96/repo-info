@@ -2007,14 +2007,9 @@ Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20250104-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libedit/libedit_3.1-20250104-1build1.dsc' libedit_3.1-20250104-1build1.dsc 2288 SHA512:b1b7350ea9c627c8376d45c976ac312a24f21daba0ff653fe725e46adf36096ae2c59150e932b893cde0c9cb6e8b5d06c927987c33a7628501cd6ac5f4133245
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libedit/libedit_3.1-20250104.orig.tar.gz' libedit_3.1-20250104.orig.tar.gz 546745 SHA512:4b4a8b4b1f2cb952bbb3d128605eba9bc7cd0ad35c44b2c099f067c8bea69455bd11faae4ff20384bbe0ea901b25a1249d8323dea4ccd6141a17393f62bb8df2
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libedit/libedit_3.1-20250104-1build1.debian.tar.xz' libedit_3.1-20250104-1build1.debian.tar.xz 16784 SHA512:b8fed1c14886a8be6bd91c39a884d4d9104ad790f5c87ba23bef32980b591e2a9de4d66c74e4e814f3995b8388f589e36faec9535c2d3f2fd7f122055f3652ac
-```
 
 ### `dpkg` source package: `liberror-perl=0.17030-1`
 
@@ -2923,15 +2918,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxdmcp=1:1.1.5-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxdmcp/libxdmcp_1.1.5-1build1.dsc' libxdmcp_1.1.5-1build1.dsc 2326 SHA512:00a19c645a5c65402ed85c30709cc852a87cbfa82b61564fff82629a46ca2c9cdb814cf6d604ba34f54fb3527c1110c0dc0ecd2494b1479fc51bfe4c7c54706d
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxdmcp/libxdmcp_1.1.5.orig.tar.gz' libxdmcp_1.1.5.orig.tar.gz 442597 SHA512:400add8f47c28fe9cb80d6159a7268e7f5029d13a6219f3e07087455d99f807aa5b372242be9c14fbb7164b3c8180b8dc5edfeb620412bcbee246162f53c61d3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxdmcp/libxdmcp_1.1.5.orig.tar.gz.asc' libxdmcp_1.1.5.orig.tar.gz.asc 833 SHA512:e44c62904e5680ede9c3188c2fcf8e453c09d5f89e2958be34196e6f1130177f2e7bbd324337b5ee1902817c09357be0144dd91c2b6fd4e943edebe532c5193c
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxdmcp/libxdmcp_1.1.5-1build1.diff.gz' libxdmcp_1.1.5-1build1.diff.gz 9956 SHA512:18dcfe4a56b11a13f47d6376481d3e38c0724d5c8e89eb92c3594dd6e39dcb26295453cd100c0e874b0e10f0df32c1ea42c1cc0b9cc9a63be02475d06a671495
-```
 
 ### `dpkg` source package: `libxext=2:1.3.4-1build3`
 
@@ -3104,13 +3093,9 @@ Licenses: (parsed from: `/usr/share/doc/lto-disabled-list/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lto-disabled-list=72
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_72.dsc' lto-disabled-list_72.dsc 1466 SHA512:c8f1e8ea0654cdc89821bc2b16dc677ee2e811fad0ea9145dfaf205a5013aade8165246b6c0cee3ae8a7c8892184273e3a2ed080ce26f0aef857f627d9570e81
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_72.tar.xz' lto-disabled-list_72.tar.xz 14308 SHA512:aea27b5b00485521aafc537795fc9b5ace2a842de26d02d32839a149fe4ada94df2c5571aff7a7b95270e5cee60e073b4735183dfaa6830eb58022945f321ee8
-```
 
 ### `dpkg` source package: `lz4=1.10.0-6`
 
@@ -4307,14 +4292,13 @@ Licenses: (parsed from: `/usr/share/doc/libsysprof-capture-4-dev/copyright`)
 - `LGPL-3.0+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysprof=49.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysprof/sysprof_49.0-1.dsc' sysprof_49.0-1.dsc 3085 SHA512:f45c551e3bdad5b90c5c43e00ead6ee9fe89bfc245852a9bc284b3b1b1fce282ce25437cc52f777f3820a6192d55f0c0a9c4dd1f259e258d49f9ed4e2594792e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysprof/sysprof_49.0.orig.tar.xz' sysprof_49.0.orig.tar.xz 1239324 SHA512:ca94abd405e9765c36115a097ad2efcb388b04f1457d20c73b6ff058c46bc4db314dd0037951a43e18c7d218fbf036683e9cc076cfdecaede72c2f8fe2e2eb8d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysprof/sysprof_49.0-1.debian.tar.xz' sysprof_49.0-1.debian.tar.xz 16376 SHA512:d82e04c83da71f3073eeb7cb50b0381698f1656de90cbd310c89be7d077c380848d9fb91b4ea6d6fff890f7944ef6b37cbc5af7746ff828ae49ab767011c1d4c
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sysprof/49.0-1/
+
 
 ### `dpkg` source package: `systemd=257.9-0ubuntu2`
 
