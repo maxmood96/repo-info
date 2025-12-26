@@ -1028,15 +1028,9 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 - `GPL-2.0-only`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mawk=1.3.4.20250131-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20250131-1build1.dsc' mawk_1.3.4.20250131-1build1.dsc 2993 SHA512:a39573b1440ce985f71defe9f5834b1028ddb5ca74b724aab69a671dcb2bb30baaaa559eade762a069bed75efe682d0f010610ac434172caca15addb094d5201
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20250131.orig.tar.gz' mawk_1.3.4.20250131.orig.tar.gz 433213 SHA512:100b1f5ee190d2841d5dee449c53601a6d32453e47b232de919f3489f6f7040d0c6d21f6c7d30df616b04abde2db9799c5eb16570c1f88dbc10fcd75c5838042
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20250131.orig.tar.gz.asc' mawk_1.3.4.20250131.orig.tar.gz.asc 729 SHA512:0d8ac93bdafcd8915b0d2d2b675f8d5cf2aeba655cd04af4b4037336b74b320e02db360b7d18b796aedc09fbabc8a42e471766ea24219bad7a1cbff4f7679552
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20250131-1build1.debian.tar.xz' mawk_1.3.4.20250131-1build1.debian.tar.xz 16072 SHA512:ca2258118c955bb2215a8909dbe90bc11b5af5fc1645cf32131b0b96535826b8298c2a2d9c715cc68660727cb61c53abb789066bcf10cb589a9be455ff7c002e
-```
 
 ### `dpkg` source package: `ncurses=6.5+20250216-2build1`
 
