@@ -1,10 +1,10 @@
-# `openjdk:26-ea-28-jdk-oraclelinux9`
+# `openjdk:26-ea-29-jdk-oraclelinux9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8ee96a7d88c7194a414e98b81e9e7dc146ae1e12b980b4115383a696f14133d8`
-- Created: `2025-12-16T00:02:45.11667999Z`
-- Virtual Size: ~ 617.13 Mb  
+- Image ID: `sha256:713ebe03df94bf5fee575a717832bda2065781e6da449ba1a1e76b880d13330d`
+- Created: `2025-12-24T06:12:06.6082511Z`
+- Virtual Size: ~ 617.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-26`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=26-ea+28`
+  - `JAVA_VERSION=26-ea+29`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -74,28 +74,28 @@ $ dnf --quiet download --source --url bash-5.1.8-9.el9
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/bash-5.1.8-9.el9.src.rpm
 ```
 
-### `rpm` package: `binutils-2.35.2-67.0.1.el9.x86_64`
+### `rpm` package: `binutils-2.35.2-67.0.1.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url binutils-2.35.2-67.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/binutils-2.35.2-67.0.1.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/binutils-2.35.2-67.0.1.el9.src.rpm
+$ dnf --quiet download --source --url binutils-2.35.2-67.0.1.el9_7.1
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/binutils-2.35.2-67.0.1.el9_7.1.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/binutils-2.35.2-67.0.1.el9_7.1.src.rpm
 ```
 
-### `rpm` package: `binutils-gold-2.35.2-67.0.1.el9.x86_64`
+### `rpm` package: `binutils-gold-2.35.2-67.0.1.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url binutils-gold-2.35.2-67.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/binutils-2.35.2-67.0.1.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/binutils-2.35.2-67.0.1.el9.src.rpm
+$ dnf --quiet download --source --url binutils-gold-2.35.2-67.0.1.el9_7.1
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/binutils-2.35.2-67.0.1.el9_7.1.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/binutils-2.35.2-67.0.1.el9_7.1.src.rpm
 ```
 
 ### `rpm` package: `bzip2-libs-1.0.8-10.el9_5.x86_64`
@@ -1059,28 +1059,28 @@ https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSourc
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libsolv-0.7.24-3.el9.src.rpm
 ```
 
-### `rpm` package: `libssh-0.10.4-15.el9_7.x86_64`
+### `rpm` package: `libssh-0.10.4-17.el9_7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libssh-0.10.4-15.el9_7
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libssh-0.10.4-15.el9_7.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libssh-0.10.4-15.el9_7.src.rpm
+$ dnf --quiet download --source --url libssh-0.10.4-17.el9_7
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libssh-0.10.4-17.el9_7.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libssh-0.10.4-17.el9_7.src.rpm
 ```
 
-### `rpm` package: `libssh-config-0.10.4-15.el9_7.noarch`
+### `rpm` package: `libssh-config-0.10.4-17.el9_7.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libssh-config-0.10.4-15.el9_7.noarch
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libssh-0.10.4-15.el9_7.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libssh-0.10.4-15.el9_7.src.rpm
+$ dnf --quiet download --source --url libssh-config-0.10.4-17.el9_7.noarch
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libssh-0.10.4-17.el9_7.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libssh-0.10.4-17.el9_7.src.rpm
 ```
 
 ### `rpm` package: `libstdc++-11.5.0-11.0.1.el9.x86_64`
@@ -1633,16 +1633,16 @@ $ dnf --quiet download --source --url tar-1.34-7.el9
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/tar-1.34-7.el9.src.rpm
 ```
 
-### `rpm` package: `tzdata-2025b-2.el9.noarch`
+### `rpm` package: `tzdata-2025c-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2025b-2.el9.noarch
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/tzdata-2025b-2.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/tzdata-2025b-2.el9.src.rpm
+$ dnf --quiet download --source --url tzdata-2025c-1.el9.noarch
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/tzdata-2025c-1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/tzdata-2025c-1.el9.src.rpm
 ```
 
 ### `rpm` package: `util-linux-2.37.4-21.0.1.el9.x86_64`
