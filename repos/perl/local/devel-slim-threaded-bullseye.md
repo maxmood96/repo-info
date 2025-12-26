@@ -1,13 +1,13 @@
-# `perl:5.43.5-slim-threaded-bullseye`
+# `perl:5.43.6-slim-threaded-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c553db70a9e61ab08cf9b0a7a55b9a938d6088f79f3f1f57e2814b291ed6a386`
-- Created: `2025-12-08T23:33:14.789236472Z`
-- Virtual Size: ~ 177.57 Mb  
+- Image ID: `sha256:293b14289de2ad55669bcca03f31d68e3025283b80c646763f3c768c113cc74d`
+- Created: `2025-12-23T18:06:02.405081649Z`
+- Virtual Size: ~ 177.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.43.5","-de0"]`
+- Command: `["perl5.43.6","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
@@ -1498,11 +1498,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.244-1`
+### `dpkg` source package: `linux=5.10.247-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.244-1`
+- `linux-libc-dev:amd64=5.10.247-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1518,17 +1518,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.244-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.244-1.dsc' linux_5.10.244-1.dsc 209429 SHA256:00564a843655ac1f6e2fd7268177cfb858c967817ac763b5ac255892f9fb8141
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.244.orig.tar.xz' linux_5.10.244.orig.tar.xz 122105040 SHA256:94fe544015224ab7b5ca3b391576c0c84be3b655e5e11a49b1e7cea8aa1db6be
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.244-1.debian.tar.xz' linux_5.10.244-1.debian.tar.xz 1759388 SHA256:36ea2de74f287912a440239b6b612fa748fc5e5727c651d32abfb8e1359d696f
+$ apt-get source -qq --print-uris linux=5.10.247-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.247-1.dsc' linux_5.10.247-1.dsc 209429 SHA256:4decac0295de58278eab28e88c98ecc4df8eeaa320f197a4b3a4211b77a065f5
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.247.orig.tar.xz' linux_5.10.247.orig.tar.xz 122115324 SHA256:dce0db938fd1bd36b619301e2abaee5126420add50d8851a4312e5dad1abc3b1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.247-1.debian.tar.xz' linux_5.10.247-1.debian.tar.xz 1769544 SHA256:90014e16f6627a6b14733d55901580f5be24f99d510d5ece0228b54bcea033c1
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.244-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.244-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.244-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.247-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.247-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.247-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
