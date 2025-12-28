@@ -2,7 +2,7 @@
 
 # Tags of `alpine`
 
--	[`alpine:20250108`](#alpine20250108)
+-	[`alpine:20251224`](#alpine20251224)
 -	[`alpine:3`](#alpine3)
 -	[`alpine:3.20`](#alpine320)
 -	[`alpine:3.20.8`](#alpine3208)
@@ -15,10 +15,10 @@
 -	[`alpine:edge`](#alpineedge)
 -	[`alpine:latest`](#alpinelatest)
 
-## `alpine:20250108`
+## `alpine:20251224`
 
 ```console
-$ docker pull alpine@sha256:115729ec5cb049ba6359c3ab005ac742012d92bbaa5b8bc1a878f1e8f62c0cb8
+$ docker pull alpine@sha256:ea71a031ed91cd46b00d438876550bc765da43b4ae40f331a12daf62f0937758
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -40,392 +40,392 @@ $ docker pull alpine@sha256:115729ec5cb049ba6359c3ab005ac742012d92bbaa5b8bc1a878
 	-	linux; s390x
 	-	unknown; unknown
 
-### `alpine:20250108` - linux; amd64
+### `alpine:20251224` - linux; amd64
 
 ```console
-$ docker pull alpine@sha256:20c6c97faaa88f32bbbc45696d259f0c01404a4ec2f1fa4fa8bc5aa5140443ec
+$ docker pull alpine@sha256:1c5f9dae44dc50fc50f735e3f694c0a5a86c5d5eb28859da19449841b847f4a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3641610 bytes)**  
+-	Total Size: **4.2 MB (4248634 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6201085a1856afe6f74f77f514c54ea5d67538aa45f3b527aeb72a8d8dc44db`
+-	Image ID: `sha256:6b7117eab33437136c4aeae8a50452cbb500d1e027e3d695ead47fb2d00ed6ea`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-x86_64.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
+# Sun, 28 Dec 2025 05:45:14 GMT
+ADD alpine-minirootfs-20251224-x86_64.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:45:14 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:d62bb7eb03b5936dc5a5665fd5a6ede7eab4a6bd0ed965be8c6c3c21e1e53931`  
-		Last Modified: Fri, 12 Dec 2025 02:02:41 GMT  
-		Size: 3.6 MB (3641610 bytes)  
+	-	`sha256:079b91bed114c7b03447e4a4e01bc2bf282c80d9d91e7cd87c238f5f3e2dce98`  
+		Last Modified: Sun, 28 Dec 2025 05:45:36 GMT  
+		Size: 4.2 MB (4248634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `alpine:20250108` - unknown; unknown
+### `alpine:20251224` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:410edc7834c5dece534e4f1592f581b5e4554a55ebf3871663b1ed0d2c82ff84
+$ docker pull alpine@sha256:515d0dd09cf72dd06fbba36c00eade5438ddc5574abb46a2e342fcfac6c0bcb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.2 KB (83166 bytes)**  
+-	Total Size: **87.3 KB (87271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f83a3cf0da43250a98753db6f8ccbc978b6b36251e008e42808e44e624ee04d`
+-	Image ID: `sha256:b67676c56a3d186275c8bb4071675fc0fcc780c7b250a2801b443024e53b11a9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ce8fe81d68ced63abb5966124407b7e1765e82bf4c2c984642bac795d0b22f83`  
-		Last Modified: Sat, 13 Dec 2025 22:39:32 GMT  
-		Size: 78.1 KB (78060 bytes)  
+	-	`sha256:74b19a2ccedc0174d06d8ff0c51434e40fb3a40170ffee9e7e5c1f62a4480963`  
+		Last Modified: Sun, 28 Dec 2025 07:24:33 GMT  
+		Size: 82.2 KB (82208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:18034e416bcbe316238400de5c75a6e18d184259f2cc2a8da334ecba0a9517c6`  
-		Last Modified: Mon, 08 Dec 2025 17:04:41 GMT  
+	-	`sha256:56f6fe6f574264c690dec4121114f3803fcf82e3fa639a972011e530679f93be`  
+		Last Modified: Sun, 28 Dec 2025 07:24:34 GMT  
+		Size: 5.1 KB (5063 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `alpine:20251224` - linux; arm variant v6
+
+```console
+$ docker pull alpine@sha256:5cf3d54cc21d46dbef47617d1640765455511f19e7841a3b6b0e1e4df40f32bd
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.9 MB (3946082 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7303e9f137b4a1cc582d0276284c698c0dd99adfb170bf0a6d448abef81259c6`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Sun, 28 Dec 2025 05:46:42 GMT
+ADD alpine-minirootfs-20251224-armhf.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:46:42 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:3293a34b191ec3d3958aa483a15bf393494ba22e431a054a99c80d420366afcb`  
+		Last Modified: Sun, 28 Dec 2025 05:46:53 GMT  
+		Size: 3.9 MB (3946082 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `alpine:20251224` - unknown; unknown
+
+```console
+$ docker pull alpine@sha256:15759aae8e2d6025dae237bf52b0d3c459ff986909383f670ebbc7900f299a8f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.9 KB (4868 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c597075de32f1a9e9fdc948159e3c3fa554a6e3f69f7fba84ad44f008223d877`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:7f94f733fa74bdee30fd41528c8b87b72b64862ab5fd7c9bffe2343f735893cb`  
+		Last Modified: Sun, 28 Dec 2025 07:24:37 GMT  
+		Size: 4.9 KB (4868 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `alpine:20251224` - linux; arm variant v7
+
+```console
+$ docker pull alpine@sha256:11df0214a6431e445b5f13bf186dddb0a28fa076cc0246423bbddb48a5aae09b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 MB (3629405 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6b3ba9bbd7c9182c9e5ba41b41e949735786a7d0de09c10419ac4b68f95d69ad`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Sun, 28 Dec 2025 05:44:43 GMT
+ADD alpine-minirootfs-20251224-armv7.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:44:43 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:1391137729cba5925f541d42ece51e0f36ba6b516c5452f8404398857a457111`  
+		Last Modified: Sun, 28 Dec 2025 05:45:02 GMT  
+		Size: 3.6 MB (3629405 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `alpine:20251224` - unknown; unknown
+
+```console
+$ docker pull alpine@sha256:5c5c0c5892e4df0d3d00f82e9f3e4d0808fad0f94a3619bd17ddd4f25c19b816
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **86.7 KB (86661 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5201d5f74bc2d192141d11f89725f1375abd3d91e35cec950093b42f625d5de9`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:e615105c2ec317bb4298804f51026e1fe667039240a448cd003e14f0a85001ca`  
+		Last Modified: Sun, 28 Dec 2025 07:24:40 GMT  
+		Size: 81.6 KB (81578 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:5922b163c25095116fe44dc7cdf086e5ccfd365422d1c385a50c821e6c9b9d5e`  
+		Last Modified: Sun, 28 Dec 2025 07:24:40 GMT  
+		Size: 5.1 KB (5083 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `alpine:20251224` - linux; arm64 variant v8
+
+```console
+$ docker pull alpine@sha256:29ae2806eec4b3c91e9cf46c75055fa04cc186bf3a7856fc3901ddd40aa6cd8f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.6 MB (4579953 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:22f143b1a1cb0f76a1c12dde48cb2506ca85d7c7bcf92a434acdd33547a1effb`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Sun, 28 Dec 2025 05:45:09 GMT
+ADD alpine-minirootfs-20251224-aarch64.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:45:09 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:e458004e4c65b701815828b25351fd8050402bfd13ef234518a15d05d3564e9b`  
+		Last Modified: Sun, 28 Dec 2025 05:45:31 GMT  
+		Size: 4.6 MB (4579953 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `alpine:20251224` - unknown; unknown
+
+```console
+$ docker pull alpine@sha256:6f7ca8c8e286f40012a6f3bd2a5c888e60464b766a12b2e5458b0581e37acd38
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **86.7 KB (86696 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:764605229cdaf58e9b4a95f3a4084c7cbefe3d19de5190286be8e8199c6efb46`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d78adce1d401aa82e2f4f12fe2d9910b06a19ec8669e5acd88c9486e36f9524c`  
+		Last Modified: Sun, 28 Dec 2025 07:24:43 GMT  
+		Size: 81.6 KB (81590 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:53c633fa2129ae632e7ac7e541122c48eb2d449e5db8843748e8e6aaa9864289`  
+		Last Modified: Sun, 28 Dec 2025 07:24:44 GMT  
 		Size: 5.1 KB (5106 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `alpine:20250108` - linux; arm variant v6
+### `alpine:20251224` - linux; 386
 
 ```console
-$ docker pull alpine@sha256:c6708006c116cbf1d41de6faa0fcd516b92e83ec632a1cd5dff2324994b0d669
+$ docker pull alpine@sha256:987fdbfbe335adc0be160cd74f4f15c639d4cd6c4707117f60279c8b7e122c18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3364084 bytes)**  
+-	Total Size: **4.1 MB (4065884 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83a347fae4e159b4eb46a82a9382dd163a66ffaef1e4e61a467bd18079350c31`
+-	Image ID: `sha256:2005e62e43ac72042c16180a18fc47fcde6ace36e2afe946a42d22a9da9813d5`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-armhf.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
+# Sun, 28 Dec 2025 05:45:14 GMT
+ADD alpine-minirootfs-20251224-x86.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:45:14 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:4dc763b4cf5e7cd6b888add3a349266bdfa97f861fa2dd7218676afe3ed4d7fe`  
-		Last Modified: Wed, 10 Dec 2025 02:49:15 GMT  
-		Size: 3.4 MB (3364084 bytes)  
+	-	`sha256:a32828a156adbf5f94a9b29f143469a265b98c320b9b40dbc9fc48efb7940688`  
+		Last Modified: Sun, 28 Dec 2025 05:45:31 GMT  
+		Size: 4.1 MB (4065884 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `alpine:20250108` - unknown; unknown
+### `alpine:20251224` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:95e9403d45ea741cbf50f827eb0c32be4e898633ab8675bc6eb02e2ff459a13b
+$ docker pull alpine@sha256:d91716f290ebdfc875e70dff501f42809e433d8c7bfe385b3956a6b0c74945b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 KB (4908 bytes)**  
+-	Total Size: **87.2 KB (87227 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f26eb0f02d36de295a4034405ae231cb229fa59f31be7117235ca5c0f29bfeb`
+-	Image ID: `sha256:97be31342cadd51807a54e0914c9022c1cb47be66253b7e2aa097def5f685758`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4a5d307041582b7e7f75ff8c7ae715ebef2ceb8e4905b3836440188179a76cf7`  
-		Last Modified: Sat, 13 Dec 2025 12:42:59 GMT  
-		Size: 4.9 KB (4908 bytes)  
+	-	`sha256:3b3e37f2e0a9e7eafbb301bb1620bcdd190236aef6c8013a96a5e87fc5232354`  
+		Last Modified: Sun, 28 Dec 2025 07:24:47 GMT  
+		Size: 82.2 KB (82193 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:c5e661b50f0baf0538cdf872dbdf596797baf0929471cd77bc260c16d70c261c`  
+		Last Modified: Sun, 28 Dec 2025 07:24:48 GMT  
+		Size: 5.0 KB (5034 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `alpine:20250108` - linux; arm variant v7
+### `alpine:20251224` - linux; ppc64le
 
 ```console
-$ docker pull alpine@sha256:a91890e39e0d8fdfbbf59ba488ffd5b20182241c550f1b8df4e7b9711c68c5c1
+$ docker pull alpine@sha256:538a0436eb23de5250e1fb1af47fc735e5991d14c79f6dcfdd8c38575a5e96ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3097104 bytes)**  
+-	Total Size: **4.3 MB (4254358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:889e987853c3ecd5b704b41b0a11a5966719c286c06ebf46b58ffcd29fcfb881`
+-	Image ID: `sha256:26f09ec6df730284d634fff83a7422b970365f3c3631e95f9740b49f77ca1b12`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-armv7.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
+# Sun, 28 Dec 2025 05:44:07 GMT
+ADD alpine-minirootfs-20251224-ppc64le.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:44:07 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:56c91669ab0b059c942de9f47565cc578ebeeec80ce7488c8f72fd1c9652d1bf`  
-		Last Modified: Wed, 10 Dec 2025 05:52:57 GMT  
-		Size: 3.1 MB (3097104 bytes)  
+	-	`sha256:4e19615acfba78ccc0157a4a193d4f289094e782391ca4c9b671709b628fc586`  
+		Last Modified: Sun, 28 Dec 2025 05:44:33 GMT  
+		Size: 4.3 MB (4254358 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `alpine:20250108` - unknown; unknown
+### `alpine:20251224` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:3f3a292fdeb26d5f8fe98bebe57303dd91796d6722428734a74e04a8d34fd154
+$ docker pull alpine@sha256:f209efa874157443abc7c5a85932364049afd74d075dc8a551ffe69db9e82d65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.2 KB (83203 bytes)**  
+-	Total Size: **86.7 KB (86666 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d12510614f78ddb652a6f892e0834f3a2d58a04203ba2c6d1ea34cf32206efb5`
+-	Image ID: `sha256:c18c951446d53df6258a9b4b0d7696a122c2846e67d2822001efbec94a84e77e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc331f5405eb5188d96237f76e3e019a2420aae75749ec3e153c7cc40fd888c0`  
-		Last Modified: Tue, 16 Dec 2025 12:58:48 GMT  
-		Size: 78.1 KB (78080 bytes)  
+	-	`sha256:beab77e7097801746205ab0fcd917e0c51d250d2043070d9877daaf5ffda52ef`  
+		Last Modified: Sun, 28 Dec 2025 07:24:50 GMT  
+		Size: 81.6 KB (81579 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d6844ac9c6a5d2963af29d4467118078c71f9aa957ea385e3c81cc73ed2afdd0`  
-		Last Modified: Tue, 16 Dec 2025 12:58:49 GMT  
-		Size: 5.1 KB (5123 bytes)  
+	-	`sha256:30c7d2f5abfcd99beb073422e6836254f1c670a036bf014a40fb97fab9d71710`  
+		Last Modified: Sun, 28 Dec 2025 07:24:51 GMT  
+		Size: 5.1 KB (5087 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `alpine:20250108` - linux; arm64 variant v8
+### `alpine:20251224` - linux; riscv64
 
 ```console
-$ docker pull alpine@sha256:5c9f31938e2b7623a20afa034d2edc972393f2d8e36ed107e548ff270973ddd4
+$ docker pull alpine@sha256:ff0efe7e42d5754a2dd5c37c78decd69cdc0b3f962fb8aacbd18c71b1e40d9f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (3992402 bytes)**  
+-	Total Size: **4.0 MB (4048360 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1de5b1ebcc3bbbbce23df6ae8d0bd5bae02385ed9828953d798979995269437`
+-	Image ID: `sha256:4f5d69ba97834af884c5272fcb45009fa68db305ea10f1ef15b7814881acf178`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-aarch64.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
+# Sun, 28 Dec 2025 05:45:08 GMT
+ADD alpine-minirootfs-20251224-riscv64.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:45:08 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:b2e6f696af52b3d1da13b51b22502737ade0e1534387440426158079090a1c74`  
-		Last Modified: Thu, 11 Dec 2025 11:55:57 GMT  
-		Size: 4.0 MB (3992402 bytes)  
+	-	`sha256:3e66906ee58b3dd1f9b1045c1ce236c420a6ba85e98c1bbc8bac566d76ceb045`  
+		Last Modified: Sun, 28 Dec 2025 05:45:38 GMT  
+		Size: 4.0 MB (4048360 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `alpine:20250108` - unknown; unknown
+### `alpine:20251224` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:27a3775743c5c752a54cd60b6065f1f1b5ea72b748853f70117ff378c790ad41
+$ docker pull alpine@sha256:ace8c41445e58d94a96e06920cf7eb76db288ec7a14ed204a2b191b064eb0b7f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.2 KB (83241 bytes)**  
+-	Total Size: **86.7 KB (86662 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4eb165d140f257e1c48ff713f90ece8dd257424bbcf162f4b8376f9c35ad0d6f`
+-	Image ID: `sha256:dab82aff7760b997134f66e0ac693caedddb631c695c35e18c5b38d8184e88a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c5ea2d141eeee211ce75aa5bb0fc443c2237be3fabe7f48909669ef53b2e9dc2`  
-		Last Modified: Mon, 15 Dec 2025 18:35:47 GMT  
-		Size: 78.1 KB (78092 bytes)  
+	-	`sha256:09918b343672205ed75dc7291dbf6088ad949fe7ec640390f5a6c70e1accbf42`  
+		Last Modified: Sun, 28 Dec 2025 07:24:54 GMT  
+		Size: 81.6 KB (81575 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:66b3bcc49f7051dc65d724b6b75da4cdd7ef9b30a2a1b9794d9c6e11a3b19218`  
-		Last Modified: Thu, 11 Dec 2025 14:21:06 GMT  
-		Size: 5.1 KB (5149 bytes)  
+	-	`sha256:eecb05399f7671a95b438f1675b615df84aa1a0a34f80772543eda247daae6aa`  
+		Last Modified: Sun, 28 Dec 2025 07:24:55 GMT  
+		Size: 5.1 KB (5087 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `alpine:20250108` - linux; 386
+### `alpine:20251224` - linux; s390x
 
 ```console
-$ docker pull alpine@sha256:e64d053044f41a672c26cf1eb2e5488027499cd58428f6b0a359f5b25303d54e
+$ docker pull alpine@sha256:1a3364c8125eb7e4975cae50bd6fa327d02d3b761cb36777bc2570005ca79973
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3463002 bytes)**  
+-	Total Size: **4.1 MB (4138942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0293f3682521bfdb6eff8b19647435f9f2a5e409317688c30d18fbc962cb22ba`
+-	Image ID: `sha256:f87320d312b52a5a77fcc9891e37d96758238645df537eba0f65b67bf1855db2`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-x86.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
+# Sun, 28 Dec 2025 05:44:55 GMT
+ADD alpine-minirootfs-20251224-s390x.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:44:55 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:6fd6482cc0d6bfb8d86ae4adbb0f5de6a3625a1892a2c95894238b07e75551dc`  
-		Last Modified: Wed, 10 Dec 2025 20:29:54 GMT  
-		Size: 3.5 MB (3463002 bytes)  
+	-	`sha256:48b8b0e002621c998fc4c6a7c2fc4adb2a4a8560b176e2ab7a9eaf50ea005944`  
+		Last Modified: Sun, 28 Dec 2025 05:45:21 GMT  
+		Size: 4.1 MB (4138942 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `alpine:20250108` - unknown; unknown
+### `alpine:20251224` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:fb55865cd4c4bc1b1274f3365585a96184bfabc2b4274c5ee1b151dd96b85140
+$ docker pull alpine@sha256:b3b636e0fbbf995d5b493b6dcc76bca6327f25d9bd77f40e6303fece6bab664f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.1 KB (83122 bytes)**  
+-	Total Size: **86.6 KB (86612 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4fba1efeefd2b1575ac4cf9dc1381d579f232a34ed1e08f0730c3475dbd9c878`
+-	Image ID: `sha256:b97a2eaa55fb6a1a22b9852fdc49cb85b131fc9784a4d2a76d05a02209936bcd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5ec3fcff446e075630c0a7b3f23f292994accde7051cffc2eeb2e61fb4be2d5e`  
-		Last Modified: Sat, 13 Dec 2025 12:43:06 GMT  
-		Size: 78.0 KB (78045 bytes)  
+	-	`sha256:7c1316eb39179a679e46fe182d480cdb6d7900707344089785aaae107ed2541b`  
+		Last Modified: Sun, 28 Dec 2025 07:24:57 GMT  
+		Size: 81.6 KB (81557 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c5a04a5fc97365606f9a5de05e7e86018d5245719ff49e8e6f4ba7c6ede8af2c`  
-		Last Modified: Wed, 17 Dec 2025 14:00:27 GMT  
-		Size: 5.1 KB (5077 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `alpine:20250108` - linux; ppc64le
-
-```console
-$ docker pull alpine@sha256:d55e5a223aed52ceeedf25c829db5fadc9bbf5acb434e922aa4c0c914167a41e
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3573346 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4fe0533438612353eaf223624b6af1bd1591c57eebd5032071c4571ed34d69cd`
--	Default Command: `["\/bin\/sh"]`
-
-```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-ppc64le.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
-CMD ["/bin/sh"]
-```
-
--	Layers:
-	-	`sha256:d8b56143a99f4917d30da7e1171daf3971c7cf24b2ef66aad7b01f201494ec66`  
-		Last Modified: Fri, 12 Dec 2025 22:04:16 GMT  
-		Size: 3.6 MB (3573346 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `alpine:20250108` - unknown; unknown
-
-```console
-$ docker pull alpine@sha256:5e526c6c813d2d742c5fd024d04dac67c60cb770c7758ac34398f6d053055142
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.3 KB (81261 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1213491044d1128107cf9d38c9709d720434e0e48df9d03b7e48777e08d4e18f`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:39027f0b9a665f547c868f105b7d3f7640a8844d2571b215b8ae278570413c12`  
-		Last Modified: Sat, 13 Dec 2025 12:43:10 GMT  
-		Size: 76.1 KB (76131 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:4ce90d8c683085edaee1d81ffd60f87e0cd90a9dd17da189d33bbe7040ac2026`  
-		Last Modified: Fri, 19 Dec 2025 12:54:19 GMT  
-		Size: 5.1 KB (5130 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `alpine:20250108` - linux; riscv64
-
-```console
-$ docker pull alpine@sha256:f49dc5274dea0a3600c9c9a603bc8e7628e2b0ac0316626606c340c112dc7af9
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3350196 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9f5edf690b1f4cebf71bbfc6895b76743b051ea8a946db7388189d2358f7255`
--	Default Command: `["\/bin\/sh"]`
-
-```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-riscv64.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
-CMD ["/bin/sh"]
-```
-
--	Layers:
-	-	`sha256:1ce3d2c30285d18ddfb483c62335e2dd9abc74922e2278f333df42c8c25752a9`  
-		Last Modified: Mon, 08 Dec 2025 10:25:24 GMT  
-		Size: 3.4 MB (3350196 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `alpine:20250108` - unknown; unknown
-
-```console
-$ docker pull alpine@sha256:b6acc0cad7b8d985d4aaabe7de1055a4ee2ce3ba0d620430f9d54bf87ea1fce8
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.3 KB (81257 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2f59d08e28fb7ab8188e0371a150f16111f462f93c4841dd51df145d8cde5d5`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:a8f63f4c438614482f2993a2115b2b122b7b8ddde174449db074aa81f0511a98`  
-		Last Modified: Wed, 17 Dec 2025 20:56:23 GMT  
-		Size: 76.1 KB (76127 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:a2a0dcac4ab036d8c46466868a13cc290ab42a336c72ceedb7a2cabce9d66be5`  
-		Last Modified: Tue, 16 Dec 2025 12:58:59 GMT  
-		Size: 5.1 KB (5130 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `alpine:20250108` - linux; s390x
-
-```console
-$ docker pull alpine@sha256:06c4cec207a7413cd4c188842915e44a3346ac300dd11207fb41a701274acc11
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3466901 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:079041625475f49f8d1347f2b7fa5fda92d21d983c8f66689669b690d701027b`
--	Default Command: `["\/bin\/sh"]`
-
-```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-s390x.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
-CMD ["/bin/sh"]
-```
-
--	Layers:
-	-	`sha256:ee6fac1a7857654c2abd351d9bb1c40147998fd92a4088f47bcdea5f19854bef`  
-		Last Modified: Fri, 12 Dec 2025 18:39:18 GMT  
-		Size: 3.5 MB (3466901 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `alpine:20250108` - unknown; unknown
-
-```console
-$ docker pull alpine@sha256:d458746fe026fb9b09a37a966475aff56cb370606e7f51afe5d032dcb662ffb1
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.2 KB (81206 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7975f8e6b5da665aabe7d6e5685dab281731cf09f47600c4fb9466b3ee3384d6`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:664a0fc96e203b82ebb142c22762b90e174de4fb01985ccf47d75a3250094311`  
-		Last Modified: Sat, 13 Dec 2025 12:43:15 GMT  
-		Size: 76.1 KB (76109 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:bda4aba3e9a177cbbad4e731c225920c4fedb2dc9e1dc2663df3d9e39e50f360`  
-		Last Modified: Tue, 16 Dec 2025 12:59:02 GMT  
-		Size: 5.1 KB (5097 bytes)  
+	-	`sha256:7c80e7d0eb6ff9e04329608889aebebb0a2bbf06fdfa2b26882004e3ecfd7a1d`  
+		Last Modified: Sun, 28 Dec 2025 07:24:58 GMT  
+		Size: 5.1 KB (5055 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `alpine:3`
@@ -4148,7 +4148,7 @@ $ docker pull alpine@sha256:00dba905f263dba1db0300756d4a74af745f2e3a94f30c802450
 ## `alpine:edge`
 
 ```console
-$ docker pull alpine@sha256:115729ec5cb049ba6359c3ab005ac742012d92bbaa5b8bc1a878f1e8f62c0cb8
+$ docker pull alpine@sha256:ea71a031ed91cd46b00d438876550bc765da43b4ae40f331a12daf62f0937758
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4173,389 +4173,389 @@ $ docker pull alpine@sha256:115729ec5cb049ba6359c3ab005ac742012d92bbaa5b8bc1a878
 ### `alpine:edge` - linux; amd64
 
 ```console
-$ docker pull alpine@sha256:20c6c97faaa88f32bbbc45696d259f0c01404a4ec2f1fa4fa8bc5aa5140443ec
+$ docker pull alpine@sha256:1c5f9dae44dc50fc50f735e3f694c0a5a86c5d5eb28859da19449841b847f4a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3641610 bytes)**  
+-	Total Size: **4.2 MB (4248634 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6201085a1856afe6f74f77f514c54ea5d67538aa45f3b527aeb72a8d8dc44db`
+-	Image ID: `sha256:6b7117eab33437136c4aeae8a50452cbb500d1e027e3d695ead47fb2d00ed6ea`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-x86_64.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
+# Sun, 28 Dec 2025 05:45:14 GMT
+ADD alpine-minirootfs-20251224-x86_64.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:45:14 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:d62bb7eb03b5936dc5a5665fd5a6ede7eab4a6bd0ed965be8c6c3c21e1e53931`  
-		Last Modified: Fri, 12 Dec 2025 02:02:41 GMT  
-		Size: 3.6 MB (3641610 bytes)  
+	-	`sha256:079b91bed114c7b03447e4a4e01bc2bf282c80d9d91e7cd87c238f5f3e2dce98`  
+		Last Modified: Sun, 28 Dec 2025 05:45:36 GMT  
+		Size: 4.2 MB (4248634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `alpine:edge` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:410edc7834c5dece534e4f1592f581b5e4554a55ebf3871663b1ed0d2c82ff84
+$ docker pull alpine@sha256:515d0dd09cf72dd06fbba36c00eade5438ddc5574abb46a2e342fcfac6c0bcb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.2 KB (83166 bytes)**  
+-	Total Size: **87.3 KB (87271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f83a3cf0da43250a98753db6f8ccbc978b6b36251e008e42808e44e624ee04d`
+-	Image ID: `sha256:b67676c56a3d186275c8bb4071675fc0fcc780c7b250a2801b443024e53b11a9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ce8fe81d68ced63abb5966124407b7e1765e82bf4c2c984642bac795d0b22f83`  
-		Last Modified: Sat, 13 Dec 2025 22:39:32 GMT  
-		Size: 78.1 KB (78060 bytes)  
+	-	`sha256:74b19a2ccedc0174d06d8ff0c51434e40fb3a40170ffee9e7e5c1f62a4480963`  
+		Last Modified: Sun, 28 Dec 2025 07:24:33 GMT  
+		Size: 82.2 KB (82208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:18034e416bcbe316238400de5c75a6e18d184259f2cc2a8da334ecba0a9517c6`  
-		Last Modified: Mon, 08 Dec 2025 17:04:41 GMT  
-		Size: 5.1 KB (5106 bytes)  
+	-	`sha256:56f6fe6f574264c690dec4121114f3803fcf82e3fa639a972011e530679f93be`  
+		Last Modified: Sun, 28 Dec 2025 07:24:34 GMT  
+		Size: 5.1 KB (5063 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `alpine:edge` - linux; arm variant v6
 
 ```console
-$ docker pull alpine@sha256:c6708006c116cbf1d41de6faa0fcd516b92e83ec632a1cd5dff2324994b0d669
+$ docker pull alpine@sha256:5cf3d54cc21d46dbef47617d1640765455511f19e7841a3b6b0e1e4df40f32bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3364084 bytes)**  
+-	Total Size: **3.9 MB (3946082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83a347fae4e159b4eb46a82a9382dd163a66ffaef1e4e61a467bd18079350c31`
+-	Image ID: `sha256:7303e9f137b4a1cc582d0276284c698c0dd99adfb170bf0a6d448abef81259c6`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-armhf.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
+# Sun, 28 Dec 2025 05:46:42 GMT
+ADD alpine-minirootfs-20251224-armhf.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:46:42 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:4dc763b4cf5e7cd6b888add3a349266bdfa97f861fa2dd7218676afe3ed4d7fe`  
-		Last Modified: Wed, 10 Dec 2025 02:49:15 GMT  
-		Size: 3.4 MB (3364084 bytes)  
+	-	`sha256:3293a34b191ec3d3958aa483a15bf393494ba22e431a054a99c80d420366afcb`  
+		Last Modified: Sun, 28 Dec 2025 05:46:53 GMT  
+		Size: 3.9 MB (3946082 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `alpine:edge` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:95e9403d45ea741cbf50f827eb0c32be4e898633ab8675bc6eb02e2ff459a13b
+$ docker pull alpine@sha256:15759aae8e2d6025dae237bf52b0d3c459ff986909383f670ebbc7900f299a8f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 KB (4908 bytes)**  
+-	Total Size: **4.9 KB (4868 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f26eb0f02d36de295a4034405ae231cb229fa59f31be7117235ca5c0f29bfeb`
+-	Image ID: `sha256:c597075de32f1a9e9fdc948159e3c3fa554a6e3f69f7fba84ad44f008223d877`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4a5d307041582b7e7f75ff8c7ae715ebef2ceb8e4905b3836440188179a76cf7`  
-		Last Modified: Sat, 13 Dec 2025 12:42:59 GMT  
-		Size: 4.9 KB (4908 bytes)  
+	-	`sha256:7f94f733fa74bdee30fd41528c8b87b72b64862ab5fd7c9bffe2343f735893cb`  
+		Last Modified: Sun, 28 Dec 2025 07:24:37 GMT  
+		Size: 4.9 KB (4868 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `alpine:edge` - linux; arm variant v7
 
 ```console
-$ docker pull alpine@sha256:a91890e39e0d8fdfbbf59ba488ffd5b20182241c550f1b8df4e7b9711c68c5c1
+$ docker pull alpine@sha256:11df0214a6431e445b5f13bf186dddb0a28fa076cc0246423bbddb48a5aae09b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3097104 bytes)**  
+-	Total Size: **3.6 MB (3629405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:889e987853c3ecd5b704b41b0a11a5966719c286c06ebf46b58ffcd29fcfb881`
+-	Image ID: `sha256:6b3ba9bbd7c9182c9e5ba41b41e949735786a7d0de09c10419ac4b68f95d69ad`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-armv7.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
+# Sun, 28 Dec 2025 05:44:43 GMT
+ADD alpine-minirootfs-20251224-armv7.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:44:43 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:56c91669ab0b059c942de9f47565cc578ebeeec80ce7488c8f72fd1c9652d1bf`  
-		Last Modified: Wed, 10 Dec 2025 05:52:57 GMT  
-		Size: 3.1 MB (3097104 bytes)  
+	-	`sha256:1391137729cba5925f541d42ece51e0f36ba6b516c5452f8404398857a457111`  
+		Last Modified: Sun, 28 Dec 2025 05:45:02 GMT  
+		Size: 3.6 MB (3629405 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `alpine:edge` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:3f3a292fdeb26d5f8fe98bebe57303dd91796d6722428734a74e04a8d34fd154
+$ docker pull alpine@sha256:5c5c0c5892e4df0d3d00f82e9f3e4d0808fad0f94a3619bd17ddd4f25c19b816
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.2 KB (83203 bytes)**  
+-	Total Size: **86.7 KB (86661 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d12510614f78ddb652a6f892e0834f3a2d58a04203ba2c6d1ea34cf32206efb5`
+-	Image ID: `sha256:5201d5f74bc2d192141d11f89725f1375abd3d91e35cec950093b42f625d5de9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc331f5405eb5188d96237f76e3e019a2420aae75749ec3e153c7cc40fd888c0`  
-		Last Modified: Tue, 16 Dec 2025 12:58:48 GMT  
-		Size: 78.1 KB (78080 bytes)  
+	-	`sha256:e615105c2ec317bb4298804f51026e1fe667039240a448cd003e14f0a85001ca`  
+		Last Modified: Sun, 28 Dec 2025 07:24:40 GMT  
+		Size: 81.6 KB (81578 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d6844ac9c6a5d2963af29d4467118078c71f9aa957ea385e3c81cc73ed2afdd0`  
-		Last Modified: Tue, 16 Dec 2025 12:58:49 GMT  
-		Size: 5.1 KB (5123 bytes)  
+	-	`sha256:5922b163c25095116fe44dc7cdf086e5ccfd365422d1c385a50c821e6c9b9d5e`  
+		Last Modified: Sun, 28 Dec 2025 07:24:40 GMT  
+		Size: 5.1 KB (5083 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `alpine:edge` - linux; arm64 variant v8
 
 ```console
-$ docker pull alpine@sha256:5c9f31938e2b7623a20afa034d2edc972393f2d8e36ed107e548ff270973ddd4
+$ docker pull alpine@sha256:29ae2806eec4b3c91e9cf46c75055fa04cc186bf3a7856fc3901ddd40aa6cd8f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (3992402 bytes)**  
+-	Total Size: **4.6 MB (4579953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1de5b1ebcc3bbbbce23df6ae8d0bd5bae02385ed9828953d798979995269437`
+-	Image ID: `sha256:22f143b1a1cb0f76a1c12dde48cb2506ca85d7c7bcf92a434acdd33547a1effb`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-aarch64.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
+# Sun, 28 Dec 2025 05:45:09 GMT
+ADD alpine-minirootfs-20251224-aarch64.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:45:09 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:b2e6f696af52b3d1da13b51b22502737ade0e1534387440426158079090a1c74`  
-		Last Modified: Thu, 11 Dec 2025 11:55:57 GMT  
-		Size: 4.0 MB (3992402 bytes)  
+	-	`sha256:e458004e4c65b701815828b25351fd8050402bfd13ef234518a15d05d3564e9b`  
+		Last Modified: Sun, 28 Dec 2025 05:45:31 GMT  
+		Size: 4.6 MB (4579953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `alpine:edge` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:27a3775743c5c752a54cd60b6065f1f1b5ea72b748853f70117ff378c790ad41
+$ docker pull alpine@sha256:6f7ca8c8e286f40012a6f3bd2a5c888e60464b766a12b2e5458b0581e37acd38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.2 KB (83241 bytes)**  
+-	Total Size: **86.7 KB (86696 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4eb165d140f257e1c48ff713f90ece8dd257424bbcf162f4b8376f9c35ad0d6f`
+-	Image ID: `sha256:764605229cdaf58e9b4a95f3a4084c7cbefe3d19de5190286be8e8199c6efb46`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c5ea2d141eeee211ce75aa5bb0fc443c2237be3fabe7f48909669ef53b2e9dc2`  
-		Last Modified: Mon, 15 Dec 2025 18:35:47 GMT  
-		Size: 78.1 KB (78092 bytes)  
+	-	`sha256:d78adce1d401aa82e2f4f12fe2d9910b06a19ec8669e5acd88c9486e36f9524c`  
+		Last Modified: Sun, 28 Dec 2025 07:24:43 GMT  
+		Size: 81.6 KB (81590 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:66b3bcc49f7051dc65d724b6b75da4cdd7ef9b30a2a1b9794d9c6e11a3b19218`  
-		Last Modified: Thu, 11 Dec 2025 14:21:06 GMT  
-		Size: 5.1 KB (5149 bytes)  
+	-	`sha256:53c633fa2129ae632e7ac7e541122c48eb2d449e5db8843748e8e6aaa9864289`  
+		Last Modified: Sun, 28 Dec 2025 07:24:44 GMT  
+		Size: 5.1 KB (5106 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `alpine:edge` - linux; 386
 
 ```console
-$ docker pull alpine@sha256:e64d053044f41a672c26cf1eb2e5488027499cd58428f6b0a359f5b25303d54e
+$ docker pull alpine@sha256:987fdbfbe335adc0be160cd74f4f15c639d4cd6c4707117f60279c8b7e122c18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3463002 bytes)**  
+-	Total Size: **4.1 MB (4065884 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0293f3682521bfdb6eff8b19647435f9f2a5e409317688c30d18fbc962cb22ba`
+-	Image ID: `sha256:2005e62e43ac72042c16180a18fc47fcde6ace36e2afe946a42d22a9da9813d5`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-x86.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
+# Sun, 28 Dec 2025 05:45:14 GMT
+ADD alpine-minirootfs-20251224-x86.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:45:14 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:6fd6482cc0d6bfb8d86ae4adbb0f5de6a3625a1892a2c95894238b07e75551dc`  
-		Last Modified: Wed, 10 Dec 2025 20:29:54 GMT  
-		Size: 3.5 MB (3463002 bytes)  
+	-	`sha256:a32828a156adbf5f94a9b29f143469a265b98c320b9b40dbc9fc48efb7940688`  
+		Last Modified: Sun, 28 Dec 2025 05:45:31 GMT  
+		Size: 4.1 MB (4065884 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `alpine:edge` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:fb55865cd4c4bc1b1274f3365585a96184bfabc2b4274c5ee1b151dd96b85140
+$ docker pull alpine@sha256:d91716f290ebdfc875e70dff501f42809e433d8c7bfe385b3956a6b0c74945b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.1 KB (83122 bytes)**  
+-	Total Size: **87.2 KB (87227 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4fba1efeefd2b1575ac4cf9dc1381d579f232a34ed1e08f0730c3475dbd9c878`
+-	Image ID: `sha256:97be31342cadd51807a54e0914c9022c1cb47be66253b7e2aa097def5f685758`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5ec3fcff446e075630c0a7b3f23f292994accde7051cffc2eeb2e61fb4be2d5e`  
-		Last Modified: Sat, 13 Dec 2025 12:43:06 GMT  
-		Size: 78.0 KB (78045 bytes)  
+	-	`sha256:3b3e37f2e0a9e7eafbb301bb1620bcdd190236aef6c8013a96a5e87fc5232354`  
+		Last Modified: Sun, 28 Dec 2025 07:24:47 GMT  
+		Size: 82.2 KB (82193 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c5a04a5fc97365606f9a5de05e7e86018d5245719ff49e8e6f4ba7c6ede8af2c`  
-		Last Modified: Wed, 17 Dec 2025 14:00:27 GMT  
-		Size: 5.1 KB (5077 bytes)  
+	-	`sha256:c5e661b50f0baf0538cdf872dbdf596797baf0929471cd77bc260c16d70c261c`  
+		Last Modified: Sun, 28 Dec 2025 07:24:48 GMT  
+		Size: 5.0 KB (5034 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `alpine:edge` - linux; ppc64le
 
 ```console
-$ docker pull alpine@sha256:d55e5a223aed52ceeedf25c829db5fadc9bbf5acb434e922aa4c0c914167a41e
+$ docker pull alpine@sha256:538a0436eb23de5250e1fb1af47fc735e5991d14c79f6dcfdd8c38575a5e96ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3573346 bytes)**  
+-	Total Size: **4.3 MB (4254358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4fe0533438612353eaf223624b6af1bd1591c57eebd5032071c4571ed34d69cd`
+-	Image ID: `sha256:26f09ec6df730284d634fff83a7422b970365f3c3631e95f9740b49f77ca1b12`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-ppc64le.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
+# Sun, 28 Dec 2025 05:44:07 GMT
+ADD alpine-minirootfs-20251224-ppc64le.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:44:07 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:d8b56143a99f4917d30da7e1171daf3971c7cf24b2ef66aad7b01f201494ec66`  
-		Last Modified: Fri, 12 Dec 2025 22:04:16 GMT  
-		Size: 3.6 MB (3573346 bytes)  
+	-	`sha256:4e19615acfba78ccc0157a4a193d4f289094e782391ca4c9b671709b628fc586`  
+		Last Modified: Sun, 28 Dec 2025 05:44:33 GMT  
+		Size: 4.3 MB (4254358 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `alpine:edge` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:5e526c6c813d2d742c5fd024d04dac67c60cb770c7758ac34398f6d053055142
+$ docker pull alpine@sha256:f209efa874157443abc7c5a85932364049afd74d075dc8a551ffe69db9e82d65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.3 KB (81261 bytes)**  
+-	Total Size: **86.7 KB (86666 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1213491044d1128107cf9d38c9709d720434e0e48df9d03b7e48777e08d4e18f`
+-	Image ID: `sha256:c18c951446d53df6258a9b4b0d7696a122c2846e67d2822001efbec94a84e77e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39027f0b9a665f547c868f105b7d3f7640a8844d2571b215b8ae278570413c12`  
-		Last Modified: Sat, 13 Dec 2025 12:43:10 GMT  
-		Size: 76.1 KB (76131 bytes)  
+	-	`sha256:beab77e7097801746205ab0fcd917e0c51d250d2043070d9877daaf5ffda52ef`  
+		Last Modified: Sun, 28 Dec 2025 07:24:50 GMT  
+		Size: 81.6 KB (81579 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4ce90d8c683085edaee1d81ffd60f87e0cd90a9dd17da189d33bbe7040ac2026`  
-		Last Modified: Fri, 19 Dec 2025 12:54:19 GMT  
-		Size: 5.1 KB (5130 bytes)  
+	-	`sha256:30c7d2f5abfcd99beb073422e6836254f1c670a036bf014a40fb97fab9d71710`  
+		Last Modified: Sun, 28 Dec 2025 07:24:51 GMT  
+		Size: 5.1 KB (5087 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `alpine:edge` - linux; riscv64
 
 ```console
-$ docker pull alpine@sha256:f49dc5274dea0a3600c9c9a603bc8e7628e2b0ac0316626606c340c112dc7af9
+$ docker pull alpine@sha256:ff0efe7e42d5754a2dd5c37c78decd69cdc0b3f962fb8aacbd18c71b1e40d9f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3350196 bytes)**  
+-	Total Size: **4.0 MB (4048360 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9f5edf690b1f4cebf71bbfc6895b76743b051ea8a946db7388189d2358f7255`
+-	Image ID: `sha256:4f5d69ba97834af884c5272fcb45009fa68db305ea10f1ef15b7814881acf178`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-riscv64.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
+# Sun, 28 Dec 2025 05:45:08 GMT
+ADD alpine-minirootfs-20251224-riscv64.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:45:08 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:1ce3d2c30285d18ddfb483c62335e2dd9abc74922e2278f333df42c8c25752a9`  
-		Last Modified: Mon, 08 Dec 2025 10:25:24 GMT  
-		Size: 3.4 MB (3350196 bytes)  
+	-	`sha256:3e66906ee58b3dd1f9b1045c1ce236c420a6ba85e98c1bbc8bac566d76ceb045`  
+		Last Modified: Sun, 28 Dec 2025 05:45:38 GMT  
+		Size: 4.0 MB (4048360 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `alpine:edge` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:b6acc0cad7b8d985d4aaabe7de1055a4ee2ce3ba0d620430f9d54bf87ea1fce8
+$ docker pull alpine@sha256:ace8c41445e58d94a96e06920cf7eb76db288ec7a14ed204a2b191b064eb0b7f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.3 KB (81257 bytes)**  
+-	Total Size: **86.7 KB (86662 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2f59d08e28fb7ab8188e0371a150f16111f462f93c4841dd51df145d8cde5d5`
+-	Image ID: `sha256:dab82aff7760b997134f66e0ac693caedddb631c695c35e18c5b38d8184e88a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a8f63f4c438614482f2993a2115b2b122b7b8ddde174449db074aa81f0511a98`  
-		Last Modified: Wed, 17 Dec 2025 20:56:23 GMT  
-		Size: 76.1 KB (76127 bytes)  
+	-	`sha256:09918b343672205ed75dc7291dbf6088ad949fe7ec640390f5a6c70e1accbf42`  
+		Last Modified: Sun, 28 Dec 2025 07:24:54 GMT  
+		Size: 81.6 KB (81575 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a2a0dcac4ab036d8c46466868a13cc290ab42a336c72ceedb7a2cabce9d66be5`  
-		Last Modified: Tue, 16 Dec 2025 12:58:59 GMT  
-		Size: 5.1 KB (5130 bytes)  
+	-	`sha256:eecb05399f7671a95b438f1675b615df84aa1a0a34f80772543eda247daae6aa`  
+		Last Modified: Sun, 28 Dec 2025 07:24:55 GMT  
+		Size: 5.1 KB (5087 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `alpine:edge` - linux; s390x
 
 ```console
-$ docker pull alpine@sha256:06c4cec207a7413cd4c188842915e44a3346ac300dd11207fb41a701274acc11
+$ docker pull alpine@sha256:1a3364c8125eb7e4975cae50bd6fa327d02d3b761cb36777bc2570005ca79973
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3466901 bytes)**  
+-	Total Size: **4.1 MB (4138942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:079041625475f49f8d1347f2b7fa5fda92d21d983c8f66689669b690d701027b`
+-	Image ID: `sha256:f87320d312b52a5a77fcc9891e37d96758238645df537eba0f65b67bf1855db2`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:16:36 GMT
-ADD alpine-minirootfs-20250108-s390x.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:16:36 GMT
+# Sun, 28 Dec 2025 05:44:55 GMT
+ADD alpine-minirootfs-20251224-s390x.tar.gz / # buildkit
+# Sun, 28 Dec 2025 05:44:55 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:ee6fac1a7857654c2abd351d9bb1c40147998fd92a4088f47bcdea5f19854bef`  
-		Last Modified: Fri, 12 Dec 2025 18:39:18 GMT  
-		Size: 3.5 MB (3466901 bytes)  
+	-	`sha256:48b8b0e002621c998fc4c6a7c2fc4adb2a4a8560b176e2ab7a9eaf50ea005944`  
+		Last Modified: Sun, 28 Dec 2025 05:45:21 GMT  
+		Size: 4.1 MB (4138942 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `alpine:edge` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:d458746fe026fb9b09a37a966475aff56cb370606e7f51afe5d032dcb662ffb1
+$ docker pull alpine@sha256:b3b636e0fbbf995d5b493b6dcc76bca6327f25d9bd77f40e6303fece6bab664f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.2 KB (81206 bytes)**  
+-	Total Size: **86.6 KB (86612 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7975f8e6b5da665aabe7d6e5685dab281731cf09f47600c4fb9466b3ee3384d6`
+-	Image ID: `sha256:b97a2eaa55fb6a1a22b9852fdc49cb85b131fc9784a4d2a76d05a02209936bcd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:664a0fc96e203b82ebb142c22762b90e174de4fb01985ccf47d75a3250094311`  
-		Last Modified: Sat, 13 Dec 2025 12:43:15 GMT  
-		Size: 76.1 KB (76109 bytes)  
+	-	`sha256:7c1316eb39179a679e46fe182d480cdb6d7900707344089785aaae107ed2541b`  
+		Last Modified: Sun, 28 Dec 2025 07:24:57 GMT  
+		Size: 81.6 KB (81557 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bda4aba3e9a177cbbad4e731c225920c4fedb2dc9e1dc2663df3d9e39e50f360`  
-		Last Modified: Tue, 16 Dec 2025 12:59:02 GMT  
-		Size: 5.1 KB (5097 bytes)  
+	-	`sha256:7c80e7d0eb6ff9e04329608889aebebb0a2bbf06fdfa2b26882004e3ecfd7a1d`  
+		Last Modified: Sun, 28 Dec 2025 07:24:58 GMT  
+		Size: 5.1 KB (5055 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `alpine:latest`
