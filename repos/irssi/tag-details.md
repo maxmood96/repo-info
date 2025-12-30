@@ -22,7 +22,7 @@
 ## `irssi:1`
 
 ```console
-$ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c6071348cf06d8
+$ docker pull irssi@sha256:a58a0b129b62fd10c71f2bbbbf21dc04a640a8d024a63cad46fe33d7729f73d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -47,54 +47,54 @@ $ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c60
 ### `irssi:1` - linux; amd64
 
 ```console
-$ docker pull irssi@sha256:ba548a27a12441efe110f9a056e793d722bda4a4eb13a3ceea8bf8d2d5ac1e29
+$ docker pull irssi@sha256:3b3c85d70a41f6687c043024f4cb244a9bb216ff5d00dac171f720dbe73860a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.9 MB (53869300 bytes)**  
+-	Total Size: **53.9 MB (53869154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ebb967af1ef6016f39c7253143525ae93880628cdbc3e189772a2d029fc1a25`
+-	Image ID: `sha256:f2472da814fc592aa34397af3e23f4d9501da8ddda528ab94ff94b594a538014`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:37:11 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:1733a4cd59540b3470ff7a90963bcdea5b543279dd6bdaf022d7883fdad221e5`  
-		Last Modified: Mon, 08 Dec 2025 22:17:58 GMT  
-		Size: 29.8 MB (29776496 bytes)  
+	-	`sha256:02d7611c4eae219af91448a4720bdba036575d3bc0356cfe12774af85daa6aff`  
+		Last Modified: Mon, 29 Dec 2025 22:31:18 GMT  
+		Size: 29.8 MB (29776533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae9ff25045243dc27c083564f101c73527fab1e4d6de25faafe1d20c6993d0f`  
-		Last Modified: Mon, 08 Dec 2025 22:38:10 GMT  
-		Size: 19.2 MB (19222767 bytes)  
+	-	`sha256:6c8132994a787dd852aeb12fc93d274ee76418e6badc922497d2965b065f6e7d`  
+		Last Modified: Mon, 29 Dec 2025 23:21:44 GMT  
+		Size: 19.2 MB (19222636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63cff4c278980a41219ced1054076473f352a9ab538703fdb0508673575901de`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 3.3 KB (3323 bytes)  
+	-	`sha256:6f12454da6b93953f77c2a08d9c8ef63604b855bbd13347b3ddc7ff0ec7df67a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:42 GMT  
+		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6979d38c29179b5f4797ac48f3389f2044fb0312d0cd3b7f7fe377d41762cf9c`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 4.9 MB (4866682 bytes)  
+	-	`sha256:925fbbd20e1183e0b4cddd1cf3e9a0cf8e42492a977a8a050a677cddc3e0caaf`  
+		Last Modified: Mon, 29 Dec 2025 23:21:43 GMT  
+		Size: 4.9 MB (4866629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -104,78 +104,78 @@ CMD ["irssi"]
 ### `irssi:1` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:2c34f0b8bd4789c746b87fcefbeca5053bc49367fbe0106f8c1f2c5df4510d32
+$ docker pull irssi@sha256:cd86910851860dd596083890e30f2022331fb3b04b10f7a63aa238cf74c7b396
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607028 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2aec691ef1c3f8b1f097d426de19c51fc9a39bcd3002cf27303c6ea181155e87`
+-	Image ID: `sha256:16708e5a07b3efd7806c1ae245a0d46b2ce402fba961571392e0c0c17520d1f4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea7448fd69d2025a02fa3773b13695b9ecaa34efd8cc5b223bd340a6a20bb280`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:77a09aac870c7c1cd26f161e512157115820cf8af0d7dac29f59655dcebacc97`  
+		Last Modified: Tue, 30 Dec 2025 03:00:08 GMT  
 		Size: 5.6 MB (5588377 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:15055f679734606495e25ae5c7b68d5ee1ec2609bfbca41b8eccfdc0431ef6dd`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:ae6bfb7c69b24e458298d702d07c1ac1b1d40a900e426f8f11965280bae18665`  
+		Last Modified: Tue, 30 Dec 2025 03:00:09 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1` - linux; arm variant v5
 
 ```console
-$ docker pull irssi@sha256:605f1644cbe09985d1b0a7159e6a3645cacce33a561adb3eb3994e2bb9fe1118
+$ docker pull irssi@sha256:a4d84f499fc0e5eb44aead73692f35a806f0830fa5018b6cf84b1868700b5963
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.9 MB (50943555 bytes)**  
+-	Total Size: **50.9 MB (50944115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38d5500fde47056d160fcf131159d65be22e1cce50911f44d2f5be15fc113c99`
+-	Image ID: `sha256:c9445964d8d8a558738c20de61cd62137fb7578057bd77c1b7f5739ee5bfa485`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:d97bc71d0fa535127863fdab265dfddb07b3cda35b80de4dd2b9b67fe154c856`  
-		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
-		Size: 27.9 MB (27944187 bytes)  
+	-	`sha256:b99a8d8dab982a1a4ea341e66b178b14c0f373c2cd90ac46a67308a4f43c82ae`  
+		Last Modified: Mon, 29 Dec 2025 22:27:09 GMT  
+		Size: 27.9 MB (27944146 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:209b020e9b6936d49088aeb2fe32da563e0dc7240b53e7a4f55a0064bcc57dbb`  
-		Last Modified: Mon, 08 Dec 2025 22:35:02 GMT  
-		Size: 18.3 MB (18286366 bytes)  
+	-	`sha256:3d1a051782ec1264daf1fac1ec43db9040842983091da28b50cff5526a386f05`  
+		Last Modified: Mon, 29 Dec 2025 23:18:49 GMT  
+		Size: 18.3 MB (18286953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e546d6b1c1001d996e09271aa06076bbf5076bf4c0f1a64a5a76db18e6351b32`  
-		Last Modified: Mon, 08 Dec 2025 22:34:59 GMT  
-		Size: 3.3 KB (3329 bytes)  
+	-	`sha256:0d9e4f8229159dfa48b293b595cb8424bdbcd96b481759e659647a1c0f291581`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08c1c60a78876ca8d26fa893a37ff13080f097555eea972e3e45e59d912f5e9c`  
-		Last Modified: Mon, 08 Dec 2025 22:35:00 GMT  
-		Size: 4.7 MB (4709641 bytes)  
+	-	`sha256:1552d6662afda0c53628250b85cff9fbbd309d1b53bf32e84ed85b3389f1f94d`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 4.7 MB (4709657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -185,78 +185,78 @@ CMD ["irssi"]
 ### `irssi:1` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:42ce2f56fd00643a382954ddf368a7ad26f88a053b4a557aa1112ed9de67aac0
+$ docker pull irssi@sha256:2d8f6118f9cf46e7448d1418e4a916542ef08117a959cf1839012608a741fc65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5604715 bytes)**  
+-	Total Size: **5.6 MB (5604713 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:192e3247c9d1fd1e403f1da43c465327ebe5a123a9caf785ea53b5dd0388c5cb`
+-	Image ID: `sha256:e51f71b2322cd350f3f66a9681d5e6de6bb479c5b9b259e75f772009877d9221`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dbd5f23d6f6d5ab003eddef0af01a8a8b66fac74afe90d0faa97afa2b0a581d2`  
-		Last Modified: Tue, 09 Dec 2025 00:01:40 GMT  
+	-	`sha256:5b702db9bda66f6169dc57ba677ab4cb95e892bb9b54fe5bce9b6e61e50cbfe1`  
+		Last Modified: Tue, 30 Dec 2025 03:00:15 GMT  
 		Size: 5.6 MB (5585926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:401ba355602555e19652809e181e8fc4d172d2140c0c17f0781b909a2bff847e`  
-		Last Modified: Tue, 09 Dec 2025 00:01:41 GMT  
-		Size: 18.8 KB (18789 bytes)  
+	-	`sha256:d6cba35a00912b77b0bf9fa496768eaaf6ff6a70b18d3e3d2636cf4a6c61fe1a`  
+		Last Modified: Tue, 30 Dec 2025 03:00:19 GMT  
+		Size: 18.8 KB (18787 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1` - linux; arm variant v7
 
 ```console
-$ docker pull irssi@sha256:90bf141f8448f931b78a4759623391882ba8d3d0520b3770b063ea80daf29ee7
+$ docker pull irssi@sha256:e4d27a04dfad1a27627b754b0f8fa15afc211115a1ad7cb4620d2efbd2ab98da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.7 MB (48681035 bytes)**  
+-	Total Size: **48.7 MB (48681346 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d9f126abb644aa91708596fe16f433c339727d7b73386dc26994eb1d0119af6`
+-	Image ID: `sha256:7b398645628764f0cb33c50578a24916dc86f138cc1abf401eda13d41ed3460f`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:cfc411ffeb71f696e2a89e33e91be9b70084d6c3383474344babe3a4a21eb843`  
-		Last Modified: Mon, 08 Dec 2025 22:16:57 GMT  
-		Size: 26.2 MB (26210013 bytes)  
+	-	`sha256:6d3e0fea3cb8eb29b9c06956265b47cd00f7ebfb48e35e818f686d52c21353f5`  
+		Last Modified: Mon, 29 Dec 2025 22:28:07 GMT  
+		Size: 26.2 MB (26210001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eea7a0e9121517502a0452fd53a68bbbf3e120ea0391f4616c22058f3ffe83a6`  
-		Last Modified: Mon, 08 Dec 2025 22:37:54 GMT  
-		Size: 17.9 MB (17909125 bytes)  
+	-	`sha256:03b8fa94779dfe46b70274f574fedd82507082810021ae4f845646cb1dce9362`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 17.9 MB (17909648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93a98b78793ec14ceabf793c4778fa9c59358545e4604a1c0b15bb6bd21bd755`  
-		Last Modified: Mon, 08 Dec 2025 22:37:52 GMT  
+	-	`sha256:95aeb493072858b7b55ea0ebdd3ab5c100a98dbc56143618e1ec91156a8a5833`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
 		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c7e9fbcbad6965518fd24946faf5855bd7c2b9dbb7a8632a912292a76f391b`  
-		Last Modified: Mon, 08 Dec 2025 22:37:53 GMT  
-		Size: 4.6 MB (4558538 bytes)  
+	-	`sha256:acb5cf1d39feaaf92989d33d12c59d42ec27bd26bc489a00abeff7da96bdbf5c`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 4.6 MB (4558338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -266,78 +266,78 @@ CMD ["irssi"]
 ### `irssi:1` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:529cccf10215bb411a271b196fe666e44db36c0c88bc62b754ae778cc278ef86
+$ docker pull irssi@sha256:8857d82cea6c43130b7e983548a0f403c240ed8d0d9a2428c6838149368a2049
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5070cb3b050937bc197ae388f5989122c8e4fc9558708e5cd01f7eb53047ec85`
+-	Image ID: `sha256:2d9e20f4d32838e312ef529d9c9eff7c7ebcff2f81a6bfc695737870da5eb99e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:82a650d25d6be9c0ec73d583a9bfbb7e4cdf26f7eac9d4a2c0b9165043d1c3b1`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8a34f8c3b342999b7dba68b6dcda05236500a8d04b3671140397f07e9c8122fc`  
+		Last Modified: Tue, 30 Dec 2025 03:00:29 GMT  
 		Size: 5.6 MB (5588948 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b12cb7447938f917d5345ecf33832b856ff04c97a5f9c2213b71e0a7d45d3fcc`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8f708606255cb3dffb5272991afb1cb7af441b9dcfa7ff57b1d68e9413a9eb11`  
+		Last Modified: Tue, 30 Dec 2025 03:00:30 GMT  
 		Size: 18.8 KB (18789 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1` - linux; arm64 variant v8
 
 ```console
-$ docker pull irssi@sha256:4ad94477cda90ae8d3d4d47ed0c1a58d162ca780cbc21e1e356ae833c2c9af51
+$ docker pull irssi@sha256:cff45b7bfe478eb28dd1dd96ca7dd16e1a66294da7316f8da168a482869b22fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.0 MB (53972792 bytes)**  
+-	Total Size: **54.0 MB (53972824 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6123fcf7ac4efb210283b7fab07ab5e1f866bcfa7ad8dbd2186bd66c2f88d4b2`
+-	Image ID: `sha256:2ed438e0e96f43b9763c1167dae5ff12991dd1e14f33b7e4ba71b850d01c52bf`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:35:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:f626fba1463b32b20f78d29b52dcf15be927dbb5372a9ba6a5f97aad47ae220b`  
-		Last Modified: Mon, 08 Dec 2025 22:17:19 GMT  
-		Size: 30.1 MB (30138628 bytes)  
+	-	`sha256:2ae15a20160209c6fd6cff4886e4ba2e666fa5bedd7b54a2c0097ea6646f0273`  
+		Last Modified: Mon, 29 Dec 2025 22:31:09 GMT  
+		Size: 30.1 MB (30138636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:271cd4b9332a86de31690e94a837946ec81b376cf3b99b9ec078b9997ebfc4e7`  
-		Last Modified: Mon, 08 Dec 2025 22:36:51 GMT  
-		Size: 19.0 MB (19049077 bytes)  
+	-	`sha256:c4c7fd602675c6c7c6b8aa5aafb615956311e1bfb1ff7744ca326d6f7de8126b`  
+		Last Modified: Mon, 29 Dec 2025 23:21:34 GMT  
+		Size: 19.0 MB (19049094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2f51515c1d0d0bdda82745487e18f18f85d1a6999f3c82ff517039ed8c01ae9`  
-		Last Modified: Mon, 08 Dec 2025 22:36:49 GMT  
-		Size: 3.3 KB (3331 bytes)  
+	-	`sha256:3a7eecea8feac170ae95f33c43646357cd8719c96bc0c0026e63058598164aac`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae317866ab39c091f9ece44d604dc3317877b2ed386b1ff38dcf25d62707f6e`  
-		Last Modified: Mon, 08 Dec 2025 22:36:50 GMT  
-		Size: 4.8 MB (4781724 bytes)  
+	-	`sha256:7df4a1617ae3607d3a5718f47073286a88f69a48ce2fdf4d26e708ec9399fc6a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 4.8 MB (4781733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -347,78 +347,78 @@ CMD ["irssi"]
 ### `irssi:1` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:8a9848973ad593c402ad00791b8debf829808115d9215d351a4d092da9efdfb6
+$ docker pull irssi@sha256:a04bde14fad32b933fcf4da9cc868a2b9a592c210856a8cfe296e9e9304cd6ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5613694 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21e8e14ea45e56f1a280745e4215d6b09bf3bbe98d77d25ed701e1833b69db94`
+-	Image ID: `sha256:a0161e3ac2f81fa90b7210540b966f0c473cdb48b16c673f1f2092b9c8839685`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:833298ea4b4e32cd4be350f01f29cc972db0aa5f1e1b52c229e9611870f9d81d`  
-		Last Modified: Tue, 09 Dec 2025 00:01:51 GMT  
+	-	`sha256:b5269aeec51509984fc080b3c9dbc5d15ef72537f499516b5ef18329212c517f`  
+		Last Modified: Tue, 30 Dec 2025 03:00:36 GMT  
 		Size: 5.6 MB (5594861 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:12ec53196ee839e1d4fc9f760637572995c6cf92c75585cdf8a0ddebd72fd86a`  
-		Last Modified: Tue, 09 Dec 2025 00:01:52 GMT  
+	-	`sha256:42f8353da907cf9a9b270dffb34df36a9c51973e97d9bfd3d4e459781b206800`  
+		Last Modified: Tue, 30 Dec 2025 03:00:37 GMT  
 		Size: 18.8 KB (18833 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1` - linux; 386
 
 ```console
-$ docker pull irssi@sha256:e3cb55074f79f7accb3186e087c8bcfbe5fb81bafed6b3843bbb182b831c2271
+$ docker pull irssi@sha256:d08d4d3128e25228bf2d6faef99a6113ac70a47a74b0a2ba6626b6cabb140274
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.9 MB (54905243 bytes)**  
+-	Total Size: **54.9 MB (54905392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ede6324a485fc1c56152548ccc95aa525d3e6298b82206a635b9e5bb2c43a274`
+-	Image ID: `sha256:979e1cbb8c89942ce58d9bb6021f47e002333c12e43d67332ce0629d3d106f49`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:2648c88d9207cd6090be83f4a97e2aa4080930987d8fb62195cc994194160e67`  
-		Last Modified: Mon, 08 Dec 2025 22:17:03 GMT  
-		Size: 31.3 MB (31293070 bytes)  
+	-	`sha256:796ffff142a3158a5c48a8d81b8b722c5cf4889d5e22da70bdd13a6459d6e40b`  
+		Last Modified: Mon, 29 Dec 2025 22:27:31 GMT  
+		Size: 31.3 MB (31293100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92779a84b492a0e3f9b30abe3ba2c3f3c75f5f8bac0be5b3ec6f1d2151769a81`  
-		Last Modified: Mon, 08 Dec 2025 22:35:51 GMT  
-		Size: 18.7 MB (18740473 bytes)  
+	-	`sha256:2efbd3bd6e2771e7bdcc6ade44379f7e6ed50abf8d1a9c274cb9f6f58c572fbd`  
+		Last Modified: Mon, 29 Dec 2025 23:16:34 GMT  
+		Size: 18.7 MB (18740665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e9e00516c012835613d2d6c24e48eca1db4092e2ae02a5557ef978565a9087b`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 3.3 KB (3326 bytes)  
+	-	`sha256:8048bbcd036579dd5df09fcbfdbbd027f024db2c93517455be9e832043b0fb0d`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:380f851f46dcf6024e273c5690f4de14d4837fe4c9e173048edc3844675aefad`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 4.9 MB (4868342 bytes)  
+	-	`sha256:ce14d1cfe28c0f1ca363e3679575bc7ff046c3a7aecc7fa84768f91a49e33cb7`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 4.9 MB (4868266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -428,24 +428,24 @@ CMD ["irssi"]
 ### `irssi:1` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:0e026c9c8b43f1e4b3f0cf84c29441b70414ab67d248c56ebf7607efd867af5f
+$ docker pull irssi@sha256:1d3a4326ce72049f65657775db7ab8b00bc00803f2e6badc5b1e6b6c988bc45a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5603095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c110c8c5132d6b986eca5007cb21a2921c655197298f96c1e6e3fe1d975295ce`
+-	Image ID: `sha256:623d6e43eaa9131f25e3eb59f90fc4982efb67567b9ba4a3433405a7b6f64b94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:290278e5fa9964615268f167ae0917568dd48529eb40cb0fe4b7b6b4fd6db490`  
-		Last Modified: Tue, 09 Dec 2025 00:01:57 GMT  
+	-	`sha256:dfb01705cfaf68137a2b4104a75940c5dab71ec5b22996969cf4a8fbcaa9ca90`  
+		Last Modified: Tue, 30 Dec 2025 03:00:43 GMT  
 		Size: 5.6 MB (5584500 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3b86870229139d3e4a5b2f5fb461a45c930f312a775c5a1c86c120a2616479b3`  
-		Last Modified: Tue, 09 Dec 2025 00:01:58 GMT  
+	-	`sha256:a4aa76b450b3cb9ab30ed105ec81ac1ebb63f0368134235dcb34c03b0d9d40ca`  
+		Last Modified: Tue, 30 Dec 2025 03:00:44 GMT  
 		Size: 18.6 KB (18595 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -614,54 +614,54 @@ $ docker pull irssi@sha256:1b92fd8833f5dd070657c1ec551487f7908d41f8c197a02d2c94c
 ### `irssi:1` - linux; s390x
 
 ```console
-$ docker pull irssi@sha256:79ceeb6e5f00cadefc5098892f4fdd847c8a6c7147214049af36f2988eb63701
+$ docker pull irssi@sha256:815d78d426c36b6000938223e17371438343388b97029ddc801db1a6e4449343
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.5 MB (54503098 bytes)**  
+-	Total Size: **54.5 MB (54503079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f4447f6a16ef4660d5cc882de4451987df832e0221f3c9198582f5041d9e484`
+-	Image ID: `sha256:32cd1197e33bbff9caa03127a87859248728b96b50492b7e9d451f571debed6a`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:deacec5e6af82b258c59e95e3e86abeef36fad06b1d9ff2de33e88544ffb79ff`  
-		Last Modified: Mon, 08 Dec 2025 22:20:52 GMT  
-		Size: 29.8 MB (29834400 bytes)  
+	-	`sha256:c9a83915f7d4b9d7fbe5dceeedd49718d2702fd67d78b63a38ec344f3fbfcc41`  
+		Last Modified: Mon, 29 Dec 2025 22:27:07 GMT  
+		Size: 29.8 MB (29834418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12a68582eda8cf9c795e8fac7bd4a06d7b4cf05bcce0b996577a486d0e34b56c`  
-		Last Modified: Mon, 08 Dec 2025 22:34:33 GMT  
-		Size: 19.8 MB (19759448 bytes)  
+	-	`sha256:18260ff97d5c44522311e7b20eb667dd8268e5f437656b11d83126dd6e6e0464`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 19.8 MB (19759407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cea7a5c770aac1d19a49e32bddbb9b474dd2746e7821d20791e1b80abfa3b5a3`  
-		Last Modified: Mon, 08 Dec 2025 22:34:31 GMT  
-		Size: 3.3 KB (3328 bytes)  
+	-	`sha256:3c75b4b06491d9757a2c0ddc7e1161f43d94af12a3b1246ed862a050c9b61c09`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6fe49ac5d532203fa75223786c8c8ef7f78fbdeff8227abdab3b6e08125de53`  
-		Last Modified: Mon, 08 Dec 2025 22:34:32 GMT  
-		Size: 4.9 MB (4905890 bytes)  
+	-	`sha256:daa149046211a2130b3719fc3f26b72463b26a58fa4a5dc5d84f9523335848ca`  
+		Last Modified: Mon, 29 Dec 2025 23:18:35 GMT  
+		Size: 4.9 MB (4905893 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -671,24 +671,24 @@ CMD ["irssi"]
 ### `irssi:1` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:afc0d5563715a205bdbf09adfb0dcb772d44ec5f9f64be619112ea71bef71370
+$ docker pull irssi@sha256:2b99e2235e3fa873ef89b93a9147c660d901ec7f61f739ea24d96830690fb060
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb41a3e51a7b6c277c4898dede97241725067c20506fcd3897eb9a2fa33ef8fc`
+-	Image ID: `sha256:0fc57da1edc6729fa20bb402e73e2ca3b985338ecf24f6bedb15c082c9438cdd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9292a924a5f71b0700ea789b79e1a8bf1256af5aae51b422283563c1fa34bf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:15 GMT  
+	-	`sha256:ee4a7f0d2dd6d4c3875c55bf6786b9b62f3e168dfa34657418298306f4cb7e03`  
+		Last Modified: Tue, 30 Dec 2025 03:00:59 GMT  
 		Size: 5.6 MB (5589282 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bff40bc8ca1364bffe8c60be1df3e2bffedbd27bb8dbcf6db778c754320ccf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:16 GMT  
+	-	`sha256:2f9a8401231d6692720f44f08b6392f880547c382962b1052da941cec6dbc11c`  
+		Last Modified: Tue, 30 Dec 2025 03:01:00 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2065,7 +2065,7 @@ $ docker pull irssi@sha256:5f59a9171e69187914fae3b550b39d19fd226cdc7d6fdc962f2d0
 ## `irssi:1-trixie`
 
 ```console
-$ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c6071348cf06d8
+$ docker pull irssi@sha256:a58a0b129b62fd10c71f2bbbbf21dc04a640a8d024a63cad46fe33d7729f73d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2090,54 +2090,54 @@ $ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c60
 ### `irssi:1-trixie` - linux; amd64
 
 ```console
-$ docker pull irssi@sha256:ba548a27a12441efe110f9a056e793d722bda4a4eb13a3ceea8bf8d2d5ac1e29
+$ docker pull irssi@sha256:3b3c85d70a41f6687c043024f4cb244a9bb216ff5d00dac171f720dbe73860a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.9 MB (53869300 bytes)**  
+-	Total Size: **53.9 MB (53869154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ebb967af1ef6016f39c7253143525ae93880628cdbc3e189772a2d029fc1a25`
+-	Image ID: `sha256:f2472da814fc592aa34397af3e23f4d9501da8ddda528ab94ff94b594a538014`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:37:11 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:1733a4cd59540b3470ff7a90963bcdea5b543279dd6bdaf022d7883fdad221e5`  
-		Last Modified: Mon, 08 Dec 2025 22:17:58 GMT  
-		Size: 29.8 MB (29776496 bytes)  
+	-	`sha256:02d7611c4eae219af91448a4720bdba036575d3bc0356cfe12774af85daa6aff`  
+		Last Modified: Mon, 29 Dec 2025 22:31:18 GMT  
+		Size: 29.8 MB (29776533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae9ff25045243dc27c083564f101c73527fab1e4d6de25faafe1d20c6993d0f`  
-		Last Modified: Mon, 08 Dec 2025 22:38:10 GMT  
-		Size: 19.2 MB (19222767 bytes)  
+	-	`sha256:6c8132994a787dd852aeb12fc93d274ee76418e6badc922497d2965b065f6e7d`  
+		Last Modified: Mon, 29 Dec 2025 23:21:44 GMT  
+		Size: 19.2 MB (19222636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63cff4c278980a41219ced1054076473f352a9ab538703fdb0508673575901de`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 3.3 KB (3323 bytes)  
+	-	`sha256:6f12454da6b93953f77c2a08d9c8ef63604b855bbd13347b3ddc7ff0ec7df67a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:42 GMT  
+		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6979d38c29179b5f4797ac48f3389f2044fb0312d0cd3b7f7fe377d41762cf9c`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 4.9 MB (4866682 bytes)  
+	-	`sha256:925fbbd20e1183e0b4cddd1cf3e9a0cf8e42492a977a8a050a677cddc3e0caaf`  
+		Last Modified: Mon, 29 Dec 2025 23:21:43 GMT  
+		Size: 4.9 MB (4866629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -2147,78 +2147,78 @@ CMD ["irssi"]
 ### `irssi:1-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:2c34f0b8bd4789c746b87fcefbeca5053bc49367fbe0106f8c1f2c5df4510d32
+$ docker pull irssi@sha256:cd86910851860dd596083890e30f2022331fb3b04b10f7a63aa238cf74c7b396
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607028 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2aec691ef1c3f8b1f097d426de19c51fc9a39bcd3002cf27303c6ea181155e87`
+-	Image ID: `sha256:16708e5a07b3efd7806c1ae245a0d46b2ce402fba961571392e0c0c17520d1f4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea7448fd69d2025a02fa3773b13695b9ecaa34efd8cc5b223bd340a6a20bb280`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:77a09aac870c7c1cd26f161e512157115820cf8af0d7dac29f59655dcebacc97`  
+		Last Modified: Tue, 30 Dec 2025 03:00:08 GMT  
 		Size: 5.6 MB (5588377 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:15055f679734606495e25ae5c7b68d5ee1ec2609bfbca41b8eccfdc0431ef6dd`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:ae6bfb7c69b24e458298d702d07c1ac1b1d40a900e426f8f11965280bae18665`  
+		Last Modified: Tue, 30 Dec 2025 03:00:09 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1-trixie` - linux; arm variant v5
 
 ```console
-$ docker pull irssi@sha256:605f1644cbe09985d1b0a7159e6a3645cacce33a561adb3eb3994e2bb9fe1118
+$ docker pull irssi@sha256:a4d84f499fc0e5eb44aead73692f35a806f0830fa5018b6cf84b1868700b5963
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.9 MB (50943555 bytes)**  
+-	Total Size: **50.9 MB (50944115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38d5500fde47056d160fcf131159d65be22e1cce50911f44d2f5be15fc113c99`
+-	Image ID: `sha256:c9445964d8d8a558738c20de61cd62137fb7578057bd77c1b7f5739ee5bfa485`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:d97bc71d0fa535127863fdab265dfddb07b3cda35b80de4dd2b9b67fe154c856`  
-		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
-		Size: 27.9 MB (27944187 bytes)  
+	-	`sha256:b99a8d8dab982a1a4ea341e66b178b14c0f373c2cd90ac46a67308a4f43c82ae`  
+		Last Modified: Mon, 29 Dec 2025 22:27:09 GMT  
+		Size: 27.9 MB (27944146 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:209b020e9b6936d49088aeb2fe32da563e0dc7240b53e7a4f55a0064bcc57dbb`  
-		Last Modified: Mon, 08 Dec 2025 22:35:02 GMT  
-		Size: 18.3 MB (18286366 bytes)  
+	-	`sha256:3d1a051782ec1264daf1fac1ec43db9040842983091da28b50cff5526a386f05`  
+		Last Modified: Mon, 29 Dec 2025 23:18:49 GMT  
+		Size: 18.3 MB (18286953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e546d6b1c1001d996e09271aa06076bbf5076bf4c0f1a64a5a76db18e6351b32`  
-		Last Modified: Mon, 08 Dec 2025 22:34:59 GMT  
-		Size: 3.3 KB (3329 bytes)  
+	-	`sha256:0d9e4f8229159dfa48b293b595cb8424bdbcd96b481759e659647a1c0f291581`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08c1c60a78876ca8d26fa893a37ff13080f097555eea972e3e45e59d912f5e9c`  
-		Last Modified: Mon, 08 Dec 2025 22:35:00 GMT  
-		Size: 4.7 MB (4709641 bytes)  
+	-	`sha256:1552d6662afda0c53628250b85cff9fbbd309d1b53bf32e84ed85b3389f1f94d`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 4.7 MB (4709657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -2228,78 +2228,78 @@ CMD ["irssi"]
 ### `irssi:1-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:42ce2f56fd00643a382954ddf368a7ad26f88a053b4a557aa1112ed9de67aac0
+$ docker pull irssi@sha256:2d8f6118f9cf46e7448d1418e4a916542ef08117a959cf1839012608a741fc65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5604715 bytes)**  
+-	Total Size: **5.6 MB (5604713 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:192e3247c9d1fd1e403f1da43c465327ebe5a123a9caf785ea53b5dd0388c5cb`
+-	Image ID: `sha256:e51f71b2322cd350f3f66a9681d5e6de6bb479c5b9b259e75f772009877d9221`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dbd5f23d6f6d5ab003eddef0af01a8a8b66fac74afe90d0faa97afa2b0a581d2`  
-		Last Modified: Tue, 09 Dec 2025 00:01:40 GMT  
+	-	`sha256:5b702db9bda66f6169dc57ba677ab4cb95e892bb9b54fe5bce9b6e61e50cbfe1`  
+		Last Modified: Tue, 30 Dec 2025 03:00:15 GMT  
 		Size: 5.6 MB (5585926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:401ba355602555e19652809e181e8fc4d172d2140c0c17f0781b909a2bff847e`  
-		Last Modified: Tue, 09 Dec 2025 00:01:41 GMT  
-		Size: 18.8 KB (18789 bytes)  
+	-	`sha256:d6cba35a00912b77b0bf9fa496768eaaf6ff6a70b18d3e3d2636cf4a6c61fe1a`  
+		Last Modified: Tue, 30 Dec 2025 03:00:19 GMT  
+		Size: 18.8 KB (18787 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1-trixie` - linux; arm variant v7
 
 ```console
-$ docker pull irssi@sha256:90bf141f8448f931b78a4759623391882ba8d3d0520b3770b063ea80daf29ee7
+$ docker pull irssi@sha256:e4d27a04dfad1a27627b754b0f8fa15afc211115a1ad7cb4620d2efbd2ab98da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.7 MB (48681035 bytes)**  
+-	Total Size: **48.7 MB (48681346 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d9f126abb644aa91708596fe16f433c339727d7b73386dc26994eb1d0119af6`
+-	Image ID: `sha256:7b398645628764f0cb33c50578a24916dc86f138cc1abf401eda13d41ed3460f`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:cfc411ffeb71f696e2a89e33e91be9b70084d6c3383474344babe3a4a21eb843`  
-		Last Modified: Mon, 08 Dec 2025 22:16:57 GMT  
-		Size: 26.2 MB (26210013 bytes)  
+	-	`sha256:6d3e0fea3cb8eb29b9c06956265b47cd00f7ebfb48e35e818f686d52c21353f5`  
+		Last Modified: Mon, 29 Dec 2025 22:28:07 GMT  
+		Size: 26.2 MB (26210001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eea7a0e9121517502a0452fd53a68bbbf3e120ea0391f4616c22058f3ffe83a6`  
-		Last Modified: Mon, 08 Dec 2025 22:37:54 GMT  
-		Size: 17.9 MB (17909125 bytes)  
+	-	`sha256:03b8fa94779dfe46b70274f574fedd82507082810021ae4f845646cb1dce9362`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 17.9 MB (17909648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93a98b78793ec14ceabf793c4778fa9c59358545e4604a1c0b15bb6bd21bd755`  
-		Last Modified: Mon, 08 Dec 2025 22:37:52 GMT  
+	-	`sha256:95aeb493072858b7b55ea0ebdd3ab5c100a98dbc56143618e1ec91156a8a5833`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
 		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c7e9fbcbad6965518fd24946faf5855bd7c2b9dbb7a8632a912292a76f391b`  
-		Last Modified: Mon, 08 Dec 2025 22:37:53 GMT  
-		Size: 4.6 MB (4558538 bytes)  
+	-	`sha256:acb5cf1d39feaaf92989d33d12c59d42ec27bd26bc489a00abeff7da96bdbf5c`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 4.6 MB (4558338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -2309,78 +2309,78 @@ CMD ["irssi"]
 ### `irssi:1-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:529cccf10215bb411a271b196fe666e44db36c0c88bc62b754ae778cc278ef86
+$ docker pull irssi@sha256:8857d82cea6c43130b7e983548a0f403c240ed8d0d9a2428c6838149368a2049
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5070cb3b050937bc197ae388f5989122c8e4fc9558708e5cd01f7eb53047ec85`
+-	Image ID: `sha256:2d9e20f4d32838e312ef529d9c9eff7c7ebcff2f81a6bfc695737870da5eb99e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:82a650d25d6be9c0ec73d583a9bfbb7e4cdf26f7eac9d4a2c0b9165043d1c3b1`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8a34f8c3b342999b7dba68b6dcda05236500a8d04b3671140397f07e9c8122fc`  
+		Last Modified: Tue, 30 Dec 2025 03:00:29 GMT  
 		Size: 5.6 MB (5588948 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b12cb7447938f917d5345ecf33832b856ff04c97a5f9c2213b71e0a7d45d3fcc`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8f708606255cb3dffb5272991afb1cb7af441b9dcfa7ff57b1d68e9413a9eb11`  
+		Last Modified: Tue, 30 Dec 2025 03:00:30 GMT  
 		Size: 18.8 KB (18789 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull irssi@sha256:4ad94477cda90ae8d3d4d47ed0c1a58d162ca780cbc21e1e356ae833c2c9af51
+$ docker pull irssi@sha256:cff45b7bfe478eb28dd1dd96ca7dd16e1a66294da7316f8da168a482869b22fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.0 MB (53972792 bytes)**  
+-	Total Size: **54.0 MB (53972824 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6123fcf7ac4efb210283b7fab07ab5e1f866bcfa7ad8dbd2186bd66c2f88d4b2`
+-	Image ID: `sha256:2ed438e0e96f43b9763c1167dae5ff12991dd1e14f33b7e4ba71b850d01c52bf`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:35:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:f626fba1463b32b20f78d29b52dcf15be927dbb5372a9ba6a5f97aad47ae220b`  
-		Last Modified: Mon, 08 Dec 2025 22:17:19 GMT  
-		Size: 30.1 MB (30138628 bytes)  
+	-	`sha256:2ae15a20160209c6fd6cff4886e4ba2e666fa5bedd7b54a2c0097ea6646f0273`  
+		Last Modified: Mon, 29 Dec 2025 22:31:09 GMT  
+		Size: 30.1 MB (30138636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:271cd4b9332a86de31690e94a837946ec81b376cf3b99b9ec078b9997ebfc4e7`  
-		Last Modified: Mon, 08 Dec 2025 22:36:51 GMT  
-		Size: 19.0 MB (19049077 bytes)  
+	-	`sha256:c4c7fd602675c6c7c6b8aa5aafb615956311e1bfb1ff7744ca326d6f7de8126b`  
+		Last Modified: Mon, 29 Dec 2025 23:21:34 GMT  
+		Size: 19.0 MB (19049094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2f51515c1d0d0bdda82745487e18f18f85d1a6999f3c82ff517039ed8c01ae9`  
-		Last Modified: Mon, 08 Dec 2025 22:36:49 GMT  
-		Size: 3.3 KB (3331 bytes)  
+	-	`sha256:3a7eecea8feac170ae95f33c43646357cd8719c96bc0c0026e63058598164aac`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae317866ab39c091f9ece44d604dc3317877b2ed386b1ff38dcf25d62707f6e`  
-		Last Modified: Mon, 08 Dec 2025 22:36:50 GMT  
-		Size: 4.8 MB (4781724 bytes)  
+	-	`sha256:7df4a1617ae3607d3a5718f47073286a88f69a48ce2fdf4d26e708ec9399fc6a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 4.8 MB (4781733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -2390,78 +2390,78 @@ CMD ["irssi"]
 ### `irssi:1-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:8a9848973ad593c402ad00791b8debf829808115d9215d351a4d092da9efdfb6
+$ docker pull irssi@sha256:a04bde14fad32b933fcf4da9cc868a2b9a592c210856a8cfe296e9e9304cd6ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5613694 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21e8e14ea45e56f1a280745e4215d6b09bf3bbe98d77d25ed701e1833b69db94`
+-	Image ID: `sha256:a0161e3ac2f81fa90b7210540b966f0c473cdb48b16c673f1f2092b9c8839685`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:833298ea4b4e32cd4be350f01f29cc972db0aa5f1e1b52c229e9611870f9d81d`  
-		Last Modified: Tue, 09 Dec 2025 00:01:51 GMT  
+	-	`sha256:b5269aeec51509984fc080b3c9dbc5d15ef72537f499516b5ef18329212c517f`  
+		Last Modified: Tue, 30 Dec 2025 03:00:36 GMT  
 		Size: 5.6 MB (5594861 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:12ec53196ee839e1d4fc9f760637572995c6cf92c75585cdf8a0ddebd72fd86a`  
-		Last Modified: Tue, 09 Dec 2025 00:01:52 GMT  
+	-	`sha256:42f8353da907cf9a9b270dffb34df36a9c51973e97d9bfd3d4e459781b206800`  
+		Last Modified: Tue, 30 Dec 2025 03:00:37 GMT  
 		Size: 18.8 KB (18833 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1-trixie` - linux; 386
 
 ```console
-$ docker pull irssi@sha256:e3cb55074f79f7accb3186e087c8bcfbe5fb81bafed6b3843bbb182b831c2271
+$ docker pull irssi@sha256:d08d4d3128e25228bf2d6faef99a6113ac70a47a74b0a2ba6626b6cabb140274
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.9 MB (54905243 bytes)**  
+-	Total Size: **54.9 MB (54905392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ede6324a485fc1c56152548ccc95aa525d3e6298b82206a635b9e5bb2c43a274`
+-	Image ID: `sha256:979e1cbb8c89942ce58d9bb6021f47e002333c12e43d67332ce0629d3d106f49`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:2648c88d9207cd6090be83f4a97e2aa4080930987d8fb62195cc994194160e67`  
-		Last Modified: Mon, 08 Dec 2025 22:17:03 GMT  
-		Size: 31.3 MB (31293070 bytes)  
+	-	`sha256:796ffff142a3158a5c48a8d81b8b722c5cf4889d5e22da70bdd13a6459d6e40b`  
+		Last Modified: Mon, 29 Dec 2025 22:27:31 GMT  
+		Size: 31.3 MB (31293100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92779a84b492a0e3f9b30abe3ba2c3f3c75f5f8bac0be5b3ec6f1d2151769a81`  
-		Last Modified: Mon, 08 Dec 2025 22:35:51 GMT  
-		Size: 18.7 MB (18740473 bytes)  
+	-	`sha256:2efbd3bd6e2771e7bdcc6ade44379f7e6ed50abf8d1a9c274cb9f6f58c572fbd`  
+		Last Modified: Mon, 29 Dec 2025 23:16:34 GMT  
+		Size: 18.7 MB (18740665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e9e00516c012835613d2d6c24e48eca1db4092e2ae02a5557ef978565a9087b`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 3.3 KB (3326 bytes)  
+	-	`sha256:8048bbcd036579dd5df09fcbfdbbd027f024db2c93517455be9e832043b0fb0d`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:380f851f46dcf6024e273c5690f4de14d4837fe4c9e173048edc3844675aefad`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 4.9 MB (4868342 bytes)  
+	-	`sha256:ce14d1cfe28c0f1ca363e3679575bc7ff046c3a7aecc7fa84768f91a49e33cb7`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 4.9 MB (4868266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -2471,24 +2471,24 @@ CMD ["irssi"]
 ### `irssi:1-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:0e026c9c8b43f1e4b3f0cf84c29441b70414ab67d248c56ebf7607efd867af5f
+$ docker pull irssi@sha256:1d3a4326ce72049f65657775db7ab8b00bc00803f2e6badc5b1e6b6c988bc45a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5603095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c110c8c5132d6b986eca5007cb21a2921c655197298f96c1e6e3fe1d975295ce`
+-	Image ID: `sha256:623d6e43eaa9131f25e3eb59f90fc4982efb67567b9ba4a3433405a7b6f64b94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:290278e5fa9964615268f167ae0917568dd48529eb40cb0fe4b7b6b4fd6db490`  
-		Last Modified: Tue, 09 Dec 2025 00:01:57 GMT  
+	-	`sha256:dfb01705cfaf68137a2b4104a75940c5dab71ec5b22996969cf4a8fbcaa9ca90`  
+		Last Modified: Tue, 30 Dec 2025 03:00:43 GMT  
 		Size: 5.6 MB (5584500 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3b86870229139d3e4a5b2f5fb461a45c930f312a775c5a1c86c120a2616479b3`  
-		Last Modified: Tue, 09 Dec 2025 00:01:58 GMT  
+	-	`sha256:a4aa76b450b3cb9ab30ed105ec81ac1ebb63f0368134235dcb34c03b0d9d40ca`  
+		Last Modified: Tue, 30 Dec 2025 03:00:44 GMT  
 		Size: 18.6 KB (18595 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2657,54 +2657,54 @@ $ docker pull irssi@sha256:1b92fd8833f5dd070657c1ec551487f7908d41f8c197a02d2c94c
 ### `irssi:1-trixie` - linux; s390x
 
 ```console
-$ docker pull irssi@sha256:79ceeb6e5f00cadefc5098892f4fdd847c8a6c7147214049af36f2988eb63701
+$ docker pull irssi@sha256:815d78d426c36b6000938223e17371438343388b97029ddc801db1a6e4449343
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.5 MB (54503098 bytes)**  
+-	Total Size: **54.5 MB (54503079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f4447f6a16ef4660d5cc882de4451987df832e0221f3c9198582f5041d9e484`
+-	Image ID: `sha256:32cd1197e33bbff9caa03127a87859248728b96b50492b7e9d451f571debed6a`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:deacec5e6af82b258c59e95e3e86abeef36fad06b1d9ff2de33e88544ffb79ff`  
-		Last Modified: Mon, 08 Dec 2025 22:20:52 GMT  
-		Size: 29.8 MB (29834400 bytes)  
+	-	`sha256:c9a83915f7d4b9d7fbe5dceeedd49718d2702fd67d78b63a38ec344f3fbfcc41`  
+		Last Modified: Mon, 29 Dec 2025 22:27:07 GMT  
+		Size: 29.8 MB (29834418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12a68582eda8cf9c795e8fac7bd4a06d7b4cf05bcce0b996577a486d0e34b56c`  
-		Last Modified: Mon, 08 Dec 2025 22:34:33 GMT  
-		Size: 19.8 MB (19759448 bytes)  
+	-	`sha256:18260ff97d5c44522311e7b20eb667dd8268e5f437656b11d83126dd6e6e0464`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 19.8 MB (19759407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cea7a5c770aac1d19a49e32bddbb9b474dd2746e7821d20791e1b80abfa3b5a3`  
-		Last Modified: Mon, 08 Dec 2025 22:34:31 GMT  
-		Size: 3.3 KB (3328 bytes)  
+	-	`sha256:3c75b4b06491d9757a2c0ddc7e1161f43d94af12a3b1246ed862a050c9b61c09`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6fe49ac5d532203fa75223786c8c8ef7f78fbdeff8227abdab3b6e08125de53`  
-		Last Modified: Mon, 08 Dec 2025 22:34:32 GMT  
-		Size: 4.9 MB (4905890 bytes)  
+	-	`sha256:daa149046211a2130b3719fc3f26b72463b26a58fa4a5dc5d84f9523335848ca`  
+		Last Modified: Mon, 29 Dec 2025 23:18:35 GMT  
+		Size: 4.9 MB (4905893 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -2714,31 +2714,31 @@ CMD ["irssi"]
 ### `irssi:1-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:afc0d5563715a205bdbf09adfb0dcb772d44ec5f9f64be619112ea71bef71370
+$ docker pull irssi@sha256:2b99e2235e3fa873ef89b93a9147c660d901ec7f61f739ea24d96830690fb060
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb41a3e51a7b6c277c4898dede97241725067c20506fcd3897eb9a2fa33ef8fc`
+-	Image ID: `sha256:0fc57da1edc6729fa20bb402e73e2ca3b985338ecf24f6bedb15c082c9438cdd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9292a924a5f71b0700ea789b79e1a8bf1256af5aae51b422283563c1fa34bf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:15 GMT  
+	-	`sha256:ee4a7f0d2dd6d4c3875c55bf6786b9b62f3e168dfa34657418298306f4cb7e03`  
+		Last Modified: Tue, 30 Dec 2025 03:00:59 GMT  
 		Size: 5.6 MB (5589282 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bff40bc8ca1364bffe8c60be1df3e2bffedbd27bb8dbcf6db778c754320ccf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:16 GMT  
+	-	`sha256:2f9a8401231d6692720f44f08b6392f880547c382962b1052da941cec6dbc11c`  
+		Last Modified: Tue, 30 Dec 2025 03:01:00 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `irssi:1.4`
 
 ```console
-$ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c6071348cf06d8
+$ docker pull irssi@sha256:a58a0b129b62fd10c71f2bbbbf21dc04a640a8d024a63cad46fe33d7729f73d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2763,54 +2763,54 @@ $ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c60
 ### `irssi:1.4` - linux; amd64
 
 ```console
-$ docker pull irssi@sha256:ba548a27a12441efe110f9a056e793d722bda4a4eb13a3ceea8bf8d2d5ac1e29
+$ docker pull irssi@sha256:3b3c85d70a41f6687c043024f4cb244a9bb216ff5d00dac171f720dbe73860a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.9 MB (53869300 bytes)**  
+-	Total Size: **53.9 MB (53869154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ebb967af1ef6016f39c7253143525ae93880628cdbc3e189772a2d029fc1a25`
+-	Image ID: `sha256:f2472da814fc592aa34397af3e23f4d9501da8ddda528ab94ff94b594a538014`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:37:11 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:1733a4cd59540b3470ff7a90963bcdea5b543279dd6bdaf022d7883fdad221e5`  
-		Last Modified: Mon, 08 Dec 2025 22:17:58 GMT  
-		Size: 29.8 MB (29776496 bytes)  
+	-	`sha256:02d7611c4eae219af91448a4720bdba036575d3bc0356cfe12774af85daa6aff`  
+		Last Modified: Mon, 29 Dec 2025 22:31:18 GMT  
+		Size: 29.8 MB (29776533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae9ff25045243dc27c083564f101c73527fab1e4d6de25faafe1d20c6993d0f`  
-		Last Modified: Mon, 08 Dec 2025 22:38:10 GMT  
-		Size: 19.2 MB (19222767 bytes)  
+	-	`sha256:6c8132994a787dd852aeb12fc93d274ee76418e6badc922497d2965b065f6e7d`  
+		Last Modified: Mon, 29 Dec 2025 23:21:44 GMT  
+		Size: 19.2 MB (19222636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63cff4c278980a41219ced1054076473f352a9ab538703fdb0508673575901de`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 3.3 KB (3323 bytes)  
+	-	`sha256:6f12454da6b93953f77c2a08d9c8ef63604b855bbd13347b3ddc7ff0ec7df67a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:42 GMT  
+		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6979d38c29179b5f4797ac48f3389f2044fb0312d0cd3b7f7fe377d41762cf9c`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 4.9 MB (4866682 bytes)  
+	-	`sha256:925fbbd20e1183e0b4cddd1cf3e9a0cf8e42492a977a8a050a677cddc3e0caaf`  
+		Last Modified: Mon, 29 Dec 2025 23:21:43 GMT  
+		Size: 4.9 MB (4866629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -2820,78 +2820,78 @@ CMD ["irssi"]
 ### `irssi:1.4` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:2c34f0b8bd4789c746b87fcefbeca5053bc49367fbe0106f8c1f2c5df4510d32
+$ docker pull irssi@sha256:cd86910851860dd596083890e30f2022331fb3b04b10f7a63aa238cf74c7b396
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607028 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2aec691ef1c3f8b1f097d426de19c51fc9a39bcd3002cf27303c6ea181155e87`
+-	Image ID: `sha256:16708e5a07b3efd7806c1ae245a0d46b2ce402fba961571392e0c0c17520d1f4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea7448fd69d2025a02fa3773b13695b9ecaa34efd8cc5b223bd340a6a20bb280`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:77a09aac870c7c1cd26f161e512157115820cf8af0d7dac29f59655dcebacc97`  
+		Last Modified: Tue, 30 Dec 2025 03:00:08 GMT  
 		Size: 5.6 MB (5588377 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:15055f679734606495e25ae5c7b68d5ee1ec2609bfbca41b8eccfdc0431ef6dd`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:ae6bfb7c69b24e458298d702d07c1ac1b1d40a900e426f8f11965280bae18665`  
+		Last Modified: Tue, 30 Dec 2025 03:00:09 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4` - linux; arm variant v5
 
 ```console
-$ docker pull irssi@sha256:605f1644cbe09985d1b0a7159e6a3645cacce33a561adb3eb3994e2bb9fe1118
+$ docker pull irssi@sha256:a4d84f499fc0e5eb44aead73692f35a806f0830fa5018b6cf84b1868700b5963
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.9 MB (50943555 bytes)**  
+-	Total Size: **50.9 MB (50944115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38d5500fde47056d160fcf131159d65be22e1cce50911f44d2f5be15fc113c99`
+-	Image ID: `sha256:c9445964d8d8a558738c20de61cd62137fb7578057bd77c1b7f5739ee5bfa485`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:d97bc71d0fa535127863fdab265dfddb07b3cda35b80de4dd2b9b67fe154c856`  
-		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
-		Size: 27.9 MB (27944187 bytes)  
+	-	`sha256:b99a8d8dab982a1a4ea341e66b178b14c0f373c2cd90ac46a67308a4f43c82ae`  
+		Last Modified: Mon, 29 Dec 2025 22:27:09 GMT  
+		Size: 27.9 MB (27944146 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:209b020e9b6936d49088aeb2fe32da563e0dc7240b53e7a4f55a0064bcc57dbb`  
-		Last Modified: Mon, 08 Dec 2025 22:35:02 GMT  
-		Size: 18.3 MB (18286366 bytes)  
+	-	`sha256:3d1a051782ec1264daf1fac1ec43db9040842983091da28b50cff5526a386f05`  
+		Last Modified: Mon, 29 Dec 2025 23:18:49 GMT  
+		Size: 18.3 MB (18286953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e546d6b1c1001d996e09271aa06076bbf5076bf4c0f1a64a5a76db18e6351b32`  
-		Last Modified: Mon, 08 Dec 2025 22:34:59 GMT  
-		Size: 3.3 KB (3329 bytes)  
+	-	`sha256:0d9e4f8229159dfa48b293b595cb8424bdbcd96b481759e659647a1c0f291581`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08c1c60a78876ca8d26fa893a37ff13080f097555eea972e3e45e59d912f5e9c`  
-		Last Modified: Mon, 08 Dec 2025 22:35:00 GMT  
-		Size: 4.7 MB (4709641 bytes)  
+	-	`sha256:1552d6662afda0c53628250b85cff9fbbd309d1b53bf32e84ed85b3389f1f94d`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 4.7 MB (4709657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -2901,78 +2901,78 @@ CMD ["irssi"]
 ### `irssi:1.4` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:42ce2f56fd00643a382954ddf368a7ad26f88a053b4a557aa1112ed9de67aac0
+$ docker pull irssi@sha256:2d8f6118f9cf46e7448d1418e4a916542ef08117a959cf1839012608a741fc65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5604715 bytes)**  
+-	Total Size: **5.6 MB (5604713 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:192e3247c9d1fd1e403f1da43c465327ebe5a123a9caf785ea53b5dd0388c5cb`
+-	Image ID: `sha256:e51f71b2322cd350f3f66a9681d5e6de6bb479c5b9b259e75f772009877d9221`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dbd5f23d6f6d5ab003eddef0af01a8a8b66fac74afe90d0faa97afa2b0a581d2`  
-		Last Modified: Tue, 09 Dec 2025 00:01:40 GMT  
+	-	`sha256:5b702db9bda66f6169dc57ba677ab4cb95e892bb9b54fe5bce9b6e61e50cbfe1`  
+		Last Modified: Tue, 30 Dec 2025 03:00:15 GMT  
 		Size: 5.6 MB (5585926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:401ba355602555e19652809e181e8fc4d172d2140c0c17f0781b909a2bff847e`  
-		Last Modified: Tue, 09 Dec 2025 00:01:41 GMT  
-		Size: 18.8 KB (18789 bytes)  
+	-	`sha256:d6cba35a00912b77b0bf9fa496768eaaf6ff6a70b18d3e3d2636cf4a6c61fe1a`  
+		Last Modified: Tue, 30 Dec 2025 03:00:19 GMT  
+		Size: 18.8 KB (18787 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4` - linux; arm variant v7
 
 ```console
-$ docker pull irssi@sha256:90bf141f8448f931b78a4759623391882ba8d3d0520b3770b063ea80daf29ee7
+$ docker pull irssi@sha256:e4d27a04dfad1a27627b754b0f8fa15afc211115a1ad7cb4620d2efbd2ab98da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.7 MB (48681035 bytes)**  
+-	Total Size: **48.7 MB (48681346 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d9f126abb644aa91708596fe16f433c339727d7b73386dc26994eb1d0119af6`
+-	Image ID: `sha256:7b398645628764f0cb33c50578a24916dc86f138cc1abf401eda13d41ed3460f`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:cfc411ffeb71f696e2a89e33e91be9b70084d6c3383474344babe3a4a21eb843`  
-		Last Modified: Mon, 08 Dec 2025 22:16:57 GMT  
-		Size: 26.2 MB (26210013 bytes)  
+	-	`sha256:6d3e0fea3cb8eb29b9c06956265b47cd00f7ebfb48e35e818f686d52c21353f5`  
+		Last Modified: Mon, 29 Dec 2025 22:28:07 GMT  
+		Size: 26.2 MB (26210001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eea7a0e9121517502a0452fd53a68bbbf3e120ea0391f4616c22058f3ffe83a6`  
-		Last Modified: Mon, 08 Dec 2025 22:37:54 GMT  
-		Size: 17.9 MB (17909125 bytes)  
+	-	`sha256:03b8fa94779dfe46b70274f574fedd82507082810021ae4f845646cb1dce9362`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 17.9 MB (17909648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93a98b78793ec14ceabf793c4778fa9c59358545e4604a1c0b15bb6bd21bd755`  
-		Last Modified: Mon, 08 Dec 2025 22:37:52 GMT  
+	-	`sha256:95aeb493072858b7b55ea0ebdd3ab5c100a98dbc56143618e1ec91156a8a5833`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
 		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c7e9fbcbad6965518fd24946faf5855bd7c2b9dbb7a8632a912292a76f391b`  
-		Last Modified: Mon, 08 Dec 2025 22:37:53 GMT  
-		Size: 4.6 MB (4558538 bytes)  
+	-	`sha256:acb5cf1d39feaaf92989d33d12c59d42ec27bd26bc489a00abeff7da96bdbf5c`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 4.6 MB (4558338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -2982,78 +2982,78 @@ CMD ["irssi"]
 ### `irssi:1.4` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:529cccf10215bb411a271b196fe666e44db36c0c88bc62b754ae778cc278ef86
+$ docker pull irssi@sha256:8857d82cea6c43130b7e983548a0f403c240ed8d0d9a2428c6838149368a2049
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5070cb3b050937bc197ae388f5989122c8e4fc9558708e5cd01f7eb53047ec85`
+-	Image ID: `sha256:2d9e20f4d32838e312ef529d9c9eff7c7ebcff2f81a6bfc695737870da5eb99e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:82a650d25d6be9c0ec73d583a9bfbb7e4cdf26f7eac9d4a2c0b9165043d1c3b1`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8a34f8c3b342999b7dba68b6dcda05236500a8d04b3671140397f07e9c8122fc`  
+		Last Modified: Tue, 30 Dec 2025 03:00:29 GMT  
 		Size: 5.6 MB (5588948 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b12cb7447938f917d5345ecf33832b856ff04c97a5f9c2213b71e0a7d45d3fcc`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8f708606255cb3dffb5272991afb1cb7af441b9dcfa7ff57b1d68e9413a9eb11`  
+		Last Modified: Tue, 30 Dec 2025 03:00:30 GMT  
 		Size: 18.8 KB (18789 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull irssi@sha256:4ad94477cda90ae8d3d4d47ed0c1a58d162ca780cbc21e1e356ae833c2c9af51
+$ docker pull irssi@sha256:cff45b7bfe478eb28dd1dd96ca7dd16e1a66294da7316f8da168a482869b22fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.0 MB (53972792 bytes)**  
+-	Total Size: **54.0 MB (53972824 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6123fcf7ac4efb210283b7fab07ab5e1f866bcfa7ad8dbd2186bd66c2f88d4b2`
+-	Image ID: `sha256:2ed438e0e96f43b9763c1167dae5ff12991dd1e14f33b7e4ba71b850d01c52bf`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:35:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:f626fba1463b32b20f78d29b52dcf15be927dbb5372a9ba6a5f97aad47ae220b`  
-		Last Modified: Mon, 08 Dec 2025 22:17:19 GMT  
-		Size: 30.1 MB (30138628 bytes)  
+	-	`sha256:2ae15a20160209c6fd6cff4886e4ba2e666fa5bedd7b54a2c0097ea6646f0273`  
+		Last Modified: Mon, 29 Dec 2025 22:31:09 GMT  
+		Size: 30.1 MB (30138636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:271cd4b9332a86de31690e94a837946ec81b376cf3b99b9ec078b9997ebfc4e7`  
-		Last Modified: Mon, 08 Dec 2025 22:36:51 GMT  
-		Size: 19.0 MB (19049077 bytes)  
+	-	`sha256:c4c7fd602675c6c7c6b8aa5aafb615956311e1bfb1ff7744ca326d6f7de8126b`  
+		Last Modified: Mon, 29 Dec 2025 23:21:34 GMT  
+		Size: 19.0 MB (19049094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2f51515c1d0d0bdda82745487e18f18f85d1a6999f3c82ff517039ed8c01ae9`  
-		Last Modified: Mon, 08 Dec 2025 22:36:49 GMT  
-		Size: 3.3 KB (3331 bytes)  
+	-	`sha256:3a7eecea8feac170ae95f33c43646357cd8719c96bc0c0026e63058598164aac`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae317866ab39c091f9ece44d604dc3317877b2ed386b1ff38dcf25d62707f6e`  
-		Last Modified: Mon, 08 Dec 2025 22:36:50 GMT  
-		Size: 4.8 MB (4781724 bytes)  
+	-	`sha256:7df4a1617ae3607d3a5718f47073286a88f69a48ce2fdf4d26e708ec9399fc6a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 4.8 MB (4781733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -3063,78 +3063,78 @@ CMD ["irssi"]
 ### `irssi:1.4` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:8a9848973ad593c402ad00791b8debf829808115d9215d351a4d092da9efdfb6
+$ docker pull irssi@sha256:a04bde14fad32b933fcf4da9cc868a2b9a592c210856a8cfe296e9e9304cd6ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5613694 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21e8e14ea45e56f1a280745e4215d6b09bf3bbe98d77d25ed701e1833b69db94`
+-	Image ID: `sha256:a0161e3ac2f81fa90b7210540b966f0c473cdb48b16c673f1f2092b9c8839685`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:833298ea4b4e32cd4be350f01f29cc972db0aa5f1e1b52c229e9611870f9d81d`  
-		Last Modified: Tue, 09 Dec 2025 00:01:51 GMT  
+	-	`sha256:b5269aeec51509984fc080b3c9dbc5d15ef72537f499516b5ef18329212c517f`  
+		Last Modified: Tue, 30 Dec 2025 03:00:36 GMT  
 		Size: 5.6 MB (5594861 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:12ec53196ee839e1d4fc9f760637572995c6cf92c75585cdf8a0ddebd72fd86a`  
-		Last Modified: Tue, 09 Dec 2025 00:01:52 GMT  
+	-	`sha256:42f8353da907cf9a9b270dffb34df36a9c51973e97d9bfd3d4e459781b206800`  
+		Last Modified: Tue, 30 Dec 2025 03:00:37 GMT  
 		Size: 18.8 KB (18833 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4` - linux; 386
 
 ```console
-$ docker pull irssi@sha256:e3cb55074f79f7accb3186e087c8bcfbe5fb81bafed6b3843bbb182b831c2271
+$ docker pull irssi@sha256:d08d4d3128e25228bf2d6faef99a6113ac70a47a74b0a2ba6626b6cabb140274
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.9 MB (54905243 bytes)**  
+-	Total Size: **54.9 MB (54905392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ede6324a485fc1c56152548ccc95aa525d3e6298b82206a635b9e5bb2c43a274`
+-	Image ID: `sha256:979e1cbb8c89942ce58d9bb6021f47e002333c12e43d67332ce0629d3d106f49`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:2648c88d9207cd6090be83f4a97e2aa4080930987d8fb62195cc994194160e67`  
-		Last Modified: Mon, 08 Dec 2025 22:17:03 GMT  
-		Size: 31.3 MB (31293070 bytes)  
+	-	`sha256:796ffff142a3158a5c48a8d81b8b722c5cf4889d5e22da70bdd13a6459d6e40b`  
+		Last Modified: Mon, 29 Dec 2025 22:27:31 GMT  
+		Size: 31.3 MB (31293100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92779a84b492a0e3f9b30abe3ba2c3f3c75f5f8bac0be5b3ec6f1d2151769a81`  
-		Last Modified: Mon, 08 Dec 2025 22:35:51 GMT  
-		Size: 18.7 MB (18740473 bytes)  
+	-	`sha256:2efbd3bd6e2771e7bdcc6ade44379f7e6ed50abf8d1a9c274cb9f6f58c572fbd`  
+		Last Modified: Mon, 29 Dec 2025 23:16:34 GMT  
+		Size: 18.7 MB (18740665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e9e00516c012835613d2d6c24e48eca1db4092e2ae02a5557ef978565a9087b`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 3.3 KB (3326 bytes)  
+	-	`sha256:8048bbcd036579dd5df09fcbfdbbd027f024db2c93517455be9e832043b0fb0d`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:380f851f46dcf6024e273c5690f4de14d4837fe4c9e173048edc3844675aefad`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 4.9 MB (4868342 bytes)  
+	-	`sha256:ce14d1cfe28c0f1ca363e3679575bc7ff046c3a7aecc7fa84768f91a49e33cb7`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 4.9 MB (4868266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -3144,24 +3144,24 @@ CMD ["irssi"]
 ### `irssi:1.4` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:0e026c9c8b43f1e4b3f0cf84c29441b70414ab67d248c56ebf7607efd867af5f
+$ docker pull irssi@sha256:1d3a4326ce72049f65657775db7ab8b00bc00803f2e6badc5b1e6b6c988bc45a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5603095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c110c8c5132d6b986eca5007cb21a2921c655197298f96c1e6e3fe1d975295ce`
+-	Image ID: `sha256:623d6e43eaa9131f25e3eb59f90fc4982efb67567b9ba4a3433405a7b6f64b94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:290278e5fa9964615268f167ae0917568dd48529eb40cb0fe4b7b6b4fd6db490`  
-		Last Modified: Tue, 09 Dec 2025 00:01:57 GMT  
+	-	`sha256:dfb01705cfaf68137a2b4104a75940c5dab71ec5b22996969cf4a8fbcaa9ca90`  
+		Last Modified: Tue, 30 Dec 2025 03:00:43 GMT  
 		Size: 5.6 MB (5584500 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3b86870229139d3e4a5b2f5fb461a45c930f312a775c5a1c86c120a2616479b3`  
-		Last Modified: Tue, 09 Dec 2025 00:01:58 GMT  
+	-	`sha256:a4aa76b450b3cb9ab30ed105ec81ac1ebb63f0368134235dcb34c03b0d9d40ca`  
+		Last Modified: Tue, 30 Dec 2025 03:00:44 GMT  
 		Size: 18.6 KB (18595 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3330,54 +3330,54 @@ $ docker pull irssi@sha256:1b92fd8833f5dd070657c1ec551487f7908d41f8c197a02d2c94c
 ### `irssi:1.4` - linux; s390x
 
 ```console
-$ docker pull irssi@sha256:79ceeb6e5f00cadefc5098892f4fdd847c8a6c7147214049af36f2988eb63701
+$ docker pull irssi@sha256:815d78d426c36b6000938223e17371438343388b97029ddc801db1a6e4449343
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.5 MB (54503098 bytes)**  
+-	Total Size: **54.5 MB (54503079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f4447f6a16ef4660d5cc882de4451987df832e0221f3c9198582f5041d9e484`
+-	Image ID: `sha256:32cd1197e33bbff9caa03127a87859248728b96b50492b7e9d451f571debed6a`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:deacec5e6af82b258c59e95e3e86abeef36fad06b1d9ff2de33e88544ffb79ff`  
-		Last Modified: Mon, 08 Dec 2025 22:20:52 GMT  
-		Size: 29.8 MB (29834400 bytes)  
+	-	`sha256:c9a83915f7d4b9d7fbe5dceeedd49718d2702fd67d78b63a38ec344f3fbfcc41`  
+		Last Modified: Mon, 29 Dec 2025 22:27:07 GMT  
+		Size: 29.8 MB (29834418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12a68582eda8cf9c795e8fac7bd4a06d7b4cf05bcce0b996577a486d0e34b56c`  
-		Last Modified: Mon, 08 Dec 2025 22:34:33 GMT  
-		Size: 19.8 MB (19759448 bytes)  
+	-	`sha256:18260ff97d5c44522311e7b20eb667dd8268e5f437656b11d83126dd6e6e0464`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 19.8 MB (19759407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cea7a5c770aac1d19a49e32bddbb9b474dd2746e7821d20791e1b80abfa3b5a3`  
-		Last Modified: Mon, 08 Dec 2025 22:34:31 GMT  
-		Size: 3.3 KB (3328 bytes)  
+	-	`sha256:3c75b4b06491d9757a2c0ddc7e1161f43d94af12a3b1246ed862a050c9b61c09`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6fe49ac5d532203fa75223786c8c8ef7f78fbdeff8227abdab3b6e08125de53`  
-		Last Modified: Mon, 08 Dec 2025 22:34:32 GMT  
-		Size: 4.9 MB (4905890 bytes)  
+	-	`sha256:daa149046211a2130b3719fc3f26b72463b26a58fa4a5dc5d84f9523335848ca`  
+		Last Modified: Mon, 29 Dec 2025 23:18:35 GMT  
+		Size: 4.9 MB (4905893 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -3387,24 +3387,24 @@ CMD ["irssi"]
 ### `irssi:1.4` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:afc0d5563715a205bdbf09adfb0dcb772d44ec5f9f64be619112ea71bef71370
+$ docker pull irssi@sha256:2b99e2235e3fa873ef89b93a9147c660d901ec7f61f739ea24d96830690fb060
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb41a3e51a7b6c277c4898dede97241725067c20506fcd3897eb9a2fa33ef8fc`
+-	Image ID: `sha256:0fc57da1edc6729fa20bb402e73e2ca3b985338ecf24f6bedb15c082c9438cdd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9292a924a5f71b0700ea789b79e1a8bf1256af5aae51b422283563c1fa34bf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:15 GMT  
+	-	`sha256:ee4a7f0d2dd6d4c3875c55bf6786b9b62f3e168dfa34657418298306f4cb7e03`  
+		Last Modified: Tue, 30 Dec 2025 03:00:59 GMT  
 		Size: 5.6 MB (5589282 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bff40bc8ca1364bffe8c60be1df3e2bffedbd27bb8dbcf6db778c754320ccf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:16 GMT  
+	-	`sha256:2f9a8401231d6692720f44f08b6392f880547c382962b1052da941cec6dbc11c`  
+		Last Modified: Tue, 30 Dec 2025 03:01:00 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4781,7 +4781,7 @@ $ docker pull irssi@sha256:5f59a9171e69187914fae3b550b39d19fd226cdc7d6fdc962f2d0
 ## `irssi:1.4-trixie`
 
 ```console
-$ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c6071348cf06d8
+$ docker pull irssi@sha256:a58a0b129b62fd10c71f2bbbbf21dc04a640a8d024a63cad46fe33d7729f73d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4806,54 +4806,54 @@ $ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c60
 ### `irssi:1.4-trixie` - linux; amd64
 
 ```console
-$ docker pull irssi@sha256:ba548a27a12441efe110f9a056e793d722bda4a4eb13a3ceea8bf8d2d5ac1e29
+$ docker pull irssi@sha256:3b3c85d70a41f6687c043024f4cb244a9bb216ff5d00dac171f720dbe73860a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.9 MB (53869300 bytes)**  
+-	Total Size: **53.9 MB (53869154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ebb967af1ef6016f39c7253143525ae93880628cdbc3e189772a2d029fc1a25`
+-	Image ID: `sha256:f2472da814fc592aa34397af3e23f4d9501da8ddda528ab94ff94b594a538014`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:37:11 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:1733a4cd59540b3470ff7a90963bcdea5b543279dd6bdaf022d7883fdad221e5`  
-		Last Modified: Mon, 08 Dec 2025 22:17:58 GMT  
-		Size: 29.8 MB (29776496 bytes)  
+	-	`sha256:02d7611c4eae219af91448a4720bdba036575d3bc0356cfe12774af85daa6aff`  
+		Last Modified: Mon, 29 Dec 2025 22:31:18 GMT  
+		Size: 29.8 MB (29776533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae9ff25045243dc27c083564f101c73527fab1e4d6de25faafe1d20c6993d0f`  
-		Last Modified: Mon, 08 Dec 2025 22:38:10 GMT  
-		Size: 19.2 MB (19222767 bytes)  
+	-	`sha256:6c8132994a787dd852aeb12fc93d274ee76418e6badc922497d2965b065f6e7d`  
+		Last Modified: Mon, 29 Dec 2025 23:21:44 GMT  
+		Size: 19.2 MB (19222636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63cff4c278980a41219ced1054076473f352a9ab538703fdb0508673575901de`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 3.3 KB (3323 bytes)  
+	-	`sha256:6f12454da6b93953f77c2a08d9c8ef63604b855bbd13347b3ddc7ff0ec7df67a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:42 GMT  
+		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6979d38c29179b5f4797ac48f3389f2044fb0312d0cd3b7f7fe377d41762cf9c`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 4.9 MB (4866682 bytes)  
+	-	`sha256:925fbbd20e1183e0b4cddd1cf3e9a0cf8e42492a977a8a050a677cddc3e0caaf`  
+		Last Modified: Mon, 29 Dec 2025 23:21:43 GMT  
+		Size: 4.9 MB (4866629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -4863,78 +4863,78 @@ CMD ["irssi"]
 ### `irssi:1.4-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:2c34f0b8bd4789c746b87fcefbeca5053bc49367fbe0106f8c1f2c5df4510d32
+$ docker pull irssi@sha256:cd86910851860dd596083890e30f2022331fb3b04b10f7a63aa238cf74c7b396
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607028 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2aec691ef1c3f8b1f097d426de19c51fc9a39bcd3002cf27303c6ea181155e87`
+-	Image ID: `sha256:16708e5a07b3efd7806c1ae245a0d46b2ce402fba961571392e0c0c17520d1f4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea7448fd69d2025a02fa3773b13695b9ecaa34efd8cc5b223bd340a6a20bb280`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:77a09aac870c7c1cd26f161e512157115820cf8af0d7dac29f59655dcebacc97`  
+		Last Modified: Tue, 30 Dec 2025 03:00:08 GMT  
 		Size: 5.6 MB (5588377 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:15055f679734606495e25ae5c7b68d5ee1ec2609bfbca41b8eccfdc0431ef6dd`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:ae6bfb7c69b24e458298d702d07c1ac1b1d40a900e426f8f11965280bae18665`  
+		Last Modified: Tue, 30 Dec 2025 03:00:09 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4-trixie` - linux; arm variant v5
 
 ```console
-$ docker pull irssi@sha256:605f1644cbe09985d1b0a7159e6a3645cacce33a561adb3eb3994e2bb9fe1118
+$ docker pull irssi@sha256:a4d84f499fc0e5eb44aead73692f35a806f0830fa5018b6cf84b1868700b5963
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.9 MB (50943555 bytes)**  
+-	Total Size: **50.9 MB (50944115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38d5500fde47056d160fcf131159d65be22e1cce50911f44d2f5be15fc113c99`
+-	Image ID: `sha256:c9445964d8d8a558738c20de61cd62137fb7578057bd77c1b7f5739ee5bfa485`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:d97bc71d0fa535127863fdab265dfddb07b3cda35b80de4dd2b9b67fe154c856`  
-		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
-		Size: 27.9 MB (27944187 bytes)  
+	-	`sha256:b99a8d8dab982a1a4ea341e66b178b14c0f373c2cd90ac46a67308a4f43c82ae`  
+		Last Modified: Mon, 29 Dec 2025 22:27:09 GMT  
+		Size: 27.9 MB (27944146 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:209b020e9b6936d49088aeb2fe32da563e0dc7240b53e7a4f55a0064bcc57dbb`  
-		Last Modified: Mon, 08 Dec 2025 22:35:02 GMT  
-		Size: 18.3 MB (18286366 bytes)  
+	-	`sha256:3d1a051782ec1264daf1fac1ec43db9040842983091da28b50cff5526a386f05`  
+		Last Modified: Mon, 29 Dec 2025 23:18:49 GMT  
+		Size: 18.3 MB (18286953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e546d6b1c1001d996e09271aa06076bbf5076bf4c0f1a64a5a76db18e6351b32`  
-		Last Modified: Mon, 08 Dec 2025 22:34:59 GMT  
-		Size: 3.3 KB (3329 bytes)  
+	-	`sha256:0d9e4f8229159dfa48b293b595cb8424bdbcd96b481759e659647a1c0f291581`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08c1c60a78876ca8d26fa893a37ff13080f097555eea972e3e45e59d912f5e9c`  
-		Last Modified: Mon, 08 Dec 2025 22:35:00 GMT  
-		Size: 4.7 MB (4709641 bytes)  
+	-	`sha256:1552d6662afda0c53628250b85cff9fbbd309d1b53bf32e84ed85b3389f1f94d`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 4.7 MB (4709657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -4944,78 +4944,78 @@ CMD ["irssi"]
 ### `irssi:1.4-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:42ce2f56fd00643a382954ddf368a7ad26f88a053b4a557aa1112ed9de67aac0
+$ docker pull irssi@sha256:2d8f6118f9cf46e7448d1418e4a916542ef08117a959cf1839012608a741fc65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5604715 bytes)**  
+-	Total Size: **5.6 MB (5604713 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:192e3247c9d1fd1e403f1da43c465327ebe5a123a9caf785ea53b5dd0388c5cb`
+-	Image ID: `sha256:e51f71b2322cd350f3f66a9681d5e6de6bb479c5b9b259e75f772009877d9221`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dbd5f23d6f6d5ab003eddef0af01a8a8b66fac74afe90d0faa97afa2b0a581d2`  
-		Last Modified: Tue, 09 Dec 2025 00:01:40 GMT  
+	-	`sha256:5b702db9bda66f6169dc57ba677ab4cb95e892bb9b54fe5bce9b6e61e50cbfe1`  
+		Last Modified: Tue, 30 Dec 2025 03:00:15 GMT  
 		Size: 5.6 MB (5585926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:401ba355602555e19652809e181e8fc4d172d2140c0c17f0781b909a2bff847e`  
-		Last Modified: Tue, 09 Dec 2025 00:01:41 GMT  
-		Size: 18.8 KB (18789 bytes)  
+	-	`sha256:d6cba35a00912b77b0bf9fa496768eaaf6ff6a70b18d3e3d2636cf4a6c61fe1a`  
+		Last Modified: Tue, 30 Dec 2025 03:00:19 GMT  
+		Size: 18.8 KB (18787 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4-trixie` - linux; arm variant v7
 
 ```console
-$ docker pull irssi@sha256:90bf141f8448f931b78a4759623391882ba8d3d0520b3770b063ea80daf29ee7
+$ docker pull irssi@sha256:e4d27a04dfad1a27627b754b0f8fa15afc211115a1ad7cb4620d2efbd2ab98da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.7 MB (48681035 bytes)**  
+-	Total Size: **48.7 MB (48681346 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d9f126abb644aa91708596fe16f433c339727d7b73386dc26994eb1d0119af6`
+-	Image ID: `sha256:7b398645628764f0cb33c50578a24916dc86f138cc1abf401eda13d41ed3460f`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:cfc411ffeb71f696e2a89e33e91be9b70084d6c3383474344babe3a4a21eb843`  
-		Last Modified: Mon, 08 Dec 2025 22:16:57 GMT  
-		Size: 26.2 MB (26210013 bytes)  
+	-	`sha256:6d3e0fea3cb8eb29b9c06956265b47cd00f7ebfb48e35e818f686d52c21353f5`  
+		Last Modified: Mon, 29 Dec 2025 22:28:07 GMT  
+		Size: 26.2 MB (26210001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eea7a0e9121517502a0452fd53a68bbbf3e120ea0391f4616c22058f3ffe83a6`  
-		Last Modified: Mon, 08 Dec 2025 22:37:54 GMT  
-		Size: 17.9 MB (17909125 bytes)  
+	-	`sha256:03b8fa94779dfe46b70274f574fedd82507082810021ae4f845646cb1dce9362`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 17.9 MB (17909648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93a98b78793ec14ceabf793c4778fa9c59358545e4604a1c0b15bb6bd21bd755`  
-		Last Modified: Mon, 08 Dec 2025 22:37:52 GMT  
+	-	`sha256:95aeb493072858b7b55ea0ebdd3ab5c100a98dbc56143618e1ec91156a8a5833`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
 		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c7e9fbcbad6965518fd24946faf5855bd7c2b9dbb7a8632a912292a76f391b`  
-		Last Modified: Mon, 08 Dec 2025 22:37:53 GMT  
-		Size: 4.6 MB (4558538 bytes)  
+	-	`sha256:acb5cf1d39feaaf92989d33d12c59d42ec27bd26bc489a00abeff7da96bdbf5c`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 4.6 MB (4558338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -5025,78 +5025,78 @@ CMD ["irssi"]
 ### `irssi:1.4-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:529cccf10215bb411a271b196fe666e44db36c0c88bc62b754ae778cc278ef86
+$ docker pull irssi@sha256:8857d82cea6c43130b7e983548a0f403c240ed8d0d9a2428c6838149368a2049
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5070cb3b050937bc197ae388f5989122c8e4fc9558708e5cd01f7eb53047ec85`
+-	Image ID: `sha256:2d9e20f4d32838e312ef529d9c9eff7c7ebcff2f81a6bfc695737870da5eb99e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:82a650d25d6be9c0ec73d583a9bfbb7e4cdf26f7eac9d4a2c0b9165043d1c3b1`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8a34f8c3b342999b7dba68b6dcda05236500a8d04b3671140397f07e9c8122fc`  
+		Last Modified: Tue, 30 Dec 2025 03:00:29 GMT  
 		Size: 5.6 MB (5588948 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b12cb7447938f917d5345ecf33832b856ff04c97a5f9c2213b71e0a7d45d3fcc`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8f708606255cb3dffb5272991afb1cb7af441b9dcfa7ff57b1d68e9413a9eb11`  
+		Last Modified: Tue, 30 Dec 2025 03:00:30 GMT  
 		Size: 18.8 KB (18789 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull irssi@sha256:4ad94477cda90ae8d3d4d47ed0c1a58d162ca780cbc21e1e356ae833c2c9af51
+$ docker pull irssi@sha256:cff45b7bfe478eb28dd1dd96ca7dd16e1a66294da7316f8da168a482869b22fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.0 MB (53972792 bytes)**  
+-	Total Size: **54.0 MB (53972824 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6123fcf7ac4efb210283b7fab07ab5e1f866bcfa7ad8dbd2186bd66c2f88d4b2`
+-	Image ID: `sha256:2ed438e0e96f43b9763c1167dae5ff12991dd1e14f33b7e4ba71b850d01c52bf`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:35:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:f626fba1463b32b20f78d29b52dcf15be927dbb5372a9ba6a5f97aad47ae220b`  
-		Last Modified: Mon, 08 Dec 2025 22:17:19 GMT  
-		Size: 30.1 MB (30138628 bytes)  
+	-	`sha256:2ae15a20160209c6fd6cff4886e4ba2e666fa5bedd7b54a2c0097ea6646f0273`  
+		Last Modified: Mon, 29 Dec 2025 22:31:09 GMT  
+		Size: 30.1 MB (30138636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:271cd4b9332a86de31690e94a837946ec81b376cf3b99b9ec078b9997ebfc4e7`  
-		Last Modified: Mon, 08 Dec 2025 22:36:51 GMT  
-		Size: 19.0 MB (19049077 bytes)  
+	-	`sha256:c4c7fd602675c6c7c6b8aa5aafb615956311e1bfb1ff7744ca326d6f7de8126b`  
+		Last Modified: Mon, 29 Dec 2025 23:21:34 GMT  
+		Size: 19.0 MB (19049094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2f51515c1d0d0bdda82745487e18f18f85d1a6999f3c82ff517039ed8c01ae9`  
-		Last Modified: Mon, 08 Dec 2025 22:36:49 GMT  
-		Size: 3.3 KB (3331 bytes)  
+	-	`sha256:3a7eecea8feac170ae95f33c43646357cd8719c96bc0c0026e63058598164aac`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae317866ab39c091f9ece44d604dc3317877b2ed386b1ff38dcf25d62707f6e`  
-		Last Modified: Mon, 08 Dec 2025 22:36:50 GMT  
-		Size: 4.8 MB (4781724 bytes)  
+	-	`sha256:7df4a1617ae3607d3a5718f47073286a88f69a48ce2fdf4d26e708ec9399fc6a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 4.8 MB (4781733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -5106,78 +5106,78 @@ CMD ["irssi"]
 ### `irssi:1.4-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:8a9848973ad593c402ad00791b8debf829808115d9215d351a4d092da9efdfb6
+$ docker pull irssi@sha256:a04bde14fad32b933fcf4da9cc868a2b9a592c210856a8cfe296e9e9304cd6ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5613694 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21e8e14ea45e56f1a280745e4215d6b09bf3bbe98d77d25ed701e1833b69db94`
+-	Image ID: `sha256:a0161e3ac2f81fa90b7210540b966f0c473cdb48b16c673f1f2092b9c8839685`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:833298ea4b4e32cd4be350f01f29cc972db0aa5f1e1b52c229e9611870f9d81d`  
-		Last Modified: Tue, 09 Dec 2025 00:01:51 GMT  
+	-	`sha256:b5269aeec51509984fc080b3c9dbc5d15ef72537f499516b5ef18329212c517f`  
+		Last Modified: Tue, 30 Dec 2025 03:00:36 GMT  
 		Size: 5.6 MB (5594861 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:12ec53196ee839e1d4fc9f760637572995c6cf92c75585cdf8a0ddebd72fd86a`  
-		Last Modified: Tue, 09 Dec 2025 00:01:52 GMT  
+	-	`sha256:42f8353da907cf9a9b270dffb34df36a9c51973e97d9bfd3d4e459781b206800`  
+		Last Modified: Tue, 30 Dec 2025 03:00:37 GMT  
 		Size: 18.8 KB (18833 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4-trixie` - linux; 386
 
 ```console
-$ docker pull irssi@sha256:e3cb55074f79f7accb3186e087c8bcfbe5fb81bafed6b3843bbb182b831c2271
+$ docker pull irssi@sha256:d08d4d3128e25228bf2d6faef99a6113ac70a47a74b0a2ba6626b6cabb140274
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.9 MB (54905243 bytes)**  
+-	Total Size: **54.9 MB (54905392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ede6324a485fc1c56152548ccc95aa525d3e6298b82206a635b9e5bb2c43a274`
+-	Image ID: `sha256:979e1cbb8c89942ce58d9bb6021f47e002333c12e43d67332ce0629d3d106f49`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:2648c88d9207cd6090be83f4a97e2aa4080930987d8fb62195cc994194160e67`  
-		Last Modified: Mon, 08 Dec 2025 22:17:03 GMT  
-		Size: 31.3 MB (31293070 bytes)  
+	-	`sha256:796ffff142a3158a5c48a8d81b8b722c5cf4889d5e22da70bdd13a6459d6e40b`  
+		Last Modified: Mon, 29 Dec 2025 22:27:31 GMT  
+		Size: 31.3 MB (31293100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92779a84b492a0e3f9b30abe3ba2c3f3c75f5f8bac0be5b3ec6f1d2151769a81`  
-		Last Modified: Mon, 08 Dec 2025 22:35:51 GMT  
-		Size: 18.7 MB (18740473 bytes)  
+	-	`sha256:2efbd3bd6e2771e7bdcc6ade44379f7e6ed50abf8d1a9c274cb9f6f58c572fbd`  
+		Last Modified: Mon, 29 Dec 2025 23:16:34 GMT  
+		Size: 18.7 MB (18740665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e9e00516c012835613d2d6c24e48eca1db4092e2ae02a5557ef978565a9087b`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 3.3 KB (3326 bytes)  
+	-	`sha256:8048bbcd036579dd5df09fcbfdbbd027f024db2c93517455be9e832043b0fb0d`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:380f851f46dcf6024e273c5690f4de14d4837fe4c9e173048edc3844675aefad`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 4.9 MB (4868342 bytes)  
+	-	`sha256:ce14d1cfe28c0f1ca363e3679575bc7ff046c3a7aecc7fa84768f91a49e33cb7`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 4.9 MB (4868266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -5187,24 +5187,24 @@ CMD ["irssi"]
 ### `irssi:1.4-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:0e026c9c8b43f1e4b3f0cf84c29441b70414ab67d248c56ebf7607efd867af5f
+$ docker pull irssi@sha256:1d3a4326ce72049f65657775db7ab8b00bc00803f2e6badc5b1e6b6c988bc45a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5603095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c110c8c5132d6b986eca5007cb21a2921c655197298f96c1e6e3fe1d975295ce`
+-	Image ID: `sha256:623d6e43eaa9131f25e3eb59f90fc4982efb67567b9ba4a3433405a7b6f64b94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:290278e5fa9964615268f167ae0917568dd48529eb40cb0fe4b7b6b4fd6db490`  
-		Last Modified: Tue, 09 Dec 2025 00:01:57 GMT  
+	-	`sha256:dfb01705cfaf68137a2b4104a75940c5dab71ec5b22996969cf4a8fbcaa9ca90`  
+		Last Modified: Tue, 30 Dec 2025 03:00:43 GMT  
 		Size: 5.6 MB (5584500 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3b86870229139d3e4a5b2f5fb461a45c930f312a775c5a1c86c120a2616479b3`  
-		Last Modified: Tue, 09 Dec 2025 00:01:58 GMT  
+	-	`sha256:a4aa76b450b3cb9ab30ed105ec81ac1ebb63f0368134235dcb34c03b0d9d40ca`  
+		Last Modified: Tue, 30 Dec 2025 03:00:44 GMT  
 		Size: 18.6 KB (18595 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5373,54 +5373,54 @@ $ docker pull irssi@sha256:1b92fd8833f5dd070657c1ec551487f7908d41f8c197a02d2c94c
 ### `irssi:1.4-trixie` - linux; s390x
 
 ```console
-$ docker pull irssi@sha256:79ceeb6e5f00cadefc5098892f4fdd847c8a6c7147214049af36f2988eb63701
+$ docker pull irssi@sha256:815d78d426c36b6000938223e17371438343388b97029ddc801db1a6e4449343
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.5 MB (54503098 bytes)**  
+-	Total Size: **54.5 MB (54503079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f4447f6a16ef4660d5cc882de4451987df832e0221f3c9198582f5041d9e484`
+-	Image ID: `sha256:32cd1197e33bbff9caa03127a87859248728b96b50492b7e9d451f571debed6a`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:deacec5e6af82b258c59e95e3e86abeef36fad06b1d9ff2de33e88544ffb79ff`  
-		Last Modified: Mon, 08 Dec 2025 22:20:52 GMT  
-		Size: 29.8 MB (29834400 bytes)  
+	-	`sha256:c9a83915f7d4b9d7fbe5dceeedd49718d2702fd67d78b63a38ec344f3fbfcc41`  
+		Last Modified: Mon, 29 Dec 2025 22:27:07 GMT  
+		Size: 29.8 MB (29834418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12a68582eda8cf9c795e8fac7bd4a06d7b4cf05bcce0b996577a486d0e34b56c`  
-		Last Modified: Mon, 08 Dec 2025 22:34:33 GMT  
-		Size: 19.8 MB (19759448 bytes)  
+	-	`sha256:18260ff97d5c44522311e7b20eb667dd8268e5f437656b11d83126dd6e6e0464`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 19.8 MB (19759407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cea7a5c770aac1d19a49e32bddbb9b474dd2746e7821d20791e1b80abfa3b5a3`  
-		Last Modified: Mon, 08 Dec 2025 22:34:31 GMT  
-		Size: 3.3 KB (3328 bytes)  
+	-	`sha256:3c75b4b06491d9757a2c0ddc7e1161f43d94af12a3b1246ed862a050c9b61c09`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6fe49ac5d532203fa75223786c8c8ef7f78fbdeff8227abdab3b6e08125de53`  
-		Last Modified: Mon, 08 Dec 2025 22:34:32 GMT  
-		Size: 4.9 MB (4905890 bytes)  
+	-	`sha256:daa149046211a2130b3719fc3f26b72463b26a58fa4a5dc5d84f9523335848ca`  
+		Last Modified: Mon, 29 Dec 2025 23:18:35 GMT  
+		Size: 4.9 MB (4905893 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -5430,31 +5430,31 @@ CMD ["irssi"]
 ### `irssi:1.4-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:afc0d5563715a205bdbf09adfb0dcb772d44ec5f9f64be619112ea71bef71370
+$ docker pull irssi@sha256:2b99e2235e3fa873ef89b93a9147c660d901ec7f61f739ea24d96830690fb060
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb41a3e51a7b6c277c4898dede97241725067c20506fcd3897eb9a2fa33ef8fc`
+-	Image ID: `sha256:0fc57da1edc6729fa20bb402e73e2ca3b985338ecf24f6bedb15c082c9438cdd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9292a924a5f71b0700ea789b79e1a8bf1256af5aae51b422283563c1fa34bf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:15 GMT  
+	-	`sha256:ee4a7f0d2dd6d4c3875c55bf6786b9b62f3e168dfa34657418298306f4cb7e03`  
+		Last Modified: Tue, 30 Dec 2025 03:00:59 GMT  
 		Size: 5.6 MB (5589282 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bff40bc8ca1364bffe8c60be1df3e2bffedbd27bb8dbcf6db778c754320ccf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:16 GMT  
+	-	`sha256:2f9a8401231d6692720f44f08b6392f880547c382962b1052da941cec6dbc11c`  
+		Last Modified: Tue, 30 Dec 2025 03:01:00 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `irssi:1.4.5`
 
 ```console
-$ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c6071348cf06d8
+$ docker pull irssi@sha256:a58a0b129b62fd10c71f2bbbbf21dc04a640a8d024a63cad46fe33d7729f73d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5479,54 +5479,54 @@ $ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c60
 ### `irssi:1.4.5` - linux; amd64
 
 ```console
-$ docker pull irssi@sha256:ba548a27a12441efe110f9a056e793d722bda4a4eb13a3ceea8bf8d2d5ac1e29
+$ docker pull irssi@sha256:3b3c85d70a41f6687c043024f4cb244a9bb216ff5d00dac171f720dbe73860a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.9 MB (53869300 bytes)**  
+-	Total Size: **53.9 MB (53869154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ebb967af1ef6016f39c7253143525ae93880628cdbc3e189772a2d029fc1a25`
+-	Image ID: `sha256:f2472da814fc592aa34397af3e23f4d9501da8ddda528ab94ff94b594a538014`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:37:11 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:1733a4cd59540b3470ff7a90963bcdea5b543279dd6bdaf022d7883fdad221e5`  
-		Last Modified: Mon, 08 Dec 2025 22:17:58 GMT  
-		Size: 29.8 MB (29776496 bytes)  
+	-	`sha256:02d7611c4eae219af91448a4720bdba036575d3bc0356cfe12774af85daa6aff`  
+		Last Modified: Mon, 29 Dec 2025 22:31:18 GMT  
+		Size: 29.8 MB (29776533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae9ff25045243dc27c083564f101c73527fab1e4d6de25faafe1d20c6993d0f`  
-		Last Modified: Mon, 08 Dec 2025 22:38:10 GMT  
-		Size: 19.2 MB (19222767 bytes)  
+	-	`sha256:6c8132994a787dd852aeb12fc93d274ee76418e6badc922497d2965b065f6e7d`  
+		Last Modified: Mon, 29 Dec 2025 23:21:44 GMT  
+		Size: 19.2 MB (19222636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63cff4c278980a41219ced1054076473f352a9ab538703fdb0508673575901de`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 3.3 KB (3323 bytes)  
+	-	`sha256:6f12454da6b93953f77c2a08d9c8ef63604b855bbd13347b3ddc7ff0ec7df67a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:42 GMT  
+		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6979d38c29179b5f4797ac48f3389f2044fb0312d0cd3b7f7fe377d41762cf9c`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 4.9 MB (4866682 bytes)  
+	-	`sha256:925fbbd20e1183e0b4cddd1cf3e9a0cf8e42492a977a8a050a677cddc3e0caaf`  
+		Last Modified: Mon, 29 Dec 2025 23:21:43 GMT  
+		Size: 4.9 MB (4866629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -5536,78 +5536,78 @@ CMD ["irssi"]
 ### `irssi:1.4.5` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:2c34f0b8bd4789c746b87fcefbeca5053bc49367fbe0106f8c1f2c5df4510d32
+$ docker pull irssi@sha256:cd86910851860dd596083890e30f2022331fb3b04b10f7a63aa238cf74c7b396
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607028 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2aec691ef1c3f8b1f097d426de19c51fc9a39bcd3002cf27303c6ea181155e87`
+-	Image ID: `sha256:16708e5a07b3efd7806c1ae245a0d46b2ce402fba961571392e0c0c17520d1f4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea7448fd69d2025a02fa3773b13695b9ecaa34efd8cc5b223bd340a6a20bb280`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:77a09aac870c7c1cd26f161e512157115820cf8af0d7dac29f59655dcebacc97`  
+		Last Modified: Tue, 30 Dec 2025 03:00:08 GMT  
 		Size: 5.6 MB (5588377 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:15055f679734606495e25ae5c7b68d5ee1ec2609bfbca41b8eccfdc0431ef6dd`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:ae6bfb7c69b24e458298d702d07c1ac1b1d40a900e426f8f11965280bae18665`  
+		Last Modified: Tue, 30 Dec 2025 03:00:09 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4.5` - linux; arm variant v5
 
 ```console
-$ docker pull irssi@sha256:605f1644cbe09985d1b0a7159e6a3645cacce33a561adb3eb3994e2bb9fe1118
+$ docker pull irssi@sha256:a4d84f499fc0e5eb44aead73692f35a806f0830fa5018b6cf84b1868700b5963
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.9 MB (50943555 bytes)**  
+-	Total Size: **50.9 MB (50944115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38d5500fde47056d160fcf131159d65be22e1cce50911f44d2f5be15fc113c99`
+-	Image ID: `sha256:c9445964d8d8a558738c20de61cd62137fb7578057bd77c1b7f5739ee5bfa485`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:d97bc71d0fa535127863fdab265dfddb07b3cda35b80de4dd2b9b67fe154c856`  
-		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
-		Size: 27.9 MB (27944187 bytes)  
+	-	`sha256:b99a8d8dab982a1a4ea341e66b178b14c0f373c2cd90ac46a67308a4f43c82ae`  
+		Last Modified: Mon, 29 Dec 2025 22:27:09 GMT  
+		Size: 27.9 MB (27944146 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:209b020e9b6936d49088aeb2fe32da563e0dc7240b53e7a4f55a0064bcc57dbb`  
-		Last Modified: Mon, 08 Dec 2025 22:35:02 GMT  
-		Size: 18.3 MB (18286366 bytes)  
+	-	`sha256:3d1a051782ec1264daf1fac1ec43db9040842983091da28b50cff5526a386f05`  
+		Last Modified: Mon, 29 Dec 2025 23:18:49 GMT  
+		Size: 18.3 MB (18286953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e546d6b1c1001d996e09271aa06076bbf5076bf4c0f1a64a5a76db18e6351b32`  
-		Last Modified: Mon, 08 Dec 2025 22:34:59 GMT  
-		Size: 3.3 KB (3329 bytes)  
+	-	`sha256:0d9e4f8229159dfa48b293b595cb8424bdbcd96b481759e659647a1c0f291581`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08c1c60a78876ca8d26fa893a37ff13080f097555eea972e3e45e59d912f5e9c`  
-		Last Modified: Mon, 08 Dec 2025 22:35:00 GMT  
-		Size: 4.7 MB (4709641 bytes)  
+	-	`sha256:1552d6662afda0c53628250b85cff9fbbd309d1b53bf32e84ed85b3389f1f94d`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 4.7 MB (4709657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -5617,78 +5617,78 @@ CMD ["irssi"]
 ### `irssi:1.4.5` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:42ce2f56fd00643a382954ddf368a7ad26f88a053b4a557aa1112ed9de67aac0
+$ docker pull irssi@sha256:2d8f6118f9cf46e7448d1418e4a916542ef08117a959cf1839012608a741fc65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5604715 bytes)**  
+-	Total Size: **5.6 MB (5604713 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:192e3247c9d1fd1e403f1da43c465327ebe5a123a9caf785ea53b5dd0388c5cb`
+-	Image ID: `sha256:e51f71b2322cd350f3f66a9681d5e6de6bb479c5b9b259e75f772009877d9221`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dbd5f23d6f6d5ab003eddef0af01a8a8b66fac74afe90d0faa97afa2b0a581d2`  
-		Last Modified: Tue, 09 Dec 2025 00:01:40 GMT  
+	-	`sha256:5b702db9bda66f6169dc57ba677ab4cb95e892bb9b54fe5bce9b6e61e50cbfe1`  
+		Last Modified: Tue, 30 Dec 2025 03:00:15 GMT  
 		Size: 5.6 MB (5585926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:401ba355602555e19652809e181e8fc4d172d2140c0c17f0781b909a2bff847e`  
-		Last Modified: Tue, 09 Dec 2025 00:01:41 GMT  
-		Size: 18.8 KB (18789 bytes)  
+	-	`sha256:d6cba35a00912b77b0bf9fa496768eaaf6ff6a70b18d3e3d2636cf4a6c61fe1a`  
+		Last Modified: Tue, 30 Dec 2025 03:00:19 GMT  
+		Size: 18.8 KB (18787 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4.5` - linux; arm variant v7
 
 ```console
-$ docker pull irssi@sha256:90bf141f8448f931b78a4759623391882ba8d3d0520b3770b063ea80daf29ee7
+$ docker pull irssi@sha256:e4d27a04dfad1a27627b754b0f8fa15afc211115a1ad7cb4620d2efbd2ab98da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.7 MB (48681035 bytes)**  
+-	Total Size: **48.7 MB (48681346 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d9f126abb644aa91708596fe16f433c339727d7b73386dc26994eb1d0119af6`
+-	Image ID: `sha256:7b398645628764f0cb33c50578a24916dc86f138cc1abf401eda13d41ed3460f`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:cfc411ffeb71f696e2a89e33e91be9b70084d6c3383474344babe3a4a21eb843`  
-		Last Modified: Mon, 08 Dec 2025 22:16:57 GMT  
-		Size: 26.2 MB (26210013 bytes)  
+	-	`sha256:6d3e0fea3cb8eb29b9c06956265b47cd00f7ebfb48e35e818f686d52c21353f5`  
+		Last Modified: Mon, 29 Dec 2025 22:28:07 GMT  
+		Size: 26.2 MB (26210001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eea7a0e9121517502a0452fd53a68bbbf3e120ea0391f4616c22058f3ffe83a6`  
-		Last Modified: Mon, 08 Dec 2025 22:37:54 GMT  
-		Size: 17.9 MB (17909125 bytes)  
+	-	`sha256:03b8fa94779dfe46b70274f574fedd82507082810021ae4f845646cb1dce9362`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 17.9 MB (17909648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93a98b78793ec14ceabf793c4778fa9c59358545e4604a1c0b15bb6bd21bd755`  
-		Last Modified: Mon, 08 Dec 2025 22:37:52 GMT  
+	-	`sha256:95aeb493072858b7b55ea0ebdd3ab5c100a98dbc56143618e1ec91156a8a5833`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
 		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c7e9fbcbad6965518fd24946faf5855bd7c2b9dbb7a8632a912292a76f391b`  
-		Last Modified: Mon, 08 Dec 2025 22:37:53 GMT  
-		Size: 4.6 MB (4558538 bytes)  
+	-	`sha256:acb5cf1d39feaaf92989d33d12c59d42ec27bd26bc489a00abeff7da96bdbf5c`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 4.6 MB (4558338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -5698,78 +5698,78 @@ CMD ["irssi"]
 ### `irssi:1.4.5` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:529cccf10215bb411a271b196fe666e44db36c0c88bc62b754ae778cc278ef86
+$ docker pull irssi@sha256:8857d82cea6c43130b7e983548a0f403c240ed8d0d9a2428c6838149368a2049
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5070cb3b050937bc197ae388f5989122c8e4fc9558708e5cd01f7eb53047ec85`
+-	Image ID: `sha256:2d9e20f4d32838e312ef529d9c9eff7c7ebcff2f81a6bfc695737870da5eb99e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:82a650d25d6be9c0ec73d583a9bfbb7e4cdf26f7eac9d4a2c0b9165043d1c3b1`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8a34f8c3b342999b7dba68b6dcda05236500a8d04b3671140397f07e9c8122fc`  
+		Last Modified: Tue, 30 Dec 2025 03:00:29 GMT  
 		Size: 5.6 MB (5588948 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b12cb7447938f917d5345ecf33832b856ff04c97a5f9c2213b71e0a7d45d3fcc`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8f708606255cb3dffb5272991afb1cb7af441b9dcfa7ff57b1d68e9413a9eb11`  
+		Last Modified: Tue, 30 Dec 2025 03:00:30 GMT  
 		Size: 18.8 KB (18789 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull irssi@sha256:4ad94477cda90ae8d3d4d47ed0c1a58d162ca780cbc21e1e356ae833c2c9af51
+$ docker pull irssi@sha256:cff45b7bfe478eb28dd1dd96ca7dd16e1a66294da7316f8da168a482869b22fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.0 MB (53972792 bytes)**  
+-	Total Size: **54.0 MB (53972824 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6123fcf7ac4efb210283b7fab07ab5e1f866bcfa7ad8dbd2186bd66c2f88d4b2`
+-	Image ID: `sha256:2ed438e0e96f43b9763c1167dae5ff12991dd1e14f33b7e4ba71b850d01c52bf`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:35:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:f626fba1463b32b20f78d29b52dcf15be927dbb5372a9ba6a5f97aad47ae220b`  
-		Last Modified: Mon, 08 Dec 2025 22:17:19 GMT  
-		Size: 30.1 MB (30138628 bytes)  
+	-	`sha256:2ae15a20160209c6fd6cff4886e4ba2e666fa5bedd7b54a2c0097ea6646f0273`  
+		Last Modified: Mon, 29 Dec 2025 22:31:09 GMT  
+		Size: 30.1 MB (30138636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:271cd4b9332a86de31690e94a837946ec81b376cf3b99b9ec078b9997ebfc4e7`  
-		Last Modified: Mon, 08 Dec 2025 22:36:51 GMT  
-		Size: 19.0 MB (19049077 bytes)  
+	-	`sha256:c4c7fd602675c6c7c6b8aa5aafb615956311e1bfb1ff7744ca326d6f7de8126b`  
+		Last Modified: Mon, 29 Dec 2025 23:21:34 GMT  
+		Size: 19.0 MB (19049094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2f51515c1d0d0bdda82745487e18f18f85d1a6999f3c82ff517039ed8c01ae9`  
-		Last Modified: Mon, 08 Dec 2025 22:36:49 GMT  
-		Size: 3.3 KB (3331 bytes)  
+	-	`sha256:3a7eecea8feac170ae95f33c43646357cd8719c96bc0c0026e63058598164aac`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae317866ab39c091f9ece44d604dc3317877b2ed386b1ff38dcf25d62707f6e`  
-		Last Modified: Mon, 08 Dec 2025 22:36:50 GMT  
-		Size: 4.8 MB (4781724 bytes)  
+	-	`sha256:7df4a1617ae3607d3a5718f47073286a88f69a48ce2fdf4d26e708ec9399fc6a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 4.8 MB (4781733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -5779,78 +5779,78 @@ CMD ["irssi"]
 ### `irssi:1.4.5` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:8a9848973ad593c402ad00791b8debf829808115d9215d351a4d092da9efdfb6
+$ docker pull irssi@sha256:a04bde14fad32b933fcf4da9cc868a2b9a592c210856a8cfe296e9e9304cd6ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5613694 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21e8e14ea45e56f1a280745e4215d6b09bf3bbe98d77d25ed701e1833b69db94`
+-	Image ID: `sha256:a0161e3ac2f81fa90b7210540b966f0c473cdb48b16c673f1f2092b9c8839685`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:833298ea4b4e32cd4be350f01f29cc972db0aa5f1e1b52c229e9611870f9d81d`  
-		Last Modified: Tue, 09 Dec 2025 00:01:51 GMT  
+	-	`sha256:b5269aeec51509984fc080b3c9dbc5d15ef72537f499516b5ef18329212c517f`  
+		Last Modified: Tue, 30 Dec 2025 03:00:36 GMT  
 		Size: 5.6 MB (5594861 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:12ec53196ee839e1d4fc9f760637572995c6cf92c75585cdf8a0ddebd72fd86a`  
-		Last Modified: Tue, 09 Dec 2025 00:01:52 GMT  
+	-	`sha256:42f8353da907cf9a9b270dffb34df36a9c51973e97d9bfd3d4e459781b206800`  
+		Last Modified: Tue, 30 Dec 2025 03:00:37 GMT  
 		Size: 18.8 KB (18833 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4.5` - linux; 386
 
 ```console
-$ docker pull irssi@sha256:e3cb55074f79f7accb3186e087c8bcfbe5fb81bafed6b3843bbb182b831c2271
+$ docker pull irssi@sha256:d08d4d3128e25228bf2d6faef99a6113ac70a47a74b0a2ba6626b6cabb140274
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.9 MB (54905243 bytes)**  
+-	Total Size: **54.9 MB (54905392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ede6324a485fc1c56152548ccc95aa525d3e6298b82206a635b9e5bb2c43a274`
+-	Image ID: `sha256:979e1cbb8c89942ce58d9bb6021f47e002333c12e43d67332ce0629d3d106f49`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:2648c88d9207cd6090be83f4a97e2aa4080930987d8fb62195cc994194160e67`  
-		Last Modified: Mon, 08 Dec 2025 22:17:03 GMT  
-		Size: 31.3 MB (31293070 bytes)  
+	-	`sha256:796ffff142a3158a5c48a8d81b8b722c5cf4889d5e22da70bdd13a6459d6e40b`  
+		Last Modified: Mon, 29 Dec 2025 22:27:31 GMT  
+		Size: 31.3 MB (31293100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92779a84b492a0e3f9b30abe3ba2c3f3c75f5f8bac0be5b3ec6f1d2151769a81`  
-		Last Modified: Mon, 08 Dec 2025 22:35:51 GMT  
-		Size: 18.7 MB (18740473 bytes)  
+	-	`sha256:2efbd3bd6e2771e7bdcc6ade44379f7e6ed50abf8d1a9c274cb9f6f58c572fbd`  
+		Last Modified: Mon, 29 Dec 2025 23:16:34 GMT  
+		Size: 18.7 MB (18740665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e9e00516c012835613d2d6c24e48eca1db4092e2ae02a5557ef978565a9087b`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 3.3 KB (3326 bytes)  
+	-	`sha256:8048bbcd036579dd5df09fcbfdbbd027f024db2c93517455be9e832043b0fb0d`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:380f851f46dcf6024e273c5690f4de14d4837fe4c9e173048edc3844675aefad`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 4.9 MB (4868342 bytes)  
+	-	`sha256:ce14d1cfe28c0f1ca363e3679575bc7ff046c3a7aecc7fa84768f91a49e33cb7`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 4.9 MB (4868266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -5860,24 +5860,24 @@ CMD ["irssi"]
 ### `irssi:1.4.5` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:0e026c9c8b43f1e4b3f0cf84c29441b70414ab67d248c56ebf7607efd867af5f
+$ docker pull irssi@sha256:1d3a4326ce72049f65657775db7ab8b00bc00803f2e6badc5b1e6b6c988bc45a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5603095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c110c8c5132d6b986eca5007cb21a2921c655197298f96c1e6e3fe1d975295ce`
+-	Image ID: `sha256:623d6e43eaa9131f25e3eb59f90fc4982efb67567b9ba4a3433405a7b6f64b94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:290278e5fa9964615268f167ae0917568dd48529eb40cb0fe4b7b6b4fd6db490`  
-		Last Modified: Tue, 09 Dec 2025 00:01:57 GMT  
+	-	`sha256:dfb01705cfaf68137a2b4104a75940c5dab71ec5b22996969cf4a8fbcaa9ca90`  
+		Last Modified: Tue, 30 Dec 2025 03:00:43 GMT  
 		Size: 5.6 MB (5584500 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3b86870229139d3e4a5b2f5fb461a45c930f312a775c5a1c86c120a2616479b3`  
-		Last Modified: Tue, 09 Dec 2025 00:01:58 GMT  
+	-	`sha256:a4aa76b450b3cb9ab30ed105ec81ac1ebb63f0368134235dcb34c03b0d9d40ca`  
+		Last Modified: Tue, 30 Dec 2025 03:00:44 GMT  
 		Size: 18.6 KB (18595 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6046,54 +6046,54 @@ $ docker pull irssi@sha256:1b92fd8833f5dd070657c1ec551487f7908d41f8c197a02d2c94c
 ### `irssi:1.4.5` - linux; s390x
 
 ```console
-$ docker pull irssi@sha256:79ceeb6e5f00cadefc5098892f4fdd847c8a6c7147214049af36f2988eb63701
+$ docker pull irssi@sha256:815d78d426c36b6000938223e17371438343388b97029ddc801db1a6e4449343
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.5 MB (54503098 bytes)**  
+-	Total Size: **54.5 MB (54503079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f4447f6a16ef4660d5cc882de4451987df832e0221f3c9198582f5041d9e484`
+-	Image ID: `sha256:32cd1197e33bbff9caa03127a87859248728b96b50492b7e9d451f571debed6a`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:deacec5e6af82b258c59e95e3e86abeef36fad06b1d9ff2de33e88544ffb79ff`  
-		Last Modified: Mon, 08 Dec 2025 22:20:52 GMT  
-		Size: 29.8 MB (29834400 bytes)  
+	-	`sha256:c9a83915f7d4b9d7fbe5dceeedd49718d2702fd67d78b63a38ec344f3fbfcc41`  
+		Last Modified: Mon, 29 Dec 2025 22:27:07 GMT  
+		Size: 29.8 MB (29834418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12a68582eda8cf9c795e8fac7bd4a06d7b4cf05bcce0b996577a486d0e34b56c`  
-		Last Modified: Mon, 08 Dec 2025 22:34:33 GMT  
-		Size: 19.8 MB (19759448 bytes)  
+	-	`sha256:18260ff97d5c44522311e7b20eb667dd8268e5f437656b11d83126dd6e6e0464`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 19.8 MB (19759407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cea7a5c770aac1d19a49e32bddbb9b474dd2746e7821d20791e1b80abfa3b5a3`  
-		Last Modified: Mon, 08 Dec 2025 22:34:31 GMT  
-		Size: 3.3 KB (3328 bytes)  
+	-	`sha256:3c75b4b06491d9757a2c0ddc7e1161f43d94af12a3b1246ed862a050c9b61c09`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6fe49ac5d532203fa75223786c8c8ef7f78fbdeff8227abdab3b6e08125de53`  
-		Last Modified: Mon, 08 Dec 2025 22:34:32 GMT  
-		Size: 4.9 MB (4905890 bytes)  
+	-	`sha256:daa149046211a2130b3719fc3f26b72463b26a58fa4a5dc5d84f9523335848ca`  
+		Last Modified: Mon, 29 Dec 2025 23:18:35 GMT  
+		Size: 4.9 MB (4905893 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -6103,24 +6103,24 @@ CMD ["irssi"]
 ### `irssi:1.4.5` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:afc0d5563715a205bdbf09adfb0dcb772d44ec5f9f64be619112ea71bef71370
+$ docker pull irssi@sha256:2b99e2235e3fa873ef89b93a9147c660d901ec7f61f739ea24d96830690fb060
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb41a3e51a7b6c277c4898dede97241725067c20506fcd3897eb9a2fa33ef8fc`
+-	Image ID: `sha256:0fc57da1edc6729fa20bb402e73e2ca3b985338ecf24f6bedb15c082c9438cdd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9292a924a5f71b0700ea789b79e1a8bf1256af5aae51b422283563c1fa34bf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:15 GMT  
+	-	`sha256:ee4a7f0d2dd6d4c3875c55bf6786b9b62f3e168dfa34657418298306f4cb7e03`  
+		Last Modified: Tue, 30 Dec 2025 03:00:59 GMT  
 		Size: 5.6 MB (5589282 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bff40bc8ca1364bffe8c60be1df3e2bffedbd27bb8dbcf6db778c754320ccf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:16 GMT  
+	-	`sha256:2f9a8401231d6692720f44f08b6392f880547c382962b1052da941cec6dbc11c`  
+		Last Modified: Tue, 30 Dec 2025 03:01:00 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7497,7 +7497,7 @@ $ docker pull irssi@sha256:5f59a9171e69187914fae3b550b39d19fd226cdc7d6fdc962f2d0
 ## `irssi:1.4.5-trixie`
 
 ```console
-$ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c6071348cf06d8
+$ docker pull irssi@sha256:a58a0b129b62fd10c71f2bbbbf21dc04a640a8d024a63cad46fe33d7729f73d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7522,54 +7522,54 @@ $ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c60
 ### `irssi:1.4.5-trixie` - linux; amd64
 
 ```console
-$ docker pull irssi@sha256:ba548a27a12441efe110f9a056e793d722bda4a4eb13a3ceea8bf8d2d5ac1e29
+$ docker pull irssi@sha256:3b3c85d70a41f6687c043024f4cb244a9bb216ff5d00dac171f720dbe73860a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.9 MB (53869300 bytes)**  
+-	Total Size: **53.9 MB (53869154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ebb967af1ef6016f39c7253143525ae93880628cdbc3e189772a2d029fc1a25`
+-	Image ID: `sha256:f2472da814fc592aa34397af3e23f4d9501da8ddda528ab94ff94b594a538014`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:37:11 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:1733a4cd59540b3470ff7a90963bcdea5b543279dd6bdaf022d7883fdad221e5`  
-		Last Modified: Mon, 08 Dec 2025 22:17:58 GMT  
-		Size: 29.8 MB (29776496 bytes)  
+	-	`sha256:02d7611c4eae219af91448a4720bdba036575d3bc0356cfe12774af85daa6aff`  
+		Last Modified: Mon, 29 Dec 2025 22:31:18 GMT  
+		Size: 29.8 MB (29776533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae9ff25045243dc27c083564f101c73527fab1e4d6de25faafe1d20c6993d0f`  
-		Last Modified: Mon, 08 Dec 2025 22:38:10 GMT  
-		Size: 19.2 MB (19222767 bytes)  
+	-	`sha256:6c8132994a787dd852aeb12fc93d274ee76418e6badc922497d2965b065f6e7d`  
+		Last Modified: Mon, 29 Dec 2025 23:21:44 GMT  
+		Size: 19.2 MB (19222636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63cff4c278980a41219ced1054076473f352a9ab538703fdb0508673575901de`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 3.3 KB (3323 bytes)  
+	-	`sha256:6f12454da6b93953f77c2a08d9c8ef63604b855bbd13347b3ddc7ff0ec7df67a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:42 GMT  
+		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6979d38c29179b5f4797ac48f3389f2044fb0312d0cd3b7f7fe377d41762cf9c`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 4.9 MB (4866682 bytes)  
+	-	`sha256:925fbbd20e1183e0b4cddd1cf3e9a0cf8e42492a977a8a050a677cddc3e0caaf`  
+		Last Modified: Mon, 29 Dec 2025 23:21:43 GMT  
+		Size: 4.9 MB (4866629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -7579,78 +7579,78 @@ CMD ["irssi"]
 ### `irssi:1.4.5-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:2c34f0b8bd4789c746b87fcefbeca5053bc49367fbe0106f8c1f2c5df4510d32
+$ docker pull irssi@sha256:cd86910851860dd596083890e30f2022331fb3b04b10f7a63aa238cf74c7b396
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607028 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2aec691ef1c3f8b1f097d426de19c51fc9a39bcd3002cf27303c6ea181155e87`
+-	Image ID: `sha256:16708e5a07b3efd7806c1ae245a0d46b2ce402fba961571392e0c0c17520d1f4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea7448fd69d2025a02fa3773b13695b9ecaa34efd8cc5b223bd340a6a20bb280`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:77a09aac870c7c1cd26f161e512157115820cf8af0d7dac29f59655dcebacc97`  
+		Last Modified: Tue, 30 Dec 2025 03:00:08 GMT  
 		Size: 5.6 MB (5588377 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:15055f679734606495e25ae5c7b68d5ee1ec2609bfbca41b8eccfdc0431ef6dd`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:ae6bfb7c69b24e458298d702d07c1ac1b1d40a900e426f8f11965280bae18665`  
+		Last Modified: Tue, 30 Dec 2025 03:00:09 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4.5-trixie` - linux; arm variant v5
 
 ```console
-$ docker pull irssi@sha256:605f1644cbe09985d1b0a7159e6a3645cacce33a561adb3eb3994e2bb9fe1118
+$ docker pull irssi@sha256:a4d84f499fc0e5eb44aead73692f35a806f0830fa5018b6cf84b1868700b5963
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.9 MB (50943555 bytes)**  
+-	Total Size: **50.9 MB (50944115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38d5500fde47056d160fcf131159d65be22e1cce50911f44d2f5be15fc113c99`
+-	Image ID: `sha256:c9445964d8d8a558738c20de61cd62137fb7578057bd77c1b7f5739ee5bfa485`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:d97bc71d0fa535127863fdab265dfddb07b3cda35b80de4dd2b9b67fe154c856`  
-		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
-		Size: 27.9 MB (27944187 bytes)  
+	-	`sha256:b99a8d8dab982a1a4ea341e66b178b14c0f373c2cd90ac46a67308a4f43c82ae`  
+		Last Modified: Mon, 29 Dec 2025 22:27:09 GMT  
+		Size: 27.9 MB (27944146 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:209b020e9b6936d49088aeb2fe32da563e0dc7240b53e7a4f55a0064bcc57dbb`  
-		Last Modified: Mon, 08 Dec 2025 22:35:02 GMT  
-		Size: 18.3 MB (18286366 bytes)  
+	-	`sha256:3d1a051782ec1264daf1fac1ec43db9040842983091da28b50cff5526a386f05`  
+		Last Modified: Mon, 29 Dec 2025 23:18:49 GMT  
+		Size: 18.3 MB (18286953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e546d6b1c1001d996e09271aa06076bbf5076bf4c0f1a64a5a76db18e6351b32`  
-		Last Modified: Mon, 08 Dec 2025 22:34:59 GMT  
-		Size: 3.3 KB (3329 bytes)  
+	-	`sha256:0d9e4f8229159dfa48b293b595cb8424bdbcd96b481759e659647a1c0f291581`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08c1c60a78876ca8d26fa893a37ff13080f097555eea972e3e45e59d912f5e9c`  
-		Last Modified: Mon, 08 Dec 2025 22:35:00 GMT  
-		Size: 4.7 MB (4709641 bytes)  
+	-	`sha256:1552d6662afda0c53628250b85cff9fbbd309d1b53bf32e84ed85b3389f1f94d`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 4.7 MB (4709657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -7660,78 +7660,78 @@ CMD ["irssi"]
 ### `irssi:1.4.5-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:42ce2f56fd00643a382954ddf368a7ad26f88a053b4a557aa1112ed9de67aac0
+$ docker pull irssi@sha256:2d8f6118f9cf46e7448d1418e4a916542ef08117a959cf1839012608a741fc65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5604715 bytes)**  
+-	Total Size: **5.6 MB (5604713 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:192e3247c9d1fd1e403f1da43c465327ebe5a123a9caf785ea53b5dd0388c5cb`
+-	Image ID: `sha256:e51f71b2322cd350f3f66a9681d5e6de6bb479c5b9b259e75f772009877d9221`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dbd5f23d6f6d5ab003eddef0af01a8a8b66fac74afe90d0faa97afa2b0a581d2`  
-		Last Modified: Tue, 09 Dec 2025 00:01:40 GMT  
+	-	`sha256:5b702db9bda66f6169dc57ba677ab4cb95e892bb9b54fe5bce9b6e61e50cbfe1`  
+		Last Modified: Tue, 30 Dec 2025 03:00:15 GMT  
 		Size: 5.6 MB (5585926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:401ba355602555e19652809e181e8fc4d172d2140c0c17f0781b909a2bff847e`  
-		Last Modified: Tue, 09 Dec 2025 00:01:41 GMT  
-		Size: 18.8 KB (18789 bytes)  
+	-	`sha256:d6cba35a00912b77b0bf9fa496768eaaf6ff6a70b18d3e3d2636cf4a6c61fe1a`  
+		Last Modified: Tue, 30 Dec 2025 03:00:19 GMT  
+		Size: 18.8 KB (18787 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4.5-trixie` - linux; arm variant v7
 
 ```console
-$ docker pull irssi@sha256:90bf141f8448f931b78a4759623391882ba8d3d0520b3770b063ea80daf29ee7
+$ docker pull irssi@sha256:e4d27a04dfad1a27627b754b0f8fa15afc211115a1ad7cb4620d2efbd2ab98da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.7 MB (48681035 bytes)**  
+-	Total Size: **48.7 MB (48681346 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d9f126abb644aa91708596fe16f433c339727d7b73386dc26994eb1d0119af6`
+-	Image ID: `sha256:7b398645628764f0cb33c50578a24916dc86f138cc1abf401eda13d41ed3460f`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:cfc411ffeb71f696e2a89e33e91be9b70084d6c3383474344babe3a4a21eb843`  
-		Last Modified: Mon, 08 Dec 2025 22:16:57 GMT  
-		Size: 26.2 MB (26210013 bytes)  
+	-	`sha256:6d3e0fea3cb8eb29b9c06956265b47cd00f7ebfb48e35e818f686d52c21353f5`  
+		Last Modified: Mon, 29 Dec 2025 22:28:07 GMT  
+		Size: 26.2 MB (26210001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eea7a0e9121517502a0452fd53a68bbbf3e120ea0391f4616c22058f3ffe83a6`  
-		Last Modified: Mon, 08 Dec 2025 22:37:54 GMT  
-		Size: 17.9 MB (17909125 bytes)  
+	-	`sha256:03b8fa94779dfe46b70274f574fedd82507082810021ae4f845646cb1dce9362`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 17.9 MB (17909648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93a98b78793ec14ceabf793c4778fa9c59358545e4604a1c0b15bb6bd21bd755`  
-		Last Modified: Mon, 08 Dec 2025 22:37:52 GMT  
+	-	`sha256:95aeb493072858b7b55ea0ebdd3ab5c100a98dbc56143618e1ec91156a8a5833`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
 		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c7e9fbcbad6965518fd24946faf5855bd7c2b9dbb7a8632a912292a76f391b`  
-		Last Modified: Mon, 08 Dec 2025 22:37:53 GMT  
-		Size: 4.6 MB (4558538 bytes)  
+	-	`sha256:acb5cf1d39feaaf92989d33d12c59d42ec27bd26bc489a00abeff7da96bdbf5c`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 4.6 MB (4558338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -7741,78 +7741,78 @@ CMD ["irssi"]
 ### `irssi:1.4.5-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:529cccf10215bb411a271b196fe666e44db36c0c88bc62b754ae778cc278ef86
+$ docker pull irssi@sha256:8857d82cea6c43130b7e983548a0f403c240ed8d0d9a2428c6838149368a2049
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5070cb3b050937bc197ae388f5989122c8e4fc9558708e5cd01f7eb53047ec85`
+-	Image ID: `sha256:2d9e20f4d32838e312ef529d9c9eff7c7ebcff2f81a6bfc695737870da5eb99e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:82a650d25d6be9c0ec73d583a9bfbb7e4cdf26f7eac9d4a2c0b9165043d1c3b1`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8a34f8c3b342999b7dba68b6dcda05236500a8d04b3671140397f07e9c8122fc`  
+		Last Modified: Tue, 30 Dec 2025 03:00:29 GMT  
 		Size: 5.6 MB (5588948 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b12cb7447938f917d5345ecf33832b856ff04c97a5f9c2213b71e0a7d45d3fcc`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8f708606255cb3dffb5272991afb1cb7af441b9dcfa7ff57b1d68e9413a9eb11`  
+		Last Modified: Tue, 30 Dec 2025 03:00:30 GMT  
 		Size: 18.8 KB (18789 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4.5-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull irssi@sha256:4ad94477cda90ae8d3d4d47ed0c1a58d162ca780cbc21e1e356ae833c2c9af51
+$ docker pull irssi@sha256:cff45b7bfe478eb28dd1dd96ca7dd16e1a66294da7316f8da168a482869b22fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.0 MB (53972792 bytes)**  
+-	Total Size: **54.0 MB (53972824 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6123fcf7ac4efb210283b7fab07ab5e1f866bcfa7ad8dbd2186bd66c2f88d4b2`
+-	Image ID: `sha256:2ed438e0e96f43b9763c1167dae5ff12991dd1e14f33b7e4ba71b850d01c52bf`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:35:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:f626fba1463b32b20f78d29b52dcf15be927dbb5372a9ba6a5f97aad47ae220b`  
-		Last Modified: Mon, 08 Dec 2025 22:17:19 GMT  
-		Size: 30.1 MB (30138628 bytes)  
+	-	`sha256:2ae15a20160209c6fd6cff4886e4ba2e666fa5bedd7b54a2c0097ea6646f0273`  
+		Last Modified: Mon, 29 Dec 2025 22:31:09 GMT  
+		Size: 30.1 MB (30138636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:271cd4b9332a86de31690e94a837946ec81b376cf3b99b9ec078b9997ebfc4e7`  
-		Last Modified: Mon, 08 Dec 2025 22:36:51 GMT  
-		Size: 19.0 MB (19049077 bytes)  
+	-	`sha256:c4c7fd602675c6c7c6b8aa5aafb615956311e1bfb1ff7744ca326d6f7de8126b`  
+		Last Modified: Mon, 29 Dec 2025 23:21:34 GMT  
+		Size: 19.0 MB (19049094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2f51515c1d0d0bdda82745487e18f18f85d1a6999f3c82ff517039ed8c01ae9`  
-		Last Modified: Mon, 08 Dec 2025 22:36:49 GMT  
-		Size: 3.3 KB (3331 bytes)  
+	-	`sha256:3a7eecea8feac170ae95f33c43646357cd8719c96bc0c0026e63058598164aac`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae317866ab39c091f9ece44d604dc3317877b2ed386b1ff38dcf25d62707f6e`  
-		Last Modified: Mon, 08 Dec 2025 22:36:50 GMT  
-		Size: 4.8 MB (4781724 bytes)  
+	-	`sha256:7df4a1617ae3607d3a5718f47073286a88f69a48ce2fdf4d26e708ec9399fc6a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 4.8 MB (4781733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -7822,78 +7822,78 @@ CMD ["irssi"]
 ### `irssi:1.4.5-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:8a9848973ad593c402ad00791b8debf829808115d9215d351a4d092da9efdfb6
+$ docker pull irssi@sha256:a04bde14fad32b933fcf4da9cc868a2b9a592c210856a8cfe296e9e9304cd6ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5613694 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21e8e14ea45e56f1a280745e4215d6b09bf3bbe98d77d25ed701e1833b69db94`
+-	Image ID: `sha256:a0161e3ac2f81fa90b7210540b966f0c473cdb48b16c673f1f2092b9c8839685`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:833298ea4b4e32cd4be350f01f29cc972db0aa5f1e1b52c229e9611870f9d81d`  
-		Last Modified: Tue, 09 Dec 2025 00:01:51 GMT  
+	-	`sha256:b5269aeec51509984fc080b3c9dbc5d15ef72537f499516b5ef18329212c517f`  
+		Last Modified: Tue, 30 Dec 2025 03:00:36 GMT  
 		Size: 5.6 MB (5594861 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:12ec53196ee839e1d4fc9f760637572995c6cf92c75585cdf8a0ddebd72fd86a`  
-		Last Modified: Tue, 09 Dec 2025 00:01:52 GMT  
+	-	`sha256:42f8353da907cf9a9b270dffb34df36a9c51973e97d9bfd3d4e459781b206800`  
+		Last Modified: Tue, 30 Dec 2025 03:00:37 GMT  
 		Size: 18.8 KB (18833 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1.4.5-trixie` - linux; 386
 
 ```console
-$ docker pull irssi@sha256:e3cb55074f79f7accb3186e087c8bcfbe5fb81bafed6b3843bbb182b831c2271
+$ docker pull irssi@sha256:d08d4d3128e25228bf2d6faef99a6113ac70a47a74b0a2ba6626b6cabb140274
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.9 MB (54905243 bytes)**  
+-	Total Size: **54.9 MB (54905392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ede6324a485fc1c56152548ccc95aa525d3e6298b82206a635b9e5bb2c43a274`
+-	Image ID: `sha256:979e1cbb8c89942ce58d9bb6021f47e002333c12e43d67332ce0629d3d106f49`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:2648c88d9207cd6090be83f4a97e2aa4080930987d8fb62195cc994194160e67`  
-		Last Modified: Mon, 08 Dec 2025 22:17:03 GMT  
-		Size: 31.3 MB (31293070 bytes)  
+	-	`sha256:796ffff142a3158a5c48a8d81b8b722c5cf4889d5e22da70bdd13a6459d6e40b`  
+		Last Modified: Mon, 29 Dec 2025 22:27:31 GMT  
+		Size: 31.3 MB (31293100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92779a84b492a0e3f9b30abe3ba2c3f3c75f5f8bac0be5b3ec6f1d2151769a81`  
-		Last Modified: Mon, 08 Dec 2025 22:35:51 GMT  
-		Size: 18.7 MB (18740473 bytes)  
+	-	`sha256:2efbd3bd6e2771e7bdcc6ade44379f7e6ed50abf8d1a9c274cb9f6f58c572fbd`  
+		Last Modified: Mon, 29 Dec 2025 23:16:34 GMT  
+		Size: 18.7 MB (18740665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e9e00516c012835613d2d6c24e48eca1db4092e2ae02a5557ef978565a9087b`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 3.3 KB (3326 bytes)  
+	-	`sha256:8048bbcd036579dd5df09fcbfdbbd027f024db2c93517455be9e832043b0fb0d`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:380f851f46dcf6024e273c5690f4de14d4837fe4c9e173048edc3844675aefad`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 4.9 MB (4868342 bytes)  
+	-	`sha256:ce14d1cfe28c0f1ca363e3679575bc7ff046c3a7aecc7fa84768f91a49e33cb7`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 4.9 MB (4868266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -7903,24 +7903,24 @@ CMD ["irssi"]
 ### `irssi:1.4.5-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:0e026c9c8b43f1e4b3f0cf84c29441b70414ab67d248c56ebf7607efd867af5f
+$ docker pull irssi@sha256:1d3a4326ce72049f65657775db7ab8b00bc00803f2e6badc5b1e6b6c988bc45a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5603095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c110c8c5132d6b986eca5007cb21a2921c655197298f96c1e6e3fe1d975295ce`
+-	Image ID: `sha256:623d6e43eaa9131f25e3eb59f90fc4982efb67567b9ba4a3433405a7b6f64b94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:290278e5fa9964615268f167ae0917568dd48529eb40cb0fe4b7b6b4fd6db490`  
-		Last Modified: Tue, 09 Dec 2025 00:01:57 GMT  
+	-	`sha256:dfb01705cfaf68137a2b4104a75940c5dab71ec5b22996969cf4a8fbcaa9ca90`  
+		Last Modified: Tue, 30 Dec 2025 03:00:43 GMT  
 		Size: 5.6 MB (5584500 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3b86870229139d3e4a5b2f5fb461a45c930f312a775c5a1c86c120a2616479b3`  
-		Last Modified: Tue, 09 Dec 2025 00:01:58 GMT  
+	-	`sha256:a4aa76b450b3cb9ab30ed105ec81ac1ebb63f0368134235dcb34c03b0d9d40ca`  
+		Last Modified: Tue, 30 Dec 2025 03:00:44 GMT  
 		Size: 18.6 KB (18595 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8089,54 +8089,54 @@ $ docker pull irssi@sha256:1b92fd8833f5dd070657c1ec551487f7908d41f8c197a02d2c94c
 ### `irssi:1.4.5-trixie` - linux; s390x
 
 ```console
-$ docker pull irssi@sha256:79ceeb6e5f00cadefc5098892f4fdd847c8a6c7147214049af36f2988eb63701
+$ docker pull irssi@sha256:815d78d426c36b6000938223e17371438343388b97029ddc801db1a6e4449343
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.5 MB (54503098 bytes)**  
+-	Total Size: **54.5 MB (54503079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f4447f6a16ef4660d5cc882de4451987df832e0221f3c9198582f5041d9e484`
+-	Image ID: `sha256:32cd1197e33bbff9caa03127a87859248728b96b50492b7e9d451f571debed6a`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:deacec5e6af82b258c59e95e3e86abeef36fad06b1d9ff2de33e88544ffb79ff`  
-		Last Modified: Mon, 08 Dec 2025 22:20:52 GMT  
-		Size: 29.8 MB (29834400 bytes)  
+	-	`sha256:c9a83915f7d4b9d7fbe5dceeedd49718d2702fd67d78b63a38ec344f3fbfcc41`  
+		Last Modified: Mon, 29 Dec 2025 22:27:07 GMT  
+		Size: 29.8 MB (29834418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12a68582eda8cf9c795e8fac7bd4a06d7b4cf05bcce0b996577a486d0e34b56c`  
-		Last Modified: Mon, 08 Dec 2025 22:34:33 GMT  
-		Size: 19.8 MB (19759448 bytes)  
+	-	`sha256:18260ff97d5c44522311e7b20eb667dd8268e5f437656b11d83126dd6e6e0464`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 19.8 MB (19759407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cea7a5c770aac1d19a49e32bddbb9b474dd2746e7821d20791e1b80abfa3b5a3`  
-		Last Modified: Mon, 08 Dec 2025 22:34:31 GMT  
-		Size: 3.3 KB (3328 bytes)  
+	-	`sha256:3c75b4b06491d9757a2c0ddc7e1161f43d94af12a3b1246ed862a050c9b61c09`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6fe49ac5d532203fa75223786c8c8ef7f78fbdeff8227abdab3b6e08125de53`  
-		Last Modified: Mon, 08 Dec 2025 22:34:32 GMT  
-		Size: 4.9 MB (4905890 bytes)  
+	-	`sha256:daa149046211a2130b3719fc3f26b72463b26a58fa4a5dc5d84f9523335848ca`  
+		Last Modified: Mon, 29 Dec 2025 23:18:35 GMT  
+		Size: 4.9 MB (4905893 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -8146,24 +8146,24 @@ CMD ["irssi"]
 ### `irssi:1.4.5-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:afc0d5563715a205bdbf09adfb0dcb772d44ec5f9f64be619112ea71bef71370
+$ docker pull irssi@sha256:2b99e2235e3fa873ef89b93a9147c660d901ec7f61f739ea24d96830690fb060
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb41a3e51a7b6c277c4898dede97241725067c20506fcd3897eb9a2fa33ef8fc`
+-	Image ID: `sha256:0fc57da1edc6729fa20bb402e73e2ca3b985338ecf24f6bedb15c082c9438cdd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9292a924a5f71b0700ea789b79e1a8bf1256af5aae51b422283563c1fa34bf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:15 GMT  
+	-	`sha256:ee4a7f0d2dd6d4c3875c55bf6786b9b62f3e168dfa34657418298306f4cb7e03`  
+		Last Modified: Tue, 30 Dec 2025 03:00:59 GMT  
 		Size: 5.6 MB (5589282 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bff40bc8ca1364bffe8c60be1df3e2bffedbd27bb8dbcf6db778c754320ccf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:16 GMT  
+	-	`sha256:2f9a8401231d6692720f44f08b6392f880547c382962b1052da941cec6dbc11c`  
+		Last Modified: Tue, 30 Dec 2025 03:01:00 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9540,7 +9540,7 @@ $ docker pull irssi@sha256:5f59a9171e69187914fae3b550b39d19fd226cdc7d6fdc962f2d0
 ## `irssi:latest`
 
 ```console
-$ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c6071348cf06d8
+$ docker pull irssi@sha256:a58a0b129b62fd10c71f2bbbbf21dc04a640a8d024a63cad46fe33d7729f73d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9565,54 +9565,54 @@ $ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c60
 ### `irssi:latest` - linux; amd64
 
 ```console
-$ docker pull irssi@sha256:ba548a27a12441efe110f9a056e793d722bda4a4eb13a3ceea8bf8d2d5ac1e29
+$ docker pull irssi@sha256:3b3c85d70a41f6687c043024f4cb244a9bb216ff5d00dac171f720dbe73860a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.9 MB (53869300 bytes)**  
+-	Total Size: **53.9 MB (53869154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ebb967af1ef6016f39c7253143525ae93880628cdbc3e189772a2d029fc1a25`
+-	Image ID: `sha256:f2472da814fc592aa34397af3e23f4d9501da8ddda528ab94ff94b594a538014`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:37:11 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:1733a4cd59540b3470ff7a90963bcdea5b543279dd6bdaf022d7883fdad221e5`  
-		Last Modified: Mon, 08 Dec 2025 22:17:58 GMT  
-		Size: 29.8 MB (29776496 bytes)  
+	-	`sha256:02d7611c4eae219af91448a4720bdba036575d3bc0356cfe12774af85daa6aff`  
+		Last Modified: Mon, 29 Dec 2025 22:31:18 GMT  
+		Size: 29.8 MB (29776533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae9ff25045243dc27c083564f101c73527fab1e4d6de25faafe1d20c6993d0f`  
-		Last Modified: Mon, 08 Dec 2025 22:38:10 GMT  
-		Size: 19.2 MB (19222767 bytes)  
+	-	`sha256:6c8132994a787dd852aeb12fc93d274ee76418e6badc922497d2965b065f6e7d`  
+		Last Modified: Mon, 29 Dec 2025 23:21:44 GMT  
+		Size: 19.2 MB (19222636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63cff4c278980a41219ced1054076473f352a9ab538703fdb0508673575901de`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 3.3 KB (3323 bytes)  
+	-	`sha256:6f12454da6b93953f77c2a08d9c8ef63604b855bbd13347b3ddc7ff0ec7df67a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:42 GMT  
+		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6979d38c29179b5f4797ac48f3389f2044fb0312d0cd3b7f7fe377d41762cf9c`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 4.9 MB (4866682 bytes)  
+	-	`sha256:925fbbd20e1183e0b4cddd1cf3e9a0cf8e42492a977a8a050a677cddc3e0caaf`  
+		Last Modified: Mon, 29 Dec 2025 23:21:43 GMT  
+		Size: 4.9 MB (4866629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -9622,78 +9622,78 @@ CMD ["irssi"]
 ### `irssi:latest` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:2c34f0b8bd4789c746b87fcefbeca5053bc49367fbe0106f8c1f2c5df4510d32
+$ docker pull irssi@sha256:cd86910851860dd596083890e30f2022331fb3b04b10f7a63aa238cf74c7b396
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607028 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2aec691ef1c3f8b1f097d426de19c51fc9a39bcd3002cf27303c6ea181155e87`
+-	Image ID: `sha256:16708e5a07b3efd7806c1ae245a0d46b2ce402fba961571392e0c0c17520d1f4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea7448fd69d2025a02fa3773b13695b9ecaa34efd8cc5b223bd340a6a20bb280`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:77a09aac870c7c1cd26f161e512157115820cf8af0d7dac29f59655dcebacc97`  
+		Last Modified: Tue, 30 Dec 2025 03:00:08 GMT  
 		Size: 5.6 MB (5588377 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:15055f679734606495e25ae5c7b68d5ee1ec2609bfbca41b8eccfdc0431ef6dd`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:ae6bfb7c69b24e458298d702d07c1ac1b1d40a900e426f8f11965280bae18665`  
+		Last Modified: Tue, 30 Dec 2025 03:00:09 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:latest` - linux; arm variant v5
 
 ```console
-$ docker pull irssi@sha256:605f1644cbe09985d1b0a7159e6a3645cacce33a561adb3eb3994e2bb9fe1118
+$ docker pull irssi@sha256:a4d84f499fc0e5eb44aead73692f35a806f0830fa5018b6cf84b1868700b5963
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.9 MB (50943555 bytes)**  
+-	Total Size: **50.9 MB (50944115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38d5500fde47056d160fcf131159d65be22e1cce50911f44d2f5be15fc113c99`
+-	Image ID: `sha256:c9445964d8d8a558738c20de61cd62137fb7578057bd77c1b7f5739ee5bfa485`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:d97bc71d0fa535127863fdab265dfddb07b3cda35b80de4dd2b9b67fe154c856`  
-		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
-		Size: 27.9 MB (27944187 bytes)  
+	-	`sha256:b99a8d8dab982a1a4ea341e66b178b14c0f373c2cd90ac46a67308a4f43c82ae`  
+		Last Modified: Mon, 29 Dec 2025 22:27:09 GMT  
+		Size: 27.9 MB (27944146 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:209b020e9b6936d49088aeb2fe32da563e0dc7240b53e7a4f55a0064bcc57dbb`  
-		Last Modified: Mon, 08 Dec 2025 22:35:02 GMT  
-		Size: 18.3 MB (18286366 bytes)  
+	-	`sha256:3d1a051782ec1264daf1fac1ec43db9040842983091da28b50cff5526a386f05`  
+		Last Modified: Mon, 29 Dec 2025 23:18:49 GMT  
+		Size: 18.3 MB (18286953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e546d6b1c1001d996e09271aa06076bbf5076bf4c0f1a64a5a76db18e6351b32`  
-		Last Modified: Mon, 08 Dec 2025 22:34:59 GMT  
-		Size: 3.3 KB (3329 bytes)  
+	-	`sha256:0d9e4f8229159dfa48b293b595cb8424bdbcd96b481759e659647a1c0f291581`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08c1c60a78876ca8d26fa893a37ff13080f097555eea972e3e45e59d912f5e9c`  
-		Last Modified: Mon, 08 Dec 2025 22:35:00 GMT  
-		Size: 4.7 MB (4709641 bytes)  
+	-	`sha256:1552d6662afda0c53628250b85cff9fbbd309d1b53bf32e84ed85b3389f1f94d`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 4.7 MB (4709657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -9703,78 +9703,78 @@ CMD ["irssi"]
 ### `irssi:latest` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:42ce2f56fd00643a382954ddf368a7ad26f88a053b4a557aa1112ed9de67aac0
+$ docker pull irssi@sha256:2d8f6118f9cf46e7448d1418e4a916542ef08117a959cf1839012608a741fc65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5604715 bytes)**  
+-	Total Size: **5.6 MB (5604713 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:192e3247c9d1fd1e403f1da43c465327ebe5a123a9caf785ea53b5dd0388c5cb`
+-	Image ID: `sha256:e51f71b2322cd350f3f66a9681d5e6de6bb479c5b9b259e75f772009877d9221`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dbd5f23d6f6d5ab003eddef0af01a8a8b66fac74afe90d0faa97afa2b0a581d2`  
-		Last Modified: Tue, 09 Dec 2025 00:01:40 GMT  
+	-	`sha256:5b702db9bda66f6169dc57ba677ab4cb95e892bb9b54fe5bce9b6e61e50cbfe1`  
+		Last Modified: Tue, 30 Dec 2025 03:00:15 GMT  
 		Size: 5.6 MB (5585926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:401ba355602555e19652809e181e8fc4d172d2140c0c17f0781b909a2bff847e`  
-		Last Modified: Tue, 09 Dec 2025 00:01:41 GMT  
-		Size: 18.8 KB (18789 bytes)  
+	-	`sha256:d6cba35a00912b77b0bf9fa496768eaaf6ff6a70b18d3e3d2636cf4a6c61fe1a`  
+		Last Modified: Tue, 30 Dec 2025 03:00:19 GMT  
+		Size: 18.8 KB (18787 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:latest` - linux; arm variant v7
 
 ```console
-$ docker pull irssi@sha256:90bf141f8448f931b78a4759623391882ba8d3d0520b3770b063ea80daf29ee7
+$ docker pull irssi@sha256:e4d27a04dfad1a27627b754b0f8fa15afc211115a1ad7cb4620d2efbd2ab98da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.7 MB (48681035 bytes)**  
+-	Total Size: **48.7 MB (48681346 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d9f126abb644aa91708596fe16f433c339727d7b73386dc26994eb1d0119af6`
+-	Image ID: `sha256:7b398645628764f0cb33c50578a24916dc86f138cc1abf401eda13d41ed3460f`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:cfc411ffeb71f696e2a89e33e91be9b70084d6c3383474344babe3a4a21eb843`  
-		Last Modified: Mon, 08 Dec 2025 22:16:57 GMT  
-		Size: 26.2 MB (26210013 bytes)  
+	-	`sha256:6d3e0fea3cb8eb29b9c06956265b47cd00f7ebfb48e35e818f686d52c21353f5`  
+		Last Modified: Mon, 29 Dec 2025 22:28:07 GMT  
+		Size: 26.2 MB (26210001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eea7a0e9121517502a0452fd53a68bbbf3e120ea0391f4616c22058f3ffe83a6`  
-		Last Modified: Mon, 08 Dec 2025 22:37:54 GMT  
-		Size: 17.9 MB (17909125 bytes)  
+	-	`sha256:03b8fa94779dfe46b70274f574fedd82507082810021ae4f845646cb1dce9362`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 17.9 MB (17909648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93a98b78793ec14ceabf793c4778fa9c59358545e4604a1c0b15bb6bd21bd755`  
-		Last Modified: Mon, 08 Dec 2025 22:37:52 GMT  
+	-	`sha256:95aeb493072858b7b55ea0ebdd3ab5c100a98dbc56143618e1ec91156a8a5833`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
 		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c7e9fbcbad6965518fd24946faf5855bd7c2b9dbb7a8632a912292a76f391b`  
-		Last Modified: Mon, 08 Dec 2025 22:37:53 GMT  
-		Size: 4.6 MB (4558538 bytes)  
+	-	`sha256:acb5cf1d39feaaf92989d33d12c59d42ec27bd26bc489a00abeff7da96bdbf5c`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 4.6 MB (4558338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -9784,78 +9784,78 @@ CMD ["irssi"]
 ### `irssi:latest` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:529cccf10215bb411a271b196fe666e44db36c0c88bc62b754ae778cc278ef86
+$ docker pull irssi@sha256:8857d82cea6c43130b7e983548a0f403c240ed8d0d9a2428c6838149368a2049
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5070cb3b050937bc197ae388f5989122c8e4fc9558708e5cd01f7eb53047ec85`
+-	Image ID: `sha256:2d9e20f4d32838e312ef529d9c9eff7c7ebcff2f81a6bfc695737870da5eb99e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:82a650d25d6be9c0ec73d583a9bfbb7e4cdf26f7eac9d4a2c0b9165043d1c3b1`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8a34f8c3b342999b7dba68b6dcda05236500a8d04b3671140397f07e9c8122fc`  
+		Last Modified: Tue, 30 Dec 2025 03:00:29 GMT  
 		Size: 5.6 MB (5588948 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b12cb7447938f917d5345ecf33832b856ff04c97a5f9c2213b71e0a7d45d3fcc`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8f708606255cb3dffb5272991afb1cb7af441b9dcfa7ff57b1d68e9413a9eb11`  
+		Last Modified: Tue, 30 Dec 2025 03:00:30 GMT  
 		Size: 18.8 KB (18789 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull irssi@sha256:4ad94477cda90ae8d3d4d47ed0c1a58d162ca780cbc21e1e356ae833c2c9af51
+$ docker pull irssi@sha256:cff45b7bfe478eb28dd1dd96ca7dd16e1a66294da7316f8da168a482869b22fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.0 MB (53972792 bytes)**  
+-	Total Size: **54.0 MB (53972824 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6123fcf7ac4efb210283b7fab07ab5e1f866bcfa7ad8dbd2186bd66c2f88d4b2`
+-	Image ID: `sha256:2ed438e0e96f43b9763c1167dae5ff12991dd1e14f33b7e4ba71b850d01c52bf`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:35:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:f626fba1463b32b20f78d29b52dcf15be927dbb5372a9ba6a5f97aad47ae220b`  
-		Last Modified: Mon, 08 Dec 2025 22:17:19 GMT  
-		Size: 30.1 MB (30138628 bytes)  
+	-	`sha256:2ae15a20160209c6fd6cff4886e4ba2e666fa5bedd7b54a2c0097ea6646f0273`  
+		Last Modified: Mon, 29 Dec 2025 22:31:09 GMT  
+		Size: 30.1 MB (30138636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:271cd4b9332a86de31690e94a837946ec81b376cf3b99b9ec078b9997ebfc4e7`  
-		Last Modified: Mon, 08 Dec 2025 22:36:51 GMT  
-		Size: 19.0 MB (19049077 bytes)  
+	-	`sha256:c4c7fd602675c6c7c6b8aa5aafb615956311e1bfb1ff7744ca326d6f7de8126b`  
+		Last Modified: Mon, 29 Dec 2025 23:21:34 GMT  
+		Size: 19.0 MB (19049094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2f51515c1d0d0bdda82745487e18f18f85d1a6999f3c82ff517039ed8c01ae9`  
-		Last Modified: Mon, 08 Dec 2025 22:36:49 GMT  
-		Size: 3.3 KB (3331 bytes)  
+	-	`sha256:3a7eecea8feac170ae95f33c43646357cd8719c96bc0c0026e63058598164aac`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae317866ab39c091f9ece44d604dc3317877b2ed386b1ff38dcf25d62707f6e`  
-		Last Modified: Mon, 08 Dec 2025 22:36:50 GMT  
-		Size: 4.8 MB (4781724 bytes)  
+	-	`sha256:7df4a1617ae3607d3a5718f47073286a88f69a48ce2fdf4d26e708ec9399fc6a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 4.8 MB (4781733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -9865,78 +9865,78 @@ CMD ["irssi"]
 ### `irssi:latest` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:8a9848973ad593c402ad00791b8debf829808115d9215d351a4d092da9efdfb6
+$ docker pull irssi@sha256:a04bde14fad32b933fcf4da9cc868a2b9a592c210856a8cfe296e9e9304cd6ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5613694 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21e8e14ea45e56f1a280745e4215d6b09bf3bbe98d77d25ed701e1833b69db94`
+-	Image ID: `sha256:a0161e3ac2f81fa90b7210540b966f0c473cdb48b16c673f1f2092b9c8839685`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:833298ea4b4e32cd4be350f01f29cc972db0aa5f1e1b52c229e9611870f9d81d`  
-		Last Modified: Tue, 09 Dec 2025 00:01:51 GMT  
+	-	`sha256:b5269aeec51509984fc080b3c9dbc5d15ef72537f499516b5ef18329212c517f`  
+		Last Modified: Tue, 30 Dec 2025 03:00:36 GMT  
 		Size: 5.6 MB (5594861 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:12ec53196ee839e1d4fc9f760637572995c6cf92c75585cdf8a0ddebd72fd86a`  
-		Last Modified: Tue, 09 Dec 2025 00:01:52 GMT  
+	-	`sha256:42f8353da907cf9a9b270dffb34df36a9c51973e97d9bfd3d4e459781b206800`  
+		Last Modified: Tue, 30 Dec 2025 03:00:37 GMT  
 		Size: 18.8 KB (18833 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:latest` - linux; 386
 
 ```console
-$ docker pull irssi@sha256:e3cb55074f79f7accb3186e087c8bcfbe5fb81bafed6b3843bbb182b831c2271
+$ docker pull irssi@sha256:d08d4d3128e25228bf2d6faef99a6113ac70a47a74b0a2ba6626b6cabb140274
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.9 MB (54905243 bytes)**  
+-	Total Size: **54.9 MB (54905392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ede6324a485fc1c56152548ccc95aa525d3e6298b82206a635b9e5bb2c43a274`
+-	Image ID: `sha256:979e1cbb8c89942ce58d9bb6021f47e002333c12e43d67332ce0629d3d106f49`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:2648c88d9207cd6090be83f4a97e2aa4080930987d8fb62195cc994194160e67`  
-		Last Modified: Mon, 08 Dec 2025 22:17:03 GMT  
-		Size: 31.3 MB (31293070 bytes)  
+	-	`sha256:796ffff142a3158a5c48a8d81b8b722c5cf4889d5e22da70bdd13a6459d6e40b`  
+		Last Modified: Mon, 29 Dec 2025 22:27:31 GMT  
+		Size: 31.3 MB (31293100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92779a84b492a0e3f9b30abe3ba2c3f3c75f5f8bac0be5b3ec6f1d2151769a81`  
-		Last Modified: Mon, 08 Dec 2025 22:35:51 GMT  
-		Size: 18.7 MB (18740473 bytes)  
+	-	`sha256:2efbd3bd6e2771e7bdcc6ade44379f7e6ed50abf8d1a9c274cb9f6f58c572fbd`  
+		Last Modified: Mon, 29 Dec 2025 23:16:34 GMT  
+		Size: 18.7 MB (18740665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e9e00516c012835613d2d6c24e48eca1db4092e2ae02a5557ef978565a9087b`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 3.3 KB (3326 bytes)  
+	-	`sha256:8048bbcd036579dd5df09fcbfdbbd027f024db2c93517455be9e832043b0fb0d`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:380f851f46dcf6024e273c5690f4de14d4837fe4c9e173048edc3844675aefad`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 4.9 MB (4868342 bytes)  
+	-	`sha256:ce14d1cfe28c0f1ca363e3679575bc7ff046c3a7aecc7fa84768f91a49e33cb7`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 4.9 MB (4868266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -9946,24 +9946,24 @@ CMD ["irssi"]
 ### `irssi:latest` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:0e026c9c8b43f1e4b3f0cf84c29441b70414ab67d248c56ebf7607efd867af5f
+$ docker pull irssi@sha256:1d3a4326ce72049f65657775db7ab8b00bc00803f2e6badc5b1e6b6c988bc45a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5603095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c110c8c5132d6b986eca5007cb21a2921c655197298f96c1e6e3fe1d975295ce`
+-	Image ID: `sha256:623d6e43eaa9131f25e3eb59f90fc4982efb67567b9ba4a3433405a7b6f64b94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:290278e5fa9964615268f167ae0917568dd48529eb40cb0fe4b7b6b4fd6db490`  
-		Last Modified: Tue, 09 Dec 2025 00:01:57 GMT  
+	-	`sha256:dfb01705cfaf68137a2b4104a75940c5dab71ec5b22996969cf4a8fbcaa9ca90`  
+		Last Modified: Tue, 30 Dec 2025 03:00:43 GMT  
 		Size: 5.6 MB (5584500 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3b86870229139d3e4a5b2f5fb461a45c930f312a775c5a1c86c120a2616479b3`  
-		Last Modified: Tue, 09 Dec 2025 00:01:58 GMT  
+	-	`sha256:a4aa76b450b3cb9ab30ed105ec81ac1ebb63f0368134235dcb34c03b0d9d40ca`  
+		Last Modified: Tue, 30 Dec 2025 03:00:44 GMT  
 		Size: 18.6 KB (18595 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10132,54 +10132,54 @@ $ docker pull irssi@sha256:1b92fd8833f5dd070657c1ec551487f7908d41f8c197a02d2c94c
 ### `irssi:latest` - linux; s390x
 
 ```console
-$ docker pull irssi@sha256:79ceeb6e5f00cadefc5098892f4fdd847c8a6c7147214049af36f2988eb63701
+$ docker pull irssi@sha256:815d78d426c36b6000938223e17371438343388b97029ddc801db1a6e4449343
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.5 MB (54503098 bytes)**  
+-	Total Size: **54.5 MB (54503079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f4447f6a16ef4660d5cc882de4451987df832e0221f3c9198582f5041d9e484`
+-	Image ID: `sha256:32cd1197e33bbff9caa03127a87859248728b96b50492b7e9d451f571debed6a`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:deacec5e6af82b258c59e95e3e86abeef36fad06b1d9ff2de33e88544ffb79ff`  
-		Last Modified: Mon, 08 Dec 2025 22:20:52 GMT  
-		Size: 29.8 MB (29834400 bytes)  
+	-	`sha256:c9a83915f7d4b9d7fbe5dceeedd49718d2702fd67d78b63a38ec344f3fbfcc41`  
+		Last Modified: Mon, 29 Dec 2025 22:27:07 GMT  
+		Size: 29.8 MB (29834418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12a68582eda8cf9c795e8fac7bd4a06d7b4cf05bcce0b996577a486d0e34b56c`  
-		Last Modified: Mon, 08 Dec 2025 22:34:33 GMT  
-		Size: 19.8 MB (19759448 bytes)  
+	-	`sha256:18260ff97d5c44522311e7b20eb667dd8268e5f437656b11d83126dd6e6e0464`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 19.8 MB (19759407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cea7a5c770aac1d19a49e32bddbb9b474dd2746e7821d20791e1b80abfa3b5a3`  
-		Last Modified: Mon, 08 Dec 2025 22:34:31 GMT  
-		Size: 3.3 KB (3328 bytes)  
+	-	`sha256:3c75b4b06491d9757a2c0ddc7e1161f43d94af12a3b1246ed862a050c9b61c09`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6fe49ac5d532203fa75223786c8c8ef7f78fbdeff8227abdab3b6e08125de53`  
-		Last Modified: Mon, 08 Dec 2025 22:34:32 GMT  
-		Size: 4.9 MB (4905890 bytes)  
+	-	`sha256:daa149046211a2130b3719fc3f26b72463b26a58fa4a5dc5d84f9523335848ca`  
+		Last Modified: Mon, 29 Dec 2025 23:18:35 GMT  
+		Size: 4.9 MB (4905893 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -10189,31 +10189,31 @@ CMD ["irssi"]
 ### `irssi:latest` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:afc0d5563715a205bdbf09adfb0dcb772d44ec5f9f64be619112ea71bef71370
+$ docker pull irssi@sha256:2b99e2235e3fa873ef89b93a9147c660d901ec7f61f739ea24d96830690fb060
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb41a3e51a7b6c277c4898dede97241725067c20506fcd3897eb9a2fa33ef8fc`
+-	Image ID: `sha256:0fc57da1edc6729fa20bb402e73e2ca3b985338ecf24f6bedb15c082c9438cdd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9292a924a5f71b0700ea789b79e1a8bf1256af5aae51b422283563c1fa34bf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:15 GMT  
+	-	`sha256:ee4a7f0d2dd6d4c3875c55bf6786b9b62f3e168dfa34657418298306f4cb7e03`  
+		Last Modified: Tue, 30 Dec 2025 03:00:59 GMT  
 		Size: 5.6 MB (5589282 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bff40bc8ca1364bffe8c60be1df3e2bffedbd27bb8dbcf6db778c754320ccf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:16 GMT  
+	-	`sha256:2f9a8401231d6692720f44f08b6392f880547c382962b1052da941cec6dbc11c`  
+		Last Modified: Tue, 30 Dec 2025 03:01:00 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `irssi:trixie`
 
 ```console
-$ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c6071348cf06d8
+$ docker pull irssi@sha256:a58a0b129b62fd10c71f2bbbbf21dc04a640a8d024a63cad46fe33d7729f73d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10238,54 +10238,54 @@ $ docker pull irssi@sha256:f23fbb8b1fa045eadf3b2acd06587865d811920c47a28ced47c60
 ### `irssi:trixie` - linux; amd64
 
 ```console
-$ docker pull irssi@sha256:ba548a27a12441efe110f9a056e793d722bda4a4eb13a3ceea8bf8d2d5ac1e29
+$ docker pull irssi@sha256:3b3c85d70a41f6687c043024f4cb244a9bb216ff5d00dac171f720dbe73860a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.9 MB (53869300 bytes)**  
+-	Total Size: **53.9 MB (53869154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ebb967af1ef6016f39c7253143525ae93880628cdbc3e189772a2d029fc1a25`
+-	Image ID: `sha256:f2472da814fc592aa34397af3e23f4d9501da8ddda528ab94ff94b594a538014`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:37:11 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:37:12 GMT
+# Mon, 29 Dec 2025 23:20:50 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:51 GMT
+# Mon, 29 Dec 2025 23:21:26 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:1733a4cd59540b3470ff7a90963bcdea5b543279dd6bdaf022d7883fdad221e5`  
-		Last Modified: Mon, 08 Dec 2025 22:17:58 GMT  
-		Size: 29.8 MB (29776496 bytes)  
+	-	`sha256:02d7611c4eae219af91448a4720bdba036575d3bc0356cfe12774af85daa6aff`  
+		Last Modified: Mon, 29 Dec 2025 22:31:18 GMT  
+		Size: 29.8 MB (29776533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae9ff25045243dc27c083564f101c73527fab1e4d6de25faafe1d20c6993d0f`  
-		Last Modified: Mon, 08 Dec 2025 22:38:10 GMT  
-		Size: 19.2 MB (19222767 bytes)  
+	-	`sha256:6c8132994a787dd852aeb12fc93d274ee76418e6badc922497d2965b065f6e7d`  
+		Last Modified: Mon, 29 Dec 2025 23:21:44 GMT  
+		Size: 19.2 MB (19222636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63cff4c278980a41219ced1054076473f352a9ab538703fdb0508673575901de`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 3.3 KB (3323 bytes)  
+	-	`sha256:6f12454da6b93953f77c2a08d9c8ef63604b855bbd13347b3ddc7ff0ec7df67a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:42 GMT  
+		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6979d38c29179b5f4797ac48f3389f2044fb0312d0cd3b7f7fe377d41762cf9c`  
-		Last Modified: Mon, 08 Dec 2025 22:38:08 GMT  
-		Size: 4.9 MB (4866682 bytes)  
+	-	`sha256:925fbbd20e1183e0b4cddd1cf3e9a0cf8e42492a977a8a050a677cddc3e0caaf`  
+		Last Modified: Mon, 29 Dec 2025 23:21:43 GMT  
+		Size: 4.9 MB (4866629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -10295,78 +10295,78 @@ CMD ["irssi"]
 ### `irssi:trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:2c34f0b8bd4789c746b87fcefbeca5053bc49367fbe0106f8c1f2c5df4510d32
+$ docker pull irssi@sha256:cd86910851860dd596083890e30f2022331fb3b04b10f7a63aa238cf74c7b396
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607028 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2aec691ef1c3f8b1f097d426de19c51fc9a39bcd3002cf27303c6ea181155e87`
+-	Image ID: `sha256:16708e5a07b3efd7806c1ae245a0d46b2ce402fba961571392e0c0c17520d1f4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea7448fd69d2025a02fa3773b13695b9ecaa34efd8cc5b223bd340a6a20bb280`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:77a09aac870c7c1cd26f161e512157115820cf8af0d7dac29f59655dcebacc97`  
+		Last Modified: Tue, 30 Dec 2025 03:00:08 GMT  
 		Size: 5.6 MB (5588377 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:15055f679734606495e25ae5c7b68d5ee1ec2609bfbca41b8eccfdc0431ef6dd`  
-		Last Modified: Tue, 09 Dec 2025 00:01:32 GMT  
+	-	`sha256:ae6bfb7c69b24e458298d702d07c1ac1b1d40a900e426f8f11965280bae18665`  
+		Last Modified: Tue, 30 Dec 2025 03:00:09 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:trixie` - linux; arm variant v5
 
 ```console
-$ docker pull irssi@sha256:605f1644cbe09985d1b0a7159e6a3645cacce33a561adb3eb3994e2bb9fe1118
+$ docker pull irssi@sha256:a4d84f499fc0e5eb44aead73692f35a806f0830fa5018b6cf84b1868700b5963
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.9 MB (50943555 bytes)**  
+-	Total Size: **50.9 MB (50944115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38d5500fde47056d160fcf131159d65be22e1cce50911f44d2f5be15fc113c99`
+-	Image ID: `sha256:c9445964d8d8a558738c20de61cd62137fb7578057bd77c1b7f5739ee5bfa485`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:53 GMT
+# Mon, 29 Dec 2025 23:17:39 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:44 GMT
+# Mon, 29 Dec 2025 23:18:30 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:d97bc71d0fa535127863fdab265dfddb07b3cda35b80de4dd2b9b67fe154c856`  
-		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
-		Size: 27.9 MB (27944187 bytes)  
+	-	`sha256:b99a8d8dab982a1a4ea341e66b178b14c0f373c2cd90ac46a67308a4f43c82ae`  
+		Last Modified: Mon, 29 Dec 2025 22:27:09 GMT  
+		Size: 27.9 MB (27944146 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:209b020e9b6936d49088aeb2fe32da563e0dc7240b53e7a4f55a0064bcc57dbb`  
-		Last Modified: Mon, 08 Dec 2025 22:35:02 GMT  
-		Size: 18.3 MB (18286366 bytes)  
+	-	`sha256:3d1a051782ec1264daf1fac1ec43db9040842983091da28b50cff5526a386f05`  
+		Last Modified: Mon, 29 Dec 2025 23:18:49 GMT  
+		Size: 18.3 MB (18286953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e546d6b1c1001d996e09271aa06076bbf5076bf4c0f1a64a5a76db18e6351b32`  
-		Last Modified: Mon, 08 Dec 2025 22:34:59 GMT  
-		Size: 3.3 KB (3329 bytes)  
+	-	`sha256:0d9e4f8229159dfa48b293b595cb8424bdbcd96b481759e659647a1c0f291581`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08c1c60a78876ca8d26fa893a37ff13080f097555eea972e3e45e59d912f5e9c`  
-		Last Modified: Mon, 08 Dec 2025 22:35:00 GMT  
-		Size: 4.7 MB (4709641 bytes)  
+	-	`sha256:1552d6662afda0c53628250b85cff9fbbd309d1b53bf32e84ed85b3389f1f94d`  
+		Last Modified: Mon, 29 Dec 2025 23:18:47 GMT  
+		Size: 4.7 MB (4709657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -10376,78 +10376,78 @@ CMD ["irssi"]
 ### `irssi:trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:42ce2f56fd00643a382954ddf368a7ad26f88a053b4a557aa1112ed9de67aac0
+$ docker pull irssi@sha256:2d8f6118f9cf46e7448d1418e4a916542ef08117a959cf1839012608a741fc65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5604715 bytes)**  
+-	Total Size: **5.6 MB (5604713 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:192e3247c9d1fd1e403f1da43c465327ebe5a123a9caf785ea53b5dd0388c5cb`
+-	Image ID: `sha256:e51f71b2322cd350f3f66a9681d5e6de6bb479c5b9b259e75f772009877d9221`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dbd5f23d6f6d5ab003eddef0af01a8a8b66fac74afe90d0faa97afa2b0a581d2`  
-		Last Modified: Tue, 09 Dec 2025 00:01:40 GMT  
+	-	`sha256:5b702db9bda66f6169dc57ba677ab4cb95e892bb9b54fe5bce9b6e61e50cbfe1`  
+		Last Modified: Tue, 30 Dec 2025 03:00:15 GMT  
 		Size: 5.6 MB (5585926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:401ba355602555e19652809e181e8fc4d172d2140c0c17f0781b909a2bff847e`  
-		Last Modified: Tue, 09 Dec 2025 00:01:41 GMT  
-		Size: 18.8 KB (18789 bytes)  
+	-	`sha256:d6cba35a00912b77b0bf9fa496768eaaf6ff6a70b18d3e3d2636cf4a6c61fe1a`  
+		Last Modified: Tue, 30 Dec 2025 03:00:19 GMT  
+		Size: 18.8 KB (18787 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:trixie` - linux; arm variant v7
 
 ```console
-$ docker pull irssi@sha256:90bf141f8448f931b78a4759623391882ba8d3d0520b3770b063ea80daf29ee7
+$ docker pull irssi@sha256:e4d27a04dfad1a27627b754b0f8fa15afc211115a1ad7cb4620d2efbd2ab98da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.7 MB (48681035 bytes)**  
+-	Total Size: **48.7 MB (48681346 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d9f126abb644aa91708596fe16f433c339727d7b73386dc26994eb1d0119af6`
+-	Image ID: `sha256:7b398645628764f0cb33c50578a24916dc86f138cc1abf401eda13d41ed3460f`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:36:55 GMT
+# Mon, 29 Dec 2025 23:17:36 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 USER user
-# Mon, 08 Dec 2025 22:37:36 GMT
+# Mon, 29 Dec 2025 23:18:18 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:cfc411ffeb71f696e2a89e33e91be9b70084d6c3383474344babe3a4a21eb843`  
-		Last Modified: Mon, 08 Dec 2025 22:16:57 GMT  
-		Size: 26.2 MB (26210013 bytes)  
+	-	`sha256:6d3e0fea3cb8eb29b9c06956265b47cd00f7ebfb48e35e818f686d52c21353f5`  
+		Last Modified: Mon, 29 Dec 2025 22:28:07 GMT  
+		Size: 26.2 MB (26210001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eea7a0e9121517502a0452fd53a68bbbf3e120ea0391f4616c22058f3ffe83a6`  
-		Last Modified: Mon, 08 Dec 2025 22:37:54 GMT  
-		Size: 17.9 MB (17909125 bytes)  
+	-	`sha256:03b8fa94779dfe46b70274f574fedd82507082810021ae4f845646cb1dce9362`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 17.9 MB (17909648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93a98b78793ec14ceabf793c4778fa9c59358545e4604a1c0b15bb6bd21bd755`  
-		Last Modified: Mon, 08 Dec 2025 22:37:52 GMT  
+	-	`sha256:95aeb493072858b7b55ea0ebdd3ab5c100a98dbc56143618e1ec91156a8a5833`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
 		Size: 3.3 KB (3327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c7e9fbcbad6965518fd24946faf5855bd7c2b9dbb7a8632a912292a76f391b`  
-		Last Modified: Mon, 08 Dec 2025 22:37:53 GMT  
-		Size: 4.6 MB (4558538 bytes)  
+	-	`sha256:acb5cf1d39feaaf92989d33d12c59d42ec27bd26bc489a00abeff7da96bdbf5c`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 4.6 MB (4558338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -10457,78 +10457,78 @@ CMD ["irssi"]
 ### `irssi:trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:529cccf10215bb411a271b196fe666e44db36c0c88bc62b754ae778cc278ef86
+$ docker pull irssi@sha256:8857d82cea6c43130b7e983548a0f403c240ed8d0d9a2428c6838149368a2049
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5070cb3b050937bc197ae388f5989122c8e4fc9558708e5cd01f7eb53047ec85`
+-	Image ID: `sha256:2d9e20f4d32838e312ef529d9c9eff7c7ebcff2f81a6bfc695737870da5eb99e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:82a650d25d6be9c0ec73d583a9bfbb7e4cdf26f7eac9d4a2c0b9165043d1c3b1`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8a34f8c3b342999b7dba68b6dcda05236500a8d04b3671140397f07e9c8122fc`  
+		Last Modified: Tue, 30 Dec 2025 03:00:29 GMT  
 		Size: 5.6 MB (5588948 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b12cb7447938f917d5345ecf33832b856ff04c97a5f9c2213b71e0a7d45d3fcc`  
-		Last Modified: Tue, 09 Dec 2025 00:01:47 GMT  
+	-	`sha256:8f708606255cb3dffb5272991afb1cb7af441b9dcfa7ff57b1d68e9413a9eb11`  
+		Last Modified: Tue, 30 Dec 2025 03:00:30 GMT  
 		Size: 18.8 KB (18789 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull irssi@sha256:4ad94477cda90ae8d3d4d47ed0c1a58d162ca780cbc21e1e356ae833c2c9af51
+$ docker pull irssi@sha256:cff45b7bfe478eb28dd1dd96ca7dd16e1a66294da7316f8da168a482869b22fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.0 MB (53972792 bytes)**  
+-	Total Size: **54.0 MB (53972824 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6123fcf7ac4efb210283b7fab07ab5e1f866bcfa7ad8dbd2186bd66c2f88d4b2`
+-	Image ID: `sha256:2ed438e0e96f43b9763c1167dae5ff12991dd1e14f33b7e4ba71b850d01c52bf`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:35:55 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:35:56 GMT
+# Mon, 29 Dec 2025 23:20:37 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:36:32 GMT
+# Mon, 29 Dec 2025 23:21:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:f626fba1463b32b20f78d29b52dcf15be927dbb5372a9ba6a5f97aad47ae220b`  
-		Last Modified: Mon, 08 Dec 2025 22:17:19 GMT  
-		Size: 30.1 MB (30138628 bytes)  
+	-	`sha256:2ae15a20160209c6fd6cff4886e4ba2e666fa5bedd7b54a2c0097ea6646f0273`  
+		Last Modified: Mon, 29 Dec 2025 22:31:09 GMT  
+		Size: 30.1 MB (30138636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:271cd4b9332a86de31690e94a837946ec81b376cf3b99b9ec078b9997ebfc4e7`  
-		Last Modified: Mon, 08 Dec 2025 22:36:51 GMT  
-		Size: 19.0 MB (19049077 bytes)  
+	-	`sha256:c4c7fd602675c6c7c6b8aa5aafb615956311e1bfb1ff7744ca326d6f7de8126b`  
+		Last Modified: Mon, 29 Dec 2025 23:21:34 GMT  
+		Size: 19.0 MB (19049094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2f51515c1d0d0bdda82745487e18f18f85d1a6999f3c82ff517039ed8c01ae9`  
-		Last Modified: Mon, 08 Dec 2025 22:36:49 GMT  
-		Size: 3.3 KB (3331 bytes)  
+	-	`sha256:3a7eecea8feac170ae95f33c43646357cd8719c96bc0c0026e63058598164aac`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae317866ab39c091f9ece44d604dc3317877b2ed386b1ff38dcf25d62707f6e`  
-		Last Modified: Mon, 08 Dec 2025 22:36:50 GMT  
-		Size: 4.8 MB (4781724 bytes)  
+	-	`sha256:7df4a1617ae3607d3a5718f47073286a88f69a48ce2fdf4d26e708ec9399fc6a`  
+		Last Modified: Mon, 29 Dec 2025 23:21:32 GMT  
+		Size: 4.8 MB (4781733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -10538,78 +10538,78 @@ CMD ["irssi"]
 ### `irssi:trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:8a9848973ad593c402ad00791b8debf829808115d9215d351a4d092da9efdfb6
+$ docker pull irssi@sha256:a04bde14fad32b933fcf4da9cc868a2b9a592c210856a8cfe296e9e9304cd6ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5613694 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21e8e14ea45e56f1a280745e4215d6b09bf3bbe98d77d25ed701e1833b69db94`
+-	Image ID: `sha256:a0161e3ac2f81fa90b7210540b966f0c473cdb48b16c673f1f2092b9c8839685`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:833298ea4b4e32cd4be350f01f29cc972db0aa5f1e1b52c229e9611870f9d81d`  
-		Last Modified: Tue, 09 Dec 2025 00:01:51 GMT  
+	-	`sha256:b5269aeec51509984fc080b3c9dbc5d15ef72537f499516b5ef18329212c517f`  
+		Last Modified: Tue, 30 Dec 2025 03:00:36 GMT  
 		Size: 5.6 MB (5594861 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:12ec53196ee839e1d4fc9f760637572995c6cf92c75585cdf8a0ddebd72fd86a`  
-		Last Modified: Tue, 09 Dec 2025 00:01:52 GMT  
+	-	`sha256:42f8353da907cf9a9b270dffb34df36a9c51973e97d9bfd3d4e459781b206800`  
+		Last Modified: Tue, 30 Dec 2025 03:00:37 GMT  
 		Size: 18.8 KB (18833 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:trixie` - linux; 386
 
 ```console
-$ docker pull irssi@sha256:e3cb55074f79f7accb3186e087c8bcfbe5fb81bafed6b3843bbb182b831c2271
+$ docker pull irssi@sha256:d08d4d3128e25228bf2d6faef99a6113ac70a47a74b0a2ba6626b6cabb140274
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.9 MB (54905243 bytes)**  
+-	Total Size: **54.9 MB (54905392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ede6324a485fc1c56152548ccc95aa525d3e6298b82206a635b9e5bb2c43a274`
+-	Image ID: `sha256:979e1cbb8c89942ce58d9bb6021f47e002333c12e43d67332ce0629d3d106f49`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:34:50 GMT
+# Mon, 29 Dec 2025 23:15:34 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 USER user
-# Mon, 08 Dec 2025 22:35:33 GMT
+# Mon, 29 Dec 2025 23:16:15 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:2648c88d9207cd6090be83f4a97e2aa4080930987d8fb62195cc994194160e67`  
-		Last Modified: Mon, 08 Dec 2025 22:17:03 GMT  
-		Size: 31.3 MB (31293070 bytes)  
+	-	`sha256:796ffff142a3158a5c48a8d81b8b722c5cf4889d5e22da70bdd13a6459d6e40b`  
+		Last Modified: Mon, 29 Dec 2025 22:27:31 GMT  
+		Size: 31.3 MB (31293100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92779a84b492a0e3f9b30abe3ba2c3f3c75f5f8bac0be5b3ec6f1d2151769a81`  
-		Last Modified: Mon, 08 Dec 2025 22:35:51 GMT  
-		Size: 18.7 MB (18740473 bytes)  
+	-	`sha256:2efbd3bd6e2771e7bdcc6ade44379f7e6ed50abf8d1a9c274cb9f6f58c572fbd`  
+		Last Modified: Mon, 29 Dec 2025 23:16:34 GMT  
+		Size: 18.7 MB (18740665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e9e00516c012835613d2d6c24e48eca1db4092e2ae02a5557ef978565a9087b`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 3.3 KB (3326 bytes)  
+	-	`sha256:8048bbcd036579dd5df09fcbfdbbd027f024db2c93517455be9e832043b0fb0d`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:380f851f46dcf6024e273c5690f4de14d4837fe4c9e173048edc3844675aefad`  
-		Last Modified: Mon, 08 Dec 2025 22:35:49 GMT  
-		Size: 4.9 MB (4868342 bytes)  
+	-	`sha256:ce14d1cfe28c0f1ca363e3679575bc7ff046c3a7aecc7fa84768f91a49e33cb7`  
+		Last Modified: Mon, 29 Dec 2025 23:16:33 GMT  
+		Size: 4.9 MB (4868266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -10619,24 +10619,24 @@ CMD ["irssi"]
 ### `irssi:trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:0e026c9c8b43f1e4b3f0cf84c29441b70414ab67d248c56ebf7607efd867af5f
+$ docker pull irssi@sha256:1d3a4326ce72049f65657775db7ab8b00bc00803f2e6badc5b1e6b6c988bc45a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5603095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c110c8c5132d6b986eca5007cb21a2921c655197298f96c1e6e3fe1d975295ce`
+-	Image ID: `sha256:623d6e43eaa9131f25e3eb59f90fc4982efb67567b9ba4a3433405a7b6f64b94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:290278e5fa9964615268f167ae0917568dd48529eb40cb0fe4b7b6b4fd6db490`  
-		Last Modified: Tue, 09 Dec 2025 00:01:57 GMT  
+	-	`sha256:dfb01705cfaf68137a2b4104a75940c5dab71ec5b22996969cf4a8fbcaa9ca90`  
+		Last Modified: Tue, 30 Dec 2025 03:00:43 GMT  
 		Size: 5.6 MB (5584500 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3b86870229139d3e4a5b2f5fb461a45c930f312a775c5a1c86c120a2616479b3`  
-		Last Modified: Tue, 09 Dec 2025 00:01:58 GMT  
+	-	`sha256:a4aa76b450b3cb9ab30ed105ec81ac1ebb63f0368134235dcb34c03b0d9d40ca`  
+		Last Modified: Tue, 30 Dec 2025 03:00:44 GMT  
 		Size: 18.6 KB (18595 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10805,54 +10805,54 @@ $ docker pull irssi@sha256:1b92fd8833f5dd070657c1ec551487f7908d41f8c197a02d2c94c
 ### `irssi:trixie` - linux; s390x
 
 ```console
-$ docker pull irssi@sha256:79ceeb6e5f00cadefc5098892f4fdd847c8a6c7147214049af36f2988eb63701
+$ docker pull irssi@sha256:815d78d426c36b6000938223e17371438343388b97029ddc801db1a6e4449343
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.5 MB (54503098 bytes)**  
+-	Total Size: **54.5 MB (54503079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f4447f6a16ef4660d5cc882de4451987df832e0221f3c9198582f5041d9e484`
+-	Image ID: `sha256:32cd1197e33bbff9caa03127a87859248728b96b50492b7e9d451f571debed6a`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Mon, 29 Dec 2025 23:17:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV HOME=/home/user
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Dec 2025 22:33:35 GMT
+# Mon, 29 Dec 2025 23:17:38 GMT
 ENV IRSSI_VERSION=1.4.5
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 WORKDIR /home/user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 USER user
-# Mon, 08 Dec 2025 22:34:10 GMT
+# Mon, 29 Dec 2025 23:18:12 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:deacec5e6af82b258c59e95e3e86abeef36fad06b1d9ff2de33e88544ffb79ff`  
-		Last Modified: Mon, 08 Dec 2025 22:20:52 GMT  
-		Size: 29.8 MB (29834400 bytes)  
+	-	`sha256:c9a83915f7d4b9d7fbe5dceeedd49718d2702fd67d78b63a38ec344f3fbfcc41`  
+		Last Modified: Mon, 29 Dec 2025 22:27:07 GMT  
+		Size: 29.8 MB (29834418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12a68582eda8cf9c795e8fac7bd4a06d7b4cf05bcce0b996577a486d0e34b56c`  
-		Last Modified: Mon, 08 Dec 2025 22:34:33 GMT  
-		Size: 19.8 MB (19759448 bytes)  
+	-	`sha256:18260ff97d5c44522311e7b20eb667dd8268e5f437656b11d83126dd6e6e0464`  
+		Last Modified: Mon, 29 Dec 2025 23:18:36 GMT  
+		Size: 19.8 MB (19759407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cea7a5c770aac1d19a49e32bddbb9b474dd2746e7821d20791e1b80abfa3b5a3`  
-		Last Modified: Mon, 08 Dec 2025 22:34:31 GMT  
-		Size: 3.3 KB (3328 bytes)  
+	-	`sha256:3c75b4b06491d9757a2c0ddc7e1161f43d94af12a3b1246ed862a050c9b61c09`  
+		Last Modified: Mon, 29 Dec 2025 23:18:34 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6fe49ac5d532203fa75223786c8c8ef7f78fbdeff8227abdab3b6e08125de53`  
-		Last Modified: Mon, 08 Dec 2025 22:34:32 GMT  
-		Size: 4.9 MB (4905890 bytes)  
+	-	`sha256:daa149046211a2130b3719fc3f26b72463b26a58fa4a5dc5d84f9523335848ca`  
+		Last Modified: Mon, 29 Dec 2025 23:18:35 GMT  
+		Size: 4.9 MB (4905893 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -10862,23 +10862,23 @@ CMD ["irssi"]
 ### `irssi:trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:afc0d5563715a205bdbf09adfb0dcb772d44ec5f9f64be619112ea71bef71370
+$ docker pull irssi@sha256:2b99e2235e3fa873ef89b93a9147c660d901ec7f61f739ea24d96830690fb060
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5607933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb41a3e51a7b6c277c4898dede97241725067c20506fcd3897eb9a2fa33ef8fc`
+-	Image ID: `sha256:0fc57da1edc6729fa20bb402e73e2ca3b985338ecf24f6bedb15c082c9438cdd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9292a924a5f71b0700ea789b79e1a8bf1256af5aae51b422283563c1fa34bf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:15 GMT  
+	-	`sha256:ee4a7f0d2dd6d4c3875c55bf6786b9b62f3e168dfa34657418298306f4cb7e03`  
+		Last Modified: Tue, 30 Dec 2025 03:00:59 GMT  
 		Size: 5.6 MB (5589282 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bff40bc8ca1364bffe8c60be1df3e2bffedbd27bb8dbcf6db778c754320ccf6e`  
-		Last Modified: Tue, 09 Dec 2025 00:02:16 GMT  
+	-	`sha256:2f9a8401231d6692720f44f08b6392f880547c382962b1052da941cec6dbc11c`  
+		Last Modified: Tue, 30 Dec 2025 03:01:00 GMT  
 		Size: 18.7 KB (18651 bytes)  
 		MIME: application/vnd.in-toto+json
