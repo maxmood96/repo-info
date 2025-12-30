@@ -1,7 +1,7 @@
 ## `debian:forky-backports`
 
 ```console
-$ docker pull debian@sha256:1f337c5be14d9ce1e7665bda96b1a45bae907e736943aac6db149a537ed130ce
+$ docker pull debian@sha256:e5c63df3127bcbefaedebd8be697dc47dba21d594540017aa273ba03a47ab776
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24,213 +24,213 @@ $ docker pull debian@sha256:1f337c5be14d9ce1e7665bda96b1a45bae907e736943aac6db14
 ### `debian:forky-backports` - linux; amd64
 
 ```console
-$ docker pull debian@sha256:f111407cd608e9795fcad581eb9b3451a6396530a4a646f3cfbff613aa13fc5d
+$ docker pull debian@sha256:d81e4787785bd3ee22127a4e46dfede9374b657d73bfc94244aab7f77beb2257
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.5 MB (48512733 bytes)**  
+-	Total Size: **48.8 MB (48830281 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1df13c181547c5003468cf977907b6450a4f9787d0cd7661821befd400b51bd8`
+-	Image ID: `sha256:73773f097b92a0ffb2a864601742e844c2c21f086c6a2953b0913ca0ce7d8abf`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'forky' '@1765152000'
-# Mon, 08 Dec 2025 22:30:37 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'forky' '@1766966400'
+# Mon, 29 Dec 2025 23:16:19 GMT
 RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:c7cbbee3050ecd826301596e459f3fa12ca32f5ba2b65d33b56172341d2cd3ff`  
-		Last Modified: Mon, 08 Dec 2025 22:17:14 GMT  
-		Size: 48.5 MB (48512511 bytes)  
+	-	`sha256:e1869079ab5cc3b00301445717c112f3ddb9424b5d7b2a41713bc70d9482ee85`  
+		Last Modified: Mon, 29 Dec 2025 22:28:05 GMT  
+		Size: 48.8 MB (48830058 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1bb65f218c184abb0b8712301d5cca83ed171ddba4fd91fd25bacb3b15505600`  
-		Last Modified: Mon, 08 Dec 2025 22:30:48 GMT  
-		Size: 222.0 B  
+	-	`sha256:daddb154b4ed2d28b19d2fd4ff4cbee25d5f74b901cf27e41b22267ca7eca6ae`  
+		Last Modified: Mon, 29 Dec 2025 23:16:32 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:forky-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:b79d043e94008901427c3c0c2765064ffd2ccb6cad080f0e99a81a1256e5b062
+$ docker pull debian@sha256:5166a016f5f21d137ab1db7165fe75153c4fee7763aced56a8232c0e73e3a70a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3139379 bytes)**  
+-	Total Size: **3.1 MB (3145856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03069414f320443538175e68c4a25246d3539bde8ed0e88faf1317a5e3ed83b2`
+-	Image ID: `sha256:bea985a9c25cf998e2177b1ca74dbf82f09ab189e27fa46b308f7b4a7a1f89f2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fa65f7a539bdf0b53d196dfddd385fa77340a00aef25a77ae46530a08bc36e6b`  
-		Last Modified: Tue, 09 Dec 2025 01:27:08 GMT  
-		Size: 3.1 MB (3133601 bytes)  
+	-	`sha256:9c7ae08dc9175431c21a582904d07afdb6316eee72cc10023432eb6de01ccac1`  
+		Last Modified: Tue, 30 Dec 2025 04:25:40 GMT  
+		Size: 3.1 MB (3140078 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b1beece1bec4648db029b0f74decca932e5e335aed65d49c532466d4b508949b`  
-		Last Modified: Tue, 09 Dec 2025 01:27:09 GMT  
+	-	`sha256:731bdd016d56b05edb851caf5a1111f090b6f1a132c26af62046d159fe502fcd`  
+		Last Modified: Tue, 30 Dec 2025 04:25:41 GMT  
 		Size: 5.8 KB (5778 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:forky-backports` - linux; arm variant v7
 
 ```console
-$ docker pull debian@sha256:c79cc0234ceb638e43602f0c4005ae91c162adff121ca3db37316b99ecb96fbd
+$ docker pull debian@sha256:d305a20313f3220a2ac7a2befa84c916e340cbb229dc70d30ed69339e6d7a74b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.0 MB (45048265 bytes)**  
+-	Total Size: **45.1 MB (45130029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8a8f856d107db810b4e90fa290570ea8e865ed12ead00443f54db2275c1281f`
+-	Image ID: `sha256:87bdd44ae87dfd0db86ed95f01dbf7cc7b6f5dd8b878e4040a14af625c04e7da`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'forky' '@1765152000'
-# Mon, 08 Dec 2025 22:31:09 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'forky' '@1766966400'
+# Mon, 29 Dec 2025 23:15:01 GMT
 RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:97c0e703f22fcbdd1717c90c9c81bde96e65c1c3051ad73d18fbc908c8b17e4d`  
-		Last Modified: Mon, 08 Dec 2025 22:15:47 GMT  
-		Size: 45.0 MB (45048041 bytes)  
+	-	`sha256:241c7878eb5bbc21e3d5116dd5ea31832b2d3bc7489b0d564310ab3bd542adee`  
+		Last Modified: Mon, 29 Dec 2025 22:25:59 GMT  
+		Size: 45.1 MB (45129806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec00adbfe798f60356ffe43c1b6a5b10c3f71ca87df9b6cf9eee292a2d65604e`  
-		Last Modified: Mon, 08 Dec 2025 22:31:21 GMT  
-		Size: 224.0 B  
+	-	`sha256:7d623ffaf33cd4b362eac4e0b25c23044e706ce83b024e94bab12c40de68d7d7`  
+		Last Modified: Mon, 29 Dec 2025 23:15:13 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:forky-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:92db31551e0cc7113b622036e723cd03eb08e025e9d6e19c4c38e286e467371b
+$ docker pull debian@sha256:02be48ab4ab979f2201e6a52742bb2dce077f4c7a815763a16f1540ad251f47b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3140803 bytes)**  
+-	Total Size: **3.1 MB (3147280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a3d1d56f160d2ae001d4357ae12486943190ceeae18aca10ecacec4022846d4`
+-	Image ID: `sha256:322dd4cc9958566d81d6ebc26ea6e3cf9152729ebcbc65b31f320b70d7c1c0cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:95932806c552175279096e5d44d6ac01484684814e9c532e987bf27cd3dcf517`  
-		Last Modified: Tue, 09 Dec 2025 01:27:13 GMT  
-		Size: 3.1 MB (3134969 bytes)  
+	-	`sha256:42b3b9fa6f1d4fdeb7607d0aa3f5594ab43658caab32b38146c7f720886b65dd`  
+		Last Modified: Tue, 30 Dec 2025 04:25:44 GMT  
+		Size: 3.1 MB (3141446 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:259a74646b46b8aab3a83db1d8a39d2959268b32e046caeaf83464b1a38617ab`  
-		Last Modified: Tue, 09 Dec 2025 01:27:14 GMT  
+	-	`sha256:d2d7455a0f0ff25b80e06ff9e38a703e6f095b416717f40d1dcbc184a7f922d6`  
+		Last Modified: Tue, 30 Dec 2025 04:25:45 GMT  
 		Size: 5.8 KB (5834 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:forky-backports` - linux; arm64 variant v8
 
 ```console
-$ docker pull debian@sha256:a66053fdc072986c2efe37f3ca02196d65e176c8d87bfec586a0ee6eaa137414
+$ docker pull debian@sha256:99f1bbc56cf0cf0346ef4a7331606fdeb1b48c5791cc14c7dc051cbe7402a30a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.6 MB (48599559 bytes)**  
+-	Total Size: **48.8 MB (48832215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b998a13423259adf717cf035a8d220e4ed364ca01a7686954a0ca1275573a10b`
+-	Image ID: `sha256:a27f841c30348e0e6b04d9f5994a580d521b27f8aaf55e66e183359aff21d799`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'forky' '@1765152000'
-# Mon, 08 Dec 2025 22:31:12 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'forky' '@1766966400'
+# Mon, 29 Dec 2025 23:14:29 GMT
 RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:60db063fe1f6101cd454be84b0b672c499625ca27e05c40ddaf285db3af29997`  
-		Last Modified: Mon, 08 Dec 2025 22:17:22 GMT  
-		Size: 48.6 MB (48599337 bytes)  
+	-	`sha256:d6ed83950a3f675536ad8634cde3cf4c241d5faea11ae3192ff5909f826256f2`  
+		Last Modified: Mon, 29 Dec 2025 22:27:42 GMT  
+		Size: 48.8 MB (48831993 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b566c37421bce7fb49979c0ef77729754e9bd9b0aa6ee05cd2ce33d81c51273`  
-		Last Modified: Mon, 08 Dec 2025 22:31:31 GMT  
+	-	`sha256:656ae667a94662e9bb9709a7f2b301d643f7b9e1d27ddcc4f4820e2fc4fca13d`  
+		Last Modified: Mon, 29 Dec 2025 23:14:47 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:forky-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:9548de39bee0189f025515200c87f5c4f494982c3a5e5b6a087debc430659d1a
+$ docker pull debian@sha256:7175d5d5baca4390aa1d6bd55c07bdf8875eda1e4c28cccfe100748934bce418
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3140288 bytes)**  
+-	Total Size: **3.1 MB (3146765 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21d4ef83a12ee83a0a4d6daa405b0daf070cf5321230b21a08db68982a5bbec9`
+-	Image ID: `sha256:3759bffc4e59640a7f59a12b5e4f04a22f3a8ebf5d1dc6262dbf6639c881620c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca6fbb447f0cbce47b350724c1a33800d8d92b3dcd9a529643ebb6b653ba30c0`  
-		Last Modified: Tue, 09 Dec 2025 01:27:18 GMT  
-		Size: 3.1 MB (3134442 bytes)  
+	-	`sha256:5b7d6199647a82e29988cad63d53d867d81b28b673de3e94939e2bdc03a1f0d9`  
+		Last Modified: Tue, 30 Dec 2025 04:25:49 GMT  
+		Size: 3.1 MB (3140919 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4216638d69c8a93ef7db722066e67d14919f5599d85403ab1a3bd75587f90096`  
-		Last Modified: Tue, 09 Dec 2025 01:27:19 GMT  
+	-	`sha256:0529993c930cb0286281d8bc3532934892f6b7ec5e31ce538ea96de803e9aa2c`  
+		Last Modified: Tue, 30 Dec 2025 04:25:49 GMT  
 		Size: 5.8 KB (5846 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:forky-backports` - linux; 386
 
 ```console
-$ docker pull debian@sha256:fc9aa8aabbe7b4b6651742d5c116b2bc163de4fc865c8712cfb811656aae6ede
+$ docker pull debian@sha256:689c734123a7204a97359e0363744da68cd8042cc0f903d040ed6dd7b54a99a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49874802 bytes)**  
+-	Total Size: **50.0 MB (49956058 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23bef16423a110548632da35d03e4a02823f554cb54576ecaeb7c471bb670803`
+-	Image ID: `sha256:c134d5f75180caacb14822c66cbeaea2bffc8559259bad44d0a7a54f4829af99`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'forky' '@1765152000'
-# Mon, 08 Dec 2025 22:29:17 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'forky' '@1766966400'
+# Mon, 29 Dec 2025 23:14:44 GMT
 RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:a5d3e60f8c1eac1ccb5aac1ab5735dd586fe448287d7c7d1d7f59a687bd9b9b1`  
-		Last Modified: Mon, 08 Dec 2025 22:16:59 GMT  
-		Size: 49.9 MB (49874580 bytes)  
+	-	`sha256:a557815b7e39210fb0b4048ae58b1ffddbc8cf0f656a5974b6c3b24f7bdafed8`  
+		Last Modified: Mon, 29 Dec 2025 22:25:28 GMT  
+		Size: 50.0 MB (49955836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:914896556992e5e4c6935931b781a7f99371d616eb86d6405b088dbb3629be1c`  
-		Last Modified: Mon, 08 Dec 2025 22:29:29 GMT  
+	-	`sha256:24961865928da32fe7ba75ba750980d8590ff0dc4b6386d14c0f4ba90bb2d249`  
+		Last Modified: Mon, 29 Dec 2025 23:14:57 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:forky-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:a2571b3b8de0cb32ecc7b01accd493092510ce3f6bb91f8aa40d5c942f6ac6c3
+$ docker pull debian@sha256:734ac2bbf49fdbe09928b73d06a93d672fe611aa33714c1040e78cb2cd98a984
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3136566 bytes)**  
+-	Total Size: **3.1 MB (3143040 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14a470028d3e9013ae2f1e30eb581e5d937c5d3f283b601a7a6f3050f730afd9`
+-	Image ID: `sha256:5c8a5a9d962f56034bf51bdf12d84dc81370efa9cb4f9ef653aa10208d763381`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:396e857bc45c34cdcc35934db89b33cc7a262358146ba79151e171efd78b87b7`  
-		Last Modified: Tue, 09 Dec 2025 01:27:24 GMT  
-		Size: 3.1 MB (3130805 bytes)  
+	-	`sha256:84fec8f76f2443dbc44488feec940f4604cf8972ad5212bb7c6e85a2cecf0d5d`  
+		Last Modified: Tue, 30 Dec 2025 04:25:53 GMT  
+		Size: 3.1 MB (3137282 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cd1a3fc627d58d717ec66c97cd32a506e7e0a248376254f93dd80105096945dd`  
-		Last Modified: Tue, 09 Dec 2025 01:27:25 GMT  
-		Size: 5.8 KB (5761 bytes)  
+	-	`sha256:ff1ef11f62235811a9e613771c9fe23c2c7ecbb307c3729578ca4e0cd9a1f51b`  
+		Last Modified: Tue, 30 Dec 2025 04:25:54 GMT  
+		Size: 5.8 KB (5758 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:forky-backports` - linux; ppc64le
@@ -289,105 +289,105 @@ $ docker pull debian@sha256:a70ace3bca11cec69d083121c427d4f38133f765a16057065432
 ### `debian:forky-backports` - linux; riscv64
 
 ```console
-$ docker pull debian@sha256:38d58bc0eaed5e23c8719078b57105fd66dd1fb823edbe036160d7b2e0b245c0
+$ docker pull debian@sha256:90cca7ea1266ba42e10a8daaf6839a327edbbc693a6de2a7ccca5fcfb5237645
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.8 MB (46840579 bytes)**  
+-	Total Size: **46.9 MB (46883720 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b660d53c1cc19e41939e3d9394dae5ea00d8b29dc531d5e62b3fade6ac87dce8`
+-	Image ID: `sha256:318efba530c229b06f3cee188ddfea975273c624ea17069bcdc5c0fe9c16c3bd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'forky' '@1765152000'
-# Tue, 09 Dec 2025 03:05:18 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'forky' '@1766966400'
+# Tue, 30 Dec 2025 01:17:25 GMT
 RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:002664050c13ca9d4571d9c24b2cd8235785825417d0a59db3d16cec4b277530`  
-		Last Modified: Tue, 09 Dec 2025 01:49:57 GMT  
-		Size: 46.8 MB (46840355 bytes)  
+	-	`sha256:fa050f4b17c5ceeeb0fa97b5cfc16570d13c816d216a6d728fdcd2ef48d6b8d2`  
+		Last Modified: Tue, 30 Dec 2025 00:33:03 GMT  
+		Size: 46.9 MB (46883497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b22bbfb35d4b89a8d6ca8d5f881fda6dbe3bc09a030df2b466f622e3d2ab8d81`  
-		Last Modified: Tue, 09 Dec 2025 03:06:18 GMT  
-		Size: 224.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `debian:forky-backports` - unknown; unknown
-
-```console
-$ docker pull debian@sha256:3febcddfbd3fcea94d5841d03269d8297dc3afefe520ce391baf0018d12110d3
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3130092 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba64ff28733a1003099aba95d41f3e4c0d724b889e546c1724d9c033d99425a7`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:50886036db685fe1c0c48c92fc596d32b714ed96e16873b6d699a2187dad71d9`  
-		Last Modified: Tue, 09 Dec 2025 04:24:47 GMT  
-		Size: 3.1 MB (3124288 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:e481ce234501d529d23f07c9ceeef6dbe079149a1b8ef8f9501300f273c49cb7`  
-		Last Modified: Tue, 09 Dec 2025 04:24:47 GMT  
-		Size: 5.8 KB (5804 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `debian:forky-backports` - linux; s390x
-
-```console
-$ docker pull debian@sha256:d301428550d5bd3d28170edc3c7769812bc5f9a58d0b35a690662819991e5a2e
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.3 MB (48320060 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:912e563ba4ea45c3b5b4f5c6276fe9e758072ec8c22519ac352488af059e0a3a`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'forky' '@1765152000'
-# Mon, 08 Dec 2025 22:29:01 GMT
-RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
-```
-
--	Layers:
-	-	`sha256:88e5ed2f2b5ebe4c22b20536e853aae0963f42dcc4ff80e14e14172e983096b3`  
-		Last Modified: Mon, 08 Dec 2025 22:20:13 GMT  
-		Size: 48.3 MB (48319837 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7613aa0eef75b3de0ba35d74ec12b879ebc2759f3e47b32a5fd164f7e2eb29cf`  
-		Last Modified: Mon, 08 Dec 2025 22:29:15 GMT  
+	-	`sha256:85dfd9b3301084a828f9307ddda420713a55da37d2a9bc0028d9ef805be0c254`  
+		Last Modified: Tue, 30 Dec 2025 01:18:25 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:forky-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:efa7d72b02c3767e6cc4d76a37b829c5eb63cf3bceaaea8fa83da86562c5e0ad
+$ docker pull debian@sha256:8b57e0e14206641fdc5dc4826bd042d23acfcf61d5c6270dc65a786f453ab9bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3140828 bytes)**  
+-	Total Size: **3.1 MB (3137380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68492e8fd32e7f2f928af214573b4c2ccd054fd3afbf0369b1356bcf1f73152b`
+-	Image ID: `sha256:fd52be131ce849b14fdbc256c1633a4d1f6aa4bbf9449d06af73572f63f77ae2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3ca12b0f65111f2f4952f9685ab033f997b7bce704ce771b4715e229f37548c9`  
-		Last Modified: Tue, 09 Dec 2025 01:27:38 GMT  
-		Size: 3.1 MB (3135050 bytes)  
+	-	`sha256:581e70a5a1abcdd448cfbdfb44f1b9cd986f43b586a6ef31bb4b51eeedd99cd2`  
+		Last Modified: Tue, 30 Dec 2025 01:18:19 GMT  
+		Size: 3.1 MB (3131576 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:16eb9e398b7aa0d3937cfc439851841abe33fd9249ea8aa4a2ab33466ba2fbe6`  
-		Last Modified: Tue, 09 Dec 2025 01:27:39 GMT  
+	-	`sha256:54e50ee4fd08e606aebaa92b673169ad0b0b833164574aa699a86c002a1af952`  
+		Last Modified: Tue, 30 Dec 2025 01:18:18 GMT  
+		Size: 5.8 KB (5804 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `debian:forky-backports` - linux; s390x
+
+```console
+$ docker pull debian@sha256:4e47dfde17e3bd99d9c850878612d0256358790c3f2dddc23bc3feb866bdaa43
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **48.4 MB (48397777 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b945b8fbbacfb4c3d1d25e96cb7ab6da2b95bff4aaa8b922172ac6e86baaf13d`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'forky' '@1766966400'
+# Tue, 30 Dec 2025 03:22:23 GMT
+RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
+```
+
+-	Layers:
+	-	`sha256:4ed754f864448d0e594994dc11148ccb02da6ea309851c997288e88ce4fa4e08`  
+		Last Modified: Tue, 30 Dec 2025 02:08:24 GMT  
+		Size: 48.4 MB (48397553 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aa6a0883c59aef5840e9623de88f15f8aa68386c1b5fffd402be146e00dbbc62`  
+		Last Modified: Tue, 30 Dec 2025 03:22:40 GMT  
+		Size: 224.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:forky-backports` - unknown; unknown
+
+```console
+$ docker pull debian@sha256:607cce8699f8944d0d5b9026dd08e635ad8400a2633e9a34254da62913f8123d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.1 MB (3147305 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8e07c6aebb852ddd5d391b41d403d51310b21f8f4bdf08aa2e88673966185c72`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:3b13032992c11acef82713e79c02c3aec88b570ad59a333783042dde94172659`  
+		Last Modified: Tue, 30 Dec 2025 03:22:36 GMT  
+		Size: 3.1 MB (3141527 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:1e588a86a8a993c06103f39e4341cfe1dc329658e44be4fbf6995fc72fb33171`  
+		Last Modified: Tue, 30 Dec 2025 03:22:36 GMT  
 		Size: 5.8 KB (5778 bytes)  
 		MIME: application/vnd.in-toto+json

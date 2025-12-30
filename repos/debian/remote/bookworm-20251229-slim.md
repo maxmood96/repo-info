@@ -1,11 +1,11 @@
 ## `debian:bookworm-20251229-slim`
 
 ```console
-$ docker pull debian@sha256:6ffabea989d4a254ff1a687e0aea3a437dfac3a6d6fdb798925a00885e3ee6fe
+$ docker pull debian@sha256:d5d3f9c23164ea16f31852f95bd5959aad1c5e854332fe00f7b3a20fcc9f635c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 13
+-	Platforms: 15
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v5
@@ -17,6 +17,8 @@ $ docker pull debian@sha256:6ffabea989d4a254ff1a687e0aea3a437dfac3a6d6fdb798925a
 	-	linux; 386
 	-	unknown; unknown
 	-	linux; mips64le
+	-	linux; ppc64le
+	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
@@ -257,6 +259,49 @@ RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1766966400'
 		Last Modified: Mon, 29 Dec 2025 22:38:39 GMT  
 		Size: 28.5 MB (28513809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:bookworm-20251229-slim` - linux; ppc64le
+
+```console
+$ docker pull debian@sha256:7f8da035ef72bf9e7b1e4b59e46288f7bd1469ec67a83413866cbf5a565c5d31
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **32.1 MB (32068844 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ec8b32a1902581b7d4849bea89d7659d064712104e4f0a4b9505c237b0090746`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1766966400'
+```
+
+-	Layers:
+	-	`sha256:b7648f01f6858fc79caf032b4b9ed2f7e43e57f4621dc8cb36e84eb86399065b`  
+		Last Modified: Tue, 30 Dec 2025 01:48:36 GMT  
+		Size: 32.1 MB (32068844 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:bookworm-20251229-slim` - unknown; unknown
+
+```console
+$ docker pull debian@sha256:a148a261146ddb91bc63852e8a8bbded7d072bfe649d5ec3a9ce1fb3537db00f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.4 MB (2364140 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:be535c9e4939890e8a4d91159f56e7406f028109d03fd589e9c4f7cf241ea742`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:eeb10b5121c9cc7a4596369f6da5ff9ae1018b74985e9532ab7a00f13e72e9fb`  
+		Last Modified: Tue, 30 Dec 2025 03:16:59 GMT  
+		Size: 2.4 MB (2364140 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ### `debian:bookworm-20251229-slim` - linux; s390x
 
