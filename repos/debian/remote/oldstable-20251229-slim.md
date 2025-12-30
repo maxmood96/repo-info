@@ -1,11 +1,11 @@
 ## `debian:oldstable-20251229-slim`
 
 ```console
-$ docker pull debian@sha256:d432088cdb2e85d555bacf8d5d4e49f43c215945f02a8c95ce606cd4575716bd
+$ docker pull debian@sha256:464e298e1963babc60be910332bcbf26aef9889d88d69fa11e1cc715b39af712
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 13
+-	Platforms: 15
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v5
@@ -17,6 +17,8 @@ $ docker pull debian@sha256:d432088cdb2e85d555bacf8d5d4e49f43c215945f02a8c95ce60
 	-	linux; 386
 	-	unknown; unknown
 	-	linux; mips64le
+	-	linux; ppc64le
+	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
@@ -257,6 +259,49 @@ RUN # debian.sh --arch 'mips64el' out/ 'oldstable' '@1766966400'
 		Last Modified: Mon, 29 Dec 2025 22:39:40 GMT  
 		Size: 28.5 MB (28513815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:oldstable-20251229-slim` - linux; ppc64le
+
+```console
+$ docker pull debian@sha256:728e399e88572722ffbff8a48e48fab1df7873ccc5363b7ed55ab6f49b872ecd
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **32.1 MB (32068853 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:bcac88110b98247128c6c09bc422ba2bfd6ac8078ef729bd03ebea303bfe9824`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'oldstable' '@1766966400'
+```
+
+-	Layers:
+	-	`sha256:b4fcf21e8d6aee0b32825b6bb6ab122660faa2eaca6419457d7a00a954211547`  
+		Last Modified: Tue, 30 Dec 2025 15:08:45 GMT  
+		Size: 32.1 MB (32068853 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:oldstable-20251229-slim` - unknown; unknown
+
+```console
+$ docker pull debian@sha256:62ce96c8cf771033473b6339d2883ab8ca6fe18dca5a947667b2861d6ba7542f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.4 MB (2364140 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4523559013cd1fe2f4fbca3f0b748b074be551fb027d60ff276fdf48ba63e63b`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:330829adf9317b0dc2c6cee9fad2a375d16f2ea45704820b9bf2561d953ef097`  
+		Last Modified: Tue, 30 Dec 2025 16:24:29 GMT  
+		Size: 2.4 MB (2364140 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ### `debian:oldstable-20251229-slim` - linux; s390x
 
