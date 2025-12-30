@@ -114,7 +114,7 @@
 ## `golang:1`
 
 ```console
-$ docker pull golang@sha256:6396b3d8039d2050ab7a3c5c6e1cbeed8bf6d2ddc0403e1ab39d78749227ca19
+$ docker pull golang@sha256:31c1e53dfc1cc2d269deec9c83f58729fa3c53dc9a576f6426109d1e319e9e9a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -503,63 +503,63 @@ $ docker pull golang@sha256:312235b61145fb1b0c9456ad38521dd04291819de65be02297ed
 ### `golang:1` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:edda83f1c330d90345cca76d1383b5cb5523b5aa9b481b1487be4059b72f0984
+$ docker pull golang@sha256:d6ad7fce8bdce5315f037cd9aff445d4cf7d7325333c8bb003403f0563ae7d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.1 MB (304078218 bytes)**  
+-	Total Size: **304.1 MB (304086918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1461c7db1331b19e172169e7312b31426366775a7635368ee57b90039298379f`
+-	Image ID: `sha256:16fd018bd874346d1dc0a6ebb6af7e779e7a2fcc45e6869943a48eca07e1a658`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 06:20:59 GMT
+# Tue, 30 Dec 2025 10:25:10 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 06:21:00 GMT
+# Tue, 30 Dec 2025 10:25:11 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0da503e4b3d4a624ac596179648e9a31a4f87f7d37fdb8c7bef57190d6ed7d`  
 		Last Modified: Tue, 02 Dec 2025 17:48:12 GMT  
 		Size: 58.1 MB (58134946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6849ad71391fbbeff8d3472dbaf3d868186dc95123c70609a1adde617759e1ac`  
-		Last Modified: Tue, 09 Dec 2025 06:22:22 GMT  
+	-	`sha256:745a29a39a173b26b9ebf23e656da3218659ccc1713088694c73d5b2ce8105de`  
+		Last Modified: Tue, 30 Dec 2025 10:26:04 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -570,24 +570,24 @@ WORKDIR /go
 ### `golang:1` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:0df8c06a7aec2e4ec38f44656ab30d04a0e6cfbc01fd857463e692dc4d078265
+$ docker pull golang@sha256:fa5fd6b8bb561a988859f3d4a9ad6bb55aab28d307b6e2bbc6f9119ef2fa803f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10809257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8fc0ea5c25eb7d1fdf78eca32487758741ba89c533f4f8f1a157b373321c2d5c`
+-	Image ID: `sha256:f018751f15089b3b14839c7faee6f2236566dd323b394b432e1e43044e663795`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fd7ba604dfe0652a6c107f74a16e99c4d148aa256b5bf017d2e5bdc093a7f9a7`  
-		Last Modified: Tue, 09 Dec 2025 09:22:58 GMT  
+	-	`sha256:358257bb853235928e85e14dc05b9e21dba422364df90d265560bafe83dfc589`  
+		Last Modified: Tue, 30 Dec 2025 12:22:50 GMT  
 		Size: 10.8 MB (10780236 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c37d00d6023ca454fe54a45729be587e4a531f26ed20aad02672f290a21c1a86`  
-		Last Modified: Tue, 09 Dec 2025 09:22:59 GMT  
+	-	`sha256:f0a8ca6d0806afbdef720cef4b9a9010482a3c8b4e93d03d717aa0a5a6173cc9`  
+		Last Modified: Tue, 30 Dec 2025 12:22:51 GMT  
 		Size: 29.0 KB (29021 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -685,63 +685,63 @@ $ docker pull golang@sha256:1d42ef18ecb6983d9a5771931346da837b56993c8ac8c4781b0f
 ### `golang:1` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:8e612b7aa289e9adfc9d7ebf758e773772283ad5001a00c01d7e5f0df0081b8f
+$ docker pull golang@sha256:dbacffbf856eb14cf139f2b7c4d30338357928cfa32bc85aeb8bffed531c5f62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.2 MB (280163602 bytes)**  
+-	Total Size: **280.2 MB (280169485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97c6f589aa3269204b9a2cffd8841408da19f832f8e775a295d4adae8b8f5ece`
+-	Image ID: `sha256:222c2c9ffd786468fc343769bfb474611a124ec22468a0bf9af8bc61cbe74541`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:5388570833e7ff5a3b6ddf9a424d471e073c109ee58e115df3ece488cbb89d91`  
+		Last Modified: Tue, 30 Dec 2025 06:13:01 GMT  
+		Size: 75.9 MB (75919348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:036b6dba2ceabbb92eb6c9ebccd3e6b705dacf7cc4426156bbedfd17ad5dc53b`  
 		Last Modified: Tue, 02 Dec 2025 17:49:47 GMT  
 		Size: 59.5 MB (59487220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42a9e961325948363100d5bf4169ac5a2766670063f6aa5d0860b8ed7f03d0b2`  
-		Last Modified: Tue, 09 Dec 2025 03:00:12 GMT  
+	-	`sha256:e51f5064feef79db34c21a2dd41749a2916949d03779f5c73c692a7d8deaadd7`  
+		Last Modified: Tue, 30 Dec 2025 06:12:57 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -752,24 +752,24 @@ WORKDIR /go
 ### `golang:1` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:866476b6405d21e9121a8e6952a69e4d0a8dd9fe6bdb4b68729b5528affe5728
+$ docker pull golang@sha256:9b4e9000d302d567d94b5dcc7fe080e403bcf723deb3d8794d544c32c71bd8c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10623777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:146637d5f45edabe69713bc1007ffb29eafc03744b756bcaf57639a7cf41ccc5`
+-	Image ID: `sha256:20064c1161ab4c5f446c880bd89a41873fbcceb4b33db56e9f4395f80aa77a1e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c28e78f5457bc3963bafaa56ed6586f2a1a334fcf0a4644de495b1f4f6d53161`  
-		Last Modified: Tue, 09 Dec 2025 03:23:53 GMT  
+	-	`sha256:374539d44b6a4a49375d49799d09dc7cc8efbb7a1c873191aa5dc9b9f426be60`  
+		Last Modified: Tue, 30 Dec 2025 09:23:07 GMT  
 		Size: 10.6 MB (10594828 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7742e5e1ba6aa2a09a3ef3a9d0d030403983f72d69e78059b1fb856129652fd6`  
-		Last Modified: Tue, 09 Dec 2025 03:23:54 GMT  
+	-	`sha256:e955d7ff6063882dc3be109953449ae3ee88be05efa1ead5ac81a297692d54b6`  
+		Last Modified: Tue, 30 Dec 2025 09:23:08 GMT  
 		Size: 28.9 KB (28949 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2977,7 +2977,7 @@ $ docker pull golang@sha256:87d9d8f820d61adcac8d8076cd4de81d5a4159680105149d081e
 ## `golang:1-bookworm`
 
 ```console
-$ docker pull golang@sha256:01762abf6fea478a3bdf5778b1453c734f1780baf1b96655d42e0ebf2fa2b73b
+$ docker pull golang@sha256:d63fcbd9b3d3debebfc158906a9af85b027ff7dbaa4500cbf7ddca0354f3579c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3451,64 +3451,64 @@ $ docker pull golang@sha256:e376c4db3bc5f768252f6e6982027b9747b4cf33ebfb9fe53206
 ### `golang:1-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:7be8e0eb4743fe5ddea75f00797a0249e041a91f857803ce90dc0aec4d6a66e6
+$ docker pull golang@sha256:38d94189fc989cb4669cd1e0c9dede128d779c1ae7922a518ca293c22d4cfba2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.4 MB (296400242 bytes)**  
+-	Total Size: **296.4 MB (296399627 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e7843922480b6d0e44719be61547fb74ad98114a908936e1f5af6bc8f2499ec`
+-	Image ID: `sha256:79f43d390026dd361d5f29d6b1281b3446814bcdba8779b58f01b9204a2f7206`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1765152000'
-# Mon, 08 Dec 2025 22:28:27 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1766966400'
+# Tue, 30 Dec 2025 01:30:53 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 23:21:25 GMT
+# Tue, 30 Dec 2025 03:16:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:41:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:12:24 GMT
+# Tue, 30 Dec 2025 08:43:34 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:12:25 GMT
+# Tue, 30 Dec 2025 08:43:35 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:c088128ea77bb5c706bb00930020ea2fba147060275f49c5a7be6b54af5ca7c8`  
-		Last Modified: Mon, 08 Dec 2025 22:17:06 GMT  
-		Size: 52.3 MB (52326977 bytes)  
+	-	`sha256:48e256c4119c0ad256492d6a930e99d2b2d7f8d7920d619aa2de4f616c37076e`  
+		Last Modified: Mon, 29 Dec 2025 22:25:39 GMT  
+		Size: 52.3 MB (52326998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4109a037ac4c69c3ce26e6d14e10c867842083c363485abd63db45502611991`  
-		Last Modified: Mon, 08 Dec 2025 22:28:59 GMT  
-		Size: 25.7 MB (25672209 bytes)  
+	-	`sha256:7517c515ac5fd6799cec288b72512b8ea3fc54d2d37de5af54d06ba0ea2f21bf`  
+		Last Modified: Tue, 30 Dec 2025 01:31:20 GMT  
+		Size: 25.7 MB (25672165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd2b93c70c0b05a907d16ae217d77a407e9aa88f69499ffbfee4375b49ab6c01`  
-		Last Modified: Mon, 08 Dec 2025 23:22:14 GMT  
-		Size: 69.8 MB (69846008 bytes)  
+	-	`sha256:f30ff2cfb691fedcba1692cb13fd0632001d1a876833f4cd2aa52eba87257a8f`  
+		Last Modified: Tue, 30 Dec 2025 03:17:48 GMT  
+		Size: 69.8 MB (69845530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21fcf0300c06237c12ec60c09556f95a6b8c833ba82bfc5828beb977742de538`  
-		Last Modified: Tue, 09 Dec 2025 02:13:29 GMT  
-		Size: 90.4 MB (90419946 bytes)  
+	-	`sha256:4fb3fd09a1e6774e533a42b26351be92003f5bdea475b8caa70173ad58b79d9f`  
+		Last Modified: Tue, 30 Dec 2025 08:43:16 GMT  
+		Size: 90.4 MB (90419830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0da503e4b3d4a624ac596179648e9a31a4f87f7d37fdb8c7bef57190d6ed7d`  
 		Last Modified: Tue, 02 Dec 2025 17:48:12 GMT  
 		Size: 58.1 MB (58134946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88a20f8398526b7e32e5610cbaf93e2d1dc9ef12fe14e2f40d8981cbf322083f`  
-		Last Modified: Tue, 09 Dec 2025 02:13:23 GMT  
-		Size: 124.0 B  
+	-	`sha256:a693eb291fd37cdf058fb56482da756e64e2b2e28c0a084790b4bba6d73d47d9`  
+		Last Modified: Tue, 30 Dec 2025 08:44:18 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -3518,24 +3518,24 @@ WORKDIR /go
 ### `golang:1-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:26f6b8379232a27c484820400b1d8f4aed4033968a8ea21ba0f8221e7d6f19eb
+$ docker pull golang@sha256:13c9b232ce5bc5e21833509fe7098aad08da59ee1e752328777adfa4d917a39f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 MB (10496078 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63c6f5c90c55d3f98b3e3134a332c426d11b6cbfc21b5050509fc7e9bbb85dad`
+-	Image ID: `sha256:dba7ccd450406b2ce1ba2a42121ccaa55389c5da662edd0a2a8d78ed9e635909`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9cce1234d409d1894452021b7e8872ff49b9855f41f46b8e5079291672e81da`  
-		Last Modified: Tue, 09 Dec 2025 03:24:12 GMT  
+	-	`sha256:87df208d0395c75ef8e192108b85abc0404e28a1904f930f603014af5bf76d7c`  
+		Last Modified: Tue, 30 Dec 2025 09:23:07 GMT  
 		Size: 10.5 MB (10468233 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4cc991258b0b5f35f2d2a8630acdfc640f89cdf40bb6fb47d6a78752739fa826`  
-		Last Modified: Tue, 09 Dec 2025 03:24:13 GMT  
+	-	`sha256:5d6ef4d6d953659578b9845d136f3d0126eaade6659d8060bf825b5c778eb0a2`  
+		Last Modified: Tue, 30 Dec 2025 09:23:08 GMT  
 		Size: 27.8 KB (27845 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3980,7 +3980,7 @@ WORKDIR C:\go
 ## `golang:1-trixie`
 
 ```console
-$ docker pull golang@sha256:674418a0e262957bb2f5cb55f2519fb77616379ec6d5722f09ffe8fdfae7660e
+$ docker pull golang@sha256:cab89fb5baa0c86095f2b6e54a2bcf34c324396e35ca06b025e3edfb3f07363d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4367,63 +4367,63 @@ $ docker pull golang@sha256:312235b61145fb1b0c9456ad38521dd04291819de65be02297ed
 ### `golang:1-trixie` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:edda83f1c330d90345cca76d1383b5cb5523b5aa9b481b1487be4059b72f0984
+$ docker pull golang@sha256:d6ad7fce8bdce5315f037cd9aff445d4cf7d7325333c8bb003403f0563ae7d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.1 MB (304078218 bytes)**  
+-	Total Size: **304.1 MB (304086918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1461c7db1331b19e172169e7312b31426366775a7635368ee57b90039298379f`
+-	Image ID: `sha256:16fd018bd874346d1dc0a6ebb6af7e779e7a2fcc45e6869943a48eca07e1a658`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 06:20:59 GMT
+# Tue, 30 Dec 2025 10:25:10 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 06:21:00 GMT
+# Tue, 30 Dec 2025 10:25:11 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0da503e4b3d4a624ac596179648e9a31a4f87f7d37fdb8c7bef57190d6ed7d`  
 		Last Modified: Tue, 02 Dec 2025 17:48:12 GMT  
 		Size: 58.1 MB (58134946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6849ad71391fbbeff8d3472dbaf3d868186dc95123c70609a1adde617759e1ac`  
-		Last Modified: Tue, 09 Dec 2025 06:22:22 GMT  
+	-	`sha256:745a29a39a173b26b9ebf23e656da3218659ccc1713088694c73d5b2ce8105de`  
+		Last Modified: Tue, 30 Dec 2025 10:26:04 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -4434,24 +4434,24 @@ WORKDIR /go
 ### `golang:1-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:0df8c06a7aec2e4ec38f44656ab30d04a0e6cfbc01fd857463e692dc4d078265
+$ docker pull golang@sha256:fa5fd6b8bb561a988859f3d4a9ad6bb55aab28d307b6e2bbc6f9119ef2fa803f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10809257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8fc0ea5c25eb7d1fdf78eca32487758741ba89c533f4f8f1a157b373321c2d5c`
+-	Image ID: `sha256:f018751f15089b3b14839c7faee6f2236566dd323b394b432e1e43044e663795`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fd7ba604dfe0652a6c107f74a16e99c4d148aa256b5bf017d2e5bdc093a7f9a7`  
-		Last Modified: Tue, 09 Dec 2025 09:22:58 GMT  
+	-	`sha256:358257bb853235928e85e14dc05b9e21dba422364df90d265560bafe83dfc589`  
+		Last Modified: Tue, 30 Dec 2025 12:22:50 GMT  
 		Size: 10.8 MB (10780236 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c37d00d6023ca454fe54a45729be587e4a531f26ed20aad02672f290a21c1a86`  
-		Last Modified: Tue, 09 Dec 2025 09:22:59 GMT  
+	-	`sha256:f0a8ca6d0806afbdef720cef4b9a9010482a3c8b4e93d03d717aa0a5a6173cc9`  
+		Last Modified: Tue, 30 Dec 2025 12:22:51 GMT  
 		Size: 29.0 KB (29021 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4549,63 +4549,63 @@ $ docker pull golang@sha256:1d42ef18ecb6983d9a5771931346da837b56993c8ac8c4781b0f
 ### `golang:1-trixie` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:8e612b7aa289e9adfc9d7ebf758e773772283ad5001a00c01d7e5f0df0081b8f
+$ docker pull golang@sha256:dbacffbf856eb14cf139f2b7c4d30338357928cfa32bc85aeb8bffed531c5f62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.2 MB (280163602 bytes)**  
+-	Total Size: **280.2 MB (280169485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97c6f589aa3269204b9a2cffd8841408da19f832f8e775a295d4adae8b8f5ece`
+-	Image ID: `sha256:222c2c9ffd786468fc343769bfb474611a124ec22468a0bf9af8bc61cbe74541`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:5388570833e7ff5a3b6ddf9a424d471e073c109ee58e115df3ece488cbb89d91`  
+		Last Modified: Tue, 30 Dec 2025 06:13:01 GMT  
+		Size: 75.9 MB (75919348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:036b6dba2ceabbb92eb6c9ebccd3e6b705dacf7cc4426156bbedfd17ad5dc53b`  
 		Last Modified: Tue, 02 Dec 2025 17:49:47 GMT  
 		Size: 59.5 MB (59487220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42a9e961325948363100d5bf4169ac5a2766670063f6aa5d0860b8ed7f03d0b2`  
-		Last Modified: Tue, 09 Dec 2025 03:00:12 GMT  
+	-	`sha256:e51f5064feef79db34c21a2dd41749a2916949d03779f5c73c692a7d8deaadd7`  
+		Last Modified: Tue, 30 Dec 2025 06:12:57 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -4616,24 +4616,24 @@ WORKDIR /go
 ### `golang:1-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:866476b6405d21e9121a8e6952a69e4d0a8dd9fe6bdb4b68729b5528affe5728
+$ docker pull golang@sha256:9b4e9000d302d567d94b5dcc7fe080e403bcf723deb3d8794d544c32c71bd8c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10623777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:146637d5f45edabe69713bc1007ffb29eafc03744b756bcaf57639a7cf41ccc5`
+-	Image ID: `sha256:20064c1161ab4c5f446c880bd89a41873fbcceb4b33db56e9f4395f80aa77a1e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c28e78f5457bc3963bafaa56ed6586f2a1a334fcf0a4644de495b1f4f6d53161`  
-		Last Modified: Tue, 09 Dec 2025 03:23:53 GMT  
+	-	`sha256:374539d44b6a4a49375d49799d09dc7cc8efbb7a1c873191aa5dc9b9f426be60`  
+		Last Modified: Tue, 30 Dec 2025 09:23:07 GMT  
 		Size: 10.6 MB (10594828 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7742e5e1ba6aa2a09a3ef3a9d0d030403983f72d69e78059b1fb856129652fd6`  
-		Last Modified: Tue, 09 Dec 2025 03:23:54 GMT  
+	-	`sha256:e955d7ff6063882dc3be109953449ae3ee88be05efa1ead5ac81a297692d54b6`  
+		Last Modified: Tue, 30 Dec 2025 09:23:08 GMT  
 		Size: 28.9 KB (28949 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5059,7 +5059,7 @@ WORKDIR C:\go
 ## `golang:1.24`
 
 ```console
-$ docker pull golang@sha256:7f97b8d186295af445424b922032009e5de31b3e9a90504d87871dd1a1f6cd7d
+$ docker pull golang@sha256:31ab5fa601a11efcf71576366faba035c78ee0ebeae53639af56dffaf5d6fa75
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5448,63 +5448,63 @@ $ docker pull golang@sha256:31d36c4f3b1ed1a38217ac29169b5701adb6fa82f9d39887607c
 ### `golang:1.24` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:fa45a12858acc7067d169a8e5f041c54dee972c45a6584e794cd04770c759770
+$ docker pull golang@sha256:85de2fa91fdf1bcc299870cd7945d68cda531fb96aa69d1349a77e093ec89444
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **321.6 MB (321623841 bytes)**  
+-	Total Size: **321.6 MB (321632541 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9070044ecb3bc6aee981096784d8a48e6c3a3cef8faccc3f0e0d3fadf80b848d`
+-	Image ID: `sha256:b8891110e6019adecb29c0973b5c55786a8418814b5fbf04d95e3a63651091e3`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOLANG_VERSION=1.24.11
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 06:22:46 GMT
+# Tue, 30 Dec 2025 10:25:41 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 06:22:46 GMT
+# Tue, 30 Dec 2025 10:25:42 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c85ed9f4687985e9bad247691c7dc14efdf27cef692a8362d3dc4a119e0921aa`  
 		Last Modified: Tue, 02 Dec 2025 17:51:13 GMT  
 		Size: 75.7 MB (75680568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0cee4709e4c3d40262b3d48d2252d33bac850d76288d5adf1a528b513682932b`  
-		Last Modified: Tue, 09 Dec 2025 06:23:37 GMT  
+	-	`sha256:bb6db588ad68c5c14904d7663099a32973332efd3673b60768e01e4f941417d5`  
+		Last Modified: Tue, 30 Dec 2025 10:26:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -5515,24 +5515,24 @@ WORKDIR /go
 ### `golang:1.24` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:7b232262311422df65b6c1cbf3a36cd66d14aee84d1f620fbe9384b9c6c45878
+$ docker pull golang@sha256:2ec25558b8fea244631e0b3135697f6eaed99699d82b22b96cd52bad33c7379a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10823169 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f4cb2b93f70c560ad13fe4a7269c2a5d7fb17a87a65d2b831d32f9903bc4f2f`
+-	Image ID: `sha256:c88665dcab24c4eda5fb05351ad7698baa4d0ab5b42bdf6a175aece2cbeb6c21`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:651b602b42e10da974a69ddd86b3a907c3d837b079992777fce93a9b17ef708a`  
-		Last Modified: Tue, 09 Dec 2025 09:23:06 GMT  
+	-	`sha256:ef0a2d2853b1ab9349b2dcbd93e005ca32f61abe70982c9dad60465445f9e16d`  
+		Last Modified: Tue, 30 Dec 2025 12:23:35 GMT  
 		Size: 10.8 MB (10795332 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:163dcfe19fe726a77cf32d569882405480490ba4c126a70a1847abe23977101c`  
-		Last Modified: Tue, 09 Dec 2025 09:23:07 GMT  
+	-	`sha256:9166b06f2a2b74800da721a48c6113a62f13d8244d85682d231197602540197f`  
+		Last Modified: Tue, 30 Dec 2025 12:23:36 GMT  
 		Size: 27.8 KB (27837 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5630,63 +5630,63 @@ $ docker pull golang@sha256:a0c908436d75237a08032010149e28cdcaaef4e314fdf2f23116
 ### `golang:1.24` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:33e4f905163b9cba139cd2daff05d25c8d7b95bc7465544125dcfc7f5d76ae57
+$ docker pull golang@sha256:6211ba85797dcab67396e2ce29d6382dcde8f84bb9e8399230de29b2426cbcac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.6 MB (298606779 bytes)**  
+-	Total Size: **298.6 MB (298612823 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f142a14a7d859c46f73da1232ebae37bfe3989ead08a49a24f11b3006e51fff`
+-	Image ID: `sha256:56b19b7b7e8e1804a17e6620d4f42f8d705f255b45cea1ea4dc0ee46d434bf5a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:59:18 GMT
+# Tue, 30 Dec 2025 06:12:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV GOLANG_VERSION=1.24.11
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 03:00:22 GMT
+# Tue, 30 Dec 2025 06:12:39 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 03:00:22 GMT
+# Tue, 30 Dec 2025 06:12:39 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db65c47942d62476b65c8d40b982f5f8a0db6cf303f0955dc4788694f1468a6a`  
-		Last Modified: Tue, 09 Dec 2025 03:01:21 GMT  
-		Size: 75.9 MB (75919272 bytes)  
+	-	`sha256:d12ff73de1940cf169d9834c4cf953c0cc9c72c478673013d2a8a22a41944f8f`  
+		Last Modified: Tue, 30 Dec 2025 06:13:25 GMT  
+		Size: 75.9 MB (75919327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6932ff34476a7aa2f1d93d72e5a95427da109d5b76d4708252584757489eb86b`  
 		Last Modified: Tue, 02 Dec 2025 17:51:56 GMT  
 		Size: 77.9 MB (77930579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d0a6c7766d10438c4ffa3d3b14030cc3716ec7a5a5785c8a0d58cdfbf80b2a4`  
-		Last Modified: Tue, 09 Dec 2025 03:01:15 GMT  
+	-	`sha256:a799f1c2205ea2ec164707462c7c03587499253f79f73ca87e56cc14f541f772`  
+		Last Modified: Tue, 30 Dec 2025 06:13:20 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -5697,24 +5697,24 @@ WORKDIR /go
 ### `golang:1.24` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:57105a9ca4ccd69036fe1b316a4e26d766144e8eeeb668b3847f025bd3b16f6a
+$ docker pull golang@sha256:c1a67325ffd3dba6e10f9d9db7e51bce2904d4c829c0e7d0561afc9fda3ffc63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10637715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d92ffa769f16fdb7d430184bec9e820276782c9cda331d1fc413d3c22396a6fb`
+-	Image ID: `sha256:94ea6e87726122119f22bb3299c8e6e4e46c4e844c405a827d387fe6490a5af6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6d273356e646d7b3c2d29ec7e7d5a9ee727bc0d52cb71d6de7b979faa9c3e6f2`  
-		Last Modified: Tue, 09 Dec 2025 03:24:45 GMT  
+	-	`sha256:073bddffd5c04c50cf88e0a42a3ae2a04796ceb96f65cb7b455fa87faf04183a`  
+		Last Modified: Tue, 30 Dec 2025 09:23:32 GMT  
 		Size: 10.6 MB (10609926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d4cd4328b20a4b1324ea16385d3a1292c3b2dbf0c0690b28db82aac978950c98`  
-		Last Modified: Tue, 09 Dec 2025 03:24:46 GMT  
+	-	`sha256:c39f5fa74db58e1370ece51a28cba6325cb10241fa795b9e0bc3cec5a06b1e57`  
+		Last Modified: Tue, 30 Dec 2025 09:23:33 GMT  
 		Size: 27.8 KB (27789 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7922,7 +7922,7 @@ $ docker pull golang@sha256:bdac81c8ea886900530bd7db23a95e87a56e10c7c7c98245afdf
 ## `golang:1.24-bookworm`
 
 ```console
-$ docker pull golang@sha256:779326a9ec70eb5bdde408dbe1ae8f016f3d2d02254f5f948ef1bc3051e469cd
+$ docker pull golang@sha256:467dc6ff50b83cd27b38d8f8da407b46fcd35d30c2893512d1cef81230a1a2bb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8396,64 +8396,64 @@ $ docker pull golang@sha256:4d9df9d1f69e1ca0900f5b40ac2474f76a15d0647422b8a8a308
 ### `golang:1.24-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:7fe1f5c6099c0787811f0854a459d00660cf226c40184e08cbed6bdb413e0c6a
+$ docker pull golang@sha256:45578d4507fe232bfa0c29041a8fe6dfd31ea55324154afb0e59e625fb1daf67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.9 MB (313945864 bytes)**  
+-	Total Size: **313.9 MB (313945249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dfec8015e219fb829610c76be9e371050d46999d5fc825f8ebbd09c5cb97d75b`
+-	Image ID: `sha256:c8557d736d9a45899393270da2581d17221297d829f34bc0aa47f0d054fb5f30`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1765152000'
-# Mon, 08 Dec 2025 22:28:27 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1766966400'
+# Tue, 30 Dec 2025 01:30:53 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 23:21:25 GMT
+# Tue, 30 Dec 2025 03:16:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:41:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOLANG_VERSION=1.24.11
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:14:18 GMT
+# Tue, 30 Dec 2025 08:44:50 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:14:19 GMT
+# Tue, 30 Dec 2025 08:44:50 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:c088128ea77bb5c706bb00930020ea2fba147060275f49c5a7be6b54af5ca7c8`  
-		Last Modified: Mon, 08 Dec 2025 22:17:06 GMT  
-		Size: 52.3 MB (52326977 bytes)  
+	-	`sha256:48e256c4119c0ad256492d6a930e99d2b2d7f8d7920d619aa2de4f616c37076e`  
+		Last Modified: Mon, 29 Dec 2025 22:25:39 GMT  
+		Size: 52.3 MB (52326998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4109a037ac4c69c3ce26e6d14e10c867842083c363485abd63db45502611991`  
-		Last Modified: Mon, 08 Dec 2025 22:28:59 GMT  
-		Size: 25.7 MB (25672209 bytes)  
+	-	`sha256:7517c515ac5fd6799cec288b72512b8ea3fc54d2d37de5af54d06ba0ea2f21bf`  
+		Last Modified: Tue, 30 Dec 2025 01:31:20 GMT  
+		Size: 25.7 MB (25672165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd2b93c70c0b05a907d16ae217d77a407e9aa88f69499ffbfee4375b49ab6c01`  
-		Last Modified: Mon, 08 Dec 2025 23:22:14 GMT  
-		Size: 69.8 MB (69846008 bytes)  
+	-	`sha256:f30ff2cfb691fedcba1692cb13fd0632001d1a876833f4cd2aa52eba87257a8f`  
+		Last Modified: Tue, 30 Dec 2025 03:17:48 GMT  
+		Size: 69.8 MB (69845530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21fcf0300c06237c12ec60c09556f95a6b8c833ba82bfc5828beb977742de538`  
-		Last Modified: Tue, 09 Dec 2025 02:13:29 GMT  
-		Size: 90.4 MB (90419946 bytes)  
+	-	`sha256:4fb3fd09a1e6774e533a42b26351be92003f5bdea475b8caa70173ad58b79d9f`  
+		Last Modified: Tue, 30 Dec 2025 08:43:16 GMT  
+		Size: 90.4 MB (90419830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c85ed9f4687985e9bad247691c7dc14efdf27cef692a8362d3dc4a119e0921aa`  
 		Last Modified: Tue, 02 Dec 2025 17:51:13 GMT  
 		Size: 75.7 MB (75680568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d48098b4b95982fe337f8c69a191c509b78b4de23b056611bedfd81e48614355`  
-		Last Modified: Tue, 09 Dec 2025 02:15:15 GMT  
-		Size: 124.0 B  
+	-	`sha256:d2a23aa52c5bf5ec9c0200da0e5d8991c99861d97abbe7c004407a4c0dbbc829`  
+		Last Modified: Tue, 30 Dec 2025 08:45:40 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -8463,24 +8463,24 @@ WORKDIR /go
 ### `golang:1.24-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:913dda5b6b2e5b3e391936bf98f8387f11b4690594e118ebb183ea2ff5391cb6
+$ docker pull golang@sha256:c037c6930c7a5a20cf1398e52a9e7b465c756a106ed49ae18cd2b12f78b644e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 MB (10511166 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28b8c142de0864e5d6f1fbe359c019fcbddcb8e9b68ebee435f9429065bc5f96`
+-	Image ID: `sha256:7e677cc2f7539723d6845b98e9894fa8a3ab5fe355c6bc1ffab5ee8d3439dd04`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:02ccfbd08f2cad02fcd000b7a45f1ef6e3c34009831f94c85321275de3e1139d`  
-		Last Modified: Tue, 09 Dec 2025 03:24:55 GMT  
+	-	`sha256:de20fefd6f31557c24449d902a4dcbce6606339445402476fdb1ec56c1f5f636`  
+		Last Modified: Tue, 30 Dec 2025 09:23:24 GMT  
 		Size: 10.5 MB (10483917 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e2c4380405e41c59bbfe4a2fdf3126571c8fe6a7a02feae7a8416dad771ba753`  
-		Last Modified: Tue, 09 Dec 2025 03:24:56 GMT  
+	-	`sha256:5e76be7c796806d9fda89ca4a136658f360205387453bc96af53ae9d4e99dd18`  
+		Last Modified: Tue, 30 Dec 2025 09:23:25 GMT  
 		Size: 27.2 KB (27249 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8925,7 +8925,7 @@ WORKDIR C:\go
 ## `golang:1.24-trixie`
 
 ```console
-$ docker pull golang@sha256:eab444ce8e4fcaa8476d94debba72d461ae2c45e31f4c1d7523ce8be90eaa614
+$ docker pull golang@sha256:c6dd5ab2a06069266006b4c97827f1fbedc0e3d65c9b4bf35754c0a1e5fc328a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9312,63 +9312,63 @@ $ docker pull golang@sha256:31d36c4f3b1ed1a38217ac29169b5701adb6fa82f9d39887607c
 ### `golang:1.24-trixie` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:fa45a12858acc7067d169a8e5f041c54dee972c45a6584e794cd04770c759770
+$ docker pull golang@sha256:85de2fa91fdf1bcc299870cd7945d68cda531fb96aa69d1349a77e093ec89444
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **321.6 MB (321623841 bytes)**  
+-	Total Size: **321.6 MB (321632541 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9070044ecb3bc6aee981096784d8a48e6c3a3cef8faccc3f0e0d3fadf80b848d`
+-	Image ID: `sha256:b8891110e6019adecb29c0973b5c55786a8418814b5fbf04d95e3a63651091e3`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOLANG_VERSION=1.24.11
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 06:22:46 GMT
+# Tue, 30 Dec 2025 10:25:41 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 06:22:46 GMT
+# Tue, 30 Dec 2025 10:25:42 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c85ed9f4687985e9bad247691c7dc14efdf27cef692a8362d3dc4a119e0921aa`  
 		Last Modified: Tue, 02 Dec 2025 17:51:13 GMT  
 		Size: 75.7 MB (75680568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0cee4709e4c3d40262b3d48d2252d33bac850d76288d5adf1a528b513682932b`  
-		Last Modified: Tue, 09 Dec 2025 06:23:37 GMT  
+	-	`sha256:bb6db588ad68c5c14904d7663099a32973332efd3673b60768e01e4f941417d5`  
+		Last Modified: Tue, 30 Dec 2025 10:26:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -9379,24 +9379,24 @@ WORKDIR /go
 ### `golang:1.24-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:7b232262311422df65b6c1cbf3a36cd66d14aee84d1f620fbe9384b9c6c45878
+$ docker pull golang@sha256:2ec25558b8fea244631e0b3135697f6eaed99699d82b22b96cd52bad33c7379a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10823169 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f4cb2b93f70c560ad13fe4a7269c2a5d7fb17a87a65d2b831d32f9903bc4f2f`
+-	Image ID: `sha256:c88665dcab24c4eda5fb05351ad7698baa4d0ab5b42bdf6a175aece2cbeb6c21`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:651b602b42e10da974a69ddd86b3a907c3d837b079992777fce93a9b17ef708a`  
-		Last Modified: Tue, 09 Dec 2025 09:23:06 GMT  
+	-	`sha256:ef0a2d2853b1ab9349b2dcbd93e005ca32f61abe70982c9dad60465445f9e16d`  
+		Last Modified: Tue, 30 Dec 2025 12:23:35 GMT  
 		Size: 10.8 MB (10795332 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:163dcfe19fe726a77cf32d569882405480490ba4c126a70a1847abe23977101c`  
-		Last Modified: Tue, 09 Dec 2025 09:23:07 GMT  
+	-	`sha256:9166b06f2a2b74800da721a48c6113a62f13d8244d85682d231197602540197f`  
+		Last Modified: Tue, 30 Dec 2025 12:23:36 GMT  
 		Size: 27.8 KB (27837 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9494,63 +9494,63 @@ $ docker pull golang@sha256:a0c908436d75237a08032010149e28cdcaaef4e314fdf2f23116
 ### `golang:1.24-trixie` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:33e4f905163b9cba139cd2daff05d25c8d7b95bc7465544125dcfc7f5d76ae57
+$ docker pull golang@sha256:6211ba85797dcab67396e2ce29d6382dcde8f84bb9e8399230de29b2426cbcac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.6 MB (298606779 bytes)**  
+-	Total Size: **298.6 MB (298612823 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f142a14a7d859c46f73da1232ebae37bfe3989ead08a49a24f11b3006e51fff`
+-	Image ID: `sha256:56b19b7b7e8e1804a17e6620d4f42f8d705f255b45cea1ea4dc0ee46d434bf5a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:59:18 GMT
+# Tue, 30 Dec 2025 06:12:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV GOLANG_VERSION=1.24.11
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 03:00:22 GMT
+# Tue, 30 Dec 2025 06:12:39 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 03:00:22 GMT
+# Tue, 30 Dec 2025 06:12:39 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db65c47942d62476b65c8d40b982f5f8a0db6cf303f0955dc4788694f1468a6a`  
-		Last Modified: Tue, 09 Dec 2025 03:01:21 GMT  
-		Size: 75.9 MB (75919272 bytes)  
+	-	`sha256:d12ff73de1940cf169d9834c4cf953c0cc9c72c478673013d2a8a22a41944f8f`  
+		Last Modified: Tue, 30 Dec 2025 06:13:25 GMT  
+		Size: 75.9 MB (75919327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6932ff34476a7aa2f1d93d72e5a95427da109d5b76d4708252584757489eb86b`  
 		Last Modified: Tue, 02 Dec 2025 17:51:56 GMT  
 		Size: 77.9 MB (77930579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d0a6c7766d10438c4ffa3d3b14030cc3716ec7a5a5785c8a0d58cdfbf80b2a4`  
-		Last Modified: Tue, 09 Dec 2025 03:01:15 GMT  
+	-	`sha256:a799f1c2205ea2ec164707462c7c03587499253f79f73ca87e56cc14f541f772`  
+		Last Modified: Tue, 30 Dec 2025 06:13:20 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -9561,24 +9561,24 @@ WORKDIR /go
 ### `golang:1.24-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:57105a9ca4ccd69036fe1b316a4e26d766144e8eeeb668b3847f025bd3b16f6a
+$ docker pull golang@sha256:c1a67325ffd3dba6e10f9d9db7e51bce2904d4c829c0e7d0561afc9fda3ffc63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10637715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d92ffa769f16fdb7d430184bec9e820276782c9cda331d1fc413d3c22396a6fb`
+-	Image ID: `sha256:94ea6e87726122119f22bb3299c8e6e4e46c4e844c405a827d387fe6490a5af6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6d273356e646d7b3c2d29ec7e7d5a9ee727bc0d52cb71d6de7b979faa9c3e6f2`  
-		Last Modified: Tue, 09 Dec 2025 03:24:45 GMT  
+	-	`sha256:073bddffd5c04c50cf88e0a42a3ae2a04796ceb96f65cb7b455fa87faf04183a`  
+		Last Modified: Tue, 30 Dec 2025 09:23:32 GMT  
 		Size: 10.6 MB (10609926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d4cd4328b20a4b1324ea16385d3a1292c3b2dbf0c0690b28db82aac978950c98`  
-		Last Modified: Tue, 09 Dec 2025 03:24:46 GMT  
+	-	`sha256:c39f5fa74db58e1370ece51a28cba6325cb10241fa795b9e0bc3cec5a06b1e57`  
+		Last Modified: Tue, 30 Dec 2025 09:23:33 GMT  
 		Size: 27.8 KB (27789 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10004,7 +10004,7 @@ WORKDIR C:\go
 ## `golang:1.24.11`
 
 ```console
-$ docker pull golang@sha256:7f97b8d186295af445424b922032009e5de31b3e9a90504d87871dd1a1f6cd7d
+$ docker pull golang@sha256:31ab5fa601a11efcf71576366faba035c78ee0ebeae53639af56dffaf5d6fa75
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10393,63 +10393,63 @@ $ docker pull golang@sha256:31d36c4f3b1ed1a38217ac29169b5701adb6fa82f9d39887607c
 ### `golang:1.24.11` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:fa45a12858acc7067d169a8e5f041c54dee972c45a6584e794cd04770c759770
+$ docker pull golang@sha256:85de2fa91fdf1bcc299870cd7945d68cda531fb96aa69d1349a77e093ec89444
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **321.6 MB (321623841 bytes)**  
+-	Total Size: **321.6 MB (321632541 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9070044ecb3bc6aee981096784d8a48e6c3a3cef8faccc3f0e0d3fadf80b848d`
+-	Image ID: `sha256:b8891110e6019adecb29c0973b5c55786a8418814b5fbf04d95e3a63651091e3`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOLANG_VERSION=1.24.11
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 06:22:46 GMT
+# Tue, 30 Dec 2025 10:25:41 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 06:22:46 GMT
+# Tue, 30 Dec 2025 10:25:42 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c85ed9f4687985e9bad247691c7dc14efdf27cef692a8362d3dc4a119e0921aa`  
 		Last Modified: Tue, 02 Dec 2025 17:51:13 GMT  
 		Size: 75.7 MB (75680568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0cee4709e4c3d40262b3d48d2252d33bac850d76288d5adf1a528b513682932b`  
-		Last Modified: Tue, 09 Dec 2025 06:23:37 GMT  
+	-	`sha256:bb6db588ad68c5c14904d7663099a32973332efd3673b60768e01e4f941417d5`  
+		Last Modified: Tue, 30 Dec 2025 10:26:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -10460,24 +10460,24 @@ WORKDIR /go
 ### `golang:1.24.11` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:7b232262311422df65b6c1cbf3a36cd66d14aee84d1f620fbe9384b9c6c45878
+$ docker pull golang@sha256:2ec25558b8fea244631e0b3135697f6eaed99699d82b22b96cd52bad33c7379a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10823169 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f4cb2b93f70c560ad13fe4a7269c2a5d7fb17a87a65d2b831d32f9903bc4f2f`
+-	Image ID: `sha256:c88665dcab24c4eda5fb05351ad7698baa4d0ab5b42bdf6a175aece2cbeb6c21`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:651b602b42e10da974a69ddd86b3a907c3d837b079992777fce93a9b17ef708a`  
-		Last Modified: Tue, 09 Dec 2025 09:23:06 GMT  
+	-	`sha256:ef0a2d2853b1ab9349b2dcbd93e005ca32f61abe70982c9dad60465445f9e16d`  
+		Last Modified: Tue, 30 Dec 2025 12:23:35 GMT  
 		Size: 10.8 MB (10795332 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:163dcfe19fe726a77cf32d569882405480490ba4c126a70a1847abe23977101c`  
-		Last Modified: Tue, 09 Dec 2025 09:23:07 GMT  
+	-	`sha256:9166b06f2a2b74800da721a48c6113a62f13d8244d85682d231197602540197f`  
+		Last Modified: Tue, 30 Dec 2025 12:23:36 GMT  
 		Size: 27.8 KB (27837 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10575,63 +10575,63 @@ $ docker pull golang@sha256:a0c908436d75237a08032010149e28cdcaaef4e314fdf2f23116
 ### `golang:1.24.11` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:33e4f905163b9cba139cd2daff05d25c8d7b95bc7465544125dcfc7f5d76ae57
+$ docker pull golang@sha256:6211ba85797dcab67396e2ce29d6382dcde8f84bb9e8399230de29b2426cbcac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.6 MB (298606779 bytes)**  
+-	Total Size: **298.6 MB (298612823 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f142a14a7d859c46f73da1232ebae37bfe3989ead08a49a24f11b3006e51fff`
+-	Image ID: `sha256:56b19b7b7e8e1804a17e6620d4f42f8d705f255b45cea1ea4dc0ee46d434bf5a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:59:18 GMT
+# Tue, 30 Dec 2025 06:12:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV GOLANG_VERSION=1.24.11
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 03:00:22 GMT
+# Tue, 30 Dec 2025 06:12:39 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 03:00:22 GMT
+# Tue, 30 Dec 2025 06:12:39 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db65c47942d62476b65c8d40b982f5f8a0db6cf303f0955dc4788694f1468a6a`  
-		Last Modified: Tue, 09 Dec 2025 03:01:21 GMT  
-		Size: 75.9 MB (75919272 bytes)  
+	-	`sha256:d12ff73de1940cf169d9834c4cf953c0cc9c72c478673013d2a8a22a41944f8f`  
+		Last Modified: Tue, 30 Dec 2025 06:13:25 GMT  
+		Size: 75.9 MB (75919327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6932ff34476a7aa2f1d93d72e5a95427da109d5b76d4708252584757489eb86b`  
 		Last Modified: Tue, 02 Dec 2025 17:51:56 GMT  
 		Size: 77.9 MB (77930579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d0a6c7766d10438c4ffa3d3b14030cc3716ec7a5a5785c8a0d58cdfbf80b2a4`  
-		Last Modified: Tue, 09 Dec 2025 03:01:15 GMT  
+	-	`sha256:a799f1c2205ea2ec164707462c7c03587499253f79f73ca87e56cc14f541f772`  
+		Last Modified: Tue, 30 Dec 2025 06:13:20 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -10642,24 +10642,24 @@ WORKDIR /go
 ### `golang:1.24.11` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:57105a9ca4ccd69036fe1b316a4e26d766144e8eeeb668b3847f025bd3b16f6a
+$ docker pull golang@sha256:c1a67325ffd3dba6e10f9d9db7e51bce2904d4c829c0e7d0561afc9fda3ffc63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10637715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d92ffa769f16fdb7d430184bec9e820276782c9cda331d1fc413d3c22396a6fb`
+-	Image ID: `sha256:94ea6e87726122119f22bb3299c8e6e4e46c4e844c405a827d387fe6490a5af6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6d273356e646d7b3c2d29ec7e7d5a9ee727bc0d52cb71d6de7b979faa9c3e6f2`  
-		Last Modified: Tue, 09 Dec 2025 03:24:45 GMT  
+	-	`sha256:073bddffd5c04c50cf88e0a42a3ae2a04796ceb96f65cb7b455fa87faf04183a`  
+		Last Modified: Tue, 30 Dec 2025 09:23:32 GMT  
 		Size: 10.6 MB (10609926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d4cd4328b20a4b1324ea16385d3a1292c3b2dbf0c0690b28db82aac978950c98`  
-		Last Modified: Tue, 09 Dec 2025 03:24:46 GMT  
+	-	`sha256:c39f5fa74db58e1370ece51a28cba6325cb10241fa795b9e0bc3cec5a06b1e57`  
+		Last Modified: Tue, 30 Dec 2025 09:23:33 GMT  
 		Size: 27.8 KB (27789 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12867,7 +12867,7 @@ $ docker pull golang@sha256:bdac81c8ea886900530bd7db23a95e87a56e10c7c7c98245afdf
 ## `golang:1.24.11-bookworm`
 
 ```console
-$ docker pull golang@sha256:779326a9ec70eb5bdde408dbe1ae8f016f3d2d02254f5f948ef1bc3051e469cd
+$ docker pull golang@sha256:467dc6ff50b83cd27b38d8f8da407b46fcd35d30c2893512d1cef81230a1a2bb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13341,64 +13341,64 @@ $ docker pull golang@sha256:4d9df9d1f69e1ca0900f5b40ac2474f76a15d0647422b8a8a308
 ### `golang:1.24.11-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:7fe1f5c6099c0787811f0854a459d00660cf226c40184e08cbed6bdb413e0c6a
+$ docker pull golang@sha256:45578d4507fe232bfa0c29041a8fe6dfd31ea55324154afb0e59e625fb1daf67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.9 MB (313945864 bytes)**  
+-	Total Size: **313.9 MB (313945249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dfec8015e219fb829610c76be9e371050d46999d5fc825f8ebbd09c5cb97d75b`
+-	Image ID: `sha256:c8557d736d9a45899393270da2581d17221297d829f34bc0aa47f0d054fb5f30`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1765152000'
-# Mon, 08 Dec 2025 22:28:27 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1766966400'
+# Tue, 30 Dec 2025 01:30:53 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 23:21:25 GMT
+# Tue, 30 Dec 2025 03:16:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:41:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOLANG_VERSION=1.24.11
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:14:18 GMT
+# Tue, 30 Dec 2025 08:44:50 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:14:19 GMT
+# Tue, 30 Dec 2025 08:44:50 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:c088128ea77bb5c706bb00930020ea2fba147060275f49c5a7be6b54af5ca7c8`  
-		Last Modified: Mon, 08 Dec 2025 22:17:06 GMT  
-		Size: 52.3 MB (52326977 bytes)  
+	-	`sha256:48e256c4119c0ad256492d6a930e99d2b2d7f8d7920d619aa2de4f616c37076e`  
+		Last Modified: Mon, 29 Dec 2025 22:25:39 GMT  
+		Size: 52.3 MB (52326998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4109a037ac4c69c3ce26e6d14e10c867842083c363485abd63db45502611991`  
-		Last Modified: Mon, 08 Dec 2025 22:28:59 GMT  
-		Size: 25.7 MB (25672209 bytes)  
+	-	`sha256:7517c515ac5fd6799cec288b72512b8ea3fc54d2d37de5af54d06ba0ea2f21bf`  
+		Last Modified: Tue, 30 Dec 2025 01:31:20 GMT  
+		Size: 25.7 MB (25672165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd2b93c70c0b05a907d16ae217d77a407e9aa88f69499ffbfee4375b49ab6c01`  
-		Last Modified: Mon, 08 Dec 2025 23:22:14 GMT  
-		Size: 69.8 MB (69846008 bytes)  
+	-	`sha256:f30ff2cfb691fedcba1692cb13fd0632001d1a876833f4cd2aa52eba87257a8f`  
+		Last Modified: Tue, 30 Dec 2025 03:17:48 GMT  
+		Size: 69.8 MB (69845530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21fcf0300c06237c12ec60c09556f95a6b8c833ba82bfc5828beb977742de538`  
-		Last Modified: Tue, 09 Dec 2025 02:13:29 GMT  
-		Size: 90.4 MB (90419946 bytes)  
+	-	`sha256:4fb3fd09a1e6774e533a42b26351be92003f5bdea475b8caa70173ad58b79d9f`  
+		Last Modified: Tue, 30 Dec 2025 08:43:16 GMT  
+		Size: 90.4 MB (90419830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c85ed9f4687985e9bad247691c7dc14efdf27cef692a8362d3dc4a119e0921aa`  
 		Last Modified: Tue, 02 Dec 2025 17:51:13 GMT  
 		Size: 75.7 MB (75680568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d48098b4b95982fe337f8c69a191c509b78b4de23b056611bedfd81e48614355`  
-		Last Modified: Tue, 09 Dec 2025 02:15:15 GMT  
-		Size: 124.0 B  
+	-	`sha256:d2a23aa52c5bf5ec9c0200da0e5d8991c99861d97abbe7c004407a4c0dbbc829`  
+		Last Modified: Tue, 30 Dec 2025 08:45:40 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -13408,24 +13408,24 @@ WORKDIR /go
 ### `golang:1.24.11-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:913dda5b6b2e5b3e391936bf98f8387f11b4690594e118ebb183ea2ff5391cb6
+$ docker pull golang@sha256:c037c6930c7a5a20cf1398e52a9e7b465c756a106ed49ae18cd2b12f78b644e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 MB (10511166 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28b8c142de0864e5d6f1fbe359c019fcbddcb8e9b68ebee435f9429065bc5f96`
+-	Image ID: `sha256:7e677cc2f7539723d6845b98e9894fa8a3ab5fe355c6bc1ffab5ee8d3439dd04`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:02ccfbd08f2cad02fcd000b7a45f1ef6e3c34009831f94c85321275de3e1139d`  
-		Last Modified: Tue, 09 Dec 2025 03:24:55 GMT  
+	-	`sha256:de20fefd6f31557c24449d902a4dcbce6606339445402476fdb1ec56c1f5f636`  
+		Last Modified: Tue, 30 Dec 2025 09:23:24 GMT  
 		Size: 10.5 MB (10483917 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e2c4380405e41c59bbfe4a2fdf3126571c8fe6a7a02feae7a8416dad771ba753`  
-		Last Modified: Tue, 09 Dec 2025 03:24:56 GMT  
+	-	`sha256:5e76be7c796806d9fda89ca4a136658f360205387453bc96af53ae9d4e99dd18`  
+		Last Modified: Tue, 30 Dec 2025 09:23:25 GMT  
 		Size: 27.2 KB (27249 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13870,7 +13870,7 @@ WORKDIR C:\go
 ## `golang:1.24.11-trixie`
 
 ```console
-$ docker pull golang@sha256:eab444ce8e4fcaa8476d94debba72d461ae2c45e31f4c1d7523ce8be90eaa614
+$ docker pull golang@sha256:c6dd5ab2a06069266006b4c97827f1fbedc0e3d65c9b4bf35754c0a1e5fc328a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14257,63 +14257,63 @@ $ docker pull golang@sha256:31d36c4f3b1ed1a38217ac29169b5701adb6fa82f9d39887607c
 ### `golang:1.24.11-trixie` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:fa45a12858acc7067d169a8e5f041c54dee972c45a6584e794cd04770c759770
+$ docker pull golang@sha256:85de2fa91fdf1bcc299870cd7945d68cda531fb96aa69d1349a77e093ec89444
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **321.6 MB (321623841 bytes)**  
+-	Total Size: **321.6 MB (321632541 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9070044ecb3bc6aee981096784d8a48e6c3a3cef8faccc3f0e0d3fadf80b848d`
+-	Image ID: `sha256:b8891110e6019adecb29c0973b5c55786a8418814b5fbf04d95e3a63651091e3`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOLANG_VERSION=1.24.11
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:14:11 GMT
+# Tue, 30 Dec 2025 08:44:43 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 06:22:46 GMT
+# Tue, 30 Dec 2025 10:25:41 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 06:22:46 GMT
+# Tue, 30 Dec 2025 10:25:42 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c85ed9f4687985e9bad247691c7dc14efdf27cef692a8362d3dc4a119e0921aa`  
 		Last Modified: Tue, 02 Dec 2025 17:51:13 GMT  
 		Size: 75.7 MB (75680568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0cee4709e4c3d40262b3d48d2252d33bac850d76288d5adf1a528b513682932b`  
-		Last Modified: Tue, 09 Dec 2025 06:23:37 GMT  
+	-	`sha256:bb6db588ad68c5c14904d7663099a32973332efd3673b60768e01e4f941417d5`  
+		Last Modified: Tue, 30 Dec 2025 10:26:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -14324,24 +14324,24 @@ WORKDIR /go
 ### `golang:1.24.11-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:7b232262311422df65b6c1cbf3a36cd66d14aee84d1f620fbe9384b9c6c45878
+$ docker pull golang@sha256:2ec25558b8fea244631e0b3135697f6eaed99699d82b22b96cd52bad33c7379a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10823169 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f4cb2b93f70c560ad13fe4a7269c2a5d7fb17a87a65d2b831d32f9903bc4f2f`
+-	Image ID: `sha256:c88665dcab24c4eda5fb05351ad7698baa4d0ab5b42bdf6a175aece2cbeb6c21`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:651b602b42e10da974a69ddd86b3a907c3d837b079992777fce93a9b17ef708a`  
-		Last Modified: Tue, 09 Dec 2025 09:23:06 GMT  
+	-	`sha256:ef0a2d2853b1ab9349b2dcbd93e005ca32f61abe70982c9dad60465445f9e16d`  
+		Last Modified: Tue, 30 Dec 2025 12:23:35 GMT  
 		Size: 10.8 MB (10795332 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:163dcfe19fe726a77cf32d569882405480490ba4c126a70a1847abe23977101c`  
-		Last Modified: Tue, 09 Dec 2025 09:23:07 GMT  
+	-	`sha256:9166b06f2a2b74800da721a48c6113a62f13d8244d85682d231197602540197f`  
+		Last Modified: Tue, 30 Dec 2025 12:23:36 GMT  
 		Size: 27.8 KB (27837 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14439,63 +14439,63 @@ $ docker pull golang@sha256:a0c908436d75237a08032010149e28cdcaaef4e314fdf2f23116
 ### `golang:1.24.11-trixie` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:33e4f905163b9cba139cd2daff05d25c8d7b95bc7465544125dcfc7f5d76ae57
+$ docker pull golang@sha256:6211ba85797dcab67396e2ce29d6382dcde8f84bb9e8399230de29b2426cbcac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.6 MB (298606779 bytes)**  
+-	Total Size: **298.6 MB (298612823 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f142a14a7d859c46f73da1232ebae37bfe3989ead08a49a24f11b3006e51fff`
+-	Image ID: `sha256:56b19b7b7e8e1804a17e6620d4f42f8d705f255b45cea1ea4dc0ee46d434bf5a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:59:18 GMT
+# Tue, 30 Dec 2025 06:12:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV GOLANG_VERSION=1.24.11
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 03:00:20 GMT
+# Tue, 30 Dec 2025 06:12:37 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 03:00:22 GMT
+# Tue, 30 Dec 2025 06:12:39 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 03:00:22 GMT
+# Tue, 30 Dec 2025 06:12:39 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db65c47942d62476b65c8d40b982f5f8a0db6cf303f0955dc4788694f1468a6a`  
-		Last Modified: Tue, 09 Dec 2025 03:01:21 GMT  
-		Size: 75.9 MB (75919272 bytes)  
+	-	`sha256:d12ff73de1940cf169d9834c4cf953c0cc9c72c478673013d2a8a22a41944f8f`  
+		Last Modified: Tue, 30 Dec 2025 06:13:25 GMT  
+		Size: 75.9 MB (75919327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6932ff34476a7aa2f1d93d72e5a95427da109d5b76d4708252584757489eb86b`  
 		Last Modified: Tue, 02 Dec 2025 17:51:56 GMT  
 		Size: 77.9 MB (77930579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d0a6c7766d10438c4ffa3d3b14030cc3716ec7a5a5785c8a0d58cdfbf80b2a4`  
-		Last Modified: Tue, 09 Dec 2025 03:01:15 GMT  
+	-	`sha256:a799f1c2205ea2ec164707462c7c03587499253f79f73ca87e56cc14f541f772`  
+		Last Modified: Tue, 30 Dec 2025 06:13:20 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -14506,24 +14506,24 @@ WORKDIR /go
 ### `golang:1.24.11-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:57105a9ca4ccd69036fe1b316a4e26d766144e8eeeb668b3847f025bd3b16f6a
+$ docker pull golang@sha256:c1a67325ffd3dba6e10f9d9db7e51bce2904d4c829c0e7d0561afc9fda3ffc63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10637715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d92ffa769f16fdb7d430184bec9e820276782c9cda331d1fc413d3c22396a6fb`
+-	Image ID: `sha256:94ea6e87726122119f22bb3299c8e6e4e46c4e844c405a827d387fe6490a5af6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6d273356e646d7b3c2d29ec7e7d5a9ee727bc0d52cb71d6de7b979faa9c3e6f2`  
-		Last Modified: Tue, 09 Dec 2025 03:24:45 GMT  
+	-	`sha256:073bddffd5c04c50cf88e0a42a3ae2a04796ceb96f65cb7b455fa87faf04183a`  
+		Last Modified: Tue, 30 Dec 2025 09:23:32 GMT  
 		Size: 10.6 MB (10609926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d4cd4328b20a4b1324ea16385d3a1292c3b2dbf0c0690b28db82aac978950c98`  
-		Last Modified: Tue, 09 Dec 2025 03:24:46 GMT  
+	-	`sha256:c39f5fa74db58e1370ece51a28cba6325cb10241fa795b9e0bc3cec5a06b1e57`  
+		Last Modified: Tue, 30 Dec 2025 09:23:33 GMT  
 		Size: 27.8 KB (27789 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14949,7 +14949,7 @@ WORKDIR C:\go
 ## `golang:1.25`
 
 ```console
-$ docker pull golang@sha256:6396b3d8039d2050ab7a3c5c6e1cbeed8bf6d2ddc0403e1ab39d78749227ca19
+$ docker pull golang@sha256:31c1e53dfc1cc2d269deec9c83f58729fa3c53dc9a576f6426109d1e319e9e9a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15338,63 +15338,63 @@ $ docker pull golang@sha256:312235b61145fb1b0c9456ad38521dd04291819de65be02297ed
 ### `golang:1.25` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:edda83f1c330d90345cca76d1383b5cb5523b5aa9b481b1487be4059b72f0984
+$ docker pull golang@sha256:d6ad7fce8bdce5315f037cd9aff445d4cf7d7325333c8bb003403f0563ae7d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.1 MB (304078218 bytes)**  
+-	Total Size: **304.1 MB (304086918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1461c7db1331b19e172169e7312b31426366775a7635368ee57b90039298379f`
+-	Image ID: `sha256:16fd018bd874346d1dc0a6ebb6af7e779e7a2fcc45e6869943a48eca07e1a658`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 06:20:59 GMT
+# Tue, 30 Dec 2025 10:25:10 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 06:21:00 GMT
+# Tue, 30 Dec 2025 10:25:11 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0da503e4b3d4a624ac596179648e9a31a4f87f7d37fdb8c7bef57190d6ed7d`  
 		Last Modified: Tue, 02 Dec 2025 17:48:12 GMT  
 		Size: 58.1 MB (58134946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6849ad71391fbbeff8d3472dbaf3d868186dc95123c70609a1adde617759e1ac`  
-		Last Modified: Tue, 09 Dec 2025 06:22:22 GMT  
+	-	`sha256:745a29a39a173b26b9ebf23e656da3218659ccc1713088694c73d5b2ce8105de`  
+		Last Modified: Tue, 30 Dec 2025 10:26:04 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -15405,24 +15405,24 @@ WORKDIR /go
 ### `golang:1.25` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:0df8c06a7aec2e4ec38f44656ab30d04a0e6cfbc01fd857463e692dc4d078265
+$ docker pull golang@sha256:fa5fd6b8bb561a988859f3d4a9ad6bb55aab28d307b6e2bbc6f9119ef2fa803f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10809257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8fc0ea5c25eb7d1fdf78eca32487758741ba89c533f4f8f1a157b373321c2d5c`
+-	Image ID: `sha256:f018751f15089b3b14839c7faee6f2236566dd323b394b432e1e43044e663795`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fd7ba604dfe0652a6c107f74a16e99c4d148aa256b5bf017d2e5bdc093a7f9a7`  
-		Last Modified: Tue, 09 Dec 2025 09:22:58 GMT  
+	-	`sha256:358257bb853235928e85e14dc05b9e21dba422364df90d265560bafe83dfc589`  
+		Last Modified: Tue, 30 Dec 2025 12:22:50 GMT  
 		Size: 10.8 MB (10780236 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c37d00d6023ca454fe54a45729be587e4a531f26ed20aad02672f290a21c1a86`  
-		Last Modified: Tue, 09 Dec 2025 09:22:59 GMT  
+	-	`sha256:f0a8ca6d0806afbdef720cef4b9a9010482a3c8b4e93d03d717aa0a5a6173cc9`  
+		Last Modified: Tue, 30 Dec 2025 12:22:51 GMT  
 		Size: 29.0 KB (29021 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15520,63 +15520,63 @@ $ docker pull golang@sha256:1d42ef18ecb6983d9a5771931346da837b56993c8ac8c4781b0f
 ### `golang:1.25` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:8e612b7aa289e9adfc9d7ebf758e773772283ad5001a00c01d7e5f0df0081b8f
+$ docker pull golang@sha256:dbacffbf856eb14cf139f2b7c4d30338357928cfa32bc85aeb8bffed531c5f62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.2 MB (280163602 bytes)**  
+-	Total Size: **280.2 MB (280169485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97c6f589aa3269204b9a2cffd8841408da19f832f8e775a295d4adae8b8f5ece`
+-	Image ID: `sha256:222c2c9ffd786468fc343769bfb474611a124ec22468a0bf9af8bc61cbe74541`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:5388570833e7ff5a3b6ddf9a424d471e073c109ee58e115df3ece488cbb89d91`  
+		Last Modified: Tue, 30 Dec 2025 06:13:01 GMT  
+		Size: 75.9 MB (75919348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:036b6dba2ceabbb92eb6c9ebccd3e6b705dacf7cc4426156bbedfd17ad5dc53b`  
 		Last Modified: Tue, 02 Dec 2025 17:49:47 GMT  
 		Size: 59.5 MB (59487220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42a9e961325948363100d5bf4169ac5a2766670063f6aa5d0860b8ed7f03d0b2`  
-		Last Modified: Tue, 09 Dec 2025 03:00:12 GMT  
+	-	`sha256:e51f5064feef79db34c21a2dd41749a2916949d03779f5c73c692a7d8deaadd7`  
+		Last Modified: Tue, 30 Dec 2025 06:12:57 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -15587,24 +15587,24 @@ WORKDIR /go
 ### `golang:1.25` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:866476b6405d21e9121a8e6952a69e4d0a8dd9fe6bdb4b68729b5528affe5728
+$ docker pull golang@sha256:9b4e9000d302d567d94b5dcc7fe080e403bcf723deb3d8794d544c32c71bd8c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10623777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:146637d5f45edabe69713bc1007ffb29eafc03744b756bcaf57639a7cf41ccc5`
+-	Image ID: `sha256:20064c1161ab4c5f446c880bd89a41873fbcceb4b33db56e9f4395f80aa77a1e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c28e78f5457bc3963bafaa56ed6586f2a1a334fcf0a4644de495b1f4f6d53161`  
-		Last Modified: Tue, 09 Dec 2025 03:23:53 GMT  
+	-	`sha256:374539d44b6a4a49375d49799d09dc7cc8efbb7a1c873191aa5dc9b9f426be60`  
+		Last Modified: Tue, 30 Dec 2025 09:23:07 GMT  
 		Size: 10.6 MB (10594828 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7742e5e1ba6aa2a09a3ef3a9d0d030403983f72d69e78059b1fb856129652fd6`  
-		Last Modified: Tue, 09 Dec 2025 03:23:54 GMT  
+	-	`sha256:e955d7ff6063882dc3be109953449ae3ee88be05efa1ead5ac81a297692d54b6`  
+		Last Modified: Tue, 30 Dec 2025 09:23:08 GMT  
 		Size: 28.9 KB (28949 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17812,7 +17812,7 @@ $ docker pull golang@sha256:87d9d8f820d61adcac8d8076cd4de81d5a4159680105149d081e
 ## `golang:1.25-bookworm`
 
 ```console
-$ docker pull golang@sha256:01762abf6fea478a3bdf5778b1453c734f1780baf1b96655d42e0ebf2fa2b73b
+$ docker pull golang@sha256:d63fcbd9b3d3debebfc158906a9af85b027ff7dbaa4500cbf7ddca0354f3579c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18286,64 +18286,64 @@ $ docker pull golang@sha256:e376c4db3bc5f768252f6e6982027b9747b4cf33ebfb9fe53206
 ### `golang:1.25-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:7be8e0eb4743fe5ddea75f00797a0249e041a91f857803ce90dc0aec4d6a66e6
+$ docker pull golang@sha256:38d94189fc989cb4669cd1e0c9dede128d779c1ae7922a518ca293c22d4cfba2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.4 MB (296400242 bytes)**  
+-	Total Size: **296.4 MB (296399627 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e7843922480b6d0e44719be61547fb74ad98114a908936e1f5af6bc8f2499ec`
+-	Image ID: `sha256:79f43d390026dd361d5f29d6b1281b3446814bcdba8779b58f01b9204a2f7206`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1765152000'
-# Mon, 08 Dec 2025 22:28:27 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1766966400'
+# Tue, 30 Dec 2025 01:30:53 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 23:21:25 GMT
+# Tue, 30 Dec 2025 03:16:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:41:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:12:24 GMT
+# Tue, 30 Dec 2025 08:43:34 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:12:25 GMT
+# Tue, 30 Dec 2025 08:43:35 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:c088128ea77bb5c706bb00930020ea2fba147060275f49c5a7be6b54af5ca7c8`  
-		Last Modified: Mon, 08 Dec 2025 22:17:06 GMT  
-		Size: 52.3 MB (52326977 bytes)  
+	-	`sha256:48e256c4119c0ad256492d6a930e99d2b2d7f8d7920d619aa2de4f616c37076e`  
+		Last Modified: Mon, 29 Dec 2025 22:25:39 GMT  
+		Size: 52.3 MB (52326998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4109a037ac4c69c3ce26e6d14e10c867842083c363485abd63db45502611991`  
-		Last Modified: Mon, 08 Dec 2025 22:28:59 GMT  
-		Size: 25.7 MB (25672209 bytes)  
+	-	`sha256:7517c515ac5fd6799cec288b72512b8ea3fc54d2d37de5af54d06ba0ea2f21bf`  
+		Last Modified: Tue, 30 Dec 2025 01:31:20 GMT  
+		Size: 25.7 MB (25672165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd2b93c70c0b05a907d16ae217d77a407e9aa88f69499ffbfee4375b49ab6c01`  
-		Last Modified: Mon, 08 Dec 2025 23:22:14 GMT  
-		Size: 69.8 MB (69846008 bytes)  
+	-	`sha256:f30ff2cfb691fedcba1692cb13fd0632001d1a876833f4cd2aa52eba87257a8f`  
+		Last Modified: Tue, 30 Dec 2025 03:17:48 GMT  
+		Size: 69.8 MB (69845530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21fcf0300c06237c12ec60c09556f95a6b8c833ba82bfc5828beb977742de538`  
-		Last Modified: Tue, 09 Dec 2025 02:13:29 GMT  
-		Size: 90.4 MB (90419946 bytes)  
+	-	`sha256:4fb3fd09a1e6774e533a42b26351be92003f5bdea475b8caa70173ad58b79d9f`  
+		Last Modified: Tue, 30 Dec 2025 08:43:16 GMT  
+		Size: 90.4 MB (90419830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0da503e4b3d4a624ac596179648e9a31a4f87f7d37fdb8c7bef57190d6ed7d`  
 		Last Modified: Tue, 02 Dec 2025 17:48:12 GMT  
 		Size: 58.1 MB (58134946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88a20f8398526b7e32e5610cbaf93e2d1dc9ef12fe14e2f40d8981cbf322083f`  
-		Last Modified: Tue, 09 Dec 2025 02:13:23 GMT  
-		Size: 124.0 B  
+	-	`sha256:a693eb291fd37cdf058fb56482da756e64e2b2e28c0a084790b4bba6d73d47d9`  
+		Last Modified: Tue, 30 Dec 2025 08:44:18 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -18353,24 +18353,24 @@ WORKDIR /go
 ### `golang:1.25-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:26f6b8379232a27c484820400b1d8f4aed4033968a8ea21ba0f8221e7d6f19eb
+$ docker pull golang@sha256:13c9b232ce5bc5e21833509fe7098aad08da59ee1e752328777adfa4d917a39f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 MB (10496078 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63c6f5c90c55d3f98b3e3134a332c426d11b6cbfc21b5050509fc7e9bbb85dad`
+-	Image ID: `sha256:dba7ccd450406b2ce1ba2a42121ccaa55389c5da662edd0a2a8d78ed9e635909`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9cce1234d409d1894452021b7e8872ff49b9855f41f46b8e5079291672e81da`  
-		Last Modified: Tue, 09 Dec 2025 03:24:12 GMT  
+	-	`sha256:87df208d0395c75ef8e192108b85abc0404e28a1904f930f603014af5bf76d7c`  
+		Last Modified: Tue, 30 Dec 2025 09:23:07 GMT  
 		Size: 10.5 MB (10468233 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4cc991258b0b5f35f2d2a8630acdfc640f89cdf40bb6fb47d6a78752739fa826`  
-		Last Modified: Tue, 09 Dec 2025 03:24:13 GMT  
+	-	`sha256:5d6ef4d6d953659578b9845d136f3d0126eaade6659d8060bf825b5c778eb0a2`  
+		Last Modified: Tue, 30 Dec 2025 09:23:08 GMT  
 		Size: 27.8 KB (27845 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18815,7 +18815,7 @@ WORKDIR C:\go
 ## `golang:1.25-trixie`
 
 ```console
-$ docker pull golang@sha256:674418a0e262957bb2f5cb55f2519fb77616379ec6d5722f09ffe8fdfae7660e
+$ docker pull golang@sha256:cab89fb5baa0c86095f2b6e54a2bcf34c324396e35ca06b025e3edfb3f07363d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19202,63 +19202,63 @@ $ docker pull golang@sha256:312235b61145fb1b0c9456ad38521dd04291819de65be02297ed
 ### `golang:1.25-trixie` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:edda83f1c330d90345cca76d1383b5cb5523b5aa9b481b1487be4059b72f0984
+$ docker pull golang@sha256:d6ad7fce8bdce5315f037cd9aff445d4cf7d7325333c8bb003403f0563ae7d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.1 MB (304078218 bytes)**  
+-	Total Size: **304.1 MB (304086918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1461c7db1331b19e172169e7312b31426366775a7635368ee57b90039298379f`
+-	Image ID: `sha256:16fd018bd874346d1dc0a6ebb6af7e779e7a2fcc45e6869943a48eca07e1a658`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 06:20:59 GMT
+# Tue, 30 Dec 2025 10:25:10 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 06:21:00 GMT
+# Tue, 30 Dec 2025 10:25:11 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0da503e4b3d4a624ac596179648e9a31a4f87f7d37fdb8c7bef57190d6ed7d`  
 		Last Modified: Tue, 02 Dec 2025 17:48:12 GMT  
 		Size: 58.1 MB (58134946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6849ad71391fbbeff8d3472dbaf3d868186dc95123c70609a1adde617759e1ac`  
-		Last Modified: Tue, 09 Dec 2025 06:22:22 GMT  
+	-	`sha256:745a29a39a173b26b9ebf23e656da3218659ccc1713088694c73d5b2ce8105de`  
+		Last Modified: Tue, 30 Dec 2025 10:26:04 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -19269,24 +19269,24 @@ WORKDIR /go
 ### `golang:1.25-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:0df8c06a7aec2e4ec38f44656ab30d04a0e6cfbc01fd857463e692dc4d078265
+$ docker pull golang@sha256:fa5fd6b8bb561a988859f3d4a9ad6bb55aab28d307b6e2bbc6f9119ef2fa803f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10809257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8fc0ea5c25eb7d1fdf78eca32487758741ba89c533f4f8f1a157b373321c2d5c`
+-	Image ID: `sha256:f018751f15089b3b14839c7faee6f2236566dd323b394b432e1e43044e663795`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fd7ba604dfe0652a6c107f74a16e99c4d148aa256b5bf017d2e5bdc093a7f9a7`  
-		Last Modified: Tue, 09 Dec 2025 09:22:58 GMT  
+	-	`sha256:358257bb853235928e85e14dc05b9e21dba422364df90d265560bafe83dfc589`  
+		Last Modified: Tue, 30 Dec 2025 12:22:50 GMT  
 		Size: 10.8 MB (10780236 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c37d00d6023ca454fe54a45729be587e4a531f26ed20aad02672f290a21c1a86`  
-		Last Modified: Tue, 09 Dec 2025 09:22:59 GMT  
+	-	`sha256:f0a8ca6d0806afbdef720cef4b9a9010482a3c8b4e93d03d717aa0a5a6173cc9`  
+		Last Modified: Tue, 30 Dec 2025 12:22:51 GMT  
 		Size: 29.0 KB (29021 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19384,63 +19384,63 @@ $ docker pull golang@sha256:1d42ef18ecb6983d9a5771931346da837b56993c8ac8c4781b0f
 ### `golang:1.25-trixie` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:8e612b7aa289e9adfc9d7ebf758e773772283ad5001a00c01d7e5f0df0081b8f
+$ docker pull golang@sha256:dbacffbf856eb14cf139f2b7c4d30338357928cfa32bc85aeb8bffed531c5f62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.2 MB (280163602 bytes)**  
+-	Total Size: **280.2 MB (280169485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97c6f589aa3269204b9a2cffd8841408da19f832f8e775a295d4adae8b8f5ece`
+-	Image ID: `sha256:222c2c9ffd786468fc343769bfb474611a124ec22468a0bf9af8bc61cbe74541`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:5388570833e7ff5a3b6ddf9a424d471e073c109ee58e115df3ece488cbb89d91`  
+		Last Modified: Tue, 30 Dec 2025 06:13:01 GMT  
+		Size: 75.9 MB (75919348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:036b6dba2ceabbb92eb6c9ebccd3e6b705dacf7cc4426156bbedfd17ad5dc53b`  
 		Last Modified: Tue, 02 Dec 2025 17:49:47 GMT  
 		Size: 59.5 MB (59487220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42a9e961325948363100d5bf4169ac5a2766670063f6aa5d0860b8ed7f03d0b2`  
-		Last Modified: Tue, 09 Dec 2025 03:00:12 GMT  
+	-	`sha256:e51f5064feef79db34c21a2dd41749a2916949d03779f5c73c692a7d8deaadd7`  
+		Last Modified: Tue, 30 Dec 2025 06:12:57 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -19451,24 +19451,24 @@ WORKDIR /go
 ### `golang:1.25-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:866476b6405d21e9121a8e6952a69e4d0a8dd9fe6bdb4b68729b5528affe5728
+$ docker pull golang@sha256:9b4e9000d302d567d94b5dcc7fe080e403bcf723deb3d8794d544c32c71bd8c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10623777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:146637d5f45edabe69713bc1007ffb29eafc03744b756bcaf57639a7cf41ccc5`
+-	Image ID: `sha256:20064c1161ab4c5f446c880bd89a41873fbcceb4b33db56e9f4395f80aa77a1e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c28e78f5457bc3963bafaa56ed6586f2a1a334fcf0a4644de495b1f4f6d53161`  
-		Last Modified: Tue, 09 Dec 2025 03:23:53 GMT  
+	-	`sha256:374539d44b6a4a49375d49799d09dc7cc8efbb7a1c873191aa5dc9b9f426be60`  
+		Last Modified: Tue, 30 Dec 2025 09:23:07 GMT  
 		Size: 10.6 MB (10594828 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7742e5e1ba6aa2a09a3ef3a9d0d030403983f72d69e78059b1fb856129652fd6`  
-		Last Modified: Tue, 09 Dec 2025 03:23:54 GMT  
+	-	`sha256:e955d7ff6063882dc3be109953449ae3ee88be05efa1ead5ac81a297692d54b6`  
+		Last Modified: Tue, 30 Dec 2025 09:23:08 GMT  
 		Size: 28.9 KB (28949 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19894,7 +19894,7 @@ WORKDIR C:\go
 ## `golang:1.25.5`
 
 ```console
-$ docker pull golang@sha256:6396b3d8039d2050ab7a3c5c6e1cbeed8bf6d2ddc0403e1ab39d78749227ca19
+$ docker pull golang@sha256:31c1e53dfc1cc2d269deec9c83f58729fa3c53dc9a576f6426109d1e319e9e9a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20283,63 +20283,63 @@ $ docker pull golang@sha256:312235b61145fb1b0c9456ad38521dd04291819de65be02297ed
 ### `golang:1.25.5` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:edda83f1c330d90345cca76d1383b5cb5523b5aa9b481b1487be4059b72f0984
+$ docker pull golang@sha256:d6ad7fce8bdce5315f037cd9aff445d4cf7d7325333c8bb003403f0563ae7d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.1 MB (304078218 bytes)**  
+-	Total Size: **304.1 MB (304086918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1461c7db1331b19e172169e7312b31426366775a7635368ee57b90039298379f`
+-	Image ID: `sha256:16fd018bd874346d1dc0a6ebb6af7e779e7a2fcc45e6869943a48eca07e1a658`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 06:20:59 GMT
+# Tue, 30 Dec 2025 10:25:10 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 06:21:00 GMT
+# Tue, 30 Dec 2025 10:25:11 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0da503e4b3d4a624ac596179648e9a31a4f87f7d37fdb8c7bef57190d6ed7d`  
 		Last Modified: Tue, 02 Dec 2025 17:48:12 GMT  
 		Size: 58.1 MB (58134946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6849ad71391fbbeff8d3472dbaf3d868186dc95123c70609a1adde617759e1ac`  
-		Last Modified: Tue, 09 Dec 2025 06:22:22 GMT  
+	-	`sha256:745a29a39a173b26b9ebf23e656da3218659ccc1713088694c73d5b2ce8105de`  
+		Last Modified: Tue, 30 Dec 2025 10:26:04 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -20350,24 +20350,24 @@ WORKDIR /go
 ### `golang:1.25.5` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:0df8c06a7aec2e4ec38f44656ab30d04a0e6cfbc01fd857463e692dc4d078265
+$ docker pull golang@sha256:fa5fd6b8bb561a988859f3d4a9ad6bb55aab28d307b6e2bbc6f9119ef2fa803f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10809257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8fc0ea5c25eb7d1fdf78eca32487758741ba89c533f4f8f1a157b373321c2d5c`
+-	Image ID: `sha256:f018751f15089b3b14839c7faee6f2236566dd323b394b432e1e43044e663795`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fd7ba604dfe0652a6c107f74a16e99c4d148aa256b5bf017d2e5bdc093a7f9a7`  
-		Last Modified: Tue, 09 Dec 2025 09:22:58 GMT  
+	-	`sha256:358257bb853235928e85e14dc05b9e21dba422364df90d265560bafe83dfc589`  
+		Last Modified: Tue, 30 Dec 2025 12:22:50 GMT  
 		Size: 10.8 MB (10780236 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c37d00d6023ca454fe54a45729be587e4a531f26ed20aad02672f290a21c1a86`  
-		Last Modified: Tue, 09 Dec 2025 09:22:59 GMT  
+	-	`sha256:f0a8ca6d0806afbdef720cef4b9a9010482a3c8b4e93d03d717aa0a5a6173cc9`  
+		Last Modified: Tue, 30 Dec 2025 12:22:51 GMT  
 		Size: 29.0 KB (29021 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20465,63 +20465,63 @@ $ docker pull golang@sha256:1d42ef18ecb6983d9a5771931346da837b56993c8ac8c4781b0f
 ### `golang:1.25.5` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:8e612b7aa289e9adfc9d7ebf758e773772283ad5001a00c01d7e5f0df0081b8f
+$ docker pull golang@sha256:dbacffbf856eb14cf139f2b7c4d30338357928cfa32bc85aeb8bffed531c5f62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.2 MB (280163602 bytes)**  
+-	Total Size: **280.2 MB (280169485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97c6f589aa3269204b9a2cffd8841408da19f832f8e775a295d4adae8b8f5ece`
+-	Image ID: `sha256:222c2c9ffd786468fc343769bfb474611a124ec22468a0bf9af8bc61cbe74541`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:5388570833e7ff5a3b6ddf9a424d471e073c109ee58e115df3ece488cbb89d91`  
+		Last Modified: Tue, 30 Dec 2025 06:13:01 GMT  
+		Size: 75.9 MB (75919348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:036b6dba2ceabbb92eb6c9ebccd3e6b705dacf7cc4426156bbedfd17ad5dc53b`  
 		Last Modified: Tue, 02 Dec 2025 17:49:47 GMT  
 		Size: 59.5 MB (59487220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42a9e961325948363100d5bf4169ac5a2766670063f6aa5d0860b8ed7f03d0b2`  
-		Last Modified: Tue, 09 Dec 2025 03:00:12 GMT  
+	-	`sha256:e51f5064feef79db34c21a2dd41749a2916949d03779f5c73c692a7d8deaadd7`  
+		Last Modified: Tue, 30 Dec 2025 06:12:57 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -20532,24 +20532,24 @@ WORKDIR /go
 ### `golang:1.25.5` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:866476b6405d21e9121a8e6952a69e4d0a8dd9fe6bdb4b68729b5528affe5728
+$ docker pull golang@sha256:9b4e9000d302d567d94b5dcc7fe080e403bcf723deb3d8794d544c32c71bd8c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10623777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:146637d5f45edabe69713bc1007ffb29eafc03744b756bcaf57639a7cf41ccc5`
+-	Image ID: `sha256:20064c1161ab4c5f446c880bd89a41873fbcceb4b33db56e9f4395f80aa77a1e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c28e78f5457bc3963bafaa56ed6586f2a1a334fcf0a4644de495b1f4f6d53161`  
-		Last Modified: Tue, 09 Dec 2025 03:23:53 GMT  
+	-	`sha256:374539d44b6a4a49375d49799d09dc7cc8efbb7a1c873191aa5dc9b9f426be60`  
+		Last Modified: Tue, 30 Dec 2025 09:23:07 GMT  
 		Size: 10.6 MB (10594828 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7742e5e1ba6aa2a09a3ef3a9d0d030403983f72d69e78059b1fb856129652fd6`  
-		Last Modified: Tue, 09 Dec 2025 03:23:54 GMT  
+	-	`sha256:e955d7ff6063882dc3be109953449ae3ee88be05efa1ead5ac81a297692d54b6`  
+		Last Modified: Tue, 30 Dec 2025 09:23:08 GMT  
 		Size: 28.9 KB (28949 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22757,7 +22757,7 @@ $ docker pull golang@sha256:87d9d8f820d61adcac8d8076cd4de81d5a4159680105149d081e
 ## `golang:1.25.5-bookworm`
 
 ```console
-$ docker pull golang@sha256:01762abf6fea478a3bdf5778b1453c734f1780baf1b96655d42e0ebf2fa2b73b
+$ docker pull golang@sha256:d63fcbd9b3d3debebfc158906a9af85b027ff7dbaa4500cbf7ddca0354f3579c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23231,64 +23231,64 @@ $ docker pull golang@sha256:e376c4db3bc5f768252f6e6982027b9747b4cf33ebfb9fe53206
 ### `golang:1.25.5-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:7be8e0eb4743fe5ddea75f00797a0249e041a91f857803ce90dc0aec4d6a66e6
+$ docker pull golang@sha256:38d94189fc989cb4669cd1e0c9dede128d779c1ae7922a518ca293c22d4cfba2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.4 MB (296400242 bytes)**  
+-	Total Size: **296.4 MB (296399627 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e7843922480b6d0e44719be61547fb74ad98114a908936e1f5af6bc8f2499ec`
+-	Image ID: `sha256:79f43d390026dd361d5f29d6b1281b3446814bcdba8779b58f01b9204a2f7206`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1765152000'
-# Mon, 08 Dec 2025 22:28:27 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1766966400'
+# Tue, 30 Dec 2025 01:30:53 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 23:21:25 GMT
+# Tue, 30 Dec 2025 03:16:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:41:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:12:24 GMT
+# Tue, 30 Dec 2025 08:43:34 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:12:25 GMT
+# Tue, 30 Dec 2025 08:43:35 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:c088128ea77bb5c706bb00930020ea2fba147060275f49c5a7be6b54af5ca7c8`  
-		Last Modified: Mon, 08 Dec 2025 22:17:06 GMT  
-		Size: 52.3 MB (52326977 bytes)  
+	-	`sha256:48e256c4119c0ad256492d6a930e99d2b2d7f8d7920d619aa2de4f616c37076e`  
+		Last Modified: Mon, 29 Dec 2025 22:25:39 GMT  
+		Size: 52.3 MB (52326998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4109a037ac4c69c3ce26e6d14e10c867842083c363485abd63db45502611991`  
-		Last Modified: Mon, 08 Dec 2025 22:28:59 GMT  
-		Size: 25.7 MB (25672209 bytes)  
+	-	`sha256:7517c515ac5fd6799cec288b72512b8ea3fc54d2d37de5af54d06ba0ea2f21bf`  
+		Last Modified: Tue, 30 Dec 2025 01:31:20 GMT  
+		Size: 25.7 MB (25672165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd2b93c70c0b05a907d16ae217d77a407e9aa88f69499ffbfee4375b49ab6c01`  
-		Last Modified: Mon, 08 Dec 2025 23:22:14 GMT  
-		Size: 69.8 MB (69846008 bytes)  
+	-	`sha256:f30ff2cfb691fedcba1692cb13fd0632001d1a876833f4cd2aa52eba87257a8f`  
+		Last Modified: Tue, 30 Dec 2025 03:17:48 GMT  
+		Size: 69.8 MB (69845530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21fcf0300c06237c12ec60c09556f95a6b8c833ba82bfc5828beb977742de538`  
-		Last Modified: Tue, 09 Dec 2025 02:13:29 GMT  
-		Size: 90.4 MB (90419946 bytes)  
+	-	`sha256:4fb3fd09a1e6774e533a42b26351be92003f5bdea475b8caa70173ad58b79d9f`  
+		Last Modified: Tue, 30 Dec 2025 08:43:16 GMT  
+		Size: 90.4 MB (90419830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0da503e4b3d4a624ac596179648e9a31a4f87f7d37fdb8c7bef57190d6ed7d`  
 		Last Modified: Tue, 02 Dec 2025 17:48:12 GMT  
 		Size: 58.1 MB (58134946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88a20f8398526b7e32e5610cbaf93e2d1dc9ef12fe14e2f40d8981cbf322083f`  
-		Last Modified: Tue, 09 Dec 2025 02:13:23 GMT  
-		Size: 124.0 B  
+	-	`sha256:a693eb291fd37cdf058fb56482da756e64e2b2e28c0a084790b4bba6d73d47d9`  
+		Last Modified: Tue, 30 Dec 2025 08:44:18 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -23298,24 +23298,24 @@ WORKDIR /go
 ### `golang:1.25.5-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:26f6b8379232a27c484820400b1d8f4aed4033968a8ea21ba0f8221e7d6f19eb
+$ docker pull golang@sha256:13c9b232ce5bc5e21833509fe7098aad08da59ee1e752328777adfa4d917a39f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 MB (10496078 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63c6f5c90c55d3f98b3e3134a332c426d11b6cbfc21b5050509fc7e9bbb85dad`
+-	Image ID: `sha256:dba7ccd450406b2ce1ba2a42121ccaa55389c5da662edd0a2a8d78ed9e635909`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9cce1234d409d1894452021b7e8872ff49b9855f41f46b8e5079291672e81da`  
-		Last Modified: Tue, 09 Dec 2025 03:24:12 GMT  
+	-	`sha256:87df208d0395c75ef8e192108b85abc0404e28a1904f930f603014af5bf76d7c`  
+		Last Modified: Tue, 30 Dec 2025 09:23:07 GMT  
 		Size: 10.5 MB (10468233 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4cc991258b0b5f35f2d2a8630acdfc640f89cdf40bb6fb47d6a78752739fa826`  
-		Last Modified: Tue, 09 Dec 2025 03:24:13 GMT  
+	-	`sha256:5d6ef4d6d953659578b9845d136f3d0126eaade6659d8060bf825b5c778eb0a2`  
+		Last Modified: Tue, 30 Dec 2025 09:23:08 GMT  
 		Size: 27.8 KB (27845 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23760,7 +23760,7 @@ WORKDIR C:\go
 ## `golang:1.25.5-trixie`
 
 ```console
-$ docker pull golang@sha256:674418a0e262957bb2f5cb55f2519fb77616379ec6d5722f09ffe8fdfae7660e
+$ docker pull golang@sha256:cab89fb5baa0c86095f2b6e54a2bcf34c324396e35ca06b025e3edfb3f07363d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24147,63 +24147,63 @@ $ docker pull golang@sha256:312235b61145fb1b0c9456ad38521dd04291819de65be02297ed
 ### `golang:1.25.5-trixie` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:edda83f1c330d90345cca76d1383b5cb5523b5aa9b481b1487be4059b72f0984
+$ docker pull golang@sha256:d6ad7fce8bdce5315f037cd9aff445d4cf7d7325333c8bb003403f0563ae7d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.1 MB (304078218 bytes)**  
+-	Total Size: **304.1 MB (304086918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1461c7db1331b19e172169e7312b31426366775a7635368ee57b90039298379f`
+-	Image ID: `sha256:16fd018bd874346d1dc0a6ebb6af7e779e7a2fcc45e6869943a48eca07e1a658`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 06:20:59 GMT
+# Tue, 30 Dec 2025 10:25:10 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 06:21:00 GMT
+# Tue, 30 Dec 2025 10:25:11 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0da503e4b3d4a624ac596179648e9a31a4f87f7d37fdb8c7bef57190d6ed7d`  
 		Last Modified: Tue, 02 Dec 2025 17:48:12 GMT  
 		Size: 58.1 MB (58134946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6849ad71391fbbeff8d3472dbaf3d868186dc95123c70609a1adde617759e1ac`  
-		Last Modified: Tue, 09 Dec 2025 06:22:22 GMT  
+	-	`sha256:745a29a39a173b26b9ebf23e656da3218659ccc1713088694c73d5b2ce8105de`  
+		Last Modified: Tue, 30 Dec 2025 10:26:04 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -24214,24 +24214,24 @@ WORKDIR /go
 ### `golang:1.25.5-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:0df8c06a7aec2e4ec38f44656ab30d04a0e6cfbc01fd857463e692dc4d078265
+$ docker pull golang@sha256:fa5fd6b8bb561a988859f3d4a9ad6bb55aab28d307b6e2bbc6f9119ef2fa803f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10809257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8fc0ea5c25eb7d1fdf78eca32487758741ba89c533f4f8f1a157b373321c2d5c`
+-	Image ID: `sha256:f018751f15089b3b14839c7faee6f2236566dd323b394b432e1e43044e663795`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fd7ba604dfe0652a6c107f74a16e99c4d148aa256b5bf017d2e5bdc093a7f9a7`  
-		Last Modified: Tue, 09 Dec 2025 09:22:58 GMT  
+	-	`sha256:358257bb853235928e85e14dc05b9e21dba422364df90d265560bafe83dfc589`  
+		Last Modified: Tue, 30 Dec 2025 12:22:50 GMT  
 		Size: 10.8 MB (10780236 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c37d00d6023ca454fe54a45729be587e4a531f26ed20aad02672f290a21c1a86`  
-		Last Modified: Tue, 09 Dec 2025 09:22:59 GMT  
+	-	`sha256:f0a8ca6d0806afbdef720cef4b9a9010482a3c8b4e93d03d717aa0a5a6173cc9`  
+		Last Modified: Tue, 30 Dec 2025 12:22:51 GMT  
 		Size: 29.0 KB (29021 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24329,63 +24329,63 @@ $ docker pull golang@sha256:1d42ef18ecb6983d9a5771931346da837b56993c8ac8c4781b0f
 ### `golang:1.25.5-trixie` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:8e612b7aa289e9adfc9d7ebf758e773772283ad5001a00c01d7e5f0df0081b8f
+$ docker pull golang@sha256:dbacffbf856eb14cf139f2b7c4d30338357928cfa32bc85aeb8bffed531c5f62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.2 MB (280163602 bytes)**  
+-	Total Size: **280.2 MB (280169485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97c6f589aa3269204b9a2cffd8841408da19f832f8e775a295d4adae8b8f5ece`
+-	Image ID: `sha256:222c2c9ffd786468fc343769bfb474611a124ec22468a0bf9af8bc61cbe74541`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:5388570833e7ff5a3b6ddf9a424d471e073c109ee58e115df3ece488cbb89d91`  
+		Last Modified: Tue, 30 Dec 2025 06:13:01 GMT  
+		Size: 75.9 MB (75919348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:036b6dba2ceabbb92eb6c9ebccd3e6b705dacf7cc4426156bbedfd17ad5dc53b`  
 		Last Modified: Tue, 02 Dec 2025 17:49:47 GMT  
 		Size: 59.5 MB (59487220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42a9e961325948363100d5bf4169ac5a2766670063f6aa5d0860b8ed7f03d0b2`  
-		Last Modified: Tue, 09 Dec 2025 03:00:12 GMT  
+	-	`sha256:e51f5064feef79db34c21a2dd41749a2916949d03779f5c73c692a7d8deaadd7`  
+		Last Modified: Tue, 30 Dec 2025 06:12:57 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -24396,24 +24396,24 @@ WORKDIR /go
 ### `golang:1.25.5-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:866476b6405d21e9121a8e6952a69e4d0a8dd9fe6bdb4b68729b5528affe5728
+$ docker pull golang@sha256:9b4e9000d302d567d94b5dcc7fe080e403bcf723deb3d8794d544c32c71bd8c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10623777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:146637d5f45edabe69713bc1007ffb29eafc03744b756bcaf57639a7cf41ccc5`
+-	Image ID: `sha256:20064c1161ab4c5f446c880bd89a41873fbcceb4b33db56e9f4395f80aa77a1e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c28e78f5457bc3963bafaa56ed6586f2a1a334fcf0a4644de495b1f4f6d53161`  
-		Last Modified: Tue, 09 Dec 2025 03:23:53 GMT  
+	-	`sha256:374539d44b6a4a49375d49799d09dc7cc8efbb7a1c873191aa5dc9b9f426be60`  
+		Last Modified: Tue, 30 Dec 2025 09:23:07 GMT  
 		Size: 10.6 MB (10594828 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7742e5e1ba6aa2a09a3ef3a9d0d030403983f72d69e78059b1fb856129652fd6`  
-		Last Modified: Tue, 09 Dec 2025 03:23:54 GMT  
+	-	`sha256:e955d7ff6063882dc3be109953449ae3ee88be05efa1ead5ac81a297692d54b6`  
+		Last Modified: Tue, 30 Dec 2025 09:23:08 GMT  
 		Size: 28.9 KB (28949 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24839,7 +24839,7 @@ WORKDIR C:\go
 ## `golang:1.26-rc`
 
 ```console
-$ docker pull golang@sha256:69444269706f3b57a02b08d931f3ef8ff28d6131b21ed6ecb77a09cdf786ee60
+$ docker pull golang@sha256:3b111490645266a382b58731a948694adad8931c72210f9c1eeb8e58e2a6aac9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25228,63 +25228,63 @@ $ docker pull golang@sha256:8493e8572d1d6bd863f8293d5e1ff6944f2d38d70325c34d10a3
 ### `golang:1.26-rc` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:02391392bb5e4548316b1ba1d4cfd18a5bfe746b2dbf7f6a71d8ea03da0f06a8
+$ docker pull golang@sha256:ef70c0ca0568f89a4a7bcd1bad6b176e7b03b39e00c44672ce22a27f2144abf0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.9 MB (310852014 bytes)**  
+-	Total Size: **310.9 MB (310860714 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8105ca0741b74c46a6fed414a0d1713e27a89c560fa0ec4f3b71c2eae47d05bf`
+-	Image ID: `sha256:fbc334cd1c3847fe07f168adf51cd6934afbbbd0cfe7fef90cdb2a3ef8e7ef5a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOLANG_VERSION=1.26rc1
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOTOOLCHAIN=local
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOPATH=/go
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 COPY /target/ / # buildkit
-# Wed, 17 Dec 2025 01:01:38 GMT
+# Tue, 30 Dec 2025 10:23:19 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Wed, 17 Dec 2025 01:01:39 GMT
+# Tue, 30 Dec 2025 10:23:19 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a3088682d0ab1830136cb2326cfa3798a9c292a02b0c2f6b01b9f81e25ea7d0`  
 		Last Modified: Wed, 17 Dec 2025 01:02:42 GMT  
 		Size: 64.9 MB (64908741 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4f16404f2970b174a17464b5a85a025bea205e032251f7cc4cf74050dd8889a`  
-		Last Modified: Wed, 17 Dec 2025 01:02:38 GMT  
+	-	`sha256:e4c2085e8bb9607ad548791b439890f2283e7f2e5d74499441f6cd75d0ea17ec`  
+		Last Modified: Tue, 30 Dec 2025 10:24:53 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -25295,24 +25295,24 @@ WORKDIR /go
 ### `golang:1.26-rc` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:5117fbf6aaaee6c8928618f54c81cf181b8eda36c09eabb7008b44958bb9f6db
+$ docker pull golang@sha256:3fff630c5c2319130ce07e4093c994e283dfd6ee1cf547c7b65ff977b5674505
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10808375 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cb87c98e2e9886b00ec79e489bb4050e2327e803a7d4eb93b02678fd261a341`
+-	Image ID: `sha256:a8af29db01a5267215c762539999a5a9c35003b4a2327e20aac6fb97ead04976`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a6d306d6689e22118c6c6caf8fdffb4035f0d4c75391ae04f7892fb4c8d05bf2`  
-		Last Modified: Wed, 17 Dec 2025 03:24:09 GMT  
+	-	`sha256:9774e2f1d97bff61438d0f281fc2d96b3b1bc7732ba1c04c3c8b5e2e28ecc9f7`  
+		Last Modified: Tue, 30 Dec 2025 12:23:59 GMT  
 		Size: 10.8 MB (10780520 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:225243053c164e950109263f28d4c6caf38641a8c7a032b0d7af53c4cdf09ee5`  
-		Last Modified: Wed, 17 Dec 2025 03:24:10 GMT  
+	-	`sha256:47cb09eaeb40b3af452772c03e639fc8261584957c883483a6062be1bf2efaef`  
+		Last Modified: Tue, 30 Dec 2025 12:23:59 GMT  
 		Size: 27.9 KB (27855 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25410,63 +25410,63 @@ $ docker pull golang@sha256:b7ce368639d130b03a1079251df8f2bfa36b126efb88e56bd1cb
 ### `golang:1.26-rc` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:19512e50eb536b90c0117c78e484304a528a365b7b7b8e5a0a3125a81d7d6356
+$ docker pull golang@sha256:7c295d7fd599fb8724267a63549396e4db6aa9f1c0b652eb3b8589839eaa0e80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **287.3 MB (287269529 bytes)**  
+-	Total Size: **287.3 MB (287275412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9c18deb0d6faa0b8df7bdeffd6329e6bcf63c76083bb88147216a4c255fbee1`
+-	Image ID: `sha256:880dfbe5d8a761f37159fd98ae21024a3a3d09c041cae58bc08e2ba85135fca0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV GOLANG_VERSION=1.26rc1
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV GOTOOLCHAIN=local
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV GOPATH=/go
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 COPY /target/ / # buildkit
-# Wed, 17 Dec 2025 00:42:04 GMT
+# Tue, 30 Dec 2025 06:12:26 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Wed, 17 Dec 2025 00:42:04 GMT
+# Tue, 30 Dec 2025 06:12:26 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:5388570833e7ff5a3b6ddf9a424d471e073c109ee58e115df3ece488cbb89d91`  
+		Last Modified: Tue, 30 Dec 2025 06:13:01 GMT  
+		Size: 75.9 MB (75919348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5c6195c373af6e3982d7a711643ecf73812b86bd87d16a9c88b9bee077b8d872`  
 		Last Modified: Wed, 17 Dec 2025 00:42:38 GMT  
 		Size: 66.6 MB (66593147 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:728450c1995546f609e9144479902f6e4eda72a0035298166c2783fb622f7c4f`  
-		Last Modified: Wed, 17 Dec 2025 00:42:32 GMT  
+	-	`sha256:f861a1fcd0d61931c135b5f900ef4d228a8e0c9401dc733dfa98b11b86adbf14`  
+		Last Modified: Tue, 30 Dec 2025 06:12:55 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -25477,24 +25477,24 @@ WORKDIR /go
 ### `golang:1.26-rc` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:83b4dbd0955a0fbe742a0544d0dd1cd77aa8f1e3aaaf850faea81c9d4ae6aa58
+$ docker pull golang@sha256:35d87a5c7c8d90a6142b4d08622d61a9bc9a0a83334896b95cea544108505d1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10622941 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7aad1ef1b1aeba2216b4505ea6bc7257f3d27f0c839854d2d49bac4fd7a13b9d`
+-	Image ID: `sha256:173ca90e669d36b9b07e5594ab6d921f415b73f0cd50f0daf05442e5ab6f1803`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:88331859d8ab410255eeeb5c946f2274e991000c1daf8617a6182cd83115b4bd`  
-		Last Modified: Wed, 17 Dec 2025 03:24:20 GMT  
+	-	`sha256:6413c92eba2cfd4b831ffeddd345a0253d007ad99c5916295f5bff21bfaee14b`  
+		Last Modified: Tue, 30 Dec 2025 09:24:42 GMT  
 		Size: 10.6 MB (10595134 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfdcc6df19e2a9afb72ca4c6c699da4c24c8dc6e912a596b6bc6af7c084517ec`  
-		Last Modified: Wed, 17 Dec 2025 03:24:21 GMT  
+	-	`sha256:134f66bc9dd5fd647b0e995634f47e374ded5ccec59c59d60d56c0b3fe240086`  
+		Last Modified: Tue, 30 Dec 2025 09:24:43 GMT  
 		Size: 27.8 KB (27807 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -27702,7 +27702,7 @@ $ docker pull golang@sha256:4c769df565259333d248bb9678f216e3b8dd6be7ca869dce94ff
 ## `golang:1.26-rc-bookworm`
 
 ```console
-$ docker pull golang@sha256:f9c3cd34288800790b0a559321ddd76d8a1e1ae4e758c70c660d093296b23c25
+$ docker pull golang@sha256:58a22eef9af82752c2122444b67c1c07e5d60aa120bf35e4e827175b3e51dd2f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28176,63 +28176,63 @@ $ docker pull golang@sha256:33ff007b2c3355b206e3a637e0937f9a56e560bde8a7875247ff
 ### `golang:1.26-rc-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:45522edd6633b0d0322f05db2f53368dad0d7065797ab12e3ae9cbb0bdd7fa12
+$ docker pull golang@sha256:fcfaf5dedb7664fb1b40d771ce19d547444c36ac9f163202e216f3469c355d72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **303.2 MB (303174039 bytes)**  
+-	Total Size: **303.2 MB (303173422 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:693cb12029f989f0528febd9a16dbab59c8bad258f83fd851cbfb12d51802308`
+-	Image ID: `sha256:76edbcb448a933ce6eff95cf913863c0a4fd47fab6cda573e1d0adba6569ffe9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1765152000'
-# Mon, 08 Dec 2025 22:28:27 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1766966400'
+# Tue, 30 Dec 2025 01:30:53 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 23:21:25 GMT
+# Tue, 30 Dec 2025 03:16:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:41:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOLANG_VERSION=1.26rc1
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOTOOLCHAIN=local
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOPATH=/go
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 COPY /target/ / # buildkit
-# Wed, 17 Dec 2025 01:01:38 GMT
+# Tue, 30 Dec 2025 08:41:59 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Wed, 17 Dec 2025 01:01:39 GMT
+# Tue, 30 Dec 2025 08:42:00 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:c088128ea77bb5c706bb00930020ea2fba147060275f49c5a7be6b54af5ca7c8`  
-		Last Modified: Mon, 08 Dec 2025 22:17:06 GMT  
-		Size: 52.3 MB (52326977 bytes)  
+	-	`sha256:48e256c4119c0ad256492d6a930e99d2b2d7f8d7920d619aa2de4f616c37076e`  
+		Last Modified: Mon, 29 Dec 2025 22:25:39 GMT  
+		Size: 52.3 MB (52326998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4109a037ac4c69c3ce26e6d14e10c867842083c363485abd63db45502611991`  
-		Last Modified: Mon, 08 Dec 2025 22:28:59 GMT  
-		Size: 25.7 MB (25672209 bytes)  
+	-	`sha256:7517c515ac5fd6799cec288b72512b8ea3fc54d2d37de5af54d06ba0ea2f21bf`  
+		Last Modified: Tue, 30 Dec 2025 01:31:20 GMT  
+		Size: 25.7 MB (25672165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd2b93c70c0b05a907d16ae217d77a407e9aa88f69499ffbfee4375b49ab6c01`  
-		Last Modified: Mon, 08 Dec 2025 23:22:14 GMT  
-		Size: 69.8 MB (69846008 bytes)  
+	-	`sha256:f30ff2cfb691fedcba1692cb13fd0632001d1a876833f4cd2aa52eba87257a8f`  
+		Last Modified: Tue, 30 Dec 2025 03:17:48 GMT  
+		Size: 69.8 MB (69845530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21fcf0300c06237c12ec60c09556f95a6b8c833ba82bfc5828beb977742de538`  
-		Last Modified: Tue, 09 Dec 2025 02:13:29 GMT  
-		Size: 90.4 MB (90419946 bytes)  
+	-	`sha256:4fb3fd09a1e6774e533a42b26351be92003f5bdea475b8caa70173ad58b79d9f`  
+		Last Modified: Tue, 30 Dec 2025 08:43:16 GMT  
+		Size: 90.4 MB (90419830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a3088682d0ab1830136cb2326cfa3798a9c292a02b0c2f6b01b9f81e25ea7d0`  
 		Last Modified: Wed, 17 Dec 2025 01:02:42 GMT  
 		Size: 64.9 MB (64908741 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a95a2e41eb333774fd399e2df3b817f444c0992ae479f949193f840bbe2cad54`  
-		Last Modified: Wed, 17 Dec 2025 01:02:38 GMT  
+	-	`sha256:497b59d8cb0cd623c0e05ac41d01af6de0c651445bea5d29c933a21f8773da1b`  
+		Last Modified: Tue, 30 Dec 2025 08:43:09 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -28243,25 +28243,25 @@ WORKDIR /go
 ### `golang:1.26-rc-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:36e5f060000ae96f6dd38fc0fcc3da496a239b2c03dbc7e13c42f4fe20fe094f
+$ docker pull golang@sha256:82d6fda8e2ad1f8ab143b78a240479ad3578ae91d74d904e0f6b19196044df0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10496187 bytes)**  
+-	Total Size: **10.5 MB (10496360 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6034ed9ff37ffdfd5ed0bf7a09aecf15ad219cd26de009c2c56f577ec805531`
+-	Image ID: `sha256:e41cca9d7384284f55475a61a0d713eb7a2b26157955888ac374371aad230e2e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:97cd6bf3511ac8769be8d4a84567b502a1c8de4e599086c2975d9de6d15ead74`  
-		Last Modified: Wed, 17 Dec 2025 03:25:29 GMT  
+	-	`sha256:bb44a0964a1dd3389d122ed038b79b67db761ddfeb647fcbe2d20328c38ef3b2`  
+		Last Modified: Tue, 30 Dec 2025 09:24:39 GMT  
 		Size: 10.5 MB (10469099 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:555d9c727a9d433781d77cbdeeaa09f28671b6aca1026927d24cf5f5645db17b`  
-		Last Modified: Wed, 17 Dec 2025 03:25:30 GMT  
-		Size: 27.1 KB (27088 bytes)  
+	-	`sha256:c0fdd8a94241355c0eec43b080dfae7b4924ffc69e67be356faea1593bffa6e8`  
+		Last Modified: Tue, 30 Dec 2025 09:24:39 GMT  
+		Size: 27.3 KB (27261 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:1.26-rc-bookworm` - linux; s390x
@@ -28705,7 +28705,7 @@ WORKDIR C:\go
 ## `golang:1.26-rc-trixie`
 
 ```console
-$ docker pull golang@sha256:f7090e9acf439775c6bff0aa6c7eb39c2f7ec47445c8f8a5321383de8fbf8404
+$ docker pull golang@sha256:7fa9cd5cd04935e38cf19a3c46ff5f86b944a85ce2c039fd930c962f0eadafd8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29092,63 +29092,63 @@ $ docker pull golang@sha256:8493e8572d1d6bd863f8293d5e1ff6944f2d38d70325c34d10a3
 ### `golang:1.26-rc-trixie` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:02391392bb5e4548316b1ba1d4cfd18a5bfe746b2dbf7f6a71d8ea03da0f06a8
+$ docker pull golang@sha256:ef70c0ca0568f89a4a7bcd1bad6b176e7b03b39e00c44672ce22a27f2144abf0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.9 MB (310852014 bytes)**  
+-	Total Size: **310.9 MB (310860714 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8105ca0741b74c46a6fed414a0d1713e27a89c560fa0ec4f3b71c2eae47d05bf`
+-	Image ID: `sha256:fbc334cd1c3847fe07f168adf51cd6934afbbbd0cfe7fef90cdb2a3ef8e7ef5a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOLANG_VERSION=1.26rc1
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOTOOLCHAIN=local
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOPATH=/go
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 COPY /target/ / # buildkit
-# Wed, 17 Dec 2025 01:01:38 GMT
+# Tue, 30 Dec 2025 10:23:19 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Wed, 17 Dec 2025 01:01:39 GMT
+# Tue, 30 Dec 2025 10:23:19 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a3088682d0ab1830136cb2326cfa3798a9c292a02b0c2f6b01b9f81e25ea7d0`  
 		Last Modified: Wed, 17 Dec 2025 01:02:42 GMT  
 		Size: 64.9 MB (64908741 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4f16404f2970b174a17464b5a85a025bea205e032251f7cc4cf74050dd8889a`  
-		Last Modified: Wed, 17 Dec 2025 01:02:38 GMT  
+	-	`sha256:e4c2085e8bb9607ad548791b439890f2283e7f2e5d74499441f6cd75d0ea17ec`  
+		Last Modified: Tue, 30 Dec 2025 10:24:53 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -29159,24 +29159,24 @@ WORKDIR /go
 ### `golang:1.26-rc-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:5117fbf6aaaee6c8928618f54c81cf181b8eda36c09eabb7008b44958bb9f6db
+$ docker pull golang@sha256:3fff630c5c2319130ce07e4093c994e283dfd6ee1cf547c7b65ff977b5674505
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10808375 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cb87c98e2e9886b00ec79e489bb4050e2327e803a7d4eb93b02678fd261a341`
+-	Image ID: `sha256:a8af29db01a5267215c762539999a5a9c35003b4a2327e20aac6fb97ead04976`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a6d306d6689e22118c6c6caf8fdffb4035f0d4c75391ae04f7892fb4c8d05bf2`  
-		Last Modified: Wed, 17 Dec 2025 03:24:09 GMT  
+	-	`sha256:9774e2f1d97bff61438d0f281fc2d96b3b1bc7732ba1c04c3c8b5e2e28ecc9f7`  
+		Last Modified: Tue, 30 Dec 2025 12:23:59 GMT  
 		Size: 10.8 MB (10780520 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:225243053c164e950109263f28d4c6caf38641a8c7a032b0d7af53c4cdf09ee5`  
-		Last Modified: Wed, 17 Dec 2025 03:24:10 GMT  
+	-	`sha256:47cb09eaeb40b3af452772c03e639fc8261584957c883483a6062be1bf2efaef`  
+		Last Modified: Tue, 30 Dec 2025 12:23:59 GMT  
 		Size: 27.9 KB (27855 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -29274,63 +29274,63 @@ $ docker pull golang@sha256:b7ce368639d130b03a1079251df8f2bfa36b126efb88e56bd1cb
 ### `golang:1.26-rc-trixie` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:19512e50eb536b90c0117c78e484304a528a365b7b7b8e5a0a3125a81d7d6356
+$ docker pull golang@sha256:7c295d7fd599fb8724267a63549396e4db6aa9f1c0b652eb3b8589839eaa0e80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **287.3 MB (287269529 bytes)**  
+-	Total Size: **287.3 MB (287275412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9c18deb0d6faa0b8df7bdeffd6329e6bcf63c76083bb88147216a4c255fbee1`
+-	Image ID: `sha256:880dfbe5d8a761f37159fd98ae21024a3a3d09c041cae58bc08e2ba85135fca0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV GOLANG_VERSION=1.26rc1
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV GOTOOLCHAIN=local
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV GOPATH=/go
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 COPY /target/ / # buildkit
-# Wed, 17 Dec 2025 00:42:04 GMT
+# Tue, 30 Dec 2025 06:12:26 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Wed, 17 Dec 2025 00:42:04 GMT
+# Tue, 30 Dec 2025 06:12:26 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:5388570833e7ff5a3b6ddf9a424d471e073c109ee58e115df3ece488cbb89d91`  
+		Last Modified: Tue, 30 Dec 2025 06:13:01 GMT  
+		Size: 75.9 MB (75919348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5c6195c373af6e3982d7a711643ecf73812b86bd87d16a9c88b9bee077b8d872`  
 		Last Modified: Wed, 17 Dec 2025 00:42:38 GMT  
 		Size: 66.6 MB (66593147 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:728450c1995546f609e9144479902f6e4eda72a0035298166c2783fb622f7c4f`  
-		Last Modified: Wed, 17 Dec 2025 00:42:32 GMT  
+	-	`sha256:f861a1fcd0d61931c135b5f900ef4d228a8e0c9401dc733dfa98b11b86adbf14`  
+		Last Modified: Tue, 30 Dec 2025 06:12:55 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -29341,24 +29341,24 @@ WORKDIR /go
 ### `golang:1.26-rc-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:83b4dbd0955a0fbe742a0544d0dd1cd77aa8f1e3aaaf850faea81c9d4ae6aa58
+$ docker pull golang@sha256:35d87a5c7c8d90a6142b4d08622d61a9bc9a0a83334896b95cea544108505d1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10622941 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7aad1ef1b1aeba2216b4505ea6bc7257f3d27f0c839854d2d49bac4fd7a13b9d`
+-	Image ID: `sha256:173ca90e669d36b9b07e5594ab6d921f415b73f0cd50f0daf05442e5ab6f1803`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:88331859d8ab410255eeeb5c946f2274e991000c1daf8617a6182cd83115b4bd`  
-		Last Modified: Wed, 17 Dec 2025 03:24:20 GMT  
+	-	`sha256:6413c92eba2cfd4b831ffeddd345a0253d007ad99c5916295f5bff21bfaee14b`  
+		Last Modified: Tue, 30 Dec 2025 09:24:42 GMT  
 		Size: 10.6 MB (10595134 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfdcc6df19e2a9afb72ca4c6c699da4c24c8dc6e912a596b6bc6af7c084517ec`  
-		Last Modified: Wed, 17 Dec 2025 03:24:21 GMT  
+	-	`sha256:134f66bc9dd5fd647b0e995634f47e374ded5ccec59c59d60d56c0b3fe240086`  
+		Last Modified: Tue, 30 Dec 2025 09:24:43 GMT  
 		Size: 27.8 KB (27807 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -29784,7 +29784,7 @@ WORKDIR C:\go
 ## `golang:1.26rc1`
 
 ```console
-$ docker pull golang@sha256:69444269706f3b57a02b08d931f3ef8ff28d6131b21ed6ecb77a09cdf786ee60
+$ docker pull golang@sha256:3b111490645266a382b58731a948694adad8931c72210f9c1eeb8e58e2a6aac9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30173,63 +30173,63 @@ $ docker pull golang@sha256:8493e8572d1d6bd863f8293d5e1ff6944f2d38d70325c34d10a3
 ### `golang:1.26rc1` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:02391392bb5e4548316b1ba1d4cfd18a5bfe746b2dbf7f6a71d8ea03da0f06a8
+$ docker pull golang@sha256:ef70c0ca0568f89a4a7bcd1bad6b176e7b03b39e00c44672ce22a27f2144abf0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.9 MB (310852014 bytes)**  
+-	Total Size: **310.9 MB (310860714 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8105ca0741b74c46a6fed414a0d1713e27a89c560fa0ec4f3b71c2eae47d05bf`
+-	Image ID: `sha256:fbc334cd1c3847fe07f168adf51cd6934afbbbd0cfe7fef90cdb2a3ef8e7ef5a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOLANG_VERSION=1.26rc1
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOTOOLCHAIN=local
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOPATH=/go
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 COPY /target/ / # buildkit
-# Wed, 17 Dec 2025 01:01:38 GMT
+# Tue, 30 Dec 2025 10:23:19 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Wed, 17 Dec 2025 01:01:39 GMT
+# Tue, 30 Dec 2025 10:23:19 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a3088682d0ab1830136cb2326cfa3798a9c292a02b0c2f6b01b9f81e25ea7d0`  
 		Last Modified: Wed, 17 Dec 2025 01:02:42 GMT  
 		Size: 64.9 MB (64908741 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4f16404f2970b174a17464b5a85a025bea205e032251f7cc4cf74050dd8889a`  
-		Last Modified: Wed, 17 Dec 2025 01:02:38 GMT  
+	-	`sha256:e4c2085e8bb9607ad548791b439890f2283e7f2e5d74499441f6cd75d0ea17ec`  
+		Last Modified: Tue, 30 Dec 2025 10:24:53 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -30240,24 +30240,24 @@ WORKDIR /go
 ### `golang:1.26rc1` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:5117fbf6aaaee6c8928618f54c81cf181b8eda36c09eabb7008b44958bb9f6db
+$ docker pull golang@sha256:3fff630c5c2319130ce07e4093c994e283dfd6ee1cf547c7b65ff977b5674505
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10808375 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cb87c98e2e9886b00ec79e489bb4050e2327e803a7d4eb93b02678fd261a341`
+-	Image ID: `sha256:a8af29db01a5267215c762539999a5a9c35003b4a2327e20aac6fb97ead04976`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a6d306d6689e22118c6c6caf8fdffb4035f0d4c75391ae04f7892fb4c8d05bf2`  
-		Last Modified: Wed, 17 Dec 2025 03:24:09 GMT  
+	-	`sha256:9774e2f1d97bff61438d0f281fc2d96b3b1bc7732ba1c04c3c8b5e2e28ecc9f7`  
+		Last Modified: Tue, 30 Dec 2025 12:23:59 GMT  
 		Size: 10.8 MB (10780520 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:225243053c164e950109263f28d4c6caf38641a8c7a032b0d7af53c4cdf09ee5`  
-		Last Modified: Wed, 17 Dec 2025 03:24:10 GMT  
+	-	`sha256:47cb09eaeb40b3af452772c03e639fc8261584957c883483a6062be1bf2efaef`  
+		Last Modified: Tue, 30 Dec 2025 12:23:59 GMT  
 		Size: 27.9 KB (27855 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -30355,63 +30355,63 @@ $ docker pull golang@sha256:b7ce368639d130b03a1079251df8f2bfa36b126efb88e56bd1cb
 ### `golang:1.26rc1` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:19512e50eb536b90c0117c78e484304a528a365b7b7b8e5a0a3125a81d7d6356
+$ docker pull golang@sha256:7c295d7fd599fb8724267a63549396e4db6aa9f1c0b652eb3b8589839eaa0e80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **287.3 MB (287269529 bytes)**  
+-	Total Size: **287.3 MB (287275412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9c18deb0d6faa0b8df7bdeffd6329e6bcf63c76083bb88147216a4c255fbee1`
+-	Image ID: `sha256:880dfbe5d8a761f37159fd98ae21024a3a3d09c041cae58bc08e2ba85135fca0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV GOLANG_VERSION=1.26rc1
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV GOTOOLCHAIN=local
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV GOPATH=/go
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 COPY /target/ / # buildkit
-# Wed, 17 Dec 2025 00:42:04 GMT
+# Tue, 30 Dec 2025 06:12:26 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Wed, 17 Dec 2025 00:42:04 GMT
+# Tue, 30 Dec 2025 06:12:26 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:5388570833e7ff5a3b6ddf9a424d471e073c109ee58e115df3ece488cbb89d91`  
+		Last Modified: Tue, 30 Dec 2025 06:13:01 GMT  
+		Size: 75.9 MB (75919348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5c6195c373af6e3982d7a711643ecf73812b86bd87d16a9c88b9bee077b8d872`  
 		Last Modified: Wed, 17 Dec 2025 00:42:38 GMT  
 		Size: 66.6 MB (66593147 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:728450c1995546f609e9144479902f6e4eda72a0035298166c2783fb622f7c4f`  
-		Last Modified: Wed, 17 Dec 2025 00:42:32 GMT  
+	-	`sha256:f861a1fcd0d61931c135b5f900ef4d228a8e0c9401dc733dfa98b11b86adbf14`  
+		Last Modified: Tue, 30 Dec 2025 06:12:55 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -30422,24 +30422,24 @@ WORKDIR /go
 ### `golang:1.26rc1` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:83b4dbd0955a0fbe742a0544d0dd1cd77aa8f1e3aaaf850faea81c9d4ae6aa58
+$ docker pull golang@sha256:35d87a5c7c8d90a6142b4d08622d61a9bc9a0a83334896b95cea544108505d1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10622941 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7aad1ef1b1aeba2216b4505ea6bc7257f3d27f0c839854d2d49bac4fd7a13b9d`
+-	Image ID: `sha256:173ca90e669d36b9b07e5594ab6d921f415b73f0cd50f0daf05442e5ab6f1803`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:88331859d8ab410255eeeb5c946f2274e991000c1daf8617a6182cd83115b4bd`  
-		Last Modified: Wed, 17 Dec 2025 03:24:20 GMT  
+	-	`sha256:6413c92eba2cfd4b831ffeddd345a0253d007ad99c5916295f5bff21bfaee14b`  
+		Last Modified: Tue, 30 Dec 2025 09:24:42 GMT  
 		Size: 10.6 MB (10595134 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfdcc6df19e2a9afb72ca4c6c699da4c24c8dc6e912a596b6bc6af7c084517ec`  
-		Last Modified: Wed, 17 Dec 2025 03:24:21 GMT  
+	-	`sha256:134f66bc9dd5fd647b0e995634f47e374ded5ccec59c59d60d56c0b3fe240086`  
+		Last Modified: Tue, 30 Dec 2025 09:24:43 GMT  
 		Size: 27.8 KB (27807 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -32647,7 +32647,7 @@ $ docker pull golang@sha256:4c769df565259333d248bb9678f216e3b8dd6be7ca869dce94ff
 ## `golang:1.26rc1-bookworm`
 
 ```console
-$ docker pull golang@sha256:f9c3cd34288800790b0a559321ddd76d8a1e1ae4e758c70c660d093296b23c25
+$ docker pull golang@sha256:58a22eef9af82752c2122444b67c1c07e5d60aa120bf35e4e827175b3e51dd2f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33121,63 +33121,63 @@ $ docker pull golang@sha256:33ff007b2c3355b206e3a637e0937f9a56e560bde8a7875247ff
 ### `golang:1.26rc1-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:45522edd6633b0d0322f05db2f53368dad0d7065797ab12e3ae9cbb0bdd7fa12
+$ docker pull golang@sha256:fcfaf5dedb7664fb1b40d771ce19d547444c36ac9f163202e216f3469c355d72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **303.2 MB (303174039 bytes)**  
+-	Total Size: **303.2 MB (303173422 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:693cb12029f989f0528febd9a16dbab59c8bad258f83fd851cbfb12d51802308`
+-	Image ID: `sha256:76edbcb448a933ce6eff95cf913863c0a4fd47fab6cda573e1d0adba6569ffe9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1765152000'
-# Mon, 08 Dec 2025 22:28:27 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1766966400'
+# Tue, 30 Dec 2025 01:30:53 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 23:21:25 GMT
+# Tue, 30 Dec 2025 03:16:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:41:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOLANG_VERSION=1.26rc1
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOTOOLCHAIN=local
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOPATH=/go
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 COPY /target/ / # buildkit
-# Wed, 17 Dec 2025 01:01:38 GMT
+# Tue, 30 Dec 2025 08:41:59 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Wed, 17 Dec 2025 01:01:39 GMT
+# Tue, 30 Dec 2025 08:42:00 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:c088128ea77bb5c706bb00930020ea2fba147060275f49c5a7be6b54af5ca7c8`  
-		Last Modified: Mon, 08 Dec 2025 22:17:06 GMT  
-		Size: 52.3 MB (52326977 bytes)  
+	-	`sha256:48e256c4119c0ad256492d6a930e99d2b2d7f8d7920d619aa2de4f616c37076e`  
+		Last Modified: Mon, 29 Dec 2025 22:25:39 GMT  
+		Size: 52.3 MB (52326998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4109a037ac4c69c3ce26e6d14e10c867842083c363485abd63db45502611991`  
-		Last Modified: Mon, 08 Dec 2025 22:28:59 GMT  
-		Size: 25.7 MB (25672209 bytes)  
+	-	`sha256:7517c515ac5fd6799cec288b72512b8ea3fc54d2d37de5af54d06ba0ea2f21bf`  
+		Last Modified: Tue, 30 Dec 2025 01:31:20 GMT  
+		Size: 25.7 MB (25672165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd2b93c70c0b05a907d16ae217d77a407e9aa88f69499ffbfee4375b49ab6c01`  
-		Last Modified: Mon, 08 Dec 2025 23:22:14 GMT  
-		Size: 69.8 MB (69846008 bytes)  
+	-	`sha256:f30ff2cfb691fedcba1692cb13fd0632001d1a876833f4cd2aa52eba87257a8f`  
+		Last Modified: Tue, 30 Dec 2025 03:17:48 GMT  
+		Size: 69.8 MB (69845530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21fcf0300c06237c12ec60c09556f95a6b8c833ba82bfc5828beb977742de538`  
-		Last Modified: Tue, 09 Dec 2025 02:13:29 GMT  
-		Size: 90.4 MB (90419946 bytes)  
+	-	`sha256:4fb3fd09a1e6774e533a42b26351be92003f5bdea475b8caa70173ad58b79d9f`  
+		Last Modified: Tue, 30 Dec 2025 08:43:16 GMT  
+		Size: 90.4 MB (90419830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a3088682d0ab1830136cb2326cfa3798a9c292a02b0c2f6b01b9f81e25ea7d0`  
 		Last Modified: Wed, 17 Dec 2025 01:02:42 GMT  
 		Size: 64.9 MB (64908741 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a95a2e41eb333774fd399e2df3b817f444c0992ae479f949193f840bbe2cad54`  
-		Last Modified: Wed, 17 Dec 2025 01:02:38 GMT  
+	-	`sha256:497b59d8cb0cd623c0e05ac41d01af6de0c651445bea5d29c933a21f8773da1b`  
+		Last Modified: Tue, 30 Dec 2025 08:43:09 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -33188,25 +33188,25 @@ WORKDIR /go
 ### `golang:1.26rc1-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:36e5f060000ae96f6dd38fc0fcc3da496a239b2c03dbc7e13c42f4fe20fe094f
+$ docker pull golang@sha256:82d6fda8e2ad1f8ab143b78a240479ad3578ae91d74d904e0f6b19196044df0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10496187 bytes)**  
+-	Total Size: **10.5 MB (10496360 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6034ed9ff37ffdfd5ed0bf7a09aecf15ad219cd26de009c2c56f577ec805531`
+-	Image ID: `sha256:e41cca9d7384284f55475a61a0d713eb7a2b26157955888ac374371aad230e2e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:97cd6bf3511ac8769be8d4a84567b502a1c8de4e599086c2975d9de6d15ead74`  
-		Last Modified: Wed, 17 Dec 2025 03:25:29 GMT  
+	-	`sha256:bb44a0964a1dd3389d122ed038b79b67db761ddfeb647fcbe2d20328c38ef3b2`  
+		Last Modified: Tue, 30 Dec 2025 09:24:39 GMT  
 		Size: 10.5 MB (10469099 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:555d9c727a9d433781d77cbdeeaa09f28671b6aca1026927d24cf5f5645db17b`  
-		Last Modified: Wed, 17 Dec 2025 03:25:30 GMT  
-		Size: 27.1 KB (27088 bytes)  
+	-	`sha256:c0fdd8a94241355c0eec43b080dfae7b4924ffc69e67be356faea1593bffa6e8`  
+		Last Modified: Tue, 30 Dec 2025 09:24:39 GMT  
+		Size: 27.3 KB (27261 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:1.26rc1-bookworm` - linux; s390x
@@ -33650,7 +33650,7 @@ WORKDIR C:\go
 ## `golang:1.26rc1-trixie`
 
 ```console
-$ docker pull golang@sha256:f7090e9acf439775c6bff0aa6c7eb39c2f7ec47445c8f8a5321383de8fbf8404
+$ docker pull golang@sha256:7fa9cd5cd04935e38cf19a3c46ff5f86b944a85ce2c039fd930c962f0eadafd8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -34037,63 +34037,63 @@ $ docker pull golang@sha256:8493e8572d1d6bd863f8293d5e1ff6944f2d38d70325c34d10a3
 ### `golang:1.26rc1-trixie` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:02391392bb5e4548316b1ba1d4cfd18a5bfe746b2dbf7f6a71d8ea03da0f06a8
+$ docker pull golang@sha256:ef70c0ca0568f89a4a7bcd1bad6b176e7b03b39e00c44672ce22a27f2144abf0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.9 MB (310852014 bytes)**  
+-	Total Size: **310.9 MB (310860714 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8105ca0741b74c46a6fed414a0d1713e27a89c560fa0ec4f3b71c2eae47d05bf`
+-	Image ID: `sha256:fbc334cd1c3847fe07f168adf51cd6934afbbbd0cfe7fef90cdb2a3ef8e7ef5a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOLANG_VERSION=1.26rc1
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOTOOLCHAIN=local
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV GOPATH=/go
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 17 Dec 2025 01:01:30 GMT
+# Tue, 30 Dec 2025 08:41:43 GMT
 COPY /target/ / # buildkit
-# Wed, 17 Dec 2025 01:01:38 GMT
+# Tue, 30 Dec 2025 10:23:19 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Wed, 17 Dec 2025 01:01:39 GMT
+# Tue, 30 Dec 2025 10:23:19 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a3088682d0ab1830136cb2326cfa3798a9c292a02b0c2f6b01b9f81e25ea7d0`  
 		Last Modified: Wed, 17 Dec 2025 01:02:42 GMT  
 		Size: 64.9 MB (64908741 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4f16404f2970b174a17464b5a85a025bea205e032251f7cc4cf74050dd8889a`  
-		Last Modified: Wed, 17 Dec 2025 01:02:38 GMT  
+	-	`sha256:e4c2085e8bb9607ad548791b439890f2283e7f2e5d74499441f6cd75d0ea17ec`  
+		Last Modified: Tue, 30 Dec 2025 10:24:53 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -34104,24 +34104,24 @@ WORKDIR /go
 ### `golang:1.26rc1-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:5117fbf6aaaee6c8928618f54c81cf181b8eda36c09eabb7008b44958bb9f6db
+$ docker pull golang@sha256:3fff630c5c2319130ce07e4093c994e283dfd6ee1cf547c7b65ff977b5674505
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10808375 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cb87c98e2e9886b00ec79e489bb4050e2327e803a7d4eb93b02678fd261a341`
+-	Image ID: `sha256:a8af29db01a5267215c762539999a5a9c35003b4a2327e20aac6fb97ead04976`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a6d306d6689e22118c6c6caf8fdffb4035f0d4c75391ae04f7892fb4c8d05bf2`  
-		Last Modified: Wed, 17 Dec 2025 03:24:09 GMT  
+	-	`sha256:9774e2f1d97bff61438d0f281fc2d96b3b1bc7732ba1c04c3c8b5e2e28ecc9f7`  
+		Last Modified: Tue, 30 Dec 2025 12:23:59 GMT  
 		Size: 10.8 MB (10780520 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:225243053c164e950109263f28d4c6caf38641a8c7a032b0d7af53c4cdf09ee5`  
-		Last Modified: Wed, 17 Dec 2025 03:24:10 GMT  
+	-	`sha256:47cb09eaeb40b3af452772c03e639fc8261584957c883483a6062be1bf2efaef`  
+		Last Modified: Tue, 30 Dec 2025 12:23:59 GMT  
 		Size: 27.9 KB (27855 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -34219,63 +34219,63 @@ $ docker pull golang@sha256:b7ce368639d130b03a1079251df8f2bfa36b126efb88e56bd1cb
 ### `golang:1.26rc1-trixie` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:19512e50eb536b90c0117c78e484304a528a365b7b7b8e5a0a3125a81d7d6356
+$ docker pull golang@sha256:7c295d7fd599fb8724267a63549396e4db6aa9f1c0b652eb3b8589839eaa0e80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **287.3 MB (287269529 bytes)**  
+-	Total Size: **287.3 MB (287275412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9c18deb0d6faa0b8df7bdeffd6329e6bcf63c76083bb88147216a4c255fbee1`
+-	Image ID: `sha256:880dfbe5d8a761f37159fd98ae21024a3a3d09c041cae58bc08e2ba85135fca0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV GOLANG_VERSION=1.26rc1
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV GOTOOLCHAIN=local
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV GOPATH=/go
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 17 Dec 2025 00:42:02 GMT
+# Wed, 17 Dec 2025 00:42:03 GMT
 COPY /target/ / # buildkit
-# Wed, 17 Dec 2025 00:42:04 GMT
+# Tue, 30 Dec 2025 06:12:26 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Wed, 17 Dec 2025 00:42:04 GMT
+# Tue, 30 Dec 2025 06:12:26 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:5388570833e7ff5a3b6ddf9a424d471e073c109ee58e115df3ece488cbb89d91`  
+		Last Modified: Tue, 30 Dec 2025 06:13:01 GMT  
+		Size: 75.9 MB (75919348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5c6195c373af6e3982d7a711643ecf73812b86bd87d16a9c88b9bee077b8d872`  
 		Last Modified: Wed, 17 Dec 2025 00:42:38 GMT  
 		Size: 66.6 MB (66593147 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:728450c1995546f609e9144479902f6e4eda72a0035298166c2783fb622f7c4f`  
-		Last Modified: Wed, 17 Dec 2025 00:42:32 GMT  
+	-	`sha256:f861a1fcd0d61931c135b5f900ef4d228a8e0c9401dc733dfa98b11b86adbf14`  
+		Last Modified: Tue, 30 Dec 2025 06:12:55 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -34286,24 +34286,24 @@ WORKDIR /go
 ### `golang:1.26rc1-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:83b4dbd0955a0fbe742a0544d0dd1cd77aa8f1e3aaaf850faea81c9d4ae6aa58
+$ docker pull golang@sha256:35d87a5c7c8d90a6142b4d08622d61a9bc9a0a83334896b95cea544108505d1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10622941 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7aad1ef1b1aeba2216b4505ea6bc7257f3d27f0c839854d2d49bac4fd7a13b9d`
+-	Image ID: `sha256:173ca90e669d36b9b07e5594ab6d921f415b73f0cd50f0daf05442e5ab6f1803`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:88331859d8ab410255eeeb5c946f2274e991000c1daf8617a6182cd83115b4bd`  
-		Last Modified: Wed, 17 Dec 2025 03:24:20 GMT  
+	-	`sha256:6413c92eba2cfd4b831ffeddd345a0253d007ad99c5916295f5bff21bfaee14b`  
+		Last Modified: Tue, 30 Dec 2025 09:24:42 GMT  
 		Size: 10.6 MB (10595134 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfdcc6df19e2a9afb72ca4c6c699da4c24c8dc6e912a596b6bc6af7c084517ec`  
-		Last Modified: Wed, 17 Dec 2025 03:24:21 GMT  
+	-	`sha256:134f66bc9dd5fd647b0e995634f47e374ded5ccec59c59d60d56c0b3fe240086`  
+		Last Modified: Tue, 30 Dec 2025 09:24:43 GMT  
 		Size: 27.8 KB (27807 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -36736,7 +36736,7 @@ $ docker pull golang@sha256:87d9d8f820d61adcac8d8076cd4de81d5a4159680105149d081e
 ## `golang:bookworm`
 
 ```console
-$ docker pull golang@sha256:01762abf6fea478a3bdf5778b1453c734f1780baf1b96655d42e0ebf2fa2b73b
+$ docker pull golang@sha256:d63fcbd9b3d3debebfc158906a9af85b027ff7dbaa4500cbf7ddca0354f3579c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37210,64 +37210,64 @@ $ docker pull golang@sha256:e376c4db3bc5f768252f6e6982027b9747b4cf33ebfb9fe53206
 ### `golang:bookworm` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:7be8e0eb4743fe5ddea75f00797a0249e041a91f857803ce90dc0aec4d6a66e6
+$ docker pull golang@sha256:38d94189fc989cb4669cd1e0c9dede128d779c1ae7922a518ca293c22d4cfba2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.4 MB (296400242 bytes)**  
+-	Total Size: **296.4 MB (296399627 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e7843922480b6d0e44719be61547fb74ad98114a908936e1f5af6bc8f2499ec`
+-	Image ID: `sha256:79f43d390026dd361d5f29d6b1281b3446814bcdba8779b58f01b9204a2f7206`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1765152000'
-# Mon, 08 Dec 2025 22:28:27 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1766966400'
+# Tue, 30 Dec 2025 01:30:53 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 23:21:25 GMT
+# Tue, 30 Dec 2025 03:16:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:41:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:12:24 GMT
+# Tue, 30 Dec 2025 08:43:34 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:12:25 GMT
+# Tue, 30 Dec 2025 08:43:35 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:c088128ea77bb5c706bb00930020ea2fba147060275f49c5a7be6b54af5ca7c8`  
-		Last Modified: Mon, 08 Dec 2025 22:17:06 GMT  
-		Size: 52.3 MB (52326977 bytes)  
+	-	`sha256:48e256c4119c0ad256492d6a930e99d2b2d7f8d7920d619aa2de4f616c37076e`  
+		Last Modified: Mon, 29 Dec 2025 22:25:39 GMT  
+		Size: 52.3 MB (52326998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4109a037ac4c69c3ce26e6d14e10c867842083c363485abd63db45502611991`  
-		Last Modified: Mon, 08 Dec 2025 22:28:59 GMT  
-		Size: 25.7 MB (25672209 bytes)  
+	-	`sha256:7517c515ac5fd6799cec288b72512b8ea3fc54d2d37de5af54d06ba0ea2f21bf`  
+		Last Modified: Tue, 30 Dec 2025 01:31:20 GMT  
+		Size: 25.7 MB (25672165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd2b93c70c0b05a907d16ae217d77a407e9aa88f69499ffbfee4375b49ab6c01`  
-		Last Modified: Mon, 08 Dec 2025 23:22:14 GMT  
-		Size: 69.8 MB (69846008 bytes)  
+	-	`sha256:f30ff2cfb691fedcba1692cb13fd0632001d1a876833f4cd2aa52eba87257a8f`  
+		Last Modified: Tue, 30 Dec 2025 03:17:48 GMT  
+		Size: 69.8 MB (69845530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21fcf0300c06237c12ec60c09556f95a6b8c833ba82bfc5828beb977742de538`  
-		Last Modified: Tue, 09 Dec 2025 02:13:29 GMT  
-		Size: 90.4 MB (90419946 bytes)  
+	-	`sha256:4fb3fd09a1e6774e533a42b26351be92003f5bdea475b8caa70173ad58b79d9f`  
+		Last Modified: Tue, 30 Dec 2025 08:43:16 GMT  
+		Size: 90.4 MB (90419830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0da503e4b3d4a624ac596179648e9a31a4f87f7d37fdb8c7bef57190d6ed7d`  
 		Last Modified: Tue, 02 Dec 2025 17:48:12 GMT  
 		Size: 58.1 MB (58134946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88a20f8398526b7e32e5610cbaf93e2d1dc9ef12fe14e2f40d8981cbf322083f`  
-		Last Modified: Tue, 09 Dec 2025 02:13:23 GMT  
-		Size: 124.0 B  
+	-	`sha256:a693eb291fd37cdf058fb56482da756e64e2b2e28c0a084790b4bba6d73d47d9`  
+		Last Modified: Tue, 30 Dec 2025 08:44:18 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -37277,24 +37277,24 @@ WORKDIR /go
 ### `golang:bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:26f6b8379232a27c484820400b1d8f4aed4033968a8ea21ba0f8221e7d6f19eb
+$ docker pull golang@sha256:13c9b232ce5bc5e21833509fe7098aad08da59ee1e752328777adfa4d917a39f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 MB (10496078 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63c6f5c90c55d3f98b3e3134a332c426d11b6cbfc21b5050509fc7e9bbb85dad`
+-	Image ID: `sha256:dba7ccd450406b2ce1ba2a42121ccaa55389c5da662edd0a2a8d78ed9e635909`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9cce1234d409d1894452021b7e8872ff49b9855f41f46b8e5079291672e81da`  
-		Last Modified: Tue, 09 Dec 2025 03:24:12 GMT  
+	-	`sha256:87df208d0395c75ef8e192108b85abc0404e28a1904f930f603014af5bf76d7c`  
+		Last Modified: Tue, 30 Dec 2025 09:23:07 GMT  
 		Size: 10.5 MB (10468233 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4cc991258b0b5f35f2d2a8630acdfc640f89cdf40bb6fb47d6a78752739fa826`  
-		Last Modified: Tue, 09 Dec 2025 03:24:13 GMT  
+	-	`sha256:5d6ef4d6d953659578b9845d136f3d0126eaade6659d8060bf825b5c778eb0a2`  
+		Last Modified: Tue, 30 Dec 2025 09:23:08 GMT  
 		Size: 27.8 KB (27845 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -37392,7 +37392,7 @@ $ docker pull golang@sha256:10c6c92b1acb3b3ce1da984b5a0d13e680fb509ec66f8931f6ad
 ## `golang:latest`
 
 ```console
-$ docker pull golang@sha256:6396b3d8039d2050ab7a3c5c6e1cbeed8bf6d2ddc0403e1ab39d78749227ca19
+$ docker pull golang@sha256:31c1e53dfc1cc2d269deec9c83f58729fa3c53dc9a576f6426109d1e319e9e9a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37781,63 +37781,63 @@ $ docker pull golang@sha256:312235b61145fb1b0c9456ad38521dd04291819de65be02297ed
 ### `golang:latest` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:edda83f1c330d90345cca76d1383b5cb5523b5aa9b481b1487be4059b72f0984
+$ docker pull golang@sha256:d6ad7fce8bdce5315f037cd9aff445d4cf7d7325333c8bb003403f0563ae7d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.1 MB (304078218 bytes)**  
+-	Total Size: **304.1 MB (304086918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1461c7db1331b19e172169e7312b31426366775a7635368ee57b90039298379f`
+-	Image ID: `sha256:16fd018bd874346d1dc0a6ebb6af7e779e7a2fcc45e6869943a48eca07e1a658`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 06:20:59 GMT
+# Tue, 30 Dec 2025 10:25:10 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 06:21:00 GMT
+# Tue, 30 Dec 2025 10:25:11 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0da503e4b3d4a624ac596179648e9a31a4f87f7d37fdb8c7bef57190d6ed7d`  
 		Last Modified: Tue, 02 Dec 2025 17:48:12 GMT  
 		Size: 58.1 MB (58134946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6849ad71391fbbeff8d3472dbaf3d868186dc95123c70609a1adde617759e1ac`  
-		Last Modified: Tue, 09 Dec 2025 06:22:22 GMT  
+	-	`sha256:745a29a39a173b26b9ebf23e656da3218659ccc1713088694c73d5b2ce8105de`  
+		Last Modified: Tue, 30 Dec 2025 10:26:04 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -37848,24 +37848,24 @@ WORKDIR /go
 ### `golang:latest` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:0df8c06a7aec2e4ec38f44656ab30d04a0e6cfbc01fd857463e692dc4d078265
+$ docker pull golang@sha256:fa5fd6b8bb561a988859f3d4a9ad6bb55aab28d307b6e2bbc6f9119ef2fa803f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10809257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8fc0ea5c25eb7d1fdf78eca32487758741ba89c533f4f8f1a157b373321c2d5c`
+-	Image ID: `sha256:f018751f15089b3b14839c7faee6f2236566dd323b394b432e1e43044e663795`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fd7ba604dfe0652a6c107f74a16e99c4d148aa256b5bf017d2e5bdc093a7f9a7`  
-		Last Modified: Tue, 09 Dec 2025 09:22:58 GMT  
+	-	`sha256:358257bb853235928e85e14dc05b9e21dba422364df90d265560bafe83dfc589`  
+		Last Modified: Tue, 30 Dec 2025 12:22:50 GMT  
 		Size: 10.8 MB (10780236 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c37d00d6023ca454fe54a45729be587e4a531f26ed20aad02672f290a21c1a86`  
-		Last Modified: Tue, 09 Dec 2025 09:22:59 GMT  
+	-	`sha256:f0a8ca6d0806afbdef720cef4b9a9010482a3c8b4e93d03d717aa0a5a6173cc9`  
+		Last Modified: Tue, 30 Dec 2025 12:22:51 GMT  
 		Size: 29.0 KB (29021 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -37963,63 +37963,63 @@ $ docker pull golang@sha256:1d42ef18ecb6983d9a5771931346da837b56993c8ac8c4781b0f
 ### `golang:latest` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:8e612b7aa289e9adfc9d7ebf758e773772283ad5001a00c01d7e5f0df0081b8f
+$ docker pull golang@sha256:dbacffbf856eb14cf139f2b7c4d30338357928cfa32bc85aeb8bffed531c5f62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.2 MB (280163602 bytes)**  
+-	Total Size: **280.2 MB (280169485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97c6f589aa3269204b9a2cffd8841408da19f832f8e775a295d4adae8b8f5ece`
+-	Image ID: `sha256:222c2c9ffd786468fc343769bfb474611a124ec22468a0bf9af8bc61cbe74541`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:5388570833e7ff5a3b6ddf9a424d471e073c109ee58e115df3ece488cbb89d91`  
+		Last Modified: Tue, 30 Dec 2025 06:13:01 GMT  
+		Size: 75.9 MB (75919348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:036b6dba2ceabbb92eb6c9ebccd3e6b705dacf7cc4426156bbedfd17ad5dc53b`  
 		Last Modified: Tue, 02 Dec 2025 17:49:47 GMT  
 		Size: 59.5 MB (59487220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42a9e961325948363100d5bf4169ac5a2766670063f6aa5d0860b8ed7f03d0b2`  
-		Last Modified: Tue, 09 Dec 2025 03:00:12 GMT  
+	-	`sha256:e51f5064feef79db34c21a2dd41749a2916949d03779f5c73c692a7d8deaadd7`  
+		Last Modified: Tue, 30 Dec 2025 06:12:57 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -38030,24 +38030,24 @@ WORKDIR /go
 ### `golang:latest` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:866476b6405d21e9121a8e6952a69e4d0a8dd9fe6bdb4b68729b5528affe5728
+$ docker pull golang@sha256:9b4e9000d302d567d94b5dcc7fe080e403bcf723deb3d8794d544c32c71bd8c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10623777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:146637d5f45edabe69713bc1007ffb29eafc03744b756bcaf57639a7cf41ccc5`
+-	Image ID: `sha256:20064c1161ab4c5f446c880bd89a41873fbcceb4b33db56e9f4395f80aa77a1e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c28e78f5457bc3963bafaa56ed6586f2a1a334fcf0a4644de495b1f4f6d53161`  
-		Last Modified: Tue, 09 Dec 2025 03:23:53 GMT  
+	-	`sha256:374539d44b6a4a49375d49799d09dc7cc8efbb7a1c873191aa5dc9b9f426be60`  
+		Last Modified: Tue, 30 Dec 2025 09:23:07 GMT  
 		Size: 10.6 MB (10594828 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7742e5e1ba6aa2a09a3ef3a9d0d030403983f72d69e78059b1fb856129652fd6`  
-		Last Modified: Tue, 09 Dec 2025 03:23:54 GMT  
+	-	`sha256:e955d7ff6063882dc3be109953449ae3ee88be05efa1ead5ac81a297692d54b6`  
+		Last Modified: Tue, 30 Dec 2025 09:23:08 GMT  
 		Size: 28.9 KB (28949 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -38595,7 +38595,7 @@ WORKDIR C:\go
 ## `golang:tip`
 
 ```console
-$ docker pull golang@sha256:269106f8071efd212a3360e23b3527a07f3de0a3011758ed32cf6159a36b750f
+$ docker pull golang@sha256:fdbbbf71cdb560c6a88f69138c24bffbf813efbcfa8e20934f4f4d189433de81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -39152,62 +39152,62 @@ $ docker pull golang@sha256:6d38cc12d2f36c041c99a1f950b63ef191ed2c3b33e6cec769d7
 ### `golang:tip` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:57dc55808c4a5c88127ae2058ba38176e0f76adadb8247fd115cdfd252bf2be7
+$ docker pull golang@sha256:268665c6fe63ebb4626772e1e8bc4f9b43edd1f6d273b3a1beae17b777f3a339
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **314.9 MB (314875221 bytes)**  
+-	Total Size: **314.9 MB (314886102 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:350bf60ae1561162d97c85cb79e1014947b9d88383a93b46908ff65d73ab8d4e`
+-	Image ID: `sha256:ae29dcbe3e131226c95de84ee0ee73dad47db5c4ffd2c84a44daafb8488dd4a4`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Dec 2025 05:16:18 GMT
+# Mon, 29 Dec 2025 22:16:41 GMT
 ENV GOTOOLCHAIN=local
-# Wed, 24 Dec 2025 05:16:18 GMT
+# Mon, 29 Dec 2025 22:16:41 GMT
 ENV GOPATH=/go
-# Wed, 24 Dec 2025 05:16:18 GMT
+# Mon, 29 Dec 2025 22:16:41 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Dec 2025 05:16:18 GMT
+# Mon, 29 Dec 2025 22:16:41 GMT
 COPY /target/ / # buildkit
-# Wed, 24 Dec 2025 05:16:20 GMT
+# Tue, 30 Dec 2025 07:12:45 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Wed, 24 Dec 2025 05:16:21 GMT
+# Tue, 30 Dec 2025 07:12:45 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:d12ff73de1940cf169d9834c4cf953c0cc9c72c478673013d2a8a22a41944f8f`  
+		Last Modified: Tue, 30 Dec 2025 06:13:25 GMT  
+		Size: 75.9 MB (75919327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1eae26383a5ec3ad19d41ec233e74f5aea1ebfab7013779b5b7f518483b785a`  
-		Last Modified: Wed, 24 Dec 2025 05:17:11 GMT  
-		Size: 94.2 MB (94198838 bytes)  
+	-	`sha256:a25ce8a7fa174e9abbfa1259cfd0fba44c900e27f7f4a5ae1c83f6fe0801a275`  
+		Last Modified: Mon, 29 Dec 2025 22:17:17 GMT  
+		Size: 94.2 MB (94203858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c6034d6bb260ee37a79a943ccdd639854251c8c9114a11d483872c70a7d15b5`  
-		Last Modified: Wed, 24 Dec 2025 05:17:05 GMT  
-		Size: 127.0 B  
+	-	`sha256:961a381ea386f40ac884e157460ec9b52b0cd75b46f5c81deca3f9d89f95c201`  
+		Last Modified: Tue, 30 Dec 2025 07:13:41 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -39217,35 +39217,35 @@ WORKDIR /go
 ### `golang:tip` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:b2ead00a4d7fea96d80fe37d9edea44a059725adf2d56df88e2332a740438f81
+$ docker pull golang@sha256:4dfa01fe7be4346b077aa3754eac5e327c44984a0ac772d8e07be886ba30d42e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.6 MB (10623871 bytes)**  
+-	Total Size: **10.6 MB (10623872 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d56d16a50f4f02c6c95f502c8153a6a1bc8c31db58eff1a2f7948ac96c90e41`
+-	Image ID: `sha256:bca5a6964178444b2ca2558f0def37290d831e2ce3c969061449b5436afdea92`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:30b420beac0fa4c147d2262578ea58fbaa97d4b72319ab6b302fb708e0340ee2`  
-		Last Modified: Wed, 24 Dec 2025 06:24:38 GMT  
+	-	`sha256:3eb816c04b3e038b7612a0704ce24be0aa2789410116d5f99c4e252d90858e95`  
+		Last Modified: Tue, 30 Dec 2025 09:25:26 GMT  
 		Size: 10.6 MB (10594908 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:12f08cbc7dc6840b4aaa21f02cdbe1d789de6a738f157bf461e1bfbf3c302c57`  
-		Last Modified: Wed, 24 Dec 2025 06:24:40 GMT  
-		Size: 29.0 KB (28963 bytes)  
+	-	`sha256:17981e22892b8bf61de377c464379e95f80d059c34f4633f04379fad656d5f44`  
+		Last Modified: Tue, 30 Dec 2025 09:25:27 GMT  
+		Size: 29.0 KB (28964 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `golang:tip-20251227`
 
 ```console
-$ docker pull golang@sha256:bf52ec5832f31e014bb16f840bada7a992603bc708dd333aa332d79273d477ff
+$ docker pull golang@sha256:30531aa99d5802decbd1de8cbbd9b1d2c793fec45c773800025e0523abcd7850
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 8
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v7
@@ -39253,6 +39253,8 @@ $ docker pull golang@sha256:bf52ec5832f31e014bb16f840bada7a992603bc708dd333aa332
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; 386
+	-	unknown; unknown
+	-	linux; s390x
 	-	unknown; unknown
 
 ### `golang:tip-20251227` - linux; amd64
@@ -39609,6 +39611,95 @@ $ docker pull golang@sha256:3bc67aadef44dc3ad0700152f0bfd453c7993fac049bac083f04
 	-	`sha256:7cb1784d9e4461ec2c758c3a218ee7e821afd14cab59868c8cb3cd07edd94a60`  
 		Last Modified: Tue, 30 Dec 2025 03:25:47 GMT  
 		Size: 28.9 KB (28926 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `golang:tip-20251227` - linux; s390x
+
+```console
+$ docker pull golang@sha256:268665c6fe63ebb4626772e1e8bc4f9b43edd1f6d273b3a1beae17b777f3a339
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **314.9 MB (314886102 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ae29dcbe3e131226c95de84ee0ee73dad47db5c4ffd2c84a44daafb8488dd4a4`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Tue, 30 Dec 2025 06:03:36 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Tue, 30 Dec 2025 06:12:23 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 29 Dec 2025 22:16:41 GMT
+ENV GOTOOLCHAIN=local
+# Mon, 29 Dec 2025 22:16:41 GMT
+ENV GOPATH=/go
+# Mon, 29 Dec 2025 22:16:41 GMT
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Mon, 29 Dec 2025 22:16:41 GMT
+COPY /target/ / # buildkit
+# Tue, 30 Dec 2025 07:12:45 GMT
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
+# Tue, 30 Dec 2025 07:12:45 GMT
+WORKDIR /go
+```
+
+-	Layers:
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d12ff73de1940cf169d9834c4cf953c0cc9c72c478673013d2a8a22a41944f8f`  
+		Last Modified: Tue, 30 Dec 2025 06:13:25 GMT  
+		Size: 75.9 MB (75919327 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a25ce8a7fa174e9abbfa1259cfd0fba44c900e27f7f4a5ae1c83f6fe0801a275`  
+		Last Modified: Mon, 29 Dec 2025 22:17:17 GMT  
+		Size: 94.2 MB (94203858 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:961a381ea386f40ac884e157460ec9b52b0cd75b46f5c81deca3f9d89f95c201`  
+		Last Modified: Tue, 30 Dec 2025 07:13:41 GMT  
+		Size: 126.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `golang:tip-20251227` - unknown; unknown
+
+```console
+$ docker pull golang@sha256:4dfa01fe7be4346b077aa3754eac5e327c44984a0ac772d8e07be886ba30d42e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **10.6 MB (10623872 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:bca5a6964178444b2ca2558f0def37290d831e2ce3c969061449b5436afdea92`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:3eb816c04b3e038b7612a0704ce24be0aa2789410116d5f99c4e252d90858e95`  
+		Last Modified: Tue, 30 Dec 2025 09:25:26 GMT  
+		Size: 10.6 MB (10594908 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:17981e22892b8bf61de377c464379e95f80d059c34f4633f04379fad656d5f44`  
+		Last Modified: Tue, 30 Dec 2025 09:25:27 GMT  
+		Size: 29.0 KB (28964 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `golang:tip-20251227-alpine`
@@ -41573,11 +41664,11 @@ $ docker pull golang@sha256:83337bff742d582551ef81fa716349fb66faf51093551e9f7447
 ## `golang:tip-20251227-bookworm`
 
 ```console
-$ docker pull golang@sha256:a92a26de154383b8a5a836122ca65b737f019ad183e3ad05c4bea0ca29c8be8d
+$ docker pull golang@sha256:e9dfc58a75d6caf86b3450339a2bc1d0d2ac9921f50b6684725fe991946d1127
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 10
+-	Platforms: 12
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v7
@@ -41585,6 +41676,8 @@ $ docker pull golang@sha256:a92a26de154383b8a5a836122ca65b737f019ad183e3ad05c4be
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; 386
+	-	unknown; unknown
+	-	linux; ppc64le
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
@@ -41945,6 +42038,95 @@ $ docker pull golang@sha256:c543ca285f12d47013a6e570d44c6c1bbe57eb915eaa09084c67
 		Size: 28.4 KB (28353 bytes)  
 		MIME: application/vnd.in-toto+json
 
+### `golang:tip-20251227-bookworm` - linux; ppc64le
+
+```console
+$ docker pull golang@sha256:f12758c0329d9f1d55b404698ceae7e7c8bd52bfdf0485812261881d5d818877
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **329.9 MB (329922682 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:22aa59026bd8f866bdce623c96258866ac9f8290ce6ac9922db7c767537b1e3c`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1766966400'
+# Tue, 30 Dec 2025 01:30:53 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 30 Dec 2025 03:16:58 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 30 Dec 2025 08:41:54 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 29 Dec 2025 22:16:29 GMT
+ENV GOTOOLCHAIN=local
+# Mon, 29 Dec 2025 22:16:29 GMT
+ENV GOPATH=/go
+# Mon, 29 Dec 2025 22:16:29 GMT
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Mon, 29 Dec 2025 22:16:29 GMT
+COPY /target/ / # buildkit
+# Tue, 30 Dec 2025 10:29:04 GMT
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
+# Tue, 30 Dec 2025 10:29:04 GMT
+WORKDIR /go
+```
+
+-	Layers:
+	-	`sha256:48e256c4119c0ad256492d6a930e99d2b2d7f8d7920d619aa2de4f616c37076e`  
+		Last Modified: Mon, 29 Dec 2025 22:25:39 GMT  
+		Size: 52.3 MB (52326998 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7517c515ac5fd6799cec288b72512b8ea3fc54d2d37de5af54d06ba0ea2f21bf`  
+		Last Modified: Tue, 30 Dec 2025 01:31:20 GMT  
+		Size: 25.7 MB (25672165 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f30ff2cfb691fedcba1692cb13fd0632001d1a876833f4cd2aa52eba87257a8f`  
+		Last Modified: Tue, 30 Dec 2025 03:17:48 GMT  
+		Size: 69.8 MB (69845530 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4fb3fd09a1e6774e533a42b26351be92003f5bdea475b8caa70173ad58b79d9f`  
+		Last Modified: Tue, 30 Dec 2025 08:43:16 GMT  
+		Size: 90.4 MB (90419830 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4d98e6a9db6f27c232427cc65a14243d3dc0a9f5145a0455e78bccfb2bf7249c`  
+		Last Modified: Mon, 29 Dec 2025 22:17:47 GMT  
+		Size: 91.7 MB (91658002 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7785ac6f814e946243f18d76b5755d85e5be2e965a7ae9ae33a34584cd794ee0`  
+		Last Modified: Tue, 30 Dec 2025 10:30:11 GMT  
+		Size: 125.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `golang:tip-20251227-bookworm` - unknown; unknown
+
+```console
+$ docker pull golang@sha256:9c627314caad68fd995090f686e9833ff7a1c2adf152d5e6fa00da92c5263671
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **10.5 MB (10497302 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:13644cb49cfefad1e8da6fd0bc9390c829d661419ca37ab1b43f514f67cc27ec`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:5e910bcf5676c4bddcf9036131a120ea7cd986bc1a8763b131fe5fd4e723bd87`  
+		Last Modified: Tue, 30 Dec 2025 12:24:51 GMT  
+		Size: 10.5 MB (10468871 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:5be8e5a7f536f0f59dc5cf8d86296c10d3fcee971fb8191da8ac6076c833434e`  
+		Last Modified: Tue, 30 Dec 2025 12:24:52 GMT  
+		Size: 28.4 KB (28431 bytes)  
+		MIME: application/vnd.in-toto+json
+
 ### `golang:tip-20251227-bookworm` - linux; s390x
 
 ```console
@@ -42037,11 +42219,11 @@ $ docker pull golang@sha256:d0ed90d9a18478f132e6d6d0439ea4ec144e0381eb136e76c4c6
 ## `golang:tip-20251227-trixie`
 
 ```console
-$ docker pull golang@sha256:bf52ec5832f31e014bb16f840bada7a992603bc708dd333aa332d79273d477ff
+$ docker pull golang@sha256:30531aa99d5802decbd1de8cbbd9b1d2c793fec45c773800025e0523abcd7850
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 8
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v7
@@ -42049,6 +42231,8 @@ $ docker pull golang@sha256:bf52ec5832f31e014bb16f840bada7a992603bc708dd333aa332
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; 386
+	-	unknown; unknown
+	-	linux; s390x
 	-	unknown; unknown
 
 ### `golang:tip-20251227-trixie` - linux; amd64
@@ -42405,6 +42589,95 @@ $ docker pull golang@sha256:3bc67aadef44dc3ad0700152f0bfd453c7993fac049bac083f04
 	-	`sha256:7cb1784d9e4461ec2c758c3a218ee7e821afd14cab59868c8cb3cd07edd94a60`  
 		Last Modified: Tue, 30 Dec 2025 03:25:47 GMT  
 		Size: 28.9 KB (28926 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `golang:tip-20251227-trixie` - linux; s390x
+
+```console
+$ docker pull golang@sha256:268665c6fe63ebb4626772e1e8bc4f9b43edd1f6d273b3a1beae17b777f3a339
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **314.9 MB (314886102 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ae29dcbe3e131226c95de84ee0ee73dad47db5c4ffd2c84a44daafb8488dd4a4`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Tue, 30 Dec 2025 06:03:36 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Tue, 30 Dec 2025 06:12:23 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 29 Dec 2025 22:16:41 GMT
+ENV GOTOOLCHAIN=local
+# Mon, 29 Dec 2025 22:16:41 GMT
+ENV GOPATH=/go
+# Mon, 29 Dec 2025 22:16:41 GMT
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Mon, 29 Dec 2025 22:16:41 GMT
+COPY /target/ / # buildkit
+# Tue, 30 Dec 2025 07:12:45 GMT
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
+# Tue, 30 Dec 2025 07:12:45 GMT
+WORKDIR /go
+```
+
+-	Layers:
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d12ff73de1940cf169d9834c4cf953c0cc9c72c478673013d2a8a22a41944f8f`  
+		Last Modified: Tue, 30 Dec 2025 06:13:25 GMT  
+		Size: 75.9 MB (75919327 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a25ce8a7fa174e9abbfa1259cfd0fba44c900e27f7f4a5ae1c83f6fe0801a275`  
+		Last Modified: Mon, 29 Dec 2025 22:17:17 GMT  
+		Size: 94.2 MB (94203858 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:961a381ea386f40ac884e157460ec9b52b0cd75b46f5c81deca3f9d89f95c201`  
+		Last Modified: Tue, 30 Dec 2025 07:13:41 GMT  
+		Size: 126.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `golang:tip-20251227-trixie` - unknown; unknown
+
+```console
+$ docker pull golang@sha256:4dfa01fe7be4346b077aa3754eac5e327c44984a0ac772d8e07be886ba30d42e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **10.6 MB (10623872 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:bca5a6964178444b2ca2558f0def37290d831e2ce3c969061449b5436afdea92`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:3eb816c04b3e038b7612a0704ce24be0aa2789410116d5f99c4e252d90858e95`  
+		Last Modified: Tue, 30 Dec 2025 09:25:26 GMT  
+		Size: 10.6 MB (10594908 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:17981e22892b8bf61de377c464379e95f80d059c34f4633f04379fad656d5f44`  
+		Last Modified: Tue, 30 Dec 2025 09:25:27 GMT  
+		Size: 29.0 KB (28964 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `golang:tip-alpine`
@@ -44369,7 +44642,7 @@ $ docker pull golang@sha256:83337bff742d582551ef81fa716349fb66faf51093551e9f7447
 ## `golang:tip-bookworm`
 
 ```console
-$ docker pull golang@sha256:77404220da0a497ac43259bcb27ae13c52416a1bbb1133c0409464e873e7d521
+$ docker pull golang@sha256:152318d4aaf49655d65c8738eece67161162d63d33d1b4f0bad506c39f026a54
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -44833,62 +45106,62 @@ $ docker pull golang@sha256:c89ed7ee55a027281dbde75d0d7a45e4d10ab8a4d497fd516e4d
 ### `golang:tip-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:574c5757c5a3166189f86ed26165e51225d94028eabc2e46a2b43f53293aa285
+$ docker pull golang@sha256:f12758c0329d9f1d55b404698ceae7e7c8bd52bfdf0485812261881d5d818877
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **329.9 MB (329920550 bytes)**  
+-	Total Size: **329.9 MB (329922682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29bdbd5a44ac2c130ae47b6536ac867b06878560fce1361260a263c8bb195fbd`
+-	Image ID: `sha256:22aa59026bd8f866bdce623c96258866ac9f8290ce6ac9922db7c767537b1e3c`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1765152000'
-# Mon, 08 Dec 2025 22:28:27 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1766966400'
+# Tue, 30 Dec 2025 01:30:53 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 23:21:25 GMT
+# Tue, 30 Dec 2025 03:16:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:41:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Dec 2025 05:34:00 GMT
+# Mon, 29 Dec 2025 22:16:29 GMT
 ENV GOTOOLCHAIN=local
-# Wed, 24 Dec 2025 05:34:00 GMT
+# Mon, 29 Dec 2025 22:16:29 GMT
 ENV GOPATH=/go
-# Wed, 24 Dec 2025 05:34:00 GMT
+# Mon, 29 Dec 2025 22:16:29 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Dec 2025 05:34:00 GMT
+# Mon, 29 Dec 2025 22:16:29 GMT
 COPY /target/ / # buildkit
-# Wed, 24 Dec 2025 05:38:35 GMT
+# Tue, 30 Dec 2025 10:29:04 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Wed, 24 Dec 2025 05:38:35 GMT
+# Tue, 30 Dec 2025 10:29:04 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:c088128ea77bb5c706bb00930020ea2fba147060275f49c5a7be6b54af5ca7c8`  
-		Last Modified: Mon, 08 Dec 2025 22:17:06 GMT  
-		Size: 52.3 MB (52326977 bytes)  
+	-	`sha256:48e256c4119c0ad256492d6a930e99d2b2d7f8d7920d619aa2de4f616c37076e`  
+		Last Modified: Mon, 29 Dec 2025 22:25:39 GMT  
+		Size: 52.3 MB (52326998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4109a037ac4c69c3ce26e6d14e10c867842083c363485abd63db45502611991`  
-		Last Modified: Mon, 08 Dec 2025 22:28:59 GMT  
-		Size: 25.7 MB (25672209 bytes)  
+	-	`sha256:7517c515ac5fd6799cec288b72512b8ea3fc54d2d37de5af54d06ba0ea2f21bf`  
+		Last Modified: Tue, 30 Dec 2025 01:31:20 GMT  
+		Size: 25.7 MB (25672165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd2b93c70c0b05a907d16ae217d77a407e9aa88f69499ffbfee4375b49ab6c01`  
-		Last Modified: Mon, 08 Dec 2025 23:22:14 GMT  
-		Size: 69.8 MB (69846008 bytes)  
+	-	`sha256:f30ff2cfb691fedcba1692cb13fd0632001d1a876833f4cd2aa52eba87257a8f`  
+		Last Modified: Tue, 30 Dec 2025 03:17:48 GMT  
+		Size: 69.8 MB (69845530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21fcf0300c06237c12ec60c09556f95a6b8c833ba82bfc5828beb977742de538`  
-		Last Modified: Tue, 09 Dec 2025 02:13:29 GMT  
-		Size: 90.4 MB (90419946 bytes)  
+	-	`sha256:4fb3fd09a1e6774e533a42b26351be92003f5bdea475b8caa70173ad58b79d9f`  
+		Last Modified: Tue, 30 Dec 2025 08:43:16 GMT  
+		Size: 90.4 MB (90419830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd5de3a0302474d051f06a0dba49ec72e6a84fba75a10ec5c8dcfe3ca9da396d`  
-		Last Modified: Wed, 24 Dec 2025 05:35:28 GMT  
-		Size: 91.7 MB (91655252 bytes)  
+	-	`sha256:4d98e6a9db6f27c232427cc65a14243d3dc0a9f5145a0455e78bccfb2bf7249c`  
+		Last Modified: Mon, 29 Dec 2025 22:17:47 GMT  
+		Size: 91.7 MB (91658002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d464ec50c73f860af7c2680be60379908f83f71576b09e3b4f497d25e7b917e`  
-		Last Modified: Wed, 24 Dec 2025 05:39:34 GMT  
-		Size: 126.0 B  
+	-	`sha256:7785ac6f814e946243f18d76b5755d85e5be2e965a7ae9ae33a34584cd794ee0`  
+		Last Modified: Tue, 30 Dec 2025 10:30:11 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -44898,25 +45171,25 @@ WORKDIR /go
 ### `golang:tip-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:1c542cb1531ff92b9b20877092763ff43b1f2f1bab52e35f325b1b5ff8587e65
+$ docker pull golang@sha256:9c627314caad68fd995090f686e9833ff7a1c2adf152d5e6fa00da92c5263671
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10497303 bytes)**  
+-	Total Size: **10.5 MB (10497302 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e97dd8c3da9cb325454819fe77fde2d62afde10dcb53842564bd8b816028fdd2`
+-	Image ID: `sha256:13644cb49cfefad1e8da6fd0bc9390c829d661419ca37ab1b43f514f67cc27ec`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:601377588229a457ebef35b7fcd261114e3aa406d5a19f3ef19f49a870731dc9`  
-		Last Modified: Wed, 24 Dec 2025 06:25:43 GMT  
+	-	`sha256:5e910bcf5676c4bddcf9036131a120ea7cd986bc1a8763b131fe5fd4e723bd87`  
+		Last Modified: Tue, 30 Dec 2025 12:24:51 GMT  
 		Size: 10.5 MB (10468871 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2ba22cb44bc92ae76dba04b858cf6c567ed21f418e9aa5b2879ea2db8558049d`  
-		Last Modified: Wed, 24 Dec 2025 06:25:46 GMT  
-		Size: 28.4 KB (28432 bytes)  
+	-	`sha256:5be8e5a7f536f0f59dc5cf8d86296c10d3fcee971fb8191da8ac6076c833434e`  
+		Last Modified: Tue, 30 Dec 2025 12:24:52 GMT  
+		Size: 28.4 KB (28431 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:tip-bookworm` - linux; s390x
@@ -45011,7 +45284,7 @@ $ docker pull golang@sha256:d0ed90d9a18478f132e6d6d0439ea4ec144e0381eb136e76c4c6
 ## `golang:tip-trixie`
 
 ```console
-$ docker pull golang@sha256:269106f8071efd212a3360e23b3527a07f3de0a3011758ed32cf6159a36b750f
+$ docker pull golang@sha256:fdbbbf71cdb560c6a88f69138c24bffbf813efbcfa8e20934f4f4d189433de81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -45568,62 +45841,62 @@ $ docker pull golang@sha256:6d38cc12d2f36c041c99a1f950b63ef191ed2c3b33e6cec769d7
 ### `golang:tip-trixie` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:57dc55808c4a5c88127ae2058ba38176e0f76adadb8247fd115cdfd252bf2be7
+$ docker pull golang@sha256:268665c6fe63ebb4626772e1e8bc4f9b43edd1f6d273b3a1beae17b777f3a339
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **314.9 MB (314875221 bytes)**  
+-	Total Size: **314.9 MB (314886102 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:350bf60ae1561162d97c85cb79e1014947b9d88383a93b46908ff65d73ab8d4e`
+-	Image ID: `sha256:ae29dcbe3e131226c95de84ee0ee73dad47db5c4ffd2c84a44daafb8488dd4a4`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Dec 2025 05:16:18 GMT
+# Mon, 29 Dec 2025 22:16:41 GMT
 ENV GOTOOLCHAIN=local
-# Wed, 24 Dec 2025 05:16:18 GMT
+# Mon, 29 Dec 2025 22:16:41 GMT
 ENV GOPATH=/go
-# Wed, 24 Dec 2025 05:16:18 GMT
+# Mon, 29 Dec 2025 22:16:41 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Dec 2025 05:16:18 GMT
+# Mon, 29 Dec 2025 22:16:41 GMT
 COPY /target/ / # buildkit
-# Wed, 24 Dec 2025 05:16:20 GMT
+# Tue, 30 Dec 2025 07:12:45 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Wed, 24 Dec 2025 05:16:21 GMT
+# Tue, 30 Dec 2025 07:12:45 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:d12ff73de1940cf169d9834c4cf953c0cc9c72c478673013d2a8a22a41944f8f`  
+		Last Modified: Tue, 30 Dec 2025 06:13:25 GMT  
+		Size: 75.9 MB (75919327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1eae26383a5ec3ad19d41ec233e74f5aea1ebfab7013779b5b7f518483b785a`  
-		Last Modified: Wed, 24 Dec 2025 05:17:11 GMT  
-		Size: 94.2 MB (94198838 bytes)  
+	-	`sha256:a25ce8a7fa174e9abbfa1259cfd0fba44c900e27f7f4a5ae1c83f6fe0801a275`  
+		Last Modified: Mon, 29 Dec 2025 22:17:17 GMT  
+		Size: 94.2 MB (94203858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c6034d6bb260ee37a79a943ccdd639854251c8c9114a11d483872c70a7d15b5`  
-		Last Modified: Wed, 24 Dec 2025 05:17:05 GMT  
-		Size: 127.0 B  
+	-	`sha256:961a381ea386f40ac884e157460ec9b52b0cd75b46f5c81deca3f9d89f95c201`  
+		Last Modified: Tue, 30 Dec 2025 07:13:41 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -45633,31 +45906,31 @@ WORKDIR /go
 ### `golang:tip-trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:b2ead00a4d7fea96d80fe37d9edea44a059725adf2d56df88e2332a740438f81
+$ docker pull golang@sha256:4dfa01fe7be4346b077aa3754eac5e327c44984a0ac772d8e07be886ba30d42e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.6 MB (10623871 bytes)**  
+-	Total Size: **10.6 MB (10623872 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d56d16a50f4f02c6c95f502c8153a6a1bc8c31db58eff1a2f7948ac96c90e41`
+-	Image ID: `sha256:bca5a6964178444b2ca2558f0def37290d831e2ce3c969061449b5436afdea92`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:30b420beac0fa4c147d2262578ea58fbaa97d4b72319ab6b302fb708e0340ee2`  
-		Last Modified: Wed, 24 Dec 2025 06:24:38 GMT  
+	-	`sha256:3eb816c04b3e038b7612a0704ce24be0aa2789410116d5f99c4e252d90858e95`  
+		Last Modified: Tue, 30 Dec 2025 09:25:26 GMT  
 		Size: 10.6 MB (10594908 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:12f08cbc7dc6840b4aaa21f02cdbe1d789de6a738f157bf461e1bfbf3c302c57`  
-		Last Modified: Wed, 24 Dec 2025 06:24:40 GMT  
-		Size: 29.0 KB (28963 bytes)  
+	-	`sha256:17981e22892b8bf61de377c464379e95f80d059c34f4633f04379fad656d5f44`  
+		Last Modified: Tue, 30 Dec 2025 09:25:27 GMT  
+		Size: 29.0 KB (28964 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `golang:trixie`
 
 ```console
-$ docker pull golang@sha256:674418a0e262957bb2f5cb55f2519fb77616379ec6d5722f09ffe8fdfae7660e
+$ docker pull golang@sha256:cab89fb5baa0c86095f2b6e54a2bcf34c324396e35ca06b025e3edfb3f07363d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -46044,63 +46317,63 @@ $ docker pull golang@sha256:312235b61145fb1b0c9456ad38521dd04291819de65be02297ed
 ### `golang:trixie` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:edda83f1c330d90345cca76d1383b5cb5523b5aa9b481b1487be4059b72f0984
+$ docker pull golang@sha256:d6ad7fce8bdce5315f037cd9aff445d4cf7d7325333c8bb003403f0563ae7d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.1 MB (304078218 bytes)**  
+-	Total Size: **304.1 MB (304086918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1461c7db1331b19e172169e7312b31426366775a7635368ee57b90039298379f`
+-	Image ID: `sha256:16fd018bd874346d1dc0a6ebb6af7e779e7a2fcc45e6869943a48eca07e1a658`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1765152000'
-# Mon, 08 Dec 2025 23:22:52 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 03:18:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:12:19 GMT
+# Tue, 30 Dec 2025 08:22:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 06:20:54 GMT
+# Tue, 30 Dec 2025 10:23:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:12:05 GMT
+# Thu, 18 Dec 2025 01:38:02 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 06:20:59 GMT
+# Tue, 30 Dec 2025 10:25:10 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 06:21:00 GMT
+# Tue, 30 Dec 2025 10:25:11 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fb00391cdf4b5dc5fe2e67e0bee3770076e9af9efed48ba15cb306902e36c78c`  
-		Last Modified: Mon, 08 Dec 2025 22:52:23 GMT  
-		Size: 53.1 MB (53108478 bytes)  
+	-	`sha256:d586c84fb9377f9b3f4030e2c3e1e9ff7b1a23a68b8abc2c48a43163a3589257`  
+		Last Modified: Tue, 30 Dec 2025 01:51:01 GMT  
+		Size: 53.1 MB (53108485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e79cf54a8287f03b9105a7213ef3a99e05832db0bdcaf506dd64b872bddfd7b`  
-		Last Modified: Mon, 08 Dec 2025 23:23:25 GMT  
-		Size: 27.0 MB (26996775 bytes)  
+	-	`sha256:cd44afe623a2af1e017b0756e314b5b0882afdc551ddbb8ab4a0e0d718eb8f20`  
+		Last Modified: Tue, 30 Dec 2025 03:19:14 GMT  
+		Size: 27.0 MB (26996817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbdd943d24ee93fc3b0013d3315e9ace0f4529c7fcae39b318579723e579b6d`  
-		Last Modified: Tue, 09 Dec 2025 02:13:21 GMT  
-		Size: 73.0 MB (73022086 bytes)  
+	-	`sha256:1464b5ef37e07d88bfdddc49e0cb0b76c46c151a0ee23e6a2bd75bd6783f9790`  
+		Last Modified: Tue, 30 Dec 2025 08:23:35 GMT  
+		Size: 73.0 MB (73031008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62094cf6808b342239ceac9c58c9096b769bf275793baaa6699740b93ef88f7b`  
-		Last Modified: Tue, 09 Dec 2025 06:22:27 GMT  
-		Size: 92.8 MB (92815776 bytes)  
+	-	`sha256:32c305b2563d5a320b2f5d542cb42b58b482a07941244656f1dd066b0fb90900`  
+		Last Modified: Tue, 30 Dec 2025 10:25:02 GMT  
+		Size: 92.8 MB (92815505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0da503e4b3d4a624ac596179648e9a31a4f87f7d37fdb8c7bef57190d6ed7d`  
 		Last Modified: Tue, 02 Dec 2025 17:48:12 GMT  
 		Size: 58.1 MB (58134946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6849ad71391fbbeff8d3472dbaf3d868186dc95123c70609a1adde617759e1ac`  
-		Last Modified: Tue, 09 Dec 2025 06:22:22 GMT  
+	-	`sha256:745a29a39a173b26b9ebf23e656da3218659ccc1713088694c73d5b2ce8105de`  
+		Last Modified: Tue, 30 Dec 2025 10:26:04 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -46111,24 +46384,24 @@ WORKDIR /go
 ### `golang:trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:0df8c06a7aec2e4ec38f44656ab30d04a0e6cfbc01fd857463e692dc4d078265
+$ docker pull golang@sha256:fa5fd6b8bb561a988859f3d4a9ad6bb55aab28d307b6e2bbc6f9119ef2fa803f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10809257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8fc0ea5c25eb7d1fdf78eca32487758741ba89c533f4f8f1a157b373321c2d5c`
+-	Image ID: `sha256:f018751f15089b3b14839c7faee6f2236566dd323b394b432e1e43044e663795`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fd7ba604dfe0652a6c107f74a16e99c4d148aa256b5bf017d2e5bdc093a7f9a7`  
-		Last Modified: Tue, 09 Dec 2025 09:22:58 GMT  
+	-	`sha256:358257bb853235928e85e14dc05b9e21dba422364df90d265560bafe83dfc589`  
+		Last Modified: Tue, 30 Dec 2025 12:22:50 GMT  
 		Size: 10.8 MB (10780236 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c37d00d6023ca454fe54a45729be587e4a531f26ed20aad02672f290a21c1a86`  
-		Last Modified: Tue, 09 Dec 2025 09:22:59 GMT  
+	-	`sha256:f0a8ca6d0806afbdef720cef4b9a9010482a3c8b4e93d03d717aa0a5a6173cc9`  
+		Last Modified: Tue, 30 Dec 2025 12:22:51 GMT  
 		Size: 29.0 KB (29021 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -46226,63 +46499,63 @@ $ docker pull golang@sha256:1d42ef18ecb6983d9a5771931346da837b56993c8ac8c4781b0f
 ### `golang:trixie` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:8e612b7aa289e9adfc9d7ebf758e773772283ad5001a00c01d7e5f0df0081b8f
+$ docker pull golang@sha256:dbacffbf856eb14cf139f2b7c4d30338357928cfa32bc85aeb8bffed531c5f62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.2 MB (280163602 bytes)**  
+-	Total Size: **280.2 MB (280169485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97c6f589aa3269204b9a2cffd8841408da19f832f8e775a295d4adae8b8f5ece`
+-	Image ID: `sha256:222c2c9ffd786468fc343769bfb474611a124ec22468a0bf9af8bc61cbe74541`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 00:11:43 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 04:14:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 01:47:15 GMT
+# Tue, 30 Dec 2025 06:03:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 02:58:44 GMT
+# Tue, 30 Dec 2025 06:12:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOLANG_VERSION=1.25.5
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV GOPATH=/go
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Dec 2025 02:59:28 GMT
+# Thu, 18 Dec 2025 01:15:01 GMT
 COPY /target/ / # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 09 Dec 2025 02:59:30 GMT
+# Tue, 30 Dec 2025 06:12:14 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:3f8967bef2f6a8ec916f7d3a0d528a6724093176621c5758addeeece50e41dec`  
-		Last Modified: Mon, 08 Dec 2025 22:16:15 GMT  
-		Size: 49.3 MB (49345908 bytes)  
+	-	`sha256:85bc4a4d1f4e52a33d42907057e0ab87c5eb2560b332d94f6e9d7da79c0c76b8`  
+		Last Modified: Tue, 30 Dec 2025 03:26:29 GMT  
+		Size: 49.3 MB (49345959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c98c145469a927f8321c172bcf0ed7919725c5f02b2fea3f4d05ea5083b4b8c0`  
-		Last Modified: Tue, 09 Dec 2025 00:12:09 GMT  
-		Size: 26.8 MB (26786516 bytes)  
+	-	`sha256:e7ac6efd7cfec1d611dcf0011d64b56f69fe5f6fe47195e090cb8c04e2584e93`  
+		Last Modified: Tue, 30 Dec 2025 04:14:36 GMT  
+		Size: 26.8 MB (26786464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a105dbf5cfcb4e2c38a6c33b07d696009c0c1ce742a7404e87b258f0914a1424`  
-		Last Modified: Tue, 09 Dec 2025 01:47:55 GMT  
-		Size: 68.6 MB (68624346 bytes)  
+	-	`sha256:978ec2f50f1462efd64a546370da30e382c7f6044ad53993a4af33689f25341a`  
+		Last Modified: Tue, 30 Dec 2025 06:04:24 GMT  
+		Size: 68.6 MB (68630336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb2be274f95003449a8278cbc7ab315c7bcb675710ce099ea39eaa8742edd0f0`  
-		Last Modified: Tue, 09 Dec 2025 03:00:19 GMT  
-		Size: 75.9 MB (75919454 bytes)  
+	-	`sha256:5388570833e7ff5a3b6ddf9a424d471e073c109ee58e115df3ece488cbb89d91`  
+		Last Modified: Tue, 30 Dec 2025 06:13:01 GMT  
+		Size: 75.9 MB (75919348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:036b6dba2ceabbb92eb6c9ebccd3e6b705dacf7cc4426156bbedfd17ad5dc53b`  
 		Last Modified: Tue, 02 Dec 2025 17:49:47 GMT  
 		Size: 59.5 MB (59487220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42a9e961325948363100d5bf4169ac5a2766670063f6aa5d0860b8ed7f03d0b2`  
-		Last Modified: Tue, 09 Dec 2025 03:00:12 GMT  
+	-	`sha256:e51f5064feef79db34c21a2dd41749a2916949d03779f5c73c692a7d8deaadd7`  
+		Last Modified: Tue, 30 Dec 2025 06:12:57 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -46293,24 +46566,24 @@ WORKDIR /go
 ### `golang:trixie` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:866476b6405d21e9121a8e6952a69e4d0a8dd9fe6bdb4b68729b5528affe5728
+$ docker pull golang@sha256:9b4e9000d302d567d94b5dcc7fe080e403bcf723deb3d8794d544c32c71bd8c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 MB (10623777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:146637d5f45edabe69713bc1007ffb29eafc03744b756bcaf57639a7cf41ccc5`
+-	Image ID: `sha256:20064c1161ab4c5f446c880bd89a41873fbcceb4b33db56e9f4395f80aa77a1e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c28e78f5457bc3963bafaa56ed6586f2a1a334fcf0a4644de495b1f4f6d53161`  
-		Last Modified: Tue, 09 Dec 2025 03:23:53 GMT  
+	-	`sha256:374539d44b6a4a49375d49799d09dc7cc8efbb7a1c873191aa5dc9b9f426be60`  
+		Last Modified: Tue, 30 Dec 2025 09:23:07 GMT  
 		Size: 10.6 MB (10594828 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7742e5e1ba6aa2a09a3ef3a9d0d030403983f72d69e78059b1fb856129652fd6`  
-		Last Modified: Tue, 09 Dec 2025 03:23:54 GMT  
+	-	`sha256:e955d7ff6063882dc3be109953449ae3ee88be05efa1ead5ac81a297692d54b6`  
+		Last Modified: Tue, 30 Dec 2025 09:23:08 GMT  
 		Size: 28.9 KB (28949 bytes)  
 		MIME: application/vnd.in-toto+json
 
