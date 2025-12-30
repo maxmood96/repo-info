@@ -1,0 +1,94 @@
+## `influxdb:meta-alpine`
+
+```console
+$ docker pull influxdb@sha256:811acdf4664b52af3f6d703e48787e2b4606ae470747606bfa84ebf6e3395179
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	unknown; unknown
+
+### `influxdb:meta-alpine` - linux; amd64
+
+```console
+$ docker pull influxdb@sha256:eafc8ce951405cbc7907d39b292cbde2a07e4f8bb20e15f5de12110ff310c811
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **23.6 MB (23590971 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8a57259f8ac7012ee31aebecf1b6497bcb8758c5d887d973b483ddbdbcf723da`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["influxd-meta"]`
+
+```dockerfile
+# Tue, 30 Sep 2025 13:56:01 GMT
+ADD alpine-minirootfs-3.21.5-x86_64.tar.gz / # buildkit
+# Tue, 30 Sep 2025 13:56:01 GMT
+CMD ["/bin/sh"]
+# Tue, 30 Sep 2025 13:56:01 GMT
+RUN apk add --no-cache tzdata bash ca-certificates &&     update-ca-certificates # buildkit
+# Tue, 30 Sep 2025 13:56:01 GMT
+ENV INFLUXDB_VERSION=1.12.2-c1.12.2
+# Tue, 30 Sep 2025 13:56:01 GMT
+RUN apk add --no-cache --virtual .build-deps curl gnupg tar &&     curl -fsSLO "https://dl.influxdata.com/enterprise/releases/influxdb-meta-${INFLUXDB_VERSION}_linux_amd64.tar.gz.asc"          -fssLO "https://dl.influxdata.com/enterprise/releases/influxdb-meta-${INFLUXDB_VERSION}_linux_amd64.tar.gz" &&     gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys         24C975CBA61A024EE1B631787C3D57159FC2F927 &&     gpg --batch --verify         "influxdb-meta-${INFLUXDB_VERSION}_linux_amd64.tar.gz.asc"         "influxdb-meta-${INFLUXDB_VERSION}_linux_amd64.tar.gz" &&     tar -xvf "influxdb-meta-${INFLUXDB_VERSION}_linux_amd64.tar.gz"         -C / --strip-components 1 --wildcards             'influxdb-*/usr/bin/influxd-ctl'             'influxdb-*/usr/bin/influxd-meta' &&     rm "influxdb-meta-${INFLUXDB_VERSION}_linux_amd64.tar.gz.asc"        "influxdb-meta-${INFLUXDB_VERSION}_linux_amd64.tar.gz" &&     apk del .build-deps # buildkit
+# Tue, 30 Sep 2025 13:56:01 GMT
+COPY influxdb-meta.conf /etc/influxdb/influxdb-meta.conf # buildkit
+# Tue, 30 Sep 2025 13:56:01 GMT
+EXPOSE map[8091/tcp:{}]
+# Tue, 30 Sep 2025 13:56:01 GMT
+VOLUME [/var/lib/influxdb]
+# Tue, 30 Sep 2025 13:56:01 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Tue, 30 Sep 2025 13:56:01 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Tue, 30 Sep 2025 13:56:01 GMT
+CMD ["influxd-meta"]
+```
+
+-	Layers:
+	-	`sha256:f637881d1138581d892d9eb942c56e0ccc7758fe3bdc0f1e6cd66059fdfd8185`  
+		Last Modified: Sun, 07 Dec 2025 13:55:07 GMT  
+		Size: 3.6 MB (3642569 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5a1506a520a1ca51f516d5068e753e243431efab0ef69c7b1634e53985ce44a2`  
+		Last Modified: Mon, 15 Dec 2025 20:39:36 GMT  
+		Size: 1.2 MB (1225337 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a8df8f8e418a27917114426b3d245a3728772fe30be9e1b0b609e79b9ccb3b1d`  
+		Last Modified: Mon, 15 Dec 2025 20:39:39 GMT  
+		Size: 18.7 MB (18722501 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b96fdeefb85b445c179f78bb53968e8210d7aaa4a30cccb4d6452d9ac4a7b000`  
+		Last Modified: Fri, 12 Dec 2025 22:35:31 GMT  
+		Size: 193.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e5817ad78e6b46e06d7f07b733f09a0eddd15b789d78398b86fe406d8cd2fdf7`  
+		Last Modified: Tue, 09 Dec 2025 22:35:17 GMT  
+		Size: 371.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `influxdb:meta-alpine` - unknown; unknown
+
+```console
+$ docker pull influxdb@sha256:7df6901865ed7a906f1c751eba50de606f5f89648541f49d5c79af65530b1190
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **695.3 KB (695336 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:523ace161067c6e86bd41d82cc97db7e8a4993f3da53f36d6d5629e38bee6daa`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:3d4d976d2a8846a9f10e6d2d34d790872d5e7ed7b1b351117c82f8b927502399`  
+		Last Modified: Mon, 15 Dec 2025 20:39:37 GMT  
+		Size: 681.8 KB (681759 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:e71c697656e9ce6a76bcb04d0f78aff32c9bc6715c511aa163637cbd6c96a2ac`  
+		Last Modified: Mon, 15 Dec 2025 20:39:37 GMT  
+		Size: 13.6 KB (13577 bytes)  
+		MIME: application/vnd.in-toto+json
