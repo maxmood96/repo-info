@@ -1,7 +1,7 @@
 ## `ruby:4-slim-bookworm`
 
 ```console
-$ docker pull ruby@sha256:5dd79bd6455b2be29672729644b753babc88b7cdf06e920445ad148697908dca
+$ docker pull ruby@sha256:51dc3fabd6b34f3a12b54bdbe4f85e5b1800300c4c29483aecefc7eaa5430ed0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -461,84 +461,84 @@ $ docker pull ruby@sha256:8d4f2f64f556d418183d99c6a6e4087da88e31fb27c666d3bd972a
 ### `ruby:4-slim-bookworm` - linux; mips64le
 
 ```console
-$ docker pull ruby@sha256:0fc199cd4595fb6862cad73967c50ba2fa3419331835e793f58e98b5bb90b1b0
+$ docker pull ruby@sha256:35b627f70cde64fe9edf14d39bc620bbd39f5ed4d20529e96daeecb2b10a6e59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.8 MB (74752655 bytes)**  
+-	Total Size: **74.8 MB (74752019 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11d2dd65428fa7f835c5f5e551c391c59946734d04a1ec32dea6861c70af6558`
+-	Image ID: `sha256:c87a420b15fbaa62bc177215d9e8d66c8a396fe8a3ac95d8b5c692b3dfab963b`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1765152000'
-# Tue, 09 Dec 2025 19:40:54 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1766966400'
+# Tue, 30 Dec 2025 16:06:43 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Dec 2025 19:40:56 GMT
+# Tue, 30 Dec 2025 16:06:44 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Fri, 26 Dec 2025 03:38:46 GMT
+# Tue, 30 Dec 2025 16:22:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 26 Dec 2025 03:38:46 GMT
+# Tue, 30 Dec 2025 16:22:37 GMT
 ENV RUBY_VERSION=4.0.0
-# Fri, 26 Dec 2025 03:38:46 GMT
+# Tue, 30 Dec 2025 16:22:37 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.0.tar.xz
-# Fri, 26 Dec 2025 03:38:46 GMT
+# Tue, 30 Dec 2025 16:22:37 GMT
 ENV RUBY_DOWNLOAD_SHA256=a72bacee9de07283ebc19baa4ac243b193129f21aa4e168c7186fb1fe7d07fe1
-# Fri, 26 Dec 2025 03:38:46 GMT
+# Tue, 30 Dec 2025 16:22:37 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		bzip2 		g++ 		gcc 		libbz2-dev 		libffi-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libgmp-dev 		libncurses-dev 		libssl-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		wget 		xz-utils 		zlib1g-dev 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.28.2/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='20a06e644b0d9bd2fbdbfd52d42540bdde820ea7df86e92e533c073da0cdd43c' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.28.2/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='e3853c5a252fca15252d07cb23a1bdd9377a8c6f3efa01531109281ae47f841c' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.91.1' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 		${rustArch:+--enable-zjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Fri, 26 Dec 2025 03:38:46 GMT
+# Tue, 30 Dec 2025 16:22:37 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 26 Dec 2025 03:38:46 GMT
+# Tue, 30 Dec 2025 16:22:37 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 26 Dec 2025 03:38:46 GMT
+# Tue, 30 Dec 2025 16:22:37 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 26 Dec 2025 03:38:48 GMT
+# Tue, 30 Dec 2025 16:22:39 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Fri, 26 Dec 2025 03:38:48 GMT
+# Tue, 30 Dec 2025 16:22:39 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:b2b054f3a77e8800c8f5fad5ed6594164acd9d6bbb1409af308aa485c7352cac`  
-		Last Modified: Mon, 08 Dec 2025 22:15:08 GMT  
-		Size: 28.5 MB (28513802 bytes)  
+	-	`sha256:f479f5e9b924c5f7ef1d8b31a2c87cbd2a63c9fdc99e9e0c0cea7eae009e308c`  
+		Last Modified: Mon, 29 Dec 2025 22:38:39 GMT  
+		Size: 28.5 MB (28513809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fae0d21e7864b05749120de5753c0f646ff71b129c48213613d7cb0d94f337e`  
-		Last Modified: Tue, 09 Dec 2025 19:57:43 GMT  
-		Size: 2.9 MB (2900496 bytes)  
+	-	`sha256:5ab807473bbd7ea292a64937a2aec3b89f0de88151f46993597cdfe1631881a7`  
+		Last Modified: Tue, 30 Dec 2025 16:23:32 GMT  
+		Size: 2.9 MB (2900472 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b43d4f4909e56fda01abcbe12c4f12dae0ec70e0d8de161941e2e2f8e96b2771`  
-		Last Modified: Tue, 09 Dec 2025 19:57:42 GMT  
+	-	`sha256:dbc319412b18b83e65d9dad43ffbee67efb6391dbae86d19f046079ff95a1e21`  
+		Last Modified: Tue, 30 Dec 2025 16:23:32 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eccf8e3c85a63d0ef4ba8bb014eda1cd0d07df82d52d9ab3e4f3998ac60ee10c`  
-		Last Modified: Fri, 26 Dec 2025 03:39:42 GMT  
-		Size: 43.3 MB (43338024 bytes)  
+	-	`sha256:f9bf14b932f357ca887678aac029db60edb0a1edbea6dc0c5ac54c0f8b8bbde6`  
+		Last Modified: Tue, 30 Dec 2025 16:23:35 GMT  
+		Size: 43.3 MB (43337406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41596a36b0d10ec5d26017beeca2c3c0cbf17a04bdd2ccf19ada4d5c16836f5a`  
-		Last Modified: Fri, 26 Dec 2025 03:39:39 GMT  
-		Size: 144.0 B  
+	-	`sha256:f6125a383f52375dd9b92447a7a6c60d96d0962f62fa8731eec27de46c392697`  
+		Last Modified: Tue, 30 Dec 2025 16:23:32 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ruby:4-slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull ruby@sha256:ecf5621925080702932f24a0e70f485e847d2fcdb7fbc2cc833f03fdb990cd7f
+$ docker pull ruby@sha256:e780736b9a11ede42e24f680f3e54357f6c69da24bc13656a174771e9da99184
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **22.7 KB (22743 bytes)**  
+-	Total Size: **23.1 KB (23062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31bda1e4cbd12885ad160bc4148cc9601d481d46fd9ee811c50745f9d4c2486a`
+-	Image ID: `sha256:5f1dc560c6ebe4f52182b5011f951fe0226c0fa7760b91a76110526baf683c22`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d70bf2ff1b04f8fddec11c50a728cd88973567d79d6cb816c528a197bf353b80`  
-		Last Modified: Fri, 26 Dec 2025 07:02:14 GMT  
-		Size: 22.7 KB (22743 bytes)  
+	-	`sha256:90b2f1291752d80f68881e0738a809fe702631aaf9362905c89226db8f6750be`  
+		Last Modified: Tue, 30 Dec 2025 18:59:34 GMT  
+		Size: 23.1 KB (23062 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ruby:4-slim-bookworm` - linux; ppc64le
