@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b375955ff1e0c85d7c74a1d23df0b7b48b9230e1f9a94d3db38af36683f5697`
-- Created: `2025-12-15T18:06:52.916762884Z`
+- Image ID: `sha256:34a04f49bf899f0e314350f76836e106d3a1f9150177ff04d79efb323dcb30f4`
+- Created: `2025-12-30T03:15:25.719627012Z`
 - Virtual Size: ~ 1.80 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -4701,12 +4701,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libpciaccess/0.17-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libpciaccess/0.17-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.48-1`
+### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u1`
 
 Binary Packages:
 
-- `libpng-dev:amd64=1.6.48-1`
-- `libpng16-16t64:amd64=1.6.48-1`
+- `libpng-dev:amd64=1.6.48-1+deb13u1`
+- `libpng16-16t64:amd64=1.6.48-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -4722,17 +4722,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.48-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1.dsc' libpng1.6_1.6.48-1.dsc 2254 SHA256:dd8742533bd0201d64c94e019460ddf28141f369fc78f52c19028d58530f87f0
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1.debian.tar.xz' libpng1.6_1.6.48-1.debian.tar.xz 33240 SHA256:647c6b09cdb628200e2213b75f6ab3fe0a4fe18f21fe78c6821ecb15e154e7d2
+$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u1.dsc' libpng1.6_1.6.48-1+deb13u1.dsc 2286 SHA256:0f0a79157e67ab9b2df6ca77192b5255277ae5d07a929d9a0ee8cba1ceedb21f
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u1.debian.tar.xz' libpng1.6_1.6.48-1+deb13u1.debian.tar.xz 39324 SHA256:416084e356fed53da55e399ec8ea720050db9013a7c28f68454f27a53cf42563
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.48-1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.48-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.48-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libproxy=0.5.9-1`
 
@@ -8799,12 +8799,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.23.1-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.23.1-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `webkit2gtk=2.50.3-1~deb13u1`
+### `dpkg` source package: `webkit2gtk=2.50.4-1~deb13u1`
 
 Binary Packages:
 
-- `libjavascriptcoregtk-4.1-0:amd64=2.50.3-1~deb13u1`
-- `libwebkit2gtk-4.1-0:amd64=2.50.3-1~deb13u1`
+- `libjavascriptcoregtk-4.1-0:amd64=2.50.4-1~deb13u1`
+- `libwebkit2gtk-4.1-0:amd64=2.50.4-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.1-0/copyright`, `/usr/share/doc/libwebkit2gtk-4.1-0/copyright`)
 
@@ -8840,13 +8840,21 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.1-0/copyright`, `
 - `MPL-1.1`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris webkit2gtk=2.50.4-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.50.4-1%7edeb13u1.dsc' webkit2gtk_2.50.4-1~deb13u1.dsc 4893 SHA256:b2d44aca010faaf432823472e03d39c4d31495cedafd153eb8a48b00faa483a2
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.50.4.orig.tar.xz' webkit2gtk_2.50.4.orig.tar.xz 45280588 SHA256:d3bfa473845acfab72635bada5e0d134fda6792c5b95c5c5cd141b46125bd8e4
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.50.4.orig.tar.xz.asc' webkit2gtk_2.50.4.orig.tar.xz.asc 833 SHA256:0589ff04aaa07a009a5ee887009b11d07b635a81b90f08146fedb12bead81317
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.50.4-1%7edeb13u1.debian.tar.xz' webkit2gtk_2.50.4-1~deb13u1.debian.tar.xz 91612 SHA256:184e23ecd1c95086e86d30d67a306fc7d684f6979910c01e59827f45b8d2d272
+```
 
-- http://snapshot.debian.org/package/webkit2gtk/2.50.3-1~deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/webkit2gtk/2.50.4-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/webkit2gtk/2.50.4-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/webkit2gtk/2.50.4-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
