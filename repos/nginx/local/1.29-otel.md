@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a4ab001b198972d5f3cbdb4fbc132275f5a63791ff4fdeeb369f77260540425`
-- Created: `2025-12-09T23:10:43.76389738Z`
+- Image ID: `sha256:3d4fb8bd1483a1b8141f878d335779498534ca6effc3344e37299850add8f20e`
+- Created: `2025-12-30T01:15:00.789352948Z`
 - Virtual Size: ~ 160.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -329,11 +329,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `c-ares=1.34.5-1`
+### `dpkg` source package: `c-ares=1.34.5-1+deb13u1`
 
 Binary Packages:
 
-- `libcares2:amd64=1.34.5-1`
+- `libcares2:amd64=1.34.5-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libcares2/copyright`)
 
@@ -355,18 +355,18 @@ Licenses: (parsed from: `/usr/share/doc/libcares2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris c-ares=1.34.5-1
-'http://deb.debian.org/debian/pool/main/c/c-ares/c-ares_1.34.5-1.dsc' c-ares_1.34.5-1.dsc 2234 SHA256:79ab5abb274cb1d4383503323a35a6f5af2316bb7d348cbfcc70bc601c8f8a1a
-'http://deb.debian.org/debian/pool/main/c/c-ares/c-ares_1.34.5.orig.tar.gz' c-ares_1.34.5.orig.tar.gz 1009261 SHA256:7d935790e9af081c25c495fd13c2cfcda4792983418e96358ef6e7320ee06346
-'http://deb.debian.org/debian/pool/main/c/c-ares/c-ares_1.34.5.orig.tar.gz.asc' c-ares_1.34.5.orig.tar.gz.asc 228 SHA256:146fcf8ac828903521da52b76852843480a9ee0bdd5e145f81e6df0bb27c40bd
-'http://deb.debian.org/debian/pool/main/c/c-ares/c-ares_1.34.5-1.debian.tar.xz' c-ares_1.34.5-1.debian.tar.xz 18572 SHA256:5042721bed892bf0749411335c1948df2f4a3d2106a5ba44d0f007fe4056e0fc
+$ apt-get source -qq --print-uris c-ares=1.34.5-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/c-ares/c-ares_1.34.5-1%2bdeb13u1.dsc' c-ares_1.34.5-1+deb13u1.dsc 2388 SHA256:8848358552603070f98f37679a9361b4da8405b841bbf59d002556571670f7f1
+'http://deb.debian.org/debian-security/pool/updates/main/c/c-ares/c-ares_1.34.5.orig.tar.gz' c-ares_1.34.5.orig.tar.gz 1009261 SHA256:7d935790e9af081c25c495fd13c2cfcda4792983418e96358ef6e7320ee06346
+'http://deb.debian.org/debian-security/pool/updates/main/c/c-ares/c-ares_1.34.5.orig.tar.gz.asc' c-ares_1.34.5.orig.tar.gz.asc 228 SHA256:146fcf8ac828903521da52b76852843480a9ee0bdd5e145f81e6df0bb27c40bd
+'http://deb.debian.org/debian-security/pool/updates/main/c/c-ares/c-ares_1.34.5-1%2bdeb13u1.debian.tar.xz' c-ares_1.34.5-1+deb13u1.debian.tar.xz 21764 SHA256:f815c2a7bf9dade9e98ac06ecf19de05678d3bd8507e6c0e60e4187320b30be5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/c-ares/1.34.5-1/ (for browsing the source)
-- https://sources.debian.net/src/c-ares/1.34.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/c-ares/1.34.5-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/c-ares/1.34.5-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/c-ares/1.34.5-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/c-ares/1.34.5-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ca-certificates=20250419`
 
@@ -1931,11 +1931,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libmd/1.1.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libmd/1.1.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.48-1`
+### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u1`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.48-1`
+- `libpng16-16t64:amd64=1.6.48-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -1951,17 +1951,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.48-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1.dsc' libpng1.6_1.6.48-1.dsc 2254 SHA256:dd8742533bd0201d64c94e019460ddf28141f369fc78f52c19028d58530f87f0
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1.debian.tar.xz' libpng1.6_1.6.48-1.debian.tar.xz 33240 SHA256:647c6b09cdb628200e2213b75f6ab3fe0a4fe18f21fe78c6821ecb15e154e7d2
+$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u1.dsc' libpng1.6_1.6.48-1+deb13u1.dsc 2286 SHA256:0f0a79157e67ab9b2df6ca77192b5255277ae5d07a929d9a0ee8cba1ceedb21f
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u1.debian.tar.xz' libpng1.6_1.6.48-1+deb13u1.debian.tar.xz 39324 SHA256:416084e356fed53da55e399ec8ea720050db9013a7c28f68454f27a53cf42563
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.48-1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.48-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.48-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
