@@ -1,7 +1,7 @@
 ## `wordpress:php8.1-apache`
 
 ```console
-$ docker pull wordpress@sha256:9041410b42e71c9509872ad33b7900f706929045ec3365665ae8e23260b90e95
+$ docker pull wordpress@sha256:f73396626d2f1b89d4c556917c15f55cfcc6b5f80595205516e490f0f04015e4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1358,222 +1358,222 @@ $ docker pull wordpress@sha256:d94bffd313781c44135700aeb36fd42f94acb5301c2dba8fe
 ### `wordpress:php8.1-apache` - linux; riscv64
 
 ```console
-$ docker pull wordpress@sha256:5e3538011100bfd4a32d84624fab7ed5538e903737f97d0239449a6e08f12677
+$ docker pull wordpress@sha256:42ec1658b4188fe36520a9b7d8f1c8587fc0d58333c11e8ba462f4ab5494fb11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **284.0 MB (283967271 bytes)**  
+-	Total Size: **284.0 MB (283966752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ac34ea3c388c51414c6b8e64ff81cd4331705c2266cb0da98782457eaa342bc`
+-	Image ID: `sha256:a55d87974d0ef1a37545996c8dc73078b55b355e5353cd8c46663fa1a9c00007`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Mon, 08 Dec 2025 00:00:00 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1765152000'
-# Tue, 09 Dec 2025 08:01:03 GMT
+# Mon, 29 Dec 2025 00:00:00 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1766966400'
+# Tue, 30 Dec 2025 08:15:35 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 09 Dec 2025 08:03:03 GMT
+# Tue, 30 Dec 2025 08:17:34 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 09 Dec 2025 08:03:03 GMT
+# Tue, 30 Dec 2025 08:17:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
-# Tue, 09 Dec 2025 08:03:03 GMT
+# Tue, 30 Dec 2025 08:17:34 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 09 Dec 2025 08:03:04 GMT
+# Tue, 30 Dec 2025 08:17:35 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 09 Dec 2025 08:03:04 GMT
+# Tue, 30 Dec 2025 08:17:35 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Tue, 09 Dec 2025 08:03:04 GMT
+# Tue, 30 Dec 2025 08:17:35 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Tue, 09 Dec 2025 09:08:24 GMT
+# Tue, 30 Dec 2025 09:23:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	apt-get dist-clean; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Tue, 09 Dec 2025 09:08:25 GMT
+# Tue, 30 Dec 2025 09:23:40 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Tue, 09 Dec 2025 09:08:26 GMT
+# Tue, 30 Dec 2025 09:23:41 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Tue, 09 Dec 2025 09:08:26 GMT
+# Tue, 30 Dec 2025 09:23:41 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 09 Dec 2025 09:08:26 GMT
+# Tue, 30 Dec 2025 09:23:41 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 09 Dec 2025 09:08:26 GMT
+# Tue, 30 Dec 2025 09:23:41 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 09 Dec 2025 09:08:26 GMT
+# Tue, 30 Dec 2025 09:23:41 GMT
 ENV GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD
-# Tue, 09 Dec 2025 09:08:26 GMT
+# Tue, 30 Dec 2025 09:23:41 GMT
 ENV PHP_VERSION=8.1.34
-# Tue, 09 Dec 2025 09:08:26 GMT
+# Tue, 30 Dec 2025 09:23:41 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.1.34.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.1.34.tar.xz.asc
-# Tue, 09 Dec 2025 09:08:26 GMT
+# Tue, 30 Dec 2025 09:23:41 GMT
 ENV PHP_SHA256=ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251
-# Mon, 22 Dec 2025 06:31:20 GMT
+# Tue, 30 Dec 2025 22:44:52 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Mon, 22 Dec 2025 06:31:21 GMT
+# Tue, 30 Dec 2025 22:44:52 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Mon, 22 Dec 2025 07:16:13 GMT
+# Tue, 30 Dec 2025 23:29:34 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 'riscv64-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Mon, 22 Dec 2025 07:16:13 GMT
+# Tue, 30 Dec 2025 23:29:34 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Mon, 22 Dec 2025 07:16:14 GMT
+# Tue, 30 Dec 2025 23:29:35 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Mon, 22 Dec 2025 07:16:15 GMT
+# Tue, 30 Dec 2025 23:29:36 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Mon, 22 Dec 2025 07:16:15 GMT
+# Tue, 30 Dec 2025 23:29:36 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 22 Dec 2025 07:16:15 GMT
+# Tue, 30 Dec 2025 23:29:36 GMT
 STOPSIGNAL SIGWINCH
-# Mon, 22 Dec 2025 07:16:15 GMT
+# Tue, 30 Dec 2025 23:29:36 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Mon, 22 Dec 2025 07:16:15 GMT
+# Tue, 30 Dec 2025 23:29:36 GMT
 WORKDIR /var/www/html
-# Mon, 22 Dec 2025 07:16:15 GMT
+# Tue, 30 Dec 2025 23:29:36 GMT
 EXPOSE map[80/tcp:{}]
-# Mon, 22 Dec 2025 07:16:15 GMT
+# Tue, 30 Dec 2025 23:29:36 GMT
 CMD ["apache2-foreground"]
-# Tue, 23 Dec 2025 11:09:08 GMT
+# Thu, 01 Jan 2026 08:36:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ghostscript 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Dec 2025 11:22:26 GMT
+# Thu, 01 Jan 2026 08:49:51 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libavif-dev 		libfreetype6-dev 		libicu-dev 		libjpeg-dev 		libmagickwand-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-install -j "$(nproc)" 		bcmath 		exif 		gd 		intl 		mysqli 		zip 	; 	pecl install imagick-3.8.1; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$extDir"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Tue, 23 Dec 2025 11:22:26 GMT
+# Thu, 01 Jan 2026 08:49:52 GMT
 RUN set -eux; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Tue, 23 Dec 2025 11:22:27 GMT
+# Thu, 01 Jan 2026 08:49:52 GMT
 RUN set -eux; 	{ 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > "$PHP_INI_DIR/conf.d/error-logging.ini" # buildkit
-# Tue, 23 Dec 2025 11:22:28 GMT
+# Thu, 01 Jan 2026 08:49:53 GMT
 RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPInternalProxy 10.0.0.0/8'; 		echo 'RemoteIPInternalProxy 172.16.0.0/12'; 		echo 'RemoteIPInternalProxy 192.168.0.0/16'; 		echo 'RemoteIPInternalProxy 169.254.0.0/16'; 		echo 'RemoteIPInternalProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' + # buildkit
-# Tue, 23 Dec 2025 11:22:36 GMT
+# Thu, 01 Jan 2026 08:50:02 GMT
 RUN set -eux; 	version='6.9'; 	sha1='256dda5bb6a43aecd806b7a62528f442c06e6c25'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 1777 wp-content # buildkit
-# Tue, 23 Dec 2025 11:22:37 GMT
+# Thu, 01 Jan 2026 08:50:02 GMT
 VOLUME [/var/www/html]
-# Tue, 23 Dec 2025 11:22:37 GMT
+# Thu, 01 Jan 2026 08:50:02 GMT
 COPY --chown=www-data:www-data wp-config-docker.php /usr/src/wordpress/ # buildkit
-# Tue, 23 Dec 2025 11:22:37 GMT
+# Thu, 01 Jan 2026 08:50:02 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 23 Dec 2025 11:22:37 GMT
+# Thu, 01 Jan 2026 08:50:03 GMT
 RUN ln -svfT docker-entrypoint.sh /usr/local/bin/docker-ensure-installed.sh # buildkit
-# Tue, 23 Dec 2025 11:22:37 GMT
+# Thu, 01 Jan 2026 08:50:03 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 23 Dec 2025 11:22:37 GMT
+# Thu, 01 Jan 2026 08:50:03 GMT
 CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:c5d5473ebdeca51d00ece2f72c173b54f0060da7fbd8ab9486aaa33eee6a0d8c`  
-		Last Modified: Tue, 09 Dec 2025 02:06:40 GMT  
-		Size: 28.3 MB (28273156 bytes)  
+	-	`sha256:96d8ad310358e2403b7b44cf38db606dc1ea6b58b915684d38e13f573860f64e`  
+		Last Modified: Tue, 30 Dec 2025 00:53:22 GMT  
+		Size: 28.3 MB (28273129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a53d28a615a791c3859b4a1756ba700dc2c4f69377eb59f2058ba63d00e0869a`  
-		Last Modified: Tue, 09 Dec 2025 09:06:56 GMT  
+	-	`sha256:8a44b1edad4acbdf2eb79bc4ed79ff402d6af38c94857a826c4e8f406f68b8b4`  
+		Last Modified: Tue, 30 Dec 2025 09:22:12 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2f8434337c0c50639ecc5b6dc774986d4e9420e3476e8e2468932a6a85632eb`  
-		Last Modified: Tue, 09 Dec 2025 09:07:07 GMT  
-		Size: 146.6 MB (146578870 bytes)  
+	-	`sha256:b43a8c50b15f754f42cc587a4d423f958f4de65b8cc8da75adfbac833ca87e54`  
+		Last Modified: Tue, 30 Dec 2025 11:32:37 GMT  
+		Size: 146.6 MB (146578538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e90ba410db15c99bcf35ee3bbf15863cbe2650207953ae1e912e0e6bf7fda0b`  
-		Last Modified: Tue, 09 Dec 2025 09:06:56 GMT  
+	-	`sha256:4346525b0d45631b779c99bb99caa2632c2822ec686a160c5f4d23f9cfac4217`  
+		Last Modified: Tue, 30 Dec 2025 09:22:12 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e74b4e149c4738e4a9c37f39d8a642897edbd74a4bf14ea4f27d976938c2b0f`  
-		Last Modified: Tue, 09 Dec 2025 10:10:34 GMT  
-		Size: 4.0 MB (4033863 bytes)  
+	-	`sha256:4bca231363c25a411c4c33686ab17aa12a7dd8276276a14a5eb068e3328f54ed`  
+		Last Modified: Tue, 30 Dec 2025 10:25:13 GMT  
+		Size: 4.0 MB (4033815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:951f674e0bc56dc657de8b096a1cd8ed3c4b0cbb2de5d3a05d6e50989e9b86ab`  
-		Last Modified: Tue, 09 Dec 2025 10:10:34 GMT  
-		Size: 438.0 B  
+	-	`sha256:f39d81e12f16042f0d6da524da8e9a8b9b54d6bcdee985c63873f3ee0cb3f7d8`  
+		Last Modified: Tue, 30 Dec 2025 10:25:11 GMT  
+		Size: 437.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c810195650744e7970d6163d3e7b56ea79e2877073201e867cf1c229807a8924`  
-		Last Modified: Tue, 09 Dec 2025 10:10:34 GMT  
-		Size: 494.0 B  
+	-	`sha256:f6aaabcb5d55099899a4e7c7e005825b56e9f3eb25eeff883d76c801dc96de9c`  
+		Last Modified: Tue, 30 Dec 2025 10:25:12 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0c634314f930058cf75758217b9f4b8412e25858471550131f5e7956144a82c`  
-		Last Modified: Mon, 22 Dec 2025 07:19:28 GMT  
-		Size: 12.1 MB (12083941 bytes)  
+	-	`sha256:38a3162e7c2423eb4bff436b999a0397f4a85596c068b728cfea830ede966475`  
+		Last Modified: Tue, 30 Dec 2025 23:32:55 GMT  
+		Size: 12.1 MB (12083915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:440167296d4195ca764b783bb3d4fd7ad83754a01463d67af2e0a4defb076d35`  
-		Last Modified: Mon, 22 Dec 2025 07:19:27 GMT  
-		Size: 489.0 B  
+	-	`sha256:05f1b1e04e6902a8948d7ef1302c3b5af95856f3c752f05a62184455b6f3dfdd`  
+		Last Modified: Tue, 30 Dec 2025 23:32:54 GMT  
+		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:407ce32a75981765e9f9e91a245c86f4333956d7997f33efa8fb71131c58beb9`  
-		Last Modified: Mon, 22 Dec 2025 07:19:28 GMT  
-		Size: 10.5 MB (10477271 bytes)  
+	-	`sha256:249c5f2f42ea30b74bccd45bf8bbc642d4a5764784ce0404518e36a91e73e2da`  
+		Last Modified: Tue, 30 Dec 2025 23:32:55 GMT  
+		Size: 10.5 MB (10477207 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28ba48af89155b70e5e696d33ef4b7cd47f983be1a5c9a4d3ff23dc0e499c62d`  
-		Last Modified: Mon, 22 Dec 2025 07:19:27 GMT  
-		Size: 2.5 KB (2462 bytes)  
+	-	`sha256:f4ad8a3a48755369abfd17d4479d48c36d698acaeabae8ba044722fa9ba87152`  
+		Last Modified: Tue, 30 Dec 2025 23:32:55 GMT  
+		Size: 2.5 KB (2460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6aa9d6e7fce7546b117ab8b084c5d96ce6bd9b629d52e92ef36b04b59432c24f`  
-		Last Modified: Mon, 22 Dec 2025 07:19:27 GMT  
-		Size: 255.0 B  
+	-	`sha256:d0cbece652fd665090081827591d96bfd3140ffa8498a12c3e8a6cdeaa172dc6`  
+		Last Modified: Tue, 30 Dec 2025 23:32:54 GMT  
+		Size: 251.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0dcff9fdfa0904aceafda127d089aea922be3f92773bcd50a07b8ea12cca199`  
-		Last Modified: Mon, 22 Dec 2025 07:19:27 GMT  
-		Size: 250.0 B  
+	-	`sha256:7a396daca5fbbf1f63b8ea643c0d02c19ab4b2489f8144ed948c5df82a535a04`  
+		Last Modified: Tue, 30 Dec 2025 23:32:54 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0049ad25b272cf274f0239f82d59cadf7061a9930ae6e9fb3a8b7fe78c3fa85`  
-		Last Modified: Mon, 22 Dec 2025 07:19:27 GMT  
+	-	`sha256:a32ee5ad0f67ac9efa8d301a161c4c1aa4dc0b63aa64cdea1f11ff540ecad902`  
+		Last Modified: Tue, 30 Dec 2025 23:32:54 GMT  
 		Size: 894.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbd8049e357d677cde6cfc284d9be3026949dfa44a4f870996c2eb6cb496ba54`  
-		Last Modified: Wed, 24 Dec 2025 02:15:06 GMT  
-		Size: 26.1 MB (26140795 bytes)  
+	-	`sha256:1d31d5cf4e1eaaf85424c32dc0bb6556099e5514584bff38af694894a879bf10`  
+		Last Modified: Thu, 01 Jan 2026 08:54:49 GMT  
+		Size: 26.1 MB (26140818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e05da6a7edc519c542f626523f9c2cb3f567d97c6980e9e7ca23a3e6a37b6435`  
-		Last Modified: Wed, 24 Dec 2025 02:15:09 GMT  
-		Size: 29.3 MB (29324988 bytes)  
+	-	`sha256:38ad536c2de052ab7e2d459e776cb51d357cf3d550bd85ffb60cd3ebfa4d57c2`  
+		Last Modified: Thu, 01 Jan 2026 08:54:51 GMT  
+		Size: 29.3 MB (29324972 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b33c022b0811b8e4726f1955e3f7b39282cc162a75f711a1d8ef45f44f7f279c`  
-		Last Modified: Wed, 24 Dec 2025 02:15:10 GMT  
-		Size: 316.0 B  
+	-	`sha256:5d798986d303c71ccd82faaa94d91e9d8e1342b2b8a09f7da732c8dd8c1d702f`  
+		Last Modified: Thu, 01 Jan 2026 08:54:47 GMT  
+		Size: 314.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b73a15dbb01150ffb028e61395a9e99892e45bc99761a760a9e0624def698b1`  
-		Last Modified: Wed, 24 Dec 2025 02:15:11 GMT  
-		Size: 393.0 B  
+	-	`sha256:4ec294b2f4405122b69edb97b603f071412d18ae4c9cff305b63297beae4342d`  
+		Last Modified: Thu, 01 Jan 2026 08:54:47 GMT  
+		Size: 395.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d48e392b18590909e1264f4895d7e86e49623adeb603d1b64a3a715466a06d5d`  
-		Last Modified: Wed, 24 Dec 2025 02:15:11 GMT  
-		Size: 18.8 KB (18820 bytes)  
+	-	`sha256:6cee8383f8af05a4af9c5aab4a04dea6346d8e2759a94fae632caceb05a0e6b6`  
+		Last Modified: Thu, 01 Jan 2026 08:54:47 GMT  
+		Size: 18.8 KB (18804 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ac9cfe058554bb1108e7288cec87a306c1419242b87dbd74ca1aba266c3d52a`  
-		Last Modified: Wed, 24 Dec 2025 02:15:14 GMT  
-		Size: 27.0 MB (27024684 bytes)  
+	-	`sha256:dcac7a697bd21312c773328b97e387e5644dc4c60757cd8fef0f1758e16e24d1`  
+		Last Modified: Thu, 01 Jan 2026 08:54:49 GMT  
+		Size: 27.0 MB (27024689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02d0b74c41a83969109a250f375e074b2d95afcca7bfe820f6920870f867c830`  
-		Last Modified: Wed, 24 Dec 2025 02:15:15 GMT  
+	-	`sha256:575715144e97f79339f248015d0de6c319846999d3b3a859a068ce27b27d2314`  
+		Last Modified: Thu, 01 Jan 2026 08:54:47 GMT  
 		Size: 2.4 KB (2442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9265e1db3824ed9dbe0e2de883c642002cbb08ff6d180f43e0915f7b234d460e`  
-		Last Modified: Wed, 24 Dec 2025 02:15:16 GMT  
-		Size: 1.8 KB (1770 bytes)  
+	-	`sha256:dc1e0899f6313e555d5426f563cfafdcaf66f9152e106a7501b5f116166bee34`  
+		Last Modified: Thu, 01 Jan 2026 08:54:47 GMT  
+		Size: 1.8 KB (1767 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f78cfc9ca29cf914e6da8803b3b95695b5c883794724386fc9fbcdbddf7ac58d`  
-		Last Modified: Wed, 24 Dec 2025 02:15:16 GMT  
-		Size: 198.0 B  
+	-	`sha256:db8b16c3a350032a722bdf3785b53b3797a39f53e4323f4224705a640548e1f5`  
+		Last Modified: Thu, 01 Jan 2026 08:54:47 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:php8.1-apache` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:03c4a4871542f394324b0df2f57cecf1d28d8853e570d7e2699bbfe6e7217a9a
+$ docker pull wordpress@sha256:fcee3cb05392ae2e187b7b30f722d2d31283b1791b296af0d5878882e61de246
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.8 MB (8808177 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e927116374cffad41efad2c216f5910205b35844cc3439c634d325dc5cf5b3d8`
+-	Image ID: `sha256:ec3ce14259c23be0d78403823165fb2a28e316e02465e7a1d833c8f6973f27aa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9c7f5cfc0d2982ba9683639005afd446418e49f1ed4863344ec1afb86011746`  
-		Last Modified: Tue, 23 Dec 2025 14:13:10 GMT  
+	-	`sha256:2015f73fc1ba8dd11afc4483e339023dbc6650e7fd758c85c3e3eecaadb51549`  
+		Last Modified: Thu, 01 Jan 2026 11:13:21 GMT  
 		Size: 8.7 MB (8742760 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d6b38bd424b0f5d5dcb49a533a74007cf3ee8d4f878a8a859152db034b1527c`  
-		Last Modified: Tue, 23 Dec 2025 14:13:11 GMT  
+	-	`sha256:bacfd9a274f950fb7267da28864d5be9612b1d7936b98ad98fdf74e06e0eecdc`  
+		Last Modified: Thu, 01 Jan 2026 11:13:22 GMT  
 		Size: 65.4 KB (65417 bytes)  
 		MIME: application/vnd.in-toto+json
 
