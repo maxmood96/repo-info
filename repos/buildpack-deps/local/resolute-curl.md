@@ -1899,14 +1899,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.3.1-5
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-5.dsc' rust-sequoia-sq_1.3.1-5.dsc 4403 SHA512:73641191c2e3d760ba48ff8b42dd3014808c74d26001aa7e65ec7d3dbde58a955877dbbe96c32a048dc71fa7759c4b27a0ca86fd1bb32db2d462b34cbb068313
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1.orig.tar.gz' rust-sequoia-sq_1.3.1.orig.tar.gz 740320 SHA512:3aa4468b7bcb27532907ce759852e6b92b394a2fc91953b9f3723b9deaab3661c84fb298d79ef3332467aa7a5ca1158d6a8bd65dd961d30aafdcfb34a867c880
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-5.debian.tar.xz' rust-sequoia-sq_1.3.1-5.debian.tar.xz 5380 SHA512:04d2928b584c746edcc95f5bd6d87b3f3ee78e59436027413de75818fd79e2b993b72ffe25a9a795e86b9f1658ef32e850884899c5718bb67c51ce514c5a1ee1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-5/
+
 
 ### `dpkg` source package: `sed=4.9-2build2`
 

@@ -3921,14 +3921,13 @@ Licenses: (parsed from: `/usr/share/doc/python3-packaging/copyright`)
 - `BSD-3-clause`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-packaging=25.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-packaging/python-packaging_25.0-1.dsc' python-packaging_25.0-1.dsc 1674 SHA512:2327d61477f19538c65e214f809986e57e6696eb043dace1d0193398ff1584f3ec46ad98c2abe56602a87ac1149fb007cddad9990c17c38b38406bf4f7b0b331
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-packaging/python-packaging_25.0.orig.tar.gz' python-packaging_25.0.orig.tar.gz 165727 SHA512:0672602d2e18c3aee71b3e567b0de572bc8613ee3d24a79a655ded23ac08ec4582193225bc0c0ea390ed81cf5efbb46e8afbe0798d14f2235f811f263c25728c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-packaging/python-packaging_25.0-1.debian.tar.xz' python-packaging_25.0-1.debian.tar.xz 4144 SHA512:afcbcf5e090922e7e9935b41397056566c93180d4425d5c6d9a5eebc2c1c3d86c355cdc1189316c34fdb2343a6781d5634680425229aafb50e2c32434b7b562a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python-packaging/25.0-1/
+
 
 ### `dpkg` source package: `python3-defaults=3.13.7-1`
 
@@ -4103,14 +4102,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.3.1-5
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-5.dsc' rust-sequoia-sq_1.3.1-5.dsc 4403 SHA512:73641191c2e3d760ba48ff8b42dd3014808c74d26001aa7e65ec7d3dbde58a955877dbbe96c32a048dc71fa7759c4b27a0ca86fd1bb32db2d462b34cbb068313
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1.orig.tar.gz' rust-sequoia-sq_1.3.1.orig.tar.gz 740320 SHA512:3aa4468b7bcb27532907ce759852e6b92b394a2fc91953b9f3723b9deaab3661c84fb298d79ef3332467aa7a5ca1158d6a8bd65dd961d30aafdcfb34a867c880
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-5.debian.tar.xz' rust-sequoia-sq_1.3.1-5.debian.tar.xz 5380 SHA512:04d2928b584c746edcc95f5bd6d87b3f3ee78e59436027413de75818fd79e2b993b72ffe25a9a795e86b9f1658ef32e850884899c5718bb67c51ce514c5a1ee1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-5/
+
 
 ### `dpkg` source package: `sed=4.9-2build2`
 
