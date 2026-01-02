@@ -53,19 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.153
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.153.dsc' adduser_3.153.dsc 1678 SHA256:11c160fd57684ed1a065fc5368136f0c61005bfa4f416f32863d9dcf73b50278
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.153.tar.xz' adduser_3.153.tar.xz 335872 SHA256:10803e565e1bf67d5b7eed27d0ea89bb6f46ab8e7cdd2e7c77c8f367ac334420
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.153/
 
-- https://sources.debian.net/src/adduser/3.153/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.153/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.153/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=3.1.12`
 
@@ -2297,20 +2291,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.41.3-2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3-2.dsc' util-linux_2.41.3-2.dsc 5332 SHA256:11b51f9e7f24cddcdb1ac8c3fabbcc5e8687f8a32c75f1280fca0f94a932dbf4
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3.orig.tar.xz' util-linux_2.41.3.orig.tar.xz 9467224 SHA256:3330d873f0fceb5560b89a7dc14e4f3288bbd880e96903ed9b50ec2b5799e58b
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3-2.debian.tar.xz' util-linux_2.41.3-2.debian.tar.xz 104900 SHA256:18bb3a07fbb3129d5ac0161f08d03833a11fc3089144de0e8318c062ea0a0364
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.41.3-2/
 
-- https://sources.debian.net/src/util-linux/2.41.3-2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.41.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.41.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.3-2`
 
