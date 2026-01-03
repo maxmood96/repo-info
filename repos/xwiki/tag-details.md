@@ -6291,7 +6291,7 @@ CMD ["xwiki"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cea56251447f885764f1310e3a1a9edae0f9609eabfcea1643da49d5190a96d9`  
-		Last Modified: Fri, 02 Jan 2026 18:44:22 GMT  
+		Last Modified: Sat, 03 Jan 2026 01:01:25 GMT  
 		Size: 188.8 MB (188843290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2a5c15d4490454128018c046b7a62121ac97455e6790c1c519c5bee4d8c4375`  
@@ -8087,7 +8087,7 @@ CMD ["xwiki"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cea56251447f885764f1310e3a1a9edae0f9609eabfcea1643da49d5190a96d9`  
-		Last Modified: Fri, 02 Jan 2026 18:44:22 GMT  
+		Last Modified: Sat, 03 Jan 2026 01:01:25 GMT  
 		Size: 188.8 MB (188843290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2a5c15d4490454128018c046b7a62121ac97455e6790c1c519c5bee4d8c4375`  
@@ -9665,7 +9665,7 @@ CMD ["xwiki"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d3dda915c93312520bc1fc2bf95875640be3e93771a0d096d9bd8fdb8a7b5c86`  
-		Last Modified: Fri, 02 Jan 2026 18:45:56 GMT  
+		Last Modified: Sat, 03 Jan 2026 02:39:49 GMT  
 		Size: 191.2 MB (191164409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f5e078d6fbc9b3a79a483c5ddf7a464f0613c98c0769c552672c69a48a30b31f`  
@@ -11679,7 +11679,7 @@ CMD ["xwiki"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cea56251447f885764f1310e3a1a9edae0f9609eabfcea1643da49d5190a96d9`  
-		Last Modified: Fri, 02 Jan 2026 18:44:22 GMT  
+		Last Modified: Sat, 03 Jan 2026 01:01:25 GMT  
 		Size: 188.8 MB (188843290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2a5c15d4490454128018c046b7a62121ac97455e6790c1c519c5bee4d8c4375`  
@@ -17516,7 +17516,7 @@ CMD ["xwiki"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cea56251447f885764f1310e3a1a9edae0f9609eabfcea1643da49d5190a96d9`  
-		Last Modified: Fri, 02 Jan 2026 18:44:22 GMT  
+		Last Modified: Sat, 03 Jan 2026 01:01:25 GMT  
 		Size: 188.8 MB (188843290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2a5c15d4490454128018c046b7a62121ac97455e6790c1c519c5bee4d8c4375`  
@@ -17965,7 +17965,7 @@ CMD ["xwiki"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cea56251447f885764f1310e3a1a9edae0f9609eabfcea1643da49d5190a96d9`  
-		Last Modified: Fri, 02 Jan 2026 18:44:22 GMT  
+		Last Modified: Sat, 03 Jan 2026 01:01:25 GMT  
 		Size: 188.8 MB (188843290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2a5c15d4490454128018c046b7a62121ac97455e6790c1c519c5bee4d8c4375`  
@@ -20210,7 +20210,7 @@ CMD ["xwiki"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cea56251447f885764f1310e3a1a9edae0f9609eabfcea1643da49d5190a96d9`  
-		Last Modified: Fri, 02 Jan 2026 18:44:22 GMT  
+		Last Modified: Sat, 03 Jan 2026 01:01:25 GMT  
 		Size: 188.8 MB (188843290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2a5c15d4490454128018c046b7a62121ac97455e6790c1c519c5bee4d8c4375`  
@@ -22006,7 +22006,7 @@ CMD ["xwiki"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cea56251447f885764f1310e3a1a9edae0f9609eabfcea1643da49d5190a96d9`  
-		Last Modified: Fri, 02 Jan 2026 18:44:22 GMT  
+		Last Modified: Sat, 03 Jan 2026 01:01:25 GMT  
 		Size: 188.8 MB (188843290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2a5c15d4490454128018c046b7a62121ac97455e6790c1c519c5bee4d8c4375`  
@@ -22455,7 +22455,7 @@ CMD ["xwiki"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cea56251447f885764f1310e3a1a9edae0f9609eabfcea1643da49d5190a96d9`  
-		Last Modified: Fri, 02 Jan 2026 18:44:22 GMT  
+		Last Modified: Sat, 03 Jan 2026 01:01:25 GMT  
 		Size: 188.8 MB (188843290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2a5c15d4490454128018c046b7a62121ac97455e6790c1c519c5bee4d8c4375`  
