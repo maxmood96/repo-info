@@ -720,10 +720,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ed=1.22.2-1
-'http://http.debian.net/debian/pool/main/e/ed/ed_1.22.2-1.dsc' ed_1.22.2-1.dsc 1832 SHA256:b0957b5def38893fef0b725cb572353faf249d5ef60aedf12af6314ccc98215e
-'http://http.debian.net/debian/pool/main/e/ed/ed_1.22.2.orig.tar.gz' ed_1.22.2.orig.tar.gz 95828 SHA256:035b14dbbaf92a5654f057bbe9164058137a24650baf2ce2e1061bd3f730da3a
-'http://http.debian.net/debian/pool/main/e/ed/ed_1.22.2-1.debian.tar.xz' ed_1.22.2-1.debian.tar.xz 8708 SHA256:6c3e89bf2799a2c8d428bb3cd7c36d24c5ac65ad3152a3d7508f1afa6fb2b9e0
+'http://deb.debian.org/debian/pool/main/e/ed/ed_1.22.2-1.dsc' ed_1.22.2-1.dsc 1832 SHA256:b0957b5def38893fef0b725cb572353faf249d5ef60aedf12af6314ccc98215e
+'http://deb.debian.org/debian/pool/main/e/ed/ed_1.22.2.orig.tar.gz' ed_1.22.2.orig.tar.gz 95828 SHA256:035b14dbbaf92a5654f057bbe9164058137a24650baf2ce2e1061bd3f730da3a
+'http://deb.debian.org/debian/pool/main/e/ed/ed_1.22.2-1.debian.tar.xz' ed_1.22.2-1.debian.tar.xz 8708 SHA256:6c3e89bf2799a2c8d428bb3cd7c36d24c5ac65ad3152a3d7508f1afa6fb2b9e0
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ed/1.22.2-1/ (for browsing the source)
+- https://sources.debian.net/src/ed/1.22.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ed/1.22.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.7.3-1`
 
@@ -2901,10 +2907,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pango1.0=1.56.3-2
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.56.3-2.dsc' pango1.0_1.56.3-2.dsc 3692 SHA256:3486d4f8f1bb741c1db1b088b7c52d60043a58513464788ffaee6d0dac95cd11
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.56.3.orig.tar.xz' pango1.0_1.56.3.orig.tar.xz 1883584 SHA256:2606252bc25cd8d24e1b7f7e92c3a272b37acd6734347b73b47a482834ba2491
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.56.3-2.debian.tar.xz' pango1.0_1.56.3-2.debian.tar.xz 44136 SHA256:7fa9e85cba5484441a104387307a57c3f31a485a834850cc9604879093707781
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.3-2.dsc' pango1.0_1.56.3-2.dsc 3692 SHA256:3486d4f8f1bb741c1db1b088b7c52d60043a58513464788ffaee6d0dac95cd11
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.3.orig.tar.xz' pango1.0_1.56.3.orig.tar.xz 1883584 SHA256:2606252bc25cd8d24e1b7f7e92c3a272b37acd6734347b73b47a482834ba2491
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.3-2.debian.tar.xz' pango1.0_1.56.3-2.debian.tar.xz 44136 SHA256:7fa9e85cba5484441a104387307a57c3f31a485a834850cc9604879093707781
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/pango1.0/1.56.3-2/ (for browsing the source)
+- https://sources.debian.net/src/pango1.0/1.56.3-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pango1.0/1.56.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.8-2`
 
