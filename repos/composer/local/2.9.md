@@ -1,10 +1,10 @@
-# `composer:2.9.2`
+# `composer:2.9.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:34c5da25e5ea50941ceac2fdb52cce7efe89bc37d385dfaf2064e6985e90f26c`
-- Created: `2025-12-18T22:08:00.944393453Z`
-- Virtual Size: ~ 226.98 Mb  
+- Image ID: `sha256:55ce16adb14081d38a8e2ed8217f00117cd7efc998847919b6ff9cc84fcaf8fb`
+- Created: `2026-01-02T22:34:33.854647828Z`
+- Virtual Size: ~ 227.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=3f5bf99ce81201f526d25e288eddb2cfa111d068950d1e9a869530054ff98815`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.9.2`
+  - `COMPOSER_VERSION=2.9.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -710,16 +710,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libsodium`
 
 ```console
-libsodium-1.0.20-r0 description:
+libsodium-1.0.20-r1 description:
 P(ortable|ackageable) NaCl-based crypto library
 
-libsodium-1.0.20-r0 webpage:
+libsodium-1.0.20-r1 webpage:
 https://github.com/jedisct1/libsodium
 
-libsodium-1.0.20-r0 installed size:
+libsodium-1.0.20-r1 installed size:
 339 KiB
 
-libsodium-1.0.20-r0 license:
+libsodium-1.0.20-r1 license:
 ISC
 
 ```
