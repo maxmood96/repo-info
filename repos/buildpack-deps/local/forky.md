@@ -53,19 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.153
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.153.dsc' adduser_3.153.dsc 1678 SHA256:11c160fd57684ed1a065fc5368136f0c61005bfa4f416f32863d9dcf73b50278
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.153.tar.xz' adduser_3.153.tar.xz 335872 SHA256:10803e565e1bf67d5b7eed27d0ea89bb6f46ab8e7cdd2e7c77c8f367ac334420
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.153/
 
-- https://sources.debian.net/src/adduser/3.153/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.153/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.153/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-4`
 
@@ -1652,21 +1646,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.8-4
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.8-4.dsc' gnupg2_2.4.8-4.dsc 4396 SHA256:c0c6ef23aa1f0eb6ca8dc69a1aeb3fc87b29f7fbb2fb1a3e7d3c36bd7a4cd462
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.8.orig.tar.bz2' gnupg2_2.4.8.orig.tar.bz2 8017685 SHA256:b58c80d79b04d3243ff49c1c3fc6b5f83138eb3784689563bcdd060595318616
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.8.orig.tar.bz2.asc' gnupg2_2.4.8.orig.tar.bz2.asc 228 SHA256:92982ed45a1ca3af60e04addd6df14569158509364b70694a53f48b6bfed025b
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.8-4.debian.tar.xz' gnupg2_2.4.8-4.debian.tar.xz 116844 SHA256:6f3aa322d669c08c7d7951fc95bfeab01ab8b20b31bd31e96c30c94ef7b89570
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.4.8-4/
 
-- https://sources.debian.net/src/gnupg2/2.4.8-4/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.4.8-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.4.8-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.8.11-3`
 
@@ -3039,20 +3025,13 @@ Licenses: (parsed from: `/usr/share/doc/libraw23t64/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.21.4-2
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.4-2.dsc' libraw_0.21.4-2.dsc 2187 SHA256:bf53d67929e9568514c0c96bd6ec516be45d0ab7461b00db87d51889eb825745
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.4.orig.tar.gz' libraw_0.21.4.orig.tar.gz 566327 SHA256:8baeb5253c746441fadad62e9c5c43ff4e414e41b0c45d6dcabccb542b2dff4b
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.4-2.debian.tar.xz' libraw_0.21.4-2.debian.tar.xz 24312 SHA256:7cc33aaff6d53f46a0b106b7e9bde12bf23e6774a99114dbe3f22e53e9c3fdb5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libraw/0.21.4-2/
 
-- https://sources.debian.net/src/libraw/0.21.4-2/ (for browsing the source)
-- https://sources.debian.net/src/libraw/0.21.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libraw/0.21.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.6.0-2`
 
@@ -4622,20 +4601,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.56.3-2
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.3-2.dsc' pango1.0_1.56.3-2.dsc 3692 SHA256:3486d4f8f1bb741c1db1b088b7c52d60043a58513464788ffaee6d0dac95cd11
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.3.orig.tar.xz' pango1.0_1.56.3.orig.tar.xz 1883584 SHA256:2606252bc25cd8d24e1b7f7e92c3a272b37acd6734347b73b47a482834ba2491
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.3-2.debian.tar.xz' pango1.0_1.56.3-2.debian.tar.xz 44136 SHA256:7fa9e85cba5484441a104387307a57c3f31a485a834850cc9604879093707781
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.56.3-2/
 
-- https://sources.debian.net/src/pango1.0/1.56.3-2/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.56.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.56.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.8-2`
 
@@ -4917,20 +4889,13 @@ Licenses: (parsed from: `/usr/share/doc/python3-packaging/copyright`)
 - `BSD-3-clause`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-packaging=25.0-1
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_25.0-1.dsc' python-packaging_25.0-1.dsc 1674 SHA256:5653df16fc64e58ff8657e37e36f280929b741ed0cc715231834c605f4568a74
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_25.0.orig.tar.gz' python-packaging_25.0.orig.tar.gz 165727 SHA256:d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_25.0-1.debian.tar.xz' python-packaging_25.0-1.debian.tar.xz 4144 SHA256:223e23fe0d0aa4000633cdc9022cde6e15dc7f6630e49f8bbabeaca45f2bf376
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python-packaging/25.0-1/
 
-- https://sources.debian.net/src/python-packaging/25.0-1/ (for browsing the source)
-- https://sources.debian.net/src/python-packaging/25.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-packaging/25.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.13.7-1`
 
@@ -5113,20 +5078,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.3.1-5
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-5.dsc' rust-sequoia-sq_1.3.1-5.dsc 4403 SHA256:4b62057e14e16beedc8cade6881f29bb422d4a06ecfcd08f37dc93dcc313b541
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1.orig.tar.gz' rust-sequoia-sq_1.3.1.orig.tar.gz 740320 SHA256:5c04b662da1c207e79beaeff6e5ab2d713ab10c1263f64c367f8489aac815705
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-5.debian.tar.xz' rust-sequoia-sq_1.3.1-5.debian.tar.xz 5380 SHA256:647720811fa42e004550cfd72ee69ec0065e98c833f218a53e7e0d28224779f7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-5/
 
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-5/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.3.0-5`
 

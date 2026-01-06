@@ -449,14 +449,9 @@ Licenses: (parsed from: `/usr/share/doc/libcairo2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.18.4-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.18.4-1build1.dsc' cairo_1.18.4-1build1.dsc 2787 SHA512:c9588167e35c81d66db4cd88ff2c388c9b88a5db8ada4269fb079a9ee7e6e3a3423b1700a71d7fc57e251ef035990fceab9bf8e87bff966c49d96e2259ebd51d
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.18.4.orig.tar.xz' cairo_1.18.4.orig.tar.xz 32578804 SHA512:863679f817ed67dc2c916c035d740916e27e7e69c04fca63936e37d274e7f4c79848d16c8f7c481798864602e8847c489f698df89b785cbc576c925dbd513316
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.18.4-1build1.debian.tar.xz' cairo_1.18.4-1build1.debian.tar.xz 29988 SHA512:03645feedf5709386a369e10cdaba66ff028a36860dca47d02f58b7cae08ae8183962bc1c9af07e6b332feb7cbfdfc11c793e0a11df92becc1058d32778a112a
-```
 
 ### `dpkg` source package: `cdebconf=0.280ubuntu1`
 
@@ -2677,14 +2672,9 @@ Licenses: (parsed from: `/usr/share/doc/libthai-data/copyright`, `/usr/share/doc
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libthai=0.1.29-2build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libthai/libthai_0.1.29-2build2.dsc' libthai_0.1.29-2build2.dsc 2422 SHA512:76eafbd642527ed08020c12dcc740895b9a2ca8956bdc0b14ce93afa625d4a40942bf5763a912f9dfe4046b61752fb0a919983bac1cf47148356163361160e06
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libthai/libthai_0.1.29.orig.tar.xz' libthai_0.1.29.orig.tar.xz 417728 SHA512:0ba1261581a1705a2a2546a3071acb3c63892dbf111f0dad415667165a6b9542a5e4549061c67b11ec53de7c9e70fceb3c04d794fd12a22d991a539dbacebda1
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libthai/libthai_0.1.29-2build2.debian.tar.xz' libthai_0.1.29-2build2.debian.tar.xz 12804 SHA512:d1f07c57c9fb5c888cd993e89a133a3e8b83ce8d983e11959ae489be9a4fd082213675e59264c56ed065a8be486800231e9c30e59ebe848dc7b7f50c8e117468
-```
 
 ### `dpkg` source package: `libtool=2.5.4-9`
 
@@ -3324,15 +3314,13 @@ Licenses: (parsed from: `/usr/share/doc/libncurses-dev/copyright`, `/usr/share/d
 - `MIT/X11`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.5+20251123-1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.5%2b20251123-1.dsc' ncurses_6.5+20251123-1.dsc 3922 SHA512:65dbacdb7d842858b7f49e7e56a4a913ba3526eb6b47eb6a0b447656b050a40654bade7be0b0dea01437b9302cdbcb0ed64a1096999f01b4526020482edb7544
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.5%2b20251123.orig.tar.gz' ncurses_6.5+20251123.orig.tar.gz 3793131 SHA512:2cfe4ecc9143b7508a85c7ddceed74eca2f965062161bd10bee728e2a766cdf650ce163e540345f67010e034e49cd664e702fd90c2db61d44616a5f80953fa28
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.5%2b20251123.orig.tar.gz.asc' ncurses_6.5+20251123.orig.tar.gz.asc 729 SHA512:02bf82d643363b9d91732f3d1a619e365742996b3cb742fa22bc7f5e0775b4be08b8ced0dcec680230fb982ea4fa2cea8a2adbd612011cfcfd3436c54f30804c
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.5%2b20251123-1.debian.tar.xz' ncurses_6.5+20251123-1.debian.tar.xz 50808 SHA512:f61b813d3c2f80e4dfbd856222440e55fcb71255ac8298a4ca5a28843c6c2a2d71d07ab2a8ae85fe98e94eda745100b351f99a9f6a7f2e9284503bec76958aed
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/ncurses/6.5+20251123-1/
+
 
 ### `dpkg` source package: `netbase=6.5`
 
@@ -3662,14 +3650,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.56.3-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.56.3-2.dsc' pango1.0_1.56.3-2.dsc 3692 SHA512:45c17eadf20d4d4e74cc59c5956faa92a645a667ac8952570d0b9c26ad5d6667a2300d126f581a7fadfbac520ee7438da3a26f819432b0dbb4dadd634e6d09a1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.56.3.orig.tar.xz' pango1.0_1.56.3.orig.tar.xz 1883584 SHA512:adb5aa66ea0c45f7bb112867a77f25d31d39bbb18fd8d41df0c1fd329714def874aa3cb8a49847561a75b0824c2abf8ce09a610d088e88d7de015c36a1536ac0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.56.3-2.debian.tar.xz' pango1.0_1.56.3-2.debian.tar.xz 44136 SHA512:094b2b282bdef266075ed43764a539211220600deb9dcff1c10852783433bb83221d4bcb1fcf5d325a12e4a3f235344b06e222798d71bf8733b2c1a96a6254c3
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pango1.0/1.56.3-2/
+
 
 ### `dpkg` source package: `patch=2.8-2`
 

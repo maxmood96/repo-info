@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:431f688a1479e633d36aeb03572d7e7596137f0afb08554ad2147a4f1a29854b`
-- Created: `2025-12-03T00:11:47.621545743Z`
-- Virtual Size: ~ 784.48 Mb  
+- Image ID: `sha256:30df2f241d32fdf521f9783e6d0ff9e3b5390832675292fd3458f7ce56a42162`
+- Created: `2026-01-03T00:10:25.052879234Z`
+- Virtual Size: ~ 783.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -354,18 +354,18 @@ $ apt-get source -qq --print-uris bash=5.2.37-2ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37-2ubuntu5.debian.tar.xz' bash_5.2.37-2ubuntu5.debian.tar.xz 96036 SHA512:db2ffaf9c19ec2e61d210bdab670b07ee25de813e68393706b0390170d723a23542343f9ad2b4ffee2aa713e2762ca6929833d295f4bbc207a1cd26096ffce79
 ```
 
-### `dpkg` source package: `binutils=2.45-7ubuntu1.1`
+### `dpkg` source package: `binutils=2.45-7ubuntu1.2`
 
 Binary Packages:
 
-- `binutils=2.45-7ubuntu1.1`
-- `binutils-common:amd64=2.45-7ubuntu1.1`
-- `binutils-x86-64-linux-gnu=2.45-7ubuntu1.1`
-- `libbinutils:amd64=2.45-7ubuntu1.1`
-- `libctf-nobfd0:amd64=2.45-7ubuntu1.1`
-- `libctf0:amd64=2.45-7ubuntu1.1`
-- `libgprofng0:amd64=2.45-7ubuntu1.1`
-- `libsframe2:amd64=2.45-7ubuntu1.1`
+- `binutils=2.45-7ubuntu1.2`
+- `binutils-common:amd64=2.45-7ubuntu1.2`
+- `binutils-x86-64-linux-gnu=2.45-7ubuntu1.2`
+- `libbinutils:amd64=2.45-7ubuntu1.2`
+- `libctf-nobfd0:amd64=2.45-7ubuntu1.2`
+- `libctf0:amd64=2.45-7ubuntu1.2`
+- `libgprofng0:amd64=2.45-7ubuntu1.2`
+- `libsframe2:amd64=2.45-7ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`, `/usr/share/doc/libgprofng0/copyright`, `/usr/share/doc/libsframe2/copyright`)
 
@@ -373,9 +373,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.45-7ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45-7ubuntu1.2.dsc' binutils_2.45-7ubuntu1.2.dsc 9038 SHA512:73bad04ebfba8c99bbb37db8ed1264a681910728250f8458ffd4f30e0db0444909d4db0dc2f74810681f8c013cfe7bd54de80d3936fe0af973c7a7c330cbb62c
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45.orig.tar.xz' binutils_2.45.orig.tar.xz 27868232 SHA512:c7b10a7466d9fd398d7a0b3f2a43318432668d714f2ec70069a31bdc93c86d28e0fe83792195727167743707fbae45337c0873a0786416db53bbf22860c16ce7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45-7ubuntu1.2.debian.tar.xz' binutils_2.45-7ubuntu1.2.debian.tar.xz 155516 SHA512:cc05b8907b2665a01b4d04e8e4453e00402598fd5ea46ef7ef3d52f7c5e1059cf3aecc8ee42fa71b82038348ef72e3751ef6bd220a8ac8c608b8a407da01f1be
+```
 
 ### `dpkg` source package: `brotli=1.1.0-2build5`
 
@@ -2418,12 +2423,12 @@ $ apt-get source -qq --print-uris libmd=1.1.0-2build3
 'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmd/libmd_1.1.0-2build3.debian.tar.xz' libmd_1.1.0-2build3.debian.tar.xz 8496 SHA512:6606245527851f4221e19de38a6d6c18bffc4981bd1e9ed1db307ff9b204a0378742c714b127f5434a5434dae27eff1f227c17fe59d3107b2dcc4fd686175ab0
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.50-1`
+### `dpkg` source package: `libpng1.6=1.6.50-1ubuntu0.1`
 
 Binary Packages:
 
-- `libpng-dev:amd64=1.6.50-1`
-- `libpng16-16t64:amd64=1.6.50-1`
+- `libpng-dev:amd64=1.6.50-1ubuntu0.1`
+- `libpng16-16t64:amd64=1.6.50-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -2439,10 +2444,10 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.50-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.50-1.dsc' libpng1.6_1.6.50-1.dsc 2254 SHA512:286e2521f1834d640bd3e91775500f44e0cce363e45baa43334ec606fd974888fba3e575df382918257f6e60957571119b177a2f4a98bcbfa84c24091b93c368
+$ apt-get source -qq --print-uris libpng1.6=1.6.50-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.50-1ubuntu0.1.dsc' libpng1.6_1.6.50-1ubuntu0.1.dsc 2239 SHA512:313ff0811aee7fc875955ac1abd241bead32b62075ca4e41b259cf1a4855d352cdfeddb2a3d30d891ae95a2b8c4e567b2e0008c3940a6cad97f8e8a5cf8c8349
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.50.orig.tar.gz' libpng1.6_1.6.50.orig.tar.gz 1582079 SHA512:34c806e0dda960b480ce2f5ea13e2e55a9540f07c51948be25d312b901c431bc814f730f9322a2e3b6f88d4104a0c49bde9e616762b342d07db44e2c7fd5f2dc
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.50-1.debian.tar.xz' libpng1.6_1.6.50-1.debian.tar.xz 33300 SHA512:c31aef43e649f7c060cb153449aea1bcfe0ff048b58ff95dc35ef77edfd011e4d86609742094e1e8cd444c5b8dd4177a21be16aae91e295825905179b2d8f352
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.50-1ubuntu0.1.debian.tar.xz' libpng1.6_1.6.50-1ubuntu0.1.debian.tar.xz 36900 SHA512:bf3101c46d6451ae3cf6721aec7497a68383e5bcb9a942617688efd43613be111b263a09a2c869f95a9e2b0ccaecd5b5b1ea9c3c09ac2ee4347996d4d773e00c
 ```
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build1`
@@ -3084,19 +3089,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.7+dfsg-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg-1build2.debian.tar.xz' libzstd_1.5.7+dfsg-1build2.debian.tar.xz 23184 SHA512:6431392a74b281afaac2b9eed4f6f5dd00c0103cec987380312f23b9607c58c3cdeafbdc005102e637b89b3a06f855faf3a5df04d720e0b20ce41690bdbe9e0f
 ```
 
-### `dpkg` source package: `linux=6.17.0-7.7`
+### `dpkg` source package: `linux=6.17.0-8.8`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.17.0-7.7`
+- `linux-libc-dev:amd64=6.17.0-8.8`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.17.0-8.8
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0-8.8.dsc' linux_6.17.0-8.8.dsc 8747 SHA512:fee907629a87a3286e38d1aedab5e54b4f73ac64972051779a107eca4cec4295573540243fd039dda72d4f42593de3e083deb71f4c881a0e6246fa9ecee3de98
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0.orig.tar.gz' linux_6.17.0.orig.tar.gz 248671329 SHA512:dc17e8dad07913ff20078194c0d9036e116db2fe1639cbddfccfaeda218cff06d0c7649f8182a07a999cf705a7b9749d26c8abe988f6b0b3c46b3142448f005f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0-8.8.diff.gz' linux_6.17.0-8.8.diff.gz 1405275 SHA512:3b5a303fcbf8908de52a520e73a3030754df3b8576162720463de87f3480fe3e30ad058e71b510074e17145888edc530d7d413651cc0ed8f1fe374e7e3aed174
+```
 
 ### `dpkg` source package: `lto-disabled-list=69`
 
@@ -3858,12 +3868,12 @@ $ apt-get source -qq --print-uris pkgconf=1.8.1-4build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pkgconf/pkgconf_1.8.1-4build1.debian.tar.xz' pkgconf_1.8.1-4build1.debian.tar.xz 17804 SHA512:72ed87055ac67f5dc74547cee6a81a3f3f19a498dbe17b0c5b744060723ed5f00963f56e088176449fbca4f003531596edfc8bfd9fadf2bc380c5e9400e84b6c
 ```
 
-### `dpkg` source package: `postgresql-17=17.6-1build1`
+### `dpkg` source package: `postgresql-17=17.7-0ubuntu0.25.10.1`
 
 Binary Packages:
 
-- `libpq-dev=17.6-1build1`
-- `libpq5:amd64=17.6-1build1`
+- `libpq-dev=17.7-0ubuntu0.25.10.1`
+- `libpq5:amd64=17.7-0ubuntu0.25.10.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3883,10 +3893,10 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-17=17.6-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.6-1build1.dsc' postgresql-17_17.6-1build1.dsc 4269 SHA512:7a56ba352a33d2cc4db4bd724dad779c38edbda11ada44f3d1a4ab7a9c28b0e4d68a5d5b8e1bcc261a86e0dd7e604acfe09937a6e62567777ba7a89820dc27dd
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.6.orig.tar.bz2' postgresql-17_17.6.orig.tar.bz2 21623975 SHA512:d377ed208b3fd1bf9611f148f4286e8c655374218cc3b12cd766917063001750f7dede140065874b7c8bdc2f2b3ecaf15c18cc6cd341929b2c3a574a7797a67e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.6-1build1.debian.tar.xz' postgresql-17_17.6-1build1.debian.tar.xz 27148 SHA512:66ad1acfcdd05506ea80ebe45854fa1f4e4aca61d92111d7df194e62d553603d98230177e618ed2f3020bd5d51cd8b3b9cb63f1ee52205b076b7333a288d12b6
+$ apt-get source -qq --print-uris postgresql-17=17.7-0ubuntu0.25.10.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.7-0ubuntu0.25.10.1.dsc' postgresql-17_17.7-0ubuntu0.25.10.1.dsc 4381 SHA512:39311d7d44bb87b0cd882ccdd3b6319067a00441b195f9c46f1826a6d03e6a90e8075b415eaadfb7457fc18f2e5418284b0063c1a599c397219b4812f9641832
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.7.orig.tar.gz' postgresql-17_17.7.orig.tar.gz 28186920 SHA512:1beaab709e5747138f1d4c0e1da460ac7e4215f4bb9e64b06227ceaeb12134c8c180d42599e95988ace8f466aa3bed70a2ddd8f81824ea926b0bd363cdda41f1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.7-0ubuntu0.25.10.1.debian.tar.xz' postgresql-17_17.7-0ubuntu0.25.10.1.debian.tar.xz 27552 SHA512:b8792481eb8556d043f2f9754337329e3418c777a15975fdc545519aaf4fab68a39b01473b5bf9a6972b6436fa81aaaf580d68d6e9f89e7f28a44706c96dcea7
 ```
 
 ### `dpkg` source package: `procps=2:4.0.4-8ubuntu3`
@@ -4520,22 +4530,22 @@ $ apt-get source -qq --print-uris utf8proc=2.9.0-1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.9.0-1build1.debian.tar.xz' utf8proc_2.9.0-1build1.debian.tar.xz 5956 SHA512:66f918055be1f55b39929c504521094860b66518c99f644a2d826a52076416a7e79d0ed6ec260617e47202e4907f69d7489549737d38ff920942c173e0867693
 ```
 
-### `dpkg` source package: `util-linux=2.41-4ubuntu4`
+### `dpkg` source package: `util-linux=2.41-4ubuntu4.1`
 
 Binary Packages:
 
-- `bsdutils=1:2.41-4ubuntu4`
-- `libblkid-dev:amd64=2.41-4ubuntu4`
-- `libblkid1:amd64=2.41-4ubuntu4`
-- `liblastlog2-2:amd64=2.41-4ubuntu4`
-- `libmount-dev:amd64=2.41-4ubuntu4`
-- `libmount1:amd64=2.41-4ubuntu4`
-- `libsmartcols1:amd64=2.41-4ubuntu4`
-- `libuuid1:amd64=2.41-4ubuntu4`
-- `login=1:4.16.0-2+really2.41-4ubuntu4`
-- `mount=2.41-4ubuntu4`
-- `util-linux=2.41-4ubuntu4`
-- `uuid-dev:amd64=2.41-4ubuntu4`
+- `bsdutils=1:2.41-4ubuntu4.1`
+- `libblkid-dev:amd64=2.41-4ubuntu4.1`
+- `libblkid1:amd64=2.41-4ubuntu4.1`
+- `liblastlog2-2:amd64=2.41-4ubuntu4.1`
+- `libmount-dev:amd64=2.41-4ubuntu4.1`
+- `libmount1:amd64=2.41-4ubuntu4.1`
+- `libsmartcols1:amd64=2.41-4ubuntu4.1`
+- `libuuid1:amd64=2.41-4ubuntu4.1`
+- `login=1:4.16.0-2+really2.41-4ubuntu4.1`
+- `mount=2.41-4ubuntu4.1`
+- `util-linux=2.41-4ubuntu4.1`
+- `uuid-dev:amd64=2.41-4ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid-dev/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/liblastlog2-2/copyright`, `/usr/share/doc/libmount-dev/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/login/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
 
@@ -4561,10 +4571,10 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.41-4ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu4.dsc' util-linux_2.41-4ubuntu4.dsc 5049 SHA512:ce4f196a2ac9bafc2b7eb218ff6100eb6b320334f8cd7853f7dab88da3628ceca780766515937f319bc4be1151127b0480a519cbc8622f582ebf8e90892b1afe
+$ apt-get source -qq --print-uris util-linux=2.41-4ubuntu4.1
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu4.1.dsc' util-linux_2.41-4ubuntu4.1.dsc 5086 SHA512:c373a65a0164a033f5be210864dc11db05d68ee0a1494bd17f47c4552470bb93f2c32b629e748c1c44be415d37cec78711ea3104cb699f925775c64d3f9506d4
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41.orig.tar.xz' util-linux_2.41.orig.tar.xz 9535724 SHA512:800ff92ee7a047732c0accb9dd759d6ed659947373ca72e0dd3ca601d0a6fed9db92c0838cfaff6bcdb8c08bdc1ffa675721893f42945885c57ccd59ab676318
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu4.debian.tar.xz' util-linux_2.41-4ubuntu4.debian.tar.xz 127176 SHA512:436ec42b3ac4a1863bdf2335abf40eab3c894ee03f166d1382ed2c0a20bddd455255dbccd4e564e2881ae3716cd81abe23c70a6d30c35ae18e29eecedc200498
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu4.1.debian.tar.xz' util-linux_2.41-4ubuntu4.1.debian.tar.xz 127456 SHA512:9ca20fd849d2d5711fa3edf0b047add1f4f81dbfa55e930c123465dabb6c7fea619fad27184bb4cd7cccb742b6f3f8176a0c169c1aaade30ce272a1f3298d877
 ```
 
 ### `dpkg` source package: `wget=1.25.0-2ubuntu3`

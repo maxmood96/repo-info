@@ -128,19 +128,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.12
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.12.dsc' apt_3.1.12.dsc 3095 SHA256:e59407754d91eb5cb07dd47d8c8390b9b28a7d2ec5844c8f6265ca0dc3247590
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.12.tar.xz' apt_3.1.12.tar.xz 2464756 SHA256:8c6012b7b95fedf0acc99830aba5173f80f6651f12e4dcc0fc8b2f16779b2d17
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.1.12/
 
-- https://sources.debian.net/src/apt/3.1.12/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.1.12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.1.12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `architecture-properties=0.2.6`
 
@@ -530,20 +524,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.18.4-2
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.18.4-2.dsc' cairo_1.18.4-2.dsc 2862 SHA256:4d2b0b55a88870081d8f849b1897b785dedd972cb482e0bfa98469667665396c
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.18.4.orig.tar.xz' cairo_1.18.4.orig.tar.xz 32578804 SHA256:445ed8208a6e4823de1226a74ca319d3600e83f6369f99b14265006599c32ccb
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.18.4-2.debian.tar.xz' cairo_1.18.4-2.debian.tar.xz 30032 SHA256:d341b9ead4a97ad6457edc7768f1293a3f9d60e8af59e0c46b42542134579c13
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cairo/1.18.4-2/
 
-- https://sources.debian.net/src/cairo/1.18.4-2/ (for browsing the source)
-- https://sources.debian.net/src/cairo/1.18.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cairo/1.18.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.282`
 
@@ -1829,20 +1816,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=12.2.0-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.2.0-1.dsc' harfbuzz_12.2.0-1.dsc 2583 SHA256:7077988ea559dd34369fc723d437badb61f76909205d40e5cfd4d4455f973acf
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.2.0.orig.tar.xz' harfbuzz_12.2.0.orig.tar.xz 18221900 SHA256:ecb603aa426a8b24665718667bda64a84c1504db7454ee4cadbd362eea64e545
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.2.0-1.debian.tar.xz' harfbuzz_12.2.0-1.debian.tar.xz 19696 SHA256:ad1143a25a9c6332b9e271359d94e4c1f52f412bed072c7c7e9eb374e6f906bd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/12.2.0-1/
 
-- https://sources.debian.net/src/harfbuzz/12.2.0-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/12.2.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/12.2.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.18-2`
 
@@ -3025,20 +3005,13 @@ Licenses: (parsed from: `/usr/share/doc/libraw23t64/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.21.4-2
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.4-2.dsc' libraw_0.21.4-2.dsc 2187 SHA256:bf53d67929e9568514c0c96bd6ec516be45d0ab7461b00db87d51889eb825745
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.4.orig.tar.gz' libraw_0.21.4.orig.tar.gz 566327 SHA256:8baeb5253c746441fadad62e9c5c43ff4e414e41b0c45d6dcabccb542b2dff4b
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.4-2.debian.tar.xz' libraw_0.21.4-2.debian.tar.xz 24312 SHA256:7cc33aaff6d53f46a0b106b7e9bde12bf23e6774a99114dbe3f22e53e9c3fdb5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libraw/0.21.4-2/
 
-- https://sources.debian.net/src/libraw/0.21.4-2/ (for browsing the source)
-- https://sources.debian.net/src/libraw/0.21.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libraw/0.21.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.6.0-2`
 
@@ -5207,21 +5180,13 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.18.0-2
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.18.0-2.dsc' shadow_4.18.0-2.dsc 2844 SHA256:d556601b8e38c3d6635c3f977fbf4d461df4c7251e3f51bc878e74887b038eb0
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.18.0.orig.tar.xz' shadow_4.18.0.orig.tar.xz 2347912 SHA256:add4604d3bc410344433122a819ee4154b79dd8316a56298c60417e637c07608
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.18.0.orig.tar.xz.asc' shadow_4.18.0.orig.tar.xz.asc 488 SHA256:f16001bf1aedc1aff5d406ecfa4163a4aa4598550f5b9df6b2f3d535d53f535f
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.18.0-2.debian.tar.xz' shadow_4.18.0-2.debian.tar.xz 170120 SHA256:e0f538046d2b8d5252896fea4cf762763ad30e49ac5fd4f3c3e59967b7d8ca0d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.18.0-2/
 
-- https://sources.debian.net/src/shadow/1:4.18.0-2/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.18.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.18.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.46.1-8`
 

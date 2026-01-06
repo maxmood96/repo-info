@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b80c831a0537d7d6c3c2d7a9360651fcd006255b858446205f82638211450d6c`
-- Created: `2025-12-02T23:46:52.812208562Z`
-- Virtual Size: ~ 282.32 Mb  
+- Image ID: `sha256:137b3e4b6885968c6d217ecbf9660ceee00c7a3bbeedb48d44fbef9afd7e0a17`
+- Created: `2026-01-02T23:59:05.268288711Z`
+- Virtual Size: ~ 281.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -2584,19 +2584,19 @@ $ apt-get source -qq --print-uris utf8proc=2.9.0-1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.9.0-1build1.debian.tar.xz' utf8proc_2.9.0-1build1.debian.tar.xz 5956 SHA512:66f918055be1f55b39929c504521094860b66518c99f644a2d826a52076416a7e79d0ed6ec260617e47202e4907f69d7489549737d38ff920942c173e0867693
 ```
 
-### `dpkg` source package: `util-linux=2.41-4ubuntu4`
+### `dpkg` source package: `util-linux=2.41-4ubuntu4.1`
 
 Binary Packages:
 
-- `bsdutils=1:2.41-4ubuntu4`
-- `libblkid1:amd64=2.41-4ubuntu4`
-- `liblastlog2-2:amd64=2.41-4ubuntu4`
-- `libmount1:amd64=2.41-4ubuntu4`
-- `libsmartcols1:amd64=2.41-4ubuntu4`
-- `libuuid1:amd64=2.41-4ubuntu4`
-- `login=1:4.16.0-2+really2.41-4ubuntu4`
-- `mount=2.41-4ubuntu4`
-- `util-linux=2.41-4ubuntu4`
+- `bsdutils=1:2.41-4ubuntu4.1`
+- `libblkid1:amd64=2.41-4ubuntu4.1`
+- `liblastlog2-2:amd64=2.41-4ubuntu4.1`
+- `libmount1:amd64=2.41-4ubuntu4.1`
+- `libsmartcols1:amd64=2.41-4ubuntu4.1`
+- `libuuid1:amd64=2.41-4ubuntu4.1`
+- `login=1:4.16.0-2+really2.41-4ubuntu4.1`
+- `mount=2.41-4ubuntu4.1`
+- `util-linux=2.41-4ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/liblastlog2-2/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/login/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2622,10 +2622,10 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.41-4ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu4.dsc' util-linux_2.41-4ubuntu4.dsc 5049 SHA512:ce4f196a2ac9bafc2b7eb218ff6100eb6b320334f8cd7853f7dab88da3628ceca780766515937f319bc4be1151127b0480a519cbc8622f582ebf8e90892b1afe
+$ apt-get source -qq --print-uris util-linux=2.41-4ubuntu4.1
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu4.1.dsc' util-linux_2.41-4ubuntu4.1.dsc 5086 SHA512:c373a65a0164a033f5be210864dc11db05d68ee0a1494bd17f47c4552470bb93f2c32b629e748c1c44be415d37cec78711ea3104cb699f925775c64d3f9506d4
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41.orig.tar.xz' util-linux_2.41.orig.tar.xz 9535724 SHA512:800ff92ee7a047732c0accb9dd759d6ed659947373ca72e0dd3ca601d0a6fed9db92c0838cfaff6bcdb8c08bdc1ffa675721893f42945885c57ccd59ab676318
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu4.debian.tar.xz' util-linux_2.41-4ubuntu4.debian.tar.xz 127176 SHA512:436ec42b3ac4a1863bdf2335abf40eab3c894ee03f166d1382ed2c0a20bddd455255dbccd4e564e2881ae3716cd81abe23c70a6d30c35ae18e29eecedc200498
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu4.1.debian.tar.xz' util-linux_2.41-4ubuntu4.1.debian.tar.xz 127456 SHA512:9ca20fd849d2d5711fa3edf0b047add1f4f81dbfa55e930c123465dabb6c7fea619fad27184bb4cd7cccb742b6f3f8176a0c169c1aaade30ce272a1f3298d877
 ```
 
 ### `dpkg` source package: `wget=1.25.0-2ubuntu3`
