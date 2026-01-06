@@ -1,7 +1,7 @@
 ## `joomla:5-php8.2-fpm-alpine`
 
 ```console
-$ docker pull joomla@sha256:33468073584e1f0c1425b42243398d6adc2e0184e0da591a4fc407ebe281f058
+$ docker pull joomla@sha256:c647097802f185fb51f7814aae73cbe3cc8fccfcdf30c4a996491cfccbaa6b94
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,13 +26,13 @@ $ docker pull joomla@sha256:33468073584e1f0c1425b42243398d6adc2e0184e0da591a4fc4
 ### `joomla:5-php8.2-fpm-alpine` - linux; amd64
 
 ```console
-$ docker pull joomla@sha256:e01adb8c1e6b912ac5821d5d34d238cd11fceade328aff3bc49e314a9123ae64
+$ docker pull joomla@sha256:0f9932f8abd37e3186695ebc162121f81ea92b66497efecb623b2199bb1e85f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.7 MB (98678786 bytes)**  
+-	Total Size: **99.2 MB (99161912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:362d0f644180ab261ddd7995d78a111c8c5d3bd543d5bd2c1de02f5675dd1955`
+-	Image ID: `sha256:1f6a4d37c26dcd825d392410c5feb54658bb203e842977f3ec9dfcabaa7311bc`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -89,33 +89,33 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 18 Dec 2025 22:56:40 GMT
 CMD ["php-fpm"]
-# Thu, 18 Dec 2025 23:12:45 GMT
+# Tue, 06 Jan 2026 18:32:13 GMT
 LABEL maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)
-# Thu, 18 Dec 2025 23:12:45 GMT
+# Tue, 06 Jan 2026 18:32:13 GMT
 ENV JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1
-# Thu, 18 Dec 2025 23:12:45 GMT
+# Tue, 06 Jan 2026 18:32:13 GMT
 RUN set -eux; 	apk add --no-cache 		bash 		ghostscript 		imagemagick 		zstd 	; # buildkit
-# Thu, 18 Dec 2025 23:14:49 GMT
+# Tue, 06 Jan 2026 18:34:29 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		bzip2-dev 		gmp-dev 		icu-dev 		freetype-dev 		imagemagick-dev 		libjpeg-turbo-dev 		libmemcached-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		openldap-dev 		pcre-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		bz2 		bcmath 		exif 		gd 		gmp 		intl 		ldap 		mysqli 		pdo_mysql 		pdo_pgsql 		pgsql 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 		pecl install APCu-5.1.23; 	pecl install memcached-3.3.0; 	pecl install redis-6.0.2; 		docker-php-ext-enable 		apcu 		memcached 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive "$extDir" 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .joomla-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Thu, 18 Dec 2025 23:14:50 GMT
+# Tue, 06 Jan 2026 18:34:30 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Thu, 18 Dec 2025 23:14:50 GMT
+# Tue, 06 Jan 2026 18:34:30 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Thu, 18 Dec 2025 23:14:50 GMT
+# Tue, 06 Jan 2026 18:34:30 GMT
 VOLUME [/var/www/html]
-# Thu, 18 Dec 2025 23:14:50 GMT
-ENV JOOMLA_VERSION=5.4.1
-# Thu, 18 Dec 2025 23:14:50 GMT
-ENV JOOMLA_SHA512=b3f268de70f018fc5e7c4fbbd5e2a18f1ca5abf6acd35ae712a6bf989b786e0aea4d34acfe2061c91306c708d994df3ecbeaea387a6b056ff1e58e2ed34104c3
-# Thu, 18 Dec 2025 23:14:51 GMT
-RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.1/Joomla_5.4.1-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
-# Thu, 18 Dec 2025 23:14:51 GMT
+# Tue, 06 Jan 2026 18:34:30 GMT
+ENV JOOMLA_VERSION=5.4.2
+# Tue, 06 Jan 2026 18:34:30 GMT
+ENV JOOMLA_SHA512=0f54f003bd08505c46671c7b06dbe0d28fd6379ff09d95aa44ed08fe30cdade611e23b8229b520bfa9592c80599bb81f583d79e43e3884a22171522e395311b4
+# Tue, 06 Jan 2026 18:34:31 GMT
+RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.2/Joomla_5.4.2-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
+# Tue, 06 Jan 2026 18:34:31 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 18 Dec 2025 23:14:51 GMT
+# Tue, 06 Jan 2026 18:34:31 GMT
 COPY makedb.php /makedb.php # buildkit
-# Thu, 18 Dec 2025 23:14:51 GMT
+# Tue, 06 Jan 2026 18:34:31 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 18 Dec 2025 23:14:51 GMT
+# Tue, 06 Jan 2026 18:34:31 GMT
 CMD ["php-fpm"]
 ```
 
@@ -168,65 +168,65 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 18 Dec 2025 22:56:56 GMT  
 		Size: 9.2 KB (9179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25ba26b0ebb93e6a20ba456bc918eb531495a996782c8faf381712b472d3ac95`  
-		Last Modified: Thu, 18 Dec 2025 23:15:09 GMT  
-		Size: 33.0 MB (32953620 bytes)  
+	-	`sha256:ffd3a20a477db3aa1f03dfc5080175619de1516e8789a1b68beb727c57271fbc`  
+		Last Modified: Tue, 06 Jan 2026 18:34:51 GMT  
+		Size: 33.0 MB (32953719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f96513973f3ec549255c2c424446f4838d075f4976212dc421456ad8720a7377`  
-		Last Modified: Thu, 18 Dec 2025 23:15:07 GMT  
-		Size: 7.2 MB (7188414 bytes)  
+	-	`sha256:ab0bcc00e7104d3b10f08cec7532fe9b7651238b4fd69384f7021c64feae32c3`  
+		Last Modified: Tue, 06 Jan 2026 18:34:47 GMT  
+		Size: 7.4 MB (7362557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2dad0ab109e8507517b0f8a696ba4d55017271283db5ba64eac9f987541b943`  
-		Last Modified: Thu, 18 Dec 2025 23:15:06 GMT  
-		Size: 72.8 KB (72824 bytes)  
+	-	`sha256:464be6ab22df03ea31649b53f495df8e20efbf23336767b1c592a5c7fc97f9b9`  
+		Last Modified: Tue, 06 Jan 2026 18:34:53 GMT  
+		Size: 72.9 KB (72858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a684c7a24b0e903df39904f6e032df6b00eb615f712be9f5c4b598e45e97223`  
-		Last Modified: Thu, 18 Dec 2025 23:15:06 GMT  
-		Size: 387.0 B  
+	-	`sha256:7cfb5cb48b603e47f6ed9b2eac7630e6df97520b658a8892daade35100e956e1`  
+		Last Modified: Tue, 06 Jan 2026 18:34:46 GMT  
+		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18fdf97a0dbc084081dfaf10acb5ce287477c8c0a5f6287e42edfc80dab13285`  
-		Last Modified: Thu, 18 Dec 2025 23:15:08 GMT  
-		Size: 25.6 MB (25648690 bytes)  
+	-	`sha256:db2b966ad0528e3e06062af13d8b89ef9a9f06e541169b055718ba0b8b977c0a`  
+		Last Modified: Tue, 06 Jan 2026 18:34:50 GMT  
+		Size: 26.0 MB (25957536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84d88c55606a55ba032b400adc490e88aa95abaf52d4c02ed25109dbc75e77a0`  
-		Last Modified: Thu, 18 Dec 2025 23:15:06 GMT  
-		Size: 3.7 KB (3655 bytes)  
+	-	`sha256:fe1c5b87a69007ece6028f61093c4afdd3b656e21ae2eb95751efb88abe2ebbc`  
+		Last Modified: Tue, 06 Jan 2026 18:34:46 GMT  
+		Size: 3.7 KB (3656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc841d7f29e2a2c55019043f8345c4fb8c6e58d7d81b2ba8f022a5f55b25e497`  
-		Last Modified: Thu, 18 Dec 2025 23:15:06 GMT  
-		Size: 1.1 KB (1069 bytes)  
+	-	`sha256:af36850bbd0ad86377ac98656fb91b447928a04bfc39a848c45d17e64cd5c9c4`  
+		Last Modified: Tue, 06 Jan 2026 18:34:46 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `joomla:5-php8.2-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull joomla@sha256:eddfa3e5ee72a3eaa51f84d2e32ba2977e305085d5065d6924578e4ef8f72d10
+$ docker pull joomla@sha256:01b51b5976e777c5f7c554831553171fed2b7dc75bdbf79cfb484ec3930b6e5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **45.7 KB (45715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c3bf4aa9a38bf3c77a2bc81d1a9e3396fe23d362afa5ff44d9bdce020ebc085`
+-	Image ID: `sha256:e94f3acaa7a0c94a647fde03d64ed35099e7758fcbbfac8b1b683fd54becd61c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4b8bb897262aa575b425fa3d19a1ba6e52b34f3fc35964f7dbdb3b4c4e5301e9`  
-		Last Modified: Fri, 19 Dec 2025 02:45:29 GMT  
+	-	`sha256:0e3ceb8a44048dd4aaefce00d4be64d0d36b4f51a0b746a5c43b855e66d03b19`  
+		Last Modified: Tue, 06 Jan 2026 20:45:41 GMT  
 		Size: 45.7 KB (45715 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `joomla:5-php8.2-fpm-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull joomla@sha256:f449fe8b92b47f7eeb07fa4ba6def811d301a4c96bfcdd62a342b405c3e206fb
+$ docker pull joomla@sha256:3f619712d465505340eecb01abee1b77ea394451f834042d7aa580b5f8a2bf8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **93.4 MB (93438197 bytes)**  
+-	Total Size: **93.9 MB (93888686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edef64f2a015ac83cbf59487e2b9b04a182767b390920a4f2b31b436aeb9f163`
+-	Image ID: `sha256:02da4876b6dd81970b715d567cade75d9e410c1bd4842c59a93f281dbb5dc206`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -283,33 +283,33 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 18 Dec 2025 22:59:22 GMT
 CMD ["php-fpm"]
-# Thu, 18 Dec 2025 23:09:28 GMT
+# Tue, 06 Jan 2026 18:36:48 GMT
 LABEL maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)
-# Thu, 18 Dec 2025 23:09:28 GMT
+# Tue, 06 Jan 2026 18:36:48 GMT
 ENV JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1
-# Thu, 18 Dec 2025 23:09:28 GMT
+# Tue, 06 Jan 2026 18:36:48 GMT
 RUN set -eux; 	apk add --no-cache 		bash 		ghostscript 		imagemagick 		zstd 	; # buildkit
-# Thu, 18 Dec 2025 23:12:31 GMT
+# Tue, 06 Jan 2026 18:39:46 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		bzip2-dev 		gmp-dev 		icu-dev 		freetype-dev 		imagemagick-dev 		libjpeg-turbo-dev 		libmemcached-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		openldap-dev 		pcre-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		bz2 		bcmath 		exif 		gd 		gmp 		intl 		ldap 		mysqli 		pdo_mysql 		pdo_pgsql 		pgsql 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 		pecl install APCu-5.1.23; 	pecl install memcached-3.3.0; 	pecl install redis-6.0.2; 		docker-php-ext-enable 		apcu 		memcached 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive "$extDir" 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .joomla-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Thu, 18 Dec 2025 23:12:32 GMT
+# Tue, 06 Jan 2026 18:39:47 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Thu, 18 Dec 2025 23:12:32 GMT
+# Tue, 06 Jan 2026 18:39:47 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Thu, 18 Dec 2025 23:12:32 GMT
+# Tue, 06 Jan 2026 18:39:47 GMT
 VOLUME [/var/www/html]
-# Thu, 18 Dec 2025 23:12:32 GMT
-ENV JOOMLA_VERSION=5.4.1
-# Thu, 18 Dec 2025 23:12:32 GMT
-ENV JOOMLA_SHA512=b3f268de70f018fc5e7c4fbbd5e2a18f1ca5abf6acd35ae712a6bf989b786e0aea4d34acfe2061c91306c708d994df3ecbeaea387a6b056ff1e58e2ed34104c3
-# Thu, 18 Dec 2025 23:12:34 GMT
-RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.1/Joomla_5.4.1-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
-# Thu, 18 Dec 2025 23:12:34 GMT
+# Tue, 06 Jan 2026 18:39:47 GMT
+ENV JOOMLA_VERSION=5.4.2
+# Tue, 06 Jan 2026 18:39:47 GMT
+ENV JOOMLA_SHA512=0f54f003bd08505c46671c7b06dbe0d28fd6379ff09d95aa44ed08fe30cdade611e23b8229b520bfa9592c80599bb81f583d79e43e3884a22171522e395311b4
+# Tue, 06 Jan 2026 18:39:48 GMT
+RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.2/Joomla_5.4.2-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
+# Tue, 06 Jan 2026 18:39:48 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 18 Dec 2025 23:12:34 GMT
+# Tue, 06 Jan 2026 18:39:48 GMT
 COPY makedb.php /makedb.php # buildkit
-# Thu, 18 Dec 2025 23:12:34 GMT
+# Tue, 06 Jan 2026 18:39:48 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 18 Dec 2025 23:12:34 GMT
+# Tue, 06 Jan 2026 18:39:48 GMT
 CMD ["php-fpm"]
 ```
 
@@ -362,65 +362,65 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 18 Dec 2025 22:59:37 GMT  
 		Size: 9.2 KB (9181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f466a8f0d8a3e6906f416053e7a1c66aa42f2ad40b33ee254ded339511fefa26`  
-		Last Modified: Thu, 18 Dec 2025 23:13:03 GMT  
-		Size: 29.6 MB (29599115 bytes)  
+	-	`sha256:0efc787320110969f2738a03c77c700f598490e5682bdaa80645abfad75d90a5`  
+		Last Modified: Tue, 06 Jan 2026 18:40:06 GMT  
+		Size: 29.6 MB (29599269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9cc61a378cc67ec5cb138e2c885dd4907ab78aebc0b69facc1001d361b28e32f`  
-		Last Modified: Thu, 18 Dec 2025 23:12:49 GMT  
-		Size: 6.9 MB (6886799 bytes)  
+	-	`sha256:bf33b6373677bf17e1144a422c83de8463c3ee9b2e5e9ebf987e8e03fa254701`  
+		Last Modified: Tue, 06 Jan 2026 18:40:04 GMT  
+		Size: 7.0 MB (7028426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:895b810b476af59fc01575d64416c5edd8f745ecc98d9edb99ac11aa5e23b3f4`  
-		Last Modified: Thu, 18 Dec 2025 23:12:48 GMT  
-		Size: 72.9 KB (72869 bytes)  
+	-	`sha256:f12ef33dc3a5be3847fa7a328c39f2adc806e7b82ec730bf84619b5fd3691b03`  
+		Last Modified: Tue, 06 Jan 2026 18:40:04 GMT  
+		Size: 72.9 KB (72908 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65f5cdbe7d9a57808460ea21251e02de92407f9ee9915deed3b5e949fb5281c3`  
-		Last Modified: Thu, 18 Dec 2025 23:12:48 GMT  
-		Size: 387.0 B  
+	-	`sha256:6bcf5736efd2923e962fa09a24c600143f14089a606e6052135c872a99b61622`  
+		Last Modified: Tue, 06 Jan 2026 20:47:45 GMT  
+		Size: 390.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07c104b6ae9d32f80da29c4c1c3c187b587e48bdf31051a20a721145bef005ea`  
-		Last Modified: Thu, 18 Dec 2025 23:12:51 GMT  
-		Size: 25.6 MB (25648684 bytes)  
+	-	`sha256:eaa16eea74722d115a2759e7704434dbe2817dc85ac45d2bea4f601f6a95afa7`  
+		Last Modified: Tue, 06 Jan 2026 18:40:06 GMT  
+		Size: 26.0 MB (25957347 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:238a3a7733ee79e27af0de2b1138d2b7ae7a32427058500050241192e3deb172`  
-		Last Modified: Thu, 18 Dec 2025 23:12:48 GMT  
-		Size: 3.7 KB (3655 bytes)  
+	-	`sha256:6e82ed2a69a0339d4f9c02c19323233f4e60f1c482bf5bb1a439dcd9692c61e8`  
+		Last Modified: Tue, 06 Jan 2026 18:40:04 GMT  
+		Size: 3.7 KB (3654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2d8d4afd5d8a88e58205ba0b1ef060be2f359f255cd49894ef81b8cc5090ab9`  
-		Last Modified: Thu, 18 Dec 2025 23:12:48 GMT  
-		Size: 1.1 KB (1066 bytes)  
+	-	`sha256:76e61557445e68ef83357d0807d57748e0e02e1441b9bdcc6061ca65a0346ea3`  
+		Last Modified: Tue, 06 Jan 2026 18:40:04 GMT  
+		Size: 1.1 KB (1070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `joomla:5-php8.2-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull joomla@sha256:ca674449ce17ff246fccea5a3a3d5bbc861fb005b3b359a2d32fe16efb93858f
+$ docker pull joomla@sha256:6f69c2d95b97026344d1cc83e16c6fa3f37aba3fad845381191cfb51fc74bc31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **45.8 KB (45839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4c3d0da1da000d0cab35657912b51ca93820c4fecf405d1f9ad4ccd1469bbfe`
+-	Image ID: `sha256:42175c42abd14d119a8c7e9d1afc53801a0552b14d2353033d1cb72fe6c38157`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5c11757d7b8f0708d2d513abb98c01b2d65133fe8e2541f1dde6188379f3022b`  
-		Last Modified: Fri, 19 Dec 2025 02:46:12 GMT  
+	-	`sha256:b8828122763d6affc5e854b7f929e66a223fcb144813a10b2e338f9bd95cea24`  
+		Last Modified: Tue, 06 Jan 2026 20:45:45 GMT  
 		Size: 45.8 KB (45839 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `joomla:5-php8.2-fpm-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull joomla@sha256:6029c354b28983147cbe8a09d97fbd7db32589a039fdf9a3a3e53e3feea44a3a
+$ docker pull joomla@sha256:36fd73aae8a8f9cdafe6245238ab493b51b1b2f2fe96ac2769729dbc1d14c7a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.5 MB (90545906 bytes)**  
+-	Total Size: **91.0 MB (90989222 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f093a1bb2fe574c5063000da32e0f80146c9504591c20d9052d6e6262ae3a7f`
+-	Image ID: `sha256:ac40c83337cff9d9bf12337e255a37116753997d21f148bfd4e754ef8f6a762d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -477,33 +477,33 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 18 Dec 2025 23:06:49 GMT
 CMD ["php-fpm"]
-# Thu, 18 Dec 2025 23:12:30 GMT
+# Tue, 06 Jan 2026 18:34:59 GMT
 LABEL maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)
-# Thu, 18 Dec 2025 23:12:30 GMT
+# Tue, 06 Jan 2026 18:34:59 GMT
 ENV JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1
-# Thu, 18 Dec 2025 23:12:30 GMT
+# Tue, 06 Jan 2026 18:34:59 GMT
 RUN set -eux; 	apk add --no-cache 		bash 		ghostscript 		imagemagick 		zstd 	; # buildkit
-# Thu, 18 Dec 2025 23:15:27 GMT
+# Tue, 06 Jan 2026 18:37:58 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		bzip2-dev 		gmp-dev 		icu-dev 		freetype-dev 		imagemagick-dev 		libjpeg-turbo-dev 		libmemcached-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		openldap-dev 		pcre-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		bz2 		bcmath 		exif 		gd 		gmp 		intl 		ldap 		mysqli 		pdo_mysql 		pdo_pgsql 		pgsql 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 		pecl install APCu-5.1.23; 	pecl install memcached-3.3.0; 	pecl install redis-6.0.2; 		docker-php-ext-enable 		apcu 		memcached 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive "$extDir" 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .joomla-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Thu, 18 Dec 2025 23:15:28 GMT
+# Tue, 06 Jan 2026 18:37:59 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Thu, 18 Dec 2025 23:15:28 GMT
+# Tue, 06 Jan 2026 18:37:59 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Thu, 18 Dec 2025 23:15:28 GMT
+# Tue, 06 Jan 2026 18:37:59 GMT
 VOLUME [/var/www/html]
-# Thu, 18 Dec 2025 23:15:28 GMT
-ENV JOOMLA_VERSION=5.4.1
-# Thu, 18 Dec 2025 23:15:28 GMT
-ENV JOOMLA_SHA512=b3f268de70f018fc5e7c4fbbd5e2a18f1ca5abf6acd35ae712a6bf989b786e0aea4d34acfe2061c91306c708d994df3ecbeaea387a6b056ff1e58e2ed34104c3
-# Thu, 18 Dec 2025 23:15:30 GMT
-RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.1/Joomla_5.4.1-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
-# Thu, 18 Dec 2025 23:15:30 GMT
+# Tue, 06 Jan 2026 18:37:59 GMT
+ENV JOOMLA_VERSION=5.4.2
+# Tue, 06 Jan 2026 18:37:59 GMT
+ENV JOOMLA_SHA512=0f54f003bd08505c46671c7b06dbe0d28fd6379ff09d95aa44ed08fe30cdade611e23b8229b520bfa9592c80599bb81f583d79e43e3884a22171522e395311b4
+# Tue, 06 Jan 2026 18:38:00 GMT
+RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.2/Joomla_5.4.2-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
+# Tue, 06 Jan 2026 18:38:00 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 18 Dec 2025 23:15:30 GMT
+# Tue, 06 Jan 2026 18:38:00 GMT
 COPY makedb.php /makedb.php # buildkit
-# Thu, 18 Dec 2025 23:15:30 GMT
+# Tue, 06 Jan 2026 18:38:00 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 18 Dec 2025 23:15:30 GMT
+# Tue, 06 Jan 2026 18:38:00 GMT
 CMD ["php-fpm"]
 ```
 
@@ -556,65 +556,65 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 18 Dec 2025 23:07:03 GMT  
 		Size: 9.2 KB (9182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b36622ee31ae3ee9527528b26ad0b1acc24175fe99e42a0f22b421e3b7faffc0`  
-		Last Modified: Thu, 18 Dec 2025 23:15:48 GMT  
-		Size: 27.9 MB (27877464 bytes)  
+	-	`sha256:8cfa92547867b3c5798829a0927c60b262bb102c0f76d84766024fa66c5ae8e3`  
+		Last Modified: Tue, 06 Jan 2026 18:38:18 GMT  
+		Size: 27.9 MB (27877502 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07763b884ec8811fbce39355e85d1e6a7dac78d1236ac6a940f2835dea80e7f1`  
-		Last Modified: Thu, 18 Dec 2025 23:15:46 GMT  
-		Size: 6.9 MB (6902302 bytes)  
+	-	`sha256:c8e69065540177b1b5e51dd471e206ed5ff79b609f6d660d80eacb116f759971`  
+		Last Modified: Tue, 06 Jan 2026 18:38:16 GMT  
+		Size: 7.0 MB (7036748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75287d1da09424587698a5ef31f1263b49325940b1f484416c66b87ba639dfd9`  
-		Last Modified: Thu, 18 Dec 2025 23:15:44 GMT  
-		Size: 72.8 KB (72801 bytes)  
+	-	`sha256:397e38435a7a8d1473c200c6dcd4e4a111e4184b3da328d8a373c7c1d2a1996f`  
+		Last Modified: Tue, 06 Jan 2026 18:38:16 GMT  
+		Size: 72.8 KB (72844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:712f179a980d7d70130481dc7c15fcf499bdb8685b45f622bef5843fa307f134`  
-		Last Modified: Thu, 18 Dec 2025 23:15:44 GMT  
-		Size: 388.0 B  
+	-	`sha256:92bc7110aa74e2fd40b7d1308a111e880887ddf900b4c40b9b2187231b82a4af`  
+		Last Modified: Tue, 06 Jan 2026 18:38:16 GMT  
+		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f48e9bb867281fe931615ed30326e9657b6bdaaac6f1ef3a18b9611bddf4bb1d`  
-		Last Modified: Thu, 18 Dec 2025 23:15:50 GMT  
-		Size: 25.6 MB (25648684 bytes)  
+	-	`sha256:4848cf78e83c0b462919e367af2d30e84788f691b722bbb782d8370d624b3157`  
+		Last Modified: Tue, 06 Jan 2026 18:38:18 GMT  
+		Size: 26.0 MB (25957468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7a19a701c58558e424a18c35305531ca4d855515f7d21f0b1dc8bc528d82592`  
-		Last Modified: Thu, 18 Dec 2025 23:15:44 GMT  
-		Size: 3.7 KB (3655 bytes)  
+	-	`sha256:f7a62a3013c2c54d2a48aa904d411405486e19b78e6b02c8288e085a3e3790e9`  
+		Last Modified: Tue, 06 Jan 2026 18:38:16 GMT  
+		Size: 3.7 KB (3656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6643ee44e01f083e609d5f5a350bdf858a62679764175511a3e9971383c6581`  
-		Last Modified: Thu, 18 Dec 2025 23:15:44 GMT  
+	-	`sha256:d8e9cd575530bfb7cc4bd7515b9f9e40f3409981748c3dfb78282328b71b11ec`  
+		Last Modified: Tue, 06 Jan 2026 18:38:16 GMT  
 		Size: 1.1 KB (1070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `joomla:5-php8.2-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull joomla@sha256:dd1ac082de455e36ac3fd5f0f621f9994511854ef15723488a5aaa3720b90bfa
+$ docker pull joomla@sha256:db554a65145f6ff88aa7cce3f76810d736c01513e5175ba81f0eef2e43e12ee5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.8 KB (45839 bytes)**  
+-	Total Size: **45.8 KB (45838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:51d7d83df7ab9f4db509c10839fed638191bfbf7698a6d79672bf09192b0b437`
+-	Image ID: `sha256:1c1018f8f4eec7cc063659004e02f4435de1a9378e7e180bd38b8005d5e59f8a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b63b2f060fb9ae0520438ee86cf11b8e29208f7415f0840e345e82ebcc383629`  
-		Last Modified: Fri, 19 Dec 2025 02:46:15 GMT  
-		Size: 45.8 KB (45839 bytes)  
+	-	`sha256:199a68070a91b45a5b54b5baf7551b9e72d333f2c28758a97d02f3b43e0b9721`  
+		Last Modified: Tue, 06 Jan 2026 20:45:48 GMT  
+		Size: 45.8 KB (45838 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `joomla:5-php8.2-fpm-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull joomla@sha256:dde40819af4038185fc543074e2ac3c28a4927a44621c0bffe6838cd3f4ad97e
+$ docker pull joomla@sha256:c0ce4b5221a3b45fda6c1058e14be7f16be7b768c31ade8465421e374e402333
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.5 MB (98468754 bytes)**  
+-	Total Size: **98.9 MB (98908642 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c0618e8055e36c3a0f278939cde431aea8533c963d83a241929995a484b3840a`
+-	Image ID: `sha256:6079bd9718b5d2415d5d589f4f64bed3d06eae5ce13a193c4bd8c64ea3e786e3`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -671,33 +671,33 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 18 Dec 2025 22:59:40 GMT
 CMD ["php-fpm"]
-# Thu, 18 Dec 2025 23:12:03 GMT
+# Tue, 06 Jan 2026 18:32:47 GMT
 LABEL maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)
-# Thu, 18 Dec 2025 23:12:03 GMT
+# Tue, 06 Jan 2026 18:32:47 GMT
 ENV JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1
-# Thu, 18 Dec 2025 23:12:03 GMT
+# Tue, 06 Jan 2026 18:32:47 GMT
 RUN set -eux; 	apk add --no-cache 		bash 		ghostscript 		imagemagick 		zstd 	; # buildkit
-# Thu, 18 Dec 2025 23:14:40 GMT
+# Tue, 06 Jan 2026 18:35:26 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		bzip2-dev 		gmp-dev 		icu-dev 		freetype-dev 		imagemagick-dev 		libjpeg-turbo-dev 		libmemcached-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		openldap-dev 		pcre-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		bz2 		bcmath 		exif 		gd 		gmp 		intl 		ldap 		mysqli 		pdo_mysql 		pdo_pgsql 		pgsql 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 		pecl install APCu-5.1.23; 	pecl install memcached-3.3.0; 	pecl install redis-6.0.2; 		docker-php-ext-enable 		apcu 		memcached 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive "$extDir" 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .joomla-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Thu, 18 Dec 2025 23:14:41 GMT
+# Tue, 06 Jan 2026 18:35:26 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Thu, 18 Dec 2025 23:14:41 GMT
+# Tue, 06 Jan 2026 18:35:27 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Thu, 18 Dec 2025 23:14:41 GMT
+# Tue, 06 Jan 2026 18:35:27 GMT
 VOLUME [/var/www/html]
-# Thu, 18 Dec 2025 23:14:41 GMT
-ENV JOOMLA_VERSION=5.4.1
-# Thu, 18 Dec 2025 23:14:41 GMT
-ENV JOOMLA_SHA512=b3f268de70f018fc5e7c4fbbd5e2a18f1ca5abf6acd35ae712a6bf989b786e0aea4d34acfe2061c91306c708d994df3ecbeaea387a6b056ff1e58e2ed34104c3
-# Thu, 18 Dec 2025 23:14:42 GMT
-RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.1/Joomla_5.4.1-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
-# Thu, 18 Dec 2025 23:14:42 GMT
+# Tue, 06 Jan 2026 18:35:27 GMT
+ENV JOOMLA_VERSION=5.4.2
+# Tue, 06 Jan 2026 18:35:27 GMT
+ENV JOOMLA_SHA512=0f54f003bd08505c46671c7b06dbe0d28fd6379ff09d95aa44ed08fe30cdade611e23b8229b520bfa9592c80599bb81f583d79e43e3884a22171522e395311b4
+# Tue, 06 Jan 2026 18:35:28 GMT
+RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.2/Joomla_5.4.2-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
+# Tue, 06 Jan 2026 18:35:28 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 18 Dec 2025 23:14:42 GMT
+# Tue, 06 Jan 2026 18:35:28 GMT
 COPY makedb.php /makedb.php # buildkit
-# Thu, 18 Dec 2025 23:14:42 GMT
+# Tue, 06 Jan 2026 18:35:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 18 Dec 2025 23:14:42 GMT
+# Tue, 06 Jan 2026 18:35:28 GMT
 CMD ["php-fpm"]
 ```
 
@@ -750,65 +750,65 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 18 Dec 2025 22:59:56 GMT  
 		Size: 9.2 KB (9179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:adfca13916c35618478ec0a91c122eb4179c9a5e0828e9c6f4611c8d653106b9`  
-		Last Modified: Thu, 18 Dec 2025 23:15:01 GMT  
-		Size: 32.6 MB (32589958 bytes)  
+	-	`sha256:2442b74432daa5b4cc7cdbdcb846ea0b2a085a9df27c6f0d068637cf7984057c`  
+		Last Modified: Tue, 06 Jan 2026 18:35:49 GMT  
+		Size: 32.6 MB (32590018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:380949af3659484c6331e58c1d7dbc7fac8de48eeaf0bb490f72159c4e4c178b`  
-		Last Modified: Thu, 18 Dec 2025 23:14:58 GMT  
-		Size: 7.1 MB (7097805 bytes)  
+	-	`sha256:c79cb4abb9c010f94add8cd667af7e87acf212260a800eef89d5221310f66723`  
+		Last Modified: Tue, 06 Jan 2026 18:35:45 GMT  
+		Size: 7.2 MB (7228800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d42c2f9e8e3761942e76771f0886b094db64c103182c64961464afdaa70364fd`  
-		Last Modified: Thu, 18 Dec 2025 23:14:58 GMT  
-		Size: 72.8 KB (72804 bytes)  
+	-	`sha256:c0ac26c1f38441583574c4c49f6f155c0c0f870356ff95200e38fa06c41f38ed`  
+		Last Modified: Tue, 06 Jan 2026 18:35:44 GMT  
+		Size: 72.9 KB (72851 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a44037340dd2f0e2a7f4e34b2efde4c5843d2b07c4f8aeb96c74c927d1125440`  
-		Last Modified: Thu, 18 Dec 2025 23:14:58 GMT  
-		Size: 385.0 B  
+	-	`sha256:797d514c0eae32a0de439acb851f7bff7ad69e1e5e36a299ebf401ecb0f6cefb`  
+		Last Modified: Tue, 06 Jan 2026 18:35:44 GMT  
+		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d790f7c7aef82a32863c029486f97ed6d6e788420757c0819a36dbf9bc58fc7`  
-		Last Modified: Thu, 18 Dec 2025 23:15:00 GMT  
-		Size: 25.6 MB (25648696 bytes)  
+	-	`sha256:8912ffe215a0685323e11a059f2e5f28f778c2cbe8690d619ee6fde3a6f3ef38`  
+		Last Modified: Tue, 06 Jan 2026 18:35:47 GMT  
+		Size: 26.0 MB (25957474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca4f0f22871e4ee2a07be336f5a54bf7ebfa701247f4d64765e14626e49118b8`  
-		Last Modified: Thu, 18 Dec 2025 23:14:58 GMT  
+	-	`sha256:6a0c92b91c1381fa4dd58c9250782371df7bcb803103e586f040474870579059`  
+		Last Modified: Tue, 06 Jan 2026 18:35:44 GMT  
 		Size: 3.7 KB (3655 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56ee803bf4fa4ac5783966134e631f9fdeb2a113c91ad679962c2bf8a95148af`  
-		Last Modified: Thu, 18 Dec 2025 23:14:58 GMT  
-		Size: 1.1 KB (1070 bytes)  
+	-	`sha256:586f6020c3ee13e75baa8bf813a772abf1e9d7cc9dd2e72ee9a3b10d19382ade`  
+		Last Modified: Tue, 06 Jan 2026 18:35:45 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `joomla:5-php8.2-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull joomla@sha256:893d1651c33364441224bf1d6c8089a639720e9e88d687b54d650a2237a17796
+$ docker pull joomla@sha256:9af56eae82f853e5062c61400a8c4cca32ce50e155a44a6dc0ca68c171007dc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **45.9 KB (45867 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c8bcb45074d7f21a5a5e33916dc8b0be8e2befa3bea32fafd727bd13bbfe1bc`
+-	Image ID: `sha256:f0b4492543691a12b8f7a81bd7cb009b9ca76e9e72494e47597d161e0cf3e924`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6eb9c65a3c1fa9a79dfb92d604918bf3b9f4d349f9bc3168001279ecef0b3035`  
-		Last Modified: Fri, 19 Dec 2025 02:46:18 GMT  
+	-	`sha256:9b7b93a45f8958ab02a3744021c9051b27f9ce90716b9200c62c0cc5c4dad1ca`  
+		Last Modified: Tue, 06 Jan 2026 20:46:07 GMT  
 		Size: 45.9 KB (45867 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `joomla:5-php8.2-fpm-alpine` - linux; 386
 
 ```console
-$ docker pull joomla@sha256:d65250d080c91553ba9f33296c8ea6842e55bb9e4a8ff45949336edb4341e370
+$ docker pull joomla@sha256:f3fb08c4799b88d285862834a98fb5a50fcc14ca454d30b4f34bed010aa17381
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.4 MB (99412319 bytes)**  
+-	Total Size: **99.9 MB (99898557 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf3f7de20f0f19114485d77fb81609a8c36f75baeb960988f4403c8ad825004e`
+-	Image ID: `sha256:61b06ab2222be8716465caa681a78dd0ef6de3e8112761de47bf5811bc026292`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -865,33 +865,33 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 18 Dec 2025 22:58:57 GMT
 CMD ["php-fpm"]
-# Thu, 18 Dec 2025 23:14:41 GMT
+# Tue, 06 Jan 2026 18:30:58 GMT
 LABEL maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)
-# Thu, 18 Dec 2025 23:14:41 GMT
+# Tue, 06 Jan 2026 18:30:58 GMT
 ENV JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1
-# Thu, 18 Dec 2025 23:14:41 GMT
+# Tue, 06 Jan 2026 18:30:58 GMT
 RUN set -eux; 	apk add --no-cache 		bash 		ghostscript 		imagemagick 		zstd 	; # buildkit
-# Thu, 18 Dec 2025 23:16:45 GMT
+# Tue, 06 Jan 2026 18:33:06 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		bzip2-dev 		gmp-dev 		icu-dev 		freetype-dev 		imagemagick-dev 		libjpeg-turbo-dev 		libmemcached-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		openldap-dev 		pcre-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		bz2 		bcmath 		exif 		gd 		gmp 		intl 		ldap 		mysqli 		pdo_mysql 		pdo_pgsql 		pgsql 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 		pecl install APCu-5.1.23; 	pecl install memcached-3.3.0; 	pecl install redis-6.0.2; 		docker-php-ext-enable 		apcu 		memcached 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive "$extDir" 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .joomla-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Thu, 18 Dec 2025 23:16:45 GMT
+# Tue, 06 Jan 2026 18:33:06 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Thu, 18 Dec 2025 23:16:45 GMT
+# Tue, 06 Jan 2026 18:33:06 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Thu, 18 Dec 2025 23:16:45 GMT
+# Tue, 06 Jan 2026 18:33:06 GMT
 VOLUME [/var/www/html]
-# Thu, 18 Dec 2025 23:16:45 GMT
-ENV JOOMLA_VERSION=5.4.1
-# Thu, 18 Dec 2025 23:16:45 GMT
-ENV JOOMLA_SHA512=b3f268de70f018fc5e7c4fbbd5e2a18f1ca5abf6acd35ae712a6bf989b786e0aea4d34acfe2061c91306c708d994df3ecbeaea387a6b056ff1e58e2ed34104c3
-# Thu, 18 Dec 2025 23:16:47 GMT
-RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.1/Joomla_5.4.1-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
-# Thu, 18 Dec 2025 23:16:47 GMT
+# Tue, 06 Jan 2026 18:33:06 GMT
+ENV JOOMLA_VERSION=5.4.2
+# Tue, 06 Jan 2026 18:33:06 GMT
+ENV JOOMLA_SHA512=0f54f003bd08505c46671c7b06dbe0d28fd6379ff09d95aa44ed08fe30cdade611e23b8229b520bfa9592c80599bb81f583d79e43e3884a22171522e395311b4
+# Tue, 06 Jan 2026 18:33:08 GMT
+RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.2/Joomla_5.4.2-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
+# Tue, 06 Jan 2026 18:33:08 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 18 Dec 2025 23:16:47 GMT
+# Tue, 06 Jan 2026 18:33:08 GMT
 COPY makedb.php /makedb.php # buildkit
-# Thu, 18 Dec 2025 23:16:47 GMT
+# Tue, 06 Jan 2026 18:33:08 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 18 Dec 2025 23:16:47 GMT
+# Tue, 06 Jan 2026 18:33:08 GMT
 CMD ["php-fpm"]
 ```
 
@@ -944,65 +944,65 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 18 Dec 2025 22:59:16 GMT  
 		Size: 9.2 KB (9178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09cdc4ae885e09f64d9fb6b1967d4b593ce0bde29ae7cffe723579901a8aa7d6`  
-		Last Modified: Thu, 18 Dec 2025 23:17:05 GMT  
-		Size: 33.4 MB (33432313 bytes)  
+	-	`sha256:4b7431b784ddd582cecb29fe4f6e54fefb49d6153eeb0690b1d1ce0bf5e41358`  
+		Last Modified: Tue, 06 Jan 2026 18:33:25 GMT  
+		Size: 33.4 MB (33432339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1dcc5a161900ff18e3522f4d024aa7d28a297e920165fed3417556588a998af7`  
-		Last Modified: Thu, 18 Dec 2025 23:17:02 GMT  
-		Size: 7.3 MB (7306170 bytes)  
+	-	`sha256:faf386c28a457aa14a7a4dcaf09df4394f83b7c94ae45918337d6bd409c49e59`  
+		Last Modified: Tue, 06 Jan 2026 18:33:23 GMT  
+		Size: 7.5 MB (7483460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bc2ffb546d34d155fbd24550e68b70af73ce5ff93510b61dcfa99f0214af295`  
-		Last Modified: Thu, 18 Dec 2025 23:17:01 GMT  
-		Size: 72.8 KB (72755 bytes)  
+	-	`sha256:6bea994460d25a2e26ae3cd8fcee11874d94a424e984da71ededb066212fa781`  
+		Last Modified: Tue, 06 Jan 2026 18:33:23 GMT  
+		Size: 72.8 KB (72808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:339035d26f99be6c75f5d14787edfdadbae333e1cbfd5adf2362549542ad4cab`  
-		Last Modified: Thu, 18 Dec 2025 23:17:01 GMT  
+	-	`sha256:2edad068c76746717a877a9527fed67106a36c1d2059a5fb93f60dd9afa8358d`  
+		Last Modified: Tue, 06 Jan 2026 18:33:23 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6e0d143c9ef58c5cba004d6efa12baa4b8e580678ecff0a511903ffb98e4c0d`  
-		Last Modified: Thu, 18 Dec 2025 23:17:03 GMT  
-		Size: 25.6 MB (25648693 bytes)  
+	-	`sha256:3aba39baa83b01a8da1785fe831ecf5fe8b32f2ea186e70c441c6af675ad7956`  
+		Last Modified: Tue, 06 Jan 2026 18:33:24 GMT  
+		Size: 26.0 MB (25957562 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:94ba6d91829e21fcd2533d46e7498979560ec692e37034ba927fcf6edc0c077c`  
-		Last Modified: Thu, 18 Dec 2025 23:17:01 GMT  
-		Size: 3.7 KB (3655 bytes)  
+	-	`sha256:e31e61bfad460c08c1d5a5246f423ee5888e62fecf84a246984f17fd75638a06`  
+		Last Modified: Tue, 06 Jan 2026 18:33:23 GMT  
+		Size: 3.7 KB (3654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb44048ff5ec1dc4d181b81292da1f7aa08076522447dcdcca9793e2a19512a4`  
-		Last Modified: Thu, 18 Dec 2025 23:17:01 GMT  
-		Size: 1.1 KB (1070 bytes)  
+	-	`sha256:d375f884d7bb341d65f0c6cf5cc3b3362d217013ec6f3d1c6c1b55759d79cd68`  
+		Last Modified: Tue, 06 Jan 2026 18:33:23 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `joomla:5-php8.2-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull joomla@sha256:fd71ceb27d8903feb2c9bccc57dfe97eff3571503674ceafda0247c546fb1c17
+$ docker pull joomla@sha256:307a52053c0015b56e8c4fc5f7bc4ada248be29b07eb1f03a8e642b74785b928
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **45.7 KB (45680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f7fcfc5cf75bbd89feb1332ad70452ce5feb2188fcfbbf1ac4392526250cab1f`
+-	Image ID: `sha256:b0c9804c480de2a07e85cd8930aebc9812e23df2bd285e5b1505ce98ad79185f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1d02c06c8753093f60a47a4527d2d37a3c2cd2625801140afd64b1b2140c1410`  
-		Last Modified: Fri, 19 Dec 2025 02:46:21 GMT  
+	-	`sha256:f53763e837dbd2fe00258db88ed7e5faedad14e21f7248a278b1284ebdf01ac8`  
+		Last Modified: Tue, 06 Jan 2026 20:46:10 GMT  
 		Size: 45.7 KB (45680 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `joomla:5-php8.2-fpm-alpine` - linux; ppc64le
 
 ```console
-$ docker pull joomla@sha256:d50c0f0ecdeb80614f5a843198084350979d85efb7e61db1f1a0b6bb2d5a66f9
+$ docker pull joomla@sha256:31a0579dcce6b06288a067ed05320d2bcdb16b5ce405c444c47f9685883b6907
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.7 MB (100748344 bytes)**  
+-	Total Size: **101.2 MB (101185614 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f8d31cd336e11b2aa218cf9bbde23dfbb7d8bb9427fa8b08537e4e9a7cafb2f`
+-	Image ID: `sha256:0644d57e84c1578b8dd4142b9dc28a0574fb894add09033d1b0f43bf78cd5313`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1059,33 +1059,33 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Fri, 19 Dec 2025 00:23:37 GMT
 CMD ["php-fpm"]
-# Fri, 19 Dec 2025 01:32:00 GMT
+# Tue, 06 Jan 2026 19:12:41 GMT
 LABEL maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)
-# Fri, 19 Dec 2025 01:32:00 GMT
+# Tue, 06 Jan 2026 19:12:41 GMT
 ENV JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1
-# Fri, 19 Dec 2025 01:32:00 GMT
+# Tue, 06 Jan 2026 19:12:41 GMT
 RUN set -eux; 	apk add --no-cache 		bash 		ghostscript 		imagemagick 		zstd 	; # buildkit
-# Fri, 19 Dec 2025 01:35:51 GMT
+# Tue, 06 Jan 2026 19:16:28 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		bzip2-dev 		gmp-dev 		icu-dev 		freetype-dev 		imagemagick-dev 		libjpeg-turbo-dev 		libmemcached-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		openldap-dev 		pcre-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		bz2 		bcmath 		exif 		gd 		gmp 		intl 		ldap 		mysqli 		pdo_mysql 		pdo_pgsql 		pgsql 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 		pecl install APCu-5.1.23; 	pecl install memcached-3.3.0; 	pecl install redis-6.0.2; 		docker-php-ext-enable 		apcu 		memcached 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive "$extDir" 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .joomla-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Fri, 19 Dec 2025 01:35:52 GMT
+# Tue, 06 Jan 2026 19:16:29 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 19 Dec 2025 01:35:53 GMT
+# Tue, 06 Jan 2026 19:16:30 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Fri, 19 Dec 2025 01:35:53 GMT
+# Tue, 06 Jan 2026 19:16:30 GMT
 VOLUME [/var/www/html]
-# Fri, 19 Dec 2025 01:35:53 GMT
-ENV JOOMLA_VERSION=5.4.1
-# Fri, 19 Dec 2025 01:35:53 GMT
-ENV JOOMLA_SHA512=b3f268de70f018fc5e7c4fbbd5e2a18f1ca5abf6acd35ae712a6bf989b786e0aea4d34acfe2061c91306c708d994df3ecbeaea387a6b056ff1e58e2ed34104c3
-# Fri, 19 Dec 2025 01:35:57 GMT
-RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.1/Joomla_5.4.1-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
-# Fri, 19 Dec 2025 01:35:58 GMT
+# Tue, 06 Jan 2026 19:16:30 GMT
+ENV JOOMLA_VERSION=5.4.2
+# Tue, 06 Jan 2026 19:16:30 GMT
+ENV JOOMLA_SHA512=0f54f003bd08505c46671c7b06dbe0d28fd6379ff09d95aa44ed08fe30cdade611e23b8229b520bfa9592c80599bb81f583d79e43e3884a22171522e395311b4
+# Tue, 06 Jan 2026 19:16:34 GMT
+RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.2/Joomla_5.4.2-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
+# Tue, 06 Jan 2026 19:16:35 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Fri, 19 Dec 2025 01:35:59 GMT
+# Tue, 06 Jan 2026 19:16:36 GMT
 COPY makedb.php /makedb.php # buildkit
-# Fri, 19 Dec 2025 01:35:59 GMT
+# Tue, 06 Jan 2026 19:16:36 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 19 Dec 2025 01:35:59 GMT
+# Tue, 06 Jan 2026 19:16:36 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1138,52 +1138,52 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 19 Dec 2025 00:23:58 GMT  
 		Size: 9.2 KB (9182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:062182bcb12632daff2d9b2e7bf84b2a66532334f1312eaad46532c9847f1f6e`  
-		Last Modified: Fri, 19 Dec 2025 01:36:29 GMT  
-		Size: 34.2 MB (34187928 bytes)  
+	-	`sha256:5a71158df5d884d84c58c7e216ad94b8cd97a63b57b650b515fd0625919f6c91`  
+		Last Modified: Tue, 06 Jan 2026 19:17:03 GMT  
+		Size: 34.2 MB (34187955 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c603bbd436d3842e714be4d28b42c38d87e75a4b3548601ec81807143176a357`  
-		Last Modified: Fri, 19 Dec 2025 01:36:25 GMT  
-		Size: 7.3 MB (7328862 bytes)  
+	-	`sha256:2f16a3a2fdd988756bedbb6f40fbd6c08936b72a95fa549e01fcca1c3d561e5e`  
+		Last Modified: Tue, 06 Jan 2026 19:17:00 GMT  
+		Size: 7.5 MB (7457190 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e23e3a503d0f361f0a863da414954026f8c94156cabf7bd5a5481bbc1da5d14`  
-		Last Modified: Fri, 19 Dec 2025 01:36:25 GMT  
-		Size: 72.9 KB (72869 bytes)  
+	-	`sha256:71a9efb370d078ec64179f8f50864505e68ed1415ca302da4c88f142ddf11ce4`  
+		Last Modified: Tue, 06 Jan 2026 19:16:59 GMT  
+		Size: 72.9 KB (72897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ff9baa022ded1e8ba961a2f7b0b2b8910629d83e160cb4ce3968f2c99e947ad`  
-		Last Modified: Fri, 19 Dec 2025 01:36:25 GMT  
-		Size: 390.0 B  
+	-	`sha256:f8c3cc554e9b4dce34b3f66454e2a15ab31ac64a46ed6d76bff71aae68f70d69`  
+		Last Modified: Tue, 06 Jan 2026 19:16:59 GMT  
+		Size: 393.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9852b69efa88ddddbea6edb3fdce8463424b7ca862dfb33dafa703fb000c3b2e`  
-		Last Modified: Fri, 19 Dec 2025 01:36:26 GMT  
-		Size: 25.6 MB (25648669 bytes)  
+	-	`sha256:7c6cc86edbd0753c5891d0a0c5c9baa36562acd786799dfff7e983459bab250a`  
+		Last Modified: Tue, 06 Jan 2026 19:17:01 GMT  
+		Size: 26.0 MB (25957553 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:533fff564a12f9bf458e4b12607c1b0e086e057fd013f430e5682011a96c716a`  
-		Last Modified: Fri, 19 Dec 2025 01:36:25 GMT  
-		Size: 3.7 KB (3655 bytes)  
+	-	`sha256:97513947a8f81490315344427960430663001d64a914386a9d28d7275c91f7aa`  
+		Last Modified: Tue, 06 Jan 2026 19:16:59 GMT  
+		Size: 3.7 KB (3656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3328ef4ffc8ba3daf8d6635a694e0bea4ff2096000fbde87ebf228cb7f47e71`  
-		Last Modified: Fri, 19 Dec 2025 01:36:25 GMT  
-		Size: 1.1 KB (1071 bytes)  
+	-	`sha256:eacb4f891cf4e3b60daed54074bc0dbfa12e92ad895cf1e14135724c25bad9ff`  
+		Last Modified: Tue, 06 Jan 2026 19:16:59 GMT  
+		Size: 1.1 KB (1070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `joomla:5-php8.2-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull joomla@sha256:c14333837cb7d5eb2380c4487437323239e29897dac8b0371c96ef21bd88905d
+$ docker pull joomla@sha256:6ba7bdccea7e9a3fc19b71cfe1b9d66ff4ff1261de7d7f1900399b185cf508dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **45.8 KB (45761 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8540e316d100791fbd350689e0568c6ed854ca8f75741ea402c1cbae8cbf2c15`
+-	Image ID: `sha256:50e02fe8805726a28fa11339044dd7cff950acb9e73966005244e280baca6225`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0b806207c5097be098a98dba5597742337a0a1dde9e30274b146c8113927f8f`  
-		Last Modified: Fri, 19 Dec 2025 02:46:24 GMT  
+	-	`sha256:85b4be0ba3942d8d705bf00628e711b233308e729729f4b68c6616d320514ac4`  
+		Last Modified: Tue, 06 Jan 2026 20:46:13 GMT  
 		Size: 45.8 KB (45761 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1384,13 +1384,13 @@ $ docker pull joomla@sha256:bfbe6ec94474666b8c650a6196853a187f2ed47d2ab9d2e1ae70
 ### `joomla:5-php8.2-fpm-alpine` - linux; s390x
 
 ```console
-$ docker pull joomla@sha256:3b14a04fb4555f086398f32cb1da62ff0b4f609b49bf452c12eb255d2dc1ea08
+$ docker pull joomla@sha256:b36c75cfb348d505c70798b99998f4fe8b5f98e2718464cc631d2140643ce8cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.9 MB (99893775 bytes)**  
+-	Total Size: **100.3 MB (100336065 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:909178e9d34f8d65530299926104d0ee8982afda61b933f7ad237991a8a6efd0`
+-	Image ID: `sha256:a8468881beef8f40607f9b35ee4a048cb0ecc3b8c39082be5c2c6c81ac2cc6b4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1447,33 +1447,33 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 18 Dec 2025 23:06:35 GMT
 CMD ["php-fpm"]
-# Thu, 18 Dec 2025 23:12:41 GMT
+# Tue, 06 Jan 2026 18:39:30 GMT
 LABEL maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)
-# Thu, 18 Dec 2025 23:12:41 GMT
+# Tue, 06 Jan 2026 18:39:30 GMT
 ENV JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1
-# Thu, 18 Dec 2025 23:12:41 GMT
+# Tue, 06 Jan 2026 18:39:30 GMT
 RUN set -eux; 	apk add --no-cache 		bash 		ghostscript 		imagemagick 		zstd 	; # buildkit
-# Thu, 18 Dec 2025 23:15:00 GMT
+# Tue, 06 Jan 2026 18:41:53 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		bzip2-dev 		gmp-dev 		icu-dev 		freetype-dev 		imagemagick-dev 		libjpeg-turbo-dev 		libmemcached-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		openldap-dev 		pcre-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		bz2 		bcmath 		exif 		gd 		gmp 		intl 		ldap 		mysqli 		pdo_mysql 		pdo_pgsql 		pgsql 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 		pecl install APCu-5.1.23; 	pecl install memcached-3.3.0; 	pecl install redis-6.0.2; 		docker-php-ext-enable 		apcu 		memcached 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive "$extDir" 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .joomla-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Thu, 18 Dec 2025 23:15:01 GMT
+# Tue, 06 Jan 2026 18:41:54 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Thu, 18 Dec 2025 23:15:01 GMT
+# Tue, 06 Jan 2026 18:41:54 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Thu, 18 Dec 2025 23:15:01 GMT
+# Tue, 06 Jan 2026 18:41:54 GMT
 VOLUME [/var/www/html]
-# Thu, 18 Dec 2025 23:15:01 GMT
-ENV JOOMLA_VERSION=5.4.1
-# Thu, 18 Dec 2025 23:15:01 GMT
-ENV JOOMLA_SHA512=b3f268de70f018fc5e7c4fbbd5e2a18f1ca5abf6acd35ae712a6bf989b786e0aea4d34acfe2061c91306c708d994df3ecbeaea387a6b056ff1e58e2ed34104c3
-# Thu, 18 Dec 2025 23:15:02 GMT
-RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.1/Joomla_5.4.1-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
-# Thu, 18 Dec 2025 23:15:02 GMT
+# Tue, 06 Jan 2026 18:41:54 GMT
+ENV JOOMLA_VERSION=5.4.2
+# Tue, 06 Jan 2026 18:41:54 GMT
+ENV JOOMLA_SHA512=0f54f003bd08505c46671c7b06dbe0d28fd6379ff09d95aa44ed08fe30cdade611e23b8229b520bfa9592c80599bb81f583d79e43e3884a22171522e395311b4
+# Tue, 06 Jan 2026 18:41:56 GMT
+RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.4.2/Joomla_5.4.2-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla # buildkit
+# Tue, 06 Jan 2026 18:41:56 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 18 Dec 2025 23:15:02 GMT
+# Tue, 06 Jan 2026 18:41:56 GMT
 COPY makedb.php /makedb.php # buildkit
-# Thu, 18 Dec 2025 23:15:02 GMT
+# Tue, 06 Jan 2026 18:41:56 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 18 Dec 2025 23:15:02 GMT
+# Tue, 06 Jan 2026 18:41:56 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1526,51 +1526,51 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 18 Dec 2025 23:06:54 GMT  
 		Size: 9.2 KB (9177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d09cb98464fe886a5bba667cbc442d681c8ff7312ed145c7b8b258e04174793`  
-		Last Modified: Thu, 18 Dec 2025 23:15:26 GMT  
-		Size: 34.1 MB (34118746 bytes)  
+	-	`sha256:4f2cfe1ed5520831391d4ed4767c0351b0673a631f367018284ec134e3546397`  
+		Last Modified: Tue, 06 Jan 2026 18:42:23 GMT  
+		Size: 34.1 MB (34118819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ebcf7a2d920a42fc0643d4c9cdfaa51b912306791758c6db484696311a6615f3`  
-		Last Modified: Thu, 18 Dec 2025 23:15:21 GMT  
-		Size: 7.3 MB (7298420 bytes)  
+	-	`sha256:8f59c4cdfe645641364394c78b3e328fccbca8d96807c0aa07deb55dc59cf1c4`  
+		Last Modified: Tue, 06 Jan 2026 18:42:20 GMT  
+		Size: 7.4 MB (7431785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47135e2b99622af6e53a6de00429fa1ccf02eb3f69127dd3701456f6c615ca14`  
-		Last Modified: Thu, 18 Dec 2025 23:15:20 GMT  
-		Size: 72.8 KB (72839 bytes)  
+	-	`sha256:0c52cf7469902bdd0776cd4db57a8b3ae33ea8bcbf88756e91acd3efc0f68dc9`  
+		Last Modified: Tue, 06 Jan 2026 18:42:19 GMT  
+		Size: 72.9 KB (72864 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44a31757e4461161d39f26e432e78ff34a2e97ff3f63edf9594eccd580ace75c`  
-		Last Modified: Thu, 18 Dec 2025 23:15:20 GMT  
-		Size: 386.0 B  
+	-	`sha256:f31ff22c3fcb9cd6dabe01fde5a23ff6c5235a90699e79fb52262ea51afe02a7`  
+		Last Modified: Tue, 06 Jan 2026 18:42:20 GMT  
+		Size: 389.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b8b092a30ca60c586ee2c3121e566883928a254608d6d3fd36ca21b90a15860`  
-		Last Modified: Thu, 18 Dec 2025 23:15:23 GMT  
-		Size: 25.6 MB (25648680 bytes)  
+	-	`sha256:a40aea0469f2ff1545bfe061c5cf6c2b573026adc45debc5b54807cfa57f24f6`  
+		Last Modified: Tue, 06 Jan 2026 18:42:22 GMT  
+		Size: 26.0 MB (25957502 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5554c17814df797330ee265c011fe7869ab0949d0f4f2a1424df4523f560c1c`  
-		Last Modified: Thu, 18 Dec 2025 23:15:20 GMT  
-		Size: 3.7 KB (3655 bytes)  
+	-	`sha256:cfed65b12c010269885e631abbaa52504f31379c9af8085d260d17a281eb4b0c`  
+		Last Modified: Tue, 06 Jan 2026 18:42:20 GMT  
+		Size: 3.7 KB (3656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86e8cdbf5cf0254a01d7bcb08cf1c83c43a26fcc089342f4684a043b63475592`  
-		Last Modified: Thu, 18 Dec 2025 23:15:20 GMT  
-		Size: 1.1 KB (1069 bytes)  
+	-	`sha256:8493077a301f50df6b41d93dc1d20adc531f2a333ff0922fb99fe4dfac305447`  
+		Last Modified: Tue, 06 Jan 2026 18:42:20 GMT  
+		Size: 1.1 KB (1070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `joomla:5-php8.2-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull joomla@sha256:fc380f4e1480083805f3fca850243d64b0fcd52fcf511509e1ec7defa75636d8
+$ docker pull joomla@sha256:ed1094465c5a8a7dd59a89fa0cd10348285e4b011cd044d3db48c84096f55bcf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **45.7 KB (45715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c70712be13481667223967e7daf4ab1585169e64918c4ac0677c48cdbd42892d`
+-	Image ID: `sha256:fe0ee0cf9f05f2e16f7cff598ca0ee4dcdda8b1bdc5ca8e1398635bcc0f22027`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:52d3c2845995d6ffd6887551f2689d1865eda4f088853db0a8c49e6a710090c9`  
-		Last Modified: Fri, 19 Dec 2025 02:46:29 GMT  
+	-	`sha256:04a2ff4dacd16753512d87cf437ba3d89dcd783d8de9646c8ccb5889b78aa810`  
+		Last Modified: Tue, 06 Jan 2026 20:46:19 GMT  
 		Size: 45.7 KB (45715 bytes)  
 		MIME: application/vnd.in-toto+json
