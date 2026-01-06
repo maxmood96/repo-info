@@ -248,7 +248,7 @@ WORKDIR /go
 		Size: 67.6 MB (67583784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f478454ffcac5ff13580e3a622693484e588a795e8b305bca5ece5fe9c1648cc`  
-		Last Modified: Mon, 05 Jan 2026 20:13:09 GMT  
+		Last Modified: Tue, 06 Jan 2026 00:09:54 GMT  
 		Size: 98.3 MB (98254477 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:32ea799c03d09b63583e3ebd313f2aacd577c4821e87f618e936a7b9c3c7ca14`  
