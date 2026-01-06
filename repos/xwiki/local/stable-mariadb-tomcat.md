@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:822a7d23bac17a948193ab13994d4ff0dc5f495a975eaf13e882912ca9b5743c`
-- Created: `2025-12-08T23:47:32.615824447Z`
-- Virtual Size: ~ 1.29 Gb  
+- Image ID: `sha256:396bd16233017dc931dff7211d5ed56bdf0c84c036fb327e3c8b982b025dc8d6`
+- Created: `2026-01-02T18:43:33.527941561Z`
+- Virtual Size: ~ 1.30 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -22,14 +22,14 @@
   - `TOMCAT_MAJOR=10`
   - `TOMCAT_VERSION=10.1.50`
   - `TOMCAT_SHA512=c7702b0304257d80dc5bd615005fe037bd0c518e3fe77d22a58e5313fe53e6af6f4a2cf00790e3e9a669d1ae5470fb11177c9ef42f8c846d2b20dfac93e2d551`
-  - `XWIKI_VERSION=17.10.0`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.0`
-  - `XWIKI_DOWNLOAD_SHA256=7a1942782a74736ec4ebe654ede31a4454cff230bab6818a78db09452a2d1656`
-  - `MARIADB_JDBC_VERSION=3.5.6`
-  - `MARIADB_JDBC_SHA256=a129703efd7b0f334564d46753de999f09b3a361489a2eb647e6020390981cc9`
-  - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.6`
-  - `MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.6.jar`
-  - `MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.6.jar`
+  - `XWIKI_VERSION=17.10.2`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.2`
+  - `XWIKI_DOWNLOAD_SHA256=36bec1ea5f82f70f32e4488d8a58e9e44ed952e8657b3f83caf783d30c21a0ee`
+  - `MARIADB_JDBC_VERSION=3.5.7`
+  - `MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526`
+  - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7`
+  - `MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar`
+  - `MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar`
 - Labels:
   - `org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki`
