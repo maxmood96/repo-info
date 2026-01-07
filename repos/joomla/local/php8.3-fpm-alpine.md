@@ -1,10 +1,10 @@
-# `joomla:6.0.1-php8.3-fpm-alpine`
+# `joomla:6.0.2-php8.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:078610e44083c79f54a5c9eb15ea613f44b9a6ae5c261a143d081bd64ba29aee`
-- Created: `2025-12-18T22:10:51.030193468Z`
-- Virtual Size: ~ 295.26 Mb  
+- Image ID: `sha256:563eebe7b76c86d75b3c727eb823a6f51e627b278849050e37304cc03391247a`
+- Created: `2026-01-06T18:34:18.656874668Z`
+- Virtual Size: ~ 296.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.29.tar.xz.asc`
   - `PHP_SHA256=f7950ca034b15a78f5de9f1b22f4d9bad1dd497114d175cb1672a4ca78077af5`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=6.0.1`
-  - `JOOMLA_SHA512=07a241b4a22d29c9dd9d2d7620cccaa44c40f6d35aae47c6e105d6240b7076043f9905abc942a3684ea8abb9c66411d19d03c29adca526a7add3770b8aff208c`
+  - `JOOMLA_VERSION=6.0.2`
+  - `JOOMLA_SHA512=a79d95d23b3d75b4e72e47e076f7b96f381f9fae7d3b1f402d2f7120fac76dfd17aa6fba386db00d84913f40791f04b89435ca04636437af2ef7a9d78af472db`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -1205,16 +1205,16 @@ MIT
 ### `apk` package: `libsodium`
 
 ```console
-libsodium-1.0.20-r0 description:
+libsodium-1.0.20-r1 description:
 P(ortable|ackageable) NaCl-based crypto library
 
-libsodium-1.0.20-r0 webpage:
+libsodium-1.0.20-r1 webpage:
 https://github.com/jedisct1/libsodium
 
-libsodium-1.0.20-r0 installed size:
+libsodium-1.0.20-r1 installed size:
 339 KiB
 
-libsodium-1.0.20-r0 license:
+libsodium-1.0.20-r1 license:
 ISC
 
 ```
