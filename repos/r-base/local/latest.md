@@ -63,9 +63,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=3.1.12
-'http://http.debian.net/debian/pool/main/a/apt/apt_3.1.12.dsc' apt_3.1.12.dsc 3095 SHA256:e59407754d91eb5cb07dd47d8c8390b9b28a7d2ec5844c8f6265ca0dc3247590
-'http://http.debian.net/debian/pool/main/a/apt/apt_3.1.12.tar.xz' apt_3.1.12.tar.xz 2464756 SHA256:8c6012b7b95fedf0acc99830aba5173f80f6651f12e4dcc0fc8b2f16779b2d17
+'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.12.dsc' apt_3.1.12.dsc 3095 SHA256:e59407754d91eb5cb07dd47d8c8390b9b28a7d2ec5844c8f6265ca0dc3247590
+'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.12.tar.xz' apt_3.1.12.tar.xz 2464756 SHA256:8c6012b7b95fedf0acc99830aba5173f80f6651f12e4dcc0fc8b2f16779b2d17
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/apt/3.1.12/ (for browsing the source)
+- https://sources.debian.net/src/apt/3.1.12/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/3.1.12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -315,14 +321,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.18.4-2
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.18.4-2.dsc' cairo_1.18.4-2.dsc 2862 SHA256:4d2b0b55a88870081d8f849b1897b785dedd972cb482e0bfa98469667665396c
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.18.4.orig.tar.xz' cairo_1.18.4.orig.tar.xz 32578804 SHA256:445ed8208a6e4823de1226a74ca319d3600e83f6369f99b14265006599c32ccb
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.18.4-2.debian.tar.xz' cairo_1.18.4-2.debian.tar.xz 30032 SHA256:d341b9ead4a97ad6457edc7768f1293a3f9d60e8af59e0c46b42542134579c13
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cairo/1.18.4-2/
+
 
 ### `dpkg` source package: `cdebconf=0.282`
 
@@ -716,20 +721,13 @@ Licenses: (parsed from: `/usr/share/doc/ed/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ed=1.22.2-1
-'http://deb.debian.org/debian/pool/main/e/ed/ed_1.22.2-1.dsc' ed_1.22.2-1.dsc 1832 SHA256:b0957b5def38893fef0b725cb572353faf249d5ef60aedf12af6314ccc98215e
-'http://deb.debian.org/debian/pool/main/e/ed/ed_1.22.2.orig.tar.gz' ed_1.22.2.orig.tar.gz 95828 SHA256:035b14dbbaf92a5654f057bbe9164058137a24650baf2ce2e1061bd3f730da3a
-'http://deb.debian.org/debian/pool/main/e/ed/ed_1.22.2-1.debian.tar.xz' ed_1.22.2-1.debian.tar.xz 8708 SHA256:6c3e89bf2799a2c8d428bb3cd7c36d24c5ac65ad3152a3d7508f1afa6fb2b9e0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ed/1.22.2-1/
 
-- https://sources.debian.net/src/ed/1.22.2-1/ (for browsing the source)
-- https://sources.debian.net/src/ed/1.22.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ed/1.22.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.7.3-1`
 
@@ -1264,10 +1262,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris harfbuzz=12.2.0-1
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_12.2.0-1.dsc' harfbuzz_12.2.0-1.dsc 2583 SHA256:7077988ea559dd34369fc723d437badb61f76909205d40e5cfd4d4455f973acf
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_12.2.0.orig.tar.xz' harfbuzz_12.2.0.orig.tar.xz 18221900 SHA256:ecb603aa426a8b24665718667bda64a84c1504db7454ee4cadbd362eea64e545
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_12.2.0-1.debian.tar.xz' harfbuzz_12.2.0-1.debian.tar.xz 19696 SHA256:ad1143a25a9c6332b9e271359d94e4c1f52f412bed072c7c7e9eb374e6f906bd
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.2.0-1.dsc' harfbuzz_12.2.0-1.dsc 2583 SHA256:7077988ea559dd34369fc723d437badb61f76909205d40e5cfd4d4455f973acf
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.2.0.orig.tar.xz' harfbuzz_12.2.0.orig.tar.xz 18221900 SHA256:ecb603aa426a8b24665718667bda64a84c1504db7454ee4cadbd362eea64e545
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.2.0-1.debian.tar.xz' harfbuzz_12.2.0-1.debian.tar.xz 19696 SHA256:ad1143a25a9c6332b9e271359d94e4c1f52f412bed072c7c7e9eb374e6f906bd
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/harfbuzz/12.2.0-1/ (for browsing the source)
+- https://sources.debian.net/src/harfbuzz/12.2.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/harfbuzz/12.2.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.25`
 
@@ -2903,20 +2907,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.56.3-2
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.3-2.dsc' pango1.0_1.56.3-2.dsc 3692 SHA256:3486d4f8f1bb741c1db1b088b7c52d60043a58513464788ffaee6d0dac95cd11
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.3.orig.tar.xz' pango1.0_1.56.3.orig.tar.xz 1883584 SHA256:2606252bc25cd8d24e1b7f7e92c3a272b37acd6734347b73b47a482834ba2491
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.3-2.debian.tar.xz' pango1.0_1.56.3-2.debian.tar.xz 44136 SHA256:7fa9e85cba5484441a104387307a57c3f31a485a834850cc9604879093707781
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.56.3-2/
 
-- https://sources.debian.net/src/pango1.0/1.56.3-2/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.56.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.56.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.8-2`
 
@@ -3414,11 +3411,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris shadow=1:4.18.0-2
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.18.0-2.dsc' shadow_4.18.0-2.dsc 2844 SHA256:d556601b8e38c3d6635c3f977fbf4d461df4c7251e3f51bc878e74887b038eb0
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.18.0.orig.tar.xz' shadow_4.18.0.orig.tar.xz 2347912 SHA256:add4604d3bc410344433122a819ee4154b79dd8316a56298c60417e637c07608
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.18.0.orig.tar.xz.asc' shadow_4.18.0.orig.tar.xz.asc 488 SHA256:f16001bf1aedc1aff5d406ecfa4163a4aa4598550f5b9df6b2f3d535d53f535f
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.18.0-2.debian.tar.xz' shadow_4.18.0-2.debian.tar.xz 170120 SHA256:e0f538046d2b8d5252896fea4cf762763ad30e49ac5fd4f3c3e59967b7d8ca0d
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.18.0-2.dsc' shadow_4.18.0-2.dsc 2844 SHA256:d556601b8e38c3d6635c3f977fbf4d461df4c7251e3f51bc878e74887b038eb0
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.18.0.orig.tar.xz' shadow_4.18.0.orig.tar.xz 2347912 SHA256:add4604d3bc410344433122a819ee4154b79dd8316a56298c60417e637c07608
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.18.0.orig.tar.xz.asc' shadow_4.18.0.orig.tar.xz.asc 488 SHA256:f16001bf1aedc1aff5d406ecfa4163a4aa4598550f5b9df6b2f3d535d53f535f
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.18.0-2.debian.tar.xz' shadow_4.18.0-2.debian.tar.xz 170120 SHA256:e0f538046d2b8d5252896fea4cf762763ad30e49ac5fd4f3c3e59967b7d8ca0d
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/shadow/1:4.18.0-2/ (for browsing the source)
+- https://sources.debian.net/src/shadow/1:4.18.0-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/shadow/1:4.18.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.8-3-1`
 
