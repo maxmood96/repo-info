@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f001b533cb95e8d43f7a9e209269e81c152696b0a5773dc8e057de38349201c6`
-- Created: `2025-11-25T17:16:01.880604736Z`
+- Image ID: `sha256:fd98b0a3af5db208ddfb259bb5b6c299c0ae24d61a82784c4d69413a0be73800`
+- Created: `2026-01-05T18:21:58.425820868Z`
 - Virtual Size: ~ 93.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -778,15 +778,15 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-12.el9_6.x86_64`
+### `rpm` package: `libxml2-2.9.13-14.el9_7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.13-12.el9_6
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libxml2-2.9.13-12.el9_6.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_7
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libxml2-2.9.13-14.el9_7.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
@@ -1086,26 +1086,26 @@ $ dnf --quiet download --source --url sqlite-libs-3.34.1-9.el9_7
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/sqlite-3.34.1-9.el9_7.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-252-55.el9_7.2.alma.2.x86_64`
+### `rpm` package: `systemd-libs-252-55.el9_7.7.alma.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-252-55.el9_7.2.alma.2
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/systemd-252-55.el9_7.2.alma.2.src.rpm
+$ dnf --quiet download --source --url systemd-libs-252-55.el9_7.7.alma.1
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/systemd-252-55.el9_7.7.alma.1.src.rpm
 ```
 
-### `rpm` package: `tzdata-2025b-2.el9.noarch`
+### `rpm` package: `tzdata-2025c-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2025b-2.el9.noarch
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/tzdata-2025b-2.el9.src.rpm
+$ dnf --quiet download --source --url tzdata-2025c-1.el9.noarch
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/tzdata-2025c-1.el9.src.rpm
 ```
 
 ### `rpm` package: `xz-libs-5.2.5-8.el9_0.x86_64`
