@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c6a15a62326376f7f8a493b6fcb9816cb9d1b4792e109c2e7604943b608fdba4`
-- Created: `2025-12-29T22:15:19.385613783Z`
+- Image ID: `sha256:b8cbf736c554bd7d02429a2598782b5a4ea31ffab85854943c35f64c3f321be5`
+- Created: `2026-01-06T19:01:48.606169138Z`
 - Virtual Size: ~ 373.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-12-22T00:57:37Z`
+  - `build-date=2026-01-06T04:46:51Z`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9/ubi`
-  - `org.opencontainers.image.created=2025-12-22T00:57:37Z`
-  - `org.opencontainers.image.revision=994e91d4001796a257ed44e33c0a03f54770a08d`
-  - `release=1766364927`
+  - `org.opencontainers.image.created=2026-01-06T04:46:51Z`
+  - `org.opencontainers.image.revision=3e794df56e99dd97dc87933feb0fbd960b8c9ca7`
+  - `release=1767674301`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=994e91d4001796a257ed44e33c0a03f54770a08d`
+  - `vcs-ref=3e794df56e99dd97dc87933feb0fbd960b8c9ca7`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -1964,15 +1964,15 @@ $ dnf --quiet download --source --url systemd-rpm-macros-252-55.el9_7.7.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
 ```
 
-### `rpm` package: `tar-1.34-7.el9.x86_64`
+### `rpm` package: `tar-1.34-9.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tar-1.34-7.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-7.el9.src.rpm
+$ dnf --quiet download --source --url tar-1.34-9.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-9.el9_7.src.rpm
 ```
 
 ### `rpm` package: `tpm2-tss-3.2.3-1.el9.x86_64`
