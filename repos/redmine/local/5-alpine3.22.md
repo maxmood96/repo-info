@@ -1,10 +1,10 @@
-# `redmine:5.1.10-alpine3.22`
+# `redmine:5.1.11-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bf02704a952f6b3e83915a8f36f19b7fba36589c3585ff0d18db17d02554082d`
-- Created: `2025-12-09T20:09:20.879382879Z`
-- Virtual Size: ~ 417.59 Mb  
+- Image ID: `sha256:1147df8c0d3c18e7dca126fef819e9b735fce9213e2744c24ed95beff1d7873f`
+- Created: `2026-01-06T18:30:45.482833341Z`
+- Virtual Size: ~ 417.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.19`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=5.1.10`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.10.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=0f187dcca0804f42faf7bbee1ad0a759291b026f707d86347bc14f34defa6f41`
+  - `REDMINE_VERSION=5.1.11`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.11.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=5320bf7a35d3e9feb90c52d8bd018aa263dc77eb17c96001d8b3223c59549049`
   - `RAILS_LOG_TO_STDOUT=true`
   - `BUNDLE_FORCE_RUBY_PLATFORM=1`
 
@@ -270,16 +270,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.5-r0 description:
+c-ares-1.34.6-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.5-r0 webpage:
+c-ares-1.34.6-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.5-r0 installed size:
+c-ares-1.34.6-r0 installed size:
 233 KiB
 
-c-ares-1.34.5-r0 license:
+c-ares-1.34.6-r0 license:
 MIT
 
 ```
@@ -2089,16 +2089,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025b-r0 description:
+tzdata-2025c-r0 description:
 Timezone data
 
-tzdata-2025b-r0 webpage:
+tzdata-2025c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025b-r0 installed size:
-435 KiB
+tzdata-2025c-r0 installed size:
+436 KiB
 
-tzdata-2025b-r0 license:
+tzdata-2025c-r0 license:
 Public-Domain
 
 ```

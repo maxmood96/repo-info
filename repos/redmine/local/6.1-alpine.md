@@ -1,10 +1,10 @@
-# `redmine:6.1.0-alpine3.23`
+# `redmine:6.1.1-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7201c42b8a2b5cbbfbcea1d2d6e2dccdfd5b6cae3fbbe0b943f9f8a4a7e2fce6`
-- Created: `2025-12-18T01:25:34.164873283Z`
-- Virtual Size: ~ 439.92 Mb  
+- Image ID: `sha256:f562a85c5630e99e4f97d44f69abbcb92cd11fd3f99611de8d5c251ce74d0a2a`
+- Created: `2026-01-06T18:29:24.250427359Z`
+- Virtual Size: ~ 429.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.19`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=6.1.0`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.0.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=bc483da195f2444491d870e40f7fc909ae750f7ba8d0e28831e6d6c478812b88`
+  - `REDMINE_VERSION=6.1.1`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.1.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=1f2e6dd0697062fc733701f88b5041dc0dfc6b536255eb7902f21fb0970e603e`
   - `RAILS_LOG_TO_STDOUT=true`
 
 ## `apk` (`.apk`-based packages)
