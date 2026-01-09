@@ -1412,14 +1412,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.41.2-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41.2-4ubuntu1.dsc' util-linux_2.41.2-4ubuntu1.dsc 5035 SHA512:fcaa69cac04347bb10b0286585f26847812df5e7fe2127edebbc122340ebaf714e7e343e22752460d65e04c6dc06c3469e93dfad77c8f89719f06b5a9811a23e
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41.2.orig.tar.xz' util-linux_2.41.2.orig.tar.xz 9612488 SHA512:696c87e7cf185acc9b4b969ddade6155ea2945ae494eaecfd7b1f35d9607166cb09be79878fb793dd31b4d4dcac8c9be4be76af3886185db7ae8b58c303fb0cf
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41.2-4ubuntu1.debian.tar.xz' util-linux_2.41.2-4ubuntu1.debian.tar.xz 112548 SHA512:fd0d3e9cd669815e6133849e566a364894210ec1a5c86bf76c89286424e7b3520e3fddc9d68872900ba9b898090e383b88a9beed8008947ebb9c2ee15264f984
-```
 
 ### `dpkg` source package: `xxhash=0.8.3-2build1`
 
