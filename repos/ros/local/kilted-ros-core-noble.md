@@ -1013,15 +1013,9 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.4-2ubuntu17.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.3.dsc' gnupg2_2.4.4-2ubuntu17.3.dsc 3602 SHA512:41cc969eb1ee7acdf08f578843fc17d8954c727194ff05e6373588950a809ba9827a488a1745806f7ea19ea8d55542306d2166a53fadf6fcf5d4d8404c814eb1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2' gnupg2_2.4.4.orig.tar.bz2 7886036 SHA512:3d1a3b08d1ce2319d238d8be96591e418ede1dc0b4ede33a4cc2fe40e9c56d5bbc27b1984736d8a786e7f292ddbc836846a8bdb4bf89f064e953c37cb54b94ef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc' gnupg2_2.4.4.orig.tar.bz2.asc 386 SHA512:abb44c8bfa59e589bdcd660f1d1a2e268bade8729d95b34263e3d3b5388d1d2276420313989777938f17f97739c554808f97a63257ca0f53d2122a346d70ec85
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.3.debian.tar.xz' gnupg2_2.4.4-2ubuntu17.3.debian.tar.xz 96100 SHA512:b4a92c8aad8808950eb94a5597eb0db4e4e6e76cc69ad405fad1240abafd7467c346618430ba1147151a3cbde66c5f9803f20ba2668a86dc4da97812433ddd7f
-```
 
 ### `dpkg` source package: `gnutls28=3.8.3-1.1ubuntu3.4`
 
@@ -1836,14 +1830,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.39-0exp1ubuntu0.24.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu0.24.04.2.dsc' libxslt_1.1.39-0exp1ubuntu0.24.04.2.dsc 2307 SHA512:bf099df8a7c64ea8b60c0d09342aba717b68167fab27327b4b2cac15d16fc8cefca8920d96825e38b5391f8ee65c40f0230049ef58adceb17683275eff51b3c1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39.orig.tar.xz' libxslt_1.1.39.orig.tar.xz 1578216 SHA512:c0c99dc63f8b2acb6cc3ad7ad684ffa2a427ee8d1740495cbf8a7c9b9c8679f96351b4b676c73ccc191014db4cb4ab42b9a0070f6295565f39dbc665c5c16f89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu0.24.04.2.debian.tar.xz' libxslt_1.1.39-0exp1ubuntu0.24.04.2.debian.tar.xz 23028 SHA512:7aeb7c8ff58ce30c820e378aa677ea2fe92c5b235e75b420c3b96615115102760ea0c37676f629d39b64bd79367c5749505c1b661260ed1a7ff4be04a11ce8d5
-```
 
 ### `dpkg` source package: `libyaml=0.2.5-1build1`
 
