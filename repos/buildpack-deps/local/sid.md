@@ -614,21 +614,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.18.0~rc3-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0%7erc3-1.dsc' curl_8.18.0~rc3-1.dsc 3318 SHA256:f9f37a50c901aa8adcce1987e1a330336bf3e0cb80e88dd49d8dd568a8977c2c
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0%7erc3.orig.tar.xz' curl_8.18.0~rc3.orig.tar.xz 2797608 SHA256:4547641fd3cbe542b79d48d26e473a2f3c2530d402220e29122f9f7cd3b5a3b8
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0%7erc3.orig.tar.xz.asc' curl_8.18.0~rc3.orig.tar.xz.asc 488 SHA256:4f230b474794039996944c1e60fb034278df903e5890d2bed5fcf7effb0d38f4
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0%7erc3-1.debian.tar.xz' curl_8.18.0~rc3-1.debian.tar.xz 52664 SHA256:1254b1fb750482656b6ed0a3a924faa3c02c49daf0ef362c8d79f0fa87d0bbac
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.18.0~rc3-1/
 
-- https://sources.debian.net/src/curl/8.18.0~rc3-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.18.0~rc3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.18.0~rc3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-10`
 
@@ -2850,20 +2842,13 @@ Licenses: (parsed from: `/usr/share/doc/liblqr-1-0/copyright`, `/usr/share/doc/l
 - `GPLv3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris liblqr=0.4.2-2.1
-'http://deb.debian.org/debian/pool/main/libl/liblqr/liblqr_0.4.2-2.1.dsc' liblqr_0.4.2-2.1.dsc 2095 SHA256:c54c34cd2f7470a29366eeacde2ca4859a97d684a406fb81a918b970c01d617c
-'http://deb.debian.org/debian/pool/main/libl/liblqr/liblqr_0.4.2.orig.tar.gz' liblqr_0.4.2.orig.tar.gz 439884 SHA256:d4c22373432cca749e4326cd41fce365e6ff857c0bfd7a5302b8eb34b69f0336
-'http://deb.debian.org/debian/pool/main/libl/liblqr/liblqr_0.4.2-2.1.debian.tar.xz' liblqr_0.4.2-2.1.debian.tar.xz 5300 SHA256:284a002f1ecac63ac17b1aafbb230da9ce7bd9efe2d5b94e8cad49b607eb2564
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/liblqr/0.4.2-2.1/
 
-- https://sources.debian.net/src/liblqr/0.4.2-2.1/ (for browsing the source)
-- https://sources.debian.net/src/liblqr/0.4.2-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/liblqr/0.4.2-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmaxminddb=1.12.2-1`
 
@@ -4345,20 +4330,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `MIT`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.5.3-2.1
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.5.3-2.1.dsc' openjpeg2_2.5.3-2.1.dsc 2571 SHA256:66e3aa987aab26f375d089a717d142e1477eb511ae9b28988c62d627d6b492f4
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.5.3.orig.tar.xz' openjpeg2_2.5.3.orig.tar.xz 1393716 SHA256:3100f0316e922630112cf6d72c0c20776896e64ad7eab72c2f713c460287eb92
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.5.3-2.1.debian.tar.xz' openjpeg2_2.5.3-2.1.debian.tar.xz 15688 SHA256:c0dd797a04819119243651ab5219073688b395e95d12a7aca1c2f882e27ecf3e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjpeg2/2.5.3-2.1/
 
-- https://sources.debian.net/src/openjpeg2/2.5.3-2.1/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.5.3-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.5.3-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.6.10+dfsg-1`
 

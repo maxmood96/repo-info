@@ -383,21 +383,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.18.0~rc3-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0%7erc3-1.dsc' curl_8.18.0~rc3-1.dsc 3318 SHA256:f9f37a50c901aa8adcce1987e1a330336bf3e0cb80e88dd49d8dd568a8977c2c
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0%7erc3.orig.tar.xz' curl_8.18.0~rc3.orig.tar.xz 2797608 SHA256:4547641fd3cbe542b79d48d26e473a2f3c2530d402220e29122f9f7cd3b5a3b8
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0%7erc3.orig.tar.xz.asc' curl_8.18.0~rc3.orig.tar.xz.asc 488 SHA256:4f230b474794039996944c1e60fb034278df903e5890d2bed5fcf7effb0d38f4
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0%7erc3-1.debian.tar.xz' curl_8.18.0~rc3-1.debian.tar.xz 52664 SHA256:1254b1fb750482656b6ed0a3a924faa3c02c49daf0ef362c8d79f0fa87d0bbac
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.18.0~rc3-1/
 
-- https://sources.debian.net/src/curl/8.18.0~rc3-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.18.0~rc3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.18.0~rc3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-10`
 

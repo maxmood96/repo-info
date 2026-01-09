@@ -753,15 +753,9 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.4-2ubuntu23.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu23.1.dsc' gnupg2_2.4.4-2ubuntu23.1.dsc 3288 SHA512:c61fa037d797ff6b4753c32a0469f7604df12d0772122416172141eadf2fc80ad977504ad58bddc1a3d99346ed4ddb7cbd3fe9f80b53eea6e9184cde15ba6bb7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2' gnupg2_2.4.4.orig.tar.bz2 7886036 SHA512:3d1a3b08d1ce2319d238d8be96591e418ede1dc0b4ede33a4cc2fe40e9c56d5bbc27b1984736d8a786e7f292ddbc836846a8bdb4bf89f064e953c37cb54b94ef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc' gnupg2_2.4.4.orig.tar.bz2.asc 386 SHA512:abb44c8bfa59e589bdcd660f1d1a2e268bade8729d95b34263e3d3b5388d1d2276420313989777938f17f97739c554808f97a63257ca0f53d2122a346d70ec85
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu23.1.debian.tar.xz' gnupg2_2.4.4-2ubuntu23.1.debian.tar.xz 97748 SHA512:9df8dae14cf7a03deb5630956a67a3e88b9c19983cbfa61237f3ec4fbda066c7abf00d289583d760df64160b418b5af51720beb76a8b5d173ba84d02418c9efa
-```
 
 ### `dpkg` source package: `gnutls28=3.8.9-2ubuntu3.1`
 

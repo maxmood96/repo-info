@@ -128,19 +128,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.12
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.12.dsc' apt_3.1.12.dsc 3095 SHA256:e59407754d91eb5cb07dd47d8c8390b9b28a7d2ec5844c8f6265ca0dc3247590
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.12.tar.xz' apt_3.1.12.tar.xz 2464756 SHA256:8c6012b7b95fedf0acc99830aba5173f80f6651f12e4dcc0fc8b2f16779b2d17
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.1.12/
 
-- https://sources.debian.net/src/apt/3.1.12/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.1.12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.1.12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `architecture-properties=0.2.6`
 
@@ -725,21 +719,13 @@ Licenses: (parsed from: `/usr/share/doc/libdav1d7/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dav1d=1.5.2-1
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.2-1.dsc' dav1d_1.5.2-1.dsc 2290 SHA256:73fd7edf6518641fed75b3042d85ebf0a6f90e96aa6b3a012030aa85d1a993b3
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.2.orig.tar.xz' dav1d_1.5.2.orig.tar.xz 1020812 SHA256:cce88ebcffd3f790bde49caa75f97b9cc2dd54ca8f57e38c62707266ec71bc4e
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.2.orig.tar.xz.asc' dav1d_1.5.2.orig.tar.xz.asc 195 SHA256:dc51bfc4b4ad8cfae19d8dffb6aa8d06d5a2118ecfbd8676f7bd7be9365b2d92
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.2-1.debian.tar.xz' dav1d_1.5.2-1.debian.tar.xz 8568 SHA256:1228f8ea45f3f0b66b2cac280bbf2cb6a173d2d261e3f08a0871928bcd6daac2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dav1d/1.5.2-1/
 
-- https://sources.debian.net/src/dav1d/1.5.2-1/ (for browsing the source)
-- https://sources.debian.net/src/dav1d/1.5.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dav1d/1.5.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db-defaults=5.3.4`
 
@@ -5311,20 +5297,13 @@ Licenses: (parsed from: `/usr/share/doc/libsysprof-capture-4-dev/copyright`)
 - `LGPL-3.0+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysprof=49.0-4
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_49.0-4.dsc' sysprof_49.0-4.dsc 3766 SHA256:001acf75e7e6e86c31118da2be878c989f55179f5b4b48fe1ede7e5e16a30eae
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_49.0.orig.tar.xz' sysprof_49.0.orig.tar.xz 1239324 SHA256:ff04139637785c841948862087a4323b981680d942296409321b574fcb282878
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_49.0-4.debian.tar.xz' sysprof_49.0-4.debian.tar.xz 16880 SHA256:230e5f71268a2d760b762dc8755fcabcf308ab442f09c82fa7a41f2d7b092f36
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysprof/49.0-4/
 
-- https://sources.debian.net/src/sysprof/49.0-4/ (for browsing the source)
-- https://sources.debian.net/src/sysprof/49.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysprof/49.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=259-1`
 
