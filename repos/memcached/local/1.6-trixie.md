@@ -144,19 +144,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8+deb13u2
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u2.dsc' base-files_13.8+deb13u2.dsc 1247 SHA256:ea3dc1f1288ab9c2d064855e739e9f5786863ee044f5db8ac09d8a76ffcba3b6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u2.tar.xz' base-files_13.8+deb13u2.tar.xz 68692 SHA256:d92bd5a92e12ef0195f449ea63bf53d4a4f3c12c6730f77fdafb917a305902a0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8+deb13u2/
 
-- https://sources.debian.net/src/base-files/13.8+deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8+deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
