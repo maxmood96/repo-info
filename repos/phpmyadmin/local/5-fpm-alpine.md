@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ecbd3eeda39e48c1633b5fd3844fb4ba075fa3298fbf4d427f0615c150167c63`
-- Created: `2025-12-18T22:04:41.98892245Z`
+- Image ID: `sha256:2763faf518b43d258a76943bb2dd0d27005f7a43eddaf0c6c3dbe96576a8865c`
+- Created: `2026-01-09T23:17:30.954189121Z`
 - Virtual Size: ~ 165.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -371,16 +371,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gnupg`
 
 ```console
-gnupg-2.4.8-r1 description:
+gnupg-2.4.9-r0 description:
 GNU Privacy Guard 2 - meta package for full GnuPG suite
 
-gnupg-2.4.8-r1 webpage:
+gnupg-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-2.4.8-r1 installed size:
+gnupg-2.4.9-r0 installed size:
 0 B
 
-gnupg-2.4.8-r1 license:
+gnupg-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -388,16 +388,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-dirmngr`
 
 ```console
-gnupg-dirmngr-2.4.8-r1 description:
+gnupg-dirmngr-2.4.9-r0 description:
 GNU Privacy Guard 2 - network certificate management service
 
-gnupg-dirmngr-2.4.8-r1 webpage:
+gnupg-dirmngr-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-dirmngr-2.4.8-r1 installed size:
+gnupg-dirmngr-2.4.9-r0 installed size:
 625 KiB
 
-gnupg-dirmngr-2.4.8-r1 license:
+gnupg-dirmngr-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -405,16 +405,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-gpgconf`
 
 ```console
-gnupg-gpgconf-2.4.8-r1 description:
+gnupg-gpgconf-2.4.9-r0 description:
 GNU Privacy Guard 2 - core configuration utilities
 
-gnupg-gpgconf-2.4.8-r1 webpage:
+gnupg-gpgconf-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-gpgconf-2.4.8-r1 installed size:
+gnupg-gpgconf-2.4.9-r0 installed size:
 233 KiB
 
-gnupg-gpgconf-2.4.8-r1 license:
+gnupg-gpgconf-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -422,16 +422,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-keyboxd`
 
 ```console
-gnupg-keyboxd-2.4.8-r1 description:
+gnupg-keyboxd-2.4.9-r0 description:
 GNU Privacy Guard 2 - keyboxd manager
 
-gnupg-keyboxd-2.4.8-r1 webpage:
+gnupg-keyboxd-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-keyboxd-2.4.8-r1 installed size:
+gnupg-keyboxd-2.4.9-r0 installed size:
 223 KiB
 
-gnupg-keyboxd-2.4.8-r1 license:
+gnupg-keyboxd-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -439,16 +439,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-utils`
 
 ```console
-gnupg-utils-2.4.8-r1 description:
+gnupg-utils-2.4.9-r0 description:
 GNU Privacy Guard 2 - utility programs
 
-gnupg-utils-2.4.8-r1 webpage:
+gnupg-utils-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-utils-2.4.8-r1 installed size:
+gnupg-utils-2.4.9-r0 installed size:
 824 KiB
 
-gnupg-utils-2.4.8-r1 license:
+gnupg-utils-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -456,16 +456,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-wks-client`
 
 ```console
-gnupg-wks-client-2.4.8-r1 description:
+gnupg-wks-client-2.4.9-r0 description:
 GNU Privacy Guard 2 - Web Key Service client
 
-gnupg-wks-client-2.4.8-r1 webpage:
+gnupg-wks-client-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-wks-client-2.4.8-r1 installed size:
+gnupg-wks-client-2.4.9-r0 installed size:
 167 KiB
 
-gnupg-wks-client-2.4.8-r1 license:
+gnupg-wks-client-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -490,16 +490,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gpg`
 
 ```console
-gpg-2.4.8-r1 description:
+gpg-2.4.9-r0 description:
 GNU Privacy Guard 2 - public key operations only
 
-gpg-2.4.8-r1 webpage:
+gpg-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gpg-2.4.8-r1 installed size:
+gpg-2.4.9-r0 installed size:
 925 KiB
 
-gpg-2.4.8-r1 license:
+gpg-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -507,16 +507,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpg-agent`
 
 ```console
-gpg-agent-2.4.8-r1 description:
+gpg-agent-2.4.9-r0 description:
 GNU Privacy Guard 2 - cryptographic agent
 
-gpg-agent-2.4.8-r1 webpage:
+gpg-agent-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gpg-agent-2.4.8-r1 installed size:
+gpg-agent-2.4.9-r0 installed size:
 634 KiB
 
-gpg-agent-2.4.8-r1 license:
+gpg-agent-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -524,16 +524,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpg-wks-server`
 
 ```console
-gpg-wks-server-2.4.8-r1 description:
+gpg-wks-server-2.4.9-r0 description:
 GNU Privacy Guard 2 - Web Key Service server
 
-gpg-wks-server-2.4.8-r1 webpage:
+gpg-wks-server-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gpg-wks-server-2.4.8-r1 installed size:
+gpg-wks-server-2.4.9-r0 installed size:
 150 KiB
 
-gpg-wks-server-2.4.8-r1 license:
+gpg-wks-server-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -541,16 +541,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpgsm`
 
 ```console
-gpgsm-2.4.8-r1 description:
+gpgsm-2.4.9-r0 description:
 GNU Privacy Guard 2 - S/MIME version
 
-gpgsm-2.4.8-r1 webpage:
+gpgsm-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gpgsm-2.4.8-r1 installed size:
+gpgsm-2.4.9-r0 installed size:
 477 KiB
 
-gpgsm-2.4.8-r1 license:
+gpgsm-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -558,16 +558,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpgv`
 
 ```console
-gpgv-2.4.8-r1 description:
+gpgv-2.4.9-r0 description:
 GNU Privacy Guard 2 - signature verification only
 
-gpgv-2.4.8-r1 webpage:
+gpgv-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gpgv-2.4.8-r1 installed size:
+gpgv-2.4.9-r0 installed size:
 428 KiB
 
-gpgv-2.4.8-r1 license:
+gpgv-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -949,16 +949,16 @@ MIT
 ### `apk` package: `libsodium`
 
 ```console
-libsodium-1.0.20-r0 description:
+libsodium-1.0.20-r1 description:
 P(ortable|ackageable) NaCl-based crypto library
 
-libsodium-1.0.20-r0 webpage:
+libsodium-1.0.20-r1 webpage:
 https://github.com/jedisct1/libsodium
 
-libsodium-1.0.20-r0 installed size:
+libsodium-1.0.20-r1 installed size:
 339 KiB
 
-libsodium-1.0.20-r0 license:
+libsodium-1.0.20-r1 license:
 ISC
 
 ```
