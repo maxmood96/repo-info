@@ -1,7 +1,7 @@
 ## `haproxy:lts`
 
 ```console
-$ docker pull haproxy@sha256:4e49b02bd37ecc6d6ba8d9215d747f1e3c97436b4c8e48d9dbda5caf99b11de0
+$ docker pull haproxy@sha256:f7c4770cb573796473ffbf2f18843376ecc9ca8e109bea48cadbd1b94e5e0c5d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -578,13 +578,13 @@ $ docker pull haproxy@sha256:a601f79846f9f7a3cfa768e023bfc5e25ace257c88086616c38
 ### `haproxy:lts` - linux; riscv64
 
 ```console
-$ docker pull haproxy@sha256:a20b2933f29a31275da61238c182aa18e25d5d73f0aa25d65b553315fac0a5cd
+$ docker pull haproxy@sha256:5059235cb93d45ccc80e3a027ea0b16fffc6f6a33b704cb968a96b5e038a203c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.5 MB (40488231 bytes)**  
+-	Total Size: **42.5 MB (42523120 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70d095ccf4a42d33af2fb5c328067d7f7f8934695054770e0feeb3445a9db461`
+-	Image ID: `sha256:153f618795b5ea353b8a7c0efc65b675498f2e2393e20e319428c4169ff1ae6e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
 
@@ -595,25 +595,25 @@ RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1766966400'
 RUN set -eux; 	apt-get install --update -y --no-install-recommends 		ca-certificates 		socat 	; 	apt-get dist-clean # buildkit
 # Tue, 30 Dec 2025 01:30:08 GMT
 RUN set -eux; 	groupadd --gid 99 --system haproxy; 	useradd 		--gid haproxy 		--home-dir /var/lib/haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
-# Tue, 30 Dec 2025 02:12:30 GMT
+# Fri, 09 Jan 2026 19:25:00 GMT
 ENV HAPROXY_VERSION=3.2.10
-# Tue, 30 Dec 2025 02:12:30 GMT
+# Fri, 09 Jan 2026 19:25:00 GMT
 ENV HAPROXY_URL=https://www.haproxy.org/download/3.2/src/haproxy-3.2.10.tar.gz
-# Tue, 30 Dec 2025 02:12:30 GMT
+# Fri, 09 Jan 2026 19:25:00 GMT
 ENV HAPROXY_SHA256=df9412eee0faf78147cd3f1bbec9582ea678c33535b1afec081036c5bbb8015b
-# Tue, 30 Dec 2025 02:12:30 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --update -y --no-install-recommends 		gcc 		libc6-dev 		liblua5.4-dev 		libpcre2-dev 		libssl-dev 		make 		wget 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-glibc 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 	'; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) makeOpts="$makeOpts ADDLIB=-latomic" ;; 	esac; 		nproc="$(nproc)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		haproxy -v # buildkit
-# Tue, 30 Dec 2025 02:12:30 GMT
+# Fri, 09 Jan 2026 19:25:00 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --update -y --no-install-recommends 		gcc 		libc6-dev 		liblua5.4-dev 		libpcre2-dev 		libssl-dev 		make 		wget 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-glibc 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 		USE_PTHREAD_EMULATION=1 		USE_QUIC=1 	'; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) makeOpts="$makeOpts ADDLIB=-latomic" ;; 	esac; 		nproc="$(nproc)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		haproxy -v # buildkit
+# Fri, 09 Jan 2026 19:25:00 GMT
 STOPSIGNAL SIGUSR1
-# Tue, 30 Dec 2025 02:12:30 GMT
+# Fri, 09 Jan 2026 19:25:00 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 30 Dec 2025 02:12:30 GMT
+# Fri, 09 Jan 2026 19:25:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Dec 2025 02:12:30 GMT
+# Fri, 09 Jan 2026 19:25:00 GMT
 USER haproxy
-# Tue, 30 Dec 2025 02:12:30 GMT
+# Fri, 09 Jan 2026 19:25:01 GMT
 WORKDIR /var/lib/haproxy
-# Tue, 30 Dec 2025 02:12:30 GMT
+# Fri, 09 Jan 2026 19:25:01 GMT
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
@@ -630,13 +630,13 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Last Modified: Tue, 30 Dec 2025 01:44:31 GMT  
 		Size: 1.2 KB (1158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97a0105aabc6fd744e06cf5985ac4e3bc5c914745a4d41624b6e64c5ddda1d4c`  
-		Last Modified: Tue, 30 Dec 2025 02:13:41 GMT  
-		Size: 10.7 MB (10678383 bytes)  
+	-	`sha256:f52ee522055ab68ac625b67b9896b40a60c207ed959474ceca03c103f7b49f30`  
+		Last Modified: Fri, 09 Jan 2026 19:26:20 GMT  
+		Size: 12.7 MB (12713271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c8bf93b9f25797971c60057a6ee31330ba56ecc1d026acedf42eab4c64dd221`  
-		Last Modified: Tue, 30 Dec 2025 02:13:37 GMT  
-		Size: 450.0 B  
+	-	`sha256:c597527515dc974750396c2e16156a5a139aff4128be648308a2829fed8853ee`  
+		Last Modified: Fri, 09 Jan 2026 19:26:19 GMT  
+		Size: 451.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -646,25 +646,25 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ### `haproxy:lts` - unknown; unknown
 
 ```console
-$ docker pull haproxy@sha256:f8e7cef25b1327985aa495cbc21e7cfed6c5c5e31f0b6077ed878eca00fece6c
+$ docker pull haproxy@sha256:cc476cd2d61023923fa6922de61f99e38c1887ab28de61bc67c444e9b7e396b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2129316 bytes)**  
+-	Total Size: **2.1 MB (2130055 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b31571131b37593fdff4128a2753f4190954d235a4b980c87bdc2c8e1fdbbc41`
+-	Image ID: `sha256:f200f663d1bc49d69e0e2b56aea6867384fb332025fe49cd097c40f5408bd12c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:60386d2251aa5eec23a34cda090106794419caca64caee908f0a3acdfa77ab7f`  
-		Last Modified: Tue, 30 Dec 2025 04:58:13 GMT  
+	-	`sha256:55cfdc1791b6fe4ea9a411be23ff60161fdf67abdf173bc317fe51be05e8d5f0`  
+		Last Modified: Fri, 09 Jan 2026 22:59:29 GMT  
 		Size: 2.1 MB (2107645 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b480043ea735aa757093bf3e72a5c93cee6860f8fef22b3cc14339ffc266c67c`  
-		Last Modified: Tue, 30 Dec 2025 04:58:14 GMT  
-		Size: 21.7 KB (21671 bytes)  
+	-	`sha256:dd369834f4df5854a05bc58cc9316d5a589d838b50d078ac959a976634778d1c`  
+		Last Modified: Fri, 09 Jan 2026 22:59:30 GMT  
+		Size: 22.4 KB (22410 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haproxy:lts` - linux; s390x
