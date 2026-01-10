@@ -146,19 +146,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8+deb13u2
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u2.dsc' base-files_13.8+deb13u2.dsc 1247 SHA256:ea3dc1f1288ab9c2d064855e739e9f5786863ee044f5db8ac09d8a76ffcba3b6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u2.tar.xz' base-files_13.8+deb13u2.tar.xz 68692 SHA256:d92bd5a92e12ef0195f449ea63bf53d4a4f3c12c6730f77fdafb917a305902a0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8+deb13u2/
 
-- https://sources.debian.net/src/base-files/13.8+deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8+deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -875,21 +869,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.9-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9-3.dsc' gnutls28_3.8.9-3.dsc 3236 SHA256:607dbc91727ff5d8a51af66e800abab837479de4e18775fc069a7b5ffc780d3d
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz' gnutls28_3.8.9.orig.tar.xz 6847364 SHA256:69e113d802d1670c4d5ac1b99040b1f2d5c7c05daec5003813c049b5184820ed
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz.asc' gnutls28_3.8.9.orig.tar.xz.asc 833 SHA256:7631d47762865d4ef494492cca794cf0fe6a8be892a4aa02f362ae29006d3054
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9-3.debian.tar.xz' gnutls28_3.8.9-3.debian.tar.xz 85848 SHA256:f578bd4dd0b35d56aedf002a4a7b504a965a9d1a4587d2ad3a92718a45887cbf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.9-3/
 
-- https://sources.debian.net/src/gnutls28/3.8.9-3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.9-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.9-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.11-4`
 
