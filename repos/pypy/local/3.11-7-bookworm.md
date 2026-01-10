@@ -343,19 +343,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12.4+deb12u12
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u12.dsc' base-files_12.4+deb12u12.dsc 1137 SHA256:04d2a1ef56313f3d55813bae3d051511fe2c63de205a7d77b782d8913ce03100
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u12.tar.xz' base-files_12.4+deb12u12.tar.xz 66172 SHA256:8ac3713d9b30b329509a64853c72f10a7132cc204690140a4df546f53d99c67b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/12.4+deb12u12/
 
-- https://sources.debian.net/src/base-files/12.4+deb12u12/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4+deb12u12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4+deb12u12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -1455,9 +1449,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gdk-pixbuf=2.42.10+dfsg-1+deb12u2
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-1%2bdeb12u2.dsc' gdk-pixbuf_2.42.10+dfsg-1+deb12u2.dsc 3173 SHA256:117f2f12e10c1a81b402f316edc37a1f02377e3475601360a2d50583a3432fca
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.10+dfsg.orig.tar.xz 6439240 SHA256:46663e445468e92f4a0ca876b02aed4f8758595ee3acfaa6ef3ba2b29e1c1930
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-1%2bdeb12u2.debian.tar.xz' gdk-pixbuf_2.42.10+dfsg-1+deb12u2.debian.tar.xz 22604 SHA256:0a00c1c52b64abbe5fab1f08cc6c4b1032680c95ca9fdaf148f115011755de4b
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-1%2bdeb12u2.dsc' gdk-pixbuf_2.42.10+dfsg-1+deb12u2.dsc 3173 SHA256:117f2f12e10c1a81b402f316edc37a1f02377e3475601360a2d50583a3432fca
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.10+dfsg.orig.tar.xz 6439240 SHA256:46663e445468e92f4a0ca876b02aed4f8758595ee3acfaa6ef3ba2b29e1c1930
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-1%2bdeb12u2.debian.tar.xz' gdk-pixbuf_2.42.10+dfsg-1+deb12u2.debian.tar.xz 22604 SHA256:0a00c1c52b64abbe5fab1f08cc6c4b1032680c95ca9fdaf148f115011755de4b
 ```
 
 Other potentially useful URLs:
@@ -1499,9 +1493,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris git=1:2.39.5-0+deb12u2
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5-0%2bdeb12u2.dsc' git_2.39.5-0+deb12u2.dsc 2982 SHA256:52c384a95da514d17749447d581bb3876a398c8632f2bde139bdb6627711f58f
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5.orig.tar.xz' git_2.39.5.orig.tar.xz 7171400 SHA256:c58da92c378df4a986ca33266897a7397e86c22ee266a284d8c2432c39066b59
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5-0%2bdeb12u2.debian.tar.xz' git_2.39.5-0+deb12u2.debian.tar.xz 747556 SHA256:5a6b6e48c7f19df294d2a8c030c219688d1823326d209ad15a06be3743d9cd2b
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5-0%2bdeb12u2.dsc' git_2.39.5-0+deb12u2.dsc 2982 SHA256:52c384a95da514d17749447d581bb3876a398c8632f2bde139bdb6627711f58f
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5.orig.tar.xz' git_2.39.5.orig.tar.xz 7171400 SHA256:c58da92c378df4a986ca33266897a7397e86c22ee266a284d8c2432c39066b59
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5-0%2bdeb12u2.debian.tar.xz' git_2.39.5-0+deb12u2.debian.tar.xz 747556 SHA256:5a6b6e48c7f19df294d2a8c030c219688d1823326d209ad15a06be3743d9cd2b
 ```
 
 Other potentially useful URLs:
@@ -1548,21 +1542,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.74.6-2+deb12u7
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6-2%2bdeb12u7.dsc' glib2.0_2.74.6-2+deb12u7.dsc 3791 SHA256:066362edce4b07892c9be16a45c4c622e40d6db150c184d18f11a952db5bac88
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6.orig-unicode-data.tar.xz' glib2.0_2.74.6.orig-unicode-data.tar.xz 267596 SHA256:dabcaff9298aa111a94e580561d2f29371f3e61b356c925ec5e0792df2b11ff2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6.orig.tar.xz' glib2.0_2.74.6.orig.tar.xz 5217312 SHA256:069cf7e51cd261eb163aaf06c8d1754c6835f31252180aff5814e5afc7757fbc
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6-2%2bdeb12u7.debian.tar.xz' glib2.0_2.74.6-2+deb12u7.debian.tar.xz 146116 SHA256:60c9115898dab3f6553ccc5f928a689117486b2b62639e09c8dc52b9d0fd6396
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.74.6-2+deb12u7/
 
-- https://sources.debian.net/src/glib2.0/2.74.6-2+deb12u7/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.74.6-2+deb12u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.74.6-2+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.36-9+deb12u13`
 
@@ -1657,21 +1643,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.40-1.1+deb12u1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.40-1.1%2bdeb12u1.dsc' gnupg2_2.2.40-1.1+deb12u1.dsc 3864 SHA256:4be87ba44f737bae4e691776e4fa2bbc1d8d45f98c02394ccbb42b461c18e836
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.40.orig.tar.bz2' gnupg2_2.2.40.orig.tar.bz2 7301631 SHA256:1164b29a75e8ab93ea15033300149e1872a7ef6bdda3d7c78229a735f8204c28
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.40.orig.tar.bz2.asc' gnupg2_2.2.40.orig.tar.bz2.asc 228 SHA256:3907dc165299cd53c0b4aec862323c3bce6037c411600ec87dc5eed7a55eba4a
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.40-1.1%2bdeb12u1.debian.tar.xz' gnupg2_2.2.40-1.1+deb12u1.debian.tar.xz 62472 SHA256:0c776d8142fdce1db0ccfa09fdada6ed181e405f5fb96db2300a9ec6d7433455
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.40-1.1+deb12u1/
 
-- https://sources.debian.net/src/gnupg2/2.2.40-1.1+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.40-1.1+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.40-1.1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.7.9-2+deb12u5`
 
@@ -3085,9 +3063,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u1.dsc' libpng1.6_1.6.39-2+deb12u1.dsc 2273 SHA256:6b663fc339dbe78547d442c70e82096efee15840ba63681b0073d57a658b7a10
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u1.debian.tar.xz' libpng1.6_1.6.39-2+deb12u1.debian.tar.xz 37092 SHA256:a73d8896e915e623873902ec2f1f51d0aa4c93d8f51c11f56a627cd79336c9ba
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u1.dsc' libpng1.6_1.6.39-2+deb12u1.dsc 2273 SHA256:6b663fc339dbe78547d442c70e82096efee15840ba63681b0073d57a658b7a10
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u1.debian.tar.xz' libpng1.6_1.6.39-2+deb12u1.debian.tar.xz 37092 SHA256:a73d8896e915e623873902ec2f1f51d0aa4c93d8f51c11f56a627cd79336c9ba
 ```
 
 Other potentially useful URLs:
@@ -3764,9 +3742,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3~deb12u4
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u4.dsc' libxml2_2.9.14+dfsg-1.3~deb12u4.dsc 2610 SHA256:de59e0146715a6edb188729823fe13a597b2b9968c69f7e9e32b4c7ef2ad06e1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u4.debian.tar.xz' libxml2_2.9.14+dfsg-1.3~deb12u4.debian.tar.xz 47500 SHA256:8c2f4b1b03579a3010c4135e57c7754544bf8085960537532faaa0feb0f2930b
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u4.dsc' libxml2_2.9.14+dfsg-1.3~deb12u4.dsc 2610 SHA256:de59e0146715a6edb188729823fe13a597b2b9968c69f7e9e32b4c7ef2ad06e1
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u4.debian.tar.xz' libxml2_2.9.14+dfsg-1.3~deb12u4.debian.tar.xz 47500 SHA256:8c2f4b1b03579a3010c4135e57c7754544bf8085960537532faaa0feb0f2930b
 ```
 
 Other potentially useful URLs:
@@ -3816,9 +3794,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxslt=1.1.35-1+deb12u3
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u3.dsc' libxslt_1.1.35-1+deb12u3.dsc 2187 SHA256:f60527764dbce95161371132dcd6acc910661aa56b1f5cb4870b86c372f12391
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35.orig.tar.xz' libxslt_1.1.35.orig.tar.xz 1827548 SHA256:8247f33e9a872c6ac859aa45018bc4c4d00b97e2feac9eebc10c93ce1f34dd79
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u3.debian.tar.xz' libxslt_1.1.35-1+deb12u3.debian.tar.xz 29864 SHA256:837cfd5b4d57557523c748fec1bd98554f65a369a43bded82e42a00ee095abbe
+'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u3.dsc' libxslt_1.1.35-1+deb12u3.dsc 2187 SHA256:f60527764dbce95161371132dcd6acc910661aa56b1f5cb4870b86c372f12391
+'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35.orig.tar.xz' libxslt_1.1.35.orig.tar.xz 1827548 SHA256:8247f33e9a872c6ac859aa45018bc4c4d00b97e2feac9eebc10c93ce1f34dd79
+'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u3.debian.tar.xz' libxslt_1.1.35-1+deb12u3.debian.tar.xz 29864 SHA256:837cfd5b4d57557523c748fec1bd98554f65a369a43bded82e42a00ee095abbe
 ```
 
 Other potentially useful URLs:
@@ -4685,20 +4663,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.2-6+deb12u1
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-6%2bdeb12u1.dsc' pam_1.5.2-6+deb12u1.dsc 2038 SHA256:575e6f7e70cc4ed4602abcb2cda1cea455ae8dc2e7ede7d82b4ec1e6916f4fe2
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2.orig.tar.xz' pam_1.5.2.orig.tar.xz 988784 SHA256:e4ec7131a91da44512574268f493c6d8ca105c87091691b8e9b56ca685d4f94d
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-6%2bdeb12u1.debian.tar.xz' pam_1.5.2-6+deb12u1.debian.tar.xz 122828 SHA256:47765582e95952b437108584c796bf8447d13011685b7289664ddd6f4fbcc900
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.5.2-6+deb12u1/
 
-- https://sources.debian.net/src/pam/1.5.2-6+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.5.2-6+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.5.2-6+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pango1.0=1.50.12+ds-1`
 
@@ -4966,20 +4937,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-15=15.14-0+deb12u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.14-0%2bdeb12u1.dsc' postgresql-15_15.14-0+deb12u1.dsc 3926 SHA256:dfadb4a24df17970d152f845db33e589617938f04142a4f6708088adce0ace1a
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.14.orig.tar.bz2' postgresql-15_15.14.orig.tar.bz2 23229854 SHA256:06dd75d305cd3870ee62b3932e661c624543eaf9ae2ba37cdec0a4f8edd051d2
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.14-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.14-0+deb12u1.debian.tar.xz 29292 SHA256:1d66919ab0816c8962f3966455b2bee7a8359d118d4d0c54277efb2c4dedac67
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-15/15.14-0+deb12u1/
 
-- https://sources.debian.net/src/postgresql-15/15.14-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.14-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.14-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.2-3`
 
@@ -5325,20 +5289,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-1+deb12u1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-1%2bdeb12u1.dsc' shadow_4.13+dfsg1-1+deb12u1.dsc 2433 SHA256:8045717c55c3e19402da41b9223f6e2148e89de66b10210be5ab556b34d85b23
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA256:a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-1%2bdeb12u1.debian.tar.xz' shadow_4.13+dfsg1-1+deb12u1.debian.tar.xz 82088 SHA256:12dfb1a9b824855db5bd5dd731ab0633b274b5fae1cdac8a114359415adf7d31
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-1+deb12u1/
 
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-1+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-1+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shared-mime-info=2.2-1`
 
@@ -5593,9 +5550,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tiff=4.5.0-6+deb12u3
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.5.0-6%2bdeb12u3.dsc' tiff_4.5.0-6+deb12u3.dsc 2287 SHA256:078ea18a8b7683291a4586566281e8cbd4926c72340bc2691dd20fcff59e40a7
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.5.0.orig.tar.bz2' tiff_4.5.0.orig.tar.bz2 2050377 SHA256:638f43d7dea33948d5dee7f39572fc0194d9cc3c74195de9dd26a4388a1f880a
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.5.0-6%2bdeb12u3.debian.tar.xz' tiff_4.5.0-6+deb12u3.debian.tar.xz 31356 SHA256:75c8500b9063edc916030e29bbdfc390a9d850d6806d3ec3ef08670d21467c96
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.5.0-6%2bdeb12u3.dsc' tiff_4.5.0-6+deb12u3.dsc 2287 SHA256:078ea18a8b7683291a4586566281e8cbd4926c72340bc2691dd20fcff59e40a7
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.5.0.orig.tar.bz2' tiff_4.5.0.orig.tar.bz2 2050377 SHA256:638f43d7dea33948d5dee7f39572fc0194d9cc3c74195de9dd26a4388a1f880a
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.5.0-6%2bdeb12u3.debian.tar.xz' tiff_4.5.0-6+deb12u3.debian.tar.xz 31356 SHA256:75c8500b9063edc916030e29bbdfc390a9d850d6806d3ec3ef08670d21467c96
 ```
 
 Other potentially useful URLs:
