@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:75a5556df487484d631087a33062e2ac3f7e0f2e6a5c730eacfca60f034ab428`
-- Created: `2025-12-18T02:14:08.353319356Z`
+- Image ID: `sha256:aaa49fdb28880be48f936d91fc8eb33ed62a601ae333c492e4e3c7eeb43aed1e`
+- Created: `2026-01-09T20:10:15.712891226Z`
 - Virtual Size: ~ 425.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=29.2.0-rc.1`
   - `DOCKER_BUILDX_VERSION=0.30.1`
-  - `DOCKER_COMPOSE_VERSION=5.0.0`
+  - `DOCKER_COMPOSE_VERSION=5.0.1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -1109,16 +1109,16 @@ GPL-2.0-or-later
 ### `apk` package: `linux-pam`
 
 ```console
-linux-pam-1.7.1-r1 description:
+linux-pam-1.7.1-r2 description:
 Linux PAM (Pluggable Authentication Modules for Linux)
 
-linux-pam-1.7.1-r1 webpage:
+linux-pam-1.7.1-r2 webpage:
 https://www.kernel.org/pub/linux/libs/pam
 
-linux-pam-1.7.1-r1 installed size:
+linux-pam-1.7.1-r2 installed size:
 830 KiB
 
-linux-pam-1.7.1-r1 license:
+linux-pam-1.7.1-r2 license:
 BSD-3-Clause
 
 ```
@@ -1517,16 +1517,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zfs`
 
 ```console
-zfs-2.4.0_rc5-r0 description:
+zfs-2.4.0-r0 description:
 Advanced filesystem and volume manager
 
-zfs-2.4.0_rc5-r0 webpage:
+zfs-2.4.0-r0 webpage:
 https://openzfs.org
 
-zfs-2.4.0_rc5-r0 installed size:
+zfs-2.4.0-r0 installed size:
 1244 KiB
 
-zfs-2.4.0_rc5-r0 license:
+zfs-2.4.0-r0 license:
 CDDL-1.0
 
 ```
@@ -1534,16 +1534,16 @@ CDDL-1.0
 ### `apk` package: `zfs-libs`
 
 ```console
-zfs-libs-2.4.0_rc5-r0 description:
+zfs-libs-2.4.0-r0 description:
 Advanced filesystem and volume manager (libraries)
 
-zfs-libs-2.4.0_rc5-r0 webpage:
+zfs-libs-2.4.0-r0 webpage:
 https://openzfs.org
 
-zfs-libs-2.4.0_rc5-r0 installed size:
+zfs-libs-2.4.0-r0 installed size:
 4106 KiB
 
-zfs-libs-2.4.0_rc5-r0 license:
+zfs-libs-2.4.0-r0 license:
 CDDL-1.0
 
 ```

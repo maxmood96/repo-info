@@ -1,18 +1,18 @@
-# `docker:29.1.3-dind`
+# `docker:29.1.4-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c952beec7a22df0c66c8f92b18d92a0f745b177a83d90221552a516b3fc512a`
-- Created: `2025-12-18T01:13:39.427219643Z`
-- Virtual Size: ~ 368.79 Mb  
+- Image ID: `sha256:f67b672dc9ae3e228d02dbde76deac69e3c547ea3cb7a7de2c20165a0a635a1d`
+- Created: `2026-01-09T19:08:06.06246371Z`
+- Virtual Size: ~ 368.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.1.3`
+  - `DOCKER_VERSION=29.1.4`
   - `DOCKER_BUILDX_VERSION=0.30.1`
-  - `DOCKER_COMPOSE_VERSION=5.0.0`
+  - `DOCKER_COMPOSE_VERSION=5.0.1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -854,16 +854,16 @@ GPL-2.0-or-later
 ### `apk` package: `linux-pam`
 
 ```console
-linux-pam-1.7.1-r1 description:
+linux-pam-1.7.1-r2 description:
 Linux PAM (Pluggable Authentication Modules for Linux)
 
-linux-pam-1.7.1-r1 webpage:
+linux-pam-1.7.1-r2 webpage:
 https://www.kernel.org/pub/linux/libs/pam
 
-linux-pam-1.7.1-r1 installed size:
+linux-pam-1.7.1-r2 installed size:
 830 KiB
 
-linux-pam-1.7.1-r1 license:
+linux-pam-1.7.1-r2 license:
 BSD-3-Clause
 
 ```
@@ -1245,16 +1245,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zfs`
 
 ```console
-zfs-2.4.0_rc5-r0 description:
+zfs-2.4.0-r0 description:
 Advanced filesystem and volume manager
 
-zfs-2.4.0_rc5-r0 webpage:
+zfs-2.4.0-r0 webpage:
 https://openzfs.org
 
-zfs-2.4.0_rc5-r0 installed size:
+zfs-2.4.0-r0 installed size:
 1244 KiB
 
-zfs-2.4.0_rc5-r0 license:
+zfs-2.4.0-r0 license:
 CDDL-1.0
 
 ```
@@ -1262,16 +1262,16 @@ CDDL-1.0
 ### `apk` package: `zfs-libs`
 
 ```console
-zfs-libs-2.4.0_rc5-r0 description:
+zfs-libs-2.4.0-r0 description:
 Advanced filesystem and volume manager (libraries)
 
-zfs-libs-2.4.0_rc5-r0 webpage:
+zfs-libs-2.4.0-r0 webpage:
 https://openzfs.org
 
-zfs-libs-2.4.0_rc5-r0 installed size:
+zfs-libs-2.4.0-r0 installed size:
 4106 KiB
 
-zfs-libs-2.4.0_rc5-r0 license:
+zfs-libs-2.4.0-r0 license:
 CDDL-1.0
 
 ```

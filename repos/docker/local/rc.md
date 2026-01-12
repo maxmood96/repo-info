@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a185aeaf89305d0f659779e3d42f959364bc51625c2a9125c1d3719168c43a45`
-- Created: `2025-12-18T01:13:10.04233582Z`
-- Virtual Size: ~ 373.17 Mb  
+- Image ID: `sha256:0e70eeabc841f0c3565599d41be043e0aa8b027a0dca00cb9c79874f62689c9a`
+- Created: `2026-01-09T19:08:07.437514902Z`
+- Virtual Size: ~ 373.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=29.2.0-rc.1`
   - `DOCKER_BUILDX_VERSION=0.30.1`
-  - `DOCKER_COMPOSE_VERSION=5.0.0`
+  - `DOCKER_COMPOSE_VERSION=5.0.1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -854,16 +854,16 @@ GPL-2.0-or-later
 ### `apk` package: `linux-pam`
 
 ```console
-linux-pam-1.7.1-r1 description:
+linux-pam-1.7.1-r2 description:
 Linux PAM (Pluggable Authentication Modules for Linux)
 
-linux-pam-1.7.1-r1 webpage:
+linux-pam-1.7.1-r2 webpage:
 https://www.kernel.org/pub/linux/libs/pam
 
-linux-pam-1.7.1-r1 installed size:
+linux-pam-1.7.1-r2 installed size:
 830 KiB
 
-linux-pam-1.7.1-r1 license:
+linux-pam-1.7.1-r2 license:
 BSD-3-Clause
 
 ```
@@ -1245,16 +1245,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zfs`
 
 ```console
-zfs-2.4.0_rc5-r0 description:
+zfs-2.4.0-r0 description:
 Advanced filesystem and volume manager
 
-zfs-2.4.0_rc5-r0 webpage:
+zfs-2.4.0-r0 webpage:
 https://openzfs.org
 
-zfs-2.4.0_rc5-r0 installed size:
+zfs-2.4.0-r0 installed size:
 1244 KiB
 
-zfs-2.4.0_rc5-r0 license:
+zfs-2.4.0-r0 license:
 CDDL-1.0
 
 ```
@@ -1262,16 +1262,16 @@ CDDL-1.0
 ### `apk` package: `zfs-libs`
 
 ```console
-zfs-libs-2.4.0_rc5-r0 description:
+zfs-libs-2.4.0-r0 description:
 Advanced filesystem and volume manager (libraries)
 
-zfs-libs-2.4.0_rc5-r0 webpage:
+zfs-libs-2.4.0-r0 webpage:
 https://openzfs.org
 
-zfs-libs-2.4.0_rc5-r0 installed size:
+zfs-libs-2.4.0-r0 installed size:
 4106 KiB
 
-zfs-libs-2.4.0_rc5-r0 license:
+zfs-libs-2.4.0-r0 license:
 CDDL-1.0
 
 ```
