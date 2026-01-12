@@ -1601,14 +1601,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.17.6-1ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.1.dsc' libheif_1.17.6-1ubuntu4.1.dsc 2919 SHA512:99daf14e1a3a62edc74662f4f5debd96683ca535847efd9651b03b1d471ffe0473ade05537e4e5f1870563da3e7e641cfcf6765c8c51e75f479a408399250902
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6.orig.tar.gz' libheif_1.17.6.orig.tar.gz 1433302 SHA512:47d93df4f584979cea26af74cd8543b13398356b5fd46b1b378f7738cee471e80b7e117f6ce307674a549182f5ce22a577c6e79a6e72fe166421efc4be04687a
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.1.debian.tar.xz' libheif_1.17.6-1ubuntu4.1.debian.tar.xz 11888 SHA512:c82432484bb5b248a421a1c20d8512ddce57b6fcb1b2b9b4799e7b68037b05e30ee1981433275d6000086307d10494feb7a39bb77f8fb00682e08109f4f106e4
-```
 
 ### `dpkg` source package: `libidn2=2.3.7-2build1.1`
 
