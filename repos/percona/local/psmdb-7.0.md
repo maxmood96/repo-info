@@ -1,10 +1,10 @@
-# `percona:psmdb-7.0.26`
+# `percona:psmdb-7.0.28`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7307a738c4e2189fb0abaebf4b09aae23f20e140a8c81cb2619a3378f825728`
-- Created: `2025-12-04T19:46:49.29584041Z`
-- Virtual Size: ~ 886.01 Mb  
+- Image ID: `sha256:b9acba0e205080947b659f80291c1db94edd615f58c04816b5c989b460cefd35`
+- Created: `2026-01-08T19:04:33.902391755Z`
+- Virtual Size: ~ 887.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PSMDB_VERSION=7.0.26-14`
+  - `PSMDB_VERSION=7.0.28-15`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=7.0.26-14.el9`
+  - `FULL_PERCONA_VERSION=7.0.28-15.el9`
   - `K8S_TOOLS_VERSION=0.5.0`
   - `PSMDB_REPO=release`
   - `CALL_HOME_DOWNLOAD_SHA256=5e84d2f1a5d57f44c46e6a1f16794d649d3de09fe8021f0294bc321c89e51068`
@@ -1277,12 +1277,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Apache-2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url openssl-3.5.1-4.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-4.el9_7.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `openssl-fips-provider-3.0.7-8.el9.x86_64`
 
@@ -1310,12 +1305,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Apache-2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url openssl-libs-3.5.1-4.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-4.el9_7.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `p11-kit-0.25.3-3.el9_5.x86_64`
 
@@ -1383,7 +1373,7 @@ $ dnf --quiet download --source --url pcre2-syntax-10.40-6.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-6.el9.src.rpm
 ```
 
-### `rpm` package: `percona-mongodb-mongosh-2.5.9-1.el9.x86_64`
+### `rpm` package: `percona-mongodb-mongosh-2.5.10-1.el9.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
@@ -1395,25 +1385,25 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-mongos-7.0.26-14.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-7.0.28-15.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-server-7.0.26-14.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-server-7.0.28-15.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-tools-7.0.26-14.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-tools-7.0.28-15.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-telemetry-agent-1.0.6-1.el9.x86_64`
+### `rpm` package: `percona-telemetry-agent-1.0.7-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3
 
@@ -1595,11 +1585,16 @@ $ dnf --quiet download --source --url systemd-rpm-macros-252-55.el9_7.7.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
 ```
 
-### `rpm` package: `tar-1.34-7.el9.x86_64`
+### `rpm` package: `tar-1.34-9.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tar-1.34-9.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-9.el9_7.src.rpm
+```
 
 ### `rpm` package: `tzdata-2025b-2.el9.noarch`
 
