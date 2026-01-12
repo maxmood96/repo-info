@@ -168,19 +168,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8+deb13u2
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u2.dsc' base-files_13.8+deb13u2.dsc 1247 SHA256:ea3dc1f1288ab9c2d064855e739e9f5786863ee044f5db8ac09d8a76ffcba3b6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u2.tar.xz' base-files_13.8+deb13u2.tar.xz 68692 SHA256:d92bd5a92e12ef0195f449ea63bf53d4a4f3c12c6730f77fdafb917a305902a0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8+deb13u2/
 
-- https://sources.debian.net/src/base-files/13.8+deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8+deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -2288,10 +2282,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris unbound=1.22.0-2+deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.22.0-2%2bdeb13u1.dsc' unbound_1.22.0-2+deb13u1.dsc 3299 SHA256:4dcd956ac3740c8fae0b0ad5b9332f90317c44dace0e899e05fab18ae7b2f1a8
-'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.22.0.orig.tar.gz' unbound_1.22.0.orig.tar.gz 6682466 SHA256:c5dd1bdef5d5685b2cedb749158dd152c52d44f65529a34ac15cd88d4b1b3d43
-'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.22.0.orig.tar.gz.asc' unbound_1.22.0.orig.tar.gz.asc 833 SHA256:1b5d91ad040b1f1c0351b8f6fe288b4123fc63b887152463512be69bc687f915
-'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.22.0-2%2bdeb13u1.debian.tar.xz' unbound_1.22.0-2+deb13u1.debian.tar.xz 41960 SHA256:ddf9aa2085d3ab1db05719f78ec5581b5d759758b34b43aaaa7d654a065e7347
+'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.22.0-2%2bdeb13u1.dsc' unbound_1.22.0-2+deb13u1.dsc 3299 SHA256:4dcd956ac3740c8fae0b0ad5b9332f90317c44dace0e899e05fab18ae7b2f1a8
+'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.22.0.orig.tar.gz' unbound_1.22.0.orig.tar.gz 6682466 SHA256:c5dd1bdef5d5685b2cedb749158dd152c52d44f65529a34ac15cd88d4b1b3d43
+'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.22.0.orig.tar.gz.asc' unbound_1.22.0.orig.tar.gz.asc 833 SHA256:1b5d91ad040b1f1c0351b8f6fe288b4123fc63b887152463512be69bc687f915
+'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.22.0-2%2bdeb13u1.debian.tar.xz' unbound_1.22.0-2+deb13u1.debian.tar.xz 41960 SHA256:ddf9aa2085d3ab1db05719f78ec5581b5d759758b34b43aaaa7d654a065e7347
 ```
 
 Other potentially useful URLs:

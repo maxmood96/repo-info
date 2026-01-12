@@ -163,19 +163,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12.4+deb12u12
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u12.dsc' base-files_12.4+deb12u12.dsc 1137 SHA256:04d2a1ef56313f3d55813bae3d051511fe2c63de205a7d77b782d8913ce03100
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u12.tar.xz' base-files_12.4+deb12u12.tar.xz 66172 SHA256:8ac3713d9b30b329509a64853c72f10a7132cc204690140a4df546f53d99c67b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/12.4+deb12u12/
 
-- https://sources.debian.net/src/base-files/12.4+deb12u12/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4+deb12u12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4+deb12u12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -829,21 +823,13 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.40-1.1+deb12u1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.40-1.1%2bdeb12u1.dsc' gnupg2_2.2.40-1.1+deb12u1.dsc 3864 SHA256:4be87ba44f737bae4e691776e4fa2bbc1d8d45f98c02394ccbb42b461c18e836
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.40.orig.tar.bz2' gnupg2_2.2.40.orig.tar.bz2 7301631 SHA256:1164b29a75e8ab93ea15033300149e1872a7ef6bdda3d7c78229a735f8204c28
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.40.orig.tar.bz2.asc' gnupg2_2.2.40.orig.tar.bz2.asc 228 SHA256:3907dc165299cd53c0b4aec862323c3bce6037c411600ec87dc5eed7a55eba4a
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.40-1.1%2bdeb12u1.debian.tar.xz' gnupg2_2.2.40-1.1+deb12u1.debian.tar.xz 62472 SHA256:0c776d8142fdce1db0ccfa09fdada6ed181e405f5fb96db2300a9ec6d7433455
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.40-1.1+deb12u1/
 
-- https://sources.debian.net/src/gnupg2/2.2.40-1.1+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.40-1.1+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.40-1.1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.7.9-2+deb12u5`
 
@@ -2030,20 +2016,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.2-6+deb12u1
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-6%2bdeb12u1.dsc' pam_1.5.2-6+deb12u1.dsc 2038 SHA256:575e6f7e70cc4ed4602abcb2cda1cea455ae8dc2e7ede7d82b4ec1e6916f4fe2
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2.orig.tar.xz' pam_1.5.2.orig.tar.xz 988784 SHA256:e4ec7131a91da44512574268f493c6d8ca105c87091691b8e9b56ca685d4f94d
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-6%2bdeb12u1.debian.tar.xz' pam_1.5.2-6+deb12u1.debian.tar.xz 122828 SHA256:47765582e95952b437108584c796bf8447d13011685b7289664ddd6f4fbcc900
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.5.2-6+deb12u1/
 
-- https://sources.debian.net/src/pam/1.5.2-6+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.5.2-6+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.5.2-6+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.42-1`
 
@@ -2263,20 +2242,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-1+deb12u1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-1%2bdeb12u1.dsc' shadow_4.13+dfsg1-1+deb12u1.dsc 2433 SHA256:8045717c55c3e19402da41b9223f6e2148e89de66b10210be5ab556b34d85b23
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA256:a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-1%2bdeb12u1.debian.tar.xz' shadow_4.13+dfsg1-1+deb12u1.debian.tar.xz 82088 SHA256:12dfb1a9b824855db5bd5dd731ab0633b274b5fae1cdac8a114359415adf7d31
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-1+deb12u1/
 
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-1+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-1+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=252.39-1~deb12u1`
 
