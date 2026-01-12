@@ -1,9 +1,9 @@
-# `drupal:10.6.1-php8.4-fpm-alpine3.23`
+# `drupal:10.6.2-php8.4-fpm-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:319e096f38cbdcb6fc89456e58b7c40669f56ce4cdc114236fb24e61677e15d6`
-- Created: `2026-01-02T22:46:02.870598284Z`
+- Image ID: `sha256:ed5d090a1a480d2480833b2e751ccc1d8a4066580752016d0bd5cfd4da7ffd49`
+- Created: `2026-01-10T00:22:30.935254281Z`
 - Virtual Size: ~ 189.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.16.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.16.tar.xz.asc`
   - `PHP_SHA256=f66f8f48db34e9e29f7bfd6901178e9cf4a1b163e6e497716dfcb8f88bcfae30`
-  - `DRUPAL_VERSION=10.6.1`
+  - `DRUPAL_VERSION=10.6.2`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -505,16 +505,16 @@ BSD-3-Clause
 ### `apk` package: `libsodium`
 
 ```console
-libsodium-1.0.20-r0 description:
+libsodium-1.0.20-r1 description:
 P(ortable|ackageable) NaCl-based crypto library
 
-libsodium-1.0.20-r0 webpage:
+libsodium-1.0.20-r1 webpage:
 https://github.com/jedisct1/libsodium
 
-libsodium-1.0.20-r0 installed size:
+libsodium-1.0.20-r1 installed size:
 339 KiB
 
-libsodium-1.0.20-r0 license:
+libsodium-1.0.20-r1 license:
 ISC
 
 ```
