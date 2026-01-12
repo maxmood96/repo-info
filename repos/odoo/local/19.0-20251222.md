@@ -11497,14 +11497,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.9.dsc' python3.12_3.12.3-1ubuntu0.9.dsc 3875 SHA512:e905a92b05ea368d2193c6b0cbb810c494672be792b22a0529d4cacdc9915138eb78b8224223405e7f02e5bb9a1679c59622b97ee271e85dded8710e01e8e4f5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.9.debian.tar.xz' python3.12_3.12.3-1ubuntu0.9.debian.tar.xz 261844 SHA512:8b39c8f21474346c8b23c4823e39851c924de715c713587729d8dc921a0f094eb00510acbf4ab87e585dabd63fc0536c86f356192c200c575bba754b9b0025c7
-```
 
 ### `dpkg` source package: `pyusb=1.2.1-2`
 
