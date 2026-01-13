@@ -1,9 +1,9 @@
-# `aerospike:ce-8.1.0.2`
+# `aerospike:ce-8.1.0.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f398d40f4b3f6ffe21d03636b66badfd2fabb497ff20c38c9d4439115cb59e8`
-- Created: `2025-12-18T00:38:34.837459804Z`
+- Image ID: `sha256:52b6bc4c6765d47da3e5a20d62844818ec581df01a1e58d7bf8013e4979ee0a5`
+- Created: `2026-01-12T23:45:32.5498611Z`
 - Virtual Size: ~ 203.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,7 +21,7 @@
   - `org.opencontainers.image.title=Aerospike Community Server`
   - `org.opencontainers.image.url=https://github.com/aerospike/aerospike-server.docker`
   - `org.opencontainers.image.vendor=Aerospike`
-  - `org.opencontainers.image.version=8.1.0.2`
+  - `org.opencontainers.image.version=8.1.0.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -48,11 +48,11 @@ $ apt-get source -qq --print-uris acl=2.3.2-1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.2-1build1.1.debian.tar.xz' acl_2.3.2-1build1.1.debian.tar.xz 23472 SHA512:02e1eadeccb773f30f67c40aaf9cef3401cd771870c7aa82e94bcfbdf3f885879abec23a79ad8103e559dcd02b5ab7b92633890040d2b4db1f984a2a4c4aa232
 ```
 
-### `dpkg` source package: `aerospike-server-community=8.1.0.2-1`
+### `dpkg` source package: `aerospike-server-community=8.1.0.3-1`
 
 Binary Packages:
 
-- `aerospike-server-community=8.1.0.2-1`
+- `aerospike-server-community=8.1.0.3-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1196,15 +1196,9 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.19.0-3ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3ubuntu0.24.04.1.dsc' libtasn1-6_4.19.0-3ubuntu0.24.04.1.dsc 2846 SHA512:1f83726190ebe1fb9a52fc330cf794629df8180e803110a38825a4ea59c4a70ee2d973089f07dac1f06d258f37548f3bf557798ee5a832388b19c0c5c6403eb7
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz' libtasn1-6_4.19.0.orig.tar.gz 1786576 SHA512:287f5eddfb5e21762d9f14d11997e56b953b980b2b03a97ed4cd6d37909bda1ed7d2cdff9da5d270a21d863ab7e54be6b85c05f1075ac5d8f0198997cf335ef4
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz.asc' libtasn1-6_4.19.0.orig.tar.gz.asc 228 SHA512:e0417625f8df22c6421914bf2d4f19d7f27260c24c04f50e59669681f326debe06ddef9dc5a2e20fda50feb30bbbf3f41597e64961257304ec2c407aa76d107e
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3ubuntu0.24.04.1.debian.tar.xz' libtasn1-6_4.19.0-3ubuntu0.24.04.1.debian.tar.xz 24752 SHA512:6353360456b2fe7079f9ee98d82d065c85c488ae6103e68f374267be6e55ebb1e3fe251f2c738b96cf9fc67d36e2b9329d43acb2605d74994b957320649f5687
-```
 
 ### `dpkg` source package: `libunistring=1.1-2build1.1`
 
