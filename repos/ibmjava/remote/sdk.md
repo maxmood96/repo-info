@@ -56,11 +56,11 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 		Size: 29.5 MB (29536798 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:23fda1bb6a32e3206e092d04e6f2b4989287f7414006a3c19fdd79101c7c0320`  
-		Last Modified: Thu, 13 Nov 2025 23:28:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:44:59 GMT  
 		Size: 1.5 MB (1450088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d628e848bfe7ecb94b3fa8754c2036aaf9a7ea4c754f9a7cb38d43ed8a694e2`  
-		Last Modified: Fri, 14 Nov 2025 01:40:52 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:45:05 GMT  
 		Size: 172.8 MB (172785530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

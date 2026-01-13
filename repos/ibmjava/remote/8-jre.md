@@ -230,10 +230,10 @@ $ docker pull ibmjava@sha256:e67ddbf5c85d7a05c00f9676acc24365a96bba3b830c3a5515e
 
 -	Layers:
 	-	`sha256:f822cbcce0a87d53242ed7dccfb67a1baa00ca1c7e3eb79a2d976e55711f12ad`  
-		Last Modified: Fri, 14 Nov 2025 01:21:30 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:22:06 GMT  
 		Size: 2.2 MB (2174081 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f9676d5aca0e23ac7ee8e90f3db00f93314c81a26d849bc483453c2af36cfc10`  
-		Last Modified: Fri, 14 Nov 2025 01:21:31 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:22:06 GMT  
 		Size: 13.2 KB (13192 bytes)  
 		MIME: application/vnd.in-toto+json
