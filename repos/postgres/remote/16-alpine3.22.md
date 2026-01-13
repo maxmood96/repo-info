@@ -149,11 +149,11 @@ $ docker pull postgres@sha256:f28494cf3214da149adb2664397b951585589ab1d470c6b23a
 
 -	Layers:
 	-	`sha256:a88806d8f733fd81bfbd5f9c7a4c47653205c3276934ff3f4b10e2aa45576fab`  
-		Last Modified: Fri, 14 Nov 2025 21:13:03 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:22:14 GMT  
 		Size: 596.9 KB (596937 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:deb9c241ab9bbfb10bf4b5582265d2ec3a2680bcb7ecc5648aa5a515d9be3407`  
-		Last Modified: Fri, 14 Nov 2025 21:13:04 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:22:14 GMT  
 		Size: 44.3 KB (44306 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -283,7 +283,7 @@ $ docker pull postgres@sha256:384c876cb073f0ec55bedb089868f335f8d9b7fe80ca242250
 
 -	Layers:
 	-	`sha256:87899cbec216a6c3cf1168c6611e0851196690832a20782dad06d9d227f85d1f`  
-		Last Modified: Fri, 14 Nov 2025 21:13:08 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:43:25 GMT  
 		Size: 44.3 KB (44269 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -413,11 +413,11 @@ $ docker pull postgres@sha256:e035053d1f14bf00e3a36e3f6618d96ae073478651329aab05
 
 -	Layers:
 	-	`sha256:c940e7e01d5922cfa03acfb5683e5a58b58d59923d1fa424046e40542b69e6d3`  
-		Last Modified: Fri, 14 Nov 2025 21:13:11 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:46:31 GMT  
 		Size: 597.0 KB (596973 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4b107d12d0eceea2e0292c6cf07725de303b58a049ce5e80a77dafcf7def47e7`  
-		Last Modified: Fri, 14 Nov 2025 21:13:12 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:46:31 GMT  
 		Size: 44.5 KB (44484 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -547,11 +547,11 @@ $ docker pull postgres@sha256:8a23f0f2da930302eda082556c1968788f71e4580a67799260
 
 -	Layers:
 	-	`sha256:db0eb341c873b0caf6e6ea7f30c57e056b4e4abfba3c7d8bd4aa41b68ce631a9`  
-		Last Modified: Fri, 14 Nov 2025 21:13:15 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:21:19 GMT  
 		Size: 597.0 KB (596993 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c346d1f98b306b04d230a74c2af78ca9abe343bfb899b7f81594fe4f3cb9f14c`  
-		Last Modified: Fri, 14 Nov 2025 21:13:16 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:21:18 GMT  
 		Size: 44.5 KB (44530 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -681,11 +681,11 @@ $ docker pull postgres@sha256:ca00c9e4ac87afc5f1a16cd4eee49447a571c73a9078145c81
 
 -	Layers:
 	-	`sha256:fae255fa6f9a095c32d9dc814c4f390f832466cac8df0f078b9a1e83293b0b9f`  
-		Last Modified: Fri, 14 Nov 2025 21:13:19 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:24:46 GMT  
 		Size: 596.9 KB (596912 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e93b9fc922a7f2f133d553cf7e741b1990b681483a1d0ca1dc41e45300630955`  
-		Last Modified: Fri, 14 Nov 2025 21:13:20 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:24:46 GMT  
 		Size: 44.3 KB (44257 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -815,11 +815,11 @@ $ docker pull postgres@sha256:8eb6e60132a41ddac9473838f41465036b3989df7d67f37d0b
 
 -	Layers:
 	-	`sha256:ee28d7b79f338ddace25fa61d8c197599ff06aef8f43c8c50305ed566b5aa05b`  
-		Last Modified: Fri, 14 Nov 2025 21:13:24 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:34:51 GMT  
 		Size: 593.4 KB (593358 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:da2b7ee0479cefd2f662ae7c12515b8507b265e65b7000e511c61eeccf652653`  
-		Last Modified: Fri, 14 Nov 2025 21:13:24 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:34:51 GMT  
 		Size: 44.4 KB (44359 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1083,10 +1083,10 @@ $ docker pull postgres@sha256:113760a14075e61c4e0b097030ad5a7c904be573062dae9a02
 
 -	Layers:
 	-	`sha256:bb1fee8596dafb1318fe41be8d30677271c69d61f93ee8b5a2127ad3be3c47a2`  
-		Last Modified: Fri, 14 Nov 2025 21:13:30 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:34:57 GMT  
 		Size: 595.0 KB (594986 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7d46b395c27ac3eb87ac760dbe7a0c25bd9e7140bd438760c4c202ce9cee5230`  
-		Last Modified: Fri, 14 Nov 2025 21:13:31 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:34:56 GMT  
 		Size: 44.3 KB (44306 bytes)  
 		MIME: application/vnd.in-toto+json
