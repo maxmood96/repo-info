@@ -181,11 +181,11 @@ $ docker pull silverpeas@sha256:7e68dc26d64541b4c3a809f8c4decbf3cdd9a560446fb079
 
 -	Layers:
 	-	`sha256:838ef06d37a0743c390e537a7453c736aa33cf939bea2ef35d89405d17c2a322`  
-		Last Modified: Fri, 14 Nov 2025 02:09:33 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:47:06 GMT  
 		Size: 26.8 MB (26825478 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d16e917f53d006fb3ad95296ab52549a827883f12c7827ddf66a83cc0597f82a`  
-		Last Modified: Fri, 14 Nov 2025 02:09:34 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:47:05 GMT  
 		Size: 40.7 KB (40702 bytes)  
 		MIME: application/vnd.in-toto+json
 
