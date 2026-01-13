@@ -193,11 +193,11 @@ $ docker pull eclipse-temurin@sha256:90469bff3f7a9e18a150c5157ef9695fc03f01384dc
 
 -	Layers:
 	-	`sha256:a359f1e2785511f073e1b4a8841dd49bc1e6d05eef705708bd830a3c74af6d54`  
-		Last Modified: Thu, 13 Nov 2025 23:14:31 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:28:00 GMT  
 		Size: 3.3 MB (3287686 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8cc190f59693b5f54a7b1643d3f93f201978af7f30c503294c828d7c7815f7a7`  
-		Last Modified: Thu, 13 Nov 2025 23:14:31 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:27:59 GMT  
 		Size: 24.1 KB (24086 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -375,11 +375,11 @@ $ docker pull eclipse-temurin@sha256:8faf9c41fa22d2d2e50751a8362fd3654cfe5f0e207
 
 -	Layers:
 	-	`sha256:ae4fe505e2d9815dd0061e6c2b33531f281207a7ae5314029a987ea781b4aca1`  
-		Last Modified: Thu, 13 Nov 2025 23:25:18 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:28:22 GMT  
 		Size: 3.3 MB (3289417 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:22c607a5e7474e63c702db113183c11c1148185bd1a962d875b99d64aa1172bc`  
-		Last Modified: Thu, 13 Nov 2025 23:25:18 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:28:19 GMT  
 		Size: 24.0 KB (24028 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -529,7 +529,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 17.6 MB (17581016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cdd8d5ac3b368e1acbcc0fee7732f6e466ef01cddfd09a73ac260a6d26bede28`  
-		Last Modified: Thu, 13 Nov 2025 23:10:47 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:28:46 GMT  
 		Size: 44.0 MB (44031061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:add42ff867dcd0e89d9d3555a02f580fbfa461633c923c4ca9190d8792716d82`  
@@ -557,10 +557,10 @@ $ docker pull eclipse-temurin@sha256:965c5a721f2c2769b67235459a79b8ccc7d35f12826
 
 -	Layers:
 	-	`sha256:87cec246feb6e969e1085c31818266abe610c6d4e37a82911aa425713f5d588b`  
-		Last Modified: Thu, 13 Nov 2025 23:10:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:28:51 GMT  
 		Size: 3.3 MB (3287549 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:84519489a2f4e4d00709cbc1a9fdd109d3c05218327cf491b1ce821a845a63ee`  
-		Last Modified: Thu, 13 Nov 2025 23:10:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:28:50 GMT  
 		Size: 24.0 KB (23981 bytes)  
 		MIME: application/vnd.in-toto+json
