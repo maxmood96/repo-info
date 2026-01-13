@@ -4772,11 +4772,11 @@ RUN swift --version # buildkit
 		Size: 29.7 MB (29724688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:60d819037fb2acd17b60c67a801f5241ba996bc4b2d1eaf7053ac3cec83db40c`  
-		Last Modified: Thu, 13 Nov 2025 23:44:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:19:56 GMT  
 		Size: 130.4 MB (130404781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d83c8a59978bac5881df753bd0bcaa7130b923a4a3f6faa7ac3a5df68c828bda`  
-		Last Modified: Thu, 13 Nov 2025 23:44:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:20:05 GMT  
 		Size: 801.6 MB (801647932 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4dd2c88c2855a41351224aa928c4defa1cc8e58106ae94d8fffb8ba6a372071a`  
@@ -4865,15 +4865,15 @@ RUN swift --version # buildkit
 		Size: 28.9 MB (28861957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43e3f1121dc7def8f1c0a753b819ca631536f635c0c554093a330f6bc982c66d`  
-		Last Modified: Thu, 13 Nov 2025 23:42:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:19:54 GMT  
 		Size: 129.5 MB (129479314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01e6a222dfd66803a33e983eeb02d0acfc7866f4bb59c56b2db4f0ad78dfe3ec`  
-		Last Modified: Thu, 13 Nov 2025 23:42:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:21:30 GMT  
 		Size: 799.1 MB (799091916 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:251bbc7c1b0bf9d83a65613d6eaed66dc6100df3a85cbeb99a49bd263f8ad2c0`  
-		Last Modified: Thu, 13 Nov 2025 23:42:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:19:49 GMT  
 		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5494,7 +5494,7 @@ RUN swift --version # buildkit
 		Size: 175.5 MB (175451455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29613b8c7d467f9180a41315a0dae0ee19b8d0f1c05bb1d065951d4d05e316de`  
-		Last Modified: Thu, 13 Nov 2025 23:44:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:18:56 GMT  
 		Size: 801.8 MB (801759633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2b40b8286127591a8bb074c69428f79a5ecd3c891587dde05809ba9edaa8d21`  
@@ -5874,11 +5874,11 @@ RUN swift --version # buildkit
 		Size: 29.7 MB (29724688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:60d819037fb2acd17b60c67a801f5241ba996bc4b2d1eaf7053ac3cec83db40c`  
-		Last Modified: Thu, 13 Nov 2025 23:44:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:19:56 GMT  
 		Size: 130.4 MB (130404781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d83c8a59978bac5881df753bd0bcaa7130b923a4a3f6faa7ac3a5df68c828bda`  
-		Last Modified: Thu, 13 Nov 2025 23:44:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:20:05 GMT  
 		Size: 801.6 MB (801647932 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4dd2c88c2855a41351224aa928c4defa1cc8e58106ae94d8fffb8ba6a372071a`  
@@ -5967,15 +5967,15 @@ RUN swift --version # buildkit
 		Size: 28.9 MB (28861957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43e3f1121dc7def8f1c0a753b819ca631536f635c0c554093a330f6bc982c66d`  
-		Last Modified: Thu, 13 Nov 2025 23:42:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:19:54 GMT  
 		Size: 129.5 MB (129479314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01e6a222dfd66803a33e983eeb02d0acfc7866f4bb59c56b2db4f0ad78dfe3ec`  
-		Last Modified: Thu, 13 Nov 2025 23:42:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:21:30 GMT  
 		Size: 799.1 MB (799091916 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:251bbc7c1b0bf9d83a65613d6eaed66dc6100df3a85cbeb99a49bd263f8ad2c0`  
-		Last Modified: Thu, 13 Nov 2025 23:42:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:19:49 GMT  
 		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7066,11 +7066,11 @@ RUN swift --version # buildkit
 		Size: 29.7 MB (29724688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:60d819037fb2acd17b60c67a801f5241ba996bc4b2d1eaf7053ac3cec83db40c`  
-		Last Modified: Thu, 13 Nov 2025 23:44:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:19:56 GMT  
 		Size: 130.4 MB (130404781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d83c8a59978bac5881df753bd0bcaa7130b923a4a3f6faa7ac3a5df68c828bda`  
-		Last Modified: Thu, 13 Nov 2025 23:44:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:20:05 GMT  
 		Size: 801.6 MB (801647932 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4dd2c88c2855a41351224aa928c4defa1cc8e58106ae94d8fffb8ba6a372071a`  
@@ -7159,15 +7159,15 @@ RUN swift --version # buildkit
 		Size: 28.9 MB (28861957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43e3f1121dc7def8f1c0a753b819ca631536f635c0c554093a330f6bc982c66d`  
-		Last Modified: Thu, 13 Nov 2025 23:42:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:19:54 GMT  
 		Size: 129.5 MB (129479314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01e6a222dfd66803a33e983eeb02d0acfc7866f4bb59c56b2db4f0ad78dfe3ec`  
-		Last Modified: Thu, 13 Nov 2025 23:42:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:21:30 GMT  
 		Size: 799.1 MB (799091916 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:251bbc7c1b0bf9d83a65613d6eaed66dc6100df3a85cbeb99a49bd263f8ad2c0`  
-		Last Modified: Thu, 13 Nov 2025 23:42:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:19:49 GMT  
 		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7788,7 +7788,7 @@ RUN swift --version # buildkit
 		Size: 175.5 MB (175451455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29613b8c7d467f9180a41315a0dae0ee19b8d0f1c05bb1d065951d4d05e316de`  
-		Last Modified: Thu, 13 Nov 2025 23:44:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:18:56 GMT  
 		Size: 801.8 MB (801759633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2b40b8286127591a8bb074c69428f79a5ecd3c891587dde05809ba9edaa8d21`  
@@ -8168,11 +8168,11 @@ RUN swift --version # buildkit
 		Size: 29.7 MB (29724688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:60d819037fb2acd17b60c67a801f5241ba996bc4b2d1eaf7053ac3cec83db40c`  
-		Last Modified: Thu, 13 Nov 2025 23:44:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:19:56 GMT  
 		Size: 130.4 MB (130404781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d83c8a59978bac5881df753bd0bcaa7130b923a4a3f6faa7ac3a5df68c828bda`  
-		Last Modified: Thu, 13 Nov 2025 23:44:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:20:05 GMT  
 		Size: 801.6 MB (801647932 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4dd2c88c2855a41351224aa928c4defa1cc8e58106ae94d8fffb8ba6a372071a`  
@@ -8261,15 +8261,15 @@ RUN swift --version # buildkit
 		Size: 28.9 MB (28861957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43e3f1121dc7def8f1c0a753b819ca631536f635c0c554093a330f6bc982c66d`  
-		Last Modified: Thu, 13 Nov 2025 23:42:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:19:54 GMT  
 		Size: 129.5 MB (129479314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01e6a222dfd66803a33e983eeb02d0acfc7866f4bb59c56b2db4f0ad78dfe3ec`  
-		Last Modified: Thu, 13 Nov 2025 23:42:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:21:30 GMT  
 		Size: 799.1 MB (799091916 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:251bbc7c1b0bf9d83a65613d6eaed66dc6100df3a85cbeb99a49bd263f8ad2c0`  
-		Last Modified: Thu, 13 Nov 2025 23:42:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:19:49 GMT  
 		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10662,7 +10662,7 @@ RUN set -e;     ARCH_NAME="$(dpkg --print-architecture)";     url=;     case "${
 		Size: 20.0 MB (20019027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b945b452db2ef345a63fc554824bb2c9e3549ec4eda057ad4cf0e67b326d548b`  
-		Last Modified: Thu, 13 Nov 2025 23:41:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:25:42 GMT  
 		Size: 49.1 MB (49098148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10744,11 +10744,11 @@ RUN set -e;     ARCH_NAME="$(dpkg --print-architecture)";     url=;     case "${
 		Size: 28.9 MB (28861957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06dd0c008158735fb78e71db1efb716830ce91050ca135a50291a9dea7ac6fab`  
-		Last Modified: Thu, 13 Nov 2025 23:40:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:25:40 GMT  
 		Size: 20.0 MB (20029379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b919ba4be1cf2c688bbdd37c5a6d61f36d59736b67c7bb44829451dbc1324d95`  
-		Last Modified: Thu, 13 Nov 2025 23:40:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:25:42 GMT  
 		Size: 48.5 MB (48457590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11323,7 +11323,7 @@ RUN set -e;     ARCH_NAME="$(dpkg --print-architecture)";     url=;     case "${
 		Size: 20.0 MB (20019027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b945b452db2ef345a63fc554824bb2c9e3549ec4eda057ad4cf0e67b326d548b`  
-		Last Modified: Thu, 13 Nov 2025 23:41:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:25:42 GMT  
 		Size: 49.1 MB (49098148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11405,11 +11405,11 @@ RUN set -e;     ARCH_NAME="$(dpkg --print-architecture)";     url=;     case "${
 		Size: 28.9 MB (28861957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06dd0c008158735fb78e71db1efb716830ce91050ca135a50291a9dea7ac6fab`  
-		Last Modified: Thu, 13 Nov 2025 23:40:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:25:40 GMT  
 		Size: 20.0 MB (20029379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b919ba4be1cf2c688bbdd37c5a6d61f36d59736b67c7bb44829451dbc1324d95`  
-		Last Modified: Thu, 13 Nov 2025 23:40:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:25:42 GMT  
 		Size: 48.5 MB (48457590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -12956,7 +12956,7 @@ RUN set -e;     ARCH_NAME="$(dpkg --print-architecture)";     url=;     case "${
 		Size: 20.0 MB (20019027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b945b452db2ef345a63fc554824bb2c9e3549ec4eda057ad4cf0e67b326d548b`  
-		Last Modified: Thu, 13 Nov 2025 23:41:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:25:42 GMT  
 		Size: 49.1 MB (49098148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13038,11 +13038,11 @@ RUN set -e;     ARCH_NAME="$(dpkg --print-architecture)";     url=;     case "${
 		Size: 28.9 MB (28861957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06dd0c008158735fb78e71db1efb716830ce91050ca135a50291a9dea7ac6fab`  
-		Last Modified: Thu, 13 Nov 2025 23:40:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:25:40 GMT  
 		Size: 20.0 MB (20029379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b919ba4be1cf2c688bbdd37c5a6d61f36d59736b67c7bb44829451dbc1324d95`  
-		Last Modified: Thu, 13 Nov 2025 23:40:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:25:42 GMT  
 		Size: 48.5 MB (48457590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13617,7 +13617,7 @@ RUN set -e;     ARCH_NAME="$(dpkg --print-architecture)";     url=;     case "${
 		Size: 20.0 MB (20019027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b945b452db2ef345a63fc554824bb2c9e3549ec4eda057ad4cf0e67b326d548b`  
-		Last Modified: Thu, 13 Nov 2025 23:41:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:25:42 GMT  
 		Size: 49.1 MB (49098148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13699,11 +13699,11 @@ RUN set -e;     ARCH_NAME="$(dpkg --print-architecture)";     url=;     case "${
 		Size: 28.9 MB (28861957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06dd0c008158735fb78e71db1efb716830ce91050ca135a50291a9dea7ac6fab`  
-		Last Modified: Thu, 13 Nov 2025 23:40:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:25:40 GMT  
 		Size: 20.0 MB (20029379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b919ba4be1cf2c688bbdd37c5a6d61f36d59736b67c7bb44829451dbc1324d95`  
-		Last Modified: Thu, 13 Nov 2025 23:40:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:25:42 GMT  
 		Size: 48.5 MB (48457590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
