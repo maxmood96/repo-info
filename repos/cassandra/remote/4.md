@@ -441,11 +441,11 @@ $ docker pull cassandra@sha256:cfa0484f9c389963e68740f881e2e93620a1d1107f6950ade
 
 -	Layers:
 	-	`sha256:8780cfae8df1c4cea6639c17b3ce59981c8d7a17058941888041750b860fa3d9`  
-		Last Modified: Fri, 14 Nov 2025 00:50:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:27:05 GMT  
 		Size: 4.6 MB (4624721 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:90090651365958d06fca0018b0b203ffa56229fe036fbdfce6b2a49129d8e1be`  
-		Last Modified: Fri, 14 Nov 2025 00:50:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:26:58 GMT  
 		Size: 35.4 KB (35390 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -549,23 +549,23 @@ CMD ["cassandra" "-f"]
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8341d639963d294b454109c2bb2de10fc54e79bf28fbe93e5fef20dbc9bae9ec`  
-		Last Modified: Fri, 14 Nov 2025 06:17:18 GMT  
+		Last Modified: Fri, 14 Nov 2025 06:17:10 GMT  
 		Size: 1.7 KB (1745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5118ed6ad0789094e930ffcf2c18c97109461b971a58cee5dcd2ec5d64c0baf5`  
-		Last Modified: Fri, 14 Nov 2025 06:17:19 GMT  
+		Last Modified: Fri, 14 Nov 2025 06:17:10 GMT  
 		Size: 12.1 MB (12118331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:67a1736a6e665f77e641ce42e63b74fb4019f55334d6e0d998c5d7ff06e83952`  
-		Last Modified: Fri, 14 Nov 2025 06:17:18 GMT  
+		Last Modified: Fri, 14 Nov 2025 06:17:10 GMT  
 		Size: 743.5 KB (743541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:979f9d20088758e0a3a8a1c14deb7020e5ddcd10d5443d35ef56c6d6811c9603`  
-		Last Modified: Fri, 14 Nov 2025 06:17:22 GMT  
+		Last Modified: Fri, 14 Nov 2025 06:17:13 GMT  
 		Size: 52.4 MB (52436624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c6ae8fda4f0a99db77709d27b42c7a9220b150b9ce7f5a8ddff26a1fc01a540`  
-		Last Modified: Fri, 14 Nov 2025 06:17:18 GMT  
+		Last Modified: Fri, 14 Nov 2025 06:17:11 GMT  
 		Size: 1.2 KB (1224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
