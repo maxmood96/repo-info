@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9ad1e55269eb74bb735aa3273eddd51abdb8f0393c5a54b86a7506c94d793034`
-- Created: `2025-12-24T07:10:00.615240959Z`
-- Virtual Size: ~ 94.16 Mb  
+- Image ID: `sha256:ab3ec06c2a6534a8316fb0ae0c32fb92bd438087d3ea3dd106b8dbc6e4d4b26a`
+- Created: `2026-01-09T19:06:29.444603795Z`
+- Virtual Size: ~ 102.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -16,6 +16,7 @@
   - `DYNPKG_RELEASE=1`
   - `NJS_VERSION=0.9.4`
   - `NJS_RELEASE=1`
+  - `ACME_VERSION=0.3.1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -1020,6 +1021,23 @@ nginx-1.28.1-r1 installed size:
 2651 KiB
 
 nginx-1.28.1-r1 license:
+2-clause BSD-like license
+
+```
+
+### `apk` package: `nginx-module-acme`
+
+```console
+nginx-module-acme-1.28.1.0.3.1-r1 description:
+nginx nginx-acme
+
+nginx-module-acme-1.28.1.0.3.1-r1 webpage:
+https://nginx.org/
+
+nginx-module-acme-1.28.1.0.3.1-r1 installed size:
+7959 KiB
+
+nginx-module-acme-1.28.1.0.3.1-r1 license:
 2-clause BSD-like license
 
 ```
