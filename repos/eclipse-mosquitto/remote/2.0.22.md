@@ -159,7 +159,7 @@ $ docker pull eclipse-mosquitto@sha256:a17019eaa613e42b20391a65d759da6039d35f28a
 
 -	Layers:
 	-	`sha256:4d4161a432815512b89b638609e68ae79b037231f03165064b342e11a67815fb`  
-		Last Modified: Fri, 14 Nov 2025 17:50:57 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:03:10 GMT  
 		Size: 23.1 KB (23087 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -303,11 +303,11 @@ $ docker pull eclipse-mosquitto@sha256:9af60220345c03d821f842cb20532d1adc1c38258
 
 -	Layers:
 	-	`sha256:2a0189eee1dcf3e53fe3a1099eed2b4b9e25542760123a29bd1187a7dd046989`  
-		Last Modified: Fri, 14 Nov 2025 17:51:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:03:13 GMT  
 		Size: 558.3 KB (558302 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2505c81d31808a23e4b899c69f5ec3be509eb3fc5b72fac84555c82970c9dfc6`  
-		Last Modified: Fri, 14 Nov 2025 17:51:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:03:05 GMT  
 		Size: 23.1 KB (23138 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -377,11 +377,11 @@ $ docker pull eclipse-mosquitto@sha256:dbf374374ef6cda2e9c863171477bd7a4d4d90e7a
 
 -	Layers:
 	-	`sha256:94a4ab2142e0fee825c43113854997eedba52e8cb8ee5478dd2d02058c2be0ce`  
-		Last Modified: Fri, 14 Nov 2025 19:02:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:03:15 GMT  
 		Size: 556.5 KB (556454 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6b5be6753dbebada4aad18947078f4ea2ab25e21ee21a079293dd3e91dccd112`  
-		Last Modified: Fri, 14 Nov 2025 19:01:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:03:06 GMT  
 		Size: 23.3 KB (23258 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -451,10 +451,10 @@ $ docker pull eclipse-mosquitto@sha256:e7600c1b626eeec4230ea92576f2a5ae78a1968a1
 
 -	Layers:
 	-	`sha256:c98d00d7defa9f73d4ae79d644bc7e7f44295695d625e1ab4a692791ea649f45`  
-		Last Modified: Fri, 14 Nov 2025 18:00:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:03:16 GMT  
 		Size: 556.4 KB (556396 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:09adfc9bb3231c67b86b3122426865e4b00c219410027d34fc229a3df581fbca`  
-		Last Modified: Fri, 14 Nov 2025 18:00:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:03:08 GMT  
 		Size: 23.2 KB (23190 bytes)  
 		MIME: application/vnd.in-toto+json
