@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea425543f364ef92dc660b13004605d157f1a894257a4be1a60b4c6f05a90b5e`
-- Created: `2025-12-29T23:25:58.716659543Z`
+- Image ID: `sha256:372c2adbd46a075a486765e0c44f648f226326c563982151b0d4fc4e1e3d1096`
+- Created: `2026-01-09T22:34:39.631815516Z`
 - Virtual Size: ~ 525.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -107,21 +107,13 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 - `PCRE`
 - `Zeus`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apache2=2.4.65-1~deb12u1
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.65-1%7edeb12u1.dsc' apache2_2.4.65-1~deb12u1.dsc 3559 SHA256:3f63d076dd53442c098e160db74a0e59be74e2fa6c17bf23ceaadaececa07c2e
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.65.orig.tar.gz' apache2_2.4.65.orig.tar.gz 9814591 SHA256:4f92861a50325c6d1046ebad5d814bff0d4169ada8cc265655f32b7f1ba4be1b
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.65.orig.tar.gz.asc' apache2_2.4.65.orig.tar.gz.asc 833 SHA256:500de0ea39e041cbbafab9c0e0697b0e0e65b99f29cd1a403741d2afc5383995
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.65-1%7edeb12u1.debian.tar.xz' apache2_2.4.65-1~deb12u1.debian.tar.xz 821428 SHA256:b955efd3f7698cb3bfa4a7529ee065890a55147a4fe3a190fd8b3fa57ab4a8f4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apache2/2.4.65-1~deb12u1/
 
-- https://sources.debian.net/src/apache2/2.4.65-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/apache2/2.4.65-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apache2/2.4.65-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-1`
 
@@ -339,19 +331,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12.4+deb12u12
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u12.dsc' base-files_12.4+deb12u12.dsc 1137 SHA256:04d2a1ef56313f3d55813bae3d051511fe2c63de205a7d77b782d8913ce03100
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u12.tar.xz' base-files_12.4+deb12u12.tar.xz 66172 SHA256:8ac3713d9b30b329509a64853c72f10a7132cc204690140a4df546f53d99c67b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/12.4+deb12u12/
 
-- https://sources.debian.net/src/base-files/12.4+deb12u12/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4+deb12u12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4+deb12u12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -1206,21 +1192,13 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.40-1.1+deb12u1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.40-1.1%2bdeb12u1.dsc' gnupg2_2.2.40-1.1+deb12u1.dsc 3864 SHA256:4be87ba44f737bae4e691776e4fa2bbc1d8d45f98c02394ccbb42b461c18e836
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.40.orig.tar.bz2' gnupg2_2.2.40.orig.tar.bz2 7301631 SHA256:1164b29a75e8ab93ea15033300149e1872a7ef6bdda3d7c78229a735f8204c28
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.40.orig.tar.bz2.asc' gnupg2_2.2.40.orig.tar.bz2.asc 228 SHA256:3907dc165299cd53c0b4aec862323c3bce6037c411600ec87dc5eed7a55eba4a
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.40-1.1%2bdeb12u1.debian.tar.xz' gnupg2_2.2.40-1.1+deb12u1.debian.tar.xz 62472 SHA256:0c776d8142fdce1db0ccfa09fdada6ed181e405f5fb96db2300a9ec6d7433455
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.40-1.1+deb12u1/
 
-- https://sources.debian.net/src/gnupg2/2.2.40-1.1+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.40-1.1+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.40-1.1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.7.9-2+deb12u5`
 
@@ -1920,11 +1898,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsepol/3.4-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsepol/3.4-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libsodium=1.0.18-1`
+### `dpkg` source package: `libsodium=1.0.18-1+deb12u1`
 
 Binary Packages:
 
-- `libsodium23:amd64=1.0.18-1`
+- `libsodium23:amd64=1.0.18-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsodium23/copyright`)
 
@@ -1940,17 +1918,17 @@ Licenses: (parsed from: `/usr/share/doc/libsodium23/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libsodium=1.0.18-1
-'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.18-1.dsc' libsodium_1.0.18-1.dsc 1913 SHA256:037b3ac05a50409cb462e2c21c7a67f983d193a22d2486f4ab3fdc793f5a731c
-'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.18.orig.tar.gz' libsodium_1.0.18.orig.tar.gz 1619527 SHA256:d59323c6b712a1519a5daf710b68f5e7fde57040845ffec53850911f10a5d4f4
-'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.18-1.debian.tar.xz' libsodium_1.0.18-1.debian.tar.xz 7440 SHA256:50863d8fc4f0a2a86f7b69745514455f0b9d74cf45906523c675ffe5b8db0377
+$ apt-get source -qq --print-uris libsodium=1.0.18-1+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libsodium/libsodium_1.0.18-1%2bdeb12u1.dsc' libsodium_1.0.18-1+deb12u1.dsc 1945 SHA256:2c23c57b5a9385dab5a1916014c9b5f2cdd7dadeb8a35b28c1bfb603ce7095c4
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libsodium/libsodium_1.0.18.orig.tar.gz' libsodium_1.0.18.orig.tar.gz 1619527 SHA256:d59323c6b712a1519a5daf710b68f5e7fde57040845ffec53850911f10a5d4f4
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libsodium/libsodium_1.0.18-1%2bdeb12u1.debian.tar.xz' libsodium_1.0.18-1+deb12u1.debian.tar.xz 8256 SHA256:f410474e46346b06b162defa05b1be26906aeed6cf309e3d4ebe30b4d1350733
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libsodium/1.0.18-1/ (for browsing the source)
-- https://sources.debian.net/src/libsodium/1.0.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsodium/1.0.18-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libsodium/1.0.18-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/libsodium/1.0.18-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libsodium/1.0.18-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.10.0-3`
 
@@ -2118,9 +2096,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3~deb12u4
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u4.dsc' libxml2_2.9.14+dfsg-1.3~deb12u4.dsc 2610 SHA256:de59e0146715a6edb188729823fe13a597b2b9968c69f7e9e32b4c7ef2ad06e1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u4.debian.tar.xz' libxml2_2.9.14+dfsg-1.3~deb12u4.debian.tar.xz 47500 SHA256:8c2f4b1b03579a3010c4135e57c7754544bf8085960537532faaa0feb0f2930b
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u4.dsc' libxml2_2.9.14+dfsg-1.3~deb12u4.dsc 2610 SHA256:de59e0146715a6edb188729823fe13a597b2b9968c69f7e9e32b4c7ef2ad06e1
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u4.debian.tar.xz' libxml2_2.9.14+dfsg-1.3~deb12u4.debian.tar.xz 47500 SHA256:8c2f4b1b03579a3010c4135e57c7754544bf8085960537532faaa0feb0f2930b
 ```
 
 Other potentially useful URLs:
@@ -2629,20 +2607,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.2-6+deb12u1
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-6%2bdeb12u1.dsc' pam_1.5.2-6+deb12u1.dsc 2038 SHA256:575e6f7e70cc4ed4602abcb2cda1cea455ae8dc2e7ede7d82b4ec1e6916f4fe2
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2.orig.tar.xz' pam_1.5.2.orig.tar.xz 988784 SHA256:e4ec7131a91da44512574268f493c6d8ca105c87091691b8e9b56ca685d4f94d
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-6%2bdeb12u1.debian.tar.xz' pam_1.5.2-6+deb12u1.debian.tar.xz 122828 SHA256:47765582e95952b437108584c796bf8447d13011685b7289664ddd6f4fbcc900
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.5.2-6+deb12u1/
 
-- https://sources.debian.net/src/pam/1.5.2-6+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.5.2-6+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.5.2-6+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
@@ -2988,20 +2959,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-1+deb12u1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-1%2bdeb12u1.dsc' shadow_4.13+dfsg1-1+deb12u1.dsc 2433 SHA256:8045717c55c3e19402da41b9223f6e2148e89de66b10210be5ab556b34d85b23
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA256:a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-1%2bdeb12u1.debian.tar.xz' shadow_4.13+dfsg1-1+deb12u1.debian.tar.xz 82088 SHA256:12dfb1a9b824855db5bd5dd731ab0633b274b5fae1cdac8a114359415adf7d31
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-1+deb12u1/
 
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-1+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-1+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.40.1-2+deb12u2`
 
