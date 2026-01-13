@@ -1555,6 +1555,6 @@ $ docker pull monica@sha256:39c60368daada1046b444535d86f6b5e943c8a841a563805c18d
 
 -	Layers:
 	-	`sha256:b85f43772c7be7f8ce5d38a6a2dc227cc25a891c081eefe9878feb37ba85d595`  
-		Last Modified: Tue, 13 Jan 2026 15:57:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 18:07:12 GMT  
 		Size: 49.3 KB (49341 bytes)  
 		MIME: application/vnd.in-toto+json
