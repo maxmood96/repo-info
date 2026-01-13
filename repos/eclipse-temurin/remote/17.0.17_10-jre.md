@@ -349,15 +349,15 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 18.8 MB (18814748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6c610e88a6dc2b35d7669d05ce7449a698c0e43ad8ccd76cfc79d4ef1075816`  
-		Last Modified: Thu, 13 Nov 2025 23:25:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 10:29:26 GMT  
 		Size: 46.9 MB (46881521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2ad9ce4ee4363063833b155787dfff300d16b0cc0d33d1cba84158a62f1a601`  
-		Last Modified: Thu, 13 Nov 2025 23:25:18 GMT  
+		Last Modified: Tue, 13 Jan 2026 10:29:21 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f5d6386e69210f0e9bad2ae86eee587a19bc2e8850fbfecca1968f5771c5c53f`  
-		Last Modified: Thu, 13 Nov 2025 23:25:18 GMT  
+		Last Modified: Tue, 13 Jan 2026 10:29:20 GMT  
 		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -527,7 +527,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 29.9 MB (29907597 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0147a99aba12439fa4c91b74f700e26d7619845500f1c2f1faf6b732f356eb94`  
-		Last Modified: Thu, 13 Nov 2025 23:10:47 GMT  
+		Last Modified: Tue, 13 Jan 2026 10:28:22 GMT  
 		Size: 17.6 MB (17581016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cdd8d5ac3b368e1acbcc0fee7732f6e466ef01cddfd09a73ac260a6d26bede28`  
@@ -535,11 +535,11 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 44.0 MB (44031061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:add42ff867dcd0e89d9d3555a02f580fbfa461633c923c4ca9190d8792716d82`  
-		Last Modified: Thu, 13 Nov 2025 23:10:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 10:28:18 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e597879d66d684adb943c1b7daf5fd3b4dc1b6ed0f851f3105649987a4940e83`  
-		Last Modified: Thu, 13 Nov 2025 23:10:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 10:28:17 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
