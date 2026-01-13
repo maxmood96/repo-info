@@ -141,11 +141,11 @@ $ docker pull jruby@sha256:f275c67d0ede90008e22d0dd8dad50b2489ebdbab79ef9084bdf2
 
 -	Layers:
 	-	`sha256:86e561eb3377d041ab9c88c94e859708022a00d5349f7e9655d4b50243438284`  
-		Last Modified: Fri, 14 Nov 2025 01:59:37 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:24:34 GMT  
 		Size: 4.9 MB (4925542 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5787aeb7e0c74362f45d25e6da607ca6c922f0269fa4b932288681deef97f332`  
-		Last Modified: Fri, 14 Nov 2025 01:59:38 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:24:34 GMT  
 		Size: 20.4 KB (20369 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -279,10 +279,10 @@ $ docker pull jruby@sha256:58b9ffdfcf47df9341ec67d277b164fb35a0f99893395aa39e88e
 
 -	Layers:
 	-	`sha256:d535778c381216a9be018d5861ca1b575d4ab03861cc10b24a9901b5346a742f`  
-		Last Modified: Fri, 14 Nov 2025 01:59:43 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:24:39 GMT  
 		Size: 5.0 MB (5029634 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2f2f6619d5234aa67d2f1055e18296bf394904925118d30f7fff054ae2cbe24b`  
-		Last Modified: Fri, 14 Nov 2025 01:59:44 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:24:39 GMT  
 		Size: 20.6 KB (20582 bytes)  
 		MIME: application/vnd.in-toto+json
