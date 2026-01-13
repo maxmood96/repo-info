@@ -105,7 +105,7 @@ CMD ["irb"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed91a992e32b782a42f7beae8b35bd92b91bf012e912e79d399be22adb64a6c0`  
-		Last Modified: Fri, 14 Nov 2025 00:24:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:45:46 GMT  
 		Size: 6.0 MB (6020349 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85bd4ea43afe273ed60a1432e37ce34dd4872b72893fe4a0e87fbe76aef93ffe`  
