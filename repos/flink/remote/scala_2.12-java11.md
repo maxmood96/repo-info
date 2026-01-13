@@ -145,11 +145,11 @@ $ docker pull flink@sha256:0647c1889746de52605d6785569c9391e6cf84e14f7211e142928
 
 -	Layers:
 	-	`sha256:8ab39877ecb78c7dd575d059fac876d8abc2ae284e11bac62dd80f1ec9e20cbd`  
-		Last Modified: Fri, 14 Nov 2025 02:02:49 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:18:55 GMT  
 		Size: 4.0 MB (3999752 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1575545b1e4c526088dcd2950a47463b131068497087a28493fa8b19668f193b`  
-		Last Modified: Fri, 14 Nov 2025 02:02:51 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:18:55 GMT  
 		Size: 28.8 KB (28822 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -287,10 +287,10 @@ $ docker pull flink@sha256:28d5618dae83a435a888e73323fd5204e8ff167cfebc3c2dd60db
 
 -	Layers:
 	-	`sha256:d8a56d04e565f3dd4eb9bbd3a7072f0fffa518f906bd0f933ed7ca251ec98397`  
-		Last Modified: Fri, 14 Nov 2025 02:02:55 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:18:10 GMT  
 		Size: 4.0 MB (4000079 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d641355efcb224aafdf28ccf91daa1853909fb3ec57d91fb2395e34191fb18dd`  
-		Last Modified: Fri, 14 Nov 2025 02:02:56 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:18:10 GMT  
 		Size: 29.0 KB (28993 bytes)  
 		MIME: application/vnd.in-toto+json

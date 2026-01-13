@@ -105,27 +105,27 @@ CMD ["help"]
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:986387ee13799dd42b2149bba85399011e54e6253a21030a0c844dcdca552cb0`  
-		Last Modified: Fri, 14 Nov 2025 00:18:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:13:14 GMT  
 		Size: 1.2 MB (1169695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:027bb93edc85dc4e541750550c46b750c61ed0021aa9197b3fee3a0ea0d4a2c8`  
-		Last Modified: Fri, 14 Nov 2025 00:18:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:13:09 GMT  
 		Size: 900.5 KB (900494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:838c5bac3671b4534a43a2fe6268b0f15764ccf06208a55bdd2c880520fb5867`  
-		Last Modified: Fri, 14 Nov 2025 00:18:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:13:10 GMT  
 		Size: 4.6 KB (4594 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f43a41ca53957a4f5280936f86d2f70d1fedc18f5029f90bc84c4cc873c23970`  
-		Last Modified: Fri, 14 Nov 2025 00:18:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:13:10 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a682e6da4f2ac7547d9a1a4a827b4a6f6bba86345e8644e554a4597ea184df15`  
-		Last Modified: Fri, 14 Nov 2025 02:05:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:13:26 GMT  
 		Size: 567.8 MB (567846311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc310bac846b1c276a98f527fdd44aee14ca6758dc88ef9884311836446d6cd8`  
-		Last Modified: Fri, 14 Nov 2025 00:18:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:13:11 GMT  
 		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -145,11 +145,11 @@ $ docker pull flink@sha256:682b61e91acaae8de9bb006c23f320d709a1cfb2f71f9ee3c6136
 
 -	Layers:
 	-	`sha256:8b62c21f5b7bb16110c23ebc332279597bb104b3aa8f279c0d687aa69af1b00c`  
-		Last Modified: Fri, 14 Nov 2025 02:02:40 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:18:49 GMT  
 		Size: 4.0 MB (3988452 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9bd3128b0ac4f919f7e0a76280bc18b950924844dd5d819a6f79ae45b200e67a`  
-		Last Modified: Fri, 14 Nov 2025 02:02:41 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:18:49 GMT  
 		Size: 30.6 KB (30638 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -287,10 +287,10 @@ $ docker pull flink@sha256:1228d669561f73a167f1f17721f5d6697927b63572c6fc1575d74
 
 -	Layers:
 	-	`sha256:320d93f103e514d90c5368da5cf11fa6b11818a7fa4cbdb14db6b5a656d0208d`  
-		Last Modified: Fri, 14 Nov 2025 02:02:46 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:17:54 GMT  
 		Size: 4.0 MB (3988233 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fd564cce37d38d44e23458652f45fa355028a8e4734f6b0ea370e2af89a7bdaa`  
-		Last Modified: Fri, 14 Nov 2025 02:02:46 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:17:53 GMT  
 		Size: 30.9 KB (30883 bytes)  
 		MIME: application/vnd.in-toto+json
