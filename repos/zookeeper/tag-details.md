@@ -162,11 +162,11 @@ $ docker pull zookeeper@sha256:6624797abb150a9c160cbf2ec8c74055c75fca73badf5cf3d
 
 -	Layers:
 	-	`sha256:9900fa954492fc916b5f63a94ea7b3caf90001c1860013aed30322ba5057d48c`  
-		Last Modified: Fri, 14 Nov 2025 00:49:28 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:36:03 GMT  
 		Size: 4.0 MB (3959465 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1ee0974a568e2fa7949af71f65478892ed30fb28e2391156a4f68d0aaca1c166`  
-		Last Modified: Fri, 14 Nov 2025 00:49:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:36:02 GMT  
 		Size: 24.3 KB (24276 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -307,7 +307,7 @@ $ docker pull zookeeper@sha256:f55bdb4884b36726d637f96dd2fe0615beafe21ec0dd43d07
 		Size: 4.0 MB (3959147 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e9b7d5c738758ad10cdec21a43ff375eec54dbfea08180e273ceda780c86f13a`  
-		Last Modified: Fri, 14 Nov 2025 00:52:13 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:15:09 GMT  
 		Size: 24.4 KB (24408 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -743,11 +743,11 @@ $ docker pull zookeeper@sha256:6624797abb150a9c160cbf2ec8c74055c75fca73badf5cf3d
 
 -	Layers:
 	-	`sha256:9900fa954492fc916b5f63a94ea7b3caf90001c1860013aed30322ba5057d48c`  
-		Last Modified: Fri, 14 Nov 2025 00:49:28 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:36:03 GMT  
 		Size: 4.0 MB (3959465 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1ee0974a568e2fa7949af71f65478892ed30fb28e2391156a4f68d0aaca1c166`  
-		Last Modified: Fri, 14 Nov 2025 00:49:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:36:02 GMT  
 		Size: 24.3 KB (24276 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -888,7 +888,7 @@ $ docker pull zookeeper@sha256:f55bdb4884b36726d637f96dd2fe0615beafe21ec0dd43d07
 		Size: 4.0 MB (3959147 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e9b7d5c738758ad10cdec21a43ff375eec54dbfea08180e273ceda780c86f13a`  
-		Last Modified: Fri, 14 Nov 2025 00:52:13 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:15:09 GMT  
 		Size: 24.4 KB (24408 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1324,11 +1324,11 @@ $ docker pull zookeeper@sha256:6624797abb150a9c160cbf2ec8c74055c75fca73badf5cf3d
 
 -	Layers:
 	-	`sha256:9900fa954492fc916b5f63a94ea7b3caf90001c1860013aed30322ba5057d48c`  
-		Last Modified: Fri, 14 Nov 2025 00:49:28 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:36:03 GMT  
 		Size: 4.0 MB (3959465 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1ee0974a568e2fa7949af71f65478892ed30fb28e2391156a4f68d0aaca1c166`  
-		Last Modified: Fri, 14 Nov 2025 00:49:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:36:02 GMT  
 		Size: 24.3 KB (24276 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1469,7 +1469,7 @@ $ docker pull zookeeper@sha256:f55bdb4884b36726d637f96dd2fe0615beafe21ec0dd43d07
 		Size: 4.0 MB (3959147 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e9b7d5c738758ad10cdec21a43ff375eec54dbfea08180e273ceda780c86f13a`  
-		Last Modified: Fri, 14 Nov 2025 00:52:13 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:15:09 GMT  
 		Size: 24.4 KB (24408 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1905,11 +1905,11 @@ $ docker pull zookeeper@sha256:6624797abb150a9c160cbf2ec8c74055c75fca73badf5cf3d
 
 -	Layers:
 	-	`sha256:9900fa954492fc916b5f63a94ea7b3caf90001c1860013aed30322ba5057d48c`  
-		Last Modified: Fri, 14 Nov 2025 00:49:28 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:36:03 GMT  
 		Size: 4.0 MB (3959465 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1ee0974a568e2fa7949af71f65478892ed30fb28e2391156a4f68d0aaca1c166`  
-		Last Modified: Fri, 14 Nov 2025 00:49:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:36:02 GMT  
 		Size: 24.3 KB (24276 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2050,7 +2050,7 @@ $ docker pull zookeeper@sha256:f55bdb4884b36726d637f96dd2fe0615beafe21ec0dd43d07
 		Size: 4.0 MB (3959147 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e9b7d5c738758ad10cdec21a43ff375eec54dbfea08180e273ceda780c86f13a`  
-		Last Modified: Fri, 14 Nov 2025 00:52:13 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:15:09 GMT  
 		Size: 24.4 KB (24408 bytes)  
 		MIME: application/vnd.in-toto+json
 
