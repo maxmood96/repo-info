@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e7ebcc375cef6aeb497d29295940cb15ef0436a8f5e53bc48019767638a075ee`
-- Created: `2025-12-18T22:07:56.270715031Z`
+- Image ID: `sha256:ec76d4eaab5cfee44883646ded25ea1949e83d8883516b3c302ed2fabea27c1f`
+- Created: `2026-01-09T23:25:26.892089717Z`
 - Virtual Size: ~ 312.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1166,16 +1166,16 @@ MIT
 ### `apk` package: `libsodium`
 
 ```console
-libsodium-1.0.20-r0 description:
+libsodium-1.0.20-r1 description:
 P(ortable|ackageable) NaCl-based crypto library
 
-libsodium-1.0.20-r0 webpage:
+libsodium-1.0.20-r1 webpage:
 https://github.com/jedisct1/libsodium
 
-libsodium-1.0.20-r0 installed size:
+libsodium-1.0.20-r1 installed size:
 339 KiB
 
-libsodium-1.0.20-r0 license:
+libsodium-1.0.20-r1 license:
 ISC
 
 ```
