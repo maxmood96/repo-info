@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:23732863b3f41fa6a96ab4370b410b3cfdb2953843b8d721e877a1fbb736f160`
-- Created: `2026-01-02T22:48:43.148307382Z`
+- Image ID: `sha256:f81ab8e63c0f5013e66a01248c4f6deecc3dc6f2b2fe10fbdc1baa1ce8fd953c`
+- Created: `2026-01-10T00:27:27.926752731Z`
 - Virtual Size: ~ 580.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -248,19 +248,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8+deb13u2
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u2.dsc' base-files_13.8+deb13u2.dsc 1247 SHA256:ea3dc1f1288ab9c2d064855e739e9f5786863ee044f5db8ac09d8a76ffcba3b6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u2.tar.xz' base-files_13.8+deb13u2.tar.xz 68692 SHA256:d92bd5a92e12ef0195f449ea63bf53d4a4f3c12c6730f77fdafb917a305902a0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8+deb13u2/
 
-- https://sources.debian.net/src/base-files/13.8+deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8+deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -1126,21 +1120,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.9-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9-3.dsc' gnutls28_3.8.9-3.dsc 3236 SHA256:607dbc91727ff5d8a51af66e800abab837479de4e18775fc069a7b5ffc780d3d
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz' gnutls28_3.8.9.orig.tar.xz 6847364 SHA256:69e113d802d1670c4d5ac1b99040b1f2d5c7c05daec5003813c049b5184820ed
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz.asc' gnutls28_3.8.9.orig.tar.xz.asc 833 SHA256:7631d47762865d4ef494492cca794cf0fe6a8be892a4aa02f362ae29006d3054
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9-3.debian.tar.xz' gnutls28_3.8.9-3.debian.tar.xz 85848 SHA256:f578bd4dd0b35d56aedf002a4a7b504a965a9d1a4587d2ad3a92718a45887cbf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.9-3/
 
-- https://sources.debian.net/src/gnutls28/3.8.9-3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.9-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.9-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gosu=1.17-3`
 
@@ -1745,11 +1731,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsepol/3.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsepol/3.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libsodium=1.0.18-1`
+### `dpkg` source package: `libsodium=1.0.18-1+deb13u1`
 
 Binary Packages:
 
-- `libsodium23:amd64=1.0.18-1+b2`
+- `libsodium23:amd64=1.0.18-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsodium23/copyright`)
 
@@ -1765,17 +1751,17 @@ Licenses: (parsed from: `/usr/share/doc/libsodium23/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libsodium=1.0.18-1
-'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.18-1.dsc' libsodium_1.0.18-1.dsc 1913 SHA256:037b3ac05a50409cb462e2c21c7a67f983d193a22d2486f4ab3fdc793f5a731c
-'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.18.orig.tar.gz' libsodium_1.0.18.orig.tar.gz 1619527 SHA256:d59323c6b712a1519a5daf710b68f5e7fde57040845ffec53850911f10a5d4f4
-'http://deb.debian.org/debian/pool/main/libs/libsodium/libsodium_1.0.18-1.debian.tar.xz' libsodium_1.0.18-1.debian.tar.xz 7440 SHA256:50863d8fc4f0a2a86f7b69745514455f0b9d74cf45906523c675ffe5b8db0377
+$ apt-get source -qq --print-uris libsodium=1.0.18-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libsodium/libsodium_1.0.18-1%2bdeb13u1.dsc' libsodium_1.0.18-1+deb13u1.dsc 1945 SHA256:6954dd20ba6576b98802cd89fb7661c724d86e628da4af6cea6fac195534b628
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libsodium/libsodium_1.0.18.orig.tar.gz' libsodium_1.0.18.orig.tar.gz 1619527 SHA256:d59323c6b712a1519a5daf710b68f5e7fde57040845ffec53850911f10a5d4f4
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libsodium/libsodium_1.0.18-1%2bdeb13u1.debian.tar.xz' libsodium_1.0.18-1+deb13u1.debian.tar.xz 8252 SHA256:86110bbca36b16567bc35971486c4e6bd4aaf59e74310bc0faf76840ac4e2afe
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libsodium/1.0.18-1/ (for browsing the source)
-- https://sources.debian.net/src/libsodium/1.0.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsodium/1.0.18-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libsodium/1.0.18-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libsodium/1.0.18-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libsodium/1.0.18-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.11.1-1`
 
@@ -2602,20 +2588,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-17=17.6-0+deb13u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.6-0%2bdeb13u1.dsc' postgresql-17_17.6-0+deb13u1.dsc 4277 SHA256:5210a623d9a2a4c68bf2efcbeb38f3357579f8e7a80ddfb9afa30350e294b592
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.6.orig.tar.bz2' postgresql-17_17.6.orig.tar.bz2 21623975 SHA256:e0630a3600aea27511715563259ec2111cd5f4353a4b040e0be827f94cd7a8b0
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.6-0%2bdeb13u1.debian.tar.xz' postgresql-17_17.6-0+deb13u1.debian.tar.xz 28656 SHA256:670be1c39b4642af68b5a8ccea2cbcb731b31e53d47a0145c7750410084d64b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-17/17.6-0+deb13u1/
 
-- https://sources.debian.net/src/postgresql-17/17.6-0+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-17/17.6-0+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-17/17.6-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=4.1-1`
 
