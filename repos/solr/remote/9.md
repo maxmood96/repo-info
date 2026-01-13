@@ -138,7 +138,7 @@ CMD ["solr-foreground"]
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e780b6448e9fcbd386e57fc0127236f683fe2f65d97d0735b5ba5e63626e05f4`  
-		Last Modified: Fri, 14 Nov 2025 03:00:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:04:02 GMT  
 		Size: 389.1 MB (389064967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5d8eb5d5688a4ea06162e591c7205198e53600ba53092c08bcacb51389a1588`  
@@ -178,11 +178,11 @@ $ docker pull solr@sha256:cba4f7d65ecd061458bdd7632c4b1e9028491e9dd7af98627a7db7
 
 -	Layers:
 	-	`sha256:cd0d333605bd31938060b486dceb993b0dc8e21ed645c1d04043ebc66854c11a`  
-		Last Modified: Fri, 14 Nov 2025 02:58:30 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:36:12 GMT  
 		Size: 4.5 MB (4539699 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e6107657ecd586fe1302225c5867d15ca7d577daa119f0d0461e55566d3404c1`  
-		Last Modified: Fri, 14 Nov 2025 02:58:31 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:36:12 GMT  
 		Size: 34.3 KB (34307 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -349,11 +349,11 @@ $ docker pull solr@sha256:f718ef78f36eec53829f8e22d6554429856f866a1406736d90eef0
 
 -	Layers:
 	-	`sha256:c17f1fb8a16bc279fef4a42e8bd3e81be0cfadce9d9c200e14aa9c0398273280`  
-		Last Modified: Fri, 14 Nov 2025 02:58:36 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:36:43 GMT  
 		Size: 4.5 MB (4539375 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5d9da6f21a0b2c5f54845d3ec318ba725285c84e06f787b6e83e20d9c8650bea`  
-		Last Modified: Fri, 14 Nov 2025 02:58:37 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:36:42 GMT  
 		Size: 34.5 KB (34471 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -691,10 +691,10 @@ $ docker pull solr@sha256:f62e965fa1ecc5185b2ab960e929e963de9cb83a0303f49c16f07d
 
 -	Layers:
 	-	`sha256:fd8e0a26b8c942ca5627858248f82f50a3596423dfa7db43a43d549a52ab52ec`  
-		Last Modified: Fri, 14 Nov 2025 02:58:47 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:35:15 GMT  
 		Size: 4.5 MB (4541295 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:86f8dc44631201a2b26c036259542282ed065196ddd92b3213801395dffeeb2c`  
-		Last Modified: Fri, 14 Nov 2025 02:58:48 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:35:15 GMT  
 		Size: 34.3 KB (34307 bytes)  
 		MIME: application/vnd.in-toto+json
