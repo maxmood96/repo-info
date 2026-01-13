@@ -1,7 +1,7 @@
 ## `mageia:cauldron`
 
 ```console
-$ docker pull mageia@sha256:af97dd129b928d344418098347e52722a079e15383899632d0cd0a2f65423c70
+$ docker pull mageia@sha256:2e564cd7e23a735db71076302dbe9e436aa7e2bf0c8337020fe6cf17ec8bdee1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,49 +16,49 @@ $ docker pull mageia@sha256:af97dd129b928d344418098347e52722a079e15383899632d0cd
 ### `mageia:cauldron` - linux; amd64
 
 ```console
-$ docker pull mageia@sha256:cab3cf29610af3704143927b3ce21f2fc5f35c843bc9edd8c62cfc9ba9adf486
+$ docker pull mageia@sha256:a31194a6249e918a24e6d9abe2709d5c0b7224f3b90065418229901e577a904d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.0 MB (131985613 bytes)**  
+-	Total Size: **134.7 MB (134696119 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dba96f70d1c7641590dc6e8a47a543e2597821a4e083579e358a06cb48176d22`
+-	Image ID: `sha256:67a1149698c30b43b8149ccb143fed723ca415f319587350c4403036247b19cc`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 18:15:23 GMT
+# Tue, 13 Jan 2026 17:49:14 GMT
 ADD rootfs.tar.xz / # buildkit
-# Wed, 17 Dec 2025 18:15:23 GMT
+# Tue, 13 Jan 2026 17:49:14 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:af7e7f65971f97126c5b9a52247cc53e71d2c670e1f635532143badbdc71c247`  
-		Last Modified: Wed, 17 Dec 2025 18:16:48 GMT  
-		Size: 132.0 MB (131985613 bytes)  
+	-	`sha256:608d75d03b6acc52e188ef6c2576627b3c77311972c23ec9b2e85901466294b0`  
+		Last Modified: Tue, 13 Jan 2026 17:56:24 GMT  
+		Size: 134.7 MB (134696119 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mageia:cauldron` - unknown; unknown
 
 ```console
-$ docker pull mageia@sha256:c7e78774b5cd68f312e5043f0e0e74f4ccf40273e76a8251834e74322d5c2053
+$ docker pull mageia@sha256:ccbbd7bca0c1529d7ce4c5fc06a4074e434f5dbd4c70db78ddbec280deba6e93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.1 MB (7090285 bytes)**  
+-	Total Size: **7.1 MB (7106398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4816687a6aa90dd835d28984b8f9baa73e48955286f6d02c47346858faaf017`
+-	Image ID: `sha256:3862c7cf813a3a59e217652b962fccc5d815d58a21964a44081f08105f90d0f9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aee3ee145699a4f2bb04d838aa2369599fd345d4effa7f6754cfd31697d34bc6`  
-		Last Modified: Wed, 17 Dec 2025 18:52:29 GMT  
-		Size: 7.1 MB (7085299 bytes)  
+	-	`sha256:488dac920b91602a8811ecda73ed4b98bca486b219898bbbe038c5793b92cdc9`  
+		Last Modified: Tue, 13 Jan 2026 17:49:39 GMT  
+		Size: 7.1 MB (7101412 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:00ffa2d0944ebaf07ed6c2893f7727bac92e52ab905134396f6c665eb4b7adc7`  
-		Last Modified: Wed, 17 Dec 2025 18:52:29 GMT  
+	-	`sha256:3a6ee44b2e69bd691b7991edfd4064b3aba8e48c5f88ce66128148c78b609495`  
+		Last Modified: Tue, 13 Jan 2026 17:49:38 GMT  
 		Size: 5.0 KB (4986 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -114,48 +114,48 @@ $ docker pull mageia@sha256:b88ad39e4690ddb4bc860059bbb489f46d5934eed2678c5c4638
 ### `mageia:cauldron` - linux; arm64 variant v8
 
 ```console
-$ docker pull mageia@sha256:0431144efdb0e67853d2e7d08126dd2c2eddcac5750cdda74b7b801425b6ce59
+$ docker pull mageia@sha256:fa79874bb413729c1101eab007514eed3728c59ece194ebdbc5bfa3a06531539
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.8 MB (125831491 bytes)**  
+-	Total Size: **128.9 MB (128942227 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9064b94f87c7175abb524e2a7c90f009ddc84292a86b55d0106e170f7543b2c1`
+-	Image ID: `sha256:a9e529d3733f27f725aca0d97912ec620d5082155607ca40f7cf4bacacc9b068`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 18:16:16 GMT
+# Tue, 13 Jan 2026 17:49:10 GMT
 ADD rootfs.tar.xz / # buildkit
-# Wed, 17 Dec 2025 18:16:16 GMT
+# Tue, 13 Jan 2026 17:49:10 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:d3e1c8779f458ddb120e8fda5bd97dfc2302e9a91fb354ad3752ff24a197ea57`  
-		Last Modified: Wed, 17 Dec 2025 18:17:06 GMT  
-		Size: 125.8 MB (125831491 bytes)  
+	-	`sha256:dec6bd34d57d1644a18d1c4d808057cb4fdb872cff62157508ec83d5dfb29668`  
+		Last Modified: Tue, 13 Jan 2026 17:49:37 GMT  
+		Size: 128.9 MB (128942227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mageia:cauldron` - unknown; unknown
 
 ```console
-$ docker pull mageia@sha256:12d78c5eee3c6349f332db452d31199dccece64cc8922e13692b2fe86653839f
+$ docker pull mageia@sha256:8941024fcfa8c3d8ef41b0e072a82320f1689a49c834d5871a95172c86164800
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.1 MB (7070679 bytes)**  
+-	Total Size: **7.1 MB (7086792 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21cedfddcd9df02cc13ae0087b0548a9f9e9f4319fb4bc42f30a2260a6cb2c5f`
+-	Image ID: `sha256:b46eda0b7cc9ddc0fbf69cbefe4f662b62bd751e3f83281f132649648121ccb7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f4d521131d0079b42ba6b4f3c5b22cba3023c74af8fe21bd10b47ba50d9e3185`  
-		Last Modified: Wed, 17 Dec 2025 18:52:53 GMT  
-		Size: 7.1 MB (7065663 bytes)  
+	-	`sha256:3773fad27641d82e68589b3ab4ba79c4f4fd2df9676e186ed86ee16ee2355d00`  
+		Last Modified: Tue, 13 Jan 2026 17:49:34 GMT  
+		Size: 7.1 MB (7081776 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3e12e813c8b99c2c22cabebbbb7e923dcdec2236292ae88c9f64b8ea53dbd78d`  
-		Last Modified: Wed, 17 Dec 2025 18:52:54 GMT  
+	-	`sha256:a04cb763339f136978528dea5e24cf7c3757b0abfae4e17e7a8204df479a3299`  
+		Last Modified: Tue, 13 Jan 2026 17:49:33 GMT  
 		Size: 5.0 KB (5016 bytes)  
 		MIME: application/vnd.in-toto+json
