@@ -247,7 +247,7 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Size: 21.5 MB (21537994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9197ae10611d88bce9d0514566672932f4b3ed4908ee37aaec28fdee1969962c`  
-		Last Modified: Fri, 14 Nov 2025 00:42:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 10:11:51 GMT  
 		Size: 441.6 MB (441644050 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3658a12fbc8aeb8fd457eeeaf788117883542594de4a838374d8ad7c72744c5a`  
