@@ -1,7 +1,7 @@
 ## `convertigo:latest`
 
 ```console
-$ docker pull convertigo@sha256:ebcaa1ec48ce1766a6808d6bad9f9a3bcf1d538473a80b888c0e1b932f3be6d4
+$ docker pull convertigo@sha256:5c25f4da4974ad8a2ba026279688be0c85ecd65be70feddeb93442fc3cffe064
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull convertigo@sha256:ebcaa1ec48ce1766a6808d6bad9f9a3bcf1d538473a80b88
 ### `convertigo:latest` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:04862a0beab091c024ec26221af487b2e65d79c31b29de954d662ec2da29d4eb
+$ docker pull convertigo@sha256:307f93f1ea3ad45bf04b0b99b3d0d78899e7512f1d8a7f2a471de6f3a701b077
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **342.5 MB (342457412 bytes)**  
+-	Total Size: **345.0 MB (344981044 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00ff2f982026b8f1342bff0152a565d67b4670d45ff9a7546a5e3b031d04e160`
+-	Image ID: `sha256:9db4a714936554064bf8140b7fe7775014535670ef48aa6c4a6044e89edd6f34`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -85,41 +85,41 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Mon, 08 Dec 2025 20:07:27 GMT
 CMD ["catalina.sh" "run"]
-# Mon, 08 Dec 2025 21:13:54 GMT
+# Tue, 13 Jan 2026 19:16:55 GMT
 ENV SWT_GTK3=0
-# Mon, 08 Dec 2025 21:13:54 GMT
+# Tue, 13 Jan 2026 19:16:55 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Mon, 08 Dec 2025 21:13:54 GMT
+# Tue, 13 Jan 2026 19:16:55 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Mon, 08 Dec 2025 21:13:54 GMT
+# Tue, 13 Jan 2026 19:16:55 GMT
 WORKDIR /usr/local/tomcat
-# Mon, 08 Dec 2025 21:14:05 GMT
+# Tue, 13 Jan 2026 19:17:09 GMT
 RUN apt-get update -y   && apt-get install -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg     sudo     tini     unzip   && apt-get remove -y --purge libfreetype6   && apt-get autoremove -y   && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 21:14:05 GMT
+# Tue, 13 Jan 2026 19:17:09 GMT
 RUN useradd -s /bin/false -m convertigo     && mkdir -p /workspace     && chown -R convertigo:convertigo /workspace     && chmod -R 777 /workspace     && echo "convertigo ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/convertigo     && chmod 0440 /etc/sudoers.d/convertigo # buildkit
-# Mon, 08 Dec 2025 21:14:05 GMT
+# Tue, 13 Jan 2026 19:17:09 GMT
 RUN sed -i.bak         -e '/protocol="AJP/d'         -e '/JasperListener/d'         -e 's/port="8080"/port="28080" maxThreads="64000" relaxedQueryChars="{}[]|"/'         -e 's,</Host>,  <Valve className="org.apache.catalina.valves.RemoteIpValve" />\n        <Valve className="org.apache.catalina.valves.ErrorReportValve"  errorCode.404="webapps/convertigo/404.html" errorCode.0="webapps/convertigo/error.html" showReport="false" showServerInfo="false" />\n      </Host>,'         -e 's,</Service>,<!--SSL<Connector port="28443" protocol="org.apache.coyote.http11.Http11AprProtocol" SSLEnabled="true" maxThreads="64000" relaxedQueryChars="{}[]|">\n      <UpgradeProtocol className="org.apache.coyote.http2.Http2Protocol" />\n      <SSLHostConfig>\n        <Certificate certificateKeyFile="/certs/key.pem"\n                     certificateFile="/certs/cert.pem"\n                     certificateChainFile="/certs/chain.pem"\n                     type="RSA" />\n      </SSLHostConfig>\n    </Connector>SSL-->\n  </Service>,'         conf/server.xml     && sed -i.bak         -e 's,<Context>,<Context sessionCookiePath="/">,'         -e 's,</Context>,<Manager pathname="" /><CookieProcessor sameSiteCookies="unset" /></Context>,'         conf/context.xml     && rm -rf webapps/* bin/*.bat conf/server.xml.bak /tmp/*     && mkdir webapps/ROOT     && chown -R convertigo:convertigo conf temp work logs     && chmod -w conf/*     && chmod 777 conf/context.xml conf/server.xml # buildkit
-# Mon, 08 Dec 2025 21:14:05 GMT
-ENV CONVERTIGO_VERSION=8.3.10
-# Mon, 08 Dec 2025 21:14:05 GMT
-ENV CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.10/convertigo-8.3.10.war
-# Mon, 08 Dec 2025 21:14:05 GMT
+# Tue, 13 Jan 2026 19:17:09 GMT
+ENV CONVERTIGO_VERSION=8.3.11
+# Tue, 13 Jan 2026 19:17:09 GMT
+ENV CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.11/convertigo-8.3.11.war
+# Tue, 13 Jan 2026 19:17:09 GMT
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
-# Mon, 08 Dec 2025 21:14:09 GMT
+# Tue, 13 Jan 2026 19:17:12 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && ( gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$CONVERTIGO_GPG_KEYS" )     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir -p webapps/ROOT webapps/convertigo     && mkdir /certs && chmod 777 /certs     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && chmod 777 WEB-INF/web.xml WEB-INF/lib WEB-INF/classes         && rm -rf /tmp/*) # buildkit
-# Mon, 08 Dec 2025 21:14:09 GMT
+# Tue, 13 Jan 2026 19:17:13 GMT
 COPY ./root-index.html webapps/ROOT/index.html # buildkit
-# Mon, 08 Dec 2025 21:14:09 GMT
+# Tue, 13 Jan 2026 19:17:13 GMT
 COPY ./docker-entrypoint.sh / # buildkit
-# Mon, 08 Dec 2025 21:14:09 GMT
+# Tue, 13 Jan 2026 19:17:13 GMT
 WORKDIR /workspace
-# Mon, 08 Dec 2025 21:14:09 GMT
+# Tue, 13 Jan 2026 19:17:13 GMT
 VOLUME [/workspace]
-# Mon, 08 Dec 2025 21:14:09 GMT
+# Tue, 13 Jan 2026 19:17:13 GMT
 EXPOSE map[28080/tcp:{}]
-# Mon, 08 Dec 2025 21:14:09 GMT
+# Tue, 13 Jan 2026 19:17:13 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Mon, 08 Dec 2025 21:14:09 GMT
+# Tue, 13 Jan 2026 19:17:13 GMT
 CMD ["convertigo"]
 ```
 
@@ -168,28 +168,28 @@ CMD ["convertigo"]
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68d383511e57340214fbdf2f9655d573fe6f312bee658610da35c0537a92be46`  
-		Last Modified: Mon, 08 Dec 2025 21:14:39 GMT  
-		Size: 1.5 MB (1490208 bytes)  
+	-	`sha256:f6f8544ed259dff1e086b2cd63506053b799341b1ca839c611b74dca218507ed`  
+		Last Modified: Tue, 13 Jan 2026 19:17:40 GMT  
+		Size: 3.7 MB (3739031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bb501c8a96e980dc7ec99c7b314a6bde2e36423baa66bc773e216ae69ec61ea`  
-		Last Modified: Mon, 08 Dec 2025 21:14:39 GMT  
-		Size: 4.5 KB (4462 bytes)  
+	-	`sha256:4a885d519159196a76e32cf7987320b5bdcf41a6f2322ced04e46dd88f0ba7d2`  
+		Last Modified: Tue, 13 Jan 2026 19:17:40 GMT  
+		Size: 4.5 KB (4466 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1498ea9b14586069b7c0413d800156743e7bbcf1ad1688c7c9e284614fc26dc`  
-		Last Modified: Mon, 08 Dec 2025 21:14:39 GMT  
-		Size: 28.1 KB (28054 bytes)  
+	-	`sha256:967596dde34535088bcd098d27cf1d4930cce3f3d556acce8b69790f20f8a445`  
+		Last Modified: Tue, 13 Jan 2026 19:17:40 GMT  
+		Size: 28.1 KB (28059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c4e5be7f4db0126df724ea14653892e6005ecc82ad1963144b5150c588cdd64`  
-		Last Modified: Mon, 08 Dec 2025 21:14:58 GMT  
-		Size: 118.8 MB (118833776 bytes)  
+	-	`sha256:4837e40a8017111b0f3355a16f17c669715faeb6e871c3749eb075f33be2ef41`  
+		Last Modified: Tue, 13 Jan 2026 19:17:52 GMT  
+		Size: 119.1 MB (119108574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b08f6b1c89aeb1b0c3477b72be46b82519ad016c7d615b14928cd0e4b2877ebb`  
-		Last Modified: Mon, 08 Dec 2025 21:14:39 GMT  
-		Size: 446.0 B  
+	-	`sha256:970e2938bbba93c10552eaa1691ca9d2e994a1136a2c44d7947e022811537b9d`  
+		Last Modified: Tue, 13 Jan 2026 19:17:41 GMT  
+		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5b68a5dccadf3305974113d6b0269ee984de939990adc0586b1a0440384bd3b`  
-		Last Modified: Mon, 08 Dec 2025 21:14:40 GMT  
+	-	`sha256:de9bf1f6dfdeaa8f339761e95c4387d67fd5bea097e8a673d9ba16397f4e9d8f`  
+		Last Modified: Tue, 13 Jan 2026 19:17:44 GMT  
 		Size: 2.4 KB (2416 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -200,37 +200,37 @@ CMD ["convertigo"]
 ### `convertigo:latest` - unknown; unknown
 
 ```console
-$ docker pull convertigo@sha256:badb02b0e5fd28fe30733fa35dfe303341c9166eaa521b0d23aff3f9250db194
+$ docker pull convertigo@sha256:ef2c9177e194086ad3c92e979c13a41790dea9e1095de889a6aa60d1c3492628
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.4 MB (4391447 bytes)**  
+-	Total Size: **4.4 MB (4392730 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26b35ff9d11d459dbfa13788319ba2f8e9eb21bed142e37a8bf00af78b58004e`
+-	Image ID: `sha256:affae46f9d75885896108e7eee4cd60a5e4f23de5e93de9ce4f99acdde960cf2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03cd1f4822474f2d5cc44bdd5a4060b487ee8fe84bc6dafc7f732c0972f4b7c9`  
-		Last Modified: Tue, 09 Dec 2025 00:01:03 GMT  
-		Size: 4.3 MB (4346489 bytes)  
+	-	`sha256:bb32147908c22b1b4cebf3ab565c6347b130a303876b8eab1d5ab9130baacb0b`  
+		Last Modified: Tue, 13 Jan 2026 20:59:24 GMT  
+		Size: 4.3 MB (4347775 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:36b06cfee62eb5d1f2e9097fdf5d84af121c413059d82840688d4c4ee69bd8c4`  
-		Last Modified: Tue, 09 Dec 2025 00:01:04 GMT  
-		Size: 45.0 KB (44958 bytes)  
+	-	`sha256:342092bd4cbd93d4ef5d1e7ef14f00e43fddd95fa64cc44c6af540df2967f4ad`  
+		Last Modified: Tue, 13 Jan 2026 20:59:25 GMT  
+		Size: 45.0 KB (44955 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `convertigo:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull convertigo@sha256:0dbba9f6bde163e78f4b2b9e4ef54f6fcf4e654c99c66daf9d5fbfd496215ec8
+$ docker pull convertigo@sha256:2a17d3c03ef1a2cb6b73f166e55b43564bae69e27db4e242c1f33c3678f0b2f9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **339.9 MB (339875945 bytes)**  
+-	Total Size: **342.4 MB (342373495 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c6fb167ed21acb2f1bb3e8446080a900e97a2057eb0f1517f93bd6b1302a0a9c`
+-	Image ID: `sha256:215e6f3200068688626c0e5be2d4227276c33fd9529c57fe45c2db3fdb8b2396`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -295,41 +295,41 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Mon, 08 Dec 2025 20:05:42 GMT
 CMD ["catalina.sh" "run"]
-# Mon, 08 Dec 2025 20:19:49 GMT
+# Tue, 13 Jan 2026 19:15:42 GMT
 ENV SWT_GTK3=0
-# Mon, 08 Dec 2025 20:19:49 GMT
+# Tue, 13 Jan 2026 19:15:42 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Mon, 08 Dec 2025 20:19:49 GMT
+# Tue, 13 Jan 2026 19:15:42 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Mon, 08 Dec 2025 20:19:49 GMT
+# Tue, 13 Jan 2026 19:15:42 GMT
 WORKDIR /usr/local/tomcat
-# Mon, 08 Dec 2025 20:20:01 GMT
+# Tue, 13 Jan 2026 19:15:55 GMT
 RUN apt-get update -y   && apt-get install -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg     sudo     tini     unzip   && apt-get remove -y --purge libfreetype6   && apt-get autoremove -y   && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 08 Dec 2025 20:20:02 GMT
+# Tue, 13 Jan 2026 19:15:56 GMT
 RUN useradd -s /bin/false -m convertigo     && mkdir -p /workspace     && chown -R convertigo:convertigo /workspace     && chmod -R 777 /workspace     && echo "convertigo ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/convertigo     && chmod 0440 /etc/sudoers.d/convertigo # buildkit
-# Mon, 08 Dec 2025 20:20:02 GMT
+# Tue, 13 Jan 2026 19:15:56 GMT
 RUN sed -i.bak         -e '/protocol="AJP/d'         -e '/JasperListener/d'         -e 's/port="8080"/port="28080" maxThreads="64000" relaxedQueryChars="{}[]|"/'         -e 's,</Host>,  <Valve className="org.apache.catalina.valves.RemoteIpValve" />\n        <Valve className="org.apache.catalina.valves.ErrorReportValve"  errorCode.404="webapps/convertigo/404.html" errorCode.0="webapps/convertigo/error.html" showReport="false" showServerInfo="false" />\n      </Host>,'         -e 's,</Service>,<!--SSL<Connector port="28443" protocol="org.apache.coyote.http11.Http11AprProtocol" SSLEnabled="true" maxThreads="64000" relaxedQueryChars="{}[]|">\n      <UpgradeProtocol className="org.apache.coyote.http2.Http2Protocol" />\n      <SSLHostConfig>\n        <Certificate certificateKeyFile="/certs/key.pem"\n                     certificateFile="/certs/cert.pem"\n                     certificateChainFile="/certs/chain.pem"\n                     type="RSA" />\n      </SSLHostConfig>\n    </Connector>SSL-->\n  </Service>,'         conf/server.xml     && sed -i.bak         -e 's,<Context>,<Context sessionCookiePath="/">,'         -e 's,</Context>,<Manager pathname="" /><CookieProcessor sameSiteCookies="unset" /></Context>,'         conf/context.xml     && rm -rf webapps/* bin/*.bat conf/server.xml.bak /tmp/*     && mkdir webapps/ROOT     && chown -R convertigo:convertigo conf temp work logs     && chmod -w conf/*     && chmod 777 conf/context.xml conf/server.xml # buildkit
-# Mon, 08 Dec 2025 20:20:02 GMT
-ENV CONVERTIGO_VERSION=8.3.10
-# Mon, 08 Dec 2025 20:20:02 GMT
-ENV CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.10/convertigo-8.3.10.war
-# Mon, 08 Dec 2025 20:20:02 GMT
+# Tue, 13 Jan 2026 19:15:56 GMT
+ENV CONVERTIGO_VERSION=8.3.11
+# Tue, 13 Jan 2026 19:15:56 GMT
+ENV CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.11/convertigo-8.3.11.war
+# Tue, 13 Jan 2026 19:15:56 GMT
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
-# Mon, 08 Dec 2025 20:20:10 GMT
+# Tue, 13 Jan 2026 19:16:03 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && ( gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$CONVERTIGO_GPG_KEYS" )     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir -p webapps/ROOT webapps/convertigo     && mkdir /certs && chmod 777 /certs     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && chmod 777 WEB-INF/web.xml WEB-INF/lib WEB-INF/classes         && rm -rf /tmp/*) # buildkit
-# Mon, 08 Dec 2025 20:20:10 GMT
+# Tue, 13 Jan 2026 19:16:04 GMT
 COPY ./root-index.html webapps/ROOT/index.html # buildkit
-# Mon, 08 Dec 2025 20:20:10 GMT
+# Tue, 13 Jan 2026 19:16:04 GMT
 COPY ./docker-entrypoint.sh / # buildkit
-# Mon, 08 Dec 2025 20:20:10 GMT
+# Tue, 13 Jan 2026 19:16:04 GMT
 WORKDIR /workspace
-# Mon, 08 Dec 2025 20:20:10 GMT
+# Tue, 13 Jan 2026 19:16:04 GMT
 VOLUME [/workspace]
-# Mon, 08 Dec 2025 20:20:10 GMT
+# Tue, 13 Jan 2026 19:16:04 GMT
 EXPOSE map[28080/tcp:{}]
-# Mon, 08 Dec 2025 20:20:10 GMT
+# Tue, 13 Jan 2026 19:16:04 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Mon, 08 Dec 2025 20:20:10 GMT
+# Tue, 13 Jan 2026 19:16:04 GMT
 CMD ["convertigo"]
 ```
 
@@ -378,29 +378,29 @@ CMD ["convertigo"]
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b011073e59d6af78f8c04d7c2d3a7c30296cf62604a6a9ad1a6dca3017901f97`  
-		Last Modified: Mon, 08 Dec 2025 20:20:35 GMT  
-		Size: 1.4 MB (1392682 bytes)  
+	-	`sha256:49930f3c0ca690e137a75fa3dc2ebf9da89454a119a9e66379c8192e49412cf8`  
+		Last Modified: Tue, 13 Jan 2026 19:16:30 GMT  
+		Size: 3.6 MB (3615396 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:27853f0640b76c80222f716b30a28b7b89d514bb9c410e4965f9e4a9a1486e9d`  
-		Last Modified: Mon, 08 Dec 2025 20:20:35 GMT  
-		Size: 4.5 KB (4476 bytes)  
+	-	`sha256:b1d9f591c0b6ef841fa0239daa58791038c43cf8217bbc6a1d820faebcc574bd`  
+		Last Modified: Tue, 13 Jan 2026 19:16:29 GMT  
+		Size: 4.5 KB (4477 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3d1a98144b85a86f7671fb786986cdfe38408a92dadadabf5505c103d1a7a2b`  
-		Last Modified: Mon, 08 Dec 2025 20:20:34 GMT  
-		Size: 28.1 KB (28054 bytes)  
+	-	`sha256:5254fc1caa78bca6c01bbd427125d92d8412de7818c475536065e559082eae00`  
+		Last Modified: Tue, 13 Jan 2026 19:16:29 GMT  
+		Size: 28.1 KB (28055 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b98336fdadbfd467df6979745037e315fe218dd4a8debf2e7bff1cbeda7005d`  
-		Last Modified: Mon, 08 Dec 2025 20:20:46 GMT  
-		Size: 118.8 MB (118833735 bytes)  
+	-	`sha256:46ccbba1c8d14594c88100642fe4260944e988490eea5b8a7fa5e21df5cde209`  
+		Last Modified: Tue, 13 Jan 2026 19:16:44 GMT  
+		Size: 119.1 MB (119108568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b042957bd2642f52c011fb7ea63961e5c0f029cdb32710635c59d5b0e34239fa`  
-		Last Modified: Mon, 08 Dec 2025 20:20:34 GMT  
+	-	`sha256:a6b91995c03ab8451d784ff442279d2486bcc2b05912898e2f548520586303c9`  
+		Last Modified: Tue, 13 Jan 2026 19:16:29 GMT  
 		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:055919813edfa39727ca4145a032da1573efbafff5abd14ea39c069551e8bc7d`  
-		Last Modified: Mon, 08 Dec 2025 20:20:34 GMT  
-		Size: 2.4 KB (2415 bytes)  
+	-	`sha256:700ab7ab37fba8b037f6fcc41816c8eb44950c36fa317879568f7efedf947311`  
+		Last Modified: Tue, 13 Jan 2026 19:16:29 GMT  
+		Size: 2.4 KB (2416 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
@@ -410,23 +410,23 @@ CMD ["convertigo"]
 ### `convertigo:latest` - unknown; unknown
 
 ```console
-$ docker pull convertigo@sha256:1857bc4f9a1583f684642cae4532b9255effc0195e1768ea42462df93c0f5cac
+$ docker pull convertigo@sha256:c746e9b9ed804d9f212f28c9fae3b0d6cbed0f4e8e5525dd3f646642cba69624
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4487065 bytes)**  
+-	Total Size: **4.5 MB (4488351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7c6487d51c21d9eb0cf251dababfdca58ad3a423d4909b79f3541da272d332f`
+-	Image ID: `sha256:abd62eb81d6f841a2bff29e96d2b1da5f1c2da9fa244d3f69fd4326d93d3812f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0e06b6b205f7294ad4f0a01a88827188e46ceb26523fd29ed91bccca060cd8d9`  
-		Last Modified: Tue, 09 Dec 2025 00:01:09 GMT  
-		Size: 4.4 MB (4441955 bytes)  
+	-	`sha256:e895bb1e21b508b9eeda1edeae8df865ddb9927ae90413730d92f4d6228be971`  
+		Last Modified: Tue, 13 Jan 2026 20:59:31 GMT  
+		Size: 4.4 MB (4443241 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:943bc9f436742d8e5009239e51f64ee19989ff02df41f4158d395269e35d2795`  
-		Last Modified: Tue, 09 Dec 2025 00:01:10 GMT  
+	-	`sha256:4ac3c437f6ca5968f533c522a0b10806a5bf1f3f6e34c137c00f56000047f811`  
+		Last Modified: Tue, 13 Jan 2026 20:59:31 GMT  
 		Size: 45.1 KB (45110 bytes)  
 		MIME: application/vnd.in-toto+json
