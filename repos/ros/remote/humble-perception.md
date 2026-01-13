@@ -239,7 +239,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-humble-
 		Size: 22.7 MB (22715657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb11e17f04355c02a9eadea3e0924ee22951e0a76af18b90e7a44e2cfada4c52`  
-		Last Modified: Fri, 14 Nov 2025 01:36:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 09:40:38 GMT  
 		Size: 660.1 MB (660050278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
