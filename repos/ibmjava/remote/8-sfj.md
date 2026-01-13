@@ -56,11 +56,11 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Size: 29.5 MB (29536798 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4f22293aa3dd1339100ae535f17165394ff107c8e3d96405d05f60dbd18f33f`  
-		Last Modified: Thu, 13 Nov 2025 23:28:15 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:28:07 GMT  
 		Size: 1.5 MB (1450120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f07d0c814951bc26aff8bff2d03b3ec64752fbafbeaf30e4528abafc99f9fc4f`  
-		Last Modified: Thu, 13 Nov 2025 23:28:20 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:28:09 GMT  
 		Size: 70.8 MB (70808986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -127,15 +127,15 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 
 -	Layers:
 	-	`sha256:88caf89e8ab279126b8391c59b37ac1fe7f1e90f49fae3f4861f0d045bd02806`  
-		Last Modified: Thu, 13 Nov 2025 23:02:18 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:30:07 GMT  
 		Size: 34.4 MB (34446722 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:76270b161ad8aaab04f9d34ed9a759cb51f3badfe1e68d38e0d4b16506a51c2a`  
-		Last Modified: Fri, 14 Nov 2025 00:10:18 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:10:10 GMT  
 		Size: 1.5 MB (1536370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:654c90ad57f1edace0e0837db894bc0f380d9c70a6642765f5625f5c2bd33fbb`  
-		Last Modified: Fri, 14 Nov 2025 00:11:27 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:11:07 GMT  
 		Size: 71.7 MB (71744850 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -202,15 +202,15 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 
 -	Layers:
 	-	`sha256:d15824160d0d57e05338a0838871eb3f72224cf5de518ea6af54ba25e7e9c4da`  
-		Last Modified: Thu, 13 Nov 2025 23:02:52 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:21:19 GMT  
 		Size: 28.0 MB (28003285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5f53e2b06c4170f07ebf435fd72ef9ac6ac15a3124bc334c9b384fb2289ba66`  
-		Last Modified: Thu, 13 Nov 2025 23:22:20 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:22:13 GMT  
 		Size: 1.5 MB (1455744 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ccfc6a31a90c9551e444527c9e1bb0727b7f3199306d593fec65d07940d0a8c5`  
-		Last Modified: Thu, 13 Nov 2025 23:22:27 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:22:14 GMT  
 		Size: 71.9 MB (71851469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
