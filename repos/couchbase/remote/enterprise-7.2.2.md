@@ -129,7 +129,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a08cee4547d0dd3d923905d8bd2a6da67102d4673591bf68553d07c5fd0f1ab0`  
-		Last Modified: Thu, 13 Nov 2025 23:20:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 14:41:12 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
