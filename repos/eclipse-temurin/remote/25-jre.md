@@ -102,11 +102,11 @@ $ docker pull eclipse-temurin@sha256:29caee94eb5567f6f7e5d4e0c50d50775d6230c8d9b
 
 -	Layers:
 	-	`sha256:410e1fde5a93dfd188c9d0d5d80d5cbfebec34a0c5bbf8bf0cf58ccff1c98b11`  
-		Last Modified: Fri, 14 Nov 2025 01:19:14 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:22:46 GMT  
 		Size: 3.1 MB (3065831 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:779975e799c280282bb11fe11d02cd0312394c94b65283876c2633290971dc78`  
-		Last Modified: Fri, 14 Nov 2025 01:19:15 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:22:46 GMT  
 		Size: 23.7 KB (23679 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -193,11 +193,11 @@ $ docker pull eclipse-temurin@sha256:f049848e7435151a13b0076c6312eb47cd14ebd4743
 
 -	Layers:
 	-	`sha256:6e301d6b66c5d97e7579de0701339e93c665f2e245488702d882fd16d307ce6a`  
-		Last Modified: Fri, 14 Nov 2025 01:19:19 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:22:17 GMT  
 		Size: 3.1 MB (3066280 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:655d4d9158d83f61e723db26a070b8d2b7716816c69a22f82a991380b06aee26`  
-		Last Modified: Fri, 14 Nov 2025 01:19:20 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:22:16 GMT  
 		Size: 23.8 KB (23812 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -284,11 +284,11 @@ $ docker pull eclipse-temurin@sha256:19d743f4d07f342d045c9d980f06bca86a8d0223a51
 
 -	Layers:
 	-	`sha256:9ce4eb17c713fbe27af8cd185ef1d3df2435d0696da882f15466b86f80bd8dc5`  
-		Last Modified: Fri, 14 Nov 2025 01:19:25 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:36:40 GMT  
 		Size: 3.1 MB (3069119 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3d241e37ccbc88efc2d2ea6509862a36c6f69048d59813a584cf4a53ec33c9f9`  
-		Last Modified: Fri, 14 Nov 2025 01:19:25 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:36:40 GMT  
 		Size: 23.7 KB (23725 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -466,11 +466,11 @@ $ docker pull eclipse-temurin@sha256:f44c1fbaf3f19b74118958aa64788b2c8d9c315508a
 
 -	Layers:
 	-	`sha256:cba7e7eae5d51ebc90ff7c1b66871506081ae91ebcf6361dfd1f4f772f08ba3b`  
-		Last Modified: Fri, 14 Nov 2025 01:19:32 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:13:03 GMT  
 		Size: 3.1 MB (3067429 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e95c122da6cad904648cc696cc7568cef22532520e74a3d8d86bd4acc8cdde11`  
-		Last Modified: Fri, 14 Nov 2025 01:19:33 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:13:03 GMT  
 		Size: 23.7 KB (23679 bytes)  
 		MIME: application/vnd.in-toto+json
 

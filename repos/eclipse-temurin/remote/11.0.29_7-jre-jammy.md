@@ -100,11 +100,11 @@ $ docker pull eclipse-temurin@sha256:d4ad68b5e13a8a4ade044aa49e58d662f2edf5ce846
 
 -	Layers:
 	-	`sha256:db61ee712abe481de2969825eda15932af6997a99cf5d610cd568b71d6e9bd30`  
-		Last Modified: Fri, 14 Nov 2025 01:13:45 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:21:17 GMT  
 		Size: 3.9 MB (3892472 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5126c3d8869f71e280c0aee2afcaa152d537462cc16cae4cf4f17cc0c3c30c1d`  
-		Last Modified: Fri, 14 Nov 2025 01:13:46 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:21:17 GMT  
 		Size: 22.5 KB (22493 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -191,11 +191,11 @@ $ docker pull eclipse-temurin@sha256:884f11c872f2a267055cef955faee17b97b748b946c
 
 -	Layers:
 	-	`sha256:7fcc23e7c79a4c3e6b12f61d8c199d4729d01f955a93d6571ec2c0732f161fad`  
-		Last Modified: Fri, 14 Nov 2025 01:13:50 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:12:29 GMT  
 		Size: 3.9 MB (3896059 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d05483a076382e554e17ddab044d75aa1495dc363b29f6fbcd23d6e269ec8900`  
-		Last Modified: Fri, 14 Nov 2025 01:13:51 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:12:29 GMT  
 		Size: 22.6 KB (22583 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -282,11 +282,11 @@ $ docker pull eclipse-temurin@sha256:8bff0228f4059c199efba032cb25cfa5d41bf9ef8c6
 
 -	Layers:
 	-	`sha256:243e8ebc6eb0c3c388f21ae78d767ad32cc46004eaf158c655ffd093c7067507`  
-		Last Modified: Fri, 14 Nov 2025 01:13:57 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:20:58 GMT  
 		Size: 3.9 MB (3892746 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f36db5a6716e26b5264044e0d28108bc0b9657af6a1e1b44d23a77fc7e39408c`  
-		Last Modified: Fri, 14 Nov 2025 01:13:58 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:20:57 GMT  
 		Size: 22.6 KB (22602 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -341,7 +341,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 34.4 MB (34446722 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b0c14dcc61889e99acc58ba77c205e7f8b643ae497c00428e124e7fac3003f8`  
-		Last Modified: Thu, 13 Nov 2025 23:11:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:00:24 GMT  
 		Size: 17.6 MB (17623855 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:070882254e1568573e76e7e28ef1d0e22d53995aedd17bde2cc69bf0799664c6`  
@@ -373,11 +373,11 @@ $ docker pull eclipse-temurin@sha256:4d5d51ee7fcc4bfdf17a399295c7ca9590b3da60fdf
 
 -	Layers:
 	-	`sha256:4d44379d8467d9cf5f3f59486d8668724ffefc64da6b2e8eb3960e7256cc9624`  
-		Last Modified: Fri, 14 Nov 2025 01:14:02 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:19:00 GMT  
 		Size: 3.9 MB (3896551 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9f46879a9f7c6ab8ab01582b57619d5f9b165a6db11f4ca762b0b67ef30de856`  
-		Last Modified: Fri, 14 Nov 2025 01:14:03 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:19:00 GMT  
 		Size: 22.5 KB (22529 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -432,7 +432,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 28.0 MB (28003285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3de558eecb3d8a4c4982425e8af109373d73dbc0fe2bc177a81bc5ffbc6360f2`  
-		Last Modified: Thu, 13 Nov 2025 23:09:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:00:26 GMT  
 		Size: 16.1 MB (16149741 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e3094babafc87294d40a592b1bc1ebaa47dd8b57b0bdcb997412d71602fd7d2`  
@@ -464,10 +464,10 @@ $ docker pull eclipse-temurin@sha256:d6f8c1737ae0e0fbeec287e5a6abc477a5492ed0b1c
 
 -	Layers:
 	-	`sha256:90c7f94741975593fac9b6a3b11ac3abde62f386760a70f431ec512226bdd232`  
-		Last Modified: Fri, 14 Nov 2025 01:14:08 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:09:50 GMT  
 		Size: 3.9 MB (3894070 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d8cb7da4c04ee120e0e137c0deeddcdaac2c2e5fa73ec7739928f65f3d9acd01`  
-		Last Modified: Fri, 14 Nov 2025 01:14:09 GMT  
+		Last Modified: Thu, 13 Nov 2025 23:09:49 GMT  
 		Size: 22.5 KB (22493 bytes)  
 		MIME: application/vnd.in-toto+json
