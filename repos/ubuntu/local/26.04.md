@@ -390,13 +390,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.21ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.21ubuntu5.dsc' dpkg_1.22.21ubuntu5.dsc 3457 SHA512:bacfda2e74064f756ebf0d2d63d8934be79bf15759b0f3dbb1cadee6bf08b6b124ab13dc4575abe433d3eb60e31b47420c5019cfcbb6dc7b8bd3c801f5a2ba3e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.21ubuntu5.tar.xz' dpkg_1.22.21ubuntu5.tar.xz 5672956 SHA512:9ad9a6c51523a782c07ba4a979b11717d1e122f1983395caceae3ca5f5d93ac1b670206b08f789d9579b4ec2cc77d19dd07049cd1a1917e38beb4dcf3e918e67
-```
 
 ### `dpkg` source package: `e2fsprogs=1.47.2-3ubuntu2`
 
@@ -896,15 +892,9 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.8.1-1build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.8.1-1build2.dsc' libselinux_3.8.1-1build2.dsc 3036 SHA512:3e36fd4cd13a2f0c975cb25233f2d867f0a71e2520a01caab1302f2859db2234579f3829619c949834a85561ef7b3cc831f9a6ec7752b215e0b2e2448060264b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.8.1.orig.tar.gz' libselinux_3.8.1.orig.tar.gz 204411 SHA512:646a31dff3b670a530adb9fc2fdc3ca9fe34a58e67e0fac52cc33bc7a01fa63c175987ef254c6c3bc7299cef137bc6f258dc378f4d70ae5c0fa0ece3bef42ab4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.8.1.orig.tar.gz.asc' libselinux_3.8.1.orig.tar.gz.asc 833 SHA512:ece79feb7758eafb8cf60092039596971140d8af7049671dfa8a7be6cc3167e928e361d8a9b26abfd855520413533890c280eec1e8107b260e3bbadb79c5159a
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.8.1-1build2.debian.tar.xz' libselinux_3.8.1-1build2.debian.tar.xz 37932 SHA512:2cdb957366d6b22717cc7943c1d7989f8d9ef2e519ad3114e73b825beb4b7a2f077b0d3005229a2ecaf27a03872c9df45545800f08015099807c887ac910f2e6
-```
 
 ### `dpkg` source package: `libsemanage=3.8.1-1build1`
 
@@ -919,15 +909,9 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.8.1-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.8.1-1build1.dsc' libsemanage_3.8.1-1build1.dsc 3015 SHA512:06fcbce7b00d55e5a1fad0257a6a087c9981ab4c3a1c6d30994ea98098f9d54506374c3d52413693c410c5c9dd01bc07ac46d9ed3d87e76f1baa0d95fef1d4b6
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.8.1.orig.tar.gz' libsemanage_3.8.1.orig.tar.gz 184618 SHA512:ac3729ba4934a48a33e082af35baa9e25e6806855afb0f0e4e22aa67be201518c3d4933b8cf4dec83e5acbe178301276f51850bb1b16bc13e027a470ac7f1eb5
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.8.1.orig.tar.gz.asc' libsemanage_3.8.1.orig.tar.gz.asc 833 SHA512:b21cf3e0a5e28ddddaaded81fc00080d13a8aaac44357bf980fa1c28899e50e0791b66f407eaffd6ce0719caee356e02e576947949cf5cb34665fe0bb90f7108
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.8.1-1build1.debian.tar.xz' libsemanage_3.8.1-1build1.debian.tar.xz 37624 SHA512:23855a5deb0d6a199be9bab7440f47b5ede1218fdc45d4383fa88d8045a0f9aa9d404cce0384429eedbb214c55e4e7b7c02add25ecfd0753b9a368ee2194b0bc
-```
 
 ### `dpkg` source package: `libsepol=3.9-2`
 
@@ -1308,14 +1292,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.9-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.9-0ubuntu2.dsc' systemd_257.9-0ubuntu2.dsc 8437 SHA512:c5a4b768e4bff2f1604ba074f1bdf9804d964710ef139b12ce9b7a7d4f6fc93a71147d590a36ef25775d8b916bce81ed693b9c7f3a579ad480d9a16d3f0b7a56
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.9.orig.tar.gz' systemd_257.9.orig.tar.gz 16401765 SHA512:23b3d2764e0f990d8373068ccb41177793413bc193f7bd34e38b03d6fc3cd32d07c86e9dcbf07e32904075bb5eeca208f65beab04d628ac0e0b81ba87a975c1b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.9-0ubuntu2.debian.tar.xz' systemd_257.9-0ubuntu2.debian.tar.xz 248584 SHA512:5ddb5ec3cbe9aae2f5cb9c3bc6316270d5e33b0e0bf5179d0dd0f5d282e6ebd131a18512ca85d6b4e0594c49296a3ddf329ff0da028bdf3860a42fc8b3096319
-```
 
 ### `dpkg` source package: `sysvinit=3.14-4ubuntu1`
 
