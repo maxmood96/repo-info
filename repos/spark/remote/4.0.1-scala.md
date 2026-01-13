@@ -139,11 +139,11 @@ $ docker pull spark@sha256:db1ad5fbc5a8d1eaf758321f3c85298a571c473c6458cd03649e3
 
 -	Layers:
 	-	`sha256:0e9bee7836c38f0a38f5d3f56d72432e00b012605dedddaf0ade9d561f67fe58`  
-		Last Modified: Fri, 14 Nov 2025 03:13:36 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:40:53 GMT  
 		Size: 5.0 MB (4960991 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8c5f2f2139456f909c8dc315923fc679799f1bb0a4d62ce9973a31643129ec7f`  
-		Last Modified: Fri, 14 Nov 2025 03:13:37 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:40:53 GMT  
 		Size: 23.2 KB (23245 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -275,10 +275,10 @@ $ docker pull spark@sha256:5b850dbd2c7d64966cfeb9f026d331a96621ea2f1759cd66b6866
 
 -	Layers:
 	-	`sha256:83c3834eed32967dea134e7f002d3447a3fd11219cca447875a6d9e3fd0e43ef`  
-		Last Modified: Fri, 14 Nov 2025 03:13:42 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:42:02 GMT  
 		Size: 5.1 MB (5056506 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f9f26d3b4ba49059c76c64ead1c0a03f511aea58b4f0cae30eccd709c1b1c37d`  
-		Last Modified: Fri, 14 Nov 2025 03:13:43 GMT  
+		Last Modified: Fri, 14 Nov 2025 00:42:02 GMT  
 		Size: 23.4 KB (23368 bytes)  
 		MIME: application/vnd.in-toto+json
