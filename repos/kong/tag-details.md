@@ -102,7 +102,7 @@ CMD ["kong" "docker-start"]
 		Size: 25.1 MB (25081967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:428613c4fd7abb4316edf11b7df45b21f7c8278678667a8b00dd5770ce620332`  
-		Last Modified: Thu, 13 Nov 2025 23:29:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 14:32:59 GMT  
 		Size: 130.6 MB (130610573 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3aac4f5cbb31821ac1aee107bfa5c9df03f300e23cf859fb80c8c64e3679fe59`  
@@ -216,7 +216,7 @@ CMD ["kong" "docker-start"]
 		Size: 25.1 MB (25081967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:428613c4fd7abb4316edf11b7df45b21f7c8278678667a8b00dd5770ce620332`  
-		Last Modified: Thu, 13 Nov 2025 23:29:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 14:32:59 GMT  
 		Size: 130.6 MB (130610573 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3aac4f5cbb31821ac1aee107bfa5c9df03f300e23cf859fb80c8c64e3679fe59`  
