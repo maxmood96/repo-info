@@ -169,11 +169,11 @@ $ docker pull kibana@sha256:4fa9431b42decd61b978c094b1f5167968be0f3cd93303006765
 
 -	Layers:
 	-	`sha256:cdfa6528661e2f127de796a7ebba4c0bde44c8f21f0e9b1134614821f5132474`  
-		Last Modified: Thu, 13 Nov 2025 23:32:52 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:43:10 GMT  
 		Size: 3.5 MB (3506834 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:57fbad5574700428d9e57e578aa8dce94626a1457e6016765d503452d6e2e899`  
-		Last Modified: Thu, 13 Nov 2025 23:32:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:43:09 GMT  
 		Size: 44.5 KB (44511 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -422,7 +422,7 @@ USER 1000
 		Size: 9.4 MB (9432182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:babb566056a2f72f3c0d36be7a38997b8d1d6462fa0ec8fcd234041db225389c`  
-		Last Modified: Thu, 13 Nov 2025 23:38:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:05:07 GMT  
 		Size: 368.3 MB (368279132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ddec7aebe1d1a4de4d26a7d08e1a2884cddaaad30f12908c9f66aea29148e344`  
