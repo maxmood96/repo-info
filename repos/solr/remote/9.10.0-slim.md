@@ -178,11 +178,11 @@ $ docker pull solr@sha256:e171081c72963a33f4b8f72fc565090bca81111b3f24e61eddb7fd
 
 -	Layers:
 	-	`sha256:c5057e6818814d3a2cf07fbe33432dcf6e242af534f7693e1d4ab79d29aa8e16`  
-		Last Modified: Fri, 14 Nov 2025 00:35:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:56:36 GMT  
 		Size: 4.0 MB (3964559 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5dfb26e314e2fb2185306c58acc85f027ac15905def86f0869800feb154b1209`  
-		Last Modified: Fri, 14 Nov 2025 00:35:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:56:26 GMT  
 		Size: 34.4 KB (34371 bytes)  
 		MIME: application/vnd.in-toto+json
 
