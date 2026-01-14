@@ -157,7 +157,7 @@ $ docker pull couchbase@sha256:a6ff4b96b6a33622cd772e846911ac7e5098f87a9db0f6b9c
 
 -	Layers:
 	-	`sha256:86d0bab233bf2cefeeacebe69b4dc3f6a20a3d6c515a7e59379a81ec2a50b28b`  
-		Last Modified: Thu, 13 Nov 2025 23:15:59 GMT  
+		Last Modified: Wed, 14 Jan 2026 14:11:51 GMT  
 		Size: 37.5 KB (37522 bytes)  
 		MIME: application/vnd.in-toto+json
 

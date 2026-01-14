@@ -4239,7 +4239,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d499cc07c09e723c3beb5b9809359ff7d78b3f2fdc0d924b0b2f5bec889f9c58`  
-		Last Modified: Thu, 13 Nov 2025 23:19:05 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:22:00 GMT  
 		Size: 818.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:71a4ec4e4b6234acb5719cb16128791633b57b420a88275cf7b4d9a843f11362`  
@@ -5531,7 +5531,7 @@ $ docker pull couchbase@sha256:a6ff4b96b6a33622cd772e846911ac7e5098f87a9db0f6b9c
 
 -	Layers:
 	-	`sha256:86d0bab233bf2cefeeacebe69b4dc3f6a20a3d6c515a7e59379a81ec2a50b28b`  
-		Last Modified: Thu, 13 Nov 2025 23:15:59 GMT  
+		Last Modified: Wed, 14 Jan 2026 14:11:51 GMT  
 		Size: 37.5 KB (37522 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13003,7 +13003,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d499cc07c09e723c3beb5b9809359ff7d78b3f2fdc0d924b0b2f5bec889f9c58`  
-		Last Modified: Thu, 13 Nov 2025 23:19:05 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:22:00 GMT  
 		Size: 818.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:71a4ec4e4b6234acb5719cb16128791633b57b420a88275cf7b4d9a843f11362`  
@@ -14295,7 +14295,7 @@ $ docker pull couchbase@sha256:a6ff4b96b6a33622cd772e846911ac7e5098f87a9db0f6b9c
 
 -	Layers:
 	-	`sha256:86d0bab233bf2cefeeacebe69b4dc3f6a20a3d6c515a7e59379a81ec2a50b28b`  
-		Last Modified: Thu, 13 Nov 2025 23:15:59 GMT  
+		Last Modified: Wed, 14 Jan 2026 14:11:51 GMT  
 		Size: 37.5 KB (37522 bytes)  
 		MIME: application/vnd.in-toto+json
 
