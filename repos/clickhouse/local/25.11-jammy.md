@@ -1005,15 +1005,9 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.18.0-4ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0-4ubuntu0.1.dsc' libtasn1-6_4.18.0-4ubuntu0.1.dsc 2822 SHA512:cc9eb79ad785b04a23f1b49a17ef513a3f54762c5c098b4b277facf606178faf1fe51c809329750c11b1250489a9c149073840905c8ce3bfbe14417707600390
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0.orig.tar.gz' libtasn1-6_4.18.0.orig.tar.gz 1724441 SHA512:4f2f4afc7561fda7a1f1c6c525c3c3b08228a1a4aa8c3d3d5e02e993d8f83ccee1dd0f1b201cec0fbfc97043d4b1d7a95ffd34d65422a38b85b931ac7a015831
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0.orig.tar.gz.asc' libtasn1-6_4.18.0.orig.tar.gz.asc 228 SHA512:8ef3918a3130f695d2d5b26dd945084b931005eff8914c50a0ac9795d4cc6ec9e9645e2941ff4235cba3b4b2987ab1c7da65225e24ce16aaab844352ecdafbf6
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0-4ubuntu0.1.debian.tar.xz' libtasn1-6_4.18.0-4ubuntu0.1.debian.tar.xz 24684 SHA512:fb1e591cb80f106438ae72fd6e11fbedc0585825e22d84313d37fe0a9f2cf03138b401ef7591afc27e719920401ee2bedd3a3aec8ef7efff21511ae072fd68d3
-```
 
 ### `dpkg` source package: `libtirpc=1.3.2-2ubuntu0.1`
 
