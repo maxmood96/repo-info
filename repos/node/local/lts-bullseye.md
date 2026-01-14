@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8a839a5feaaf7dba9f4a25ebb3f7f576341a84140f71d08a5868e53c1160fac`
-- Created: `2025-12-30T03:23:43.407929428Z`
+- Image ID: `sha256:7212177f89e81b007d5b5bbdd6c3b2db10acfd1a13e1bb1c4539e62bfc46bb09`
+- Created: `2026-01-13T05:30:53.801111678Z`
 - Virtual Size: ~ 1.04 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -593,14 +593,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.32-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.32-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.74.0-1.3+deb11u15`
+### `dpkg` source package: `curl=7.74.0-1.3+deb11u16`
 
 Binary Packages:
 
-- `curl=7.74.0-1.3+deb11u15`
-- `libcurl3-gnutls:amd64=7.74.0-1.3+deb11u15`
-- `libcurl4:amd64=7.74.0-1.3+deb11u15`
-- `libcurl4-openssl-dev:amd64=7.74.0-1.3+deb11u15`
+- `curl=7.74.0-1.3+deb11u16`
+- `libcurl3-gnutls:amd64=7.74.0-1.3+deb11u16`
+- `libcurl4:amd64=7.74.0-1.3+deb11u16`
+- `libcurl4-openssl-dev:amd64=7.74.0-1.3+deb11u16`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -611,13 +611,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u16
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u16.dsc' curl_7.74.0-1.3+deb11u16.dsc 2703 SHA256:5fed534496027faffb3e607d5c24373d915f3d181287eb0d207c7d87bcd1ee01
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u16.debian.tar.xz' curl_7.74.0-1.3+deb11u16.debian.tar.xz 79272 SHA256:eb1c67ce096c696ad7e8346abfb9005f993d8f0d2062529eaf3ebdd72a210b0d
+```
 
-- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u15/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u16/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u16/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u16/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1+deb11u1`
 
@@ -1847,23 +1854,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ilmbase/2.5.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ilmbase/2.5.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.3+deb11u7`
+### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.3+deb11u8`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.11.60+dfsg-1.3+deb11u7`
-- `imagemagick-6-common=8:6.9.11.60+dfsg-1.3+deb11u7`
-- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.3+deb11u7`
-- `libmagickcore-6-arch-config:amd64=8:6.9.11.60+dfsg-1.3+deb11u7`
-- `libmagickcore-6-headers=8:6.9.11.60+dfsg-1.3+deb11u7`
-- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.3+deb11u7`
-- `libmagickcore-6.q16-6-extra:amd64=8:6.9.11.60+dfsg-1.3+deb11u7`
-- `libmagickcore-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.3+deb11u7`
-- `libmagickcore-dev=8:6.9.11.60+dfsg-1.3+deb11u7`
-- `libmagickwand-6-headers=8:6.9.11.60+dfsg-1.3+deb11u7`
-- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.3+deb11u7`
-- `libmagickwand-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.3+deb11u7`
-- `libmagickwand-dev=8:6.9.11.60+dfsg-1.3+deb11u7`
+- `imagemagick=8:6.9.11.60+dfsg-1.3+deb11u8`
+- `imagemagick-6-common=8:6.9.11.60+dfsg-1.3+deb11u8`
+- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.3+deb11u8`
+- `libmagickcore-6-arch-config:amd64=8:6.9.11.60+dfsg-1.3+deb11u8`
+- `libmagickcore-6-headers=8:6.9.11.60+dfsg-1.3+deb11u8`
+- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.3+deb11u8`
+- `libmagickcore-6.q16-6-extra:amd64=8:6.9.11.60+dfsg-1.3+deb11u8`
+- `libmagickcore-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.3+deb11u8`
+- `libmagickcore-dev=8:6.9.11.60+dfsg-1.3+deb11u8`
+- `libmagickwand-6-headers=8:6.9.11.60+dfsg-1.3+deb11u8`
+- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.3+deb11u8`
+- `libmagickwand-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.3+deb11u8`
+- `libmagickwand-dev=8:6.9.11.60+dfsg-1.3+deb11u8`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-6/copyright`, `/usr/share/doc/libmagickcore-6.q16-6-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-6/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -1894,13 +1901,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.3+deb11u8
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3%2bdeb11u8.dsc' imagemagick_6.9.11.60+dfsg-1.3+deb11u8.dsc 5106 SHA256:2a911fe20ac9cbf8cec3c341e1dab8b3e609d5e5c7370af05d5923e425ffbce0
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3%2bdeb11u8.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.3+deb11u8.debian.tar.xz 279484 SHA256:c348f7ba9d51e7262e8ecacdc79153524e993f2e3ad4f65accad5654d7b47fff
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u8/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.60`
 
