@@ -308,7 +308,7 @@ $ docker pull ubuntu@sha256:26bd4f6d9fe6efaaf4ad0cf708ca06636cf61b5f01206e7f5110
 
 -	Layers:
 	-	`sha256:d67026e35d4fdd98579761451b429c58c34678a0b39b2229410a4b64b1caf3da`  
-		Last Modified: Sat, 15 Nov 2025 10:01:35 GMT  
+		Last Modified: Wed, 14 Jan 2026 14:47:14 GMT  
 		Size: 2.0 MB (1973990 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -653,7 +653,7 @@ $ docker pull ubuntu@sha256:f485eb24ada4307a2a4adbb9cec4959f6a3f3644072f586240e2
 
 -	Layers:
 	-	`sha256:ac8181a2494bad4f2f6a9a2664f6c882b6219d4ef19eafaf4d1c966250f84c54`  
-		Last Modified: Sat, 15 Nov 2025 10:03:26 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:01:27 GMT  
 		Size: 1.9 MB (1931899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2378,7 +2378,7 @@ $ docker pull ubuntu@sha256:26bd4f6d9fe6efaaf4ad0cf708ca06636cf61b5f01206e7f5110
 
 -	Layers:
 	-	`sha256:d67026e35d4fdd98579761451b429c58c34678a0b39b2229410a4b64b1caf3da`  
-		Last Modified: Sat, 15 Nov 2025 10:01:35 GMT  
+		Last Modified: Wed, 14 Jan 2026 14:47:14 GMT  
 		Size: 2.0 MB (1973990 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2723,7 +2723,7 @@ $ docker pull ubuntu@sha256:26bd4f6d9fe6efaaf4ad0cf708ca06636cf61b5f01206e7f5110
 
 -	Layers:
 	-	`sha256:d67026e35d4fdd98579761451b429c58c34678a0b39b2229410a4b64b1caf3da`  
-		Last Modified: Sat, 15 Nov 2025 10:01:35 GMT  
+		Last Modified: Wed, 14 Jan 2026 14:47:14 GMT  
 		Size: 2.0 MB (1973990 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3068,7 +3068,7 @@ $ docker pull ubuntu@sha256:f485eb24ada4307a2a4adbb9cec4959f6a3f3644072f586240e2
 
 -	Layers:
 	-	`sha256:ac8181a2494bad4f2f6a9a2664f6c882b6219d4ef19eafaf4d1c966250f84c54`  
-		Last Modified: Sat, 15 Nov 2025 10:03:26 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:01:27 GMT  
 		Size: 1.9 MB (1931899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3413,7 +3413,7 @@ $ docker pull ubuntu@sha256:f485eb24ada4307a2a4adbb9cec4959f6a3f3644072f586240e2
 
 -	Layers:
 	-	`sha256:ac8181a2494bad4f2f6a9a2664f6c882b6219d4ef19eafaf4d1c966250f84c54`  
-		Last Modified: Sat, 15 Nov 2025 10:03:26 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:01:27 GMT  
 		Size: 1.9 MB (1931899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3758,7 +3758,7 @@ $ docker pull ubuntu@sha256:f485eb24ada4307a2a4adbb9cec4959f6a3f3644072f586240e2
 
 -	Layers:
 	-	`sha256:ac8181a2494bad4f2f6a9a2664f6c882b6219d4ef19eafaf4d1c966250f84c54`  
-		Last Modified: Sat, 15 Nov 2025 10:03:26 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:01:27 GMT  
 		Size: 1.9 MB (1931899 bytes)  
 		MIME: application/vnd.in-toto+json
 
