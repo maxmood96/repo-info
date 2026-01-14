@@ -907,11 +907,11 @@ $ docker pull postgres@sha256:673694b39f6068999c183b15003cd6667df694a2e9e4248cff
 
 -	Layers:
 	-	`sha256:5d8e9a5a3bfffaf3478d05c0113cb6460a146ec85bde35b1c3c6882118018697`  
-		Last Modified: Sat, 15 Nov 2025 09:09:37 GMT  
+		Last Modified: Sat, 15 Nov 2025 06:38:14 GMT  
 		Size: 597.3 KB (597257 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3084ac3d5cb144d974289a9afc4e8f1632383fbca7a7913951b1c2ef7925f3cc`  
-		Last Modified: Sat, 15 Nov 2025 09:09:37 GMT  
+		Last Modified: Sat, 15 Nov 2025 06:38:14 GMT  
 		Size: 43.2 KB (43182 bytes)  
 		MIME: application/vnd.in-toto+json
 
