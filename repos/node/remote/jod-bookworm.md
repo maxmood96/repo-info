@@ -1,7 +1,7 @@
 ## `node:jod-bookworm`
 
 ```console
-$ docker pull node@sha256:f6bed7a3a9a60906f3e597d99dc4a2af64123e1094c9e9938b1fc3d31db3cb18
+$ docker pull node@sha256:cd7bcd2e7a1e6f72052feb023c7f6b722205d3fcab7bbcbd2d1bfdab10b1e935
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -412,13 +412,13 @@ $ docker pull node@sha256:95d3af69becdc0a17409acf354305aa356b38485fa5053300febfa
 ### `node:jod-bookworm` - linux; s390x
 
 ```console
-$ docker pull node@sha256:3bd0b7a1dc4b541aedf4ed63968d62b37b84c397d90f5694c029c73bf6e68566
+$ docker pull node@sha256:84b01ced739ff12648f77e1ec850e8736fb9d6450d7cce7fc6ca02986ef37709
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **377.4 MB (377429721 bytes)**  
+-	Total Size: **377.4 MB (377431849 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:366f90e1dcdb488f37de8f66a37b73b33025b88bfd5af1e7b27387899c0f8cd9`
+-	Image ID: `sha256:17619ba786e08c223074bd58b95ade7cd97d31af1fd96169dccbe85ef4db2456`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
@@ -433,19 +433,19 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 13 Jan 2026 06:59:13 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Tue, 13 Jan 2026 07:02:39 GMT
-ENV NODE_VERSION=22.21.1
-# Tue, 13 Jan 2026 07:02:39 GMT
+# Wed, 14 Jan 2026 21:15:13 GMT
+ENV NODE_VERSION=22.22.0
+# Wed, 14 Jan 2026 21:15:13 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && export GNUPGHOME="$(mktemp -d)"   && set -ex   && for key in     5BE8A3F6C8A5C01D106C0AD820B1A390B168D356     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     CC68F5A3106FF448322E48ED27F5E38D5B0A215F     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0   ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
-# Tue, 13 Jan 2026 07:02:39 GMT
+# Wed, 14 Jan 2026 21:15:13 GMT
 ENV YARN_VERSION=1.22.22
-# Tue, 13 Jan 2026 07:02:41 GMT
+# Wed, 14 Jan 2026 21:15:20 GMT
 RUN set -ex   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version   && rm -rf /tmp/* # buildkit
-# Tue, 13 Jan 2026 07:02:41 GMT
+# Wed, 14 Jan 2026 21:15:23 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 13 Jan 2026 07:02:41 GMT
+# Wed, 14 Jan 2026 21:15:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 13 Jan 2026 07:02:41 GMT
+# Wed, 14 Jan 2026 21:15:23 GMT
 CMD ["node"]
 ```
 
@@ -470,39 +470,39 @@ CMD ["node"]
 		Last Modified: Tue, 13 Jan 2026 07:00:25 GMT  
 		Size: 3.3 KB (3317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c3797eed3653aa7ad98ee8cfe3079e025a9a73c75082a38de9bf25169d00c0c`  
-		Last Modified: Tue, 13 Jan 2026 07:03:30 GMT  
-		Size: 58.0 MB (57987398 bytes)  
+	-	`sha256:9b194197690619ab0760e2a2623cf70b1d5b0164158ceb6c0dc3a1ec48407f2a`  
+		Last Modified: Wed, 14 Jan 2026 21:21:08 GMT  
+		Size: 58.0 MB (57989525 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48c697b6377ea1fbe825f52f5f9045694fec77a0f93af18060728f1c4efe8d57`  
-		Last Modified: Tue, 13 Jan 2026 07:03:27 GMT  
-		Size: 1.3 MB (1250676 bytes)  
+	-	`sha256:927c86d868ed66c954b2c7424d87b515d9a07f62162880cf80cc1f724e7b6e0d`  
+		Last Modified: Wed, 14 Jan 2026 21:21:03 GMT  
+		Size: 1.3 MB (1250675 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:236a08a1efd156a2bd3d52ff05989d7ceadf571e7596022eed1f806277a48329`  
-		Last Modified: Tue, 13 Jan 2026 07:03:27 GMT  
-		Size: 446.0 B  
+	-	`sha256:8d4dfbe7965c8a960eb1cd7c657aa4d80974bed01ab0c5bd34afde8c8c2d18eb`  
+		Last Modified: Wed, 14 Jan 2026 21:21:02 GMT  
+		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:jod-bookworm` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:77321f3eca081245c8f63fcec748163eded99593963791b169c111f4b0935fe9
+$ docker pull node@sha256:d5636605b5522c77e7c554830f1fc4883d807f9043643c8566fd81b625acc429
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.0 MB (15998277 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e8a139b89740e7985841cfe4bf872f0a1114c6ce96ab6dad13a8c3372243cc31`
+-	Image ID: `sha256:4e51cf3e802faf91574687ef19c973112224058ee58adaee74f03932f4514cea`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0744c3a1546ba783003fcf3d4f6951b38f4de4573dcbd1f43ce6add5c38f0d30`  
-		Last Modified: Tue, 13 Jan 2026 07:41:25 GMT  
+	-	`sha256:3b2d2f1399865b479af1062e124ebd82ab38bd7143e955b0bde841727099b01a`  
+		Last Modified: Wed, 14 Jan 2026 22:41:30 GMT  
 		Size: 16.0 MB (15974369 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3cd18040591d038765d1bab8537b7769fa0ef6a47738e0f0a3d3eb0589f171f3`  
-		Last Modified: Tue, 13 Jan 2026 07:41:26 GMT  
+	-	`sha256:4862463eae151e150de8e5f43053f09472f827538f3d59d8bd848b5bf39acfb2`  
+		Last Modified: Wed, 14 Jan 2026 22:41:31 GMT  
 		Size: 23.9 KB (23908 bytes)  
 		MIME: application/vnd.in-toto+json
