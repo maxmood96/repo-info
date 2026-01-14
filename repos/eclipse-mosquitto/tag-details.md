@@ -76,11 +76,11 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70e80717d16563e3c71774cbfa0721a9bbf50fd11c3906593d86fa34932545d1`  
-		Last Modified: Fri, 14 Nov 2025 17:51:25 GMT  
+		Last Modified: Wed, 14 Jan 2026 01:20:42 GMT  
 		Size: 801.2 KB (801198 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ad8d6b7012f72f6a9f51152b2a4c2e72f49fa78a779f755485a21a764254e39`  
-		Last Modified: Fri, 14 Nov 2025 17:51:25 GMT  
+		Last Modified: Wed, 14 Jan 2026 01:20:40 GMT  
 		Size: 238.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -537,11 +537,11 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70e80717d16563e3c71774cbfa0721a9bbf50fd11c3906593d86fa34932545d1`  
-		Last Modified: Fri, 14 Nov 2025 17:51:25 GMT  
+		Last Modified: Wed, 14 Jan 2026 01:20:42 GMT  
 		Size: 801.2 KB (801198 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ad8d6b7012f72f6a9f51152b2a4c2e72f49fa78a779f755485a21a764254e39`  
-		Last Modified: Fri, 14 Nov 2025 17:51:25 GMT  
+		Last Modified: Wed, 14 Jan 2026 01:20:40 GMT  
 		Size: 238.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
