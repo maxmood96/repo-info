@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:13eb44f9bc0c14c1b999c42f6ce17a3f875f9fe3a6d28b848bbb60812b087cdc`
-- Created: `2025-12-21T16:52:23.503792163Z`
+- Image ID: `sha256:4a228ceb712e38b7676f32ee136eba9ea3ec6b247338e9dfcd0b46900fb80b58`
+- Created: `2026-01-09T23:33:15.861140299Z`
 - Virtual Size: ~ 279.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1140,16 +1140,16 @@ BSD-3-Clause
 ### `apk` package: `libsodium`
 
 ```console
-libsodium-1.0.20-r0 description:
+libsodium-1.0.20-r1 description:
 P(ortable|ackageable) NaCl-based crypto library
 
-libsodium-1.0.20-r0 webpage:
+libsodium-1.0.20-r1 webpage:
 https://github.com/jedisct1/libsodium
 
-libsodium-1.0.20-r0 installed size:
+libsodium-1.0.20-r1 installed size:
 339 KiB
 
-libsodium-1.0.20-r0 license:
+libsodium-1.0.20-r1 license:
 ISC
 
 ```
@@ -1412,16 +1412,16 @@ BSD-3-Clause
 ### `apk` package: `linux-pam`
 
 ```console
-linux-pam-1.7.1-r1 description:
+linux-pam-1.7.1-r2 description:
 Linux PAM (Pluggable Authentication Modules for Linux)
 
-linux-pam-1.7.1-r1 webpage:
+linux-pam-1.7.1-r2 webpage:
 https://www.kernel.org/pub/linux/libs/pam
 
-linux-pam-1.7.1-r1 installed size:
+linux-pam-1.7.1-r2 installed size:
 830 KiB
 
-linux-pam-1.7.1-r1 license:
+linux-pam-1.7.1-r2 license:
 BSD-3-Clause
 
 ```
