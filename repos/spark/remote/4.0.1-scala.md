@@ -143,7 +143,7 @@ $ docker pull spark@sha256:db1ad5fbc5a8d1eaf758321f3c85298a571c473c6458cd03649e3
 		Size: 5.0 MB (4960991 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8c5f2f2139456f909c8dc315923fc679799f1bb0a4d62ce9973a31643129ec7f`  
-		Last Modified: Fri, 14 Nov 2025 00:40:53 GMT  
+		Last Modified: Wed, 14 Jan 2026 03:33:20 GMT  
 		Size: 23.2 KB (23245 bytes)  
 		MIME: application/vnd.in-toto+json
 
