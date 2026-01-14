@@ -430,11 +430,11 @@ $ docker pull zookeeper@sha256:86182c0b1a227b15758c85553217f7c4dabc3181fbd7978cd
 
 -	Layers:
 	-	`sha256:6de4fdb256aaafda40b8096710b4a01f20fd38a5b1a661ebc35bdda8c44a4f44`  
-		Last Modified: Fri, 14 Nov 2025 06:14:12 GMT  
+		Last Modified: Wed, 14 Jan 2026 08:39:32 GMT  
 		Size: 4.0 MB (3970350 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:608b48fb5d1629be40b4374a1a724c7176214882078af59d5a5c6119c9402c7e`  
-		Last Modified: Fri, 14 Nov 2025 06:14:11 GMT  
+		Last Modified: Wed, 14 Jan 2026 08:39:36 GMT  
 		Size: 24.6 KB (24634 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -519,7 +519,7 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 28.0 MB (28003285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ac7d0ef25245aac46e2536e5a0708c0c170ff8e6306f360b128f099580bc97ce`  
-		Last Modified: Thu, 13 Nov 2025 23:10:45 GMT  
+		Last Modified: Wed, 14 Jan 2026 08:39:53 GMT  
 		Size: 16.1 MB (16149730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:25b1156c9b58a9d979b7b6dd18ccdb3b995abdc7fedbc0af07a1f3d61c97d974`  
@@ -527,23 +527,23 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 44.0 MB (44030781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5c5e33294adc4203c01ae0aa669247d6c5b42bf64342c818cfa064fa54243eac`  
-		Last Modified: Thu, 13 Nov 2025 23:10:45 GMT  
+		Last Modified: Wed, 14 Jan 2026 08:40:20 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ce55221966059b9b41ce7a966a484004305974b725bc9ce2e32edbcf57109aa`  
-		Last Modified: Thu, 13 Nov 2025 23:10:45 GMT  
+		Last Modified: Wed, 14 Jan 2026 08:40:21 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad372ef31c56bf75d7be9402cee0fcb6bce738c06f4c2d7634694ffff5fef136`  
-		Last Modified: Fri, 14 Nov 2025 00:49:15 GMT  
+		Last Modified: Wed, 14 Jan 2026 08:40:23 GMT  
 		Size: 1.8 KB (1797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a42642c3a2640adf3ec490d9fd943a86cc3e12fc5027a156d015aecac16cdc6`  
-		Last Modified: Fri, 14 Nov 2025 00:49:15 GMT  
+		Last Modified: Wed, 14 Jan 2026 08:40:25 GMT  
 		Size: 1.1 MB (1106928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be1d21c0ae3ddab1431dd55a46f0fb02eabd84863796fa20d941892d055ffbce`  
-		Last Modified: Fri, 14 Nov 2025 00:49:16 GMT  
+		Last Modified: Wed, 14 Jan 2026 08:40:30 GMT  
 		Size: 21.2 MB (21172468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -551,7 +551,7 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c7b77accfe899b7a4e750e5efc64a61be6ce4e13f1636b369ed40de13a2b0a2f`  
-		Last Modified: Fri, 14 Nov 2025 00:49:15 GMT  
+		Last Modified: Wed, 14 Jan 2026 08:40:41 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -571,10 +571,10 @@ $ docker pull zookeeper@sha256:61ab83ef594b699d0b52fca53b7775e8dbb77c3c0a83c4976
 
 -	Layers:
 	-	`sha256:8a1bf5d96b0d55d2704eb2bc3d4f92af1f3a9c38560043517451ef319b7024b2`  
-		Last Modified: Fri, 14 Nov 2025 00:49:15 GMT  
+		Last Modified: Wed, 14 Jan 2026 08:40:44 GMT  
 		Size: 4.0 MB (3967831 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ad86563b78530fe32f7e783545f1446c100617b06da1dac0769d33f5f7293f62`  
-		Last Modified: Fri, 14 Nov 2025 00:49:15 GMT  
+		Last Modified: Wed, 14 Jan 2026 08:40:47 GMT  
 		Size: 24.6 KB (24580 bytes)  
 		MIME: application/vnd.in-toto+json
