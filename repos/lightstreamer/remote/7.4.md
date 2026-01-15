@@ -231,11 +231,11 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1a203ec0e97dc21f4e1188c6983022204fcb903061cd934c27037a62e541cb86`  
-		Last Modified: Fri, 14 Nov 2025 00:30:12 GMT  
+		Last Modified: Thu, 15 Jan 2026 15:17:47 GMT  
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:30da47fd532b68e5504229405d218e6cbf01ee1aa6152d59369beae6d9f932cf`  
-		Last Modified: Fri, 14 Nov 2025 00:30:14 GMT  
+		Last Modified: Thu, 15 Jan 2026 15:17:54 GMT  
 		Size: 58.9 MB (58914572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -259,6 +259,6 @@ $ docker pull lightstreamer@sha256:91082fad8b9cfc11cc86ad2d14fc5c316cd7c9d7af28e
 
 -	Layers:
 	-	`sha256:3314b297774f6979b1882e633fd2a13a715cd4c3bb9cdee4645d19e89135d41e`  
-		Last Modified: Fri, 14 Nov 2025 00:30:12 GMT  
+		Last Modified: Thu, 15 Jan 2026 15:17:47 GMT  
 		Size: 21.0 KB (20955 bytes)  
 		MIME: application/vnd.in-toto+json
