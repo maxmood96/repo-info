@@ -561,7 +561,7 @@ $ docker pull tomcat@sha256:185e465f2fe192dec1736ac6ba7684674a013877faeaea668ccb
 		Size: 4.2 MB (4211687 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:495fce7bcbf6f6fd5ec094e1bdca5621a0d513de98d6e6eade392cd36a7d9da3`  
-		Last Modified: Mon, 08 Dec 2025 20:09:49 GMT  
+		Last Modified: Mon, 08 Dec 2025 21:31:07 GMT  
 		Size: 30.5 KB (30463 bytes)  
 		MIME: application/vnd.in-toto+json
 
