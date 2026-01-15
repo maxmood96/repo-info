@@ -341,7 +341,7 @@ $ docker pull open-liberty@sha256:91f356bcda6b89e14b96ee500d0c5fa150f10c7addb194
 		Size: 5.7 MB (5702049 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d780cc1d5b1d3fbae86fd7592c9f1d300bf86a3f92bb4a360f41dfadcae375b1`  
-		Last Modified: Wed, 03 Dec 2025 21:48:32 GMT  
+		Last Modified: Thu, 04 Dec 2025 00:48:54 GMT  
 		Size: 39.5 KB (39497 bytes)  
 		MIME: application/vnd.in-toto+json
 
