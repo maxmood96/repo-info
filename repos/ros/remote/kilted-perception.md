@@ -111,7 +111,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-kilted-
 		Size: 28.1 MB (28058037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5fe6b475c9d5d0fec8f295a27b9c88c7e104854439857ec2508c68a04327c933`  
-		Last Modified: Fri, 14 Nov 2025 01:21:20 GMT  
+		Last Modified: Thu, 15 Jan 2026 06:57:35 GMT  
 		Size: 785.0 MB (784968985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -131,11 +131,11 @@ $ docker pull ros@sha256:49b431be399ca5fe716018c10a722888c1fa293c5be0710962d4a84
 
 -	Layers:
 	-	`sha256:4846b83d86f5b32056c650890347f732ff8a4c09aaad50f312de07d40693ab51`  
-		Last Modified: Fri, 14 Nov 2025 01:21:07 GMT  
+		Last Modified: Thu, 15 Jan 2026 08:19:53 GMT  
 		Size: 60.8 MB (60822416 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f7e11511c30e26ba831e3130603c6135fa399dce361debb54e7debc7755ac46e`  
-		Last Modified: Fri, 14 Nov 2025 01:21:04 GMT  
+		Last Modified: Thu, 15 Jan 2026 08:19:49 GMT  
 		Size: 9.4 KB (9352 bytes)  
 		MIME: application/vnd.in-toto+json
 
