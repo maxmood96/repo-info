@@ -117,7 +117,7 @@ $ docker pull gradle@sha256:0bcaf7ef96a02c29733b2436519ccf605c37b1dd5862ddd34e33
 		Size: 11.3 MB (11337156 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fc18fe9a49907f2eb956c25e8e5a3763aa5809a6351cb338d1e5ed7accf0bf84`  
-		Last Modified: Thu, 18 Dec 2025 02:19:03 GMT  
+		Last Modified: Thu, 18 Dec 2025 03:22:53 GMT  
 		Size: 21.7 KB (21651 bytes)  
 		MIME: application/vnd.in-toto+json
 
