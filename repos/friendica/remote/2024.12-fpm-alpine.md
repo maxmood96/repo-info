@@ -203,7 +203,7 @@ CMD ["php-fpm"]
 		Size: 515.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e63d6136a3fde60875979a8a22c4145fbefa2c955016cda827fb0d06c4a953a0`  
-		Last Modified: Fri, 09 Jan 2026 23:33:33 GMT  
+		Last Modified: Fri, 09 Jan 2026 23:33:25 GMT  
 		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4706d603f440cbb8844a19c34d3a0364600a88bd9239bef4334b2a338ec5aede`  
@@ -235,7 +235,7 @@ $ docker pull friendica@sha256:815081d1f01e3960e5ea567e528315a1a6223d0b8eca59727
 
 -	Layers:
 	-	`sha256:fd7366468b573664d00d414ea1e257176d8f8127485bf817ff424964ab2cbf2a`  
-		Last Modified: Fri, 09 Jan 2026 23:33:23 GMT  
+		Last Modified: Sat, 10 Jan 2026 00:29:46 GMT  
 		Size: 61.9 KB (61898 bytes)  
 		MIME: application/vnd.in-toto+json
 
