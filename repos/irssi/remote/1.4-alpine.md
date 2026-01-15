@@ -398,7 +398,7 @@ CMD ["irssi"]
 		Size: 10.4 MB (10393558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b9ef839ff47bbf18b73140c8712e72cb22ecca46b3e8fdd8ec68f3e34de4befc`  
-		Last Modified: Thu, 18 Dec 2025 00:30:34 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:30:41 GMT  
 		Size: 953.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d98002cef64891cb9416a0c31f904ec9037b3401b618c75aa06851347032fa0b`  
@@ -430,7 +430,7 @@ $ docker pull irssi@sha256:fb68f05d44e0c0db000a0af566e3426523e7f0b9f32e6d76722af
 		Size: 1.3 MB (1308694 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2ec901df34838627b73c149fb922297b09aefcd820347fe989f9a8dfd62569d2`  
-		Last Modified: Thu, 18 Dec 2025 02:59:59 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:30:34 GMT  
 		Size: 17.4 KB (17444 bytes)  
 		MIME: application/vnd.in-toto+json
 
