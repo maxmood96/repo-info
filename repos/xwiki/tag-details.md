@@ -6335,7 +6335,7 @@ $ docker pull xwiki@sha256:b33d0aa3bb851bfc4f787eea5f815ca5a608bce33bc306c7d49b8
 		Size: 9.2 MB (9176108 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed2b38de75cad9cf18e0758aa48a050c80ea849a2b531f72427d5476a69462ad`  
-		Last Modified: Fri, 02 Jan 2026 22:07:45 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:15 GMT  
 		Size: 41.6 KB (41597 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8131,7 +8131,7 @@ $ docker pull xwiki@sha256:b33d0aa3bb851bfc4f787eea5f815ca5a608bce33bc306c7d49b8
 		Size: 9.2 MB (9176108 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed2b38de75cad9cf18e0758aa48a050c80ea849a2b531f72427d5476a69462ad`  
-		Last Modified: Fri, 02 Jan 2026 22:07:45 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:15 GMT  
 		Size: 41.6 KB (41597 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9927,7 +9927,7 @@ $ docker pull xwiki@sha256:b33d0aa3bb851bfc4f787eea5f815ca5a608bce33bc306c7d49b8
 		Size: 9.2 MB (9176108 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed2b38de75cad9cf18e0758aa48a050c80ea849a2b531f72427d5476a69462ad`  
-		Last Modified: Fri, 02 Jan 2026 22:07:45 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:15 GMT  
 		Size: 41.6 KB (41597 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15764,7 +15764,7 @@ $ docker pull xwiki@sha256:b33d0aa3bb851bfc4f787eea5f815ca5a608bce33bc306c7d49b8
 		Size: 9.2 MB (9176108 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed2b38de75cad9cf18e0758aa48a050c80ea849a2b531f72427d5476a69462ad`  
-		Last Modified: Fri, 02 Jan 2026 22:07:45 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:15 GMT  
 		Size: 41.6 KB (41597 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16213,7 +16213,7 @@ $ docker pull xwiki@sha256:b33d0aa3bb851bfc4f787eea5f815ca5a608bce33bc306c7d49b8
 		Size: 9.2 MB (9176108 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed2b38de75cad9cf18e0758aa48a050c80ea849a2b531f72427d5476a69462ad`  
-		Last Modified: Fri, 02 Jan 2026 22:07:45 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:15 GMT  
 		Size: 41.6 KB (41597 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18458,7 +18458,7 @@ $ docker pull xwiki@sha256:b33d0aa3bb851bfc4f787eea5f815ca5a608bce33bc306c7d49b8
 		Size: 9.2 MB (9176108 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed2b38de75cad9cf18e0758aa48a050c80ea849a2b531f72427d5476a69462ad`  
-		Last Modified: Fri, 02 Jan 2026 22:07:45 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:15 GMT  
 		Size: 41.6 KB (41597 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20254,7 +20254,7 @@ $ docker pull xwiki@sha256:b33d0aa3bb851bfc4f787eea5f815ca5a608bce33bc306c7d49b8
 		Size: 9.2 MB (9176108 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed2b38de75cad9cf18e0758aa48a050c80ea849a2b531f72427d5476a69462ad`  
-		Last Modified: Fri, 02 Jan 2026 22:07:45 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:15 GMT  
 		Size: 41.6 KB (41597 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20703,7 +20703,7 @@ $ docker pull xwiki@sha256:b33d0aa3bb851bfc4f787eea5f815ca5a608bce33bc306c7d49b8
 		Size: 9.2 MB (9176108 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed2b38de75cad9cf18e0758aa48a050c80ea849a2b531f72427d5476a69462ad`  
-		Last Modified: Fri, 02 Jan 2026 22:07:45 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:15 GMT  
 		Size: 41.6 KB (41597 bytes)  
 		MIME: application/vnd.in-toto+json
 
