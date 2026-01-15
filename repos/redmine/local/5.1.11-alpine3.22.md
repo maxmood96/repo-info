@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1147df8c0d3c18e7dca126fef819e9b735fce9213e2744c24ed95beff1d7873f`
-- Created: `2026-01-06T18:30:45.482833341Z`
-- Virtual Size: ~ 417.63 Mb  
+- Image ID: `sha256:aff3fa8c1392c02e5b5894fe00275b291d28b841884b7f5e928198f22a869fbe`
+- Created: `2026-01-14T18:03:03.072642458Z`
+- Virtual Size: ~ 416.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.2.9`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2`
+  - `RUBY_VERSION=3.2.10`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.10.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=a64a8a910ac2f28834b2170dedea688f06cbc6431fcd65eb18cc49ddbf3826ae`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -1137,16 +1137,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libtasn1`
 
 ```console
-libtasn1-4.20.0-r0 description:
+libtasn1-4.21.0-r0 description:
 The ASN.1 library used in GNUTLS
 
-libtasn1-4.20.0-r0 webpage:
+libtasn1-4.21.0-r0 webpage:
 https://www.gnu.org/software/gnutls/
 
-libtasn1-4.20.0-r0 installed size:
+libtasn1-4.21.0-r0 installed size:
 65 KiB
 
-libtasn1-4.20.0-r0 license:
+libtasn1-4.21.0-r0 license:
 LGPL-2.1-or-later
 
 ```

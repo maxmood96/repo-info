@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5820e4a9ae493c745f49d561485618703e4a7f9ed83b5b8632fe9bf372c22bbc`
-- Created: `2026-01-06T18:30:49.234771605Z`
-- Virtual Size: ~ 427.10 Mb  
+- Image ID: `sha256:d09ec95dad7a537da20934f065bd0dda184b8592499e5d3423c936b52a489d18`
+- Created: `2026-01-14T18:02:13.372012351Z`
+- Virtual Size: ~ 426.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.2.9`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.9.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=cf6699d0084c588e7944d92e1a8edda28b1cc3ee471a1f0aebb4b3d32c9753b2`
+  - `RUBY_VERSION=3.2.10`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.10.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=a64a8a910ac2f28834b2170dedea688f06cbc6431fcd65eb18cc49ddbf3826ae`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -627,16 +627,16 @@ MIT
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.8-r0 description:
+imagemagick-7.1.2.12-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.8-r0 webpage:
+imagemagick-7.1.2.12-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.8-r0 installed size:
-3663 KiB
+imagemagick-7.1.2.12-r0 installed size:
+3667 KiB
 
-imagemagick-7.1.2.8-r0 license:
+imagemagick-7.1.2.12-r0 license:
 ImageMagick
 
 ```
@@ -644,16 +644,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.8-r0 description:
+imagemagick-jp2-7.1.2.12-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.8-r0 webpage:
+imagemagick-jp2-7.1.2.12-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.8-r0 installed size:
+imagemagick-jp2-7.1.2.12-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.8-r0 license:
+imagemagick-jp2-7.1.2.12-r0 license:
 ImageMagick
 
 ```
@@ -661,16 +661,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.8-r0 description:
+imagemagick-jpeg-7.1.2.12-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.8-r0 webpage:
+imagemagick-jpeg-7.1.2.12-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.8-r0 installed size:
-54 KiB
+imagemagick-jpeg-7.1.2.12-r0 installed size:
+62 KiB
 
-imagemagick-jpeg-7.1.2.8-r0 license:
+imagemagick-jpeg-7.1.2.12-r0 license:
 ImageMagick
 
 ```
@@ -678,16 +678,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.8-r0 description:
+imagemagick-libs-7.1.2.12-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.8-r0 webpage:
+imagemagick-libs-7.1.2.12-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.8-r0 installed size:
+imagemagick-libs-7.1.2.12-r0 installed size:
 4245 KiB
 
-imagemagick-libs-7.1.2.8-r0 license:
+imagemagick-libs-7.1.2.12-r0 license:
 ImageMagick
 
 ```
@@ -695,16 +695,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.8-r0 description:
+imagemagick-pdf-7.1.2.12-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.8-r0 webpage:
+imagemagick-pdf-7.1.2.12-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.8-r0 installed size:
+imagemagick-pdf-7.1.2.12-r0 installed size:
 117 KiB
 
-imagemagick-pdf-7.1.2.8-r0 license:
+imagemagick-pdf-7.1.2.12-r0 license:
 ImageMagick
 
 ```
@@ -712,16 +712,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.8-r0 description:
+imagemagick-tiff-7.1.2.12-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.8-r0 webpage:
+imagemagick-tiff-7.1.2.12-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.8-r0 installed size:
+imagemagick-tiff-7.1.2.12-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.2.8-r0 license:
+imagemagick-tiff-7.1.2.12-r0 license:
 ImageMagick
 
 ```
@@ -729,16 +729,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.8-r0 description:
+imagemagick-webp-7.1.2.12-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.8-r0 webpage:
+imagemagick-webp-7.1.2.12-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.8-r0 installed size:
+imagemagick-webp-7.1.2.12-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.8-r0 license:
+imagemagick-webp-7.1.2.12-r0 license:
 ImageMagick
 
 ```
@@ -1290,16 +1290,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libtasn1`
 
 ```console
-libtasn1-4.20.0-r0 description:
+libtasn1-4.21.0-r0 description:
 The ASN.1 library used in GNUTLS
 
-libtasn1-4.20.0-r0 webpage:
+libtasn1-4.21.0-r0 webpage:
 https://www.gnu.org/software/gnutls/
 
-libtasn1-4.20.0-r0 installed size:
+libtasn1-4.21.0-r0 installed size:
 65 KiB
 
-libtasn1-4.20.0-r0 license:
+libtasn1-4.21.0-r0 license:
 LGPL-2.1-or-later
 
 ```
