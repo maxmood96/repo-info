@@ -499,7 +499,7 @@ CMD ["php-fpm"]
 		Size: 250.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b9e88e16b1e1510d30bb52fbaf67afc28b4ef37c11b021cc6f75ae347f7f3c8`  
-		Last Modified: Tue, 13 Jan 2026 01:54:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:54:54 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1427,6 +1427,6 @@ $ docker pull matomo@sha256:fadf522c91606a5f443d89aa6183857c103a845b44a8f76ce51c
 
 -	Layers:
 	-	`sha256:ba4b2a875da2f776b93676a072996ca6a83cc56db6a58e87bce10c4a018efe79`  
-		Last Modified: Tue, 13 Jan 2026 15:56:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:11:49 GMT  
 		Size: 33.2 KB (33242 bytes)  
 		MIME: application/vnd.in-toto+json
