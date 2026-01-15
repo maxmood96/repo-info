@@ -342,7 +342,7 @@ $ docker pull buildpack-deps@sha256:534c0f4ec0f12e375a4bb13519ab4dbe6eb4d2d31886
 		Size: 16.3 MB (16265791 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2bc97153f6cee8fead45aecefffaf7471e1a046ae7f6c130d5f4e5f48942c94d`  
-		Last Modified: Wed, 14 Jan 2026 04:14:55 GMT  
+		Last Modified: Thu, 15 Jan 2026 03:24:42 GMT  
 		Size: 10.2 KB (10165 bytes)  
 		MIME: application/vnd.in-toto+json
 
