@@ -362,7 +362,7 @@ $ docker pull r-base@sha256:7c246d3f24fb29a239657ec985b04f90b1e43c4a766dbd60c078
 
 -	Layers:
 	-	`sha256:363528e1842b841ef940850b864b17248b532c38279690a4b4e8687fa4a3bab7`  
-		Last Modified: Tue, 13 Jan 2026 02:04:22 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:15:00 GMT  
 		Size: 12.8 MB (12774540 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cb126a4ac648a913be2b361f91a0947243e43ee55cb7997efe7f3954f19fe3bb`  
@@ -727,7 +727,7 @@ $ docker pull r-base@sha256:7c246d3f24fb29a239657ec985b04f90b1e43c4a766dbd60c078
 
 -	Layers:
 	-	`sha256:363528e1842b841ef940850b864b17248b532c38279690a4b4e8687fa4a3bab7`  
-		Last Modified: Tue, 13 Jan 2026 02:04:22 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:15:00 GMT  
 		Size: 12.8 MB (12774540 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cb126a4ac648a913be2b361f91a0947243e43ee55cb7997efe7f3954f19fe3bb`  
