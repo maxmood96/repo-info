@@ -4660,7 +4660,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 14.0 KB (14009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39955be1224cd1e6119ca3993af7e70ea30bc8da5366d534725fa252f5c0d284`  
-		Last Modified: Mon, 01 Dec 2025 22:52:38 GMT  
+		Last Modified: Mon, 01 Dec 2025 22:52:44 GMT  
 		Size: 243.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:df1db34fc6ad2e62d0f61f45e5979e5c49fbc4c6477502c6a3d777d2d4b4235a`  
@@ -5250,7 +5250,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 17.6 MB (17573833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11b03a28e590f5546cffd0d14f7aac6a3b32a57c5abc663fee559014bc4482ae`  
-		Last Modified: Mon, 01 Dec 2025 22:17:52 GMT  
+		Last Modified: Mon, 01 Dec 2025 22:17:44 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1877f01b7888d63a1a6b36440c025bd8c0b085028a8e2015b58edfc561847c23`  
@@ -6770,7 +6770,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 14.0 KB (14009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39955be1224cd1e6119ca3993af7e70ea30bc8da5366d534725fa252f5c0d284`  
-		Last Modified: Mon, 01 Dec 2025 22:52:38 GMT  
+		Last Modified: Mon, 01 Dec 2025 22:52:44 GMT  
 		Size: 243.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:df1db34fc6ad2e62d0f61f45e5979e5c49fbc4c6477502c6a3d777d2d4b4235a`  
@@ -7288,7 +7288,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 17.6 MB (17573833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11b03a28e590f5546cffd0d14f7aac6a3b32a57c5abc663fee559014bc4482ae`  
-		Last Modified: Mon, 01 Dec 2025 22:17:52 GMT  
+		Last Modified: Mon, 01 Dec 2025 22:17:44 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1877f01b7888d63a1a6b36440c025bd8c0b085028a8e2015b58edfc561847c23`  
@@ -8541,7 +8541,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 14.0 KB (14010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee7a81d8e9c96d3b4a82100e656f27a74ec8c099ffb62fb492d0d30a11a796f8`  
-		Last Modified: Mon, 01 Dec 2025 22:17:50 GMT  
+		Last Modified: Mon, 01 Dec 2025 22:17:42 GMT  
 		Size: 243.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:44adf1b226ef4f9cca21d028824520ad47b5edf8cbe0c20de429bc64a758d2c3`  
@@ -8744,7 +8744,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 14.8 KB (14833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec3080ac4ed9e952e82adbfd4438ffe284d72ff829733cd59e02033a5920a7d5`  
-		Last Modified: Mon, 01 Dec 2025 22:54:53 GMT  
+		Last Modified: Mon, 01 Dec 2025 22:54:44 GMT  
 		Size: 2.7 MB (2673514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e58ff07e63f4f876f9d141ef4b4d3706a2791d3fb1f8b3781b3410ff2667159`  
@@ -8951,7 +8951,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 945.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:68e800f817241b86169ea82acb8711c154846d521ec8265ac736accfd88700fc`  
-		Last Modified: Tue, 02 Dec 2025 03:38:20 GMT  
+		Last Modified: Tue, 02 Dec 2025 03:38:40 GMT  
 		Size: 16.0 MB (15959287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9577,7 +9577,7 @@ $ docker pull websphere-liberty@sha256:0a6c1897cea4ed7b07ac8fc1edd000d740ecb2f5c
 		Size: 5.9 MB (5933197 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:364b04d88a2f08799e4cdf1195fcc7b1abfdbd31c7484540aa665231f2444ab8`  
-		Last Modified: Tue, 02 Dec 2025 07:21:00 GMT  
+		Last Modified: Tue, 02 Dec 2025 04:23:25 GMT  
 		Size: 19.7 KB (19690 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10675,7 +10675,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 14.0 KB (14010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee7a81d8e9c96d3b4a82100e656f27a74ec8c099ffb62fb492d0d30a11a796f8`  
-		Last Modified: Mon, 01 Dec 2025 22:17:50 GMT  
+		Last Modified: Mon, 01 Dec 2025 22:17:42 GMT  
 		Size: 243.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:44adf1b226ef4f9cca21d028824520ad47b5edf8cbe0c20de429bc64a758d2c3`  
@@ -10854,7 +10854,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 14.8 KB (14833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec3080ac4ed9e952e82adbfd4438ffe284d72ff829733cd59e02033a5920a7d5`  
-		Last Modified: Mon, 01 Dec 2025 22:54:53 GMT  
+		Last Modified: Mon, 01 Dec 2025 22:54:44 GMT  
 		Size: 2.7 MB (2673514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
