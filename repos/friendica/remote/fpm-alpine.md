@@ -235,7 +235,7 @@ $ docker pull friendica@sha256:815081d1f01e3960e5ea567e528315a1a6223d0b8eca59727
 
 -	Layers:
 	-	`sha256:fd7366468b573664d00d414ea1e257176d8f8127485bf817ff424964ab2cbf2a`  
-		Last Modified: Sat, 10 Jan 2026 00:29:46 GMT  
+		Last Modified: Fri, 09 Jan 2026 23:33:23 GMT  
 		Size: 61.9 KB (61898 bytes)  
 		MIME: application/vnd.in-toto+json
 
