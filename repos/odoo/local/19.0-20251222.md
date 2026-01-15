@@ -2120,14 +2120,9 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.43-5ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.1.dsc' libpng1.6_1.6.43-5ubuntu0.1.dsc 2254 SHA512:8efde81249fdcc88a43ea3c54d031a6e881aad5e14642c2869baf653345c54a7561b3ac85411b83a49f26973e673a8d3305f6d84f1f2705355ff34f790773c22
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43.orig.tar.gz' libpng1.6_1.6.43.orig.tar.gz 1554715 SHA512:3bb2a7b73113be42b09c2116e6c6f5a7ddb4e2ab06e0b13e10b7314acdccc4bb624ff602e16140c0484f6cde80efa190296226be3da195c6926819f07c723c12
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.1.debian.tar.xz' libpng1.6_1.6.43-5ubuntu0.1.debian.tar.xz 35100 SHA512:a5e1cb523be131fd5734e2fcbc933e1f3c9eb9163c7aa93b0dcc66cdf67e6b860488cfd8861fe5f70b2c1cc07e611daa952102b7f7ba7bacd59727e081e8af52
-```
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build1`
 
@@ -2320,15 +2315,9 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.19.0-3ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3ubuntu0.24.04.1.dsc' libtasn1-6_4.19.0-3ubuntu0.24.04.1.dsc 2846 SHA512:1f83726190ebe1fb9a52fc330cf794629df8180e803110a38825a4ea59c4a70ee2d973089f07dac1f06d258f37548f3bf557798ee5a832388b19c0c5c6403eb7
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz' libtasn1-6_4.19.0.orig.tar.gz 1786576 SHA512:287f5eddfb5e21762d9f14d11997e56b953b980b2b03a97ed4cd6d37909bda1ed7d2cdff9da5d270a21d863ab7e54be6b85c05f1075ac5d8f0198997cf335ef4
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz.asc' libtasn1-6_4.19.0.orig.tar.gz.asc 228 SHA512:e0417625f8df22c6421914bf2d4f19d7f27260c24c04f50e59669681f326debe06ddef9dc5a2e20fda50feb30bbbf3f41597e64961257304ec2c407aa76d107e
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3ubuntu0.24.04.1.debian.tar.xz' libtasn1-6_4.19.0-3ubuntu0.24.04.1.debian.tar.xz 24752 SHA512:6353360456b2fe7079f9ee98d82d065c85c488ae6103e68f374267be6e55ebb1e3fe251f2c738b96cf9fc67d36e2b9329d43acb2605d74994b957320649f5687
-```
 
 ### `dpkg` source package: `libunistring=1.1-2build1.1`
 
@@ -11334,14 +11323,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-urllib3=2.0.7-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_2.0.7-1ubuntu0.3.dsc' python-urllib3_2.0.7-1ubuntu0.3.dsc 2781 SHA512:e986ae379319ed590c774a4d677dea5d1c850a7a9530fb00b26f08a1084f266186634a51de30e9c7e1343fc72ebaa4ee1b812b9f8c3680a8dfcaed71dfb077c8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_2.0.7.orig.tar.gz' python-urllib3_2.0.7.orig.tar.gz 282546 SHA512:ca21dd330cfc7f53e6f00a92be1df1d24acbe61b6ca31c52a272dccd6f50d1bb797eece9132860adc84c21a9bebc3030a12816081451fcb8384c11a6cd2d1e8b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_2.0.7-1ubuntu0.3.debian.tar.xz' python-urllib3_2.0.7-1ubuntu0.3.debian.tar.xz 20384 SHA512:14b78502fa178647b9223ff999197a71e9aefb0ec8108296829e19b48cc3772075393d237666c10fe768c3ef69d95bf926101325f887a913005e5a1dab30a254
-```
 
 ### `dpkg` source package: `python-vobject=0.9.6.1-2`
 
