@@ -1009,7 +1009,7 @@ $ docker pull rabbitmq@sha256:451f4a8c99d172e36ef87f3ae14348a733bc3c703643e7fe96
 		Size: 673.9 KB (673894 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a0f688c393a704d6d1d70ca95f6086b0744840371e09cc5b43757b480d53af52`  
-		Last Modified: Wed, 07 Jan 2026 19:55:47 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:59:30 GMT  
 		Size: 15.3 KB (15283 bytes)  
 		MIME: application/vnd.in-toto+json
 
