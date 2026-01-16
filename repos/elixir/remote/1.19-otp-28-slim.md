@@ -287,7 +287,7 @@ $ docker pull elixir@sha256:3969f939e1a91ef5a660abb0651ee934999c3467c830468db95f
 
 -	Layers:
 	-	`sha256:4a384f84cc99bf9edf637510f0b8f1141593f0d9366d6f37a246e7d2f367f67e`  
-		Last Modified: Thu, 15 Jan 2026 21:46:51 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:48:21 GMT  
 		Size: 3.3 MB (3288641 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3463815076567ca6c587abd924962e93770300c82f7de79fedb0f3334682b0f6`  
