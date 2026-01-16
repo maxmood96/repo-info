@@ -113,7 +113,7 @@ $ docker pull redis@sha256:b0e6e976e3027fd08225c1ceb5487371e37bddc0a94d790152bc3
 
 -	Layers:
 	-	`sha256:be1e78058b83cb842db9fa06333b1a11d4ff071ff071830b7ab5ff085309e8db`  
-		Last Modified: Tue, 18 Nov 2025 23:06:08 GMT  
+		Last Modified: Tue, 18 Nov 2025 21:54:37 GMT  
 		Size: 468.9 KB (468932 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:726d7aa6192d0eb2f90fc1ab03de58ed9d59e4f300e272737aaad48cc6f59a10`  
