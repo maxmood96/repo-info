@@ -123,7 +123,7 @@ USER root
 		Size: 34.5 MB (34531778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff3edaec2a8085b53169aad00e500cf23a536467b74e25d584ed4acb2e687224`  
-		Last Modified: Thu, 18 Dec 2025 22:24:22 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:24:09 GMT  
 		Size: 55.3 MB (55325379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1eb60cfd75dd4fc77f99cf2a8b6d3f6f8096a4ad985f32c7f9ca790ae3338e0`  
@@ -175,7 +175,7 @@ $ docker pull gradle@sha256:0da8522536e16cb204f9e8318bfaf692cddcf9ecd39528a8bcf0
 
 -	Layers:
 	-	`sha256:31ab8f0c309d9f364792198a4bb877f330e451ea994c3917a5ab92aed41f58d3`  
-		Last Modified: Fri, 19 Dec 2025 00:21:12 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:57:02 GMT  
 		Size: 8.9 MB (8926162 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:78783a179203e1264de193a1638644f71005fa5abed7c5944ce9f1b17fd0eca2`  
