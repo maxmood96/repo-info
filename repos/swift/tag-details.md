@@ -1126,7 +1126,7 @@ $ docker pull swift@sha256:d9ce5a4ad1152576d513924a599e0bffbd07a4388226735fd82d0
 		Size: 3.1 MB (3055789 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0723e90d0b3960bc314750f561365c3ab3fdc831cbe5f6767becabb64df40c9d`  
-		Last Modified: Thu, 15 Jan 2026 23:48:15 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:54:43 GMT  
 		Size: 14.3 KB (14283 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1966,7 +1966,7 @@ $ docker pull swift@sha256:5de9c5d6930bc4cb931541de390e95f2c128fa47b75b76726b032
 		Size: 6.4 MB (6405924 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cb5e7439dc5f3cabc5a911975ed369f99823840ec67d91273e0bad76c487e586`  
-		Last Modified: Tue, 06 Jan 2026 19:03:38 GMT  
+		Last Modified: Tue, 06 Jan 2026 20:47:32 GMT  
 		Size: 11.2 KB (11200 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2171,7 +2171,7 @@ $ docker pull swift@sha256:d9ce5a4ad1152576d513924a599e0bffbd07a4388226735fd82d0
 		Size: 3.1 MB (3055789 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0723e90d0b3960bc314750f561365c3ab3fdc831cbe5f6767becabb64df40c9d`  
-		Last Modified: Thu, 15 Jan 2026 23:48:15 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:54:43 GMT  
 		Size: 14.3 KB (14283 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3420,7 +3420,7 @@ $ docker pull swift@sha256:d9ce5a4ad1152576d513924a599e0bffbd07a4388226735fd82d0
 		Size: 3.1 MB (3055789 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0723e90d0b3960bc314750f561365c3ab3fdc831cbe5f6767becabb64df40c9d`  
-		Last Modified: Thu, 15 Jan 2026 23:48:15 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:54:43 GMT  
 		Size: 14.3 KB (14283 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4260,7 +4260,7 @@ $ docker pull swift@sha256:5de9c5d6930bc4cb931541de390e95f2c128fa47b75b76726b032
 		Size: 6.4 MB (6405924 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cb5e7439dc5f3cabc5a911975ed369f99823840ec67d91273e0bad76c487e586`  
-		Last Modified: Tue, 06 Jan 2026 19:03:38 GMT  
+		Last Modified: Tue, 06 Jan 2026 20:47:32 GMT  
 		Size: 11.2 KB (11200 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4465,7 +4465,7 @@ $ docker pull swift@sha256:d9ce5a4ad1152576d513924a599e0bffbd07a4388226735fd82d0
 		Size: 3.1 MB (3055789 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0723e90d0b3960bc314750f561365c3ab3fdc831cbe5f6767becabb64df40c9d`  
-		Last Modified: Thu, 15 Jan 2026 23:48:15 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:54:43 GMT  
 		Size: 14.3 KB (14283 bytes)  
 		MIME: application/vnd.in-toto+json
 
