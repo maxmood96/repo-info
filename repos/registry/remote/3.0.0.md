@@ -223,7 +223,7 @@ CMD ["/etc/distribution/config.yml"]
 		Size: 3.1 MB (3098611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:213ecfb8fca6ea80bbfde8d04df079fca5ec6e400ba137df47f9fdcee37a00fe`  
-		Last Modified: Mon, 08 Dec 2025 01:08:23 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:09:55 GMT  
 		Size: 291.1 KB (291147 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:768697343a764b270d41a2259f3fce1437536244485f699ccd1bfe9095b30f0e`  
