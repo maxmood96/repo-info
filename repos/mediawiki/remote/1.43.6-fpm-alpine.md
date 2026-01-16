@@ -189,7 +189,7 @@ $ docker pull mediawiki@sha256:5cab13de643237eb1195bb26eff05090478322b08b56d027b
 
 -	Layers:
 	-	`sha256:f89bdc9503bd57b2f06729d5e4f8d5258a59ecd4e554c3691ed9fc4e03ae8129`  
-		Last Modified: Fri, 09 Jan 2026 23:43:56 GMT  
+		Last Modified: Sat, 10 Jan 2026 01:17:53 GMT  
 		Size: 33.1 KB (33112 bytes)  
 		MIME: application/vnd.in-toto+json
 
