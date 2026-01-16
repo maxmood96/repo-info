@@ -144,7 +144,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 581.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21183071b99de5c358387036b751674326a9511cc81577d237aa8aa52367521c`  
-		Last Modified: Fri, 16 Jan 2026 01:33:09 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:33:17 GMT  
 		Size: 1.5 KB (1525 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b1db386795d6da849a68e7fe7eacf925a7c4e23a0309a246b84b212297d34b7`  
