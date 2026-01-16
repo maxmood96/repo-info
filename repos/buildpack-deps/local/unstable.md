@@ -633,21 +633,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.18.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0-1.dsc' curl_8.18.0-1.dsc 3315 SHA256:32ef319d3270312485e757072675e5a0c15b94106f2f761cc0aeccf0254174e0
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA256:e9274a5f8ab5271c0e0e6762d2fce194d5f98acc568e4ce816845b2dcc0cf88f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA256:449692ee6cbadc99762d1daa86b3faf95d60f82b1d45ea1a33e37adda4bd194b
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0-1.debian.tar.xz' curl_8.18.0-1.debian.tar.xz 52808 SHA256:1fa98de72c0b59d768738a0c337baa81c172e6d55672abb2d6d19c3476599bf2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.18.0-1/
 
-- https://sources.debian.net/src/curl/8.18.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.18.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.18.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-10`
 
@@ -4614,20 +4606,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.56.4-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.4-1.dsc' pango1.0_1.56.4-1.dsc 3704 SHA256:168fb1397202b5488d40cfdbc1dd24ea8e2e9d0d29760e477c1b4c2fd6d1ab18
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.4.orig.tar.xz' pango1.0_1.56.4.orig.tar.xz 1883988 SHA256:17065e2fcc5f5a5bdbffc884c956bfc7c451a96e8c4fb2f8ad837c6413cb5a01
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.4-1.debian.tar.xz' pango1.0_1.56.4-1.debian.tar.xz 44136 SHA256:389bae65c77a65eca0a4df6311b5ad687249456ed6a004bcce994857a5040db9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.56.4-1/
 
-- https://sources.debian.net/src/pango1.0/1.56.4-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.56.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.56.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.8-2`
 

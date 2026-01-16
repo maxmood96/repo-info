@@ -1843,20 +1843,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=12.2.0-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.2.0-1.dsc' harfbuzz_12.2.0-1.dsc 2583 SHA256:7077988ea559dd34369fc723d437badb61f76909205d40e5cfd4d4455f973acf
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.2.0.orig.tar.xz' harfbuzz_12.2.0.orig.tar.xz 18221900 SHA256:ecb603aa426a8b24665718667bda64a84c1504db7454ee4cadbd362eea64e545
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.2.0-1.debian.tar.xz' harfbuzz_12.2.0-1.debian.tar.xz 19696 SHA256:ad1143a25a9c6332b9e271359d94e4c1f52f412bed072c7c7e9eb374e6f906bd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/12.2.0-1/
 
-- https://sources.debian.net/src/harfbuzz/12.2.0-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/12.2.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/12.2.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.18-2`
 
@@ -1955,20 +1948,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.2.8+dfsg1-1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.8%2bdfsg1-1.dsc' imagemagick_7.1.2.8+dfsg1-1.dsc 5097 SHA256:f1d031b0175a0e747f1c61a3c4cb03911b18cdc466e24203b0dddf014c5bf0cb
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.8%2bdfsg1.orig.tar.xz' imagemagick_7.1.2.8+dfsg1.orig.tar.xz 10517668 SHA256:ad5e43fb2e7ed069916f4716218aba6e2bb043e0b2cf99bee8d4cc30ce12ee9f
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.8%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.2.8+dfsg1-1.debian.tar.xz 267352 SHA256:339bb1820572292cff0eb7b18f117f8642d01e4ea9d30b8466bef924534afb15
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:7.1.2.8+dfsg1-1/
 
-- https://sources.debian.net/src/imagemagick/8:7.1.2.8+dfsg1-1/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.2.8+dfsg1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.2.8+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
