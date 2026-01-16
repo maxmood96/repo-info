@@ -383,7 +383,7 @@ $ docker pull eclipse-temurin@sha256:61b487e771d269d84366e5190f36fa59855852378b8
 
 -	Layers:
 	-	`sha256:57ab2a75723a7f45e008483e9667958ca1bdaa1b4a8ff550955978077bb8c650`  
-		Last Modified: Thu, 15 Jan 2026 22:09:28 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:19:12 GMT  
 		Size: 4.1 MB (4051657 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1e39aaac7cafd87aca99160f9e32580f12c79de84edb2f1e073ad706e6a978c2`  
