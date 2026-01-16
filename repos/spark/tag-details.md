@@ -5324,7 +5324,7 @@ $ docker pull spark@sha256:0ab264e48205cf67d0c029628c9544bd7265c1850b4cf4e3e1b30
 		Size: 10.4 MB (10424061 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:64ee2ab7f7333188772ddbd417babe5b97e52eddb98d1ad10a7f0191f569abce`  
-		Last Modified: Fri, 16 Jan 2026 02:24:30 GMT  
+		Last Modified: Fri, 16 Jan 2026 06:12:37 GMT  
 		Size: 11.6 KB (11595 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5629,7 +5629,7 @@ $ docker pull spark@sha256:0ab264e48205cf67d0c029628c9544bd7265c1850b4cf4e3e1b30
 		Size: 10.4 MB (10424061 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:64ee2ab7f7333188772ddbd417babe5b97e52eddb98d1ad10a7f0191f569abce`  
-		Last Modified: Fri, 16 Jan 2026 02:24:30 GMT  
+		Last Modified: Fri, 16 Jan 2026 06:12:37 GMT  
 		Size: 11.6 KB (11595 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8944,7 +8944,7 @@ $ docker pull spark@sha256:0ab264e48205cf67d0c029628c9544bd7265c1850b4cf4e3e1b30
 		Size: 10.4 MB (10424061 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:64ee2ab7f7333188772ddbd417babe5b97e52eddb98d1ad10a7f0191f569abce`  
-		Last Modified: Fri, 16 Jan 2026 02:24:30 GMT  
+		Last Modified: Fri, 16 Jan 2026 06:12:37 GMT  
 		Size: 11.6 KB (11595 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9843,7 +9843,7 @@ $ docker pull spark@sha256:0ab264e48205cf67d0c029628c9544bd7265c1850b4cf4e3e1b30
 		Size: 10.4 MB (10424061 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:64ee2ab7f7333188772ddbd417babe5b97e52eddb98d1ad10a7f0191f569abce`  
-		Last Modified: Fri, 16 Jan 2026 02:24:30 GMT  
+		Last Modified: Fri, 16 Jan 2026 06:12:37 GMT  
 		Size: 11.6 KB (11595 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10148,7 +10148,7 @@ $ docker pull spark@sha256:0ab264e48205cf67d0c029628c9544bd7265c1850b4cf4e3e1b30
 		Size: 10.4 MB (10424061 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:64ee2ab7f7333188772ddbd417babe5b97e52eddb98d1ad10a7f0191f569abce`  
-		Last Modified: Fri, 16 Jan 2026 02:24:30 GMT  
+		Last Modified: Fri, 16 Jan 2026 06:12:37 GMT  
 		Size: 11.6 KB (11595 bytes)  
 		MIME: application/vnd.in-toto+json
 
