@@ -2266,7 +2266,7 @@ $ docker pull julia@sha256:504222b3e36edabb3739f1fb9e02c12aaab4b9b97ce3fa02b2299
 		Size: 2.6 MB (2571610 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f5450c7cec9561b842826cc16a3fb053677f1fbdc2addbd3df75da04126b41f8`  
-		Last Modified: Wed, 14 Jan 2026 03:02:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:29:25 GMT  
 		Size: 16.6 KB (16632 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3925,7 +3925,7 @@ $ docker pull julia@sha256:504222b3e36edabb3739f1fb9e02c12aaab4b9b97ce3fa02b2299
 		Size: 2.6 MB (2571610 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f5450c7cec9561b842826cc16a3fb053677f1fbdc2addbd3df75da04126b41f8`  
-		Last Modified: Wed, 14 Jan 2026 03:02:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:29:25 GMT  
 		Size: 16.6 KB (16632 bytes)  
 		MIME: application/vnd.in-toto+json
 
