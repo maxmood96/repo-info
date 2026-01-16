@@ -196,7 +196,7 @@ $ docker pull erlang@sha256:d527a645f942d751a82e368f7017f178741dd9d5e36a7c02dd97
 		Size: 3.8 MB (3826986 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fa39e30451d7ae9510c8511cde1d6a5b2ee0012d74f62937868026d16bc30e4d`  
-		Last Modified: Tue, 13 Jan 2026 03:11:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:49:12 GMT  
 		Size: 13.7 KB (13716 bytes)  
 		MIME: application/vnd.in-toto+json
 
