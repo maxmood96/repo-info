@@ -1029,7 +1029,7 @@ $ docker pull odoo@sha256:8c09caf6f3bc395c5cc768f4ff3641d1ad4618c1dd129e3cd96f1a
 		Size: 61.4 MB (61447215 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:09338d4884f043607c44bbafd0c7b713b726d66be3a330627f0a109244d4d87c`  
-		Last Modified: Fri, 16 Jan 2026 02:14:41 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:39:29 GMT  
 		Size: 26.8 KB (26799 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1458,7 +1458,7 @@ $ docker pull odoo@sha256:8c09caf6f3bc395c5cc768f4ff3641d1ad4618c1dd129e3cd96f1a
 		Size: 61.4 MB (61447215 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:09338d4884f043607c44bbafd0c7b713b726d66be3a330627f0a109244d4d87c`  
-		Last Modified: Fri, 16 Jan 2026 02:14:41 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:39:29 GMT  
 		Size: 26.8 KB (26799 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1887,7 +1887,7 @@ $ docker pull odoo@sha256:8c09caf6f3bc395c5cc768f4ff3641d1ad4618c1dd129e3cd96f1a
 		Size: 61.4 MB (61447215 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:09338d4884f043607c44bbafd0c7b713b726d66be3a330627f0a109244d4d87c`  
-		Last Modified: Fri, 16 Jan 2026 02:14:41 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:39:29 GMT  
 		Size: 26.8 KB (26799 bytes)  
 		MIME: application/vnd.in-toto+json
 
