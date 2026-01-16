@@ -629,7 +629,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 -	Layers:
 	-	`sha256:b4b94acc94b4406ae94f444e29a6c06ae16918e74a98367370cf7529ea8d988c`  
-		Last Modified: Thu, 18 Dec 2025 02:40:23 GMT  
+		Last Modified: Thu, 18 Dec 2025 02:40:28 GMT  
 		Size: 3.6 MB (3583938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ac202a4ea053c559abb0839547921026b5c60ef3268d982da82c523fc6ec02b5`  
@@ -673,7 +673,7 @@ $ docker pull haproxy@sha256:b8f245a0c0f60d671237ab9dec3bba08e863a6f74424232e28a
 		Size: 226.7 KB (226697 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:80465cc77c6094179eb0a0a6983463726860b279660680cfb45fb25eccdab96c`  
-		Last Modified: Fri, 09 Jan 2026 22:59:58 GMT  
+		Last Modified: Fri, 09 Jan 2026 19:10:16 GMT  
 		Size: 21.2 KB (21229 bytes)  
 		MIME: application/vnd.in-toto+json
 
