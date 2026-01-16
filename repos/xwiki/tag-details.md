@@ -466,7 +466,7 @@ CMD ["xwiki"]
 		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c97d4dba25034874cd2a3ffab265ac227164bc99ca914557f8f79224fb06a6a7`  
-		Last Modified: Wed, 07 Jan 2026 17:42:55 GMT  
+		Last Modified: Wed, 07 Jan 2026 17:43:18 GMT  
 		Size: 2.4 KB (2373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d3866532d00e61bcc898e38e8de7516e87ceaff8e7cabf680f62d567c0486f5`  
@@ -1364,7 +1364,7 @@ CMD ["xwiki"]
 		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c97d4dba25034874cd2a3ffab265ac227164bc99ca914557f8f79224fb06a6a7`  
-		Last Modified: Wed, 07 Jan 2026 17:42:55 GMT  
+		Last Modified: Wed, 07 Jan 2026 17:43:18 GMT  
 		Size: 2.4 KB (2373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d3866532d00e61bcc898e38e8de7516e87ceaff8e7cabf680f62d567c0486f5`  
@@ -1587,7 +1587,7 @@ CMD ["xwiki"]
 		Size: 318.0 MB (318028406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3cafb1ba10f15c9add6dbe90ad77f988c628f0bbbdcb810828da54cb6260822`  
-		Last Modified: Wed, 07 Jan 2026 17:43:40 GMT  
+		Last Modified: Wed, 07 Jan 2026 17:43:56 GMT  
 		Size: 1.0 MB (1043012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2fe22b311cbbc8f88fea3a2f4f335346d990736c9a209e8e1a506ad5b80e117`  
@@ -2262,7 +2262,7 @@ CMD ["xwiki"]
 		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c97d4dba25034874cd2a3ffab265ac227164bc99ca914557f8f79224fb06a6a7`  
-		Last Modified: Wed, 07 Jan 2026 17:42:55 GMT  
+		Last Modified: Wed, 07 Jan 2026 17:43:18 GMT  
 		Size: 2.4 KB (2373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d3866532d00e61bcc898e38e8de7516e87ceaff8e7cabf680f62d567c0486f5`  
@@ -3160,7 +3160,7 @@ CMD ["xwiki"]
 		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c97d4dba25034874cd2a3ffab265ac227164bc99ca914557f8f79224fb06a6a7`  
-		Last Modified: Wed, 07 Jan 2026 17:42:55 GMT  
+		Last Modified: Wed, 07 Jan 2026 17:43:18 GMT  
 		Size: 2.4 KB (2373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d3866532d00e61bcc898e38e8de7516e87ceaff8e7cabf680f62d567c0486f5`  
@@ -3383,7 +3383,7 @@ CMD ["xwiki"]
 		Size: 318.0 MB (318028406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3cafb1ba10f15c9add6dbe90ad77f988c628f0bbbdcb810828da54cb6260822`  
-		Last Modified: Wed, 07 Jan 2026 17:43:40 GMT  
+		Last Modified: Wed, 07 Jan 2026 17:43:56 GMT  
 		Size: 1.0 MB (1043012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2fe22b311cbbc8f88fea3a2f4f335346d990736c9a209e8e1a506ad5b80e117`  
@@ -4058,7 +4058,7 @@ CMD ["xwiki"]
 		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c97d4dba25034874cd2a3ffab265ac227164bc99ca914557f8f79224fb06a6a7`  
-		Last Modified: Wed, 07 Jan 2026 17:42:55 GMT  
+		Last Modified: Wed, 07 Jan 2026 17:43:18 GMT  
 		Size: 2.4 KB (2373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d3866532d00e61bcc898e38e8de7516e87ceaff8e7cabf680f62d567c0486f5`  
@@ -4956,7 +4956,7 @@ CMD ["xwiki"]
 		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c97d4dba25034874cd2a3ffab265ac227164bc99ca914557f8f79224fb06a6a7`  
-		Last Modified: Wed, 07 Jan 2026 17:42:55 GMT  
+		Last Modified: Wed, 07 Jan 2026 17:43:18 GMT  
 		Size: 2.4 KB (2373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d3866532d00e61bcc898e38e8de7516e87ceaff8e7cabf680f62d567c0486f5`  
@@ -5179,7 +5179,7 @@ CMD ["xwiki"]
 		Size: 318.0 MB (318028406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3cafb1ba10f15c9add6dbe90ad77f988c628f0bbbdcb810828da54cb6260822`  
-		Last Modified: Wed, 07 Jan 2026 17:43:40 GMT  
+		Last Modified: Wed, 07 Jan 2026 17:43:56 GMT  
 		Size: 1.0 MB (1043012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2fe22b311cbbc8f88fea3a2f4f335346d990736c9a209e8e1a506ad5b80e117`  
@@ -6077,7 +6077,7 @@ CMD ["xwiki"]
 		Size: 324.0 MB (324005578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e61a4c37eb39bd56ba0ca35574839a6c2abb269aa59c5e6eca239b499b00c36`  
-		Last Modified: Fri, 02 Jan 2026 18:44:28 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:10 GMT  
 		Size: 708.5 KB (708550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:46cdc93323a273751ced4c0e05a9d396af64b5c74a52cd8727ef6e5ca20847f1`  
@@ -7873,7 +7873,7 @@ CMD ["xwiki"]
 		Size: 324.0 MB (324005578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e61a4c37eb39bd56ba0ca35574839a6c2abb269aa59c5e6eca239b499b00c36`  
-		Last Modified: Fri, 02 Jan 2026 18:44:28 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:10 GMT  
 		Size: 708.5 KB (708550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:46cdc93323a273751ced4c0e05a9d396af64b5c74a52cd8727ef6e5ca20847f1`  
@@ -9669,7 +9669,7 @@ CMD ["xwiki"]
 		Size: 324.0 MB (324005578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e61a4c37eb39bd56ba0ca35574839a6c2abb269aa59c5e6eca239b499b00c36`  
-		Last Modified: Fri, 02 Jan 2026 18:44:28 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:10 GMT  
 		Size: 708.5 KB (708550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:46cdc93323a273751ced4c0e05a9d396af64b5c74a52cd8727ef6e5ca20847f1`  
@@ -15506,7 +15506,7 @@ CMD ["xwiki"]
 		Size: 324.0 MB (324005578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e61a4c37eb39bd56ba0ca35574839a6c2abb269aa59c5e6eca239b499b00c36`  
-		Last Modified: Fri, 02 Jan 2026 18:44:28 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:10 GMT  
 		Size: 708.5 KB (708550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:46cdc93323a273751ced4c0e05a9d396af64b5c74a52cd8727ef6e5ca20847f1`  
@@ -15955,7 +15955,7 @@ CMD ["xwiki"]
 		Size: 324.0 MB (324005578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e61a4c37eb39bd56ba0ca35574839a6c2abb269aa59c5e6eca239b499b00c36`  
-		Last Modified: Fri, 02 Jan 2026 18:44:28 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:10 GMT  
 		Size: 708.5 KB (708550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:46cdc93323a273751ced4c0e05a9d396af64b5c74a52cd8727ef6e5ca20847f1`  
@@ -18200,7 +18200,7 @@ CMD ["xwiki"]
 		Size: 324.0 MB (324005578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e61a4c37eb39bd56ba0ca35574839a6c2abb269aa59c5e6eca239b499b00c36`  
-		Last Modified: Fri, 02 Jan 2026 18:44:28 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:10 GMT  
 		Size: 708.5 KB (708550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:46cdc93323a273751ced4c0e05a9d396af64b5c74a52cd8727ef6e5ca20847f1`  
@@ -19996,7 +19996,7 @@ CMD ["xwiki"]
 		Size: 324.0 MB (324005578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e61a4c37eb39bd56ba0ca35574839a6c2abb269aa59c5e6eca239b499b00c36`  
-		Last Modified: Fri, 02 Jan 2026 18:44:28 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:10 GMT  
 		Size: 708.5 KB (708550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:46cdc93323a273751ced4c0e05a9d396af64b5c74a52cd8727ef6e5ca20847f1`  
@@ -20445,7 +20445,7 @@ CMD ["xwiki"]
 		Size: 324.0 MB (324005578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e61a4c37eb39bd56ba0ca35574839a6c2abb269aa59c5e6eca239b499b00c36`  
-		Last Modified: Fri, 02 Jan 2026 18:44:28 GMT  
+		Last Modified: Fri, 02 Jan 2026 18:44:10 GMT  
 		Size: 708.5 KB (708550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:46cdc93323a273751ced4c0e05a9d396af64b5c74a52cd8727ef6e5ca20847f1`  
