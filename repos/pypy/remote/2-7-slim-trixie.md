@@ -76,7 +76,7 @@ $ docker pull pypy@sha256:f77071a7a6959b84f5cf5d3eeecf70aae10babf5fce88a2d831d13
 		Size: 2.1 MB (2131904 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f29dc5a187dda47bed45c76ecfadc20ec7a3bd991eff5eb5dd96ebb977c12e35`  
-		Last Modified: Tue, 13 Jan 2026 03:03:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:39:38 GMT  
 		Size: 21.2 KB (21215 bytes)  
 		MIME: application/vnd.in-toto+json
 
