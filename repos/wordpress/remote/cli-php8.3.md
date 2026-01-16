@@ -137,7 +137,7 @@ CMD ["wp" "shell"]
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:03b77649dba4b2ed05e88d6b142b60afd9ee2d24385c70ec7b47c40966658b9c`  
-		Last Modified: Fri, 09 Jan 2026 22:59:28 GMT  
+		Last Modified: Fri, 09 Jan 2026 22:59:19 GMT  
 		Size: 17.6 MB (17566595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:660a876b31d7d15ac7cdad1d25a66d5e1b814c5eacc6dc7e6812b4f379992940`  
@@ -533,7 +533,7 @@ CMD ["wp" "shell"]
 		Size: 385.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1075c13b7b958b4df2310f5ad77326aee911f05db749d8946b5cb48cbcf2371e`  
-		Last Modified: Sat, 10 Jan 2026 00:29:22 GMT  
+		Last Modified: Sat, 10 Jan 2026 00:29:29 GMT  
 		Size: 1.5 MB (1535676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5515f29c9b4819dc3bd85dcf582d4103c29861495d28901e6aea3c16ecc0140d`  
