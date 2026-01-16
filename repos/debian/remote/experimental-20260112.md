@@ -99,7 +99,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 45.1 MB (45124962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d46489b7b9480bab773164ead408e88749c641d2c2f48563e2cc98523d0f68c`  
-		Last Modified: Tue, 13 Jan 2026 01:15:31 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:15:23 GMT  
 		Size: 220.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -172,7 +172,7 @@ $ docker pull debian@sha256:e1f155afec88c0824eb5666f70cc43ef93e0496f01c9e2232e22
 
 -	Layers:
 	-	`sha256:6b2c1621cce08d319d201eabeff311dcb9dfc3571f237649ddece0d4f22e09e0`  
-		Last Modified: Tue, 13 Jan 2026 01:17:19 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:25:12 GMT  
 		Size: 3.1 MB (3144001 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:699be2f0e5a18a5cd6e8d1071825340829cef0d0252a3be77c23fa13ec87c483`  
