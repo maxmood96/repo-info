@@ -313,7 +313,7 @@ $ docker pull logstash@sha256:183e598ea791ee4d7541039aedd51bce7fe148f50d6ab03be8
 		Size: 3.7 MB (3652171 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a90e68ca598c0e2bd07c625a269874ee1c22fe02a44f609470d491bfd56f3d61`  
-		Last Modified: Tue, 13 Jan 2026 22:53:31 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:07:22 GMT  
 		Size: 36.0 KB (35973 bytes)  
 		MIME: application/vnd.in-toto+json
 
