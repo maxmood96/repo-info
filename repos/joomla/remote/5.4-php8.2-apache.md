@@ -1523,7 +1523,7 @@ CMD ["apache2-foreground"]
 		Size: 314.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:301a1b39ec964b70a5a0fd81c21bbc028d4f80a5d91b8e1d7b960c088b8af64d`  
-		Last Modified: Wed, 07 Jan 2026 07:17:24 GMT  
+		Last Modified: Wed, 07 Jan 2026 07:17:03 GMT  
 		Size: 393.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1977f391ce61a9da1251db63a2001ba71024a7257317344de687f7079fd11d5`  
@@ -1539,7 +1539,7 @@ CMD ["apache2-foreground"]
 		Size: 3.7 KB (3654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a2fbd97a365c6c16ebcfeea2f669062babcf0601bb89b59d4f7a73703b4e30b8`  
-		Last Modified: Wed, 07 Jan 2026 07:17:24 GMT  
+		Last Modified: Wed, 07 Jan 2026 07:17:09 GMT  
 		Size: 1.1 KB (1070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1559,7 +1559,7 @@ $ docker pull joomla@sha256:5b9744b3dcad3319e446fda6c99f9820486927f8299dfa7fcffe
 
 -	Layers:
 	-	`sha256:02f0fe17b2fddfe1c43eac0faebeccf1b7811c4f5cdfe662c9c7e53bddfd9e37`  
-		Last Modified: Wed, 07 Jan 2026 08:43:43 GMT  
+		Last Modified: Wed, 07 Jan 2026 07:17:02 GMT  
 		Size: 57.5 KB (57517 bytes)  
 		MIME: application/vnd.in-toto+json
 
