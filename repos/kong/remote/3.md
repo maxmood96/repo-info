@@ -88,7 +88,7 @@ CMD ["kong" "docker-start"]
 		Size: 90.7 MB (90684511 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56b9d53bd57a1e4c36ec63b892de6040a2a2ad99a810641f4ae3b14f30229281`  
-		Last Modified: Thu, 15 Jan 2026 22:31:10 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:31:02 GMT  
 		Size: 1.2 KB (1157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
