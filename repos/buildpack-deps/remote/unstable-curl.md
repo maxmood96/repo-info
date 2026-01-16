@@ -95,7 +95,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 
 -	Layers:
 	-	`sha256:8b7f582255e583d8176a24d49b58b25ef2ab11e30f1f26c271dc02b42befa1ec`  
-		Last Modified: Tue, 13 Jan 2026 00:42:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:25 GMT  
 		Size: 45.1 MB (45124955 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f363fb6b9543f81f86efd0aecc6d9e12898921b7bd5ed58e85c04a1426057dd9`  
@@ -229,7 +229,7 @@ $ docker pull buildpack-deps@sha256:346e67b76f430cbcb1c8c5b35c41ab9101f6ba2a9aef
 		Size: 4.1 MB (4111205 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5f4b0cfec9b6e2424591b0ed8c10274cbcfb171d07c12a065c52c9d3fe60fc71`  
-		Last Modified: Tue, 13 Jan 2026 02:02:57 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:24:54 GMT  
 		Size: 6.7 KB (6739 bytes)  
 		MIME: application/vnd.in-toto+json
 
