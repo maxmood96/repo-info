@@ -105,7 +105,7 @@ CMD ["help"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c485913e462d6c958ff7e5e95c27d5dc3ca87a59f447123102303812426cb569`  
-		Last Modified: Fri, 16 Jan 2026 00:01:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:00:44 GMT  
 		Size: 1.2 MB (1169741 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1da49cca8ade93a6b3dbbceda38517a882f59fb04abfd09fa45e551dd548bb32`  
