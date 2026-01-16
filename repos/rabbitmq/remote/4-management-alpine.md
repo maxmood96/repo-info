@@ -299,7 +299,7 @@ $ docker pull rabbitmq@sha256:62496c26ec4581fcfc3222a6683a2410180029cb4299cf4824
 
 -	Layers:
 	-	`sha256:50562b098d2e74465359c686263c75b7ef12225b26b8de4bdda4d589e728f3ce`  
-		Last Modified: Wed, 07 Jan 2026 18:26:24 GMT  
+		Last Modified: Wed, 07 Jan 2026 19:55:13 GMT  
 		Size: 15.1 KB (15112 bytes)  
 		MIME: application/vnd.in-toto+json
 
