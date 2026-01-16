@@ -1803,7 +1803,7 @@ $ docker pull composer@sha256:bc545b60f2b6b24d692f63d3c3bdf24181ab694aa3131bafee
 
 -	Layers:
 	-	`sha256:7803d61717adf6e6176719db1a137d0c67f90d65f9fdbe81cfa7aeee6031acad`  
-		Last Modified: Fri, 09 Jan 2026 23:50:50 GMT  
+		Last Modified: Sat, 10 Jan 2026 02:14:08 GMT  
 		Size: 2.2 MB (2179677 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ffafa34342ca33dbee9890f82aff3c845709a3c6a9e52bc72251f55f7235c8b3`  
@@ -3104,7 +3104,7 @@ $ docker pull composer@sha256:bc545b60f2b6b24d692f63d3c3bdf24181ab694aa3131bafee
 
 -	Layers:
 	-	`sha256:7803d61717adf6e6176719db1a137d0c67f90d65f9fdbe81cfa7aeee6031acad`  
-		Last Modified: Fri, 09 Jan 2026 23:50:50 GMT  
+		Last Modified: Sat, 10 Jan 2026 02:14:08 GMT  
 		Size: 2.2 MB (2179677 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ffafa34342ca33dbee9890f82aff3c845709a3c6a9e52bc72251f55f7235c8b3`  
