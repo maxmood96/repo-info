@@ -199,7 +199,7 @@ $ docker pull adminer@sha256:67218cc1b8b28e5cafa988eb89c82708ba6f49d919e935eeb02
 
 -	Layers:
 	-	`sha256:f18260d8652a467489b9ccd6a9640237ca7316e48abb3fe803fce587d857b990`  
-		Last Modified: Fri, 09 Jan 2026 23:27:35 GMT  
+		Last Modified: Sat, 10 Jan 2026 01:49:29 GMT  
 		Size: 35.8 KB (35834 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -715,7 +715,7 @@ EXPOSE map[8080/tcp:{}]
 		Size: 1.7 KB (1700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e8c3c6a87d5ac7fdf501d022052dd2d1e91f4da75da543619e525f5263bc170`  
-		Last Modified: Fri, 09 Jan 2026 23:32:21 GMT  
+		Last Modified: Fri, 09 Jan 2026 23:32:26 GMT  
 		Size: 640.9 KB (640866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0481c152371cf2fbea5e9a8589df226923f836acb7f7442d6f0f5d4b41dffeae`  
