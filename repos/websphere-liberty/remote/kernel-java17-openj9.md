@@ -484,7 +484,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b6f414eabfaca5043b3a5df8422ed1dc37926667808a9212f23988a9c3cac11f`  
-		Last Modified: Wed, 03 Dec 2025 21:59:47 GMT  
+		Last Modified: Wed, 03 Dec 2025 21:59:39 GMT  
 		Size: 1.5 KB (1519 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1703885fffdd73686f56e8ed8f17399be9333413574dada8f2f29012ccae7a69`  
