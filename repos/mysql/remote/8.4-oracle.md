@@ -127,7 +127,7 @@ $ docker pull mysql@sha256:9c1f109b1be92ccf9544297c60085d8962f088d159263d68ecc1c
 		Size: 14.9 MB (14897254 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9083d2b6811dd8c9aa22da74afe55b797b5bf8254cdde3418cea3be32f70aa66`  
-		Last Modified: Tue, 06 Jan 2026 18:35:58 GMT  
+		Last Modified: Tue, 06 Jan 2026 19:02:26 GMT  
 		Size: 34.2 KB (34208 bytes)  
 		MIME: application/vnd.in-toto+json
 
