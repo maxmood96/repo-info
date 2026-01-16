@@ -551,7 +551,7 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 
 -	Layers:
 	-	`sha256:0dea13cf1fe062734821309e5f773a18c9ad629d9e93e3eba340bea036bccd8a`  
-		Last Modified: Tue, 13 Jan 2026 06:35:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:12:18 GMT  
 		Size: 34.3 MB (34306159 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d6b66004f60715e2b64d2a5b9596535176d35315e17d9cc24e0564aba21e57fa`  
@@ -761,7 +761,7 @@ $ docker pull rabbitmq@sha256:235ef040b30ad151e178cb41f3ae29f854a9a1666007d53313
 
 -	Layers:
 	-	`sha256:eeb64348844f3dbd1422a10c0f279a52069eed70be5075f3332eeeea13e51464`  
-		Last Modified: Wed, 07 Jan 2026 19:55:27 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:57:57 GMT  
 		Size: 2.5 MB (2479028 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fe9f0a8b37dd0aa533d2cdba053dfeb35fc63db6bbcaccf918e903a688526426`  
