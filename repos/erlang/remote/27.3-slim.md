@@ -463,7 +463,7 @@ CMD ["erl"]
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a7bf6568ed4b33d6ffc8b768d4b99e10912ddb98bc8e13c86757fb8105c86ae`  
-		Last Modified: Tue, 13 Jan 2026 02:17:10 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:17:20 GMT  
 		Size: 65.9 MB (65911743 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
