@@ -300,7 +300,7 @@ $ docker pull gcc@sha256:1f57ff8e1867ce33fd9c62c5b63e8077d0bdc11ffc5cb87b87314ff
 		Size: 15.7 MB (15706499 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2fcc1abff75d3241600feb46892456af6884eab4229ba167d73d6cc9deee43c7`  
-		Last Modified: Tue, 13 Jan 2026 07:19:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:08:16 GMT  
 		Size: 29.8 KB (29848 bytes)  
 		MIME: application/vnd.in-toto+json
 
