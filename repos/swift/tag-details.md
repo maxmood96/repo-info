@@ -6554,7 +6554,7 @@ $ docker pull swift@sha256:9f1b66aa53c075b0dd4cfce3092e6e3dfb6c5266dbed8ebc1dc5f
 		Size: 6.4 MB (6405920 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:29adadef8d60cc288c0537ecca154306ca1646e4c3888b6547e71562ba41e009`  
-		Last Modified: Tue, 06 Jan 2026 19:03:49 GMT  
+		Last Modified: Tue, 06 Jan 2026 20:48:02 GMT  
 		Size: 11.2 KB (11156 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8848,7 +8848,7 @@ $ docker pull swift@sha256:9f1b66aa53c075b0dd4cfce3092e6e3dfb6c5266dbed8ebc1dc5f
 		Size: 6.4 MB (6405920 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:29adadef8d60cc288c0537ecca154306ca1646e4c3888b6547e71562ba41e009`  
-		Last Modified: Tue, 06 Jan 2026 19:03:49 GMT  
+		Last Modified: Tue, 06 Jan 2026 20:48:02 GMT  
 		Size: 11.2 KB (11156 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14232,7 +14232,7 @@ RUN swift --version # buildkit
 		Size: 1.0 GB (1022089538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5178132fe5551022a06e58be4e5e2971c965723d03741fa2b731ee033c0cb1e`  
-		Last Modified: Thu, 15 Jan 2026 22:53:32 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:53:20 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16289,7 +16289,7 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ab7d8bf3c2c08a37a9d074da97aa84e3766cf4725a8f585789cdc325f2794728`  
-		Last Modified: Tue, 13 Jan 2026 23:28:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:31:36 GMT  
 		Size: 1.3 KB (1328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:353681379dd6af7b81efc47d32521527c64542befd3d550a16ac8cd3d57902d2`  
@@ -16691,7 +16691,7 @@ RUN swift --version # buildkit
 		Size: 1.0 GB (1022089538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5178132fe5551022a06e58be4e5e2971c965723d03741fa2b731ee033c0cb1e`  
-		Last Modified: Thu, 15 Jan 2026 22:53:32 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:53:20 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18748,7 +18748,7 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ab7d8bf3c2c08a37a9d074da97aa84e3766cf4725a8f585789cdc325f2794728`  
-		Last Modified: Tue, 13 Jan 2026 23:28:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:31:36 GMT  
 		Size: 1.3 KB (1328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:353681379dd6af7b81efc47d32521527c64542befd3d550a16ac8cd3d57902d2`  
@@ -18951,7 +18951,7 @@ RUN swift --version # buildkit
 		Size: 1.0 GB (1022089538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5178132fe5551022a06e58be4e5e2971c965723d03741fa2b731ee033c0cb1e`  
-		Last Modified: Thu, 15 Jan 2026 22:53:32 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:53:20 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -21207,7 +21207,7 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ab7d8bf3c2c08a37a9d074da97aa84e3766cf4725a8f585789cdc325f2794728`  
-		Last Modified: Tue, 13 Jan 2026 23:28:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:31:36 GMT  
 		Size: 1.3 KB (1328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:353681379dd6af7b81efc47d32521527c64542befd3d550a16ac8cd3d57902d2`  
