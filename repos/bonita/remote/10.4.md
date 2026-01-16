@@ -153,7 +153,7 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 		Size: 948.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:79bf5f95de775b3989b3d99e972676273c1b1d92842f1846df887b8fb747761f`  
-		Last Modified: Mon, 15 Dec 2025 19:12:09 GMT  
+		Last Modified: Mon, 15 Dec 2025 19:11:48 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c1083f829bea402c7cd2bdc6fefb0f19c25f594fe50e4901d7d484c65bb5911`  
