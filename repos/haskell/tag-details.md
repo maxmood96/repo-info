@@ -1129,7 +1129,7 @@ $ docker pull haskell@sha256:639739a0c56f8deb0ace14a3d3158d92316fd673cbdab4b1f0a
 
 -	Layers:
 	-	`sha256:c641e6bee79e48410c347c8d2a1abf0942b9c9222276209c1ad344ac05a6b7e3`  
-		Last Modified: Tue, 13 Jan 2026 01:21:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:49:25 GMT  
 		Size: 6.8 MB (6750929 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:24de29fc531c069ebed6591822038d82cced32c7c36502668f24af19d05d0601`  
@@ -1893,7 +1893,7 @@ CMD ["ghci"]
 		Size: 22.2 MB (22220755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5035bb1b06a0be7d92995a317130e18dccd53802dff8f7bab930f802a87cb554`  
-		Last Modified: Tue, 13 Jan 2026 01:21:04 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:21:23 GMT  
 		Size: 7.6 MB (7607060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ccf3326099a7126d6ecc360e8873a6cce00a2340771fe3ff5398e2e1ae8b501a`  
@@ -2114,7 +2114,7 @@ $ docker pull haskell@sha256:639739a0c56f8deb0ace14a3d3158d92316fd673cbdab4b1f0a
 
 -	Layers:
 	-	`sha256:c641e6bee79e48410c347c8d2a1abf0942b9c9222276209c1ad344ac05a6b7e3`  
-		Last Modified: Tue, 13 Jan 2026 01:21:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:49:25 GMT  
 		Size: 6.8 MB (6750929 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:24de29fc531c069ebed6591822038d82cced32c7c36502668f24af19d05d0601`  
@@ -2878,7 +2878,7 @@ CMD ["ghci"]
 		Size: 22.2 MB (22220755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5035bb1b06a0be7d92995a317130e18dccd53802dff8f7bab930f802a87cb554`  
-		Last Modified: Tue, 13 Jan 2026 01:21:04 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:21:23 GMT  
 		Size: 7.6 MB (7607060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ccf3326099a7126d6ecc360e8873a6cce00a2340771fe3ff5398e2e1ae8b501a`  
@@ -3099,7 +3099,7 @@ $ docker pull haskell@sha256:639739a0c56f8deb0ace14a3d3158d92316fd673cbdab4b1f0a
 
 -	Layers:
 	-	`sha256:c641e6bee79e48410c347c8d2a1abf0942b9c9222276209c1ad344ac05a6b7e3`  
-		Last Modified: Tue, 13 Jan 2026 01:21:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:49:25 GMT  
 		Size: 6.8 MB (6750929 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:24de29fc531c069ebed6591822038d82cced32c7c36502668f24af19d05d0601`  
@@ -8615,7 +8615,7 @@ $ docker pull haskell@sha256:639739a0c56f8deb0ace14a3d3158d92316fd673cbdab4b1f0a
 
 -	Layers:
 	-	`sha256:c641e6bee79e48410c347c8d2a1abf0942b9c9222276209c1ad344ac05a6b7e3`  
-		Last Modified: Tue, 13 Jan 2026 01:21:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:49:25 GMT  
 		Size: 6.8 MB (6750929 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:24de29fc531c069ebed6591822038d82cced32c7c36502668f24af19d05d0601`  
