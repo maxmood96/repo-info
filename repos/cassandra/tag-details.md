@@ -500,7 +500,7 @@ $ docker pull cassandra@sha256:0feeded25eebf7521a3b93929c180c1939515edd91dd94a14
 		Size: 3.3 MB (3280701 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:67f9fe91e276c2f404a03d89a46158456e2eb9b13085b3a99485a6859def998c`  
-		Last Modified: Wed, 14 Jan 2026 23:46:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 01:38:59 GMT  
 		Size: 36.4 KB (36399 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1099,7 +1099,7 @@ $ docker pull cassandra@sha256:0feeded25eebf7521a3b93929c180c1939515edd91dd94a14
 		Size: 3.3 MB (3280701 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:67f9fe91e276c2f404a03d89a46158456e2eb9b13085b3a99485a6859def998c`  
-		Last Modified: Wed, 14 Jan 2026 23:46:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 01:38:59 GMT  
 		Size: 36.4 KB (36399 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4094,7 +4094,7 @@ $ docker pull cassandra@sha256:0feeded25eebf7521a3b93929c180c1939515edd91dd94a14
 		Size: 3.3 MB (3280701 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:67f9fe91e276c2f404a03d89a46158456e2eb9b13085b3a99485a6859def998c`  
-		Last Modified: Wed, 14 Jan 2026 23:46:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 01:38:59 GMT  
 		Size: 36.4 KB (36399 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4693,7 +4693,7 @@ $ docker pull cassandra@sha256:0feeded25eebf7521a3b93929c180c1939515edd91dd94a14
 		Size: 3.3 MB (3280701 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:67f9fe91e276c2f404a03d89a46158456e2eb9b13085b3a99485a6859def998c`  
-		Last Modified: Wed, 14 Jan 2026 23:46:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 01:38:59 GMT  
 		Size: 36.4 KB (36399 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5292,7 +5292,7 @@ $ docker pull cassandra@sha256:0feeded25eebf7521a3b93929c180c1939515edd91dd94a14
 		Size: 3.3 MB (3280701 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:67f9fe91e276c2f404a03d89a46158456e2eb9b13085b3a99485a6859def998c`  
-		Last Modified: Wed, 14 Jan 2026 23:46:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 01:38:59 GMT  
 		Size: 36.4 KB (36399 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5891,7 +5891,7 @@ $ docker pull cassandra@sha256:0feeded25eebf7521a3b93929c180c1939515edd91dd94a14
 		Size: 3.3 MB (3280701 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:67f9fe91e276c2f404a03d89a46158456e2eb9b13085b3a99485a6859def998c`  
-		Last Modified: Wed, 14 Jan 2026 23:46:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 01:38:59 GMT  
 		Size: 36.4 KB (36399 bytes)  
 		MIME: application/vnd.in-toto+json
 
