@@ -371,7 +371,7 @@ CMD ["php-fpm"]
 		Size: 295.7 MB (295656734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fdaa8a052f1c91fda94a93bd8f08071177501996467596e04db682bb8fa7ed8`  
-		Last Modified: Thu, 15 Jan 2026 23:28:27 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:28:16 GMT  
 		Size: 4.0 KB (4047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d399a10c21d005922f5063a8138bda2cb3fac825733e3dda3fc599748da92f46`  
@@ -395,7 +395,7 @@ $ docker pull nextcloud@sha256:b39a88a11c8b68ca1c0f71f334f94c8f954f22dbefa122ab7
 
 -	Layers:
 	-	`sha256:99856ee2222860a48f255094af73740dec4f9214fbc433d60b24b2246b5f0766`  
-		Last Modified: Fri, 16 Jan 2026 00:53:36 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:28:15 GMT  
 		Size: 45.0 KB (45010 bytes)  
 		MIME: application/vnd.in-toto+json
 
