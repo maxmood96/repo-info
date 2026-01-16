@@ -542,7 +542,7 @@ $ docker pull docker@sha256:6ac3f310dc4f66222ae633abf765ec968b2e119e293ef9a9aef4
 
 -	Layers:
 	-	`sha256:8cd818b3b89526e124b66c9c69cf09697f6c0da0a1d494958ff8fe9df333ea3e`  
-		Last Modified: Fri, 09 Jan 2026 20:12:02 GMT  
+		Last Modified: Fri, 09 Jan 2026 21:09:06 GMT  
 		Size: 34.7 KB (34722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1652,7 +1652,7 @@ $ docker pull docker@sha256:6ac3f310dc4f66222ae633abf765ec968b2e119e293ef9a9aef4
 
 -	Layers:
 	-	`sha256:8cd818b3b89526e124b66c9c69cf09697f6c0da0a1d494958ff8fe9df333ea3e`  
-		Last Modified: Fri, 09 Jan 2026 20:12:02 GMT  
+		Last Modified: Fri, 09 Jan 2026 21:09:06 GMT  
 		Size: 34.7 KB (34722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2172,7 +2172,7 @@ USER rootless
 		Size: 3.4 MB (3394355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d33d852dbb0d3fa37dba197bda83f87974fb9746ff7fc5b9143c668fdd89e3ff`  
-		Last Modified: Fri, 09 Jan 2026 20:10:54 GMT  
+		Last Modified: Fri, 09 Jan 2026 20:10:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:40d9666717666226b21ac370728ec83637e6e87b08ff54400d84d25e5542a561`  
@@ -4549,7 +4549,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 19.4 MB (19405277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7cd7908890733c17a8dcb4c67380fdf5a1a9d9d7bc94c1a1243e646ae708de66`  
-		Last Modified: Tue, 13 Jan 2026 23:01:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:53:41 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:86b37196b52c66a985cf42f52d977a73ff802ff93bd7a90a5be6e4a11efed8b8`  
@@ -4668,7 +4668,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 19.4 MB (19405277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7cd7908890733c17a8dcb4c67380fdf5a1a9d9d7bc94c1a1243e646ae708de66`  
-		Last Modified: Tue, 13 Jan 2026 23:01:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:53:41 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:86b37196b52c66a985cf42f52d977a73ff802ff93bd7a90a5be6e4a11efed8b8`  
@@ -5752,7 +5752,7 @@ $ docker pull docker@sha256:6ac3f310dc4f66222ae633abf765ec968b2e119e293ef9a9aef4
 
 -	Layers:
 	-	`sha256:8cd818b3b89526e124b66c9c69cf09697f6c0da0a1d494958ff8fe9df333ea3e`  
-		Last Modified: Fri, 09 Jan 2026 20:12:02 GMT  
+		Last Modified: Fri, 09 Jan 2026 21:09:06 GMT  
 		Size: 34.7 KB (34722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6862,7 +6862,7 @@ $ docker pull docker@sha256:6ac3f310dc4f66222ae633abf765ec968b2e119e293ef9a9aef4
 
 -	Layers:
 	-	`sha256:8cd818b3b89526e124b66c9c69cf09697f6c0da0a1d494958ff8fe9df333ea3e`  
-		Last Modified: Fri, 09 Jan 2026 20:12:02 GMT  
+		Last Modified: Fri, 09 Jan 2026 21:09:06 GMT  
 		Size: 34.7 KB (34722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7382,7 +7382,7 @@ USER rootless
 		Size: 3.4 MB (3394355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d33d852dbb0d3fa37dba197bda83f87974fb9746ff7fc5b9143c668fdd89e3ff`  
-		Last Modified: Fri, 09 Jan 2026 20:10:54 GMT  
+		Last Modified: Fri, 09 Jan 2026 20:10:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:40d9666717666226b21ac370728ec83637e6e87b08ff54400d84d25e5542a561`  
@@ -8357,7 +8357,7 @@ $ docker pull docker@sha256:6ac3f310dc4f66222ae633abf765ec968b2e119e293ef9a9aef4
 
 -	Layers:
 	-	`sha256:8cd818b3b89526e124b66c9c69cf09697f6c0da0a1d494958ff8fe9df333ea3e`  
-		Last Modified: Fri, 09 Jan 2026 20:12:02 GMT  
+		Last Modified: Fri, 09 Jan 2026 21:09:06 GMT  
 		Size: 34.7 KB (34722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9002,7 +9002,7 @@ $ docker pull docker@sha256:6ac3f310dc4f66222ae633abf765ec968b2e119e293ef9a9aef4
 
 -	Layers:
 	-	`sha256:8cd818b3b89526e124b66c9c69cf09697f6c0da0a1d494958ff8fe9df333ea3e`  
-		Last Modified: Fri, 09 Jan 2026 20:12:02 GMT  
+		Last Modified: Fri, 09 Jan 2026 21:09:06 GMT  
 		Size: 34.7 KB (34722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10577,7 +10577,7 @@ $ docker pull docker@sha256:6ac3f310dc4f66222ae633abf765ec968b2e119e293ef9a9aef4
 
 -	Layers:
 	-	`sha256:8cd818b3b89526e124b66c9c69cf09697f6c0da0a1d494958ff8fe9df333ea3e`  
-		Last Modified: Fri, 09 Jan 2026 20:12:02 GMT  
+		Last Modified: Fri, 09 Jan 2026 21:09:06 GMT  
 		Size: 34.7 KB (34722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11222,7 +11222,7 @@ $ docker pull docker@sha256:6ac3f310dc4f66222ae633abf765ec968b2e119e293ef9a9aef4
 
 -	Layers:
 	-	`sha256:8cd818b3b89526e124b66c9c69cf09697f6c0da0a1d494958ff8fe9df333ea3e`  
-		Last Modified: Fri, 09 Jan 2026 20:12:02 GMT  
+		Last Modified: Fri, 09 Jan 2026 21:09:06 GMT  
 		Size: 34.7 KB (34722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11742,7 +11742,7 @@ USER rootless
 		Size: 3.4 MB (3394355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d33d852dbb0d3fa37dba197bda83f87974fb9746ff7fc5b9143c668fdd89e3ff`  
-		Last Modified: Fri, 09 Jan 2026 20:10:54 GMT  
+		Last Modified: Fri, 09 Jan 2026 20:10:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:40d9666717666226b21ac370728ec83637e6e87b08ff54400d84d25e5542a561`  
@@ -16329,7 +16329,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 19.4 MB (19405277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7cd7908890733c17a8dcb4c67380fdf5a1a9d9d7bc94c1a1243e646ae708de66`  
-		Last Modified: Tue, 13 Jan 2026 23:01:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:53:41 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:86b37196b52c66a985cf42f52d977a73ff802ff93bd7a90a5be6e4a11efed8b8`  
@@ -16448,7 +16448,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 19.4 MB (19405277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7cd7908890733c17a8dcb4c67380fdf5a1a9d9d7bc94c1a1243e646ae708de66`  
-		Last Modified: Tue, 13 Jan 2026 23:01:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:53:41 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:86b37196b52c66a985cf42f52d977a73ff802ff93bd7a90a5be6e4a11efed8b8`  
@@ -17542,7 +17542,7 @@ $ docker pull docker@sha256:6ac3f310dc4f66222ae633abf765ec968b2e119e293ef9a9aef4
 
 -	Layers:
 	-	`sha256:8cd818b3b89526e124b66c9c69cf09697f6c0da0a1d494958ff8fe9df333ea3e`  
-		Last Modified: Fri, 09 Jan 2026 20:12:02 GMT  
+		Last Modified: Fri, 09 Jan 2026 21:09:06 GMT  
 		Size: 34.7 KB (34722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18062,7 +18062,7 @@ USER rootless
 		Size: 3.4 MB (3394355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d33d852dbb0d3fa37dba197bda83f87974fb9746ff7fc5b9143c668fdd89e3ff`  
-		Last Modified: Fri, 09 Jan 2026 20:10:54 GMT  
+		Last Modified: Fri, 09 Jan 2026 20:10:41 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:40d9666717666226b21ac370728ec83637e6e87b08ff54400d84d25e5542a561`  
@@ -18582,7 +18582,7 @@ $ docker pull docker@sha256:6ac3f310dc4f66222ae633abf765ec968b2e119e293ef9a9aef4
 
 -	Layers:
 	-	`sha256:8cd818b3b89526e124b66c9c69cf09697f6c0da0a1d494958ff8fe9df333ea3e`  
-		Last Modified: Fri, 09 Jan 2026 20:12:02 GMT  
+		Last Modified: Fri, 09 Jan 2026 21:09:06 GMT  
 		Size: 34.7 KB (34722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21084,7 +21084,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 19.4 MB (19405277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7cd7908890733c17a8dcb4c67380fdf5a1a9d9d7bc94c1a1243e646ae708de66`  
-		Last Modified: Tue, 13 Jan 2026 23:01:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:53:41 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:86b37196b52c66a985cf42f52d977a73ff802ff93bd7a90a5be6e4a11efed8b8`  
@@ -21203,7 +21203,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 19.4 MB (19405277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7cd7908890733c17a8dcb4c67380fdf5a1a9d9d7bc94c1a1243e646ae708de66`  
-		Last Modified: Tue, 13 Jan 2026 23:01:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:53:41 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:86b37196b52c66a985cf42f52d977a73ff802ff93bd7a90a5be6e4a11efed8b8`  
