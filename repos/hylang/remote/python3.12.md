@@ -642,7 +642,7 @@ $ docker pull hylang@sha256:4b7901ea54705af3fc6fd31019d87a82384057594e7efab60fd3
 		Size: 2.1 MB (2148868 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:81e65a5b1c411beaab2e500991044e218879ca42cc577f793605d6f0d6ea9842`  
-		Last Modified: Fri, 02 Jan 2026 21:03:45 GMT  
+		Last Modified: Fri, 02 Jan 2026 21:18:15 GMT  
 		Size: 9.4 KB (9388 bytes)  
 		MIME: application/vnd.in-toto+json
 
