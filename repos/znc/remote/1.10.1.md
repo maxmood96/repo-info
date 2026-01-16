@@ -153,7 +153,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6840fec67135c40d32802946fc5362557e770be7653ca7360ea7070ab00fc998`  
-		Last Modified: Wed, 08 Oct 2025 22:14:21 GMT  
+		Last Modified: Tue, 16 Dec 2025 14:28:33 GMT  
 		Size: 44.6 MB (44605106 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:405c3022b2b83a72e01be3a371b41b75f14cc4ca6477a7acb11833eed902ae83`  
