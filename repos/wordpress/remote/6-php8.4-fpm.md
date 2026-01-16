@@ -141,7 +141,7 @@ CMD ["php-fpm"]
 		Size: 13.7 MB (13670192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9d304f71a22154482efcb47bcf7aadbd41a74f7f461004871bb16391aed7ce0d`  
-		Last Modified: Thu, 15 Jan 2026 23:04:33 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:04:24 GMT  
 		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7abdb73dc117934dbc96f2fe34026729aa4536e40b5d85fcda3cdc72d7600ae5`  
@@ -213,7 +213,7 @@ $ docker pull wordpress@sha256:42d43abc687a31d465b569afa724ac3ad4c69dd45045cfb9a
 		Size: 8.1 MB (8148503 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cd016a13145cde708dc8b1e65fe7042ced72d02e1e68cf6838cec8e865148601`  
-		Last Modified: Thu, 15 Jan 2026 23:52:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:16:06 GMT  
 		Size: 52.0 KB (52000 bytes)  
 		MIME: application/vnd.in-toto+json
 
