@@ -1583,6 +1583,6 @@ $ docker pull wordpress@sha256:58f95fd9573727fc951574f01a5777db6b32bc63eb3a0257e
 		Size: 1.1 MB (1120128 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e940249c19bcd5a2aa8b040c8de11736cbfe09307dfe914952ae82e5c51e84bf`  
-		Last Modified: Sat, 10 Jan 2026 01:15:48 GMT  
+		Last Modified: Sat, 10 Jan 2026 02:19:10 GMT  
 		Size: 51.7 KB (51722 bytes)  
 		MIME: application/vnd.in-toto+json
