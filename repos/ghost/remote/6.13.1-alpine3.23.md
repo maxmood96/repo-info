@@ -87,7 +87,7 @@ CMD ["node" "current/index.js"]
 		Size: 51.6 MB (51601845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0a5453a6a95efdb1bc3321878ea844e2c518f39aecd5f7f8a78e1b78d89a637e`  
-		Last Modified: Wed, 14 Jan 2026 17:59:23 GMT  
+		Last Modified: Wed, 14 Jan 2026 17:59:16 GMT  
 		Size: 1.3 MB (1262129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd007ec038c44249b9612b09663aa39b77c77bf71eeed265f47bf14154bce59c`  
