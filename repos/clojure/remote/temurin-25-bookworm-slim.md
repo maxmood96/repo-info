@@ -363,6 +363,6 @@ $ docker pull clojure@sha256:ebd155b95360f2417c27a2f9fc8b04d63c7961be45d7c264183
 		Size: 5.1 MB (5058627 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:48f9a9cabe92a430990fa95b1029aac17667bd54bc6cec4b7034a2a65f9b580b`  
-		Last Modified: Tue, 13 Jan 2026 04:40:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:09:23 GMT  
 		Size: 16.5 KB (16525 bytes)  
 		MIME: application/vnd.in-toto+json
