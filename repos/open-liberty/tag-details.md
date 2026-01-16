@@ -340,7 +340,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 42.3 KB (42322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a8c8bcd5a9e98b43f98fe803d4d0a5f3b3740d3ecf3d61ea69bb7b98d1006509`  
-		Last Modified: Fri, 16 Jan 2026 00:56:40 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:56:56 GMT  
 		Size: 345.9 MB (345928048 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:444b56b76fa7c5528a340b861dc7ff3a8639b474abeeb9401f167e86d21b6a19`  
@@ -537,7 +537,7 @@ $ docker pull open-liberty@sha256:114d3674f5c9ae6e50b35c1b07a245e551463f14677d90
 
 -	Layers:
 	-	`sha256:62a8a10aa0dae9e781cf322c34bf3e65767f7b261b49bdf3e07de958df2ddc54`  
-		Last Modified: Fri, 16 Jan 2026 03:45:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:51:45 GMT  
 		Size: 5.7 MB (5721469 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0d3e5f8fa50285906e14c11d66d585d7e075e192757bfe8b5b9561cafe8072ec`  
@@ -4249,7 +4249,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 13.6 KB (13599 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d8ec8a024104b289edc089e9e3ebe473c29a87cf574830652e45f8226e73f4c`  
-		Last Modified: Fri, 16 Jan 2026 00:48:37 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:48:23 GMT  
 		Size: 13.6 MB (13601871 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5591,7 +5591,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 31.7 KB (31745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9f8033519a8316ae6f94b590b306d338125579bca9ae50909f0e1f86ad8fffc`  
-		Last Modified: Fri, 16 Jan 2026 00:48:28 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:48:16 GMT  
 		Size: 337.2 MB (337197499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1d1e3a0cb34a671fa14145eae0456e0ca392ce5e399cd8603417cf27c847b686`  
@@ -8113,7 +8113,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b91f733effdd68111c719e794a4d386d2bacd73a9dfb04db35ff520c0cd0064`  
-		Last Modified: Thu, 15 Jan 2026 22:55:49 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:55:57 GMT  
 		Size: 33.1 KB (33111 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf3202a96da64d220dfaade84a8d4f4f76ab34f4129b6d4be1a7fd217784bffa`  
@@ -8794,7 +8794,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 33.1 KB (33111 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c1cec0b52a030728b52040a1a97c969e3636fa53d9a5274740821cad8b084d97`  
-		Last Modified: Thu, 15 Jan 2026 22:59:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:59:13 GMT  
 		Size: 343.4 MB (343351915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e20909b098f4ec8ca1d335c90da20b69bf8f02b4dfd65efc8a860614c7d8c520`  
@@ -10531,7 +10531,7 @@ $ docker pull open-liberty@sha256:b3bf6e885995751854a43c4d545ed1cbe90feb7951881c
 		Size: 3.9 MB (3878486 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:681ff640e7dc958a17834e66378125b11c270a9eba674028e8b14e8256794b36`  
-		Last Modified: Fri, 16 Jan 2026 00:52:46 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:49:13 GMT  
 		Size: 38.7 KB (38685 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10660,7 +10660,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 36.5 KB (36496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50e2137b3157460eb0a41e3acfcf2f88702391316e4ea92f6f1421d11b514ccf`  
-		Last Modified: Fri, 16 Jan 2026 01:43:53 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:43:43 GMT  
 		Size: 14.9 MB (14873221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:da08d7938a1b3457d1ec42c30470c95dc63070ef4018c773e3de71a1dcb0b302`  
@@ -11369,7 +11369,7 @@ $ docker pull open-liberty@sha256:9429e1e1e43ae8924e300f958e535139b65e25f10e7a5e
 
 -	Layers:
 	-	`sha256:80574364ff9dfc2c9b9014e0dc74cd469ffbeab341c4ee177e9b7a199e5cd424`  
-		Last Modified: Fri, 16 Jan 2026 03:49:41 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:44:59 GMT  
 		Size: 3.9 MB (3871620 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3479a0cb4ac7760eec5921f12d2c3807dec3c4f68f2b2d22b30335b334cc3f2d`  
