@@ -1054,7 +1054,7 @@ $ docker pull rockylinux@sha256:95f96f1481b875cc851805c8bcc3d2d08d4d763def6ad464
 		Size: 2.2 MB (2215437 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e526ae2620049a9b3ae6baa850bb3006983673650ec425172ad553312be5e66e`  
-		Last Modified: Wed, 29 May 2024 20:41:08 GMT  
+		Last Modified: Mon, 15 Dec 2025 05:11:16 GMT  
 		Size: 5.4 KB (5408 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1480,7 +1480,7 @@ $ docker pull rockylinux@sha256:95f96f1481b875cc851805c8bcc3d2d08d4d763def6ad464
 		Size: 2.2 MB (2215437 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e526ae2620049a9b3ae6baa850bb3006983673650ec425172ad553312be5e66e`  
-		Last Modified: Wed, 29 May 2024 20:41:08 GMT  
+		Last Modified: Mon, 15 Dec 2025 05:11:16 GMT  
 		Size: 5.4 KB (5408 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1906,7 +1906,7 @@ $ docker pull rockylinux@sha256:95f96f1481b875cc851805c8bcc3d2d08d4d763def6ad464
 		Size: 2.2 MB (2215437 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e526ae2620049a9b3ae6baa850bb3006983673650ec425172ad553312be5e66e`  
-		Last Modified: Wed, 29 May 2024 20:41:08 GMT  
+		Last Modified: Mon, 15 Dec 2025 05:11:16 GMT  
 		Size: 5.4 KB (5408 bytes)  
 		MIME: application/vnd.in-toto+json
 
