@@ -471,7 +471,7 @@ CMD ["composer"]
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ebc775c9c95d7caa87f278d82ad7cb616f2fdbaa3f5a0273092fe7ce915099b1`  
-		Last Modified: Fri, 09 Jan 2026 23:50:36 GMT  
+		Last Modified: Fri, 09 Jan 2026 23:50:41 GMT  
 		Size: 92.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
