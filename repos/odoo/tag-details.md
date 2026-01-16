@@ -1123,7 +1123,7 @@ CMD ["odoo"]
 		Size: 14.3 MB (14334194 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e79bfa30f5723be9e79db439947a5fe3dab3d6ac2634abfab763afade32c996`  
-		Last Modified: Wed, 24 Dec 2025 05:16:53 GMT  
+		Last Modified: Wed, 24 Dec 2025 05:17:12 GMT  
 		Size: 480.1 KB (480065 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:91ce21bf8d032b6b646d7f47c62ecca84a86ca083e3d050577d03aeba70177ba`  
@@ -1552,7 +1552,7 @@ CMD ["odoo"]
 		Size: 14.3 MB (14334194 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e79bfa30f5723be9e79db439947a5fe3dab3d6ac2634abfab763afade32c996`  
-		Last Modified: Wed, 24 Dec 2025 05:16:53 GMT  
+		Last Modified: Wed, 24 Dec 2025 05:17:12 GMT  
 		Size: 480.1 KB (480065 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:91ce21bf8d032b6b646d7f47c62ecca84a86ca083e3d050577d03aeba70177ba`  
@@ -1981,7 +1981,7 @@ CMD ["odoo"]
 		Size: 14.3 MB (14334194 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e79bfa30f5723be9e79db439947a5fe3dab3d6ac2634abfab763afade32c996`  
-		Last Modified: Wed, 24 Dec 2025 05:16:53 GMT  
+		Last Modified: Wed, 24 Dec 2025 05:17:12 GMT  
 		Size: 480.1 KB (480065 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:91ce21bf8d032b6b646d7f47c62ecca84a86ca083e3d050577d03aeba70177ba`  
