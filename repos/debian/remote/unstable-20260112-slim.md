@@ -126,7 +126,7 @@ RUN # debian.sh --arch 'arm64' out/ 'unstable' '@1768176000'
 
 -	Layers:
 	-	`sha256:237780378397b53bc03b22c7ef83e0ac1c622b5660671b5430a26679ab54b949`  
-		Last Modified: Tue, 13 Jan 2026 00:42:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:41 GMT  
 		Size: 29.3 MB (29315591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
