@@ -327,7 +327,7 @@ $ docker pull redmine@sha256:6805185a40636d338dcaac951c191d5a51cf5812f58bd16b184
 
 -	Layers:
 	-	`sha256:b713ffece1267cce879d29e450e17728bd279f8e872502d20dcaa59656fe81ab`  
-		Last Modified: Wed, 14 Jan 2026 17:56:45 GMT  
+		Last Modified: Wed, 14 Jan 2026 20:49:54 GMT  
 		Size: 40.8 KB (40765 bytes)  
 		MIME: application/vnd.in-toto+json
 
