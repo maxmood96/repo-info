@@ -389,7 +389,7 @@ $ docker pull mariadb@sha256:ac06393e5d6f096fa5c92983d3b6c5bb01faac994bb3c4f94ae
 		Size: 4.3 MB (4281644 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3d61158419f9d9c383830c81291f2ce0423cf2ebb2932e4fd248748e6f2fba6e`  
-		Last Modified: Fri, 16 Jan 2026 01:38:14 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:53:52 GMT  
 		Size: 31.5 KB (31531 bytes)  
 		MIME: application/vnd.in-toto+json
 
