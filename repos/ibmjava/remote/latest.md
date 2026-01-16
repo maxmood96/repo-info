@@ -80,7 +80,7 @@ $ docker pull ibmjava@sha256:98415342663a383c73997f94ac3ed9e22bb16f0e19caf6e9593
 
 -	Layers:
 	-	`sha256:2d07cbccf91e5ee4157fc439efa019b9fdfd8e21fe9fae6a52384243dd0f37a5`  
-		Last Modified: Thu, 15 Jan 2026 22:29:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:02:37 GMT  
 		Size: 2.2 MB (2174120 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:968a3a746f350366609f8c00be4b4634f15460168467a404b85b6b0a6c2c9b8a`  
