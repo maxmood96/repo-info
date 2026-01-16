@@ -799,7 +799,7 @@ CMD ["apache2-foreground"]
 		Size: 51.5 MB (51482899 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:654d358d4f0063af50d760a4361e27ddfa62d3b185a74faeb374036b19018322`  
-		Last Modified: Tue, 13 Jan 2026 04:12:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:12:33 GMT  
 		Size: 18.0 MB (18017894 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae9ac13c1c99d935e0cdc6e5c1200f7291b963d2be9310b27ea9914579032c99`  
@@ -1045,7 +1045,7 @@ $ docker pull mediawiki@sha256:bd5b278f7028b997d957b68017092087a88d52fe8a8b8fd14
 
 -	Layers:
 	-	`sha256:eea71be5c3592fc5d4e5df5499208ee4382646bc189b61664db26a46754cbe7c`  
-		Last Modified: Tue, 13 Jan 2026 07:17:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:32:26 GMT  
 		Size: 48.7 KB (48707 bytes)  
 		MIME: application/vnd.in-toto+json
 
