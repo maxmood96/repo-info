@@ -343,7 +343,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 31.0 MB (30952148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ad30e666e522c77c634be22adbcd51d11d506e0ff46a96bf14acfb7730528b3`  
-		Last Modified: Sat, 15 Nov 2025 13:40:50 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:24:24 GMT  
 		Size: 11.6 MB (11570222 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:264da94fe7b5871246212863f61001aa2a1a4ea4918261b96a2f744c1b24448e`  
@@ -511,7 +511,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Size: 1.3 KB (1325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b66c84b0b6fc406d26c05c1f68cc345b8018b07fef901c79893f4491eb8076f5`  
-		Last Modified: Tue, 13 Jan 2026 22:58:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:58:42 GMT  
 		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:67a6d4108856d51729f77becdfc76a4f968e4f1c8b451a563a04ef3f9a53b209`  
@@ -570,7 +570,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:eb9ecbc6078af223d4e47441d2647c683b936f5c3cfe8e728dcddc67057cd7e5`  
-		Last Modified: Tue, 13 Jan 2026 23:05:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:05:48 GMT  
 		Size: 101.1 MB (101074602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5044a42e30062e88cddb6e2ed38dacb536bff16a292448f40f390951f70ffe0a`  
