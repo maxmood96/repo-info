@@ -216,7 +216,7 @@ $ docker pull swift@sha256:f9fbc64dbdaa35a1392197a9974db02c445cbcb82ef0e4d1f99a9
 		Size: 8.5 MB (8477785 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2e094b3272ab866a7a4145b824e5e052b8e447943d8fe50b02e01957821c2656`  
-		Last Modified: Thu, 15 Jan 2026 23:47:54 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:56:24 GMT  
 		Size: 16.3 KB (16258 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -934,7 +934,7 @@ $ docker pull swift@sha256:f9fbc64dbdaa35a1392197a9974db02c445cbcb82ef0e4d1f99a9
 		Size: 8.5 MB (8477785 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2e094b3272ab866a7a4145b824e5e052b8e447943d8fe50b02e01957821c2656`  
-		Last Modified: Thu, 15 Jan 2026 23:47:54 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:56:24 GMT  
 		Size: 16.3 KB (16258 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1208,7 +1208,7 @@ $ docker pull swift@sha256:74c5205d7bf8273bc8a0e9f0bc0e63598afd7a95a0d28e9c6df0a
 
 -	Layers:
 	-	`sha256:922f36c43bef6e824b10eb3ff9cb5525731d5ded63784d0ee0aadc1972167224`  
-		Last Modified: Thu, 15 Jan 2026 23:48:20 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:56:37 GMT  
 		Size: 3.1 MB (3056088 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2b97fdd5641e7ebc60a4e6f7875b78d3e3f894cca4836a7161606f2241729a27`  
@@ -1314,7 +1314,7 @@ $ docker pull swift@sha256:0dadf2de6689f1941babb58d4c50f0733de8e78ab16dedb6a3535
 
 -	Layers:
 	-	`sha256:50b8fb6e1e446b8524432175dd29ba51411e0ec174702cd8af9418c07a6f8d14`  
-		Last Modified: Thu, 15 Jan 2026 22:56:59 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:21 GMT  
 		Size: 7.9 MB (7876831 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e3d8ef26f6165c90152ed30c848a37d4c2cb4c0e60d76288243ae999f5670364`  
@@ -2253,7 +2253,7 @@ $ docker pull swift@sha256:74c5205d7bf8273bc8a0e9f0bc0e63598afd7a95a0d28e9c6df0a
 
 -	Layers:
 	-	`sha256:922f36c43bef6e824b10eb3ff9cb5525731d5ded63784d0ee0aadc1972167224`  
-		Last Modified: Thu, 15 Jan 2026 23:48:20 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:56:37 GMT  
 		Size: 3.1 MB (3056088 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2b97fdd5641e7ebc60a4e6f7875b78d3e3f894cca4836a7161606f2241729a27`  
@@ -2510,7 +2510,7 @@ $ docker pull swift@sha256:f9fbc64dbdaa35a1392197a9974db02c445cbcb82ef0e4d1f99a9
 		Size: 8.5 MB (8477785 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2e094b3272ab866a7a4145b824e5e052b8e447943d8fe50b02e01957821c2656`  
-		Last Modified: Thu, 15 Jan 2026 23:47:54 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:56:24 GMT  
 		Size: 16.3 KB (16258 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3228,7 +3228,7 @@ $ docker pull swift@sha256:f9fbc64dbdaa35a1392197a9974db02c445cbcb82ef0e4d1f99a9
 		Size: 8.5 MB (8477785 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2e094b3272ab866a7a4145b824e5e052b8e447943d8fe50b02e01957821c2656`  
-		Last Modified: Thu, 15 Jan 2026 23:47:54 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:56:24 GMT  
 		Size: 16.3 KB (16258 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3502,7 +3502,7 @@ $ docker pull swift@sha256:74c5205d7bf8273bc8a0e9f0bc0e63598afd7a95a0d28e9c6df0a
 
 -	Layers:
 	-	`sha256:922f36c43bef6e824b10eb3ff9cb5525731d5ded63784d0ee0aadc1972167224`  
-		Last Modified: Thu, 15 Jan 2026 23:48:20 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:56:37 GMT  
 		Size: 3.1 MB (3056088 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2b97fdd5641e7ebc60a4e6f7875b78d3e3f894cca4836a7161606f2241729a27`  
@@ -3608,7 +3608,7 @@ $ docker pull swift@sha256:0dadf2de6689f1941babb58d4c50f0733de8e78ab16dedb6a3535
 
 -	Layers:
 	-	`sha256:50b8fb6e1e446b8524432175dd29ba51411e0ec174702cd8af9418c07a6f8d14`  
-		Last Modified: Thu, 15 Jan 2026 22:56:59 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:21 GMT  
 		Size: 7.9 MB (7876831 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e3d8ef26f6165c90152ed30c848a37d4c2cb4c0e60d76288243ae999f5670364`  
@@ -4547,7 +4547,7 @@ $ docker pull swift@sha256:74c5205d7bf8273bc8a0e9f0bc0e63598afd7a95a0d28e9c6df0a
 
 -	Layers:
 	-	`sha256:922f36c43bef6e824b10eb3ff9cb5525731d5ded63784d0ee0aadc1972167224`  
-		Last Modified: Thu, 15 Jan 2026 23:48:20 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:56:37 GMT  
 		Size: 3.1 MB (3056088 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2b97fdd5641e7ebc60a4e6f7875b78d3e3f894cca4836a7161606f2241729a27`  
@@ -4776,7 +4776,7 @@ RUN swift --version # buildkit
 		Size: 130.4 MB (130400988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b0f92dfda463fe905f36acfd6eaced40eb05c6c6a089ba7a8377a239c09ae59`  
-		Last Modified: Thu, 15 Jan 2026 22:55:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:54:34 GMT  
 		Size: 801.6 MB (801647988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c923295af8121691be233054ffe73e9699ef6e4d67fbaaa27d43dd8e80b06ad`  
@@ -5301,7 +5301,7 @@ RUN swift --version # buildkit
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b3d70ba57ce0eb3fa4e2c4751c34e5b59865a17f03095449ff030cae4437a011`  
-		Last Modified: Tue, 13 Jan 2026 03:21:10 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:57:31 GMT  
 		Size: 198.4 MB (198425833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4122b673ab387c1880417fe6522e15c170b2204388127ae61a53cbcf3de2eef5`  
@@ -5878,7 +5878,7 @@ RUN swift --version # buildkit
 		Size: 130.4 MB (130400988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b0f92dfda463fe905f36acfd6eaced40eb05c6c6a089ba7a8377a239c09ae59`  
-		Last Modified: Thu, 15 Jan 2026 22:55:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:54:34 GMT  
 		Size: 801.6 MB (801647988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c923295af8121691be233054ffe73e9699ef6e4d67fbaaa27d43dd8e80b06ad`  
@@ -6403,7 +6403,7 @@ RUN swift --version # buildkit
 		Size: 77.8 MB (77769327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0df6a7a0a329d7e80cf4a3a547e1c601d36df9116e0c9a8542b8046251ad600`  
-		Last Modified: Tue, 06 Jan 2026 19:01:03 GMT  
+		Last Modified: Tue, 06 Jan 2026 19:01:44 GMT  
 		Size: 118.3 MB (118260726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f936313db041fe3dee46ad15cc3dda672e3ec8f43c577c59bd936fefae706a1a`  
@@ -7070,7 +7070,7 @@ RUN swift --version # buildkit
 		Size: 130.4 MB (130400988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b0f92dfda463fe905f36acfd6eaced40eb05c6c6a089ba7a8377a239c09ae59`  
-		Last Modified: Thu, 15 Jan 2026 22:55:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:54:34 GMT  
 		Size: 801.6 MB (801647988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c923295af8121691be233054ffe73e9699ef6e4d67fbaaa27d43dd8e80b06ad`  
@@ -7595,7 +7595,7 @@ RUN swift --version # buildkit
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b3d70ba57ce0eb3fa4e2c4751c34e5b59865a17f03095449ff030cae4437a011`  
-		Last Modified: Tue, 13 Jan 2026 03:21:10 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:57:31 GMT  
 		Size: 198.4 MB (198425833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4122b673ab387c1880417fe6522e15c170b2204388127ae61a53cbcf3de2eef5`  
@@ -8172,7 +8172,7 @@ RUN swift --version # buildkit
 		Size: 130.4 MB (130400988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b0f92dfda463fe905f36acfd6eaced40eb05c6c6a089ba7a8377a239c09ae59`  
-		Last Modified: Thu, 15 Jan 2026 22:55:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:54:34 GMT  
 		Size: 801.6 MB (801647988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c923295af8121691be233054ffe73e9699ef6e4d67fbaaa27d43dd8e80b06ad`  
@@ -8697,7 +8697,7 @@ RUN swift --version # buildkit
 		Size: 77.8 MB (77769327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0df6a7a0a329d7e80cf4a3a547e1c601d36df9116e0c9a8542b8046251ad600`  
-		Last Modified: Tue, 06 Jan 2026 19:01:03 GMT  
+		Last Modified: Tue, 06 Jan 2026 19:01:44 GMT  
 		Size: 118.3 MB (118260726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f936313db041fe3dee46ad15cc3dda672e3ec8f43c577c59bd936fefae706a1a`  
@@ -10203,7 +10203,7 @@ $ docker pull swift@sha256:47b2d5037dfefb12bb8d1c5955cf6c820fc941574872e19c6bc13
 		Size: 8.5 MB (8472863 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:170e57b8c90e75f99114222073d3edacd43d430b02f7e1f77a8b11d9d7350a05`  
-		Last Modified: Thu, 15 Jan 2026 23:50:36 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:54:40 GMT  
 		Size: 15.7 KB (15734 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12497,7 +12497,7 @@ $ docker pull swift@sha256:47b2d5037dfefb12bb8d1c5955cf6c820fc941574872e19c6bc13
 		Size: 8.5 MB (8472863 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:170e57b8c90e75f99114222073d3edacd43d430b02f7e1f77a8b11d9d7350a05`  
-		Last Modified: Thu, 15 Jan 2026 23:50:36 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:54:40 GMT  
 		Size: 15.7 KB (15734 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15657,7 +15657,7 @@ $ docker pull swift@sha256:c99e12c5fc1012518b76229a39ab72dc35fdf924e7972b0c7a27c
 		Size: 13.0 MB (12984874 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:58266ba6fb7d90deddbc3f1ef222ea5ccde29bbe7b48a00e791cf1250b18cc25`  
-		Last Modified: Tue, 06 Jan 2026 19:01:08 GMT  
+		Last Modified: Tue, 06 Jan 2026 20:48:46 GMT  
 		Size: 14.4 KB (14442 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18116,7 +18116,7 @@ $ docker pull swift@sha256:c99e12c5fc1012518b76229a39ab72dc35fdf924e7972b0c7a27c
 		Size: 13.0 MB (12984874 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:58266ba6fb7d90deddbc3f1ef222ea5ccde29bbe7b48a00e791cf1250b18cc25`  
-		Last Modified: Tue, 06 Jan 2026 19:01:08 GMT  
+		Last Modified: Tue, 06 Jan 2026 20:48:46 GMT  
 		Size: 14.4 KB (14442 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20575,7 +20575,7 @@ $ docker pull swift@sha256:c99e12c5fc1012518b76229a39ab72dc35fdf924e7972b0c7a27c
 		Size: 13.0 MB (12984874 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:58266ba6fb7d90deddbc3f1ef222ea5ccde29bbe7b48a00e791cf1250b18cc25`  
-		Last Modified: Tue, 06 Jan 2026 19:01:08 GMT  
+		Last Modified: Tue, 06 Jan 2026 20:48:46 GMT  
 		Size: 14.4 KB (14442 bytes)  
 		MIME: application/vnd.in-toto+json
 
