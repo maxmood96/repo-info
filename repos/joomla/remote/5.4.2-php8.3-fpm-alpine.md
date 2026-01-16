@@ -989,7 +989,7 @@ $ docker pull joomla@sha256:1c1fab03e393a35390adbd8067079e3299afca40dc71e435ece2
 
 -	Layers:
 	-	`sha256:4fad1f21ae8f5b2bd8f46076557a509d08f8b1127b856cd4dd9a082dd36b152c`  
-		Last Modified: Sat, 10 Jan 2026 00:10:25 GMT  
+		Last Modified: Sat, 10 Jan 2026 02:46:54 GMT  
 		Size: 45.7 KB (45680 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1147,7 +1147,7 @@ CMD ["php-fpm"]
 		Size: 7.4 MB (7364494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ece74f18272efdfba7ff5daa5a197f1a9b8f03ceb5db5dc5b6ac199a39c568b`  
-		Last Modified: Sat, 10 Jan 2026 03:32:52 GMT  
+		Last Modified: Sat, 10 Jan 2026 03:32:44 GMT  
 		Size: 72.9 KB (72864 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a52fb7ee6a30ef4a2806bf0d115a7cb55e063210383bc5718ca4156d3bb280e9`  
