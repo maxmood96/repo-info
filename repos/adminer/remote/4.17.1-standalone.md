@@ -335,7 +335,7 @@ EXPOSE map[8080/tcp:{}]
 		Size: 23.4 KB (23352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:55e973c1f6270ae07167a88f740d9d0dc9bfa3bf67a6501f9cc96a4b62d43317`  
-		Last Modified: Thu, 15 Jan 2026 23:21:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:21:20 GMT  
 		Size: 305.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd772ffc7e12a344559fb1ec3dd12836822ea659588d480a55496e7ba14a0dea`  
