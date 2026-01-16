@@ -6387,7 +6387,7 @@ $ docker pull golang@sha256:6f76dd71b1512122d0a5fdc7000096c122cf27364a66aef2acb9
 
 -	Layers:
 	-	`sha256:44cc4a38fa4790c4c80f8908f37993ba7d3f46116f038b0f56e71e46ceaf2c1e`  
-		Last Modified: Thu, 15 Jan 2026 21:48:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:05 GMT  
 		Size: 210.0 KB (210038 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b1f49234c52e4c4e3852ba7685dee83b3454947afb8e2e394586992dca709b5e`  
@@ -7725,7 +7725,7 @@ $ docker pull golang@sha256:6f76dd71b1512122d0a5fdc7000096c122cf27364a66aef2acb9
 
 -	Layers:
 	-	`sha256:44cc4a38fa4790c4c80f8908f37993ba7d3f46116f038b0f56e71e46ceaf2c1e`  
-		Last Modified: Thu, 15 Jan 2026 21:48:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:05 GMT  
 		Size: 210.0 KB (210038 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b1f49234c52e4c4e3852ba7685dee83b3454947afb8e2e394586992dca709b5e`  
@@ -8617,7 +8617,7 @@ WORKDIR C:\go
 		Size: 1.0 KB (1033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b31fb872e4a0d1b4957fc94726b87e47a7e856b2af36ec89a0586238b7cc7dd0`  
-		Last Modified: Thu, 15 Jan 2026 22:38:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:37:43 GMT  
 		Size: 69.6 KB (69646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:475509908746d416abac6d37a74054688313dd80f15e62a1ca30ed85acb80c07`  
@@ -8874,7 +8874,7 @@ WORKDIR C:\go
 		Size: 1.0 KB (1033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b31fb872e4a0d1b4957fc94726b87e47a7e856b2af36ec89a0586238b7cc7dd0`  
-		Last Modified: Thu, 15 Jan 2026 22:38:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:37:43 GMT  
 		Size: 69.6 KB (69646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:475509908746d416abac6d37a74054688313dd80f15e62a1ca30ed85acb80c07`  
@@ -11219,7 +11219,7 @@ $ docker pull golang@sha256:6f76dd71b1512122d0a5fdc7000096c122cf27364a66aef2acb9
 
 -	Layers:
 	-	`sha256:44cc4a38fa4790c4c80f8908f37993ba7d3f46116f038b0f56e71e46ceaf2c1e`  
-		Last Modified: Thu, 15 Jan 2026 21:48:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:05 GMT  
 		Size: 210.0 KB (210038 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b1f49234c52e4c4e3852ba7685dee83b3454947afb8e2e394586992dca709b5e`  
@@ -12391,7 +12391,7 @@ $ docker pull golang@sha256:6f76dd71b1512122d0a5fdc7000096c122cf27364a66aef2acb9
 
 -	Layers:
 	-	`sha256:44cc4a38fa4790c4c80f8908f37993ba7d3f46116f038b0f56e71e46ceaf2c1e`  
-		Last Modified: Thu, 15 Jan 2026 21:48:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:05 GMT  
 		Size: 210.0 KB (210038 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b1f49234c52e4c4e3852ba7685dee83b3454947afb8e2e394586992dca709b5e`  
@@ -13202,7 +13202,7 @@ WORKDIR C:\go
 		Size: 1.0 KB (1033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b31fb872e4a0d1b4957fc94726b87e47a7e856b2af36ec89a0586238b7cc7dd0`  
-		Last Modified: Thu, 15 Jan 2026 22:38:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:37:43 GMT  
 		Size: 69.6 KB (69646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:475509908746d416abac6d37a74054688313dd80f15e62a1ca30ed85acb80c07`  
@@ -13459,7 +13459,7 @@ WORKDIR C:\go
 		Size: 1.0 KB (1033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b31fb872e4a0d1b4957fc94726b87e47a7e856b2af36ec89a0586238b7cc7dd0`  
-		Last Modified: Thu, 15 Jan 2026 22:38:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:37:43 GMT  
 		Size: 69.6 KB (69646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:475509908746d416abac6d37a74054688313dd80f15e62a1ca30ed85acb80c07`  
