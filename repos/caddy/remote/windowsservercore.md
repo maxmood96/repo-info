@@ -118,7 +118,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:62e082aacddee60fc4c0b19a825b3a352cd969e8566ad69cd4af232a3285b1de`  
-		Last Modified: Tue, 13 Jan 2026 23:02:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:21 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8b07f49843e37bb0a1157c2a40603f408adcd48b9ee7b9431340f8c49836168a`  

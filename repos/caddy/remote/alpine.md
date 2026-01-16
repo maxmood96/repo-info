@@ -615,7 +615,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 7.5 KB (7499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:59b6471262dc4736f73060a2425e36fb287a6ceed81bc70abb377457a46e5994`  
-		Last Modified: Sat, 11 Oct 2025 20:41:30 GMT  
+		Last Modified: Thu, 11 Dec 2025 08:13:17 GMT  
 		Size: 15.1 MB (15130278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
