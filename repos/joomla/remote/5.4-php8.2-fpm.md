@@ -575,7 +575,7 @@ CMD ["php-fpm"]
 		Size: 3.7 KB (3655 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8f9025d80f1894222c7d0a708f1a5990ec58edcf8fd4cb08202c4b4ee2ccd937`  
-		Last Modified: Tue, 13 Jan 2026 04:34:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:34:29 GMT  
 		Size: 1.1 KB (1069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1299,7 +1299,7 @@ CMD ["php-fpm"]
 		Size: 11.0 MB (11011089 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7678e11c4fd71b2b09da25fda7ab386d42c74a7aeaed242d1a11f8ec2fcd55bb`  
-		Last Modified: Tue, 30 Dec 2025 21:05:47 GMT  
+		Last Modified: Tue, 30 Dec 2025 21:05:33 GMT  
 		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dd5862106591d6c9e9b3fb2c37735982d04f139d9221363b42db4a9c9a99ec6d`  
@@ -1535,7 +1535,7 @@ CMD ["php-fpm"]
 		Size: 3.7 KB (3655 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be89dfd86dc6060335efa21f14b1bff57e70fa48950a0ea35929aa83ce7119f1`  
-		Last Modified: Tue, 13 Jan 2026 15:54:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 15:54:50 GMT  
 		Size: 1.1 KB (1069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1555,6 +1555,6 @@ $ docker pull joomla@sha256:b105bfaa5e4535b5cac51e14228ef5cb54e9a0f4cab47c00bc8b
 
 -	Layers:
 	-	`sha256:df7852d699dd548d6db07ecbb2c8449e6c42353319ba0a6268c61f6d57df5e78`  
-		Last Modified: Tue, 13 Jan 2026 15:54:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:44:07 GMT  
 		Size: 46.2 KB (46168 bytes)  
 		MIME: application/vnd.in-toto+json
