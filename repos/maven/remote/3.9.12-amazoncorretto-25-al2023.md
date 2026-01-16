@@ -122,7 +122,7 @@ $ docker pull maven@sha256:23a6d4b17f7b60eef180c91d50c8a947ca5feee443fa0118ec3d4
 		Size: 6.2 MB (6207781 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6e0264d145bf45ef423dd208bc5aec5aef8203eb2dcabf3b1e53d2a8743f619b`  
-		Last Modified: Thu, 18 Dec 2025 02:23:16 GMT  
+		Last Modified: Thu, 18 Dec 2025 03:28:33 GMT  
 		Size: 16.4 KB (16350 bytes)  
 		MIME: application/vnd.in-toto+json
 
