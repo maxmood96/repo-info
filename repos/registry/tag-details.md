@@ -596,7 +596,7 @@ $ docker pull registry@sha256:8f28754bf153f0f963345c19cca3740d14f5dfa4a191573135
 		Size: 264.8 KB (264848 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:25141b3d2c3d00adb1364e4163ae91e0d7d16939b747d8df5e99195a782fbb00`  
-		Last Modified: Thu, 09 Oct 2025 07:53:25 GMT  
+		Last Modified: Mon, 08 Dec 2025 10:18:25 GMT  
 		Size: 14.3 KB (14328 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1189,7 +1189,7 @@ $ docker pull registry@sha256:8f28754bf153f0f963345c19cca3740d14f5dfa4a191573135
 		Size: 264.8 KB (264848 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:25141b3d2c3d00adb1364e4163ae91e0d7d16939b747d8df5e99195a782fbb00`  
-		Last Modified: Thu, 09 Oct 2025 07:53:25 GMT  
+		Last Modified: Mon, 08 Dec 2025 10:18:25 GMT  
 		Size: 14.3 KB (14328 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1782,7 +1782,7 @@ $ docker pull registry@sha256:8f28754bf153f0f963345c19cca3740d14f5dfa4a191573135
 		Size: 264.8 KB (264848 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:25141b3d2c3d00adb1364e4163ae91e0d7d16939b747d8df5e99195a782fbb00`  
-		Last Modified: Thu, 09 Oct 2025 07:53:25 GMT  
+		Last Modified: Mon, 08 Dec 2025 10:18:25 GMT  
 		Size: 14.3 KB (14328 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2375,6 +2375,6 @@ $ docker pull registry@sha256:8f28754bf153f0f963345c19cca3740d14f5dfa4a191573135
 		Size: 264.8 KB (264848 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:25141b3d2c3d00adb1364e4163ae91e0d7d16939b747d8df5e99195a782fbb00`  
-		Last Modified: Thu, 09 Oct 2025 07:53:25 GMT  
+		Last Modified: Mon, 08 Dec 2025 10:18:25 GMT  
 		Size: 14.3 KB (14328 bytes)  
 		MIME: application/vnd.in-toto+json
