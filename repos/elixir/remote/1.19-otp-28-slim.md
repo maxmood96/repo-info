@@ -129,7 +129,7 @@ CMD ["iex"]
 		Size: 69.9 MB (69914283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3a3ec9fdf6f8b1ae613d7be87812d54981fde7d283bc33846ffa3f063fbcc541`  
-		Last Modified: Thu, 11 Dec 2025 19:32:55 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:32:52 GMT  
 		Size: 8.2 MB (8229217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
