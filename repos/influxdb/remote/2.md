@@ -223,7 +223,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 766.4 KB (766370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c53a3a9efe7fd59838f76f744fc33e7b7848a8077bf8e265caf35bf5d731caa4`  
-		Last Modified: Tue, 13 Jan 2026 02:31:16 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:31:05 GMT  
 		Size: 48.2 MB (48229552 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a68b008dfe291566d50ddf5c7020299a3060b1d20c79012275b130b78a36b807`  
