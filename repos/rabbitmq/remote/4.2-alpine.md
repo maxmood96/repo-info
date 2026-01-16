@@ -107,7 +107,7 @@ CMD ["rabbitmq-server"]
 		Size: 2.5 MB (2465569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70d2b8dd6daa8698583e7bf8570a7f0b6eded142331c1b4d143319be80609c4e`  
-		Last Modified: Thu, 18 Dec 2025 00:43:36 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:43:45 GMT  
 		Size: 25.3 MB (25317128 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d901a09e06dcbf509f04cccecba79c8af1530e0c8a43a4e1a484e1ad7c17d202`  
