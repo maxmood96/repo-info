@@ -1,19 +1,19 @@
-# `ruby:4.0.0-alpine3.22`
+# `ruby:4.0.1-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:326d0ef25bda365e61a684db92525026b2ba7bf25014e838f9b53d9455008268`
-- Created: `2025-12-26T03:13:35.302563487Z`
-- Virtual Size: ~ 89.29 Mb  
+- Image ID: `sha256:e3b1d69719c1322096f0b4ede4cad758ba3f2daff77a7fd0bbb73207ed9bcca6`
+- Created: `2026-01-13T17:59:17.764293561Z`
+- Virtual Size: ~ 89.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=4.0.0`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.0.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=a72bacee9de07283ebc19baa4ac243b193129f21aa4e168c7186fb1fe7d07fe1`
+  - `RUBY_VERSION=4.0.1`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.1.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=0531fe57dfdb56bf591620d2450642ea0e0964f3512a6ebee7dc9305de69395f`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
