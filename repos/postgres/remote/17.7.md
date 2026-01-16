@@ -579,7 +579,7 @@ CMD ["postgres"]
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c8276ae813cb856959b78bded34b7f401782e8ebc4ef905392918fd51a4a92e3`  
-		Last Modified: Tue, 13 Jan 2026 01:54:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:54:50 GMT  
 		Size: 167.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6221683fba38121cec23e997181ead614c01bd9f26d14286e8b9814f7efe6beb`  
@@ -1051,7 +1051,7 @@ $ docker pull postgres@sha256:e9a7d52c65c4f2651f26e10feaf260476f94a46cd52dcf4d70
 
 -	Layers:
 	-	`sha256:050f42673435446259b709854d3e32c7d17ccbc773f3af54ebf66a07642b40ea`  
-		Last Modified: Fri, 16 Jan 2026 03:09:31 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:26:20 GMT  
 		Size: 5.1 MB (5083908 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8c850bba97fc981ecd9822ac5654996e51ecb082bb1f3327d98e63391cde29cb`  
