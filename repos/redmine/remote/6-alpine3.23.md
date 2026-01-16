@@ -167,7 +167,7 @@ $ docker pull redmine@sha256:be52edd8879e195404c11ffa8b46b95efca80fa6679f0fb5a9b
 
 -	Layers:
 	-	`sha256:558a198c7f5c8202efa174fb0117194495a425d83447b03d6d5bfb07fb232dc4`  
-		Last Modified: Tue, 06 Jan 2026 20:53:07 GMT  
+		Last Modified: Tue, 06 Jan 2026 18:29:35 GMT  
 		Size: 38.0 KB (37972 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -297,7 +297,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 82.6 MB (82634209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d0ab72a4ff269ef6fd6094c8387b7d3b316cc28c453e92cc2facfabef1a78e5`  
-		Last Modified: Tue, 06 Jan 2026 18:28:37 GMT  
+		Last Modified: Tue, 06 Jan 2026 18:28:44 GMT  
 		Size: 2.4 KB (2414 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -577,7 +577,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 80.1 MB (80050509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85286f8f48e67796ad7793e682314724641eac3ad86da65c55b6fa07527084e8`  
-		Last Modified: Tue, 06 Jan 2026 18:29:02 GMT  
+		Last Modified: Tue, 06 Jan 2026 18:29:13 GMT  
 		Size: 945.9 KB (945936 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:de124f47ffe16b8c87bc59fe87fca65dd7fb7a42f109cb826137ceafeef469d2`  
