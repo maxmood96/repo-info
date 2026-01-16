@@ -88,7 +88,7 @@ CMD ["httpd-foreground"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c51c0b07eaefbed47a1d88d9b290eb9759a6502fce28975ef723a6734e4d271`  
-		Last Modified: Thu, 18 Dec 2025 00:30:26 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:30:33 GMT  
 		Size: 11.1 MB (11060701 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e626d5c4ed2cb002334e2fa739cea5ebcc1ac9541a1ace441108e9814bf97cc5`  
@@ -621,7 +621,7 @@ $ docker pull httpd@sha256:55ba74434fb897cd7eca22438a8dda9e0ca09eccf1032ae2a48b9
 		Size: 1.2 MB (1204562 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:28ab504772622bf0b368d07a7120affe955bb02b88f0f39cdf2ad4c4ddbcdc50`  
-		Last Modified: Thu, 18 Dec 2025 03:53:38 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:34:31 GMT  
 		Size: 38.3 KB (38280 bytes)  
 		MIME: application/vnd.in-toto+json
 
