@@ -256,7 +256,7 @@ $ docker pull alpine@sha256:d91716f290ebdfc875e70dff501f42809e433d8c7bfe385b3956
 
 -	Layers:
 	-	`sha256:3b3e37f2e0a9e7eafbb301bb1620bcdd190236aef6c8013a96a5e87fc5232354`  
-		Last Modified: Sun, 28 Dec 2025 07:24:47 GMT  
+		Last Modified: Sun, 28 Dec 2025 05:45:20 GMT  
 		Size: 82.2 KB (82193 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c5e661b50f0baf0538cdf872dbdf596797baf0929471cd77bc260c16d70c261c`  
@@ -403,7 +403,7 @@ $ docker pull alpine@sha256:b3b636e0fbbf995d5b493b6dcc76bca6327f25d9bd77f40e6303
 
 -	Layers:
 	-	`sha256:7c1316eb39179a679e46fe182d480cdb6d7900707344089785aaae107ed2541b`  
-		Last Modified: Sun, 28 Dec 2025 05:45:05 GMT  
+		Last Modified: Sun, 28 Dec 2025 07:24:57 GMT  
 		Size: 81.6 KB (81557 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7c80e7d0eb6ff9e04329608889aebebb0a2bbf06fdfa2b26882004e3ecfd7a1d`  
