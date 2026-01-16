@@ -774,7 +774,7 @@ WORKDIR /usr/bin
 		Size: 6.5 MB (6530861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:586fd5f6dd11d21db362fcadfb92a7a5236e782b4031dadc5eb5bc0d08b14181`  
-		Last Modified: Thu, 15 Jan 2026 21:48:33 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:48:26 GMT  
 		Size: 1.8 MB (1782843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8e58852377fa96054d9c3f9ca29e88c8a457be1274cf0c0b3c8d0d86e1fe902`  
