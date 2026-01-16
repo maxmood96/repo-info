@@ -947,7 +947,7 @@ CMD ["composer"]
 		Size: 1.0 MB (1011816 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b77594686c7c390bef47c6cded168be8eff393f4892a2134093b013f0c4ef0d`  
-		Last Modified: Sat, 10 Jan 2026 03:04:26 GMT  
+		Last Modified: Sat, 10 Jan 2026 03:04:19 GMT  
 		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be6c74f35a25e46d4cbf7cea9b28ae171ae3bcfd2a62484d671f3d8e742d9966`  
@@ -971,7 +971,7 @@ $ docker pull composer@sha256:3fd4a8f09b5804c25b2199cf04aa8afb6d1601eee329f989f7
 
 -	Layers:
 	-	`sha256:46eb57aac76cdff81a613bfd8f78635cede7b47b6a8db56bcc14016f7bd00be5`  
-		Last Modified: Sat, 10 Jan 2026 03:04:20 GMT  
+		Last Modified: Sat, 10 Jan 2026 05:13:35 GMT  
 		Size: 2.2 MB (2180470 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:338e9a9a96cf4560ac097c2be4d25ff994a44e031253ad9abee08454df1fb5c1`  
