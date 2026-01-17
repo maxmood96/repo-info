@@ -469,7 +469,7 @@ CMD ["/etc/distribution/config.yml"]
 		Size: 3.4 MB (3351001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:611661040751365eafd7f1dfe7a29755674f06b893fdaa0640152a38b160d0dc`  
-		Last Modified: Wed, 10 Dec 2025 04:05:00 GMT  
+		Last Modified: Fri, 10 Oct 2025 20:47:32 GMT  
 		Size: 291.5 KB (291463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9068bf4929dd7885de95d4cc15d9ff583962d9b4d30d53ae119eb82edface78c`  
@@ -501,7 +501,7 @@ $ docker pull registry@sha256:1baeee6733340337adc53e5e95ba3849bc82580c9d9e496111
 
 -	Layers:
 	-	`sha256:6259f948ca82679eb1eb135548c5e68072827d139a11dd6222e58b04502cc87b`  
-		Last Modified: Fri, 10 Oct 2025 20:47:32 GMT  
+		Last Modified: Wed, 10 Dec 2025 03:04:43 GMT  
 		Size: 264.9 KB (264878 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:18afeab2381630beccc5a02833a8582499e02c6978194374845293b13ee4696c`  
