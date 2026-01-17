@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4a228ceb712e38b7676f32ee136eba9ea3ec6b247338e9dfcd0b46900fb80b58`
-- Created: `2026-01-09T23:33:15.861140299Z`
-- Virtual Size: ~ 279.77 Mb  
+- Image ID: `sha256:1265c589dfc4122b15b6e9b82f2a684630825752af553816f562794cc882f2b7`
+- Created: `2026-01-16T23:34:32.377246639Z`
+- Virtual Size: ~ 279.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.29`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.29.tar.xz.asc`
-  - `PHP_SHA256=f7950ca034b15a78f5de9f1b22f4d9bad1dd497114d175cb1672a4ca78077af5`
+  - `PHP_VERSION=8.3.30`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.30.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.30.tar.xz.asc`
+  - `PHP_SHA256=67f084d36852daab6809561a7c8023d130ca07fc6af8fb040684dd1414934d48`
   - `GOSU_VERSION=1.17`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
@@ -477,16 +477,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.8-r0 description:
+imagemagick-7.1.2.12-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.8-r0 webpage:
+imagemagick-7.1.2.12-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.8-r0 installed size:
-3663 KiB
+imagemagick-7.1.2.12-r0 installed size:
+3667 KiB
 
-imagemagick-7.1.2.8-r0 license:
+imagemagick-7.1.2.12-r0 license:
 ImageMagick
 
 ```
@@ -494,16 +494,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.8-r0 description:
+imagemagick-jpeg-7.1.2.12-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.8-r0 webpage:
+imagemagick-jpeg-7.1.2.12-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.8-r0 installed size:
-54 KiB
+imagemagick-jpeg-7.1.2.12-r0 installed size:
+62 KiB
 
-imagemagick-jpeg-7.1.2.8-r0 license:
+imagemagick-jpeg-7.1.2.12-r0 license:
 ImageMagick
 
 ```
@@ -511,16 +511,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.8-r0 description:
+imagemagick-libs-7.1.2.12-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.8-r0 webpage:
+imagemagick-libs-7.1.2.12-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.8-r0 installed size:
+imagemagick-libs-7.1.2.12-r0 installed size:
 4245 KiB
 
-imagemagick-libs-7.1.2.8-r0 license:
+imagemagick-libs-7.1.2.12-r0 license:
 ImageMagick
 
 ```
@@ -528,16 +528,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.8-r0 description:
+imagemagick-webp-7.1.2.12-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.8-r0 webpage:
+imagemagick-webp-7.1.2.12-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.8-r0 installed size:
+imagemagick-webp-7.1.2.12-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.8-r0 license:
+imagemagick-webp-7.1.2.12-r0 license:
 ImageMagick
 
 ```
@@ -1701,16 +1701,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.51.1-r0 description:
+sqlite-libs-3.51.2-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.51.1-r0 webpage:
+sqlite-libs-3.51.2-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.51.1-r0 installed size:
+sqlite-libs-3.51.2-r0 installed size:
 1577 KiB
 
-sqlite-libs-3.51.1-r0 license:
+sqlite-libs-3.51.2-r0 license:
 blessing
 
 ```
@@ -1786,16 +1786,16 @@ ISC
 ### `apk` package: `xz`
 
 ```console
-xz-5.8.1-r0 description:
+xz-5.8.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.8.1-r0 webpage:
+xz-5.8.2-r0 webpage:
 https://tukaani.org/xz/
 
-xz-5.8.1-r0 installed size:
+xz-5.8.2-r0 installed size:
 162 KiB
 
-xz-5.8.1-r0 license:
+xz-5.8.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1803,16 +1803,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.1-r0 description:
+xz-libs-5.8.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.1-r0 webpage:
+xz-libs-5.8.2-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.1-r0 installed size:
+xz-libs-5.8.2-r0 installed size:
 221 KiB
 
-xz-libs-5.8.1-r0 license:
+xz-libs-5.8.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
