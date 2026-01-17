@@ -159,7 +159,7 @@ CMD ["spiped"]
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3770096adf56bffd20a1371e4ba64990c5a432e11a9083c27ae393be70f81bdc`  
-		Last Modified: Tue, 13 Jan 2026 02:28:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:28:44 GMT  
 		Size: 5.8 MB (5789426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f773528ba233ec37e7021415709fd47085703caa44200a4c5e298b4b238c7cf1`  
@@ -449,7 +449,7 @@ $ docker pull spiped@sha256:9fa0f002c06fe84ef172b8e5d8fee2863cadf4e78b24618ec0c5
 		Size: 3.6 MB (3620353 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5d7d7705b4a9214730fcf189f5236c787d39f0544808b30c9f33460b09c8e441`  
-		Last Modified: Tue, 13 Jan 2026 05:05:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:01:32 GMT  
 		Size: 14.9 KB (14946 bytes)  
 		MIME: application/vnd.in-toto+json
 
