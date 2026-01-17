@@ -337,7 +337,7 @@ CMD ["cassandra" "-f"]
 		Size: 52.9 MB (52914392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee9507149f33c40286767b0d916c5256c501777cded1745857cbea940e68e486`  
-		Last Modified: Fri, 16 Jan 2026 01:41:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:42:00 GMT  
 		Size: 1.2 KB (1223 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
