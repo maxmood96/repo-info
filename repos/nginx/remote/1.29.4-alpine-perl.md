@@ -349,7 +349,7 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 16.6 MB (16579718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c7c7b0ed1ad86e7e45708f2ad4eb14a042342425ca5e20c4a29babc61f7a669`  
-		Last Modified: Wed, 14 Jan 2026 01:09:51 GMT  
+		Last Modified: Wed, 14 Jan 2026 01:09:30 GMT  
 		Size: 9.3 MB (9342375 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
