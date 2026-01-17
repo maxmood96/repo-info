@@ -613,7 +613,7 @@ $ docker pull geonetwork@sha256:3acca9983b2a6a53e20d9127b64371158e4b75a30faf248f
 
 -	Layers:
 	-	`sha256:cb39d55e263ef9240f112af2d34aac58611ad5a242f9f34c0d5723df0ddad665`  
-		Last Modified: Fri, 16 Jan 2026 03:28:18 GMT  
+		Last Modified: Fri, 16 Jan 2026 07:12:37 GMT  
 		Size: 5.9 MB (5921586 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bb60f2973b575ea373e5e7b3da113d6117d251240fd73e2c334b6e908c6ec87a`  
