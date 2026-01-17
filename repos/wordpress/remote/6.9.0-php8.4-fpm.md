@@ -549,7 +549,7 @@ CMD ["php-fpm"]
 		Size: 9.3 KB (9274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6c8cd55ddf97722effc5ed4cf1eb05780b25dd7bace4469274cffcf169c5ce2`  
-		Last Modified: Fri, 16 Jan 2026 23:51:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:51:57 GMT  
 		Size: 25.2 MB (25158427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:32d66a96059e2abf0f3224ff79b7b31ee38d3be26aab8341bfba3ce302878a97`  
@@ -1309,7 +1309,7 @@ CMD ["php-fpm"]
 		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6df83c881620d9b0eccf81786ee5e833b406a305336b53553d64cb1eb0f1a48c`  
-		Last Modified: Tue, 30 Dec 2025 15:23:30 GMT  
+		Last Modified: Tue, 30 Dec 2025 15:23:39 GMT  
 		Size: 253.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8724057dcf8306e71e224b08ca828198fefa80babe79b8837cce759978286a8e`  
@@ -1567,7 +1567,7 @@ $ docker pull wordpress@sha256:0fe19a9e5ff6b4e8228f90b857ccfe10c8532ae895c3b12fd
 
 -	Layers:
 	-	`sha256:cf19dcd205c38d44da7e05b7098ff1442734bec378cf8bf25d4fb4f13e9c35de`  
-		Last Modified: Sat, 17 Jan 2026 02:15:52 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:00:41 GMT  
 		Size: 7.9 MB (7873131 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:34b7270ed21b05e7d0b31f2c9d87a4f126d34f516f255aee9ad39ec4a5e5c90b`  
