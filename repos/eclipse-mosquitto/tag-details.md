@@ -1096,7 +1096,7 @@ $ docker pull eclipse-mosquitto@sha256:a17019eaa613e42b20391a65d759da6039d35f28a
 
 -	Layers:
 	-	`sha256:4d4161a432815512b89b638609e68ae79b037231f03165064b342e11a67815fb`  
-		Last Modified: Tue, 13 Jan 2026 22:03:10 GMT  
+		Last Modified: Fri, 14 Nov 2025 17:50:57 GMT  
 		Size: 23.1 KB (23087 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1557,7 +1557,7 @@ $ docker pull eclipse-mosquitto@sha256:a17019eaa613e42b20391a65d759da6039d35f28a
 
 -	Layers:
 	-	`sha256:4d4161a432815512b89b638609e68ae79b037231f03165064b342e11a67815fb`  
-		Last Modified: Tue, 13 Jan 2026 22:03:10 GMT  
+		Last Modified: Fri, 14 Nov 2025 17:50:57 GMT  
 		Size: 23.1 KB (23087 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2018,7 +2018,7 @@ $ docker pull eclipse-mosquitto@sha256:a17019eaa613e42b20391a65d759da6039d35f28a
 
 -	Layers:
 	-	`sha256:4d4161a432815512b89b638609e68ae79b037231f03165064b342e11a67815fb`  
-		Last Modified: Tue, 13 Jan 2026 22:03:10 GMT  
+		Last Modified: Fri, 14 Nov 2025 17:50:57 GMT  
 		Size: 23.1 KB (23087 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2479,7 +2479,7 @@ $ docker pull eclipse-mosquitto@sha256:a17019eaa613e42b20391a65d759da6039d35f28a
 
 -	Layers:
 	-	`sha256:4d4161a432815512b89b638609e68ae79b037231f03165064b342e11a67815fb`  
-		Last Modified: Tue, 13 Jan 2026 22:03:10 GMT  
+		Last Modified: Fri, 14 Nov 2025 17:50:57 GMT  
 		Size: 23.1 KB (23087 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2940,7 +2940,7 @@ $ docker pull eclipse-mosquitto@sha256:a17019eaa613e42b20391a65d759da6039d35f28a
 
 -	Layers:
 	-	`sha256:4d4161a432815512b89b638609e68ae79b037231f03165064b342e11a67815fb`  
-		Last Modified: Tue, 13 Jan 2026 22:03:10 GMT  
+		Last Modified: Fri, 14 Nov 2025 17:50:57 GMT  
 		Size: 23.1 KB (23087 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3401,7 +3401,7 @@ $ docker pull eclipse-mosquitto@sha256:a17019eaa613e42b20391a65d759da6039d35f28a
 
 -	Layers:
 	-	`sha256:4d4161a432815512b89b638609e68ae79b037231f03165064b342e11a67815fb`  
-		Last Modified: Tue, 13 Jan 2026 22:03:10 GMT  
+		Last Modified: Fri, 14 Nov 2025 17:50:57 GMT  
 		Size: 23.1 KB (23087 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3862,7 +3862,7 @@ $ docker pull eclipse-mosquitto@sha256:a17019eaa613e42b20391a65d759da6039d35f28a
 
 -	Layers:
 	-	`sha256:4d4161a432815512b89b638609e68ae79b037231f03165064b342e11a67815fb`  
-		Last Modified: Tue, 13 Jan 2026 22:03:10 GMT  
+		Last Modified: Fri, 14 Nov 2025 17:50:57 GMT  
 		Size: 23.1 KB (23087 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4323,7 +4323,7 @@ $ docker pull eclipse-mosquitto@sha256:a17019eaa613e42b20391a65d759da6039d35f28a
 
 -	Layers:
 	-	`sha256:4d4161a432815512b89b638609e68ae79b037231f03165064b342e11a67815fb`  
-		Last Modified: Tue, 13 Jan 2026 22:03:10 GMT  
+		Last Modified: Fri, 14 Nov 2025 17:50:57 GMT  
 		Size: 23.1 KB (23087 bytes)  
 		MIME: application/vnd.in-toto+json
 
