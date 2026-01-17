@@ -536,7 +536,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 36.5 KB (36496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9ee96285dfd47d0bbd6b63e698d3b187bd62d47ea55e9cd51e2970fbe2a7b047`  
-		Last Modified: Fri, 16 Jan 2026 02:31:44 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:31:55 GMT  
 		Size: 18.0 MB (18036513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e769a738e2f3395381ca0b8386d08b9219ce4a51b864d18e693a678d5d52942a`  
@@ -791,6 +791,6 @@ $ docker pull websphere-liberty@sha256:a790d20fadff7b09e174c449d3ee172670edf44f5
 		Size: 5.9 MB (5946784 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:56d7ad77c1789d85bc73a8d51aa1c96ea720ba8440ebe5234250900545ed864b`  
-		Last Modified: Fri, 16 Jan 2026 01:24:06 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:09:49 GMT  
 		Size: 19.6 KB (19631 bytes)  
 		MIME: application/vnd.in-toto+json
