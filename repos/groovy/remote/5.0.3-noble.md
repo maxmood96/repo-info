@@ -545,11 +545,11 @@ $ docker pull groovy@sha256:534315bf7120a059f7c5a8c72429165a6756c0b1cd87c1bfc4a6
 
 -	Layers:
 	-	`sha256:9a8c77046fe5a2b00a9dd58ffa734fe5039a6c536bb375a1f219e30e985d631e`  
-		Last Modified: Mon, 08 Dec 2025 19:21:36 GMT  
+		Last Modified: Mon, 08 Dec 2025 21:22:29 GMT  
 		Size: 3.7 MB (3743128 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d840adf89b6a3ff32ec836c54e608c815d3cf9a222000f03f676474f15a27cd1`  
-		Last Modified: Mon, 08 Dec 2025 21:22:30 GMT  
+		Last Modified: Mon, 08 Dec 2025 19:21:35 GMT  
 		Size: 26.5 KB (26481 bytes)  
 		MIME: application/vnd.in-toto+json
 
