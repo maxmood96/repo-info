@@ -675,7 +675,7 @@ $ docker pull influxdb@sha256:34ac15f902b8907e65c3ec4432f28b3de55ac12f03c7b79ed9
 
 -	Layers:
 	-	`sha256:42b8f7363028d21427e8f398bac58ecff5c02cec3eac379e0dce85371a26fb2a`  
-		Last Modified: Mon, 15 Dec 2025 20:40:19 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:10:16 GMT  
 		Size: 769.0 KB (768993 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:95c8c2a7537102693c04e00ab640a007908a8cdec2fa3201d77b6b835d83c362`  
@@ -1507,7 +1507,7 @@ $ docker pull influxdb@sha256:34ac15f902b8907e65c3ec4432f28b3de55ac12f03c7b79ed9
 
 -	Layers:
 	-	`sha256:42b8f7363028d21427e8f398bac58ecff5c02cec3eac379e0dce85371a26fb2a`  
-		Last Modified: Mon, 15 Dec 2025 20:40:19 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:10:16 GMT  
 		Size: 769.0 KB (768993 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:95c8c2a7537102693c04e00ab640a007908a8cdec2fa3201d77b6b835d83c362`  
@@ -3737,7 +3737,7 @@ $ docker pull influxdb@sha256:fd0843ea7d0b590a344252c4735a3b5c3259175326169b796c
 		Size: 915.9 KB (915886 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0679192f4161cc8a9733b5905a2517d3b39a4d0813431aae1e63606bfccd37e1`  
-		Last Modified: Fri, 12 Dec 2025 00:20:42 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:21:58 GMT  
 		Size: 30.8 KB (30847 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3958,7 +3958,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 3.2 KB (3225 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:332c159a27a1da2abbe5673bdaaae5ec4032a5c5001b11062a629daa347497ad`  
-		Last Modified: Tue, 13 Jan 2026 02:25:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:26:02 GMT  
 		Size: 1.0 MB (1012039 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2db699770bd0f83d68f705e2711254edb50a46ab3d57d0b6a36fadb9d6db2a6a`  
@@ -4480,7 +4480,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 3.2 KB (3225 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:332c159a27a1da2abbe5673bdaaae5ec4032a5c5001b11062a629daa347497ad`  
-		Last Modified: Tue, 13 Jan 2026 02:25:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:26:02 GMT  
 		Size: 1.0 MB (1012039 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2db699770bd0f83d68f705e2711254edb50a46ab3d57d0b6a36fadb9d6db2a6a`  
@@ -5319,7 +5319,7 @@ $ docker pull influxdb@sha256:fd0843ea7d0b590a344252c4735a3b5c3259175326169b796c
 		Size: 915.9 KB (915886 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0679192f4161cc8a9733b5905a2517d3b39a4d0813431aae1e63606bfccd37e1`  
-		Last Modified: Fri, 12 Dec 2025 00:20:42 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:21:58 GMT  
 		Size: 30.8 KB (30847 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5857,7 +5857,7 @@ $ docker pull influxdb@sha256:fd0843ea7d0b590a344252c4735a3b5c3259175326169b796c
 		Size: 915.9 KB (915886 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0679192f4161cc8a9733b5905a2517d3b39a4d0813431aae1e63606bfccd37e1`  
-		Last Modified: Fri, 12 Dec 2025 00:20:42 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:21:58 GMT  
 		Size: 30.8 KB (30847 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7500,7 +7500,7 @@ $ docker pull influxdb@sha256:fd0843ea7d0b590a344252c4735a3b5c3259175326169b796c
 		Size: 915.9 KB (915886 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0679192f4161cc8a9733b5905a2517d3b39a4d0813431aae1e63606bfccd37e1`  
-		Last Modified: Fri, 12 Dec 2025 00:20:42 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:21:58 GMT  
 		Size: 30.8 KB (30847 bytes)  
 		MIME: application/vnd.in-toto+json
 
