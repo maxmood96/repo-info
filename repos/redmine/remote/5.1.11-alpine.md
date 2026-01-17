@@ -627,7 +627,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 3.3 MB (3254114 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:36951e3b77f315d437b5c97d9f05ed0b5e9275fbca81ba3282f44f8f65370cf1`  
-		Last Modified: Wed, 14 Jan 2026 18:13:40 GMT  
+		Last Modified: Wed, 14 Jan 2026 18:13:53 GMT  
 		Size: 71.2 MB (71181965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ca52cd31ee51e6115e8a8825921f7449da742c7b65f7c7152c9e52244c5ca10`  
@@ -967,7 +967,7 @@ $ docker pull redmine@sha256:ca064506a339e5107ee8f74efc4d42784fdb807997b8ca57f9f
 
 -	Layers:
 	-	`sha256:0ca69a1da989b9806f47d52c4d748596f6b661bf2d9d6d5cfd0da2f23839a903`  
-		Last Modified: Wed, 14 Jan 2026 20:50:36 GMT  
+		Last Modified: Wed, 14 Jan 2026 18:55:30 GMT  
 		Size: 40.9 KB (40855 bytes)  
 		MIME: application/vnd.in-toto+json
 
