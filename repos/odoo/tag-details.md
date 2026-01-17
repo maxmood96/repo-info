@@ -2450,7 +2450,7 @@ $ docker pull odoo@sha256:5f4381dd7f8d6c85a3dc0d06cea4f7ee047a999d096fca16f6b6b6
 
 -	Layers:
 	-	`sha256:64bea758f8b13dd17c9f820394a70adc41cfb5fa9a4ea0ba7a931fbd472d3da4`  
-		Last Modified: Thu, 15 Jan 2026 22:42:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:18:04 GMT  
 		Size: 68.9 MB (68863729 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f89a283939e7ac60579190184f05c0b04daabea1cc4047b754d5c84d5d07280a`  
@@ -2879,7 +2879,7 @@ $ docker pull odoo@sha256:5f4381dd7f8d6c85a3dc0d06cea4f7ee047a999d096fca16f6b6b6
 
 -	Layers:
 	-	`sha256:64bea758f8b13dd17c9f820394a70adc41cfb5fa9a4ea0ba7a931fbd472d3da4`  
-		Last Modified: Thu, 15 Jan 2026 22:42:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:18:04 GMT  
 		Size: 68.9 MB (68863729 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f89a283939e7ac60579190184f05c0b04daabea1cc4047b754d5c84d5d07280a`  
@@ -3308,7 +3308,7 @@ $ docker pull odoo@sha256:5f4381dd7f8d6c85a3dc0d06cea4f7ee047a999d096fca16f6b6b6
 
 -	Layers:
 	-	`sha256:64bea758f8b13dd17c9f820394a70adc41cfb5fa9a4ea0ba7a931fbd472d3da4`  
-		Last Modified: Thu, 15 Jan 2026 22:42:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:18:04 GMT  
 		Size: 68.9 MB (68863729 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f89a283939e7ac60579190184f05c0b04daabea1cc4047b754d5c84d5d07280a`  
@@ -3737,7 +3737,7 @@ $ docker pull odoo@sha256:5f4381dd7f8d6c85a3dc0d06cea4f7ee047a999d096fca16f6b6b6
 
 -	Layers:
 	-	`sha256:64bea758f8b13dd17c9f820394a70adc41cfb5fa9a4ea0ba7a931fbd472d3da4`  
-		Last Modified: Thu, 15 Jan 2026 22:42:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:18:04 GMT  
 		Size: 68.9 MB (68863729 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f89a283939e7ac60579190184f05c0b04daabea1cc4047b754d5c84d5d07280a`  
