@@ -197,7 +197,7 @@ CMD ["xwiki"]
 		Size: 2.4 KB (2372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5be65243d1d4b455e0e182f125703675869770e65a4af9b68599d25dec4fd7ac`  
-		Last Modified: Fri, 16 Jan 2026 03:20:11 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:20:35 GMT  
 		Size: 10.7 KB (10730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f6bcb06149dcda0589e51e7d0a08004b6008ec6ffc36729e3165811b1c36ab3b`  
