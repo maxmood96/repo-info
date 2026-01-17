@@ -875,7 +875,7 @@ $ docker pull maven@sha256:b1c5b7368b7de16acda0f4301e1fd5d7a29614ca331c2aa2fe33b
 
 -	Layers:
 	-	`sha256:02a24a37fa80f3c0243b0e638de7ed178d51d9b73ff1b44daa7b9ac2a05f9314`  
-		Last Modified: Fri, 16 Jan 2026 00:29:52 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:24:56 GMT  
 		Size: 5.0 MB (4990158 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a0294d89c743ae31ff4be315ba3cd489b77bdfdf336f7e6bc165d79a4b7d004e`  
