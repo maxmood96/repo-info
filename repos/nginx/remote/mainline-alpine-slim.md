@@ -195,7 +195,7 @@ CMD ["nginx" "-g" "daemon off;"]
 		Size: 405.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:332d783258e756c7e9c61eb09c4fac49822ddd949d640ddc397f2a237500c28b`  
-		Last Modified: Thu, 18 Dec 2025 00:28:37 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:28:43 GMT  
 		Size: 1.2 KB (1210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75d9c74a953e6f737e71b5741b27a9e978febd81074f9dc4ed6a9b8ab0db34ba`  
@@ -317,7 +317,7 @@ $ docker pull nginx@sha256:1dc35e1047c53e05b6b90fc3706b0bd6a42ae7a3e0e41f9ab137a
 
 -	Layers:
 	-	`sha256:f634d788cf4946cd5039020f8a26ba2e0c865d5119940fa9cc6ff7389f60df3a`  
-		Last Modified: Thu, 18 Dec 2025 00:28:06 GMT  
+		Last Modified: Thu, 18 Dec 2025 03:51:46 GMT  
 		Size: 473.4 KB (473418 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6e48171c567150b43349690a1d945434fff688a14b2f27f9c9d3a960181b56ab`  
