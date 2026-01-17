@@ -125,7 +125,7 @@ CMD ["apache2-foreground"]
 
 -	Layers:
 	-	`sha256:119d43eec815e5f9a47da3a7d59454581b1e204b0c34db86f171b7ceb3336533`  
-		Last Modified: Tue, 13 Jan 2026 00:42:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:34 GMT  
 		Size: 29.8 MB (29773685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f13d132b40432b5921ea4a0d8f8e7ba1498cf5d180ee6b838e8784fc68b4f290`  
@@ -237,7 +237,7 @@ $ docker pull wordpress@sha256:e1226d8b37416b76d87ca112088a965c2d095633ddde2eb0f
 
 -	Layers:
 	-	`sha256:2f91c331e251818ed61f70a2a0500cb26b8ae587a15e421549425333b55cd4bc`  
-		Last Modified: Tue, 13 Jan 2026 08:14:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:48:47 GMT  
 		Size: 8.7 MB (8671788 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a2be9e5642eadef7beeab5d089ba9614cbe25a4ce8a0ac79dcb85610d75800bc`  
@@ -649,7 +649,7 @@ CMD ["apache2-foreground"]
 		Size: 18.8 KB (18788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1942c2bcb98414fb7853bdd445835e25ac7152f1544265c5929890bb9271138f`  
-		Last Modified: Tue, 13 Jan 2026 04:24:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:24:20 GMT  
 		Size: 27.0 MB (27024681 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07ca8300caaf268f40d14176bac99d4c87460ea31dfa6f95e81a01a411a37d0e`  
