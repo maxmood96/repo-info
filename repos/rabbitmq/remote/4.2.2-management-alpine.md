@@ -377,7 +377,7 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 
 -	Layers:
 	-	`sha256:fb78f26011a0b45e0ee3135541eee4683a4b98bf30b3d23f0981be37e8794a2a`  
-		Last Modified: Thu, 18 Dec 2025 00:12:29 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:43 GMT  
 		Size: 3.3 MB (3279388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8e51da9badca04fb8841f65315206b188aaee4bad4f8f840fd372f0508dc2b0c`  
@@ -401,7 +401,7 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Size: 193.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d202056d99e0bc6f41585a194a9f7722a40b48975ad8435b99177eb50ba2a2a`  
-		Last Modified: Fri, 16 Jan 2026 21:51:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:51:29 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9872b4f34c2fada214e99ceedd92afb33b99bea9b0adf10fe364210813907127`  
