@@ -149,7 +149,7 @@ CMD ["irssi"]
 		Size: 3.6 MB (3568432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9dcb7ff81309b2e31723eaf47065f1c998586d9e1452ebd80783680e18130d4a`  
-		Last Modified: Thu, 18 Dec 2025 00:27:04 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:27:23 GMT  
 		Size: 10.1 MB (10075319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5403bddc0bbc9930be28ad858bfa3b7906f59e970c1370d9fc6a83f44e6fbe2`  
