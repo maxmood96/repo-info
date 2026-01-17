@@ -99,7 +99,7 @@ CMD ["/opt/couchdb/bin/couchdb"]
 		Size: 377.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54435d0898ce3275b13d988e710467402ab4e9c30caee10184ac59350825be94`  
-		Last Modified: Tue, 13 Jan 2026 02:15:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:15:26 GMT  
 		Size: 1.2 KB (1243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6a47f4532a195230a2d585c3853de7c4e893a2aeb302dc9311e234a440f65db1`  
