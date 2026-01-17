@@ -88,7 +88,7 @@ $ docker pull rust@sha256:aaf3ace94a43bfb61396565bd3d59ea36a58574c777a5e3f5b5a7d
 
 -	Layers:
 	-	`sha256:a967cdd20794631ec088fff1e02ce911275aa4dc2cca117c10d415bc3f76e3a6`  
-		Last Modified: Tue, 13 Jan 2026 07:55:35 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:12:53 GMT  
 		Size: 17.2 MB (17211237 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9a5501212d9cb2e25df4b9e368acfa096dfba0dd754746c135c0d9ff69bf0434`  
@@ -427,7 +427,7 @@ RUN set -eux;         arch="$(dpkg --print-architecture)";     case "$arch" in  
 
 -	Layers:
 	-	`sha256:aaf3ef12aa0c431a6203a456b21b1e30e26cb56dfc257b8bca2efe1ba7c531de`  
-		Last Modified: Tue, 30 Dec 2025 00:51:33 GMT  
+		Last Modified: Tue, 30 Dec 2025 00:51:23 GMT  
 		Size: 47.8 MB (47771153 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc3f7933c6ef71f06a1f0f33145f157cbfe6df70a0a3efc496c514e6bf0f3c52`  
