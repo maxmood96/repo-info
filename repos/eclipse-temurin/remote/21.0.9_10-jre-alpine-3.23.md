@@ -86,7 +86,7 @@ $ docker pull eclipse-temurin@sha256:5a3f2642f4030f0ec9e77c9585646a4183969186881
 
 -	Layers:
 	-	`sha256:57e804fcc5a786ab070e4cc49f94dae2b4ae6f844e7c7025c22d548cba49c4f6`  
-		Last Modified: Fri, 19 Dec 2025 17:29:31 GMT  
+		Last Modified: Fri, 19 Dec 2025 19:14:36 GMT  
 		Size: 905.2 KB (905160 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a81e0de002daea2b8bfdf9d7bc7293a0362b59a86ea69a194502a33bfff11a88`  
@@ -169,10 +169,10 @@ $ docker pull eclipse-temurin@sha256:5cdeb24c80ff5bc1532cba67b0f2ab55addc6899ac1
 
 -	Layers:
 	-	`sha256:2e5811880f4188bf67a301c7e0ea674f1eb916fb0084f674aa19ce5a09296c29`  
-		Last Modified: Fri, 19 Dec 2025 19:14:40 GMT  
+		Last Modified: Fri, 19 Dec 2025 17:29:24 GMT  
 		Size: 903.9 KB (903924 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f25a4dc7f1bb5e655703e6b3828fbe3f904ea542f089ff9c8234bb038a387411`  
-		Last Modified: Fri, 19 Dec 2025 19:14:41 GMT  
+		Last Modified: Fri, 19 Dec 2025 17:29:24 GMT  
 		Size: 19.1 KB (19135 bytes)  
 		MIME: application/vnd.in-toto+json
