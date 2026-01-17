@@ -304,7 +304,7 @@ $ docker pull ghost@sha256:7a98eea3ffbe2c35f46a88431003a5c3db940ab022e7a2ee0c6d6
 		Size: 5.5 MB (5548649 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:55478be482cb1effa9372d7e6889b35472ed21b0a13a62bbadf657d486cf4cf7`  
-		Last Modified: Wed, 14 Jan 2026 22:46:24 GMT  
+		Last Modified: Wed, 14 Jan 2026 18:43:19 GMT  
 		Size: 25.9 KB (25882 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1395,7 +1395,7 @@ $ docker pull ghost@sha256:7a98eea3ffbe2c35f46a88431003a5c3db940ab022e7a2ee0c6d6
 		Size: 5.5 MB (5548649 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:55478be482cb1effa9372d7e6889b35472ed21b0a13a62bbadf657d486cf4cf7`  
-		Last Modified: Wed, 14 Jan 2026 22:46:24 GMT  
+		Last Modified: Wed, 14 Jan 2026 18:43:19 GMT  
 		Size: 25.9 KB (25882 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1932,7 +1932,7 @@ $ docker pull ghost@sha256:7a98eea3ffbe2c35f46a88431003a5c3db940ab022e7a2ee0c6d6
 		Size: 5.5 MB (5548649 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:55478be482cb1effa9372d7e6889b35472ed21b0a13a62bbadf657d486cf4cf7`  
-		Last Modified: Wed, 14 Jan 2026 22:46:24 GMT  
+		Last Modified: Wed, 14 Jan 2026 18:43:19 GMT  
 		Size: 25.9 KB (25882 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3023,7 +3023,7 @@ $ docker pull ghost@sha256:7a98eea3ffbe2c35f46a88431003a5c3db940ab022e7a2ee0c6d6
 		Size: 5.5 MB (5548649 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:55478be482cb1effa9372d7e6889b35472ed21b0a13a62bbadf657d486cf4cf7`  
-		Last Modified: Wed, 14 Jan 2026 22:46:24 GMT  
+		Last Modified: Wed, 14 Jan 2026 18:43:19 GMT  
 		Size: 25.9 KB (25882 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3560,7 +3560,7 @@ $ docker pull ghost@sha256:7a98eea3ffbe2c35f46a88431003a5c3db940ab022e7a2ee0c6d6
 		Size: 5.5 MB (5548649 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:55478be482cb1effa9372d7e6889b35472ed21b0a13a62bbadf657d486cf4cf7`  
-		Last Modified: Wed, 14 Jan 2026 22:46:24 GMT  
+		Last Modified: Wed, 14 Jan 2026 18:43:19 GMT  
 		Size: 25.9 KB (25882 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4651,7 +4651,7 @@ $ docker pull ghost@sha256:7a98eea3ffbe2c35f46a88431003a5c3db940ab022e7a2ee0c6d6
 		Size: 5.5 MB (5548649 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:55478be482cb1effa9372d7e6889b35472ed21b0a13a62bbadf657d486cf4cf7`  
-		Last Modified: Wed, 14 Jan 2026 22:46:24 GMT  
+		Last Modified: Wed, 14 Jan 2026 18:43:19 GMT  
 		Size: 25.9 KB (25882 bytes)  
 		MIME: application/vnd.in-toto+json
 
