@@ -139,7 +139,7 @@ $ docker pull elasticsearch@sha256:ab2210830ccfe04411aea858c47ae8ae0b3dacb9e1f0a
 
 -	Layers:
 	-	`sha256:a8b98cb8971682b716b25524ec20fea3f4ee4a4b930dfc324a22a10b4649b519`  
-		Last Modified: Thu, 15 Jan 2026 22:23:19 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:26:32 GMT  
 		Size: 3.2 MB (3210136 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4d72ff81f2cafdf8acc84318265f241bcf9ce95f7eb02a9b2b268bf4f5baf670`  
@@ -568,7 +568,7 @@ USER 1000:0
 		Size: 271.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fdce219363a9ec7b79cb90fb71fbe48bfedd3a356eff83ad75c95396b9988ec7`  
-		Last Modified: Tue, 13 Jan 2026 19:06:18 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:06:32 GMT  
 		Size: 1.7 KB (1719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01bb0c47193e805c92ab1b4d1243c0212768703043c1972cc20a8fb7cffe19c2`  
