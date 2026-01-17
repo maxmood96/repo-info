@@ -1047,7 +1047,7 @@ $ docker pull drupal@sha256:af784e1b4269602ebfe3862b3915b288c9b94e4c15cec4cde08f
 		Size: 369.9 KB (369866 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8a31e2269b9dc96af07f99f821f78538aea96d3d18affa90ffa57bd832b7a80d`  
-		Last Modified: Sat, 17 Jan 2026 09:04:53 GMT  
+		Last Modified: Sat, 17 Jan 2026 05:20:13 GMT  
 		Size: 32.3 KB (32327 bytes)  
 		MIME: application/vnd.in-toto+json
 
