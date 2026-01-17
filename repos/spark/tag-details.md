@@ -1409,7 +1409,7 @@ $ docker pull spark@sha256:addf68a9151384e7913fc568cdee26c296a52a143e4c13b42b2e4
 		Size: 4.8 MB (4835184 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b79dcd826100976968c375f221ac5d20538176b24205b841aff2d1d4ab381781`  
-		Last Modified: Fri, 16 Jan 2026 03:12:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:10:15 GMT  
 		Size: 23.0 KB (22966 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2729,7 +2729,7 @@ USER spark
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e5f6cf5bb6f0655f20f355729ada63ffbf26a14a8211683f5ebc3c947a76407`  
-		Last Modified: Fri, 16 Jan 2026 02:40:23 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:41:51 GMT  
 		Size: 323.0 MB (323017471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4724,7 +4724,7 @@ $ docker pull spark@sha256:addf68a9151384e7913fc568cdee26c296a52a143e4c13b42b2e4
 		Size: 4.8 MB (4835184 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b79dcd826100976968c375f221ac5d20538176b24205b841aff2d1d4ab381781`  
-		Last Modified: Fri, 16 Jan 2026 03:12:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:10:15 GMT  
 		Size: 23.0 KB (22966 bytes)  
 		MIME: application/vnd.in-toto+json
 
