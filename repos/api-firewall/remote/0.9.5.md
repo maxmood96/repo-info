@@ -65,7 +65,7 @@ CMD ["api-firewall"]
 		Size: 13.6 MB (13595437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fd2870d579b9707e8a5d755ab2611ce17721f376dc9eca37afe464363102ab5`  
-		Last Modified: Fri, 05 Dec 2025 23:53:54 GMT  
+		Last Modified: Fri, 05 Dec 2025 23:54:00 GMT  
 		Size: 349.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -245,7 +245,7 @@ $ docker pull api-firewall@sha256:94f271aedd54a9103b00588100d753fe02628d9f36b59c
 
 -	Layers:
 	-	`sha256:949ae2f84747f90e8adf90e8cec07f416f6df5308e1bf6ce85ec5c2c62c4715f`  
-		Last Modified: Sat, 06 Dec 2025 00:44:37 GMT  
+		Last Modified: Fri, 05 Dec 2025 23:50:57 GMT  
 		Size: 167.0 KB (166974 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:826606af6c5948f2de8ca3484e525fdda9788a6b1a000be767820b8410970f9a`  
