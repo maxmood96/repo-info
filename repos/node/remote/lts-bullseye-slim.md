@@ -83,7 +83,7 @@ $ docker pull node@sha256:70ba9f54a112fe28e5a7ed510a1f4699ab12111da3d342976acd85
 
 -	Layers:
 	-	`sha256:f65952ff6a30056d8d8d30babef6bf5a072ec9f31bba5b7ee2a9262d25810cb2`  
-		Last Modified: Wed, 14 Jan 2026 17:58:27 GMT  
+		Last Modified: Wed, 14 Jan 2026 19:44:11 GMT  
 		Size: 3.0 MB (2956798 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:09ab7b95c2651afef85942bc7efa30a1ce8a4385dbd9bd0b3cbdb475d5478292`  
