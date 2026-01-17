@@ -427,7 +427,7 @@ CMD ["telegraf"]
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb651d889db2dee7911408fa57f1d7539c6e6d834e35cef0953d16bae75bf92b`  
-		Last Modified: Mon, 08 Dec 2025 11:40:45 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:09:56 GMT  
 		Size: 279.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d79a0d11e911af062cf834a3903c2474ae8e732b43633aba958f2e6ad1016b9`  
@@ -877,7 +877,7 @@ CMD ["telegraf"]
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb651d889db2dee7911408fa57f1d7539c6e6d834e35cef0953d16bae75bf92b`  
-		Last Modified: Mon, 08 Dec 2025 11:40:45 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:09:56 GMT  
 		Size: 279.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d79a0d11e911af062cf834a3903c2474ae8e732b43633aba958f2e6ad1016b9`  
@@ -1154,7 +1154,7 @@ CMD ["telegraf"]
 		Size: 18.9 MB (18885794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:843e0b344a4e5351f09818b295ac69324493def6f22025377d20e3c48ece0ead`  
-		Last Modified: Tue, 13 Jan 2026 04:16:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:16:29 GMT  
 		Size: 5.1 KB (5056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9bc471d4d4e54147d425df5f41fce09a21689fa62c1d37e05acdb637857f8b6`  
@@ -1604,7 +1604,7 @@ CMD ["telegraf"]
 		Size: 18.9 MB (18885794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:843e0b344a4e5351f09818b295ac69324493def6f22025377d20e3c48ece0ead`  
-		Last Modified: Tue, 13 Jan 2026 04:16:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:16:29 GMT  
 		Size: 5.1 KB (5056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9bc471d4d4e54147d425df5f41fce09a21689fa62c1d37e05acdb637857f8b6`  
