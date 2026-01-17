@@ -65,7 +65,7 @@ CMD ["api-firewall"]
 		Size: 13.6 MB (13595437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fd2870d579b9707e8a5d755ab2611ce17721f376dc9eca37afe464363102ab5`  
-		Last Modified: Fri, 05 Dec 2025 23:54:00 GMT  
+		Last Modified: Fri, 05 Dec 2025 23:53:54 GMT  
 		Size: 349.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
