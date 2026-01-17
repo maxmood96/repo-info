@@ -113,7 +113,7 @@ $ docker pull memcached@sha256:cfdf2ea6bf2a04bb7ee1568efe0c8bd38a1f5e644250a9409
 		Size: 94.9 KB (94873 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3b73cd5efe31baa1fbf0eecea269426edcfc795cbb9b5dd74b523ff51b6f7c9f`  
-		Last Modified: Thu, 18 Dec 2025 01:34:48 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:32:12 GMT  
 		Size: 20.5 KB (20531 bytes)  
 		MIME: application/vnd.in-toto+json
 
