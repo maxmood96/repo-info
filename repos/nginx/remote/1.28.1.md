@@ -725,7 +725,7 @@ CMD ["nginx" "-g" "daemon off;"]
 		Size: 626.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cef7b22886cbd8e4968cdb8b844267ba1c74b9b61bec169ebf2abf94f5012d48`  
-		Last Modified: Wed, 14 Jan 2026 12:08:42 GMT  
+		Last Modified: Wed, 14 Jan 2026 12:09:00 GMT  
 		Size: 960.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a574f83e7ea0d4d84c88eb9a268f6fab278888413bfb9cb2836b2982903fe6a8`  
