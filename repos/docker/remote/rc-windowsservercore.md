@@ -84,7 +84,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4bb5de6c98dc4ee780397d28944aa0a584852808492a3242eac26d282fcba4ed`  
-		Last Modified: Tue, 13 Jan 2026 22:55:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:51:59 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:572ac06ad8dd62a63f33a42d6020650eab95b67289765fb3ff6c941bae832152`  
