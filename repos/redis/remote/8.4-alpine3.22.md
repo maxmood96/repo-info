@@ -505,7 +505,7 @@ $ docker pull redis@sha256:0a787c5e4787b76942bd9e808f4e82a46999c8c9856e72372b0a5
 		Size: 468.9 KB (468887 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9355a6510242be37286ab24f78baf9e5d544a735032690b29481ca09749dacb5`  
-		Last Modified: Tue, 18 Nov 2025 23:06:25 GMT  
+		Last Modified: Tue, 18 Nov 2025 20:03:31 GMT  
 		Size: 32.3 KB (32260 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -767,7 +767,7 @@ CMD ["redis-server"]
 		Size: 15.3 MB (15348981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d80272f954b59c3c750ef0cd6ad88d7a3f7133bfd896fe9f91a141e549962125`  
-		Last Modified: Tue, 18 Nov 2025 20:00:33 GMT  
+		Last Modified: Tue, 18 Nov 2025 20:00:53 GMT  
 		Size: 100.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
