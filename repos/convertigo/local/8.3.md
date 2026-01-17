@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9db4a714936554064bf8140b7fe7775014535670ef48aa6c4a6044e89edd6f34`
-- Created: `2026-01-13T19:17:13.163865955Z`
-- Virtual Size: ~ 623.20 Mb  
+- Image ID: `sha256:5b89b668ef5d1c6aefd8a77f79e476afa764e3e0ebf66b7c96dcdd1810ca2c1b`
+- Created: `2026-01-16T02:40:47.712113713Z`
+- Virtual Size: ~ 618.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -214,16 +214,16 @@ $ apt-get source -qq --print-uris bash=5.1-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.debian.tar.xz' bash_5.1-6ubuntu1.1.debian.tar.xz 99944 SHA512:d7fb6110df70232bd3280c1140a812a1903968792f6608481c184bd28760d03323ada75ed3ca4da4eb6c56a84781d6e2f441e0ee83dd9364a9e37fd0fa2211e9
 ```
 
-### `dpkg` source package: `binutils=2.38-4ubuntu2.10`
+### `dpkg` source package: `binutils=2.38-4ubuntu2.12`
 
 Binary Packages:
 
-- `binutils=2.38-4ubuntu2.10`
-- `binutils-common:amd64=2.38-4ubuntu2.10`
-- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.10`
-- `libbinutils:amd64=2.38-4ubuntu2.10`
-- `libctf-nobfd0:amd64=2.38-4ubuntu2.10`
-- `libctf0:amd64=2.38-4ubuntu2.10`
+- `binutils=2.38-4ubuntu2.12`
+- `binutils-common:amd64=2.38-4ubuntu2.12`
+- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.12`
+- `libbinutils:amd64=2.38-4ubuntu2.12`
+- `libctf-nobfd0:amd64=2.38-4ubuntu2.12`
+- `libctf0:amd64=2.38-4ubuntu2.12`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
 
@@ -231,9 +231,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.12
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.12.dsc' binutils_2.38-4ubuntu2.12.dsc 8865 SHA512:06762ac6f41bc85e93d660228b769563a44b5fbf6b9e4b8aec9b4e2246fb30554953c5605dcb93ad3c1d2da99af060036a6ae3459f21de3fa4e0308e9ab8d7dc
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.12.debian.tar.xz' binutils_2.38-4ubuntu2.12.debian.tar.xz 333584 SHA512:5af64c9f54e69c49a0dd7b7fb4f7b720b7a456cecccb6077638d88eeb5541feef036de3c35194e1391220540267ea82471b3ef24db40cc559123abec654c2055
+```
 
 ### `dpkg` source package: `brotli=1.0.9-2build6`
 
