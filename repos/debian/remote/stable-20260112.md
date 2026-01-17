@@ -191,7 +191,7 @@ $ docker pull debian@sha256:f6e8e765e7464b42b6f8f72d2e7074f533e0fba35dc860910ec3
 
 -	Layers:
 	-	`sha256:c8b47445f66f499b83a15a8cad2e757d9d2db7c3a50178fdbccd11538d255cec`  
-		Last Modified: Tue, 13 Jan 2026 01:29:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:24 GMT  
 		Size: 3.2 MB (3171801 bytes)  
 		MIME: application/vnd.in-toto+json
 
