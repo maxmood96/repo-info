@@ -343,7 +343,7 @@ CMD ["apache2-foreground"]
 		Size: 427.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:41b2cc923027495eafc6e0441049d7492d85e544e17fb3fa8635576a8e25cc43`  
-		Last Modified: Thu, 15 Jan 2026 22:23:56 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:24:05 GMT  
 		Size: 480.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fecbf2c2691ee20974a2c81b40002d94cd64eca5a71253c8e4b1c3d5f743920f`  
@@ -517,7 +517,7 @@ CMD ["apache2-foreground"]
 
 -	Layers:
 	-	`sha256:7c33f0ee8e5c8636ae24c5685841e42e721bbb2973888f046a05ab9eb619e682`  
-		Last Modified: Tue, 13 Jan 2026 00:42:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:23 GMT  
 		Size: 26.2 MB (26208578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9207400e53022df31880017c1a8f731df0390def802aa1e78624b9af0fe31008`  
@@ -989,7 +989,7 @@ CMD ["apache2-foreground"]
 		Size: 342.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:69126bc1a0e3d41b361440ce5c09661ec775afdf41b677c8cf25714458d3bfac`  
-		Last Modified: Thu, 15 Jan 2026 23:24:59 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:24:54 GMT  
 		Size: 824.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1321,7 +1321,7 @@ CMD ["apache2-foreground"]
 		Size: 146.6 MB (146578538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4346525b0d45631b779c99bb99caa2632c2822ec686a160c5f4d23f9cfac4217`  
-		Last Modified: Tue, 30 Dec 2025 09:21:36 GMT  
+		Last Modified: Tue, 30 Dec 2025 09:22:12 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4bca231363c25a411c4c33686ab17aa12a7dd8276276a14a5eb068e3328f54ed`  
@@ -1405,7 +1405,7 @@ $ docker pull matomo@sha256:28bec09f35a3219542d03de54544a05559d9156c9093b916b2b2
 
 -	Layers:
 	-	`sha256:59db416f4747aa59b7e8e7ead8dbf3cfe28402d83ae3829dda7505fb243ac91b`  
-		Last Modified: Thu, 01 Jan 2026 19:11:34 GMT  
+		Last Modified: Thu, 01 Jan 2026 18:45:49 GMT  
 		Size: 37.5 KB (37542 bytes)  
 		MIME: application/vnd.in-toto+json
 
