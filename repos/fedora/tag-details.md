@@ -304,7 +304,7 @@ $ docker pull fedora@sha256:7eacccf9956a59b49e839d8c7ffb58da2731a262c5f21c667d97
 		Size: 3.1 MB (3099385 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cc09085dc1e0273c50087bc6cd45deebc9f978e42843ca10e444fc20d6ee7a61`  
-		Last Modified: Thu, 04 Dec 2025 20:06:47 GMT  
+		Last Modified: Thu, 04 Dec 2025 17:54:35 GMT  
 		Size: 4.9 KB (4945 bytes)  
 		MIME: application/vnd.in-toto+json
 
