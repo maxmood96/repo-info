@@ -295,7 +295,7 @@ $ docker pull busybox@sha256:1459163c7db2efa32673c19e90be911fd33d569e3821a30f0f8
 
 -	Layers:
 	-	`sha256:bbdc312cb396583fa678cba8b02a74a1b2c6fe70e165855ab23f956cfff5fba6`  
-		Last Modified: Tue, 28 Oct 2025 20:34:16 GMT  
+		Last Modified: Sun, 28 Dec 2025 00:54:43 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -664,7 +664,7 @@ $ docker pull busybox@sha256:1459163c7db2efa32673c19e90be911fd33d569e3821a30f0f8
 
 -	Layers:
 	-	`sha256:bbdc312cb396583fa678cba8b02a74a1b2c6fe70e165855ab23f956cfff5fba6`  
-		Last Modified: Tue, 28 Oct 2025 20:34:16 GMT  
+		Last Modified: Sun, 28 Dec 2025 00:54:43 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4462,7 +4462,7 @@ $ docker pull busybox@sha256:1459163c7db2efa32673c19e90be911fd33d569e3821a30f0f8
 
 -	Layers:
 	-	`sha256:bbdc312cb396583fa678cba8b02a74a1b2c6fe70e165855ab23f956cfff5fba6`  
-		Last Modified: Tue, 28 Oct 2025 20:34:16 GMT  
+		Last Modified: Sun, 28 Dec 2025 00:54:43 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4831,7 +4831,7 @@ $ docker pull busybox@sha256:1459163c7db2efa32673c19e90be911fd33d569e3821a30f0f8
 
 -	Layers:
 	-	`sha256:bbdc312cb396583fa678cba8b02a74a1b2c6fe70e165855ab23f956cfff5fba6`  
-		Last Modified: Tue, 28 Oct 2025 20:34:16 GMT  
+		Last Modified: Sun, 28 Dec 2025 00:54:43 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5851,7 +5851,7 @@ $ docker pull busybox@sha256:1459163c7db2efa32673c19e90be911fd33d569e3821a30f0f8
 
 -	Layers:
 	-	`sha256:bbdc312cb396583fa678cba8b02a74a1b2c6fe70e165855ab23f956cfff5fba6`  
-		Last Modified: Tue, 28 Oct 2025 20:34:16 GMT  
+		Last Modified: Sun, 28 Dec 2025 00:54:43 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6220,7 +6220,7 @@ $ docker pull busybox@sha256:1459163c7db2efa32673c19e90be911fd33d569e3821a30f0f8
 
 -	Layers:
 	-	`sha256:bbdc312cb396583fa678cba8b02a74a1b2c6fe70e165855ab23f956cfff5fba6`  
-		Last Modified: Tue, 28 Oct 2025 20:34:16 GMT  
+		Last Modified: Sun, 28 Dec 2025 00:54:43 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7216,7 +7216,7 @@ $ docker pull busybox@sha256:1459163c7db2efa32673c19e90be911fd33d569e3821a30f0f8
 
 -	Layers:
 	-	`sha256:bbdc312cb396583fa678cba8b02a74a1b2c6fe70e165855ab23f956cfff5fba6`  
-		Last Modified: Tue, 28 Oct 2025 20:34:16 GMT  
+		Last Modified: Sun, 28 Dec 2025 00:54:43 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7609,7 +7609,7 @@ $ docker pull busybox@sha256:1459163c7db2efa32673c19e90be911fd33d569e3821a30f0f8
 
 -	Layers:
 	-	`sha256:bbdc312cb396583fa678cba8b02a74a1b2c6fe70e165855ab23f956cfff5fba6`  
-		Last Modified: Tue, 28 Oct 2025 20:34:16 GMT  
+		Last Modified: Sun, 28 Dec 2025 00:54:43 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10018,7 +10018,7 @@ $ docker pull busybox@sha256:1459163c7db2efa32673c19e90be911fd33d569e3821a30f0f8
 
 -	Layers:
 	-	`sha256:bbdc312cb396583fa678cba8b02a74a1b2c6fe70e165855ab23f956cfff5fba6`  
-		Last Modified: Tue, 28 Oct 2025 20:34:16 GMT  
+		Last Modified: Sun, 28 Dec 2025 00:54:43 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10387,7 +10387,7 @@ $ docker pull busybox@sha256:1459163c7db2efa32673c19e90be911fd33d569e3821a30f0f8
 
 -	Layers:
 	-	`sha256:bbdc312cb396583fa678cba8b02a74a1b2c6fe70e165855ab23f956cfff5fba6`  
-		Last Modified: Tue, 28 Oct 2025 20:34:16 GMT  
+		Last Modified: Sun, 28 Dec 2025 00:54:43 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
