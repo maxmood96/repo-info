@@ -4210,7 +4210,7 @@ $ docker pull varnish@sha256:d235a8dea96bb618c6956847a875d3ec09d38e6b6dbfe78886a
 
 -	Layers:
 	-	`sha256:a1f4ba7bc4ce9fc762509238927ac3a080c276a64503078803b34ed5483d00f8`  
-		Last Modified: Thu, 11 Dec 2025 22:20:55 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:48:15 GMT  
 		Size: 19.3 KB (19308 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5440,7 +5440,7 @@ $ docker pull varnish@sha256:d235a8dea96bb618c6956847a875d3ec09d38e6b6dbfe78886a
 
 -	Layers:
 	-	`sha256:a1f4ba7bc4ce9fc762509238927ac3a080c276a64503078803b34ed5483d00f8`  
-		Last Modified: Thu, 11 Dec 2025 22:20:55 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:48:15 GMT  
 		Size: 19.3 KB (19308 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6670,7 +6670,7 @@ $ docker pull varnish@sha256:d235a8dea96bb618c6956847a875d3ec09d38e6b6dbfe78886a
 
 -	Layers:
 	-	`sha256:a1f4ba7bc4ce9fc762509238927ac3a080c276a64503078803b34ed5483d00f8`  
-		Last Modified: Thu, 11 Dec 2025 22:20:55 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:48:15 GMT  
 		Size: 19.3 KB (19308 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7291,7 +7291,7 @@ $ docker pull varnish@sha256:d235a8dea96bb618c6956847a875d3ec09d38e6b6dbfe78886a
 
 -	Layers:
 	-	`sha256:a1f4ba7bc4ce9fc762509238927ac3a080c276a64503078803b34ed5483d00f8`  
-		Last Modified: Thu, 11 Dec 2025 22:20:55 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:48:15 GMT  
 		Size: 19.3 KB (19308 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8521,7 +8521,7 @@ $ docker pull varnish@sha256:d235a8dea96bb618c6956847a875d3ec09d38e6b6dbfe78886a
 
 -	Layers:
 	-	`sha256:a1f4ba7bc4ce9fc762509238927ac3a080c276a64503078803b34ed5483d00f8`  
-		Last Modified: Thu, 11 Dec 2025 22:20:55 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:48:15 GMT  
 		Size: 19.3 KB (19308 bytes)  
 		MIME: application/vnd.in-toto+json
 
