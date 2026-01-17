@@ -277,11 +277,11 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 
 -	Layers:
 	-	`sha256:8dc6edd0e713b64ebd7f5a4fb903e2ab2bc713a37543e118356f779bec06e387`  
-		Last Modified: Tue, 06 Jan 2026 17:09:30 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:44:33 GMT  
 		Size: 38.8 MB (38811703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a2a9a9613d4b4de22dc7933a7a061b9dc4f14dce73e75f090032381eac28b4f`  
-		Last Modified: Thu, 15 Jan 2026 22:09:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:09:34 GMT  
 		Size: 21.9 MB (21931701 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c8cd4f3b0a52ec5238fb2f82df00b265971511e09a4dbfa4c444765523ac69e9`  
