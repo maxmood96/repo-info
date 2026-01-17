@@ -1119,7 +1119,7 @@ $ docker pull joomla@sha256:3a40457538403d0d5c9610a90ceb5702101400abd0a18857a611
 
 -	Layers:
 	-	`sha256:cd7ab4e6b2945f081d1f39127c34abef9f6faf1246f8a115de668936b627d7bd`  
-		Last Modified: Tue, 13 Jan 2026 03:27:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:47:50 GMT  
 		Size: 61.3 KB (61283 bytes)  
 		MIME: application/vnd.in-toto+json
 
