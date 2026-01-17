@@ -837,7 +837,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:604c946e03558d5b63598812078583a7cacf7c19412e2c71732c6c7e972a09e0`  
-		Last Modified: Sat, 08 Nov 2025 17:59:31 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:56:52 GMT  
 		Size: 21.1 MB (21112184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34da1dc78644035d0dc76bd344bb33911551088d2c35e5eae20ee0883291ece`  
@@ -2468,7 +2468,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:604c946e03558d5b63598812078583a7cacf7c19412e2c71732c6c7e972a09e0`  
-		Last Modified: Sat, 08 Nov 2025 17:59:31 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:56:52 GMT  
 		Size: 21.1 MB (21112184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34da1dc78644035d0dc76bd344bb33911551088d2c35e5eae20ee0883291ece`  
@@ -6431,7 +6431,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2da2b7fa39d9ca89504884bfa364de57e68f656d1fd46f04941d3d34ffdbca30`  
-		Last Modified: Wed, 07 Jan 2026 18:56:12 GMT  
+		Last Modified: Sat, 08 Nov 2025 17:58:32 GMT  
 		Size: 21.1 MB (21112255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ecc9308f1b3f4d73b7c1a1aaba0b8eda9e9155caf3619e236d0c1a8b410704ef`  
@@ -8078,7 +8078,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:604c946e03558d5b63598812078583a7cacf7c19412e2c71732c6c7e972a09e0`  
-		Last Modified: Sat, 08 Nov 2025 17:59:31 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:56:52 GMT  
 		Size: 21.1 MB (21112184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34da1dc78644035d0dc76bd344bb33911551088d2c35e5eae20ee0883291ece`  
@@ -10398,7 +10398,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:604c946e03558d5b63598812078583a7cacf7c19412e2c71732c6c7e972a09e0`  
-		Last Modified: Sat, 08 Nov 2025 17:59:31 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:56:52 GMT  
 		Size: 21.1 MB (21112184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34da1dc78644035d0dc76bd344bb33911551088d2c35e5eae20ee0883291ece`  
@@ -12029,7 +12029,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:604c946e03558d5b63598812078583a7cacf7c19412e2c71732c6c7e972a09e0`  
-		Last Modified: Sat, 08 Nov 2025 17:59:31 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:56:52 GMT  
 		Size: 21.1 MB (21112184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34da1dc78644035d0dc76bd344bb33911551088d2c35e5eae20ee0883291ece`  
@@ -15992,7 +15992,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2da2b7fa39d9ca89504884bfa364de57e68f656d1fd46f04941d3d34ffdbca30`  
-		Last Modified: Wed, 07 Jan 2026 18:56:12 GMT  
+		Last Modified: Sat, 08 Nov 2025 17:58:32 GMT  
 		Size: 21.1 MB (21112255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ecc9308f1b3f4d73b7c1a1aaba0b8eda9e9155caf3619e236d0c1a8b410704ef`  
@@ -17639,7 +17639,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:604c946e03558d5b63598812078583a7cacf7c19412e2c71732c6c7e972a09e0`  
-		Last Modified: Sat, 08 Nov 2025 17:59:31 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:56:52 GMT  
 		Size: 21.1 MB (21112184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34da1dc78644035d0dc76bd344bb33911551088d2c35e5eae20ee0883291ece`  
@@ -19959,7 +19959,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:604c946e03558d5b63598812078583a7cacf7c19412e2c71732c6c7e972a09e0`  
-		Last Modified: Sat, 08 Nov 2025 17:59:31 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:56:52 GMT  
 		Size: 21.1 MB (21112184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34da1dc78644035d0dc76bd344bb33911551088d2c35e5eae20ee0883291ece`  
@@ -21590,7 +21590,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:604c946e03558d5b63598812078583a7cacf7c19412e2c71732c6c7e972a09e0`  
-		Last Modified: Sat, 08 Nov 2025 17:59:31 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:56:52 GMT  
 		Size: 21.1 MB (21112184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34da1dc78644035d0dc76bd344bb33911551088d2c35e5eae20ee0883291ece`  
@@ -25553,7 +25553,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2da2b7fa39d9ca89504884bfa364de57e68f656d1fd46f04941d3d34ffdbca30`  
-		Last Modified: Wed, 07 Jan 2026 18:56:12 GMT  
+		Last Modified: Sat, 08 Nov 2025 17:58:32 GMT  
 		Size: 21.1 MB (21112255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ecc9308f1b3f4d73b7c1a1aaba0b8eda9e9155caf3619e236d0c1a8b410704ef`  
@@ -27200,7 +27200,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:604c946e03558d5b63598812078583a7cacf7c19412e2c71732c6c7e972a09e0`  
-		Last Modified: Sat, 08 Nov 2025 17:59:31 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:56:52 GMT  
 		Size: 21.1 MB (21112184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34da1dc78644035d0dc76bd344bb33911551088d2c35e5eae20ee0883291ece`  
@@ -28831,7 +28831,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:604c946e03558d5b63598812078583a7cacf7c19412e2c71732c6c7e972a09e0`  
-		Last Modified: Sat, 08 Nov 2025 17:59:31 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:56:52 GMT  
 		Size: 21.1 MB (21112184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34da1dc78644035d0dc76bd344bb33911551088d2c35e5eae20ee0883291ece`  
@@ -30462,7 +30462,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:604c946e03558d5b63598812078583a7cacf7c19412e2c71732c6c7e972a09e0`  
-		Last Modified: Sat, 08 Nov 2025 17:59:31 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:56:52 GMT  
 		Size: 21.1 MB (21112184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34da1dc78644035d0dc76bd344bb33911551088d2c35e5eae20ee0883291ece`  
@@ -34425,7 +34425,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2da2b7fa39d9ca89504884bfa364de57e68f656d1fd46f04941d3d34ffdbca30`  
-		Last Modified: Wed, 07 Jan 2026 18:56:12 GMT  
+		Last Modified: Sat, 08 Nov 2025 17:58:32 GMT  
 		Size: 21.1 MB (21112255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ecc9308f1b3f4d73b7c1a1aaba0b8eda9e9155caf3619e236d0c1a8b410704ef`  
@@ -36072,7 +36072,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:604c946e03558d5b63598812078583a7cacf7c19412e2c71732c6c7e972a09e0`  
-		Last Modified: Sat, 08 Nov 2025 17:59:31 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:56:52 GMT  
 		Size: 21.1 MB (21112184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34da1dc78644035d0dc76bd344bb33911551088d2c35e5eae20ee0883291ece`  
