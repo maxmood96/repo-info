@@ -331,7 +331,7 @@ $ docker pull php@sha256:c73dd74f790ce94e7c887fe4580f0b8e0afa11355b2ac8aaa12825a
 		Size: 6.7 MB (6740983 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e0ff8e15cb36b2cf16a0b8f1a0306cf5973f8627e2979f53a20e89ea83e87b55`  
-		Last Modified: Fri, 16 Jan 2026 23:29:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:57:34 GMT  
 		Size: 58.8 KB (58804 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -923,7 +923,7 @@ CMD ["apache2-foreground"]
 		Size: 2.5 KB (2461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94bcc605bb610e98cc1af6bd181abd90df8d269234fe7e2744fc44e189bc0ddd`  
-		Last Modified: Fri, 16 Jan 2026 23:52:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:52:10 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eeb6cc0a3ed50004001fd33b762ae0e24c099b0bbafc99d026e23d424ed090b2`  
