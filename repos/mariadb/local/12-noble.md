@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f90bc2981a9328d1cf99f733a5c355a5cc869d78f10eea1932cf99d80328ff86`
-- Created: `2025-11-21T01:11:31.830429939Z`
+- Image ID: `sha256:85aad53d41c7394a7da209be7b4020a4bc6bec8fdcebdf099bbcbf1dccf9f0c2`
+- Created: `2026-01-15T22:32:16.185626038Z`
 - Virtual Size: ~ 335.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -681,13 +681,13 @@ $ apt-get source -qq --print-uris gmp=2:6.3.0+dfsg-2ubuntu6.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg-2ubuntu6.1.debian.tar.xz' gmp_6.3.0+dfsg-2ubuntu6.1.debian.tar.xz 38908 SHA512:6c64c2cacd9736f7bd88fe6364a2f6f7281d0f3031b602d3dbfed8b9035bc2f024462498dda0efdec4d3a411d15a80c6c8fa3283c149d3d0fb2f77665c470880
 ```
 
-### `dpkg` source package: `gnupg2=2.4.4-2ubuntu17.3`
+### `dpkg` source package: `gnupg2=2.4.4-2ubuntu17.4`
 
 Binary Packages:
 
-- `gpg=2.4.4-2ubuntu17.3`
-- `gpgconf=2.4.4-2ubuntu17.3`
-- `gpgv=2.4.4-2ubuntu17.3`
+- `gpg=2.4.4-2ubuntu17.4`
+- `gpgconf=2.4.4-2ubuntu17.4`
+- `gpgv=2.4.4-2ubuntu17.4`
 
 Licenses: (parsed from: `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -706,9 +706,15 @@ Licenses: (parsed from: `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpgconf/
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg2=2.4.4-2ubuntu17.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.4.dsc' gnupg2_2.4.4-2ubuntu17.4.dsc 3984 SHA512:a6a2f49070db5db2bb85b7fd916728ed4e24e21e2746b2386b27f5573c13f9c2d9d55deabeac1fd9c0ce977d66706157a31e1ed386d663d1962176d3c0df74de
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2' gnupg2_2.4.4.orig.tar.bz2 7886036 SHA512:3d1a3b08d1ce2319d238d8be96591e418ede1dc0b4ede33a4cc2fe40e9c56d5bbc27b1984736d8a786e7f292ddbc836846a8bdb4bf89f064e953c37cb54b94ef
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc' gnupg2_2.4.4.orig.tar.bz2.asc 386 SHA512:abb44c8bfa59e589bdcd660f1d1a2e268bade8729d95b34263e3d3b5388d1d2276420313989777938f17f97739c554808f97a63257ca0f53d2122a346d70ec85
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.4.debian.tar.xz' gnupg2_2.4.4-2ubuntu17.4.debian.tar.xz 97376 SHA512:61b874e2aa964df31649d1344281b7f99f1bde0b414719f1ff525f2e631729480d0eabf3c3e94643178a6674b3816e40ea92658e84ace8474351ef35620a464b
+```
 
 ### `dpkg` source package: `gnutls28=3.8.3-1.1ubuntu3.4`
 
@@ -1436,11 +1442,11 @@ $ apt-get source -qq --print-uris libsigsegv=2.14-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsigsegv/libsigsegv_2.14-1ubuntu2.debian.tar.xz' libsigsegv_2.14-1ubuntu2.debian.tar.xz 9924 SHA512:959eff3d9a503772756a8e14bb592ef501478bc85538cd6bd1ea0c062ef94b9ac738d79af89cb900b380d1300ac2a4fd5a9261cdd11eac1b9945b6f3f5fe6d7b
 ```
 
-### `dpkg` source package: `libtasn1-6=4.19.0-3ubuntu0.24.04.1`
+### `dpkg` source package: `libtasn1-6=4.19.0-3ubuntu0.24.04.2`
 
 Binary Packages:
 
-- `libtasn1-6:amd64=4.19.0-3ubuntu0.24.04.1`
+- `libtasn1-6:amd64=4.19.0-3ubuntu0.24.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
@@ -1449,9 +1455,15 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libtasn1-6=4.19.0-3ubuntu0.24.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3ubuntu0.24.04.2.dsc' libtasn1-6_4.19.0-3ubuntu0.24.04.2.dsc 2801 SHA512:1f6d7b3a05b8f9b804d00fe726dbcd0ae0ed60d38483cecb45c8ddc6607a7cf11e1f7ea8e1001afc56b5c74be98893f063aa2dfd203df3f4c25fe211ca229692
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz' libtasn1-6_4.19.0.orig.tar.gz 1786576 SHA512:287f5eddfb5e21762d9f14d11997e56b953b980b2b03a97ed4cd6d37909bda1ed7d2cdff9da5d270a21d863ab7e54be6b85c05f1075ac5d8f0198997cf335ef4
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz.asc' libtasn1-6_4.19.0.orig.tar.gz.asc 228 SHA512:e0417625f8df22c6421914bf2d4f19d7f27260c24c04f50e59669681f326debe06ddef9dc5a2e20fda50feb30bbbf3f41597e64961257304ec2c407aa76d107e
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3ubuntu0.24.04.2.debian.tar.xz' libtasn1-6_4.19.0-3ubuntu0.24.04.2.debian.tar.xz 25112 SHA512:b64b55ad6138f12b1191039c1db36cba1b6add98bab5c399b338517284b4091ede2ce7a2e71f46f97c50584fb670bc2dd295caab108973aed0552353c1cb3158
+```
 
 ### `dpkg` source package: `libtirpc=1.3.4+ds-1.1build1`
 
@@ -2172,12 +2184,12 @@ $ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.5
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.5.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.5.debian.tar.xz 35260 SHA512:a031e8f6aeefbb9ea45439a24dc82f9e74b12c3e92b6444057648cc07187c00a0ca6cf32a6c51c0e50787f41d525c687cc3dad7492b46d785fa1088b04d10ea1
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.11`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.12`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.11`
-- `libudev1:amd64=255.4-1ubuntu8.11`
+- `libsystemd0:amd64=255.4-1ubuntu8.12`
+- `libudev1:amd64=255.4-1ubuntu8.12`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2190,9 +2202,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.12
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.12.dsc' systemd_255.4-1ubuntu8.12.dsc 7324 SHA512:ff1c3392b079861cdfdb41e0624166d6a7e0459b7e2a7ce13fdc0814c5d593e3ceba6c73e53c6ab617fb455d8fe07904c55c0081a1d94d1e40e3c3b3667eb321
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.12.debian.tar.xz' systemd_255.4-1ubuntu8.12.debian.tar.xz 257724 SHA512:0394efde0f11cee00b37b232373e400ef1a3cae666fbbab6c732fe4de241ef32b588619bdfd1101be9752370d16958505ea42c8ac5681d1448c780faa0233227
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
@@ -2325,17 +2342,17 @@ $ apt-get source -qq --print-uris unminimize=0.2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/u/unminimize/unminimize_0.2.1.tar.xz' unminimize_0.2.1.tar.xz 9400 SHA512:692ed9d0bb2d42ab5c74ef0f4c86d8f5922e4d1ee9d8efa8a03490437aff35c13b0114f7a62aa5464e95d4014db2745605a83fe7d9bfc81977de8ad56e3e901e
 ```
 
-### `dpkg` source package: `util-linux=2.39.3-9ubuntu6.3`
+### `dpkg` source package: `util-linux=2.39.3-9ubuntu6.4`
 
 Binary Packages:
 
-- `bsdutils=1:2.39.3-9ubuntu6.3`
-- `libblkid1:amd64=2.39.3-9ubuntu6.3`
-- `libmount1:amd64=2.39.3-9ubuntu6.3`
-- `libsmartcols1:amd64=2.39.3-9ubuntu6.3`
-- `libuuid1:amd64=2.39.3-9ubuntu6.3`
-- `mount=2.39.3-9ubuntu6.3`
-- `util-linux=2.39.3-9ubuntu6.3`
+- `bsdutils=1:2.39.3-9ubuntu6.4`
+- `libblkid1:amd64=2.39.3-9ubuntu6.4`
+- `libmount1:amd64=2.39.3-9ubuntu6.4`
+- `libsmartcols1:amd64=2.39.3-9ubuntu6.4`
+- `libuuid1:amd64=2.39.3-9ubuntu6.4`
+- `mount=2.39.3-9ubuntu6.4`
+- `util-linux=2.39.3-9ubuntu6.4`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2356,9 +2373,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.39.3-9ubuntu6.4
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.4.dsc' util-linux_2.39.3-9ubuntu6.4.dsc 4755 SHA512:600d87df4b7d5484d1313e12d57f5691266becd893b4818ef7da4471939138d67d0e8aad624c61ba36afa351b764dfadfdff60eb26d8005721e530b9ad342f2d
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA512:a2de1672f06ca5d2d431db1265a8499808770c3781019ec4a3a40170df4685826d8e3ca120841dcc5df4681ca8c935a993317bd0dc70465b21bf8e0efef65afa
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.4.debian.tar.xz' util-linux_2.39.3-9ubuntu6.4.debian.tar.xz 146780 SHA512:3a86146601d3d0a1b39fc6bc899d570cc11f65e214ab3e33f1286c7a8ffdaaef9537ea946f6618571eb32f7bc207087ac55f82bfc5fbdec3e63d7d3c21023ead
+```
 
 ### `dpkg` source package: `xxhash=0.8.2-2build1`
 
