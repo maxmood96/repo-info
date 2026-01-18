@@ -220,7 +220,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1851,7 +1851,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3482,7 +3482,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5946,7 +5946,7 @@ $ docker pull groovy@sha256:bb66c9e0a9e2aa4d51f7fe7d22cbe95cab98205e9b0ab5d8ce5c
 
 -	Layers:
 	-	`sha256:1920fb9aeed93aded7f0d8490c0b022f200e2f9895731d555c4eaf3de6e64c23`  
-		Last Modified: Fri, 16 Jan 2026 00:24:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:08:04 GMT  
 		Size: 3.8 MB (3764334 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7e942db9adb9ab47093a54a86fb9157bd0608a6f3b5ea9e73f00d9076d4bd82a`  
@@ -6902,7 +6902,7 @@ $ docker pull groovy@sha256:bb66c9e0a9e2aa4d51f7fe7d22cbe95cab98205e9b0ab5d8ce5c
 
 -	Layers:
 	-	`sha256:1920fb9aeed93aded7f0d8490c0b022f200e2f9895731d555c4eaf3de6e64c23`  
-		Last Modified: Fri, 16 Jan 2026 00:24:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:08:04 GMT  
 		Size: 3.8 MB (3764334 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7e942db9adb9ab47093a54a86fb9157bd0608a6f3b5ea9e73f00d9076d4bd82a`  
@@ -7461,7 +7461,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8403,7 +8403,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9092,7 +9092,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9781,7 +9781,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11412,7 +11412,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13043,7 +13043,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15507,7 +15507,7 @@ $ docker pull groovy@sha256:bb66c9e0a9e2aa4d51f7fe7d22cbe95cab98205e9b0ab5d8ce5c
 
 -	Layers:
 	-	`sha256:1920fb9aeed93aded7f0d8490c0b022f200e2f9895731d555c4eaf3de6e64c23`  
-		Last Modified: Fri, 16 Jan 2026 00:24:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:08:04 GMT  
 		Size: 3.8 MB (3764334 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7e942db9adb9ab47093a54a86fb9157bd0608a6f3b5ea9e73f00d9076d4bd82a`  
@@ -16463,7 +16463,7 @@ $ docker pull groovy@sha256:bb66c9e0a9e2aa4d51f7fe7d22cbe95cab98205e9b0ab5d8ce5c
 
 -	Layers:
 	-	`sha256:1920fb9aeed93aded7f0d8490c0b022f200e2f9895731d555c4eaf3de6e64c23`  
-		Last Modified: Fri, 16 Jan 2026 00:24:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:08:04 GMT  
 		Size: 3.8 MB (3764334 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7e942db9adb9ab47093a54a86fb9157bd0608a6f3b5ea9e73f00d9076d4bd82a`  
@@ -17022,7 +17022,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17964,7 +17964,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18653,7 +18653,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19342,7 +19342,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20973,7 +20973,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22604,7 +22604,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25068,7 +25068,7 @@ $ docker pull groovy@sha256:bb66c9e0a9e2aa4d51f7fe7d22cbe95cab98205e9b0ab5d8ce5c
 
 -	Layers:
 	-	`sha256:1920fb9aeed93aded7f0d8490c0b022f200e2f9895731d555c4eaf3de6e64c23`  
-		Last Modified: Fri, 16 Jan 2026 00:24:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:08:04 GMT  
 		Size: 3.8 MB (3764334 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7e942db9adb9ab47093a54a86fb9157bd0608a6f3b5ea9e73f00d9076d4bd82a`  
@@ -26024,7 +26024,7 @@ $ docker pull groovy@sha256:bb66c9e0a9e2aa4d51f7fe7d22cbe95cab98205e9b0ab5d8ce5c
 
 -	Layers:
 	-	`sha256:1920fb9aeed93aded7f0d8490c0b022f200e2f9895731d555c4eaf3de6e64c23`  
-		Last Modified: Fri, 16 Jan 2026 00:24:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:08:04 GMT  
 		Size: 3.8 MB (3764334 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7e942db9adb9ab47093a54a86fb9157bd0608a6f3b5ea9e73f00d9076d4bd82a`  
@@ -26583,7 +26583,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -27525,7 +27525,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -28214,7 +28214,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -29845,7 +29845,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -31476,7 +31476,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -33940,7 +33940,7 @@ $ docker pull groovy@sha256:bb66c9e0a9e2aa4d51f7fe7d22cbe95cab98205e9b0ab5d8ce5c
 
 -	Layers:
 	-	`sha256:1920fb9aeed93aded7f0d8490c0b022f200e2f9895731d555c4eaf3de6e64c23`  
-		Last Modified: Fri, 16 Jan 2026 00:24:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:08:04 GMT  
 		Size: 3.8 MB (3764334 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7e942db9adb9ab47093a54a86fb9157bd0608a6f3b5ea9e73f00d9076d4bd82a`  
@@ -34896,7 +34896,7 @@ $ docker pull groovy@sha256:bb66c9e0a9e2aa4d51f7fe7d22cbe95cab98205e9b0ab5d8ce5c
 
 -	Layers:
 	-	`sha256:1920fb9aeed93aded7f0d8490c0b022f200e2f9895731d555c4eaf3de6e64c23`  
-		Last Modified: Fri, 16 Jan 2026 00:24:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:08:04 GMT  
 		Size: 3.8 MB (3764334 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7e942db9adb9ab47093a54a86fb9157bd0608a6f3b5ea9e73f00d9076d4bd82a`  
@@ -35455,7 +35455,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -36397,7 +36397,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -37086,7 +37086,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -37775,7 +37775,7 @@ $ docker pull groovy@sha256:c3a576febce167867116459a279e29deadeb904391ad1ba28da0
 		Size: 3.6 MB (3640681 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fc47944860ace95087562794cc7b835cd818d64e4b88544a6ba08b642bdc5c4`  
-		Last Modified: Fri, 16 Jan 2026 00:06:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:31 GMT  
 		Size: 31.2 KB (31221 bytes)  
 		MIME: application/vnd.in-toto+json
 
