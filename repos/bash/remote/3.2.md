@@ -491,7 +491,7 @@ $ docker pull bash@sha256:1caeb3493210b38bf46db271b7c970113b5b1b67512ebd054d84b7
 
 -	Layers:
 	-	`sha256:eb35e0c1171cec6d982a3840bd95bbceb15c16573b8786519f0940c612d219cd`  
-		Last Modified: Thu, 09 Oct 2025 00:15:40 GMT  
+		Last Modified: Wed, 17 Dec 2025 12:00:34 GMT  
 		Size: 117.1 KB (117076 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:43b08b0c99564ecc6f0798a93a020c2f4c22253af3f8d517e05489630e549aaa`  
@@ -619,7 +619,7 @@ CMD ["bash"]
 
 -	Layers:
 	-	`sha256:e6b06613ca2e7cdf3e8ebbe71ca45137242628a4a3a4bfcb7a9f76d0d5b0e653`  
-		Last Modified: Sun, 07 Dec 2025 14:06:46 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9d6a29bbf15e075d10dfdabff0053bb9f04c7f99a620d31354a3ee458f0abe58`  
