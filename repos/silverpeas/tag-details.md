@@ -336,7 +336,7 @@ CMD ["/opt/run.sh"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbc6333d478e013cc4559cdf1b2069ef8f1cfad3a12c9f37b33045af600daa52`  
-		Last Modified: Thu, 15 Jan 2026 22:53:07 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:53:39 GMT  
 		Size: 1.4 KB (1448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c76603880964175357a5011d99fdd9e2a3b821a2ff94b1fee7bde9203219f1d3`  
@@ -368,7 +368,7 @@ $ docker pull silverpeas@sha256:586ccfd45096ac1b3c1a1176b51105e4a02756fa65a03a9a
 		Size: 16.6 MB (16606281 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:694aa7441ab3525b2de9c44826fd60c2585d3851f8fe0b964a65e7ff99608189`  
-		Last Modified: Fri, 16 Jan 2026 02:10:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:53:03 GMT  
 		Size: 42.5 KB (42506 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -519,7 +519,7 @@ CMD ["/opt/run.sh"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbc6333d478e013cc4559cdf1b2069ef8f1cfad3a12c9f37b33045af600daa52`  
-		Last Modified: Thu, 15 Jan 2026 22:53:07 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:53:39 GMT  
 		Size: 1.4 KB (1448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c76603880964175357a5011d99fdd9e2a3b821a2ff94b1fee7bde9203219f1d3`  
@@ -551,6 +551,6 @@ $ docker pull silverpeas@sha256:586ccfd45096ac1b3c1a1176b51105e4a02756fa65a03a9a
 		Size: 16.6 MB (16606281 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:694aa7441ab3525b2de9c44826fd60c2585d3851f8fe0b964a65e7ff99608189`  
-		Last Modified: Fri, 16 Jan 2026 02:10:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:53:03 GMT  
 		Size: 42.5 KB (42506 bytes)  
 		MIME: application/vnd.in-toto+json
