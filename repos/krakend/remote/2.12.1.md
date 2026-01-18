@@ -163,6 +163,6 @@ $ docker pull krakend@sha256:05a5cc1f150bffea2b6117fbbd0b380eaadb4c89193ea9170ae
 
 -	Layers:
 	-	`sha256:11324b008c37c33a768c5be92139e485895527e9c5111ed9604a6f7dedd569d4`  
-		Last Modified: Fri, 16 Jan 2026 18:12:27 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:02:02 GMT  
 		Size: 15.3 KB (15272 bytes)  
 		MIME: application/vnd.in-toto+json
