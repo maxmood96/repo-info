@@ -131,6 +131,6 @@ $ docker pull amazoncorretto@sha256:a7a8b98c874515ac3edb37b532bea71cc229f15b4035
 		Size: 5.5 MB (5534397 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d69a9975d84dfdc299ef2261a0be8caca77055f205e49f10983520384fc2a71b`  
-		Last Modified: Thu, 15 Jan 2026 22:08:27 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:49:25 GMT  
 		Size: 11.4 KB (11364 bytes)  
 		MIME: application/vnd.in-toto+json
