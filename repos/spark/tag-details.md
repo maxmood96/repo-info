@@ -2440,7 +2440,7 @@ $ docker pull spark@sha256:b36cd7bdaa2f57e9a12f23df1c50fc89c227d762df945ca36da7c
 
 -	Layers:
 	-	`sha256:b64e55c8739e9db9b6561e1aafeed77378818252f86f2dfed57b5206ff4bd417`  
-		Last Modified: Fri, 16 Jan 2026 03:12:50 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:14:08 GMT  
 		Size: 4.7 MB (4695908 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a6a55ee6d543611b41c4f1fccdd23419fc718156263c5f2eca0a5a0d4e48a69e`  
@@ -3648,7 +3648,7 @@ $ docker pull spark@sha256:b36cd7bdaa2f57e9a12f23df1c50fc89c227d762df945ca36da7c
 
 -	Layers:
 	-	`sha256:b64e55c8739e9db9b6561e1aafeed77378818252f86f2dfed57b5206ff4bd417`  
-		Last Modified: Fri, 16 Jan 2026 03:12:50 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:14:08 GMT  
 		Size: 4.7 MB (4695908 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a6a55ee6d543611b41c4f1fccdd23419fc718156263c5f2eca0a5a0d4e48a69e`  
@@ -3789,7 +3789,7 @@ USER spark
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea397e467d7e8b5d051c46ea9d03ca2c48ae46b16274f34da7008305648eda63`  
-		Last Modified: Fri, 16 Jan 2026 02:25:49 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:25:31 GMT  
 		Size: 333.9 MB (333884680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7132,7 +7132,7 @@ $ docker pull spark@sha256:a1be5df6e184c99f740f40fa0319981a4440bbcce2d28c5037026
 		Size: 5.0 MB (4961003 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:56c325fb71069d0fd1fee1c7ef1b3fdcbe4aae4da48991a95a3dc6c9ae1dd096`  
-		Last Modified: Fri, 16 Jan 2026 01:10:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:13:21 GMT  
 		Size: 23.2 KB (23246 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8340,7 +8340,7 @@ $ docker pull spark@sha256:a1be5df6e184c99f740f40fa0319981a4440bbcce2d28c5037026
 		Size: 5.0 MB (4961003 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:56c325fb71069d0fd1fee1c7ef1b3fdcbe4aae4da48991a95a3dc6c9ae1dd096`  
-		Last Modified: Fri, 16 Jan 2026 01:10:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:13:21 GMT  
 		Size: 23.2 KB (23246 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11057,7 +11057,7 @@ $ docker pull spark@sha256:a1be5df6e184c99f740f40fa0319981a4440bbcce2d28c5037026
 		Size: 5.0 MB (4961003 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:56c325fb71069d0fd1fee1c7ef1b3fdcbe4aae4da48991a95a3dc6c9ae1dd096`  
-		Last Modified: Fri, 16 Jan 2026 01:10:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:13:21 GMT  
 		Size: 23.2 KB (23246 bytes)  
 		MIME: application/vnd.in-toto+json
 
