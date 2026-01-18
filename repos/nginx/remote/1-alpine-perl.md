@@ -139,7 +139,7 @@ $ docker pull nginx@sha256:ae0fe5ce9be23805f4f95b5d2d8e2f0a4523c227c767d3e9f4773
 		Size: 1.9 MB (1854747 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1ae73bb6722cc6be43ca8cedf5ea01aa432faf83aa1220777555b53b1d8f1ebd`  
-		Last Modified: Wed, 14 Jan 2026 01:10:24 GMT  
+		Last Modified: Wed, 14 Jan 2026 03:51:18 GMT  
 		Size: 21.2 KB (21157 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -585,7 +585,7 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 1.4 KB (1397 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0358534f1221770d3d56efcadc4f2b0eeeb8507fe9d57f5cabdef22a922f72ba`  
-		Last Modified: Wed, 14 Jan 2026 00:48:40 GMT  
+		Last Modified: Wed, 14 Jan 2026 00:48:50 GMT  
 		Size: 19.6 MB (19577836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8bc00c8bb43d37510cbcc95b02d8efd0ffbfb18029081abe6c85ce06002cc097`  
