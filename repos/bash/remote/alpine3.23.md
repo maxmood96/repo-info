@@ -447,7 +447,7 @@ $ docker pull bash@sha256:f374316d2b0627a3038b578b636d17ddc74773ce1a9f73a4de2417
 		Size: 117.7 KB (117671 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:93414be82c5d3a5b3cccbfd274db5c3d8e9e4c22914874a1e61951285a8a7469`  
-		Last Modified: Thu, 18 Dec 2025 04:02:49 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:27:19 GMT  
 		Size: 21.0 KB (21048 bytes)  
 		MIME: application/vnd.in-toto+json
 
