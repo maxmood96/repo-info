@@ -255,7 +255,7 @@ $ docker pull friendica@sha256:d4de6358dff380060f95fc8d35ae90c9767f0e6ee368b6af3
 
 -	Layers:
 	-	`sha256:5e380213118ae069e8429a9deacdc33803f710159d3623b61920b181683cfb95`  
-		Last Modified: Sat, 17 Jan 2026 00:32:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:57:50 GMT  
 		Size: 72.8 KB (72765 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -443,7 +443,7 @@ CMD ["apache2-foreground"]
 		Size: 18.2 MB (18195377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bee7a076b28cc62101976f0c366d6919456fb38f7e4785eac5d7df7c8e7fa3be`  
-		Last Modified: Fri, 16 Jan 2026 23:51:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:51:15 GMT  
 		Size: 1.1 MB (1102806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24105dce70f182de536c2ae5725000330a5de9d02130cf86ef4efe8bca73373b`  
