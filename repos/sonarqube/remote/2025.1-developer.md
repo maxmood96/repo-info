@@ -243,7 +243,7 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:066d9c7316405755c4355dfd9b742623829c8c1c49462c4e6c938a83b810b7c8`  
-		Last Modified: Thu, 15 Jan 2026 22:21:55 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:21:41 GMT  
 		Size: 17.0 MB (16991549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:55f94c82a8ac7fd54191a08fd6e2afc54327165fa15aabd600b27aeb40409383`  
@@ -259,7 +259,7 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a0ce62f9ca2d69f400ed78e4d84d2bd1f3f9c57c9f6680b7021f8b637a0c8b0`  
-		Last Modified: Fri, 16 Jan 2026 01:12:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:14:51 GMT  
 		Size: 1.1 GB (1060318717 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:273b3b4e98d802458a235cfb39f4a55561d285e02a1b1fdffeeff62f16f0fde7`  
