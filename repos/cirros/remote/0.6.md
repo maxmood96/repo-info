@@ -211,7 +211,7 @@ CMD ["/sbin/init"]
 
 -	Layers:
 	-	`sha256:6309759136f87e6c03b33561dc8fef075f252e80359c9e16e671e61d7059a194`  
-		Last Modified: Fri, 27 Sep 2024 01:15:53 GMT  
+		Last Modified: Sat, 03 Jan 2026 06:59:51 GMT  
 		Size: 7.9 MB (7892552 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5025f3f60d4175e61b5e11adec222b7231c075cf43c195cdc95b457b59ee3627`  
