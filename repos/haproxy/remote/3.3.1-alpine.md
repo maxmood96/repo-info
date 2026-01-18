@@ -723,7 +723,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 -	Layers:
 	-	`sha256:3d8fe54ac4e72ef775998241dc95a39f582dbddd5cf822b793130a331db6726f`  
-		Last Modified: Thu, 18 Dec 2025 00:12:04 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:18 GMT  
 		Size: 3.7 MB (3724311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d3d72f959e55ce0a0ba7077382dc97d683e56c7d1901d55abcae919e934370a`  
