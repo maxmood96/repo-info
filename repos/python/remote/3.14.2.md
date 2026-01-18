@@ -290,7 +290,7 @@ $ docker pull python@sha256:4b2f987e926afb2eac4c53c6e5273f7e5d06e14e170ade4ea0c4
 
 -	Layers:
 	-	`sha256:79125302a427017f3cec26745a976d8694d20c8dc82901fb4b1d5df53c339d83`  
-		Last Modified: Tue, 13 Jan 2026 07:39:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 10:07:13 GMT  
 		Size: 17.5 MB (17519763 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f975f2fea4d49d5d8556eb13a5ef2f9eaeeba6a010de61393a57297456202eac`  
@@ -794,7 +794,7 @@ CMD ["python"]
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1d7406e948e74291cdc5905b66f33026f1ad4de3e9480650c627fc1f6b4d2497`  
-		Last Modified: Tue, 13 Jan 2026 22:54:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:58:01 GMT  
 		Size: 1.3 KB (1325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:736a9bbd5a9a7ccac63082093a7ec5833b388af4dd276a46a5a9fc4b83c1fa23`  
