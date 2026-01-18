@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2816afdb1b98391fe148dc66b3ec32b4c5ce4166521e5388ba0759d2625335bf`
-- Created: `2026-01-13T03:24:52.680627676Z`
-- Virtual Size: ~ 383.26 Mb  
+- Image ID: `sha256:cbcc5df8752d987ffbbcb0af87e61a4c7044cda093d50349894d483c19ccf2f6`
+- Created: `2026-01-16T01:48:31.246312187Z`
+- Virtual Size: ~ 383.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["lein","repl"]`
@@ -689,11 +689,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gmp/2:6.2.1+dfsg-1+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gmp/2:6.2.1+dfsg-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnupg2=2.2.27-2+deb11u2`
+### `dpkg` source package: `gnupg2=2.2.27-2+deb11u3`
 
 Binary Packages:
 
-- `gpgv=2.2.27-2+deb11u2`
+- `gpgv=2.2.27-2+deb11u3`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -713,18 +713,17 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.2.27-2+deb11u2
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.27-2%2bdeb11u2.dsc' gnupg2_2.2.27-2+deb11u2.dsc 3322 SHA256:a334ffaa6c078907e64d990c469873ec883abcbbc2ca3911e4f3072c50d33eb8
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.27.orig.tar.bz2' gnupg2_2.2.27.orig.tar.bz2 7191555 SHA256:34e60009014ea16402069136e0a5f63d9b65f90096244975db5cea74b3d02399
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.27.orig.tar.bz2.asc' gnupg2_2.2.27.orig.tar.bz2.asc 119 SHA256:2b44fd82da223cb629062b9c8840d92698c003be8531fc393c38f97b28cae2a4
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.27-2%2bdeb11u2.debian.tar.xz' gnupg2_2.2.27-2+deb11u2.debian.tar.xz 63960 SHA256:b35c6a717d7f79cfd1a7468436721ca9c9211f70d10216e22523478094670a7b
+$ apt-get source -qq --print-uris gnupg2=2.2.27-2+deb11u3
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.2.27-2%2bdeb11u3.dsc' gnupg2_2.2.27-2+deb11u3.dsc 3680 SHA256:835b5ac7f04f5a30cd7ae56966d9ed96296fec72773b651530c22515bca1ff57
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.2.27.orig.tar.bz2' gnupg2_2.2.27.orig.tar.bz2 7191555 SHA256:34e60009014ea16402069136e0a5f63d9b65f90096244975db5cea74b3d02399
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.2.27-2%2bdeb11u3.debian.tar.xz' gnupg2_2.2.27-2+deb11u3.debian.tar.xz 68256 SHA256:bbef7de39d7241225c854f5672c2e74eace7ed78d2e4c0993dbbeac38a8fb50c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnupg2/2.2.27-2+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.27-2+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.27-2+deb11u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnupg2/2.2.27-2+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.2.27-2+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.2.27-2+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.7.1-5+deb11u8`
 
