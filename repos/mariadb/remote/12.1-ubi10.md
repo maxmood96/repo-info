@@ -133,7 +133,7 @@ CMD ["mariadbd"]
 		Size: 301.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5e8ca7da649a1c86781957765af5c6d03f8af9f2c14bb5cbd3961731bf5f8812`  
-		Last Modified: Thu, 18 Dec 2025 22:24:50 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:25:00 GMT  
 		Size: 333.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8982ca015fbee56d1ebc0736a24e00fd3cdf52ed73fe7af5e2c99cff49a8a6fa`  
@@ -335,7 +335,7 @@ $ docker pull mariadb@sha256:9ecf641bf8475449a2e043db774eb7a21a07a95a2ec6d648048
 		Size: 6.8 MB (6784821 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2004fa0e47b1fd3685b6a8cf15e6ec0aad5102166b4161427ea6a293d6df67fd`  
-		Last Modified: Fri, 19 Dec 2025 01:36:11 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:31:37 GMT  
 		Size: 34.1 KB (34091 bytes)  
 		MIME: application/vnd.in-toto+json
 
