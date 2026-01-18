@@ -430,7 +430,7 @@ $ docker pull irssi@sha256:fb68f05d44e0c0db000a0af566e3426523e7f0b9f32e6d76722af
 		Size: 1.3 MB (1308694 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2ec901df34838627b73c149fb922297b09aefcd820347fe989f9a8dfd62569d2`  
-		Last Modified: Thu, 18 Dec 2025 02:59:59 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:30:34 GMT  
 		Size: 17.4 KB (17444 bytes)  
 		MIME: application/vnd.in-toto+json
 
