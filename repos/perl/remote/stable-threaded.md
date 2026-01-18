@@ -102,7 +102,7 @@ $ docker pull perl@sha256:57dcfd40c12007a357d79d21c86d76bbb32986cbbf31f32f68d431
 		Size: 17.2 MB (17211896 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b64ee920041c47d13fb4e3f10dc61d97e471ad823f7b773055f12dd738e1767b`  
-		Last Modified: Tue, 13 Jan 2026 08:38:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:38:31 GMT  
 		Size: 19.8 KB (19773 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -248,7 +248,7 @@ CMD ["perl5.42.0" "-de0"]
 		Size: 15.0 MB (15046254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a16aa0b6fb5ef7a6d80b2d9deb497a012222048cb5eb01f9a19e3f7e2f680d8`  
-		Last Modified: Tue, 13 Jan 2026 06:43:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:43:47 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
