@@ -327,7 +327,7 @@ CMD ["irb"]
 
 -	Layers:
 	-	`sha256:d637807aba98f742a62ad9b0146579ceb0297a3c831f56b2361664b7f5fbc75b`  
-		Last Modified: Tue, 13 Jan 2026 00:42:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:49 GMT  
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:45e0525c3d775730a255f13515eebc27444890213cd946823934e1e349ebf85d`  
@@ -450,7 +450,7 @@ $ docker pull ruby@sha256:a410e9355bca8fbf03efe96e51c3b01ffb179937202c602ec039d7
 
 -	Layers:
 	-	`sha256:f94cff48c4c9655aae17d861d0641e987c0f963445a06671422a33dd9bcd1583`  
-		Last Modified: Tue, 13 Jan 2026 02:49:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:58:54 GMT  
 		Size: 2.2 MB (2216576 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f7171fb8f2187c2ff8c8597cfe4fffe8e255e8fee95cc3fbbfd8ccd71f97a0ee`  
