@@ -470,7 +470,7 @@ $ docker pull hylang@sha256:b1b9f816b30f760a2dd337ab0b690890fc1debe5dc02c81914d5
 		Size: 698.6 KB (698642 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d8dd257191a58492a7f6fef76bf7352e36a5a604771a388e46460ff06f27637a`  
-		Last Modified: Thu, 15 Jan 2026 00:28:01 GMT  
+		Last Modified: Wed, 14 Jan 2026 22:01:33 GMT  
 		Size: 8.1 KB (8069 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -612,7 +612,7 @@ CMD ["hy"]
 
 -	Layers:
 	-	`sha256:139bee3c50b89b56dcbc72522ce83097d9beb59d9d3a5c19072ccd1ad54b11c8`  
-		Last Modified: Wed, 08 Oct 2025 21:17:39 GMT  
+		Last Modified: Sun, 07 Dec 2025 22:49:04 GMT  
 		Size: 3.5 MB (3515240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:879bd470fd11b0111acf6d20db06ac6a0b955448eb55f42b1ca31bc17c8f4dd9`  
