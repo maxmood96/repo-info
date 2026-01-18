@@ -87,7 +87,7 @@ CMD ["crate"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9499414e23067d6c17cc7429e7992bc2a846203ce8eef5126556618b7c584733`  
-		Last Modified: Mon, 05 Jan 2026 19:11:23 GMT  
+		Last Modified: Mon, 05 Jan 2026 19:11:42 GMT  
 		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:62aa3768dc6a70044c58e97e4734af0b94c2b392c939b06a0213c54d35830018`  
