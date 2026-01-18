@@ -365,7 +365,7 @@ $ docker pull traefik@sha256:a92e3cd53b17405edea5766b1ad5b153ffd332be9bc4a31080b
 		Size: 854.4 KB (854361 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23ea63ed56a73bea2721bbc1f6f6b4b98dda806f60dac2fa417db19fbb8b4ee3`  
-		Last Modified: Wed, 14 Jan 2026 20:48:23 GMT  
+		Last Modified: Wed, 14 Jan 2026 19:01:07 GMT  
 		Size: 12.6 KB (12559 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -967,7 +967,7 @@ $ docker pull traefik@sha256:a92e3cd53b17405edea5766b1ad5b153ffd332be9bc4a31080b
 		Size: 854.4 KB (854361 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23ea63ed56a73bea2721bbc1f6f6b4b98dda806f60dac2fa417db19fbb8b4ee3`  
-		Last Modified: Wed, 14 Jan 2026 20:48:23 GMT  
+		Last Modified: Wed, 14 Jan 2026 19:01:07 GMT  
 		Size: 12.6 KB (12559 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1567,7 +1567,7 @@ $ docker pull traefik@sha256:a92e3cd53b17405edea5766b1ad5b153ffd332be9bc4a31080b
 		Size: 854.4 KB (854361 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23ea63ed56a73bea2721bbc1f6f6b4b98dda806f60dac2fa417db19fbb8b4ee3`  
-		Last Modified: Wed, 14 Jan 2026 20:48:23 GMT  
+		Last Modified: Wed, 14 Jan 2026 19:01:07 GMT  
 		Size: 12.6 KB (12559 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4294,7 +4294,7 @@ $ docker pull traefik@sha256:a92e3cd53b17405edea5766b1ad5b153ffd332be9bc4a31080b
 		Size: 854.4 KB (854361 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23ea63ed56a73bea2721bbc1f6f6b4b98dda806f60dac2fa417db19fbb8b4ee3`  
-		Last Modified: Wed, 14 Jan 2026 20:48:23 GMT  
+		Last Modified: Wed, 14 Jan 2026 19:01:07 GMT  
 		Size: 12.6 KB (12559 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5556,7 +5556,7 @@ $ docker pull traefik@sha256:a92e3cd53b17405edea5766b1ad5b153ffd332be9bc4a31080b
 		Size: 854.4 KB (854361 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23ea63ed56a73bea2721bbc1f6f6b4b98dda806f60dac2fa417db19fbb8b4ee3`  
-		Last Modified: Wed, 14 Jan 2026 20:48:23 GMT  
+		Last Modified: Wed, 14 Jan 2026 19:01:07 GMT  
 		Size: 12.6 KB (12559 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6158,7 +6158,7 @@ $ docker pull traefik@sha256:a92e3cd53b17405edea5766b1ad5b153ffd332be9bc4a31080b
 		Size: 854.4 KB (854361 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23ea63ed56a73bea2721bbc1f6f6b4b98dda806f60dac2fa417db19fbb8b4ee3`  
-		Last Modified: Wed, 14 Jan 2026 20:48:23 GMT  
+		Last Modified: Wed, 14 Jan 2026 19:01:07 GMT  
 		Size: 12.6 KB (12559 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6758,7 +6758,7 @@ $ docker pull traefik@sha256:a92e3cd53b17405edea5766b1ad5b153ffd332be9bc4a31080b
 		Size: 854.4 KB (854361 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23ea63ed56a73bea2721bbc1f6f6b4b98dda806f60dac2fa417db19fbb8b4ee3`  
-		Last Modified: Wed, 14 Jan 2026 20:48:23 GMT  
+		Last Modified: Wed, 14 Jan 2026 19:01:07 GMT  
 		Size: 12.6 KB (12559 bytes)  
 		MIME: application/vnd.in-toto+json
 
