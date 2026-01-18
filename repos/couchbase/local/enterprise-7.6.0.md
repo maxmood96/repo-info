@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9bfb8c3c215512abf773467b813288d6a6e889c4d29ff8266bdd521a3a9f1376`
-- Created: `2025-11-13T23:16:49.127545204Z`
+- Image ID: `sha256:10b2b76253bc40d16e0b4580927bd0ec5f8cd9d94a6a189200826e7331a2982a`
+- Created: `2026-01-15T22:16:10.562064752Z`
 - Virtual Size: ~ 1.71 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -59,11 +59,11 @@ $ apt-get source -qq --print-uris adduser=3.118ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.118ubuntu5.tar.xz' adduser_3.118ubuntu5.tar.xz 222904 SHA512:ded568a5a3f5a5ac1acc2098e37160194f8c4622e90c7044d599286a321fe8fd701c8554a4517e4d72a6089b8e3b5592b92d46668032bda81de64cc736bf0a75
 ```
 
-### `dpkg` source package: `apparmor=3.0.4-2ubuntu2.4`
+### `dpkg` source package: `apparmor=3.0.4-2ubuntu2.5`
 
 Binary Packages:
 
-- `libapparmor1:amd64=3.0.4-2ubuntu2.4`
+- `libapparmor1:amd64=3.0.4-2ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -76,11 +76,10 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apparmor=3.0.4-2ubuntu2.4
-'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.4.dsc' apparmor_3.0.4-2ubuntu2.4.dsc 3263 SHA512:fd0eb724b2d43077a3708bd51729e884c972e361a36952f0f7ba2a686f76630ab38478b3906843943d0515997ecdd8a8807f702b1a73a0b12667433ad9a50306
-'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz' apparmor_3.0.4.orig.tar.gz 7796852 SHA512:1edd800771f46fab9bc5274842e64482b7fd4a5ba4de9855d621baf1d08c8236bfa7752dd9ab3dee095f8e0798129241a9aebf68ed1c994ae5597086a4a1a8ca
-'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz.asc' apparmor_3.0.4.orig.tar.gz.asc 870 SHA512:870d3037562ae003e642adcd244b74191e9108cebd18e6a925959e595b5a375e2dbfda686349e4cc980981cdd38239a099d3e32f1e824b4a9b477584c8d311a9
-'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.4.debian.tar.xz' apparmor_3.0.4-2ubuntu2.4.debian.tar.xz 136888 SHA512:da616c757022828f738e09e0a04ab9a93b1575acc30318abd2e60ef193c8ef7e3acac4d3d545ee5f3b0310347187d09db8fe0c4ec8422893a6375b9f46c424f0
+$ apt-get source -qq --print-uris apparmor=3.0.4-2ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.5.dsc' apparmor_3.0.4-2ubuntu2.5.dsc 3320 SHA512:cba9325cf7a2ecf1fc61da985507d581efe0882842c55589b955fdb1c42ca691788d362a35a97afed0493a8d8869c020cdfbb99ec0fe02897ed6f7520ef99ea4
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz' apparmor_3.0.4.orig.tar.gz 7796852 SHA512:1edd800771f46fab9bc5274842e64482b7fd4a5ba4de9855d621baf1d08c8236bfa7752dd9ab3dee095f8e0798129241a9aebf68ed1c994ae5597086a4a1a8ca
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.5.debian.tar.xz' apparmor_3.0.4-2ubuntu2.5.debian.tar.xz 138884 SHA512:d78c45f9634fa8fb652ae6f3e5fe972fdccdef16205143326f24a50a09d4875e8767996a65e840bf8b3b5d079708230fef96d95c0a1e049589a35c14ff7f99c6
 ```
 
 ### `dpkg` source package: `apt=2.4.14`
@@ -612,12 +611,12 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.2.debian.tar.xz 587544 SHA512:84c4e03cba3f408e752690a34b32fa1e231b501ebd502e4cb4843d74fda287704ff60b8be1d6482297f987fa4ab651a0a605fde27dfdbd364cf7ef2c03e39847
 ```
 
-### `dpkg` source package: `glib2.0=2.72.4-0ubuntu2.6`
+### `dpkg` source package: `glib2.0=2.72.4-0ubuntu2.7`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.72.4-0ubuntu2.6`
-- `libglib2.0-data=2.72.4-0ubuntu2.6`
+- `libglib2.0-0:amd64=2.72.4-0ubuntu2.7`
+- `libglib2.0-data=2.72.4-0ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
@@ -625,9 +624,14 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.7.dsc' glib2.0_2.72.4-0ubuntu2.7.dsc 3670 SHA512:0fbb3687777c687bfacb4a585a6dae7d153d028371e29b6be8011e9956f0566f815078429ee6b12c259b13687fc5bd9f8c5e57f49735a7dc30df881f59755c40
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA512:b4e2e0985e2184ee9656c4f1b4e15d8d1264f3d23d31349bc43d92e8432cffa48e1685c40517efb08dc5b57b8285acf65f2747deeb50e50d9cacec7160e7edf8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.7.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.7.debian.tar.xz 158152 SHA512:f8c007b54b71965391b31113f6c89f0ebf89defa2099aa0bdb25f755d9e8294a73d2592b5e2d0969a03121157c853f9eadde5eb86ee2fc4def7787d3a877e37c
+```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.11`
 
@@ -674,11 +678,11 @@ $ apt-get source -qq --print-uris gmp=2:6.2.1+dfsg-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.2.1%2bdfsg-3ubuntu1.debian.tar.xz' gmp_6.2.1+dfsg-3ubuntu1.debian.tar.xz 40996 SHA512:d7e0a1165a42b11a26a0f9232193db41ce2e7b1f5ea50d258e156fc9d80f9a74b6739491ec73cc1e909a3d09e029f90c3be1460c993690c5081ef8c6a169a4c3
 ```
 
-### `dpkg` source package: `gnupg2=2.2.27-3ubuntu2.4`
+### `dpkg` source package: `gnupg2=2.2.27-3ubuntu2.5`
 
 Binary Packages:
 
-- `gpgv=2.2.27-3ubuntu2.4`
+- `gpgv=2.2.27-3ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -695,9 +699,14 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.5.dsc' gnupg2_2.2.27-3ubuntu2.5.dsc 3763 SHA512:178b162bff46e822775007ea3af32f1b63c131eb78d2184225b1e7904669a1338507dd34180e753c641a226c20c2b7967ea1570209020e52c621fb0e824bbc48
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27.orig.tar.bz2' gnupg2_2.2.27.orig.tar.bz2 7191555 SHA512:cf336962116c9c08ac80b1299654b94948033ef51d6d5e7f54c2f07bbf7d92c7b0bddb606ceee2cdd837063f519b8d59af5a82816b840a0fc47d90c07b0e95ab
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.5.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.5.debian.tar.xz 76672 SHA512:f3fd10428b50fca815afe5bdad9ee8db17f0eb3a8871a7935f94fc28da188cc1779e18bb84ed5a1cf86a464f46e818768d63aa61db9fac36a93ea05a37be9851
+```
 
 ### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.7`
 
@@ -1935,14 +1944,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.11`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.13`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.11`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.11`
-- `python3.10=3.10.12-1~22.04.11`
-- `python3.10-minimal=3.10.12-1~22.04.11`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.13`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.13`
+- `python3.10=3.10.12-1~22.04.13`
+- `python3.10-minimal=3.10.12-1~22.04.13`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -1964,9 +1973,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.13
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.13.dsc' python3.10_3.10.12-1~22.04.13.dsc 3110 SHA512:36de03acd77925bcc301442290e7fc52d37e0df923705e5bf1f11e6e55441e555e4feabc8530be6405d2b28904d8fdfe4c393da01a33282e5644e4982a003775
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.13.debian.tar.xz' python3.10_3.10.12-1~22.04.13.debian.tar.xz 261444 SHA512:d860a3d1cc84822c36672ff581ed4eb279e3f7a946b587453d8ca771c2fef6f885b4a92d3c7f565401d6dec750d92adeb56bc7c8a19b92ac91bdd00de4cd58c7
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
