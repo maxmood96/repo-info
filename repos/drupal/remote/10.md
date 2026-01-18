@@ -133,7 +133,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9c42bdc8e938c1f5002a3b080c8b0dbc496391398364df71b156059df5d7095`  
-		Last Modified: Thu, 15 Jan 2026 23:04:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:04:30 GMT  
 		Size: 4.2 MB (4226849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1fc026a5dfa44cbd221ad1da0edee3d497b7a90b4d2b13f66c7df93097804b76`  
@@ -393,7 +393,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 258.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a36d7ecf7bd0da942aad824d28830daa6dc8f8471c69d782ca50bb405c9e5eb6`  
-		Last Modified: Sat, 17 Jan 2026 00:21:05 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:20:57 GMT  
 		Size: 776.4 KB (776357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3f24e7767f7f6431df78d06e2a6f6c3f1b6da63540cb74c745de39719a2dc89`  
@@ -745,7 +745,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e62a9d1095d91d1939ddf44a32d6539152f3b4a73ad306bf5b934fb45d37e751`  
-		Last Modified: Thu, 15 Jan 2026 22:26:19 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:26:10 GMT  
 		Size: 4.5 MB (4458302 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93f6f010786a4f269945341574007c70675c28de9c83edd68a5ff82043bf03fe`  
@@ -829,7 +829,7 @@ $ docker pull drupal@sha256:96137909387196a8f2fbb1296a870e75395db0e1e39554bec4d1
 
 -	Layers:
 	-	`sha256:596b2a5edf32157879805b121c2e87312bd3043047d7d11cb32492aeec7971f9`  
-		Last Modified: Fri, 16 Jan 2026 23:52:01 GMT  
+		Last Modified: Sat, 17 Jan 2026 02:54:07 GMT  
 		Size: 7.3 MB (7305980 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d09c79b503d6ee44f7a613b761b9874df69157b12a652fe17c636e0baa884ace`  
@@ -1445,6 +1445,6 @@ $ docker pull drupal@sha256:1fff41388040bcd716fee01441694c1fec0f3e961cc481092594
 		Size: 7.1 MB (7149448 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:31eadad6c674f10eb86abee19b539dc720005dfa0b7e8861767907df3d2589b4`  
-		Last Modified: Sat, 17 Jan 2026 02:54:35 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:31:49 GMT  
 		Size: 44.7 KB (44737 bytes)  
 		MIME: application/vnd.in-toto+json
