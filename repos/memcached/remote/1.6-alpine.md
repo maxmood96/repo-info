@@ -555,7 +555,7 @@ CMD ["memcached"]
 		Size: 281.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4a65ff5cefcbfc874c1cac0857339eaee0b07147dd26b6bfa18c00921b4f30c`  
-		Last Modified: Thu, 18 Dec 2025 00:36:33 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:36:27 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -579,7 +579,7 @@ $ docker pull memcached@sha256:1d06281345f2ac44a607d40d5e87de6abb99bbc6ee82d319e
 		Size: 94.3 KB (94280 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4755fffd5924e8405adfbed0f328ad9792eff20e2b8ad2025e1f5c85bca88618`  
-		Last Modified: Thu, 18 Dec 2025 01:35:09 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:36:26 GMT  
 		Size: 20.6 KB (20605 bytes)  
 		MIME: application/vnd.in-toto+json
 
