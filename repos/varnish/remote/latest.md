@@ -211,7 +211,7 @@ $ docker pull varnish@sha256:5468cf25c9570e15a726a96e275bc2ccf38c9c29197320b1a8c
 
 -	Layers:
 	-	`sha256:74c3eeaf3c216b1ed407df3a41e4846ac2337bde8a30f8a3207bf66ff522901e`  
-		Last Modified: Tue, 13 Jan 2026 04:21:47 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:56:01 GMT  
 		Size: 19.7 KB (19675 bytes)  
 		MIME: application/vnd.in-toto+json
 
