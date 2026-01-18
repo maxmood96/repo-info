@@ -573,7 +573,7 @@ $ docker pull tomcat@sha256:a0e2696ac8a5bc6667f9bb70faace9c74bf1b32c84fdc1d0c183
 
 -	Layers:
 	-	`sha256:8e94abb03ca533671ace2376771e7caff7bf461b790cb567afa6a11514cae834`  
-		Last Modified: Fri, 16 Jan 2026 06:35:10 GMT  
+		Last Modified: Fri, 16 Jan 2026 05:04:42 GMT  
 		Size: 4.0 MB (3954483 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b3df5c7f3579bf4acb9d2321df20e4433d2ecc4740cbef2754c4b34ce13f23d2`  
