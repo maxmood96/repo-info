@@ -315,7 +315,7 @@ EXPOSE map[8080/tcp:{}]
 		Size: 13.7 MB (13694324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c5f1e8758d88a8fcd485dd50c07a4ff68dc12b6610070dae712451df4c167a3`  
-		Last Modified: Thu, 15 Jan 2026 22:22:23 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:22:30 GMT  
 		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a03c453ac853faf34e31882064b70cdb0a43cb40248887d3f9612109984ee0d`  
@@ -739,7 +739,7 @@ $ docker pull adminer@sha256:3ec59db4887d3dc74c8f5c3b5245d05d3919f09374cc3f82e12
 
 -	Layers:
 	-	`sha256:571eef9b54b6f796daebdc67cb00f1d6d7840d5a587cc90c20f55156f2bf452f`  
-		Last Modified: Fri, 16 Jan 2026 04:49:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:32:30 GMT  
 		Size: 36.0 KB (36007 bytes)  
 		MIME: application/vnd.in-toto+json
 
