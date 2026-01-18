@@ -559,7 +559,7 @@ $ docker pull adminer@sha256:fa8aef780999c09b041fb644d22ecdbec74166fb0750998c1c3
 
 -	Layers:
 	-	`sha256:f8fb8a64cf73d4d51b647b59bc7271bdb4f68bf311dfb8abb32f9bbec8a19dc9`  
-		Last Modified: Fri, 16 Jan 2026 01:50:59 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:27:02 GMT  
 		Size: 36.0 KB (35969 bytes)  
 		MIME: application/vnd.in-toto+json
 
