@@ -295,7 +295,7 @@ CMD ["apache2-foreground"]
 		Size: 13.1 MB (13142566 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:72997d22c86655522e289ce5e7b7c9975ed4d818f87bc24617cc9ecfbd544b26`  
-		Last Modified: Fri, 16 Jan 2026 23:29:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:29:16 GMT  
 		Size: 2.5 KB (2459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ce877a9d345263bbc5e4f01d24d72803301611df5a9a2cb0f9b8de02b5bfb6af`  
@@ -795,7 +795,7 @@ $ docker pull php@sha256:d3293aef2809232a557796c6dce3cb1290b1f8961e5b1e35b5c2c44
 
 -	Layers:
 	-	`sha256:8f079e35d886ae176c4c59d6974c02e5ddbd69271e7c5ae23b8620ddb459fcb6`  
-		Last Modified: Sat, 17 Jan 2026 00:16:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:22:20 GMT  
 		Size: 6.9 MB (6911401 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a476b03466b309f93db1ec67d2c20fbd1c13d5057661d653bacce67fc155adaa`  
