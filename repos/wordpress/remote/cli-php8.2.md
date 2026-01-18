@@ -743,7 +743,7 @@ $ docker pull wordpress@sha256:b5849d034c09296856bf56fdc9f2857eb84cfdea8116f4e67
 		Size: 639.2 KB (639207 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:34093da857d0fd2d6ac935d89bacb36f0561c46183afc5ea6cb1798d34785be3`  
-		Last Modified: Sat, 10 Jan 2026 00:14:39 GMT  
+		Last Modified: Sat, 10 Jan 2026 02:21:37 GMT  
 		Size: 42.3 KB (42266 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -849,7 +849,7 @@ CMD ["wp" "shell"]
 		Size: 933.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d3c9ab55546fcfcb86f18ad8a8c48c8bf5a44cea921147243ef4c94eff18f1e`  
-		Last Modified: Fri, 09 Jan 2026 22:49:53 GMT  
+		Last Modified: Fri, 09 Jan 2026 22:50:01 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:368f2e0c762b0c7c7488b60bd63f96a185f84bc0950053769452bb3392b95025`  
@@ -1471,6 +1471,6 @@ $ docker pull wordpress@sha256:55c6f6fe2dae70b9ab718b08e7c11f80c511b18e7a2f025b9
 		Size: 639.1 KB (639150 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a6886e4b6979054497e1d5060624559562fdbc70589e9e1d8540b240665285d3`  
-		Last Modified: Sat, 10 Jan 2026 01:15:55 GMT  
+		Last Modified: Sat, 10 Jan 2026 02:21:51 GMT  
 		Size: 42.1 KB (42102 bytes)  
 		MIME: application/vnd.in-toto+json
