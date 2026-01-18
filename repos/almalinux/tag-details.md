@@ -1154,7 +1154,7 @@ $ docker pull almalinux@sha256:336f6f0bcbc685e361285d755077c5a51a34a9976445e6621
 		Size: 877.1 KB (877118 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3d6c0c86a0de49b0c1dbd94242a5c25529625f7e5af3aa4db9d517f547c40fbf`  
-		Last Modified: Mon, 05 Jan 2026 19:34:07 GMT  
+		Last Modified: Mon, 05 Jan 2026 18:21:14 GMT  
 		Size: 5.8 KB (5836 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1793,7 +1793,7 @@ $ docker pull almalinux@sha256:336f6f0bcbc685e361285d755077c5a51a34a9976445e6621
 		Size: 877.1 KB (877118 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3d6c0c86a0de49b0c1dbd94242a5c25529625f7e5af3aa4db9d517f547c40fbf`  
-		Last Modified: Mon, 05 Jan 2026 19:34:07 GMT  
+		Last Modified: Mon, 05 Jan 2026 18:21:14 GMT  
 		Size: 5.8 KB (5836 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2006,7 +2006,7 @@ $ docker pull almalinux@sha256:336f6f0bcbc685e361285d755077c5a51a34a9976445e6621
 		Size: 877.1 KB (877118 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3d6c0c86a0de49b0c1dbd94242a5c25529625f7e5af3aa4db9d517f547c40fbf`  
-		Last Modified: Mon, 05 Jan 2026 19:34:07 GMT  
+		Last Modified: Mon, 05 Jan 2026 18:21:14 GMT  
 		Size: 5.8 KB (5836 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2366,7 +2366,7 @@ $ docker pull almalinux@sha256:48595b7495c5fd7b90966944a9df8a1063b6000a5f4df83b1
 		Size: 5.1 MB (5107943 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:16ccc019c3f1aab9f25fb4f7ddcf5f3f1298db4a84677b95af7336f10c0c1810`  
-		Last Modified: Mon, 05 Jan 2026 19:34:55 GMT  
+		Last Modified: Mon, 05 Jan 2026 18:21:53 GMT  
 		Size: 5.4 KB (5431 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2792,7 +2792,7 @@ $ docker pull almalinux@sha256:48595b7495c5fd7b90966944a9df8a1063b6000a5f4df83b1
 		Size: 5.1 MB (5107943 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:16ccc019c3f1aab9f25fb4f7ddcf5f3f1298db4a84677b95af7336f10c0c1810`  
-		Last Modified: Mon, 05 Jan 2026 19:34:55 GMT  
+		Last Modified: Mon, 05 Jan 2026 18:21:53 GMT  
 		Size: 5.4 KB (5431 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3005,7 +3005,7 @@ $ docker pull almalinux@sha256:48595b7495c5fd7b90966944a9df8a1063b6000a5f4df83b1
 		Size: 5.1 MB (5107943 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:16ccc019c3f1aab9f25fb4f7ddcf5f3f1298db4a84677b95af7336f10c0c1810`  
-		Last Modified: Mon, 05 Jan 2026 19:34:55 GMT  
+		Last Modified: Mon, 05 Jan 2026 18:21:53 GMT  
 		Size: 5.4 KB (5431 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4988,7 +4988,7 @@ $ docker pull almalinux@sha256:336f6f0bcbc685e361285d755077c5a51a34a9976445e6621
 		Size: 877.1 KB (877118 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3d6c0c86a0de49b0c1dbd94242a5c25529625f7e5af3aa4db9d517f547c40fbf`  
-		Last Modified: Mon, 05 Jan 2026 19:34:07 GMT  
+		Last Modified: Mon, 05 Jan 2026 18:21:14 GMT  
 		Size: 5.8 KB (5836 bytes)  
 		MIME: application/vnd.in-toto+json
 
