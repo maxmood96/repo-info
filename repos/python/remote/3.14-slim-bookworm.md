@@ -86,7 +86,7 @@ $ docker pull python@sha256:f833fdb18a50f8f374e20f7c8dd6c1b8db3198c676773a8800b1
 
 -	Layers:
 	-	`sha256:4242eb3506f95043c4a2407f52ecab4a38528c429b78ec36bb29a3f9cc6910ec`  
-		Last Modified: Tue, 13 Jan 2026 04:07:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:14:11 GMT  
 		Size: 2.5 MB (2523171 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:97e2989961ad40729312c9b2686e57f28057f8074f8b2190618af022d9d9799d`  
@@ -204,7 +204,7 @@ CMD ["python3"]
 		Size: 23.9 MB (23934118 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5d4820ac59dcb19c4d13e9297e27a527e90820400f074a23241dd55107af86f`  
-		Last Modified: Tue, 13 Jan 2026 04:01:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:01:09 GMT  
 		Size: 2.9 MB (2926149 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cdbab256c4d051d3aa9ae6b903ed6e08afc023807ad440746c524a1484956508`  
