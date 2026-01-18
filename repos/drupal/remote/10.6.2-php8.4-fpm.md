@@ -365,7 +365,7 @@ $ docker pull drupal@sha256:edf2979316b5e14cac4140957f5f8593a9934827786569f3ac51
 
 -	Layers:
 	-	`sha256:05e60af6df745e28af2e4f8a2541fc5b3a15637c1c097bd59480cace9d21e3f6`  
-		Last Modified: Sat, 17 Jan 2026 00:20:54 GMT  
+		Last Modified: Sat, 17 Jan 2026 02:54:46 GMT  
 		Size: 6.6 MB (6605519 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:09e2759ffc1f73d0b635156f5510f3ca539f19b1d1085a76026904c4fc28732d`  
@@ -1245,7 +1245,7 @@ $ docker pull drupal@sha256:806666a7b2653038f259f68c9d3616c0c4c9d0eae40dfef93f32
 
 -	Layers:
 	-	`sha256:65c61d8ce1eda6579efc569989cb4af2c7583c759935313bf198218a55def634`  
-		Last Modified: Sat, 17 Jan 2026 02:55:17 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:32:22 GMT  
 		Size: 6.6 MB (6618920 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c5a6d4c9004de404ac9601c0182135f90b778e1346e28f9062d62efd084d281f`  
