@@ -513,7 +513,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 1.2 MB (1241040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fed5408dbe62d388f1b2bee1bd52fc5318e7a79e115d8da5371d01c95ead4bae`  
-		Last Modified: Sat, 17 Jan 2026 00:19:24 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:19:32 GMT  
 		Size: 310.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3caffca4ff9cef83f28cc4aba64e52b88a962b70b5baea8faf00012604651eb9`  
@@ -861,7 +861,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f1d644be4b138f0013c0c4ff6387043c1564bcfaba68eb64628e44229eaf885`  
-		Last Modified: Fri, 16 Jan 2026 23:18:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:18:27 GMT  
 		Size: 9.3 KB (9267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c1c2f4e749bd4b2f2814e159cb2a8ba8ef5f2fbf376f6fbe46dc1326bfd118e5`  
@@ -1261,7 +1261,7 @@ $ docker pull drupal@sha256:374f71b981a89f967031fb1888d5d2a65d1e4417547f7c8f2e64
 		Size: 377.9 KB (377923 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5cee21ca709003c313f0515588028f3c48f4a0e8e8f2993e3903b71beff1362b`  
-		Last Modified: Fri, 09 Jan 2026 00:07:58 GMT  
+		Last Modified: Thu, 08 Jan 2026 21:14:27 GMT  
 		Size: 37.2 KB (37194 bytes)  
 		MIME: application/vnd.in-toto+json
 
