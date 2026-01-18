@@ -491,7 +491,7 @@ $ docker pull composer@sha256:6b1b6ecbb953adf333ffd996a913e3532de3a9df9518753253
 
 -	Layers:
 	-	`sha256:63c158cae8113440b719fd1aff8872b11a84e1d8e2fcb3eb3557afc7b49a7ed0`  
-		Last Modified: Fri, 16 Jan 2026 23:59:33 GMT  
+		Last Modified: Sat, 17 Jan 2026 02:14:27 GMT  
 		Size: 2.2 MB (2180283 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:274b18bfe16de9c3aa4a8ee1bbcbd14bef6a95a3f370d263427534f54ca397ee`  
