@@ -307,7 +307,7 @@ CMD ["php-fpm"]
 		Size: 12.1 MB (12099040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93ce31f145246671a42428e5c273110aff56e4d25c2e2fdc198f2054901573c1`  
-		Last Modified: Fri, 16 Jan 2026 23:31:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:31:09 GMT  
 		Size: 2.4 KB (2449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07f00ef517a0d2f9aacd37e69f26628b7bc89ff373ab6e09a0d134224e190a47`  
@@ -711,7 +711,7 @@ $ docker pull mediawiki@sha256:fe992d2b683c2d9df98e35c66cd06645f3999fbbcb6cbb94f
 
 -	Layers:
 	-	`sha256:ac0647a3379841b6e08ba23dfae671dc406b3d10faff861258d7839b5efcd2ac`  
-		Last Modified: Sat, 17 Jan 2026 01:20:35 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:08:51 GMT  
 		Size: 33.3 KB (33269 bytes)  
 		MIME: application/vnd.in-toto+json
 
