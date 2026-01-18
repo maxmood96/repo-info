@@ -315,7 +315,7 @@ $ docker pull postgres@sha256:bf469cd3cd4556dd41d949fe8f4825da62c3233a9dccbe7587
 		Size: 5.6 MB (5608651 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4e597b0e0442ebf896085a197f6bc3ea5ed15a88a4f061f79af4670a9e1d6151`  
-		Last Modified: Tue, 13 Jan 2026 06:08:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:31:43 GMT  
 		Size: 54.1 KB (54085 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -463,7 +463,7 @@ $ docker pull postgres@sha256:f25f14048d9e8efab674da331f95ba2916687c9253050e69ff
 		Size: 5.6 MB (5607956 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e3498d4790293fdd4a6d900c946ef0388e38be57632b321d95a96e3208876e08`  
-		Last Modified: Tue, 13 Jan 2026 06:08:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:52:39 GMT  
 		Size: 54.1 KB (54087 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1011,7 +1011,7 @@ CMD ["postgres"]
 		Size: 3.1 KB (3144 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2a5bc1ae21436da6b7ff892edb0390ba074379fa868abb0a594f826a1d77c6f`  
-		Last Modified: Fri, 16 Jan 2026 05:27:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 05:28:12 GMT  
 		Size: 43.8 MB (43838393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:65f38035410f7db822e6292f2e8daecfbba4f5716a615db39ed0d96eafb2df90`  
@@ -1203,6 +1203,6 @@ $ docker pull postgres@sha256:3542123fd5f938366daa38d160ecd08152d437974433e950c5
 		Size: 5.6 MB (5608682 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a8620bbd4f18c704c1e70c908cbeef82a9b3df8ec4c482f727656f94a01c144c`  
-		Last Modified: Tue, 13 Jan 2026 18:08:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 15:07:59 GMT  
 		Size: 53.9 KB (53864 bytes)  
 		MIME: application/vnd.in-toto+json
