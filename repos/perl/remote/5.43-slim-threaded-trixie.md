@@ -218,7 +218,7 @@ $ docker pull perl@sha256:ef809aedee6e16116ceb7ef6574325f1c73fb79b9ad65d5a0af32b
 		Size: 4.0 MB (4001756 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c6e979162a29375ee2baea0eb3ac53bec43df612d95eb8b329ea06a16a7920a3`  
-		Last Modified: Tue, 13 Jan 2026 05:49:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:44:19 GMT  
 		Size: 19.4 KB (19377 bytes)  
 		MIME: application/vnd.in-toto+json
 
