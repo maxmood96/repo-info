@@ -281,11 +281,11 @@ $ docker pull tomcat@sha256:32b1f645b8b07032f43f59c5fe5aa366f2ed09c622b54455b134
 
 -	Layers:
 	-	`sha256:84c833857a7274a8d7bf0068ff1541f10140386ca2974be58637feb72927a03d`  
-		Last Modified: Fri, 16 Jan 2026 03:30:59 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:20:26 GMT  
 		Size: 4.3 MB (4282387 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e05975ec3bc28b1a043648d313e5c498a21d52b09c95dbd9487828d32ca4db06`  
-		Last Modified: Fri, 16 Jan 2026 01:20:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:30:59 GMT  
 		Size: 30.2 KB (30210 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -422,7 +422,7 @@ $ docker pull tomcat@sha256:987524fd361bfba2246cdb5684144d4d17244aa9926e51e51fd8
 		Size: 4.2 MB (4214475 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:795d02271092f3839d854eccdb55c91bcfdba34675a3b2baabf000b8e54b5d05`  
-		Last Modified: Fri, 16 Jan 2026 02:10:29 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:31:06 GMT  
 		Size: 30.1 KB (30131 bytes)  
 		MIME: application/vnd.in-toto+json
 
