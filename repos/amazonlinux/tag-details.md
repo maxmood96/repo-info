@@ -174,7 +174,7 @@ $ docker pull amazonlinux@sha256:0f9a2a09596dc30b63eb6e2a9570fd5a814db15d3c64ef1
 
 -	Layers:
 	-	`sha256:e4782b0e88122e2852bb2fdc57ea46606ab8e05caaa7249b9d3f1d685ae52f50`  
-		Last Modified: Thu, 15 Jan 2026 21:44:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:50:52 GMT  
 		Size: 5.1 MB (5081267 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:eb4613e57d859b655b87e8ff383193a7c49c1e2c6c664d214abf08eba16509af`  
@@ -285,7 +285,7 @@ $ docker pull amazonlinux@sha256:0f9a2a09596dc30b63eb6e2a9570fd5a814db15d3c64ef1
 
 -	Layers:
 	-	`sha256:e4782b0e88122e2852bb2fdc57ea46606ab8e05caaa7249b9d3f1d685ae52f50`  
-		Last Modified: Thu, 15 Jan 2026 21:44:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:50:52 GMT  
 		Size: 5.1 MB (5081267 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:eb4613e57d859b655b87e8ff383193a7c49c1e2c6c664d214abf08eba16509af`  
@@ -467,7 +467,7 @@ $ docker pull amazonlinux@sha256:99ea2d334845fc74b5065a158b1f46e8c37ba5bd32451ed
 
 -	Layers:
 	-	`sha256:60616adc98503045761dc3b4d19c5ae538c95ea50ab87dcbf932b5ae24bea77f`  
-		Last Modified: Thu, 15 Jan 2026 21:43:57 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:31:40 GMT  
 		Size: 4.7 MB (4663419 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ec02cd805a45161ce3af116b65b8edcf4d185d7420635c6442c05c4d2e3ee6d2`  
@@ -578,7 +578,7 @@ $ docker pull amazonlinux@sha256:99ea2d334845fc74b5065a158b1f46e8c37ba5bd32451ed
 
 -	Layers:
 	-	`sha256:60616adc98503045761dc3b4d19c5ae538c95ea50ab87dcbf932b5ae24bea77f`  
-		Last Modified: Thu, 15 Jan 2026 21:43:57 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:31:40 GMT  
 		Size: 4.7 MB (4663419 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ec02cd805a45161ce3af116b65b8edcf4d185d7420635c6442c05c4d2e3ee6d2`  
@@ -689,7 +689,7 @@ $ docker pull amazonlinux@sha256:99ea2d334845fc74b5065a158b1f46e8c37ba5bd32451ed
 
 -	Layers:
 	-	`sha256:60616adc98503045761dc3b4d19c5ae538c95ea50ab87dcbf932b5ae24bea77f`  
-		Last Modified: Thu, 15 Jan 2026 21:43:57 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:31:40 GMT  
 		Size: 4.7 MB (4663419 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ec02cd805a45161ce3af116b65b8edcf4d185d7420635c6442c05c4d2e3ee6d2`  
