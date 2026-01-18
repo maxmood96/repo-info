@@ -38,7 +38,7 @@ RUN BusyBox 1.37.0 (uclibc), Buildroot 2025.11, Debian 13
 
 -	Layers:
 	-	`sha256:66cf33382ad45f13ac0c95523aa3d957ff96a260b53d8db1eef7a3ddc00f0bb4`  
-		Last Modified: Tue, 06 Jan 2026 18:56:22 GMT  
+		Last Modified: Tue, 06 Jan 2026 18:56:27 GMT  
 		Size: 758.0 KB (757960 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
