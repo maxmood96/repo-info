@@ -507,7 +507,7 @@ CMD ["hy"]
 		Size: 33.6 MB (33595600 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a3fcf9ec908a732524164bb92b6d876cabd6ce95844a6d32b996ccda27c8f61c`  
-		Last Modified: Tue, 13 Jan 2026 04:39:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:39:35 GMT  
 		Size: 1.3 MB (1320613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:347087e11d732d2478eee076923660d02ab0269507b69a57d5af20f73316a67e`  
@@ -626,7 +626,7 @@ $ docker pull hylang@sha256:230f841d4948724cbbd4f5cbeb78ee99a60bd2c658d3c3f92bc2
 
 -	Layers:
 	-	`sha256:a01b82215590f2e8e8fcb7d33c60ac755ecda27af55df01ea3da76df5a7bc59d`  
-		Last Modified: Fri, 02 Jan 2026 21:18:29 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:58:25 GMT  
 		Size: 2.1 MB (2148117 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:78ab2238a0f2286925cc03c0bfb7b6cdf167c262c06d8674bb6afcc2b219dc1e`  
