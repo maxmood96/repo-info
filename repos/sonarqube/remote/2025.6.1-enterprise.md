@@ -97,11 +97,11 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114`  
-		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:03:32 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:996467dfb4d0179a2f091bc2a9d9749646d7fc320067d1147a6df2b4833f1c82`  
-		Last Modified: Thu, 15 Jan 2026 22:19:45 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:19:34 GMT  
 		Size: 17.0 MB (16975950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14c9275308302d364422df0f3e02503135621d8a4b49a0c18580cf9220532743`  
@@ -113,7 +113,7 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:abb78f73258bc413aae5281eb128ee526870ba076049a4526b38041362fe99c6`  
-		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:12 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:365da3c79f68b02f71f21dcfaefb81560a3c006b6b0281bebdf2039fc7b5c0e6`  
@@ -121,7 +121,7 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Size: 1.4 GB (1445664973 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b212ddca39f6c440a0a1f0a7c914d70a6a7a0d28637e9ad7fab889a95a4771a2`  
-		Last Modified: Fri, 16 Jan 2026 01:02:30 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:03:04 GMT  
 		Size: 463.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -145,11 +145,11 @@ $ docker pull sonarqube@sha256:8ec6058661f0e524827c727314bcea29360e4bfa27a2f90f1
 
 -	Layers:
 	-	`sha256:fc114faac7925d7f772552e82851f38f042279dda95f059c0a4a62a0f4377f86`  
-		Last Modified: Fri, 16 Jan 2026 03:54:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:02:30 GMT  
 		Size: 4.8 MB (4807491 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed3c1d26bfb11030ac027cbc9101f7134003a609b726a0edcec81ccfd57e899d`  
-		Last Modified: Fri, 16 Jan 2026 03:54:06 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:02:30 GMT  
 		Size: 19.1 KB (19098 bytes)  
 		MIME: application/vnd.in-toto+json
 

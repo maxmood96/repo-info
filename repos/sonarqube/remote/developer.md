@@ -97,11 +97,11 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114`  
-		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:03:32 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:996467dfb4d0179a2f091bc2a9d9749646d7fc320067d1147a6df2b4833f1c82`  
-		Last Modified: Thu, 15 Jan 2026 22:19:45 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:19:34 GMT  
 		Size: 17.0 MB (16975950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14c9275308302d364422df0f3e02503135621d8a4b49a0c18580cf9220532743`  
@@ -113,7 +113,7 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:abb78f73258bc413aae5281eb128ee526870ba076049a4526b38041362fe99c6`  
-		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:12 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8110cac63132ddfed15242ade8caf561fd57a76c1943c00e5126382bf315923e`  
@@ -259,7 +259,7 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29539b3929dab73bdfb82e064d20f8b507850121400054e2f5879b5240c8c5a9`  
-		Last Modified: Fri, 16 Jan 2026 01:06:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:06:03 GMT  
 		Size: 1.3 GB (1260428722 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54f735d5b6b26f1fb517728086d14bb1d7fde430ae9213f069e32092f9d763da`  
@@ -291,6 +291,6 @@ $ docker pull sonarqube@sha256:ceef2c6cb9d7feda7a39a7f5dddf60fbca13cdff8874a2782
 		Size: 4.7 MB (4680561 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fa34103a149951a58b300d1c8f0df068b9b7d499df08c450263e5b2f3d251e74`  
-		Last Modified: Fri, 16 Jan 2026 03:54:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:05:38 GMT  
 		Size: 19.2 KB (19176 bytes)  
 		MIME: application/vnd.in-toto+json
