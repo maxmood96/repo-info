@@ -80,7 +80,7 @@ CMD ["hy"]
 		Size: 14.4 MB (14361697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b2bf04f68e9f306a8a83f57c6ced322a23968bf3d5acebc07e055c090240826`  
-		Last Modified: Tue, 13 Jan 2026 03:14:35 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:14:30 GMT  
 		Size: 250.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d2df4cca8fd926ffcbef3c0cc5f6460b2e5ee3ae81e9af0f04c155dc4b359e5`  
@@ -169,7 +169,7 @@ CMD ["hy"]
 		Size: 14.0 MB (13996731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a9f560feaf0196ce0e1c5f9dbbf93f1bfcb69d0e6c8b772c2985a5d739faffe`  
-		Last Modified: Tue, 13 Jan 2026 03:23:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:23:36 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:430ad9050239e9e079c9e50cc9428b3a4652160a5feb935a979a38f6ee5b946e`  
@@ -193,11 +193,11 @@ $ docker pull hylang@sha256:4f03c6972dde4172fe2095bfd1b5f5919e85c65ba87b09ac4630
 
 -	Layers:
 	-	`sha256:48e394dcba7429438719f864c3fc02b16b98ecadc76647f5ac4b5c9edd5b2620`  
-		Last Modified: Wed, 14 Jan 2026 22:01:27 GMT  
+		Last Modified: Thu, 15 Jan 2026 00:22:56 GMT  
 		Size: 2.2 MB (2202972 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9e8edff1393479a84cfec7e10790bee525531e247d51b4b01336e61fec1b674d`  
-		Last Modified: Thu, 15 Jan 2026 00:22:57 GMT  
+		Last Modified: Wed, 14 Jan 2026 22:01:27 GMT  
 		Size: 9.4 KB (9432 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -250,7 +250,7 @@ CMD ["hy"]
 		Size: 26.2 MB (26208578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4d842af037e972135d1dfb4e21a2735e16dd9d46ea735a953d6fc6552dbbb855`  
-		Last Modified: Tue, 13 Jan 2026 04:01:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:01:55 GMT  
 		Size: 1.2 MB (1248519 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:011a87092ec2444c13d4149f8a28fcb602f0278304024501bca8e6eb60dce124`  
@@ -375,7 +375,7 @@ $ docker pull hylang@sha256:4785fb28309c5a2d9f91618df51b8b333a0edc8077b42a44471f
 		Size: 2.2 MB (2200285 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f25234269380e9152b8833cf7e95a9697623a025eaf89e54b7d0831118e1b203`  
-		Last Modified: Wed, 14 Jan 2026 22:00:21 GMT  
+		Last Modified: Thu, 15 Jan 2026 00:23:07 GMT  
 		Size: 9.5 KB (9472 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -432,7 +432,7 @@ CMD ["hy"]
 		Size: 1.3 MB (1296836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d23d09a9d89e1d7969e8590019e252264c79675099b7f9703f3c1b45dc813e8f`  
-		Last Modified: Tue, 13 Jan 2026 02:47:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:47:45 GMT  
 		Size: 14.4 MB (14403011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1a711be5bab7fce3952f3d40665370f9c2d481605b5632458808a8648bf0a40e`  
@@ -553,7 +553,7 @@ $ docker pull hylang@sha256:0bc14c6c4dc24e799c81edf6b80ba74a4d629d47c425083c8ec3
 		Size: 2.2 MB (2203562 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8a12f7a73faf649360fa23ad1cc7bc26f280d368eea760e293213470f35ff9e1`  
-		Last Modified: Wed, 14 Jan 2026 22:03:41 GMT  
+		Last Modified: Thu, 15 Jan 2026 00:23:16 GMT  
 		Size: 9.4 KB (9388 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -707,7 +707,7 @@ CMD ["hy"]
 		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a97b99bc29029949db2e8269368ccc7e98c7d1020e40ff315718fbec5245233`  
-		Last Modified: Wed, 14 Jan 2026 23:03:33 GMT  
+		Last Modified: Wed, 14 Jan 2026 23:03:28 GMT  
 		Size: 7.0 MB (7039110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -727,7 +727,7 @@ $ docker pull hylang@sha256:7faffaf0cb3d1b4572986a9a2e64ecab1a001963ac5879ad529c
 
 -	Layers:
 	-	`sha256:4a0677ff373b0ff5b26681d1cab0e3ac4e087c4f0061038fa6c91d1b9d33926f`  
-		Last Modified: Thu, 15 Jan 2026 00:23:23 GMT  
+		Last Modified: Wed, 14 Jan 2026 23:03:28 GMT  
 		Size: 2.2 MB (2201410 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3d263c85dcd19e914cc6841f36172de5316a105d261bba27d7dafe37889681b7`  
