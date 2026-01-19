@@ -642,7 +642,7 @@ WORKDIR /go
 		Size: 66.7 MB (66660576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83b560385f3861ed5a056fb65f6efa479b98fb4edb93cd21d11160f19961a6e0`  
-		Last Modified: Fri, 02 Jan 2026 20:31:51 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:32:15 GMT  
 		Size: 131.6 MB (131594843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:65f6199a15922cf0533082f2bfb9bf03dc54fb7fdb4f830e8dae324efa57d8b9`  
@@ -4500,7 +4500,7 @@ WORKDIR /go
 		Size: 66.7 MB (66660576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83b560385f3861ed5a056fb65f6efa479b98fb4edb93cd21d11160f19961a6e0`  
-		Last Modified: Fri, 02 Jan 2026 20:31:51 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:32:15 GMT  
 		Size: 131.6 MB (131594843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:65f6199a15922cf0533082f2bfb9bf03dc54fb7fdb4f830e8dae324efa57d8b9`  
@@ -5569,7 +5569,7 @@ WORKDIR /go
 		Size: 66.7 MB (66660576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83b560385f3861ed5a056fb65f6efa479b98fb4edb93cd21d11160f19961a6e0`  
-		Last Modified: Fri, 02 Jan 2026 20:31:51 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:32:15 GMT  
 		Size: 131.6 MB (131594843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1cbe9b6a54e52c8b2ab9eae2cc83ece38c3a840f4401dd5ce0eaa7c0b2a89574`  
@@ -5577,7 +5577,7 @@ WORKDIR /go
 		Size: 76.4 MB (76445704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dab6126691825af24487c9098a95b109d61453c93511623aea195a0f10fe762e`  
-		Last Modified: Fri, 02 Jan 2026 20:48:26 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:48:33 GMT  
 		Size: 124.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -5755,7 +5755,7 @@ WORKDIR C:\go
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9cb457e4fca7d1f93e592e2115a63c026f25e9092614543850391223592acece`  
-		Last Modified: Thu, 15 Jan 2026 19:33:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:41:47 GMT  
 		Size: 1.3 KB (1330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b77fee076890e358ef243becb516ee4d6fc293f313486b19864eeaca09258961`  
@@ -5876,7 +5876,7 @@ WORKDIR C:\go
 		Size: 339.8 KB (339780 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:311b870b75cdc9a2d06ac512a9b4b444f3e1e6bafc53a2603d1b7ad33bbb25db`  
-		Last Modified: Thu, 15 Jan 2026 19:33:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:38:42 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:acd4d04a3047df77043399e63267a40b259da326470e6b1d74a470985a77199e`  
@@ -5954,7 +5954,7 @@ WORKDIR /go
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:238959f018cbf3138db4d3583aa256e12f25030a78668ef458ae71092fa833e7`  
-		Last Modified: Thu, 15 Jan 2026 19:31:58 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:31:53 GMT  
 		Size: 296.1 KB (296094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb9d4bc08b092267b3083b826637a46f93f553cd35428eac603f9a907e0aee7e`  
@@ -7292,7 +7292,7 @@ WORKDIR /go
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:238959f018cbf3138db4d3583aa256e12f25030a78668ef458ae71092fa833e7`  
-		Last Modified: Thu, 15 Jan 2026 19:31:58 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:31:53 GMT  
 		Size: 296.1 KB (296094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb9d4bc08b092267b3083b826637a46f93f553cd35428eac603f9a907e0aee7e`  
@@ -9427,7 +9427,7 @@ WORKDIR /go
 		Size: 66.7 MB (66660576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83b560385f3861ed5a056fb65f6efa479b98fb4edb93cd21d11160f19961a6e0`  
-		Last Modified: Fri, 02 Jan 2026 20:31:51 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:32:15 GMT  
 		Size: 131.6 MB (131594843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1cbe9b6a54e52c8b2ab9eae2cc83ece38c3a840f4401dd5ce0eaa7c0b2a89574`  
@@ -9435,7 +9435,7 @@ WORKDIR /go
 		Size: 76.4 MB (76445704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dab6126691825af24487c9098a95b109d61453c93511623aea195a0f10fe762e`  
-		Last Modified: Fri, 02 Jan 2026 20:48:26 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:48:33 GMT  
 		Size: 124.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -9624,7 +9624,7 @@ WORKDIR C:\go
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9cb457e4fca7d1f93e592e2115a63c026f25e9092614543850391223592acece`  
-		Last Modified: Thu, 15 Jan 2026 19:33:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:41:47 GMT  
 		Size: 1.3 KB (1330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b77fee076890e358ef243becb516ee4d6fc293f313486b19864eeaca09258961`  
@@ -9745,7 +9745,7 @@ WORKDIR C:\go
 		Size: 339.8 KB (339780 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:311b870b75cdc9a2d06ac512a9b4b444f3e1e6bafc53a2603d1b7ad33bbb25db`  
-		Last Modified: Thu, 15 Jan 2026 19:33:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:38:42 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:acd4d04a3047df77043399e63267a40b259da326470e6b1d74a470985a77199e`  
@@ -9852,7 +9852,7 @@ WORKDIR C:\go
 		Size: 339.8 KB (339780 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:311b870b75cdc9a2d06ac512a9b4b444f3e1e6bafc53a2603d1b7ad33bbb25db`  
-		Last Modified: Thu, 15 Jan 2026 19:33:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:38:42 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:acd4d04a3047df77043399e63267a40b259da326470e6b1d74a470985a77199e`  
@@ -9929,7 +9929,7 @@ WORKDIR C:\go
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9cb457e4fca7d1f93e592e2115a63c026f25e9092614543850391223592acece`  
-		Last Modified: Thu, 15 Jan 2026 19:33:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:41:47 GMT  
 		Size: 1.3 KB (1330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b77fee076890e358ef243becb516ee4d6fc293f313486b19864eeaca09258961`  
@@ -10589,7 +10589,7 @@ WORKDIR C:\go
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9cb457e4fca7d1f93e592e2115a63c026f25e9092614543850391223592acece`  
-		Last Modified: Thu, 15 Jan 2026 19:33:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:41:47 GMT  
 		Size: 1.3 KB (1330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b77fee076890e358ef243becb516ee4d6fc293f313486b19864eeaca09258961`  
@@ -10710,7 +10710,7 @@ WORKDIR C:\go
 		Size: 339.8 KB (339780 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:311b870b75cdc9a2d06ac512a9b4b444f3e1e6bafc53a2603d1b7ad33bbb25db`  
-		Last Modified: Thu, 15 Jan 2026 19:33:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:38:42 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:acd4d04a3047df77043399e63267a40b259da326470e6b1d74a470985a77199e`  
@@ -10788,7 +10788,7 @@ WORKDIR /go
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:238959f018cbf3138db4d3583aa256e12f25030a78668ef458ae71092fa833e7`  
-		Last Modified: Thu, 15 Jan 2026 19:31:58 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:31:53 GMT  
 		Size: 296.1 KB (296094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb9d4bc08b092267b3083b826637a46f93f553cd35428eac603f9a907e0aee7e`  
@@ -12126,7 +12126,7 @@ WORKDIR /go
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:238959f018cbf3138db4d3583aa256e12f25030a78668ef458ae71092fa833e7`  
-		Last Modified: Thu, 15 Jan 2026 19:31:58 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:31:53 GMT  
 		Size: 296.1 KB (296094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb9d4bc08b092267b3083b826637a46f93f553cd35428eac603f9a907e0aee7e`  
@@ -14365,7 +14365,7 @@ WORKDIR C:\go
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9cb457e4fca7d1f93e592e2115a63c026f25e9092614543850391223592acece`  
-		Last Modified: Thu, 15 Jan 2026 19:33:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:41:47 GMT  
 		Size: 1.3 KB (1330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b77fee076890e358ef243becb516ee4d6fc293f313486b19864eeaca09258961`  
@@ -14486,7 +14486,7 @@ WORKDIR C:\go
 		Size: 339.8 KB (339780 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:311b870b75cdc9a2d06ac512a9b4b444f3e1e6bafc53a2603d1b7ad33bbb25db`  
-		Last Modified: Thu, 15 Jan 2026 19:33:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:38:42 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:acd4d04a3047df77043399e63267a40b259da326470e6b1d74a470985a77199e`  
@@ -14593,7 +14593,7 @@ WORKDIR C:\go
 		Size: 339.8 KB (339780 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:311b870b75cdc9a2d06ac512a9b4b444f3e1e6bafc53a2603d1b7ad33bbb25db`  
-		Last Modified: Thu, 15 Jan 2026 19:33:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:38:42 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:acd4d04a3047df77043399e63267a40b259da326470e6b1d74a470985a77199e`  
@@ -14670,7 +14670,7 @@ WORKDIR C:\go
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9cb457e4fca7d1f93e592e2115a63c026f25e9092614543850391223592acece`  
-		Last Modified: Thu, 15 Jan 2026 19:33:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:41:47 GMT  
 		Size: 1.3 KB (1330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b77fee076890e358ef243becb516ee4d6fc293f313486b19864eeaca09258961`  
@@ -15237,7 +15237,7 @@ WORKDIR /go
 		Size: 66.7 MB (66660576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83b560385f3861ed5a056fb65f6efa479b98fb4edb93cd21d11160f19961a6e0`  
-		Last Modified: Fri, 02 Jan 2026 20:31:51 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:32:15 GMT  
 		Size: 131.6 MB (131594843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:65f6199a15922cf0533082f2bfb9bf03dc54fb7fdb4f830e8dae324efa57d8b9`  
@@ -19095,7 +19095,7 @@ WORKDIR /go
 		Size: 66.7 MB (66660576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83b560385f3861ed5a056fb65f6efa479b98fb4edb93cd21d11160f19961a6e0`  
-		Last Modified: Fri, 02 Jan 2026 20:31:51 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:32:15 GMT  
 		Size: 131.6 MB (131594843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:65f6199a15922cf0533082f2bfb9bf03dc54fb7fdb4f830e8dae324efa57d8b9`  
@@ -24905,7 +24905,7 @@ WORKDIR /go
 		Size: 66.7 MB (66660576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83b560385f3861ed5a056fb65f6efa479b98fb4edb93cd21d11160f19961a6e0`  
-		Last Modified: Fri, 02 Jan 2026 20:31:51 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:32:15 GMT  
 		Size: 131.6 MB (131594843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5879455bffdf44309863858d0d59a8e9f0a33052e7566e21dfd2ccf34700973c`  
@@ -28763,7 +28763,7 @@ WORKDIR /go
 		Size: 66.7 MB (66660576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83b560385f3861ed5a056fb65f6efa479b98fb4edb93cd21d11160f19961a6e0`  
-		Last Modified: Fri, 02 Jan 2026 20:31:51 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:32:15 GMT  
 		Size: 131.6 MB (131594843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5879455bffdf44309863858d0d59a8e9f0a33052e7566e21dfd2ccf34700973c`  
@@ -37236,7 +37236,7 @@ WORKDIR /go
 		Size: 66.7 MB (66660576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83b560385f3861ed5a056fb65f6efa479b98fb4edb93cd21d11160f19961a6e0`  
-		Last Modified: Fri, 02 Jan 2026 20:31:51 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:32:15 GMT  
 		Size: 131.6 MB (131594843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:65f6199a15922cf0533082f2bfb9bf03dc54fb7fdb4f830e8dae324efa57d8b9`  
@@ -38419,7 +38419,7 @@ WORKDIR /go
 		Size: 66.7 MB (66660576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83b560385f3861ed5a056fb65f6efa479b98fb4edb93cd21d11160f19961a6e0`  
-		Last Modified: Fri, 02 Jan 2026 20:31:51 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:32:15 GMT  
 		Size: 131.6 MB (131594843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f0c89a20e33326bd3dc067a98c23f95a9f71a46db050c57b5d95bf4165852889`  
@@ -38540,7 +38540,7 @@ $ docker pull golang@sha256:ae2f0a6447a6be70fd83cf4bb02d50000a72254a81dcd90175d4
 
 -	Layers:
 	-	`sha256:251ed63925b69cb1ae6c43d66c21286e2b568764789febddf6422992859fbda2`  
-		Last Modified: Thu, 15 Jan 2026 21:47:29 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:26:55 GMT  
 		Size: 10.6 MB (10595983 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9aee8303b9ad362854ab2b01dece83a5df7536fce18426d648253980a9da23d1`  
@@ -39095,7 +39095,7 @@ $ docker pull golang@sha256:ae2f0a6447a6be70fd83cf4bb02d50000a72254a81dcd90175d4
 
 -	Layers:
 	-	`sha256:251ed63925b69cb1ae6c43d66c21286e2b568764789febddf6422992859fbda2`  
-		Last Modified: Thu, 15 Jan 2026 21:47:29 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:26:55 GMT  
 		Size: 10.6 MB (10595983 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9aee8303b9ad362854ab2b01dece83a5df7536fce18426d648253980a9da23d1`  
@@ -39432,11 +39432,11 @@ $ docker pull golang@sha256:94c339a47df2fac80f5b7a88c3a385f8a07742b5986b481851ef
 
 -	Layers:
 	-	`sha256:62b2cb44dea685faaadb0a7597322b2e98da22bd565c7d052add83d224f3701c`  
-		Last Modified: Fri, 16 Jan 2026 00:26:29 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:46:58 GMT  
 		Size: 195.0 KB (195007 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fa9805fa4b0037800b11ff9cd154e6a0abefca83d9bfc74dc37e75c94d7b8b9e`  
-		Last Modified: Fri, 16 Jan 2026 00:26:30 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:46:58 GMT  
 		Size: 25.3 KB (25255 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -40738,11 +40738,11 @@ $ docker pull golang@sha256:94c339a47df2fac80f5b7a88c3a385f8a07742b5986b481851ef
 
 -	Layers:
 	-	`sha256:62b2cb44dea685faaadb0a7597322b2e98da22bd565c7d052add83d224f3701c`  
-		Last Modified: Fri, 16 Jan 2026 00:26:29 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:46:58 GMT  
 		Size: 195.0 KB (195007 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fa9805fa4b0037800b11ff9cd154e6a0abefca83d9bfc74dc37e75c94d7b8b9e`  
-		Last Modified: Fri, 16 Jan 2026 00:26:30 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:46:58 GMT  
 		Size: 25.3 KB (25255 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -42251,7 +42251,7 @@ $ docker pull golang@sha256:ae2f0a6447a6be70fd83cf4bb02d50000a72254a81dcd90175d4
 
 -	Layers:
 	-	`sha256:251ed63925b69cb1ae6c43d66c21286e2b568764789febddf6422992859fbda2`  
-		Last Modified: Thu, 15 Jan 2026 21:47:29 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:26:55 GMT  
 		Size: 10.6 MB (10595983 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9aee8303b9ad362854ab2b01dece83a5df7536fce18426d648253980a9da23d1`  
@@ -42588,11 +42588,11 @@ $ docker pull golang@sha256:94c339a47df2fac80f5b7a88c3a385f8a07742b5986b481851ef
 
 -	Layers:
 	-	`sha256:62b2cb44dea685faaadb0a7597322b2e98da22bd565c7d052add83d224f3701c`  
-		Last Modified: Fri, 16 Jan 2026 00:26:29 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:46:58 GMT  
 		Size: 195.0 KB (195007 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fa9805fa4b0037800b11ff9cd154e6a0abefca83d9bfc74dc37e75c94d7b8b9e`  
-		Last Modified: Fri, 16 Jan 2026 00:26:30 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:46:58 GMT  
 		Size: 25.3 KB (25255 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -43894,11 +43894,11 @@ $ docker pull golang@sha256:94c339a47df2fac80f5b7a88c3a385f8a07742b5986b481851ef
 
 -	Layers:
 	-	`sha256:62b2cb44dea685faaadb0a7597322b2e98da22bd565c7d052add83d224f3701c`  
-		Last Modified: Fri, 16 Jan 2026 00:26:29 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:46:58 GMT  
 		Size: 195.0 KB (195007 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fa9805fa4b0037800b11ff9cd154e6a0abefca83d9bfc74dc37e75c94d7b8b9e`  
-		Last Modified: Fri, 16 Jan 2026 00:26:30 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:46:58 GMT  
 		Size: 25.3 KB (25255 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -45377,7 +45377,7 @@ WORKDIR /go
 		Size: 66.7 MB (66660576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83b560385f3861ed5a056fb65f6efa479b98fb4edb93cd21d11160f19961a6e0`  
-		Last Modified: Fri, 02 Jan 2026 20:31:51 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:32:15 GMT  
 		Size: 131.6 MB (131594843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f0c89a20e33326bd3dc067a98c23f95a9f71a46db050c57b5d95bf4165852889`  
@@ -45498,7 +45498,7 @@ $ docker pull golang@sha256:ae2f0a6447a6be70fd83cf4bb02d50000a72254a81dcd90175d4
 
 -	Layers:
 	-	`sha256:251ed63925b69cb1ae6c43d66c21286e2b568764789febddf6422992859fbda2`  
-		Last Modified: Thu, 15 Jan 2026 21:47:29 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:26:55 GMT  
 		Size: 10.6 MB (10595983 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9aee8303b9ad362854ab2b01dece83a5df7536fce18426d648253980a9da23d1`  
@@ -46035,7 +46035,7 @@ WORKDIR /go
 		Size: 66.7 MB (66660576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83b560385f3861ed5a056fb65f6efa479b98fb4edb93cd21d11160f19961a6e0`  
-		Last Modified: Fri, 02 Jan 2026 20:31:51 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:32:15 GMT  
 		Size: 131.6 MB (131594843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:65f6199a15922cf0533082f2bfb9bf03dc54fb7fdb4f830e8dae324efa57d8b9`  
