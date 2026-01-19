@@ -81,7 +81,7 @@ CMD ["php" "-a"]
 
 -	Layers:
 	-	`sha256:c02d17997ce3d2c82e082235ea0b5152d06ee659c4e2fabcf1e0079312f1bcde`  
-		Last Modified: Tue, 13 Jan 2026 00:41:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:44 GMT  
 		Size: 28.2 MB (28228572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e4751327433c8028e07279fa17a42aac3c61b5dbfa6837e82d9c449fc510fd33`  
@@ -199,11 +199,11 @@ CMD ["php" "-a"]
 
 -	Layers:
 	-	`sha256:43595593b17008d0147d9ea53c9ed04f4ec8fde216c1d359e2de9daa9e0665f6`  
-		Last Modified: Tue, 13 Jan 2026 00:41:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:55 GMT  
 		Size: 25.8 MB (25757697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:061ca3d893ab1ae16a23297e373fc4fce007ae05b9774c68676663e95b9df268`  
-		Last Modified: Fri, 16 Jan 2026 23:28:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:28:31 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:38617453a900f8ca46633beffe8f40d073735658ebeff46ad33d0a234689b0e5`  
@@ -219,7 +219,7 @@ CMD ["php" "-a"]
 		Size: 14.4 MB (14439584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61e39e257e71f1dd0767f65bddd757eae36d4734b76574ee7a81f389a685f0ba`  
-		Last Modified: Fri, 16 Jan 2026 23:28:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:28:25 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d5884c048a2decf69395c921720461cad46f6806afc18a478683d37568c9ec3a`  
@@ -227,7 +227,7 @@ CMD ["php" "-a"]
 		Size: 38.6 MB (38596379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9629da9445b5a2cfb6caf3a6eee7f191fceb22f5d8550f8052c2e7161cace39`  
-		Last Modified: Fri, 16 Jan 2026 23:28:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:28:32 GMT  
 		Size: 2.5 KB (2450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b810ff780f036c5822589984c3948631a263fa88fc68bcfe1e4325dbe8a07fd`  
@@ -447,7 +447,7 @@ CMD ["php" "-a"]
 		Size: 98.2 MB (98166823 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f831310c79303333502d127b6e96426d7184c19fbb10738201eb9228f6fd72c`  
-		Last Modified: Fri, 16 Jan 2026 23:21:40 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:27:42 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ec49faedda85d47968af253042f916dc4731a9e896b0ee31aa2f7de6739cb7f`  
@@ -459,7 +459,7 @@ CMD ["php" "-a"]
 		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9d126b03ae813eb6826d3807a5a8fd8a56058078756d232f18490bfe4d2aebdc`  
-		Last Modified: Fri, 16 Jan 2026 23:21:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:21:43 GMT  
 		Size: 41.8 MB (41803331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a0be0b56a99cd5806dde267cb168c18e6f4a652d5120a222064335a01f6408e1`  
@@ -565,11 +565,11 @@ CMD ["php" "-a"]
 		Size: 101.5 MB (101523036 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5cd40dd29654e9d9272dfbe06f7a0801ab2ec13758becdae9eb80c47887a5099`  
-		Last Modified: Fri, 16 Jan 2026 23:17:14 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:17:02 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f5ae4b6b5affa9258e007c53cfbe3889ef159014a168ca9fa66b21cdba104626`  
-		Last Modified: Fri, 16 Jan 2026 23:29:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:17:03 GMT  
 		Size: 14.4 MB (14440835 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c221bbd607dc47028382a93b621b0753a6b793fd8ade4bb44794ac4a122c5eee`  
@@ -671,7 +671,7 @@ CMD ["php" "-a"]
 
 -	Layers:
 	-	`sha256:c063a3c188d3088513ac303ee5a03a6c0ddff0d68a1e46804a822134a25bf8e8`  
-		Last Modified: Tue, 13 Jan 2026 00:40:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:02 GMT  
 		Size: 28.5 MB (28513755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6a51a9bfcf7cf609d0809aa35fe905b8337228e88a749e1ab55783bf9036c2f1`  
@@ -679,7 +679,7 @@ CMD ["php" "-a"]
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:031cebecc9a3bf8a4330bb9afd89498969466d0b89923bfe83d8b23d200df1ad`  
-		Last Modified: Tue, 13 Jan 2026 01:39:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:39:25 GMT  
 		Size: 80.7 MB (80673057 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d27ad6411f6e09f08f7101bc8738b0def3a7fc371dd25183cbec81d8e5129bc`  
@@ -691,7 +691,7 @@ CMD ["php" "-a"]
 		Size: 14.4 MB (14439160 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f66290314368065858444f2202cad16b1203e64d6825b7ef6a22b33f41aa768`  
-		Last Modified: Fri, 16 Jan 2026 23:31:38 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:31:51 GMT  
 		Size: 489.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ff9488d522fe17a4bca3b7a2ce77f2176e2b3531f8914b7e39988f896b7a1bd`  
@@ -699,7 +699,7 @@ CMD ["php" "-a"]
 		Size: 39.5 MB (39533380 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f6e17b2fc9d988de8f4e2d70e9d632b5b7f240e43c0d9088c166d3c64a92cba`  
-		Last Modified: Fri, 16 Jan 2026 23:31:38 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:31:52 GMT  
 		Size: 2.5 KB (2456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ced68d328d5213df147b591f5b6d28d0527d70707c21ea873d39506b2329f237`  
@@ -789,7 +789,7 @@ CMD ["php" "-a"]
 		Size: 32.1 MB (32068709 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d00c9d4d1f21b6d304a55b7e116c52ef24850215b997b0a7114c53786a7900dd`  
-		Last Modified: Tue, 13 Jan 2026 23:34:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:35:05 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5b37bde8bf655d33e96bd4868142d3ae6d50517082efa680a17e47b74d623b4`  
@@ -797,11 +797,11 @@ CMD ["php" "-a"]
 		Size: 103.3 MB (103329187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a0b68a31428e2045dc30793a85499acb8c152ace336ad3f0098f98076ea7a713`  
-		Last Modified: Tue, 13 Jan 2026 23:35:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:34:54 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66d55b0a87b1ee60e2d017000a48f83972b7ad690f234db9120ab905e3352327`  
-		Last Modified: Fri, 16 Jan 2026 23:33:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:33:57 GMT  
 		Size: 14.4 MB (14441447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22de8344019b12fd5f478c59c7fbc0d056533c73efe19d0893556cc966ca0da9`  
@@ -813,7 +813,7 @@ CMD ["php" "-a"]
 		Size: 43.3 MB (43278757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd17d4a44415457d8f0a62824456a8f2fade02751cf511e523c1338dd01c4168`  
-		Last Modified: Fri, 16 Jan 2026 23:33:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:33:56 GMT  
 		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92f05dedcc7415f4538fa0fc8c6fdd22049ade67c05462ca03926b0f48e33857`  
@@ -837,7 +837,7 @@ $ docker pull php@sha256:08698466fed082b6e0e183d0a29d81e1617954dabb98c6a0b3b2810
 
 -	Layers:
 	-	`sha256:133c7147149df697bb037fc1a3ec7b7a9413db6044dbea64321ef7cd8d7ba4c5`  
-		Last Modified: Fri, 16 Jan 2026 23:33:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:58:36 GMT  
 		Size: 6.4 MB (6380472 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:62c3b03860b29caace679a38edfdfea6b5bc2c82f63fc28a457a570563b8b328`  
@@ -907,7 +907,7 @@ CMD ["php" "-a"]
 		Size: 26.9 MB (26884415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3766798529cf3b6bb78b89f92c2ddd3c8d692bdbefd74a009535cc29fc6111ec`  
-		Last Modified: Tue, 13 Jan 2026 01:20:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:20:59 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:654f3524fd2fc0fad2d1735b4e8710e6a4ca75fee8f6d05751fb7556521ceeb6`  
@@ -927,7 +927,7 @@ CMD ["php" "-a"]
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:993889e7a3598a32c9ef7fdd5270c90d4a73d4ef51b1e905c5f3ce30bdb2fdb0`  
-		Last Modified: Sat, 17 Jan 2026 00:21:50 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:22:01 GMT  
 		Size: 39.7 MB (39687836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:08510c5bb5dd09987e899d2704eca1ec700f1dd4614b5940614cd0342e90c1dc`  
@@ -935,7 +935,7 @@ CMD ["php" "-a"]
 		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:03ea3e26b4dc317b68634b0eca5b56d7b8d3b3446478288329ffabf163ebd0bc`  
-		Last Modified: Sat, 17 Jan 2026 00:21:49 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:21:54 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
