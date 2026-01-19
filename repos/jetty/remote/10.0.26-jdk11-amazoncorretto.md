@@ -82,7 +82,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 17.1 MB (17112618 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d45a092efb8c994dde24b872b287a7bf1297e135bc9e93bae2caeee6529d5ecc`  
@@ -106,11 +106,11 @@ $ docker pull jetty@sha256:26efc5b67e8d782e127d9e22a27d1362be2cae5c5a7413ef825c5
 
 -	Layers:
 	-	`sha256:bbe4f40df3ee31074c98aaed266de35cdad76be35a1a603b80b32c20c7006996`  
-		Last Modified: Fri, 16 Jan 2026 03:16:24 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:16:04 GMT  
 		Size: 5.9 MB (5936228 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:783e454e7afea213cf1b91665247fcbd217d04e37da99ed01da7375e1b1c892c`  
-		Last Modified: Fri, 16 Jan 2026 03:16:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:16:03 GMT  
 		Size: 17.4 KB (17358 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -177,7 +177,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 64.8 MB (64770434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6024b7b4e65480aa98d6c15d028da54111bf46413a4c558ce0fdc28ad5d6500b`  
-		Last Modified: Thu, 15 Jan 2026 22:08:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:07:08 GMT  
 		Size: 145.1 MB (145142605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb66a802a3731a311c48e76e372dbb65b20ad39709156a540d6e238e06cb39d8`  
@@ -185,7 +185,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 17.2 MB (17155984 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:381e6e2a393509f8086a5a41a972d0e3230ab52c7f93d04cc45fa0f0f87e3107`  
