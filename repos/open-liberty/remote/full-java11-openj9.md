@@ -502,7 +502,7 @@ $ docker pull open-liberty@sha256:9ced1c9010de025c17e194956445b1081857d814d0180b
 
 -	Layers:
 	-	`sha256:9a83c8ff72aa2de0c675830edc7bc47e54080b7aa04bf871626a914e061ed0b7`  
-		Last Modified: Fri, 16 Jan 2026 01:31:59 GMT  
+		Last Modified: Fri, 16 Jan 2026 04:17:11 GMT  
 		Size: 5.7 MB (5721449 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:280e15216d8743ae6f6929dfac590034808ea5c50a4c0979f3e0acced03681bb`  
