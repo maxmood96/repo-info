@@ -443,6 +443,6 @@ $ docker pull xwiki@sha256:b519fed04cbcfcba02d311a2130adafd09e4088d28edccb3d02f1
 		Size: 9.1 MB (9110954 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1bc0a1307df5a8a0e8514e3ae2bd063c40f7da66b96abd22212ef8c4c000647c`  
-		Last Modified: Fri, 16 Jan 2026 07:07:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:27:29 GMT  
 		Size: 40.0 KB (39962 bytes)  
 		MIME: application/vnd.in-toto+json
