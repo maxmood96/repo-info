@@ -125,7 +125,7 @@ $ docker pull satosa@sha256:053b3548aded493f8b8d389ffdfa856d72a53956ec08f9d6cb9d
 		Size: 783.2 KB (783219 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:aa32fe9c93af693fbacaf0283ddfeb2882849bc3b6e1066ee29e4dd85060f1fa`  
-		Last Modified: Mon, 08 Dec 2025 21:13:05 GMT  
+		Last Modified: Mon, 08 Dec 2025 23:14:07 GMT  
 		Size: 23.0 KB (22960 bytes)  
 		MIME: application/vnd.in-toto+json
 
