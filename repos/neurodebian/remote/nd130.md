@@ -80,7 +80,7 @@ $ docker pull neurodebian@sha256:dbfc8e24d44e4c71f66017bcedf813c4a42d2b360c8c787
 		Size: 3.6 MB (3614068 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3f00b2e3933218e49feba543ae9da5f9a99e694fa143a0b369f3b1dc6d0d0fbd`  
-		Last Modified: Tue, 13 Jan 2026 02:32:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:08:58 GMT  
 		Size: 14.3 KB (14251 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -127,7 +127,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Size: 270.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:da1ec7811cc5fffb4d35b28f25ffe926c9d946a0287fc98559205e5ee8aad5d7`  
-		Last Modified: Tue, 13 Jan 2026 02:36:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:35:50 GMT  
 		Size: 91.0 KB (91029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
