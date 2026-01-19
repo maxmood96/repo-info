@@ -75,7 +75,7 @@ CMD ["-M" "--repl"]
 		Size: 14.2 MB (14245329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:669f1a65d0fae852f6718306326728109ed1ddecfbfd653037dda93a9669e4a7`  
-		Last Modified: Wed, 07 Jan 2026 18:58:45 GMT  
+		Last Modified: Sat, 08 Nov 2025 18:00:27 GMT  
 		Size: 91.3 MB (91279717 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f288373361582707b01fea1abf34f4ff1053f3baee5acb21cf34af46e4f8c85`  
@@ -87,7 +87,7 @@ CMD ["-M" "--repl"]
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2828b1f31f34222a14ca9ef237d73d12b5729c5c07bb3fee3ba7fcc1e007eff8`  
@@ -203,11 +203,11 @@ CMD ["-M" "--repl"]
 		Size: 2.3 KB (2277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1719fbed98eaf4008c6cc560dc27f6cff73dc15c4a8ea8032920bfdabefa8299`  
-		Last Modified: Thu, 11 Dec 2025 22:40:26 GMT  
+		Last Modified: Thu, 11 Dec 2025 22:40:18 GMT  
 		Size: 26.3 MB (26284021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2ed45ec8c4c29be1cc1490fc4db82a1c878b30ca82693e45bf2ce4556c58bd1`  
@@ -235,7 +235,7 @@ $ docker pull clojure@sha256:999b74e72724717cc6eaada416a2cd04ed0862f2a6bca7881a3
 
 -	Layers:
 	-	`sha256:b131534ffaf4422a79bd00c97972f9d032c01a1420e6309abd38b492ed1a9f17`  
-		Last Modified: Fri, 12 Dec 2025 01:43:41 GMT  
+		Last Modified: Thu, 11 Dec 2025 22:40:17 GMT  
 		Size: 1.3 MB (1331151 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1feaad49278eb3879747d34279c8a4016218964201d83dfe34bfe3ac553bd467`  
