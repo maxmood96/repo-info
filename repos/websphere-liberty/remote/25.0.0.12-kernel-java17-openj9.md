@@ -353,7 +353,7 @@ $ docker pull websphere-liberty@sha256:9f3caaf6546d4ae1ad3c42a042a492efcb7d70dd5
 		Size: 3.9 MB (3873505 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:79e14a78fbf75463d46b96c1cd9449dda9ddb31589f3cd2ee33784caaf93363b`  
-		Last Modified: Fri, 16 Jan 2026 01:38:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 04:21:50 GMT  
 		Size: 41.0 KB (40970 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -647,7 +647,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 33.1 KB (33110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1d520e7c05ea9a64837b5f722fa3516be7a8d163463dd9b84389193b8736dc49`  
-		Last Modified: Thu, 15 Jan 2026 23:59:46 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:59:55 GMT  
 		Size: 18.0 MB (18035707 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a45338bc4c13846cfb5be50bcb77f164e5f9d67982a3bb585a72467c17dec172`  
