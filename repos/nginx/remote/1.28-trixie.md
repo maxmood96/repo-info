@@ -549,7 +549,7 @@ $ docker pull nginx@sha256:0551c79169568e1b3fa0eab7db6622511eb560868154496506eee
 		Size: 2.8 MB (2835893 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:816537e3f48e9e0742ca34faf9ea9fd1fc39bc4b28477df1e45452c2eda13a42`  
-		Last Modified: Tue, 13 Jan 2026 03:52:18 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:26:17 GMT  
 		Size: 33.9 KB (33900 bytes)  
 		MIME: application/vnd.in-toto+json
 
