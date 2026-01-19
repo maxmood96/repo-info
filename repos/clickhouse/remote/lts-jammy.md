@@ -103,7 +103,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3da24271c02ef1d51851e13c9180fe586b6499a684a5d0b762e793f67c7b348a`  
-		Last Modified: Thu, 15 Jan 2026 22:12:13 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:11:58 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9af0ff00bd76836cc516373a39fbe657144cb050655d1788129ccab203a20da1`  
@@ -223,7 +223,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:178625e79308f5b24a28acea16bfc338aa97911935ad1038cd260a830c4b21eb`  
-		Last Modified: Thu, 15 Jan 2026 22:11:58 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:12:07 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:696ec49e708558d4523f56fb769ab640f6d7876636d963e16ae9fd1fd6b3cdf8`  
@@ -255,6 +255,6 @@ $ docker pull clickhouse@sha256:b49ec4e7cacbb4063ef4b014c20533cc848fad443c3cbddb
 
 -	Layers:
 	-	`sha256:6d7fd1fc6025d9d3cdc3f1111b5502b5712170dd438f110ab07d697f387be06a`  
-		Last Modified: Thu, 15 Jan 2026 22:51:29 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:11:58 GMT  
 		Size: 26.3 KB (26257 bytes)  
 		MIME: application/vnd.in-toto+json
