@@ -101,15 +101,15 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:996467dfb4d0179a2f091bc2a9d9749646d7fc320067d1147a6df2b4833f1c82`  
-		Last Modified: Thu, 15 Jan 2026 22:19:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:19:45 GMT  
 		Size: 17.0 MB (16975950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14c9275308302d364422df0f3e02503135621d8a4b49a0c18580cf9220532743`  
-		Last Modified: Thu, 15 Jan 2026 22:20:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:14 GMT  
 		Size: 53.0 MB (52978745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ac4b4cf16a8ad1b819f8041978350794113eb509aba19c5cd47bd77a053c335`  
-		Last Modified: Thu, 15 Jan 2026 22:20:12 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:abb78f73258bc413aae5281eb128ee526870ba076049a4526b38041362fe99c6`  
@@ -145,11 +145,11 @@ $ docker pull sonarqube@sha256:8ec6058661f0e524827c727314bcea29360e4bfa27a2f90f1
 
 -	Layers:
 	-	`sha256:fc114faac7925d7f772552e82851f38f042279dda95f059c0a4a62a0f4377f86`  
-		Last Modified: Fri, 16 Jan 2026 01:02:30 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:54:05 GMT  
 		Size: 4.8 MB (4807491 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed3c1d26bfb11030ac027cbc9101f7134003a609b726a0edcec81ccfd57e899d`  
-		Last Modified: Fri, 16 Jan 2026 01:02:30 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:54:06 GMT  
 		Size: 19.1 KB (19098 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -239,7 +239,7 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:36bf709aa36d66b784b0ba1aa3276848f28501175eeb4d7a310b1a98578f8558`  
-		Last Modified: Tue, 13 Jan 2026 07:03:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:066d9c7316405755c4355dfd9b742623829c8c1c49462c4e6c938a83b810b7c8`  
@@ -291,6 +291,6 @@ $ docker pull sonarqube@sha256:5a44938b2c15ec7f71cc36182d2d675f740f976448c11fb1b
 		Size: 4.8 MB (4807950 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:738cbc37f3e429a9fb349695b26060df788d1ac95af17b2d1734ee3f0e02e972`  
-		Last Modified: Fri, 16 Jan 2026 03:54:14 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:06:20 GMT  
 		Size: 19.2 KB (19191 bytes)  
 		MIME: application/vnd.in-toto+json
