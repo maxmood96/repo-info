@@ -74,7 +74,7 @@ CMD ["irb"]
 		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:811e3f4f891ced55198697cd10c4ba3afb312f6df9859686613f7b8c89d6a424`  
-		Last Modified: Wed, 17 Dec 2025 20:09:12 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:09:02 GMT  
 		Size: 39.3 MB (39275442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:133a16c53999e27764b899a47440a728b47e4d52aff0ac21efe6796d422756a8`  
@@ -343,11 +343,11 @@ $ docker pull ruby@sha256:8e96174e53d3880c4d0e6418c13a17952815361f6c7afaec0b0a4d
 
 -	Layers:
 	-	`sha256:99ed618fcb900e178c796565b3f57485a359097c418124d3abad6c86919fa9a9`  
-		Last Modified: Wed, 17 Dec 2025 21:58:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:10:02 GMT  
 		Size: 206.9 KB (206891 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:11533f2d193b8dd75462bc6521e7ca900f8d3f33aa75c8419ffcd8f4fecc584c`  
-		Last Modified: Wed, 17 Dec 2025 21:58:39 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:10:02 GMT  
 		Size: 22.6 KB (22585 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -509,7 +509,7 @@ $ docker pull ruby@sha256:5b8d17a5d593a74ce32328a2844d767b41b4a27facfb9ee3e47bc0
 
 -	Layers:
 	-	`sha256:4c99d9312daf131164d51c3e87b8e787560fb346ecd096a72a26c8aab062006d`  
-		Last Modified: Wed, 17 Dec 2025 22:01:32 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:16:59 GMT  
 		Size: 201.9 KB (201928 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4703a7dce915674b4e3f0316774ccf491ea53ba452095736afe1b856b13e7a8c`  
@@ -643,11 +643,11 @@ CMD ["irb"]
 
 -	Layers:
 	-	`sha256:e6b06613ca2e7cdf3e8ebbe71ca45137242628a4a3a4bfcb7a9f76d0d5b0e653`  
-		Last Modified: Sun, 07 Dec 2025 14:06:46 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:559a492a9261e799874f27f97a8210839dee9952835594c19282c304847eaf8b`  
-		Last Modified: Tue, 09 Dec 2025 20:00:51 GMT  
+		Last Modified: Tue, 09 Dec 2025 20:00:43 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d12ccd0f097ea2957b693f6a9b7c79a8bca9591519603a470de8b89a98930be3`  

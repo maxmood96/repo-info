@@ -240,7 +240,7 @@ CMD ["irb"]
 
 -	Layers:
 	-	`sha256:7c33f0ee8e5c8636ae24c5685841e42e721bbb2973888f046a05ab9eb619e682`  
-		Last Modified: Tue, 13 Jan 2026 00:42:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:23 GMT  
 		Size: 26.2 MB (26208578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dbaf0143e7e43141f7be9c33c221ed05fbcf60060d94c5fa283abcca1f331e9f`  
@@ -276,7 +276,7 @@ $ docker pull ruby@sha256:cf44b5673bc838ff1d48b2b37c086d5a46f5983f8fa2100a0c7e68
 
 -	Layers:
 	-	`sha256:93333b6d38964bbc309542320063865599c93cad682b3af5f4843b1f34d9dc66`  
-		Last Modified: Tue, 13 Jan 2026 22:02:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 18:00:47 GMT  
 		Size: 2.2 MB (2217434 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f33e88fb81def5828f8423d6ff702d7198c6ece2718837b6989230cc22a64193`  
@@ -331,7 +331,7 @@ CMD ["irb"]
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:15ca7922754598b4e7b16f0cce5752cd24ce6048105f14bb6d9ff60fa7353550`  
-		Last Modified: Tue, 13 Jan 2026 17:55:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:55:13 GMT  
 		Size: 1.3 MB (1261707 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b68822db04c33c7c9a0be337a9e6e8710ce8db2e4b50b26cb1cd7a734f26ebb5`  
@@ -426,7 +426,7 @@ CMD ["irb"]
 		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b37708885362e6dd1f4056e4aebfdad92e6f6f18fc309611f75830e37801c847`  
-		Last Modified: Tue, 13 Jan 2026 17:56:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:56:28 GMT  
 		Size: 42.4 MB (42366590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5f811bb7079745422d7c0ea0e4d2bcf4e94833a74512b2cafc56b075b03a761`  
@@ -501,7 +501,7 @@ CMD ["irb"]
 
 -	Layers:
 	-	`sha256:9a275bb13cf8b3e9db52a41b6b4ff22ee1ffed00394f6deddd2de45044bd3bae`  
-		Last Modified: Tue, 13 Jan 2026 00:57:13 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:57:06 GMT  
 		Size: 33.6 MB (33595600 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dbd359a7e5d3b012a0e1f773e5ca872b7185e1ae4c53f7a9a7d797ae3eaaf8fb`  
@@ -509,7 +509,7 @@ CMD ["irb"]
 		Size: 1.3 MB (1309726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:49eeff64fa1ee2c5a20375771788d22ec3d5ad95481b75598a70ada63b47d8fb`  
-		Last Modified: Tue, 13 Jan 2026 05:19:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:19:26 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f085ab932c13778f15a4f85e79b8cd40078ea31cafcaa0e8b6019f2498095c86`  
@@ -596,7 +596,7 @@ CMD ["irb"]
 		Size: 1.2 MB (1248002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae37805c4126b550aa387e73fa7be996c3c367d48b0361e80a75c4533ddc6f85`  
-		Last Modified: Sat, 17 Jan 2026 06:08:20 GMT  
+		Last Modified: Sat, 17 Jan 2026 06:08:05 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d6d13864dd6aa3a5d6041081ba5fc194bab8440f678e7b93460b5052fa4f783c`  
@@ -628,7 +628,7 @@ $ docker pull ruby@sha256:bd703e034a7912d1fab1c62f82d932f4c934ad7ae93a1adf862b77
 		Size: 2.2 MB (2209946 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6664d93ebbd130aaee5d58267c0a0b8556ec0ff661bf71e22c94cdada8debced`  
-		Last Modified: Sat, 17 Jan 2026 09:59:17 GMT  
+		Last Modified: Sat, 17 Jan 2026 06:08:05 GMT  
 		Size: 24.4 KB (24394 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -711,10 +711,10 @@ $ docker pull ruby@sha256:1305a716fdfde5f8efaf99070249fda7fcc0550bca5f20857b8987
 
 -	Layers:
 	-	`sha256:66f43d0c4c2b1d5ac48a574472a17d0d70cd5079e21250e1c0a180aea954466c`  
-		Last Modified: Tue, 13 Jan 2026 22:03:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:55:24 GMT  
 		Size: 2.2 MB (2217443 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d78cb0c8adb21bd91985fece303445d8ade466a3907ca06266326b06c2d19559`  
-		Last Modified: Tue, 13 Jan 2026 22:03:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:55:24 GMT  
 		Size: 24.3 KB (24320 bytes)  
 		MIME: application/vnd.in-toto+json
