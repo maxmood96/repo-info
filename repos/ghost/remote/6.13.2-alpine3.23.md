@@ -95,11 +95,11 @@ CMD ["node" "current/index.js"]
 		Size: 446.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a042a68d544d0e6e4af4122ae40be7b77648d26905a2090b25bc7494bbb22840`  
-		Last Modified: Fri, 16 Jan 2026 21:53:28 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:53:36 GMT  
 		Size: 821.9 KB (821904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:153d1b71d487941b613e2eae005aabdf6f1626041fd953b1bad75dcd1bb5a5ec`  
-		Last Modified: Fri, 16 Jan 2026 21:53:28 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:53:41 GMT  
 		Size: 928.3 KB (928338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3bd27759c78d3456cb0a43fdcce8bc5257f49e71e5fac8bee7760338bf5947d1`  
@@ -135,7 +135,7 @@ $ docker pull ghost@sha256:a6c58b116386808827fae97b5cd4e4c369ccf8b0258ad7dd69e44
 
 -	Layers:
 	-	`sha256:13a8e432a2560ff262b164884933a7f97e6393fbfe9e855827e44dd85fbc4aa6`  
-		Last Modified: Fri, 16 Jan 2026 21:53:28 GMT  
+		Last Modified: Fri, 16 Jan 2026 22:45:47 GMT  
 		Size: 3.4 MB (3380529 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5bcb20062eda86d699ac09b7c815241e18aad84beb68635a2f40175751eeb5f8`  
