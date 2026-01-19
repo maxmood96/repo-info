@@ -1827,7 +1827,7 @@ $ docker pull alpine@sha256:ef8aa9a27ab9698e49c3793630641760df11addf8511b3dd0bd9
 
 -	Layers:
 	-	`sha256:a5db37e99aae3fdbdb306503459a20068bf712be2e154642ef0eb4d72a1ad1bf`  
-		Last Modified: Wed, 08 Oct 2025 21:01:08 GMT  
+		Last Modified: Mon, 08 Dec 2025 10:46:35 GMT  
 		Size: 79.6 KB (79613 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6bc8b123ea05bca557bb67233e85297cd4feddcecc109e4affe2de8da425ec9b`  
@@ -2240,7 +2240,7 @@ $ docker pull alpine@sha256:ef8aa9a27ab9698e49c3793630641760df11addf8511b3dd0bd9
 
 -	Layers:
 	-	`sha256:a5db37e99aae3fdbdb306503459a20068bf712be2e154642ef0eb4d72a1ad1bf`  
-		Last Modified: Wed, 08 Oct 2025 21:01:08 GMT  
+		Last Modified: Mon, 08 Dec 2025 10:46:35 GMT  
 		Size: 79.6 KB (79613 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6bc8b123ea05bca557bb67233e85297cd4feddcecc109e4affe2de8da425ec9b`  
@@ -2633,7 +2633,7 @@ CMD ["/bin/sh"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3046,7 +3046,7 @@ CMD ["/bin/sh"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
