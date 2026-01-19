@@ -227,7 +227,7 @@ $ docker pull crate@sha256:20454104972590ecee7bfadc2e0a9c23a73bd45625e7942854a30
 
 -	Layers:
 	-	`sha256:24ed7c16ea6bb876f70125e1e0f702e220361e1fed5ffff77fcf79abbaa04cd5`  
-		Last Modified: Mon, 05 Jan 2026 19:11:12 GMT  
+		Last Modified: Mon, 05 Jan 2026 21:39:12 GMT  
 		Size: 5.2 MB (5188985 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:127491178df144883dfa88b10e4117be855880c9abbb59f622ef9eda55f6639e`  
