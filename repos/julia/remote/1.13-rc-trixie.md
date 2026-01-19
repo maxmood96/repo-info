@@ -129,11 +129,11 @@ CMD ["julia"]
 
 -	Layers:
 	-	`sha256:d637807aba98f742a62ad9b0146579ceb0297a3c831f56b2361664b7f5fbc75b`  
-		Last Modified: Tue, 13 Jan 2026 00:42:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:49 GMT  
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee2ad9fb1c4f035a2734fa3ea41def006a7954a6439e0f568f05e0e9fb20b7ff`  
-		Last Modified: Tue, 13 Jan 2026 22:54:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:55:12 GMT  
 		Size: 6.2 MB (6152014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ae214f7fe8aa19f715c202c8ae4cd1822de34a615a5baf5d113be8c2dd9603e`  
@@ -165,7 +165,7 @@ $ docker pull julia@sha256:4e8ea14a899b2e0ae0a732c2343c0bce1beda172b6efabdd7280e
 		Size: 2.2 MB (2241185 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:da78a8581d90ff9e9cb2bc5d3393b901168f81ee0d5e0a4bf837d6ae4430f7fa`  
-		Last Modified: Tue, 13 Jan 2026 22:54:54 GMT  
+		Last Modified: Wed, 14 Jan 2026 00:03:34 GMT  
 		Size: 17.3 KB (17332 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -211,11 +211,11 @@ CMD ["julia"]
 		Size: 31.3 MB (31288476 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad64e4c6c8448a6c25978a70df1df64b32cc6d6de4669dc03264e0132cac80dd`  
-		Last Modified: Tue, 13 Jan 2026 22:54:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:55:02 GMT  
 		Size: 6.4 MB (6429262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9ff3f8ede76321fca7b77f555985f1ce06a216256b8f72c4cd1eed5458a9f5fa`  
-		Last Modified: Tue, 13 Jan 2026 22:54:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:56:05 GMT  
 		Size: 243.0 MB (242964670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a38b9b05a3f4af83acac23cc85c8ffdaacef692fa118dbaf24e2294108d689c`  
