@@ -79,7 +79,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 3.6 MB (3642569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d10f7056aa72ef8463a31e6afa1dec61d746d3cec587e13de9bcf28396caa037`  
-		Last Modified: Thu, 11 Dec 2025 21:22:07 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:21:58 GMT  
 		Size: 279.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d56024c76d43582ac2f12311746a23ad83f148c5b42da7c957da34b6cdac498`  
@@ -103,7 +103,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 11.8 MB (11773781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e504a5513a054282de4e3d4006c910c7003f8804e45058cf073a0422f0212d1`  
-		Last Modified: Thu, 11 Dec 2025 21:22:07 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:22:00 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9d818200c6c4e7df4884a358b6f80bca9c959914eced87214ae2c44e58fd35b`  
@@ -111,7 +111,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d217bc1e57c2c30506373ba1fe825b2fe61e5f1ae8585753f0ea1989f9c9f31f`  
-		Last Modified: Thu, 11 Dec 2025 21:22:07 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:22:01 GMT  
 		Size: 6.3 KB (6282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -207,7 +207,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ce46991d2c4c48fd52d13891e1b5eb0777120c6d83d07fcc82f06c4340cfb6ba`  
-		Last Modified: Thu, 11 Dec 2025 21:22:05 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:21:39 GMT  
 		Size: 280.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af32475cc26ad10355d0ebd8d9c80f88c7f6c44bcf28115edc647d31b95f9884`  
@@ -263,6 +263,6 @@ $ docker pull influxdb@sha256:e77a7505f9f1c8c8b7b80194b833dd81001c9138a0903c7724
 		Size: 915.1 KB (915137 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e7b4d294b1204d82261147c85c10da7d18f3fff5439e60155204f31729b2b191`  
-		Last Modified: Thu, 11 Dec 2025 21:21:40 GMT  
+		Last Modified: Fri, 12 Dec 2025 00:20:46 GMT  
 		Size: 31.0 KB (31039 bytes)  
 		MIME: application/vnd.in-toto+json

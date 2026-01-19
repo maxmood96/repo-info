@@ -69,7 +69,7 @@ CMD ["influxd"]
 		Size: 252.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c18ad3cf56c36afce2bd43874b271d452c70a98b369b3108ea1a68c2d1093e92`  
-		Last Modified: Tue, 13 Jan 2026 04:02:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:02:05 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

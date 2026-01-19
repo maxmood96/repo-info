@@ -63,7 +63,7 @@ CMD ["influxd-meta"]
 		Size: 194.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a91888eb7d9961fd828a172be924f04fc445944a4a20a7c1b5d0cdba26ca1429`  
-		Last Modified: Tue, 13 Jan 2026 04:02:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:02:01 GMT  
 		Size: 371.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
