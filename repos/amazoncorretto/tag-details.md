@@ -1476,7 +1476,7 @@ $ docker pull amazoncorretto@sha256:065e0b9109b506d67f7777faadb123f518e5a53d9514
 
 -	Layers:
 	-	`sha256:131bcb8a18fedfda13fbeb07c0f17c22e936e572cb8579cc879bb9409e8b0e6a`  
-		Last Modified: Thu, 15 Jan 2026 22:48:46 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:09:21 GMT  
 		Size: 5.2 MB (5196823 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2b03d159f1917a1fff4fc6371d92d9baf289d84212ff3d0b4fcaa3b1eeb17666`  
@@ -4401,7 +4401,7 @@ $ docker pull amazoncorretto@sha256:065e0b9109b506d67f7777faadb123f518e5a53d9514
 
 -	Layers:
 	-	`sha256:131bcb8a18fedfda13fbeb07c0f17c22e936e572cb8579cc879bb9409e8b0e6a`  
-		Last Modified: Thu, 15 Jan 2026 22:48:46 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:09:21 GMT  
 		Size: 5.2 MB (5196823 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2b03d159f1917a1fff4fc6371d92d9baf289d84212ff3d0b4fcaa3b1eeb17666`  
@@ -15289,7 +15289,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39efdfa875cf11df5af65d4582d8a8c511a684ff9b183b51bad538fe768d8495`  
-		Last Modified: Sun, 04 Jan 2026 05:14:08 GMT  
+		Last Modified: Wed, 05 Nov 2025 01:07:40 GMT  
 		Size: 180.7 MB (180725412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15430,7 +15430,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39efdfa875cf11df5af65d4582d8a8c511a684ff9b183b51bad538fe768d8495`  
-		Last Modified: Sun, 04 Jan 2026 05:14:08 GMT  
+		Last Modified: Wed, 05 Nov 2025 01:07:40 GMT  
 		Size: 180.7 MB (180725412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15571,7 +15571,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39efdfa875cf11df5af65d4582d8a8c511a684ff9b183b51bad538fe768d8495`  
-		Last Modified: Sun, 04 Jan 2026 05:14:08 GMT  
+		Last Modified: Wed, 05 Nov 2025 01:07:40 GMT  
 		Size: 180.7 MB (180725412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16558,7 +16558,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39efdfa875cf11df5af65d4582d8a8c511a684ff9b183b51bad538fe768d8495`  
-		Last Modified: Sun, 04 Jan 2026 05:14:08 GMT  
+		Last Modified: Wed, 05 Nov 2025 01:07:40 GMT  
 		Size: 180.7 MB (180725412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16699,7 +16699,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39efdfa875cf11df5af65d4582d8a8c511a684ff9b183b51bad538fe768d8495`  
-		Last Modified: Sun, 04 Jan 2026 05:14:08 GMT  
+		Last Modified: Wed, 05 Nov 2025 01:07:40 GMT  
 		Size: 180.7 MB (180725412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16840,7 +16840,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39efdfa875cf11df5af65d4582d8a8c511a684ff9b183b51bad538fe768d8495`  
-		Last Modified: Sun, 04 Jan 2026 05:14:08 GMT  
+		Last Modified: Wed, 05 Nov 2025 01:07:40 GMT  
 		Size: 180.7 MB (180725412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17968,7 +17968,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39efdfa875cf11df5af65d4582d8a8c511a684ff9b183b51bad538fe768d8495`  
-		Last Modified: Sun, 04 Jan 2026 05:14:08 GMT  
+		Last Modified: Wed, 05 Nov 2025 01:07:40 GMT  
 		Size: 180.7 MB (180725412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18391,7 +18391,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39efdfa875cf11df5af65d4582d8a8c511a684ff9b183b51bad538fe768d8495`  
-		Last Modified: Sun, 04 Jan 2026 05:14:08 GMT  
+		Last Modified: Wed, 05 Nov 2025 01:07:40 GMT  
 		Size: 180.7 MB (180725412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
