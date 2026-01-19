@@ -63,7 +63,7 @@ CMD ["ghci"]
 		Size: 30.3 MB (30258497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50183bbde9bd1d717a42a31cbd7aa9d65fd94d1e9b5d7489c08c184a7d983af5`  
-		Last Modified: Tue, 13 Jan 2026 01:22:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:21:41 GMT  
 		Size: 106.4 MB (106366672 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bca8d7b2e0be99b620bd61995ef30c6313f35cd2ef889ec4d1951f29481b72a`  
@@ -71,7 +71,7 @@ CMD ["ghci"]
 		Size: 22.2 MB (22220767 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b93a810f6cc02986eff791f1cbb00563239224368cfceea9199432f82190e1a`  
-		Last Modified: Tue, 13 Jan 2026 01:21:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:21:37 GMT  
 		Size: 7.6 MB (7612229 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:322bea9c61329c91093d8196121e9612581da85577453a95ec188619deadca76`  
@@ -187,7 +187,7 @@ $ docker pull haskell@sha256:040eadb249af5b8b1cf61e5cc13d4e0cbb95dac5da5b1af59e9
 
 -	Layers:
 	-	`sha256:e20461454727c7d76eb386d0ada378ce79198d146fe58555bba010ac323a4c51`  
-		Last Modified: Tue, 13 Jan 2026 01:21:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:49:41 GMT  
 		Size: 6.8 MB (6753439 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b260842ec1bfdc58222371116a8ccbbd05a84123643c55bbded00788700a5222`  
