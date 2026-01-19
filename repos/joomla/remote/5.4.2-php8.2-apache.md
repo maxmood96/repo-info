@@ -867,7 +867,7 @@ CMD ["apache2-foreground"]
 		Size: 389.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f735b9a6b51c9e281799033aa1e0fcdf774647255ef513dc26a75494dd030712`  
-		Last Modified: Tue, 13 Jan 2026 04:09:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:08:53 GMT  
 		Size: 18.8 KB (18804 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c979653bc970666150ef4ed4dede63a6648d43a003ca319f8aa58ffe366cda98`  
@@ -1779,6 +1779,6 @@ $ docker pull joomla@sha256:7093dfb284e5e9f5ccc4ed17bdd7dfc9196839a9f1f3c2371838
 
 -	Layers:
 	-	`sha256:5af628468cbf81830556a1a4ec41fe6c285acfc48a05a27b4de20c99192f8aad`  
-		Last Modified: Tue, 13 Jan 2026 15:54:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:43:58 GMT  
 		Size: 57.5 KB (57460 bytes)  
 		MIME: application/vnd.in-toto+json
