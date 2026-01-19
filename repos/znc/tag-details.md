@@ -76,7 +76,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 46.0 MB (46020467 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e651980d24865ee4f19fa471fbeed8f6ba65e8b7cf4b242999fc0c0b130abdee`  
-		Last Modified: Mon, 08 Dec 2025 01:27:26 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:01:31 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c7bbf12514d955bf730d0d365597fa448546c362e4120066bc07f0c079d2bbf`  
@@ -359,7 +359,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 46.0 MB (46020467 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e651980d24865ee4f19fa471fbeed8f6ba65e8b7cf4b242999fc0c0b130abdee`  
-		Last Modified: Mon, 08 Dec 2025 01:27:26 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:01:31 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c7bbf12514d955bf730d0d365597fa448546c362e4120066bc07f0c079d2bbf`  
@@ -387,7 +387,7 @@ $ docker pull znc@sha256:75d996fa50ca858ca2021215b43c083759ff2e81688ab94d54285e2
 		Size: 1.8 MB (1752770 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:81d37d5e7d20698fe7532c6e3dbfdc07892d94429b4f25c837f87ed0a101918f`  
-		Last Modified: Tue, 09 Dec 2025 08:36:39 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:01:32 GMT  
 		Size: 14.0 KB (14031 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -614,7 +614,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 46.0 MB (46020467 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e651980d24865ee4f19fa471fbeed8f6ba65e8b7cf4b242999fc0c0b130abdee`  
-		Last Modified: Mon, 08 Dec 2025 01:27:26 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:01:31 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c7bbf12514d955bf730d0d365597fa448546c362e4120066bc07f0c079d2bbf`  
@@ -897,7 +897,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 46.0 MB (46020467 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e651980d24865ee4f19fa471fbeed8f6ba65e8b7cf4b242999fc0c0b130abdee`  
-		Last Modified: Mon, 08 Dec 2025 01:27:26 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:01:31 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c7bbf12514d955bf730d0d365597fa448546c362e4120066bc07f0c079d2bbf`  
@@ -925,7 +925,7 @@ $ docker pull znc@sha256:75d996fa50ca858ca2021215b43c083759ff2e81688ab94d54285e2
 		Size: 1.8 MB (1752770 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:81d37d5e7d20698fe7532c6e3dbfdc07892d94429b4f25c837f87ed0a101918f`  
-		Last Modified: Tue, 09 Dec 2025 08:36:39 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:01:32 GMT  
 		Size: 14.0 KB (14031 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1152,7 +1152,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 46.0 MB (46020467 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e651980d24865ee4f19fa471fbeed8f6ba65e8b7cf4b242999fc0c0b130abdee`  
-		Last Modified: Mon, 08 Dec 2025 01:27:26 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:01:31 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c7bbf12514d955bf730d0d365597fa448546c362e4120066bc07f0c079d2bbf`  
@@ -1435,7 +1435,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 46.0 MB (46020467 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e651980d24865ee4f19fa471fbeed8f6ba65e8b7cf4b242999fc0c0b130abdee`  
-		Last Modified: Mon, 08 Dec 2025 01:27:26 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:01:31 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c7bbf12514d955bf730d0d365597fa448546c362e4120066bc07f0c079d2bbf`  
@@ -1463,7 +1463,7 @@ $ docker pull znc@sha256:75d996fa50ca858ca2021215b43c083759ff2e81688ab94d54285e2
 		Size: 1.8 MB (1752770 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:81d37d5e7d20698fe7532c6e3dbfdc07892d94429b4f25c837f87ed0a101918f`  
-		Last Modified: Tue, 09 Dec 2025 08:36:39 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:01:32 GMT  
 		Size: 14.0 KB (14031 bytes)  
 		MIME: application/vnd.in-toto+json
 
