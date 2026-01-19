@@ -145,7 +145,7 @@ CMD ["lein" "repl"]
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:beb6dbd78b76177ef364a92f2d426d4c739fdd0b9b35f969fe499d9f07521002`  
-		Last Modified: Fri, 16 Jan 2026 01:52:39 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:53:01 GMT  
 		Size: 141.7 MB (141729879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -262,7 +262,7 @@ $ docker pull clojure@sha256:8d57d0edaecd5aac4cfd096ecced0775f404f3779b9a8875bad
 
 -	Layers:
 	-	`sha256:6a47fbcfd744a86fb9e73db5bdeb2f058ecf2d82e6d06a4516dd134b0ab2cca5`  
-		Last Modified: Fri, 16 Jan 2026 04:38:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:03:47 GMT  
 		Size: 2.4 MB (2384004 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:39d39de78ef7639afb5364f7dea0d9496a3d53b0cf18f57014c0b9a9a1b34f3f`  
