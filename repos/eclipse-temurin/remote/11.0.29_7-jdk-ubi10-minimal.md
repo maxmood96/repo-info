@@ -215,7 +215,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:f416e7c13e96a1bec342af3e79184aaf45de55dd66939245eb76ca02465c54c7`  
-		Last Modified: Thu, 18 Dec 2025 12:14:44 GMT  
+		Last Modified: Thu, 18 Dec 2025 12:14:26 GMT  
 		Size: 32.6 MB (32633678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b9c58ee8993fbe93933f5751cf1cafab123af0d43e9a480bff8ce2db634b5cb4`  
@@ -353,7 +353,7 @@ CMD ["jshell"]
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5411507bf6f7a07d8df7fa1bccf98c9fcc8acc2bd0a28eb7e587d2a4011a2b2f`  
-		Last Modified: Thu, 18 Dec 2025 22:41:15 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:41:34 GMT  
 		Size: 2.3 KB (2289 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -373,7 +373,7 @@ $ docker pull eclipse-temurin@sha256:3162e04d75954bdcdd3e1fbc93a317d10d0e6c9f29d
 
 -	Layers:
 	-	`sha256:2bd2c89e551fe94bb8ea1b0e06588ad23d6bb99d42c77fede3d3184403f4c56b`  
-		Last Modified: Thu, 18 Dec 2025 22:41:15 GMT  
+		Last Modified: Fri, 19 Dec 2025 01:12:51 GMT  
 		Size: 5.7 MB (5686579 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3b509ce7fdf3c10c400d9f2c61f0493d1ac6bd31af789ebb0bb4d6c724121096`  
@@ -463,7 +463,7 @@ CMD ["jshell"]
 		Size: 34.3 MB (34340329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e63f770e95bcd442fbd4b8fd68cccd7a912d2dd01d01bf876299e3b9c4b8eeda`  
-		Last Modified: Thu, 18 Dec 2025 22:42:09 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:41:54 GMT  
 		Size: 55.9 MB (55921082 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:babb0690c590a63c53a008120a88155a93267a7ea809a32cf8ab583688c7da9b`  
@@ -495,7 +495,7 @@ $ docker pull eclipse-temurin@sha256:ce38a1c346b913cf3f0d27ebeb1eaa49f2e293fb516
 
 -	Layers:
 	-	`sha256:db8d9cccb61316cec9174a50ee3d5754b68a9f159c368c061fc84552f8027760`  
-		Last Modified: Fri, 19 Dec 2025 01:12:57 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:41:56 GMT  
 		Size: 5.7 MB (5685572 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fd1b28d74ce0d157f00b82059d2b00a5ca7f3d21c1e9ab52040fc225142d81f3`  
