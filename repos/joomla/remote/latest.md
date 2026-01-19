@@ -199,7 +199,7 @@ CMD ["apache2-foreground"]
 		Size: 45.2 MB (45213241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:42513356b090794bafb676949835a03dd10fce18c903ec664d60309ee8805e0c`  
-		Last Modified: Fri, 16 Jan 2026 23:53:59 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:53:44 GMT  
 		Size: 310.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24e8ed1a879e3087f8c9908ed2b0e747a065d0d133c24e439434515c424db171`  
@@ -239,7 +239,7 @@ $ docker pull joomla@sha256:390185f9a5df78d315a7d030c921e91e00ac6dc46c01e91976d5
 
 -	Layers:
 	-	`sha256:5e016a4c306047837029547d84b186f9899ed25f97599ba35497ed3619420413`  
-		Last Modified: Sat, 17 Jan 2026 02:46:38 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:53:44 GMT  
 		Size: 61.4 KB (61385 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -387,7 +387,7 @@ CMD ["apache2-foreground"]
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:607629f9a21465a35adb56a2f4a01245110b40eff9bd94b1c3110602a2cabaa2`  
-		Last Modified: Fri, 16 Jan 2026 23:35:50 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:35:41 GMT  
 		Size: 10.6 MB (10600751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:13b23ad0eb876f30ab3241af6615f40f7c091f913947b0fbf016b9a6e0d0810c`  
