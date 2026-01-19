@@ -265,7 +265,7 @@ $ docker pull mongo@sha256:abaa36bed014e73a1b420c494c64f242e9a56fa771e8038d41212
 
 -	Layers:
 	-	`sha256:9d10502eb0f7866be377fd81b28cbefa525a0bdb3077c86c666ea497de7a3015`  
-		Last Modified: Fri, 16 Jan 2026 00:29:48 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:36:55 GMT  
 		Size: 2.7 MB (2670007 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b0bf88f533f652a42bbb5d922e36211ae38566c225f077159cf61b94cab7f774`  
