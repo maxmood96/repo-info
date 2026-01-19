@@ -317,7 +317,7 @@ $ docker pull redmine@sha256:fc4e16811bb47b1e74e1a9e36d998bdc94d070a96ed0802dee9
 
 -	Layers:
 	-	`sha256:9e81bf6723c8ba39fd3a00f0290c049f46600f8f567f308ae8dfa35b5d7cf8a7`  
-		Last Modified: Tue, 06 Jan 2026 18:28:34 GMT  
+		Last Modified: Tue, 06 Jan 2026 20:53:10 GMT  
 		Size: 38.1 KB (38149 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -415,7 +415,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 39.3 MB (39250531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f76048f00bc1a655d522a168484d81a8d66ef631a8fbf45576877132b47d836`  
-		Last Modified: Thu, 18 Dec 2025 00:50:37 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:50:30 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d7649b32ece6f7ce55fc6ca866c9c3a870f44b99122be8dab0f77fd16645b82`  
@@ -723,11 +723,11 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 909.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c761784c64d6b6e86ff396436bfc15025af71a6cb6b1c551e81d88d3f542b5f`  
-		Last Modified: Tue, 06 Jan 2026 18:30:38 GMT  
+		Last Modified: Tue, 06 Jan 2026 18:31:06 GMT  
 		Size: 81.6 MB (81631971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a52f507c2f04d3c152236a55b8710a4c796099d731ba24f68a09cef9ea095cd4`  
-		Last Modified: Tue, 06 Jan 2026 18:30:59 GMT  
+		Last Modified: Tue, 06 Jan 2026 18:30:35 GMT  
 		Size: 934.5 KB (934465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:12bde028b7ea889ef84c460d2aefb2a22b382ae4a4a0e748fe27827d888f9770`  
@@ -857,7 +857,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 3.6 MB (3583938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a698ec77791eae41a5ea71dbaf461740620a754436fee72224883fdf7fe1344`  
-		Last Modified: Fri, 19 Dec 2025 13:37:28 GMT  
+		Last Modified: Fri, 19 Dec 2025 13:37:43 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f6c7a065b2b736b5bdce347ec79f457eb66d9db63a0d11d832e503920391ba0e`  
