@@ -70,7 +70,7 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 		Size: 7.9 MB (7882903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d11ee3d1543b2c5e62d73c98423445473edc94adc96b3b016536c6091284ba13`  
-		Last Modified: Tue, 13 Jan 2026 02:16:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:15:53 GMT  
 		Size: 77.4 MB (77380783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f90d57870c99c4e73f48597d4ef590f6ce8f250da2e4763c6eadbac7254a716`  
@@ -110,7 +110,7 @@ $ docker pull couchdb@sha256:dbd2f2f9b113ca9737a845cfc958babbab8a2872e4779e2f393
 
 -	Layers:
 	-	`sha256:cfdac44fc4100793a76ec5945deec66105528ef1786dc7f5d563a89216d270b2`  
-		Last Modified: Tue, 13 Jan 2026 02:15:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:34:26 GMT  
 		Size: 3.7 MB (3658099 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a24cd09a6b98e0a5c34370502688d6d23633227b2ae453edb8d7b57fd95c4402`  
@@ -219,7 +219,7 @@ $ docker pull couchdb@sha256:05d5c8faab853cd6342bd862473efd6a0ef1e36ad8a8d662a4d
 		Size: 3.7 MB (3656775 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ceb99cef1c693ed23e90314454a0ad427bfc99d16beeef04f91e068596fb7504`  
-		Last Modified: Tue, 13 Jan 2026 02:21:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:34:35 GMT  
 		Size: 24.7 KB (24702 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -268,11 +268,11 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 
 -	Layers:
 	-	`sha256:3995e7e7254beb9777289fba2ebc6c1ce81d8c4bab8c8d068146f449323a74c8`  
-		Last Modified: Tue, 13 Jan 2026 00:40:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:23 GMT  
 		Size: 26.9 MB (26884415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d73bbb2b620b04ded8354b575b5134f4a498c331a7c6039ec6259f44f2e55ee4`  
-		Last Modified: Tue, 13 Jan 2026 02:12:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:12:57 GMT  
 		Size: 1.2 KB (1183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eebfeaea45624160791afec65772aef817d039bf449f8688c0147dbbcc27f9e2`  
