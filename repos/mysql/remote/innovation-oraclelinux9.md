@@ -123,11 +123,11 @@ $ docker pull mysql@sha256:e9f880b5c30c1ed1e434f86aaf4669bb2b06b98209036a1a780de
 
 -	Layers:
 	-	`sha256:30c78be3a8366c1d99d9bc3f09d75ef95f74e69bd4365c72f7c15df05d7d0f6f`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
+		Last Modified: Sat, 17 Jan 2026 01:03:10 GMT  
 		Size: 17.8 MB (17811692 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fb1f586e520b7839e804b9bcb4824f426e7dd7a9f40dcb7ca1a739b05d56fb07`  
-		Last Modified: Sat, 17 Jan 2026 01:03:06 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
 		Size: 35.3 KB (35275 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -247,6 +247,6 @@ $ docker pull mysql@sha256:ba4120e2e4755e5c5e8df7ba5ac2224321201db0ec32bf60868db
 		Size: 17.8 MB (17806831 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:916ea0327b00bcba62230558f1497b7bd5c252511f547e28fa8d5d889d86a9f1`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
+		Last Modified: Sat, 17 Jan 2026 01:03:28 GMT  
 		Size: 35.6 KB (35616 bytes)  
 		MIME: application/vnd.in-toto+json
