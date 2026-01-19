@@ -67,7 +67,7 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 
 -	Layers:
 	-	`sha256:c02d17997ce3d2c82e082235ea0b5152d06ee659c4e2fabcf1e0079312f1bcde`  
-		Last Modified: Tue, 13 Jan 2026 00:41:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:44 GMT  
 		Size: 28.2 MB (28228572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:147314ac1e23d3422a662100976c683827a79bfea1e874c22021a230897007c1`  
@@ -87,7 +87,7 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Size: 21.5 MB (21457880 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a15113fc88aebea680e22bfe9a9d2d232fd533936d4fcfdc18b902d6019fe71`  
-		Last Modified: Tue, 13 Jan 2026 04:58:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:58:07 GMT  
 		Size: 25.9 MB (25859683 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8e6eae9df6a37b1bf33ba83ba14d0308c67c50bdf2726cd9a8402cfb0ea9a762`  
@@ -99,7 +99,7 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b90766b97437622691f96eb3b47e1b1859441d8f27163f45af886054712091c7`  
-		Last Modified: Tue, 13 Jan 2026 04:58:04 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:57:59 GMT  
 		Size: 2.1 KB (2077 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -235,7 +235,7 @@ $ docker pull satosa@sha256:f9cf835addb22cd1e440419144cfca352150586662ccbe5c817b
 
 -	Layers:
 	-	`sha256:6db38a962ced89d8d791fbec66af944282e3758046aa51055b9712df9a547ddd`  
-		Last Modified: Tue, 13 Jan 2026 08:13:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:00:19 GMT  
 		Size: 2.7 MB (2704959 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2dbc7b6da2de8b9f831adf0ef023ff70e6c9bb6dfb5ae20ac0f49e9ea887f5ef`  
