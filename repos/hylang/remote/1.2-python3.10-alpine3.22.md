@@ -347,7 +347,7 @@ CMD ["hy"]
 		Size: 459.0 KB (459007 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:115d3fa080d3ab57202dcf15333cbb02db8dfa71cb4d79ff7251e5879269843d`  
-		Last Modified: Thu, 09 Oct 2025 22:49:11 GMT  
+		Last Modified: Tue, 09 Dec 2025 01:10:05 GMT  
 		Size: 15.4 MB (15443428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ec6c3ed91d8b004b1c3416b006bf0f6d3299171b57b2ef58cdd20dc7581734a`  
@@ -355,7 +355,7 @@ CMD ["hy"]
 		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fcf7081b7b05c98b7ffde9c9905903d57e9ba354adbcba2eb369da8586e32f15`  
-		Last Modified: Wed, 14 Jan 2026 22:01:13 GMT  
+		Last Modified: Wed, 14 Jan 2026 22:01:06 GMT  
 		Size: 5.3 MB (5254132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -430,7 +430,7 @@ CMD ["hy"]
 
 -	Layers:
 	-	`sha256:13c6e95c06ae06f126f5e940d6d88c2fec0da715c80878ad225c76ad48d0a31e`  
-		Last Modified: Sun, 07 Dec 2025 14:06:47 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 3.6 MB (3618931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:435956c4a76f6a0ceacdf8cd884d1786b8d5410b2690ad525a2f9546449b122b`  
@@ -442,7 +442,7 @@ CMD ["hy"]
 		Size: 15.6 MB (15626157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bdd955eaccb9bb1823e76329bff2a277313b336bb566cc80adeb06e58176bf55`  
-		Last Modified: Sat, 13 Dec 2025 03:41:12 GMT  
+		Last Modified: Thu, 09 Oct 2025 22:48:42 GMT  
 		Size: 250.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:031181e54dd3e619b46e9f8f6e7ff270ef323f3ebabab110477b83b64cf54ac5`  
@@ -525,7 +525,7 @@ CMD ["hy"]
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7d59558aec49aa561bba128776098134d977c895162d47f6feb60e130039a68`  
-		Last Modified: Thu, 09 Oct 2025 08:28:17 GMT  
+		Last Modified: Mon, 08 Dec 2025 10:10:38 GMT  
 		Size: 459.4 KB (459435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bc6099de0aa36de5487e974a3bfbb5628f7f7b602483bdcd38e47235345bb98`  
@@ -648,7 +648,7 @@ $ docker pull hylang@sha256:b405a12e2b581ffe910ee14df4bb52a8124652eddb97984c10aa
 
 -	Layers:
 	-	`sha256:bef96796487b79663da0046d39d711beae525c5c9487697a00755d62d5dd28c2`  
-		Last Modified: Mon, 19 Jan 2026 12:18:19 GMT  
+		Last Modified: Mon, 19 Jan 2026 10:10:06 GMT  
 		Size: 696.7 KB (696746 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:08e14206fa5d637002b4b1acaaf23fd416ac2ffebdced1b12ad8b52df0b55609`  
