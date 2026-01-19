@@ -69,7 +69,7 @@ CMD ["-M" "--repl"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee86663e9cc46dc50795744a393285134f819d3aeeed6fa4abaaeaf93df78248`  
-		Last Modified: Fri, 16 Jan 2026 02:08:09 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:08:28 GMT  
 		Size: 85.5 MB (85542668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ea3a7cb32d39ee887724ac96aca8f9f51887010f67e39a3d55fa5320afd328c`  
@@ -333,11 +333,11 @@ CMD ["-M" "--repl"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0dcbe9fed58bbc38ac063c5ed091bd1d2c011f14d2040d7f23f5f7a00a577204`  
-		Last Modified: Thu, 01 Jan 2026 07:43:29 GMT  
+		Last Modified: Thu, 01 Jan 2026 07:43:18 GMT  
 		Size: 84.4 MB (84424021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbd9e1ebe2c1d294a974e9167b1fcd28f1c864b86822aabe277361a2c2666917`  
-		Last Modified: Thu, 01 Jan 2026 07:43:25 GMT  
+		Last Modified: Thu, 01 Jan 2026 07:43:05 GMT  
 		Size: 616.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:780b6c87508d36f5c3312f1ba3e4f71c54a8ecd9fbe887c563d50a42f6aeb0c8`  
@@ -361,7 +361,7 @@ $ docker pull clojure@sha256:5e78f243e2193bd66297be8360ab94345507f179dbbc2530472
 
 -	Layers:
 	-	`sha256:ce769fecab3af4f1003225079c4abca8f41f2510f1f71e1f83922668c9748791`  
-		Last Modified: Thu, 01 Jan 2026 10:38:09 GMT  
+		Last Modified: Thu, 01 Jan 2026 07:43:07 GMT  
 		Size: 7.4 MB (7406183 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:749924ae04839adb99dc146b0d9e4a589ff1b416e87fcb8ee21cf5e96ef9d3d6`  
@@ -449,7 +449,7 @@ $ docker pull clojure@sha256:4bd0318bc99dee240496ac8a514d97889c033a183500e81a1ef
 
 -	Layers:
 	-	`sha256:94f9507fa0694b19a01c16f9210909ee05f52f7c94398c34ab1225e8d615be7d`  
-		Last Modified: Fri, 16 Jan 2026 01:45:07 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:25:05 GMT  
 		Size: 7.4 MB (7417626 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2fe04cd5d4dd9ca9f6fe7b2616715eafe22da6124fa050f1b5fca99b8b0dda73`  

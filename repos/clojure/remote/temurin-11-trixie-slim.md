@@ -54,7 +54,7 @@ CMD ["clj"]
 		Size: 29.8 MB (29773685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc2d701df7c32711b465549c3ffcdc7967b1e1625b3f50335c0f171206a20804`  
-		Last Modified: Fri, 16 Jan 2026 01:52:00 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:51:44 GMT  
 		Size: 145.0 MB (144966605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -66,7 +66,7 @@ CMD ["clj"]
 		Size: 72.0 MB (71993642 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f3c60ed0c81ae2209eb24b5aefb03f865591e622f36edffd12b81b22df1ccf71`  
-		Last Modified: Fri, 16 Jan 2026 01:51:40 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:51:49 GMT  
 		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -129,7 +129,7 @@ CMD ["clj"]
 
 -	Layers:
 	-	`sha256:d637807aba98f742a62ad9b0146579ceb0297a3c831f56b2361664b7f5fbc75b`  
-		Last Modified: Tue, 13 Jan 2026 00:42:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:49 GMT  
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:87dc663a8bfdbd12d47861f3d8977e963dc866fb77ec1ed2b31f19cbea4db647`  
@@ -165,7 +165,7 @@ $ docker pull clojure@sha256:1eb5d53b1831edf3c8e8c0a5fb1756cc360e445aac18e8e7251
 
 -	Layers:
 	-	`sha256:ca5b35785bb66bd187645728fc0a9061474e11cdcb51464d02789f932faf5c0f`  
-		Last Modified: Fri, 16 Jan 2026 04:40:06 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:55:39 GMT  
 		Size: 5.3 MB (5282823 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2efde20d9bbedb47aeed9155e5173219d1e5ebdbeed09b7321369e5259c009ea`  
@@ -208,7 +208,7 @@ CMD ["clj"]
 
 -	Layers:
 	-	`sha256:9a275bb13cf8b3e9db52a41b6b4ff22ee1ffed00394f6deddd2de45044bd3bae`  
-		Last Modified: Tue, 13 Jan 2026 00:57:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:57:13 GMT  
 		Size: 33.6 MB (33595600 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:535e69c188d843a40931640c882aeab8cb565638d03ecacffc478c1a783da983`  
@@ -287,7 +287,7 @@ CMD ["clj"]
 
 -	Layers:
 	-	`sha256:2b46bc94baaae0a37e5e04b1babf7e1f37c4390b83d49c3c6820188deba770e3`  
-		Last Modified: Tue, 13 Jan 2026 13:10:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 13:10:43 GMT  
 		Size: 29.8 MB (29833411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d189c892ac739b1461897667cb3f0702a6090d4dd1b8acc3ad2f6d38d27b1f26`  
@@ -299,7 +299,7 @@ CMD ["clj"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e9932a15c2905406433716d1e89e7dc123df15ccb5d3513cfacffd4e70d1481`  
-		Last Modified: Thu, 15 Jan 2026 23:13:51 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:14:04 GMT  
 		Size: 73.0 MB (72952061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:952e96f622a57ec0aaa5e583c421fb48f9008d726f7dba3c75c13abbc03d1236`  
