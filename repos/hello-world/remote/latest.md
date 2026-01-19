@@ -140,7 +140,7 @@ CMD ["/hello"]
 
 -	Layers:
 	-	`sha256:d845cd8bf0a8db7fd933c5a1a0625aa015b9c442114a1598172ea80f10cef150`  
-		Last Modified: Fri, 12 Dec 2025 04:50:39 GMT  
+		Last Modified: Wed, 13 Aug 2025 22:17:12 GMT  
 		Size: 3.6 KB (3596 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -475,7 +475,7 @@ $ docker pull hello-world@sha256:d95e119cb94d5d39d99f4d396a0d5cc7b3e62e053f73861
 
 -	Layers:
 	-	`sha256:a83a3c1376af5f816ba5441d1c5ee6e47e4f684b080265c3d04705739f36d147`  
-		Last Modified: Thu, 14 Aug 2025 02:53:39 GMT  
+		Last Modified: Fri, 12 Dec 2025 10:28:22 GMT  
 		Size: 4.8 KB (4822 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -511,7 +511,7 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 		Size: 1.8 KB (1816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ee475e8bafa70cbef4d4ef986e76320897144a97d0b4383066599834204f8a27`  
-		Last Modified: Tue, 13 Jan 2026 22:51:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:53:02 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
