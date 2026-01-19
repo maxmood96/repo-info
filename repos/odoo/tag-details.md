@@ -274,7 +274,7 @@ CMD ["odoo"]
 		Size: 595.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c48d485d62418a14c12cd519c125862f309db4748f2567e443f2fbc52755a82`  
-		Last Modified: Thu, 15 Jan 2026 22:42:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:42:11 GMT  
 		Size: 582.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -563,7 +563,7 @@ CMD ["odoo"]
 		Size: 595.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c48d485d62418a14c12cd519c125862f309db4748f2567e443f2fbc52755a82`  
-		Last Modified: Thu, 15 Jan 2026 22:42:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:42:11 GMT  
 		Size: 582.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -852,7 +852,7 @@ CMD ["odoo"]
 		Size: 595.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c48d485d62418a14c12cd519c125862f309db4748f2567e443f2fbc52755a82`  
-		Last Modified: Thu, 15 Jan 2026 22:42:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:42:11 GMT  
 		Size: 582.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -981,7 +981,7 @@ CMD ["odoo"]
 		Size: 254.6 MB (254559834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:927448cea8d95a794d9714229e0c21f9cf141f648a55df1b35777f80c51ee77d`  
-		Last Modified: Thu, 15 Jan 2026 22:39:30 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:39:54 GMT  
 		Size: 14.4 MB (14356521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c07c402f721d527ca20dbde0e20d50ad7da09dc1b7dd5d24281334898eaa45d4`  
@@ -1410,7 +1410,7 @@ CMD ["odoo"]
 		Size: 254.6 MB (254559834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:927448cea8d95a794d9714229e0c21f9cf141f648a55df1b35777f80c51ee77d`  
-		Last Modified: Thu, 15 Jan 2026 22:39:30 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:39:54 GMT  
 		Size: 14.4 MB (14356521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c07c402f721d527ca20dbde0e20d50ad7da09dc1b7dd5d24281334898eaa45d4`  
@@ -1839,7 +1839,7 @@ CMD ["odoo"]
 		Size: 254.6 MB (254559834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:927448cea8d95a794d9714229e0c21f9cf141f648a55df1b35777f80c51ee77d`  
-		Last Modified: Thu, 15 Jan 2026 22:39:30 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:39:54 GMT  
 		Size: 14.4 MB (14356521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c07c402f721d527ca20dbde0e20d50ad7da09dc1b7dd5d24281334898eaa45d4`  
