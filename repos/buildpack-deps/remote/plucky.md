@@ -161,11 +161,11 @@ $ docker pull buildpack-deps@sha256:730b8d636023133b1c134ef7dc15ece94d2f84f8e2e0
 
 -	Layers:
 	-	`sha256:d1afa96dd963cf3c30e61b02691d511b4634fd6235f23f8714aa83a6add89197`  
-		Last Modified: Tue, 09 Dec 2025 10:06:07 GMT  
+		Last Modified: Thu, 09 Oct 2025 22:15:31 GMT  
 		Size: 11.7 MB (11718092 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d6bb98437c24fa23013cc284fb24e8aee1fcd2ec1bde42ae426266cb68e05a9c`  
-		Last Modified: Thu, 09 Oct 2025 22:15:30 GMT  
+		Last Modified: Tue, 09 Dec 2025 10:06:05 GMT  
 		Size: 10.3 KB (10253 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -212,7 +212,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Size: 19.2 MB (19161632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:712fbae7240f8e537ceeab077b1c2a5b3bd39edf6bceca28c39b76366b1dd7cb`  
-		Last Modified: Tue, 09 Dec 2025 10:03:04 GMT  
+		Last Modified: Thu, 09 Oct 2025 21:32:08 GMT  
 		Size: 47.1 MB (47130095 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6699d66611b3aebdee77081970b5398fd610a374b523fbf363e47a1ecd949803`  
@@ -236,7 +236,7 @@ $ docker pull buildpack-deps@sha256:25138521aba8cdeca3166a25010da97e9b3b8426aacb
 
 -	Layers:
 	-	`sha256:0570e0991ae32e09424b6592187bb558c961573b23db99e9da4c72740170521f`  
-		Last Modified: Thu, 09 Oct 2025 22:14:58 GMT  
+		Last Modified: Tue, 09 Dec 2025 10:06:20 GMT  
 		Size: 12.0 MB (12028847 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c807b660f8162d8153cab31ff5a0416ed3e4dd236e4bfb9c8287259af71ab783`  
@@ -287,7 +287,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Size: 21.6 MB (21588037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e614af73321c4f5cff498ceb1a8a0cbe9a1eceb385bd972dad38c398b021aff`  
-		Last Modified: Thu, 09 Oct 2025 23:06:53 GMT  
+		Last Modified: Tue, 09 Dec 2025 10:03:05 GMT  
 		Size: 52.6 MB (52610358 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:28494cc6b0058edb9a72fd4b2bb61770a4b2b498d4c8f15d82ef40df431fb347`  
@@ -437,7 +437,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Size: 21.6 MB (21561099 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:762a26aa94c3b466f681da38319567dec48dc11ee99381ebd329460b5d8eb89d`  
-		Last Modified: Tue, 09 Dec 2025 10:03:08 GMT  
+		Last Modified: Thu, 09 Oct 2025 22:21:07 GMT  
 		Size: 48.7 MB (48705641 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9ea2c544a2a74b25f17121d1a3e9fdf96b397fce18e35f99841c57c539620095`  
@@ -461,7 +461,7 @@ $ docker pull buildpack-deps@sha256:0dba9155bb93eb59816765a64deac23e9efcb6d2a897
 
 -	Layers:
 	-	`sha256:ce3348757f86ecfae93c6b16cb73785f1ce9499fade1bc46c4ff8070832ec8dc`  
-		Last Modified: Fri, 10 Oct 2025 01:59:35 GMT  
+		Last Modified: Tue, 09 Dec 2025 10:06:22 GMT  
 		Size: 11.8 MB (11751629 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:98122349ca57d8b252ec8926e572fc614b5a92d93714521306544f8c565c07d3`  
