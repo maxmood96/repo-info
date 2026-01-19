@@ -180,7 +180,7 @@ $ docker pull rethinkdb@sha256:4fdea369d9c9cf8f7aa68a43208c9f685076e57a2e652987f
 		Size: 2.8 MB (2785381 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ae5ac6f37241ba626cdb766b37a14fa53ad5c717fbe03601759d139dcb2c26a9`  
-		Last Modified: Tue, 13 Jan 2026 05:03:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:19 GMT  
 		Size: 13.6 KB (13585 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -432,7 +432,7 @@ $ docker pull rethinkdb@sha256:4fdea369d9c9cf8f7aa68a43208c9f685076e57a2e652987f
 		Size: 2.8 MB (2785381 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ae5ac6f37241ba626cdb766b37a14fa53ad5c717fbe03601759d139dcb2c26a9`  
-		Last Modified: Tue, 13 Jan 2026 05:03:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:19 GMT  
 		Size: 13.6 KB (13585 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -684,7 +684,7 @@ $ docker pull rethinkdb@sha256:4fdea369d9c9cf8f7aa68a43208c9f685076e57a2e652987f
 		Size: 2.8 MB (2785381 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ae5ac6f37241ba626cdb766b37a14fa53ad5c717fbe03601759d139dcb2c26a9`  
-		Last Modified: Tue, 13 Jan 2026 05:03:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:19 GMT  
 		Size: 13.6 KB (13585 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -936,7 +936,7 @@ $ docker pull rethinkdb@sha256:4fdea369d9c9cf8f7aa68a43208c9f685076e57a2e652987f
 		Size: 2.8 MB (2785381 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ae5ac6f37241ba626cdb766b37a14fa53ad5c717fbe03601759d139dcb2c26a9`  
-		Last Modified: Tue, 13 Jan 2026 05:03:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:19 GMT  
 		Size: 13.6 KB (13585 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1188,7 +1188,7 @@ $ docker pull rethinkdb@sha256:4fdea369d9c9cf8f7aa68a43208c9f685076e57a2e652987f
 		Size: 2.8 MB (2785381 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ae5ac6f37241ba626cdb766b37a14fa53ad5c717fbe03601759d139dcb2c26a9`  
-		Last Modified: Tue, 13 Jan 2026 05:03:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:19 GMT  
 		Size: 13.6 KB (13585 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1440,7 +1440,7 @@ $ docker pull rethinkdb@sha256:4fdea369d9c9cf8f7aa68a43208c9f685076e57a2e652987f
 		Size: 2.8 MB (2785381 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ae5ac6f37241ba626cdb766b37a14fa53ad5c717fbe03601759d139dcb2c26a9`  
-		Last Modified: Tue, 13 Jan 2026 05:03:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:19 GMT  
 		Size: 13.6 KB (13585 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1692,7 +1692,7 @@ $ docker pull rethinkdb@sha256:4fdea369d9c9cf8f7aa68a43208c9f685076e57a2e652987f
 		Size: 2.8 MB (2785381 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ae5ac6f37241ba626cdb766b37a14fa53ad5c717fbe03601759d139dcb2c26a9`  
-		Last Modified: Tue, 13 Jan 2026 05:03:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:19 GMT  
 		Size: 13.6 KB (13585 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1944,7 +1944,7 @@ $ docker pull rethinkdb@sha256:4fdea369d9c9cf8f7aa68a43208c9f685076e57a2e652987f
 		Size: 2.8 MB (2785381 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ae5ac6f37241ba626cdb766b37a14fa53ad5c717fbe03601759d139dcb2c26a9`  
-		Last Modified: Tue, 13 Jan 2026 05:03:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:19 GMT  
 		Size: 13.6 KB (13585 bytes)  
 		MIME: application/vnd.in-toto+json
 
