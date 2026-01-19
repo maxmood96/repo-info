@@ -55,7 +55,7 @@ CMD ["jshell"]
 		Size: 3.6 MB (3642569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:04c7058b15b74dfb201889d176cc8eebf0e009d1264ef4645766c89a8432aa07`  
-		Last Modified: Sat, 08 Nov 2025 17:52:48 GMT  
+		Last Modified: Wed, 07 Jan 2026 20:03:59 GMT  
 		Size: 16.2 MB (16174518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2120d463506ae4d709c06efaf8ec0f2fdcd8421ad7823c3832310345338f62ad`  
