@@ -135,7 +135,7 @@ RUN set -eux;         arch="$(dpkg --print-architecture)";     case "$arch" in  
 		Size: 23.6 MB (23626665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8bf6f5dfbcc297b2e354e856be84c591ec9f96e89fd8401a4d485596c43b8ed8`  
-		Last Modified: Tue, 13 Jan 2026 04:26:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:26:01 GMT  
 		Size: 62.7 MB (62713384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bc2c3dfa2d6df259da14558beefb7cee69246c0da0fdc440a04d5af7c8fb7dd`  
@@ -214,7 +214,7 @@ RUN set -eux;         arch="$(dpkg --print-architecture)";     case "$arch" in  
 		Size: 67.6 MB (67591513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3fffeb567ed4215b503f814aeaab9fa5a2e701d3efa35d4c285b3cf111e9cb4a`  
-		Last Modified: Tue, 13 Jan 2026 05:16:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:53:30 GMT  
 		Size: 226.1 MB (226143857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8ef60265c60e7ed11985b40c7cb515835f07a78f5b0d1ef671694f5017148bd5`  
@@ -238,7 +238,7 @@ $ docker pull rust@sha256:07ea6fc6a8ad843b80c91be23930dcc749ddc91845292113fdc0ce
 
 -	Layers:
 	-	`sha256:af6b16cf4989403e262932a4909c3b41335d11626e72bc7b4a6b4e220792838f`  
-		Last Modified: Tue, 13 Jan 2026 09:45:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:15:32 GMT  
 		Size: 17.3 MB (17295593 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e609893b687c71a9bc8b2a23353e7aa8c1b535239610f53121223a02a487057a`  
@@ -463,7 +463,7 @@ $ docker pull rust@sha256:baf3265666f692c5b8b4f3c9dc826bb102e336fc01aeafd68cef2f
 
 -	Layers:
 	-	`sha256:098b24b9b15923be3d361814f5cb12f434d0e747117f3e45f6397a1d8f9eb509`  
-		Last Modified: Sun, 04 Jan 2026 06:45:38 GMT  
+		Last Modified: Sun, 04 Jan 2026 05:13:12 GMT  
 		Size: 17.3 MB (17266282 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1f40e5fc760bc4b487f7a4d9f2769005ff09da91c63c07bf62aa0fff35fe9880`  
@@ -538,7 +538,7 @@ $ docker pull rust@sha256:80ff96dcd40784dc0516ff9ecf20193f7c78af0908d00eea5bd7c1
 
 -	Layers:
 	-	`sha256:9628610e2f4c821438e25061c7c78643e1cbe60656a977d2cb38237145aba727`  
-		Last Modified: Tue, 13 Jan 2026 12:46:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:28:24 GMT  
 		Size: 17.0 MB (16988468 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6de8cd3810efcd729e342e415c97ce4207672861a5e256441f712201c9165670`  
