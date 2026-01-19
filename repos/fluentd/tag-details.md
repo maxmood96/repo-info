@@ -1594,7 +1594,7 @@ $ docker pull fluentd@sha256:33c7fda88ba71531cdae91cdef4bbe85272adcc8f3f49ae2294
 
 -	Layers:
 	-	`sha256:20de6d15d9c0c430cc3a4c29893b2be6434d2e7f25cac8508eb89faa582f28af`  
-		Last Modified: Wed, 14 Jan 2026 18:29:05 GMT  
+		Last Modified: Wed, 14 Jan 2026 17:56:45 GMT  
 		Size: 2.7 MB (2667661 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:822d1cda5364d5d65c63acd2ac8f66231a29afc704a4c1585244345adefd8376`  
@@ -1822,7 +1822,7 @@ CMD ["fluentd"]
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:80a46f8bb80f604e4ccac4bc8ab7bf72379a426701a257e13291c405efde694d`  
-		Last Modified: Wed, 14 Jan 2026 22:41:50 GMT  
+		Last Modified: Wed, 14 Jan 2026 22:42:00 GMT  
 		Size: 14.4 MB (14428373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2878a736dd5972a9ae7de72060cd3736ac1d5ef20a275b2219df2451baca8054`  
@@ -2527,7 +2527,7 @@ $ docker pull fluentd@sha256:33c7fda88ba71531cdae91cdef4bbe85272adcc8f3f49ae2294
 
 -	Layers:
 	-	`sha256:20de6d15d9c0c430cc3a4c29893b2be6434d2e7f25cac8508eb89faa582f28af`  
-		Last Modified: Wed, 14 Jan 2026 18:29:05 GMT  
+		Last Modified: Wed, 14 Jan 2026 17:56:45 GMT  
 		Size: 2.7 MB (2667661 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:822d1cda5364d5d65c63acd2ac8f66231a29afc704a4c1585244345adefd8376`  
@@ -2755,7 +2755,7 @@ CMD ["fluentd"]
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:80a46f8bb80f604e4ccac4bc8ab7bf72379a426701a257e13291c405efde694d`  
-		Last Modified: Wed, 14 Jan 2026 22:41:50 GMT  
+		Last Modified: Wed, 14 Jan 2026 22:42:00 GMT  
 		Size: 14.4 MB (14428373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2878a736dd5972a9ae7de72060cd3736ac1d5ef20a275b2219df2451baca8054`  
