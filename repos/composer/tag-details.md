@@ -2423,7 +2423,7 @@ CMD ["composer"]
 		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:80140dcff6cf2c8b23a85760279a5fd6250e883af0aed23671d392b8c4d1c11e`  
-		Last Modified: Wed, 14 Jan 2026 02:35:29 GMT  
+		Last Modified: Wed, 14 Jan 2026 02:31:38 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2603,7 +2603,7 @@ $ docker pull composer@sha256:08bbf149b5f6407249ba275438c4e2b472de515aea8ab39d89
 
 -	Layers:
 	-	`sha256:05f499aabcd65bb0f1d8de34dd7939624e29fadc9b2a63fa67974863502c4373`  
-		Last Modified: Sat, 17 Jan 2026 02:14:43 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:05:16 GMT  
 		Size: 2.2 MB (2178603 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:37ceba19a7ee14ae49c7c17bff84b516f623e344a66670c793eb459c59f213e9`  
@@ -3724,7 +3724,7 @@ CMD ["composer"]
 		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:80140dcff6cf2c8b23a85760279a5fd6250e883af0aed23671d392b8c4d1c11e`  
-		Last Modified: Wed, 14 Jan 2026 02:35:29 GMT  
+		Last Modified: Wed, 14 Jan 2026 02:31:38 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3904,7 +3904,7 @@ $ docker pull composer@sha256:08bbf149b5f6407249ba275438c4e2b472de515aea8ab39d89
 
 -	Layers:
 	-	`sha256:05f499aabcd65bb0f1d8de34dd7939624e29fadc9b2a63fa67974863502c4373`  
-		Last Modified: Sat, 17 Jan 2026 02:14:43 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:05:16 GMT  
 		Size: 2.2 MB (2178603 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:37ceba19a7ee14ae49c7c17bff84b516f623e344a66670c793eb459c59f213e9`  
