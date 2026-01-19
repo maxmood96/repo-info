@@ -82,7 +82,7 @@ USER root
 		Size: 1.4 KB (1412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6cc09d398aa91c94794da8b007103ce0096e2394b5bf4cba672f4fcff453e01d`  
@@ -90,7 +90,7 @@ USER root
 		Size: 148.6 MB (148647617 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc5a6e945ba719013802ab8451e53343fcc54c225cf5dd031a67244aaef92d69`  
-		Last Modified: Fri, 16 Jan 2026 21:49:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:46:43 GMT  
 		Size: 340.8 MB (340849355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c67511f83e4f71ab185e5123538df4b7f75d50e0346ffc7ab9d13a34a60d013`  
@@ -122,7 +122,7 @@ $ docker pull gradle@sha256:04f497d698c565dd18f6e5bf725f09982d99eab0b68ffd937fc2
 		Size: 9.0 MB (9017735 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c3b72c6d980c1f16afa5d9de8157d66df5e0aeed11ab84a8dc1baef7ab7fc4ef`  
-		Last Modified: Sat, 17 Jan 2026 00:22:31 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:46:32 GMT  
 		Size: 38.5 KB (38484 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -193,11 +193,11 @@ USER root
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0a53f584654cd4a4efae5de2627a6a12f6b02947132e2a854a3dd3be5bcc0b00`  
-		Last Modified: Fri, 16 Jan 2026 21:48:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:32 GMT  
 		Size: 1.4 KB (1412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0cdfe8433d7ab0693aa9fef41cb3b764b4909544336d24655cb7ff0f6dac01dc`  

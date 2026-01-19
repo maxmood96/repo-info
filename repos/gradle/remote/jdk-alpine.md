@@ -87,7 +87,7 @@ USER root
 		Size: 14.2 MB (14245329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:669f1a65d0fae852f6718306326728109ed1ddecfbfd653037dda93a9669e4a7`  
-		Last Modified: Wed, 07 Jan 2026 18:58:45 GMT  
+		Last Modified: Sat, 08 Nov 2025 18:00:27 GMT  
 		Size: 91.3 MB (91279717 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f288373361582707b01fea1abf34f4ff1053f3baee5acb21cf34af46e4f8c85`  
@@ -103,7 +103,7 @@ USER root
 		Size: 1.0 KB (1012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4192ee7c84cca15a1ccd5920ea8f74cfa89473832721f62ed5df125c6b54275`  
@@ -135,7 +135,7 @@ $ docker pull gradle@sha256:d54df7e86556efca9a95e3e7ba355bc6959f98a854520a48e428
 
 -	Layers:
 	-	`sha256:fca7ddfcf9e316340dcd3d5205cc7ef1519b89725319a59d0568659f060c0f83`  
-		Last Modified: Sat, 17 Jan 2026 00:21:10 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:45:18 GMT  
 		Size: 4.6 MB (4588389 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d5873f1e58b8459226ff3176977697feae09e2c602560e71dfa2931307227601`  
@@ -235,11 +235,11 @@ USER root
 		Size: 1.0 KB (1013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:79430c2c2db026ebae3472e398eead6a798ba33e5c3da2e840ed184d83def08d`  
-		Last Modified: Fri, 16 Jan 2026 21:46:43 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:46:30 GMT  
 		Size: 46.1 MB (46075731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2472ecce79e568c7e7b4a5c2a6165734c6560215b31f996e3608a627004064d0`  
