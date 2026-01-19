@@ -147,11 +147,11 @@ USER root
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:021cbd4c3cf6af5aad7b10d49e0b11741169d1b6d24c1e0a4a52eaa17b63197b`  
-		Last Modified: Fri, 16 Jan 2026 21:44:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:44:41 GMT  
 		Size: 39.6 MB (39633675 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c27cdd978ee2cadc0f3bf3701061b0d0b88de6552caa5507da81ae883ef9b7b`  
-		Last Modified: Fri, 16 Jan 2026 21:45:15 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:44:42 GMT  
 		Size: 137.0 MB (136988874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:335759629cc771ff21cc880bbd3867e3a97d55e1c4253bc108953f7a30a7d00e`  
@@ -287,7 +287,7 @@ USER root
 
 -	Layers:
 	-	`sha256:f416e7c13e96a1bec342af3e79184aaf45de55dd66939245eb76ca02465c54c7`  
-		Last Modified: Thu, 18 Dec 2025 12:14:44 GMT  
+		Last Modified: Thu, 18 Dec 2025 12:14:26 GMT  
 		Size: 32.6 MB (32633678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c9130efecea1da1bdfee8ddaed8967a356e9c720f5ff3d70fe5bb6e2fcebd4c6`  
@@ -295,7 +295,7 @@ USER root
 		Size: 55.1 MB (55118591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc3089435d7030596b3a6667f29af4568d6c20a5ad5798d1f2ee9f97ff1e2dd8`  
-		Last Modified: Thu, 18 Dec 2025 22:59:53 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:31:05 GMT  
 		Size: 156.1 MB (156111803 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:001a1de1ae03b0dfbe3e2ed8f04c5fdd0578adf93cdf27afbb624d9a1e4e889f`  
@@ -303,7 +303,7 @@ USER root
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:51dc08137e3abbd344f353cc57f819bdea933269457944e36a31d7de51486778`  
-		Last Modified: Thu, 18 Dec 2025 22:31:10 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:31:02 GMT  
 		Size: 2.3 KB (2288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:647101d91ba9aaa45dd66ecc2d70d9ee8a1ed8d47063671ad9838a53c82d8968`  
@@ -319,7 +319,7 @@ USER root
 		Size: 39.1 MB (39120253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b025380319570eb417189a94f51886c2eda050a9ed9ccaff5235f72e06adfbf`  
-		Last Modified: Fri, 16 Jan 2026 21:45:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:45:39 GMT  
 		Size: 137.0 MB (136988875 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:520f7b304c4dba8734372c7a7e231478e6e55c7751c1ce497c4f384489645068`  
@@ -471,7 +471,7 @@ USER root
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7d8db7c6db427c77150fe94ed752ed6802f20589d61b0c4aa1b83c302229a9a9`  
-		Last Modified: Thu, 18 Dec 2025 22:43:49 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:43:38 GMT  
 		Size: 2.3 KB (2290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:421791580af6185fe035c0dbeab069d38566e6dc37796bed70e5c525abcfb5ac`  
@@ -639,11 +639,11 @@ USER root
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:de2232d21d9b616182aef67cb6642fac3489eb713f829b79a8fb0c9d0d92c411`  
-		Last Modified: Thu, 18 Dec 2025 22:42:56 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:42:48 GMT  
 		Size: 2.3 KB (2289 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f11fa4496cbb6bc3eda041e87da1dbaac5480d43990c2b11e83041b469e4c852`  
-		Last Modified: Fri, 16 Jan 2026 21:45:49 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:45:41 GMT  
 		Size: 1.6 KB (1624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -679,7 +679,7 @@ $ docker pull gradle@sha256:81b9113a3afdfd427bc597f406aabd30e86169890126e02ce6e1
 
 -	Layers:
 	-	`sha256:07585c1bf47ccf7a5c037c0b87fa9772dcab183bd35920c578a8330b72d8f9ca`  
-		Last Modified: Fri, 16 Jan 2026 21:45:41 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:26:33 GMT  
 		Size: 8.9 MB (8898811 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6e452eba52b3d734685139c195972fc833f97ea81a1314159f7cc73138815913`  
