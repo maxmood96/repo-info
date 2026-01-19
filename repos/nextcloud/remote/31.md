@@ -391,7 +391,7 @@ CMD ["apache2-foreground"]
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:607629f9a21465a35adb56a2f4a01245110b40eff9bd94b1c3110602a2cabaa2`  
-		Last Modified: Fri, 16 Jan 2026 23:35:50 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:35:41 GMT  
 		Size: 10.6 MB (10600751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:13b23ad0eb876f30ab3241af6615f40f7c091f913947b0fbf016b9a6e0d0810c`  
@@ -1351,7 +1351,7 @@ $ docker pull nextcloud@sha256:d9b2a588ecb164e9acf53be9404f97057ce056723ce3558a6
 
 -	Layers:
 	-	`sha256:5ad06eea06a7ddd719c7ad6adf130eb544425e164597b034ed6c2f759ff941c6`  
-		Last Modified: Sat, 17 Jan 2026 06:49:31 GMT  
+		Last Modified: Sat, 17 Jan 2026 04:47:17 GMT  
 		Size: 63.7 KB (63708 bytes)  
 		MIME: application/vnd.in-toto+json
 
