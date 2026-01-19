@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cadf68d64e66e58f87768f23554c636d565f42fd09f9a916171a0c78c82367eb`
-- Created: `2025-12-12T22:43:44.78505593Z`
+- Image ID: `sha256:e0d6f1ec782128ae3598c435fd2c259383af5a6249f1dea253dd55196bb8e867`
+- Created: `2026-01-15T22:50:15.99642833Z`
 - Virtual Size: ~ 3.96 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -762,12 +762,12 @@ $ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.15
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.15.debian.tar.xz' git_2.34.1-1ubuntu1.15.debian.tar.xz 786596 SHA512:e9cde169fe60dae852a05505c8c8d9e76c7e147c6a8ee0adea014aa3031de05363626bb4762d0fad3180bd9b269c9a4bd54b3abc695c9a81cb3a380d3c7d41de
 ```
 
-### `dpkg` source package: `glib2.0=2.72.4-0ubuntu2.6`
+### `dpkg` source package: `glib2.0=2.72.4-0ubuntu2.7`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.72.4-0ubuntu2.6`
-- `libglib2.0-data=2.72.4-0ubuntu2.6`
+- `libglib2.0-0:amd64=2.72.4-0ubuntu2.7`
+- `libglib2.0-data=2.72.4-0ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
@@ -775,9 +775,14 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.7.dsc' glib2.0_2.72.4-0ubuntu2.7.dsc 3670 SHA512:0fbb3687777c687bfacb4a585a6dae7d153d028371e29b6be8011e9956f0566f815078429ee6b12c259b13687fc5bd9f8c5e57f49735a7dc30df881f59755c40
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA512:b4e2e0985e2184ee9656c4f1b4e15d8d1264f3d23d31349bc43d92e8432cffa48e1685c40517efb08dc5b57b8285acf65f2747deeb50e50d9cacec7160e7edf8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.7.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.7.debian.tar.xz 158152 SHA512:f8c007b54b71965391b31113f6c89f0ebf89defa2099aa0bdb25f755d9e8294a73d2592b5e2d0969a03121157c853f9eadde5eb86ee2fc4def7787d3a877e37c
+```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.11`
 
@@ -827,22 +832,22 @@ $ apt-get source -qq --print-uris gmp=2:6.2.1+dfsg-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.2.1%2bdfsg-3ubuntu1.debian.tar.xz' gmp_6.2.1+dfsg-3ubuntu1.debian.tar.xz 40996 SHA512:d7e0a1165a42b11a26a0f9232193db41ce2e7b1f5ea50d258e156fc9d80f9a74b6739491ec73cc1e909a3d09e029f90c3be1460c993690c5081ef8c6a169a4c3
 ```
 
-### `dpkg` source package: `gnupg2=2.2.27-3ubuntu2.4`
+### `dpkg` source package: `gnupg2=2.2.27-3ubuntu2.5`
 
 Binary Packages:
 
-- `dirmngr=2.2.27-3ubuntu2.4`
-- `gnupg=2.2.27-3ubuntu2.4`
-- `gnupg-l10n=2.2.27-3ubuntu2.4`
-- `gnupg-utils=2.2.27-3ubuntu2.4`
-- `gnupg2=2.2.27-3ubuntu2.4`
-- `gpg=2.2.27-3ubuntu2.4`
-- `gpg-agent=2.2.27-3ubuntu2.4`
-- `gpg-wks-client=2.2.27-3ubuntu2.4`
-- `gpg-wks-server=2.2.27-3ubuntu2.4`
-- `gpgconf=2.2.27-3ubuntu2.4`
-- `gpgsm=2.2.27-3ubuntu2.4`
-- `gpgv=2.2.27-3ubuntu2.4`
+- `dirmngr=2.2.27-3ubuntu2.5`
+- `gnupg=2.2.27-3ubuntu2.5`
+- `gnupg-l10n=2.2.27-3ubuntu2.5`
+- `gnupg-utils=2.2.27-3ubuntu2.5`
+- `gnupg2=2.2.27-3ubuntu2.5`
+- `gpg=2.2.27-3ubuntu2.5`
+- `gpg-agent=2.2.27-3ubuntu2.5`
+- `gpg-wks-client=2.2.27-3ubuntu2.5`
+- `gpg-wks-server=2.2.27-3ubuntu2.5`
+- `gpgconf=2.2.27-3ubuntu2.5`
+- `gpgsm=2.2.27-3ubuntu2.5`
+- `gpgv=2.2.27-3ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gnupg2/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpg-wks-server/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -859,9 +864,14 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.5.dsc' gnupg2_2.2.27-3ubuntu2.5.dsc 3763 SHA512:178b162bff46e822775007ea3af32f1b63c131eb78d2184225b1e7904669a1338507dd34180e753c641a226c20c2b7967ea1570209020e52c621fb0e824bbc48
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27.orig.tar.bz2' gnupg2_2.2.27.orig.tar.bz2 7191555 SHA512:cf336962116c9c08ac80b1299654b94948033ef51d6d5e7f54c2f07bbf7d92c7b0bddb606ceee2cdd837063f519b8d59af5a82816b840a0fc47d90c07b0e95ab
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.5.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.5.debian.tar.xz 76672 SHA512:f3fd10428b50fca815afe5bdad9ee8db17f0eb3a8871a7935f94fc28da188cc1779e18bb84ed5a1cf86a464f46e818768d63aa61db9fac36a93ea05a37be9851
+```
 
 ### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.7`
 
@@ -1576,11 +1586,11 @@ $ apt-get source -qq --print-uris libnsl=1.3.0-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libn/libnsl/libnsl_1.3.0-2build2.debian.tar.xz' libnsl_1.3.0-2build2.debian.tar.xz 4868 SHA512:367904106ba925eaa667cc273b37afd052ba795b7ed004cdb501c13dd26b469df971ac10acec2bf57d91fa4839f356c7dcbcd4969914891152588365844ced9a
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.37-3ubuntu0.1`
+### `dpkg` source package: `libpng1.6=1.6.37-3ubuntu0.3`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.37-3ubuntu0.1`
+- `libpng16-16:amd64=1.6.37-3ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -1593,9 +1603,14 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libpng1.6=1.6.37-3ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.3.dsc' libpng1.6_1.6.37-3ubuntu0.3.dsc 2340 SHA512:e533d10c49c266712ced3f5c18f2ad6dc8304999db6876779810c5b052b51437e6c89691512059e0c7dfa568c23136f44eb35495a24297a029bd762ce6ef200d
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA512:ccb3705c23b2724e86d072e2ac8cfc380f41fadfd6977a248d588a8ad57b6abe0e4155e525243011f245e98d9b7afbe2e8cc7fd4ff7d82fcefb40c0f48f88918
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.3.debian.tar.xz' libpng1.6_1.6.37-3ubuntu0.3.debian.tar.xz 39676 SHA512:0df6cb5417f891c42387c861e2da4669934a7c50d1cf1d77192248673e1c7aaca23b3de9b588b3a2b63cb342c094e15b319bc0113582606ae3fc1c2b1b75e43e
+```
 
 ### `dpkg` source package: `libpsl=0.21.0-1.2build2`
 
@@ -2642,16 +2657,16 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.12`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.13`
 
 Binary Packages:
 
-- `libpython3.10:amd64=3.10.12-1~22.04.12`
-- `libpython3.10-dev:amd64=3.10.12-1~22.04.12`
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.12`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.12`
-- `python3.10=3.10.12-1~22.04.12`
-- `python3.10-minimal=3.10.12-1~22.04.12`
+- `libpython3.10:amd64=3.10.12-1~22.04.13`
+- `libpython3.10-dev:amd64=3.10.12-1~22.04.13`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.13`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.13`
+- `python3.10=3.10.12-1~22.04.13`
+- `python3.10-minimal=3.10.12-1~22.04.13`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/doc/libpython3.10-dev/copyright`, `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2673,9 +2688,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.13
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.13.dsc' python3.10_3.10.12-1~22.04.13.dsc 3110 SHA512:36de03acd77925bcc301442290e7fc52d37e0df923705e5bf1f11e6e55441e555e4feabc8530be6405d2b28904d8fdfe4c393da01a33282e5644e4982a003775
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.13.debian.tar.xz' python3.10_3.10.12-1~22.04.13.debian.tar.xz 261444 SHA512:d860a3d1cc84822c36672ff581ed4eb279e3f7a946b587453d8ca771c2fef6f885b4a92d3c7f565401d6dec750d92adeb56bc7c8a19b92ac91bdd00de4cd58c7
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
