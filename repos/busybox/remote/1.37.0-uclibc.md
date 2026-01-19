@@ -230,7 +230,7 @@ $ docker pull busybox@sha256:fb1851f67e44fec1f743e8fd332a0eab0bbc53d461e30e9b7d9
 
 -	Layers:
 	-	`sha256:736bedbbe58fc30bceb622d68509f00d62343283ebcbae41989dd329911337b8`  
-		Last Modified: Tue, 06 Jan 2026 21:57:47 GMT  
+		Last Modified: Tue, 06 Jan 2026 18:56:49 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
