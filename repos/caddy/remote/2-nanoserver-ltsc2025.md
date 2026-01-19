@@ -72,7 +72,7 @@ RUN cmd /S /C #(nop)  CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--ad
 		Size: 199.1 MB (199076547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:583c8efc88613ab537d0abf5ed4dafa4c4b46e2329b042c6c2e02850f9b4c918`  
-		Last Modified: Fri, 16 Jan 2026 22:11:09 GMT  
+		Last Modified: Fri, 16 Jan 2026 22:10:56 GMT  
 		Size: 69.9 KB (69928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b1baedeb368ef34357f14e70433098a747c14f70534c9ae0b558b1ac678c6977`  
