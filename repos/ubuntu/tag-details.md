@@ -200,7 +200,7 @@ $ docker pull ubuntu@sha256:eed85c514cce607e6b0049d64c95933bafa449ef6fcd52364a1f
 
 -	Layers:
 	-	`sha256:ee0ebce960c37894896371a0be286a3f6ff498f4515d2cb9b99d6206bdb227c5`  
-		Last Modified: Thu, 15 Jan 2026 23:22:04 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:45:01 GMT  
 		Size: 2.0 MB (1980410 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -762,7 +762,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:c62190a9ab61c5fadad5c83c08965df006562241538b21f41b5efd457dc50ccf`  
-		Last Modified: Thu, 02 Oct 2025 22:51:56 GMT  
+		Last Modified: Tue, 02 Dec 2025 13:58:07 GMT  
 		Size: 29.7 MB (29713967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2270,7 +2270,7 @@ $ docker pull ubuntu@sha256:eed85c514cce607e6b0049d64c95933bafa449ef6fcd52364a1f
 
 -	Layers:
 	-	`sha256:ee0ebce960c37894896371a0be286a3f6ff498f4515d2cb9b99d6206bdb227c5`  
-		Last Modified: Thu, 15 Jan 2026 23:22:04 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:45:01 GMT  
 		Size: 2.0 MB (1980410 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2613,7 +2613,7 @@ $ docker pull ubuntu@sha256:eed85c514cce607e6b0049d64c95933bafa449ef6fcd52364a1f
 
 -	Layers:
 	-	`sha256:ee0ebce960c37894896371a0be286a3f6ff498f4515d2cb9b99d6206bdb227c5`  
-		Last Modified: Thu, 15 Jan 2026 23:22:04 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:45:01 GMT  
 		Size: 2.0 MB (1980410 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3755,7 +3755,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:c62190a9ab61c5fadad5c83c08965df006562241538b21f41b5efd457dc50ccf`  
-		Last Modified: Thu, 02 Oct 2025 22:51:56 GMT  
+		Last Modified: Tue, 02 Dec 2025 13:58:07 GMT  
 		Size: 29.7 MB (29713967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4100,7 +4100,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:c62190a9ab61c5fadad5c83c08965df006562241538b21f41b5efd457dc50ccf`  
-		Last Modified: Thu, 02 Oct 2025 22:51:56 GMT  
+		Last Modified: Tue, 02 Dec 2025 13:58:07 GMT  
 		Size: 29.7 MB (29713967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
