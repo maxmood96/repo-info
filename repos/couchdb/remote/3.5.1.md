@@ -249,7 +249,7 @@ $ docker pull couchdb@sha256:8ed481b2cca03c4b8f6865b96bc4487ca3baf31d374e87e1042
 
 -	Layers:
 	-	`sha256:6ce1950ba463d86989dad05da95562dec1791435eea9bfe733ae0d0dd83cbf76`  
-		Last Modified: Tue, 13 Jan 2026 05:34:22 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:20:51 GMT  
 		Size: 4.2 MB (4184714 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a50d4d6e4b72e86f1a95b7c50ce2ca2099a3a9a898205250f448399f4b707c08`  
