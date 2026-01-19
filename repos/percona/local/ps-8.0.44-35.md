@@ -397,12 +397,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): GPLv3+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url gnupg2-2.3.3-4.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnupg2-2.3.3-4.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `gnutls-3.8.3-9.el9.x86_64`
 
