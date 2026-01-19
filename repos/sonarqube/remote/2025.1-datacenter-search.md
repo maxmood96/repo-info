@@ -100,7 +100,7 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 
 -	Layers:
 	-	`sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114`  
-		Last Modified: Tue, 13 Jan 2026 07:03:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:996467dfb4d0179a2f091bc2a9d9749646d7fc320067d1147a6df2b4833f1c82`  
@@ -112,7 +112,7 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 		Size: 53.0 MB (52978745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ac4b4cf16a8ad1b819f8041978350794113eb509aba19c5cd47bd77a053c335`  
-		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:12 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:abb78f73258bc413aae5281eb128ee526870ba076049a4526b38041362fe99c6`  
@@ -124,11 +124,11 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 		Size: 1.1 GB (1104871939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e4201db27d281f2c1878760e14cdb4469aacfeabb6c48bb434d621e621c3e907`  
-		Last Modified: Fri, 16 Jan 2026 01:09:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:08:32 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -148,7 +148,7 @@ $ docker pull sonarqube@sha256:474ac9c1222e6bb831089ee2e3a90c26ef00a145081e7d67c
 
 -	Layers:
 	-	`sha256:800316c6550371b03180a31e1391cb9b0b1d8765771082700499da20f493955e`  
-		Last Modified: Fri, 16 Jan 2026 01:35:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:08:32 GMT  
 		Size: 4.6 MB (4636517 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2c206f6ab6ae17f139ea3ac038d9cc9a6452374804c0e7f744fdfcb763456628`  
@@ -273,7 +273,7 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
