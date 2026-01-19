@@ -255,7 +255,7 @@ RUN # debian.sh --arch 'riscv64' out/ 'forky' '@1768176000'
 
 -	Layers:
 	-	`sha256:ff9a5f98a8e06071907dab09a1e03acf1dc35dea724a19c6d291772949fe3074`  
-		Last Modified: Tue, 13 Jan 2026 00:54:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:54:00 GMT  
 		Size: 27.4 MB (27356313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -298,7 +298,7 @@ RUN # debian.sh --arch 's390x' out/ 'forky' '@1768176000'
 
 -	Layers:
 	-	`sha256:2f8b87a708ff62848fc9fc3e49855a6c682f9a487989c9223abc18d45f556a5a`  
-		Last Modified: Tue, 13 Jan 2026 04:21:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:21:28 GMT  
 		Size: 28.9 MB (28876450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
