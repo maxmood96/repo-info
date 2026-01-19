@@ -663,7 +663,7 @@ $ docker pull haproxy@sha256:ce890a8ddbfc3f680d248ee4134747dc8b29daedf6b5349bc00
 		Size: 2.1 MB (2107707 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f1a17cc788c9df581fc1822660846ee5278e844dd5ecfd4927b3d261c19ceb4a`  
-		Last Modified: Wed, 14 Jan 2026 07:57:29 GMT  
+		Last Modified: Wed, 14 Jan 2026 05:03:02 GMT  
 		Size: 22.4 KB (22409 bytes)  
 		MIME: application/vnd.in-toto+json
 
