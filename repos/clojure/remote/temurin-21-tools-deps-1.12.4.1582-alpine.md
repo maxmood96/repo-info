@@ -75,7 +75,7 @@ CMD ["-M" "--repl"]
 		Size: 21.1 MB (21112184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34da1dc78644035d0dc76bd344bb33911551088d2c35e5eae20ee0883291ece`  
-		Last Modified: Wed, 07 Jan 2026 18:56:58 GMT  
+		Last Modified: Sat, 08 Nov 2025 17:59:34 GMT  
 		Size: 158.1 MB (158102933 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b6a3991c44d0e9016c97a7a16b122fc35778b7bf3abb694a7acabc5f8e6551c8`  
@@ -91,11 +91,11 @@ CMD ["-M" "--repl"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e169b1abdb33da5d93ffffc885cb8105b37e0234fd84ff8ea5bc8aef072354f`  
-		Last Modified: Thu, 11 Dec 2025 22:39:40 GMT  
+		Last Modified: Thu, 11 Dec 2025 22:39:48 GMT  
 		Size: 25.1 MB (25121242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec8a8883ef92d2697caca495073f8279484debf6d0fef26168fce5a5cb296b84`  
-		Last Modified: Thu, 11 Dec 2025 22:39:46 GMT  
+		Last Modified: Thu, 11 Dec 2025 22:39:40 GMT  
 		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:31636dab5e40e8b679a51352e89779109791014c23c2b62f745e2e2625e1b508`  
@@ -119,7 +119,7 @@ $ docker pull clojure@sha256:7b70e03823013bcca9401305f127b7c917c5c5a33084d7698dd
 
 -	Layers:
 	-	`sha256:57cdfcc2ace667cee97348155a75fe38c2cb11197107730d107aa337fdbe102d`  
-		Last Modified: Thu, 11 Dec 2025 22:39:40 GMT  
+		Last Modified: Fri, 12 Dec 2025 01:40:35 GMT  
 		Size: 1.3 MB (1300960 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b3806d616bef390aeddf4af5b278b51a3faa3bea56288ef3b5d102232bdc04e1`  
@@ -191,7 +191,7 @@ CMD ["-M" "--repl"]
 		Size: 21.2 MB (21164202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ac0dd9c7e27c9284c00f27ca9959b156926e12010ba8683e583ff6811916f12`  
-		Last Modified: Wed, 07 Jan 2026 18:58:24 GMT  
+		Last Modified: Sat, 08 Nov 2025 17:58:58 GMT  
 		Size: 156.1 MB (156097412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a9c7361609fe55d3eb9a77ca907ab0d5f394b754ecf497fbd624cd8fe359a6db`  
