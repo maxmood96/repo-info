@@ -51,7 +51,7 @@ CMD ["swipl"]
 
 -	Layers:
 	-	`sha256:c02d17997ce3d2c82e082235ea0b5152d06ee659c4e2fabcf1e0079312f1bcde`  
-		Last Modified: Tue, 13 Jan 2026 00:41:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:44 GMT  
 		Size: 28.2 MB (28228572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:90d4a500e7c159216d0255d51e65c7a3d7f7583da3cb59767dfa982b3c358d79`  
@@ -148,7 +148,7 @@ $ docker pull swipl@sha256:429d729381b3b8bbedb24718a880be83a09ba1d5ef406ca1c4a39
 		Size: 3.3 MB (3325392 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a82a4d912e5a579b0a018d2b17983ceb0dccbbdcfe1ceb3076f17a17c90ee32b`  
-		Last Modified: Tue, 13 Jan 2026 02:56:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:18:27 GMT  
 		Size: 17.9 KB (17926 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -261,7 +261,7 @@ CMD ["swipl"]
 
 -	Layers:
 	-	`sha256:c02d17997ce3d2c82e082235ea0b5152d06ee659c4e2fabcf1e0079312f1bcde`  
-		Last Modified: Tue, 13 Jan 2026 00:41:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:44 GMT  
 		Size: 28.2 MB (28228572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:035f025c80ef6b065d4c762ec9c32fb45394d26d31739263be1463f375de2aca`  
@@ -293,7 +293,7 @@ $ docker pull swipl@sha256:4e3f51e045fd795e3f4f1c76cec26e5546e29c86969fd2d9efcbc
 		Size: 3.3 MB (3326546 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2d26df3146dc7eef9b154a2a023ae7aafb38ab9b9a993b3efd41b49ef7f09c9c`  
-		Last Modified: Tue, 13 Jan 2026 02:10:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:18:31 GMT  
 		Size: 17.9 KB (17885 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -334,7 +334,7 @@ CMD ["swipl"]
 		Size: 43.8 MB (43775250 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6693d992cc7628d34e0771daeb4f09bc59143cbda547e2fac67f40468711fa2`  
-		Last Modified: Tue, 13 Jan 2026 02:54:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:54:10 GMT  
 		Size: 17.1 MB (17085941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -419,11 +419,11 @@ $ docker pull swipl@sha256:1dd1b84cd17d25f67116ffb168e76322d6c017ac0f5b6ca583ed0
 
 -	Layers:
 	-	`sha256:a49db3c0a54992686e91f27a9ee652f4e9fc396aac499d549d55e7b1ddac6bd3`  
-		Last Modified: Tue, 13 Jan 2026 02:16:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:18:41 GMT  
 		Size: 3.3 MB (3326886 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ef0af8543e761cad8d83f108791200cc378d4065bd70a54b2aa44e5687fb8e31`  
-		Last Modified: Tue, 13 Jan 2026 06:18:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:16:39 GMT  
 		Size: 18.0 KB (17980 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -471,7 +471,7 @@ CMD ["swipl"]
 
 -	Layers:
 	-	`sha256:c02d17997ce3d2c82e082235ea0b5152d06ee659c4e2fabcf1e0079312f1bcde`  
-		Last Modified: Tue, 13 Jan 2026 00:41:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:44 GMT  
 		Size: 28.2 MB (28228572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:035f025c80ef6b065d4c762ec9c32fb45394d26d31739263be1463f375de2aca`  
@@ -503,7 +503,7 @@ $ docker pull swipl@sha256:4e3f51e045fd795e3f4f1c76cec26e5546e29c86969fd2d9efcbc
 		Size: 3.3 MB (3326546 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2d26df3146dc7eef9b154a2a023ae7aafb38ab9b9a993b3efd41b49ef7f09c9c`  
-		Last Modified: Tue, 13 Jan 2026 02:10:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:18:31 GMT  
 		Size: 17.9 KB (17885 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -544,7 +544,7 @@ CMD ["swipl"]
 		Size: 43.8 MB (43775250 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6693d992cc7628d34e0771daeb4f09bc59143cbda547e2fac67f40468711fa2`  
-		Last Modified: Tue, 13 Jan 2026 02:54:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:54:10 GMT  
 		Size: 17.1 MB (17085941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -629,11 +629,11 @@ $ docker pull swipl@sha256:1dd1b84cd17d25f67116ffb168e76322d6c017ac0f5b6ca583ed0
 
 -	Layers:
 	-	`sha256:a49db3c0a54992686e91f27a9ee652f4e9fc396aac499d549d55e7b1ddac6bd3`  
-		Last Modified: Tue, 13 Jan 2026 02:16:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:18:41 GMT  
 		Size: 3.3 MB (3326886 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ef0af8543e761cad8d83f108791200cc378d4065bd70a54b2aa44e5687fb8e31`  
-		Last Modified: Tue, 13 Jan 2026 06:18:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:16:39 GMT  
 		Size: 18.0 KB (17980 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -681,7 +681,7 @@ CMD ["swipl"]
 
 -	Layers:
 	-	`sha256:c02d17997ce3d2c82e082235ea0b5152d06ee659c4e2fabcf1e0079312f1bcde`  
-		Last Modified: Tue, 13 Jan 2026 00:41:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:44 GMT  
 		Size: 28.2 MB (28228572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:90d4a500e7c159216d0255d51e65c7a3d7f7583da3cb59767dfa982b3c358d79`  
@@ -778,7 +778,7 @@ $ docker pull swipl@sha256:429d729381b3b8bbedb24718a880be83a09ba1d5ef406ca1c4a39
 		Size: 3.3 MB (3325392 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a82a4d912e5a579b0a018d2b17983ceb0dccbbdcfe1ceb3076f17a17c90ee32b`  
-		Last Modified: Tue, 13 Jan 2026 02:56:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:18:27 GMT  
 		Size: 17.9 KB (17926 bytes)  
 		MIME: application/vnd.in-toto+json
 
