@@ -85,7 +85,7 @@ $ docker pull eclipse-mosquitto@sha256:2a5e6f7f41855a76c40f67f9f122e4cc1e766c0c1
 
 -	Layers:
 	-	`sha256:3c0251462c923e6de2332cd555d9eee5b5ad78184b69bf9e4e602b7b9e0944be`  
-		Last Modified: Tue, 13 Jan 2026 20:54:50 GMT  
+		Last Modified: Fri, 14 Nov 2025 17:51:22 GMT  
 		Size: 558.3 KB (558347 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:718c4a10dd3003495be54e7f3fbba11ce849b5bd2a43329193f33ac9391ed60d`  
@@ -135,7 +135,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8ef2a79469d3a4a2b7c77ae9b19e8edb875fd427d3da4ab8e9475c3ed89dc2e0`  
-		Last Modified: Fri, 14 Nov 2025 17:50:57 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:03:21 GMT  
 		Size: 881.4 KB (881379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed4223821f8d56602b18377af4d51c61383c131d3c9125fb5b47eddd62895a5b`  
@@ -357,7 +357,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 		Size: 984.5 KB (984497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:077b75908da51530f85aad32c9b8e3c7ba48315b531f54d84e05dffdd9f1e844`  
-		Last Modified: Fri, 14 Nov 2025 19:02:00 GMT  
+		Last Modified: Thu, 15 Jan 2026 08:03:45 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -423,7 +423,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:e6b06613ca2e7cdf3e8ebbe71ca45137242628a4a3a4bfcb7a9f76d0d5b0e653`  
-		Last Modified: Sun, 07 Dec 2025 14:06:46 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:199ab76496ac2ee9ec0a08d3f423251943aac0847eea0166b74a9a2959413450`  
