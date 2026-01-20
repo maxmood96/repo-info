@@ -90,11 +90,11 @@ CMD ["eggdrop.conf"]
 		Size: 1.1 MB (1115825 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6e1204601ed31ff4d8854a1589e94bc648e25c223f8024789969b7ac47a9740`  
-		Last Modified: Mon, 08 Dec 2025 18:15:26 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 12.7 MB (12722227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b463721ce0481472b1128039e9d96762bf3b555aca5ba73e8f1020fe0a353154`  
@@ -122,7 +122,7 @@ $ docker pull eggdrop@sha256:21a697b5f5205343b075417ea8e98c92e566d1fda45d0178664
 
 -	Layers:
 	-	`sha256:b4105a3991b83709b6ff815008720b2de1381ea4bbcfeb763fc04fd92dc98654`  
-		Last Modified: Sun, 28 Dec 2025 12:41:21 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 140.5 KB (140534 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:477d91ddf68ecff868f775002a21fa94ce61d806081397a0040485b0bf98b375`  
@@ -186,19 +186,19 @@ CMD ["eggdrop.conf"]
 		Size: 3.4 MB (3371145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9cca15b0d60a69ae3c9fe85609cc2280bd54f663348c1173479b30243da18174`  
-		Last Modified: Sun, 14 Dec 2025 22:44:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:35:05 GMT  
 		Size: 967.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b78bdc93c9660244511056bf87eddfa706742b6d416b2912c6839707f2bf6b22`  
-		Last Modified: Sun, 14 Dec 2025 22:44:08 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:35:05 GMT  
 		Size: 1.1 MB (1130246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0efeaae033b267e83657e36c933344c4107e0864e354ca8e7c433c08fbf7b57f`  
-		Last Modified: Wed, 08 Oct 2025 21:35:06 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:15 GMT  
 		Size: 12.6 MB (12570812 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c19cdb36d616ba5f1950925bc449bc4fd414dc306f91bc59d215b19579a5e4c5`  
@@ -206,7 +206,7 @@ CMD ["eggdrop.conf"]
 		Size: 1.9 KB (1949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24088101cee5454d8aa675ff3dea5852472f182b8efd8e1fbc6ec3eca26a99b8`  
-		Last Modified: Wed, 08 Oct 2025 21:35:07 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:25 GMT  
 		Size: 1.1 KB (1123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -290,7 +290,7 @@ CMD ["eggdrop.conf"]
 		Size: 967.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:134da3f1e5d3b9818715f85668f7f368e6578d00ab3966b73781bb21f5ed1ae3`  
-		Last Modified: Wed, 08 Oct 2025 21:29:04 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:38 GMT  
 		Size: 1.2 MB (1211719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bd0bad18df45a61238009b04b67a3adc1ff25c74b8e8f25d164e1c2c41b9e31`  
@@ -298,7 +298,7 @@ CMD ["eggdrop.conf"]
 		Size: 12.9 MB (12857433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ae35aad293480520992345046133c402c99088cf8166ead77eed98f76f1324d`  
@@ -326,7 +326,7 @@ $ docker pull eggdrop@sha256:96ae58de5a51d7c1d59c35c9b944477697e08c9181f8c90f485
 
 -	Layers:
 	-	`sha256:ed1e6612fa12e333a37970af500585bdd04692082304ca446b98e6d5899002f2`  
-		Last Modified: Sat, 27 Dec 2025 03:02:13 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:29:04 GMT  
 		Size: 140.6 KB (140590 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:63a9cc1bfc0c668dad482bdc842d0b392b5d23c1875974ee0f352dae9f03f388`  
@@ -413,11 +413,11 @@ CMD ["eggdrop.conf"]
 		Size: 1.1 MB (1115825 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6e1204601ed31ff4d8854a1589e94bc648e25c223f8024789969b7ac47a9740`  
-		Last Modified: Mon, 08 Dec 2025 18:15:26 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 12.7 MB (12722227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b463721ce0481472b1128039e9d96762bf3b555aca5ba73e8f1020fe0a353154`  
@@ -445,7 +445,7 @@ $ docker pull eggdrop@sha256:21a697b5f5205343b075417ea8e98c92e566d1fda45d0178664
 
 -	Layers:
 	-	`sha256:b4105a3991b83709b6ff815008720b2de1381ea4bbcfeb763fc04fd92dc98654`  
-		Last Modified: Sun, 28 Dec 2025 12:41:21 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 140.5 KB (140534 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:477d91ddf68ecff868f775002a21fa94ce61d806081397a0040485b0bf98b375`  
@@ -509,19 +509,19 @@ CMD ["eggdrop.conf"]
 		Size: 3.4 MB (3371145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9cca15b0d60a69ae3c9fe85609cc2280bd54f663348c1173479b30243da18174`  
-		Last Modified: Sun, 14 Dec 2025 22:44:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:35:05 GMT  
 		Size: 967.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b78bdc93c9660244511056bf87eddfa706742b6d416b2912c6839707f2bf6b22`  
-		Last Modified: Sun, 14 Dec 2025 22:44:08 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:35:05 GMT  
 		Size: 1.1 MB (1130246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0efeaae033b267e83657e36c933344c4107e0864e354ca8e7c433c08fbf7b57f`  
-		Last Modified: Wed, 08 Oct 2025 21:35:06 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:15 GMT  
 		Size: 12.6 MB (12570812 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c19cdb36d616ba5f1950925bc449bc4fd414dc306f91bc59d215b19579a5e4c5`  
@@ -529,7 +529,7 @@ CMD ["eggdrop.conf"]
 		Size: 1.9 KB (1949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24088101cee5454d8aa675ff3dea5852472f182b8efd8e1fbc6ec3eca26a99b8`  
-		Last Modified: Wed, 08 Oct 2025 21:35:07 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:25 GMT  
 		Size: 1.1 KB (1123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -613,7 +613,7 @@ CMD ["eggdrop.conf"]
 		Size: 967.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:134da3f1e5d3b9818715f85668f7f368e6578d00ab3966b73781bb21f5ed1ae3`  
-		Last Modified: Wed, 08 Oct 2025 21:29:04 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:38 GMT  
 		Size: 1.2 MB (1211719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bd0bad18df45a61238009b04b67a3adc1ff25c74b8e8f25d164e1c2c41b9e31`  
@@ -621,7 +621,7 @@ CMD ["eggdrop.conf"]
 		Size: 12.9 MB (12857433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ae35aad293480520992345046133c402c99088cf8166ead77eed98f76f1324d`  
@@ -649,7 +649,7 @@ $ docker pull eggdrop@sha256:96ae58de5a51d7c1d59c35c9b944477697e08c9181f8c90f485
 
 -	Layers:
 	-	`sha256:ed1e6612fa12e333a37970af500585bdd04692082304ca446b98e6d5899002f2`  
-		Last Modified: Sat, 27 Dec 2025 03:02:13 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:29:04 GMT  
 		Size: 140.6 KB (140590 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:63a9cc1bfc0c668dad482bdc842d0b392b5d23c1875974ee0f352dae9f03f388`  
@@ -728,11 +728,11 @@ CMD ["eggdrop.conf"]
 		Size: 3.6 MB (3642569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a45631b1f9484021c38b91256b3a86e87ca6a54ab533fe0a7e2cc352700d84e8`  
-		Last Modified: Sun, 14 Dec 2025 22:45:07 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:31 GMT  
 		Size: 957.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9e601ff6db137212574cc62e639a08f8897630ed2c1845bd1bc4b91605300e28`  
-		Last Modified: Fri, 12 Dec 2025 19:09:39 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:31 GMT  
 		Size: 1.1 MB (1116616 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9e84262d51d065b2331b8f3bb770ab3d3d7abb0583a2d1715874c75c647cb91d`  
@@ -740,7 +740,7 @@ CMD ["eggdrop.conf"]
 		Size: 8.0 MB (8011448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fdfdc7aae4ce203de7fa62ede8d62a988a3a0af350bacec891b97a93de632871`  
@@ -832,7 +832,7 @@ CMD ["eggdrop.conf"]
 		Size: 3.4 MB (3365468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:684747324f3a8286a9023c7b4e3819a6d2881b79b9036321476d4364aba77176`  
-		Last Modified: Wed, 08 Oct 2025 21:40:04 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:45:33 GMT  
 		Size: 954.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:759533af6521b32261415748cba8c0a668b1c574aca867479adf5e809ff0ad1a`  
@@ -840,11 +840,11 @@ CMD ["eggdrop.conf"]
 		Size: 1.1 MB (1129686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9ff1ae4444923e59020ad543e2ab168c4765d1126b173d9979da9eb3a5ece263`  
-		Last Modified: Wed, 08 Oct 2025 21:40:04 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:45:45 GMT  
 		Size: 7.8 MB (7828795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7329e52d81be2e6881536b4796c6dc3a34cb47d87517b211d364fc104a3a5a18`  
@@ -940,11 +940,11 @@ CMD ["eggdrop.conf"]
 		Size: 1.2 MB (1170783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2093ce2c83463f33fb63804cf7af661bd7c69eca1cf0863797cda5649c89946a`  
-		Last Modified: Wed, 08 Oct 2025 21:16:46 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:46:14 GMT  
 		Size: 8.1 MB (8056593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f16fbe273f84e44ce5c36d9ccfec37e3b6b2a76f2c87f923673d598f7ed11e4`  
@@ -1071,11 +1071,11 @@ CMD ["eggdrop.conf"]
 		Size: 6.0 MB (5962767 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:15e6eb4b83c6aa67cb71e5b24b549bf3367ba4f61e864341240540a7102524ad`  
-		Last Modified: Mon, 08 Dec 2025 20:25:30 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:36:13 GMT  
 		Size: 1.8 KB (1830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f6cc219421bf835c287336bfa31297a448e45fb284e5798787c89bf438d69390`  
@@ -1099,7 +1099,7 @@ $ docker pull eggdrop@sha256:33e473d1913ee8341924f97ebd0a17972c569e2e9550f4f3c35
 
 -	Layers:
 	-	`sha256:de4082dfbcb694cf00e6f51b12123b36173ce73dfc084c73c27f9f9d5cc0bf95`  
-		Last Modified: Wed, 08 Oct 2025 22:36:12 GMT  
+		Last Modified: Fri, 19 Dec 2025 19:17:34 GMT  
 		Size: 1.0 MB (1046379 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:28220d2e07e771ee3aa0a818c21e600c6f0eadb32341fba513b4bac359f50dca`  
@@ -1179,11 +1179,11 @@ CMD ["eggdrop.conf"]
 		Size: 2.9 MB (2895011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:33fec9ebf9ea28d947baa0058a462a1625384dec6ae60b90cd009cebe8b03169`  
-		Last Modified: Wed, 08 Oct 2025 21:35:05 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:25 GMT  
 		Size: 5.9 MB (5857312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:45a3fa352f7674af716153a72dc300311be2dd3a14f48c2d95742068eaf19467`  
@@ -1291,7 +1291,7 @@ CMD ["eggdrop.conf"]
 		Size: 6.0 MB (6013177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f54a9598fe40e9ac1982ab0c88ca0ddd4732cda51704ac4eb65f7be824312108`  
@@ -1418,11 +1418,11 @@ CMD ["eggdrop.conf"]
 		Size: 6.0 MB (5962767 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:15e6eb4b83c6aa67cb71e5b24b549bf3367ba4f61e864341240540a7102524ad`  
-		Last Modified: Mon, 08 Dec 2025 20:25:30 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:36:13 GMT  
 		Size: 1.8 KB (1830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f6cc219421bf835c287336bfa31297a448e45fb284e5798787c89bf438d69390`  
@@ -1446,7 +1446,7 @@ $ docker pull eggdrop@sha256:33e473d1913ee8341924f97ebd0a17972c569e2e9550f4f3c35
 
 -	Layers:
 	-	`sha256:de4082dfbcb694cf00e6f51b12123b36173ce73dfc084c73c27f9f9d5cc0bf95`  
-		Last Modified: Wed, 08 Oct 2025 22:36:12 GMT  
+		Last Modified: Fri, 19 Dec 2025 19:17:34 GMT  
 		Size: 1.0 MB (1046379 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:28220d2e07e771ee3aa0a818c21e600c6f0eadb32341fba513b4bac359f50dca`  
@@ -1526,11 +1526,11 @@ CMD ["eggdrop.conf"]
 		Size: 2.9 MB (2895011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:33fec9ebf9ea28d947baa0058a462a1625384dec6ae60b90cd009cebe8b03169`  
-		Last Modified: Wed, 08 Oct 2025 21:35:05 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:25 GMT  
 		Size: 5.9 MB (5857312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:45a3fa352f7674af716153a72dc300311be2dd3a14f48c2d95742068eaf19467`  
@@ -1638,7 +1638,7 @@ CMD ["eggdrop.conf"]
 		Size: 6.0 MB (6013177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f54a9598fe40e9ac1982ab0c88ca0ddd4732cda51704ac4eb65f7be824312108`  
@@ -1761,11 +1761,11 @@ CMD ["eggdrop.conf"]
 		Size: 8.0 MB (8021180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dba34c943ff8fcc09a4ea0bd5fa3efd186f5ca346c83b192b8bbc196fdc448ad`  
-		Last Modified: Fri, 12 Dec 2025 19:08:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:36:18 GMT  
 		Size: 2.0 KB (1967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5014703c0ad5bc18c563aab75004188f1e544f7fb51b0d2c654d3ff98cf77113`  
@@ -1861,15 +1861,15 @@ CMD ["eggdrop.conf"]
 		Size: 953.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a1041b886bd5942274d5f556380440ccbc3502293e1cc5367c03306e8bfd5fa`  
-		Last Modified: Wed, 08 Oct 2025 21:35:12 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:19 GMT  
 		Size: 1.1 MB (1129682 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f7aa86cb73576a7f1d2a85f33ae5bd972f94b03684d1bf3f2c6b64bdcac44da1`  
-		Last Modified: Sun, 14 Dec 2025 22:44:25 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:35:12 GMT  
 		Size: 7.8 MB (7836548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ff9a18a9b3d13e56221c1846fd23ad6eede2c4e4fb2a46789e97972769e1c65`  
@@ -1961,7 +1961,7 @@ CMD ["eggdrop.conf"]
 		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:da70aaa0b1d39a590962a1aab0c9aaf10f6d2900e27307cdacafeac923b62231`  
-		Last Modified: Wed, 08 Oct 2025 21:30:26 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:45 GMT  
 		Size: 954.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a2beab1ee3a381bdc0816e2cf4d8b83f4fe8482d02e71378316a0ca7e4678056`  
@@ -1973,7 +1973,7 @@ CMD ["eggdrop.conf"]
 		Size: 8.1 MB (8066314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc62524faec473893ecb924323c62f4a4dc5aab0ab2f374c0ca4c2142bbf2126`  
@@ -2088,11 +2088,11 @@ CMD ["eggdrop.conf"]
 		Size: 1.1 MB (1115825 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6e1204601ed31ff4d8854a1589e94bc648e25c223f8024789969b7ac47a9740`  
-		Last Modified: Mon, 08 Dec 2025 18:15:26 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 12.7 MB (12722227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b463721ce0481472b1128039e9d96762bf3b555aca5ba73e8f1020fe0a353154`  
@@ -2120,7 +2120,7 @@ $ docker pull eggdrop@sha256:21a697b5f5205343b075417ea8e98c92e566d1fda45d0178664
 
 -	Layers:
 	-	`sha256:b4105a3991b83709b6ff815008720b2de1381ea4bbcfeb763fc04fd92dc98654`  
-		Last Modified: Sun, 28 Dec 2025 12:41:21 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 140.5 KB (140534 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:477d91ddf68ecff868f775002a21fa94ce61d806081397a0040485b0bf98b375`  
@@ -2184,19 +2184,19 @@ CMD ["eggdrop.conf"]
 		Size: 3.4 MB (3371145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9cca15b0d60a69ae3c9fe85609cc2280bd54f663348c1173479b30243da18174`  
-		Last Modified: Sun, 14 Dec 2025 22:44:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:35:05 GMT  
 		Size: 967.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b78bdc93c9660244511056bf87eddfa706742b6d416b2912c6839707f2bf6b22`  
-		Last Modified: Sun, 14 Dec 2025 22:44:08 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:35:05 GMT  
 		Size: 1.1 MB (1130246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0efeaae033b267e83657e36c933344c4107e0864e354ca8e7c433c08fbf7b57f`  
-		Last Modified: Wed, 08 Oct 2025 21:35:06 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:15 GMT  
 		Size: 12.6 MB (12570812 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c19cdb36d616ba5f1950925bc449bc4fd414dc306f91bc59d215b19579a5e4c5`  
@@ -2204,7 +2204,7 @@ CMD ["eggdrop.conf"]
 		Size: 1.9 KB (1949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24088101cee5454d8aa675ff3dea5852472f182b8efd8e1fbc6ec3eca26a99b8`  
-		Last Modified: Wed, 08 Oct 2025 21:35:07 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:25 GMT  
 		Size: 1.1 KB (1123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2288,7 +2288,7 @@ CMD ["eggdrop.conf"]
 		Size: 967.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:134da3f1e5d3b9818715f85668f7f368e6578d00ab3966b73781bb21f5ed1ae3`  
-		Last Modified: Wed, 08 Oct 2025 21:29:04 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:38 GMT  
 		Size: 1.2 MB (1211719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bd0bad18df45a61238009b04b67a3adc1ff25c74b8e8f25d164e1c2c41b9e31`  
@@ -2296,7 +2296,7 @@ CMD ["eggdrop.conf"]
 		Size: 12.9 MB (12857433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ae35aad293480520992345046133c402c99088cf8166ead77eed98f76f1324d`  
@@ -2324,7 +2324,7 @@ $ docker pull eggdrop@sha256:96ae58de5a51d7c1d59c35c9b944477697e08c9181f8c90f485
 
 -	Layers:
 	-	`sha256:ed1e6612fa12e333a37970af500585bdd04692082304ca446b98e6d5899002f2`  
-		Last Modified: Sat, 27 Dec 2025 03:02:13 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:29:04 GMT  
 		Size: 140.6 KB (140590 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:63a9cc1bfc0c668dad482bdc842d0b392b5d23c1875974ee0f352dae9f03f388`  
@@ -2411,11 +2411,11 @@ CMD ["eggdrop.conf"]
 		Size: 1.1 MB (1115825 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6e1204601ed31ff4d8854a1589e94bc648e25c223f8024789969b7ac47a9740`  
-		Last Modified: Mon, 08 Dec 2025 18:15:26 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 12.7 MB (12722227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b463721ce0481472b1128039e9d96762bf3b555aca5ba73e8f1020fe0a353154`  
@@ -2443,7 +2443,7 @@ $ docker pull eggdrop@sha256:21a697b5f5205343b075417ea8e98c92e566d1fda45d0178664
 
 -	Layers:
 	-	`sha256:b4105a3991b83709b6ff815008720b2de1381ea4bbcfeb763fc04fd92dc98654`  
-		Last Modified: Sun, 28 Dec 2025 12:41:21 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:37:06 GMT  
 		Size: 140.5 KB (140534 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:477d91ddf68ecff868f775002a21fa94ce61d806081397a0040485b0bf98b375`  
@@ -2507,19 +2507,19 @@ CMD ["eggdrop.conf"]
 		Size: 3.4 MB (3371145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9cca15b0d60a69ae3c9fe85609cc2280bd54f663348c1173479b30243da18174`  
-		Last Modified: Sun, 14 Dec 2025 22:44:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:35:05 GMT  
 		Size: 967.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b78bdc93c9660244511056bf87eddfa706742b6d416b2912c6839707f2bf6b22`  
-		Last Modified: Sun, 14 Dec 2025 22:44:08 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:35:05 GMT  
 		Size: 1.1 MB (1130246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0efeaae033b267e83657e36c933344c4107e0864e354ca8e7c433c08fbf7b57f`  
-		Last Modified: Wed, 08 Oct 2025 21:35:06 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:15 GMT  
 		Size: 12.6 MB (12570812 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c19cdb36d616ba5f1950925bc449bc4fd414dc306f91bc59d215b19579a5e4c5`  
@@ -2527,7 +2527,7 @@ CMD ["eggdrop.conf"]
 		Size: 1.9 KB (1949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24088101cee5454d8aa675ff3dea5852472f182b8efd8e1fbc6ec3eca26a99b8`  
-		Last Modified: Wed, 08 Oct 2025 21:35:07 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:25 GMT  
 		Size: 1.1 KB (1123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2611,7 +2611,7 @@ CMD ["eggdrop.conf"]
 		Size: 967.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:134da3f1e5d3b9818715f85668f7f368e6578d00ab3966b73781bb21f5ed1ae3`  
-		Last Modified: Wed, 08 Oct 2025 21:29:04 GMT  
+		Last Modified: Sun, 14 Dec 2025 22:44:38 GMT  
 		Size: 1.2 MB (1211719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bd0bad18df45a61238009b04b67a3adc1ff25c74b8e8f25d164e1c2c41b9e31`  
@@ -2619,7 +2619,7 @@ CMD ["eggdrop.conf"]
 		Size: 12.9 MB (12857433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ae35aad293480520992345046133c402c99088cf8166ead77eed98f76f1324d`  
@@ -2647,7 +2647,7 @@ $ docker pull eggdrop@sha256:96ae58de5a51d7c1d59c35c9b944477697e08c9181f8c90f485
 
 -	Layers:
 	-	`sha256:ed1e6612fa12e333a37970af500585bdd04692082304ca446b98e6d5899002f2`  
-		Last Modified: Sat, 27 Dec 2025 03:02:13 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:29:04 GMT  
 		Size: 140.6 KB (140590 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:63a9cc1bfc0c668dad482bdc842d0b392b5d23c1875974ee0f352dae9f03f388`  
