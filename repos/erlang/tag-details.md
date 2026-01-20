@@ -134,7 +134,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 54.8 MB (54755833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b7faeb084d4ee23cb74164108fc63b81b8d1ee30a494ecc31d02fe53f3fec08`  
-		Last Modified: Tue, 13 Jan 2026 04:47:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:25:25 GMT  
 		Size: 197.2 MB (197217504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39b0388aed4e25f5336c9a9d99f4c9b1e0477bf3e03a1f2036acf4819c5d5d65`  
@@ -142,7 +142,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 267.1 MB (267122842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ce75ab4f840863a248713c1220f15d2b7a7be186c6c9ef0d713536ba3817c6ff`  
-		Last Modified: Tue, 13 Jan 2026 05:33:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:33:27 GMT  
 		Size: 196.4 KB (196413 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e59d0e7931452369c67055b57cdf04fc82ba8121c5b64d1b22f23aa5bcf0e3f5`  
@@ -213,7 +213,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd38532089c34c92931050565b084061d36d5f2907633b524122c2d6f089b42a`  
@@ -229,7 +229,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 167.6 MB (167643408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e5968cb8dc397f96f12142fc37e539bed63a53177e31a4a6ba3eb4a2d7ce304`  
-		Last Modified: Tue, 13 Jan 2026 06:29:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:26:46 GMT  
 		Size: 238.9 MB (238881813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b08e2d676d730dd5a45e2a8d566f9d829bbc5edf2cef3100e6ec5d2110b65b7c`  
@@ -237,7 +237,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 196.4 KB (196409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6d55527c289a94e825712f073005ea8e8ead8603527044f86ef44424826129c`  
-		Last Modified: Tue, 13 Jan 2026 06:26:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:26:55 GMT  
 		Size: 793.3 KB (793346 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -257,7 +257,7 @@ $ docker pull erlang@sha256:46fb188dcce6321aa2a9984039021f6ba1d099b3fc90eb6492c8
 
 -	Layers:
 	-	`sha256:ebc10c339e00db3e66d472215de4b00a477ef7fd4c749aaad065a9d0caa2136b`  
-		Last Modified: Tue, 13 Jan 2026 06:26:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:47:00 GMT  
 		Size: 23.2 MB (23242148 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3a6e7473f673f74dddaf4288362870a8a5862c78ac9ba433d633dd0011dc2884`  
@@ -308,15 +308,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 52.3 MB (52257769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee6280b099c5251ca1a2b55e8af5af4da252bad1f89325ba7a8344f2dea14e67`  
-		Last Modified: Tue, 13 Jan 2026 02:13:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:13:39 GMT  
 		Size: 15.7 MB (15749667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:735b68aa807ef231d58e7459ca83cac377da9d7f71d24a498190598a342d5bac`  
-		Last Modified: Tue, 13 Jan 2026 03:57:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:13 GMT  
 		Size: 54.9 MB (54863508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2705808e73b5ce7c5ea71a03de0f42c7ecdec94b51ae96443064253dcbeaea6c`  
-		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:50:04 GMT  
 		Size: 190.1 MB (190137777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc8a6b5c7b8b88d7a3428baa231b94ea7c35bbfcaaf1336f630a1e398d7fc899`  
@@ -324,7 +324,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 251.7 MB (251685037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8c6c41c197473e4d2efb9fdb8ba48ad79078f6ea7c904e1e7a352c1283d511d`  
-		Last Modified: Tue, 13 Jan 2026 05:30:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:31:05 GMT  
 		Size: 196.4 KB (196410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29282371f891d80f58bd9c5b073ee71196d1a91b5c126c431191b8b4f6aca25f`  
@@ -348,7 +348,7 @@ $ docker pull erlang@sha256:61402f02f7551938c64bb88315174f4ebdba27110b13ed4b83d2
 
 -	Layers:
 	-	`sha256:fda0e4447b498089056930fa55aecf81e1475f1fd26f88c6543de7dabcbc7979`  
-		Last Modified: Tue, 13 Jan 2026 05:30:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:47:26 GMT  
 		Size: 23.4 MB (23444548 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:abbc6de5ee34d310c3a4a4e9125ca6b769d22ca5a727139cac8475f001b3b876`  
@@ -395,7 +395,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6ed43d5d71f701abde2a62df95258edf0ac9ef3046d49ca25c0f30e57af2985`  
@@ -403,7 +403,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 16.3 MB (16267780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50309e354294a6f81ebf1bf80c4203a79bc9374449993f7fb52ebf0640408262`  
-		Last Modified: Tue, 13 Jan 2026 03:03:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:03:46 GMT  
 		Size: 56.0 MB (56048907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ad7ad875273afc9f1824115dad6d50ae84fba747da8a0b124f82d730bcb8bae`  
@@ -415,11 +415,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 257.4 MB (257350798 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e46561679c203abe0713bf231a9d94f9a16f7b424900b7fa01bdf124aac75cb`  
-		Last Modified: Tue, 13 Jan 2026 04:32:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:31:48 GMT  
 		Size: 196.4 KB (196375 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9d078248ecaf34299dfa3f2dfb2f4e15be76a23acbeeeaf2746e49518384341`  
-		Last Modified: Tue, 13 Jan 2026 04:31:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:32:03 GMT  
 		Size: 793.4 KB (793357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -439,7 +439,7 @@ $ docker pull erlang@sha256:fa053da72fce506f70ffa697f633fa158f5b232755286613acd0
 
 -	Layers:
 	-	`sha256:c85368fce42e0c58550ba23827247386d4346186701330e701d4e83273be2d36`  
-		Last Modified: Tue, 13 Jan 2026 04:31:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:48:02 GMT  
 		Size: 23.4 MB (23407889 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b06d19386ba8148502adc9bdecb063b484792a5d5b444842f5469c2d88b31793`  
@@ -493,7 +493,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
-		Last Modified: Sun, 07 Dec 2025 13:54:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:158387c12d8eac5c83d1b3b6a2aa647d0f12456c633875b34a155f83f7d67e06`  
@@ -517,7 +517,7 @@ $ docker pull erlang@sha256:7e40a7e4053facfd4d98d0c569d673b05a29164bb102395187e0
 
 -	Layers:
 	-	`sha256:49915e6e66037a17383f0c56203aeb5456deb0c73e1975caf2b34b0d6f6e07fc`  
-		Last Modified: Wed, 08 Oct 2025 23:06:21 GMT  
+		Last Modified: Sun, 04 Jan 2026 16:07:09 GMT  
 		Size: 273.4 KB (273380 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0f7e4d872dbe87e27dd429f4d8706469a3adedab9e36a74259c70021e9b2459b`  
@@ -554,11 +554,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:d9d7b8e1c6b20394731c1f62afa10545ea3d2388aca5051c7bae7732dbced5c9`  
-		Last Modified: Sun, 07 Dec 2025 14:02:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:48 GMT  
 		Size: 3.1 MB (3095971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29cc32d6b91709de2d57b2b953a35b753792ccdb6c4808e0ebc269b2cdb51272`  
-		Last Modified: Wed, 08 Oct 2025 22:14:46 GMT  
+		Last Modified: Thu, 11 Dec 2025 00:41:34 GMT  
 		Size: 43.2 MB (43193150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -582,7 +582,7 @@ $ docker pull erlang@sha256:82efcdee239214cc93e5f0d3b0a632390f6bb0f73bdb65590d39
 		Size: 269.1 KB (269101 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4af23f2f0684932fbb47a1f6de848b3d8839e14eb94013a6b2f66eee0fe08335`  
-		Last Modified: Wed, 08 Oct 2025 22:14:45 GMT  
+		Last Modified: Fri, 16 Jan 2026 19:24:23 GMT  
 		Size: 15.1 KB (15126 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -615,7 +615,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
-		Last Modified: Wed, 08 Oct 2025 12:02:47 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:57 GMT  
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e209263a2e9334d0ca0fc4c13bddd47c04458eb8e5fbde1e96e7162bb999b20`  
@@ -643,7 +643,7 @@ $ docker pull erlang@sha256:77d8438223feda46fb1d919c2f633825992b56bb3c085d78f60f
 		Size: 269.1 KB (269121 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f37cdf6ea634aaa9317c64bb0f4c5b919efdcadc3390d8450e3c46c95757d682`  
-		Last Modified: Wed, 24 Dec 2025 15:27:39 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:52:00 GMT  
 		Size: 15.2 KB (15150 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -704,7 +704,7 @@ $ docker pull erlang@sha256:7ea8b5f20dccef758113e1e1a96862ded4b97aeca45129481399
 		Size: 268.3 KB (268303 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3ed61a10fb060002c3323507fa8d092f68e1e43912dd037c5b324d29db11092e`  
-		Last Modified: Fri, 16 Jan 2026 19:24:25 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:44:17 GMT  
 		Size: 15.0 KB (15014 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -780,7 +780,7 @@ $ docker pull erlang@sha256:b164dc06f51e290a39e2b940d365f64ae23c1d1d14eb196456fc
 		Size: 4.1 MB (4098871 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:aecfa807a1fd021ebd4133af62e95cbac3d0e48057525246a806eac2fc235e87`  
-		Last Modified: Tue, 13 Jan 2026 02:26:47 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:46:53 GMT  
 		Size: 13.6 KB (13567 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -811,11 +811,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e31fd71f35e1c46e30dc677ced11b19cf198501276b9b7320f2fc4bdd1fd19eb`  
-		Last Modified: Tue, 13 Jan 2026 03:25:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:25:36 GMT  
 		Size: 57.2 MB (57225356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -874,7 +874,7 @@ CMD ["erl"]
 		Size: 52.3 MB (52257769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:534c48575ff55c470f7030d6b4e425680fb035f1a3b0e09d14731770a61e34b6`  
-		Last Modified: Tue, 13 Jan 2026 02:31:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:31:20 GMT  
 		Size: 58.1 MB (58076428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -929,11 +929,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f9fc57c1894c3f6237c7ee37a2e91cf286721c02c4c09fb9550e1ac1d86dbfe`  
-		Last Modified: Tue, 13 Jan 2026 02:10:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:10:21 GMT  
 		Size: 57.7 MB (57704700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -957,7 +957,7 @@ $ docker pull erlang@sha256:88533b963396d03c6816bee0b2456b94593918afa2f6f7c23da8
 		Size: 4.1 MB (4095399 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b80c545b64e37c579ee5a59536b2332e9c8bfca61ae6e6d03f0f0118056b4ce9`  
-		Last Modified: Tue, 13 Jan 2026 02:49:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:10:08 GMT  
 		Size: 13.5 KB (13536 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1029,7 +1029,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 54.8 MB (54755833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b7faeb084d4ee23cb74164108fc63b81b8d1ee30a494ecc31d02fe53f3fec08`  
-		Last Modified: Tue, 13 Jan 2026 04:47:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:25:25 GMT  
 		Size: 197.2 MB (197217504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39b0388aed4e25f5336c9a9d99f4c9b1e0477bf3e03a1f2036acf4819c5d5d65`  
@@ -1037,7 +1037,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 267.1 MB (267122842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ce75ab4f840863a248713c1220f15d2b7a7be186c6c9ef0d713536ba3817c6ff`  
-		Last Modified: Tue, 13 Jan 2026 05:33:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:33:27 GMT  
 		Size: 196.4 KB (196413 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e59d0e7931452369c67055b57cdf04fc82ba8121c5b64d1b22f23aa5bcf0e3f5`  
@@ -1108,7 +1108,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd38532089c34c92931050565b084061d36d5f2907633b524122c2d6f089b42a`  
@@ -1124,7 +1124,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 167.6 MB (167643408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e5968cb8dc397f96f12142fc37e539bed63a53177e31a4a6ba3eb4a2d7ce304`  
-		Last Modified: Tue, 13 Jan 2026 06:29:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:26:46 GMT  
 		Size: 238.9 MB (238881813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b08e2d676d730dd5a45e2a8d566f9d829bbc5edf2cef3100e6ec5d2110b65b7c`  
@@ -1132,7 +1132,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 196.4 KB (196409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6d55527c289a94e825712f073005ea8e8ead8603527044f86ef44424826129c`  
-		Last Modified: Tue, 13 Jan 2026 06:26:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:26:55 GMT  
 		Size: 793.3 KB (793346 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1152,7 +1152,7 @@ $ docker pull erlang@sha256:46fb188dcce6321aa2a9984039021f6ba1d099b3fc90eb6492c8
 
 -	Layers:
 	-	`sha256:ebc10c339e00db3e66d472215de4b00a477ef7fd4c749aaad065a9d0caa2136b`  
-		Last Modified: Tue, 13 Jan 2026 06:26:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:47:00 GMT  
 		Size: 23.2 MB (23242148 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3a6e7473f673f74dddaf4288362870a8a5862c78ac9ba433d633dd0011dc2884`  
@@ -1203,15 +1203,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 52.3 MB (52257769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee6280b099c5251ca1a2b55e8af5af4da252bad1f89325ba7a8344f2dea14e67`  
-		Last Modified: Tue, 13 Jan 2026 02:13:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:13:39 GMT  
 		Size: 15.7 MB (15749667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:735b68aa807ef231d58e7459ca83cac377da9d7f71d24a498190598a342d5bac`  
-		Last Modified: Tue, 13 Jan 2026 03:57:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:13 GMT  
 		Size: 54.9 MB (54863508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2705808e73b5ce7c5ea71a03de0f42c7ecdec94b51ae96443064253dcbeaea6c`  
-		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:50:04 GMT  
 		Size: 190.1 MB (190137777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc8a6b5c7b8b88d7a3428baa231b94ea7c35bbfcaaf1336f630a1e398d7fc899`  
@@ -1219,7 +1219,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 251.7 MB (251685037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8c6c41c197473e4d2efb9fdb8ba48ad79078f6ea7c904e1e7a352c1283d511d`  
-		Last Modified: Tue, 13 Jan 2026 05:30:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:31:05 GMT  
 		Size: 196.4 KB (196410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29282371f891d80f58bd9c5b073ee71196d1a91b5c126c431191b8b4f6aca25f`  
@@ -1243,7 +1243,7 @@ $ docker pull erlang@sha256:61402f02f7551938c64bb88315174f4ebdba27110b13ed4b83d2
 
 -	Layers:
 	-	`sha256:fda0e4447b498089056930fa55aecf81e1475f1fd26f88c6543de7dabcbc7979`  
-		Last Modified: Tue, 13 Jan 2026 05:30:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:47:26 GMT  
 		Size: 23.4 MB (23444548 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:abbc6de5ee34d310c3a4a4e9125ca6b769d22ca5a727139cac8475f001b3b876`  
@@ -1290,7 +1290,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6ed43d5d71f701abde2a62df95258edf0ac9ef3046d49ca25c0f30e57af2985`  
@@ -1298,7 +1298,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 16.3 MB (16267780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50309e354294a6f81ebf1bf80c4203a79bc9374449993f7fb52ebf0640408262`  
-		Last Modified: Tue, 13 Jan 2026 03:03:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:03:46 GMT  
 		Size: 56.0 MB (56048907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ad7ad875273afc9f1824115dad6d50ae84fba747da8a0b124f82d730bcb8bae`  
@@ -1310,11 +1310,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 257.4 MB (257350798 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e46561679c203abe0713bf231a9d94f9a16f7b424900b7fa01bdf124aac75cb`  
-		Last Modified: Tue, 13 Jan 2026 04:32:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:31:48 GMT  
 		Size: 196.4 KB (196375 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9d078248ecaf34299dfa3f2dfb2f4e15be76a23acbeeeaf2746e49518384341`  
-		Last Modified: Tue, 13 Jan 2026 04:31:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:32:03 GMT  
 		Size: 793.4 KB (793357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1334,7 +1334,7 @@ $ docker pull erlang@sha256:fa053da72fce506f70ffa697f633fa158f5b232755286613acd0
 
 -	Layers:
 	-	`sha256:c85368fce42e0c58550ba23827247386d4346186701330e701d4e83273be2d36`  
-		Last Modified: Tue, 13 Jan 2026 04:31:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:48:02 GMT  
 		Size: 23.4 MB (23407889 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b06d19386ba8148502adc9bdecb063b484792a5d5b444842f5469c2d88b31793`  
@@ -1388,7 +1388,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
-		Last Modified: Sun, 07 Dec 2025 13:54:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:158387c12d8eac5c83d1b3b6a2aa647d0f12456c633875b34a155f83f7d67e06`  
@@ -1412,7 +1412,7 @@ $ docker pull erlang@sha256:7e40a7e4053facfd4d98d0c569d673b05a29164bb102395187e0
 
 -	Layers:
 	-	`sha256:49915e6e66037a17383f0c56203aeb5456deb0c73e1975caf2b34b0d6f6e07fc`  
-		Last Modified: Wed, 08 Oct 2025 23:06:21 GMT  
+		Last Modified: Sun, 04 Jan 2026 16:07:09 GMT  
 		Size: 273.4 KB (273380 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0f7e4d872dbe87e27dd429f4d8706469a3adedab9e36a74259c70021e9b2459b`  
@@ -1449,11 +1449,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:d9d7b8e1c6b20394731c1f62afa10545ea3d2388aca5051c7bae7732dbced5c9`  
-		Last Modified: Sun, 07 Dec 2025 14:02:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:48 GMT  
 		Size: 3.1 MB (3095971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29cc32d6b91709de2d57b2b953a35b753792ccdb6c4808e0ebc269b2cdb51272`  
-		Last Modified: Wed, 08 Oct 2025 22:14:46 GMT  
+		Last Modified: Thu, 11 Dec 2025 00:41:34 GMT  
 		Size: 43.2 MB (43193150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1477,7 +1477,7 @@ $ docker pull erlang@sha256:82efcdee239214cc93e5f0d3b0a632390f6bb0f73bdb65590d39
 		Size: 269.1 KB (269101 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4af23f2f0684932fbb47a1f6de848b3d8839e14eb94013a6b2f66eee0fe08335`  
-		Last Modified: Wed, 08 Oct 2025 22:14:45 GMT  
+		Last Modified: Fri, 16 Jan 2026 19:24:23 GMT  
 		Size: 15.1 KB (15126 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1510,7 +1510,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
-		Last Modified: Wed, 08 Oct 2025 12:02:47 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:57 GMT  
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e209263a2e9334d0ca0fc4c13bddd47c04458eb8e5fbde1e96e7162bb999b20`  
@@ -1538,7 +1538,7 @@ $ docker pull erlang@sha256:77d8438223feda46fb1d919c2f633825992b56bb3c085d78f60f
 		Size: 269.1 KB (269121 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f37cdf6ea634aaa9317c64bb0f4c5b919efdcadc3390d8450e3c46c95757d682`  
-		Last Modified: Wed, 24 Dec 2025 15:27:39 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:52:00 GMT  
 		Size: 15.2 KB (15150 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1599,7 +1599,7 @@ $ docker pull erlang@sha256:7ea8b5f20dccef758113e1e1a96862ded4b97aeca45129481399
 		Size: 268.3 KB (268303 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3ed61a10fb060002c3323507fa8d092f68e1e43912dd037c5b324d29db11092e`  
-		Last Modified: Fri, 16 Jan 2026 19:24:25 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:44:17 GMT  
 		Size: 15.0 KB (15014 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1675,7 +1675,7 @@ $ docker pull erlang@sha256:b164dc06f51e290a39e2b940d365f64ae23c1d1d14eb196456fc
 		Size: 4.1 MB (4098871 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:aecfa807a1fd021ebd4133af62e95cbac3d0e48057525246a806eac2fc235e87`  
-		Last Modified: Tue, 13 Jan 2026 02:26:47 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:46:53 GMT  
 		Size: 13.6 KB (13567 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1706,11 +1706,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e31fd71f35e1c46e30dc677ced11b19cf198501276b9b7320f2fc4bdd1fd19eb`  
-		Last Modified: Tue, 13 Jan 2026 03:25:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:25:36 GMT  
 		Size: 57.2 MB (57225356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1769,7 +1769,7 @@ CMD ["erl"]
 		Size: 52.3 MB (52257769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:534c48575ff55c470f7030d6b4e425680fb035f1a3b0e09d14731770a61e34b6`  
-		Last Modified: Tue, 13 Jan 2026 02:31:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:31:20 GMT  
 		Size: 58.1 MB (58076428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1824,11 +1824,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f9fc57c1894c3f6237c7ee37a2e91cf286721c02c4c09fb9550e1ac1d86dbfe`  
-		Last Modified: Tue, 13 Jan 2026 02:10:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:10:21 GMT  
 		Size: 57.7 MB (57704700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1852,7 +1852,7 @@ $ docker pull erlang@sha256:88533b963396d03c6816bee0b2456b94593918afa2f6f7c23da8
 		Size: 4.1 MB (4095399 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b80c545b64e37c579ee5a59536b2332e9c8bfca61ae6e6d03f0f0118056b4ce9`  
-		Last Modified: Tue, 13 Jan 2026 02:49:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:10:08 GMT  
 		Size: 13.5 KB (13536 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1924,7 +1924,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 54.8 MB (54755833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b7faeb084d4ee23cb74164108fc63b81b8d1ee30a494ecc31d02fe53f3fec08`  
-		Last Modified: Tue, 13 Jan 2026 04:47:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:25:25 GMT  
 		Size: 197.2 MB (197217504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39b0388aed4e25f5336c9a9d99f4c9b1e0477bf3e03a1f2036acf4819c5d5d65`  
@@ -1932,7 +1932,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 267.1 MB (267122842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ce75ab4f840863a248713c1220f15d2b7a7be186c6c9ef0d713536ba3817c6ff`  
-		Last Modified: Tue, 13 Jan 2026 05:33:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:33:27 GMT  
 		Size: 196.4 KB (196413 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e59d0e7931452369c67055b57cdf04fc82ba8121c5b64d1b22f23aa5bcf0e3f5`  
@@ -2003,7 +2003,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd38532089c34c92931050565b084061d36d5f2907633b524122c2d6f089b42a`  
@@ -2019,7 +2019,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 167.6 MB (167643408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e5968cb8dc397f96f12142fc37e539bed63a53177e31a4a6ba3eb4a2d7ce304`  
-		Last Modified: Tue, 13 Jan 2026 06:29:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:26:46 GMT  
 		Size: 238.9 MB (238881813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b08e2d676d730dd5a45e2a8d566f9d829bbc5edf2cef3100e6ec5d2110b65b7c`  
@@ -2027,7 +2027,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 196.4 KB (196409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6d55527c289a94e825712f073005ea8e8ead8603527044f86ef44424826129c`  
-		Last Modified: Tue, 13 Jan 2026 06:26:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:26:55 GMT  
 		Size: 793.3 KB (793346 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2047,7 +2047,7 @@ $ docker pull erlang@sha256:46fb188dcce6321aa2a9984039021f6ba1d099b3fc90eb6492c8
 
 -	Layers:
 	-	`sha256:ebc10c339e00db3e66d472215de4b00a477ef7fd4c749aaad065a9d0caa2136b`  
-		Last Modified: Tue, 13 Jan 2026 06:26:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:47:00 GMT  
 		Size: 23.2 MB (23242148 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3a6e7473f673f74dddaf4288362870a8a5862c78ac9ba433d633dd0011dc2884`  
@@ -2098,15 +2098,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 52.3 MB (52257769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee6280b099c5251ca1a2b55e8af5af4da252bad1f89325ba7a8344f2dea14e67`  
-		Last Modified: Tue, 13 Jan 2026 02:13:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:13:39 GMT  
 		Size: 15.7 MB (15749667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:735b68aa807ef231d58e7459ca83cac377da9d7f71d24a498190598a342d5bac`  
-		Last Modified: Tue, 13 Jan 2026 03:57:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:13 GMT  
 		Size: 54.9 MB (54863508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2705808e73b5ce7c5ea71a03de0f42c7ecdec94b51ae96443064253dcbeaea6c`  
-		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:50:04 GMT  
 		Size: 190.1 MB (190137777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc8a6b5c7b8b88d7a3428baa231b94ea7c35bbfcaaf1336f630a1e398d7fc899`  
@@ -2114,7 +2114,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 251.7 MB (251685037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8c6c41c197473e4d2efb9fdb8ba48ad79078f6ea7c904e1e7a352c1283d511d`  
-		Last Modified: Tue, 13 Jan 2026 05:30:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:31:05 GMT  
 		Size: 196.4 KB (196410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29282371f891d80f58bd9c5b073ee71196d1a91b5c126c431191b8b4f6aca25f`  
@@ -2138,7 +2138,7 @@ $ docker pull erlang@sha256:61402f02f7551938c64bb88315174f4ebdba27110b13ed4b83d2
 
 -	Layers:
 	-	`sha256:fda0e4447b498089056930fa55aecf81e1475f1fd26f88c6543de7dabcbc7979`  
-		Last Modified: Tue, 13 Jan 2026 05:30:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:47:26 GMT  
 		Size: 23.4 MB (23444548 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:abbc6de5ee34d310c3a4a4e9125ca6b769d22ca5a727139cac8475f001b3b876`  
@@ -2185,7 +2185,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6ed43d5d71f701abde2a62df95258edf0ac9ef3046d49ca25c0f30e57af2985`  
@@ -2193,7 +2193,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 16.3 MB (16267780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50309e354294a6f81ebf1bf80c4203a79bc9374449993f7fb52ebf0640408262`  
-		Last Modified: Tue, 13 Jan 2026 03:03:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:03:46 GMT  
 		Size: 56.0 MB (56048907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ad7ad875273afc9f1824115dad6d50ae84fba747da8a0b124f82d730bcb8bae`  
@@ -2205,11 +2205,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 257.4 MB (257350798 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e46561679c203abe0713bf231a9d94f9a16f7b424900b7fa01bdf124aac75cb`  
-		Last Modified: Tue, 13 Jan 2026 04:32:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:31:48 GMT  
 		Size: 196.4 KB (196375 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9d078248ecaf34299dfa3f2dfb2f4e15be76a23acbeeeaf2746e49518384341`  
-		Last Modified: Tue, 13 Jan 2026 04:31:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:32:03 GMT  
 		Size: 793.4 KB (793357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2229,7 +2229,7 @@ $ docker pull erlang@sha256:fa053da72fce506f70ffa697f633fa158f5b232755286613acd0
 
 -	Layers:
 	-	`sha256:c85368fce42e0c58550ba23827247386d4346186701330e701d4e83273be2d36`  
-		Last Modified: Tue, 13 Jan 2026 04:31:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:48:02 GMT  
 		Size: 23.4 MB (23407889 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b06d19386ba8148502adc9bdecb063b484792a5d5b444842f5469c2d88b31793`  
@@ -2283,7 +2283,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
-		Last Modified: Sun, 07 Dec 2025 13:54:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:158387c12d8eac5c83d1b3b6a2aa647d0f12456c633875b34a155f83f7d67e06`  
@@ -2307,7 +2307,7 @@ $ docker pull erlang@sha256:7e40a7e4053facfd4d98d0c569d673b05a29164bb102395187e0
 
 -	Layers:
 	-	`sha256:49915e6e66037a17383f0c56203aeb5456deb0c73e1975caf2b34b0d6f6e07fc`  
-		Last Modified: Wed, 08 Oct 2025 23:06:21 GMT  
+		Last Modified: Sun, 04 Jan 2026 16:07:09 GMT  
 		Size: 273.4 KB (273380 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0f7e4d872dbe87e27dd429f4d8706469a3adedab9e36a74259c70021e9b2459b`  
@@ -2344,11 +2344,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:d9d7b8e1c6b20394731c1f62afa10545ea3d2388aca5051c7bae7732dbced5c9`  
-		Last Modified: Sun, 07 Dec 2025 14:02:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:48 GMT  
 		Size: 3.1 MB (3095971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29cc32d6b91709de2d57b2b953a35b753792ccdb6c4808e0ebc269b2cdb51272`  
-		Last Modified: Wed, 08 Oct 2025 22:14:46 GMT  
+		Last Modified: Thu, 11 Dec 2025 00:41:34 GMT  
 		Size: 43.2 MB (43193150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2372,7 +2372,7 @@ $ docker pull erlang@sha256:82efcdee239214cc93e5f0d3b0a632390f6bb0f73bdb65590d39
 		Size: 269.1 KB (269101 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4af23f2f0684932fbb47a1f6de848b3d8839e14eb94013a6b2f66eee0fe08335`  
-		Last Modified: Wed, 08 Oct 2025 22:14:45 GMT  
+		Last Modified: Fri, 16 Jan 2026 19:24:23 GMT  
 		Size: 15.1 KB (15126 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2405,7 +2405,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
-		Last Modified: Wed, 08 Oct 2025 12:02:47 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:57 GMT  
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e209263a2e9334d0ca0fc4c13bddd47c04458eb8e5fbde1e96e7162bb999b20`  
@@ -2433,7 +2433,7 @@ $ docker pull erlang@sha256:77d8438223feda46fb1d919c2f633825992b56bb3c085d78f60f
 		Size: 269.1 KB (269121 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f37cdf6ea634aaa9317c64bb0f4c5b919efdcadc3390d8450e3c46c95757d682`  
-		Last Modified: Wed, 24 Dec 2025 15:27:39 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:52:00 GMT  
 		Size: 15.2 KB (15150 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2494,7 +2494,7 @@ $ docker pull erlang@sha256:7ea8b5f20dccef758113e1e1a96862ded4b97aeca45129481399
 		Size: 268.3 KB (268303 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3ed61a10fb060002c3323507fa8d092f68e1e43912dd037c5b324d29db11092e`  
-		Last Modified: Fri, 16 Jan 2026 19:24:25 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:44:17 GMT  
 		Size: 15.0 KB (15014 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2570,7 +2570,7 @@ $ docker pull erlang@sha256:b164dc06f51e290a39e2b940d365f64ae23c1d1d14eb196456fc
 		Size: 4.1 MB (4098871 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:aecfa807a1fd021ebd4133af62e95cbac3d0e48057525246a806eac2fc235e87`  
-		Last Modified: Tue, 13 Jan 2026 02:26:47 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:46:53 GMT  
 		Size: 13.6 KB (13567 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2601,11 +2601,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e31fd71f35e1c46e30dc677ced11b19cf198501276b9b7320f2fc4bdd1fd19eb`  
-		Last Modified: Tue, 13 Jan 2026 03:25:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:25:36 GMT  
 		Size: 57.2 MB (57225356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2664,7 +2664,7 @@ CMD ["erl"]
 		Size: 52.3 MB (52257769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:534c48575ff55c470f7030d6b4e425680fb035f1a3b0e09d14731770a61e34b6`  
-		Last Modified: Tue, 13 Jan 2026 02:31:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:31:20 GMT  
 		Size: 58.1 MB (58076428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2719,11 +2719,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f9fc57c1894c3f6237c7ee37a2e91cf286721c02c4c09fb9550e1ac1d86dbfe`  
-		Last Modified: Tue, 13 Jan 2026 02:10:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:10:21 GMT  
 		Size: 57.7 MB (57704700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2747,7 +2747,7 @@ $ docker pull erlang@sha256:88533b963396d03c6816bee0b2456b94593918afa2f6f7c23da8
 		Size: 4.1 MB (4095399 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b80c545b64e37c579ee5a59536b2332e9c8bfca61ae6e6d03f0f0118056b4ce9`  
-		Last Modified: Tue, 13 Jan 2026 02:49:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:10:08 GMT  
 		Size: 13.5 KB (13536 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2819,7 +2819,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 54.8 MB (54755833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b7faeb084d4ee23cb74164108fc63b81b8d1ee30a494ecc31d02fe53f3fec08`  
-		Last Modified: Tue, 13 Jan 2026 04:47:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:25:25 GMT  
 		Size: 197.2 MB (197217504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39b0388aed4e25f5336c9a9d99f4c9b1e0477bf3e03a1f2036acf4819c5d5d65`  
@@ -2827,7 +2827,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 267.1 MB (267122842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ce75ab4f840863a248713c1220f15d2b7a7be186c6c9ef0d713536ba3817c6ff`  
-		Last Modified: Tue, 13 Jan 2026 05:33:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:33:27 GMT  
 		Size: 196.4 KB (196413 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e59d0e7931452369c67055b57cdf04fc82ba8121c5b64d1b22f23aa5bcf0e3f5`  
@@ -2898,7 +2898,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd38532089c34c92931050565b084061d36d5f2907633b524122c2d6f089b42a`  
@@ -2914,7 +2914,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 167.6 MB (167643408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e5968cb8dc397f96f12142fc37e539bed63a53177e31a4a6ba3eb4a2d7ce304`  
-		Last Modified: Tue, 13 Jan 2026 06:29:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:26:46 GMT  
 		Size: 238.9 MB (238881813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b08e2d676d730dd5a45e2a8d566f9d829bbc5edf2cef3100e6ec5d2110b65b7c`  
@@ -2922,7 +2922,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 196.4 KB (196409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6d55527c289a94e825712f073005ea8e8ead8603527044f86ef44424826129c`  
-		Last Modified: Tue, 13 Jan 2026 06:26:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:26:55 GMT  
 		Size: 793.3 KB (793346 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2942,7 +2942,7 @@ $ docker pull erlang@sha256:46fb188dcce6321aa2a9984039021f6ba1d099b3fc90eb6492c8
 
 -	Layers:
 	-	`sha256:ebc10c339e00db3e66d472215de4b00a477ef7fd4c749aaad065a9d0caa2136b`  
-		Last Modified: Tue, 13 Jan 2026 06:26:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:47:00 GMT  
 		Size: 23.2 MB (23242148 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3a6e7473f673f74dddaf4288362870a8a5862c78ac9ba433d633dd0011dc2884`  
@@ -2993,15 +2993,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 52.3 MB (52257769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee6280b099c5251ca1a2b55e8af5af4da252bad1f89325ba7a8344f2dea14e67`  
-		Last Modified: Tue, 13 Jan 2026 02:13:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:13:39 GMT  
 		Size: 15.7 MB (15749667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:735b68aa807ef231d58e7459ca83cac377da9d7f71d24a498190598a342d5bac`  
-		Last Modified: Tue, 13 Jan 2026 03:57:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:13 GMT  
 		Size: 54.9 MB (54863508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2705808e73b5ce7c5ea71a03de0f42c7ecdec94b51ae96443064253dcbeaea6c`  
-		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:50:04 GMT  
 		Size: 190.1 MB (190137777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc8a6b5c7b8b88d7a3428baa231b94ea7c35bbfcaaf1336f630a1e398d7fc899`  
@@ -3009,7 +3009,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 251.7 MB (251685037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8c6c41c197473e4d2efb9fdb8ba48ad79078f6ea7c904e1e7a352c1283d511d`  
-		Last Modified: Tue, 13 Jan 2026 05:30:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:31:05 GMT  
 		Size: 196.4 KB (196410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29282371f891d80f58bd9c5b073ee71196d1a91b5c126c431191b8b4f6aca25f`  
@@ -3033,7 +3033,7 @@ $ docker pull erlang@sha256:61402f02f7551938c64bb88315174f4ebdba27110b13ed4b83d2
 
 -	Layers:
 	-	`sha256:fda0e4447b498089056930fa55aecf81e1475f1fd26f88c6543de7dabcbc7979`  
-		Last Modified: Tue, 13 Jan 2026 05:30:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:47:26 GMT  
 		Size: 23.4 MB (23444548 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:abbc6de5ee34d310c3a4a4e9125ca6b769d22ca5a727139cac8475f001b3b876`  
@@ -3080,7 +3080,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6ed43d5d71f701abde2a62df95258edf0ac9ef3046d49ca25c0f30e57af2985`  
@@ -3088,7 +3088,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 16.3 MB (16267780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50309e354294a6f81ebf1bf80c4203a79bc9374449993f7fb52ebf0640408262`  
-		Last Modified: Tue, 13 Jan 2026 03:03:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:03:46 GMT  
 		Size: 56.0 MB (56048907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ad7ad875273afc9f1824115dad6d50ae84fba747da8a0b124f82d730bcb8bae`  
@@ -3100,11 +3100,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 257.4 MB (257350798 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e46561679c203abe0713bf231a9d94f9a16f7b424900b7fa01bdf124aac75cb`  
-		Last Modified: Tue, 13 Jan 2026 04:32:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:31:48 GMT  
 		Size: 196.4 KB (196375 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9d078248ecaf34299dfa3f2dfb2f4e15be76a23acbeeeaf2746e49518384341`  
-		Last Modified: Tue, 13 Jan 2026 04:31:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:32:03 GMT  
 		Size: 793.4 KB (793357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3124,7 +3124,7 @@ $ docker pull erlang@sha256:fa053da72fce506f70ffa697f633fa158f5b232755286613acd0
 
 -	Layers:
 	-	`sha256:c85368fce42e0c58550ba23827247386d4346186701330e701d4e83273be2d36`  
-		Last Modified: Tue, 13 Jan 2026 04:31:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:48:02 GMT  
 		Size: 23.4 MB (23407889 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b06d19386ba8148502adc9bdecb063b484792a5d5b444842f5469c2d88b31793`  
@@ -3178,7 +3178,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
-		Last Modified: Sun, 07 Dec 2025 13:54:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:158387c12d8eac5c83d1b3b6a2aa647d0f12456c633875b34a155f83f7d67e06`  
@@ -3202,7 +3202,7 @@ $ docker pull erlang@sha256:7e40a7e4053facfd4d98d0c569d673b05a29164bb102395187e0
 
 -	Layers:
 	-	`sha256:49915e6e66037a17383f0c56203aeb5456deb0c73e1975caf2b34b0d6f6e07fc`  
-		Last Modified: Wed, 08 Oct 2025 23:06:21 GMT  
+		Last Modified: Sun, 04 Jan 2026 16:07:09 GMT  
 		Size: 273.4 KB (273380 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0f7e4d872dbe87e27dd429f4d8706469a3adedab9e36a74259c70021e9b2459b`  
@@ -3239,11 +3239,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:d9d7b8e1c6b20394731c1f62afa10545ea3d2388aca5051c7bae7732dbced5c9`  
-		Last Modified: Sun, 07 Dec 2025 14:02:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:48 GMT  
 		Size: 3.1 MB (3095971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29cc32d6b91709de2d57b2b953a35b753792ccdb6c4808e0ebc269b2cdb51272`  
-		Last Modified: Wed, 08 Oct 2025 22:14:46 GMT  
+		Last Modified: Thu, 11 Dec 2025 00:41:34 GMT  
 		Size: 43.2 MB (43193150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3267,7 +3267,7 @@ $ docker pull erlang@sha256:82efcdee239214cc93e5f0d3b0a632390f6bb0f73bdb65590d39
 		Size: 269.1 KB (269101 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4af23f2f0684932fbb47a1f6de848b3d8839e14eb94013a6b2f66eee0fe08335`  
-		Last Modified: Wed, 08 Oct 2025 22:14:45 GMT  
+		Last Modified: Fri, 16 Jan 2026 19:24:23 GMT  
 		Size: 15.1 KB (15126 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3300,7 +3300,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
-		Last Modified: Wed, 08 Oct 2025 12:02:47 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:57 GMT  
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e209263a2e9334d0ca0fc4c13bddd47c04458eb8e5fbde1e96e7162bb999b20`  
@@ -3328,7 +3328,7 @@ $ docker pull erlang@sha256:77d8438223feda46fb1d919c2f633825992b56bb3c085d78f60f
 		Size: 269.1 KB (269121 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f37cdf6ea634aaa9317c64bb0f4c5b919efdcadc3390d8450e3c46c95757d682`  
-		Last Modified: Wed, 24 Dec 2025 15:27:39 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:52:00 GMT  
 		Size: 15.2 KB (15150 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3389,7 +3389,7 @@ $ docker pull erlang@sha256:7ea8b5f20dccef758113e1e1a96862ded4b97aeca45129481399
 		Size: 268.3 KB (268303 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3ed61a10fb060002c3323507fa8d092f68e1e43912dd037c5b324d29db11092e`  
-		Last Modified: Fri, 16 Jan 2026 19:24:25 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:44:17 GMT  
 		Size: 15.0 KB (15014 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3465,7 +3465,7 @@ $ docker pull erlang@sha256:b164dc06f51e290a39e2b940d365f64ae23c1d1d14eb196456fc
 		Size: 4.1 MB (4098871 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:aecfa807a1fd021ebd4133af62e95cbac3d0e48057525246a806eac2fc235e87`  
-		Last Modified: Tue, 13 Jan 2026 02:26:47 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:46:53 GMT  
 		Size: 13.6 KB (13567 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3496,11 +3496,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e31fd71f35e1c46e30dc677ced11b19cf198501276b9b7320f2fc4bdd1fd19eb`  
-		Last Modified: Tue, 13 Jan 2026 03:25:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:25:36 GMT  
 		Size: 57.2 MB (57225356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3559,7 +3559,7 @@ CMD ["erl"]
 		Size: 52.3 MB (52257769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:534c48575ff55c470f7030d6b4e425680fb035f1a3b0e09d14731770a61e34b6`  
-		Last Modified: Tue, 13 Jan 2026 02:31:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:31:20 GMT  
 		Size: 58.1 MB (58076428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3614,11 +3614,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f9fc57c1894c3f6237c7ee37a2e91cf286721c02c4c09fb9550e1ac1d86dbfe`  
-		Last Modified: Tue, 13 Jan 2026 02:10:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:10:21 GMT  
 		Size: 57.7 MB (57704700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3642,7 +3642,7 @@ $ docker pull erlang@sha256:88533b963396d03c6816bee0b2456b94593918afa2f6f7c23da8
 		Size: 4.1 MB (4095399 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b80c545b64e37c579ee5a59536b2332e9c8bfca61ae6e6d03f0f0118056b4ce9`  
-		Last Modified: Tue, 13 Jan 2026 02:49:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:10:08 GMT  
 		Size: 13.5 KB (13536 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3714,7 +3714,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 54.8 MB (54755833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b7faeb084d4ee23cb74164108fc63b81b8d1ee30a494ecc31d02fe53f3fec08`  
-		Last Modified: Tue, 13 Jan 2026 04:47:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:25:25 GMT  
 		Size: 197.2 MB (197217504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:571563e32d0c76f5256352e1b13b70bd5745084d3a3acfc53bc7ccbb1b927d8d`  
@@ -3746,11 +3746,11 @@ $ docker pull erlang@sha256:b08b8c79ac390bff8d4f82991f3718f266216ad5737c50653881
 
 -	Layers:
 	-	`sha256:e70c233533894f750af352d98756e88eb1cbac68bc09c4a1861a2c5dfaa1011e`  
-		Last Modified: Tue, 13 Jan 2026 08:46:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:32:17 GMT  
 		Size: 23.4 MB (23435688 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9512987e99fbe896a3b808b508b2406eeb9b0da98bfc8b70a5fe17f4a5f63351`  
-		Last Modified: Tue, 13 Jan 2026 08:46:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:32:16 GMT  
 		Size: 19.0 KB (19000 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3793,7 +3793,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd38532089c34c92931050565b084061d36d5f2907633b524122c2d6f089b42a`  
@@ -3817,7 +3817,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 198.6 KB (198551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:611154f6069e1d70ff97b4f7dc48a872604debb214ed6bf38871b60efe6d6c37`  
-		Last Modified: Tue, 13 Jan 2026 06:27:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:26:55 GMT  
 		Size: 817.3 KB (817338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3888,15 +3888,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 52.3 MB (52257769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee6280b099c5251ca1a2b55e8af5af4da252bad1f89325ba7a8344f2dea14e67`  
-		Last Modified: Tue, 13 Jan 2026 02:13:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:13:39 GMT  
 		Size: 15.7 MB (15749667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:735b68aa807ef231d58e7459ca83cac377da9d7f71d24a498190598a342d5bac`  
-		Last Modified: Tue, 13 Jan 2026 03:57:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:13 GMT  
 		Size: 54.9 MB (54863508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2705808e73b5ce7c5ea71a03de0f42c7ecdec94b51ae96443064253dcbeaea6c`  
-		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:50:04 GMT  
 		Size: 190.1 MB (190137777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e2e3d2289cf72f1f5a3ad272d75384cf2f930a946738b6b2acbe77019d1e5d8`  
@@ -3904,7 +3904,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 258.6 MB (258572647 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8249ed3503138c0bb17009f35152382eae31c7ec3733f9a1e8a28d0ee53d701`  
-		Last Modified: Tue, 13 Jan 2026 05:31:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:31:51 GMT  
 		Size: 198.5 KB (198537 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21fb0ad476e97687fc9c75052767652f5bbb46554448bcd726135e0488e514c9`  
@@ -3932,7 +3932,7 @@ $ docker pull erlang@sha256:1da883566b231feb175fcd4019da7b438ba8eb12cbd0cd362655
 		Size: 23.4 MB (23444563 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:100b9514cead575e75934c0ec9264b223164d9146b9323cbe1f37d2f55b1c286`  
-		Last Modified: Tue, 13 Jan 2026 05:31:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:47:48 GMT  
 		Size: 19.1 KB (19135 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3975,7 +3975,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6ed43d5d71f701abde2a62df95258edf0ac9ef3046d49ca25c0f30e57af2985`  
@@ -3983,7 +3983,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 16.3 MB (16267780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50309e354294a6f81ebf1bf80c4203a79bc9374449993f7fb52ebf0640408262`  
-		Last Modified: Tue, 13 Jan 2026 03:03:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:03:46 GMT  
 		Size: 56.0 MB (56048907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ad7ad875273afc9f1824115dad6d50ae84fba747da8a0b124f82d730bcb8bae`  
@@ -4019,7 +4019,7 @@ $ docker pull erlang@sha256:810fda9d464f790f18fdce0fd344937292dc6210a6023b866b7b
 
 -	Layers:
 	-	`sha256:218f74abc3ed5318847494be997fcb4f1884c5c4245c8e91e7a103d29c41ae55`  
-		Last Modified: Tue, 13 Jan 2026 04:30:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:48:31 GMT  
 		Size: 23.4 MB (23407904 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f0a018bdf83a70e75f90f61b0413ee2077342b95281aec9b3a8460cb3c2ba29`  
@@ -4073,7 +4073,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
-		Last Modified: Sun, 07 Dec 2025 13:54:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c2a3482f9bde49817097ea311201ed657e34e66d0a41f75ecb78868689548b1`  
@@ -4134,7 +4134,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:d9d7b8e1c6b20394731c1f62afa10545ea3d2388aca5051c7bae7732dbced5c9`  
-		Last Modified: Sun, 07 Dec 2025 14:02:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:48 GMT  
 		Size: 3.1 MB (3095971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8683462c45e173566589107c40a038de4e1c3abb8c2272e16ecfc56c9e25d65`  
@@ -4158,11 +4158,11 @@ $ docker pull erlang@sha256:34d2583b68e470f2b880da0b7e295a37fade65f6cb7e22c93a79
 
 -	Layers:
 	-	`sha256:6a3406c870e49c8d953b42870c69517aad94d3d3abc0159c0b573b305cae2a76`  
-		Last Modified: Wed, 08 Oct 2025 22:14:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:50 GMT  
 		Size: 269.1 KB (269116 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7bd4dc9115a6c1f538da4396c3cd753b3559df131bbcd0b0a7be1685009fcd09`  
-		Last Modified: Wed, 08 Oct 2025 22:14:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:51 GMT  
 		Size: 15.1 KB (15125 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4195,11 +4195,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
-		Last Modified: Wed, 08 Oct 2025 12:02:47 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:57 GMT  
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7328ad59405b4aeeb7e9989a785dc8a519455f7794d59022c517f00b5418b296`  
-		Last Modified: Mon, 08 Dec 2025 00:28:25 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:51:53 GMT  
 		Size: 45.3 MB (45279335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4219,11 +4219,11 @@ $ docker pull erlang@sha256:939510d14c3e5d5e92e304feaaf21b3dd14287016b84486b5001
 
 -	Layers:
 	-	`sha256:5cea1b0a4d10050c7f24b75d1b937602ad90b10cd48a64e544df2ba6ee6d3193`  
-		Last Modified: Wed, 08 Oct 2025 21:51:52 GMT  
+		Last Modified: Fri, 09 Jan 2026 06:46:24 GMT  
 		Size: 274.2 KB (274188 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9e90b7ac76d51118cc06c5cd5fc9dab1218c37277f78e009ca1917eb7029bfb0`  
-		Last Modified: Wed, 08 Oct 2025 21:51:52 GMT  
+		Last Modified: Fri, 09 Jan 2026 06:46:23 GMT  
 		Size: 15.2 KB (15150 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4284,7 +4284,7 @@ $ docker pull erlang@sha256:e59ef3e1a970805cfcdce567560bf8d54c7f1e9354fb8d99e2cc
 		Size: 268.3 KB (268318 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f8fb48cabe66cfa044e900d54b9bc83ed9f83430046fff75dafd118d75f18c3`  
-		Last Modified: Wed, 08 Oct 2025 21:44:44 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:54 GMT  
 		Size: 15.0 KB (15014 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4356,7 +4356,7 @@ $ docker pull erlang@sha256:238dbe6ad0e67169731620bf25b147d8192a3d8ca73452c9cc6e
 
 -	Layers:
 	-	`sha256:3a929f190f7cce3c5f9e7337476dabdeb0e73133e2e54b63f6721cbfef4c7d43`  
-		Last Modified: Tue, 13 Jan 2026 05:47:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:26:40 GMT  
 		Size: 4.1 MB (4098886 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4348a4ef1ff0cc4699790e4c75ed0f6389feddc8972a48aa810763beeceda9c0`  
@@ -4391,7 +4391,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5e581192d407f04fc6ed95b3f98c29fd4679fae10c85072204649ffc4d3f0063`  
@@ -4415,11 +4415,11 @@ $ docker pull erlang@sha256:281a220cd026f61c2ad930dc0692a13d680d2b6ebe36813fd446
 
 -	Layers:
 	-	`sha256:5c1dda7523f3cb4d365085b41beeac8ba3121e1e17906c32a4f05066c349a811`  
-		Last Modified: Tue, 13 Jan 2026 03:23:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:47:32 GMT  
 		Size: 4.1 MB (4100487 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3ae71f120226b39a9c25f24dd6c2917354ebf5bed63cea210f9804940073afd9`  
-		Last Modified: Tue, 13 Jan 2026 03:23:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:47:33 GMT  
 		Size: 13.6 KB (13647 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4478,7 +4478,7 @@ $ docker pull erlang@sha256:21b2a8f8bff25048beb6e5d521bb37594bf297598a4606fd543b
 		Size: 4.1 MB (4098507 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d7a92f380718844a4e43b385f4f4b029ae59e6f3798d09460e82717a4b51ddc1`  
-		Last Modified: Tue, 13 Jan 2026 05:47:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:31:23 GMT  
 		Size: 13.7 KB (13672 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4509,7 +4509,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8309da1fa80f02e5255bda277a4453210882bec6c8459ec8b64c3bbe513d3962`  
@@ -4609,7 +4609,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 54.8 MB (54755833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b7faeb084d4ee23cb74164108fc63b81b8d1ee30a494ecc31d02fe53f3fec08`  
-		Last Modified: Tue, 13 Jan 2026 04:47:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:25:25 GMT  
 		Size: 197.2 MB (197217504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:571563e32d0c76f5256352e1b13b70bd5745084d3a3acfc53bc7ccbb1b927d8d`  
@@ -4641,11 +4641,11 @@ $ docker pull erlang@sha256:b08b8c79ac390bff8d4f82991f3718f266216ad5737c50653881
 
 -	Layers:
 	-	`sha256:e70c233533894f750af352d98756e88eb1cbac68bc09c4a1861a2c5dfaa1011e`  
-		Last Modified: Tue, 13 Jan 2026 08:46:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:32:17 GMT  
 		Size: 23.4 MB (23435688 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9512987e99fbe896a3b808b508b2406eeb9b0da98bfc8b70a5fe17f4a5f63351`  
-		Last Modified: Tue, 13 Jan 2026 08:46:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:32:16 GMT  
 		Size: 19.0 KB (19000 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4688,7 +4688,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd38532089c34c92931050565b084061d36d5f2907633b524122c2d6f089b42a`  
@@ -4712,7 +4712,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 198.6 KB (198551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:611154f6069e1d70ff97b4f7dc48a872604debb214ed6bf38871b60efe6d6c37`  
-		Last Modified: Tue, 13 Jan 2026 06:27:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:26:55 GMT  
 		Size: 817.3 KB (817338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4783,15 +4783,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 52.3 MB (52257769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee6280b099c5251ca1a2b55e8af5af4da252bad1f89325ba7a8344f2dea14e67`  
-		Last Modified: Tue, 13 Jan 2026 02:13:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:13:39 GMT  
 		Size: 15.7 MB (15749667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:735b68aa807ef231d58e7459ca83cac377da9d7f71d24a498190598a342d5bac`  
-		Last Modified: Tue, 13 Jan 2026 03:57:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:13 GMT  
 		Size: 54.9 MB (54863508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2705808e73b5ce7c5ea71a03de0f42c7ecdec94b51ae96443064253dcbeaea6c`  
-		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:50:04 GMT  
 		Size: 190.1 MB (190137777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e2e3d2289cf72f1f5a3ad272d75384cf2f930a946738b6b2acbe77019d1e5d8`  
@@ -4799,7 +4799,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 258.6 MB (258572647 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8249ed3503138c0bb17009f35152382eae31c7ec3733f9a1e8a28d0ee53d701`  
-		Last Modified: Tue, 13 Jan 2026 05:31:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:31:51 GMT  
 		Size: 198.5 KB (198537 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21fb0ad476e97687fc9c75052767652f5bbb46554448bcd726135e0488e514c9`  
@@ -4827,7 +4827,7 @@ $ docker pull erlang@sha256:1da883566b231feb175fcd4019da7b438ba8eb12cbd0cd362655
 		Size: 23.4 MB (23444563 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:100b9514cead575e75934c0ec9264b223164d9146b9323cbe1f37d2f55b1c286`  
-		Last Modified: Tue, 13 Jan 2026 05:31:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:47:48 GMT  
 		Size: 19.1 KB (19135 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4870,7 +4870,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6ed43d5d71f701abde2a62df95258edf0ac9ef3046d49ca25c0f30e57af2985`  
@@ -4878,7 +4878,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 16.3 MB (16267780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50309e354294a6f81ebf1bf80c4203a79bc9374449993f7fb52ebf0640408262`  
-		Last Modified: Tue, 13 Jan 2026 03:03:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:03:46 GMT  
 		Size: 56.0 MB (56048907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ad7ad875273afc9f1824115dad6d50ae84fba747da8a0b124f82d730bcb8bae`  
@@ -4914,7 +4914,7 @@ $ docker pull erlang@sha256:810fda9d464f790f18fdce0fd344937292dc6210a6023b866b7b
 
 -	Layers:
 	-	`sha256:218f74abc3ed5318847494be997fcb4f1884c5c4245c8e91e7a103d29c41ae55`  
-		Last Modified: Tue, 13 Jan 2026 04:30:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:48:31 GMT  
 		Size: 23.4 MB (23407904 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f0a018bdf83a70e75f90f61b0413ee2077342b95281aec9b3a8460cb3c2ba29`  
@@ -4968,7 +4968,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
-		Last Modified: Sun, 07 Dec 2025 13:54:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c2a3482f9bde49817097ea311201ed657e34e66d0a41f75ecb78868689548b1`  
@@ -5029,7 +5029,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:d9d7b8e1c6b20394731c1f62afa10545ea3d2388aca5051c7bae7732dbced5c9`  
-		Last Modified: Sun, 07 Dec 2025 14:02:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:48 GMT  
 		Size: 3.1 MB (3095971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8683462c45e173566589107c40a038de4e1c3abb8c2272e16ecfc56c9e25d65`  
@@ -5053,11 +5053,11 @@ $ docker pull erlang@sha256:34d2583b68e470f2b880da0b7e295a37fade65f6cb7e22c93a79
 
 -	Layers:
 	-	`sha256:6a3406c870e49c8d953b42870c69517aad94d3d3abc0159c0b573b305cae2a76`  
-		Last Modified: Wed, 08 Oct 2025 22:14:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:50 GMT  
 		Size: 269.1 KB (269116 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7bd4dc9115a6c1f538da4396c3cd753b3559df131bbcd0b0a7be1685009fcd09`  
-		Last Modified: Wed, 08 Oct 2025 22:14:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:51 GMT  
 		Size: 15.1 KB (15125 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5090,11 +5090,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
-		Last Modified: Wed, 08 Oct 2025 12:02:47 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:57 GMT  
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7328ad59405b4aeeb7e9989a785dc8a519455f7794d59022c517f00b5418b296`  
-		Last Modified: Mon, 08 Dec 2025 00:28:25 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:51:53 GMT  
 		Size: 45.3 MB (45279335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5114,11 +5114,11 @@ $ docker pull erlang@sha256:939510d14c3e5d5e92e304feaaf21b3dd14287016b84486b5001
 
 -	Layers:
 	-	`sha256:5cea1b0a4d10050c7f24b75d1b937602ad90b10cd48a64e544df2ba6ee6d3193`  
-		Last Modified: Wed, 08 Oct 2025 21:51:52 GMT  
+		Last Modified: Fri, 09 Jan 2026 06:46:24 GMT  
 		Size: 274.2 KB (274188 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9e90b7ac76d51118cc06c5cd5fc9dab1218c37277f78e009ca1917eb7029bfb0`  
-		Last Modified: Wed, 08 Oct 2025 21:51:52 GMT  
+		Last Modified: Fri, 09 Jan 2026 06:46:23 GMT  
 		Size: 15.2 KB (15150 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5179,7 +5179,7 @@ $ docker pull erlang@sha256:e59ef3e1a970805cfcdce567560bf8d54c7f1e9354fb8d99e2cc
 		Size: 268.3 KB (268318 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f8fb48cabe66cfa044e900d54b9bc83ed9f83430046fff75dafd118d75f18c3`  
-		Last Modified: Wed, 08 Oct 2025 21:44:44 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:54 GMT  
 		Size: 15.0 KB (15014 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5251,7 +5251,7 @@ $ docker pull erlang@sha256:238dbe6ad0e67169731620bf25b147d8192a3d8ca73452c9cc6e
 
 -	Layers:
 	-	`sha256:3a929f190f7cce3c5f9e7337476dabdeb0e73133e2e54b63f6721cbfef4c7d43`  
-		Last Modified: Tue, 13 Jan 2026 05:47:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:26:40 GMT  
 		Size: 4.1 MB (4098886 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4348a4ef1ff0cc4699790e4c75ed0f6389feddc8972a48aa810763beeceda9c0`  
@@ -5286,7 +5286,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5e581192d407f04fc6ed95b3f98c29fd4679fae10c85072204649ffc4d3f0063`  
@@ -5310,11 +5310,11 @@ $ docker pull erlang@sha256:281a220cd026f61c2ad930dc0692a13d680d2b6ebe36813fd446
 
 -	Layers:
 	-	`sha256:5c1dda7523f3cb4d365085b41beeac8ba3121e1e17906c32a4f05066c349a811`  
-		Last Modified: Tue, 13 Jan 2026 03:23:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:47:32 GMT  
 		Size: 4.1 MB (4100487 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3ae71f120226b39a9c25f24dd6c2917354ebf5bed63cea210f9804940073afd9`  
-		Last Modified: Tue, 13 Jan 2026 03:23:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:47:33 GMT  
 		Size: 13.6 KB (13647 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5373,7 +5373,7 @@ $ docker pull erlang@sha256:21b2a8f8bff25048beb6e5d521bb37594bf297598a4606fd543b
 		Size: 4.1 MB (4098507 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d7a92f380718844a4e43b385f4f4b029ae59e6f3798d09460e82717a4b51ddc1`  
-		Last Modified: Tue, 13 Jan 2026 05:47:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:31:23 GMT  
 		Size: 13.7 KB (13672 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5404,7 +5404,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8309da1fa80f02e5255bda277a4453210882bec6c8459ec8b64c3bbe513d3962`  
@@ -5504,7 +5504,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 54.8 MB (54755833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b7faeb084d4ee23cb74164108fc63b81b8d1ee30a494ecc31d02fe53f3fec08`  
-		Last Modified: Tue, 13 Jan 2026 04:47:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:25:25 GMT  
 		Size: 197.2 MB (197217504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:571563e32d0c76f5256352e1b13b70bd5745084d3a3acfc53bc7ccbb1b927d8d`  
@@ -5536,11 +5536,11 @@ $ docker pull erlang@sha256:b08b8c79ac390bff8d4f82991f3718f266216ad5737c50653881
 
 -	Layers:
 	-	`sha256:e70c233533894f750af352d98756e88eb1cbac68bc09c4a1861a2c5dfaa1011e`  
-		Last Modified: Tue, 13 Jan 2026 08:46:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:32:17 GMT  
 		Size: 23.4 MB (23435688 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9512987e99fbe896a3b808b508b2406eeb9b0da98bfc8b70a5fe17f4a5f63351`  
-		Last Modified: Tue, 13 Jan 2026 08:46:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:32:16 GMT  
 		Size: 19.0 KB (19000 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5583,7 +5583,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd38532089c34c92931050565b084061d36d5f2907633b524122c2d6f089b42a`  
@@ -5607,7 +5607,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 198.6 KB (198551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:611154f6069e1d70ff97b4f7dc48a872604debb214ed6bf38871b60efe6d6c37`  
-		Last Modified: Tue, 13 Jan 2026 06:27:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:26:55 GMT  
 		Size: 817.3 KB (817338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5678,15 +5678,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 52.3 MB (52257769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee6280b099c5251ca1a2b55e8af5af4da252bad1f89325ba7a8344f2dea14e67`  
-		Last Modified: Tue, 13 Jan 2026 02:13:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:13:39 GMT  
 		Size: 15.7 MB (15749667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:735b68aa807ef231d58e7459ca83cac377da9d7f71d24a498190598a342d5bac`  
-		Last Modified: Tue, 13 Jan 2026 03:57:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:13 GMT  
 		Size: 54.9 MB (54863508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2705808e73b5ce7c5ea71a03de0f42c7ecdec94b51ae96443064253dcbeaea6c`  
-		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:50:04 GMT  
 		Size: 190.1 MB (190137777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e2e3d2289cf72f1f5a3ad272d75384cf2f930a946738b6b2acbe77019d1e5d8`  
@@ -5694,7 +5694,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 258.6 MB (258572647 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8249ed3503138c0bb17009f35152382eae31c7ec3733f9a1e8a28d0ee53d701`  
-		Last Modified: Tue, 13 Jan 2026 05:31:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:31:51 GMT  
 		Size: 198.5 KB (198537 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21fb0ad476e97687fc9c75052767652f5bbb46554448bcd726135e0488e514c9`  
@@ -5722,7 +5722,7 @@ $ docker pull erlang@sha256:1da883566b231feb175fcd4019da7b438ba8eb12cbd0cd362655
 		Size: 23.4 MB (23444563 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:100b9514cead575e75934c0ec9264b223164d9146b9323cbe1f37d2f55b1c286`  
-		Last Modified: Tue, 13 Jan 2026 05:31:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:47:48 GMT  
 		Size: 19.1 KB (19135 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5765,7 +5765,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6ed43d5d71f701abde2a62df95258edf0ac9ef3046d49ca25c0f30e57af2985`  
@@ -5773,7 +5773,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 16.3 MB (16267780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50309e354294a6f81ebf1bf80c4203a79bc9374449993f7fb52ebf0640408262`  
-		Last Modified: Tue, 13 Jan 2026 03:03:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:03:46 GMT  
 		Size: 56.0 MB (56048907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ad7ad875273afc9f1824115dad6d50ae84fba747da8a0b124f82d730bcb8bae`  
@@ -5809,7 +5809,7 @@ $ docker pull erlang@sha256:810fda9d464f790f18fdce0fd344937292dc6210a6023b866b7b
 
 -	Layers:
 	-	`sha256:218f74abc3ed5318847494be997fcb4f1884c5c4245c8e91e7a103d29c41ae55`  
-		Last Modified: Tue, 13 Jan 2026 04:30:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:48:31 GMT  
 		Size: 23.4 MB (23407904 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f0a018bdf83a70e75f90f61b0413ee2077342b95281aec9b3a8460cb3c2ba29`  
@@ -5863,7 +5863,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
-		Last Modified: Sun, 07 Dec 2025 13:54:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c2a3482f9bde49817097ea311201ed657e34e66d0a41f75ecb78868689548b1`  
@@ -5924,7 +5924,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:d9d7b8e1c6b20394731c1f62afa10545ea3d2388aca5051c7bae7732dbced5c9`  
-		Last Modified: Sun, 07 Dec 2025 14:02:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:48 GMT  
 		Size: 3.1 MB (3095971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8683462c45e173566589107c40a038de4e1c3abb8c2272e16ecfc56c9e25d65`  
@@ -5948,11 +5948,11 @@ $ docker pull erlang@sha256:34d2583b68e470f2b880da0b7e295a37fade65f6cb7e22c93a79
 
 -	Layers:
 	-	`sha256:6a3406c870e49c8d953b42870c69517aad94d3d3abc0159c0b573b305cae2a76`  
-		Last Modified: Wed, 08 Oct 2025 22:14:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:50 GMT  
 		Size: 269.1 KB (269116 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7bd4dc9115a6c1f538da4396c3cd753b3559df131bbcd0b0a7be1685009fcd09`  
-		Last Modified: Wed, 08 Oct 2025 22:14:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:51 GMT  
 		Size: 15.1 KB (15125 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5985,11 +5985,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
-		Last Modified: Wed, 08 Oct 2025 12:02:47 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:57 GMT  
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7328ad59405b4aeeb7e9989a785dc8a519455f7794d59022c517f00b5418b296`  
-		Last Modified: Mon, 08 Dec 2025 00:28:25 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:51:53 GMT  
 		Size: 45.3 MB (45279335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -6009,11 +6009,11 @@ $ docker pull erlang@sha256:939510d14c3e5d5e92e304feaaf21b3dd14287016b84486b5001
 
 -	Layers:
 	-	`sha256:5cea1b0a4d10050c7f24b75d1b937602ad90b10cd48a64e544df2ba6ee6d3193`  
-		Last Modified: Wed, 08 Oct 2025 21:51:52 GMT  
+		Last Modified: Fri, 09 Jan 2026 06:46:24 GMT  
 		Size: 274.2 KB (274188 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9e90b7ac76d51118cc06c5cd5fc9dab1218c37277f78e009ca1917eb7029bfb0`  
-		Last Modified: Wed, 08 Oct 2025 21:51:52 GMT  
+		Last Modified: Fri, 09 Jan 2026 06:46:23 GMT  
 		Size: 15.2 KB (15150 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6074,7 +6074,7 @@ $ docker pull erlang@sha256:e59ef3e1a970805cfcdce567560bf8d54c7f1e9354fb8d99e2cc
 		Size: 268.3 KB (268318 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f8fb48cabe66cfa044e900d54b9bc83ed9f83430046fff75dafd118d75f18c3`  
-		Last Modified: Wed, 08 Oct 2025 21:44:44 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:54 GMT  
 		Size: 15.0 KB (15014 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6146,7 +6146,7 @@ $ docker pull erlang@sha256:238dbe6ad0e67169731620bf25b147d8192a3d8ca73452c9cc6e
 
 -	Layers:
 	-	`sha256:3a929f190f7cce3c5f9e7337476dabdeb0e73133e2e54b63f6721cbfef4c7d43`  
-		Last Modified: Tue, 13 Jan 2026 05:47:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:26:40 GMT  
 		Size: 4.1 MB (4098886 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4348a4ef1ff0cc4699790e4c75ed0f6389feddc8972a48aa810763beeceda9c0`  
@@ -6181,7 +6181,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5e581192d407f04fc6ed95b3f98c29fd4679fae10c85072204649ffc4d3f0063`  
@@ -6205,11 +6205,11 @@ $ docker pull erlang@sha256:281a220cd026f61c2ad930dc0692a13d680d2b6ebe36813fd446
 
 -	Layers:
 	-	`sha256:5c1dda7523f3cb4d365085b41beeac8ba3121e1e17906c32a4f05066c349a811`  
-		Last Modified: Tue, 13 Jan 2026 03:23:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:47:32 GMT  
 		Size: 4.1 MB (4100487 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3ae71f120226b39a9c25f24dd6c2917354ebf5bed63cea210f9804940073afd9`  
-		Last Modified: Tue, 13 Jan 2026 03:23:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:47:33 GMT  
 		Size: 13.6 KB (13647 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6268,7 +6268,7 @@ $ docker pull erlang@sha256:21b2a8f8bff25048beb6e5d521bb37594bf297598a4606fd543b
 		Size: 4.1 MB (4098507 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d7a92f380718844a4e43b385f4f4b029ae59e6f3798d09460e82717a4b51ddc1`  
-		Last Modified: Tue, 13 Jan 2026 05:47:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:31:23 GMT  
 		Size: 13.7 KB (13672 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6299,7 +6299,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8309da1fa80f02e5255bda277a4453210882bec6c8459ec8b64c3bbe513d3962`  
@@ -6399,7 +6399,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 54.8 MB (54755833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b7faeb084d4ee23cb74164108fc63b81b8d1ee30a494ecc31d02fe53f3fec08`  
-		Last Modified: Tue, 13 Jan 2026 04:47:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:25:25 GMT  
 		Size: 197.2 MB (197217504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:571563e32d0c76f5256352e1b13b70bd5745084d3a3acfc53bc7ccbb1b927d8d`  
@@ -6431,11 +6431,11 @@ $ docker pull erlang@sha256:b08b8c79ac390bff8d4f82991f3718f266216ad5737c50653881
 
 -	Layers:
 	-	`sha256:e70c233533894f750af352d98756e88eb1cbac68bc09c4a1861a2c5dfaa1011e`  
-		Last Modified: Tue, 13 Jan 2026 08:46:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:32:17 GMT  
 		Size: 23.4 MB (23435688 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9512987e99fbe896a3b808b508b2406eeb9b0da98bfc8b70a5fe17f4a5f63351`  
-		Last Modified: Tue, 13 Jan 2026 08:46:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:32:16 GMT  
 		Size: 19.0 KB (19000 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6478,7 +6478,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd38532089c34c92931050565b084061d36d5f2907633b524122c2d6f089b42a`  
@@ -6502,7 +6502,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 198.6 KB (198551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:611154f6069e1d70ff97b4f7dc48a872604debb214ed6bf38871b60efe6d6c37`  
-		Last Modified: Tue, 13 Jan 2026 06:27:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:26:55 GMT  
 		Size: 817.3 KB (817338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -6573,15 +6573,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 52.3 MB (52257769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee6280b099c5251ca1a2b55e8af5af4da252bad1f89325ba7a8344f2dea14e67`  
-		Last Modified: Tue, 13 Jan 2026 02:13:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:13:39 GMT  
 		Size: 15.7 MB (15749667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:735b68aa807ef231d58e7459ca83cac377da9d7f71d24a498190598a342d5bac`  
-		Last Modified: Tue, 13 Jan 2026 03:57:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:13 GMT  
 		Size: 54.9 MB (54863508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2705808e73b5ce7c5ea71a03de0f42c7ecdec94b51ae96443064253dcbeaea6c`  
-		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:50:04 GMT  
 		Size: 190.1 MB (190137777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e2e3d2289cf72f1f5a3ad272d75384cf2f930a946738b6b2acbe77019d1e5d8`  
@@ -6589,7 +6589,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 258.6 MB (258572647 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8249ed3503138c0bb17009f35152382eae31c7ec3733f9a1e8a28d0ee53d701`  
-		Last Modified: Tue, 13 Jan 2026 05:31:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:31:51 GMT  
 		Size: 198.5 KB (198537 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21fb0ad476e97687fc9c75052767652f5bbb46554448bcd726135e0488e514c9`  
@@ -6617,7 +6617,7 @@ $ docker pull erlang@sha256:1da883566b231feb175fcd4019da7b438ba8eb12cbd0cd362655
 		Size: 23.4 MB (23444563 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:100b9514cead575e75934c0ec9264b223164d9146b9323cbe1f37d2f55b1c286`  
-		Last Modified: Tue, 13 Jan 2026 05:31:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:47:48 GMT  
 		Size: 19.1 KB (19135 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6660,7 +6660,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6ed43d5d71f701abde2a62df95258edf0ac9ef3046d49ca25c0f30e57af2985`  
@@ -6668,7 +6668,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 16.3 MB (16267780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50309e354294a6f81ebf1bf80c4203a79bc9374449993f7fb52ebf0640408262`  
-		Last Modified: Tue, 13 Jan 2026 03:03:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:03:46 GMT  
 		Size: 56.0 MB (56048907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ad7ad875273afc9f1824115dad6d50ae84fba747da8a0b124f82d730bcb8bae`  
@@ -6704,7 +6704,7 @@ $ docker pull erlang@sha256:810fda9d464f790f18fdce0fd344937292dc6210a6023b866b7b
 
 -	Layers:
 	-	`sha256:218f74abc3ed5318847494be997fcb4f1884c5c4245c8e91e7a103d29c41ae55`  
-		Last Modified: Tue, 13 Jan 2026 04:30:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:48:31 GMT  
 		Size: 23.4 MB (23407904 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f0a018bdf83a70e75f90f61b0413ee2077342b95281aec9b3a8460cb3c2ba29`  
@@ -6758,7 +6758,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
-		Last Modified: Sun, 07 Dec 2025 13:54:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c2a3482f9bde49817097ea311201ed657e34e66d0a41f75ecb78868689548b1`  
@@ -6819,7 +6819,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:d9d7b8e1c6b20394731c1f62afa10545ea3d2388aca5051c7bae7732dbced5c9`  
-		Last Modified: Sun, 07 Dec 2025 14:02:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:48 GMT  
 		Size: 3.1 MB (3095971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8683462c45e173566589107c40a038de4e1c3abb8c2272e16ecfc56c9e25d65`  
@@ -6843,11 +6843,11 @@ $ docker pull erlang@sha256:34d2583b68e470f2b880da0b7e295a37fade65f6cb7e22c93a79
 
 -	Layers:
 	-	`sha256:6a3406c870e49c8d953b42870c69517aad94d3d3abc0159c0b573b305cae2a76`  
-		Last Modified: Wed, 08 Oct 2025 22:14:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:50 GMT  
 		Size: 269.1 KB (269116 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7bd4dc9115a6c1f538da4396c3cd753b3559df131bbcd0b0a7be1685009fcd09`  
-		Last Modified: Wed, 08 Oct 2025 22:14:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:51 GMT  
 		Size: 15.1 KB (15125 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6880,11 +6880,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
-		Last Modified: Wed, 08 Oct 2025 12:02:47 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:57 GMT  
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7328ad59405b4aeeb7e9989a785dc8a519455f7794d59022c517f00b5418b296`  
-		Last Modified: Mon, 08 Dec 2025 00:28:25 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:51:53 GMT  
 		Size: 45.3 MB (45279335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -6904,11 +6904,11 @@ $ docker pull erlang@sha256:939510d14c3e5d5e92e304feaaf21b3dd14287016b84486b5001
 
 -	Layers:
 	-	`sha256:5cea1b0a4d10050c7f24b75d1b937602ad90b10cd48a64e544df2ba6ee6d3193`  
-		Last Modified: Wed, 08 Oct 2025 21:51:52 GMT  
+		Last Modified: Fri, 09 Jan 2026 06:46:24 GMT  
 		Size: 274.2 KB (274188 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9e90b7ac76d51118cc06c5cd5fc9dab1218c37277f78e009ca1917eb7029bfb0`  
-		Last Modified: Wed, 08 Oct 2025 21:51:52 GMT  
+		Last Modified: Fri, 09 Jan 2026 06:46:23 GMT  
 		Size: 15.2 KB (15150 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6969,7 +6969,7 @@ $ docker pull erlang@sha256:e59ef3e1a970805cfcdce567560bf8d54c7f1e9354fb8d99e2cc
 		Size: 268.3 KB (268318 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f8fb48cabe66cfa044e900d54b9bc83ed9f83430046fff75dafd118d75f18c3`  
-		Last Modified: Wed, 08 Oct 2025 21:44:44 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:54 GMT  
 		Size: 15.0 KB (15014 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7041,7 +7041,7 @@ $ docker pull erlang@sha256:238dbe6ad0e67169731620bf25b147d8192a3d8ca73452c9cc6e
 
 -	Layers:
 	-	`sha256:3a929f190f7cce3c5f9e7337476dabdeb0e73133e2e54b63f6721cbfef4c7d43`  
-		Last Modified: Tue, 13 Jan 2026 05:47:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:26:40 GMT  
 		Size: 4.1 MB (4098886 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4348a4ef1ff0cc4699790e4c75ed0f6389feddc8972a48aa810763beeceda9c0`  
@@ -7076,7 +7076,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5e581192d407f04fc6ed95b3f98c29fd4679fae10c85072204649ffc4d3f0063`  
@@ -7100,11 +7100,11 @@ $ docker pull erlang@sha256:281a220cd026f61c2ad930dc0692a13d680d2b6ebe36813fd446
 
 -	Layers:
 	-	`sha256:5c1dda7523f3cb4d365085b41beeac8ba3121e1e17906c32a4f05066c349a811`  
-		Last Modified: Tue, 13 Jan 2026 03:23:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:47:32 GMT  
 		Size: 4.1 MB (4100487 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3ae71f120226b39a9c25f24dd6c2917354ebf5bed63cea210f9804940073afd9`  
-		Last Modified: Tue, 13 Jan 2026 03:23:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:47:33 GMT  
 		Size: 13.6 KB (13647 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7163,7 +7163,7 @@ $ docker pull erlang@sha256:21b2a8f8bff25048beb6e5d521bb37594bf297598a4606fd543b
 		Size: 4.1 MB (4098507 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d7a92f380718844a4e43b385f4f4b029ae59e6f3798d09460e82717a4b51ddc1`  
-		Last Modified: Tue, 13 Jan 2026 05:47:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:31:23 GMT  
 		Size: 13.7 KB (13672 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7194,7 +7194,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8309da1fa80f02e5255bda277a4453210882bec6c8459ec8b64c3bbe513d3962`  
@@ -7294,7 +7294,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64538a062a61add8dc8b290fa69475e8902eb839c497a5f5dcd5a950422e493c`  
-		Last Modified: Tue, 13 Jan 2026 02:09:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:00 GMT  
 		Size: 24.0 MB (24036867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd1872fa12cc6b1145803f1a0679ca26cc65fa1b4e0ee389bfb30267594736b6`  
@@ -7306,7 +7306,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 211.5 MB (211485124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:88966c76537186492450f785edf885e804e09f77aacf638b1d8e82d7eea32edd`  
-		Last Modified: Fri, 16 Jan 2026 18:33:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:35 GMT  
 		Size: 265.4 MB (265428877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3baf861233e5afb19bd241d5436f951ca2fd55e737afdf8f5d4a973dfac7e898`  
@@ -7389,15 +7389,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 22.7 MB (22712635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1e4250b4026270105a4d93c8bfb01a0581bf77b1bda3c2e5b6bd1ebd71b621f`  
-		Last Modified: Tue, 13 Jan 2026 04:07:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:07:47 GMT  
 		Size: 62.0 MB (62009069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5649fb9ac394a046636ec02ea6ef4e84c176390f43aa6addb0a740623148047a`  
-		Last Modified: Tue, 13 Jan 2026 05:14:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:35:36 GMT  
 		Size: 184.7 MB (184729771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d25a8f27e9be44e4df3f54891151d03e6fbac99177904f4b4519a328e02e7982`  
-		Last Modified: Fri, 16 Jan 2026 18:37:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:36:21 GMT  
 		Size: 239.6 MB (239635696 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:110514bb4c0d40ef99927cd5b457fdf771fe7939b306c4e995e99af06aff9a95`  
@@ -7425,7 +7425,7 @@ $ docker pull erlang@sha256:9b1e449646fec5738aab928d849a2ab817631cbf9db113165fa0
 
 -	Layers:
 	-	`sha256:9fd9e45d0a451220111e9f97c78c3847e6bc04687995837d86a98d3ae534fa87`  
-		Last Modified: Fri, 16 Jan 2026 20:47:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:36:17 GMT  
 		Size: 22.9 MB (22905299 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1879ac3690c738912bfe570b2d67eab482c7a6fcef5234fb046afc803675db33`  
@@ -7480,23 +7480,23 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 21.9 MB (21941488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a97f9f395cd1e9e02761196527b4253d5246be969781795c278996437891e5cf`  
-		Last Modified: Tue, 13 Jan 2026 04:25:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:25:03 GMT  
 		Size: 59.7 MB (59652006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9aa484529d34ddc165f6ac5eae25e0d66e0722c0b9905c2657f89dc02daf7f45`  
-		Last Modified: Tue, 13 Jan 2026 06:20:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:13:53 GMT  
 		Size: 175.4 MB (175385398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca3c1bbc1298456966198eb2e3d0d0feaf36b7fd97ba7e7d071767edb1b4952c`  
-		Last Modified: Fri, 16 Jan 2026 18:34:17 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:58 GMT  
 		Size: 235.9 MB (235942714 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fec67bd50dc5de949dca0f17b694e4c1f97355108f2e04204acad490839236fe`  
-		Last Modified: Fri, 16 Jan 2026 18:33:53 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:04 GMT  
 		Size: 195.0 KB (194961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17c28d1e49e6eab5c539c61aa85091e0556846853c10e2cf7be1cbe0d816e220`  
-		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:04 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7516,11 +7516,11 @@ $ docker pull erlang@sha256:a8541d5025886ccb16f53a4bfc7cb0e1fbb5cda9b79fabb5899f
 
 -	Layers:
 	-	`sha256:997b28cc9425e8dadcd57a6885db0abbf6fee3251f23e8a258f538ecb49aef4f`  
-		Last Modified: Fri, 16 Jan 2026 20:48:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
 		Size: 22.9 MB (22922166 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7cd65ccf8cde218dee498146a7be74a312aa12c385cb8c710b545e43a10a68ac`  
-		Last Modified: Fri, 16 Jan 2026 20:48:25 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:53 GMT  
 		Size: 19.1 KB (19085 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7571,19 +7571,19 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23604814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:687ad46596f06c934001fa6d7bea3d1508b0bb616cffb71004efd5bada56884f`  
-		Last Modified: Tue, 13 Jan 2026 03:57:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:05 GMT  
 		Size: 64.5 MB (64479462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f018151ab3f36e399ef489b536713197af8faa14dce771cb623bd750150fc315`  
-		Last Modified: Tue, 13 Jan 2026 04:49:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
 		Size: 203.0 MB (203013516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f187bbd5b7c5e4e039c8640f62fc55b86af50de0a53da18800b6d1fd58107d76`  
-		Last Modified: Fri, 16 Jan 2026 18:33:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:50 GMT  
 		Size: 258.4 MB (258395213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:80f14fdcfe67bfe4e5260cd2661fb623f591e4e106ff535b9bbd05fdebd4b505`  
-		Last Modified: Fri, 16 Jan 2026 18:34:01 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:49 GMT  
 		Size: 195.0 KB (194965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e9f15285a2c43a9e12c80ba3b64a8329a5e9342cc7c7c3a098686ddcb33bc60`  
@@ -7607,11 +7607,11 @@ $ docker pull erlang@sha256:acddfe76b5b37d83e407ff10bba36151b5e939c77adaea46670f
 
 -	Layers:
 	-	`sha256:3f57c7425d5848b466572a0ca5bb7a4a57532b641eb0a7b2e5983f04c497e899`  
-		Last Modified: Fri, 16 Jan 2026 20:49:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:50 GMT  
 		Size: 23.1 MB (23148669 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bc03f87e035ca285e5f964c4ab484f720c4869470ee1d682131e3712db92fc8f`  
-		Last Modified: Fri, 16 Jan 2026 20:49:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:49 GMT  
 		Size: 19.1 KB (19113 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7666,19 +7666,19 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 66.2 MB (66234261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4699afcbbc0f9f3dee99cc5eb7db287141d60c114f41f5777641c3e92f23dc9`  
-		Last Modified: Tue, 13 Jan 2026 03:53:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:58:39 GMT  
 		Size: 210.4 MB (210412920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a46209e6c91c8479e1a5544d8b12fbe94d030c8ff0603b5ecc50ac739212dd0`  
-		Last Modified: Fri, 16 Jan 2026 18:34:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:59 GMT  
 		Size: 256.7 MB (256659827 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:054ba3cd60d5a0062e26d0f9304e3c08572f4c8e997826df1144060bb8fa3cf2`  
-		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:05 GMT  
 		Size: 195.0 KB (194956 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17c28d1e49e6eab5c539c61aa85091e0556846853c10e2cf7be1cbe0d816e220`  
-		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:04 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7698,7 +7698,7 @@ $ docker pull erlang@sha256:1ad8d91c0c045b9f0514056945334c5f380a86c9b898dfb3d52e
 
 -	Layers:
 	-	`sha256:17193d0d3f29a293de7ae6278b4e05f28a13d335414754e714e480ea3e5cc77e`  
-		Last Modified: Fri, 16 Jan 2026 20:49:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:55 GMT  
 		Size: 23.1 MB (23076916 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:45d2267423555f2d54686e327204e9713c07df2e790c69ff2c8349c301f7145a`  
@@ -7753,7 +7753,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23614652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8ee435e05dd9c53ddee45b81a8f55939374cd926a0e00239c752bb0832a5f8b`  
-		Last Modified: Tue, 13 Jan 2026 21:22:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:23:11 GMT  
 		Size: 63.3 MB (63309962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7899b975f8cb9b504a05891ebc198b798b479eba5ee34dc9236aa6bdca9f8e2f`  
@@ -7765,11 +7765,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 245.4 MB (245356454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d06f852025a0f1c534b8ca529e46df960761ab869f04f107d51b134336911475`  
-		Last Modified: Fri, 16 Jan 2026 19:39:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 19:39:55 GMT  
 		Size: 195.0 KB (194986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bd0f287e5a0ca85a4dd90c60e92d7fac87fb0ce2722ffb1df802655fa2d6954`  
-		Last Modified: Fri, 16 Jan 2026 19:39:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 19:39:55 GMT  
 		Size: 821.8 KB (821828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7832,23 +7832,23 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd2769c4ec4b4d67e8059086401477839f8b9d5a5026dd27df50a3c7ce33b9db`  
-		Last Modified: Tue, 13 Jan 2026 03:35:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:35:30 GMT  
 		Size: 25.7 MB (25670703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ba5fcb80ea7d84a82ea96c11045a4f40d0943808d5c5334ea90de2f7ed44f4c4`  
-		Last Modified: Tue, 13 Jan 2026 06:38:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:38:28 GMT  
 		Size: 69.8 MB (69846016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f612632d2f5204ee80a61990e9e6e3cf8ffff970b6a69977cfe3c20c30f2f8f`  
-		Last Modified: Tue, 13 Jan 2026 08:53:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:53:21 GMT  
 		Size: 214.5 MB (214531303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7298c3cf05a78e6f72917551797f9c2002b82f76353d5a9d5553d88807957c45`  
-		Last Modified: Fri, 16 Jan 2026 18:47:29 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:47:48 GMT  
 		Size: 259.9 MB (259907731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b29106101a4c633b038f7168ebd452fdf73874d53d97d3909708ae7a23725524`  
@@ -7856,7 +7856,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.0 KB (194959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56c90c5ecd3f60650b0e5ae75ec9fad231e063d0e1041a9bbec363eab8da5b82`  
-		Last Modified: Fri, 16 Jan 2026 18:47:41 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:47:22 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7876,11 +7876,11 @@ $ docker pull erlang@sha256:2c5dc3430616f7e426b50dc9788ab6671d584a7bdca22d0f89c7
 
 -	Layers:
 	-	`sha256:5130af8e8089a1cd60362bce324131846895459e5b30ce812c1092bfcd783020`  
-		Last Modified: Fri, 16 Jan 2026 18:47:23 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:50:28 GMT  
 		Size: 23.1 MB (23064631 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e67660253b02a71ef846de4811609e139bb82c88fca8500469399b013ebbc5f0`  
-		Last Modified: Fri, 16 Jan 2026 18:47:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:50:29 GMT  
 		Size: 19.0 KB (19027 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7923,7 +7923,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8133db08df54d1100dff2f0259f057251959db22c09d939ae558af001aa8088c`  
@@ -7931,11 +7931,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 24.0 MB (24032491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fb4cc23aeea1b258f198103e8c2d450f82da1d5de8a3eb227ed2969f60d97c4`  
-		Last Modified: Tue, 13 Jan 2026 03:15:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:15:23 GMT  
 		Size: 63.5 MB (63501276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d603781e360b704a9e81ded2374882060ef0f7137f208852911befe0feddd405`  
-		Last Modified: Tue, 13 Jan 2026 05:16:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:18:26 GMT  
 		Size: 183.5 MB (183515687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ab7b409ed05c5872504e0f29ab2a1e05d2824f7d25612aae0a568c5e0c1b802`  
@@ -7947,7 +7947,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.0 KB (194963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b138c7b9555cab7eb686ef22df852cd4f5fcd51da8f097de0110651124ae46d`  
-		Last Modified: Fri, 16 Jan 2026 18:34:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:19 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7971,7 +7971,7 @@ $ docker pull erlang@sha256:7e54c8cf528795fe44f9534ab0bc84a233391e22fd1f22906e02
 		Size: 22.9 MB (22876698 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a0098b439b4ce80b41e4763655688da481e005a85b3526f2231a814279f0208c`  
-		Last Modified: Fri, 16 Jan 2026 20:51:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:19 GMT  
 		Size: 19.0 KB (18979 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8025,11 +8025,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
-		Last Modified: Sun, 07 Dec 2025 13:54:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3cc841b2a9dd2416234d69e31d067ff495300157c3136fe60ccb7deed3d0a172`  
-		Last Modified: Fri, 16 Jan 2026 18:31:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:24 GMT  
 		Size: 46.1 MB (46092684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -8053,7 +8053,7 @@ $ docker pull erlang@sha256:775cf207bb16e154501837af335f1b3c089b9ffd5e050e520435
 		Size: 273.4 KB (273365 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cf679ac80a9df58ba77e702a826ef329a1194f0bb111c261d598649387dac0b3`  
-		Last Modified: Fri, 16 Jan 2026 18:31:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:23 GMT  
 		Size: 15.0 KB (15003 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8086,11 +8086,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:d9d7b8e1c6b20394731c1f62afa10545ea3d2388aca5051c7bae7732dbced5c9`  
-		Last Modified: Sun, 07 Dec 2025 14:02:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:48 GMT  
 		Size: 3.1 MB (3095971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:556eb7c2ab045bdd28724fd849a196f7153cad0fbe66ddcb1abd09fd9fc9c137`  
-		Last Modified: Fri, 16 Jan 2026 18:31:58 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:45 GMT  
 		Size: 43.8 MB (43753173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -8114,7 +8114,7 @@ $ docker pull erlang@sha256:e3d5eac0fbb4e6be12247bcb14252bc023f0d22f5467d4fbc804
 		Size: 269.1 KB (269086 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f5272a3060a45fd5a3dafe161140fb9a818e529dc42c432c4cee50efdbfa07c2`  
-		Last Modified: Fri, 16 Jan 2026 20:47:44 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:44 GMT  
 		Size: 15.1 KB (15082 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8147,7 +8147,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
-		Last Modified: Wed, 08 Oct 2025 12:02:47 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:57 GMT  
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56b8b298b4b9b4e0753ccb55492efbd8ff585bfb217ec5446f6d10cfea536d52`  
@@ -8171,7 +8171,7 @@ $ docker pull erlang@sha256:56174de34939d9086077d6bf3da0dcc32d745442a35952b0bdd9
 
 -	Layers:
 	-	`sha256:92ba7c0c6e21e7e04657ee801737d54b1a904065819e946c10d94443ae5979fe`  
-		Last Modified: Fri, 16 Jan 2026 18:32:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:47 GMT  
 		Size: 274.2 KB (274158 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b836bbc9fbe13fe609ba04476ca8486919b3e08d256dfc7f648d5655135de3c6`  
@@ -8269,7 +8269,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:a78577222d4c08b54b062e8bf30834a3c610281d9b4780d34cac9394431f7f25`  
-		Last Modified: Sun, 07 Dec 2025 16:08:05 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3575563 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05cb2724169640c90e07c4cc5b9b738ff15ccbf9e3bfe3e2b15a788f182301b7`  
@@ -8297,7 +8297,7 @@ $ docker pull erlang@sha256:6d8af67bae6c37adbc82ade58317032d1c611f66aadcd922ccd0
 		Size: 267.1 KB (267133 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:500b5279e8179c6cb1c556dbad91ebb90b232699429390a04f3fabcba3f32d57`  
-		Last Modified: Fri, 16 Jan 2026 18:50:00 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:56 GMT  
 		Size: 15.0 KB (15047 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8358,7 +8358,7 @@ $ docker pull erlang@sha256:c550daf107a89a657dcbf15dfb22390042d758c815eb9f3fe2d4
 		Size: 267.1 KB (267099 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:10b0f0a91af2be8e89054bee8daf9b57052565ba885426ab9973e6445544c099`  
-		Last Modified: Fri, 16 Jan 2026 20:48:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:13 GMT  
 		Size: 15.0 KB (15003 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8438,11 +8438,11 @@ $ docker pull erlang@sha256:ddb79d0150080a40a3cac3292074fd0b404ad8300ab1db4e79c1
 
 -	Layers:
 	-	`sha256:ea26c9f8f8d8709ff72be96ac0846669242508849689d0acd8efc525db921749`  
-		Last Modified: Fri, 16 Jan 2026 18:32:21 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:36 GMT  
 		Size: 3.8 MB (3825994 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:715be55f44e89f397b69a3645e123d164dadfac848d0ed935f509a89920f1a31`  
-		Last Modified: Fri, 16 Jan 2026 18:32:21 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:37 GMT  
 		Size: 13.6 KB (13562 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8497,11 +8497,11 @@ $ docker pull erlang@sha256:54ff807502a385f3deecd38e9d7634ee61c63ad1d41f6f1934da
 
 -	Layers:
 	-	`sha256:0ae25c69c21983944f69fed27e3fe2e4afca9883d7241385960166cd8e9fd92e`  
-		Last Modified: Fri, 16 Jan 2026 20:47:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:31 GMT  
 		Size: 3.8 MB (3829802 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:735c0b5de01cc9083dfcb5be4cc2b492ef02e0b8d9ffab89185baafa1ab1dae2`  
-		Last Modified: Fri, 16 Jan 2026 20:47:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:31 GMT  
 		Size: 13.6 KB (13642 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8536,7 +8536,7 @@ CMD ["erl"]
 		Size: 44.2 MB (44198845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75ee8008e5c2527527e4e03b6922507efd26dd43819311aa56cbdfc7cd508a7f`  
-		Last Modified: Fri, 16 Jan 2026 18:32:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:01 GMT  
 		Size: 60.2 MB (60164311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -8619,7 +8619,7 @@ $ docker pull erlang@sha256:bc1ee04cc910b8c3de3e44f5fd9b6853d2b8ef16455b03cfd9fb
 		Size: 3.8 MB (3826255 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:061de0a753d795e198836e6f6f79ebde29ddd4e059f58d20cc0bde66d733d5cf`  
-		Last Modified: Fri, 16 Jan 2026 18:31:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:58 GMT  
 		Size: 13.7 KB (13666 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8713,7 +8713,7 @@ CMD ["erl"]
 		Size: 48.8 MB (48763393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2897bcbed67bcc25e8da56b24dd23795fe133f0bf26f02bd53c947fd90a1f087`  
-		Last Modified: Fri, 16 Jan 2026 20:06:18 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:06:01 GMT  
 		Size: 61.1 MB (61142844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -8733,7 +8733,7 @@ $ docker pull erlang@sha256:c1cbcb71c4196f648eadcc6edb126d3f994917d78b8160fcdbd5
 
 -	Layers:
 	-	`sha256:b6f98265fffa03ac077ac87b1496cdf36ea39ec166cde54252dd4da108fe43d5`  
-		Last Modified: Fri, 16 Jan 2026 20:48:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:05:54 GMT  
 		Size: 13.4 KB (13413 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8764,11 +8764,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10a0c94821550fe2a425890013331036981898b2741d5a7844cc5ba176df8e22`  
-		Last Modified: Fri, 16 Jan 2026 18:43:19 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:43:39 GMT  
 		Size: 62.3 MB (62260700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -8788,7 +8788,7 @@ $ docker pull erlang@sha256:e999ee6adcd5c56c12d34ff1ed0dbdc21978d8855bfc0e72205f
 
 -	Layers:
 	-	`sha256:29dbaf54fadfbb9d1668ada8644b3619df2c50a8cdcf709a52fd39767d964d7f`  
-		Last Modified: Fri, 16 Jan 2026 20:48:10 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:43:17 GMT  
 		Size: 3.8 MB (3830444 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a0446935bf03237422032eafc8d6b88f30e0e9f30262f09e0f7186780d365bab`  
@@ -8823,7 +8823,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:102f26288ed3103960a52429386f3fff8d0d596af033eb535436eaabb64f5dca`  
@@ -8847,7 +8847,7 @@ $ docker pull erlang@sha256:c3afcb47c7aa8be2079a814f332bc3a35d40aa64920fb16637b7
 
 -	Layers:
 	-	`sha256:372d53f14423dd16f098e6bd8b9f5c161699756a101e94a004de50cdf8fc68fb`  
-		Last Modified: Fri, 16 Jan 2026 18:34:08 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:15 GMT  
 		Size: 3.8 MB (3822822 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:59bc7d365e41ec360cbc41630f85fe64f83ce2c8f2aa67d0fa9b2fd715e88bf3`  
@@ -8923,7 +8923,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64538a062a61add8dc8b290fa69475e8902eb839c497a5f5dcd5a950422e493c`  
-		Last Modified: Tue, 13 Jan 2026 02:09:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:00 GMT  
 		Size: 24.0 MB (24036867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd1872fa12cc6b1145803f1a0679ca26cc65fa1b4e0ee389bfb30267594736b6`  
@@ -8935,7 +8935,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 211.5 MB (211485124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:88966c76537186492450f785edf885e804e09f77aacf638b1d8e82d7eea32edd`  
-		Last Modified: Fri, 16 Jan 2026 18:33:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:35 GMT  
 		Size: 265.4 MB (265428877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3baf861233e5afb19bd241d5436f951ca2fd55e737afdf8f5d4a973dfac7e898`  
@@ -9018,15 +9018,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 22.7 MB (22712635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1e4250b4026270105a4d93c8bfb01a0581bf77b1bda3c2e5b6bd1ebd71b621f`  
-		Last Modified: Tue, 13 Jan 2026 04:07:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:07:47 GMT  
 		Size: 62.0 MB (62009069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5649fb9ac394a046636ec02ea6ef4e84c176390f43aa6addb0a740623148047a`  
-		Last Modified: Tue, 13 Jan 2026 05:14:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:35:36 GMT  
 		Size: 184.7 MB (184729771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d25a8f27e9be44e4df3f54891151d03e6fbac99177904f4b4519a328e02e7982`  
-		Last Modified: Fri, 16 Jan 2026 18:37:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:36:21 GMT  
 		Size: 239.6 MB (239635696 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:110514bb4c0d40ef99927cd5b457fdf771fe7939b306c4e995e99af06aff9a95`  
@@ -9054,7 +9054,7 @@ $ docker pull erlang@sha256:9b1e449646fec5738aab928d849a2ab817631cbf9db113165fa0
 
 -	Layers:
 	-	`sha256:9fd9e45d0a451220111e9f97c78c3847e6bc04687995837d86a98d3ae534fa87`  
-		Last Modified: Fri, 16 Jan 2026 20:47:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:36:17 GMT  
 		Size: 22.9 MB (22905299 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1879ac3690c738912bfe570b2d67eab482c7a6fcef5234fb046afc803675db33`  
@@ -9109,23 +9109,23 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 21.9 MB (21941488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a97f9f395cd1e9e02761196527b4253d5246be969781795c278996437891e5cf`  
-		Last Modified: Tue, 13 Jan 2026 04:25:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:25:03 GMT  
 		Size: 59.7 MB (59652006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9aa484529d34ddc165f6ac5eae25e0d66e0722c0b9905c2657f89dc02daf7f45`  
-		Last Modified: Tue, 13 Jan 2026 06:20:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:13:53 GMT  
 		Size: 175.4 MB (175385398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca3c1bbc1298456966198eb2e3d0d0feaf36b7fd97ba7e7d071767edb1b4952c`  
-		Last Modified: Fri, 16 Jan 2026 18:34:17 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:58 GMT  
 		Size: 235.9 MB (235942714 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fec67bd50dc5de949dca0f17b694e4c1f97355108f2e04204acad490839236fe`  
-		Last Modified: Fri, 16 Jan 2026 18:33:53 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:04 GMT  
 		Size: 195.0 KB (194961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17c28d1e49e6eab5c539c61aa85091e0556846853c10e2cf7be1cbe0d816e220`  
-		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:04 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9145,11 +9145,11 @@ $ docker pull erlang@sha256:a8541d5025886ccb16f53a4bfc7cb0e1fbb5cda9b79fabb5899f
 
 -	Layers:
 	-	`sha256:997b28cc9425e8dadcd57a6885db0abbf6fee3251f23e8a258f538ecb49aef4f`  
-		Last Modified: Fri, 16 Jan 2026 20:48:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
 		Size: 22.9 MB (22922166 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7cd65ccf8cde218dee498146a7be74a312aa12c385cb8c710b545e43a10a68ac`  
-		Last Modified: Fri, 16 Jan 2026 20:48:25 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:53 GMT  
 		Size: 19.1 KB (19085 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9200,19 +9200,19 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23604814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:687ad46596f06c934001fa6d7bea3d1508b0bb616cffb71004efd5bada56884f`  
-		Last Modified: Tue, 13 Jan 2026 03:57:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:05 GMT  
 		Size: 64.5 MB (64479462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f018151ab3f36e399ef489b536713197af8faa14dce771cb623bd750150fc315`  
-		Last Modified: Tue, 13 Jan 2026 04:49:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
 		Size: 203.0 MB (203013516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f187bbd5b7c5e4e039c8640f62fc55b86af50de0a53da18800b6d1fd58107d76`  
-		Last Modified: Fri, 16 Jan 2026 18:33:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:50 GMT  
 		Size: 258.4 MB (258395213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:80f14fdcfe67bfe4e5260cd2661fb623f591e4e106ff535b9bbd05fdebd4b505`  
-		Last Modified: Fri, 16 Jan 2026 18:34:01 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:49 GMT  
 		Size: 195.0 KB (194965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e9f15285a2c43a9e12c80ba3b64a8329a5e9342cc7c7c3a098686ddcb33bc60`  
@@ -9236,11 +9236,11 @@ $ docker pull erlang@sha256:acddfe76b5b37d83e407ff10bba36151b5e939c77adaea46670f
 
 -	Layers:
 	-	`sha256:3f57c7425d5848b466572a0ca5bb7a4a57532b641eb0a7b2e5983f04c497e899`  
-		Last Modified: Fri, 16 Jan 2026 20:49:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:50 GMT  
 		Size: 23.1 MB (23148669 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bc03f87e035ca285e5f964c4ab484f720c4869470ee1d682131e3712db92fc8f`  
-		Last Modified: Fri, 16 Jan 2026 20:49:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:49 GMT  
 		Size: 19.1 KB (19113 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9295,19 +9295,19 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 66.2 MB (66234261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4699afcbbc0f9f3dee99cc5eb7db287141d60c114f41f5777641c3e92f23dc9`  
-		Last Modified: Tue, 13 Jan 2026 03:53:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:58:39 GMT  
 		Size: 210.4 MB (210412920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a46209e6c91c8479e1a5544d8b12fbe94d030c8ff0603b5ecc50ac739212dd0`  
-		Last Modified: Fri, 16 Jan 2026 18:34:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:59 GMT  
 		Size: 256.7 MB (256659827 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:054ba3cd60d5a0062e26d0f9304e3c08572f4c8e997826df1144060bb8fa3cf2`  
-		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:05 GMT  
 		Size: 195.0 KB (194956 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17c28d1e49e6eab5c539c61aa85091e0556846853c10e2cf7be1cbe0d816e220`  
-		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:04 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9327,7 +9327,7 @@ $ docker pull erlang@sha256:1ad8d91c0c045b9f0514056945334c5f380a86c9b898dfb3d52e
 
 -	Layers:
 	-	`sha256:17193d0d3f29a293de7ae6278b4e05f28a13d335414754e714e480ea3e5cc77e`  
-		Last Modified: Fri, 16 Jan 2026 20:49:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:55 GMT  
 		Size: 23.1 MB (23076916 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:45d2267423555f2d54686e327204e9713c07df2e790c69ff2c8349c301f7145a`  
@@ -9382,7 +9382,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23614652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8ee435e05dd9c53ddee45b81a8f55939374cd926a0e00239c752bb0832a5f8b`  
-		Last Modified: Tue, 13 Jan 2026 21:22:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:23:11 GMT  
 		Size: 63.3 MB (63309962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7899b975f8cb9b504a05891ebc198b798b479eba5ee34dc9236aa6bdca9f8e2f`  
@@ -9394,11 +9394,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 245.4 MB (245356454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d06f852025a0f1c534b8ca529e46df960761ab869f04f107d51b134336911475`  
-		Last Modified: Fri, 16 Jan 2026 19:39:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 19:39:55 GMT  
 		Size: 195.0 KB (194986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bd0f287e5a0ca85a4dd90c60e92d7fac87fb0ce2722ffb1df802655fa2d6954`  
-		Last Modified: Fri, 16 Jan 2026 19:39:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 19:39:55 GMT  
 		Size: 821.8 KB (821828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9461,23 +9461,23 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd2769c4ec4b4d67e8059086401477839f8b9d5a5026dd27df50a3c7ce33b9db`  
-		Last Modified: Tue, 13 Jan 2026 03:35:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:35:30 GMT  
 		Size: 25.7 MB (25670703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ba5fcb80ea7d84a82ea96c11045a4f40d0943808d5c5334ea90de2f7ed44f4c4`  
-		Last Modified: Tue, 13 Jan 2026 06:38:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:38:28 GMT  
 		Size: 69.8 MB (69846016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f612632d2f5204ee80a61990e9e6e3cf8ffff970b6a69977cfe3c20c30f2f8f`  
-		Last Modified: Tue, 13 Jan 2026 08:53:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:53:21 GMT  
 		Size: 214.5 MB (214531303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7298c3cf05a78e6f72917551797f9c2002b82f76353d5a9d5553d88807957c45`  
-		Last Modified: Fri, 16 Jan 2026 18:47:29 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:47:48 GMT  
 		Size: 259.9 MB (259907731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b29106101a4c633b038f7168ebd452fdf73874d53d97d3909708ae7a23725524`  
@@ -9485,7 +9485,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.0 KB (194959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56c90c5ecd3f60650b0e5ae75ec9fad231e063d0e1041a9bbec363eab8da5b82`  
-		Last Modified: Fri, 16 Jan 2026 18:47:41 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:47:22 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9505,11 +9505,11 @@ $ docker pull erlang@sha256:2c5dc3430616f7e426b50dc9788ab6671d584a7bdca22d0f89c7
 
 -	Layers:
 	-	`sha256:5130af8e8089a1cd60362bce324131846895459e5b30ce812c1092bfcd783020`  
-		Last Modified: Fri, 16 Jan 2026 18:47:23 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:50:28 GMT  
 		Size: 23.1 MB (23064631 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e67660253b02a71ef846de4811609e139bb82c88fca8500469399b013ebbc5f0`  
-		Last Modified: Fri, 16 Jan 2026 18:47:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:50:29 GMT  
 		Size: 19.0 KB (19027 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9552,7 +9552,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8133db08df54d1100dff2f0259f057251959db22c09d939ae558af001aa8088c`  
@@ -9560,11 +9560,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 24.0 MB (24032491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fb4cc23aeea1b258f198103e8c2d450f82da1d5de8a3eb227ed2969f60d97c4`  
-		Last Modified: Tue, 13 Jan 2026 03:15:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:15:23 GMT  
 		Size: 63.5 MB (63501276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d603781e360b704a9e81ded2374882060ef0f7137f208852911befe0feddd405`  
-		Last Modified: Tue, 13 Jan 2026 05:16:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:18:26 GMT  
 		Size: 183.5 MB (183515687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ab7b409ed05c5872504e0f29ab2a1e05d2824f7d25612aae0a568c5e0c1b802`  
@@ -9576,7 +9576,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.0 KB (194963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b138c7b9555cab7eb686ef22df852cd4f5fcd51da8f097de0110651124ae46d`  
-		Last Modified: Fri, 16 Jan 2026 18:34:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:19 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9600,7 +9600,7 @@ $ docker pull erlang@sha256:7e54c8cf528795fe44f9534ab0bc84a233391e22fd1f22906e02
 		Size: 22.9 MB (22876698 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a0098b439b4ce80b41e4763655688da481e005a85b3526f2231a814279f0208c`  
-		Last Modified: Fri, 16 Jan 2026 20:51:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:19 GMT  
 		Size: 19.0 KB (18979 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9654,11 +9654,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
-		Last Modified: Sun, 07 Dec 2025 13:54:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3cc841b2a9dd2416234d69e31d067ff495300157c3136fe60ccb7deed3d0a172`  
-		Last Modified: Fri, 16 Jan 2026 18:31:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:24 GMT  
 		Size: 46.1 MB (46092684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9682,7 +9682,7 @@ $ docker pull erlang@sha256:775cf207bb16e154501837af335f1b3c089b9ffd5e050e520435
 		Size: 273.4 KB (273365 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cf679ac80a9df58ba77e702a826ef329a1194f0bb111c261d598649387dac0b3`  
-		Last Modified: Fri, 16 Jan 2026 18:31:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:23 GMT  
 		Size: 15.0 KB (15003 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9715,11 +9715,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:d9d7b8e1c6b20394731c1f62afa10545ea3d2388aca5051c7bae7732dbced5c9`  
-		Last Modified: Sun, 07 Dec 2025 14:02:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:48 GMT  
 		Size: 3.1 MB (3095971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:556eb7c2ab045bdd28724fd849a196f7153cad0fbe66ddcb1abd09fd9fc9c137`  
-		Last Modified: Fri, 16 Jan 2026 18:31:58 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:45 GMT  
 		Size: 43.8 MB (43753173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9743,7 +9743,7 @@ $ docker pull erlang@sha256:e3d5eac0fbb4e6be12247bcb14252bc023f0d22f5467d4fbc804
 		Size: 269.1 KB (269086 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f5272a3060a45fd5a3dafe161140fb9a818e529dc42c432c4cee50efdbfa07c2`  
-		Last Modified: Fri, 16 Jan 2026 20:47:44 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:44 GMT  
 		Size: 15.1 KB (15082 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9776,7 +9776,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
-		Last Modified: Wed, 08 Oct 2025 12:02:47 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:57 GMT  
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56b8b298b4b9b4e0753ccb55492efbd8ff585bfb217ec5446f6d10cfea536d52`  
@@ -9800,7 +9800,7 @@ $ docker pull erlang@sha256:56174de34939d9086077d6bf3da0dcc32d745442a35952b0bdd9
 
 -	Layers:
 	-	`sha256:92ba7c0c6e21e7e04657ee801737d54b1a904065819e946c10d94443ae5979fe`  
-		Last Modified: Fri, 16 Jan 2026 18:32:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:47 GMT  
 		Size: 274.2 KB (274158 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b836bbc9fbe13fe609ba04476ca8486919b3e08d256dfc7f648d5655135de3c6`  
@@ -9898,7 +9898,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:a78577222d4c08b54b062e8bf30834a3c610281d9b4780d34cac9394431f7f25`  
-		Last Modified: Sun, 07 Dec 2025 16:08:05 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3575563 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05cb2724169640c90e07c4cc5b9b738ff15ccbf9e3bfe3e2b15a788f182301b7`  
@@ -9926,7 +9926,7 @@ $ docker pull erlang@sha256:6d8af67bae6c37adbc82ade58317032d1c611f66aadcd922ccd0
 		Size: 267.1 KB (267133 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:500b5279e8179c6cb1c556dbad91ebb90b232699429390a04f3fabcba3f32d57`  
-		Last Modified: Fri, 16 Jan 2026 18:50:00 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:56 GMT  
 		Size: 15.0 KB (15047 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9987,7 +9987,7 @@ $ docker pull erlang@sha256:c550daf107a89a657dcbf15dfb22390042d758c815eb9f3fe2d4
 		Size: 267.1 KB (267099 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:10b0f0a91af2be8e89054bee8daf9b57052565ba885426ab9973e6445544c099`  
-		Last Modified: Fri, 16 Jan 2026 20:48:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:13 GMT  
 		Size: 15.0 KB (15003 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10067,11 +10067,11 @@ $ docker pull erlang@sha256:ddb79d0150080a40a3cac3292074fd0b404ad8300ab1db4e79c1
 
 -	Layers:
 	-	`sha256:ea26c9f8f8d8709ff72be96ac0846669242508849689d0acd8efc525db921749`  
-		Last Modified: Fri, 16 Jan 2026 18:32:21 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:36 GMT  
 		Size: 3.8 MB (3825994 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:715be55f44e89f397b69a3645e123d164dadfac848d0ed935f509a89920f1a31`  
-		Last Modified: Fri, 16 Jan 2026 18:32:21 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:37 GMT  
 		Size: 13.6 KB (13562 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10126,11 +10126,11 @@ $ docker pull erlang@sha256:54ff807502a385f3deecd38e9d7634ee61c63ad1d41f6f1934da
 
 -	Layers:
 	-	`sha256:0ae25c69c21983944f69fed27e3fe2e4afca9883d7241385960166cd8e9fd92e`  
-		Last Modified: Fri, 16 Jan 2026 20:47:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:31 GMT  
 		Size: 3.8 MB (3829802 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:735c0b5de01cc9083dfcb5be4cc2b492ef02e0b8d9ffab89185baafa1ab1dae2`  
-		Last Modified: Fri, 16 Jan 2026 20:47:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:31 GMT  
 		Size: 13.6 KB (13642 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10165,7 +10165,7 @@ CMD ["erl"]
 		Size: 44.2 MB (44198845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75ee8008e5c2527527e4e03b6922507efd26dd43819311aa56cbdfc7cd508a7f`  
-		Last Modified: Fri, 16 Jan 2026 18:32:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:01 GMT  
 		Size: 60.2 MB (60164311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10248,7 +10248,7 @@ $ docker pull erlang@sha256:bc1ee04cc910b8c3de3e44f5fd9b6853d2b8ef16455b03cfd9fb
 		Size: 3.8 MB (3826255 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:061de0a753d795e198836e6f6f79ebde29ddd4e059f58d20cc0bde66d733d5cf`  
-		Last Modified: Fri, 16 Jan 2026 18:31:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:58 GMT  
 		Size: 13.7 KB (13666 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10342,7 +10342,7 @@ CMD ["erl"]
 		Size: 48.8 MB (48763393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2897bcbed67bcc25e8da56b24dd23795fe133f0bf26f02bd53c947fd90a1f087`  
-		Last Modified: Fri, 16 Jan 2026 20:06:18 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:06:01 GMT  
 		Size: 61.1 MB (61142844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10362,7 +10362,7 @@ $ docker pull erlang@sha256:c1cbcb71c4196f648eadcc6edb126d3f994917d78b8160fcdbd5
 
 -	Layers:
 	-	`sha256:b6f98265fffa03ac077ac87b1496cdf36ea39ec166cde54252dd4da108fe43d5`  
-		Last Modified: Fri, 16 Jan 2026 20:48:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:05:54 GMT  
 		Size: 13.4 KB (13413 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10393,11 +10393,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10a0c94821550fe2a425890013331036981898b2741d5a7844cc5ba176df8e22`  
-		Last Modified: Fri, 16 Jan 2026 18:43:19 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:43:39 GMT  
 		Size: 62.3 MB (62260700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10417,7 +10417,7 @@ $ docker pull erlang@sha256:e999ee6adcd5c56c12d34ff1ed0dbdc21978d8855bfc0e72205f
 
 -	Layers:
 	-	`sha256:29dbaf54fadfbb9d1668ada8644b3619df2c50a8cdcf709a52fd39767d964d7f`  
-		Last Modified: Fri, 16 Jan 2026 20:48:10 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:43:17 GMT  
 		Size: 3.8 MB (3830444 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a0446935bf03237422032eafc8d6b88f30e0e9f30262f09e0f7186780d365bab`  
@@ -10452,7 +10452,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:102f26288ed3103960a52429386f3fff8d0d596af033eb535436eaabb64f5dca`  
@@ -10476,7 +10476,7 @@ $ docker pull erlang@sha256:c3afcb47c7aa8be2079a814f332bc3a35d40aa64920fb16637b7
 
 -	Layers:
 	-	`sha256:372d53f14423dd16f098e6bd8b9f5c161699756a101e94a004de50cdf8fc68fb`  
-		Last Modified: Fri, 16 Jan 2026 18:34:08 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:15 GMT  
 		Size: 3.8 MB (3822822 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:59bc7d365e41ec360cbc41630f85fe64f83ce2c8f2aa67d0fa9b2fd715e88bf3`  
@@ -10552,7 +10552,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64538a062a61add8dc8b290fa69475e8902eb839c497a5f5dcd5a950422e493c`  
-		Last Modified: Tue, 13 Jan 2026 02:09:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:00 GMT  
 		Size: 24.0 MB (24036867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd1872fa12cc6b1145803f1a0679ca26cc65fa1b4e0ee389bfb30267594736b6`  
@@ -10564,7 +10564,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 211.5 MB (211485124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:88966c76537186492450f785edf885e804e09f77aacf638b1d8e82d7eea32edd`  
-		Last Modified: Fri, 16 Jan 2026 18:33:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:35 GMT  
 		Size: 265.4 MB (265428877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3baf861233e5afb19bd241d5436f951ca2fd55e737afdf8f5d4a973dfac7e898`  
@@ -10647,15 +10647,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 22.7 MB (22712635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1e4250b4026270105a4d93c8bfb01a0581bf77b1bda3c2e5b6bd1ebd71b621f`  
-		Last Modified: Tue, 13 Jan 2026 04:07:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:07:47 GMT  
 		Size: 62.0 MB (62009069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5649fb9ac394a046636ec02ea6ef4e84c176390f43aa6addb0a740623148047a`  
-		Last Modified: Tue, 13 Jan 2026 05:14:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:35:36 GMT  
 		Size: 184.7 MB (184729771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d25a8f27e9be44e4df3f54891151d03e6fbac99177904f4b4519a328e02e7982`  
-		Last Modified: Fri, 16 Jan 2026 18:37:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:36:21 GMT  
 		Size: 239.6 MB (239635696 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:110514bb4c0d40ef99927cd5b457fdf771fe7939b306c4e995e99af06aff9a95`  
@@ -10683,7 +10683,7 @@ $ docker pull erlang@sha256:9b1e449646fec5738aab928d849a2ab817631cbf9db113165fa0
 
 -	Layers:
 	-	`sha256:9fd9e45d0a451220111e9f97c78c3847e6bc04687995837d86a98d3ae534fa87`  
-		Last Modified: Fri, 16 Jan 2026 20:47:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:36:17 GMT  
 		Size: 22.9 MB (22905299 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1879ac3690c738912bfe570b2d67eab482c7a6fcef5234fb046afc803675db33`  
@@ -10738,23 +10738,23 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 21.9 MB (21941488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a97f9f395cd1e9e02761196527b4253d5246be969781795c278996437891e5cf`  
-		Last Modified: Tue, 13 Jan 2026 04:25:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:25:03 GMT  
 		Size: 59.7 MB (59652006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9aa484529d34ddc165f6ac5eae25e0d66e0722c0b9905c2657f89dc02daf7f45`  
-		Last Modified: Tue, 13 Jan 2026 06:20:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:13:53 GMT  
 		Size: 175.4 MB (175385398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca3c1bbc1298456966198eb2e3d0d0feaf36b7fd97ba7e7d071767edb1b4952c`  
-		Last Modified: Fri, 16 Jan 2026 18:34:17 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:58 GMT  
 		Size: 235.9 MB (235942714 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fec67bd50dc5de949dca0f17b694e4c1f97355108f2e04204acad490839236fe`  
-		Last Modified: Fri, 16 Jan 2026 18:33:53 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:04 GMT  
 		Size: 195.0 KB (194961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17c28d1e49e6eab5c539c61aa85091e0556846853c10e2cf7be1cbe0d816e220`  
-		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:04 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10774,11 +10774,11 @@ $ docker pull erlang@sha256:a8541d5025886ccb16f53a4bfc7cb0e1fbb5cda9b79fabb5899f
 
 -	Layers:
 	-	`sha256:997b28cc9425e8dadcd57a6885db0abbf6fee3251f23e8a258f538ecb49aef4f`  
-		Last Modified: Fri, 16 Jan 2026 20:48:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
 		Size: 22.9 MB (22922166 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7cd65ccf8cde218dee498146a7be74a312aa12c385cb8c710b545e43a10a68ac`  
-		Last Modified: Fri, 16 Jan 2026 20:48:25 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:53 GMT  
 		Size: 19.1 KB (19085 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10829,19 +10829,19 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23604814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:687ad46596f06c934001fa6d7bea3d1508b0bb616cffb71004efd5bada56884f`  
-		Last Modified: Tue, 13 Jan 2026 03:57:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:05 GMT  
 		Size: 64.5 MB (64479462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f018151ab3f36e399ef489b536713197af8faa14dce771cb623bd750150fc315`  
-		Last Modified: Tue, 13 Jan 2026 04:49:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
 		Size: 203.0 MB (203013516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f187bbd5b7c5e4e039c8640f62fc55b86af50de0a53da18800b6d1fd58107d76`  
-		Last Modified: Fri, 16 Jan 2026 18:33:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:50 GMT  
 		Size: 258.4 MB (258395213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:80f14fdcfe67bfe4e5260cd2661fb623f591e4e106ff535b9bbd05fdebd4b505`  
-		Last Modified: Fri, 16 Jan 2026 18:34:01 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:49 GMT  
 		Size: 195.0 KB (194965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e9f15285a2c43a9e12c80ba3b64a8329a5e9342cc7c7c3a098686ddcb33bc60`  
@@ -10865,11 +10865,11 @@ $ docker pull erlang@sha256:acddfe76b5b37d83e407ff10bba36151b5e939c77adaea46670f
 
 -	Layers:
 	-	`sha256:3f57c7425d5848b466572a0ca5bb7a4a57532b641eb0a7b2e5983f04c497e899`  
-		Last Modified: Fri, 16 Jan 2026 20:49:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:50 GMT  
 		Size: 23.1 MB (23148669 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bc03f87e035ca285e5f964c4ab484f720c4869470ee1d682131e3712db92fc8f`  
-		Last Modified: Fri, 16 Jan 2026 20:49:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:49 GMT  
 		Size: 19.1 KB (19113 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10924,19 +10924,19 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 66.2 MB (66234261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4699afcbbc0f9f3dee99cc5eb7db287141d60c114f41f5777641c3e92f23dc9`  
-		Last Modified: Tue, 13 Jan 2026 03:53:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:58:39 GMT  
 		Size: 210.4 MB (210412920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a46209e6c91c8479e1a5544d8b12fbe94d030c8ff0603b5ecc50ac739212dd0`  
-		Last Modified: Fri, 16 Jan 2026 18:34:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:59 GMT  
 		Size: 256.7 MB (256659827 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:054ba3cd60d5a0062e26d0f9304e3c08572f4c8e997826df1144060bb8fa3cf2`  
-		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:05 GMT  
 		Size: 195.0 KB (194956 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17c28d1e49e6eab5c539c61aa85091e0556846853c10e2cf7be1cbe0d816e220`  
-		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:04 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10956,7 +10956,7 @@ $ docker pull erlang@sha256:1ad8d91c0c045b9f0514056945334c5f380a86c9b898dfb3d52e
 
 -	Layers:
 	-	`sha256:17193d0d3f29a293de7ae6278b4e05f28a13d335414754e714e480ea3e5cc77e`  
-		Last Modified: Fri, 16 Jan 2026 20:49:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:55 GMT  
 		Size: 23.1 MB (23076916 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:45d2267423555f2d54686e327204e9713c07df2e790c69ff2c8349c301f7145a`  
@@ -11011,7 +11011,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23614652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8ee435e05dd9c53ddee45b81a8f55939374cd926a0e00239c752bb0832a5f8b`  
-		Last Modified: Tue, 13 Jan 2026 21:22:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:23:11 GMT  
 		Size: 63.3 MB (63309962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7899b975f8cb9b504a05891ebc198b798b479eba5ee34dc9236aa6bdca9f8e2f`  
@@ -11023,11 +11023,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 245.4 MB (245356454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d06f852025a0f1c534b8ca529e46df960761ab869f04f107d51b134336911475`  
-		Last Modified: Fri, 16 Jan 2026 19:39:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 19:39:55 GMT  
 		Size: 195.0 KB (194986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bd0f287e5a0ca85a4dd90c60e92d7fac87fb0ce2722ffb1df802655fa2d6954`  
-		Last Modified: Fri, 16 Jan 2026 19:39:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 19:39:55 GMT  
 		Size: 821.8 KB (821828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11090,23 +11090,23 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd2769c4ec4b4d67e8059086401477839f8b9d5a5026dd27df50a3c7ce33b9db`  
-		Last Modified: Tue, 13 Jan 2026 03:35:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:35:30 GMT  
 		Size: 25.7 MB (25670703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ba5fcb80ea7d84a82ea96c11045a4f40d0943808d5c5334ea90de2f7ed44f4c4`  
-		Last Modified: Tue, 13 Jan 2026 06:38:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:38:28 GMT  
 		Size: 69.8 MB (69846016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f612632d2f5204ee80a61990e9e6e3cf8ffff970b6a69977cfe3c20c30f2f8f`  
-		Last Modified: Tue, 13 Jan 2026 08:53:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:53:21 GMT  
 		Size: 214.5 MB (214531303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7298c3cf05a78e6f72917551797f9c2002b82f76353d5a9d5553d88807957c45`  
-		Last Modified: Fri, 16 Jan 2026 18:47:29 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:47:48 GMT  
 		Size: 259.9 MB (259907731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b29106101a4c633b038f7168ebd452fdf73874d53d97d3909708ae7a23725524`  
@@ -11114,7 +11114,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.0 KB (194959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56c90c5ecd3f60650b0e5ae75ec9fad231e063d0e1041a9bbec363eab8da5b82`  
-		Last Modified: Fri, 16 Jan 2026 18:47:41 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:47:22 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11134,11 +11134,11 @@ $ docker pull erlang@sha256:2c5dc3430616f7e426b50dc9788ab6671d584a7bdca22d0f89c7
 
 -	Layers:
 	-	`sha256:5130af8e8089a1cd60362bce324131846895459e5b30ce812c1092bfcd783020`  
-		Last Modified: Fri, 16 Jan 2026 18:47:23 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:50:28 GMT  
 		Size: 23.1 MB (23064631 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e67660253b02a71ef846de4811609e139bb82c88fca8500469399b013ebbc5f0`  
-		Last Modified: Fri, 16 Jan 2026 18:47:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:50:29 GMT  
 		Size: 19.0 KB (19027 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11181,7 +11181,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8133db08df54d1100dff2f0259f057251959db22c09d939ae558af001aa8088c`  
@@ -11189,11 +11189,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 24.0 MB (24032491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fb4cc23aeea1b258f198103e8c2d450f82da1d5de8a3eb227ed2969f60d97c4`  
-		Last Modified: Tue, 13 Jan 2026 03:15:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:15:23 GMT  
 		Size: 63.5 MB (63501276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d603781e360b704a9e81ded2374882060ef0f7137f208852911befe0feddd405`  
-		Last Modified: Tue, 13 Jan 2026 05:16:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:18:26 GMT  
 		Size: 183.5 MB (183515687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ab7b409ed05c5872504e0f29ab2a1e05d2824f7d25612aae0a568c5e0c1b802`  
@@ -11205,7 +11205,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.0 KB (194963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b138c7b9555cab7eb686ef22df852cd4f5fcd51da8f097de0110651124ae46d`  
-		Last Modified: Fri, 16 Jan 2026 18:34:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:19 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11229,7 +11229,7 @@ $ docker pull erlang@sha256:7e54c8cf528795fe44f9534ab0bc84a233391e22fd1f22906e02
 		Size: 22.9 MB (22876698 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a0098b439b4ce80b41e4763655688da481e005a85b3526f2231a814279f0208c`  
-		Last Modified: Fri, 16 Jan 2026 20:51:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:19 GMT  
 		Size: 19.0 KB (18979 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11283,11 +11283,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
-		Last Modified: Sun, 07 Dec 2025 13:54:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3cc841b2a9dd2416234d69e31d067ff495300157c3136fe60ccb7deed3d0a172`  
-		Last Modified: Fri, 16 Jan 2026 18:31:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:24 GMT  
 		Size: 46.1 MB (46092684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11311,7 +11311,7 @@ $ docker pull erlang@sha256:775cf207bb16e154501837af335f1b3c089b9ffd5e050e520435
 		Size: 273.4 KB (273365 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cf679ac80a9df58ba77e702a826ef329a1194f0bb111c261d598649387dac0b3`  
-		Last Modified: Fri, 16 Jan 2026 18:31:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:23 GMT  
 		Size: 15.0 KB (15003 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11344,11 +11344,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:d9d7b8e1c6b20394731c1f62afa10545ea3d2388aca5051c7bae7732dbced5c9`  
-		Last Modified: Sun, 07 Dec 2025 14:02:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:48 GMT  
 		Size: 3.1 MB (3095971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:556eb7c2ab045bdd28724fd849a196f7153cad0fbe66ddcb1abd09fd9fc9c137`  
-		Last Modified: Fri, 16 Jan 2026 18:31:58 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:45 GMT  
 		Size: 43.8 MB (43753173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11372,7 +11372,7 @@ $ docker pull erlang@sha256:e3d5eac0fbb4e6be12247bcb14252bc023f0d22f5467d4fbc804
 		Size: 269.1 KB (269086 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f5272a3060a45fd5a3dafe161140fb9a818e529dc42c432c4cee50efdbfa07c2`  
-		Last Modified: Fri, 16 Jan 2026 20:47:44 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:44 GMT  
 		Size: 15.1 KB (15082 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11405,7 +11405,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
-		Last Modified: Wed, 08 Oct 2025 12:02:47 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:57 GMT  
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56b8b298b4b9b4e0753ccb55492efbd8ff585bfb217ec5446f6d10cfea536d52`  
@@ -11429,7 +11429,7 @@ $ docker pull erlang@sha256:56174de34939d9086077d6bf3da0dcc32d745442a35952b0bdd9
 
 -	Layers:
 	-	`sha256:92ba7c0c6e21e7e04657ee801737d54b1a904065819e946c10d94443ae5979fe`  
-		Last Modified: Fri, 16 Jan 2026 18:32:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:47 GMT  
 		Size: 274.2 KB (274158 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b836bbc9fbe13fe609ba04476ca8486919b3e08d256dfc7f648d5655135de3c6`  
@@ -11527,7 +11527,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:a78577222d4c08b54b062e8bf30834a3c610281d9b4780d34cac9394431f7f25`  
-		Last Modified: Sun, 07 Dec 2025 16:08:05 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3575563 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05cb2724169640c90e07c4cc5b9b738ff15ccbf9e3bfe3e2b15a788f182301b7`  
@@ -11555,7 +11555,7 @@ $ docker pull erlang@sha256:6d8af67bae6c37adbc82ade58317032d1c611f66aadcd922ccd0
 		Size: 267.1 KB (267133 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:500b5279e8179c6cb1c556dbad91ebb90b232699429390a04f3fabcba3f32d57`  
-		Last Modified: Fri, 16 Jan 2026 18:50:00 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:56 GMT  
 		Size: 15.0 KB (15047 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11616,7 +11616,7 @@ $ docker pull erlang@sha256:c550daf107a89a657dcbf15dfb22390042d758c815eb9f3fe2d4
 		Size: 267.1 KB (267099 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:10b0f0a91af2be8e89054bee8daf9b57052565ba885426ab9973e6445544c099`  
-		Last Modified: Fri, 16 Jan 2026 20:48:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:13 GMT  
 		Size: 15.0 KB (15003 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11696,11 +11696,11 @@ $ docker pull erlang@sha256:ddb79d0150080a40a3cac3292074fd0b404ad8300ab1db4e79c1
 
 -	Layers:
 	-	`sha256:ea26c9f8f8d8709ff72be96ac0846669242508849689d0acd8efc525db921749`  
-		Last Modified: Fri, 16 Jan 2026 18:32:21 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:36 GMT  
 		Size: 3.8 MB (3825994 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:715be55f44e89f397b69a3645e123d164dadfac848d0ed935f509a89920f1a31`  
-		Last Modified: Fri, 16 Jan 2026 18:32:21 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:37 GMT  
 		Size: 13.6 KB (13562 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11755,11 +11755,11 @@ $ docker pull erlang@sha256:54ff807502a385f3deecd38e9d7634ee61c63ad1d41f6f1934da
 
 -	Layers:
 	-	`sha256:0ae25c69c21983944f69fed27e3fe2e4afca9883d7241385960166cd8e9fd92e`  
-		Last Modified: Fri, 16 Jan 2026 20:47:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:31 GMT  
 		Size: 3.8 MB (3829802 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:735c0b5de01cc9083dfcb5be4cc2b492ef02e0b8d9ffab89185baafa1ab1dae2`  
-		Last Modified: Fri, 16 Jan 2026 20:47:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:31 GMT  
 		Size: 13.6 KB (13642 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11794,7 +11794,7 @@ CMD ["erl"]
 		Size: 44.2 MB (44198845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75ee8008e5c2527527e4e03b6922507efd26dd43819311aa56cbdfc7cd508a7f`  
-		Last Modified: Fri, 16 Jan 2026 18:32:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:01 GMT  
 		Size: 60.2 MB (60164311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11877,7 +11877,7 @@ $ docker pull erlang@sha256:bc1ee04cc910b8c3de3e44f5fd9b6853d2b8ef16455b03cfd9fb
 		Size: 3.8 MB (3826255 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:061de0a753d795e198836e6f6f79ebde29ddd4e059f58d20cc0bde66d733d5cf`  
-		Last Modified: Fri, 16 Jan 2026 18:31:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:58 GMT  
 		Size: 13.7 KB (13666 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11971,7 +11971,7 @@ CMD ["erl"]
 		Size: 48.8 MB (48763393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2897bcbed67bcc25e8da56b24dd23795fe133f0bf26f02bd53c947fd90a1f087`  
-		Last Modified: Fri, 16 Jan 2026 20:06:18 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:06:01 GMT  
 		Size: 61.1 MB (61142844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11991,7 +11991,7 @@ $ docker pull erlang@sha256:c1cbcb71c4196f648eadcc6edb126d3f994917d78b8160fcdbd5
 
 -	Layers:
 	-	`sha256:b6f98265fffa03ac077ac87b1496cdf36ea39ec166cde54252dd4da108fe43d5`  
-		Last Modified: Fri, 16 Jan 2026 20:48:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:05:54 GMT  
 		Size: 13.4 KB (13413 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12022,11 +12022,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10a0c94821550fe2a425890013331036981898b2741d5a7844cc5ba176df8e22`  
-		Last Modified: Fri, 16 Jan 2026 18:43:19 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:43:39 GMT  
 		Size: 62.3 MB (62260700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -12046,7 +12046,7 @@ $ docker pull erlang@sha256:e999ee6adcd5c56c12d34ff1ed0dbdc21978d8855bfc0e72205f
 
 -	Layers:
 	-	`sha256:29dbaf54fadfbb9d1668ada8644b3619df2c50a8cdcf709a52fd39767d964d7f`  
-		Last Modified: Fri, 16 Jan 2026 20:48:10 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:43:17 GMT  
 		Size: 3.8 MB (3830444 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a0446935bf03237422032eafc8d6b88f30e0e9f30262f09e0f7186780d365bab`  
@@ -12081,7 +12081,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:102f26288ed3103960a52429386f3fff8d0d596af033eb535436eaabb64f5dca`  
@@ -12105,7 +12105,7 @@ $ docker pull erlang@sha256:c3afcb47c7aa8be2079a814f332bc3a35d40aa64920fb16637b7
 
 -	Layers:
 	-	`sha256:372d53f14423dd16f098e6bd8b9f5c161699756a101e94a004de50cdf8fc68fb`  
-		Last Modified: Fri, 16 Jan 2026 18:34:08 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:15 GMT  
 		Size: 3.8 MB (3822822 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:59bc7d365e41ec360cbc41630f85fe64f83ce2c8f2aa67d0fa9b2fd715e88bf3`  
@@ -12181,7 +12181,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64538a062a61add8dc8b290fa69475e8902eb839c497a5f5dcd5a950422e493c`  
-		Last Modified: Tue, 13 Jan 2026 02:09:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:00 GMT  
 		Size: 24.0 MB (24036867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd1872fa12cc6b1145803f1a0679ca26cc65fa1b4e0ee389bfb30267594736b6`  
@@ -12193,7 +12193,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 211.5 MB (211485124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:88966c76537186492450f785edf885e804e09f77aacf638b1d8e82d7eea32edd`  
-		Last Modified: Fri, 16 Jan 2026 18:33:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:35 GMT  
 		Size: 265.4 MB (265428877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3baf861233e5afb19bd241d5436f951ca2fd55e737afdf8f5d4a973dfac7e898`  
@@ -12276,15 +12276,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 22.7 MB (22712635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1e4250b4026270105a4d93c8bfb01a0581bf77b1bda3c2e5b6bd1ebd71b621f`  
-		Last Modified: Tue, 13 Jan 2026 04:07:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:07:47 GMT  
 		Size: 62.0 MB (62009069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5649fb9ac394a046636ec02ea6ef4e84c176390f43aa6addb0a740623148047a`  
-		Last Modified: Tue, 13 Jan 2026 05:14:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:35:36 GMT  
 		Size: 184.7 MB (184729771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d25a8f27e9be44e4df3f54891151d03e6fbac99177904f4b4519a328e02e7982`  
-		Last Modified: Fri, 16 Jan 2026 18:37:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:36:21 GMT  
 		Size: 239.6 MB (239635696 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:110514bb4c0d40ef99927cd5b457fdf771fe7939b306c4e995e99af06aff9a95`  
@@ -12312,7 +12312,7 @@ $ docker pull erlang@sha256:9b1e449646fec5738aab928d849a2ab817631cbf9db113165fa0
 
 -	Layers:
 	-	`sha256:9fd9e45d0a451220111e9f97c78c3847e6bc04687995837d86a98d3ae534fa87`  
-		Last Modified: Fri, 16 Jan 2026 20:47:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:36:17 GMT  
 		Size: 22.9 MB (22905299 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1879ac3690c738912bfe570b2d67eab482c7a6fcef5234fb046afc803675db33`  
@@ -12367,23 +12367,23 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 21.9 MB (21941488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a97f9f395cd1e9e02761196527b4253d5246be969781795c278996437891e5cf`  
-		Last Modified: Tue, 13 Jan 2026 04:25:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:25:03 GMT  
 		Size: 59.7 MB (59652006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9aa484529d34ddc165f6ac5eae25e0d66e0722c0b9905c2657f89dc02daf7f45`  
-		Last Modified: Tue, 13 Jan 2026 06:20:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:13:53 GMT  
 		Size: 175.4 MB (175385398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca3c1bbc1298456966198eb2e3d0d0feaf36b7fd97ba7e7d071767edb1b4952c`  
-		Last Modified: Fri, 16 Jan 2026 18:34:17 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:58 GMT  
 		Size: 235.9 MB (235942714 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fec67bd50dc5de949dca0f17b694e4c1f97355108f2e04204acad490839236fe`  
-		Last Modified: Fri, 16 Jan 2026 18:33:53 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:04 GMT  
 		Size: 195.0 KB (194961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17c28d1e49e6eab5c539c61aa85091e0556846853c10e2cf7be1cbe0d816e220`  
-		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:04 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -12403,11 +12403,11 @@ $ docker pull erlang@sha256:a8541d5025886ccb16f53a4bfc7cb0e1fbb5cda9b79fabb5899f
 
 -	Layers:
 	-	`sha256:997b28cc9425e8dadcd57a6885db0abbf6fee3251f23e8a258f538ecb49aef4f`  
-		Last Modified: Fri, 16 Jan 2026 20:48:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
 		Size: 22.9 MB (22922166 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7cd65ccf8cde218dee498146a7be74a312aa12c385cb8c710b545e43a10a68ac`  
-		Last Modified: Fri, 16 Jan 2026 20:48:25 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:53 GMT  
 		Size: 19.1 KB (19085 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12458,19 +12458,19 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23604814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:687ad46596f06c934001fa6d7bea3d1508b0bb616cffb71004efd5bada56884f`  
-		Last Modified: Tue, 13 Jan 2026 03:57:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:05 GMT  
 		Size: 64.5 MB (64479462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f018151ab3f36e399ef489b536713197af8faa14dce771cb623bd750150fc315`  
-		Last Modified: Tue, 13 Jan 2026 04:49:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
 		Size: 203.0 MB (203013516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f187bbd5b7c5e4e039c8640f62fc55b86af50de0a53da18800b6d1fd58107d76`  
-		Last Modified: Fri, 16 Jan 2026 18:33:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:50 GMT  
 		Size: 258.4 MB (258395213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:80f14fdcfe67bfe4e5260cd2661fb623f591e4e106ff535b9bbd05fdebd4b505`  
-		Last Modified: Fri, 16 Jan 2026 18:34:01 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:49 GMT  
 		Size: 195.0 KB (194965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e9f15285a2c43a9e12c80ba3b64a8329a5e9342cc7c7c3a098686ddcb33bc60`  
@@ -12494,11 +12494,11 @@ $ docker pull erlang@sha256:acddfe76b5b37d83e407ff10bba36151b5e939c77adaea46670f
 
 -	Layers:
 	-	`sha256:3f57c7425d5848b466572a0ca5bb7a4a57532b641eb0a7b2e5983f04c497e899`  
-		Last Modified: Fri, 16 Jan 2026 20:49:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:50 GMT  
 		Size: 23.1 MB (23148669 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bc03f87e035ca285e5f964c4ab484f720c4869470ee1d682131e3712db92fc8f`  
-		Last Modified: Fri, 16 Jan 2026 20:49:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:49 GMT  
 		Size: 19.1 KB (19113 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12553,19 +12553,19 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 66.2 MB (66234261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4699afcbbc0f9f3dee99cc5eb7db287141d60c114f41f5777641c3e92f23dc9`  
-		Last Modified: Tue, 13 Jan 2026 03:53:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:58:39 GMT  
 		Size: 210.4 MB (210412920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a46209e6c91c8479e1a5544d8b12fbe94d030c8ff0603b5ecc50ac739212dd0`  
-		Last Modified: Fri, 16 Jan 2026 18:34:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:59 GMT  
 		Size: 256.7 MB (256659827 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:054ba3cd60d5a0062e26d0f9304e3c08572f4c8e997826df1144060bb8fa3cf2`  
-		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:05 GMT  
 		Size: 195.0 KB (194956 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17c28d1e49e6eab5c539c61aa85091e0556846853c10e2cf7be1cbe0d816e220`  
-		Last Modified: Fri, 16 Jan 2026 18:33:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:04 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -12585,7 +12585,7 @@ $ docker pull erlang@sha256:1ad8d91c0c045b9f0514056945334c5f380a86c9b898dfb3d52e
 
 -	Layers:
 	-	`sha256:17193d0d3f29a293de7ae6278b4e05f28a13d335414754e714e480ea3e5cc77e`  
-		Last Modified: Fri, 16 Jan 2026 20:49:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:55 GMT  
 		Size: 23.1 MB (23076916 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:45d2267423555f2d54686e327204e9713c07df2e790c69ff2c8349c301f7145a`  
@@ -12640,7 +12640,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23614652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8ee435e05dd9c53ddee45b81a8f55939374cd926a0e00239c752bb0832a5f8b`  
-		Last Modified: Tue, 13 Jan 2026 21:22:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:23:11 GMT  
 		Size: 63.3 MB (63309962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7899b975f8cb9b504a05891ebc198b798b479eba5ee34dc9236aa6bdca9f8e2f`  
@@ -12652,11 +12652,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 245.4 MB (245356454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d06f852025a0f1c534b8ca529e46df960761ab869f04f107d51b134336911475`  
-		Last Modified: Fri, 16 Jan 2026 19:39:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 19:39:55 GMT  
 		Size: 195.0 KB (194986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bd0f287e5a0ca85a4dd90c60e92d7fac87fb0ce2722ffb1df802655fa2d6954`  
-		Last Modified: Fri, 16 Jan 2026 19:39:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 19:39:55 GMT  
 		Size: 821.8 KB (821828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -12719,23 +12719,23 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd2769c4ec4b4d67e8059086401477839f8b9d5a5026dd27df50a3c7ce33b9db`  
-		Last Modified: Tue, 13 Jan 2026 03:35:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:35:30 GMT  
 		Size: 25.7 MB (25670703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ba5fcb80ea7d84a82ea96c11045a4f40d0943808d5c5334ea90de2f7ed44f4c4`  
-		Last Modified: Tue, 13 Jan 2026 06:38:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:38:28 GMT  
 		Size: 69.8 MB (69846016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f612632d2f5204ee80a61990e9e6e3cf8ffff970b6a69977cfe3c20c30f2f8f`  
-		Last Modified: Tue, 13 Jan 2026 08:53:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:53:21 GMT  
 		Size: 214.5 MB (214531303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7298c3cf05a78e6f72917551797f9c2002b82f76353d5a9d5553d88807957c45`  
-		Last Modified: Fri, 16 Jan 2026 18:47:29 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:47:48 GMT  
 		Size: 259.9 MB (259907731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b29106101a4c633b038f7168ebd452fdf73874d53d97d3909708ae7a23725524`  
@@ -12743,7 +12743,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.0 KB (194959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56c90c5ecd3f60650b0e5ae75ec9fad231e063d0e1041a9bbec363eab8da5b82`  
-		Last Modified: Fri, 16 Jan 2026 18:47:41 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:47:22 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -12763,11 +12763,11 @@ $ docker pull erlang@sha256:2c5dc3430616f7e426b50dc9788ab6671d584a7bdca22d0f89c7
 
 -	Layers:
 	-	`sha256:5130af8e8089a1cd60362bce324131846895459e5b30ce812c1092bfcd783020`  
-		Last Modified: Fri, 16 Jan 2026 18:47:23 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:50:28 GMT  
 		Size: 23.1 MB (23064631 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e67660253b02a71ef846de4811609e139bb82c88fca8500469399b013ebbc5f0`  
-		Last Modified: Fri, 16 Jan 2026 18:47:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:50:29 GMT  
 		Size: 19.0 KB (19027 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12810,7 +12810,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8133db08df54d1100dff2f0259f057251959db22c09d939ae558af001aa8088c`  
@@ -12818,11 +12818,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 24.0 MB (24032491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fb4cc23aeea1b258f198103e8c2d450f82da1d5de8a3eb227ed2969f60d97c4`  
-		Last Modified: Tue, 13 Jan 2026 03:15:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:15:23 GMT  
 		Size: 63.5 MB (63501276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d603781e360b704a9e81ded2374882060ef0f7137f208852911befe0feddd405`  
-		Last Modified: Tue, 13 Jan 2026 05:16:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:18:26 GMT  
 		Size: 183.5 MB (183515687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ab7b409ed05c5872504e0f29ab2a1e05d2824f7d25612aae0a568c5e0c1b802`  
@@ -12834,7 +12834,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.0 KB (194963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b138c7b9555cab7eb686ef22df852cd4f5fcd51da8f097de0110651124ae46d`  
-		Last Modified: Fri, 16 Jan 2026 18:34:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:19 GMT  
 		Size: 821.8 KB (821831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -12858,7 +12858,7 @@ $ docker pull erlang@sha256:7e54c8cf528795fe44f9534ab0bc84a233391e22fd1f22906e02
 		Size: 22.9 MB (22876698 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a0098b439b4ce80b41e4763655688da481e005a85b3526f2231a814279f0208c`  
-		Last Modified: Fri, 16 Jan 2026 20:51:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:19 GMT  
 		Size: 19.0 KB (18979 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12912,11 +12912,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
-		Last Modified: Sun, 07 Dec 2025 13:54:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3cc841b2a9dd2416234d69e31d067ff495300157c3136fe60ccb7deed3d0a172`  
-		Last Modified: Fri, 16 Jan 2026 18:31:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:24 GMT  
 		Size: 46.1 MB (46092684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -12940,7 +12940,7 @@ $ docker pull erlang@sha256:775cf207bb16e154501837af335f1b3c089b9ffd5e050e520435
 		Size: 273.4 KB (273365 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cf679ac80a9df58ba77e702a826ef329a1194f0bb111c261d598649387dac0b3`  
-		Last Modified: Fri, 16 Jan 2026 18:31:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:23 GMT  
 		Size: 15.0 KB (15003 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12973,11 +12973,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:d9d7b8e1c6b20394731c1f62afa10545ea3d2388aca5051c7bae7732dbced5c9`  
-		Last Modified: Sun, 07 Dec 2025 14:02:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:48 GMT  
 		Size: 3.1 MB (3095971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:556eb7c2ab045bdd28724fd849a196f7153cad0fbe66ddcb1abd09fd9fc9c137`  
-		Last Modified: Fri, 16 Jan 2026 18:31:58 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:45 GMT  
 		Size: 43.8 MB (43753173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13001,7 +13001,7 @@ $ docker pull erlang@sha256:e3d5eac0fbb4e6be12247bcb14252bc023f0d22f5467d4fbc804
 		Size: 269.1 KB (269086 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f5272a3060a45fd5a3dafe161140fb9a818e529dc42c432c4cee50efdbfa07c2`  
-		Last Modified: Fri, 16 Jan 2026 20:47:44 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:44 GMT  
 		Size: 15.1 KB (15082 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13034,7 +13034,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
-		Last Modified: Wed, 08 Oct 2025 12:02:47 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:57 GMT  
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56b8b298b4b9b4e0753ccb55492efbd8ff585bfb217ec5446f6d10cfea536d52`  
@@ -13058,7 +13058,7 @@ $ docker pull erlang@sha256:56174de34939d9086077d6bf3da0dcc32d745442a35952b0bdd9
 
 -	Layers:
 	-	`sha256:92ba7c0c6e21e7e04657ee801737d54b1a904065819e946c10d94443ae5979fe`  
-		Last Modified: Fri, 16 Jan 2026 18:32:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:47 GMT  
 		Size: 274.2 KB (274158 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b836bbc9fbe13fe609ba04476ca8486919b3e08d256dfc7f648d5655135de3c6`  
@@ -13156,7 +13156,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:a78577222d4c08b54b062e8bf30834a3c610281d9b4780d34cac9394431f7f25`  
-		Last Modified: Sun, 07 Dec 2025 16:08:05 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3575563 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05cb2724169640c90e07c4cc5b9b738ff15ccbf9e3bfe3e2b15a788f182301b7`  
@@ -13184,7 +13184,7 @@ $ docker pull erlang@sha256:6d8af67bae6c37adbc82ade58317032d1c611f66aadcd922ccd0
 		Size: 267.1 KB (267133 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:500b5279e8179c6cb1c556dbad91ebb90b232699429390a04f3fabcba3f32d57`  
-		Last Modified: Fri, 16 Jan 2026 18:50:00 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:56 GMT  
 		Size: 15.0 KB (15047 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13245,7 +13245,7 @@ $ docker pull erlang@sha256:c550daf107a89a657dcbf15dfb22390042d758c815eb9f3fe2d4
 		Size: 267.1 KB (267099 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:10b0f0a91af2be8e89054bee8daf9b57052565ba885426ab9973e6445544c099`  
-		Last Modified: Fri, 16 Jan 2026 20:48:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:13 GMT  
 		Size: 15.0 KB (15003 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13325,11 +13325,11 @@ $ docker pull erlang@sha256:ddb79d0150080a40a3cac3292074fd0b404ad8300ab1db4e79c1
 
 -	Layers:
 	-	`sha256:ea26c9f8f8d8709ff72be96ac0846669242508849689d0acd8efc525db921749`  
-		Last Modified: Fri, 16 Jan 2026 18:32:21 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:36 GMT  
 		Size: 3.8 MB (3825994 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:715be55f44e89f397b69a3645e123d164dadfac848d0ed935f509a89920f1a31`  
-		Last Modified: Fri, 16 Jan 2026 18:32:21 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:37 GMT  
 		Size: 13.6 KB (13562 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13384,11 +13384,11 @@ $ docker pull erlang@sha256:54ff807502a385f3deecd38e9d7634ee61c63ad1d41f6f1934da
 
 -	Layers:
 	-	`sha256:0ae25c69c21983944f69fed27e3fe2e4afca9883d7241385960166cd8e9fd92e`  
-		Last Modified: Fri, 16 Jan 2026 20:47:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:31 GMT  
 		Size: 3.8 MB (3829802 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:735c0b5de01cc9083dfcb5be4cc2b492ef02e0b8d9ffab89185baafa1ab1dae2`  
-		Last Modified: Fri, 16 Jan 2026 20:47:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:31 GMT  
 		Size: 13.6 KB (13642 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13423,7 +13423,7 @@ CMD ["erl"]
 		Size: 44.2 MB (44198845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75ee8008e5c2527527e4e03b6922507efd26dd43819311aa56cbdfc7cd508a7f`  
-		Last Modified: Fri, 16 Jan 2026 18:32:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:33:01 GMT  
 		Size: 60.2 MB (60164311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13506,7 +13506,7 @@ $ docker pull erlang@sha256:bc1ee04cc910b8c3de3e44f5fd9b6853d2b8ef16455b03cfd9fb
 		Size: 3.8 MB (3826255 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:061de0a753d795e198836e6f6f79ebde29ddd4e059f58d20cc0bde66d733d5cf`  
-		Last Modified: Fri, 16 Jan 2026 18:31:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:47:58 GMT  
 		Size: 13.7 KB (13666 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13600,7 +13600,7 @@ CMD ["erl"]
 		Size: 48.8 MB (48763393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2897bcbed67bcc25e8da56b24dd23795fe133f0bf26f02bd53c947fd90a1f087`  
-		Last Modified: Fri, 16 Jan 2026 20:06:18 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:06:01 GMT  
 		Size: 61.1 MB (61142844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13620,7 +13620,7 @@ $ docker pull erlang@sha256:c1cbcb71c4196f648eadcc6edb126d3f994917d78b8160fcdbd5
 
 -	Layers:
 	-	`sha256:b6f98265fffa03ac077ac87b1496cdf36ea39ec166cde54252dd4da108fe43d5`  
-		Last Modified: Fri, 16 Jan 2026 20:48:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:05:54 GMT  
 		Size: 13.4 KB (13413 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13651,11 +13651,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10a0c94821550fe2a425890013331036981898b2741d5a7844cc5ba176df8e22`  
-		Last Modified: Fri, 16 Jan 2026 18:43:19 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:43:39 GMT  
 		Size: 62.3 MB (62260700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13675,7 +13675,7 @@ $ docker pull erlang@sha256:e999ee6adcd5c56c12d34ff1ed0dbdc21978d8855bfc0e72205f
 
 -	Layers:
 	-	`sha256:29dbaf54fadfbb9d1668ada8644b3619df2c50a8cdcf709a52fd39767d964d7f`  
-		Last Modified: Fri, 16 Jan 2026 20:48:10 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:43:17 GMT  
 		Size: 3.8 MB (3830444 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a0446935bf03237422032eafc8d6b88f30e0e9f30262f09e0f7186780d365bab`  
@@ -13710,7 +13710,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:102f26288ed3103960a52429386f3fff8d0d596af033eb535436eaabb64f5dca`  
@@ -13734,7 +13734,7 @@ $ docker pull erlang@sha256:c3afcb47c7aa8be2079a814f332bc3a35d40aa64920fb16637b7
 
 -	Layers:
 	-	`sha256:372d53f14423dd16f098e6bd8b9f5c161699756a101e94a004de50cdf8fc68fb`  
-		Last Modified: Fri, 16 Jan 2026 18:34:08 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:15 GMT  
 		Size: 3.8 MB (3822822 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:59bc7d365e41ec360cbc41630f85fe64f83ce2c8f2aa67d0fa9b2fd715e88bf3`  
@@ -13810,7 +13810,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64538a062a61add8dc8b290fa69475e8902eb839c497a5f5dcd5a950422e493c`  
-		Last Modified: Tue, 13 Jan 2026 02:09:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:00 GMT  
 		Size: 24.0 MB (24036867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd1872fa12cc6b1145803f1a0679ca26cc65fa1b4e0ee389bfb30267594736b6`  
@@ -13826,11 +13826,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 269.4 MB (269402898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8ce1777c3c0c3a8248bfb06c910bd20056520c4bb809de891de86981f738f847`  
-		Last Modified: Fri, 16 Jan 2026 18:28:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:42:58 GMT  
 		Size: 195.7 KB (195678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:153416fcf95da3b055e3b91aaa6a354499b64e3a84e8047d7c3549686099156f`  
-		Last Modified: Fri, 16 Jan 2026 18:28:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:29:16 GMT  
 		Size: 824.7 KB (824701 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13854,7 +13854,7 @@ $ docker pull erlang@sha256:de4ba4e1d27c669dc995dad4a2dc036caa8837a69789a89d9f54
 		Size: 23.8 MB (23771030 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5fab4de41e3ead9a0e50b640785d92535c76374e7308d26ffd4d96b0b2328888`  
-		Last Modified: Fri, 16 Jan 2026 20:48:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:52 GMT  
 		Size: 18.9 KB (18948 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13905,11 +13905,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 22.7 MB (22712635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1e4250b4026270105a4d93c8bfb01a0581bf77b1bda3c2e5b6bd1ebd71b621f`  
-		Last Modified: Tue, 13 Jan 2026 04:07:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:07:47 GMT  
 		Size: 62.0 MB (62009069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5649fb9ac394a046636ec02ea6ef4e84c176390f43aa6addb0a740623148047a`  
-		Last Modified: Tue, 13 Jan 2026 05:14:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:35:36 GMT  
 		Size: 184.7 MB (184729771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb6908a00efe7ecd8a77e51074dda68534a54dd2f7aae857ff803c8e2d5f998b`  
@@ -13921,7 +13921,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.7 KB (195681 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2606ee79405329082d5293cb8163dde17376ead7bd641f42aa183819313717a`  
-		Last Modified: Fri, 16 Jan 2026 18:31:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:20 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13945,7 +13945,7 @@ $ docker pull erlang@sha256:83589f4c1a75040bc00da31a39a019608f9cce3864ff5b444545
 		Size: 23.6 MB (23567117 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e68efcbca6aa00a7a540a84542816d72f9e60ce51fcbfbb86aa09ebd3d36f128`  
-		Last Modified: Fri, 16 Jan 2026 18:31:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:19 GMT  
 		Size: 19.1 KB (19054 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13996,11 +13996,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 21.9 MB (21941488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a97f9f395cd1e9e02761196527b4253d5246be969781795c278996437891e5cf`  
-		Last Modified: Tue, 13 Jan 2026 04:25:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:25:03 GMT  
 		Size: 59.7 MB (59652006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9aa484529d34ddc165f6ac5eae25e0d66e0722c0b9905c2657f89dc02daf7f45`  
-		Last Modified: Tue, 13 Jan 2026 06:20:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:13:53 GMT  
 		Size: 175.4 MB (175385398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e6e949b0fc82e6197d1f97adee977b3e5814178fe72557e0a9747cc918cbf64`  
@@ -14008,7 +14008,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 239.2 MB (239178340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5fe3e185a1e27d41776e0bf8b2b870ccb2396e78fb9f1ea7cf4abb8babe21345`  
-		Last Modified: Fri, 16 Jan 2026 18:29:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:29:49 GMT  
 		Size: 195.7 KB (195662 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc63ffb4e118ab72a0a947dba1de585275593e841c6f5e065488a660a349fc54`  
@@ -14087,11 +14087,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23604814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:687ad46596f06c934001fa6d7bea3d1508b0bb616cffb71004efd5bada56884f`  
-		Last Modified: Tue, 13 Jan 2026 03:57:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:05 GMT  
 		Size: 64.5 MB (64479462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f018151ab3f36e399ef489b536713197af8faa14dce771cb623bd750150fc315`  
-		Last Modified: Tue, 13 Jan 2026 04:49:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
 		Size: 203.0 MB (203013516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bdb4fb8a6693eeb5773a81eaafcdbd7153dcdc6ccbfd4d040e9f35fad1a9fa3`  
@@ -14103,7 +14103,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.7 KB (195678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2606ee79405329082d5293cb8163dde17376ead7bd641f42aa183819313717a`  
-		Last Modified: Fri, 16 Jan 2026 18:31:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:20 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14182,7 +14182,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 66.2 MB (66234261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4699afcbbc0f9f3dee99cc5eb7db287141d60c114f41f5777641c3e92f23dc9`  
-		Last Modified: Tue, 13 Jan 2026 03:53:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:58:39 GMT  
 		Size: 210.4 MB (210412920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07ff7cab3f75c693a71a728beead80162e0a268fd79b461898a6796fc8b0560c`  
@@ -14190,7 +14190,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 260.1 MB (260079959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b96b3d6b10e35e1cc5a7da42ba325182885651904b37798a9c07f0182da65cc`  
-		Last Modified: Fri, 16 Jan 2026 18:30:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:56 GMT  
 		Size: 195.7 KB (195693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:483b7a863dca229a889dd99b895049bd2aadae3094b396ec8a4609e817b6fa8e`  
@@ -14269,7 +14269,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23614652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8ee435e05dd9c53ddee45b81a8f55939374cd926a0e00239c752bb0832a5f8b`  
-		Last Modified: Tue, 13 Jan 2026 21:22:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:23:11 GMT  
 		Size: 63.3 MB (63309962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7899b975f8cb9b504a05891ebc198b798b479eba5ee34dc9236aa6bdca9f8e2f`  
@@ -14281,11 +14281,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 248.8 MB (248773494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b03c16940331e7bb6f44e28e6ec122ee4b766b99792a6b48c5bf79290753abe4`  
-		Last Modified: Fri, 16 Jan 2026 18:43:56 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:44:31 GMT  
 		Size: 195.7 KB (195700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ddc84c6a716c8599ead3d40576c5bb035038a66d39b70eb366abac61baa32e54`  
-		Last Modified: Fri, 16 Jan 2026 18:44:31 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:43:56 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14348,31 +14348,31 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd2769c4ec4b4d67e8059086401477839f8b9d5a5026dd27df50a3c7ce33b9db`  
-		Last Modified: Tue, 13 Jan 2026 03:35:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:35:30 GMT  
 		Size: 25.7 MB (25670703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ba5fcb80ea7d84a82ea96c11045a4f40d0943808d5c5334ea90de2f7ed44f4c4`  
-		Last Modified: Tue, 13 Jan 2026 06:38:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:38:28 GMT  
 		Size: 69.8 MB (69846016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f612632d2f5204ee80a61990e9e6e3cf8ffff970b6a69977cfe3c20c30f2f8f`  
-		Last Modified: Tue, 13 Jan 2026 08:53:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:53:21 GMT  
 		Size: 214.5 MB (214531303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5bd1f606a87df3534e0a1cdc4856bb1e46f8c5da477d74f9f62e89b329a34ef`  
-		Last Modified: Fri, 16 Jan 2026 18:34:46 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:35:00 GMT  
 		Size: 263.4 MB (263368790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aac98c181a3208ffc4db9872681a0f3b8bfc8f495f1dcd095c809065a72e1964`  
-		Last Modified: Fri, 16 Jan 2026 18:34:39 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:53 GMT  
 		Size: 195.7 KB (195673 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5765a0bab5b809ac15125c138f53f7a2f5ced50b7338d78ef57ba532bf77f06`  
-		Last Modified: Fri, 16 Jan 2026 18:34:39 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:54 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14439,7 +14439,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8133db08df54d1100dff2f0259f057251959db22c09d939ae558af001aa8088c`  
@@ -14447,11 +14447,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 24.0 MB (24032491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fb4cc23aeea1b258f198103e8c2d450f82da1d5de8a3eb227ed2969f60d97c4`  
-		Last Modified: Tue, 13 Jan 2026 03:15:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:15:23 GMT  
 		Size: 63.5 MB (63501276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d603781e360b704a9e81ded2374882060ef0f7137f208852911befe0feddd405`  
-		Last Modified: Tue, 13 Jan 2026 05:16:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:18:26 GMT  
 		Size: 183.5 MB (183515687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:619249caf7cc37e7e72fb8ff8fd557a68b7d78d0719d13a5b42eb01c255702db`  
@@ -14463,7 +14463,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.7 KB (195691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:555570251acc3de19df014a0f4fd707d013323d3f6efdaa8caacef9f6e8e98f0`  
-		Last Modified: Fri, 16 Jan 2026 18:30:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:29:44 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14545,7 +14545,7 @@ CMD ["erl"]
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d95341a2ff0e99b16d75dc96f2e240d470af6f563a2cb986051c0bb37a6846a1`  
-		Last Modified: Fri, 16 Jan 2026 18:28:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:27 GMT  
 		Size: 49.8 MB (49840975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14569,7 +14569,7 @@ $ docker pull erlang@sha256:40dca2e1bca2c8dea44c177e3ef70a58be8fca6e06bae9cb6efd
 		Size: 278.7 KB (278729 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f7b17d7d7d418a40da60ede3e257301ae2dbd15763d4526355df0e5d9ae5eef0`  
-		Last Modified: Fri, 16 Jan 2026 18:28:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:45 GMT  
 		Size: 15.1 KB (15077 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14602,7 +14602,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c1cc352f1ce5dbf34997f7beff06df39a9a6bef9defd536110ddc9d3a582e696`  
@@ -14626,7 +14626,7 @@ $ docker pull erlang@sha256:9bacb72dc02c097a837f3e953e8e1f68f9ee52e37b50d0f9a9a4
 
 -	Layers:
 	-	`sha256:6dd1c91587e2a2cd63e472296a01390d2d8d06cbe234769b30f78245cd1f5338`  
-		Last Modified: Fri, 16 Jan 2026 18:28:37 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:49 GMT  
 		Size: 274.5 KB (274521 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b97f0b9ee32396a2b9eeba682c5841f3fb6fdbe66e602ed0e9cf1f1ab0edd0d2`  
@@ -14663,7 +14663,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:184c4d363a4d0db6ad942dd5fd7ab4d961598380a3270f15e2b8ab7550ce2ad2`  
@@ -14724,11 +14724,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:13c6e95c06ae06f126f5e940d6d88c2fec0da715c80878ad225c76ad48d0a31e`  
-		Last Modified: Sun, 07 Dec 2025 14:06:47 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 3.6 MB (3618931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:16b78d84b86ddb2c16f9c1a700e7bead9342ac6dd3beaaaf1b7621c5ab50992a`  
-		Last Modified: Fri, 16 Jan 2026 18:29:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:36 GMT  
 		Size: 48.3 MB (48295005 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14748,7 +14748,7 @@ $ docker pull erlang@sha256:e935c6056e27374f74d16af6b34662f37c7275659a509653ebe5
 
 -	Layers:
 	-	`sha256:1364ea21a5247f5db8c6225e51f3702aae48ae56c132429d0190f02b080f15c9`  
-		Last Modified: Fri, 16 Jan 2026 18:28:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:57 GMT  
 		Size: 273.7 KB (273724 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fcfaac6ee17682ccc0c5ac1284af49abbb4b09685de4d051d096f98239f3d166`  
@@ -14809,11 +14809,11 @@ $ docker pull erlang@sha256:2c013618595d0c97205dff71c54af49b12f21e1ab14557c7e6e8
 
 -	Layers:
 	-	`sha256:654b2d59f5600c9692e16e09a04dd0013ccc48e02e915729d953aceb3870022c`  
-		Last Modified: Fri, 16 Jan 2026 20:49:01 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:09 GMT  
 		Size: 272.6 KB (272568 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:afe65fdd21a2bb5166c92520740528e4c1f9d4a71a0bce1346f4afdc2709c055`  
-		Last Modified: Fri, 16 Jan 2026 20:49:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:09 GMT  
 		Size: 15.1 KB (15121 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14874,7 +14874,7 @@ $ docker pull erlang@sha256:3002aabbe642da07cc739c76d2e80a472207c3ba91b84f547f13
 		Size: 272.5 KB (272534 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f44350459ea0b30f72d9fd9830dcf5f1d009aa6f59f257afeb41841991e34a4a`  
-		Last Modified: Fri, 16 Jan 2026 20:49:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:27:41 GMT  
 		Size: 15.1 KB (15076 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14934,7 +14934,7 @@ CMD ["erl"]
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a3bf33f2f08d8c4d1e2acf2581338ee2f04a57ac5de183e568eb51e6f2c7b344`  
-		Last Modified: Fri, 16 Jan 2026 18:31:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:45 GMT  
 		Size: 76.0 MB (76014120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14958,7 +14958,7 @@ $ docker pull erlang@sha256:c17c67a8392461199c343fd5d64dc57cff688f8b094cd25ac19e
 		Size: 3.8 MB (3824753 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:443152e5203ad7ebcc75d426f3a000809808443b289a1b3b04f66cca7ddd09cc`  
-		Last Modified: Fri, 16 Jan 2026 18:30:43 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:07 GMT  
 		Size: 13.6 KB (13636 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14993,7 +14993,7 @@ CMD ["erl"]
 		Size: 46.0 MB (46016731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:98fd648ee23ebab4e96bf2b536239bde0a5e6831a164cf3bcf5fad48c8005572`  
-		Last Modified: Fri, 16 Jan 2026 18:30:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:01 GMT  
 		Size: 65.5 MB (65525736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15013,7 +15013,7 @@ $ docker pull erlang@sha256:a31e7ac6c9b06f20e0f62acca6bf0ef26b97ebdf0387c407cd04
 
 -	Layers:
 	-	`sha256:874f34358c417889b471b7eff2b20c414bdafd8460eded718dcaf3a7b1179570`  
-		Last Modified: Fri, 16 Jan 2026 20:49:11 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:45 GMT  
 		Size: 3.8 MB (3828561 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3b8fb4c6563345dfb47c7ae89de8266ae7ea8c50d7e93b0765731f8af130daae`  
@@ -15076,7 +15076,7 @@ $ docker pull erlang@sha256:c16c8e9fe831957a4ae9e0f6db2c260f5576c917426d08f67b35
 		Size: 3.8 MB (3826986 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:79a68ea6b863e740e5c8177bee27918241d4dd97151162235d1da80ce7b30ce7`  
-		Last Modified: Fri, 16 Jan 2026 18:28:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:19 GMT  
 		Size: 13.7 KB (13716 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15111,7 +15111,7 @@ CMD ["erl"]
 		Size: 48.4 MB (48366072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a117d99694fe293f35f9859cbc8fb87258e5b213c23c26784828d505f94c3e9`  
-		Last Modified: Fri, 16 Jan 2026 18:28:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:54 GMT  
 		Size: 73.8 MB (73760186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15131,7 +15131,7 @@ $ docker pull erlang@sha256:4e5ce88680fff116e476c794feb6ebf290a0f02584e7f6394a30
 
 -	Layers:
 	-	`sha256:8aa8b933c3c6a045f18e23d5666ee6d9704dd4ed5a3646752dac1e89bb5cf761`  
-		Last Modified: Fri, 16 Jan 2026 18:28:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:23 GMT  
 		Size: 3.8 MB (3825014 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cea864e003f65f264e51ff85d02e3e91bd5aa904c24c2bd657480458030d861b`  
@@ -15280,11 +15280,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a2cbc3baa4e9b4a1e362f93de0220b749a6dcc28d61aed63d51b25cdceb0950`  
-		Last Modified: Fri, 16 Jan 2026 18:31:28 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:07 GMT  
 		Size: 67.2 MB (67248504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15304,7 +15304,7 @@ $ docker pull erlang@sha256:b642c0e0d082e1bfa321f636edd9c41f621b761b95a0a169fa23
 
 -	Layers:
 	-	`sha256:980ceb459f7a1e7022662dce9aca207280e83f10ef188f522f42e6ed0dd80a51`  
-		Last Modified: Fri, 16 Jan 2026 18:31:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:51:04 GMT  
 		Size: 3.8 MB (3829203 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c555b45439000cc21e9ad14e254d86ccfaaa78be9b51a64ec7516da7e3a8f9fc`  
@@ -15339,11 +15339,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66002539d572ac5ed54291d49c84bb002b3ce8673135fe4a365b6e48e4cde1dc`  
-		Last Modified: Fri, 16 Jan 2026 18:28:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:27:48 GMT  
 		Size: 65.9 MB (65912794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15363,11 +15363,11 @@ $ docker pull erlang@sha256:c9c5173f52d1a7a8897710fd9904cf533aadeeb38e3e2ff04830
 
 -	Layers:
 	-	`sha256:2caa9afb346d7f536337935768d1a47ceceb9e56d0241cf3b0948f002230c49a`  
-		Last Modified: Fri, 16 Jan 2026 20:51:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:27:47 GMT  
 		Size: 3.8 MB (3821581 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dd181e0339bc2ae24eef5ee4cc924c27b9b970d8cad1b13f8ca4cd136a651047`  
-		Last Modified: Fri, 16 Jan 2026 18:27:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:51:14 GMT  
 		Size: 13.6 KB (13634 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15439,7 +15439,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64538a062a61add8dc8b290fa69475e8902eb839c497a5f5dcd5a950422e493c`  
-		Last Modified: Tue, 13 Jan 2026 02:09:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:00 GMT  
 		Size: 24.0 MB (24036867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd1872fa12cc6b1145803f1a0679ca26cc65fa1b4e0ee389bfb30267594736b6`  
@@ -15455,11 +15455,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 269.4 MB (269402898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8ce1777c3c0c3a8248bfb06c910bd20056520c4bb809de891de86981f738f847`  
-		Last Modified: Fri, 16 Jan 2026 18:28:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:42:58 GMT  
 		Size: 195.7 KB (195678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:153416fcf95da3b055e3b91aaa6a354499b64e3a84e8047d7c3549686099156f`  
-		Last Modified: Fri, 16 Jan 2026 18:28:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:29:16 GMT  
 		Size: 824.7 KB (824701 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15483,7 +15483,7 @@ $ docker pull erlang@sha256:de4ba4e1d27c669dc995dad4a2dc036caa8837a69789a89d9f54
 		Size: 23.8 MB (23771030 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5fab4de41e3ead9a0e50b640785d92535c76374e7308d26ffd4d96b0b2328888`  
-		Last Modified: Fri, 16 Jan 2026 20:48:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:52 GMT  
 		Size: 18.9 KB (18948 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15534,11 +15534,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 22.7 MB (22712635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1e4250b4026270105a4d93c8bfb01a0581bf77b1bda3c2e5b6bd1ebd71b621f`  
-		Last Modified: Tue, 13 Jan 2026 04:07:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:07:47 GMT  
 		Size: 62.0 MB (62009069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5649fb9ac394a046636ec02ea6ef4e84c176390f43aa6addb0a740623148047a`  
-		Last Modified: Tue, 13 Jan 2026 05:14:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:35:36 GMT  
 		Size: 184.7 MB (184729771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb6908a00efe7ecd8a77e51074dda68534a54dd2f7aae857ff803c8e2d5f998b`  
@@ -15550,7 +15550,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.7 KB (195681 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2606ee79405329082d5293cb8163dde17376ead7bd641f42aa183819313717a`  
-		Last Modified: Fri, 16 Jan 2026 18:31:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:20 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15574,7 +15574,7 @@ $ docker pull erlang@sha256:83589f4c1a75040bc00da31a39a019608f9cce3864ff5b444545
 		Size: 23.6 MB (23567117 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e68efcbca6aa00a7a540a84542816d72f9e60ce51fcbfbb86aa09ebd3d36f128`  
-		Last Modified: Fri, 16 Jan 2026 18:31:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:19 GMT  
 		Size: 19.1 KB (19054 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15625,11 +15625,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 21.9 MB (21941488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a97f9f395cd1e9e02761196527b4253d5246be969781795c278996437891e5cf`  
-		Last Modified: Tue, 13 Jan 2026 04:25:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:25:03 GMT  
 		Size: 59.7 MB (59652006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9aa484529d34ddc165f6ac5eae25e0d66e0722c0b9905c2657f89dc02daf7f45`  
-		Last Modified: Tue, 13 Jan 2026 06:20:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:13:53 GMT  
 		Size: 175.4 MB (175385398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e6e949b0fc82e6197d1f97adee977b3e5814178fe72557e0a9747cc918cbf64`  
@@ -15637,7 +15637,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 239.2 MB (239178340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5fe3e185a1e27d41776e0bf8b2b870ccb2396e78fb9f1ea7cf4abb8babe21345`  
-		Last Modified: Fri, 16 Jan 2026 18:29:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:29:49 GMT  
 		Size: 195.7 KB (195662 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc63ffb4e118ab72a0a947dba1de585275593e841c6f5e065488a660a349fc54`  
@@ -15716,11 +15716,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23604814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:687ad46596f06c934001fa6d7bea3d1508b0bb616cffb71004efd5bada56884f`  
-		Last Modified: Tue, 13 Jan 2026 03:57:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:05 GMT  
 		Size: 64.5 MB (64479462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f018151ab3f36e399ef489b536713197af8faa14dce771cb623bd750150fc315`  
-		Last Modified: Tue, 13 Jan 2026 04:49:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
 		Size: 203.0 MB (203013516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bdb4fb8a6693eeb5773a81eaafcdbd7153dcdc6ccbfd4d040e9f35fad1a9fa3`  
@@ -15732,7 +15732,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.7 KB (195678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2606ee79405329082d5293cb8163dde17376ead7bd641f42aa183819313717a`  
-		Last Modified: Fri, 16 Jan 2026 18:31:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:20 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15811,7 +15811,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 66.2 MB (66234261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4699afcbbc0f9f3dee99cc5eb7db287141d60c114f41f5777641c3e92f23dc9`  
-		Last Modified: Tue, 13 Jan 2026 03:53:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:58:39 GMT  
 		Size: 210.4 MB (210412920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07ff7cab3f75c693a71a728beead80162e0a268fd79b461898a6796fc8b0560c`  
@@ -15819,7 +15819,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 260.1 MB (260079959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b96b3d6b10e35e1cc5a7da42ba325182885651904b37798a9c07f0182da65cc`  
-		Last Modified: Fri, 16 Jan 2026 18:30:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:56 GMT  
 		Size: 195.7 KB (195693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:483b7a863dca229a889dd99b895049bd2aadae3094b396ec8a4609e817b6fa8e`  
@@ -15898,7 +15898,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23614652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8ee435e05dd9c53ddee45b81a8f55939374cd926a0e00239c752bb0832a5f8b`  
-		Last Modified: Tue, 13 Jan 2026 21:22:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:23:11 GMT  
 		Size: 63.3 MB (63309962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7899b975f8cb9b504a05891ebc198b798b479eba5ee34dc9236aa6bdca9f8e2f`  
@@ -15910,11 +15910,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 248.8 MB (248773494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b03c16940331e7bb6f44e28e6ec122ee4b766b99792a6b48c5bf79290753abe4`  
-		Last Modified: Fri, 16 Jan 2026 18:43:56 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:44:31 GMT  
 		Size: 195.7 KB (195700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ddc84c6a716c8599ead3d40576c5bb035038a66d39b70eb366abac61baa32e54`  
-		Last Modified: Fri, 16 Jan 2026 18:44:31 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:43:56 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15977,31 +15977,31 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd2769c4ec4b4d67e8059086401477839f8b9d5a5026dd27df50a3c7ce33b9db`  
-		Last Modified: Tue, 13 Jan 2026 03:35:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:35:30 GMT  
 		Size: 25.7 MB (25670703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ba5fcb80ea7d84a82ea96c11045a4f40d0943808d5c5334ea90de2f7ed44f4c4`  
-		Last Modified: Tue, 13 Jan 2026 06:38:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:38:28 GMT  
 		Size: 69.8 MB (69846016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f612632d2f5204ee80a61990e9e6e3cf8ffff970b6a69977cfe3c20c30f2f8f`  
-		Last Modified: Tue, 13 Jan 2026 08:53:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:53:21 GMT  
 		Size: 214.5 MB (214531303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5bd1f606a87df3534e0a1cdc4856bb1e46f8c5da477d74f9f62e89b329a34ef`  
-		Last Modified: Fri, 16 Jan 2026 18:34:46 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:35:00 GMT  
 		Size: 263.4 MB (263368790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aac98c181a3208ffc4db9872681a0f3b8bfc8f495f1dcd095c809065a72e1964`  
-		Last Modified: Fri, 16 Jan 2026 18:34:39 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:53 GMT  
 		Size: 195.7 KB (195673 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5765a0bab5b809ac15125c138f53f7a2f5ced50b7338d78ef57ba532bf77f06`  
-		Last Modified: Fri, 16 Jan 2026 18:34:39 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:54 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16068,7 +16068,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8133db08df54d1100dff2f0259f057251959db22c09d939ae558af001aa8088c`  
@@ -16076,11 +16076,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 24.0 MB (24032491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fb4cc23aeea1b258f198103e8c2d450f82da1d5de8a3eb227ed2969f60d97c4`  
-		Last Modified: Tue, 13 Jan 2026 03:15:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:15:23 GMT  
 		Size: 63.5 MB (63501276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d603781e360b704a9e81ded2374882060ef0f7137f208852911befe0feddd405`  
-		Last Modified: Tue, 13 Jan 2026 05:16:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:18:26 GMT  
 		Size: 183.5 MB (183515687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:619249caf7cc37e7e72fb8ff8fd557a68b7d78d0719d13a5b42eb01c255702db`  
@@ -16092,7 +16092,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.7 KB (195691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:555570251acc3de19df014a0f4fd707d013323d3f6efdaa8caacef9f6e8e98f0`  
-		Last Modified: Fri, 16 Jan 2026 18:30:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:29:44 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16174,7 +16174,7 @@ CMD ["erl"]
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d95341a2ff0e99b16d75dc96f2e240d470af6f563a2cb986051c0bb37a6846a1`  
-		Last Modified: Fri, 16 Jan 2026 18:28:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:27 GMT  
 		Size: 49.8 MB (49840975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16198,7 +16198,7 @@ $ docker pull erlang@sha256:40dca2e1bca2c8dea44c177e3ef70a58be8fca6e06bae9cb6efd
 		Size: 278.7 KB (278729 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f7b17d7d7d418a40da60ede3e257301ae2dbd15763d4526355df0e5d9ae5eef0`  
-		Last Modified: Fri, 16 Jan 2026 18:28:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:45 GMT  
 		Size: 15.1 KB (15077 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16231,7 +16231,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c1cc352f1ce5dbf34997f7beff06df39a9a6bef9defd536110ddc9d3a582e696`  
@@ -16255,7 +16255,7 @@ $ docker pull erlang@sha256:9bacb72dc02c097a837f3e953e8e1f68f9ee52e37b50d0f9a9a4
 
 -	Layers:
 	-	`sha256:6dd1c91587e2a2cd63e472296a01390d2d8d06cbe234769b30f78245cd1f5338`  
-		Last Modified: Fri, 16 Jan 2026 18:28:37 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:49 GMT  
 		Size: 274.5 KB (274521 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b97f0b9ee32396a2b9eeba682c5841f3fb6fdbe66e602ed0e9cf1f1ab0edd0d2`  
@@ -16292,7 +16292,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:184c4d363a4d0db6ad942dd5fd7ab4d961598380a3270f15e2b8ab7550ce2ad2`  
@@ -16353,11 +16353,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:13c6e95c06ae06f126f5e940d6d88c2fec0da715c80878ad225c76ad48d0a31e`  
-		Last Modified: Sun, 07 Dec 2025 14:06:47 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 3.6 MB (3618931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:16b78d84b86ddb2c16f9c1a700e7bead9342ac6dd3beaaaf1b7621c5ab50992a`  
-		Last Modified: Fri, 16 Jan 2026 18:29:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:36 GMT  
 		Size: 48.3 MB (48295005 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16377,7 +16377,7 @@ $ docker pull erlang@sha256:e935c6056e27374f74d16af6b34662f37c7275659a509653ebe5
 
 -	Layers:
 	-	`sha256:1364ea21a5247f5db8c6225e51f3702aae48ae56c132429d0190f02b080f15c9`  
-		Last Modified: Fri, 16 Jan 2026 18:28:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:57 GMT  
 		Size: 273.7 KB (273724 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fcfaac6ee17682ccc0c5ac1284af49abbb4b09685de4d051d096f98239f3d166`  
@@ -16438,11 +16438,11 @@ $ docker pull erlang@sha256:2c013618595d0c97205dff71c54af49b12f21e1ab14557c7e6e8
 
 -	Layers:
 	-	`sha256:654b2d59f5600c9692e16e09a04dd0013ccc48e02e915729d953aceb3870022c`  
-		Last Modified: Fri, 16 Jan 2026 20:49:01 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:09 GMT  
 		Size: 272.6 KB (272568 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:afe65fdd21a2bb5166c92520740528e4c1f9d4a71a0bce1346f4afdc2709c055`  
-		Last Modified: Fri, 16 Jan 2026 20:49:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:09 GMT  
 		Size: 15.1 KB (15121 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16503,7 +16503,7 @@ $ docker pull erlang@sha256:3002aabbe642da07cc739c76d2e80a472207c3ba91b84f547f13
 		Size: 272.5 KB (272534 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f44350459ea0b30f72d9fd9830dcf5f1d009aa6f59f257afeb41841991e34a4a`  
-		Last Modified: Fri, 16 Jan 2026 20:49:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:27:41 GMT  
 		Size: 15.1 KB (15076 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16563,7 +16563,7 @@ CMD ["erl"]
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a3bf33f2f08d8c4d1e2acf2581338ee2f04a57ac5de183e568eb51e6f2c7b344`  
-		Last Modified: Fri, 16 Jan 2026 18:31:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:45 GMT  
 		Size: 76.0 MB (76014120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16587,7 +16587,7 @@ $ docker pull erlang@sha256:c17c67a8392461199c343fd5d64dc57cff688f8b094cd25ac19e
 		Size: 3.8 MB (3824753 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:443152e5203ad7ebcc75d426f3a000809808443b289a1b3b04f66cca7ddd09cc`  
-		Last Modified: Fri, 16 Jan 2026 18:30:43 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:07 GMT  
 		Size: 13.6 KB (13636 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16622,7 +16622,7 @@ CMD ["erl"]
 		Size: 46.0 MB (46016731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:98fd648ee23ebab4e96bf2b536239bde0a5e6831a164cf3bcf5fad48c8005572`  
-		Last Modified: Fri, 16 Jan 2026 18:30:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:01 GMT  
 		Size: 65.5 MB (65525736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16642,7 +16642,7 @@ $ docker pull erlang@sha256:a31e7ac6c9b06f20e0f62acca6bf0ef26b97ebdf0387c407cd04
 
 -	Layers:
 	-	`sha256:874f34358c417889b471b7eff2b20c414bdafd8460eded718dcaf3a7b1179570`  
-		Last Modified: Fri, 16 Jan 2026 20:49:11 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:45 GMT  
 		Size: 3.8 MB (3828561 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3b8fb4c6563345dfb47c7ae89de8266ae7ea8c50d7e93b0765731f8af130daae`  
@@ -16705,7 +16705,7 @@ $ docker pull erlang@sha256:c16c8e9fe831957a4ae9e0f6db2c260f5576c917426d08f67b35
 		Size: 3.8 MB (3826986 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:79a68ea6b863e740e5c8177bee27918241d4dd97151162235d1da80ce7b30ce7`  
-		Last Modified: Fri, 16 Jan 2026 18:28:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:19 GMT  
 		Size: 13.7 KB (13716 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16740,7 +16740,7 @@ CMD ["erl"]
 		Size: 48.4 MB (48366072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a117d99694fe293f35f9859cbc8fb87258e5b213c23c26784828d505f94c3e9`  
-		Last Modified: Fri, 16 Jan 2026 18:28:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:54 GMT  
 		Size: 73.8 MB (73760186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16760,7 +16760,7 @@ $ docker pull erlang@sha256:4e5ce88680fff116e476c794feb6ebf290a0f02584e7f6394a30
 
 -	Layers:
 	-	`sha256:8aa8b933c3c6a045f18e23d5666ee6d9704dd4ed5a3646752dac1e89bb5cf761`  
-		Last Modified: Fri, 16 Jan 2026 18:28:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:23 GMT  
 		Size: 3.8 MB (3825014 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cea864e003f65f264e51ff85d02e3e91bd5aa904c24c2bd657480458030d861b`  
@@ -16909,11 +16909,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a2cbc3baa4e9b4a1e362f93de0220b749a6dcc28d61aed63d51b25cdceb0950`  
-		Last Modified: Fri, 16 Jan 2026 18:31:28 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:07 GMT  
 		Size: 67.2 MB (67248504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16933,7 +16933,7 @@ $ docker pull erlang@sha256:b642c0e0d082e1bfa321f636edd9c41f621b761b95a0a169fa23
 
 -	Layers:
 	-	`sha256:980ceb459f7a1e7022662dce9aca207280e83f10ef188f522f42e6ed0dd80a51`  
-		Last Modified: Fri, 16 Jan 2026 18:31:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:51:04 GMT  
 		Size: 3.8 MB (3829203 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c555b45439000cc21e9ad14e254d86ccfaaa78be9b51a64ec7516da7e3a8f9fc`  
@@ -16968,11 +16968,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66002539d572ac5ed54291d49c84bb002b3ce8673135fe4a365b6e48e4cde1dc`  
-		Last Modified: Fri, 16 Jan 2026 18:28:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:27:48 GMT  
 		Size: 65.9 MB (65912794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16992,11 +16992,11 @@ $ docker pull erlang@sha256:c9c5173f52d1a7a8897710fd9904cf533aadeeb38e3e2ff04830
 
 -	Layers:
 	-	`sha256:2caa9afb346d7f536337935768d1a47ceceb9e56d0241cf3b0948f002230c49a`  
-		Last Modified: Fri, 16 Jan 2026 20:51:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:27:47 GMT  
 		Size: 3.8 MB (3821581 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dd181e0339bc2ae24eef5ee4cc924c27b9b970d8cad1b13f8ca4cd136a651047`  
-		Last Modified: Fri, 16 Jan 2026 18:27:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:51:14 GMT  
 		Size: 13.6 KB (13634 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17068,7 +17068,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64538a062a61add8dc8b290fa69475e8902eb839c497a5f5dcd5a950422e493c`  
-		Last Modified: Tue, 13 Jan 2026 02:09:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:00 GMT  
 		Size: 24.0 MB (24036867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd1872fa12cc6b1145803f1a0679ca26cc65fa1b4e0ee389bfb30267594736b6`  
@@ -17084,11 +17084,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 269.4 MB (269402898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8ce1777c3c0c3a8248bfb06c910bd20056520c4bb809de891de86981f738f847`  
-		Last Modified: Fri, 16 Jan 2026 18:28:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:42:58 GMT  
 		Size: 195.7 KB (195678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:153416fcf95da3b055e3b91aaa6a354499b64e3a84e8047d7c3549686099156f`  
-		Last Modified: Fri, 16 Jan 2026 18:28:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:29:16 GMT  
 		Size: 824.7 KB (824701 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17112,7 +17112,7 @@ $ docker pull erlang@sha256:de4ba4e1d27c669dc995dad4a2dc036caa8837a69789a89d9f54
 		Size: 23.8 MB (23771030 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5fab4de41e3ead9a0e50b640785d92535c76374e7308d26ffd4d96b0b2328888`  
-		Last Modified: Fri, 16 Jan 2026 20:48:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:52 GMT  
 		Size: 18.9 KB (18948 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17163,11 +17163,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 22.7 MB (22712635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1e4250b4026270105a4d93c8bfb01a0581bf77b1bda3c2e5b6bd1ebd71b621f`  
-		Last Modified: Tue, 13 Jan 2026 04:07:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:07:47 GMT  
 		Size: 62.0 MB (62009069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5649fb9ac394a046636ec02ea6ef4e84c176390f43aa6addb0a740623148047a`  
-		Last Modified: Tue, 13 Jan 2026 05:14:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:35:36 GMT  
 		Size: 184.7 MB (184729771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb6908a00efe7ecd8a77e51074dda68534a54dd2f7aae857ff803c8e2d5f998b`  
@@ -17179,7 +17179,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.7 KB (195681 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2606ee79405329082d5293cb8163dde17376ead7bd641f42aa183819313717a`  
-		Last Modified: Fri, 16 Jan 2026 18:31:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:20 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17203,7 +17203,7 @@ $ docker pull erlang@sha256:83589f4c1a75040bc00da31a39a019608f9cce3864ff5b444545
 		Size: 23.6 MB (23567117 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e68efcbca6aa00a7a540a84542816d72f9e60ce51fcbfbb86aa09ebd3d36f128`  
-		Last Modified: Fri, 16 Jan 2026 18:31:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:19 GMT  
 		Size: 19.1 KB (19054 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17254,11 +17254,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 21.9 MB (21941488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a97f9f395cd1e9e02761196527b4253d5246be969781795c278996437891e5cf`  
-		Last Modified: Tue, 13 Jan 2026 04:25:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:25:03 GMT  
 		Size: 59.7 MB (59652006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9aa484529d34ddc165f6ac5eae25e0d66e0722c0b9905c2657f89dc02daf7f45`  
-		Last Modified: Tue, 13 Jan 2026 06:20:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:13:53 GMT  
 		Size: 175.4 MB (175385398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e6e949b0fc82e6197d1f97adee977b3e5814178fe72557e0a9747cc918cbf64`  
@@ -17266,7 +17266,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 239.2 MB (239178340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5fe3e185a1e27d41776e0bf8b2b870ccb2396e78fb9f1ea7cf4abb8babe21345`  
-		Last Modified: Fri, 16 Jan 2026 18:29:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:29:49 GMT  
 		Size: 195.7 KB (195662 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc63ffb4e118ab72a0a947dba1de585275593e841c6f5e065488a660a349fc54`  
@@ -17345,11 +17345,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23604814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:687ad46596f06c934001fa6d7bea3d1508b0bb616cffb71004efd5bada56884f`  
-		Last Modified: Tue, 13 Jan 2026 03:57:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:05 GMT  
 		Size: 64.5 MB (64479462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f018151ab3f36e399ef489b536713197af8faa14dce771cb623bd750150fc315`  
-		Last Modified: Tue, 13 Jan 2026 04:49:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
 		Size: 203.0 MB (203013516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bdb4fb8a6693eeb5773a81eaafcdbd7153dcdc6ccbfd4d040e9f35fad1a9fa3`  
@@ -17361,7 +17361,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.7 KB (195678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2606ee79405329082d5293cb8163dde17376ead7bd641f42aa183819313717a`  
-		Last Modified: Fri, 16 Jan 2026 18:31:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:20 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17440,7 +17440,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 66.2 MB (66234261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4699afcbbc0f9f3dee99cc5eb7db287141d60c114f41f5777641c3e92f23dc9`  
-		Last Modified: Tue, 13 Jan 2026 03:53:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:58:39 GMT  
 		Size: 210.4 MB (210412920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07ff7cab3f75c693a71a728beead80162e0a268fd79b461898a6796fc8b0560c`  
@@ -17448,7 +17448,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 260.1 MB (260079959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b96b3d6b10e35e1cc5a7da42ba325182885651904b37798a9c07f0182da65cc`  
-		Last Modified: Fri, 16 Jan 2026 18:30:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:56 GMT  
 		Size: 195.7 KB (195693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:483b7a863dca229a889dd99b895049bd2aadae3094b396ec8a4609e817b6fa8e`  
@@ -17527,7 +17527,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23614652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8ee435e05dd9c53ddee45b81a8f55939374cd926a0e00239c752bb0832a5f8b`  
-		Last Modified: Tue, 13 Jan 2026 21:22:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:23:11 GMT  
 		Size: 63.3 MB (63309962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7899b975f8cb9b504a05891ebc198b798b479eba5ee34dc9236aa6bdca9f8e2f`  
@@ -17539,11 +17539,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 248.8 MB (248773494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b03c16940331e7bb6f44e28e6ec122ee4b766b99792a6b48c5bf79290753abe4`  
-		Last Modified: Fri, 16 Jan 2026 18:43:56 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:44:31 GMT  
 		Size: 195.7 KB (195700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ddc84c6a716c8599ead3d40576c5bb035038a66d39b70eb366abac61baa32e54`  
-		Last Modified: Fri, 16 Jan 2026 18:44:31 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:43:56 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17606,31 +17606,31 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd2769c4ec4b4d67e8059086401477839f8b9d5a5026dd27df50a3c7ce33b9db`  
-		Last Modified: Tue, 13 Jan 2026 03:35:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:35:30 GMT  
 		Size: 25.7 MB (25670703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ba5fcb80ea7d84a82ea96c11045a4f40d0943808d5c5334ea90de2f7ed44f4c4`  
-		Last Modified: Tue, 13 Jan 2026 06:38:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:38:28 GMT  
 		Size: 69.8 MB (69846016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f612632d2f5204ee80a61990e9e6e3cf8ffff970b6a69977cfe3c20c30f2f8f`  
-		Last Modified: Tue, 13 Jan 2026 08:53:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:53:21 GMT  
 		Size: 214.5 MB (214531303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5bd1f606a87df3534e0a1cdc4856bb1e46f8c5da477d74f9f62e89b329a34ef`  
-		Last Modified: Fri, 16 Jan 2026 18:34:46 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:35:00 GMT  
 		Size: 263.4 MB (263368790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aac98c181a3208ffc4db9872681a0f3b8bfc8f495f1dcd095c809065a72e1964`  
-		Last Modified: Fri, 16 Jan 2026 18:34:39 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:53 GMT  
 		Size: 195.7 KB (195673 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5765a0bab5b809ac15125c138f53f7a2f5ced50b7338d78ef57ba532bf77f06`  
-		Last Modified: Fri, 16 Jan 2026 18:34:39 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:54 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17697,7 +17697,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8133db08df54d1100dff2f0259f057251959db22c09d939ae558af001aa8088c`  
@@ -17705,11 +17705,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 24.0 MB (24032491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fb4cc23aeea1b258f198103e8c2d450f82da1d5de8a3eb227ed2969f60d97c4`  
-		Last Modified: Tue, 13 Jan 2026 03:15:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:15:23 GMT  
 		Size: 63.5 MB (63501276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d603781e360b704a9e81ded2374882060ef0f7137f208852911befe0feddd405`  
-		Last Modified: Tue, 13 Jan 2026 05:16:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:18:26 GMT  
 		Size: 183.5 MB (183515687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:619249caf7cc37e7e72fb8ff8fd557a68b7d78d0719d13a5b42eb01c255702db`  
@@ -17721,7 +17721,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.7 KB (195691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:555570251acc3de19df014a0f4fd707d013323d3f6efdaa8caacef9f6e8e98f0`  
-		Last Modified: Fri, 16 Jan 2026 18:30:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:29:44 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17803,7 +17803,7 @@ CMD ["erl"]
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d95341a2ff0e99b16d75dc96f2e240d470af6f563a2cb986051c0bb37a6846a1`  
-		Last Modified: Fri, 16 Jan 2026 18:28:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:27 GMT  
 		Size: 49.8 MB (49840975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17827,7 +17827,7 @@ $ docker pull erlang@sha256:40dca2e1bca2c8dea44c177e3ef70a58be8fca6e06bae9cb6efd
 		Size: 278.7 KB (278729 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f7b17d7d7d418a40da60ede3e257301ae2dbd15763d4526355df0e5d9ae5eef0`  
-		Last Modified: Fri, 16 Jan 2026 18:28:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:45 GMT  
 		Size: 15.1 KB (15077 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17860,7 +17860,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c1cc352f1ce5dbf34997f7beff06df39a9a6bef9defd536110ddc9d3a582e696`  
@@ -17884,7 +17884,7 @@ $ docker pull erlang@sha256:9bacb72dc02c097a837f3e953e8e1f68f9ee52e37b50d0f9a9a4
 
 -	Layers:
 	-	`sha256:6dd1c91587e2a2cd63e472296a01390d2d8d06cbe234769b30f78245cd1f5338`  
-		Last Modified: Fri, 16 Jan 2026 18:28:37 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:49 GMT  
 		Size: 274.5 KB (274521 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b97f0b9ee32396a2b9eeba682c5841f3fb6fdbe66e602ed0e9cf1f1ab0edd0d2`  
@@ -17921,7 +17921,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:184c4d363a4d0db6ad942dd5fd7ab4d961598380a3270f15e2b8ab7550ce2ad2`  
@@ -17982,11 +17982,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:13c6e95c06ae06f126f5e940d6d88c2fec0da715c80878ad225c76ad48d0a31e`  
-		Last Modified: Sun, 07 Dec 2025 14:06:47 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 3.6 MB (3618931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:16b78d84b86ddb2c16f9c1a700e7bead9342ac6dd3beaaaf1b7621c5ab50992a`  
-		Last Modified: Fri, 16 Jan 2026 18:29:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:36 GMT  
 		Size: 48.3 MB (48295005 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18006,7 +18006,7 @@ $ docker pull erlang@sha256:e935c6056e27374f74d16af6b34662f37c7275659a509653ebe5
 
 -	Layers:
 	-	`sha256:1364ea21a5247f5db8c6225e51f3702aae48ae56c132429d0190f02b080f15c9`  
-		Last Modified: Fri, 16 Jan 2026 18:28:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:57 GMT  
 		Size: 273.7 KB (273724 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fcfaac6ee17682ccc0c5ac1284af49abbb4b09685de4d051d096f98239f3d166`  
@@ -18067,11 +18067,11 @@ $ docker pull erlang@sha256:2c013618595d0c97205dff71c54af49b12f21e1ab14557c7e6e8
 
 -	Layers:
 	-	`sha256:654b2d59f5600c9692e16e09a04dd0013ccc48e02e915729d953aceb3870022c`  
-		Last Modified: Fri, 16 Jan 2026 20:49:01 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:09 GMT  
 		Size: 272.6 KB (272568 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:afe65fdd21a2bb5166c92520740528e4c1f9d4a71a0bce1346f4afdc2709c055`  
-		Last Modified: Fri, 16 Jan 2026 20:49:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:09 GMT  
 		Size: 15.1 KB (15121 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18132,7 +18132,7 @@ $ docker pull erlang@sha256:3002aabbe642da07cc739c76d2e80a472207c3ba91b84f547f13
 		Size: 272.5 KB (272534 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f44350459ea0b30f72d9fd9830dcf5f1d009aa6f59f257afeb41841991e34a4a`  
-		Last Modified: Fri, 16 Jan 2026 20:49:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:27:41 GMT  
 		Size: 15.1 KB (15076 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18192,7 +18192,7 @@ CMD ["erl"]
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a3bf33f2f08d8c4d1e2acf2581338ee2f04a57ac5de183e568eb51e6f2c7b344`  
-		Last Modified: Fri, 16 Jan 2026 18:31:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:45 GMT  
 		Size: 76.0 MB (76014120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18216,7 +18216,7 @@ $ docker pull erlang@sha256:c17c67a8392461199c343fd5d64dc57cff688f8b094cd25ac19e
 		Size: 3.8 MB (3824753 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:443152e5203ad7ebcc75d426f3a000809808443b289a1b3b04f66cca7ddd09cc`  
-		Last Modified: Fri, 16 Jan 2026 18:30:43 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:07 GMT  
 		Size: 13.6 KB (13636 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18251,7 +18251,7 @@ CMD ["erl"]
 		Size: 46.0 MB (46016731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:98fd648ee23ebab4e96bf2b536239bde0a5e6831a164cf3bcf5fad48c8005572`  
-		Last Modified: Fri, 16 Jan 2026 18:30:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:01 GMT  
 		Size: 65.5 MB (65525736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18271,7 +18271,7 @@ $ docker pull erlang@sha256:a31e7ac6c9b06f20e0f62acca6bf0ef26b97ebdf0387c407cd04
 
 -	Layers:
 	-	`sha256:874f34358c417889b471b7eff2b20c414bdafd8460eded718dcaf3a7b1179570`  
-		Last Modified: Fri, 16 Jan 2026 20:49:11 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:45 GMT  
 		Size: 3.8 MB (3828561 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3b8fb4c6563345dfb47c7ae89de8266ae7ea8c50d7e93b0765731f8af130daae`  
@@ -18334,7 +18334,7 @@ $ docker pull erlang@sha256:c16c8e9fe831957a4ae9e0f6db2c260f5576c917426d08f67b35
 		Size: 3.8 MB (3826986 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:79a68ea6b863e740e5c8177bee27918241d4dd97151162235d1da80ce7b30ce7`  
-		Last Modified: Fri, 16 Jan 2026 18:28:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:19 GMT  
 		Size: 13.7 KB (13716 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18369,7 +18369,7 @@ CMD ["erl"]
 		Size: 48.4 MB (48366072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a117d99694fe293f35f9859cbc8fb87258e5b213c23c26784828d505f94c3e9`  
-		Last Modified: Fri, 16 Jan 2026 18:28:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:54 GMT  
 		Size: 73.8 MB (73760186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18389,7 +18389,7 @@ $ docker pull erlang@sha256:4e5ce88680fff116e476c794feb6ebf290a0f02584e7f6394a30
 
 -	Layers:
 	-	`sha256:8aa8b933c3c6a045f18e23d5666ee6d9704dd4ed5a3646752dac1e89bb5cf761`  
-		Last Modified: Fri, 16 Jan 2026 18:28:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:23 GMT  
 		Size: 3.8 MB (3825014 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cea864e003f65f264e51ff85d02e3e91bd5aa904c24c2bd657480458030d861b`  
@@ -18538,11 +18538,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a2cbc3baa4e9b4a1e362f93de0220b749a6dcc28d61aed63d51b25cdceb0950`  
-		Last Modified: Fri, 16 Jan 2026 18:31:28 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:07 GMT  
 		Size: 67.2 MB (67248504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18562,7 +18562,7 @@ $ docker pull erlang@sha256:b642c0e0d082e1bfa321f636edd9c41f621b761b95a0a169fa23
 
 -	Layers:
 	-	`sha256:980ceb459f7a1e7022662dce9aca207280e83f10ef188f522f42e6ed0dd80a51`  
-		Last Modified: Fri, 16 Jan 2026 18:31:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:51:04 GMT  
 		Size: 3.8 MB (3829203 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c555b45439000cc21e9ad14e254d86ccfaaa78be9b51a64ec7516da7e3a8f9fc`  
@@ -18597,11 +18597,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66002539d572ac5ed54291d49c84bb002b3ce8673135fe4a365b6e48e4cde1dc`  
-		Last Modified: Fri, 16 Jan 2026 18:28:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:27:48 GMT  
 		Size: 65.9 MB (65912794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18621,11 +18621,11 @@ $ docker pull erlang@sha256:c9c5173f52d1a7a8897710fd9904cf533aadeeb38e3e2ff04830
 
 -	Layers:
 	-	`sha256:2caa9afb346d7f536337935768d1a47ceceb9e56d0241cf3b0948f002230c49a`  
-		Last Modified: Fri, 16 Jan 2026 20:51:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:27:47 GMT  
 		Size: 3.8 MB (3821581 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dd181e0339bc2ae24eef5ee4cc924c27b9b970d8cad1b13f8ca4cd136a651047`  
-		Last Modified: Fri, 16 Jan 2026 18:27:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:51:14 GMT  
 		Size: 13.6 KB (13634 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18697,7 +18697,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64538a062a61add8dc8b290fa69475e8902eb839c497a5f5dcd5a950422e493c`  
-		Last Modified: Tue, 13 Jan 2026 02:09:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:00 GMT  
 		Size: 24.0 MB (24036867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd1872fa12cc6b1145803f1a0679ca26cc65fa1b4e0ee389bfb30267594736b6`  
@@ -18713,11 +18713,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 269.4 MB (269402898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8ce1777c3c0c3a8248bfb06c910bd20056520c4bb809de891de86981f738f847`  
-		Last Modified: Fri, 16 Jan 2026 18:28:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:42:58 GMT  
 		Size: 195.7 KB (195678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:153416fcf95da3b055e3b91aaa6a354499b64e3a84e8047d7c3549686099156f`  
-		Last Modified: Fri, 16 Jan 2026 18:28:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:29:16 GMT  
 		Size: 824.7 KB (824701 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18741,7 +18741,7 @@ $ docker pull erlang@sha256:de4ba4e1d27c669dc995dad4a2dc036caa8837a69789a89d9f54
 		Size: 23.8 MB (23771030 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5fab4de41e3ead9a0e50b640785d92535c76374e7308d26ffd4d96b0b2328888`  
-		Last Modified: Fri, 16 Jan 2026 20:48:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:52 GMT  
 		Size: 18.9 KB (18948 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18792,11 +18792,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 22.7 MB (22712635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1e4250b4026270105a4d93c8bfb01a0581bf77b1bda3c2e5b6bd1ebd71b621f`  
-		Last Modified: Tue, 13 Jan 2026 04:07:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:07:47 GMT  
 		Size: 62.0 MB (62009069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5649fb9ac394a046636ec02ea6ef4e84c176390f43aa6addb0a740623148047a`  
-		Last Modified: Tue, 13 Jan 2026 05:14:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:35:36 GMT  
 		Size: 184.7 MB (184729771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb6908a00efe7ecd8a77e51074dda68534a54dd2f7aae857ff803c8e2d5f998b`  
@@ -18808,7 +18808,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.7 KB (195681 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2606ee79405329082d5293cb8163dde17376ead7bd641f42aa183819313717a`  
-		Last Modified: Fri, 16 Jan 2026 18:31:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:20 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18832,7 +18832,7 @@ $ docker pull erlang@sha256:83589f4c1a75040bc00da31a39a019608f9cce3864ff5b444545
 		Size: 23.6 MB (23567117 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e68efcbca6aa00a7a540a84542816d72f9e60ce51fcbfbb86aa09ebd3d36f128`  
-		Last Modified: Fri, 16 Jan 2026 18:31:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:19 GMT  
 		Size: 19.1 KB (19054 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18883,11 +18883,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 21.9 MB (21941488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a97f9f395cd1e9e02761196527b4253d5246be969781795c278996437891e5cf`  
-		Last Modified: Tue, 13 Jan 2026 04:25:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:25:03 GMT  
 		Size: 59.7 MB (59652006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9aa484529d34ddc165f6ac5eae25e0d66e0722c0b9905c2657f89dc02daf7f45`  
-		Last Modified: Tue, 13 Jan 2026 06:20:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:13:53 GMT  
 		Size: 175.4 MB (175385398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e6e949b0fc82e6197d1f97adee977b3e5814178fe72557e0a9747cc918cbf64`  
@@ -18895,7 +18895,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 239.2 MB (239178340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5fe3e185a1e27d41776e0bf8b2b870ccb2396e78fb9f1ea7cf4abb8babe21345`  
-		Last Modified: Fri, 16 Jan 2026 18:29:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:29:49 GMT  
 		Size: 195.7 KB (195662 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc63ffb4e118ab72a0a947dba1de585275593e841c6f5e065488a660a349fc54`  
@@ -18974,11 +18974,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23604814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:687ad46596f06c934001fa6d7bea3d1508b0bb616cffb71004efd5bada56884f`  
-		Last Modified: Tue, 13 Jan 2026 03:57:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:05 GMT  
 		Size: 64.5 MB (64479462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f018151ab3f36e399ef489b536713197af8faa14dce771cb623bd750150fc315`  
-		Last Modified: Tue, 13 Jan 2026 04:49:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:24:21 GMT  
 		Size: 203.0 MB (203013516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bdb4fb8a6693eeb5773a81eaafcdbd7153dcdc6ccbfd4d040e9f35fad1a9fa3`  
@@ -18990,7 +18990,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.7 KB (195678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2606ee79405329082d5293cb8163dde17376ead7bd641f42aa183819313717a`  
-		Last Modified: Fri, 16 Jan 2026 18:31:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:20 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -19069,7 +19069,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 66.2 MB (66234261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4699afcbbc0f9f3dee99cc5eb7db287141d60c114f41f5777641c3e92f23dc9`  
-		Last Modified: Tue, 13 Jan 2026 03:53:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:58:39 GMT  
 		Size: 210.4 MB (210412920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07ff7cab3f75c693a71a728beead80162e0a268fd79b461898a6796fc8b0560c`  
@@ -19077,7 +19077,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 260.1 MB (260079959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b96b3d6b10e35e1cc5a7da42ba325182885651904b37798a9c07f0182da65cc`  
-		Last Modified: Fri, 16 Jan 2026 18:30:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:56 GMT  
 		Size: 195.7 KB (195693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:483b7a863dca229a889dd99b895049bd2aadae3094b396ec8a4609e817b6fa8e`  
@@ -19156,7 +19156,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 23.6 MB (23614652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8ee435e05dd9c53ddee45b81a8f55939374cd926a0e00239c752bb0832a5f8b`  
-		Last Modified: Tue, 13 Jan 2026 21:22:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:23:11 GMT  
 		Size: 63.3 MB (63309962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7899b975f8cb9b504a05891ebc198b798b479eba5ee34dc9236aa6bdca9f8e2f`  
@@ -19168,11 +19168,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 248.8 MB (248773494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b03c16940331e7bb6f44e28e6ec122ee4b766b99792a6b48c5bf79290753abe4`  
-		Last Modified: Fri, 16 Jan 2026 18:43:56 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:44:31 GMT  
 		Size: 195.7 KB (195700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ddc84c6a716c8599ead3d40576c5bb035038a66d39b70eb366abac61baa32e54`  
-		Last Modified: Fri, 16 Jan 2026 18:44:31 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:43:56 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -19235,31 +19235,31 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd2769c4ec4b4d67e8059086401477839f8b9d5a5026dd27df50a3c7ce33b9db`  
-		Last Modified: Tue, 13 Jan 2026 03:35:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:35:30 GMT  
 		Size: 25.7 MB (25670703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ba5fcb80ea7d84a82ea96c11045a4f40d0943808d5c5334ea90de2f7ed44f4c4`  
-		Last Modified: Tue, 13 Jan 2026 06:38:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:38:28 GMT  
 		Size: 69.8 MB (69846016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f612632d2f5204ee80a61990e9e6e3cf8ffff970b6a69977cfe3c20c30f2f8f`  
-		Last Modified: Tue, 13 Jan 2026 08:53:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:53:21 GMT  
 		Size: 214.5 MB (214531303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5bd1f606a87df3534e0a1cdc4856bb1e46f8c5da477d74f9f62e89b329a34ef`  
-		Last Modified: Fri, 16 Jan 2026 18:34:46 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:35:00 GMT  
 		Size: 263.4 MB (263368790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aac98c181a3208ffc4db9872681a0f3b8bfc8f495f1dcd095c809065a72e1964`  
-		Last Modified: Fri, 16 Jan 2026 18:34:39 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:53 GMT  
 		Size: 195.7 KB (195673 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5765a0bab5b809ac15125c138f53f7a2f5ced50b7338d78ef57ba532bf77f06`  
-		Last Modified: Fri, 16 Jan 2026 18:34:39 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:54 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -19326,7 +19326,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8133db08df54d1100dff2f0259f057251959db22c09d939ae558af001aa8088c`  
@@ -19334,11 +19334,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 24.0 MB (24032491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fb4cc23aeea1b258f198103e8c2d450f82da1d5de8a3eb227ed2969f60d97c4`  
-		Last Modified: Tue, 13 Jan 2026 03:15:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:15:23 GMT  
 		Size: 63.5 MB (63501276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d603781e360b704a9e81ded2374882060ef0f7137f208852911befe0feddd405`  
-		Last Modified: Tue, 13 Jan 2026 05:16:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:18:26 GMT  
 		Size: 183.5 MB (183515687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:619249caf7cc37e7e72fb8ff8fd557a68b7d78d0719d13a5b42eb01c255702db`  
@@ -19350,7 +19350,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 195.7 KB (195691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:555570251acc3de19df014a0f4fd707d013323d3f6efdaa8caacef9f6e8e98f0`  
-		Last Modified: Fri, 16 Jan 2026 18:30:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:29:44 GMT  
 		Size: 824.7 KB (824702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -19432,7 +19432,7 @@ CMD ["erl"]
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d95341a2ff0e99b16d75dc96f2e240d470af6f563a2cb986051c0bb37a6846a1`  
-		Last Modified: Fri, 16 Jan 2026 18:28:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:27 GMT  
 		Size: 49.8 MB (49840975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -19456,7 +19456,7 @@ $ docker pull erlang@sha256:40dca2e1bca2c8dea44c177e3ef70a58be8fca6e06bae9cb6efd
 		Size: 278.7 KB (278729 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f7b17d7d7d418a40da60ede3e257301ae2dbd15763d4526355df0e5d9ae5eef0`  
-		Last Modified: Fri, 16 Jan 2026 18:28:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:45 GMT  
 		Size: 15.1 KB (15077 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19489,7 +19489,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c1cc352f1ce5dbf34997f7beff06df39a9a6bef9defd536110ddc9d3a582e696`  
@@ -19513,7 +19513,7 @@ $ docker pull erlang@sha256:9bacb72dc02c097a837f3e953e8e1f68f9ee52e37b50d0f9a9a4
 
 -	Layers:
 	-	`sha256:6dd1c91587e2a2cd63e472296a01390d2d8d06cbe234769b30f78245cd1f5338`  
-		Last Modified: Fri, 16 Jan 2026 18:28:37 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:49 GMT  
 		Size: 274.5 KB (274521 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b97f0b9ee32396a2b9eeba682c5841f3fb6fdbe66e602ed0e9cf1f1ab0edd0d2`  
@@ -19550,7 +19550,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:184c4d363a4d0db6ad942dd5fd7ab4d961598380a3270f15e2b8ab7550ce2ad2`  
@@ -19611,11 +19611,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:13c6e95c06ae06f126f5e940d6d88c2fec0da715c80878ad225c76ad48d0a31e`  
-		Last Modified: Sun, 07 Dec 2025 14:06:47 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 3.6 MB (3618931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:16b78d84b86ddb2c16f9c1a700e7bead9342ac6dd3beaaaf1b7621c5ab50992a`  
-		Last Modified: Fri, 16 Jan 2026 18:29:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:36 GMT  
 		Size: 48.3 MB (48295005 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -19635,7 +19635,7 @@ $ docker pull erlang@sha256:e935c6056e27374f74d16af6b34662f37c7275659a509653ebe5
 
 -	Layers:
 	-	`sha256:1364ea21a5247f5db8c6225e51f3702aae48ae56c132429d0190f02b080f15c9`  
-		Last Modified: Fri, 16 Jan 2026 18:28:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:57 GMT  
 		Size: 273.7 KB (273724 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fcfaac6ee17682ccc0c5ac1284af49abbb4b09685de4d051d096f98239f3d166`  
@@ -19696,11 +19696,11 @@ $ docker pull erlang@sha256:2c013618595d0c97205dff71c54af49b12f21e1ab14557c7e6e8
 
 -	Layers:
 	-	`sha256:654b2d59f5600c9692e16e09a04dd0013ccc48e02e915729d953aceb3870022c`  
-		Last Modified: Fri, 16 Jan 2026 20:49:01 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:09 GMT  
 		Size: 272.6 KB (272568 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:afe65fdd21a2bb5166c92520740528e4c1f9d4a71a0bce1346f4afdc2709c055`  
-		Last Modified: Fri, 16 Jan 2026 20:49:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:09 GMT  
 		Size: 15.1 KB (15121 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19761,7 +19761,7 @@ $ docker pull erlang@sha256:3002aabbe642da07cc739c76d2e80a472207c3ba91b84f547f13
 		Size: 272.5 KB (272534 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f44350459ea0b30f72d9fd9830dcf5f1d009aa6f59f257afeb41841991e34a4a`  
-		Last Modified: Fri, 16 Jan 2026 20:49:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:27:41 GMT  
 		Size: 15.1 KB (15076 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19821,7 +19821,7 @@ CMD ["erl"]
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a3bf33f2f08d8c4d1e2acf2581338ee2f04a57ac5de183e568eb51e6f2c7b344`  
-		Last Modified: Fri, 16 Jan 2026 18:31:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:45 GMT  
 		Size: 76.0 MB (76014120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -19845,7 +19845,7 @@ $ docker pull erlang@sha256:c17c67a8392461199c343fd5d64dc57cff688f8b094cd25ac19e
 		Size: 3.8 MB (3824753 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:443152e5203ad7ebcc75d426f3a000809808443b289a1b3b04f66cca7ddd09cc`  
-		Last Modified: Fri, 16 Jan 2026 18:30:43 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:07 GMT  
 		Size: 13.6 KB (13636 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19880,7 +19880,7 @@ CMD ["erl"]
 		Size: 46.0 MB (46016731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:98fd648ee23ebab4e96bf2b536239bde0a5e6831a164cf3bcf5fad48c8005572`  
-		Last Modified: Fri, 16 Jan 2026 18:30:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:01 GMT  
 		Size: 65.5 MB (65525736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -19900,7 +19900,7 @@ $ docker pull erlang@sha256:a31e7ac6c9b06f20e0f62acca6bf0ef26b97ebdf0387c407cd04
 
 -	Layers:
 	-	`sha256:874f34358c417889b471b7eff2b20c414bdafd8460eded718dcaf3a7b1179570`  
-		Last Modified: Fri, 16 Jan 2026 20:49:11 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:30:45 GMT  
 		Size: 3.8 MB (3828561 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3b8fb4c6563345dfb47c7ae89de8266ae7ea8c50d7e93b0765731f8af130daae`  
@@ -19963,7 +19963,7 @@ $ docker pull erlang@sha256:c16c8e9fe831957a4ae9e0f6db2c260f5576c917426d08f67b35
 		Size: 3.8 MB (3826986 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:79a68ea6b863e740e5c8177bee27918241d4dd97151162235d1da80ce7b30ce7`  
-		Last Modified: Fri, 16 Jan 2026 18:28:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:19 GMT  
 		Size: 13.7 KB (13716 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19998,7 +19998,7 @@ CMD ["erl"]
 		Size: 48.4 MB (48366072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a117d99694fe293f35f9859cbc8fb87258e5b213c23c26784828d505f94c3e9`  
-		Last Modified: Fri, 16 Jan 2026 18:28:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:54 GMT  
 		Size: 73.8 MB (73760186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -20018,7 +20018,7 @@ $ docker pull erlang@sha256:4e5ce88680fff116e476c794feb6ebf290a0f02584e7f6394a30
 
 -	Layers:
 	-	`sha256:8aa8b933c3c6a045f18e23d5666ee6d9704dd4ed5a3646752dac1e89bb5cf761`  
-		Last Modified: Fri, 16 Jan 2026 18:28:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:23 GMT  
 		Size: 3.8 MB (3825014 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cea864e003f65f264e51ff85d02e3e91bd5aa904c24c2bd657480458030d861b`  
@@ -20167,11 +20167,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:7fcf9f2b462d6af06c3ad2420b999e6b092984c4723ebac480c428a5d837d3b7`  
-		Last Modified: Tue, 13 Jan 2026 00:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:39 GMT  
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a2cbc3baa4e9b4a1e362f93de0220b749a6dcc28d61aed63d51b25cdceb0950`  
-		Last Modified: Fri, 16 Jan 2026 18:31:28 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:07 GMT  
 		Size: 67.2 MB (67248504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -20191,7 +20191,7 @@ $ docker pull erlang@sha256:b642c0e0d082e1bfa321f636edd9c41f621b761b95a0a169fa23
 
 -	Layers:
 	-	`sha256:980ceb459f7a1e7022662dce9aca207280e83f10ef188f522f42e6ed0dd80a51`  
-		Last Modified: Fri, 16 Jan 2026 18:31:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:51:04 GMT  
 		Size: 3.8 MB (3829203 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c555b45439000cc21e9ad14e254d86ccfaaa78be9b51a64ec7516da7e3a8f9fc`  
@@ -20226,11 +20226,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66002539d572ac5ed54291d49c84bb002b3ce8673135fe4a365b6e48e4cde1dc`  
-		Last Modified: Fri, 16 Jan 2026 18:28:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:27:48 GMT  
 		Size: 65.9 MB (65912794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -20250,11 +20250,11 @@ $ docker pull erlang@sha256:c9c5173f52d1a7a8897710fd9904cf533aadeeb38e3e2ff04830
 
 -	Layers:
 	-	`sha256:2caa9afb346d7f536337935768d1a47ceceb9e56d0241cf3b0948f002230c49a`  
-		Last Modified: Fri, 16 Jan 2026 20:51:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:27:47 GMT  
 		Size: 3.8 MB (3821581 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dd181e0339bc2ae24eef5ee4cc924c27b9b970d8cad1b13f8ca4cd136a651047`  
-		Last Modified: Fri, 16 Jan 2026 18:27:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:51:14 GMT  
 		Size: 13.6 KB (13634 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20332,7 +20332,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 67.8 MB (67786776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26d823e3848f3d74363d9b5b44f39f2d2f81a99a37d8c7fb54831a489a32e999`  
-		Last Modified: Tue, 13 Jan 2026 04:50:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:12:51 GMT  
 		Size: 236.0 MB (236001828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d00ddbe20790f74e75fe43be8f9666dc99e7182cb141bef8e92d93269a30cf1c`  
@@ -20340,11 +20340,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 292.3 MB (292309557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48524c6830772e3f844be7aa96eb3809b698bdc00e681dbc7789f632fc39ecfe`  
-		Last Modified: Thu, 15 Jan 2026 19:36:53 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
 		Size: 191.5 KB (191494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d9c3e3b3718c67d08794cad1444e6a17df66c70fb7661a594d3ae1531560d83`  
-		Last Modified: Thu, 15 Jan 2026 19:36:54 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
 		Size: 819.8 KB (819810 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -20368,7 +20368,7 @@ $ docker pull erlang@sha256:459057065c2a9d641651101ba7b5b83a07223305b7d051bfb4f7
 		Size: 22.0 MB (22048183 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a96a1430c57e88c5b7ae2a1e2c5706bafbb9a4b3c2d6a0d60cc93917ff944104`  
-		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:47:57 GMT  
 		Size: 19.2 KB (19234 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20411,19 +20411,19 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:16d4329ceaa8dc305221873389c356e4c5bf3cdb5b245a79ff75a1b1806f3778`  
-		Last Modified: Tue, 13 Jan 2026 00:42:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:16 GMT  
 		Size: 47.4 MB (47448362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad4ac90147d1f1c4bc0ab2c1c245fb4105c9ad56d7e5e75726e8ec474c79f05f`  
-		Last Modified: Tue, 13 Jan 2026 02:30:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:29:57 GMT  
 		Size: 24.4 MB (24353866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0b0fe9087175027e9a76a41e2c394603c9345a19f6296b58e7044e930aafb08`  
-		Last Modified: Tue, 13 Jan 2026 04:08:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:08:29 GMT  
 		Size: 65.3 MB (65318536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2a03a66aae139adaadd8a808ca96b9e5d75cefae43a5eca814727bc64c805f6`  
-		Last Modified: Tue, 13 Jan 2026 05:14:31 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:13:40 GMT  
 		Size: 205.7 MB (205729923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f6ec2cfd0437af54d152362dc7b9c6ad3bee132cd4e47216d24ff4674ab9bfb`  
@@ -20459,7 +20459,7 @@ $ docker pull erlang@sha256:af6d5111a1d6fe4d5f436177f55f8ba77d4a9b9280399fdfba08
 		Size: 21.8 MB (21772168 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dcfba0bd263aba3ce0f4dd1d7156b2d0f33dbe62b5e903ce5d4c3cdb5aab1aa4`  
-		Last Modified: Thu, 15 Jan 2026 23:48:27 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:16 GMT  
 		Size: 19.3 KB (19347 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20502,7 +20502,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:0f4296a8ece8abd5a409e5fbdb0cf93258815e4fec9dc768c39a63faf3c16052`  
-		Last Modified: Tue, 13 Jan 2026 00:42:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:18:45 GMT  
 		Size: 45.7 MB (45717820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3a8e700e2f18987ab9f97abcd0497d5dfc1706a8c057e685438ce3b71d8067c0`  
@@ -20514,11 +20514,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 62.7 MB (62713384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bc2c3dfa2d6df259da14558beefb7cee69246c0da0fdc440a04d5af7c8fb7dd`  
-		Last Modified: Tue, 13 Jan 2026 05:20:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:15:55 GMT  
 		Size: 193.3 MB (193306851 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f5d300aae4586cc437bad24323b3ffac9cbdc295d8175511f9f8ef1d07174fd`  
-		Last Modified: Thu, 15 Jan 2026 19:38:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:11 GMT  
 		Size: 258.6 MB (258562071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b899d178f8fe9d824a2f81674f1fc23945fb05b1f86cb9ad980510fa74ec8acd`  
@@ -20550,7 +20550,7 @@ $ docker pull erlang@sha256:b747d6f199a4f318f0af449c6037ed5c6e0935733a4a66651365
 		Size: 21.8 MB (21794175 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6203c82ef858320c62336eff7cf138463d909e5cf015f0d61868eb5ea8d4ae29`  
-		Last Modified: Thu, 15 Jan 2026 19:37:05 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:51 GMT  
 		Size: 19.3 KB (19348 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20609,15 +20609,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 226.1 MB (226143857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b14010ef5a8674cafa23f6d0917a8acc9adb4d0b9817930956a779fb15f5799`  
-		Last Modified: Thu, 15 Jan 2026 19:37:11 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:39:10 GMT  
 		Size: 284.5 MB (284537291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f3e8cd9e3f6b4646e1139aadfb87c9c9afef85063f1ca952bdd447a7f369979`  
-		Last Modified: Thu, 15 Jan 2026 19:37:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:06 GMT  
 		Size: 191.5 KB (191492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b3a19f95f387ade96545e7b400d2abb995aa26d85c8e2d329264058cb9c42bcc`  
-		Last Modified: Thu, 15 Jan 2026 19:37:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:06 GMT  
 		Size: 819.8 KB (819809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -20688,7 +20688,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 50.8 MB (50798876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ef949cdbd6ae265d5239bd005e65c3d578de54ebe10474ccd2feb9708b6e1843`  
-		Last Modified: Tue, 13 Jan 2026 02:03:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:03:47 GMT  
 		Size: 26.8 MB (26778274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01ad78e3f6c783e58b723e0e1c78c005c2b612d1657c3a40830f5d7d97f9d85c`  
@@ -20708,7 +20708,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 191.5 KB (191482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6603fad54cabda488cef4ca2d3a92031f9d44a9e609a3ebe125161f5d20b666c`  
-		Last Modified: Thu, 15 Jan 2026 19:37:14 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:01 GMT  
 		Size: 819.8 KB (819808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -20732,7 +20732,7 @@ $ docker pull erlang@sha256:bb8e9e7e0142254522456fde7ebc5c58a2e6a9ed36b885088473
 		Size: 22.0 MB (22016152 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a77c0af0ea3dea8b13cb85f001c503c95bb63a0884bb438a8592aadf723b22bd`  
-		Last Modified: Thu, 15 Jan 2026 19:37:01 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:49:39 GMT  
 		Size: 19.2 KB (19193 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20775,7 +20775,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f21554c0ffe7aa9121703873815aca94dbbdf6352a46266dc923fc9e36d0d58a`  
@@ -20783,7 +20783,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 27.0 MB (26998052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb58d20828d54df35a08218c574236606c9e3ab14d0f2ddf036e12abcf8c85d6`  
-		Last Modified: Tue, 13 Jan 2026 15:19:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 15:20:19 GMT  
 		Size: 73.0 MB (73037608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:08e13e772271d599b914654801e760b6e090a2d2a51765f2bd85981f821d1eb0`  
@@ -20819,11 +20819,11 @@ $ docker pull erlang@sha256:d169d146883dccefc893a9e8f09fb28c11e93abd779839252b02
 
 -	Layers:
 	-	`sha256:d013c974d28b15af20492ca923b6e850bb08e9b7066e32b796a73d918cf2c548`  
-		Last Modified: Thu, 15 Jan 2026 19:45:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:50:03 GMT  
 		Size: 22.0 MB (22008001 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:55cb678da2b343d956e951bfda5c7febbb1f327d15e103138ef0243b353471ed`  
-		Last Modified: Thu, 15 Jan 2026 19:45:16 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:50:04 GMT  
 		Size: 19.3 KB (19288 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20866,11 +20866,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:9de0288d81a9602539c9f3015fc521191e25eebfe6442c22cb974ea3a486f3a8`  
-		Last Modified: Tue, 13 Jan 2026 00:41:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:46 GMT  
 		Size: 49.3 MB (49348704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:629a9411869af8d59bfb1073c3573138af1f96d808896b3f2fd14cf62fca6dba`  
-		Last Modified: Tue, 13 Jan 2026 02:11:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:11:26 GMT  
 		Size: 26.8 MB (26792892 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff54b33211ee85001fc045dcc86b026876894b17d1d6f873a415014f68cb0c9f`  
@@ -20910,7 +20910,7 @@ $ docker pull erlang@sha256:bfa2971f87199a94760778f71d6b9aa21f9179e3a3ea585bce3b
 
 -	Layers:
 	-	`sha256:3d6a4c1454c2fe374c5ddd9b77f6c4985998b22e9f7a698a8243ae14d6cf7afe`  
-		Last Modified: Thu, 15 Jan 2026 23:50:29 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:39:01 GMT  
 		Size: 21.7 MB (21697941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5201d187aa8929fed6f71f4d8768e9c53b7893b06c030b67070893b075b27f64`  
@@ -20972,7 +20972,7 @@ CMD ["erl"]
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:efb6163fa41adf8d3c086e59b041c5a9f17dfe45f2279fa765f3dfc47a9a7ff0`  
-		Last Modified: Thu, 15 Jan 2026 19:35:19 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:06 GMT  
 		Size: 52.4 MB (52398831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -21033,7 +21033,7 @@ CMD ["erl"]
 		Size: 3.3 MB (3279388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:921c61009dce451a766369c922cb67d245a8c5e59246c47be74c4e719399f85b`  
-		Last Modified: Thu, 15 Jan 2026 19:35:21 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:35 GMT  
 		Size: 49.9 MB (49907590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -21053,11 +21053,11 @@ $ docker pull erlang@sha256:929d0b3ec26a70e7f7ee8382b06a52abb17538f58139ddfaa339
 
 -	Layers:
 	-	`sha256:bc01bee8c0d53d9323c679ebeaa377d88ad6dc1501c5192dce9b697aa06d09eb`  
-		Last Modified: Thu, 15 Jan 2026 22:47:50 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:20 GMT  
 		Size: 277.0 KB (276992 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5288e6d53df4d6f01d555493b598692ba12920cad867039b914672e2cba302ed`  
-		Last Modified: Thu, 15 Jan 2026 19:35:19 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:51 GMT  
 		Size: 15.5 KB (15457 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21090,7 +21090,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:f6b4fb9446345fcad2db26eac181fef6c0a919c8a4fcccd3bea5deb7f6dff67e`  
-		Last Modified: Thu, 18 Dec 2025 00:12:50 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:35 GMT  
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b2ba83da12930ed543730c4d032b14a8dc6004208bdafe745b74323db7f4e1b`  
@@ -21114,11 +21114,11 @@ $ docker pull erlang@sha256:fc494146ce284d9c18d7354769006970a75e910f73ed6a776953
 
 -	Layers:
 	-	`sha256:0e40f698fa815fce78e7cf747105f3c9575e4f368921b22cad73d07285b8ab75`  
-		Last Modified: Thu, 15 Jan 2026 22:47:43 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:42 GMT  
 		Size: 279.0 KB (279006 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:15693207aeb330c724bf05594b11c010a1a115a0a8006c7797752ea04d86cf11`  
-		Last Modified: Thu, 15 Jan 2026 19:35:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:44 GMT  
 		Size: 15.5 KB (15485 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21155,7 +21155,7 @@ CMD ["erl"]
 		Size: 3.7 MB (3686100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64cb483ffc49b7e5eec25ecc060955912d15edbe2c2a4692b376033707d91817`  
-		Last Modified: Thu, 15 Jan 2026 19:35:32 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:20 GMT  
 		Size: 50.8 MB (50757232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -21179,7 +21179,7 @@ $ docker pull erlang@sha256:0b8c615b4855962257a95d5e6f768697256c93a48abcf72e1f85
 		Size: 273.8 KB (273846 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0ccb4d973742d6160dd54159e89a6fb9524a6a923c7394830ebf37735ede5f6c`  
-		Last Modified: Thu, 15 Jan 2026 19:35:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:42 GMT  
 		Size: 15.3 KB (15332 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21216,7 +21216,7 @@ CMD ["erl"]
 		Size: 3.8 MB (3827755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:47a49d59a530a90140f5e91be797dba333168a9a9f48330db34a60b88a7e096e`  
-		Last Modified: Thu, 15 Jan 2026 19:46:08 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:46:20 GMT  
 		Size: 51.0 MB (51048772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -21240,7 +21240,7 @@ $ docker pull erlang@sha256:f9fb2783c05667e510d759750b2f0c43a523b80406ea6b63863c
 		Size: 274.0 KB (273997 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:59739ecd802d4e591e6b548c2be2a691267faa4dcfa17c5bb187b080b957f026`  
-		Last Modified: Thu, 15 Jan 2026 22:47:47 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:46:06 GMT  
 		Size: 15.4 KB (15419 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21297,7 +21297,7 @@ $ docker pull erlang@sha256:1c7d837a356433ece4ba272e54304b631749c59b5a52244891d7
 
 -	Layers:
 	-	`sha256:7ea2c12595c83457b4b360bf1e47be533cc1ceda90ede37ee1a4518157e5de62`  
-		Last Modified: Thu, 15 Jan 2026 19:37:00 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:55 GMT  
 		Size: 274.0 KB (273957 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:80cc5c1262bf4a5c1e7357125cebc4bfa5dfb08bde69b052d38aa7895c2636a2`  
@@ -21379,11 +21379,11 @@ $ docker pull erlang@sha256:fef20de332b6912ef1200d39d9a19f58794c6b8f80f12ca22d1f
 
 -	Layers:
 	-	`sha256:d7f4ea51bd7fab12cf8c6111e07cc2b65fd51c8241be3c893cf88265205c8a4a`  
-		Last Modified: Thu, 15 Jan 2026 19:35:22 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:25 GMT  
 		Size: 3.3 MB (3283834 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bc2c0918c8e26d91268471a825a6f872a548498a1f84aacecbb955654001ef39`  
-		Last Modified: Thu, 15 Jan 2026 23:48:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:21 GMT  
 		Size: 13.9 KB (13922 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21442,7 +21442,7 @@ $ docker pull erlang@sha256:f5d71c46a31fcb491a3f28b257dcbd6ade19ef1be29034247659
 		Size: 3.8 MB (3828056 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d8c5c634919ee052cca6214dffc2f5e111b8da281edd273274bf2fa89fbfa702`  
-		Last Modified: Thu, 11 Dec 2025 20:48:13 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:27:10 GMT  
 		Size: 14.0 KB (14009 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21477,7 +21477,7 @@ CMD ["erl"]
 		Size: 44.2 MB (44196066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e656ea89dded4641f3cfae04edeb56bdaf27e5ade23d29c71bf377d6a3a515ba`  
-		Last Modified: Thu, 11 Dec 2025 19:26:19 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:26:40 GMT  
 		Size: 69.9 MB (69914283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -21501,7 +21501,7 @@ $ docker pull erlang@sha256:dceef99c554f807f9b33461f23cedd54ed45738dd3d906ea7367
 		Size: 3.8 MB (3826481 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f55afd26957dc4411249f6d93d18e207551aba20237ad22c9b3a2549da2001ee`  
-		Last Modified: Thu, 11 Dec 2025 19:26:17 GMT  
+		Last Modified: Thu, 11 Dec 2025 20:48:19 GMT  
 		Size: 14.0 KB (14010 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21536,7 +21536,7 @@ CMD ["erl"]
 		Size: 49.6 MB (49648083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3740e462c6deac44775be8c479dc902841dd52d4caeaf17d961c5a45e1b9806f`  
-		Last Modified: Thu, 15 Jan 2026 19:35:55 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:43 GMT  
 		Size: 77.3 MB (77291144 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -21556,7 +21556,7 @@ $ docker pull erlang@sha256:c801da29ac99f5ea44e6a511952fda7e7eb3b2c93d3f4df2b68e
 
 -	Layers:
 	-	`sha256:ea9c3283fc7a676cf1ed5e640402ab746ae3b55642f3e62fb4b6c79ddf9ceb42`  
-		Last Modified: Thu, 15 Jan 2026 19:35:41 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:37 GMT  
 		Size: 3.3 MB (3285369 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0b054061a1d68e030bf82756de6b7398b7508f2e450aba4e79a05b4e758a4bbd`  
@@ -21595,7 +21595,7 @@ CMD ["erl"]
 		Size: 50.8 MB (50798876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c55e88321b383cafc280388ad8cf94c1b064dba056a883b9943cfa882e78d307`  
-		Last Modified: Thu, 15 Jan 2026 19:36:01 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:47 GMT  
 		Size: 69.3 MB (69346145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -21619,7 +21619,7 @@ $ docker pull erlang@sha256:e68f2e51160204b546854deed22938568de6331a90e67f1340ea
 		Size: 3.3 MB (3281004 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e4b0ce2210bf9b26c7a2618f3befef035730d19a8e75b530224474dcbe87ee3a`  
-		Last Modified: Thu, 15 Jan 2026 22:50:24 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:45 GMT  
 		Size: 13.9 KB (13885 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21650,11 +21650,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:99ddd4641de7fcdff6bca297036156bfa629c5532e7716eceb2d23a8ad076c69`  
-		Last Modified: Thu, 15 Jan 2026 19:42:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:42:20 GMT  
 		Size: 70.3 MB (70313836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -21674,11 +21674,11 @@ $ docker pull erlang@sha256:d6130f9b3d8b624612172abfd33cb79a4f283a160b6bb40f2e75
 
 -	Layers:
 	-	`sha256:228aaf85504242b614b74edad064597f965651e50488a0810660024b8a8ab9de`  
-		Last Modified: Thu, 15 Jan 2026 22:48:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:42:18 GMT  
 		Size: 3.3 MB (3287425 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8a98dfa4fbf1d83babb7fdf933127fa5fed923b8bf3c6389065c0d0187f18d84`  
-		Last Modified: Thu, 15 Jan 2026 19:42:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:48:35 GMT  
 		Size: 14.0 KB (13972 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21709,7 +21709,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:9de0288d81a9602539c9f3015fc521191e25eebfe6442c22cb974ea3a486f3a8`  
-		Last Modified: Tue, 13 Jan 2026 00:41:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:46 GMT  
 		Size: 49.3 MB (49348704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74ed3e8292312e8f4303fe9387e35feae6bd0a55dd4551e2063ef743f2a76706`  
@@ -21733,11 +21733,11 @@ $ docker pull erlang@sha256:9dc45be02799dd8d67607dbd7c8295d22aca377ab1d368f0b686
 
 -	Layers:
 	-	`sha256:a1b1f9b376004e58f7ea1fd48ec167ff1b3436b941bae305d619c8d442121a7a`  
-		Last Modified: Thu, 15 Jan 2026 23:48:49 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:08 GMT  
 		Size: 3.3 MB (3285275 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:848094a9443c87059f713b555234b3396721497d5062f3b4299f111dbabd77f7`  
-		Last Modified: Thu, 15 Jan 2026 23:48:50 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:08 GMT  
 		Size: 13.9 KB (13921 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21815,7 +21815,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 67.8 MB (67786776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26d823e3848f3d74363d9b5b44f39f2d2f81a99a37d8c7fb54831a489a32e999`  
-		Last Modified: Tue, 13 Jan 2026 04:50:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:12:51 GMT  
 		Size: 236.0 MB (236001828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d00ddbe20790f74e75fe43be8f9666dc99e7182cb141bef8e92d93269a30cf1c`  
@@ -21823,11 +21823,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 292.3 MB (292309557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48524c6830772e3f844be7aa96eb3809b698bdc00e681dbc7789f632fc39ecfe`  
-		Last Modified: Thu, 15 Jan 2026 19:36:53 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
 		Size: 191.5 KB (191494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d9c3e3b3718c67d08794cad1444e6a17df66c70fb7661a594d3ae1531560d83`  
-		Last Modified: Thu, 15 Jan 2026 19:36:54 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
 		Size: 819.8 KB (819810 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -21851,7 +21851,7 @@ $ docker pull erlang@sha256:459057065c2a9d641651101ba7b5b83a07223305b7d051bfb4f7
 		Size: 22.0 MB (22048183 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a96a1430c57e88c5b7ae2a1e2c5706bafbb9a4b3c2d6a0d60cc93917ff944104`  
-		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:47:57 GMT  
 		Size: 19.2 KB (19234 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21894,19 +21894,19 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:16d4329ceaa8dc305221873389c356e4c5bf3cdb5b245a79ff75a1b1806f3778`  
-		Last Modified: Tue, 13 Jan 2026 00:42:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:16 GMT  
 		Size: 47.4 MB (47448362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad4ac90147d1f1c4bc0ab2c1c245fb4105c9ad56d7e5e75726e8ec474c79f05f`  
-		Last Modified: Tue, 13 Jan 2026 02:30:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:29:57 GMT  
 		Size: 24.4 MB (24353866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0b0fe9087175027e9a76a41e2c394603c9345a19f6296b58e7044e930aafb08`  
-		Last Modified: Tue, 13 Jan 2026 04:08:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:08:29 GMT  
 		Size: 65.3 MB (65318536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2a03a66aae139adaadd8a808ca96b9e5d75cefae43a5eca814727bc64c805f6`  
-		Last Modified: Tue, 13 Jan 2026 05:14:31 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:13:40 GMT  
 		Size: 205.7 MB (205729923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f6ec2cfd0437af54d152362dc7b9c6ad3bee132cd4e47216d24ff4674ab9bfb`  
@@ -21942,7 +21942,7 @@ $ docker pull erlang@sha256:af6d5111a1d6fe4d5f436177f55f8ba77d4a9b9280399fdfba08
 		Size: 21.8 MB (21772168 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dcfba0bd263aba3ce0f4dd1d7156b2d0f33dbe62b5e903ce5d4c3cdb5aab1aa4`  
-		Last Modified: Thu, 15 Jan 2026 23:48:27 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:16 GMT  
 		Size: 19.3 KB (19347 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21985,7 +21985,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:0f4296a8ece8abd5a409e5fbdb0cf93258815e4fec9dc768c39a63faf3c16052`  
-		Last Modified: Tue, 13 Jan 2026 00:42:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:18:45 GMT  
 		Size: 45.7 MB (45717820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3a8e700e2f18987ab9f97abcd0497d5dfc1706a8c057e685438ce3b71d8067c0`  
@@ -21997,11 +21997,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 62.7 MB (62713384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bc2c3dfa2d6df259da14558beefb7cee69246c0da0fdc440a04d5af7c8fb7dd`  
-		Last Modified: Tue, 13 Jan 2026 05:20:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:15:55 GMT  
 		Size: 193.3 MB (193306851 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f5d300aae4586cc437bad24323b3ffac9cbdc295d8175511f9f8ef1d07174fd`  
-		Last Modified: Thu, 15 Jan 2026 19:38:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:11 GMT  
 		Size: 258.6 MB (258562071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b899d178f8fe9d824a2f81674f1fc23945fb05b1f86cb9ad980510fa74ec8acd`  
@@ -22033,7 +22033,7 @@ $ docker pull erlang@sha256:b747d6f199a4f318f0af449c6037ed5c6e0935733a4a66651365
 		Size: 21.8 MB (21794175 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6203c82ef858320c62336eff7cf138463d909e5cf015f0d61868eb5ea8d4ae29`  
-		Last Modified: Thu, 15 Jan 2026 19:37:05 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:51 GMT  
 		Size: 19.3 KB (19348 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22092,15 +22092,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 226.1 MB (226143857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b14010ef5a8674cafa23f6d0917a8acc9adb4d0b9817930956a779fb15f5799`  
-		Last Modified: Thu, 15 Jan 2026 19:37:11 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:39:10 GMT  
 		Size: 284.5 MB (284537291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f3e8cd9e3f6b4646e1139aadfb87c9c9afef85063f1ca952bdd447a7f369979`  
-		Last Modified: Thu, 15 Jan 2026 19:37:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:06 GMT  
 		Size: 191.5 KB (191492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b3a19f95f387ade96545e7b400d2abb995aa26d85c8e2d329264058cb9c42bcc`  
-		Last Modified: Thu, 15 Jan 2026 19:37:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:06 GMT  
 		Size: 819.8 KB (819809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -22171,7 +22171,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 50.8 MB (50798876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ef949cdbd6ae265d5239bd005e65c3d578de54ebe10474ccd2feb9708b6e1843`  
-		Last Modified: Tue, 13 Jan 2026 02:03:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:03:47 GMT  
 		Size: 26.8 MB (26778274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01ad78e3f6c783e58b723e0e1c78c005c2b612d1657c3a40830f5d7d97f9d85c`  
@@ -22191,7 +22191,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 191.5 KB (191482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6603fad54cabda488cef4ca2d3a92031f9d44a9e609a3ebe125161f5d20b666c`  
-		Last Modified: Thu, 15 Jan 2026 19:37:14 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:01 GMT  
 		Size: 819.8 KB (819808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -22215,7 +22215,7 @@ $ docker pull erlang@sha256:bb8e9e7e0142254522456fde7ebc5c58a2e6a9ed36b885088473
 		Size: 22.0 MB (22016152 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a77c0af0ea3dea8b13cb85f001c503c95bb63a0884bb438a8592aadf723b22bd`  
-		Last Modified: Thu, 15 Jan 2026 19:37:01 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:49:39 GMT  
 		Size: 19.2 KB (19193 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22258,7 +22258,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f21554c0ffe7aa9121703873815aca94dbbdf6352a46266dc923fc9e36d0d58a`  
@@ -22266,7 +22266,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 27.0 MB (26998052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb58d20828d54df35a08218c574236606c9e3ab14d0f2ddf036e12abcf8c85d6`  
-		Last Modified: Tue, 13 Jan 2026 15:19:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 15:20:19 GMT  
 		Size: 73.0 MB (73037608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:08e13e772271d599b914654801e760b6e090a2d2a51765f2bd85981f821d1eb0`  
@@ -22302,11 +22302,11 @@ $ docker pull erlang@sha256:d169d146883dccefc893a9e8f09fb28c11e93abd779839252b02
 
 -	Layers:
 	-	`sha256:d013c974d28b15af20492ca923b6e850bb08e9b7066e32b796a73d918cf2c548`  
-		Last Modified: Thu, 15 Jan 2026 19:45:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:50:03 GMT  
 		Size: 22.0 MB (22008001 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:55cb678da2b343d956e951bfda5c7febbb1f327d15e103138ef0243b353471ed`  
-		Last Modified: Thu, 15 Jan 2026 19:45:16 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:50:04 GMT  
 		Size: 19.3 KB (19288 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22349,11 +22349,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:9de0288d81a9602539c9f3015fc521191e25eebfe6442c22cb974ea3a486f3a8`  
-		Last Modified: Tue, 13 Jan 2026 00:41:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:46 GMT  
 		Size: 49.3 MB (49348704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:629a9411869af8d59bfb1073c3573138af1f96d808896b3f2fd14cf62fca6dba`  
-		Last Modified: Tue, 13 Jan 2026 02:11:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:11:26 GMT  
 		Size: 26.8 MB (26792892 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff54b33211ee85001fc045dcc86b026876894b17d1d6f873a415014f68cb0c9f`  
@@ -22393,7 +22393,7 @@ $ docker pull erlang@sha256:bfa2971f87199a94760778f71d6b9aa21f9179e3a3ea585bce3b
 
 -	Layers:
 	-	`sha256:3d6a4c1454c2fe374c5ddd9b77f6c4985998b22e9f7a698a8243ae14d6cf7afe`  
-		Last Modified: Thu, 15 Jan 2026 23:50:29 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:39:01 GMT  
 		Size: 21.7 MB (21697941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5201d187aa8929fed6f71f4d8768e9c53b7893b06c030b67070893b075b27f64`  
@@ -22455,7 +22455,7 @@ CMD ["erl"]
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:efb6163fa41adf8d3c086e59b041c5a9f17dfe45f2279fa765f3dfc47a9a7ff0`  
-		Last Modified: Thu, 15 Jan 2026 19:35:19 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:06 GMT  
 		Size: 52.4 MB (52398831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -22516,7 +22516,7 @@ CMD ["erl"]
 		Size: 3.3 MB (3279388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:921c61009dce451a766369c922cb67d245a8c5e59246c47be74c4e719399f85b`  
-		Last Modified: Thu, 15 Jan 2026 19:35:21 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:35 GMT  
 		Size: 49.9 MB (49907590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -22536,11 +22536,11 @@ $ docker pull erlang@sha256:929d0b3ec26a70e7f7ee8382b06a52abb17538f58139ddfaa339
 
 -	Layers:
 	-	`sha256:bc01bee8c0d53d9323c679ebeaa377d88ad6dc1501c5192dce9b697aa06d09eb`  
-		Last Modified: Thu, 15 Jan 2026 22:47:50 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:20 GMT  
 		Size: 277.0 KB (276992 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5288e6d53df4d6f01d555493b598692ba12920cad867039b914672e2cba302ed`  
-		Last Modified: Thu, 15 Jan 2026 19:35:19 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:51 GMT  
 		Size: 15.5 KB (15457 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22573,7 +22573,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:f6b4fb9446345fcad2db26eac181fef6c0a919c8a4fcccd3bea5deb7f6dff67e`  
-		Last Modified: Thu, 18 Dec 2025 00:12:50 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:35 GMT  
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b2ba83da12930ed543730c4d032b14a8dc6004208bdafe745b74323db7f4e1b`  
@@ -22597,11 +22597,11 @@ $ docker pull erlang@sha256:fc494146ce284d9c18d7354769006970a75e910f73ed6a776953
 
 -	Layers:
 	-	`sha256:0e40f698fa815fce78e7cf747105f3c9575e4f368921b22cad73d07285b8ab75`  
-		Last Modified: Thu, 15 Jan 2026 22:47:43 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:42 GMT  
 		Size: 279.0 KB (279006 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:15693207aeb330c724bf05594b11c010a1a115a0a8006c7797752ea04d86cf11`  
-		Last Modified: Thu, 15 Jan 2026 19:35:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:44 GMT  
 		Size: 15.5 KB (15485 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22638,7 +22638,7 @@ CMD ["erl"]
 		Size: 3.7 MB (3686100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64cb483ffc49b7e5eec25ecc060955912d15edbe2c2a4692b376033707d91817`  
-		Last Modified: Thu, 15 Jan 2026 19:35:32 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:20 GMT  
 		Size: 50.8 MB (50757232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -22662,7 +22662,7 @@ $ docker pull erlang@sha256:0b8c615b4855962257a95d5e6f768697256c93a48abcf72e1f85
 		Size: 273.8 KB (273846 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0ccb4d973742d6160dd54159e89a6fb9524a6a923c7394830ebf37735ede5f6c`  
-		Last Modified: Thu, 15 Jan 2026 19:35:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:42 GMT  
 		Size: 15.3 KB (15332 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22699,7 +22699,7 @@ CMD ["erl"]
 		Size: 3.8 MB (3827755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:47a49d59a530a90140f5e91be797dba333168a9a9f48330db34a60b88a7e096e`  
-		Last Modified: Thu, 15 Jan 2026 19:46:08 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:46:20 GMT  
 		Size: 51.0 MB (51048772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -22723,7 +22723,7 @@ $ docker pull erlang@sha256:f9fb2783c05667e510d759750b2f0c43a523b80406ea6b63863c
 		Size: 274.0 KB (273997 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:59739ecd802d4e591e6b548c2be2a691267faa4dcfa17c5bb187b080b957f026`  
-		Last Modified: Thu, 15 Jan 2026 22:47:47 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:46:06 GMT  
 		Size: 15.4 KB (15419 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22780,7 +22780,7 @@ $ docker pull erlang@sha256:1c7d837a356433ece4ba272e54304b631749c59b5a52244891d7
 
 -	Layers:
 	-	`sha256:7ea2c12595c83457b4b360bf1e47be533cc1ceda90ede37ee1a4518157e5de62`  
-		Last Modified: Thu, 15 Jan 2026 19:37:00 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:55 GMT  
 		Size: 274.0 KB (273957 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:80cc5c1262bf4a5c1e7357125cebc4bfa5dfb08bde69b052d38aa7895c2636a2`  
@@ -22862,11 +22862,11 @@ $ docker pull erlang@sha256:fef20de332b6912ef1200d39d9a19f58794c6b8f80f12ca22d1f
 
 -	Layers:
 	-	`sha256:d7f4ea51bd7fab12cf8c6111e07cc2b65fd51c8241be3c893cf88265205c8a4a`  
-		Last Modified: Thu, 15 Jan 2026 19:35:22 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:25 GMT  
 		Size: 3.3 MB (3283834 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bc2c0918c8e26d91268471a825a6f872a548498a1f84aacecbb955654001ef39`  
-		Last Modified: Thu, 15 Jan 2026 23:48:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:21 GMT  
 		Size: 13.9 KB (13922 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22925,7 +22925,7 @@ $ docker pull erlang@sha256:f5d71c46a31fcb491a3f28b257dcbd6ade19ef1be29034247659
 		Size: 3.8 MB (3828056 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d8c5c634919ee052cca6214dffc2f5e111b8da281edd273274bf2fa89fbfa702`  
-		Last Modified: Thu, 11 Dec 2025 20:48:13 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:27:10 GMT  
 		Size: 14.0 KB (14009 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22960,7 +22960,7 @@ CMD ["erl"]
 		Size: 44.2 MB (44196066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e656ea89dded4641f3cfae04edeb56bdaf27e5ade23d29c71bf377d6a3a515ba`  
-		Last Modified: Thu, 11 Dec 2025 19:26:19 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:26:40 GMT  
 		Size: 69.9 MB (69914283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -22984,7 +22984,7 @@ $ docker pull erlang@sha256:dceef99c554f807f9b33461f23cedd54ed45738dd3d906ea7367
 		Size: 3.8 MB (3826481 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f55afd26957dc4411249f6d93d18e207551aba20237ad22c9b3a2549da2001ee`  
-		Last Modified: Thu, 11 Dec 2025 19:26:17 GMT  
+		Last Modified: Thu, 11 Dec 2025 20:48:19 GMT  
 		Size: 14.0 KB (14010 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23019,7 +23019,7 @@ CMD ["erl"]
 		Size: 49.6 MB (49648083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3740e462c6deac44775be8c479dc902841dd52d4caeaf17d961c5a45e1b9806f`  
-		Last Modified: Thu, 15 Jan 2026 19:35:55 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:43 GMT  
 		Size: 77.3 MB (77291144 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -23039,7 +23039,7 @@ $ docker pull erlang@sha256:c801da29ac99f5ea44e6a511952fda7e7eb3b2c93d3f4df2b68e
 
 -	Layers:
 	-	`sha256:ea9c3283fc7a676cf1ed5e640402ab746ae3b55642f3e62fb4b6c79ddf9ceb42`  
-		Last Modified: Thu, 15 Jan 2026 19:35:41 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:37 GMT  
 		Size: 3.3 MB (3285369 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0b054061a1d68e030bf82756de6b7398b7508f2e450aba4e79a05b4e758a4bbd`  
@@ -23078,7 +23078,7 @@ CMD ["erl"]
 		Size: 50.8 MB (50798876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c55e88321b383cafc280388ad8cf94c1b064dba056a883b9943cfa882e78d307`  
-		Last Modified: Thu, 15 Jan 2026 19:36:01 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:47 GMT  
 		Size: 69.3 MB (69346145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -23102,7 +23102,7 @@ $ docker pull erlang@sha256:e68f2e51160204b546854deed22938568de6331a90e67f1340ea
 		Size: 3.3 MB (3281004 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e4b0ce2210bf9b26c7a2618f3befef035730d19a8e75b530224474dcbe87ee3a`  
-		Last Modified: Thu, 15 Jan 2026 22:50:24 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:45 GMT  
 		Size: 13.9 KB (13885 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23133,11 +23133,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:99ddd4641de7fcdff6bca297036156bfa629c5532e7716eceb2d23a8ad076c69`  
-		Last Modified: Thu, 15 Jan 2026 19:42:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:42:20 GMT  
 		Size: 70.3 MB (70313836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -23157,11 +23157,11 @@ $ docker pull erlang@sha256:d6130f9b3d8b624612172abfd33cb79a4f283a160b6bb40f2e75
 
 -	Layers:
 	-	`sha256:228aaf85504242b614b74edad064597f965651e50488a0810660024b8a8ab9de`  
-		Last Modified: Thu, 15 Jan 2026 22:48:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:42:18 GMT  
 		Size: 3.3 MB (3287425 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8a98dfa4fbf1d83babb7fdf933127fa5fed923b8bf3c6389065c0d0187f18d84`  
-		Last Modified: Thu, 15 Jan 2026 19:42:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:48:35 GMT  
 		Size: 14.0 KB (13972 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23192,7 +23192,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:9de0288d81a9602539c9f3015fc521191e25eebfe6442c22cb974ea3a486f3a8`  
-		Last Modified: Tue, 13 Jan 2026 00:41:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:46 GMT  
 		Size: 49.3 MB (49348704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74ed3e8292312e8f4303fe9387e35feae6bd0a55dd4551e2063ef743f2a76706`  
@@ -23216,11 +23216,11 @@ $ docker pull erlang@sha256:9dc45be02799dd8d67607dbd7c8295d22aca377ab1d368f0b686
 
 -	Layers:
 	-	`sha256:a1b1f9b376004e58f7ea1fd48ec167ff1b3436b941bae305d619c8d442121a7a`  
-		Last Modified: Thu, 15 Jan 2026 23:48:49 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:08 GMT  
 		Size: 3.3 MB (3285275 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:848094a9443c87059f713b555234b3396721497d5062f3b4299f111dbabd77f7`  
-		Last Modified: Thu, 15 Jan 2026 23:48:50 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:08 GMT  
 		Size: 13.9 KB (13921 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23298,7 +23298,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 67.8 MB (67786776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26d823e3848f3d74363d9b5b44f39f2d2f81a99a37d8c7fb54831a489a32e999`  
-		Last Modified: Tue, 13 Jan 2026 04:50:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:12:51 GMT  
 		Size: 236.0 MB (236001828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d00ddbe20790f74e75fe43be8f9666dc99e7182cb141bef8e92d93269a30cf1c`  
@@ -23306,11 +23306,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 292.3 MB (292309557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48524c6830772e3f844be7aa96eb3809b698bdc00e681dbc7789f632fc39ecfe`  
-		Last Modified: Thu, 15 Jan 2026 19:36:53 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
 		Size: 191.5 KB (191494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d9c3e3b3718c67d08794cad1444e6a17df66c70fb7661a594d3ae1531560d83`  
-		Last Modified: Thu, 15 Jan 2026 19:36:54 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
 		Size: 819.8 KB (819810 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -23334,7 +23334,7 @@ $ docker pull erlang@sha256:459057065c2a9d641651101ba7b5b83a07223305b7d051bfb4f7
 		Size: 22.0 MB (22048183 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a96a1430c57e88c5b7ae2a1e2c5706bafbb9a4b3c2d6a0d60cc93917ff944104`  
-		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:47:57 GMT  
 		Size: 19.2 KB (19234 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23377,19 +23377,19 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:16d4329ceaa8dc305221873389c356e4c5bf3cdb5b245a79ff75a1b1806f3778`  
-		Last Modified: Tue, 13 Jan 2026 00:42:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:16 GMT  
 		Size: 47.4 MB (47448362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad4ac90147d1f1c4bc0ab2c1c245fb4105c9ad56d7e5e75726e8ec474c79f05f`  
-		Last Modified: Tue, 13 Jan 2026 02:30:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:29:57 GMT  
 		Size: 24.4 MB (24353866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0b0fe9087175027e9a76a41e2c394603c9345a19f6296b58e7044e930aafb08`  
-		Last Modified: Tue, 13 Jan 2026 04:08:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:08:29 GMT  
 		Size: 65.3 MB (65318536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2a03a66aae139adaadd8a808ca96b9e5d75cefae43a5eca814727bc64c805f6`  
-		Last Modified: Tue, 13 Jan 2026 05:14:31 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:13:40 GMT  
 		Size: 205.7 MB (205729923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f6ec2cfd0437af54d152362dc7b9c6ad3bee132cd4e47216d24ff4674ab9bfb`  
@@ -23425,7 +23425,7 @@ $ docker pull erlang@sha256:af6d5111a1d6fe4d5f436177f55f8ba77d4a9b9280399fdfba08
 		Size: 21.8 MB (21772168 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dcfba0bd263aba3ce0f4dd1d7156b2d0f33dbe62b5e903ce5d4c3cdb5aab1aa4`  
-		Last Modified: Thu, 15 Jan 2026 23:48:27 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:16 GMT  
 		Size: 19.3 KB (19347 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23468,7 +23468,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:0f4296a8ece8abd5a409e5fbdb0cf93258815e4fec9dc768c39a63faf3c16052`  
-		Last Modified: Tue, 13 Jan 2026 00:42:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:18:45 GMT  
 		Size: 45.7 MB (45717820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3a8e700e2f18987ab9f97abcd0497d5dfc1706a8c057e685438ce3b71d8067c0`  
@@ -23480,11 +23480,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 62.7 MB (62713384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bc2c3dfa2d6df259da14558beefb7cee69246c0da0fdc440a04d5af7c8fb7dd`  
-		Last Modified: Tue, 13 Jan 2026 05:20:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:15:55 GMT  
 		Size: 193.3 MB (193306851 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f5d300aae4586cc437bad24323b3ffac9cbdc295d8175511f9f8ef1d07174fd`  
-		Last Modified: Thu, 15 Jan 2026 19:38:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:11 GMT  
 		Size: 258.6 MB (258562071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b899d178f8fe9d824a2f81674f1fc23945fb05b1f86cb9ad980510fa74ec8acd`  
@@ -23516,7 +23516,7 @@ $ docker pull erlang@sha256:b747d6f199a4f318f0af449c6037ed5c6e0935733a4a66651365
 		Size: 21.8 MB (21794175 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6203c82ef858320c62336eff7cf138463d909e5cf015f0d61868eb5ea8d4ae29`  
-		Last Modified: Thu, 15 Jan 2026 19:37:05 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:51 GMT  
 		Size: 19.3 KB (19348 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23575,15 +23575,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 226.1 MB (226143857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b14010ef5a8674cafa23f6d0917a8acc9adb4d0b9817930956a779fb15f5799`  
-		Last Modified: Thu, 15 Jan 2026 19:37:11 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:39:10 GMT  
 		Size: 284.5 MB (284537291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f3e8cd9e3f6b4646e1139aadfb87c9c9afef85063f1ca952bdd447a7f369979`  
-		Last Modified: Thu, 15 Jan 2026 19:37:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:06 GMT  
 		Size: 191.5 KB (191492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b3a19f95f387ade96545e7b400d2abb995aa26d85c8e2d329264058cb9c42bcc`  
-		Last Modified: Thu, 15 Jan 2026 19:37:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:06 GMT  
 		Size: 819.8 KB (819809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -23654,7 +23654,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 50.8 MB (50798876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ef949cdbd6ae265d5239bd005e65c3d578de54ebe10474ccd2feb9708b6e1843`  
-		Last Modified: Tue, 13 Jan 2026 02:03:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:03:47 GMT  
 		Size: 26.8 MB (26778274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01ad78e3f6c783e58b723e0e1c78c005c2b612d1657c3a40830f5d7d97f9d85c`  
@@ -23674,7 +23674,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 191.5 KB (191482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6603fad54cabda488cef4ca2d3a92031f9d44a9e609a3ebe125161f5d20b666c`  
-		Last Modified: Thu, 15 Jan 2026 19:37:14 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:01 GMT  
 		Size: 819.8 KB (819808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -23698,7 +23698,7 @@ $ docker pull erlang@sha256:bb8e9e7e0142254522456fde7ebc5c58a2e6a9ed36b885088473
 		Size: 22.0 MB (22016152 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a77c0af0ea3dea8b13cb85f001c503c95bb63a0884bb438a8592aadf723b22bd`  
-		Last Modified: Thu, 15 Jan 2026 19:37:01 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:49:39 GMT  
 		Size: 19.2 KB (19193 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23741,7 +23741,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f21554c0ffe7aa9121703873815aca94dbbdf6352a46266dc923fc9e36d0d58a`  
@@ -23749,7 +23749,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 27.0 MB (26998052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb58d20828d54df35a08218c574236606c9e3ab14d0f2ddf036e12abcf8c85d6`  
-		Last Modified: Tue, 13 Jan 2026 15:19:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 15:20:19 GMT  
 		Size: 73.0 MB (73037608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:08e13e772271d599b914654801e760b6e090a2d2a51765f2bd85981f821d1eb0`  
@@ -23785,11 +23785,11 @@ $ docker pull erlang@sha256:d169d146883dccefc893a9e8f09fb28c11e93abd779839252b02
 
 -	Layers:
 	-	`sha256:d013c974d28b15af20492ca923b6e850bb08e9b7066e32b796a73d918cf2c548`  
-		Last Modified: Thu, 15 Jan 2026 19:45:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:50:03 GMT  
 		Size: 22.0 MB (22008001 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:55cb678da2b343d956e951bfda5c7febbb1f327d15e103138ef0243b353471ed`  
-		Last Modified: Thu, 15 Jan 2026 19:45:16 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:50:04 GMT  
 		Size: 19.3 KB (19288 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23832,11 +23832,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:9de0288d81a9602539c9f3015fc521191e25eebfe6442c22cb974ea3a486f3a8`  
-		Last Modified: Tue, 13 Jan 2026 00:41:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:46 GMT  
 		Size: 49.3 MB (49348704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:629a9411869af8d59bfb1073c3573138af1f96d808896b3f2fd14cf62fca6dba`  
-		Last Modified: Tue, 13 Jan 2026 02:11:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:11:26 GMT  
 		Size: 26.8 MB (26792892 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff54b33211ee85001fc045dcc86b026876894b17d1d6f873a415014f68cb0c9f`  
@@ -23876,7 +23876,7 @@ $ docker pull erlang@sha256:bfa2971f87199a94760778f71d6b9aa21f9179e3a3ea585bce3b
 
 -	Layers:
 	-	`sha256:3d6a4c1454c2fe374c5ddd9b77f6c4985998b22e9f7a698a8243ae14d6cf7afe`  
-		Last Modified: Thu, 15 Jan 2026 23:50:29 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:39:01 GMT  
 		Size: 21.7 MB (21697941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5201d187aa8929fed6f71f4d8768e9c53b7893b06c030b67070893b075b27f64`  
@@ -23938,7 +23938,7 @@ CMD ["erl"]
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:efb6163fa41adf8d3c086e59b041c5a9f17dfe45f2279fa765f3dfc47a9a7ff0`  
-		Last Modified: Thu, 15 Jan 2026 19:35:19 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:06 GMT  
 		Size: 52.4 MB (52398831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -23999,7 +23999,7 @@ CMD ["erl"]
 		Size: 3.3 MB (3279388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:921c61009dce451a766369c922cb67d245a8c5e59246c47be74c4e719399f85b`  
-		Last Modified: Thu, 15 Jan 2026 19:35:21 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:35 GMT  
 		Size: 49.9 MB (49907590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -24019,11 +24019,11 @@ $ docker pull erlang@sha256:929d0b3ec26a70e7f7ee8382b06a52abb17538f58139ddfaa339
 
 -	Layers:
 	-	`sha256:bc01bee8c0d53d9323c679ebeaa377d88ad6dc1501c5192dce9b697aa06d09eb`  
-		Last Modified: Thu, 15 Jan 2026 22:47:50 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:20 GMT  
 		Size: 277.0 KB (276992 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5288e6d53df4d6f01d555493b598692ba12920cad867039b914672e2cba302ed`  
-		Last Modified: Thu, 15 Jan 2026 19:35:19 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:51 GMT  
 		Size: 15.5 KB (15457 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24056,7 +24056,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:f6b4fb9446345fcad2db26eac181fef6c0a919c8a4fcccd3bea5deb7f6dff67e`  
-		Last Modified: Thu, 18 Dec 2025 00:12:50 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:35 GMT  
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b2ba83da12930ed543730c4d032b14a8dc6004208bdafe745b74323db7f4e1b`  
@@ -24080,11 +24080,11 @@ $ docker pull erlang@sha256:fc494146ce284d9c18d7354769006970a75e910f73ed6a776953
 
 -	Layers:
 	-	`sha256:0e40f698fa815fce78e7cf747105f3c9575e4f368921b22cad73d07285b8ab75`  
-		Last Modified: Thu, 15 Jan 2026 22:47:43 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:42 GMT  
 		Size: 279.0 KB (279006 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:15693207aeb330c724bf05594b11c010a1a115a0a8006c7797752ea04d86cf11`  
-		Last Modified: Thu, 15 Jan 2026 19:35:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:44 GMT  
 		Size: 15.5 KB (15485 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24121,7 +24121,7 @@ CMD ["erl"]
 		Size: 3.7 MB (3686100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64cb483ffc49b7e5eec25ecc060955912d15edbe2c2a4692b376033707d91817`  
-		Last Modified: Thu, 15 Jan 2026 19:35:32 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:20 GMT  
 		Size: 50.8 MB (50757232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -24145,7 +24145,7 @@ $ docker pull erlang@sha256:0b8c615b4855962257a95d5e6f768697256c93a48abcf72e1f85
 		Size: 273.8 KB (273846 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0ccb4d973742d6160dd54159e89a6fb9524a6a923c7394830ebf37735ede5f6c`  
-		Last Modified: Thu, 15 Jan 2026 19:35:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:42 GMT  
 		Size: 15.3 KB (15332 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24182,7 +24182,7 @@ CMD ["erl"]
 		Size: 3.8 MB (3827755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:47a49d59a530a90140f5e91be797dba333168a9a9f48330db34a60b88a7e096e`  
-		Last Modified: Thu, 15 Jan 2026 19:46:08 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:46:20 GMT  
 		Size: 51.0 MB (51048772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -24206,7 +24206,7 @@ $ docker pull erlang@sha256:f9fb2783c05667e510d759750b2f0c43a523b80406ea6b63863c
 		Size: 274.0 KB (273997 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:59739ecd802d4e591e6b548c2be2a691267faa4dcfa17c5bb187b080b957f026`  
-		Last Modified: Thu, 15 Jan 2026 22:47:47 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:46:06 GMT  
 		Size: 15.4 KB (15419 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24263,7 +24263,7 @@ $ docker pull erlang@sha256:1c7d837a356433ece4ba272e54304b631749c59b5a52244891d7
 
 -	Layers:
 	-	`sha256:7ea2c12595c83457b4b360bf1e47be533cc1ceda90ede37ee1a4518157e5de62`  
-		Last Modified: Thu, 15 Jan 2026 19:37:00 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:55 GMT  
 		Size: 274.0 KB (273957 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:80cc5c1262bf4a5c1e7357125cebc4bfa5dfb08bde69b052d38aa7895c2636a2`  
@@ -24341,11 +24341,11 @@ $ docker pull erlang@sha256:fef20de332b6912ef1200d39d9a19f58794c6b8f80f12ca22d1f
 
 -	Layers:
 	-	`sha256:d7f4ea51bd7fab12cf8c6111e07cc2b65fd51c8241be3c893cf88265205c8a4a`  
-		Last Modified: Thu, 15 Jan 2026 19:35:22 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:25 GMT  
 		Size: 3.3 MB (3283834 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bc2c0918c8e26d91268471a825a6f872a548498a1f84aacecbb955654001ef39`  
-		Last Modified: Thu, 15 Jan 2026 23:48:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:21 GMT  
 		Size: 13.9 KB (13922 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24380,7 +24380,7 @@ CMD ["erl"]
 		Size: 49.6 MB (49648083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3740e462c6deac44775be8c479dc902841dd52d4caeaf17d961c5a45e1b9806f`  
-		Last Modified: Thu, 15 Jan 2026 19:35:55 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:43 GMT  
 		Size: 77.3 MB (77291144 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -24400,7 +24400,7 @@ $ docker pull erlang@sha256:c801da29ac99f5ea44e6a511952fda7e7eb3b2c93d3f4df2b68e
 
 -	Layers:
 	-	`sha256:ea9c3283fc7a676cf1ed5e640402ab746ae3b55642f3e62fb4b6c79ddf9ceb42`  
-		Last Modified: Thu, 15 Jan 2026 19:35:41 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:37 GMT  
 		Size: 3.3 MB (3285369 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0b054061a1d68e030bf82756de6b7398b7508f2e450aba4e79a05b4e758a4bbd`  
@@ -24439,7 +24439,7 @@ CMD ["erl"]
 		Size: 50.8 MB (50798876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c55e88321b383cafc280388ad8cf94c1b064dba056a883b9943cfa882e78d307`  
-		Last Modified: Thu, 15 Jan 2026 19:36:01 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:47 GMT  
 		Size: 69.3 MB (69346145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -24463,7 +24463,7 @@ $ docker pull erlang@sha256:e68f2e51160204b546854deed22938568de6331a90e67f1340ea
 		Size: 3.3 MB (3281004 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e4b0ce2210bf9b26c7a2618f3befef035730d19a8e75b530224474dcbe87ee3a`  
-		Last Modified: Thu, 15 Jan 2026 22:50:24 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:45 GMT  
 		Size: 13.9 KB (13885 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24494,11 +24494,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:99ddd4641de7fcdff6bca297036156bfa629c5532e7716eceb2d23a8ad076c69`  
-		Last Modified: Thu, 15 Jan 2026 19:42:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:42:20 GMT  
 		Size: 70.3 MB (70313836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -24518,11 +24518,11 @@ $ docker pull erlang@sha256:d6130f9b3d8b624612172abfd33cb79a4f283a160b6bb40f2e75
 
 -	Layers:
 	-	`sha256:228aaf85504242b614b74edad064597f965651e50488a0810660024b8a8ab9de`  
-		Last Modified: Thu, 15 Jan 2026 22:48:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:42:18 GMT  
 		Size: 3.3 MB (3287425 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8a98dfa4fbf1d83babb7fdf933127fa5fed923b8bf3c6389065c0d0187f18d84`  
-		Last Modified: Thu, 15 Jan 2026 19:42:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:48:35 GMT  
 		Size: 14.0 KB (13972 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24553,7 +24553,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:9de0288d81a9602539c9f3015fc521191e25eebfe6442c22cb974ea3a486f3a8`  
-		Last Modified: Tue, 13 Jan 2026 00:41:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:46 GMT  
 		Size: 49.3 MB (49348704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74ed3e8292312e8f4303fe9387e35feae6bd0a55dd4551e2063ef743f2a76706`  
@@ -24577,11 +24577,11 @@ $ docker pull erlang@sha256:9dc45be02799dd8d67607dbd7c8295d22aca377ab1d368f0b686
 
 -	Layers:
 	-	`sha256:a1b1f9b376004e58f7ea1fd48ec167ff1b3436b941bae305d619c8d442121a7a`  
-		Last Modified: Thu, 15 Jan 2026 23:48:49 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:08 GMT  
 		Size: 3.3 MB (3285275 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:848094a9443c87059f713b555234b3396721497d5062f3b4299f111dbabd77f7`  
-		Last Modified: Thu, 15 Jan 2026 23:48:50 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:08 GMT  
 		Size: 13.9 KB (13921 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24659,7 +24659,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 67.8 MB (67786776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26d823e3848f3d74363d9b5b44f39f2d2f81a99a37d8c7fb54831a489a32e999`  
-		Last Modified: Tue, 13 Jan 2026 04:50:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:12:51 GMT  
 		Size: 236.0 MB (236001828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d00ddbe20790f74e75fe43be8f9666dc99e7182cb141bef8e92d93269a30cf1c`  
@@ -24667,11 +24667,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 292.3 MB (292309557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48524c6830772e3f844be7aa96eb3809b698bdc00e681dbc7789f632fc39ecfe`  
-		Last Modified: Thu, 15 Jan 2026 19:36:53 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
 		Size: 191.5 KB (191494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d9c3e3b3718c67d08794cad1444e6a17df66c70fb7661a594d3ae1531560d83`  
-		Last Modified: Thu, 15 Jan 2026 19:36:54 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
 		Size: 819.8 KB (819810 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -24695,7 +24695,7 @@ $ docker pull erlang@sha256:459057065c2a9d641651101ba7b5b83a07223305b7d051bfb4f7
 		Size: 22.0 MB (22048183 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a96a1430c57e88c5b7ae2a1e2c5706bafbb9a4b3c2d6a0d60cc93917ff944104`  
-		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:47:57 GMT  
 		Size: 19.2 KB (19234 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24738,19 +24738,19 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:16d4329ceaa8dc305221873389c356e4c5bf3cdb5b245a79ff75a1b1806f3778`  
-		Last Modified: Tue, 13 Jan 2026 00:42:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:16 GMT  
 		Size: 47.4 MB (47448362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad4ac90147d1f1c4bc0ab2c1c245fb4105c9ad56d7e5e75726e8ec474c79f05f`  
-		Last Modified: Tue, 13 Jan 2026 02:30:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:29:57 GMT  
 		Size: 24.4 MB (24353866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0b0fe9087175027e9a76a41e2c394603c9345a19f6296b58e7044e930aafb08`  
-		Last Modified: Tue, 13 Jan 2026 04:08:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:08:29 GMT  
 		Size: 65.3 MB (65318536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2a03a66aae139adaadd8a808ca96b9e5d75cefae43a5eca814727bc64c805f6`  
-		Last Modified: Tue, 13 Jan 2026 05:14:31 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:13:40 GMT  
 		Size: 205.7 MB (205729923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f6ec2cfd0437af54d152362dc7b9c6ad3bee132cd4e47216d24ff4674ab9bfb`  
@@ -24786,7 +24786,7 @@ $ docker pull erlang@sha256:af6d5111a1d6fe4d5f436177f55f8ba77d4a9b9280399fdfba08
 		Size: 21.8 MB (21772168 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dcfba0bd263aba3ce0f4dd1d7156b2d0f33dbe62b5e903ce5d4c3cdb5aab1aa4`  
-		Last Modified: Thu, 15 Jan 2026 23:48:27 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:16 GMT  
 		Size: 19.3 KB (19347 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24829,7 +24829,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:0f4296a8ece8abd5a409e5fbdb0cf93258815e4fec9dc768c39a63faf3c16052`  
-		Last Modified: Tue, 13 Jan 2026 00:42:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:18:45 GMT  
 		Size: 45.7 MB (45717820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3a8e700e2f18987ab9f97abcd0497d5dfc1706a8c057e685438ce3b71d8067c0`  
@@ -24841,11 +24841,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 62.7 MB (62713384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bc2c3dfa2d6df259da14558beefb7cee69246c0da0fdc440a04d5af7c8fb7dd`  
-		Last Modified: Tue, 13 Jan 2026 05:20:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:15:55 GMT  
 		Size: 193.3 MB (193306851 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f5d300aae4586cc437bad24323b3ffac9cbdc295d8175511f9f8ef1d07174fd`  
-		Last Modified: Thu, 15 Jan 2026 19:38:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:11 GMT  
 		Size: 258.6 MB (258562071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b899d178f8fe9d824a2f81674f1fc23945fb05b1f86cb9ad980510fa74ec8acd`  
@@ -24877,7 +24877,7 @@ $ docker pull erlang@sha256:b747d6f199a4f318f0af449c6037ed5c6e0935733a4a66651365
 		Size: 21.8 MB (21794175 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6203c82ef858320c62336eff7cf138463d909e5cf015f0d61868eb5ea8d4ae29`  
-		Last Modified: Thu, 15 Jan 2026 19:37:05 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:51 GMT  
 		Size: 19.3 KB (19348 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24936,15 +24936,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 226.1 MB (226143857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b14010ef5a8674cafa23f6d0917a8acc9adb4d0b9817930956a779fb15f5799`  
-		Last Modified: Thu, 15 Jan 2026 19:37:11 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:39:10 GMT  
 		Size: 284.5 MB (284537291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f3e8cd9e3f6b4646e1139aadfb87c9c9afef85063f1ca952bdd447a7f369979`  
-		Last Modified: Thu, 15 Jan 2026 19:37:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:06 GMT  
 		Size: 191.5 KB (191492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b3a19f95f387ade96545e7b400d2abb995aa26d85c8e2d329264058cb9c42bcc`  
-		Last Modified: Thu, 15 Jan 2026 19:37:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:06 GMT  
 		Size: 819.8 KB (819809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -25015,7 +25015,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 50.8 MB (50798876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ef949cdbd6ae265d5239bd005e65c3d578de54ebe10474ccd2feb9708b6e1843`  
-		Last Modified: Tue, 13 Jan 2026 02:03:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:03:47 GMT  
 		Size: 26.8 MB (26778274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01ad78e3f6c783e58b723e0e1c78c005c2b612d1657c3a40830f5d7d97f9d85c`  
@@ -25035,7 +25035,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 191.5 KB (191482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6603fad54cabda488cef4ca2d3a92031f9d44a9e609a3ebe125161f5d20b666c`  
-		Last Modified: Thu, 15 Jan 2026 19:37:14 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:01 GMT  
 		Size: 819.8 KB (819808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -25059,7 +25059,7 @@ $ docker pull erlang@sha256:bb8e9e7e0142254522456fde7ebc5c58a2e6a9ed36b885088473
 		Size: 22.0 MB (22016152 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a77c0af0ea3dea8b13cb85f001c503c95bb63a0884bb438a8592aadf723b22bd`  
-		Last Modified: Thu, 15 Jan 2026 19:37:01 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:49:39 GMT  
 		Size: 19.2 KB (19193 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25102,7 +25102,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f21554c0ffe7aa9121703873815aca94dbbdf6352a46266dc923fc9e36d0d58a`  
@@ -25110,7 +25110,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 27.0 MB (26998052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb58d20828d54df35a08218c574236606c9e3ab14d0f2ddf036e12abcf8c85d6`  
-		Last Modified: Tue, 13 Jan 2026 15:19:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 15:20:19 GMT  
 		Size: 73.0 MB (73037608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:08e13e772271d599b914654801e760b6e090a2d2a51765f2bd85981f821d1eb0`  
@@ -25146,11 +25146,11 @@ $ docker pull erlang@sha256:d169d146883dccefc893a9e8f09fb28c11e93abd779839252b02
 
 -	Layers:
 	-	`sha256:d013c974d28b15af20492ca923b6e850bb08e9b7066e32b796a73d918cf2c548`  
-		Last Modified: Thu, 15 Jan 2026 19:45:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:50:03 GMT  
 		Size: 22.0 MB (22008001 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:55cb678da2b343d956e951bfda5c7febbb1f327d15e103138ef0243b353471ed`  
-		Last Modified: Thu, 15 Jan 2026 19:45:16 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:50:04 GMT  
 		Size: 19.3 KB (19288 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25193,11 +25193,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:9de0288d81a9602539c9f3015fc521191e25eebfe6442c22cb974ea3a486f3a8`  
-		Last Modified: Tue, 13 Jan 2026 00:41:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:46 GMT  
 		Size: 49.3 MB (49348704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:629a9411869af8d59bfb1073c3573138af1f96d808896b3f2fd14cf62fca6dba`  
-		Last Modified: Tue, 13 Jan 2026 02:11:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:11:26 GMT  
 		Size: 26.8 MB (26792892 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff54b33211ee85001fc045dcc86b026876894b17d1d6f873a415014f68cb0c9f`  
@@ -25237,7 +25237,7 @@ $ docker pull erlang@sha256:bfa2971f87199a94760778f71d6b9aa21f9179e3a3ea585bce3b
 
 -	Layers:
 	-	`sha256:3d6a4c1454c2fe374c5ddd9b77f6c4985998b22e9f7a698a8243ae14d6cf7afe`  
-		Last Modified: Thu, 15 Jan 2026 23:50:29 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:39:01 GMT  
 		Size: 21.7 MB (21697941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5201d187aa8929fed6f71f4d8768e9c53b7893b06c030b67070893b075b27f64`  
@@ -25299,7 +25299,7 @@ CMD ["erl"]
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:efb6163fa41adf8d3c086e59b041c5a9f17dfe45f2279fa765f3dfc47a9a7ff0`  
-		Last Modified: Thu, 15 Jan 2026 19:35:19 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:06 GMT  
 		Size: 52.4 MB (52398831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -25360,7 +25360,7 @@ CMD ["erl"]
 		Size: 3.3 MB (3279388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:921c61009dce451a766369c922cb67d245a8c5e59246c47be74c4e719399f85b`  
-		Last Modified: Thu, 15 Jan 2026 19:35:21 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:35 GMT  
 		Size: 49.9 MB (49907590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -25380,11 +25380,11 @@ $ docker pull erlang@sha256:929d0b3ec26a70e7f7ee8382b06a52abb17538f58139ddfaa339
 
 -	Layers:
 	-	`sha256:bc01bee8c0d53d9323c679ebeaa377d88ad6dc1501c5192dce9b697aa06d09eb`  
-		Last Modified: Thu, 15 Jan 2026 22:47:50 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:20 GMT  
 		Size: 277.0 KB (276992 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5288e6d53df4d6f01d555493b598692ba12920cad867039b914672e2cba302ed`  
-		Last Modified: Thu, 15 Jan 2026 19:35:19 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:51 GMT  
 		Size: 15.5 KB (15457 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25417,7 +25417,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:f6b4fb9446345fcad2db26eac181fef6c0a919c8a4fcccd3bea5deb7f6dff67e`  
-		Last Modified: Thu, 18 Dec 2025 00:12:50 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:35 GMT  
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b2ba83da12930ed543730c4d032b14a8dc6004208bdafe745b74323db7f4e1b`  
@@ -25441,11 +25441,11 @@ $ docker pull erlang@sha256:fc494146ce284d9c18d7354769006970a75e910f73ed6a776953
 
 -	Layers:
 	-	`sha256:0e40f698fa815fce78e7cf747105f3c9575e4f368921b22cad73d07285b8ab75`  
-		Last Modified: Thu, 15 Jan 2026 22:47:43 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:42 GMT  
 		Size: 279.0 KB (279006 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:15693207aeb330c724bf05594b11c010a1a115a0a8006c7797752ea04d86cf11`  
-		Last Modified: Thu, 15 Jan 2026 19:35:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:44 GMT  
 		Size: 15.5 KB (15485 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25482,7 +25482,7 @@ CMD ["erl"]
 		Size: 3.7 MB (3686100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64cb483ffc49b7e5eec25ecc060955912d15edbe2c2a4692b376033707d91817`  
-		Last Modified: Thu, 15 Jan 2026 19:35:32 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:20 GMT  
 		Size: 50.8 MB (50757232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -25506,7 +25506,7 @@ $ docker pull erlang@sha256:0b8c615b4855962257a95d5e6f768697256c93a48abcf72e1f85
 		Size: 273.8 KB (273846 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0ccb4d973742d6160dd54159e89a6fb9524a6a923c7394830ebf37735ede5f6c`  
-		Last Modified: Thu, 15 Jan 2026 19:35:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:42 GMT  
 		Size: 15.3 KB (15332 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25543,7 +25543,7 @@ CMD ["erl"]
 		Size: 3.8 MB (3827755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:47a49d59a530a90140f5e91be797dba333168a9a9f48330db34a60b88a7e096e`  
-		Last Modified: Thu, 15 Jan 2026 19:46:08 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:46:20 GMT  
 		Size: 51.0 MB (51048772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -25567,7 +25567,7 @@ $ docker pull erlang@sha256:f9fb2783c05667e510d759750b2f0c43a523b80406ea6b63863c
 		Size: 274.0 KB (273997 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:59739ecd802d4e591e6b548c2be2a691267faa4dcfa17c5bb187b080b957f026`  
-		Last Modified: Thu, 15 Jan 2026 22:47:47 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:46:06 GMT  
 		Size: 15.4 KB (15419 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25624,7 +25624,7 @@ $ docker pull erlang@sha256:1c7d837a356433ece4ba272e54304b631749c59b5a52244891d7
 
 -	Layers:
 	-	`sha256:7ea2c12595c83457b4b360bf1e47be533cc1ceda90ede37ee1a4518157e5de62`  
-		Last Modified: Thu, 15 Jan 2026 19:37:00 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:55 GMT  
 		Size: 274.0 KB (273957 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:80cc5c1262bf4a5c1e7357125cebc4bfa5dfb08bde69b052d38aa7895c2636a2`  
@@ -25702,11 +25702,11 @@ $ docker pull erlang@sha256:fef20de332b6912ef1200d39d9a19f58794c6b8f80f12ca22d1f
 
 -	Layers:
 	-	`sha256:d7f4ea51bd7fab12cf8c6111e07cc2b65fd51c8241be3c893cf88265205c8a4a`  
-		Last Modified: Thu, 15 Jan 2026 19:35:22 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:25 GMT  
 		Size: 3.3 MB (3283834 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bc2c0918c8e26d91268471a825a6f872a548498a1f84aacecbb955654001ef39`  
-		Last Modified: Thu, 15 Jan 2026 23:48:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:21 GMT  
 		Size: 13.9 KB (13922 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25741,7 +25741,7 @@ CMD ["erl"]
 		Size: 49.6 MB (49648083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3740e462c6deac44775be8c479dc902841dd52d4caeaf17d961c5a45e1b9806f`  
-		Last Modified: Thu, 15 Jan 2026 19:35:55 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:43 GMT  
 		Size: 77.3 MB (77291144 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -25761,7 +25761,7 @@ $ docker pull erlang@sha256:c801da29ac99f5ea44e6a511952fda7e7eb3b2c93d3f4df2b68e
 
 -	Layers:
 	-	`sha256:ea9c3283fc7a676cf1ed5e640402ab746ae3b55642f3e62fb4b6c79ddf9ceb42`  
-		Last Modified: Thu, 15 Jan 2026 19:35:41 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:37 GMT  
 		Size: 3.3 MB (3285369 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0b054061a1d68e030bf82756de6b7398b7508f2e450aba4e79a05b4e758a4bbd`  
@@ -25800,7 +25800,7 @@ CMD ["erl"]
 		Size: 50.8 MB (50798876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c55e88321b383cafc280388ad8cf94c1b064dba056a883b9943cfa882e78d307`  
-		Last Modified: Thu, 15 Jan 2026 19:36:01 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:47 GMT  
 		Size: 69.3 MB (69346145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -25824,7 +25824,7 @@ $ docker pull erlang@sha256:e68f2e51160204b546854deed22938568de6331a90e67f1340ea
 		Size: 3.3 MB (3281004 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e4b0ce2210bf9b26c7a2618f3befef035730d19a8e75b530224474dcbe87ee3a`  
-		Last Modified: Thu, 15 Jan 2026 22:50:24 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:45 GMT  
 		Size: 13.9 KB (13885 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25855,11 +25855,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:99ddd4641de7fcdff6bca297036156bfa629c5532e7716eceb2d23a8ad076c69`  
-		Last Modified: Thu, 15 Jan 2026 19:42:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:42:20 GMT  
 		Size: 70.3 MB (70313836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -25879,11 +25879,11 @@ $ docker pull erlang@sha256:d6130f9b3d8b624612172abfd33cb79a4f283a160b6bb40f2e75
 
 -	Layers:
 	-	`sha256:228aaf85504242b614b74edad064597f965651e50488a0810660024b8a8ab9de`  
-		Last Modified: Thu, 15 Jan 2026 22:48:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:42:18 GMT  
 		Size: 3.3 MB (3287425 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8a98dfa4fbf1d83babb7fdf933127fa5fed923b8bf3c6389065c0d0187f18d84`  
-		Last Modified: Thu, 15 Jan 2026 19:42:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:48:35 GMT  
 		Size: 14.0 KB (13972 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25914,7 +25914,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:9de0288d81a9602539c9f3015fc521191e25eebfe6442c22cb974ea3a486f3a8`  
-		Last Modified: Tue, 13 Jan 2026 00:41:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:46 GMT  
 		Size: 49.3 MB (49348704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74ed3e8292312e8f4303fe9387e35feae6bd0a55dd4551e2063ef743f2a76706`  
@@ -25938,11 +25938,11 @@ $ docker pull erlang@sha256:9dc45be02799dd8d67607dbd7c8295d22aca377ab1d368f0b686
 
 -	Layers:
 	-	`sha256:a1b1f9b376004e58f7ea1fd48ec167ff1b3436b941bae305d619c8d442121a7a`  
-		Last Modified: Thu, 15 Jan 2026 23:48:49 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:08 GMT  
 		Size: 3.3 MB (3285275 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:848094a9443c87059f713b555234b3396721497d5062f3b4299f111dbabd77f7`  
-		Last Modified: Thu, 15 Jan 2026 23:48:50 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:08 GMT  
 		Size: 13.9 KB (13921 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -26000,7 +26000,7 @@ CMD ["erl"]
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:efb6163fa41adf8d3c086e59b041c5a9f17dfe45f2279fa765f3dfc47a9a7ff0`  
-		Last Modified: Thu, 15 Jan 2026 19:35:19 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:06 GMT  
 		Size: 52.4 MB (52398831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -26061,7 +26061,7 @@ CMD ["erl"]
 		Size: 3.3 MB (3279388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:921c61009dce451a766369c922cb67d245a8c5e59246c47be74c4e719399f85b`  
-		Last Modified: Thu, 15 Jan 2026 19:35:21 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:35 GMT  
 		Size: 49.9 MB (49907590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -26081,11 +26081,11 @@ $ docker pull erlang@sha256:929d0b3ec26a70e7f7ee8382b06a52abb17538f58139ddfaa339
 
 -	Layers:
 	-	`sha256:bc01bee8c0d53d9323c679ebeaa377d88ad6dc1501c5192dce9b697aa06d09eb`  
-		Last Modified: Thu, 15 Jan 2026 22:47:50 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:20 GMT  
 		Size: 277.0 KB (276992 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5288e6d53df4d6f01d555493b598692ba12920cad867039b914672e2cba302ed`  
-		Last Modified: Thu, 15 Jan 2026 19:35:19 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:51 GMT  
 		Size: 15.5 KB (15457 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -26118,7 +26118,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:f6b4fb9446345fcad2db26eac181fef6c0a919c8a4fcccd3bea5deb7f6dff67e`  
-		Last Modified: Thu, 18 Dec 2025 00:12:50 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:35 GMT  
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b2ba83da12930ed543730c4d032b14a8dc6004208bdafe745b74323db7f4e1b`  
@@ -26142,11 +26142,11 @@ $ docker pull erlang@sha256:fc494146ce284d9c18d7354769006970a75e910f73ed6a776953
 
 -	Layers:
 	-	`sha256:0e40f698fa815fce78e7cf747105f3c9575e4f368921b22cad73d07285b8ab75`  
-		Last Modified: Thu, 15 Jan 2026 22:47:43 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:42 GMT  
 		Size: 279.0 KB (279006 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:15693207aeb330c724bf05594b11c010a1a115a0a8006c7797752ea04d86cf11`  
-		Last Modified: Thu, 15 Jan 2026 19:35:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:44 GMT  
 		Size: 15.5 KB (15485 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -26183,7 +26183,7 @@ CMD ["erl"]
 		Size: 3.7 MB (3686100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64cb483ffc49b7e5eec25ecc060955912d15edbe2c2a4692b376033707d91817`  
-		Last Modified: Thu, 15 Jan 2026 19:35:32 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:20 GMT  
 		Size: 50.8 MB (50757232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -26207,7 +26207,7 @@ $ docker pull erlang@sha256:0b8c615b4855962257a95d5e6f768697256c93a48abcf72e1f85
 		Size: 273.8 KB (273846 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0ccb4d973742d6160dd54159e89a6fb9524a6a923c7394830ebf37735ede5f6c`  
-		Last Modified: Thu, 15 Jan 2026 19:35:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:42 GMT  
 		Size: 15.3 KB (15332 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -26244,7 +26244,7 @@ CMD ["erl"]
 		Size: 3.8 MB (3827755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:47a49d59a530a90140f5e91be797dba333168a9a9f48330db34a60b88a7e096e`  
-		Last Modified: Thu, 15 Jan 2026 19:46:08 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:46:20 GMT  
 		Size: 51.0 MB (51048772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -26268,7 +26268,7 @@ $ docker pull erlang@sha256:f9fb2783c05667e510d759750b2f0c43a523b80406ea6b63863c
 		Size: 274.0 KB (273997 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:59739ecd802d4e591e6b548c2be2a691267faa4dcfa17c5bb187b080b957f026`  
-		Last Modified: Thu, 15 Jan 2026 22:47:47 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:46:06 GMT  
 		Size: 15.4 KB (15419 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -26325,7 +26325,7 @@ $ docker pull erlang@sha256:1c7d837a356433ece4ba272e54304b631749c59b5a52244891d7
 
 -	Layers:
 	-	`sha256:7ea2c12595c83457b4b360bf1e47be533cc1ceda90ede37ee1a4518157e5de62`  
-		Last Modified: Thu, 15 Jan 2026 19:37:00 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:47:55 GMT  
 		Size: 274.0 KB (273957 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:80cc5c1262bf4a5c1e7357125cebc4bfa5dfb08bde69b052d38aa7895c2636a2`  
@@ -26407,7 +26407,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 67.8 MB (67786776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26d823e3848f3d74363d9b5b44f39f2d2f81a99a37d8c7fb54831a489a32e999`  
-		Last Modified: Tue, 13 Jan 2026 04:50:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:12:51 GMT  
 		Size: 236.0 MB (236001828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d00ddbe20790f74e75fe43be8f9666dc99e7182cb141bef8e92d93269a30cf1c`  
@@ -26415,11 +26415,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 292.3 MB (292309557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48524c6830772e3f844be7aa96eb3809b698bdc00e681dbc7789f632fc39ecfe`  
-		Last Modified: Thu, 15 Jan 2026 19:36:53 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
 		Size: 191.5 KB (191494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d9c3e3b3718c67d08794cad1444e6a17df66c70fb7661a594d3ae1531560d83`  
-		Last Modified: Thu, 15 Jan 2026 19:36:54 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
 		Size: 819.8 KB (819810 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -26443,7 +26443,7 @@ $ docker pull erlang@sha256:459057065c2a9d641651101ba7b5b83a07223305b7d051bfb4f7
 		Size: 22.0 MB (22048183 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a96a1430c57e88c5b7ae2a1e2c5706bafbb9a4b3c2d6a0d60cc93917ff944104`  
-		Last Modified: Thu, 15 Jan 2026 19:36:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:47:57 GMT  
 		Size: 19.2 KB (19234 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -26486,19 +26486,19 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:16d4329ceaa8dc305221873389c356e4c5bf3cdb5b245a79ff75a1b1806f3778`  
-		Last Modified: Tue, 13 Jan 2026 00:42:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:16 GMT  
 		Size: 47.4 MB (47448362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad4ac90147d1f1c4bc0ab2c1c245fb4105c9ad56d7e5e75726e8ec474c79f05f`  
-		Last Modified: Tue, 13 Jan 2026 02:30:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:29:57 GMT  
 		Size: 24.4 MB (24353866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0b0fe9087175027e9a76a41e2c394603c9345a19f6296b58e7044e930aafb08`  
-		Last Modified: Tue, 13 Jan 2026 04:08:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:08:29 GMT  
 		Size: 65.3 MB (65318536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2a03a66aae139adaadd8a808ca96b9e5d75cefae43a5eca814727bc64c805f6`  
-		Last Modified: Tue, 13 Jan 2026 05:14:31 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:13:40 GMT  
 		Size: 205.7 MB (205729923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f6ec2cfd0437af54d152362dc7b9c6ad3bee132cd4e47216d24ff4674ab9bfb`  
@@ -26534,7 +26534,7 @@ $ docker pull erlang@sha256:af6d5111a1d6fe4d5f436177f55f8ba77d4a9b9280399fdfba08
 		Size: 21.8 MB (21772168 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dcfba0bd263aba3ce0f4dd1d7156b2d0f33dbe62b5e903ce5d4c3cdb5aab1aa4`  
-		Last Modified: Thu, 15 Jan 2026 23:48:27 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:16 GMT  
 		Size: 19.3 KB (19347 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -26577,7 +26577,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:0f4296a8ece8abd5a409e5fbdb0cf93258815e4fec9dc768c39a63faf3c16052`  
-		Last Modified: Tue, 13 Jan 2026 00:42:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:18:45 GMT  
 		Size: 45.7 MB (45717820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3a8e700e2f18987ab9f97abcd0497d5dfc1706a8c057e685438ce3b71d8067c0`  
@@ -26589,11 +26589,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 62.7 MB (62713384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bc2c3dfa2d6df259da14558beefb7cee69246c0da0fdc440a04d5af7c8fb7dd`  
-		Last Modified: Tue, 13 Jan 2026 05:20:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:15:55 GMT  
 		Size: 193.3 MB (193306851 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f5d300aae4586cc437bad24323b3ffac9cbdc295d8175511f9f8ef1d07174fd`  
-		Last Modified: Thu, 15 Jan 2026 19:38:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:11 GMT  
 		Size: 258.6 MB (258562071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b899d178f8fe9d824a2f81674f1fc23945fb05b1f86cb9ad980510fa74ec8acd`  
@@ -26625,7 +26625,7 @@ $ docker pull erlang@sha256:b747d6f199a4f318f0af449c6037ed5c6e0935733a4a66651365
 		Size: 21.8 MB (21794175 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6203c82ef858320c62336eff7cf138463d909e5cf015f0d61868eb5ea8d4ae29`  
-		Last Modified: Thu, 15 Jan 2026 19:37:05 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:51 GMT  
 		Size: 19.3 KB (19348 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -26684,15 +26684,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 226.1 MB (226143857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b14010ef5a8674cafa23f6d0917a8acc9adb4d0b9817930956a779fb15f5799`  
-		Last Modified: Thu, 15 Jan 2026 19:37:11 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:39:10 GMT  
 		Size: 284.5 MB (284537291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f3e8cd9e3f6b4646e1139aadfb87c9c9afef85063f1ca952bdd447a7f369979`  
-		Last Modified: Thu, 15 Jan 2026 19:37:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:06 GMT  
 		Size: 191.5 KB (191492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b3a19f95f387ade96545e7b400d2abb995aa26d85c8e2d329264058cb9c42bcc`  
-		Last Modified: Thu, 15 Jan 2026 19:37:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:06 GMT  
 		Size: 819.8 KB (819809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -26763,7 +26763,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 50.8 MB (50798876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ef949cdbd6ae265d5239bd005e65c3d578de54ebe10474ccd2feb9708b6e1843`  
-		Last Modified: Tue, 13 Jan 2026 02:03:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:03:47 GMT  
 		Size: 26.8 MB (26778274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01ad78e3f6c783e58b723e0e1c78c005c2b612d1657c3a40830f5d7d97f9d85c`  
@@ -26783,7 +26783,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 191.5 KB (191482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6603fad54cabda488cef4ca2d3a92031f9d44a9e609a3ebe125161f5d20b666c`  
-		Last Modified: Thu, 15 Jan 2026 19:37:14 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:01 GMT  
 		Size: 819.8 KB (819808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -26807,7 +26807,7 @@ $ docker pull erlang@sha256:bb8e9e7e0142254522456fde7ebc5c58a2e6a9ed36b885088473
 		Size: 22.0 MB (22016152 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a77c0af0ea3dea8b13cb85f001c503c95bb63a0884bb438a8592aadf723b22bd`  
-		Last Modified: Thu, 15 Jan 2026 19:37:01 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:49:39 GMT  
 		Size: 19.2 KB (19193 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -26850,7 +26850,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f21554c0ffe7aa9121703873815aca94dbbdf6352a46266dc923fc9e36d0d58a`  
@@ -26858,7 +26858,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 27.0 MB (26998052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb58d20828d54df35a08218c574236606c9e3ab14d0f2ddf036e12abcf8c85d6`  
-		Last Modified: Tue, 13 Jan 2026 15:19:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 15:20:19 GMT  
 		Size: 73.0 MB (73037608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:08e13e772271d599b914654801e760b6e090a2d2a51765f2bd85981f821d1eb0`  
@@ -26894,11 +26894,11 @@ $ docker pull erlang@sha256:d169d146883dccefc893a9e8f09fb28c11e93abd779839252b02
 
 -	Layers:
 	-	`sha256:d013c974d28b15af20492ca923b6e850bb08e9b7066e32b796a73d918cf2c548`  
-		Last Modified: Thu, 15 Jan 2026 19:45:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:50:03 GMT  
 		Size: 22.0 MB (22008001 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:55cb678da2b343d956e951bfda5c7febbb1f327d15e103138ef0243b353471ed`  
-		Last Modified: Thu, 15 Jan 2026 19:45:16 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:50:04 GMT  
 		Size: 19.3 KB (19288 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -26941,11 +26941,11 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 
 -	Layers:
 	-	`sha256:9de0288d81a9602539c9f3015fc521191e25eebfe6442c22cb974ea3a486f3a8`  
-		Last Modified: Tue, 13 Jan 2026 00:41:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:46 GMT  
 		Size: 49.3 MB (49348704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:629a9411869af8d59bfb1073c3573138af1f96d808896b3f2fd14cf62fca6dba`  
-		Last Modified: Tue, 13 Jan 2026 02:11:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:11:26 GMT  
 		Size: 26.8 MB (26792892 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff54b33211ee85001fc045dcc86b026876894b17d1d6f873a415014f68cb0c9f`  
@@ -26985,7 +26985,7 @@ $ docker pull erlang@sha256:bfa2971f87199a94760778f71d6b9aa21f9179e3a3ea585bce3b
 
 -	Layers:
 	-	`sha256:3d6a4c1454c2fe374c5ddd9b77f6c4985998b22e9f7a698a8243ae14d6cf7afe`  
-		Last Modified: Thu, 15 Jan 2026 23:50:29 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:39:01 GMT  
 		Size: 21.7 MB (21697941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5201d187aa8929fed6f71f4d8768e9c53b7893b06c030b67070893b075b27f64`  
@@ -27067,11 +27067,11 @@ $ docker pull erlang@sha256:fef20de332b6912ef1200d39d9a19f58794c6b8f80f12ca22d1f
 
 -	Layers:
 	-	`sha256:d7f4ea51bd7fab12cf8c6111e07cc2b65fd51c8241be3c893cf88265205c8a4a`  
-		Last Modified: Thu, 15 Jan 2026 19:35:22 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:25 GMT  
 		Size: 3.3 MB (3283834 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bc2c0918c8e26d91268471a825a6f872a548498a1f84aacecbb955654001ef39`  
-		Last Modified: Thu, 15 Jan 2026 23:48:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:21 GMT  
 		Size: 13.9 KB (13922 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -27130,7 +27130,7 @@ $ docker pull erlang@sha256:f5d71c46a31fcb491a3f28b257dcbd6ade19ef1be29034247659
 		Size: 3.8 MB (3828056 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d8c5c634919ee052cca6214dffc2f5e111b8da281edd273274bf2fa89fbfa702`  
-		Last Modified: Thu, 11 Dec 2025 20:48:13 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:27:10 GMT  
 		Size: 14.0 KB (14009 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -27165,7 +27165,7 @@ CMD ["erl"]
 		Size: 44.2 MB (44196066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e656ea89dded4641f3cfae04edeb56bdaf27e5ade23d29c71bf377d6a3a515ba`  
-		Last Modified: Thu, 11 Dec 2025 19:26:19 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:26:40 GMT  
 		Size: 69.9 MB (69914283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -27189,7 +27189,7 @@ $ docker pull erlang@sha256:dceef99c554f807f9b33461f23cedd54ed45738dd3d906ea7367
 		Size: 3.8 MB (3826481 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f55afd26957dc4411249f6d93d18e207551aba20237ad22c9b3a2549da2001ee`  
-		Last Modified: Thu, 11 Dec 2025 19:26:17 GMT  
+		Last Modified: Thu, 11 Dec 2025 20:48:19 GMT  
 		Size: 14.0 KB (14010 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -27224,7 +27224,7 @@ CMD ["erl"]
 		Size: 49.6 MB (49648083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3740e462c6deac44775be8c479dc902841dd52d4caeaf17d961c5a45e1b9806f`  
-		Last Modified: Thu, 15 Jan 2026 19:35:55 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:43 GMT  
 		Size: 77.3 MB (77291144 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -27244,7 +27244,7 @@ $ docker pull erlang@sha256:c801da29ac99f5ea44e6a511952fda7e7eb3b2c93d3f4df2b68e
 
 -	Layers:
 	-	`sha256:ea9c3283fc7a676cf1ed5e640402ab746ae3b55642f3e62fb4b6c79ddf9ceb42`  
-		Last Modified: Thu, 15 Jan 2026 19:35:41 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:48:37 GMT  
 		Size: 3.3 MB (3285369 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0b054061a1d68e030bf82756de6b7398b7508f2e450aba4e79a05b4e758a4bbd`  
@@ -27283,7 +27283,7 @@ CMD ["erl"]
 		Size: 50.8 MB (50798876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c55e88321b383cafc280388ad8cf94c1b064dba056a883b9943cfa882e78d307`  
-		Last Modified: Thu, 15 Jan 2026 19:36:01 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:47 GMT  
 		Size: 69.3 MB (69346145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -27307,7 +27307,7 @@ $ docker pull erlang@sha256:e68f2e51160204b546854deed22938568de6331a90e67f1340ea
 		Size: 3.3 MB (3281004 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e4b0ce2210bf9b26c7a2618f3befef035730d19a8e75b530224474dcbe87ee3a`  
-		Last Modified: Thu, 15 Jan 2026 22:50:24 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:45 GMT  
 		Size: 13.9 KB (13885 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -27338,11 +27338,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:99ddd4641de7fcdff6bca297036156bfa629c5532e7716eceb2d23a8ad076c69`  
-		Last Modified: Thu, 15 Jan 2026 19:42:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:42:20 GMT  
 		Size: 70.3 MB (70313836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -27362,11 +27362,11 @@ $ docker pull erlang@sha256:d6130f9b3d8b624612172abfd33cb79a4f283a160b6bb40f2e75
 
 -	Layers:
 	-	`sha256:228aaf85504242b614b74edad064597f965651e50488a0810660024b8a8ab9de`  
-		Last Modified: Thu, 15 Jan 2026 22:48:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:42:18 GMT  
 		Size: 3.3 MB (3287425 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8a98dfa4fbf1d83babb7fdf933127fa5fed923b8bf3c6389065c0d0187f18d84`  
-		Last Modified: Thu, 15 Jan 2026 19:42:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:48:35 GMT  
 		Size: 14.0 KB (13972 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -27397,7 +27397,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:9de0288d81a9602539c9f3015fc521191e25eebfe6442c22cb974ea3a486f3a8`  
-		Last Modified: Tue, 13 Jan 2026 00:41:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:46 GMT  
 		Size: 49.3 MB (49348704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74ed3e8292312e8f4303fe9387e35feae6bd0a55dd4551e2063ef743f2a76706`  
@@ -27421,10 +27421,10 @@ $ docker pull erlang@sha256:9dc45be02799dd8d67607dbd7c8295d22aca377ab1d368f0b686
 
 -	Layers:
 	-	`sha256:a1b1f9b376004e58f7ea1fd48ec167ff1b3436b941bae305d619c8d442121a7a`  
-		Last Modified: Thu, 15 Jan 2026 23:48:49 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:08 GMT  
 		Size: 3.3 MB (3285275 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:848094a9443c87059f713b555234b3396721497d5062f3b4299f111dbabd77f7`  
-		Last Modified: Thu, 15 Jan 2026 23:48:50 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:37:08 GMT  
 		Size: 13.9 KB (13921 bytes)  
 		MIME: application/vnd.in-toto+json
