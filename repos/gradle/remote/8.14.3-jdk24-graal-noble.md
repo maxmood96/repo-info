@@ -72,7 +72,7 @@ USER root
 
 -	Layers:
 	-	`sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114`  
-		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:03:32 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3dacd973ccfdcd671db8fcce6d212635ec84e4344eba49dc3c5711b25d98d5e5`  
@@ -92,7 +92,7 @@ USER root
 		Size: 336.2 MB (336222065 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a20063be6eec2ed77ed9f502a5f1e312b1d7827812ee3f57e498fefbbbc4c5b4`  
-		Last Modified: Fri, 16 Jan 2026 01:41:10 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:24:42 GMT  
 		Size: 137.4 MB (137395123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b53aee4f6ecf7f4fc89dc70c65feae0889632601ed9f4b15481357545171a660`  
@@ -120,7 +120,7 @@ $ docker pull gradle@sha256:6621a23be31c575fc0a6f46b40dcec6f558e48b4c1890884ab40
 		Size: 9.0 MB (9023157 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6272d83052a45703e41221b71d1ae340b88d83537321538360747ed4be9dcf48`  
-		Last Modified: Fri, 16 Jan 2026 00:28:08 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:24:35 GMT  
 		Size: 28.5 KB (28519 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -185,7 +185,7 @@ USER root
 
 -	Layers:
 	-	`sha256:36bf709aa36d66b784b0ba1aa3276848f28501175eeb4d7a310b1a98578f8558`  
-		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:03:33 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b32edb6d8c67c11a8e819b6b43e8cfd9459207ac6725597e70e14f1add8dcd4`  
@@ -209,7 +209,7 @@ USER root
 		Size: 137.4 MB (137395193 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bd67c244c8001c28fd59dc5434f2a59679e8c86dfc87bb61cfe7472168a00ea3`  
-		Last Modified: Thu, 15 Jan 2026 22:27:12 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:27:27 GMT  
 		Size: 59.5 KB (59531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
