@@ -101,7 +101,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 43.8 MB (43815240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc7852360901c90703240d8ee39d30fedb8c717096e810b49177d963b9ec56e0`  
-		Last Modified: Thu, 15 Jan 2026 22:17:45 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:18:13 GMT  
 		Size: 878.0 KB (878003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ce26160ac4c697b62bd60a8cc1d5b348eba9a2911c4c4ecaab2077f78d92b3e7`  
@@ -109,7 +109,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 3.7 KB (3727 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc205b848befc11f48c73aaa2398fc1677de24619065d49d7572141d01768fd7`  
-		Last Modified: Thu, 15 Jan 2026 22:18:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:19:30 GMT  
 		Size: 624.2 MB (624199411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:379bf62eaf1e4774afccbfc9e62f8c3abbbc351a2a4dd8456f612eed07938d22`  
@@ -133,7 +133,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 218.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50d0c3dcfff0f0c22f24a368233eb3492836d03cbc43f8afdac210cc6733d5f1`  
@@ -283,7 +283,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 219.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fcf21e33aec4b518f3ecf68eec5b5730a6d505ed2fa9d6540e49b891b43e0f7`  
@@ -307,6 +307,6 @@ $ docker pull couchbase@sha256:aa513759828a46dffa944c9504b035d3a1f53d35405f9532e
 
 -	Layers:
 	-	`sha256:071cb13794bb080296f38a32cd51d20aacfdb7fe5b5631312eee9ee9afc8c60b`  
-		Last Modified: Thu, 15 Jan 2026 22:17:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:33:32 GMT  
 		Size: 37.7 KB (37706 bytes)  
 		MIME: application/vnd.in-toto+json
