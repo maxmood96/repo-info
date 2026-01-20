@@ -101,11 +101,11 @@ CMD ["jshell"]
 		Size: 55.3 MB (55325417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29338c551bc45d0bbf250592970f7b04a06889a5263de0b2a62b1de9786c0775`  
-		Last Modified: Thu, 18 Dec 2025 22:24:23 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:24:37 GMT  
 		Size: 92.0 MB (92046730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b64918ffbe1fcb54b48c258b0d75f9770542176ba71715557ce5efac2eec3783`  
-		Last Modified: Thu, 18 Dec 2025 22:24:20 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:24:29 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a09c96aca76843dfcf6ddcadb47924b43be94dbf7859b0ddf753420265a1270f`  
@@ -219,7 +219,7 @@ CMD ["jshell"]
 		Size: 32.6 MB (32633678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10d948260fbeb5898b951608e82c62c396441948bd58cf3487ddc75bc89feaff`  
-		Last Modified: Thu, 18 Dec 2025 22:31:26 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:31:15 GMT  
 		Size: 55.1 MB (55118598 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:945294a41f01a860ee896a3ed13082b932d47912020e6b4d067b64862718e4d2`  
@@ -471,7 +471,7 @@ CMD ["jshell"]
 		Size: 88.2 MB (88211716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9bf264ae291787a793a02fb55a8048dd9b401b80671dd4835b6ee5a717a4e3a0`  
-		Last Modified: Thu, 18 Dec 2025 22:42:53 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:42:46 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22da806615f6d48dce6f9ae2432b30bd022d20e05181676062f89dd57706f466`  
@@ -495,7 +495,7 @@ $ docker pull eclipse-temurin@sha256:b5df0fd1e97e1a94cb3ec32b1e7af2a0755bae17fcc
 
 -	Layers:
 	-	`sha256:a01690669757152ace2aede66e7e86ce33320bb55d4caa017962c84a17139636`  
-		Last Modified: Thu, 18 Dec 2025 22:42:46 GMT  
+		Last Modified: Fri, 19 Dec 2025 00:24:36 GMT  
 		Size: 5.6 MB (5619262 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7ffae0c0f552d4c9d7e4b754433efb7e3f9290b1909e68ba5430726215983434`  
