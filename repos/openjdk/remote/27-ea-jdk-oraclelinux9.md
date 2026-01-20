@@ -149,6 +149,6 @@ $ docker pull openjdk@sha256:5fd102b1f2a1aa08e185cd23a078060b9cd3851ed5a76bc28a0
 		Size: 3.7 MB (3653045 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:86fddf70be616b0ff1166fa3ee498d2ea40eed418a837573054b417d400f2890`  
-		Last Modified: Sat, 17 Jan 2026 01:24:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:32:11 GMT  
 		Size: 18.0 KB (18029 bytes)  
 		MIME: application/vnd.in-toto+json
