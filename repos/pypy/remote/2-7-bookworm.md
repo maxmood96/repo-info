@@ -52,7 +52,7 @@ CMD ["pypy"]
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64538a062a61add8dc8b290fa69475e8902eb839c497a5f5dcd5a950422e493c`  
-		Last Modified: Tue, 13 Jan 2026 02:09:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:00 GMT  
 		Size: 24.0 MB (24036867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd1872fa12cc6b1145803f1a0679ca26cc65fa1b4e0ee389bfb30267594736b6`  
@@ -131,11 +131,11 @@ CMD ["pypy"]
 		Size: 48.4 MB (48366072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d72c713ab317dd7f302a6ff5a345af5b61cddc864fca2d96a23e6ef3c90a6657`  
-		Last Modified: Tue, 13 Jan 2026 02:12:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:12:51 GMT  
 		Size: 23.6 MB (23604814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:687ad46596f06c934001fa6d7bea3d1508b0bb616cffb71004efd5bada56884f`  
-		Last Modified: Tue, 13 Jan 2026 03:57:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:05 GMT  
 		Size: 64.5 MB (64479462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f018151ab3f36e399ef489b536713197af8faa14dce771cb623bd750150fc315`  
@@ -222,7 +222,7 @@ CMD ["pypy"]
 		Size: 210.4 MB (210412920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0e66af80cba5d9b599449f88b87c7a56f4db29f80250371ceac610231c6bc277`  
-		Last Modified: Tue, 13 Jan 2026 04:36:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:36:35 GMT  
 		Size: 29.0 MB (28979707 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -242,7 +242,7 @@ $ docker pull pypy@sha256:9821c2285814b1759d93b648d2e6de446793e305aaae5315e39323
 
 -	Layers:
 	-	`sha256:0bb9b0223a11d137d9727fdb8fa1a0e83bd01ab79d574174024a4235cda1c991`  
-		Last Modified: Tue, 13 Jan 2026 04:36:35 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:40:00 GMT  
 		Size: 15.9 MB (15862969 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b22067bc4da3d2c4bd4a0b72bb075abb89b099d8cc2c70969003a89cc702b87d`  
