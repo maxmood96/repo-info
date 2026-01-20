@@ -63,7 +63,7 @@ CMD ["neo4j"]
 		Size: 30.3 MB (30258497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:766b5a51319239db2e62d2d93f88c9bda644e4d98ad4b32531a2126e5d9a9a69`  
-		Last Modified: Fri, 16 Jan 2026 03:49:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:39:49 GMT  
 		Size: 144.8 MB (144847971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3e679949712117e57d26a0585f367aeb3089d3005a6952191fc6ccca2b13add2`  
@@ -159,7 +159,7 @@ CMD ["neo4j"]
 		Size: 28.7 MB (28748518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9a5fc1c780c6255e1c74e20b6363b45e8353e32823653e6ea0c3d41b6004989`  
-		Last Modified: Fri, 16 Jan 2026 00:42:33 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:42:12 GMT  
 		Size: 143.7 MB (143679930 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e4f454851b5ba7e8430a0f7f68e014ee873298b98eadba1d826d4a9441befda`  
@@ -167,11 +167,11 @@ CMD ["neo4j"]
 		Size: 3.9 KB (3869 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff0968ae446b381c4e67387be0f37b67b916d920582d670545db984e054acd4`  
-		Last Modified: Fri, 16 Jan 2026 00:42:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:42:07 GMT  
 		Size: 10.1 KB (10060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ddeb8ef92c8ad96e687afacf9240db3a91b4a6b723001f679624b41864cf6a16`  
-		Last Modified: Fri, 16 Jan 2026 00:42:50 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:42:17 GMT  
 		Size: 492.6 MB (492622646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -195,7 +195,7 @@ $ docker pull neo4j@sha256:18c43a84f43804903e2e509295997e7d5f8467792331198c8536d
 
 -	Layers:
 	-	`sha256:8aafeb81787d80921cfacf00c15f2977b9f2ab945180daa71eaa2c271af639be`  
-		Last Modified: Fri, 16 Jan 2026 03:45:06 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:42:07 GMT  
 		Size: 4.8 MB (4821017 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f8c18ce960da76e71b4883c1b085aea257a89cccb3df786e8b0c6492f051141`  
