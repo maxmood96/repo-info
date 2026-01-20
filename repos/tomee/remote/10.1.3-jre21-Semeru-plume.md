@@ -78,15 +78,15 @@ CMD ["catalina.sh" "run"]
 		Size: 29.5 MB (29536667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9f07ed2e46c3ffb46aee11dc56f0535b3e8b917d0fd69c6494d0a331fbbe596`  
-		Last Modified: Thu, 15 Jan 2026 22:28:51 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:29:00 GMT  
 		Size: 12.2 MB (12171825 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:44a26df12887357ebb67c87447cdb5886920ad7b1a1cddff461210d7ae632860`  
-		Last Modified: Thu, 15 Jan 2026 22:29:10 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:28:53 GMT  
 		Size: 59.8 MB (59835364 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f2faef7e8187e7bf3166af68a19ec63c67529ed213da35e5d57ab3ba74a67cf`  
-		Last Modified: Thu, 15 Jan 2026 22:28:51 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:28:59 GMT  
 		Size: 5.3 MB (5281747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b923e4d896c73c010716dd6d14b63e6bdead69b0ab04d5939a7b3d248be4b6fc`  
@@ -126,11 +126,11 @@ $ docker pull tomee@sha256:970776d816105e955f82cf27c5f28d9d8fb367751d087a1e77294
 
 -	Layers:
 	-	`sha256:c9a9b1e0d455b97f312d70a435b0afa8a03376cdf26f3dd4bb7de0ca21e91905`  
-		Last Modified: Fri, 16 Jan 2026 01:28:30 GMT  
+		Last Modified: Fri, 16 Jan 2026 05:15:19 GMT  
 		Size: 4.2 MB (4247606 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3b2ee9a315dbd085dfb07dbf5ce1d17141a44763797e796f242e997f4f15b98f`  
-		Last Modified: Fri, 16 Jan 2026 05:15:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:28:30 GMT  
 		Size: 27.8 KB (27768 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -209,7 +209,7 @@ CMD ["catalina.sh" "run"]
 		Size: 58.1 MB (58095445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d7b473c24c6ae1a678528751ac57a726754fc33548f2c5e8d23452b25b0dfc7f`  
-		Last Modified: Thu, 15 Jan 2026 22:30:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:30:45 GMT  
 		Size: 5.0 MB (4958539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6c0537be69f099d544ad1dcd3c3c1984db9c18e87ee3f2c94a0a873cfb1db7ba`  

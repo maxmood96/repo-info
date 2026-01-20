@@ -78,7 +78,7 @@ CMD ["catalina.sh" "run"]
 		Size: 29.5 MB (29536667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ad96c1dea85f86acf9252b1bd3e4d4b5cd893cdb4f8ba18a6df444afd4ea1d9`  
-		Last Modified: Thu, 15 Jan 2026 22:28:01 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:28:11 GMT  
 		Size: 12.2 MB (12171783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bcd7976482bebafb7cfd5d5794d319ed4d11a0cf175c3ff9cbe93e6b22a5585`  
@@ -102,11 +102,11 @@ CMD ["catalina.sh" "run"]
 		Size: 2.4 MB (2357703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d82e6e2ea72884fad1d653ccecef1cf12333df1292fe87e4293a545bcbd87ca`  
-		Last Modified: Fri, 16 Jan 2026 01:31:18 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:31:10 GMT  
 		Size: 75.6 KB (75636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:627f7ee89c156e1213a28ad70e2e3676ecaed12553f1743dac98808c6e0f9bed`  
-		Last Modified: Fri, 16 Jan 2026 01:32:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:32:24 GMT  
 		Size: 59.7 MB (59678168 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -126,7 +126,7 @@ $ docker pull tomee@sha256:2607f50d693bd611b20c9043918fd17404e48726c524991e75448
 
 -	Layers:
 	-	`sha256:13646f4a0da58441c0906ef17a8023566b040516549cd750e90d74c32ba072b8`  
-		Last Modified: Fri, 16 Jan 2026 05:13:50 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:32:03 GMT  
 		Size: 4.1 MB (4100082 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5123a42f4533a873473e4f1f1fb590acc1eb3039e9e341df3716a7ec9a2443df`  
@@ -205,7 +205,7 @@ CMD ["catalina.sh" "run"]
 		Size: 12.1 MB (12132639 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8f6b9251c4a9c14abe5526cdb8678e960f10ad19867712e0ad77ad7dcd436057`  
-		Last Modified: Thu, 15 Jan 2026 22:30:04 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:30:29 GMT  
 		Size: 53.5 MB (53468141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc1786dbee4e241beca5a62c5c6e782ca848a0ba2d26f81700a2298991ec5385`  
