@@ -66,7 +66,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Size: 49.4 MB (49414874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:58ad5600c301592b1d2d89dd324319a63ba671dc63ea148c4bc2a84e398c1ae2`  
-		Last Modified: Thu, 09 Oct 2025 22:15:10 GMT  
+		Last Modified: Tue, 09 Dec 2025 10:06:17 GMT  
 		Size: 209.1 MB (209139865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -86,7 +86,7 @@ $ docker pull buildpack-deps@sha256:a5918b14115c0808e610337c9146f3870368127cb3b7
 
 -	Layers:
 	-	`sha256:997dae07431c0781d6c8d818b805fc582337ccec88cb12d3888e00f1004c95fa`  
-		Last Modified: Tue, 09 Dec 2025 10:06:07 GMT  
+		Last Modified: Thu, 09 Oct 2025 22:15:06 GMT  
 		Size: 12.0 MB (11965591 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d5fb6b17e04f97e8258d3f923b8a57bb3ff3d94c3c87c33ec51dc5fdba833003`  
@@ -129,7 +129,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 
 -	Layers:
 	-	`sha256:a560adc1db1b1576c34098b508ac1924a3ade1dfef0c1b3bf40e1e69968ecb16`  
-		Last Modified: Thu, 02 Oct 2025 22:52:10 GMT  
+		Last Modified: Tue, 09 Dec 2025 00:06:56 GMT  
 		Size: 26.8 MB (26843779 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:437e3a045a9c9b782981e6941004f53d1cfc09bba43c98055dae478ea41bcc73`  
@@ -165,7 +165,7 @@ $ docker pull buildpack-deps@sha256:730b8d636023133b1c134ef7dc15ece94d2f84f8e2e0
 		Size: 11.7 MB (11718092 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d6bb98437c24fa23013cc284fb24e8aee1fcd2ec1bde42ae426266cb68e05a9c`  
-		Last Modified: Tue, 09 Dec 2025 10:06:05 GMT  
+		Last Modified: Thu, 09 Oct 2025 22:15:30 GMT  
 		Size: 10.3 KB (10253 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -287,7 +287,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Size: 21.6 MB (21588037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e614af73321c4f5cff498ceb1a8a0cbe9a1eceb385bd972dad38c398b021aff`  
-		Last Modified: Thu, 09 Oct 2025 23:06:53 GMT  
+		Last Modified: Tue, 09 Dec 2025 10:03:05 GMT  
 		Size: 52.6 MB (52610358 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:28494cc6b0058edb9a72fd4b2bb61770a4b2b498d4c8f15d82ef40df431fb347`  
