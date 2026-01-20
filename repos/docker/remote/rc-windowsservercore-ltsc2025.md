@@ -63,11 +63,11 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 1.3 KB (1325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:907f15b6ce189c7196a688b7f979a336d837900bcf8c4d8ea83b52f9d9108303`  
-		Last Modified: Tue, 13 Jan 2026 22:52:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:55:06 GMT  
 		Size: 378.5 KB (378452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:964e7e06194fa7da90aa63e72a931a64614eb984642f892a5467a92ef725493b`  
-		Last Modified: Tue, 13 Jan 2026 22:55:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:52:00 GMT  
 		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bcecb658ec1306c6b4d09e235e3b4df55334389aabca3ea25873eb7cc42c70b9`  
@@ -75,7 +75,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4e67b0ec37a051802753fb2c0e3fe6361286b5a0a14c00239c98fabd49ed7284`  
-		Last Modified: Tue, 13 Jan 2026 22:52:03 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:55:08 GMT  
 		Size: 19.4 MB (19445524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:81c3aa195cf770ef34088c713b425700b36ce5a4a7a5b50a901910e2af3ac7dc`  
@@ -95,7 +95,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 23.9 MB (23938524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5dda590074835d3649479d067e616a6e4aa1821afb324948955b29535394d57`  
-		Last Modified: Tue, 13 Jan 2026 22:51:57 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:55:07 GMT  
 		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:884dfe4aad0739c293207c6a4e23ae76d752b46e14c1ddeece8f3e87d75a94b4`  
@@ -103,7 +103,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bdd3f9b09b31eb609ce0ae4135b0a0260428e0078515102e375fdcff3a6849fc`  
-		Last Modified: Tue, 13 Jan 2026 22:51:57 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:55:07 GMT  
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a31be07f17cd5642c37ca3300c442ba84014deef68f9f5298a3f7e51ec403a4b`  
