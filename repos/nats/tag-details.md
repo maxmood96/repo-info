@@ -189,7 +189,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.3 MB (6313188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:00:53 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -243,11 +243,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:44:10 GMT  
+		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
 		Size: 6.3 MB (6303218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:37 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -267,7 +267,7 @@ $ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b0
 
 -	Layers:
 	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 21:56:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -421,7 +421,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.4 MB (6431785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:55 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -478,11 +478,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
@@ -494,7 +494,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
@@ -502,7 +502,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -565,7 +565,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
@@ -643,7 +643,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
 		Size: 6.8 MB (6773381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
@@ -713,15 +713,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
 		Size: 6.8 MB (6762271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
@@ -745,7 +745,7 @@ $ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6
 
 -	Layers:
 	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:56:55 GMT  
 		Size: 15.5 KB (15516 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -787,11 +787,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff897b652cfa26ab8408fd8fcbfbf0cbcddc6b6fdf074ed595b62f47e968c2de`  
-		Last Modified: Wed, 17 Dec 2025 19:56:19 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
 		Size: 6.5 MB (6460634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93e271e573323c058c33c69f8d7264e8532d2bc4be024d1f34f72ca2347a95fc`  
@@ -869,11 +869,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.5 MB (6510964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -939,15 +939,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:40 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 6.9 MB (6893186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -967,7 +967,7 @@ $ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c68
 
 -	Layers:
 	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 21:57:04 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1030,7 +1030,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
@@ -1108,7 +1108,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
 		Size: 6.8 MB (6773381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
@@ -1178,15 +1178,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
 		Size: 6.8 MB (6762271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
@@ -1210,7 +1210,7 @@ $ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6
 
 -	Layers:
 	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:56:55 GMT  
 		Size: 15.5 KB (15516 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1252,11 +1252,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff897b652cfa26ab8408fd8fcbfbf0cbcddc6b6fdf074ed595b62f47e968c2de`  
-		Last Modified: Wed, 17 Dec 2025 19:56:19 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
 		Size: 6.5 MB (6460634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93e271e573323c058c33c69f8d7264e8532d2bc4be024d1f34f72ca2347a95fc`  
@@ -1334,11 +1334,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.5 MB (6510964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1404,15 +1404,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:40 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 6.9 MB (6893186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1432,7 +1432,7 @@ $ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c68
 
 -	Layers:
 	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 21:57:04 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1549,7 +1549,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.3 MB (6313188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:00:53 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1603,11 +1603,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:44:10 GMT  
+		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
 		Size: 6.3 MB (6303218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:37 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1627,7 +1627,7 @@ $ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b0
 
 -	Layers:
 	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 21:56:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1781,7 +1781,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.4 MB (6431785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:55 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1848,11 +1848,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
@@ -1864,7 +1864,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
@@ -1872,7 +1872,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1919,11 +1919,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
@@ -1935,7 +1935,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
@@ -1943,7 +1943,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2060,7 +2060,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.3 MB (6313188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:00:53 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2114,11 +2114,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:44:10 GMT  
+		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
 		Size: 6.3 MB (6303218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:37 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2138,7 +2138,7 @@ $ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b0
 
 -	Layers:
 	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 21:56:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2292,7 +2292,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.4 MB (6431785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:55 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2386,7 +2386,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
@@ -2398,11 +2398,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
@@ -2410,11 +2410,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 487.4 KB (487412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
 		Size: 7.1 MB (7124370 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
 		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
@@ -2500,7 +2500,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
@@ -2512,11 +2512,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
@@ -2524,11 +2524,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 487.4 KB (487412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
 		Size: 7.1 MB (7124370 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
 		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
@@ -2600,7 +2600,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.2 MB (6176976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8b72167f52428a194c193e049e3bd650a151950d25d7ee4053d51d9aea6c3ee`  
-		Last Modified: Wed, 08 Oct 2025 23:33:27 GMT  
+		Last Modified: Mon, 08 Dec 2025 00:05:25 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2620,7 +2620,7 @@ $ docker pull nats@sha256:22966994fa248e4bbaeae98dc1237a3d529aa34d14d3a08ec64f2a
 
 -	Layers:
 	-	`sha256:bf25a02cee54db98ccdd3ab464f87175c8cccf402c3d3f6c7575ad9621110d24`  
-		Last Modified: Wed, 08 Oct 2025 23:33:27 GMT  
+		Last Modified: Mon, 08 Dec 2025 13:40:56 GMT  
 		Size: 8.7 KB (8711 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2654,11 +2654,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:fa5273ca4aaf95ea6e1b9ef46f70f073183aff4281d28d8beb2cad3ad7db3be3`  
-		Last Modified: Mon, 29 Dec 2025 00:19:27 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:24 GMT  
 		Size: 5.9 MB (5898165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c05ee5edeb225d0f8e1902468ddf15f404e488757ee718d08c1b7d465dde8d3`  
-		Last Modified: Fri, 12 Dec 2025 00:09:43 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:56:21 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2736,7 +2736,7 @@ $ docker pull nats@sha256:7095fc3b0d955d4b45bfde0e3d1325af685a27ae39572b5645dace
 
 -	Layers:
 	-	`sha256:51f4a6f338b6381042b1a00c900e2d6cc73f6443572e59120bbe7c21de28feb5`  
-		Last Modified: Wed, 08 Oct 2025 23:14:30 GMT  
+		Last Modified: Wed, 10 Dec 2025 00:56:58 GMT  
 		Size: 8.8 KB (8794 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2770,11 +2770,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:d64d9bbebf62f0a051d5cb189e70e395bdec4ba36971b0623c1901afc064521b`  
-		Last Modified: Fri, 12 Dec 2025 08:04:14 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:24 GMT  
 		Size: 5.7 MB (5681568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:510e0d69b77490450dd92c6e89d07b28944be6eab55f0e9b0466e0e3c93087e6`  
-		Last Modified: Wed, 08 Oct 2025 22:51:33 GMT  
+		Last Modified: Mon, 08 Dec 2025 05:06:33 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2828,11 +2828,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:e76cdc72f647f0d1048fbb0f93c63b0f9e298dc4deec33bc751f2e73cc25b242`  
-		Last Modified: Mon, 29 Dec 2025 00:19:29 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:27 GMT  
 		Size: 5.7 MB (5662712 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64d1d232cd07cfbf4ca2ddc8aab1ed392a4f7e88284f0a366f3940ede3de93fc`  
-		Last Modified: Fri, 12 Dec 2025 00:09:56 GMT  
+		Last Modified: Thu, 09 Oct 2025 05:20:54 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2852,7 +2852,7 @@ $ docker pull nats@sha256:8915031c75568f96b4ed93dffd4e7f1f6fb9d07c7449909baaa075
 
 -	Layers:
 	-	`sha256:c4954d9cff74aabbddfb1257a7467c3a9f74270b5d59fe82f1c27a83fa93dde7`  
-		Last Modified: Thu, 09 Oct 2025 05:20:54 GMT  
+		Last Modified: Wed, 10 Dec 2025 00:57:04 GMT  
 		Size: 8.8 KB (8765 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2947,7 +2947,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c072f08d02840c28268cde75a9dfa1875832a1d284da5cc86d584edf70b0194e`  
@@ -2955,11 +2955,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6c92fae925ee22e7b21333f36361efb7649b4151945e5da244bd64d6efe06b05`  
-		Last Modified: Tue, 13 Jan 2026 23:35:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:56 GMT  
 		Size: 6.3 MB (6298135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:13ae8ae3536dbbb46ec9eb5e254d9b4a4af420bcef1b624eb80f52573d7920f8`  
-		Last Modified: Tue, 13 Jan 2026 23:35:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:55 GMT  
 		Size: 1.7 KB (1711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:70f882c1925ccf162172af29dc25910c331418b760cbcd2447e12b51c91e17fb`  
@@ -2971,7 +2971,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ac1ba3923305c275211285cabec8cc1020cee406a376e054aca0c2977f1b179`  
-		Last Modified: Tue, 13 Jan 2026 23:35:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:55 GMT  
 		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3032,19 +3032,19 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4e9626cde343344e0d38c76df10c185c9f7b12ed8423ce5350b3955a0f654e6`  
-		Last Modified: Sun, 07 Dec 2025 23:57:17 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 6.6 MB (6637121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8b71c798365ed4a38f1f62e0e935b775038e731916c7e2469f79e8712e3db49`  
-		Last Modified: Sun, 07 Dec 2025 23:57:17 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:791b54d5fa0f1d7b5a10036d6f574507d7080e2f6c7c5f56dbdfb2a39bbb71e6`  
-		Last Modified: Sun, 07 Dec 2025 23:57:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 408.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3064,7 +3064,7 @@ $ docker pull nats@sha256:4784d3be05ed19411efebafeb7b68cce9d776e75948f1897bddcfb
 
 -	Layers:
 	-	`sha256:094eca1ad94ceda2907e22c8c6893ee66cebb8cbac5bfff7aee584e56b5eeade`  
-		Last Modified: Mon, 08 Dec 2025 03:08:58 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 13.1 KB (13122 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3112,11 +3112,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.4 MB (6359661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d7c0b275517295cd18d25dfc2f3d350895e4db28726798f413cb2a2f2855e759`  
-		Last Modified: Wed, 08 Oct 2025 21:42:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 11:39:46 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed9fe5f6adf199ea08cb93f8eb850df518f900925e7ba319e1723c1ec5492958`  
-		Last Modified: Wed, 17 Dec 2025 11:39:52 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:42:06 GMT  
 		Size: 407.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3176,7 +3176,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7080d96e045e46908eb2ae3aeb738aacc7766d44628e26bd2b63d238e34bbb4`  
@@ -3248,15 +3248,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bfd55772b55ac9bbda4fd63fcb1219e4d0259d2c7e3496c813bd826fddc909c2`  
-		Last Modified: Wed, 08 Oct 2025 21:28:41 GMT  
+		Last Modified: Sun, 07 Dec 2025 22:10:12 GMT  
 		Size: 6.1 MB (6142848 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a7bfe32b0a64298bd2fed57203465f55b80b7cbdf083c74a72c87982895c975`  
-		Last Modified: Sun, 07 Dec 2025 22:10:12 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:28:41 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b648a6b3b8a2bd47b5f87b8ec03d0a3ad86ebcfe606858aea0b88631514754e5`  
@@ -3280,7 +3280,7 @@ $ docker pull nats@sha256:6ee0847edba9b20199d6eef0fbf1c5c36533889d27883ccefcac51
 
 -	Layers:
 	-	`sha256:b995ae56f38f87600d18053b5e5ca4c5e8ec0ae3f128854b696a11336a34decc`  
-		Last Modified: Wed, 08 Oct 2025 21:28:41 GMT  
+		Last Modified: Mon, 08 Dec 2025 07:52:27 GMT  
 		Size: 13.2 KB (13226 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3324,11 +3324,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:04d4de9e794bc1e1d203f9d3381f9c83f59866a3e6f5003fd1d5907cac12a101`  
-		Last Modified: Thu, 18 Dec 2025 08:46:53 GMT  
+		Last Modified: Thu, 09 Oct 2025 00:49:05 GMT  
 		Size: 6.1 MB (6121175 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b51349db9d999b43418386704d141162b93b4a283b57ed827a4355a3b961805`  
-		Last Modified: Thu, 18 Dec 2025 08:46:55 GMT  
+		Last Modified: Thu, 09 Oct 2025 00:49:04 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c19b6f101e35245acf9db3c52d98370e666865e598c4114bdfda3a54e09c909f`  
@@ -3352,7 +3352,7 @@ $ docker pull nats@sha256:1483af7b956803aa57c07e3c1bee197b331d2fb094f4f04ffa2c5e
 
 -	Layers:
 	-	`sha256:8e1f14c372d78fba654d7e47c33f5a6c2ffba638d5a547b77ce3dcf79a2d686b`  
-		Last Modified: Thu, 09 Oct 2025 00:49:04 GMT  
+		Last Modified: Thu, 18 Dec 2025 08:47:00 GMT  
 		Size: 13.2 KB (13166 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3396,11 +3396,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:650b200f66e89fbeb0c184f94ebcd151f8c65defcbf5334d4421c77438eede28`  
-		Last Modified: Thu, 09 Oct 2025 00:48:14 GMT  
+		Last Modified: Thu, 18 Dec 2025 08:47:07 GMT  
 		Size: 6.5 MB (6478283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21a93a3c3b5ceaca80709490da234f5b08ad6ee7353cf6a8c178d0e2496a6641`  
-		Last Modified: Thu, 09 Oct 2025 00:48:14 GMT  
+		Last Modified: Thu, 18 Dec 2025 08:47:08 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1eaf13ee9d5db8ef26bf2b5d610cd4973bfb563288a12b8a8bcede57f237ad3a`  
@@ -3485,19 +3485,19 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4e9626cde343344e0d38c76df10c185c9f7b12ed8423ce5350b3955a0f654e6`  
-		Last Modified: Sun, 07 Dec 2025 23:57:17 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 6.6 MB (6637121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8b71c798365ed4a38f1f62e0e935b775038e731916c7e2469f79e8712e3db49`  
-		Last Modified: Sun, 07 Dec 2025 23:57:17 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:791b54d5fa0f1d7b5a10036d6f574507d7080e2f6c7c5f56dbdfb2a39bbb71e6`  
-		Last Modified: Sun, 07 Dec 2025 23:57:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 408.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3517,7 +3517,7 @@ $ docker pull nats@sha256:4784d3be05ed19411efebafeb7b68cce9d776e75948f1897bddcfb
 
 -	Layers:
 	-	`sha256:094eca1ad94ceda2907e22c8c6893ee66cebb8cbac5bfff7aee584e56b5eeade`  
-		Last Modified: Mon, 08 Dec 2025 03:08:58 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 13.1 KB (13122 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3565,11 +3565,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.4 MB (6359661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d7c0b275517295cd18d25dfc2f3d350895e4db28726798f413cb2a2f2855e759`  
-		Last Modified: Wed, 08 Oct 2025 21:42:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 11:39:46 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed9fe5f6adf199ea08cb93f8eb850df518f900925e7ba319e1723c1ec5492958`  
-		Last Modified: Wed, 17 Dec 2025 11:39:52 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:42:06 GMT  
 		Size: 407.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3629,7 +3629,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7080d96e045e46908eb2ae3aeb738aacc7766d44628e26bd2b63d238e34bbb4`  
@@ -3701,15 +3701,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bfd55772b55ac9bbda4fd63fcb1219e4d0259d2c7e3496c813bd826fddc909c2`  
-		Last Modified: Wed, 08 Oct 2025 21:28:41 GMT  
+		Last Modified: Sun, 07 Dec 2025 22:10:12 GMT  
 		Size: 6.1 MB (6142848 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a7bfe32b0a64298bd2fed57203465f55b80b7cbdf083c74a72c87982895c975`  
-		Last Modified: Sun, 07 Dec 2025 22:10:12 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:28:41 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b648a6b3b8a2bd47b5f87b8ec03d0a3ad86ebcfe606858aea0b88631514754e5`  
@@ -3733,7 +3733,7 @@ $ docker pull nats@sha256:6ee0847edba9b20199d6eef0fbf1c5c36533889d27883ccefcac51
 
 -	Layers:
 	-	`sha256:b995ae56f38f87600d18053b5e5ca4c5e8ec0ae3f128854b696a11336a34decc`  
-		Last Modified: Wed, 08 Oct 2025 21:28:41 GMT  
+		Last Modified: Mon, 08 Dec 2025 07:52:27 GMT  
 		Size: 13.2 KB (13226 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3777,11 +3777,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:04d4de9e794bc1e1d203f9d3381f9c83f59866a3e6f5003fd1d5907cac12a101`  
-		Last Modified: Thu, 18 Dec 2025 08:46:53 GMT  
+		Last Modified: Thu, 09 Oct 2025 00:49:05 GMT  
 		Size: 6.1 MB (6121175 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b51349db9d999b43418386704d141162b93b4a283b57ed827a4355a3b961805`  
-		Last Modified: Thu, 18 Dec 2025 08:46:55 GMT  
+		Last Modified: Thu, 09 Oct 2025 00:49:04 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c19b6f101e35245acf9db3c52d98370e666865e598c4114bdfda3a54e09c909f`  
@@ -3805,7 +3805,7 @@ $ docker pull nats@sha256:1483af7b956803aa57c07e3c1bee197b331d2fb094f4f04ffa2c5e
 
 -	Layers:
 	-	`sha256:8e1f14c372d78fba654d7e47c33f5a6c2ffba638d5a547b77ce3dcf79a2d686b`  
-		Last Modified: Thu, 09 Oct 2025 00:49:04 GMT  
+		Last Modified: Thu, 18 Dec 2025 08:47:00 GMT  
 		Size: 13.2 KB (13166 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3849,11 +3849,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:650b200f66e89fbeb0c184f94ebcd151f8c65defcbf5334d4421c77438eede28`  
-		Last Modified: Thu, 09 Oct 2025 00:48:14 GMT  
+		Last Modified: Thu, 18 Dec 2025 08:47:07 GMT  
 		Size: 6.5 MB (6478283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21a93a3c3b5ceaca80709490da234f5b08ad6ee7353cf6a8c178d0e2496a6641`  
-		Last Modified: Thu, 09 Oct 2025 00:48:14 GMT  
+		Last Modified: Thu, 18 Dec 2025 08:47:08 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1eaf13ee9d5db8ef26bf2b5d610cd4973bfb563288a12b8a8bcede57f237ad3a`  
@@ -3936,7 +3936,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.2 MB (6176976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8b72167f52428a194c193e049e3bd650a151950d25d7ee4053d51d9aea6c3ee`  
-		Last Modified: Wed, 08 Oct 2025 23:33:27 GMT  
+		Last Modified: Mon, 08 Dec 2025 00:05:25 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3956,7 +3956,7 @@ $ docker pull nats@sha256:22966994fa248e4bbaeae98dc1237a3d529aa34d14d3a08ec64f2a
 
 -	Layers:
 	-	`sha256:bf25a02cee54db98ccdd3ab464f87175c8cccf402c3d3f6c7575ad9621110d24`  
-		Last Modified: Wed, 08 Oct 2025 23:33:27 GMT  
+		Last Modified: Mon, 08 Dec 2025 13:40:56 GMT  
 		Size: 8.7 KB (8711 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3990,11 +3990,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:fa5273ca4aaf95ea6e1b9ef46f70f073183aff4281d28d8beb2cad3ad7db3be3`  
-		Last Modified: Mon, 29 Dec 2025 00:19:27 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:24 GMT  
 		Size: 5.9 MB (5898165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c05ee5edeb225d0f8e1902468ddf15f404e488757ee718d08c1b7d465dde8d3`  
-		Last Modified: Fri, 12 Dec 2025 00:09:43 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:56:21 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4072,7 +4072,7 @@ $ docker pull nats@sha256:7095fc3b0d955d4b45bfde0e3d1325af685a27ae39572b5645dace
 
 -	Layers:
 	-	`sha256:51f4a6f338b6381042b1a00c900e2d6cc73f6443572e59120bbe7c21de28feb5`  
-		Last Modified: Wed, 08 Oct 2025 23:14:30 GMT  
+		Last Modified: Wed, 10 Dec 2025 00:56:58 GMT  
 		Size: 8.8 KB (8794 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4106,11 +4106,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:d64d9bbebf62f0a051d5cb189e70e395bdec4ba36971b0623c1901afc064521b`  
-		Last Modified: Fri, 12 Dec 2025 08:04:14 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:24 GMT  
 		Size: 5.7 MB (5681568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:510e0d69b77490450dd92c6e89d07b28944be6eab55f0e9b0466e0e3c93087e6`  
-		Last Modified: Wed, 08 Oct 2025 22:51:33 GMT  
+		Last Modified: Mon, 08 Dec 2025 05:06:33 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4164,11 +4164,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:e76cdc72f647f0d1048fbb0f93c63b0f9e298dc4deec33bc751f2e73cc25b242`  
-		Last Modified: Mon, 29 Dec 2025 00:19:29 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:27 GMT  
 		Size: 5.7 MB (5662712 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64d1d232cd07cfbf4ca2ddc8aab1ed392a4f7e88284f0a366f3940ede3de93fc`  
-		Last Modified: Fri, 12 Dec 2025 00:09:56 GMT  
+		Last Modified: Thu, 09 Oct 2025 05:20:54 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4188,7 +4188,7 @@ $ docker pull nats@sha256:8915031c75568f96b4ed93dffd4e7f1f6fb9d07c7449909baaa075
 
 -	Layers:
 	-	`sha256:c4954d9cff74aabbddfb1257a7467c3a9f74270b5d59fe82f1c27a83fa93dde7`  
-		Last Modified: Thu, 09 Oct 2025 05:20:54 GMT  
+		Last Modified: Wed, 10 Dec 2025 00:57:04 GMT  
 		Size: 8.8 KB (8765 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4293,7 +4293,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c072f08d02840c28268cde75a9dfa1875832a1d284da5cc86d584edf70b0194e`  
@@ -4301,11 +4301,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6c92fae925ee22e7b21333f36361efb7649b4151945e5da244bd64d6efe06b05`  
-		Last Modified: Tue, 13 Jan 2026 23:35:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:56 GMT  
 		Size: 6.3 MB (6298135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:13ae8ae3536dbbb46ec9eb5e254d9b4a4af420bcef1b624eb80f52573d7920f8`  
-		Last Modified: Tue, 13 Jan 2026 23:35:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:55 GMT  
 		Size: 1.7 KB (1711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:70f882c1925ccf162172af29dc25910c331418b760cbcd2447e12b51c91e17fb`  
@@ -4317,7 +4317,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ac1ba3923305c275211285cabec8cc1020cee406a376e054aca0c2977f1b179`  
-		Last Modified: Tue, 13 Jan 2026 23:35:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:55 GMT  
 		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -4364,7 +4364,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c072f08d02840c28268cde75a9dfa1875832a1d284da5cc86d584edf70b0194e`  
@@ -4372,11 +4372,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6c92fae925ee22e7b21333f36361efb7649b4151945e5da244bd64d6efe06b05`  
-		Last Modified: Tue, 13 Jan 2026 23:35:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:56 GMT  
 		Size: 6.3 MB (6298135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:13ae8ae3536dbbb46ec9eb5e254d9b4a4af420bcef1b624eb80f52573d7920f8`  
-		Last Modified: Tue, 13 Jan 2026 23:35:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:55 GMT  
 		Size: 1.7 KB (1711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:70f882c1925ccf162172af29dc25910c331418b760cbcd2447e12b51c91e17fb`  
@@ -4388,7 +4388,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ac1ba3923305c275211285cabec8cc1020cee406a376e054aca0c2977f1b179`  
-		Last Modified: Tue, 13 Jan 2026 23:35:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:55 GMT  
 		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -4447,7 +4447,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.2 MB (6176976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8b72167f52428a194c193e049e3bd650a151950d25d7ee4053d51d9aea6c3ee`  
-		Last Modified: Wed, 08 Oct 2025 23:33:27 GMT  
+		Last Modified: Mon, 08 Dec 2025 00:05:25 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4467,7 +4467,7 @@ $ docker pull nats@sha256:22966994fa248e4bbaeae98dc1237a3d529aa34d14d3a08ec64f2a
 
 -	Layers:
 	-	`sha256:bf25a02cee54db98ccdd3ab464f87175c8cccf402c3d3f6c7575ad9621110d24`  
-		Last Modified: Wed, 08 Oct 2025 23:33:27 GMT  
+		Last Modified: Mon, 08 Dec 2025 13:40:56 GMT  
 		Size: 8.7 KB (8711 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4501,11 +4501,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:fa5273ca4aaf95ea6e1b9ef46f70f073183aff4281d28d8beb2cad3ad7db3be3`  
-		Last Modified: Mon, 29 Dec 2025 00:19:27 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:24 GMT  
 		Size: 5.9 MB (5898165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c05ee5edeb225d0f8e1902468ddf15f404e488757ee718d08c1b7d465dde8d3`  
-		Last Modified: Fri, 12 Dec 2025 00:09:43 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:56:21 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4583,7 +4583,7 @@ $ docker pull nats@sha256:7095fc3b0d955d4b45bfde0e3d1325af685a27ae39572b5645dace
 
 -	Layers:
 	-	`sha256:51f4a6f338b6381042b1a00c900e2d6cc73f6443572e59120bbe7c21de28feb5`  
-		Last Modified: Wed, 08 Oct 2025 23:14:30 GMT  
+		Last Modified: Wed, 10 Dec 2025 00:56:58 GMT  
 		Size: 8.8 KB (8794 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4617,11 +4617,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:d64d9bbebf62f0a051d5cb189e70e395bdec4ba36971b0623c1901afc064521b`  
-		Last Modified: Fri, 12 Dec 2025 08:04:14 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:24 GMT  
 		Size: 5.7 MB (5681568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:510e0d69b77490450dd92c6e89d07b28944be6eab55f0e9b0466e0e3c93087e6`  
-		Last Modified: Wed, 08 Oct 2025 22:51:33 GMT  
+		Last Modified: Mon, 08 Dec 2025 05:06:33 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4675,11 +4675,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:e76cdc72f647f0d1048fbb0f93c63b0f9e298dc4deec33bc751f2e73cc25b242`  
-		Last Modified: Mon, 29 Dec 2025 00:19:29 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:27 GMT  
 		Size: 5.7 MB (5662712 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64d1d232cd07cfbf4ca2ddc8aab1ed392a4f7e88284f0a366f3940ede3de93fc`  
-		Last Modified: Fri, 12 Dec 2025 00:09:56 GMT  
+		Last Modified: Thu, 09 Oct 2025 05:20:54 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4699,7 +4699,7 @@ $ docker pull nats@sha256:8915031c75568f96b4ed93dffd4e7f1f6fb9d07c7449909baaa075
 
 -	Layers:
 	-	`sha256:c4954d9cff74aabbddfb1257a7467c3a9f74270b5d59fe82f1c27a83fa93dde7`  
-		Last Modified: Thu, 09 Oct 2025 05:20:54 GMT  
+		Last Modified: Wed, 10 Dec 2025 00:57:04 GMT  
 		Size: 8.8 KB (8765 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4825,7 +4825,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bfc5dd61a8ff495c23af1aa5df6f43b3aa3f1fb3343fc3c06b90be8b99814e09`  
-		Last Modified: Tue, 13 Jan 2026 23:02:22 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:27 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4b0e86373915ed4fd7081bb057a0169629ad58fb8422e787e51e015cd1d71561`  
@@ -4853,11 +4853,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.6 MB (6641914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9b42fdb0c0cb79cf277fae5cd66236707d9fd631287f28090b4ccab1aa643917`  
-		Last Modified: Tue, 13 Jan 2026 23:02:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:19 GMT  
 		Size: 1.9 KB (1890 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cec6d81bc85b3765ef97635b6ac3a1aa944614c053d800792f519b1b4349807f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:19 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:122ac14f5063bf4a20169065b66a4ac409e2b1e30f50a4c38d557923b7e2cd00`  
@@ -4933,7 +4933,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bfc5dd61a8ff495c23af1aa5df6f43b3aa3f1fb3343fc3c06b90be8b99814e09`  
-		Last Modified: Tue, 13 Jan 2026 23:02:22 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:27 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4b0e86373915ed4fd7081bb057a0169629ad58fb8422e787e51e015cd1d71561`  
@@ -4961,11 +4961,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.6 MB (6641914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9b42fdb0c0cb79cf277fae5cd66236707d9fd631287f28090b4ccab1aa643917`  
-		Last Modified: Tue, 13 Jan 2026 23:02:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:19 GMT  
 		Size: 1.9 KB (1890 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cec6d81bc85b3765ef97635b6ac3a1aa944614c053d800792f519b1b4349807f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:19 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:122ac14f5063bf4a20169065b66a4ac409e2b1e30f50a4c38d557923b7e2cd00`  
@@ -5033,7 +5033,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.2 MB (6176976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8b72167f52428a194c193e049e3bd650a151950d25d7ee4053d51d9aea6c3ee`  
-		Last Modified: Wed, 08 Oct 2025 23:33:27 GMT  
+		Last Modified: Mon, 08 Dec 2025 00:05:25 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5053,7 +5053,7 @@ $ docker pull nats@sha256:22966994fa248e4bbaeae98dc1237a3d529aa34d14d3a08ec64f2a
 
 -	Layers:
 	-	`sha256:bf25a02cee54db98ccdd3ab464f87175c8cccf402c3d3f6c7575ad9621110d24`  
-		Last Modified: Wed, 08 Oct 2025 23:33:27 GMT  
+		Last Modified: Mon, 08 Dec 2025 13:40:56 GMT  
 		Size: 8.7 KB (8711 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5087,11 +5087,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:fa5273ca4aaf95ea6e1b9ef46f70f073183aff4281d28d8beb2cad3ad7db3be3`  
-		Last Modified: Mon, 29 Dec 2025 00:19:27 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:24 GMT  
 		Size: 5.9 MB (5898165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c05ee5edeb225d0f8e1902468ddf15f404e488757ee718d08c1b7d465dde8d3`  
-		Last Modified: Fri, 12 Dec 2025 00:09:43 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:56:21 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5169,7 +5169,7 @@ $ docker pull nats@sha256:7095fc3b0d955d4b45bfde0e3d1325af685a27ae39572b5645dace
 
 -	Layers:
 	-	`sha256:51f4a6f338b6381042b1a00c900e2d6cc73f6443572e59120bbe7c21de28feb5`  
-		Last Modified: Wed, 08 Oct 2025 23:14:30 GMT  
+		Last Modified: Wed, 10 Dec 2025 00:56:58 GMT  
 		Size: 8.8 KB (8794 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5203,11 +5203,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:d64d9bbebf62f0a051d5cb189e70e395bdec4ba36971b0623c1901afc064521b`  
-		Last Modified: Fri, 12 Dec 2025 08:04:14 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:24 GMT  
 		Size: 5.7 MB (5681568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:510e0d69b77490450dd92c6e89d07b28944be6eab55f0e9b0466e0e3c93087e6`  
-		Last Modified: Wed, 08 Oct 2025 22:51:33 GMT  
+		Last Modified: Mon, 08 Dec 2025 05:06:33 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5261,11 +5261,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:e76cdc72f647f0d1048fbb0f93c63b0f9e298dc4deec33bc751f2e73cc25b242`  
-		Last Modified: Mon, 29 Dec 2025 00:19:29 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:27 GMT  
 		Size: 5.7 MB (5662712 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64d1d232cd07cfbf4ca2ddc8aab1ed392a4f7e88284f0a366f3940ede3de93fc`  
-		Last Modified: Fri, 12 Dec 2025 00:09:56 GMT  
+		Last Modified: Thu, 09 Oct 2025 05:20:54 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5285,7 +5285,7 @@ $ docker pull nats@sha256:8915031c75568f96b4ed93dffd4e7f1f6fb9d07c7449909baaa075
 
 -	Layers:
 	-	`sha256:c4954d9cff74aabbddfb1257a7467c3a9f74270b5d59fe82f1c27a83fa93dde7`  
-		Last Modified: Thu, 09 Oct 2025 05:20:54 GMT  
+		Last Modified: Wed, 10 Dec 2025 00:57:04 GMT  
 		Size: 8.8 KB (8765 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5380,7 +5380,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c072f08d02840c28268cde75a9dfa1875832a1d284da5cc86d584edf70b0194e`  
@@ -5388,11 +5388,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6c92fae925ee22e7b21333f36361efb7649b4151945e5da244bd64d6efe06b05`  
-		Last Modified: Tue, 13 Jan 2026 23:35:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:56 GMT  
 		Size: 6.3 MB (6298135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:13ae8ae3536dbbb46ec9eb5e254d9b4a4af420bcef1b624eb80f52573d7920f8`  
-		Last Modified: Tue, 13 Jan 2026 23:35:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:55 GMT  
 		Size: 1.7 KB (1711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:70f882c1925ccf162172af29dc25910c331418b760cbcd2447e12b51c91e17fb`  
@@ -5404,7 +5404,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ac1ba3923305c275211285cabec8cc1020cee406a376e054aca0c2977f1b179`  
-		Last Modified: Tue, 13 Jan 2026 23:35:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:55 GMT  
 		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -5465,19 +5465,19 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4e9626cde343344e0d38c76df10c185c9f7b12ed8423ce5350b3955a0f654e6`  
-		Last Modified: Sun, 07 Dec 2025 23:57:17 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 6.6 MB (6637121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8b71c798365ed4a38f1f62e0e935b775038e731916c7e2469f79e8712e3db49`  
-		Last Modified: Sun, 07 Dec 2025 23:57:17 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:791b54d5fa0f1d7b5a10036d6f574507d7080e2f6c7c5f56dbdfb2a39bbb71e6`  
-		Last Modified: Sun, 07 Dec 2025 23:57:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 408.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5497,7 +5497,7 @@ $ docker pull nats@sha256:4784d3be05ed19411efebafeb7b68cce9d776e75948f1897bddcfb
 
 -	Layers:
 	-	`sha256:094eca1ad94ceda2907e22c8c6893ee66cebb8cbac5bfff7aee584e56b5eeade`  
-		Last Modified: Mon, 08 Dec 2025 03:08:58 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 13.1 KB (13122 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5545,11 +5545,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.4 MB (6359661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d7c0b275517295cd18d25dfc2f3d350895e4db28726798f413cb2a2f2855e759`  
-		Last Modified: Wed, 08 Oct 2025 21:42:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 11:39:46 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed9fe5f6adf199ea08cb93f8eb850df518f900925e7ba319e1723c1ec5492958`  
-		Last Modified: Wed, 17 Dec 2025 11:39:52 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:42:06 GMT  
 		Size: 407.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5609,7 +5609,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7080d96e045e46908eb2ae3aeb738aacc7766d44628e26bd2b63d238e34bbb4`  
@@ -5681,15 +5681,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bfd55772b55ac9bbda4fd63fcb1219e4d0259d2c7e3496c813bd826fddc909c2`  
-		Last Modified: Wed, 08 Oct 2025 21:28:41 GMT  
+		Last Modified: Sun, 07 Dec 2025 22:10:12 GMT  
 		Size: 6.1 MB (6142848 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a7bfe32b0a64298bd2fed57203465f55b80b7cbdf083c74a72c87982895c975`  
-		Last Modified: Sun, 07 Dec 2025 22:10:12 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:28:41 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b648a6b3b8a2bd47b5f87b8ec03d0a3ad86ebcfe606858aea0b88631514754e5`  
@@ -5713,7 +5713,7 @@ $ docker pull nats@sha256:6ee0847edba9b20199d6eef0fbf1c5c36533889d27883ccefcac51
 
 -	Layers:
 	-	`sha256:b995ae56f38f87600d18053b5e5ca4c5e8ec0ae3f128854b696a11336a34decc`  
-		Last Modified: Wed, 08 Oct 2025 21:28:41 GMT  
+		Last Modified: Mon, 08 Dec 2025 07:52:27 GMT  
 		Size: 13.2 KB (13226 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5757,11 +5757,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:04d4de9e794bc1e1d203f9d3381f9c83f59866a3e6f5003fd1d5907cac12a101`  
-		Last Modified: Thu, 18 Dec 2025 08:46:53 GMT  
+		Last Modified: Thu, 09 Oct 2025 00:49:05 GMT  
 		Size: 6.1 MB (6121175 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b51349db9d999b43418386704d141162b93b4a283b57ed827a4355a3b961805`  
-		Last Modified: Thu, 18 Dec 2025 08:46:55 GMT  
+		Last Modified: Thu, 09 Oct 2025 00:49:04 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c19b6f101e35245acf9db3c52d98370e666865e598c4114bdfda3a54e09c909f`  
@@ -5785,7 +5785,7 @@ $ docker pull nats@sha256:1483af7b956803aa57c07e3c1bee197b331d2fb094f4f04ffa2c5e
 
 -	Layers:
 	-	`sha256:8e1f14c372d78fba654d7e47c33f5a6c2ffba638d5a547b77ce3dcf79a2d686b`  
-		Last Modified: Thu, 09 Oct 2025 00:49:04 GMT  
+		Last Modified: Thu, 18 Dec 2025 08:47:00 GMT  
 		Size: 13.2 KB (13166 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5829,11 +5829,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:650b200f66e89fbeb0c184f94ebcd151f8c65defcbf5334d4421c77438eede28`  
-		Last Modified: Thu, 09 Oct 2025 00:48:14 GMT  
+		Last Modified: Thu, 18 Dec 2025 08:47:07 GMT  
 		Size: 6.5 MB (6478283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21a93a3c3b5ceaca80709490da234f5b08ad6ee7353cf6a8c178d0e2496a6641`  
-		Last Modified: Thu, 09 Oct 2025 00:48:14 GMT  
+		Last Modified: Thu, 18 Dec 2025 08:47:08 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1eaf13ee9d5db8ef26bf2b5d610cd4973bfb563288a12b8a8bcede57f237ad3a`  
@@ -5918,19 +5918,19 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4e9626cde343344e0d38c76df10c185c9f7b12ed8423ce5350b3955a0f654e6`  
-		Last Modified: Sun, 07 Dec 2025 23:57:17 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 6.6 MB (6637121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8b71c798365ed4a38f1f62e0e935b775038e731916c7e2469f79e8712e3db49`  
-		Last Modified: Sun, 07 Dec 2025 23:57:17 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:791b54d5fa0f1d7b5a10036d6f574507d7080e2f6c7c5f56dbdfb2a39bbb71e6`  
-		Last Modified: Sun, 07 Dec 2025 23:57:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 408.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5950,7 +5950,7 @@ $ docker pull nats@sha256:4784d3be05ed19411efebafeb7b68cce9d776e75948f1897bddcfb
 
 -	Layers:
 	-	`sha256:094eca1ad94ceda2907e22c8c6893ee66cebb8cbac5bfff7aee584e56b5eeade`  
-		Last Modified: Mon, 08 Dec 2025 03:08:58 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:39:45 GMT  
 		Size: 13.1 KB (13122 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5998,11 +5998,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.4 MB (6359661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d7c0b275517295cd18d25dfc2f3d350895e4db28726798f413cb2a2f2855e759`  
-		Last Modified: Wed, 08 Oct 2025 21:42:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 11:39:46 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed9fe5f6adf199ea08cb93f8eb850df518f900925e7ba319e1723c1ec5492958`  
-		Last Modified: Wed, 17 Dec 2025 11:39:52 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:42:06 GMT  
 		Size: 407.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -6062,7 +6062,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7080d96e045e46908eb2ae3aeb738aacc7766d44628e26bd2b63d238e34bbb4`  
@@ -6134,15 +6134,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bfd55772b55ac9bbda4fd63fcb1219e4d0259d2c7e3496c813bd826fddc909c2`  
-		Last Modified: Wed, 08 Oct 2025 21:28:41 GMT  
+		Last Modified: Sun, 07 Dec 2025 22:10:12 GMT  
 		Size: 6.1 MB (6142848 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a7bfe32b0a64298bd2fed57203465f55b80b7cbdf083c74a72c87982895c975`  
-		Last Modified: Sun, 07 Dec 2025 22:10:12 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:28:41 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b648a6b3b8a2bd47b5f87b8ec03d0a3ad86ebcfe606858aea0b88631514754e5`  
@@ -6166,7 +6166,7 @@ $ docker pull nats@sha256:6ee0847edba9b20199d6eef0fbf1c5c36533889d27883ccefcac51
 
 -	Layers:
 	-	`sha256:b995ae56f38f87600d18053b5e5ca4c5e8ec0ae3f128854b696a11336a34decc`  
-		Last Modified: Wed, 08 Oct 2025 21:28:41 GMT  
+		Last Modified: Mon, 08 Dec 2025 07:52:27 GMT  
 		Size: 13.2 KB (13226 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6210,11 +6210,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:04d4de9e794bc1e1d203f9d3381f9c83f59866a3e6f5003fd1d5907cac12a101`  
-		Last Modified: Thu, 18 Dec 2025 08:46:53 GMT  
+		Last Modified: Thu, 09 Oct 2025 00:49:05 GMT  
 		Size: 6.1 MB (6121175 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b51349db9d999b43418386704d141162b93b4a283b57ed827a4355a3b961805`  
-		Last Modified: Thu, 18 Dec 2025 08:46:55 GMT  
+		Last Modified: Thu, 09 Oct 2025 00:49:04 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c19b6f101e35245acf9db3c52d98370e666865e598c4114bdfda3a54e09c909f`  
@@ -6238,7 +6238,7 @@ $ docker pull nats@sha256:1483af7b956803aa57c07e3c1bee197b331d2fb094f4f04ffa2c5e
 
 -	Layers:
 	-	`sha256:8e1f14c372d78fba654d7e47c33f5a6c2ffba638d5a547b77ce3dcf79a2d686b`  
-		Last Modified: Thu, 09 Oct 2025 00:49:04 GMT  
+		Last Modified: Thu, 18 Dec 2025 08:47:00 GMT  
 		Size: 13.2 KB (13166 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6282,11 +6282,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:650b200f66e89fbeb0c184f94ebcd151f8c65defcbf5334d4421c77438eede28`  
-		Last Modified: Thu, 09 Oct 2025 00:48:14 GMT  
+		Last Modified: Thu, 18 Dec 2025 08:47:07 GMT  
 		Size: 6.5 MB (6478283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21a93a3c3b5ceaca80709490da234f5b08ad6ee7353cf6a8c178d0e2496a6641`  
-		Last Modified: Thu, 09 Oct 2025 00:48:14 GMT  
+		Last Modified: Thu, 18 Dec 2025 08:47:08 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1eaf13ee9d5db8ef26bf2b5d610cd4973bfb563288a12b8a8bcede57f237ad3a`  
@@ -6369,7 +6369,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.2 MB (6176976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8b72167f52428a194c193e049e3bd650a151950d25d7ee4053d51d9aea6c3ee`  
-		Last Modified: Wed, 08 Oct 2025 23:33:27 GMT  
+		Last Modified: Mon, 08 Dec 2025 00:05:25 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -6389,7 +6389,7 @@ $ docker pull nats@sha256:22966994fa248e4bbaeae98dc1237a3d529aa34d14d3a08ec64f2a
 
 -	Layers:
 	-	`sha256:bf25a02cee54db98ccdd3ab464f87175c8cccf402c3d3f6c7575ad9621110d24`  
-		Last Modified: Wed, 08 Oct 2025 23:33:27 GMT  
+		Last Modified: Mon, 08 Dec 2025 13:40:56 GMT  
 		Size: 8.7 KB (8711 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6423,11 +6423,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:fa5273ca4aaf95ea6e1b9ef46f70f073183aff4281d28d8beb2cad3ad7db3be3`  
-		Last Modified: Mon, 29 Dec 2025 00:19:27 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:24 GMT  
 		Size: 5.9 MB (5898165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c05ee5edeb225d0f8e1902468ddf15f404e488757ee718d08c1b7d465dde8d3`  
-		Last Modified: Fri, 12 Dec 2025 00:09:43 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:56:21 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -6505,7 +6505,7 @@ $ docker pull nats@sha256:7095fc3b0d955d4b45bfde0e3d1325af685a27ae39572b5645dace
 
 -	Layers:
 	-	`sha256:51f4a6f338b6381042b1a00c900e2d6cc73f6443572e59120bbe7c21de28feb5`  
-		Last Modified: Wed, 08 Oct 2025 23:14:30 GMT  
+		Last Modified: Wed, 10 Dec 2025 00:56:58 GMT  
 		Size: 8.8 KB (8794 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6539,11 +6539,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:d64d9bbebf62f0a051d5cb189e70e395bdec4ba36971b0623c1901afc064521b`  
-		Last Modified: Fri, 12 Dec 2025 08:04:14 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:24 GMT  
 		Size: 5.7 MB (5681568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:510e0d69b77490450dd92c6e89d07b28944be6eab55f0e9b0466e0e3c93087e6`  
-		Last Modified: Wed, 08 Oct 2025 22:51:33 GMT  
+		Last Modified: Mon, 08 Dec 2025 05:06:33 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -6597,11 +6597,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:e76cdc72f647f0d1048fbb0f93c63b0f9e298dc4deec33bc751f2e73cc25b242`  
-		Last Modified: Mon, 29 Dec 2025 00:19:29 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:27 GMT  
 		Size: 5.7 MB (5662712 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64d1d232cd07cfbf4ca2ddc8aab1ed392a4f7e88284f0a366f3940ede3de93fc`  
-		Last Modified: Fri, 12 Dec 2025 00:09:56 GMT  
+		Last Modified: Thu, 09 Oct 2025 05:20:54 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -6621,7 +6621,7 @@ $ docker pull nats@sha256:8915031c75568f96b4ed93dffd4e7f1f6fb9d07c7449909baaa075
 
 -	Layers:
 	-	`sha256:c4954d9cff74aabbddfb1257a7467c3a9f74270b5d59fe82f1c27a83fa93dde7`  
-		Last Modified: Thu, 09 Oct 2025 05:20:54 GMT  
+		Last Modified: Wed, 10 Dec 2025 00:57:04 GMT  
 		Size: 8.8 KB (8765 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6726,7 +6726,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c072f08d02840c28268cde75a9dfa1875832a1d284da5cc86d584edf70b0194e`  
@@ -6734,11 +6734,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6c92fae925ee22e7b21333f36361efb7649b4151945e5da244bd64d6efe06b05`  
-		Last Modified: Tue, 13 Jan 2026 23:35:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:56 GMT  
 		Size: 6.3 MB (6298135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:13ae8ae3536dbbb46ec9eb5e254d9b4a4af420bcef1b624eb80f52573d7920f8`  
-		Last Modified: Tue, 13 Jan 2026 23:35:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:55 GMT  
 		Size: 1.7 KB (1711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:70f882c1925ccf162172af29dc25910c331418b760cbcd2447e12b51c91e17fb`  
@@ -6750,7 +6750,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ac1ba3923305c275211285cabec8cc1020cee406a376e054aca0c2977f1b179`  
-		Last Modified: Tue, 13 Jan 2026 23:35:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:55 GMT  
 		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -6797,7 +6797,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c072f08d02840c28268cde75a9dfa1875832a1d284da5cc86d584edf70b0194e`  
@@ -6805,11 +6805,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6c92fae925ee22e7b21333f36361efb7649b4151945e5da244bd64d6efe06b05`  
-		Last Modified: Tue, 13 Jan 2026 23:35:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:56 GMT  
 		Size: 6.3 MB (6298135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:13ae8ae3536dbbb46ec9eb5e254d9b4a4af420bcef1b624eb80f52573d7920f8`  
-		Last Modified: Tue, 13 Jan 2026 23:35:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:55 GMT  
 		Size: 1.7 KB (1711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:70f882c1925ccf162172af29dc25910c331418b760cbcd2447e12b51c91e17fb`  
@@ -6821,7 +6821,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ac1ba3923305c275211285cabec8cc1020cee406a376e054aca0c2977f1b179`  
-		Last Modified: Tue, 13 Jan 2026 23:35:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:36:55 GMT  
 		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -6880,7 +6880,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.2 MB (6176976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8b72167f52428a194c193e049e3bd650a151950d25d7ee4053d51d9aea6c3ee`  
-		Last Modified: Wed, 08 Oct 2025 23:33:27 GMT  
+		Last Modified: Mon, 08 Dec 2025 00:05:25 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -6900,7 +6900,7 @@ $ docker pull nats@sha256:22966994fa248e4bbaeae98dc1237a3d529aa34d14d3a08ec64f2a
 
 -	Layers:
 	-	`sha256:bf25a02cee54db98ccdd3ab464f87175c8cccf402c3d3f6c7575ad9621110d24`  
-		Last Modified: Wed, 08 Oct 2025 23:33:27 GMT  
+		Last Modified: Mon, 08 Dec 2025 13:40:56 GMT  
 		Size: 8.7 KB (8711 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6934,11 +6934,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:fa5273ca4aaf95ea6e1b9ef46f70f073183aff4281d28d8beb2cad3ad7db3be3`  
-		Last Modified: Mon, 29 Dec 2025 00:19:27 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:24 GMT  
 		Size: 5.9 MB (5898165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c05ee5edeb225d0f8e1902468ddf15f404e488757ee718d08c1b7d465dde8d3`  
-		Last Modified: Fri, 12 Dec 2025 00:09:43 GMT  
+		Last Modified: Wed, 08 Oct 2025 22:56:21 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7016,7 +7016,7 @@ $ docker pull nats@sha256:7095fc3b0d955d4b45bfde0e3d1325af685a27ae39572b5645dace
 
 -	Layers:
 	-	`sha256:51f4a6f338b6381042b1a00c900e2d6cc73f6443572e59120bbe7c21de28feb5`  
-		Last Modified: Wed, 08 Oct 2025 23:14:30 GMT  
+		Last Modified: Wed, 10 Dec 2025 00:56:58 GMT  
 		Size: 8.8 KB (8794 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7050,11 +7050,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:d64d9bbebf62f0a051d5cb189e70e395bdec4ba36971b0623c1901afc064521b`  
-		Last Modified: Fri, 12 Dec 2025 08:04:14 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:24 GMT  
 		Size: 5.7 MB (5681568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:510e0d69b77490450dd92c6e89d07b28944be6eab55f0e9b0466e0e3c93087e6`  
-		Last Modified: Wed, 08 Oct 2025 22:51:33 GMT  
+		Last Modified: Mon, 08 Dec 2025 05:06:33 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7108,11 +7108,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:e76cdc72f647f0d1048fbb0f93c63b0f9e298dc4deec33bc751f2e73cc25b242`  
-		Last Modified: Mon, 29 Dec 2025 00:19:29 GMT  
+		Last Modified: Thu, 01 May 2025 10:59:27 GMT  
 		Size: 5.7 MB (5662712 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64d1d232cd07cfbf4ca2ddc8aab1ed392a4f7e88284f0a366f3940ede3de93fc`  
-		Last Modified: Fri, 12 Dec 2025 00:09:56 GMT  
+		Last Modified: Thu, 09 Oct 2025 05:20:54 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7132,7 +7132,7 @@ $ docker pull nats@sha256:8915031c75568f96b4ed93dffd4e7f1f6fb9d07c7449909baaa075
 
 -	Layers:
 	-	`sha256:c4954d9cff74aabbddfb1257a7467c3a9f74270b5d59fe82f1c27a83fa93dde7`  
-		Last Modified: Thu, 09 Oct 2025 05:20:54 GMT  
+		Last Modified: Wed, 10 Dec 2025 00:57:04 GMT  
 		Size: 8.8 KB (8765 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7258,7 +7258,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bfc5dd61a8ff495c23af1aa5df6f43b3aa3f1fb3343fc3c06b90be8b99814e09`  
-		Last Modified: Tue, 13 Jan 2026 23:02:22 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:27 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4b0e86373915ed4fd7081bb057a0169629ad58fb8422e787e51e015cd1d71561`  
@@ -7286,11 +7286,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.6 MB (6641914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9b42fdb0c0cb79cf277fae5cd66236707d9fd631287f28090b4ccab1aa643917`  
-		Last Modified: Tue, 13 Jan 2026 23:02:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:19 GMT  
 		Size: 1.9 KB (1890 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cec6d81bc85b3765ef97635b6ac3a1aa944614c053d800792f519b1b4349807f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:19 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:122ac14f5063bf4a20169065b66a4ac409e2b1e30f50a4c38d557923b7e2cd00`  
@@ -7366,7 +7366,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bfc5dd61a8ff495c23af1aa5df6f43b3aa3f1fb3343fc3c06b90be8b99814e09`  
-		Last Modified: Tue, 13 Jan 2026 23:02:22 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:27 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4b0e86373915ed4fd7081bb057a0169629ad58fb8422e787e51e015cd1d71561`  
@@ -7394,11 +7394,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.6 MB (6641914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9b42fdb0c0cb79cf277fae5cd66236707d9fd631287f28090b4ccab1aa643917`  
-		Last Modified: Tue, 13 Jan 2026 23:02:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:19 GMT  
 		Size: 1.9 KB (1890 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cec6d81bc85b3765ef97635b6ac3a1aa944614c053d800792f519b1b4349807f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:19 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:122ac14f5063bf4a20169065b66a4ac409e2b1e30f50a4c38d557923b7e2cd00`  
@@ -7462,7 +7462,7 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:fce06af59f4edea8e6a39ec6a3c28424c4e5ddd037792c3e75733a9471eaf096`  
-		Last Modified: Thu, 13 Nov 2025 13:36:23 GMT  
+		Last Modified: Mon, 12 Jan 2026 15:27:26 GMT  
 		Size: 6.5 MB (6468928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18609ed747d6a4ad480b652e95ca06e16e3cbf24b265a86cf0631970fbe1d7d5`  
@@ -7486,7 +7486,7 @@ $ docker pull nats@sha256:5b7ee4a16cffd94b8dec024236c00319dd85ce6e865cba1757d95a
 
 -	Layers:
 	-	`sha256:179ab6e9cbd9813b454f8696a4253402cf689bdea345cd212306fbc38a7ea1f4`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:57:42 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7524,7 +7524,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.2 MB (6195352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61a19d5c228c083fbe1a67a0f3cdf4c51346b3c9a899fef55504732dcdca0f6b`  
-		Last Modified: Wed, 17 Dec 2025 20:01:26 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7640,7 +7640,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.9 MB (5887359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3994ad9c32980fd20dfbbb307833a48d15524ba3b8ce29216aff143e83250694`  
-		Last Modified: Wed, 17 Dec 2025 20:00:49 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:07 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7698,7 +7698,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.9 MB (5938401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5d567a4599383e250b5c98d5b079ccaf2dd43523fd751db4f7f710273a7cd11`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:44 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7776,7 +7776,7 @@ $ docker pull nats@sha256:489ee87504c5e516c86965e4281bcc6a9c1b46b1ccd0e609e9de07
 
 -	Layers:
 	-	`sha256:4659d54f693e09ad90886c339c37e8009206958112aad31e2fac27900b6f90d4`  
-		Last Modified: Wed, 17 Dec 2025 21:57:57 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7813,7 +7813,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6f8506dabe196177bb55177f5748c6442fcb40b913f0414dea2d52091341d070`  
@@ -7821,7 +7821,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7e2cf230f6e98d1f394d9ac253a4f805b813725000832e5c228dad36d6622e6`  
-		Last Modified: Tue, 13 Jan 2026 23:33:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:18 GMT  
 		Size: 6.6 MB (6646940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ed287219c6f696ab71eae3df229cbaa422134410c77fc47fb0816fc6519af5c0`  
@@ -7837,7 +7837,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0e2d4c459a92776e1b67f0cdeabad046872376402fb57a26572b36c8ba228bc9`  
-		Last Modified: Tue, 13 Jan 2026 23:33:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
 		Size: 1.1 KB (1087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -7900,11 +7900,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:daeacfaa01e8117ad225e4f3791b8a4a7af15e8242019195b9922035de034dd8`  
-		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
 		Size: 6.9 MB (6925776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c03efc089efa33e5f4ecbd7f9abed4dd8da6dbd0f98e90ac8d0706f75adc139`  
@@ -7912,7 +7912,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cdef138b23adf586bef4b6b73b65b1c95d1320d35d5c626d217217882daeff2d`  
-		Last Modified: Wed, 17 Dec 2025 19:56:13 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
 		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -7982,7 +7982,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.7 MB (6652001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b10ce74ef4777e28a316eb199c59ea96a8b063fa879e2caccd475ff75305e5b`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:15 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:031588257558813d6e3040a2e30e14470a4be9068a90e9bafd2fe83527cdbfe0`  
@@ -8006,7 +8006,7 @@ $ docker pull nats@sha256:4c5bf0cbaeb0daa9b0ec35c45de5fde0106fdccb96aa1541d98d1f
 
 -	Layers:
 	-	`sha256:c2af0a0a8248021684d4401285c42a870cd3dbec50fd9ce549f336d8f4b20e7e`  
-		Last Modified: Wed, 17 Dec 2025 21:58:02 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
 		Size: 14.3 KB (14289 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8048,11 +8048,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed7f19a2d1b2940e8fce330263571bccdb6f920b72d56315131c68b073c1d78f`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:12 GMT  
 		Size: 6.6 MB (6643404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4c7a5e50586ea9c442b0be0c00982bae43b84d491b2c5517ae04691575acf13`  
@@ -8122,7 +8122,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d9a8d8f7bf29437edd604b1e53754f2dae2c72dc6ebda0780fa4a1e759b348f`  
@@ -8130,7 +8130,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.3 MB (6349834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5df0fb25a1f6ad9f2815c93e6d729bf81c0b8ba92be8473b64356b8deadd4db6`  
-		Last Modified: Wed, 17 Dec 2025 19:56:19 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48966173e6aa710f8eb301f0ae2945222ee39002089cab0206256835b558c2ab`  
@@ -8200,15 +8200,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0540149968c2042f75d2bb82489e5fb387dc85fc24cf49bb5df87ea9c499a630`  
-		Last Modified: Wed, 17 Dec 2025 19:55:21 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:30 GMT  
 		Size: 6.4 MB (6398269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -8228,7 +8228,7 @@ $ docker pull nats@sha256:273efe4a708c1f0753cd18700c5e0f86ee343ccee15aa5d76ff561
 
 -	Layers:
 	-	`sha256:5cbbad3ec8b1231789cb5122db6bc1e5b53b60c2fe8893d28ac5a83c6013aae0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:14 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:58:12 GMT  
 		Size: 14.3 KB (14253 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8278,7 +8278,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.8 MB (6768355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:77c0af3a8d530b2721cefaa7ac66de1d847d40627c4702e294c0076cab8b3626`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a8802f8189ffe02b2c600422996b12b86301efb291347842b8642da932c32415`  
@@ -8365,11 +8365,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:daeacfaa01e8117ad225e4f3791b8a4a7af15e8242019195b9922035de034dd8`  
-		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
 		Size: 6.9 MB (6925776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c03efc089efa33e5f4ecbd7f9abed4dd8da6dbd0f98e90ac8d0706f75adc139`  
@@ -8377,7 +8377,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cdef138b23adf586bef4b6b73b65b1c95d1320d35d5c626d217217882daeff2d`  
-		Last Modified: Wed, 17 Dec 2025 19:56:13 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
 		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -8447,7 +8447,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.7 MB (6652001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b10ce74ef4777e28a316eb199c59ea96a8b063fa879e2caccd475ff75305e5b`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:15 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:031588257558813d6e3040a2e30e14470a4be9068a90e9bafd2fe83527cdbfe0`  
@@ -8471,7 +8471,7 @@ $ docker pull nats@sha256:4c5bf0cbaeb0daa9b0ec35c45de5fde0106fdccb96aa1541d98d1f
 
 -	Layers:
 	-	`sha256:c2af0a0a8248021684d4401285c42a870cd3dbec50fd9ce549f336d8f4b20e7e`  
-		Last Modified: Wed, 17 Dec 2025 21:58:02 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
 		Size: 14.3 KB (14289 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8513,11 +8513,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed7f19a2d1b2940e8fce330263571bccdb6f920b72d56315131c68b073c1d78f`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:12 GMT  
 		Size: 6.6 MB (6643404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4c7a5e50586ea9c442b0be0c00982bae43b84d491b2c5517ae04691575acf13`  
@@ -8587,7 +8587,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d9a8d8f7bf29437edd604b1e53754f2dae2c72dc6ebda0780fa4a1e759b348f`  
@@ -8595,7 +8595,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.3 MB (6349834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5df0fb25a1f6ad9f2815c93e6d729bf81c0b8ba92be8473b64356b8deadd4db6`  
-		Last Modified: Wed, 17 Dec 2025 19:56:19 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48966173e6aa710f8eb301f0ae2945222ee39002089cab0206256835b558c2ab`  
@@ -8665,15 +8665,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0540149968c2042f75d2bb82489e5fb387dc85fc24cf49bb5df87ea9c499a630`  
-		Last Modified: Wed, 17 Dec 2025 19:55:21 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:30 GMT  
 		Size: 6.4 MB (6398269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -8693,7 +8693,7 @@ $ docker pull nats@sha256:273efe4a708c1f0753cd18700c5e0f86ee343ccee15aa5d76ff561
 
 -	Layers:
 	-	`sha256:5cbbad3ec8b1231789cb5122db6bc1e5b53b60c2fe8893d28ac5a83c6013aae0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:14 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:58:12 GMT  
 		Size: 14.3 KB (14253 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8743,7 +8743,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.8 MB (6768355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:77c0af3a8d530b2721cefaa7ac66de1d847d40627c4702e294c0076cab8b3626`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a8802f8189ffe02b2c600422996b12b86301efb291347842b8642da932c32415`  
@@ -8822,7 +8822,7 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:fce06af59f4edea8e6a39ec6a3c28424c4e5ddd037792c3e75733a9471eaf096`  
-		Last Modified: Thu, 13 Nov 2025 13:36:23 GMT  
+		Last Modified: Mon, 12 Jan 2026 15:27:26 GMT  
 		Size: 6.5 MB (6468928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18609ed747d6a4ad480b652e95ca06e16e3cbf24b265a86cf0631970fbe1d7d5`  
@@ -8846,7 +8846,7 @@ $ docker pull nats@sha256:5b7ee4a16cffd94b8dec024236c00319dd85ce6e865cba1757d95a
 
 -	Layers:
 	-	`sha256:179ab6e9cbd9813b454f8696a4253402cf689bdea345cd212306fbc38a7ea1f4`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:57:42 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8884,7 +8884,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.2 MB (6195352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61a19d5c228c083fbe1a67a0f3cdf4c51346b3c9a899fef55504732dcdca0f6b`  
-		Last Modified: Wed, 17 Dec 2025 20:01:26 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9000,7 +9000,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.9 MB (5887359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3994ad9c32980fd20dfbbb307833a48d15524ba3b8ce29216aff143e83250694`  
-		Last Modified: Wed, 17 Dec 2025 20:00:49 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:07 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9058,7 +9058,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.9 MB (5938401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5d567a4599383e250b5c98d5b079ccaf2dd43523fd751db4f7f710273a7cd11`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:44 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9136,7 +9136,7 @@ $ docker pull nats@sha256:489ee87504c5e516c86965e4281bcc6a9c1b46b1ccd0e609e9de07
 
 -	Layers:
 	-	`sha256:4659d54f693e09ad90886c339c37e8009206958112aad31e2fac27900b6f90d4`  
-		Last Modified: Wed, 17 Dec 2025 21:57:57 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9183,7 +9183,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6f8506dabe196177bb55177f5748c6442fcb40b913f0414dea2d52091341d070`  
@@ -9191,7 +9191,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7e2cf230f6e98d1f394d9ac253a4f805b813725000832e5c228dad36d6622e6`  
-		Last Modified: Tue, 13 Jan 2026 23:33:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:18 GMT  
 		Size: 6.6 MB (6646940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ed287219c6f696ab71eae3df229cbaa422134410c77fc47fb0816fc6519af5c0`  
@@ -9207,7 +9207,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0e2d4c459a92776e1b67f0cdeabad046872376402fb57a26572b36c8ba228bc9`  
-		Last Modified: Tue, 13 Jan 2026 23:33:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
 		Size: 1.1 KB (1087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -9254,7 +9254,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6f8506dabe196177bb55177f5748c6442fcb40b913f0414dea2d52091341d070`  
@@ -9262,7 +9262,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7e2cf230f6e98d1f394d9ac253a4f805b813725000832e5c228dad36d6622e6`  
-		Last Modified: Tue, 13 Jan 2026 23:33:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:18 GMT  
 		Size: 6.6 MB (6646940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ed287219c6f696ab71eae3df229cbaa422134410c77fc47fb0816fc6519af5c0`  
@@ -9278,7 +9278,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0e2d4c459a92776e1b67f0cdeabad046872376402fb57a26572b36c8ba228bc9`  
-		Last Modified: Tue, 13 Jan 2026 23:33:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
 		Size: 1.1 KB (1087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -9333,7 +9333,7 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:fce06af59f4edea8e6a39ec6a3c28424c4e5ddd037792c3e75733a9471eaf096`  
-		Last Modified: Thu, 13 Nov 2025 13:36:23 GMT  
+		Last Modified: Mon, 12 Jan 2026 15:27:26 GMT  
 		Size: 6.5 MB (6468928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18609ed747d6a4ad480b652e95ca06e16e3cbf24b265a86cf0631970fbe1d7d5`  
@@ -9357,7 +9357,7 @@ $ docker pull nats@sha256:5b7ee4a16cffd94b8dec024236c00319dd85ce6e865cba1757d95a
 
 -	Layers:
 	-	`sha256:179ab6e9cbd9813b454f8696a4253402cf689bdea345cd212306fbc38a7ea1f4`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:57:42 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9395,7 +9395,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.2 MB (6195352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61a19d5c228c083fbe1a67a0f3cdf4c51346b3c9a899fef55504732dcdca0f6b`  
-		Last Modified: Wed, 17 Dec 2025 20:01:26 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9511,7 +9511,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.9 MB (5887359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3994ad9c32980fd20dfbbb307833a48d15524ba3b8ce29216aff143e83250694`  
-		Last Modified: Wed, 17 Dec 2025 20:00:49 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:07 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9569,7 +9569,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.9 MB (5938401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5d567a4599383e250b5c98d5b079ccaf2dd43523fd751db4f7f710273a7cd11`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:44 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9647,7 +9647,7 @@ $ docker pull nats@sha256:489ee87504c5e516c86965e4281bcc6a9c1b46b1ccd0e609e9de07
 
 -	Layers:
 	-	`sha256:4659d54f693e09ad90886c339c37e8009206958112aad31e2fac27900b6f90d4`  
-		Last Modified: Wed, 17 Dec 2025 21:57:57 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9717,7 +9717,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9f0fce413876f886fb2250022b76f87a9e023cf582c638600a9fba8ca303bfd0`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
 		Size: 1.3 KB (1332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:083ad68866e07715eab16bd0184a260e2002dcd0edccd8903b0545549ede0a19`  
@@ -9729,7 +9729,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bb295800a0cfc78af40563e60671f745d144cf03cf93ac56c0390020ae2d799b`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
 		Size: 1.3 KB (1328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2829856f1dfa3bfcb809a3e99a63d638dac690852d70c11c9ced41cbf47b16ec`  
@@ -9737,11 +9737,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:31431f78e0ecc9201b175a6c1884d88db7a3d3cde3e53fe41ae81964c2d1ec60`  
-		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:da5e0c97d16df27272bd18e50379b8bf129c7c5a380f03817f6ce726df2ec54d`  
-		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
 		Size: 477.0 KB (477002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3142560abd4113862dbf0d14b7a8cf4ba88c8bbba25f820eaf35b83c8ad03d6f`  
@@ -9749,7 +9749,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 7.0 MB (6991771 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:12013feaa024e4ee0d394d702e12cd3415ae142ba16d32b05ecdd58e3e5a09e4`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
 		Size: 1.9 KB (1856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:37cd72c20d610d8f325e75ec2b433766ab2127f68292aa7545dd8942e7f832a9`  
@@ -9831,7 +9831,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9f0fce413876f886fb2250022b76f87a9e023cf582c638600a9fba8ca303bfd0`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
 		Size: 1.3 KB (1332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:083ad68866e07715eab16bd0184a260e2002dcd0edccd8903b0545549ede0a19`  
@@ -9843,7 +9843,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bb295800a0cfc78af40563e60671f745d144cf03cf93ac56c0390020ae2d799b`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
 		Size: 1.3 KB (1328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2829856f1dfa3bfcb809a3e99a63d638dac690852d70c11c9ced41cbf47b16ec`  
@@ -9851,11 +9851,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:31431f78e0ecc9201b175a6c1884d88db7a3d3cde3e53fe41ae81964c2d1ec60`  
-		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:da5e0c97d16df27272bd18e50379b8bf129c7c5a380f03817f6ce726df2ec54d`  
-		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
 		Size: 477.0 KB (477002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3142560abd4113862dbf0d14b7a8cf4ba88c8bbba25f820eaf35b83c8ad03d6f`  
@@ -9863,7 +9863,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 7.0 MB (6991771 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:12013feaa024e4ee0d394d702e12cd3415ae142ba16d32b05ecdd58e3e5a09e4`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
 		Size: 1.9 KB (1856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:37cd72c20d610d8f325e75ec2b433766ab2127f68292aa7545dd8942e7f832a9`  
@@ -9931,7 +9931,7 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:fce06af59f4edea8e6a39ec6a3c28424c4e5ddd037792c3e75733a9471eaf096`  
-		Last Modified: Thu, 13 Nov 2025 13:36:23 GMT  
+		Last Modified: Mon, 12 Jan 2026 15:27:26 GMT  
 		Size: 6.5 MB (6468928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18609ed747d6a4ad480b652e95ca06e16e3cbf24b265a86cf0631970fbe1d7d5`  
@@ -9955,7 +9955,7 @@ $ docker pull nats@sha256:5b7ee4a16cffd94b8dec024236c00319dd85ce6e865cba1757d95a
 
 -	Layers:
 	-	`sha256:179ab6e9cbd9813b454f8696a4253402cf689bdea345cd212306fbc38a7ea1f4`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:57:42 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9993,7 +9993,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.2 MB (6195352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61a19d5c228c083fbe1a67a0f3cdf4c51346b3c9a899fef55504732dcdca0f6b`  
-		Last Modified: Wed, 17 Dec 2025 20:01:26 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10109,7 +10109,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.9 MB (5887359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3994ad9c32980fd20dfbbb307833a48d15524ba3b8ce29216aff143e83250694`  
-		Last Modified: Wed, 17 Dec 2025 20:00:49 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:07 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10167,7 +10167,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.9 MB (5938401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5d567a4599383e250b5c98d5b079ccaf2dd43523fd751db4f7f710273a7cd11`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:44 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10245,7 +10245,7 @@ $ docker pull nats@sha256:489ee87504c5e516c86965e4281bcc6a9c1b46b1ccd0e609e9de07
 
 -	Layers:
 	-	`sha256:4659d54f693e09ad90886c339c37e8009206958112aad31e2fac27900b6f90d4`  
-		Last Modified: Wed, 17 Dec 2025 21:57:57 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10282,7 +10282,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6f8506dabe196177bb55177f5748c6442fcb40b913f0414dea2d52091341d070`  
@@ -10290,7 +10290,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7e2cf230f6e98d1f394d9ac253a4f805b813725000832e5c228dad36d6622e6`  
-		Last Modified: Tue, 13 Jan 2026 23:33:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:18 GMT  
 		Size: 6.6 MB (6646940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ed287219c6f696ab71eae3df229cbaa422134410c77fc47fb0816fc6519af5c0`  
@@ -10306,7 +10306,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0e2d4c459a92776e1b67f0cdeabad046872376402fb57a26572b36c8ba228bc9`  
-		Last Modified: Tue, 13 Jan 2026 23:33:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
 		Size: 1.1 KB (1087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -10369,11 +10369,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:daeacfaa01e8117ad225e4f3791b8a4a7af15e8242019195b9922035de034dd8`  
-		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
 		Size: 6.9 MB (6925776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c03efc089efa33e5f4ecbd7f9abed4dd8da6dbd0f98e90ac8d0706f75adc139`  
@@ -10381,7 +10381,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cdef138b23adf586bef4b6b73b65b1c95d1320d35d5c626d217217882daeff2d`  
-		Last Modified: Wed, 17 Dec 2025 19:56:13 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
 		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10451,7 +10451,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.7 MB (6652001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b10ce74ef4777e28a316eb199c59ea96a8b063fa879e2caccd475ff75305e5b`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:15 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:031588257558813d6e3040a2e30e14470a4be9068a90e9bafd2fe83527cdbfe0`  
@@ -10475,7 +10475,7 @@ $ docker pull nats@sha256:4c5bf0cbaeb0daa9b0ec35c45de5fde0106fdccb96aa1541d98d1f
 
 -	Layers:
 	-	`sha256:c2af0a0a8248021684d4401285c42a870cd3dbec50fd9ce549f336d8f4b20e7e`  
-		Last Modified: Wed, 17 Dec 2025 21:58:02 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
 		Size: 14.3 KB (14289 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10517,11 +10517,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed7f19a2d1b2940e8fce330263571bccdb6f920b72d56315131c68b073c1d78f`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:12 GMT  
 		Size: 6.6 MB (6643404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4c7a5e50586ea9c442b0be0c00982bae43b84d491b2c5517ae04691575acf13`  
@@ -10591,7 +10591,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d9a8d8f7bf29437edd604b1e53754f2dae2c72dc6ebda0780fa4a1e759b348f`  
@@ -10599,7 +10599,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.3 MB (6349834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5df0fb25a1f6ad9f2815c93e6d729bf81c0b8ba92be8473b64356b8deadd4db6`  
-		Last Modified: Wed, 17 Dec 2025 19:56:19 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48966173e6aa710f8eb301f0ae2945222ee39002089cab0206256835b558c2ab`  
@@ -10669,15 +10669,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0540149968c2042f75d2bb82489e5fb387dc85fc24cf49bb5df87ea9c499a630`  
-		Last Modified: Wed, 17 Dec 2025 19:55:21 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:30 GMT  
 		Size: 6.4 MB (6398269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10697,7 +10697,7 @@ $ docker pull nats@sha256:273efe4a708c1f0753cd18700c5e0f86ee343ccee15aa5d76ff561
 
 -	Layers:
 	-	`sha256:5cbbad3ec8b1231789cb5122db6bc1e5b53b60c2fe8893d28ac5a83c6013aae0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:14 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:58:12 GMT  
 		Size: 14.3 KB (14253 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10747,7 +10747,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.8 MB (6768355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:77c0af3a8d530b2721cefaa7ac66de1d847d40627c4702e294c0076cab8b3626`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a8802f8189ffe02b2c600422996b12b86301efb291347842b8642da932c32415`  
@@ -10834,11 +10834,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:daeacfaa01e8117ad225e4f3791b8a4a7af15e8242019195b9922035de034dd8`  
-		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
 		Size: 6.9 MB (6925776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c03efc089efa33e5f4ecbd7f9abed4dd8da6dbd0f98e90ac8d0706f75adc139`  
@@ -10846,7 +10846,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cdef138b23adf586bef4b6b73b65b1c95d1320d35d5c626d217217882daeff2d`  
-		Last Modified: Wed, 17 Dec 2025 19:56:13 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
 		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10916,7 +10916,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.7 MB (6652001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b10ce74ef4777e28a316eb199c59ea96a8b063fa879e2caccd475ff75305e5b`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:15 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:031588257558813d6e3040a2e30e14470a4be9068a90e9bafd2fe83527cdbfe0`  
@@ -10940,7 +10940,7 @@ $ docker pull nats@sha256:4c5bf0cbaeb0daa9b0ec35c45de5fde0106fdccb96aa1541d98d1f
 
 -	Layers:
 	-	`sha256:c2af0a0a8248021684d4401285c42a870cd3dbec50fd9ce549f336d8f4b20e7e`  
-		Last Modified: Wed, 17 Dec 2025 21:58:02 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
 		Size: 14.3 KB (14289 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10982,11 +10982,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed7f19a2d1b2940e8fce330263571bccdb6f920b72d56315131c68b073c1d78f`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:12 GMT  
 		Size: 6.6 MB (6643404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4c7a5e50586ea9c442b0be0c00982bae43b84d491b2c5517ae04691575acf13`  
@@ -11056,7 +11056,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d9a8d8f7bf29437edd604b1e53754f2dae2c72dc6ebda0780fa4a1e759b348f`  
@@ -11064,7 +11064,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.3 MB (6349834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5df0fb25a1f6ad9f2815c93e6d729bf81c0b8ba92be8473b64356b8deadd4db6`  
-		Last Modified: Wed, 17 Dec 2025 19:56:19 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48966173e6aa710f8eb301f0ae2945222ee39002089cab0206256835b558c2ab`  
@@ -11134,15 +11134,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0540149968c2042f75d2bb82489e5fb387dc85fc24cf49bb5df87ea9c499a630`  
-		Last Modified: Wed, 17 Dec 2025 19:55:21 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:30 GMT  
 		Size: 6.4 MB (6398269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11162,7 +11162,7 @@ $ docker pull nats@sha256:273efe4a708c1f0753cd18700c5e0f86ee343ccee15aa5d76ff561
 
 -	Layers:
 	-	`sha256:5cbbad3ec8b1231789cb5122db6bc1e5b53b60c2fe8893d28ac5a83c6013aae0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:14 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:58:12 GMT  
 		Size: 14.3 KB (14253 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11212,7 +11212,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.8 MB (6768355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:77c0af3a8d530b2721cefaa7ac66de1d847d40627c4702e294c0076cab8b3626`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a8802f8189ffe02b2c600422996b12b86301efb291347842b8642da932c32415`  
@@ -11291,7 +11291,7 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:fce06af59f4edea8e6a39ec6a3c28424c4e5ddd037792c3e75733a9471eaf096`  
-		Last Modified: Thu, 13 Nov 2025 13:36:23 GMT  
+		Last Modified: Mon, 12 Jan 2026 15:27:26 GMT  
 		Size: 6.5 MB (6468928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18609ed747d6a4ad480b652e95ca06e16e3cbf24b265a86cf0631970fbe1d7d5`  
@@ -11315,7 +11315,7 @@ $ docker pull nats@sha256:5b7ee4a16cffd94b8dec024236c00319dd85ce6e865cba1757d95a
 
 -	Layers:
 	-	`sha256:179ab6e9cbd9813b454f8696a4253402cf689bdea345cd212306fbc38a7ea1f4`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:57:42 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11353,7 +11353,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.2 MB (6195352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61a19d5c228c083fbe1a67a0f3cdf4c51346b3c9a899fef55504732dcdca0f6b`  
-		Last Modified: Wed, 17 Dec 2025 20:01:26 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11469,7 +11469,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.9 MB (5887359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3994ad9c32980fd20dfbbb307833a48d15524ba3b8ce29216aff143e83250694`  
-		Last Modified: Wed, 17 Dec 2025 20:00:49 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:07 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11527,7 +11527,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.9 MB (5938401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5d567a4599383e250b5c98d5b079ccaf2dd43523fd751db4f7f710273a7cd11`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:44 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11605,7 +11605,7 @@ $ docker pull nats@sha256:489ee87504c5e516c86965e4281bcc6a9c1b46b1ccd0e609e9de07
 
 -	Layers:
 	-	`sha256:4659d54f693e09ad90886c339c37e8009206958112aad31e2fac27900b6f90d4`  
-		Last Modified: Wed, 17 Dec 2025 21:57:57 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11652,7 +11652,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6f8506dabe196177bb55177f5748c6442fcb40b913f0414dea2d52091341d070`  
@@ -11660,7 +11660,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7e2cf230f6e98d1f394d9ac253a4f805b813725000832e5c228dad36d6622e6`  
-		Last Modified: Tue, 13 Jan 2026 23:33:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:18 GMT  
 		Size: 6.6 MB (6646940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ed287219c6f696ab71eae3df229cbaa422134410c77fc47fb0816fc6519af5c0`  
@@ -11676,7 +11676,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0e2d4c459a92776e1b67f0cdeabad046872376402fb57a26572b36c8ba228bc9`  
-		Last Modified: Tue, 13 Jan 2026 23:33:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
 		Size: 1.1 KB (1087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -11723,7 +11723,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6f8506dabe196177bb55177f5748c6442fcb40b913f0414dea2d52091341d070`  
@@ -11731,7 +11731,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7e2cf230f6e98d1f394d9ac253a4f805b813725000832e5c228dad36d6622e6`  
-		Last Modified: Tue, 13 Jan 2026 23:33:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:18 GMT  
 		Size: 6.6 MB (6646940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ed287219c6f696ab71eae3df229cbaa422134410c77fc47fb0816fc6519af5c0`  
@@ -11747,7 +11747,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0e2d4c459a92776e1b67f0cdeabad046872376402fb57a26572b36c8ba228bc9`  
-		Last Modified: Tue, 13 Jan 2026 23:33:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
 		Size: 1.1 KB (1087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -11802,7 +11802,7 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:fce06af59f4edea8e6a39ec6a3c28424c4e5ddd037792c3e75733a9471eaf096`  
-		Last Modified: Thu, 13 Nov 2025 13:36:23 GMT  
+		Last Modified: Mon, 12 Jan 2026 15:27:26 GMT  
 		Size: 6.5 MB (6468928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18609ed747d6a4ad480b652e95ca06e16e3cbf24b265a86cf0631970fbe1d7d5`  
@@ -11826,7 +11826,7 @@ $ docker pull nats@sha256:5b7ee4a16cffd94b8dec024236c00319dd85ce6e865cba1757d95a
 
 -	Layers:
 	-	`sha256:179ab6e9cbd9813b454f8696a4253402cf689bdea345cd212306fbc38a7ea1f4`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:57:42 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11864,7 +11864,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.2 MB (6195352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61a19d5c228c083fbe1a67a0f3cdf4c51346b3c9a899fef55504732dcdca0f6b`  
-		Last Modified: Wed, 17 Dec 2025 20:01:26 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -11980,7 +11980,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.9 MB (5887359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3994ad9c32980fd20dfbbb307833a48d15524ba3b8ce29216aff143e83250694`  
-		Last Modified: Wed, 17 Dec 2025 20:00:49 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:07 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -12038,7 +12038,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.9 MB (5938401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5d567a4599383e250b5c98d5b079ccaf2dd43523fd751db4f7f710273a7cd11`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:44 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -12116,7 +12116,7 @@ $ docker pull nats@sha256:489ee87504c5e516c86965e4281bcc6a9c1b46b1ccd0e609e9de07
 
 -	Layers:
 	-	`sha256:4659d54f693e09ad90886c339c37e8009206958112aad31e2fac27900b6f90d4`  
-		Last Modified: Wed, 17 Dec 2025 21:57:57 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12186,7 +12186,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9f0fce413876f886fb2250022b76f87a9e023cf582c638600a9fba8ca303bfd0`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
 		Size: 1.3 KB (1332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:083ad68866e07715eab16bd0184a260e2002dcd0edccd8903b0545549ede0a19`  
@@ -12198,7 +12198,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bb295800a0cfc78af40563e60671f745d144cf03cf93ac56c0390020ae2d799b`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
 		Size: 1.3 KB (1328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2829856f1dfa3bfcb809a3e99a63d638dac690852d70c11c9ced41cbf47b16ec`  
@@ -12206,11 +12206,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:31431f78e0ecc9201b175a6c1884d88db7a3d3cde3e53fe41ae81964c2d1ec60`  
-		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:da5e0c97d16df27272bd18e50379b8bf129c7c5a380f03817f6ce726df2ec54d`  
-		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
 		Size: 477.0 KB (477002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3142560abd4113862dbf0d14b7a8cf4ba88c8bbba25f820eaf35b83c8ad03d6f`  
@@ -12218,7 +12218,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 7.0 MB (6991771 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:12013feaa024e4ee0d394d702e12cd3415ae142ba16d32b05ecdd58e3e5a09e4`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
 		Size: 1.9 KB (1856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:37cd72c20d610d8f325e75ec2b433766ab2127f68292aa7545dd8942e7f832a9`  
@@ -12300,7 +12300,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9f0fce413876f886fb2250022b76f87a9e023cf582c638600a9fba8ca303bfd0`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
 		Size: 1.3 KB (1332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:083ad68866e07715eab16bd0184a260e2002dcd0edccd8903b0545549ede0a19`  
@@ -12312,7 +12312,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bb295800a0cfc78af40563e60671f745d144cf03cf93ac56c0390020ae2d799b`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
 		Size: 1.3 KB (1328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2829856f1dfa3bfcb809a3e99a63d638dac690852d70c11c9ced41cbf47b16ec`  
@@ -12320,11 +12320,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:31431f78e0ecc9201b175a6c1884d88db7a3d3cde3e53fe41ae81964c2d1ec60`  
-		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:da5e0c97d16df27272bd18e50379b8bf129c7c5a380f03817f6ce726df2ec54d`  
-		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
 		Size: 477.0 KB (477002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3142560abd4113862dbf0d14b7a8cf4ba88c8bbba25f820eaf35b83c8ad03d6f`  
@@ -12332,7 +12332,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 7.0 MB (6991771 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:12013feaa024e4ee0d394d702e12cd3415ae142ba16d32b05ecdd58e3e5a09e4`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
 		Size: 1.9 KB (1856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:37cd72c20d610d8f325e75ec2b433766ab2127f68292aa7545dd8942e7f832a9`  
@@ -12462,7 +12462,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.3 MB (6313188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:00:53 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -12516,11 +12516,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:44:10 GMT  
+		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
 		Size: 6.3 MB (6303218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:37 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -12540,7 +12540,7 @@ $ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b0
 
 -	Layers:
 	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 21:56:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12694,7 +12694,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.4 MB (6431785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:55 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -12751,11 +12751,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
@@ -12767,7 +12767,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
@@ -12775,7 +12775,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -12838,7 +12838,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
@@ -12916,7 +12916,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
 		Size: 6.8 MB (6773381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
@@ -12986,15 +12986,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
 		Size: 6.8 MB (6762271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
@@ -13018,7 +13018,7 @@ $ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6
 
 -	Layers:
 	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:56:55 GMT  
 		Size: 15.5 KB (15516 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13060,11 +13060,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff897b652cfa26ab8408fd8fcbfbf0cbcddc6b6fdf074ed595b62f47e968c2de`  
-		Last Modified: Wed, 17 Dec 2025 19:56:19 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
 		Size: 6.5 MB (6460634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93e271e573323c058c33c69f8d7264e8532d2bc4be024d1f34f72ca2347a95fc`  
@@ -13142,11 +13142,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.5 MB (6510964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13212,15 +13212,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:40 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 6.9 MB (6893186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13240,7 +13240,7 @@ $ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c68
 
 -	Layers:
 	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 21:57:04 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13303,7 +13303,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
@@ -13381,7 +13381,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
 		Size: 6.8 MB (6773381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
@@ -13451,15 +13451,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
 		Size: 6.8 MB (6762271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
@@ -13483,7 +13483,7 @@ $ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6
 
 -	Layers:
 	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:56:55 GMT  
 		Size: 15.5 KB (15516 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13525,11 +13525,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff897b652cfa26ab8408fd8fcbfbf0cbcddc6b6fdf074ed595b62f47e968c2de`  
-		Last Modified: Wed, 17 Dec 2025 19:56:19 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
 		Size: 6.5 MB (6460634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93e271e573323c058c33c69f8d7264e8532d2bc4be024d1f34f72ca2347a95fc`  
@@ -13607,11 +13607,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.5 MB (6510964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13677,15 +13677,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:40 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 6.9 MB (6893186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13705,7 +13705,7 @@ $ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c68
 
 -	Layers:
 	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 21:57:04 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13822,7 +13822,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.3 MB (6313188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:00:53 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13876,11 +13876,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:44:10 GMT  
+		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
 		Size: 6.3 MB (6303218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:37 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13900,7 +13900,7 @@ $ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b0
 
 -	Layers:
 	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 21:56:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14054,7 +14054,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.4 MB (6431785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:55 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14121,11 +14121,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
@@ -14137,7 +14137,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
@@ -14145,7 +14145,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -14192,11 +14192,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
@@ -14208,7 +14208,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
@@ -14216,7 +14216,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -14333,7 +14333,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.3 MB (6313188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:00:53 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14387,11 +14387,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:44:10 GMT  
+		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
 		Size: 6.3 MB (6303218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:37 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14411,7 +14411,7 @@ $ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b0
 
 -	Layers:
 	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 21:56:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14565,7 +14565,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.4 MB (6431785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:55 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14659,7 +14659,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
@@ -14671,11 +14671,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
@@ -14683,11 +14683,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 487.4 KB (487412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
 		Size: 7.1 MB (7124370 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
 		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
@@ -14773,7 +14773,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
@@ -14785,11 +14785,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
@@ -14797,11 +14797,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 487.4 KB (487412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
 		Size: 7.1 MB (7124370 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
 		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
@@ -14931,7 +14931,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.3 MB (6313188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:00:53 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14985,11 +14985,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:44:10 GMT  
+		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
 		Size: 6.3 MB (6303218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:37 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15009,7 +15009,7 @@ $ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b0
 
 -	Layers:
 	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 21:56:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15163,7 +15163,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.4 MB (6431785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:55 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15220,11 +15220,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
@@ -15236,7 +15236,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
@@ -15244,7 +15244,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -15307,7 +15307,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
@@ -15385,7 +15385,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
 		Size: 6.8 MB (6773381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
@@ -15455,15 +15455,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
 		Size: 6.8 MB (6762271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
@@ -15487,7 +15487,7 @@ $ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6
 
 -	Layers:
 	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:56:55 GMT  
 		Size: 15.5 KB (15516 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15529,11 +15529,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff897b652cfa26ab8408fd8fcbfbf0cbcddc6b6fdf074ed595b62f47e968c2de`  
-		Last Modified: Wed, 17 Dec 2025 19:56:19 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
 		Size: 6.5 MB (6460634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93e271e573323c058c33c69f8d7264e8532d2bc4be024d1f34f72ca2347a95fc`  
@@ -15611,11 +15611,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.5 MB (6510964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15681,15 +15681,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:40 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 6.9 MB (6893186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15709,7 +15709,7 @@ $ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c68
 
 -	Layers:
 	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 21:57:04 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15772,7 +15772,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
@@ -15850,7 +15850,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
 		Size: 6.8 MB (6773381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
@@ -15920,15 +15920,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
 		Size: 6.8 MB (6762271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
@@ -15952,7 +15952,7 @@ $ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6
 
 -	Layers:
 	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:56:55 GMT  
 		Size: 15.5 KB (15516 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15994,11 +15994,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff897b652cfa26ab8408fd8fcbfbf0cbcddc6b6fdf074ed595b62f47e968c2de`  
-		Last Modified: Wed, 17 Dec 2025 19:56:19 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
 		Size: 6.5 MB (6460634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93e271e573323c058c33c69f8d7264e8532d2bc4be024d1f34f72ca2347a95fc`  
@@ -16076,11 +16076,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.5 MB (6510964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16146,15 +16146,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:40 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 6.9 MB (6893186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16174,7 +16174,7 @@ $ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c68
 
 -	Layers:
 	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 21:57:04 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16291,7 +16291,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.3 MB (6313188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:00:53 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16345,11 +16345,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:44:10 GMT  
+		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
 		Size: 6.3 MB (6303218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:37 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16369,7 +16369,7 @@ $ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b0
 
 -	Layers:
 	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 21:56:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16523,7 +16523,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.4 MB (6431785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:55 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16590,11 +16590,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
@@ -16606,7 +16606,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
@@ -16614,7 +16614,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -16661,11 +16661,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
@@ -16677,7 +16677,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
@@ -16685,7 +16685,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -16802,7 +16802,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.3 MB (6313188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:00:53 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16856,11 +16856,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:44:10 GMT  
+		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
 		Size: 6.3 MB (6303218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:37 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16880,7 +16880,7 @@ $ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b0
 
 -	Layers:
 	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 21:56:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17034,7 +17034,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.4 MB (6431785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:55 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17128,7 +17128,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
@@ -17140,11 +17140,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
@@ -17152,11 +17152,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 487.4 KB (487412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
 		Size: 7.1 MB (7124370 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
 		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
@@ -17242,7 +17242,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
@@ -17254,11 +17254,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
@@ -17266,11 +17266,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 487.4 KB (487412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
 		Size: 7.1 MB (7124370 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
 		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
@@ -17345,7 +17345,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
@@ -17423,7 +17423,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
 		Size: 6.8 MB (6773381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
@@ -17493,15 +17493,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
 		Size: 6.8 MB (6762271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
@@ -17525,7 +17525,7 @@ $ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6
 
 -	Layers:
 	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:56:55 GMT  
 		Size: 15.5 KB (15516 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17567,11 +17567,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff897b652cfa26ab8408fd8fcbfbf0cbcddc6b6fdf074ed595b62f47e968c2de`  
-		Last Modified: Wed, 17 Dec 2025 19:56:19 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
 		Size: 6.5 MB (6460634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93e271e573323c058c33c69f8d7264e8532d2bc4be024d1f34f72ca2347a95fc`  
@@ -17649,11 +17649,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.5 MB (6510964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17719,15 +17719,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:40 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 6.9 MB (6893186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17747,7 +17747,7 @@ $ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c68
 
 -	Layers:
 	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 21:57:04 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17810,7 +17810,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
@@ -17888,7 +17888,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
 		Size: 6.8 MB (6773381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
@@ -17958,15 +17958,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
-		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:57:17 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
 		Size: 6.8 MB (6762271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
@@ -17990,7 +17990,7 @@ $ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6
 
 -	Layers:
 	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:56:55 GMT  
 		Size: 15.5 KB (15516 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18032,11 +18032,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff897b652cfa26ab8408fd8fcbfbf0cbcddc6b6fdf074ed595b62f47e968c2de`  
-		Last Modified: Wed, 17 Dec 2025 19:56:19 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
 		Size: 6.5 MB (6460634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93e271e573323c058c33c69f8d7264e8532d2bc4be024d1f34f72ca2347a95fc`  
@@ -18114,11 +18114,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.5 MB (6510964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:28 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18184,15 +18184,15 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:40 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 6.9 MB (6893186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18212,7 +18212,7 @@ $ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c68
 
 -	Layers:
 	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 21:57:04 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18330,7 +18330,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.3 MB (6313188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:00:53 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18384,11 +18384,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:44:10 GMT  
+		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
 		Size: 6.3 MB (6303218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:37 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18408,7 +18408,7 @@ $ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b0
 
 -	Layers:
 	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 21:56:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18562,7 +18562,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.4 MB (6431785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:55 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18619,11 +18619,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
@@ -18635,7 +18635,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
@@ -18643,7 +18643,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -18760,7 +18760,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.3 MB (6313188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:00:53 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18814,11 +18814,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:44:10 GMT  
+		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
 		Size: 6.3 MB (6303218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:37 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18838,7 +18838,7 @@ $ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b0
 
 -	Layers:
 	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 21:56:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18992,7 +18992,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.4 MB (6431785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:55 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -19059,11 +19059,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
@@ -19075,7 +19075,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
@@ -19083,7 +19083,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -19130,11 +19130,11 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
@@ -19146,7 +19146,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
@@ -19154,7 +19154,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 1.1 KB (1083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:33:29 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -19271,7 +19271,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.3 MB (6313188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:00:53 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -19325,11 +19325,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:44:10 GMT  
+		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
 		Size: 6.3 MB (6303218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:37 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -19349,7 +19349,7 @@ $ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b0
 
 -	Layers:
 	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 21:56:38 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19503,7 +19503,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 6.4 MB (6431785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:55 GMT  
+		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -19597,7 +19597,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
@@ -19609,11 +19609,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
@@ -19621,11 +19621,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 487.4 KB (487412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
 		Size: 7.1 MB (7124370 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
 		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
@@ -19711,7 +19711,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
@@ -19723,11 +19723,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
 		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
@@ -19735,11 +19735,11 @@ CMD ["--config" "nats-server.conf"]
 		Size: 487.4 KB (487412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:24 GMT  
 		Size: 7.1 MB (7124370 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
 		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
