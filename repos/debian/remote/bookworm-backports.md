@@ -72,7 +72,7 @@ $ docker pull debian@sha256:2f0dcc67dc91df789e3b57053e7bbe40566adfd7814850ef4a3b
 		Size: 3.7 MB (3734074 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4f7912a2349f14ec49491d33115651b8c185e7db4e271f2be34f3e8a7fa76d19`  
-		Last Modified: Tue, 13 Jan 2026 01:16:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:24:39 GMT  
 		Size: 5.8 KB (5804 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -207,7 +207,7 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 		Size: 48.4 MB (48366072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d7e9930928072acb2da033d0bfddcb0bf219948b1d68ab4c4ea0da858f79479f`  
-		Last Modified: Tue, 13 Jan 2026 01:16:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:30 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -227,11 +227,11 @@ $ docker pull debian@sha256:fdd29f826f8941a15a9b9345b9bf630cad996ff91c300b7eb272
 
 -	Layers:
 	-	`sha256:6e4f2d94fdeaa61a3b6e2102be524e19a2b2ac85d9d4664114daf09df95764f3`  
-		Last Modified: Tue, 13 Jan 2026 01:16:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:24:55 GMT  
 		Size: 3.7 MB (3734289 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fb24d970e07654bbf55502c8ce45690a4091655772e3a42283a053f599f67e8f`  
-		Last Modified: Tue, 13 Jan 2026 01:16:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:24:56 GMT  
 		Size: 5.9 KB (5872 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -309,7 +309,7 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 
 -	Layers:
 	-	`sha256:b4c94e33bcdbce9a62a95be51a6e5f8ed2efc653e4be8f8f6722aa13d9d65461`  
-		Last Modified: Tue, 13 Jan 2026 00:40:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:28 GMT  
 		Size: 48.8 MB (48763393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b9b9490818b8701c2761c98832197b58202569adc98ec7f32c9bb8521c888b4b`  
@@ -382,11 +382,11 @@ $ docker pull debian@sha256:554e5d05099f269554c630333cd96c58daebcdb395b28162b5b9
 
 -	Layers:
 	-	`sha256:03ec43ce06a7d5469cdd4401096dbef9eb572b7ff79cc01dffe4b11fc6a918bc`  
-		Last Modified: Tue, 13 Jan 2026 01:14:47 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:25:18 GMT  
 		Size: 3.7 MB (3738432 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:09958554c731ce028f6b5c5eeae5a5160818423462bb76e8dda619b94afbeb22`  
-		Last Modified: Tue, 13 Jan 2026 04:25:19 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:14:47 GMT  
 		Size: 5.8 KB (5829 bytes)  
 		MIME: application/vnd.in-toto+json
 
