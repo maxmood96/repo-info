@@ -101,7 +101,7 @@ CMD ["repl"]
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a70ee470d498578f3f261d731c31f16ca9c9f5f583ac83347ec39bc91ed183dc`  
-		Last Modified: Thu, 15 Jan 2026 22:20:08 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -227,7 +227,7 @@ CMD ["repl"]
 		Size: 143.7 MB (143681283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:201b23fdceb460806f1b4d37e8e1d0a03126441b8a0d1efe1ad54d2d05fce4d1`  
-		Last Modified: Thu, 15 Jan 2026 22:19:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:19:44 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c7feaec1b5ae6c7e6e38638d964d4991ce35f3a13191880a163bdef3d12c7312`  
@@ -345,7 +345,7 @@ CMD ["repl"]
 
 -	Layers:
 	-	`sha256:2490923be26ec970f7d805c10bc7c9c56e219061e875cf31dad74e227e0bbdc4`  
-		Last Modified: Fri, 09 Jan 2026 07:36:16 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:43:22 GMT  
 		Size: 34.4 MB (34446962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6bb5ba8e24cae9302fecd8ed46da7ee696b7aaa8c98ac6dd78e0034fc867ef6`  
@@ -353,11 +353,11 @@ CMD ["repl"]
 		Size: 22.6 MB (22580878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0930b349e2741d06a37da99e38ea4a55a9fe1589073228054670a87e1cc7e77e`  
-		Last Modified: Fri, 16 Jan 2026 02:05:41 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:16:05 GMT  
 		Size: 144.5 MB (144533751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6c908bec05038e795dced3ee3659222f222ccc55753abfde1819b30a50c2ec29`  
-		Last Modified: Thu, 15 Jan 2026 22:15:59 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:16:11 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:850d8aad39fbcef0f60a78c6e40385e480f0f77d8e6d01fe51378173224ceb82`  
@@ -369,7 +369,7 @@ CMD ["repl"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bfaef91e4f9e6cb8a462a277305cd28220fdb137c24efef589afa117facfa8b8`  
-		Last Modified: Fri, 16 Jan 2026 03:15:31 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:15:42 GMT  
 		Size: 14.5 MB (14525585 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a707a01070571cc01434165a42491b279f055cd6966877fb9fb3c53a466f6708`  
@@ -487,11 +487,11 @@ CMD ["repl"]
 		Size: 134.9 MB (134863252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9700fb3c8e8dcd80e99d619bea0b50159ffb3f2aa6153a9d2740667635a3c986`  
-		Last Modified: Thu, 15 Jan 2026 22:08:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:08:12 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6007c982c9fa1ff27a92dc77a421038719c40a2c4adf3e674f505c154a0495a`  
-		Last Modified: Thu, 15 Jan 2026 22:08:12 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:08:25 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -499,7 +499,7 @@ CMD ["repl"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d7896266608f84b2f2031264a1b27d1d351c021f51ad9a04263922dd94be3f5`  
-		Last Modified: Thu, 15 Jan 2026 23:14:53 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:14:58 GMT  
 		Size: 14.5 MB (14488283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:72ae1abad8f295cf0846d0dca7a51147f014c3767145c001a25b6c581c934b43`  
@@ -527,7 +527,7 @@ $ docker pull clojure@sha256:692178d39ca9a03202c11c887b2298f2b69ce27f901994a7675
 
 -	Layers:
 	-	`sha256:c5dfa8129fa6f30fa7cdedc4fc1e51b08d08f669a503e7e7dd26922ec178871a`  
-		Last Modified: Fri, 16 Jan 2026 01:39:40 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:14:53 GMT  
 		Size: 4.0 MB (3975167 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1bb66a97aac833391608eecdffb09442b152f1d4aa3353200e718ed3888038e8`  
