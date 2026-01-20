@@ -89,7 +89,7 @@ $ docker pull swift@sha256:eb3bb4e3b9c369cac47b642e4db7c9d91573e013d7524e8c2f79f
 
 -	Layers:
 	-	`sha256:3a83315e7e98464de13d7f4370a5e22278382095afeae4047dae6627546f6e79`  
-		Last Modified: Thu, 15 Jan 2026 22:49:29 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:51:47 GMT  
 		Size: 2.5 MB (2497218 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:68b5b2bf153aa10bb9f39d380f73a8902b54d3f63a1d5c3c00de0a12534e641d`  
