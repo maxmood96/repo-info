@@ -53,6 +53,6 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Size: 75.1 MB (75099819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:61b43fa41201879415b668c0e2cadce4a496abb50fb231a124a592dc6e305ff7`  
-		Last Modified: Tue, 13 Jan 2026 22:57:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:57:41 GMT  
 		Size: 354.3 KB (354251 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
