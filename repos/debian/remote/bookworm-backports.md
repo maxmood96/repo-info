@@ -68,11 +68,11 @@ $ docker pull debian@sha256:2f0dcc67dc91df789e3b57053e7bbe40566adfd7814850ef4a3b
 
 -	Layers:
 	-	`sha256:dd333798adb36a8ef40bbc4c32f440889d13cba63f49be2942bfc8c8a389eb82`  
-		Last Modified: Tue, 13 Jan 2026 04:24:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:09 GMT  
 		Size: 3.7 MB (3734074 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4f7912a2349f14ec49491d33115651b8c185e7db4e271f2be34f3e8a7fa76d19`  
-		Last Modified: Tue, 13 Jan 2026 01:16:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:24:39 GMT  
 		Size: 5.8 KB (5804 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -97,11 +97,11 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 
 -	Layers:
 	-	`sha256:3328d590af06d44e564f37191fbae5238775007425643c6f6e4f3136ae883b75`  
-		Last Modified: Tue, 13 Jan 2026 00:41:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:40 GMT  
 		Size: 46.0 MB (46016731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3bf0c94c687ae77fbf187e1cf4abb5b3bfac61c1ba1749af9c9303eb8fdfcb25`  
-		Last Modified: Tue, 13 Jan 2026 01:16:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:28 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -121,7 +121,7 @@ $ docker pull debian@sha256:41477baa7e8c86f9f714e4f7bcca60e33a621cc70fa9d0fd403c
 
 -	Layers:
 	-	`sha256:2a09d10c53d9db4914542e2950f8b9a1d6d2e14350614cf739bbcb943ac12d99`  
-		Last Modified: Tue, 13 Jan 2026 04:24:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:23 GMT  
 		Size: 3.7 MB (3734275 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4aaf5dbd02bf6545d045c669f1b235853dc3045f8d5c770e2f1391b12bd815aa`  
@@ -150,7 +150,7 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 
 -	Layers:
 	-	`sha256:d1f8df344790c402ed8a818bba76e9111f5e212418c662cf0574919edf68933b`  
-		Last Modified: Tue, 13 Jan 2026 00:42:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:15 GMT  
 		Size: 44.2 MB (44198845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ac5d530195f102fee7fdef0edb5d3b439a9285d966c2f2c4200c53952bbeb25`  
@@ -178,7 +178,7 @@ $ docker pull debian@sha256:5ef928fca366eb54bbec65fa561f6860287442d04ec1dc69011f
 		Size: 3.7 MB (3736253 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:758bac7b2921efcda0ee3e8d97fcc4f41a11c504c8a895a74b010d165ff2d59d`  
-		Last Modified: Tue, 13 Jan 2026 01:17:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:24:50 GMT  
 		Size: 5.9 KB (5859 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -227,7 +227,7 @@ $ docker pull debian@sha256:fdd29f826f8941a15a9b9345b9bf630cad996ff91c300b7eb272
 
 -	Layers:
 	-	`sha256:6e4f2d94fdeaa61a3b6e2102be524e19a2b2ac85d9d4664114daf09df95764f3`  
-		Last Modified: Tue, 13 Jan 2026 04:24:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:26 GMT  
 		Size: 3.7 MB (3734289 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fb24d970e07654bbf55502c8ce45690a4091655772e3a42283a053f599f67e8f`  
@@ -280,7 +280,7 @@ $ docker pull debian@sha256:51cfd36f674684bf36e6c2cf7e4f840db7576660c087f0f60e69
 
 -	Layers:
 	-	`sha256:80503323239cfa111a08afbe6c3cbf913c50374d312260f3a492f2dafbb69269`  
-		Last Modified: Tue, 13 Jan 2026 04:25:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:08 GMT  
 		Size: 3.7 MB (3731270 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1dfa42b602046401f1802da7b4175c7ed716ede7ebe027b589eda5a078138ce1`  
@@ -309,11 +309,11 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 
 -	Layers:
 	-	`sha256:b4c94e33bcdbce9a62a95be51a6e5f8ed2efc653e4be8f8f6722aa13d9d65461`  
-		Last Modified: Tue, 13 Jan 2026 00:40:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:28 GMT  
 		Size: 48.8 MB (48763393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b9b9490818b8701c2761c98832197b58202569adc98ec7f32c9bb8521c888b4b`  
-		Last Modified: Tue, 13 Jan 2026 01:15:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:03 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -362,7 +362,7 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8bd02998ba54b6ca231cc34f1b7bc2f8f5c99362e4bd90f9dcffc4023f040c84`  
-		Last Modified: Tue, 13 Jan 2026 01:14:47 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:14:53 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -411,7 +411,7 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 
 -	Layers:
 	-	`sha256:533e1723f6efd3a2dac5ef2d710062f1e6292bf061b83d41b908fe862b8922dc`  
-		Last Modified: Tue, 13 Jan 2026 00:40:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:05 GMT  
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bcc9f7e2f0fe7e1838188582ce7fc909a18b5a4a9abd9d38197942736909e491`  
@@ -435,7 +435,7 @@ $ docker pull debian@sha256:7e423c76a0817b5c7ef244ef553315495d1378b7538ff4ef0f8a
 
 -	Layers:
 	-	`sha256:f6fb8e5cdba00d86da54a1776b546de549abc577e941b9e76658b00a13de3cec`  
-		Last Modified: Tue, 13 Jan 2026 04:25:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:15:12 GMT  
 		Size: 3.7 MB (3730912 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:02e996533d26d2607b770d6efcbeded7ad46e60b6c21236cad91ee7baef5198b`  
