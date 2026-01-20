@@ -70,11 +70,11 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:996467dfb4d0179a2f091bc2a9d9749646d7fc320067d1147a6df2b4833f1c82`  
-		Last Modified: Thu, 15 Jan 2026 22:19:45 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:19:34 GMT  
 		Size: 17.0 MB (16975950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14c9275308302d364422df0f3e02503135621d8a4b49a0c18580cf9220532743`  
-		Last Modified: Thu, 15 Jan 2026 22:20:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:14 GMT  
 		Size: 53.0 MB (52978745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ac4b4cf16a8ad1b819f8041978350794113eb509aba19c5cd47bd77a053c335`  
@@ -102,7 +102,7 @@ $ docker pull eclipse-temurin@sha256:5abe1105fa0a58deb15a281b22603fee6de91276023
 
 -	Layers:
 	-	`sha256:f28c4636fba09d9ab1055da0c830c827826b2a2cebd21b820ca06985b7efcba6`  
-		Last Modified: Thu, 15 Jan 2026 22:20:12 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:19:25 GMT  
 		Size: 3.3 MB (3287855 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3e35f425b68b07aa0a018a29127a884b8c55506d95c0f4bf44402f0316a11eb6`  
@@ -165,11 +165,11 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 17.0 MB (16991549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:55f94c82a8ac7fd54191a08fd6e2afc54327165fa15aabd600b27aeb40409383`  
-		Last Modified: Thu, 15 Jan 2026 22:21:57 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:21:42 GMT  
 		Size: 52.1 MB (52148637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7eb0eb06dfa687a3659cfda05b90257c82298acab510f78e070b4bc6d3286e0a`  
-		Last Modified: Thu, 15 Jan 2026 22:21:50 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:21:40 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6456b4703cbd2d5d7bfc1f46fa116f62a97af321aea424d90a4899ad64cdaff1`  
@@ -248,7 +248,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:0dea13cf1fe062734821309e5f773a18c9ad629d9e93e3eba340bea036bccd8a`  
-		Last Modified: Tue, 13 Jan 2026 06:35:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:12:18 GMT  
 		Size: 34.3 MB (34306159 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b9ce7f2b7cbaf214ce49ed3c453bb84e28408219a81e2d3ce0e3273159a849c9`  
@@ -256,7 +256,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 18.8 MB (18813960 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:317a89db2186130f79db211167d57cd7d0a53133ad50fac5d12f9eb467af8526`  
-		Last Modified: Thu, 15 Jan 2026 22:20:20 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:33 GMT  
 		Size: 53.0 MB (52985536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee276a59db2bfe2c7718488f150e9535c4ea8e88b8b2be51d7d2187dd9271fbc`  
@@ -339,7 +339,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:f151392858868452ec0f1f8d2947624e8dcdecf23bce587cfbd7c38a3264f9df`  
-		Last Modified: Sun, 18 Jan 2026 21:52:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:36:06 GMT  
 		Size: 31.0 MB (30953090 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e2124fa260d30e6ed877bf1d814aaa3c0d40ce2616e00d34c047a094bb9a874`  
@@ -347,7 +347,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 17.9 MB (17863891 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b9c4abd464a1481fc94120d7bb883973e9cbfa3e0e66806911639b24cc2c15fe`  
-		Last Modified: Mon, 19 Jan 2026 18:28:37 GMT  
+		Last Modified: Mon, 19 Jan 2026 18:28:04 GMT  
 		Size: 52.5 MB (52524090 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b1c1008d8f1768a82fd9645d04a802c965dacaad00265f909d8cc5c6a957817`  
@@ -355,7 +355,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7b57ca574dda0a1a0ac0be41f6df09f83ba453597641957cc84da31c6bc1d9c0`  
-		Last Modified: Mon, 19 Jan 2026 18:27:56 GMT  
+		Last Modified: Mon, 19 Jan 2026 18:28:28 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -430,7 +430,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:88318e41cf944fd93c8b2fdfaeb1378b17ed0e2440ef9811f9820449bf19a6ad`  
-		Last Modified: Tue, 13 Jan 2026 06:36:13 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:12:17 GMT  
 		Size: 29.9 MB (29909204 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64e8dafdfb1748b1f5d6941e0d46ea8efdff3188564541666fecd4a291ff4818`  
@@ -466,7 +466,7 @@ $ docker pull eclipse-temurin@sha256:db571bd3e6e22a40ab3ed3edad76ef8c915fcac32a6
 
 -	Layers:
 	-	`sha256:2694f8d55628d6d46fcb94b1265ad6f8f7fa7af223e7a251db307c8f115a48f4`  
-		Last Modified: Fri, 16 Jan 2026 00:34:28 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:10:17 GMT  
 		Size: 3.3 MB (3290055 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a03fb85dcc5f436c2d38f50c7869513226ad716b8a4f22247baeaf42a29f1086`  
@@ -503,7 +503,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 
 -	Layers:
 	-	`sha256:e8e286c160e014cebd84213d5cfa83952f5927713def450860146ee76600ee3f`  
-		Last Modified: Tue, 13 Jan 2026 18:49:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 18:56:33 GMT  
 		Size: 1.5 GB (1495760247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:91938e162987eb0675b8773bfe45efb2af9a96d1e9473d3ebd4a447259bcc862`  
@@ -511,7 +511,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Size: 1.3 KB (1315 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:00e3f634cf5544c0126ea14c85d839ef19496b4b7897a03e3908c72187f2808d`  
-		Last Modified: Tue, 13 Jan 2026 22:58:16 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:58:32 GMT  
 		Size: 1.3 KB (1347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:22179ed72cc5ad9b5ec404691fe38efe6a18a94665c2eea934840b2cb2881048`  
@@ -570,7 +570,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Size: 1.3 KB (1323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6a247922f466399386bda57de231f0bc8c93c79930d532d410d9deadb5116a24`  
-		Last Modified: Tue, 13 Jan 2026 23:04:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:05:00 GMT  
 		Size: 83.7 MB (83735289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1b29290b82ea246297fbe66ccda9de951dff1ca67d90c6c5cc479735dbda0f7d`  
