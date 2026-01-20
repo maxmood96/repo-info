@@ -96,7 +96,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 49.8 MB (49811886 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a75ed7773cbf70823ab6f16214f069c73a448c56e85b629af42ccca888f332e`  
-		Last Modified: Thu, 15 Jan 2026 22:32:39 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:32:56 GMT  
 		Size: 1.2 KB (1224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c116f452c2b93845c457613af44b5bec51a6716e842c2c8344d60a6cea88da1d`  
@@ -108,7 +108,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:740e55bbed2aef1fa6dc69dee5568808f3cc413ab6bd97be2783c0142469d0b0`  
-		Last Modified: Thu, 15 Jan 2026 22:32:56 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:32:39 GMT  
 		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a3e0740e857072ed647e436c435e397b2b1325d2ece9b013b3c33d804d78cb4e`  
@@ -249,7 +249,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 1.2 KB (1222 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fe9846089205883a9e4c376f9b125e71f7eeee2ef25910211f37152150b0a652`  
-		Last Modified: Thu, 15 Jan 2026 22:36:09 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:35:00 GMT  
 		Size: 439.9 MB (439924907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -261,11 +261,11 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a14936df0f6a23e4429128c2a1b1432d1ad70b48b53fb617d2c4e92374f3523b`  
-		Last Modified: Thu, 15 Jan 2026 22:35:04 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:34:51 GMT  
 		Size: 1.6 KB (1579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6d74cb030ea7e313e8cd7a0ed66c22c26370442c070dde06d5b7a9a526fc008`  
-		Last Modified: Thu, 15 Jan 2026 22:35:04 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:34:51 GMT  
 		Size: 279.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8d699a4f40f9e4169b2941e11a512305fe497924f849469ec9f6f074e853eba`  
@@ -277,7 +277,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 6.3 KB (6296 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec084120a0a5d3867ad36240eed627b971ebab6cbe9ec89caf2ba49cf02e844e`  
-		Last Modified: Thu, 15 Jan 2026 22:35:04 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:34:53 GMT  
 		Size: 255.2 KB (255184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca51d0d79ab269e9945110621d4da0c32fea5cb60a68d0940ff2991224f1db33`  
@@ -285,7 +285,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 354.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9b22e41bf5db741511ee69eeea3bf419b6a1c8a7467ed8a1e47ec6e4db89f5d`  
-		Last Modified: Thu, 15 Jan 2026 22:35:04 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:34:54 GMT  
 		Size: 713.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -309,7 +309,7 @@ $ docker pull logstash@sha256:8872adf5a502a162012c618e93c48a159f4d74fe380a5dd6dc
 
 -	Layers:
 	-	`sha256:e492d2475306c543c8d15ad77c572cf19b4ba7c65b98649256f09398500f74e7`  
-		Last Modified: Fri, 16 Jan 2026 01:54:28 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:34:49 GMT  
 		Size: 3.7 MB (3652171 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d9636c18161852dc6094863744875e4fa85977c8d6767aea42d4b81755c8b4b9`  
@@ -435,11 +435,11 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 8.1 MB (8084838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:779856d3d98da3fb99e76a9747140e01d6ba1e76020745407270ef4e395cc5f7`  
-		Last Modified: Tue, 13 Jan 2026 19:11:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:08:09 GMT  
 		Size: 430.6 MB (430570946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02a36f8f88eaf568fa68b30017c84fce4af8e405b6746b9d3e7f24644458f9cc`  
-		Last Modified: Tue, 13 Jan 2026 19:08:16 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:08:00 GMT  
 		Size: 6.3 KB (6295 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b16b09084bbfdc0ed7c297c3c3b44ece0b4c1fbc28c70911e7a7f1e471fa2f2b`  
@@ -447,7 +447,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 255.2 KB (255184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:89c3adf8abcb0e922845ed097f8206aa4b1e69d0b2d02fc2abff7e3f9e3f02b0`  
-		Last Modified: Tue, 13 Jan 2026 19:08:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:08:16 GMT  
 		Size: 354.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7629a8e63dbcaf9c38926ad622a276672db551173b3e4a313f6cf8e33c32377f`  
@@ -491,7 +491,7 @@ $ docker pull logstash@sha256:c799ecce6beac80ddf90cde36ebee538e2c0902d7667a36e5d
 		Size: 2.1 MB (2088537 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d444da941c1af824dc84efbce1581528a43aaaebbb28e98808d290f71f303076`  
-		Last Modified: Tue, 13 Jan 2026 22:53:35 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:08:00 GMT  
 		Size: 30.2 KB (30164 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -596,11 +596,11 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:30b2b51d60af8284f292a43a007edc45ab00ffc6f6aefe5806fbcd554aa9a993`  
-		Last Modified: Tue, 13 Jan 2026 19:07:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:08:16 GMT  
 		Size: 7.9 MB (7900534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1229e64ff249997d2605cdf25b2cce63fbfa297ca44d99268a379fc1ec826b2d`  
-		Last Modified: Tue, 13 Jan 2026 19:10:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:08:09 GMT  
 		Size: 428.8 MB (428849559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b4505d3ec557209f01a51908e317ed4177dd657b66b14c383a47486b1ca760e`  
@@ -612,7 +612,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 255.2 KB (255188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c078bc50ad7a9fc7ce83899e7f18af1e11b4762c643676a17f4dd40d140fafe0`  
-		Last Modified: Tue, 13 Jan 2026 19:08:19 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:07:54 GMT  
 		Size: 352.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7d002a64fd7192161cc8e79a8bf09365311e863892a270371c44fcbde03fd403`  
@@ -774,7 +774,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8631ad99cd185927720bb5bb6c0a7216d2d9b69417a79e90c1d3a72780988399`  
-		Last Modified: Tue, 13 Jan 2026 19:08:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:08:20 GMT  
 		Size: 8.1 MB (8084764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e43c856155b1b7bfeea8228af1af16ef9e740f9b2cf6952ee7d4ff44ce94ddc1`  
@@ -955,7 +955,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 255.2 KB (255186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06d4b55674d323c6aeb11a125b9873858b77e41751d736ec4de3d51cf0d43176`  
-		Last Modified: Tue, 13 Jan 2026 19:06:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:06:31 GMT  
 		Size: 353.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae4841bb8311e123b9f0c96f56089b219ac512fa47b545da5848e503eb4690ae`  
@@ -967,7 +967,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7890cb1809d6af4da94ae52aa97b139dd6c050de0fa4acf1f994e0849fd15102`  
-		Last Modified: Tue, 13 Jan 2026 19:06:31 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:06:08 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3e43e3097005ee26fc824c7eaa8a6ef4ac919dcfdb158c8ae7f47f24e3d9622c`  
@@ -995,7 +995,7 @@ $ docker pull logstash@sha256:dcd78028bafe1e2ebd5995a2bb2f54f9b6ce63a25a04692008
 
 -	Layers:
 	-	`sha256:63a9ccc5d44abdbff2ba3c55b78b7e5e04dbe063905c0caf90f7732ced35cb67`  
-		Last Modified: Tue, 13 Jan 2026 19:06:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:53:51 GMT  
 		Size: 2.1 MB (2098922 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8657cf5ea21d2f93cc8c9928ec30a93da01e28017255f3ad0c8be67bc22019d8`  
