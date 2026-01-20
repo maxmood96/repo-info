@@ -82,7 +82,7 @@ $ docker pull dart@sha256:cdbcd07432537dda38159c3517dea1bb7ff48e7270adff2d94120e
 
 -	Layers:
 	-	`sha256:0b6ce8122967afd0c3b5ac6306d9a0b24d6b584617fbeb3094e6b3b8557e9a27`  
-		Last Modified: Tue, 13 Jan 2026 03:54:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:18:00 GMT  
 		Size: 20.6 KB (20616 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -259,7 +259,7 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 
 -	Layers:
 	-	`sha256:8c2d1639f4f145e07ecf59940bfa96f17083c024b5c96e8082c50d6075a08b82`  
-		Last Modified: Tue, 13 Jan 2026 01:08:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:07:54 GMT  
 		Size: 28.3 MB (28271687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02e0087c2a006d0b12f7e259209c0dcc911138aeb7078877b58369d28bc62942`  
