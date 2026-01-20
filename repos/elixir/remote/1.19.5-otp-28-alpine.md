@@ -200,7 +200,7 @@ CMD ["iex"]
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b2ba83da12930ed543730c4d032b14a8dc6004208bdafe745b74323db7f4e1b`  
-		Last Modified: Thu, 15 Jan 2026 19:35:44 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:35:53 GMT  
 		Size: 52.2 MB (52206370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f239eb326b5c563f75e81fe5f6e8ec1fedff19ff8c08dc5ce33280452d362c49`  
@@ -228,7 +228,7 @@ $ docker pull elixir@sha256:5744795a1044c5143fdeccb536e52aaa301350d86125d819149f
 		Size: 286.7 KB (286664 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:96d8b903778ded96c76e3fe3c82e01a8dccb635958c3ff8bf038dc0f0f76759b`  
-		Last Modified: Fri, 16 Jan 2026 22:51:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:50:44 GMT  
 		Size: 10.5 KB (10515 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -409,7 +409,7 @@ CMD ["iex"]
 
 -	Layers:
 	-	`sha256:3d8fe54ac4e72ef775998241dc95a39f582dbddd5cf822b793130a331db6726f`  
-		Last Modified: Thu, 18 Dec 2025 00:12:04 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:18 GMT  
 		Size: 3.7 MB (3724311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9e1b7e362de5276b9f13cf5c4d6ee082efd38a1003f906ca495985f30516894`  
@@ -417,7 +417,7 @@ CMD ["iex"]
 		Size: 50.7 MB (50693793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:90021d28c1324bd16116c9d0ca9406384764eb222290f39b0ba439526167b672`  
-		Last Modified: Fri, 16 Jan 2026 21:53:23 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:53:29 GMT  
 		Size: 7.8 MB (7785691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -437,7 +437,7 @@ $ docker pull elixir@sha256:45d1382d177bcb124db5521bb514e090778436b6247acb6ed562
 
 -	Layers:
 	-	`sha256:8b0343ef73700e6a1fd210bc4bcfde8272ee5ecb8f728bfc4ca77c14622bf032`  
-		Last Modified: Fri, 16 Jan 2026 22:52:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:53:22 GMT  
 		Size: 281.6 KB (281603 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6854362c05a62af9c975e67f9128d67216f60d866ef6ee85e2786d9bf80969cf`  
