@@ -89,7 +89,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57f0dd1befe210f3a7186fe46ad1552d4bc8864701c8cec580676144bc37d425`  
-		Last Modified: Tue, 13 Jan 2026 01:23:13 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:23:08 GMT  
 		Size: 1.2 KB (1209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eaf8753feae0b5aaadb86ac2cb972ff57cff12f877ad50c548fde8092e85e7fb`  
@@ -97,7 +97,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af11e7548e0238f5c80adb4c2f199ede12bb34669e666868555fc70845d4affc`  
-		Last Modified: Tue, 13 Jan 2026 03:46:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:46:12 GMT  
 		Size: 3.7 MB (3710861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -117,7 +117,7 @@ $ docker pull nginx@sha256:1692578932c9d6866d8cea53c77cefcdcd84097afbcf30804b1eb
 
 -	Layers:
 	-	`sha256:c8cd0bf92cb4f638fbe5cd6bbf9a9fa3a6823972ce336bacadefa9f6384abd4b`  
-		Last Modified: Tue, 13 Jan 2026 03:46:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:52:07 GMT  
 		Size: 2.8 MB (2828910 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:36499792ff9cc79bcc0b482dc89785ad7c2d1abc3a5d4033008b648c7fe3fc50`  
@@ -211,7 +211,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 1.4 KB (1399 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:049a00cf3577d3f70efde49de772a35ef3b78c16ced35fcaec6ec008ac5a969a`  
-		Last Modified: Tue, 13 Jan 2026 03:49:35 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:49:30 GMT  
 		Size: 3.5 MB (3469819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -235,6 +235,6 @@ $ docker pull nginx@sha256:371cf4be8a6c1eec22f95df89f30a737a88ab0fa86422967d8846
 		Size: 2.8 MB (2829395 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d7ae31bb036213b41a5217dc216b81cb10e20db6bf9ac13a5087fc9c25facfd9`  
-		Last Modified: Tue, 13 Jan 2026 06:52:13 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:49:29 GMT  
 		Size: 24.7 KB (24731 bytes)  
 		MIME: application/vnd.in-toto+json
