@@ -76,11 +76,11 @@ $ docker pull openjdk@sha256:e56f0fa74434ff3fc4cad8b4d0d8095ead8333d532b8a2ade55
 
 -	Layers:
 	-	`sha256:a32ec14f2c478c8ddc4bd337ff50cf7be357b989e7a6360054edd68db979c2e6`  
-		Last Modified: Sat, 17 Jan 2026 00:07:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:28:56 GMT  
 		Size: 3.7 MB (3655371 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5dd8d94640c73ad245406f6d62fef1141130595dad944873074cd1c7153b205c`  
-		Last Modified: Sat, 17 Jan 2026 00:07:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:28:55 GMT  
 		Size: 17.8 KB (17839 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -119,7 +119,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
-		Last Modified: Fri, 16 Jan 2026 23:08:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c993bdf110f826a9133d09627e93d2f6fbc63b05c7486e6cc798ec0b27a29b4`  
@@ -222,7 +222,7 @@ CMD ["jshell"]
 		Size: 1.3 KB (1326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d0caa44bc401c391a9f67c6b59f7bab66cb5771c02ff5c850db9028a1021b013`  
-		Last Modified: Tue, 13 Jan 2026 23:01:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:01:15 GMT  
 		Size: 1.3 KB (1335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6e8a22031c61675746137a45345c39171c6b084247b0dfccafd02d8de9b2407b`  
@@ -307,7 +307,7 @@ CMD ["jshell"]
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5040b122641d59e1883ae53152cdff153d8de6acdc108f1a68a268654f026c1`  
-		Last Modified: Tue, 13 Jan 2026 23:11:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:11:44 GMT  
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e7e189b5645be5c659967d8db1a6af08614d911433ad61c14debafc63225b475`  
