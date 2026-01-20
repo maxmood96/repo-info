@@ -165,7 +165,7 @@ $ docker pull api-firewall@sha256:7f92cc281e57309de607f14b38dfec63fb96fe1cfe8307
 
 -	Layers:
 	-	`sha256:b0f62ec738376ef8c18326ec8fa50e35a57e2984864ea5aea49c0de34c9115a0`  
-		Last Modified: Fri, 05 Dec 2025 23:49:34 GMT  
+		Last Modified: Sat, 06 Dec 2025 00:44:32 GMT  
 		Size: 167.0 KB (167021 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:63a4ff48b8be44751e512909395fc21c37f9d312558c014e93d7b8c6d244518c`  
