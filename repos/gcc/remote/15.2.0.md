@@ -58,7 +58,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 -	Layers:
 	-	`sha256:2ca1bfae7ba8b9e2a56c1c19a2d14036cae96bf868ca154ca88bc078eaf7c376`  
-		Last Modified: Tue, 13 Jan 2026 00:42:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:23 GMT  
 		Size: 49.3 MB (49285621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:82e18c5e1c15ff34b31f1443e9327b69daaa0c1bd65a23846328fc3738c7f8f1`  
@@ -66,7 +66,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 25.6 MB (25613410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be442a7e0d6f290b909f8da51840566e06ab51bfbea277c70fbda26c44c8259d`  
-		Last Modified: Tue, 13 Jan 2026 03:54:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:54:29 GMT  
 		Size: 67.8 MB (67786776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26d823e3848f3d74363d9b5b44f39f2d2f81a99a37d8c7fb54831a489a32e999`  
@@ -78,11 +78,11 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 4.6 MB (4590236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8bbcdc54a3fc7ccc3c5f6fb85aa77ce7c69d3bbe56a87cd632cb4c9f31d0750`  
-		Last Modified: Tue, 13 Jan 2026 07:21:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:23:05 GMT  
 		Size: 168.1 MB (168138883 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05b467ceaef63a03efd995e7d88f714c8daaa5c34c6a623984df5065470d5840`  
-		Last Modified: Tue, 13 Jan 2026 06:23:13 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:23:01 GMT  
 		Size: 10.6 KB (10641 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:47a026da5e43c60a7dbcdc892080a40c3450a9e68a9ad1a1ce096d5f45b2bcce`  
@@ -173,7 +173,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 4.4 MB (4439988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:636ad7018ef1343f0899b9f4457f8fe50a06fa71051f95ece3173aa64defc3c1`  
-		Last Modified: Tue, 13 Jan 2026 07:31:16 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:30:23 GMT  
 		Size: 133.9 MB (133921621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1a87d9086d48acff556d0989659debf5b8ed0f3a76d7564c913ddfec9371e938`  
@@ -201,7 +201,7 @@ $ docker pull gcc@sha256:a097f7013b53a799151f47b56de5c430916ce6c8aef6b9307eaed24
 
 -	Layers:
 	-	`sha256:5f822bb9f11c25e7bda1802ed433157ee6feafc94d72b970375ca087986ea3ba`  
-		Last Modified: Tue, 13 Jan 2026 07:30:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 10:19:55 GMT  
 		Size: 17.1 MB (17144484 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:700cdcf1e2e9f53d01e5cd7fe50b4afa918f21f05ceec15aed767c6604546edc`  
@@ -260,7 +260,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 62.7 MB (62713384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bc2c3dfa2d6df259da14558beefb7cee69246c0da0fdc440a04d5af7c8fb7dd`  
-		Last Modified: Tue, 13 Jan 2026 06:15:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:20:01 GMT  
 		Size: 193.3 MB (193306851 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53f570507940ddd8f9b8f88bb6e56112cf5f96f89c5feac447b5f5c882a8857e`  
@@ -268,7 +268,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 4.2 MB (4206858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05769e3687bfd54a9f01e0fd9932b06c929b6d961dcb5789e6bd3b659369656c`  
-		Last Modified: Tue, 13 Jan 2026 07:26:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:26:38 GMT  
 		Size: 124.6 MB (124618154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f5303acf7ef886970e17df54d0f5aa8c374690a87856ff0ff4169225c41bb4a`  
@@ -296,7 +296,7 @@ $ docker pull gcc@sha256:36189a15c54006fe9ad774671202709c75e262d51fa9ce280d5bb8c
 
 -	Layers:
 	-	`sha256:09de74e366c664489ebc4407e87d4f103ad01f889e733c70924c81867bdc1834`  
-		Last Modified: Tue, 13 Jan 2026 10:20:16 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:26:18 GMT  
 		Size: 17.2 MB (17150282 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b1bd1ba2972ad809ca737179a46d0ad34cbf979219b331225a287fe4952a03f1`  
@@ -363,7 +363,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 4.5 MB (4498494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56cd850401fb2fd5e7b32897b0c52b0eaa404a462bb4fcbdbb95767f144c4786`  
-		Last Modified: Tue, 13 Jan 2026 06:19:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:19:47 GMT  
 		Size: 158.0 MB (157996227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af995e2f934c5b97935c5b2a37977954ae01ebe7758519fc909b1b71af6c967b`  
@@ -438,7 +438,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f21554c0ffe7aa9121703873815aca94dbbdf6352a46266dc923fc9e36d0d58a`  
@@ -454,11 +454,11 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 231.1 MB (231145655 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:863fad03d8ea037f63e16928db7abcf1373eb8bf22f9937674e6f2e78172fcf8`  
-		Last Modified: Tue, 13 Jan 2026 18:27:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 18:27:28 GMT  
 		Size: 4.9 MB (4897102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4330134b3e494ed6b0bb83d3015c69f95c1137fa49bf216c93f9d7ebf05b617e`  
-		Last Modified: Tue, 13 Jan 2026 18:27:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:19:37 GMT  
 		Size: 164.4 MB (164387520 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0da071cb47028db4d7bd76ce410b07e2630133609d60bbe4b2c698c436248099`  
@@ -466,7 +466,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 10.7 KB (10708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:282ab996567069a21279c861d9053d943141fa701b725e78aeaf33f6a1ea606c`  
-		Last Modified: Tue, 13 Jan 2026 18:27:28 GMT  
+		Last Modified: Tue, 13 Jan 2026 18:27:06 GMT  
 		Size: 2.0 KB (2010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -561,7 +561,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 10.9 KB (10899 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0a8e03d75e274900eb61176773457bda5074a8aee7bf507d45bdfc7b30fbd874`  
-		Last Modified: Tue, 13 Jan 2026 06:59:35 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:59:24 GMT  
 		Size: 2.0 KB (1984 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
