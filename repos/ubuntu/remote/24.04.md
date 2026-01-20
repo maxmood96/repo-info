@@ -103,7 +103,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:a56277e49d30e9a430d5cefad3038f88470a8681e48b806fff292791ed54f1fc`  
-		Last Modified: Tue, 13 Jan 2026 10:01:35 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:51 GMT  
 		Size: 26.9 MB (26853837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -123,7 +123,7 @@ $ docker pull ubuntu@sha256:a968dc88bbb7e90039509b794dc843d3d9ef3d3cc73835c10386
 
 -	Layers:
 	-	`sha256:0c6efbe58cf4b1d6388e7715540dc164348000944443fe59ecca251afa502161`  
-		Last Modified: Thu, 15 Jan 2026 21:42:23 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:05:37 GMT  
 		Size: 1.9 MB (1940323 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -157,7 +157,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:36bf709aa36d66b784b0ba1aa3276848f28501175eeb4d7a310b1a98578f8558`  
-		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:03:33 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -177,7 +177,7 @@ $ docker pull ubuntu@sha256:db03ff32fd1564653c7165ae40a64ce2f811cb7b49c0a91384d0
 
 -	Layers:
 	-	`sha256:3818b7c88702ff8a538bc9fd6f4c18e0f93398576564b54147b2315aa7379380`  
-		Last Modified: Fri, 16 Jan 2026 00:05:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:45:05 GMT  
 		Size: 1.9 MB (1939111 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -285,7 +285,7 @@ $ docker pull ubuntu@sha256:4946602ea2b4ba6fe0a623cfba2d4bf96eb857ff06608a75b918
 
 -	Layers:
 	-	`sha256:e6e3c571099bfb5ba68595d6199f85afe9aa0f0acc4b1f4ef2b2be81ee887ae8`  
-		Last Modified: Sun, 18 Jan 2026 21:52:14 GMT  
+		Last Modified: Mon, 19 Jan 2026 00:04:32 GMT  
 		Size: 1.9 MB (1931899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -319,7 +319,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:88318e41cf944fd93c8b2fdfaeb1378b17ed0e2440ef9811f9820449bf19a6ad`  
-		Last Modified: Tue, 13 Jan 2026 07:12:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:36:13 GMT  
 		Size: 29.9 MB (29909204 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
