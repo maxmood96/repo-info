@@ -117,7 +117,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff0443502f464fbaa22250ad5c12a826ef96b40ab5d3cf614173ce594de6e915`  
-		Last Modified: Thu, 15 Jan 2026 22:13:07 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:23 GMT  
 		Size: 818.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cece8212e795c758d6ff7c01982a13765a1c86258e45516473eb5764fa7d18a1`  
@@ -125,11 +125,11 @@ VOLUME [/opt/couchbase/var]
 		Size: 846.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6f728a1ae56e287c725015693998ed0c28e92589bd77a00c4107de600a7cb80`  
-		Last Modified: Thu, 15 Jan 2026 22:13:33 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:08 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aaacf784662d45c8d3844fb2d69a16c442f21931bc53d90298e0dc84c427c30e`  
-		Last Modified: Thu, 15 Jan 2026 22:13:23 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:09 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -157,7 +157,7 @@ $ docker pull couchbase@sha256:dc9ef82a44052b9b074b4d36b07d330d86a1b49554475523f
 
 -	Layers:
 	-	`sha256:c006cf038247c0c182a1ba944283dc2eb2b22d2063e980177ca2d688915312ac`  
-		Last Modified: Fri, 16 Jan 2026 00:35:33 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:05 GMT  
 		Size: 37.5 KB (37519 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -247,11 +247,11 @@ VOLUME [/opt/couchbase/var]
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8f8ca9ddac2498238fce18e14d74a4bca089f48764559e2a6e3dcec561439598`  
-		Last Modified: Thu, 15 Jan 2026 22:13:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:48 GMT  
 		Size: 43.6 MB (43627350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d0d3476ebde9ae31f69185cedf1c16a34575d281afad7284ab6d60d1febe746a`  
-		Last Modified: Thu, 15 Jan 2026 22:13:43 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:25 GMT  
 		Size: 764.8 KB (764840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:12809185b4dce9e9a16cc03b53e454e22294b5e756e687121c7a1e16e497c7db`  
@@ -259,11 +259,11 @@ VOLUME [/opt/couchbase/var]
 		Size: 3.7 KB (3718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21525b802b497711787b41e25ee49c83d13786c21c87db1394c33d061395876c`  
-		Last Modified: Thu, 15 Jan 2026 22:14:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:35 GMT  
 		Size: 390.7 MB (390700569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bfe2900bfa654e5cab8fcfb59608af1eba301e330e4797f0461e984cec3bef7f`  
-		Last Modified: Thu, 15 Jan 2026 22:13:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:43 GMT  
 		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b00b1e866819b0e63ed80c524c0f9ca40127801ff2214da01e7fd083745bb717`  
@@ -271,11 +271,11 @@ VOLUME [/opt/couchbase/var]
 		Size: 818.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50443be74a35bdd10011c72bc57d98fc2397cc4174096e251d23604076a3f3df`  
-		Last Modified: Thu, 15 Jan 2026 22:13:27 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:43 GMT  
 		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9f438c477daf44b7da7ec944120e7327df8e6cbed6cefb7c34038a8c74db9058`  
-		Last Modified: Thu, 15 Jan 2026 22:13:44 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:28 GMT  
 		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f11ca57ba41d90d7350956e242dcaad48f5096ecf2b4842ea1ae97c7dbe48b02`  
@@ -287,7 +287,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b1e306b0f9014d75031ccec62cc9f1211235b82da0cfc59b3db5ce952b515c0c`  
-		Last Modified: Thu, 15 Jan 2026 22:13:29 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:43 GMT  
 		Size: 931.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
