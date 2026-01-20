@@ -171,7 +171,7 @@ RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1768176000'
 
 -	Layers:
 	-	`sha256:d637807aba98f742a62ad9b0146579ceb0297a3c831f56b2361664b7f5fbc75b`  
-		Last Modified: Tue, 13 Jan 2026 00:42:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:49 GMT  
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -343,7 +343,7 @@ RUN # debian.sh --arch 's390x' out/ 'trixie' '@1768176000'
 
 -	Layers:
 	-	`sha256:2b46bc94baaae0a37e5e04b1babf7e1f37c4390b83d49c3c6820188deba770e3`  
-		Last Modified: Tue, 13 Jan 2026 13:10:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 13:10:43 GMT  
 		Size: 29.8 MB (29833411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

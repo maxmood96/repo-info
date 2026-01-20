@@ -44,11 +44,11 @@ RUN echo 'deb http://deb.debian.org/debian trixie-backports main' > /etc/apt/sou
 
 -	Layers:
 	-	`sha256:2ca1bfae7ba8b9e2a56c1c19a2d14036cae96bf868ca154ca88bc078eaf7c376`  
-		Last Modified: Tue, 13 Jan 2026 00:42:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:23 GMT  
 		Size: 49.3 MB (49285621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7358cddc6e918ce923801f0cabeb53fa573f88ea5d8554762d2b3477f165db4e`  
-		Last Modified: Tue, 13 Jan 2026 01:17:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:24 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -227,7 +227,7 @@ $ docker pull debian@sha256:86596924e6379e00b5b4b0f6b2c48dbb3f23baeeaf4976ca9f76
 
 -	Layers:
 	-	`sha256:2d7411656c9112ad9e929061c017299151349790271652e48ce5c7ddee6d6442`  
-		Last Modified: Tue, 13 Jan 2026 01:15:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:27:57 GMT  
 		Size: 3.2 MB (3172358 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c558a1c75107aaf1811b30b5ef2f8ee9220f27f488dd4374ab4a024ee0c68f14`  
@@ -415,7 +415,7 @@ RUN echo 'deb http://deb.debian.org/debian trixie-backports main' > /etc/apt/sou
 
 -	Layers:
 	-	`sha256:9de0288d81a9602539c9f3015fc521191e25eebfe6442c22cb974ea3a486f3a8`  
-		Last Modified: Tue, 13 Jan 2026 00:41:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:46 GMT  
 		Size: 49.3 MB (49348704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c8f1eeace74daaef97c5e39d8ed1bb14ff8c483adba12dafd65289252914f052`  
