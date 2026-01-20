@@ -147,7 +147,7 @@ $ docker pull sonarqube@sha256:49d77cffdf1bc259d33ef34e90c96b100c0103e78d0117888
 
 -	Layers:
 	-	`sha256:905793a6494dc11b475d4dc2f842ea9b1ea6a9d41af2d370c6587baf7ef01444`  
-		Last Modified: Fri, 16 Jan 2026 03:54:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:08:50 GMT  
 		Size: 4.6 MB (4590371 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:15fbda4327e38f22c91c2a44113dac889b74b57d9309761cf54456fa8c6f4845`  
@@ -243,7 +243,7 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:36bf709aa36d66b784b0ba1aa3276848f28501175eeb4d7a310b1a98578f8558`  
-		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:03:33 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:733d8aa488b55ac09113fb6923a025dd6c789770c55b738387a34a5cad1bf82e`  
@@ -251,19 +251,19 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Size: 24.2 MB (24166529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2014bd5938928d55149f3bd12aafc9edd2b2564be58b1b8f4741a761c254d773`  
-		Last Modified: Thu, 15 Jan 2026 22:21:07 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:21:26 GMT  
 		Size: 156.1 MB (156108045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1205e43b16a07ab88cb31484712b906ca3fe032a61a21b18c69765799353c4b3`  
-		Last Modified: Thu, 15 Jan 2026 22:21:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:21:03 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:313b0162d5f630b291fc13a699023e777b0b5a20343c7c6b72c776d70a0b9ee9`  
-		Last Modified: Thu, 15 Jan 2026 22:21:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:21:17 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b73d13f5ebdf5c28d31083e6995da78fd2f113e28e6bb3c73d51ab29737eedd1`  
-		Last Modified: Fri, 16 Jan 2026 01:13:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:12:40 GMT  
 		Size: 913.3 MB (913321448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:264560874a58faea912e447162240ab087fcc06610f9e24b9393b90e5b5d484e`  
