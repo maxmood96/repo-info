@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:88044ee9321e7222d3b692aeed21a65cb3b24ae2b50880b6dc50d4f6f14523b3`
-- Created: `2026-01-13T04:11:36.772883487Z`
+- Image ID: `sha256:fbfc7dae04fef1480e82e34a424948c647a9c950b1f3ab89e26139d8ecfe8db8`
+- Created: `2026-01-17T00:24:55.758099985Z`
 - Virtual Size: ~ 580.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.29`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.29.tar.xz.asc`
-  - `PHP_SHA256=f7950ca034b15a78f5de9f1b22f4d9bad1dd497114d175cb1672a4ca78077af5`
+  - `PHP_VERSION=8.3.30`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.30.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.30.tar.xz.asc`
+  - `PHP_SHA256=67f084d36852daab6809561a7c8023d130ca07fc6af8fb040684dd1414934d48`
   - `POSTFIXADMIN_VERSION=4.0.1`
   - `POSTFIXADMIN_SHA512=88be6834257580c7a52dce33ce552e1868a1b28ba639a3378a66278939640073af4f8893fbfac690e2df5e67db0143c5726aab575bf0e4014b39a03d46916831`
   - `COMPOSER_ALLOW_SUPERUSER=1`

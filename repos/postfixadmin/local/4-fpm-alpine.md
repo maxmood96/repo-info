@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc7535a11bdbacf2a7178025066841b1a6904185682119f8d40353895e8d3485`
-- Created: `2026-01-10T00:27:27.037073494Z`
+- Image ID: `sha256:1461a5e5cedb8fc18abe0a43e83555ff6bee853224b9f8a1926043e704c5db71`
+- Created: `2026-01-17T00:24:59.17405209Z`
 - Virtual Size: ~ 168.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.29`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.29.tar.xz.asc`
-  - `PHP_SHA256=f7950ca034b15a78f5de9f1b22f4d9bad1dd497114d175cb1672a4ca78077af5`
+  - `PHP_VERSION=8.3.30`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.30.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.30.tar.xz.asc`
+  - `PHP_SHA256=67f084d36852daab6809561a7c8023d130ca07fc6af8fb040684dd1414934d48`
   - `POSTFIXADMIN_VERSION=4.0.1`
   - `POSTFIXADMIN_SHA512=88be6834257580c7a52dce33ce552e1868a1b28ba639a3378a66278939640073af4f8893fbfac690e2df5e67db0143c5726aab575bf0e4014b39a03d46916831`
   - `COMPOSER_ALLOW_SUPERUSER=1`
@@ -661,16 +661,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.51.1-r0 description:
+sqlite-libs-3.51.2-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.51.1-r0 webpage:
+sqlite-libs-3.51.2-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.51.1-r0 installed size:
+sqlite-libs-3.51.2-r0 installed size:
 1577 KiB
 
-sqlite-libs-3.51.1-r0 license:
+sqlite-libs-3.51.2-r0 license:
 blessing
 
 ```
@@ -729,16 +729,16 @@ GPL-3.0-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.8.1-r0 description:
+xz-5.8.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.8.1-r0 webpage:
+xz-5.8.2-r0 webpage:
 https://tukaani.org/xz/
 
-xz-5.8.1-r0 installed size:
+xz-5.8.2-r0 installed size:
 162 KiB
 
-xz-5.8.1-r0 license:
+xz-5.8.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -746,16 +746,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.1-r0 description:
+xz-libs-5.8.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.1-r0 webpage:
+xz-libs-5.8.2-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.1-r0 installed size:
+xz-libs-5.8.2-r0 installed size:
 221 KiB
 
-xz-libs-5.8.1-r0 license:
+xz-libs-5.8.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
