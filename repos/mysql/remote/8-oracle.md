@@ -95,7 +95,7 @@ CMD ["mysqld"]
 		Size: 47.8 MB (47815365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93b034b0c553cfc069b162e27ecb7ee469e94daeab571d7f5cd3a83b1498eee6`  
-		Last Modified: Fri, 16 Jan 2026 23:27:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:28:00 GMT  
 		Size: 320.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ada6ad8c9d8c75d4beafab09f3234c75c361caa487b16fcc00ea8c5907ba435f`  
@@ -243,10 +243,10 @@ $ docker pull mysql@sha256:0becb120ac404c9cb5053d5f7ab407549476090ac87b8ca2614f1
 
 -	Layers:
 	-	`sha256:cf05006e49674ec49c6960a63fd16768a1ba783574e4feabbf5cf66257c923e9`  
-		Last Modified: Sat, 17 Jan 2026 01:02:37 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:31:36 GMT  
 		Size: 14.9 MB (14895678 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:21660c0a2842109c3be55e8454bacac54817f6f768500373c4cef54317156538`  
-		Last Modified: Fri, 16 Jan 2026 23:31:35 GMT  
+		Last Modified: Sat, 17 Jan 2026 01:02:38 GMT  
 		Size: 34.5 KB (34513 bytes)  
 		MIME: application/vnd.in-toto+json
