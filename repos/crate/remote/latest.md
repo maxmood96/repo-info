@@ -75,7 +75,7 @@ CMD ["crate"]
 		Size: 149.1 MB (149133558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:33126ec70617c2e99a89ab94195ba8e70459d09a3dc20f03300770642bb5dbc3`  
-		Last Modified: Mon, 05 Jan 2026 19:11:22 GMT  
+		Last Modified: Mon, 05 Jan 2026 19:11:42 GMT  
 		Size: 1.9 MB (1943631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94f5587d8039e028413927960e0af3ad8eea851b7e6707aebf5e8a78eac3d868`  
@@ -83,7 +83,7 @@ CMD ["crate"]
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9499414e23067d6c17cc7429e7992bc2a846203ce8eef5126556618b7c584733`  
@@ -115,7 +115,7 @@ $ docker pull crate@sha256:c60023a6b2bc8cf1613c25aa37a539981c2f18036a46edc182e28
 
 -	Layers:
 	-	`sha256:01294e1f930349abb8b726ff630f768ad6578e2f3cb0214c23069ee1b6f246b0`  
-		Last Modified: Mon, 05 Jan 2026 19:11:22 GMT  
+		Last Modified: Mon, 05 Jan 2026 21:38:47 GMT  
 		Size: 5.2 MB (5191066 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7bb8c597756ff70313672c657eb61bbff6632864b3d9416d59f88d6083792720`  
@@ -175,7 +175,7 @@ CMD ["crate"]
 
 -	Layers:
 	-	`sha256:011bf9e5e83deb6ccf3c1372474219dc8eea84d48f05953f5cfc754726740b85`  
-		Last Modified: Mon, 05 Jan 2026 18:22:20 GMT  
+		Last Modified: Mon, 05 Jan 2026 18:21:39 GMT  
 		Size: 66.0 MB (65975452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:886e186f7c9f7875ae691d770756e07fe683f116fa83ac5675d95ecd2f5438b0`  
@@ -195,7 +195,7 @@ CMD ["crate"]
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7929a8cb6b03858daed57ba39f3ecd54441ce49cbcd7de07869f493db5b42ba`  
@@ -227,7 +227,7 @@ $ docker pull crate@sha256:20454104972590ecee7bfadc2e0a9c23a73bd45625e7942854a30
 
 -	Layers:
 	-	`sha256:24ed7c16ea6bb876f70125e1e0f702e220361e1fed5ffff77fcf79abbaa04cd5`  
-		Last Modified: Mon, 05 Jan 2026 21:39:12 GMT  
+		Last Modified: Mon, 05 Jan 2026 19:11:12 GMT  
 		Size: 5.2 MB (5188985 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:127491178df144883dfa88b10e4117be855880c9abbb59f622ef9eda55f6639e`  
