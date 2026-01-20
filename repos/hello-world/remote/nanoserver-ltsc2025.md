@@ -40,6 +40,6 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 		Size: 1.8 KB (1816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ee475e8bafa70cbef4d4ef986e76320897144a97d0b4383066599834204f8a27`  
-		Last Modified: Tue, 13 Jan 2026 22:53:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:51:41 GMT  
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
