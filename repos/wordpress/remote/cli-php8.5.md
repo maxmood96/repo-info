@@ -123,7 +123,7 @@ CMD ["wp" "shell"]
 		Size: 934.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee69afcd153bd2b7016bc456f768d14f1de8660db516475250b7b96b478f891d`  
-		Last Modified: Fri, 16 Jan 2026 23:20:30 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:20:24 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:144b96ed216f326f97b2ddfda3d3cb4da247c7b12cc5d985a7e099a09194ae6b`  
@@ -287,7 +287,7 @@ CMD ["wp" "shell"]
 
 -	Layers:
 	-	`sha256:cd0fa7d4c99310a30bac99a15cc62d2f7c0326577b630f591cebdbe4ad202657`  
-		Last Modified: Thu, 18 Dec 2025 00:12:27 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:19 GMT  
 		Size: 3.6 MB (3568432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6942ba789b6a3ef037cd305653c8e6d5ae70af7b0f651a89bf0065ecacd4a431`  
@@ -307,7 +307,7 @@ CMD ["wp" "shell"]
 		Size: 14.4 MB (14355582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:725f87d514d4074bdfa50e4dbc1db5c0519835625144dacc33bb03e697be2af7`  
-		Last Modified: Fri, 16 Jan 2026 23:20:12 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:20:06 GMT  
 		Size: 486.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5df7e2860efbcdc3d88eb144a031130c5b5d9668fe1db266e65adb835a8b39f5`  
@@ -315,7 +315,7 @@ CMD ["wp" "shell"]
 		Size: 19.5 MB (19524306 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:acde9bcb3db1314a8436da1fc15ff8e8f616fcc6fc1e8ac137487937b38d96d8`  
-		Last Modified: Fri, 16 Jan 2026 23:20:12 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:20:07 GMT  
 		Size: 2.4 KB (2449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d271ac5fbf4361f23ed3340cc50f93ea109f7194d13950dc35239158e94b36c3`  
@@ -335,7 +335,7 @@ CMD ["wp" "shell"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f1f9c73fed7254c8eed354a204b003b2515db73c9b0f23f8d251757b1b5b1da`  
-		Last Modified: Fri, 16 Jan 2026 23:41:25 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:41:32 GMT  
 		Size: 14.9 MB (14859697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad12f7ad68c2c78d0babe9fada01b990ca1d7fc85f2c44ac26621ddb2d44666f`  
@@ -459,11 +459,11 @@ CMD ["wp" "shell"]
 
 -	Layers:
 	-	`sha256:fb78f26011a0b45e0ee3135541eee4683a4b98bf30b3d23f0981be37e8794a2a`  
-		Last Modified: Thu, 18 Dec 2025 00:12:43 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:29 GMT  
 		Size: 3.3 MB (3279388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81cf8b7c93da4e78a6a4511a8b6fdc49a7724f39ffd67e3d2b0fd20c680ef9cc`  
-		Last Modified: Fri, 16 Jan 2026 23:28:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:28:41 GMT  
 		Size: 3.3 MB (3347162 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb71f1c06490bfee7012b884e71bae0193ffaac0f382650f7df84cc2e70c3fe0`  
@@ -475,7 +475,7 @@ CMD ["wp" "shell"]
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c348c1da1922fc78298c84c1e816f61fbaaac1678e41d8573806c270fb390ac1`  
-		Last Modified: Fri, 16 Jan 2026 23:28:41 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:28:49 GMT  
 		Size: 14.4 MB (14355582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:44b0635921181e672cdeb9a9ddae006e6ad8e60a3500692d8609da461924e33f`  
@@ -495,7 +495,7 @@ CMD ["wp" "shell"]
 		Size: 23.3 KB (23324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fe259ee092a07518b387353833d2f74f8c8ce1e068daf0c091f9ad2afe6e1869`  
-		Last Modified: Fri, 16 Jan 2026 23:57:43 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:57:35 GMT  
 		Size: 10.5 MB (10535829 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -539,7 +539,7 @@ $ docker pull wordpress@sha256:ab0bf093529757b3fa5152dd16304c5295756ce1f4eb4677c
 
 -	Layers:
 	-	`sha256:f9a6df947bea97608c818dda8cb506a65382953c210015669af2d3aa78356d23`  
-		Last Modified: Sat, 17 Jan 2026 02:20:37 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:57:35 GMT  
 		Size: 637.9 KB (637932 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:89bb65502e31b4608cb2355f75dcbdb1f3dda30c93ed70036159a490241804e0`  
@@ -635,7 +635,7 @@ CMD ["wp" "shell"]
 
 -	Layers:
 	-	`sha256:f6b4fb9446345fcad2db26eac181fef6c0a919c8a4fcccd3bea5deb7f6dff67e`  
-		Last Modified: Thu, 18 Dec 2025 00:12:50 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:35 GMT  
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e4304af56106d7a6c00093d06ad09d46249b8ca9647d02669c4ae749ac69605f`  
@@ -647,7 +647,7 @@ CMD ["wp" "shell"]
 		Size: 932.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c9092a701e099fc9f57cf713ddfca1afd4e1dc10efbf2df4d2454add1870880`  
-		Last Modified: Fri, 16 Jan 2026 23:21:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:21:56 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d23ad1fedb7f51895934953acfd145131ba73f2344f89c444e94b9b26f124a53`  
@@ -683,7 +683,7 @@ CMD ["wp" "shell"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd10b1c20b0e75be47376d3447cf2d6b647268193ca70b9006511952a6fd4c9a`  
-		Last Modified: Fri, 16 Jan 2026 23:35:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:35:48 GMT  
 		Size: 17.3 MB (17265772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1326c580519df8dcb6cb1b42ae7cb349d5587018af29fcbaf86d559b18c4fad7`  
@@ -819,7 +819,7 @@ CMD ["wp" "shell"]
 		Size: 3.6 MB (3629147 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9117759c26104880adfd7ce2dfe84505828ec310c4b8b6fec517edd8e7179d2`  
-		Last Modified: Fri, 16 Jan 2026 23:22:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:22:43 GMT  
 		Size: 933.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:acecb1a6db8a318afce9e5ab2ea7be76c34b9931fff6e773fc2dfb0380a10e62`  
@@ -891,11 +891,11 @@ $ docker pull wordpress@sha256:a20048574caaaaf148eae16cbd267925848be7fc521a98472
 
 -	Layers:
 	-	`sha256:f4fc281b45ceace93f1eae24521e8dc9dd151795e84bc869cff1650ef4dc7554`  
-		Last Modified: Fri, 16 Jan 2026 23:31:31 GMT  
+		Last Modified: Sat, 17 Jan 2026 02:20:46 GMT  
 		Size: 639.8 KB (639763 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e0e16db048f8ac90ff67a01fdd8ed94c93773d2a11efc52c34d6634fd0a3dd3f`  
-		Last Modified: Sat, 17 Jan 2026 02:20:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:31:31 GMT  
 		Size: 40.8 KB (40799 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -999,7 +999,7 @@ CMD ["wp" "shell"]
 		Size: 928.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1ce8460d16487c23dd44b0afef57a49c4aeca53309e968b330dc8c9044d5e51`  
-		Last Modified: Sat, 03 Jan 2026 02:17:28 GMT  
+		Last Modified: Sat, 03 Jan 2026 02:17:36 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9d4dc1a8661b31ca0893788db723f4c765c8348c64b329617a032edb25f3dde2`  
@@ -1007,7 +1007,7 @@ CMD ["wp" "shell"]
 		Size: 14.4 MB (14355606 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f7be7e4116c3fda9ea5828862f705f6378f5e5b980f3065e7c516f954cea36db`  
-		Last Modified: Fri, 16 Jan 2026 23:44:09 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:44:01 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24d2bd19296b20c515db4cf6c9e604baaa7e97cd171c2dcf1134c71a312d6e21`  
@@ -1043,11 +1043,11 @@ CMD ["wp" "shell"]
 		Size: 393.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:995f1f3a7b29892364c1b66bcc06a52d3e5411a90d37c331d888448bed23543a`  
-		Last Modified: Sat, 17 Jan 2026 03:12:29 GMT  
+		Last Modified: Sat, 17 Jan 2026 03:12:35 GMT  
 		Size: 1.5 MB (1535713 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb4f39c14b150207869254a05442e9e2fec9eba81847550af63f52a04e9fd883`  
-		Last Modified: Sat, 17 Jan 2026 03:12:29 GMT  
+		Last Modified: Sat, 17 Jan 2026 03:12:35 GMT  
 		Size: 405.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1167,7 +1167,7 @@ CMD ["wp" "shell"]
 		Size: 3.6 MB (3583938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:25b530e2aa9b2657de1d52e221d1841cf1970adc8a19d28df2a836438ca82d59`  
-		Last Modified: Thu, 18 Dec 2025 08:10:14 GMT  
+		Last Modified: Thu, 18 Dec 2025 08:10:00 GMT  
 		Size: 3.7 MB (3740208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9f161979011df79f0935c37e8044239316a16a481a51548ff3d1420fa2b71d7b`  
@@ -1191,11 +1191,11 @@ CMD ["wp" "shell"]
 		Size: 20.7 MB (20701459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57c69d80b2e7f9839efcf4bf44d92e28e520dc722164a4fb243ef777fad00294`  
-		Last Modified: Sat, 10 Jan 2026 21:39:24 GMT  
+		Last Modified: Sat, 10 Jan 2026 21:39:34 GMT  
 		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e003241f425ed6b6dc145f2cc91f354706814ec447f3bc79dad4a2142474b62`  
-		Last Modified: Sat, 10 Jan 2026 21:39:34 GMT  
+		Last Modified: Sat, 10 Jan 2026 21:39:24 GMT  
 		Size: 23.3 KB (23337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64a77b9994f988f1464d785c6585b1c2b9898a6720da6053428c68fa0b619718`  
@@ -1211,7 +1211,7 @@ CMD ["wp" "shell"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ffeef08b41b66d5e8eb2e04459a26b9291bc24c550582a52d5457c8d167f66b9`  
-		Last Modified: Wed, 14 Jan 2026 02:17:08 GMT  
+		Last Modified: Wed, 14 Jan 2026 02:16:59 GMT  
 		Size: 15.5 MB (15497621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf11b1bcc20415a8f4fe582e8cd0cdfd94ea056ba76c0c2675d56c232f87a317`  
@@ -1219,7 +1219,7 @@ CMD ["wp" "shell"]
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5c595d01b9f41b46104fa6f578fabccb449078f2bee27b6d8cdc3cdf48ffccb`  
-		Last Modified: Wed, 14 Jan 2026 02:17:07 GMT  
+		Last Modified: Wed, 14 Jan 2026 02:16:55 GMT  
 		Size: 1.5 MB (1535717 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dabe7c9dc700f5c24ae54563f49b03c69d510a44c48bbb064ec56c5282f00ffe`  
@@ -1243,7 +1243,7 @@ $ docker pull wordpress@sha256:6fa38249b3610a4849bfcae5986b82403e9b9a5b82d8b86fd
 
 -	Layers:
 	-	`sha256:981bf1635ab07c94748991244125d6b9288bead8542aedaed46d6783f94a21e8`  
-		Last Modified: Wed, 14 Jan 2026 02:16:54 GMT  
+		Last Modified: Wed, 14 Jan 2026 05:14:08 GMT  
 		Size: 637.9 KB (637925 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:25c0569529541bbbecf2eabed262d8f7359b4f8dd1b05b413cc8fd43889416cc`  
@@ -1343,15 +1343,15 @@ CMD ["wp" "shell"]
 		Size: 3.7 MB (3724311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f9af672712b2dab3c8a68ddbd40990098668c349a31bf4fe54360519012d2e9`  
-		Last Modified: Thu, 18 Dec 2025 00:34:55 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:35:02 GMT  
 		Size: 3.8 MB (3794529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3e82f0b184abfa92d79d92b03514acd8b9f92c2ca083f9fa2e62587fde8871a2`  
-		Last Modified: Thu, 18 Dec 2025 00:34:55 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:35:02 GMT  
 		Size: 930.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b827f069b40835efda3a88ba34853291bec4baedd59564b9d33abc39667950f2`  
-		Last Modified: Thu, 18 Dec 2025 00:35:02 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:34:55 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e4ac342c23d6edcb1ce67cd4618de95df27adac2224a5f9d478d2fadfc1cae8d`  
@@ -1367,7 +1367,7 @@ CMD ["wp" "shell"]
 		Size: 21.6 MB (21580079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f61340dab7804d3fc943bed26de1009baefefea7d481cd95f1d0086dc2bf2adc`  
-		Last Modified: Fri, 16 Jan 2026 23:24:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:24:36 GMT  
 		Size: 2.4 KB (2447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:479658c296257496ae95c6c75cc3595d37d1f4f2872b09aac578991cde9b7854`  
@@ -1391,7 +1391,7 @@ CMD ["wp" "shell"]
 		Size: 17.5 MB (17519733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7cb3d80204fd8b520435a2ce9132962a8ed54be18e5f517ed837e5608819b41e`  
-		Last Modified: Sat, 17 Jan 2026 00:03:17 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:03:12 GMT  
 		Size: 390.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:390697aa67aed550f165af49f2601827842051957e6dce69e998e226da487954`  
