@@ -53,11 +53,11 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3506abfd78a36c30c23fe01f0c3ab62436212438294a0da94c8a15913326e030`  
-		Last Modified: Mon, 08 Dec 2025 01:27:28 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:01:34 GMT  
 		Size: 46.0 MB (46020467 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e651980d24865ee4f19fa471fbeed8f6ba65e8b7cf4b242999fc0c0b130abdee`  
@@ -221,7 +221,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1c90f7c9f8a7f5db7344e75bb64578f0b7b30439d01bdbc5c15e62833526056`  
-		Last Modified: Wed, 08 Oct 2025 21:49:31 GMT  
+		Last Modified: Tue, 09 Dec 2025 18:38:35 GMT  
 		Size: 749.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -241,7 +241,7 @@ $ docker pull znc@sha256:4a900b3cbf481a15ff4c53094629589ad021553aefef1004ebd3b69
 
 -	Layers:
 	-	`sha256:5876732d2e3a5d3f9c22b939b59b950404a086aa77605eb56873e874bc934a47`  
-		Last Modified: Wed, 08 Oct 2025 21:49:31 GMT  
+		Last Modified: Wed, 10 Dec 2025 23:05:20 GMT  
 		Size: 1.8 MB (1752900 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f3e302684a02e42366864e17b224123f7d91874878390a786b63b04aa66cdd40`  
