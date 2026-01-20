@@ -104,7 +104,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:65b2cf2bfc670b555a8d1f35418f547f057c9eb49545246fee09583d2809792c`  
-		Last Modified: Tue, 13 Jan 2026 23:02:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9a6b3cef151dd4daeb69c3f714d23e7249f1434b44232997938860e2ca473cff`  
