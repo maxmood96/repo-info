@@ -117,11 +117,11 @@ $ docker pull nginx@sha256:1692578932c9d6866d8cea53c77cefcdcd84097afbcf30804b1eb
 
 -	Layers:
 	-	`sha256:c8cd0bf92cb4f638fbe5cd6bbf9a9fa3a6823972ce336bacadefa9f6384abd4b`  
-		Last Modified: Tue, 13 Jan 2026 03:46:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:52:07 GMT  
 		Size: 2.8 MB (2828910 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:36499792ff9cc79bcc0b482dc89785ad7c2d1abc3a5d4033008b648c7fe3fc50`  
-		Last Modified: Tue, 13 Jan 2026 03:46:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:52:08 GMT  
 		Size: 24.6 KB (24555 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -183,7 +183,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 
 -	Layers:
 	-	`sha256:d637807aba98f742a62ad9b0146579ceb0297a3c831f56b2361664b7f5fbc75b`  
-		Last Modified: Tue, 13 Jan 2026 00:42:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:49 GMT  
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:15a5b76537aa00de2d2762b3c98cc4df2bd2511a92332e15f90dd6516064d798`  
