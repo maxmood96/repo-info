@@ -58,7 +58,7 @@ CMD ["iex"]
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3cc841b2a9dd2416234d69e31d067ff495300157c3136fe60ccb7deed3d0a172`  
-		Last Modified: Fri, 16 Jan 2026 18:31:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:31:24 GMT  
 		Size: 46.1 MB (46092684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:20736900f30a3cc957efe40dd66227b38c65b1f1ba885f03bc03197caad31df4`  
@@ -86,7 +86,7 @@ $ docker pull elixir@sha256:86a8e759c224c4ebfad676a9fc7ca0e64d78ed11862ad8ba3387
 		Size: 280.4 KB (280389 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ddb91ee46997c03e6d388f6ee7e531bffbae2117ce8696f2caf704217f97fc2c`  
-		Last Modified: Fri, 16 Jan 2026 21:50:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 22:52:10 GMT  
 		Size: 9.5 KB (9486 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -157,7 +157,7 @@ $ docker pull elixir@sha256:6d9cc1f1eb1699e2fa18d2a40d85addfd23fdc4b0a9f5f8af0fd
 		Size: 276.1 KB (276102 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f33af2ed4604a5b1e5d6b800d58e55520426154d51e5bfa6f46ced1fd1fac120`  
-		Last Modified: Fri, 16 Jan 2026 21:49:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 22:52:15 GMT  
 		Size: 9.6 KB (9558 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -200,7 +200,7 @@ CMD ["iex"]
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56b8b298b4b9b4e0753ccb55492efbd8ff585bfb217ec5446f6d10cfea536d52`  
-		Last Modified: Fri, 16 Jan 2026 18:32:16 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:32:06 GMT  
 		Size: 45.9 MB (45879310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:acc1d4e7354851ce9372df5fcffbee6bc58dbc42690514a6a3e803eab06dec33`  
@@ -267,7 +267,7 @@ CMD ["iex"]
 
 -	Layers:
 	-	`sha256:e856d2de40a4729121561fa833570a5178c9f2def6f5ec8c0ef1681f84149f96`  
-		Last Modified: Mon, 08 Dec 2025 01:18:45 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:46 GMT  
 		Size: 3.5 MB (3471033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9a107e4d55ec7e2fd8dbf4d50fb336c567354674f899067baf1086d3c341b07`  
@@ -295,7 +295,7 @@ $ docker pull elixir@sha256:bd2dc068bcc080fcd3bef363458a7ae730bc4ccd4e0ae2520e5f
 
 -	Layers:
 	-	`sha256:b9511cd17d7b5850dee7a9bab2ed26f19f5ce4ddd1b2f9e72bfa5ef2beb7c1b4`  
-		Last Modified: Fri, 16 Jan 2026 22:52:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:50:44 GMT  
 		Size: 275.3 KB (275317 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f06d2933d7dcf1be420a4a3b93337dbe05f4b6494da0050a00880bbe4e1941d`  
@@ -338,11 +338,11 @@ CMD ["iex"]
 
 -	Layers:
 	-	`sha256:a78577222d4c08b54b062e8bf30834a3c610281d9b4780d34cac9394431f7f25`  
-		Last Modified: Sun, 07 Dec 2025 16:08:05 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3575563 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05cb2724169640c90e07c4cc5b9b738ff15ccbf9e3bfe3e2b15a788f182301b7`  
-		Last Modified: Fri, 16 Jan 2026 18:50:11 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:50:02 GMT  
 		Size: 44.7 MB (44739970 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc70a1b43629c3c04377bc2bc9db6aa3c7c62096f6f82d24a2a13aea1ea21ab2`  
@@ -409,15 +409,15 @@ CMD ["iex"]
 
 -	Layers:
 	-	`sha256:f904de3749cc276a12799ef0473a83bc2c72312c8555897e435b03275a44b66a`  
-		Last Modified: Sun, 07 Dec 2025 16:08:06 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:47 GMT  
 		Size: 3.5 MB (3462801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ceabf2932f7dcfd1240af901c2a07b785baae0d25288291b5892c047a7f44a65`  
-		Last Modified: Fri, 16 Jan 2026 18:34:15 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:26 GMT  
 		Size: 44.4 MB (44397539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f84d32ba3de7a1f2b20568836a9363c1d4613e3a741f539a0e04ea594f7c42b`  
-		Last Modified: Fri, 16 Jan 2026 21:54:49 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:54:42 GMT  
 		Size: 7.8 MB (7791804 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
