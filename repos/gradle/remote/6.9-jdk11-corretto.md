@@ -67,7 +67,7 @@ USER root
 
 -	Layers:
 	-	`sha256:ed23be565800a5983cd3d8b6fd581e584110f08d9e32684d0eb5ab2820cadcbc`  
-		Last Modified: Wed, 07 Jan 2026 22:09:37 GMT  
+		Last Modified: Wed, 07 Jan 2026 22:08:12 GMT  
 		Size: 54.0 MB (54021204 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4d80e849e0986824104f94780e496e5f0b7ca3decbfc934b6f1ee3b8406bd6c8`  
@@ -79,7 +79,7 @@ USER root
 		Size: 86.0 MB (86040784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:622446ce00fca165db04b24d9cd129dcc41fe9dba38736415ad1f4ae81a2f676`  
-		Last Modified: Thu, 15 Jan 2026 23:09:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:09:48 GMT  
 		Size: 1.6 KB (1649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -91,7 +91,7 @@ USER root
 		Size: 107.7 MB (107696665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c35755426892132fa2a94bdfa01f3671cee29a892c39ee02cca2b54cc129ea0`  
-		Last Modified: Thu, 15 Jan 2026 23:09:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:09:48 GMT  
 		Size: 431.3 KB (431288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -199,7 +199,7 @@ USER root
 		Size: 107.7 MB (107696669 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f59a965ce9904db67a4ed50a04ccbabd5b7c9f2e1b1d39a62ecfe5b1a4d68a8`  
-		Last Modified: Thu, 15 Jan 2026 23:17:01 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:17:10 GMT  
 		Size: 425.0 KB (425033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -219,7 +219,7 @@ $ docker pull gradle@sha256:f233487ffe4f0a51a3fa387edcdd06d197a76517cf945acb3a67
 
 -	Layers:
 	-	`sha256:d1767a41b0ac512d68d5500557161b62bd7a52ce2f9ee9ce841a3ee69a807501`  
-		Last Modified: Fri, 16 Jan 2026 03:18:33 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:17:02 GMT  
 		Size: 11.3 MB (11257898 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0a0faea7bb464c97511a8f88c28db8da45ffda24c1fc0e204215fadd2518b6fc`  
