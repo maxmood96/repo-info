@@ -85,7 +85,7 @@ RUN BusyBox 1.37.0 (glibc), Debian 13
 
 -	Layers:
 	-	`sha256:f1d8893ddf815655f3070c04fff9c6fa49c99f3ffcf05a179af3879e0cf986fd`  
-		Last Modified: Sat, 27 Dec 2025 21:07:12 GMT  
+		Last Modified: Tue, 28 Oct 2025 20:32:49 GMT  
 		Size: 1.8 MB (1827490 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -105,7 +105,7 @@ $ docker pull busybox@sha256:cf3a073b5489ac884c8b916c4cd46f10dc0b41d8cf573d9470c
 
 -	Layers:
 	-	`sha256:2f6402f9fb3af6e70cdadc1751c5496abb67e59b4015adf29e62acf1cf7ecec9`  
-		Last Modified: Sun, 28 Dec 2025 00:54:41 GMT  
+		Last Modified: Tue, 28 Oct 2025 20:32:49 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -128,7 +128,7 @@ RUN BusyBox 1.37.0 (glibc), Debian 13
 
 -	Layers:
 	-	`sha256:ea33d777d0851491c2391e73645c61c2f607599079ac7f70ee9f13847c604a21`  
-		Last Modified: Sat, 27 Dec 2025 21:07:14 GMT  
+		Last Modified: Tue, 28 Oct 2025 20:32:43 GMT  
 		Size: 1.6 MB (1593793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -171,7 +171,7 @@ RUN BusyBox 1.37.0 (glibc), Debian 13
 
 -	Layers:
 	-	`sha256:5bc51b87d4ecce0629c488674e2580a3d58d2937d70c81d4f6d485d43e06eb06`  
-		Last Modified: Sat, 27 Dec 2025 20:51:09 GMT  
+		Last Modified: Tue, 28 Oct 2025 20:33:02 GMT  
 		Size: 1.9 MB (1902991 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -277,7 +277,7 @@ $ docker pull busybox@sha256:9dbfc1fa2b120dc4159d7dc37bca0dc6d3cee77b5551b320ed3
 
 -	Layers:
 	-	`sha256:71dd9b7e031da7861a14bdb9b407d2228a898e01fcec0b351b8168fc5c634213`  
-		Last Modified: Tue, 28 Oct 2025 20:33:56 GMT  
+		Last Modified: Sun, 28 Dec 2025 00:54:43 GMT  
 		Size: 3.2 KB (3204 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -300,7 +300,7 @@ RUN BusyBox 1.37.0 (glibc), Debian 13
 
 -	Layers:
 	-	`sha256:6488cdf05cc22d401ec77c46eab2eb4c2d47c89ea9925479a7390a39e35f6623`  
-		Last Modified: Wed, 29 Oct 2025 12:37:38 GMT  
+		Last Modified: Sun, 28 Dec 2025 13:03:19 GMT  
 		Size: 1.9 MB (1944531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
