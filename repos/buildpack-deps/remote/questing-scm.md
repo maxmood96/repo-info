@@ -78,11 +78,11 @@ $ docker pull buildpack-deps@sha256:9a72140e371a570d1db79c48f8c3f437e9c9fdca533a
 
 -	Layers:
 	-	`sha256:94f105bdea4c7e43cbc37cbdd7c43073624a168588a9e0873559101b9265a18c`  
-		Last Modified: Fri, 02 Jan 2026 23:59:21 GMT  
+		Last Modified: Sat, 03 Jan 2026 02:20:06 GMT  
 		Size: 5.8 MB (5768119 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:37496cc952b24e06f1077208486ecf39fef5fb09b678a674b0f1a5b37dbc6438`  
-		Last Modified: Fri, 02 Jan 2026 23:59:20 GMT  
+		Last Modified: Sat, 03 Jan 2026 02:20:07 GMT  
 		Size: 7.3 KB (7281 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -151,7 +151,7 @@ $ docker pull buildpack-deps@sha256:bccebb8f93330b1e1cbda54f6a319c372cd05ebf1ffd
 		Size: 5.8 MB (5768618 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5618d6ff6a4526ebb9117db9d0715ab9b8f3d88bdd253fe8df31742ebcd14a13`  
-		Last Modified: Sat, 03 Jan 2026 00:15:26 GMT  
+		Last Modified: Sat, 03 Jan 2026 02:20:13 GMT  
 		Size: 7.3 KB (7345 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -220,7 +220,7 @@ $ docker pull buildpack-deps@sha256:e6b7e8e50514243ae6cd11edae6da0de31aa15e03662
 		Size: 5.8 MB (5774507 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:347d279e26b07a2371af0f05397ce3e90c6db0ecc31ae1d1329ea3b153803399`  
-		Last Modified: Sat, 03 Jan 2026 02:20:19 GMT  
+		Last Modified: Sat, 03 Jan 2026 00:12:06 GMT  
 		Size: 7.4 KB (7361 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -326,7 +326,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 
 -	Layers:
 	-	`sha256:8e1aa813c1657f48b7291cc09d13191de87f8108febddf3d8484783665856c5e`  
-		Last Modified: Wed, 17 Dec 2025 12:02:57 GMT  
+		Last Modified: Fri, 02 Jan 2026 22:38:50 GMT  
 		Size: 34.1 MB (34098575 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3649778224895380b989840d5456da4cef6185e70ed1b3ef42d9544a1b97a41`  
@@ -354,7 +354,7 @@ $ docker pull buildpack-deps@sha256:75609e148c8c06c5cfc90d07daa642d866fa6722fdce
 
 -	Layers:
 	-	`sha256:8d791b3a38b067ba5312da65550307f02d2478c27266e4c8c1998cd7f7ea42f6`  
-		Last Modified: Sat, 03 Jan 2026 02:20:33 GMT  
+		Last Modified: Sat, 03 Jan 2026 00:35:33 GMT  
 		Size: 5.8 MB (5769656 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:37594993f9bfa93b80250df50ab8662dc09cfe74cdcb7c3149653e6cb493de6b`  
