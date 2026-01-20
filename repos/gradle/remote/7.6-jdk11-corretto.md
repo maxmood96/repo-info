@@ -75,15 +75,15 @@ USER root
 		Size: 153.3 MB (153314830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ace9d5fcb3e30f1f8dbdc78612ce0877e9ab592edc06169a456528963c535be`  
-		Last Modified: Thu, 15 Jan 2026 23:09:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:09:17 GMT  
 		Size: 86.0 MB (86040710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:252afa28cfe166fd19a63112ef8414816f9430252f26087242dfa7c4485b3fc7`  
-		Last Modified: Thu, 15 Jan 2026 23:09:22 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:09:13 GMT  
 		Size: 1.6 KB (1644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b77140682db0b7214b8015dbc56feb2263c25e2a4f6e9310783bf5c7576d3038`  
@@ -191,7 +191,7 @@ USER root
 		Size: 1.6 KB (1648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:791244627990edd940b1be9cf3b70ec624f95913e056bb5aa6de2d9958c07ad1`  
@@ -219,10 +219,10 @@ $ docker pull gradle@sha256:ddd4cfe48140607847b11e9792ebb5f70c67b4bd9f429c1b1508
 
 -	Layers:
 	-	`sha256:015038db273a163b5deddb15a448e5491562dc8a8e9339a2dff4c8d92fc76285`  
-		Last Modified: Thu, 15 Jan 2026 23:16:49 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:12 GMT  
 		Size: 11.3 MB (11275794 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:124bb10478d623dbb13b31e419b841e3f12508601efc72ee4e81ee88ba583d5b`  
-		Last Modified: Thu, 15 Jan 2026 23:16:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:23:12 GMT  
 		Size: 21.0 KB (21044 bytes)  
 		MIME: application/vnd.in-toto+json
