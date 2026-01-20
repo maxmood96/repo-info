@@ -48,7 +48,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
-		Last Modified: Sun, 07 Dec 2025 13:54:16 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:02:45 GMT  
 		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3cc841b2a9dd2416234d69e31d067ff495300157c3136fe60ccb7deed3d0a172`  
@@ -174,7 +174,7 @@ CMD ["erl"]
 		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56b8b298b4b9b4e0753ccb55492efbd8ff585bfb217ec5446f6d10cfea536d52`  
-		Last Modified: Fri, 16 Jan 2026 18:32:06 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:32:16 GMT  
 		Size: 45.9 MB (45879310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -194,7 +194,7 @@ $ docker pull erlang@sha256:56174de34939d9086077d6bf3da0dcc32d745442a35952b0bdd9
 
 -	Layers:
 	-	`sha256:92ba7c0c6e21e7e04657ee801737d54b1a904065819e946c10d94443ae5979fe`  
-		Last Modified: Fri, 16 Jan 2026 20:47:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:32:04 GMT  
 		Size: 274.2 KB (274158 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b836bbc9fbe13fe609ba04476ca8486919b3e08d256dfc7f648d5655135de3c6`  
@@ -357,7 +357,7 @@ CMD ["erl"]
 		Size: 3.5 MB (3462801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ceabf2932f7dcfd1240af901c2a07b785baae0d25288291b5892c047a7f44a65`  
-		Last Modified: Fri, 16 Jan 2026 18:34:15 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:26 GMT  
 		Size: 44.4 MB (44397539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -377,7 +377,7 @@ $ docker pull erlang@sha256:c550daf107a89a657dcbf15dfb22390042d758c815eb9f3fe2d4
 
 -	Layers:
 	-	`sha256:d066e9bf4429fcc5a6146375b5274fb76ff995a0c649a02be6eda26bda9f6682`  
-		Last Modified: Fri, 16 Jan 2026 20:48:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:34:13 GMT  
 		Size: 267.1 KB (267099 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:10b0f0a91af2be8e89054bee8daf9b57052565ba885426ab9973e6445544c099`  

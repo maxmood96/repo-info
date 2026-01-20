@@ -48,7 +48,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d95341a2ff0e99b16d75dc96f2e240d470af6f563a2cb986051c0bb37a6846a1`  
@@ -137,7 +137,7 @@ $ docker pull erlang@sha256:9bacb72dc02c097a837f3e953e8e1f68f9ee52e37b50d0f9a9a4
 		Size: 274.5 KB (274521 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b97f0b9ee32396a2b9eeba682c5841f3fb6fdbe66e602ed0e9cf1f1ab0edd0d2`  
-		Last Modified: Fri, 16 Jan 2026 20:48:50 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:28:37 GMT  
 		Size: 15.2 KB (15157 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -255,7 +255,7 @@ $ docker pull erlang@sha256:e935c6056e27374f74d16af6b34662f37c7275659a509653ebe5
 
 -	Layers:
 	-	`sha256:1364ea21a5247f5db8c6225e51f3702aae48ae56c132429d0190f02b080f15c9`  
-		Last Modified: Fri, 16 Jan 2026 18:28:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:48:57 GMT  
 		Size: 273.7 KB (273724 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fcfaac6ee17682ccc0c5ac1284af49abbb4b09685de4d051d096f98239f3d166`  
@@ -377,7 +377,7 @@ $ docker pull erlang@sha256:3002aabbe642da07cc739c76d2e80a472207c3ba91b84f547f13
 
 -	Layers:
 	-	`sha256:52d79d6239fbbd9c26c87b760527b30e327f783086998bfb1d0a5957ff57a127`  
-		Last Modified: Fri, 16 Jan 2026 18:27:41 GMT  
+		Last Modified: Fri, 16 Jan 2026 20:49:05 GMT  
 		Size: 272.5 KB (272534 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f44350459ea0b30f72d9fd9830dcf5f1d009aa6f59f257afeb41841991e34a4a`  
