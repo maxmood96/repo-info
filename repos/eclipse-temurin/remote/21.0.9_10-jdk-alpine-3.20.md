@@ -69,7 +69,7 @@ CMD ["jshell"]
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ada9f9a574189d8e20095927344850458cfffc58029c0e6d5d292c6f568c419`  
-		Last Modified: Sat, 08 Nov 2025 17:59:13 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:56:45 GMT  
 		Size: 2.3 KB (2279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -179,6 +179,6 @@ $ docker pull eclipse-temurin@sha256:028ada6c123045ff34db59a54701be6253ebf42ad52
 		Size: 1.2 MB (1177167 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:01a56f7c6ae1ace12bf69c8348ead5dbf7c23ab11a715050ce0c3fe651855195`  
-		Last Modified: Mon, 12 Jan 2026 13:00:19 GMT  
+		Last Modified: Sat, 08 Nov 2025 17:58:42 GMT  
 		Size: 20.5 KB (20543 bytes)  
 		MIME: application/vnd.in-toto+json
