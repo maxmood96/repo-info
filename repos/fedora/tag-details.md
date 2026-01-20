@@ -71,7 +71,7 @@ $ docker pull fedora@sha256:70f38e8c703cf9efca7f22d9880851464fbfd16cf8954cae6c44
 
 -	Layers:
 	-	`sha256:9931b54150c3cc3379508526f64f46c4e498411d0466c330c85e76d2222f6137`  
-		Last Modified: Thu, 04 Dec 2025 20:06:35 GMT  
+		Last Modified: Thu, 04 Dec 2025 17:53:30 GMT  
 		Size: 3.0 MB (2979772 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3ae8409b099358f0361f773844bfbbf88dafa06975b783df122fe8f214cc5a23`  
@@ -234,7 +234,7 @@ $ docker pull fedora@sha256:378c75c92d554eb36a96e29d3101362dc5bf25d5e6e568a966c2
 		Size: 3.0 MB (2982273 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:742af11ee1c7dd5d1e8269d34b0f31d8aaf947b9f1b32dafc34c25834e7ad889`  
-		Last Modified: Thu, 04 Dec 2025 20:06:51 GMT  
+		Last Modified: Thu, 04 Dec 2025 17:53:21 GMT  
 		Size: 4.9 KB (4942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -463,7 +463,7 @@ $ docker pull fedora@sha256:11438090d72a2f639d0eb22d60cef42dde10579dc049ca69b428
 		Size: 3.1 MB (3099788 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1e42b426343f10062c1d746641de93e61051ecaefce1eed2d120ccfc5b8900ae`  
-		Last Modified: Thu, 04 Dec 2025 20:07:03 GMT  
+		Last Modified: Thu, 04 Dec 2025 17:53:32 GMT  
 		Size: 4.9 KB (4942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -509,7 +509,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:1216d224fefc3a2cfe385c01d94f17eba988ac4ae9a2bb0f877868bbf25f488b`  
-		Last Modified: Thu, 04 Dec 2025 17:54:34 GMT  
+		Last Modified: Thu, 04 Dec 2025 17:54:45 GMT  
 		Size: 67.3 MB (67339384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -562,7 +562,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:9a97681a321eff20d482f7f13cb9f355e41b33a70c67b16314080586f8b600f6`  
-		Last Modified: Thu, 04 Dec 2025 17:54:35 GMT  
+		Last Modified: Thu, 04 Dec 2025 17:54:22 GMT  
 		Size: 65.2 MB (65179338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -582,7 +582,7 @@ $ docker pull fedora@sha256:128fa4a881795221e2c6060820eb4c953d1e0655d3be397cc133
 
 -	Layers:
 	-	`sha256:a6136b9e500a36c4de0cbd4ee796861411b04bbebe6a5691f678312917f019c6`  
-		Last Modified: Thu, 04 Dec 2025 20:07:02 GMT  
+		Last Modified: Thu, 04 Dec 2025 17:54:21 GMT  
 		Size: 3.2 MB (3236026 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4ee43491597cda42f240784b82376e83b5ba2649c87cc62d9c5b9189ca84a34a`  
@@ -639,7 +639,7 @@ $ docker pull fedora@sha256:b2690e283c5b35950d4ade8bacad7fe21ec4d194951810a81098
 		Size: 3.2 MB (3234547 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d9dcc3adbe12aa595feb51d10854941c0487c3ee02922cbd1ffcfdd5f23a87dd`  
-		Last Modified: Thu, 04 Dec 2025 17:55:02 GMT  
+		Last Modified: Thu, 04 Dec 2025 20:07:08 GMT  
 		Size: 5.3 KB (5265 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -811,7 +811,7 @@ $ docker pull fedora@sha256:c9e2fdc2119c7d17bf50529afe2ad6193e88dd3e3252af964c2b
 
 -	Layers:
 	-	`sha256:f706707e26ab58916b2713f8ba6b05a430a910b68665beb96078a043cc589c83`  
-		Last Modified: Thu, 04 Dec 2025 17:54:05 GMT  
+		Last Modified: Thu, 04 Dec 2025 20:07:11 GMT  
 		Size: 3.2 MB (3238424 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e417e2639b0c494c12b10c180c934a066b6e6820167745914b36749434031457`  
@@ -967,7 +967,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:1216d224fefc3a2cfe385c01d94f17eba988ac4ae9a2bb0f877868bbf25f488b`  
-		Last Modified: Thu, 04 Dec 2025 17:54:34 GMT  
+		Last Modified: Thu, 04 Dec 2025 17:54:45 GMT  
 		Size: 67.3 MB (67339384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1020,7 +1020,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:9a97681a321eff20d482f7f13cb9f355e41b33a70c67b16314080586f8b600f6`  
-		Last Modified: Thu, 04 Dec 2025 17:54:35 GMT  
+		Last Modified: Thu, 04 Dec 2025 17:54:22 GMT  
 		Size: 65.2 MB (65179338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1040,7 +1040,7 @@ $ docker pull fedora@sha256:128fa4a881795221e2c6060820eb4c953d1e0655d3be397cc133
 
 -	Layers:
 	-	`sha256:a6136b9e500a36c4de0cbd4ee796861411b04bbebe6a5691f678312917f019c6`  
-		Last Modified: Thu, 04 Dec 2025 20:07:02 GMT  
+		Last Modified: Thu, 04 Dec 2025 17:54:21 GMT  
 		Size: 3.2 MB (3236026 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4ee43491597cda42f240784b82376e83b5ba2649c87cc62d9c5b9189ca84a34a`  
@@ -1097,7 +1097,7 @@ $ docker pull fedora@sha256:b2690e283c5b35950d4ade8bacad7fe21ec4d194951810a81098
 		Size: 3.2 MB (3234547 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d9dcc3adbe12aa595feb51d10854941c0487c3ee02922cbd1ffcfdd5f23a87dd`  
-		Last Modified: Thu, 04 Dec 2025 17:55:02 GMT  
+		Last Modified: Thu, 04 Dec 2025 20:07:08 GMT  
 		Size: 5.3 KB (5265 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1269,7 +1269,7 @@ $ docker pull fedora@sha256:c9e2fdc2119c7d17bf50529afe2ad6193e88dd3e3252af964c2b
 
 -	Layers:
 	-	`sha256:f706707e26ab58916b2713f8ba6b05a430a910b68665beb96078a043cc589c83`  
-		Last Modified: Thu, 04 Dec 2025 17:54:05 GMT  
+		Last Modified: Thu, 04 Dec 2025 20:07:11 GMT  
 		Size: 3.2 MB (3238424 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e417e2639b0c494c12b10c180c934a066b6e6820167745914b36749434031457`  
