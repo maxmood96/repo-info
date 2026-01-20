@@ -58,7 +58,7 @@ CMD ["/usr/bin/bash"]
 		Size: 176.2 MB (176187405 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:786d004c9cbdd7a9fb79180b6da2bccf91ade2e8cfb91669a192ac3d2825d13d`  
-		Last Modified: Mon, 12 Jan 2026 19:42:43 GMT  
+		Last Modified: Mon, 12 Jan 2026 19:42:19 GMT  
 		Size: 8.8 KB (8780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -78,7 +78,7 @@ $ docker pull archlinux@sha256:fae8a207785da31c23883139edd4bfa54edcaa3f6305d94b7
 
 -	Layers:
 	-	`sha256:27231ef966bb178feb0db4f8b55bf7a45a91eb790a729d88034788c579cfa664`  
-		Last Modified: Mon, 12 Jan 2026 19:42:20 GMT  
+		Last Modified: Mon, 12 Jan 2026 20:48:18 GMT  
 		Size: 8.4 MB (8398809 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:195204be3a072f4cbe86788d1502198815347f1ffe91d60e9a29134a8778ffa6`  
