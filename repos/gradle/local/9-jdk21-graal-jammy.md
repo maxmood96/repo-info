@@ -1,9 +1,9 @@
-# `gradle:9.2.1-jdk21-graal-jammy`
+# `gradle:9.3.0-jdk21-graal-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:31bd9013231ef045af712dcbfee2a6a4259b50082bfb0fddabf0f4a88fb92aae`
-- Created: `2026-01-15T22:21:49.251886681Z`
+- Image ID: `sha256:633b89288e3f4a7da54e1bf1e09a228c590ce6e97119b20d9d2bf8fc483bd9d9`
+- Created: `2026-01-16T21:46:44.366798214Z`
 - Virtual Size: ~ 1.14 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=21.0.2`
-  - `GRADLE_VERSION=9.2.1`
+  - `GRADLE_VERSION=9.3.0`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -2321,14 +2321,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 - `Expat`
 - `PSF-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-urllib3=1.26.5-1~exp1ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.5.dsc' python-urllib3_1.26.5-1~exp1ubuntu0.5.dsc 2378 SHA512:74b8ceeff518f9c58b2701c1474f1da73b11f4073d7299ee90fff350c57af2a4b42e4010288946e2a2788142ee8dbe39f3fda7626ca3778405667ed55de9934e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5.orig.tar.gz' python-urllib3_1.26.5.orig.tar.gz 292865 SHA512:4a1899b223b00894d49f6dff5fc95d410e5b0ab28c11f7e3cd82d03e50438b0c5b0adf693a33fd80f1586312dc0012836713998674da15531bf82d52645881f6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.5.debian.tar.xz' python-urllib3_1.26.5-1~exp1ubuntu0.5.debian.tar.xz 18428 SHA512:de1df25d53422f6a68cb81b0eff46e97b0b1c23d3acbd2470b05ecfcc1cec8b0b6424df8587e02192c36149c49103b49f91694656496ab95d892edf84c98a74c
-```
 
 ### `dpkg` source package: `python3-defaults=3.10.6-1~22.04.1`
 

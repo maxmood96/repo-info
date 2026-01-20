@@ -1,10 +1,10 @@
-# `gradle:9.2.1-jdk25`
+# `gradle:9.3.0-jdk25`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b18a55f64f94b6d2ea774eb69db20386ec68e4030f777436929b68b90bc2f7e9`
-- Created: `2026-01-16T00:01:15.537211833Z`
-- Virtual Size: ~ 742.46 Mb  
+- Image ID: `sha256:ee043e4711d22188d2155a0184d0b1c499956a3c02422156990e59ef75b52928`
+- Created: `2026-01-16T21:44:50.254605112Z`
+- Virtual Size: ~ 743.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-25.0.1+8`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.2.1`
+  - `GRADLE_VERSION=9.3.0`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`

@@ -1,10 +1,10 @@
-# `gradle:9.2.1-jdk21-jammy`
+# `gradle:9.3.0-jdk21-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:722604cf21fcee97c5995b31d39db80b00a2a42af2249cea54c74b9503aace15`
-- Created: `2026-01-16T00:02:08.749712665Z`
-- Virtual Size: ~ 749.14 Mb  
+- Image ID: `sha256:b0ec6f203b88c33d23f1ffb0e993b51f901ca1d2c92145f7ab80efccb61ff842`
+- Created: `2026-01-16T21:46:05.191567324Z`
+- Virtual Size: ~ 750.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.9+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.2.1`
+  - `GRADLE_VERSION=9.3.0`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -2291,14 +2291,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 - `Expat`
 - `PSF-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-urllib3=1.26.5-1~exp1ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.5.dsc' python-urllib3_1.26.5-1~exp1ubuntu0.5.dsc 2378 SHA512:74b8ceeff518f9c58b2701c1474f1da73b11f4073d7299ee90fff350c57af2a4b42e4010288946e2a2788142ee8dbe39f3fda7626ca3778405667ed55de9934e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5.orig.tar.gz' python-urllib3_1.26.5.orig.tar.gz 292865 SHA512:4a1899b223b00894d49f6dff5fc95d410e5b0ab28c11f7e3cd82d03e50438b0c5b0adf693a33fd80f1586312dc0012836713998674da15531bf82d52645881f6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.5.debian.tar.xz' python-urllib3_1.26.5-1~exp1ubuntu0.5.debian.tar.xz 18428 SHA512:de1df25d53422f6a68cb81b0eff46e97b0b1c23d3acbd2470b05ecfcc1cec8b0b6424df8587e02192c36149c49103b49f91694656496ab95d892edf84c98a74c
-```
 
 ### `dpkg` source package: `python3-defaults=3.10.6-1~22.04.1`
 

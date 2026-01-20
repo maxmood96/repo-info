@@ -1,10 +1,10 @@
-# `gradle:9.2.1-jdk17-ubi9`
+# `gradle:9.3.0-jdk17-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d223192cd1e42dc4648cba51ae9ab1e0fcd9c2a1ec6a520e77181f5d22bd654a`
-- Created: `2025-12-04T20:01:47.514083143Z`
-- Virtual Size: ~ 726.97 Mb  
+- Image ID: `sha256:d4b1e37a64663e1a8eac23d1bb681cf1019790da364ba14d449cdf99546cd2e8`
+- Created: `2026-01-16T21:44:14.548126786Z`
+- Virtual Size: ~ 729.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.17+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.2.1`
+  - `GRADLE_VERSION=9.3.0`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2025-12-03T20:36:05Z`
@@ -487,11 +487,16 @@ $ dnf --quiet download --source --url git-core-doc-2.47.3-1.el9_6.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-2.47.3-1.el9_6.src.rpm
 ```
 
-### `rpm` package: `git-lfs-3.6.1-3.el9.x86_64`
+### `rpm` package: `git-lfs-3.6.1-4.el9_7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url git-lfs-3.6.1-4.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-lfs-3.6.1-4.el9_7.src.rpm
+```
 
 ### `rpm` package: `glib2-2.68.4-18.el9_7.x86_64`
 
@@ -1474,17 +1479,27 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssh-8.7p1-46.el9.x86_64`
+### `rpm` package: `openssh-8.7p1-47.el9_7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `openssh-clients-8.7p1-46.el9.x86_64`
+```console
+$ dnf --quiet download --source --url openssh-8.7p1-47.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-8.7p1-47.el9_7.src.rpm
+```
+
+### `rpm` package: `openssh-clients-8.7p1-47.el9_7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssh-clients-8.7p1-47.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-8.7p1-47.el9_7.src.rpm
+```
 
 ### `rpm` package: `openssl-3.5.1-4.el9_7.x86_64`
 
@@ -2466,11 +2481,16 @@ $ dnf --quiet download --source --url systemd-rpm-macros-252-55.el9_7.7.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
 ```
 
-### `rpm` package: `tar-1.34-7.el9.x86_64`
+### `rpm` package: `tar-1.34-9.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tar-1.34-9.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-9.el9_7.src.rpm
+```
 
 ### `rpm` package: `tzdata-2025b-2.el9.noarch`
 

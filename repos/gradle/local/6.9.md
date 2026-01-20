@@ -839,10 +839,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.11
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.11.dsc' glibc_2.35-0ubuntu3.11.dsc 8888 SHA512:513445f41ac47bc28f9c30bbdace95938cbd4c8af26fc192808ac2940d56503e09761b1cec6ecec6d3eebd21cca8fb34f2f57fb046d715407e9d67cd48d08f0c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.11.debian.tar.xz' glibc_2.35-0ubuntu3.11.debian.tar.xz 940076 SHA512:3a946e60393f09557fdf8cd4f5ad0041301b07da2b11bc5307f2ec15a7926924de0a0648f78879b28a86fd1cc5d20df9963f7c164cef01ea1d5a3d03c3ab2392
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.11.dsc' glibc_2.35-0ubuntu3.11.dsc 8888 SHA512:513445f41ac47bc28f9c30bbdace95938cbd4c8af26fc192808ac2940d56503e09761b1cec6ecec6d3eebd21cca8fb34f2f57fb046d715407e9d67cd48d08f0c
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.11.debian.tar.xz' glibc_2.35-0ubuntu3.11.debian.tar.xz 940076 SHA512:3a946e60393f09557fdf8cd4f5ad0041301b07da2b11bc5307f2ec15a7926924de0a0648f78879b28a86fd1cc5d20df9963f7c164cef01ea1d5a3d03c3ab2392
 ```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
@@ -2265,14 +2265,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 - `Expat`
 - `PSF-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-urllib3=1.26.5-1~exp1ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.5.dsc' python-urllib3_1.26.5-1~exp1ubuntu0.5.dsc 2378 SHA512:74b8ceeff518f9c58b2701c1474f1da73b11f4073d7299ee90fff350c57af2a4b42e4010288946e2a2788142ee8dbe39f3fda7626ca3778405667ed55de9934e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5.orig.tar.gz' python-urllib3_1.26.5.orig.tar.gz 292865 SHA512:4a1899b223b00894d49f6dff5fc95d410e5b0ab28c11f7e3cd82d03e50438b0c5b0adf693a33fd80f1586312dc0012836713998674da15531bf82d52645881f6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.5.debian.tar.xz' python-urllib3_1.26.5-1~exp1ubuntu0.5.debian.tar.xz 18428 SHA512:de1df25d53422f6a68cb81b0eff46e97b0b1c23d3acbd2470b05ecfcc1cec8b0b6424df8587e02192c36149c49103b49f91694656496ab95d892edf84c98a74c
-```
 
 ### `dpkg` source package: `python3-defaults=3.10.6-1~22.04.1`
 

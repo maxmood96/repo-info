@@ -1,10 +1,10 @@
-# `gradle:9.2.1-jdk-lts-and-current-alpine`
+# `gradle:9.3.0-jdk-lts-and-current-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:28b2fbc4406c3df70e21fb22bfc0c6ce2b4e27732fd7ea76426bef993e01c29a`
-- Created: `2025-11-17T19:58:18.49943471Z`
-- Virtual Size: ~ 574.25 Mb  
+- Image ID: `sha256:b328e3f923200d86949654876d16f7659481687dbfc767f4a9c4076bfb7a715c`
+- Created: `2026-01-16T21:47:14.598323662Z`
+- Virtual Size: ~ 575.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `JAVA_CURRENT_HOME=/opt/java/openjdk25`
   - `JAVA_LTS_HOME=/opt/java/openjdk25`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.2.1`
+  - `GRADLE_VERSION=9.3.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -264,16 +264,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.5-r0 description:
+c-ares-1.34.6-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.5-r0 webpage:
+c-ares-1.34.6-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.5-r0 installed size:
+c-ares-1.34.6-r0 installed size:
 233 KiB
 
-c-ares-1.34.5-r0 license:
+c-ares-1.34.6-r0 license:
 MIT
 
 ```
@@ -519,16 +519,16 @@ GPL-2.0-only
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.6.0-r8 description:
+git-lfs-3.6.0-r10 description:
 Git extension for versioning large files
 
-git-lfs-3.6.0-r8 webpage:
+git-lfs-3.6.0-r10 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.6.0-r8 installed size:
+git-lfs-3.6.0-r10 installed size:
 13 MiB
 
-git-lfs-3.6.0-r8 license:
+git-lfs-3.6.0-r10 license:
 MIT
 
 ```

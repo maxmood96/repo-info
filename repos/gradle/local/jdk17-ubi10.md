@@ -1,10 +1,10 @@
-# `gradle:9.2.1-jdk17-ubi`
+# `gradle:9.3.0-jdk17-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:da4170ce7e5c0c6ba684f597c954ba70f4bcec7af4ef19d43da904495cb4e0b7`
-- Created: `2025-12-18T22:56:42.324324267Z`
-- Virtual Size: ~ 785.67 Mb  
+- Image ID: `sha256:2e363f322f952cd2fe7f522d0e478f7f59349dcabeb527fe66125bc45393d41f`
+- Created: `2026-01-16T21:46:51.684324317Z`
+- Virtual Size: ~ 788.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.17+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.2.1`
+  - `GRADLE_VERSION=9.3.0`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2025-12-18T04:58:54Z`
