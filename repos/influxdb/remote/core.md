@@ -187,7 +187,7 @@ CMD ["influxdb3" "serve"]
 		Size: 6.7 MB (6678025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:12879279037976dcf03bcb89fd8ca0258ae28a49fd3fca4e1d918ebf5f58334d`  
-		Last Modified: Thu, 15 Jan 2026 22:31:52 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:31:57 GMT  
 		Size: 3.6 KB (3648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a08f5a1efb52cbac7d7d853d373b78cb1ba1da5dfb15cf3b70ff94110acc1144`  
@@ -199,7 +199,7 @@ CMD ["influxdb3" "serve"]
 		Size: 521.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ff65ff8d1ea9fed765acd863744a83581bdc65244d1022c09ce2991a129a056`  
-		Last Modified: Thu, 15 Jan 2026 22:31:54 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:31:58 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
