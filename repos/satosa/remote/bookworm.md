@@ -87,7 +87,7 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Size: 21.5 MB (21457880 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a15113fc88aebea680e22bfe9a9d2d232fd533936d4fcfdc18b902d6019fe71`  
-		Last Modified: Tue, 13 Jan 2026 04:58:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:58:00 GMT  
 		Size: 25.9 MB (25859683 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8e6eae9df6a37b1bf33ba83ba14d0308c67c50bdf2726cd9a8402cfb0ea9a762`  
@@ -119,7 +119,7 @@ $ docker pull satosa@sha256:f970d3bda4fd2c46f518e8ba1f4f88af921f4f702ecf191ab9f4
 
 -	Layers:
 	-	`sha256:5945ca9e1bcb5f223167a269eb1ce32652e818662f9e537b9893d1c2a5cb5008`  
-		Last Modified: Tue, 13 Jan 2026 04:57:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:13:40 GMT  
 		Size: 2.7 MB (2704633 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:349d4528eceb31ff53c223ee942f494840212f9360813e9d714f201cd41a7670`  
@@ -183,7 +183,7 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 
 -	Layers:
 	-	`sha256:33bdc9671af8942d96d2f78f67aeec06580065dde1272decac3732689ec7c0e8`  
-		Last Modified: Tue, 13 Jan 2026 00:42:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:00 GMT  
 		Size: 28.1 MB (28107889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c7cb822aaafea0b579c35851ba989e3d25f490cb7e55ed84f3c1a50dd37e0729`  
@@ -191,11 +191,11 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Size: 3.3 MB (3349772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0673526b02f559dba9654782409ace5b5555e027d2b1857fa58117aa564011ad`  
-		Last Modified: Tue, 13 Jan 2026 03:22:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:22:34 GMT  
 		Size: 12.4 MB (12375172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:518abaec573aacfc293edf9e19b26274fc7ee5d3448e80f90eecdae829acd7e7`  
-		Last Modified: Tue, 13 Jan 2026 03:22:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:22:33 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57cd0fa6b773adfe1920121a6411cdb8094fb5de01d3d1644ceccb2f75a69dc2`  
