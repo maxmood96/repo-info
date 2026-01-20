@@ -93,7 +93,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.3 MB (1266585 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:795bcb095362e9db54a399ae9e0308f5c3a29f87ea0e975f5aaa5419e64ab749`  
-		Last Modified: Fri, 16 Jan 2026 01:38:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:38:12 GMT  
 		Size: 47.0 MB (47045293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:084e5f05c6dba54c986a9f6bcc2f48192b0a7777a4594497d22498f64c0c8fb2`  
@@ -201,7 +201,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.1 KB (1112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9fa801edd0a86cf4686177c470b6f0f3b5a96b409b0f8de8192ac0e1faf15f5`  
-		Last Modified: Thu, 15 Jan 2026 22:43:23 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:43:33 GMT  
 		Size: 16.2 MB (16209372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f207cc066c9e68932dcdee06caa34871582c92d9fc52aec0d9e81d3769f43115`  
@@ -213,7 +213,7 @@ CMD ["cassandra" "-f"]
 		Size: 44.7 MB (44712828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b6b5b995de985c3f5d48bacc68865d784aea752f969c7bd57c249ff0b963f13`  
-		Last Modified: Thu, 15 Jan 2026 22:43:24 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:43:31 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f7b416e2f930ce9c04cf28faff07eaa91afddd0027d24d79d75304d765c99746`  
@@ -317,7 +317,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.1 KB (1112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:23af9b61dde05783e2e3404e54079153d60ffcd57fbeb72822a6a126c5ab2fbb`  
-		Last Modified: Fri, 16 Jan 2026 01:41:45 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:41:35 GMT  
 		Size: 17.9 MB (17888611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fab4cc4f26bc2bdc9b3566993fdbb07fcfc92a6902b36880eb527b9d6da024c2`  
@@ -337,7 +337,7 @@ CMD ["cassandra" "-f"]
 		Size: 73.2 MB (73245794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c5e835c63f17f40edec7a5329f15f3b13aca3884b0799cb00beb7241ece1bf55`  
-		Last Modified: Fri, 16 Jan 2026 01:41:43 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:41:36 GMT  
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -441,7 +441,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.2 MB (1225602 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:048533294684940ffe42a764f52f094ec54b4bb4788b8976ba28bb2e44b02cde`  
-		Last Modified: Fri, 16 Jan 2026 02:42:18 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:42:06 GMT  
 		Size: 46.9 MB (46876220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ac1895cdfdcb77fc7f8c9e2bcdeb54113cff36f197086fabea5df1b0faa95cc`  
@@ -553,7 +553,7 @@ CMD ["cassandra" "-f"]
 		Size: 17.5 MB (17454351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc5f60a47b63ef5d517be3fff869847b91cbf3fc2ff1cf03e204b5892a684c63`  
-		Last Modified: Thu, 15 Jan 2026 23:09:00 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:08:52 GMT  
 		Size: 1.2 MB (1240451 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8239bf669b18cf3718b4cffd0bfdd5972c29092c8e22548b70cc81f26d5b845`  
@@ -569,7 +569,7 @@ CMD ["cassandra" "-f"]
 		Size: 73.2 MB (73245981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d87851a3419bd4918138f7a6aa621c1283e3076d386f40ea93f24fa58fb933d`  
-		Last Modified: Thu, 15 Jan 2026 23:08:54 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:09:00 GMT  
 		Size: 1.2 KB (1222 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -589,10 +589,10 @@ $ docker pull cassandra@sha256:f05c75a8bafa3b9caa5b0c9e517dc19479deb65b5cbe9f206
 
 -	Layers:
 	-	`sha256:b9835d584e72c4a697dba635421606ed504076217ad2e55858bb7cadeb660313`  
-		Last Modified: Fri, 16 Jan 2026 01:40:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:08:52 GMT  
 		Size: 3.3 MB (3301046 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f8a4ddc1c4cc8e646295fb135bb9979e24684a3d44e7a4976ca298e25eaf47a6`  
-		Last Modified: Fri, 16 Jan 2026 01:40:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:08:52 GMT  
 		Size: 36.9 KB (36928 bytes)  
 		MIME: application/vnd.in-toto+json
