@@ -62,11 +62,11 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2af3c74c0bf41e1524e3333d4cf909a9bbdcdb1749519d35c6118c8b5140472a`  
-		Last Modified: Fri, 16 Jan 2026 18:02:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:03:12 GMT  
 		Size: 463.4 KB (463449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4d3b360dbefe3ee353260a8826ec03fc315e4de424ce9de4e9af3f47889e31c`  
-		Last Modified: Fri, 16 Jan 2026 18:02:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:03:17 GMT  
 		Size: 48.1 MB (48065518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -94,7 +94,7 @@ $ docker pull krakend@sha256:e6877a2d52d5f8523d1a2d6220c5e95cb044a9d73c728cfd94c
 
 -	Layers:
 	-	`sha256:3d64cb0f33e73e2603d8ac7a634e1ca297fe6c01500e37c35f584abafe5a1761`  
-		Last Modified: Fri, 16 Jan 2026 18:02:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:12:19 GMT  
 		Size: 15.2 KB (15154 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -140,11 +140,11 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:192f8d09ce3498a901b80c920482e760ad2775cc8bfa17f9349ac0dba54a37dd`  
-		Last Modified: Fri, 16 Jan 2026 18:02:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:02:02 GMT  
 		Size: 467.7 KB (467685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92d5571a4374f6e663dcdf98500229f033f3978ca35b49ccf4de40d9ffb09a11`  
-		Last Modified: Fri, 16 Jan 2026 18:02:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:02:25 GMT  
 		Size: 45.3 MB (45286389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -231,11 +231,11 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2af3c74c0bf41e1524e3333d4cf909a9bbdcdb1749519d35c6118c8b5140472a`  
-		Last Modified: Fri, 16 Jan 2026 18:02:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:03:12 GMT  
 		Size: 463.4 KB (463449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4d3b360dbefe3ee353260a8826ec03fc315e4de424ce9de4e9af3f47889e31c`  
-		Last Modified: Fri, 16 Jan 2026 18:02:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:03:17 GMT  
 		Size: 48.1 MB (48065518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -263,7 +263,7 @@ $ docker pull krakend@sha256:e6877a2d52d5f8523d1a2d6220c5e95cb044a9d73c728cfd94c
 
 -	Layers:
 	-	`sha256:3d64cb0f33e73e2603d8ac7a634e1ca297fe6c01500e37c35f584abafe5a1761`  
-		Last Modified: Fri, 16 Jan 2026 18:02:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:12:19 GMT  
 		Size: 15.2 KB (15154 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -309,11 +309,11 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:192f8d09ce3498a901b80c920482e760ad2775cc8bfa17f9349ac0dba54a37dd`  
-		Last Modified: Fri, 16 Jan 2026 18:02:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:02:02 GMT  
 		Size: 467.7 KB (467685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92d5571a4374f6e663dcdf98500229f033f3978ca35b49ccf4de40d9ffb09a11`  
-		Last Modified: Fri, 16 Jan 2026 18:02:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:02:25 GMT  
 		Size: 45.3 MB (45286389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -400,11 +400,11 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2af3c74c0bf41e1524e3333d4cf909a9bbdcdb1749519d35c6118c8b5140472a`  
-		Last Modified: Fri, 16 Jan 2026 18:02:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:03:12 GMT  
 		Size: 463.4 KB (463449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4d3b360dbefe3ee353260a8826ec03fc315e4de424ce9de4e9af3f47889e31c`  
-		Last Modified: Fri, 16 Jan 2026 18:02:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:03:17 GMT  
 		Size: 48.1 MB (48065518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -432,7 +432,7 @@ $ docker pull krakend@sha256:e6877a2d52d5f8523d1a2d6220c5e95cb044a9d73c728cfd94c
 
 -	Layers:
 	-	`sha256:3d64cb0f33e73e2603d8ac7a634e1ca297fe6c01500e37c35f584abafe5a1761`  
-		Last Modified: Fri, 16 Jan 2026 18:02:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:12:19 GMT  
 		Size: 15.2 KB (15154 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -478,11 +478,11 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:192f8d09ce3498a901b80c920482e760ad2775cc8bfa17f9349ac0dba54a37dd`  
-		Last Modified: Fri, 16 Jan 2026 18:02:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:02:02 GMT  
 		Size: 467.7 KB (467685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92d5571a4374f6e663dcdf98500229f033f3978ca35b49ccf4de40d9ffb09a11`  
-		Last Modified: Fri, 16 Jan 2026 18:02:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:02:25 GMT  
 		Size: 45.3 MB (45286389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -569,11 +569,11 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2af3c74c0bf41e1524e3333d4cf909a9bbdcdb1749519d35c6118c8b5140472a`  
-		Last Modified: Fri, 16 Jan 2026 18:02:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:03:12 GMT  
 		Size: 463.4 KB (463449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4d3b360dbefe3ee353260a8826ec03fc315e4de424ce9de4e9af3f47889e31c`  
-		Last Modified: Fri, 16 Jan 2026 18:02:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:03:17 GMT  
 		Size: 48.1 MB (48065518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -601,7 +601,7 @@ $ docker pull krakend@sha256:e6877a2d52d5f8523d1a2d6220c5e95cb044a9d73c728cfd94c
 
 -	Layers:
 	-	`sha256:3d64cb0f33e73e2603d8ac7a634e1ca297fe6c01500e37c35f584abafe5a1761`  
-		Last Modified: Fri, 16 Jan 2026 18:02:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:12:19 GMT  
 		Size: 15.2 KB (15154 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -647,11 +647,11 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:192f8d09ce3498a901b80c920482e760ad2775cc8bfa17f9349ac0dba54a37dd`  
-		Last Modified: Fri, 16 Jan 2026 18:02:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:02:02 GMT  
 		Size: 467.7 KB (467685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92d5571a4374f6e663dcdf98500229f033f3978ca35b49ccf4de40d9ffb09a11`  
-		Last Modified: Fri, 16 Jan 2026 18:02:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 18:02:25 GMT  
 		Size: 45.3 MB (45286389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
