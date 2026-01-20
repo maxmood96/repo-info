@@ -129,7 +129,7 @@ $ docker pull eclipse-temurin@sha256:9ce554335f9d88ed4d18a880afbc3f45a37aa7cc5df
 
 -	Layers:
 	-	`sha256:de13e179ca99ccdebfd638c58bb7251341b6b265d8c2b2d37717fd9326441ebf`  
-		Last Modified: Fri, 19 Dec 2025 01:12:38 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:23:57 GMT  
 		Size: 5.7 MB (5700042 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8ef2e14e1fca6bc90412e336a482d4f13af524947ae39071747598a4157231d2`  
@@ -223,7 +223,7 @@ CMD ["jshell"]
 		Size: 55.1 MB (55118765 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:08d7b689d50ced536b3333ff4d41c203e51c6cd27267d340314ca6308d6579d1`  
-		Last Modified: Thu, 18 Dec 2025 22:30:49 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:31:13 GMT  
 		Size: 138.2 MB (138190276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:03fa98113a235f3fbf6a1ddcd84ba581808f8af6ce01d492500c559e50bfe612`  
@@ -341,7 +341,7 @@ CMD ["jshell"]
 		Size: 38.7 MB (38688551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4559e7867acf4f05baf702a54db8a3e2cc5bd1a16c2dcecfa940d5c1ad1b6dfd`  
-		Last Modified: Thu, 18 Dec 2025 22:40:19 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:40:05 GMT  
 		Size: 57.3 MB (57343233 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96572123d72f69bf089d9d8691d1038bfae5880b9be38e8b6a2b8b6b295b7ab0`  
@@ -499,6 +499,6 @@ $ docker pull eclipse-temurin@sha256:ce38a1c346b913cf3f0d27ebeb1eaa49f2e293fb516
 		Size: 5.7 MB (5685572 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fd1b28d74ce0d157f00b82059d2b00a5ca7f3d21c1e9ab52040fc225142d81f3`  
-		Last Modified: Thu, 18 Dec 2025 22:41:56 GMT  
+		Last Modified: Fri, 19 Dec 2025 01:12:58 GMT  
 		Size: 21.3 KB (21316 bytes)  
 		MIME: application/vnd.in-toto+json
