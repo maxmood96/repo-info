@@ -42,7 +42,7 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 
 -	Layers:
 	-	`sha256:5abf542d95a9328e19a36e1d742dd98dd9f67b38be29da7b849a1c9e274c1583`  
-		Last Modified: Tue, 13 Jan 2026 00:41:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:37 GMT  
 		Size: 48.8 MB (48836502 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ff3aba4384b3fb3c1d93c843db8faac3282704ebfecf99b103acf6f736adf72`  
@@ -66,11 +66,11 @@ $ docker pull debian@sha256:3bcb3055b077bf1ce443200c5c8f7260f46eb1679dc816fd32db
 
 -	Layers:
 	-	`sha256:086ced1680ef210abc92b80cd78e3171b080de1816707a4ffc9f58881555c7d0`  
-		Last Modified: Tue, 13 Jan 2026 04:27:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:54 GMT  
 		Size: 3.1 MB (3142043 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:561d57d40462706d4167f006c1401da5e8d145e2c83ed520d2e0ab86da1f6990`  
-		Last Modified: Tue, 13 Jan 2026 04:27:16 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:54 GMT  
 		Size: 5.8 KB (5794 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -95,7 +95,7 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 
 -	Layers:
 	-	`sha256:b52b83a8ae7e06dc9628b08b5ba1e89d1671fe275e5a1dad70de57feeb453db8`  
-		Last Modified: Tue, 13 Jan 2026 00:42:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:10 GMT  
 		Size: 45.1 MB (45128503 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:611bb61db6d32fa947523e363731f4e7d623b0f38fc5a9376b7c2bcdc08c9402`  
@@ -205,7 +205,7 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 		Size: 49.9 MB (49944551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b62f140ed240e1b26a66dba73ea74702517cdaaa50f99df712aa5a8b443053a`  
-		Last Modified: Tue, 13 Jan 2026 01:18:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:18:07 GMT  
 		Size: 221.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -307,7 +307,7 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 
 -	Layers:
 	-	`sha256:91e82f1d58406699b930594305527c53618f59da57e5326a595907e3493b82f0`  
-		Last Modified: Tue, 13 Jan 2026 01:02:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:02:49 GMT  
 		Size: 46.9 MB (46854468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:895e2f7e7862637d229f9598e10597a1261ad3a4fbd1b8e34660be054d5f706b`  
@@ -384,7 +384,7 @@ $ docker pull debian@sha256:6324a7b6677162b8d724b21c7fda4d3709e939cc9cf78b07292c
 
 -	Layers:
 	-	`sha256:350f5dd559361d224f775506abfc23b8e2a5ff738f6ff77fbbd414ac7f8759a6`  
-		Last Modified: Tue, 13 Jan 2026 04:27:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:15:23 GMT  
 		Size: 3.1 MB (3143492 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ded9967ef86943bea0581e5702693b8a89218dceb97eeefe3932a944cc616748`  
