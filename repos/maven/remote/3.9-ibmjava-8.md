@@ -221,11 +221,11 @@ CMD ["mvn"]
 		Size: 173.9 MB (173942773 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d6ef02a8c9a60c43e1020c0ae1b29864a6a4d797e723420439d8fba9330a08b8`  
-		Last Modified: Fri, 16 Jan 2026 06:14:12 GMT  
+		Last Modified: Fri, 16 Jan 2026 06:14:19 GMT  
 		Size: 3.9 MB (3925144 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c1a9134a85ccb757e8fd3298331160c242dd1d20e09f98acd141ed5109dcfbf4`  
-		Last Modified: Fri, 16 Jan 2026 06:14:12 GMT  
+		Last Modified: Fri, 16 Jan 2026 06:14:19 GMT  
 		Size: 9.3 MB (9312246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b280c1e811da76eef7fbca8bb65aca2a7a4e9bb4c278b2412be023258cb9244f`  
@@ -261,7 +261,7 @@ $ docker pull maven@sha256:337d35da796dd8fb00ad186d19861d7b1b2be5996940764dff63a
 		Size: 3.3 MB (3262984 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2c0ba8d1d41c8a27eedf8b5a237d12e7e2de332827c53051766129e4369d4151`  
-		Last Modified: Fri, 16 Jan 2026 09:28:46 GMT  
+		Last Modified: Fri, 16 Jan 2026 06:14:12 GMT  
 		Size: 18.9 KB (18852 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -343,7 +343,7 @@ CMD ["mvn"]
 		Size: 1.5 MB (1455722 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1d6b2a797a8796787e090267edd9af70f2dfdc1539691ff2d24abeac6f5925b`  
-		Last Modified: Thu, 15 Jan 2026 22:22:00 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
 		Size: 163.3 MB (163303026 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37bef2cdc6d68a3de123db20cdcfc5cd8f1a227510e9d162f8ee2650eb2d28d1`  
@@ -387,6 +387,6 @@ $ docker pull maven@sha256:7defc5f7e7143f2d4a2fc848340c87d827ed475507b10939cbe05
 		Size: 3.0 MB (2950173 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5b32a39b946472eb366f3544b74ab6fa5bb390f1530dd095da712f4a5bf5da11`  
-		Last Modified: Fri, 16 Jan 2026 03:32:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:47:05 GMT  
 		Size: 18.8 KB (18778 bytes)  
 		MIME: application/vnd.in-toto+json
