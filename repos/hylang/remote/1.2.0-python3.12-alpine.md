@@ -161,11 +161,11 @@ CMD ["hy"]
 
 -	Layers:
 	-	`sha256:cd0fa7d4c99310a30bac99a15cc62d2f7c0326577b630f591cebdbe4ad202657`  
-		Last Modified: Thu, 18 Dec 2025 00:12:27 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:19 GMT  
 		Size: 3.6 MB (3568432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43a191f5aa7397fccc96c886b55ccdf63d3e8d33f118bb10f1d75e6fb658f1cd`  
-		Last Modified: Thu, 18 Dec 2025 00:58:53 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:58:58 GMT  
 		Size: 461.4 KB (461434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d0c6b1f7e832f974291490d9ce2ac10c2534af6a8c273c41253db6e5bd5c38c0`  
@@ -177,7 +177,7 @@ CMD ["hy"]
 		Size: 254.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a57d8e02d67dfe9b0a427ed616da85a943bb98afdf928166d51d5a349ddb773`  
-		Last Modified: Wed, 14 Jan 2026 22:00:28 GMT  
+		Last Modified: Wed, 14 Jan 2026 22:00:35 GMT  
 		Size: 5.5 MB (5496566 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -260,7 +260,7 @@ CMD ["hy"]
 		Size: 12.9 MB (12904725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18e602e746333ec7c28e8165784a5de10a4aa9275fc3fe2f1e537b9488959b57`  
-		Last Modified: Thu, 18 Dec 2025 01:01:40 GMT  
+		Last Modified: Thu, 18 Dec 2025 01:01:32 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:768d2f161ec3eee1ea3079530a66274b0dfe7ea1bf3b3782f983c313505a5787`  
@@ -442,7 +442,7 @@ CMD ["hy"]
 		Size: 13.9 MB (13949724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9d2c6d6cc026cdbd0582973d873f086076513cdcedd68c0682866ee4bae9eff3`  
-		Last Modified: Thu, 18 Dec 2025 00:46:21 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:46:14 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d07e9566f38279ab3c34e420cf9f0da7752417a0a40d47f2ef6f65c674d9201`  
@@ -529,11 +529,11 @@ CMD ["hy"]
 		Size: 463.5 KB (463519 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6343d98e3d5bb662b36d4e00a109f96c544d0cce4eacdc0b7d0ef1b1a2848a4b`  
-		Last Modified: Thu, 18 Dec 2025 02:08:19 GMT  
+		Last Modified: Thu, 18 Dec 2025 02:08:01 GMT  
 		Size: 14.6 MB (14600475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4d921ba4acc936b3a602570956ec8e45eb06c988464add119efd7a6c78df9e85`  
-		Last Modified: Thu, 18 Dec 2025 02:08:00 GMT  
+		Last Modified: Thu, 18 Dec 2025 02:08:16 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f0c3fdd508933b463713ff4f9db723909ffe918c0a1c8cb968738c67f87fac6`  
@@ -557,11 +557,11 @@ $ docker pull hylang@sha256:64c2809976b836018c6e735de3f9a34943ecbdacb3f14230cd3b
 
 -	Layers:
 	-	`sha256:482e90423054004625c225689963815eb21fd3d9cf46807bdb874ef193419ae5`  
-		Last Modified: Thu, 15 Jan 2026 00:24:07 GMT  
+		Last Modified: Wed, 14 Jan 2026 22:02:42 GMT  
 		Size: 654.3 KB (654330 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:57aefa1f11e85b5fbf1d41b778f743a37552253b77fbe542780aae8b2edf41e8`  
-		Last Modified: Thu, 15 Jan 2026 00:24:14 GMT  
+		Last Modified: Wed, 14 Jan 2026 22:02:42 GMT  
 		Size: 9.5 KB (9475 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -620,7 +620,7 @@ CMD ["hy"]
 		Size: 461.2 KB (461184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50787652c3e6225ca341dacf82a2232a17063874cf7f444db81feea8273c0cc4`  
-		Last Modified: Fri, 19 Dec 2025 08:36:00 GMT  
+		Last Modified: Fri, 19 Dec 2025 08:35:53 GMT  
 		Size: 13.8 MB (13751231 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21142f2b9b5c85b68a2ad2044e29ebe0527339328201a59c387f007734c1fce6`  
@@ -703,7 +703,7 @@ CMD ["hy"]
 
 -	Layers:
 	-	`sha256:3d8fe54ac4e72ef775998241dc95a39f582dbddd5cf822b793130a331db6726f`  
-		Last Modified: Thu, 18 Dec 2025 00:12:18 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:04 GMT  
 		Size: 3.7 MB (3724311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07cc52c738b681338e5530a74421e32342fb114f5191ecfd2abdf2fa89149a91`  
