@@ -125,7 +125,7 @@ $ docker pull satosa@sha256:053b3548aded493f8b8d389ffdfa856d72a53956ec08f9d6cb9d
 		Size: 783.2 KB (783219 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:aa32fe9c93af693fbacaf0283ddfeb2882849bc3b6e1066ee29e4dd85060f1fa`  
-		Last Modified: Mon, 08 Dec 2025 21:13:05 GMT  
+		Last Modified: Mon, 08 Dec 2025 23:14:07 GMT  
 		Size: 23.0 KB (22960 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -195,15 +195,15 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Size: 459.0 KB (459020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0e19756ed87e004e14deeb5d042df980b7204f44649d4cce479201223a8589ab`  
-		Last Modified: Mon, 08 Dec 2025 20:20:23 GMT  
+		Last Modified: Mon, 08 Dec 2025 20:20:14 GMT  
 		Size: 12.5 MB (12453549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1be90ee3c5e8855f927e9dabc42fd16e3baec85cb245b81e43412665495c6b4a`  
-		Last Modified: Mon, 08 Dec 2025 20:20:22 GMT  
+		Last Modified: Mon, 08 Dec 2025 20:20:13 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34a131be40642a2cf885cdcb75474faaf4e6651804fc3f8cd6201c9960ca7d3f`  
-		Last Modified: Mon, 08 Dec 2025 21:11:53 GMT  
+		Last Modified: Mon, 08 Dec 2025 21:12:06 GMT  
 		Size: 6.7 MB (6694259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50a8917a69ecc315188c393d384a8726146e9a2226632ec028e7e54a5546c701`  
@@ -219,7 +219,7 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dfd5054ceea4ea2377c4734c970adf4f763deaeaaa9e72dca0fbc2beda863685`  
-		Last Modified: Mon, 08 Dec 2025 21:11:53 GMT  
+		Last Modified: Mon, 08 Dec 2025 21:12:05 GMT  
 		Size: 2.1 KB (2079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -243,6 +243,6 @@ $ docker pull satosa@sha256:fbfef43bbeaf94239cde0843248f928b598c0b683f6e8a820942
 		Size: 783.3 KB (783323 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:24efd495e1ac9fb1735f89706533f4d82e1c5bc1d3747b3cb4d0a599225a46fb`  
-		Last Modified: Mon, 08 Dec 2025 23:14:11 GMT  
+		Last Modified: Mon, 08 Dec 2025 21:11:53 GMT  
 		Size: 23.1 KB (23142 bytes)  
 		MIME: application/vnd.in-toto+json
