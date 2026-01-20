@@ -88,7 +88,7 @@ $ docker pull rust@sha256:aaf3ace94a43bfb61396565bd3d59ea36a58574c777a5e3f5b5a7d
 
 -	Layers:
 	-	`sha256:a967cdd20794631ec088fff1e02ce911275aa4dc2cca117c10d415bc3f76e3a6`  
-		Last Modified: Tue, 13 Jan 2026 07:55:35 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:12:53 GMT  
 		Size: 17.2 MB (17211237 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9a5501212d9cb2e25df4b9e368acfa096dfba0dd754746c135c0d9ff69bf0434`  
@@ -135,7 +135,7 @@ RUN set -eux;         arch="$(dpkg --print-architecture)";     case "$arch" in  
 		Size: 23.6 MB (23626665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8bf6f5dfbcc297b2e354e856be84c591ec9f96e89fd8401a4d485596c43b8ed8`  
-		Last Modified: Tue, 13 Jan 2026 04:26:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:26:15 GMT  
 		Size: 62.7 MB (62713384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bc2c3dfa2d6df259da14558beefb7cee69246c0da0fdc440a04d5af7c8fb7dd`  
@@ -218,7 +218,7 @@ RUN set -eux;         arch="$(dpkg --print-architecture)";     case "$arch" in  
 		Size: 226.1 MB (226143857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8ef60265c60e7ed11985b40c7cb515835f07a78f5b0d1ef671694f5017148bd5`  
-		Last Modified: Tue, 13 Jan 2026 06:15:35 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:29:27 GMT  
 		Size: 180.4 MB (180394961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -317,7 +317,7 @@ $ docker pull rust@sha256:1edb114cd296dbf9bbd4bbb3703cb143d4cd48b9d85e64911df06d
 		Size: 17.2 MB (17179501 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:43dd78a234ce92f3ccd8c0301e2964d1f0fc59c935b6c1dcf563a97ee4e035d6`  
-		Last Modified: Tue, 13 Jan 2026 06:46:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:51:55 GMT  
 		Size: 15.3 KB (15344 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -352,15 +352,15 @@ RUN set -eux;         arch="$(dpkg --print-architecture)";     case "$arch" in  
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f21554c0ffe7aa9121703873815aca94dbbdf6352a46266dc923fc9e36d0d58a`  
-		Last Modified: Tue, 13 Jan 2026 09:18:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 09:18:09 GMT  
 		Size: 27.0 MB (26998052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb58d20828d54df35a08218c574236606c9e3ab14d0f2ddf036e12abcf8c85d6`  
-		Last Modified: Tue, 13 Jan 2026 15:19:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 15:20:19 GMT  
 		Size: 73.0 MB (73037608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:08e13e772271d599b914654801e760b6e090a2d2a51765f2bd85981f821d1eb0`  
@@ -368,7 +368,7 @@ RUN set -eux;         arch="$(dpkg --print-architecture)";     case "$arch" in  
 		Size: 231.1 MB (231145655 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56b5f0691bea5b2f8d3346dba8c6599919dd57ce17370842c5e942d24f384e8f`  
-		Last Modified: Tue, 13 Jan 2026 19:58:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:58:07 GMT  
 		Size: 294.8 MB (294849818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -392,7 +392,7 @@ $ docker pull rust@sha256:9ca64ac7087d8f563c927ff3af926b5e5ea7969824b61571e81873
 		Size: 17.2 MB (17196828 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:71a284b56e87411cf364655db404f6d8b14b4a092dc189b44c451979c5d908f5`  
-		Last Modified: Tue, 13 Jan 2026 21:45:22 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:57:52 GMT  
 		Size: 15.5 KB (15464 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -427,11 +427,11 @@ RUN set -eux;         arch="$(dpkg --print-architecture)";     case "$arch" in  
 
 -	Layers:
 	-	`sha256:aaf3ef12aa0c431a6203a456b21b1e30e26cb56dfc257b8bca2efe1ba7c531de`  
-		Last Modified: Tue, 30 Dec 2025 00:51:33 GMT  
+		Last Modified: Tue, 30 Dec 2025 00:51:23 GMT  
 		Size: 47.8 MB (47771153 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc3f7933c6ef71f06a1f0f33145f157cbfe6df70a0a3efc496c514e6bf0f3c52`  
-		Last Modified: Wed, 31 Dec 2025 10:17:43 GMT  
+		Last Modified: Wed, 31 Dec 2025 10:17:37 GMT  
 		Size: 25.0 MB (24953863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e727fba04feac92f30181733d92a9aab095f91af402efca58918b26fc389037e`  
@@ -439,7 +439,7 @@ RUN set -eux;         arch="$(dpkg --print-architecture)";     case "$arch" in  
 		Size: 66.7 MB (66660576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d5842d1b9c503108d0c11e7fac9c78cd2e8430f5b938c14278c02d62d5dcbea`  
-		Last Modified: Fri, 02 Jan 2026 20:21:44 GMT  
+		Last Modified: Fri, 02 Jan 2026 20:20:20 GMT  
 		Size: 322.9 MB (322886588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d04306e72cc8338839724680aa23a2a7303c824cb4aec40f39eaa4d21f1e75e`  
@@ -542,6 +542,6 @@ $ docker pull rust@sha256:80ff96dcd40784dc0516ff9ecf20193f7c78af0908d00eea5bd7c1
 		Size: 17.0 MB (16988468 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6de8cd3810efcd729e342e415c97ce4207672861a5e256441f712201c9165670`  
-		Last Modified: Tue, 13 Jan 2026 08:28:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 12:46:09 GMT  
 		Size: 15.4 KB (15396 bytes)  
 		MIME: application/vnd.in-toto+json
