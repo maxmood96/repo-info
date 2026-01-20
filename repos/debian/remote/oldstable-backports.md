@@ -48,7 +48,7 @@ RUN echo 'deb http://deb.debian.org/debian oldstable-backports main' > /etc/apt/
 		Size: 48.5 MB (48481626 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ef7dc1de323ab0b4c0cafabc38580f90883bca1d794de036365439aa7df71098`  
-		Last Modified: Tue, 13 Jan 2026 01:16:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:32 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -178,7 +178,7 @@ $ docker pull debian@sha256:6f1426898c2d753219f4cbab9e961205a0a2343980d09e3f7fe2
 		Size: 3.7 MB (3736255 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:025ce74fd597d593bb2bea57ad230ad0982df3552615166d5bdad89e7f8e1a83`  
-		Last Modified: Tue, 13 Jan 2026 01:17:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:26:12 GMT  
 		Size: 5.9 KB (5865 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -207,7 +207,7 @@ RUN echo 'deb http://deb.debian.org/debian oldstable-backports main' > /etc/apt/
 		Size: 48.4 MB (48366078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5abd50781a480ac41f4b51b559fbbab7bb5a48e84c8dcbdce06c2bd32541c2e8`  
-		Last Modified: Tue, 13 Jan 2026 01:16:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:54 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -333,7 +333,7 @@ $ docker pull debian@sha256:a40413610302ef6b4486d475a3131de106512eaad928951f61c3
 
 -	Layers:
 	-	`sha256:3a7cb22bfc227dabd18dba5d8c51cac57fc83d87a27f5b01829c32049383cd16`  
-		Last Modified: Tue, 13 Jan 2026 04:26:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:18 GMT  
 		Size: 5.6 KB (5634 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -382,7 +382,7 @@ $ docker pull debian@sha256:a0fbfeaa64acbee9443d5e6d7354e5065865682642f12cc78872
 
 -	Layers:
 	-	`sha256:83681db39f839712dd10e8adc603d476fd21c199332aad0d30125c8f701bd0ef`  
-		Last Modified: Tue, 13 Jan 2026 04:26:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:15:34 GMT  
 		Size: 3.7 MB (3738434 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:430a4fecf792fe5dd7a0966b4fc144ec6712d50451ec4624c8affc88e5692abf`  

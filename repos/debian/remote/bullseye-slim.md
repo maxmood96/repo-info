@@ -163,7 +163,7 @@ RUN # debian.sh --arch 'i386' out/ 'bullseye' '@1768176000'
 
 -	Layers:
 	-	`sha256:fc7e12eb54e533b7d72a8c4004d7a3b7d895d07802f534ae9aa75ea08b0d8bfa`  
-		Last Modified: Tue, 13 Jan 2026 00:42:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:29 GMT  
 		Size: 31.2 MB (31191589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

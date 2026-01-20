@@ -178,7 +178,7 @@ $ docker pull debian@sha256:5ef928fca366eb54bbec65fa561f6860287442d04ec1dc69011f
 		Size: 3.7 MB (3736253 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:758bac7b2921efcda0ee3e8d97fcc4f41a11c504c8a895a74b010d165ff2d59d`  
-		Last Modified: Tue, 13 Jan 2026 04:24:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:37 GMT  
 		Size: 5.9 KB (5859 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -203,11 +203,11 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 
 -	Layers:
 	-	`sha256:1029f5ddc0d24726f1cefbb8def7a88f8ec819a1fdc4c05ce523011b4b73c72d`  
-		Last Modified: Tue, 13 Jan 2026 00:41:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:14 GMT  
 		Size: 48.4 MB (48366072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d7e9930928072acb2da033d0bfddcb0bf219948b1d68ab4c4ea0da858f79479f`  
-		Last Modified: Tue, 13 Jan 2026 01:16:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:30 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -231,7 +231,7 @@ $ docker pull debian@sha256:fdd29f826f8941a15a9b9345b9bf630cad996ff91c300b7eb272
 		Size: 3.7 MB (3734289 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fb24d970e07654bbf55502c8ce45690a4091655772e3a42283a053f599f67e8f`  
-		Last Modified: Tue, 13 Jan 2026 04:24:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:26 GMT  
 		Size: 5.9 KB (5872 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -284,7 +284,7 @@ $ docker pull debian@sha256:51cfd36f674684bf36e6c2cf7e4f840db7576660c087f0f60e69
 		Size: 3.7 MB (3731270 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1dfa42b602046401f1802da7b4175c7ed716ede7ebe027b589eda5a078138ce1`  
-		Last Modified: Tue, 13 Jan 2026 01:16:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:25:10 GMT  
 		Size: 5.8 KB (5787 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -415,7 +415,7 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 		Size: 47.1 MB (47138430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bcc9f7e2f0fe7e1838188582ce7fc909a18b5a4a9abd9d38197942736909e491`  
-		Last Modified: Tue, 13 Jan 2026 01:15:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:15:22 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

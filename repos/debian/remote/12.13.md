@@ -147,7 +147,7 @@ $ docker pull debian@sha256:cbfede033707102f35fdc05544698886911f5d24a9c1abed8da8
 
 -	Layers:
 	-	`sha256:4e044cd401345a3b783197675cac0070566e56b6b8920379d57783f6ed27eb5c`  
-		Last Modified: Tue, 13 Jan 2026 00:42:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:25:17 GMT  
 		Size: 3.7 MB (3735698 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -170,7 +170,7 @@ RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1768176000'
 
 -	Layers:
 	-	`sha256:1029f5ddc0d24726f1cefbb8def7a88f8ec819a1fdc4c05ce523011b4b73c72d`  
-		Last Modified: Tue, 13 Jan 2026 00:41:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:14 GMT  
 		Size: 48.4 MB (48366072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
