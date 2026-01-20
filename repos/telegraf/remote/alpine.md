@@ -167,7 +167,7 @@ $ docker pull telegraf@sha256:846491217fca7d5ec7c094397cfbcdbabc951b578490d0d551
 
 -	Layers:
 	-	`sha256:62bc1c5598388899ccad1663492c6cca79651b20470c658d4f5cc43650d0a291`  
-		Last Modified: Mon, 12 Jan 2026 22:10:43 GMT  
+		Last Modified: Mon, 12 Jan 2026 22:04:39 GMT  
 		Size: 1.1 MB (1149110 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a3919d3cbeb355252044e48eb284dbdd17931390f6452ecf5e3079f9e19006c1`  
