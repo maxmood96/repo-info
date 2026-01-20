@@ -61,7 +61,7 @@ $ docker pull debian@sha256:0e4090ee1c74c4d040e1c3ed831b84e70a92f0856a472388e50d
 
 -	Layers:
 	-	`sha256:b4946036b226bae8d2c04c7c59d4825c0bbdfa5939c67fa797142cd743ae5db9`  
-		Last Modified: Tue, 13 Jan 2026 00:41:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:25:24 GMT  
 		Size: 2.4 MB (2359830 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -84,7 +84,7 @@ RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1768176000'
 
 -	Layers:
 	-	`sha256:43595593b17008d0147d9ea53c9ed04f4ec8fde216c1d359e2de9daa9e0665f6`  
-		Last Modified: Tue, 13 Jan 2026 00:41:55 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:45 GMT  
 		Size: 25.8 MB (25757697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -104,7 +104,7 @@ $ docker pull debian@sha256:870e6993cca9533e6e0c31b0c7dfe8e268e5ace602b2ba805cdc
 
 -	Layers:
 	-	`sha256:2a0f0f600417cb3eb1ce6a632fc1d7f7f6b8c5697b5d04bec31006e8db4da05a`  
-		Last Modified: Tue, 13 Jan 2026 00:41:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:25:31 GMT  
 		Size: 2.4 MB (2360018 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -213,7 +213,7 @@ RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1768176000'
 
 -	Layers:
 	-	`sha256:2a0cffcee0205fc7f72267552713e68aa945359253bcab303f4dd69e7491c38d`  
-		Last Modified: Tue, 13 Jan 2026 00:42:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:37 GMT  
 		Size: 29.2 MB (29210067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -279,7 +279,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1768176000'
 
 -	Layers:
 	-	`sha256:cf92d3bf0add4f20720c3232cd336a7f7f50627989684b748675db0b2f2ce746`  
-		Last Modified: Tue, 13 Jan 2026 23:17:24 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:17:03 GMT  
 		Size: 32.1 MB (32068709 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -322,7 +322,7 @@ RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1768176000'
 
 -	Layers:
 	-	`sha256:3995e7e7254beb9777289fba2ebc6c1ce81d8c4bab8c8d068146f449323a74c8`  
-		Last Modified: Tue, 13 Jan 2026 00:40:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:08 GMT  
 		Size: 26.9 MB (26884415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -342,6 +342,6 @@ $ docker pull debian@sha256:6f706ebae4a636ada50409344b72a63898f84a49e1fc7ee489b2
 
 -	Layers:
 	-	`sha256:9934f0dcd350166b6059cc039fa8d90f6a47c823a4a0b2ccc301ec6339e8796e`  
-		Last Modified: Tue, 13 Jan 2026 00:40:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:25:46 GMT  
 		Size: 2.4 MB (2356668 bytes)  
 		MIME: application/vnd.in-toto+json
