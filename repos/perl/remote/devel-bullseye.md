@@ -92,11 +92,11 @@ $ docker pull perl@sha256:0b65838b14f5e01351df3dd43621dbfd8c55b9703eecf1f467abe9
 
 -	Layers:
 	-	`sha256:4be514da5b4b443ea5ddd9268642c2c49928cfb11baa3fa0aaf5d85616a54519`  
-		Last Modified: Tue, 13 Jan 2026 08:46:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:52:24 GMT  
 		Size: 15.5 MB (15463706 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6a19e422f32e56df2d234f8d949d7acad140cec047d6034a2c264f8f3f52ee48`  
-		Last Modified: Tue, 13 Jan 2026 08:46:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:52:23 GMT  
 		Size: 17.6 KB (17599 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -266,7 +266,7 @@ $ docker pull perl@sha256:da4fc2c6c60bddfd57007279a23afeae8d527b27637771e1d28622
 		Size: 15.5 MB (15465663 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:777ad24daf40be197e92f2d69728ffd690f9a0e9144c215b37081c5cf6789995`  
-		Last Modified: Tue, 13 Jan 2026 08:47:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:50:00 GMT  
 		Size: 17.7 KB (17690 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -315,15 +315,15 @@ CMD ["perl5.43.6" "-de0"]
 		Size: 56.0 MB (56048907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ad7ad875273afc9f1824115dad6d50ae84fba747da8a0b124f82d730bcb8bae`  
-		Last Modified: Tue, 13 Jan 2026 04:23:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:53:40 GMT  
 		Size: 200.1 MB (200113137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0dcc096fc287a10e92eddc7a2d2703d0c2568dc06506d9debb7c84ff1d4fd7f6`  
-		Last Modified: Tue, 13 Jan 2026 04:37:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:37:10 GMT  
 		Size: 134.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2bb03bee098c954245123a959074316f711b00449c0836b4bf4da3d82389b5c`  
-		Last Modified: Tue, 13 Jan 2026 04:37:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:37:11 GMT  
 		Size: 15.6 MB (15568094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fee9bf4007c3b76219c40c392a8b9800e59398d8053b870ecc94bc4ce994240c`  
