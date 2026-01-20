@@ -139,7 +139,7 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 		Size: 2.7 KB (2667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d271cfdcba3da61dc729e8dee4ef6946bbca0d7e103571f8dca3a70dd1b1b4c5`  
-		Last Modified: Tue, 13 Jan 2026 02:09:19 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:27 GMT  
 		Size: 9.4 MB (9362997 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7ac5c2d4bf93c087587e2bf7db7449c6cccb37a8cb28fcb0777afe8bb12f303`  
@@ -167,7 +167,7 @@ $ docker pull rethinkdb@sha256:4fdea369d9c9cf8f7aa68a43208c9f685076e57a2e652987f
 		Size: 2.8 MB (2785381 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ae5ac6f37241ba626cdb766b37a14fa53ad5c717fbe03601759d139dcb2c26a9`  
-		Last Modified: Tue, 13 Jan 2026 05:03:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:19 GMT  
 		Size: 13.6 KB (13585 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -206,7 +206,7 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 
 -	Layers:
 	-	`sha256:3995e7e7254beb9777289fba2ebc6c1ce81d8c4bab8c8d068146f449323a74c8`  
-		Last Modified: Tue, 13 Jan 2026 00:40:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:08 GMT  
 		Size: 26.9 MB (26884415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5213af6f86a4b50993097752db36d4a2507c96069dc31c9f4893b24c3872a8ca`  
@@ -218,7 +218,7 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 		Size: 2.7 KB (2668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e3651a1889bddf7cb328b27ead9eba7114c3becf65467bb198da1a366be2ab9`  
-		Last Modified: Tue, 13 Jan 2026 02:08:28 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:08:36 GMT  
 		Size: 9.3 MB (9303790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:20b23b3842acedf8ab84d4ec67a0880029efe23d444a92264dc36d47b694e4c5`  
@@ -242,7 +242,7 @@ $ docker pull rethinkdb@sha256:3ce1df9adf274a1e87ec0d8140d7fffedf8517ee595ae1a8f
 
 -	Layers:
 	-	`sha256:85e7323da23c4fe7342507de305516e84c5e078c94a78a08a85ac652e22788fa`  
-		Last Modified: Tue, 13 Jan 2026 05:03:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:08:28 GMT  
 		Size: 2.8 MB (2781248 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f9705464e74edb398ef4b487c4a03884aad3f3c76200d63534e8430e3d2d7f56`  
