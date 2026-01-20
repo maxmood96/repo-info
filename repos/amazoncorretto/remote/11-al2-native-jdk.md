@@ -45,7 +45,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 		Size: 62.9 MB (62940156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f3853172e5a212fbf30a9745c8461ee6ef266081e09b19f57a029734e025e762`  
-		Last Modified: Thu, 15 Jan 2026 22:09:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:50:11 GMT  
 		Size: 161.6 MB (161586634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
