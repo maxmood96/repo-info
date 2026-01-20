@@ -331,11 +331,11 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 
 -	Layers:
 	-	`sha256:33bdc9671af8942d96d2f78f67aeec06580065dde1272decac3732689ec7c0e8`  
-		Last Modified: Tue, 13 Jan 2026 00:42:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:09 GMT  
 		Size: 28.1 MB (28107889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:899d84c99c6e08fef0acbfe90da1407373d98ff31c4d0fbaeef0e33ba8c533e9`  
-		Last Modified: Tue, 13 Jan 2026 01:17:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:57 GMT  
 		Size: 93.7 MB (93716331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -512,11 +512,11 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 
 -	Layers:
 	-	`sha256:33bdc9671af8942d96d2f78f67aeec06580065dde1272decac3732689ec7c0e8`  
-		Last Modified: Tue, 13 Jan 2026 00:42:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:09 GMT  
 		Size: 28.1 MB (28107889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:899d84c99c6e08fef0acbfe90da1407373d98ff31c4d0fbaeef0e33ba8c533e9`  
-		Last Modified: Tue, 13 Jan 2026 01:17:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:57 GMT  
 		Size: 93.7 MB (93716331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
