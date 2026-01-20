@@ -56,7 +56,7 @@ $ docker pull oraclelinux@sha256:784288cad451678aea5cf471714dd7c693c8e5b028447c1
 		Size: 2.1 MB (2084800 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:257ed16da477c4236cd909b667eeef55f391251266e0f68b65e97805b2034716`  
-		Last Modified: Sat, 17 Jan 2026 01:36:30 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:45:25 GMT  
 		Size: 4.8 KB (4838 bytes)  
 		MIME: application/vnd.in-toto+json
 
