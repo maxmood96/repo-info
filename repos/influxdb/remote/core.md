@@ -179,7 +179,7 @@ CMD ["influxdb3" "serve"]
 
 -	Layers:
 	-	`sha256:36bf709aa36d66b784b0ba1aa3276848f28501175eeb4d7a310b1a98578f8558`  
-		Last Modified: Tue, 13 Jan 2026 07:03:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b85d29ef9d1a5b609c04250a98480155038f067e295c06a12bb03a0b163bcb6`  
@@ -219,7 +219,7 @@ $ docker pull influxdb@sha256:92a66a28c2cacf75f73de64fbc20b8f8a5872763b614692db0
 
 -	Layers:
 	-	`sha256:e39d496af0bf62266e9b9be68acf22ce4ea001066b55cf8ed24f202031f749c2`  
-		Last Modified: Fri, 16 Jan 2026 00:23:11 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:31:52 GMT  
 		Size: 2.3 MB (2311645 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:50900617900957d671f02b3d04cb4b737068c8a4c247e6954ab2762edcfedfae`  
