@@ -58,11 +58,11 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114`  
-		Last Modified: Tue, 13 Jan 2026 07:03:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f85e0d8f78c483ac82d94b03d9195270c5e969b1dbde481fb530d8fff9750a4e`  
-		Last Modified: Thu, 15 Jan 2026 22:26:07 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:25:59 GMT  
 		Size: 12.8 MB (12796264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b8aba6f461e0d3464d1af2348977eac3726c988810a693a934ce67264624454`  
@@ -232,7 +232,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 13.8 MB (13794521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:73c51b4da6465a8020dea6b54f40ace2431e98247e41a57295e27b329e18b354`  
-		Last Modified: Thu, 15 Jan 2026 22:30:15 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:30:03 GMT  
 		Size: 55.3 MB (55309309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:339d51aec2069302c68504c495b3d4acf25a881de70fd68e6add9bc267ad3b2f`  
@@ -260,7 +260,7 @@ $ docker pull ibm-semeru-runtimes@sha256:7cd5d665bb89f0d50e5c206c906cffd360dd714
 		Size: 3.2 MB (3204202 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ca71f10fecabab873d41969b3363898dd5a4a04c0d75c0d32591861b1615cfeb`  
-		Last Modified: Thu, 15 Jan 2026 23:50:01 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:30:01 GMT  
 		Size: 25.9 KB (25931 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -339,7 +339,7 @@ $ docker pull ibm-semeru-runtimes@sha256:36b937703fc34d1bf334d2f7b3aeca32ff5f828
 
 -	Layers:
 	-	`sha256:bde2d66998843fee4c75dd07432b94760023ca6ee690529b87f6d2ee0da86f48`  
-		Last Modified: Thu, 15 Jan 2026 23:50:06 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:05 GMT  
 		Size: 3.2 MB (3202216 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2425ce39ebf4450cc31bde7fe8bdf627e457bc50d3f13c3a24b224e1c1dc1f9b`  
