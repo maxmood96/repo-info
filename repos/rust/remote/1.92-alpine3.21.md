@@ -50,7 +50,7 @@ RUN set -eux;         arch="$(apk --print-arch)";     case "$arch" in         'x
 		Size: 65.0 MB (65032069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d5d274a8f2b957345ff3664ded34d12e82ab7214b278cded31ece76a19dc8594`  
-		Last Modified: Thu, 11 Dec 2025 19:31:28 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:29:34 GMT  
 		Size: 268.1 MB (268074818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -74,7 +74,7 @@ $ docker pull rust@sha256:ef1fdcd4373ad5f15d478f22f6c06e4b913b9156cd75d3d916e5d2
 		Size: 961.5 KB (961530 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dff63bf4019e14e327d31f274b772ab99ddcb655a02e94ae2fd44d32589cc941`  
-		Last Modified: Thu, 11 Dec 2025 19:29:28 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:45:03 GMT  
 		Size: 12.2 KB (12186 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -107,7 +107,7 @@ RUN set -eux;         arch="$(apk --print-arch)";     case "$arch" in         'x
 
 -	Layers:
 	-	`sha256:c2fe130f4aabc917e559e7eed7d37b0e21ba13b44520101696887ca892e8c63f`  
-		Last Modified: Wed, 08 Oct 2025 12:04:23 GMT  
+		Last Modified: Sun, 07 Dec 2025 17:54:48 GMT  
 		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5a0917af29aac9999b9e62f25af2b2dc53b8f6f39de94920af7ee0f05e825bb`  
@@ -172,11 +172,11 @@ RUN set -eux;         arch="$(apk --print-arch)";     case "$arch" in         'x
 
 -	Layers:
 	-	`sha256:e99908f6ead74bb809123fe0d40505509ed6113949496be71629433c6ea3fa1a`  
-		Last Modified: Sun, 07 Dec 2025 17:58:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:23 GMT  
 		Size: 3.6 MB (3574075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c6df0dac2d78eef0cb2b530922ba80b380d81f963d00e964a5dbc5e235111e8`  
-		Last Modified: Thu, 11 Dec 2025 19:37:36 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:37:50 GMT  
 		Size: 61.5 MB (61515203 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:09f36e75e2ac40917d9294fb927a66fb1691b96adfd0626f1ce75f6e06ee8ba0`  
