@@ -104,7 +104,7 @@ $ docker pull python@sha256:433d82d01873c6e5c4a7079d32247296eeaf7f06af99f24a0e0e
 
 -	Layers:
 	-	`sha256:525ab05a5257444843e3d72756d7904055cfb8a268b76d0365cc81082b2ded84`  
-		Last Modified: Tue, 13 Jan 2026 06:04:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:08:09 GMT  
 		Size: 16.4 MB (16364769 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f1688e186f730cb27e80e35bf145dc97c6ce4186d346f2257cd733f3e323fb8d`  
@@ -254,11 +254,11 @@ CMD ["python3"]
 		Size: 59.7 MB (59652006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9aa484529d34ddc165f6ac5eae25e0d66e0722c0b9905c2657f89dc02daf7f45`  
-		Last Modified: Tue, 13 Jan 2026 06:20:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:13:53 GMT  
 		Size: 175.4 MB (175385398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c02a7018221ca59c3a1dc548548b7f4142ae846459b278346072c43aeedcd092`  
-		Last Modified: Tue, 13 Jan 2026 07:50:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:50:41 GMT  
 		Size: 5.5 MB (5544085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43cb2cc918da6089a9c52cb23bce192872ace2b313ee58563c12d8499fe062fa`  
@@ -337,7 +337,7 @@ CMD ["python3"]
 		Size: 48.4 MB (48366072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d72c713ab317dd7f302a6ff5a345af5b61cddc864fca2d96a23e6ef3c90a6657`  
-		Last Modified: Tue, 13 Jan 2026 02:12:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:12:51 GMT  
 		Size: 23.6 MB (23604814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:687ad46596f06c934001fa6d7bea3d1508b0bb616cffb71004efd5bada56884f`  
@@ -349,7 +349,7 @@ CMD ["python3"]
 		Size: 203.0 MB (203013516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6400e113ea773ebaa2c97665ca82250ab66d7142e3f86d914f8a0968dff1c0bd`  
-		Last Modified: Tue, 13 Jan 2026 06:06:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:06:41 GMT  
 		Size: 6.2 MB (6239759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:223f9c8340e977abb00a3d246e9c09e3f4a91a7898185bb62909495e152c6266`  
@@ -357,7 +357,7 @@ CMD ["python3"]
 		Size: 28.6 MB (28582881 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd26fd5d4158ec34883620646c7b1e0c919b5f4a2687ceff6850195d7d91fe2b`  
-		Last Modified: Tue, 13 Jan 2026 06:06:47 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:06:41 GMT  
 		Size: 250.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -436,7 +436,7 @@ CMD ["python3"]
 		Size: 66.2 MB (66234261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4699afcbbc0f9f3dee99cc5eb7db287141d60c114f41f5777641c3e92f23dc9`  
-		Last Modified: Tue, 13 Jan 2026 03:53:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:58:39 GMT  
 		Size: 210.4 MB (210412920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:659013caf0b820c71247130b95f7aeedab947b256f5fffbd101de6f7b555edc5`  
@@ -519,7 +519,7 @@ CMD ["python3"]
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd2769c4ec4b4d67e8059086401477839f8b9d5a5026dd27df50a3c7ce33b9db`  
-		Last Modified: Tue, 13 Jan 2026 03:35:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:35:37 GMT  
 		Size: 25.7 MB (25670703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ba5fcb80ea7d84a82ea96c11045a4f40d0943808d5c5334ea90de2f7ed44f4c4`  
@@ -531,11 +531,11 @@ CMD ["python3"]
 		Size: 214.5 MB (214531303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1dd12420f5811241909bcf60fa5400fb627f88d171451553f91a7fb887be271d`  
-		Last Modified: Tue, 13 Jan 2026 11:30:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 11:29:49 GMT  
 		Size: 6.9 MB (6900944 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c7fbb21bf5921ce98de685e9f9bbae0070429b18c99810c521149d3e9f11090`  
-		Last Modified: Tue, 13 Jan 2026 11:32:03 GMT  
+		Last Modified: Tue, 13 Jan 2026 11:31:44 GMT  
 		Size: 29.4 MB (29431717 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9e478fdf252816318ee12bce19b3ad1e2e7ad2fa08c60bae51c8288b49da14be`  
@@ -650,7 +650,7 @@ $ docker pull python@sha256:cf8f45987baa56c0ac7dc3bb860247b29272b359c3a6d4b5f2ef
 
 -	Layers:
 	-	`sha256:efe5db6f470878178cae956fb141c4e2c18c4cb908e28a8a57b0e0f10d1eff33`  
-		Last Modified: Tue, 13 Jan 2026 10:13:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:57:46 GMT  
 		Size: 16.2 MB (16172344 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:26241b139fef6b1e4aa2407702d1ccb4a7f303fdbf19f8ae7e15fba4a03811c3`  
