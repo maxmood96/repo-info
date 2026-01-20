@@ -62,7 +62,7 @@ $ docker pull debian@sha256:28d1b7aef2904d4f1091f0b3187051e10c7148a0c89fb389e85b
 
 -	Layers:
 	-	`sha256:21de4b37897907a8475aad12e3336cdf9b7cbf0fc277d198a7e6f657b0cc01aa`  
-		Last Modified: Tue, 13 Jan 2026 00:42:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:29:26 GMT  
 		Size: 3.2 MB (3170339 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -105,7 +105,7 @@ $ docker pull debian@sha256:174556f4d4a303288815e10b46e147e979c5700c066f4c9b442a
 
 -	Layers:
 	-	`sha256:19ea63f987173fe4850d04d97095c00e1f7b5066b6b0a3b59dbbdc7fcb61189f`  
-		Last Modified: Tue, 13 Jan 2026 00:41:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:29:30 GMT  
 		Size: 3.2 MB (3173263 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -148,7 +148,7 @@ $ docker pull debian@sha256:3bf63e4203ac15a22aba207576895c05475b70874b761cd73c7c
 
 -	Layers:
 	-	`sha256:8b5fa5f8ff683f5a77d51dbbd4c426fa22b082ee76ce9fca671b19628ecda552`  
-		Last Modified: Tue, 13 Jan 2026 00:42:24 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:29:35 GMT  
 		Size: 3.2 MB (3171700 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -234,7 +234,7 @@ $ docker pull debian@sha256:bddf960971f4c498f7d1767a95fad8c6e41b4f68bc0fe0f41e2c
 
 -	Layers:
 	-	`sha256:44252b03758704b4ac90bebbdea5f581b5b555a52dada5b1205c5b9225d3ba43`  
-		Last Modified: Tue, 13 Jan 2026 00:42:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:29:43 GMT  
 		Size: 3.2 MB (3167549 bytes)  
 		MIME: application/vnd.in-toto+json
 
