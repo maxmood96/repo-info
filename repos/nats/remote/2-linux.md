@@ -189,7 +189,7 @@ $ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b0
 
 -	Layers:
 	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:56:38 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -363,6 +363,6 @@ $ docker pull nats@sha256:64a2cb9ff1e0f5b75e2e53f9f9ccbb96c66e914c524763620814e9
 
 -	Layers:
 	-	`sha256:62f918a7cdeb02a6e02929e5b0c8f5dbe6366961c236880f3d712024736b37d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
+		Last Modified: Wed, 17 Dec 2025 21:56:47 GMT  
 		Size: 10.4 KB (10422 bytes)  
 		MIME: application/vnd.in-toto+json

@@ -57,7 +57,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
@@ -69,7 +69,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a3a1fa25cb2dff28e7184ef3cafa056ed5da313facaac284acc63edb48c1e903`  
-		Last Modified: Wed, 17 Dec 2025 19:56:10 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
 		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -143,7 +143,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d6bac971b438fd7cceeb9b5c1eecda7a4f9d26ca326f9771ce86a90fa1cf21a6`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -353,7 +353,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:85a0f69f026b4a01420490809bed190217e05518f7b718c0bbc1ad4871e0dedf`  
-		Last Modified: Sun, 07 Dec 2025 14:06:45 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f0f141df1060290bea337dd410f443f266f697c0f6e1906a6a9e0d258becc78`  
@@ -435,11 +435,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.9 MB (6893186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:39 GMT  
+		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
