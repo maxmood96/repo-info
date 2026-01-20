@@ -55,7 +55,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 
 -	Layers:
 	-	`sha256:e8e286c160e014cebd84213d5cfa83952f5927713def450860146ee76600ee3f`  
-		Last Modified: Tue, 13 Jan 2026 18:56:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 18:49:06 GMT  
 		Size: 1.5 GB (1495760247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bf85b52279cbf5f434afc4ab079f83bda3ef50d3486fc74a30c20f552694d85f`  
@@ -63,7 +63,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:93445caeafc2bddea797a95857da92e939124df4d54c185f80f39445e80c0b94`  
-		Last Modified: Fri, 16 Jan 2026 23:34:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:28:36 GMT  
 		Size: 377.1 KB (377114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0e299452bcfd7aca11225e6700bf13ba1fb4bcb19e176b8a1a14f554377c7dd2`  
@@ -71,7 +71,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4053285375a511f9c5e62aad814a3035f4e232806d8993ce9390e35ea7c757b1`  
-		Last Modified: Fri, 16 Jan 2026 23:28:36 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:34:04 GMT  
 		Size: 1.3 KB (1328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:30dc97dec1a7c7fd01f0954f1b05bf600bd724c454ef5a252543bc69fd4fd00b`  
