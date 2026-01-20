@@ -133,11 +133,11 @@ CMD ["julia"]
 		Size: 28.1 MB (28107889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f6261cdbd0dfe0a5a37080c4e0d495c4f202ae5c0e908ac614c11ff7b79ea984`  
-		Last Modified: Tue, 13 Jan 2026 01:23:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:23:27 GMT  
 		Size: 5.6 MB (5567755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbf441ca52a584796d6766b0f2a2eb115e6b1ed8222d81c9d970e8dd477f7952`  
-		Last Modified: Tue, 13 Jan 2026 01:23:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:23:52 GMT  
 		Size: 311.3 MB (311272579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f36a0f2f0d447c47d15f33bc6f7265affebeb061e1366e62b07fea0f36952e8`  
@@ -165,7 +165,7 @@ $ docker pull julia@sha256:151c56dcbd6f925baef578450639e99c8b234cb36bd9321a0da0f
 		Size: 2.6 MB (2567971 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0c68c44c61791e1147b79d21f11761ae3d46187ddfdec15c7ad9986465f19de5`  
-		Last Modified: Tue, 13 Jan 2026 03:04:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:23:27 GMT  
 		Size: 16.7 KB (16665 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -207,15 +207,15 @@ CMD ["julia"]
 
 -	Layers:
 	-	`sha256:2a0cffcee0205fc7f72267552713e68aa945359253bcab303f4dd69e7491c38d`  
-		Last Modified: Tue, 13 Jan 2026 00:42:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:37 GMT  
 		Size: 29.2 MB (29210067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:226ce8b7e04a04fa6b26e2c2d91e45c34f22111596846479288481a9a0b17c1a`  
-		Last Modified: Tue, 13 Jan 2026 01:19:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:19:29 GMT  
 		Size: 5.9 MB (5878408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64e5bc3d50ce9b90c97e946d51c176dde97ac5b648d6eafdd359c1c0f161f4e6`  
-		Last Modified: Tue, 13 Jan 2026 01:19:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:19:34 GMT  
 		Size: 231.2 MB (231206861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:866423de7ae1c1430a3da51bcf61bf9525742d7839b4b4c884ef2735aeada9c4`  
