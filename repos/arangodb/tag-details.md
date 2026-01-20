@@ -99,7 +99,7 @@ $ docker pull arangodb@sha256:1352b5eb9d1acefee3ce7a8155e4b2e1b41ebbae9dc5b74fd4
 		Size: 515.0 KB (515010 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23ea8f32696e58ff0be91c772853e4be73e697e53545a759043dfb23034482ca`  
-		Last Modified: Thu, 18 Dec 2025 22:13:43 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:04:51 GMT  
 		Size: 14.8 KB (14832 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -276,7 +276,7 @@ $ docker pull arangodb@sha256:1352b5eb9d1acefee3ce7a8155e4b2e1b41ebbae9dc5b74fd4
 		Size: 515.0 KB (515010 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23ea8f32696e58ff0be91c772853e4be73e697e53545a759043dfb23034482ca`  
-		Last Modified: Thu, 18 Dec 2025 22:13:43 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:04:51 GMT  
 		Size: 14.8 KB (14832 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -630,7 +630,7 @@ $ docker pull arangodb@sha256:1352b5eb9d1acefee3ce7a8155e4b2e1b41ebbae9dc5b74fd4
 		Size: 515.0 KB (515010 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23ea8f32696e58ff0be91c772853e4be73e697e53545a759043dfb23034482ca`  
-		Last Modified: Thu, 18 Dec 2025 22:13:43 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:04:51 GMT  
 		Size: 14.8 KB (14832 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -807,7 +807,7 @@ $ docker pull arangodb@sha256:1352b5eb9d1acefee3ce7a8155e4b2e1b41ebbae9dc5b74fd4
 		Size: 515.0 KB (515010 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23ea8f32696e58ff0be91c772853e4be73e697e53545a759043dfb23034482ca`  
-		Last Modified: Thu, 18 Dec 2025 22:13:43 GMT  
+		Last Modified: Thu, 18 Dec 2025 22:04:51 GMT  
 		Size: 14.8 KB (14832 bytes)  
 		MIME: application/vnd.in-toto+json
 
