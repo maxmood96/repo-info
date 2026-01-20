@@ -78,7 +78,7 @@ $ docker pull buildpack-deps@sha256:4f2a383c8345e59b73e0f99c022a6555ec1d1acfdb8d
 
 -	Layers:
 	-	`sha256:51a048f3320e1c4cbf1447fe1dce91f3260dca5d936ababb73f342ca7d375733`  
-		Last Modified: Tue, 13 Jan 2026 04:49:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:20:43 GMT  
 		Size: 16.3 MB (16259684 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:68ead0f24c862a9fdb64d9dce37859c261d9c4e267d632a9210814ba45f57575`  
@@ -111,7 +111,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 
 -	Layers:
 	-	`sha256:a41adf61a59d65bb732f71b8fa9e215ce26d7adaa7742f1d0d7dd0c7dec51f11`  
-		Last Modified: Tue, 13 Jan 2026 00:42:35 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:25 GMT  
 		Size: 45.1 MB (45128498 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a0f426cd5bf7128cd82a97f8d8519866322dbcfdac81bb42dc04e8d0b748092`  
@@ -123,7 +123,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Size: 63.3 MB (63339146 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f0207f1da3b494d5542229fc4319459860fe13860c61db80918686b871ce7824`  
-		Last Modified: Tue, 13 Jan 2026 05:20:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:39:54 GMT  
 		Size: 158.4 MB (158403452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -249,11 +249,11 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Size: 28.5 MB (28467609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:86da8e97a2559ed40d50ccb3015d8b2b66b61ebe4e7b0eecacc6d9ed00ba65d4`  
-		Last Modified: Tue, 13 Jan 2026 03:03:57 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:04:08 GMT  
 		Size: 70.5 MB (70456052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:935b7f4df4b82d15af6f7fa621095a3391390bd671501a660e3a66b7eceb6b6d`  
-		Last Modified: Thu, 15 Jan 2026 21:23:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:55:28 GMT  
 		Size: 202.3 MB (202267579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -318,7 +318,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Size: 73.9 MB (73938436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f048d25bab4c2576e0dd8fa73c152e21d1c184cbf289d37ea8a5084882290d6f`  
-		Last Modified: Tue, 13 Jan 2026 08:53:02 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:24:18 GMT  
 		Size: 192.1 MB (192109420 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -338,11 +338,11 @@ $ docker pull buildpack-deps@sha256:5875d6e48bf6b2ed6be30552bde7f07eeba4ee1bcd2a
 
 -	Layers:
 	-	`sha256:05441ac66ab855c0a3939e511becff07474207cce8a0d83ee45dfe08dee5534a`  
-		Last Modified: Tue, 13 Jan 2026 08:52:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 11:20:59 GMT  
 		Size: 16.2 MB (16230969 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8c72ec06ad8b21feb6695317ce4be7a2a4682d8d20fcb13d95aa081d4949fe91`  
-		Last Modified: Tue, 13 Jan 2026 11:21:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:52:57 GMT  
 		Size: 10.2 KB (10177 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -403,7 +403,7 @@ $ docker pull buildpack-deps@sha256:fa6de2e08cc416277b91feb4d6717a746e49bb484b87
 
 -	Layers:
 	-	`sha256:90f0bfd4f57e3528ba54ff8c15a87d19be9e5b59c01f5ae01669e46f767cfd45`  
-		Last Modified: Mon, 19 Jan 2026 20:22:10 GMT  
+		Last Modified: Mon, 19 Jan 2026 17:18:02 GMT  
 		Size: 16.4 MB (16364526 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:703414846aee4c72c2dd3f629ccc983ade701c5468b894aec7078ae30b0f088c`  
@@ -440,7 +440,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Size: 48.4 MB (48389296 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:622d22fb8fceb11ceaeb6109becb26df50c34175655fc06dc916318e56c9cbb3`  
-		Last Modified: Tue, 13 Jan 2026 03:47:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:47:28 GMT  
 		Size: 27.0 MB (26991951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0d515a03edf6881bc28ae1107dbfef65f876121ca2ff049e05446fdd49a1465`  

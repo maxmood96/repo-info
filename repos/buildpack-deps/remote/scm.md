@@ -172,7 +172,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 23.6 MB (23626665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8bf6f5dfbcc297b2e354e856be84c591ec9f96e89fd8401a4d485596c43b8ed8`  
-		Last Modified: Tue, 13 Jan 2026 04:26:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:26:15 GMT  
 		Size: 62.7 MB (62713384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -341,15 +341,15 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f21554c0ffe7aa9121703873815aca94dbbdf6352a46266dc923fc9e36d0d58a`  
-		Last Modified: Tue, 13 Jan 2026 09:18:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 09:18:09 GMT  
 		Size: 27.0 MB (26998052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb58d20828d54df35a08218c574236606c9e3ab14d0f2ddf036e12abcf8c85d6`  
-		Last Modified: Tue, 13 Jan 2026 15:19:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 15:20:19 GMT  
 		Size: 73.0 MB (73037608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -369,7 +369,7 @@ $ docker pull buildpack-deps@sha256:79133d6ea3b15bd38b4ddf35b938acebe8833849debd
 
 -	Layers:
 	-	`sha256:680bd22d091af24ea8e1f849f1fba33a962ac2b424501d61c1bdc3fc28f47180`  
-		Last Modified: Tue, 13 Jan 2026 17:20:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 15:19:42 GMT  
 		Size: 7.8 MB (7775262 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a21380fddd3f94a0c3c6b267d13cf32f3b935972d834a641f6dd56c9e8b264fc`  
