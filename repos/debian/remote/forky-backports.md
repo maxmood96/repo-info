@@ -42,11 +42,11 @@ RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sour
 
 -	Layers:
 	-	`sha256:743b991b49b557d24658aa3fd7faa6c90234b4433dabd04078e1e4904b8e483b`  
-		Last Modified: Tue, 13 Jan 2026 00:42:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:40 GMT  
 		Size: 48.8 MB (48836497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5a11ca61c95f9024a123798995eed68bf0b668c2f34e072bf2943c446baf33a`  
-		Last Modified: Tue, 13 Jan 2026 01:17:03 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:58 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -95,7 +95,7 @@ RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sour
 
 -	Layers:
 	-	`sha256:a41adf61a59d65bb732f71b8fa9e215ce26d7adaa7742f1d0d7dd0c7dec51f11`  
-		Last Modified: Tue, 13 Jan 2026 00:42:35 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:25 GMT  
 		Size: 45.1 MB (45128498 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:32db9b4d193840e9fb0ba500a7b05ea5cade2401dc4309375399ce070647a1e5`  
@@ -123,7 +123,7 @@ $ docker pull debian@sha256:b76648d6f6cb8a4cd8d73118557e5d1fbd90e769241b3cbdb773
 		Size: 3.1 MB (3143407 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:646a0a5925ce00149c9887ea5c41659705ad83610b53d5a5cab2e0c77518cebf`  
-		Last Modified: Tue, 13 Jan 2026 01:17:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:25:39 GMT  
 		Size: 5.8 KB (5833 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -148,11 +148,11 @@ RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sour
 
 -	Layers:
 	-	`sha256:f0e1c9ce589fdc56e77162978a9037d5d8c63c2e5d6fb4fd4b325ce20394aa61`  
-		Last Modified: Tue, 13 Jan 2026 00:42:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:59 GMT  
 		Size: 48.8 MB (48820809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:270c7bba98969f4ee34dfdf708914620c171291f9d921677b5840e7720194cb4`  
-		Last Modified: Tue, 13 Jan 2026 01:16:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:28 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -201,11 +201,11 @@ RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sour
 
 -	Layers:
 	-	`sha256:0f5a7611eb50e1c295ff4c244485263852c6e6c8f18836cf55dc8b5a4162740c`  
-		Last Modified: Tue, 13 Jan 2026 00:42:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:34 GMT  
 		Size: 49.9 MB (49944546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1c741f2ce2a93d66cb9fa655274b898c2aae57b8774cdfcd943c0c23ba51add`  
-		Last Modified: Tue, 13 Jan 2026 01:16:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:36 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -229,7 +229,7 @@ $ docker pull debian@sha256:8d038db0ccb25e0416315099fd436cc2401cecc43a658cdf4b17
 		Size: 3.1 MB (3139243 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9287936192ceb3d37d902fb4931bf7c3a7f963e400420a1caf70c42d9fe16ebc`  
-		Last Modified: Tue, 13 Jan 2026 04:26:03 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:36 GMT  
 		Size: 5.8 KB (5760 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -254,7 +254,7 @@ RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sour
 
 -	Layers:
 	-	`sha256:7bf02b202abcdb3d6a49a7ce4605beb0852cfcc4e8237bffbef88f800d821593`  
-		Last Modified: Tue, 13 Jan 2026 00:56:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:55:52 GMT  
 		Size: 53.5 MB (53516184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:960b3b43d316d0b65e6480de6acc805341cd4f1134bc59e8b91036713d3ba474`  
@@ -307,7 +307,7 @@ RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sour
 
 -	Layers:
 	-	`sha256:0d152d1dcac9b1a7bbc763f3f2f3b2328b12317f387036c0ef1af1b70d3cf327`  
-		Last Modified: Tue, 13 Jan 2026 00:52:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:52:30 GMT  
 		Size: 46.9 MB (46854463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d0f696d74d96ec399c468956e1ee94f1fa01dfc59dd3a9f02df83a04f80a517`  
@@ -360,7 +360,7 @@ RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sour
 
 -	Layers:
 	-	`sha256:3dcc5871821327b982eb5b773ab24bb0eb85ffa1e8b8f4ae6dd4e94832450146`  
-		Last Modified: Tue, 13 Jan 2026 03:10:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:09:57 GMT  
 		Size: 48.4 MB (48389296 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:602d69a34b296116b83ea5e670ddedb0a6975725638950d802deff34c825d398`  
@@ -388,6 +388,6 @@ $ docker pull debian@sha256:b3a38d08ba6977ca5f4589f674bb329f59821152a35399f616f6
 		Size: 3.1 MB (3143488 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7787c0dd79eb80e1e7c7bfeebeafaa0b15c3b98134e6f310dfd2a0c658c43723`  
-		Last Modified: Tue, 13 Jan 2026 03:47:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:26:16 GMT  
 		Size: 5.8 KB (5778 bytes)  
 		MIME: application/vnd.in-toto+json
