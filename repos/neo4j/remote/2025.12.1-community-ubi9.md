@@ -96,11 +96,11 @@ CMD ["neo4j"]
 		Size: 40.0 MB (40040759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3e50b82cce8e2550785ea9f377eed479a7eb30075c36d11d622d28efdb1ed953`  
-		Last Modified: Fri, 16 Jan 2026 21:46:31 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:46:06 GMT  
 		Size: 134.2 MB (134229307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc99b9eb8958c5c7fc46593dfeadd172bbc07715930eaffc05a3516391b8a79c`  
-		Last Modified: Fri, 16 Jan 2026 21:46:01 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:46:14 GMT  
 		Size: 10.0 KB (10021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d5a8f02b52e1bca9048283cc4c666f8aca73c94995fab1837a1ae9167c44b1fa`  
@@ -108,7 +108,7 @@ CMD ["neo4j"]
 		Size: 208.0 MB (208010127 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -132,7 +132,7 @@ $ docker pull neo4j@sha256:d5bde5957e999898ea8e9f7acbeb69fc1a9b33b6c3057498baecd
 		Size: 5.4 MB (5383193 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:db82828b8c56fbbc11e0f91bf20ed3535924f8d2adfea382fffbad1696ace6e8`  
-		Last Modified: Fri, 16 Jan 2026 21:46:01 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:43:39 GMT  
 		Size: 21.8 KB (21813 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -229,11 +229,11 @@ CMD ["neo4j"]
 		Size: 10.0 KB (10021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:040238ad35b4d546d4820448ff41f488db4f52a499954e929514be97bd205ebb`  
-		Last Modified: Fri, 16 Jan 2026 21:48:44 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:12 GMT  
 		Size: 208.0 MB (208010151 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
