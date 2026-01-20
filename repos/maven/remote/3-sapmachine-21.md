@@ -127,7 +127,7 @@ $ docker pull maven@sha256:bce5043aa687171335eddd253257521bbe70f0624fa05f3dc72ca
 		Size: 4.3 MB (4319992 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:088503a59375e52b2c4b07904d2e91748c846966749fd02f0129a9b6d9cf4cb9`  
-		Last Modified: Fri, 16 Jan 2026 02:48:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:32:58 GMT  
 		Size: 16.5 KB (16502 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -201,7 +201,7 @@ CMD ["mvn"]
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eee0d90db03a16319b9d96ceba2e8b7b3222bfcd95633963e93eab81e03c0ad4`  
-		Last Modified: Thu, 15 Jan 2026 22:48:09 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:46:28 GMT  
 		Size: 213.6 MB (213619049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f6f4724363b069800ccbcae54aab5491b035bbd71e60e60be9c2caeb60067c1`  
@@ -315,7 +315,7 @@ CMD ["mvn"]
 
 -	Layers:
 	-	`sha256:0dea13cf1fe062734821309e5f773a18c9ad629d9e93e3eba340bea036bccd8a`  
-		Last Modified: Tue, 13 Jan 2026 06:35:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:12:18 GMT  
 		Size: 34.3 MB (34306159 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66d4e3601998b340d2a45e2e4977b10686787984af60fb809be344c3430215a8`  
@@ -339,7 +339,7 @@ CMD ["mvn"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf0a71003c07c252004505dd8a56a74b17a179ca390ae22f457b4d5d2d6d1de1`  
-		Last Modified: Fri, 16 Jan 2026 06:23:10 GMT  
+		Last Modified: Fri, 16 Jan 2026 06:23:23 GMT  
 		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -359,7 +359,7 @@ $ docker pull maven@sha256:cd96115bcc7fef82f911bb06eb90bade96c95a3b8b24bfc33bfc3
 
 -	Layers:
 	-	`sha256:2c1c8fd89c636ad955657f4bbb02aaf9c0a163432b1d66f20a191434842cf049`  
-		Last Modified: Fri, 16 Jan 2026 09:29:10 GMT  
+		Last Modified: Fri, 16 Jan 2026 06:23:12 GMT  
 		Size: 4.3 MB (4319004 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:81e348d4a3055e61c6865e773ac8d6876fa5f2f37a3f37e3fb9cae212efd64c6`  
