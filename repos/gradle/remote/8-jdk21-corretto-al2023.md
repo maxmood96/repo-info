@@ -81,7 +81,7 @@ USER root
 		Size: 86.0 MB (86034761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:548fadf9f9db77207067961af6d1899ed14b688d527c05e32996d014ceff389c`  
-		Last Modified: Fri, 16 Jan 2026 02:10:11 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:10:24 GMT  
 		Size: 1.6 KB (1649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -89,11 +89,11 @@ USER root
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea7b7180e4de64357223657e99c5d29d2e90ecd74059f6c20c7a58a0b0b23c9f`  
-		Last Modified: Fri, 16 Jan 2026 02:10:15 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:11:51 GMT  
 		Size: 137.4 MB (137395195 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:36e153a12b6d6cb9196114f28ea2f444d1af451b58d6e4e933471ab364d29435`  
-		Last Modified: Fri, 16 Jan 2026 02:10:11 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:10:25 GMT  
 		Size: 54.9 KB (54911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -179,7 +179,7 @@ USER root
 
 -	Layers:
 	-	`sha256:60a6ef84e125e61efd6725688f23e752e71a4dd414aa447d2bc3e2a4a5f823e0`  
-		Last Modified: Wed, 07 Jan 2026 22:47:25 GMT  
+		Last Modified: Wed, 07 Jan 2026 22:47:36 GMT  
 		Size: 52.9 MB (52914357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ebe1c9b0f4ea4f18ee5432a1b5928f5a2edd15a835cff3cbdf602ca3e6f769e`  
@@ -191,7 +191,7 @@ USER root
 		Size: 85.5 MB (85518107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d1eb94f0b45f5a4164cede73f4aecc850700095bb4e1d7735fb14f223b5cf61`  
-		Last Modified: Thu, 15 Jan 2026 23:15:45 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:15:33 GMT  
 		Size: 1.6 KB (1647 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -223,7 +223,7 @@ $ docker pull gradle@sha256:04ccd320fc01f7ac065a71bcd95305738d8645b91ebbb33a8127
 
 -	Layers:
 	-	`sha256:c98e98dd51a06d2374fb19e618b6f28639c61626aa70bdea06238636e7353000`  
-		Last Modified: Thu, 15 Jan 2026 23:15:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:27:52 GMT  
 		Size: 11.3 MB (11341250 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7f9542c793fc54e80f5155fda24d5c168968fa30749b9cdda69ccbeabcf93c6f`  
