@@ -45,7 +45,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 		Size: 54.0 MB (54021204 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24ca8f55031f3d2c1362f75371403e7e96622226d012035f41f288f0b8694e14`  
-		Last Modified: Thu, 15 Jan 2026 22:08:41 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:08:52 GMT  
 		Size: 76.7 MB (76681415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -65,11 +65,11 @@ $ docker pull amazoncorretto@sha256:11eb753b3e78675b55fd3436e9460aac6be07c57c955
 
 -	Layers:
 	-	`sha256:292e717363cce6a1bd553dba14a42b1e97420766c6c7e942b7e5898e483df84f`  
-		Last Modified: Thu, 15 Jan 2026 22:49:06 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:08:39 GMT  
 		Size: 5.2 MB (5222248 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1b752f3d7676c1d505a1d77b199f4e3f86b4323d52720430d023c03d0871fc93`  
-		Last Modified: Thu, 15 Jan 2026 22:08:38 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:49:07 GMT  
 		Size: 8.7 KB (8745 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -103,11 +103,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 
 -	Layers:
 	-	`sha256:60a6ef84e125e61efd6725688f23e752e71a4dd414aa447d2bc3e2a4a5f823e0`  
-		Last Modified: Wed, 07 Jan 2026 22:47:36 GMT  
+		Last Modified: Wed, 07 Jan 2026 22:47:25 GMT  
 		Size: 52.9 MB (52914357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:86294fd5c0a8be4567a123517a2ad0b0a12df3ef504917570727b69df00ed44b`  
-		Last Modified: Thu, 15 Jan 2026 22:10:09 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:09:56 GMT  
 		Size: 75.9 MB (75916639 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -127,7 +127,7 @@ $ docker pull amazoncorretto@sha256:890eb5feabea9b1442d513506e1d27d80909be3f6958
 
 -	Layers:
 	-	`sha256:c9070d7da808c648e134e7debcae4cce1b40977411e9825c45eab75c6993d8d0`  
-		Last Modified: Thu, 15 Jan 2026 22:49:14 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:09:54 GMT  
 		Size: 5.2 MB (5221869 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fc2c4d174e1008c2b2c95fb7fac854f11456034b5468bbd57a7093a892a697e8`  
