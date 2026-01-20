@@ -91,7 +91,7 @@ CMD ["redis-server"]
 		Size: 1.0 MB (1003016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b47d394d4af4d2ddc72a4d643c127b72106a8e8d238fda38e705da317ee443f`  
-		Last Modified: Fri, 02 Jan 2026 18:56:32 GMT  
+		Last Modified: Mon, 03 Nov 2025 17:40:44 GMT  
 		Size: 7.6 MB (7599833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:678f417a42e4bffeabfb095fbfd218d38c5c363388b633387f777565cd42b13c`  
@@ -103,7 +103,7 @@ CMD ["redis-server"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:016ff001990538ed41b98e8621a5d0a711e4b48b0ae3ab6cf4016ccd011575b5`  
-		Last Modified: Fri, 02 Jan 2026 18:56:33 GMT  
+		Last Modified: Mon, 03 Nov 2025 17:40:45 GMT  
 		Size: 579.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -183,7 +183,7 @@ CMD ["redis-server"]
 
 -	Layers:
 	-	`sha256:f8b30cbd0fab9e5a803578a09c973d18d7450816d914e63e04e5c2edd79f8bee`  
-		Last Modified: Mon, 08 Dec 2025 00:04:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:00:27 GMT  
 		Size: 3.4 MB (3365468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c5282528cdeda37991de035d4f6859869f5dc8416e29d1c16fc178456ecfa6e`  
@@ -287,7 +287,7 @@ CMD ["redis-server"]
 
 -	Layers:
 	-	`sha256:520d06ecc3ba4ec2920319fa6f2cc6bea9a9c1d5a43808c1d2388522c37d7b30`  
-		Last Modified: Sun, 07 Dec 2025 17:58:54 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:23 GMT  
 		Size: 3.1 MB (3098611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e650f5b1541fe9908bd6583a32ff1e38dd9b104ad9bddb755431d86b77dc0119`  
@@ -295,7 +295,7 @@ CMD ["redis-server"]
 		Size: 949.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7b4b666c3ce25d8e0c2d5e8da7f633941046b70b843c521e08bb1e7f175592cd`  
-		Last Modified: Sat, 03 Jan 2026 03:04:00 GMT  
+		Last Modified: Mon, 03 Nov 2025 17:41:10 GMT  
 		Size: 173.2 KB (173243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb9eb4e48a9eddccb0de14f9f83bc770df377ea894b05957d233b820602e388d`  
@@ -335,7 +335,7 @@ $ docker pull redis@sha256:4e0db90de1b68c0c3e9188912bdf6c5fe4935df5f7f6fd332f274
 
 -	Layers:
 	-	`sha256:7a9068528c99162642ba35bfd0979fb4064eb11a7bc7a0cf2ca546b3975a033f`  
-		Last Modified: Mon, 03 Nov 2025 17:41:10 GMT  
+		Last Modified: Sat, 03 Jan 2026 03:04:14 GMT  
 		Size: 463.9 KB (463863 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:be5a4fd45963381f7ae1e21cf522191bfe6db30fb16e086b0573fc0d77c03b2b`  
@@ -447,7 +447,7 @@ $ docker pull redis@sha256:ec99eb3235b6292b15d89b407dd942ee3814557af078abc1b148f
 		Size: 460.9 KB (460901 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c15a077a9d7a37c2a94d2e80b5c3410e3cd1429f5b48d8d303a5c9d4f8e3d0b5`  
-		Last Modified: Mon, 03 Nov 2025 17:41:09 GMT  
+		Last Modified: Fri, 02 Jan 2026 19:01:04 GMT  
 		Size: 34.0 KB (33964 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -507,7 +507,7 @@ CMD ["redis-server"]
 		Size: 3.5 MB (3464704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0daf36af88798bb0654b1df9b8fc3478687a5e8edfdb85fc4b37f8489093bf53`  
-		Last Modified: Sat, 03 Jan 2026 03:04:23 GMT  
+		Last Modified: Mon, 03 Nov 2025 17:40:30 GMT  
 		Size: 950.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb3f4c02f9fdf4a1f8fe1c69da62aa57dd9ab087b5526540d3d60140faad0ae6`  
@@ -531,7 +531,7 @@ CMD ["redis-server"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:49730535dda92dac0729d4bc728664fc43574960b6428742f02bbe66403bb470`  
-		Last Modified: Sat, 03 Jan 2026 03:04:50 GMT  
+		Last Modified: Mon, 03 Nov 2025 17:40:32 GMT  
 		Size: 577.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -611,7 +611,7 @@ CMD ["redis-server"]
 
 -	Layers:
 	-	`sha256:e99908f6ead74bb809123fe0d40505509ed6113949496be71629433c6ea3fa1a`  
-		Last Modified: Sun, 07 Dec 2025 17:58:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:23 GMT  
 		Size: 3.6 MB (3574075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ecc0d69726a0c7ec43e0fbeed5a8f5232b10a0f7dfdac49004bc5ab58460587`  
@@ -619,7 +619,7 @@ CMD ["redis-server"]
 		Size: 949.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ce4b47aa0d1c972041518691db5b6e3e7d5a58b117711509270c314426514ecc`  
-		Last Modified: Sat, 03 Jan 2026 03:04:59 GMT  
+		Last Modified: Mon, 03 Nov 2025 17:48:31 GMT  
 		Size: 173.2 KB (173231 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0619eee1676f4aed529fbcba837c1f1e9e5ceff1b9b4736c81bd2f1cf2ece8e7`  
@@ -627,11 +627,11 @@ CMD ["redis-server"]
 		Size: 923.0 KB (922973 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:88ab90ed14a7b49dea83ba89272971becd4aa846c1d8057cdf3a4019d8bd229e`  
-		Last Modified: Mon, 03 Nov 2025 17:55:48 GMT  
+		Last Modified: Sat, 03 Jan 2026 03:05:05 GMT  
 		Size: 8.2 MB (8194889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:67f8780e9bf4f0318e46285ddb940af723e2f947b5665956ccee82076778f865`  
-		Last Modified: Mon, 03 Nov 2025 17:55:48 GMT  
+		Last Modified: Sat, 03 Jan 2026 03:05:07 GMT  
 		Size: 99.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
