@@ -57,7 +57,7 @@ CMD ["jshell"]
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc0ab655b026e5703579820f0d4485d514c6ec9d4b5b462890ac71da2da0ae46`  
-		Last Modified: Sat, 08 Nov 2025 18:00:26 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:58:11 GMT  
 		Size: 14.2 MB (14245329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:669f1a65d0fae852f6718306326728109ed1ddecfbfd653037dda93a9669e4a7`  
@@ -89,7 +89,7 @@ $ docker pull eclipse-temurin@sha256:9b643ff411bb63a43a368325fdce410039f2b4b32df
 
 -	Layers:
 	-	`sha256:c672d62b54da9694a9e396cb710b3c9731f0325ed654b1671096eadd3f1d2dd1`  
-		Last Modified: Wed, 07 Jan 2026 22:40:35 GMT  
+		Last Modified: Sat, 08 Nov 2025 18:00:25 GMT  
 		Size: 948.4 KB (948366 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9a18439c7b954a05876d043e2d8eae615a2323288ff79ffd90c0cc0fc418d21f`  
@@ -139,7 +139,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:942b164f8b4d68be083596089650c1556ab1373815abc8abda59bc45d20ffd1c`  
@@ -155,7 +155,7 @@ CMD ["jshell"]
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29c959ab9ac7fdf8f6393c84753f989ef0811ac7c86a2d184030c23e2d067c93`  
-		Last Modified: Sat, 08 Nov 2025 17:59:56 GMT  
+		Last Modified: Wed, 07 Jan 2026 19:14:43 GMT  
 		Size: 2.3 KB (2277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -175,7 +175,7 @@ $ docker pull eclipse-temurin@sha256:821925aa5a465853879fd4d397ebda7db6d0372e4a8
 
 -	Layers:
 	-	`sha256:d449135f915bfadbeb598b7f9a698b2804052ebd9161037e36a499f13214fdf7`  
-		Last Modified: Thu, 08 Jan 2026 13:55:00 GMT  
+		Last Modified: Sat, 08 Nov 2025 17:59:57 GMT  
 		Size: 1.1 MB (1098401 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2cd667979f9d27d22cbb9508eeeca2f68a24b6d69b821c73c3844b977ff29a3d`  
