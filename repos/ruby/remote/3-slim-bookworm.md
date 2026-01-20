@@ -102,7 +102,7 @@ $ docker pull ruby@sha256:34bd14a5a886e982979cbfa7592ee8915bca8ce4474311e0c907ed
 
 -	Layers:
 	-	`sha256:6c65a9f6b5cb36fb6f8e6b088c34f14da4ec4a1a3b9d11781c684c40349653ab`  
-		Last Modified: Tue, 13 Jan 2026 06:59:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:17:42 GMT  
 		Size: 2.6 MB (2601343 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:829bd34ac1f1109461a043d1f69acb4ed8164d90fc41245fbad3efcbc908e369`  
@@ -165,11 +165,11 @@ CMD ["irb"]
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:320192d487eb383a36d667c7fe521d55ebf12c9548e0ea88eafd9ba8fc233faf`  
-		Last Modified: Tue, 13 Jan 2026 03:27:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:27:15 GMT  
 		Size: 37.2 MB (37186308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7156f882e124a1c5a89057d63282ddfe6e8ee9f2255939fdb169bb55efe65913`  
-		Last Modified: Tue, 13 Jan 2026 03:27:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:27:06 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -193,7 +193,7 @@ $ docker pull ruby@sha256:beb155f815ed4a47646beb0ac2b42e3f330eae157a814257f9e9f7
 		Size: 2.6 MB (2605140 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:29ce72f35f68b7dd2ecb2d6ca059f8297333afc2ac9bcb175f75557ecfdf26a4`  
-		Last Modified: Tue, 13 Jan 2026 06:59:28 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:27:06 GMT  
 		Size: 22.9 KB (22890 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -276,7 +276,7 @@ $ docker pull ruby@sha256:33bc61395c8176133a405ae7dd0d7721a7182d40789a19b9d10708
 
 -	Layers:
 	-	`sha256:2768286d9787f9eedf50c9b2f516d4800b8abc8a9f10dfce98155f4a041d301f`  
-		Last Modified: Tue, 13 Jan 2026 06:59:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:04:15 GMT  
 		Size: 2.6 MB (2603559 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c49b2f8869206e87632ddfd57187e33a139b9d25493cff30f682f12a864b7aff`  
@@ -327,7 +327,7 @@ CMD ["irb"]
 
 -	Layers:
 	-	`sha256:33bdc9671af8942d96d2f78f67aeec06580065dde1272decac3732689ec7c0e8`  
-		Last Modified: Tue, 13 Jan 2026 00:42:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:09 GMT  
 		Size: 28.1 MB (28107889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:de330953b17ddfbd9f05f339908e797a6dff3e74d5988178ae17bf9c8868a1cf`  
@@ -339,7 +339,7 @@ CMD ["irb"]
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d38700909aaf1399a16db1c10a0854829d343dd36e763733598432abc556f3b3`  
-		Last Modified: Tue, 13 Jan 2026 03:26:10 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:26:01 GMT  
 		Size: 41.3 MB (41329588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ba38e80877f8bcc6fa674367db68206c06b86531c56605d906cadd8772fcff9b`  
@@ -430,7 +430,7 @@ CMD ["irb"]
 		Size: 37.0 MB (36988692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:df0109541dffb95e5595992d4f7a8bb37c3c060354e59dab5a863d8ac3ccd46c`  
-		Last Modified: Tue, 13 Jan 2026 02:49:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:49:50 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -450,11 +450,11 @@ $ docker pull ruby@sha256:6041dcd010a1e209e5399ca2c3c7de45c8fba8c90813a4b5b7ad40
 
 -	Layers:
 	-	`sha256:5cb57a88ad756805ab4d0dd77822989d32500029b3ba6250a75650b7eb4cb327`  
-		Last Modified: Tue, 13 Jan 2026 03:59:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:49:43 GMT  
 		Size: 2.6 MB (2598529 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:101c0a7901ab4cbee4b4665defa05fe727fa64d4fa301639662c625ec30cf432`  
-		Last Modified: Tue, 13 Jan 2026 03:59:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:49:43 GMT  
 		Size: 22.7 KB (22745 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -517,7 +517,7 @@ CMD ["irb"]
 		Size: 38.4 MB (38375127 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c445488634b53070b76ee6fd2b62cb2ebd3ebfd1825f11d8e3a93c1a6b91dd5`  
-		Last Modified: Tue, 13 Jan 2026 20:49:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:49:31 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -687,7 +687,7 @@ CMD ["irb"]
 		Size: 38.0 MB (38028499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b75515de167d2ece5c3a95849b9382046ac82b49b88c9548ed9c48a9a1c49c8c`  
-		Last Modified: Tue, 13 Jan 2026 02:53:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:53:38 GMT  
 		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
