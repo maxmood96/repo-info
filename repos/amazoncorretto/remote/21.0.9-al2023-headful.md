@@ -107,11 +107,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto
 
 -	Layers:
 	-	`sha256:60a6ef84e125e61efd6725688f23e752e71a4dd414aa447d2bc3e2a4a5f823e0`  
-		Last Modified: Wed, 07 Jan 2026 22:47:25 GMT  
+		Last Modified: Wed, 07 Jan 2026 22:47:36 GMT  
 		Size: 52.9 MB (52914357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eccceb3c693116c4616e3e7fbc63585c535b85e722382409decb6c621c87e994`  
-		Last Modified: Thu, 15 Jan 2026 22:10:44 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:10:30 GMT  
 		Size: 89.1 MB (89097827 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
