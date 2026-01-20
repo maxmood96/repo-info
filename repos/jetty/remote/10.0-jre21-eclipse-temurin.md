@@ -103,11 +103,11 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:abb78f73258bc413aae5281eb128ee526870ba076049a4526b38041362fe99c6`  
-		Last Modified: Thu, 15 Jan 2026 22:20:12 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5164fd3905ed4b2aa0aeb5ebf9fe6fcb92e4e629ca1c5733c7f56c64d861c792`  
-		Last Modified: Fri, 16 Jan 2026 00:14:39 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:14:33 GMT  
 		Size: 11.2 MB (11245667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -227,7 +227,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 17.0 MB (16991549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:55f94c82a8ac7fd54191a08fd6e2afc54327165fa15aabd600b27aeb40409383`  
-		Last Modified: Thu, 15 Jan 2026 22:21:57 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:21:42 GMT  
 		Size: 52.1 MB (52148637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7eb0eb06dfa687a3659cfda05b90257c82298acab510f78e070b4bc6d3286e0a`  
@@ -247,7 +247,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8628c44c9eb1beb8074f82f14a85ed1d9e5661513f3f00d78ae2e3e9b783caf8`  
-		Last Modified: Fri, 16 Jan 2026 00:15:40 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:15:34 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -267,7 +267,7 @@ $ docker pull jetty@sha256:a778ba536e545b3b647a84c22e683b77afa77368497cb02867418
 
 -	Layers:
 	-	`sha256:51c589c83d94d1c7e2b39f08258d52725ca6aeec06852e34d63a2c9e05b118ca`  
-		Last Modified: Fri, 16 Jan 2026 03:17:25 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:15:43 GMT  
 		Size: 3.4 MB (3395310 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed916dfac3bbc702423445215c98cf7ce9f8d20effd008ecc65c1d5e42418deb`  
