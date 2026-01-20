@@ -73,7 +73,7 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.3 KB (1330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2aa8e4a5de20e8f54a754473a766b2323530f0a1e79c9b36f24cdefd43a17a9a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:01:03 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:13abaf697bd6b19a8b43b767f8b5cc60657c9540c47d1267d5dc526f1f39c1f3`  
