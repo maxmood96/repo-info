@@ -388,7 +388,7 @@ CMD ["catalina.sh" "run"]
 		Size: 45.2 MB (45220556 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:44dff9cf0162ae7bc52165e6958c57d5974c45f73dc204dfff761910068efcd1`  
-		Last Modified: Thu, 15 Jan 2026 22:19:21 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:19:27 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb954ce4c40c8ba7cb4d1b301537c9468fbdb35dc33337742e5163bb52cb3c0f`  
@@ -404,7 +404,7 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d759f279d8f521aa89ae2cb259dc0839813b896fa01274df8a988782788601f9`  
-		Last Modified: Fri, 16 Jan 2026 02:47:10 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:46:54 GMT  
 		Size: 13.8 MB (13785005 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f1aa26d1a89d2a02d7628a5f0311bc91dd96db9b2116e5b9acfdfdf7230ebf1`  
@@ -432,11 +432,11 @@ $ docker pull tomcat@sha256:1bacb9824412b7be88a3218064e0a7ff5b93b9b19c04eac7809c
 
 -	Layers:
 	-	`sha256:85da04a749311958ed906540d06cfd83b7add69f5ebea0122c76051722e2025c`  
-		Last Modified: Fri, 16 Jan 2026 03:44:06 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:46:54 GMT  
 		Size: 4.0 MB (3950676 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:35306e4b8ed2fdf41d39b5541e42c48344ac8675f1c47d5c15af64d7faab0c9a`  
-		Last Modified: Fri, 16 Jan 2026 02:46:54 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:44:06 GMT  
 		Size: 21.4 KB (21361 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -525,7 +525,7 @@ CMD ["catalina.sh" "run"]
 		Size: 17.6 MB (17619200 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4b293ecafd630063bcb5186267efa589f780b852b7f4ae4f6161fc21b368d64`  
-		Last Modified: Thu, 15 Jan 2026 22:13:56 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:44 GMT  
 		Size: 42.3 MB (42290561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b4efca18364173dfd2388d2503fc6932286ff0d015e2f28b9e09194042f4b1e`  
@@ -714,7 +714,7 @@ $ docker pull tomcat@sha256:685fb8a12ab0d75ac90501978b0b73f5f571f7a649ac17080b26
 
 -	Layers:
 	-	`sha256:421a656129c1da860c4b5dfe008612be5924b6ae5600114e22ec9cee4a82ae1f`  
-		Last Modified: Fri, 16 Jan 2026 00:46:00 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:58:21 GMT  
 		Size: 4.0 MB (3951986 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8b25ae68a2fc7a84e2503fa9373c2c0be361777b9683cdc25567c62a8424ccfa`  
