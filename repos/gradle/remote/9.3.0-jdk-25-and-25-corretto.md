@@ -73,7 +73,7 @@ USER root
 
 -	Layers:
 	-	`sha256:ed23be565800a5983cd3d8b6fd581e584110f08d9e32684d0eb5ab2820cadcbc`  
-		Last Modified: Wed, 07 Jan 2026 22:08:12 GMT  
+		Last Modified: Wed, 07 Jan 2026 22:09:37 GMT  
 		Size: 54.0 MB (54021204 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:19d88fe3c4b256f3e9e43b9cb5ec26a56a3f9a83b14d7daf8a3ab39250d61c86`  
@@ -89,7 +89,7 @@ USER root
 		Size: 1.8 KB (1758 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2554e7c4869dd4aaeab71d08daa7c1b3696c5ab85191dd2ab92ec85bfe88842e`  
@@ -117,7 +117,7 @@ $ docker pull gradle@sha256:365a589d88e93f1cd3b49516fcfa33832ac134ea889b42451d59
 
 -	Layers:
 	-	`sha256:f7e8c028471970b57d5190afc3bcb75d3466fff933fea158fd9f804e689a9586`  
-		Last Modified: Fri, 16 Jan 2026 21:48:04 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:22:24 GMT  
 		Size: 11.3 MB (11340651 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d4bf43f1e55350bf9f7b9b5c9f18f16a4938b180cf78b4c99202ff2c5608dd7b`  
@@ -203,7 +203,7 @@ USER root
 		Size: 1.8 KB (1754 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:65c03945396134a0670a2463063ecb244f5ab40f6fd3d194df8450ad17dac638`  
@@ -231,7 +231,7 @@ $ docker pull gradle@sha256:cece704c7238ebe689c47d9041fd80583843b29317c881097f4d
 
 -	Layers:
 	-	`sha256:ebd8c0796a23f9d73a41b005dd762fd936e0f61d7ca2afaeb4b3b18afb95c5ac`  
-		Last Modified: Sat, 17 Jan 2026 00:22:37 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:47:56 GMT  
 		Size: 11.3 MB (11339760 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4dbc3751c267527327f902d4047aa2f329ef78d4440fad3e8de3343b63e2856c`  
