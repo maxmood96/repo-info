@@ -52,11 +52,11 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 
 -	Layers:
 	-	`sha256:16c195d4c5e9683ea3bd3e3afc1a4bd00392028211586424d551a9b2f20d6978`  
-		Last Modified: Wed, 17 Dec 2025 12:02:21 GMT  
+		Last Modified: Fri, 02 Jan 2026 23:11:43 GMT  
 		Size: 34.4 MB (34398943 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a06f1a682b53d1c6d4a0735aac90e148cdf81808cfa81597a3e80c76257e4db4`  
-		Last Modified: Fri, 02 Jan 2026 23:12:06 GMT  
+		Last Modified: Fri, 02 Jan 2026 23:12:20 GMT  
 		Size: 19.0 MB (18959458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:339df752a36c7658bd49a504949a2d8bc6cfe2a54b5abeaf5bbd68260e35668d`  
@@ -159,11 +159,11 @@ $ docker pull buildpack-deps@sha256:5ea99ac6e055c298500b65b9571cb532f99342bd65d0
 
 -	Layers:
 	-	`sha256:c2df91e418beb8d475eae875529b56666e88521058cab1ba39ce3631be88f0cb`  
-		Last Modified: Sat, 03 Jan 2026 01:11:23 GMT  
+		Last Modified: Sat, 03 Jan 2026 02:19:53 GMT  
 		Size: 11.5 MB (11450289 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8fb09ff408bdaf0107ad6b8307cf49a54f07047dab5076c6320a46bece0263e6`  
-		Last Modified: Sat, 03 Jan 2026 01:11:22 GMT  
+		Last Modified: Sat, 03 Jan 2026 02:19:53 GMT  
 		Size: 10.2 KB (10223 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -206,11 +206,11 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Size: 34.0 MB (33977137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:664dc6d8a8c5821f7e8bf6beaef5f8ea3f3184cd4a76048ef4388651120842c5`  
-		Last Modified: Sat, 03 Jan 2026 00:03:14 GMT  
+		Last Modified: Sat, 03 Jan 2026 00:03:06 GMT  
 		Size: 18.5 MB (18517737 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6a7cc1ad17a7f679dca34acdbbc77064b8f3c32b20c018d9204f1d8d65bfb5bd`  
-		Last Modified: Sat, 03 Jan 2026 00:12:08 GMT  
+		Last Modified: Sat, 03 Jan 2026 00:12:16 GMT  
 		Size: 47.7 MB (47743522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53f45766a7902935754105138eafab06bc92ce8fd62c4fe6594fc1a56be71bb3`  
@@ -277,15 +277,15 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 
 -	Layers:
 	-	`sha256:ade432f435a67472df639da16a96659dc7c3849f8d5ede58cf5b95e186dec925`  
-		Last Modified: Wed, 17 Dec 2025 12:02:43 GMT  
+		Last Modified: Fri, 02 Jan 2026 22:48:17 GMT  
 		Size: 39.6 MB (39596922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ce71414238d174b7eed1a6544437609f0c9edabbc444ce584c9f4a94f03835e0`  
-		Last Modified: Sat, 03 Jan 2026 03:24:58 GMT  
+		Last Modified: Sat, 03 Jan 2026 03:24:51 GMT  
 		Size: 21.0 MB (20961715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7f7e65121f0a6548b5fdd015ace0c6df36c83802207d4364d814251d24dc0f62`  
-		Last Modified: Sat, 03 Jan 2026 04:11:25 GMT  
+		Last Modified: Sat, 03 Jan 2026 04:11:05 GMT  
 		Size: 53.6 MB (53555934 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:607cb3de241c7deded00a2491e88d2038996e9ed5d0b2d8dbb4964c48abce271`  
@@ -360,7 +360,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Size: 21.0 MB (20977437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cce434fbbf6c750ddd674ac232ed482a18a2ad1dd800ccb988ae5a3f66709ad1`  
-		Last Modified: Sat, 03 Jan 2026 00:35:45 GMT  
+		Last Modified: Sat, 03 Jan 2026 00:35:34 GMT  
 		Size: 49.0 MB (48968374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7221d4c41d96f62d4e5e98ca8ca958f5d63ec5699028b0af8110466cc5f2e2e6`  
@@ -384,7 +384,7 @@ $ docker pull buildpack-deps@sha256:3db9cd2f67fd52e04fabda3dfb47dc54542e839984aa
 
 -	Layers:
 	-	`sha256:a4ef8ef2d319c0f312126c5859b6263ccc5b946166d487e5ce9ef913675bdd0d`  
-		Last Modified: Sat, 03 Jan 2026 01:12:12 GMT  
+		Last Modified: Sat, 03 Jan 2026 02:20:25 GMT  
 		Size: 11.5 MB (11484284 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3bb93f9c35a4ad6c86a0ebb8d11d06e93ff5309769b1f71deb424a473511f425`  
