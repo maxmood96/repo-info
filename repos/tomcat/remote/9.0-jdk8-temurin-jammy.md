@@ -90,7 +90,7 @@ CMD ["catalina.sh" "run"]
 
 -	Layers:
 	-	`sha256:6f4ebca3e823b18dac366f72e537b1772bc3522a5c7ae299d6491fb17378410e`  
-		Last Modified: Fri, 09 Jan 2026 07:35:56 GMT  
+		Last Modified: Fri, 09 Jan 2026 09:47:12 GMT  
 		Size: 29.5 MB (29536667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7ca1cb9f04d85dfc9a25c144466ed114db4484680026c30e156604e88ba9843`  
@@ -412,7 +412,7 @@ $ docker pull tomcat@sha256:af2d1650ce201c69697ae2c735c86c112e50119ebde883edf6d0
 
 -	Layers:
 	-	`sha256:271cf199aa2eacf0d5c6d8988940b9b4afe762da73a521b2009748116cefd9a7`  
-		Last Modified: Fri, 16 Jan 2026 03:43:41 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:27:06 GMT  
 		Size: 4.1 MB (4143399 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f213da0febf174688b8f651c9994fb34a9e1dee88f9b2bb5acde72f4498b6c18`  
@@ -495,7 +495,7 @@ CMD ["catalina.sh" "run"]
 
 -	Layers:
 	-	`sha256:2490923be26ec970f7d805c10bc7c9c56e219061e875cf31dad74e227e0bbdc4`  
-		Last Modified: Thu, 15 Jan 2026 21:43:22 GMT  
+		Last Modified: Fri, 09 Jan 2026 07:36:16 GMT  
 		Size: 34.4 MB (34446962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:183556a79e45cd164d41dfffcf9da5a4846b19eb406b8300431457b5010ff3f3`  
@@ -511,7 +511,7 @@ CMD ["catalina.sh" "run"]
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc391c678a0b320f4a7c1f2f3b85ba6359691bb055d685a5d583d984b3fb0652`  
-		Last Modified: Thu, 15 Jan 2026 22:09:48 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:09:40 GMT  
 		Size: 2.3 KB (2307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:746187c8bfcabafa9f60209eaca0dbadb28eebbdc519c020c8b1772a89807922`  
@@ -547,7 +547,7 @@ $ docker pull tomcat@sha256:d6deda2a7fc8981c64bcb888ed27f79d9111ee19132a9efbfca7
 
 -	Layers:
 	-	`sha256:d20a3d7b88429c8a89c7df81330a2cc3630f5730cf78cbea5778018df3ec1715`  
-		Last Modified: Fri, 16 Jan 2026 02:29:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:43:46 GMT  
 		Size: 4.1 MB (4145794 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cf5597a85b296d7b8d47b7bbad2fe0ce20d1d853179a8d02b1ea8455fedebace`  
