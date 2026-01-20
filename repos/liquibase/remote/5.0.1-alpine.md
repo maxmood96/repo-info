@@ -79,7 +79,7 @@ CMD ["--help"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06f67999293a8197024f11dbd624adc758381fbf4e996e6169d105b063ebfd31`  
@@ -131,7 +131,7 @@ $ docker pull liquibase@sha256:38312fdc074a63166254eeb8e0de5ab3b287fcb4397179c58
 		Size: 358.7 KB (358668 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4edd144ccfa0ca865ff206366cdf6aa5c7e585c08a3f3cd5219c71dcd6022aea`  
-		Last Modified: Tue, 09 Dec 2025 02:07:19 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:10:48 GMT  
 		Size: 21.7 KB (21701 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -227,7 +227,7 @@ CMD ["--help"]
 		Size: 3.4 MB (3359674 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3b9636ebc80885e4a78c48b8831830c0532a46924df556443d935cd20f6612c9`  
-		Last Modified: Mon, 08 Dec 2025 00:28:20 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:55:42 GMT  
 		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c9bf3dcc1ddad0806e66e3d58fc44ee595f2c3104c548514c4245811172c682`  
