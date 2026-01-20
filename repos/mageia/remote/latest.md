@@ -34,7 +34,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:30f92ec7816ae2ef75a6739c088871696a1499d4d00e16c7f4f6f649deadc479`  
-		Last Modified: Tue, 13 Jan 2026 17:49:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:49:02 GMT  
 		Size: 102.4 MB (102350028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -54,7 +54,7 @@ $ docker pull mageia@sha256:1fc7671a4585eea25798d67283599c5efd7d05ce7f6914dd389b
 
 -	Layers:
 	-	`sha256:6cf3b5d6b5b54897db4898f7abcf4d603fc54de633c6b26258dbee0be1935fd7`  
-		Last Modified: Tue, 13 Jan 2026 21:52:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:49:00 GMT  
 		Size: 7.2 MB (7217153 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:374d02374a42aefc05fd672dd5c72c1b5df9006e2c2ad2e2f99a7364e4f7e0dd`  
@@ -83,7 +83,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:27496acb108fa03449ded1159f75822f35e640be1f051c76b2df56001c5ab9bb`  
-		Last Modified: Tue, 13 Jan 2026 17:50:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:50:33 GMT  
 		Size: 92.2 MB (92198877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -103,11 +103,11 @@ $ docker pull mageia@sha256:9103fdd4bab3062b758c069e35322060d553f9d74b204f948b5a
 
 -	Layers:
 	-	`sha256:adb845dedea0211dffc71f0cd859032883edf553db8ff3ea15265cd44f5fc251`  
-		Last Modified: Tue, 13 Jan 2026 17:50:04 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:52:26 GMT  
 		Size: 7.2 MB (7178247 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:90ff04e5a3cabff8b0af5c2b6cba900211515f91b0c8537ea17979559af9a10d`  
-		Last Modified: Tue, 13 Jan 2026 17:50:03 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:52:26 GMT  
 		Size: 5.3 KB (5271 bytes)  
 		MIME: application/vnd.in-toto+json
 
