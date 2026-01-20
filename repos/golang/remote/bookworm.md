@@ -64,7 +64,7 @@ WORKDIR /go
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64538a062a61add8dc8b290fa69475e8902eb839c497a5f5dcd5a950422e493c`  
-		Last Modified: Tue, 13 Jan 2026 02:09:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:06 GMT  
 		Size: 24.0 MB (24036867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd1872fa12cc6b1145803f1a0679ca26cc65fa1b4e0ee389bfb30267594736b6`  
@@ -250,7 +250,7 @@ WORKDIR /go
 		Size: 23.6 MB (23604814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:687ad46596f06c934001fa6d7bea3d1508b0bb616cffb71004efd5bada56884f`  
-		Last Modified: Tue, 13 Jan 2026 03:57:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:17 GMT  
 		Size: 64.5 MB (64479462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e46eecc1e1ec7926f74e60aa0f131c9f9d9fdd85d52ee9f3e675ffc29b82bf7`  
@@ -262,7 +262,7 @@ WORKDIR /go
 		Size: 57.7 MB (57659196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01fce20c1d7d0b2c264eef631cab252482cc9b8833c8bc38911a7a29e940df6c`  
-		Last Modified: Thu, 15 Jan 2026 19:30:39 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:30:19 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -290,7 +290,7 @@ $ docker pull golang@sha256:e4e43d3c41d7252019f4414aea7b66b68f4370cda595d1afe97e
 		Size: 10.5 MB (10524231 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:00044a1c72a5f38140202364b9dee2c824eb05957ded57b836a5f8af74452468`  
-		Last Modified: Thu, 15 Jan 2026 19:30:19 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:50:02 GMT  
 		Size: 27.9 KB (27931 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -377,7 +377,7 @@ $ docker pull golang@sha256:144c252a99bf6a1b9e340bca0a2f98e4c51322e823a5d925ea61
 
 -	Layers:
 	-	`sha256:5a352a577219391c8972d7caaa8a36125b6652f51cb51ac688b49fce1e69a7b9`  
-		Last Modified: Thu, 15 Jan 2026 19:32:38 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:50:15 GMT  
 		Size: 10.5 MB (10475955 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ceab98223378b13107de09f94459c61005efa6f62cddfcf0127d23a13549fd13`  
@@ -432,7 +432,7 @@ WORKDIR /go
 		Size: 23.6 MB (23614652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8ee435e05dd9c53ddee45b81a8f55939374cd926a0e00239c752bb0832a5f8b`  
-		Last Modified: Tue, 13 Jan 2026 21:23:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:22:59 GMT  
 		Size: 63.3 MB (63309962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:659edd573efc55ccb964dda4fd8e0b2b02903c5753a704b10ec114e6a6fa5f32`  
@@ -440,7 +440,7 @@ WORKDIR /go
 		Size: 70.0 MB (70021799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:23b0400b5590e7fd7237d1225e0e47e6e763d192b132b6948f11a5446ebd37c3`  
-		Last Modified: Thu, 15 Jan 2026 19:35:44 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:36:00 GMT  
 		Size: 56.6 MB (56574515 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:04fd1f6047cc8072073792326b5b21badb078d245c83d8173ebbebe9ad6556a0`  
@@ -523,7 +523,7 @@ WORKDIR /go
 		Size: 69.8 MB (69846016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39324acd74abd8d66fc3636cdba0cabcab5132ff369ae8d34e56255bdb262d35`  
-		Last Modified: Tue, 13 Jan 2026 08:55:17 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:55:35 GMT  
 		Size: 90.4 MB (90428658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0de1d7ce58974e33ace56f0654af975ba4e29402893e2d90d191005bed4dae95`  
@@ -531,7 +531,7 @@ WORKDIR /go
 		Size: 58.1 MB (58135270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0e0444d9bd6f0b9ba3eaaa9bd81499e0db3b792afbec3d2bf626160d3e07f6b0`  
-		Last Modified: Thu, 15 Jan 2026 19:33:04 GMT  
+		Last Modified: Thu, 15 Jan 2026 19:32:58 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
