@@ -151,7 +151,7 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b95d537084054513975c6621d3f551d5c25fd778faaa9e88e6b1c9e5c501600d`  
-		Last Modified: Tue, 13 Jan 2026 01:17:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:48 GMT  
 		Size: 1.0 KB (1031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
