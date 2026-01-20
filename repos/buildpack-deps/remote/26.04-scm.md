@@ -50,11 +50,11 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 
 -	Layers:
 	-	`sha256:f784408d7713470603ec446172f85c9a5ae57032b804583cc37631eb6bb6b75c`  
-		Last Modified: Tue, 06 Jan 2026 17:09:06 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:45:20 GMT  
 		Size: 33.7 MB (33726347 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee2773b72b93134db036b076a720d2feda581b3d29f4f2c5877e3beb834e1bf3`  
-		Last Modified: Thu, 15 Jan 2026 22:11:06 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:11:12 GMT  
 		Size: 19.5 MB (19487730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0a8f410391db24d0e4edaf07c5f57cc1f57b7b6bcfae71d358ae20e9ec7591f5`  
@@ -78,7 +78,7 @@ $ docker pull buildpack-deps@sha256:a4c4e1ca6d9dcc3996656bbd22f841d9555c741b647a
 
 -	Layers:
 	-	`sha256:629da4249d7503709eb55c3b740503c1db03682217dfae854f8239c93035af27`  
-		Last Modified: Fri, 16 Jan 2026 02:21:23 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:06:47 GMT  
 		Size: 5.8 MB (5756544 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6e4621689101fca081ca24a51a5cf78fcebb68c20698eaeabac664fa0a555c7c`  
@@ -196,7 +196,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 19.0 MB (19028324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3fec8b38941860e9735baae5103376c355a6ad7f7142b648b4bd886f11a27a94`  
-		Last Modified: Thu, 15 Jan 2026 23:13:07 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:12:57 GMT  
 		Size: 47.9 MB (47853057 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -354,7 +354,7 @@ $ docker pull buildpack-deps@sha256:1bd75ba92c874d9f1464e9b33c2443ac374f62d11abd
 
 -	Layers:
 	-	`sha256:d55d65b637db5782ddca9934df7ec0dc707717ad9516c1a3fbd31092e0e0f5c5`  
-		Last Modified: Thu, 15 Jan 2026 22:47:11 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:22:27 GMT  
 		Size: 5.8 MB (5758082 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:092b8f4d29a1daaffedfbcade318826121fec0b301604fd47a5ff977bd75981e`  
