@@ -72,11 +72,11 @@ USER root
 
 -	Layers:
 	-	`sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114`  
-		Last Modified: Tue, 13 Jan 2026 07:03:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9335014724a7bd5e3f440882659c67eae6e06cbe3f806df0d7164c99259c35e`  
-		Last Modified: Thu, 15 Jan 2026 22:24:10 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:23:57 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -84,15 +84,15 @@ USER root
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ef2552cda38908ff4c2c3f8c005335a6aa4bec8a57868bc867924cba287372a9`  
-		Last Modified: Thu, 15 Jan 2026 22:24:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:24:05 GMT  
 		Size: 148.6 MB (148648765 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f30e7e41bbf31c6e3d33baf0dab904644458b06243ad00e1169b5c0f1a1b405a`  
-		Last Modified: Thu, 15 Jan 2026 22:25:04 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:24:07 GMT  
 		Size: 291.1 MB (291064046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e2e86dd0c06f1908d5c41109a90098a841c28a6d69fa49e4493ed22459476d8`  
-		Last Modified: Fri, 16 Jan 2026 13:41:10 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:24:04 GMT  
 		Size: 137.4 MB (137395191 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c2c480d87595e557be9e9221985c19540583fbb59f2061b9e849c40580f8181`  
@@ -120,7 +120,7 @@ $ docker pull gradle@sha256:4976ed059ded831fea5059abd5e070688f5cd4a246d50a1b0b64
 		Size: 9.0 MB (9008870 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c6b614a80b0b76e82ef56da69346af95addb0cf577036388b2d5f8880c18c7d0`  
-		Last Modified: Fri, 16 Jan 2026 00:27:13 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:23:57 GMT  
 		Size: 28.3 KB (28311 bytes)  
 		MIME: application/vnd.in-toto+json
 
