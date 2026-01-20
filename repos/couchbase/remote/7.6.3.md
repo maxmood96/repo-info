@@ -97,7 +97,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 29.5 MB (29536667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d96d91af9ed1f7a1fb687897d66aabaee9e5fd67e8fbcf0c59f0dd8528eed1bb`  
-		Last Modified: Thu, 15 Jan 2026 22:15:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:15:03 GMT  
 		Size: 39.3 MB (39299708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:174504ca8e33cafad1451cd1c6b77638ce59ff8acfd2243345d20dd2fe6e790f`  
@@ -255,11 +255,11 @@ VOLUME [/opt/couchbase/var]
 		Size: 775.2 KB (775187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9a0a4b9ced3d1667afbc0563ad0c6bc7ab2532fa0d0b5f92fa9ead3fe7f40af`  
-		Last Modified: Thu, 15 Jan 2026 22:15:08 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:14:49 GMT  
 		Size: 2.0 KB (1993 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f042ea7fc14474df55e8c1bc339394b64e225ebc837755aabb7ee8c7b5bc208`  
-		Last Modified: Thu, 15 Jan 2026 22:15:16 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:15:01 GMT  
 		Size: 673.3 MB (673295266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:457434a6509bcee86a47cbf9b808d586a6a5cc73a9621b84b6e4fc8e33fc9bbb`  
@@ -271,7 +271,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 817.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:950f8421c6ea54b47bbade14515b1d36f730904184786de689c5825dd8d159e9`  
-		Last Modified: Thu, 15 Jan 2026 22:15:09 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:14:51 GMT  
 		Size: 848.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75e0dcc4d69d4824a0a99dd637b015eb168e240cf875a2b89ff495f5f1541ed4`  
@@ -287,7 +287,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18951304df2bba475259b71b7594a57cc2429a604f0f44aab3ae7e5666cfc28c`  
-		Last Modified: Thu, 15 Jan 2026 22:15:09 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:14:53 GMT  
 		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
