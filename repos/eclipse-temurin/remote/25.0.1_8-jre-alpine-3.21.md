@@ -50,11 +50,11 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:f637881d1138581d892d9eb942c56e0ccc7758fe3bdc0f1e6cd66059fdfd8185`  
-		Last Modified: Sun, 07 Dec 2025 13:55:07 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:22 GMT  
 		Size: 3.6 MB (3642569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:42e2f6d693f675f78b653199d058b2499922b0846956b1ee4f3c55d2ddc64d67`  
-		Last Modified: Sat, 08 Nov 2025 18:00:27 GMT  
+		Last Modified: Thu, 08 Jan 2026 09:39:21 GMT  
 		Size: 9.4 MB (9392834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d67000e614e1af7a18392c1fb476438d91d453292658375eb540f4fd80d67c9`  
@@ -62,7 +62,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 62.0 MB (61974461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:510a8a5c829de04ee42c8a219eb3a8838f607e0599752629fd7b4f415705feb5`  
-		Last Modified: Thu, 08 Jan 2026 09:39:20 GMT  
+		Last Modified: Sat, 08 Nov 2025 18:00:27 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bcfd45d640899819e284d8aa064b4c02bf00cf8c710541088ff462721b6e159`  
@@ -137,15 +137,15 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:908e354f7b55af6b5a61161b991c951ddcafaa3f3e94702323380a1f6e9e36ad`  
-		Last Modified: Fri, 09 Jan 2026 06:37:01 GMT  
+		Last Modified: Sat, 08 Nov 2025 17:59:58 GMT  
 		Size: 9.4 MB (9412535 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a196ce036f86e8594add74547bff9451f93622ec81a4b8a7394ea4953ae5d6a4`  
-		Last Modified: Sat, 08 Nov 2025 17:59:59 GMT  
+		Last Modified: Fri, 09 Jan 2026 06:37:26 GMT  
 		Size: 60.9 MB (60873916 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7e792339b98a53858900cb93c44103b699aa5765414209fbdd13f4b672ba0b1`  
-		Last Modified: Fri, 09 Jan 2026 06:36:57 GMT  
+		Last Modified: Sat, 08 Nov 2025 17:59:57 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93839be8a2de0e5c9b27c950322125d04c6259b7c0d7b8351cc736ee30ef9c21`  
