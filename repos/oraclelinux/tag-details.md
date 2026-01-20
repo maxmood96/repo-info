@@ -74,7 +74,7 @@ $ docker pull oraclelinux@sha256:9f4d96ba2aac3bf15833fe471c270e3d2949a7e1067212b
 		Size: 5.5 MB (5539211 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5e0b8a34193354b0ffdf639fa0b96712ca4cbd1d5779c5ed02789657492d9382`  
-		Last Modified: Mon, 05 Jan 2026 22:36:20 GMT  
+		Last Modified: Mon, 05 Jan 2026 21:19:11 GMT  
 		Size: 4.8 KB (4809 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -119,7 +119,7 @@ $ docker pull oraclelinux@sha256:fcde0ea6999acb297c7c0d3b3203d6f08c2ad5f2e3a8749
 
 -	Layers:
 	-	`sha256:b450351032b17cf2499a7f5dc73dc2dc2490c56973e1b6624cbacee472835897`  
-		Last Modified: Mon, 05 Jan 2026 22:36:26 GMT  
+		Last Modified: Mon, 05 Jan 2026 21:18:48 GMT  
 		Size: 5.5 MB (5539300 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5f5134c467a628445753d3521d5a9c346b52f8113ce9aae0ba1227f433c66419`  
@@ -161,7 +161,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:6daa5f947b66eed3e7b96d9d413568380c570bf9e3be0f6069f4389206aea668`  
-		Last Modified: Mon, 05 Jan 2026 21:19:33 GMT  
+		Last Modified: Mon, 05 Jan 2026 21:19:43 GMT  
 		Size: 42.9 MB (42928072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -321,7 +321,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:9d7edc91d9d8dde556a51cc4cb7cfc1cfea1a0c15f6388ab6c8b583c8f8c42c8`  
-		Last Modified: Wed, 11 Dec 2024 20:30:26 GMT  
+		Last Modified: Thu, 11 Dec 2025 15:55:24 GMT  
 		Size: 97.3 MB (97327013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -345,7 +345,7 @@ $ docker pull oraclelinux@sha256:382ad209af84477ee4b3dc4bcfee2f50041252a10cf71d5
 		Size: 6.0 MB (5975000 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:aa0fb3a85603ebc1f4a6e7cb274bcb060fdd154bd987a2f2ee1d7d3022548e50`  
-		Last Modified: Sat, 13 Dec 2025 00:20:37 GMT  
+		Last Modified: Wed, 11 Dec 2024 20:30:23 GMT  
 		Size: 5.2 KB (5190 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -407,7 +407,7 @@ $ docker pull oraclelinux@sha256:3e60616703d321b4c868bf296f2fd6c8c6c5539d7252f55
 		Size: 4.3 MB (4260876 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8e4ba8e10b3db73de89af88b81958d66dc02f595d255183dc19952eb0ce4e621`  
-		Last Modified: Wed, 11 Dec 2024 20:29:21 GMT  
+		Last Modified: Thu, 11 Dec 2025 09:33:56 GMT  
 		Size: 4.9 KB (4881 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -432,7 +432,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:7f916988e24d766c1f69587f05a2bec5c9eaa3b83215ef893b0a1c187a4080e2`  
-		Last Modified: Wed, 11 Dec 2024 20:30:50 GMT  
+		Last Modified: Thu, 11 Dec 2025 02:12:11 GMT  
 		Size: 51.1 MB (51085581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -494,7 +494,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:9e381a889e7f7459c839feb62226085f5b7525448d0f6680fac53900ab4ba12d`  
-		Last Modified: Wed, 11 Dec 2024 20:29:52 GMT  
+		Last Modified: Fri, 12 Dec 2025 08:21:41 GMT  
 		Size: 76.4 MB (76371715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -543,7 +543,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:b50bd403ff40f287f6fc609d6d2c609ee8eb561a4fa13293b9c6b686bd8f7cff`  
-		Last Modified: Thu, 25 Dec 2025 08:49:12 GMT  
+		Last Modified: Wed, 11 Dec 2024 20:31:21 GMT  
 		Size: 78.0 MB (77985183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -567,7 +567,7 @@ $ docker pull oraclelinux@sha256:a168426b3c9391aa341551993a6681b05a63b3495ca97b1
 		Size: 5.1 MB (5117808 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:daf49abd27521aa834ddfe1bf3fd10cf25d974c06de2eccc4319593d0f5375cf`  
-		Last Modified: Wed, 11 Dec 2024 20:31:18 GMT  
+		Last Modified: Fri, 09 Jan 2026 13:30:11 GMT  
 		Size: 5.0 KB (4952 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -654,7 +654,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:9d7edc91d9d8dde556a51cc4cb7cfc1cfea1a0c15f6388ab6c8b583c8f8c42c8`  
-		Last Modified: Wed, 11 Dec 2024 20:30:26 GMT  
+		Last Modified: Thu, 11 Dec 2025 15:55:24 GMT  
 		Size: 97.3 MB (97327013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -678,7 +678,7 @@ $ docker pull oraclelinux@sha256:382ad209af84477ee4b3dc4bcfee2f50041252a10cf71d5
 		Size: 6.0 MB (5975000 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:aa0fb3a85603ebc1f4a6e7cb274bcb060fdd154bd987a2f2ee1d7d3022548e50`  
-		Last Modified: Sat, 13 Dec 2025 00:20:37 GMT  
+		Last Modified: Wed, 11 Dec 2024 20:30:23 GMT  
 		Size: 5.2 KB (5190 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -736,11 +736,11 @@ $ docker pull oraclelinux@sha256:40710d0d298c12e5356525a3a295376493a94e04d27427c
 
 -	Layers:
 	-	`sha256:7158b2cc066ccc1a33f723ff5e28d00f05bc4797b44e6e04166659e10b0a59b9`  
-		Last Modified: Sat, 17 Jan 2026 01:36:23 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:44:56 GMT  
 		Size: 6.1 MB (6142413 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:13ab9d6d7553df7591861ecfcd2eeaecfaf4a3974073dc74c924a36ca353ca85`  
-		Last Modified: Sat, 17 Jan 2026 01:36:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:44:56 GMT  
 		Size: 5.1 KB (5109 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -789,7 +789,7 @@ $ docker pull oraclelinux@sha256:463374981dc082b18ab23052f4b8dbcb9d7922d80708804
 		Size: 6.1 MB (6143194 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fd07eba6b56553875937826bfa3d95bb362164f56692876d43bd66bc1f96b840`  
-		Last Modified: Fri, 16 Jan 2026 23:45:00 GMT  
+		Last Modified: Sat, 17 Jan 2026 01:36:32 GMT  
 		Size: 5.1 KB (5149 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -827,7 +827,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:d9c709a374865394632aa738429a90691dd8d7699af8be91820b62e8c54881b2`  
-		Last Modified: Fri, 16 Jan 2026 23:45:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:45:26 GMT  
 		Size: 51.5 MB (51468262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -851,7 +851,7 @@ $ docker pull oraclelinux@sha256:784288cad451678aea5cf471714dd7c693c8e5b028447c1
 		Size: 2.1 MB (2084800 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:257ed16da477c4236cd909b667eeef55f391251266e0f68b65e97805b2034716`  
-		Last Modified: Fri, 16 Jan 2026 23:45:25 GMT  
+		Last Modified: Sat, 17 Jan 2026 01:36:30 GMT  
 		Size: 4.8 KB (4838 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1007,7 +1007,7 @@ $ docker pull oraclelinux@sha256:9ac2e0423ecae2e353b06794a451c887f9442010c0d666a
 
 -	Layers:
 	-	`sha256:872aded9afc3a395dcf340087a41891741e04df9968e5fd631f1864cde389d98`  
-		Last Modified: Sat, 17 Jan 2026 01:36:41 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:46:03 GMT  
 		Size: 2.1 MB (2090536 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed4684f52beb6ed491d5f163123f00d09d1184dca04b0063d03f1f11bf8eb484`  
@@ -1069,11 +1069,11 @@ $ docker pull oraclelinux@sha256:40710d0d298c12e5356525a3a295376493a94e04d27427c
 
 -	Layers:
 	-	`sha256:7158b2cc066ccc1a33f723ff5e28d00f05bc4797b44e6e04166659e10b0a59b9`  
-		Last Modified: Sat, 17 Jan 2026 01:36:23 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:44:56 GMT  
 		Size: 6.1 MB (6142413 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:13ab9d6d7553df7591861ecfcd2eeaecfaf4a3974073dc74c924a36ca353ca85`  
-		Last Modified: Sat, 17 Jan 2026 01:36:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:44:56 GMT  
 		Size: 5.1 KB (5109 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1122,7 +1122,7 @@ $ docker pull oraclelinux@sha256:463374981dc082b18ab23052f4b8dbcb9d7922d80708804
 		Size: 6.1 MB (6143194 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fd07eba6b56553875937826bfa3d95bb362164f56692876d43bd66bc1f96b840`  
-		Last Modified: Fri, 16 Jan 2026 23:45:00 GMT  
+		Last Modified: Sat, 17 Jan 2026 01:36:32 GMT  
 		Size: 5.1 KB (5149 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1209,7 +1209,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:63e3140a8264d34773f7d48f40c83001dfc00e2fc36b35c0f4371ad33e5bca4e`  
-		Last Modified: Sat, 17 Jan 2026 01:45:19 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:07:27 GMT  
 		Size: 92.4 MB (92438778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1320,7 +1320,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
-		Last Modified: Fri, 16 Jan 2026 23:08:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1455,6 +1455,6 @@ $ docker pull oraclelinux@sha256:d2cf537c66b1528018623ba08a277e869168c3b93f0aceb
 		Size: 2.2 MB (2207794 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5254d0d3fdd09376861173a81b8b1067f7108a16c139d2aaa84115c0885b88ad`  
-		Last Modified: Sun, 18 Jan 2026 00:20:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:07:46 GMT  
 		Size: 4.9 KB (4909 bytes)  
 		MIME: application/vnd.in-toto+json
