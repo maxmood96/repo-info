@@ -70,7 +70,7 @@ $ docker pull rust@sha256:b59c5ed88464dbab57b619b3f024feb2daeddcb29534e4cbbbb16e
 
 -	Layers:
 	-	`sha256:8b6e89c6ec5ac33576dcea262780d3326de1cf2f504fd85b7bb90bd39e68548c`  
-		Last Modified: Tue, 13 Jan 2026 03:18:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:46:01 GMT  
 		Size: 4.2 MB (4165103 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:93b74239f599eb13944ee771c13af2d6ea46a9bba512c252549dc898ac6b2c7c`  
@@ -331,7 +331,7 @@ RUN set -eux;         apt-get update;     apt-get install -y --no-install-recomm
 
 -	Layers:
 	-	`sha256:8c2d1639f4f145e07ecf59940bfa96f17083c024b5c96e8082c50d6075a08b82`  
-		Last Modified: Tue, 13 Jan 2026 01:08:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:07:54 GMT  
 		Size: 28.3 MB (28271687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7813f428e8866a135ba9507da91829e18c4d2276a903a872edfa38b964c34924`  
@@ -355,11 +355,11 @@ $ docker pull rust@sha256:0b5878aff90fa54845b00a75cd475966358744f4fa8031c13f72c4
 
 -	Layers:
 	-	`sha256:4a39fb284efb63ce555d0e531c1cc215fbcd068c9260ba75009fcfb9148bca41`  
-		Last Modified: Sat, 17 Jan 2026 15:44:43 GMT  
+		Last Modified: Sat, 17 Jan 2026 14:27:58 GMT  
 		Size: 4.2 MB (4239520 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9ace08707d6bdefe911108b3d7845325b132897f372d9c4d32e9d4379a413572`  
-		Last Modified: Sat, 17 Jan 2026 15:44:44 GMT  
+		Last Modified: Sat, 17 Jan 2026 14:27:57 GMT  
 		Size: 15.7 KB (15701 bytes)  
 		MIME: application/vnd.in-toto+json
 
