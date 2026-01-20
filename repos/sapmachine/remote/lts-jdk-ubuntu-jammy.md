@@ -72,7 +72,7 @@ $ docker pull sapmachine@sha256:02efda4560913605105b1437898db2b67c6cf9025c48135a
 
 -	Layers:
 	-	`sha256:5ae4483484a59ac8c8b1bac0e8be3ced1976df58e391d243ebfff7858141eae9`  
-		Last Modified: Fri, 16 Jan 2026 01:15:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:42:40 GMT  
 		Size: 2.6 MB (2621796 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:504f15f0319098b576775eb5889a00eaa9fa2f564b019ce526a2048952b6b687`  
@@ -115,7 +115,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:517f43312bfe3b4db0f0f031d8b6deb1aa5616b07fae71fa0d349f9ce451564f`  
-		Last Modified: Fri, 09 Jan 2026 11:16:52 GMT  
+		Last Modified: Fri, 09 Jan 2026 07:36:03 GMT  
 		Size: 27.4 MB (27383497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f70a1745c714bfe792d238b026992c162d195d8247b0f0e5819ec059338bc5a`  
@@ -139,7 +139,7 @@ $ docker pull sapmachine@sha256:9dd2384530f57e3c68e9eacfb9d08e333eae69cf9dcb90c0
 
 -	Layers:
 	-	`sha256:39684b34acf5fabbb222e66e23e9b3cdf1042ddcc98c2bee70ecb5d30b7dbcbc`  
-		Last Modified: Fri, 16 Jan 2026 01:15:22 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:45:49 GMT  
 		Size: 2.6 MB (2621619 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:715e8b066707079019f3195e8600bb4b0c2089e58e3608ab608606ad44af3f38`  
@@ -182,11 +182,11 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:2490923be26ec970f7d805c10bc7c9c56e219061e875cf31dad74e227e0bbdc4`  
-		Last Modified: Thu, 15 Jan 2026 21:43:22 GMT  
+		Last Modified: Fri, 09 Jan 2026 07:36:16 GMT  
 		Size: 34.4 MB (34446962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:04489bc73f5929c34fba7c1519e391975cc398d146ee70fe9186e0f17e822be8`  
-		Last Modified: Thu, 15 Jan 2026 23:29:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:29:39 GMT  
 		Size: 220.8 MB (220769982 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -210,6 +210,6 @@ $ docker pull sapmachine@sha256:c498fca18f34f691c20e3b1141f7f5aec85cace3b809b21f
 		Size: 2.6 MB (2617419 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9645b1bce070885b701fff31ea308c28a153ac46e9bc0473fa9dd3c528a94b7d`  
-		Last Modified: Fri, 16 Jan 2026 01:15:27 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:29:21 GMT  
 		Size: 12.8 KB (12806 bytes)  
 		MIME: application/vnd.in-toto+json
