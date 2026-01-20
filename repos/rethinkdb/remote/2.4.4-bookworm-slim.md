@@ -52,7 +52,7 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 		Size: 28.2 MB (28228572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10f133c90bc86e830f88b7bcadac5d93db2a73f3e819c2343f6c6b83e7c42e96`  
-		Last Modified: Tue, 13 Jan 2026 02:03:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:03:36 GMT  
 		Size: 9.8 MB (9798649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e069fa8ec988543278e6e414ec2811af1283faee216f3fb659d0bb437df14d3`  
@@ -60,11 +60,11 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 		Size: 2.7 KB (2668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:552f379d6cc9f691eece9254dabd40eeae15ebdef5775f68ebd9aab4d7ef5db3`  
-		Last Modified: Tue, 13 Jan 2026 02:03:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:03:42 GMT  
 		Size: 10.0 MB (9993077 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96a12d4dca08a14cffee32c42679cbe2bb10d5f785535574b29a17ed15c23456`  
-		Last Modified: Tue, 13 Jan 2026 02:03:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:03:36 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -88,7 +88,7 @@ $ docker pull rethinkdb@sha256:ab226c32d903861788cd6ae170edaaa353955f6c586ff00db
 		Size: 2.8 MB (2785046 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c626efe821ddde01e61f80e8e86f65f17991b1c7c1c592af6138f532923e8659`  
-		Last Modified: Tue, 13 Jan 2026 02:03:35 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:03:37 GMT  
 		Size: 13.4 KB (13404 bytes)  
 		MIME: application/vnd.in-toto+json
 
