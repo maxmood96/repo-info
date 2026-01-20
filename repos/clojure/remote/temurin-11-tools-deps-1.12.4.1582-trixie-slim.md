@@ -90,7 +90,7 @@ $ docker pull clojure@sha256:3109f1f7ae3753d9a8598a7df7d429a33c1fa4be9f53186fed6
 		Size: 5.3 MB (5276436 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1ae82228e5b0693960a2c78fd6f00adce5d2f3440614f098c0dbedc7d89dae3b`  
-		Last Modified: Fri, 16 Jan 2026 01:51:39 GMT  
+		Last Modified: Fri, 16 Jan 2026 04:40:01 GMT  
 		Size: 14.2 KB (14242 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -129,7 +129,7 @@ CMD ["clj"]
 
 -	Layers:
 	-	`sha256:d637807aba98f742a62ad9b0146579ceb0297a3c831f56b2361664b7f5fbc75b`  
-		Last Modified: Tue, 13 Jan 2026 00:42:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:49 GMT  
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:87dc663a8bfdbd12d47861f3d8977e963dc866fb77ec1ed2b31f19cbea4db647`  
@@ -220,7 +220,7 @@ CMD ["clj"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22ea7c1018746e5923ccd3e60574b8cbc1cb6c98cbaa41020f1a0b3e15331262`  
-		Last Modified: Fri, 16 Jan 2026 03:11:45 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:11:28 GMT  
 		Size: 77.4 MB (77391262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d78f347a105f58e893ed27ad4efb3799f12708d14747dd6a8d80fe016b503404`  
@@ -287,7 +287,7 @@ CMD ["clj"]
 
 -	Layers:
 	-	`sha256:2b46bc94baaae0a37e5e04b1babf7e1f37c4390b83d49c3c6820188deba770e3`  
-		Last Modified: Tue, 13 Jan 2026 13:10:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 13:10:43 GMT  
 		Size: 29.8 MB (29833411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d189c892ac739b1461897667cb3f0702a6090d4dd1b8acc3ad2f6d38d27b1f26`  
@@ -323,7 +323,7 @@ $ docker pull clojure@sha256:5b061d5e162beeba044f82a0f9339025f8433b0581862212bef
 
 -	Layers:
 	-	`sha256:82971837ed9df3307d82372eecfa2a4546962566d2165a4b73a6a0692dfa25f5`  
-		Last Modified: Fri, 16 Jan 2026 01:38:31 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:13:49 GMT  
 		Size: 5.3 MB (5272364 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6e0349139eae4361354ee4decb53a110e7ed3beba4d5ddb1d1790a2ee1422928`  
