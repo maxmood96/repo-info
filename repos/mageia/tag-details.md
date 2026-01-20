@@ -160,7 +160,7 @@ $ docker pull mageia@sha256:682e7a39f308c334ae2fd136537472634266fa638839e9b6d0c4
 
 -	Layers:
 	-	`sha256:4234333551deb3db55743a244793395195738f07fbdfcf74271a7fe2cf999fc4`  
-		Last Modified: Tue, 13 Jan 2026 17:48:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:52:33 GMT  
 		Size: 7.2 MB (7202144 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c65a2e9e301ee8a44478698d504e7dbadc92a1ace1b446d2caa110bc9b0f18bd`  
@@ -224,7 +224,7 @@ $ docker pull mageia@sha256:ccbbd7bca0c1529d7ce4c5fc06a4074e434f5dbd4c70db78ddbe
 
 -	Layers:
 	-	`sha256:488dac920b91602a8811ecda73ed4b98bca486b219898bbbe038c5793b92cdc9`  
-		Last Modified: Tue, 13 Jan 2026 19:56:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:49:39 GMT  
 		Size: 7.1 MB (7101412 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3a6ee44b2e69bd691b7991edfd4064b3aba8e48c5f88ce66128148c78b609495`  
@@ -273,7 +273,7 @@ $ docker pull mageia@sha256:4319b8c2c28be0ddd98799d3472cc75120bd4ca60c81f38092f1
 
 -	Layers:
 	-	`sha256:3144fcfc2ef7dbf7afe143de822f8466277d6e6b87d6056da185d1505832bcd4`  
-		Last Modified: Tue, 13 Jan 2026 17:54:22 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:52:28 GMT  
 		Size: 7.1 MB (7069761 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8962c73143240c933e83362e842ede93344ea9e6d3dfdca8abcffc7bda710c62`  
@@ -302,7 +302,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:dec6bd34d57d1644a18d1c4d808057cb4fdb872cff62157508ec83d5dfb29668`  
-		Last Modified: Tue, 13 Jan 2026 19:56:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:49:37 GMT  
 		Size: 128.9 MB (128942227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -484,7 +484,7 @@ $ docker pull mageia@sha256:682e7a39f308c334ae2fd136537472634266fa638839e9b6d0c4
 
 -	Layers:
 	-	`sha256:4234333551deb3db55743a244793395195738f07fbdfcf74271a7fe2cf999fc4`  
-		Last Modified: Tue, 13 Jan 2026 17:48:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:52:33 GMT  
 		Size: 7.2 MB (7202144 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c65a2e9e301ee8a44478698d504e7dbadc92a1ace1b446d2caa110bc9b0f18bd`  
