@@ -97,7 +97,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-kilted-
 		Size: 110.2 MB (110187099 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96e2efff092f53ee7789ee08cbb160b3b85b87524a06744e8e91cab9cf9ca171`  
-		Last Modified: Fri, 16 Jan 2026 00:58:41 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:58:50 GMT  
 		Size: 371.7 KB (371744 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:723794c7050a1b79f891d804f844d9e39317679cba5ca2031f687bca2592df7b`  
@@ -223,7 +223,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-kilted-
 		Size: 371.7 KB (371749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53da40f77632a2aede7a153c740aa61a40ad8c211cd72001665ddd01a1f91a58`  
-		Last Modified: Fri, 16 Jan 2026 01:02:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:01:53 GMT  
 		Size: 2.5 KB (2511 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:faf3e21264a6cf710a3de027e72eb48ed241babcb1b8c1ba3d0457d768260a11`  
@@ -251,6 +251,6 @@ $ docker pull ros@sha256:a488e8c6562c5bf506883d9347416992ef055c6c2882ab8215a6c78
 		Size: 24.6 MB (24606165 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2cac50e00f17e0383ef1f9fe799d22b586da1fbc5372c1220ef1e3bcc7142dc9`  
-		Last Modified: Fri, 16 Jan 2026 02:19:37 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:01:53 GMT  
 		Size: 16.5 KB (16484 bytes)  
 		MIME: application/vnd.in-toto+json
