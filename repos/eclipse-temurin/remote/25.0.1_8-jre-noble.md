@@ -155,7 +155,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:36bf709aa36d66b784b0ba1aa3276848f28501175eeb4d7a310b1a98578f8558`  
-		Last Modified: Tue, 13 Jan 2026 07:03:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c1f47df462fefa33d8ffd697781464a7cf8efa1c1ee1c31db77e7240fce621ef`  
@@ -345,7 +345,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 11.6 MB (11570389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56a74ad54cf7d6824d1ef9d69b7fa7811d3a3c3796ffd56258641ee47853d784`  
-		Last Modified: Mon, 19 Jan 2026 18:42:37 GMT  
+		Last Modified: Mon, 19 Jan 2026 18:42:56 GMT  
 		Size: 61.4 MB (61443795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -353,7 +353,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48de2dd368c98a3b3ab8499746833186b4ce852b5a95f68d7bb9ac1a04923486`  
-		Last Modified: Mon, 19 Jan 2026 18:42:26 GMT  
+		Last Modified: Mon, 19 Jan 2026 18:42:44 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -377,7 +377,7 @@ $ docker pull eclipse-temurin@sha256:c3c3d489e8a177777c0eb19dabc7b43c771a7b537c3
 		Size: 3.1 MB (3057831 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8a8570d91208fb589d89354d3d21bb3f0e94b3f0b4ddef9594b836f1eb761fec`  
-		Last Modified: Mon, 19 Jan 2026 19:15:38 GMT  
+		Last Modified: Mon, 19 Jan 2026 18:42:26 GMT  
 		Size: 23.7 KB (23727 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -432,7 +432,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 29.9 MB (29909204 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c569a4fa9e59240334e24ea05d88009ff7ea343c9b02721d82263b8055befb47`  
-		Last Modified: Thu, 15 Jan 2026 22:11:49 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:11:42 GMT  
 		Size: 11.8 MB (11768663 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4d63d900d91dc73b029d0a8c1237a93963b560e305e3791e7bbbfba6ee69fc97`  
