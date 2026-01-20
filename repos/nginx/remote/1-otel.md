@@ -89,7 +89,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57f0dd1befe210f3a7186fe46ad1552d4bc8864701c8cec580676144bc37d425`  
-		Last Modified: Tue, 13 Jan 2026 01:23:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:23:13 GMT  
 		Size: 1.2 KB (1209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eaf8753feae0b5aaadb86ac2cb972ff57cff12f877ad50c548fde8092e85e7fb`  
@@ -187,7 +187,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:15a5b76537aa00de2d2762b3c98cc4df2bd2511a92332e15f90dd6516064d798`  
-		Last Modified: Tue, 13 Jan 2026 01:23:10 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:23:03 GMT  
 		Size: 31.0 MB (31040546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f43c327f67383257c0f0e42d6b29fa44291524a6fb1e637a066ea266df1c0a72`  
@@ -211,7 +211,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 1.4 KB (1399 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:049a00cf3577d3f70efde49de772a35ef3b78c16ced35fcaec6ec008ac5a969a`  
-		Last Modified: Tue, 13 Jan 2026 03:49:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:49:35 GMT  
 		Size: 3.5 MB (3469819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -235,6 +235,6 @@ $ docker pull nginx@sha256:371cf4be8a6c1eec22f95df89f30a737a88ab0fa86422967d8846
 		Size: 2.8 MB (2829395 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d7ae31bb036213b41a5217dc216b81cb10e20db6bf9ac13a5087fc9c25facfd9`  
-		Last Modified: Tue, 13 Jan 2026 03:49:29 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:52:13 GMT  
 		Size: 24.7 KB (24731 bytes)  
 		MIME: application/vnd.in-toto+json
