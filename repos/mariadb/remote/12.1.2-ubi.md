@@ -169,7 +169,7 @@ $ docker pull mariadb@sha256:3e3a3c67d17f80c43f3b52591130ebec74dbf2adcb4d5449420
 
 -	Layers:
 	-	`sha256:85437110b632ea948c2fc5e264b1e048175f0ffbce789ea3717c5cc814cf8575`  
-		Last Modified: Thu, 18 Dec 2025 22:24:49 GMT  
+		Last Modified: Fri, 19 Dec 2025 01:36:03 GMT  
 		Size: 6.8 MB (6784676 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:44a0f67a0599a02622edfe6ab68dc1933fb8d19fdb0af8172bfaa49e39322380`  
@@ -655,7 +655,7 @@ $ docker pull mariadb@sha256:64d6b9dcb0b23ead06356ad9a2ebe5347702b37a56cb6ec167e
 
 -	Layers:
 	-	`sha256:0e14f27dcb58eaaa76ef939f2033c2959683f1f0dd89b82e6bf25ad062c758c9`  
-		Last Modified: Thu, 18 Dec 2025 22:44:15 GMT  
+		Last Modified: Fri, 19 Dec 2025 01:36:26 GMT  
 		Size: 6.8 MB (6777724 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1fcabb830a0ca12868a3c5223aa39ada2e0021d90ed1b0e5a4c0bcb5a9abf1f0`  
