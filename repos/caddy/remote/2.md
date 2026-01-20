@@ -92,7 +92,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 2.8 MB (2765854 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e0c27ccfb2b19119185f84cdffe65c21d32ddc0eda89df9c48a859d220f50f4`  
-		Last Modified: Fri, 16 Jan 2026 21:47:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:47:49 GMT  
 		Size: 7.5 KB (7497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:311754a576e94d3eecda1d2fc473b839a5e65aeb37c80f2b4054cde1a99bd986`  
@@ -100,7 +100,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 15.9 MB (15923975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -205,7 +205,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 15.0 MB (15048509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -294,7 +294,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6d8e26f9b8e305761a939412bd153467ec00ec6695ddfde4b0f304451506531`  
-		Last Modified: Fri, 16 Jan 2026 21:45:09 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:45:03 GMT  
 		Size: 2.6 MB (2582951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c31ca1b0d0956169bb723fb9c79a9a43de4f8107913ec79543f57b8b696192f`  
@@ -302,11 +302,11 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 7.5 KB (7492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14ed6f01bcc66b6b4221197cfd6815bdd52ce5ca6a1b2685fb9e384dff797f71`  
-		Last Modified: Fri, 16 Jan 2026 21:45:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:45:11 GMT  
 		Size: 15.0 MB (15031967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -395,7 +395,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fec2c2f67368119144d3b41f74de6113b281487660b61b041e23b840c4a8d505`  
@@ -411,7 +411,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 14.5 MB (14517539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -516,7 +516,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 14.5 MB (14495919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -621,7 +621,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 15.1 MB (15130300 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -641,7 +641,7 @@ $ docker pull caddy@sha256:f13a2a863ba350a59a85acd447caec21a6f56e1af5b307156e33a
 
 -	Layers:
 	-	`sha256:40c38455d6df0a0859d3fda7e7bb2557e3bee8eb4ac4b3d20e4de2d59a6d463e`  
-		Last Modified: Mon, 19 Jan 2026 09:10:38 GMT  
+		Last Modified: Mon, 19 Jan 2026 10:52:29 GMT  
 		Size: 317.9 KB (317920 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4c32128d41289326e69dc819ca3e4195dd4d8d259845b4752a114e8bb656fcf3`  
@@ -726,7 +726,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 15.4 MB (15356656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -823,7 +823,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8d8984e104b3c0ff05fa60406f16ff2c4a2f58af5476a4da8460d993e5b15c54`  
-		Last Modified: Fri, 16 Jan 2026 21:58:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:36 GMT  
 		Size: 400.1 KB (400124 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:20d50d69015e54959d508b06414479a76601f3f1c0c143302fa9815426f0ecdb`  
@@ -835,7 +835,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 16.7 MB (16685267 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b6469db906ffeec163dc378daa88374a7395d787fbd64478d4a423691f7aa1c6`  
-		Last Modified: Fri, 16 Jan 2026 21:58:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:35 GMT  
 		Size: 1.3 KB (1334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9460c8b42281a2a84615f002cbb6533907bb7414d370ba83f99b09259c4b8577`  
@@ -851,7 +851,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:55bb815f2b06c4f07495bb86c150cb225f1e14a30832c182218467729a2c22cd`  
-		Last Modified: Fri, 16 Jan 2026 21:58:52 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:34 GMT  
 		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4d3bb0e23239e46f5ac1baf3505b72062c5c1b0a2b56accf494255279b81dc6c`  
@@ -859,7 +859,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:27a0214cac497353d4d26a9e5729390a85a2cb4422324ad1a8dc9b7cbc10c883`  
-		Last Modified: Fri, 16 Jan 2026 21:48:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:58:53 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9a97fe8c2c247a6fcaf584e485cc9b3d5bc584d4f0b7e97ca098fd712ffcc10e`  
@@ -875,7 +875,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 1.3 KB (1318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:95e323161037befd8a9185eb6af7db6e238ccb4451b0f64284a255f3062f58ac`  
-		Last Modified: Fri, 16 Jan 2026 21:58:53 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:32 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5852fd37e891f32ad639c4d4d7f6645b31ca2efe1e9bc6b7b588d6046bce65ab`  
@@ -883,7 +883,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c1abadcb16f8b7383029dbb8f7528efb9cddedd7ff75d0847ef53f11e744b75c`  
-		Last Modified: Fri, 16 Jan 2026 21:58:53 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:31 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:051e8ff0c84b5e9acf20fae62134d7bb0807d09f14fe921287c0ca135f987422`  
@@ -891,7 +891,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 1.3 KB (1318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0aa1ae318ebbfdc86e2311719b9629cade532ac567939ea85a8dd9fd1f236062`  
-		Last Modified: Fri, 16 Jan 2026 21:58:53 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:31 GMT  
 		Size: 384.3 KB (384316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b3e746bfff6a737ce01c0ec0226a66bf3b12acfd3f6c44c2fd4fc4809d15811`  
@@ -986,7 +986,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 16.6 MB (16574503 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bd7410e33005a69fb0873209de68263e1b4f2915be399c4f43aa318a5fcb9fd1`  
-		Last Modified: Fri, 16 Jan 2026 21:53:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:21 GMT  
 		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4929bb4e999d90782a313f7c9b9b7c0435cb0745857211642bb657132e716240`  
@@ -1018,11 +1018,11 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:dbc38634bbbc8d62ac19edafe1c5c534965984ef837f6921a41227105f80c98c`  
-		Last Modified: Fri, 16 Jan 2026 21:53:19 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:18 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5aa2f1c08e7e6bffba7e2aafe2cae668cdbae2d991f19beda42da8df5df3b57a`  
-		Last Modified: Fri, 16 Jan 2026 21:53:19 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:18 GMT  
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e0a925076807ae691e68aab5bdcd04ad643544b23148d12a721bf71f657fc9c0`  
@@ -1042,10 +1042,10 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bc66546b510325c0a603db853cfaae858d0aea3e3f9b244947cd5d1b91934c6a`  
-		Last Modified: Fri, 16 Jan 2026 21:48:16 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:53:19 GMT  
 		Size: 357.8 KB (357768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c12efdcf8eadcbf183e0c9807135be6f68bb4557242cdf88beea64f37bf7cc32`  
-		Last Modified: Fri, 16 Jan 2026 21:48:16 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:53:19 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
