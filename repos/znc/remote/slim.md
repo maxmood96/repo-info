@@ -85,7 +85,7 @@ $ docker pull znc@sha256:75d996fa50ca858ca2021215b43c083759ff2e81688ab94d54285e2
 
 -	Layers:
 	-	`sha256:621f94726525728c0999a31ebf4c4ec1d00c759f8a5c86d9c87e2761c1634637`  
-		Last Modified: Wed, 08 Oct 2025 23:01:32 GMT  
+		Last Modified: Tue, 09 Dec 2025 08:36:40 GMT  
 		Size: 1.8 MB (1752770 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:81d37d5e7d20698fe7532c6e3dbfdc07892d94429b4f25c837f87ed0a101918f`  
@@ -133,7 +133,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:bb1da3d879939be7df9f182950d2fb201d4fc2e1043677da2037cd6afb084ce0`  
-		Last Modified: Sun, 07 Dec 2025 22:05:32 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:00:10 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6840fec67135c40d32802946fc5362557e770be7653ca7360ea7070ab00fc998`  
@@ -209,7 +209,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ec5fdc4fb497bea03514de3252130b7697ae2993a729ad8de1c9d778513bc24`  
@@ -241,10 +241,10 @@ $ docker pull znc@sha256:4a900b3cbf481a15ff4c53094629589ad021553aefef1004ebd3b69
 
 -	Layers:
 	-	`sha256:5876732d2e3a5d3f9c22b939b59b950404a086aa77605eb56873e874bc934a47`  
-		Last Modified: Wed, 10 Dec 2025 23:05:20 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:49:31 GMT  
 		Size: 1.8 MB (1752900 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f3e302684a02e42366864e17b224123f7d91874878390a786b63b04aa66cdd40`  
-		Last Modified: Wed, 10 Dec 2025 23:05:19 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:49:31 GMT  
 		Size: 14.1 KB (14122 bytes)  
 		MIME: application/vnd.in-toto+json
