@@ -70,11 +70,11 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:89d3b5863331d6bb79d550bf0acce60aeac36e2c065470bf6d6f8d76c9cb6f4f`  
-		Last Modified: Wed, 14 Jan 2026 13:13:55 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:23:48 GMT  
 		Size: 62.9 MB (62940156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:95512b2044a8f80c577659eead5e19c14c6cec9a57545ced886f0055475bb3a1`  
-		Last Modified: Thu, 15 Jan 2026 22:08:30 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:08:55 GMT  
 		Size: 76.0 MB (76044822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aee7800fa31dd19a8858b2e67a83fa1936735e4056ce891d7e6df399e6a234a3`  
@@ -86,7 +86,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ac175e48400e2c3e601fa7540e411d49c3e836c630f1cbef0672410a0c7ae83c`  
-		Last Modified: Thu, 15 Jan 2026 23:09:32 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:09:36 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -106,7 +106,7 @@ $ docker pull jetty@sha256:ea2b054caa80bcebaf1171f14f16f2ca14bb384eb1a2a44a125f4
 
 -	Layers:
 	-	`sha256:a0d8be851366d19b47b3e68d45dafc721b46227d80441630bf3c5e5f54785007`  
-		Last Modified: Fri, 16 Jan 2026 00:21:21 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:09:32 GMT  
 		Size: 5.8 MB (5756040 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:de8093fab617a578240a6812f60d38726f6e2a8139896c422972abd2c72cbd5c`  
@@ -181,7 +181,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 60.1 MB (60122363 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ab110e8afd3fa5261beffc906b87e2664fa4e9e43ca65d065d0a90ad47c2da1`  
-		Last Modified: Thu, 15 Jan 2026 23:16:52 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:16:44 GMT  
 		Size: 16.3 MB (16270781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
