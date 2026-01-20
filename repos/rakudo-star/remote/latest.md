@@ -61,7 +61,7 @@ CMD ["raku"]
 		Size: 67.8 MB (67786776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a01cbdac3b04d00eaa93ad86998b12ba5a5f3d9a66ea8380fed96313151b51a`  
-		Last Modified: Tue, 13 Jan 2026 05:11:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:11:35 GMT  
 		Size: 3.2 KB (3240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fe6f469fcb6a85a93a8a19d82974f30cc72d37a6c31f8c65145e0b7fce118b17`  
@@ -85,7 +85,7 @@ $ docker pull rakudo-star@sha256:3925bcbabc7786bb36dd08e7006ae8a4abe2b509d00559e
 
 -	Layers:
 	-	`sha256:aff6d86459b32171bf9d1f38e859bcccd85b20f86cb01fcf2f94c2f53649be96`  
-		Last Modified: Tue, 13 Jan 2026 08:33:38 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:11:35 GMT  
 		Size: 7.8 MB (7770538 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3ac84df776170f963d38882ed9823bd9fe7a0dabc0c6ca0014b03649ab05adb7`  
@@ -131,7 +131,7 @@ CMD ["raku"]
 
 -	Layers:
 	-	`sha256:5582010cab7f00a8f96e076b02666116eaa7e4af9a74eb44f2946a593b50294f`  
-		Last Modified: Tue, 13 Jan 2026 00:42:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:51 GMT  
 		Size: 49.6 MB (49648083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:599d5b6b6766fd729045e2e7d0396d1f61fe41c612d4aef6bb3bf5ea7db12ae2`  
@@ -143,11 +143,11 @@ CMD ["raku"]
 		Size: 67.6 MB (67591513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d0a74db4adc441ee4f4a20a76a81486cf86690fcadbcb2438f1a1f01f9400553`  
-		Last Modified: Tue, 13 Jan 2026 05:16:57 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:16:39 GMT  
 		Size: 3.2 KB (3238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dea8f1d780b2af1c916a38924b84651302113534657977d2bc3bac79a5260177`  
-		Last Modified: Tue, 13 Jan 2026 05:17:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:16:41 GMT  
 		Size: 39.1 MB (39092668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -167,7 +167,7 @@ $ docker pull rakudo-star@sha256:554e796f3db2eea8d9cc2a90d10153d186a4a7c0a08de91
 
 -	Layers:
 	-	`sha256:bce7de2b35bb4d546c1c65152cf7894ec31af56d277519ee5fb07ccc7a647733`  
-		Last Modified: Tue, 13 Jan 2026 05:16:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:33:47 GMT  
 		Size: 7.8 MB (7778213 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:236481e610cf6e64fd4c21b1254cfe2e68a0c3332c2dd4f415c895d961bc57a3`  
