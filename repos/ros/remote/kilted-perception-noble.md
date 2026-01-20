@@ -79,7 +79,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-kilted-
 		Size: 684.0 KB (683992 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6cc1c27f9559dd6ff1cdbfe218890a4794f42a6099b771506e057d7764a7720`  
-		Last Modified: Thu, 15 Jan 2026 22:42:11 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:42:02 GMT  
 		Size: 6.7 MB (6747522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ab21f7fe8d5212d488b694908db57f4df8b1edd9165e7ef82d3b595cb236521`  
@@ -131,7 +131,7 @@ $ docker pull ros@sha256:977ea51a176211c26eef3a00a1317d4537bc50586f5904af962a1d8
 
 -	Layers:
 	-	`sha256:51c35517fcc146840add078a61b6c28bab018fd2ee9d2a3a519617a275ce42d6`  
-		Last Modified: Fri, 16 Jan 2026 05:18:01 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:27:05 GMT  
 		Size: 60.8 MB (60756546 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:614aa670fbc9747282c6123f07032afe79b0f9bede547041178994e20bc54a0a`  
@@ -231,7 +231,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-kilted-
 		Size: 371.7 KB (371749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53da40f77632a2aede7a153c740aa61a40ad8c211cd72001665ddd01a1f91a58`  
-		Last Modified: Fri, 16 Jan 2026 01:01:53 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:02:03 GMT  
 		Size: 2.5 KB (2511 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:faf3e21264a6cf710a3de027e72eb48ed241babcb1b8c1ba3d0457d768260a11`  
@@ -239,7 +239,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-kilted-
 		Size: 27.1 MB (27144525 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd5b0320544a6cb0be947c4f507340bd9c19d88ce26bc7229a7085a522f1c066`  
-		Last Modified: Fri, 16 Jan 2026 02:43:23 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:42:18 GMT  
 		Size: 695.1 MB (695069904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -259,7 +259,7 @@ $ docker pull ros@sha256:0570c4e60ad2753417303f2b32e0af0f94eefe99b015a00a3f36bee
 
 -	Layers:
 	-	`sha256:6722119cc6218fe2cc328fbf7d2db24be8a4cb3a120a96133e4512cbd4af06f7`  
-		Last Modified: Fri, 16 Jan 2026 02:42:06 GMT  
+		Last Modified: Fri, 16 Jan 2026 05:20:27 GMT  
 		Size: 60.7 MB (60687071 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:424387a98a10ea1326380f6cb894dc7d38536fad36fdd3fc25554e9c625b9578`  
