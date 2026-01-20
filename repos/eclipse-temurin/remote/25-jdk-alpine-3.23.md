@@ -53,19 +53,19 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:1074353eec0db2c1d81d5af2671e56e00cf5738486f5762609ea33d606f88612`  
-		Last Modified: Wed, 17 Dec 2025 22:48:50 GMT  
+		Last Modified: Wed, 17 Dec 2025 22:49:00 GMT  
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0542028e9ef6dfde3cb132bdaf19f85728bf9dcfdc3ced12aeee27539dfc6b55`  
-		Last Modified: Fri, 19 Dec 2025 17:30:19 GMT  
+		Last Modified: Fri, 19 Dec 2025 17:30:27 GMT  
 		Size: 14.3 MB (14304121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8f07a516cfc71e98b62c81a4e88ccc956d4f128632bed03b35d3a7f3fda29d1d`  
-		Last Modified: Fri, 19 Dec 2025 17:30:21 GMT  
+		Last Modified: Fri, 19 Dec 2025 17:30:35 GMT  
 		Size: 91.3 MB (91283792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5586f832988bcce598477dcfa52cae34b8d0a8600e9a16f60d9c90cab119e462`  
-		Last Modified: Fri, 19 Dec 2025 17:30:26 GMT  
+		Last Modified: Fri, 19 Dec 2025 17:30:18 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3f6f557a92a5b1d29307bdcbd023fe7d897385b2f02979110238ba31a98b863`  
@@ -89,7 +89,7 @@ $ docker pull eclipse-temurin@sha256:78ddd222f4e62b97fecc5c21a9879fa6080cafc5788
 
 -	Layers:
 	-	`sha256:40fca6ac732bf65cf24cb00cfa7a66fb53673477c7732c8f7e76ce809990288a`  
-		Last Modified: Fri, 19 Dec 2025 17:30:18 GMT  
+		Last Modified: Fri, 19 Dec 2025 19:15:15 GMT  
 		Size: 949.9 KB (949930 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8eee9a2c43ef9011ddf2ed4fdaf873ea1c10623c6604bd9433919ccf0148ee25`  
@@ -139,7 +139,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:f6b4fb9446345fcad2db26eac181fef6c0a919c8a4fcccd3bea5deb7f6dff67e`  
-		Last Modified: Thu, 18 Dec 2025 00:12:35 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:50 GMT  
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:38ec32e523defea0231c7aa876c10d7404cc9681c7dbc12ebadf3b2609b8d390`  
@@ -175,7 +175,7 @@ $ docker pull eclipse-temurin@sha256:a3c4fea9348cd8959a5ed015f0ed8515f0ecc2f3a21
 
 -	Layers:
 	-	`sha256:9f107dadf730ef890d60e7b817e1d18692f59539fad2c06deda9e2c9a750e354`  
-		Last Modified: Fri, 19 Dec 2025 19:15:19 GMT  
+		Last Modified: Fri, 19 Dec 2025 17:29:42 GMT  
 		Size: 1.1 MB (1099279 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:02d132f1df4e7609cb97a6f453244d307e4c32dfd27130e93c135e1d788baf5d`  
