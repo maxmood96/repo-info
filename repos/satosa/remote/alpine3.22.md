@@ -81,7 +81,7 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Size: 12.4 MB (12438092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b25dc0fb9705edc6661711090bbb88c90560b516b861680a35178aaf986296a8`  
-		Last Modified: Mon, 08 Dec 2025 20:36:26 GMT  
+		Last Modified: Mon, 08 Dec 2025 20:36:32 GMT  
 		Size: 251.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9df3e3c3fcc2bba3d34c49be0a42c155b93ce4bf7434accf72beafb185d61011`  
@@ -187,7 +187,7 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e04eda5d87448437994b338947f03a72065bf589d08071ba33ba5dc3ea1ddcf9`  
@@ -195,11 +195,11 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Size: 459.0 KB (459020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0e19756ed87e004e14deeb5d042df980b7204f44649d4cce479201223a8589ab`  
-		Last Modified: Mon, 08 Dec 2025 20:20:14 GMT  
+		Last Modified: Mon, 08 Dec 2025 20:20:23 GMT  
 		Size: 12.5 MB (12453549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1be90ee3c5e8855f927e9dabc42fd16e3baec85cb245b81e43412665495c6b4a`  
-		Last Modified: Mon, 08 Dec 2025 20:20:13 GMT  
+		Last Modified: Mon, 08 Dec 2025 20:20:22 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34a131be40642a2cf885cdcb75474faaf4e6651804fc3f8cd6201c9960ca7d3f`  
@@ -243,6 +243,6 @@ $ docker pull satosa@sha256:fbfef43bbeaf94239cde0843248f928b598c0b683f6e8a820942
 		Size: 783.3 KB (783323 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:24efd495e1ac9fb1735f89706533f4d82e1c5bc1d3747b3cb4d0a599225a46fb`  
-		Last Modified: Mon, 08 Dec 2025 21:11:53 GMT  
+		Last Modified: Mon, 08 Dec 2025 23:14:11 GMT  
 		Size: 23.1 KB (23142 bytes)  
 		MIME: application/vnd.in-toto+json
