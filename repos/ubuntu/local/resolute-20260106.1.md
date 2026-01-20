@@ -608,15 +608,9 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.8-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.8-4ubuntu1.dsc' gnupg2_2.4.8-4ubuntu1.dsc 4565 SHA512:895b4aa27ab9565e24d79bdde6a7bf68280be0782c5fce3c12901dfe4410df63860e5052f84c2c976115cfa8ba745da46a9fd5a007d45c12f0fd6aace39e91dd
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.8.orig.tar.bz2' gnupg2_2.4.8.orig.tar.bz2 8017685 SHA512:d7f07a258141a583bc8be18c0984d7dfe8508f12c624c053881ee63dfee11adcda8de216bcaaef9f5d24a1e217de70bf69ee2e3cc43b0da66a0e571ce9c4b436
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.8.orig.tar.bz2.asc' gnupg2_2.4.8.orig.tar.bz2.asc 228 SHA512:f739eb41481149e145724969e94907ac55e082da0456e1343da24488958ecd020225b45e1d5dc4c93abc06fe89d942e892b488a460f3278f9f2bcff5f51c8ca0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.8-4ubuntu1.debian.tar.xz' gnupg2_2.4.8-4ubuntu1.debian.tar.xz 121004 SHA512:5f917b2219a89234434604955927c3d0d73d8dbb631e183dbce195a8c3816e89c99f873efc2d1fec7dc790b731b7508795a0b368d69da2432e001bae971310cc
-```
 
 ### `dpkg` source package: `grep=3.12-1`
 
@@ -767,14 +761,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.8.5-4build3
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4build3.dsc' libcap-ng_0.8.5-4build3.dsc 2307 SHA512:2106b7d4acad64838bb09c143f6b14d13b23e29780458f2b6e99ba966e255ed7a5ce975f47d87dcf159d0d6a5ddb9683619ea5f804fe1908edd407eab9c93570
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.5.orig.tar.gz' libcap-ng_0.8.5.orig.tar.gz 59265 SHA512:3bd868c7f263b77edd2feda831470b407f1086b434618e54336fb78bbf8bf3bad53f4c006a2118fb594b16554f8f7ec2acb76e08be5586d0261684e9ba139231
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4build3.debian.tar.xz' libcap-ng_0.8.5-4build3.debian.tar.xz 7984 SHA512:ffdf06b1f2b298aecf0d177fa2c0a734f541a475f0f73115a2685088edf6ba32e71bb6dc5924c598d8e09174fe474f4c7c95b3a055211b6e1b1258957d7f84c2
-```
 
 ### `dpkg` source package: `libcap2=1:2.75-10ubuntu1`
 
