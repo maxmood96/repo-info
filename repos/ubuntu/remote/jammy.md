@@ -103,7 +103,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:83d1a597d0ed11bf60c1ab8ef65516448b87de3790f14ee8336174b7f9a56d82`  
-		Last Modified: Thu, 15 Jan 2026 02:42:29 GMT  
+		Last Modified: Fri, 09 Jan 2026 07:36:09 GMT  
 		Size: 26.6 MB (26643402 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -265,7 +265,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:054094b145fd57c3cf786bc72ea41a8bd64b5ec3feb2896d6a9f99efe84ab03e`  
-		Last Modified: Fri, 09 Jan 2026 07:36:23 GMT  
+		Last Modified: Sun, 18 Jan 2026 21:50:34 GMT  
 		Size: 27.0 MB (27042129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -285,7 +285,7 @@ $ docker pull ubuntu@sha256:fa5a87ae2ee90770228a0db557e9f9eea76afd4aa72d3006adf6
 
 -	Layers:
 	-	`sha256:9a816c0496a3dcc2f25f96940c3eff61e1e1a736f58b68fb9e5c58aa2bd9ac93`  
-		Last Modified: Sun, 18 Jan 2026 22:16:55 GMT  
+		Last Modified: Sun, 18 Jan 2026 21:50:21 GMT  
 		Size: 2.0 MB (1973990 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -339,6 +339,6 @@ $ docker pull ubuntu@sha256:e4fbdf0ee2b1309b4be21ff9f76baeab442b4d1ea3dec330ef0b
 
 -	Layers:
 	-	`sha256:4599222d0f14f145d13246a207bd8860b2e330bf06755c63a21813d1a3653c56`  
-		Last Modified: Thu, 15 Jan 2026 21:43:49 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:22:04 GMT  
 		Size: 2.0 MB (1982427 bytes)  
 		MIME: application/vnd.in-toto+json
