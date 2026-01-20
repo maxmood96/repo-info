@@ -143,7 +143,7 @@ USER root
 		Size: 1.7 KB (1708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:435adbede12a530a9e027f844653fe00569c4106e1fd6aa0c1e46c117806a892`  
@@ -311,7 +311,7 @@ USER root
 		Size: 1.7 KB (1707 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d198d77de24afc3caa93ee1ab08c6db3152bc2e78516e8a51a8ee09bba49a0ce`  
@@ -323,7 +323,7 @@ USER root
 		Size: 128.5 MB (128469417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:20b07fbc641b2944d213ce8b6c08e21b58b31fddf8deec84486bb7ab33e1518e`  
-		Last Modified: Thu, 04 Dec 2025 20:06:13 GMT  
+		Last Modified: Thu, 04 Dec 2025 20:06:04 GMT  
 		Size: 59.5 KB (59517 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -467,7 +467,7 @@ USER root
 		Size: 128.6 MB (128584265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e2fcfcfeee8f872fee60497e3e0c607161ae4750bff66173f677c7bfc263b99`  
-		Last Modified: Thu, 04 Dec 2025 19:48:14 GMT  
+		Last Modified: Thu, 04 Dec 2025 19:48:28 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:87b33abbc635e31b95c70220e420935dfe8cbfa0df3bd3d182ad3ce9ab6bdfa0`  
@@ -479,7 +479,7 @@ USER root
 		Size: 1.7 KB (1713 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1c3cce61e385878462a41531e7b05b6163a6ec3a5280b70229d9ea3e09750cc`  
@@ -491,7 +491,7 @@ USER root
 		Size: 128.5 MB (128469418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3564055e1be0d21bffc2ad6a8ccfd0785704b46826a79d1f66b7bee04139e37`  
-		Last Modified: Thu, 04 Dec 2025 20:13:24 GMT  
+		Last Modified: Thu, 04 Dec 2025 20:13:06 GMT  
 		Size: 35.0 KB (35005 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -511,7 +511,7 @@ $ docker pull gradle@sha256:e8c014a1c875df0954c3efd24f0f10112afb725a703d369af3dd
 
 -	Layers:
 	-	`sha256:174b56ad727db549873154d20604fd2d20096a04ebad847db4af5f5226a5d755`  
-		Last Modified: Thu, 04 Dec 2025 21:19:08 GMT  
+		Last Modified: Thu, 04 Dec 2025 20:13:06 GMT  
 		Size: 5.3 MB (5329394 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1af0de5015bbf3dd61eeae23e1d0d6e3fa4e2f0650e2ab4ca21e66b8008c3d84`  
@@ -643,11 +643,11 @@ USER root
 		Size: 2.3 KB (2290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7739d47b111586f80c95474a30662cbe1541ee84ac09dcd5ae22afc89b6c6e05`  
-		Last Modified: Thu, 04 Dec 2025 20:06:34 GMT  
+		Last Modified: Thu, 04 Dec 2025 20:06:24 GMT  
 		Size: 1.7 KB (1710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1713441924ea005661cb86006a6aea9ea62a33a7e4546c0606503a1964c585c7`  
@@ -655,7 +655,7 @@ USER root
 		Size: 36.3 MB (36275021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a288d7c8a8fa30ed6b0797333c1eed8a0e27c90519b857497f0c095696d9b23a`  
-		Last Modified: Mon, 08 Dec 2025 22:49:41 GMT  
+		Last Modified: Thu, 04 Dec 2025 20:06:27 GMT  
 		Size: 128.5 MB (128469417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e570bfd3043b452955d0523a8c6933b79519975fca37ce7a15d13f0b52f794f5`  
