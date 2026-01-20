@@ -110,7 +110,7 @@ CMD ["catalina.sh" "run"]
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7d704164306ad1ff78584a292668f38506a0e6ff418351bfd0e4678c81a02bfb`  
-		Last Modified: Thu, 15 Jan 2026 22:19:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:19:27 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b68c2a9e41c14d048d6e431ed9fe0d134b817191677b9a7e6bdfc45dd6f2b56`  
@@ -126,7 +126,7 @@ CMD ["catalina.sh" "run"]
 		Size: 14.3 MB (14278772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b74e2872e3607aa4a2eabc7f9f90cb472522f0c49ca5def274250bb486dec28a`  
-		Last Modified: Fri, 16 Jan 2026 02:28:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:28:09 GMT  
 		Size: 229.7 KB (229680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -251,7 +251,7 @@ CMD ["catalina.sh" "run"]
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2cf8ae01510bc04c2d4b113e5d1d1f1d6ff5462d99e73c27e10411cad69ac781`  
-		Last Modified: Thu, 15 Jan 2026 22:10:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:10:16 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ac54aa970a5634f5d1ab8c1613ee1165b15ea699a96d8ac1985b32d492e9004`  
@@ -392,7 +392,7 @@ CMD ["catalina.sh" "run"]
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb954ce4c40c8ba7cb4d1b301537c9468fbdb35dc33337742e5163bb52cb3c0f`  
-		Last Modified: Thu, 15 Jan 2026 22:19:21 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:19:27 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:953ec49566bdea6c1a19e070bfe8a1d205b9f25bc27203d75852f92972c0dd91`  
@@ -408,7 +408,7 @@ CMD ["catalina.sh" "run"]
 		Size: 14.3 MB (14281731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b60dd2e9e0826da6a53a690c0a443b4a79f28d7c941cc9f2bb07c1c332bd2d7`  
-		Last Modified: Fri, 16 Jan 2026 02:44:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:44:27 GMT  
 		Size: 228.7 KB (228660 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -549,7 +549,7 @@ CMD ["catalina.sh" "run"]
 		Size: 14.3 MB (14293658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f560928114e02220b1b822aaaefa225647156d7228448c2259438ec508eac383`  
-		Last Modified: Fri, 16 Jan 2026 05:00:21 GMT  
+		Last Modified: Fri, 16 Jan 2026 05:00:11 GMT  
 		Size: 259.1 KB (259105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -577,7 +577,7 @@ $ docker pull tomcat@sha256:d131be643391dbad5636d27bc8b1713bbc95db41f3be50545b68
 		Size: 4.0 MB (3957153 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:66d7f7bb25751a95836e014dcf026af11f54c64b102da4afe844b31abcf85da3`  
-		Last Modified: Fri, 16 Jan 2026 05:00:11 GMT  
+		Last Modified: Fri, 16 Jan 2026 06:28:59 GMT  
 		Size: 21.3 KB (21273 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -674,7 +674,7 @@ CMD ["catalina.sh" "run"]
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3db9d6aa879ded96abfcbf210b06cb8e8df22a13e843c05d8bf2fc6099a54903`  
-		Last Modified: Thu, 15 Jan 2026 22:08:07 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:08:17 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:49e701c137d8a8c9af1d2637179ffe93c0bf8f0377b5a1edf72dd11537f98e7f`  
@@ -714,7 +714,7 @@ $ docker pull tomcat@sha256:0067c3eb2534ca2726ca8fb9486c43ada45a9c33a0a5dae12c0a
 
 -	Layers:
 	-	`sha256:f17e9bb595ccd64ddd28d5c8d8bfb165566bdb38a03bd0a92b33581364040e2e`  
-		Last Modified: Fri, 16 Jan 2026 00:33:39 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:56:11 GMT  
 		Size: 4.0 MB (3954656 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ca2bf409f332e3a763c7e518139469f5410d3eab77fbc81265038ada84179324`  
