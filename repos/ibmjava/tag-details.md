@@ -73,7 +73,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Size: 1.5 MB (1450130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e09f3b9d3ed4e1110e1009a5cf4d6615eb35450e3b3ff1e1b559ef266dd4aac8`  
-		Last Modified: Thu, 15 Jan 2026 22:30:20 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:29:27 GMT  
 		Size: 135.5 MB (135541122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -93,7 +93,7 @@ $ docker pull ibmjava@sha256:98415342663a383c73997f94ac3ed9e22bb16f0e19caf6e9593
 
 -	Layers:
 	-	`sha256:2d07cbccf91e5ee4157fc439efa019b9fdfd8e21fe9fae6a52384243dd0f37a5`  
-		Last Modified: Fri, 16 Jan 2026 00:02:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:29:24 GMT  
 		Size: 2.2 MB (2174120 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:968a3a746f350366609f8c00be4b4634f15460168467a404b85b6b0a6c2c9b8a`  
@@ -172,7 +172,7 @@ $ docker pull ibmjava@sha256:84958c4e4aa58b0be106e51277d259c975fdbdbcf16304beb22
 		Size: 2.2 MB (2177410 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7af1cd5b347ef2357e33ccfbc4a679576576e81ed94667514277087059280a3b`  
-		Last Modified: Fri, 16 Jan 2026 00:02:43 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:49:12 GMT  
 		Size: 13.2 KB (13237 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -313,7 +313,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Size: 1.5 MB (1450130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e09f3b9d3ed4e1110e1009a5cf4d6615eb35450e3b3ff1e1b559ef266dd4aac8`  
-		Last Modified: Thu, 15 Jan 2026 22:30:20 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:29:27 GMT  
 		Size: 135.5 MB (135541122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -333,7 +333,7 @@ $ docker pull ibmjava@sha256:98415342663a383c73997f94ac3ed9e22bb16f0e19caf6e9593
 
 -	Layers:
 	-	`sha256:2d07cbccf91e5ee4157fc439efa019b9fdfd8e21fe9fae6a52384243dd0f37a5`  
-		Last Modified: Fri, 16 Jan 2026 00:02:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:29:24 GMT  
 		Size: 2.2 MB (2174120 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:968a3a746f350366609f8c00be4b4634f15460168467a404b85b6b0a6c2c9b8a`  
@@ -412,7 +412,7 @@ $ docker pull ibmjava@sha256:84958c4e4aa58b0be106e51277d259c975fdbdbcf16304beb22
 		Size: 2.2 MB (2177410 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7af1cd5b347ef2357e33ccfbc4a679576576e81ed94667514277087059280a3b`  
-		Last Modified: Fri, 16 Jan 2026 00:02:43 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:49:12 GMT  
 		Size: 13.2 KB (13237 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -703,7 +703,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 		Size: 1.5 MB (1455722 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1d6b2a797a8796787e090267edd9af70f2dfdc1539691ff2d24abeac6f5925b`  
-		Last Modified: Thu, 15 Jan 2026 22:22:00 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
 		Size: 163.3 MB (163303026 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -727,7 +727,7 @@ $ docker pull ibmjava@sha256:dd74d29f1e999e8d6b6e7a97943860986f72279bf7c640e4482
 		Size: 2.8 MB (2757756 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e4e7c540ee64645e005ddb7a0a5cc34c2db25755bdc43e7aff3626f1fa28f748`  
-		Last Modified: Thu, 15 Jan 2026 22:20:14 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:03:02 GMT  
 		Size: 12.6 KB (12598 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -817,7 +817,7 @@ $ docker pull ibmjava@sha256:63188ffa83970b206885a3ac93d4f52e88d0b64f7d378f55784
 		Size: 2.2 MB (2156553 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:04a0087d6a9d0691af87901084af6b64ea39e6d08bfa71147dcc340aadb5bfe9`  
-		Last Modified: Thu, 15 Jan 2026 22:29:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:03:00 GMT  
 		Size: 12.6 KB (12601 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -868,7 +868,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Size: 1.5 MB (1536144 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca5fe6100cc025e978547c4526f6ea13107cfd5f48542519a90320b7def38a34`  
-		Last Modified: Thu, 15 Jan 2026 22:49:05 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:49:21 GMT  
 		Size: 71.7 MB (71744840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1033,7 +1033,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Size: 1.5 MB (1450130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e09f3b9d3ed4e1110e1009a5cf4d6615eb35450e3b3ff1e1b559ef266dd4aac8`  
-		Last Modified: Thu, 15 Jan 2026 22:30:20 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:29:27 GMT  
 		Size: 135.5 MB (135541122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1053,7 +1053,7 @@ $ docker pull ibmjava@sha256:98415342663a383c73997f94ac3ed9e22bb16f0e19caf6e9593
 
 -	Layers:
 	-	`sha256:2d07cbccf91e5ee4157fc439efa019b9fdfd8e21fe9fae6a52384243dd0f37a5`  
-		Last Modified: Fri, 16 Jan 2026 00:02:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:29:24 GMT  
 		Size: 2.2 MB (2174120 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:968a3a746f350366609f8c00be4b4634f15460168467a404b85b6b0a6c2c9b8a`  
@@ -1132,7 +1132,7 @@ $ docker pull ibmjava@sha256:84958c4e4aa58b0be106e51277d259c975fdbdbcf16304beb22
 		Size: 2.2 MB (2177410 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7af1cd5b347ef2357e33ccfbc4a679576576e81ed94667514277087059280a3b`  
-		Last Modified: Fri, 16 Jan 2026 00:02:43 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:49:12 GMT  
 		Size: 13.2 KB (13237 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1273,7 +1273,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Size: 1.5 MB (1450130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e09f3b9d3ed4e1110e1009a5cf4d6615eb35450e3b3ff1e1b559ef266dd4aac8`  
-		Last Modified: Thu, 15 Jan 2026 22:30:20 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:29:27 GMT  
 		Size: 135.5 MB (135541122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1293,7 +1293,7 @@ $ docker pull ibmjava@sha256:98415342663a383c73997f94ac3ed9e22bb16f0e19caf6e9593
 
 -	Layers:
 	-	`sha256:2d07cbccf91e5ee4157fc439efa019b9fdfd8e21fe9fae6a52384243dd0f37a5`  
-		Last Modified: Fri, 16 Jan 2026 00:02:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:29:24 GMT  
 		Size: 2.2 MB (2174120 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:968a3a746f350366609f8c00be4b4634f15460168467a404b85b6b0a6c2c9b8a`  
@@ -1372,7 +1372,7 @@ $ docker pull ibmjava@sha256:84958c4e4aa58b0be106e51277d259c975fdbdbcf16304beb22
 		Size: 2.2 MB (2177410 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7af1cd5b347ef2357e33ccfbc4a679576576e81ed94667514277087059280a3b`  
-		Last Modified: Fri, 16 Jan 2026 00:02:43 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:49:12 GMT  
 		Size: 13.2 KB (13237 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1663,7 +1663,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 		Size: 1.5 MB (1455722 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1d6b2a797a8796787e090267edd9af70f2dfdc1539691ff2d24abeac6f5925b`  
-		Last Modified: Thu, 15 Jan 2026 22:22:00 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
 		Size: 163.3 MB (163303026 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1687,7 +1687,7 @@ $ docker pull ibmjava@sha256:dd74d29f1e999e8d6b6e7a97943860986f72279bf7c640e4482
 		Size: 2.8 MB (2757756 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e4e7c540ee64645e005ddb7a0a5cc34c2db25755bdc43e7aff3626f1fa28f748`  
-		Last Modified: Thu, 15 Jan 2026 22:20:14 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:03:02 GMT  
 		Size: 12.6 KB (12598 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1777,7 +1777,7 @@ $ docker pull ibmjava@sha256:63188ffa83970b206885a3ac93d4f52e88d0b64f7d378f55784
 		Size: 2.2 MB (2156553 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:04a0087d6a9d0691af87901084af6b64ea39e6d08bfa71147dcc340aadb5bfe9`  
-		Last Modified: Thu, 15 Jan 2026 22:29:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:03:00 GMT  
 		Size: 12.6 KB (12601 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1828,7 +1828,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Size: 1.5 MB (1536144 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca5fe6100cc025e978547c4526f6ea13107cfd5f48542519a90320b7def38a34`  
-		Last Modified: Thu, 15 Jan 2026 22:49:05 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:49:21 GMT  
 		Size: 71.7 MB (71744840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

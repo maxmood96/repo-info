@@ -84,7 +84,7 @@ $ docker pull ibmjava@sha256:63188ffa83970b206885a3ac93d4f52e88d0b64f7d378f55784
 		Size: 2.2 MB (2156553 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:04a0087d6a9d0691af87901084af6b64ea39e6d08bfa71147dcc340aadb5bfe9`  
-		Last Modified: Thu, 15 Jan 2026 22:29:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:03:00 GMT  
 		Size: 12.6 KB (12601 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -135,7 +135,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Size: 1.5 MB (1536144 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca5fe6100cc025e978547c4526f6ea13107cfd5f48542519a90320b7def38a34`  
-		Last Modified: Thu, 15 Jan 2026 22:49:05 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:49:21 GMT  
 		Size: 71.7 MB (71744840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
