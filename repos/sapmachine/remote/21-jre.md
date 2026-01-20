@@ -76,7 +76,7 @@ $ docker pull sapmachine@sha256:c86855bc308490b05d99b19d3ab8b0897943c175a5bab61d
 		Size: 2.5 MB (2518644 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b250d0877c0920091291cf35f43a2d4f49f257a16b86948fb6ccce5f68e77f69`  
-		Last Modified: Thu, 15 Jan 2026 22:43:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:12:01 GMT  
 		Size: 10.0 KB (10037 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -143,7 +143,7 @@ $ docker pull sapmachine@sha256:bf34c5a040fdc08b22f31f541c1efc784161dcf1b39b41b0
 		Size: 2.5 MB (2519160 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:74c196a3ad534a94b645922e04acdf14754865d818d969ae64ae340c26ae6995`  
-		Last Modified: Thu, 15 Jan 2026 22:46:28 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:12:06 GMT  
 		Size: 10.2 KB (10189 bytes)  
 		MIME: application/vnd.in-toto+json
 
