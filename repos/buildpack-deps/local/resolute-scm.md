@@ -373,15 +373,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.17.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.17.0-1ubuntu1.dsc' curl_8.17.0-1ubuntu1.dsc 3260 SHA512:68d89616935d6ffa8601925cc81e9420652eaed9fc3395807b6e6a65806d035ed4c04ccceb315dc2ce4b404041d59a2022dd3a2671e1c371e7f24a3964acc238
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.17.0.orig.tar.gz' curl_8.17.0.orig.tar.gz 4182287 SHA512:88ab4b7aac12b26a6ad32fb0e1a9675288a45894438cb031102ef5d4ab6b33c2bc99cae0c70b71bdfa12eb49762827e2490555114c5eb4a6876b95e1f2a4eb74
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.17.0.orig.tar.gz.asc' curl_8.17.0.orig.tar.gz.asc 488 SHA512:2239411da2b6e86773833b9e2c79267085ecc97d74c47ef6796a06afdbb7c4212c88a80e501bc68b39b439c17a497607a82c1f77f12c1a43cbcba7cd983a7451
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.17.0-1ubuntu1.debian.tar.xz' curl_8.17.0-1ubuntu1.debian.tar.xz 54972 SHA512:83e77379cb248a5385968a0e35cee36cb169a1315f110fe3dcc366211f5cf77f884c5bb157986aae174824ce8ea3a488bf7ff6bc5280b112d7f57883ed051fe8
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu1`
 
@@ -1123,14 +1117,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.8.5-4build3
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4build3.dsc' libcap-ng_0.8.5-4build3.dsc 2307 SHA512:2106b7d4acad64838bb09c143f6b14d13b23e29780458f2b6e99ba966e255ed7a5ce975f47d87dcf159d0d6a5ddb9683619ea5f804fe1908edd407eab9c93570
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.5.orig.tar.gz' libcap-ng_0.8.5.orig.tar.gz 59265 SHA512:3bd868c7f263b77edd2feda831470b407f1086b434618e54336fb78bbf8bf3bad53f4c006a2118fb594b16554f8f7ec2acb76e08be5586d0261684e9ba139231
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4build3.debian.tar.xz' libcap-ng_0.8.5-4build3.debian.tar.xz 7984 SHA512:ffdf06b1f2b298aecf0d177fa2c0a734f541a475f0f73115a2685088edf6ba32e71bb6dc5924c598d8e09174fe474f4c7c95b3a055211b6e1b1258957d7f84c2
-```
 
 ### `dpkg` source package: `libcap2=1:2.75-10ubuntu1`
 
@@ -2515,15 +2504,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025c-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025c-3ubuntu1.dsc' tzdata_2025c-3ubuntu1.dsc 2680 SHA512:f4e4847949af052621ca45d0c1d389f4c1f0d657755be0bd81ca923046b314b506ef9d13e7e51a4f0476cb592e3fed0f2b9269b86a0da284626a31abdba69379
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025c.orig.tar.gz' tzdata_2025c.orig.tar.gz 469363 SHA512:1e33f7212fd0ae2ad3c16e68f0c1fc7a6ad26a126b8406c379a5768d79604c6a816054bd0fe3a63228d70cd6a1fc2b1bae2a9f8014e102d3727eb9d21affa1f1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025c.orig.tar.gz.asc' tzdata_2025c.orig.tar.gz.asc 833 SHA512:a3c734604cf77dda62eafe9148bcd846d39789d4761c7b0459151094b916df84136d4e73c914aac200c71065d4ed7f3d36cf5ee90bedbf972345de54881109ce
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025c-3ubuntu1.debian.tar.xz' tzdata_2025c-3ubuntu1.debian.tar.xz 189212 SHA512:1457c6ededa7c2f2328b0055105e53bd393dae5ce80d1a5211a33609accef6f281b20cdee44d43353d799f8a4b85ffee7c9134d158efe829a004f35e107d7734
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1build1`
 
