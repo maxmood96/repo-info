@@ -83,7 +83,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:94f4160a6438b1a19d88835ec1728c72ae59f039f5784b9526691a7eeb82534b`  
-		Last Modified: Fri, 16 Jan 2026 21:53:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:21 GMT  
 		Size: 501.7 KB (501660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:79009ba30b634a5be800711a4826a3472717eebab51a739db447021acd08cf23`  
@@ -99,7 +99,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4929bb4e999d90782a313f7c9b9b7c0435cb0745857211642bb657132e716240`  
-		Last Modified: Fri, 16 Jan 2026 21:53:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:19 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:538a350f92fb6ac1f4078601f7b59d9fd2f687f613930258988a571d227ddf45`  
@@ -111,7 +111,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4940ace21147a2455987b5d6fb5173346a78c22c1f7b6a67aa49a65e3d6b217f`  
-		Last Modified: Fri, 16 Jan 2026 21:48:19 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:53:20 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aa00dab456cb8086de15acacb6e660122a0aaf402479cdb95e473c6721052456`  
@@ -147,7 +147,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 1.3 KB (1314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5e09078b5a083a4a9e63b2fcc5bac2ca609b27d3aad7d7680f8f3855a00e74ce`  
-		Last Modified: Fri, 16 Jan 2026 21:53:19 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:16 GMT  
 		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bc66546b510325c0a603db853cfaae858d0aea3e3f9b244947cd5d1b91934c6a`  
