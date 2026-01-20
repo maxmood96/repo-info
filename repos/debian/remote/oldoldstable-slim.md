@@ -163,7 +163,7 @@ RUN # debian.sh --arch 'i386' out/ 'oldoldstable' '@1768176000'
 
 -	Layers:
 	-	`sha256:d8a2cf21fcd48c4621e1f73c47cb74c7a34033bc28cfda570d782bb75490a86c`  
-		Last Modified: Tue, 13 Jan 2026 00:42:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:36 GMT  
 		Size: 31.2 MB (31191591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -183,6 +183,6 @@ $ docker pull debian@sha256:8e7e4c5a669adf2e42018c347db77378f35f2d7555d07d973052
 
 -	Layers:
 	-	`sha256:48920e0d24ee20551b09b9daa1f1f6add451193400b638ecfee42033b9abb181`  
-		Last Modified: Tue, 13 Jan 2026 00:42:35 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:27:54 GMT  
 		Size: 2.7 MB (2664542 bytes)  
 		MIME: application/vnd.in-toto+json
