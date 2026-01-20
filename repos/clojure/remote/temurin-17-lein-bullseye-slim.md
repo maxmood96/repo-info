@@ -65,7 +65,7 @@ CMD ["repl"]
 		Size: 144.8 MB (144847971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f739ee1772741edc69509fa8e36049d27e96b9b7f06173c1c79b0f1d644510a0`  
@@ -97,11 +97,11 @@ $ docker pull clojure@sha256:e16fdaf5a66df4cc51b0c84bdb00585a613bf8b43bd29b0fc64
 
 -	Layers:
 	-	`sha256:f209b8ca5b57e8202a580b06ac690678bd8eb42d1be8afb312beeb00f1931dd6`  
-		Last Modified: Fri, 16 Jan 2026 04:42:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:52:56 GMT  
 		Size: 3.0 MB (3017910 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e1279c1fbd0bfeb38c1875815364797c7ea9d48cfe795ddd90249b362aa6db48`  
-		Last Modified: Fri, 16 Jan 2026 04:42:23 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:52:56 GMT  
 		Size: 18.4 KB (18402 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -159,15 +159,15 @@ CMD ["repl"]
 		Size: 143.7 MB (143680025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b73950fb58fedf72759d684acd3b3f56505bfb2fe5ea017eccd3759c170a5f82`  
-		Last Modified: Fri, 16 Jan 2026 01:57:16 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:57:06 GMT  
 		Size: 15.5 MB (15536515 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:86870e409413214ae0f32dee3ca2971fe907d930ffd6799e04a5c3601b5ebb5b`  
-		Last Modified: Fri, 16 Jan 2026 01:57:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:57:14 GMT  
 		Size: 4.5 MB (4517715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11283a21349bbbd1b83797b01aa06e4225fc487e1d371b5f02e08a75c8e9f46b`  
