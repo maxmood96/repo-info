@@ -42,7 +42,7 @@ RUN set -eux;         arch="$(apk --print-arch)";     case "$arch" in         'x
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d2c6797317e39693f339630c351199aec3a5cfc7a99fb7386072a4dc36be28b`  
@@ -70,11 +70,11 @@ $ docker pull rust@sha256:1b7fc0ecab610da83bc50ada9f9df03bbf82f20ba73e52f59b5327
 
 -	Layers:
 	-	`sha256:57bc4f8901daba36e606a87e627db0dfec54fe0a480215cb0c576c9764c0fca5`  
-		Last Modified: Thu, 11 Dec 2025 21:45:12 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:30:09 GMT  
 		Size: 962.3 KB (962311 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:337f7045a6acee7f79a388a3cb27f1d6f9bc2c4b9eb8d427d2ea3931661bfd3e`  
-		Last Modified: Thu, 11 Dec 2025 19:30:09 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:45:13 GMT  
 		Size: 12.2 KB (12186 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -135,7 +135,7 @@ $ docker pull rust@sha256:243a0a2a1a6b12b810aba048aec60ce564297d8531cb19edb382e2
 
 -	Layers:
 	-	`sha256:036fe33c7543ab4edafc497a11116cc8662767945bb3bd3483cc2acab87e580c`  
-		Last Modified: Thu, 11 Dec 2025 19:38:18 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:45:17 GMT  
 		Size: 1.0 MB (1041637 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:38fdbc2839f14aca4d5a27fc6a05e08035181c832ed06e1e06701d4d8cf7e84f`  
@@ -180,7 +180,7 @@ RUN set -eux;         arch="$(apk --print-arch)";     case "$arch" in         'x
 		Size: 61.6 MB (61572745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc5714470b9ece309d4972adb6f373ae3700ddf236640bfe366567c0b514b154`  
-		Last Modified: Thu, 11 Dec 2025 19:40:32 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:41:08 GMT  
 		Size: 294.0 MB (293954694 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
