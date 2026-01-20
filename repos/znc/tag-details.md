@@ -108,11 +108,11 @@ $ docker pull znc@sha256:c0cc87c7e7445142436ce99ec0c7f0aef44150775985a579afe163b
 
 -	Layers:
 	-	`sha256:1124971e4e1662715a341504bc5cbb9a255299e1835fd9d1ddfbcd5b7ca57896`  
-		Last Modified: Wed, 08 Oct 2025 23:37:16 GMT  
+		Last Modified: Mon, 08 Dec 2025 11:54:03 GMT  
 		Size: 6.9 MB (6861102 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:da2605cf507fae06d7a63af0aca531bdba2ed51da86d6d2fee2b58ee343cdde1`  
-		Last Modified: Mon, 08 Dec 2025 11:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:37:16 GMT  
 		Size: 9.6 KB (9603 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -176,7 +176,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 749.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5bf49085a15491c788cf41a870e124304a09d125d3f0839052a153c2bd16a32c`  
-		Last Modified: Wed, 08 Oct 2025 23:34:30 GMT  
+		Last Modified: Tue, 16 Dec 2025 14:28:46 GMT  
 		Size: 100.5 MB (100541003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ccde0cf2e46c778ef26b4761fe3a54e1c1571395c28b9805f58725a36510abd`  
@@ -248,11 +248,11 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ec5fdc4fb497bea03514de3252130b7697ae2993a729ad8de1c9d778513bc24`  
-		Last Modified: Tue, 09 Dec 2025 18:38:53 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:49:32 GMT  
 		Size: 45.8 MB (45813795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fa523922045723fa3792824ea44631401bb773284938e53b5b27dda2041376b3`  
@@ -260,7 +260,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1c90f7c9f8a7f5db7344e75bb64578f0b7b30439d01bdbc5c15e62833526056`  
-		Last Modified: Wed, 08 Oct 2025 21:49:31 GMT  
+		Last Modified: Tue, 09 Dec 2025 18:38:35 GMT  
 		Size: 749.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e46deafa01e803acc346d7c558f432a758a4b7f99be4488fee34016ada71aa24`  
@@ -268,7 +268,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 113.2 MB (113163213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d3a60b66bd1d2b3a7c602cecc458a50bd3573492a27ea09e09fdd72ea434edb6`  
-		Last Modified: Wed, 08 Oct 2025 22:56:36 GMT  
+		Last Modified: Tue, 09 Dec 2025 18:38:35 GMT  
 		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -507,11 +507,11 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ec5fdc4fb497bea03514de3252130b7697ae2993a729ad8de1c9d778513bc24`  
-		Last Modified: Tue, 09 Dec 2025 18:38:53 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:49:32 GMT  
 		Size: 45.8 MB (45813795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fa523922045723fa3792824ea44631401bb773284938e53b5b27dda2041376b3`  
@@ -519,7 +519,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1c90f7c9f8a7f5db7344e75bb64578f0b7b30439d01bdbc5c15e62833526056`  
-		Last Modified: Wed, 08 Oct 2025 21:49:31 GMT  
+		Last Modified: Tue, 09 Dec 2025 18:38:35 GMT  
 		Size: 749.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -543,7 +543,7 @@ $ docker pull znc@sha256:4a900b3cbf481a15ff4c53094629589ad021553aefef1004ebd3b69
 		Size: 1.8 MB (1752900 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f3e302684a02e42366864e17b224123f7d91874878390a786b63b04aa66cdd40`  
-		Last Modified: Wed, 10 Dec 2025 23:05:19 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:49:31 GMT  
 		Size: 14.1 KB (14122 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -646,11 +646,11 @@ $ docker pull znc@sha256:c0cc87c7e7445142436ce99ec0c7f0aef44150775985a579afe163b
 
 -	Layers:
 	-	`sha256:1124971e4e1662715a341504bc5cbb9a255299e1835fd9d1ddfbcd5b7ca57896`  
-		Last Modified: Wed, 08 Oct 2025 23:37:16 GMT  
+		Last Modified: Mon, 08 Dec 2025 11:54:03 GMT  
 		Size: 6.9 MB (6861102 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:da2605cf507fae06d7a63af0aca531bdba2ed51da86d6d2fee2b58ee343cdde1`  
-		Last Modified: Mon, 08 Dec 2025 11:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:37:16 GMT  
 		Size: 9.6 KB (9603 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -714,7 +714,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 749.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5bf49085a15491c788cf41a870e124304a09d125d3f0839052a153c2bd16a32c`  
-		Last Modified: Wed, 08 Oct 2025 23:34:30 GMT  
+		Last Modified: Tue, 16 Dec 2025 14:28:46 GMT  
 		Size: 100.5 MB (100541003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ccde0cf2e46c778ef26b4761fe3a54e1c1571395c28b9805f58725a36510abd`  
@@ -786,11 +786,11 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ec5fdc4fb497bea03514de3252130b7697ae2993a729ad8de1c9d778513bc24`  
-		Last Modified: Tue, 09 Dec 2025 18:38:53 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:49:32 GMT  
 		Size: 45.8 MB (45813795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fa523922045723fa3792824ea44631401bb773284938e53b5b27dda2041376b3`  
@@ -798,7 +798,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1c90f7c9f8a7f5db7344e75bb64578f0b7b30439d01bdbc5c15e62833526056`  
-		Last Modified: Wed, 08 Oct 2025 21:49:31 GMT  
+		Last Modified: Tue, 09 Dec 2025 18:38:35 GMT  
 		Size: 749.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e46deafa01e803acc346d7c558f432a758a4b7f99be4488fee34016ada71aa24`  
@@ -806,7 +806,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 113.2 MB (113163213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d3a60b66bd1d2b3a7c602cecc458a50bd3573492a27ea09e09fdd72ea434edb6`  
-		Last Modified: Wed, 08 Oct 2025 22:56:36 GMT  
+		Last Modified: Tue, 09 Dec 2025 18:38:35 GMT  
 		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1045,11 +1045,11 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ec5fdc4fb497bea03514de3252130b7697ae2993a729ad8de1c9d778513bc24`  
-		Last Modified: Tue, 09 Dec 2025 18:38:53 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:49:32 GMT  
 		Size: 45.8 MB (45813795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fa523922045723fa3792824ea44631401bb773284938e53b5b27dda2041376b3`  
@@ -1057,7 +1057,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1c90f7c9f8a7f5db7344e75bb64578f0b7b30439d01bdbc5c15e62833526056`  
-		Last Modified: Wed, 08 Oct 2025 21:49:31 GMT  
+		Last Modified: Tue, 09 Dec 2025 18:38:35 GMT  
 		Size: 749.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1081,7 +1081,7 @@ $ docker pull znc@sha256:4a900b3cbf481a15ff4c53094629589ad021553aefef1004ebd3b69
 		Size: 1.8 MB (1752900 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f3e302684a02e42366864e17b224123f7d91874878390a786b63b04aa66cdd40`  
-		Last Modified: Wed, 10 Dec 2025 23:05:19 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:49:31 GMT  
 		Size: 14.1 KB (14122 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1184,11 +1184,11 @@ $ docker pull znc@sha256:c0cc87c7e7445142436ce99ec0c7f0aef44150775985a579afe163b
 
 -	Layers:
 	-	`sha256:1124971e4e1662715a341504bc5cbb9a255299e1835fd9d1ddfbcd5b7ca57896`  
-		Last Modified: Wed, 08 Oct 2025 23:37:16 GMT  
+		Last Modified: Mon, 08 Dec 2025 11:54:03 GMT  
 		Size: 6.9 MB (6861102 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:da2605cf507fae06d7a63af0aca531bdba2ed51da86d6d2fee2b58ee343cdde1`  
-		Last Modified: Mon, 08 Dec 2025 11:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:37:16 GMT  
 		Size: 9.6 KB (9603 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1252,7 +1252,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 749.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5bf49085a15491c788cf41a870e124304a09d125d3f0839052a153c2bd16a32c`  
-		Last Modified: Wed, 08 Oct 2025 23:34:30 GMT  
+		Last Modified: Tue, 16 Dec 2025 14:28:46 GMT  
 		Size: 100.5 MB (100541003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ccde0cf2e46c778ef26b4761fe3a54e1c1571395c28b9805f58725a36510abd`  
@@ -1324,11 +1324,11 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ec5fdc4fb497bea03514de3252130b7697ae2993a729ad8de1c9d778513bc24`  
-		Last Modified: Tue, 09 Dec 2025 18:38:53 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:49:32 GMT  
 		Size: 45.8 MB (45813795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fa523922045723fa3792824ea44631401bb773284938e53b5b27dda2041376b3`  
@@ -1336,7 +1336,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1c90f7c9f8a7f5db7344e75bb64578f0b7b30439d01bdbc5c15e62833526056`  
-		Last Modified: Wed, 08 Oct 2025 21:49:31 GMT  
+		Last Modified: Tue, 09 Dec 2025 18:38:35 GMT  
 		Size: 749.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e46deafa01e803acc346d7c558f432a758a4b7f99be4488fee34016ada71aa24`  
@@ -1344,7 +1344,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 113.2 MB (113163213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d3a60b66bd1d2b3a7c602cecc458a50bd3573492a27ea09e09fdd72ea434edb6`  
-		Last Modified: Wed, 08 Oct 2025 22:56:36 GMT  
+		Last Modified: Tue, 09 Dec 2025 18:38:35 GMT  
 		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1583,11 +1583,11 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ec5fdc4fb497bea03514de3252130b7697ae2993a729ad8de1c9d778513bc24`  
-		Last Modified: Tue, 09 Dec 2025 18:38:53 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:49:32 GMT  
 		Size: 45.8 MB (45813795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fa523922045723fa3792824ea44631401bb773284938e53b5b27dda2041376b3`  
@@ -1595,7 +1595,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1c90f7c9f8a7f5db7344e75bb64578f0b7b30439d01bdbc5c15e62833526056`  
-		Last Modified: Wed, 08 Oct 2025 21:49:31 GMT  
+		Last Modified: Tue, 09 Dec 2025 18:38:35 GMT  
 		Size: 749.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1619,6 +1619,6 @@ $ docker pull znc@sha256:4a900b3cbf481a15ff4c53094629589ad021553aefef1004ebd3b69
 		Size: 1.8 MB (1752900 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f3e302684a02e42366864e17b224123f7d91874878390a786b63b04aa66cdd40`  
-		Last Modified: Wed, 10 Dec 2025 23:05:19 GMT  
+		Last Modified: Wed, 08 Oct 2025 21:49:31 GMT  
 		Size: 14.1 KB (14122 bytes)  
 		MIME: application/vnd.in-toto+json
