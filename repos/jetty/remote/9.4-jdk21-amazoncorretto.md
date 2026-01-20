@@ -70,11 +70,11 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:89d3b5863331d6bb79d550bf0acce60aeac36e2c065470bf6d6f8d76c9cb6f4f`  
-		Last Modified: Wed, 14 Jan 2026 13:13:55 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:23:48 GMT  
 		Size: 62.9 MB (62940156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:764343a8a8f79d8c00b1ec06bd8200f0f02fccf18829a21af3210a0530260cfb`  
-		Last Modified: Thu, 15 Jan 2026 22:10:49 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:10:21 GMT  
 		Size: 165.5 MB (165515480 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a29918c871f4016d75ea966bdbf7091329ad3a1f391bb814c13598d6df70e045`  
@@ -106,7 +106,7 @@ $ docker pull jetty@sha256:9a79c6083e564b20c15a839c6be7c765bb994b665984601a89eba
 
 -	Layers:
 	-	`sha256:ce0191e4ea9b91c04f04ed1eb8458069e0be48a0fae34da4a22ec58e9079df0b`  
-		Last Modified: Fri, 16 Jan 2026 00:20:36 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:09:59 GMT  
 		Size: 5.9 MB (5915547 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1f76e9e456a9296d67e0299e3f7bdbaf6edd4b2a4a40dd9b2c1c208ec218ccbe`  
@@ -173,7 +173,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:afb133ffe3cfc9458fcd28fa75abd002d894e187faa842d48d3c35c676633646`  
-		Last Modified: Thu, 15 Jan 2026 18:33:41 GMT  
+		Last Modified: Thu, 15 Jan 2026 07:47:55 GMT  
 		Size: 64.8 MB (64770434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22a500f859b9dda48b019ef3445c78f9ef24ca6838fb3acbf7d0421862e6bd73`  
@@ -181,7 +181,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 163.6 MB (163565339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94b7a98aeb0d9592d708a6772ea901855f93da0d37f88ddfbd7a70c031a5636f`  
-		Last Modified: Thu, 15 Jan 2026 23:16:51 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:16:44 GMT  
 		Size: 16.3 MB (16275545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
