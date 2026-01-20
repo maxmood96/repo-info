@@ -96,7 +96,7 @@ CMD ["neo4j"]
 		Size: 40.0 MB (40040759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bea19917276b5b658993d06dbc9bc57d33f80bbb2b85ce6449efe6a62c378004`  
-		Last Modified: Thu, 18 Dec 2025 18:58:46 GMT  
+		Last Modified: Thu, 18 Dec 2025 18:59:18 GMT  
 		Size: 124.6 MB (124605443 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff3f948334d7343f73a4e397c1d7d446d14d58b16c9dfae9d048a647fe745ab8`  
@@ -108,7 +108,7 @@ CMD ["neo4j"]
 		Size: 122.5 MB (122472635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -221,7 +221,7 @@ CMD ["neo4j"]
 		Size: 38.2 MB (38222823 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ab68d90b345d5bf8b504955e9e2dcddee4e5cdb221a4256148fd89470c20516b`  
-		Last Modified: Thu, 18 Dec 2025 18:58:38 GMT  
+		Last Modified: Thu, 18 Dec 2025 18:58:57 GMT  
 		Size: 124.6 MB (124550499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f002833f5704257052ec31b14b4ac74ec0ff43edd5cec0a142ffac177962cf8`  
@@ -233,7 +233,7 @@ CMD ["neo4j"]
 		Size: 122.5 MB (122472643 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -253,7 +253,7 @@ $ docker pull neo4j@sha256:5c31578f62eba69e68b4928ab959b6357fdaf5f48ea02ed903cdb
 
 -	Layers:
 	-	`sha256:a75ecd1c76a96144a71f082e169d636728ed5b51646a7e50b69f61b200ad77fd`  
-		Last Modified: Thu, 18 Dec 2025 21:43:54 GMT  
+		Last Modified: Thu, 18 Dec 2025 18:58:34 GMT  
 		Size: 5.2 MB (5243846 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8a2b18a607d2d1eb4e2ddee038c67f719584e99f7a7d1e8bec2bf7435dc1797c`  
