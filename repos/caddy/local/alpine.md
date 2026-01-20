@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e4bd530ab75a01a5c22fbb097938267e4cde118eab50ae68078df59ce83bceb2`
-- Created: `2025-08-23T03:19:59Z`
-- Virtual Size: ~ 53.46 Mb  
+- Image ID: `sha256:e428fb4d0c7a2b0610f5a90dd2797e1b7790de0de9e46e9c2b90fdd745dd201e`
+- Created: `2026-01-16T21:47:42.097388511Z`
+- Virtual Size: ~ 58.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["caddy","run","--config","/etc/caddy/Caddyfile","--adapter","caddyfile"]`
@@ -110,6 +110,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `brotli-libs`
+
+```console
+brotli-libs-1.1.0-r2 description:
+Generic lossless compressor (libraries)
+
+brotli-libs-1.1.0-r2 webpage:
+https://github.com/google/brotli
+
+brotli-libs-1.1.0-r2 installed size:
+913 KiB
+
+brotli-libs-1.1.0-r2 license:
+MIT
+
+```
+
 ### `apk` package: `busybox`
 
 ```console
@@ -144,6 +161,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `c-ares`
+
+```console
+c-ares-1.34.6-r0 description:
+Asynchronous DNS/names resolver library
+
+c-ares-1.34.6-r0 webpage:
+https://c-ares.org/
+
+c-ares-1.34.6-r0 installed size:
+233 KiB
+
+c-ares-1.34.6-r0 license:
+MIT
+
+```
+
 ### `apk` package: `ca-certificates`
 
 ```console
@@ -175,6 +209,23 @@ ca-certificates-bundle-20250911-r0 installed size:
 
 ca-certificates-bundle-20250911-r0 license:
 MPL-2.0 AND MIT
+
+```
+
+### `apk` package: `curl`
+
+```console
+curl-8.14.1-r2 description:
+URL retrival utility and library
+
+curl-8.14.1-r2 webpage:
+https://curl.se/
+
+curl-8.14.1-r2 installed size:
+260 KiB
+
+curl-8.14.1-r2 license:
+curl
 
 ```
 
@@ -297,6 +348,57 @@ Apache-2.0
 
 ```
 
+### `apk` package: `libcurl`
+
+```console
+libcurl-8.14.1-r2 description:
+The multiprotocol file transfer library
+
+libcurl-8.14.1-r2 webpage:
+https://curl.se/
+
+libcurl-8.14.1-r2 installed size:
+669 KiB
+
+libcurl-8.14.1-r2 license:
+curl
+
+```
+
+### `apk` package: `libidn2`
+
+```console
+libidn2-2.3.7-r0 description:
+Encode/Decode library for internationalized domain names
+
+libidn2-2.3.7-r0 webpage:
+https://www.gnu.org/software/libidn#libidn2
+
+libidn2-2.3.7-r0 installed size:
+193 KiB
+
+libidn2-2.3.7-r0 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
+### `apk` package: `libpsl`
+
+```console
+libpsl-0.21.5-r3 description:
+C library for the Publix Suffix List
+
+libpsl-0.21.5-r3 webpage:
+https://rockdaboot.github.io/libpsl
+
+libpsl-0.21.5-r3 installed size:
+73 KiB
+
+libpsl-0.21.5-r3 license:
+MIT
+
+```
+
 ### `apk` package: `libssl3`
 
 ```console
@@ -311,6 +413,23 @@ libssl3-3.5.4-r0 installed size:
 
 libssl3-3.5.4-r0 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libunistring`
+
+```console
+libunistring-1.3-r0 description:
+Library for manipulating Unicode strings and C strings
+
+libunistring-1.3-r0 webpage:
+https://www.gnu.org/software/libunistring/
+
+libunistring-1.3-r0 installed size:
+1857 KiB
+
+libunistring-1.3-r0 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
 
 ```
 
@@ -365,6 +484,23 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
 
+### `apk` package: `nghttp2-libs`
+
+```console
+nghttp2-libs-1.65.0-r0 description:
+HTTP/2 C client, server and proxy (libraries)
+
+nghttp2-libs-1.65.0-r0 webpage:
+https://nghttp2.org
+
+nghttp2-libs-1.65.0-r0 installed size:
+129 KiB
+
+nghttp2-libs-1.65.0-r0 license:
+MIT
+
+```
+
 ### `apk` package: `scanelf`
 
 ```console
@@ -413,5 +549,22 @@ zlib-1.3.1-r2 installed size:
 
 zlib-1.3.1-r2 license:
 Zlib
+
+```
+
+### `apk` package: `zstd-libs`
+
+```console
+zstd-libs-1.5.7-r0 description:
+Zstandard - Fast real-time compression algorithm (libraries)
+
+zstd-libs-1.5.7-r0 webpage:
+https://facebook.github.io/zstd/
+
+zstd-libs-1.5.7-r0 installed size:
+701 KiB
+
+zstd-libs-1.5.7-r0 license:
+BSD-3-Clause OR GPL-2.0-or-later
 
 ```

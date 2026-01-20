@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:258c6bbd204571a9b50ac7555116546433a8fc75bbb42b71e5184c95a52ba45c`
-- Created: `2025-12-02T18:11:29.674970485Z`
-- Virtual Size: ~ 232.16 Mb  
+- Image ID: `sha256:28ec7feb91b322c2bdcf24b18c4b5cc17d66b2ecfebaf0d9311235d47048df31`
+- Created: `2026-01-16T21:47:44.845647278Z`
+- Virtual Size: ~ 232.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.25.5`
+  - `GOLANG_VERSION=1.25.6`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
   - `XCADDY_VERSION=v0.4.5`
@@ -159,16 +159,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.5-r0 description:
+c-ares-1.34.6-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.5-r0 webpage:
+c-ares-1.34.6-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.5-r0 installed size:
+c-ares-1.34.6-r0 installed size:
 233 KiB
 
-c-ares-1.34.5-r0 license:
+c-ares-1.34.6-r0 license:
 MIT
 
 ```
@@ -204,6 +204,23 @@ ca-certificates-bundle-20250911-r0 installed size:
 
 ca-certificates-bundle-20250911-r0 license:
 MPL-2.0 AND MIT
+
+```
+
+### `apk` package: `curl`
+
+```console
+curl-8.14.1-r2 description:
+URL retrival utility and library
+
+curl-8.14.1-r2 webpage:
+https://curl.se/
+
+curl-8.14.1-r2 installed size:
+260 KiB
+
+curl-8.14.1-r2 license:
+curl
 
 ```
 
