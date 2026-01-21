@@ -49,7 +49,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:16c195d4c5e9683ea3bd3e3afc1a4bd00392028211586424d551a9b2f20d6978`  
-		Last Modified: Wed, 17 Dec 2025 12:02:21 GMT  
+		Last Modified: Fri, 02 Jan 2026 23:11:43 GMT  
 		Size: 34.4 MB (34398943 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -69,7 +69,7 @@ $ docker pull ubuntu@sha256:5f55f0bc7da9fd70cc801f8d256ce86407759b4e699d2d0acef5
 
 -	Layers:
 	-	`sha256:458996317100c097697efdc1c745eff51d5ffddcacbbce724199f49ebd954147`  
-		Last Modified: Fri, 02 Jan 2026 22:39:22 GMT  
+		Last Modified: Sat, 03 Jan 2026 00:05:01 GMT  
 		Size: 2.2 MB (2242090 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -103,7 +103,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:86605e7f0af274af97c473f49e185f0ab72cde1b9e84f77330df2dae244554c6`  
-		Last Modified: Wed, 17 Dec 2025 12:02:36 GMT  
+		Last Modified: Fri, 02 Jan 2026 22:41:31 GMT  
 		Size: 31.8 MB (31835257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -177,7 +177,7 @@ $ docker pull ubuntu@sha256:bf1af808f6ffbe83fa4d474a824def383108727a90badb42201e
 
 -	Layers:
 	-	`sha256:3c1e3348857e1eb9dcebc5af32a948703ac5b29c58b39bab75ea8a095935f045`  
-		Last Modified: Sat, 03 Jan 2026 00:05:08 GMT  
+		Last Modified: Fri, 02 Jan 2026 22:41:12 GMT  
 		Size: 2.2 MB (2242287 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -211,7 +211,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:ade432f435a67472df639da16a96659dc7c3849f8d5ede58cf5b95e186dec925`  
-		Last Modified: Fri, 02 Jan 2026 22:48:17 GMT  
+		Last Modified: Wed, 17 Dec 2025 12:02:43 GMT  
 		Size: 39.6 MB (39596922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -231,7 +231,7 @@ $ docker pull ubuntu@sha256:eb85040a562fb22d1fd77773aab9ca130ca8b8dba3ab59f88a29
 
 -	Layers:
 	-	`sha256:ab2e21ed4ab640e44c1f92ee96b78890a8330916024a3de1a39cf9db166ac614`  
-		Last Modified: Fri, 02 Jan 2026 22:48:09 GMT  
+		Last Modified: Sat, 03 Jan 2026 00:05:12 GMT  
 		Size: 2.2 MB (2245643 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -319,7 +319,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:8e1aa813c1657f48b7291cc09d13191de87f8108febddf3d8484783665856c5e`  
-		Last Modified: Wed, 17 Dec 2025 12:02:57 GMT  
+		Last Modified: Fri, 02 Jan 2026 22:38:50 GMT  
 		Size: 34.1 MB (34098575 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
