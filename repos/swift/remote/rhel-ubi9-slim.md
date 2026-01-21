@@ -109,7 +109,7 @@ $ docker pull swift@sha256:01a3e4c5271268304d1ce3eac1cd1c5ae3ed81309f28714cbc0fe
 
 -	Layers:
 	-	`sha256:06b11dfa3659dc9697fa17b66e718250131908062cdda7abb14726e28eac351a`  
-		Last Modified: Tue, 20 Jan 2026 23:48:51 GMT  
+		Last Modified: Tue, 20 Jan 2026 19:18:02 GMT  
 		Size: 6.4 MB (6406236 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4f8910e3c863ecb1b4d164b3de509114ac9323d714bf96d6509721da8f7901bf`  
@@ -191,11 +191,11 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 
 -	Layers:
 	-	`sha256:6c41f3a181bf99791e1f329482c8281878364455483707ad0eef013c79476e21`  
-		Last Modified: Mon, 19 Jan 2026 06:04:08 GMT  
+		Last Modified: Mon, 19 Jan 2026 06:04:51 GMT  
 		Size: 77.7 MB (77733875 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5fa62dd8f997b48c9f27500aae83861f7333aab82180a09682175caa585229b6`  
-		Last Modified: Tue, 20 Jan 2026 19:18:09 GMT  
+		Last Modified: Tue, 20 Jan 2026 19:17:54 GMT  
 		Size: 55.0 MB (54968816 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
