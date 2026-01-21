@@ -47,7 +47,7 @@ CMD ["influxd-meta"]
 
 -	Layers:
 	-	`sha256:c1be109a62df95316ceac87ea501079f32e17f36b636865a860841b7db06100c`  
-		Last Modified: Tue, 13 Jan 2026 00:41:40 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:15 GMT  
 		Size: 48.5 MB (48481622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64538a062a61add8dc8b290fa69475e8902eb839c497a5f5dcd5a950422e493c`  
@@ -55,15 +55,15 @@ CMD ["influxd-meta"]
 		Size: 24.0 MB (24036867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c8226584456c231e3329e2f781db217386df170900017ccf5ad54f649f3a4892`  
-		Last Modified: Tue, 13 Jan 2026 04:02:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:02:09 GMT  
 		Size: 18.8 MB (18780819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61622d86659aed4ba8f4ef77c6784a2201f76664031c14b2cfc4382d1fad188c`  
-		Last Modified: Tue, 13 Jan 2026 04:02:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:02:06 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a91888eb7d9961fd828a172be924f04fc445944a4a20a7c1b5d0cdba26ca1429`  
-		Last Modified: Tue, 13 Jan 2026 04:02:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:02:06 GMT  
 		Size: 371.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
