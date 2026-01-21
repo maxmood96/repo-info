@@ -56,15 +56,15 @@ CMD ["pypy"]
 		Size: 25.6 MB (25613410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be442a7e0d6f290b909f8da51840566e06ab51bfbea277c70fbda26c44c8259d`  
-		Last Modified: Tue, 13 Jan 2026 03:54:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:54:29 GMT  
 		Size: 67.8 MB (67786776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26d823e3848f3d74363d9b5b44f39f2d2f81a99a37d8c7fb54831a489a32e999`  
-		Last Modified: Tue, 13 Jan 2026 04:50:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:12:51 GMT  
 		Size: 236.0 MB (236001828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b6587d516b624fede2da0b1c40c488d3a13c5fb896bb4d354717e687611061f`  
-		Last Modified: Tue, 13 Jan 2026 05:52:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:52:53 GMT  
 		Size: 33.4 MB (33444114 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -127,7 +127,7 @@ CMD ["pypy"]
 
 -	Layers:
 	-	`sha256:5582010cab7f00a8f96e076b02666116eaa7e4af9a74eb44f2946a593b50294f`  
-		Last Modified: Tue, 13 Jan 2026 00:42:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:51 GMT  
 		Size: 49.6 MB (49648083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:599d5b6b6766fd729045e2e7d0396d1f61fe41c612d4aef6bb3bf5ea7db12ae2`  
@@ -218,11 +218,11 @@ CMD ["pypy"]
 		Size: 69.8 MB (69803208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c438693622c619054710e61f4e49c9f44709996e7ac1c8577527c38f87d008f`  
-		Last Modified: Tue, 13 Jan 2026 04:02:03 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:57:32 GMT  
 		Size: 240.1 MB (240108789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:874336e047fc8dd44d621ff39d3cf7943d911162a75db8a59afc29ffceee9089`  
-		Last Modified: Tue, 13 Jan 2026 04:36:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:36:54 GMT  
 		Size: 29.0 MB (28980217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -242,10 +242,10 @@ $ docker pull pypy@sha256:d90be4b3b7a9ae6c7aa28e94fb429466d20d1b012791495a1d653e
 
 -	Layers:
 	-	`sha256:68c4a35410e1a51b97ffea5c5cdd6c6e5407c125b3d0b3370e214897eba43526`  
-		Last Modified: Tue, 13 Jan 2026 07:39:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:36:42 GMT  
 		Size: 17.2 MB (17197052 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:304b0bae3f3a862fafe33201b740b4e21a9fcdb1ff432ff5e75a5ee587fdb4c5`  
-		Last Modified: Tue, 13 Jan 2026 07:39:47 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:36:41 GMT  
 		Size: 20.4 KB (20410 bytes)  
 		MIME: application/vnd.in-toto+json
