@@ -41,11 +41,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 
 -	Layers:
 	-	`sha256:89d3b5863331d6bb79d550bf0acce60aeac36e2c065470bf6d6f8d76c9cb6f4f`  
-		Last Modified: Wed, 14 Jan 2026 13:13:55 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:23:48 GMT  
 		Size: 62.9 MB (62940156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:307d1d76793bcc6edf4cb82a591ad761763c182f5c9ed66b11cf6815592a685e`  
-		Last Modified: Thu, 15 Jan 2026 22:09:08 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:09:39 GMT  
 		Size: 154.3 MB (154337062 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -65,7 +65,7 @@ $ docker pull amazoncorretto@sha256:b48c256ee834f2363a8d73c8f321a279e09921e9186d
 
 -	Layers:
 	-	`sha256:1e1f5761ce05aaaa01c67ac12c4193e48fed4ef304bedaa647efc1164605cee3`  
-		Last Modified: Thu, 15 Jan 2026 22:09:05 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:49:00 GMT  
 		Size: 5.7 MB (5683305 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:79dd3b387ade6ba1701baff15a2c5456392fdf6efd86d7a419399c321eea5881`  
@@ -127,7 +127,7 @@ $ docker pull amazoncorretto@sha256:5332de8553be85414e0f3f8d25804979561176eedc9b
 
 -	Layers:
 	-	`sha256:b7bdff2f252f260bbf138f8960b72af703b4ef96ad83b8929403f03a7a6e0b76`  
-		Last Modified: Thu, 15 Jan 2026 22:09:53 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:49:07 GMT  
 		Size: 5.5 MB (5501773 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4bc87690709091fcf61dd41132f05b888aeb1c7274e6299b790ae138b1d0f88d`  
