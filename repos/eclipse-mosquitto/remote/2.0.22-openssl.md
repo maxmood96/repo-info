@@ -57,7 +57,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:35ae20b23dca2bdf02f0691eb26da312a793d869caf2bc106080d620bda7cc36`  
@@ -201,7 +201,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0387e1d2824c476d2d2b7710f46338c3c73366b76000834705b5dce3e8e20075`  
@@ -353,11 +353,11 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a63e73939e2aacf3954854680cebfb4d62cea9aa53260a22868c2f986935a65b`  
-		Last Modified: Thu, 15 Jan 2026 08:03:41 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:02:00 GMT  
 		Size: 984.5 KB (984497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:077b75908da51530f85aad32c9b8e3c7ba48315b531f54d84e05dffdd9f1e844`  
-		Last Modified: Thu, 15 Jan 2026 08:03:45 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:02:00 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -423,15 +423,15 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:e6b06613ca2e7cdf3e8ebbe71ca45137242628a4a3a4bfcb7a9f76d0d5b0e653`  
-		Last Modified: Sun, 07 Dec 2025 14:06:46 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:199ab76496ac2ee9ec0a08d3f423251943aac0847eea0166b74a9a2959413450`  
-		Last Modified: Fri, 14 Nov 2025 18:00:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 19:39:16 GMT  
 		Size: 935.1 KB (935062 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48335cc10ed50211c72f5fb86b33da5abf916d3faca5231b4aefc282b4d32225`  
-		Last Modified: Tue, 13 Jan 2026 19:39:15 GMT  
+		Last Modified: Fri, 14 Nov 2025 18:00:32 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
