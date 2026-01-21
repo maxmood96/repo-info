@@ -44,11 +44,11 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:119d43eec815e5f9a47da3a7d59454581b1e204b0c34db86f171b7ceb3336533`  
-		Last Modified: Tue, 13 Jan 2026 00:42:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:34 GMT  
 		Size: 29.8 MB (29773685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14bda8ee697b8dbbfe2f91e296446db78c346a2d1e7603e894d0ce5a0c377404`  
-		Last Modified: Tue, 20 Jan 2026 19:27:22 GMT  
+		Last Modified: Tue, 20 Jan 2026 18:47:11 GMT  
 		Size: 2.4 MB (2371073 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee3b56e0c2ccbea56b035610893a6dabe0c566a0a85fbfa68329191b1896bd11`  
@@ -72,7 +72,7 @@ $ docker pull openjdk@sha256:9b11d04bfd6d6de08e3a8bf06be4fe6d81feb0829660da8ed3e
 
 -	Layers:
 	-	`sha256:4f25d35bca60a9358a285c57e6789ddfa6039b6039bdd4352185b7a22a6554c9`  
-		Last Modified: Tue, 20 Jan 2026 19:24:03 GMT  
+		Last Modified: Tue, 20 Jan 2026 18:47:11 GMT  
 		Size: 2.3 MB (2278851 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7293a2188e078f512b99f5833fb57c983eb35a0ba7795c3ba0e341c93852a928`  
@@ -121,7 +121,7 @@ CMD ["jshell"]
 		Size: 2.3 MB (2314132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8171d5a729cb2fe01b61bd194df47edeebddc4d05293478efc438ccf78a0def`  
-		Last Modified: Tue, 20 Jan 2026 18:46:41 GMT  
+		Last Modified: Tue, 20 Jan 2026 19:47:45 GMT  
 		Size: 225.9 MB (225936488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -141,7 +141,7 @@ $ docker pull openjdk@sha256:f119cdc0c4f9b148b81b4729be7124f2024748b2ba53bf6b979
 
 -	Layers:
 	-	`sha256:4b31a2e3e1445eebca574b2e8d8110c26d79ab0beb2b478555e678663733313c`  
-		Last Modified: Tue, 20 Jan 2026 19:24:10 GMT  
+		Last Modified: Tue, 20 Jan 2026 18:46:37 GMT  
 		Size: 2.3 MB (2278537 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:44a39505c743bafc6a02c8c6d531b0fc46ae6e94c69337b1d3fe346d665087d6`  
