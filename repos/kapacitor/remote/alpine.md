@@ -63,7 +63,7 @@ CMD ["kapacitord"]
 		Size: 292.5 KB (292459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f05f43be72abc0195a3ec86c2ad5e5b8211b326cfbbc9bb1b4861b7e66c8e6a`  
-		Last Modified: Tue, 09 Dec 2025 12:08:56 GMT  
+		Last Modified: Wed, 08 Oct 2025 23:10:44 GMT  
 		Size: 72.0 MB (71982671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:76d2c20637675d0a7793eed8d3f7a433a08a09d21ecd9ceb86ddde1d8a90d88e`  
@@ -95,6 +95,6 @@ $ docker pull kapacitor@sha256:a2272f84d134db7769109c42ab599628141be6e636573dd66
 		Size: 366.5 KB (366522 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a60aa5a1214558852c195c1b3f80818dbb7b1113d266e0311dddcf4f17efdb08`  
-		Last Modified: Wed, 08 Oct 2025 23:10:42 GMT  
+		Last Modified: Mon, 15 Dec 2025 09:52:30 GMT  
 		Size: 15.7 KB (15684 bytes)  
 		MIME: application/vnd.in-toto+json

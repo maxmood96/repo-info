@@ -101,7 +101,7 @@ $ docker pull kapacitor@sha256:da49a5d03519c9afb5a37fd68c601ad03da5677f937d098e9
 
 -	Layers:
 	-	`sha256:74b897cbd09ebfb85d02ae725b41a3a704f39493ae150df51c5b919bdf62e0ed`  
-		Last Modified: Fri, 16 Jan 2026 02:22:31 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:16:40 GMT  
 		Size: 3.7 MB (3731269 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a81142b9e66372f3ee8c660975c4219a8830dd755a3164ae0925aa438a22389b`  
@@ -159,7 +159,7 @@ CMD ["kapacitord"]
 
 -	Layers:
 	-	`sha256:517f43312bfe3b4db0f0f031d8b6deb1aa5616b07fae71fa0d349f9ce451564f`  
-		Last Modified: Fri, 09 Jan 2026 07:36:03 GMT  
+		Last Modified: Fri, 09 Jan 2026 11:16:52 GMT  
 		Size: 27.4 MB (27383497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5786d4bf33c2933fa12f0a1a6196c7fc894058df3d74975169eb5b36ee78c0c4`  
@@ -167,7 +167,7 @@ CMD ["kapacitord"]
 		Size: 7.1 MB (7055052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a7b066ac69fa615a156bc4b2cf1298e60a75122022abe5360dac459bcfdd4b7b`  
-		Last Modified: Thu, 15 Jan 2026 23:22:13 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:22:26 GMT  
 		Size: 47.2 MB (47213852 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:473f523369fde43a4ea8bd398add7b37d189dc3d4d25f1bc37226edc54d76719`  
@@ -179,7 +179,7 @@ CMD ["kapacitord"]
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2cd761fdd2bb99f3381484f0aee3ff1a23ba5989db64cdcc9d04980bd2e16d73`  
-		Last Modified: Thu, 15 Jan 2026 23:22:21 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:22:11 GMT  
 		Size: 298.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -199,7 +199,7 @@ $ docker pull kapacitor@sha256:74947cdf7e133ce11495ec5896ab81f4fb893ec50cb7a27a9
 
 -	Layers:
 	-	`sha256:f263e41f29ec2a97e31bc94888ca0b548221e2fa232e18d75c8744d4f7ce97b9`  
-		Last Modified: Fri, 16 Jan 2026 02:22:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:22:11 GMT  
 		Size: 3.7 MB (3730743 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1fe0a8ddc2a028f140c1a139ae06031fa36e9c2b0ec6949a12cb5a601f607fc0`  
