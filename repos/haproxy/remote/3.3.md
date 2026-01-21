@@ -67,7 +67,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 -	Layers:
 	-	`sha256:119d43eec815e5f9a47da3a7d59454581b1e204b0c34db86f171b7ceb3336533`  
-		Last Modified: Tue, 13 Jan 2026 00:42:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:34 GMT  
 		Size: 29.8 MB (29773685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5660b0d5518ff1aa220fe8090cad1060f22a4df345bdc586025876e00b85ef34`  
@@ -83,11 +83,11 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 14.3 MB (14335538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ede8989e8bdcf58579a467d9ba52175ccefe16b5e5c5c58c7e3519c4ef5be38`  
-		Last Modified: Tue, 13 Jan 2026 01:16:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:05 GMT  
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -159,7 +159,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 -	Layers:
 	-	`sha256:c113d410d30c2c035a105b56d3937958c81fbe2530f44add3bae903be6864324`  
-		Last Modified: Tue, 13 Jan 2026 00:42:30 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:23 GMT  
 		Size: 27.9 MB (27942724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9e7cbc92ac99513c4cb428e7c1cf80159c6ce7c88c91d9323d7addf942184998`  
@@ -167,7 +167,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 1.5 MB (1534791 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:82844ed5a42abd8a7b32a26f6483c226f465c1a4c836fdac195b5571ca6b305f`  
-		Last Modified: Tue, 13 Jan 2026 01:17:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:01 GMT  
 		Size: 1.2 KB (1160 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14ebf8d365f436ed35576ebb5248e5bb082c2e6cf29409594c562573139a9ec9`  
@@ -179,7 +179,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -251,11 +251,11 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 -	Layers:
 	-	`sha256:7c33f0ee8e5c8636ae24c5685841e42e721bbb2973888f046a05ab9eb619e682`  
-		Last Modified: Tue, 13 Jan 2026 00:42:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:33 GMT  
 		Size: 26.2 MB (26208578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4bd86ad1638f7b71307e7523ffa7599889e8d87e1cafc2a9856f13fe814a67a`  
-		Last Modified: Tue, 13 Jan 2026 01:16:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:52 GMT  
 		Size: 1.5 MB (1488832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c3c86f540bdc236914e2070fed9ff5d9cb4f04f92d3e7b67d21b47eed68910f`  
@@ -263,15 +263,15 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 1.2 KB (1159 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f894225ca10be8844ad9344a4ea340db39fa0287f8ab8744d05246f1616f955d`  
-		Last Modified: Tue, 13 Jan 2026 01:16:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:46 GMT  
 		Size: 14.3 MB (14333016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc2ae25bb6912f0577ba04ad8ad285ce5a34012bac47e7b5b851c3d312c2502b`  
-		Last Modified: Tue, 13 Jan 2026 01:16:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:46 GMT  
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -295,7 +295,7 @@ $ docker pull haproxy@sha256:71478b1272c9a3f776d896a4928d4a51302fd09c40d6c83cf37
 		Size: 2.1 MB (2115185 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f231660306e20eea57a536d6144148f88d5a5760679fe70ae89d07ce6a2cf1b`  
-		Last Modified: Tue, 13 Jan 2026 04:59:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:45 GMT  
 		Size: 22.5 KB (22460 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -347,11 +347,11 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a9724f3a5b949e7fd65d8f90ae442f9ed26a9d3965ed4ce116d6f9cffd75bf55`  
-		Last Modified: Tue, 13 Jan 2026 01:15:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:15:52 GMT  
 		Size: 1.6 MB (1563705 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b7d363d766745b6b04d164143bc8a24fe9c6873c5923cf0eeda1fd740160eedf`  
-		Last Modified: Tue, 13 Jan 2026 01:15:52 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:15:44 GMT  
 		Size: 1.2 KB (1160 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02a17dad13576d09a8d222ddc5141b151a5101180bcdbe5e0683eb59e841ed5c`  
@@ -359,11 +359,11 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 14.2 MB (14197057 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:80c05a3ecdafdaa7454b88daccdb6415573a69f6b50f132f4034aba9669d1d78`  
-		Last Modified: Tue, 13 Jan 2026 01:15:52 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:15:44 GMT  
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -383,11 +383,11 @@ $ docker pull haproxy@sha256:8db9524eace5a6c9303e718bc4e2ba12e30052eb54c15da4035
 
 -	Layers:
 	-	`sha256:0cd4e15c1e2c8408419216795992816f3a45b689a108c25dee17002c75792b5c`  
-		Last Modified: Tue, 13 Jan 2026 05:00:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:15:44 GMT  
 		Size: 2.1 MB (2114047 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3b3cc346dcae7481e325211a6bac4c41f05c5a4f0e54dcf78eb48ec4882265f7`  
-		Last Modified: Tue, 13 Jan 2026 01:15:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:00:07 GMT  
 		Size: 22.5 KB (22495 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -443,7 +443,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 1.6 MB (1603096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:155cc292b249e4b5d4c21e560fb5a3f7e84b4cced40ff443ac6d66daeea7623a`  
-		Last Modified: Tue, 13 Jan 2026 01:17:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:48 GMT  
 		Size: 1.2 KB (1158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc296783752133069cfb6f6c21936ab2ce0fcf5f39f4436ed316fdee1d1e7dab`  
@@ -455,7 +455,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -531,15 +531,15 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 33.6 MB (33595600 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bd29135c936e51adf8caf7d3f0e6cf6cdb82f6390a398fb89d6fb985e597531`  
-		Last Modified: Tue, 13 Jan 2026 01:19:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:19:50 GMT  
 		Size: 1.6 MB (1638928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:087ca31af377d1c3a213203c77c6df043d31e261426f38f3ff3a4dc133843e29`  
-		Last Modified: Tue, 13 Jan 2026 01:19:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:19:42 GMT  
 		Size: 1.2 KB (1160 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93f78d37bfffc0f47f10c19e197daed29c732133d4876466498a05587d98525d`  
-		Last Modified: Tue, 13 Jan 2026 01:19:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:19:43 GMT  
 		Size: 15.1 MB (15055228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:661a6acc14e9da6e21656819e2dc5ecbe9ef65868b95a478d461e49c7f8e61e0`  
@@ -547,7 +547,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -631,7 +631,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 1.2 KB (1165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c9eac3dc023c943710dce44daa9d6c0f78d958cf069633564454bf4e502986e`  
-		Last Modified: Wed, 14 Jan 2026 04:48:06 GMT  
+		Last Modified: Wed, 14 Jan 2026 04:47:49 GMT  
 		Size: 13.8 MB (13794849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8ce022a2309642c476c5e0d301c41891cb12fc61c669f4e49a01a19fb3ec4b9b`  
@@ -639,7 +639,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 451.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -663,7 +663,7 @@ $ docker pull haproxy@sha256:ad5907548eb961602f3216044486f19468d4a1a78f9297db3e8
 		Size: 2.1 MB (2107699 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d2a97340573aafed77f07c0c18c7dafa0e3a47655b014e3be549502586ea21d4`  
-		Last Modified: Wed, 14 Jan 2026 04:47:47 GMT  
+		Last Modified: Wed, 14 Jan 2026 07:57:51 GMT  
 		Size: 22.4 KB (22398 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -727,11 +727,11 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 14.7 MB (14707500 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f5940333225dd794213a8ffdcb9b0e55e249461da16d346522e8ff57862716a9`  
-		Last Modified: Tue, 13 Jan 2026 14:12:16 GMT  
+		Last Modified: Tue, 13 Jan 2026 14:12:36 GMT  
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -751,7 +751,7 @@ $ docker pull haproxy@sha256:7982b14ff420e987851f0a62104e3c809e4aa2654a33dc478c7
 
 -	Layers:
 	-	`sha256:6bebab486bf55188850df08b453577e7a20c4482771728fd26db0673e750bc13`  
-		Last Modified: Tue, 13 Jan 2026 16:57:47 GMT  
+		Last Modified: Tue, 13 Jan 2026 14:12:16 GMT  
 		Size: 2.1 MB (2115206 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ac77aa3c461ebc612ed73efb82ea406a0bf824ff818e07c845caba60d6a01488`  
