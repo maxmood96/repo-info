@@ -103,11 +103,11 @@ $ docker pull aerospike@sha256:69fb3c2cd871bc32dab5b3ee3dbe9ebe120940dd500e24936
 
 -	Layers:
 	-	`sha256:a44f6fd922922f40580d5890c3d4d0d62a867ea6bcb24b51945abe1e47eb233a`  
-		Last Modified: Fri, 16 Jan 2026 00:26:54 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:08:24 GMT  
 		Size: 2.2 MB (2182312 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d7a9fa3c675043db3c91df4df76ff857d5f53f38923456acf8faaaea021c749c`  
-		Last Modified: Fri, 16 Jan 2026 00:26:55 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:08:24 GMT  
 		Size: 29.0 KB (28969 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -171,11 +171,11 @@ CMD ["asd"]
 
 -	Layers:
 	-	`sha256:36bf709aa36d66b784b0ba1aa3276848f28501175eeb4d7a310b1a98578f8558`  
-		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:03:33 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:021bd27dca920305bdea6980d957f70b54b9e54869fb55817559b1dfe6a91ed3`  
-		Last Modified: Thu, 15 Jan 2026 22:08:31 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:08:59 GMT  
 		Size: 51.0 MB (50999016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:31650bc093697c08efe6da002287c689dbff1503a01c0d81bb8c7f57476a48e5`  
