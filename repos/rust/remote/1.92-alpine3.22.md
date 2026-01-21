@@ -50,7 +50,7 @@ RUN set -eux;         arch="$(apk --print-arch)";     case "$arch" in         'x
 		Size: 65.1 MB (65084201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d417a22cb56d24ac2a7e132e174d1142198d957fd651eb2eb97096862f5b6f91`  
-		Last Modified: Thu, 11 Dec 2025 19:30:33 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:30:15 GMT  
 		Size: 268.1 MB (268075167 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -74,7 +74,7 @@ $ docker pull rust@sha256:1b7fc0ecab610da83bc50ada9f9df03bbf82f20ba73e52f59b5327
 		Size: 962.3 KB (962311 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:337f7045a6acee7f79a388a3cb27f1d6f9bc2c4b9eb8d427d2ea3931661bfd3e`  
-		Last Modified: Thu, 11 Dec 2025 21:45:13 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:30:09 GMT  
 		Size: 12.2 KB (12186 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -111,7 +111,7 @@ RUN set -eux;         arch="$(apk --print-arch)";     case "$arch" in         'x
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed4c401eff175c1ff8754f04fc0b349f77f98539471e856ab110ecfb12c79b4d`  
-		Last Modified: Thu, 11 Dec 2025 19:38:39 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:38:20 GMT  
 		Size: 61.8 MB (61758667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3215ef3cc4df55466eeac47959b3f7c2a77259c483d8a32eb3835984e0f3973`  
@@ -172,7 +172,7 @@ RUN set -eux;         arch="$(apk --print-arch)";     case "$arch" in         'x
 
 -	Layers:
 	-	`sha256:85a0f69f026b4a01420490809bed190217e05518f7b718c0bbc1ad4871e0dedf`  
-		Last Modified: Sun, 07 Dec 2025 14:06:45 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cc04ad7750d3a1abe8fd97bb743f82c32f273586e3d5a4ef16461ebc65504de4`  
@@ -204,6 +204,6 @@ $ docker pull rust@sha256:cb1b7d2296c898d194afa90047dbc3a7e426c667e10ed267060c5e
 		Size: 974.9 KB (974855 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:424a3138f1ddc291d835e84f7d7866284ca4011b95a61983b4019256f0a98c1f`  
-		Last Modified: Thu, 11 Dec 2025 19:40:24 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:45:23 GMT  
 		Size: 12.2 KB (12232 bytes)  
 		MIME: application/vnd.in-toto+json
