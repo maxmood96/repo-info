@@ -67,15 +67,15 @@ CMD ["mysqld"]
 
 -	Layers:
 	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
-		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:08:17 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6e3687b576e09030d0137b68778ac8b794e931d12c86233b9a846bed3e1cee7`  
-		Last Modified: Sat, 17 Jan 2026 00:01:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:488d39dd8c3ecec5a4aa482ea82cbdd336bdf0ccc5e9fe97857acc6f19f3061d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:01:04 GMT  
 		Size: 783.6 KB (783556 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3e2cc70f011730a52b024ae2217527eaf26f9627e76590a5236d1381372c1463`  
@@ -83,7 +83,7 @@ CMD ["mysqld"]
 		Size: 6.2 MB (6175172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:68b569d93fe587e6f7fc6d4d6f8653ab0662793b182ec4d3c2f7915720c9395b`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:19:59 GMT  
 		Size: 2.6 KB (2607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:41e3b86c4294968844915992442cc209a431158244998ffda17ffadd9a115cff`  
@@ -195,7 +195,7 @@ CMD ["mysqld"]
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fb5892b8b345e3cb2c3ddcac58883355e6ed7137963e770d8be9966865b117a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:31:30 GMT  
 		Size: 737.5 KB (737527 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f1dd235a9a2a7e215341f6e7b49b32f597d401af25cfb2a3cff5a3d35f0e826`  
@@ -207,11 +207,11 @@ CMD ["mysqld"]
 		Size: 2.6 KB (2603 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:98c0743b28fcff60aeb4d6fa3b4e513a70d1c6f88e0b87b33650e8b8f79c0c93`  
-		Last Modified: Fri, 16 Jan 2026 23:31:19 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:31:30 GMT  
 		Size: 341.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f1761851302a3e2edd49ac48552aee144d5037d284d54b44121cf2582db8387`  
-		Last Modified: Fri, 16 Jan 2026 23:31:21 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:31:34 GMT  
 		Size: 50.0 MB (49960731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e766303672c6740f7064ab2366ae746c37371b8f99fb0c5b2c2028d6629fc5c`  
@@ -219,11 +219,11 @@ CMD ["mysqld"]
 		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9aa56a3fad114533409ef35e78b8d1ea8ece781aab2d1b236105dc38f23dd933`  
-		Last Modified: Fri, 16 Jan 2026 23:31:55 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:31:23 GMT  
 		Size: 167.4 MB (167389810 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a7933d1e6d8aebb094bfc24e0e8427937f35b352308579c048531fc30b561e0c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:29 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
 		Size: 5.3 KB (5332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -243,10 +243,10 @@ $ docker pull mysql@sha256:ba4120e2e4755e5c5e8df7ba5ac2224321201db0ec32bf60868db
 
 -	Layers:
 	-	`sha256:605099f469cfd4acf5650903f362545b02a5810b5898ca2ef32f242d0931b34e`  
-		Last Modified: Sat, 17 Jan 2026 01:03:25 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:31:19 GMT  
 		Size: 17.8 MB (17806831 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:916ea0327b00bcba62230558f1497b7bd5c252511f547e28fa8d5d889d86a9f1`  
-		Last Modified: Sat, 17 Jan 2026 01:03:28 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
 		Size: 35.6 KB (35616 bytes)  
 		MIME: application/vnd.in-toto+json
