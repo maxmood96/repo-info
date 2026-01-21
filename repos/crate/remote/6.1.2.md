@@ -67,7 +67,7 @@ CMD ["crate"]
 		Size: 67.5 MB (67510075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0deb99bbe4a25c1266e7d6135b74aa048062ad833a5da7c4a3c1c0709761a647`  
-		Last Modified: Mon, 05 Jan 2026 19:11:44 GMT  
+		Last Modified: Mon, 05 Jan 2026 19:11:22 GMT  
 		Size: 14.5 MB (14500482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:04f3eb4f912636d874a99e50ca38b6138a1046a2845df02f42ba4788e6415820`  
@@ -95,7 +95,7 @@ CMD ["crate"]
 		Size: 954.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c72c75614345c96f74616aab3677a5588f4afbbcc4e1501f6778bcd10b0d458`  
-		Last Modified: Mon, 05 Jan 2026 19:11:24 GMT  
+		Last Modified: Mon, 05 Jan 2026 19:11:42 GMT  
 		Size: 503.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -119,7 +119,7 @@ $ docker pull crate@sha256:c60023a6b2bc8cf1613c25aa37a539981c2f18036a46edc182e28
 		Size: 5.2 MB (5191066 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7bb8c597756ff70313672c657eb61bbff6632864b3d9416d59f88d6083792720`  
-		Last Modified: Mon, 05 Jan 2026 19:11:22 GMT  
+		Last Modified: Mon, 05 Jan 2026 21:39:06 GMT  
 		Size: 23.1 KB (23140 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -187,7 +187,7 @@ CMD ["crate"]
 		Size: 149.8 MB (149821958 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:995b61c8be80805bcd77a5783eb3c40f15fd1a6a2eec77539b46f86622c0af9b`  
-		Last Modified: Mon, 05 Jan 2026 19:11:32 GMT  
+		Last Modified: Mon, 05 Jan 2026 19:11:12 GMT  
 		Size: 1.9 MB (1943631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22400d915397da65fea77ef50d015c6688d4187c74dc972d918e00cb87b8ac94`  
@@ -207,7 +207,7 @@ CMD ["crate"]
 		Size: 952.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c8a03a7b43c271c70f02ec765acc240757df3f9fd90691ccad53fd2f0f0a3c2c`  
-		Last Modified: Mon, 05 Jan 2026 19:11:14 GMT  
+		Last Modified: Mon, 05 Jan 2026 19:11:32 GMT  
 		Size: 504.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
