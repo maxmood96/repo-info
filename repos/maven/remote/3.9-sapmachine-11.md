@@ -79,19 +79,19 @@ CMD ["mvn"]
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75032fda45460a30ac756e467ea144ddd984e12ac747caebaea56f00a35f23be`  
-		Last Modified: Thu, 15 Jan 2026 22:47:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:46:30 GMT  
 		Size: 200.6 MB (200639185 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7ac2566bf038aec9a1be07d9d1c0714441b583e2a5f4e2350a830ce07d00a85`  
-		Last Modified: Fri, 16 Jan 2026 02:47:36 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:47:44 GMT  
 		Size: 25.5 MB (25462037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:debc3058315411a3b59700c0f497de5bbcc9237a81acb71430722bf09618cefa`  
-		Last Modified: Fri, 16 Jan 2026 02:47:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:47:43 GMT  
 		Size: 9.3 MB (9312247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbd617b16ce057ca690838ff669a5c0380a93f9fdf475644667fea2edf79d586`  
-		Last Modified: Fri, 16 Jan 2026 02:47:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:47:35 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -99,7 +99,7 @@ CMD ["mvn"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0627df46a115defece26381e99f7112253a6fa00dfb35b03ce16615690e08a50`  
-		Last Modified: Fri, 16 Jan 2026 02:47:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:47:35 GMT  
 		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -119,7 +119,7 @@ $ docker pull maven@sha256:ef77ed9b3e8ddb03d34a9c74c3ae8b7aee72ce751771bb372d27d
 
 -	Layers:
 	-	`sha256:d530eda051760eb82d429629307ffa07d95455143889a716a6fb3a91337badfd`  
-		Last Modified: Fri, 16 Jan 2026 02:47:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:32:43 GMT  
 		Size: 4.3 MB (4330865 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:43f1f54da2db497ef1aaf2b089e18b9243e5a6fe39daf33db2e2ffffbc500346`  
