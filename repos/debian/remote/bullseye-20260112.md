@@ -77,7 +77,7 @@ RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1768176000'
 
 -	Layers:
 	-	`sha256:5d86a038b54ede2ada385178a3a13e9fc7833f9952c07b251c404c3aa117dcd4`  
-		Last Modified: Tue, 13 Jan 2026 00:41:24 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:09 GMT  
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -120,7 +120,7 @@ RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1768176000'
 
 -	Layers:
 	-	`sha256:0c9029c19a9aa67ff2b1313f591bcb473f0522775cc5a54491b5f7754253c547`  
-		Last Modified: Tue, 13 Jan 2026 00:41:52 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:31 GMT  
 		Size: 52.3 MB (52257769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -163,7 +163,7 @@ RUN # debian.sh --arch 'i386' out/ 'bullseye' '@1768176000'
 
 -	Layers:
 	-	`sha256:7e115d265636fc6da528c1f4977e22baefb0bae7061ada6dba677a290e83b246`  
-		Last Modified: Tue, 13 Jan 2026 00:41:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:42 GMT  
 		Size: 54.7 MB (54699638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
