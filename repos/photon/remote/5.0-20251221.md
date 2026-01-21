@@ -54,11 +54,11 @@ $ docker pull photon@sha256:5f7ba2052175d135f06765b8ad8f60c45f88ed5463d1634f0687
 
 -	Layers:
 	-	`sha256:28ec6e405bf12e45f4538bf392e61d090ee1f70f6a1e2f792febe687f1c6a0bd`  
-		Last Modified: Sun, 28 Dec 2025 09:30:21 GMT  
+		Last Modified: Sun, 28 Dec 2025 06:07:44 GMT  
 		Size: 354.3 KB (354341 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:322fcaddb63a5a11d1e772018b89f3c9d99baecbccb8999f4a587e355cd5d3ea`  
-		Last Modified: Sun, 28 Dec 2025 06:07:44 GMT  
+		Last Modified: Sun, 28 Dec 2025 09:30:21 GMT  
 		Size: 5.5 KB (5507 bytes)  
 		MIME: application/vnd.in-toto+json
 
