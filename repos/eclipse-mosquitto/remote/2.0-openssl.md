@@ -57,11 +57,11 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:35ae20b23dca2bdf02f0691eb26da312a793d869caf2bc106080d620bda7cc36`  
-		Last Modified: Tue, 13 Jan 2026 18:55:03 GMT  
+		Last Modified: Fri, 14 Nov 2025 17:51:22 GMT  
 		Size: 911.5 KB (911539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ab41a84cd6dce6e696a72902b08b0026bc0105943060babb6f76101385fa71e`  
@@ -201,7 +201,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Last Modified: Sun, 07 Dec 2025 13:54:03 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0387e1d2824c476d2d2b7710f46338c3c73366b76000834705b5dce3e8e20075`  
@@ -349,7 +349,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:85a0f69f026b4a01420490809bed190217e05518f7b718c0bbc1ad4871e0dedf`  
-		Last Modified: Sun, 07 Dec 2025 14:06:45 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a63e73939e2aacf3954854680cebfb4d62cea9aa53260a22868c2f986935a65b`  
@@ -377,7 +377,7 @@ $ docker pull eclipse-mosquitto@sha256:dbf374374ef6cda2e9c863171477bd7a4d4d90e7a
 
 -	Layers:
 	-	`sha256:94a4ab2142e0fee825c43113854997eedba52e8cb8ee5478dd2d02058c2be0ce`  
-		Last Modified: Tue, 13 Jan 2026 22:03:15 GMT  
+		Last Modified: Fri, 14 Nov 2025 19:02:00 GMT  
 		Size: 556.5 KB (556454 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6b5be6753dbebada4aad18947078f4ea2ab25e21ee21a079293dd3e91dccd112`  
