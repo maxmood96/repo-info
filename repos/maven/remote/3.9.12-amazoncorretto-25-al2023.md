@@ -74,11 +74,11 @@ CMD ["mvn"]
 
 -	Layers:
 	-	`sha256:ed23be565800a5983cd3d8b6fd581e584110f08d9e32684d0eb5ab2820cadcbc`  
-		Last Modified: Wed, 07 Jan 2026 22:08:12 GMT  
+		Last Modified: Wed, 07 Jan 2026 22:09:37 GMT  
 		Size: 54.0 MB (54021204 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:19d88fe3c4b256f3e9e43b9cb5ec26a56a3f9a83b14d7daf8a3ab39250d61c86`  
-		Last Modified: Thu, 15 Jan 2026 22:52:23 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:10:37 GMT  
 		Size: 189.1 MB (189137832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:76433b2ed5646a0ec3700a629a89b609030af35c87aff44a98de4983b18ec5aa`  
@@ -94,11 +94,11 @@ CMD ["mvn"]
 		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e5afddb26672c42763a41c386372d64cf9a760b9a418aa4fe4e1cbc6fa7cc06`  
-		Last Modified: Fri, 16 Jan 2026 02:46:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:46:42 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -122,7 +122,7 @@ $ docker pull maven@sha256:0eb462a82acef21fa2721b5a3fbb093b7ff90752ffb32b27c7d47
 		Size: 6.2 MB (6207785 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:77f6780aa8ab4c1e6f3a615296095dcc4ad087993d2b8e87d45b5ed5415a159f`  
-		Last Modified: Fri, 16 Jan 2026 03:29:38 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:46:39 GMT  
 		Size: 16.4 KB (16350 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -209,7 +209,7 @@ CMD ["mvn"]
 		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:609064a65cfbbaf1e34d9abe52b9669bc19f1c9ea37ed6c6ad44c3a5e58fe496`  
