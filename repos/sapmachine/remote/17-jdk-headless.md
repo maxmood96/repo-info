@@ -76,7 +76,7 @@ $ docker pull sapmachine@sha256:eceac54f6a4ad006d09dd542d00eff4827be24e32a682142
 		Size: 2.4 MB (2354484 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f0fed7b4b054fcaf77dce9d05f39f8374ded202afc8b30d385f192b176e8125b`  
-		Last Modified: Fri, 16 Jan 2026 01:07:57 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:45:00 GMT  
 		Size: 10.2 KB (10234 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -115,11 +115,11 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:36bf709aa36d66b784b0ba1aa3276848f28501175eeb4d7a310b1a98578f8558`  
-		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:03:33 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:533719d81b7c29d1392c3676979b7cc71ed163858bb3954c47c2da4be0370b25`  
-		Last Modified: Thu, 15 Jan 2026 22:48:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:48:01 GMT  
 		Size: 198.2 MB (198201135 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -139,7 +139,7 @@ $ docker pull sapmachine@sha256:5f8cf11635d389c8cb4056f2368cdf6e9f90ff7658d17a74
 
 -	Layers:
 	-	`sha256:0afe2ca93a8aabab5d41a3d94b1174e3b6a54aa690a706344d76d8b8dfe114e9`  
-		Last Modified: Thu, 15 Jan 2026 22:47:57 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:08:00 GMT  
 		Size: 2.4 MB (2354991 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:efd9f20698eab3249b78a0e874b4dc775768e0ba920ab6481c984366783829cf`  
@@ -182,11 +182,11 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:0dea13cf1fe062734821309e5f773a18c9ad629d9e93e3eba340bea036bccd8a`  
-		Last Modified: Tue, 13 Jan 2026 07:12:18 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:59 GMT  
 		Size: 34.3 MB (34306159 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:677104334d66faddbdb6731171488994f3bc15965676601010500256eb37d8c3`  
-		Last Modified: Thu, 15 Jan 2026 23:43:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:43:52 GMT  
 		Size: 200.1 MB (200084622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
