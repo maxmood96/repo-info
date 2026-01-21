@@ -36,11 +36,11 @@ RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.ope
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:061c6d167a3eb8d9ce763b64a7aa6fe1e5dc9849ebed072a5a8d14d32c497ee6`  
-		Last Modified: Wed, 14 Jan 2026 19:46:23 GMT  
+		Last Modified: Wed, 14 Jan 2026 19:46:42 GMT  
 		Size: 48.6 MB (48615470 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:30356d58936c9746b91cb07a9eb9e8ee4850fdab81e5f7965ec355a8da03f3c0`  
