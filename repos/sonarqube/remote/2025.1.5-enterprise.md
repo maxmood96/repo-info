@@ -97,31 +97,31 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114`  
-		Last Modified: Tue, 13 Jan 2026 07:03:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:996467dfb4d0179a2f091bc2a9d9749646d7fc320067d1147a6df2b4833f1c82`  
-		Last Modified: Thu, 15 Jan 2026 22:19:45 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:19:34 GMT  
 		Size: 17.0 MB (16975950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14c9275308302d364422df0f3e02503135621d8a4b49a0c18580cf9220532743`  
-		Last Modified: Thu, 15 Jan 2026 22:20:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:14 GMT  
 		Size: 53.0 MB (52978745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ac4b4cf16a8ad1b819f8041978350794113eb509aba19c5cd47bd77a053c335`  
-		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:12 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:abb78f73258bc413aae5281eb128ee526870ba076049a4526b38041362fe99c6`  
-		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:12 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f38f8eefce7257d3826d5e4663910720b4e189a25e8e5908509fb0df213f2ec`  
-		Last Modified: Fri, 16 Jan 2026 01:11:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:08:42 GMT  
 		Size: 1.1 GB (1102959819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f87b653ef09d4a7817c94ba8b5da9eeda55cbcfaf916f3ed5f5a7085ad210f35`  
-		Last Modified: Fri, 16 Jan 2026 01:08:14 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:08:48 GMT  
 		Size: 454.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -145,7 +145,7 @@ $ docker pull sonarqube@sha256:0e546531a32021318784dc679e762dfde120a46df8aabd2b6
 
 -	Layers:
 	-	`sha256:4115f5974ee9608a09e174bc31150d7e93a6395c314c34ea268cc9e18cbb2d4c`  
-		Last Modified: Fri, 16 Jan 2026 03:52:27 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:08:14 GMT  
 		Size: 4.6 MB (4570712 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6415bec2777e3e59b77fd559b23bdfd4bec9693447a1098df1b7ea600c2564e3`  
@@ -239,7 +239,7 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:36bf709aa36d66b784b0ba1aa3276848f28501175eeb4d7a310b1a98578f8558`  
-		Last Modified: Tue, 13 Jan 2026 07:03:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:066d9c7316405755c4355dfd9b742623829c8c1c49462c4e6c938a83b810b7c8`  
@@ -247,7 +247,7 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Size: 17.0 MB (16991549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:55f94c82a8ac7fd54191a08fd6e2afc54327165fa15aabd600b27aeb40409383`  
-		Last Modified: Thu, 15 Jan 2026 22:21:42 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:21:57 GMT  
 		Size: 52.1 MB (52148637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7eb0eb06dfa687a3659cfda05b90257c82298acab510f78e070b4bc6d3286e0a`  
@@ -255,7 +255,7 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6456b4703cbd2d5d7bfc1f46fa116f62a97af321aea424d90a4899ad64cdaff1`  
-		Last Modified: Thu, 15 Jan 2026 22:21:51 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:21:40 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5665a8692d1c5dd6f4d661d6bd49a2e643d8cda436437bfacaf05c7e4233128b`  
@@ -263,7 +263,7 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Size: 1.1 GB (1102959889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f0dcfe5ecd364841805250b178a8bdfdf6f0bb4c9f081532aced1614748fb980`  
-		Last Modified: Fri, 16 Jan 2026 01:12:56 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:14:28 GMT  
 		Size: 453.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
