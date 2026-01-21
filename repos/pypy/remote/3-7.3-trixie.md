@@ -90,11 +90,11 @@ $ docker pull pypy@sha256:9e7bc2649c9a794a48147e3ab4e964b208bf13136124a07a433f61
 
 -	Layers:
 	-	`sha256:31dda0a9d6bea6f5ce6e5c5a3fe846b17f794716487b87cda3c6fb96f85b21c7`  
-		Last Modified: Tue, 13 Jan 2026 05:51:15 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:40:49 GMT  
 		Size: 17.5 MB (17532987 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b89fbd718e72ac32e160b3d88feaf356242aa190929637dbc6076438a3823311`  
-		Last Modified: Tue, 13 Jan 2026 05:51:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:40:50 GMT  
 		Size: 24.9 KB (24921 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -147,11 +147,11 @@ CMD ["pypy3"]
 		Size: 67.6 MB (67591513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3fffeb567ed4215b503f814aeaab9fa5a2e701d3efa35d4c285b3cf111e9cb4a`  
-		Last Modified: Tue, 13 Jan 2026 05:16:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:53:30 GMT  
 		Size: 226.1 MB (226143857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e25a6a26a04b02c15a3633fe5ae4e1a550e02ff0f6e9037d2a5fc3a32e0298d2`  
-		Last Modified: Tue, 13 Jan 2026 05:50:25 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:50:18 GMT  
 		Size: 3.0 MB (2975987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a2680d98922249b82553d8c1146caecea5e467572c778ba970f5ec5084b6c42`  
@@ -228,7 +228,7 @@ CMD ["pypy3"]
 		Size: 26.8 MB (26778274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01ad78e3f6c783e58b723e0e1c78c005c2b612d1657c3a40830f5d7d97f9d85c`  
-		Last Modified: Tue, 13 Jan 2026 03:04:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:04:58 GMT  
 		Size: 69.8 MB (69803208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c438693622c619054710e61f4e49c9f44709996e7ac1c8577527c38f87d008f`  
@@ -240,7 +240,7 @@ CMD ["pypy3"]
 		Size: 3.1 MB (3113541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c21fd219324857121c5b59a47b4f0f46144f25f092a25ec10f2077609d530388`  
-		Last Modified: Tue, 13 Jan 2026 04:35:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:35:43 GMT  
 		Size: 30.4 MB (30448928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
