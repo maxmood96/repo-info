@@ -1,7 +1,7 @@
 ## `amazoncorretto:8-al2-native-jdk`
 
 ```console
-$ docker pull amazoncorretto@sha256:bb6cd087fffa6d718aa4062089ae413c093258cf1ed1e796b0c5318eea43c7d0
+$ docker pull amazoncorretto@sha256:05a5ee15621a2a39d759762df0b4205e03b28474c8a311b5a0ad5c4d73605252
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull amazoncorretto@sha256:bb6cd087fffa6d718aa4062089ae413c093258cf1ed1
 ### `amazoncorretto:8-al2-native-jdk` - linux; amd64
 
 ```console
-$ docker pull amazoncorretto@sha256:8849ddeda805fd284b502d163c194ddbf0320bf19c9802a786ef275541336ed7
+$ docker pull amazoncorretto@sha256:380d236e763018df16d898fc3a1a954cf480ab99562cd4e97897903d832e4512
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.2 MB (188196065 bytes)**  
+-	Total Size: **188.2 MB (188237680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:370b89f2d419e2ed8f66fa16919224acf146b40d3a84925ff1e48ac382e03117`
+-	Image ID: `sha256:c5718039db35465de88df9c197f45fda421fd8c7aaac4adfc87bdb2d703a6b50`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -28,61 +28,61 @@ $ docker pull amazoncorretto@sha256:8849ddeda805fd284b502d163c194ddbf0320bf19c98
 COPY /rootfs/ / # buildkit
 # Thu, 15 Jan 2026 21:44:16 GMT
 CMD ["/bin/bash"]
-# Thu, 15 Jan 2026 22:08:48 GMT
-ARG version=1.8.0_472.b08-1
-# Thu, 15 Jan 2026 22:08:48 GMT
-# ARGS: version=1.8.0_472.b08-1
+# Wed, 21 Jan 2026 18:59:22 GMT
+ARG version=1.8.0_482.b08-1
+# Wed, 21 Jan 2026 18:59:22 GMT
+# ARGS: version=1.8.0_482.b08-1
 RUN set -eux     && export resouce_version=$(echo $version | tr '-' '.' | tr '_' '.'| tr -d "b" | awk -F. '{print $2"."$4"."$5"."$6}')     && rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-amazon-linux-2     && echo "localpkg_gpgcheck=1" >> /etc/yum.conf     && CORRETO_TEMP=$(mktemp -d)     && pushd ${CORRETO_TEMP}     && RPM_LIST=("java-1.8.0-amazon-corretto-$version.amzn2.$(uname -m).rpm" "java-1.8.0-amazon-corretto-devel-$version.amzn2.$(uname -m).rpm")     && for rpm in ${RPM_LIST[@]}; do     curl --fail -O https://corretto.aws/downloads/resources/${resouce_version}/${rpm}     && rpm -K "${CORRETO_TEMP}/${rpm}" | grep -F "${CORRETO_TEMP}/${rpm}: rsa sha1 (md5) pgp md5 OK" || exit 1     && yum install -y $(yum deplist "${CORRETO_TEMP}/${rpm}" |grep provider | grep -v log4j-cve | tr -s ' ' |cut -d ' ' -f 3 );     done     && rpm -i --nodeps ${CORRETO_TEMP}/*.rpm     && popd     && (find /usr/lib/jvm/java-1.8.0-amazon-corretto.$(uname -m) -name "*src.zip" -delete || true)     && rm -rf ${CORRETO_TEMP}     && yum clean all     && rm -rf /var/cache/yum     && sed -i '/localpkg_gpgcheck=1/d' /etc/yum.conf # buildkit
-# Thu, 15 Jan 2026 22:08:48 GMT
+# Wed, 21 Jan 2026 18:59:22 GMT
 ENV LANG=C.UTF-8
-# Thu, 15 Jan 2026 22:08:48 GMT
+# Wed, 21 Jan 2026 18:59:22 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 ```
 
 -	Layers:
 	-	`sha256:89d3b5863331d6bb79d550bf0acce60aeac36e2c065470bf6d6f8d76c9cb6f4f`  
-		Last Modified: Wed, 14 Jan 2026 13:13:55 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:23:48 GMT  
 		Size: 62.9 MB (62940156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50e81b4d81335d0b8130ab192306571f31b802f7ce18fe519cd1cb5088a56f1b`  
-		Last Modified: Thu, 15 Jan 2026 22:09:31 GMT  
-		Size: 125.3 MB (125255909 bytes)  
+	-	`sha256:06c23c3b9563854be49257cf21b781536c99c68c498b6632e9a2ca2403f04652`  
+		Last Modified: Wed, 21 Jan 2026 18:59:45 GMT  
+		Size: 125.3 MB (125297524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `amazoncorretto:8-al2-native-jdk` - unknown; unknown
 
 ```console
-$ docker pull amazoncorretto@sha256:d0d50ebb7cd41f5b5936ef1399a67d25b9b1dda75f67fd3dd8aa304cc73ee2d6
+$ docker pull amazoncorretto@sha256:42e2930c7876f83b264a4eea677e027549f20a62d3af8a4e0174335551d7e64d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.0 MB (7986968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de9442b6f0438b88ddc61e88bc9e897d60b69984575d33c81e44bb47f5526dbd`
+-	Image ID: `sha256:b90c53cb857f2feb95710106ce197e3d699eba7545d6a4f89962a501c4e4d0cd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9d861674ce93fc73d67c5eb1a65595e4381e66ca27072892827bfaa2dc6110af`  
-		Last Modified: Thu, 15 Jan 2026 22:09:09 GMT  
+	-	`sha256:95b8ef22025c0d0b8df09b3bcd2d9b7cc76ce929c335d5784abf167d73f2b104`  
+		Last Modified: Wed, 21 Jan 2026 18:59:42 GMT  
 		Size: 8.0 MB (7977418 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e1e55ade1f33867ca3a843ff666ee820159064b9e9f5dac3a73b4f59b96c758`  
-		Last Modified: Thu, 15 Jan 2026 22:09:09 GMT  
+	-	`sha256:b0a3c63fb23f415fb7a99cc95366e16159b4fe6c7307234fb301246fb5f4713c`  
+		Last Modified: Wed, 21 Jan 2026 19:55:32 GMT  
 		Size: 9.6 KB (9550 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `amazoncorretto:8-al2-native-jdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull amazoncorretto@sha256:6292bf5882ffb4c2dd56f46fc61b4f314f2ab2edea7e64112237ee53418ac550
+$ docker pull amazoncorretto@sha256:5a10ff51aa525effa0d75cac6dc58a85275129ace3c5ee7f213f77bf2ba9fdfb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.3 MB (132316344 bytes)**  
+-	Total Size: **132.4 MB (132365526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae92c19481d946f7000c6343c7a280c87b279ae015192a520df269a19f538a10`
+-	Image ID: `sha256:c7be942bb2d4ae28ab11f76c7c7bb5abea1dca9b5dc1f454865f6156d442ee2a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -90,14 +90,14 @@ $ docker pull amazoncorretto@sha256:6292bf5882ffb4c2dd56f46fc61b4f314f2ab2edea7e
 COPY /rootfs/ / # buildkit
 # Thu, 15 Jan 2026 21:44:03 GMT
 CMD ["/bin/bash"]
-# Thu, 15 Jan 2026 22:08:23 GMT
-ARG version=1.8.0_472.b08-1
-# Thu, 15 Jan 2026 22:08:23 GMT
-# ARGS: version=1.8.0_472.b08-1
+# Wed, 21 Jan 2026 18:59:17 GMT
+ARG version=1.8.0_482.b08-1
+# Wed, 21 Jan 2026 18:59:17 GMT
+# ARGS: version=1.8.0_482.b08-1
 RUN set -eux     && export resouce_version=$(echo $version | tr '-' '.' | tr '_' '.'| tr -d "b" | awk -F. '{print $2"."$4"."$5"."$6}')     && rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-amazon-linux-2     && echo "localpkg_gpgcheck=1" >> /etc/yum.conf     && CORRETO_TEMP=$(mktemp -d)     && pushd ${CORRETO_TEMP}     && RPM_LIST=("java-1.8.0-amazon-corretto-$version.amzn2.$(uname -m).rpm" "java-1.8.0-amazon-corretto-devel-$version.amzn2.$(uname -m).rpm")     && for rpm in ${RPM_LIST[@]}; do     curl --fail -O https://corretto.aws/downloads/resources/${resouce_version}/${rpm}     && rpm -K "${CORRETO_TEMP}/${rpm}" | grep -F "${CORRETO_TEMP}/${rpm}: rsa sha1 (md5) pgp md5 OK" || exit 1     && yum install -y $(yum deplist "${CORRETO_TEMP}/${rpm}" |grep provider | grep -v log4j-cve | tr -s ' ' |cut -d ' ' -f 3 );     done     && rpm -i --nodeps ${CORRETO_TEMP}/*.rpm     && popd     && (find /usr/lib/jvm/java-1.8.0-amazon-corretto.$(uname -m) -name "*src.zip" -delete || true)     && rm -rf ${CORRETO_TEMP}     && yum clean all     && rm -rf /var/cache/yum     && sed -i '/localpkg_gpgcheck=1/d' /etc/yum.conf # buildkit
-# Thu, 15 Jan 2026 22:08:23 GMT
+# Wed, 21 Jan 2026 18:59:17 GMT
 ENV LANG=C.UTF-8
-# Thu, 15 Jan 2026 22:08:23 GMT
+# Wed, 21 Jan 2026 18:59:17 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 ```
 
@@ -106,31 +106,31 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 		Last Modified: Thu, 15 Jan 2026 18:33:41 GMT  
 		Size: 64.8 MB (64770434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:528454a0d692bda06f9ef21ac04162e3159a516c03ceac0a6f4a8c8896b3bf0f`  
-		Last Modified: Thu, 15 Jan 2026 22:09:02 GMT  
-		Size: 67.5 MB (67545910 bytes)  
+	-	`sha256:53ad3d8c6462812ef98f010ddcb458313e9e58f8a3809e6e34b31b016b0895f0`  
+		Last Modified: Wed, 21 Jan 2026 18:59:34 GMT  
+		Size: 67.6 MB (67595092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `amazoncorretto:8-al2-native-jdk` - unknown; unknown
 
 ```console
-$ docker pull amazoncorretto@sha256:e66bfd52ded719b2b42b17b268c9d94306599ed8a02e171e14d4fbab3e8189e1
+$ docker pull amazoncorretto@sha256:a2c221306128d5962bbc048b067fc5f9f530e958c85dac5f912264c20c39f1ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6092569 bytes)**  
+-	Total Size: **6.1 MB (6092570 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9220b11d565f06d1962e5cbc6e7ea0585e3e05ca7ff2af8686dc238160e6b9a2`
+-	Image ID: `sha256:044276fc09d4ff6408a919466269da817ad1c67650c8ee4993310dc8664f6f95`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ffa77e964b6ce3e7e0c8efe2dca0635996809fd708b548301cd2ad6a914710b4`  
-		Last Modified: Thu, 15 Jan 2026 22:52:41 GMT  
+	-	`sha256:24555b7df14a1246cc131e7f7293d05bb5cc6037d884928dfc0005f898244778`  
+		Last Modified: Wed, 21 Jan 2026 19:55:04 GMT  
 		Size: 6.1 MB (6082941 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f5debb8c2c51b05b664ee25f0aaca4bcd5aec873132b8bc8bcbe693cbdc1e6c6`  
-		Last Modified: Thu, 15 Jan 2026 22:08:37 GMT  
-		Size: 9.6 KB (9628 bytes)  
+	-	`sha256:5a93a64aec1e3233ad8f1ebd77f5477d24fe61b499e7a4a3849e1334390fe837`  
+		Last Modified: Wed, 21 Jan 2026 19:55:59 GMT  
+		Size: 9.6 KB (9629 bytes)  
 		MIME: application/vnd.in-toto+json
