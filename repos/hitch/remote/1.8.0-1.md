@@ -69,7 +69,7 @@ CMD []
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d089c6bce7683fcd034f84fe496c197d4c085ab133f3f26f4cd2fd829fd8b5d0`  
-		Last Modified: Tue, 13 Jan 2026 01:22:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:22:01 GMT  
 		Size: 414.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -89,7 +89,7 @@ $ docker pull hitch@sha256:cef0769a1ff7fd7bf00374746e85a061816007e81627d5546da5b
 
 -	Layers:
 	-	`sha256:f911891145652afc8d44f0339c13959691f3a7e7e3c6156166eef96686e2352c`  
-		Last Modified: Tue, 13 Jan 2026 01:22:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:47:00 GMT  
 		Size: 2.5 MB (2531355 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5f3fbaf34bb44d152a884551df0238d9e0a335f62b1492bd619b1780a5270630`  
@@ -151,7 +151,7 @@ CMD []
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c0f6ddcf924e3a1999713022a18d77cd0f218d614d790ba97d6ad889e5cae0d3`  
-		Last Modified: Tue, 13 Jan 2026 01:24:20 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:24:25 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -171,7 +171,7 @@ $ docker pull hitch@sha256:9e371b75410bd5d9ef194857e7cc1926d44e966b83c28b4fef4eb
 
 -	Layers:
 	-	`sha256:2bae72664e96804b3c93ec28d953e4cd6e1f44e75153f8eabd9299dd4a8de097`  
-		Last Modified: Tue, 13 Jan 2026 04:47:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:24:20 GMT  
 		Size: 2.5 MB (2533587 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:692058e8fcc5242dfe33d120b5d8a59b136e29ba447c351bb311890ec85587c7`  
@@ -307,7 +307,7 @@ CMD []
 		Size: 29.2 MB (29210067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:861c4c87db2f8810cde0c907b91bbebd3ae4b06b9fdf1977ca4849eb9533b0f7`  
-		Last Modified: Tue, 13 Jan 2026 01:20:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:20:11 GMT  
 		Size: 4.0 MB (4016860 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -335,7 +335,7 @@ $ docker pull hitch@sha256:4a535c59cf8b2a707e15a7ccac3611ef22e1d98d1cfae20f476b1
 
 -	Layers:
 	-	`sha256:b41cc3dd905205aff2d2a5728a57bd3255e352c2584bce511b55be60b34f044c`  
-		Last Modified: Tue, 13 Jan 2026 01:20:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:47:23 GMT  
 		Size: 2.5 MB (2528531 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b4bfc672ef49d34e1843f6796091e9dfecd85b053b02cc70d8f24d1a56e48277`  
