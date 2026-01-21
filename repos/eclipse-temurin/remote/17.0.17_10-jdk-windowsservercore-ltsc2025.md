@@ -59,6 +59,6 @@ CMD ["jshell"]
 		Size: 382.5 KB (382538 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:661fb1866203929e46827008019c14143f1a58aee530560bf7b0b2dbfe8d78a8`  
-		Last Modified: Tue, 13 Jan 2026 22:57:12 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:56:46 GMT  
 		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
