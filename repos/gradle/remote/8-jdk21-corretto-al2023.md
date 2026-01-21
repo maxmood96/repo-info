@@ -81,7 +81,7 @@ USER root
 		Size: 86.0 MB (86034761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:548fadf9f9db77207067961af6d1899ed14b688d527c05e32996d014ceff389c`  
-		Last Modified: Fri, 16 Jan 2026 02:10:11 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:10:24 GMT  
 		Size: 1.6 KB (1649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -93,7 +93,7 @@ USER root
 		Size: 137.4 MB (137395195 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:36e153a12b6d6cb9196114f28ea2f444d1af451b58d6e4e933471ab364d29435`  
-		Last Modified: Fri, 16 Jan 2026 02:10:11 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:10:25 GMT  
 		Size: 54.9 KB (54911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -183,7 +183,7 @@ USER root
 		Size: 52.9 MB (52914357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ebe1c9b0f4ea4f18ee5432a1b5928f5a2edd15a835cff3cbdf602ca3e6f769e`  
-		Last Modified: Thu, 15 Jan 2026 22:10:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:10:20 GMT  
 		Size: 168.4 MB (168441565 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f978441bcfb26ae1b193eef3587b7529e71ee35d49c56a642b4aaa03ec232a1c`  
@@ -203,7 +203,7 @@ USER root
 		Size: 137.4 MB (137395197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b3462eb6460569052c8fc841c9d9ea7dc4a4d3e41aac475d05e1de7ce3c7296`  
-		Last Modified: Thu, 15 Jan 2026 23:15:46 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:15:34 GMT  
 		Size: 59.5 KB (59529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -223,7 +223,7 @@ $ docker pull gradle@sha256:04ccd320fc01f7ac065a71bcd95305738d8645b91ebbb33a8127
 
 -	Layers:
 	-	`sha256:c98e98dd51a06d2374fb19e618b6f28639c61626aa70bdea06238636e7353000`  
-		Last Modified: Thu, 15 Jan 2026 23:15:34 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:27:52 GMT  
 		Size: 11.3 MB (11341250 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7f9542c793fc54e80f5155fda24d5c168968fa30749b9cdda69ccbeabcf93c6f`  
