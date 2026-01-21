@@ -75,19 +75,19 @@ USER root
 		Size: 330.9 MB (330896662 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3017ca973a414514f759da047a45c812885ad93007a1faeda2514e441f966a9e`  
-		Last Modified: Thu, 15 Jan 2026 23:10:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:10:29 GMT  
 		Size: 65.4 MB (65370918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3b18784cf7070c61aa1ee6838ee47a5c2ffd71e2447d9c07854c0da8939217d9`  
-		Last Modified: Thu, 15 Jan 2026 23:10:15 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:10:24 GMT  
 		Size: 1.9 KB (1942 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c5cc4c135a06fb80efa58d6fc01512de179837a1f75e621f93240ac6cd5785e3`  
-		Last Modified: Thu, 15 Jan 2026 23:10:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:10:19 GMT  
 		Size: 107.7 MB (107696665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3a9f0b5ad88f1f24009e6a7e210f9b43493ee65cd629ea650a1f361f3d99a5f9`  
@@ -175,15 +175,15 @@ USER root
 
 -	Layers:
 	-	`sha256:60a6ef84e125e61efd6725688f23e752e71a4dd414aa447d2bc3e2a4a5f823e0`  
-		Last Modified: Wed, 07 Jan 2026 22:47:36 GMT  
+		Last Modified: Wed, 07 Jan 2026 22:47:25 GMT  
 		Size: 52.9 MB (52914357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:744d133b9cd24f4f90f79a72608e56f1397b2bbb440dbeba7d073b497a0c9ac3`  
-		Last Modified: Thu, 15 Jan 2026 22:09:24 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:08:57 GMT  
 		Size: 117.9 MB (117927015 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c541f176be14cf7e0d45de617b6cdae390a55cb3b22899f420b794405322472c`  
-		Last Modified: Thu, 15 Jan 2026 23:17:04 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:17:21 GMT  
 		Size: 85.5 MB (85504572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:49965392c25993878554f492659ffb25af217dd0ddb0a92fa8c800bba6fa29b4`  
@@ -191,7 +191,7 @@ USER root
 		Size: 1.7 KB (1651 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0e9d2cb99ca109276a1c7cc41baff484e79b14dda29f3af6ad21b7dabc0ad4da`  
@@ -219,7 +219,7 @@ $ docker pull gradle@sha256:05937beb0f7331e80a60b9e265fd97d0e3ffaba64fc07f731afd
 
 -	Layers:
 	-	`sha256:faf9453817e01c231c84cd92153d9788d29199c7f6dfa692180060a5c9855322`  
-		Last Modified: Thu, 15 Jan 2026 23:17:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:18:58 GMT  
 		Size: 11.6 MB (11610124 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d79f20e48d1a14e5fd84011ab46cc921b47494b40595bd28821435aa036df568`  
