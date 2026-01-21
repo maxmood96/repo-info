@@ -49,7 +49,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:f784408d7713470603ec446172f85c9a5ae57032b804583cc37631eb6bb6b75c`  
-		Last Modified: Tue, 06 Jan 2026 17:09:06 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:45:20 GMT  
 		Size: 33.7 MB (33726347 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -69,7 +69,7 @@ $ docker pull ubuntu@sha256:120097e6a2cf848371c69550a8152b7cc0c5c2552cd4c50e0c73
 
 -	Layers:
 	-	`sha256:52ecc78417515b9f3d237316213ec8a765f2e34c9b44d0b7a382f5dac3883e34`  
-		Last Modified: Thu, 15 Jan 2026 21:45:10 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:22:23 GMT  
 		Size: 2.2 MB (2221739 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -123,7 +123,7 @@ $ docker pull ubuntu@sha256:231e7c026f7c64e6d9ceab27a5d2a3dd76869cc99db116ed5034
 
 -	Layers:
 	-	`sha256:293d6f932847e4a8e36f6562d42a88659a169e0bb525e356bbc64c095690b011`  
-		Last Modified: Thu, 15 Jan 2026 21:43:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:05:51 GMT  
 		Size: 2.2 MB (2223124 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -231,7 +231,7 @@ $ docker pull ubuntu@sha256:7ddb294370ec25bfdf67edca5f98466f62edc65b4f10c1e3bc5f
 
 -	Layers:
 	-	`sha256:3cc76bb5815ecf38de2b4dae8792d9cbccc58cc119de937c7cb03469a78330af`  
-		Last Modified: Thu, 15 Jan 2026 23:22:22 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:44:20 GMT  
 		Size: 2.2 MB (2225278 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -265,7 +265,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:3c24421a985ba6a7e1e2f5f5fe3c62d44482c3bad51082e4f650d31d802c716b`  
-		Last Modified: Tue, 06 Jan 2026 17:09:38 GMT  
+		Last Modified: Sun, 18 Jan 2026 21:56:15 GMT  
 		Size: 34.4 MB (34441305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -319,7 +319,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:f779d014bea281c13f5bd15e791164db36f27117b06bcc6a0832c49e20ca6c3f`  
-		Last Modified: Thu, 15 Jan 2026 21:56:50 GMT  
+		Last Modified: Tue, 06 Jan 2026 17:09:45 GMT  
 		Size: 33.4 MB (33397954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -339,6 +339,6 @@ $ docker pull ubuntu@sha256:beed3269c42b727420541adc06c5656d266f5f6fd2913a001f47
 
 -	Layers:
 	-	`sha256:dad14d6288b198fa814ce99ee18e889039b612cc32f0ccaa4ee69fc5a8703c69`  
-		Last Modified: Fri, 16 Jan 2026 00:06:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:43:49 GMT  
 		Size: 2.2 MB (2223802 bytes)  
 		MIME: application/vnd.in-toto+json
