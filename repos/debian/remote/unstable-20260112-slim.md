@@ -40,7 +40,7 @@ RUN # debian.sh --arch 'amd64' out/ 'unstable' '@1768176000'
 
 -	Layers:
 	-	`sha256:ac52f6e48f6b6f4b5bad492245a8bdc5f10835d2e5ab8e75a08de28c29123039`  
-		Last Modified: Tue, 13 Jan 2026 00:42:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:34 GMT  
 		Size: 29.3 MB (29325180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -103,7 +103,7 @@ $ docker pull debian@sha256:68c043e68283c12712a616ada13924263284c52989d402c28868
 
 -	Layers:
 	-	`sha256:6a06f99e8d3477087a4915a4fab222d00f26751703aa8e7dc2db06956170d706`  
-		Last Modified: Tue, 13 Jan 2026 00:42:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:31:15 GMT  
 		Size: 2.0 MB (1957392 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -126,7 +126,7 @@ RUN # debian.sh --arch 'arm64' out/ 'unstable' '@1768176000'
 
 -	Layers:
 	-	`sha256:237780378397b53bc03b22c7ef83e0ac1c622b5660671b5430a26679ab54b949`  
-		Last Modified: Tue, 13 Jan 2026 00:42:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:49 GMT  
 		Size: 29.3 MB (29315591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -189,7 +189,7 @@ $ docker pull debian@sha256:41277e8abc628b674f3faad55c29ca38383b09f56b1c6631daa4
 
 -	Layers:
 	-	`sha256:a6131cba8035f3e960e06e0dfd97d4c9485a918bfab3c47491e11bad564a098a`  
-		Last Modified: Tue, 13 Jan 2026 00:42:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:31:22 GMT  
 		Size: 2.0 MB (1953261 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -212,7 +212,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'unstable' '@1768176000'
 
 -	Layers:
 	-	`sha256:879b165de21984cb2b0da7a0e33da9bcabfc11b6d8940537329976da114bf5cc`  
-		Last Modified: Tue, 13 Jan 2026 23:19:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:19:44 GMT  
 		Size: 34.0 MB (34012618 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -275,7 +275,7 @@ $ docker pull debian@sha256:475ff8b6b6752ca8ea5f8d15981541179315bd39f39c463a0782
 
 -	Layers:
 	-	`sha256:d8b0f78e5124a45a82770128f62405c6fc5d3431ce0931e1f0fbfd56ea4cffda`  
-		Last Modified: Tue, 13 Jan 2026 01:11:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:28:01 GMT  
 		Size: 1.9 MB (1949899 bytes)  
 		MIME: application/vnd.in-toto+json
 
