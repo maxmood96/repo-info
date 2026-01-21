@@ -33,11 +33,11 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:d441ba4c6d25e3ab6a1e3ce5360fd1d1214e97975f1e40b10c0ccb55dc46ad22`  
-		Last Modified: Tue, 13 Jan 2026 22:42:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:42:10 GMT  
 		Size: 199.1 MB (199076547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:49ed73112c5616c68180a5c6e55b20325dd0eb4fc7b46c97538891336f1414ed`  
-		Last Modified: Tue, 13 Jan 2026 22:51:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:53:02 GMT  
 		Size: 1.8 KB (1816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ee475e8bafa70cbef4d4ef986e76320897144a97d0b4383066599834204f8a27`  
@@ -69,7 +69,7 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:21249f42e73ea398b459db4050433677ad7cfb68c1df80882324ceedaf735e15`  
