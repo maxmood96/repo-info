@@ -239,6 +239,6 @@ $ docker pull rust@sha256:c6c0dcb9c70f537734cdf2a74aa150252e8a08210051dd76cd18bd
 		Size: 4.3 MB (4293344 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f039d2e05b02a8e51d606c46fa7478eb42236fe9ceba3b017561b0c9b13a9365`  
-		Last Modified: Tue, 13 Jan 2026 03:45:50 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:49:29 GMT  
 		Size: 12.7 KB (12682 bytes)  
 		MIME: application/vnd.in-toto+json
