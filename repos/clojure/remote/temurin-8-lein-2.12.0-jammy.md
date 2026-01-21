@@ -81,15 +81,15 @@ CMD ["lein" "repl"]
 		Size: 29.5 MB (29536667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7ca1cb9f04d85dfc9a25c144466ed114db4484680026c30e156604e88ba9843`  
-		Last Modified: Thu, 15 Jan 2026 22:18:31 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:18:39 GMT  
 		Size: 16.1 MB (16147342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff4a083cf6ef34c11b97adeec70bf51e62136e2fed6d2c1bb5bdd02071109df4`  
-		Last Modified: Thu, 15 Jan 2026 22:18:32 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:18:47 GMT  
 		Size: 54.7 MB (54742970 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cbd18d15e94427bf32961eb474ee677e4db65e702f38956cbc8aff821277dc70`  
-		Last Modified: Thu, 15 Jan 2026 22:18:38 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:18:30 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2beaae4d953295f164d80b07a8b90636e0a94c98bd8f46db3f75a951f8ff438d`  
@@ -101,7 +101,7 @@ CMD ["lein" "repl"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:283dae2eea5242193ff5f7578a71ddeb1ea40f24ac7d99cc13a03d92a8ee7fb2`  
-		Last Modified: Fri, 16 Jan 2026 01:44:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:44:42 GMT  
 		Size: 14.5 MB (14480500 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64d75ace69bc821318417db4b9ab3667d39a5eb7c5709cd37a88029172fd7574`  
@@ -125,7 +125,7 @@ $ docker pull clojure@sha256:985b1d448f1d2032aa17122e6ce27db1f66893977e6470eff59
 
 -	Layers:
 	-	`sha256:3da2fd466b70e787646c270bd74c705e389dcd228bfbdbbbc31495604b5856fd`  
-		Last Modified: Fri, 16 Jan 2026 01:44:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 04:53:45 GMT  
 		Size: 4.0 MB (4012055 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3e242e21d722f7fba7da49f30b7f95ff97fc21e1c3d4d8d177a4e5e98181a390`  
@@ -197,7 +197,7 @@ CMD ["lein" "repl"]
 
 -	Layers:
 	-	`sha256:517f43312bfe3b4db0f0f031d8b6deb1aa5616b07fae71fa0d349f9ce451564f`  
-		Last Modified: Fri, 09 Jan 2026 07:36:03 GMT  
+		Last Modified: Fri, 09 Jan 2026 11:16:52 GMT  
 		Size: 27.4 MB (27383497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b6545d6c67e8ea1c2e49f9e88fdd4162b11c1caee3921824ecfdafdf334bc8b6`  
@@ -221,7 +221,7 @@ CMD ["lein" "repl"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c26a0061270f7be992505fb19367a4ab49ff309a5808a95d1f768e4789a5db52`  
-		Last Modified: Fri, 16 Jan 2026 01:45:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:45:39 GMT  
 		Size: 14.5 MB (14479906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81823cfc45e377049baf2f9e4cc50409ecae4826597f3fc5e599a65bcef8bf59`  
@@ -245,7 +245,7 @@ $ docker pull clojure@sha256:606b9d80f68bb59ae6fa33995c61c2fa0ecf00ac4f0f7776ae6
 
 -	Layers:
 	-	`sha256:6177b6b1234ff3399860874a5a154b8ae452612159bc78e598652676b2af9286`  
-		Last Modified: Fri, 16 Jan 2026 04:54:00 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:45:39 GMT  
 		Size: 4.0 MB (4012403 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2f79876997dcecc09da25033e37f028a98f1becb87adc3a65f51ecf5f44f791d`  
@@ -321,7 +321,7 @@ CMD ["lein" "repl"]
 		Size: 34.4 MB (34446962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:183556a79e45cd164d41dfffcf9da5a4846b19eb406b8300431457b5010ff3f3`  
-		Last Modified: Thu, 15 Jan 2026 22:09:41 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:09:53 GMT  
 		Size: 17.6 MB (17619200 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24d4bc0cb099184c8a19e4fe22f867374734c07650a135e2157a989f13a9a5bd`  
@@ -341,7 +341,7 @@ CMD ["lein" "repl"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cc94570c038c4cc8802e58d96fa0dc679d18f17872f0d5c4499e696bf17e17a2`  
-		Last Modified: Fri, 16 Jan 2026 02:48:12 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:48:03 GMT  
 		Size: 14.5 MB (14522445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c404c553eedd5a0375467672078399b9712bc684b9920411c2ece2a5284c5b2`  
