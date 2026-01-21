@@ -96,7 +96,7 @@ USER root
 		Size: 137.0 MB (136988868 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bac5e92975f80d57074540fef769066ecea06c6944162713408a69e285bd9825`  
-		Last Modified: Fri, 16 Jan 2026 21:47:36 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:47:19 GMT  
 		Size: 25.6 KB (25595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -185,11 +185,11 @@ USER root
 
 -	Layers:
 	-	`sha256:517f43312bfe3b4db0f0f031d8b6deb1aa5616b07fae71fa0d349f9ce451564f`  
-		Last Modified: Fri, 09 Jan 2026 07:36:03 GMT  
+		Last Modified: Fri, 09 Jan 2026 11:16:52 GMT  
 		Size: 27.4 MB (27383497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f6e19ba182fca4a24919b2f391f707140920022b3db848dec47e27978f60cdf0`  
-		Last Modified: Fri, 16 Jan 2026 21:45:19 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:45:42 GMT  
 		Size: 4.3 KB (4313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -197,7 +197,7 @@ USER root
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7b07d4decd8396616753a17941f7de4830ebe66480693497e28003c81a216785`  
-		Last Modified: Fri, 16 Jan 2026 21:45:25 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:45:51 GMT  
 		Size: 122.6 MB (122647546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d3e0059b8bfea6335388aeae070b9b5bc1414f4fee8f3413e2fd1496c24ef1b7`  
@@ -229,10 +229,10 @@ $ docker pull gradle@sha256:b7ab0904147d2f9216309d81e7b41565fc679d5369c2430c9b4b
 
 -	Layers:
 	-	`sha256:6b4e72c49b36d3104c15c1574cb00316b9126ec85695f407102b76d2342f06df`  
-		Last Modified: Fri, 16 Jan 2026 21:45:19 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:21:42 GMT  
 		Size: 9.3 MB (9335092 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9f35f5b194b863f35041c116298fc3023a73b34648a8e64dd1748751d966a314`  
-		Last Modified: Fri, 16 Jan 2026 21:45:19 GMT  
+		Last Modified: Sat, 17 Jan 2026 00:21:43 GMT  
 		Size: 30.3 KB (30261 bytes)  
 		MIME: application/vnd.in-toto+json
