@@ -48,11 +48,11 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
-		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Last Modified: Fri, 16 Jan 2026 23:08:17 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4260416a8dbb6a16d4af2d8e2cf5d3ffec20bd15ba7d2c25ee05bc2897b658a`  
-		Last Modified: Tue, 20 Jan 2026 18:47:57 GMT  
+		Last Modified: Tue, 20 Jan 2026 18:48:12 GMT  
 		Size: 38.3 MB (38295939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e45a352e4f995bd27d86306ce1e227f327880604be2db220020eb505223b26de`  
@@ -80,7 +80,7 @@ $ docker pull openjdk@sha256:4ead0b59da8fbb5913d6f5e5d0d742f844651d2fc6f7678f034
 		Size: 3.7 MB (3655371 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:15c95d419a6c09e7c4b9aa0bde147c123a87905c34571f700ad9a2996571ac91`  
-		Last Modified: Tue, 20 Jan 2026 19:23:37 GMT  
+		Last Modified: Tue, 20 Jan 2026 18:47:55 GMT  
 		Size: 17.8 KB (17839 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -194,7 +194,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:e8e286c160e014cebd84213d5cfa83952f5927713def450860146ee76600ee3f`  
-		Last Modified: Tue, 13 Jan 2026 18:56:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 18:49:06 GMT  
 		Size: 1.5 GB (1495760247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7ea386d3f231cd51d65f90cee89c9ac8d16f1a31939e14e985fa6a726457dbcd`  
@@ -202,19 +202,19 @@ CMD ["jshell"]
 		Size: 1.3 KB (1323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5adc18c3e4b56bd0ce5625ed042a3a8dffa7980ecf1d809ad3df6db462a708b6`  
-		Last Modified: Tue, 20 Jan 2026 18:51:14 GMT  
+		Last Modified: Tue, 20 Jan 2026 19:01:00 GMT  
 		Size: 501.6 KB (501566 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:de92f5a3063c5cb293480b09697bd0db435fe1a8a57e70bf20681dde91b30268`  
-		Last Modified: Tue, 20 Jan 2026 19:01:00 GMT  
+		Last Modified: Tue, 20 Jan 2026 18:51:14 GMT  
 		Size: 1.3 KB (1330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:265c9bc1893bac919700fd36e2701bdc138c6fd1dbf0da3430984aba4ae0a860`  
-		Last Modified: Tue, 20 Jan 2026 18:51:14 GMT  
+		Last Modified: Tue, 20 Jan 2026 19:01:00 GMT  
 		Size: 398.2 KB (398203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3e614afd727846af505bc9b3ae096e915de2e6cb07ec2040372e6fe9cf9ea82b`  
-		Last Modified: Tue, 20 Jan 2026 19:01:05 GMT  
+		Last Modified: Tue, 20 Jan 2026 18:51:12 GMT  
 		Size: 1.3 KB (1324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:08a9c630391b95637698a76a0b179ddcbd3c8b3e0d4f07eea2a4fbd0eae38e26`  
@@ -222,7 +222,7 @@ CMD ["jshell"]
 		Size: 1.3 KB (1314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5b82e1c4e22f87360371b81ed6d8df3bcf2830d95cf30a1d00ace75b15291bab`  
-		Last Modified: Tue, 20 Jan 2026 18:51:12 GMT  
+		Last Modified: Tue, 20 Jan 2026 21:02:28 GMT  
 		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d3e4b73034748bd1ec1c33aeb210f02d6a6fd166a26376e53740c9d55c5ad55d`  
@@ -275,7 +275,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:3cc21a1b754848d23f00aa65cb94ec34c9a5dc6028b3aada42039c824738d02f`  
-		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
+		Last Modified: Sun, 14 Dec 2025 00:17:28 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8810874280ba2ea58e95647ea717ead1a5fb07fea1d9160047d580e653fe9cbd`  
@@ -295,7 +295,7 @@ CMD ["jshell"]
 		Size: 1.3 KB (1328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:27683916210a6564d9ee9481fa88cbe40087242053fec9887a44f9dabb59ac74`  
-		Last Modified: Tue, 20 Jan 2026 18:52:00 GMT  
+		Last Modified: Tue, 20 Jan 2026 19:00:33 GMT  
 		Size: 335.8 KB (335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ce40c409d8822ddf320b4553138be4933ffe1adef0db4c71eb81520130cf76e4`  
