@@ -64,7 +64,7 @@ RUN swift --version # buildkit
 
 -	Layers:
 	-	`sha256:6f4ebca3e823b18dac366f72e537b1772bc3522a5c7ae299d6491fb17378410e`  
-		Last Modified: Fri, 09 Jan 2026 09:47:12 GMT  
+		Last Modified: Fri, 09 Jan 2026 07:35:56 GMT  
 		Size: 29.5 MB (29536667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:73dad709c284593abc70ab038cd9ab2a920a6364c2ef0999757197007b1360e2`  
@@ -96,11 +96,11 @@ $ docker pull swift@sha256:f15318ab6327fd87e6e387d9d5707b51d6fde2ab0827c0191c828
 
 -	Layers:
 	-	`sha256:0c6d42d913cefd54190943d842b268a76ce418e8ac531f2e7d769a17a2392900`  
-		Last Modified: Thu, 15 Jan 2026 23:51:34 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:52:17 GMT  
 		Size: 8.5 MB (8477483 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:81a545306650d8db16a79917ec18bfb155d665fa4ea8630c4bdcb4a86ef75b3e`  
-		Last Modified: Thu, 15 Jan 2026 22:52:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:51:34 GMT  
 		Size: 15.9 KB (15920 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -165,11 +165,11 @@ RUN swift --version # buildkit
 		Size: 171.8 MB (171802634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ebf2fc3623307bd356af1dd50b8f306634d5f98345554303a5e28cd70bfce206`  
-		Last Modified: Thu, 15 Jan 2026 22:53:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:53:50 GMT  
 		Size: 1.0 GB (1023073818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec5b3ddfd5ac51309331a98c5862debff055dff46c95be739e803f80767b29b1`  
-		Last Modified: Thu, 15 Jan 2026 22:52:57 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:53:24 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -189,7 +189,7 @@ $ docker pull swift@sha256:b2a840952466853e1eb2e03fff155f8d526f53a3a85335b934a6e
 
 -	Layers:
 	-	`sha256:25f6a4099e38f638fa1a65a132b4a53e512b1852ba4d7e8913dfa10614511530`  
-		Last Modified: Thu, 15 Jan 2026 23:51:43 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:52:58 GMT  
 		Size: 8.5 MB (8473169 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9d3989fdade603c2f4759854e0fc63afa2b4ed044127c27df5cb8959cb6f0ce8`  
