@@ -155,7 +155,7 @@ CMD ["repl"]
 
 -	Layers:
 	-	`sha256:33bdc9671af8942d96d2f78f67aeec06580065dde1272decac3732689ec7c0e8`  
-		Last Modified: Tue, 13 Jan 2026 00:42:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:09 GMT  
 		Size: 28.1 MB (28107889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b56b2b3f6cf16e9bd65d0c0f26a5d10f24d63110ebf7a398765cc0db4d6a7d30`  
@@ -167,7 +167,7 @@ CMD ["repl"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f7df76afbc6268afda91481cbf63fa47061387544150cf0db0890292712778d8`  
-		Last Modified: Fri, 16 Jan 2026 02:02:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:02:19 GMT  
 		Size: 17.6 MB (17592146 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:46de7bbf9c3e6004b250e20c96fdb888b2390107f3fdad0aec18c5b775fc72db`  
@@ -249,7 +249,7 @@ CMD ["repl"]
 
 -	Layers:
 	-	`sha256:cf92d3bf0add4f20720c3232cd336a7f7f50627989684b748675db0b2f2ce746`  
-		Last Modified: Tue, 13 Jan 2026 23:17:03 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:17:24 GMT  
 		Size: 32.1 MB (32068709 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5094bf46310c703a83629a08ef35e481705d22cf663c8418d08e57c629ca01ea`  
@@ -343,7 +343,7 @@ CMD ["repl"]
 
 -	Layers:
 	-	`sha256:3995e7e7254beb9777289fba2ebc6c1ce81d8c4bab8c8d068146f449323a74c8`  
-		Last Modified: Tue, 13 Jan 2026 00:40:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:08 GMT  
 		Size: 26.9 MB (26884415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ee49ba92133d874b741829618924bc0c05855d3180b0f68c63b8b6afccf9583`  
@@ -355,7 +355,7 @@ CMD ["repl"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:69434feae3f38e80d56b3c0706e601a75ee8928330a7a56576dbe24ae07692ca`  
-		Last Modified: Thu, 15 Jan 2026 23:19:03 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:19:12 GMT  
 		Size: 17.4 MB (17420861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a406d372c3a8e1a6cda31b6c97a6a20824de8d7a9fb7e1a6c3ef1a0abe825c6`  
@@ -383,10 +383,10 @@ $ docker pull clojure@sha256:d8e7caff80c018e46521a273e278b5bb1d4f9f63e4e00c370ab
 
 -	Layers:
 	-	`sha256:d35b2f0d9b1d35c78b0df80c74717f6407f59fd8128773ddbca3d26a76811376`  
-		Last Modified: Thu, 15 Jan 2026 23:19:03 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:41:47 GMT  
 		Size: 2.7 MB (2723714 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6e772a620c0e11eb572cd656d178f5083ba6ca2573e9f86b29c48dafb1ab19c3`  
-		Last Modified: Thu, 15 Jan 2026 23:19:02 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:41:48 GMT  
 		Size: 18.4 KB (18402 bytes)  
 		MIME: application/vnd.in-toto+json
