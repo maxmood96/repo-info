@@ -76,7 +76,7 @@ $ docker pull sapmachine@sha256:f7d64138a9536f6959b3339bde2637c17afda40cf4882458
 		Size: 2.6 MB (2627875 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:343b99dd54cbd061d45b77439f736c7632595ee118ed1bd029bdc903266983bb`  
-		Last Modified: Fri, 16 Jan 2026 01:08:27 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:45:16 GMT  
 		Size: 10.1 KB (10095 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -115,7 +115,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:517f43312bfe3b4db0f0f031d8b6deb1aa5616b07fae71fa0d349f9ce451564f`  
-		Last Modified: Fri, 09 Jan 2026 11:16:52 GMT  
+		Last Modified: Fri, 09 Jan 2026 07:36:03 GMT  
 		Size: 27.4 MB (27383497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee570f31bcdf79d899939b319e0cebbab2c0ef0150206b44315bad40e63f1be3`  
@@ -139,7 +139,7 @@ $ docker pull sapmachine@sha256:bae73b14fe3b444cfb2f897cc4a7712a15f548bec3596e8d
 
 -	Layers:
 	-	`sha256:d50007c2e607481634be28226ac185cf8e4f90d60c950c4ba00360579a0bb4e6`  
-		Last Modified: Fri, 16 Jan 2026 01:08:32 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:48:54 GMT  
 		Size: 2.6 MB (2627605 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:79b8f637291ce9624432522e258d6dc3d080480b72e5a12865e641e574626b32`  
@@ -186,7 +186,7 @@ CMD ["jshell"]
 		Size: 34.4 MB (34446962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18e8904e2c6f7553948ccb9fd0c000b60306855b95430d4e1552fb7d938e56f9`  
-		Last Modified: Thu, 15 Jan 2026 23:47:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:47:16 GMT  
 		Size: 201.0 MB (200966043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -206,7 +206,7 @@ $ docker pull sapmachine@sha256:8edf020b2fc317c852d62afba6471e3375fb86593d1d500f
 
 -	Layers:
 	-	`sha256:5fc9a9113c621a667d5cfeaa2cef6fd8823e1eee2cbe44297369f12429fb5531`  
-		Last Modified: Thu, 15 Jan 2026 23:47:10 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:08:37 GMT  
 		Size: 2.6 MB (2624068 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:22b9a79932ceab0be65880958ac0f3b1d7caa9a47630ae948c84b6304745dcfd`  
