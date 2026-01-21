@@ -430,21 +430,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.18.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0-1.dsc' curl_8.18.0-1.dsc 3315 SHA256:32ef319d3270312485e757072675e5a0c15b94106f2f761cc0aeccf0254174e0
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA256:e9274a5f8ab5271c0e0e6762d2fce194d5f98acc568e4ce816845b2dcc0cf88f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA256:449692ee6cbadc99762d1daa86b3faf95d60f82b1d45ea1a33e37adda4bd194b
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.18.0-1.debian.tar.xz' curl_8.18.0-1.debian.tar.xz 52808 SHA256:1fa98de72c0b59d768738a0c337baa81c172e6d55672abb2d6d19c3476599bf2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.18.0-1/
 
-- https://sources.debian.net/src/curl/8.18.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.18.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.18.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-10`
 
@@ -786,20 +778,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.15.0-2.4
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.15.0-2.4.dsc' fontconfig_2.15.0-2.4.dsc 2698 SHA256:7e8278540c5db9cce5ed9d60890f65709c37f59a7ed4cc6bc8ad7fcf35e71ebe
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.15.0.orig.tar.xz' fontconfig_2.15.0.orig.tar.xz 1447820 SHA256:63a0658d0e06e0fa886106452b58ef04f21f58202ea02a94c39de0d3335d7c0e
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.15.0-2.4.debian.tar.xz' fontconfig_2.15.0-2.4.debian.tar.xz 59568 SHA256:b279ca3526657becb0fa6e8b1e51b232a5717baac96abcdbfd8098a4b90af609
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/fontconfig/2.15.0-2.4/
 
-- https://sources.debian.net/src/fontconfig/2.15.0-2.4/ (for browsing the source)
-- https://sources.debian.net/src/fontconfig/2.15.0-2.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fontconfig/2.15.0-2.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `foreign=0.8.90-1`
 
@@ -1993,15 +1978,13 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.20.0-2
-'http://http.debian.net/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.20.0-2.dsc' libtasn1-6_4.20.0-2.dsc 2665 SHA256:54800d16bf3c7eaf675356f2e9d30226991710d78717219bb6425dcc453a55a2
-'http://http.debian.net/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.20.0.orig.tar.gz' libtasn1-6_4.20.0.orig.tar.gz 1783873 SHA256:92e0e3bd4c02d4aeee76036b2ddd83f0c732ba4cda5cb71d583272b23587a76c
-'http://http.debian.net/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.20.0.orig.tar.gz.asc' libtasn1-6_4.20.0.orig.tar.gz.asc 1223 SHA256:0faa628b6a3e4bb84ca5f00f127c6dfa1fc96a7ad88030dd7aa048753cf4b201
-'http://http.debian.net/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.20.0-2.debian.tar.xz' libtasn1-6_4.20.0-2.debian.tar.xz 18640 SHA256:d9d911708f4863437b88eeff7f779d39f6b77613dc2851c64db2bd8160a07c30
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libtasn1-6/4.20.0-2/
+
 
 ### `dpkg` source package: `libtext-charwidth-perl=0.04-11`
 
@@ -2889,20 +2872,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.56.4-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.4-1.dsc' pango1.0_1.56.4-1.dsc 3704 SHA256:168fb1397202b5488d40cfdbc1dd24ea8e2e9d0d29760e477c1b4c2fd6d1ab18
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.4.orig.tar.xz' pango1.0_1.56.4.orig.tar.xz 1883988 SHA256:17065e2fcc5f5a5bdbffc884c956bfc7c451a96e8c4fb2f8ad837c6413cb5a01
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.56.4-1.debian.tar.xz' pango1.0_1.56.4-1.debian.tar.xz 44136 SHA256:389bae65c77a65eca0a4df6311b5ad687249456ed6a004bcce994857a5040db9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.56.4-1/
 
-- https://sources.debian.net/src/pango1.0/1.56.4-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.56.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.56.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.8-2`
 
@@ -3426,10 +3402,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris survival=3.8-3-1
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.8-3-1.dsc' survival_3.8-3-1.dsc 1861 SHA256:69ed685e38174f9dca3fc3aaed3bcdc2195602c799f2dec0942d45099f16aa8e
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.8-3.orig.tar.gz' survival_3.8-3.orig.tar.gz 9537074 SHA256:dcab05a57d37a561c7426f6213d49852dc4f462180dd28b5325ff4b6a5e59915
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.8-3-1.debian.tar.xz' survival_3.8-3-1.debian.tar.xz 6384 SHA256:4b50bb4b568f0e66d697fbf1aeef0e9825231f274755e838a339eed051d00808
+'http://deb.debian.org/debian/pool/main/s/survival/survival_3.8-3-1.dsc' survival_3.8-3-1.dsc 1861 SHA256:69ed685e38174f9dca3fc3aaed3bcdc2195602c799f2dec0942d45099f16aa8e
+'http://deb.debian.org/debian/pool/main/s/survival/survival_3.8-3.orig.tar.gz' survival_3.8-3.orig.tar.gz 9537074 SHA256:dcab05a57d37a561c7426f6213d49852dc4f462180dd28b5325ff4b6a5e59915
+'http://deb.debian.org/debian/pool/main/s/survival/survival_3.8-3-1.debian.tar.xz' survival_3.8-3-1.debian.tar.xz 6384 SHA256:4b50bb4b568f0e66d697fbf1aeef0e9825231f274755e838a339eed051d00808
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/survival/3.8-3-1/ (for browsing the source)
+- https://sources.debian.net/src/survival/3.8-3-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/survival/3.8-3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=259-1`
 
