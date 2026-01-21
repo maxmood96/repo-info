@@ -73,7 +73,7 @@ CMD ["-M" "--repl"]
 		Size: 21.1 MB (21112255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ecc9308f1b3f4d73b7c1a1aaba0b8eda9e9155caf3619e236d0c1a8b410704ef`  
-		Last Modified: Wed, 07 Jan 2026 18:58:53 GMT  
+		Last Modified: Sat, 08 Nov 2025 17:58:34 GMT  
 		Size: 144.0 MB (143989616 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b3851e26ddd2575c157cfd1ad2a673f8e8b4541dd5f6a0b8a2f65d3935e10fe6`  
@@ -85,19 +85,19 @@ CMD ["-M" "--repl"]
 		Size: 2.3 KB (2279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70d7c197c2d319e7c9c3010ea3146a41367427efb33842110740d080447b6330`  
-		Last Modified: Thu, 11 Dec 2025 22:39:34 GMT  
+		Last Modified: Thu, 11 Dec 2025 22:39:26 GMT  
 		Size: 25.1 MB (25121271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92923e8c20c4105aac413afef871e139aa2b2b3521175852ef2fed5cec32d943`  
-		Last Modified: Thu, 11 Dec 2025 22:39:32 GMT  
+		Last Modified: Thu, 11 Dec 2025 22:39:26 GMT  
 		Size: 620.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0d57d1c16edccf2238056901f268584c17c862a80a6f8c37d8beb51be1bbde9`  
-		Last Modified: Thu, 11 Dec 2025 22:39:32 GMT  
+		Last Modified: Thu, 11 Dec 2025 22:39:26 GMT  
 		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -121,6 +121,6 @@ $ docker pull clojure@sha256:39123464c552cb2c6776899f7d6e4ad8681724c0de13a350873
 		Size: 1.3 MB (1297858 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d72321ba4f587a47d63fc4b6095a31fcc66e5ddb190158cd637b0e67202b7fcd`  
-		Last Modified: Fri, 12 Dec 2025 01:37:31 GMT  
+		Last Modified: Thu, 11 Dec 2025 22:39:25 GMT  
 		Size: 15.4 KB (15432 bytes)  
 		MIME: application/vnd.in-toto+json
