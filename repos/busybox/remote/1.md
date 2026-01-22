@@ -43,7 +43,7 @@ RUN BusyBox 1.37.0 (glibc), Debian 13
 
 -	Layers:
 	-	`sha256:61dfb50712f5ff92c880813210257a42169ff0937896ae95dab763582cc380e2`  
-		Last Modified: Wed, 21 Jan 2026 21:50:44 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:57:36 GMT  
 		Size: 2.2 MB (2211656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -106,7 +106,7 @@ $ docker pull busybox@sha256:df563415b6109aa0da73993952cdd8e2b1d7cd821f553f844f9
 
 -	Layers:
 	-	`sha256:0538d6c13619dd591c81fbea29883993c6fc7a288fcf64603d15d1344644b6de`  
-		Last Modified: Wed, 21 Jan 2026 21:57:37 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:51:02 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -152,7 +152,7 @@ RUN BusyBox 1.37.0 (glibc), Debian 13
 
 -	Layers:
 	-	`sha256:71fc17b6f1e96ed7e6b0fc7bb0ed57289d3e812b323ea6fe4dcf1deaa938a412`  
-		Last Modified: Wed, 21 Jan 2026 21:50:54 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:50:41 GMT  
 		Size: 1.6 MB (1592765 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -215,7 +215,7 @@ $ docker pull busybox@sha256:6496ba7cedf7ded74d50a58ef76c601b2bedbe7426b5eea9307
 
 -	Layers:
 	-	`sha256:f9ec47fa49a39fe357d6747d9da4ecc18dec43a8684e832f0643d7cea1a0fec4`  
-		Last Modified: Wed, 21 Jan 2026 21:58:20 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:50:37 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -238,7 +238,7 @@ RUN BusyBox 1.37.0 (glibc), Debian 13
 
 -	Layers:
 	-	`sha256:02ddba6688b4a9d524125cfb7490ef389b32256a801453a4e25a2d7c0e0d2372`  
-		Last Modified: Wed, 21 Jan 2026 21:51:07 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:50:58 GMT  
 		Size: 2.3 MB (2285725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -281,7 +281,7 @@ RUN BusyBox 1.37.0 (glibc), Debian 13
 
 -	Layers:
 	-	`sha256:9fcfc0b4cb3db680a2431c03f933c940c7df79fa0e6b877e7911184c992b223d`  
-		Last Modified: Wed, 21 Jan 2026 21:49:59 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:50:10 GMT  
 		Size: 2.5 MB (2524689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -301,7 +301,7 @@ $ docker pull busybox@sha256:a130874970495456eab6247439ce281394112d623b706cf2c2a
 
 -	Layers:
 	-	`sha256:73e34ddaba63f8b7c741d9af67b8606ff42d4d9a2c23a528a82a613f5f783d24`  
-		Last Modified: Wed, 21 Jan 2026 21:58:13 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:49:58 GMT  
 		Size: 3.2 KB (3204 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -344,7 +344,7 @@ $ docker pull busybox@sha256:a0f1da50d75ee978cd3e5328f371ad7f778291a1670894b357f
 
 -	Layers:
 	-	`sha256:c1d61e1ebe7c0034dfe6696e499d653629552968d2e3a3268ed4a86b815bf56f`  
-		Last Modified: Wed, 29 Oct 2025 12:37:38 GMT  
+		Last Modified: Sun, 28 Dec 2025 17:13:08 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
