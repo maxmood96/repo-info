@@ -82,7 +82,7 @@ CMD ["mvn"]
 		Size: 180.8 MB (180759153 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bdb6bad7ea862f904007724bcf863246744bd244c69ab7b028a1998b6dd3473`  
-		Last Modified: Wed, 21 Jan 2026 19:22:10 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:21:52 GMT  
 		Size: 2.4 MB (2420360 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b1dc6aa3d294228e1155d478ee22707538e363256f05809d5d31af0c5f4b51bf`  
@@ -94,7 +94,7 @@ CMD ["mvn"]
 		Size: 852.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:faa1a10c72758b85ecd8e449b09597f3b0aa7a86976dc73170286b70cd09c050`  
@@ -197,19 +197,19 @@ CMD ["mvn"]
 		Size: 178.4 MB (178412260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aa12f3b3d4dd807115d68859491a2f0fa8a652554553b39dceafd0da7e09e771`  
-		Last Modified: Wed, 21 Jan 2026 21:43:14 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:22:23 GMT  
 		Size: 2.5 MB (2461727 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:69919217fe37525f3df6f2917a46249906d271bb0c4fc7fb6f98730a55447ab0`  
-		Last Modified: Wed, 21 Jan 2026 19:22:23 GMT  
+		Last Modified: Wed, 21 Jan 2026 20:02:12 GMT  
 		Size: 9.3 MB (9312251 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9dc7ce213e9e0cf993d97562de8465f95693fdafc60990427be4bc7f9990774`  
-		Last Modified: Wed, 21 Jan 2026 19:22:23 GMT  
+		Last Modified: Wed, 21 Jan 2026 22:18:44 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:25946b8323ecc45f7613dfc7e5865a9cb65bc4a27a2fc75e20610f6e60de4856`  
@@ -233,7 +233,7 @@ $ docker pull maven@sha256:1884347564922a70292325f4ef89d06cd1a14ae8eea291084dd84
 
 -	Layers:
 	-	`sha256:78a2240a916c10851f3ec8e23daec8eaea79f9f922cd0efe917abbe48cf44058`  
-		Last Modified: Wed, 21 Jan 2026 19:22:23 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:29:16 GMT  
 		Size: 735.5 KB (735481 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:179bfdff0366f1e1fc005a736e2f129481c59cd198456b01fced307fa7e553a2`  
