@@ -69,19 +69,19 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 
 -	Layers:
 	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Sun, 07 Dec 2025 13:53:31 GMT  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:974df0e0eb67fd6fa35aefb5620f2d84f013b3e0b11b4c38737099a86303d60b`  
-		Last Modified: Sat, 08 Nov 2025 17:57:33 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:59:54 GMT  
 		Size: 16.3 MB (16289652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:68b829ff2503da3447968682832d5a69ea284ba1d657a4f8e58d4c799c8c348e`  
-		Last Modified: Wed, 07 Jan 2026 18:59:59 GMT  
+		Last Modified: Sat, 08 Nov 2025 17:57:36 GMT  
 		Size: 140.1 MB (140102363 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a217f6eeaed3b8ab583b886e8495c9ca0664bb21717752475480bc1453bb07d2`  
-		Last Modified: Sat, 08 Nov 2025 17:57:32 GMT  
+		Last Modified: Wed, 07 Jan 2026 18:59:53 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea81eccc49bc152ef173ac2d3a5ac97163278251fda36902720deae5aa454418`  
@@ -89,7 +89,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34b55b94f2f9ba78f8f0e2afc0c3230a58d33d6b2d029666b753b48ba9deffe6`  
-		Last Modified: Mon, 08 Dec 2025 18:46:13 GMT  
+		Last Modified: Mon, 08 Dec 2025 18:46:06 GMT  
 		Size: 1.0 KB (1034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -121,10 +121,10 @@ $ docker pull groovy@sha256:523eff3f5e6b535414259b9248e9da64c8777d7f8cda150591ff
 
 -	Layers:
 	-	`sha256:a62a549904444722148d12534d7b41df8f087a1e634bac3d8b5fec0ebabb090b`  
-		Last Modified: Mon, 08 Dec 2025 18:46:06 GMT  
+		Last Modified: Mon, 08 Dec 2025 21:21:21 GMT  
 		Size: 1.1 MB (1101826 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6fe4ba8a3c13f4db4621a4d773361d68d8d6d3b1e1ae489010cfa688340f94ac`  
-		Last Modified: Mon, 08 Dec 2025 18:46:06 GMT  
+		Last Modified: Mon, 08 Dec 2025 21:21:28 GMT  
 		Size: 22.3 KB (22296 bytes)  
 		MIME: application/vnd.in-toto+json
