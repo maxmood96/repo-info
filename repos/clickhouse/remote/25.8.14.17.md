@@ -95,11 +95,11 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 190.9 MB (190922617 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b1b378e4471da99ac876409cc2c5f4f9665b84b269f04e94d09dd8f13c7f938b`  
-		Last Modified: Thu, 15 Jan 2026 22:12:11 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:12:00 GMT  
 		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0e3057aefd02678456881131f1425134307d5f38db9064c5647e37ded35840e`  
-		Last Modified: Thu, 15 Jan 2026 22:12:11 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:12:00 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3da24271c02ef1d51851e13c9180fe586b6499a684a5d0b762e793f67c7b348a`  
@@ -107,7 +107,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9af0ff00bd76836cc516373a39fbe657144cb050655d1788129ccab203a20da1`  
-		Last Modified: Thu, 15 Jan 2026 22:12:02 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:12:11 GMT  
 		Size: 365.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4bb344d98f2089982fb2ceed745a809d9165351e7393aff31d18102de4587c4b`  
@@ -207,7 +207,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:517f43312bfe3b4db0f0f031d8b6deb1aa5616b07fae71fa0d349f9ce451564f`  
-		Last Modified: Fri, 09 Jan 2026 11:16:52 GMT  
+		Last Modified: Fri, 09 Jan 2026 07:36:03 GMT  
 		Size: 27.4 MB (27383497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:297714d85bd1bd0b198fca6dace9d682bdfb99e6e582716cc4a402ea5135fbbf`  
@@ -231,7 +231,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0534458f051ddf2bdc3544ffd719e1dc98eb9543380c6886465d64fa25a60be0`  
-		Last Modified: Thu, 15 Jan 2026 22:12:00 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:18:25 GMT  
 		Size: 365.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b1a6c12a019e979f88d574e4305b919081b1e6f2700eced0a594cab9e9207ee3`  
@@ -255,6 +255,6 @@ $ docker pull clickhouse@sha256:b49ec4e7cacbb4063ef4b014c20533cc848fad443c3cbddb
 
 -	Layers:
 	-	`sha256:6d7fd1fc6025d9d3cdc3f1111b5502b5712170dd438f110ab07d697f387be06a`  
-		Last Modified: Thu, 15 Jan 2026 22:11:58 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:51:29 GMT  
 		Size: 26.3 KB (26257 bytes)  
 		MIME: application/vnd.in-toto+json
