@@ -59,7 +59,7 @@ CMD ["neo4j"]
 
 -	Layers:
 	-	`sha256:bd1b97a95a10ded4767bfcdbb3d042b961d107d141121fdbb255239f0ca115f4`  
-		Last Modified: Tue, 13 Jan 2026 00:42:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:30 GMT  
 		Size: 30.3 MB (30258497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c56bb913fa66be3b4a2750f83f5f8caf28868019ab01676d975285f4fb0e725f`  
@@ -71,7 +71,7 @@ CMD ["neo4j"]
 		Size: 3.8 KB (3839 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc70053a80e85f24f26319e247664a21e579775116a52f0ba5fe906e3fc55408`  
-		Last Modified: Fri, 16 Jan 2026 21:48:35 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:22 GMT  
 		Size: 10.0 KB (10021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1383e2ef459004dd0e7e154d3fe460dd6bcf15721ac676979dcb5e92b6beb92`  
@@ -79,7 +79,7 @@ CMD ["neo4j"]
 		Size: 362.7 MB (362659054 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -175,7 +175,7 @@ CMD ["neo4j"]
 		Size: 361.9 MB (361902835 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -195,7 +195,7 @@ $ docker pull neo4j@sha256:d5b7b6f097e55a81dac34ece96619a0ef03e561e23870a2082fb4
 
 -	Layers:
 	-	`sha256:9247850ffe9b826989d477deac38782a2ede07889d432015578c755767e19cde`  
-		Last Modified: Sat, 17 Jan 2026 00:43:51 GMT  
+		Last Modified: Fri, 16 Jan 2026 21:48:23 GMT  
 		Size: 4.8 MB (4823702 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fc38796a66ff5e100def07fb336c409cba9ad1d4fdf4d101923023241f180d36`  
