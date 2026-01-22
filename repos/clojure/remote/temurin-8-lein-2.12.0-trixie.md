@@ -54,19 +54,19 @@ CMD ["lein" "repl"]
 
 -	Layers:
 	-	`sha256:2ca1bfae7ba8b9e2a56c1c19a2d14036cae96bf868ca154ca88bc078eaf7c376`  
-		Last Modified: Tue, 13 Jan 2026 00:42:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:40 GMT  
 		Size: 49.3 MB (49285621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:131c7eb7fb4074f77ee9187088d8a99ef31157a9f3a2140dcf1344b774a678dc`  
-		Last Modified: Fri, 16 Jan 2026 01:45:44 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:45:58 GMT  
 		Size: 54.7 MB (54733366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7da0f88d16f17827addea713c27bea1f864e36bf30633b6bf93fd9073122eb39`  
-		Last Modified: Fri, 16 Jan 2026 01:45:50 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:45:42 GMT  
 		Size: 18.6 MB (18579807 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb3794222cb7639ca9dca94818d933cbc901d225415c2a029a2acb0d8ce3f0a9`  
@@ -143,11 +143,11 @@ CMD ["lein" "repl"]
 		Size: 49.6 MB (49648083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61920a6b4aa281833d700661763419a55ab88fabb7ae48481a635871a6ed817c`  
-		Last Modified: Fri, 16 Jan 2026 01:47:26 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:47:37 GMT  
 		Size: 53.8 MB (53815007 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:28cff4951e9098a39f4fefb8831af358e183942e454560c0a36d40b4a0db935d`  
@@ -155,7 +155,7 @@ CMD ["lein" "repl"]
 		Size: 18.5 MB (18540759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7fc637d5ef6fa08d73f4abbd966aa243ec3d9668d46b841c8b0f253c8bd023bf`  
-		Last Modified: Fri, 16 Jan 2026 01:47:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:47:24 GMT  
 		Size: 4.5 MB (4517711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -224,15 +224,15 @@ CMD ["lein" "repl"]
 
 -	Layers:
 	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:45:58 GMT  
 		Size: 53.1 MB (53106962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8b450c5f7d58a9a7ac9c8651b6b73ac9e1c6307f2834881a528832693d6211e`  
-		Last Modified: Fri, 16 Jan 2026 02:50:27 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:50:15 GMT  
 		Size: 52.2 MB (52175110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a3d4f5f53a63734346bc51c46466ec649e3eda27959e83aab47e9897499b206`  
@@ -240,7 +240,7 @@ CMD ["lein" "repl"]
 		Size: 18.6 MB (18637246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:789bf2e2dd6ec1bfc75bd33105f151c024f942356946d52eae01f120ea1e0c55`  
-		Last Modified: Fri, 16 Jan 2026 02:50:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:50:13 GMT  
 		Size: 4.5 MB (4517732 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
