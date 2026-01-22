@@ -98,7 +98,7 @@ $ docker pull emqx@sha256:bafd51acc6e7a6440aa026fc9b4f85128335f3da6f197c7ce2cad0
 
 -	Layers:
 	-	`sha256:2a0e0fcede93b90310f54e6130b0f3268db3e8c1c2664496d39ca6ca9d4d8073`  
-		Last Modified: Tue, 13 Jan 2026 06:29:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:53 GMT  
 		Size: 2.4 MB (2403463 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c2075dae3331b14a99bdc6144a436c04085530d0f903372d45287a41060d1ea0`  
@@ -182,7 +182,7 @@ $ docker pull emqx@sha256:18acb9d20698d0fa54c2b5098b6cbe60da3bd7e0f9e4a6f7bb54e2
 
 -	Layers:
 	-	`sha256:83bbe8e83cc379af23032e5d9e0bfaabb2eda78d0e6664fb5bf2619e0044ee2f`  
-		Last Modified: Tue, 13 Jan 2026 03:28:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:41 GMT  
 		Size: 2.4 MB (2403752 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:41188b6e930ba00d90dd4040a070af16891f6c9b8cd375e13e82853587235e83`  
@@ -335,7 +335,7 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 28.1 MB (28107889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:899d84c99c6e08fef0acbfe90da1407373d98ff31c4d0fbaeef0e33ba8c533e9`  
-		Last Modified: Tue, 13 Jan 2026 01:17:57 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:45 GMT  
 		Size: 93.7 MB (93716331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -343,7 +343,7 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b5bea8798303aa2d61b52b47f2b48c318068d7e46c3c24e3ae614d2a5019f73`  
-		Last Modified: Tue, 13 Jan 2026 01:17:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:42 GMT  
 		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -367,7 +367,7 @@ $ docker pull emqx@sha256:71b2128e5182c03e7eb6db846f0dfa5c7d10a7fab755ead3b2f526
 		Size: 2.8 MB (2751654 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e45b92534341307f98e5afeedb6ed59f040c60f5ac76a841ba5affe92c39fcdb`  
-		Last Modified: Tue, 13 Jan 2026 03:28:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:42 GMT  
 		Size: 12.0 KB (11987 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -516,7 +516,7 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 28.1 MB (28107889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:899d84c99c6e08fef0acbfe90da1407373d98ff31c4d0fbaeef0e33ba8c533e9`  
-		Last Modified: Tue, 13 Jan 2026 01:17:57 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:45 GMT  
 		Size: 93.7 MB (93716331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -524,7 +524,7 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b5bea8798303aa2d61b52b47f2b48c318068d7e46c3c24e3ae614d2a5019f73`  
-		Last Modified: Tue, 13 Jan 2026 01:17:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:42 GMT  
 		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -548,7 +548,7 @@ $ docker pull emqx@sha256:71b2128e5182c03e7eb6db846f0dfa5c7d10a7fab755ead3b2f526
 		Size: 2.8 MB (2751654 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e45b92534341307f98e5afeedb6ed59f040c60f5ac76a841ba5affe92c39fcdb`  
-		Last Modified: Tue, 13 Jan 2026 03:28:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:42 GMT  
 		Size: 12.0 KB (11987 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -641,7 +641,7 @@ $ docker pull emqx@sha256:bafd51acc6e7a6440aa026fc9b4f85128335f3da6f197c7ce2cad0
 
 -	Layers:
 	-	`sha256:2a0e0fcede93b90310f54e6130b0f3268db3e8c1c2664496d39ca6ca9d4d8073`  
-		Last Modified: Tue, 13 Jan 2026 06:29:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:53 GMT  
 		Size: 2.4 MB (2403463 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c2075dae3331b14a99bdc6144a436c04085530d0f903372d45287a41060d1ea0`  
@@ -725,7 +725,7 @@ $ docker pull emqx@sha256:18acb9d20698d0fa54c2b5098b6cbe60da3bd7e0f9e4a6f7bb54e2
 
 -	Layers:
 	-	`sha256:83bbe8e83cc379af23032e5d9e0bfaabb2eda78d0e6664fb5bf2619e0044ee2f`  
-		Last Modified: Tue, 13 Jan 2026 03:28:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:41 GMT  
 		Size: 2.4 MB (2403752 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:41188b6e930ba00d90dd4040a070af16891f6c9b8cd375e13e82853587235e83`  
@@ -822,7 +822,7 @@ $ docker pull emqx@sha256:bafd51acc6e7a6440aa026fc9b4f85128335f3da6f197c7ce2cad0
 
 -	Layers:
 	-	`sha256:2a0e0fcede93b90310f54e6130b0f3268db3e8c1c2664496d39ca6ca9d4d8073`  
-		Last Modified: Tue, 13 Jan 2026 06:29:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:53 GMT  
 		Size: 2.4 MB (2403463 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c2075dae3331b14a99bdc6144a436c04085530d0f903372d45287a41060d1ea0`  
@@ -906,7 +906,7 @@ $ docker pull emqx@sha256:18acb9d20698d0fa54c2b5098b6cbe60da3bd7e0f9e4a6f7bb54e2
 
 -	Layers:
 	-	`sha256:83bbe8e83cc379af23032e5d9e0bfaabb2eda78d0e6664fb5bf2619e0044ee2f`  
-		Last Modified: Tue, 13 Jan 2026 03:28:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:41 GMT  
 		Size: 2.4 MB (2403752 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:41188b6e930ba00d90dd4040a070af16891f6c9b8cd375e13e82853587235e83`  
@@ -1003,7 +1003,7 @@ $ docker pull emqx@sha256:bafd51acc6e7a6440aa026fc9b4f85128335f3da6f197c7ce2cad0
 
 -	Layers:
 	-	`sha256:2a0e0fcede93b90310f54e6130b0f3268db3e8c1c2664496d39ca6ca9d4d8073`  
-		Last Modified: Tue, 13 Jan 2026 06:29:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:53 GMT  
 		Size: 2.4 MB (2403463 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c2075dae3331b14a99bdc6144a436c04085530d0f903372d45287a41060d1ea0`  
@@ -1087,7 +1087,7 @@ $ docker pull emqx@sha256:18acb9d20698d0fa54c2b5098b6cbe60da3bd7e0f9e4a6f7bb54e2
 
 -	Layers:
 	-	`sha256:83bbe8e83cc379af23032e5d9e0bfaabb2eda78d0e6664fb5bf2619e0044ee2f`  
-		Last Modified: Tue, 13 Jan 2026 03:28:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:41 GMT  
 		Size: 2.4 MB (2403752 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:41188b6e930ba00d90dd4040a070af16891f6c9b8cd375e13e82853587235e83`  
