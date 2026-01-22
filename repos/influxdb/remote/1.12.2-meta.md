@@ -55,7 +55,7 @@ CMD ["influxd-meta"]
 		Size: 24.0 MB (24036867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c8226584456c231e3329e2f781db217386df170900017ccf5ad54f649f3a4892`  
-		Last Modified: Tue, 13 Jan 2026 04:02:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:02:01 GMT  
 		Size: 18.8 MB (18780819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61622d86659aed4ba8f4ef77c6784a2201f76664031c14b2cfc4382d1fad188c`  
@@ -83,7 +83,7 @@ $ docker pull influxdb@sha256:fc34f0e0037afbb0dd07c5569c82c110b8ee9270e8a27fd45a
 
 -	Layers:
 	-	`sha256:ef9b998d76c6a317d3d028cff8c5607da4ac015da97d036c8556b540b4eed402`  
-		Last Modified: Tue, 13 Jan 2026 06:22:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:02:01 GMT  
 		Size: 4.6 MB (4591555 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:90bcc4be344b12d86469f9015e7e36c92c0e18c887c79c28a6183d38f7a71dc1`  
