@@ -40,7 +40,7 @@ RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.ope
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:061c6d167a3eb8d9ce763b64a7aa6fe1e5dc9849ebed072a5a8d14d32c497ee6`  
-		Last Modified: Wed, 14 Jan 2026 19:46:23 GMT  
+		Last Modified: Wed, 14 Jan 2026 19:46:42 GMT  
 		Size: 48.6 MB (48615470 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:30356d58936c9746b91cb07a9eb9e8ee4850fdab81e5f7965ec355a8da03f3c0`  
@@ -48,10 +48,10 @@ RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.ope
 		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:eb7c16f3a5ef4a2619c20a73f3e695f97ed4d015c292461720d358828a5da46a`  
-		Last Modified: Wed, 14 Jan 2026 19:46:34 GMT  
+		Last Modified: Wed, 14 Jan 2026 19:45:47 GMT  
 		Size: 1.1 KB (1079 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2c28ced4369f147f14d7146eef947ff8b477b540582b58b43dcdf24c6234999c`  
-		Last Modified: Wed, 14 Jan 2026 19:45:47 GMT  
+		Last Modified: Wed, 14 Jan 2026 19:46:34 GMT  
 		Size: 1.1 KB (1064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
