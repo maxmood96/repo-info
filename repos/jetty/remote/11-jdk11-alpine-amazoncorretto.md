@@ -72,7 +72,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:1074353eec0db2c1d81d5af2671e56e00cf5738486f5762609ea33d606f88612`  
-		Last Modified: Wed, 17 Dec 2025 22:49:00 GMT  
+		Last Modified: Wed, 17 Dec 2025 22:48:50 GMT  
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37533683d9d9c426fc0a82ce538cf1d7151c8208b37752b241ceb9592c254abc`  
@@ -88,7 +88,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:80e3599566d687e31e2d7a0209b8c1d95f50b07217ae9b1a06f7201355075c9f`  
-		Last Modified: Wed, 21 Jan 2026 19:20:39 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:38:57 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -177,7 +177,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:f6b4fb9446345fcad2db26eac181fef6c0a919c8a4fcccd3bea5deb7f6dff67e`  
-		Last Modified: Thu, 18 Dec 2025 00:12:50 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:35 GMT  
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c016f1d7921cb0297977d531731dee15427272f3b40ad659102fa9e1c718223a`  
@@ -193,7 +193,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d576f87654e09ecd01ba0227e6e4393af434acba55a83bcac966be1ba5b6e958`  
-		Last Modified: Wed, 21 Jan 2026 19:20:27 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:20:45 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -213,7 +213,7 @@ $ docker pull jetty@sha256:9e4d884737cd47d83525a1044c8d85d67affe7772044029a52214
 
 -	Layers:
 	-	`sha256:61db5d781d1eeb5ae1ad59ed49c65a5537e513744a5d31c77804756f334a701d`  
-		Last Modified: Wed, 21 Jan 2026 19:20:27 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:17:25 GMT  
 		Size: 828.9 KB (828947 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cf585b273bd5c8af3120d87c586f7b0e87c151a85a260e9b692bf11c55cae3f3`  
