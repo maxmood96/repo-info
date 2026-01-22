@@ -82,27 +82,27 @@ CMD ["mvn"]
 		Size: 152.5 MB (152462935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c3d4affbbc6ba2dd64190a0cf7936a335f24d78cdd3303ce807c4ed76404fcb`  
-		Last Modified: Wed, 21 Jan 2026 19:21:59 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:28:20 GMT  
 		Size: 173.6 MB (173614725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:78f23b3febd5fd9e21be18d451761624259bcdd7bd8c85ffd7359c5a2a5e6d77`  
-		Last Modified: Wed, 21 Jan 2026 19:21:56 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:22:22 GMT  
 		Size: 30.1 MB (30071830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e6f6fdf154bbd0ade48d14689f70c086f070686b7008fe019c71a530bf1bc0e`  
-		Last Modified: Wed, 21 Jan 2026 21:24:24 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:21:55 GMT  
 		Size: 9.3 MB (9312251 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8f432dd758cde3a636c5e011c735240e77cf3c4404421141217cc2dced76e4e7`  
-		Last Modified: Wed, 21 Jan 2026 19:21:54 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:26:22 GMT  
 		Size: 853.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b8a0d7d3ec49d372f7d4c6f4290459b411075e0ba85e289d15d83015ef054710`  
-		Last Modified: Wed, 21 Jan 2026 19:21:56 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:22:20 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -122,11 +122,11 @@ $ docker pull maven@sha256:4ff8282506cb39ed32602d7682e61420f2f52a3ca446786182e12
 
 -	Layers:
 	-	`sha256:82a559877b029d934c828204133003356eecd3605ca3b3766e2c4476486eda90`  
-		Last Modified: Wed, 21 Jan 2026 21:30:24 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:21:55 GMT  
 		Size: 6.9 MB (6932261 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:67b3239934ee27a75a0edd46e809856e623260c1957dca898241a9622b3635c5`  
-		Last Modified: Wed, 21 Jan 2026 21:28:26 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:21:54 GMT  
 		Size: 18.2 KB (18194 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -201,7 +201,7 @@ CMD ["mvn"]
 		Size: 151.0 MB (150985142 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:371d21c8f64c8070c26b5920e78091e333e23e85b9188cb0547c04a28241b016`  
-		Last Modified: Wed, 21 Jan 2026 22:13:24 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:17:35 GMT  
 		Size: 149.4 MB (149420957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6d0426887ed60cf7d66f021a5f461847fb193452c68bc7200524b12b47e3e5a`  
@@ -213,15 +213,15 @@ CMD ["mvn"]
 		Size: 9.3 MB (9312243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e571ea5c9c936db78a46d86b0e1292e87a7ff37acaf223c1bf36de4a1734a527`  
-		Last Modified: Wed, 21 Jan 2026 19:17:32 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:17:55 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0bc93880cbb22a9b5514a9abc9bb583d21ee2a154e5f5b4fdf6d27a58e579aa0`  
-		Last Modified: Wed, 21 Jan 2026 22:12:49 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:17:33 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -241,7 +241,7 @@ $ docker pull maven@sha256:055121661812f2a9f73e1d483fe7df6415350aff78c06766e0764
 
 -	Layers:
 	-	`sha256:c20d6078938dca671ef7be3faf58dbf1925a378d7ad48d41ad005dcd851dc39e`  
-		Last Modified: Wed, 21 Jan 2026 21:28:03 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:17:32 GMT  
 		Size: 6.9 MB (6929660 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1279e6cf17f9591b494fcef10bde4bcb3d36a249c13ffcd962840411216804cb`  
