@@ -87,31 +87,31 @@ CMD ["repl"]
 
 -	Layers:
 	-	`sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114`  
-		Last Modified: Tue, 13 Jan 2026 07:03:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f72f0f1ec9ea380a6af4a85e594cff7bccbe1c7d5311177ebdc52d3e6d2f04b7`  
-		Last Modified: Thu, 15 Jan 2026 22:20:21 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:07 GMT  
 		Size: 23.0 MB (22961250 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3404c492510be2396378b473c5470243eb685ac3c2fdcef9fbb84ee599ddc259`  
-		Last Modified: Thu, 15 Jan 2026 22:20:44 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:10 GMT  
 		Size: 144.9 MB (144851725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:682d1a3197c6ea11de7df99dd2f999e6acfbca27646f512103d6a81c3d3994cf`  
-		Last Modified: Thu, 15 Jan 2026 22:20:06 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c940cc503ed4660889aab5fe6ab7b4e7f6f5668ee17a74fb1b5918d33e645f92`  
-		Last Modified: Thu, 15 Jan 2026 22:20:16 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:06 GMT  
 		Size: 2.3 KB (2278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:51b6a24ef1b0d2698010f3e9df13c1c0c7d61530737b6aee94cb4166465bf815`  
-		Last Modified: Fri, 16 Jan 2026 01:53:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:53:41 GMT  
 		Size: 14.5 MB (14482127 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:baeef068aeef8df89599f82de847ec8fc5336897b3858faf5db57cf32d14d4d4`  
@@ -119,7 +119,7 @@ CMD ["repl"]
 		Size: 4.5 MB (4517697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:851e81f309303aba1ca444cdcc4bcf1bff519b81a6b40646b54d6b63f1e411e0`  
-		Last Modified: Fri, 16 Jan 2026 01:53:31 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:53:37 GMT  
 		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -139,7 +139,7 @@ $ docker pull clojure@sha256:4ed8309ce11d9cbf733542c16e472387934684e9829bdb3a254
 
 -	Layers:
 	-	`sha256:6601afb65b13af0d5494e307037a69816f2c271fc60fff33e872ba5ea55c5307`  
-		Last Modified: Fri, 16 Jan 2026 04:41:37 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:53:31 GMT  
 		Size: 3.5 MB (3495003 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8afa01b1ed93ca324137ecf0e23767f2e7e0afdd9f8260be0ede7539fb2a988c`  
@@ -221,7 +221,7 @@ CMD ["repl"]
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c5e4116d8d6e5320d366443942067a43834d0d58389a0a501596650d87012ed7`  
-		Last Modified: Thu, 15 Jan 2026 22:20:11 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:24 GMT  
 		Size: 24.2 MB (24166525 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:87bab40ec88938a4a1cc05ed8925309e6b395efb6617566b2c9235d71354c7ac`  
@@ -237,11 +237,11 @@ CMD ["repl"]
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bffa7947c9d26b94a19390d73d3599ca64a64a3deab94209a9b3484fd51a81bb`  
-		Last Modified: Fri, 16 Jan 2026 01:57:31 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:57:38 GMT  
 		Size: 14.5 MB (14483642 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6de8bd5419cc6d65731c89768b5823f440e9e2ac73823a51c41c4e01442eb7a`  
@@ -249,7 +249,7 @@ CMD ["repl"]
 		Size: 4.5 MB (4517687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0595eec889f9e48d9d979db9f398c2b31e5a1c19e73c593b04dd6fb70ceb38c9`  
-		Last Modified: Fri, 16 Jan 2026 01:57:45 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:57:31 GMT  
 		Size: 398.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -273,7 +273,7 @@ $ docker pull clojure@sha256:129b3141ce39da3f815381fe6c418a96d7171fd9660ba049317
 		Size: 3.6 MB (3626520 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ad4a3dfc922b4fd2e64ba16df8d3fe5a0a87a5d2ca5e7ed6814db28b97569f2d`  
-		Last Modified: Fri, 16 Jan 2026 01:57:30 GMT  
+		Last Modified: Fri, 16 Jan 2026 04:41:43 GMT  
 		Size: 19.1 KB (19147 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -347,39 +347,39 @@ CMD ["repl"]
 
 -	Layers:
 	-	`sha256:0dea13cf1fe062734821309e5f773a18c9ad629d9e93e3eba340bea036bccd8a`  
-		Last Modified: Tue, 13 Jan 2026 06:35:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 07:12:18 GMT  
 		Size: 34.3 MB (34306159 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:935fc6b67e53753b7fd4310688a6745a6f3dc91379aa280218a4dad865d583ec`  
-		Last Modified: Thu, 15 Jan 2026 22:16:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:16:28 GMT  
 		Size: 24.1 MB (24102276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:532ae8b10857cc7b1b82413e29e054b1e0b084c932171117faf0e362eef7cd5b`  
-		Last Modified: Thu, 15 Jan 2026 22:16:20 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:16:42 GMT  
 		Size: 144.5 MB (144534045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0cd118092dd0ac79e37619e91a13eb24c81776ba95b53b1d5e7afd0a2ecb72f7`  
-		Last Modified: Thu, 15 Jan 2026 22:16:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:16:15 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7aaaabed2317e2357db6deb7b9bbd1c8bbb90968b0f80578ad7fbe536bf1d84f`  
-		Last Modified: Thu, 15 Jan 2026 22:16:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:16:16 GMT  
 		Size: 2.3 KB (2279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f3bd32c23c406e38ac2f9bc5a29fe12cbf591beab75a2fa6757a60b6099873ce`  
-		Last Modified: Fri, 16 Jan 2026 03:15:42 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:15:48 GMT  
 		Size: 14.5 MB (14527337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0dfda8ad190fb9d6e7221470f1bfc475f06d2f93bdddd34e36a218474f34d36`  
-		Last Modified: Fri, 16 Jan 2026 03:15:41 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:15:48 GMT  
 		Size: 4.5 MB (4517717 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b86bc15e6890ec0939fe8d518cf56b68c80e5be79a05f6e6d883a561d7420309`  
-		Last Modified: Fri, 16 Jan 2026 03:15:41 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:15:47 GMT  
 		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -403,7 +403,7 @@ $ docker pull clojure@sha256:89f43901d770b49dac26f764e57af69dca85161e8fe8a64860b
 		Size: 3.5 MB (3542745 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:77ce25f98c290f40e8e6aab302de7d60fdb248ff2067adb3ad705dda7c3e9673`  
-		Last Modified: Fri, 16 Jan 2026 04:41:49 GMT  
+		Last Modified: Fri, 16 Jan 2026 03:15:41 GMT  
 		Size: 19.1 KB (19074 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -477,7 +477,7 @@ CMD ["repl"]
 
 -	Layers:
 	-	`sha256:f151392858868452ec0f1f8d2947624e8dcdecf23bce587cfbd7c38a3264f9df`  
-		Last Modified: Tue, 13 Jan 2026 06:36:06 GMT  
+		Last Modified: Sun, 18 Jan 2026 21:52:26 GMT  
 		Size: 31.0 MB (30953090 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c70a79886c4402a76ef90814a79e96c424cf0e215bb8c0b7d7f29e0d0acc7bd0`  
@@ -497,7 +497,7 @@ CMD ["repl"]
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a33e3d5718bc5add100a9f44d40e5e2cb20465d6889d6289e64ca6f589e2f73c`  
@@ -611,7 +611,7 @@ CMD ["repl"]
 		Size: 29.9 MB (29909204 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0cf594db9e0a61709897c7efb4b65db2a8edccb2aab36b7a813871b3428f2f62`  
-		Last Modified: Thu, 15 Jan 2026 22:09:18 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:09:29 GMT  
 		Size: 22.1 MB (22129350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d3965cca5a0f76297b56734385760b667704e44243caf5723b423e822f7b4e80`  
@@ -619,15 +619,15 @@ CMD ["repl"]
 		Size: 134.9 MB (134864285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1347e3bbe0f58930ad0ebd82545acc81a2fe5ab7e1cd5d9658d9f46d6942cff7`  
-		Last Modified: Thu, 15 Jan 2026 22:09:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:09:17 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc739c61af7d1eea46106081a4a43dbb9dcb8c553aa956f65b47aca3fa455bc1`  
-		Last Modified: Thu, 15 Jan 2026 22:09:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:09:26 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6402191b54ff1215ed9188d762495513c5473a426a7d7e4a4cc707e154c2d2d1`  
@@ -639,7 +639,7 @@ CMD ["repl"]
 		Size: 4.5 MB (4517715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:32972523091950b795d0bc3633cfe6f66fd842da871a6ee679f7ef68fc0eb3c3`  
-		Last Modified: Thu, 15 Jan 2026 23:15:02 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:15:08 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
