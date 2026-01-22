@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:200dc5129f2e08f3238a83b7951ab35303364cd0696c49919422028e547439a2`
-- Created: `2025-12-04T19:47:11.590816515Z`
+- Image ID: `sha256:3514498bfce28b33733a9e1cbafaa58cb908ecc77e979c3a29c10b2d40d7622f`
+- Created: `2026-01-20T19:12:22.940458461Z`
 - Virtual Size: ~ 1.54 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,13 +25,13 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-12-03T20:36:05Z`
+  - `build-date=2026-01-19T00:53:42Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
-  - `io.buildah.version=1.41.4`
+  - `io.buildah.version=1.41.5`
   - `io.k8s.description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 9 Minimal`
   - `io.openshift.expose-services=`
@@ -39,12 +39,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2025-12-03T20:36:05Z`
-  - `org.opencontainers.image.revision=1595c1bf15cd4327d529f330e61327764327397e`
-  - `release=1764794109`
+  - `org.opencontainers.image.created=2026-01-19T00:53:42Z`
+  - `org.opencontainers.image.revision=d9151f7dd4dfe1cc8a2df524b85cddd483628d5e`
+  - `release=1768783948`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=1595c1bf15cd4327d529f330e61327764327397e`
+  - `vcs-ref=d9151f7dd4dfe1cc8a2df524b85cddd483628d5e`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -342,12 +342,7 @@ Licenses (from `rpm --query`): BSD
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url glib2-2.68.4-18.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-18.el9_7.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `glibc-2.34-231.el9_7.2.x86_64`
 
@@ -393,11 +388,16 @@ $ dnf --quiet download --source --url gmp-6.2.0-13.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gmp-6.2.0-13.el9.src.rpm
 ```
 
-### `rpm` package: `gnupg2-2.3.3-4.el9.x86_64`
+### `rpm` package: `gnupg2-2.3.3-5.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gnupg2-2.3.3-5.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnupg2-2.3.3-5.el9_7.src.rpm
+```
 
 ### `rpm` package: `gnutls-3.8.3-9.el9.x86_64`
 
@@ -1040,17 +1040,27 @@ $ dnf --quiet download --source --url libsolv-0.7.24-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libsolv-0.7.24-3.el9.src.rpm
 ```
 
-### `rpm` package: `libssh-0.10.4-15.el9_7.x86_64`
+### `rpm` package: `libssh-0.10.4-17.el9_7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `libssh-config-0.10.4-15.el9_7.noarch`
+```console
+$ dnf --quiet download --source --url libssh-0.10.4-17.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libssh-0.10.4-17.el9_7.src.rpm
+```
+
+### `rpm` package: `libssh-config-0.10.4-17.el9_7.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libssh-config-0.10.4-17.el9_7.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libssh-0.10.4-17.el9_7.src.rpm
+```
 
 ### `rpm` package: `libstdc++-11.5.0-11.el9.x86_64`
 
@@ -1338,17 +1348,27 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-3.5.1-4.el9_7.x86_64`
+### `rpm` package: `openssl-3.5.1-5.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `openssl-devel-3.5.1-4.el9_7.x86_64`
+```console
+$ dnf --quiet download --source --url openssl-3.5.1-5.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-5.el9_7.src.rpm
+```
+
+### `rpm` package: `openssl-devel-3.5.1-5.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-devel-3.5.1-5.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-5.el9_7.src.rpm
+```
 
 ### `rpm` package: `openssl-fips-provider-3.0.7-8.el9.x86_64`
 
@@ -1372,11 +1392,16 @@ $ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-8.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.5.1-4.el9_7.x86_64`
+### `rpm` package: `openssl-libs-3.5.1-5.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-libs-3.5.1-5.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-5.el9_7.src.rpm
+```
 
 ### `rpm` package: `p11-kit-0.25.3-3.el9_5.x86_64`
 
@@ -1492,7 +1517,7 @@ Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affil
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-telemetry-agent-1.0.6-1.el9.x86_64`
+### `rpm` package: `percona-telemetry-agent-1.0.7-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3
 
@@ -2334,17 +2359,27 @@ $ dnf --quiet download --source --url systemd-rpm-macros-252-55.el9_7.7.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
 ```
 
-### `rpm` package: `tar-1.34-7.el9.x86_64`
+### `rpm` package: `tar-1.34-9.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `tzdata-2025b-2.el9.noarch`
+```console
+$ dnf --quiet download --source --url tar-1.34-9.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-9.el9_7.src.rpm
+```
+
+### `rpm` package: `tzdata-2025c-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2025c-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2025c-1.el9.src.rpm
+```
 
 ### `rpm` package: `util-linux-2.37.4-21.el9.x86_64`
 
