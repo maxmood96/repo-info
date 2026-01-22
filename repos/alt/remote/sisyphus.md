@@ -1,7 +1,7 @@
 ## `alt:sisyphus`
 
 ```console
-$ docker pull alt@sha256:3f23891da10469fa53aec87c932f164acc2516202d5396ce76d9fa5f9034aada
+$ docker pull alt@sha256:363afc87bf5e54f15123348a42dbe7869823b9612b31455367aba9d5c7519ef8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -66,11 +66,11 @@ $ docker pull alt@sha256:d3f354bae3f8a47624a22e4b87715b12a322985de0ac1144ac0d758
 
 -	Layers:
 	-	`sha256:706eddb7d40b21efcac57a528a7646515d2ba58804dd702566cf2164d692b9bb`  
-		Last Modified: Tue, 20 Jan 2026 17:55:35 GMT  
+		Last Modified: Tue, 20 Jan 2026 20:07:42 GMT  
 		Size: 2.6 MB (2618916 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8c665b0c151c3138cbb9058397a7c03284548c28d195fdd7a1fc14f711945293`  
-		Last Modified: Tue, 20 Jan 2026 17:55:34 GMT  
+		Last Modified: Tue, 20 Jan 2026 20:07:56 GMT  
 		Size: 6.1 KB (6078 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -101,11 +101,11 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:beaae112720b80f9cf707e0a59568ef94f9684b8892c2f6a5d81e1ffd1b4b712`  
-		Last Modified: Tue, 20 Jan 2026 18:00:41 GMT  
+		Last Modified: Tue, 20 Jan 2026 22:13:07 GMT  
 		Size: 45.3 MB (45280686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:891b3097d82d7a00bdeb058128312e657d54a5ef29b88a5578cbcd8f379f4a91`  
-		Last Modified: Tue, 20 Jan 2026 18:00:39 GMT  
+		Last Modified: Tue, 20 Jan 2026 18:00:47 GMT  
 		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -184,69 +184,69 @@ $ docker pull alt@sha256:54f979b49df35d392a248d2126837c9fe42ce360c7aeb92b66feeb4
 
 -	Layers:
 	-	`sha256:9140e54fafd82d5fecbbe1ce71cbe9f454e7932693c42f37a4299ff12c7f6602`  
-		Last Modified: Tue, 20 Jan 2026 20:08:02 GMT  
+		Last Modified: Tue, 20 Jan 2026 17:53:32 GMT  
 		Size: 2.6 MB (2617642 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:153f27023e0d010d4c773895b28f81f9db45448359dbd71ad6065ffa13456455`  
-		Last Modified: Tue, 20 Jan 2026 20:08:37 GMT  
+		Last Modified: Tue, 20 Jan 2026 17:53:32 GMT  
 		Size: 6.1 KB (6060 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `alt:sisyphus` - linux; riscv64
 
 ```console
-$ docker pull alt@sha256:845066cd98a8169c886c961b50de8c659d67ab43219a06d1195ad4325537ec1b
+$ docker pull alt@sha256:3cf5bc6acfc8273dc2052faea43de4db6ad0007cd0cd63af5081bcc90e81332b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.4 MB (44408217 bytes)**  
+-	Total Size: **44.5 MB (44486087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:344fc85c860d7ec929e02552c2f1943d3109ca2cffbc76b20ebe97045dea013e`
+-	Image ID: `sha256:41d2a588d57b588ae5273d2a515302542b60a3ceda71458c6a4f6c0e93075f90`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 08 Oct 2025 08:06:13 GMT
+# Thu, 22 Jan 2026 05:23:03 GMT
 MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Nadezhda Fedorova <fedor@altlinux.org>]
-# Wed, 08 Oct 2025 08:06:13 GMT
+# Thu, 22 Jan 2026 05:23:03 GMT
 LABEL org.opencontainers.image.licenses=GPLv3 org.opencontainers.image.title=alt org.opencontainers.image.description=Minimal image org.opencontainers.image.vendor=ALT Linux Team
-# Wed, 08 Oct 2025 08:06:13 GMT
+# Thu, 22 Jan 2026 05:23:03 GMT
 ADD alt-sisyphus-riscv64.tar.xz / # buildkit
-# Wed, 08 Oct 2025 08:06:13 GMT
+# Thu, 22 Jan 2026 05:23:04 GMT
 RUN true > /etc/security/limits.d/50-defaults.conf # buildkit
-# Wed, 08 Oct 2025 08:06:13 GMT
+# Thu, 22 Jan 2026 05:23:04 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:280d9ae7e606ab73553e2c47a618735393ef3df6074ce94a34564388acbd0aab`  
-		Last Modified: Wed, 08 Oct 2025 17:50:43 GMT  
-		Size: 44.4 MB (44408025 bytes)  
+	-	`sha256:ba25e668b40b2efaa9085cfdb237dd3fdac12bee44a47b6d0f8175d7c3eaa120`  
+		Last Modified: Thu, 22 Jan 2026 05:24:49 GMT  
+		Size: 44.5 MB (44485897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5f6cc3a42dd3440224bfa9fdf4c40890ba83d704734dce236a1bd0a28ebc6c8`  
-		Last Modified: Sat, 17 Jan 2026 10:48:30 GMT  
-		Size: 192.0 B  
+	-	`sha256:31f644b3bca52aac38924d1e8d7515b0cb5ec91079fe48391b191fff649a9e5d`  
+		Last Modified: Thu, 22 Jan 2026 06:02:36 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `alt:sisyphus` - unknown; unknown
 
 ```console
-$ docker pull alt@sha256:4c4586202d185c3dc1ef2c59b44f202186bcdf3bd142170f300d8ce4a7e5cabc
+$ docker pull alt@sha256:52c85bd8165d1b5da180d18ce920bf9ce8a74fa34e27d1b515834cf7883c8a6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2607382 bytes)**  
+-	Total Size: **2.6 MB (2623698 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5ec87cfe1a950a797b9188e5076776e80a8e150d0be548c7a004cf86d623d5c`
+-	Image ID: `sha256:18908b805353e0f803018b9e1dd6005bf5bd9b4b37efe28ddc7accfa6f6309bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f7bfdc636b2df6a9b21f5a841728c7fc38e2837b0373a0258f0194e84a8428ea`  
-		Last Modified: Wed, 08 Oct 2025 17:50:36 GMT  
-		Size: 2.6 MB (2601237 bytes)  
+	-	`sha256:7398354c4d28200d04aa4b30f5da872e5946e83d13d627671a9f01c40d73aa65`  
+		Last Modified: Thu, 22 Jan 2026 05:24:42 GMT  
+		Size: 2.6 MB (2617596 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1442934513b0dff1f98ab9a1e4883d3be0c1bae1934aa7307f92006ea710eb3c`  
-		Last Modified: Wed, 08 Oct 2025 17:50:35 GMT  
-		Size: 6.1 KB (6145 bytes)  
+	-	`sha256:6598b1c5289c5c942753cee096d29bcbe5743711a88b57e9a06da50f3ed0ae98`  
+		Last Modified: Thu, 22 Jan 2026 05:24:42 GMT  
+		Size: 6.1 KB (6102 bytes)  
 		MIME: application/vnd.in-toto+json
