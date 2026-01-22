@@ -105,7 +105,7 @@ CMD ["erl"]
 		Size: 49.0 MB (49046458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e31fd71f35e1c46e30dc677ced11b19cf198501276b9b7320f2fc4bdd1fd19eb`  
-		Last Modified: Tue, 13 Jan 2026 03:25:46 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:25:36 GMT  
 		Size: 57.2 MB (57225356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -247,6 +247,6 @@ $ docker pull erlang@sha256:88533b963396d03c6816bee0b2456b94593918afa2f6f7c23da8
 		Size: 4.1 MB (4095399 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b80c545b64e37c579ee5a59536b2332e9c8bfca61ae6e6d03f0f0118056b4ce9`  
-		Last Modified: Tue, 13 Jan 2026 02:49:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:10:08 GMT  
 		Size: 13.5 KB (13536 bytes)  
 		MIME: application/vnd.in-toto+json
