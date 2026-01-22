@@ -57,7 +57,7 @@ CMD ["raku"]
 
 -	Layers:
 	-	`sha256:1074353eec0db2c1d81d5af2671e56e00cf5738486f5762609ea33d606f88612`  
-		Last Modified: Wed, 17 Dec 2025 22:49:00 GMT  
+		Last Modified: Wed, 17 Dec 2025 22:48:50 GMT  
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11b26f10f97b04dc7bfd04bcffe90fc6e2e3fe8a9d5793c2a4b9eb90484c21b7`  
@@ -89,7 +89,7 @@ $ docker pull rakudo-star@sha256:93f708e4e9e140c72050fbf7d443eab43cb41baeb7bd6c2
 		Size: 187.0 KB (186973 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:81bbdba0f6cff7ee180c88f6fd451323a8904217a2ba5f8c0eb2b8a2a6180992`  
-		Last Modified: Sun, 28 Dec 2025 08:33:21 GMT  
+		Last Modified: Sun, 28 Dec 2025 06:05:06 GMT  
 		Size: 11.7 KB (11718 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -127,7 +127,7 @@ CMD ["raku"]
 
 -	Layers:
 	-	`sha256:f6b4fb9446345fcad2db26eac181fef6c0a919c8a4fcccd3bea5deb7f6dff67e`  
-		Last Modified: Thu, 18 Dec 2025 00:12:50 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:35 GMT  
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5bd0463e9cce2cf2e69d321d68c112c55ed5938ad6e0f7eadc43a0422d15dd9`  
@@ -230,7 +230,7 @@ CMD ["raku"]
 		Size: 3.2 KB (3237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70b6ba7c20f1977b9a8e57f72d7dbc7c5897d6cd82337fccb8ac61d660cad1f3`  
-		Last Modified: Tue, 13 Jan 2026 05:05:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:05:51 GMT  
 		Size: 41.0 MB (41041597 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -312,7 +312,7 @@ CMD ["raku"]
 		Size: 3.2 KB (3237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18c237b39c14655402b91c30f8c3a422a96e24297fb61818eac59568bab5aa3e`  
-		Last Modified: Tue, 13 Jan 2026 06:35:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:19 GMT  
 		Size: 39.1 MB (39073378 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -473,7 +473,7 @@ CMD ["raku"]
 
 -	Layers:
 	-	`sha256:5582010cab7f00a8f96e076b02666116eaa7e4af9a74eb44f2946a593b50294f`  
-		Last Modified: Tue, 13 Jan 2026 00:42:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:51 GMT  
 		Size: 49.6 MB (49648083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:599d5b6b6766fd729045e2e7d0396d1f61fe41c612d4aef6bb3bf5ea7db12ae2`  
@@ -481,7 +481,7 @@ CMD ["raku"]
 		Size: 25.0 MB (25022636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c9b629762372f548de0ebccf01b8e80ae5ce251dfd36aef6fc3ae8d963493edf`  
-		Last Modified: Tue, 13 Jan 2026 03:58:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:58:49 GMT  
 		Size: 67.6 MB (67591513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d0a74db4adc441ee4f4a20a76a81486cf86690fcadbcb2438f1a1f01f9400553`  
@@ -489,7 +489,7 @@ CMD ["raku"]
 		Size: 3.2 KB (3238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dea8f1d780b2af1c916a38924b84651302113534657977d2bc3bac79a5260177`  
-		Last Modified: Tue, 13 Jan 2026 05:16:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:17:01 GMT  
 		Size: 39.1 MB (39092668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -513,7 +513,7 @@ $ docker pull rakudo-star@sha256:554e796f3db2eea8d9cc2a90d10153d186a4a7c0a08de91
 		Size: 7.8 MB (7778213 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:236481e610cf6e64fd4c21b1254cfe2e68a0c3332c2dd4f415c895d961bc57a3`  
-		Last Modified: Tue, 13 Jan 2026 05:16:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:33:48 GMT  
 		Size: 13.1 KB (13100 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -564,7 +564,7 @@ CMD ["raku"]
 
 -	Layers:
 	-	`sha256:1074353eec0db2c1d81d5af2671e56e00cf5738486f5762609ea33d606f88612`  
-		Last Modified: Wed, 17 Dec 2025 22:49:00 GMT  
+		Last Modified: Wed, 17 Dec 2025 22:48:50 GMT  
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11b26f10f97b04dc7bfd04bcffe90fc6e2e3fe8a9d5793c2a4b9eb90484c21b7`  
@@ -596,7 +596,7 @@ $ docker pull rakudo-star@sha256:93f708e4e9e140c72050fbf7d443eab43cb41baeb7bd6c2
 		Size: 187.0 KB (186973 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:81bbdba0f6cff7ee180c88f6fd451323a8904217a2ba5f8c0eb2b8a2a6180992`  
-		Last Modified: Sun, 28 Dec 2025 08:33:21 GMT  
+		Last Modified: Sun, 28 Dec 2025 06:05:06 GMT  
 		Size: 11.7 KB (11718 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -634,7 +634,7 @@ CMD ["raku"]
 
 -	Layers:
 	-	`sha256:f6b4fb9446345fcad2db26eac181fef6c0a919c8a4fcccd3bea5deb7f6dff67e`  
-		Last Modified: Thu, 18 Dec 2025 00:12:50 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:35 GMT  
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5bd0463e9cce2cf2e69d321d68c112c55ed5938ad6e0f7eadc43a0422d15dd9`  
@@ -737,7 +737,7 @@ CMD ["raku"]
 		Size: 3.2 KB (3237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70b6ba7c20f1977b9a8e57f72d7dbc7c5897d6cd82337fccb8ac61d660cad1f3`  
-		Last Modified: Tue, 13 Jan 2026 05:05:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:05:51 GMT  
 		Size: 41.0 MB (41041597 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -819,7 +819,7 @@ CMD ["raku"]
 		Size: 3.2 KB (3237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18c237b39c14655402b91c30f8c3a422a96e24297fb61818eac59568bab5aa3e`  
-		Last Modified: Tue, 13 Jan 2026 06:35:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:19 GMT  
 		Size: 39.1 MB (39073378 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -980,7 +980,7 @@ CMD ["raku"]
 
 -	Layers:
 	-	`sha256:5582010cab7f00a8f96e076b02666116eaa7e4af9a74eb44f2946a593b50294f`  
-		Last Modified: Tue, 13 Jan 2026 00:42:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:51 GMT  
 		Size: 49.6 MB (49648083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:599d5b6b6766fd729045e2e7d0396d1f61fe41c612d4aef6bb3bf5ea7db12ae2`  
@@ -988,7 +988,7 @@ CMD ["raku"]
 		Size: 25.0 MB (25022636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c9b629762372f548de0ebccf01b8e80ae5ce251dfd36aef6fc3ae8d963493edf`  
-		Last Modified: Tue, 13 Jan 2026 03:58:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:58:49 GMT  
 		Size: 67.6 MB (67591513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d0a74db4adc441ee4f4a20a76a81486cf86690fcadbcb2438f1a1f01f9400553`  
@@ -996,7 +996,7 @@ CMD ["raku"]
 		Size: 3.2 KB (3238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dea8f1d780b2af1c916a38924b84651302113534657977d2bc3bac79a5260177`  
-		Last Modified: Tue, 13 Jan 2026 05:16:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:17:01 GMT  
 		Size: 39.1 MB (39092668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1020,7 +1020,7 @@ $ docker pull rakudo-star@sha256:554e796f3db2eea8d9cc2a90d10153d186a4a7c0a08de91
 		Size: 7.8 MB (7778213 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:236481e610cf6e64fd4c21b1254cfe2e68a0c3332c2dd4f415c895d961bc57a3`  
-		Last Modified: Tue, 13 Jan 2026 05:16:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:33:48 GMT  
 		Size: 13.1 KB (13100 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1157,7 +1157,7 @@ CMD ["raku"]
 
 -	Layers:
 	-	`sha256:5582010cab7f00a8f96e076b02666116eaa7e4af9a74eb44f2946a593b50294f`  
-		Last Modified: Tue, 13 Jan 2026 00:42:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:51 GMT  
 		Size: 49.6 MB (49648083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:599d5b6b6766fd729045e2e7d0396d1f61fe41c612d4aef6bb3bf5ea7db12ae2`  
@@ -1165,7 +1165,7 @@ CMD ["raku"]
 		Size: 25.0 MB (25022636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c9b629762372f548de0ebccf01b8e80ae5ce251dfd36aef6fc3ae8d963493edf`  
-		Last Modified: Tue, 13 Jan 2026 03:58:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:58:49 GMT  
 		Size: 67.6 MB (67591513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d0a74db4adc441ee4f4a20a76a81486cf86690fcadbcb2438f1a1f01f9400553`  
@@ -1173,7 +1173,7 @@ CMD ["raku"]
 		Size: 3.2 KB (3238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dea8f1d780b2af1c916a38924b84651302113534657977d2bc3bac79a5260177`  
-		Last Modified: Tue, 13 Jan 2026 05:16:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:17:01 GMT  
 		Size: 39.1 MB (39092668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1197,6 +1197,6 @@ $ docker pull rakudo-star@sha256:554e796f3db2eea8d9cc2a90d10153d186a4a7c0a08de91
 		Size: 7.8 MB (7778213 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:236481e610cf6e64fd4c21b1254cfe2e68a0c3332c2dd4f415c895d961bc57a3`  
-		Last Modified: Tue, 13 Jan 2026 05:16:39 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:33:48 GMT  
 		Size: 13.1 KB (13100 bytes)  
 		MIME: application/vnd.in-toto+json
