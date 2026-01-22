@@ -41,7 +41,7 @@ RUN # debian.sh --arch 'amd64' out/ 'oldstable' '@1768176000'
 
 -	Layers:
 	-	`sha256:bcafde3a77f86edeb55aa61c102dfa0e2e4ca8f92da7c8139130bc0bc5bf6a27`  
-		Last Modified: Tue, 13 Jan 2026 00:42:04 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:18 GMT  
 		Size: 28.2 MB (28228576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -84,7 +84,7 @@ RUN # debian.sh --arch 'armel' out/ 'oldstable' '@1768176000'
 
 -	Layers:
 	-	`sha256:9d8fcb591980d00526a06ceb476b758b60a35a4e7670c09b64a0a9c57175aea2`  
-		Last Modified: Tue, 13 Jan 2026 00:42:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:14 GMT  
 		Size: 25.8 MB (25757702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -104,7 +104,7 @@ $ docker pull debian@sha256:d4622e362605f83bbbf1bbfe5f2aa660b6fd9b1a8bbd18c6734b
 
 -	Layers:
 	-	`sha256:489f4e5022feb13135ee7532c88ad1fa10cde3a75f35e683f4f6203e5a8f476e`  
-		Last Modified: Tue, 13 Jan 2026 01:28:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:05 GMT  
 		Size: 2.4 MB (2360018 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -127,7 +127,7 @@ RUN # debian.sh --arch 'armhf' out/ 'oldstable' '@1768176000'
 
 -	Layers:
 	-	`sha256:300aa340d6aee540813c4e75349ffbe9e3b6dabcbd86112bb09a98af4158ad33`  
-		Last Modified: Tue, 13 Jan 2026 00:42:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:07 GMT  
 		Size: 23.9 MB (23934121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -147,7 +147,7 @@ $ docker pull debian@sha256:c0ca75ebbb9fbf5a4852231c02ec0b360b4c8e7a5c818939d8ac
 
 -	Layers:
 	-	`sha256:84e9d008477a73f4c996ac1e008eab968c035d993cc5ea77169891e3f664ec43`  
-		Last Modified: Tue, 13 Jan 2026 00:42:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:28:29 GMT  
 		Size: 2.4 MB (2361996 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -170,7 +170,7 @@ RUN # debian.sh --arch 'arm64' out/ 'oldstable' '@1768176000'
 
 -	Layers:
 	-	`sha256:53387de2887130423666d84be28326cc71d1735ae78b52ee099cb99fc2e394e1`  
-		Last Modified: Tue, 13 Jan 2026 00:42:31 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:23 GMT  
 		Size: 28.1 MB (28107895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -190,7 +190,7 @@ $ docker pull debian@sha256:735a494cbe65ee80ffc3f06be3f6a3f3af4a34320b9a067efe34
 
 -	Layers:
 	-	`sha256:e388c28e2459aaa5416a8cf80289bc8219892124973e092544c1d8d79ba0648d`  
-		Last Modified: Tue, 13 Jan 2026 00:42:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:28:32 GMT  
 		Size: 2.4 MB (2360026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -213,7 +213,7 @@ RUN # debian.sh --arch 'i386' out/ 'oldstable' '@1768176000'
 
 -	Layers:
 	-	`sha256:0624d4b0a4e6d2b004641af329a1aed80239c85bc277c8a38f8301a81c6e9eb4`  
-		Last Modified: Tue, 13 Jan 2026 00:42:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:51 GMT  
 		Size: 29.2 MB (29210071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -256,7 +256,7 @@ RUN # debian.sh --arch 'mips64el' out/ 'oldstable' '@1768176000'
 
 -	Layers:
 	-	`sha256:f518a1baddc865199638487bf7432f11e48c34dbc6919852c7ab9af58b9ded22`  
-		Last Modified: Tue, 13 Jan 2026 00:42:22 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:15 GMT  
 		Size: 28.5 MB (28513757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -279,7 +279,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'oldstable' '@1768176000'
 
 -	Layers:
 	-	`sha256:b0527786514e15bb4e27ef371c83ccfdd2d9fc788cb7ee9c34f16fe068eb7fbb`  
-		Last Modified: Tue, 13 Jan 2026 15:35:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 15:35:56 GMT  
 		Size: 32.1 MB (32068719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -322,7 +322,7 @@ RUN # debian.sh --arch 's390x' out/ 'oldstable' '@1768176000'
 
 -	Layers:
 	-	`sha256:44bbfa963ea061eca7db2782ccff8762b1a8f04bc1e30f58e3834a09b2f5dd3e`  
-		Last Modified: Tue, 13 Jan 2026 08:38:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 08:39:01 GMT  
 		Size: 26.9 MB (26884421 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
