@@ -83,7 +83,7 @@ CMD ["irb"]
 
 -	Layers:
 	-	`sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114`  
-		Last Modified: Tue, 13 Jan 2026 07:03:32 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:996467dfb4d0179a2f091bc2a9d9749646d7fc320067d1147a6df2b4833f1c82`  
@@ -99,15 +99,15 @@ CMD ["irb"]
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:abb78f73258bc413aae5281eb128ee526870ba076049a4526b38041362fe99c6`  
-		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:12 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:489c2746eefc137d0a5abb077a60b5127997c2ce81f0099f52f9f9533017b94b`  
-		Last Modified: Fri, 16 Jan 2026 00:16:29 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:16:35 GMT  
 		Size: 6.0 MB (6017919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2c659f9f49e2d6d0b34bc411555d4b6c4efa9796ed55648d5249e3e70d68470`  
-		Last Modified: Fri, 16 Jan 2026 00:16:30 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:16:39 GMT  
 		Size: 33.9 MB (33918182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9cee23bd6daf9d4cc127fc50098a56cf22c7f0b66f9db1aee35d2c35a4aa9061`  
@@ -115,7 +115,7 @@ CMD ["irb"]
 		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f67c9ba8f50dc9fca61d5e8e588ea364b233425452a1ba0122d5dbdab39033f`  
-		Last Modified: Fri, 16 Jan 2026 00:16:36 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:16:29 GMT  
 		Size: 13.2 MB (13199775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb52d8db0f4d42eee9eeef89fc1e8594c44353d3a77d942d382991c5f2d62cfc`  
@@ -143,7 +143,7 @@ $ docker pull jruby@sha256:5c96a0a83d58d3b40a1ffa31830462330dbbc36fe0161f7db4f12
 		Size: 4.7 MB (4689328 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c65f8a376017ebb997b4bfb00d0f60ccd558b680ea27e82f5c38266ad815c0bb`  
-		Last Modified: Fri, 16 Jan 2026 02:01:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:16:29 GMT  
 		Size: 21.2 KB (21238 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -231,15 +231,15 @@ CMD ["irb"]
 		Size: 52.1 MB (52148637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7eb0eb06dfa687a3659cfda05b90257c82298acab510f78e070b4bc6d3286e0a`  
-		Last Modified: Thu, 15 Jan 2026 22:21:40 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:21:50 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6456b4703cbd2d5d7bfc1f46fa116f62a97af321aea424d90a4899ad64cdaff1`  
-		Last Modified: Thu, 15 Jan 2026 22:21:40 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:21:51 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a37484952b23ab294f1f990f2346163013c1b6be1ee26c1271491f2e70b68b3b`  
-		Last Modified: Fri, 16 Jan 2026 00:18:06 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:17:57 GMT  
 		Size: 4.9 MB (4929098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb6a00a0f2edad5c02c1597e92cb2dc99d853a052b1a63f7c390d57dfc3aa205`  
@@ -251,7 +251,7 @@ CMD ["irb"]
 		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:91d69407db8f95c1383d713c36825481cee98bc90c1eee5c332cf92a499f83c9`  
-		Last Modified: Fri, 16 Jan 2026 00:18:05 GMT  
+		Last Modified: Fri, 16 Jan 2026 00:17:57 GMT  
 		Size: 13.3 MB (13282648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9992f660edc8f2c80ca782f67a7087ae8be56c5044cdb02254e40a6318d3704`  
@@ -279,6 +279,6 @@ $ docker pull jruby@sha256:6e4e48a0d9dfdaae708598b92ec4f2d7233b6e95f11f2b8097066
 		Size: 4.7 MB (4662406 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:655cb8a64ea86d90dc1c823857dfa5f760343fe2debaf4f0e5042944ec91cadc`  
-		Last Modified: Fri, 16 Jan 2026 00:17:56 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:01:54 GMT  
 		Size: 21.5 KB (21487 bytes)  
 		MIME: application/vnd.in-toto+json
