@@ -80,11 +80,11 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 148.4 MB (148367172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db27fcece75ef9a1d750d4e6bc5abbd1efcf96b25a2fdc01bfb1fc5fb45249e6`  
-		Last Modified: Wed, 21 Jan 2026 19:21:33 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:21:00 GMT  
 		Size: 20.3 MB (20316044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af86c80faebeebd857697c2bd5610d7379cd046d5d15de9c5e8b52376d4fde1d`  
@@ -108,7 +108,7 @@ $ docker pull jetty@sha256:70a5328887bc823454366aaf38ec2b6566821346df8cb12b26fb4
 
 -	Layers:
 	-	`sha256:bf1249e599479f1ed60c5ed542ed35620df5884e45d13eed574eccca97d03593`  
-		Last Modified: Wed, 21 Jan 2026 21:15:47 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:21:00 GMT  
 		Size: 823.7 KB (823711 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e7723bf2171fd224908f6524074de4dbc3380bb6fcb57371bd064d95fa681f70`  
@@ -189,7 +189,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 20.2 MB (20216198 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af86c80faebeebd857697c2bd5610d7379cd046d5d15de9c5e8b52376d4fde1d`  
@@ -213,7 +213,7 @@ $ docker pull jetty@sha256:186c2ab9011af874e2e748631da306ce9b9b9e804c32d15bafe5d
 
 -	Layers:
 	-	`sha256:002b8fc2d8984b2ede88ab3a838c1c7adee081f4619d48d85079890756aa7a36`  
-		Last Modified: Wed, 21 Jan 2026 19:21:00 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:16:01 GMT  
 		Size: 822.5 KB (822468 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:82cf9e5c343f64818705b29f1e0a5bf775bb69ebeb875ba24bfdaffc87733270`  
