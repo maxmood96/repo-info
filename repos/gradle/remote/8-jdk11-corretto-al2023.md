@@ -67,11 +67,11 @@ USER root
 
 -	Layers:
 	-	`sha256:ed23be565800a5983cd3d8b6fd581e584110f08d9e32684d0eb5ab2820cadcbc`  
-		Last Modified: Wed, 07 Jan 2026 22:09:37 GMT  
+		Last Modified: Wed, 07 Jan 2026 22:08:12 GMT  
 		Size: 54.0 MB (54021204 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a07ea5032c792d7ba679b74d72cf278e3e104563477a78ec86bb42a7f99648e`  
-		Last Modified: Wed, 21 Jan 2026 19:00:16 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:17:31 GMT  
 		Size: 153.4 MB (153367384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d56f3c4ddd98e4a3de0705a42364c043939702414a62bf0f359ade0b38f83dd7`  
@@ -79,15 +79,15 @@ USER root
 		Size: 86.0 MB (86041071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:118a4b1ee5f740dd555248b1abafb3e035669146b379b100f774d2f6027c4994`  
-		Last Modified: Wed, 21 Jan 2026 19:17:45 GMT  
+		Last Modified: Thu, 22 Jan 2026 00:04:25 GMT  
 		Size: 1.6 KB (1646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d720e3ce55899e78143ac487504f3645d2c6be76b28bad4e7ddcc8fd2ceb5e0`  
-		Last Modified: Thu, 22 Jan 2026 00:03:26 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:17:53 GMT  
 		Size: 137.4 MB (137395197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca2f054da4db37d43c643ccadd3cd8dc58362591269fa61985230d2c23ed06e6`  
@@ -111,7 +111,7 @@ $ docker pull gradle@sha256:41a262d6aa8465b4e44605b322dcf2fdfe3ec86e31c195ecc2bb
 
 -	Layers:
 	-	`sha256:1f735f0d57eb34e437f00bcf960ff289d8b1ab9a608c81593aa3e3d0b526aa01`  
-		Last Modified: Wed, 21 Jan 2026 21:20:48 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:17:45 GMT  
 		Size: 11.4 MB (11366000 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1672ee9d2f8695900282b157b8a4d0a34feade2fc192003227a745a1f7a2643e`  
@@ -179,7 +179,7 @@ USER root
 		Size: 52.9 MB (52914357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:436dca49d48a119ba29e5c58e3826eb3069953cb00876a3cfc8081de1fdd358b`  
-		Last Modified: Wed, 21 Jan 2026 19:00:39 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:16:45 GMT  
 		Size: 151.9 MB (151921187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4102417eb2813b9c6b1eb83f369d800031e59a67b44411d1a8d692106c90f169`  
@@ -187,11 +187,11 @@ USER root
 		Size: 85.5 MB (85521494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9291745786e80785f2857f545abb40506562f88cfd05a49fce527e57b7d87598`  
-		Last Modified: Wed, 21 Jan 2026 19:17:42 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:18:07 GMT  
 		Size: 1.6 KB (1648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24d57249acb4ab7433f8e1453df8e33d9a3432483b897e4062a65419bc4451ad`  
@@ -199,7 +199,7 @@ USER root
 		Size: 137.4 MB (137395201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:094a55ae70bf231ee557ff095da6e8b73acd4e59031e6dafea72c7512db69bbf`  
-		Last Modified: Thu, 22 Jan 2026 00:05:18 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:17:43 GMT  
 		Size: 59.5 KB (59526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -219,7 +219,7 @@ $ docker pull gradle@sha256:f1cb768e2767c78c78c9153528acf4194692fe87550c552f0a40
 
 -	Layers:
 	-	`sha256:87fea1b1ff343ecac8729018698ff5dbb83551985e55c8620e04487a05e010e4`  
-		Last Modified: Wed, 21 Jan 2026 19:17:43 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:21:07 GMT  
 		Size: 11.4 MB (11365843 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23bc015531c9fd2cc4f4004e1858f6b6142a7ea0d43141837c0d3f3edbb909cc`  
