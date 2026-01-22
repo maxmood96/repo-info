@@ -47,7 +47,7 @@ WORKDIR C:\go
 
 -	Layers:
 	-	`sha256:d441ba4c6d25e3ab6a1e3ce5360fd1d1214e97975f1e40b10c0ccb55dc46ad22`  
-		Last Modified: Tue, 13 Jan 2026 22:42:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:42:10 GMT  
 		Size: 199.1 MB (199076547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:baaca2e42ff5f8a2dd9a5dd32a22d0713147e6e1d1b0c5e0fb7d6dc9e0784a0d`  
