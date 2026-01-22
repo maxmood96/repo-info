@@ -105,7 +105,7 @@ USER spark
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a70ee470d498578f3f261d731c31f16ca9c9f5f583ac83347ec39bc91ed183dc`  
-		Last Modified: Thu, 15 Jan 2026 22:20:08 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:17 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dbac811d8620bc57d872722ac4910288a89e8581d9ed0551a130ad9c64767e04`  
@@ -113,15 +113,15 @@ USER spark
 		Size: 1.4 KB (1423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54aa7237a5f72f89ff3782080245fd12a0be926874d28bc85603eb7d31ee6d07`  
-		Last Modified: Fri, 16 Jan 2026 01:10:14 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:10:30 GMT  
 		Size: 21.9 MB (21850674 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3636baf6ed3807b0750514e6bd544c1ea1c5aa2081d9429e02c771406ff019f3`  
-		Last Modified: Fri, 16 Jan 2026 01:10:21 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:12:40 GMT  
 		Size: 441.6 MB (441644170 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:84a3a74c95017f38125de35d632f73dad1649f9d50c2e3c0cf9860c49c549d0f`  
-		Last Modified: Fri, 16 Jan 2026 01:10:28 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:10:13 GMT  
 		Size: 2.1 KB (2137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -129,7 +129,7 @@ USER spark
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ecd704430cfa1e56f84cc10145b2a193955674b1428c35df6d86d8fb064bfa3`  
-		Last Modified: Fri, 16 Jan 2026 02:24:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:24:25 GMT  
 		Size: 113.7 MB (113701911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -149,11 +149,11 @@ $ docker pull spark@sha256:30661066b41a2ce6f2907690a78ff80c1102be50663f2d86218fe
 
 -	Layers:
 	-	`sha256:dc30581f67fa0a1edfcc6eea140369ebfa4ad42e3a462ca8364ed5c2a8f9457a`  
-		Last Modified: Fri, 16 Jan 2026 06:12:29 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:24:24 GMT  
 		Size: 10.4 MB (10420649 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4bba8c7193b72e421c8716141c605e7d2bc4c66fa74e9341d3062ea60195a572`  
-		Last Modified: Fri, 16 Jan 2026 02:24:22 GMT  
+		Last Modified: Fri, 16 Jan 2026 06:12:30 GMT  
 		Size: 11.3 KB (11286 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -251,23 +251,23 @@ USER spark
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c7feaec1b5ae6c7e6e38638d964d4991ce35f3a13191880a163bdef3d12c7312`  
-		Last Modified: Thu, 15 Jan 2026 22:19:26 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:19:34 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:63d93a4122d19034a36085227ce22f88e160cba24899cefba8a716ee8cb6c532`  
-		Last Modified: Fri, 16 Jan 2026 01:13:20 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:13:07 GMT  
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b9c4b7a4c814851146b036c758c57eaf037ccd0379f814dd4f532033a325099`  
-		Last Modified: Fri, 16 Jan 2026 01:13:08 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:13:22 GMT  
 		Size: 21.5 MB (21537840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7d1f217834cbb15d4dcddf79d4bfd1f94e6db6d4066803685d051b15938795fe`  
-		Last Modified: Fri, 16 Jan 2026 01:13:47 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:13:15 GMT  
 		Size: 441.6 MB (441644170 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aafd9920332da7a567896960fe8d43ca03d5d622e21a92a39709b70f48cd8ac9`  
-		Last Modified: Fri, 16 Jan 2026 01:13:07 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:13:20 GMT  
 		Size: 2.1 KB (2136 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -275,7 +275,7 @@ USER spark
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:69bd18cc9c9729791a3d35d164aaca79e9076ef8ad108c5d83d9b5a3a56ceadd`  
-		Last Modified: Fri, 16 Jan 2026 02:41:19 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:41:06 GMT  
 		Size: 108.3 MB (108297548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -295,7 +295,7 @@ $ docker pull spark@sha256:227519e0839f2de09bf4906f0dc41aa0478ef9c8000aa157bf050
 
 -	Layers:
 	-	`sha256:159283df5e3118befd97f39dc67705475c3c25e1a1f2ee370d174f615a61763e`  
-		Last Modified: Fri, 16 Jan 2026 02:41:04 GMT  
+		Last Modified: Fri, 16 Jan 2026 06:12:39 GMT  
 		Size: 10.4 MB (10415109 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e373a2d6eb616eec7c2f62ea1a8b5f18f2a9bb75214deabb1bdc5519327f93a6`  
