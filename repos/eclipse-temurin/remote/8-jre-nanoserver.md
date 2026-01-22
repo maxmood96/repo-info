@@ -58,11 +58,11 @@ RUN echo Verifying install ...     && echo java -version && java -version     &&
 		Size: 1.0 KB (1037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5f4fbb0e2ed7abfbc60096a1e3fd895ec04ebb9a97d6a240ee97937810df7988`  
-		Last Modified: Tue, 13 Jan 2026 23:39:10 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:40:02 GMT  
 		Size: 1.1 KB (1078 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1ee70fe3f27344db2c9e0d2e848691e32ba280cf716b32876e1d060863b2d8db`  
-		Last Modified: Tue, 13 Jan 2026 23:40:02 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:39:08 GMT  
 		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5f494a27469fe885638944051fc820992f24042bf21737dc2734beddac19111a`  
@@ -78,7 +78,7 @@ RUN echo Verifying install ...     && echo java -version && java -version     &&
 		Size: 40.6 MB (40555250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ac210ed629fc713bf16e61b56de135c528ab7c2d57bdd17d4966430b4b3247c6`  
-		Last Modified: Tue, 13 Jan 2026 23:39:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:40:02 GMT  
 		Size: 97.0 KB (96974 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -147,10 +147,10 @@ RUN echo Verifying install ...     && echo java -version && java -version     &&
 		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a65e1abf922bdb93718ef31703984018bc8e8560c69ca3a724424aae7f1fda3b`  
-		Last Modified: Tue, 13 Jan 2026 23:34:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:34:18 GMT  
 		Size: 40.6 MB (40555105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b6c52ce534dde8f197a0476c8d6325f0b1ef798904f4ac22aa6666654d247e1e`  
-		Last Modified: Tue, 13 Jan 2026 23:34:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:34:27 GMT  
 		Size: 98.9 KB (98907 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
