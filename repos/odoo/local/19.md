@@ -1,10 +1,10 @@
-# `odoo:19.0-20251222`
+# `odoo:19.0-20260119`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b9939f5efda1297cb8588b3d6c3c186d386d98dd5e1cf43ce9e156e3ba8fd07`
-- Created: `2026-01-15T22:37:51.338910169Z`
-- Virtual Size: ~ 2.19 Gb  
+- Image ID: `sha256:375997b4a9ea1b4a5a073a19fc914ac63a0a1a1a3676c67ef3db8bd93cf1e0f2`
+- Created: `2026-01-20T17:49:29.044066996Z`
+- Virtual Size: ~ 2.21 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -1224,15 +1224,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.6.dsc' glib2.0_2.80.0-6ubuntu3.6.dsc 4542 SHA512:38ac87a2e8d4807cc2eabbdc41cf30d267dafea0258b6e94ce0a02cf532cea31fe182a4039a2f221c6457315ba5137ed3e00f286ee96fc2608bf0d6c4394c315
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.6.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.6.debian.tar.xz 162184 SHA512:89921bc45b2f3ea9ea17461557a6551e454eb7ea653337bf5fd129c56aa39a5cc5b10b1f07a3bf1a5762374c28b03bbfd8c0199754e0f75f245d920b75ee17ad
-```
 
 ### `dpkg` source package: `glibc=2.39-0ubuntu8.6`
 
@@ -10016,11 +10010,11 @@ $ apt-get source -qq --print-uris npth=1.6-3.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3.1build1.debian.tar.xz' npth_1.6-3.1build1.debian.tar.xz 11036 SHA512:caf36d8727c335bbcf996421e65cf044d6468d95d70e9b671b57196341e49e67f687d6c80cab78d6c0388a90f795e4ed0ff28aaa0d4e7dd6f4701abdfc77a09a
 ```
 
-### `dpkg` source package: `odoo=19.0.20251222`
+### `dpkg` source package: `odoo=19.0.20260118`
 
 Binary Packages:
 
-- `odoo=19.0.20251222`
+- `odoo=19.0.20260118`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
