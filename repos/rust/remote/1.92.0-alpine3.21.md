@@ -70,7 +70,7 @@ $ docker pull rust@sha256:ef1fdcd4373ad5f15d478f22f6c06e4b913b9156cd75d3d916e5d2
 
 -	Layers:
 	-	`sha256:e5793b611d620180f581629b2bf4f5163a2088bc23cd9af1ca20910db7440942`  
-		Last Modified: Thu, 11 Dec 2025 19:29:28 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:45:02 GMT  
 		Size: 961.5 KB (961530 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dff63bf4019e14e327d31f274b772ab99ddcb655a02e94ae2fd44d32589cc941`  
@@ -111,7 +111,7 @@ RUN set -eux;         arch="$(apk --print-arch)";     case "$arch" in         'x
 		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5a0917af29aac9999b9e62f25af2b2dc53b8f6f39de94920af7ee0f05e825bb`  
-		Last Modified: Thu, 11 Dec 2025 19:38:36 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:38:20 GMT  
 		Size: 61.7 MB (61703526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7956624b401829009b3b2606827ac28ffdc9428c6a853e9a1c5cfb661e69d5ad`  
@@ -176,7 +176,7 @@ RUN set -eux;         arch="$(apk --print-arch)";     case "$arch" in         'x
 		Size: 3.6 MB (3574075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c6df0dac2d78eef0cb2b530922ba80b380d81f963d00e964a5dbc5e235111e8`  
-		Last Modified: Thu, 11 Dec 2025 19:37:50 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:37:36 GMT  
 		Size: 61.5 MB (61515203 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:09f36e75e2ac40917d9294fb927a66fb1691b96adfd0626f1ce75f6e06ee8ba0`  
@@ -200,10 +200,10 @@ $ docker pull rust@sha256:d694894b9219ac13983c2f6fea291bdf56b242af297c6320af41ec
 
 -	Layers:
 	-	`sha256:037c6d578d5b72fab5a9d6b0a18c19a2bba3d8d41094b982845a000d13f93ee2`  
-		Last Modified: Thu, 11 Dec 2025 19:37:33 GMT  
+		Last Modified: Thu, 11 Dec 2025 21:45:12 GMT  
 		Size: 974.1 KB (974074 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a16a8ec0774dc960e2dbb485d2af5b5e01afd2d3f2f0e8e5b1c5fc3910aa74bc`  
-		Last Modified: Thu, 11 Dec 2025 21:45:16 GMT  
+		Last Modified: Thu, 11 Dec 2025 19:37:33 GMT  
 		Size: 12.2 KB (12232 bytes)  
 		MIME: application/vnd.in-toto+json
