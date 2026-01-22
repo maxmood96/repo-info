@@ -78,7 +78,7 @@ CMD ["mvn"]
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:003da162f155cdfcf4369568a4cd7d92ffc15e92bfbf342de3a2d17e188030d8`  
-		Last Modified: Wed, 21 Jan 2026 18:59:16 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:56:12 GMT  
 		Size: 100.8 MB (100776892 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c35bab402aaacf231856e1b75770d4a5d90c8467c5bd15fca12f3af09a5c687`  
@@ -90,7 +90,7 @@ CMD ["mvn"]
 		Size: 9.3 MB (9312236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:972d1321ebc8da2aafe8c70d7f0c415d73c28c5bea5a4a0277bfe655f07e8e31`  
-		Last Modified: Wed, 21 Jan 2026 19:22:19 GMT  
+		Last Modified: Wed, 21 Jan 2026 22:27:48 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -98,7 +98,7 @@ CMD ["mvn"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d32f31abca63669fd19aa3b5ffc0ef0efa5c8bab72da67bfc118a9628b19f7f6`  
-		Last Modified: Wed, 21 Jan 2026 19:22:45 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:22:19 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -122,7 +122,7 @@ $ docker pull maven@sha256:a40bcfe834e9f3fa61b5d9cb06d3b1b5e83eab5e38a075a9122ab
 		Size: 392.3 KB (392266 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fcef4b29d7c535f597aeb45736875db4c6e5f9727d3bc9e29e4d97e3ecfca222`  
-		Last Modified: Wed, 21 Jan 2026 21:29:27 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:22:19 GMT  
 		Size: 16.4 KB (16353 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -233,7 +233,7 @@ $ docker pull maven@sha256:647d8a9cb3b987bd86bb995011ca76fef36fd1a0f4ea12871a3da
 
 -	Layers:
 	-	`sha256:59ed6b706288d90a0e138165cea87d2259ed1b599f4dd49f36144571f674d7c7`  
-		Last Modified: Wed, 21 Jan 2026 19:22:31 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:29:30 GMT  
 		Size: 391.7 KB (391736 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2bb4b8369fbe435ce37fd6086134af1891053c76f830c27903a3f6b718b57de2`  
