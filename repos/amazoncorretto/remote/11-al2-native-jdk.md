@@ -41,11 +41,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 
 -	Layers:
 	-	`sha256:89d3b5863331d6bb79d550bf0acce60aeac36e2c065470bf6d6f8d76c9cb6f4f`  
-		Last Modified: Wed, 14 Jan 2026 13:13:55 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:23:48 GMT  
 		Size: 62.9 MB (62940156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:132fcb0c1fb5354573a8091b0a478ac8cbbcd65a5e29ba69bb589e884aba9e5f`  
-		Last Modified: Wed, 21 Jan 2026 19:00:37 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:10:47 GMT  
 		Size: 161.6 MB (161624070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -103,11 +103,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 
 -	Layers:
 	-	`sha256:afb133ffe3cfc9458fcd28fa75abd002d894e187faa842d48d3c35c676633646`  
-		Last Modified: Thu, 15 Jan 2026 07:47:55 GMT  
+		Last Modified: Thu, 15 Jan 2026 18:33:41 GMT  
 		Size: 64.8 MB (64770434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4209665a2113a2be30c11cdb22df55a0f7f06cd6fe7cab75ed1cacb3dd7cef94`  
-		Last Modified: Wed, 21 Jan 2026 23:32:33 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:00:39 GMT  
 		Size: 151.7 MB (151720503 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

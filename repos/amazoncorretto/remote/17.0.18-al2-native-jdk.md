@@ -41,7 +41,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto
 
 -	Layers:
 	-	`sha256:89d3b5863331d6bb79d550bf0acce60aeac36e2c065470bf6d6f8d76c9cb6f4f`  
-		Last Modified: Wed, 14 Jan 2026 13:13:55 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:23:48 GMT  
 		Size: 62.9 MB (62940156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0001f831036f7fb83006870ba609075c29256409dd99eabb1e691bd4215b771`  
@@ -65,11 +65,11 @@ $ docker pull amazoncorretto@sha256:277fbe4436b86a7a4d37cdcca71facf479065bb29882
 
 -	Layers:
 	-	`sha256:fc11ef0f773bae4909d8fea69b9ead5fd6fcf866c7af1038bf6e99a0ca299fee`  
-		Last Modified: Wed, 21 Jan 2026 19:01:15 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:50:03 GMT  
 		Size: 6.0 MB (5971814 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2ac207b6deed56f00a9837b0d7ad5957763c7a222c9dde522d507de61739c4b7`  
-		Last Modified: Wed, 21 Jan 2026 19:01:15 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:50:07 GMT  
 		Size: 9.9 KB (9914 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -103,11 +103,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto
 
 -	Layers:
 	-	`sha256:afb133ffe3cfc9458fcd28fa75abd002d894e187faa842d48d3c35c676633646`  
-		Last Modified: Thu, 15 Jan 2026 07:47:55 GMT  
+		Last Modified: Thu, 15 Jan 2026 18:33:41 GMT  
 		Size: 64.8 MB (64770434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb2d1a631b74978a372f4a222159544be9b2264f41e507f51802289d09baa4cd`  
-		Last Modified: Wed, 21 Jan 2026 19:01:27 GMT  
+		Last Modified: Wed, 21 Jan 2026 23:08:35 GMT  
 		Size: 156.3 MB (156283196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -127,7 +127,7 @@ $ docker pull amazoncorretto@sha256:45cf7214cce0fb4380b9c70691b13a1dad9ab770295f
 
 -	Layers:
 	-	`sha256:13fd57a36b7ab2415c8498bc307520961184fe711390f96b31f74b6096e2bfc2`  
-		Last Modified: Wed, 21 Jan 2026 19:50:10 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:01:24 GMT  
 		Size: 5.8 MB (5763684 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3860d1bfdbc96b7dc737349caae12d8cf62eebdd85b764bbe9b621c8cdfa0555`  

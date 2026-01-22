@@ -41,7 +41,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 
 -	Layers:
 	-	`sha256:89d3b5863331d6bb79d550bf0acce60aeac36e2c065470bf6d6f8d76c9cb6f4f`  
-		Last Modified: Wed, 14 Jan 2026 13:13:55 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:23:48 GMT  
 		Size: 62.9 MB (62940156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca2cf296d047513764ffd5d8eb73bd7e7516a94e3a350ef1d2cde26a84ada185`  
@@ -65,11 +65,11 @@ $ docker pull amazoncorretto@sha256:8139c5b5b8da2c99af68c8101cfeec45ec254091ae3e
 
 -	Layers:
 	-	`sha256:b64665c0c4350ac51a1af6f9c63b757bac79b6afbc5e67c38a1549bcc79e1ef6`  
-		Last Modified: Wed, 21 Jan 2026 19:54:49 GMT  
+		Last Modified: Wed, 21 Jan 2026 18:58:15 GMT  
 		Size: 5.4 MB (5377358 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4369146720e73dfb3a1ad6486e1f2895bff9df0ee7982c20843eb8453a2d4d5d`  
-		Last Modified: Wed, 21 Jan 2026 18:58:15 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:54:50 GMT  
 		Size: 11.5 KB (11526 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -103,11 +103,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 
 -	Layers:
 	-	`sha256:afb133ffe3cfc9458fcd28fa75abd002d894e187faa842d48d3c35c676633646`  
-		Last Modified: Thu, 15 Jan 2026 07:47:55 GMT  
+		Last Modified: Thu, 15 Jan 2026 18:33:41 GMT  
 		Size: 64.8 MB (64770434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ef0c3a8367555fd665644b39150b785e2d0486976224b943fc47236f954e820`  
-		Last Modified: Wed, 21 Jan 2026 18:58:47 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:18:17 GMT  
 		Size: 59.9 MB (59938538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -127,7 +127,7 @@ $ docker pull amazoncorretto@sha256:4db70ff5941d2a044dd487d6dbc42e37a24f47871b81
 
 -	Layers:
 	-	`sha256:d981c27b4c880d7710833fef718da2723c45cda38d33efa2910395edfaf7f64e`  
-		Last Modified: Wed, 21 Jan 2026 19:55:08 GMT  
+		Last Modified: Wed, 21 Jan 2026 18:58:46 GMT  
 		Size: 5.4 MB (5355857 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:67251f92da9533274e07a4952ef40e867149423fd7932080d485b65d0f43ef25`  
