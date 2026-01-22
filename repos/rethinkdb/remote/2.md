@@ -84,11 +84,11 @@ $ docker pull rethinkdb@sha256:ab226c32d903861788cd6ae170edaaa353955f6c586ff00db
 
 -	Layers:
 	-	`sha256:d52b4389a1f0002c89958382fe8375259852266905f6e4b3ceb8e6691ab498f9`  
-		Last Modified: Tue, 13 Jan 2026 05:03:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:03:35 GMT  
 		Size: 2.8 MB (2785046 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c626efe821ddde01e61f80e8e86f65f17991b1c7c1c592af6138f532923e8659`  
-		Last Modified: Tue, 13 Jan 2026 05:03:37 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:03:35 GMT  
 		Size: 13.4 KB (13404 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -127,11 +127,11 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 
 -	Layers:
 	-	`sha256:33bdc9671af8942d96d2f78f67aeec06580065dde1272decac3732689ec7c0e8`  
-		Last Modified: Tue, 13 Jan 2026 00:42:09 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:00 GMT  
 		Size: 28.1 MB (28107889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e2f7ebce60574b9eaf32c4aedf30042064ee09d9cbb64c9b79f6f656f364d95`  
-		Last Modified: Tue, 13 Jan 2026 02:09:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:19 GMT  
 		Size: 9.6 MB (9628500 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6358aaa4c8bb733767f54a5746a2086944512978ea1d7e4996a87a7c3008168c`  
@@ -163,7 +163,7 @@ $ docker pull rethinkdb@sha256:4fdea369d9c9cf8f7aa68a43208c9f685076e57a2e652987f
 
 -	Layers:
 	-	`sha256:e98c680b3ba03f9ff3da68c23de94f748ddd9827c99d746c8cf66500e26624ac`  
-		Last Modified: Tue, 13 Jan 2026 05:03:42 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:09:19 GMT  
 		Size: 2.8 MB (2785381 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ae5ac6f37241ba626cdb766b37a14fa53ad5c717fbe03601759d139dcb2c26a9`  
@@ -206,11 +206,11 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 
 -	Layers:
 	-	`sha256:3995e7e7254beb9777289fba2ebc6c1ce81d8c4bab8c8d068146f449323a74c8`  
-		Last Modified: Tue, 13 Jan 2026 00:40:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:40:08 GMT  
 		Size: 26.9 MB (26884415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5213af6f86a4b50993097752db36d4a2507c96069dc31c9f4893b24c3872a8ca`  
-		Last Modified: Tue, 13 Jan 2026 02:08:34 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:08:28 GMT  
 		Size: 9.3 MB (9297088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b9c166cffdd421f3f723bb7355b79fd3298125d06ba92679fe687327f5078d18`  
@@ -242,10 +242,10 @@ $ docker pull rethinkdb@sha256:3ce1df9adf274a1e87ec0d8140d7fffedf8517ee595ae1a8f
 
 -	Layers:
 	-	`sha256:85e7323da23c4fe7342507de305516e84c5e078c94a78a08a85ac652e22788fa`  
-		Last Modified: Tue, 13 Jan 2026 05:03:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:08:28 GMT  
 		Size: 2.8 MB (2781248 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f9705464e74edb398ef4b487c4a03884aad3f3c76200d63534e8430e3d2d7f56`  
-		Last Modified: Tue, 13 Jan 2026 05:03:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 02:08:27 GMT  
 		Size: 13.4 KB (13404 bytes)  
 		MIME: application/vnd.in-toto+json
