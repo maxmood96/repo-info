@@ -126,11 +126,11 @@ $ docker pull eclipse-temurin@sha256:5361ae6d9cf70a4a843c700398456bb63b3861399b9
 
 -	Layers:
 	-	`sha256:c1b102a070643a2e36446bce5c2fa8aca7191ba5bd2bd113f1f20fb9d868ce5c`  
-		Last Modified: Tue, 20 Jan 2026 19:15:08 GMT  
+		Last Modified: Tue, 20 Jan 2026 22:15:17 GMT  
 		Size: 2.4 MB (2416865 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:db4c51acccd5ecdb8494362100b262bd92cf79145d0937299ff2031d64b2db15`  
-		Last Modified: Tue, 20 Jan 2026 22:15:18 GMT  
+		Last Modified: Tue, 20 Jan 2026 19:15:08 GMT  
 		Size: 20.2 KB (20186 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -209,7 +209,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:c678760be1bb4697117294f3c0870d24a7c58498b99f14e293dc60361233dcc4`  
-		Last Modified: Mon, 19 Jan 2026 05:33:32 GMT  
+		Last Modified: Mon, 19 Jan 2026 05:33:55 GMT  
 		Size: 38.2 MB (38208676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6448c36239b0fa1e6accdcdd50351634324e10bc5c9676b3d49d9cf0b2b28c6c`  
@@ -221,7 +221,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 52.1 MB (52141130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9ca1dc78d34b00b79162de48ccfd26026a69d2d9acb8b37f70a0f1d4b16c6dd2`  
-		Last Modified: Tue, 20 Jan 2026 19:14:45 GMT  
+		Last Modified: Tue, 20 Jan 2026 19:35:50 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fed40732dd7a925070f55f38d0841e9bb30f1f23feefd92f69720278c5e5b2e0`  
@@ -245,11 +245,11 @@ $ docker pull eclipse-temurin@sha256:9d5cd38a00088db4b059116c6c9ca61a5ea697ba2fd
 
 -	Layers:
 	-	`sha256:f642ef7f4a69a3437049911fd548ad5f13127cbe23db5f1236f5cf84a0045696`  
-		Last Modified: Tue, 20 Jan 2026 22:15:25 GMT  
+		Last Modified: Tue, 20 Jan 2026 19:14:45 GMT  
 		Size: 2.4 MB (2416223 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c8bd5aa969dfe11575335c0d9512fedba5f59082081c8ac904bf4987fefc6dec`  
-		Last Modified: Tue, 20 Jan 2026 22:15:23 GMT  
+		Last Modified: Tue, 20 Jan 2026 19:14:45 GMT  
 		Size: 20.3 KB (20290 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -340,7 +340,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 53.0 MB (52977742 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad2842e80b662370a50810fcf50de068b933fa81fc876007153590b284cdf533`  
-		Last Modified: Tue, 20 Jan 2026 19:18:16 GMT  
+		Last Modified: Tue, 20 Jan 2026 19:18:09 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1db8dd9b35bf602d06293469aa0205b342020d94c1a70fa6b7bf1e2e57d5c00f`  
@@ -364,11 +364,11 @@ $ docker pull eclipse-temurin@sha256:adfa2807b654e61be64c48a185ac180b09fe08a3024
 
 -	Layers:
 	-	`sha256:cd8a12f2a095d9480a4bb7ba342a624e9cd5b2f405d36377bee34044fcc696e4`  
-		Last Modified: Tue, 20 Jan 2026 19:18:09 GMT  
+		Last Modified: Tue, 20 Jan 2026 22:15:49 GMT  
 		Size: 2.4 MB (2416870 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fb1ea4a0b4d336aac5f3d872cb5c1cb4d19e3292343b38b2e4b33cc82ac732bf`  
-		Last Modified: Tue, 20 Jan 2026 19:18:09 GMT  
+		Last Modified: Tue, 20 Jan 2026 22:15:27 GMT  
 		Size: 20.2 KB (20216 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -455,7 +455,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 30.5 MB (30452913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f9d82a30c017636e100bc4423fc73dec702ab16ad9978efd2c2890b302d69c03`  
-		Last Modified: Tue, 20 Jan 2026 19:13:07 GMT  
+		Last Modified: Tue, 20 Jan 2026 19:13:24 GMT  
 		Size: 49.5 MB (49515927 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ef62987b042714c89ac3ca3e795b8af531ad6f54cd74fa5b6b26366c3c6cb77`  
@@ -483,7 +483,7 @@ $ docker pull eclipse-temurin@sha256:5ae1ab0bdab295328233b86e0e239681ebf07e218b3
 
 -	Layers:
 	-	`sha256:039f507389010f2b0fa12e058f5497732caea8d6729d173466946fab4bff0403`  
-		Last Modified: Tue, 20 Jan 2026 22:15:31 GMT  
+		Last Modified: Tue, 20 Jan 2026 19:13:05 GMT  
 		Size: 2.4 MB (2408657 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ae9ed0c476935d16b5ee5e27820afb64a78d0eb6b424547af855cb574159db90`  
