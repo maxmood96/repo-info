@@ -83,7 +83,7 @@ USER root
 		Size: 1.6 KB (1646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d720e3ce55899e78143ac487504f3645d2c6be76b28bad4e7ddcc8fd2ceb5e0`  
@@ -111,7 +111,7 @@ $ docker pull gradle@sha256:41a262d6aa8465b4e44605b322dcf2fdfe3ec86e31c195ecc2bb
 
 -	Layers:
 	-	`sha256:1f735f0d57eb34e437f00bcf960ff289d8b1ab9a608c81593aa3e3d0b526aa01`  
-		Last Modified: Wed, 21 Jan 2026 19:17:45 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:20:48 GMT  
 		Size: 11.4 MB (11366000 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1672ee9d2f8695900282b157b8a4d0a34feade2fc192003227a745a1f7a2643e`  
@@ -179,7 +179,7 @@ USER root
 		Size: 52.9 MB (52914357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:436dca49d48a119ba29e5c58e3826eb3069953cb00876a3cfc8081de1fdd358b`  
-		Last Modified: Wed, 21 Jan 2026 19:16:45 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:00:39 GMT  
 		Size: 151.9 MB (151921187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4102417eb2813b9c6b1eb83f369d800031e59a67b44411d1a8d692106c90f169`  
@@ -187,11 +187,11 @@ USER root
 		Size: 85.5 MB (85521494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9291745786e80785f2857f545abb40506562f88cfd05a49fce527e57b7d87598`  
-		Last Modified: Wed, 21 Jan 2026 19:17:42 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:18:07 GMT  
 		Size: 1.6 KB (1648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24d57249acb4ab7433f8e1453df8e33d9a3432483b897e4062a65419bc4451ad`  
