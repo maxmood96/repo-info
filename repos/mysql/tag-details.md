@@ -43,7 +43,7 @@
 ## `mysql:8`
 
 ```console
-$ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207f3577901903
+$ docker pull mysql@sha256:cf6d1c8f2d31c73c878c6f5f60c2bec46701c41d5baf99100888bef5b6578b86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -56,13 +56,13 @@ $ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207
 ### `mysql:8` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a294ea72ee331
+$ docker pull mysql@sha256:cee2bcd7cfece021d2e13229e660e2072ed50c9dd4635d2797c8954154ed1739
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233029943 bytes)**  
+-	Total Size: **233.2 MB (233230172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0de4015d5b1f0fa462e43b48c29f8f66eacdd16d11e07aedf3b13533adadd504`
+-	Image ID: `sha256:3890a37ddb73dd2c66d963f1b2c0fe051ccd580564526e85ea0073d08e926369`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -71,39 +71,39 @@ $ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a2
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:26:03 GMT
+# Wed, 21 Jan 2026 22:47:54 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:26:26 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:26:27 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:49:18 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:18 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 CMD ["mysqld"]
 ```
 
@@ -112,77 +112,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:023bf5ce6a4829c6b33eed0642d64a38f47927272c4921804abfda8bab0077ca`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 884.0 B  
+	-	`sha256:e7c9c940ed3326dbe75491b5c125f4e77409c20f1607b63e8d19a3c80b842f3e`  
+		Last Modified: Thu, 22 Jan 2026 01:02:18 GMT  
+		Size: 885.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24675d42775811c6a521aae8e2b0b47a989f8f35f2f254fdd43f7828c71d07bd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:dcefadb1e23c809499894384898688261866d60eba933b77725f25e26c3e97ac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 783.6 KB (783557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad32417d60c256a66828d3cfdc9ca9244576811a840000536e9a8d11c23e5d68`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 6.2 MB (6175148 bytes)  
+	-	`sha256:3751cab74b958e7f2a28d97747761761c9ca8dcb19db045bf8715e1c88b02a77`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 6.2 MB (6175161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25809bf57a8f169efb1bbd6588c1732f4f1836916ace0b507a4fef3dd158bfb4`  
-		Last Modified: Fri, 16 Jan 2026 23:28:04 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:3c365df7c813339968023fded5e9042d098bb834a37079c11cfe99c16056e452`  
+		Last Modified: Wed, 21 Jan 2026 23:47:14 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b13420727c1c0c0e213907e2e6267a5974c8c3dded97de2a95207f357668a52f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
+	-	`sha256:14d59e782af07065a94adad658374505a377347a587b0ea862c9caabfcd1215a`  
+		Last Modified: Wed, 21 Jan 2026 22:49:50 GMT  
 		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff6e8ae58e2456042811ffa3661febd52abc2c7761443b2213c52bf6a56e469d`  
-		Last Modified: Fri, 16 Jan 2026 23:28:07 GMT  
-		Size: 47.8 MB (47815365 bytes)  
+	-	`sha256:e06c9b222c64ef602389ece95bb72bac5893dd58b6edb5345235ecefa8616907`  
+		Last Modified: Wed, 21 Jan 2026 22:50:06 GMT  
+		Size: 47.8 MB (47811670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b034b0c553cfc069b162e27ecb7ee469e94daeab571d7f5cd3a83b1498eee6`  
-		Last Modified: Fri, 16 Jan 2026 23:28:00 GMT  
-		Size: 320.0 B  
+	-	`sha256:5ba7f8d3ecf830b612dd6ec5f2c8203c6a17f663a77102f0ffb793c1a1d589be`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ada6ad8c9d8c75d4beafab09f3234c75c361caa487b16fcc00ea8c5907ba435f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:55 GMT  
-		Size: 130.9 MB (130931861 bytes)  
+	-	`sha256:43c069718c101f0277bc8229dd2590bcb63d96f97ac9813addffd1b74d0d370f`  
+		Last Modified: Wed, 21 Jan 2026 22:49:53 GMT  
+		Size: 131.1 MB (131135770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fdbfdab06595d747aec81e55886fdb0156d0b08d001428224983ccaeea978cd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:53 GMT  
+	-	`sha256:c156dd23b850679b32b7f01f7d6fdc723966e165960e36800e3bd87e4740de17`  
+		Last Modified: Wed, 21 Jan 2026 22:49:51 GMT  
 		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:559414d5a80ae23d630ca19319c21f058973449c33226576fc7ce777c6cb4887
+$ docker pull mysql@sha256:be16c973ece26bb060d837d03f50d148f5ba91ac5626368218b8e3a845047488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14931466 bytes)**  
+-	Total Size: **15.3 MB (15268497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741bc7ae4fa3c416b37a5fe586eed0fe24ec1c96a10c3ccc34d9f86157d24ab3`
+-	Image ID: `sha256:b82df3286018a1d6cd6af61b31d53c2001d7503a9d7019268bee01205d261d23`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:029be1fc012084294f155b71ce8e88e6926982da803de7249b0fdab37f5291b7`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 14.9 MB (14897258 bytes)  
+	-	`sha256:3339e5486c0c4cc6a3b8d51d1b3345afe45209ee3e2c44b15834ea10ba988fde`  
+		Last Modified: Thu, 22 Jan 2026 01:02:23 GMT  
+		Size: 15.2 MB (15234290 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa111391adf2a8236c93d7b80ad95600395c646f74bed884c95f212dfe1d5eab`  
-		Last Modified: Sat, 17 Jan 2026 01:02:26 GMT  
-		Size: 34.2 KB (34208 bytes)  
+	-	`sha256:9377b2f281254f96efd66320022665c8cd5568ad522938d3fe3898e62ae20660`  
+		Last Modified: Thu, 22 Jan 2026 01:02:24 GMT  
+		Size: 34.2 KB (34207 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:8` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29253abb57e65
+$ docker pull mysql@sha256:509287abcaa38a3d334cf61bd787d0d523504c684990042f62fa4bfbadd1cb5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.5 MB (228462563 bytes)**  
+-	Total Size: **228.7 MB (228698723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5da2a12c183ff681379744e7047ff53800e8dfe4b7217b525b4c92ed1728e21a`
+-	Image ID: `sha256:e1fc1f3b0c1ad069b3e2a75bbd8036e5104f668132ef18ef6d542d86b85e2b06`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -191,39 +191,39 @@ $ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:32 GMT
+# Wed, 21 Jan 2026 22:52:53 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:53:20 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:54:27 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 CMD ["mysqld"]
 ```
 
@@ -232,71 +232,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de3a139db383dcfd82710bfab9154fec7b22c1598706cabfb21480997ab9f09f`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
-		Size: 885.0 B  
+	-	`sha256:3da72dcb236c1597383af262a9f45c86ca2b4b75d909507a3ac5b0eb6d7bd801`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ff917e53173311673a78eef92f68b58006c7d241f55c90c063ff5d35f9b5f80`  
-		Last Modified: Fri, 16 Jan 2026 23:31:36 GMT  
-		Size: 737.5 KB (737528 bytes)  
+	-	`sha256:4c9d33c81d6768ce0368969dfaf925fbf6624bdf9202a7fe6d15e54b846c0e13`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 737.5 KB (737526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7057a5a35be927e2eee436ccbee6ade905cf2905e0ded231f1eee51dd537d28`  
-		Last Modified: Fri, 16 Jan 2026 23:31:48 GMT  
-		Size: 5.8 MB (5798058 bytes)  
+	-	`sha256:7699a954d9de859b4b92ab5459f58e582e3085a82e29fa85c372c885cbd75f06`  
+		Last Modified: Wed, 21 Jan 2026 22:55:12 GMT  
+		Size: 5.8 MB (5798064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3a3050ea2531d36b577b983be8afb48eee1fe18fe044013308e8cd5bb8d835a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:54 GMT  
+	-	`sha256:8ccbceaa8cf24fa2833a2afe398ccde1f6ff2bbee670abd536c014c84fdcf94d`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
 		Size: 2.6 KB (2607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37938fa9ff7d875ad4ea6b70f7fe1f112527c6ea161c7ab4b6a17b417591da1`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
-		Size: 332.0 B  
+	-	`sha256:94f6521db4dbfdbb841dcd5d6d34f10bf9c3741fa4a8d009fbbd9703846ab0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:54:59 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f655cab6299cf71d7e9c2b44899bf9bd147d252fd3a35fddd6d22b99ddbf324a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:52 GMT  
-		Size: 46.7 MB (46691693 bytes)  
+	-	`sha256:cc1b36f2667d57cda43bb84edc3e089860e2f0d619fe5cc7a4ca134f30df64ee`  
+		Last Modified: Wed, 21 Jan 2026 22:55:00 GMT  
+		Size: 46.7 MB (46699165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fec303eb563de541b75b7ea0dfda5ea894d8827ad63d4e61a2b23b2f7db927d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
+	-	`sha256:f2c61b1843fc9549819d2149bd4ff4fc0c9ec59f7a7f62116469dfe294bbfae2`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 321.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18b56d2ace31229a18ebed0f0205fab2b619aa2666b2af3e52520b805cb0ae6d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:40 GMT  
-		Size: 129.3 MB (129323901 bytes)  
+	-	`sha256:a6d81e4d2c7b063ca6af6c142014724fd25f4b78bd37fbbbccf582016aa124db`  
+		Last Modified: Wed, 21 Jan 2026 22:55:03 GMT  
+		Size: 129.6 MB (129552583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151e2f48537d7e373cc742a1feef8240ad319f811917e7c8ffe31da18ba8d82`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
+	-	`sha256:c2eea1ca45c6c742395a1c8b5d7327e0a8ffb8246a250cd5211862ed87b5662c`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:0becb120ac404c9cb5053d5f7ab407549476090ac87b8ca2614f187d759c2d11
+$ docker pull mysql@sha256:7fdb2d55797d9e264ef6ff6971dce8f068ad60acf77c245b9e2d7bf79c5d2e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14930191 bytes)**  
+-	Total Size: **15.3 MB (15267223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56cc389471f6a58f4b1f57e8ec9a1ac08ec71b85b32282bb94c1bdef8f918e0f`
+-	Image ID: `sha256:c8ab615fb5da4e8f4d9be289b02378388973342472e21c5a103210f09f2a0e75`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf05006e49674ec49c6960a63fd16768a1ba783574e4feabbf5cf66257c923e9`  
-		Last Modified: Sat, 17 Jan 2026 01:02:37 GMT  
-		Size: 14.9 MB (14895678 bytes)  
+	-	`sha256:7cb8424279707d32f1f981f563752532ae08ba2091882802e59162d842af3f95`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 15.2 MB (15232710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:21660c0a2842109c3be55e8454bacac54817f6f768500373c4cef54317156538`  
-		Last Modified: Sat, 17 Jan 2026 01:02:38 GMT  
+	-	`sha256:3794e62c5aa6c87d503274951dc859252ccf0086cad9ebf25ffaf00b2d9fe472`  
+		Last Modified: Thu, 22 Jan 2026 01:02:36 GMT  
 		Size: 34.5 KB (34513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:8-oracle`
 
 ```console
-$ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207f3577901903
+$ docker pull mysql@sha256:cf6d1c8f2d31c73c878c6f5f60c2bec46701c41d5baf99100888bef5b6578b86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -309,13 +309,13 @@ $ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207
 ### `mysql:8-oracle` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a294ea72ee331
+$ docker pull mysql@sha256:cee2bcd7cfece021d2e13229e660e2072ed50c9dd4635d2797c8954154ed1739
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233029943 bytes)**  
+-	Total Size: **233.2 MB (233230172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0de4015d5b1f0fa462e43b48c29f8f66eacdd16d11e07aedf3b13533adadd504`
+-	Image ID: `sha256:3890a37ddb73dd2c66d963f1b2c0fe051ccd580564526e85ea0073d08e926369`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -324,39 +324,39 @@ $ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a2
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:26:03 GMT
+# Wed, 21 Jan 2026 22:47:54 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:26:26 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:26:27 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:49:18 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:18 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 CMD ["mysqld"]
 ```
 
@@ -365,77 +365,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:023bf5ce6a4829c6b33eed0642d64a38f47927272c4921804abfda8bab0077ca`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 884.0 B  
+	-	`sha256:e7c9c940ed3326dbe75491b5c125f4e77409c20f1607b63e8d19a3c80b842f3e`  
+		Last Modified: Thu, 22 Jan 2026 01:02:18 GMT  
+		Size: 885.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24675d42775811c6a521aae8e2b0b47a989f8f35f2f254fdd43f7828c71d07bd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:dcefadb1e23c809499894384898688261866d60eba933b77725f25e26c3e97ac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 783.6 KB (783557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad32417d60c256a66828d3cfdc9ca9244576811a840000536e9a8d11c23e5d68`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 6.2 MB (6175148 bytes)  
+	-	`sha256:3751cab74b958e7f2a28d97747761761c9ca8dcb19db045bf8715e1c88b02a77`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 6.2 MB (6175161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25809bf57a8f169efb1bbd6588c1732f4f1836916ace0b507a4fef3dd158bfb4`  
-		Last Modified: Fri, 16 Jan 2026 23:28:04 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:3c365df7c813339968023fded5e9042d098bb834a37079c11cfe99c16056e452`  
+		Last Modified: Wed, 21 Jan 2026 23:47:14 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b13420727c1c0c0e213907e2e6267a5974c8c3dded97de2a95207f357668a52f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
+	-	`sha256:14d59e782af07065a94adad658374505a377347a587b0ea862c9caabfcd1215a`  
+		Last Modified: Wed, 21 Jan 2026 22:49:50 GMT  
 		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff6e8ae58e2456042811ffa3661febd52abc2c7761443b2213c52bf6a56e469d`  
-		Last Modified: Fri, 16 Jan 2026 23:28:07 GMT  
-		Size: 47.8 MB (47815365 bytes)  
+	-	`sha256:e06c9b222c64ef602389ece95bb72bac5893dd58b6edb5345235ecefa8616907`  
+		Last Modified: Wed, 21 Jan 2026 22:50:06 GMT  
+		Size: 47.8 MB (47811670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b034b0c553cfc069b162e27ecb7ee469e94daeab571d7f5cd3a83b1498eee6`  
-		Last Modified: Fri, 16 Jan 2026 23:28:00 GMT  
-		Size: 320.0 B  
+	-	`sha256:5ba7f8d3ecf830b612dd6ec5f2c8203c6a17f663a77102f0ffb793c1a1d589be`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ada6ad8c9d8c75d4beafab09f3234c75c361caa487b16fcc00ea8c5907ba435f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:55 GMT  
-		Size: 130.9 MB (130931861 bytes)  
+	-	`sha256:43c069718c101f0277bc8229dd2590bcb63d96f97ac9813addffd1b74d0d370f`  
+		Last Modified: Wed, 21 Jan 2026 22:49:53 GMT  
+		Size: 131.1 MB (131135770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fdbfdab06595d747aec81e55886fdb0156d0b08d001428224983ccaeea978cd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:53 GMT  
+	-	`sha256:c156dd23b850679b32b7f01f7d6fdc723966e165960e36800e3bd87e4740de17`  
+		Last Modified: Wed, 21 Jan 2026 22:49:51 GMT  
 		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8-oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:559414d5a80ae23d630ca19319c21f058973449c33226576fc7ce777c6cb4887
+$ docker pull mysql@sha256:be16c973ece26bb060d837d03f50d148f5ba91ac5626368218b8e3a845047488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14931466 bytes)**  
+-	Total Size: **15.3 MB (15268497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741bc7ae4fa3c416b37a5fe586eed0fe24ec1c96a10c3ccc34d9f86157d24ab3`
+-	Image ID: `sha256:b82df3286018a1d6cd6af61b31d53c2001d7503a9d7019268bee01205d261d23`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:029be1fc012084294f155b71ce8e88e6926982da803de7249b0fdab37f5291b7`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 14.9 MB (14897258 bytes)  
+	-	`sha256:3339e5486c0c4cc6a3b8d51d1b3345afe45209ee3e2c44b15834ea10ba988fde`  
+		Last Modified: Thu, 22 Jan 2026 01:02:23 GMT  
+		Size: 15.2 MB (15234290 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa111391adf2a8236c93d7b80ad95600395c646f74bed884c95f212dfe1d5eab`  
-		Last Modified: Sat, 17 Jan 2026 01:02:26 GMT  
-		Size: 34.2 KB (34208 bytes)  
+	-	`sha256:9377b2f281254f96efd66320022665c8cd5568ad522938d3fe3898e62ae20660`  
+		Last Modified: Thu, 22 Jan 2026 01:02:24 GMT  
+		Size: 34.2 KB (34207 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:8-oracle` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29253abb57e65
+$ docker pull mysql@sha256:509287abcaa38a3d334cf61bd787d0d523504c684990042f62fa4bfbadd1cb5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.5 MB (228462563 bytes)**  
+-	Total Size: **228.7 MB (228698723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5da2a12c183ff681379744e7047ff53800e8dfe4b7217b525b4c92ed1728e21a`
+-	Image ID: `sha256:e1fc1f3b0c1ad069b3e2a75bbd8036e5104f668132ef18ef6d542d86b85e2b06`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -444,39 +444,39 @@ $ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:32 GMT
+# Wed, 21 Jan 2026 22:52:53 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:53:20 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:54:27 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 CMD ["mysqld"]
 ```
 
@@ -485,71 +485,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de3a139db383dcfd82710bfab9154fec7b22c1598706cabfb21480997ab9f09f`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
-		Size: 885.0 B  
+	-	`sha256:3da72dcb236c1597383af262a9f45c86ca2b4b75d909507a3ac5b0eb6d7bd801`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ff917e53173311673a78eef92f68b58006c7d241f55c90c063ff5d35f9b5f80`  
-		Last Modified: Fri, 16 Jan 2026 23:31:36 GMT  
-		Size: 737.5 KB (737528 bytes)  
+	-	`sha256:4c9d33c81d6768ce0368969dfaf925fbf6624bdf9202a7fe6d15e54b846c0e13`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 737.5 KB (737526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7057a5a35be927e2eee436ccbee6ade905cf2905e0ded231f1eee51dd537d28`  
-		Last Modified: Fri, 16 Jan 2026 23:31:48 GMT  
-		Size: 5.8 MB (5798058 bytes)  
+	-	`sha256:7699a954d9de859b4b92ab5459f58e582e3085a82e29fa85c372c885cbd75f06`  
+		Last Modified: Wed, 21 Jan 2026 22:55:12 GMT  
+		Size: 5.8 MB (5798064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3a3050ea2531d36b577b983be8afb48eee1fe18fe044013308e8cd5bb8d835a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:54 GMT  
+	-	`sha256:8ccbceaa8cf24fa2833a2afe398ccde1f6ff2bbee670abd536c014c84fdcf94d`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
 		Size: 2.6 KB (2607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37938fa9ff7d875ad4ea6b70f7fe1f112527c6ea161c7ab4b6a17b417591da1`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
-		Size: 332.0 B  
+	-	`sha256:94f6521db4dbfdbb841dcd5d6d34f10bf9c3741fa4a8d009fbbd9703846ab0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:54:59 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f655cab6299cf71d7e9c2b44899bf9bd147d252fd3a35fddd6d22b99ddbf324a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:52 GMT  
-		Size: 46.7 MB (46691693 bytes)  
+	-	`sha256:cc1b36f2667d57cda43bb84edc3e089860e2f0d619fe5cc7a4ca134f30df64ee`  
+		Last Modified: Wed, 21 Jan 2026 22:55:00 GMT  
+		Size: 46.7 MB (46699165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fec303eb563de541b75b7ea0dfda5ea894d8827ad63d4e61a2b23b2f7db927d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
+	-	`sha256:f2c61b1843fc9549819d2149bd4ff4fc0c9ec59f7a7f62116469dfe294bbfae2`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 321.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18b56d2ace31229a18ebed0f0205fab2b619aa2666b2af3e52520b805cb0ae6d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:40 GMT  
-		Size: 129.3 MB (129323901 bytes)  
+	-	`sha256:a6d81e4d2c7b063ca6af6c142014724fd25f4b78bd37fbbbccf582016aa124db`  
+		Last Modified: Wed, 21 Jan 2026 22:55:03 GMT  
+		Size: 129.6 MB (129552583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151e2f48537d7e373cc742a1feef8240ad319f811917e7c8ffe31da18ba8d82`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
+	-	`sha256:c2eea1ca45c6c742395a1c8b5d7327e0a8ffb8246a250cd5211862ed87b5662c`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8-oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:0becb120ac404c9cb5053d5f7ab407549476090ac87b8ca2614f187d759c2d11
+$ docker pull mysql@sha256:7fdb2d55797d9e264ef6ff6971dce8f068ad60acf77c245b9e2d7bf79c5d2e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14930191 bytes)**  
+-	Total Size: **15.3 MB (15267223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56cc389471f6a58f4b1f57e8ec9a1ac08ec71b85b32282bb94c1bdef8f918e0f`
+-	Image ID: `sha256:c8ab615fb5da4e8f4d9be289b02378388973342472e21c5a103210f09f2a0e75`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf05006e49674ec49c6960a63fd16768a1ba783574e4feabbf5cf66257c923e9`  
-		Last Modified: Sat, 17 Jan 2026 01:02:37 GMT  
-		Size: 14.9 MB (14895678 bytes)  
+	-	`sha256:7cb8424279707d32f1f981f563752532ae08ba2091882802e59162d842af3f95`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 15.2 MB (15232710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:21660c0a2842109c3be55e8454bacac54817f6f768500373c4cef54317156538`  
-		Last Modified: Sat, 17 Jan 2026 01:02:38 GMT  
+	-	`sha256:3794e62c5aa6c87d503274951dc859252ccf0086cad9ebf25ffaf00b2d9fe472`  
+		Last Modified: Thu, 22 Jan 2026 01:02:36 GMT  
 		Size: 34.5 KB (34513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:8-oraclelinux9`
 
 ```console
-$ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207f3577901903
+$ docker pull mysql@sha256:cf6d1c8f2d31c73c878c6f5f60c2bec46701c41d5baf99100888bef5b6578b86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -562,13 +562,13 @@ $ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207
 ### `mysql:8-oraclelinux9` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a294ea72ee331
+$ docker pull mysql@sha256:cee2bcd7cfece021d2e13229e660e2072ed50c9dd4635d2797c8954154ed1739
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233029943 bytes)**  
+-	Total Size: **233.2 MB (233230172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0de4015d5b1f0fa462e43b48c29f8f66eacdd16d11e07aedf3b13533adadd504`
+-	Image ID: `sha256:3890a37ddb73dd2c66d963f1b2c0fe051ccd580564526e85ea0073d08e926369`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -577,39 +577,39 @@ $ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a2
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:26:03 GMT
+# Wed, 21 Jan 2026 22:47:54 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:26:26 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:26:27 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:49:18 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:18 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 CMD ["mysqld"]
 ```
 
@@ -618,77 +618,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:023bf5ce6a4829c6b33eed0642d64a38f47927272c4921804abfda8bab0077ca`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 884.0 B  
+	-	`sha256:e7c9c940ed3326dbe75491b5c125f4e77409c20f1607b63e8d19a3c80b842f3e`  
+		Last Modified: Thu, 22 Jan 2026 01:02:18 GMT  
+		Size: 885.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24675d42775811c6a521aae8e2b0b47a989f8f35f2f254fdd43f7828c71d07bd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:dcefadb1e23c809499894384898688261866d60eba933b77725f25e26c3e97ac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 783.6 KB (783557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad32417d60c256a66828d3cfdc9ca9244576811a840000536e9a8d11c23e5d68`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 6.2 MB (6175148 bytes)  
+	-	`sha256:3751cab74b958e7f2a28d97747761761c9ca8dcb19db045bf8715e1c88b02a77`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 6.2 MB (6175161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25809bf57a8f169efb1bbd6588c1732f4f1836916ace0b507a4fef3dd158bfb4`  
-		Last Modified: Fri, 16 Jan 2026 23:28:04 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:3c365df7c813339968023fded5e9042d098bb834a37079c11cfe99c16056e452`  
+		Last Modified: Wed, 21 Jan 2026 23:47:14 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b13420727c1c0c0e213907e2e6267a5974c8c3dded97de2a95207f357668a52f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
+	-	`sha256:14d59e782af07065a94adad658374505a377347a587b0ea862c9caabfcd1215a`  
+		Last Modified: Wed, 21 Jan 2026 22:49:50 GMT  
 		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff6e8ae58e2456042811ffa3661febd52abc2c7761443b2213c52bf6a56e469d`  
-		Last Modified: Fri, 16 Jan 2026 23:28:07 GMT  
-		Size: 47.8 MB (47815365 bytes)  
+	-	`sha256:e06c9b222c64ef602389ece95bb72bac5893dd58b6edb5345235ecefa8616907`  
+		Last Modified: Wed, 21 Jan 2026 22:50:06 GMT  
+		Size: 47.8 MB (47811670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b034b0c553cfc069b162e27ecb7ee469e94daeab571d7f5cd3a83b1498eee6`  
-		Last Modified: Fri, 16 Jan 2026 23:28:00 GMT  
-		Size: 320.0 B  
+	-	`sha256:5ba7f8d3ecf830b612dd6ec5f2c8203c6a17f663a77102f0ffb793c1a1d589be`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ada6ad8c9d8c75d4beafab09f3234c75c361caa487b16fcc00ea8c5907ba435f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:55 GMT  
-		Size: 130.9 MB (130931861 bytes)  
+	-	`sha256:43c069718c101f0277bc8229dd2590bcb63d96f97ac9813addffd1b74d0d370f`  
+		Last Modified: Wed, 21 Jan 2026 22:49:53 GMT  
+		Size: 131.1 MB (131135770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fdbfdab06595d747aec81e55886fdb0156d0b08d001428224983ccaeea978cd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:53 GMT  
+	-	`sha256:c156dd23b850679b32b7f01f7d6fdc723966e165960e36800e3bd87e4740de17`  
+		Last Modified: Wed, 21 Jan 2026 22:49:51 GMT  
 		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:559414d5a80ae23d630ca19319c21f058973449c33226576fc7ce777c6cb4887
+$ docker pull mysql@sha256:be16c973ece26bb060d837d03f50d148f5ba91ac5626368218b8e3a845047488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14931466 bytes)**  
+-	Total Size: **15.3 MB (15268497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741bc7ae4fa3c416b37a5fe586eed0fe24ec1c96a10c3ccc34d9f86157d24ab3`
+-	Image ID: `sha256:b82df3286018a1d6cd6af61b31d53c2001d7503a9d7019268bee01205d261d23`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:029be1fc012084294f155b71ce8e88e6926982da803de7249b0fdab37f5291b7`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 14.9 MB (14897258 bytes)  
+	-	`sha256:3339e5486c0c4cc6a3b8d51d1b3345afe45209ee3e2c44b15834ea10ba988fde`  
+		Last Modified: Thu, 22 Jan 2026 01:02:23 GMT  
+		Size: 15.2 MB (15234290 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa111391adf2a8236c93d7b80ad95600395c646f74bed884c95f212dfe1d5eab`  
-		Last Modified: Sat, 17 Jan 2026 01:02:26 GMT  
-		Size: 34.2 KB (34208 bytes)  
+	-	`sha256:9377b2f281254f96efd66320022665c8cd5568ad522938d3fe3898e62ae20660`  
+		Last Modified: Thu, 22 Jan 2026 01:02:24 GMT  
+		Size: 34.2 KB (34207 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:8-oraclelinux9` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29253abb57e65
+$ docker pull mysql@sha256:509287abcaa38a3d334cf61bd787d0d523504c684990042f62fa4bfbadd1cb5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.5 MB (228462563 bytes)**  
+-	Total Size: **228.7 MB (228698723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5da2a12c183ff681379744e7047ff53800e8dfe4b7217b525b4c92ed1728e21a`
+-	Image ID: `sha256:e1fc1f3b0c1ad069b3e2a75bbd8036e5104f668132ef18ef6d542d86b85e2b06`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -697,39 +697,39 @@ $ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:32 GMT
+# Wed, 21 Jan 2026 22:52:53 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:53:20 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:54:27 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 CMD ["mysqld"]
 ```
 
@@ -738,71 +738,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de3a139db383dcfd82710bfab9154fec7b22c1598706cabfb21480997ab9f09f`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
-		Size: 885.0 B  
+	-	`sha256:3da72dcb236c1597383af262a9f45c86ca2b4b75d909507a3ac5b0eb6d7bd801`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ff917e53173311673a78eef92f68b58006c7d241f55c90c063ff5d35f9b5f80`  
-		Last Modified: Fri, 16 Jan 2026 23:31:36 GMT  
-		Size: 737.5 KB (737528 bytes)  
+	-	`sha256:4c9d33c81d6768ce0368969dfaf925fbf6624bdf9202a7fe6d15e54b846c0e13`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 737.5 KB (737526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7057a5a35be927e2eee436ccbee6ade905cf2905e0ded231f1eee51dd537d28`  
-		Last Modified: Fri, 16 Jan 2026 23:31:48 GMT  
-		Size: 5.8 MB (5798058 bytes)  
+	-	`sha256:7699a954d9de859b4b92ab5459f58e582e3085a82e29fa85c372c885cbd75f06`  
+		Last Modified: Wed, 21 Jan 2026 22:55:12 GMT  
+		Size: 5.8 MB (5798064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3a3050ea2531d36b577b983be8afb48eee1fe18fe044013308e8cd5bb8d835a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:54 GMT  
+	-	`sha256:8ccbceaa8cf24fa2833a2afe398ccde1f6ff2bbee670abd536c014c84fdcf94d`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
 		Size: 2.6 KB (2607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37938fa9ff7d875ad4ea6b70f7fe1f112527c6ea161c7ab4b6a17b417591da1`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
-		Size: 332.0 B  
+	-	`sha256:94f6521db4dbfdbb841dcd5d6d34f10bf9c3741fa4a8d009fbbd9703846ab0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:54:59 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f655cab6299cf71d7e9c2b44899bf9bd147d252fd3a35fddd6d22b99ddbf324a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:52 GMT  
-		Size: 46.7 MB (46691693 bytes)  
+	-	`sha256:cc1b36f2667d57cda43bb84edc3e089860e2f0d619fe5cc7a4ca134f30df64ee`  
+		Last Modified: Wed, 21 Jan 2026 22:55:00 GMT  
+		Size: 46.7 MB (46699165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fec303eb563de541b75b7ea0dfda5ea894d8827ad63d4e61a2b23b2f7db927d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
+	-	`sha256:f2c61b1843fc9549819d2149bd4ff4fc0c9ec59f7a7f62116469dfe294bbfae2`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 321.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18b56d2ace31229a18ebed0f0205fab2b619aa2666b2af3e52520b805cb0ae6d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:40 GMT  
-		Size: 129.3 MB (129323901 bytes)  
+	-	`sha256:a6d81e4d2c7b063ca6af6c142014724fd25f4b78bd37fbbbccf582016aa124db`  
+		Last Modified: Wed, 21 Jan 2026 22:55:03 GMT  
+		Size: 129.6 MB (129552583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151e2f48537d7e373cc742a1feef8240ad319f811917e7c8ffe31da18ba8d82`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
+	-	`sha256:c2eea1ca45c6c742395a1c8b5d7327e0a8ffb8246a250cd5211862ed87b5662c`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:0becb120ac404c9cb5053d5f7ab407549476090ac87b8ca2614f187d759c2d11
+$ docker pull mysql@sha256:7fdb2d55797d9e264ef6ff6971dce8f068ad60acf77c245b9e2d7bf79c5d2e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14930191 bytes)**  
+-	Total Size: **15.3 MB (15267223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56cc389471f6a58f4b1f57e8ec9a1ac08ec71b85b32282bb94c1bdef8f918e0f`
+-	Image ID: `sha256:c8ab615fb5da4e8f4d9be289b02378388973342472e21c5a103210f09f2a0e75`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf05006e49674ec49c6960a63fd16768a1ba783574e4feabbf5cf66257c923e9`  
-		Last Modified: Sat, 17 Jan 2026 01:02:37 GMT  
-		Size: 14.9 MB (14895678 bytes)  
+	-	`sha256:7cb8424279707d32f1f981f563752532ae08ba2091882802e59162d842af3f95`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 15.2 MB (15232710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:21660c0a2842109c3be55e8454bacac54817f6f768500373c4cef54317156538`  
-		Last Modified: Sat, 17 Jan 2026 01:02:38 GMT  
+	-	`sha256:3794e62c5aa6c87d503274951dc859252ccf0086cad9ebf25ffaf00b2d9fe472`  
+		Last Modified: Thu, 22 Jan 2026 01:02:36 GMT  
 		Size: 34.5 KB (34513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.0`
 
 ```console
-$ docker pull mysql@sha256:9c3380eac945af0736031b200027f581925927c81e010056214a4bd6b6693714
+$ docker pull mysql@sha256:0546f878adee48eef82ccf936fc8ff932bdaa180ee614a8043ca917533654bc1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -815,13 +815,13 @@ $ docker pull mysql@sha256:9c3380eac945af0736031b200027f581925927c81e010056214a4
 ### `mysql:8.0` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:f7878bec832c6be5e61c39d3949651be8aa977daf875089b4560ae1434d2cb9c
+$ docker pull mysql@sha256:460961fe4544452cdfa070f0c02f539caac45e8c0ef85bec8efe9e0ce5b4f112
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.1 MB (232096327 bytes)**  
+-	Total Size: **232.3 MB (232309884 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e645fd9ffc4fc6745702d8c0068326b8707251166fdf11c80e8f52a609d19d1d`
+-	Image ID: `sha256:f6151196d86929e6cc12db76c163bfd2c8c3a46093e54aae35e33faa552f8600`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -830,41 +830,41 @@ $ docker pull mysql@sha256:f7878bec832c6be5e61c39d3949651be8aa977daf875089b4560a
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:27:52 GMT
+# Wed, 21 Jan 2026 22:48:13 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:27:54 GMT
+# Wed, 21 Jan 2026 22:48:15 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:27:54 GMT
+# Wed, 21 Jan 2026 22:48:15 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:28:15 GMT
+# Wed, 21 Jan 2026 22:48:40 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:28:16 GMT
+# Wed, 21 Jan 2026 22:48:41 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:28:16 GMT
+# Wed, 21 Jan 2026 22:48:41 GMT
 ENV MYSQL_MAJOR=8.0
-# Fri, 16 Jan 2026 23:28:16 GMT
-ENV MYSQL_VERSION=8.0.44-1.el9
-# Fri, 16 Jan 2026 23:28:16 GMT
+# Wed, 21 Jan 2026 22:48:41 GMT
+ENV MYSQL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:48:41 GMT
 RUN set -eu; 	{ 		echo '[mysql8.0-server-minimal]'; 		echo 'name=MySQL 8.0 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.0-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:28:42 GMT
+# Wed, 21 Jan 2026 22:49:09 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:28:42 GMT
+# Wed, 21 Jan 2026 22:49:09 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:28:42 GMT
-ENV MYSQL_SHELL_VERSION=8.0.44-1.el9
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:09 GMT
+ENV MYSQL_SHELL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:49:46 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 CMD ["mysqld"]
 ```
 
@@ -873,81 +873,81 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef7bcbef3f907005c3fa9c593eb817c5154fb78f135362c51ef716fd1edb703d`  
-		Last Modified: Fri, 16 Jan 2026 23:29:52 GMT  
-		Size: 884.0 B  
+	-	`sha256:409234a5cefe2fb15fe401164c9ac5b83ce95bd4b09cee6e48963127d1908310`  
+		Last Modified: Wed, 21 Jan 2026 22:50:30 GMT  
+		Size: 888.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:caee3c6664fb8f26a9773c040a58eed56426627b46ca63f824062a5626385d01`  
-		Last Modified: Fri, 16 Jan 2026 23:29:53 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:af7d66b5fe48e32a6037c3570d159cda17fa1afbe03ce237c983d21f663d4578`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 783.6 KB (783552 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80caa0f442aff3224160d0d8ec20a5c4d106a3a9b8bed0ad66ea484fc86cd9c1`  
-		Last Modified: Fri, 16 Jan 2026 23:29:53 GMT  
-		Size: 6.2 MB (6175177 bytes)  
+	-	`sha256:354993a02b40b2d67657ee1a468da0103d1bc049da7aeecd60470fb9dc92af8b`  
+		Last Modified: Wed, 21 Jan 2026 22:50:17 GMT  
+		Size: 6.2 MB (6175151 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea7ef84dcaea1d1445baf02cb645626edee81b7420e8c22787d370c7646e8e75`  
-		Last Modified: Fri, 16 Jan 2026 23:29:42 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:73a530771500dc6fe7e1aad497d69e3213de7d03e43abf5dddc04a29abcfa246`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 2.6 KB (2606 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f40e06a2cd88c57a013246a89fda30e5b71902ac0e3e086432ee83f01a108bbc`  
-		Last Modified: Fri, 16 Jan 2026 23:29:43 GMT  
-		Size: 333.0 B  
+	-	`sha256:efbe8d818debcb9b265f173441d9a19a63961d16d7ae7e603e90bd6daa6c32de`  
+		Last Modified: Wed, 21 Jan 2026 22:50:31 GMT  
+		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83bab8f9c85f0acaafe3a2c077e0a56304cc3c808111823e37060c9476d681a5`  
-		Last Modified: Fri, 16 Jan 2026 23:29:45 GMT  
-		Size: 49.9 MB (49918398 bytes)  
+	-	`sha256:4b0022a26d15646a41c4e47b252c30307fc3e2af5fa2f52357962f0990665bf5`  
+		Last Modified: Wed, 21 Jan 2026 22:50:36 GMT  
+		Size: 49.9 MB (49921847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:655eb0dfc8feb1a31ee56b7840e34625bf54dd259a346b81a10fbfd99b39a121`  
-		Last Modified: Fri, 16 Jan 2026 23:29:43 GMT  
+	-	`sha256:3350cb04be9532162d58d210bfb0313afc243ec841ccc8381890cbb9ede0191a`  
+		Last Modified: Wed, 21 Jan 2026 22:50:18 GMT  
 		Size: 317.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9ae3e76dfc984a8dd17ef9c33be1fdd3d6b3794e3e24a39fa3f154b03de8623`  
-		Last Modified: Fri, 16 Jan 2026 23:30:06 GMT  
-		Size: 127.9 MB (127895065 bytes)  
+	-	`sha256:ce92f93410f22da9c8d227162646f54954f723267305f5377acfdc577aec35c5`  
+		Last Modified: Wed, 21 Jan 2026 23:41:52 GMT  
+		Size: 128.1 MB (128105197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc3a161f487a9a091587a3b55cf9351985e4936287c6576caa5aa4e4b1094c5f`  
-		Last Modified: Fri, 16 Jan 2026 23:29:45 GMT  
-		Size: 5.3 KB (5330 bytes)  
+	-	`sha256:0c271a9ab70e32b62237ce4e7eff3f8f39301ebb3b357ba80fc1fc37721793f8`  
+		Last Modified: Wed, 21 Jan 2026 22:50:19 GMT  
+		Size: 5.3 KB (5332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afd8a12fa4e1d7896486f7fd81d83a1faaf36fc6e782051f4f0d985de43b52da`  
-		Last Modified: Fri, 16 Jan 2026 23:29:45 GMT  
+	-	`sha256:0777a18c49adaade43e72b4e9860d6000b26c2da5685e1ebf6695d78181abad3`  
+		Last Modified: Wed, 21 Jan 2026 22:50:19 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.0` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:f7bb58291296cdce090c1c9a25d162c6cc8362ad60c4951f4630196fc74e65e6
+$ docker pull mysql@sha256:5389b98483e1a82accf84083a8c9acc91fcb6239c9b4860b46ea4e4d6cfc0719
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.7 MB (14655345 bytes)**  
+-	Total Size: **15.0 MB (14992380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98f5c1fca5b48359062429abddf7d66c7818c1c65ff1c3193e99a7f59fe50093`
+-	Image ID: `sha256:f155d71544aef0dffae17723f733f14582836df9c9565ac7d0e4160e3fe6e10e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b622c0882d0e13035a393c758180a1b09d5bb76758810d379a05d1f8e5c18040`  
-		Last Modified: Sat, 17 Jan 2026 01:02:38 GMT  
-		Size: 14.6 MB (14620437 bytes)  
+	-	`sha256:6d2feb98a44150c3128c6d6c6610550e5a5a523f36855810f8e68a28c8d4d8cd`  
+		Last Modified: Thu, 22 Jan 2026 01:02:35 GMT  
+		Size: 15.0 MB (14957469 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a2108fc02a60485aca46039e6e08ddee03d1a7af329926636c64360209143a55`  
-		Last Modified: Fri, 16 Jan 2026 23:29:42 GMT  
-		Size: 34.9 KB (34908 bytes)  
+	-	`sha256:be3a6aa3235d67ec781fca23b912d616039b9a4e7bbfe36b49eedfa19ef97fcf`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 34.9 KB (34911 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:8.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:2c4989e05aa3ceb8cb6eb8a1b1f38ffa361eac2fec96ec67705d1b21c6390527
+$ docker pull mysql@sha256:e9126de385158d58a48c16a51474d4ae393c72f8ac26c030565703a64d856f98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **227.7 MB (227690666 bytes)**  
+-	Total Size: **227.9 MB (227909911 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e501eca15118bb26fdb8fc5e0dfce27f687a2323c465e2e8cfe04a8221355ca`
+-	Image ID: `sha256:39c6d6610e15363dcdfc49ee2f3e714f8be762da94bf9643adab4db5801da96f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -956,41 +956,41 @@ $ docker pull mysql@sha256:2c4989e05aa3ceb8cb6eb8a1b1f38ffa361eac2fec96ec67705d1
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:58 GMT
+# Wed, 21 Jan 2026 22:52:07 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:30:25 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:30:26 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:30:26 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 ENV MYSQL_MAJOR=8.0
-# Fri, 16 Jan 2026 23:30:26 GMT
-ENV MYSQL_VERSION=8.0.44-1.el9
-# Fri, 16 Jan 2026 23:30:26 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:54:44 GMT
 RUN set -eu; 	{ 		echo '[mysql8.0-server-minimal]'; 		echo 'name=MySQL 8.0 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.0-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:55 GMT
+# Wed, 21 Jan 2026 22:55:15 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:55 GMT
+# Wed, 21 Jan 2026 22:55:16 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:55 GMT
-ENV MYSQL_SHELL_VERSION=8.0.44-1.el9
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:16 GMT
+ENV MYSQL_SHELL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:55:56 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 CMD ["mysqld"]
 ```
 
@@ -999,75 +999,75 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:954bf984e9bf2c04f9107f437047609df0f9eec9d2f03812dd16e535ab586e4f`  
-		Last Modified: Fri, 16 Jan 2026 23:32:01 GMT  
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92a93133f047f0e202f0077f8e1c18d43d687442c00a6889ac10dd13bd80f0e4`  
-		Last Modified: Fri, 16 Jan 2026 23:32:01 GMT  
-		Size: 737.5 KB (737531 bytes)  
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9ee9fbe69ed5f03d349f55ff723b007e3d44ee871c5fd2ca6a2ebe6ba308d81`  
-		Last Modified: Fri, 16 Jan 2026 23:32:12 GMT  
-		Size: 5.8 MB (5798012 bytes)  
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c13baec4f8bc9cf19cb82937ea5750fc276ad2cd4ba1401964e67070d05b146`  
-		Last Modified: Fri, 16 Jan 2026 23:32:12 GMT  
-		Size: 2.6 KB (2604 bytes)  
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eba93a33f57e70fbdf269e705f9a2f790269b60bd9a8facf607cae7735e2ace9`  
-		Last Modified: Fri, 16 Jan 2026 23:32:02 GMT  
-		Size: 333.0 B  
+	-	`sha256:eb847422b0082b0709be7d2d5f4a5726b9b5c4a2a40847524469dcce22244402`  
+		Last Modified: Thu, 22 Jan 2026 00:44:36 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:448975551cb36a03abcbffe5d99dea81800700c9bf639c0bf65e3aca5d745db8`  
-		Last Modified: Fri, 16 Jan 2026 23:32:04 GMT  
-		Size: 48.8 MB (48779290 bytes)  
+	-	`sha256:76dc8209f6c14b4b2384fd5d28fa43fed6e73988ea0ec2bca9362aaad9d20765`  
+		Last Modified: Wed, 21 Jan 2026 22:56:29 GMT  
+		Size: 48.8 MB (48775523 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f88e097ce1d0c9336cb62877d4dabb0f54d935908ca37a7b3bf334f7f4b8c0f5`  
-		Last Modified: Fri, 16 Jan 2026 23:48:11 GMT  
-		Size: 316.0 B  
+	-	`sha256:431c37cb44b415fc33301688a2954b8a6313734bc1d0190d338ed29c167d03c3`  
+		Last Modified: Wed, 21 Jan 2026 23:40:10 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:768353cd89add26156537406cbb2b041e17b79ca187d6c0a6ea6198fe28f0c29`  
-		Last Modified: Fri, 16 Jan 2026 23:32:06 GMT  
-		Size: 126.5 MB (126464339 bytes)  
+	-	`sha256:c31b491cd47f71e14001baa563cefa9d45e1a3af0d014330e8111af0a8c9a0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:56:31 GMT  
+		Size: 126.7 MB (126687408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1cfd6b3b2078041085a5585a3c001c7fc3ea78b8aa5cc321bf4dfd8a9be0c2b`  
-		Last Modified: Fri, 16 Jan 2026 23:32:03 GMT  
+	-	`sha256:d17c384409bafa51a7ba022ad8d497c0914cf0effd28b7879b7493e5cda03467`  
+		Last Modified: Wed, 21 Jan 2026 22:56:36 GMT  
 		Size: 5.3 KB (5332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:145e7a1ce6315c068ec7baa6142a98a051bb37452614dfe41fd5d193666ef740`  
-		Last Modified: Fri, 16 Jan 2026 23:32:04 GMT  
+	-	`sha256:79204f6a864d70bfd67c12c4dc0ea30963cda8038e537c67efb6d2ece443b924`  
+		Last Modified: Wed, 21 Jan 2026 23:29:48 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.0` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:628109504e2562b29cebcfbff11c7f6d45cf6b00b2bf240822fc820984ea8149
+$ docker pull mysql@sha256:3a97109abdf144da908b21bdcea43594c5be723811a598348d1cbaae43787612
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.7 MB (14653944 bytes)**  
+-	Total Size: **15.0 MB (14990976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cb0b3388bef9486c455c8ff8168c57bf55e592511ae7f2064aa836df68bdc23`
+-	Image ID: `sha256:cde2b06a62a7ec21f1cb980f28ddc989205d821c316df8149852695043bbd9fe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1c77537a0f6d7d7c8b67e649f0352a0280c527807c058a4181e7310bab2bb0bb`  
-		Last Modified: Fri, 16 Jan 2026 23:32:02 GMT  
-		Size: 14.6 MB (14618785 bytes)  
+	-	`sha256:a6711f704c0dcc92e2db5bf258f5ff5e437513378478b4148e7b082459e9b2b7`  
+		Last Modified: Wed, 21 Jan 2026 22:56:27 GMT  
+		Size: 15.0 MB (14955817 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e74b47efa6e5340638a16240548a03cdd641b0e9de0e0128098654614e107e2`  
-		Last Modified: Sat, 17 Jan 2026 01:02:51 GMT  
+	-	`sha256:e69647a8f6141bacab36de64a49c30f6b61a01c5a0c7ddf51539c67e812448bc`  
+		Last Modified: Wed, 21 Jan 2026 22:56:26 GMT  
 		Size: 35.2 KB (35159 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.0-bookworm`
 
 ```console
-$ docker pull mysql@sha256:707f5c087531fde2fe4cd0fa3a125c7467e99b7f6282a3e6ed338604aedb8c25
+$ docker pull mysql@sha256:5284868db9fd4c480d37e8394fb37316ba29b1bdbec31185676faaf42cd82612
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1078,135 +1078,135 @@ $ docker pull mysql@sha256:707f5c087531fde2fe4cd0fa3a125c7467e99b7f6282a3e6ed338
 ### `mysql:8.0-bookworm` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:40925488baf8d5eac689f01e2659e6cf40b4b3bb3c244bba0ba21bd482fdd4b6
+$ docker pull mysql@sha256:dee7500826371f0383c6673ab1fc4cece140d7f8fb365550597548549b253dcd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **183.5 MB (183452646 bytes)**  
+-	Total Size: **183.5 MB (183455449 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca5aee5818e82c7cf5ff947329e5d962dd39fe020a4ef1e7442b52503918ab16`
+-	Image ID: `sha256:bb471428bdc168577f9e02a48169eda26499d392561b1978b431aa483d45e642`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
 # Mon, 12 Jan 2026 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1768176000'
-# Tue, 13 Jan 2026 02:26:35 GMT
+# Wed, 21 Jan 2026 22:49:11 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql # buildkit
-# Tue, 13 Jan 2026 02:26:39 GMT
+# Wed, 21 Jan 2026 22:49:14 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends gnupg && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 13 Jan 2026 02:26:45 GMT
+# Wed, 21 Jan 2026 22:49:21 GMT
 ENV GOSU_VERSION=1.19
-# Tue, 13 Jan 2026 02:26:45 GMT
+# Wed, 21 Jan 2026 22:49:21 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Tue, 13 Jan 2026 02:26:45 GMT
+# Wed, 21 Jan 2026 22:49:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Tue, 13 Jan 2026 02:26:48 GMT
+# Wed, 21 Jan 2026 22:49:24 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		openssl 		perl 		xz-utils 		zstd 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 13 Jan 2026 02:26:49 GMT
+# Wed, 21 Jan 2026 22:49:25 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$key" > /etc/apt/keyrings/mysql.gpg; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" # buildkit
-# Tue, 13 Jan 2026 02:26:49 GMT
+# Wed, 21 Jan 2026 22:49:25 GMT
 ENV MYSQL_MAJOR=8.0
-# Tue, 13 Jan 2026 02:26:49 GMT
-ENV MYSQL_VERSION=8.0.44-1debian12
-# Tue, 13 Jan 2026 02:26:49 GMT
+# Wed, 21 Jan 2026 22:49:25 GMT
+ENV MYSQL_VERSION=8.0.45-1debian12
+# Wed, 21 Jan 2026 22:49:25 GMT
 RUN echo 'deb [ signed-by=/etc/apt/keyrings/mysql.gpg ] http://repo.mysql.com/apt/debian/ bookworm mysql-8.0' > /etc/apt/sources.list.d/mysql.list # buildkit
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mysql-community-client="${MYSQL_VERSION}" 		mysql-community-server-core="${MYSQL_VERSION}" 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 1777 /var/run/mysqld /var/lib/mysql # buildkit
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 COPY config/ /etc/mysql/ # buildkit
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
 	-	`sha256:c02d17997ce3d2c82e082235ea0b5152d06ee659c4e2fabcf1e0079312f1bcde`  
-		Last Modified: Tue, 13 Jan 2026 00:41:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:50 GMT  
 		Size: 28.2 MB (28228572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b22e1a2160f42b051b03385b84706675799af27ef1d739855ea53e86c1db3754`  
-		Last Modified: Tue, 13 Jan 2026 02:27:32 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:bfa36b2e2c985c829bdf403d8168eeae8890c3217a30563a2b5b3aa68e1efdba`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
+		Size: 1.1 KB (1105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f9018174d359de6a5328223860c685beff628396b4c0751bddd67bb6f436fba`  
-		Last Modified: Tue, 13 Jan 2026 02:27:20 GMT  
-		Size: 4.4 MB (4423340 bytes)  
+	-	`sha256:65d1348177f9534b0b93188d0bd2781bf8088988b503664ef3329e9462ec5e6d`  
+		Last Modified: Thu, 22 Jan 2026 01:02:45 GMT  
+		Size: 4.4 MB (4423336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dc91177be4b5ddabf028b6195345d9f121dd74538248e72a22d10a6bd5a4337`  
-		Last Modified: Tue, 13 Jan 2026 02:27:32 GMT  
-		Size: 1.2 MB (1248687 bytes)  
+	-	`sha256:106cdb304c5842e0232ae8ce1fcf6877cff36e384ba2d8ecc68dd0b670d04f34`  
+		Last Modified: Wed, 21 Jan 2026 22:50:22 GMT  
+		Size: 1.2 MB (1248714 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba707135653628509d4c84f1cbe8c4a2cdd97b36d775765d7fc9f2ca48424385`  
-		Last Modified: Tue, 13 Jan 2026 02:27:32 GMT  
+	-	`sha256:5f855ce4e64c494fdd0390394941885efc48adffab2266c04a67f71c80b55fce`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3350a51c92db73edbec591f738399e75ba4dd8cc05ede73597d087942f56de3`  
-		Last Modified: Tue, 13 Jan 2026 02:27:33 GMT  
-		Size: 15.3 MB (15295770 bytes)  
+	-	`sha256:7bb9b517325f53660036f1de6ca0e9494dbc84aafe02d886a34f2bd505a0d80c`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 15.3 MB (15295819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9fe1cdeaf5edd760187d6513d256abb23908c164f4a38247388365eea86f5ef`  
-		Last Modified: Tue, 13 Jan 2026 02:27:32 GMT  
-		Size: 3.1 KB (3051 bytes)  
+	-	`sha256:d94beb5f31bf6179d42df34e5693e2f2e1e7b3efe8ab3be7410347bd25082c2c`  
+		Last Modified: Thu, 22 Jan 2026 01:00:33 GMT  
+		Size: 3.0 KB (3049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d9fa428fed3bfa308b0a3205123630fdecf4189ddab8c0c3603184bbf94f36b`  
-		Last Modified: Tue, 13 Jan 2026 02:27:22 GMT  
-		Size: 255.0 B  
+	-	`sha256:9ab60d99d7fa5f30783088438eb8f263f39c3c315a7da872044328dd07ca2a26`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:976fcdfeee6d72380d9c3d4a00158cc023cf4e8540b36d9c4024d2fd4964525d`  
-		Last Modified: Tue, 13 Jan 2026 02:27:40 GMT  
-		Size: 134.2 MB (134245460 bytes)  
+	-	`sha256:8c09fbe4bbb7dde90633da807e1f347b7caf14883cab671790a4369c31ded78f`  
+		Last Modified: Wed, 21 Jan 2026 22:50:01 GMT  
+		Size: 134.2 MB (134248192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc1541cfd976704660919b071995ece082b8f6a1c8727a447bfd9cc3bd95bdf4`  
-		Last Modified: Tue, 13 Jan 2026 02:27:23 GMT  
+	-	`sha256:a5ed9baa1e80f6b50800638f3cdc195044965a20d046ae3565fdfb32a2f8eb6b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:59 GMT  
 		Size: 843.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:78dced65d3dabbaa65b13a203df29c0296e88bc1d712cde3b1415a615b02bab9`  
-		Last Modified: Tue, 13 Jan 2026 02:27:32 GMT  
-		Size: 5.3 KB (5327 bytes)  
+	-	`sha256:8c36bcd4939de82e2db98188dc2dd518dbda890712040edb19e8befbbe028557`  
+		Last Modified: Thu, 22 Jan 2026 01:02:47 GMT  
+		Size: 5.3 KB (5328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d2ab40b9e6f36288846a681d00f82a18106e993b93dd5d3f0d1bcf1014ee5dd`  
-		Last Modified: Tue, 13 Jan 2026 02:27:32 GMT  
-		Size: 122.0 B  
+	-	`sha256:29984f882141106a3f505fd1ee0d8afaf76a58bf3e0e8f6d953f5bee612777fa`  
+		Last Modified: Thu, 22 Jan 2026 01:02:48 GMT  
+		Size: 119.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.0-bookworm` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:fb4276d47d3a8247eb6723e1cbdd8e5efe29cce9d80ffbb8c7b008535c4d5771
+$ docker pull mysql@sha256:a7eddc6833b1dad7a3743fa776da9e6c8604dd9b860673e99b88d15d65e4693a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.2 MB (4197758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:829d4fa1a08a98e8b03328728bb4292e3ff94f991594a62e81e53de38cd3d68a`
+-	Image ID: `sha256:c526e7816588d61af24be57343f0050e43cdbbad362b3b6ba103554894ebe19b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e8aa42f4ffccc5f8c5c19f5e5058c2ba4dbe2927dd1ecd3022c6c40cea93c05d`  
-		Last Modified: Tue, 13 Jan 2026 02:27:21 GMT  
+	-	`sha256:cade0013c36201ab6c42ec4b5f213e754609b2f3fe9fc19478d78770c9747810`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
 		Size: 4.2 MB (4163505 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:851452c4742f43d72b47517aa649b8dabe50ed847fc6bb02d0dda1f097697c17`  
-		Last Modified: Tue, 13 Jan 2026 04:03:06 GMT  
+	-	`sha256:0b99cd63676959f0fe9ca9cd457e9c74b4e5e604d39c4d8bca1ba174822cf3c7`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
 		Size: 34.3 KB (34253 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.0-debian`
 
 ```console
-$ docker pull mysql@sha256:707f5c087531fde2fe4cd0fa3a125c7467e99b7f6282a3e6ed338604aedb8c25
+$ docker pull mysql@sha256:5284868db9fd4c480d37e8394fb37316ba29b1bdbec31185676faaf42cd82612
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1217,135 +1217,135 @@ $ docker pull mysql@sha256:707f5c087531fde2fe4cd0fa3a125c7467e99b7f6282a3e6ed338
 ### `mysql:8.0-debian` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:40925488baf8d5eac689f01e2659e6cf40b4b3bb3c244bba0ba21bd482fdd4b6
+$ docker pull mysql@sha256:dee7500826371f0383c6673ab1fc4cece140d7f8fb365550597548549b253dcd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **183.5 MB (183452646 bytes)**  
+-	Total Size: **183.5 MB (183455449 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca5aee5818e82c7cf5ff947329e5d962dd39fe020a4ef1e7442b52503918ab16`
+-	Image ID: `sha256:bb471428bdc168577f9e02a48169eda26499d392561b1978b431aa483d45e642`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
 # Mon, 12 Jan 2026 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1768176000'
-# Tue, 13 Jan 2026 02:26:35 GMT
+# Wed, 21 Jan 2026 22:49:11 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql # buildkit
-# Tue, 13 Jan 2026 02:26:39 GMT
+# Wed, 21 Jan 2026 22:49:14 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends gnupg && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 13 Jan 2026 02:26:45 GMT
+# Wed, 21 Jan 2026 22:49:21 GMT
 ENV GOSU_VERSION=1.19
-# Tue, 13 Jan 2026 02:26:45 GMT
+# Wed, 21 Jan 2026 22:49:21 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Tue, 13 Jan 2026 02:26:45 GMT
+# Wed, 21 Jan 2026 22:49:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Tue, 13 Jan 2026 02:26:48 GMT
+# Wed, 21 Jan 2026 22:49:24 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		openssl 		perl 		xz-utils 		zstd 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 13 Jan 2026 02:26:49 GMT
+# Wed, 21 Jan 2026 22:49:25 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$key" > /etc/apt/keyrings/mysql.gpg; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" # buildkit
-# Tue, 13 Jan 2026 02:26:49 GMT
+# Wed, 21 Jan 2026 22:49:25 GMT
 ENV MYSQL_MAJOR=8.0
-# Tue, 13 Jan 2026 02:26:49 GMT
-ENV MYSQL_VERSION=8.0.44-1debian12
-# Tue, 13 Jan 2026 02:26:49 GMT
+# Wed, 21 Jan 2026 22:49:25 GMT
+ENV MYSQL_VERSION=8.0.45-1debian12
+# Wed, 21 Jan 2026 22:49:25 GMT
 RUN echo 'deb [ signed-by=/etc/apt/keyrings/mysql.gpg ] http://repo.mysql.com/apt/debian/ bookworm mysql-8.0' > /etc/apt/sources.list.d/mysql.list # buildkit
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mysql-community-client="${MYSQL_VERSION}" 		mysql-community-server-core="${MYSQL_VERSION}" 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 1777 /var/run/mysqld /var/lib/mysql # buildkit
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 COPY config/ /etc/mysql/ # buildkit
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Tue, 13 Jan 2026 02:26:59 GMT
+# Wed, 21 Jan 2026 22:49:36 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
 	-	`sha256:c02d17997ce3d2c82e082235ea0b5152d06ee659c4e2fabcf1e0079312f1bcde`  
-		Last Modified: Tue, 13 Jan 2026 00:41:44 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:50 GMT  
 		Size: 28.2 MB (28228572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b22e1a2160f42b051b03385b84706675799af27ef1d739855ea53e86c1db3754`  
-		Last Modified: Tue, 13 Jan 2026 02:27:32 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:bfa36b2e2c985c829bdf403d8168eeae8890c3217a30563a2b5b3aa68e1efdba`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
+		Size: 1.1 KB (1105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f9018174d359de6a5328223860c685beff628396b4c0751bddd67bb6f436fba`  
-		Last Modified: Tue, 13 Jan 2026 02:27:20 GMT  
-		Size: 4.4 MB (4423340 bytes)  
+	-	`sha256:65d1348177f9534b0b93188d0bd2781bf8088988b503664ef3329e9462ec5e6d`  
+		Last Modified: Thu, 22 Jan 2026 01:02:45 GMT  
+		Size: 4.4 MB (4423336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dc91177be4b5ddabf028b6195345d9f121dd74538248e72a22d10a6bd5a4337`  
-		Last Modified: Tue, 13 Jan 2026 02:27:32 GMT  
-		Size: 1.2 MB (1248687 bytes)  
+	-	`sha256:106cdb304c5842e0232ae8ce1fcf6877cff36e384ba2d8ecc68dd0b670d04f34`  
+		Last Modified: Wed, 21 Jan 2026 22:50:22 GMT  
+		Size: 1.2 MB (1248714 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba707135653628509d4c84f1cbe8c4a2cdd97b36d775765d7fc9f2ca48424385`  
-		Last Modified: Tue, 13 Jan 2026 02:27:32 GMT  
+	-	`sha256:5f855ce4e64c494fdd0390394941885efc48adffab2266c04a67f71c80b55fce`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3350a51c92db73edbec591f738399e75ba4dd8cc05ede73597d087942f56de3`  
-		Last Modified: Tue, 13 Jan 2026 02:27:33 GMT  
-		Size: 15.3 MB (15295770 bytes)  
+	-	`sha256:7bb9b517325f53660036f1de6ca0e9494dbc84aafe02d886a34f2bd505a0d80c`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 15.3 MB (15295819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9fe1cdeaf5edd760187d6513d256abb23908c164f4a38247388365eea86f5ef`  
-		Last Modified: Tue, 13 Jan 2026 02:27:32 GMT  
-		Size: 3.1 KB (3051 bytes)  
+	-	`sha256:d94beb5f31bf6179d42df34e5693e2f2e1e7b3efe8ab3be7410347bd25082c2c`  
+		Last Modified: Thu, 22 Jan 2026 01:00:33 GMT  
+		Size: 3.0 KB (3049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d9fa428fed3bfa308b0a3205123630fdecf4189ddab8c0c3603184bbf94f36b`  
-		Last Modified: Tue, 13 Jan 2026 02:27:22 GMT  
-		Size: 255.0 B  
+	-	`sha256:9ab60d99d7fa5f30783088438eb8f263f39c3c315a7da872044328dd07ca2a26`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:976fcdfeee6d72380d9c3d4a00158cc023cf4e8540b36d9c4024d2fd4964525d`  
-		Last Modified: Tue, 13 Jan 2026 02:27:40 GMT  
-		Size: 134.2 MB (134245460 bytes)  
+	-	`sha256:8c09fbe4bbb7dde90633da807e1f347b7caf14883cab671790a4369c31ded78f`  
+		Last Modified: Wed, 21 Jan 2026 22:50:01 GMT  
+		Size: 134.2 MB (134248192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc1541cfd976704660919b071995ece082b8f6a1c8727a447bfd9cc3bd95bdf4`  
-		Last Modified: Tue, 13 Jan 2026 02:27:23 GMT  
+	-	`sha256:a5ed9baa1e80f6b50800638f3cdc195044965a20d046ae3565fdfb32a2f8eb6b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:59 GMT  
 		Size: 843.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:78dced65d3dabbaa65b13a203df29c0296e88bc1d712cde3b1415a615b02bab9`  
-		Last Modified: Tue, 13 Jan 2026 02:27:32 GMT  
-		Size: 5.3 KB (5327 bytes)  
+	-	`sha256:8c36bcd4939de82e2db98188dc2dd518dbda890712040edb19e8befbbe028557`  
+		Last Modified: Thu, 22 Jan 2026 01:02:47 GMT  
+		Size: 5.3 KB (5328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d2ab40b9e6f36288846a681d00f82a18106e993b93dd5d3f0d1bcf1014ee5dd`  
-		Last Modified: Tue, 13 Jan 2026 02:27:32 GMT  
-		Size: 122.0 B  
+	-	`sha256:29984f882141106a3f505fd1ee0d8afaf76a58bf3e0e8f6d953f5bee612777fa`  
+		Last Modified: Thu, 22 Jan 2026 01:02:48 GMT  
+		Size: 119.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.0-debian` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:fb4276d47d3a8247eb6723e1cbdd8e5efe29cce9d80ffbb8c7b008535c4d5771
+$ docker pull mysql@sha256:a7eddc6833b1dad7a3743fa776da9e6c8604dd9b860673e99b88d15d65e4693a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.2 MB (4197758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:829d4fa1a08a98e8b03328728bb4292e3ff94f991594a62e81e53de38cd3d68a`
+-	Image ID: `sha256:c526e7816588d61af24be57343f0050e43cdbbad362b3b6ba103554894ebe19b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e8aa42f4ffccc5f8c5c19f5e5058c2ba4dbe2927dd1ecd3022c6c40cea93c05d`  
-		Last Modified: Tue, 13 Jan 2026 02:27:21 GMT  
+	-	`sha256:cade0013c36201ab6c42ec4b5f213e754609b2f3fe9fc19478d78770c9747810`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
 		Size: 4.2 MB (4163505 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:851452c4742f43d72b47517aa649b8dabe50ed847fc6bb02d0dda1f097697c17`  
-		Last Modified: Tue, 13 Jan 2026 04:03:06 GMT  
+	-	`sha256:0b99cd63676959f0fe9ca9cd457e9c74b4e5e604d39c4d8bca1ba174822cf3c7`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
 		Size: 34.3 KB (34253 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.0-oracle`
 
 ```console
-$ docker pull mysql@sha256:9c3380eac945af0736031b200027f581925927c81e010056214a4bd6b6693714
+$ docker pull mysql@sha256:0546f878adee48eef82ccf936fc8ff932bdaa180ee614a8043ca917533654bc1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1358,13 +1358,13 @@ $ docker pull mysql@sha256:9c3380eac945af0736031b200027f581925927c81e010056214a4
 ### `mysql:8.0-oracle` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:f7878bec832c6be5e61c39d3949651be8aa977daf875089b4560ae1434d2cb9c
+$ docker pull mysql@sha256:460961fe4544452cdfa070f0c02f539caac45e8c0ef85bec8efe9e0ce5b4f112
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.1 MB (232096327 bytes)**  
+-	Total Size: **232.3 MB (232309884 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e645fd9ffc4fc6745702d8c0068326b8707251166fdf11c80e8f52a609d19d1d`
+-	Image ID: `sha256:f6151196d86929e6cc12db76c163bfd2c8c3a46093e54aae35e33faa552f8600`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -1373,41 +1373,41 @@ $ docker pull mysql@sha256:f7878bec832c6be5e61c39d3949651be8aa977daf875089b4560a
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:27:52 GMT
+# Wed, 21 Jan 2026 22:48:13 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:27:54 GMT
+# Wed, 21 Jan 2026 22:48:15 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:27:54 GMT
+# Wed, 21 Jan 2026 22:48:15 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:28:15 GMT
+# Wed, 21 Jan 2026 22:48:40 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:28:16 GMT
+# Wed, 21 Jan 2026 22:48:41 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:28:16 GMT
+# Wed, 21 Jan 2026 22:48:41 GMT
 ENV MYSQL_MAJOR=8.0
-# Fri, 16 Jan 2026 23:28:16 GMT
-ENV MYSQL_VERSION=8.0.44-1.el9
-# Fri, 16 Jan 2026 23:28:16 GMT
+# Wed, 21 Jan 2026 22:48:41 GMT
+ENV MYSQL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:48:41 GMT
 RUN set -eu; 	{ 		echo '[mysql8.0-server-minimal]'; 		echo 'name=MySQL 8.0 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.0-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:28:42 GMT
+# Wed, 21 Jan 2026 22:49:09 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:28:42 GMT
+# Wed, 21 Jan 2026 22:49:09 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:28:42 GMT
-ENV MYSQL_SHELL_VERSION=8.0.44-1.el9
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:09 GMT
+ENV MYSQL_SHELL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:49:46 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 CMD ["mysqld"]
 ```
 
@@ -1416,81 +1416,81 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef7bcbef3f907005c3fa9c593eb817c5154fb78f135362c51ef716fd1edb703d`  
-		Last Modified: Fri, 16 Jan 2026 23:29:52 GMT  
-		Size: 884.0 B  
+	-	`sha256:409234a5cefe2fb15fe401164c9ac5b83ce95bd4b09cee6e48963127d1908310`  
+		Last Modified: Wed, 21 Jan 2026 22:50:30 GMT  
+		Size: 888.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:caee3c6664fb8f26a9773c040a58eed56426627b46ca63f824062a5626385d01`  
-		Last Modified: Fri, 16 Jan 2026 23:29:53 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:af7d66b5fe48e32a6037c3570d159cda17fa1afbe03ce237c983d21f663d4578`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 783.6 KB (783552 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80caa0f442aff3224160d0d8ec20a5c4d106a3a9b8bed0ad66ea484fc86cd9c1`  
-		Last Modified: Fri, 16 Jan 2026 23:29:53 GMT  
-		Size: 6.2 MB (6175177 bytes)  
+	-	`sha256:354993a02b40b2d67657ee1a468da0103d1bc049da7aeecd60470fb9dc92af8b`  
+		Last Modified: Wed, 21 Jan 2026 22:50:17 GMT  
+		Size: 6.2 MB (6175151 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea7ef84dcaea1d1445baf02cb645626edee81b7420e8c22787d370c7646e8e75`  
-		Last Modified: Fri, 16 Jan 2026 23:29:42 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:73a530771500dc6fe7e1aad497d69e3213de7d03e43abf5dddc04a29abcfa246`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 2.6 KB (2606 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f40e06a2cd88c57a013246a89fda30e5b71902ac0e3e086432ee83f01a108bbc`  
-		Last Modified: Fri, 16 Jan 2026 23:29:43 GMT  
-		Size: 333.0 B  
+	-	`sha256:efbe8d818debcb9b265f173441d9a19a63961d16d7ae7e603e90bd6daa6c32de`  
+		Last Modified: Wed, 21 Jan 2026 22:50:31 GMT  
+		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83bab8f9c85f0acaafe3a2c077e0a56304cc3c808111823e37060c9476d681a5`  
-		Last Modified: Fri, 16 Jan 2026 23:29:45 GMT  
-		Size: 49.9 MB (49918398 bytes)  
+	-	`sha256:4b0022a26d15646a41c4e47b252c30307fc3e2af5fa2f52357962f0990665bf5`  
+		Last Modified: Wed, 21 Jan 2026 22:50:36 GMT  
+		Size: 49.9 MB (49921847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:655eb0dfc8feb1a31ee56b7840e34625bf54dd259a346b81a10fbfd99b39a121`  
-		Last Modified: Fri, 16 Jan 2026 23:29:43 GMT  
+	-	`sha256:3350cb04be9532162d58d210bfb0313afc243ec841ccc8381890cbb9ede0191a`  
+		Last Modified: Wed, 21 Jan 2026 22:50:18 GMT  
 		Size: 317.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9ae3e76dfc984a8dd17ef9c33be1fdd3d6b3794e3e24a39fa3f154b03de8623`  
-		Last Modified: Fri, 16 Jan 2026 23:30:06 GMT  
-		Size: 127.9 MB (127895065 bytes)  
+	-	`sha256:ce92f93410f22da9c8d227162646f54954f723267305f5377acfdc577aec35c5`  
+		Last Modified: Wed, 21 Jan 2026 23:41:52 GMT  
+		Size: 128.1 MB (128105197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc3a161f487a9a091587a3b55cf9351985e4936287c6576caa5aa4e4b1094c5f`  
-		Last Modified: Fri, 16 Jan 2026 23:29:45 GMT  
-		Size: 5.3 KB (5330 bytes)  
+	-	`sha256:0c271a9ab70e32b62237ce4e7eff3f8f39301ebb3b357ba80fc1fc37721793f8`  
+		Last Modified: Wed, 21 Jan 2026 22:50:19 GMT  
+		Size: 5.3 KB (5332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afd8a12fa4e1d7896486f7fd81d83a1faaf36fc6e782051f4f0d985de43b52da`  
-		Last Modified: Fri, 16 Jan 2026 23:29:45 GMT  
+	-	`sha256:0777a18c49adaade43e72b4e9860d6000b26c2da5685e1ebf6695d78181abad3`  
+		Last Modified: Wed, 21 Jan 2026 22:50:19 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.0-oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:f7bb58291296cdce090c1c9a25d162c6cc8362ad60c4951f4630196fc74e65e6
+$ docker pull mysql@sha256:5389b98483e1a82accf84083a8c9acc91fcb6239c9b4860b46ea4e4d6cfc0719
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.7 MB (14655345 bytes)**  
+-	Total Size: **15.0 MB (14992380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98f5c1fca5b48359062429abddf7d66c7818c1c65ff1c3193e99a7f59fe50093`
+-	Image ID: `sha256:f155d71544aef0dffae17723f733f14582836df9c9565ac7d0e4160e3fe6e10e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b622c0882d0e13035a393c758180a1b09d5bb76758810d379a05d1f8e5c18040`  
-		Last Modified: Sat, 17 Jan 2026 01:02:38 GMT  
-		Size: 14.6 MB (14620437 bytes)  
+	-	`sha256:6d2feb98a44150c3128c6d6c6610550e5a5a523f36855810f8e68a28c8d4d8cd`  
+		Last Modified: Thu, 22 Jan 2026 01:02:35 GMT  
+		Size: 15.0 MB (14957469 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a2108fc02a60485aca46039e6e08ddee03d1a7af329926636c64360209143a55`  
-		Last Modified: Fri, 16 Jan 2026 23:29:42 GMT  
-		Size: 34.9 KB (34908 bytes)  
+	-	`sha256:be3a6aa3235d67ec781fca23b912d616039b9a4e7bbfe36b49eedfa19ef97fcf`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 34.9 KB (34911 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:8.0-oracle` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:2c4989e05aa3ceb8cb6eb8a1b1f38ffa361eac2fec96ec67705d1b21c6390527
+$ docker pull mysql@sha256:e9126de385158d58a48c16a51474d4ae393c72f8ac26c030565703a64d856f98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **227.7 MB (227690666 bytes)**  
+-	Total Size: **227.9 MB (227909911 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e501eca15118bb26fdb8fc5e0dfce27f687a2323c465e2e8cfe04a8221355ca`
+-	Image ID: `sha256:39c6d6610e15363dcdfc49ee2f3e714f8be762da94bf9643adab4db5801da96f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -1499,41 +1499,41 @@ $ docker pull mysql@sha256:2c4989e05aa3ceb8cb6eb8a1b1f38ffa361eac2fec96ec67705d1
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:58 GMT
+# Wed, 21 Jan 2026 22:52:07 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:30:25 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:30:26 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:30:26 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 ENV MYSQL_MAJOR=8.0
-# Fri, 16 Jan 2026 23:30:26 GMT
-ENV MYSQL_VERSION=8.0.44-1.el9
-# Fri, 16 Jan 2026 23:30:26 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:54:44 GMT
 RUN set -eu; 	{ 		echo '[mysql8.0-server-minimal]'; 		echo 'name=MySQL 8.0 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.0-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:55 GMT
+# Wed, 21 Jan 2026 22:55:15 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:55 GMT
+# Wed, 21 Jan 2026 22:55:16 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:55 GMT
-ENV MYSQL_SHELL_VERSION=8.0.44-1.el9
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:16 GMT
+ENV MYSQL_SHELL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:55:56 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 CMD ["mysqld"]
 ```
 
@@ -1542,75 +1542,75 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:954bf984e9bf2c04f9107f437047609df0f9eec9d2f03812dd16e535ab586e4f`  
-		Last Modified: Fri, 16 Jan 2026 23:32:01 GMT  
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92a93133f047f0e202f0077f8e1c18d43d687442c00a6889ac10dd13bd80f0e4`  
-		Last Modified: Fri, 16 Jan 2026 23:32:01 GMT  
-		Size: 737.5 KB (737531 bytes)  
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9ee9fbe69ed5f03d349f55ff723b007e3d44ee871c5fd2ca6a2ebe6ba308d81`  
-		Last Modified: Fri, 16 Jan 2026 23:32:12 GMT  
-		Size: 5.8 MB (5798012 bytes)  
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c13baec4f8bc9cf19cb82937ea5750fc276ad2cd4ba1401964e67070d05b146`  
-		Last Modified: Fri, 16 Jan 2026 23:32:12 GMT  
-		Size: 2.6 KB (2604 bytes)  
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eba93a33f57e70fbdf269e705f9a2f790269b60bd9a8facf607cae7735e2ace9`  
-		Last Modified: Fri, 16 Jan 2026 23:32:02 GMT  
-		Size: 333.0 B  
+	-	`sha256:eb847422b0082b0709be7d2d5f4a5726b9b5c4a2a40847524469dcce22244402`  
+		Last Modified: Thu, 22 Jan 2026 00:44:36 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:448975551cb36a03abcbffe5d99dea81800700c9bf639c0bf65e3aca5d745db8`  
-		Last Modified: Fri, 16 Jan 2026 23:32:04 GMT  
-		Size: 48.8 MB (48779290 bytes)  
+	-	`sha256:76dc8209f6c14b4b2384fd5d28fa43fed6e73988ea0ec2bca9362aaad9d20765`  
+		Last Modified: Wed, 21 Jan 2026 22:56:29 GMT  
+		Size: 48.8 MB (48775523 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f88e097ce1d0c9336cb62877d4dabb0f54d935908ca37a7b3bf334f7f4b8c0f5`  
-		Last Modified: Fri, 16 Jan 2026 23:48:11 GMT  
-		Size: 316.0 B  
+	-	`sha256:431c37cb44b415fc33301688a2954b8a6313734bc1d0190d338ed29c167d03c3`  
+		Last Modified: Wed, 21 Jan 2026 23:40:10 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:768353cd89add26156537406cbb2b041e17b79ca187d6c0a6ea6198fe28f0c29`  
-		Last Modified: Fri, 16 Jan 2026 23:32:06 GMT  
-		Size: 126.5 MB (126464339 bytes)  
+	-	`sha256:c31b491cd47f71e14001baa563cefa9d45e1a3af0d014330e8111af0a8c9a0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:56:31 GMT  
+		Size: 126.7 MB (126687408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1cfd6b3b2078041085a5585a3c001c7fc3ea78b8aa5cc321bf4dfd8a9be0c2b`  
-		Last Modified: Fri, 16 Jan 2026 23:32:03 GMT  
+	-	`sha256:d17c384409bafa51a7ba022ad8d497c0914cf0effd28b7879b7493e5cda03467`  
+		Last Modified: Wed, 21 Jan 2026 22:56:36 GMT  
 		Size: 5.3 KB (5332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:145e7a1ce6315c068ec7baa6142a98a051bb37452614dfe41fd5d193666ef740`  
-		Last Modified: Fri, 16 Jan 2026 23:32:04 GMT  
+	-	`sha256:79204f6a864d70bfd67c12c4dc0ea30963cda8038e537c67efb6d2ece443b924`  
+		Last Modified: Wed, 21 Jan 2026 23:29:48 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.0-oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:628109504e2562b29cebcfbff11c7f6d45cf6b00b2bf240822fc820984ea8149
+$ docker pull mysql@sha256:3a97109abdf144da908b21bdcea43594c5be723811a598348d1cbaae43787612
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.7 MB (14653944 bytes)**  
+-	Total Size: **15.0 MB (14990976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cb0b3388bef9486c455c8ff8168c57bf55e592511ae7f2064aa836df68bdc23`
+-	Image ID: `sha256:cde2b06a62a7ec21f1cb980f28ddc989205d821c316df8149852695043bbd9fe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1c77537a0f6d7d7c8b67e649f0352a0280c527807c058a4181e7310bab2bb0bb`  
-		Last Modified: Fri, 16 Jan 2026 23:32:02 GMT  
-		Size: 14.6 MB (14618785 bytes)  
+	-	`sha256:a6711f704c0dcc92e2db5bf258f5ff5e437513378478b4148e7b082459e9b2b7`  
+		Last Modified: Wed, 21 Jan 2026 22:56:27 GMT  
+		Size: 15.0 MB (14955817 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e74b47efa6e5340638a16240548a03cdd641b0e9de0e0128098654614e107e2`  
-		Last Modified: Sat, 17 Jan 2026 01:02:51 GMT  
+	-	`sha256:e69647a8f6141bacab36de64a49c30f6b61a01c5a0c7ddf51539c67e812448bc`  
+		Last Modified: Wed, 21 Jan 2026 22:56:26 GMT  
 		Size: 35.2 KB (35159 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.0-oraclelinux9`
 
 ```console
-$ docker pull mysql@sha256:9c3380eac945af0736031b200027f581925927c81e010056214a4bd6b6693714
+$ docker pull mysql@sha256:0546f878adee48eef82ccf936fc8ff932bdaa180ee614a8043ca917533654bc1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1623,13 +1623,13 @@ $ docker pull mysql@sha256:9c3380eac945af0736031b200027f581925927c81e010056214a4
 ### `mysql:8.0-oraclelinux9` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:f7878bec832c6be5e61c39d3949651be8aa977daf875089b4560ae1434d2cb9c
+$ docker pull mysql@sha256:460961fe4544452cdfa070f0c02f539caac45e8c0ef85bec8efe9e0ce5b4f112
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.1 MB (232096327 bytes)**  
+-	Total Size: **232.3 MB (232309884 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e645fd9ffc4fc6745702d8c0068326b8707251166fdf11c80e8f52a609d19d1d`
+-	Image ID: `sha256:f6151196d86929e6cc12db76c163bfd2c8c3a46093e54aae35e33faa552f8600`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -1638,41 +1638,41 @@ $ docker pull mysql@sha256:f7878bec832c6be5e61c39d3949651be8aa977daf875089b4560a
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:27:52 GMT
+# Wed, 21 Jan 2026 22:48:13 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:27:54 GMT
+# Wed, 21 Jan 2026 22:48:15 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:27:54 GMT
+# Wed, 21 Jan 2026 22:48:15 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:28:15 GMT
+# Wed, 21 Jan 2026 22:48:40 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:28:16 GMT
+# Wed, 21 Jan 2026 22:48:41 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:28:16 GMT
+# Wed, 21 Jan 2026 22:48:41 GMT
 ENV MYSQL_MAJOR=8.0
-# Fri, 16 Jan 2026 23:28:16 GMT
-ENV MYSQL_VERSION=8.0.44-1.el9
-# Fri, 16 Jan 2026 23:28:16 GMT
+# Wed, 21 Jan 2026 22:48:41 GMT
+ENV MYSQL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:48:41 GMT
 RUN set -eu; 	{ 		echo '[mysql8.0-server-minimal]'; 		echo 'name=MySQL 8.0 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.0-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:28:42 GMT
+# Wed, 21 Jan 2026 22:49:09 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:28:42 GMT
+# Wed, 21 Jan 2026 22:49:09 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:28:42 GMT
-ENV MYSQL_SHELL_VERSION=8.0.44-1.el9
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:09 GMT
+ENV MYSQL_SHELL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:49:46 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:29:15 GMT
+# Wed, 21 Jan 2026 22:49:46 GMT
 CMD ["mysqld"]
 ```
 
@@ -1681,81 +1681,81 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef7bcbef3f907005c3fa9c593eb817c5154fb78f135362c51ef716fd1edb703d`  
-		Last Modified: Fri, 16 Jan 2026 23:29:52 GMT  
-		Size: 884.0 B  
+	-	`sha256:409234a5cefe2fb15fe401164c9ac5b83ce95bd4b09cee6e48963127d1908310`  
+		Last Modified: Wed, 21 Jan 2026 22:50:30 GMT  
+		Size: 888.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:caee3c6664fb8f26a9773c040a58eed56426627b46ca63f824062a5626385d01`  
-		Last Modified: Fri, 16 Jan 2026 23:29:53 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:af7d66b5fe48e32a6037c3570d159cda17fa1afbe03ce237c983d21f663d4578`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 783.6 KB (783552 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80caa0f442aff3224160d0d8ec20a5c4d106a3a9b8bed0ad66ea484fc86cd9c1`  
-		Last Modified: Fri, 16 Jan 2026 23:29:53 GMT  
-		Size: 6.2 MB (6175177 bytes)  
+	-	`sha256:354993a02b40b2d67657ee1a468da0103d1bc049da7aeecd60470fb9dc92af8b`  
+		Last Modified: Wed, 21 Jan 2026 22:50:17 GMT  
+		Size: 6.2 MB (6175151 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea7ef84dcaea1d1445baf02cb645626edee81b7420e8c22787d370c7646e8e75`  
-		Last Modified: Fri, 16 Jan 2026 23:29:42 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:73a530771500dc6fe7e1aad497d69e3213de7d03e43abf5dddc04a29abcfa246`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 2.6 KB (2606 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f40e06a2cd88c57a013246a89fda30e5b71902ac0e3e086432ee83f01a108bbc`  
-		Last Modified: Fri, 16 Jan 2026 23:29:43 GMT  
-		Size: 333.0 B  
+	-	`sha256:efbe8d818debcb9b265f173441d9a19a63961d16d7ae7e603e90bd6daa6c32de`  
+		Last Modified: Wed, 21 Jan 2026 22:50:31 GMT  
+		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83bab8f9c85f0acaafe3a2c077e0a56304cc3c808111823e37060c9476d681a5`  
-		Last Modified: Fri, 16 Jan 2026 23:29:45 GMT  
-		Size: 49.9 MB (49918398 bytes)  
+	-	`sha256:4b0022a26d15646a41c4e47b252c30307fc3e2af5fa2f52357962f0990665bf5`  
+		Last Modified: Wed, 21 Jan 2026 22:50:36 GMT  
+		Size: 49.9 MB (49921847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:655eb0dfc8feb1a31ee56b7840e34625bf54dd259a346b81a10fbfd99b39a121`  
-		Last Modified: Fri, 16 Jan 2026 23:29:43 GMT  
+	-	`sha256:3350cb04be9532162d58d210bfb0313afc243ec841ccc8381890cbb9ede0191a`  
+		Last Modified: Wed, 21 Jan 2026 22:50:18 GMT  
 		Size: 317.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9ae3e76dfc984a8dd17ef9c33be1fdd3d6b3794e3e24a39fa3f154b03de8623`  
-		Last Modified: Fri, 16 Jan 2026 23:30:06 GMT  
-		Size: 127.9 MB (127895065 bytes)  
+	-	`sha256:ce92f93410f22da9c8d227162646f54954f723267305f5377acfdc577aec35c5`  
+		Last Modified: Wed, 21 Jan 2026 23:41:52 GMT  
+		Size: 128.1 MB (128105197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc3a161f487a9a091587a3b55cf9351985e4936287c6576caa5aa4e4b1094c5f`  
-		Last Modified: Fri, 16 Jan 2026 23:29:45 GMT  
-		Size: 5.3 KB (5330 bytes)  
+	-	`sha256:0c271a9ab70e32b62237ce4e7eff3f8f39301ebb3b357ba80fc1fc37721793f8`  
+		Last Modified: Wed, 21 Jan 2026 22:50:19 GMT  
+		Size: 5.3 KB (5332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afd8a12fa4e1d7896486f7fd81d83a1faaf36fc6e782051f4f0d985de43b52da`  
-		Last Modified: Fri, 16 Jan 2026 23:29:45 GMT  
+	-	`sha256:0777a18c49adaade43e72b4e9860d6000b26c2da5685e1ebf6695d78181abad3`  
+		Last Modified: Wed, 21 Jan 2026 22:50:19 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.0-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:f7bb58291296cdce090c1c9a25d162c6cc8362ad60c4951f4630196fc74e65e6
+$ docker pull mysql@sha256:5389b98483e1a82accf84083a8c9acc91fcb6239c9b4860b46ea4e4d6cfc0719
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.7 MB (14655345 bytes)**  
+-	Total Size: **15.0 MB (14992380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98f5c1fca5b48359062429abddf7d66c7818c1c65ff1c3193e99a7f59fe50093`
+-	Image ID: `sha256:f155d71544aef0dffae17723f733f14582836df9c9565ac7d0e4160e3fe6e10e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b622c0882d0e13035a393c758180a1b09d5bb76758810d379a05d1f8e5c18040`  
-		Last Modified: Sat, 17 Jan 2026 01:02:38 GMT  
-		Size: 14.6 MB (14620437 bytes)  
+	-	`sha256:6d2feb98a44150c3128c6d6c6610550e5a5a523f36855810f8e68a28c8d4d8cd`  
+		Last Modified: Thu, 22 Jan 2026 01:02:35 GMT  
+		Size: 15.0 MB (14957469 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a2108fc02a60485aca46039e6e08ddee03d1a7af329926636c64360209143a55`  
-		Last Modified: Fri, 16 Jan 2026 23:29:42 GMT  
-		Size: 34.9 KB (34908 bytes)  
+	-	`sha256:be3a6aa3235d67ec781fca23b912d616039b9a4e7bbfe36b49eedfa19ef97fcf`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 34.9 KB (34911 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:8.0-oraclelinux9` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:2c4989e05aa3ceb8cb6eb8a1b1f38ffa361eac2fec96ec67705d1b21c6390527
+$ docker pull mysql@sha256:e9126de385158d58a48c16a51474d4ae393c72f8ac26c030565703a64d856f98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **227.7 MB (227690666 bytes)**  
+-	Total Size: **227.9 MB (227909911 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e501eca15118bb26fdb8fc5e0dfce27f687a2323c465e2e8cfe04a8221355ca`
+-	Image ID: `sha256:39c6d6610e15363dcdfc49ee2f3e714f8be762da94bf9643adab4db5801da96f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -1764,41 +1764,41 @@ $ docker pull mysql@sha256:2c4989e05aa3ceb8cb6eb8a1b1f38ffa361eac2fec96ec67705d1
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:58 GMT
+# Wed, 21 Jan 2026 22:52:07 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:30:25 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:30:26 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:30:26 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 ENV MYSQL_MAJOR=8.0
-# Fri, 16 Jan 2026 23:30:26 GMT
-ENV MYSQL_VERSION=8.0.44-1.el9
-# Fri, 16 Jan 2026 23:30:26 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:54:44 GMT
 RUN set -eu; 	{ 		echo '[mysql8.0-server-minimal]'; 		echo 'name=MySQL 8.0 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.0-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:55 GMT
+# Wed, 21 Jan 2026 22:55:15 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:55 GMT
+# Wed, 21 Jan 2026 22:55:16 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:55 GMT
-ENV MYSQL_SHELL_VERSION=8.0.44-1.el9
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:16 GMT
+ENV MYSQL_SHELL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:55:56 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:31:32 GMT
+# Wed, 21 Jan 2026 22:55:56 GMT
 CMD ["mysqld"]
 ```
 
@@ -1807,95 +1807,1148 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:954bf984e9bf2c04f9107f437047609df0f9eec9d2f03812dd16e535ab586e4f`  
-		Last Modified: Fri, 16 Jan 2026 23:32:01 GMT  
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92a93133f047f0e202f0077f8e1c18d43d687442c00a6889ac10dd13bd80f0e4`  
-		Last Modified: Fri, 16 Jan 2026 23:32:01 GMT  
-		Size: 737.5 KB (737531 bytes)  
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9ee9fbe69ed5f03d349f55ff723b007e3d44ee871c5fd2ca6a2ebe6ba308d81`  
-		Last Modified: Fri, 16 Jan 2026 23:32:12 GMT  
-		Size: 5.8 MB (5798012 bytes)  
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c13baec4f8bc9cf19cb82937ea5750fc276ad2cd4ba1401964e67070d05b146`  
-		Last Modified: Fri, 16 Jan 2026 23:32:12 GMT  
-		Size: 2.6 KB (2604 bytes)  
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eba93a33f57e70fbdf269e705f9a2f790269b60bd9a8facf607cae7735e2ace9`  
-		Last Modified: Fri, 16 Jan 2026 23:32:02 GMT  
-		Size: 333.0 B  
+	-	`sha256:eb847422b0082b0709be7d2d5f4a5726b9b5c4a2a40847524469dcce22244402`  
+		Last Modified: Thu, 22 Jan 2026 00:44:36 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:448975551cb36a03abcbffe5d99dea81800700c9bf639c0bf65e3aca5d745db8`  
-		Last Modified: Fri, 16 Jan 2026 23:32:04 GMT  
-		Size: 48.8 MB (48779290 bytes)  
+	-	`sha256:76dc8209f6c14b4b2384fd5d28fa43fed6e73988ea0ec2bca9362aaad9d20765`  
+		Last Modified: Wed, 21 Jan 2026 22:56:29 GMT  
+		Size: 48.8 MB (48775523 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f88e097ce1d0c9336cb62877d4dabb0f54d935908ca37a7b3bf334f7f4b8c0f5`  
-		Last Modified: Fri, 16 Jan 2026 23:48:11 GMT  
-		Size: 316.0 B  
+	-	`sha256:431c37cb44b415fc33301688a2954b8a6313734bc1d0190d338ed29c167d03c3`  
+		Last Modified: Wed, 21 Jan 2026 23:40:10 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:768353cd89add26156537406cbb2b041e17b79ca187d6c0a6ea6198fe28f0c29`  
-		Last Modified: Fri, 16 Jan 2026 23:32:06 GMT  
-		Size: 126.5 MB (126464339 bytes)  
+	-	`sha256:c31b491cd47f71e14001baa563cefa9d45e1a3af0d014330e8111af0a8c9a0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:56:31 GMT  
+		Size: 126.7 MB (126687408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1cfd6b3b2078041085a5585a3c001c7fc3ea78b8aa5cc321bf4dfd8a9be0c2b`  
-		Last Modified: Fri, 16 Jan 2026 23:32:03 GMT  
+	-	`sha256:d17c384409bafa51a7ba022ad8d497c0914cf0effd28b7879b7493e5cda03467`  
+		Last Modified: Wed, 21 Jan 2026 22:56:36 GMT  
 		Size: 5.3 KB (5332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:145e7a1ce6315c068ec7baa6142a98a051bb37452614dfe41fd5d193666ef740`  
-		Last Modified: Fri, 16 Jan 2026 23:32:04 GMT  
+	-	`sha256:79204f6a864d70bfd67c12c4dc0ea30963cda8038e537c67efb6d2ece443b924`  
+		Last Modified: Wed, 21 Jan 2026 23:29:48 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.0-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:628109504e2562b29cebcfbff11c7f6d45cf6b00b2bf240822fc820984ea8149
+$ docker pull mysql@sha256:3a97109abdf144da908b21bdcea43594c5be723811a598348d1cbaae43787612
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.7 MB (14653944 bytes)**  
+-	Total Size: **15.0 MB (14990976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cb0b3388bef9486c455c8ff8168c57bf55e592511ae7f2064aa836df68bdc23`
+-	Image ID: `sha256:cde2b06a62a7ec21f1cb980f28ddc989205d821c316df8149852695043bbd9fe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1c77537a0f6d7d7c8b67e649f0352a0280c527807c058a4181e7310bab2bb0bb`  
-		Last Modified: Fri, 16 Jan 2026 23:32:02 GMT  
-		Size: 14.6 MB (14618785 bytes)  
+	-	`sha256:a6711f704c0dcc92e2db5bf258f5ff5e437513378478b4148e7b082459e9b2b7`  
+		Last Modified: Wed, 21 Jan 2026 22:56:27 GMT  
+		Size: 15.0 MB (14955817 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e74b47efa6e5340638a16240548a03cdd641b0e9de0e0128098654614e107e2`  
-		Last Modified: Sat, 17 Jan 2026 01:02:51 GMT  
+	-	`sha256:e69647a8f6141bacab36de64a49c30f6b61a01c5a0c7ddf51539c67e812448bc`  
+		Last Modified: Wed, 21 Jan 2026 22:56:26 GMT  
 		Size: 35.2 KB (35159 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.0.45`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:0546f878adee48eef82ccf936fc8ff932bdaa180ee614a8043ca917533654bc1
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `mysql:8.0.45` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:460961fe4544452cdfa070f0c02f539caac45e8c0ef85bec8efe9e0ce5b4f112
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **232.3 MB (232309884 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f6151196d86929e6cc12db76c163bfd2c8c3a46093e54aae35e33faa552f8600`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:08:06 GMT
+ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:08:06 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:48:13 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:48:15 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:48:15 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:48:40 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:48:41 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:48:41 GMT
+ENV MYSQL_MAJOR=8.0
+# Wed, 21 Jan 2026 22:48:41 GMT
+ENV MYSQL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:48:41 GMT
+RUN set -eu; 	{ 		echo '[mysql8.0-server-minimal]'; 		echo 'name=MySQL 8.0 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.0-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:49:09 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:49:09 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:49:09 GMT
+ENV MYSQL_SHELL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:49:46 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:49:46 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:49:46 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:49:46 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
+# Wed, 21 Jan 2026 22:49:46 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:49:46 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:49:46 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
+		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Size: 47.3 MB (47314538 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:409234a5cefe2fb15fe401164c9ac5b83ce95bd4b09cee6e48963127d1908310`  
+		Last Modified: Wed, 21 Jan 2026 22:50:30 GMT  
+		Size: 888.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:af7d66b5fe48e32a6037c3570d159cda17fa1afbe03ce237c983d21f663d4578`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 783.6 KB (783552 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:354993a02b40b2d67657ee1a468da0103d1bc049da7aeecd60470fb9dc92af8b`  
+		Last Modified: Wed, 21 Jan 2026 22:50:17 GMT  
+		Size: 6.2 MB (6175151 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:73a530771500dc6fe7e1aad497d69e3213de7d03e43abf5dddc04a29abcfa246`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 2.6 KB (2606 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:efbe8d818debcb9b265f173441d9a19a63961d16d7ae7e603e90bd6daa6c32de`  
+		Last Modified: Wed, 21 Jan 2026 22:50:31 GMT  
+		Size: 334.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4b0022a26d15646a41c4e47b252c30307fc3e2af5fa2f52357962f0990665bf5`  
+		Last Modified: Wed, 21 Jan 2026 22:50:36 GMT  
+		Size: 49.9 MB (49921847 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3350cb04be9532162d58d210bfb0313afc243ec841ccc8381890cbb9ede0191a`  
+		Last Modified: Wed, 21 Jan 2026 22:50:18 GMT  
+		Size: 317.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ce92f93410f22da9c8d227162646f54954f723267305f5377acfdc577aec35c5`  
+		Last Modified: Wed, 21 Jan 2026 23:41:52 GMT  
+		Size: 128.1 MB (128105197 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0c271a9ab70e32b62237ce4e7eff3f8f39301ebb3b357ba80fc1fc37721793f8`  
+		Last Modified: Wed, 21 Jan 2026 22:50:19 GMT  
+		Size: 5.3 KB (5332 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0777a18c49adaade43e72b4e9860d6000b26c2da5685e1ebf6695d78181abad3`  
+		Last Modified: Wed, 21 Jan 2026 22:50:19 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.0.45` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:5389b98483e1a82accf84083a8c9acc91fcb6239c9b4860b46ea4e4d6cfc0719
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **15.0 MB (14992380 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f155d71544aef0dffae17723f733f14582836df9c9565ac7d0e4160e3fe6e10e`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:6d2feb98a44150c3128c6d6c6610550e5a5a523f36855810f8e68a28c8d4d8cd`  
+		Last Modified: Thu, 22 Jan 2026 01:02:35 GMT  
+		Size: 15.0 MB (14957469 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:be3a6aa3235d67ec781fca23b912d616039b9a4e7bbfe36b49eedfa19ef97fcf`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 34.9 KB (34911 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `mysql:8.0.45` - linux; arm64 variant v8
+
+```console
+$ docker pull mysql@sha256:e9126de385158d58a48c16a51474d4ae393c72f8ac26c030565703a64d856f98
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **227.9 MB (227909911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:39c6d6610e15363dcdfc49ee2f3e714f8be762da94bf9643adab4db5801da96f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:07:56 GMT
+ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:07:56 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:52:07 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:52:09 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:52:09 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_MAJOR=8.0
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:54:44 GMT
+RUN set -eu; 	{ 		echo '[mysql8.0-server-minimal]'; 		echo 'name=MySQL 8.0 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.0-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:55:15 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:55:16 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:55:16 GMT
+ENV MYSQL_SHELL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:55:56 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:55:56 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:55:56 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:55:56 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
+# Wed, 21 Jan 2026 22:55:56 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:55:56 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:55:56 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
+		Size: 45.9 MB (45901903 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eb847422b0082b0709be7d2d5f4a5726b9b5c4a2a40847524469dcce22244402`  
+		Last Modified: Thu, 22 Jan 2026 00:44:36 GMT  
+		Size: 335.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:76dc8209f6c14b4b2384fd5d28fa43fed6e73988ea0ec2bca9362aaad9d20765`  
+		Last Modified: Wed, 21 Jan 2026 22:56:29 GMT  
+		Size: 48.8 MB (48775523 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:431c37cb44b415fc33301688a2954b8a6313734bc1d0190d338ed29c167d03c3`  
+		Last Modified: Wed, 21 Jan 2026 23:40:10 GMT  
+		Size: 317.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c31b491cd47f71e14001baa563cefa9d45e1a3af0d014330e8111af0a8c9a0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:56:31 GMT  
+		Size: 126.7 MB (126687408 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d17c384409bafa51a7ba022ad8d497c0914cf0effd28b7879b7493e5cda03467`  
+		Last Modified: Wed, 21 Jan 2026 22:56:36 GMT  
+		Size: 5.3 KB (5332 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79204f6a864d70bfd67c12c4dc0ea30963cda8038e537c67efb6d2ece443b924`  
+		Last Modified: Wed, 21 Jan 2026 23:29:48 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.0.45` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:3a97109abdf144da908b21bdcea43594c5be723811a598348d1cbaae43787612
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **15.0 MB (14990976 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cde2b06a62a7ec21f1cb980f28ddc989205d821c316df8149852695043bbd9fe`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:a6711f704c0dcc92e2db5bf258f5ff5e437513378478b4148e7b082459e9b2b7`  
+		Last Modified: Wed, 21 Jan 2026 22:56:27 GMT  
+		Size: 15.0 MB (14955817 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:e69647a8f6141bacab36de64a49c30f6b61a01c5a0c7ddf51539c67e812448bc`  
+		Last Modified: Wed, 21 Jan 2026 22:56:26 GMT  
+		Size: 35.2 KB (35159 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.0.45-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:5284868db9fd4c480d37e8394fb37316ba29b1bdbec31185676faaf42cd82612
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	unknown; unknown
+
+### `mysql:8.0.45-bookworm` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:dee7500826371f0383c6673ab1fc4cece140d7f8fb365550597548549b253dcd
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **183.5 MB (183455449 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:bb471428bdc168577f9e02a48169eda26499d392561b1978b431aa483d45e642`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Mon, 12 Jan 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1768176000'
+# Wed, 21 Jan 2026 22:49:11 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql # buildkit
+# Wed, 21 Jan 2026 22:49:14 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends gnupg && rm -rf /var/lib/apt/lists/* # buildkit
+# Wed, 21 Jan 2026 22:49:21 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:49:21 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:49:21 GMT
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Wed, 21 Jan 2026 22:49:24 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		openssl 		perl 		xz-utils 		zstd 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Wed, 21 Jan 2026 22:49:25 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$key" > /etc/apt/keyrings/mysql.gpg; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:49:25 GMT
+ENV MYSQL_MAJOR=8.0
+# Wed, 21 Jan 2026 22:49:25 GMT
+ENV MYSQL_VERSION=8.0.45-1debian12
+# Wed, 21 Jan 2026 22:49:25 GMT
+RUN echo 'deb [ signed-by=/etc/apt/keyrings/mysql.gpg ] http://repo.mysql.com/apt/debian/ bookworm mysql-8.0' > /etc/apt/sources.list.d/mysql.list # buildkit
+# Wed, 21 Jan 2026 22:49:36 GMT
+RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mysql-community-client="${MYSQL_VERSION}" 		mysql-community-server-core="${MYSQL_VERSION}" 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 1777 /var/run/mysqld /var/lib/mysql # buildkit
+# Wed, 21 Jan 2026 22:49:36 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:49:36 GMT
+COPY config/ /etc/mysql/ # buildkit
+# Wed, 21 Jan 2026 22:49:36 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:49:36 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
+# Wed, 21 Jan 2026 22:49:36 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:49:36 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:49:36 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:c02d17997ce3d2c82e082235ea0b5152d06ee659c4e2fabcf1e0079312f1bcde`  
+		Last Modified: Tue, 13 Jan 2026 00:41:50 GMT  
+		Size: 28.2 MB (28228572 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bfa36b2e2c985c829bdf403d8168eeae8890c3217a30563a2b5b3aa68e1efdba`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
+		Size: 1.1 KB (1105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:65d1348177f9534b0b93188d0bd2781bf8088988b503664ef3329e9462ec5e6d`  
+		Last Modified: Thu, 22 Jan 2026 01:02:45 GMT  
+		Size: 4.4 MB (4423336 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:106cdb304c5842e0232ae8ce1fcf6877cff36e384ba2d8ecc68dd0b670d04f34`  
+		Last Modified: Wed, 21 Jan 2026 22:50:22 GMT  
+		Size: 1.2 MB (1248714 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5f855ce4e64c494fdd0390394941885efc48adffab2266c04a67f71c80b55fce`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7bb9b517325f53660036f1de6ca0e9494dbc84aafe02d886a34f2bd505a0d80c`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 15.3 MB (15295819 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d94beb5f31bf6179d42df34e5693e2f2e1e7b3efe8ab3be7410347bd25082c2c`  
+		Last Modified: Thu, 22 Jan 2026 01:00:33 GMT  
+		Size: 3.0 KB (3049 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9ab60d99d7fa5f30783088438eb8f263f39c3c315a7da872044328dd07ca2a26`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 256.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8c09fbe4bbb7dde90633da807e1f347b7caf14883cab671790a4369c31ded78f`  
+		Last Modified: Wed, 21 Jan 2026 22:50:01 GMT  
+		Size: 134.2 MB (134248192 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a5ed9baa1e80f6b50800638f3cdc195044965a20d046ae3565fdfb32a2f8eb6b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:59 GMT  
+		Size: 843.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8c36bcd4939de82e2db98188dc2dd518dbda890712040edb19e8befbbe028557`  
+		Last Modified: Thu, 22 Jan 2026 01:02:47 GMT  
+		Size: 5.3 KB (5328 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:29984f882141106a3f505fd1ee0d8afaf76a58bf3e0e8f6d953f5bee612777fa`  
+		Last Modified: Thu, 22 Jan 2026 01:02:48 GMT  
+		Size: 119.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.0.45-bookworm` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:a7eddc6833b1dad7a3743fa776da9e6c8604dd9b860673e99b88d15d65e4693a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.2 MB (4197758 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c526e7816588d61af24be57343f0050e43cdbbad362b3b6ba103554894ebe19b`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:cade0013c36201ab6c42ec4b5f213e754609b2f3fe9fc19478d78770c9747810`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
+		Size: 4.2 MB (4163505 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:0b99cd63676959f0fe9ca9cd457e9c74b4e5e604d39c4d8bca1ba174822cf3c7`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
+		Size: 34.3 KB (34253 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.0.45-debian`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:5284868db9fd4c480d37e8394fb37316ba29b1bdbec31185676faaf42cd82612
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	unknown; unknown
+
+### `mysql:8.0.45-debian` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:dee7500826371f0383c6673ab1fc4cece140d7f8fb365550597548549b253dcd
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **183.5 MB (183455449 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:bb471428bdc168577f9e02a48169eda26499d392561b1978b431aa483d45e642`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Mon, 12 Jan 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1768176000'
+# Wed, 21 Jan 2026 22:49:11 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql # buildkit
+# Wed, 21 Jan 2026 22:49:14 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends gnupg && rm -rf /var/lib/apt/lists/* # buildkit
+# Wed, 21 Jan 2026 22:49:21 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:49:21 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:49:21 GMT
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Wed, 21 Jan 2026 22:49:24 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		openssl 		perl 		xz-utils 		zstd 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Wed, 21 Jan 2026 22:49:25 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$key" > /etc/apt/keyrings/mysql.gpg; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:49:25 GMT
+ENV MYSQL_MAJOR=8.0
+# Wed, 21 Jan 2026 22:49:25 GMT
+ENV MYSQL_VERSION=8.0.45-1debian12
+# Wed, 21 Jan 2026 22:49:25 GMT
+RUN echo 'deb [ signed-by=/etc/apt/keyrings/mysql.gpg ] http://repo.mysql.com/apt/debian/ bookworm mysql-8.0' > /etc/apt/sources.list.d/mysql.list # buildkit
+# Wed, 21 Jan 2026 22:49:36 GMT
+RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mysql-community-client="${MYSQL_VERSION}" 		mysql-community-server-core="${MYSQL_VERSION}" 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 1777 /var/run/mysqld /var/lib/mysql # buildkit
+# Wed, 21 Jan 2026 22:49:36 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:49:36 GMT
+COPY config/ /etc/mysql/ # buildkit
+# Wed, 21 Jan 2026 22:49:36 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:49:36 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
+# Wed, 21 Jan 2026 22:49:36 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:49:36 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:49:36 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:c02d17997ce3d2c82e082235ea0b5152d06ee659c4e2fabcf1e0079312f1bcde`  
+		Last Modified: Tue, 13 Jan 2026 00:41:50 GMT  
+		Size: 28.2 MB (28228572 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bfa36b2e2c985c829bdf403d8168eeae8890c3217a30563a2b5b3aa68e1efdba`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
+		Size: 1.1 KB (1105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:65d1348177f9534b0b93188d0bd2781bf8088988b503664ef3329e9462ec5e6d`  
+		Last Modified: Thu, 22 Jan 2026 01:02:45 GMT  
+		Size: 4.4 MB (4423336 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:106cdb304c5842e0232ae8ce1fcf6877cff36e384ba2d8ecc68dd0b670d04f34`  
+		Last Modified: Wed, 21 Jan 2026 22:50:22 GMT  
+		Size: 1.2 MB (1248714 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5f855ce4e64c494fdd0390394941885efc48adffab2266c04a67f71c80b55fce`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7bb9b517325f53660036f1de6ca0e9494dbc84aafe02d886a34f2bd505a0d80c`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 15.3 MB (15295819 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d94beb5f31bf6179d42df34e5693e2f2e1e7b3efe8ab3be7410347bd25082c2c`  
+		Last Modified: Thu, 22 Jan 2026 01:00:33 GMT  
+		Size: 3.0 KB (3049 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9ab60d99d7fa5f30783088438eb8f263f39c3c315a7da872044328dd07ca2a26`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 256.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8c09fbe4bbb7dde90633da807e1f347b7caf14883cab671790a4369c31ded78f`  
+		Last Modified: Wed, 21 Jan 2026 22:50:01 GMT  
+		Size: 134.2 MB (134248192 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a5ed9baa1e80f6b50800638f3cdc195044965a20d046ae3565fdfb32a2f8eb6b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:59 GMT  
+		Size: 843.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8c36bcd4939de82e2db98188dc2dd518dbda890712040edb19e8befbbe028557`  
+		Last Modified: Thu, 22 Jan 2026 01:02:47 GMT  
+		Size: 5.3 KB (5328 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:29984f882141106a3f505fd1ee0d8afaf76a58bf3e0e8f6d953f5bee612777fa`  
+		Last Modified: Thu, 22 Jan 2026 01:02:48 GMT  
+		Size: 119.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.0.45-debian` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:a7eddc6833b1dad7a3743fa776da9e6c8604dd9b860673e99b88d15d65e4693a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.2 MB (4197758 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c526e7816588d61af24be57343f0050e43cdbbad362b3b6ba103554894ebe19b`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:cade0013c36201ab6c42ec4b5f213e754609b2f3fe9fc19478d78770c9747810`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
+		Size: 4.2 MB (4163505 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:0b99cd63676959f0fe9ca9cd457e9c74b4e5e604d39c4d8bca1ba174822cf3c7`  
+		Last Modified: Wed, 21 Jan 2026 22:49:57 GMT  
+		Size: 34.3 KB (34253 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.0.45-oracle`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:0546f878adee48eef82ccf936fc8ff932bdaa180ee614a8043ca917533654bc1
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `mysql:8.0.45-oracle` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:460961fe4544452cdfa070f0c02f539caac45e8c0ef85bec8efe9e0ce5b4f112
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **232.3 MB (232309884 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f6151196d86929e6cc12db76c163bfd2c8c3a46093e54aae35e33faa552f8600`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:08:06 GMT
+ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:08:06 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:48:13 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:48:15 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:48:15 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:48:40 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:48:41 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:48:41 GMT
+ENV MYSQL_MAJOR=8.0
+# Wed, 21 Jan 2026 22:48:41 GMT
+ENV MYSQL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:48:41 GMT
+RUN set -eu; 	{ 		echo '[mysql8.0-server-minimal]'; 		echo 'name=MySQL 8.0 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.0-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:49:09 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:49:09 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:49:09 GMT
+ENV MYSQL_SHELL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:49:46 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:49:46 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:49:46 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:49:46 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
+# Wed, 21 Jan 2026 22:49:46 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:49:46 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:49:46 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
+		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Size: 47.3 MB (47314538 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:409234a5cefe2fb15fe401164c9ac5b83ce95bd4b09cee6e48963127d1908310`  
+		Last Modified: Wed, 21 Jan 2026 22:50:30 GMT  
+		Size: 888.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:af7d66b5fe48e32a6037c3570d159cda17fa1afbe03ce237c983d21f663d4578`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 783.6 KB (783552 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:354993a02b40b2d67657ee1a468da0103d1bc049da7aeecd60470fb9dc92af8b`  
+		Last Modified: Wed, 21 Jan 2026 22:50:17 GMT  
+		Size: 6.2 MB (6175151 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:73a530771500dc6fe7e1aad497d69e3213de7d03e43abf5dddc04a29abcfa246`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 2.6 KB (2606 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:efbe8d818debcb9b265f173441d9a19a63961d16d7ae7e603e90bd6daa6c32de`  
+		Last Modified: Wed, 21 Jan 2026 22:50:31 GMT  
+		Size: 334.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4b0022a26d15646a41c4e47b252c30307fc3e2af5fa2f52357962f0990665bf5`  
+		Last Modified: Wed, 21 Jan 2026 22:50:36 GMT  
+		Size: 49.9 MB (49921847 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3350cb04be9532162d58d210bfb0313afc243ec841ccc8381890cbb9ede0191a`  
+		Last Modified: Wed, 21 Jan 2026 22:50:18 GMT  
+		Size: 317.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ce92f93410f22da9c8d227162646f54954f723267305f5377acfdc577aec35c5`  
+		Last Modified: Wed, 21 Jan 2026 23:41:52 GMT  
+		Size: 128.1 MB (128105197 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0c271a9ab70e32b62237ce4e7eff3f8f39301ebb3b357ba80fc1fc37721793f8`  
+		Last Modified: Wed, 21 Jan 2026 22:50:19 GMT  
+		Size: 5.3 KB (5332 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0777a18c49adaade43e72b4e9860d6000b26c2da5685e1ebf6695d78181abad3`  
+		Last Modified: Wed, 21 Jan 2026 22:50:19 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.0.45-oracle` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:5389b98483e1a82accf84083a8c9acc91fcb6239c9b4860b46ea4e4d6cfc0719
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **15.0 MB (14992380 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f155d71544aef0dffae17723f733f14582836df9c9565ac7d0e4160e3fe6e10e`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:6d2feb98a44150c3128c6d6c6610550e5a5a523f36855810f8e68a28c8d4d8cd`  
+		Last Modified: Thu, 22 Jan 2026 01:02:35 GMT  
+		Size: 15.0 MB (14957469 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:be3a6aa3235d67ec781fca23b912d616039b9a4e7bbfe36b49eedfa19ef97fcf`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 34.9 KB (34911 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `mysql:8.0.45-oracle` - linux; arm64 variant v8
+
+```console
+$ docker pull mysql@sha256:e9126de385158d58a48c16a51474d4ae393c72f8ac26c030565703a64d856f98
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **227.9 MB (227909911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:39c6d6610e15363dcdfc49ee2f3e714f8be762da94bf9643adab4db5801da96f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:07:56 GMT
+ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:07:56 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:52:07 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:52:09 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:52:09 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_MAJOR=8.0
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:54:44 GMT
+RUN set -eu; 	{ 		echo '[mysql8.0-server-minimal]'; 		echo 'name=MySQL 8.0 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.0-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:55:15 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:55:16 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:55:16 GMT
+ENV MYSQL_SHELL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:55:56 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:55:56 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:55:56 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:55:56 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
+# Wed, 21 Jan 2026 22:55:56 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:55:56 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:55:56 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
+		Size: 45.9 MB (45901903 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eb847422b0082b0709be7d2d5f4a5726b9b5c4a2a40847524469dcce22244402`  
+		Last Modified: Thu, 22 Jan 2026 00:44:36 GMT  
+		Size: 335.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:76dc8209f6c14b4b2384fd5d28fa43fed6e73988ea0ec2bca9362aaad9d20765`  
+		Last Modified: Wed, 21 Jan 2026 22:56:29 GMT  
+		Size: 48.8 MB (48775523 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:431c37cb44b415fc33301688a2954b8a6313734bc1d0190d338ed29c167d03c3`  
+		Last Modified: Wed, 21 Jan 2026 23:40:10 GMT  
+		Size: 317.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c31b491cd47f71e14001baa563cefa9d45e1a3af0d014330e8111af0a8c9a0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:56:31 GMT  
+		Size: 126.7 MB (126687408 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d17c384409bafa51a7ba022ad8d497c0914cf0effd28b7879b7493e5cda03467`  
+		Last Modified: Wed, 21 Jan 2026 22:56:36 GMT  
+		Size: 5.3 KB (5332 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79204f6a864d70bfd67c12c4dc0ea30963cda8038e537c67efb6d2ece443b924`  
+		Last Modified: Wed, 21 Jan 2026 23:29:48 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.0.45-oracle` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:3a97109abdf144da908b21bdcea43594c5be723811a598348d1cbaae43787612
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **15.0 MB (14990976 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cde2b06a62a7ec21f1cb980f28ddc989205d821c316df8149852695043bbd9fe`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:a6711f704c0dcc92e2db5bf258f5ff5e437513378478b4148e7b082459e9b2b7`  
+		Last Modified: Wed, 21 Jan 2026 22:56:27 GMT  
+		Size: 15.0 MB (14955817 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:e69647a8f6141bacab36de64a49c30f6b61a01c5a0c7ddf51539c67e812448bc`  
+		Last Modified: Wed, 21 Jan 2026 22:56:26 GMT  
+		Size: 35.2 KB (35159 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.0.45-oraclelinux9`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:0546f878adee48eef82ccf936fc8ff932bdaa180ee614a8043ca917533654bc1
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `mysql:8.0.45-oraclelinux9` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:460961fe4544452cdfa070f0c02f539caac45e8c0ef85bec8efe9e0ce5b4f112
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **232.3 MB (232309884 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f6151196d86929e6cc12db76c163bfd2c8c3a46093e54aae35e33faa552f8600`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:08:06 GMT
+ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:08:06 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:48:13 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:48:15 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:48:15 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:48:40 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:48:41 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:48:41 GMT
+ENV MYSQL_MAJOR=8.0
+# Wed, 21 Jan 2026 22:48:41 GMT
+ENV MYSQL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:48:41 GMT
+RUN set -eu; 	{ 		echo '[mysql8.0-server-minimal]'; 		echo 'name=MySQL 8.0 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.0-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:49:09 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:49:09 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:49:09 GMT
+ENV MYSQL_SHELL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:49:46 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:49:46 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:49:46 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:49:46 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
+# Wed, 21 Jan 2026 22:49:46 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:49:46 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:49:46 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
+		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Size: 47.3 MB (47314538 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:409234a5cefe2fb15fe401164c9ac5b83ce95bd4b09cee6e48963127d1908310`  
+		Last Modified: Wed, 21 Jan 2026 22:50:30 GMT  
+		Size: 888.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:af7d66b5fe48e32a6037c3570d159cda17fa1afbe03ce237c983d21f663d4578`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 783.6 KB (783552 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:354993a02b40b2d67657ee1a468da0103d1bc049da7aeecd60470fb9dc92af8b`  
+		Last Modified: Wed, 21 Jan 2026 22:50:17 GMT  
+		Size: 6.2 MB (6175151 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:73a530771500dc6fe7e1aad497d69e3213de7d03e43abf5dddc04a29abcfa246`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 2.6 KB (2606 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:efbe8d818debcb9b265f173441d9a19a63961d16d7ae7e603e90bd6daa6c32de`  
+		Last Modified: Wed, 21 Jan 2026 22:50:31 GMT  
+		Size: 334.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4b0022a26d15646a41c4e47b252c30307fc3e2af5fa2f52357962f0990665bf5`  
+		Last Modified: Wed, 21 Jan 2026 22:50:36 GMT  
+		Size: 49.9 MB (49921847 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3350cb04be9532162d58d210bfb0313afc243ec841ccc8381890cbb9ede0191a`  
+		Last Modified: Wed, 21 Jan 2026 22:50:18 GMT  
+		Size: 317.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ce92f93410f22da9c8d227162646f54954f723267305f5377acfdc577aec35c5`  
+		Last Modified: Wed, 21 Jan 2026 23:41:52 GMT  
+		Size: 128.1 MB (128105197 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0c271a9ab70e32b62237ce4e7eff3f8f39301ebb3b357ba80fc1fc37721793f8`  
+		Last Modified: Wed, 21 Jan 2026 22:50:19 GMT  
+		Size: 5.3 KB (5332 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0777a18c49adaade43e72b4e9860d6000b26c2da5685e1ebf6695d78181abad3`  
+		Last Modified: Wed, 21 Jan 2026 22:50:19 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.0.45-oraclelinux9` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:5389b98483e1a82accf84083a8c9acc91fcb6239c9b4860b46ea4e4d6cfc0719
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **15.0 MB (14992380 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f155d71544aef0dffae17723f733f14582836df9c9565ac7d0e4160e3fe6e10e`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:6d2feb98a44150c3128c6d6c6610550e5a5a523f36855810f8e68a28c8d4d8cd`  
+		Last Modified: Thu, 22 Jan 2026 01:02:35 GMT  
+		Size: 15.0 MB (14957469 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:be3a6aa3235d67ec781fca23b912d616039b9a4e7bbfe36b49eedfa19ef97fcf`  
+		Last Modified: Wed, 21 Jan 2026 22:50:16 GMT  
+		Size: 34.9 KB (34911 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `mysql:8.0.45-oraclelinux9` - linux; arm64 variant v8
+
+```console
+$ docker pull mysql@sha256:e9126de385158d58a48c16a51474d4ae393c72f8ac26c030565703a64d856f98
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **227.9 MB (227909911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:39c6d6610e15363dcdfc49ee2f3e714f8be762da94bf9643adab4db5801da96f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:07:56 GMT
+ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:07:56 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:52:07 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:52:09 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:52:09 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_MAJOR=8.0
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:54:44 GMT
+RUN set -eu; 	{ 		echo '[mysql8.0-server-minimal]'; 		echo 'name=MySQL 8.0 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.0-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:55:15 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:55:16 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:55:16 GMT
+ENV MYSQL_SHELL_VERSION=8.0.45-1.el9
+# Wed, 21 Jan 2026 22:55:56 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:55:56 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:55:56 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:55:56 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
+# Wed, 21 Jan 2026 22:55:56 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:55:56 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:55:56 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
+		Size: 45.9 MB (45901903 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eb847422b0082b0709be7d2d5f4a5726b9b5c4a2a40847524469dcce22244402`  
+		Last Modified: Thu, 22 Jan 2026 00:44:36 GMT  
+		Size: 335.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:76dc8209f6c14b4b2384fd5d28fa43fed6e73988ea0ec2bca9362aaad9d20765`  
+		Last Modified: Wed, 21 Jan 2026 22:56:29 GMT  
+		Size: 48.8 MB (48775523 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:431c37cb44b415fc33301688a2954b8a6313734bc1d0190d338ed29c167d03c3`  
+		Last Modified: Wed, 21 Jan 2026 23:40:10 GMT  
+		Size: 317.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c31b491cd47f71e14001baa563cefa9d45e1a3af0d014330e8111af0a8c9a0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:56:31 GMT  
+		Size: 126.7 MB (126687408 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d17c384409bafa51a7ba022ad8d497c0914cf0effd28b7879b7493e5cda03467`  
+		Last Modified: Wed, 21 Jan 2026 22:56:36 GMT  
+		Size: 5.3 KB (5332 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79204f6a864d70bfd67c12c4dc0ea30963cda8038e537c67efb6d2ece443b924`  
+		Last Modified: Wed, 21 Jan 2026 23:29:48 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.0.45-oraclelinux9` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:3a97109abdf144da908b21bdcea43594c5be723811a598348d1cbaae43787612
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **15.0 MB (14990976 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cde2b06a62a7ec21f1cb980f28ddc989205d821c316df8149852695043bbd9fe`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:a6711f704c0dcc92e2db5bf258f5ff5e437513378478b4148e7b082459e9b2b7`  
+		Last Modified: Wed, 21 Jan 2026 22:56:27 GMT  
+		Size: 15.0 MB (14955817 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:e69647a8f6141bacab36de64a49c30f6b61a01c5a0c7ddf51539c67e812448bc`  
+		Last Modified: Wed, 21 Jan 2026 22:56:26 GMT  
+		Size: 35.2 KB (35159 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.4`
 
 ```console
-$ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207f3577901903
+$ docker pull mysql@sha256:cf6d1c8f2d31c73c878c6f5f60c2bec46701c41d5baf99100888bef5b6578b86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1908,13 +2961,13 @@ $ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207
 ### `mysql:8.4` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a294ea72ee331
+$ docker pull mysql@sha256:cee2bcd7cfece021d2e13229e660e2072ed50c9dd4635d2797c8954154ed1739
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233029943 bytes)**  
+-	Total Size: **233.2 MB (233230172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0de4015d5b1f0fa462e43b48c29f8f66eacdd16d11e07aedf3b13533adadd504`
+-	Image ID: `sha256:3890a37ddb73dd2c66d963f1b2c0fe051ccd580564526e85ea0073d08e926369`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -1923,39 +2976,39 @@ $ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a2
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:26:03 GMT
+# Wed, 21 Jan 2026 22:47:54 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:26:26 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:26:27 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:49:18 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:18 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 CMD ["mysqld"]
 ```
 
@@ -1964,77 +3017,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:023bf5ce6a4829c6b33eed0642d64a38f47927272c4921804abfda8bab0077ca`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 884.0 B  
+	-	`sha256:e7c9c940ed3326dbe75491b5c125f4e77409c20f1607b63e8d19a3c80b842f3e`  
+		Last Modified: Thu, 22 Jan 2026 01:02:18 GMT  
+		Size: 885.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24675d42775811c6a521aae8e2b0b47a989f8f35f2f254fdd43f7828c71d07bd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:dcefadb1e23c809499894384898688261866d60eba933b77725f25e26c3e97ac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 783.6 KB (783557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad32417d60c256a66828d3cfdc9ca9244576811a840000536e9a8d11c23e5d68`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 6.2 MB (6175148 bytes)  
+	-	`sha256:3751cab74b958e7f2a28d97747761761c9ca8dcb19db045bf8715e1c88b02a77`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 6.2 MB (6175161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25809bf57a8f169efb1bbd6588c1732f4f1836916ace0b507a4fef3dd158bfb4`  
-		Last Modified: Fri, 16 Jan 2026 23:28:04 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:3c365df7c813339968023fded5e9042d098bb834a37079c11cfe99c16056e452`  
+		Last Modified: Wed, 21 Jan 2026 23:47:14 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b13420727c1c0c0e213907e2e6267a5974c8c3dded97de2a95207f357668a52f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
+	-	`sha256:14d59e782af07065a94adad658374505a377347a587b0ea862c9caabfcd1215a`  
+		Last Modified: Wed, 21 Jan 2026 22:49:50 GMT  
 		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff6e8ae58e2456042811ffa3661febd52abc2c7761443b2213c52bf6a56e469d`  
-		Last Modified: Fri, 16 Jan 2026 23:28:07 GMT  
-		Size: 47.8 MB (47815365 bytes)  
+	-	`sha256:e06c9b222c64ef602389ece95bb72bac5893dd58b6edb5345235ecefa8616907`  
+		Last Modified: Wed, 21 Jan 2026 22:50:06 GMT  
+		Size: 47.8 MB (47811670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b034b0c553cfc069b162e27ecb7ee469e94daeab571d7f5cd3a83b1498eee6`  
-		Last Modified: Fri, 16 Jan 2026 23:28:00 GMT  
-		Size: 320.0 B  
+	-	`sha256:5ba7f8d3ecf830b612dd6ec5f2c8203c6a17f663a77102f0ffb793c1a1d589be`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ada6ad8c9d8c75d4beafab09f3234c75c361caa487b16fcc00ea8c5907ba435f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:55 GMT  
-		Size: 130.9 MB (130931861 bytes)  
+	-	`sha256:43c069718c101f0277bc8229dd2590bcb63d96f97ac9813addffd1b74d0d370f`  
+		Last Modified: Wed, 21 Jan 2026 22:49:53 GMT  
+		Size: 131.1 MB (131135770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fdbfdab06595d747aec81e55886fdb0156d0b08d001428224983ccaeea978cd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:53 GMT  
+	-	`sha256:c156dd23b850679b32b7f01f7d6fdc723966e165960e36800e3bd87e4740de17`  
+		Last Modified: Wed, 21 Jan 2026 22:49:51 GMT  
 		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.4` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:559414d5a80ae23d630ca19319c21f058973449c33226576fc7ce777c6cb4887
+$ docker pull mysql@sha256:be16c973ece26bb060d837d03f50d148f5ba91ac5626368218b8e3a845047488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14931466 bytes)**  
+-	Total Size: **15.3 MB (15268497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741bc7ae4fa3c416b37a5fe586eed0fe24ec1c96a10c3ccc34d9f86157d24ab3`
+-	Image ID: `sha256:b82df3286018a1d6cd6af61b31d53c2001d7503a9d7019268bee01205d261d23`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:029be1fc012084294f155b71ce8e88e6926982da803de7249b0fdab37f5291b7`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 14.9 MB (14897258 bytes)  
+	-	`sha256:3339e5486c0c4cc6a3b8d51d1b3345afe45209ee3e2c44b15834ea10ba988fde`  
+		Last Modified: Thu, 22 Jan 2026 01:02:23 GMT  
+		Size: 15.2 MB (15234290 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa111391adf2a8236c93d7b80ad95600395c646f74bed884c95f212dfe1d5eab`  
-		Last Modified: Sat, 17 Jan 2026 01:02:26 GMT  
-		Size: 34.2 KB (34208 bytes)  
+	-	`sha256:9377b2f281254f96efd66320022665c8cd5568ad522938d3fe3898e62ae20660`  
+		Last Modified: Thu, 22 Jan 2026 01:02:24 GMT  
+		Size: 34.2 KB (34207 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:8.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29253abb57e65
+$ docker pull mysql@sha256:509287abcaa38a3d334cf61bd787d0d523504c684990042f62fa4bfbadd1cb5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.5 MB (228462563 bytes)**  
+-	Total Size: **228.7 MB (228698723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5da2a12c183ff681379744e7047ff53800e8dfe4b7217b525b4c92ed1728e21a`
+-	Image ID: `sha256:e1fc1f3b0c1ad069b3e2a75bbd8036e5104f668132ef18ef6d542d86b85e2b06`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -2043,39 +3096,39 @@ $ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:32 GMT
+# Wed, 21 Jan 2026 22:52:53 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:53:20 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:54:27 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 CMD ["mysqld"]
 ```
 
@@ -2084,71 +3137,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de3a139db383dcfd82710bfab9154fec7b22c1598706cabfb21480997ab9f09f`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
-		Size: 885.0 B  
+	-	`sha256:3da72dcb236c1597383af262a9f45c86ca2b4b75d909507a3ac5b0eb6d7bd801`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ff917e53173311673a78eef92f68b58006c7d241f55c90c063ff5d35f9b5f80`  
-		Last Modified: Fri, 16 Jan 2026 23:31:36 GMT  
-		Size: 737.5 KB (737528 bytes)  
+	-	`sha256:4c9d33c81d6768ce0368969dfaf925fbf6624bdf9202a7fe6d15e54b846c0e13`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 737.5 KB (737526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7057a5a35be927e2eee436ccbee6ade905cf2905e0ded231f1eee51dd537d28`  
-		Last Modified: Fri, 16 Jan 2026 23:31:48 GMT  
-		Size: 5.8 MB (5798058 bytes)  
+	-	`sha256:7699a954d9de859b4b92ab5459f58e582e3085a82e29fa85c372c885cbd75f06`  
+		Last Modified: Wed, 21 Jan 2026 22:55:12 GMT  
+		Size: 5.8 MB (5798064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3a3050ea2531d36b577b983be8afb48eee1fe18fe044013308e8cd5bb8d835a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:54 GMT  
+	-	`sha256:8ccbceaa8cf24fa2833a2afe398ccde1f6ff2bbee670abd536c014c84fdcf94d`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
 		Size: 2.6 KB (2607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37938fa9ff7d875ad4ea6b70f7fe1f112527c6ea161c7ab4b6a17b417591da1`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
-		Size: 332.0 B  
+	-	`sha256:94f6521db4dbfdbb841dcd5d6d34f10bf9c3741fa4a8d009fbbd9703846ab0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:54:59 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f655cab6299cf71d7e9c2b44899bf9bd147d252fd3a35fddd6d22b99ddbf324a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:52 GMT  
-		Size: 46.7 MB (46691693 bytes)  
+	-	`sha256:cc1b36f2667d57cda43bb84edc3e089860e2f0d619fe5cc7a4ca134f30df64ee`  
+		Last Modified: Wed, 21 Jan 2026 22:55:00 GMT  
+		Size: 46.7 MB (46699165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fec303eb563de541b75b7ea0dfda5ea894d8827ad63d4e61a2b23b2f7db927d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
+	-	`sha256:f2c61b1843fc9549819d2149bd4ff4fc0c9ec59f7a7f62116469dfe294bbfae2`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 321.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18b56d2ace31229a18ebed0f0205fab2b619aa2666b2af3e52520b805cb0ae6d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:40 GMT  
-		Size: 129.3 MB (129323901 bytes)  
+	-	`sha256:a6d81e4d2c7b063ca6af6c142014724fd25f4b78bd37fbbbccf582016aa124db`  
+		Last Modified: Wed, 21 Jan 2026 22:55:03 GMT  
+		Size: 129.6 MB (129552583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151e2f48537d7e373cc742a1feef8240ad319f811917e7c8ffe31da18ba8d82`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
+	-	`sha256:c2eea1ca45c6c742395a1c8b5d7327e0a8ffb8246a250cd5211862ed87b5662c`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.4` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:0becb120ac404c9cb5053d5f7ab407549476090ac87b8ca2614f187d759c2d11
+$ docker pull mysql@sha256:7fdb2d55797d9e264ef6ff6971dce8f068ad60acf77c245b9e2d7bf79c5d2e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14930191 bytes)**  
+-	Total Size: **15.3 MB (15267223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56cc389471f6a58f4b1f57e8ec9a1ac08ec71b85b32282bb94c1bdef8f918e0f`
+-	Image ID: `sha256:c8ab615fb5da4e8f4d9be289b02378388973342472e21c5a103210f09f2a0e75`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf05006e49674ec49c6960a63fd16768a1ba783574e4feabbf5cf66257c923e9`  
-		Last Modified: Sat, 17 Jan 2026 01:02:37 GMT  
-		Size: 14.9 MB (14895678 bytes)  
+	-	`sha256:7cb8424279707d32f1f981f563752532ae08ba2091882802e59162d842af3f95`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 15.2 MB (15232710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:21660c0a2842109c3be55e8454bacac54817f6f768500373c4cef54317156538`  
-		Last Modified: Sat, 17 Jan 2026 01:02:38 GMT  
+	-	`sha256:3794e62c5aa6c87d503274951dc859252ccf0086cad9ebf25ffaf00b2d9fe472`  
+		Last Modified: Thu, 22 Jan 2026 01:02:36 GMT  
 		Size: 34.5 KB (34513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.4-oracle`
 
 ```console
-$ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207f3577901903
+$ docker pull mysql@sha256:cf6d1c8f2d31c73c878c6f5f60c2bec46701c41d5baf99100888bef5b6578b86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2161,13 +3214,13 @@ $ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207
 ### `mysql:8.4-oracle` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a294ea72ee331
+$ docker pull mysql@sha256:cee2bcd7cfece021d2e13229e660e2072ed50c9dd4635d2797c8954154ed1739
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233029943 bytes)**  
+-	Total Size: **233.2 MB (233230172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0de4015d5b1f0fa462e43b48c29f8f66eacdd16d11e07aedf3b13533adadd504`
+-	Image ID: `sha256:3890a37ddb73dd2c66d963f1b2c0fe051ccd580564526e85ea0073d08e926369`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -2176,39 +3229,39 @@ $ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a2
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:26:03 GMT
+# Wed, 21 Jan 2026 22:47:54 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:26:26 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:26:27 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:49:18 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:18 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 CMD ["mysqld"]
 ```
 
@@ -2217,77 +3270,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:023bf5ce6a4829c6b33eed0642d64a38f47927272c4921804abfda8bab0077ca`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 884.0 B  
+	-	`sha256:e7c9c940ed3326dbe75491b5c125f4e77409c20f1607b63e8d19a3c80b842f3e`  
+		Last Modified: Thu, 22 Jan 2026 01:02:18 GMT  
+		Size: 885.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24675d42775811c6a521aae8e2b0b47a989f8f35f2f254fdd43f7828c71d07bd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:dcefadb1e23c809499894384898688261866d60eba933b77725f25e26c3e97ac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 783.6 KB (783557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad32417d60c256a66828d3cfdc9ca9244576811a840000536e9a8d11c23e5d68`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 6.2 MB (6175148 bytes)  
+	-	`sha256:3751cab74b958e7f2a28d97747761761c9ca8dcb19db045bf8715e1c88b02a77`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 6.2 MB (6175161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25809bf57a8f169efb1bbd6588c1732f4f1836916ace0b507a4fef3dd158bfb4`  
-		Last Modified: Fri, 16 Jan 2026 23:28:04 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:3c365df7c813339968023fded5e9042d098bb834a37079c11cfe99c16056e452`  
+		Last Modified: Wed, 21 Jan 2026 23:47:14 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b13420727c1c0c0e213907e2e6267a5974c8c3dded97de2a95207f357668a52f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
+	-	`sha256:14d59e782af07065a94adad658374505a377347a587b0ea862c9caabfcd1215a`  
+		Last Modified: Wed, 21 Jan 2026 22:49:50 GMT  
 		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff6e8ae58e2456042811ffa3661febd52abc2c7761443b2213c52bf6a56e469d`  
-		Last Modified: Fri, 16 Jan 2026 23:28:07 GMT  
-		Size: 47.8 MB (47815365 bytes)  
+	-	`sha256:e06c9b222c64ef602389ece95bb72bac5893dd58b6edb5345235ecefa8616907`  
+		Last Modified: Wed, 21 Jan 2026 22:50:06 GMT  
+		Size: 47.8 MB (47811670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b034b0c553cfc069b162e27ecb7ee469e94daeab571d7f5cd3a83b1498eee6`  
-		Last Modified: Fri, 16 Jan 2026 23:28:00 GMT  
-		Size: 320.0 B  
+	-	`sha256:5ba7f8d3ecf830b612dd6ec5f2c8203c6a17f663a77102f0ffb793c1a1d589be`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ada6ad8c9d8c75d4beafab09f3234c75c361caa487b16fcc00ea8c5907ba435f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:55 GMT  
-		Size: 130.9 MB (130931861 bytes)  
+	-	`sha256:43c069718c101f0277bc8229dd2590bcb63d96f97ac9813addffd1b74d0d370f`  
+		Last Modified: Wed, 21 Jan 2026 22:49:53 GMT  
+		Size: 131.1 MB (131135770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fdbfdab06595d747aec81e55886fdb0156d0b08d001428224983ccaeea978cd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:53 GMT  
+	-	`sha256:c156dd23b850679b32b7f01f7d6fdc723966e165960e36800e3bd87e4740de17`  
+		Last Modified: Wed, 21 Jan 2026 22:49:51 GMT  
 		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.4-oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:559414d5a80ae23d630ca19319c21f058973449c33226576fc7ce777c6cb4887
+$ docker pull mysql@sha256:be16c973ece26bb060d837d03f50d148f5ba91ac5626368218b8e3a845047488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14931466 bytes)**  
+-	Total Size: **15.3 MB (15268497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741bc7ae4fa3c416b37a5fe586eed0fe24ec1c96a10c3ccc34d9f86157d24ab3`
+-	Image ID: `sha256:b82df3286018a1d6cd6af61b31d53c2001d7503a9d7019268bee01205d261d23`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:029be1fc012084294f155b71ce8e88e6926982da803de7249b0fdab37f5291b7`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 14.9 MB (14897258 bytes)  
+	-	`sha256:3339e5486c0c4cc6a3b8d51d1b3345afe45209ee3e2c44b15834ea10ba988fde`  
+		Last Modified: Thu, 22 Jan 2026 01:02:23 GMT  
+		Size: 15.2 MB (15234290 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa111391adf2a8236c93d7b80ad95600395c646f74bed884c95f212dfe1d5eab`  
-		Last Modified: Sat, 17 Jan 2026 01:02:26 GMT  
-		Size: 34.2 KB (34208 bytes)  
+	-	`sha256:9377b2f281254f96efd66320022665c8cd5568ad522938d3fe3898e62ae20660`  
+		Last Modified: Thu, 22 Jan 2026 01:02:24 GMT  
+		Size: 34.2 KB (34207 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:8.4-oracle` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29253abb57e65
+$ docker pull mysql@sha256:509287abcaa38a3d334cf61bd787d0d523504c684990042f62fa4bfbadd1cb5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.5 MB (228462563 bytes)**  
+-	Total Size: **228.7 MB (228698723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5da2a12c183ff681379744e7047ff53800e8dfe4b7217b525b4c92ed1728e21a`
+-	Image ID: `sha256:e1fc1f3b0c1ad069b3e2a75bbd8036e5104f668132ef18ef6d542d86b85e2b06`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -2296,39 +3349,39 @@ $ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:32 GMT
+# Wed, 21 Jan 2026 22:52:53 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:53:20 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:54:27 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 CMD ["mysqld"]
 ```
 
@@ -2337,71 +3390,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de3a139db383dcfd82710bfab9154fec7b22c1598706cabfb21480997ab9f09f`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
-		Size: 885.0 B  
+	-	`sha256:3da72dcb236c1597383af262a9f45c86ca2b4b75d909507a3ac5b0eb6d7bd801`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ff917e53173311673a78eef92f68b58006c7d241f55c90c063ff5d35f9b5f80`  
-		Last Modified: Fri, 16 Jan 2026 23:31:36 GMT  
-		Size: 737.5 KB (737528 bytes)  
+	-	`sha256:4c9d33c81d6768ce0368969dfaf925fbf6624bdf9202a7fe6d15e54b846c0e13`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 737.5 KB (737526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7057a5a35be927e2eee436ccbee6ade905cf2905e0ded231f1eee51dd537d28`  
-		Last Modified: Fri, 16 Jan 2026 23:31:48 GMT  
-		Size: 5.8 MB (5798058 bytes)  
+	-	`sha256:7699a954d9de859b4b92ab5459f58e582e3085a82e29fa85c372c885cbd75f06`  
+		Last Modified: Wed, 21 Jan 2026 22:55:12 GMT  
+		Size: 5.8 MB (5798064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3a3050ea2531d36b577b983be8afb48eee1fe18fe044013308e8cd5bb8d835a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:54 GMT  
+	-	`sha256:8ccbceaa8cf24fa2833a2afe398ccde1f6ff2bbee670abd536c014c84fdcf94d`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
 		Size: 2.6 KB (2607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37938fa9ff7d875ad4ea6b70f7fe1f112527c6ea161c7ab4b6a17b417591da1`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
-		Size: 332.0 B  
+	-	`sha256:94f6521db4dbfdbb841dcd5d6d34f10bf9c3741fa4a8d009fbbd9703846ab0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:54:59 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f655cab6299cf71d7e9c2b44899bf9bd147d252fd3a35fddd6d22b99ddbf324a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:52 GMT  
-		Size: 46.7 MB (46691693 bytes)  
+	-	`sha256:cc1b36f2667d57cda43bb84edc3e089860e2f0d619fe5cc7a4ca134f30df64ee`  
+		Last Modified: Wed, 21 Jan 2026 22:55:00 GMT  
+		Size: 46.7 MB (46699165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fec303eb563de541b75b7ea0dfda5ea894d8827ad63d4e61a2b23b2f7db927d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
+	-	`sha256:f2c61b1843fc9549819d2149bd4ff4fc0c9ec59f7a7f62116469dfe294bbfae2`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 321.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18b56d2ace31229a18ebed0f0205fab2b619aa2666b2af3e52520b805cb0ae6d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:40 GMT  
-		Size: 129.3 MB (129323901 bytes)  
+	-	`sha256:a6d81e4d2c7b063ca6af6c142014724fd25f4b78bd37fbbbccf582016aa124db`  
+		Last Modified: Wed, 21 Jan 2026 22:55:03 GMT  
+		Size: 129.6 MB (129552583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151e2f48537d7e373cc742a1feef8240ad319f811917e7c8ffe31da18ba8d82`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
+	-	`sha256:c2eea1ca45c6c742395a1c8b5d7327e0a8ffb8246a250cd5211862ed87b5662c`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.4-oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:0becb120ac404c9cb5053d5f7ab407549476090ac87b8ca2614f187d759c2d11
+$ docker pull mysql@sha256:7fdb2d55797d9e264ef6ff6971dce8f068ad60acf77c245b9e2d7bf79c5d2e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14930191 bytes)**  
+-	Total Size: **15.3 MB (15267223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56cc389471f6a58f4b1f57e8ec9a1ac08ec71b85b32282bb94c1bdef8f918e0f`
+-	Image ID: `sha256:c8ab615fb5da4e8f4d9be289b02378388973342472e21c5a103210f09f2a0e75`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf05006e49674ec49c6960a63fd16768a1ba783574e4feabbf5cf66257c923e9`  
-		Last Modified: Sat, 17 Jan 2026 01:02:37 GMT  
-		Size: 14.9 MB (14895678 bytes)  
+	-	`sha256:7cb8424279707d32f1f981f563752532ae08ba2091882802e59162d842af3f95`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 15.2 MB (15232710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:21660c0a2842109c3be55e8454bacac54817f6f768500373c4cef54317156538`  
-		Last Modified: Sat, 17 Jan 2026 01:02:38 GMT  
+	-	`sha256:3794e62c5aa6c87d503274951dc859252ccf0086cad9ebf25ffaf00b2d9fe472`  
+		Last Modified: Thu, 22 Jan 2026 01:02:36 GMT  
 		Size: 34.5 KB (34513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.4-oraclelinux9`
 
 ```console
-$ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207f3577901903
+$ docker pull mysql@sha256:cf6d1c8f2d31c73c878c6f5f60c2bec46701c41d5baf99100888bef5b6578b86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2414,13 +3467,13 @@ $ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207
 ### `mysql:8.4-oraclelinux9` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a294ea72ee331
+$ docker pull mysql@sha256:cee2bcd7cfece021d2e13229e660e2072ed50c9dd4635d2797c8954154ed1739
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233029943 bytes)**  
+-	Total Size: **233.2 MB (233230172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0de4015d5b1f0fa462e43b48c29f8f66eacdd16d11e07aedf3b13533adadd504`
+-	Image ID: `sha256:3890a37ddb73dd2c66d963f1b2c0fe051ccd580564526e85ea0073d08e926369`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -2429,39 +3482,39 @@ $ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a2
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:26:03 GMT
+# Wed, 21 Jan 2026 22:47:54 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:26:26 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:26:27 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:49:18 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:18 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 CMD ["mysqld"]
 ```
 
@@ -2470,77 +3523,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:023bf5ce6a4829c6b33eed0642d64a38f47927272c4921804abfda8bab0077ca`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 884.0 B  
+	-	`sha256:e7c9c940ed3326dbe75491b5c125f4e77409c20f1607b63e8d19a3c80b842f3e`  
+		Last Modified: Thu, 22 Jan 2026 01:02:18 GMT  
+		Size: 885.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24675d42775811c6a521aae8e2b0b47a989f8f35f2f254fdd43f7828c71d07bd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:dcefadb1e23c809499894384898688261866d60eba933b77725f25e26c3e97ac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 783.6 KB (783557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad32417d60c256a66828d3cfdc9ca9244576811a840000536e9a8d11c23e5d68`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 6.2 MB (6175148 bytes)  
+	-	`sha256:3751cab74b958e7f2a28d97747761761c9ca8dcb19db045bf8715e1c88b02a77`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 6.2 MB (6175161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25809bf57a8f169efb1bbd6588c1732f4f1836916ace0b507a4fef3dd158bfb4`  
-		Last Modified: Fri, 16 Jan 2026 23:28:04 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:3c365df7c813339968023fded5e9042d098bb834a37079c11cfe99c16056e452`  
+		Last Modified: Wed, 21 Jan 2026 23:47:14 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b13420727c1c0c0e213907e2e6267a5974c8c3dded97de2a95207f357668a52f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
+	-	`sha256:14d59e782af07065a94adad658374505a377347a587b0ea862c9caabfcd1215a`  
+		Last Modified: Wed, 21 Jan 2026 22:49:50 GMT  
 		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff6e8ae58e2456042811ffa3661febd52abc2c7761443b2213c52bf6a56e469d`  
-		Last Modified: Fri, 16 Jan 2026 23:28:07 GMT  
-		Size: 47.8 MB (47815365 bytes)  
+	-	`sha256:e06c9b222c64ef602389ece95bb72bac5893dd58b6edb5345235ecefa8616907`  
+		Last Modified: Wed, 21 Jan 2026 22:50:06 GMT  
+		Size: 47.8 MB (47811670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b034b0c553cfc069b162e27ecb7ee469e94daeab571d7f5cd3a83b1498eee6`  
-		Last Modified: Fri, 16 Jan 2026 23:28:00 GMT  
-		Size: 320.0 B  
+	-	`sha256:5ba7f8d3ecf830b612dd6ec5f2c8203c6a17f663a77102f0ffb793c1a1d589be`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ada6ad8c9d8c75d4beafab09f3234c75c361caa487b16fcc00ea8c5907ba435f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:55 GMT  
-		Size: 130.9 MB (130931861 bytes)  
+	-	`sha256:43c069718c101f0277bc8229dd2590bcb63d96f97ac9813addffd1b74d0d370f`  
+		Last Modified: Wed, 21 Jan 2026 22:49:53 GMT  
+		Size: 131.1 MB (131135770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fdbfdab06595d747aec81e55886fdb0156d0b08d001428224983ccaeea978cd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:53 GMT  
+	-	`sha256:c156dd23b850679b32b7f01f7d6fdc723966e165960e36800e3bd87e4740de17`  
+		Last Modified: Wed, 21 Jan 2026 22:49:51 GMT  
 		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.4-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:559414d5a80ae23d630ca19319c21f058973449c33226576fc7ce777c6cb4887
+$ docker pull mysql@sha256:be16c973ece26bb060d837d03f50d148f5ba91ac5626368218b8e3a845047488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14931466 bytes)**  
+-	Total Size: **15.3 MB (15268497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741bc7ae4fa3c416b37a5fe586eed0fe24ec1c96a10c3ccc34d9f86157d24ab3`
+-	Image ID: `sha256:b82df3286018a1d6cd6af61b31d53c2001d7503a9d7019268bee01205d261d23`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:029be1fc012084294f155b71ce8e88e6926982da803de7249b0fdab37f5291b7`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 14.9 MB (14897258 bytes)  
+	-	`sha256:3339e5486c0c4cc6a3b8d51d1b3345afe45209ee3e2c44b15834ea10ba988fde`  
+		Last Modified: Thu, 22 Jan 2026 01:02:23 GMT  
+		Size: 15.2 MB (15234290 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa111391adf2a8236c93d7b80ad95600395c646f74bed884c95f212dfe1d5eab`  
-		Last Modified: Sat, 17 Jan 2026 01:02:26 GMT  
-		Size: 34.2 KB (34208 bytes)  
+	-	`sha256:9377b2f281254f96efd66320022665c8cd5568ad522938d3fe3898e62ae20660`  
+		Last Modified: Thu, 22 Jan 2026 01:02:24 GMT  
+		Size: 34.2 KB (34207 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:8.4-oraclelinux9` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29253abb57e65
+$ docker pull mysql@sha256:509287abcaa38a3d334cf61bd787d0d523504c684990042f62fa4bfbadd1cb5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.5 MB (228462563 bytes)**  
+-	Total Size: **228.7 MB (228698723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5da2a12c183ff681379744e7047ff53800e8dfe4b7217b525b4c92ed1728e21a`
+-	Image ID: `sha256:e1fc1f3b0c1ad069b3e2a75bbd8036e5104f668132ef18ef6d542d86b85e2b06`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -2549,39 +3602,39 @@ $ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:32 GMT
+# Wed, 21 Jan 2026 22:52:53 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:53:20 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:54:27 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 CMD ["mysqld"]
 ```
 
@@ -2590,83 +3643,830 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de3a139db383dcfd82710bfab9154fec7b22c1598706cabfb21480997ab9f09f`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
-		Size: 885.0 B  
+	-	`sha256:3da72dcb236c1597383af262a9f45c86ca2b4b75d909507a3ac5b0eb6d7bd801`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ff917e53173311673a78eef92f68b58006c7d241f55c90c063ff5d35f9b5f80`  
-		Last Modified: Fri, 16 Jan 2026 23:31:36 GMT  
-		Size: 737.5 KB (737528 bytes)  
+	-	`sha256:4c9d33c81d6768ce0368969dfaf925fbf6624bdf9202a7fe6d15e54b846c0e13`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 737.5 KB (737526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7057a5a35be927e2eee436ccbee6ade905cf2905e0ded231f1eee51dd537d28`  
-		Last Modified: Fri, 16 Jan 2026 23:31:48 GMT  
-		Size: 5.8 MB (5798058 bytes)  
+	-	`sha256:7699a954d9de859b4b92ab5459f58e582e3085a82e29fa85c372c885cbd75f06`  
+		Last Modified: Wed, 21 Jan 2026 22:55:12 GMT  
+		Size: 5.8 MB (5798064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3a3050ea2531d36b577b983be8afb48eee1fe18fe044013308e8cd5bb8d835a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:54 GMT  
+	-	`sha256:8ccbceaa8cf24fa2833a2afe398ccde1f6ff2bbee670abd536c014c84fdcf94d`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
 		Size: 2.6 KB (2607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37938fa9ff7d875ad4ea6b70f7fe1f112527c6ea161c7ab4b6a17b417591da1`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
-		Size: 332.0 B  
+	-	`sha256:94f6521db4dbfdbb841dcd5d6d34f10bf9c3741fa4a8d009fbbd9703846ab0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:54:59 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f655cab6299cf71d7e9c2b44899bf9bd147d252fd3a35fddd6d22b99ddbf324a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:52 GMT  
-		Size: 46.7 MB (46691693 bytes)  
+	-	`sha256:cc1b36f2667d57cda43bb84edc3e089860e2f0d619fe5cc7a4ca134f30df64ee`  
+		Last Modified: Wed, 21 Jan 2026 22:55:00 GMT  
+		Size: 46.7 MB (46699165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fec303eb563de541b75b7ea0dfda5ea894d8827ad63d4e61a2b23b2f7db927d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
+	-	`sha256:f2c61b1843fc9549819d2149bd4ff4fc0c9ec59f7a7f62116469dfe294bbfae2`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 321.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18b56d2ace31229a18ebed0f0205fab2b619aa2666b2af3e52520b805cb0ae6d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:40 GMT  
-		Size: 129.3 MB (129323901 bytes)  
+	-	`sha256:a6d81e4d2c7b063ca6af6c142014724fd25f4b78bd37fbbbccf582016aa124db`  
+		Last Modified: Wed, 21 Jan 2026 22:55:03 GMT  
+		Size: 129.6 MB (129552583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151e2f48537d7e373cc742a1feef8240ad319f811917e7c8ffe31da18ba8d82`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
+	-	`sha256:c2eea1ca45c6c742395a1c8b5d7327e0a8ffb8246a250cd5211862ed87b5662c`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8.4-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:0becb120ac404c9cb5053d5f7ab407549476090ac87b8ca2614f187d759c2d11
+$ docker pull mysql@sha256:7fdb2d55797d9e264ef6ff6971dce8f068ad60acf77c245b9e2d7bf79c5d2e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14930191 bytes)**  
+-	Total Size: **15.3 MB (15267223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56cc389471f6a58f4b1f57e8ec9a1ac08ec71b85b32282bb94c1bdef8f918e0f`
+-	Image ID: `sha256:c8ab615fb5da4e8f4d9be289b02378388973342472e21c5a103210f09f2a0e75`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf05006e49674ec49c6960a63fd16768a1ba783574e4feabbf5cf66257c923e9`  
-		Last Modified: Sat, 17 Jan 2026 01:02:37 GMT  
-		Size: 14.9 MB (14895678 bytes)  
+	-	`sha256:7cb8424279707d32f1f981f563752532ae08ba2091882802e59162d842af3f95`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 15.2 MB (15232710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:21660c0a2842109c3be55e8454bacac54817f6f768500373c4cef54317156538`  
-		Last Modified: Sat, 17 Jan 2026 01:02:38 GMT  
+	-	`sha256:3794e62c5aa6c87d503274951dc859252ccf0086cad9ebf25ffaf00b2d9fe472`  
+		Last Modified: Thu, 22 Jan 2026 01:02:36 GMT  
 		Size: 34.5 KB (34513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.4.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:cf6d1c8f2d31c73c878c6f5f60c2bec46701c41d5baf99100888bef5b6578b86
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `mysql:8.4.8` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:cee2bcd7cfece021d2e13229e660e2072ed50c9dd4635d2797c8954154ed1739
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **233.2 MB (233230172 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3890a37ddb73dd2c66d963f1b2c0fe051ccd580564526e85ea0073d08e926369`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:08:06 GMT
+ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:08:06 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:47:54 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:47:55 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:47:55 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:48:19 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:48:19 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_MAJOR=8.4
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:48:19 GMT
+RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:48:45 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:48:45 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:48:45 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:49:18 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:49:18 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:49:19 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:49:19 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:49:19 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:49:19 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
+		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Size: 47.3 MB (47314538 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e7c9c940ed3326dbe75491b5c125f4e77409c20f1607b63e8d19a3c80b842f3e`  
+		Last Modified: Thu, 22 Jan 2026 01:02:18 GMT  
+		Size: 885.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:dcefadb1e23c809499894384898688261866d60eba933b77725f25e26c3e97ac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 783.6 KB (783557 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3751cab74b958e7f2a28d97747761761c9ca8dcb19db045bf8715e1c88b02a77`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 6.2 MB (6175161 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3c365df7c813339968023fded5e9042d098bb834a37079c11cfe99c16056e452`  
+		Last Modified: Wed, 21 Jan 2026 23:47:14 GMT  
+		Size: 2.6 KB (2605 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:14d59e782af07065a94adad658374505a377347a587b0ea862c9caabfcd1215a`  
+		Last Modified: Wed, 21 Jan 2026 22:49:50 GMT  
+		Size: 334.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e06c9b222c64ef602389ece95bb72bac5893dd58b6edb5345235ecefa8616907`  
+		Last Modified: Wed, 21 Jan 2026 22:50:06 GMT  
+		Size: 47.8 MB (47811670 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5ba7f8d3ecf830b612dd6ec5f2c8203c6a17f663a77102f0ffb793c1a1d589be`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 322.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:43c069718c101f0277bc8229dd2590bcb63d96f97ac9813addffd1b74d0d370f`  
+		Last Modified: Wed, 21 Jan 2026 22:49:53 GMT  
+		Size: 131.1 MB (131135770 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c156dd23b850679b32b7f01f7d6fdc723966e165960e36800e3bd87e4740de17`  
+		Last Modified: Wed, 21 Jan 2026 22:49:51 GMT  
+		Size: 5.3 KB (5330 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.4.8` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:be16c973ece26bb060d837d03f50d148f5ba91ac5626368218b8e3a845047488
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **15.3 MB (15268497 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b82df3286018a1d6cd6af61b31d53c2001d7503a9d7019268bee01205d261d23`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:3339e5486c0c4cc6a3b8d51d1b3345afe45209ee3e2c44b15834ea10ba988fde`  
+		Last Modified: Thu, 22 Jan 2026 01:02:23 GMT  
+		Size: 15.2 MB (15234290 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:9377b2f281254f96efd66320022665c8cd5568ad522938d3fe3898e62ae20660`  
+		Last Modified: Thu, 22 Jan 2026 01:02:24 GMT  
+		Size: 34.2 KB (34207 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `mysql:8.4.8` - linux; arm64 variant v8
+
+```console
+$ docker pull mysql@sha256:509287abcaa38a3d334cf61bd787d0d523504c684990042f62fa4bfbadd1cb5b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **228.7 MB (228698723 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e1fc1f3b0c1ad069b3e2a75bbd8036e5104f668132ef18ef6d542d86b85e2b06`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:07:56 GMT
+ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:07:56 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:52:53 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:52:55 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:52:55 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:53:20 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:53:21 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_MAJOR=8.4
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:53:21 GMT
+RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:53:50 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:53:50 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:53:50 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:54:27 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:54:27 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:54:27 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:54:27 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:54:27 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:54:27 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
+		Size: 45.9 MB (45901903 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3da72dcb236c1597383af262a9f45c86ca2b4b75d909507a3ac5b0eb6d7bd801`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4c9d33c81d6768ce0368969dfaf925fbf6624bdf9202a7fe6d15e54b846c0e13`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 737.5 KB (737526 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7699a954d9de859b4b92ab5459f58e582e3085a82e29fa85c372c885cbd75f06`  
+		Last Modified: Wed, 21 Jan 2026 22:55:12 GMT  
+		Size: 5.8 MB (5798064 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8ccbceaa8cf24fa2833a2afe398ccde1f6ff2bbee670abd536c014c84fdcf94d`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 2.6 KB (2607 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:94f6521db4dbfdbb841dcd5d6d34f10bf9c3741fa4a8d009fbbd9703846ab0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:54:59 GMT  
+		Size: 335.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cc1b36f2667d57cda43bb84edc3e089860e2f0d619fe5cc7a4ca134f30df64ee`  
+		Last Modified: Wed, 21 Jan 2026 22:55:00 GMT  
+		Size: 46.7 MB (46699165 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f2c61b1843fc9549819d2149bd4ff4fc0c9ec59f7a7f62116469dfe294bbfae2`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 321.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a6d81e4d2c7b063ca6af6c142014724fd25f4b78bd37fbbbccf582016aa124db`  
+		Last Modified: Wed, 21 Jan 2026 22:55:03 GMT  
+		Size: 129.6 MB (129552583 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c2eea1ca45c6c742395a1c8b5d7327e0a8ffb8246a250cd5211862ed87b5662c`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 5.3 KB (5335 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.4.8` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:7fdb2d55797d9e264ef6ff6971dce8f068ad60acf77c245b9e2d7bf79c5d2e9d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **15.3 MB (15267223 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c8ab615fb5da4e8f4d9be289b02378388973342472e21c5a103210f09f2a0e75`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:7cb8424279707d32f1f981f563752532ae08ba2091882802e59162d842af3f95`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 15.2 MB (15232710 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:3794e62c5aa6c87d503274951dc859252ccf0086cad9ebf25ffaf00b2d9fe472`  
+		Last Modified: Thu, 22 Jan 2026 01:02:36 GMT  
+		Size: 34.5 KB (34513 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.4.8-oracle`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:cf6d1c8f2d31c73c878c6f5f60c2bec46701c41d5baf99100888bef5b6578b86
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `mysql:8.4.8-oracle` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:cee2bcd7cfece021d2e13229e660e2072ed50c9dd4635d2797c8954154ed1739
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **233.2 MB (233230172 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3890a37ddb73dd2c66d963f1b2c0fe051ccd580564526e85ea0073d08e926369`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:08:06 GMT
+ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:08:06 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:47:54 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:47:55 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:47:55 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:48:19 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:48:19 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_MAJOR=8.4
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:48:19 GMT
+RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:48:45 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:48:45 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:48:45 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:49:18 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:49:18 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:49:19 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:49:19 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:49:19 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:49:19 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
+		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Size: 47.3 MB (47314538 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e7c9c940ed3326dbe75491b5c125f4e77409c20f1607b63e8d19a3c80b842f3e`  
+		Last Modified: Thu, 22 Jan 2026 01:02:18 GMT  
+		Size: 885.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:dcefadb1e23c809499894384898688261866d60eba933b77725f25e26c3e97ac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 783.6 KB (783557 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3751cab74b958e7f2a28d97747761761c9ca8dcb19db045bf8715e1c88b02a77`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 6.2 MB (6175161 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3c365df7c813339968023fded5e9042d098bb834a37079c11cfe99c16056e452`  
+		Last Modified: Wed, 21 Jan 2026 23:47:14 GMT  
+		Size: 2.6 KB (2605 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:14d59e782af07065a94adad658374505a377347a587b0ea862c9caabfcd1215a`  
+		Last Modified: Wed, 21 Jan 2026 22:49:50 GMT  
+		Size: 334.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e06c9b222c64ef602389ece95bb72bac5893dd58b6edb5345235ecefa8616907`  
+		Last Modified: Wed, 21 Jan 2026 22:50:06 GMT  
+		Size: 47.8 MB (47811670 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5ba7f8d3ecf830b612dd6ec5f2c8203c6a17f663a77102f0ffb793c1a1d589be`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 322.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:43c069718c101f0277bc8229dd2590bcb63d96f97ac9813addffd1b74d0d370f`  
+		Last Modified: Wed, 21 Jan 2026 22:49:53 GMT  
+		Size: 131.1 MB (131135770 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c156dd23b850679b32b7f01f7d6fdc723966e165960e36800e3bd87e4740de17`  
+		Last Modified: Wed, 21 Jan 2026 22:49:51 GMT  
+		Size: 5.3 KB (5330 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.4.8-oracle` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:be16c973ece26bb060d837d03f50d148f5ba91ac5626368218b8e3a845047488
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **15.3 MB (15268497 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b82df3286018a1d6cd6af61b31d53c2001d7503a9d7019268bee01205d261d23`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:3339e5486c0c4cc6a3b8d51d1b3345afe45209ee3e2c44b15834ea10ba988fde`  
+		Last Modified: Thu, 22 Jan 2026 01:02:23 GMT  
+		Size: 15.2 MB (15234290 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:9377b2f281254f96efd66320022665c8cd5568ad522938d3fe3898e62ae20660`  
+		Last Modified: Thu, 22 Jan 2026 01:02:24 GMT  
+		Size: 34.2 KB (34207 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `mysql:8.4.8-oracle` - linux; arm64 variant v8
+
+```console
+$ docker pull mysql@sha256:509287abcaa38a3d334cf61bd787d0d523504c684990042f62fa4bfbadd1cb5b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **228.7 MB (228698723 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e1fc1f3b0c1ad069b3e2a75bbd8036e5104f668132ef18ef6d542d86b85e2b06`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:07:56 GMT
+ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:07:56 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:52:53 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:52:55 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:52:55 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:53:20 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:53:21 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_MAJOR=8.4
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:53:21 GMT
+RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:53:50 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:53:50 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:53:50 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:54:27 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:54:27 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:54:27 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:54:27 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:54:27 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:54:27 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
+		Size: 45.9 MB (45901903 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3da72dcb236c1597383af262a9f45c86ca2b4b75d909507a3ac5b0eb6d7bd801`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4c9d33c81d6768ce0368969dfaf925fbf6624bdf9202a7fe6d15e54b846c0e13`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 737.5 KB (737526 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7699a954d9de859b4b92ab5459f58e582e3085a82e29fa85c372c885cbd75f06`  
+		Last Modified: Wed, 21 Jan 2026 22:55:12 GMT  
+		Size: 5.8 MB (5798064 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8ccbceaa8cf24fa2833a2afe398ccde1f6ff2bbee670abd536c014c84fdcf94d`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 2.6 KB (2607 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:94f6521db4dbfdbb841dcd5d6d34f10bf9c3741fa4a8d009fbbd9703846ab0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:54:59 GMT  
+		Size: 335.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cc1b36f2667d57cda43bb84edc3e089860e2f0d619fe5cc7a4ca134f30df64ee`  
+		Last Modified: Wed, 21 Jan 2026 22:55:00 GMT  
+		Size: 46.7 MB (46699165 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f2c61b1843fc9549819d2149bd4ff4fc0c9ec59f7a7f62116469dfe294bbfae2`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 321.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a6d81e4d2c7b063ca6af6c142014724fd25f4b78bd37fbbbccf582016aa124db`  
+		Last Modified: Wed, 21 Jan 2026 22:55:03 GMT  
+		Size: 129.6 MB (129552583 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c2eea1ca45c6c742395a1c8b5d7327e0a8ffb8246a250cd5211862ed87b5662c`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 5.3 KB (5335 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.4.8-oracle` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:7fdb2d55797d9e264ef6ff6971dce8f068ad60acf77c245b9e2d7bf79c5d2e9d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **15.3 MB (15267223 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c8ab615fb5da4e8f4d9be289b02378388973342472e21c5a103210f09f2a0e75`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:7cb8424279707d32f1f981f563752532ae08ba2091882802e59162d842af3f95`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 15.2 MB (15232710 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:3794e62c5aa6c87d503274951dc859252ccf0086cad9ebf25ffaf00b2d9fe472`  
+		Last Modified: Thu, 22 Jan 2026 01:02:36 GMT  
+		Size: 34.5 KB (34513 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:8.4.8-oraclelinux9`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:cf6d1c8f2d31c73c878c6f5f60c2bec46701c41d5baf99100888bef5b6578b86
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `mysql:8.4.8-oraclelinux9` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:cee2bcd7cfece021d2e13229e660e2072ed50c9dd4635d2797c8954154ed1739
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **233.2 MB (233230172 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3890a37ddb73dd2c66d963f1b2c0fe051ccd580564526e85ea0073d08e926369`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:08:06 GMT
+ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:08:06 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:47:54 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:47:55 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:47:55 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:48:19 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:48:19 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_MAJOR=8.4
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:48:19 GMT
+RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:48:45 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:48:45 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:48:45 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:49:18 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:49:18 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:49:19 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:49:19 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:49:19 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:49:19 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
+		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Size: 47.3 MB (47314538 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e7c9c940ed3326dbe75491b5c125f4e77409c20f1607b63e8d19a3c80b842f3e`  
+		Last Modified: Thu, 22 Jan 2026 01:02:18 GMT  
+		Size: 885.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:dcefadb1e23c809499894384898688261866d60eba933b77725f25e26c3e97ac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 783.6 KB (783557 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3751cab74b958e7f2a28d97747761761c9ca8dcb19db045bf8715e1c88b02a77`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 6.2 MB (6175161 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3c365df7c813339968023fded5e9042d098bb834a37079c11cfe99c16056e452`  
+		Last Modified: Wed, 21 Jan 2026 23:47:14 GMT  
+		Size: 2.6 KB (2605 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:14d59e782af07065a94adad658374505a377347a587b0ea862c9caabfcd1215a`  
+		Last Modified: Wed, 21 Jan 2026 22:49:50 GMT  
+		Size: 334.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e06c9b222c64ef602389ece95bb72bac5893dd58b6edb5345235ecefa8616907`  
+		Last Modified: Wed, 21 Jan 2026 22:50:06 GMT  
+		Size: 47.8 MB (47811670 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5ba7f8d3ecf830b612dd6ec5f2c8203c6a17f663a77102f0ffb793c1a1d589be`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 322.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:43c069718c101f0277bc8229dd2590bcb63d96f97ac9813addffd1b74d0d370f`  
+		Last Modified: Wed, 21 Jan 2026 22:49:53 GMT  
+		Size: 131.1 MB (131135770 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c156dd23b850679b32b7f01f7d6fdc723966e165960e36800e3bd87e4740de17`  
+		Last Modified: Wed, 21 Jan 2026 22:49:51 GMT  
+		Size: 5.3 KB (5330 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.4.8-oraclelinux9` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:be16c973ece26bb060d837d03f50d148f5ba91ac5626368218b8e3a845047488
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **15.3 MB (15268497 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b82df3286018a1d6cd6af61b31d53c2001d7503a9d7019268bee01205d261d23`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:3339e5486c0c4cc6a3b8d51d1b3345afe45209ee3e2c44b15834ea10ba988fde`  
+		Last Modified: Thu, 22 Jan 2026 01:02:23 GMT  
+		Size: 15.2 MB (15234290 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:9377b2f281254f96efd66320022665c8cd5568ad522938d3fe3898e62ae20660`  
+		Last Modified: Thu, 22 Jan 2026 01:02:24 GMT  
+		Size: 34.2 KB (34207 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `mysql:8.4.8-oraclelinux9` - linux; arm64 variant v8
+
+```console
+$ docker pull mysql@sha256:509287abcaa38a3d334cf61bd787d0d523504c684990042f62fa4bfbadd1cb5b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **228.7 MB (228698723 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e1fc1f3b0c1ad069b3e2a75bbd8036e5104f668132ef18ef6d542d86b85e2b06`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:07:56 GMT
+ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:07:56 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:52:53 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:52:55 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:52:55 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:53:20 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:53:21 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_MAJOR=8.4
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:53:21 GMT
+RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:53:50 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:53:50 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:53:50 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:54:27 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:54:27 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:54:27 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:54:27 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:54:27 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:54:27 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
+		Size: 45.9 MB (45901903 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3da72dcb236c1597383af262a9f45c86ca2b4b75d909507a3ac5b0eb6d7bd801`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4c9d33c81d6768ce0368969dfaf925fbf6624bdf9202a7fe6d15e54b846c0e13`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 737.5 KB (737526 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7699a954d9de859b4b92ab5459f58e582e3085a82e29fa85c372c885cbd75f06`  
+		Last Modified: Wed, 21 Jan 2026 22:55:12 GMT  
+		Size: 5.8 MB (5798064 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8ccbceaa8cf24fa2833a2afe398ccde1f6ff2bbee670abd536c014c84fdcf94d`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 2.6 KB (2607 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:94f6521db4dbfdbb841dcd5d6d34f10bf9c3741fa4a8d009fbbd9703846ab0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:54:59 GMT  
+		Size: 335.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cc1b36f2667d57cda43bb84edc3e089860e2f0d619fe5cc7a4ca134f30df64ee`  
+		Last Modified: Wed, 21 Jan 2026 22:55:00 GMT  
+		Size: 46.7 MB (46699165 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f2c61b1843fc9549819d2149bd4ff4fc0c9ec59f7a7f62116469dfe294bbfae2`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 321.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a6d81e4d2c7b063ca6af6c142014724fd25f4b78bd37fbbbccf582016aa124db`  
+		Last Modified: Wed, 21 Jan 2026 22:55:03 GMT  
+		Size: 129.6 MB (129552583 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c2eea1ca45c6c742395a1c8b5d7327e0a8ffb8246a250cd5211862ed87b5662c`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 5.3 KB (5335 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:8.4.8-oraclelinux9` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:7fdb2d55797d9e264ef6ff6971dce8f068ad60acf77c245b9e2d7bf79c5d2e9d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **15.3 MB (15267223 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c8ab615fb5da4e8f4d9be289b02378388973342472e21c5a103210f09f2a0e75`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:7cb8424279707d32f1f981f563752532ae08ba2091882802e59162d842af3f95`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 15.2 MB (15232710 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:3794e62c5aa6c87d503274951dc859252ccf0086cad9ebf25ffaf00b2d9fe472`  
+		Last Modified: Thu, 22 Jan 2026 01:02:36 GMT  
+		Size: 34.5 KB (34513 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:9`
 
 ```console
-$ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444b83622cc8ef
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2679,13 +4479,13 @@ $ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444
 ### `mysql:9` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca3d692078d6e
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.7 MB (274737070 bytes)**  
+-	Total Size: **266.4 MB (266374976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2150accc6e3f548dc144e1e9aeecca8e06eaa5eb0f0fde96013dec583e13625`
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -2694,39 +4494,39 @@ $ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:17:36 GMT
+# Wed, 21 Jan 2026 22:47:02 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:18:02 GMT
+# Wed, 21 Jan 2026 22:47:25 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:18:03 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 CMD ["mysqld"]
 ```
 
@@ -2735,77 +4535,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e3687b576e09030d0137b68778ac8b794e931d12c86233b9a846bed3e1cee7`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:488d39dd8c3ecec5a4aa482ea82cbdd336bdf0ccc5e9fe97857acc6f19f3061d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e2cc70f011730a52b024ae2217527eaf26f9627e76590a5236d1381372c1463`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 6.2 MB (6175172 bytes)  
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68b569d93fe587e6f7fc6d4d6f8653ab0662793b182ec4d3c2f7915720c9395b`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e3b86c4294968844915992442cc209a431158244998ffda17ffadd9a115cff`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29dc23d7bfcd16f0b280c416002d296812d269a41c7c914c2d6a770e9622ba5`  
-		Last Modified: Sat, 17 Jan 2026 00:01:26 GMT  
-		Size: 51.3 MB (51337329 bytes)  
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bbf0633cdd1831a67a9dd9e767018829498f2a3e4fa8023f787b70fc5147d65`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6278c3f9bc1393ee533135a2366665f8e05f4006e5d80fef8f27cf4bac9a7f3d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:51 GMT  
-		Size: 169.1 MB (169116992 bytes)  
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5fb9df71aa98262f8a9b94308790682229f0a9a4662169d4a7deb49ffef53e1`  
-		Last Modified: Fri, 16 Jan 2026 23:19:48 GMT  
-		Size: 5.3 KB (5328 bytes)  
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:e9f880b5c30c1ed1e434f86aaf4669bb2b06b98209036a1a780dee6d316af0f9
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17846967 bytes)**  
+-	Total Size: **16.3 MB (16332655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76a568dab01176bf1ac94375790d9b171339fff11f5149e5be36d707622190f8`
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:30c78be3a8366c1d99d9bc3f09d75ef95f74e69bd4365c72f7c15df05d7d0f6f`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 17.8 MB (17811692 bytes)  
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fb1f586e520b7839e804b9bcb4824f426e7dd7a9f40dcb7ca1a739b05d56fb07`  
-		Last Modified: Sat, 17 Jan 2026 01:03:06 GMT  
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 35.3 KB (35275 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:9` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bceb1751fd1fa4
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.8 MB (269797530 bytes)**  
+-	Total Size: **261.5 MB (261474832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9bb20f25c17502ee290cf550fce4ae60f80647e14a2889841e0fdaf337b0bf1`
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -2814,39 +4614,39 @@ $ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bce
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:01 GMT
+# Wed, 21 Jan 2026 22:52:07 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:29:29 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 CMD ["mysqld"]
 ```
 
@@ -2855,71 +4655,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60924c82fbc82a9eecc1572df06a50145607fd242e5f1fb9439b05f8240bff09`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fb5892b8b345e3cb2c3ddcac58883355e6ed7137963e770d8be9966865b117a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
-		Size: 737.5 KB (737527 bytes)  
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f1dd235a9a2a7e215341f6e7b49b32f597d401af25cfb2a3cff5a3d35f0e826`  
-		Last Modified: Fri, 16 Jan 2026 23:31:30 GMT  
-		Size: 5.8 MB (5798074 bytes)  
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d15d83c289fce8ad2b520678e01610240d31a47c14b78e71b915ac2ffd06186d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:32 GMT  
-		Size: 2.6 KB (2603 bytes)  
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98c0743b28fcff60aeb4d6fa3b4e513a70d1c6f88e0b87b33650e8b8f79c0c93`  
-		Last Modified: Fri, 16 Jan 2026 23:31:19 GMT  
-		Size: 341.0 B  
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f1761851302a3e2edd49ac48552aee144d5037d284d54b44121cf2582db8387`  
-		Last Modified: Fri, 16 Jan 2026 23:31:34 GMT  
-		Size: 50.0 MB (49960731 bytes)  
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e766303672c6740f7064ab2366ae746c37371b8f99fb0c5b2c2028d6629fc5c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 325.0 B  
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9aa56a3fad114533409ef35e78b8d1ea8ece781aab2d1b236105dc38f23dd933`  
-		Last Modified: Fri, 16 Jan 2026 23:31:23 GMT  
-		Size: 167.4 MB (167389810 bytes)  
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7933d1e6d8aebb094bfc24e0e8427937f35b352308579c048531fc30b561e0c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:ba4120e2e4755e5c5e8df7ba5ac2224321201db0ec32bf60868dbb5fbefe0b63
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17842447 bytes)**  
+-	Total Size: **16.3 MB (16331451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ea796dcb648beb4d659a8b9c8bba9692a1df9f7a83c9e57d6cf10fbcfc95d02`
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:605099f469cfd4acf5650903f362545b02a5810b5898ca2ef32f242d0931b34e`  
-		Last Modified: Sat, 17 Jan 2026 01:03:25 GMT  
-		Size: 17.8 MB (17806831 bytes)  
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:916ea0327b00bcba62230558f1497b7bd5c252511f547e28fa8d5d889d86a9f1`  
-		Last Modified: Sat, 17 Jan 2026 01:03:28 GMT  
-		Size: 35.6 KB (35616 bytes)  
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:9-oracle`
 
 ```console
-$ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444b83622cc8ef
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2932,13 +4732,13 @@ $ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444
 ### `mysql:9-oracle` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca3d692078d6e
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.7 MB (274737070 bytes)**  
+-	Total Size: **266.4 MB (266374976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2150accc6e3f548dc144e1e9aeecca8e06eaa5eb0f0fde96013dec583e13625`
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -2947,39 +4747,39 @@ $ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:17:36 GMT
+# Wed, 21 Jan 2026 22:47:02 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:18:02 GMT
+# Wed, 21 Jan 2026 22:47:25 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:18:03 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 CMD ["mysqld"]
 ```
 
@@ -2988,77 +4788,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e3687b576e09030d0137b68778ac8b794e931d12c86233b9a846bed3e1cee7`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:488d39dd8c3ecec5a4aa482ea82cbdd336bdf0ccc5e9fe97857acc6f19f3061d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e2cc70f011730a52b024ae2217527eaf26f9627e76590a5236d1381372c1463`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 6.2 MB (6175172 bytes)  
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68b569d93fe587e6f7fc6d4d6f8653ab0662793b182ec4d3c2f7915720c9395b`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e3b86c4294968844915992442cc209a431158244998ffda17ffadd9a115cff`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29dc23d7bfcd16f0b280c416002d296812d269a41c7c914c2d6a770e9622ba5`  
-		Last Modified: Sat, 17 Jan 2026 00:01:26 GMT  
-		Size: 51.3 MB (51337329 bytes)  
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bbf0633cdd1831a67a9dd9e767018829498f2a3e4fa8023f787b70fc5147d65`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6278c3f9bc1393ee533135a2366665f8e05f4006e5d80fef8f27cf4bac9a7f3d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:51 GMT  
-		Size: 169.1 MB (169116992 bytes)  
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5fb9df71aa98262f8a9b94308790682229f0a9a4662169d4a7deb49ffef53e1`  
-		Last Modified: Fri, 16 Jan 2026 23:19:48 GMT  
-		Size: 5.3 KB (5328 bytes)  
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:9-oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:e9f880b5c30c1ed1e434f86aaf4669bb2b06b98209036a1a780dee6d316af0f9
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17846967 bytes)**  
+-	Total Size: **16.3 MB (16332655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76a568dab01176bf1ac94375790d9b171339fff11f5149e5be36d707622190f8`
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:30c78be3a8366c1d99d9bc3f09d75ef95f74e69bd4365c72f7c15df05d7d0f6f`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 17.8 MB (17811692 bytes)  
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fb1f586e520b7839e804b9bcb4824f426e7dd7a9f40dcb7ca1a739b05d56fb07`  
-		Last Modified: Sat, 17 Jan 2026 01:03:06 GMT  
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 35.3 KB (35275 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:9-oracle` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bceb1751fd1fa4
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.8 MB (269797530 bytes)**  
+-	Total Size: **261.5 MB (261474832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9bb20f25c17502ee290cf550fce4ae60f80647e14a2889841e0fdaf337b0bf1`
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -3067,39 +4867,39 @@ $ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bce
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:01 GMT
+# Wed, 21 Jan 2026 22:52:07 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:29:29 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 CMD ["mysqld"]
 ```
 
@@ -3108,71 +4908,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60924c82fbc82a9eecc1572df06a50145607fd242e5f1fb9439b05f8240bff09`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fb5892b8b345e3cb2c3ddcac58883355e6ed7137963e770d8be9966865b117a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
-		Size: 737.5 KB (737527 bytes)  
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f1dd235a9a2a7e215341f6e7b49b32f597d401af25cfb2a3cff5a3d35f0e826`  
-		Last Modified: Fri, 16 Jan 2026 23:31:30 GMT  
-		Size: 5.8 MB (5798074 bytes)  
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d15d83c289fce8ad2b520678e01610240d31a47c14b78e71b915ac2ffd06186d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:32 GMT  
-		Size: 2.6 KB (2603 bytes)  
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98c0743b28fcff60aeb4d6fa3b4e513a70d1c6f88e0b87b33650e8b8f79c0c93`  
-		Last Modified: Fri, 16 Jan 2026 23:31:19 GMT  
-		Size: 341.0 B  
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f1761851302a3e2edd49ac48552aee144d5037d284d54b44121cf2582db8387`  
-		Last Modified: Fri, 16 Jan 2026 23:31:34 GMT  
-		Size: 50.0 MB (49960731 bytes)  
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e766303672c6740f7064ab2366ae746c37371b8f99fb0c5b2c2028d6629fc5c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 325.0 B  
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9aa56a3fad114533409ef35e78b8d1ea8ece781aab2d1b236105dc38f23dd933`  
-		Last Modified: Fri, 16 Jan 2026 23:31:23 GMT  
-		Size: 167.4 MB (167389810 bytes)  
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7933d1e6d8aebb094bfc24e0e8427937f35b352308579c048531fc30b561e0c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:9-oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:ba4120e2e4755e5c5e8df7ba5ac2224321201db0ec32bf60868dbb5fbefe0b63
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17842447 bytes)**  
+-	Total Size: **16.3 MB (16331451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ea796dcb648beb4d659a8b9c8bba9692a1df9f7a83c9e57d6cf10fbcfc95d02`
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:605099f469cfd4acf5650903f362545b02a5810b5898ca2ef32f242d0931b34e`  
-		Last Modified: Sat, 17 Jan 2026 01:03:25 GMT  
-		Size: 17.8 MB (17806831 bytes)  
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:916ea0327b00bcba62230558f1497b7bd5c252511f547e28fa8d5d889d86a9f1`  
-		Last Modified: Sat, 17 Jan 2026 01:03:28 GMT  
-		Size: 35.6 KB (35616 bytes)  
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:9-oraclelinux9`
 
 ```console
-$ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444b83622cc8ef
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3185,13 +4985,13 @@ $ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444
 ### `mysql:9-oraclelinux9` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca3d692078d6e
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.7 MB (274737070 bytes)**  
+-	Total Size: **266.4 MB (266374976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2150accc6e3f548dc144e1e9aeecca8e06eaa5eb0f0fde96013dec583e13625`
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -3200,39 +5000,39 @@ $ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:17:36 GMT
+# Wed, 21 Jan 2026 22:47:02 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:18:02 GMT
+# Wed, 21 Jan 2026 22:47:25 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:18:03 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 CMD ["mysqld"]
 ```
 
@@ -3241,77 +5041,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e3687b576e09030d0137b68778ac8b794e931d12c86233b9a846bed3e1cee7`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:488d39dd8c3ecec5a4aa482ea82cbdd336bdf0ccc5e9fe97857acc6f19f3061d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e2cc70f011730a52b024ae2217527eaf26f9627e76590a5236d1381372c1463`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 6.2 MB (6175172 bytes)  
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68b569d93fe587e6f7fc6d4d6f8653ab0662793b182ec4d3c2f7915720c9395b`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e3b86c4294968844915992442cc209a431158244998ffda17ffadd9a115cff`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29dc23d7bfcd16f0b280c416002d296812d269a41c7c914c2d6a770e9622ba5`  
-		Last Modified: Sat, 17 Jan 2026 00:01:26 GMT  
-		Size: 51.3 MB (51337329 bytes)  
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bbf0633cdd1831a67a9dd9e767018829498f2a3e4fa8023f787b70fc5147d65`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6278c3f9bc1393ee533135a2366665f8e05f4006e5d80fef8f27cf4bac9a7f3d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:51 GMT  
-		Size: 169.1 MB (169116992 bytes)  
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5fb9df71aa98262f8a9b94308790682229f0a9a4662169d4a7deb49ffef53e1`  
-		Last Modified: Fri, 16 Jan 2026 23:19:48 GMT  
-		Size: 5.3 KB (5328 bytes)  
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:9-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:e9f880b5c30c1ed1e434f86aaf4669bb2b06b98209036a1a780dee6d316af0f9
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17846967 bytes)**  
+-	Total Size: **16.3 MB (16332655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76a568dab01176bf1ac94375790d9b171339fff11f5149e5be36d707622190f8`
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:30c78be3a8366c1d99d9bc3f09d75ef95f74e69bd4365c72f7c15df05d7d0f6f`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 17.8 MB (17811692 bytes)  
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fb1f586e520b7839e804b9bcb4824f426e7dd7a9f40dcb7ca1a739b05d56fb07`  
-		Last Modified: Sat, 17 Jan 2026 01:03:06 GMT  
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 35.3 KB (35275 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:9-oraclelinux9` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bceb1751fd1fa4
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.8 MB (269797530 bytes)**  
+-	Total Size: **261.5 MB (261474832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9bb20f25c17502ee290cf550fce4ae60f80647e14a2889841e0fdaf337b0bf1`
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -3320,39 +5120,39 @@ $ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bce
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:01 GMT
+# Wed, 21 Jan 2026 22:52:07 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:29:29 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 CMD ["mysqld"]
 ```
 
@@ -3361,95 +5161,1589 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60924c82fbc82a9eecc1572df06a50145607fd242e5f1fb9439b05f8240bff09`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fb5892b8b345e3cb2c3ddcac58883355e6ed7137963e770d8be9966865b117a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
-		Size: 737.5 KB (737527 bytes)  
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f1dd235a9a2a7e215341f6e7b49b32f597d401af25cfb2a3cff5a3d35f0e826`  
-		Last Modified: Fri, 16 Jan 2026 23:31:30 GMT  
-		Size: 5.8 MB (5798074 bytes)  
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d15d83c289fce8ad2b520678e01610240d31a47c14b78e71b915ac2ffd06186d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:32 GMT  
-		Size: 2.6 KB (2603 bytes)  
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98c0743b28fcff60aeb4d6fa3b4e513a70d1c6f88e0b87b33650e8b8f79c0c93`  
-		Last Modified: Fri, 16 Jan 2026 23:31:19 GMT  
-		Size: 341.0 B  
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f1761851302a3e2edd49ac48552aee144d5037d284d54b44121cf2582db8387`  
-		Last Modified: Fri, 16 Jan 2026 23:31:34 GMT  
-		Size: 50.0 MB (49960731 bytes)  
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e766303672c6740f7064ab2366ae746c37371b8f99fb0c5b2c2028d6629fc5c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 325.0 B  
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9aa56a3fad114533409ef35e78b8d1ea8ece781aab2d1b236105dc38f23dd933`  
-		Last Modified: Fri, 16 Jan 2026 23:31:23 GMT  
-		Size: 167.4 MB (167389810 bytes)  
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7933d1e6d8aebb094bfc24e0e8427937f35b352308579c048531fc30b561e0c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:9-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:ba4120e2e4755e5c5e8df7ba5ac2224321201db0ec32bf60868dbb5fbefe0b63
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17842447 bytes)**  
+-	Total Size: **16.3 MB (16331451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ea796dcb648beb4d659a8b9c8bba9692a1df9f7a83c9e57d6cf10fbcfc95d02`
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:605099f469cfd4acf5650903f362545b02a5810b5898ca2ef32f242d0931b34e`  
-		Last Modified: Sat, 17 Jan 2026 01:03:25 GMT  
-		Size: 17.8 MB (17806831 bytes)  
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:916ea0327b00bcba62230558f1497b7bd5c252511f547e28fa8d5d889d86a9f1`  
-		Last Modified: Sat, 17 Jan 2026 01:03:28 GMT  
-		Size: 35.6 KB (35616 bytes)  
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:9.6`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `mysql:9.6` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **266.4 MB (266374976 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:08:06 GMT
+ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:08:06 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:47:02 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:47:04 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:47:04 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:47:25 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:47:26 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_MAJOR=innovation
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
+RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:47:50 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:47:51 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:48:26 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:48:26 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:48:26 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:48:26 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:48:26 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
+		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Size: 47.3 MB (47314538 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 326.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:9.6` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.3 MB (16332655 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 35.3 KB (35275 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `mysql:9.6` - linux; arm64 variant v8
+
+```console
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **261.5 MB (261474832 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:07:56 GMT
+ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:07:56 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:52:07 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:52:09 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:52:09 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_MAJOR=innovation
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:53:53 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:53:53 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:53:53 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:53:53 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:53:53 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
+		Size: 45.9 MB (45901903 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:9.6` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.3 MB (16331451 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:9.6-oracle`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `mysql:9.6-oracle` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **266.4 MB (266374976 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:08:06 GMT
+ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:08:06 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:47:02 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:47:04 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:47:04 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:47:25 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:47:26 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_MAJOR=innovation
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
+RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:47:50 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:47:51 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:48:26 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:48:26 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:48:26 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:48:26 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:48:26 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
+		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Size: 47.3 MB (47314538 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 326.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:9.6-oracle` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.3 MB (16332655 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 35.3 KB (35275 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `mysql:9.6-oracle` - linux; arm64 variant v8
+
+```console
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **261.5 MB (261474832 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:07:56 GMT
+ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:07:56 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:52:07 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:52:09 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:52:09 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_MAJOR=innovation
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:53:53 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:53:53 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:53:53 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:53:53 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:53:53 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
+		Size: 45.9 MB (45901903 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:9.6-oracle` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.3 MB (16331451 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:9.6-oraclelinux9`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `mysql:9.6-oraclelinux9` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **266.4 MB (266374976 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:08:06 GMT
+ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:08:06 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:47:02 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:47:04 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:47:04 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:47:25 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:47:26 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_MAJOR=innovation
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
+RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:47:50 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:47:51 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:48:26 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:48:26 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:48:26 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:48:26 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:48:26 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
+		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Size: 47.3 MB (47314538 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 326.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:9.6-oraclelinux9` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.3 MB (16332655 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 35.3 KB (35275 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `mysql:9.6-oraclelinux9` - linux; arm64 variant v8
+
+```console
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **261.5 MB (261474832 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:07:56 GMT
+ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:07:56 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:52:07 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:52:09 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:52:09 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_MAJOR=innovation
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:53:53 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:53:53 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:53:53 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:53:53 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:53:53 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
+		Size: 45.9 MB (45901903 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:9.6-oraclelinux9` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.3 MB (16331451 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:9.6.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `mysql:9.6.0` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **266.4 MB (266374976 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:08:06 GMT
+ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:08:06 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:47:02 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:47:04 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:47:04 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:47:25 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:47:26 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_MAJOR=innovation
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
+RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:47:50 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:47:51 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:48:26 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:48:26 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:48:26 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:48:26 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:48:26 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
+		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Size: 47.3 MB (47314538 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 326.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:9.6.0` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.3 MB (16332655 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 35.3 KB (35275 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `mysql:9.6.0` - linux; arm64 variant v8
+
+```console
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **261.5 MB (261474832 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:07:56 GMT
+ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:07:56 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:52:07 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:52:09 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:52:09 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_MAJOR=innovation
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:53:53 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:53:53 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:53:53 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:53:53 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:53:53 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
+		Size: 45.9 MB (45901903 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:9.6.0` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.3 MB (16331451 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:9.6.0-oracle`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `mysql:9.6.0-oracle` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **266.4 MB (266374976 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:08:06 GMT
+ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:08:06 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:47:02 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:47:04 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:47:04 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:47:25 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:47:26 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_MAJOR=innovation
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
+RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:47:50 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:47:51 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:48:26 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:48:26 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:48:26 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:48:26 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:48:26 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
+		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Size: 47.3 MB (47314538 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 326.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:9.6.0-oracle` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.3 MB (16332655 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 35.3 KB (35275 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `mysql:9.6.0-oracle` - linux; arm64 variant v8
+
+```console
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **261.5 MB (261474832 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:07:56 GMT
+ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:07:56 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:52:07 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:52:09 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:52:09 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_MAJOR=innovation
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:53:53 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:53:53 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:53:53 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:53:53 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:53:53 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
+		Size: 45.9 MB (45901903 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:9.6.0-oracle` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.3 MB (16331451 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:9.6.0-oraclelinux9`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `mysql:9.6.0-oraclelinux9` - linux; amd64
+
+```console
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **266.4 MB (266374976 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:08:06 GMT
+ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:08:06 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:47:02 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:47:04 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:47:04 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:47:25 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:47:26 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_MAJOR=innovation
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
+RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:47:50 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:47:51 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:48:26 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:48:26 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:48:26 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:48:26 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:48:26 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:658e67031dba87f37a087802d8564b84ea84ff3a83d5993b8c090fe7466c9934`  
+		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
+		Size: 47.3 MB (47314538 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 326.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:9.6.0-oraclelinux9` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.3 MB (16332655 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 35.3 KB (35275 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `mysql:9.6.0-oraclelinux9` - linux; arm64 variant v8
+
+```console
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **261.5 MB (261474832 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mysqld"]`
+
+```dockerfile
+# Fri, 16 Jan 2026 23:07:56 GMT
+ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
+# Fri, 16 Jan 2026 23:07:56 GMT
+CMD ["/bin/bash"]
+# Wed, 21 Jan 2026 22:52:07 GMT
+RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
+# Wed, 21 Jan 2026 22:52:09 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 21 Jan 2026 22:52:09 GMT
+RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_MAJOR=innovation
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
+RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
+RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
+# Wed, 21 Jan 2026 22:53:53 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 21 Jan 2026 22:53:53 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 21 Jan 2026 22:53:53 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 21 Jan 2026 22:53:53 GMT
+EXPOSE map[3306/tcp:{} 33060/tcp:{}]
+# Wed, 21 Jan 2026 22:53:53 GMT
+CMD ["mysqld"]
+```
+
+-	Layers:
+	-	`sha256:215869f0a490442d73ee5a088f5ff9c0c81a3fdc8ca1bb0d906ceecc38d4ba59`  
+		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
+		Size: 45.9 MB (45901903 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 884.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mysql:9.6.0-oraclelinux9` - unknown; unknown
+
+```console
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **16.3 MB (16331451 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `mysql:innovation`
 
 ```console
-$ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444b83622cc8ef
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3462,13 +6756,13 @@ $ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444
 ### `mysql:innovation` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca3d692078d6e
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.7 MB (274737070 bytes)**  
+-	Total Size: **266.4 MB (266374976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2150accc6e3f548dc144e1e9aeecca8e06eaa5eb0f0fde96013dec583e13625`
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -3477,39 +6771,39 @@ $ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:17:36 GMT
+# Wed, 21 Jan 2026 22:47:02 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:18:02 GMT
+# Wed, 21 Jan 2026 22:47:25 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:18:03 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 CMD ["mysqld"]
 ```
 
@@ -3518,77 +6812,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e3687b576e09030d0137b68778ac8b794e931d12c86233b9a846bed3e1cee7`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:488d39dd8c3ecec5a4aa482ea82cbdd336bdf0ccc5e9fe97857acc6f19f3061d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e2cc70f011730a52b024ae2217527eaf26f9627e76590a5236d1381372c1463`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 6.2 MB (6175172 bytes)  
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68b569d93fe587e6f7fc6d4d6f8653ab0662793b182ec4d3c2f7915720c9395b`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e3b86c4294968844915992442cc209a431158244998ffda17ffadd9a115cff`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29dc23d7bfcd16f0b280c416002d296812d269a41c7c914c2d6a770e9622ba5`  
-		Last Modified: Sat, 17 Jan 2026 00:01:26 GMT  
-		Size: 51.3 MB (51337329 bytes)  
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bbf0633cdd1831a67a9dd9e767018829498f2a3e4fa8023f787b70fc5147d65`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6278c3f9bc1393ee533135a2366665f8e05f4006e5d80fef8f27cf4bac9a7f3d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:51 GMT  
-		Size: 169.1 MB (169116992 bytes)  
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5fb9df71aa98262f8a9b94308790682229f0a9a4662169d4a7deb49ffef53e1`  
-		Last Modified: Fri, 16 Jan 2026 23:19:48 GMT  
-		Size: 5.3 KB (5328 bytes)  
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:innovation` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:e9f880b5c30c1ed1e434f86aaf4669bb2b06b98209036a1a780dee6d316af0f9
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17846967 bytes)**  
+-	Total Size: **16.3 MB (16332655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76a568dab01176bf1ac94375790d9b171339fff11f5149e5be36d707622190f8`
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:30c78be3a8366c1d99d9bc3f09d75ef95f74e69bd4365c72f7c15df05d7d0f6f`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 17.8 MB (17811692 bytes)  
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fb1f586e520b7839e804b9bcb4824f426e7dd7a9f40dcb7ca1a739b05d56fb07`  
-		Last Modified: Sat, 17 Jan 2026 01:03:06 GMT  
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 35.3 KB (35275 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:innovation` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bceb1751fd1fa4
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.8 MB (269797530 bytes)**  
+-	Total Size: **261.5 MB (261474832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9bb20f25c17502ee290cf550fce4ae60f80647e14a2889841e0fdaf337b0bf1`
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -3597,39 +6891,39 @@ $ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bce
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:01 GMT
+# Wed, 21 Jan 2026 22:52:07 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:29:29 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 CMD ["mysqld"]
 ```
 
@@ -3638,71 +6932,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60924c82fbc82a9eecc1572df06a50145607fd242e5f1fb9439b05f8240bff09`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fb5892b8b345e3cb2c3ddcac58883355e6ed7137963e770d8be9966865b117a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
-		Size: 737.5 KB (737527 bytes)  
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f1dd235a9a2a7e215341f6e7b49b32f597d401af25cfb2a3cff5a3d35f0e826`  
-		Last Modified: Fri, 16 Jan 2026 23:31:30 GMT  
-		Size: 5.8 MB (5798074 bytes)  
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d15d83c289fce8ad2b520678e01610240d31a47c14b78e71b915ac2ffd06186d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:32 GMT  
-		Size: 2.6 KB (2603 bytes)  
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98c0743b28fcff60aeb4d6fa3b4e513a70d1c6f88e0b87b33650e8b8f79c0c93`  
-		Last Modified: Fri, 16 Jan 2026 23:31:19 GMT  
-		Size: 341.0 B  
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f1761851302a3e2edd49ac48552aee144d5037d284d54b44121cf2582db8387`  
-		Last Modified: Fri, 16 Jan 2026 23:31:34 GMT  
-		Size: 50.0 MB (49960731 bytes)  
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e766303672c6740f7064ab2366ae746c37371b8f99fb0c5b2c2028d6629fc5c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 325.0 B  
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9aa56a3fad114533409ef35e78b8d1ea8ece781aab2d1b236105dc38f23dd933`  
-		Last Modified: Fri, 16 Jan 2026 23:31:23 GMT  
-		Size: 167.4 MB (167389810 bytes)  
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7933d1e6d8aebb094bfc24e0e8427937f35b352308579c048531fc30b561e0c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:innovation` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:ba4120e2e4755e5c5e8df7ba5ac2224321201db0ec32bf60868dbb5fbefe0b63
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17842447 bytes)**  
+-	Total Size: **16.3 MB (16331451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ea796dcb648beb4d659a8b9c8bba9692a1df9f7a83c9e57d6cf10fbcfc95d02`
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:605099f469cfd4acf5650903f362545b02a5810b5898ca2ef32f242d0931b34e`  
-		Last Modified: Sat, 17 Jan 2026 01:03:25 GMT  
-		Size: 17.8 MB (17806831 bytes)  
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:916ea0327b00bcba62230558f1497b7bd5c252511f547e28fa8d5d889d86a9f1`  
-		Last Modified: Sat, 17 Jan 2026 01:03:28 GMT  
-		Size: 35.6 KB (35616 bytes)  
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:innovation-oracle`
 
 ```console
-$ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444b83622cc8ef
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3715,13 +7009,13 @@ $ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444
 ### `mysql:innovation-oracle` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca3d692078d6e
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.7 MB (274737070 bytes)**  
+-	Total Size: **266.4 MB (266374976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2150accc6e3f548dc144e1e9aeecca8e06eaa5eb0f0fde96013dec583e13625`
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -3730,39 +7024,39 @@ $ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:17:36 GMT
+# Wed, 21 Jan 2026 22:47:02 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:18:02 GMT
+# Wed, 21 Jan 2026 22:47:25 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:18:03 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 CMD ["mysqld"]
 ```
 
@@ -3771,77 +7065,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e3687b576e09030d0137b68778ac8b794e931d12c86233b9a846bed3e1cee7`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:488d39dd8c3ecec5a4aa482ea82cbdd336bdf0ccc5e9fe97857acc6f19f3061d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e2cc70f011730a52b024ae2217527eaf26f9627e76590a5236d1381372c1463`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 6.2 MB (6175172 bytes)  
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68b569d93fe587e6f7fc6d4d6f8653ab0662793b182ec4d3c2f7915720c9395b`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e3b86c4294968844915992442cc209a431158244998ffda17ffadd9a115cff`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29dc23d7bfcd16f0b280c416002d296812d269a41c7c914c2d6a770e9622ba5`  
-		Last Modified: Sat, 17 Jan 2026 00:01:26 GMT  
-		Size: 51.3 MB (51337329 bytes)  
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bbf0633cdd1831a67a9dd9e767018829498f2a3e4fa8023f787b70fc5147d65`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6278c3f9bc1393ee533135a2366665f8e05f4006e5d80fef8f27cf4bac9a7f3d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:51 GMT  
-		Size: 169.1 MB (169116992 bytes)  
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5fb9df71aa98262f8a9b94308790682229f0a9a4662169d4a7deb49ffef53e1`  
-		Last Modified: Fri, 16 Jan 2026 23:19:48 GMT  
-		Size: 5.3 KB (5328 bytes)  
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:innovation-oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:e9f880b5c30c1ed1e434f86aaf4669bb2b06b98209036a1a780dee6d316af0f9
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17846967 bytes)**  
+-	Total Size: **16.3 MB (16332655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76a568dab01176bf1ac94375790d9b171339fff11f5149e5be36d707622190f8`
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:30c78be3a8366c1d99d9bc3f09d75ef95f74e69bd4365c72f7c15df05d7d0f6f`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 17.8 MB (17811692 bytes)  
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fb1f586e520b7839e804b9bcb4824f426e7dd7a9f40dcb7ca1a739b05d56fb07`  
-		Last Modified: Sat, 17 Jan 2026 01:03:06 GMT  
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 35.3 KB (35275 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:innovation-oracle` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bceb1751fd1fa4
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.8 MB (269797530 bytes)**  
+-	Total Size: **261.5 MB (261474832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9bb20f25c17502ee290cf550fce4ae60f80647e14a2889841e0fdaf337b0bf1`
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -3850,39 +7144,39 @@ $ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bce
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:01 GMT
+# Wed, 21 Jan 2026 22:52:07 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:29:29 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 CMD ["mysqld"]
 ```
 
@@ -3891,71 +7185,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60924c82fbc82a9eecc1572df06a50145607fd242e5f1fb9439b05f8240bff09`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fb5892b8b345e3cb2c3ddcac58883355e6ed7137963e770d8be9966865b117a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
-		Size: 737.5 KB (737527 bytes)  
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f1dd235a9a2a7e215341f6e7b49b32f597d401af25cfb2a3cff5a3d35f0e826`  
-		Last Modified: Fri, 16 Jan 2026 23:31:30 GMT  
-		Size: 5.8 MB (5798074 bytes)  
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d15d83c289fce8ad2b520678e01610240d31a47c14b78e71b915ac2ffd06186d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:32 GMT  
-		Size: 2.6 KB (2603 bytes)  
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98c0743b28fcff60aeb4d6fa3b4e513a70d1c6f88e0b87b33650e8b8f79c0c93`  
-		Last Modified: Fri, 16 Jan 2026 23:31:19 GMT  
-		Size: 341.0 B  
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f1761851302a3e2edd49ac48552aee144d5037d284d54b44121cf2582db8387`  
-		Last Modified: Fri, 16 Jan 2026 23:31:34 GMT  
-		Size: 50.0 MB (49960731 bytes)  
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e766303672c6740f7064ab2366ae746c37371b8f99fb0c5b2c2028d6629fc5c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 325.0 B  
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9aa56a3fad114533409ef35e78b8d1ea8ece781aab2d1b236105dc38f23dd933`  
-		Last Modified: Fri, 16 Jan 2026 23:31:23 GMT  
-		Size: 167.4 MB (167389810 bytes)  
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7933d1e6d8aebb094bfc24e0e8427937f35b352308579c048531fc30b561e0c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:innovation-oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:ba4120e2e4755e5c5e8df7ba5ac2224321201db0ec32bf60868dbb5fbefe0b63
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17842447 bytes)**  
+-	Total Size: **16.3 MB (16331451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ea796dcb648beb4d659a8b9c8bba9692a1df9f7a83c9e57d6cf10fbcfc95d02`
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:605099f469cfd4acf5650903f362545b02a5810b5898ca2ef32f242d0931b34e`  
-		Last Modified: Sat, 17 Jan 2026 01:03:25 GMT  
-		Size: 17.8 MB (17806831 bytes)  
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:916ea0327b00bcba62230558f1497b7bd5c252511f547e28fa8d5d889d86a9f1`  
-		Last Modified: Sat, 17 Jan 2026 01:03:28 GMT  
-		Size: 35.6 KB (35616 bytes)  
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:innovation-oraclelinux9`
 
 ```console
-$ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444b83622cc8ef
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3968,13 +7262,13 @@ $ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444
 ### `mysql:innovation-oraclelinux9` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca3d692078d6e
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.7 MB (274737070 bytes)**  
+-	Total Size: **266.4 MB (266374976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2150accc6e3f548dc144e1e9aeecca8e06eaa5eb0f0fde96013dec583e13625`
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -3983,39 +7277,39 @@ $ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:17:36 GMT
+# Wed, 21 Jan 2026 22:47:02 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:18:02 GMT
+# Wed, 21 Jan 2026 22:47:25 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:18:03 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 CMD ["mysqld"]
 ```
 
@@ -4024,77 +7318,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e3687b576e09030d0137b68778ac8b794e931d12c86233b9a846bed3e1cee7`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:488d39dd8c3ecec5a4aa482ea82cbdd336bdf0ccc5e9fe97857acc6f19f3061d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e2cc70f011730a52b024ae2217527eaf26f9627e76590a5236d1381372c1463`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 6.2 MB (6175172 bytes)  
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68b569d93fe587e6f7fc6d4d6f8653ab0662793b182ec4d3c2f7915720c9395b`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e3b86c4294968844915992442cc209a431158244998ffda17ffadd9a115cff`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29dc23d7bfcd16f0b280c416002d296812d269a41c7c914c2d6a770e9622ba5`  
-		Last Modified: Sat, 17 Jan 2026 00:01:26 GMT  
-		Size: 51.3 MB (51337329 bytes)  
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bbf0633cdd1831a67a9dd9e767018829498f2a3e4fa8023f787b70fc5147d65`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6278c3f9bc1393ee533135a2366665f8e05f4006e5d80fef8f27cf4bac9a7f3d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:51 GMT  
-		Size: 169.1 MB (169116992 bytes)  
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5fb9df71aa98262f8a9b94308790682229f0a9a4662169d4a7deb49ffef53e1`  
-		Last Modified: Fri, 16 Jan 2026 23:19:48 GMT  
-		Size: 5.3 KB (5328 bytes)  
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:innovation-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:e9f880b5c30c1ed1e434f86aaf4669bb2b06b98209036a1a780dee6d316af0f9
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17846967 bytes)**  
+-	Total Size: **16.3 MB (16332655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76a568dab01176bf1ac94375790d9b171339fff11f5149e5be36d707622190f8`
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:30c78be3a8366c1d99d9bc3f09d75ef95f74e69bd4365c72f7c15df05d7d0f6f`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 17.8 MB (17811692 bytes)  
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fb1f586e520b7839e804b9bcb4824f426e7dd7a9f40dcb7ca1a739b05d56fb07`  
-		Last Modified: Sat, 17 Jan 2026 01:03:06 GMT  
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 35.3 KB (35275 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:innovation-oraclelinux9` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bceb1751fd1fa4
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.8 MB (269797530 bytes)**  
+-	Total Size: **261.5 MB (261474832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9bb20f25c17502ee290cf550fce4ae60f80647e14a2889841e0fdaf337b0bf1`
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -4103,39 +7397,39 @@ $ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bce
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:01 GMT
+# Wed, 21 Jan 2026 22:52:07 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:29:29 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 CMD ["mysqld"]
 ```
 
@@ -4144,71 +7438,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60924c82fbc82a9eecc1572df06a50145607fd242e5f1fb9439b05f8240bff09`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fb5892b8b345e3cb2c3ddcac58883355e6ed7137963e770d8be9966865b117a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
-		Size: 737.5 KB (737527 bytes)  
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f1dd235a9a2a7e215341f6e7b49b32f597d401af25cfb2a3cff5a3d35f0e826`  
-		Last Modified: Fri, 16 Jan 2026 23:31:30 GMT  
-		Size: 5.8 MB (5798074 bytes)  
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d15d83c289fce8ad2b520678e01610240d31a47c14b78e71b915ac2ffd06186d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:32 GMT  
-		Size: 2.6 KB (2603 bytes)  
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98c0743b28fcff60aeb4d6fa3b4e513a70d1c6f88e0b87b33650e8b8f79c0c93`  
-		Last Modified: Fri, 16 Jan 2026 23:31:19 GMT  
-		Size: 341.0 B  
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f1761851302a3e2edd49ac48552aee144d5037d284d54b44121cf2582db8387`  
-		Last Modified: Fri, 16 Jan 2026 23:31:34 GMT  
-		Size: 50.0 MB (49960731 bytes)  
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e766303672c6740f7064ab2366ae746c37371b8f99fb0c5b2c2028d6629fc5c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 325.0 B  
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9aa56a3fad114533409ef35e78b8d1ea8ece781aab2d1b236105dc38f23dd933`  
-		Last Modified: Fri, 16 Jan 2026 23:31:23 GMT  
-		Size: 167.4 MB (167389810 bytes)  
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7933d1e6d8aebb094bfc24e0e8427937f35b352308579c048531fc30b561e0c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:innovation-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:ba4120e2e4755e5c5e8df7ba5ac2224321201db0ec32bf60868dbb5fbefe0b63
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17842447 bytes)**  
+-	Total Size: **16.3 MB (16331451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ea796dcb648beb4d659a8b9c8bba9692a1df9f7a83c9e57d6cf10fbcfc95d02`
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:605099f469cfd4acf5650903f362545b02a5810b5898ca2ef32f242d0931b34e`  
-		Last Modified: Sat, 17 Jan 2026 01:03:25 GMT  
-		Size: 17.8 MB (17806831 bytes)  
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:916ea0327b00bcba62230558f1497b7bd5c252511f547e28fa8d5d889d86a9f1`  
-		Last Modified: Sat, 17 Jan 2026 01:03:28 GMT  
-		Size: 35.6 KB (35616 bytes)  
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:latest`
 
 ```console
-$ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444b83622cc8ef
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4221,13 +7515,13 @@ $ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444
 ### `mysql:latest` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca3d692078d6e
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.7 MB (274737070 bytes)**  
+-	Total Size: **266.4 MB (266374976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2150accc6e3f548dc144e1e9aeecca8e06eaa5eb0f0fde96013dec583e13625`
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -4236,39 +7530,39 @@ $ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:17:36 GMT
+# Wed, 21 Jan 2026 22:47:02 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:18:02 GMT
+# Wed, 21 Jan 2026 22:47:25 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:18:03 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 CMD ["mysqld"]
 ```
 
@@ -4277,77 +7571,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e3687b576e09030d0137b68778ac8b794e931d12c86233b9a846bed3e1cee7`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:488d39dd8c3ecec5a4aa482ea82cbdd336bdf0ccc5e9fe97857acc6f19f3061d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e2cc70f011730a52b024ae2217527eaf26f9627e76590a5236d1381372c1463`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 6.2 MB (6175172 bytes)  
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68b569d93fe587e6f7fc6d4d6f8653ab0662793b182ec4d3c2f7915720c9395b`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e3b86c4294968844915992442cc209a431158244998ffda17ffadd9a115cff`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29dc23d7bfcd16f0b280c416002d296812d269a41c7c914c2d6a770e9622ba5`  
-		Last Modified: Sat, 17 Jan 2026 00:01:26 GMT  
-		Size: 51.3 MB (51337329 bytes)  
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bbf0633cdd1831a67a9dd9e767018829498f2a3e4fa8023f787b70fc5147d65`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6278c3f9bc1393ee533135a2366665f8e05f4006e5d80fef8f27cf4bac9a7f3d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:51 GMT  
-		Size: 169.1 MB (169116992 bytes)  
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5fb9df71aa98262f8a9b94308790682229f0a9a4662169d4a7deb49ffef53e1`  
-		Last Modified: Fri, 16 Jan 2026 23:19:48 GMT  
-		Size: 5.3 KB (5328 bytes)  
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:latest` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:e9f880b5c30c1ed1e434f86aaf4669bb2b06b98209036a1a780dee6d316af0f9
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17846967 bytes)**  
+-	Total Size: **16.3 MB (16332655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76a568dab01176bf1ac94375790d9b171339fff11f5149e5be36d707622190f8`
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:30c78be3a8366c1d99d9bc3f09d75ef95f74e69bd4365c72f7c15df05d7d0f6f`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 17.8 MB (17811692 bytes)  
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fb1f586e520b7839e804b9bcb4824f426e7dd7a9f40dcb7ca1a739b05d56fb07`  
-		Last Modified: Sat, 17 Jan 2026 01:03:06 GMT  
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 35.3 KB (35275 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bceb1751fd1fa4
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.8 MB (269797530 bytes)**  
+-	Total Size: **261.5 MB (261474832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9bb20f25c17502ee290cf550fce4ae60f80647e14a2889841e0fdaf337b0bf1`
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -4356,39 +7650,39 @@ $ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bce
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:01 GMT
+# Wed, 21 Jan 2026 22:52:07 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:29:29 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 CMD ["mysqld"]
 ```
 
@@ -4397,71 +7691,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60924c82fbc82a9eecc1572df06a50145607fd242e5f1fb9439b05f8240bff09`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fb5892b8b345e3cb2c3ddcac58883355e6ed7137963e770d8be9966865b117a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
-		Size: 737.5 KB (737527 bytes)  
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f1dd235a9a2a7e215341f6e7b49b32f597d401af25cfb2a3cff5a3d35f0e826`  
-		Last Modified: Fri, 16 Jan 2026 23:31:30 GMT  
-		Size: 5.8 MB (5798074 bytes)  
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d15d83c289fce8ad2b520678e01610240d31a47c14b78e71b915ac2ffd06186d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:32 GMT  
-		Size: 2.6 KB (2603 bytes)  
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98c0743b28fcff60aeb4d6fa3b4e513a70d1c6f88e0b87b33650e8b8f79c0c93`  
-		Last Modified: Fri, 16 Jan 2026 23:31:19 GMT  
-		Size: 341.0 B  
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f1761851302a3e2edd49ac48552aee144d5037d284d54b44121cf2582db8387`  
-		Last Modified: Fri, 16 Jan 2026 23:31:34 GMT  
-		Size: 50.0 MB (49960731 bytes)  
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e766303672c6740f7064ab2366ae746c37371b8f99fb0c5b2c2028d6629fc5c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 325.0 B  
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9aa56a3fad114533409ef35e78b8d1ea8ece781aab2d1b236105dc38f23dd933`  
-		Last Modified: Fri, 16 Jan 2026 23:31:23 GMT  
-		Size: 167.4 MB (167389810 bytes)  
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7933d1e6d8aebb094bfc24e0e8427937f35b352308579c048531fc30b561e0c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:latest` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:ba4120e2e4755e5c5e8df7ba5ac2224321201db0ec32bf60868dbb5fbefe0b63
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17842447 bytes)**  
+-	Total Size: **16.3 MB (16331451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ea796dcb648beb4d659a8b9c8bba9692a1df9f7a83c9e57d6cf10fbcfc95d02`
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:605099f469cfd4acf5650903f362545b02a5810b5898ca2ef32f242d0931b34e`  
-		Last Modified: Sat, 17 Jan 2026 01:03:25 GMT  
-		Size: 17.8 MB (17806831 bytes)  
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:916ea0327b00bcba62230558f1497b7bd5c252511f547e28fa8d5d889d86a9f1`  
-		Last Modified: Sat, 17 Jan 2026 01:03:28 GMT  
-		Size: 35.6 KB (35616 bytes)  
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:lts`
 
 ```console
-$ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207f3577901903
+$ docker pull mysql@sha256:cf6d1c8f2d31c73c878c6f5f60c2bec46701c41d5baf99100888bef5b6578b86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4474,13 +7768,13 @@ $ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207
 ### `mysql:lts` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a294ea72ee331
+$ docker pull mysql@sha256:cee2bcd7cfece021d2e13229e660e2072ed50c9dd4635d2797c8954154ed1739
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233029943 bytes)**  
+-	Total Size: **233.2 MB (233230172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0de4015d5b1f0fa462e43b48c29f8f66eacdd16d11e07aedf3b13533adadd504`
+-	Image ID: `sha256:3890a37ddb73dd2c66d963f1b2c0fe051ccd580564526e85ea0073d08e926369`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -4489,39 +7783,39 @@ $ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a2
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:26:03 GMT
+# Wed, 21 Jan 2026 22:47:54 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:26:26 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:26:27 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:49:18 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:18 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 CMD ["mysqld"]
 ```
 
@@ -4530,77 +7824,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:023bf5ce6a4829c6b33eed0642d64a38f47927272c4921804abfda8bab0077ca`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 884.0 B  
+	-	`sha256:e7c9c940ed3326dbe75491b5c125f4e77409c20f1607b63e8d19a3c80b842f3e`  
+		Last Modified: Thu, 22 Jan 2026 01:02:18 GMT  
+		Size: 885.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24675d42775811c6a521aae8e2b0b47a989f8f35f2f254fdd43f7828c71d07bd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:dcefadb1e23c809499894384898688261866d60eba933b77725f25e26c3e97ac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 783.6 KB (783557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad32417d60c256a66828d3cfdc9ca9244576811a840000536e9a8d11c23e5d68`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 6.2 MB (6175148 bytes)  
+	-	`sha256:3751cab74b958e7f2a28d97747761761c9ca8dcb19db045bf8715e1c88b02a77`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 6.2 MB (6175161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25809bf57a8f169efb1bbd6588c1732f4f1836916ace0b507a4fef3dd158bfb4`  
-		Last Modified: Fri, 16 Jan 2026 23:28:04 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:3c365df7c813339968023fded5e9042d098bb834a37079c11cfe99c16056e452`  
+		Last Modified: Wed, 21 Jan 2026 23:47:14 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b13420727c1c0c0e213907e2e6267a5974c8c3dded97de2a95207f357668a52f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
+	-	`sha256:14d59e782af07065a94adad658374505a377347a587b0ea862c9caabfcd1215a`  
+		Last Modified: Wed, 21 Jan 2026 22:49:50 GMT  
 		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff6e8ae58e2456042811ffa3661febd52abc2c7761443b2213c52bf6a56e469d`  
-		Last Modified: Fri, 16 Jan 2026 23:28:07 GMT  
-		Size: 47.8 MB (47815365 bytes)  
+	-	`sha256:e06c9b222c64ef602389ece95bb72bac5893dd58b6edb5345235ecefa8616907`  
+		Last Modified: Wed, 21 Jan 2026 22:50:06 GMT  
+		Size: 47.8 MB (47811670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b034b0c553cfc069b162e27ecb7ee469e94daeab571d7f5cd3a83b1498eee6`  
-		Last Modified: Fri, 16 Jan 2026 23:28:00 GMT  
-		Size: 320.0 B  
+	-	`sha256:5ba7f8d3ecf830b612dd6ec5f2c8203c6a17f663a77102f0ffb793c1a1d589be`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ada6ad8c9d8c75d4beafab09f3234c75c361caa487b16fcc00ea8c5907ba435f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:55 GMT  
-		Size: 130.9 MB (130931861 bytes)  
+	-	`sha256:43c069718c101f0277bc8229dd2590bcb63d96f97ac9813addffd1b74d0d370f`  
+		Last Modified: Wed, 21 Jan 2026 22:49:53 GMT  
+		Size: 131.1 MB (131135770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fdbfdab06595d747aec81e55886fdb0156d0b08d001428224983ccaeea978cd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:53 GMT  
+	-	`sha256:c156dd23b850679b32b7f01f7d6fdc723966e165960e36800e3bd87e4740de17`  
+		Last Modified: Wed, 21 Jan 2026 22:49:51 GMT  
 		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:lts` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:559414d5a80ae23d630ca19319c21f058973449c33226576fc7ce777c6cb4887
+$ docker pull mysql@sha256:be16c973ece26bb060d837d03f50d148f5ba91ac5626368218b8e3a845047488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14931466 bytes)**  
+-	Total Size: **15.3 MB (15268497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741bc7ae4fa3c416b37a5fe586eed0fe24ec1c96a10c3ccc34d9f86157d24ab3`
+-	Image ID: `sha256:b82df3286018a1d6cd6af61b31d53c2001d7503a9d7019268bee01205d261d23`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:029be1fc012084294f155b71ce8e88e6926982da803de7249b0fdab37f5291b7`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 14.9 MB (14897258 bytes)  
+	-	`sha256:3339e5486c0c4cc6a3b8d51d1b3345afe45209ee3e2c44b15834ea10ba988fde`  
+		Last Modified: Thu, 22 Jan 2026 01:02:23 GMT  
+		Size: 15.2 MB (15234290 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa111391adf2a8236c93d7b80ad95600395c646f74bed884c95f212dfe1d5eab`  
-		Last Modified: Sat, 17 Jan 2026 01:02:26 GMT  
-		Size: 34.2 KB (34208 bytes)  
+	-	`sha256:9377b2f281254f96efd66320022665c8cd5568ad522938d3fe3898e62ae20660`  
+		Last Modified: Thu, 22 Jan 2026 01:02:24 GMT  
+		Size: 34.2 KB (34207 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:lts` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29253abb57e65
+$ docker pull mysql@sha256:509287abcaa38a3d334cf61bd787d0d523504c684990042f62fa4bfbadd1cb5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.5 MB (228462563 bytes)**  
+-	Total Size: **228.7 MB (228698723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5da2a12c183ff681379744e7047ff53800e8dfe4b7217b525b4c92ed1728e21a`
+-	Image ID: `sha256:e1fc1f3b0c1ad069b3e2a75bbd8036e5104f668132ef18ef6d542d86b85e2b06`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -4609,39 +7903,39 @@ $ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:32 GMT
+# Wed, 21 Jan 2026 22:52:53 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:53:20 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:54:27 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 CMD ["mysqld"]
 ```
 
@@ -4650,71 +7944,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de3a139db383dcfd82710bfab9154fec7b22c1598706cabfb21480997ab9f09f`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
-		Size: 885.0 B  
+	-	`sha256:3da72dcb236c1597383af262a9f45c86ca2b4b75d909507a3ac5b0eb6d7bd801`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ff917e53173311673a78eef92f68b58006c7d241f55c90c063ff5d35f9b5f80`  
-		Last Modified: Fri, 16 Jan 2026 23:31:36 GMT  
-		Size: 737.5 KB (737528 bytes)  
+	-	`sha256:4c9d33c81d6768ce0368969dfaf925fbf6624bdf9202a7fe6d15e54b846c0e13`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 737.5 KB (737526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7057a5a35be927e2eee436ccbee6ade905cf2905e0ded231f1eee51dd537d28`  
-		Last Modified: Fri, 16 Jan 2026 23:31:48 GMT  
-		Size: 5.8 MB (5798058 bytes)  
+	-	`sha256:7699a954d9de859b4b92ab5459f58e582e3085a82e29fa85c372c885cbd75f06`  
+		Last Modified: Wed, 21 Jan 2026 22:55:12 GMT  
+		Size: 5.8 MB (5798064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3a3050ea2531d36b577b983be8afb48eee1fe18fe044013308e8cd5bb8d835a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:54 GMT  
+	-	`sha256:8ccbceaa8cf24fa2833a2afe398ccde1f6ff2bbee670abd536c014c84fdcf94d`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
 		Size: 2.6 KB (2607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37938fa9ff7d875ad4ea6b70f7fe1f112527c6ea161c7ab4b6a17b417591da1`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
-		Size: 332.0 B  
+	-	`sha256:94f6521db4dbfdbb841dcd5d6d34f10bf9c3741fa4a8d009fbbd9703846ab0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:54:59 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f655cab6299cf71d7e9c2b44899bf9bd147d252fd3a35fddd6d22b99ddbf324a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:52 GMT  
-		Size: 46.7 MB (46691693 bytes)  
+	-	`sha256:cc1b36f2667d57cda43bb84edc3e089860e2f0d619fe5cc7a4ca134f30df64ee`  
+		Last Modified: Wed, 21 Jan 2026 22:55:00 GMT  
+		Size: 46.7 MB (46699165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fec303eb563de541b75b7ea0dfda5ea894d8827ad63d4e61a2b23b2f7db927d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
+	-	`sha256:f2c61b1843fc9549819d2149bd4ff4fc0c9ec59f7a7f62116469dfe294bbfae2`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 321.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18b56d2ace31229a18ebed0f0205fab2b619aa2666b2af3e52520b805cb0ae6d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:40 GMT  
-		Size: 129.3 MB (129323901 bytes)  
+	-	`sha256:a6d81e4d2c7b063ca6af6c142014724fd25f4b78bd37fbbbccf582016aa124db`  
+		Last Modified: Wed, 21 Jan 2026 22:55:03 GMT  
+		Size: 129.6 MB (129552583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151e2f48537d7e373cc742a1feef8240ad319f811917e7c8ffe31da18ba8d82`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
+	-	`sha256:c2eea1ca45c6c742395a1c8b5d7327e0a8ffb8246a250cd5211862ed87b5662c`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:lts` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:0becb120ac404c9cb5053d5f7ab407549476090ac87b8ca2614f187d759c2d11
+$ docker pull mysql@sha256:7fdb2d55797d9e264ef6ff6971dce8f068ad60acf77c245b9e2d7bf79c5d2e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14930191 bytes)**  
+-	Total Size: **15.3 MB (15267223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56cc389471f6a58f4b1f57e8ec9a1ac08ec71b85b32282bb94c1bdef8f918e0f`
+-	Image ID: `sha256:c8ab615fb5da4e8f4d9be289b02378388973342472e21c5a103210f09f2a0e75`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf05006e49674ec49c6960a63fd16768a1ba783574e4feabbf5cf66257c923e9`  
-		Last Modified: Sat, 17 Jan 2026 01:02:37 GMT  
-		Size: 14.9 MB (14895678 bytes)  
+	-	`sha256:7cb8424279707d32f1f981f563752532ae08ba2091882802e59162d842af3f95`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 15.2 MB (15232710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:21660c0a2842109c3be55e8454bacac54817f6f768500373c4cef54317156538`  
-		Last Modified: Sat, 17 Jan 2026 01:02:38 GMT  
+	-	`sha256:3794e62c5aa6c87d503274951dc859252ccf0086cad9ebf25ffaf00b2d9fe472`  
+		Last Modified: Thu, 22 Jan 2026 01:02:36 GMT  
 		Size: 34.5 KB (34513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:lts-oracle`
 
 ```console
-$ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207f3577901903
+$ docker pull mysql@sha256:cf6d1c8f2d31c73c878c6f5f60c2bec46701c41d5baf99100888bef5b6578b86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4727,13 +8021,13 @@ $ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207
 ### `mysql:lts-oracle` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a294ea72ee331
+$ docker pull mysql@sha256:cee2bcd7cfece021d2e13229e660e2072ed50c9dd4635d2797c8954154ed1739
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233029943 bytes)**  
+-	Total Size: **233.2 MB (233230172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0de4015d5b1f0fa462e43b48c29f8f66eacdd16d11e07aedf3b13533adadd504`
+-	Image ID: `sha256:3890a37ddb73dd2c66d963f1b2c0fe051ccd580564526e85ea0073d08e926369`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -4742,39 +8036,39 @@ $ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a2
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:26:03 GMT
+# Wed, 21 Jan 2026 22:47:54 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:26:26 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:26:27 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:49:18 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:18 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 CMD ["mysqld"]
 ```
 
@@ -4783,77 +8077,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:023bf5ce6a4829c6b33eed0642d64a38f47927272c4921804abfda8bab0077ca`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 884.0 B  
+	-	`sha256:e7c9c940ed3326dbe75491b5c125f4e77409c20f1607b63e8d19a3c80b842f3e`  
+		Last Modified: Thu, 22 Jan 2026 01:02:18 GMT  
+		Size: 885.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24675d42775811c6a521aae8e2b0b47a989f8f35f2f254fdd43f7828c71d07bd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:dcefadb1e23c809499894384898688261866d60eba933b77725f25e26c3e97ac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 783.6 KB (783557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad32417d60c256a66828d3cfdc9ca9244576811a840000536e9a8d11c23e5d68`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 6.2 MB (6175148 bytes)  
+	-	`sha256:3751cab74b958e7f2a28d97747761761c9ca8dcb19db045bf8715e1c88b02a77`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 6.2 MB (6175161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25809bf57a8f169efb1bbd6588c1732f4f1836916ace0b507a4fef3dd158bfb4`  
-		Last Modified: Fri, 16 Jan 2026 23:28:04 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:3c365df7c813339968023fded5e9042d098bb834a37079c11cfe99c16056e452`  
+		Last Modified: Wed, 21 Jan 2026 23:47:14 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b13420727c1c0c0e213907e2e6267a5974c8c3dded97de2a95207f357668a52f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
+	-	`sha256:14d59e782af07065a94adad658374505a377347a587b0ea862c9caabfcd1215a`  
+		Last Modified: Wed, 21 Jan 2026 22:49:50 GMT  
 		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff6e8ae58e2456042811ffa3661febd52abc2c7761443b2213c52bf6a56e469d`  
-		Last Modified: Fri, 16 Jan 2026 23:28:07 GMT  
-		Size: 47.8 MB (47815365 bytes)  
+	-	`sha256:e06c9b222c64ef602389ece95bb72bac5893dd58b6edb5345235ecefa8616907`  
+		Last Modified: Wed, 21 Jan 2026 22:50:06 GMT  
+		Size: 47.8 MB (47811670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b034b0c553cfc069b162e27ecb7ee469e94daeab571d7f5cd3a83b1498eee6`  
-		Last Modified: Fri, 16 Jan 2026 23:28:00 GMT  
-		Size: 320.0 B  
+	-	`sha256:5ba7f8d3ecf830b612dd6ec5f2c8203c6a17f663a77102f0ffb793c1a1d589be`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ada6ad8c9d8c75d4beafab09f3234c75c361caa487b16fcc00ea8c5907ba435f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:55 GMT  
-		Size: 130.9 MB (130931861 bytes)  
+	-	`sha256:43c069718c101f0277bc8229dd2590bcb63d96f97ac9813addffd1b74d0d370f`  
+		Last Modified: Wed, 21 Jan 2026 22:49:53 GMT  
+		Size: 131.1 MB (131135770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fdbfdab06595d747aec81e55886fdb0156d0b08d001428224983ccaeea978cd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:53 GMT  
+	-	`sha256:c156dd23b850679b32b7f01f7d6fdc723966e165960e36800e3bd87e4740de17`  
+		Last Modified: Wed, 21 Jan 2026 22:49:51 GMT  
 		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:lts-oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:559414d5a80ae23d630ca19319c21f058973449c33226576fc7ce777c6cb4887
+$ docker pull mysql@sha256:be16c973ece26bb060d837d03f50d148f5ba91ac5626368218b8e3a845047488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14931466 bytes)**  
+-	Total Size: **15.3 MB (15268497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741bc7ae4fa3c416b37a5fe586eed0fe24ec1c96a10c3ccc34d9f86157d24ab3`
+-	Image ID: `sha256:b82df3286018a1d6cd6af61b31d53c2001d7503a9d7019268bee01205d261d23`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:029be1fc012084294f155b71ce8e88e6926982da803de7249b0fdab37f5291b7`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 14.9 MB (14897258 bytes)  
+	-	`sha256:3339e5486c0c4cc6a3b8d51d1b3345afe45209ee3e2c44b15834ea10ba988fde`  
+		Last Modified: Thu, 22 Jan 2026 01:02:23 GMT  
+		Size: 15.2 MB (15234290 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa111391adf2a8236c93d7b80ad95600395c646f74bed884c95f212dfe1d5eab`  
-		Last Modified: Sat, 17 Jan 2026 01:02:26 GMT  
-		Size: 34.2 KB (34208 bytes)  
+	-	`sha256:9377b2f281254f96efd66320022665c8cd5568ad522938d3fe3898e62ae20660`  
+		Last Modified: Thu, 22 Jan 2026 01:02:24 GMT  
+		Size: 34.2 KB (34207 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:lts-oracle` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29253abb57e65
+$ docker pull mysql@sha256:509287abcaa38a3d334cf61bd787d0d523504c684990042f62fa4bfbadd1cb5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.5 MB (228462563 bytes)**  
+-	Total Size: **228.7 MB (228698723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5da2a12c183ff681379744e7047ff53800e8dfe4b7217b525b4c92ed1728e21a`
+-	Image ID: `sha256:e1fc1f3b0c1ad069b3e2a75bbd8036e5104f668132ef18ef6d542d86b85e2b06`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -4862,39 +8156,39 @@ $ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:32 GMT
+# Wed, 21 Jan 2026 22:52:53 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:53:20 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:54:27 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 CMD ["mysqld"]
 ```
 
@@ -4903,71 +8197,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de3a139db383dcfd82710bfab9154fec7b22c1598706cabfb21480997ab9f09f`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
-		Size: 885.0 B  
+	-	`sha256:3da72dcb236c1597383af262a9f45c86ca2b4b75d909507a3ac5b0eb6d7bd801`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ff917e53173311673a78eef92f68b58006c7d241f55c90c063ff5d35f9b5f80`  
-		Last Modified: Fri, 16 Jan 2026 23:31:36 GMT  
-		Size: 737.5 KB (737528 bytes)  
+	-	`sha256:4c9d33c81d6768ce0368969dfaf925fbf6624bdf9202a7fe6d15e54b846c0e13`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 737.5 KB (737526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7057a5a35be927e2eee436ccbee6ade905cf2905e0ded231f1eee51dd537d28`  
-		Last Modified: Fri, 16 Jan 2026 23:31:48 GMT  
-		Size: 5.8 MB (5798058 bytes)  
+	-	`sha256:7699a954d9de859b4b92ab5459f58e582e3085a82e29fa85c372c885cbd75f06`  
+		Last Modified: Wed, 21 Jan 2026 22:55:12 GMT  
+		Size: 5.8 MB (5798064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3a3050ea2531d36b577b983be8afb48eee1fe18fe044013308e8cd5bb8d835a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:54 GMT  
+	-	`sha256:8ccbceaa8cf24fa2833a2afe398ccde1f6ff2bbee670abd536c014c84fdcf94d`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
 		Size: 2.6 KB (2607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37938fa9ff7d875ad4ea6b70f7fe1f112527c6ea161c7ab4b6a17b417591da1`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
-		Size: 332.0 B  
+	-	`sha256:94f6521db4dbfdbb841dcd5d6d34f10bf9c3741fa4a8d009fbbd9703846ab0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:54:59 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f655cab6299cf71d7e9c2b44899bf9bd147d252fd3a35fddd6d22b99ddbf324a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:52 GMT  
-		Size: 46.7 MB (46691693 bytes)  
+	-	`sha256:cc1b36f2667d57cda43bb84edc3e089860e2f0d619fe5cc7a4ca134f30df64ee`  
+		Last Modified: Wed, 21 Jan 2026 22:55:00 GMT  
+		Size: 46.7 MB (46699165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fec303eb563de541b75b7ea0dfda5ea894d8827ad63d4e61a2b23b2f7db927d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
+	-	`sha256:f2c61b1843fc9549819d2149bd4ff4fc0c9ec59f7a7f62116469dfe294bbfae2`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 321.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18b56d2ace31229a18ebed0f0205fab2b619aa2666b2af3e52520b805cb0ae6d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:40 GMT  
-		Size: 129.3 MB (129323901 bytes)  
+	-	`sha256:a6d81e4d2c7b063ca6af6c142014724fd25f4b78bd37fbbbccf582016aa124db`  
+		Last Modified: Wed, 21 Jan 2026 22:55:03 GMT  
+		Size: 129.6 MB (129552583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151e2f48537d7e373cc742a1feef8240ad319f811917e7c8ffe31da18ba8d82`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
+	-	`sha256:c2eea1ca45c6c742395a1c8b5d7327e0a8ffb8246a250cd5211862ed87b5662c`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:lts-oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:0becb120ac404c9cb5053d5f7ab407549476090ac87b8ca2614f187d759c2d11
+$ docker pull mysql@sha256:7fdb2d55797d9e264ef6ff6971dce8f068ad60acf77c245b9e2d7bf79c5d2e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14930191 bytes)**  
+-	Total Size: **15.3 MB (15267223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56cc389471f6a58f4b1f57e8ec9a1ac08ec71b85b32282bb94c1bdef8f918e0f`
+-	Image ID: `sha256:c8ab615fb5da4e8f4d9be289b02378388973342472e21c5a103210f09f2a0e75`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf05006e49674ec49c6960a63fd16768a1ba783574e4feabbf5cf66257c923e9`  
-		Last Modified: Sat, 17 Jan 2026 01:02:37 GMT  
-		Size: 14.9 MB (14895678 bytes)  
+	-	`sha256:7cb8424279707d32f1f981f563752532ae08ba2091882802e59162d842af3f95`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 15.2 MB (15232710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:21660c0a2842109c3be55e8454bacac54817f6f768500373c4cef54317156538`  
-		Last Modified: Sat, 17 Jan 2026 01:02:38 GMT  
+	-	`sha256:3794e62c5aa6c87d503274951dc859252ccf0086cad9ebf25ffaf00b2d9fe472`  
+		Last Modified: Thu, 22 Jan 2026 01:02:36 GMT  
 		Size: 34.5 KB (34513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:lts-oraclelinux9`
 
 ```console
-$ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207f3577901903
+$ docker pull mysql@sha256:cf6d1c8f2d31c73c878c6f5f60c2bec46701c41d5baf99100888bef5b6578b86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4980,13 +8274,13 @@ $ docker pull mysql@sha256:0426ec38c7a10aa45ba383887df7878f74ee70e2fd589c7b69207
 ### `mysql:lts-oraclelinux9` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a294ea72ee331
+$ docker pull mysql@sha256:cee2bcd7cfece021d2e13229e660e2072ed50c9dd4635d2797c8954154ed1739
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.0 MB (233029943 bytes)**  
+-	Total Size: **233.2 MB (233230172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0de4015d5b1f0fa462e43b48c29f8f66eacdd16d11e07aedf3b13533adadd504`
+-	Image ID: `sha256:3890a37ddb73dd2c66d963f1b2c0fe051ccd580564526e85ea0073d08e926369`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -4995,39 +8289,39 @@ $ docker pull mysql@sha256:6c6706ec58d3ac9e925d5f0435c6a923117f68232551b9c8271a2
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:26:03 GMT
+# Wed, 21 Jan 2026 22:47:54 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:26:05 GMT
+# Wed, 21 Jan 2026 22:47:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:26:26 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:26:27 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:26:27 GMT
+# Wed, 21 Jan 2026 22:48:19 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:48:19 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:26:52 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:48:45 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:49:18 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:18 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:27:23 GMT
+# Wed, 21 Jan 2026 22:49:19 GMT
 CMD ["mysqld"]
 ```
 
@@ -5036,77 +8330,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:023bf5ce6a4829c6b33eed0642d64a38f47927272c4921804abfda8bab0077ca`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 884.0 B  
+	-	`sha256:e7c9c940ed3326dbe75491b5c125f4e77409c20f1607b63e8d19a3c80b842f3e`  
+		Last Modified: Thu, 22 Jan 2026 01:02:18 GMT  
+		Size: 885.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24675d42775811c6a521aae8e2b0b47a989f8f35f2f254fdd43f7828c71d07bd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:50 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:dcefadb1e23c809499894384898688261866d60eba933b77725f25e26c3e97ac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 783.6 KB (783557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad32417d60c256a66828d3cfdc9ca9244576811a840000536e9a8d11c23e5d68`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 6.2 MB (6175148 bytes)  
+	-	`sha256:3751cab74b958e7f2a28d97747761761c9ca8dcb19db045bf8715e1c88b02a77`  
+		Last Modified: Wed, 21 Jan 2026 22:49:49 GMT  
+		Size: 6.2 MB (6175161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25809bf57a8f169efb1bbd6588c1732f4f1836916ace0b507a4fef3dd158bfb4`  
-		Last Modified: Fri, 16 Jan 2026 23:28:04 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:3c365df7c813339968023fded5e9042d098bb834a37079c11cfe99c16056e452`  
+		Last Modified: Wed, 21 Jan 2026 23:47:14 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b13420727c1c0c0e213907e2e6267a5974c8c3dded97de2a95207f357668a52f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
+	-	`sha256:14d59e782af07065a94adad658374505a377347a587b0ea862c9caabfcd1215a`  
+		Last Modified: Wed, 21 Jan 2026 22:49:50 GMT  
 		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff6e8ae58e2456042811ffa3661febd52abc2c7761443b2213c52bf6a56e469d`  
-		Last Modified: Fri, 16 Jan 2026 23:28:07 GMT  
-		Size: 47.8 MB (47815365 bytes)  
+	-	`sha256:e06c9b222c64ef602389ece95bb72bac5893dd58b6edb5345235ecefa8616907`  
+		Last Modified: Wed, 21 Jan 2026 22:50:06 GMT  
+		Size: 47.8 MB (47811670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b034b0c553cfc069b162e27ecb7ee469e94daeab571d7f5cd3a83b1498eee6`  
-		Last Modified: Fri, 16 Jan 2026 23:28:00 GMT  
-		Size: 320.0 B  
+	-	`sha256:5ba7f8d3ecf830b612dd6ec5f2c8203c6a17f663a77102f0ffb793c1a1d589be`  
+		Last Modified: Wed, 21 Jan 2026 22:49:58 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ada6ad8c9d8c75d4beafab09f3234c75c361caa487b16fcc00ea8c5907ba435f`  
-		Last Modified: Fri, 16 Jan 2026 23:27:55 GMT  
-		Size: 130.9 MB (130931861 bytes)  
+	-	`sha256:43c069718c101f0277bc8229dd2590bcb63d96f97ac9813addffd1b74d0d370f`  
+		Last Modified: Wed, 21 Jan 2026 22:49:53 GMT  
+		Size: 131.1 MB (131135770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fdbfdab06595d747aec81e55886fdb0156d0b08d001428224983ccaeea978cd`  
-		Last Modified: Fri, 16 Jan 2026 23:27:53 GMT  
+	-	`sha256:c156dd23b850679b32b7f01f7d6fdc723966e165960e36800e3bd87e4740de17`  
+		Last Modified: Wed, 21 Jan 2026 22:49:51 GMT  
 		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:lts-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:559414d5a80ae23d630ca19319c21f058973449c33226576fc7ce777c6cb4887
+$ docker pull mysql@sha256:be16c973ece26bb060d837d03f50d148f5ba91ac5626368218b8e3a845047488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14931466 bytes)**  
+-	Total Size: **15.3 MB (15268497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741bc7ae4fa3c416b37a5fe586eed0fe24ec1c96a10c3ccc34d9f86157d24ab3`
+-	Image ID: `sha256:b82df3286018a1d6cd6af61b31d53c2001d7503a9d7019268bee01205d261d23`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:029be1fc012084294f155b71ce8e88e6926982da803de7249b0fdab37f5291b7`  
-		Last Modified: Fri, 16 Jan 2026 23:27:51 GMT  
-		Size: 14.9 MB (14897258 bytes)  
+	-	`sha256:3339e5486c0c4cc6a3b8d51d1b3345afe45209ee3e2c44b15834ea10ba988fde`  
+		Last Modified: Thu, 22 Jan 2026 01:02:23 GMT  
+		Size: 15.2 MB (15234290 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa111391adf2a8236c93d7b80ad95600395c646f74bed884c95f212dfe1d5eab`  
-		Last Modified: Sat, 17 Jan 2026 01:02:26 GMT  
-		Size: 34.2 KB (34208 bytes)  
+	-	`sha256:9377b2f281254f96efd66320022665c8cd5568ad522938d3fe3898e62ae20660`  
+		Last Modified: Thu, 22 Jan 2026 01:02:24 GMT  
+		Size: 34.2 KB (34207 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:lts-oraclelinux9` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29253abb57e65
+$ docker pull mysql@sha256:509287abcaa38a3d334cf61bd787d0d523504c684990042f62fa4bfbadd1cb5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.5 MB (228462563 bytes)**  
+-	Total Size: **228.7 MB (228698723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5da2a12c183ff681379744e7047ff53800e8dfe4b7217b525b4c92ed1728e21a`
+-	Image ID: `sha256:e1fc1f3b0c1ad069b3e2a75bbd8036e5104f668132ef18ef6d542d86b85e2b06`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -5115,39 +8409,39 @@ $ docker pull mysql@sha256:6f952b3897aca5d7ca620d3d9679845351641265b1dbc3012ea29
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:32 GMT
+# Wed, 21 Jan 2026 22:52:53 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:34 GMT
+# Wed, 21 Jan 2026 22:52:55 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:30:00 GMT
+# Wed, 21 Jan 2026 22:53:20 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
 ENV MYSQL_MAJOR=8.4
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:21 GMT
+ENV MYSQL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:53:21 GMT
 RUN set -eu; 	{ 		echo '[mysql8.4-server-minimal]'; 		echo 'name=MySQL 8.4 Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-8.4-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-8.4-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:29 GMT
-ENV MYSQL_SHELL_VERSION=8.4.7-1.el9
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:53:50 GMT
+ENV MYSQL_SHELL_VERSION=8.4.8-1.el9
+# Wed, 21 Jan 2026 22:54:27 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:31:05 GMT
+# Wed, 21 Jan 2026 22:54:27 GMT
 CMD ["mysqld"]
 ```
 
@@ -5156,71 +8450,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de3a139db383dcfd82710bfab9154fec7b22c1598706cabfb21480997ab9f09f`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
-		Size: 885.0 B  
+	-	`sha256:3da72dcb236c1597383af262a9f45c86ca2b4b75d909507a3ac5b0eb6d7bd801`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ff917e53173311673a78eef92f68b58006c7d241f55c90c063ff5d35f9b5f80`  
-		Last Modified: Fri, 16 Jan 2026 23:31:36 GMT  
-		Size: 737.5 KB (737528 bytes)  
+	-	`sha256:4c9d33c81d6768ce0368969dfaf925fbf6624bdf9202a7fe6d15e54b846c0e13`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
+		Size: 737.5 KB (737526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7057a5a35be927e2eee436ccbee6ade905cf2905e0ded231f1eee51dd537d28`  
-		Last Modified: Fri, 16 Jan 2026 23:31:48 GMT  
-		Size: 5.8 MB (5798058 bytes)  
+	-	`sha256:7699a954d9de859b4b92ab5459f58e582e3085a82e29fa85c372c885cbd75f06`  
+		Last Modified: Wed, 21 Jan 2026 22:55:12 GMT  
+		Size: 5.8 MB (5798064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3a3050ea2531d36b577b983be8afb48eee1fe18fe044013308e8cd5bb8d835a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:54 GMT  
+	-	`sha256:8ccbceaa8cf24fa2833a2afe398ccde1f6ff2bbee670abd536c014c84fdcf94d`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
 		Size: 2.6 KB (2607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37938fa9ff7d875ad4ea6b70f7fe1f112527c6ea161c7ab4b6a17b417591da1`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
-		Size: 332.0 B  
+	-	`sha256:94f6521db4dbfdbb841dcd5d6d34f10bf9c3741fa4a8d009fbbd9703846ab0e1`  
+		Last Modified: Wed, 21 Jan 2026 22:54:59 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f655cab6299cf71d7e9c2b44899bf9bd147d252fd3a35fddd6d22b99ddbf324a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:52 GMT  
-		Size: 46.7 MB (46691693 bytes)  
+	-	`sha256:cc1b36f2667d57cda43bb84edc3e089860e2f0d619fe5cc7a4ca134f30df64ee`  
+		Last Modified: Wed, 21 Jan 2026 22:55:00 GMT  
+		Size: 46.7 MB (46699165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fec303eb563de541b75b7ea0dfda5ea894d8827ad63d4e61a2b23b2f7db927d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:37 GMT  
+	-	`sha256:f2c61b1843fc9549819d2149bd4ff4fc0c9ec59f7a7f62116469dfe294bbfae2`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 321.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18b56d2ace31229a18ebed0f0205fab2b619aa2666b2af3e52520b805cb0ae6d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:40 GMT  
-		Size: 129.3 MB (129323901 bytes)  
+	-	`sha256:a6d81e4d2c7b063ca6af6c142014724fd25f4b78bd37fbbbccf582016aa124db`  
+		Last Modified: Wed, 21 Jan 2026 22:55:03 GMT  
+		Size: 129.6 MB (129552583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151e2f48537d7e373cc742a1feef8240ad319f811917e7c8ffe31da18ba8d82`  
-		Last Modified: Fri, 16 Jan 2026 23:31:46 GMT  
+	-	`sha256:c2eea1ca45c6c742395a1c8b5d7327e0a8ffb8246a250cd5211862ed87b5662c`  
+		Last Modified: Wed, 21 Jan 2026 22:55:08 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:lts-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:0becb120ac404c9cb5053d5f7ab407549476090ac87b8ca2614f187d759c2d11
+$ docker pull mysql@sha256:7fdb2d55797d9e264ef6ff6971dce8f068ad60acf77c245b9e2d7bf79c5d2e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14930191 bytes)**  
+-	Total Size: **15.3 MB (15267223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56cc389471f6a58f4b1f57e8ec9a1ac08ec71b85b32282bb94c1bdef8f918e0f`
+-	Image ID: `sha256:c8ab615fb5da4e8f4d9be289b02378388973342472e21c5a103210f09f2a0e75`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf05006e49674ec49c6960a63fd16768a1ba783574e4feabbf5cf66257c923e9`  
-		Last Modified: Sat, 17 Jan 2026 01:02:37 GMT  
-		Size: 14.9 MB (14895678 bytes)  
+	-	`sha256:7cb8424279707d32f1f981f563752532ae08ba2091882802e59162d842af3f95`  
+		Last Modified: Wed, 21 Jan 2026 22:54:58 GMT  
+		Size: 15.2 MB (15232710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:21660c0a2842109c3be55e8454bacac54817f6f768500373c4cef54317156538`  
-		Last Modified: Sat, 17 Jan 2026 01:02:38 GMT  
+	-	`sha256:3794e62c5aa6c87d503274951dc859252ccf0086cad9ebf25ffaf00b2d9fe472`  
+		Last Modified: Thu, 22 Jan 2026 01:02:36 GMT  
 		Size: 34.5 KB (34513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:oracle`
 
 ```console
-$ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444b83622cc8ef
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5233,13 +8527,13 @@ $ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444
 ### `mysql:oracle` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca3d692078d6e
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.7 MB (274737070 bytes)**  
+-	Total Size: **266.4 MB (266374976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2150accc6e3f548dc144e1e9aeecca8e06eaa5eb0f0fde96013dec583e13625`
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -5248,39 +8542,39 @@ $ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:17:36 GMT
+# Wed, 21 Jan 2026 22:47:02 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:18:02 GMT
+# Wed, 21 Jan 2026 22:47:25 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:18:03 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 CMD ["mysqld"]
 ```
 
@@ -5289,77 +8583,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e3687b576e09030d0137b68778ac8b794e931d12c86233b9a846bed3e1cee7`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:488d39dd8c3ecec5a4aa482ea82cbdd336bdf0ccc5e9fe97857acc6f19f3061d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e2cc70f011730a52b024ae2217527eaf26f9627e76590a5236d1381372c1463`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 6.2 MB (6175172 bytes)  
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68b569d93fe587e6f7fc6d4d6f8653ab0662793b182ec4d3c2f7915720c9395b`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e3b86c4294968844915992442cc209a431158244998ffda17ffadd9a115cff`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29dc23d7bfcd16f0b280c416002d296812d269a41c7c914c2d6a770e9622ba5`  
-		Last Modified: Sat, 17 Jan 2026 00:01:26 GMT  
-		Size: 51.3 MB (51337329 bytes)  
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bbf0633cdd1831a67a9dd9e767018829498f2a3e4fa8023f787b70fc5147d65`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6278c3f9bc1393ee533135a2366665f8e05f4006e5d80fef8f27cf4bac9a7f3d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:51 GMT  
-		Size: 169.1 MB (169116992 bytes)  
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5fb9df71aa98262f8a9b94308790682229f0a9a4662169d4a7deb49ffef53e1`  
-		Last Modified: Fri, 16 Jan 2026 23:19:48 GMT  
-		Size: 5.3 KB (5328 bytes)  
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:e9f880b5c30c1ed1e434f86aaf4669bb2b06b98209036a1a780dee6d316af0f9
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17846967 bytes)**  
+-	Total Size: **16.3 MB (16332655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76a568dab01176bf1ac94375790d9b171339fff11f5149e5be36d707622190f8`
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:30c78be3a8366c1d99d9bc3f09d75ef95f74e69bd4365c72f7c15df05d7d0f6f`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 17.8 MB (17811692 bytes)  
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fb1f586e520b7839e804b9bcb4824f426e7dd7a9f40dcb7ca1a739b05d56fb07`  
-		Last Modified: Sat, 17 Jan 2026 01:03:06 GMT  
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 35.3 KB (35275 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:oracle` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bceb1751fd1fa4
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.8 MB (269797530 bytes)**  
+-	Total Size: **261.5 MB (261474832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9bb20f25c17502ee290cf550fce4ae60f80647e14a2889841e0fdaf337b0bf1`
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -5368,39 +8662,39 @@ $ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bce
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:01 GMT
+# Wed, 21 Jan 2026 22:52:07 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:29:29 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 CMD ["mysqld"]
 ```
 
@@ -5409,71 +8703,71 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60924c82fbc82a9eecc1572df06a50145607fd242e5f1fb9439b05f8240bff09`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fb5892b8b345e3cb2c3ddcac58883355e6ed7137963e770d8be9966865b117a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
-		Size: 737.5 KB (737527 bytes)  
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f1dd235a9a2a7e215341f6e7b49b32f597d401af25cfb2a3cff5a3d35f0e826`  
-		Last Modified: Fri, 16 Jan 2026 23:31:30 GMT  
-		Size: 5.8 MB (5798074 bytes)  
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d15d83c289fce8ad2b520678e01610240d31a47c14b78e71b915ac2ffd06186d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:32 GMT  
-		Size: 2.6 KB (2603 bytes)  
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98c0743b28fcff60aeb4d6fa3b4e513a70d1c6f88e0b87b33650e8b8f79c0c93`  
-		Last Modified: Fri, 16 Jan 2026 23:31:19 GMT  
-		Size: 341.0 B  
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f1761851302a3e2edd49ac48552aee144d5037d284d54b44121cf2582db8387`  
-		Last Modified: Fri, 16 Jan 2026 23:31:34 GMT  
-		Size: 50.0 MB (49960731 bytes)  
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e766303672c6740f7064ab2366ae746c37371b8f99fb0c5b2c2028d6629fc5c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 325.0 B  
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9aa56a3fad114533409ef35e78b8d1ea8ece781aab2d1b236105dc38f23dd933`  
-		Last Modified: Fri, 16 Jan 2026 23:31:23 GMT  
-		Size: 167.4 MB (167389810 bytes)  
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7933d1e6d8aebb094bfc24e0e8427937f35b352308579c048531fc30b561e0c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:ba4120e2e4755e5c5e8df7ba5ac2224321201db0ec32bf60868dbb5fbefe0b63
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17842447 bytes)**  
+-	Total Size: **16.3 MB (16331451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ea796dcb648beb4d659a8b9c8bba9692a1df9f7a83c9e57d6cf10fbcfc95d02`
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:605099f469cfd4acf5650903f362545b02a5810b5898ca2ef32f242d0931b34e`  
-		Last Modified: Sat, 17 Jan 2026 01:03:25 GMT  
-		Size: 17.8 MB (17806831 bytes)  
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:916ea0327b00bcba62230558f1497b7bd5c252511f547e28fa8d5d889d86a9f1`  
-		Last Modified: Sat, 17 Jan 2026 01:03:28 GMT  
-		Size: 35.6 KB (35616 bytes)  
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `mysql:oraclelinux9`
 
 ```console
-$ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444b83622cc8ef
+$ docker pull mysql@sha256:c5467c2e0e1b0363d9b67633dff98d3e0ab5be2fa70f90e12fc4b63dc79a5f73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5486,13 +8780,13 @@ $ docker pull mysql@sha256:57c892ddeb17e6c7dddf219914db017b2cf3e2797806a75424444
 ### `mysql:oraclelinux9` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca3d692078d6e
+$ docker pull mysql@sha256:df4cfb291d2e44cee88e995cd0314051bc23de5814ae8469807a58a8ae966453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.7 MB (274737070 bytes)**  
+-	Total Size: **266.4 MB (266374976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2150accc6e3f548dc144e1e9aeecca8e06eaa5eb0f0fde96013dec583e13625`
+-	Image ID: `sha256:a3d5e0d25756954afbd8fbb67305dca03f684396c2d37924e9dffc1f16f10236`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -5501,39 +8795,39 @@ $ docker pull mysql@sha256:00f711aeca86bf8a3e0e6dfd44f2a2b76014fc5fb59eda6c16cca
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:08:06 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:17:36 GMT
+# Wed, 21 Jan 2026 22:47:02 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:17:38 GMT
+# Wed, 21 Jan 2026 22:47:04 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:18:02 GMT
+# Wed, 21 Jan 2026 22:47:25 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:18:03 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:18:03 GMT
+# Wed, 21 Jan 2026 22:47:26 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:47:26 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:50 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:18:29 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:47:51 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:48:26 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:19:09 GMT
+# Wed, 21 Jan 2026 22:48:26 GMT
 CMD ["mysqld"]
 ```
 
@@ -5542,77 +8836,77 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:08:49 GMT  
 		Size: 47.3 MB (47314538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e3687b576e09030d0137b68778ac8b794e931d12c86233b9a846bed3e1cee7`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
+	-	`sha256:556889a7ea216ad993d14d786fec2a310897f46f72c5799716600756689b23e4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:488d39dd8c3ecec5a4aa482ea82cbdd336bdf0ccc5e9fe97857acc6f19f3061d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 783.6 KB (783556 bytes)  
+	-	`sha256:64679a587865f9dbf4ec5a178ce931cff203bfaa5baf2fa94c9ea74454a5b2c1`  
+		Last Modified: Wed, 21 Jan 2026 23:03:27 GMT  
+		Size: 783.6 KB (783551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e2cc70f011730a52b024ae2217527eaf26f9627e76590a5236d1381372c1463`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 6.2 MB (6175172 bytes)  
+	-	`sha256:8be98706b18411ee96bb21a56f00071769beb2e6b60a99663d89c1adaff64f2d`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
+		Size: 6.2 MB (6175130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68b569d93fe587e6f7fc6d4d6f8653ab0662793b182ec4d3c2f7915720c9395b`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 2.6 KB (2607 bytes)  
+	-	`sha256:6ba34685a51a62b769b2d92599e879e535ae38e6afe3414d6dda8446a134a88b`  
+		Last Modified: Wed, 21 Jan 2026 22:49:18 GMT  
+		Size: 2.6 KB (2609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e3b86c4294968844915992442cc209a431158244998ffda17ffadd9a115cff`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:21766700fc3f665ea0b679a3600facb0dc3fe12fb1817ba557a5c35a7b8bbef6`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29dc23d7bfcd16f0b280c416002d296812d269a41c7c914c2d6a770e9622ba5`  
-		Last Modified: Sat, 17 Jan 2026 00:01:26 GMT  
-		Size: 51.3 MB (51337329 bytes)  
+	-	`sha256:5ab4d3d2b3f465d2622d858417736b9d33e72d28eeaf5717901f7c69f8564802`  
+		Last Modified: Wed, 21 Jan 2026 22:49:02 GMT  
+		Size: 51.5 MB (51455805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bbf0633cdd1831a67a9dd9e767018829498f2a3e4fa8023f787b70fc5147d65`  
-		Last Modified: Fri, 16 Jan 2026 23:19:47 GMT  
+	-	`sha256:a7baff9b9ec4d330ed11d726685186939f5c27a671099027d086f87b14a80c39`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
 		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6278c3f9bc1393ee533135a2366665f8e05f4006e5d80fef8f27cf4bac9a7f3d`  
-		Last Modified: Fri, 16 Jan 2026 23:19:51 GMT  
-		Size: 169.1 MB (169116992 bytes)  
+	-	`sha256:79a6adb7c320bc33bab6847a70821f252318d5699ed31346e268c75e73d8ab6e`  
+		Last Modified: Thu, 22 Jan 2026 00:02:03 GMT  
+		Size: 160.6 MB (160636465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5fb9df71aa98262f8a9b94308790682229f0a9a4662169d4a7deb49ffef53e1`  
-		Last Modified: Fri, 16 Jan 2026 23:19:48 GMT  
-		Size: 5.3 KB (5328 bytes)  
+	-	`sha256:6acadf0e1453f883c90e7d134be916f8db341b2a9cf7d41807b14da29efd0fac`  
+		Last Modified: Wed, 21 Jan 2026 22:49:19 GMT  
+		Size: 5.3 KB (5330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:e9f880b5c30c1ed1e434f86aaf4669bb2b06b98209036a1a780dee6d316af0f9
+$ docker pull mysql@sha256:7979e3f17f815c535f0456a82770c50f364022755c9e8b7fa702d58cfa1577a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17846967 bytes)**  
+-	Total Size: **16.3 MB (16332655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76a568dab01176bf1ac94375790d9b171339fff11f5149e5be36d707622190f8`
+-	Image ID: `sha256:919e1d63bd52ae3e9c329fa94f32c838744148210b0993ab17546ef55c71b0cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:30c78be3a8366c1d99d9bc3f09d75ef95f74e69bd4365c72f7c15df05d7d0f6f`  
-		Last Modified: Fri, 16 Jan 2026 23:19:46 GMT  
-		Size: 17.8 MB (17811692 bytes)  
+	-	`sha256:d3a76eac00ed9c149160e311b3b6b6f337d5487c37889c9f7b87f0a2caa41492`  
+		Last Modified: Wed, 21 Jan 2026 22:48:59 GMT  
+		Size: 16.3 MB (16297380 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fb1f586e520b7839e804b9bcb4824f426e7dd7a9f40dcb7ca1a739b05d56fb07`  
-		Last Modified: Sat, 17 Jan 2026 01:03:06 GMT  
+	-	`sha256:59561772ffcb448fc74b9b90a5706f491b8e83f5adc09664dc9065c5528411d4`  
+		Last Modified: Wed, 21 Jan 2026 22:48:58 GMT  
 		Size: 35.3 KB (35275 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mysql:oraclelinux9` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bceb1751fd1fa4
+$ docker pull mysql@sha256:82fca4df9fe6179173542d99ea2ef0a8ca3288a448a3eb2450cf25d69fa6d0c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.8 MB (269797530 bytes)**  
+-	Total Size: **261.5 MB (261474832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9bb20f25c17502ee290cf550fce4ae60f80647e14a2889841e0fdaf337b0bf1`
+-	Image ID: `sha256:26a97355555f9a80c5f0be5f19afd517cf962c4b2f6eb0b9cb85cf1d0644412d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -5621,39 +8915,39 @@ $ docker pull mysql@sha256:3427e5b50d1eaf469e858e1ac026d643b87b2dde1037c59d87bce
 ADD oraclelinux-9-slim-arm64v8-rootfs.tar.xz / # buildkit
 # Fri, 16 Jan 2026 23:07:56 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jan 2026 23:29:01 GMT
+# Wed, 21 Jan 2026 22:52:07 GMT
 RUN set -eux; 	groupadd --system --gid 999 mysql; 	useradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql # buildkit
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 ENV GOSU_VERSION=1.19
-# Fri, 16 Jan 2026 23:29:03 GMT
+# Wed, 21 Jan 2026 22:52:09 GMT
 RUN set -eux; 	arch="$(uname -m)"; 	case "$arch" in 		aarch64) gosuArch='arm64' ;; 		x86_64) gosuArch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 	curl -fL -o /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc"; 	curl -fL -o /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	microdnf install -y 		bzip2 		gzip 		openssl 		xz 		zstd 		findutils 	; 	microdnf clean all # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eux; 	key='BCA4 3417 C3B4 85DD 128E C6D4 B7B3 B788 A8D3 785C'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; 	rm -rf "$GNUPGHOME" # buildkit
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
 ENV MYSQL_MAJOR=innovation
-# Fri, 16 Jan 2026 23:29:29 GMT
-ENV MYSQL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:29:29 GMT
+# Wed, 21 Jan 2026 22:52:39 GMT
+ENV MYSQL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:52:39 GMT
 RUN set -eu; 	{ 		echo '[mysqlinnovation-server-minimal]'; 		echo 'name=MySQL innovation Server Minimal'; 		echo 'enabled=1'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-innovation-community/docker/el/9/$basearch/'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-minimal.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eux; 	microdnf install -y "mysql-community-server-minimal-$MYSQL_VERSION"; 	microdnf clean all; 	grep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; 	sed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; 	grep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; 	{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } >> /etc/my.cnf; 		! grep -F '!includedir' /etc/my.cnf; 	{ echo; echo '!includedir /etc/mysql/conf.d/'; } >> /etc/my.cnf; 	mkdir -p /etc/mysql/conf.d; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 1777 /var/lib/mysql /var/run/mysqld; 		mkdir /docker-entrypoint-initdb.d; 		mysqld --version; 	mysql --version # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
 RUN set -eu; 	{ 		echo '[mysql-tools-community]'; 		echo 'name=MySQL Tools Community'; 		echo 'baseurl=https://repo.mysql.com/yum/mysql-tools-innovation-community/el/9/$basearch/'; 		echo 'enabled=1'; 		echo 'gpgcheck=1'; 		echo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; 		echo 'module_hotfixes=true'; 	} | tee /etc/yum.repos.d/mysql-community-tools.repo # buildkit
-# Fri, 16 Jan 2026 23:30:01 GMT
-ENV MYSQL_SHELL_VERSION=9.5.0-1.el9
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:11 GMT
+ENV MYSQL_SHELL_VERSION=9.6.0-1.el9
+# Wed, 21 Jan 2026 22:53:53 GMT
 RUN set -eux; 	microdnf install -y "mysql-shell-$MYSQL_SHELL_VERSION"; 	microdnf clean all; 		mysqlsh --version # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Fri, 16 Jan 2026 23:30:41 GMT
+# Wed, 21 Jan 2026 22:53:53 GMT
 CMD ["mysqld"]
 ```
 
@@ -5662,63 +8956,63 @@ CMD ["mysqld"]
 		Last Modified: Fri, 16 Jan 2026 23:29:32 GMT  
 		Size: 45.9 MB (45901903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60924c82fbc82a9eecc1572df06a50145607fd242e5f1fb9439b05f8240bff09`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
+	-	`sha256:c7b97ba280c2402a350d4fb92781217f8e821919aa1817fc58535b8189206ea3`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fb5892b8b345e3cb2c3ddcac58883355e6ed7137963e770d8be9966865b117a`  
-		Last Modified: Fri, 16 Jan 2026 23:31:18 GMT  
-		Size: 737.5 KB (737527 bytes)  
+	-	`sha256:181d4b379f5d476c9db4581814d636cd7ea810c961f1a6c7bb2b8d4fd9f20dab`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 737.5 KB (737532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f1dd235a9a2a7e215341f6e7b49b32f597d401af25cfb2a3cff5a3d35f0e826`  
-		Last Modified: Fri, 16 Jan 2026 23:31:30 GMT  
-		Size: 5.8 MB (5798074 bytes)  
+	-	`sha256:97ca316e35afa1c3dbc114fbb4af7b672bd851675e52e5953b30127aeeb7ed4f`  
+		Last Modified: Wed, 21 Jan 2026 23:40:35 GMT  
+		Size: 5.8 MB (5797950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d15d83c289fce8ad2b520678e01610240d31a47c14b78e71b915ac2ffd06186d`  
-		Last Modified: Fri, 16 Jan 2026 23:31:32 GMT  
-		Size: 2.6 KB (2603 bytes)  
+	-	`sha256:a1fe8cedf0e06861042d3b8d2ead56431d69d86bffaa5eccc4a76a56c5b722ed`  
+		Last Modified: Wed, 21 Jan 2026 22:54:28 GMT  
+		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98c0743b28fcff60aeb4d6fa3b4e513a70d1c6f88e0b87b33650e8b8f79c0c93`  
-		Last Modified: Fri, 16 Jan 2026 23:31:19 GMT  
-		Size: 341.0 B  
+	-	`sha256:1c503364c2ef5455ca6cd1d95132b1e591df132f9efe086719f4d0cd3848d324`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f1761851302a3e2edd49ac48552aee144d5037d284d54b44121cf2582db8387`  
-		Last Modified: Fri, 16 Jan 2026 23:31:34 GMT  
-		Size: 50.0 MB (49960731 bytes)  
+	-	`sha256:359e912f3b012caedf3921783bbf8bf7122e16d20abd3d5dc895c591c5856c8f`  
+		Last Modified: Wed, 21 Jan 2026 23:31:26 GMT  
+		Size: 50.1 MB (50086528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e766303672c6740f7064ab2366ae746c37371b8f99fb0c5b2c2028d6629fc5c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 325.0 B  
+	-	`sha256:f1b12e4097253fc054e98fb79fe32c7854736986bf288c1aa91da7129f5ac70c`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9aa56a3fad114533409ef35e78b8d1ea8ece781aab2d1b236105dc38f23dd933`  
-		Last Modified: Fri, 16 Jan 2026 23:31:23 GMT  
-		Size: 167.4 MB (167389810 bytes)  
+	-	`sha256:1fb8e9992cd435f9effbc14da74eb71b1909972f62d82d94b110ff87d15e58e7`  
+		Last Modified: Wed, 21 Jan 2026 22:54:38 GMT  
+		Size: 158.9 MB (158941435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7933d1e6d8aebb094bfc24e0e8427937f35b352308579c048531fc30b561e0c`  
-		Last Modified: Fri, 16 Jan 2026 23:31:20 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:b8f32736fa44e2d8b6e9ef14ce9df5edf470e8563a3ea62c2fe57f7889c175a2`  
+		Last Modified: Wed, 21 Jan 2026 23:11:21 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:ba4120e2e4755e5c5e8df7ba5ac2224321201db0ec32bf60868dbb5fbefe0b63
+$ docker pull mysql@sha256:f19559953e6691ae3bf76f61b42e7521478053162e2f68d1522d705abc65139e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17842447 bytes)**  
+-	Total Size: **16.3 MB (16331451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ea796dcb648beb4d659a8b9c8bba9692a1df9f7a83c9e57d6cf10fbcfc95d02`
+-	Image ID: `sha256:dfa8052602e023b2ee598b883d0051719faf757dab7126df1719218685638ee8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:605099f469cfd4acf5650903f362545b02a5810b5898ca2ef32f242d0931b34e`  
-		Last Modified: Sat, 17 Jan 2026 01:03:25 GMT  
-		Size: 17.8 MB (17806831 bytes)  
+	-	`sha256:4e97c40b03aee91de311df824337c9ea2721e5e5d31ae3069b4e8e72018cf9d2`  
+		Last Modified: Wed, 21 Jan 2026 22:54:29 GMT  
+		Size: 16.3 MB (16295836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:916ea0327b00bcba62230558f1497b7bd5c252511f547e28fa8d5d889d86a9f1`  
-		Last Modified: Sat, 17 Jan 2026 01:03:28 GMT  
-		Size: 35.6 KB (35616 bytes)  
+	-	`sha256:b7adf4674ecc55f1c5f92e2f84326e7d7e5089f43f48dfdd22b39ee36bbc85e9`  
+		Last Modified: Wed, 21 Jan 2026 23:31:19 GMT  
+		Size: 35.6 KB (35615 bytes)  
 		MIME: application/vnd.in-toto+json
