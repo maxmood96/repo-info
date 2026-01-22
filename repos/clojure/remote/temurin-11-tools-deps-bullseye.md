@@ -46,7 +46,7 @@ CMD ["clj"]
 
 -	Layers:
 	-	`sha256:fccfc62cb15165379a658b98df1680b95e3908f69adc8e7176a095a7b4cf2106`  
-		Last Modified: Tue, 13 Jan 2026 00:41:36 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:41:25 GMT  
 		Size: 53.8 MB (53756446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:58fb8cd2fbdc0bd4c35e1faae2217e2b7b6ced3d0dc360df6676162fc777d623`  
@@ -58,11 +58,11 @@ CMD ["clj"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:963ca7c9b8c98fdd5baca7ebdfc33abf03c82ebace2b1132885cb146afc25c4f`  
-		Last Modified: Fri, 16 Jan 2026 01:49:59 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:50:18 GMT  
 		Size: 69.6 MB (69556911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c8610aa9e764e1ae9393591cc755a20b9466d3dfba70cbf45fd0133e6d475bbe`  
-		Last Modified: Fri, 16 Jan 2026 01:49:56 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:50:08 GMT  
 		Size: 612.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -86,7 +86,7 @@ $ docker pull clojure@sha256:9ca2d7d1314fe940ee738682fb5ee84eb8c5b7e24c0b2bcb52d
 		Size: 7.4 MB (7415808 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:69e5e643be7b9b1eb0947185c12deef42c8450a5234a05d80318385d3a9be3d3`  
-		Last Modified: Fri, 16 Jan 2026 01:49:56 GMT  
+		Last Modified: Fri, 16 Jan 2026 04:36:52 GMT  
 		Size: 14.2 KB (14209 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -161,10 +161,10 @@ $ docker pull clojure@sha256:1ee9e9d755927927f339e9788ed6d6b35b3d7529acb0fddbdec
 
 -	Layers:
 	-	`sha256:a4dcc7d1440f6716e5074f989b0784e8551c05e9cfece9c5f392fb215841a039`  
-		Last Modified: Fri, 16 Jan 2026 04:36:58 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:53:54 GMT  
 		Size: 7.4 MB (7421525 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1c29048dedab20402c84397ba6435354d616bc7f8ef524ef5e91496a39629f7c`  
-		Last Modified: Fri, 16 Jan 2026 04:36:59 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:53:54 GMT  
 		Size: 14.3 KB (14327 bytes)  
 		MIME: application/vnd.in-toto+json
