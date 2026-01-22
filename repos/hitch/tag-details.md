@@ -313,7 +313,7 @@ CMD []
 
 -	Layers:
 	-	`sha256:2a0cffcee0205fc7f72267552713e68aa945359253bcab303f4dd69e7491c38d`  
-		Last Modified: Tue, 13 Jan 2026 00:42:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:37 GMT  
 		Size: 29.2 MB (29210067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:861c4c87db2f8810cde0c907b91bbebd3ae4b06b9fdf1977ca4849eb9533b0f7`  
@@ -345,7 +345,7 @@ $ docker pull hitch@sha256:4a535c59cf8b2a707e15a7ccac3611ef22e1d98d1cfae20f476b1
 
 -	Layers:
 	-	`sha256:b41cc3dd905205aff2d2a5728a57bd3255e352c2584bce511b55be60b34f044c`  
-		Last Modified: Tue, 13 Jan 2026 04:47:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:20:05 GMT  
 		Size: 2.5 MB (2528531 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b4bfc672ef49d34e1843f6796091e9dfecd85b053b02cc70d8f24d1a56e48277`  
@@ -658,7 +658,7 @@ CMD []
 
 -	Layers:
 	-	`sha256:2a0cffcee0205fc7f72267552713e68aa945359253bcab303f4dd69e7491c38d`  
-		Last Modified: Tue, 13 Jan 2026 00:42:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:37 GMT  
 		Size: 29.2 MB (29210067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:861c4c87db2f8810cde0c907b91bbebd3ae4b06b9fdf1977ca4849eb9533b0f7`  
@@ -690,7 +690,7 @@ $ docker pull hitch@sha256:4a535c59cf8b2a707e15a7ccac3611ef22e1d98d1cfae20f476b1
 
 -	Layers:
 	-	`sha256:b41cc3dd905205aff2d2a5728a57bd3255e352c2584bce511b55be60b34f044c`  
-		Last Modified: Tue, 13 Jan 2026 04:47:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:20:05 GMT  
 		Size: 2.5 MB (2528531 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b4bfc672ef49d34e1843f6796091e9dfecd85b053b02cc70d8f24d1a56e48277`  
@@ -1003,7 +1003,7 @@ CMD []
 
 -	Layers:
 	-	`sha256:2a0cffcee0205fc7f72267552713e68aa945359253bcab303f4dd69e7491c38d`  
-		Last Modified: Tue, 13 Jan 2026 00:42:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:37 GMT  
 		Size: 29.2 MB (29210067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:861c4c87db2f8810cde0c907b91bbebd3ae4b06b9fdf1977ca4849eb9533b0f7`  
@@ -1035,7 +1035,7 @@ $ docker pull hitch@sha256:4a535c59cf8b2a707e15a7ccac3611ef22e1d98d1cfae20f476b1
 
 -	Layers:
 	-	`sha256:b41cc3dd905205aff2d2a5728a57bd3255e352c2584bce511b55be60b34f044c`  
-		Last Modified: Tue, 13 Jan 2026 04:47:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:20:05 GMT  
 		Size: 2.5 MB (2528531 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b4bfc672ef49d34e1843f6796091e9dfecd85b053b02cc70d8f24d1a56e48277`  
@@ -1348,7 +1348,7 @@ CMD []
 
 -	Layers:
 	-	`sha256:2a0cffcee0205fc7f72267552713e68aa945359253bcab303f4dd69e7491c38d`  
-		Last Modified: Tue, 13 Jan 2026 00:42:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:37 GMT  
 		Size: 29.2 MB (29210067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:861c4c87db2f8810cde0c907b91bbebd3ae4b06b9fdf1977ca4849eb9533b0f7`  
@@ -1380,7 +1380,7 @@ $ docker pull hitch@sha256:4a535c59cf8b2a707e15a7ccac3611ef22e1d98d1cfae20f476b1
 
 -	Layers:
 	-	`sha256:b41cc3dd905205aff2d2a5728a57bd3255e352c2584bce511b55be60b34f044c`  
-		Last Modified: Tue, 13 Jan 2026 04:47:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:20:05 GMT  
 		Size: 2.5 MB (2528531 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b4bfc672ef49d34e1843f6796091e9dfecd85b053b02cc70d8f24d1a56e48277`  
@@ -1693,7 +1693,7 @@ CMD []
 
 -	Layers:
 	-	`sha256:2a0cffcee0205fc7f72267552713e68aa945359253bcab303f4dd69e7491c38d`  
-		Last Modified: Tue, 13 Jan 2026 00:42:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:37 GMT  
 		Size: 29.2 MB (29210067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:861c4c87db2f8810cde0c907b91bbebd3ae4b06b9fdf1977ca4849eb9533b0f7`  
@@ -1725,7 +1725,7 @@ $ docker pull hitch@sha256:4a535c59cf8b2a707e15a7ccac3611ef22e1d98d1cfae20f476b1
 
 -	Layers:
 	-	`sha256:b41cc3dd905205aff2d2a5728a57bd3255e352c2584bce511b55be60b34f044c`  
-		Last Modified: Tue, 13 Jan 2026 04:47:23 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:20:05 GMT  
 		Size: 2.5 MB (2528531 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b4bfc672ef49d34e1843f6796091e9dfecd85b053b02cc70d8f24d1a56e48277`  
