@@ -72,7 +72,7 @@ $ docker pull sapmachine@sha256:d8ef9e0b5233623cee160fd66e4d00d21052a8f658092774
 
 -	Layers:
 	-	`sha256:c3800c1c714eb4726b95c481b1dc279f310f55fa5139cb5ebb21185ea1b72e63`  
-		Last Modified: Wed, 21 Jan 2026 22:10:47 GMT  
+		Last Modified: Wed, 21 Jan 2026 20:04:20 GMT  
 		Size: 2.4 MB (2380014 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:650208b45a8c67a8b8a0d5cddbc77d147b615854c2010037c2e04a93dbb6533c`  
@@ -115,11 +115,11 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:517f43312bfe3b4db0f0f031d8b6deb1aa5616b07fae71fa0d349f9ce451564f`  
-		Last Modified: Fri, 09 Jan 2026 11:16:52 GMT  
+		Last Modified: Fri, 09 Jan 2026 07:36:03 GMT  
 		Size: 27.4 MB (27383497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94e32fd87a47a66f84888dae6168152313a055baf9b1f55e95147ee272fbb7bb`  
-		Last Modified: Wed, 21 Jan 2026 20:10:32 GMT  
+		Last Modified: Wed, 21 Jan 2026 22:50:58 GMT  
 		Size: 213.0 MB (212981724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -139,11 +139,11 @@ $ docker pull sapmachine@sha256:aaecc9834c9d0948dff2c1a6ce49b3c4d3e20cd43f1530a4
 
 -	Layers:
 	-	`sha256:02936c1d600423dff587dd1b42810d99abfc87ed3a8fa311b4bebbae7ac97f6f`  
-		Last Modified: Wed, 21 Jan 2026 20:10:28 GMT  
+		Last Modified: Wed, 21 Jan 2026 22:10:50 GMT  
 		Size: 2.4 MB (2379686 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7468a54d087ef89f38db24977517d8a9ea4097d46aae2b6899b6ed3cbc7ec057`  
-		Last Modified: Wed, 21 Jan 2026 20:10:27 GMT  
+		Last Modified: Wed, 21 Jan 2026 22:10:51 GMT  
 		Size: 9.0 KB (8994 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -182,7 +182,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:2490923be26ec970f7d805c10bc7c9c56e219061e875cf31dad74e227e0bbdc4`  
-		Last Modified: Fri, 09 Jan 2026 07:36:16 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:43:22 GMT  
 		Size: 34.4 MB (34446962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:12eec3e7c9b6cbd283015435694fe72e51984f15a5f0f040685705dddd131b8a`  
