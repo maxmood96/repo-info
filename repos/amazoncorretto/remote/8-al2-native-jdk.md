@@ -41,11 +41,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 
 -	Layers:
 	-	`sha256:89d3b5863331d6bb79d550bf0acce60aeac36e2c065470bf6d6f8d76c9cb6f4f`  
-		Last Modified: Wed, 14 Jan 2026 13:23:48 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:13:55 GMT  
 		Size: 62.9 MB (62940156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06c23c3b9563854be49257cf21b781536c99c68c498b6632e9a2ca2403f04652`  
-		Last Modified: Wed, 21 Jan 2026 18:59:45 GMT  
+		Last Modified: Wed, 21 Jan 2026 22:11:20 GMT  
 		Size: 125.3 MB (125297524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -65,7 +65,7 @@ $ docker pull amazoncorretto@sha256:42e2930c7876f83b264a4eea677e027549f20a62d3af
 
 -	Layers:
 	-	`sha256:95b8ef22025c0d0b8df09b3bcd2d9b7cc76ce929c335d5784abf167d73f2b104`  
-		Last Modified: Wed, 21 Jan 2026 18:59:42 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:55:00 GMT  
 		Size: 8.0 MB (7977418 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b0a3c63fb23f415fb7a99cc95366e16159b4fe6c7307234fb301246fb5f4713c`  
@@ -107,7 +107,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 		Size: 64.8 MB (64770434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53ad3d8c6462812ef98f010ddcb458313e9e58f8a3809e6e34b31b016b0895f0`  
-		Last Modified: Wed, 21 Jan 2026 18:59:59 GMT  
+		Last Modified: Wed, 21 Jan 2026 18:59:34 GMT  
 		Size: 67.6 MB (67595092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -127,10 +127,10 @@ $ docker pull amazoncorretto@sha256:a2c221306128d5962bbc048b067fc5f9f530e958c85d
 
 -	Layers:
 	-	`sha256:24555b7df14a1246cc131e7f7293d05bb5cc6037d884928dfc0005f898244778`  
-		Last Modified: Wed, 21 Jan 2026 18:59:32 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:55:04 GMT  
 		Size: 6.1 MB (6082941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5a93a64aec1e3233ad8f1ebd77f5477d24fe61b499e7a4a3849e1334390fe837`  
-		Last Modified: Wed, 21 Jan 2026 18:59:31 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:55:59 GMT  
 		Size: 9.6 KB (9629 bytes)  
 		MIME: application/vnd.in-toto+json
