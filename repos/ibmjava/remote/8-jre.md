@@ -52,7 +52,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 
 -	Layers:
 	-	`sha256:6f4ebca3e823b18dac366f72e537b1772bc3522a5c7ae299d6491fb17378410e`  
-		Last Modified: Fri, 09 Jan 2026 09:47:12 GMT  
+		Last Modified: Fri, 09 Jan 2026 07:35:56 GMT  
 		Size: 29.5 MB (29536667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1c4406d5893ae4c70fd8f934cac2641d64f220fc723533ac69c7934710e8a57`  
@@ -80,11 +80,11 @@ $ docker pull ibmjava@sha256:98415342663a383c73997f94ac3ed9e22bb16f0e19caf6e9593
 
 -	Layers:
 	-	`sha256:2d07cbccf91e5ee4157fc439efa019b9fdfd8e21fe9fae6a52384243dd0f37a5`  
-		Last Modified: Fri, 16 Jan 2026 00:02:37 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:29:24 GMT  
 		Size: 2.2 MB (2174120 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:968a3a746f350366609f8c00be4b4634f15460168467a404b85b6b0a6c2c9b8a`  
-		Last Modified: Fri, 16 Jan 2026 00:02:38 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:29:24 GMT  
 		Size: 13.2 KB (13192 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -127,7 +127,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 
 -	Layers:
 	-	`sha256:2490923be26ec970f7d805c10bc7c9c56e219061e875cf31dad74e227e0bbdc4`  
-		Last Modified: Thu, 15 Jan 2026 21:43:22 GMT  
+		Last Modified: Fri, 09 Jan 2026 07:36:16 GMT  
 		Size: 34.4 MB (34446962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:814f9357ec073065f6203180cb4350e2f9485621f356fdf6fd2a944386ce11b4`  
@@ -202,7 +202,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 
 -	Layers:
 	-	`sha256:a0be7aa393c334078596b27f39dc3946551a30dd1cad58fe06cce6be05b244b2`  
-		Last Modified: Thu, 15 Jan 2026 21:43:58 GMT  
+		Last Modified: Fri, 09 Jan 2026 07:36:31 GMT  
 		Size: 28.0 MB (28003138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48a8baf68ff6ceca7a3109d1906b368df74b25f5077d58fdc8fa7113727f6bef`  
@@ -234,6 +234,6 @@ $ docker pull ibmjava@sha256:3443e4950defd0e063880c4fad7df40e14b0dac084844b50221
 		Size: 2.2 MB (2174081 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:db4963ccaebe36994a2ba594c3870c3bd2011eb71facf6e8f2bdf2e385dcf92d`  
-		Last Modified: Fri, 16 Jan 2026 00:02:47 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:09 GMT  
 		Size: 13.2 KB (13192 bytes)  
 		MIME: application/vnd.in-toto+json
