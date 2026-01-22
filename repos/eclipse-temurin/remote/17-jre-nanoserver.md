@@ -50,15 +50,15 @@ RUN echo Verifying install ...     && echo java --version && java --version     
 		Size: 199.1 MB (199076547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:af6acaab0d61ed33ace7d103c6051ef10936657c8cde6584d1379ede6a52410d`  
-		Last Modified: Tue, 13 Jan 2026 23:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:41:09 GMT  
 		Size: 1.1 KB (1074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:30f93afd65df89ef2c7e42f9aeae6787a5094decd235575fbc844fa0607f63db`  
-		Last Modified: Tue, 13 Jan 2026 23:40:14 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:41:10 GMT  
 		Size: 1.1 KB (1067 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0c221f11594ace9092e0afd3c8a01fd7e33ec9b202b7342d1f9ce9652a2ad524`  
-		Last Modified: Tue, 13 Jan 2026 23:41:10 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:40:15 GMT  
 		Size: 1.1 KB (1070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:268d819d7c41f4d6d3af9cdf6a1ec27004ded007554e6eb37f49d57397ffef67`  
@@ -119,7 +119,7 @@ RUN echo Verifying install ...     && echo java --version && java --version     
 
 -	Layers:
 	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
+		Last Modified: Tue, 13 Jan 2026 20:12:21 GMT  
 		Size: 126.7 MB (126696821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ebc58112f1d1d638f65a75c8bcdb844fc8acda257ce27f49b05ca59ae6852b63`  
@@ -143,7 +143,7 @@ RUN echo Verifying install ...     && echo java --version && java --version     
 		Size: 76.5 KB (76497 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a41f386f90e680ac25c16083cd3d3deec76024437bcc089cbeac05cea67d6c0`  
-		Last Modified: Tue, 13 Jan 2026 23:35:18 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:35:05 GMT  
 		Size: 1.1 KB (1070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d7c728cfa85576b65c510606f2e5d09cc356697866112da98f3872470392afd1`  
