@@ -112,7 +112,7 @@ $ docker pull jetty@sha256:de7493a250faad218263e7c23d832ad2ca9e348796782dac44147
 		Size: 829.5 KB (829503 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:98675748f772a34b3df54efafcef49f2066441d05126b5b4579c8dd8a9fafdfa`  
-		Last Modified: Wed, 21 Jan 2026 21:15:32 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:21:02 GMT  
 		Size: 17.1 KB (17076 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -181,11 +181,11 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c016f1d7921cb0297977d531731dee15427272f3b40ad659102fa9e1c718223a`  
-		Last Modified: Wed, 21 Jan 2026 19:21:12 GMT  
+		Last Modified: Wed, 21 Jan 2026 18:59:18 GMT  
 		Size: 141.9 MB (141855847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:874c5c8fac36a32aa0a8880b877cfccc2e5a85fa6c12132f368bf21f43be1939`  
-		Last Modified: Wed, 21 Jan 2026 19:21:30 GMT  
+		Last Modified: Thu, 22 Jan 2026 06:16:50 GMT  
 		Size: 20.2 MB (20216412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -193,7 +193,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07840ddfd6af64d4d8fba499e6c4b98ded29ce8a39b89b3fe7e8a4b6a2016ed1`  
-		Last Modified: Wed, 21 Jan 2026 19:20:57 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:23:42 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -213,7 +213,7 @@ $ docker pull jetty@sha256:f8c30a70792a53d8a6a996d0db336d3d729b7a601f34a82255f30
 
 -	Layers:
 	-	`sha256:68dc01c258ff8c7cc432cea574bdc34977d7d3aa23c5fca76f0a604a84fc33ae`  
-		Last Modified: Wed, 21 Jan 2026 21:15:36 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:21:29 GMT  
 		Size: 828.9 KB (828897 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dc7546546633166c69539c9a26ddf542ba86099bf09b6835af61a2452f6a34a5`  

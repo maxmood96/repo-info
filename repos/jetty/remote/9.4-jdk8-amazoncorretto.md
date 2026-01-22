@@ -70,7 +70,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:89d3b5863331d6bb79d550bf0acce60aeac36e2c065470bf6d6f8d76c9cb6f4f`  
-		Last Modified: Wed, 14 Jan 2026 13:23:48 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:13:55 GMT  
 		Size: 62.9 MB (62940156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca2cf296d047513764ffd5d8eb73bd7e7516a94e3a350ef1d2cde26a84ada185`  
@@ -86,7 +86,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7f85410d4ac01fa0c160bf16f685c26837aac9291843f9525b61cb922aef4e46`  
-		Last Modified: Wed, 21 Jan 2026 19:18:39 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:19:06 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -106,7 +106,7 @@ $ docker pull jetty@sha256:7ea5c4425053a0700578b1f29ff83a1fdf758c09857a8b26e1a7e
 
 -	Layers:
 	-	`sha256:3fb39e1cd783304d80141fb58e5849efcda733f3af4a20ff35e0701b278ce83e`  
-		Last Modified: Wed, 21 Jan 2026 19:18:40 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:23:00 GMT  
 		Size: 5.8 MB (5756040 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8be5144589119833e1c394cc9b990e75914781c1f2c395c302fffb5b533b300c`  
@@ -173,11 +173,11 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:afb133ffe3cfc9458fcd28fa75abd002d894e187faa842d48d3c35c676633646`  
-		Last Modified: Thu, 15 Jan 2026 07:47:55 GMT  
+		Last Modified: Thu, 15 Jan 2026 18:33:41 GMT  
 		Size: 64.8 MB (64770434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ef0c3a8367555fd665644b39150b785e2d0486976224b943fc47236f954e820`  
-		Last Modified: Wed, 21 Jan 2026 18:58:47 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:18:17 GMT  
 		Size: 59.9 MB (59938538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd2e377ca5ebb690f7e2c76ec4095c647e27bccff3195f46f55e35cb418ed444`  
@@ -213,6 +213,6 @@ $ docker pull jetty@sha256:55cf1ee977fd4607065df8976b8cf3ad4aa54e609a21fb60dfec0
 		Size: 5.7 MB (5734467 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:445ba317a6be19ef1056126db1d518365c7905be1fdee4d7e9a7dd78cb0b6db0`  
-		Last Modified: Wed, 21 Jan 2026 21:23:08 GMT  
+		Last Modified: Wed, 21 Jan 2026 19:18:38 GMT  
 		Size: 17.5 KB (17469 bytes)  
 		MIME: application/vnd.in-toto+json
