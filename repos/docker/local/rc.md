@@ -1,16 +1,16 @@
-# `docker:29.2.0-rc.1-dind`
+# `docker:29.2.0-rc.2-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0e70eeabc841f0c3565599d41be043e0aa8b027a0dca00cb9c79874f62689c9a`
-- Created: `2026-01-09T19:08:07.437514902Z`
-- Virtual Size: ~ 373.18 Mb  
+- Image ID: `sha256:75a9d028e6df9be4346dfd005ecb9d678ed307710452a08a8160eb6d8beccc1e`
+- Created: `2026-01-20T19:10:58.356210903Z`
+- Virtual Size: ~ 375.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.2.0-rc.1`
+  - `DOCKER_VERSION=29.2.0-rc.2`
   - `DOCKER_BUILDX_VERSION=0.30.1`
   - `DOCKER_COMPOSE_VERSION=5.0.1`
   - `DOCKER_TLS_CERTDIR=/certs`
@@ -1211,16 +1211,16 @@ LGPL-2.1-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.8.1-r0 description:
+xz-5.8.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.8.1-r0 webpage:
+xz-5.8.2-r0 webpage:
 https://tukaani.org/xz/
 
-xz-5.8.1-r0 installed size:
+xz-5.8.2-r0 installed size:
 162 KiB
 
-xz-5.8.1-r0 license:
+xz-5.8.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1228,16 +1228,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.1-r0 description:
+xz-libs-5.8.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.1-r0 webpage:
+xz-libs-5.8.2-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.1-r0 installed size:
+xz-libs-5.8.2-r0 installed size:
 221 KiB
 
-xz-libs-5.8.1-r0 license:
+xz-libs-5.8.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```

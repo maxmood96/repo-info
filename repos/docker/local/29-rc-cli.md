@@ -1,9 +1,9 @@
-# `docker:29.2.0-rc.1-cli`
+# `docker:29.2.0-rc.2-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:629858793665511997c33e67f20e4f50c1326567bce4d71ab5ea9f6bd44b8a6a`
-- Created: `2026-01-09T19:03:51.996723491Z`
+- Image ID: `sha256:0aa14a2cded9f22ff7a42a12f18508d6cfd76984f0eb7ab508460252ac9b107c`
+- Created: `2026-01-20T18:53:30.774925567Z`
 - Virtual Size: ~ 169.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.2.0-rc.1`
+  - `DOCKER_VERSION=29.2.0-rc.2`
   - `DOCKER_BUILDX_VERSION=0.30.1`
   - `DOCKER_COMPOSE_VERSION=5.0.1`
   - `DOCKER_TLS_CERTDIR=/certs`
