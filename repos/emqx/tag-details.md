@@ -70,11 +70,11 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 29.8 MB (29773685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b7dceb230e83bb8bc743aa37e81f7cd505511e5beec0659ede59e7c2cb0671b7`  
-		Last Modified: Tue, 13 Jan 2026 01:17:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:55 GMT  
 		Size: 78.6 MB (78622661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39349b182205263062f734efc0588aafd46c8024e185c9e1d0b3fb6e410a6da2`  
@@ -102,7 +102,7 @@ $ docker pull emqx@sha256:bafd51acc6e7a6440aa026fc9b4f85128335f3da6f197c7ce2cad0
 		Size: 2.4 MB (2403463 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c2075dae3331b14a99bdc6144a436c04085530d0f903372d45287a41060d1ea0`  
-		Last Modified: Tue, 13 Jan 2026 06:29:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:53 GMT  
 		Size: 12.5 KB (12486 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -154,15 +154,15 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae82769fae53b576f967b5aaba216c788f7e834bb01daa6b9ec3353811e3c30b`  
-		Last Modified: Tue, 13 Jan 2026 01:17:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:57 GMT  
 		Size: 76.5 MB (76530374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b95d537084054513975c6621d3f551d5c25fd778faaa9e88e6b1c9e5c501600d`  
-		Last Modified: Tue, 13 Jan 2026 01:17:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:48 GMT  
 		Size: 1.0 KB (1031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -182,7 +182,7 @@ $ docker pull emqx@sha256:18acb9d20698d0fa54c2b5098b6cbe60da3bd7e0f9e4a6f7bb54e2
 
 -	Layers:
 	-	`sha256:83bbe8e83cc379af23032e5d9e0bfaabb2eda78d0e6664fb5bf2619e0044ee2f`  
-		Last Modified: Tue, 13 Jan 2026 01:17:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:28:49 GMT  
 		Size: 2.4 MB (2403752 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:41188b6e930ba00d90dd4040a070af16891f6c9b8cd375e13e82853587235e83`  
@@ -251,15 +251,15 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 28.2 MB (28228572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ab74449a03a22b66830e443f3b0ed5a0306aeb75e47cac051e2701170924a744`  
-		Last Modified: Tue, 13 Jan 2026 01:18:10 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:36 GMT  
 		Size: 97.2 MB (97155190 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f03b7bdaa94708eeb34de76b4623e5c21cc7083645a9f98dd74170b2f1b64733`  
-		Last Modified: Tue, 13 Jan 2026 01:17:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:13:54 GMT  
 		Size: 1.0 KB (1031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -331,15 +331,15 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 
 -	Layers:
 	-	`sha256:33bdc9671af8942d96d2f78f67aeec06580065dde1272decac3732689ec7c0e8`  
-		Last Modified: Tue, 13 Jan 2026 00:42:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:09 GMT  
 		Size: 28.1 MB (28107889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:899d84c99c6e08fef0acbfe90da1407373d98ff31c4d0fbaeef0e33ba8c533e9`  
-		Last Modified: Tue, 13 Jan 2026 01:17:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:57 GMT  
 		Size: 93.7 MB (93716331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b5bea8798303aa2d61b52b47f2b48c318068d7e46c3c24e3ae614d2a5019f73`  
@@ -432,15 +432,15 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 28.2 MB (28228572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ab74449a03a22b66830e443f3b0ed5a0306aeb75e47cac051e2701170924a744`  
-		Last Modified: Tue, 13 Jan 2026 01:18:10 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:36 GMT  
 		Size: 97.2 MB (97155190 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f03b7bdaa94708eeb34de76b4623e5c21cc7083645a9f98dd74170b2f1b64733`  
-		Last Modified: Tue, 13 Jan 2026 01:17:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:13:54 GMT  
 		Size: 1.0 KB (1031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -512,15 +512,15 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 
 -	Layers:
 	-	`sha256:33bdc9671af8942d96d2f78f67aeec06580065dde1272decac3732689ec7c0e8`  
-		Last Modified: Tue, 13 Jan 2026 00:42:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:09 GMT  
 		Size: 28.1 MB (28107889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:899d84c99c6e08fef0acbfe90da1407373d98ff31c4d0fbaeef0e33ba8c533e9`  
-		Last Modified: Tue, 13 Jan 2026 01:17:45 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:57 GMT  
 		Size: 93.7 MB (93716331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b5bea8798303aa2d61b52b47f2b48c318068d7e46c3c24e3ae614d2a5019f73`  
@@ -613,11 +613,11 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 29.8 MB (29773685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b7dceb230e83bb8bc743aa37e81f7cd505511e5beec0659ede59e7c2cb0671b7`  
-		Last Modified: Tue, 13 Jan 2026 01:17:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:55 GMT  
 		Size: 78.6 MB (78622661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39349b182205263062f734efc0588aafd46c8024e185c9e1d0b3fb6e410a6da2`  
@@ -645,7 +645,7 @@ $ docker pull emqx@sha256:bafd51acc6e7a6440aa026fc9b4f85128335f3da6f197c7ce2cad0
 		Size: 2.4 MB (2403463 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c2075dae3331b14a99bdc6144a436c04085530d0f903372d45287a41060d1ea0`  
-		Last Modified: Tue, 13 Jan 2026 06:29:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:53 GMT  
 		Size: 12.5 KB (12486 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -697,15 +697,15 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae82769fae53b576f967b5aaba216c788f7e834bb01daa6b9ec3353811e3c30b`  
-		Last Modified: Tue, 13 Jan 2026 01:17:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:57 GMT  
 		Size: 76.5 MB (76530374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b95d537084054513975c6621d3f551d5c25fd778faaa9e88e6b1c9e5c501600d`  
-		Last Modified: Tue, 13 Jan 2026 01:17:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:48 GMT  
 		Size: 1.0 KB (1031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -725,7 +725,7 @@ $ docker pull emqx@sha256:18acb9d20698d0fa54c2b5098b6cbe60da3bd7e0f9e4a6f7bb54e2
 
 -	Layers:
 	-	`sha256:83bbe8e83cc379af23032e5d9e0bfaabb2eda78d0e6664fb5bf2619e0044ee2f`  
-		Last Modified: Tue, 13 Jan 2026 01:17:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:28:49 GMT  
 		Size: 2.4 MB (2403752 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:41188b6e930ba00d90dd4040a070af16891f6c9b8cd375e13e82853587235e83`  
@@ -794,11 +794,11 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 29.8 MB (29773685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b7dceb230e83bb8bc743aa37e81f7cd505511e5beec0659ede59e7c2cb0671b7`  
-		Last Modified: Tue, 13 Jan 2026 01:17:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:55 GMT  
 		Size: 78.6 MB (78622661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39349b182205263062f734efc0588aafd46c8024e185c9e1d0b3fb6e410a6da2`  
@@ -826,7 +826,7 @@ $ docker pull emqx@sha256:bafd51acc6e7a6440aa026fc9b4f85128335f3da6f197c7ce2cad0
 		Size: 2.4 MB (2403463 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c2075dae3331b14a99bdc6144a436c04085530d0f903372d45287a41060d1ea0`  
-		Last Modified: Tue, 13 Jan 2026 06:29:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:53 GMT  
 		Size: 12.5 KB (12486 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -878,15 +878,15 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae82769fae53b576f967b5aaba216c788f7e834bb01daa6b9ec3353811e3c30b`  
-		Last Modified: Tue, 13 Jan 2026 01:17:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:57 GMT  
 		Size: 76.5 MB (76530374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b95d537084054513975c6621d3f551d5c25fd778faaa9e88e6b1c9e5c501600d`  
-		Last Modified: Tue, 13 Jan 2026 01:17:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:48 GMT  
 		Size: 1.0 KB (1031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -906,7 +906,7 @@ $ docker pull emqx@sha256:18acb9d20698d0fa54c2b5098b6cbe60da3bd7e0f9e4a6f7bb54e2
 
 -	Layers:
 	-	`sha256:83bbe8e83cc379af23032e5d9e0bfaabb2eda78d0e6664fb5bf2619e0044ee2f`  
-		Last Modified: Tue, 13 Jan 2026 01:17:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:28:49 GMT  
 		Size: 2.4 MB (2403752 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:41188b6e930ba00d90dd4040a070af16891f6c9b8cd375e13e82853587235e83`  
@@ -975,11 +975,11 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 29.8 MB (29773685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b7dceb230e83bb8bc743aa37e81f7cd505511e5beec0659ede59e7c2cb0671b7`  
-		Last Modified: Tue, 13 Jan 2026 01:17:05 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:55 GMT  
 		Size: 78.6 MB (78622661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39349b182205263062f734efc0588aafd46c8024e185c9e1d0b3fb6e410a6da2`  
@@ -1007,7 +1007,7 @@ $ docker pull emqx@sha256:bafd51acc6e7a6440aa026fc9b4f85128335f3da6f197c7ce2cad0
 		Size: 2.4 MB (2403463 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c2075dae3331b14a99bdc6144a436c04085530d0f903372d45287a41060d1ea0`  
-		Last Modified: Tue, 13 Jan 2026 06:29:08 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:16:53 GMT  
 		Size: 12.5 KB (12486 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1059,15 +1059,15 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae82769fae53b576f967b5aaba216c788f7e834bb01daa6b9ec3353811e3c30b`  
-		Last Modified: Tue, 13 Jan 2026 01:17:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:57 GMT  
 		Size: 76.5 MB (76530374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Tue, 09 Dec 2025 23:54:32 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b95d537084054513975c6621d3f551d5c25fd778faaa9e88e6b1c9e5c501600d`  
-		Last Modified: Tue, 13 Jan 2026 01:17:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:17:48 GMT  
 		Size: 1.0 KB (1031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1087,7 +1087,7 @@ $ docker pull emqx@sha256:18acb9d20698d0fa54c2b5098b6cbe60da3bd7e0f9e4a6f7bb54e2
 
 -	Layers:
 	-	`sha256:83bbe8e83cc379af23032e5d9e0bfaabb2eda78d0e6664fb5bf2619e0044ee2f`  
-		Last Modified: Tue, 13 Jan 2026 01:17:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:28:49 GMT  
 		Size: 2.4 MB (2403752 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:41188b6e930ba00d90dd4040a070af16891f6c9b8cd375e13e82853587235e83`  
