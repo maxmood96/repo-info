@@ -70,11 +70,11 @@ $ docker pull rust@sha256:b59c5ed88464dbab57b619b3f024feb2daeddcb29534e4cbbbb16e
 
 -	Layers:
 	-	`sha256:8b6e89c6ec5ac33576dcea262780d3326de1cf2f504fd85b7bb90bd39e68548c`  
-		Last Modified: Tue, 13 Jan 2026 06:46:01 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:18:59 GMT  
 		Size: 4.2 MB (4165103 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:93b74239f599eb13944ee771c13af2d6ea46a9bba512c252549dc898ac6b2c7c`  
-		Last Modified: Tue, 13 Jan 2026 06:46:03 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:18:58 GMT  
 		Size: 15.6 KB (15633 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -107,7 +107,7 @@ RUN set -eux;         apt-get update;     apt-get install -y --no-install-recomm
 		Size: 26.2 MB (26208578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4dcc1521baa4db36db63afb35f5d0f3c7a1fd5cb3015bd8d09a96b818314e837`  
-		Last Modified: Tue, 13 Jan 2026 04:04:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 04:13:03 GMT  
 		Size: 308.0 MB (308028889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -160,7 +160,7 @@ RUN set -eux;         apt-get update;     apt-get install -y --no-install-recomm
 
 -	Layers:
 	-	`sha256:d637807aba98f742a62ad9b0146579ceb0297a3c831f56b2361664b7f5fbc75b`  
-		Last Modified: Tue, 13 Jan 2026 00:42:41 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:49 GMT  
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:913bf444a588bcf2d268e99a0161196c48efab95226d1fa0be8011c2758a958b`  
@@ -217,7 +217,7 @@ RUN set -eux;         apt-get update;     apt-get install -y --no-install-recomm
 
 -	Layers:
 	-	`sha256:27bb6d39eda5ced7626db280c3902aacdfade5acd11a16ef9618e3185f69b102`  
-		Last Modified: Tue, 13 Jan 2026 00:42:56 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:43:03 GMT  
 		Size: 31.3 MB (31288476 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b7a48d29ea67ba0918cbaef551923f8f75485c058a5048cc91193e1919cb4efd`  
@@ -241,11 +241,11 @@ $ docker pull rust@sha256:6d23e183c7c61fd4e5cd1441845da97aa2669a0cee22753ce6a0fa
 
 -	Layers:
 	-	`sha256:2cd8a44afda7a3efcc59c32540ab83d380726796e87e18dcdcf4de694837ebc7`  
-		Last Modified: Tue, 13 Jan 2026 02:49:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:45:29 GMT  
 		Size: 4.1 MB (4138616 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fabc227f0c461cda621b05d19efde5fcedca8fc12d888d726b0c283026ca5749`  
-		Last Modified: Tue, 13 Jan 2026 02:49:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 03:45:29 GMT  
 		Size: 15.6 KB (15581 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -278,7 +278,7 @@ RUN set -eux;         apt-get update;     apt-get install -y --no-install-recomm
 		Size: 33.6 MB (33595600 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1861aa60ac940c65506310abe603e485f26737ddd7fe99d0b4e63c27a9e4af23`  
-		Last Modified: Tue, 13 Jan 2026 05:32:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 05:28:52 GMT  
 		Size: 361.7 MB (361714426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -331,11 +331,11 @@ RUN set -eux;         apt-get update;     apt-get install -y --no-install-recomm
 
 -	Layers:
 	-	`sha256:8c2d1639f4f145e07ecf59940bfa96f17083c024b5c96e8082c50d6075a08b82`  
-		Last Modified: Tue, 13 Jan 2026 01:07:54 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:08:06 GMT  
 		Size: 28.3 MB (28271687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7813f428e8866a135ba9507da91829e18c4d2276a903a872edfa38b964c34924`  
-		Last Modified: Sat, 17 Jan 2026 14:28:51 GMT  
+		Last Modified: Sat, 17 Jan 2026 14:30:34 GMT  
 		Size: 363.2 MB (363182521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -388,7 +388,7 @@ RUN set -eux;         apt-get update;     apt-get install -y --no-install-recomm
 
 -	Layers:
 	-	`sha256:2b46bc94baaae0a37e5e04b1babf7e1f37c4390b83d49c3c6820188deba770e3`  
-		Last Modified: Tue, 13 Jan 2026 13:10:43 GMT  
+		Last Modified: Tue, 13 Jan 2026 13:10:27 GMT  
 		Size: 29.8 MB (29833411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:561b3ba112f9b160cec2e178a189abb43ba69e737f902f4b68e09c398296e1c3`  
@@ -412,10 +412,10 @@ $ docker pull rust@sha256:ad5af7da927b232a7fb94ee88fee854436b4f860e35d8175f158ca
 
 -	Layers:
 	-	`sha256:74a9912db54ab39c3556ddf3a0d5ea217c4765158bae296c80b7a8e915a2488a`  
-		Last Modified: Tue, 13 Jan 2026 18:44:48 GMT  
+		Last Modified: Tue, 13 Jan 2026 15:37:11 GMT  
 		Size: 4.0 MB (3982851 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:85891ea9d95d9d600c781e3062d1d338e2be3fb47d0f3c86ad211c95a892980e`  
-		Last Modified: Tue, 13 Jan 2026 18:44:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 15:37:11 GMT  
 		Size: 15.6 KB (15633 bytes)  
 		MIME: application/vnd.in-toto+json
