@@ -36,7 +36,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:27b4a02f35e059b231a8869fb4ef82ee3ef52c7c0e3dbef81464d6b3b26922be`  
-		Last Modified: Mon, 05 Jan 2026 18:20:50 GMT  
+		Last Modified: Mon, 05 Jan 2026 18:21:18 GMT  
 		Size: 67.5 MB (67510075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -109,7 +109,7 @@ $ docker pull almalinux@sha256:6ae6b5a23734004d13ed4cbbbf57d72360fe0c601ffc13407
 		Size: 4.6 MB (4593720 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a7037fa90cb97d584be07c205fa6c935a00fdcd4c863b153969a3a0e6065a2e0`  
-		Last Modified: Mon, 05 Jan 2026 19:33:50 GMT  
+		Last Modified: Mon, 05 Jan 2026 18:21:37 GMT  
 		Size: 5.2 KB (5224 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -134,7 +134,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:7788a846a23e4cf99a51feb5e194c7c4370515a8ceedeb376c9a7365be4daf3a`  
-		Last Modified: Mon, 05 Jan 2026 18:22:02 GMT  
+		Last Modified: Mon, 05 Jan 2026 18:21:29 GMT  
 		Size: 72.9 MB (72944482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -154,11 +154,11 @@ $ docker pull almalinux@sha256:c6d05ad632c78fc219eebe6898102822beaba48dcdf70860c
 
 -	Layers:
 	-	`sha256:0e73c7f5043ecd27ee1d192cc3847a43d52e00e7ce972c7d0ff1c7133b42249b`  
-		Last Modified: Mon, 05 Jan 2026 18:21:27 GMT  
+		Last Modified: Mon, 05 Jan 2026 19:33:55 GMT  
 		Size: 4.6 MB (4592686 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:16757e5e62f0c10c74dc88b4b83e26b3fe0aef2086b94639ab15966f1ed8bb0e`  
-		Last Modified: Mon, 05 Jan 2026 19:33:56 GMT  
+		Last Modified: Mon, 05 Jan 2026 18:21:27 GMT  
 		Size: 5.2 KB (5217 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -203,7 +203,7 @@ $ docker pull almalinux@sha256:1ae675843990a00edfdfc1ed4517e6e723ebfabc2075913f7
 
 -	Layers:
 	-	`sha256:78e385e47b79d0b308471bc501ca4417acd8d2a5b33407113f1f32c7ef2229d9`  
-		Last Modified: Mon, 05 Jan 2026 19:34:01 GMT  
+		Last Modified: Mon, 05 Jan 2026 18:21:03 GMT  
 		Size: 4.6 MB (4593552 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7a4d6ec8e9f2fff450acc891e2c71a9bd66b65cac58cf65a05737ee1f5fb0c4d`  
