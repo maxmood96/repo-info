@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:deab751a46d67748d4aae6da3666c72f008d6050b974ce7a421d81a9ab5213ca`
-- Created: `2025-12-04T19:48:36.270099194Z`
-- Virtual Size: ~ 516.86 Mb  
+- Image ID: `sha256:4188e42a891988916d483fb86962da37ec1d8f4220890b37e8367d6fd8db0f5f`
+- Created: `2026-01-20T19:16:27.303819314Z`
+- Virtual Size: ~ 516.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,13 +16,13 @@
   - `MARIADB_VERSION=10.11.15`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-12-03T20:36:05Z`
+  - `build-date=2026-01-19T00:53:42Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
   - `description=MariaDB Database for relational SQL`
   - `distribution-scope=public`
-  - `io.buildah.version=1.41.4`
+  - `io.buildah.version=1.41.5`
   - `io.k8s.description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 9 Minimal`
   - `io.openshift.expose-services=`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2025-12-03T20:36:05Z`
+  - `org.opencontainers.image.created=2026-01-19T00:53:42Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=1595c1bf15cd4327d529f330e61327764327397e`
+  - `org.opencontainers.image.revision=d9151f7dd4dfe1cc8a2df524b85cddd483628d5e`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=1595c1bf15cd4327d529f330e61327764327397e`
+  - `vcs-ref=d9151f7dd4dfe1cc8a2df524b85cddd483628d5e`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=10.11.15`
@@ -136,11 +136,16 @@ $ dnf --quiet download --source --url bash-5.1.8-9.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/bash-5.1.8-9.el9.src.rpm
 ```
 
-### `rpm` package: `boost-program-options-1.75.0-12.el9.x86_64`
+### `rpm` package: `boost-program-options-1.75.0-13.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Boost and MIT and Python
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url boost-program-options-1.75.0-13.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/b/boost-1.75.0-13.el9_7.src.rpm
+```
 
 ### `rpm` package: `bzip2-libs-1.0.8-10.el9_5.x86_64`
 
@@ -304,7 +309,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-5.el9_7.1.x86_64`
@@ -394,12 +399,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url glib2-2.68.4-18.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-18.el9_7.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `glibc-2.34-231.el9_7.2.x86_64`
 
@@ -445,11 +445,16 @@ $ dnf --quiet download --source --url gmp-6.2.0-13.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gmp-6.2.0-13.el9.src.rpm
 ```
 
-### `rpm` package: `gnupg2-2.3.3-4.el9.x86_64`
+### `rpm` package: `gnupg2-2.3.3-5.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gnupg2-2.3.3-5.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnupg2-2.3.3-5.el9_7.src.rpm
+```
 
 ### `rpm` package: `gnutls-3.8.3-9.el9.x86_64`
 
@@ -481,7 +486,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -571,7 +576,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1154,7 +1159,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.6.2-1.el9
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.5-1.el9.x86_64`
@@ -1377,11 +1382,16 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-3.5.1-4.el9_7.x86_64`
+### `rpm` package: `openssl-3.5.1-5.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-3.5.1-5.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-5.el9_7.src.rpm
+```
 
 ### `rpm` package: `openssl-fips-provider-3.0.7-8.el9.x86_64`
 
@@ -1405,11 +1415,16 @@ $ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-8.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.5.1-4.el9_7.x86_64`
+### `rpm` package: `openssl-libs-3.5.1-5.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-libs-3.5.1-5.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-5.el9_7.src.rpm
+```
 
 ### `rpm` package: `p11-kit-0.25.3-3.el9_5.x86_64`
 
@@ -2211,7 +2226,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2222,7 +2237,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -2390,17 +2405,27 @@ $ dnf --quiet download --source --url systemd-rpm-macros-252-55.el9_7.7.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
 ```
 
-### `rpm` package: `tar-1.34-7.el9.x86_64`
+### `rpm` package: `tar-1.34-9.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `tzdata-2025b-2.el9.noarch`
+```console
+$ dnf --quiet download --source --url tar-1.34-9.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-9.el9_7.src.rpm
+```
+
+### `rpm` package: `tzdata-2025c-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2025c-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2025c-1.el9.src.rpm
+```
 
 ### `rpm` package: `util-linux-2.37.4-21.el9.x86_64`
 
