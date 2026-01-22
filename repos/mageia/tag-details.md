@@ -62,11 +62,11 @@ $ docker pull mageia@sha256:1fc7671a4585eea25798d67283599c5efd7d05ce7f6914dd389b
 
 -	Layers:
 	-	`sha256:6cf3b5d6b5b54897db4898f7abcf4d603fc54de633c6b26258dbee0be1935fd7`  
-		Last Modified: Tue, 13 Jan 2026 17:49:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:52:17 GMT  
 		Size: 7.2 MB (7217153 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:374d02374a42aefc05fd672dd5c72c1b5df9006e2c2ad2e2f99a7364e4f7e0dd`  
-		Last Modified: Tue, 13 Jan 2026 17:48:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:52:18 GMT  
 		Size: 5.2 KB (5241 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -111,11 +111,11 @@ $ docker pull mageia@sha256:9103fdd4bab3062b758c069e35322060d553f9d74b204f948b5a
 
 -	Layers:
 	-	`sha256:adb845dedea0211dffc71f0cd859032883edf553db8ff3ea15265cd44f5fc251`  
-		Last Modified: Tue, 13 Jan 2026 21:52:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:50:04 GMT  
 		Size: 7.2 MB (7178247 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:90ff04e5a3cabff8b0af5c2b6cba900211515f91b0c8537ea17979559af9a10d`  
-		Last Modified: Tue, 13 Jan 2026 21:52:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:50:03 GMT  
 		Size: 5.3 KB (5271 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -160,11 +160,11 @@ $ docker pull mageia@sha256:682e7a39f308c334ae2fd136537472634266fa638839e9b6d0c4
 
 -	Layers:
 	-	`sha256:4234333551deb3db55743a244793395195738f07fbdfcf74271a7fe2cf999fc4`  
-		Last Modified: Tue, 13 Jan 2026 21:52:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:48:53 GMT  
 		Size: 7.2 MB (7202144 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c65a2e9e301ee8a44478698d504e7dbadc92a1ace1b446d2caa110bc9b0f18bd`  
-		Last Modified: Tue, 13 Jan 2026 21:52:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:48:53 GMT  
 		Size: 5.3 KB (5280 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -273,7 +273,7 @@ $ docker pull mageia@sha256:4319b8c2c28be0ddd98799d3472cc75120bd4ca60c81f38092f1
 
 -	Layers:
 	-	`sha256:3144fcfc2ef7dbf7afe143de822f8466277d6e6b87d6056da185d1505832bcd4`  
-		Last Modified: Tue, 13 Jan 2026 21:52:28 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:54:22 GMT  
 		Size: 7.1 MB (7069761 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8962c73143240c933e83362e842ede93344ea9e6d3dfdca8abcffc7bda710c62`  
@@ -302,7 +302,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:dec6bd34d57d1644a18d1c4d808057cb4fdb872cff62157508ec83d5dfb29668`  
-		Last Modified: Tue, 13 Jan 2026 19:56:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:49:37 GMT  
 		Size: 128.9 MB (128942227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -386,11 +386,11 @@ $ docker pull mageia@sha256:1fc7671a4585eea25798d67283599c5efd7d05ce7f6914dd389b
 
 -	Layers:
 	-	`sha256:6cf3b5d6b5b54897db4898f7abcf4d603fc54de633c6b26258dbee0be1935fd7`  
-		Last Modified: Tue, 13 Jan 2026 17:49:00 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:52:17 GMT  
 		Size: 7.2 MB (7217153 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:374d02374a42aefc05fd672dd5c72c1b5df9006e2c2ad2e2f99a7364e4f7e0dd`  
-		Last Modified: Tue, 13 Jan 2026 17:48:59 GMT  
+		Last Modified: Tue, 13 Jan 2026 21:52:18 GMT  
 		Size: 5.2 KB (5241 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -435,11 +435,11 @@ $ docker pull mageia@sha256:9103fdd4bab3062b758c069e35322060d553f9d74b204f948b5a
 
 -	Layers:
 	-	`sha256:adb845dedea0211dffc71f0cd859032883edf553db8ff3ea15265cd44f5fc251`  
-		Last Modified: Tue, 13 Jan 2026 21:52:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:50:04 GMT  
 		Size: 7.2 MB (7178247 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:90ff04e5a3cabff8b0af5c2b6cba900211515f91b0c8537ea17979559af9a10d`  
-		Last Modified: Tue, 13 Jan 2026 21:52:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:50:03 GMT  
 		Size: 5.3 KB (5271 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -484,10 +484,10 @@ $ docker pull mageia@sha256:682e7a39f308c334ae2fd136537472634266fa638839e9b6d0c4
 
 -	Layers:
 	-	`sha256:4234333551deb3db55743a244793395195738f07fbdfcf74271a7fe2cf999fc4`  
-		Last Modified: Tue, 13 Jan 2026 21:52:33 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:48:53 GMT  
 		Size: 7.2 MB (7202144 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c65a2e9e301ee8a44478698d504e7dbadc92a1ace1b446d2caa110bc9b0f18bd`  
-		Last Modified: Tue, 13 Jan 2026 21:52:58 GMT  
+		Last Modified: Tue, 13 Jan 2026 17:48:53 GMT  
 		Size: 5.3 KB (5280 bytes)  
 		MIME: application/vnd.in-toto+json
