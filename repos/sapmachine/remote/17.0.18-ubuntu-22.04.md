@@ -52,7 +52,7 @@ CMD ["jshell"]
 		Size: 29.5 MB (29536667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:277b5d86c1fbcbb1bc7712032c3427cc052d94f88ea3bbe9451338d94eae508e`  
-		Last Modified: Wed, 21 Jan 2026 22:24:13 GMT  
+		Last Modified: Wed, 21 Jan 2026 20:05:13 GMT  
 		Size: 201.3 MB (201298835 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -72,7 +72,7 @@ $ docker pull sapmachine@sha256:997a85fbfd92a0e7a0eca01369079efe46882f058658ef31
 
 -	Layers:
 	-	`sha256:3ebbde7e16f36de0b5f8817cf4447c64c4d33f771b7d238c5d4e7635677f25ae`  
-		Last Modified: Wed, 21 Jan 2026 20:05:09 GMT  
+		Last Modified: Wed, 21 Jan 2026 22:07:18 GMT  
 		Size: 2.6 MB (2630239 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2613e6e68920a3a4119d62f875b29bb630d7cdb757733390ad834cf471bfcdca`  
@@ -115,7 +115,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:517f43312bfe3b4db0f0f031d8b6deb1aa5616b07fae71fa0d349f9ce451564f`  
-		Last Modified: Fri, 09 Jan 2026 11:16:52 GMT  
+		Last Modified: Fri, 09 Jan 2026 07:36:03 GMT  
 		Size: 27.4 MB (27383497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01b27fdc297d2a5cc19ac583ec7348b1680112837ec25e0f389d0c44b56ceebb`  
@@ -139,7 +139,7 @@ $ docker pull sapmachine@sha256:47ca942bac3428a6ce1d0081f54a92d678fbf631cd5cb582
 
 -	Layers:
 	-	`sha256:91663e428e626889ab9cd82eb804f25087680a4921002d13494cd58183f8c52d`  
-		Last Modified: Wed, 21 Jan 2026 20:10:47 GMT  
+		Last Modified: Wed, 21 Jan 2026 22:07:25 GMT  
 		Size: 2.6 MB (2629969 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23574d0364aa7ed5c2a3763498adcb491843bce62556e9d7be52b93b5b98ee93`  
@@ -182,7 +182,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:2490923be26ec970f7d805c10bc7c9c56e219061e875cf31dad74e227e0bbdc4`  
-		Last Modified: Fri, 09 Jan 2026 07:36:16 GMT  
+		Last Modified: Thu, 15 Jan 2026 21:43:22 GMT  
 		Size: 34.4 MB (34446962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8f42294ecc856ee3b0a2958ad24758e7252df21b7acaea27bb0955d09c2690b1`  
