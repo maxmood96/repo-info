@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e193c276a45d9f46a16200cadb1cbc5ea77e8f6a59735946c17247fbe4fa183`
-- Created: `2025-10-21T21:30:29Z`
-- Virtual Size: ~ 184.24 Mb  
+- Image ID: `sha256:fcc2579ae0bd3f8fedfd6e49c6c67ee1fdfe7a7fa1101be53ab0a936f7c0d677`
+- Created: `2026-01-21T20:03:32.283590237Z`
+- Virtual Size: ~ 184.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["sh"]`
@@ -340,16 +340,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.47-r0 description:
+libpng-1.6.53-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.47-r0 webpage:
+libpng-1.6.53-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.47-r0 installed size:
+libpng-1.6.53-r0 installed size:
 181 KiB
 
-libpng-1.6.47-r0 license:
+libpng-1.6.53-r0 license:
 Libpng
 
 ```
@@ -578,16 +578,16 @@ MPL-2.0
 ### `apk` package: `sapmachine-21-jre`
 
 ```console
-sapmachine-21-jre-21.0.9-r0 description:
+sapmachine-21-jre-21.0.10-r0 description:
 The SapMachine Java Runtime Environment
 
-sapmachine-21-jre-21.0.9-r0 webpage:
+sapmachine-21-jre-21.0.10-r0 webpage:
 https://sapmachine.io
 
-sapmachine-21-jre-21.0.9-r0 installed size:
-152 MiB
+sapmachine-21-jre-21.0.10-r0 installed size:
+153 MiB
 
-sapmachine-21-jre-21.0.9-r0 license:
+sapmachine-21-jre-21.0.10-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```

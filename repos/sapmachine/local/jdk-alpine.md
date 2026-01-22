@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8cbbe252df3db7a0d09465bedff0e140e3753c7335baac52dc250dc81845b168`
-- Created: `2025-10-21T21:30:17Z`
-- Virtual Size: ~ 376.70 Mb  
+- Image ID: `sha256:25316fcbb4a247bd3d4d22f5c0de066fc766ecd3a1ebf378442783d547128816`
+- Created: `2026-01-21T20:01:57.486551496Z`
+- Virtual Size: ~ 377.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -340,16 +340,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.47-r0 description:
+libpng-1.6.53-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.47-r0 webpage:
+libpng-1.6.53-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.47-r0 installed size:
+libpng-1.6.53-r0 installed size:
 181 KiB
 
-libpng-1.6.47-r0 license:
+libpng-1.6.53-r0 license:
 Libpng
 
 ```
@@ -578,16 +578,16 @@ MPL-2.0
 ### `apk` package: `sapmachine-25-jdk`
 
 ```console
-sapmachine-25-jdk-25.0.1-r0 description:
+sapmachine-25-jdk-25.0.2-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-25-jdk-25.0.1-r0 webpage:
+sapmachine-25-jdk-25.0.2-r0 webpage:
 https://sapmachine.io
 
-sapmachine-25-jdk-25.0.1-r0 installed size:
-336 MiB
+sapmachine-25-jdk-25.0.2-r0 installed size:
+337 MiB
 
-sapmachine-25-jdk-25.0.1-r0 license:
+sapmachine-25-jdk-25.0.2-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
