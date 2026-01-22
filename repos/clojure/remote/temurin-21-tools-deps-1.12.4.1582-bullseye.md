@@ -55,7 +55,7 @@ CMD ["-M" "--repl"]
 		Size: 53.8 MB (53756446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a48673fd3749e138c2a0c834767f97a421a929bd222295e11f5e3c492deec6ef`  
-		Last Modified: Fri, 16 Jan 2026 02:01:24 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:58:26 GMT  
 		Size: 157.8 MB (157826001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -71,7 +71,7 @@ CMD ["-M" "--repl"]
 		Size: 611.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be70075b4bca4dc11af742e43712f2772e967daf3301a5a12103a65a2b86067d`  
-		Last Modified: Fri, 16 Jan 2026 02:00:58 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:00:50 GMT  
 		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -91,7 +91,7 @@ $ docker pull clojure@sha256:6d1281ddfb373fe7f482345fc57bb3f2af6cdf9e69452f3c537
 
 -	Layers:
 	-	`sha256:4242dcea64942337d5f270492685279c098a82b49896833066eb6ac8196ded4a`  
-		Last Modified: Fri, 16 Jan 2026 02:00:48 GMT  
+		Last Modified: Fri, 16 Jan 2026 04:45:21 GMT  
 		Size: 7.4 MB (7398771 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:08f3a70f675e002e6aa7360be9179dd34ab4d098e8319bfe91f545e64ecc03d0`  
@@ -159,7 +159,7 @@ CMD ["-M" "--repl"]
 		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d43139183168656dbb2cd8ab0394833a04f7eaca870e0a188e3f48ef14a092d1`  
-		Last Modified: Fri, 16 Jan 2026 02:05:50 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:05:38 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -179,7 +179,7 @@ $ docker pull clojure@sha256:69e5b16655338dc3ec419588ba52ce753bcbfdbda42588082df
 
 -	Layers:
 	-	`sha256:e96829de23cb252debf18dc0cdb95f6928802c5fb506da02cc99055b529d4f7e`  
-		Last Modified: Fri, 16 Jan 2026 04:45:29 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:05:38 GMT  
 		Size: 7.4 MB (7403870 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9563ef682b4c8e1a1d595b21d3ce272b931385faf7a2d61f757c261d01a4267a`  
