@@ -83,11 +83,11 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 
 -	Layers:
 	-	`sha256:1074353eec0db2c1d81d5af2671e56e00cf5738486f5762609ea33d606f88612`  
-		Last Modified: Wed, 17 Dec 2025 22:48:50 GMT  
+		Last Modified: Wed, 17 Dec 2025 22:49:00 GMT  
 		Size: 3.9 MB (3860104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:25f453064fd3e8a9754b6e51b86c637e13203cbfc748fcf73f3c8b2d10816ae3`  
-		Last Modified: Thu, 18 Dec 2025 00:29:57 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:29:47 GMT  
 		Size: 1.9 MB (1856182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:567f84da6fbd4287d40a5837485469435c40a81f9a94e98395b6385d3600643a`  
@@ -99,7 +99,7 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 953.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:33f95a0f3229b49e777082e801b882b13fcc5b4e389410ce8eb066f4d58c71b9`  
-		Last Modified: Thu, 18 Dec 2025 00:29:47 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:29:57 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:085c5e5aaa8eb4b957ecf253c74f16a6a5551231de3fb7c3ac74814a6bf17e06`  
@@ -111,11 +111,11 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e096540205d5d1ab2c2647d716491020d81e3f167a33606665b193d75540857f`  
-		Last Modified: Wed, 14 Jan 2026 00:44:54 GMT  
+		Last Modified: Wed, 14 Jan 2026 00:45:18 GMT  
 		Size: 20.2 MB (20180389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c97f67032e036cc02dc37aab9a12409631ba2ba669bfc8aa1c4588af426f49f7`  
-		Last Modified: Wed, 14 Jan 2026 01:10:46 GMT  
+		Last Modified: Wed, 14 Jan 2026 01:10:24 GMT  
 		Size: 10.3 MB (10285656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -139,7 +139,7 @@ $ docker pull nginx@sha256:ae0fe5ce9be23805f4f95b5d2d8e2f0a4523c227c767d3e9f4773
 		Size: 1.9 MB (1854747 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1ae73bb6722cc6be43ca8cedf5ea01aa432faf83aa1220777555b53b1d8f1ebd`  
-		Last Modified: Wed, 14 Jan 2026 01:10:24 GMT  
+		Last Modified: Wed, 14 Jan 2026 03:51:18 GMT  
 		Size: 21.2 KB (21157 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -205,15 +205,15 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 3.6 MB (3568432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:283ac494be3968c92adcf0934067db073829fafbf5370e70a8144043b64d62bf`  
-		Last Modified: Thu, 18 Dec 2025 00:28:42 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:28:37 GMT  
 		Size: 1.9 MB (1853997 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:814f092f31440d9b6ece25d6fb4344f11caeed0161301a6d342ad74176e92530`  
-		Last Modified: Thu, 18 Dec 2025 00:28:42 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:28:36 GMT  
 		Size: 629.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ce9452565441be470f82d05ec70ebf8028d988df17de85f639f607fb0cf07335`  
-		Last Modified: Thu, 18 Dec 2025 00:28:36 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:28:42 GMT  
 		Size: 956.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9994bbf3af7acedda000513e86f58932b5d69e79aaad050740c8cfd9eac2d607`  
@@ -221,11 +221,11 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 405.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:332d783258e756c7e9c61eb09c4fac49822ddd949d640ddc397f2a237500c28b`  
-		Last Modified: Thu, 18 Dec 2025 00:28:43 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:28:37 GMT  
 		Size: 1.2 KB (1210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75d9c74a953e6f737e71b5741b27a9e978febd81074f9dc4ed6a9b8ab0db34ba`  
-		Last Modified: Thu, 18 Dec 2025 00:28:37 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:28:43 GMT  
 		Size: 1.4 KB (1399 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:62810390c0acd21e583534f17526def2ea8d360e8cac9f9221e9aaf94bb3b842`  
@@ -253,7 +253,7 @@ $ docker pull nginx@sha256:39a4795247b2e1c1471cb1c1770de543034f44088b7ebff508d93
 
 -	Layers:
 	-	`sha256:3c201d8a23c5768660e6f44a4ee03b4454adb47625113137629c6c989d038ebe`  
-		Last Modified: Thu, 18 Dec 2025 03:51:13 GMT  
+		Last Modified: Thu, 18 Dec 2025 02:12:21 GMT  
 		Size: 20.8 KB (20834 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -325,31 +325,31 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 1.7 MB (1683136 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:374098a089c102737e1acbc3300754ee6d2c35865915bb8ad9bae60a5671b0bc`  
-		Last Modified: Thu, 18 Dec 2025 00:28:18 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:28:06 GMT  
 		Size: 628.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3a87906cb70726d993e49a654c112aab788436c8890f71b92093daeb641b9783`  
-		Last Modified: Thu, 18 Dec 2025 00:28:18 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:28:06 GMT  
 		Size: 955.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d7f2724432e363ddf6938a22eeaee0059b49749844d7f96ba3ed57dbb5ad107`  
-		Last Modified: Thu, 18 Dec 2025 00:28:06 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:28:18 GMT  
 		Size: 405.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d349003f71a0469081b06b19b90d292a5fae0b662729f950a72b37f77ef9d7c6`  
-		Last Modified: Thu, 18 Dec 2025 00:28:18 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:28:07 GMT  
 		Size: 1.2 KB (1210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c84f335eb87049536b0c199c7596693c3670f47bb5bc81c11a9b8c5eae71561`  
-		Last Modified: Thu, 18 Dec 2025 00:28:07 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:28:18 GMT  
 		Size: 1.4 KB (1399 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7f6620ddfd52e8ba8cd1c97c6e06ceabf2fa45fc25ee5c3ab52eedd48eca9289`  
-		Last Modified: Wed, 14 Jan 2026 00:50:38 GMT  
+		Last Modified: Wed, 14 Jan 2026 00:50:26 GMT  
 		Size: 16.6 MB (16579718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c7c7b0ed1ad86e7e45708f2ad4eb14a042342425ca5e20c4a29babc61f7a669`  
-		Last Modified: Wed, 14 Jan 2026 01:09:30 GMT  
+		Last Modified: Wed, 14 Jan 2026 01:09:51 GMT  
 		Size: 9.3 MB (9342375 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -369,7 +369,7 @@ $ docker pull nginx@sha256:f67e474aaef316d9c62655d76ed3e7d2cfef092d92552a4983038
 
 -	Layers:
 	-	`sha256:a653cf9560726b2e1b0308743af16e117800d7c6d2afff727be6b6f03ae632a8`  
-		Last Modified: Wed, 14 Jan 2026 03:51:23 GMT  
+		Last Modified: Wed, 14 Jan 2026 01:09:30 GMT  
 		Size: 1.9 MB (1854193 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5fb2c5644bfcd502386b2f4ce6d2ecc92ece1a949a315ab3bdb6d4858527debb`  
@@ -437,11 +437,11 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 
 -	Layers:
 	-	`sha256:f6b4fb9446345fcad2db26eac181fef6c0a919c8a4fcccd3bea5deb7f6dff67e`  
-		Last Modified: Thu, 18 Dec 2025 00:12:50 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:12:35 GMT  
 		Size: 4.2 MB (4195739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a0ef6d8231d0e512c7a0c0f7029bcfb8c77f0848b9cb8ec5373b28991c83415b`  
-		Last Modified: Thu, 18 Dec 2025 00:29:44 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:29:38 GMT  
 		Size: 1.9 MB (1872990 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9076aaa4fd77085ce5562e9aca2b51ca88baf3fb8e41f8c777d0df14a1ce1085`  
@@ -457,19 +457,19 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ceb87b8ac279a84fc99bdc30e7406cf21bf5d5841819fd0e3c8e0c06d867533c`  
-		Last Modified: Thu, 18 Dec 2025 00:29:44 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:29:38 GMT  
 		Size: 1.2 KB (1208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4f04eae8d5eb8a0220a0d542da10f9c55b57a585dea1875cfbb1ee99d4c5a4a`  
-		Last Modified: Thu, 18 Dec 2025 00:29:39 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:29:44 GMT  
 		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a735f2296d46b598dbc65289bfdc2ec4dd07607e69a1887e4ce6ef898be56e1`  
-		Last Modified: Wed, 14 Jan 2026 00:45:01 GMT  
+		Last Modified: Wed, 14 Jan 2026 00:44:34 GMT  
 		Size: 19.7 MB (19656125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:62bccdd4d96a712f005ca68d53ff9b70d3564035a76d57cf089fcb7d12419c9b`  
-		Last Modified: Wed, 14 Jan 2026 01:10:34 GMT  
+		Last Modified: Wed, 14 Jan 2026 01:10:19 GMT  
 		Size: 10.2 MB (10229641 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -557,11 +557,11 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 
 -	Layers:
 	-	`sha256:c21df6a7383dfce37a4bfe31b291881f55907c419caf5d06cb6d699d290d0718`  
-		Last Modified: Thu, 18 Dec 2025 00:13:25 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:13:38 GMT  
 		Size: 3.7 MB (3686100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:30f3b9423019844ed5f5c4f0297dfa0bd19221ef7a99123f1e9705ce865b8525`  
-		Last Modified: Thu, 18 Dec 2025 00:31:09 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:31:02 GMT  
 		Size: 1.9 MB (1929656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5479f44a40d942e7fde7691552e0602237ed857f048a0838d7531aa794a1d298`  
@@ -581,15 +581,15 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 1.2 KB (1209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d474d44276717e74b2b65491ec42ca70b83b5473e8954d3f69ebda6a0e2c94d`  
-		Last Modified: Thu, 18 Dec 2025 00:31:03 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:31:14 GMT  
 		Size: 1.4 KB (1397 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0358534f1221770d3d56efcadc4f2b0eeeb8507fe9d57f5cabdef22a922f72ba`  
-		Last Modified: Wed, 14 Jan 2026 00:48:40 GMT  
+		Last Modified: Wed, 14 Jan 2026 00:48:50 GMT  
 		Size: 19.6 MB (19577836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8bc00c8bb43d37510cbcc95b02d8efd0ffbfb18029081abe6c85ce06002cc097`  
-		Last Modified: Wed, 14 Jan 2026 01:11:00 GMT  
+		Last Modified: Wed, 14 Jan 2026 01:10:52 GMT  
 		Size: 9.8 MB (9821223 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -613,7 +613,7 @@ $ docker pull nginx@sha256:baf112bd9afd978f67301794af747c7c06e5735e271bc65b89c5a
 		Size: 1.9 MB (1854700 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fbfd864d624e86184144b7b060ad8595ae90ef2c71b3abbe865fd7284bf2a7b1`  
-		Last Modified: Wed, 14 Jan 2026 03:53:16 GMT  
+		Last Modified: Wed, 14 Jan 2026 01:10:51 GMT  
 		Size: 21.1 KB (21096 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -677,11 +677,11 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 
 -	Layers:
 	-	`sha256:2dbbc2b20d556edcc853ddf744c4b2e946f16fba62ed0f0c4526533fdaa56e3b`  
-		Last Modified: Thu, 18 Dec 2025 00:11:42 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:11:57 GMT  
 		Size: 3.8 MB (3827755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb7768ce352aefc992ae810af93735a85118ccdfec770872b483c4cc4b8e0060`  
-		Last Modified: Thu, 18 Dec 2025 00:36:12 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:36:04 GMT  
 		Size: 1.9 MB (1947329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:79bcbc6920d77fa715571ed08e68ee0786a6f3acb9803eba1936d26c0f5a66ad`  
@@ -693,7 +693,7 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 954.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b6e3a7e329e6401593dd4a2a3b9ed1e79913fa84fef504c363c5619d863338d1`  
-		Last Modified: Thu, 18 Dec 2025 00:36:12 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:36:04 GMT  
 		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f0bf37c16110480041f21fef3dd2b48950eb7f72223a4625c11602b075fca27`  
@@ -729,11 +729,11 @@ $ docker pull nginx@sha256:30f2abeca0aa220137348b85f188a059c226e80e4ab008edb5576
 
 -	Layers:
 	-	`sha256:69c76b3303c13faa493dc1c8e058adb28e22787538e969b32d58aa457bff732f`  
-		Last Modified: Wed, 14 Jan 2026 04:09:57 GMT  
+		Last Modified: Wed, 14 Jan 2026 06:50:46 GMT  
 		Size: 1.9 MB (1854168 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8e0adc1880e7f9e98136ec0f51f2ec00eff3999e6b7eb9963ea9867fa3cd7c46`  
-		Last Modified: Wed, 14 Jan 2026 04:09:57 GMT  
+		Last Modified: Wed, 14 Jan 2026 06:50:47 GMT  
 		Size: 21.2 KB (21239 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -809,7 +809,7 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 628.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbbfa82ab1c368cbd4622aa298e65dbdeb3d41e48f61c628f4463a3c5ada1833`  
-		Last Modified: Thu, 18 Dec 2025 07:07:32 GMT  
+		Last Modified: Thu, 18 Dec 2025 07:07:25 GMT  
 		Size: 958.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b2c9037e58c1e5dadb260ffa210c8307ec753b27773ea60d84d76c9fc0438c1`  
@@ -853,7 +853,7 @@ $ docker pull nginx@sha256:9ac0713c8d3a10f8c2ff1ed34f3ca184e107a1099c9f9a80ead63
 		Size: 1.9 MB (1854164 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:268534a070f3018a714dbacdbdadee42f3136037e14c1ad54edbfa1b4df2def8`  
-		Last Modified: Sat, 17 Jan 2026 15:51:33 GMT  
+		Last Modified: Sat, 17 Jan 2026 18:50:43 GMT  
 		Size: 21.2 KB (21238 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -929,7 +929,7 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 629.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7474b1d59e8e77a28f0d896926cadccb585e1e37a78fbea77ed22da4999bca20`  
-		Last Modified: Thu, 18 Dec 2025 00:32:07 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:32:02 GMT  
 		Size: 956.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:684c8f2232680b4a25b335a14493f855bbc6d2cf50ce0418cbb2e16abd430353`  
@@ -941,7 +941,7 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 1.2 KB (1211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af93c89104079ae542dbc5753923a0b15bcd45a2b8331dccfc52002da5f3a6c8`  
-		Last Modified: Thu, 18 Dec 2025 00:32:02 GMT  
+		Last Modified: Thu, 18 Dec 2025 00:32:07 GMT  
 		Size: 1.4 KB (1400 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7f8d97865f48882ec331d9f02addd6eca407852028c03525802ee9c5ad9f46c7`  
