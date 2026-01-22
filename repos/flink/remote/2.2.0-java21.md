@@ -91,7 +91,7 @@ CMD ["help"]
 		Size: 17.0 MB (16975950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14c9275308302d364422df0f3e02503135621d8a4b49a0c18580cf9220532743`  
-		Last Modified: Thu, 15 Jan 2026 22:20:25 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:20:14 GMT  
 		Size: 53.0 MB (52978745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ac4b4cf16a8ad1b819f8041978350794113eb509aba19c5cd47bd77a053c335`  
@@ -107,15 +107,15 @@ CMD ["help"]
 		Size: 1.3 MB (1323248 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aa1a9d387f2ae1dca32816ffeaa2cd267afdef7ed2b332080a07e47a50974ab0`  
-		Last Modified: Wed, 21 Jan 2026 21:55:50 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:55:33 GMT  
 		Size: 1.2 KB (1159 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f19f7c66309316496cd39caf8250af6644bb3d31c492501da0e6b07757e1d26`  
-		Last Modified: Wed, 21 Jan 2026 23:04:49 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:55:33 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29275682f70cc8fc614fc2bd951201c15a6d04885c7975f9f90d807ee1bf6ed5`  
-		Last Modified: Wed, 21 Jan 2026 23:05:06 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:55:43 GMT  
 		Size: 570.1 MB (570128421 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d5b747d9ce33998167db1fe4557b89d72138433b613ad7f23fb9968115989db6`  
@@ -143,7 +143,7 @@ $ docker pull flink@sha256:e1d7d2c0831c0e44ec9cc6b8d5a969c8c41ea1cde78583478df57
 		Size: 3.4 MB (3394624 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a8f6f72f8e743f633348ed2d0916da1f26560bfbdee419e2564ad6fbbd22cb0d`  
-		Last Modified: Wed, 21 Jan 2026 23:02:53 GMT  
+		Last Modified: Wed, 21 Jan 2026 21:55:33 GMT  
 		Size: 23.8 KB (23769 bytes)  
 		MIME: application/vnd.in-toto+json
 
