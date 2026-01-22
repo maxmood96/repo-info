@@ -92,7 +92,7 @@ CMD ["neo4j"]
 
 -	Layers:
 	-	`sha256:8369c500d2f32a6ea3a82d87ee6ca148febba026765ac200615b9de6130b7805`  
-		Last Modified: Mon, 19 Jan 2026 05:33:55 GMT  
+		Last Modified: Mon, 19 Jan 2026 05:33:34 GMT  
 		Size: 40.0 MB (40033212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a6136a1596defdeff0aeaf6a4707230eedd7a13f4cb4575cf0f017c4e6dcb31`  
