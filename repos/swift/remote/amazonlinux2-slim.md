@@ -51,7 +51,7 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 
 -	Layers:
 	-	`sha256:89d3b5863331d6bb79d550bf0acce60aeac36e2c065470bf6d6f8d76c9cb6f4f`  
-		Last Modified: Wed, 14 Jan 2026 13:23:48 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:13:55 GMT  
 		Size: 62.9 MB (62940156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92bb57bb756cf1cd6fe8680783f49df2f1c337bab2cd785a9a38ca59abfc8614`  
