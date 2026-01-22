@@ -101,11 +101,11 @@ VOLUME [/opt/couchbase/var]
 		Size: 43.8 MB (43814939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7d85e83f8672dbf03e5bdf9f150bc2b02187b4e907fbf35971a137ee29b13375`  
-		Last Modified: Thu, 15 Jan 2026 22:14:33 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:14:06 GMT  
 		Size: 878.0 KB (877990 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b756c55166064a465ad4ae21181f1dc7c31ffc1d986045150561aa02c7b49353`  
-		Last Modified: Thu, 15 Jan 2026 22:14:32 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:14:06 GMT  
 		Size: 3.7 KB (3723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26fb73a1a23078b43c53313dd8ca246ab8fe920e3d181ef7c064ef4c6bbf9bd9`  
@@ -129,7 +129,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c157cf8ec77618daa4cc830ad395bd7b8a20cfc91ad4360b11568603a5a9b71`  
-		Last Modified: Thu, 15 Jan 2026 22:14:33 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:14:10 GMT  
 		Size: 216.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -255,15 +255,15 @@ VOLUME [/opt/couchbase/var]
 		Size: 764.8 KB (764804 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb3f1eac40b0613da51a9afd8c77a9127cf1331956882d1d717c7e8cafe83c52`  
-		Last Modified: Thu, 15 Jan 2026 22:14:10 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:42 GMT  
 		Size: 3.7 KB (3719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29395c7992c773a7892b86b60e091959b067e074256dcefa4c911c3e720e49d0`  
-		Last Modified: Thu, 15 Jan 2026 22:14:23 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:58 GMT  
 		Size: 713.8 MB (713784484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8dea3c5c676133374ce797a92be676fc86e39546ccfdce282c0ae121b38fc33`  
-		Last Modified: Thu, 15 Jan 2026 22:14:10 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:13:43 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1717c00d3f2841758bde29e2fb3a1e33d018e49e711194ea288b0f53220b0c05`  
