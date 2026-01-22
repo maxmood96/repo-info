@@ -96,7 +96,7 @@ $ docker pull clojure@sha256:a80652659f0528793ff89bc3c0dd1a28a2457980a4d2a9edb82
 		Size: 4.3 MB (4300618 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9597cf9772374ba863f788ecc4b7d611112893d5ca060dd409b4dd3b054a6ad1`  
-		Last Modified: Fri, 16 Jan 2026 04:37:41 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:49:05 GMT  
 		Size: 16.4 KB (16382 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -153,11 +153,11 @@ CMD ["lein" "repl"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0da8ed3b3b403ca4c3af2a882b0e53a68d3b1817753e3f10fe29823a67498bd6`  
-		Last Modified: Fri, 16 Jan 2026 01:50:13 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:50:00 GMT  
 		Size: 19.6 MB (19632748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64916e585b074e712d9122b8b725d3bc9fe4c5532d96a9ada470cada6f7808fd`  
-		Last Modified: Fri, 16 Jan 2026 01:50:09 GMT  
+		Last Modified: Fri, 16 Jan 2026 01:49:59 GMT  
 		Size: 4.5 MB (4517727 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -230,7 +230,7 @@ CMD ["lein" "repl"]
 		Size: 52.3 MB (52327376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eead296b73556d112badf522de2dbc3e1be7cda774b3a4b3b8e819c745a21881`  
-		Last Modified: Fri, 16 Jan 2026 13:18:38 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:59:24 GMT  
 		Size: 132.1 MB (132079791 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -242,7 +242,7 @@ CMD ["lein" "repl"]
 		Size: 20.0 MB (20022604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c45fc8c343d6747041392bcfdc19beb34616af745036978461bfccc85257703`  
-		Last Modified: Fri, 16 Jan 2026 02:59:32 GMT  
+		Last Modified: Fri, 16 Jan 2026 02:59:21 GMT  
 		Size: 4.5 MB (4517758 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -347,7 +347,7 @@ $ docker pull clojure@sha256:c417e72b5f61c372fd1df8a862c4f71b7f2c8b2039087e4eceb
 
 -	Layers:
 	-	`sha256:ceeb8ea9e2efdb6a725eb3f94fc594a888972ffb7d8c9254ccefc0268247ce11`  
-		Last Modified: Fri, 16 Jan 2026 01:37:11 GMT  
+		Last Modified: Thu, 15 Jan 2026 23:10:01 GMT  
 		Size: 4.3 MB (4292436 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:58ec2d450d39965aab54244a82161a20768f49cecff79809246be41d1c0bab91`  
