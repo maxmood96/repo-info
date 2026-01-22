@@ -89,7 +89,7 @@ $ docker pull julia@sha256:e62345cf7b2a503c14e5606905d2b1386e060ff3120c9c9933830
 		Size: 2.2 MB (2240221 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:75fc64595eeef33ddd7afe40b3284eaee7237defa7af8f4c82d80317a63b987d`  
-		Last Modified: Tue, 13 Jan 2026 01:23:07 GMT  
+		Last Modified: Tue, 13 Jan 2026 06:03:31 GMT  
 		Size: 17.7 KB (17689 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -131,11 +131,11 @@ CMD ["julia"]
 
 -	Layers:
 	-	`sha256:d637807aba98f742a62ad9b0146579ceb0297a3c831f56b2361664b7f5fbc75b`  
-		Last Modified: Tue, 13 Jan 2026 00:42:49 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:41 GMT  
 		Size: 30.1 MB (30134042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:825e9a5c0108d7ec639bd0516a4a4090f29b75a42759d07ca770e47c43316652`  
-		Last Modified: Tue, 13 Jan 2026 01:23:27 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:23:16 GMT  
 		Size: 6.2 MB (6152069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b16d7f56715447fe1f05bd85b0859d2f9353e1b2ab0be61e17489a9d0d442b5e`  
@@ -209,11 +209,11 @@ CMD ["julia"]
 
 -	Layers:
 	-	`sha256:27bb6d39eda5ced7626db280c3902aacdfade5acd11a16ef9618e3185f69b102`  
-		Last Modified: Tue, 13 Jan 2026 00:43:03 GMT  
+		Last Modified: Tue, 13 Jan 2026 00:42:56 GMT  
 		Size: 31.3 MB (31288476 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:da05b07dc2c28516da8e7d3f5a72cb53631d11188766f022b5706bf63e1b7d4f`  
-		Last Modified: Tue, 13 Jan 2026 01:19:16 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:19:27 GMT  
 		Size: 6.4 MB (6429157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9fa8c118acdb6644bfa0453865bb2e6cc0bd7467d283d9e8962dc7e748221b23`  
@@ -221,7 +221,7 @@ CMD ["julia"]
 		Size: 231.2 MB (231246457 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9ce627fadc282bd672174b2020e5664361a5547237929a9d070cccf78113d56d`  
-		Last Modified: Tue, 13 Jan 2026 01:19:26 GMT  
+		Last Modified: Tue, 13 Jan 2026 01:19:15 GMT  
 		Size: 372.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -290,23 +290,23 @@ CMD ["julia"]
 		Size: 1.3 KB (1332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5a1488697ba85070835f53d3cd154bbc050994a1cd297f5782c52184219d86a`  
-		Last Modified: Tue, 13 Jan 2026 22:54:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:58:09 GMT  
 		Size: 1.4 KB (1364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:de821615b5f6a494b7b818718de824575bdda26534295178a9a24347d9358c51`  
-		Last Modified: Tue, 13 Jan 2026 22:54:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:58:09 GMT  
 		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2a4002cd59ca0fccc8693aab1e10bbdc358126e85f51e0529812e88dacde9e48`  
-		Last Modified: Tue, 13 Jan 2026 22:58:10 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:54:53 GMT  
 		Size: 1.3 KB (1333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5bd8784976f50bb57446482deb15ebe275e3eb2be9a55d3e4912b11716ed1566`  
-		Last Modified: Tue, 13 Jan 2026 22:55:51 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:58:55 GMT  
 		Size: 387.3 MB (387328092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3351d80cdd5893bdbd8521d70fabb9eab94e61867aecba7685dbb5a042274a40`  
-		Last Modified: Tue, 13 Jan 2026 22:54:53 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:58:09 GMT  
 		Size: 1.3 KB (1326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -353,7 +353,7 @@ CMD ["julia"]
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2f08760e06519dd29e9a52391dac11e5952f68046c79c4bdea23cb54196c9897`  
-		Last Modified: Tue, 13 Jan 2026 23:04:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:59:44 GMT  
 		Size: 1.3 KB (1314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c6b26cfcc8005482a695d92d8a8d40b0d82eefb4b1d5b354a25239b22e55768d`  
@@ -365,11 +365,11 @@ CMD ["julia"]
 		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:18e6b6019050029db0da94e57b834dbe82f230f7b771b3e75aee90981b059ce7`  
-		Last Modified: Tue, 13 Jan 2026 23:04:06 GMT  
+		Last Modified: Tue, 13 Jan 2026 22:59:42 GMT  
 		Size: 1.3 KB (1332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:84b8cbdb95ad25a747da650aa70d50539531b343338f5bfb5873700776ee5a28`  
-		Last Modified: Tue, 13 Jan 2026 23:04:13 GMT  
+		Last Modified: Tue, 13 Jan 2026 23:00:38 GMT  
 		Size: 387.4 MB (387448537 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c15c2c0dc8a081766847b9c6fb6a1e23b2d1c40cbcf5d107ebae7e7b03af1f3`  
