@@ -56,7 +56,7 @@ RUN swift --version # buildkit
 
 -	Layers:
 	-	`sha256:89d3b5863331d6bb79d550bf0acce60aeac36e2c065470bf6d6f8d76c9cb6f4f`  
-		Last Modified: Wed, 14 Jan 2026 13:13:55 GMT  
+		Last Modified: Wed, 14 Jan 2026 13:23:48 GMT  
 		Size: 62.9 MB (62940156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c0dc9418d4c9c444c1037d964ddfbb442f982fefbcfecc2d85599a71b08fca6`  
@@ -92,7 +92,7 @@ $ docker pull swift@sha256:ef28fe111dbdf8d011e6c9a5c86100b9113b7662da5fddd247f0b
 		Size: 12.7 MB (12719997 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:aa329d9254ae0a5521fc1dc06309de867518748eeabce0c294448a472be9c42e`  
-		Last Modified: Thu, 15 Jan 2026 23:51:19 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:52:54 GMT  
 		Size: 14.8 KB (14847 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -153,7 +153,7 @@ RUN swift --version # buildkit
 		Size: 1.0 GB (1022089538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5178132fe5551022a06e58be4e5e2971c965723d03741fa2b731ee033c0cb1e`  
-		Last Modified: Thu, 15 Jan 2026 22:53:32 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:53:20 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -177,6 +177,6 @@ $ docker pull swift@sha256:a2a44de40cf4964f08c167f68b0ed12c15835709632d92702c032
 		Size: 12.6 MB (12581634 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c6585c79765b2639905162d7ccabec517f9924815d4ef9106f1cad0374009816`  
-		Last Modified: Thu, 15 Jan 2026 23:51:35 GMT  
+		Last Modified: Thu, 15 Jan 2026 22:53:20 GMT  
 		Size: 15.0 KB (14969 bytes)  
 		MIME: application/vnd.in-toto+json
