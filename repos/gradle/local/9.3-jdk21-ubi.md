@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4dcc83f4b9182a3fa30111abef27d5d00b0850be2b5b099baf8015a18cbd5e1b`
-- Created: `2026-01-16T21:44:18.306913168Z`
-- Virtual Size: ~ 815.97 Mb  
+- Image ID: `sha256:093df1819f7e3b19d262dc1fa2831fcde56c21e1bf6c92bd53b6084cd820d676`
+- Created: `2026-01-23T01:08:36.982144884Z`
+- Virtual Size: ~ 763.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,25 +21,25 @@
   - `GRADLE_VERSION=9.3.0`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-12-18T04:58:54Z`
+  - `build-date=2026-01-22T14:19:22Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.1`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
-  - `io.buildah.version=1.41.4`
+  - `io.buildah.version=1.41.5`
   - `io.k8s.description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 10 Minimal`
   - `io.openshift.expose-services=`
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2025-12-18T04:58:54Z`
-  - `org.opencontainers.image.revision=3dbd4aac2bce2ca6b13274bf0662e947c80b18b9`
-  - `release=1766033715`
+  - `org.opencontainers.image.created=2026-01-22T14:19:22Z`
+  - `org.opencontainers.image.revision=0912ab420a80f21132d8a5e29d19a23339176677`
+  - `release=1769090502`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=3dbd4aac2bce2ca6b13274bf0662e947c80b18b9`
+  - `vcs-ref=0912ab420a80f21132d8a5e29d19a23339176677`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.1`

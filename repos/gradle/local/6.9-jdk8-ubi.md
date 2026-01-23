@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e9ea39e9cbf51156471430f52c9321cd10fb807f280b228084378dad63f256dc`
-- Created: `2025-12-04T20:06:08.252859492Z`
-- Virtual Size: ~ 572.94 Mb  
+- Image ID: `sha256:c0f4e982f1aa8271bf65e797b6933bed0b3794e4789c809bf49c96abb355184b`
+- Created: `2026-01-20T21:11:44.893551739Z`
+- Virtual Size: ~ 573.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,25 +21,25 @@
   - `GRADLE_VERSION=6.9.4`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-12-03T20:36:05Z`
+  - `build-date=2026-01-19T00:53:42Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
-  - `io.buildah.version=1.41.4`
+  - `io.buildah.version=1.41.5`
   - `io.k8s.description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 9 Minimal`
   - `io.openshift.expose-services=`
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2025-12-03T20:36:05Z`
-  - `org.opencontainers.image.revision=1595c1bf15cd4327d529f330e61327764327397e`
-  - `release=1764794109`
+  - `org.opencontainers.image.created=2026-01-19T00:53:42Z`
+  - `org.opencontainers.image.revision=d9151f7dd4dfe1cc8a2df524b85cddd483628d5e`
+  - `release=1768783948`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=1595c1bf15cd4327d529f330e61327764327397e`
+  - `vcs-ref=d9151f7dd4dfe1cc8a2df524b85cddd483628d5e`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -145,17 +145,27 @@ $ dnf --quiet download --source --url bash-5.1.8-9.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/bash-5.1.8-9.el9.src.rpm
 ```
 
-### `rpm` package: `binutils-2.35.2-67.el9.x86_64`
+### `rpm` package: `binutils-2.35.2-67.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `binutils-gold-2.35.2-67.el9.x86_64`
+```console
+$ dnf --quiet download --source --url binutils-2.35.2-67.el9_7.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/binutils-2.35.2-67.el9_7.1.src.rpm
+```
+
+### `rpm` package: `binutils-gold-2.35.2-67.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url binutils-gold-2.35.2-67.el9_7.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/binutils-2.35.2-67.el9_7.1.src.rpm
+```
 
 ### `rpm` package: `bzip2-libs-1.0.8-10.el9_5.x86_64`
 
@@ -487,22 +497,22 @@ $ dnf --quiet download --source --url git-core-doc-2.47.3-1.el9_6.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-2.47.3-1.el9_6.src.rpm
 ```
 
-### `rpm` package: `git-lfs-3.6.1-3.el9.x86_64`
+### `rpm` package: `git-lfs-3.6.1-4.el9_7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url git-lfs-3.6.1-4.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-lfs-3.6.1-4.el9_7.src.rpm
+```
 
 ### `rpm` package: `glib2-2.68.4-18.el9_7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url glib2-2.68.4-18.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-18.el9_7.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `glibc-2.34-231.el9_7.2.x86_64`
 
@@ -559,11 +569,16 @@ $ dnf --quiet download --source --url gmp-6.2.0-13.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gmp-6.2.0-13.el9.src.rpm
 ```
 
-### `rpm` package: `gnupg2-2.3.3-4.el9.x86_64`
+### `rpm` package: `gnupg2-2.3.3-5.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gnupg2-2.3.3-5.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnupg2-2.3.3-5.el9_7.src.rpm
+```
 
 ### `rpm` package: `gnutls-3.8.3-9.el9.x86_64`
 
@@ -1072,11 +1087,16 @@ $ dnf --quiet download --source --url libpeas-1.30.0-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libpeas-1.30.0-4.el9.src.rpm
 ```
 
-### `rpm` package: `libpng-1.6.37-12.el9.x86_64`
+### `rpm` package: `libpng-1.6.37-12.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): zlib
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libpng-1.6.37-12.el9_7.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libpng-1.6.37-12.el9_7.1.src.rpm
+```
 
 ### `rpm` package: `libpsl-0.21.1-5.el9.x86_64`
 
@@ -1474,23 +1494,38 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssh-8.7p1-46.el9.x86_64`
+### `rpm` package: `openssh-8.7p1-47.el9_7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `openssh-clients-8.7p1-46.el9.x86_64`
+```console
+$ dnf --quiet download --source --url openssh-8.7p1-47.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-8.7p1-47.el9_7.src.rpm
+```
+
+### `rpm` package: `openssh-clients-8.7p1-47.el9_7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `openssl-3.5.1-4.el9_7.x86_64`
+```console
+$ dnf --quiet download --source --url openssh-clients-8.7p1-47.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-8.7p1-47.el9_7.src.rpm
+```
+
+### `rpm` package: `openssl-3.5.1-5.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-3.5.1-5.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-5.el9_7.src.rpm
+```
 
 ### `rpm` package: `openssl-fips-provider-3.0.7-8.el9.x86_64`
 
@@ -1514,11 +1549,16 @@ $ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-8.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.5.1-4.el9_7.x86_64`
+### `rpm` package: `openssl-libs-3.5.1-5.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-libs-3.5.1-5.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-5.el9_7.src.rpm
+```
 
 ### `rpm` package: `p11-kit-0.25.3-3.el9_5.x86_64`
 
@@ -2466,17 +2506,27 @@ $ dnf --quiet download --source --url systemd-rpm-macros-252-55.el9_7.7.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
 ```
 
-### `rpm` package: `tar-1.34-7.el9.x86_64`
+### `rpm` package: `tar-1.34-9.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `tzdata-2025b-2.el9.noarch`
+```console
+$ dnf --quiet download --source --url tar-1.34-9.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-9.el9_7.src.rpm
+```
+
+### `rpm` package: `tzdata-2025c-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2025c-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2025c-1.el9.src.rpm
+```
 
 ### `rpm` package: `unzip-6.0-59.el9.x86_64`
 
