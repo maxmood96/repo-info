@@ -1,10 +1,10 @@
-# `openjdk:27-ea-4-jdk-bookworm`
+# `openjdk:27-ea-5-jdk-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ed0a044d5cd5ee7d81d5d10de23edabdfe443056bd0e39c0a58afe0b4101eca8`
-- Created: `2026-01-13T04:51:59.784632366Z`
-- Virtual Size: ~ 794.79 Mb  
+- Image ID: `sha256:8fc0dc01b5254906323f4a348719c21e522013d4f17d0190755ea4bf9206652e`
+- Created: `2026-01-20T18:47:42.186103775Z`
+- Virtual Size: ~ 795.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-27/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-27`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=27-ea+4`
+  - `JAVA_VERSION=27-ea+5`
 
 ## `dpkg` (`.deb`-based packages)
 
