@@ -2516,15 +2516,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.6.dsc' glib2.0_2.80.0-6ubuntu3.6.dsc 4542 SHA512:38ac87a2e8d4807cc2eabbdc41cf30d267dafea0258b6e94ce0a02cf532cea31fe182a4039a2f221c6457315ba5137ed3e00f286ee96fc2608bf0d6c4394c315
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.6.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.6.debian.tar.xz 162184 SHA512:89921bc45b2f3ea9ea17461557a6551e454eb7ea653337bf5fd129c56aa39a5cc5b10b1f07a3bf1a5762374c28b03bbfd8c0199754e0f75f245d920b75ee17ad
-```
 
 ### `dpkg` source package: `glibc=2.39-0ubuntu8.6`
 
@@ -5789,14 +5783,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.6.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.6.dsc 3038 SHA512:7335b471c95fe73974736ded5dbd85cb1fcf24e0168ab939e7ff9df9735b02f5c550a1d96021023e14db18bf6defa2c72888a35641136cca75f23a45863f03bc
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.6.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.6.debian.tar.xz 48472 SHA512:8e9d2a8032b59da05cbe5be6850867e5b3ca18c4c4d8679b4a80afd36306ac4099abddecc208f90cc9067b746d9c8eb9dc7f732d8cea4187423803f7f43f34d0
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.3-3build2`
 
