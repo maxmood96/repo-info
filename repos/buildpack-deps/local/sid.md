@@ -1947,20 +1947,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.2.12+dfsg1-1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.12%2bdfsg1-1.dsc' imagemagick_7.1.2.12+dfsg1-1.dsc 5202 SHA256:5120ceb4dbc42b75e967ffdc9932958578f6729a27c428feaa9604104be3f6d2
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.12%2bdfsg1.orig.tar.xz' imagemagick_7.1.2.12+dfsg1.orig.tar.xz 10528380 SHA256:56a85bcdd0bd00b52f9a0bb51a25a8e16fb0b8742ce53e7984d7db26229fe245
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.12%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.2.12+dfsg1-1.debian.tar.xz 267584 SHA256:6c9f335dc4e94b9de403f13d4f1149ef79883be8e86468a717b508eb42913a2f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:7.1.2.12+dfsg1-1/
 
-- https://sources.debian.net/src/imagemagick/8:7.1.2.12+dfsg1-1/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.2.12+dfsg1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.2.12+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
@@ -2974,20 +2967,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.53-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.53-1.dsc' libpng1.6_1.6.53-1.dsc 2254 SHA256:efebbbff660eacfd2f9a320a96bc9b3941c1198eddc037b77ef352c31b27fd4d
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.53.orig.tar.gz' libpng1.6_1.6.53.orig.tar.gz 1583986 SHA256:b20cee717e11416d2f96ccc7d184f63730ca8cb2f03bfd0c4ed77fbc909c0bff
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.53-1.debian.tar.xz' libpng1.6_1.6.53-1.debian.tar.xz 33500 SHA256:844328a9c21260fc8a5c2411bc330eea5b30370c2a815cb3772273f518d94112
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.53-1/
 
-- https://sources.debian.net/src/libpng1.6/1.6.53-1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.53-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.53-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 

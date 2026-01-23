@@ -137,13 +137,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.12
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.1.12.dsc' apt_3.1.12.dsc 3095 SHA512:146b24c2b4777d7e926ad7fca97aadb94ac6a02401e0dea1d3a64e6390abbad293c7dc984490bc21791a94aa20c74c8e1cb66ab83e10ca8605a6df3096f69ca0
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.1.12.tar.xz' apt_3.1.12.tar.xz 2464756 SHA512:d36e22103b9b19d5a547bc1a16cceb21243252845d2cab2d141d46d3087048fc6b8653d9d2813451606938e97a68371756e57fe3fbde8744b531349afcbfb73e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/3.1.12/
+
 
 ### `dpkg` source package: `architecture-properties=0.2.6build1`
 
@@ -1301,15 +1301,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.42-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.42-2ubuntu2.dsc' glibc_2.42-2ubuntu2.dsc 8036 SHA512:f0c4f3c8010bb5dcde8eb9fe4ab9f38aff7d4d0bc5b0e7e7d06fa947def1d1e9b05ef13b733de58f1e642f9013339b7f8a36af8fbd69ad6c8b385eabb1a0ab6d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.42.orig.tar.xz' glibc_2.42.orig.tar.xz 19930508 SHA512:73a617db8e0f0958c0575f7a1c5a35b72b7e070b6cbdd02a9bb134995ca7ca0909f1e50d7362c53d2572d72f1879bb201a61d5275bac16136895d9a34ef0c068
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.42.orig.tar.xz.asc' glibc_2.42.orig.tar.xz.asc 981 SHA512:d868220778e98d24aead10a585e6a903892e4d043cd96a404634c8aa03d001d624a46a5c0fe13c86f83f66396a1f360a10990966fe377e98a722914b5087575d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.42-2ubuntu2.debian.tar.xz' glibc_2.42-2ubuntu2.debian.tar.xz 448632 SHA512:73fbf7614810eb4a7f35a611cf86b57f93660dca92b0e75cad1b4932d4bde09effc61d8dcc7ae2fc394aa22803d2c6daa8b7f374ee95ee5f47e4759f96ba408c
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5ubuntu1`
 
@@ -2232,14 +2226,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.20.2-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.20.2-2ubuntu1.dsc' libheif_1.20.2-2ubuntu1.dsc 3775 SHA512:3d863d3761fd793b1739f880de2b3cb42174682c1747ebd36a725051ed8f5cf3504d5e5da7df4726ec54a33e2ec9734f17ce1510a126742677a465dfc1ce63bd
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.20.2.orig.tar.gz' libheif_1.20.2.orig.tar.gz 1787518 SHA512:0ab8669d2ee1ed619c89cbe3fa3a7618c25d26a7e4c65801dd4db163d4a584fde13b32ed0996461e81bd42ed4def8f4eb7b296b15b7819e90c0a7d5a8c08b06b
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.20.2-2ubuntu1.debian.tar.xz' libheif_1.20.2-2ubuntu1.debian.tar.xz 14280 SHA512:7d42b415c85979822f44b42673e84e75f8dc7bd92e19f915bd1c083a007e929d5cfda3c63de54a16083ad3798d1b09106b5cc9f2e3d9562f765e2ffab1add559
-```
 
 ### `dpkg` source package: `libice=2:1.1.1-1build1`
 
@@ -2515,15 +2504,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.6.0-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.6.0-2ubuntu3.dsc' libseccomp_2.6.0-2ubuntu3.dsc 2745 SHA512:464db24c875efa21af1d0436aeb6cebab6778d0d7974321a1feca750638a3d86e4b0322490b3345fe59569ee72114035e02bd9803fc9ea2a917383f214b875dd
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.6.0.orig.tar.gz' libseccomp_2.6.0.orig.tar.gz 685655 SHA512:9039478656d9b670af2ff4cb67b6b1fa315821e59d2f82ba6247e988859ddc7e3d15fea159eccca161bf2890828bb62aa6ab4d6b7ff55f27a9d6bd9532eeee1b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.6.0.orig.tar.gz.asc' libseccomp_2.6.0.orig.tar.gz.asc 833 SHA512:973b69c58085a1567f860e621e3a197be02c0ca71dad664234418cf5c00c39767efd37a7c4016f1be5bd588262617b6603855262db2ee6f31bc16061bc130e0f
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.6.0-2ubuntu3.debian.tar.xz' libseccomp_2.6.0-2ubuntu3.debian.tar.xz 27864 SHA512:d97de13336aa498ad3362e9df40f6ccb0226b7f04c05561488bafc9c70c24df545ddd41fd00cc59ada193c7a9e4a9861837c984ce13877c033222581ab4b7ba2
-```
 
 ### `dpkg` source package: `libselinux=3.8.1-1build2`
 
@@ -2640,15 +2623,9 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`, `/usr/share/doc/l
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.20.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.20.0-2ubuntu1.dsc' libtasn1-6_4.20.0-2ubuntu1.dsc 2772 SHA512:704d5b89e26eb8b38c0ca8c52a68a61453440bd766cfe0379e79479baf62f3df7874ad6ef9b9756271809d0cfc3f5fe18465908aef5b862c310c03157ee627f2
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.20.0.orig.tar.gz' libtasn1-6_4.20.0.orig.tar.gz 1783873 SHA512:0c0660085f5e80537aa3d65197967029be6cc5e27d7029789713902989c1694fdb49421ae0415b79b953e11893bb4bdaada85f7aff847dd0bb4075c91887e7b4
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.20.0.orig.tar.gz.asc' libtasn1-6_4.20.0.orig.tar.gz.asc 1223 SHA512:bb5da128c20ed8f1e7c681c779ac3d2e455c661d779a4a7a70a6cabc1ea4139df9d0acfd145545acc8fe41df6490fd7d3c2df4b8d7560891291abbf56ac3afdb
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.20.0-2ubuntu1.debian.tar.xz' libtasn1-6_4.20.0-2ubuntu1.debian.tar.xz 19304 SHA512:9fb70e477dfa8dfd966b5e1bb176e00f7d7506732fbd14cbaf35850f7232f7c9ce9443488a6ee99ecfc056080a489d7ff8be97fd13d1e16c253be7de404980f1
-```
 
 ### `dpkg` source package: `libtext-charwidth-perl=0.04-11build4`
 
@@ -3097,14 +3074,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.18.0-8.8
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.18.0-8.8.dsc' linux_6.18.0-8.8.dsc 8743 SHA512:26dbf3389efdacbe6409dcb97a5bf7fbb8e28e8c0d3c53ba30f6961dcf3ed159f5fb18c4ee212f56416794e3517ee8ac6355480ac660a5588db9d5fa0ab60057
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.18.0.orig.tar.gz' linux_6.18.0.orig.tar.gz 250009944 SHA512:75e4e65645da317acfaa55c1afa47ea684fdeed73eaf9197c2a1c329b7ff5ef40db76218f21e011bd961fe79ba3087e91f4b228493f39e7816774bd5a65bcab7
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.18.0-8.8.diff.gz' linux_6.18.0-8.8.diff.gz 1375031 SHA512:ff3a9fcae464e24245e11cbe6032d887a3fdf3bcb902b42c15038a9542eeda916910b21338f5d20f80e85e336e71acada3d4139a7c7db6971e5e73b1e663ba83
-```
 
 ### `dpkg` source package: `lto-disabled-list=74`
 
@@ -3954,13 +3926,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.13.7-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.13.7-1.dsc' python3-defaults_3.13.7-1.dsc 2346 SHA512:d224c5ced2a34850c186f17b5d4ede11214507ba5135841ca3ecde9c2b891dbeba06a1e844a205fc039d214cec3a430138786d1a80f931993d17b30e279a5bbe
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.13.7-1.tar.gz' python3-defaults_3.13.7-1.tar.gz 146793 SHA512:58aee233ad3f34b28b0031ec77872f8a027160659cb7eb31e8839cf98f9c6d977f1d211f681d687a58444f043a0dd30885933973fbeb8226e8aeed3ef5e7c39a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3-defaults/3.13.7-1/
+
 
 ### `dpkg` source package: `python3.13=3.13.11-1`
 
