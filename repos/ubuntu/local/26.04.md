@@ -54,13 +54,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.12
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.1.12.dsc' apt_3.1.12.dsc 3095 SHA512:146b24c2b4777d7e926ad7fca97aadb94ac6a02401e0dea1d3a64e6390abbad293c7dc984490bc21791a94aa20c74c8e1cb66ab83e10ca8605a6df3096f69ca0
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.1.12.tar.xz' apt_3.1.12.tar.xz 2464756 SHA512:d36e22103b9b19d5a547bc1a16cceb21243252845d2cab2d141d46d3087048fc6b8653d9d2813451606938e97a68371756e57fe3fbde8744b531349afcbfb73e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/3.1.12/
+
 
 ### `dpkg` source package: `attr=1:2.5.2-3build1`
 
@@ -550,15 +550,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.42-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.42-2ubuntu2.dsc' glibc_2.42-2ubuntu2.dsc 8036 SHA512:f0c4f3c8010bb5dcde8eb9fe4ab9f38aff7d4d0bc5b0e7e7d06fa947def1d1e9b05ef13b733de58f1e642f9013339b7f8a36af8fbd69ad6c8b385eabb1a0ab6d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.42.orig.tar.xz' glibc_2.42.orig.tar.xz 19930508 SHA512:73a617db8e0f0958c0575f7a1c5a35b72b7e070b6cbdd02a9bb134995ca7ca0909f1e50d7362c53d2572d72f1879bb201a61d5275bac16136895d9a34ef0c068
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.42.orig.tar.xz.asc' glibc_2.42.orig.tar.xz.asc 981 SHA512:d868220778e98d24aead10a585e6a903892e4d043cd96a404634c8aa03d001d624a46a5c0fe13c86f83f66396a1f360a10990966fe377e98a722914b5087575d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.42-2ubuntu2.debian.tar.xz' glibc_2.42-2ubuntu2.debian.tar.xz 448632 SHA512:73fbf7614810eb4a7f35a611cf86b57f93660dca92b0e75cad1b4932d4bde09effc61d8dcc7ae2fc394aa22803d2c6daa8b7f374ee95ee5f47e4759f96ba408c
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5ubuntu1`
 
@@ -871,15 +865,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.6.0-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.6.0-2ubuntu3.dsc' libseccomp_2.6.0-2ubuntu3.dsc 2745 SHA512:464db24c875efa21af1d0436aeb6cebab6778d0d7974321a1feca750638a3d86e4b0322490b3345fe59569ee72114035e02bd9803fc9ea2a917383f214b875dd
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.6.0.orig.tar.gz' libseccomp_2.6.0.orig.tar.gz 685655 SHA512:9039478656d9b670af2ff4cb67b6b1fa315821e59d2f82ba6247e988859ddc7e3d15fea159eccca161bf2890828bb62aa6ab4d6b7ff55f27a9d6bd9532eeee1b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.6.0.orig.tar.gz.asc' libseccomp_2.6.0.orig.tar.gz.asc 833 SHA512:973b69c58085a1567f860e621e3a197be02c0ca71dad664234418cf5c00c39767efd37a7c4016f1be5bd588262617b6603855262db2ee6f31bc16061bc130e0f
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.6.0-2ubuntu3.debian.tar.xz' libseccomp_2.6.0-2ubuntu3.debian.tar.xz 27864 SHA512:d97de13336aa498ad3362e9df40f6ccb0226b7f04c05561488bafc9c70c24df545ddd41fd00cc59ada193c7a9e4a9861837c984ce13877c033222581ab4b7ba2
-```
 
 ### `dpkg` source package: `libselinux=3.8.1-1build2`
 

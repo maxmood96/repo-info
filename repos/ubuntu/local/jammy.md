@@ -450,10 +450,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.11
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.11.dsc' glibc_2.35-0ubuntu3.11.dsc 8888 SHA512:513445f41ac47bc28f9c30bbdace95938cbd4c8af26fc192808ac2940d56503e09761b1cec6ecec6d3eebd21cca8fb34f2f57fb046d715407e9d67cd48d08f0c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.11.debian.tar.xz' glibc_2.35-0ubuntu3.11.debian.tar.xz 940076 SHA512:3a946e60393f09557fdf8cd4f5ad0041301b07da2b11bc5307f2ec15a7926924de0a0648f78879b28a86fd1cc5d20df9963f7c164cef01ea1d5a3d03c3ab2392
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.11.dsc' glibc_2.35-0ubuntu3.11.dsc 8888 SHA512:513445f41ac47bc28f9c30bbdace95938cbd4c8af26fc192808ac2940d56503e09761b1cec6ecec6d3eebd21cca8fb34f2f57fb046d715407e9d67cd48d08f0c
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.11.debian.tar.xz' glibc_2.35-0ubuntu3.11.debian.tar.xz 940076 SHA512:3a946e60393f09557fdf8cd4f5ad0041301b07da2b11bc5307f2ec15a7926924de0a0648f78879b28a86fd1cc5d20df9963f7c164cef01ea1d5a3d03c3ab2392
 ```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
