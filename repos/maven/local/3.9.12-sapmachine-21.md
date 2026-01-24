@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:232b1c8a94664987dd53b51ac79c62060e338ac1587ad321bdb2c7f311b90ad2`
-- Created: `2026-01-16T02:48:22.7078202Z`
-- Virtual Size: ~ 542.09 Mb  
+- Image ID: `sha256:249f6ece04dba0726d7c76adbbdc535b7291335043239b329b78b81e2298f7f3`
+- Created: `2026-01-21T20:10:40.037112794Z`
+- Virtual Size: ~ 543.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -2221,11 +2221,11 @@ $ apt-get source -qq --print-uris rtmpdump=2.4+20151223.gitfa8646d.1-2build7
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1-2build7.debian.tar.xz' rtmpdump_2.4+20151223.gitfa8646d.1-2build7.debian.tar.xz 8464 SHA512:812edf4f933ad0f723404192bfbfceca86e58303169a30e3b1f47781b709b91a259621293533d31d7abd16bc522824e2db325426a4ce9a6b428b88d492ae4c6c
 ```
 
-### `dpkg` source package: `sapmachine-21-jdk=21.0.9`
+### `dpkg` source package: `sapmachine-21-jdk=21.0.10`
 
 Binary Packages:
 
-- `sapmachine-21-jdk=21.0.9`
+- `sapmachine-21-jdk=21.0.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
