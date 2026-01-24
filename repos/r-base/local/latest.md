@@ -63,9 +63,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=3.1.13
-'http://http.debian.net/debian/pool/main/a/apt/apt_3.1.13.dsc' apt_3.1.13.dsc 3095 SHA256:7ddb51ca79c5885d37fc7ed1806b21df199ddd29eb66d6353dccfcad085e881a
-'http://http.debian.net/debian/pool/main/a/apt/apt_3.1.13.tar.xz' apt_3.1.13.tar.xz 2467248 SHA256:bd9042ba5a1b9ee72da52e4ecab6d89e213111313727e398ca2046b9de213f7b
+'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.13.dsc' apt_3.1.13.dsc 3095 SHA256:7ddb51ca79c5885d37fc7ed1806b21df199ddd29eb66d6353dccfcad085e881a
+'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.13.tar.xz' apt_3.1.13.tar.xz 2467248 SHA256:bd9042ba5a1b9ee72da52e4ecab6d89e213111313727e398ca2046b9de213f7b
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/apt/3.1.13/ (for browsing the source)
+- https://sources.debian.net/src/apt/3.1.13/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/3.1.13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -718,10 +724,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris expat=2.7.3-1
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.7.3-1.dsc' expat_2.7.3-1.dsc 1964 SHA256:b8076ea24d139e76484387f592699440205b48503d415f5d1b8d7be9a6bf4df6
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.7.3.orig.tar.gz' expat_2.7.3.orig.tar.gz 8441347 SHA256:7c853a76f7c2a562c3edfd84ca47e487d9eff3966786191dfb60cc441daf82d6
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.7.3-1.debian.tar.xz' expat_2.7.3-1.debian.tar.xz 13480 SHA256:389471cdaa7f0ba5349bd1a972fd60075b981a3a9d493b5689fec0157c163777
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.3-1.dsc' expat_2.7.3-1.dsc 1964 SHA256:b8076ea24d139e76484387f592699440205b48503d415f5d1b8d7be9a6bf4df6
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.3.orig.tar.gz' expat_2.7.3.orig.tar.gz 8441347 SHA256:7c853a76f7c2a562c3edfd84ca47e487d9eff3966786191dfb60cc441daf82d6
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.3-1.debian.tar.xz' expat_2.7.3-1.debian.tar.xz 13480 SHA256:389471cdaa7f0ba5349bd1a972fd60075b981a3a9d493b5689fec0157c163777
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/expat/2.7.3-1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.7.3-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -1810,10 +1822,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.53-1
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.53-1.dsc' libpng1.6_1.6.53-1.dsc 2254 SHA256:efebbbff660eacfd2f9a320a96bc9b3941c1198eddc037b77ef352c31b27fd4d
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.53.orig.tar.gz' libpng1.6_1.6.53.orig.tar.gz 1583986 SHA256:b20cee717e11416d2f96ccc7d184f63730ca8cb2f03bfd0c4ed77fbc909c0bff
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.53-1.debian.tar.xz' libpng1.6_1.6.53-1.debian.tar.xz 33500 SHA256:844328a9c21260fc8a5c2411bc330eea5b30370c2a815cb3772273f518d94112
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.53-1.dsc' libpng1.6_1.6.53-1.dsc 2254 SHA256:efebbbff660eacfd2f9a320a96bc9b3941c1198eddc037b77ef352c31b27fd4d
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.53.orig.tar.gz' libpng1.6_1.6.53.orig.tar.gz 1583986 SHA256:b20cee717e11416d2f96ccc7d184f63730ca8cb2f03bfd0c4ed77fbc909c0bff
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.53-1.debian.tar.xz' libpng1.6_1.6.53-1.debian.tar.xz 33500 SHA256:844328a9c21260fc8a5c2411bc330eea5b30370c2a815cb3772273f518d94112
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libpng1.6/1.6.53-1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.53-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.53-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -3719,10 +3737,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris vim=2:9.1.1882-1
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.1882-1.dsc' vim_9.1.1882-1.dsc 3198 SHA256:65c2a9ce4cd758af815a832215e1b9042326eb57f474ff2dd4c508d1ab92563b
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.1882.orig.tar.xz' vim_9.1.1882.orig.tar.xz 12850936 SHA256:25026cc9cf7d87797534ce1ace58e427ebfd76e39be78cad013d1525b6bf631a
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.1882-1.debian.tar.xz' vim_9.1.1882-1.debian.tar.xz 192272 SHA256:cfb9e31f8b450323a4c38a6d6639d34682d85f19fefc5f843522ea6359aabe5e
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.1882-1.dsc' vim_9.1.1882-1.dsc 3198 SHA256:65c2a9ce4cd758af815a832215e1b9042326eb57f474ff2dd4c508d1ab92563b
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.1882.orig.tar.xz' vim_9.1.1882.orig.tar.xz 12850936 SHA256:25026cc9cf7d87797534ce1ace58e427ebfd76e39be78cad013d1525b6bf631a
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.1882-1.debian.tar.xz' vim_9.1.1882-1.debian.tar.xz 192272 SHA256:cfb9e31f8b450323a4c38a6d6639d34682d85f19fefc5f843522ea6359aabe5e
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/vim/2:9.1.1882-1/ (for browsing the source)
+- https://sources.debian.net/src/vim/2:9.1.1882-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/vim/2:9.1.1882-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
