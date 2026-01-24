@@ -1,7 +1,7 @@
 ## `tomcat:9-jre25-temurin-noble`
 
 ```console
-$ docker pull tomcat@sha256:abc19c90ba790a73753f285d99e0672b2038d43fff5d0fdbc2e9269e5af9a624
+$ docker pull tomcat@sha256:e861389a3d27eb2d1f7faccfb87c09dd7a1ee391bcd73d4e2832ca78ed80ed6d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20,13 +20,13 @@ $ docker pull tomcat@sha256:abc19c90ba790a73753f285d99e0672b2038d43fff5d0fdbc2e9
 ### `tomcat:9-jre25-temurin-noble` - linux; amd64
 
 ```console
-$ docker pull tomcat@sha256:243ce72e45c91e3decde8ee8b3739ba7ce16626d96304ca9f4e10bc6b44173ca
+$ docker pull tomcat@sha256:d4eaa8bcbec81cdcadb2900504c52674fd1c0da279a5b72ff7585605c6ac4a19
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.9 MB (117871434 bytes)**  
+-	Total Size: **117.9 MB (117905973 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf40cb1b316b2b262915a1932b1a55d8e0af3bd9eefc375ef4589020cfc9bfed`
+-	Image ID: `sha256:37da610ce867394a1a4d31351ca4cf72152c85b2306c056d49113655dccb005d`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -60,35 +60,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 15 Jan 2026 22:21:01 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 16 Jan 2026 02:26:12 GMT
+# Fri, 23 Jan 2026 23:10:41 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 16 Jan 2026 02:26:12 GMT
+# Fri, 23 Jan 2026 23:10:41 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 16 Jan 2026 02:26:12 GMT
+# Fri, 23 Jan 2026 23:10:41 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Fri, 16 Jan 2026 02:26:12 GMT
+# Fri, 23 Jan 2026 23:10:41 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 16 Jan 2026 02:26:12 GMT
+# Fri, 23 Jan 2026 23:10:41 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Fri, 16 Jan 2026 02:26:12 GMT
+# Fri, 23 Jan 2026 23:10:41 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Fri, 16 Jan 2026 02:26:12 GMT
+# Fri, 23 Jan 2026 23:10:41 GMT
 ENV TOMCAT_MAJOR=9
-# Fri, 16 Jan 2026 02:26:12 GMT
-ENV TOMCAT_VERSION=9.0.113
-# Fri, 16 Jan 2026 02:26:12 GMT
-ENV TOMCAT_SHA512=1b8d9ba5c5e2ed2b4134a3fe6f206b3bb1184391e5c112ca7ea6a49ecadca63a7fc565c83caa610f0a8341988777870302a8162a84f0880af751531cdd4a2ee5
-# Fri, 16 Jan 2026 02:27:51 GMT
+# Fri, 23 Jan 2026 23:10:41 GMT
+ENV TOMCAT_VERSION=9.0.115
+# Fri, 23 Jan 2026 23:10:41 GMT
+ENV TOMCAT_SHA512=8e6fa92883c161523269560a7dc9e8d58fd1199b29c630f681aa3ec2975b59d94674d2881331076b55f5ee0439748931d87c099c79d7bcea909303739e612e4b
+# Fri, 23 Jan 2026 23:10:42 GMT
 COPY /usr/local/tomcat /usr/local/tomcat # buildkit
-# Fri, 16 Jan 2026 02:27:56 GMT
+# Fri, 23 Jan 2026 23:10:50 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 16 Jan 2026 02:27:57 GMT
+# Fri, 23 Jan 2026 23:10:50 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Fri, 16 Jan 2026 02:27:57 GMT
+# Fri, 23 Jan 2026 23:10:50 GMT
 EXPOSE map[8080/tcp:{}]
-# Fri, 16 Jan 2026 02:27:57 GMT
+# Fri, 23 Jan 2026 23:10:50 GMT
 ENTRYPOINT []
-# Fri, 16 Jan 2026 02:27:57 GMT
+# Fri, 23 Jan 2026 23:10:50 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -113,21 +113,21 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 15 Jan 2026 22:21:14 GMT  
 		Size: 2.3 KB (2279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7fec13224de65dfa79e6804ced41c67dd5d754642880b9b42d7164695021fdc`  
-		Last Modified: Fri, 16 Jan 2026 02:26:28 GMT  
-		Size: 139.0 B  
+	-	`sha256:04dc7669f885e0d857151f40843846a887038fb3212dd23bef2e604e9c2f1449`  
+		Last Modified: Fri, 23 Jan 2026 23:10:59 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d65b3e30a895b667b14bf97b768042ed87254c046c4dad81b9f685be10b4076b`  
-		Last Modified: Fri, 16 Jan 2026 02:28:04 GMT  
-		Size: 13.7 MB (13738325 bytes)  
+	-	`sha256:1fa1e1ade7006d450d974d39349b607ad2425f905cbdbd58b7db85753970834d`  
+		Last Modified: Fri, 23 Jan 2026 23:11:00 GMT  
+		Size: 13.8 MB (13772841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f39cb765943615df0c0665221de25d32907b79b914f59276c91d2ca212c9080f`  
-		Last Modified: Fri, 16 Jan 2026 02:28:04 GMT  
-		Size: 207.7 KB (207708 bytes)  
+	-	`sha256:1df26445b6135d7250f3ed1e068c3c92007370c8445d97cc317d9bcffb27ec3a`  
+		Last Modified: Fri, 23 Jan 2026 23:10:59 GMT  
+		Size: 207.7 KB (207732 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -137,37 +137,37 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:9-jre25-temurin-noble` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:360a3d30fc396a3962e8a169f6b0974437a0e16f48b62b3e4dee19a938a95ad0
+$ docker pull tomcat@sha256:b9a801461001477d88afe4037dbeb383d1cc95e1941d3f6fe199a2321b379f33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3148070 bytes)**  
+-	Total Size: **3.1 MB (3148069 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c14c6b77c1fe96fff6b9fc826b4cbf0a988d712b8ef2319a5b962c560d848891`
+-	Image ID: `sha256:6fe2166281fc4bfa0f60e6a3d34e4b5d2802c739428c7d711c44992c0b77efd3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:99331af0ae7217993731adbcb0cb08bd7127aca8e07af5b6546197c9fc384bbe`  
-		Last Modified: Fri, 16 Jan 2026 02:28:04 GMT  
+	-	`sha256:2401392d816c71ddaeaf77d54f8fd85672fff6e3626a001c9475cb956117c95a`  
+		Last Modified: Fri, 23 Jan 2026 23:10:59 GMT  
 		Size: 3.1 MB (3124988 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8786e06d52eedf7232803d81ca1f7a2bd2306b3f660aa3f6522f5a2f0e4481e4`  
-		Last Modified: Fri, 16 Jan 2026 02:28:04 GMT  
-		Size: 23.1 KB (23082 bytes)  
+	-	`sha256:0265611f8ea43fd77ed8a7ddb91369dad3ad10c8d65f1cbce9b1472732563b04`  
+		Last Modified: Fri, 23 Jan 2026 23:10:59 GMT  
+		Size: 23.1 KB (23081 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `tomcat:9-jre25-temurin-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomcat@sha256:9f14abde8287a543bc711b68c69f607bf59048c6202163052f870d1352f99e0c
+$ docker pull tomcat@sha256:19143e0014f6f621733dcc66a614300a0ac27472d1767ad41a9200ec3090a549
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.0 MB (115967116 bytes)**  
+-	Total Size: **116.0 MB (115999550 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba3aa2660026de2fb36258ac14fb9277eb652e7fab856541ab0aa73fd12bd7c6`
+-	Image ID: `sha256:a613d7a5b63a404a95294b65b4688f4ff4d43d2a66de20af71e15ff0bd0a59bb`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -201,35 +201,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 15 Jan 2026 22:22:42 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 16 Jan 2026 02:44:15 GMT
+# Fri, 23 Jan 2026 23:10:42 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 16 Jan 2026 02:44:15 GMT
+# Fri, 23 Jan 2026 23:10:42 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 16 Jan 2026 02:44:15 GMT
+# Fri, 23 Jan 2026 23:10:42 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Fri, 16 Jan 2026 02:44:15 GMT
+# Fri, 23 Jan 2026 23:10:43 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 16 Jan 2026 02:44:15 GMT
+# Fri, 23 Jan 2026 23:10:43 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Fri, 16 Jan 2026 02:44:15 GMT
+# Fri, 23 Jan 2026 23:10:43 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Fri, 16 Jan 2026 02:44:15 GMT
+# Fri, 23 Jan 2026 23:10:43 GMT
 ENV TOMCAT_MAJOR=9
-# Fri, 16 Jan 2026 02:44:15 GMT
-ENV TOMCAT_VERSION=9.0.113
-# Fri, 16 Jan 2026 02:44:15 GMT
-ENV TOMCAT_SHA512=1b8d9ba5c5e2ed2b4134a3fe6f206b3bb1184391e5c112ca7ea6a49ecadca63a7fc565c83caa610f0a8341988777870302a8162a84f0880af751531cdd4a2ee5
-# Fri, 16 Jan 2026 02:44:15 GMT
+# Fri, 23 Jan 2026 23:10:43 GMT
+ENV TOMCAT_VERSION=9.0.115
+# Fri, 23 Jan 2026 23:10:43 GMT
+ENV TOMCAT_SHA512=8e6fa92883c161523269560a7dc9e8d58fd1199b29c630f681aa3ec2975b59d94674d2881331076b55f5ee0439748931d87c099c79d7bcea909303739e612e4b
+# Fri, 23 Jan 2026 23:10:43 GMT
 COPY /usr/local/tomcat /usr/local/tomcat # buildkit
-# Fri, 16 Jan 2026 02:44:21 GMT
+# Fri, 23 Jan 2026 23:16:03 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 16 Jan 2026 02:44:23 GMT
+# Fri, 23 Jan 2026 23:16:03 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Fri, 16 Jan 2026 02:44:23 GMT
+# Fri, 23 Jan 2026 23:16:03 GMT
 EXPOSE map[8080/tcp:{}]
-# Fri, 16 Jan 2026 02:44:23 GMT
+# Fri, 23 Jan 2026 23:16:03 GMT
 ENTRYPOINT []
-# Fri, 16 Jan 2026 02:44:23 GMT
+# Fri, 23 Jan 2026 23:16:03 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -254,21 +254,21 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 15 Jan 2026 22:22:55 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47ff549c8e5fdc0da0070d8206a7c6fcdc8c41fce55d79fc264f78787f4220d4`  
-		Last Modified: Fri, 16 Jan 2026 02:44:33 GMT  
+	-	`sha256:f27840f1e1871d296c083f1e780aad36b56818d6457d214e5581a0fec1c216df`  
+		Last Modified: Fri, 23 Jan 2026 23:16:12 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:437fa68ee3eff46da556591905f92e9f003a7abfb85c94fc0134cbd22b5e76f8`  
-		Last Modified: Fri, 16 Jan 2026 02:44:33 GMT  
-		Size: 13.8 MB (13751684 bytes)  
+	-	`sha256:34fb9ee9fe85aa0c74e99fa9d124e5d78d969c95e7ea3136111a27a37db815f2`  
+		Last Modified: Fri, 23 Jan 2026 23:16:12 GMT  
+		Size: 13.8 MB (13784086 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2f8f29163b22aa29cd70d37a0865a6d12d907dc815fcabf10b4c78ca52243c0`  
-		Last Modified: Fri, 16 Jan 2026 02:44:33 GMT  
-		Size: 207.3 KB (207255 bytes)  
+	-	`sha256:61072495e53b7c86e8083fa77031d8ed7c1e911d77058acdc6845f38a48da3cb`  
+		Last Modified: Fri, 23 Jan 2026 23:16:12 GMT  
+		Size: 207.3 KB (207287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -278,37 +278,37 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:9-jre25-temurin-noble` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:de0b93ed83e06346103ac8c35d4849cb20815dac76955e7bb5b309f6b0ccf7d8
+$ docker pull tomcat@sha256:84cce966bee83f71b9c6f0e9c3cb713f509377f28ed8528bcc328f7c4c9493a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.1 MB (3148800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b764f88097cd5c4783b246bc8c8659cd14b00d1f45339d792c59360663d1a3f`
+-	Image ID: `sha256:67004fac31d5fe7327a86462383ed99169946a0fa9422001734b538884ac3b65`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4e302e9e466e6e4cf48aec01ce9636201e7240af45e378a8f2078bfa689eca1b`  
-		Last Modified: Fri, 16 Jan 2026 02:44:33 GMT  
+	-	`sha256:2557aea063c73a92a3f78d907d88b1813e869fa8360193d72937112ad0d2f6ec`  
+		Last Modified: Fri, 23 Jan 2026 23:16:12 GMT  
 		Size: 3.1 MB (3125498 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3956a4ed28250def32af5c76678e1e0257cf728d660bb9499697e5a9f25816e5`  
-		Last Modified: Fri, 16 Jan 2026 02:44:33 GMT  
+	-	`sha256:2f5c43906fe0613c04f380d3347f9ba6f02aae8496080d18ad2fc51e94246bb5`  
+		Last Modified: Fri, 23 Jan 2026 23:16:12 GMT  
 		Size: 23.3 KB (23302 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `tomcat:9-jre25-temurin-noble` - linux; ppc64le
 
 ```console
-$ docker pull tomcat@sha256:9b9996730511bae6bb753794c9415238e676d931278b88eefeacd94a4045fc4d
+$ docker pull tomcat@sha256:610b23aaab3af29a8c31f1be12eea2e067ac811f73a4070656d0bdc0bfc721df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.5 MB (122528894 bytes)**  
+-	Total Size: **122.6 MB (122562213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6773019a3af0cf530cf3b14cf95dcfe8ea7665897eff1c05da45eea405a000d7`
+-	Image ID: `sha256:8b713d8d9232d8b1c7f25b88f5dbe468e261b490e637c79b3f2b6e606e1fb18a`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -342,35 +342,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 15 Jan 2026 22:25:08 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 16 Jan 2026 04:52:13 GMT
+# Fri, 23 Jan 2026 23:09:20 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 16 Jan 2026 04:52:13 GMT
+# Fri, 23 Jan 2026 23:09:20 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 16 Jan 2026 04:52:13 GMT
+# Fri, 23 Jan 2026 23:09:20 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Fri, 16 Jan 2026 04:52:14 GMT
+# Fri, 23 Jan 2026 23:09:21 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 16 Jan 2026 04:52:14 GMT
+# Fri, 23 Jan 2026 23:09:21 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Fri, 16 Jan 2026 04:52:14 GMT
+# Fri, 23 Jan 2026 23:09:21 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Fri, 16 Jan 2026 04:52:14 GMT
+# Fri, 23 Jan 2026 23:09:21 GMT
 ENV TOMCAT_MAJOR=9
-# Fri, 16 Jan 2026 04:52:14 GMT
-ENV TOMCAT_VERSION=9.0.113
-# Fri, 16 Jan 2026 04:52:14 GMT
-ENV TOMCAT_SHA512=1b8d9ba5c5e2ed2b4134a3fe6f206b3bb1184391e5c112ca7ea6a49ecadca63a7fc565c83caa610f0a8341988777870302a8162a84f0880af751531cdd4a2ee5
-# Fri, 16 Jan 2026 04:59:31 GMT
+# Fri, 23 Jan 2026 23:09:21 GMT
+ENV TOMCAT_VERSION=9.0.115
+# Fri, 23 Jan 2026 23:09:21 GMT
+ENV TOMCAT_SHA512=8e6fa92883c161523269560a7dc9e8d58fd1199b29c630f681aa3ec2975b59d94674d2881331076b55f5ee0439748931d87c099c79d7bcea909303739e612e4b
+# Fri, 23 Jan 2026 23:09:23 GMT
 COPY /usr/local/tomcat /usr/local/tomcat # buildkit
-# Fri, 16 Jan 2026 04:59:38 GMT
+# Fri, 23 Jan 2026 23:09:32 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 16 Jan 2026 04:59:40 GMT
+# Fri, 23 Jan 2026 23:09:33 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Fri, 16 Jan 2026 04:59:40 GMT
+# Fri, 23 Jan 2026 23:09:33 GMT
 EXPOSE map[8080/tcp:{}]
-# Fri, 16 Jan 2026 04:59:40 GMT
+# Fri, 23 Jan 2026 23:09:33 GMT
 ENTRYPOINT []
-# Fri, 16 Jan 2026 04:59:40 GMT
+# Fri, 23 Jan 2026 23:09:33 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -395,21 +395,21 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 15 Jan 2026 22:25:54 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c0a57a97204b164239a2326db26259a4cf1418ebf34627e60617ed2941e16cf`  
-		Last Modified: Fri, 16 Jan 2026 04:52:59 GMT  
-		Size: 139.0 B  
+	-	`sha256:a14d4c00b32ab488552d64b8119ff3ef7bf821602061e89590afacd0a7cb60d3`  
+		Last Modified: Fri, 23 Jan 2026 23:09:56 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0742285421e4eb1333938cbfb9a2fc277d981617435905deed7ec7c5722bd30`  
-		Last Modified: Fri, 16 Jan 2026 05:00:13 GMT  
-		Size: 13.8 MB (13775862 bytes)  
+	-	`sha256:09fc48e31cd4b46108e2e7ced6edae2393b62dd3443499aae8ed925815b8d250`  
+		Last Modified: Fri, 23 Jan 2026 23:09:57 GMT  
+		Size: 13.8 MB (13809052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:78c3c78768d523bf57005456077703c26a1a62ba8fd06c596b71d0c36883f628`  
-		Last Modified: Fri, 16 Jan 2026 05:00:14 GMT  
-		Size: 238.8 KB (238829 bytes)  
+	-	`sha256:af2db09832e251265d86f96841725586d6477353769a03473a08124391d6f1dc`  
+		Last Modified: Fri, 23 Jan 2026 23:09:57 GMT  
+		Size: 239.0 KB (238957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -419,37 +419,37 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:9-jre25-temurin-noble` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:49d9ab18e8f8eba23960453214fa15864fd7e5d32005a4ef4ecda2710ff3f652
+$ docker pull tomcat@sha256:a90be313348b22e6a68690b143354d336b88b92aca2e7921409765c080249108
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3151485 bytes)**  
+-	Total Size: **3.2 MB (3151484 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:803fdccd8b0c3a7389057f5dd63cf895c449fc49ec142e4177c79bc989f412e7`
+-	Image ID: `sha256:21b2cbc5d1967fd8e94368a9186834247ca99f217aacbf8ab9a5a662fe26db32`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e3b3af5cc63e5c4d846c4ddbbb0dd4556131791e649181057cb92011c80b559f`  
-		Last Modified: Fri, 16 Jan 2026 05:00:15 GMT  
+	-	`sha256:98038bd415e3b84d29640ae36ec47df84c3ae6f920d8d0c9fb35e9189c1e2fb4`  
+		Last Modified: Fri, 23 Jan 2026 23:09:57 GMT  
 		Size: 3.1 MB (3128315 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:360c73852c231011c8a7dcf5135f52074e30b06ba9590e154ac3ed563c9cfccd`  
-		Last Modified: Fri, 16 Jan 2026 05:00:13 GMT  
-		Size: 23.2 KB (23170 bytes)  
+	-	`sha256:d17d755b581d36c6e2f1e35698835d310127e51da99a1a80e4c216a17dddda63`  
+		Last Modified: Fri, 23 Jan 2026 23:09:56 GMT  
+		Size: 23.2 KB (23169 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `tomcat:9-jre25-temurin-noble` - linux; riscv64
 
 ```console
-$ docker pull tomcat@sha256:3360622bfd8b85b9e8ddc037639922c3edba51d12d0f3b18a1c82df8a095eb64
+$ docker pull tomcat@sha256:d9ea10b30a58fceb9c69d0bff9159e761ad55dfddacc20aa3eaedac439586a6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.4 MB (118424724 bytes)**  
+-	Total Size: **118.5 MB (118469047 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae416e4dc1ddc1d8a73ce51f2ea393ca579a1d8d962a83cd7aab854dc3208d6a`
+-	Image ID: `sha256:d66f3026e863421ccddb4d11c163f198dd9a721f55c077670a22b3cb9909c54f`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -498,20 +498,20 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 # Thu, 22 Jan 2026 12:28:00 GMT
 ENV TOMCAT_MAJOR=9
 # Thu, 22 Jan 2026 12:28:00 GMT
-ENV TOMCAT_VERSION=9.0.113
+ENV TOMCAT_VERSION=9.0.115
 # Thu, 22 Jan 2026 12:28:00 GMT
-ENV TOMCAT_SHA512=1b8d9ba5c5e2ed2b4134a3fe6f206b3bb1184391e5c112ca7ea6a49ecadca63a7fc565c83caa610f0a8341988777870302a8162a84f0880af751531cdd4a2ee5
-# Thu, 22 Jan 2026 12:45:58 GMT
+ENV TOMCAT_SHA512=8e6fa92883c161523269560a7dc9e8d58fd1199b29c630f681aa3ec2975b59d94674d2881331076b55f5ee0439748931d87c099c79d7bcea909303739e612e4b
+# Fri, 23 Jan 2026 23:11:21 GMT
 COPY /usr/local/tomcat /usr/local/tomcat # buildkit
-# Thu, 22 Jan 2026 12:46:35 GMT
+# Fri, 23 Jan 2026 23:12:00 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 22 Jan 2026 12:46:43 GMT
+# Fri, 23 Jan 2026 23:12:08 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Thu, 22 Jan 2026 12:46:43 GMT
+# Fri, 23 Jan 2026 23:12:08 GMT
 EXPOSE map[8080/tcp:{}]
-# Thu, 22 Jan 2026 12:46:43 GMT
+# Fri, 23 Jan 2026 23:12:08 GMT
 ENTRYPOINT []
-# Thu, 22 Jan 2026 12:46:43 GMT
+# Fri, 23 Jan 2026 23:12:08 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -544,13 +544,13 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0d790e890c8e0a7993297df055e16f6004871fe89858ae18b5bf0ce9bb71e6f`  
-		Last Modified: Thu, 22 Jan 2026 12:48:27 GMT  
-		Size: 14.2 MB (14244871 bytes)  
+	-	`sha256:d34b037e5d7b440b744dfafcf045dfc82f9af9e76d00dd7b56c82396b4b7d671`  
+		Last Modified: Fri, 23 Jan 2026 23:14:03 GMT  
+		Size: 14.3 MB (14289226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ffce6c11a90b72bbc0826b68a84dfe70d0b7174d7379eefcc5604d228a18f22`  
-		Last Modified: Thu, 22 Jan 2026 12:48:25 GMT  
-		Size: 210.1 KB (210062 bytes)  
+	-	`sha256:e9c23db2346fc03b0475c842309fb9b1e5ef8fa71b0523161f2d6a8878785999`  
+		Last Modified: Fri, 23 Jan 2026 23:14:00 GMT  
+		Size: 210.0 KB (210030 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -560,37 +560,37 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:9-jre25-temurin-noble` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:6a32d6f3e339d38b5454c1de77c9a2a50f63193f757ccc469949c92328f15440
+$ docker pull tomcat@sha256:64e1a359387c6b0811da98869902484ae64f4773ee9623c611e0e58ff1f8851a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3140180 bytes)**  
+-	Total Size: **3.1 MB (3140181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba8961627b400a428a3d3e43fed0a807c04ee6b82bc70826823c3b6271213ed3`
+-	Image ID: `sha256:bd68b539d679e3bef53094ff35b209a01e0014ce80b3f9eb8014fa9ce150c9d3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5ecf3b296e68338babb867e123478c962c4c94aa442ecb97af200ed01677a127`  
-		Last Modified: Thu, 22 Jan 2026 12:48:26 GMT  
+	-	`sha256:4314fdcdc77d31eb7ec3c6e07a22eba08899d5e13564df0db48dda213d64e3f2`  
+		Last Modified: Fri, 23 Jan 2026 23:14:01 GMT  
 		Size: 3.1 MB (3117011 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f310ca9133f5b02cea493f48d9de2ccc58df323e0905ec6d0496f077cd04e67e`  
-		Last Modified: Thu, 22 Jan 2026 12:48:25 GMT  
-		Size: 23.2 KB (23169 bytes)  
+	-	`sha256:15708ec2e6e76f6cfa60ecae1f874c226e3f21ef96ceab0c338529daddd1d1ef`  
+		Last Modified: Fri, 23 Jan 2026 23:14:00 GMT  
+		Size: 23.2 KB (23170 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `tomcat:9-jre25-temurin-noble` - linux; s390x
 
 ```console
-$ docker pull tomcat@sha256:4c948f65a09cabbec5de1aa3562dab760813d2de50bafb90910fd862b79e1d8f
+$ docker pull tomcat@sha256:49105e0a3655aec1a59cf80272a2e13fcbee566d2edc2e6d7756745050c2b22e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.0 MB (115988247 bytes)**  
+-	Total Size: **116.0 MB (116021608 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa53f17a34b410f236a98d78c4a8befc788f5548730abae4d1a576d98500494d`
+-	Image ID: `sha256:2bdb26a335975886605ed3fee411fae7cc9810cf77e29b31631ab1ce44cc346b`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -624,35 +624,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 15 Jan 2026 22:11:22 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 15 Jan 2026 23:52:54 GMT
+# Fri, 23 Jan 2026 23:09:38 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 15 Jan 2026 23:52:54 GMT
+# Fri, 23 Jan 2026 23:09:38 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 15 Jan 2026 23:52:54 GMT
+# Fri, 23 Jan 2026 23:09:38 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Thu, 15 Jan 2026 23:52:54 GMT
+# Fri, 23 Jan 2026 23:09:38 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 15 Jan 2026 23:52:54 GMT
+# Fri, 23 Jan 2026 23:09:38 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 15 Jan 2026 23:52:54 GMT
+# Fri, 23 Jan 2026 23:09:38 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 15 Jan 2026 23:52:54 GMT
+# Fri, 23 Jan 2026 23:09:38 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 15 Jan 2026 23:52:54 GMT
-ENV TOMCAT_VERSION=9.0.113
-# Thu, 15 Jan 2026 23:52:54 GMT
-ENV TOMCAT_SHA512=1b8d9ba5c5e2ed2b4134a3fe6f206b3bb1184391e5c112ca7ea6a49ecadca63a7fc565c83caa610f0a8341988777870302a8162a84f0880af751531cdd4a2ee5
-# Thu, 15 Jan 2026 23:55:53 GMT
+# Fri, 23 Jan 2026 23:09:38 GMT
+ENV TOMCAT_VERSION=9.0.115
+# Fri, 23 Jan 2026 23:09:38 GMT
+ENV TOMCAT_SHA512=8e6fa92883c161523269560a7dc9e8d58fd1199b29c630f681aa3ec2975b59d94674d2881331076b55f5ee0439748931d87c099c79d7bcea909303739e612e4b
+# Fri, 23 Jan 2026 23:09:38 GMT
 COPY /usr/local/tomcat /usr/local/tomcat # buildkit
-# Thu, 15 Jan 2026 23:55:56 GMT
+# Fri, 23 Jan 2026 23:09:42 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 15 Jan 2026 23:55:57 GMT
+# Fri, 23 Jan 2026 23:09:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Thu, 15 Jan 2026 23:55:57 GMT
+# Fri, 23 Jan 2026 23:09:42 GMT
 EXPOSE map[8080/tcp:{}]
-# Thu, 15 Jan 2026 23:55:57 GMT
+# Fri, 23 Jan 2026 23:09:42 GMT
 ENTRYPOINT []
-# Thu, 15 Jan 2026 23:55:57 GMT
+# Fri, 23 Jan 2026 23:09:42 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -677,21 +677,21 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 15 Jan 2026 22:11:41 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f30856d1b6366934dc018dd9f41d02b15dc729559625dac84307044ebe490405`  
-		Last Modified: Thu, 15 Jan 2026 23:53:13 GMT  
-		Size: 138.0 B  
+	-	`sha256:be3e7c4c46509ef81563261b941492b60a9f6897455232403589f274a60d72e0`  
+		Last Modified: Fri, 23 Jan 2026 23:09:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38dc4eedf8d94f263b8db6fc518b3b3512d4e755bb80c1e1fb71ddd34be04ecc`  
-		Last Modified: Thu, 15 Jan 2026 23:56:11 GMT  
-		Size: 13.8 MB (13752319 bytes)  
+	-	`sha256:121a54f1405e5cc688cbd1e86b8c3373ef8de6e1f5240714c274d01f28e23783`  
+		Last Modified: Fri, 23 Jan 2026 23:09:56 GMT  
+		Size: 13.8 MB (13785618 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5edf9f449d9e47e56f923703ae7dcc30c88d1598331f7269c42ba847fc792438`  
-		Last Modified: Thu, 15 Jan 2026 23:56:10 GMT  
-		Size: 215.0 KB (215025 bytes)  
+	-	`sha256:3f0083bfa0e593e8b257913d295b80ba7f4bf769c566d9b03cf6325f4d6b2116`  
+		Last Modified: Fri, 23 Jan 2026 23:09:55 GMT  
+		Size: 215.1 KB (215086 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -701,23 +701,23 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:9-jre25-temurin-noble` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:6ff0e245682135cc9752c0f806ee7453480fdda2f9969896cf369be8f89045b5
+$ docker pull tomcat@sha256:5a8203aea8f88993b6131545a7fc144a18069bc079d8ed8d2e193fad420cc6bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.1 MB (3149667 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e0a74ad2c7a388e9db4092fd548de5baf3281bfb31b91116baf8385f76acf6f`
+-	Image ID: `sha256:b8ee6eebca9809189565e7d922d21e982ff17d41274e93c95bcf7adf41b809fd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d1e65bbcc52c7400db8591d2ee5ea31c714184363969c707d35dfae69bec7097`  
-		Last Modified: Thu, 15 Jan 2026 23:56:11 GMT  
+	-	`sha256:1a3c2d3258c2f3aa35a954095744d0bcc8348cce614534c69b0416e847e409d4`  
+		Last Modified: Fri, 23 Jan 2026 23:09:55 GMT  
 		Size: 3.1 MB (3126585 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:39a68ec4064e93bd6928c675584b15e14eb27d5da0e3f176c525fdbf5f7025b6`  
-		Last Modified: Thu, 15 Jan 2026 23:56:10 GMT  
+	-	`sha256:1d78c60ce6ff021c45f44b995c099ae168ee5e3928efe80d7ffa5d02487eb44e`  
+		Last Modified: Fri, 23 Jan 2026 23:09:55 GMT  
 		Size: 23.1 KB (23082 bytes)  
 		MIME: application/vnd.in-toto+json
