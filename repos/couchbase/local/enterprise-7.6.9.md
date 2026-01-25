@@ -1,10 +1,10 @@
-# `couchbase:7.2.9`
+# `couchbase:7.6.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fec5a24fd067260d33e912ef57b0348e03d8965de0a8924f784f8b8a4e3a7362`
-- Created: `2026-01-15T22:16:28.403991371Z`
-- Virtual Size: ~ 1.58 Gb  
+- Image ID: `sha256:8d60f9b4733162b70fa36802e892fd16b045513b13a0f0c906a03add9f6bad1c`
+- Created: `2026-01-22T22:59:48.617506781Z`
+- Virtual Size: ~ 1.88 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -323,11 +323,11 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.1.debian.tar.xz' coreutils_9.4-3ubuntu6.1.debian.tar.xz 41308 SHA512:abbd5d534ad307d8244f5ae6112ebe050306459ec5de4231e5dd1266361157b307c821e8c1e2bbd41f7cf6c7ab796a592fb8d2ef1cb516ae90e8050fb84c1502
 ```
 
-### `dpkg` source package: `couchbase-server=7.2.9-9230-1`
+### `dpkg` source package: `couchbase-server=7.6.9-7600-1`
 
 Binary Packages:
 
-- `couchbase-server=7.2.9-9230-1`
+- `couchbase-server=7.6.9-7600-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -697,13 +697,13 @@ $ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.debian.tar.xz' gcc-14_14.2.0-4ubuntu2~24.04.debian.tar.xz 1950240 SHA512:2b1894ebcb104b85da3c614e0a6c2e24b1f6c1f548645996d2cb0d274301284f1f4db0809c8355997b05fe64b76a73ee1b9499c7b1c229547bad79fee1954d59
 ```
 
-### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.6`
+### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.7`
 
 Binary Packages:
 
-- `gir1.2-glib-2.0:amd64=2.80.0-6ubuntu3.6`
-- `libglib2.0-0t64:amd64=2.80.0-6ubuntu3.6`
-- `libglib2.0-data=2.80.0-6ubuntu3.6`
+- `gir1.2-glib-2.0:amd64=2.80.0-6ubuntu3.7`
+- `libglib2.0-0t64:amd64=2.80.0-6ubuntu3.7`
+- `libglib2.0-data=2.80.0-6ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/doc/libglib2.0-0t64/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
@@ -733,9 +733,15 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/
 - `cmph`
 - `old-glib-tests`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.7.dsc' glib2.0_2.80.0-6ubuntu3.7.dsc 4542 SHA512:5c54287834837dd7418c24b41ba18ef543233d7cf44a0a354976722f57837cf381539e525b1292f418e22b5d05de2a305edcfcfc117c901fffec3555728bde01
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.7.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.7.debian.tar.xz 162596 SHA512:10a7f8574d82e7854e473ef8a6d21aec1e58b89d81a1f1068faf6d583dc61eadd716133bbca8f8864a62b5eaa89cf0d72ba0560d7e5edc6db7c9772c0f81b6c1
+```
 
 ### `dpkg` source package: `glibc=2.39-0ubuntu8.6`
 
@@ -1492,20 +1498,25 @@ $ apt-get source -qq --print-uris libxcrypt=1:4.4.36-4build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.36-4build1.debian.tar.xz' libxcrypt_4.4.36-4build1.debian.tar.xz 8356 SHA512:d181e5637d40e322cf03d80dff03acb9982c0a07a73229d660d8b2fcd02f31783347c0b0208d2ebb077bdf44e87330b04a8cd10a4bc272dbb0feca7f1adfe013
 ```
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.6`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.7`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.6`
+- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.7.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.7.dsc 3083 SHA512:bd10326e5294c4a92fb4918a363cb8861f7a20fc876ec1c11e7edb6482a53aee85471a0c274244eeeda96f65b57aa260071d9aa033f169cd4e7fdc943ef09e5d
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.7.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.7.debian.tar.xz 52444 SHA512:4090c7600387e0ed6dc7acfa7f691d6ee3cbcd2da2ba305848a42c6497f9ac4cbc2c87b8c2c0659b15afc7373f8aef2a8473a465157a1cc3a1d982b79c2d2ba9
+```
 
 ### `dpkg` source package: `libzstd=1.5.5+dfsg2-2build1.1`
 
