@@ -38,15 +38,15 @@
 -	[`nats:2.11-scratch`](#nats211-scratch)
 -	[`nats:2.11-windowsservercore`](#nats211-windowsservercore)
 -	[`nats:2.11-windowsservercore-ltsc2022`](#nats211-windowsservercore-ltsc2022)
--	[`nats:2.11.11`](#nats21111)
--	[`nats:2.11.11-alpine`](#nats21111-alpine)
--	[`nats:2.11.11-alpine3.22`](#nats21111-alpine322)
--	[`nats:2.11.11-linux`](#nats21111-linux)
--	[`nats:2.11.11-nanoserver`](#nats21111-nanoserver)
--	[`nats:2.11.11-nanoserver-ltsc2022`](#nats21111-nanoserver-ltsc2022)
--	[`nats:2.11.11-scratch`](#nats21111-scratch)
--	[`nats:2.11.11-windowsservercore`](#nats21111-windowsservercore)
--	[`nats:2.11.11-windowsservercore-ltsc2022`](#nats21111-windowsservercore-ltsc2022)
+-	[`nats:2.11.12`](#nats21112)
+-	[`nats:2.11.12-alpine`](#nats21112-alpine)
+-	[`nats:2.11.12-alpine3.22`](#nats21112-alpine322)
+-	[`nats:2.11.12-linux`](#nats21112-linux)
+-	[`nats:2.11.12-nanoserver`](#nats21112-nanoserver)
+-	[`nats:2.11.12-nanoserver-ltsc2022`](#nats21112-nanoserver-ltsc2022)
+-	[`nats:2.11.12-scratch`](#nats21112-scratch)
+-	[`nats:2.11.12-windowsservercore`](#nats21112-windowsservercore)
+-	[`nats:2.11.12-windowsservercore-ltsc2022`](#nats21112-windowsservercore-ltsc2022)
 -	[`nats:2.12`](#nats212)
 -	[`nats:2.12-alpine`](#nats212-alpine)
 -	[`nats:2.12-alpine3.22`](#nats212-alpine322)
@@ -56,15 +56,15 @@
 -	[`nats:2.12-scratch`](#nats212-scratch)
 -	[`nats:2.12-windowsservercore`](#nats212-windowsservercore)
 -	[`nats:2.12-windowsservercore-ltsc2022`](#nats212-windowsservercore-ltsc2022)
--	[`nats:2.12.3`](#nats2123)
--	[`nats:2.12.3-alpine`](#nats2123-alpine)
--	[`nats:2.12.3-alpine3.22`](#nats2123-alpine322)
--	[`nats:2.12.3-linux`](#nats2123-linux)
--	[`nats:2.12.3-nanoserver`](#nats2123-nanoserver)
--	[`nats:2.12.3-nanoserver-ltsc2022`](#nats2123-nanoserver-ltsc2022)
--	[`nats:2.12.3-scratch`](#nats2123-scratch)
--	[`nats:2.12.3-windowsservercore`](#nats2123-windowsservercore)
--	[`nats:2.12.3-windowsservercore-ltsc2022`](#nats2123-windowsservercore-ltsc2022)
+-	[`nats:2.12.4`](#nats2124)
+-	[`nats:2.12.4-alpine`](#nats2124-alpine)
+-	[`nats:2.12.4-alpine3.22`](#nats2124-alpine322)
+-	[`nats:2.12.4-linux`](#nats2124-linux)
+-	[`nats:2.12.4-nanoserver`](#nats2124-nanoserver)
+-	[`nats:2.12.4-nanoserver-ltsc2022`](#nats2124-nanoserver-ltsc2022)
+-	[`nats:2.12.4-scratch`](#nats2124-scratch)
+-	[`nats:2.12.4-windowsservercore`](#nats2124-windowsservercore)
+-	[`nats:2.12.4-windowsservercore-ltsc2022`](#nats2124-windowsservercore-ltsc2022)
 -	[`nats:alpine`](#natsalpine)
 -	[`nats:alpine3.22`](#natsalpine322)
 -	[`nats:latest`](#natslatest)
@@ -78,7 +78,7 @@
 ## `nats:2`
 
 ```console
-$ docker pull nats@sha256:d3e567e800a4912fc4f99d76b745133abb84d85d378d2fb7d7d118a56e2c815a
+$ docker pull nats@sha256:782ea26ae0ce156658ffc0ca0e78835673d29d05c4f1c01d297b9d6babe9a6b2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -100,174 +100,174 @@ $ docker pull nats@sha256:d3e567e800a4912fc4f99d76b745133abb84d85d378d2fb7d7d118
 ### `nats:2` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:409d49daf0939f5e7d8cde71d214d33af5f082a3f413399223dd0b08d2fc50aa
+$ docker pull nats@sha256:d6cb6ec885a324dca2b830829bf9d4c5e43d41279805ce67be044db0ec7fae56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6591138 bytes)**  
+-	Total Size: **6.6 MB (6598587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2aa68383287bc4011abbb0cda6516a3a4c06e62dd9d51014d5f83e7efff7e80`
+-	Image ID: `sha256:e5ec0ef7d756ea786e6deee1fb08986ad9ab7616b087e445e2b3c73bf7f2d347`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4acd967ddc02590a1f9db5c0ab104a521c3b01c4fc3ca5ced9eeff9ee3ba3c59`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.6 MB (6590629 bytes)  
+	-	`sha256:2f8912005071f27ea416bffea2294316df3b1b12b1e8346b2a1adcd792aa8496`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.6 MB (6598078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0103929f5e0e3db1b12e36e1aeff3c923eddff5d1968e3d0f22b3f7aa30ebba`  
-		Last Modified: Wed, 17 Dec 2025 20:01:31 GMT  
+	-	`sha256:05852294398b9aea33a8d9d248d324ee895e96dee6bfa8363653f16079ddac04`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a226abede1d8384071e63eb0257452b99108eaaea6501acd919580c2ec3e3232
+$ docker pull nats@sha256:a0f34e28b55652588fe8c7891ab83879808bee3cee9dbea0da32a6d4431fcc89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a153786df027a7d066c8f5784f26e41ed9689710d05d147a66218be1b4dd1fd8`
+-	Image ID: `sha256:8b2ed37d6666a700ae3e29116b15949d1ff6130503d9cf7d5eb2620f33e201a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89af6a462dd1e2f4e92326ee7e0ef9f89f947b5a380af7de2ddcacc09f645306`  
-		Last Modified: Wed, 17 Dec 2025 20:01:30 GMT  
+	-	`sha256:4e22704ce89be3ca5373eedf4cd92a430da69b69b5c4722a9b652a13f5009e01`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:3853bb8507245773d5a8ce05deea7cfd9f4da723b2c363480580cc012ca53270
+$ docker pull nats@sha256:f7799b4a822c5771e5d48f0f1c068ea2cec23162c6831f82d2b009b36a857e28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6313697 bytes)**  
+-	Total Size: **6.3 MB (6323105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93286d48902d584731e848087c653ac0a6d01e8425909fc66515ffaefe8acc14`
+-	Image ID: `sha256:370df6c853d90e83658a3dfb4c82a802848ff4f6b4522ba921e6a7ad306ef356`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:8c692c13a40e92100ded6771cbbc3a0d5bf2526f18f3fb0a48f15be60c2df82b`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.3 MB (6313188 bytes)  
+	-	`sha256:1efb0795d882364e2a023f0af5959b157fb2940eacdb92639318b205267c0ad4`  
+		Last Modified: Tue, 27 Jan 2026 16:11:11 GMT  
+		Size: 6.3 MB (6322595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a12d6f521214dc21cc2bcdc941aa35f4ec314380c729cdfdc42c3aa6d6bfc542
+$ docker pull nats@sha256:d73a9779831083ed543a3bd2f7e87c1dc8caec08ddac320cc7a25c94e648b157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaab9a175ebb399933d1c8ea3f50398dd348dcdf598f5424f2921569526e82d2`
+-	Image ID: `sha256:6301a8cfa90733ef8a35c4bde2ee64d946519b1026091f17c5e915f86a498204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43b1dc7d6b077ab1f2267d99aa3a71b675795ee1f57b76f8a7ecd3d05fcdd480`  
-		Last Modified: Wed, 17 Dec 2025 20:00:44 GMT  
+	-	`sha256:2e565ea89cf46f2c719698d7f99d288200307fbb51c38e98a8bde6c8102d0d23`  
+		Last Modified: Tue, 27 Jan 2026 21:09:50 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:e94a35025c028537959412b3781acd5c082d9d6128056903a36fd72303137cb5
+$ docker pull nats@sha256:488c6c4014617fff07b617db250920bcb069b5d712e4185c98c6387b2baa93e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6303727 bytes)**  
+-	Total Size: **6.3 MB (6310862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f76d4a21e40bc97da539f87250554131486a6b9c78c7f1cb563c0d439eca6ab`
+-	Image ID: `sha256:4b7a85a207a36665f5bc23045e4bba37e6a52dd82b9b57a47b543b28fe145b20`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.3 MB (6303218 bytes)  
+	-	`sha256:f89bd8d5669bd18e009b01f3649659381ff93c4199e64ffa25637a2739cba3a5`  
+		Last Modified: Tue, 27 Jan 2026 16:11:12 GMT  
+		Size: 6.3 MB (6310353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:6c736e7cdb0b623e13835c5b7f1ff18a1b684a47db62f5986b4a18586e605dd0`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b08b7fb4643e
+$ docker pull nats@sha256:9fd3d1e91e30c408f98d4afaaaa4bc75c40efeb43567518934829f6d0ac86556
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:effc5987cb319c0e4e830fe710b565d3b22924a14ccc2cf7c699563cf61c77cb`
+-	Image ID: `sha256:f8f796abff51fa066462285403989439d8035c748d22d1b340334a21cc658983`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:13865f9df2b0d2a106a6ff2b46ab7f923c9d9bcd479a551759a737f5ebcd44a1`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -332,117 +332,117 @@ $ docker pull nats@sha256:0686bfde4b19aeb60c7a324a5b424e778381949910a579bcd02b42
 ### `nats:2` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:c2b63aa758462e86058c91fe8401191b41043d2163a78fdec57519d4f0b49998
+$ docker pull nats@sha256:98765b2b71bf6daa662b7dbd1055075a97e9000f3758c6aceeb26c8cb5fd0e63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6053571 bytes)**  
+-	Total Size: **6.1 MB (6059945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08c2636ef42b619db39e1975f9b631869bc3c3b24489f7866a08171ddcc5033c`
+-	Image ID: `sha256:84f209e000ef99dbbbc6d350eb39ac8c75f5d40744f18ae5414c0c07e9e45655`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fff90457358766f5b735feb2d49e853cf695210b8abe6ba57edc0abce8282fd8`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.1 MB (6053063 bytes)  
+	-	`sha256:d7498e46ed99a6f25a5e161fffb2a10e547d3bd8f682806db51e70bf75c104d8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.1 MB (6059437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:589282b0ff2ad41789a44317f1ea281a1922d78ec8dbf8a031acc22733f31036`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d7d1570fb25ef2bda69d3d006ba8f47a5bd2a378411613cb7f881e8ab5078488
+$ docker pull nats@sha256:43af96803f49adc8aaa465d03d0dde41ee7e209f9a0e28947566a936727c49fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 KB (10513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed570c2ba4ccaf310e9bacf729785e05e597e250ef1e4f162cd4184a0794cf04`
+-	Image ID: `sha256:3421e3e523f67cbeb606c276691497e77d59a9afe368fac3dd2b77b44a4ceb58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91f2c07ab8052b7c97b473ee388d713a2cb3c94fbc741e2892b0a738632be01`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:e3c3d1d8ec6a07a1fc217e6f7df3eab02aa21e7017b3693f928a7360d8ac21a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 10.5 KB (10513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:28f34bed0a682b4aa4eedefde127516cf11d48fe189b5012061d4ceead86a883
+$ docker pull nats@sha256:ae3f7eac492fb3850591ee0580f6f26c3ab90fa4001072f347bbdea377021180
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6432293 bytes)**  
+-	Total Size: **6.4 MB (6439573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34db5d9b7c6ad05b3a0206e1c4bc40e08f029d7a4ceb4f9a193d6fef9f3705c9`
+-	Image ID: `sha256:4204c3fe6f38e529b9ab99128f4f71c742b5dddbec6d3fcdd784912c812e359d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f8e43cf01609735e89620aa1f85d5675eccdd17850b8f0944070d6fca83f5f31`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.4 MB (6431785 bytes)  
+	-	`sha256:647f636b2ba788fbcd64742e49cd42dbe55579be711374f52ac5c9e3bb6810d2`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.4 MB (6439063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 508.0 B  
+	-	`sha256:930f40f7174a2c941bc3d6fea3291abdd5910b116dc8976147ffe92096a2dc89`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:64a2cb9ff1e0f5b75e2e53f9f9ccbb96c66e914c524763620814e9606fef2057
+$ docker pull nats@sha256:363dcabc130a83ffdf947725601f3ff72e57b4ac101c352b9ca592bd1e8678da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 KB (10422 bytes)**  
+-	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e6c0882b54633cd5fdbda1ba2a5bcf53fc177361102c5052cb69a80692dbab2`
+-	Image ID: `sha256:d81e58884f9d9e0d8eb1b6185d44e98751a7fab46989c675f9307e30d5310c55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62f918a7cdeb02a6e02929e5b0c8f5dbe6366961c236880f3d712024736b37d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 10.4 KB (10422 bytes)  
+	-	`sha256:c10d7d82f5e8df9bd31c438ff05420d632a2ad10dcad8309a3de4d55d2196ce2`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2` - windows version 10.0.20348.4648; amd64
@@ -509,7 +509,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 ## `nats:2-alpine`
 
 ```console
-$ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23c446630957
+$ docker pull nats@sha256:5a34dc51990d868db43f3dd119ddac8b9fcfb7af02b3732fb39d8ba1ade2c627
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -530,13 +530,13 @@ $ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23
 ### `nats:2-alpine` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893845fc7c531
+$ docker pull nats@sha256:6acdaf5c4b4733d858941e822deb26cbe75086c1f41c2480dcda86ac103a977c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.9 MB (10857275 bytes)**  
+-	Total Size: **10.9 MB (10862551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aebde9629273b40e226b204120a5606fe7dcb22685a9055a5ba80442007efd76`
+-	Image ID: `sha256:a9258c2e3e241854fce198066b67bb5a84989b406cadd2a90a968d5523f1e05c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -545,21 +545,21 @@ $ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893
 ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -568,49 +568,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 7.1 MB (7053852 bytes)  
+	-	`sha256:cedccc65746b215235fc436d111f1f922b9cededdded50b4b8810d92589ad202`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 7.1 MB (7059130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a9ace510454a4fd702f8204904421136909dde3224b5edbd0bb24eee78482af`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 561.0 B  
+	-	`sha256:9612b455a56e18bccb84e093c667e6c5c5ace810ed4f40d92aa4ed0ca7fad231`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3a1fa25cb2dff28e7184ef3cafa056ed5da313facaac284acc63edb48c1e903`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 410.0 B  
+	-	`sha256:0250ff07e3bdfdc6a4253dff05da494df1b874005048990a3e2cf2fcfa012bc3`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:908602cc7648433a79c982fa1487bbfa25f4bf83f5fa56212f83553b121fd3c3
+$ docker pull nats@sha256:9b191ebe1c38dcdd740ff1d4bb194f7483cee453bc3080181736b8f869dd7003
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.4 KB (15404 bytes)**  
+-	Total Size: **15.4 KB (15403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84bb29d946c1469efd07d2b9665218b58f25678bc1de3425a1de33791c1113a9`
+-	Image ID: `sha256:b888d27fdc45fe68d2a29d2fc9660fb3b164659976c828922ebcd7c02737d248`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca80d84ada3fed13457e5c523b614750e1907b472a9e7531a569547387cddcc2`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 15.4 KB (15404 bytes)  
+	-	`sha256:9842806eadf12c2d37461bd3b40af07618af7574f01d0b3b942e00ea2a4d043a`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 15.4 KB (15403 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f8d0c7dce86
+$ docker pull nats@sha256:a25880f3fb1d3561ea4bacf110e5fd6d23d165d3cdb096bb98a2cf100f78598d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.3 MB (10278433 bytes)**  
+-	Total Size: **10.3 MB (10285793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480b8bd7178529c103d42255dbfd4adf72e60af511257a78f22a68453ab41b5f`
+-	Image ID: `sha256:9d1a1122f5dae285cb106f3c3b00146414a1973051302af466ee325b905519e7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -619,21 +619,21 @@ $ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f
 ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:09 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -642,49 +642,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 21:00:10 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
-		Size: 6.8 MB (6773381 bytes)  
+	-	`sha256:66465e3b7e0a1cdb3874701a0a2537b4dcb8042792d5dcf98baa4ddf97d352ad`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 6.8 MB (6780740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 560.0 B  
+	-	`sha256:14063ab2ee14aa70e7847f0c2b89dea724fe71097d3bbb363753797341e4784f`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6bac971b438fd7cceeb9b5c1eecda7a4f9d26ca326f9771ce86a90fa1cf21a6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
+	-	`sha256:ac8d1ebaa7052db55538e0cec4fae6ca5bb000d6525528dc6c725f3366421fd0`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:4ff7a4ef3c9ae84a97f274139f4d6dfef0d3a848303d156092b4f8002ecc4f5a
+$ docker pull nats@sha256:19396d8ceba09c3264a25ebfa9f50840835c3ec6607b50cd10beaa953a6b33e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ac6f34e0231323829f3011d461ab111cf13eb19476fc07dcecabf4752f902be`
+-	Image ID: `sha256:25ab23bc93d5a0ec67c651d02a9b994c99e766f53d0b812287fa917e7c6c5901`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3479597242ab0dfe5e61e6c1fe927d27e29e6e0acc2aeb5725c8854d5cb011c7`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:03c4b836e1aa562163bdc728fde907aa09502dab91be516aaea3e608ac0b9925`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b37b43f01637
+$ docker pull nats@sha256:1fb9a865bfddcc7ccf0352e443ec93c89e7fa56afc9746102ef4d4f09ccfdaef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.0 MB (9984798 bytes)**  
+-	Total Size: **10.0 MB (9992148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d08e24e4fa7242a20541ae75e9a7b66f43d04d2bbe01fa91d2e34c85c48087e`
+-	Image ID: `sha256:3c8aa27bf27091f7f6f72e5a0e094c585886298ba7ffaf91ce2df0a45f59821d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -693,21 +693,21 @@ $ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b3
 ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -716,37 +716,37 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 6.8 MB (6762271 bytes)  
+	-	`sha256:007c47b99e0f8ce3eb6487d084a37b69fd666c17f8a6b58b94bc9f382892ef51`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 6.8 MB (6769622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+	-	`sha256:f3c997d67c56839e0314ea6f55308216a5ba43a5f40975da43014f9f32a17383`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 411.0 B  
+	-	`sha256:4053d67b823eb88b56d135755dd578f459b818b41c680f8745f7222978bccb36`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6ef109d4281
+$ docker pull nats@sha256:67e81a213cea4e248950c0208b0171d9004620ef41586d08d0868faa707c4288
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c95dce61236e2d9649b8422a65f23f1910f61b9f45bc5d221b66daa5a33cf2d`
+-	Image ID: `sha256:6ce733992685dbdda0460298fc9ac280734e4f8bc06f15ae66da0d996cbd4b7f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:3e3db6f7c70dc8fb02d9849c24bf4d65a552cf352d7921ac590406bb96384fb9`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-alpine` - linux; arm64 variant v8
@@ -826,13 +826,13 @@ $ docker pull nats@sha256:7dc6fbe8dce46b22212fd2304d64155b7b78495d05763821a8688e
 ### `nats:2-alpine` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae09abc7d7dcc
+$ docker pull nats@sha256:4f96ccac99bd215fc4064d5d3592ea9f8fe39d5df504756ee420ac1fa0b3fb26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10244174 bytes)**  
+-	Total Size: **10.3 MB (10252278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e7359a2b492fe228465c4dba600737214e56133945e97921941eff2ae5546b1`
+-	Image ID: `sha256:7d6fe54daa6ec7b97b23c158221a59b2b57045573d3e57581b68c3fa0e3bce0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -841,21 +841,21 @@ $ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae0
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:01 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:01 GMT
+# Tue, 27 Jan 2026 21:06:51 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:06:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -864,49 +864,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f0f141df1060290bea337dd410f443f266f697c0f6e1906a6a9e0d258becc78`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 6.5 MB (6510964 bytes)  
+	-	`sha256:77c3493b9579716670251c20f0ae944646efba9da30cdec49372112973d45a46`  
+		Last Modified: Tue, 27 Jan 2026 21:07:06 GMT  
+		Size: 6.5 MB (6519066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 560.0 B  
+	-	`sha256:dcf0f099d527269dc43593793ecaadda88e477182e35413d281eae5fca8edcd9`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 409.0 B  
+	-	`sha256:3d81715261f9c8109cdf9b0d19000e23c890a8230df8e1249fb38dfcc69818e5`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:2863d02373bc1aae9fb72d2ad9ee57b8990eadaf19e89a23de445b9ff8178f50
+$ docker pull nats@sha256:72f960c82b4c420a40dfae4802ee5aa8eb4f8ead833b62354411bebb2bd3794e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.5 KB (15472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d698c5b2b274ea9660ca1554c7b356edd3d3442acd18a0af1c5f89f197efb0cc`
+-	Image ID: `sha256:e06a9d3df0114f3d556457c95e701fc6f90c0a3839136f138f39e337547eee57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:09d997d1b12e4765cde5053a09e9d2a2df28a6bc8a91b206c57708bef5c8a5c6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+	-	`sha256:4d13bd95f79301e5d85c253329f6f5a8f2b5ace279ce58b31f6cb5c285fbeb10`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
 		Size: 15.5 KB (15472 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-alpine` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff44bffaba7d
+$ docker pull nats@sha256:2f19c27f1889b1ffc8dad6d7ecd70041c83e0b4ecc313559a9f4fca6992897a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10543399 bytes)**  
+-	Total Size: **10.6 MB (10550093 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:318709468ae0d2602381d156b7fff5eeeeeba6ad7862fcc729a4f3308dff11b7`
+-	Image ID: `sha256:163c65a520d622326b98b9ff14ad55e811352abe2e51087903bd5c3c4195ded9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -915,21 +915,21 @@ $ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff
 ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -938,43 +938,43 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 6.9 MB (6893186 bytes)  
+	-	`sha256:3ffbbf76e52abfb81f8bc89754993837553e371cf5864cdca0db08db1e8f98e4`  
+		Last Modified: Tue, 27 Jan 2026 21:00:43 GMT  
+		Size: 6.9 MB (6899878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 560.0 B  
+	-	`sha256:a18be5970dc3e7111ad95a8d4f05c2c2f38c435145987df50136cd5d9e1fd6ef`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 409.0 B  
+	-	`sha256:eea584e8cb60bc5c8e464aa5e067bf25fdc4391ebc09e338f3349572d1607539`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c687f30de32c7
+$ docker pull nats@sha256:ef61b1dcadfe395d1d0850cc16c69650cd3e13a1428075cc8fa916e2d27d61a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.4 KB (15404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5f53ce608591b7cc05772e01835f036e81338ec31761c2fc3747374c12b617e`
+-	Image ID: `sha256:dd4bfa08ab003a58bf52f0d3d2521a27e633e9b5a0c9005020be8cff01d41932`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+	-	`sha256:6ece1efeec3d19253c74d61a50f96cf8dbd2f00f7ee5b08521901a7327ba73ba`  
+		Last Modified: Tue, 27 Jan 2026 21:00:38 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:2-alpine3.22`
 
 ```console
-$ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23c446630957
+$ docker pull nats@sha256:5a34dc51990d868db43f3dd119ddac8b9fcfb7af02b3732fb39d8ba1ade2c627
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -995,13 +995,13 @@ $ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23
 ### `nats:2-alpine3.22` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893845fc7c531
+$ docker pull nats@sha256:6acdaf5c4b4733d858941e822deb26cbe75086c1f41c2480dcda86ac103a977c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.9 MB (10857275 bytes)**  
+-	Total Size: **10.9 MB (10862551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aebde9629273b40e226b204120a5606fe7dcb22685a9055a5ba80442007efd76`
+-	Image ID: `sha256:a9258c2e3e241854fce198066b67bb5a84989b406cadd2a90a968d5523f1e05c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -1010,21 +1010,21 @@ $ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893
 ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -1033,49 +1033,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 7.1 MB (7053852 bytes)  
+	-	`sha256:cedccc65746b215235fc436d111f1f922b9cededdded50b4b8810d92589ad202`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 7.1 MB (7059130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a9ace510454a4fd702f8204904421136909dde3224b5edbd0bb24eee78482af`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 561.0 B  
+	-	`sha256:9612b455a56e18bccb84e093c667e6c5c5ace810ed4f40d92aa4ed0ca7fad231`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3a1fa25cb2dff28e7184ef3cafa056ed5da313facaac284acc63edb48c1e903`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 410.0 B  
+	-	`sha256:0250ff07e3bdfdc6a4253dff05da494df1b874005048990a3e2cf2fcfa012bc3`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:908602cc7648433a79c982fa1487bbfa25f4bf83f5fa56212f83553b121fd3c3
+$ docker pull nats@sha256:9b191ebe1c38dcdd740ff1d4bb194f7483cee453bc3080181736b8f869dd7003
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.4 KB (15404 bytes)**  
+-	Total Size: **15.4 KB (15403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84bb29d946c1469efd07d2b9665218b58f25678bc1de3425a1de33791c1113a9`
+-	Image ID: `sha256:b888d27fdc45fe68d2a29d2fc9660fb3b164659976c828922ebcd7c02737d248`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca80d84ada3fed13457e5c523b614750e1907b472a9e7531a569547387cddcc2`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 15.4 KB (15404 bytes)  
+	-	`sha256:9842806eadf12c2d37461bd3b40af07618af7574f01d0b3b942e00ea2a4d043a`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 15.4 KB (15403 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-alpine3.22` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f8d0c7dce86
+$ docker pull nats@sha256:a25880f3fb1d3561ea4bacf110e5fd6d23d165d3cdb096bb98a2cf100f78598d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.3 MB (10278433 bytes)**  
+-	Total Size: **10.3 MB (10285793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480b8bd7178529c103d42255dbfd4adf72e60af511257a78f22a68453ab41b5f`
+-	Image ID: `sha256:9d1a1122f5dae285cb106f3c3b00146414a1973051302af466ee325b905519e7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -1084,21 +1084,21 @@ $ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f
 ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:09 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -1107,49 +1107,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 21:00:10 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
-		Size: 6.8 MB (6773381 bytes)  
+	-	`sha256:66465e3b7e0a1cdb3874701a0a2537b4dcb8042792d5dcf98baa4ddf97d352ad`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 6.8 MB (6780740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 560.0 B  
+	-	`sha256:14063ab2ee14aa70e7847f0c2b89dea724fe71097d3bbb363753797341e4784f`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6bac971b438fd7cceeb9b5c1eecda7a4f9d26ca326f9771ce86a90fa1cf21a6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
+	-	`sha256:ac8d1ebaa7052db55538e0cec4fae6ca5bb000d6525528dc6c725f3366421fd0`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:4ff7a4ef3c9ae84a97f274139f4d6dfef0d3a848303d156092b4f8002ecc4f5a
+$ docker pull nats@sha256:19396d8ceba09c3264a25ebfa9f50840835c3ec6607b50cd10beaa953a6b33e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ac6f34e0231323829f3011d461ab111cf13eb19476fc07dcecabf4752f902be`
+-	Image ID: `sha256:25ab23bc93d5a0ec67c651d02a9b994c99e766f53d0b812287fa917e7c6c5901`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3479597242ab0dfe5e61e6c1fe927d27e29e6e0acc2aeb5725c8854d5cb011c7`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:03c4b836e1aa562163bdc728fde907aa09502dab91be516aaea3e608ac0b9925`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-alpine3.22` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b37b43f01637
+$ docker pull nats@sha256:1fb9a865bfddcc7ccf0352e443ec93c89e7fa56afc9746102ef4d4f09ccfdaef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.0 MB (9984798 bytes)**  
+-	Total Size: **10.0 MB (9992148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d08e24e4fa7242a20541ae75e9a7b66f43d04d2bbe01fa91d2e34c85c48087e`
+-	Image ID: `sha256:3c8aa27bf27091f7f6f72e5a0e094c585886298ba7ffaf91ce2df0a45f59821d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -1158,21 +1158,21 @@ $ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b3
 ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -1181,37 +1181,37 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 6.8 MB (6762271 bytes)  
+	-	`sha256:007c47b99e0f8ce3eb6487d084a37b69fd666c17f8a6b58b94bc9f382892ef51`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 6.8 MB (6769622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+	-	`sha256:f3c997d67c56839e0314ea6f55308216a5ba43a5f40975da43014f9f32a17383`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 411.0 B  
+	-	`sha256:4053d67b823eb88b56d135755dd578f459b818b41c680f8745f7222978bccb36`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6ef109d4281
+$ docker pull nats@sha256:67e81a213cea4e248950c0208b0171d9004620ef41586d08d0868faa707c4288
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c95dce61236e2d9649b8422a65f23f1910f61b9f45bc5d221b66daa5a33cf2d`
+-	Image ID: `sha256:6ce733992685dbdda0460298fc9ac280734e4f8bc06f15ae66da0d996cbd4b7f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:3e3db6f7c70dc8fb02d9849c24bf4d65a552cf352d7921ac590406bb96384fb9`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-alpine3.22` - linux; arm64 variant v8
@@ -1291,13 +1291,13 @@ $ docker pull nats@sha256:7dc6fbe8dce46b22212fd2304d64155b7b78495d05763821a8688e
 ### `nats:2-alpine3.22` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae09abc7d7dcc
+$ docker pull nats@sha256:4f96ccac99bd215fc4064d5d3592ea9f8fe39d5df504756ee420ac1fa0b3fb26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10244174 bytes)**  
+-	Total Size: **10.3 MB (10252278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e7359a2b492fe228465c4dba600737214e56133945e97921941eff2ae5546b1`
+-	Image ID: `sha256:7d6fe54daa6ec7b97b23c158221a59b2b57045573d3e57581b68c3fa0e3bce0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -1306,21 +1306,21 @@ $ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae0
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:01 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:01 GMT
+# Tue, 27 Jan 2026 21:06:51 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:06:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -1329,49 +1329,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f0f141df1060290bea337dd410f443f266f697c0f6e1906a6a9e0d258becc78`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 6.5 MB (6510964 bytes)  
+	-	`sha256:77c3493b9579716670251c20f0ae944646efba9da30cdec49372112973d45a46`  
+		Last Modified: Tue, 27 Jan 2026 21:07:06 GMT  
+		Size: 6.5 MB (6519066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 560.0 B  
+	-	`sha256:dcf0f099d527269dc43593793ecaadda88e477182e35413d281eae5fca8edcd9`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 409.0 B  
+	-	`sha256:3d81715261f9c8109cdf9b0d19000e23c890a8230df8e1249fb38dfcc69818e5`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:2863d02373bc1aae9fb72d2ad9ee57b8990eadaf19e89a23de445b9ff8178f50
+$ docker pull nats@sha256:72f960c82b4c420a40dfae4802ee5aa8eb4f8ead833b62354411bebb2bd3794e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.5 KB (15472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d698c5b2b274ea9660ca1554c7b356edd3d3442acd18a0af1c5f89f197efb0cc`
+-	Image ID: `sha256:e06a9d3df0114f3d556457c95e701fc6f90c0a3839136f138f39e337547eee57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:09d997d1b12e4765cde5053a09e9d2a2df28a6bc8a91b206c57708bef5c8a5c6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+	-	`sha256:4d13bd95f79301e5d85c253329f6f5a8f2b5ace279ce58b31f6cb5c285fbeb10`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
 		Size: 15.5 KB (15472 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-alpine3.22` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff44bffaba7d
+$ docker pull nats@sha256:2f19c27f1889b1ffc8dad6d7ecd70041c83e0b4ecc313559a9f4fca6992897a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10543399 bytes)**  
+-	Total Size: **10.6 MB (10550093 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:318709468ae0d2602381d156b7fff5eeeeeba6ad7862fcc729a4f3308dff11b7`
+-	Image ID: `sha256:163c65a520d622326b98b9ff14ad55e811352abe2e51087903bd5c3c4195ded9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -1380,21 +1380,21 @@ $ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff
 ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -1403,43 +1403,43 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 6.9 MB (6893186 bytes)  
+	-	`sha256:3ffbbf76e52abfb81f8bc89754993837553e371cf5864cdca0db08db1e8f98e4`  
+		Last Modified: Tue, 27 Jan 2026 21:00:43 GMT  
+		Size: 6.9 MB (6899878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 560.0 B  
+	-	`sha256:a18be5970dc3e7111ad95a8d4f05c2c2f38c435145987df50136cd5d9e1fd6ef`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 409.0 B  
+	-	`sha256:eea584e8cb60bc5c8e464aa5e067bf25fdc4391ebc09e338f3349572d1607539`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c687f30de32c7
+$ docker pull nats@sha256:ef61b1dcadfe395d1d0850cc16c69650cd3e13a1428075cc8fa916e2d27d61a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.4 KB (15404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5f53ce608591b7cc05772e01835f036e81338ec31761c2fc3747374c12b617e`
+-	Image ID: `sha256:dd4bfa08ab003a58bf52f0d3d2521a27e633e9b5a0c9005020be8cff01d41932`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+	-	`sha256:6ece1efeec3d19253c74d61a50f96cf8dbd2f00f7ee5b08521901a7327ba73ba`  
+		Last Modified: Tue, 27 Jan 2026 21:00:38 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:2-linux`
 
 ```console
-$ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b157e5844f92c
+$ docker pull nats@sha256:5b7d13172083effa3c82f40fb7376dad504d86381fa048babc194a13f64e3d74
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1460,174 +1460,174 @@ $ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b15
 ### `nats:2-linux` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:409d49daf0939f5e7d8cde71d214d33af5f082a3f413399223dd0b08d2fc50aa
+$ docker pull nats@sha256:d6cb6ec885a324dca2b830829bf9d4c5e43d41279805ce67be044db0ec7fae56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6591138 bytes)**  
+-	Total Size: **6.6 MB (6598587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2aa68383287bc4011abbb0cda6516a3a4c06e62dd9d51014d5f83e7efff7e80`
+-	Image ID: `sha256:e5ec0ef7d756ea786e6deee1fb08986ad9ab7616b087e445e2b3c73bf7f2d347`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4acd967ddc02590a1f9db5c0ab104a521c3b01c4fc3ca5ced9eeff9ee3ba3c59`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.6 MB (6590629 bytes)  
+	-	`sha256:2f8912005071f27ea416bffea2294316df3b1b12b1e8346b2a1adcd792aa8496`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.6 MB (6598078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0103929f5e0e3db1b12e36e1aeff3c923eddff5d1968e3d0f22b3f7aa30ebba`  
-		Last Modified: Wed, 17 Dec 2025 20:01:31 GMT  
+	-	`sha256:05852294398b9aea33a8d9d248d324ee895e96dee6bfa8363653f16079ddac04`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a226abede1d8384071e63eb0257452b99108eaaea6501acd919580c2ec3e3232
+$ docker pull nats@sha256:a0f34e28b55652588fe8c7891ab83879808bee3cee9dbea0da32a6d4431fcc89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a153786df027a7d066c8f5784f26e41ed9689710d05d147a66218be1b4dd1fd8`
+-	Image ID: `sha256:8b2ed37d6666a700ae3e29116b15949d1ff6130503d9cf7d5eb2620f33e201a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89af6a462dd1e2f4e92326ee7e0ef9f89f947b5a380af7de2ddcacc09f645306`  
-		Last Modified: Wed, 17 Dec 2025 20:01:30 GMT  
+	-	`sha256:4e22704ce89be3ca5373eedf4cd92a430da69b69b5c4722a9b652a13f5009e01`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-linux` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:3853bb8507245773d5a8ce05deea7cfd9f4da723b2c363480580cc012ca53270
+$ docker pull nats@sha256:f7799b4a822c5771e5d48f0f1c068ea2cec23162c6831f82d2b009b36a857e28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6313697 bytes)**  
+-	Total Size: **6.3 MB (6323105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93286d48902d584731e848087c653ac0a6d01e8425909fc66515ffaefe8acc14`
+-	Image ID: `sha256:370df6c853d90e83658a3dfb4c82a802848ff4f6b4522ba921e6a7ad306ef356`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:8c692c13a40e92100ded6771cbbc3a0d5bf2526f18f3fb0a48f15be60c2df82b`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.3 MB (6313188 bytes)  
+	-	`sha256:1efb0795d882364e2a023f0af5959b157fb2940eacdb92639318b205267c0ad4`  
+		Last Modified: Tue, 27 Jan 2026 16:11:11 GMT  
+		Size: 6.3 MB (6322595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a12d6f521214dc21cc2bcdc941aa35f4ec314380c729cdfdc42c3aa6d6bfc542
+$ docker pull nats@sha256:d73a9779831083ed543a3bd2f7e87c1dc8caec08ddac320cc7a25c94e648b157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaab9a175ebb399933d1c8ea3f50398dd348dcdf598f5424f2921569526e82d2`
+-	Image ID: `sha256:6301a8cfa90733ef8a35c4bde2ee64d946519b1026091f17c5e915f86a498204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43b1dc7d6b077ab1f2267d99aa3a71b675795ee1f57b76f8a7ecd3d05fcdd480`  
-		Last Modified: Wed, 17 Dec 2025 20:00:44 GMT  
+	-	`sha256:2e565ea89cf46f2c719698d7f99d288200307fbb51c38e98a8bde6c8102d0d23`  
+		Last Modified: Tue, 27 Jan 2026 21:09:50 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-linux` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:e94a35025c028537959412b3781acd5c082d9d6128056903a36fd72303137cb5
+$ docker pull nats@sha256:488c6c4014617fff07b617db250920bcb069b5d712e4185c98c6387b2baa93e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6303727 bytes)**  
+-	Total Size: **6.3 MB (6310862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f76d4a21e40bc97da539f87250554131486a6b9c78c7f1cb563c0d439eca6ab`
+-	Image ID: `sha256:4b7a85a207a36665f5bc23045e4bba37e6a52dd82b9b57a47b543b28fe145b20`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.3 MB (6303218 bytes)  
+	-	`sha256:f89bd8d5669bd18e009b01f3649659381ff93c4199e64ffa25637a2739cba3a5`  
+		Last Modified: Tue, 27 Jan 2026 16:11:12 GMT  
+		Size: 6.3 MB (6310353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:6c736e7cdb0b623e13835c5b7f1ff18a1b684a47db62f5986b4a18586e605dd0`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b08b7fb4643e
+$ docker pull nats@sha256:9fd3d1e91e30c408f98d4afaaaa4bc75c40efeb43567518934829f6d0ac86556
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:effc5987cb319c0e4e830fe710b565d3b22924a14ccc2cf7c699563cf61c77cb`
+-	Image ID: `sha256:f8f796abff51fa066462285403989439d8035c748d22d1b340334a21cc658983`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:13865f9df2b0d2a106a6ff2b46ab7f923c9d9bcd479a551759a737f5ebcd44a1`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1692,117 +1692,117 @@ $ docker pull nats@sha256:0686bfde4b19aeb60c7a324a5b424e778381949910a579bcd02b42
 ### `nats:2-linux` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:c2b63aa758462e86058c91fe8401191b41043d2163a78fdec57519d4f0b49998
+$ docker pull nats@sha256:98765b2b71bf6daa662b7dbd1055075a97e9000f3758c6aceeb26c8cb5fd0e63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6053571 bytes)**  
+-	Total Size: **6.1 MB (6059945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08c2636ef42b619db39e1975f9b631869bc3c3b24489f7866a08171ddcc5033c`
+-	Image ID: `sha256:84f209e000ef99dbbbc6d350eb39ac8c75f5d40744f18ae5414c0c07e9e45655`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fff90457358766f5b735feb2d49e853cf695210b8abe6ba57edc0abce8282fd8`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.1 MB (6053063 bytes)  
+	-	`sha256:d7498e46ed99a6f25a5e161fffb2a10e547d3bd8f682806db51e70bf75c104d8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.1 MB (6059437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:589282b0ff2ad41789a44317f1ea281a1922d78ec8dbf8a031acc22733f31036`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d7d1570fb25ef2bda69d3d006ba8f47a5bd2a378411613cb7f881e8ab5078488
+$ docker pull nats@sha256:43af96803f49adc8aaa465d03d0dde41ee7e209f9a0e28947566a936727c49fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 KB (10513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed570c2ba4ccaf310e9bacf729785e05e597e250ef1e4f162cd4184a0794cf04`
+-	Image ID: `sha256:3421e3e523f67cbeb606c276691497e77d59a9afe368fac3dd2b77b44a4ceb58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91f2c07ab8052b7c97b473ee388d713a2cb3c94fbc741e2892b0a738632be01`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:e3c3d1d8ec6a07a1fc217e6f7df3eab02aa21e7017b3693f928a7360d8ac21a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 10.5 KB (10513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-linux` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:28f34bed0a682b4aa4eedefde127516cf11d48fe189b5012061d4ceead86a883
+$ docker pull nats@sha256:ae3f7eac492fb3850591ee0580f6f26c3ab90fa4001072f347bbdea377021180
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6432293 bytes)**  
+-	Total Size: **6.4 MB (6439573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34db5d9b7c6ad05b3a0206e1c4bc40e08f029d7a4ceb4f9a193d6fef9f3705c9`
+-	Image ID: `sha256:4204c3fe6f38e529b9ab99128f4f71c742b5dddbec6d3fcdd784912c812e359d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f8e43cf01609735e89620aa1f85d5675eccdd17850b8f0944070d6fca83f5f31`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.4 MB (6431785 bytes)  
+	-	`sha256:647f636b2ba788fbcd64742e49cd42dbe55579be711374f52ac5c9e3bb6810d2`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.4 MB (6439063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 508.0 B  
+	-	`sha256:930f40f7174a2c941bc3d6fea3291abdd5910b116dc8976147ffe92096a2dc89`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:64a2cb9ff1e0f5b75e2e53f9f9ccbb96c66e914c524763620814e9606fef2057
+$ docker pull nats@sha256:363dcabc130a83ffdf947725601f3ff72e57b4ac101c352b9ca592bd1e8678da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 KB (10422 bytes)**  
+-	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e6c0882b54633cd5fdbda1ba2a5bcf53fc177361102c5052cb69a80692dbab2`
+-	Image ID: `sha256:d81e58884f9d9e0d8eb1b6185d44e98751a7fab46989c675f9307e30d5310c55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62f918a7cdeb02a6e02929e5b0c8f5dbe6366961c236880f3d712024736b37d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 10.4 KB (10422 bytes)  
+	-	`sha256:c10d7d82f5e8df9bd31c438ff05420d632a2ad10dcad8309a3de4d55d2196ce2`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:2-nanoserver`
@@ -1950,7 +1950,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 ## `nats:2-scratch`
 
 ```console
-$ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b157e5844f92c
+$ docker pull nats@sha256:5b7d13172083effa3c82f40fb7376dad504d86381fa048babc194a13f64e3d74
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1971,174 +1971,174 @@ $ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b15
 ### `nats:2-scratch` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:409d49daf0939f5e7d8cde71d214d33af5f082a3f413399223dd0b08d2fc50aa
+$ docker pull nats@sha256:d6cb6ec885a324dca2b830829bf9d4c5e43d41279805ce67be044db0ec7fae56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6591138 bytes)**  
+-	Total Size: **6.6 MB (6598587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2aa68383287bc4011abbb0cda6516a3a4c06e62dd9d51014d5f83e7efff7e80`
+-	Image ID: `sha256:e5ec0ef7d756ea786e6deee1fb08986ad9ab7616b087e445e2b3c73bf7f2d347`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4acd967ddc02590a1f9db5c0ab104a521c3b01c4fc3ca5ced9eeff9ee3ba3c59`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.6 MB (6590629 bytes)  
+	-	`sha256:2f8912005071f27ea416bffea2294316df3b1b12b1e8346b2a1adcd792aa8496`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.6 MB (6598078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0103929f5e0e3db1b12e36e1aeff3c923eddff5d1968e3d0f22b3f7aa30ebba`  
-		Last Modified: Wed, 17 Dec 2025 20:01:31 GMT  
+	-	`sha256:05852294398b9aea33a8d9d248d324ee895e96dee6bfa8363653f16079ddac04`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a226abede1d8384071e63eb0257452b99108eaaea6501acd919580c2ec3e3232
+$ docker pull nats@sha256:a0f34e28b55652588fe8c7891ab83879808bee3cee9dbea0da32a6d4431fcc89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a153786df027a7d066c8f5784f26e41ed9689710d05d147a66218be1b4dd1fd8`
+-	Image ID: `sha256:8b2ed37d6666a700ae3e29116b15949d1ff6130503d9cf7d5eb2620f33e201a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89af6a462dd1e2f4e92326ee7e0ef9f89f947b5a380af7de2ddcacc09f645306`  
-		Last Modified: Wed, 17 Dec 2025 20:01:30 GMT  
+	-	`sha256:4e22704ce89be3ca5373eedf4cd92a430da69b69b5c4722a9b652a13f5009e01`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-scratch` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:3853bb8507245773d5a8ce05deea7cfd9f4da723b2c363480580cc012ca53270
+$ docker pull nats@sha256:f7799b4a822c5771e5d48f0f1c068ea2cec23162c6831f82d2b009b36a857e28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6313697 bytes)**  
+-	Total Size: **6.3 MB (6323105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93286d48902d584731e848087c653ac0a6d01e8425909fc66515ffaefe8acc14`
+-	Image ID: `sha256:370df6c853d90e83658a3dfb4c82a802848ff4f6b4522ba921e6a7ad306ef356`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:8c692c13a40e92100ded6771cbbc3a0d5bf2526f18f3fb0a48f15be60c2df82b`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.3 MB (6313188 bytes)  
+	-	`sha256:1efb0795d882364e2a023f0af5959b157fb2940eacdb92639318b205267c0ad4`  
+		Last Modified: Tue, 27 Jan 2026 16:11:11 GMT  
+		Size: 6.3 MB (6322595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a12d6f521214dc21cc2bcdc941aa35f4ec314380c729cdfdc42c3aa6d6bfc542
+$ docker pull nats@sha256:d73a9779831083ed543a3bd2f7e87c1dc8caec08ddac320cc7a25c94e648b157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaab9a175ebb399933d1c8ea3f50398dd348dcdf598f5424f2921569526e82d2`
+-	Image ID: `sha256:6301a8cfa90733ef8a35c4bde2ee64d946519b1026091f17c5e915f86a498204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43b1dc7d6b077ab1f2267d99aa3a71b675795ee1f57b76f8a7ecd3d05fcdd480`  
-		Last Modified: Wed, 17 Dec 2025 20:00:44 GMT  
+	-	`sha256:2e565ea89cf46f2c719698d7f99d288200307fbb51c38e98a8bde6c8102d0d23`  
+		Last Modified: Tue, 27 Jan 2026 21:09:50 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-scratch` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:e94a35025c028537959412b3781acd5c082d9d6128056903a36fd72303137cb5
+$ docker pull nats@sha256:488c6c4014617fff07b617db250920bcb069b5d712e4185c98c6387b2baa93e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6303727 bytes)**  
+-	Total Size: **6.3 MB (6310862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f76d4a21e40bc97da539f87250554131486a6b9c78c7f1cb563c0d439eca6ab`
+-	Image ID: `sha256:4b7a85a207a36665f5bc23045e4bba37e6a52dd82b9b57a47b543b28fe145b20`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.3 MB (6303218 bytes)  
+	-	`sha256:f89bd8d5669bd18e009b01f3649659381ff93c4199e64ffa25637a2739cba3a5`  
+		Last Modified: Tue, 27 Jan 2026 16:11:12 GMT  
+		Size: 6.3 MB (6310353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:6c736e7cdb0b623e13835c5b7f1ff18a1b684a47db62f5986b4a18586e605dd0`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b08b7fb4643e
+$ docker pull nats@sha256:9fd3d1e91e30c408f98d4afaaaa4bc75c40efeb43567518934829f6d0ac86556
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:effc5987cb319c0e4e830fe710b565d3b22924a14ccc2cf7c699563cf61c77cb`
+-	Image ID: `sha256:f8f796abff51fa066462285403989439d8035c748d22d1b340334a21cc658983`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:13865f9df2b0d2a106a6ff2b46ab7f923c9d9bcd479a551759a737f5ebcd44a1`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2203,123 +2203,123 @@ $ docker pull nats@sha256:0686bfde4b19aeb60c7a324a5b424e778381949910a579bcd02b42
 ### `nats:2-scratch` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:c2b63aa758462e86058c91fe8401191b41043d2163a78fdec57519d4f0b49998
+$ docker pull nats@sha256:98765b2b71bf6daa662b7dbd1055075a97e9000f3758c6aceeb26c8cb5fd0e63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6053571 bytes)**  
+-	Total Size: **6.1 MB (6059945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08c2636ef42b619db39e1975f9b631869bc3c3b24489f7866a08171ddcc5033c`
+-	Image ID: `sha256:84f209e000ef99dbbbc6d350eb39ac8c75f5d40744f18ae5414c0c07e9e45655`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fff90457358766f5b735feb2d49e853cf695210b8abe6ba57edc0abce8282fd8`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.1 MB (6053063 bytes)  
+	-	`sha256:d7498e46ed99a6f25a5e161fffb2a10e547d3bd8f682806db51e70bf75c104d8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.1 MB (6059437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:589282b0ff2ad41789a44317f1ea281a1922d78ec8dbf8a031acc22733f31036`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d7d1570fb25ef2bda69d3d006ba8f47a5bd2a378411613cb7f881e8ab5078488
+$ docker pull nats@sha256:43af96803f49adc8aaa465d03d0dde41ee7e209f9a0e28947566a936727c49fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 KB (10513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed570c2ba4ccaf310e9bacf729785e05e597e250ef1e4f162cd4184a0794cf04`
+-	Image ID: `sha256:3421e3e523f67cbeb606c276691497e77d59a9afe368fac3dd2b77b44a4ceb58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91f2c07ab8052b7c97b473ee388d713a2cb3c94fbc741e2892b0a738632be01`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:e3c3d1d8ec6a07a1fc217e6f7df3eab02aa21e7017b3693f928a7360d8ac21a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 10.5 KB (10513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-scratch` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:28f34bed0a682b4aa4eedefde127516cf11d48fe189b5012061d4ceead86a883
+$ docker pull nats@sha256:ae3f7eac492fb3850591ee0580f6f26c3ab90fa4001072f347bbdea377021180
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6432293 bytes)**  
+-	Total Size: **6.4 MB (6439573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34db5d9b7c6ad05b3a0206e1c4bc40e08f029d7a4ceb4f9a193d6fef9f3705c9`
+-	Image ID: `sha256:4204c3fe6f38e529b9ab99128f4f71c742b5dddbec6d3fcdd784912c812e359d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f8e43cf01609735e89620aa1f85d5675eccdd17850b8f0944070d6fca83f5f31`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.4 MB (6431785 bytes)  
+	-	`sha256:647f636b2ba788fbcd64742e49cd42dbe55579be711374f52ac5c9e3bb6810d2`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.4 MB (6439063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 508.0 B  
+	-	`sha256:930f40f7174a2c941bc3d6fea3291abdd5910b116dc8976147ffe92096a2dc89`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:64a2cb9ff1e0f5b75e2e53f9f9ccbb96c66e914c524763620814e9606fef2057
+$ docker pull nats@sha256:363dcabc130a83ffdf947725601f3ff72e57b4ac101c352b9ca592bd1e8678da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 KB (10422 bytes)**  
+-	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e6c0882b54633cd5fdbda1ba2a5bcf53fc177361102c5052cb69a80692dbab2`
+-	Image ID: `sha256:d81e58884f9d9e0d8eb1b6185d44e98751a7fab46989c675f9307e30d5310c55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62f918a7cdeb02a6e02929e5b0c8f5dbe6366961c236880f3d712024736b37d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 10.4 KB (10422 bytes)  
+	-	`sha256:c10d7d82f5e8df9bd31c438ff05420d632a2ad10dcad8309a3de4d55d2196ce2`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:2-windowsservercore`
 
 ```console
-$ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78caac84949fd
+$ docker pull nats@sha256:25233863901918872bf17b591083767ce1faeefc993a94cfc1b17bf516664a72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2329,14 +2329,14 @@ $ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78c
 ### `nats:2-windowsservercore` - windows version 10.0.20348.4648; amd64
 
 ```console
-$ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1b9dcd1eaa1
+$ docker pull nats@sha256:85686b0c19dc2cf95ddcbfe8a4cd19da2d2cd35f0ec50058780642e0d2a2dade
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1843284696 bytes)**  
+-	Total Size: **1.8 GB (1843326026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2afac6b75ab215d5e5d8bdd43e3e79eb1483fe051ede8f22cca4fd30bd1bdd6c`
+-	Image ID: `sha256:350724f2d07f8320ce38c7c37d1836d561c501d51842a5a2294c05c286633391`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -2346,29 +2346,29 @@ $ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1
 RUN Apply image 10.0.20348.4294
 # Fri, 09 Jan 2026 00:11:24 GMT
 RUN Install update 10.0.20348.4648
-# Tue, 13 Jan 2026 23:01:41 GMT
+# Tue, 27 Jan 2026 21:02:17 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 13 Jan 2026 23:01:42 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:01:42 GMT
-ENV NATS_SERVER=2.12.3
-# Tue, 13 Jan 2026 23:01:43 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Tue, 13 Jan 2026 23:01:44 GMT
-ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.3/nats-server-v2.12.3-windows-amd64.zip
-# Tue, 13 Jan 2026 23:01:45 GMT
-ENV NATS_SERVER_SHASUM=33cab92d3113cc5c209773748efdd910b85db49493716b31e74df80c659b83f0
-# Tue, 13 Jan 2026 23:01:52 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:02:20 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:02:21 GMT
+ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.4/nats-server-v2.12.4-windows-amd64.zip
+# Tue, 27 Jan 2026 21:02:22 GMT
+ENV NATS_SERVER_SHASUM=99efb643ef399299ed5736e4fc7220551e8450fe9351adc3c2f678b5737815f5
+# Tue, 27 Jan 2026 21:02:45 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:05 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:02:10 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -2381,59 +2381,59 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 13 Jan 2026 18:19:49 GMT  
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5eb8d8274e62e3c5b1abaeb487f99123d4a6a52456f9f2c607ae94c0fdaf0a3f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:7163b7e4ed4603533d1fda3d54c2c9bd222c3767dfe7b8def9f7dd49fab9d9ca`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b28002105b30a506ea71f81d135734fc2290d5709ceec675fa94dac86606e50b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8e811110b9e834a35200f080893776ff6a0942f8d8b81ead09ef8b6d5cca4448`  
+		Last Modified: Tue, 27 Jan 2026 21:03:14 GMT  
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:1c95878a999406539b61a9cf2a1c93993151a5810c7cf62df0695f1824b7e556`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:80f6b1127b820a407c09f03cba32195298037d7a4e62bf7fbe4e48aa6e0e68dc`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35d78593147892e4dc1b0862f357d60da658c514d4ed6ad30a14d265e9d9aee`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:87cab9070ade4519b37ca4c5850d7caa0c9014f700a23e873d5c116c289dc975`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bee1c1bf73c67953ec9edc4463565cbf1d314ba3eaf3072f756261df4c83ef68`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 507.3 KB (507329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:9395ebafa33fffb1174b8933764abb540194af5c3c67197362e7abf5968c3e45`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 7.1 MB (7145810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 487.4 KB (487412 bytes)  
+	-	`sha256:ec4af0169026bc8454cb3a35c7c962cb9420af4960c1ddd87670450b3fd289fe`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.9 KB (1897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 7.1 MB (7124370 bytes)  
+	-	`sha256:7dc6e11b6268f0921828579f88e05cc6e97e36577c0a0ecd486f15ad7457a78e`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1336 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.9 KB (1888 bytes)  
+	-	`sha256:bf677c818932196a82eede373147a57f807e76fc3253349075985e67b2cca95b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65b2cf2bfc670b555a8d1f35418f547f057c9eb49545246fee09583d2809792c`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.3 KB (1319 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a6b3cef151dd4daeb69c3f714d23e7249f1434b44232997938860e2ca473cff`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:d72db2ac852987031e3dcf5336480ce4aab8ee8287719d1790630ab68849ee79`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78caac84949fd
+$ docker pull nats@sha256:25233863901918872bf17b591083767ce1faeefc993a94cfc1b17bf516664a72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2443,14 +2443,14 @@ $ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78c
 ### `nats:2-windowsservercore-ltsc2022` - windows version 10.0.20348.4648; amd64
 
 ```console
-$ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1b9dcd1eaa1
+$ docker pull nats@sha256:85686b0c19dc2cf95ddcbfe8a4cd19da2d2cd35f0ec50058780642e0d2a2dade
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1843284696 bytes)**  
+-	Total Size: **1.8 GB (1843326026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2afac6b75ab215d5e5d8bdd43e3e79eb1483fe051ede8f22cca4fd30bd1bdd6c`
+-	Image ID: `sha256:350724f2d07f8320ce38c7c37d1836d561c501d51842a5a2294c05c286633391`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -2460,29 +2460,29 @@ $ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1
 RUN Apply image 10.0.20348.4294
 # Fri, 09 Jan 2026 00:11:24 GMT
 RUN Install update 10.0.20348.4648
-# Tue, 13 Jan 2026 23:01:41 GMT
+# Tue, 27 Jan 2026 21:02:17 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 13 Jan 2026 23:01:42 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:01:42 GMT
-ENV NATS_SERVER=2.12.3
-# Tue, 13 Jan 2026 23:01:43 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Tue, 13 Jan 2026 23:01:44 GMT
-ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.3/nats-server-v2.12.3-windows-amd64.zip
-# Tue, 13 Jan 2026 23:01:45 GMT
-ENV NATS_SERVER_SHASUM=33cab92d3113cc5c209773748efdd910b85db49493716b31e74df80c659b83f0
-# Tue, 13 Jan 2026 23:01:52 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:02:20 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:02:21 GMT
+ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.4/nats-server-v2.12.4-windows-amd64.zip
+# Tue, 27 Jan 2026 21:02:22 GMT
+ENV NATS_SERVER_SHASUM=99efb643ef399299ed5736e4fc7220551e8450fe9351adc3c2f678b5737815f5
+# Tue, 27 Jan 2026 21:02:45 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:05 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:02:10 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -2495,53 +2495,53 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 13 Jan 2026 18:19:49 GMT  
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5eb8d8274e62e3c5b1abaeb487f99123d4a6a52456f9f2c607ae94c0fdaf0a3f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:7163b7e4ed4603533d1fda3d54c2c9bd222c3767dfe7b8def9f7dd49fab9d9ca`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b28002105b30a506ea71f81d135734fc2290d5709ceec675fa94dac86606e50b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8e811110b9e834a35200f080893776ff6a0942f8d8b81ead09ef8b6d5cca4448`  
+		Last Modified: Tue, 27 Jan 2026 21:03:14 GMT  
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:1c95878a999406539b61a9cf2a1c93993151a5810c7cf62df0695f1824b7e556`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:80f6b1127b820a407c09f03cba32195298037d7a4e62bf7fbe4e48aa6e0e68dc`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35d78593147892e4dc1b0862f357d60da658c514d4ed6ad30a14d265e9d9aee`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:87cab9070ade4519b37ca4c5850d7caa0c9014f700a23e873d5c116c289dc975`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bee1c1bf73c67953ec9edc4463565cbf1d314ba3eaf3072f756261df4c83ef68`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 507.3 KB (507329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:9395ebafa33fffb1174b8933764abb540194af5c3c67197362e7abf5968c3e45`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 7.1 MB (7145810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 487.4 KB (487412 bytes)  
+	-	`sha256:ec4af0169026bc8454cb3a35c7c962cb9420af4960c1ddd87670450b3fd289fe`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.9 KB (1897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 7.1 MB (7124370 bytes)  
+	-	`sha256:7dc6e11b6268f0921828579f88e05cc6e97e36577c0a0ecd486f15ad7457a78e`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1336 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.9 KB (1888 bytes)  
+	-	`sha256:bf677c818932196a82eede373147a57f807e76fc3253349075985e67b2cca95b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65b2cf2bfc670b555a8d1f35418f547f057c9eb49545246fee09583d2809792c`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.3 KB (1319 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a6b3cef151dd4daeb69c3f714d23e7249f1434b44232997938860e2ca473cff`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:d72db2ac852987031e3dcf5336480ce4aab8ee8287719d1790630ab68849ee79`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.10`
@@ -7413,7 +7413,7 @@ CMD ["--config" "nats-server.conf"]
 ## `nats:2.11`
 
 ```console
-$ docker pull nats@sha256:96a3d74f0da42b44fe241095f76f0b24b9d75556f1f195ff14641f463d0c6aa1
+$ docker pull nats@sha256:52fda9b1d18f0425fb88c04ea56867b2908252b2ba0f0ce020737ca9f221d90f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7435,175 +7435,175 @@ $ docker pull nats@sha256:96a3d74f0da42b44fe241095f76f0b24b9d75556f1f195ff14641f
 ### `nats:2.11` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:a89fbea1a99e4055b5572e8c65d04b4bf287f8077e84dd04ed5653db89f09077
+$ docker pull nats@sha256:05710ffc941d2088835e0a262af3551146aeb8272603ea5581a42058a2a501f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6469438 bytes)**  
+-	Total Size: **6.5 MB (6484785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f7ebcac7a0def3742578d8e675fb50e54906372e1a2b1f5953ac61501e5f91b`
+-	Image ID: `sha256:7226786c95fada611a8cb3c15271a2b06a4be17fc41b9a629c55f78d9451a3df`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fce06af59f4edea8e6a39ec6a3c28424c4e5ddd037792c3e75733a9471eaf096`  
-		Last Modified: Thu, 13 Nov 2025 13:36:23 GMT  
-		Size: 6.5 MB (6468928 bytes)  
+	-	`sha256:8aba39afce5a8ec0f55fd623d29dab10aadce3502e19759c4f814bd5fe134d2a`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.5 MB (6484275 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18609ed747d6a4ad480b652e95ca06e16e3cbf24b265a86cf0631970fbe1d7d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+	-	`sha256:3c8406455bd20ed590ca501844b12110b8a0a85c7d2a1976cc18a0ce9fff846f`  
+		Last Modified: Tue, 27 Jan 2026 21:10:22 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:5b7ee4a16cffd94b8dec024236c00319dd85ce6e865cba1757d95a0b31db6e44
+$ docker pull nats@sha256:26ead9ee78608ad66938179a0f207dcb67906800454a9722b59deeb7e424a621
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21dd879df72c6d5080bf95b4fcef87494a2abb1358676bc2b9ae2ea1e3b6d7d9`
+-	Image ID: `sha256:b41f378760c333c5bd37b6361b15dc8160588a28d5389c67e674bd46371701ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:179ab6e9cbd9813b454f8696a4253402cf689bdea345cd212306fbc38a7ea1f4`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+	-	`sha256:b880480df4c40baf0accc72086a83d38c32ab398e8aeffe9593a8d5002a386d3`  
+		Last Modified: Tue, 27 Jan 2026 21:10:22 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:020b69841c69b36a366422618ad59f6cf96b6f5d80f93dd28a335af41d976069
+$ docker pull nats@sha256:fa223500c437f8c6d9c21b7c2e5117603cea897b5b15a6aea2407dec5fcc71c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 MB (6195861 bytes)**  
+-	Total Size: **6.2 MB (6207207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:175f51c4d06e1d594936b00b74e76ad8fde7c20529490efa35be904facd418f0`
+-	Image ID: `sha256:78dc0f7f4f85b4b2246a642529123cf949f75a49578dccb27584e4f19c47da8d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:b361a2c55cb3b944a1ae9aad6ab14384b077b48043f5b193aa8d379899c1b32b`  
-		Last Modified: Thu, 13 Nov 2025 13:36:18 GMT  
-		Size: 6.2 MB (6195352 bytes)  
+	-	`sha256:06a77c76b56d99c53574ed3b364e438fed0fb044204148b1fbb405116172a248`  
+		Last Modified: Tue, 27 Jan 2026 16:11:24 GMT  
+		Size: 6.2 MB (6206697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61a19d5c228c083fbe1a67a0f3cdf4c51346b3c9a899fef55504732dcdca0f6b`  
-		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
-		Size: 509.0 B  
+	-	`sha256:d4d4e047a8a0db1cc2568f5435a31f22176e300b8e52b87a52874dfda33adddb`  
+		Last Modified: Tue, 27 Jan 2026 21:10:01 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d8af33450c2b813b7fc242a65db98df97af6ec82b2d9949cbcf5ac753ad0fef5
+$ docker pull nats@sha256:231c96f94bbed541cba665ad1e77bc23f5d7b9bedaaae085dc44b2ada1e4c631
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8751 bytes)**  
+-	Total Size: **8.8 KB (8750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70258e5c267180de234fc44d60b8b1db89d960bba523a219bb25bb6aebc93d26`
+-	Image ID: `sha256:8f9db0a6b626d5772a59a68eef1dba490c0e8c59761d3f0c792bace41685de3b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a3e193f7c22b5a13a7722c27920c9aa347f5b58e37fb70b337e4fc24105610fb`  
-		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
-		Size: 8.8 KB (8751 bytes)  
+	-	`sha256:892ab270c1620fc27fa82b1af462e231fcce1e296e8acf4a9f8fce215263595d`  
+		Last Modified: Tue, 27 Jan 2026 21:10:01 GMT  
+		Size: 8.8 KB (8750 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:f1619aec8673524ea84787881f3796dbed7ea79026d656030435d2148ca7b675
+$ docker pull nats@sha256:53e5e9fe1d692c8e8c6453060567acb16b5d5a53dc0abeea26e1effa25022c40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 MB (6183961 bytes)**  
+-	Total Size: **6.2 MB (6201474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b777e919e063da7287021b30699caffc1c615f6be4783c1f067324786261892e`
+-	Image ID: `sha256:850bd1f34f08c8a8d73c1bd16970ac9993ec95e4823f65a170d7e9a88ed91401`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fb69282942f9b02d34aa79ca11ecffef12fe64d0b450e2f16e28abe808c16f09`  
-		Last Modified: Thu, 13 Nov 2025 13:36:19 GMT  
-		Size: 6.2 MB (6183452 bytes)  
+	-	`sha256:09a8178665f98401768fbfa7f9f2679c00dc5b0f203e62a7e90e533d2376ffef`  
+		Last Modified: Tue, 27 Jan 2026 16:11:21 GMT  
+		Size: 6.2 MB (6200965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e8d03f22ec97e3d41938ed9727607f79ff9100cfbbe5671e95f0bfd1502b830`  
-		Last Modified: Wed, 17 Dec 2025 20:05:59 GMT  
+	-	`sha256:e0a23c99e73c6b54e3456f9f8dadb17ed809c58640bada5f411219f44c6c0317`  
+		Last Modified: Tue, 27 Jan 2026 21:09:24 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:7358bf0d54efd35471cfba7d2cc748fb9eba3e0a715f8e1dbed8d570a473f422
+$ docker pull nats@sha256:0e5ea369b46cba0ff098f8c984de48876769a68c3552bdaaef3c43c242afe975
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8751 bytes)**  
+-	Total Size: **8.8 KB (8750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8310222ea9ceb137260617064c6b61f5b8cf370e9800b073bdef69dac39a2f0f`
+-	Image ID: `sha256:14f280565fe7cf7a5652e536311d32ce85a7d715d733ea00ae30242dbb47a926`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b5e10886f1da3786806363d39e9ed4659f7dc14176ea47c46b52beda2398c923`  
-		Last Modified: Wed, 17 Dec 2025 20:05:59 GMT  
-		Size: 8.8 KB (8751 bytes)  
+	-	`sha256:cbbf28edee8a02864d028c803e7fd71feaa74ab472e203573f9cb4ff5ee960fa`  
+		Last Modified: Tue, 27 Jan 2026 21:09:24 GMT  
+		Size: 8.8 KB (8750 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11` - linux; arm64 variant v8
@@ -7667,116 +7667,116 @@ $ docker pull nats@sha256:29c9900eab6f0a566b30c76ca7630f414c9c822de75716660c36b7
 ### `nats:2.11` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:6d88cff6d748764dd249693a900442cf722d789663ab65e0e7c956ece695e238
+$ docker pull nats@sha256:d4d551e835a3962fa062f83a00344388eaa4ff8aca803743b897e7cc11193e0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5938910 bytes)**  
+-	Total Size: **6.0 MB (5954348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ec14ac4d7c26bc5e86644971db8ed4994b29dc3b5772f951e7c92395d582af57`
+-	Image ID: `sha256:0bc52efd33943e66d3243abe4f618389b238fb10ba7d3850f554b95a3954b90a`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:6b5bb42ae8c8fefbe5ce1250705117a2050e9a7d429cf95a055d86103ebcfcf4`  
-		Last Modified: Thu, 13 Nov 2025 13:36:22 GMT  
-		Size: 5.9 MB (5938401 bytes)  
+	-	`sha256:9de13f1b1d93a9485355dc775073c38318f87fc8cde5c87052e2dfb19e2e2c86`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.0 MB (5953840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5d567a4599383e250b5c98d5b079ccaf2dd43523fd751db4f7f710273a7cd11`  
-		Last Modified: Wed, 17 Dec 2025 20:01:44 GMT  
-		Size: 509.0 B  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
+		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:5d7fd6762c1b498b75b53ad17bcf0f6bd65ab7ac297f1c2726badf373e8ec298
+$ docker pull nats@sha256:681a00dca93dac72b0a109443ce224f5e1f9b86e6412a5b05583f28db6d47707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3ce48193a21d7c34ec7f67a9d20e1b59dd0a00a9d5c5e6b0b066649adfeed0b`
+-	Image ID: `sha256:d093aaa6ed20dd02fa94ff15758114f2ab0c270508d47c823fc1ed71d15e3145`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0bb9ca97da542f762d33a2aa6805f840ce102c91acc508490ea4e49f5946bbe`  
-		Last Modified: Wed, 17 Dec 2025 20:01:45 GMT  
+	-	`sha256:4f75f45eafb11e5791e2cb75dff74cce48be965a0875fb999bb829152fb3a2cc`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 8.7 KB (8721 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:1f9e310c71526998e6eb349ca180c39d37f0c2fb7831d699dfe87ba881175d57
+$ docker pull nats@sha256:bb72684bdd80aa021a0e128b6876a6310d40d5512c92ddd8f81f3d02a202abf5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6311079 bytes)**  
+-	Total Size: **6.3 MB (6326218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e72faa7571f225816a1ea99c9730eea5507d7ab15de308625988e5efb0f7a28`
+-	Image ID: `sha256:7a61d226938c41116e7e2be6ae5a7b824f33c870dab4c4cc845fdf67db5d8436`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:bd05a13ae28973210162b21afbcbcc05250e021622dc82220eabd156bcdd2bf4`  
-		Last Modified: Thu, 13 Nov 2025 13:36:22 GMT  
-		Size: 6.3 MB (6310570 bytes)  
+	-	`sha256:dff26b947f702115a483f894d5a90237a01bee2a42aedfcf32e06b3efb01e9f8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.3 MB (6325708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23ef4c2152d3f58734cb0fe2da596d833fbab184a3b41fe2b192a03046a3887`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:489ee87504c5e516c86965e4281bcc6a9c1b46b1ccd0e609e9de07f8c72fe09e
+$ docker pull nats@sha256:69abd1131dd1e8ea4d190ef9a87bcf7b30038c7487a552fe770a5275a22c74c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13f17b956bea9c9fa5ecf955bc1015904ed90b52b7b035f3098db91245529052`
+-	Image ID: `sha256:75575a1c2a29a663eb2e079a973654a9494ff43d9006b8c692396c0222ca7ca0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4659d54f693e09ad90886c339c37e8009206958112aad31e2fac27900b6f90d4`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
+	-	`sha256:aad8e717d95e6c41af8a4426a11e94cabe9f016226802fe6321b2282e65b79bf`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7844,7 +7844,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 ## `nats:2.11-alpine`
 
 ```console
-$ docker pull nats@sha256:897156029e76f4663e89ca98a99a5ee1b03b37e2e75e956220f83d2a3e28f7b8
+$ docker pull nats@sha256:cd9b1549f20eaf21edb7ab27be84353339058a3dc915a4c0fa613bb15751f613
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7865,13 +7865,13 @@ $ docker pull nats@sha256:897156029e76f4663e89ca98a99a5ee1b03b37e2e75e956220f83d
 ### `nats:2.11-alpine` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:37657aaadc12a875d3c1e554fd7ac3cf691ba74bca4c92bed69eee18d654aa1e
+$ docker pull nats@sha256:171dbbada2160942d7e0f1faef65dcc1ddeaf1ac59b26e6fda24e832fcf493d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.7 MB (10729198 bytes)**  
+-	Total Size: **10.7 MB (10744919 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed6a2ea869961ea3ffa61570365d14a23528bb52350bcd9c4036f7a6e0f57e95`
+-	Image ID: `sha256:a016b6326ea118bd726dcd08f3b849d036a4d6c19cb8017945e60a33507b515a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -7880,21 +7880,21 @@ $ docker pull nats@sha256:37657aaadc12a875d3c1e554fd7ac3cf691ba74bca4c92bed69eee
 ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:03 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:03 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:03 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 20:59:13 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 20:59:13 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:59:13 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -7903,49 +7903,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:daeacfaa01e8117ad225e4f3791b8a4a7af15e8242019195b9922035de034dd8`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 6.9 MB (6925776 bytes)  
+	-	`sha256:d893b90c90ea9ee69b38bf2f7c00b18a6eb9c9c6dcfa49af1cfb99652f79eaa9`  
+		Last Modified: Tue, 27 Jan 2026 20:59:18 GMT  
+		Size: 6.9 MB (6941495 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c03efc089efa33e5f4ecbd7f9abed4dd8da6dbd0f98e90ac8d0706f75adc139`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 560.0 B  
+	-	`sha256:c527a939617516167006397f9fd7725195a0194e8bb401f40ecdfb0ceddbcc36`  
+		Last Modified: Tue, 27 Jan 2026 20:59:17 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cdef138b23adf586bef4b6b73b65b1c95d1320d35d5c626d217217882daeff2d`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 410.0 B  
+	-	`sha256:0f83586936fc9803e55305d263458b3c0adb5e43f7a1ea8179a2d9b5a9dee646`  
+		Last Modified: Tue, 27 Jan 2026 20:59:17 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:7e2c6b516c3b80c7203b2b59b800e76de79a663942365d85d8208440b1d116e6
+$ docker pull nats@sha256:035daa384c43024bf6efadb66e10203da3eb3971963142abcd7fdada1ce609f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.2 KB (14208 bytes)**  
+-	Total Size: **14.2 KB (14209 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:494637d9e503d72a1ac5dab71b03bed41d6ae986be51b3a391c6088362e11039`
+-	Image ID: `sha256:1a85a7b682449c9fc8419f21cde1713d01ffa2ea414f065bb70b68e46803416f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe3b9621795df34ab8378a90eb2526ce6fcae2e6fd12ab2cacf25bc6a90f8c21`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 14.2 KB (14208 bytes)  
+	-	`sha256:7f101a55634e72da94e0c96be866f798bf33152579ff9f879251f12d064cf687`  
+		Last Modified: Tue, 27 Jan 2026 20:59:17 GMT  
+		Size: 14.2 KB (14209 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:7dc385ccb17a5d831b52091696a2b9b5c526e0a0cfae1b7793b3384d4ff1e8d8
+$ docker pull nats@sha256:939db8e1aaad23721b9b89d615cfa2710f4d00dfdcc5559f1938eefd0b855290
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10157051 bytes)**  
+-	Total Size: **10.2 MB (10175981 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffb7056376d9e35ed178c2beceb2b7c5ba6566578e8274457482a2c1f6c0a05b`
+-	Image ID: `sha256:e95f168a7be7b407c951ace3fd25d0cc22b4b1b586662e41c61507b926bae36e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -7954,21 +7954,21 @@ $ docker pull nats@sha256:7dc385ccb17a5d831b52091696a2b9b5c526e0a0cfae1b7793b338
 ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:04 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:04 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:04 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 20:56:22 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 20:56:22 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:22 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -7977,49 +7977,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 21:00:10 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1b3a63fa41d951c20d7ba692363f6bd4e0f858cc8d67dc9d41ad45e666cc32b`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
-		Size: 6.7 MB (6652001 bytes)  
+	-	`sha256:5bd66ff36315f1db37189f179a15963188f10219149da03b68bb1991cb07fdb3`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
+		Size: 6.7 MB (6670930 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b10ce74ef4777e28a316eb199c59ea96a8b063fa879e2caccd475ff75305e5b`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
+	-	`sha256:963a7c79c1b1268295590242aeed2ca4aeb4f8651d275f7107a46b972fac03bc`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:031588257558813d6e3040a2e30e14470a4be9068a90e9bafd2fe83527cdbfe0`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
-		Size: 410.0 B  
+	-	`sha256:75259f793dadc65cccf2fa38917fcf7d2fc63e1fe8fa926061550fa1e890d392`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:4c5bf0cbaeb0daa9b0ec35c45de5fde0106fdccb96aa1541d98d1f7ccd3c9424
+$ docker pull nats@sha256:2a58d6f51134fec9cc352e5557b69ac99d77ff1756dde6ddd1bf37e48c5c2893
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.3 KB (14289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22dd7fa2ed0a35ade6bed36f0d04c59687542d146f9b57b2dc327315a445fd2f`
+-	Image ID: `sha256:bb8554060f8042ed41665221edff57532af2052255880bbd6c795b65b00beb60`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c2af0a0a8248021684d4401285c42a870cd3dbec50fd9ce549f336d8f4b20e7e`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
+	-	`sha256:b7d39154aa97fa6fbef9fbbe5ed1025e3cb47d5104f2040a12374d9d50b14691`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
 		Size: 14.3 KB (14289 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:735ae6458b17c20b9e258a0866ae4bbaea46cfbb00d5e8ab22aebc80a5ffb7fd
+$ docker pull nats@sha256:2c9a1328a5bfa81c51ea0b4cffa42206fd5a90d6d8dc6845567ef5bb71c25c5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.9 MB (9865930 bytes)**  
+-	Total Size: **9.9 MB (9878112 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a35304e4e5b6e579c7a5db5efeb12c9a1d8eda65deb7079b513a8df0b5148f4d`
+-	Image ID: `sha256:6cc3e744c0f6ecf61a885f164c45242dfb4078db544a3079c8701b8563d0422f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -8028,21 +8028,21 @@ $ docker pull nats@sha256:735ae6458b17c20b9e258a0866ae4bbaea46cfbb00d5e8ab22aebc
 ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:01 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 20:56:52 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 20:56:52 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -8051,36 +8051,36 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed7f19a2d1b2940e8fce330263571bccdb6f920b72d56315131c68b073c1d78f`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
-		Size: 6.6 MB (6643404 bytes)  
+	-	`sha256:b1ca32a1e1778b86e8374ccd0679c82724a791e484a81984eb7a671cd74cd5f0`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
+		Size: 6.7 MB (6655584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4c7a5e50586ea9c442b0be0c00982bae43b84d491b2c5517ae04691575acf13`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
-		Size: 560.0 B  
+	-	`sha256:9365c66ef25c96948cc1853358cba083103e8b3865c4e84304a8bc9438c00542`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c31c0e7ddd3f6b1ea573c7459b2f9e0ee5f7cf42e3b6c77def6b38b4554ceb9e`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
-		Size: 411.0 B  
+	-	`sha256:e4574cf0a465e3e1b784a442cea92d7405d2dde060274be94c92baea2251262f`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:44007647a4883e01f8cf2d90bb8f0724542b3df1c17765515513a0de0f6fed56
+$ docker pull nats@sha256:319c7cecc773cdb9b36ed4183049cd1b4e611a28264138942e95c2ea29d21a03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.3 KB (14289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741b9d1f91738c76efcb0d982d2d28ba1f7a3751d1eeddc5dbd02feda5c5634c`
+-	Image ID: `sha256:05ebe6e5bd7eaf7bd94b70532968f06e13551ce81a4d289be8176b72c9a11493`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d76e68e153cd066ad50b8ee467a7f6b21019ba5bf79756129878d416a0afe78a`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
+	-	`sha256:94703004d92e4309a42a25f0a68b4fa7117ec2963e12330b9a42a00a078213d6`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
 		Size: 14.3 KB (14289 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8161,13 +8161,13 @@ $ docker pull nats@sha256:1abf5fc157740f9b2eb0640d2645a7f26f0cbb13b7873818187ea1
 ### `nats:2.11-alpine` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:56ad762cdb2c9e236441492cc3ed1ccb4740b31d1f86619d1083dfa921a8fe31
+$ docker pull nats@sha256:c39d513611a81c04cdb8724295867cf8270be7277256e9fb9489c6a10c0d15cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.1 MB (10131479 bytes)**  
+-	Total Size: **10.1 MB (10144257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8dc376c492980965d023efd6d7f3ba1606537679af50bc1d630cfc40549bfc01`
+-	Image ID: `sha256:b98042b2ad8140abbceb75f5ac88f1f38233db8aef64236741b2db9b98d5fbbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -8176,21 +8176,21 @@ $ docker pull nats@sha256:56ad762cdb2c9e236441492cc3ed1ccb4740b31d1f86619d1083df
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:01 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:55:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:55:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:01 GMT
+# Tue, 27 Jan 2026 21:06:51 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 21:06:51 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 21:06:51 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:06:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -8199,49 +8199,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0540149968c2042f75d2bb82489e5fb387dc85fc24cf49bb5df87ea9c499a630`  
-		Last Modified: Wed, 17 Dec 2025 19:55:21 GMT  
-		Size: 6.4 MB (6398269 bytes)  
+	-	`sha256:032210a4c59a01ba575bc5db68ddd836614331d8324e0022e04fb3ca44e6595c`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 6.4 MB (6411045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 560.0 B  
+	-	`sha256:dcf0f099d527269dc43593793ecaadda88e477182e35413d281eae5fca8edcd9`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 409.0 B  
+	-	`sha256:3d81715261f9c8109cdf9b0d19000e23c890a8230df8e1249fb38dfcc69818e5`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:273efe4a708c1f0753cd18700c5e0f86ee343ccee15aa5d76ff5619172762d16
+$ docker pull nats@sha256:b6d140961d8a484596c2b49811167c8dd931b0cdf603a75852a9792a60a261d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.3 KB (14253 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98a84f68f7181c3114402fe0b085ca863012cf769f139e43826f021efe0525e7`
+-	Image ID: `sha256:74ecdd17552991bd347d02836a3004dcabae1d76f97cb40a98979be5f3100a43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5cbbad3ec8b1231789cb5122db6bc1e5b53b60c2fe8893d28ac5a83c6013aae0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:14 GMT  
+	-	`sha256:7be7f0404d235765a3203de556dddaf193f9dd175288013810fa9f2127de3b93`  
+		Last Modified: Tue, 27 Jan 2026 21:07:04 GMT  
 		Size: 14.3 KB (14253 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-alpine` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:53f0ef8dd4d378336d839097a56ca9ed85ca806ddb24606f8b0f889458c26145
+$ docker pull nats@sha256:4d4d6139e032929e2e6df4fad55ca2e200848f7e6e1be43795b4051f3242ca6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 MB (10418567 bytes)**  
+-	Total Size: **10.4 MB (10435679 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10d2660e42362183215431a9e5e7882a94cebde5b7cf4e67cdc4a59c8ca48c4a`
+-	Image ID: `sha256:8cac1d1782006a5678be0f768c85a2d38d5b6c742e81bfd009b069615c001367`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -8250,21 +8250,21 @@ $ docker pull nats@sha256:53f0ef8dd4d378336d839097a56ca9ed85ca806ddb24606f8b0f88
 ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:26 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:55:26 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:55:26 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 21:00:25 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 21:00:25 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:00:25 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -8273,43 +8273,43 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39989a106452e3f995d0fa99a07e1b14cf47a556b51649b8ed4805b59dbcc8d0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
-		Size: 6.8 MB (6768355 bytes)  
+	-	`sha256:1c990f536d967acbb3d4bfa0e53e8f4ca23be68a64556670dc87962991662918`  
+		Last Modified: Tue, 27 Jan 2026 21:00:32 GMT  
+		Size: 6.8 MB (6785464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77c0af3a8d530b2721cefaa7ac66de1d847d40627c4702e294c0076cab8b3626`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
-		Size: 560.0 B  
+	-	`sha256:642ee0d733ed7fe9431dad0af1c6ed3983cbbbfb05fbc8d1919485cd05640eab`  
+		Last Modified: Tue, 27 Jan 2026 21:00:33 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8802f8189ffe02b2c600422996b12b86301efb291347842b8642da932c32415`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
-		Size: 408.0 B  
+	-	`sha256:7b46b008599a09ef696f3fcaa512d23159f0c9a572fc46bea707b34860744fb1`  
+		Last Modified: Tue, 27 Jan 2026 21:00:35 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:2ab0e70989ae6d9ec60beaec1d614cf5bb4183e639133c9ef6dbe9bf9410bdb2
+$ docker pull nats@sha256:3a65eb59a7e0c499c995e6e988a2419bbddfb4749e054ec92879c33cc5d02c55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.2 KB (14209 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1735b7a2e40275bda26a3b74599f7785f4e0281f1f0d983c168ea7288e28b89`
+-	Image ID: `sha256:68b24095d5fc3e8a613857d79c57396b1c0e708b994b339b84b5570617756ad8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d2c339961116eb7ff849a600d784630174cb48191bcdab600a41b9af61220cf4`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
+	-	`sha256:22b25eb5aea4e0fb947dfbbf58eb1dfeb8abea347cb66bea7948a3e6bd0bde11`  
+		Last Modified: Tue, 27 Jan 2026 21:00:32 GMT  
 		Size: 14.2 KB (14209 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:2.11-alpine3.22`
 
 ```console
-$ docker pull nats@sha256:897156029e76f4663e89ca98a99a5ee1b03b37e2e75e956220f83d2a3e28f7b8
+$ docker pull nats@sha256:cd9b1549f20eaf21edb7ab27be84353339058a3dc915a4c0fa613bb15751f613
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8330,13 +8330,13 @@ $ docker pull nats@sha256:897156029e76f4663e89ca98a99a5ee1b03b37e2e75e956220f83d
 ### `nats:2.11-alpine3.22` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:37657aaadc12a875d3c1e554fd7ac3cf691ba74bca4c92bed69eee18d654aa1e
+$ docker pull nats@sha256:171dbbada2160942d7e0f1faef65dcc1ddeaf1ac59b26e6fda24e832fcf493d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.7 MB (10729198 bytes)**  
+-	Total Size: **10.7 MB (10744919 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed6a2ea869961ea3ffa61570365d14a23528bb52350bcd9c4036f7a6e0f57e95`
+-	Image ID: `sha256:a016b6326ea118bd726dcd08f3b849d036a4d6c19cb8017945e60a33507b515a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -8345,21 +8345,21 @@ $ docker pull nats@sha256:37657aaadc12a875d3c1e554fd7ac3cf691ba74bca4c92bed69eee
 ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:03 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:03 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:03 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 20:59:13 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 20:59:13 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:59:13 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -8368,49 +8368,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:daeacfaa01e8117ad225e4f3791b8a4a7af15e8242019195b9922035de034dd8`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 6.9 MB (6925776 bytes)  
+	-	`sha256:d893b90c90ea9ee69b38bf2f7c00b18a6eb9c9c6dcfa49af1cfb99652f79eaa9`  
+		Last Modified: Tue, 27 Jan 2026 20:59:18 GMT  
+		Size: 6.9 MB (6941495 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c03efc089efa33e5f4ecbd7f9abed4dd8da6dbd0f98e90ac8d0706f75adc139`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 560.0 B  
+	-	`sha256:c527a939617516167006397f9fd7725195a0194e8bb401f40ecdfb0ceddbcc36`  
+		Last Modified: Tue, 27 Jan 2026 20:59:17 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cdef138b23adf586bef4b6b73b65b1c95d1320d35d5c626d217217882daeff2d`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 410.0 B  
+	-	`sha256:0f83586936fc9803e55305d263458b3c0adb5e43f7a1ea8179a2d9b5a9dee646`  
+		Last Modified: Tue, 27 Jan 2026 20:59:17 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:7e2c6b516c3b80c7203b2b59b800e76de79a663942365d85d8208440b1d116e6
+$ docker pull nats@sha256:035daa384c43024bf6efadb66e10203da3eb3971963142abcd7fdada1ce609f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.2 KB (14208 bytes)**  
+-	Total Size: **14.2 KB (14209 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:494637d9e503d72a1ac5dab71b03bed41d6ae986be51b3a391c6088362e11039`
+-	Image ID: `sha256:1a85a7b682449c9fc8419f21cde1713d01ffa2ea414f065bb70b68e46803416f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe3b9621795df34ab8378a90eb2526ce6fcae2e6fd12ab2cacf25bc6a90f8c21`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 14.2 KB (14208 bytes)  
+	-	`sha256:7f101a55634e72da94e0c96be866f798bf33152579ff9f879251f12d064cf687`  
+		Last Modified: Tue, 27 Jan 2026 20:59:17 GMT  
+		Size: 14.2 KB (14209 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-alpine3.22` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:7dc385ccb17a5d831b52091696a2b9b5c526e0a0cfae1b7793b3384d4ff1e8d8
+$ docker pull nats@sha256:939db8e1aaad23721b9b89d615cfa2710f4d00dfdcc5559f1938eefd0b855290
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10157051 bytes)**  
+-	Total Size: **10.2 MB (10175981 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffb7056376d9e35ed178c2beceb2b7c5ba6566578e8274457482a2c1f6c0a05b`
+-	Image ID: `sha256:e95f168a7be7b407c951ace3fd25d0cc22b4b1b586662e41c61507b926bae36e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -8419,21 +8419,21 @@ $ docker pull nats@sha256:7dc385ccb17a5d831b52091696a2b9b5c526e0a0cfae1b7793b338
 ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:04 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:04 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:04 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 20:56:22 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 20:56:22 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:22 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -8442,49 +8442,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 21:00:10 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1b3a63fa41d951c20d7ba692363f6bd4e0f858cc8d67dc9d41ad45e666cc32b`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
-		Size: 6.7 MB (6652001 bytes)  
+	-	`sha256:5bd66ff36315f1db37189f179a15963188f10219149da03b68bb1991cb07fdb3`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
+		Size: 6.7 MB (6670930 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b10ce74ef4777e28a316eb199c59ea96a8b063fa879e2caccd475ff75305e5b`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
+	-	`sha256:963a7c79c1b1268295590242aeed2ca4aeb4f8651d275f7107a46b972fac03bc`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:031588257558813d6e3040a2e30e14470a4be9068a90e9bafd2fe83527cdbfe0`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
-		Size: 410.0 B  
+	-	`sha256:75259f793dadc65cccf2fa38917fcf7d2fc63e1fe8fa926061550fa1e890d392`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:4c5bf0cbaeb0daa9b0ec35c45de5fde0106fdccb96aa1541d98d1f7ccd3c9424
+$ docker pull nats@sha256:2a58d6f51134fec9cc352e5557b69ac99d77ff1756dde6ddd1bf37e48c5c2893
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.3 KB (14289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22dd7fa2ed0a35ade6bed36f0d04c59687542d146f9b57b2dc327315a445fd2f`
+-	Image ID: `sha256:bb8554060f8042ed41665221edff57532af2052255880bbd6c795b65b00beb60`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c2af0a0a8248021684d4401285c42a870cd3dbec50fd9ce549f336d8f4b20e7e`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
+	-	`sha256:b7d39154aa97fa6fbef9fbbe5ed1025e3cb47d5104f2040a12374d9d50b14691`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
 		Size: 14.3 KB (14289 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-alpine3.22` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:735ae6458b17c20b9e258a0866ae4bbaea46cfbb00d5e8ab22aebc80a5ffb7fd
+$ docker pull nats@sha256:2c9a1328a5bfa81c51ea0b4cffa42206fd5a90d6d8dc6845567ef5bb71c25c5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.9 MB (9865930 bytes)**  
+-	Total Size: **9.9 MB (9878112 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a35304e4e5b6e579c7a5db5efeb12c9a1d8eda65deb7079b513a8df0b5148f4d`
+-	Image ID: `sha256:6cc3e744c0f6ecf61a885f164c45242dfb4078db544a3079c8701b8563d0422f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -8493,21 +8493,21 @@ $ docker pull nats@sha256:735ae6458b17c20b9e258a0866ae4bbaea46cfbb00d5e8ab22aebc
 ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:01 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 20:56:52 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 20:56:52 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -8516,36 +8516,36 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed7f19a2d1b2940e8fce330263571bccdb6f920b72d56315131c68b073c1d78f`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
-		Size: 6.6 MB (6643404 bytes)  
+	-	`sha256:b1ca32a1e1778b86e8374ccd0679c82724a791e484a81984eb7a671cd74cd5f0`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
+		Size: 6.7 MB (6655584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4c7a5e50586ea9c442b0be0c00982bae43b84d491b2c5517ae04691575acf13`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
-		Size: 560.0 B  
+	-	`sha256:9365c66ef25c96948cc1853358cba083103e8b3865c4e84304a8bc9438c00542`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c31c0e7ddd3f6b1ea573c7459b2f9e0ee5f7cf42e3b6c77def6b38b4554ceb9e`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
-		Size: 411.0 B  
+	-	`sha256:e4574cf0a465e3e1b784a442cea92d7405d2dde060274be94c92baea2251262f`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:44007647a4883e01f8cf2d90bb8f0724542b3df1c17765515513a0de0f6fed56
+$ docker pull nats@sha256:319c7cecc773cdb9b36ed4183049cd1b4e611a28264138942e95c2ea29d21a03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.3 KB (14289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741b9d1f91738c76efcb0d982d2d28ba1f7a3751d1eeddc5dbd02feda5c5634c`
+-	Image ID: `sha256:05ebe6e5bd7eaf7bd94b70532968f06e13551ce81a4d289be8176b72c9a11493`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d76e68e153cd066ad50b8ee467a7f6b21019ba5bf79756129878d416a0afe78a`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
+	-	`sha256:94703004d92e4309a42a25f0a68b4fa7117ec2963e12330b9a42a00a078213d6`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
 		Size: 14.3 KB (14289 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8626,13 +8626,13 @@ $ docker pull nats@sha256:1abf5fc157740f9b2eb0640d2645a7f26f0cbb13b7873818187ea1
 ### `nats:2.11-alpine3.22` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:56ad762cdb2c9e236441492cc3ed1ccb4740b31d1f86619d1083dfa921a8fe31
+$ docker pull nats@sha256:c39d513611a81c04cdb8724295867cf8270be7277256e9fb9489c6a10c0d15cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.1 MB (10131479 bytes)**  
+-	Total Size: **10.1 MB (10144257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8dc376c492980965d023efd6d7f3ba1606537679af50bc1d630cfc40549bfc01`
+-	Image ID: `sha256:b98042b2ad8140abbceb75f5ac88f1f38233db8aef64236741b2db9b98d5fbbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -8641,21 +8641,21 @@ $ docker pull nats@sha256:56ad762cdb2c9e236441492cc3ed1ccb4740b31d1f86619d1083df
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:01 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:55:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:55:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:01 GMT
+# Tue, 27 Jan 2026 21:06:51 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 21:06:51 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 21:06:51 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:06:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -8664,49 +8664,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0540149968c2042f75d2bb82489e5fb387dc85fc24cf49bb5df87ea9c499a630`  
-		Last Modified: Wed, 17 Dec 2025 19:55:21 GMT  
-		Size: 6.4 MB (6398269 bytes)  
+	-	`sha256:032210a4c59a01ba575bc5db68ddd836614331d8324e0022e04fb3ca44e6595c`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 6.4 MB (6411045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 560.0 B  
+	-	`sha256:dcf0f099d527269dc43593793ecaadda88e477182e35413d281eae5fca8edcd9`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 409.0 B  
+	-	`sha256:3d81715261f9c8109cdf9b0d19000e23c890a8230df8e1249fb38dfcc69818e5`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:273efe4a708c1f0753cd18700c5e0f86ee343ccee15aa5d76ff5619172762d16
+$ docker pull nats@sha256:b6d140961d8a484596c2b49811167c8dd931b0cdf603a75852a9792a60a261d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.3 KB (14253 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98a84f68f7181c3114402fe0b085ca863012cf769f139e43826f021efe0525e7`
+-	Image ID: `sha256:74ecdd17552991bd347d02836a3004dcabae1d76f97cb40a98979be5f3100a43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5cbbad3ec8b1231789cb5122db6bc1e5b53b60c2fe8893d28ac5a83c6013aae0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:14 GMT  
+	-	`sha256:7be7f0404d235765a3203de556dddaf193f9dd175288013810fa9f2127de3b93`  
+		Last Modified: Tue, 27 Jan 2026 21:07:04 GMT  
 		Size: 14.3 KB (14253 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-alpine3.22` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:53f0ef8dd4d378336d839097a56ca9ed85ca806ddb24606f8b0f889458c26145
+$ docker pull nats@sha256:4d4d6139e032929e2e6df4fad55ca2e200848f7e6e1be43795b4051f3242ca6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 MB (10418567 bytes)**  
+-	Total Size: **10.4 MB (10435679 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10d2660e42362183215431a9e5e7882a94cebde5b7cf4e67cdc4a59c8ca48c4a`
+-	Image ID: `sha256:8cac1d1782006a5678be0f768c85a2d38d5b6c742e81bfd009b069615c001367`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -8715,21 +8715,21 @@ $ docker pull nats@sha256:53f0ef8dd4d378336d839097a56ca9ed85ca806ddb24606f8b0f88
 ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:26 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:55:26 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:55:26 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 21:00:25 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 21:00:25 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:00:25 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -8738,43 +8738,43 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39989a106452e3f995d0fa99a07e1b14cf47a556b51649b8ed4805b59dbcc8d0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
-		Size: 6.8 MB (6768355 bytes)  
+	-	`sha256:1c990f536d967acbb3d4bfa0e53e8f4ca23be68a64556670dc87962991662918`  
+		Last Modified: Tue, 27 Jan 2026 21:00:32 GMT  
+		Size: 6.8 MB (6785464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77c0af3a8d530b2721cefaa7ac66de1d847d40627c4702e294c0076cab8b3626`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
-		Size: 560.0 B  
+	-	`sha256:642ee0d733ed7fe9431dad0af1c6ed3983cbbbfb05fbc8d1919485cd05640eab`  
+		Last Modified: Tue, 27 Jan 2026 21:00:33 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8802f8189ffe02b2c600422996b12b86301efb291347842b8642da932c32415`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
-		Size: 408.0 B  
+	-	`sha256:7b46b008599a09ef696f3fcaa512d23159f0c9a572fc46bea707b34860744fb1`  
+		Last Modified: Tue, 27 Jan 2026 21:00:35 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:2ab0e70989ae6d9ec60beaec1d614cf5bb4183e639133c9ef6dbe9bf9410bdb2
+$ docker pull nats@sha256:3a65eb59a7e0c499c995e6e988a2419bbddfb4749e054ec92879c33cc5d02c55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.2 KB (14209 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1735b7a2e40275bda26a3b74599f7785f4e0281f1f0d983c168ea7288e28b89`
+-	Image ID: `sha256:68b24095d5fc3e8a613857d79c57396b1c0e708b994b339b84b5570617756ad8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d2c339961116eb7ff849a600d784630174cb48191bcdab600a41b9af61220cf4`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
+	-	`sha256:22b25eb5aea4e0fb947dfbbf58eb1dfeb8abea347cb66bea7948a3e6bd0bde11`  
+		Last Modified: Tue, 27 Jan 2026 21:00:32 GMT  
 		Size: 14.2 KB (14209 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:2.11-linux`
 
 ```console
-$ docker pull nats@sha256:f0d865f58292bf8754585ce2de9ee21ec7a726582b38af3cd7eabf75cdf05e76
+$ docker pull nats@sha256:0676e5c468f39400f1caf8f51640e2c6ea09b597877c86702996f99be0aabc0e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8795,175 +8795,175 @@ $ docker pull nats@sha256:f0d865f58292bf8754585ce2de9ee21ec7a726582b38af3cd7eabf
 ### `nats:2.11-linux` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:a89fbea1a99e4055b5572e8c65d04b4bf287f8077e84dd04ed5653db89f09077
+$ docker pull nats@sha256:05710ffc941d2088835e0a262af3551146aeb8272603ea5581a42058a2a501f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6469438 bytes)**  
+-	Total Size: **6.5 MB (6484785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f7ebcac7a0def3742578d8e675fb50e54906372e1a2b1f5953ac61501e5f91b`
+-	Image ID: `sha256:7226786c95fada611a8cb3c15271a2b06a4be17fc41b9a629c55f78d9451a3df`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fce06af59f4edea8e6a39ec6a3c28424c4e5ddd037792c3e75733a9471eaf096`  
-		Last Modified: Thu, 13 Nov 2025 13:36:23 GMT  
-		Size: 6.5 MB (6468928 bytes)  
+	-	`sha256:8aba39afce5a8ec0f55fd623d29dab10aadce3502e19759c4f814bd5fe134d2a`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.5 MB (6484275 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18609ed747d6a4ad480b652e95ca06e16e3cbf24b265a86cf0631970fbe1d7d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+	-	`sha256:3c8406455bd20ed590ca501844b12110b8a0a85c7d2a1976cc18a0ce9fff846f`  
+		Last Modified: Tue, 27 Jan 2026 21:10:22 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:5b7ee4a16cffd94b8dec024236c00319dd85ce6e865cba1757d95a0b31db6e44
+$ docker pull nats@sha256:26ead9ee78608ad66938179a0f207dcb67906800454a9722b59deeb7e424a621
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21dd879df72c6d5080bf95b4fcef87494a2abb1358676bc2b9ae2ea1e3b6d7d9`
+-	Image ID: `sha256:b41f378760c333c5bd37b6361b15dc8160588a28d5389c67e674bd46371701ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:179ab6e9cbd9813b454f8696a4253402cf689bdea345cd212306fbc38a7ea1f4`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+	-	`sha256:b880480df4c40baf0accc72086a83d38c32ab398e8aeffe9593a8d5002a386d3`  
+		Last Modified: Tue, 27 Jan 2026 21:10:22 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-linux` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:020b69841c69b36a366422618ad59f6cf96b6f5d80f93dd28a335af41d976069
+$ docker pull nats@sha256:fa223500c437f8c6d9c21b7c2e5117603cea897b5b15a6aea2407dec5fcc71c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 MB (6195861 bytes)**  
+-	Total Size: **6.2 MB (6207207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:175f51c4d06e1d594936b00b74e76ad8fde7c20529490efa35be904facd418f0`
+-	Image ID: `sha256:78dc0f7f4f85b4b2246a642529123cf949f75a49578dccb27584e4f19c47da8d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:b361a2c55cb3b944a1ae9aad6ab14384b077b48043f5b193aa8d379899c1b32b`  
-		Last Modified: Thu, 13 Nov 2025 13:36:18 GMT  
-		Size: 6.2 MB (6195352 bytes)  
+	-	`sha256:06a77c76b56d99c53574ed3b364e438fed0fb044204148b1fbb405116172a248`  
+		Last Modified: Tue, 27 Jan 2026 16:11:24 GMT  
+		Size: 6.2 MB (6206697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61a19d5c228c083fbe1a67a0f3cdf4c51346b3c9a899fef55504732dcdca0f6b`  
-		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
-		Size: 509.0 B  
+	-	`sha256:d4d4e047a8a0db1cc2568f5435a31f22176e300b8e52b87a52874dfda33adddb`  
+		Last Modified: Tue, 27 Jan 2026 21:10:01 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d8af33450c2b813b7fc242a65db98df97af6ec82b2d9949cbcf5ac753ad0fef5
+$ docker pull nats@sha256:231c96f94bbed541cba665ad1e77bc23f5d7b9bedaaae085dc44b2ada1e4c631
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8751 bytes)**  
+-	Total Size: **8.8 KB (8750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70258e5c267180de234fc44d60b8b1db89d960bba523a219bb25bb6aebc93d26`
+-	Image ID: `sha256:8f9db0a6b626d5772a59a68eef1dba490c0e8c59761d3f0c792bace41685de3b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a3e193f7c22b5a13a7722c27920c9aa347f5b58e37fb70b337e4fc24105610fb`  
-		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
-		Size: 8.8 KB (8751 bytes)  
+	-	`sha256:892ab270c1620fc27fa82b1af462e231fcce1e296e8acf4a9f8fce215263595d`  
+		Last Modified: Tue, 27 Jan 2026 21:10:01 GMT  
+		Size: 8.8 KB (8750 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-linux` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:f1619aec8673524ea84787881f3796dbed7ea79026d656030435d2148ca7b675
+$ docker pull nats@sha256:53e5e9fe1d692c8e8c6453060567acb16b5d5a53dc0abeea26e1effa25022c40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 MB (6183961 bytes)**  
+-	Total Size: **6.2 MB (6201474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b777e919e063da7287021b30699caffc1c615f6be4783c1f067324786261892e`
+-	Image ID: `sha256:850bd1f34f08c8a8d73c1bd16970ac9993ec95e4823f65a170d7e9a88ed91401`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fb69282942f9b02d34aa79ca11ecffef12fe64d0b450e2f16e28abe808c16f09`  
-		Last Modified: Thu, 13 Nov 2025 13:36:19 GMT  
-		Size: 6.2 MB (6183452 bytes)  
+	-	`sha256:09a8178665f98401768fbfa7f9f2679c00dc5b0f203e62a7e90e533d2376ffef`  
+		Last Modified: Tue, 27 Jan 2026 16:11:21 GMT  
+		Size: 6.2 MB (6200965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e8d03f22ec97e3d41938ed9727607f79ff9100cfbbe5671e95f0bfd1502b830`  
-		Last Modified: Wed, 17 Dec 2025 20:05:59 GMT  
+	-	`sha256:e0a23c99e73c6b54e3456f9f8dadb17ed809c58640bada5f411219f44c6c0317`  
+		Last Modified: Tue, 27 Jan 2026 21:09:24 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:7358bf0d54efd35471cfba7d2cc748fb9eba3e0a715f8e1dbed8d570a473f422
+$ docker pull nats@sha256:0e5ea369b46cba0ff098f8c984de48876769a68c3552bdaaef3c43c242afe975
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8751 bytes)**  
+-	Total Size: **8.8 KB (8750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8310222ea9ceb137260617064c6b61f5b8cf370e9800b073bdef69dac39a2f0f`
+-	Image ID: `sha256:14f280565fe7cf7a5652e536311d32ce85a7d715d733ea00ae30242dbb47a926`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b5e10886f1da3786806363d39e9ed4659f7dc14176ea47c46b52beda2398c923`  
-		Last Modified: Wed, 17 Dec 2025 20:05:59 GMT  
-		Size: 8.8 KB (8751 bytes)  
+	-	`sha256:cbbf28edee8a02864d028c803e7fd71feaa74ab472e203573f9cb4ff5ee960fa`  
+		Last Modified: Tue, 27 Jan 2026 21:09:24 GMT  
+		Size: 8.8 KB (8750 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-linux` - linux; arm64 variant v8
@@ -9027,116 +9027,116 @@ $ docker pull nats@sha256:29c9900eab6f0a566b30c76ca7630f414c9c822de75716660c36b7
 ### `nats:2.11-linux` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:6d88cff6d748764dd249693a900442cf722d789663ab65e0e7c956ece695e238
+$ docker pull nats@sha256:d4d551e835a3962fa062f83a00344388eaa4ff8aca803743b897e7cc11193e0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5938910 bytes)**  
+-	Total Size: **6.0 MB (5954348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ec14ac4d7c26bc5e86644971db8ed4994b29dc3b5772f951e7c92395d582af57`
+-	Image ID: `sha256:0bc52efd33943e66d3243abe4f618389b238fb10ba7d3850f554b95a3954b90a`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:6b5bb42ae8c8fefbe5ce1250705117a2050e9a7d429cf95a055d86103ebcfcf4`  
-		Last Modified: Thu, 13 Nov 2025 13:36:22 GMT  
-		Size: 5.9 MB (5938401 bytes)  
+	-	`sha256:9de13f1b1d93a9485355dc775073c38318f87fc8cde5c87052e2dfb19e2e2c86`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.0 MB (5953840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5d567a4599383e250b5c98d5b079ccaf2dd43523fd751db4f7f710273a7cd11`  
-		Last Modified: Wed, 17 Dec 2025 20:01:44 GMT  
-		Size: 509.0 B  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
+		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:5d7fd6762c1b498b75b53ad17bcf0f6bd65ab7ac297f1c2726badf373e8ec298
+$ docker pull nats@sha256:681a00dca93dac72b0a109443ce224f5e1f9b86e6412a5b05583f28db6d47707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3ce48193a21d7c34ec7f67a9d20e1b59dd0a00a9d5c5e6b0b066649adfeed0b`
+-	Image ID: `sha256:d093aaa6ed20dd02fa94ff15758114f2ab0c270508d47c823fc1ed71d15e3145`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0bb9ca97da542f762d33a2aa6805f840ce102c91acc508490ea4e49f5946bbe`  
-		Last Modified: Wed, 17 Dec 2025 20:01:45 GMT  
+	-	`sha256:4f75f45eafb11e5791e2cb75dff74cce48be965a0875fb999bb829152fb3a2cc`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 8.7 KB (8721 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-linux` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:1f9e310c71526998e6eb349ca180c39d37f0c2fb7831d699dfe87ba881175d57
+$ docker pull nats@sha256:bb72684bdd80aa021a0e128b6876a6310d40d5512c92ddd8f81f3d02a202abf5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6311079 bytes)**  
+-	Total Size: **6.3 MB (6326218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e72faa7571f225816a1ea99c9730eea5507d7ab15de308625988e5efb0f7a28`
+-	Image ID: `sha256:7a61d226938c41116e7e2be6ae5a7b824f33c870dab4c4cc845fdf67db5d8436`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:bd05a13ae28973210162b21afbcbcc05250e021622dc82220eabd156bcdd2bf4`  
-		Last Modified: Thu, 13 Nov 2025 13:36:22 GMT  
-		Size: 6.3 MB (6310570 bytes)  
+	-	`sha256:dff26b947f702115a483f894d5a90237a01bee2a42aedfcf32e06b3efb01e9f8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.3 MB (6325708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23ef4c2152d3f58734cb0fe2da596d833fbab184a3b41fe2b192a03046a3887`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:489ee87504c5e516c86965e4281bcc6a9c1b46b1ccd0e609e9de07f8c72fe09e
+$ docker pull nats@sha256:69abd1131dd1e8ea4d190ef9a87bcf7b30038c7487a552fe770a5275a22c74c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13f17b956bea9c9fa5ecf955bc1015904ed90b52b7b035f3098db91245529052`
+-	Image ID: `sha256:75575a1c2a29a663eb2e079a973654a9494ff43d9006b8c692396c0222ca7ca0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4659d54f693e09ad90886c339c37e8009206958112aad31e2fac27900b6f90d4`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
+	-	`sha256:aad8e717d95e6c41af8a4426a11e94cabe9f016226802fe6321b2282e65b79bf`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9285,7 +9285,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 ## `nats:2.11-scratch`
 
 ```console
-$ docker pull nats@sha256:f0d865f58292bf8754585ce2de9ee21ec7a726582b38af3cd7eabf75cdf05e76
+$ docker pull nats@sha256:0676e5c468f39400f1caf8f51640e2c6ea09b597877c86702996f99be0aabc0e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9306,175 +9306,175 @@ $ docker pull nats@sha256:f0d865f58292bf8754585ce2de9ee21ec7a726582b38af3cd7eabf
 ### `nats:2.11-scratch` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:a89fbea1a99e4055b5572e8c65d04b4bf287f8077e84dd04ed5653db89f09077
+$ docker pull nats@sha256:05710ffc941d2088835e0a262af3551146aeb8272603ea5581a42058a2a501f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6469438 bytes)**  
+-	Total Size: **6.5 MB (6484785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f7ebcac7a0def3742578d8e675fb50e54906372e1a2b1f5953ac61501e5f91b`
+-	Image ID: `sha256:7226786c95fada611a8cb3c15271a2b06a4be17fc41b9a629c55f78d9451a3df`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fce06af59f4edea8e6a39ec6a3c28424c4e5ddd037792c3e75733a9471eaf096`  
-		Last Modified: Thu, 13 Nov 2025 13:36:23 GMT  
-		Size: 6.5 MB (6468928 bytes)  
+	-	`sha256:8aba39afce5a8ec0f55fd623d29dab10aadce3502e19759c4f814bd5fe134d2a`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.5 MB (6484275 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18609ed747d6a4ad480b652e95ca06e16e3cbf24b265a86cf0631970fbe1d7d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+	-	`sha256:3c8406455bd20ed590ca501844b12110b8a0a85c7d2a1976cc18a0ce9fff846f`  
+		Last Modified: Tue, 27 Jan 2026 21:10:22 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:5b7ee4a16cffd94b8dec024236c00319dd85ce6e865cba1757d95a0b31db6e44
+$ docker pull nats@sha256:26ead9ee78608ad66938179a0f207dcb67906800454a9722b59deeb7e424a621
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21dd879df72c6d5080bf95b4fcef87494a2abb1358676bc2b9ae2ea1e3b6d7d9`
+-	Image ID: `sha256:b41f378760c333c5bd37b6361b15dc8160588a28d5389c67e674bd46371701ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:179ab6e9cbd9813b454f8696a4253402cf689bdea345cd212306fbc38a7ea1f4`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+	-	`sha256:b880480df4c40baf0accc72086a83d38c32ab398e8aeffe9593a8d5002a386d3`  
+		Last Modified: Tue, 27 Jan 2026 21:10:22 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-scratch` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:020b69841c69b36a366422618ad59f6cf96b6f5d80f93dd28a335af41d976069
+$ docker pull nats@sha256:fa223500c437f8c6d9c21b7c2e5117603cea897b5b15a6aea2407dec5fcc71c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 MB (6195861 bytes)**  
+-	Total Size: **6.2 MB (6207207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:175f51c4d06e1d594936b00b74e76ad8fde7c20529490efa35be904facd418f0`
+-	Image ID: `sha256:78dc0f7f4f85b4b2246a642529123cf949f75a49578dccb27584e4f19c47da8d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:b361a2c55cb3b944a1ae9aad6ab14384b077b48043f5b193aa8d379899c1b32b`  
-		Last Modified: Thu, 13 Nov 2025 13:36:18 GMT  
-		Size: 6.2 MB (6195352 bytes)  
+	-	`sha256:06a77c76b56d99c53574ed3b364e438fed0fb044204148b1fbb405116172a248`  
+		Last Modified: Tue, 27 Jan 2026 16:11:24 GMT  
+		Size: 6.2 MB (6206697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61a19d5c228c083fbe1a67a0f3cdf4c51346b3c9a899fef55504732dcdca0f6b`  
-		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
-		Size: 509.0 B  
+	-	`sha256:d4d4e047a8a0db1cc2568f5435a31f22176e300b8e52b87a52874dfda33adddb`  
+		Last Modified: Tue, 27 Jan 2026 21:10:01 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d8af33450c2b813b7fc242a65db98df97af6ec82b2d9949cbcf5ac753ad0fef5
+$ docker pull nats@sha256:231c96f94bbed541cba665ad1e77bc23f5d7b9bedaaae085dc44b2ada1e4c631
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8751 bytes)**  
+-	Total Size: **8.8 KB (8750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70258e5c267180de234fc44d60b8b1db89d960bba523a219bb25bb6aebc93d26`
+-	Image ID: `sha256:8f9db0a6b626d5772a59a68eef1dba490c0e8c59761d3f0c792bace41685de3b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a3e193f7c22b5a13a7722c27920c9aa347f5b58e37fb70b337e4fc24105610fb`  
-		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
-		Size: 8.8 KB (8751 bytes)  
+	-	`sha256:892ab270c1620fc27fa82b1af462e231fcce1e296e8acf4a9f8fce215263595d`  
+		Last Modified: Tue, 27 Jan 2026 21:10:01 GMT  
+		Size: 8.8 KB (8750 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-scratch` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:f1619aec8673524ea84787881f3796dbed7ea79026d656030435d2148ca7b675
+$ docker pull nats@sha256:53e5e9fe1d692c8e8c6453060567acb16b5d5a53dc0abeea26e1effa25022c40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 MB (6183961 bytes)**  
+-	Total Size: **6.2 MB (6201474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b777e919e063da7287021b30699caffc1c615f6be4783c1f067324786261892e`
+-	Image ID: `sha256:850bd1f34f08c8a8d73c1bd16970ac9993ec95e4823f65a170d7e9a88ed91401`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:05:54 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fb69282942f9b02d34aa79ca11ecffef12fe64d0b450e2f16e28abe808c16f09`  
-		Last Modified: Thu, 13 Nov 2025 13:36:19 GMT  
-		Size: 6.2 MB (6183452 bytes)  
+	-	`sha256:09a8178665f98401768fbfa7f9f2679c00dc5b0f203e62a7e90e533d2376ffef`  
+		Last Modified: Tue, 27 Jan 2026 16:11:21 GMT  
+		Size: 6.2 MB (6200965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e8d03f22ec97e3d41938ed9727607f79ff9100cfbbe5671e95f0bfd1502b830`  
-		Last Modified: Wed, 17 Dec 2025 20:05:59 GMT  
+	-	`sha256:e0a23c99e73c6b54e3456f9f8dadb17ed809c58640bada5f411219f44c6c0317`  
+		Last Modified: Tue, 27 Jan 2026 21:09:24 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:7358bf0d54efd35471cfba7d2cc748fb9eba3e0a715f8e1dbed8d570a473f422
+$ docker pull nats@sha256:0e5ea369b46cba0ff098f8c984de48876769a68c3552bdaaef3c43c242afe975
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8751 bytes)**  
+-	Total Size: **8.8 KB (8750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8310222ea9ceb137260617064c6b61f5b8cf370e9800b073bdef69dac39a2f0f`
+-	Image ID: `sha256:14f280565fe7cf7a5652e536311d32ce85a7d715d733ea00ae30242dbb47a926`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b5e10886f1da3786806363d39e9ed4659f7dc14176ea47c46b52beda2398c923`  
-		Last Modified: Wed, 17 Dec 2025 20:05:59 GMT  
-		Size: 8.8 KB (8751 bytes)  
+	-	`sha256:cbbf28edee8a02864d028c803e7fd71feaa74ab472e203573f9cb4ff5ee960fa`  
+		Last Modified: Tue, 27 Jan 2026 21:09:24 GMT  
+		Size: 8.8 KB (8750 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-scratch` - linux; arm64 variant v8
@@ -9538,123 +9538,123 @@ $ docker pull nats@sha256:29c9900eab6f0a566b30c76ca7630f414c9c822de75716660c36b7
 ### `nats:2.11-scratch` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:6d88cff6d748764dd249693a900442cf722d789663ab65e0e7c956ece695e238
+$ docker pull nats@sha256:d4d551e835a3962fa062f83a00344388eaa4ff8aca803743b897e7cc11193e0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5938910 bytes)**  
+-	Total Size: **6.0 MB (5954348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ec14ac4d7c26bc5e86644971db8ed4994b29dc3b5772f951e7c92395d582af57`
+-	Image ID: `sha256:0bc52efd33943e66d3243abe4f618389b238fb10ba7d3850f554b95a3954b90a`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:6b5bb42ae8c8fefbe5ce1250705117a2050e9a7d429cf95a055d86103ebcfcf4`  
-		Last Modified: Thu, 13 Nov 2025 13:36:22 GMT  
-		Size: 5.9 MB (5938401 bytes)  
+	-	`sha256:9de13f1b1d93a9485355dc775073c38318f87fc8cde5c87052e2dfb19e2e2c86`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.0 MB (5953840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5d567a4599383e250b5c98d5b079ccaf2dd43523fd751db4f7f710273a7cd11`  
-		Last Modified: Wed, 17 Dec 2025 20:01:44 GMT  
-		Size: 509.0 B  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
+		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:5d7fd6762c1b498b75b53ad17bcf0f6bd65ab7ac297f1c2726badf373e8ec298
+$ docker pull nats@sha256:681a00dca93dac72b0a109443ce224f5e1f9b86e6412a5b05583f28db6d47707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3ce48193a21d7c34ec7f67a9d20e1b59dd0a00a9d5c5e6b0b066649adfeed0b`
+-	Image ID: `sha256:d093aaa6ed20dd02fa94ff15758114f2ab0c270508d47c823fc1ed71d15e3145`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0bb9ca97da542f762d33a2aa6805f840ce102c91acc508490ea4e49f5946bbe`  
-		Last Modified: Wed, 17 Dec 2025 20:01:45 GMT  
+	-	`sha256:4f75f45eafb11e5791e2cb75dff74cce48be965a0875fb999bb829152fb3a2cc`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 8.7 KB (8721 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.11-scratch` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:1f9e310c71526998e6eb349ca180c39d37f0c2fb7831d699dfe87ba881175d57
+$ docker pull nats@sha256:bb72684bdd80aa021a0e128b6876a6310d40d5512c92ddd8f81f3d02a202abf5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6311079 bytes)**  
+-	Total Size: **6.3 MB (6326218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e72faa7571f225816a1ea99c9730eea5507d7ab15de308625988e5efb0f7a28`
+-	Image ID: `sha256:7a61d226938c41116e7e2be6ae5a7b824f33c870dab4c4cc845fdf67db5d8436`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:bd05a13ae28973210162b21afbcbcc05250e021622dc82220eabd156bcdd2bf4`  
-		Last Modified: Thu, 13 Nov 2025 13:36:22 GMT  
-		Size: 6.3 MB (6310570 bytes)  
+	-	`sha256:dff26b947f702115a483f894d5a90237a01bee2a42aedfcf32e06b3efb01e9f8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.3 MB (6325708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23ef4c2152d3f58734cb0fe2da596d833fbab184a3b41fe2b192a03046a3887`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.11-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:489ee87504c5e516c86965e4281bcc6a9c1b46b1ccd0e609e9de07f8c72fe09e
+$ docker pull nats@sha256:69abd1131dd1e8ea4d190ef9a87bcf7b30038c7487a552fe770a5275a22c74c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13f17b956bea9c9fa5ecf955bc1015904ed90b52b7b035f3098db91245529052`
+-	Image ID: `sha256:75575a1c2a29a663eb2e079a973654a9494ff43d9006b8c692396c0222ca7ca0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4659d54f693e09ad90886c339c37e8009206958112aad31e2fac27900b6f90d4`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
+	-	`sha256:aad8e717d95e6c41af8a4426a11e94cabe9f016226802fe6321b2282e65b79bf`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:2.11-windowsservercore`
 
 ```console
-$ docker pull nats@sha256:d4d69f47153749befcdd0e1e4664854f9b4aafe0ca7ed672af722b9efc68532b
+$ docker pull nats@sha256:5a806b2053d3c2cf91f6cf5b19ade7f0179be7ca6bae559bfcd6f935bbfb656c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9664,14 +9664,14 @@ $ docker pull nats@sha256:d4d69f47153749befcdd0e1e4664854f9b4aafe0ca7ed672af722b
 ### `nats:2.11-windowsservercore` - windows version 10.0.20348.4648; amd64
 
 ```console
-$ docker pull nats@sha256:07b9045318981b2bbfafdcb67165f4a6b33cf879d6919ae045349f32569a387d
+$ docker pull nats@sha256:51e978f961f43e42579fbd6d804b74678dc89a382b5057d31ebf289b8ebbf91f
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1843141610 bytes)**  
+-	Total Size: **1.8 GB (1843182768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89ce5da5860f97900b165d686184278f81aff2b517bebf82bfe1aff90d7bd07e`
+-	Image ID: `sha256:dcde2230b5f3e450746ccba58887f7dc871076ed00df7a1ed41c5fcae7c5ea03`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -9681,29 +9681,29 @@ $ docker pull nats@sha256:07b9045318981b2bbfafdcb67165f4a6b33cf879d6919ae045349f
 RUN Apply image 10.0.20348.4294
 # Fri, 09 Jan 2026 00:11:24 GMT
 RUN Install update 10.0.20348.4648
-# Tue, 13 Jan 2026 23:01:40 GMT
+# Tue, 27 Jan 2026 21:02:17 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 13 Jan 2026 23:01:40 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:01:41 GMT
-ENV NATS_SERVER=2.11.11
-# Tue, 13 Jan 2026 23:01:42 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Tue, 13 Jan 2026 23:01:44 GMT
-ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.11.11/nats-server-v2.11.11-windows-amd64.zip
-# Tue, 13 Jan 2026 23:01:45 GMT
-ENV NATS_SERVER_SHASUM=b54fd598f0d2e2e8c3783ac4503eea024803837f0a3c78dc4d4ceac94fb42ac4
-# Tue, 13 Jan 2026 23:01:51 GMT
+# Tue, 27 Jan 2026 21:08:44 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 21:08:45 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 21:08:46 GMT
+ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.11.12/nats-server-v2.11.12-windows-amd64.zip
+# Tue, 27 Jan 2026 21:08:46 GMT
+ENV NATS_SERVER_SHASUM=c853f656c6e68e6a72c574fc07098256e4e90a5a3c48fbf3ae550bb03872631b
+# Tue, 27 Jan 2026 21:08:52 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 13 Jan 2026 23:02:07 GMT
+# Tue, 27 Jan 2026 21:09:08 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 13 Jan 2026 23:02:07 GMT
+# Tue, 27 Jan 2026 21:09:08 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:02:10 GMT
+# Tue, 27 Jan 2026 21:09:10 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -9716,59 +9716,59 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 13 Jan 2026 18:19:49 GMT  
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f0fce413876f886fb2250022b76f87a9e023cf582c638600a9fba8ca303bfd0`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
-		Size: 1.3 KB (1332 bytes)  
+	-	`sha256:7163b7e4ed4603533d1fda3d54c2c9bd222c3767dfe7b8def9f7dd49fab9d9ca`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:083ad68866e07715eab16bd0184a260e2002dcd0edccd8903b0545549ede0a19`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:b28002105b30a506ea71f81d135734fc2290d5709ceec675fa94dac86606e50b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:656287c8c6050d31cb986f704d2a759a1e2e8a00cd762fdaace02a1b45b6854d`  
+		Last Modified: Tue, 27 Jan 2026 21:09:17 GMT  
+		Size: 1.3 KB (1324 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:800de5fd6dcee75c74c6b0d3845c83072660925d2d0ad551e164e713a0e89ce5`  
+		Last Modified: Tue, 27 Jan 2026 21:09:15 GMT  
+		Size: 1.3 KB (1323 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:904edee6f0cbeb789af48a320522453d7689fde17764961857cdf7d244d4645d`  
+		Last Modified: Tue, 27 Jan 2026 21:09:15 GMT  
 		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5ab5a14a56498d76a55aa516389b63c1131868078fc11a9170cca2e4ec5952d`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
-		Size: 1.3 KB (1313 bytes)  
+	-	`sha256:460298970d4aa69ccb3204f114139efb5f01783664da315b5e95071f18cef57e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb295800a0cfc78af40563e60671f745d144cf03cf93ac56c0390020ae2d799b`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:90098c4a08abc00ac20a499813407e545d20cd0b2881f9d3ceaf9f1c549ca673`  
+		Last Modified: Tue, 27 Jan 2026 21:09:16 GMT  
+		Size: 491.1 KB (491145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2829856f1dfa3bfcb809a3e99a63d638dac690852d70c11c9ced41cbf47b16ec`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:4a82b1fc8a00f9f62ad7fe211906388071fba7520bd53cf397d9207a412f29ea`  
+		Last Modified: Tue, 27 Jan 2026 21:09:16 GMT  
+		Size: 7.0 MB (7018729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31431f78e0ecc9201b175a6c1884d88db7a3d3cde3e53fe41ae81964c2d1ec60`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:c312911f5c71ef5a286d106dbdf6f0290ac8314257a17382b67c381fc0e8db88`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.9 KB (1858 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da5e0c97d16df27272bd18e50379b8bf129c7c5a380f03817f6ce726df2ec54d`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 477.0 KB (477002 bytes)  
+	-	`sha256:bb3130d24c758b70ffdfea1cc63fbcd5320f5024d0e2626989017248a1a20b7e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3142560abd4113862dbf0d14b7a8cf4ba88c8bbba25f820eaf35b83c8ad03d6f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 7.0 MB (6991771 bytes)  
+	-	`sha256:498878062c5d19b6cbf4d761b4efc933e6ef1559e3d11d12c73f6d9768ead43d`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12013feaa024e4ee0d394d702e12cd3415ae142ba16d32b05ecdd58e3e5a09e4`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.9 KB (1856 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37cd72c20d610d8f325e75ec2b433766ab2127f68292aa7545dd8942e7f832a9`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1296 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42f087171cb7f241bf457be23ec5b5ebe1534351aca2f50d8b368d2c9bbbc5c8`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1315 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a58d967c6226d1e23d2ff4212f97414249877ff4059d30967d93087d1f877f5`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1322 bytes)  
+	-	`sha256:f573e9dd487232a9e9633bb14fd403ad599c2361ebacb6889dd3e93fcc2ae41e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.11-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:d4d69f47153749befcdd0e1e4664854f9b4aafe0ca7ed672af722b9efc68532b
+$ docker pull nats@sha256:5a806b2053d3c2cf91f6cf5b19ade7f0179be7ca6bae559bfcd6f935bbfb656c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9778,14 +9778,14 @@ $ docker pull nats@sha256:d4d69f47153749befcdd0e1e4664854f9b4aafe0ca7ed672af722b
 ### `nats:2.11-windowsservercore-ltsc2022` - windows version 10.0.20348.4648; amd64
 
 ```console
-$ docker pull nats@sha256:07b9045318981b2bbfafdcb67165f4a6b33cf879d6919ae045349f32569a387d
+$ docker pull nats@sha256:51e978f961f43e42579fbd6d804b74678dc89a382b5057d31ebf289b8ebbf91f
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1843141610 bytes)**  
+-	Total Size: **1.8 GB (1843182768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89ce5da5860f97900b165d686184278f81aff2b517bebf82bfe1aff90d7bd07e`
+-	Image ID: `sha256:dcde2230b5f3e450746ccba58887f7dc871076ed00df7a1ed41c5fcae7c5ea03`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -9795,29 +9795,29 @@ $ docker pull nats@sha256:07b9045318981b2bbfafdcb67165f4a6b33cf879d6919ae045349f
 RUN Apply image 10.0.20348.4294
 # Fri, 09 Jan 2026 00:11:24 GMT
 RUN Install update 10.0.20348.4648
-# Tue, 13 Jan 2026 23:01:40 GMT
+# Tue, 27 Jan 2026 21:02:17 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 13 Jan 2026 23:01:40 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:01:41 GMT
-ENV NATS_SERVER=2.11.11
-# Tue, 13 Jan 2026 23:01:42 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Tue, 13 Jan 2026 23:01:44 GMT
-ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.11.11/nats-server-v2.11.11-windows-amd64.zip
-# Tue, 13 Jan 2026 23:01:45 GMT
-ENV NATS_SERVER_SHASUM=b54fd598f0d2e2e8c3783ac4503eea024803837f0a3c78dc4d4ceac94fb42ac4
-# Tue, 13 Jan 2026 23:01:51 GMT
+# Tue, 27 Jan 2026 21:08:44 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 21:08:45 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 21:08:46 GMT
+ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.11.12/nats-server-v2.11.12-windows-amd64.zip
+# Tue, 27 Jan 2026 21:08:46 GMT
+ENV NATS_SERVER_SHASUM=c853f656c6e68e6a72c574fc07098256e4e90a5a3c48fbf3ae550bb03872631b
+# Tue, 27 Jan 2026 21:08:52 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 13 Jan 2026 23:02:07 GMT
+# Tue, 27 Jan 2026 21:09:08 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 13 Jan 2026 23:02:07 GMT
+# Tue, 27 Jan 2026 21:09:08 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:02:10 GMT
+# Tue, 27 Jan 2026 21:09:10 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -9830,517 +9830,393 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 13 Jan 2026 18:19:49 GMT  
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f0fce413876f886fb2250022b76f87a9e023cf582c638600a9fba8ca303bfd0`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
-		Size: 1.3 KB (1332 bytes)  
+	-	`sha256:7163b7e4ed4603533d1fda3d54c2c9bd222c3767dfe7b8def9f7dd49fab9d9ca`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:083ad68866e07715eab16bd0184a260e2002dcd0edccd8903b0545549ede0a19`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:b28002105b30a506ea71f81d135734fc2290d5709ceec675fa94dac86606e50b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:656287c8c6050d31cb986f704d2a759a1e2e8a00cd762fdaace02a1b45b6854d`  
+		Last Modified: Tue, 27 Jan 2026 21:09:17 GMT  
+		Size: 1.3 KB (1324 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:800de5fd6dcee75c74c6b0d3845c83072660925d2d0ad551e164e713a0e89ce5`  
+		Last Modified: Tue, 27 Jan 2026 21:09:15 GMT  
+		Size: 1.3 KB (1323 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:904edee6f0cbeb789af48a320522453d7689fde17764961857cdf7d244d4645d`  
+		Last Modified: Tue, 27 Jan 2026 21:09:15 GMT  
 		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5ab5a14a56498d76a55aa516389b63c1131868078fc11a9170cca2e4ec5952d`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
-		Size: 1.3 KB (1313 bytes)  
+	-	`sha256:460298970d4aa69ccb3204f114139efb5f01783664da315b5e95071f18cef57e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb295800a0cfc78af40563e60671f745d144cf03cf93ac56c0390020ae2d799b`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:90098c4a08abc00ac20a499813407e545d20cd0b2881f9d3ceaf9f1c549ca673`  
+		Last Modified: Tue, 27 Jan 2026 21:09:16 GMT  
+		Size: 491.1 KB (491145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2829856f1dfa3bfcb809a3e99a63d638dac690852d70c11c9ced41cbf47b16ec`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:4a82b1fc8a00f9f62ad7fe211906388071fba7520bd53cf397d9207a412f29ea`  
+		Last Modified: Tue, 27 Jan 2026 21:09:16 GMT  
+		Size: 7.0 MB (7018729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31431f78e0ecc9201b175a6c1884d88db7a3d3cde3e53fe41ae81964c2d1ec60`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:c312911f5c71ef5a286d106dbdf6f0290ac8314257a17382b67c381fc0e8db88`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.9 KB (1858 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da5e0c97d16df27272bd18e50379b8bf129c7c5a380f03817f6ce726df2ec54d`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 477.0 KB (477002 bytes)  
+	-	`sha256:bb3130d24c758b70ffdfea1cc63fbcd5320f5024d0e2626989017248a1a20b7e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3142560abd4113862dbf0d14b7a8cf4ba88c8bbba25f820eaf35b83c8ad03d6f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 7.0 MB (6991771 bytes)  
+	-	`sha256:498878062c5d19b6cbf4d761b4efc933e6ef1559e3d11d12c73f6d9768ead43d`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12013feaa024e4ee0d394d702e12cd3415ae142ba16d32b05ecdd58e3e5a09e4`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.9 KB (1856 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37cd72c20d610d8f325e75ec2b433766ab2127f68292aa7545dd8942e7f832a9`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1296 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42f087171cb7f241bf457be23ec5b5ebe1534351aca2f50d8b368d2c9bbbc5c8`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1315 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a58d967c6226d1e23d2ff4212f97414249877ff4059d30967d93087d1f877f5`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1322 bytes)  
+	-	`sha256:f573e9dd487232a9e9633bb14fd403ad599c2361ebacb6889dd3e93fcc2ae41e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `nats:2.11.11`
+## `nats:2.11.12`
 
 ```console
-$ docker pull nats@sha256:96a3d74f0da42b44fe241095f76f0b24b9d75556f1f195ff14641f463d0c6aa1
+$ docker pull nats@sha256:c5958cb0ceab10e97376a80f63082584d2e2eb665730badcde25ae282b3a219a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 13
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
-	-	windows version 10.0.20348.4648; amd64
 
-### `nats:2.11.11` - linux; amd64
+### `nats:2.11.12` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:a89fbea1a99e4055b5572e8c65d04b4bf287f8077e84dd04ed5653db89f09077
+$ docker pull nats@sha256:05710ffc941d2088835e0a262af3551146aeb8272603ea5581a42058a2a501f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6469438 bytes)**  
+-	Total Size: **6.5 MB (6484785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f7ebcac7a0def3742578d8e675fb50e54906372e1a2b1f5953ac61501e5f91b`
+-	Image ID: `sha256:7226786c95fada611a8cb3c15271a2b06a4be17fc41b9a629c55f78d9451a3df`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fce06af59f4edea8e6a39ec6a3c28424c4e5ddd037792c3e75733a9471eaf096`  
-		Last Modified: Thu, 13 Nov 2025 13:36:23 GMT  
-		Size: 6.5 MB (6468928 bytes)  
+	-	`sha256:8aba39afce5a8ec0f55fd623d29dab10aadce3502e19759c4f814bd5fe134d2a`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.5 MB (6484275 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18609ed747d6a4ad480b652e95ca06e16e3cbf24b265a86cf0631970fbe1d7d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+	-	`sha256:3c8406455bd20ed590ca501844b12110b8a0a85c7d2a1976cc18a0ce9fff846f`  
+		Last Modified: Tue, 27 Jan 2026 21:10:22 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11` - unknown; unknown
+### `nats:2.11.12` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:5b7ee4a16cffd94b8dec024236c00319dd85ce6e865cba1757d95a0b31db6e44
+$ docker pull nats@sha256:26ead9ee78608ad66938179a0f207dcb67906800454a9722b59deeb7e424a621
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21dd879df72c6d5080bf95b4fcef87494a2abb1358676bc2b9ae2ea1e3b6d7d9`
+-	Image ID: `sha256:b41f378760c333c5bd37b6361b15dc8160588a28d5389c67e674bd46371701ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:179ab6e9cbd9813b454f8696a4253402cf689bdea345cd212306fbc38a7ea1f4`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+	-	`sha256:b880480df4c40baf0accc72086a83d38c32ab398e8aeffe9593a8d5002a386d3`  
+		Last Modified: Tue, 27 Jan 2026 21:10:22 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11` - linux; arm variant v6
+### `nats:2.11.12` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:020b69841c69b36a366422618ad59f6cf96b6f5d80f93dd28a335af41d976069
+$ docker pull nats@sha256:fa223500c437f8c6d9c21b7c2e5117603cea897b5b15a6aea2407dec5fcc71c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 MB (6195861 bytes)**  
+-	Total Size: **6.2 MB (6207207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:175f51c4d06e1d594936b00b74e76ad8fde7c20529490efa35be904facd418f0`
+-	Image ID: `sha256:78dc0f7f4f85b4b2246a642529123cf949f75a49578dccb27584e4f19c47da8d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:b361a2c55cb3b944a1ae9aad6ab14384b077b48043f5b193aa8d379899c1b32b`  
-		Last Modified: Thu, 13 Nov 2025 13:36:18 GMT  
-		Size: 6.2 MB (6195352 bytes)  
+	-	`sha256:06a77c76b56d99c53574ed3b364e438fed0fb044204148b1fbb405116172a248`  
+		Last Modified: Tue, 27 Jan 2026 16:11:24 GMT  
+		Size: 6.2 MB (6206697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61a19d5c228c083fbe1a67a0f3cdf4c51346b3c9a899fef55504732dcdca0f6b`  
-		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
-		Size: 509.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2.11.11` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:d8af33450c2b813b7fc242a65db98df97af6ec82b2d9949cbcf5ac753ad0fef5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8751 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70258e5c267180de234fc44d60b8b1db89d960bba523a219bb25bb6aebc93d26`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:a3e193f7c22b5a13a7722c27920c9aa347f5b58e37fb70b337e4fc24105610fb`  
-		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
-		Size: 8.8 KB (8751 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2.11.11` - linux; arm variant v7
-
-```console
-$ docker pull nats@sha256:f1619aec8673524ea84787881f3796dbed7ea79026d656030435d2148ca7b675
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 MB (6183961 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b777e919e063da7287021b30699caffc1c615f6be4783c1f067324786261892e`
--	Entrypoint: `["\/nats-server"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Wed, 17 Dec 2025 20:05:54 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:05:54 GMT
-COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:05:54 GMT
-COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:05:54 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:05:54 GMT
-ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:05:54 GMT
-CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:fb69282942f9b02d34aa79ca11ecffef12fe64d0b450e2f16e28abe808c16f09`  
-		Last Modified: Thu, 13 Nov 2025 13:36:19 GMT  
-		Size: 6.2 MB (6183452 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e8d03f22ec97e3d41938ed9727607f79ff9100cfbbe5671e95f0bfd1502b830`  
-		Last Modified: Wed, 17 Dec 2025 20:05:59 GMT  
-		Size: 509.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2.11.11` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:7358bf0d54efd35471cfba7d2cc748fb9eba3e0a715f8e1dbed8d570a473f422
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8751 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8310222ea9ceb137260617064c6b61f5b8cf370e9800b073bdef69dac39a2f0f`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:b5e10886f1da3786806363d39e9ed4659f7dc14176ea47c46b52beda2398c923`  
-		Last Modified: Wed, 17 Dec 2025 20:05:59 GMT  
-		Size: 8.8 KB (8751 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2.11.11` - linux; arm64 variant v8
-
-```console
-$ docker pull nats@sha256:3143def571db6ac61d5f4b0dbb1bd089223ba9faa0fadc1c66840b462a2adce3
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5887869 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46b132b85ccc17e70b169b15d22d4f235b5d669e0d3ce46eadce87f74085508f`
--	Entrypoint: `["\/nats-server"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Wed, 17 Dec 2025 20:00:44 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:44 GMT
-COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:44 GMT
-COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:44 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:44 GMT
-ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:44 GMT
-CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:8249f4689b6b98276351b7df09241ed5a4ee97d63a285d620f19033b6fbf14c9`  
-		Last Modified: Thu, 13 Nov 2025 13:36:18 GMT  
-		Size: 5.9 MB (5887359 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3994ad9c32980fd20dfbbb307833a48d15524ba3b8ce29216aff143e83250694`  
-		Last Modified: Wed, 17 Dec 2025 20:00:49 GMT  
+	-	`sha256:d4d4e047a8a0db1cc2568f5435a31f22176e300b8e52b87a52874dfda33adddb`  
+		Last Modified: Tue, 27 Jan 2026 21:10:01 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11` - unknown; unknown
+### `nats:2.11.12` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:29c9900eab6f0a566b30c76ca7630f414c9c822de75716660c36b7f64c033df6
+$ docker pull nats@sha256:231c96f94bbed541cba665ad1e77bc23f5d7b9bedaaae085dc44b2ada1e4c631
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8780 bytes)**  
+-	Total Size: **8.8 KB (8750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26d8165c63b8bb52293d7faf39af11d999636011c3a2d43ee2c3c079b4b35699`
+-	Image ID: `sha256:8f9db0a6b626d5772a59a68eef1dba490c0e8c59761d3f0c792bace41685de3b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9f88a7d23513019ac45fafe7a08331e232ed4f21043cb362893eac6510da2d29`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
-		Size: 8.8 KB (8780 bytes)  
+	-	`sha256:892ab270c1620fc27fa82b1af462e231fcce1e296e8acf4a9f8fce215263595d`  
+		Last Modified: Tue, 27 Jan 2026 21:10:01 GMT  
+		Size: 8.8 KB (8750 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11` - linux; ppc64le
+### `nats:2.11.12` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:6d88cff6d748764dd249693a900442cf722d789663ab65e0e7c956ece695e238
+$ docker pull nats@sha256:53e5e9fe1d692c8e8c6453060567acb16b5d5a53dc0abeea26e1effa25022c40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5938910 bytes)**  
+-	Total Size: **6.2 MB (6201474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ec14ac4d7c26bc5e86644971db8ed4994b29dc3b5772f951e7c92395d582af57`
+-	Image ID: `sha256:850bd1f34f08c8a8d73c1bd16970ac9993ec95e4823f65a170d7e9a88ed91401`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:6b5bb42ae8c8fefbe5ce1250705117a2050e9a7d429cf95a055d86103ebcfcf4`  
-		Last Modified: Thu, 13 Nov 2025 13:36:22 GMT  
-		Size: 5.9 MB (5938401 bytes)  
+	-	`sha256:09a8178665f98401768fbfa7f9f2679c00dc5b0f203e62a7e90e533d2376ffef`  
+		Last Modified: Tue, 27 Jan 2026 16:11:21 GMT  
+		Size: 6.2 MB (6200965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5d567a4599383e250b5c98d5b079ccaf2dd43523fd751db4f7f710273a7cd11`  
-		Last Modified: Wed, 17 Dec 2025 20:01:44 GMT  
+	-	`sha256:e0a23c99e73c6b54e3456f9f8dadb17ed809c58640bada5f411219f44c6c0317`  
+		Last Modified: Tue, 27 Jan 2026 21:09:24 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11` - unknown; unknown
+### `nats:2.11.12` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:5d7fd6762c1b498b75b53ad17bcf0f6bd65ab7ac297f1c2726badf373e8ec298
+$ docker pull nats@sha256:0e5ea369b46cba0ff098f8c984de48876769a68c3552bdaaef3c43c242afe975
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **8.8 KB (8750 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:14f280565fe7cf7a5652e536311d32ce85a7d715d733ea00ae30242dbb47a926`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:cbbf28edee8a02864d028c803e7fd71feaa74ab472e203573f9cb4ff5ee960fa`  
+		Last Modified: Tue, 27 Jan 2026 21:09:24 GMT  
+		Size: 8.8 KB (8750 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `nats:2.11.12` - linux; ppc64le
+
+```console
+$ docker pull nats@sha256:d4d551e835a3962fa062f83a00344388eaa4ff8aca803743b897e7cc11193e0c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.0 MB (5954348 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0bc52efd33943e66d3243abe4f618389b238fb10ba7d3850f554b95a3954b90a`
+-	Entrypoint: `["\/nats-server"]`
+-	Default Command: `["--config","nats-server.conf"]`
+
+```dockerfile
+# Tue, 27 Jan 2026 21:09:35 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
+# Tue, 27 Jan 2026 21:09:35 GMT
+COPY /usr/local/bin/nats-server /nats-server # buildkit
+# Tue, 27 Jan 2026 21:09:36 GMT
+COPY nats-server.conf /nats-server.conf # buildkit
+# Tue, 27 Jan 2026 21:09:36 GMT
+EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
+# Tue, 27 Jan 2026 21:09:36 GMT
+ENTRYPOINT ["/nats-server"]
+# Tue, 27 Jan 2026 21:09:36 GMT
+CMD ["--config" "nats-server.conf"]
+```
+
+-	Layers:
+	-	`sha256:9de13f1b1d93a9485355dc775073c38318f87fc8cde5c87052e2dfb19e2e2c86`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.0 MB (5953840 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
+		Size: 508.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `nats:2.11.12` - unknown; unknown
+
+```console
+$ docker pull nats@sha256:681a00dca93dac72b0a109443ce224f5e1f9b86e6412a5b05583f28db6d47707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3ce48193a21d7c34ec7f67a9d20e1b59dd0a00a9d5c5e6b0b066649adfeed0b`
+-	Image ID: `sha256:d093aaa6ed20dd02fa94ff15758114f2ab0c270508d47c823fc1ed71d15e3145`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0bb9ca97da542f762d33a2aa6805f840ce102c91acc508490ea4e49f5946bbe`  
-		Last Modified: Wed, 17 Dec 2025 20:01:45 GMT  
+	-	`sha256:4f75f45eafb11e5791e2cb75dff74cce48be965a0875fb999bb829152fb3a2cc`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 8.7 KB (8721 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11` - linux; s390x
+### `nats:2.11.12` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:1f9e310c71526998e6eb349ca180c39d37f0c2fb7831d699dfe87ba881175d57
+$ docker pull nats@sha256:bb72684bdd80aa021a0e128b6876a6310d40d5512c92ddd8f81f3d02a202abf5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6311079 bytes)**  
+-	Total Size: **6.3 MB (6326218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e72faa7571f225816a1ea99c9730eea5507d7ab15de308625988e5efb0f7a28`
+-	Image ID: `sha256:7a61d226938c41116e7e2be6ae5a7b824f33c870dab4c4cc845fdf67db5d8436`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:bd05a13ae28973210162b21afbcbcc05250e021622dc82220eabd156bcdd2bf4`  
-		Last Modified: Thu, 13 Nov 2025 13:36:22 GMT  
-		Size: 6.3 MB (6310570 bytes)  
+	-	`sha256:dff26b947f702115a483f894d5a90237a01bee2a42aedfcf32e06b3efb01e9f8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.3 MB (6325708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23ef4c2152d3f58734cb0fe2da596d833fbab184a3b41fe2b192a03046a3887`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11` - unknown; unknown
+### `nats:2.11.12` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:489ee87504c5e516c86965e4281bcc6a9c1b46b1ccd0e609e9de07f8c72fe09e
+$ docker pull nats@sha256:69abd1131dd1e8ea4d190ef9a87bcf7b30038c7487a552fe770a5275a22c74c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13f17b956bea9c9fa5ecf955bc1015904ed90b52b7b035f3098db91245529052`
+-	Image ID: `sha256:75575a1c2a29a663eb2e079a973654a9494ff43d9006b8c692396c0222ca7ca0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4659d54f693e09ad90886c339c37e8009206958112aad31e2fac27900b6f90d4`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
+	-	`sha256:aad8e717d95e6c41af8a4426a11e94cabe9f016226802fe6321b2282e65b79bf`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11` - windows version 10.0.20348.4648; amd64
+## `nats:2.11.12-alpine`
 
 ```console
-$ docker pull nats@sha256:26db46a9db7401a77b42a0b3b45091cfcb0f28495369763772aeecce7e94dbbf
-```
-
--	Docker Version: 23.0.6
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.3 MB (133349797 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:713c5f457a0e2f397cca791a043cfde28cceb65ed9b76301d96dd2a005dbb9ef`
--	Entrypoint: `["C:\\nats-server.exe"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Thu, 08 Jan 2026 23:55:05 GMT
-RUN Apply image 10.0.20348.4648
-# Tue, 13 Jan 2026 23:33:10 GMT
-RUN cmd /S /C #(nop)  ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:33:11 GMT
-RUN cmd /S /C #(nop) COPY file:e7644589d2ea499e4e7ce22c59f43dfa63babfde9b495686bc536e8b72d9c747 in C:\nats-server.exe 
-# Tue, 13 Jan 2026 23:33:11 GMT
-RUN cmd /S /C #(nop) COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:33:12 GMT
-RUN cmd /S /C #(nop)  EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:33:12 GMT
-RUN cmd /S /C #(nop)  ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:33:13 GMT
-RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
-		Size: 126.7 MB (126696821 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f8506dabe196177bb55177f5748c6442fcb40b913f0414dea2d52091341d070`  
-		Last Modified: Tue, 13 Jan 2026 23:33:19 GMT  
-		Size: 1.1 KB (1127 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7e2cf230f6e98d1f394d9ac253a4f805b813725000832e5c228dad36d6622e6`  
-		Last Modified: Tue, 13 Jan 2026 23:33:18 GMT  
-		Size: 6.6 MB (6646940 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed287219c6f696ab71eae3df229cbaa422134410c77fc47fb0816fc6519af5c0`  
-		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
-		Size: 1.7 KB (1709 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:417386e45ae7415abfcbd31a9d400cbfd5cf83a84b435490730f07d5d309b05b`  
-		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
-		Size: 1.1 KB (1068 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2848ea217db632b3932795897f0581660809e0b58f4103c8bde3e6db07bb79bc`  
-		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
-		Size: 1.0 KB (1045 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e2d4c459a92776e1b67f0cdeabad046872376402fb57a26572b36c8ba228bc9`  
-		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
-		Size: 1.1 KB (1087 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `nats:2.11.11-alpine`
-
-```console
-$ docker pull nats@sha256:897156029e76f4663e89ca98a99a5ee1b03b37e2e75e956220f83d2a3e28f7b8
+$ docker pull nats@sha256:8dba3eac34616b90b544bbb6387d2e505f19ea11f3c81505ecf20abfc9ade93b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 12
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
-### `nats:2.11.11-alpine` - linux; amd64
+### `nats:2.11.12-alpine` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:37657aaadc12a875d3c1e554fd7ac3cf691ba74bca4c92bed69eee18d654aa1e
+$ docker pull nats@sha256:171dbbada2160942d7e0f1faef65dcc1ddeaf1ac59b26e6fda24e832fcf493d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.7 MB (10729198 bytes)**  
+-	Total Size: **10.7 MB (10744919 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed6a2ea869961ea3ffa61570365d14a23528bb52350bcd9c4036f7a6e0f57e95`
+-	Image ID: `sha256:a016b6326ea118bd726dcd08f3b849d036a4d6c19cb8017945e60a33507b515a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -10349,21 +10225,21 @@ $ docker pull nats@sha256:37657aaadc12a875d3c1e554fd7ac3cf691ba74bca4c92bed69eee
 ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:03 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:03 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:03 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 20:59:13 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 20:59:13 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:59:13 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -10372,49 +10248,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:daeacfaa01e8117ad225e4f3791b8a4a7af15e8242019195b9922035de034dd8`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 6.9 MB (6925776 bytes)  
+	-	`sha256:d893b90c90ea9ee69b38bf2f7c00b18a6eb9c9c6dcfa49af1cfb99652f79eaa9`  
+		Last Modified: Tue, 27 Jan 2026 20:59:18 GMT  
+		Size: 6.9 MB (6941495 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c03efc089efa33e5f4ecbd7f9abed4dd8da6dbd0f98e90ac8d0706f75adc139`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 560.0 B  
+	-	`sha256:c527a939617516167006397f9fd7725195a0194e8bb401f40ecdfb0ceddbcc36`  
+		Last Modified: Tue, 27 Jan 2026 20:59:17 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cdef138b23adf586bef4b6b73b65b1c95d1320d35d5c626d217217882daeff2d`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 410.0 B  
+	-	`sha256:0f83586936fc9803e55305d263458b3c0adb5e43f7a1ea8179a2d9b5a9dee646`  
+		Last Modified: Tue, 27 Jan 2026 20:59:17 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-alpine` - unknown; unknown
+### `nats:2.11.12-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:7e2c6b516c3b80c7203b2b59b800e76de79a663942365d85d8208440b1d116e6
+$ docker pull nats@sha256:035daa384c43024bf6efadb66e10203da3eb3971963142abcd7fdada1ce609f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.2 KB (14208 bytes)**  
+-	Total Size: **14.2 KB (14209 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:494637d9e503d72a1ac5dab71b03bed41d6ae986be51b3a391c6088362e11039`
+-	Image ID: `sha256:1a85a7b682449c9fc8419f21cde1713d01ffa2ea414f065bb70b68e46803416f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe3b9621795df34ab8378a90eb2526ce6fcae2e6fd12ab2cacf25bc6a90f8c21`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 14.2 KB (14208 bytes)  
+	-	`sha256:7f101a55634e72da94e0c96be866f798bf33152579ff9f879251f12d064cf687`  
+		Last Modified: Tue, 27 Jan 2026 20:59:17 GMT  
+		Size: 14.2 KB (14209 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-alpine` - linux; arm variant v6
+### `nats:2.11.12-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:7dc385ccb17a5d831b52091696a2b9b5c526e0a0cfae1b7793b3384d4ff1e8d8
+$ docker pull nats@sha256:939db8e1aaad23721b9b89d615cfa2710f4d00dfdcc5559f1938eefd0b855290
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10157051 bytes)**  
+-	Total Size: **10.2 MB (10175981 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffb7056376d9e35ed178c2beceb2b7c5ba6566578e8274457482a2c1f6c0a05b`
+-	Image ID: `sha256:e95f168a7be7b407c951ace3fd25d0cc22b4b1b586662e41c61507b926bae36e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -10423,21 +10299,21 @@ $ docker pull nats@sha256:7dc385ccb17a5d831b52091696a2b9b5c526e0a0cfae1b7793b338
 ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:04 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:04 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:04 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 20:56:22 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 20:56:22 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:22 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -10446,49 +10322,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 21:00:10 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1b3a63fa41d951c20d7ba692363f6bd4e0f858cc8d67dc9d41ad45e666cc32b`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
-		Size: 6.7 MB (6652001 bytes)  
+	-	`sha256:5bd66ff36315f1db37189f179a15963188f10219149da03b68bb1991cb07fdb3`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
+		Size: 6.7 MB (6670930 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b10ce74ef4777e28a316eb199c59ea96a8b063fa879e2caccd475ff75305e5b`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
+	-	`sha256:963a7c79c1b1268295590242aeed2ca4aeb4f8651d275f7107a46b972fac03bc`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:031588257558813d6e3040a2e30e14470a4be9068a90e9bafd2fe83527cdbfe0`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
-		Size: 410.0 B  
+	-	`sha256:75259f793dadc65cccf2fa38917fcf7d2fc63e1fe8fa926061550fa1e890d392`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-alpine` - unknown; unknown
+### `nats:2.11.12-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:4c5bf0cbaeb0daa9b0ec35c45de5fde0106fdccb96aa1541d98d1f7ccd3c9424
+$ docker pull nats@sha256:2a58d6f51134fec9cc352e5557b69ac99d77ff1756dde6ddd1bf37e48c5c2893
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.3 KB (14289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22dd7fa2ed0a35ade6bed36f0d04c59687542d146f9b57b2dc327315a445fd2f`
+-	Image ID: `sha256:bb8554060f8042ed41665221edff57532af2052255880bbd6c795b65b00beb60`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c2af0a0a8248021684d4401285c42a870cd3dbec50fd9ce549f336d8f4b20e7e`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
+	-	`sha256:b7d39154aa97fa6fbef9fbbe5ed1025e3cb47d5104f2040a12374d9d50b14691`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
 		Size: 14.3 KB (14289 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-alpine` - linux; arm variant v7
+### `nats:2.11.12-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:735ae6458b17c20b9e258a0866ae4bbaea46cfbb00d5e8ab22aebc80a5ffb7fd
+$ docker pull nats@sha256:2c9a1328a5bfa81c51ea0b4cffa42206fd5a90d6d8dc6845567ef5bb71c25c5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.9 MB (9865930 bytes)**  
+-	Total Size: **9.9 MB (9878112 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a35304e4e5b6e579c7a5db5efeb12c9a1d8eda65deb7079b513a8df0b5148f4d`
+-	Image ID: `sha256:6cc3e744c0f6ecf61a885f164c45242dfb4078db544a3079c8701b8563d0422f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -10497,21 +10373,21 @@ $ docker pull nats@sha256:735ae6458b17c20b9e258a0866ae4bbaea46cfbb00d5e8ab22aebc
 ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:01 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 20:56:52 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 20:56:52 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -10520,123 +10396,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed7f19a2d1b2940e8fce330263571bccdb6f920b72d56315131c68b073c1d78f`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
-		Size: 6.6 MB (6643404 bytes)  
+	-	`sha256:b1ca32a1e1778b86e8374ccd0679c82724a791e484a81984eb7a671cd74cd5f0`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
+		Size: 6.7 MB (6655584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4c7a5e50586ea9c442b0be0c00982bae43b84d491b2c5517ae04691575acf13`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
-		Size: 560.0 B  
+	-	`sha256:9365c66ef25c96948cc1853358cba083103e8b3865c4e84304a8bc9438c00542`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c31c0e7ddd3f6b1ea573c7459b2f9e0ee5f7cf42e3b6c77def6b38b4554ceb9e`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
-		Size: 411.0 B  
+	-	`sha256:e4574cf0a465e3e1b784a442cea92d7405d2dde060274be94c92baea2251262f`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-alpine` - unknown; unknown
+### `nats:2.11.12-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:44007647a4883e01f8cf2d90bb8f0724542b3df1c17765515513a0de0f6fed56
+$ docker pull nats@sha256:319c7cecc773cdb9b36ed4183049cd1b4e611a28264138942e95c2ea29d21a03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.3 KB (14289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741b9d1f91738c76efcb0d982d2d28ba1f7a3751d1eeddc5dbd02feda5c5634c`
+-	Image ID: `sha256:05ebe6e5bd7eaf7bd94b70532968f06e13551ce81a4d289be8176b72c9a11493`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d76e68e153cd066ad50b8ee467a7f6b21019ba5bf79756129878d416a0afe78a`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
+	-	`sha256:94703004d92e4309a42a25f0a68b4fa7117ec2963e12330b9a42a00a078213d6`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
 		Size: 14.3 KB (14289 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-alpine` - linux; arm64 variant v8
+### `nats:2.11.12-alpine` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:0290bb1a03865909e1582bd5771b663dc01867ddbb6457e7ab466291c21930ee
+$ docker pull nats@sha256:c39d513611a81c04cdb8724295867cf8270be7277256e9fb9489c6a10c0d15cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10488875 bytes)**  
+-	Total Size: **10.1 MB (10144257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d73b087461ff9d9bed852d676bb5297208fc3599588350b2d4ff4a30c0f3a7f`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
-
-```dockerfile
-# Wed, 08 Oct 2025 11:04:56 GMT
-ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
-# Wed, 08 Oct 2025 11:04:56 GMT
-CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:10 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:10 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:10 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:10 GMT
-COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:10 GMT
-COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:10 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:10 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:10 GMT
-CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
-		Size: 4.1 MB (4138069 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d9a8d8f7bf29437edd604b1e53754f2dae2c72dc6ebda0780fa4a1e759b348f`  
-		Last Modified: Wed, 17 Dec 2025 19:56:15 GMT  
-		Size: 6.3 MB (6349834 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5df0fb25a1f6ad9f2815c93e6d729bf81c0b8ba92be8473b64356b8deadd4db6`  
-		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
-		Size: 560.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48966173e6aa710f8eb301f0ae2945222ee39002089cab0206256835b558c2ab`  
-		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
-		Size: 412.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2.11.11-alpine` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:1abf5fc157740f9b2eb0640d2645a7f26f0cbb13b7873818187ea1c8561c21e9
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.3 KB (14313 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d15f1bfe0cd83971dae059c79ac6aac4d559375c89e07c28e366ef359b4a6d1b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:026c1e90b904e27ec00fb498f623a66c668d41f90aa0717d1157d7bec6b808be`  
-		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
-		Size: 14.3 KB (14313 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2.11.11-alpine` - linux; ppc64le
-
-```console
-$ docker pull nats@sha256:56ad762cdb2c9e236441492cc3ed1ccb4740b31d1f86619d1083dfa921a8fe31
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.1 MB (10131479 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8dc376c492980965d023efd6d7f3ba1606537679af50bc1d630cfc40549bfc01`
+-	Image ID: `sha256:b98042b2ad8140abbceb75f5ac88f1f38233db8aef64236741b2db9b98d5fbbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -10645,21 +10447,21 @@ $ docker pull nats@sha256:56ad762cdb2c9e236441492cc3ed1ccb4740b31d1f86619d1083df
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:01 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:55:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:55:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:01 GMT
+# Tue, 27 Jan 2026 21:06:51 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 21:06:51 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 21:06:51 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:06:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -10668,49 +10470,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0540149968c2042f75d2bb82489e5fb387dc85fc24cf49bb5df87ea9c499a630`  
-		Last Modified: Wed, 17 Dec 2025 19:55:21 GMT  
-		Size: 6.4 MB (6398269 bytes)  
+	-	`sha256:032210a4c59a01ba575bc5db68ddd836614331d8324e0022e04fb3ca44e6595c`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 6.4 MB (6411045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 560.0 B  
+	-	`sha256:dcf0f099d527269dc43593793ecaadda88e477182e35413d281eae5fca8edcd9`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 409.0 B  
+	-	`sha256:3d81715261f9c8109cdf9b0d19000e23c890a8230df8e1249fb38dfcc69818e5`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-alpine` - unknown; unknown
+### `nats:2.11.12-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:273efe4a708c1f0753cd18700c5e0f86ee343ccee15aa5d76ff5619172762d16
+$ docker pull nats@sha256:b6d140961d8a484596c2b49811167c8dd931b0cdf603a75852a9792a60a261d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.3 KB (14253 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98a84f68f7181c3114402fe0b085ca863012cf769f139e43826f021efe0525e7`
+-	Image ID: `sha256:74ecdd17552991bd347d02836a3004dcabae1d76f97cb40a98979be5f3100a43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5cbbad3ec8b1231789cb5122db6bc1e5b53b60c2fe8893d28ac5a83c6013aae0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:14 GMT  
+	-	`sha256:7be7f0404d235765a3203de556dddaf193f9dd175288013810fa9f2127de3b93`  
+		Last Modified: Tue, 27 Jan 2026 21:07:04 GMT  
 		Size: 14.3 KB (14253 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-alpine` - linux; s390x
+### `nats:2.11.12-alpine` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:53f0ef8dd4d378336d839097a56ca9ed85ca806ddb24606f8b0f889458c26145
+$ docker pull nats@sha256:4d4d6139e032929e2e6df4fad55ca2e200848f7e6e1be43795b4051f3242ca6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 MB (10418567 bytes)**  
+-	Total Size: **10.4 MB (10435679 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10d2660e42362183215431a9e5e7882a94cebde5b7cf4e67cdc4a59c8ca48c4a`
+-	Image ID: `sha256:8cac1d1782006a5678be0f768c85a2d38d5b6c742e81bfd009b069615c001367`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -10719,21 +10521,21 @@ $ docker pull nats@sha256:53f0ef8dd4d378336d839097a56ca9ed85ca806ddb24606f8b0f88
 ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:26 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:55:26 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:55:26 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 21:00:25 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 21:00:25 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:00:25 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -10742,70 +10544,68 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39989a106452e3f995d0fa99a07e1b14cf47a556b51649b8ed4805b59dbcc8d0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
-		Size: 6.8 MB (6768355 bytes)  
+	-	`sha256:1c990f536d967acbb3d4bfa0e53e8f4ca23be68a64556670dc87962991662918`  
+		Last Modified: Tue, 27 Jan 2026 21:00:32 GMT  
+		Size: 6.8 MB (6785464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77c0af3a8d530b2721cefaa7ac66de1d847d40627c4702e294c0076cab8b3626`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
-		Size: 560.0 B  
+	-	`sha256:642ee0d733ed7fe9431dad0af1c6ed3983cbbbfb05fbc8d1919485cd05640eab`  
+		Last Modified: Tue, 27 Jan 2026 21:00:33 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8802f8189ffe02b2c600422996b12b86301efb291347842b8642da932c32415`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
-		Size: 408.0 B  
+	-	`sha256:7b46b008599a09ef696f3fcaa512d23159f0c9a572fc46bea707b34860744fb1`  
+		Last Modified: Tue, 27 Jan 2026 21:00:35 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-alpine` - unknown; unknown
+### `nats:2.11.12-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:2ab0e70989ae6d9ec60beaec1d614cf5bb4183e639133c9ef6dbe9bf9410bdb2
+$ docker pull nats@sha256:3a65eb59a7e0c499c995e6e988a2419bbddfb4749e054ec92879c33cc5d02c55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.2 KB (14209 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1735b7a2e40275bda26a3b74599f7785f4e0281f1f0d983c168ea7288e28b89`
+-	Image ID: `sha256:68b24095d5fc3e8a613857d79c57396b1c0e708b994b339b84b5570617756ad8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d2c339961116eb7ff849a600d784630174cb48191bcdab600a41b9af61220cf4`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
+	-	`sha256:22b25eb5aea4e0fb947dfbbf58eb1dfeb8abea347cb66bea7948a3e6bd0bde11`  
+		Last Modified: Tue, 27 Jan 2026 21:00:32 GMT  
 		Size: 14.2 KB (14209 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `nats:2.11.11-alpine3.22`
+## `nats:2.11.12-alpine3.22`
 
 ```console
-$ docker pull nats@sha256:897156029e76f4663e89ca98a99a5ee1b03b37e2e75e956220f83d2a3e28f7b8
+$ docker pull nats@sha256:8dba3eac34616b90b544bbb6387d2e505f19ea11f3c81505ecf20abfc9ade93b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 12
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
-### `nats:2.11.11-alpine3.22` - linux; amd64
+### `nats:2.11.12-alpine3.22` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:37657aaadc12a875d3c1e554fd7ac3cf691ba74bca4c92bed69eee18d654aa1e
+$ docker pull nats@sha256:171dbbada2160942d7e0f1faef65dcc1ddeaf1ac59b26e6fda24e832fcf493d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.7 MB (10729198 bytes)**  
+-	Total Size: **10.7 MB (10744919 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed6a2ea869961ea3ffa61570365d14a23528bb52350bcd9c4036f7a6e0f57e95`
+-	Image ID: `sha256:a016b6326ea118bd726dcd08f3b849d036a4d6c19cb8017945e60a33507b515a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -10814,21 +10614,21 @@ $ docker pull nats@sha256:37657aaadc12a875d3c1e554fd7ac3cf691ba74bca4c92bed69eee
 ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:03 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:03 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:03 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 20:59:13 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 20:59:13 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:59:13 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:03 GMT
+# Tue, 27 Jan 2026 20:59:13 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -10837,49 +10637,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:daeacfaa01e8117ad225e4f3791b8a4a7af15e8242019195b9922035de034dd8`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 6.9 MB (6925776 bytes)  
+	-	`sha256:d893b90c90ea9ee69b38bf2f7c00b18a6eb9c9c6dcfa49af1cfb99652f79eaa9`  
+		Last Modified: Tue, 27 Jan 2026 20:59:18 GMT  
+		Size: 6.9 MB (6941495 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c03efc089efa33e5f4ecbd7f9abed4dd8da6dbd0f98e90ac8d0706f75adc139`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 560.0 B  
+	-	`sha256:c527a939617516167006397f9fd7725195a0194e8bb401f40ecdfb0ceddbcc36`  
+		Last Modified: Tue, 27 Jan 2026 20:59:17 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cdef138b23adf586bef4b6b73b65b1c95d1320d35d5c626d217217882daeff2d`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 410.0 B  
+	-	`sha256:0f83586936fc9803e55305d263458b3c0adb5e43f7a1ea8179a2d9b5a9dee646`  
+		Last Modified: Tue, 27 Jan 2026 20:59:17 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-alpine3.22` - unknown; unknown
+### `nats:2.11.12-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:7e2c6b516c3b80c7203b2b59b800e76de79a663942365d85d8208440b1d116e6
+$ docker pull nats@sha256:035daa384c43024bf6efadb66e10203da3eb3971963142abcd7fdada1ce609f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.2 KB (14208 bytes)**  
+-	Total Size: **14.2 KB (14209 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:494637d9e503d72a1ac5dab71b03bed41d6ae986be51b3a391c6088362e11039`
+-	Image ID: `sha256:1a85a7b682449c9fc8419f21cde1713d01ffa2ea414f065bb70b68e46803416f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe3b9621795df34ab8378a90eb2526ce6fcae2e6fd12ab2cacf25bc6a90f8c21`  
-		Last Modified: Wed, 17 Dec 2025 19:56:08 GMT  
-		Size: 14.2 KB (14208 bytes)  
+	-	`sha256:7f101a55634e72da94e0c96be866f798bf33152579ff9f879251f12d064cf687`  
+		Last Modified: Tue, 27 Jan 2026 20:59:17 GMT  
+		Size: 14.2 KB (14209 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-alpine3.22` - linux; arm variant v6
+### `nats:2.11.12-alpine3.22` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:7dc385ccb17a5d831b52091696a2b9b5c526e0a0cfae1b7793b3384d4ff1e8d8
+$ docker pull nats@sha256:939db8e1aaad23721b9b89d615cfa2710f4d00dfdcc5559f1938eefd0b855290
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10157051 bytes)**  
+-	Total Size: **10.2 MB (10175981 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffb7056376d9e35ed178c2beceb2b7c5ba6566578e8274457482a2c1f6c0a05b`
+-	Image ID: `sha256:e95f168a7be7b407c951ace3fd25d0cc22b4b1b586662e41c61507b926bae36e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -10888,21 +10688,21 @@ $ docker pull nats@sha256:7dc385ccb17a5d831b52091696a2b9b5c526e0a0cfae1b7793b338
 ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:04 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:04 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:04 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 20:56:22 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 20:56:22 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:22 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:04 GMT
+# Tue, 27 Jan 2026 20:56:22 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -10911,49 +10711,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 21:00:10 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1b3a63fa41d951c20d7ba692363f6bd4e0f858cc8d67dc9d41ad45e666cc32b`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
-		Size: 6.7 MB (6652001 bytes)  
+	-	`sha256:5bd66ff36315f1db37189f179a15963188f10219149da03b68bb1991cb07fdb3`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
+		Size: 6.7 MB (6670930 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b10ce74ef4777e28a316eb199c59ea96a8b063fa879e2caccd475ff75305e5b`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
+	-	`sha256:963a7c79c1b1268295590242aeed2ca4aeb4f8651d275f7107a46b972fac03bc`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:031588257558813d6e3040a2e30e14470a4be9068a90e9bafd2fe83527cdbfe0`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
-		Size: 410.0 B  
+	-	`sha256:75259f793dadc65cccf2fa38917fcf7d2fc63e1fe8fa926061550fa1e890d392`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-alpine3.22` - unknown; unknown
+### `nats:2.11.12-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:4c5bf0cbaeb0daa9b0ec35c45de5fde0106fdccb96aa1541d98d1f7ccd3c9424
+$ docker pull nats@sha256:2a58d6f51134fec9cc352e5557b69ac99d77ff1756dde6ddd1bf37e48c5c2893
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.3 KB (14289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22dd7fa2ed0a35ade6bed36f0d04c59687542d146f9b57b2dc327315a445fd2f`
+-	Image ID: `sha256:bb8554060f8042ed41665221edff57532af2052255880bbd6c795b65b00beb60`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c2af0a0a8248021684d4401285c42a870cd3dbec50fd9ce549f336d8f4b20e7e`  
-		Last Modified: Wed, 17 Dec 2025 19:56:09 GMT  
+	-	`sha256:b7d39154aa97fa6fbef9fbbe5ed1025e3cb47d5104f2040a12374d9d50b14691`  
+		Last Modified: Tue, 27 Jan 2026 20:56:27 GMT  
 		Size: 14.3 KB (14289 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-alpine3.22` - linux; arm variant v7
+### `nats:2.11.12-alpine3.22` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:735ae6458b17c20b9e258a0866ae4bbaea46cfbb00d5e8ab22aebc80a5ffb7fd
+$ docker pull nats@sha256:2c9a1328a5bfa81c51ea0b4cffa42206fd5a90d6d8dc6845567ef5bb71c25c5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.9 MB (9865930 bytes)**  
+-	Total Size: **9.9 MB (9878112 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a35304e4e5b6e579c7a5db5efeb12c9a1d8eda65deb7079b513a8df0b5148f4d`
+-	Image ID: `sha256:6cc3e744c0f6ecf61a885f164c45242dfb4078db544a3079c8701b8563d0422f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -10962,21 +10762,21 @@ $ docker pull nats@sha256:735ae6458b17c20b9e258a0866ae4bbaea46cfbb00d5e8ab22aebc
 ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:01 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 20:56:52 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 20:56:52 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:01 GMT
+# Tue, 27 Jan 2026 20:56:52 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -10985,123 +10785,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed7f19a2d1b2940e8fce330263571bccdb6f920b72d56315131c68b073c1d78f`  
-		Last Modified: Wed, 17 Dec 2025 19:56:06 GMT  
-		Size: 6.6 MB (6643404 bytes)  
+	-	`sha256:b1ca32a1e1778b86e8374ccd0679c82724a791e484a81984eb7a671cd74cd5f0`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
+		Size: 6.7 MB (6655584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4c7a5e50586ea9c442b0be0c00982bae43b84d491b2c5517ae04691575acf13`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
-		Size: 560.0 B  
+	-	`sha256:9365c66ef25c96948cc1853358cba083103e8b3865c4e84304a8bc9438c00542`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c31c0e7ddd3f6b1ea573c7459b2f9e0ee5f7cf42e3b6c77def6b38b4554ceb9e`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
-		Size: 411.0 B  
+	-	`sha256:e4574cf0a465e3e1b784a442cea92d7405d2dde060274be94c92baea2251262f`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-alpine3.22` - unknown; unknown
+### `nats:2.11.12-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:44007647a4883e01f8cf2d90bb8f0724542b3df1c17765515513a0de0f6fed56
+$ docker pull nats@sha256:319c7cecc773cdb9b36ed4183049cd1b4e611a28264138942e95c2ea29d21a03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.3 KB (14289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741b9d1f91738c76efcb0d982d2d28ba1f7a3751d1eeddc5dbd02feda5c5634c`
+-	Image ID: `sha256:05ebe6e5bd7eaf7bd94b70532968f06e13551ce81a4d289be8176b72c9a11493`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d76e68e153cd066ad50b8ee467a7f6b21019ba5bf79756129878d416a0afe78a`  
-		Last Modified: Wed, 17 Dec 2025 19:56:05 GMT  
+	-	`sha256:94703004d92e4309a42a25f0a68b4fa7117ec2963e12330b9a42a00a078213d6`  
+		Last Modified: Tue, 27 Jan 2026 20:56:56 GMT  
 		Size: 14.3 KB (14289 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-alpine3.22` - linux; arm64 variant v8
+### `nats:2.11.12-alpine3.22` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:0290bb1a03865909e1582bd5771b663dc01867ddbb6457e7ab466291c21930ee
+$ docker pull nats@sha256:c39d513611a81c04cdb8724295867cf8270be7277256e9fb9489c6a10c0d15cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10488875 bytes)**  
+-	Total Size: **10.1 MB (10144257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d73b087461ff9d9bed852d676bb5297208fc3599588350b2d4ff4a30c0f3a7f`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
-
-```dockerfile
-# Wed, 08 Oct 2025 11:04:56 GMT
-ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
-# Wed, 08 Oct 2025 11:04:56 GMT
-CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:56:10 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:56:10 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:56:10 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:56:10 GMT
-COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:56:10 GMT
-COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:56:10 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:56:10 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:56:10 GMT
-CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
-		Size: 4.1 MB (4138069 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d9a8d8f7bf29437edd604b1e53754f2dae2c72dc6ebda0780fa4a1e759b348f`  
-		Last Modified: Wed, 17 Dec 2025 19:56:15 GMT  
-		Size: 6.3 MB (6349834 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5df0fb25a1f6ad9f2815c93e6d729bf81c0b8ba92be8473b64356b8deadd4db6`  
-		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
-		Size: 560.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48966173e6aa710f8eb301f0ae2945222ee39002089cab0206256835b558c2ab`  
-		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
-		Size: 412.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2.11.11-alpine3.22` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:1abf5fc157740f9b2eb0640d2645a7f26f0cbb13b7873818187ea1c8561c21e9
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.3 KB (14313 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d15f1bfe0cd83971dae059c79ac6aac4d559375c89e07c28e366ef359b4a6d1b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:026c1e90b904e27ec00fb498f623a66c668d41f90aa0717d1157d7bec6b808be`  
-		Last Modified: Wed, 17 Dec 2025 19:56:14 GMT  
-		Size: 14.3 KB (14313 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2.11.11-alpine3.22` - linux; ppc64le
-
-```console
-$ docker pull nats@sha256:56ad762cdb2c9e236441492cc3ed1ccb4740b31d1f86619d1083dfa921a8fe31
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.1 MB (10131479 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8dc376c492980965d023efd6d7f3ba1606537679af50bc1d630cfc40549bfc01`
+-	Image ID: `sha256:b98042b2ad8140abbceb75f5ac88f1f38233db8aef64236741b2db9b98d5fbbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -11110,21 +10836,21 @@ $ docker pull nats@sha256:56ad762cdb2c9e236441492cc3ed1ccb4740b31d1f86619d1083df
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:01 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:55:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:55:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:01 GMT
+# Tue, 27 Jan 2026 21:06:51 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 21:06:51 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 21:06:51 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:06:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -11133,49 +10859,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0540149968c2042f75d2bb82489e5fb387dc85fc24cf49bb5df87ea9c499a630`  
-		Last Modified: Wed, 17 Dec 2025 19:55:21 GMT  
-		Size: 6.4 MB (6398269 bytes)  
+	-	`sha256:032210a4c59a01ba575bc5db68ddd836614331d8324e0022e04fb3ca44e6595c`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 6.4 MB (6411045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 560.0 B  
+	-	`sha256:dcf0f099d527269dc43593793ecaadda88e477182e35413d281eae5fca8edcd9`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 409.0 B  
+	-	`sha256:3d81715261f9c8109cdf9b0d19000e23c890a8230df8e1249fb38dfcc69818e5`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-alpine3.22` - unknown; unknown
+### `nats:2.11.12-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:273efe4a708c1f0753cd18700c5e0f86ee343ccee15aa5d76ff5619172762d16
+$ docker pull nats@sha256:b6d140961d8a484596c2b49811167c8dd931b0cdf603a75852a9792a60a261d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.3 KB (14253 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98a84f68f7181c3114402fe0b085ca863012cf769f139e43826f021efe0525e7`
+-	Image ID: `sha256:74ecdd17552991bd347d02836a3004dcabae1d76f97cb40a98979be5f3100a43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5cbbad3ec8b1231789cb5122db6bc1e5b53b60c2fe8893d28ac5a83c6013aae0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:14 GMT  
+	-	`sha256:7be7f0404d235765a3203de556dddaf193f9dd175288013810fa9f2127de3b93`  
+		Last Modified: Tue, 27 Jan 2026 21:07:04 GMT  
 		Size: 14.3 KB (14253 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-alpine3.22` - linux; s390x
+### `nats:2.11.12-alpine3.22` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:53f0ef8dd4d378336d839097a56ca9ed85ca806ddb24606f8b0f889458c26145
+$ docker pull nats@sha256:4d4d6139e032929e2e6df4fad55ca2e200848f7e6e1be43795b4051f3242ca6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 MB (10418567 bytes)**  
+-	Total Size: **10.4 MB (10435679 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10d2660e42362183215431a9e5e7882a94cebde5b7cf4e67cdc4a59c8ca48c4a`
+-	Image ID: `sha256:8cac1d1782006a5678be0f768c85a2d38d5b6c742e81bfd009b069615c001367`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -11184,21 +10910,21 @@ $ docker pull nats@sha256:53f0ef8dd4d378336d839097a56ca9ed85ca806ddb24606f8b0f88
 ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:26 GMT
-ENV NATS_SERVER=2.11.11
-# Wed, 17 Dec 2025 19:55:26 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Wed, 17 Dec 2025 19:55:26 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='8d8507c6bac06edf19f1ff3b556074826d94f09223dc4f38184c408491d8be6f' ;;     armhf) natsArch='arm6'; sha256='b08c2bfe4be0c5056fe72f7b11158ac9c9c4bee40d16957bcf2b3a12c732317a' ;;     armv7) natsArch='arm7'; sha256='c8ba78e993694603262bc0d755d3947e7eb4ca6680e70092260925f2dca61a4d' ;;     x86_64) natsArch='amd64'; sha256='566ebc02bd718adf4f28b193f2735c3217eaaddff4ccb830de654b230fba86e5' ;;     x86) natsArch='386'; sha256='e7cbfc877aebca367b613a76336dd1046741b6d77f4bd5259c8e31e29cb59f0f' ;;     s390x) natsArch='s390x'; sha256='243baad382d7347d485038b97f9357c5796f533ed94408fac0fe5bcbda30d2b6' ;;     ppc64le) natsArch='ppc64le'; sha256='949a4ebb2685aff22ce72b887ac3fb53861f5eb9acca3c782bad85aecc8dfe62' ;;     loong64) natsArch='loong64'; sha256='5acc16777d0690bb9e31ebc3f2c41793964a4290b66265132fb712f8ad2dd310' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 21:00:25 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 21:00:25 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='86364a25aded16d070f4c361412aa178318e267d213d08d86932010756ea387c' ;;     armhf) natsArch='arm6'; sha256='6b41b87d8fc849a61aea8773caa46dc00987936e0e4e7960b7c95b8d658fff43' ;;     armv7) natsArch='arm7'; sha256='dce4acaefe771379cd4251f9483e6daa45b417013087313bd7c9d4332bc1c72f' ;;     x86_64) natsArch='amd64'; sha256='4a1a890d534e383e04dda4a61aa09c8da8989702a007a5260af8c29e1ac808f4' ;;     x86) natsArch='386'; sha256='8edea23f6d8bfd48967c80c747cde7fff6437efa1e3207a506a5ac71d70c6fcd' ;;     s390x) natsArch='s390x'; sha256='7bafc5f3a8fc95bdcbeb73edafcbdb5c73ddd4277180ff2f41cdc78c3a1715c7' ;;     ppc64le) natsArch='ppc64le'; sha256='be0864949657e48d7f8950366f77c7529a38a9fce3b8b9b0c642cc9c4120bf67' ;;     loong64) natsArch='loong64'; sha256='fdf489203eaa086a7b515d21a7bbea2d5f85a3d200c8f3cffd817d721c02d102' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:00:25 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:26 GMT
+# Tue, 27 Jan 2026 21:00:25 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -11207,940 +10933,696 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39989a106452e3f995d0fa99a07e1b14cf47a556b51649b8ed4805b59dbcc8d0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
-		Size: 6.8 MB (6768355 bytes)  
+	-	`sha256:1c990f536d967acbb3d4bfa0e53e8f4ca23be68a64556670dc87962991662918`  
+		Last Modified: Tue, 27 Jan 2026 21:00:32 GMT  
+		Size: 6.8 MB (6785464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77c0af3a8d530b2721cefaa7ac66de1d847d40627c4702e294c0076cab8b3626`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
-		Size: 560.0 B  
+	-	`sha256:642ee0d733ed7fe9431dad0af1c6ed3983cbbbfb05fbc8d1919485cd05640eab`  
+		Last Modified: Tue, 27 Jan 2026 21:00:33 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8802f8189ffe02b2c600422996b12b86301efb291347842b8642da932c32415`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
-		Size: 408.0 B  
+	-	`sha256:7b46b008599a09ef696f3fcaa512d23159f0c9a572fc46bea707b34860744fb1`  
+		Last Modified: Tue, 27 Jan 2026 21:00:35 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-alpine3.22` - unknown; unknown
+### `nats:2.11.12-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:2ab0e70989ae6d9ec60beaec1d614cf5bb4183e639133c9ef6dbe9bf9410bdb2
+$ docker pull nats@sha256:3a65eb59a7e0c499c995e6e988a2419bbddfb4749e054ec92879c33cc5d02c55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.2 KB (14209 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1735b7a2e40275bda26a3b74599f7785f4e0281f1f0d983c168ea7288e28b89`
+-	Image ID: `sha256:68b24095d5fc3e8a613857d79c57396b1c0e708b994b339b84b5570617756ad8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d2c339961116eb7ff849a600d784630174cb48191bcdab600a41b9af61220cf4`  
-		Last Modified: Wed, 17 Dec 2025 19:55:33 GMT  
+	-	`sha256:22b25eb5aea4e0fb947dfbbf58eb1dfeb8abea347cb66bea7948a3e6bd0bde11`  
+		Last Modified: Tue, 27 Jan 2026 21:00:32 GMT  
 		Size: 14.2 KB (14209 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `nats:2.11.11-linux`
+## `nats:2.11.12-linux`
 
 ```console
-$ docker pull nats@sha256:f0d865f58292bf8754585ce2de9ee21ec7a726582b38af3cd7eabf75cdf05e76
+$ docker pull nats@sha256:c5958cb0ceab10e97376a80f63082584d2e2eb665730badcde25ae282b3a219a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 12
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
-### `nats:2.11.11-linux` - linux; amd64
+### `nats:2.11.12-linux` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:a89fbea1a99e4055b5572e8c65d04b4bf287f8077e84dd04ed5653db89f09077
+$ docker pull nats@sha256:05710ffc941d2088835e0a262af3551146aeb8272603ea5581a42058a2a501f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6469438 bytes)**  
+-	Total Size: **6.5 MB (6484785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f7ebcac7a0def3742578d8e675fb50e54906372e1a2b1f5953ac61501e5f91b`
+-	Image ID: `sha256:7226786c95fada611a8cb3c15271a2b06a4be17fc41b9a629c55f78d9451a3df`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fce06af59f4edea8e6a39ec6a3c28424c4e5ddd037792c3e75733a9471eaf096`  
-		Last Modified: Thu, 13 Nov 2025 13:36:23 GMT  
-		Size: 6.5 MB (6468928 bytes)  
+	-	`sha256:8aba39afce5a8ec0f55fd623d29dab10aadce3502e19759c4f814bd5fe134d2a`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.5 MB (6484275 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18609ed747d6a4ad480b652e95ca06e16e3cbf24b265a86cf0631970fbe1d7d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+	-	`sha256:3c8406455bd20ed590ca501844b12110b8a0a85c7d2a1976cc18a0ce9fff846f`  
+		Last Modified: Tue, 27 Jan 2026 21:10:22 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-linux` - unknown; unknown
+### `nats:2.11.12-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:5b7ee4a16cffd94b8dec024236c00319dd85ce6e865cba1757d95a0b31db6e44
+$ docker pull nats@sha256:26ead9ee78608ad66938179a0f207dcb67906800454a9722b59deeb7e424a621
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21dd879df72c6d5080bf95b4fcef87494a2abb1358676bc2b9ae2ea1e3b6d7d9`
+-	Image ID: `sha256:b41f378760c333c5bd37b6361b15dc8160588a28d5389c67e674bd46371701ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:179ab6e9cbd9813b454f8696a4253402cf689bdea345cd212306fbc38a7ea1f4`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+	-	`sha256:b880480df4c40baf0accc72086a83d38c32ab398e8aeffe9593a8d5002a386d3`  
+		Last Modified: Tue, 27 Jan 2026 21:10:22 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-linux` - linux; arm variant v6
+### `nats:2.11.12-linux` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:020b69841c69b36a366422618ad59f6cf96b6f5d80f93dd28a335af41d976069
+$ docker pull nats@sha256:fa223500c437f8c6d9c21b7c2e5117603cea897b5b15a6aea2407dec5fcc71c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 MB (6195861 bytes)**  
+-	Total Size: **6.2 MB (6207207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:175f51c4d06e1d594936b00b74e76ad8fde7c20529490efa35be904facd418f0`
+-	Image ID: `sha256:78dc0f7f4f85b4b2246a642529123cf949f75a49578dccb27584e4f19c47da8d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:b361a2c55cb3b944a1ae9aad6ab14384b077b48043f5b193aa8d379899c1b32b`  
-		Last Modified: Thu, 13 Nov 2025 13:36:18 GMT  
-		Size: 6.2 MB (6195352 bytes)  
+	-	`sha256:06a77c76b56d99c53574ed3b364e438fed0fb044204148b1fbb405116172a248`  
+		Last Modified: Tue, 27 Jan 2026 16:11:24 GMT  
+		Size: 6.2 MB (6206697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61a19d5c228c083fbe1a67a0f3cdf4c51346b3c9a899fef55504732dcdca0f6b`  
-		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
-		Size: 509.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2.11.11-linux` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:d8af33450c2b813b7fc242a65db98df97af6ec82b2d9949cbcf5ac753ad0fef5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8751 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70258e5c267180de234fc44d60b8b1db89d960bba523a219bb25bb6aebc93d26`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:a3e193f7c22b5a13a7722c27920c9aa347f5b58e37fb70b337e4fc24105610fb`  
-		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
-		Size: 8.8 KB (8751 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2.11.11-linux` - linux; arm variant v7
-
-```console
-$ docker pull nats@sha256:f1619aec8673524ea84787881f3796dbed7ea79026d656030435d2148ca7b675
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 MB (6183961 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b777e919e063da7287021b30699caffc1c615f6be4783c1f067324786261892e`
--	Entrypoint: `["\/nats-server"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Wed, 17 Dec 2025 20:05:54 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:05:54 GMT
-COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:05:54 GMT
-COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:05:54 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:05:54 GMT
-ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:05:54 GMT
-CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:fb69282942f9b02d34aa79ca11ecffef12fe64d0b450e2f16e28abe808c16f09`  
-		Last Modified: Thu, 13 Nov 2025 13:36:19 GMT  
-		Size: 6.2 MB (6183452 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e8d03f22ec97e3d41938ed9727607f79ff9100cfbbe5671e95f0bfd1502b830`  
-		Last Modified: Wed, 17 Dec 2025 20:05:59 GMT  
-		Size: 509.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2.11.11-linux` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:7358bf0d54efd35471cfba7d2cc748fb9eba3e0a715f8e1dbed8d570a473f422
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8751 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8310222ea9ceb137260617064c6b61f5b8cf370e9800b073bdef69dac39a2f0f`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:b5e10886f1da3786806363d39e9ed4659f7dc14176ea47c46b52beda2398c923`  
-		Last Modified: Wed, 17 Dec 2025 20:05:59 GMT  
-		Size: 8.8 KB (8751 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2.11.11-linux` - linux; arm64 variant v8
-
-```console
-$ docker pull nats@sha256:3143def571db6ac61d5f4b0dbb1bd089223ba9faa0fadc1c66840b462a2adce3
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5887869 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46b132b85ccc17e70b169b15d22d4f235b5d669e0d3ce46eadce87f74085508f`
--	Entrypoint: `["\/nats-server"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Wed, 17 Dec 2025 20:00:44 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:44 GMT
-COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:44 GMT
-COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:44 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:44 GMT
-ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:44 GMT
-CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:8249f4689b6b98276351b7df09241ed5a4ee97d63a285d620f19033b6fbf14c9`  
-		Last Modified: Thu, 13 Nov 2025 13:36:18 GMT  
-		Size: 5.9 MB (5887359 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3994ad9c32980fd20dfbbb307833a48d15524ba3b8ce29216aff143e83250694`  
-		Last Modified: Wed, 17 Dec 2025 20:00:49 GMT  
+	-	`sha256:d4d4e047a8a0db1cc2568f5435a31f22176e300b8e52b87a52874dfda33adddb`  
+		Last Modified: Tue, 27 Jan 2026 21:10:01 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-linux` - unknown; unknown
+### `nats:2.11.12-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:29c9900eab6f0a566b30c76ca7630f414c9c822de75716660c36b7f64c033df6
+$ docker pull nats@sha256:231c96f94bbed541cba665ad1e77bc23f5d7b9bedaaae085dc44b2ada1e4c631
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8780 bytes)**  
+-	Total Size: **8.8 KB (8750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26d8165c63b8bb52293d7faf39af11d999636011c3a2d43ee2c3c079b4b35699`
+-	Image ID: `sha256:8f9db0a6b626d5772a59a68eef1dba490c0e8c59761d3f0c792bace41685de3b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9f88a7d23513019ac45fafe7a08331e232ed4f21043cb362893eac6510da2d29`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
-		Size: 8.8 KB (8780 bytes)  
+	-	`sha256:892ab270c1620fc27fa82b1af462e231fcce1e296e8acf4a9f8fce215263595d`  
+		Last Modified: Tue, 27 Jan 2026 21:10:01 GMT  
+		Size: 8.8 KB (8750 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-linux` - linux; ppc64le
+### `nats:2.11.12-linux` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:6d88cff6d748764dd249693a900442cf722d789663ab65e0e7c956ece695e238
+$ docker pull nats@sha256:53e5e9fe1d692c8e8c6453060567acb16b5d5a53dc0abeea26e1effa25022c40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5938910 bytes)**  
+-	Total Size: **6.2 MB (6201474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ec14ac4d7c26bc5e86644971db8ed4994b29dc3b5772f951e7c92395d582af57`
+-	Image ID: `sha256:850bd1f34f08c8a8d73c1bd16970ac9993ec95e4823f65a170d7e9a88ed91401`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:6b5bb42ae8c8fefbe5ce1250705117a2050e9a7d429cf95a055d86103ebcfcf4`  
-		Last Modified: Thu, 13 Nov 2025 13:36:22 GMT  
-		Size: 5.9 MB (5938401 bytes)  
+	-	`sha256:09a8178665f98401768fbfa7f9f2679c00dc5b0f203e62a7e90e533d2376ffef`  
+		Last Modified: Tue, 27 Jan 2026 16:11:21 GMT  
+		Size: 6.2 MB (6200965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5d567a4599383e250b5c98d5b079ccaf2dd43523fd751db4f7f710273a7cd11`  
-		Last Modified: Wed, 17 Dec 2025 20:01:44 GMT  
+	-	`sha256:e0a23c99e73c6b54e3456f9f8dadb17ed809c58640bada5f411219f44c6c0317`  
+		Last Modified: Tue, 27 Jan 2026 21:09:24 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-linux` - unknown; unknown
+### `nats:2.11.12-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:5d7fd6762c1b498b75b53ad17bcf0f6bd65ab7ac297f1c2726badf373e8ec298
+$ docker pull nats@sha256:0e5ea369b46cba0ff098f8c984de48876769a68c3552bdaaef3c43c242afe975
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **8.8 KB (8750 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:14f280565fe7cf7a5652e536311d32ce85a7d715d733ea00ae30242dbb47a926`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:cbbf28edee8a02864d028c803e7fd71feaa74ab472e203573f9cb4ff5ee960fa`  
+		Last Modified: Tue, 27 Jan 2026 21:09:24 GMT  
+		Size: 8.8 KB (8750 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `nats:2.11.12-linux` - linux; ppc64le
+
+```console
+$ docker pull nats@sha256:d4d551e835a3962fa062f83a00344388eaa4ff8aca803743b897e7cc11193e0c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.0 MB (5954348 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0bc52efd33943e66d3243abe4f618389b238fb10ba7d3850f554b95a3954b90a`
+-	Entrypoint: `["\/nats-server"]`
+-	Default Command: `["--config","nats-server.conf"]`
+
+```dockerfile
+# Tue, 27 Jan 2026 21:09:35 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
+# Tue, 27 Jan 2026 21:09:35 GMT
+COPY /usr/local/bin/nats-server /nats-server # buildkit
+# Tue, 27 Jan 2026 21:09:36 GMT
+COPY nats-server.conf /nats-server.conf # buildkit
+# Tue, 27 Jan 2026 21:09:36 GMT
+EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
+# Tue, 27 Jan 2026 21:09:36 GMT
+ENTRYPOINT ["/nats-server"]
+# Tue, 27 Jan 2026 21:09:36 GMT
+CMD ["--config" "nats-server.conf"]
+```
+
+-	Layers:
+	-	`sha256:9de13f1b1d93a9485355dc775073c38318f87fc8cde5c87052e2dfb19e2e2c86`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.0 MB (5953840 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
+		Size: 508.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `nats:2.11.12-linux` - unknown; unknown
+
+```console
+$ docker pull nats@sha256:681a00dca93dac72b0a109443ce224f5e1f9b86e6412a5b05583f28db6d47707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3ce48193a21d7c34ec7f67a9d20e1b59dd0a00a9d5c5e6b0b066649adfeed0b`
+-	Image ID: `sha256:d093aaa6ed20dd02fa94ff15758114f2ab0c270508d47c823fc1ed71d15e3145`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0bb9ca97da542f762d33a2aa6805f840ce102c91acc508490ea4e49f5946bbe`  
-		Last Modified: Wed, 17 Dec 2025 20:01:45 GMT  
+	-	`sha256:4f75f45eafb11e5791e2cb75dff74cce48be965a0875fb999bb829152fb3a2cc`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 8.7 KB (8721 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-linux` - linux; s390x
+### `nats:2.11.12-linux` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:1f9e310c71526998e6eb349ca180c39d37f0c2fb7831d699dfe87ba881175d57
+$ docker pull nats@sha256:bb72684bdd80aa021a0e128b6876a6310d40d5512c92ddd8f81f3d02a202abf5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6311079 bytes)**  
+-	Total Size: **6.3 MB (6326218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e72faa7571f225816a1ea99c9730eea5507d7ab15de308625988e5efb0f7a28`
+-	Image ID: `sha256:7a61d226938c41116e7e2be6ae5a7b824f33c870dab4c4cc845fdf67db5d8436`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:bd05a13ae28973210162b21afbcbcc05250e021622dc82220eabd156bcdd2bf4`  
-		Last Modified: Thu, 13 Nov 2025 13:36:22 GMT  
-		Size: 6.3 MB (6310570 bytes)  
+	-	`sha256:dff26b947f702115a483f894d5a90237a01bee2a42aedfcf32e06b3efb01e9f8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.3 MB (6325708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23ef4c2152d3f58734cb0fe2da596d833fbab184a3b41fe2b192a03046a3887`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-linux` - unknown; unknown
+### `nats:2.11.12-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:489ee87504c5e516c86965e4281bcc6a9c1b46b1ccd0e609e9de07f8c72fe09e
+$ docker pull nats@sha256:69abd1131dd1e8ea4d190ef9a87bcf7b30038c7487a552fe770a5275a22c74c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13f17b956bea9c9fa5ecf955bc1015904ed90b52b7b035f3098db91245529052`
+-	Image ID: `sha256:75575a1c2a29a663eb2e079a973654a9494ff43d9006b8c692396c0222ca7ca0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4659d54f693e09ad90886c339c37e8009206958112aad31e2fac27900b6f90d4`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
+	-	`sha256:aad8e717d95e6c41af8a4426a11e94cabe9f016226802fe6321b2282e65b79bf`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `nats:2.11.11-nanoserver`
+## `nats:2.11.12-nanoserver`
 
 ```console
-$ docker pull nats@sha256:5682b2ed69cf18a572861ea953080c81cc1031006afeb25c7b673ca42716c91b
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
-	-	windows version 10.0.20348.4648; amd64
-
-### `nats:2.11.11-nanoserver` - windows version 10.0.20348.4648; amd64
-
-```console
-$ docker pull nats@sha256:26db46a9db7401a77b42a0b3b45091cfcb0f28495369763772aeecce7e94dbbf
-```
-
--	Docker Version: 23.0.6
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.3 MB (133349797 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:713c5f457a0e2f397cca791a043cfde28cceb65ed9b76301d96dd2a005dbb9ef`
--	Entrypoint: `["C:\\nats-server.exe"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Thu, 08 Jan 2026 23:55:05 GMT
-RUN Apply image 10.0.20348.4648
-# Tue, 13 Jan 2026 23:33:10 GMT
-RUN cmd /S /C #(nop)  ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:33:11 GMT
-RUN cmd /S /C #(nop) COPY file:e7644589d2ea499e4e7ce22c59f43dfa63babfde9b495686bc536e8b72d9c747 in C:\nats-server.exe 
-# Tue, 13 Jan 2026 23:33:11 GMT
-RUN cmd /S /C #(nop) COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:33:12 GMT
-RUN cmd /S /C #(nop)  EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:33:12 GMT
-RUN cmd /S /C #(nop)  ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:33:13 GMT
-RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
-		Size: 126.7 MB (126696821 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f8506dabe196177bb55177f5748c6442fcb40b913f0414dea2d52091341d070`  
-		Last Modified: Tue, 13 Jan 2026 23:33:19 GMT  
-		Size: 1.1 KB (1127 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7e2cf230f6e98d1f394d9ac253a4f805b813725000832e5c228dad36d6622e6`  
-		Last Modified: Tue, 13 Jan 2026 23:33:18 GMT  
-		Size: 6.6 MB (6646940 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed287219c6f696ab71eae3df229cbaa422134410c77fc47fb0816fc6519af5c0`  
-		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
-		Size: 1.7 KB (1709 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:417386e45ae7415abfcbd31a9d400cbfd5cf83a84b435490730f07d5d309b05b`  
-		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
-		Size: 1.1 KB (1068 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2848ea217db632b3932795897f0581660809e0b58f4103c8bde3e6db07bb79bc`  
-		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
-		Size: 1.0 KB (1045 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e2d4c459a92776e1b67f0cdeabad046872376402fb57a26572b36c8ba228bc9`  
-		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
-		Size: 1.1 KB (1087 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `nats:2.11.11-nanoserver-ltsc2022`
-
-```console
-$ docker pull nats@sha256:5682b2ed69cf18a572861ea953080c81cc1031006afeb25c7b673ca42716c91b
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
-	-	windows version 10.0.20348.4648; amd64
-
-### `nats:2.11.11-nanoserver-ltsc2022` - windows version 10.0.20348.4648; amd64
-
-```console
-$ docker pull nats@sha256:26db46a9db7401a77b42a0b3b45091cfcb0f28495369763772aeecce7e94dbbf
-```
-
--	Docker Version: 23.0.6
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.3 MB (133349797 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:713c5f457a0e2f397cca791a043cfde28cceb65ed9b76301d96dd2a005dbb9ef`
--	Entrypoint: `["C:\\nats-server.exe"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Thu, 08 Jan 2026 23:55:05 GMT
-RUN Apply image 10.0.20348.4648
-# Tue, 13 Jan 2026 23:33:10 GMT
-RUN cmd /S /C #(nop)  ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:33:11 GMT
-RUN cmd /S /C #(nop) COPY file:e7644589d2ea499e4e7ce22c59f43dfa63babfde9b495686bc536e8b72d9c747 in C:\nats-server.exe 
-# Tue, 13 Jan 2026 23:33:11 GMT
-RUN cmd /S /C #(nop) COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:33:12 GMT
-RUN cmd /S /C #(nop)  EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:33:12 GMT
-RUN cmd /S /C #(nop)  ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:33:13 GMT
-RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
-		Size: 126.7 MB (126696821 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f8506dabe196177bb55177f5748c6442fcb40b913f0414dea2d52091341d070`  
-		Last Modified: Tue, 13 Jan 2026 23:33:19 GMT  
-		Size: 1.1 KB (1127 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7e2cf230f6e98d1f394d9ac253a4f805b813725000832e5c228dad36d6622e6`  
-		Last Modified: Tue, 13 Jan 2026 23:33:18 GMT  
-		Size: 6.6 MB (6646940 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed287219c6f696ab71eae3df229cbaa422134410c77fc47fb0816fc6519af5c0`  
-		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
-		Size: 1.7 KB (1709 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:417386e45ae7415abfcbd31a9d400cbfd5cf83a84b435490730f07d5d309b05b`  
-		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
-		Size: 1.1 KB (1068 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2848ea217db632b3932795897f0581660809e0b58f4103c8bde3e6db07bb79bc`  
-		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
-		Size: 1.0 KB (1045 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e2d4c459a92776e1b67f0cdeabad046872376402fb57a26572b36c8ba228bc9`  
-		Last Modified: Tue, 13 Jan 2026 23:33:17 GMT  
-		Size: 1.1 KB (1087 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `nats:2.11.11-scratch`
-
-```console
-$ docker pull nats@sha256:f0d865f58292bf8754585ce2de9ee21ec7a726582b38af3cd7eabf75cdf05e76
+$ docker pull nats@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 12
+-	Platforms: 0
+
+## `nats:2.11.12-nanoserver-ltsc2022`
+
+```console
+$ docker pull nats@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `nats:2.11.12-scratch`
+
+```console
+$ docker pull nats@sha256:c5958cb0ceab10e97376a80f63082584d2e2eb665730badcde25ae282b3a219a
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
-### `nats:2.11.11-scratch` - linux; amd64
+### `nats:2.11.12-scratch` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:a89fbea1a99e4055b5572e8c65d04b4bf287f8077e84dd04ed5653db89f09077
+$ docker pull nats@sha256:05710ffc941d2088835e0a262af3551146aeb8272603ea5581a42058a2a501f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6469438 bytes)**  
+-	Total Size: **6.5 MB (6484785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f7ebcac7a0def3742578d8e675fb50e54906372e1a2b1f5953ac61501e5f91b`
+-	Image ID: `sha256:7226786c95fada611a8cb3c15271a2b06a4be17fc41b9a629c55f78d9451a3df`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:45 GMT
+# Tue, 27 Jan 2026 21:10:18 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fce06af59f4edea8e6a39ec6a3c28424c4e5ddd037792c3e75733a9471eaf096`  
-		Last Modified: Thu, 13 Nov 2025 13:36:23 GMT  
-		Size: 6.5 MB (6468928 bytes)  
+	-	`sha256:8aba39afce5a8ec0f55fd623d29dab10aadce3502e19759c4f814bd5fe134d2a`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.5 MB (6484275 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18609ed747d6a4ad480b652e95ca06e16e3cbf24b265a86cf0631970fbe1d7d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+	-	`sha256:3c8406455bd20ed590ca501844b12110b8a0a85c7d2a1976cc18a0ce9fff846f`  
+		Last Modified: Tue, 27 Jan 2026 21:10:22 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-scratch` - unknown; unknown
+### `nats:2.11.12-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:5b7ee4a16cffd94b8dec024236c00319dd85ce6e865cba1757d95a0b31db6e44
+$ docker pull nats@sha256:26ead9ee78608ad66938179a0f207dcb67906800454a9722b59deeb7e424a621
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21dd879df72c6d5080bf95b4fcef87494a2abb1358676bc2b9ae2ea1e3b6d7d9`
+-	Image ID: `sha256:b41f378760c333c5bd37b6361b15dc8160588a28d5389c67e674bd46371701ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:179ab6e9cbd9813b454f8696a4253402cf689bdea345cd212306fbc38a7ea1f4`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
+	-	`sha256:b880480df4c40baf0accc72086a83d38c32ab398e8aeffe9593a8d5002a386d3`  
+		Last Modified: Tue, 27 Jan 2026 21:10:22 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-scratch` - linux; arm variant v6
+### `nats:2.11.12-scratch` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:020b69841c69b36a366422618ad59f6cf96b6f5d80f93dd28a335af41d976069
+$ docker pull nats@sha256:fa223500c437f8c6d9c21b7c2e5117603cea897b5b15a6aea2407dec5fcc71c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 MB (6195861 bytes)**  
+-	Total Size: **6.2 MB (6207207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:175f51c4d06e1d594936b00b74e76ad8fde7c20529490efa35be904facd418f0`
+-	Image ID: `sha256:78dc0f7f4f85b4b2246a642529123cf949f75a49578dccb27584e4f19c47da8d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:18 GMT
+# Tue, 27 Jan 2026 21:09:57 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:b361a2c55cb3b944a1ae9aad6ab14384b077b48043f5b193aa8d379899c1b32b`  
-		Last Modified: Thu, 13 Nov 2025 13:36:18 GMT  
-		Size: 6.2 MB (6195352 bytes)  
+	-	`sha256:06a77c76b56d99c53574ed3b364e438fed0fb044204148b1fbb405116172a248`  
+		Last Modified: Tue, 27 Jan 2026 16:11:24 GMT  
+		Size: 6.2 MB (6206697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61a19d5c228c083fbe1a67a0f3cdf4c51346b3c9a899fef55504732dcdca0f6b`  
-		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
-		Size: 509.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2.11.11-scratch` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:d8af33450c2b813b7fc242a65db98df97af6ec82b2d9949cbcf5ac753ad0fef5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8751 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70258e5c267180de234fc44d60b8b1db89d960bba523a219bb25bb6aebc93d26`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:a3e193f7c22b5a13a7722c27920c9aa347f5b58e37fb70b337e4fc24105610fb`  
-		Last Modified: Wed, 17 Dec 2025 20:01:22 GMT  
-		Size: 8.8 KB (8751 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2.11.11-scratch` - linux; arm variant v7
-
-```console
-$ docker pull nats@sha256:f1619aec8673524ea84787881f3796dbed7ea79026d656030435d2148ca7b675
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 MB (6183961 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b777e919e063da7287021b30699caffc1c615f6be4783c1f067324786261892e`
--	Entrypoint: `["\/nats-server"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Wed, 17 Dec 2025 20:05:54 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:05:54 GMT
-COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:05:54 GMT
-COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:05:54 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:05:54 GMT
-ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:05:54 GMT
-CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:fb69282942f9b02d34aa79ca11ecffef12fe64d0b450e2f16e28abe808c16f09`  
-		Last Modified: Thu, 13 Nov 2025 13:36:19 GMT  
-		Size: 6.2 MB (6183452 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e8d03f22ec97e3d41938ed9727607f79ff9100cfbbe5671e95f0bfd1502b830`  
-		Last Modified: Wed, 17 Dec 2025 20:05:59 GMT  
-		Size: 509.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2.11.11-scratch` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:7358bf0d54efd35471cfba7d2cc748fb9eba3e0a715f8e1dbed8d570a473f422
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8751 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8310222ea9ceb137260617064c6b61f5b8cf370e9800b073bdef69dac39a2f0f`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:b5e10886f1da3786806363d39e9ed4659f7dc14176ea47c46b52beda2398c923`  
-		Last Modified: Wed, 17 Dec 2025 20:05:59 GMT  
-		Size: 8.8 KB (8751 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2.11.11-scratch` - linux; arm64 variant v8
-
-```console
-$ docker pull nats@sha256:3143def571db6ac61d5f4b0dbb1bd089223ba9faa0fadc1c66840b462a2adce3
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5887869 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46b132b85ccc17e70b169b15d22d4f235b5d669e0d3ce46eadce87f74085508f`
--	Entrypoint: `["\/nats-server"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Wed, 17 Dec 2025 20:00:44 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:44 GMT
-COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:44 GMT
-COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:44 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:44 GMT
-ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:44 GMT
-CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:8249f4689b6b98276351b7df09241ed5a4ee97d63a285d620f19033b6fbf14c9`  
-		Last Modified: Thu, 13 Nov 2025 13:36:18 GMT  
-		Size: 5.9 MB (5887359 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3994ad9c32980fd20dfbbb307833a48d15524ba3b8ce29216aff143e83250694`  
-		Last Modified: Wed, 17 Dec 2025 20:00:49 GMT  
+	-	`sha256:d4d4e047a8a0db1cc2568f5435a31f22176e300b8e52b87a52874dfda33adddb`  
+		Last Modified: Tue, 27 Jan 2026 21:10:01 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-scratch` - unknown; unknown
+### `nats:2.11.12-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:29c9900eab6f0a566b30c76ca7630f414c9c822de75716660c36b7f64c033df6
+$ docker pull nats@sha256:231c96f94bbed541cba665ad1e77bc23f5d7b9bedaaae085dc44b2ada1e4c631
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 KB (8780 bytes)**  
+-	Total Size: **8.8 KB (8750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26d8165c63b8bb52293d7faf39af11d999636011c3a2d43ee2c3c079b4b35699`
+-	Image ID: `sha256:8f9db0a6b626d5772a59a68eef1dba490c0e8c59761d3f0c792bace41685de3b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9f88a7d23513019ac45fafe7a08331e232ed4f21043cb362893eac6510da2d29`  
-		Last Modified: Wed, 17 Dec 2025 20:00:50 GMT  
-		Size: 8.8 KB (8780 bytes)  
+	-	`sha256:892ab270c1620fc27fa82b1af462e231fcce1e296e8acf4a9f8fce215263595d`  
+		Last Modified: Tue, 27 Jan 2026 21:10:01 GMT  
+		Size: 8.8 KB (8750 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-scratch` - linux; ppc64le
+### `nats:2.11.12-scratch` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:6d88cff6d748764dd249693a900442cf722d789663ab65e0e7c956ece695e238
+$ docker pull nats@sha256:53e5e9fe1d692c8e8c6453060567acb16b5d5a53dc0abeea26e1effa25022c40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5938910 bytes)**  
+-	Total Size: **6.2 MB (6201474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ec14ac4d7c26bc5e86644971db8ed4994b29dc3b5772f951e7c92395d582af57`
+-	Image ID: `sha256:850bd1f34f08c8a8d73c1bd16970ac9993ec95e4823f65a170d7e9a88ed91401`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:37 GMT
+# Tue, 27 Jan 2026 21:09:20 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:6b5bb42ae8c8fefbe5ce1250705117a2050e9a7d429cf95a055d86103ebcfcf4`  
-		Last Modified: Thu, 13 Nov 2025 13:36:22 GMT  
-		Size: 5.9 MB (5938401 bytes)  
+	-	`sha256:09a8178665f98401768fbfa7f9f2679c00dc5b0f203e62a7e90e533d2376ffef`  
+		Last Modified: Tue, 27 Jan 2026 16:11:21 GMT  
+		Size: 6.2 MB (6200965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5d567a4599383e250b5c98d5b079ccaf2dd43523fd751db4f7f710273a7cd11`  
-		Last Modified: Wed, 17 Dec 2025 20:01:44 GMT  
+	-	`sha256:e0a23c99e73c6b54e3456f9f8dadb17ed809c58640bada5f411219f44c6c0317`  
+		Last Modified: Tue, 27 Jan 2026 21:09:24 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-scratch` - unknown; unknown
+### `nats:2.11.12-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:5d7fd6762c1b498b75b53ad17bcf0f6bd65ab7ac297f1c2726badf373e8ec298
+$ docker pull nats@sha256:0e5ea369b46cba0ff098f8c984de48876769a68c3552bdaaef3c43c242afe975
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **8.8 KB (8750 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:14f280565fe7cf7a5652e536311d32ce85a7d715d733ea00ae30242dbb47a926`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:cbbf28edee8a02864d028c803e7fd71feaa74ab472e203573f9cb4ff5ee960fa`  
+		Last Modified: Tue, 27 Jan 2026 21:09:24 GMT  
+		Size: 8.8 KB (8750 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `nats:2.11.12-scratch` - linux; ppc64le
+
+```console
+$ docker pull nats@sha256:d4d551e835a3962fa062f83a00344388eaa4ff8aca803743b897e7cc11193e0c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.0 MB (5954348 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0bc52efd33943e66d3243abe4f618389b238fb10ba7d3850f554b95a3954b90a`
+-	Entrypoint: `["\/nats-server"]`
+-	Default Command: `["--config","nats-server.conf"]`
+
+```dockerfile
+# Tue, 27 Jan 2026 21:09:35 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
+# Tue, 27 Jan 2026 21:09:35 GMT
+COPY /usr/local/bin/nats-server /nats-server # buildkit
+# Tue, 27 Jan 2026 21:09:36 GMT
+COPY nats-server.conf /nats-server.conf # buildkit
+# Tue, 27 Jan 2026 21:09:36 GMT
+EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
+# Tue, 27 Jan 2026 21:09:36 GMT
+ENTRYPOINT ["/nats-server"]
+# Tue, 27 Jan 2026 21:09:36 GMT
+CMD ["--config" "nats-server.conf"]
+```
+
+-	Layers:
+	-	`sha256:9de13f1b1d93a9485355dc775073c38318f87fc8cde5c87052e2dfb19e2e2c86`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.0 MB (5953840 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
+		Size: 508.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `nats:2.11.12-scratch` - unknown; unknown
+
+```console
+$ docker pull nats@sha256:681a00dca93dac72b0a109443ce224f5e1f9b86e6412a5b05583f28db6d47707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3ce48193a21d7c34ec7f67a9d20e1b59dd0a00a9d5c5e6b0b066649adfeed0b`
+-	Image ID: `sha256:d093aaa6ed20dd02fa94ff15758114f2ab0c270508d47c823fc1ed71d15e3145`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0bb9ca97da542f762d33a2aa6805f840ce102c91acc508490ea4e49f5946bbe`  
-		Last Modified: Wed, 17 Dec 2025 20:01:45 GMT  
+	-	`sha256:4f75f45eafb11e5791e2cb75dff74cce48be965a0875fb999bb829152fb3a2cc`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 8.7 KB (8721 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.11.11-scratch` - linux; s390x
+### `nats:2.11.12-scratch` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:1f9e310c71526998e6eb349ca180c39d37f0c2fb7831d699dfe87ba881175d57
+$ docker pull nats@sha256:bb72684bdd80aa021a0e128b6876a6310d40d5512c92ddd8f81f3d02a202abf5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6311079 bytes)**  
+-	Total Size: **6.3 MB (6326218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e72faa7571f225816a1ea99c9730eea5507d7ab15de308625988e5efb0f7a28`
+-	Image ID: `sha256:7a61d226938c41116e7e2be6ae5a7b824f33c870dab4c4cc845fdf67db5d8436`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:45 GMT
+# Tue, 27 Jan 2026 21:09:42 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:bd05a13ae28973210162b21afbcbcc05250e021622dc82220eabd156bcdd2bf4`  
-		Last Modified: Thu, 13 Nov 2025 13:36:22 GMT  
-		Size: 6.3 MB (6310570 bytes)  
+	-	`sha256:dff26b947f702115a483f894d5a90237a01bee2a42aedfcf32e06b3efb01e9f8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:25 GMT  
+		Size: 6.3 MB (6325708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23ef4c2152d3f58734cb0fe2da596d833fbab184a3b41fe2b192a03046a3887`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.11.11-scratch` - unknown; unknown
+### `nats:2.11.12-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:489ee87504c5e516c86965e4281bcc6a9c1b46b1ccd0e609e9de07f8c72fe09e
+$ docker pull nats@sha256:69abd1131dd1e8ea4d190ef9a87bcf7b30038c7487a552fe770a5275a22c74c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.7 KB (8668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13f17b956bea9c9fa5ecf955bc1015904ed90b52b7b035f3098db91245529052`
+-	Image ID: `sha256:75575a1c2a29a663eb2e079a973654a9494ff43d9006b8c692396c0222ca7ca0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4659d54f693e09ad90886c339c37e8009206958112aad31e2fac27900b6f90d4`  
-		Last Modified: Wed, 17 Dec 2025 20:01:52 GMT  
+	-	`sha256:aad8e717d95e6c41af8a4426a11e94cabe9f016226802fe6321b2282e65b79bf`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
 		Size: 8.7 KB (8668 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `nats:2.11.11-windowsservercore`
+## `nats:2.11.12-windowsservercore`
 
 ```console
-$ docker pull nats@sha256:d4d69f47153749befcdd0e1e4664854f9b4aafe0ca7ed672af722b9efc68532b
+$ docker pull nats@sha256:5a806b2053d3c2cf91f6cf5b19ade7f0179be7ca6bae559bfcd6f935bbfb656c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.20348.4648; amd64
 
-### `nats:2.11.11-windowsservercore` - windows version 10.0.20348.4648; amd64
+### `nats:2.11.12-windowsservercore` - windows version 10.0.20348.4648; amd64
 
 ```console
-$ docker pull nats@sha256:07b9045318981b2bbfafdcb67165f4a6b33cf879d6919ae045349f32569a387d
+$ docker pull nats@sha256:51e978f961f43e42579fbd6d804b74678dc89a382b5057d31ebf289b8ebbf91f
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1843141610 bytes)**  
+-	Total Size: **1.8 GB (1843182768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89ce5da5860f97900b165d686184278f81aff2b517bebf82bfe1aff90d7bd07e`
+-	Image ID: `sha256:dcde2230b5f3e450746ccba58887f7dc871076ed00df7a1ed41c5fcae7c5ea03`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -12150,29 +11632,29 @@ $ docker pull nats@sha256:07b9045318981b2bbfafdcb67165f4a6b33cf879d6919ae045349f
 RUN Apply image 10.0.20348.4294
 # Fri, 09 Jan 2026 00:11:24 GMT
 RUN Install update 10.0.20348.4648
-# Tue, 13 Jan 2026 23:01:40 GMT
+# Tue, 27 Jan 2026 21:02:17 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 13 Jan 2026 23:01:40 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:01:41 GMT
-ENV NATS_SERVER=2.11.11
-# Tue, 13 Jan 2026 23:01:42 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Tue, 13 Jan 2026 23:01:44 GMT
-ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.11.11/nats-server-v2.11.11-windows-amd64.zip
-# Tue, 13 Jan 2026 23:01:45 GMT
-ENV NATS_SERVER_SHASUM=b54fd598f0d2e2e8c3783ac4503eea024803837f0a3c78dc4d4ceac94fb42ac4
-# Tue, 13 Jan 2026 23:01:51 GMT
+# Tue, 27 Jan 2026 21:08:44 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 21:08:45 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 21:08:46 GMT
+ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.11.12/nats-server-v2.11.12-windows-amd64.zip
+# Tue, 27 Jan 2026 21:08:46 GMT
+ENV NATS_SERVER_SHASUM=c853f656c6e68e6a72c574fc07098256e4e90a5a3c48fbf3ae550bb03872631b
+# Tue, 27 Jan 2026 21:08:52 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 13 Jan 2026 23:02:07 GMT
+# Tue, 27 Jan 2026 21:09:08 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 13 Jan 2026 23:02:07 GMT
+# Tue, 27 Jan 2026 21:09:08 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:02:10 GMT
+# Tue, 27 Jan 2026 21:09:10 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -12185,76 +11667,76 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 13 Jan 2026 18:19:49 GMT  
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f0fce413876f886fb2250022b76f87a9e023cf582c638600a9fba8ca303bfd0`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
-		Size: 1.3 KB (1332 bytes)  
+	-	`sha256:7163b7e4ed4603533d1fda3d54c2c9bd222c3767dfe7b8def9f7dd49fab9d9ca`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:083ad68866e07715eab16bd0184a260e2002dcd0edccd8903b0545549ede0a19`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:b28002105b30a506ea71f81d135734fc2290d5709ceec675fa94dac86606e50b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:656287c8c6050d31cb986f704d2a759a1e2e8a00cd762fdaace02a1b45b6854d`  
+		Last Modified: Tue, 27 Jan 2026 21:09:17 GMT  
+		Size: 1.3 KB (1324 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:800de5fd6dcee75c74c6b0d3845c83072660925d2d0ad551e164e713a0e89ce5`  
+		Last Modified: Tue, 27 Jan 2026 21:09:15 GMT  
+		Size: 1.3 KB (1323 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:904edee6f0cbeb789af48a320522453d7689fde17764961857cdf7d244d4645d`  
+		Last Modified: Tue, 27 Jan 2026 21:09:15 GMT  
 		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5ab5a14a56498d76a55aa516389b63c1131868078fc11a9170cca2e4ec5952d`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
-		Size: 1.3 KB (1313 bytes)  
+	-	`sha256:460298970d4aa69ccb3204f114139efb5f01783664da315b5e95071f18cef57e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb295800a0cfc78af40563e60671f745d144cf03cf93ac56c0390020ae2d799b`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:90098c4a08abc00ac20a499813407e545d20cd0b2881f9d3ceaf9f1c549ca673`  
+		Last Modified: Tue, 27 Jan 2026 21:09:16 GMT  
+		Size: 491.1 KB (491145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2829856f1dfa3bfcb809a3e99a63d638dac690852d70c11c9ced41cbf47b16ec`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:4a82b1fc8a00f9f62ad7fe211906388071fba7520bd53cf397d9207a412f29ea`  
+		Last Modified: Tue, 27 Jan 2026 21:09:16 GMT  
+		Size: 7.0 MB (7018729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31431f78e0ecc9201b175a6c1884d88db7a3d3cde3e53fe41ae81964c2d1ec60`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:c312911f5c71ef5a286d106dbdf6f0290ac8314257a17382b67c381fc0e8db88`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.9 KB (1858 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da5e0c97d16df27272bd18e50379b8bf129c7c5a380f03817f6ce726df2ec54d`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 477.0 KB (477002 bytes)  
+	-	`sha256:bb3130d24c758b70ffdfea1cc63fbcd5320f5024d0e2626989017248a1a20b7e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3142560abd4113862dbf0d14b7a8cf4ba88c8bbba25f820eaf35b83c8ad03d6f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 7.0 MB (6991771 bytes)  
+	-	`sha256:498878062c5d19b6cbf4d761b4efc933e6ef1559e3d11d12c73f6d9768ead43d`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12013feaa024e4ee0d394d702e12cd3415ae142ba16d32b05ecdd58e3e5a09e4`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.9 KB (1856 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37cd72c20d610d8f325e75ec2b433766ab2127f68292aa7545dd8942e7f832a9`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1296 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42f087171cb7f241bf457be23ec5b5ebe1534351aca2f50d8b368d2c9bbbc5c8`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1315 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a58d967c6226d1e23d2ff4212f97414249877ff4059d30967d93087d1f877f5`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1322 bytes)  
+	-	`sha256:f573e9dd487232a9e9633bb14fd403ad599c2361ebacb6889dd3e93fcc2ae41e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `nats:2.11.11-windowsservercore-ltsc2022`
+## `nats:2.11.12-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:d4d69f47153749befcdd0e1e4664854f9b4aafe0ca7ed672af722b9efc68532b
+$ docker pull nats@sha256:5a806b2053d3c2cf91f6cf5b19ade7f0179be7ca6bae559bfcd6f935bbfb656c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.20348.4648; amd64
 
-### `nats:2.11.11-windowsservercore-ltsc2022` - windows version 10.0.20348.4648; amd64
+### `nats:2.11.12-windowsservercore-ltsc2022` - windows version 10.0.20348.4648; amd64
 
 ```console
-$ docker pull nats@sha256:07b9045318981b2bbfafdcb67165f4a6b33cf879d6919ae045349f32569a387d
+$ docker pull nats@sha256:51e978f961f43e42579fbd6d804b74678dc89a382b5057d31ebf289b8ebbf91f
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1843141610 bytes)**  
+-	Total Size: **1.8 GB (1843182768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89ce5da5860f97900b165d686184278f81aff2b517bebf82bfe1aff90d7bd07e`
+-	Image ID: `sha256:dcde2230b5f3e450746ccba58887f7dc871076ed00df7a1ed41c5fcae7c5ea03`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -12264,29 +11746,29 @@ $ docker pull nats@sha256:07b9045318981b2bbfafdcb67165f4a6b33cf879d6919ae045349f
 RUN Apply image 10.0.20348.4294
 # Fri, 09 Jan 2026 00:11:24 GMT
 RUN Install update 10.0.20348.4648
-# Tue, 13 Jan 2026 23:01:40 GMT
+# Tue, 27 Jan 2026 21:02:17 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 13 Jan 2026 23:01:40 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:01:41 GMT
-ENV NATS_SERVER=2.11.11
-# Tue, 13 Jan 2026 23:01:42 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.11
-# Tue, 13 Jan 2026 23:01:44 GMT
-ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.11.11/nats-server-v2.11.11-windows-amd64.zip
-# Tue, 13 Jan 2026 23:01:45 GMT
-ENV NATS_SERVER_SHASUM=b54fd598f0d2e2e8c3783ac4503eea024803837f0a3c78dc4d4ceac94fb42ac4
-# Tue, 13 Jan 2026 23:01:51 GMT
+# Tue, 27 Jan 2026 21:08:44 GMT
+ENV NATS_SERVER=2.11.12
+# Tue, 27 Jan 2026 21:08:45 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.12
+# Tue, 27 Jan 2026 21:08:46 GMT
+ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.11.12/nats-server-v2.11.12-windows-amd64.zip
+# Tue, 27 Jan 2026 21:08:46 GMT
+ENV NATS_SERVER_SHASUM=c853f656c6e68e6a72c574fc07098256e4e90a5a3c48fbf3ae550bb03872631b
+# Tue, 27 Jan 2026 21:08:52 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 13 Jan 2026 23:02:07 GMT
+# Tue, 27 Jan 2026 21:09:08 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 13 Jan 2026 23:02:07 GMT
+# Tue, 27 Jan 2026 21:09:08 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:02:10 GMT
+# Tue, 27 Jan 2026 21:09:10 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -12299,59 +11781,59 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 13 Jan 2026 18:19:49 GMT  
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f0fce413876f886fb2250022b76f87a9e023cf582c638600a9fba8ca303bfd0`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
-		Size: 1.3 KB (1332 bytes)  
+	-	`sha256:7163b7e4ed4603533d1fda3d54c2c9bd222c3767dfe7b8def9f7dd49fab9d9ca`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:083ad68866e07715eab16bd0184a260e2002dcd0edccd8903b0545549ede0a19`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:b28002105b30a506ea71f81d135734fc2290d5709ceec675fa94dac86606e50b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:656287c8c6050d31cb986f704d2a759a1e2e8a00cd762fdaace02a1b45b6854d`  
+		Last Modified: Tue, 27 Jan 2026 21:09:17 GMT  
+		Size: 1.3 KB (1324 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:800de5fd6dcee75c74c6b0d3845c83072660925d2d0ad551e164e713a0e89ce5`  
+		Last Modified: Tue, 27 Jan 2026 21:09:15 GMT  
+		Size: 1.3 KB (1323 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:904edee6f0cbeb789af48a320522453d7689fde17764961857cdf7d244d4645d`  
+		Last Modified: Tue, 27 Jan 2026 21:09:15 GMT  
 		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5ab5a14a56498d76a55aa516389b63c1131868078fc11a9170cca2e4ec5952d`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
-		Size: 1.3 KB (1313 bytes)  
+	-	`sha256:460298970d4aa69ccb3204f114139efb5f01783664da315b5e95071f18cef57e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb295800a0cfc78af40563e60671f745d144cf03cf93ac56c0390020ae2d799b`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:90098c4a08abc00ac20a499813407e545d20cd0b2881f9d3ceaf9f1c549ca673`  
+		Last Modified: Tue, 27 Jan 2026 21:09:16 GMT  
+		Size: 491.1 KB (491145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2829856f1dfa3bfcb809a3e99a63d638dac690852d70c11c9ced41cbf47b16ec`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:4a82b1fc8a00f9f62ad7fe211906388071fba7520bd53cf397d9207a412f29ea`  
+		Last Modified: Tue, 27 Jan 2026 21:09:16 GMT  
+		Size: 7.0 MB (7018729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31431f78e0ecc9201b175a6c1884d88db7a3d3cde3e53fe41ae81964c2d1ec60`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:c312911f5c71ef5a286d106dbdf6f0290ac8314257a17382b67c381fc0e8db88`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.9 KB (1858 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da5e0c97d16df27272bd18e50379b8bf129c7c5a380f03817f6ce726df2ec54d`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 477.0 KB (477002 bytes)  
+	-	`sha256:bb3130d24c758b70ffdfea1cc63fbcd5320f5024d0e2626989017248a1a20b7e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3142560abd4113862dbf0d14b7a8cf4ba88c8bbba25f820eaf35b83c8ad03d6f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 7.0 MB (6991771 bytes)  
+	-	`sha256:498878062c5d19b6cbf4d761b4efc933e6ef1559e3d11d12c73f6d9768ead43d`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12013feaa024e4ee0d394d702e12cd3415ae142ba16d32b05ecdd58e3e5a09e4`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.9 KB (1856 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37cd72c20d610d8f325e75ec2b433766ab2127f68292aa7545dd8942e7f832a9`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1296 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42f087171cb7f241bf457be23ec5b5ebe1534351aca2f50d8b368d2c9bbbc5c8`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1315 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a58d967c6226d1e23d2ff4212f97414249877ff4059d30967d93087d1f877f5`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1322 bytes)  
+	-	`sha256:f573e9dd487232a9e9633bb14fd403ad599c2361ebacb6889dd3e93fcc2ae41e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:14 GMT  
+		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.12`
 
 ```console
-$ docker pull nats@sha256:d3e567e800a4912fc4f99d76b745133abb84d85d378d2fb7d7d118a56e2c815a
+$ docker pull nats@sha256:782ea26ae0ce156658ffc0ca0e78835673d29d05c4f1c01d297b9d6babe9a6b2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12373,174 +11855,174 @@ $ docker pull nats@sha256:d3e567e800a4912fc4f99d76b745133abb84d85d378d2fb7d7d118
 ### `nats:2.12` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:409d49daf0939f5e7d8cde71d214d33af5f082a3f413399223dd0b08d2fc50aa
+$ docker pull nats@sha256:d6cb6ec885a324dca2b830829bf9d4c5e43d41279805ce67be044db0ec7fae56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6591138 bytes)**  
+-	Total Size: **6.6 MB (6598587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2aa68383287bc4011abbb0cda6516a3a4c06e62dd9d51014d5f83e7efff7e80`
+-	Image ID: `sha256:e5ec0ef7d756ea786e6deee1fb08986ad9ab7616b087e445e2b3c73bf7f2d347`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4acd967ddc02590a1f9db5c0ab104a521c3b01c4fc3ca5ced9eeff9ee3ba3c59`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.6 MB (6590629 bytes)  
+	-	`sha256:2f8912005071f27ea416bffea2294316df3b1b12b1e8346b2a1adcd792aa8496`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.6 MB (6598078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0103929f5e0e3db1b12e36e1aeff3c923eddff5d1968e3d0f22b3f7aa30ebba`  
-		Last Modified: Wed, 17 Dec 2025 20:01:31 GMT  
+	-	`sha256:05852294398b9aea33a8d9d248d324ee895e96dee6bfa8363653f16079ddac04`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a226abede1d8384071e63eb0257452b99108eaaea6501acd919580c2ec3e3232
+$ docker pull nats@sha256:a0f34e28b55652588fe8c7891ab83879808bee3cee9dbea0da32a6d4431fcc89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a153786df027a7d066c8f5784f26e41ed9689710d05d147a66218be1b4dd1fd8`
+-	Image ID: `sha256:8b2ed37d6666a700ae3e29116b15949d1ff6130503d9cf7d5eb2620f33e201a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89af6a462dd1e2f4e92326ee7e0ef9f89f947b5a380af7de2ddcacc09f645306`  
-		Last Modified: Wed, 17 Dec 2025 20:01:30 GMT  
+	-	`sha256:4e22704ce89be3ca5373eedf4cd92a430da69b69b5c4722a9b652a13f5009e01`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:3853bb8507245773d5a8ce05deea7cfd9f4da723b2c363480580cc012ca53270
+$ docker pull nats@sha256:f7799b4a822c5771e5d48f0f1c068ea2cec23162c6831f82d2b009b36a857e28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6313697 bytes)**  
+-	Total Size: **6.3 MB (6323105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93286d48902d584731e848087c653ac0a6d01e8425909fc66515ffaefe8acc14`
+-	Image ID: `sha256:370df6c853d90e83658a3dfb4c82a802848ff4f6b4522ba921e6a7ad306ef356`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:8c692c13a40e92100ded6771cbbc3a0d5bf2526f18f3fb0a48f15be60c2df82b`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.3 MB (6313188 bytes)  
+	-	`sha256:1efb0795d882364e2a023f0af5959b157fb2940eacdb92639318b205267c0ad4`  
+		Last Modified: Tue, 27 Jan 2026 16:11:11 GMT  
+		Size: 6.3 MB (6322595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a12d6f521214dc21cc2bcdc941aa35f4ec314380c729cdfdc42c3aa6d6bfc542
+$ docker pull nats@sha256:d73a9779831083ed543a3bd2f7e87c1dc8caec08ddac320cc7a25c94e648b157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaab9a175ebb399933d1c8ea3f50398dd348dcdf598f5424f2921569526e82d2`
+-	Image ID: `sha256:6301a8cfa90733ef8a35c4bde2ee64d946519b1026091f17c5e915f86a498204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43b1dc7d6b077ab1f2267d99aa3a71b675795ee1f57b76f8a7ecd3d05fcdd480`  
-		Last Modified: Wed, 17 Dec 2025 20:00:44 GMT  
+	-	`sha256:2e565ea89cf46f2c719698d7f99d288200307fbb51c38e98a8bde6c8102d0d23`  
+		Last Modified: Tue, 27 Jan 2026 21:09:50 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:e94a35025c028537959412b3781acd5c082d9d6128056903a36fd72303137cb5
+$ docker pull nats@sha256:488c6c4014617fff07b617db250920bcb069b5d712e4185c98c6387b2baa93e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6303727 bytes)**  
+-	Total Size: **6.3 MB (6310862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f76d4a21e40bc97da539f87250554131486a6b9c78c7f1cb563c0d439eca6ab`
+-	Image ID: `sha256:4b7a85a207a36665f5bc23045e4bba37e6a52dd82b9b57a47b543b28fe145b20`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.3 MB (6303218 bytes)  
+	-	`sha256:f89bd8d5669bd18e009b01f3649659381ff93c4199e64ffa25637a2739cba3a5`  
+		Last Modified: Tue, 27 Jan 2026 16:11:12 GMT  
+		Size: 6.3 MB (6310353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:6c736e7cdb0b623e13835c5b7f1ff18a1b684a47db62f5986b4a18586e605dd0`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b08b7fb4643e
+$ docker pull nats@sha256:9fd3d1e91e30c408f98d4afaaaa4bc75c40efeb43567518934829f6d0ac86556
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:effc5987cb319c0e4e830fe710b565d3b22924a14ccc2cf7c699563cf61c77cb`
+-	Image ID: `sha256:f8f796abff51fa066462285403989439d8035c748d22d1b340334a21cc658983`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:13865f9df2b0d2a106a6ff2b46ab7f923c9d9bcd479a551759a737f5ebcd44a1`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12605,117 +12087,117 @@ $ docker pull nats@sha256:0686bfde4b19aeb60c7a324a5b424e778381949910a579bcd02b42
 ### `nats:2.12` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:c2b63aa758462e86058c91fe8401191b41043d2163a78fdec57519d4f0b49998
+$ docker pull nats@sha256:98765b2b71bf6daa662b7dbd1055075a97e9000f3758c6aceeb26c8cb5fd0e63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6053571 bytes)**  
+-	Total Size: **6.1 MB (6059945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08c2636ef42b619db39e1975f9b631869bc3c3b24489f7866a08171ddcc5033c`
+-	Image ID: `sha256:84f209e000ef99dbbbc6d350eb39ac8c75f5d40744f18ae5414c0c07e9e45655`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fff90457358766f5b735feb2d49e853cf695210b8abe6ba57edc0abce8282fd8`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.1 MB (6053063 bytes)  
+	-	`sha256:d7498e46ed99a6f25a5e161fffb2a10e547d3bd8f682806db51e70bf75c104d8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.1 MB (6059437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:589282b0ff2ad41789a44317f1ea281a1922d78ec8dbf8a031acc22733f31036`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d7d1570fb25ef2bda69d3d006ba8f47a5bd2a378411613cb7f881e8ab5078488
+$ docker pull nats@sha256:43af96803f49adc8aaa465d03d0dde41ee7e209f9a0e28947566a936727c49fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 KB (10513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed570c2ba4ccaf310e9bacf729785e05e597e250ef1e4f162cd4184a0794cf04`
+-	Image ID: `sha256:3421e3e523f67cbeb606c276691497e77d59a9afe368fac3dd2b77b44a4ceb58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91f2c07ab8052b7c97b473ee388d713a2cb3c94fbc741e2892b0a738632be01`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:e3c3d1d8ec6a07a1fc217e6f7df3eab02aa21e7017b3693f928a7360d8ac21a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 10.5 KB (10513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:28f34bed0a682b4aa4eedefde127516cf11d48fe189b5012061d4ceead86a883
+$ docker pull nats@sha256:ae3f7eac492fb3850591ee0580f6f26c3ab90fa4001072f347bbdea377021180
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6432293 bytes)**  
+-	Total Size: **6.4 MB (6439573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34db5d9b7c6ad05b3a0206e1c4bc40e08f029d7a4ceb4f9a193d6fef9f3705c9`
+-	Image ID: `sha256:4204c3fe6f38e529b9ab99128f4f71c742b5dddbec6d3fcdd784912c812e359d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f8e43cf01609735e89620aa1f85d5675eccdd17850b8f0944070d6fca83f5f31`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.4 MB (6431785 bytes)  
+	-	`sha256:647f636b2ba788fbcd64742e49cd42dbe55579be711374f52ac5c9e3bb6810d2`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.4 MB (6439063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 508.0 B  
+	-	`sha256:930f40f7174a2c941bc3d6fea3291abdd5910b116dc8976147ffe92096a2dc89`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:64a2cb9ff1e0f5b75e2e53f9f9ccbb96c66e914c524763620814e9606fef2057
+$ docker pull nats@sha256:363dcabc130a83ffdf947725601f3ff72e57b4ac101c352b9ca592bd1e8678da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 KB (10422 bytes)**  
+-	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e6c0882b54633cd5fdbda1ba2a5bcf53fc177361102c5052cb69a80692dbab2`
+-	Image ID: `sha256:d81e58884f9d9e0d8eb1b6185d44e98751a7fab46989c675f9307e30d5310c55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62f918a7cdeb02a6e02929e5b0c8f5dbe6366961c236880f3d712024736b37d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 10.4 KB (10422 bytes)  
+	-	`sha256:c10d7d82f5e8df9bd31c438ff05420d632a2ad10dcad8309a3de4d55d2196ce2`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12` - windows version 10.0.20348.4648; amd64
@@ -12782,7 +12264,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 ## `nats:2.12-alpine`
 
 ```console
-$ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23c446630957
+$ docker pull nats@sha256:5a34dc51990d868db43f3dd119ddac8b9fcfb7af02b3732fb39d8ba1ade2c627
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12803,13 +12285,13 @@ $ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23
 ### `nats:2.12-alpine` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893845fc7c531
+$ docker pull nats@sha256:6acdaf5c4b4733d858941e822deb26cbe75086c1f41c2480dcda86ac103a977c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.9 MB (10857275 bytes)**  
+-	Total Size: **10.9 MB (10862551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aebde9629273b40e226b204120a5606fe7dcb22685a9055a5ba80442007efd76`
+-	Image ID: `sha256:a9258c2e3e241854fce198066b67bb5a84989b406cadd2a90a968d5523f1e05c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -12818,21 +12300,21 @@ $ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893
 ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -12841,49 +12323,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 7.1 MB (7053852 bytes)  
+	-	`sha256:cedccc65746b215235fc436d111f1f922b9cededdded50b4b8810d92589ad202`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 7.1 MB (7059130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a9ace510454a4fd702f8204904421136909dde3224b5edbd0bb24eee78482af`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 561.0 B  
+	-	`sha256:9612b455a56e18bccb84e093c667e6c5c5ace810ed4f40d92aa4ed0ca7fad231`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3a1fa25cb2dff28e7184ef3cafa056ed5da313facaac284acc63edb48c1e903`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 410.0 B  
+	-	`sha256:0250ff07e3bdfdc6a4253dff05da494df1b874005048990a3e2cf2fcfa012bc3`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:908602cc7648433a79c982fa1487bbfa25f4bf83f5fa56212f83553b121fd3c3
+$ docker pull nats@sha256:9b191ebe1c38dcdd740ff1d4bb194f7483cee453bc3080181736b8f869dd7003
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.4 KB (15404 bytes)**  
+-	Total Size: **15.4 KB (15403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84bb29d946c1469efd07d2b9665218b58f25678bc1de3425a1de33791c1113a9`
+-	Image ID: `sha256:b888d27fdc45fe68d2a29d2fc9660fb3b164659976c828922ebcd7c02737d248`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca80d84ada3fed13457e5c523b614750e1907b472a9e7531a569547387cddcc2`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 15.4 KB (15404 bytes)  
+	-	`sha256:9842806eadf12c2d37461bd3b40af07618af7574f01d0b3b942e00ea2a4d043a`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 15.4 KB (15403 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f8d0c7dce86
+$ docker pull nats@sha256:a25880f3fb1d3561ea4bacf110e5fd6d23d165d3cdb096bb98a2cf100f78598d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.3 MB (10278433 bytes)**  
+-	Total Size: **10.3 MB (10285793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480b8bd7178529c103d42255dbfd4adf72e60af511257a78f22a68453ab41b5f`
+-	Image ID: `sha256:9d1a1122f5dae285cb106f3c3b00146414a1973051302af466ee325b905519e7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -12892,21 +12374,21 @@ $ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f
 ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:09 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -12915,49 +12397,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 21:00:10 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
-		Size: 6.8 MB (6773381 bytes)  
+	-	`sha256:66465e3b7e0a1cdb3874701a0a2537b4dcb8042792d5dcf98baa4ddf97d352ad`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 6.8 MB (6780740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 560.0 B  
+	-	`sha256:14063ab2ee14aa70e7847f0c2b89dea724fe71097d3bbb363753797341e4784f`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6bac971b438fd7cceeb9b5c1eecda7a4f9d26ca326f9771ce86a90fa1cf21a6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
+	-	`sha256:ac8d1ebaa7052db55538e0cec4fae6ca5bb000d6525528dc6c725f3366421fd0`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:4ff7a4ef3c9ae84a97f274139f4d6dfef0d3a848303d156092b4f8002ecc4f5a
+$ docker pull nats@sha256:19396d8ceba09c3264a25ebfa9f50840835c3ec6607b50cd10beaa953a6b33e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ac6f34e0231323829f3011d461ab111cf13eb19476fc07dcecabf4752f902be`
+-	Image ID: `sha256:25ab23bc93d5a0ec67c651d02a9b994c99e766f53d0b812287fa917e7c6c5901`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3479597242ab0dfe5e61e6c1fe927d27e29e6e0acc2aeb5725c8854d5cb011c7`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:03c4b836e1aa562163bdc728fde907aa09502dab91be516aaea3e608ac0b9925`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b37b43f01637
+$ docker pull nats@sha256:1fb9a865bfddcc7ccf0352e443ec93c89e7fa56afc9746102ef4d4f09ccfdaef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.0 MB (9984798 bytes)**  
+-	Total Size: **10.0 MB (9992148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d08e24e4fa7242a20541ae75e9a7b66f43d04d2bbe01fa91d2e34c85c48087e`
+-	Image ID: `sha256:3c8aa27bf27091f7f6f72e5a0e094c585886298ba7ffaf91ce2df0a45f59821d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -12966,21 +12448,21 @@ $ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b3
 ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -12989,37 +12471,37 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 6.8 MB (6762271 bytes)  
+	-	`sha256:007c47b99e0f8ce3eb6487d084a37b69fd666c17f8a6b58b94bc9f382892ef51`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 6.8 MB (6769622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+	-	`sha256:f3c997d67c56839e0314ea6f55308216a5ba43a5f40975da43014f9f32a17383`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 411.0 B  
+	-	`sha256:4053d67b823eb88b56d135755dd578f459b818b41c680f8745f7222978bccb36`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6ef109d4281
+$ docker pull nats@sha256:67e81a213cea4e248950c0208b0171d9004620ef41586d08d0868faa707c4288
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c95dce61236e2d9649b8422a65f23f1910f61b9f45bc5d221b66daa5a33cf2d`
+-	Image ID: `sha256:6ce733992685dbdda0460298fc9ac280734e4f8bc06f15ae66da0d996cbd4b7f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:3e3db6f7c70dc8fb02d9849c24bf4d65a552cf352d7921ac590406bb96384fb9`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-alpine` - linux; arm64 variant v8
@@ -13099,13 +12581,13 @@ $ docker pull nats@sha256:7dc6fbe8dce46b22212fd2304d64155b7b78495d05763821a8688e
 ### `nats:2.12-alpine` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae09abc7d7dcc
+$ docker pull nats@sha256:4f96ccac99bd215fc4064d5d3592ea9f8fe39d5df504756ee420ac1fa0b3fb26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10244174 bytes)**  
+-	Total Size: **10.3 MB (10252278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e7359a2b492fe228465c4dba600737214e56133945e97921941eff2ae5546b1`
+-	Image ID: `sha256:7d6fe54daa6ec7b97b23c158221a59b2b57045573d3e57581b68c3fa0e3bce0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -13114,21 +12596,21 @@ $ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae0
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:01 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:01 GMT
+# Tue, 27 Jan 2026 21:06:51 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:06:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -13137,49 +12619,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f0f141df1060290bea337dd410f443f266f697c0f6e1906a6a9e0d258becc78`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 6.5 MB (6510964 bytes)  
+	-	`sha256:77c3493b9579716670251c20f0ae944646efba9da30cdec49372112973d45a46`  
+		Last Modified: Tue, 27 Jan 2026 21:07:06 GMT  
+		Size: 6.5 MB (6519066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 560.0 B  
+	-	`sha256:dcf0f099d527269dc43593793ecaadda88e477182e35413d281eae5fca8edcd9`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 409.0 B  
+	-	`sha256:3d81715261f9c8109cdf9b0d19000e23c890a8230df8e1249fb38dfcc69818e5`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:2863d02373bc1aae9fb72d2ad9ee57b8990eadaf19e89a23de445b9ff8178f50
+$ docker pull nats@sha256:72f960c82b4c420a40dfae4802ee5aa8eb4f8ead833b62354411bebb2bd3794e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.5 KB (15472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d698c5b2b274ea9660ca1554c7b356edd3d3442acd18a0af1c5f89f197efb0cc`
+-	Image ID: `sha256:e06a9d3df0114f3d556457c95e701fc6f90c0a3839136f138f39e337547eee57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:09d997d1b12e4765cde5053a09e9d2a2df28a6bc8a91b206c57708bef5c8a5c6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+	-	`sha256:4d13bd95f79301e5d85c253329f6f5a8f2b5ace279ce58b31f6cb5c285fbeb10`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
 		Size: 15.5 KB (15472 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-alpine` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff44bffaba7d
+$ docker pull nats@sha256:2f19c27f1889b1ffc8dad6d7ecd70041c83e0b4ecc313559a9f4fca6992897a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10543399 bytes)**  
+-	Total Size: **10.6 MB (10550093 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:318709468ae0d2602381d156b7fff5eeeeeba6ad7862fcc729a4f3308dff11b7`
+-	Image ID: `sha256:163c65a520d622326b98b9ff14ad55e811352abe2e51087903bd5c3c4195ded9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -13188,21 +12670,21 @@ $ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff
 ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -13211,43 +12693,43 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 6.9 MB (6893186 bytes)  
+	-	`sha256:3ffbbf76e52abfb81f8bc89754993837553e371cf5864cdca0db08db1e8f98e4`  
+		Last Modified: Tue, 27 Jan 2026 21:00:43 GMT  
+		Size: 6.9 MB (6899878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 560.0 B  
+	-	`sha256:a18be5970dc3e7111ad95a8d4f05c2c2f38c435145987df50136cd5d9e1fd6ef`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 409.0 B  
+	-	`sha256:eea584e8cb60bc5c8e464aa5e067bf25fdc4391ebc09e338f3349572d1607539`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c687f30de32c7
+$ docker pull nats@sha256:ef61b1dcadfe395d1d0850cc16c69650cd3e13a1428075cc8fa916e2d27d61a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.4 KB (15404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5f53ce608591b7cc05772e01835f036e81338ec31761c2fc3747374c12b617e`
+-	Image ID: `sha256:dd4bfa08ab003a58bf52f0d3d2521a27e633e9b5a0c9005020be8cff01d41932`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+	-	`sha256:6ece1efeec3d19253c74d61a50f96cf8dbd2f00f7ee5b08521901a7327ba73ba`  
+		Last Modified: Tue, 27 Jan 2026 21:00:38 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:2.12-alpine3.22`
 
 ```console
-$ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23c446630957
+$ docker pull nats@sha256:5a34dc51990d868db43f3dd119ddac8b9fcfb7af02b3732fb39d8ba1ade2c627
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13268,13 +12750,13 @@ $ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23
 ### `nats:2.12-alpine3.22` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893845fc7c531
+$ docker pull nats@sha256:6acdaf5c4b4733d858941e822deb26cbe75086c1f41c2480dcda86ac103a977c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.9 MB (10857275 bytes)**  
+-	Total Size: **10.9 MB (10862551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aebde9629273b40e226b204120a5606fe7dcb22685a9055a5ba80442007efd76`
+-	Image ID: `sha256:a9258c2e3e241854fce198066b67bb5a84989b406cadd2a90a968d5523f1e05c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -13283,21 +12765,21 @@ $ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893
 ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -13306,49 +12788,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 7.1 MB (7053852 bytes)  
+	-	`sha256:cedccc65746b215235fc436d111f1f922b9cededdded50b4b8810d92589ad202`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 7.1 MB (7059130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a9ace510454a4fd702f8204904421136909dde3224b5edbd0bb24eee78482af`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 561.0 B  
+	-	`sha256:9612b455a56e18bccb84e093c667e6c5c5ace810ed4f40d92aa4ed0ca7fad231`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3a1fa25cb2dff28e7184ef3cafa056ed5da313facaac284acc63edb48c1e903`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 410.0 B  
+	-	`sha256:0250ff07e3bdfdc6a4253dff05da494df1b874005048990a3e2cf2fcfa012bc3`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:908602cc7648433a79c982fa1487bbfa25f4bf83f5fa56212f83553b121fd3c3
+$ docker pull nats@sha256:9b191ebe1c38dcdd740ff1d4bb194f7483cee453bc3080181736b8f869dd7003
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.4 KB (15404 bytes)**  
+-	Total Size: **15.4 KB (15403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84bb29d946c1469efd07d2b9665218b58f25678bc1de3425a1de33791c1113a9`
+-	Image ID: `sha256:b888d27fdc45fe68d2a29d2fc9660fb3b164659976c828922ebcd7c02737d248`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca80d84ada3fed13457e5c523b614750e1907b472a9e7531a569547387cddcc2`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 15.4 KB (15404 bytes)  
+	-	`sha256:9842806eadf12c2d37461bd3b40af07618af7574f01d0b3b942e00ea2a4d043a`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 15.4 KB (15403 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-alpine3.22` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f8d0c7dce86
+$ docker pull nats@sha256:a25880f3fb1d3561ea4bacf110e5fd6d23d165d3cdb096bb98a2cf100f78598d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.3 MB (10278433 bytes)**  
+-	Total Size: **10.3 MB (10285793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480b8bd7178529c103d42255dbfd4adf72e60af511257a78f22a68453ab41b5f`
+-	Image ID: `sha256:9d1a1122f5dae285cb106f3c3b00146414a1973051302af466ee325b905519e7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -13357,21 +12839,21 @@ $ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f
 ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:09 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -13380,49 +12862,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 21:00:10 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
-		Size: 6.8 MB (6773381 bytes)  
+	-	`sha256:66465e3b7e0a1cdb3874701a0a2537b4dcb8042792d5dcf98baa4ddf97d352ad`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 6.8 MB (6780740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 560.0 B  
+	-	`sha256:14063ab2ee14aa70e7847f0c2b89dea724fe71097d3bbb363753797341e4784f`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6bac971b438fd7cceeb9b5c1eecda7a4f9d26ca326f9771ce86a90fa1cf21a6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
+	-	`sha256:ac8d1ebaa7052db55538e0cec4fae6ca5bb000d6525528dc6c725f3366421fd0`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:4ff7a4ef3c9ae84a97f274139f4d6dfef0d3a848303d156092b4f8002ecc4f5a
+$ docker pull nats@sha256:19396d8ceba09c3264a25ebfa9f50840835c3ec6607b50cd10beaa953a6b33e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ac6f34e0231323829f3011d461ab111cf13eb19476fc07dcecabf4752f902be`
+-	Image ID: `sha256:25ab23bc93d5a0ec67c651d02a9b994c99e766f53d0b812287fa917e7c6c5901`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3479597242ab0dfe5e61e6c1fe927d27e29e6e0acc2aeb5725c8854d5cb011c7`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:03c4b836e1aa562163bdc728fde907aa09502dab91be516aaea3e608ac0b9925`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-alpine3.22` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b37b43f01637
+$ docker pull nats@sha256:1fb9a865bfddcc7ccf0352e443ec93c89e7fa56afc9746102ef4d4f09ccfdaef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.0 MB (9984798 bytes)**  
+-	Total Size: **10.0 MB (9992148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d08e24e4fa7242a20541ae75e9a7b66f43d04d2bbe01fa91d2e34c85c48087e`
+-	Image ID: `sha256:3c8aa27bf27091f7f6f72e5a0e094c585886298ba7ffaf91ce2df0a45f59821d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -13431,21 +12913,21 @@ $ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b3
 ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -13454,37 +12936,37 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 6.8 MB (6762271 bytes)  
+	-	`sha256:007c47b99e0f8ce3eb6487d084a37b69fd666c17f8a6b58b94bc9f382892ef51`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 6.8 MB (6769622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+	-	`sha256:f3c997d67c56839e0314ea6f55308216a5ba43a5f40975da43014f9f32a17383`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 411.0 B  
+	-	`sha256:4053d67b823eb88b56d135755dd578f459b818b41c680f8745f7222978bccb36`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6ef109d4281
+$ docker pull nats@sha256:67e81a213cea4e248950c0208b0171d9004620ef41586d08d0868faa707c4288
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c95dce61236e2d9649b8422a65f23f1910f61b9f45bc5d221b66daa5a33cf2d`
+-	Image ID: `sha256:6ce733992685dbdda0460298fc9ac280734e4f8bc06f15ae66da0d996cbd4b7f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:3e3db6f7c70dc8fb02d9849c24bf4d65a552cf352d7921ac590406bb96384fb9`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-alpine3.22` - linux; arm64 variant v8
@@ -13564,13 +13046,13 @@ $ docker pull nats@sha256:7dc6fbe8dce46b22212fd2304d64155b7b78495d05763821a8688e
 ### `nats:2.12-alpine3.22` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae09abc7d7dcc
+$ docker pull nats@sha256:4f96ccac99bd215fc4064d5d3592ea9f8fe39d5df504756ee420ac1fa0b3fb26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10244174 bytes)**  
+-	Total Size: **10.3 MB (10252278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e7359a2b492fe228465c4dba600737214e56133945e97921941eff2ae5546b1`
+-	Image ID: `sha256:7d6fe54daa6ec7b97b23c158221a59b2b57045573d3e57581b68c3fa0e3bce0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -13579,21 +13061,21 @@ $ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae0
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:01 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:01 GMT
+# Tue, 27 Jan 2026 21:06:51 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:06:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -13602,49 +13084,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f0f141df1060290bea337dd410f443f266f697c0f6e1906a6a9e0d258becc78`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 6.5 MB (6510964 bytes)  
+	-	`sha256:77c3493b9579716670251c20f0ae944646efba9da30cdec49372112973d45a46`  
+		Last Modified: Tue, 27 Jan 2026 21:07:06 GMT  
+		Size: 6.5 MB (6519066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 560.0 B  
+	-	`sha256:dcf0f099d527269dc43593793ecaadda88e477182e35413d281eae5fca8edcd9`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 409.0 B  
+	-	`sha256:3d81715261f9c8109cdf9b0d19000e23c890a8230df8e1249fb38dfcc69818e5`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:2863d02373bc1aae9fb72d2ad9ee57b8990eadaf19e89a23de445b9ff8178f50
+$ docker pull nats@sha256:72f960c82b4c420a40dfae4802ee5aa8eb4f8ead833b62354411bebb2bd3794e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.5 KB (15472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d698c5b2b274ea9660ca1554c7b356edd3d3442acd18a0af1c5f89f197efb0cc`
+-	Image ID: `sha256:e06a9d3df0114f3d556457c95e701fc6f90c0a3839136f138f39e337547eee57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:09d997d1b12e4765cde5053a09e9d2a2df28a6bc8a91b206c57708bef5c8a5c6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+	-	`sha256:4d13bd95f79301e5d85c253329f6f5a8f2b5ace279ce58b31f6cb5c285fbeb10`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
 		Size: 15.5 KB (15472 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-alpine3.22` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff44bffaba7d
+$ docker pull nats@sha256:2f19c27f1889b1ffc8dad6d7ecd70041c83e0b4ecc313559a9f4fca6992897a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10543399 bytes)**  
+-	Total Size: **10.6 MB (10550093 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:318709468ae0d2602381d156b7fff5eeeeeba6ad7862fcc729a4f3308dff11b7`
+-	Image ID: `sha256:163c65a520d622326b98b9ff14ad55e811352abe2e51087903bd5c3c4195ded9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -13653,21 +13135,21 @@ $ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff
 ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -13676,43 +13158,43 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 6.9 MB (6893186 bytes)  
+	-	`sha256:3ffbbf76e52abfb81f8bc89754993837553e371cf5864cdca0db08db1e8f98e4`  
+		Last Modified: Tue, 27 Jan 2026 21:00:43 GMT  
+		Size: 6.9 MB (6899878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 560.0 B  
+	-	`sha256:a18be5970dc3e7111ad95a8d4f05c2c2f38c435145987df50136cd5d9e1fd6ef`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 409.0 B  
+	-	`sha256:eea584e8cb60bc5c8e464aa5e067bf25fdc4391ebc09e338f3349572d1607539`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c687f30de32c7
+$ docker pull nats@sha256:ef61b1dcadfe395d1d0850cc16c69650cd3e13a1428075cc8fa916e2d27d61a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.4 KB (15404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5f53ce608591b7cc05772e01835f036e81338ec31761c2fc3747374c12b617e`
+-	Image ID: `sha256:dd4bfa08ab003a58bf52f0d3d2521a27e633e9b5a0c9005020be8cff01d41932`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+	-	`sha256:6ece1efeec3d19253c74d61a50f96cf8dbd2f00f7ee5b08521901a7327ba73ba`  
+		Last Modified: Tue, 27 Jan 2026 21:00:38 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:2.12-linux`
 
 ```console
-$ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b157e5844f92c
+$ docker pull nats@sha256:5b7d13172083effa3c82f40fb7376dad504d86381fa048babc194a13f64e3d74
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13733,174 +13215,174 @@ $ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b15
 ### `nats:2.12-linux` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:409d49daf0939f5e7d8cde71d214d33af5f082a3f413399223dd0b08d2fc50aa
+$ docker pull nats@sha256:d6cb6ec885a324dca2b830829bf9d4c5e43d41279805ce67be044db0ec7fae56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6591138 bytes)**  
+-	Total Size: **6.6 MB (6598587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2aa68383287bc4011abbb0cda6516a3a4c06e62dd9d51014d5f83e7efff7e80`
+-	Image ID: `sha256:e5ec0ef7d756ea786e6deee1fb08986ad9ab7616b087e445e2b3c73bf7f2d347`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4acd967ddc02590a1f9db5c0ab104a521c3b01c4fc3ca5ced9eeff9ee3ba3c59`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.6 MB (6590629 bytes)  
+	-	`sha256:2f8912005071f27ea416bffea2294316df3b1b12b1e8346b2a1adcd792aa8496`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.6 MB (6598078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0103929f5e0e3db1b12e36e1aeff3c923eddff5d1968e3d0f22b3f7aa30ebba`  
-		Last Modified: Wed, 17 Dec 2025 20:01:31 GMT  
+	-	`sha256:05852294398b9aea33a8d9d248d324ee895e96dee6bfa8363653f16079ddac04`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a226abede1d8384071e63eb0257452b99108eaaea6501acd919580c2ec3e3232
+$ docker pull nats@sha256:a0f34e28b55652588fe8c7891ab83879808bee3cee9dbea0da32a6d4431fcc89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a153786df027a7d066c8f5784f26e41ed9689710d05d147a66218be1b4dd1fd8`
+-	Image ID: `sha256:8b2ed37d6666a700ae3e29116b15949d1ff6130503d9cf7d5eb2620f33e201a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89af6a462dd1e2f4e92326ee7e0ef9f89f947b5a380af7de2ddcacc09f645306`  
-		Last Modified: Wed, 17 Dec 2025 20:01:30 GMT  
+	-	`sha256:4e22704ce89be3ca5373eedf4cd92a430da69b69b5c4722a9b652a13f5009e01`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-linux` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:3853bb8507245773d5a8ce05deea7cfd9f4da723b2c363480580cc012ca53270
+$ docker pull nats@sha256:f7799b4a822c5771e5d48f0f1c068ea2cec23162c6831f82d2b009b36a857e28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6313697 bytes)**  
+-	Total Size: **6.3 MB (6323105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93286d48902d584731e848087c653ac0a6d01e8425909fc66515ffaefe8acc14`
+-	Image ID: `sha256:370df6c853d90e83658a3dfb4c82a802848ff4f6b4522ba921e6a7ad306ef356`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:8c692c13a40e92100ded6771cbbc3a0d5bf2526f18f3fb0a48f15be60c2df82b`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.3 MB (6313188 bytes)  
+	-	`sha256:1efb0795d882364e2a023f0af5959b157fb2940eacdb92639318b205267c0ad4`  
+		Last Modified: Tue, 27 Jan 2026 16:11:11 GMT  
+		Size: 6.3 MB (6322595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a12d6f521214dc21cc2bcdc941aa35f4ec314380c729cdfdc42c3aa6d6bfc542
+$ docker pull nats@sha256:d73a9779831083ed543a3bd2f7e87c1dc8caec08ddac320cc7a25c94e648b157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaab9a175ebb399933d1c8ea3f50398dd348dcdf598f5424f2921569526e82d2`
+-	Image ID: `sha256:6301a8cfa90733ef8a35c4bde2ee64d946519b1026091f17c5e915f86a498204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43b1dc7d6b077ab1f2267d99aa3a71b675795ee1f57b76f8a7ecd3d05fcdd480`  
-		Last Modified: Wed, 17 Dec 2025 20:00:44 GMT  
+	-	`sha256:2e565ea89cf46f2c719698d7f99d288200307fbb51c38e98a8bde6c8102d0d23`  
+		Last Modified: Tue, 27 Jan 2026 21:09:50 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-linux` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:e94a35025c028537959412b3781acd5c082d9d6128056903a36fd72303137cb5
+$ docker pull nats@sha256:488c6c4014617fff07b617db250920bcb069b5d712e4185c98c6387b2baa93e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6303727 bytes)**  
+-	Total Size: **6.3 MB (6310862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f76d4a21e40bc97da539f87250554131486a6b9c78c7f1cb563c0d439eca6ab`
+-	Image ID: `sha256:4b7a85a207a36665f5bc23045e4bba37e6a52dd82b9b57a47b543b28fe145b20`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.3 MB (6303218 bytes)  
+	-	`sha256:f89bd8d5669bd18e009b01f3649659381ff93c4199e64ffa25637a2739cba3a5`  
+		Last Modified: Tue, 27 Jan 2026 16:11:12 GMT  
+		Size: 6.3 MB (6310353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:6c736e7cdb0b623e13835c5b7f1ff18a1b684a47db62f5986b4a18586e605dd0`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b08b7fb4643e
+$ docker pull nats@sha256:9fd3d1e91e30c408f98d4afaaaa4bc75c40efeb43567518934829f6d0ac86556
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:effc5987cb319c0e4e830fe710b565d3b22924a14ccc2cf7c699563cf61c77cb`
+-	Image ID: `sha256:f8f796abff51fa066462285403989439d8035c748d22d1b340334a21cc658983`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:13865f9df2b0d2a106a6ff2b46ab7f923c9d9bcd479a551759a737f5ebcd44a1`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13965,117 +13447,117 @@ $ docker pull nats@sha256:0686bfde4b19aeb60c7a324a5b424e778381949910a579bcd02b42
 ### `nats:2.12-linux` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:c2b63aa758462e86058c91fe8401191b41043d2163a78fdec57519d4f0b49998
+$ docker pull nats@sha256:98765b2b71bf6daa662b7dbd1055075a97e9000f3758c6aceeb26c8cb5fd0e63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6053571 bytes)**  
+-	Total Size: **6.1 MB (6059945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08c2636ef42b619db39e1975f9b631869bc3c3b24489f7866a08171ddcc5033c`
+-	Image ID: `sha256:84f209e000ef99dbbbc6d350eb39ac8c75f5d40744f18ae5414c0c07e9e45655`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fff90457358766f5b735feb2d49e853cf695210b8abe6ba57edc0abce8282fd8`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.1 MB (6053063 bytes)  
+	-	`sha256:d7498e46ed99a6f25a5e161fffb2a10e547d3bd8f682806db51e70bf75c104d8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.1 MB (6059437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:589282b0ff2ad41789a44317f1ea281a1922d78ec8dbf8a031acc22733f31036`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d7d1570fb25ef2bda69d3d006ba8f47a5bd2a378411613cb7f881e8ab5078488
+$ docker pull nats@sha256:43af96803f49adc8aaa465d03d0dde41ee7e209f9a0e28947566a936727c49fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 KB (10513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed570c2ba4ccaf310e9bacf729785e05e597e250ef1e4f162cd4184a0794cf04`
+-	Image ID: `sha256:3421e3e523f67cbeb606c276691497e77d59a9afe368fac3dd2b77b44a4ceb58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91f2c07ab8052b7c97b473ee388d713a2cb3c94fbc741e2892b0a738632be01`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:e3c3d1d8ec6a07a1fc217e6f7df3eab02aa21e7017b3693f928a7360d8ac21a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 10.5 KB (10513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-linux` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:28f34bed0a682b4aa4eedefde127516cf11d48fe189b5012061d4ceead86a883
+$ docker pull nats@sha256:ae3f7eac492fb3850591ee0580f6f26c3ab90fa4001072f347bbdea377021180
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6432293 bytes)**  
+-	Total Size: **6.4 MB (6439573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34db5d9b7c6ad05b3a0206e1c4bc40e08f029d7a4ceb4f9a193d6fef9f3705c9`
+-	Image ID: `sha256:4204c3fe6f38e529b9ab99128f4f71c742b5dddbec6d3fcdd784912c812e359d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f8e43cf01609735e89620aa1f85d5675eccdd17850b8f0944070d6fca83f5f31`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.4 MB (6431785 bytes)  
+	-	`sha256:647f636b2ba788fbcd64742e49cd42dbe55579be711374f52ac5c9e3bb6810d2`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.4 MB (6439063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 508.0 B  
+	-	`sha256:930f40f7174a2c941bc3d6fea3291abdd5910b116dc8976147ffe92096a2dc89`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:64a2cb9ff1e0f5b75e2e53f9f9ccbb96c66e914c524763620814e9606fef2057
+$ docker pull nats@sha256:363dcabc130a83ffdf947725601f3ff72e57b4ac101c352b9ca592bd1e8678da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 KB (10422 bytes)**  
+-	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e6c0882b54633cd5fdbda1ba2a5bcf53fc177361102c5052cb69a80692dbab2`
+-	Image ID: `sha256:d81e58884f9d9e0d8eb1b6185d44e98751a7fab46989c675f9307e30d5310c55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62f918a7cdeb02a6e02929e5b0c8f5dbe6366961c236880f3d712024736b37d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 10.4 KB (10422 bytes)  
+	-	`sha256:c10d7d82f5e8df9bd31c438ff05420d632a2ad10dcad8309a3de4d55d2196ce2`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:2.12-nanoserver`
@@ -14223,7 +13705,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 ## `nats:2.12-scratch`
 
 ```console
-$ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b157e5844f92c
+$ docker pull nats@sha256:5b7d13172083effa3c82f40fb7376dad504d86381fa048babc194a13f64e3d74
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14244,174 +13726,174 @@ $ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b15
 ### `nats:2.12-scratch` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:409d49daf0939f5e7d8cde71d214d33af5f082a3f413399223dd0b08d2fc50aa
+$ docker pull nats@sha256:d6cb6ec885a324dca2b830829bf9d4c5e43d41279805ce67be044db0ec7fae56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6591138 bytes)**  
+-	Total Size: **6.6 MB (6598587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2aa68383287bc4011abbb0cda6516a3a4c06e62dd9d51014d5f83e7efff7e80`
+-	Image ID: `sha256:e5ec0ef7d756ea786e6deee1fb08986ad9ab7616b087e445e2b3c73bf7f2d347`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4acd967ddc02590a1f9db5c0ab104a521c3b01c4fc3ca5ced9eeff9ee3ba3c59`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.6 MB (6590629 bytes)  
+	-	`sha256:2f8912005071f27ea416bffea2294316df3b1b12b1e8346b2a1adcd792aa8496`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.6 MB (6598078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0103929f5e0e3db1b12e36e1aeff3c923eddff5d1968e3d0f22b3f7aa30ebba`  
-		Last Modified: Wed, 17 Dec 2025 20:01:31 GMT  
+	-	`sha256:05852294398b9aea33a8d9d248d324ee895e96dee6bfa8363653f16079ddac04`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a226abede1d8384071e63eb0257452b99108eaaea6501acd919580c2ec3e3232
+$ docker pull nats@sha256:a0f34e28b55652588fe8c7891ab83879808bee3cee9dbea0da32a6d4431fcc89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a153786df027a7d066c8f5784f26e41ed9689710d05d147a66218be1b4dd1fd8`
+-	Image ID: `sha256:8b2ed37d6666a700ae3e29116b15949d1ff6130503d9cf7d5eb2620f33e201a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89af6a462dd1e2f4e92326ee7e0ef9f89f947b5a380af7de2ddcacc09f645306`  
-		Last Modified: Wed, 17 Dec 2025 20:01:30 GMT  
+	-	`sha256:4e22704ce89be3ca5373eedf4cd92a430da69b69b5c4722a9b652a13f5009e01`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-scratch` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:3853bb8507245773d5a8ce05deea7cfd9f4da723b2c363480580cc012ca53270
+$ docker pull nats@sha256:f7799b4a822c5771e5d48f0f1c068ea2cec23162c6831f82d2b009b36a857e28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6313697 bytes)**  
+-	Total Size: **6.3 MB (6323105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93286d48902d584731e848087c653ac0a6d01e8425909fc66515ffaefe8acc14`
+-	Image ID: `sha256:370df6c853d90e83658a3dfb4c82a802848ff4f6b4522ba921e6a7ad306ef356`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:8c692c13a40e92100ded6771cbbc3a0d5bf2526f18f3fb0a48f15be60c2df82b`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.3 MB (6313188 bytes)  
+	-	`sha256:1efb0795d882364e2a023f0af5959b157fb2940eacdb92639318b205267c0ad4`  
+		Last Modified: Tue, 27 Jan 2026 16:11:11 GMT  
+		Size: 6.3 MB (6322595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a12d6f521214dc21cc2bcdc941aa35f4ec314380c729cdfdc42c3aa6d6bfc542
+$ docker pull nats@sha256:d73a9779831083ed543a3bd2f7e87c1dc8caec08ddac320cc7a25c94e648b157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaab9a175ebb399933d1c8ea3f50398dd348dcdf598f5424f2921569526e82d2`
+-	Image ID: `sha256:6301a8cfa90733ef8a35c4bde2ee64d946519b1026091f17c5e915f86a498204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43b1dc7d6b077ab1f2267d99aa3a71b675795ee1f57b76f8a7ecd3d05fcdd480`  
-		Last Modified: Wed, 17 Dec 2025 20:00:44 GMT  
+	-	`sha256:2e565ea89cf46f2c719698d7f99d288200307fbb51c38e98a8bde6c8102d0d23`  
+		Last Modified: Tue, 27 Jan 2026 21:09:50 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-scratch` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:e94a35025c028537959412b3781acd5c082d9d6128056903a36fd72303137cb5
+$ docker pull nats@sha256:488c6c4014617fff07b617db250920bcb069b5d712e4185c98c6387b2baa93e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6303727 bytes)**  
+-	Total Size: **6.3 MB (6310862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f76d4a21e40bc97da539f87250554131486a6b9c78c7f1cb563c0d439eca6ab`
+-	Image ID: `sha256:4b7a85a207a36665f5bc23045e4bba37e6a52dd82b9b57a47b543b28fe145b20`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.3 MB (6303218 bytes)  
+	-	`sha256:f89bd8d5669bd18e009b01f3649659381ff93c4199e64ffa25637a2739cba3a5`  
+		Last Modified: Tue, 27 Jan 2026 16:11:12 GMT  
+		Size: 6.3 MB (6310353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:6c736e7cdb0b623e13835c5b7f1ff18a1b684a47db62f5986b4a18586e605dd0`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b08b7fb4643e
+$ docker pull nats@sha256:9fd3d1e91e30c408f98d4afaaaa4bc75c40efeb43567518934829f6d0ac86556
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:effc5987cb319c0e4e830fe710b565d3b22924a14ccc2cf7c699563cf61c77cb`
+-	Image ID: `sha256:f8f796abff51fa066462285403989439d8035c748d22d1b340334a21cc658983`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:13865f9df2b0d2a106a6ff2b46ab7f923c9d9bcd479a551759a737f5ebcd44a1`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14476,123 +13958,123 @@ $ docker pull nats@sha256:0686bfde4b19aeb60c7a324a5b424e778381949910a579bcd02b42
 ### `nats:2.12-scratch` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:c2b63aa758462e86058c91fe8401191b41043d2163a78fdec57519d4f0b49998
+$ docker pull nats@sha256:98765b2b71bf6daa662b7dbd1055075a97e9000f3758c6aceeb26c8cb5fd0e63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6053571 bytes)**  
+-	Total Size: **6.1 MB (6059945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08c2636ef42b619db39e1975f9b631869bc3c3b24489f7866a08171ddcc5033c`
+-	Image ID: `sha256:84f209e000ef99dbbbc6d350eb39ac8c75f5d40744f18ae5414c0c07e9e45655`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fff90457358766f5b735feb2d49e853cf695210b8abe6ba57edc0abce8282fd8`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.1 MB (6053063 bytes)  
+	-	`sha256:d7498e46ed99a6f25a5e161fffb2a10e547d3bd8f682806db51e70bf75c104d8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.1 MB (6059437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:589282b0ff2ad41789a44317f1ea281a1922d78ec8dbf8a031acc22733f31036`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d7d1570fb25ef2bda69d3d006ba8f47a5bd2a378411613cb7f881e8ab5078488
+$ docker pull nats@sha256:43af96803f49adc8aaa465d03d0dde41ee7e209f9a0e28947566a936727c49fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 KB (10513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed570c2ba4ccaf310e9bacf729785e05e597e250ef1e4f162cd4184a0794cf04`
+-	Image ID: `sha256:3421e3e523f67cbeb606c276691497e77d59a9afe368fac3dd2b77b44a4ceb58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91f2c07ab8052b7c97b473ee388d713a2cb3c94fbc741e2892b0a738632be01`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:e3c3d1d8ec6a07a1fc217e6f7df3eab02aa21e7017b3693f928a7360d8ac21a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 10.5 KB (10513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2.12-scratch` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:28f34bed0a682b4aa4eedefde127516cf11d48fe189b5012061d4ceead86a883
+$ docker pull nats@sha256:ae3f7eac492fb3850591ee0580f6f26c3ab90fa4001072f347bbdea377021180
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6432293 bytes)**  
+-	Total Size: **6.4 MB (6439573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34db5d9b7c6ad05b3a0206e1c4bc40e08f029d7a4ceb4f9a193d6fef9f3705c9`
+-	Image ID: `sha256:4204c3fe6f38e529b9ab99128f4f71c742b5dddbec6d3fcdd784912c812e359d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f8e43cf01609735e89620aa1f85d5675eccdd17850b8f0944070d6fca83f5f31`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.4 MB (6431785 bytes)  
+	-	`sha256:647f636b2ba788fbcd64742e49cd42dbe55579be711374f52ac5c9e3bb6810d2`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.4 MB (6439063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 508.0 B  
+	-	`sha256:930f40f7174a2c941bc3d6fea3291abdd5910b116dc8976147ffe92096a2dc89`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2.12-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:64a2cb9ff1e0f5b75e2e53f9f9ccbb96c66e914c524763620814e9606fef2057
+$ docker pull nats@sha256:363dcabc130a83ffdf947725601f3ff72e57b4ac101c352b9ca592bd1e8678da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 KB (10422 bytes)**  
+-	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e6c0882b54633cd5fdbda1ba2a5bcf53fc177361102c5052cb69a80692dbab2`
+-	Image ID: `sha256:d81e58884f9d9e0d8eb1b6185d44e98751a7fab46989c675f9307e30d5310c55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62f918a7cdeb02a6e02929e5b0c8f5dbe6366961c236880f3d712024736b37d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 10.4 KB (10422 bytes)  
+	-	`sha256:c10d7d82f5e8df9bd31c438ff05420d632a2ad10dcad8309a3de4d55d2196ce2`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:2.12-windowsservercore`
 
 ```console
-$ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78caac84949fd
+$ docker pull nats@sha256:25233863901918872bf17b591083767ce1faeefc993a94cfc1b17bf516664a72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14602,14 +14084,14 @@ $ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78c
 ### `nats:2.12-windowsservercore` - windows version 10.0.20348.4648; amd64
 
 ```console
-$ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1b9dcd1eaa1
+$ docker pull nats@sha256:85686b0c19dc2cf95ddcbfe8a4cd19da2d2cd35f0ec50058780642e0d2a2dade
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1843284696 bytes)**  
+-	Total Size: **1.8 GB (1843326026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2afac6b75ab215d5e5d8bdd43e3e79eb1483fe051ede8f22cca4fd30bd1bdd6c`
+-	Image ID: `sha256:350724f2d07f8320ce38c7c37d1836d561c501d51842a5a2294c05c286633391`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -14619,29 +14101,29 @@ $ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1
 RUN Apply image 10.0.20348.4294
 # Fri, 09 Jan 2026 00:11:24 GMT
 RUN Install update 10.0.20348.4648
-# Tue, 13 Jan 2026 23:01:41 GMT
+# Tue, 27 Jan 2026 21:02:17 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 13 Jan 2026 23:01:42 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:01:42 GMT
-ENV NATS_SERVER=2.12.3
-# Tue, 13 Jan 2026 23:01:43 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Tue, 13 Jan 2026 23:01:44 GMT
-ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.3/nats-server-v2.12.3-windows-amd64.zip
-# Tue, 13 Jan 2026 23:01:45 GMT
-ENV NATS_SERVER_SHASUM=33cab92d3113cc5c209773748efdd910b85db49493716b31e74df80c659b83f0
-# Tue, 13 Jan 2026 23:01:52 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:02:20 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:02:21 GMT
+ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.4/nats-server-v2.12.4-windows-amd64.zip
+# Tue, 27 Jan 2026 21:02:22 GMT
+ENV NATS_SERVER_SHASUM=99efb643ef399299ed5736e4fc7220551e8450fe9351adc3c2f678b5737815f5
+# Tue, 27 Jan 2026 21:02:45 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:05 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:02:10 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -14654,59 +14136,59 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 13 Jan 2026 18:19:49 GMT  
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5eb8d8274e62e3c5b1abaeb487f99123d4a6a52456f9f2c607ae94c0fdaf0a3f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:7163b7e4ed4603533d1fda3d54c2c9bd222c3767dfe7b8def9f7dd49fab9d9ca`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b28002105b30a506ea71f81d135734fc2290d5709ceec675fa94dac86606e50b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8e811110b9e834a35200f080893776ff6a0942f8d8b81ead09ef8b6d5cca4448`  
+		Last Modified: Tue, 27 Jan 2026 21:03:14 GMT  
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:1c95878a999406539b61a9cf2a1c93993151a5810c7cf62df0695f1824b7e556`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:80f6b1127b820a407c09f03cba32195298037d7a4e62bf7fbe4e48aa6e0e68dc`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35d78593147892e4dc1b0862f357d60da658c514d4ed6ad30a14d265e9d9aee`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:87cab9070ade4519b37ca4c5850d7caa0c9014f700a23e873d5c116c289dc975`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bee1c1bf73c67953ec9edc4463565cbf1d314ba3eaf3072f756261df4c83ef68`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 507.3 KB (507329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:9395ebafa33fffb1174b8933764abb540194af5c3c67197362e7abf5968c3e45`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 7.1 MB (7145810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 487.4 KB (487412 bytes)  
+	-	`sha256:ec4af0169026bc8454cb3a35c7c962cb9420af4960c1ddd87670450b3fd289fe`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.9 KB (1897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 7.1 MB (7124370 bytes)  
+	-	`sha256:7dc6e11b6268f0921828579f88e05cc6e97e36577c0a0ecd486f15ad7457a78e`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1336 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.9 KB (1888 bytes)  
+	-	`sha256:bf677c818932196a82eede373147a57f807e76fc3253349075985e67b2cca95b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65b2cf2bfc670b555a8d1f35418f547f057c9eb49545246fee09583d2809792c`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.3 KB (1319 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a6b3cef151dd4daeb69c3f714d23e7249f1434b44232997938860e2ca473cff`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:d72db2ac852987031e3dcf5336480ce4aab8ee8287719d1790630ab68849ee79`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.12-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78caac84949fd
+$ docker pull nats@sha256:25233863901918872bf17b591083767ce1faeefc993a94cfc1b17bf516664a72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14716,14 +14198,14 @@ $ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78c
 ### `nats:2.12-windowsservercore-ltsc2022` - windows version 10.0.20348.4648; amd64
 
 ```console
-$ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1b9dcd1eaa1
+$ docker pull nats@sha256:85686b0c19dc2cf95ddcbfe8a4cd19da2d2cd35f0ec50058780642e0d2a2dade
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1843284696 bytes)**  
+-	Total Size: **1.8 GB (1843326026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2afac6b75ab215d5e5d8bdd43e3e79eb1483fe051ede8f22cca4fd30bd1bdd6c`
+-	Image ID: `sha256:350724f2d07f8320ce38c7c37d1836d561c501d51842a5a2294c05c286633391`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -14733,29 +14215,29 @@ $ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1
 RUN Apply image 10.0.20348.4294
 # Fri, 09 Jan 2026 00:11:24 GMT
 RUN Install update 10.0.20348.4648
-# Tue, 13 Jan 2026 23:01:41 GMT
+# Tue, 27 Jan 2026 21:02:17 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 13 Jan 2026 23:01:42 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:01:42 GMT
-ENV NATS_SERVER=2.12.3
-# Tue, 13 Jan 2026 23:01:43 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Tue, 13 Jan 2026 23:01:44 GMT
-ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.3/nats-server-v2.12.3-windows-amd64.zip
-# Tue, 13 Jan 2026 23:01:45 GMT
-ENV NATS_SERVER_SHASUM=33cab92d3113cc5c209773748efdd910b85db49493716b31e74df80c659b83f0
-# Tue, 13 Jan 2026 23:01:52 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:02:20 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:02:21 GMT
+ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.4/nats-server-v2.12.4-windows-amd64.zip
+# Tue, 27 Jan 2026 21:02:22 GMT
+ENV NATS_SERVER_SHASUM=99efb643ef399299ed5736e4fc7220551e8450fe9351adc3c2f678b5737815f5
+# Tue, 27 Jan 2026 21:02:45 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:05 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:02:10 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -14768,517 +14250,393 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 13 Jan 2026 18:19:49 GMT  
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5eb8d8274e62e3c5b1abaeb487f99123d4a6a52456f9f2c607ae94c0fdaf0a3f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:7163b7e4ed4603533d1fda3d54c2c9bd222c3767dfe7b8def9f7dd49fab9d9ca`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b28002105b30a506ea71f81d135734fc2290d5709ceec675fa94dac86606e50b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8e811110b9e834a35200f080893776ff6a0942f8d8b81ead09ef8b6d5cca4448`  
+		Last Modified: Tue, 27 Jan 2026 21:03:14 GMT  
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:1c95878a999406539b61a9cf2a1c93993151a5810c7cf62df0695f1824b7e556`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:80f6b1127b820a407c09f03cba32195298037d7a4e62bf7fbe4e48aa6e0e68dc`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35d78593147892e4dc1b0862f357d60da658c514d4ed6ad30a14d265e9d9aee`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:87cab9070ade4519b37ca4c5850d7caa0c9014f700a23e873d5c116c289dc975`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bee1c1bf73c67953ec9edc4463565cbf1d314ba3eaf3072f756261df4c83ef68`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 507.3 KB (507329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:9395ebafa33fffb1174b8933764abb540194af5c3c67197362e7abf5968c3e45`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 7.1 MB (7145810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 487.4 KB (487412 bytes)  
+	-	`sha256:ec4af0169026bc8454cb3a35c7c962cb9420af4960c1ddd87670450b3fd289fe`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.9 KB (1897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 7.1 MB (7124370 bytes)  
+	-	`sha256:7dc6e11b6268f0921828579f88e05cc6e97e36577c0a0ecd486f15ad7457a78e`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1336 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.9 KB (1888 bytes)  
+	-	`sha256:bf677c818932196a82eede373147a57f807e76fc3253349075985e67b2cca95b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65b2cf2bfc670b555a8d1f35418f547f057c9eb49545246fee09583d2809792c`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.3 KB (1319 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a6b3cef151dd4daeb69c3f714d23e7249f1434b44232997938860e2ca473cff`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:d72db2ac852987031e3dcf5336480ce4aab8ee8287719d1790630ab68849ee79`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `nats:2.12.3`
+## `nats:2.12.4`
 
 ```console
-$ docker pull nats@sha256:d3e567e800a4912fc4f99d76b745133abb84d85d378d2fb7d7d118a56e2c815a
+$ docker pull nats@sha256:47e7c3984136e4413bad82b774ced88eea5d98a8280f3f88ade2cd56c19d67e4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 13
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
-	-	windows version 10.0.20348.4648; amd64
 
-### `nats:2.12.3` - linux; amd64
+### `nats:2.12.4` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:409d49daf0939f5e7d8cde71d214d33af5f082a3f413399223dd0b08d2fc50aa
+$ docker pull nats@sha256:d6cb6ec885a324dca2b830829bf9d4c5e43d41279805ce67be044db0ec7fae56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6591138 bytes)**  
+-	Total Size: **6.6 MB (6598587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2aa68383287bc4011abbb0cda6516a3a4c06e62dd9d51014d5f83e7efff7e80`
+-	Image ID: `sha256:e5ec0ef7d756ea786e6deee1fb08986ad9ab7616b087e445e2b3c73bf7f2d347`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4acd967ddc02590a1f9db5c0ab104a521c3b01c4fc3ca5ced9eeff9ee3ba3c59`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.6 MB (6590629 bytes)  
+	-	`sha256:2f8912005071f27ea416bffea2294316df3b1b12b1e8346b2a1adcd792aa8496`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.6 MB (6598078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0103929f5e0e3db1b12e36e1aeff3c923eddff5d1968e3d0f22b3f7aa30ebba`  
-		Last Modified: Wed, 17 Dec 2025 20:01:31 GMT  
+	-	`sha256:05852294398b9aea33a8d9d248d324ee895e96dee6bfa8363653f16079ddac04`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3` - unknown; unknown
+### `nats:2.12.4` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a226abede1d8384071e63eb0257452b99108eaaea6501acd919580c2ec3e3232
+$ docker pull nats@sha256:a0f34e28b55652588fe8c7891ab83879808bee3cee9dbea0da32a6d4431fcc89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a153786df027a7d066c8f5784f26e41ed9689710d05d147a66218be1b4dd1fd8`
+-	Image ID: `sha256:8b2ed37d6666a700ae3e29116b15949d1ff6130503d9cf7d5eb2620f33e201a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89af6a462dd1e2f4e92326ee7e0ef9f89f947b5a380af7de2ddcacc09f645306`  
-		Last Modified: Wed, 17 Dec 2025 20:01:30 GMT  
+	-	`sha256:4e22704ce89be3ca5373eedf4cd92a430da69b69b5c4722a9b652a13f5009e01`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3` - linux; arm variant v6
+### `nats:2.12.4` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:3853bb8507245773d5a8ce05deea7cfd9f4da723b2c363480580cc012ca53270
+$ docker pull nats@sha256:f7799b4a822c5771e5d48f0f1c068ea2cec23162c6831f82d2b009b36a857e28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6313697 bytes)**  
+-	Total Size: **6.3 MB (6323105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93286d48902d584731e848087c653ac0a6d01e8425909fc66515ffaefe8acc14`
+-	Image ID: `sha256:370df6c853d90e83658a3dfb4c82a802848ff4f6b4522ba921e6a7ad306ef356`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:8c692c13a40e92100ded6771cbbc3a0d5bf2526f18f3fb0a48f15be60c2df82b`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.3 MB (6313188 bytes)  
+	-	`sha256:1efb0795d882364e2a023f0af5959b157fb2940eacdb92639318b205267c0ad4`  
+		Last Modified: Tue, 27 Jan 2026 16:11:11 GMT  
+		Size: 6.3 MB (6322595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3` - unknown; unknown
+### `nats:2.12.4` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a12d6f521214dc21cc2bcdc941aa35f4ec314380c729cdfdc42c3aa6d6bfc542
+$ docker pull nats@sha256:d73a9779831083ed543a3bd2f7e87c1dc8caec08ddac320cc7a25c94e648b157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaab9a175ebb399933d1c8ea3f50398dd348dcdf598f5424f2921569526e82d2`
+-	Image ID: `sha256:6301a8cfa90733ef8a35c4bde2ee64d946519b1026091f17c5e915f86a498204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43b1dc7d6b077ab1f2267d99aa3a71b675795ee1f57b76f8a7ecd3d05fcdd480`  
-		Last Modified: Wed, 17 Dec 2025 20:00:44 GMT  
+	-	`sha256:2e565ea89cf46f2c719698d7f99d288200307fbb51c38e98a8bde6c8102d0d23`  
+		Last Modified: Tue, 27 Jan 2026 21:09:50 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3` - linux; arm variant v7
+### `nats:2.12.4` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:e94a35025c028537959412b3781acd5c082d9d6128056903a36fd72303137cb5
+$ docker pull nats@sha256:488c6c4014617fff07b617db250920bcb069b5d712e4185c98c6387b2baa93e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6303727 bytes)**  
+-	Total Size: **6.3 MB (6310862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f76d4a21e40bc97da539f87250554131486a6b9c78c7f1cb563c0d439eca6ab`
+-	Image ID: `sha256:4b7a85a207a36665f5bc23045e4bba37e6a52dd82b9b57a47b543b28fe145b20`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.3 MB (6303218 bytes)  
+	-	`sha256:f89bd8d5669bd18e009b01f3649659381ff93c4199e64ffa25637a2739cba3a5`  
+		Last Modified: Tue, 27 Jan 2026 16:11:12 GMT  
+		Size: 6.3 MB (6310353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:6c736e7cdb0b623e13835c5b7f1ff18a1b684a47db62f5986b4a18586e605dd0`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3` - unknown; unknown
+### `nats:2.12.4` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b08b7fb4643e
+$ docker pull nats@sha256:9fd3d1e91e30c408f98d4afaaaa4bc75c40efeb43567518934829f6d0ac86556
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:effc5987cb319c0e4e830fe710b565d3b22924a14ccc2cf7c699563cf61c77cb`
+-	Image ID: `sha256:f8f796abff51fa066462285403989439d8035c748d22d1b340334a21cc658983`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:13865f9df2b0d2a106a6ff2b46ab7f923c9d9bcd479a551759a737f5ebcd44a1`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3` - linux; arm64 variant v8
+### `nats:2.12.4` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:84d27658916274fc90839c8b5bf429b19e31cbb1b75c0f0a3a182f9279cde8eb
+$ docker pull nats@sha256:98765b2b71bf6daa662b7dbd1055075a97e9000f3758c6aceeb26c8cb5fd0e63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6003867 bytes)**  
+-	Total Size: **6.1 MB (6059945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5f75f93cbc9093743fb6bf5ee34eb5be475b654219900b550d3165c0581cde4`
+-	Image ID: `sha256:84f209e000ef99dbbbc6d350eb39ac8c75f5d40744f18ae5414c0c07e9e45655`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f4415656319a68dcb618baeb6a60d650defd1f514a481e6f6330af14c4fceaf5`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.0 MB (6003360 bytes)  
+	-	`sha256:d7498e46ed99a6f25a5e161fffb2a10e547d3bd8f682806db51e70bf75c104d8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.1 MB (6059437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4accf7902539648ceff59ea4a622f93d63233a3be68792f88eea5f1cc22b62c8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:25 GMT  
-		Size: 507.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2.12.3` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:0686bfde4b19aeb60c7a324a5b424e778381949910a579bcd02b4278b37178cb
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.6 KB (10608 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b9a1a0cf88ef6c816b9693ea6fcb3cb96324947044e828f401611a57feb07ed`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:69f25a8aa435a51636bb06e19bfeb02c5b239c55ba93c340ddef2ae067172c61`  
-		Last Modified: Wed, 17 Dec 2025 20:01:25 GMT  
-		Size: 10.6 KB (10608 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2.12.3` - linux; ppc64le
-
-```console
-$ docker pull nats@sha256:c2b63aa758462e86058c91fe8401191b41043d2163a78fdec57519d4f0b49998
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6053571 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08c2636ef42b619db39e1975f9b631869bc3c3b24489f7866a08171ddcc5033c`
--	Entrypoint: `["\/nats-server"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Wed, 17 Dec 2025 20:01:33 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:33 GMT
-COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
-COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:34 GMT
-ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:34 GMT
-CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:fff90457358766f5b735feb2d49e853cf695210b8abe6ba57edc0abce8282fd8`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.1 MB (6053063 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:589282b0ff2ad41789a44317f1ea281a1922d78ec8dbf8a031acc22733f31036`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3` - unknown; unknown
+### `nats:2.12.4` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d7d1570fb25ef2bda69d3d006ba8f47a5bd2a378411613cb7f881e8ab5078488
+$ docker pull nats@sha256:43af96803f49adc8aaa465d03d0dde41ee7e209f9a0e28947566a936727c49fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 KB (10513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed570c2ba4ccaf310e9bacf729785e05e597e250ef1e4f162cd4184a0794cf04`
+-	Image ID: `sha256:3421e3e523f67cbeb606c276691497e77d59a9afe368fac3dd2b77b44a4ceb58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91f2c07ab8052b7c97b473ee388d713a2cb3c94fbc741e2892b0a738632be01`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:e3c3d1d8ec6a07a1fc217e6f7df3eab02aa21e7017b3693f928a7360d8ac21a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 10.5 KB (10513 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3` - linux; s390x
+### `nats:2.12.4` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:28f34bed0a682b4aa4eedefde127516cf11d48fe189b5012061d4ceead86a883
+$ docker pull nats@sha256:ae3f7eac492fb3850591ee0580f6f26c3ab90fa4001072f347bbdea377021180
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6432293 bytes)**  
+-	Total Size: **6.4 MB (6439573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34db5d9b7c6ad05b3a0206e1c4bc40e08f029d7a4ceb4f9a193d6fef9f3705c9`
+-	Image ID: `sha256:4204c3fe6f38e529b9ab99128f4f71c742b5dddbec6d3fcdd784912c812e359d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f8e43cf01609735e89620aa1f85d5675eccdd17850b8f0944070d6fca83f5f31`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.4 MB (6431785 bytes)  
+	-	`sha256:647f636b2ba788fbcd64742e49cd42dbe55579be711374f52ac5c9e3bb6810d2`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.4 MB (6439063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 508.0 B  
+	-	`sha256:930f40f7174a2c941bc3d6fea3291abdd5910b116dc8976147ffe92096a2dc89`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3` - unknown; unknown
+### `nats:2.12.4` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:64a2cb9ff1e0f5b75e2e53f9f9ccbb96c66e914c524763620814e9606fef2057
+$ docker pull nats@sha256:363dcabc130a83ffdf947725601f3ff72e57b4ac101c352b9ca592bd1e8678da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 KB (10422 bytes)**  
+-	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e6c0882b54633cd5fdbda1ba2a5bcf53fc177361102c5052cb69a80692dbab2`
+-	Image ID: `sha256:d81e58884f9d9e0d8eb1b6185d44e98751a7fab46989c675f9307e30d5310c55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62f918a7cdeb02a6e02929e5b0c8f5dbe6366961c236880f3d712024736b37d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 10.4 KB (10422 bytes)  
+	-	`sha256:c10d7d82f5e8df9bd31c438ff05420d632a2ad10dcad8309a3de4d55d2196ce2`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3` - windows version 10.0.20348.4648; amd64
+## `nats:2.12.4-alpine`
 
 ```console
-$ docker pull nats@sha256:3b2d9d8e3d43468f0c1fe3a5662a0e8128d41e7d32ae2c49e7c329537ca9b496
-```
-
--	Docker Version: 23.0.6
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.5 MB (133473766 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2f299666084d2d61597c58347b2da46a68b5500eebfa9b6f52047641ca08e43`
--	Entrypoint: `["C:\\nats-server.exe"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Thu, 08 Jan 2026 23:55:05 GMT
-RUN Apply image 10.0.20348.4648
-# Tue, 13 Jan 2026 23:32:58 GMT
-RUN cmd /S /C #(nop)  ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:32:59 GMT
-RUN cmd /S /C #(nop) COPY file:ec94fa0a8d5bdb04f4e8f7e8ecc10a64d72990dc4ba8ddff1a8c14d23473ba63 in C:\nats-server.exe 
-# Tue, 13 Jan 2026 23:33:00 GMT
-RUN cmd /S /C #(nop) COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:33:00 GMT
-RUN cmd /S /C #(nop)  EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:33:00 GMT
-RUN cmd /S /C #(nop)  ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:33:01 GMT
-RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
-		Size: 126.7 MB (126696821 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
-		Size: 1.1 KB (1103 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
-		Last Modified: Tue, 13 Jan 2026 23:33:06 GMT  
-		Size: 6.8 MB (6770939 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5977856d3d47691c766837a563a2e87a9b47e59e6c3e0583efefd2ac349b913`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
-		Size: 1.7 KB (1704 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
-		Size: 1.0 KB (1045 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
-		Size: 1.1 KB (1083 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
-		Size: 1.1 KB (1071 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `nats:2.12.3-alpine`
-
-```console
-$ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23c446630957
+$ docker pull nats@sha256:d361757fba4607228166166c9f16374d33fc6e98e52e249dc27485dd865d3eed
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 12
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
-### `nats:2.12.3-alpine` - linux; amd64
+### `nats:2.12.4-alpine` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893845fc7c531
+$ docker pull nats@sha256:6acdaf5c4b4733d858941e822deb26cbe75086c1f41c2480dcda86ac103a977c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.9 MB (10857275 bytes)**  
+-	Total Size: **10.9 MB (10862551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aebde9629273b40e226b204120a5606fe7dcb22685a9055a5ba80442007efd76`
+-	Image ID: `sha256:a9258c2e3e241854fce198066b67bb5a84989b406cadd2a90a968d5523f1e05c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -15287,21 +14645,21 @@ $ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893
 ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -15310,49 +14668,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 7.1 MB (7053852 bytes)  
+	-	`sha256:cedccc65746b215235fc436d111f1f922b9cededdded50b4b8810d92589ad202`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 7.1 MB (7059130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a9ace510454a4fd702f8204904421136909dde3224b5edbd0bb24eee78482af`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 561.0 B  
+	-	`sha256:9612b455a56e18bccb84e093c667e6c5c5ace810ed4f40d92aa4ed0ca7fad231`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3a1fa25cb2dff28e7184ef3cafa056ed5da313facaac284acc63edb48c1e903`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 410.0 B  
+	-	`sha256:0250ff07e3bdfdc6a4253dff05da494df1b874005048990a3e2cf2fcfa012bc3`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-alpine` - unknown; unknown
+### `nats:2.12.4-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:908602cc7648433a79c982fa1487bbfa25f4bf83f5fa56212f83553b121fd3c3
+$ docker pull nats@sha256:9b191ebe1c38dcdd740ff1d4bb194f7483cee453bc3080181736b8f869dd7003
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.4 KB (15404 bytes)**  
+-	Total Size: **15.4 KB (15403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84bb29d946c1469efd07d2b9665218b58f25678bc1de3425a1de33791c1113a9`
+-	Image ID: `sha256:b888d27fdc45fe68d2a29d2fc9660fb3b164659976c828922ebcd7c02737d248`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca80d84ada3fed13457e5c523b614750e1907b472a9e7531a569547387cddcc2`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 15.4 KB (15404 bytes)  
+	-	`sha256:9842806eadf12c2d37461bd3b40af07618af7574f01d0b3b942e00ea2a4d043a`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 15.4 KB (15403 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-alpine` - linux; arm variant v6
+### `nats:2.12.4-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f8d0c7dce86
+$ docker pull nats@sha256:a25880f3fb1d3561ea4bacf110e5fd6d23d165d3cdb096bb98a2cf100f78598d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.3 MB (10278433 bytes)**  
+-	Total Size: **10.3 MB (10285793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480b8bd7178529c103d42255dbfd4adf72e60af511257a78f22a68453ab41b5f`
+-	Image ID: `sha256:9d1a1122f5dae285cb106f3c3b00146414a1973051302af466ee325b905519e7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -15361,21 +14719,21 @@ $ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f
 ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:09 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -15384,49 +14742,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 21:00:10 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
-		Size: 6.8 MB (6773381 bytes)  
+	-	`sha256:66465e3b7e0a1cdb3874701a0a2537b4dcb8042792d5dcf98baa4ddf97d352ad`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 6.8 MB (6780740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 560.0 B  
+	-	`sha256:14063ab2ee14aa70e7847f0c2b89dea724fe71097d3bbb363753797341e4784f`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6bac971b438fd7cceeb9b5c1eecda7a4f9d26ca326f9771ce86a90fa1cf21a6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
+	-	`sha256:ac8d1ebaa7052db55538e0cec4fae6ca5bb000d6525528dc6c725f3366421fd0`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-alpine` - unknown; unknown
+### `nats:2.12.4-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:4ff7a4ef3c9ae84a97f274139f4d6dfef0d3a848303d156092b4f8002ecc4f5a
+$ docker pull nats@sha256:19396d8ceba09c3264a25ebfa9f50840835c3ec6607b50cd10beaa953a6b33e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ac6f34e0231323829f3011d461ab111cf13eb19476fc07dcecabf4752f902be`
+-	Image ID: `sha256:25ab23bc93d5a0ec67c651d02a9b994c99e766f53d0b812287fa917e7c6c5901`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3479597242ab0dfe5e61e6c1fe927d27e29e6e0acc2aeb5725c8854d5cb011c7`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:03c4b836e1aa562163bdc728fde907aa09502dab91be516aaea3e608ac0b9925`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-alpine` - linux; arm variant v7
+### `nats:2.12.4-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b37b43f01637
+$ docker pull nats@sha256:1fb9a865bfddcc7ccf0352e443ec93c89e7fa56afc9746102ef4d4f09ccfdaef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.0 MB (9984798 bytes)**  
+-	Total Size: **10.0 MB (9992148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d08e24e4fa7242a20541ae75e9a7b66f43d04d2bbe01fa91d2e34c85c48087e`
+-	Image ID: `sha256:3c8aa27bf27091f7f6f72e5a0e094c585886298ba7ffaf91ce2df0a45f59821d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -15435,21 +14793,21 @@ $ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b3
 ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -15458,123 +14816,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 6.8 MB (6762271 bytes)  
+	-	`sha256:007c47b99e0f8ce3eb6487d084a37b69fd666c17f8a6b58b94bc9f382892ef51`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 6.8 MB (6769622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+	-	`sha256:f3c997d67c56839e0314ea6f55308216a5ba43a5f40975da43014f9f32a17383`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 411.0 B  
+	-	`sha256:4053d67b823eb88b56d135755dd578f459b818b41c680f8745f7222978bccb36`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-alpine` - unknown; unknown
+### `nats:2.12.4-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6ef109d4281
+$ docker pull nats@sha256:67e81a213cea4e248950c0208b0171d9004620ef41586d08d0868faa707c4288
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c95dce61236e2d9649b8422a65f23f1910f61b9f45bc5d221b66daa5a33cf2d`
+-	Image ID: `sha256:6ce733992685dbdda0460298fc9ac280734e4f8bc06f15ae66da0d996cbd4b7f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:3e3db6f7c70dc8fb02d9849c24bf4d65a552cf352d7921ac590406bb96384fb9`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-alpine` - linux; arm64 variant v8
+### `nats:2.12.4-alpine` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:d62ed555cea761ef47d6bf25f1672a1a8d94aa4703f95a927ddadc094d4d5144
+$ docker pull nats@sha256:4f96ccac99bd215fc4064d5d3592ea9f8fe39d5df504756ee420ac1fa0b3fb26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.6 MB (10599674 bytes)**  
+-	Total Size: **10.3 MB (10252278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cd1e6ec1bf933c04f08636d86cc5764fefd07bd1c94c4eefd0b6a06f4266cd4e`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
-
-```dockerfile
-# Wed, 08 Oct 2025 11:04:56 GMT
-ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
-# Wed, 08 Oct 2025 11:04:56 GMT
-CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:58 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:58 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:58 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:58 GMT
-COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:58 GMT
-COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:58 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:58 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:58 GMT
-CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
-		Size: 4.1 MB (4138069 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff897b652cfa26ab8408fd8fcbfbf0cbcddc6b6fdf074ed595b62f47e968c2de`  
-		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
-		Size: 6.5 MB (6460634 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93e271e573323c058c33c69f8d7264e8532d2bc4be024d1f34f72ca2347a95fc`  
-		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
-		Size: 560.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d440508ea6e39fbf175786fae25f608d37f8f2018eb00841f9444ec520550568`  
-		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
-		Size: 411.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2.12.3-alpine` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:7dc6fbe8dce46b22212fd2304d64155b7b78495d05763821a8688efb8b7b5867
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.6 KB (15553 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0ae95134c1985aa84fd85de60cc23d0cac7439c6170ad255db906e9b05d502a`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:2e16713724a2905b342f1529553a0ede89eea5f2fe7612baaaf5d97bda651043`  
-		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
-		Size: 15.6 KB (15553 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2.12.3-alpine` - linux; ppc64le
-
-```console
-$ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae09abc7d7dcc
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10244174 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e7359a2b492fe228465c4dba600737214e56133945e97921941eff2ae5546b1`
+-	Image ID: `sha256:7d6fe54daa6ec7b97b23c158221a59b2b57045573d3e57581b68c3fa0e3bce0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -15583,21 +14867,21 @@ $ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae0
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:01 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:01 GMT
+# Tue, 27 Jan 2026 21:06:51 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:06:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -15606,49 +14890,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f0f141df1060290bea337dd410f443f266f697c0f6e1906a6a9e0d258becc78`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 6.5 MB (6510964 bytes)  
+	-	`sha256:77c3493b9579716670251c20f0ae944646efba9da30cdec49372112973d45a46`  
+		Last Modified: Tue, 27 Jan 2026 21:07:06 GMT  
+		Size: 6.5 MB (6519066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 560.0 B  
+	-	`sha256:dcf0f099d527269dc43593793ecaadda88e477182e35413d281eae5fca8edcd9`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 409.0 B  
+	-	`sha256:3d81715261f9c8109cdf9b0d19000e23c890a8230df8e1249fb38dfcc69818e5`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-alpine` - unknown; unknown
+### `nats:2.12.4-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:2863d02373bc1aae9fb72d2ad9ee57b8990eadaf19e89a23de445b9ff8178f50
+$ docker pull nats@sha256:72f960c82b4c420a40dfae4802ee5aa8eb4f8ead833b62354411bebb2bd3794e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.5 KB (15472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d698c5b2b274ea9660ca1554c7b356edd3d3442acd18a0af1c5f89f197efb0cc`
+-	Image ID: `sha256:e06a9d3df0114f3d556457c95e701fc6f90c0a3839136f138f39e337547eee57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:09d997d1b12e4765cde5053a09e9d2a2df28a6bc8a91b206c57708bef5c8a5c6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+	-	`sha256:4d13bd95f79301e5d85c253329f6f5a8f2b5ace279ce58b31f6cb5c285fbeb10`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
 		Size: 15.5 KB (15472 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-alpine` - linux; s390x
+### `nats:2.12.4-alpine` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff44bffaba7d
+$ docker pull nats@sha256:2f19c27f1889b1ffc8dad6d7ecd70041c83e0b4ecc313559a9f4fca6992897a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10543399 bytes)**  
+-	Total Size: **10.6 MB (10550093 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:318709468ae0d2602381d156b7fff5eeeeeba6ad7862fcc729a4f3308dff11b7`
+-	Image ID: `sha256:163c65a520d622326b98b9ff14ad55e811352abe2e51087903bd5c3c4195ded9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -15657,21 +14941,21 @@ $ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff
 ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -15680,70 +14964,68 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 6.9 MB (6893186 bytes)  
+	-	`sha256:3ffbbf76e52abfb81f8bc89754993837553e371cf5864cdca0db08db1e8f98e4`  
+		Last Modified: Tue, 27 Jan 2026 21:00:43 GMT  
+		Size: 6.9 MB (6899878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 560.0 B  
+	-	`sha256:a18be5970dc3e7111ad95a8d4f05c2c2f38c435145987df50136cd5d9e1fd6ef`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 409.0 B  
+	-	`sha256:eea584e8cb60bc5c8e464aa5e067bf25fdc4391ebc09e338f3349572d1607539`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-alpine` - unknown; unknown
+### `nats:2.12.4-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c687f30de32c7
+$ docker pull nats@sha256:ef61b1dcadfe395d1d0850cc16c69650cd3e13a1428075cc8fa916e2d27d61a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.4 KB (15404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5f53ce608591b7cc05772e01835f036e81338ec31761c2fc3747374c12b617e`
+-	Image ID: `sha256:dd4bfa08ab003a58bf52f0d3d2521a27e633e9b5a0c9005020be8cff01d41932`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+	-	`sha256:6ece1efeec3d19253c74d61a50f96cf8dbd2f00f7ee5b08521901a7327ba73ba`  
+		Last Modified: Tue, 27 Jan 2026 21:00:38 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `nats:2.12.3-alpine3.22`
+## `nats:2.12.4-alpine3.22`
 
 ```console
-$ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23c446630957
+$ docker pull nats@sha256:d361757fba4607228166166c9f16374d33fc6e98e52e249dc27485dd865d3eed
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 12
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
-### `nats:2.12.3-alpine3.22` - linux; amd64
+### `nats:2.12.4-alpine3.22` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893845fc7c531
+$ docker pull nats@sha256:6acdaf5c4b4733d858941e822deb26cbe75086c1f41c2480dcda86ac103a977c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.9 MB (10857275 bytes)**  
+-	Total Size: **10.9 MB (10862551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aebde9629273b40e226b204120a5606fe7dcb22685a9055a5ba80442007efd76`
+-	Image ID: `sha256:a9258c2e3e241854fce198066b67bb5a84989b406cadd2a90a968d5523f1e05c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -15752,21 +15034,21 @@ $ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893
 ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -15775,49 +15057,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 7.1 MB (7053852 bytes)  
+	-	`sha256:cedccc65746b215235fc436d111f1f922b9cededdded50b4b8810d92589ad202`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 7.1 MB (7059130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a9ace510454a4fd702f8204904421136909dde3224b5edbd0bb24eee78482af`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 561.0 B  
+	-	`sha256:9612b455a56e18bccb84e093c667e6c5c5ace810ed4f40d92aa4ed0ca7fad231`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3a1fa25cb2dff28e7184ef3cafa056ed5da313facaac284acc63edb48c1e903`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 410.0 B  
+	-	`sha256:0250ff07e3bdfdc6a4253dff05da494df1b874005048990a3e2cf2fcfa012bc3`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-alpine3.22` - unknown; unknown
+### `nats:2.12.4-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:908602cc7648433a79c982fa1487bbfa25f4bf83f5fa56212f83553b121fd3c3
+$ docker pull nats@sha256:9b191ebe1c38dcdd740ff1d4bb194f7483cee453bc3080181736b8f869dd7003
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.4 KB (15404 bytes)**  
+-	Total Size: **15.4 KB (15403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84bb29d946c1469efd07d2b9665218b58f25678bc1de3425a1de33791c1113a9`
+-	Image ID: `sha256:b888d27fdc45fe68d2a29d2fc9660fb3b164659976c828922ebcd7c02737d248`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca80d84ada3fed13457e5c523b614750e1907b472a9e7531a569547387cddcc2`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 15.4 KB (15404 bytes)  
+	-	`sha256:9842806eadf12c2d37461bd3b40af07618af7574f01d0b3b942e00ea2a4d043a`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 15.4 KB (15403 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-alpine3.22` - linux; arm variant v6
+### `nats:2.12.4-alpine3.22` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f8d0c7dce86
+$ docker pull nats@sha256:a25880f3fb1d3561ea4bacf110e5fd6d23d165d3cdb096bb98a2cf100f78598d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.3 MB (10278433 bytes)**  
+-	Total Size: **10.3 MB (10285793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480b8bd7178529c103d42255dbfd4adf72e60af511257a78f22a68453ab41b5f`
+-	Image ID: `sha256:9d1a1122f5dae285cb106f3c3b00146414a1973051302af466ee325b905519e7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -15826,21 +15108,21 @@ $ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f
 ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:09 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -15849,49 +15131,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 21:00:10 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
-		Size: 6.8 MB (6773381 bytes)  
+	-	`sha256:66465e3b7e0a1cdb3874701a0a2537b4dcb8042792d5dcf98baa4ddf97d352ad`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 6.8 MB (6780740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 560.0 B  
+	-	`sha256:14063ab2ee14aa70e7847f0c2b89dea724fe71097d3bbb363753797341e4784f`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6bac971b438fd7cceeb9b5c1eecda7a4f9d26ca326f9771ce86a90fa1cf21a6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
+	-	`sha256:ac8d1ebaa7052db55538e0cec4fae6ca5bb000d6525528dc6c725f3366421fd0`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-alpine3.22` - unknown; unknown
+### `nats:2.12.4-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:4ff7a4ef3c9ae84a97f274139f4d6dfef0d3a848303d156092b4f8002ecc4f5a
+$ docker pull nats@sha256:19396d8ceba09c3264a25ebfa9f50840835c3ec6607b50cd10beaa953a6b33e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ac6f34e0231323829f3011d461ab111cf13eb19476fc07dcecabf4752f902be`
+-	Image ID: `sha256:25ab23bc93d5a0ec67c651d02a9b994c99e766f53d0b812287fa917e7c6c5901`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3479597242ab0dfe5e61e6c1fe927d27e29e6e0acc2aeb5725c8854d5cb011c7`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:03c4b836e1aa562163bdc728fde907aa09502dab91be516aaea3e608ac0b9925`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-alpine3.22` - linux; arm variant v7
+### `nats:2.12.4-alpine3.22` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b37b43f01637
+$ docker pull nats@sha256:1fb9a865bfddcc7ccf0352e443ec93c89e7fa56afc9746102ef4d4f09ccfdaef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.0 MB (9984798 bytes)**  
+-	Total Size: **10.0 MB (9992148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d08e24e4fa7242a20541ae75e9a7b66f43d04d2bbe01fa91d2e34c85c48087e`
+-	Image ID: `sha256:3c8aa27bf27091f7f6f72e5a0e094c585886298ba7ffaf91ce2df0a45f59821d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -15900,21 +15182,21 @@ $ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b3
 ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -15923,123 +15205,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 6.8 MB (6762271 bytes)  
+	-	`sha256:007c47b99e0f8ce3eb6487d084a37b69fd666c17f8a6b58b94bc9f382892ef51`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 6.8 MB (6769622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+	-	`sha256:f3c997d67c56839e0314ea6f55308216a5ba43a5f40975da43014f9f32a17383`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 411.0 B  
+	-	`sha256:4053d67b823eb88b56d135755dd578f459b818b41c680f8745f7222978bccb36`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-alpine3.22` - unknown; unknown
+### `nats:2.12.4-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6ef109d4281
+$ docker pull nats@sha256:67e81a213cea4e248950c0208b0171d9004620ef41586d08d0868faa707c4288
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c95dce61236e2d9649b8422a65f23f1910f61b9f45bc5d221b66daa5a33cf2d`
+-	Image ID: `sha256:6ce733992685dbdda0460298fc9ac280734e4f8bc06f15ae66da0d996cbd4b7f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:3e3db6f7c70dc8fb02d9849c24bf4d65a552cf352d7921ac590406bb96384fb9`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-alpine3.22` - linux; arm64 variant v8
+### `nats:2.12.4-alpine3.22` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:d62ed555cea761ef47d6bf25f1672a1a8d94aa4703f95a927ddadc094d4d5144
+$ docker pull nats@sha256:4f96ccac99bd215fc4064d5d3592ea9f8fe39d5df504756ee420ac1fa0b3fb26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.6 MB (10599674 bytes)**  
+-	Total Size: **10.3 MB (10252278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cd1e6ec1bf933c04f08636d86cc5764fefd07bd1c94c4eefd0b6a06f4266cd4e`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
-
-```dockerfile
-# Wed, 08 Oct 2025 11:04:56 GMT
-ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
-# Wed, 08 Oct 2025 11:04:56 GMT
-CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:58 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:58 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:58 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:58 GMT
-COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:58 GMT
-COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:58 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:58 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:58 GMT
-CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
-		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
-		Size: 4.1 MB (4138069 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff897b652cfa26ab8408fd8fcbfbf0cbcddc6b6fdf074ed595b62f47e968c2de`  
-		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
-		Size: 6.5 MB (6460634 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93e271e573323c058c33c69f8d7264e8532d2bc4be024d1f34f72ca2347a95fc`  
-		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
-		Size: 560.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d440508ea6e39fbf175786fae25f608d37f8f2018eb00841f9444ec520550568`  
-		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
-		Size: 411.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2.12.3-alpine3.22` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:7dc6fbe8dce46b22212fd2304d64155b7b78495d05763821a8688efb8b7b5867
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.6 KB (15553 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0ae95134c1985aa84fd85de60cc23d0cac7439c6170ad255db906e9b05d502a`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:2e16713724a2905b342f1529553a0ede89eea5f2fe7612baaaf5d97bda651043`  
-		Last Modified: Wed, 17 Dec 2025 19:56:03 GMT  
-		Size: 15.6 KB (15553 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2.12.3-alpine3.22` - linux; ppc64le
-
-```console
-$ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae09abc7d7dcc
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10244174 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e7359a2b492fe228465c4dba600737214e56133945e97921941eff2ae5546b1`
+-	Image ID: `sha256:7d6fe54daa6ec7b97b23c158221a59b2b57045573d3e57581b68c3fa0e3bce0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -16048,21 +15256,21 @@ $ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae0
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:01 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:01 GMT
+# Tue, 27 Jan 2026 21:06:51 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:06:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -16071,49 +15279,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f0f141df1060290bea337dd410f443f266f697c0f6e1906a6a9e0d258becc78`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 6.5 MB (6510964 bytes)  
+	-	`sha256:77c3493b9579716670251c20f0ae944646efba9da30cdec49372112973d45a46`  
+		Last Modified: Tue, 27 Jan 2026 21:07:06 GMT  
+		Size: 6.5 MB (6519066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 560.0 B  
+	-	`sha256:dcf0f099d527269dc43593793ecaadda88e477182e35413d281eae5fca8edcd9`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 409.0 B  
+	-	`sha256:3d81715261f9c8109cdf9b0d19000e23c890a8230df8e1249fb38dfcc69818e5`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-alpine3.22` - unknown; unknown
+### `nats:2.12.4-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:2863d02373bc1aae9fb72d2ad9ee57b8990eadaf19e89a23de445b9ff8178f50
+$ docker pull nats@sha256:72f960c82b4c420a40dfae4802ee5aa8eb4f8ead833b62354411bebb2bd3794e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.5 KB (15472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d698c5b2b274ea9660ca1554c7b356edd3d3442acd18a0af1c5f89f197efb0cc`
+-	Image ID: `sha256:e06a9d3df0114f3d556457c95e701fc6f90c0a3839136f138f39e337547eee57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:09d997d1b12e4765cde5053a09e9d2a2df28a6bc8a91b206c57708bef5c8a5c6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+	-	`sha256:4d13bd95f79301e5d85c253329f6f5a8f2b5ace279ce58b31f6cb5c285fbeb10`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
 		Size: 15.5 KB (15472 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-alpine3.22` - linux; s390x
+### `nats:2.12.4-alpine3.22` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff44bffaba7d
+$ docker pull nats@sha256:2f19c27f1889b1ffc8dad6d7ecd70041c83e0b4ecc313559a9f4fca6992897a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10543399 bytes)**  
+-	Total Size: **10.6 MB (10550093 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:318709468ae0d2602381d156b7fff5eeeeeba6ad7862fcc729a4f3308dff11b7`
+-	Image ID: `sha256:163c65a520d622326b98b9ff14ad55e811352abe2e51087903bd5c3c4195ded9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -16122,21 +15330,21 @@ $ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff
 ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -16145,940 +15353,696 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 6.9 MB (6893186 bytes)  
+	-	`sha256:3ffbbf76e52abfb81f8bc89754993837553e371cf5864cdca0db08db1e8f98e4`  
+		Last Modified: Tue, 27 Jan 2026 21:00:43 GMT  
+		Size: 6.9 MB (6899878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 560.0 B  
+	-	`sha256:a18be5970dc3e7111ad95a8d4f05c2c2f38c435145987df50136cd5d9e1fd6ef`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 409.0 B  
+	-	`sha256:eea584e8cb60bc5c8e464aa5e067bf25fdc4391ebc09e338f3349572d1607539`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-alpine3.22` - unknown; unknown
+### `nats:2.12.4-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c687f30de32c7
+$ docker pull nats@sha256:ef61b1dcadfe395d1d0850cc16c69650cd3e13a1428075cc8fa916e2d27d61a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.4 KB (15404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5f53ce608591b7cc05772e01835f036e81338ec31761c2fc3747374c12b617e`
+-	Image ID: `sha256:dd4bfa08ab003a58bf52f0d3d2521a27e633e9b5a0c9005020be8cff01d41932`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+	-	`sha256:6ece1efeec3d19253c74d61a50f96cf8dbd2f00f7ee5b08521901a7327ba73ba`  
+		Last Modified: Tue, 27 Jan 2026 21:00:38 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `nats:2.12.3-linux`
+## `nats:2.12.4-linux`
 
 ```console
-$ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b157e5844f92c
+$ docker pull nats@sha256:47e7c3984136e4413bad82b774ced88eea5d98a8280f3f88ade2cd56c19d67e4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 12
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
-### `nats:2.12.3-linux` - linux; amd64
+### `nats:2.12.4-linux` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:409d49daf0939f5e7d8cde71d214d33af5f082a3f413399223dd0b08d2fc50aa
+$ docker pull nats@sha256:d6cb6ec885a324dca2b830829bf9d4c5e43d41279805ce67be044db0ec7fae56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6591138 bytes)**  
+-	Total Size: **6.6 MB (6598587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2aa68383287bc4011abbb0cda6516a3a4c06e62dd9d51014d5f83e7efff7e80`
+-	Image ID: `sha256:e5ec0ef7d756ea786e6deee1fb08986ad9ab7616b087e445e2b3c73bf7f2d347`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4acd967ddc02590a1f9db5c0ab104a521c3b01c4fc3ca5ced9eeff9ee3ba3c59`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.6 MB (6590629 bytes)  
+	-	`sha256:2f8912005071f27ea416bffea2294316df3b1b12b1e8346b2a1adcd792aa8496`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.6 MB (6598078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0103929f5e0e3db1b12e36e1aeff3c923eddff5d1968e3d0f22b3f7aa30ebba`  
-		Last Modified: Wed, 17 Dec 2025 20:01:31 GMT  
+	-	`sha256:05852294398b9aea33a8d9d248d324ee895e96dee6bfa8363653f16079ddac04`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-linux` - unknown; unknown
+### `nats:2.12.4-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a226abede1d8384071e63eb0257452b99108eaaea6501acd919580c2ec3e3232
+$ docker pull nats@sha256:a0f34e28b55652588fe8c7891ab83879808bee3cee9dbea0da32a6d4431fcc89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a153786df027a7d066c8f5784f26e41ed9689710d05d147a66218be1b4dd1fd8`
+-	Image ID: `sha256:8b2ed37d6666a700ae3e29116b15949d1ff6130503d9cf7d5eb2620f33e201a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89af6a462dd1e2f4e92326ee7e0ef9f89f947b5a380af7de2ddcacc09f645306`  
-		Last Modified: Wed, 17 Dec 2025 20:01:30 GMT  
+	-	`sha256:4e22704ce89be3ca5373eedf4cd92a430da69b69b5c4722a9b652a13f5009e01`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-linux` - linux; arm variant v6
+### `nats:2.12.4-linux` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:3853bb8507245773d5a8ce05deea7cfd9f4da723b2c363480580cc012ca53270
+$ docker pull nats@sha256:f7799b4a822c5771e5d48f0f1c068ea2cec23162c6831f82d2b009b36a857e28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6313697 bytes)**  
+-	Total Size: **6.3 MB (6323105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93286d48902d584731e848087c653ac0a6d01e8425909fc66515ffaefe8acc14`
+-	Image ID: `sha256:370df6c853d90e83658a3dfb4c82a802848ff4f6b4522ba921e6a7ad306ef356`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:8c692c13a40e92100ded6771cbbc3a0d5bf2526f18f3fb0a48f15be60c2df82b`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.3 MB (6313188 bytes)  
+	-	`sha256:1efb0795d882364e2a023f0af5959b157fb2940eacdb92639318b205267c0ad4`  
+		Last Modified: Tue, 27 Jan 2026 16:11:11 GMT  
+		Size: 6.3 MB (6322595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-linux` - unknown; unknown
+### `nats:2.12.4-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a12d6f521214dc21cc2bcdc941aa35f4ec314380c729cdfdc42c3aa6d6bfc542
+$ docker pull nats@sha256:d73a9779831083ed543a3bd2f7e87c1dc8caec08ddac320cc7a25c94e648b157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaab9a175ebb399933d1c8ea3f50398dd348dcdf598f5424f2921569526e82d2`
+-	Image ID: `sha256:6301a8cfa90733ef8a35c4bde2ee64d946519b1026091f17c5e915f86a498204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43b1dc7d6b077ab1f2267d99aa3a71b675795ee1f57b76f8a7ecd3d05fcdd480`  
-		Last Modified: Wed, 17 Dec 2025 20:00:44 GMT  
+	-	`sha256:2e565ea89cf46f2c719698d7f99d288200307fbb51c38e98a8bde6c8102d0d23`  
+		Last Modified: Tue, 27 Jan 2026 21:09:50 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-linux` - linux; arm variant v7
+### `nats:2.12.4-linux` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:e94a35025c028537959412b3781acd5c082d9d6128056903a36fd72303137cb5
+$ docker pull nats@sha256:488c6c4014617fff07b617db250920bcb069b5d712e4185c98c6387b2baa93e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6303727 bytes)**  
+-	Total Size: **6.3 MB (6310862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f76d4a21e40bc97da539f87250554131486a6b9c78c7f1cb563c0d439eca6ab`
+-	Image ID: `sha256:4b7a85a207a36665f5bc23045e4bba37e6a52dd82b9b57a47b543b28fe145b20`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.3 MB (6303218 bytes)  
+	-	`sha256:f89bd8d5669bd18e009b01f3649659381ff93c4199e64ffa25637a2739cba3a5`  
+		Last Modified: Tue, 27 Jan 2026 16:11:12 GMT  
+		Size: 6.3 MB (6310353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:6c736e7cdb0b623e13835c5b7f1ff18a1b684a47db62f5986b4a18586e605dd0`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-linux` - unknown; unknown
+### `nats:2.12.4-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b08b7fb4643e
+$ docker pull nats@sha256:9fd3d1e91e30c408f98d4afaaaa4bc75c40efeb43567518934829f6d0ac86556
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:effc5987cb319c0e4e830fe710b565d3b22924a14ccc2cf7c699563cf61c77cb`
+-	Image ID: `sha256:f8f796abff51fa066462285403989439d8035c748d22d1b340334a21cc658983`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:13865f9df2b0d2a106a6ff2b46ab7f923c9d9bcd479a551759a737f5ebcd44a1`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-linux` - linux; arm64 variant v8
+### `nats:2.12.4-linux` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:84d27658916274fc90839c8b5bf429b19e31cbb1b75c0f0a3a182f9279cde8eb
+$ docker pull nats@sha256:98765b2b71bf6daa662b7dbd1055075a97e9000f3758c6aceeb26c8cb5fd0e63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6003867 bytes)**  
+-	Total Size: **6.1 MB (6059945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5f75f93cbc9093743fb6bf5ee34eb5be475b654219900b550d3165c0581cde4`
+-	Image ID: `sha256:84f209e000ef99dbbbc6d350eb39ac8c75f5d40744f18ae5414c0c07e9e45655`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f4415656319a68dcb618baeb6a60d650defd1f514a481e6f6330af14c4fceaf5`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.0 MB (6003360 bytes)  
+	-	`sha256:d7498e46ed99a6f25a5e161fffb2a10e547d3bd8f682806db51e70bf75c104d8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.1 MB (6059437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4accf7902539648ceff59ea4a622f93d63233a3be68792f88eea5f1cc22b62c8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:25 GMT  
-		Size: 507.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2.12.3-linux` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:0686bfde4b19aeb60c7a324a5b424e778381949910a579bcd02b4278b37178cb
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.6 KB (10608 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b9a1a0cf88ef6c816b9693ea6fcb3cb96324947044e828f401611a57feb07ed`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:69f25a8aa435a51636bb06e19bfeb02c5b239c55ba93c340ddef2ae067172c61`  
-		Last Modified: Wed, 17 Dec 2025 20:01:25 GMT  
-		Size: 10.6 KB (10608 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2.12.3-linux` - linux; ppc64le
-
-```console
-$ docker pull nats@sha256:c2b63aa758462e86058c91fe8401191b41043d2163a78fdec57519d4f0b49998
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6053571 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08c2636ef42b619db39e1975f9b631869bc3c3b24489f7866a08171ddcc5033c`
--	Entrypoint: `["\/nats-server"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Wed, 17 Dec 2025 20:01:33 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:33 GMT
-COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
-COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:34 GMT
-ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:34 GMT
-CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:fff90457358766f5b735feb2d49e853cf695210b8abe6ba57edc0abce8282fd8`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.1 MB (6053063 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:589282b0ff2ad41789a44317f1ea281a1922d78ec8dbf8a031acc22733f31036`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-linux` - unknown; unknown
+### `nats:2.12.4-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d7d1570fb25ef2bda69d3d006ba8f47a5bd2a378411613cb7f881e8ab5078488
+$ docker pull nats@sha256:43af96803f49adc8aaa465d03d0dde41ee7e209f9a0e28947566a936727c49fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 KB (10513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed570c2ba4ccaf310e9bacf729785e05e597e250ef1e4f162cd4184a0794cf04`
+-	Image ID: `sha256:3421e3e523f67cbeb606c276691497e77d59a9afe368fac3dd2b77b44a4ceb58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91f2c07ab8052b7c97b473ee388d713a2cb3c94fbc741e2892b0a738632be01`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:e3c3d1d8ec6a07a1fc217e6f7df3eab02aa21e7017b3693f928a7360d8ac21a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 10.5 KB (10513 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-linux` - linux; s390x
+### `nats:2.12.4-linux` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:28f34bed0a682b4aa4eedefde127516cf11d48fe189b5012061d4ceead86a883
+$ docker pull nats@sha256:ae3f7eac492fb3850591ee0580f6f26c3ab90fa4001072f347bbdea377021180
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6432293 bytes)**  
+-	Total Size: **6.4 MB (6439573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34db5d9b7c6ad05b3a0206e1c4bc40e08f029d7a4ceb4f9a193d6fef9f3705c9`
+-	Image ID: `sha256:4204c3fe6f38e529b9ab99128f4f71c742b5dddbec6d3fcdd784912c812e359d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f8e43cf01609735e89620aa1f85d5675eccdd17850b8f0944070d6fca83f5f31`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.4 MB (6431785 bytes)  
+	-	`sha256:647f636b2ba788fbcd64742e49cd42dbe55579be711374f52ac5c9e3bb6810d2`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.4 MB (6439063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 508.0 B  
+	-	`sha256:930f40f7174a2c941bc3d6fea3291abdd5910b116dc8976147ffe92096a2dc89`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-linux` - unknown; unknown
+### `nats:2.12.4-linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:64a2cb9ff1e0f5b75e2e53f9f9ccbb96c66e914c524763620814e9606fef2057
+$ docker pull nats@sha256:363dcabc130a83ffdf947725601f3ff72e57b4ac101c352b9ca592bd1e8678da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 KB (10422 bytes)**  
+-	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e6c0882b54633cd5fdbda1ba2a5bcf53fc177361102c5052cb69a80692dbab2`
+-	Image ID: `sha256:d81e58884f9d9e0d8eb1b6185d44e98751a7fab46989c675f9307e30d5310c55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62f918a7cdeb02a6e02929e5b0c8f5dbe6366961c236880f3d712024736b37d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 10.4 KB (10422 bytes)  
+	-	`sha256:c10d7d82f5e8df9bd31c438ff05420d632a2ad10dcad8309a3de4d55d2196ce2`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `nats:2.12.3-nanoserver`
+## `nats:2.12.4-nanoserver`
 
 ```console
-$ docker pull nats@sha256:de25b2034f23c29f19be1eaf5f4952a4934989ca8e6abda435385e3f4c3bc6f7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
-	-	windows version 10.0.20348.4648; amd64
-
-### `nats:2.12.3-nanoserver` - windows version 10.0.20348.4648; amd64
-
-```console
-$ docker pull nats@sha256:3b2d9d8e3d43468f0c1fe3a5662a0e8128d41e7d32ae2c49e7c329537ca9b496
-```
-
--	Docker Version: 23.0.6
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.5 MB (133473766 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2f299666084d2d61597c58347b2da46a68b5500eebfa9b6f52047641ca08e43`
--	Entrypoint: `["C:\\nats-server.exe"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Thu, 08 Jan 2026 23:55:05 GMT
-RUN Apply image 10.0.20348.4648
-# Tue, 13 Jan 2026 23:32:58 GMT
-RUN cmd /S /C #(nop)  ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:32:59 GMT
-RUN cmd /S /C #(nop) COPY file:ec94fa0a8d5bdb04f4e8f7e8ecc10a64d72990dc4ba8ddff1a8c14d23473ba63 in C:\nats-server.exe 
-# Tue, 13 Jan 2026 23:33:00 GMT
-RUN cmd /S /C #(nop) COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:33:00 GMT
-RUN cmd /S /C #(nop)  EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:33:00 GMT
-RUN cmd /S /C #(nop)  ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:33:01 GMT
-RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
-		Size: 126.7 MB (126696821 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
-		Size: 1.1 KB (1103 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
-		Last Modified: Tue, 13 Jan 2026 23:33:06 GMT  
-		Size: 6.8 MB (6770939 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5977856d3d47691c766837a563a2e87a9b47e59e6c3e0583efefd2ac349b913`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
-		Size: 1.7 KB (1704 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
-		Size: 1.0 KB (1045 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
-		Size: 1.1 KB (1083 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
-		Size: 1.1 KB (1071 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `nats:2.12.3-nanoserver-ltsc2022`
-
-```console
-$ docker pull nats@sha256:de25b2034f23c29f19be1eaf5f4952a4934989ca8e6abda435385e3f4c3bc6f7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
-	-	windows version 10.0.20348.4648; amd64
-
-### `nats:2.12.3-nanoserver-ltsc2022` - windows version 10.0.20348.4648; amd64
-
-```console
-$ docker pull nats@sha256:3b2d9d8e3d43468f0c1fe3a5662a0e8128d41e7d32ae2c49e7c329537ca9b496
-```
-
--	Docker Version: 23.0.6
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.5 MB (133473766 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2f299666084d2d61597c58347b2da46a68b5500eebfa9b6f52047641ca08e43`
--	Entrypoint: `["C:\\nats-server.exe"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Thu, 08 Jan 2026 23:55:05 GMT
-RUN Apply image 10.0.20348.4648
-# Tue, 13 Jan 2026 23:32:58 GMT
-RUN cmd /S /C #(nop)  ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:32:59 GMT
-RUN cmd /S /C #(nop) COPY file:ec94fa0a8d5bdb04f4e8f7e8ecc10a64d72990dc4ba8ddff1a8c14d23473ba63 in C:\nats-server.exe 
-# Tue, 13 Jan 2026 23:33:00 GMT
-RUN cmd /S /C #(nop) COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:33:00 GMT
-RUN cmd /S /C #(nop)  EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:33:00 GMT
-RUN cmd /S /C #(nop)  ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:33:01 GMT
-RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:45913f0a8ae18b9ed53b6fdc600f5062ad8ee62812c6d52c890cb122810ceb81`  
-		Last Modified: Tue, 13 Jan 2026 20:07:11 GMT  
-		Size: 126.7 MB (126696821 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e49e05abb7d9990e3c235f10efa4a3d1daea0453c59594d4c71b89c1de25d796`  
-		Last Modified: Tue, 13 Jan 2026 23:33:07 GMT  
-		Size: 1.1 KB (1103 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f030b69fda7d73ecde9262b4ce1ea6487d110a836ecc6d375f2a0b82ea945639`  
-		Last Modified: Tue, 13 Jan 2026 23:33:06 GMT  
-		Size: 6.8 MB (6770939 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5977856d3d47691c766837a563a2e87a9b47e59e6c3e0583efefd2ac349b913`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
-		Size: 1.7 KB (1704 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7385d04e12c79e5f7e470a9e7f9098553813b3949761df75d3850c04445b127c`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
-		Size: 1.0 KB (1045 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b92fa6e7777d885352a5dbe441bc3ec399eef6455f5bbd55e493bb76591392b`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
-		Size: 1.1 KB (1083 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c4d0af71fd9a977003d6a0e884fdbf182802bdad26af6fab1c7db1144b467b2`  
-		Last Modified: Tue, 13 Jan 2026 23:33:05 GMT  
-		Size: 1.1 KB (1071 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `nats:2.12.3-scratch`
-
-```console
-$ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b157e5844f92c
+$ docker pull nats@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 12
+-	Platforms: 0
+
+## `nats:2.12.4-nanoserver-ltsc2022`
+
+```console
+$ docker pull nats@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `nats:2.12.4-scratch`
+
+```console
+$ docker pull nats@sha256:47e7c3984136e4413bad82b774ced88eea5d98a8280f3f88ade2cd56c19d67e4
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
-### `nats:2.12.3-scratch` - linux; amd64
+### `nats:2.12.4-scratch` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:409d49daf0939f5e7d8cde71d214d33af5f082a3f413399223dd0b08d2fc50aa
+$ docker pull nats@sha256:d6cb6ec885a324dca2b830829bf9d4c5e43d41279805ce67be044db0ec7fae56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6591138 bytes)**  
+-	Total Size: **6.6 MB (6598587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2aa68383287bc4011abbb0cda6516a3a4c06e62dd9d51014d5f83e7efff7e80`
+-	Image ID: `sha256:e5ec0ef7d756ea786e6deee1fb08986ad9ab7616b087e445e2b3c73bf7f2d347`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4acd967ddc02590a1f9db5c0ab104a521c3b01c4fc3ca5ced9eeff9ee3ba3c59`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.6 MB (6590629 bytes)  
+	-	`sha256:2f8912005071f27ea416bffea2294316df3b1b12b1e8346b2a1adcd792aa8496`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.6 MB (6598078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0103929f5e0e3db1b12e36e1aeff3c923eddff5d1968e3d0f22b3f7aa30ebba`  
-		Last Modified: Wed, 17 Dec 2025 20:01:31 GMT  
+	-	`sha256:05852294398b9aea33a8d9d248d324ee895e96dee6bfa8363653f16079ddac04`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-scratch` - unknown; unknown
+### `nats:2.12.4-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a226abede1d8384071e63eb0257452b99108eaaea6501acd919580c2ec3e3232
+$ docker pull nats@sha256:a0f34e28b55652588fe8c7891ab83879808bee3cee9dbea0da32a6d4431fcc89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a153786df027a7d066c8f5784f26e41ed9689710d05d147a66218be1b4dd1fd8`
+-	Image ID: `sha256:8b2ed37d6666a700ae3e29116b15949d1ff6130503d9cf7d5eb2620f33e201a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89af6a462dd1e2f4e92326ee7e0ef9f89f947b5a380af7de2ddcacc09f645306`  
-		Last Modified: Wed, 17 Dec 2025 20:01:30 GMT  
+	-	`sha256:4e22704ce89be3ca5373eedf4cd92a430da69b69b5c4722a9b652a13f5009e01`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-scratch` - linux; arm variant v6
+### `nats:2.12.4-scratch` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:3853bb8507245773d5a8ce05deea7cfd9f4da723b2c363480580cc012ca53270
+$ docker pull nats@sha256:f7799b4a822c5771e5d48f0f1c068ea2cec23162c6831f82d2b009b36a857e28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6313697 bytes)**  
+-	Total Size: **6.3 MB (6323105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93286d48902d584731e848087c653ac0a6d01e8425909fc66515ffaefe8acc14`
+-	Image ID: `sha256:370df6c853d90e83658a3dfb4c82a802848ff4f6b4522ba921e6a7ad306ef356`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:8c692c13a40e92100ded6771cbbc3a0d5bf2526f18f3fb0a48f15be60c2df82b`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.3 MB (6313188 bytes)  
+	-	`sha256:1efb0795d882364e2a023f0af5959b157fb2940eacdb92639318b205267c0ad4`  
+		Last Modified: Tue, 27 Jan 2026 16:11:11 GMT  
+		Size: 6.3 MB (6322595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-scratch` - unknown; unknown
+### `nats:2.12.4-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a12d6f521214dc21cc2bcdc941aa35f4ec314380c729cdfdc42c3aa6d6bfc542
+$ docker pull nats@sha256:d73a9779831083ed543a3bd2f7e87c1dc8caec08ddac320cc7a25c94e648b157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaab9a175ebb399933d1c8ea3f50398dd348dcdf598f5424f2921569526e82d2`
+-	Image ID: `sha256:6301a8cfa90733ef8a35c4bde2ee64d946519b1026091f17c5e915f86a498204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43b1dc7d6b077ab1f2267d99aa3a71b675795ee1f57b76f8a7ecd3d05fcdd480`  
-		Last Modified: Wed, 17 Dec 2025 20:00:44 GMT  
+	-	`sha256:2e565ea89cf46f2c719698d7f99d288200307fbb51c38e98a8bde6c8102d0d23`  
+		Last Modified: Tue, 27 Jan 2026 21:09:50 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-scratch` - linux; arm variant v7
+### `nats:2.12.4-scratch` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:e94a35025c028537959412b3781acd5c082d9d6128056903a36fd72303137cb5
+$ docker pull nats@sha256:488c6c4014617fff07b617db250920bcb069b5d712e4185c98c6387b2baa93e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6303727 bytes)**  
+-	Total Size: **6.3 MB (6310862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f76d4a21e40bc97da539f87250554131486a6b9c78c7f1cb563c0d439eca6ab`
+-	Image ID: `sha256:4b7a85a207a36665f5bc23045e4bba37e6a52dd82b9b57a47b543b28fe145b20`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.3 MB (6303218 bytes)  
+	-	`sha256:f89bd8d5669bd18e009b01f3649659381ff93c4199e64ffa25637a2739cba3a5`  
+		Last Modified: Tue, 27 Jan 2026 16:11:12 GMT  
+		Size: 6.3 MB (6310353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:6c736e7cdb0b623e13835c5b7f1ff18a1b684a47db62f5986b4a18586e605dd0`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-scratch` - unknown; unknown
+### `nats:2.12.4-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b08b7fb4643e
+$ docker pull nats@sha256:9fd3d1e91e30c408f98d4afaaaa4bc75c40efeb43567518934829f6d0ac86556
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:effc5987cb319c0e4e830fe710b565d3b22924a14ccc2cf7c699563cf61c77cb`
+-	Image ID: `sha256:f8f796abff51fa066462285403989439d8035c748d22d1b340334a21cc658983`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:13865f9df2b0d2a106a6ff2b46ab7f923c9d9bcd479a551759a737f5ebcd44a1`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-scratch` - linux; arm64 variant v8
+### `nats:2.12.4-scratch` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:84d27658916274fc90839c8b5bf429b19e31cbb1b75c0f0a3a182f9279cde8eb
+$ docker pull nats@sha256:98765b2b71bf6daa662b7dbd1055075a97e9000f3758c6aceeb26c8cb5fd0e63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6003867 bytes)**  
+-	Total Size: **6.1 MB (6059945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5f75f93cbc9093743fb6bf5ee34eb5be475b654219900b550d3165c0581cde4`
+-	Image ID: `sha256:84f209e000ef99dbbbc6d350eb39ac8c75f5d40744f18ae5414c0c07e9e45655`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:20 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f4415656319a68dcb618baeb6a60d650defd1f514a481e6f6330af14c4fceaf5`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.0 MB (6003360 bytes)  
+	-	`sha256:d7498e46ed99a6f25a5e161fffb2a10e547d3bd8f682806db51e70bf75c104d8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.1 MB (6059437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4accf7902539648ceff59ea4a622f93d63233a3be68792f88eea5f1cc22b62c8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:25 GMT  
-		Size: 507.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2.12.3-scratch` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:0686bfde4b19aeb60c7a324a5b424e778381949910a579bcd02b4278b37178cb
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.6 KB (10608 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b9a1a0cf88ef6c816b9693ea6fcb3cb96324947044e828f401611a57feb07ed`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:69f25a8aa435a51636bb06e19bfeb02c5b239c55ba93c340ddef2ae067172c61`  
-		Last Modified: Wed, 17 Dec 2025 20:01:25 GMT  
-		Size: 10.6 KB (10608 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2.12.3-scratch` - linux; ppc64le
-
-```console
-$ docker pull nats@sha256:c2b63aa758462e86058c91fe8401191b41043d2163a78fdec57519d4f0b49998
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6053571 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08c2636ef42b619db39e1975f9b631869bc3c3b24489f7866a08171ddcc5033c`
--	Entrypoint: `["\/nats-server"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Wed, 17 Dec 2025 20:01:33 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:33 GMT
-COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
-COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:34 GMT
-ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:34 GMT
-CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:fff90457358766f5b735feb2d49e853cf695210b8abe6ba57edc0abce8282fd8`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.1 MB (6053063 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:589282b0ff2ad41789a44317f1ea281a1922d78ec8dbf8a031acc22733f31036`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-scratch` - unknown; unknown
+### `nats:2.12.4-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d7d1570fb25ef2bda69d3d006ba8f47a5bd2a378411613cb7f881e8ab5078488
+$ docker pull nats@sha256:43af96803f49adc8aaa465d03d0dde41ee7e209f9a0e28947566a936727c49fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 KB (10513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed570c2ba4ccaf310e9bacf729785e05e597e250ef1e4f162cd4184a0794cf04`
+-	Image ID: `sha256:3421e3e523f67cbeb606c276691497e77d59a9afe368fac3dd2b77b44a4ceb58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91f2c07ab8052b7c97b473ee388d713a2cb3c94fbc741e2892b0a738632be01`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:e3c3d1d8ec6a07a1fc217e6f7df3eab02aa21e7017b3693f928a7360d8ac21a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 10.5 KB (10513 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `nats:2.12.3-scratch` - linux; s390x
+### `nats:2.12.4-scratch` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:28f34bed0a682b4aa4eedefde127516cf11d48fe189b5012061d4ceead86a883
+$ docker pull nats@sha256:ae3f7eac492fb3850591ee0580f6f26c3ab90fa4001072f347bbdea377021180
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6432293 bytes)**  
+-	Total Size: **6.4 MB (6439573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34db5d9b7c6ad05b3a0206e1c4bc40e08f029d7a4ceb4f9a193d6fef9f3705c9`
+-	Image ID: `sha256:4204c3fe6f38e529b9ab99128f4f71c742b5dddbec6d3fcdd784912c812e359d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f8e43cf01609735e89620aa1f85d5675eccdd17850b8f0944070d6fca83f5f31`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.4 MB (6431785 bytes)  
+	-	`sha256:647f636b2ba788fbcd64742e49cd42dbe55579be711374f52ac5c9e3bb6810d2`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.4 MB (6439063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 508.0 B  
+	-	`sha256:930f40f7174a2c941bc3d6fea3291abdd5910b116dc8976147ffe92096a2dc89`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `nats:2.12.3-scratch` - unknown; unknown
+### `nats:2.12.4-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:64a2cb9ff1e0f5b75e2e53f9f9ccbb96c66e914c524763620814e9606fef2057
+$ docker pull nats@sha256:363dcabc130a83ffdf947725601f3ff72e57b4ac101c352b9ca592bd1e8678da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 KB (10422 bytes)**  
+-	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e6c0882b54633cd5fdbda1ba2a5bcf53fc177361102c5052cb69a80692dbab2`
+-	Image ID: `sha256:d81e58884f9d9e0d8eb1b6185d44e98751a7fab46989c675f9307e30d5310c55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62f918a7cdeb02a6e02929e5b0c8f5dbe6366961c236880f3d712024736b37d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 10.4 KB (10422 bytes)  
+	-	`sha256:c10d7d82f5e8df9bd31c438ff05420d632a2ad10dcad8309a3de4d55d2196ce2`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `nats:2.12.3-windowsservercore`
+## `nats:2.12.4-windowsservercore`
 
 ```console
-$ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78caac84949fd
+$ docker pull nats@sha256:25233863901918872bf17b591083767ce1faeefc993a94cfc1b17bf516664a72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.20348.4648; amd64
 
-### `nats:2.12.3-windowsservercore` - windows version 10.0.20348.4648; amd64
+### `nats:2.12.4-windowsservercore` - windows version 10.0.20348.4648; amd64
 
 ```console
-$ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1b9dcd1eaa1
+$ docker pull nats@sha256:85686b0c19dc2cf95ddcbfe8a4cd19da2d2cd35f0ec50058780642e0d2a2dade
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1843284696 bytes)**  
+-	Total Size: **1.8 GB (1843326026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2afac6b75ab215d5e5d8bdd43e3e79eb1483fe051ede8f22cca4fd30bd1bdd6c`
+-	Image ID: `sha256:350724f2d07f8320ce38c7c37d1836d561c501d51842a5a2294c05c286633391`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -17088,29 +16052,29 @@ $ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1
 RUN Apply image 10.0.20348.4294
 # Fri, 09 Jan 2026 00:11:24 GMT
 RUN Install update 10.0.20348.4648
-# Tue, 13 Jan 2026 23:01:41 GMT
+# Tue, 27 Jan 2026 21:02:17 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 13 Jan 2026 23:01:42 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:01:42 GMT
-ENV NATS_SERVER=2.12.3
-# Tue, 13 Jan 2026 23:01:43 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Tue, 13 Jan 2026 23:01:44 GMT
-ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.3/nats-server-v2.12.3-windows-amd64.zip
-# Tue, 13 Jan 2026 23:01:45 GMT
-ENV NATS_SERVER_SHASUM=33cab92d3113cc5c209773748efdd910b85db49493716b31e74df80c659b83f0
-# Tue, 13 Jan 2026 23:01:52 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:02:20 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:02:21 GMT
+ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.4/nats-server-v2.12.4-windows-amd64.zip
+# Tue, 27 Jan 2026 21:02:22 GMT
+ENV NATS_SERVER_SHASUM=99efb643ef399299ed5736e4fc7220551e8450fe9351adc3c2f678b5737815f5
+# Tue, 27 Jan 2026 21:02:45 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:05 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:02:10 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -17123,76 +16087,76 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 13 Jan 2026 18:19:49 GMT  
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5eb8d8274e62e3c5b1abaeb487f99123d4a6a52456f9f2c607ae94c0fdaf0a3f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:7163b7e4ed4603533d1fda3d54c2c9bd222c3767dfe7b8def9f7dd49fab9d9ca`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b28002105b30a506ea71f81d135734fc2290d5709ceec675fa94dac86606e50b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8e811110b9e834a35200f080893776ff6a0942f8d8b81ead09ef8b6d5cca4448`  
+		Last Modified: Tue, 27 Jan 2026 21:03:14 GMT  
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:1c95878a999406539b61a9cf2a1c93993151a5810c7cf62df0695f1824b7e556`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:80f6b1127b820a407c09f03cba32195298037d7a4e62bf7fbe4e48aa6e0e68dc`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35d78593147892e4dc1b0862f357d60da658c514d4ed6ad30a14d265e9d9aee`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:87cab9070ade4519b37ca4c5850d7caa0c9014f700a23e873d5c116c289dc975`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bee1c1bf73c67953ec9edc4463565cbf1d314ba3eaf3072f756261df4c83ef68`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 507.3 KB (507329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:9395ebafa33fffb1174b8933764abb540194af5c3c67197362e7abf5968c3e45`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 7.1 MB (7145810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 487.4 KB (487412 bytes)  
+	-	`sha256:ec4af0169026bc8454cb3a35c7c962cb9420af4960c1ddd87670450b3fd289fe`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.9 KB (1897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 7.1 MB (7124370 bytes)  
+	-	`sha256:7dc6e11b6268f0921828579f88e05cc6e97e36577c0a0ecd486f15ad7457a78e`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1336 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.9 KB (1888 bytes)  
+	-	`sha256:bf677c818932196a82eede373147a57f807e76fc3253349075985e67b2cca95b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65b2cf2bfc670b555a8d1f35418f547f057c9eb49545246fee09583d2809792c`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.3 KB (1319 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a6b3cef151dd4daeb69c3f714d23e7249f1434b44232997938860e2ca473cff`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:d72db2ac852987031e3dcf5336480ce4aab8ee8287719d1790630ab68849ee79`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `nats:2.12.3-windowsservercore-ltsc2022`
+## `nats:2.12.4-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78caac84949fd
+$ docker pull nats@sha256:25233863901918872bf17b591083767ce1faeefc993a94cfc1b17bf516664a72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.20348.4648; amd64
 
-### `nats:2.12.3-windowsservercore-ltsc2022` - windows version 10.0.20348.4648; amd64
+### `nats:2.12.4-windowsservercore-ltsc2022` - windows version 10.0.20348.4648; amd64
 
 ```console
-$ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1b9dcd1eaa1
+$ docker pull nats@sha256:85686b0c19dc2cf95ddcbfe8a4cd19da2d2cd35f0ec50058780642e0d2a2dade
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1843284696 bytes)**  
+-	Total Size: **1.8 GB (1843326026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2afac6b75ab215d5e5d8bdd43e3e79eb1483fe051ede8f22cca4fd30bd1bdd6c`
+-	Image ID: `sha256:350724f2d07f8320ce38c7c37d1836d561c501d51842a5a2294c05c286633391`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -17202,29 +16166,29 @@ $ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1
 RUN Apply image 10.0.20348.4294
 # Fri, 09 Jan 2026 00:11:24 GMT
 RUN Install update 10.0.20348.4648
-# Tue, 13 Jan 2026 23:01:41 GMT
+# Tue, 27 Jan 2026 21:02:17 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 13 Jan 2026 23:01:42 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:01:42 GMT
-ENV NATS_SERVER=2.12.3
-# Tue, 13 Jan 2026 23:01:43 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Tue, 13 Jan 2026 23:01:44 GMT
-ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.3/nats-server-v2.12.3-windows-amd64.zip
-# Tue, 13 Jan 2026 23:01:45 GMT
-ENV NATS_SERVER_SHASUM=33cab92d3113cc5c209773748efdd910b85db49493716b31e74df80c659b83f0
-# Tue, 13 Jan 2026 23:01:52 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:02:20 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:02:21 GMT
+ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.4/nats-server-v2.12.4-windows-amd64.zip
+# Tue, 27 Jan 2026 21:02:22 GMT
+ENV NATS_SERVER_SHASUM=99efb643ef399299ed5736e4fc7220551e8450fe9351adc3c2f678b5737815f5
+# Tue, 27 Jan 2026 21:02:45 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:05 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:02:10 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -17237,59 +16201,59 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 13 Jan 2026 18:19:49 GMT  
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5eb8d8274e62e3c5b1abaeb487f99123d4a6a52456f9f2c607ae94c0fdaf0a3f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:7163b7e4ed4603533d1fda3d54c2c9bd222c3767dfe7b8def9f7dd49fab9d9ca`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b28002105b30a506ea71f81d135734fc2290d5709ceec675fa94dac86606e50b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8e811110b9e834a35200f080893776ff6a0942f8d8b81ead09ef8b6d5cca4448`  
+		Last Modified: Tue, 27 Jan 2026 21:03:14 GMT  
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:1c95878a999406539b61a9cf2a1c93993151a5810c7cf62df0695f1824b7e556`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:80f6b1127b820a407c09f03cba32195298037d7a4e62bf7fbe4e48aa6e0e68dc`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35d78593147892e4dc1b0862f357d60da658c514d4ed6ad30a14d265e9d9aee`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:87cab9070ade4519b37ca4c5850d7caa0c9014f700a23e873d5c116c289dc975`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bee1c1bf73c67953ec9edc4463565cbf1d314ba3eaf3072f756261df4c83ef68`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 507.3 KB (507329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:9395ebafa33fffb1174b8933764abb540194af5c3c67197362e7abf5968c3e45`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 7.1 MB (7145810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 487.4 KB (487412 bytes)  
+	-	`sha256:ec4af0169026bc8454cb3a35c7c962cb9420af4960c1ddd87670450b3fd289fe`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.9 KB (1897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 7.1 MB (7124370 bytes)  
+	-	`sha256:7dc6e11b6268f0921828579f88e05cc6e97e36577c0a0ecd486f15ad7457a78e`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1336 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.9 KB (1888 bytes)  
+	-	`sha256:bf677c818932196a82eede373147a57f807e76fc3253349075985e67b2cca95b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65b2cf2bfc670b555a8d1f35418f547f057c9eb49545246fee09583d2809792c`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.3 KB (1319 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a6b3cef151dd4daeb69c3f714d23e7249f1434b44232997938860e2ca473cff`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:d72db2ac852987031e3dcf5336480ce4aab8ee8287719d1790630ab68849ee79`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:alpine`
 
 ```console
-$ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23c446630957
+$ docker pull nats@sha256:5a34dc51990d868db43f3dd119ddac8b9fcfb7af02b3732fb39d8ba1ade2c627
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17310,13 +16274,13 @@ $ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23
 ### `nats:alpine` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893845fc7c531
+$ docker pull nats@sha256:6acdaf5c4b4733d858941e822deb26cbe75086c1f41c2480dcda86ac103a977c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.9 MB (10857275 bytes)**  
+-	Total Size: **10.9 MB (10862551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aebde9629273b40e226b204120a5606fe7dcb22685a9055a5ba80442007efd76`
+-	Image ID: `sha256:a9258c2e3e241854fce198066b67bb5a84989b406cadd2a90a968d5523f1e05c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -17325,21 +16289,21 @@ $ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893
 ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -17348,49 +16312,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 7.1 MB (7053852 bytes)  
+	-	`sha256:cedccc65746b215235fc436d111f1f922b9cededdded50b4b8810d92589ad202`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 7.1 MB (7059130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a9ace510454a4fd702f8204904421136909dde3224b5edbd0bb24eee78482af`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 561.0 B  
+	-	`sha256:9612b455a56e18bccb84e093c667e6c5c5ace810ed4f40d92aa4ed0ca7fad231`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3a1fa25cb2dff28e7184ef3cafa056ed5da313facaac284acc63edb48c1e903`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 410.0 B  
+	-	`sha256:0250ff07e3bdfdc6a4253dff05da494df1b874005048990a3e2cf2fcfa012bc3`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:908602cc7648433a79c982fa1487bbfa25f4bf83f5fa56212f83553b121fd3c3
+$ docker pull nats@sha256:9b191ebe1c38dcdd740ff1d4bb194f7483cee453bc3080181736b8f869dd7003
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.4 KB (15404 bytes)**  
+-	Total Size: **15.4 KB (15403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84bb29d946c1469efd07d2b9665218b58f25678bc1de3425a1de33791c1113a9`
+-	Image ID: `sha256:b888d27fdc45fe68d2a29d2fc9660fb3b164659976c828922ebcd7c02737d248`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca80d84ada3fed13457e5c523b614750e1907b472a9e7531a569547387cddcc2`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 15.4 KB (15404 bytes)  
+	-	`sha256:9842806eadf12c2d37461bd3b40af07618af7574f01d0b3b942e00ea2a4d043a`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 15.4 KB (15403 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:alpine` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f8d0c7dce86
+$ docker pull nats@sha256:a25880f3fb1d3561ea4bacf110e5fd6d23d165d3cdb096bb98a2cf100f78598d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.3 MB (10278433 bytes)**  
+-	Total Size: **10.3 MB (10285793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480b8bd7178529c103d42255dbfd4adf72e60af511257a78f22a68453ab41b5f`
+-	Image ID: `sha256:9d1a1122f5dae285cb106f3c3b00146414a1973051302af466ee325b905519e7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -17399,21 +16363,21 @@ $ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f
 ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:09 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -17422,49 +16386,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 21:00:10 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
-		Size: 6.8 MB (6773381 bytes)  
+	-	`sha256:66465e3b7e0a1cdb3874701a0a2537b4dcb8042792d5dcf98baa4ddf97d352ad`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 6.8 MB (6780740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 560.0 B  
+	-	`sha256:14063ab2ee14aa70e7847f0c2b89dea724fe71097d3bbb363753797341e4784f`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6bac971b438fd7cceeb9b5c1eecda7a4f9d26ca326f9771ce86a90fa1cf21a6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
+	-	`sha256:ac8d1ebaa7052db55538e0cec4fae6ca5bb000d6525528dc6c725f3366421fd0`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:4ff7a4ef3c9ae84a97f274139f4d6dfef0d3a848303d156092b4f8002ecc4f5a
+$ docker pull nats@sha256:19396d8ceba09c3264a25ebfa9f50840835c3ec6607b50cd10beaa953a6b33e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ac6f34e0231323829f3011d461ab111cf13eb19476fc07dcecabf4752f902be`
+-	Image ID: `sha256:25ab23bc93d5a0ec67c651d02a9b994c99e766f53d0b812287fa917e7c6c5901`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3479597242ab0dfe5e61e6c1fe927d27e29e6e0acc2aeb5725c8854d5cb011c7`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:03c4b836e1aa562163bdc728fde907aa09502dab91be516aaea3e608ac0b9925`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:alpine` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b37b43f01637
+$ docker pull nats@sha256:1fb9a865bfddcc7ccf0352e443ec93c89e7fa56afc9746102ef4d4f09ccfdaef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.0 MB (9984798 bytes)**  
+-	Total Size: **10.0 MB (9992148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d08e24e4fa7242a20541ae75e9a7b66f43d04d2bbe01fa91d2e34c85c48087e`
+-	Image ID: `sha256:3c8aa27bf27091f7f6f72e5a0e094c585886298ba7ffaf91ce2df0a45f59821d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -17473,21 +16437,21 @@ $ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b3
 ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -17496,37 +16460,37 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 6.8 MB (6762271 bytes)  
+	-	`sha256:007c47b99e0f8ce3eb6487d084a37b69fd666c17f8a6b58b94bc9f382892ef51`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 6.8 MB (6769622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+	-	`sha256:f3c997d67c56839e0314ea6f55308216a5ba43a5f40975da43014f9f32a17383`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 411.0 B  
+	-	`sha256:4053d67b823eb88b56d135755dd578f459b818b41c680f8745f7222978bccb36`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6ef109d4281
+$ docker pull nats@sha256:67e81a213cea4e248950c0208b0171d9004620ef41586d08d0868faa707c4288
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c95dce61236e2d9649b8422a65f23f1910f61b9f45bc5d221b66daa5a33cf2d`
+-	Image ID: `sha256:6ce733992685dbdda0460298fc9ac280734e4f8bc06f15ae66da0d996cbd4b7f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:3e3db6f7c70dc8fb02d9849c24bf4d65a552cf352d7921ac590406bb96384fb9`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:alpine` - linux; arm64 variant v8
@@ -17606,13 +16570,13 @@ $ docker pull nats@sha256:7dc6fbe8dce46b22212fd2304d64155b7b78495d05763821a8688e
 ### `nats:alpine` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae09abc7d7dcc
+$ docker pull nats@sha256:4f96ccac99bd215fc4064d5d3592ea9f8fe39d5df504756ee420ac1fa0b3fb26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10244174 bytes)**  
+-	Total Size: **10.3 MB (10252278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e7359a2b492fe228465c4dba600737214e56133945e97921941eff2ae5546b1`
+-	Image ID: `sha256:7d6fe54daa6ec7b97b23c158221a59b2b57045573d3e57581b68c3fa0e3bce0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -17621,21 +16585,21 @@ $ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae0
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:01 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:01 GMT
+# Tue, 27 Jan 2026 21:06:51 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:06:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -17644,49 +16608,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f0f141df1060290bea337dd410f443f266f697c0f6e1906a6a9e0d258becc78`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 6.5 MB (6510964 bytes)  
+	-	`sha256:77c3493b9579716670251c20f0ae944646efba9da30cdec49372112973d45a46`  
+		Last Modified: Tue, 27 Jan 2026 21:07:06 GMT  
+		Size: 6.5 MB (6519066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 560.0 B  
+	-	`sha256:dcf0f099d527269dc43593793ecaadda88e477182e35413d281eae5fca8edcd9`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 409.0 B  
+	-	`sha256:3d81715261f9c8109cdf9b0d19000e23c890a8230df8e1249fb38dfcc69818e5`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:2863d02373bc1aae9fb72d2ad9ee57b8990eadaf19e89a23de445b9ff8178f50
+$ docker pull nats@sha256:72f960c82b4c420a40dfae4802ee5aa8eb4f8ead833b62354411bebb2bd3794e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.5 KB (15472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d698c5b2b274ea9660ca1554c7b356edd3d3442acd18a0af1c5f89f197efb0cc`
+-	Image ID: `sha256:e06a9d3df0114f3d556457c95e701fc6f90c0a3839136f138f39e337547eee57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:09d997d1b12e4765cde5053a09e9d2a2df28a6bc8a91b206c57708bef5c8a5c6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+	-	`sha256:4d13bd95f79301e5d85c253329f6f5a8f2b5ace279ce58b31f6cb5c285fbeb10`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
 		Size: 15.5 KB (15472 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:alpine` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff44bffaba7d
+$ docker pull nats@sha256:2f19c27f1889b1ffc8dad6d7ecd70041c83e0b4ecc313559a9f4fca6992897a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10543399 bytes)**  
+-	Total Size: **10.6 MB (10550093 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:318709468ae0d2602381d156b7fff5eeeeeba6ad7862fcc729a4f3308dff11b7`
+-	Image ID: `sha256:163c65a520d622326b98b9ff14ad55e811352abe2e51087903bd5c3c4195ded9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -17695,21 +16659,21 @@ $ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff
 ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -17718,43 +16682,43 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 6.9 MB (6893186 bytes)  
+	-	`sha256:3ffbbf76e52abfb81f8bc89754993837553e371cf5864cdca0db08db1e8f98e4`  
+		Last Modified: Tue, 27 Jan 2026 21:00:43 GMT  
+		Size: 6.9 MB (6899878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 560.0 B  
+	-	`sha256:a18be5970dc3e7111ad95a8d4f05c2c2f38c435145987df50136cd5d9e1fd6ef`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 409.0 B  
+	-	`sha256:eea584e8cb60bc5c8e464aa5e067bf25fdc4391ebc09e338f3349572d1607539`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c687f30de32c7
+$ docker pull nats@sha256:ef61b1dcadfe395d1d0850cc16c69650cd3e13a1428075cc8fa916e2d27d61a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.4 KB (15404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5f53ce608591b7cc05772e01835f036e81338ec31761c2fc3747374c12b617e`
+-	Image ID: `sha256:dd4bfa08ab003a58bf52f0d3d2521a27e633e9b5a0c9005020be8cff01d41932`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+	-	`sha256:6ece1efeec3d19253c74d61a50f96cf8dbd2f00f7ee5b08521901a7327ba73ba`  
+		Last Modified: Tue, 27 Jan 2026 21:00:38 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:alpine3.22`
 
 ```console
-$ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23c446630957
+$ docker pull nats@sha256:5a34dc51990d868db43f3dd119ddac8b9fcfb7af02b3732fb39d8ba1ade2c627
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17775,13 +16739,13 @@ $ docker pull nats@sha256:88fe8e0e09d6084a06b3d4dbbffbca70fa632b1ad981af8473da23
 ### `nats:alpine3.22` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893845fc7c531
+$ docker pull nats@sha256:6acdaf5c4b4733d858941e822deb26cbe75086c1f41c2480dcda86ac103a977c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.9 MB (10857275 bytes)**  
+-	Total Size: **10.9 MB (10862551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aebde9629273b40e226b204120a5606fe7dcb22685a9055a5ba80442007efd76`
+-	Image ID: `sha256:a9258c2e3e241854fce198066b67bb5a84989b406cadd2a90a968d5523f1e05c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -17790,21 +16754,21 @@ $ docker pull nats@sha256:5c8332255fbdd619001272af964361c986911c0d67f2d8eec7c893
 ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:50 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:59:10 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:50 GMT
+# Tue, 27 Jan 2026 20:59:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -17813,49 +16777,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81d0ca17f57c419e2a3207fc6c348a9a2440924df707aa99552c0ec50045f8be`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 7.1 MB (7053852 bytes)  
+	-	`sha256:cedccc65746b215235fc436d111f1f922b9cededdded50b4b8810d92589ad202`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 7.1 MB (7059130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a9ace510454a4fd702f8204904421136909dde3224b5edbd0bb24eee78482af`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 561.0 B  
+	-	`sha256:9612b455a56e18bccb84e093c667e6c5c5ace810ed4f40d92aa4ed0ca7fad231`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3a1fa25cb2dff28e7184ef3cafa056ed5da313facaac284acc63edb48c1e903`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 410.0 B  
+	-	`sha256:0250ff07e3bdfdc6a4253dff05da494df1b874005048990a3e2cf2fcfa012bc3`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:908602cc7648433a79c982fa1487bbfa25f4bf83f5fa56212f83553b121fd3c3
+$ docker pull nats@sha256:9b191ebe1c38dcdd740ff1d4bb194f7483cee453bc3080181736b8f869dd7003
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.4 KB (15404 bytes)**  
+-	Total Size: **15.4 KB (15403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84bb29d946c1469efd07d2b9665218b58f25678bc1de3425a1de33791c1113a9`
+-	Image ID: `sha256:b888d27fdc45fe68d2a29d2fc9660fb3b164659976c828922ebcd7c02737d248`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca80d84ada3fed13457e5c523b614750e1907b472a9e7531a569547387cddcc2`  
-		Last Modified: Wed, 17 Dec 2025 19:55:55 GMT  
-		Size: 15.4 KB (15404 bytes)  
+	-	`sha256:9842806eadf12c2d37461bd3b40af07618af7574f01d0b3b942e00ea2a4d043a`  
+		Last Modified: Tue, 27 Jan 2026 20:59:15 GMT  
+		Size: 15.4 KB (15403 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:alpine3.22` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f8d0c7dce86
+$ docker pull nats@sha256:a25880f3fb1d3561ea4bacf110e5fd6d23d165d3cdb096bb98a2cf100f78598d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.3 MB (10278433 bytes)**  
+-	Total Size: **10.3 MB (10285793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480b8bd7178529c103d42255dbfd4adf72e60af511257a78f22a68453ab41b5f`
+-	Image ID: `sha256:9d1a1122f5dae285cb106f3c3b00146414a1973051302af466ee325b905519e7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -17864,21 +16828,21 @@ $ docker pull nats@sha256:07f4bcac2fc2ec1cb85a7ff61255e1f90b727a5d5c24a3dfcf3c5f
 ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:52 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:09 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:09 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:52 GMT
+# Tue, 27 Jan 2026 20:56:10 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -17887,49 +16851,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 21:00:10 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db4f412e304a6db9077139d5774bab9c4ef79d75105284061d25f65038dc8bd0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
-		Size: 6.8 MB (6773381 bytes)  
+	-	`sha256:66465e3b7e0a1cdb3874701a0a2537b4dcb8042792d5dcf98baa4ddf97d352ad`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 6.8 MB (6780740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a2cb48960401b1ff0f736d3185a7071ffa6467456685f9b28c72c3ce6668a7d`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 560.0 B  
+	-	`sha256:14063ab2ee14aa70e7847f0c2b89dea724fe71097d3bbb363753797341e4784f`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6bac971b438fd7cceeb9b5c1eecda7a4f9d26ca326f9771ce86a90fa1cf21a6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:57 GMT  
+	-	`sha256:ac8d1ebaa7052db55538e0cec4fae6ca5bb000d6525528dc6c725f3366421fd0`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:4ff7a4ef3c9ae84a97f274139f4d6dfef0d3a848303d156092b4f8002ecc4f5a
+$ docker pull nats@sha256:19396d8ceba09c3264a25ebfa9f50840835c3ec6607b50cd10beaa953a6b33e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ac6f34e0231323829f3011d461ab111cf13eb19476fc07dcecabf4752f902be`
+-	Image ID: `sha256:25ab23bc93d5a0ec67c651d02a9b994c99e766f53d0b812287fa917e7c6c5901`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3479597242ab0dfe5e61e6c1fe927d27e29e6e0acc2aeb5725c8854d5cb011c7`  
-		Last Modified: Wed, 17 Dec 2025 19:55:56 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:03c4b836e1aa562163bdc728fde907aa09502dab91be516aaea3e608ac0b9925`  
+		Last Modified: Tue, 27 Jan 2026 20:56:14 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:alpine3.22` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b37b43f01637
+$ docker pull nats@sha256:1fb9a865bfddcc7ccf0352e443ec93c89e7fa56afc9746102ef4d4f09ccfdaef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.0 MB (9984798 bytes)**  
+-	Total Size: **10.0 MB (9992148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d08e24e4fa7242a20541ae75e9a7b66f43d04d2bbe01fa91d2e34c85c48087e`
+-	Image ID: `sha256:3c8aa27bf27091f7f6f72e5a0e094c585886298ba7ffaf91ce2df0a45f59821d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -17938,21 +16902,21 @@ $ docker pull nats@sha256:55330346036b2e2cdfc7d243d28f805fdad8f5020a2d8f972983b3
 ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:47 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 20:56:25 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:47 GMT
+# Tue, 27 Jan 2026 20:56:25 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -17961,37 +16925,37 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bb2bbf88a76194a7efe517d5c166b44c7e2713732244f189fbb88fcd790ca83`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 6.8 MB (6762271 bytes)  
+	-	`sha256:007c47b99e0f8ce3eb6487d084a37b69fd666c17f8a6b58b94bc9f382892ef51`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 6.8 MB (6769622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb3d8f3607bdad7d53e15dbc74f153595db60147d3b6cdbb44836f3da477feea`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
+	-	`sha256:f3c997d67c56839e0314ea6f55308216a5ba43a5f40975da43014f9f32a17383`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b4c1e738d124a1da6c41c0870e087554549e18b63e9de3b4da1c02623202063`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 411.0 B  
+	-	`sha256:4053d67b823eb88b56d135755dd578f459b818b41c680f8745f7222978bccb36`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:fa26d6b4b3fad8794ceaa296e39e1862ad0934165e316d196916b6ef109d4281
+$ docker pull nats@sha256:67e81a213cea4e248950c0208b0171d9004620ef41586d08d0868faa707c4288
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c95dce61236e2d9649b8422a65f23f1910f61b9f45bc5d221b66daa5a33cf2d`
+-	Image ID: `sha256:6ce733992685dbdda0460298fc9ac280734e4f8bc06f15ae66da0d996cbd4b7f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2895715e25b513ed32475dc892e580e801aa37eecdabc0ea63d5485701927cdd`  
-		Last Modified: Wed, 17 Dec 2025 19:55:52 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:3e3db6f7c70dc8fb02d9849c24bf4d65a552cf352d7921ac590406bb96384fb9`  
+		Last Modified: Tue, 27 Jan 2026 20:56:30 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:alpine3.22` - linux; arm64 variant v8
@@ -18071,13 +17035,13 @@ $ docker pull nats@sha256:7dc6fbe8dce46b22212fd2304d64155b7b78495d05763821a8688e
 ### `nats:alpine3.22` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae09abc7d7dcc
+$ docker pull nats@sha256:4f96ccac99bd215fc4064d5d3592ea9f8fe39d5df504756ee420ac1fa0b3fb26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10244174 bytes)**  
+-	Total Size: **10.3 MB (10252278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e7359a2b492fe228465c4dba600737214e56133945e97921941eff2ae5546b1`
+-	Image ID: `sha256:7d6fe54daa6ec7b97b23c158221a59b2b57045573d3e57581b68c3fa0e3bce0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -18086,21 +17050,21 @@ $ docker pull nats@sha256:1f0f9ec6dbb6e24e6ccedcc79273acbe12b1479230ef1988e33ae0
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:01 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:01 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:01 GMT
+# Tue, 27 Jan 2026 21:06:51 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:06:51 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:06:52 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:02 GMT
+# Tue, 27 Jan 2026 21:06:53 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -18109,49 +17073,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:06 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f0f141df1060290bea337dd410f443f266f697c0f6e1906a6a9e0d258becc78`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 6.5 MB (6510964 bytes)  
+	-	`sha256:77c3493b9579716670251c20f0ae944646efba9da30cdec49372112973d45a46`  
+		Last Modified: Tue, 27 Jan 2026 21:07:06 GMT  
+		Size: 6.5 MB (6519066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c9876d18bff864807583aad5de6e0a7fda441e23dcbc8f73cc4d01a4518794`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 560.0 B  
+	-	`sha256:dcf0f099d527269dc43593793ecaadda88e477182e35413d281eae5fca8edcd9`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37244c9b5bc262b8f8f2da0039c208a3748504f00c59109cfc8b8088078e9c8c`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
-		Size: 409.0 B  
+	-	`sha256:3d81715261f9c8109cdf9b0d19000e23c890a8230df8e1249fb38dfcc69818e5`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:2863d02373bc1aae9fb72d2ad9ee57b8990eadaf19e89a23de445b9ff8178f50
+$ docker pull nats@sha256:72f960c82b4c420a40dfae4802ee5aa8eb4f8ead833b62354411bebb2bd3794e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.5 KB (15472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d698c5b2b274ea9660ca1554c7b356edd3d3442acd18a0af1c5f89f197efb0cc`
+-	Image ID: `sha256:e06a9d3df0114f3d556457c95e701fc6f90c0a3839136f138f39e337547eee57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:09d997d1b12e4765cde5053a09e9d2a2df28a6bc8a91b206c57708bef5c8a5c6`  
-		Last Modified: Wed, 17 Dec 2025 19:55:12 GMT  
+	-	`sha256:4d13bd95f79301e5d85c253329f6f5a8f2b5ace279ce58b31f6cb5c285fbeb10`  
+		Last Modified: Tue, 27 Jan 2026 21:07:05 GMT  
 		Size: 15.5 KB (15472 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:alpine3.22` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff44bffaba7d
+$ docker pull nats@sha256:2f19c27f1889b1ffc8dad6d7ecd70041c83e0b4ecc313559a9f4fca6992897a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10543399 bytes)**  
+-	Total Size: **10.6 MB (10550093 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:318709468ae0d2602381d156b7fff5eeeeeba6ad7862fcc729a4f3308dff11b7`
+-	Image ID: `sha256:163c65a520d622326b98b9ff14ad55e811352abe2e51087903bd5c3c4195ded9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -18160,21 +17124,21 @@ $ docker pull nats@sha256:771783640324948adaf668e2582dab0b654c27950ea9d063e626ff
 ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
 # Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
-ENV NATS_SERVER=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Wed, 17 Dec 2025 19:55:19 GMT
-RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='75ce2c04356e9581441e88feb9c270f54fbe2aedaa53caaaa7126a5978ba753d' ;;     armhf) natsArch='arm6'; sha256='5df725529a1ae8d899fda720b161cb955371d8f37ee7de40f47dfc6d83a70d61' ;;     armv7) natsArch='arm7'; sha256='1281c924aa754bfefbb14c155f8651f390e428812319084cc14de36d01c3b3c9' ;;     x86_64) natsArch='amd64'; sha256='3f113d8f3d64f28239e12deeca9c9941104def9e2a8461fa076b0065b4e76327' ;;     x86) natsArch='386'; sha256='9a13728e0599d22a5d3b10f4b20b4a49a9e1ababe56f89b84eab94ff1caf76dc' ;;     s390x) natsArch='s390x'; sha256='be78b6348f91950bcc8f9e2a04c071b90a9cf2296a32789d6163171ba7b540ea' ;;     ppc64le) natsArch='ppc64le'; sha256='4140bdb33ec56d007ec263a543c3bcf7659509c2a80a6dcf97d878ed3f203186' ;;     loong64) natsArch='loong64'; sha256='4a1e5f84d9bd8c3620085ac9e7d26f101ba1bc29ce180bd353404430087f2001' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:00:31 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in     aarch64) natsArch='arm64'; sha256='44a6ff34eff7e8d0e1409dbac0b733cff7ecbb4f19388a4d0d3d6085d899f017' ;;     armhf) natsArch='arm6'; sha256='4e59df78e00edb75544aac70e1e99008cd97a039fad6ea1942b7986ee7289245' ;;     armv7) natsArch='arm7'; sha256='67e7708005b615d1b63280c752616ff8663fa8bd3e83bb24890905b9a0a4e789' ;;     x86_64) natsArch='amd64'; sha256='92388f2e4aa1e6dea402eb173cbdb1fcb1df9a9c899cb807b91ddbb45c131b65' ;;     x86) natsArch='386'; sha256='0899515b18dcbfba3572e91ea0bf7b7577a00d102ca91be44840a8a1ad68b4d7' ;;     s390x) natsArch='s390x'; sha256='8c084d41b8ef405c31ff75f84bb03028295001f9741724a8d0fb2c28aa0f3690' ;;     ppc64le) natsArch='ppc64le'; sha256='5b073b7cdfb91b30f226a687311193ce4544700eaf69fd32df2809451e9e5fc0' ;;     loong64) natsArch='loong64'; sha256='e58995ac0402050a0bd6a9513fc144e9f8f6bb01224fdeb5476691cad187a1c7' ;;     *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;;     esac;         wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz";     echo "${sha256} *nats-server.tar.gz" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin;     rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Dec 2025 19:55:19 GMT
+# Tue, 27 Jan 2026 21:00:31 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -18183,43 +17147,43 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Wed, 08 Oct 2025 12:04:18 GMT  
 		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c2c7e847ca4f31100a7e7626c1534f9b28fadb640324be88120a36460ef411e`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 6.9 MB (6893186 bytes)  
+	-	`sha256:3ffbbf76e52abfb81f8bc89754993837553e371cf5864cdca0db08db1e8f98e4`  
+		Last Modified: Tue, 27 Jan 2026 21:00:43 GMT  
+		Size: 6.9 MB (6899878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb0f9a4e42a7595389c0da9e6ed45288920cdcd8a0d4e541a11bc86829ce34c0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 560.0 B  
+	-	`sha256:a18be5970dc3e7111ad95a8d4f05c2c2f38c435145987df50136cd5d9e1fd6ef`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:697c2e5164f5cc3af032a536fa6b7607c66d95c336676910bae553e910e8c7b0`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
-		Size: 409.0 B  
+	-	`sha256:eea584e8cb60bc5c8e464aa5e067bf25fdc4391ebc09e338f3349572d1607539`  
+		Last Modified: Tue, 27 Jan 2026 21:00:42 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:0da3e74b54d4979d8364695033fae5ffa33885429a4ed516ca6c687f30de32c7
+$ docker pull nats@sha256:ef61b1dcadfe395d1d0850cc16c69650cd3e13a1428075cc8fa916e2d27d61a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.4 KB (15404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5f53ce608591b7cc05772e01835f036e81338ec31761c2fc3747374c12b617e`
+-	Image ID: `sha256:dd4bfa08ab003a58bf52f0d3d2521a27e633e9b5a0c9005020be8cff01d41932`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e5ac457dbfc2a68971169ac33285d842421467a64335e1c59291dd7e8d7f5cb9`  
-		Last Modified: Wed, 17 Dec 2025 19:55:27 GMT  
+	-	`sha256:6ece1efeec3d19253c74d61a50f96cf8dbd2f00f7ee5b08521901a7327ba73ba`  
+		Last Modified: Tue, 27 Jan 2026 21:00:38 GMT  
 		Size: 15.4 KB (15404 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:latest`
 
 ```console
-$ docker pull nats@sha256:d3e567e800a4912fc4f99d76b745133abb84d85d378d2fb7d7d118a56e2c815a
+$ docker pull nats@sha256:782ea26ae0ce156658ffc0ca0e78835673d29d05c4f1c01d297b9d6babe9a6b2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18241,174 +17205,174 @@ $ docker pull nats@sha256:d3e567e800a4912fc4f99d76b745133abb84d85d378d2fb7d7d118
 ### `nats:latest` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:409d49daf0939f5e7d8cde71d214d33af5f082a3f413399223dd0b08d2fc50aa
+$ docker pull nats@sha256:d6cb6ec885a324dca2b830829bf9d4c5e43d41279805ce67be044db0ec7fae56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6591138 bytes)**  
+-	Total Size: **6.6 MB (6598587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2aa68383287bc4011abbb0cda6516a3a4c06e62dd9d51014d5f83e7efff7e80`
+-	Image ID: `sha256:e5ec0ef7d756ea786e6deee1fb08986ad9ab7616b087e445e2b3c73bf7f2d347`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4acd967ddc02590a1f9db5c0ab104a521c3b01c4fc3ca5ced9eeff9ee3ba3c59`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.6 MB (6590629 bytes)  
+	-	`sha256:2f8912005071f27ea416bffea2294316df3b1b12b1e8346b2a1adcd792aa8496`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.6 MB (6598078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0103929f5e0e3db1b12e36e1aeff3c923eddff5d1968e3d0f22b3f7aa30ebba`  
-		Last Modified: Wed, 17 Dec 2025 20:01:31 GMT  
+	-	`sha256:05852294398b9aea33a8d9d248d324ee895e96dee6bfa8363653f16079ddac04`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:latest` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a226abede1d8384071e63eb0257452b99108eaaea6501acd919580c2ec3e3232
+$ docker pull nats@sha256:a0f34e28b55652588fe8c7891ab83879808bee3cee9dbea0da32a6d4431fcc89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a153786df027a7d066c8f5784f26e41ed9689710d05d147a66218be1b4dd1fd8`
+-	Image ID: `sha256:8b2ed37d6666a700ae3e29116b15949d1ff6130503d9cf7d5eb2620f33e201a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89af6a462dd1e2f4e92326ee7e0ef9f89f947b5a380af7de2ddcacc09f645306`  
-		Last Modified: Wed, 17 Dec 2025 20:01:30 GMT  
+	-	`sha256:4e22704ce89be3ca5373eedf4cd92a430da69b69b5c4722a9b652a13f5009e01`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:latest` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:3853bb8507245773d5a8ce05deea7cfd9f4da723b2c363480580cc012ca53270
+$ docker pull nats@sha256:f7799b4a822c5771e5d48f0f1c068ea2cec23162c6831f82d2b009b36a857e28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6313697 bytes)**  
+-	Total Size: **6.3 MB (6323105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93286d48902d584731e848087c653ac0a6d01e8425909fc66515ffaefe8acc14`
+-	Image ID: `sha256:370df6c853d90e83658a3dfb4c82a802848ff4f6b4522ba921e6a7ad306ef356`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:8c692c13a40e92100ded6771cbbc3a0d5bf2526f18f3fb0a48f15be60c2df82b`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.3 MB (6313188 bytes)  
+	-	`sha256:1efb0795d882364e2a023f0af5959b157fb2940eacdb92639318b205267c0ad4`  
+		Last Modified: Tue, 27 Jan 2026 16:11:11 GMT  
+		Size: 6.3 MB (6322595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:latest` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a12d6f521214dc21cc2bcdc941aa35f4ec314380c729cdfdc42c3aa6d6bfc542
+$ docker pull nats@sha256:d73a9779831083ed543a3bd2f7e87c1dc8caec08ddac320cc7a25c94e648b157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaab9a175ebb399933d1c8ea3f50398dd348dcdf598f5424f2921569526e82d2`
+-	Image ID: `sha256:6301a8cfa90733ef8a35c4bde2ee64d946519b1026091f17c5e915f86a498204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43b1dc7d6b077ab1f2267d99aa3a71b675795ee1f57b76f8a7ecd3d05fcdd480`  
-		Last Modified: Wed, 17 Dec 2025 20:00:44 GMT  
+	-	`sha256:2e565ea89cf46f2c719698d7f99d288200307fbb51c38e98a8bde6c8102d0d23`  
+		Last Modified: Tue, 27 Jan 2026 21:09:50 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:latest` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:e94a35025c028537959412b3781acd5c082d9d6128056903a36fd72303137cb5
+$ docker pull nats@sha256:488c6c4014617fff07b617db250920bcb069b5d712e4185c98c6387b2baa93e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6303727 bytes)**  
+-	Total Size: **6.3 MB (6310862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f76d4a21e40bc97da539f87250554131486a6b9c78c7f1cb563c0d439eca6ab`
+-	Image ID: `sha256:4b7a85a207a36665f5bc23045e4bba37e6a52dd82b9b57a47b543b28fe145b20`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.3 MB (6303218 bytes)  
+	-	`sha256:f89bd8d5669bd18e009b01f3649659381ff93c4199e64ffa25637a2739cba3a5`  
+		Last Modified: Tue, 27 Jan 2026 16:11:12 GMT  
+		Size: 6.3 MB (6310353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:6c736e7cdb0b623e13835c5b7f1ff18a1b684a47db62f5986b4a18586e605dd0`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:latest` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b08b7fb4643e
+$ docker pull nats@sha256:9fd3d1e91e30c408f98d4afaaaa4bc75c40efeb43567518934829f6d0ac86556
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:effc5987cb319c0e4e830fe710b565d3b22924a14ccc2cf7c699563cf61c77cb`
+-	Image ID: `sha256:f8f796abff51fa066462285403989439d8035c748d22d1b340334a21cc658983`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:13865f9df2b0d2a106a6ff2b46ab7f923c9d9bcd479a551759a737f5ebcd44a1`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18473,117 +17437,117 @@ $ docker pull nats@sha256:0686bfde4b19aeb60c7a324a5b424e778381949910a579bcd02b42
 ### `nats:latest` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:c2b63aa758462e86058c91fe8401191b41043d2163a78fdec57519d4f0b49998
+$ docker pull nats@sha256:98765b2b71bf6daa662b7dbd1055075a97e9000f3758c6aceeb26c8cb5fd0e63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6053571 bytes)**  
+-	Total Size: **6.1 MB (6059945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08c2636ef42b619db39e1975f9b631869bc3c3b24489f7866a08171ddcc5033c`
+-	Image ID: `sha256:84f209e000ef99dbbbc6d350eb39ac8c75f5d40744f18ae5414c0c07e9e45655`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fff90457358766f5b735feb2d49e853cf695210b8abe6ba57edc0abce8282fd8`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.1 MB (6053063 bytes)  
+	-	`sha256:d7498e46ed99a6f25a5e161fffb2a10e547d3bd8f682806db51e70bf75c104d8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.1 MB (6059437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:589282b0ff2ad41789a44317f1ea281a1922d78ec8dbf8a031acc22733f31036`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:latest` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d7d1570fb25ef2bda69d3d006ba8f47a5bd2a378411613cb7f881e8ab5078488
+$ docker pull nats@sha256:43af96803f49adc8aaa465d03d0dde41ee7e209f9a0e28947566a936727c49fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 KB (10513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed570c2ba4ccaf310e9bacf729785e05e597e250ef1e4f162cd4184a0794cf04`
+-	Image ID: `sha256:3421e3e523f67cbeb606c276691497e77d59a9afe368fac3dd2b77b44a4ceb58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91f2c07ab8052b7c97b473ee388d713a2cb3c94fbc741e2892b0a738632be01`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:e3c3d1d8ec6a07a1fc217e6f7df3eab02aa21e7017b3693f928a7360d8ac21a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 10.5 KB (10513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:latest` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:28f34bed0a682b4aa4eedefde127516cf11d48fe189b5012061d4ceead86a883
+$ docker pull nats@sha256:ae3f7eac492fb3850591ee0580f6f26c3ab90fa4001072f347bbdea377021180
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6432293 bytes)**  
+-	Total Size: **6.4 MB (6439573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34db5d9b7c6ad05b3a0206e1c4bc40e08f029d7a4ceb4f9a193d6fef9f3705c9`
+-	Image ID: `sha256:4204c3fe6f38e529b9ab99128f4f71c742b5dddbec6d3fcdd784912c812e359d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f8e43cf01609735e89620aa1f85d5675eccdd17850b8f0944070d6fca83f5f31`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.4 MB (6431785 bytes)  
+	-	`sha256:647f636b2ba788fbcd64742e49cd42dbe55579be711374f52ac5c9e3bb6810d2`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.4 MB (6439063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 508.0 B  
+	-	`sha256:930f40f7174a2c941bc3d6fea3291abdd5910b116dc8976147ffe92096a2dc89`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:latest` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:64a2cb9ff1e0f5b75e2e53f9f9ccbb96c66e914c524763620814e9606fef2057
+$ docker pull nats@sha256:363dcabc130a83ffdf947725601f3ff72e57b4ac101c352b9ca592bd1e8678da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 KB (10422 bytes)**  
+-	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e6c0882b54633cd5fdbda1ba2a5bcf53fc177361102c5052cb69a80692dbab2`
+-	Image ID: `sha256:d81e58884f9d9e0d8eb1b6185d44e98751a7fab46989c675f9307e30d5310c55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62f918a7cdeb02a6e02929e5b0c8f5dbe6366961c236880f3d712024736b37d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 10.4 KB (10422 bytes)  
+	-	`sha256:c10d7d82f5e8df9bd31c438ff05420d632a2ad10dcad8309a3de4d55d2196ce2`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:latest` - windows version 10.0.20348.4648; amd64
@@ -18650,7 +17614,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 ## `nats:linux`
 
 ```console
-$ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b157e5844f92c
+$ docker pull nats@sha256:5b7d13172083effa3c82f40fb7376dad504d86381fa048babc194a13f64e3d74
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18671,174 +17635,174 @@ $ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b15
 ### `nats:linux` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:409d49daf0939f5e7d8cde71d214d33af5f082a3f413399223dd0b08d2fc50aa
+$ docker pull nats@sha256:d6cb6ec885a324dca2b830829bf9d4c5e43d41279805ce67be044db0ec7fae56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6591138 bytes)**  
+-	Total Size: **6.6 MB (6598587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2aa68383287bc4011abbb0cda6516a3a4c06e62dd9d51014d5f83e7efff7e80`
+-	Image ID: `sha256:e5ec0ef7d756ea786e6deee1fb08986ad9ab7616b087e445e2b3c73bf7f2d347`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4acd967ddc02590a1f9db5c0ab104a521c3b01c4fc3ca5ced9eeff9ee3ba3c59`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.6 MB (6590629 bytes)  
+	-	`sha256:2f8912005071f27ea416bffea2294316df3b1b12b1e8346b2a1adcd792aa8496`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.6 MB (6598078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0103929f5e0e3db1b12e36e1aeff3c923eddff5d1968e3d0f22b3f7aa30ebba`  
-		Last Modified: Wed, 17 Dec 2025 20:01:31 GMT  
+	-	`sha256:05852294398b9aea33a8d9d248d324ee895e96dee6bfa8363653f16079ddac04`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a226abede1d8384071e63eb0257452b99108eaaea6501acd919580c2ec3e3232
+$ docker pull nats@sha256:a0f34e28b55652588fe8c7891ab83879808bee3cee9dbea0da32a6d4431fcc89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a153786df027a7d066c8f5784f26e41ed9689710d05d147a66218be1b4dd1fd8`
+-	Image ID: `sha256:8b2ed37d6666a700ae3e29116b15949d1ff6130503d9cf7d5eb2620f33e201a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89af6a462dd1e2f4e92326ee7e0ef9f89f947b5a380af7de2ddcacc09f645306`  
-		Last Modified: Wed, 17 Dec 2025 20:01:30 GMT  
+	-	`sha256:4e22704ce89be3ca5373eedf4cd92a430da69b69b5c4722a9b652a13f5009e01`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:linux` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:3853bb8507245773d5a8ce05deea7cfd9f4da723b2c363480580cc012ca53270
+$ docker pull nats@sha256:f7799b4a822c5771e5d48f0f1c068ea2cec23162c6831f82d2b009b36a857e28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6313697 bytes)**  
+-	Total Size: **6.3 MB (6323105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93286d48902d584731e848087c653ac0a6d01e8425909fc66515ffaefe8acc14`
+-	Image ID: `sha256:370df6c853d90e83658a3dfb4c82a802848ff4f6b4522ba921e6a7ad306ef356`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:8c692c13a40e92100ded6771cbbc3a0d5bf2526f18f3fb0a48f15be60c2df82b`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.3 MB (6313188 bytes)  
+	-	`sha256:1efb0795d882364e2a023f0af5959b157fb2940eacdb92639318b205267c0ad4`  
+		Last Modified: Tue, 27 Jan 2026 16:11:11 GMT  
+		Size: 6.3 MB (6322595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a12d6f521214dc21cc2bcdc941aa35f4ec314380c729cdfdc42c3aa6d6bfc542
+$ docker pull nats@sha256:d73a9779831083ed543a3bd2f7e87c1dc8caec08ddac320cc7a25c94e648b157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaab9a175ebb399933d1c8ea3f50398dd348dcdf598f5424f2921569526e82d2`
+-	Image ID: `sha256:6301a8cfa90733ef8a35c4bde2ee64d946519b1026091f17c5e915f86a498204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43b1dc7d6b077ab1f2267d99aa3a71b675795ee1f57b76f8a7ecd3d05fcdd480`  
-		Last Modified: Wed, 17 Dec 2025 20:00:44 GMT  
+	-	`sha256:2e565ea89cf46f2c719698d7f99d288200307fbb51c38e98a8bde6c8102d0d23`  
+		Last Modified: Tue, 27 Jan 2026 21:09:50 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:linux` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:e94a35025c028537959412b3781acd5c082d9d6128056903a36fd72303137cb5
+$ docker pull nats@sha256:488c6c4014617fff07b617db250920bcb069b5d712e4185c98c6387b2baa93e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6303727 bytes)**  
+-	Total Size: **6.3 MB (6310862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f76d4a21e40bc97da539f87250554131486a6b9c78c7f1cb563c0d439eca6ab`
+-	Image ID: `sha256:4b7a85a207a36665f5bc23045e4bba37e6a52dd82b9b57a47b543b28fe145b20`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.3 MB (6303218 bytes)  
+	-	`sha256:f89bd8d5669bd18e009b01f3649659381ff93c4199e64ffa25637a2739cba3a5`  
+		Last Modified: Tue, 27 Jan 2026 16:11:12 GMT  
+		Size: 6.3 MB (6310353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:6c736e7cdb0b623e13835c5b7f1ff18a1b684a47db62f5986b4a18586e605dd0`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b08b7fb4643e
+$ docker pull nats@sha256:9fd3d1e91e30c408f98d4afaaaa4bc75c40efeb43567518934829f6d0ac86556
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:effc5987cb319c0e4e830fe710b565d3b22924a14ccc2cf7c699563cf61c77cb`
+-	Image ID: `sha256:f8f796abff51fa066462285403989439d8035c748d22d1b340334a21cc658983`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:13865f9df2b0d2a106a6ff2b46ab7f923c9d9bcd479a551759a737f5ebcd44a1`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18903,117 +17867,117 @@ $ docker pull nats@sha256:0686bfde4b19aeb60c7a324a5b424e778381949910a579bcd02b42
 ### `nats:linux` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:c2b63aa758462e86058c91fe8401191b41043d2163a78fdec57519d4f0b49998
+$ docker pull nats@sha256:98765b2b71bf6daa662b7dbd1055075a97e9000f3758c6aceeb26c8cb5fd0e63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6053571 bytes)**  
+-	Total Size: **6.1 MB (6059945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08c2636ef42b619db39e1975f9b631869bc3c3b24489f7866a08171ddcc5033c`
+-	Image ID: `sha256:84f209e000ef99dbbbc6d350eb39ac8c75f5d40744f18ae5414c0c07e9e45655`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fff90457358766f5b735feb2d49e853cf695210b8abe6ba57edc0abce8282fd8`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.1 MB (6053063 bytes)  
+	-	`sha256:d7498e46ed99a6f25a5e161fffb2a10e547d3bd8f682806db51e70bf75c104d8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.1 MB (6059437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:589282b0ff2ad41789a44317f1ea281a1922d78ec8dbf8a031acc22733f31036`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d7d1570fb25ef2bda69d3d006ba8f47a5bd2a378411613cb7f881e8ab5078488
+$ docker pull nats@sha256:43af96803f49adc8aaa465d03d0dde41ee7e209f9a0e28947566a936727c49fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 KB (10513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed570c2ba4ccaf310e9bacf729785e05e597e250ef1e4f162cd4184a0794cf04`
+-	Image ID: `sha256:3421e3e523f67cbeb606c276691497e77d59a9afe368fac3dd2b77b44a4ceb58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91f2c07ab8052b7c97b473ee388d713a2cb3c94fbc741e2892b0a738632be01`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:e3c3d1d8ec6a07a1fc217e6f7df3eab02aa21e7017b3693f928a7360d8ac21a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 10.5 KB (10513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:linux` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:28f34bed0a682b4aa4eedefde127516cf11d48fe189b5012061d4ceead86a883
+$ docker pull nats@sha256:ae3f7eac492fb3850591ee0580f6f26c3ab90fa4001072f347bbdea377021180
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6432293 bytes)**  
+-	Total Size: **6.4 MB (6439573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34db5d9b7c6ad05b3a0206e1c4bc40e08f029d7a4ceb4f9a193d6fef9f3705c9`
+-	Image ID: `sha256:4204c3fe6f38e529b9ab99128f4f71c742b5dddbec6d3fcdd784912c812e359d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f8e43cf01609735e89620aa1f85d5675eccdd17850b8f0944070d6fca83f5f31`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.4 MB (6431785 bytes)  
+	-	`sha256:647f636b2ba788fbcd64742e49cd42dbe55579be711374f52ac5c9e3bb6810d2`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.4 MB (6439063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 508.0 B  
+	-	`sha256:930f40f7174a2c941bc3d6fea3291abdd5910b116dc8976147ffe92096a2dc89`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:linux` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:64a2cb9ff1e0f5b75e2e53f9f9ccbb96c66e914c524763620814e9606fef2057
+$ docker pull nats@sha256:363dcabc130a83ffdf947725601f3ff72e57b4ac101c352b9ca592bd1e8678da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 KB (10422 bytes)**  
+-	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e6c0882b54633cd5fdbda1ba2a5bcf53fc177361102c5052cb69a80692dbab2`
+-	Image ID: `sha256:d81e58884f9d9e0d8eb1b6185d44e98751a7fab46989c675f9307e30d5310c55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62f918a7cdeb02a6e02929e5b0c8f5dbe6366961c236880f3d712024736b37d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 10.4 KB (10422 bytes)  
+	-	`sha256:c10d7d82f5e8df9bd31c438ff05420d632a2ad10dcad8309a3de4d55d2196ce2`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:nanoserver`
@@ -19161,7 +18125,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 ## `nats:scratch`
 
 ```console
-$ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b157e5844f92c
+$ docker pull nats@sha256:5b7d13172083effa3c82f40fb7376dad504d86381fa048babc194a13f64e3d74
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19182,174 +18146,174 @@ $ docker pull nats@sha256:30c913e575318c477aa3a81da3f71a00a518e7091d6219d75c8b15
 ### `nats:scratch` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:409d49daf0939f5e7d8cde71d214d33af5f082a3f413399223dd0b08d2fc50aa
+$ docker pull nats@sha256:d6cb6ec885a324dca2b830829bf9d4c5e43d41279805ce67be044db0ec7fae56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6591138 bytes)**  
+-	Total Size: **6.6 MB (6598587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2aa68383287bc4011abbb0cda6516a3a4c06e62dd9d51014d5f83e7efff7e80`
+-	Image ID: `sha256:e5ec0ef7d756ea786e6deee1fb08986ad9ab7616b087e445e2b3c73bf7f2d347`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:25 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:26 GMT
+# Tue, 27 Jan 2026 21:10:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4acd967ddc02590a1f9db5c0ab104a521c3b01c4fc3ca5ced9eeff9ee3ba3c59`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.6 MB (6590629 bytes)  
+	-	`sha256:2f8912005071f27ea416bffea2294316df3b1b12b1e8346b2a1adcd792aa8496`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.6 MB (6598078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0103929f5e0e3db1b12e36e1aeff3c923eddff5d1968e3d0f22b3f7aa30ebba`  
-		Last Modified: Wed, 17 Dec 2025 20:01:31 GMT  
+	-	`sha256:05852294398b9aea33a8d9d248d324ee895e96dee6bfa8363653f16079ddac04`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a226abede1d8384071e63eb0257452b99108eaaea6501acd919580c2ec3e3232
+$ docker pull nats@sha256:a0f34e28b55652588fe8c7891ab83879808bee3cee9dbea0da32a6d4431fcc89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a153786df027a7d066c8f5784f26e41ed9689710d05d147a66218be1b4dd1fd8`
+-	Image ID: `sha256:8b2ed37d6666a700ae3e29116b15949d1ff6130503d9cf7d5eb2620f33e201a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89af6a462dd1e2f4e92326ee7e0ef9f89f947b5a380af7de2ddcacc09f645306`  
-		Last Modified: Wed, 17 Dec 2025 20:01:30 GMT  
+	-	`sha256:4e22704ce89be3ca5373eedf4cd92a430da69b69b5c4722a9b652a13f5009e01`  
+		Last Modified: Tue, 27 Jan 2026 21:10:11 GMT  
 		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:scratch` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:3853bb8507245773d5a8ce05deea7cfd9f4da723b2c363480580cc012ca53270
+$ docker pull nats@sha256:f7799b4a822c5771e5d48f0f1c068ea2cec23162c6831f82d2b009b36a857e28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6313697 bytes)**  
+-	Total Size: **6.3 MB (6323105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93286d48902d584731e848087c653ac0a6d01e8425909fc66515ffaefe8acc14`
+-	Image ID: `sha256:370df6c853d90e83658a3dfb4c82a802848ff4f6b4522ba921e6a7ad306ef356`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:00:39 GMT
+# Tue, 27 Jan 2026 21:09:46 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:8c692c13a40e92100ded6771cbbc3a0d5bf2526f18f3fb0a48f15be60c2df82b`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.3 MB (6313188 bytes)  
+	-	`sha256:1efb0795d882364e2a023f0af5959b157fb2940eacdb92639318b205267c0ad4`  
+		Last Modified: Tue, 27 Jan 2026 16:11:11 GMT  
+		Size: 6.3 MB (6322595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:631effd298b53473939d3adcebf4dec825a0b3d91fa6fc10553e7ddad15928d5`  
-		Last Modified: Wed, 17 Dec 2025 20:00:45 GMT  
-		Size: 509.0 B  
+	-	`sha256:a063463df74c77b9460e1541bdaf2c37a26d18bbe62f9c9260bd94e67282330e`  
+		Last Modified: Tue, 27 Jan 2026 21:09:49 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:a12d6f521214dc21cc2bcdc941aa35f4ec314380c729cdfdc42c3aa6d6bfc542
+$ docker pull nats@sha256:d73a9779831083ed543a3bd2f7e87c1dc8caec08ddac320cc7a25c94e648b157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaab9a175ebb399933d1c8ea3f50398dd348dcdf598f5424f2921569526e82d2`
+-	Image ID: `sha256:6301a8cfa90733ef8a35c4bde2ee64d946519b1026091f17c5e915f86a498204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43b1dc7d6b077ab1f2267d99aa3a71b675795ee1f57b76f8a7ecd3d05fcdd480`  
-		Last Modified: Wed, 17 Dec 2025 20:00:44 GMT  
+	-	`sha256:2e565ea89cf46f2c719698d7f99d288200307fbb51c38e98a8bde6c8102d0d23`  
+		Last Modified: Tue, 27 Jan 2026 21:09:50 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:scratch` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:e94a35025c028537959412b3781acd5c082d9d6128056903a36fd72303137cb5
+$ docker pull nats@sha256:488c6c4014617fff07b617db250920bcb069b5d712e4185c98c6387b2baa93e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6303727 bytes)**  
+-	Total Size: **6.3 MB (6310862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f76d4a21e40bc97da539f87250554131486a6b9c78c7f1cb563c0d439eca6ab`
+-	Image ID: `sha256:4b7a85a207a36665f5bc23045e4bba37e6a52dd82b9b57a47b543b28fe145b20`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:23 GMT
+# Tue, 27 Jan 2026 21:09:09 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:01896e41e5c875829be6c7302849d50cafb36c60f2d5c87a51de5fabf2685566`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.3 MB (6303218 bytes)  
+	-	`sha256:f89bd8d5669bd18e009b01f3649659381ff93c4199e64ffa25637a2739cba3a5`  
+		Last Modified: Tue, 27 Jan 2026 16:11:12 GMT  
+		Size: 6.3 MB (6310353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab6380a921e8bfb9374117891c2d4b44f70dbff897277d49684e71993aeeed6`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:6c736e7cdb0b623e13835c5b7f1ff18a1b684a47db62f5986b4a18586e605dd0`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:bdeeb64af43ebd422511c43d18c5a021b9479759aa01ecee8697b08b7fb4643e
+$ docker pull nats@sha256:9fd3d1e91e30c408f98d4afaaaa4bc75c40efeb43567518934829f6d0ac86556
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.6 KB (10554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:effc5987cb319c0e4e830fe710b565d3b22924a14ccc2cf7c699563cf61c77cb`
+-	Image ID: `sha256:f8f796abff51fa066462285403989439d8035c748d22d1b340334a21cc658983`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b416a76ffa2ed1d1fa53988ed093bff6a8848e20a45bb7a0a886694eb1e40d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:28 GMT  
+	-	`sha256:13865f9df2b0d2a106a6ff2b46ab7f923c9d9bcd479a551759a737f5ebcd44a1`  
+		Last Modified: Tue, 27 Jan 2026 21:09:13 GMT  
 		Size: 10.6 KB (10554 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19414,123 +18378,123 @@ $ docker pull nats@sha256:0686bfde4b19aeb60c7a324a5b424e778381949910a579bcd02b42
 ### `nats:scratch` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:c2b63aa758462e86058c91fe8401191b41043d2163a78fdec57519d4f0b49998
+$ docker pull nats@sha256:98765b2b71bf6daa662b7dbd1055075a97e9000f3758c6aceeb26c8cb5fd0e63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6053571 bytes)**  
+-	Total Size: **6.1 MB (6059945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08c2636ef42b619db39e1975f9b631869bc3c3b24489f7866a08171ddcc5033c`
+-	Image ID: `sha256:84f209e000ef99dbbbc6d350eb39ac8c75f5d40744f18ae5414c0c07e9e45655`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:33 GMT
+# Tue, 27 Jan 2026 21:09:35 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:34 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:fff90457358766f5b735feb2d49e853cf695210b8abe6ba57edc0abce8282fd8`  
-		Last Modified: Wed, 17 Dec 2025 13:44:00 GMT  
-		Size: 6.1 MB (6053063 bytes)  
+	-	`sha256:d7498e46ed99a6f25a5e161fffb2a10e547d3bd8f682806db51e70bf75c104d8`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.1 MB (6059437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:589282b0ff2ad41789a44317f1ea281a1922d78ec8dbf8a031acc22733f31036`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:4acc876a389815f30f4ed7cc57a5e9f5567f01329f4b7342b268c005c27834a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:d7d1570fb25ef2bda69d3d006ba8f47a5bd2a378411613cb7f881e8ab5078488
+$ docker pull nats@sha256:43af96803f49adc8aaa465d03d0dde41ee7e209f9a0e28947566a936727c49fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 KB (10513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed570c2ba4ccaf310e9bacf729785e05e597e250ef1e4f162cd4184a0794cf04`
+-	Image ID: `sha256:3421e3e523f67cbeb606c276691497e77d59a9afe368fac3dd2b77b44a4ceb58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91f2c07ab8052b7c97b473ee388d713a2cb3c94fbc741e2892b0a738632be01`  
-		Last Modified: Wed, 17 Dec 2025 20:01:43 GMT  
+	-	`sha256:e3c3d1d8ec6a07a1fc217e6f7df3eab02aa21e7017b3693f928a7360d8ac21a3`  
+		Last Modified: Tue, 27 Jan 2026 21:09:46 GMT  
 		Size: 10.5 KB (10513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:scratch` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:28f34bed0a682b4aa4eedefde127516cf11d48fe189b5012061d4ceead86a883
+$ docker pull nats@sha256:ae3f7eac492fb3850591ee0580f6f26c3ab90fa4001072f347bbdea377021180
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6432293 bytes)**  
+-	Total Size: **6.4 MB (6439573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34db5d9b7c6ad05b3a0206e1c4bc40e08f029d7a4ceb4f9a193d6fef9f3705c9`
+-	Image ID: `sha256:4204c3fe6f38e529b9ab99128f4f71c742b5dddbec6d3fcdd784912c812e359d`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Dec 2025 20:01:39 GMT
+# Tue, 27 Jan 2026 21:09:36 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:f8e43cf01609735e89620aa1f85d5675eccdd17850b8f0944070d6fca83f5f31`  
-		Last Modified: Wed, 17 Dec 2025 13:43:57 GMT  
-		Size: 6.4 MB (6431785 bytes)  
+	-	`sha256:647f636b2ba788fbcd64742e49cd42dbe55579be711374f52ac5c9e3bb6810d2`  
+		Last Modified: Tue, 27 Jan 2026 16:11:14 GMT  
+		Size: 6.4 MB (6439063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9efe491c24bd21151ceadabf60f82f7288e106c5c5b2e1cf0a0e303fd951a962`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 508.0 B  
+	-	`sha256:930f40f7174a2c941bc3d6fea3291abdd5910b116dc8976147ffe92096a2dc89`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:64a2cb9ff1e0f5b75e2e53f9f9ccbb96c66e914c524763620814e9606fef2057
+$ docker pull nats@sha256:363dcabc130a83ffdf947725601f3ff72e57b4ac101c352b9ca592bd1e8678da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 KB (10422 bytes)**  
+-	Total Size: **10.4 KB (10423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e6c0882b54633cd5fdbda1ba2a5bcf53fc177361102c5052cb69a80692dbab2`
+-	Image ID: `sha256:d81e58884f9d9e0d8eb1b6185d44e98751a7fab46989c675f9307e30d5310c55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62f918a7cdeb02a6e02929e5b0c8f5dbe6366961c236880f3d712024736b37d8`  
-		Last Modified: Wed, 17 Dec 2025 20:01:46 GMT  
-		Size: 10.4 KB (10422 bytes)  
+	-	`sha256:c10d7d82f5e8df9bd31c438ff05420d632a2ad10dcad8309a3de4d55d2196ce2`  
+		Last Modified: Tue, 27 Jan 2026 21:09:43 GMT  
+		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `nats:windowsservercore`
 
 ```console
-$ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78caac84949fd
+$ docker pull nats@sha256:25233863901918872bf17b591083767ce1faeefc993a94cfc1b17bf516664a72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19540,14 +18504,14 @@ $ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78c
 ### `nats:windowsservercore` - windows version 10.0.20348.4648; amd64
 
 ```console
-$ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1b9dcd1eaa1
+$ docker pull nats@sha256:85686b0c19dc2cf95ddcbfe8a4cd19da2d2cd35f0ec50058780642e0d2a2dade
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1843284696 bytes)**  
+-	Total Size: **1.8 GB (1843326026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2afac6b75ab215d5e5d8bdd43e3e79eb1483fe051ede8f22cca4fd30bd1bdd6c`
+-	Image ID: `sha256:350724f2d07f8320ce38c7c37d1836d561c501d51842a5a2294c05c286633391`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -19557,29 +18521,29 @@ $ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1
 RUN Apply image 10.0.20348.4294
 # Fri, 09 Jan 2026 00:11:24 GMT
 RUN Install update 10.0.20348.4648
-# Tue, 13 Jan 2026 23:01:41 GMT
+# Tue, 27 Jan 2026 21:02:17 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 13 Jan 2026 23:01:42 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:01:42 GMT
-ENV NATS_SERVER=2.12.3
-# Tue, 13 Jan 2026 23:01:43 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Tue, 13 Jan 2026 23:01:44 GMT
-ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.3/nats-server-v2.12.3-windows-amd64.zip
-# Tue, 13 Jan 2026 23:01:45 GMT
-ENV NATS_SERVER_SHASUM=33cab92d3113cc5c209773748efdd910b85db49493716b31e74df80c659b83f0
-# Tue, 13 Jan 2026 23:01:52 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:02:20 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:02:21 GMT
+ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.4/nats-server-v2.12.4-windows-amd64.zip
+# Tue, 27 Jan 2026 21:02:22 GMT
+ENV NATS_SERVER_SHASUM=99efb643ef399299ed5736e4fc7220551e8450fe9351adc3c2f678b5737815f5
+# Tue, 27 Jan 2026 21:02:45 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:05 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:02:10 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -19592,59 +18556,59 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 13 Jan 2026 18:19:49 GMT  
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5eb8d8274e62e3c5b1abaeb487f99123d4a6a52456f9f2c607ae94c0fdaf0a3f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:7163b7e4ed4603533d1fda3d54c2c9bd222c3767dfe7b8def9f7dd49fab9d9ca`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b28002105b30a506ea71f81d135734fc2290d5709ceec675fa94dac86606e50b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8e811110b9e834a35200f080893776ff6a0942f8d8b81ead09ef8b6d5cca4448`  
+		Last Modified: Tue, 27 Jan 2026 21:03:14 GMT  
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:1c95878a999406539b61a9cf2a1c93993151a5810c7cf62df0695f1824b7e556`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:80f6b1127b820a407c09f03cba32195298037d7a4e62bf7fbe4e48aa6e0e68dc`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35d78593147892e4dc1b0862f357d60da658c514d4ed6ad30a14d265e9d9aee`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:87cab9070ade4519b37ca4c5850d7caa0c9014f700a23e873d5c116c289dc975`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bee1c1bf73c67953ec9edc4463565cbf1d314ba3eaf3072f756261df4c83ef68`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 507.3 KB (507329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:9395ebafa33fffb1174b8933764abb540194af5c3c67197362e7abf5968c3e45`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 7.1 MB (7145810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 487.4 KB (487412 bytes)  
+	-	`sha256:ec4af0169026bc8454cb3a35c7c962cb9420af4960c1ddd87670450b3fd289fe`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.9 KB (1897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 7.1 MB (7124370 bytes)  
+	-	`sha256:7dc6e11b6268f0921828579f88e05cc6e97e36577c0a0ecd486f15ad7457a78e`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1336 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.9 KB (1888 bytes)  
+	-	`sha256:bf677c818932196a82eede373147a57f807e76fc3253349075985e67b2cca95b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65b2cf2bfc670b555a8d1f35418f547f057c9eb49545246fee09583d2809792c`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.3 KB (1319 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a6b3cef151dd4daeb69c3f714d23e7249f1434b44232997938860e2ca473cff`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:d72db2ac852987031e3dcf5336480ce4aab8ee8287719d1790630ab68849ee79`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78caac84949fd
+$ docker pull nats@sha256:25233863901918872bf17b591083767ce1faeefc993a94cfc1b17bf516664a72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19654,14 +18618,14 @@ $ docker pull nats@sha256:ffd2fb1c88681df4d7256b3f8cf9a4c93b10f3c71d1d640028d78c
 ### `nats:windowsservercore-ltsc2022` - windows version 10.0.20348.4648; amd64
 
 ```console
-$ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1b9dcd1eaa1
+$ docker pull nats@sha256:85686b0c19dc2cf95ddcbfe8a4cd19da2d2cd35f0ec50058780642e0d2a2dade
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1843284696 bytes)**  
+-	Total Size: **1.8 GB (1843326026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2afac6b75ab215d5e5d8bdd43e3e79eb1483fe051ede8f22cca4fd30bd1bdd6c`
+-	Image ID: `sha256:350724f2d07f8320ce38c7c37d1836d561c501d51842a5a2294c05c286633391`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -19671,29 +18635,29 @@ $ docker pull nats@sha256:6b3d0cdc48520b0f07fd0e49717f80220817bd9d5493fc3fd48da1
 RUN Apply image 10.0.20348.4294
 # Fri, 09 Jan 2026 00:11:24 GMT
 RUN Install update 10.0.20348.4648
-# Tue, 13 Jan 2026 23:01:41 GMT
+# Tue, 27 Jan 2026 21:02:17 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 13 Jan 2026 23:01:42 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 13 Jan 2026 23:01:42 GMT
-ENV NATS_SERVER=2.12.3
-# Tue, 13 Jan 2026 23:01:43 GMT
-LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.3
-# Tue, 13 Jan 2026 23:01:44 GMT
-ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.3/nats-server-v2.12.3-windows-amd64.zip
-# Tue, 13 Jan 2026 23:01:45 GMT
-ENV NATS_SERVER_SHASUM=33cab92d3113cc5c209773748efdd910b85db49493716b31e74df80c659b83f0
-# Tue, 13 Jan 2026 23:01:52 GMT
+# Tue, 27 Jan 2026 21:02:19 GMT
+ENV NATS_SERVER=2.12.4
+# Tue, 27 Jan 2026 21:02:20 GMT
+LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.4
+# Tue, 27 Jan 2026 21:02:21 GMT
+ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.4/nats-server-v2.12.4-windows-amd64.zip
+# Tue, 27 Jan 2026 21:02:22 GMT
+ENV NATS_SERVER_SHASUM=99efb643ef399299ed5736e4fc7220551e8450fe9351adc3c2f678b5737815f5
+# Tue, 27 Jan 2026 21:02:45 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:05 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 13 Jan 2026 23:02:08 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:06 GMT
 EXPOSE 4222 6222 8222
-# Tue, 13 Jan 2026 23:02:09 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 13 Jan 2026 23:02:10 GMT
+# Tue, 27 Jan 2026 21:03:07 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -19706,51 +18670,51 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 13 Jan 2026 18:19:49 GMT  
 		Size: 346.6 MB (346640075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5eb8d8274e62e3c5b1abaeb487f99123d4a6a52456f9f2c607ae94c0fdaf0a3f`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:7163b7e4ed4603533d1fda3d54c2c9bd222c3767dfe7b8def9f7dd49fab9d9ca`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b28002105b30a506ea71f81d135734fc2290d5709ceec675fa94dac86606e50b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:15 GMT  
+		Size: 1.3 KB (1318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8e811110b9e834a35200f080893776ff6a0942f8d8b81ead09ef8b6d5cca4448`  
+		Last Modified: Tue, 27 Jan 2026 21:03:14 GMT  
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88d82f88908c880064058041b57a08bcad52efa83cb81c861d4cef35fa63946`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:1c95878a999406539b61a9cf2a1c93993151a5810c7cf62df0695f1824b7e556`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16563e3966482d34317a1e583bd9ef858fbf50fd83bd98a4847994f6c06a3977`  
-		Last Modified: Tue, 13 Jan 2026 23:02:17 GMT  
+	-	`sha256:80f6b1127b820a407c09f03cba32195298037d7a4e62bf7fbe4e48aa6e0e68dc`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35d78593147892e4dc1b0862f357d60da658c514d4ed6ad30a14d265e9d9aee`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:87cab9070ade4519b37ca4c5850d7caa0c9014f700a23e873d5c116c289dc975`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45993d2af835c94d8c57163bd6d9b5a6bc22cf03b6035373df29608c6d0b7233`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bee1c1bf73c67953ec9edc4463565cbf1d314ba3eaf3072f756261df4c83ef68`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 507.3 KB (507329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9865315b0af55202a1c4f81edb574c7a93c4b7111d031c53265bfe5e459a757a`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:9395ebafa33fffb1174b8933764abb540194af5c3c67197362e7abf5968c3e45`  
+		Last Modified: Tue, 27 Jan 2026 21:03:13 GMT  
+		Size: 7.1 MB (7145810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f764af314369919a82ba864a6d42705858f32863d7ba85035d85836d56635281`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 487.4 KB (487412 bytes)  
+	-	`sha256:ec4af0169026bc8454cb3a35c7c962cb9420af4960c1ddd87670450b3fd289fe`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.9 KB (1897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3aa75ccda6866d3deaf9c0725ca2f0c49669c116be52b0bfd5413ac6dcbfe27`  
-		Last Modified: Tue, 13 Jan 2026 23:02:15 GMT  
-		Size: 7.1 MB (7124370 bytes)  
+	-	`sha256:7dc6e11b6268f0921828579f88e05cc6e97e36577c0a0ecd486f15ad7457a78e`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1336 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63fb7462d6d9a12c4731cbc33686dc888dcdf8f7a8e77bc9bd82b0a3421ed445`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.9 KB (1888 bytes)  
+	-	`sha256:bf677c818932196a82eede373147a57f807e76fc3253349075985e67b2cca95b`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cf3851dbefeb54757d1a7ab2cb055814b7e7975a667ed77bca48e6ee3d36846`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65b2cf2bfc670b555a8d1f35418f547f057c9eb49545246fee09583d2809792c`  
-		Last Modified: Tue, 13 Jan 2026 23:02:13 GMT  
-		Size: 1.3 KB (1319 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a6b3cef151dd4daeb69c3f714d23e7249f1434b44232997938860e2ca473cff`  
-		Last Modified: Tue, 13 Jan 2026 23:02:14 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:d72db2ac852987031e3dcf5336480ce4aab8ee8287719d1790630ab68849ee79`  
+		Last Modified: Tue, 27 Jan 2026 21:03:12 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
