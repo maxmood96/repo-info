@@ -374,14 +374,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.45.50.20251209-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45.50.20251209-1ubuntu1.dsc' binutils_2.45.50.20251209-1ubuntu1.dsc 9112 SHA512:95816c7f67d98cd0063f5803001b04b78b0808b0a6c7690f17cdf92eb924e3b38db8ddf91dcac4bc488686a8e5460c29b1d902d439f272ee934cfe931d2339c7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45.50.20251209.orig.tar.xz' binutils_2.45.50.20251209.orig.tar.xz 24880180 SHA512:929a973934813e7c23af4ea22405dc29a0830d17202dce219c1edef57d415e4d497df0744a6d6ee8c6561072ab2f30388436f26317c08362aee8c0e141d18fc7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45.50.20251209-1ubuntu1.debian.tar.xz' binutils_2.45.50.20251209-1ubuntu1.debian.tar.xz 135448 SHA512:277a276ba84f2d75a6ca1c765141001db94f5e5cd85b1874c066f88c39abcd7cb0e2985727a543485ad8f04472637b8d3c5232679e465cef30606d97b124487c
-```
 
 ### `dpkg` source package: `brotli=1.1.0-2build6`
 
@@ -986,14 +981,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.15.0-2.4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.15.0-2.4ubuntu1.dsc' fontconfig_2.15.0-2.4ubuntu1.dsc 2797 SHA512:e1037cda78ab6685c119296f13d328e98fad98be393d84c076e8626c4f6e4f1410d43ff2fd2a957fa994a9ce5d796ae547354e70f758614379d42d0a59c9717e
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.15.0.orig.tar.xz' fontconfig_2.15.0.orig.tar.xz 1447820 SHA512:754cd5fffa198fc07a39cf7df683e9adfa7f54ab41fdff8c0eacc078fd35d3e01069ba343f2b045e0b40df88d9f1fc1ee0f7565799f9cb194a59cf95b64c4417
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.15.0-2.4ubuntu1.debian.tar.xz' fontconfig_2.15.0-2.4ubuntu1.debian.tar.xz 33672 SHA512:9ea491e7790ee49f7208c1f90ecf32c80fa22cb35bd3d031709139a22b9747ccd3ed0a49f8e4e1029882148062c02ee06e76dafdcc5f9778951540a70a90b2d0
-```
 
 ### `dpkg` source package: `fonts-dejavu=2.37-8build1`
 
@@ -1514,14 +1504,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=12.3.0-4
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_12.3.0-4.dsc' harfbuzz_12.3.0-4.dsc 2573 SHA512:5ef3e5b44864b93b297b7f65603208b85b1271ef22428d2ac1a014ad7a163ad978bbb398249392042b461dfe201b83f01be2782ed9b9268a0bc3434fa52d54ab
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_12.3.0.orig.tar.xz' harfbuzz_12.3.0.orig.tar.xz 18580220 SHA512:7452379ee35b312cb83b5365e480dd2cc73813fa5eb489988ea7b02fa7e8137de66ea10ef71fcbbfb3275013247c46ede3f28ac9ef92c1213424ea0b0a077b03
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_12.3.0-4.debian.tar.xz' harfbuzz_12.3.0-4.debian.tar.xz 20012 SHA512:86095133400d0cacad1994dfafbdb1f006e36e040ded6793ebf8bab94dfb32ff2fb08d9db3f1d8f5925150ec068ec5a0080a0ca5222851267428502c65be93c5
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/harfbuzz/12.3.0-4/
+
 
 ### `dpkg` source package: `hicolor-icon-theme=0.18-2build1`
 
@@ -1608,14 +1597,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.2.12+dfsg1-1
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.2.12%2bdfsg1-1.dsc' imagemagick_7.1.2.12+dfsg1-1.dsc 5202 SHA512:1895de3e8d24eb4d8bdb987dc8878b7924930ed64cee9468380003f069f8e2782cb0f8c3e71c6e5bb6543a43ac2d24f925ab292edf882d07435b56110acbad1a
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.2.12%2bdfsg1.orig.tar.xz' imagemagick_7.1.2.12+dfsg1.orig.tar.xz 10528380 SHA512:934c9d732551e8190ba67fffb20cd8a7c649170cb3892f9f50f1fa694100124530c067949fe74a1b68b3dc7ebedf8c0dd8416241972d7237374323d354550515
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.2.12%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.2.12+dfsg1-1.debian.tar.xz 267584 SHA512:40fb17cb4d641566f96f7de2cfbbf9f4da02afa58fa44268f22a35fb45d46cbe7484d0539cb35553ec39b44567b09439af61ba638f5eef78118e0fc75a756db0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/imagemagick/8:7.1.2.12+dfsg1-1/
+
 
 ### `dpkg` source package: `imath=3.1.12-1ubuntu3`
 
@@ -2196,15 +2184,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `LGPL-2.1+`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.58-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.58-1.dsc' libgpg-error_1.58-1.dsc 2955 SHA512:545cc03a9ca2e35b658667ac4f927cdbe44afe276541d58e7246fb710f10e4b81ff41753e59570181a4ba5328be17373899fe811d1a93d18dad046e703e758d6
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.58.orig.tar.bz2' libgpg-error_1.58.orig.tar.bz2 1123899 SHA512:4f4cb7f24e6cf4266c30da3985b9e62d4ab6012d8f43e9969d6edfd344d2a08f6277ab10610627597f6c58d064b3127fd286ae678381b84610d611645db5bbb4
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.58.orig.tar.bz2.asc' libgpg-error_1.58.orig.tar.bz2.asc 265 SHA512:9836a8f5a8805529b371219f6608fdd505d1ece2bc09719f27cb79cbee9c324e635fd393341b862f6e74e3d92d6640ae24234172e64ccb09a0066fbc7c3a6d5d
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.58-1.debian.tar.xz' libgpg-error_1.58-1.debian.tar.xz 19708 SHA512:71e4a49aa1d1d6fc580f4930090ff8ab8c9b2be3a9fdf339252ed891e8781688874c1f19414f31488bc663b72c6ecdcb4db7e9ae4e333721e211183af6431d7b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libgpg-error/1.58-1/
+
 
 ### `dpkg` source package: `libheif=1.20.2-2ubuntu1`
 
@@ -2440,14 +2426,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.53-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.53-1.dsc' libpng1.6_1.6.53-1.dsc 2254 SHA512:37657cda9c35df9f84c1bb29900468f01443b0dc59f314645fcbdbd1d9ebdad624d066a1f991b437f85cb33806b4e599967e4c7f27eb5c7e1c3e6f2aa08b24bf
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.53.orig.tar.gz' libpng1.6_1.6.53.orig.tar.gz 1583986 SHA512:e854589401043c5f24e0365a578ccda8fde47766fa5990c7355581e4f0dc67bfefd7f1272fc25c269968135826cf583b1a10d01667af97e2ec4410cfaf2a700c
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.53-1.debian.tar.xz' libpng1.6_1.6.53-1.debian.tar.xz 33500 SHA512:03435b06ef89d45995e1d349880a13ef5227379ae300db52b63380e4dcc102baf9a9a35867b32f9f7f7309179995a29a4b0dea9777627d547cbf01b2d6b246ab
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.53-1/
+
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build2`
 
@@ -2950,14 +2935,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2-16/copyright`, `/usr/share/doc/l
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.15.1+dfsg-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.1%2bdfsg-2.dsc' libxml2_2.15.1+dfsg-2.dsc 2738 SHA512:16ace363bdb7f499117c83591679d99aa92a015b81bad5a14abae1bec5c7374d3b7348076b2c697cf46e6a53394457e2e2c6c90ebc90305d95e0910e212c25e2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.1%2bdfsg.orig.tar.xz' libxml2_2.15.1+dfsg.orig.tar.xz 1185240 SHA512:206308977f923d6a6d17a8ea843cfca5b1d6e00a9c2a3efe7d96551bcdf89a943bf53671404de619974edba0556816dc707ac44b8b9eb147445d697bec46d96e
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.1%2bdfsg-2.debian.tar.xz' libxml2_2.15.1+dfsg-2.debian.tar.xz 35044 SHA512:d59f771044e61dcb56ae389b05b08be09bcdb5e90fd6553d12112db5ff691629d96bebb13431a36e04cd508cb2951cccf98da0858d1bed9127a9cc8c54d44dcb
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libxml2/2.15.1+dfsg-2/
+
 
 ### `dpkg` source package: `libxrender=1:0.9.12-1`
 
@@ -3279,15 +3263,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.4=8.4.7-0ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.7-0ubuntu3.dsc' mysql-8.4_8.4.7-0ubuntu3.dsc 3764 SHA512:a6b12019218f725c1f1bfb0e906e4cf630a852693699542f9a65b352e1d32cfee3a9e369071287199a9d4f7a2209be0b335dd4eb644af0c262a125727f722bf2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.7.orig.tar.gz' mysql-8.4_8.4.7.orig.tar.gz 478948308 SHA512:d9596395b176490d5e58be307c2f82f55c9acd3206c1ba29bdb8c96c67438bbe5594621f601161ccb77f56c8262d00255ab6fd8aa62db61c80a1721e3d4e45a2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.7.orig.tar.gz.asc' mysql-8.4_8.4.7.orig.tar.gz.asc 833 SHA512:51c22eef6e3611da0ce524784844339063ffabb378f0069e7abccee95a16cd8b9cc248b9eff1622adce6cb625322837b93f44fbd5668d18c79b0fd6875032798
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.7-0ubuntu3.debian.tar.xz' mysql-8.4_8.4.7-0ubuntu3.debian.tar.xz 135756 SHA512:57a5b9fdc009891c4da0661a26c3fb6c2f7cbc30b01d96d3fa9ddf4ba6eb15aa2e414ecb95f222d37823b4782e11ee16bd285d517768ec1705fa41abdb781618
-```
 
 ### `dpkg` source package: `mysql-defaults=1.1.1ubuntu2`
 
@@ -3448,9 +3426,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openexr=3.1.13-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_3.1.13-2.dsc' openexr_3.1.13-2.dsc 2144 SHA512:b6fb1b31c486856cb1df6b563adb672739e14d83c8ee02a00fa9ff054b4b7ade2109e6ef69231888b75a043b09a5ce522afdf0805181155a0a552427777eaca7
+'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_3.1.13-2build1.dsc' openexr_3.1.13-2build1.dsc 2317 SHA512:6f1501224ed06553624b09f7b382b7ab4f7fc6aecd27edd0b5c60e1df2aa45e00ce25041d45ec350b87900a9604c0245273fe877958b3c5f7e2649942cb68505
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_3.1.13.orig.tar.gz' openexr_3.1.13.orig.tar.gz 20542408 SHA512:662ebfce32bc56e3b5140e7d1813b8c117ac6e806fe30c996b956465ce20ee43f1f535b97868a87a26d1d7909d7f59acbe383f335ab8d72ad1484408cbabf77b
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_3.1.13-2.debian.tar.xz' openexr_3.1.13-2.debian.tar.xz 19268 SHA512:15bf6e5ac0acabe728ba2ef5c6f962be82ac410ab3fa882bb5f9adaa8b11c9ea6d0366f0eb590c47609fc08f444289a9585b04fdfd85f2f4c8417167ba3d0ab3
+'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_3.1.13-2build1.debian.tar.xz' openexr_3.1.13-2build1.debian.tar.xz 19348 SHA512:e1ff157b6c89174396287e4cb3814925712efed4460b2e24defe0e004a86db108f27ace4e0eb511943582f9bc04ec9b2bb71e6b18412021e473d320d19994959
 ```
 
 ### `dpkg` source package: `openjpeg2=2.5.4-1`
@@ -3664,14 +3642,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.56.4-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.56.4-1.dsc' pango1.0_1.56.4-1.dsc 3704 SHA512:213b5b7a2f9c18a622f346a7ffac25e28b6f02b9531e1ed1e6f5f154fb2db6963c0f0e19b1b6a9607fcf9cc58112a8e8e0c16b037695a0bdf75f91d6fc32fc84
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.56.4.orig.tar.xz' pango1.0_1.56.4.orig.tar.xz 1883988 SHA512:19471618a66b68e19786c458387f2bc8027ecbda5aaf29efcc025a99b3a74402765c6c4c6ea2997d8f1219ef7f1bea817e6ca55e494dff24780f5d3f2a6242a2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.56.4-1.debian.tar.xz' pango1.0_1.56.4-1.debian.tar.xz 44136 SHA512:481de5f40d1bc376be6c9f83cd37501271e57882d7fb2dd3a30a137d808adb507c192e50e5133e29b66e06659cf643386b4bd9e0fb1cc6fbc3ff53054f082070
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pango1.0/1.56.4-1/
+
 
 ### `dpkg` source package: `patch=2.8-2`
 
@@ -4064,15 +4041,9 @@ Licenses: (parsed from: `/usr/share/doc/rust-coreutils/copyright`)
 - `MIT`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-coreutils=0.2.2-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2-0ubuntu2.dsc' rust-coreutils_0.2.2-0ubuntu2.dsc 8098 SHA512:2d66b7fc43d187ac5ef00cd4d6ebb2a67b86287f0c72a1352a07b8b09a2cf38dbbb0b10be22506a5d049ec8a9974c552b5dd44ab00c50c89f5df7a2415acf1bb
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2.orig-rust-vendor.tar.xz' rust-coreutils_0.2.2.orig-rust-vendor.tar.xz 10803468 SHA512:a9b29f06270f216da761f535f303db4a840535259030695a8bbe7a5269fdab872941785700b22ab21a570b105ad0ade2750015dc1648ca4ec385b9fe4b414c52
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2.orig.tar.gz' rust-coreutils_0.2.2.orig.tar.gz 2827753 SHA512:58def9fe8f01640c6eb7c16cd182061bf62fab22124bdedcb931cdb39b25c2bd3f31523561e321a4822d9e09107dc0c5cc2ddf8e20333138ddaa19d284db609f
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2-0ubuntu2.debian.tar.xz' rust-coreutils_0.2.2-0ubuntu2.debian.tar.xz 17228 SHA512:d72221f314ba0429bec3378489392b42b4d7f91506eca6c8f2d2ffadc06ae45a369a0d4f07ee7c933db7525f1c3e1bf467732927435beca751b7ea1359175ff6
-```
 
 ### `dpkg` source package: `rust-sequoia-sq=1.3.1-6`
 
@@ -4707,15 +4678,13 @@ Licenses: (parsed from: `/usr/share/doc/liblzma-dev/copyright`, `/usr/share/doc/
 - `none`
 - `permissive-nowarranty`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.8.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.2-1.dsc' xz-utils_5.8.2-1.dsc 2530 SHA512:38b779c45e3a91e36b22b26d31f9bc627b4eefd8c5aaa42d531edf66b0570fc1a87ba2f15011cba015cf07262af7aa87376eb6ec5a4f56b4507eb733f7ab863c
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.2.orig.tar.xz' xz-utils_5.8.2.orig.tar.xz 1511132 SHA512:9cb422456d51df4261c16bcd68b188d64b778f43c875188cb140372dab9793c873111f5608c3dfe3dffe5dd6da9ba7ba96d7154d3d4fae26cb1cc22b6b66910e
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.2.orig.tar.xz.asc' xz-utils_5.8.2.orig.tar.xz.asc 877 SHA512:66e6536eb9d566208b220767382e223956ffcd45a1bf717a280d74160b3f94b479699d6e8eb65ad1b04542d7984ee307d58e40573494382410029f3c03519a49
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.2-1.debian.tar.xz' xz-utils_5.8.2-1.debian.tar.xz 24800 SHA512:7060eb59b15511e420bc5662419ec381b4fe267f914550c582a988e1f06a6fe751669a38bf7bf55aab87c67bdaf660ae031f14515c915dd0c55a6287dab96dac
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/xz-utils/5.8.2-1/
+
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1ubuntu2`
 
