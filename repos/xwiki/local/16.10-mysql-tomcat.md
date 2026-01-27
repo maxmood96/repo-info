@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:23813b3ff03b6e5e1ca113d16c10e3642b82f21640946e315d08bcb7cddd107a`
-- Created: `2026-01-16T03:23:18.969013716Z`
+- Image ID: `sha256:2782eedf173e1322566423e55ff5ba8c4264356c4765992cac94005cdd78609a`
+- Created: `2026-01-24T00:11:26.605365389Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.113`
-  - `TOMCAT_SHA512=1b8d9ba5c5e2ed2b4134a3fe6f206b3bb1184391e5c112ca7ea6a49ecadca63a7fc565c83caa610f0a8341988777870302a8162a84f0880af751531cdd4a2ee5`
+  - `TOMCAT_VERSION=9.0.115`
+  - `TOMCAT_SHA512=8e6fa92883c161523269560a7dc9e8d58fd1199b29c630f681aa3ec2975b59d94674d2881331076b55f5ee0439748931d87c099c79d7bcea909303739e612e4b`
   - `XWIKI_VERSION=16.10.16`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.16`
   - `XWIKI_DOWNLOAD_SHA256=e5df973b0fda8701e15bde16d5c2786a9cb2c5a1dde719bc4abe5e78c757a3f0`
@@ -210,13 +210,13 @@ $ apt-get source -qq --print-uris audit=1:3.1.2-2.1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1build1.1.debian.tar.xz' audit_3.1.2-2.1build1.1.debian.tar.xz 18860 SHA512:0d536e42718911a3b237816d67a1cb05f0c4e591dcf6aa2e17a657711e27b523bb8f79e06c895a107f0fa0039bdc192cfffd16f7b0c17eced8102bd902ac16e7
 ```
 
-### `dpkg` source package: `avahi=0.8-13ubuntu6`
+### `dpkg` source package: `avahi=0.8-13ubuntu6.1`
 
 Binary Packages:
 
-- `libavahi-client3:amd64=0.8-13ubuntu6`
-- `libavahi-common-data:amd64=0.8-13ubuntu6`
-- `libavahi-common3:amd64=0.8-13ubuntu6`
+- `libavahi-client3:amd64=0.8-13ubuntu6.1`
+- `libavahi-common-data:amd64=0.8-13ubuntu6.1`
+- `libavahi-common3:amd64=0.8-13ubuntu6.1`
 
 Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share/doc/libavahi-common-data/copyright`, `/usr/share/doc/libavahi-common3/copyright`)
 
@@ -227,10 +227,10 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris avahi=0.8-13ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-13ubuntu6.dsc' avahi_0.8-13ubuntu6.dsc 4150 SHA512:0b8f704d15401191780de550da44259b81e30ae5fa0f4144f2a3f54da941fa7fa41108f92a340acd86dd2504ef321d3b4dde0d5f7eac9775a2f763cf15c61e29
+$ apt-get source -qq --print-uris avahi=0.8-13ubuntu6.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-13ubuntu6.1.dsc' avahi_0.8-13ubuntu6.1.dsc 4203 SHA512:93a8193e20570493396539e91807d532ec5d4edff78e4bde9a7ccf4ca87f0d8de8cae0c4ed357406a541c2fc4c3843ca5c6943440095fcb48e7f68f3e7fe55d3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8.orig.tar.gz' avahi_0.8.orig.tar.gz 1591458 SHA512:c6ba76feb6e92f70289f94b3bf12e5f5c66c11628ce0aeb3cadfb72c13a5d1a9bd56d71bdf3072627a76cd103b9b056d9131aa49ffe11fa334c24ab3b596c7de
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-13ubuntu6.debian.tar.xz' avahi_0.8-13ubuntu6.debian.tar.xz 49216 SHA512:df3e81c6276601ab4f3bd0e0f886f0a4107c14c07b9d3cc655820d602038d5e1fbfa1c6dd9d711fd524fa0f5661ece64425658c50e672fc3ef090f8f89b86367
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-13ubuntu6.1.debian.tar.xz' avahi_0.8-13ubuntu6.1.debian.tar.xz 50612 SHA512:8b33bfca10efe03a526804a1616e622361f05d84748b6f998f354f748a12cf69377bf64ecc5a4f619e503f57df92bf214b385bc701af4ee95d2778592b1cac01
 ```
 
 ### `dpkg` source package: `base-files=13ubuntu10.3`
@@ -1007,11 +1007,11 @@ $ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.debian.tar.xz' gcc-14_14.2.0-4ubuntu2~24.04.debian.tar.xz 1950240 SHA512:2b1894ebcb104b85da3c614e0a6c2e24b1f6c1f548645996d2cb0d274301284f1f4db0809c8355997b05fe64b76a73ee1b9499c7b1c229547bad79fee1954d59
 ```
 
-### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.6`
+### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.7`
 
 Binary Packages:
 
-- `libglib2.0-0t64:amd64=2.80.0-6ubuntu3.6`
+- `libglib2.0-0t64:amd64=2.80.0-6ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 
@@ -1044,11 +1044,11 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.6.dsc' glib2.0_2.80.0-6ubuntu3.6.dsc 4542 SHA512:38ac87a2e8d4807cc2eabbdc41cf30d267dafea0258b6e94ce0a02cf532cea31fe182a4039a2f221c6457315ba5137ed3e00f286ee96fc2608bf0d6c4394c315
+$ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.7.dsc' glib2.0_2.80.0-6ubuntu3.7.dsc 4542 SHA512:5c54287834837dd7418c24b41ba18ef543233d7cf44a0a354976722f57837cf381539e525b1292f418e22b5d05de2a305edcfcfc117c901fffec3555728bde01
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.6.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.6.debian.tar.xz 162184 SHA512:89921bc45b2f3ea9ea17461557a6551e454eb7ea653337bf5fd129c56aa39a5cc5b10b1f07a3bf1a5762374c28b03bbfd8c0199754e0f75f245d920b75ee17ad
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.7.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.7.debian.tar.xz 162596 SHA512:10a7f8574d82e7854e473ef8a6d21aec1e58b89d81a1f1068faf6d583dc61eadd716133bbca8f8864a62b5eaa89cf0d72ba0560d7e5edc6db7c9772c0f81b6c1
 ```
 
 ### `dpkg` source package: `glibc=2.39-0ubuntu8.6`
@@ -2865,11 +2865,11 @@ $ apt-get source -qq --print-uris libxinerama=2:1.1.4-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxinerama/libxinerama_1.1.4-3build1.diff.gz' libxinerama_1.1.4-3build1.diff.gz 8639 SHA512:d2a13c86831e6fdc23f6f02a4afa8cd7e0d404a87805d793085cb9b59171fe7dd8f74eee8cd2a4c471802dfd24bf4effe2cf6514032066ee20ce663a8d3555f8
 ```
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.6`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.7`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.6`
+- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
@@ -2879,10 +2879,10 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.6.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.6.dsc 3038 SHA512:7335b471c95fe73974736ded5dbd85cb1fcf24e0168ab939e7ff9df9735b02f5c550a1d96021023e14db18bf6defa2c72888a35641136cca75f23a45863f03bc
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.7.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.7.dsc 3083 SHA512:bd10326e5294c4a92fb4918a363cb8861f7a20fc876ec1c11e7edb6482a53aee85471a0c274244eeeda96f65b57aa260071d9aa033f169cd4e7fdc943ef09e5d
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.6.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.6.debian.tar.xz 48472 SHA512:8e9d2a8032b59da05cbe5be6850867e5b3ca18c4c4d8679b4a80afd36306ac4099abddecc208f90cc9067b746d9c8eb9dc7f732d8cea4187423803f7f43f34d0
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.7.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.7.debian.tar.xz 52444 SHA512:4090c7600387e0ed6dc7acfa7f691d6ee3cbcd2da2ba305848a42c6497f9ac4cbc2c87b8c2c0659b15afc7373f8aef2a8473a465157a1cc3a1d982b79c2d2ba9
 ```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-2build1`
