@@ -1,10 +1,10 @@
-# `neo4j:5.26.19-community-ubi9`
+# `neo4j:5.26.20-community-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c96903348fde70b75affa3cef2e3e494b089a0bcda5b7afde23096b74978c8fa`
-- Created: `2026-01-20T19:17:13.876163618Z`
-- Virtual Size: ~ 605.56 Mb  
+- Image ID: `sha256:73ada7f0a914987cce37c4bbf5691a16d293fac176315002b162c2e9791d525e`
+- Created: `2026-01-23T22:03:20.731094392Z`
+- Virtual Size: ~ 605.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=da87ec6d1d5f348815589fe1becce86f1c097ed72d30487669c4bba01ed622a7`
-  - `NEO4J_TARBALL=neo4j-community-5.26.19-unix.tar.gz`
+  - `NEO4J_SHA256=38e5643bf76a8fa714421be8be2b12d6280b7f891b2d29ae16172e57de0e9432`
+  - `NEO4J_TARBALL=neo4j-community-5.26.20-unix.tar.gz`
   - `NEO4J_EDITION=community`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
@@ -618,11 +618,16 @@ $ dnf --quiet download --source --url hostname-3.23-6.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/h/hostname-3.23-6.el9.src.rpm
 ```
 
-### `rpm` package: `java-17-openjdk-headless-17.0.17.0.10-1.el9.x86_64`
+### `rpm` package: `java-17-openjdk-headless-17.0.18.0.8-1.el9.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url java-17-openjdk-headless-17.0.18.0.8-1.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/j/java-17-openjdk-17.0.18.0.8-1.el9.src.rpm
+```
 
 ### `rpm` package: `javapackages-filesystem-6.4.0-1.el9.noarch`
 
