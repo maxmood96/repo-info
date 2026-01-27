@@ -1,13 +1,13 @@
-# `perl:5.43.6-threaded-bullseye`
+# `perl:5.43.7-threaded-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:52a85c687f387b5f79c379e25d3fa18a933991ac8a1968698dad435f78aa683d`
-- Created: `2026-01-13T05:54:36.282496147Z`
-- Virtual Size: ~ 896.46 Mb  
+- Image ID: `sha256:b261a1bfe3685ea21b39d489b1198038345cb2981a3b553d7be95390ffca81fd`
+- Created: `2026-01-26T21:57:29.53585764Z`
+- Virtual Size: ~ 896.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.43.6","-de0"]`
+- Command: `["perl5.43.7","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
@@ -1898,20 +1898,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.3+deb11u8
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3%2bdeb11u8.dsc' imagemagick_6.9.11.60+dfsg-1.3+deb11u8.dsc 5106 SHA256:2a911fe20ac9cbf8cec3c341e1dab8b3e609d5e5c7370af05d5923e425ffbce0
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3%2bdeb11u8.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.3+deb11u8.debian.tar.xz 279484 SHA256:c348f7ba9d51e7262e8ecacdc79153524e993f2e3ad4f65accad5654d7b47fff
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u8/
 
-- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u8/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.60`
 
