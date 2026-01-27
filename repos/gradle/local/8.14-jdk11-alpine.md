@@ -1,10 +1,10 @@
-# `gradle:8.14.3-jdk11-alpine`
+# `gradle:8.14.4-jdk11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:97cc5f9a912871e0041112f8693d6775187a9bb4c4d1c051910a332cdcf05b5a`
-- Created: `2025-11-08T18:23:53.659830954Z`
-- Virtual Size: ~ 578.03 Mb  
+- Image ID: `sha256:b11f328e07d942dfb58b208015c1c30fd15e1e3e0ea4c8f10f9fa0f944af4366`
+- Created: `2026-01-26T19:17:58.678812364Z`
+- Virtual Size: ~ 578.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.29+7`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.14.3`
+  - `GRADLE_VERSION=8.14.4`
 
 ## `apk` (`.apk`-based packages)
 
@@ -245,16 +245,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.5-r0 description:
+c-ares-1.34.6-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.5-r0 webpage:
+c-ares-1.34.6-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.5-r0 installed size:
+c-ares-1.34.6-r0 installed size:
 233 KiB
 
-c-ares-1.34.5-r0 license:
+c-ares-1.34.6-r0 license:
 MIT
 
 ```
@@ -500,16 +500,16 @@ GPL-2.0-only
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.6.0-r8 description:
+git-lfs-3.6.0-r10 description:
 Git extension for versioning large files
 
-git-lfs-3.6.0-r8 webpage:
+git-lfs-3.6.0-r10 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.6.0-r8 installed size:
+git-lfs-3.6.0-r10 installed size:
 13 MiB
 
-git-lfs-3.6.0-r8 license:
+git-lfs-3.6.0-r10 license:
 MIT
 
 ```
@@ -1775,16 +1775,16 @@ MIT
 ### `apk` package: `py3-urllib3`
 
 ```console
-py3-urllib3-1.26.20-r0 description:
+py3-urllib3-1.26.20-r1 description:
 HTTP library with thread-safe connection pooling, file post, and more
 
-py3-urllib3-1.26.20-r0 webpage:
+py3-urllib3-1.26.20-r1 webpage:
 https://github.com/urllib3/urllib3
 
-py3-urllib3-1.26.20-r0 installed size:
-442 KiB
+py3-urllib3-1.26.20-r1 installed size:
+443 KiB
 
-py3-urllib3-1.26.20-r0 license:
+py3-urllib3-1.26.20-r1 license:
 MIT
 
 ```
@@ -1792,16 +1792,16 @@ MIT
 ### `apk` package: `py3-urllib3-pyc`
 
 ```console
-py3-urllib3-pyc-1.26.20-r0 description:
+py3-urllib3-pyc-1.26.20-r1 description:
 Precompiled Python bytecode for py3-urllib3
 
-py3-urllib3-pyc-1.26.20-r0 webpage:
+py3-urllib3-pyc-1.26.20-r1 webpage:
 https://github.com/urllib3/urllib3
 
-py3-urllib3-pyc-1.26.20-r0 installed size:
+py3-urllib3-pyc-1.26.20-r1 installed size:
 425 KiB
 
-py3-urllib3-pyc-1.26.20-r0 license:
+py3-urllib3-pyc-1.26.20-r1 license:
 MIT
 
 ```

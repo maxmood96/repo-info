@@ -1,9 +1,9 @@
-# `gradle:8.14.3-jdk21-ubi`
+# `gradle:8.14.4-jdk21-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:134b5454539216e2f3ff620383d2ddf1babe46d25ddb517fc1ffc076cb5c7b05`
-- Created: `2026-01-20T21:11:18.021309305Z`
+- Image ID: `sha256:58b41ce5b04e2a96f43a5eab368196ef9db5f8572a772850d6a8e8c7152a5a01`
+- Created: `2026-01-26T22:19:50.906952632Z`
 - Virtual Size: ~ 756.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,10 +18,10 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.9+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.14.3`
+  - `GRADLE_VERSION=8.14.4`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-01-19T00:53:42Z`
+  - `build-date=2026-01-22T05:09:47Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-01-19T00:53:42Z`
-  - `org.opencontainers.image.revision=d9151f7dd4dfe1cc8a2df524b85cddd483628d5e`
-  - `release=1768783948`
+  - `org.opencontainers.image.created=2026-01-22T05:09:47Z`
+  - `org.opencontainers.image.revision=812a20485e9d8d728e95b468c2886da21352b9fc`
+  - `release=1769056855`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=d9151f7dd4dfe1cc8a2df524b85cddd483628d5e`
+  - `vcs-ref=812a20485e9d8d728e95b468c2886da21352b9fc`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -508,11 +508,16 @@ $ dnf --quiet download --source --url git-lfs-3.6.1-4.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-lfs-3.6.1-4.el9_7.src.rpm
 ```
 
-### `rpm` package: `glib2-2.68.4-18.el9_7.x86_64`
+### `rpm` package: `glib2-2.68.4-18.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url glib2-2.68.4-18.el9_7.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-18.el9_7.1.src.rpm
+```
 
 ### `rpm` package: `glibc-2.34-231.el9_7.2.x86_64`
 

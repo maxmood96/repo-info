@@ -1,9 +1,9 @@
-# `gradle:8.14.3-jdk21-graal`
+# `gradle:8.14.4-jdk21-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f1d9b13508297ecb5a8b6a23a35a5ed4bc84e79c5ce1f9265a329a1ee94ff30a`
-- Created: `2026-01-15T22:22:50.354583662Z`
+- Image ID: `sha256:76da01a621f2e8e2241e2224799aab53e5274d4807ee007a375095a30ee30992`
+- Created: `2026-01-26T19:19:18.771889329Z`
 - Virtual Size: ~ 1.21 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=21.0.2`
-  - `GRADLE_VERSION=8.14.3`
+  - `GRADLE_VERSION=8.14.4`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
