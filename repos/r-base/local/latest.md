@@ -720,20 +720,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.7.3-1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.3-1.dsc' expat_2.7.3-1.dsc 1964 SHA256:b8076ea24d139e76484387f592699440205b48503d415f5d1b8d7be9a6bf4df6
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.3.orig.tar.gz' expat_2.7.3.orig.tar.gz 8441347 SHA256:7c853a76f7c2a562c3edfd84ca47e487d9eff3966786191dfb60cc441daf82d6
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.3-1.debian.tar.xz' expat_2.7.3-1.debian.tar.xz 13480 SHA256:389471cdaa7f0ba5349bd1a972fd60075b981a3a9d493b5689fec0157c163777
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.7.3-1/
 
-- https://sources.debian.net/src/expat/2.7.3-1/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.7.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -1248,10 +1241,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris harfbuzz=12.3.0-4
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_12.3.0-4.dsc' harfbuzz_12.3.0-4.dsc 2573 SHA256:dddfa54aaead7b1ee5f1678178176178a754e2b1d585633c7bc6577e99313952
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_12.3.0.orig.tar.xz' harfbuzz_12.3.0.orig.tar.xz 18580220 SHA256:8660ebd3c27d9407fc8433b5d172bafba5f0317cb0bb4339f28e5370c93d42b7
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_12.3.0-4.debian.tar.xz' harfbuzz_12.3.0-4.debian.tar.xz 20012 SHA256:fd3efd130c213928dec5c2d25a659a2e5f663f71dd048fec396a31f264c8ddcb
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.3.0-4.dsc' harfbuzz_12.3.0-4.dsc 2573 SHA256:dddfa54aaead7b1ee5f1678178176178a754e2b1d585633c7bc6577e99313952
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.3.0.orig.tar.xz' harfbuzz_12.3.0.orig.tar.xz 18580220 SHA256:8660ebd3c27d9407fc8433b5d172bafba5f0317cb0bb4339f28e5370c93d42b7
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.3.0-4.debian.tar.xz' harfbuzz_12.3.0-4.debian.tar.xz 20012 SHA256:fd3efd130c213928dec5c2d25a659a2e5f663f71dd048fec396a31f264c8ddcb
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/harfbuzz/12.3.0-4/ (for browsing the source)
+- https://sources.debian.net/src/harfbuzz/12.3.0-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/harfbuzz/12.3.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.25`
 
@@ -1818,20 +1817,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.53-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.53-1.dsc' libpng1.6_1.6.53-1.dsc 2254 SHA256:efebbbff660eacfd2f9a320a96bc9b3941c1198eddc037b77ef352c31b27fd4d
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.53.orig.tar.gz' libpng1.6_1.6.53.orig.tar.gz 1583986 SHA256:b20cee717e11416d2f96ccc7d184f63730ca8cb2f03bfd0c4ed77fbc909c0bff
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.53-1.debian.tar.xz' libpng1.6_1.6.53-1.debian.tar.xz 33500 SHA256:844328a9c21260fc8a5c2411bc330eea5b30370c2a815cb3772273f518d94112
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.53-1/
 
-- https://sources.debian.net/src/libpng1.6/1.6.53-1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.53-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.53-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -3681,20 +3673,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.41.3-2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3-2.dsc' util-linux_2.41.3-2.dsc 5332 SHA256:11b51f9e7f24cddcdb1ac8c3fabbcc5e8687f8a32c75f1280fca0f94a932dbf4
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3.orig.tar.xz' util-linux_2.41.3.orig.tar.xz 9467224 SHA256:3330d873f0fceb5560b89a7dc14e4f3288bbd880e96903ed9b50ec2b5799e58b
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3-2.debian.tar.xz' util-linux_2.41.3-2.debian.tar.xz 104900 SHA256:18bb3a07fbb3129d5ac0161f08d03833a11fc3089144de0e8318c062ea0a0364
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.41.3-2/
 
-- https://sources.debian.net/src/util-linux/2.41.3-2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.41.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.41.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `vim=2:9.1.1882-1`
 
@@ -3733,20 +3718,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.1.1882-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.1882-1.dsc' vim_9.1.1882-1.dsc 3198 SHA256:65c2a9ce4cd758af815a832215e1b9042326eb57f474ff2dd4c508d1ab92563b
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.1882.orig.tar.xz' vim_9.1.1882.orig.tar.xz 12850936 SHA256:25026cc9cf7d87797534ce1ace58e427ebfd76e39be78cad013d1525b6bf631a
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.1882-1.debian.tar.xz' vim_9.1.1882-1.debian.tar.xz 192272 SHA256:cfb9e31f8b450323a4c38a6d6639d34682d85f19fefc5f843522ea6359aabe5e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.1.1882-1/
 
-- https://sources.debian.net/src/vim/2:9.1.1882-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.1.1882-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.1.1882-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
