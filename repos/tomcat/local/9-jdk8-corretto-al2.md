@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb22bb6fd01190ffaa80bf5804457d2e610fb1749a9b56da2c9a388c82830938`
-- Created: `2026-01-23T22:43:00.747644099Z`
-- Virtual Size: ~ 386.42 Mb  
+- Image ID: `sha256:29d1a2279b5f2f99d74309d91f297e59943ff7b8f6f73788b5b53c5f4dde34ea`
+- Created: `2026-01-28T04:58:26.654293296Z`
+- Virtual Size: ~ 384.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -351,15 +351,15 @@ $ dnf --quiet download --source --url gmp-6.0.0-15.amzn2.0.3
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/9f862452182adbc3431f0dcf54ac57a518f3e987d65b6b61bd3455cc477e12d5/../../../../../blobstore/e3c168f21582900e205e5ff29724e4ba70b5b375a7731825f32d0e9e2bb29026/gmp-6.0.0-15.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `gnupg2-2.0.22-5.amzn2.0.5.x86_64`
+### `rpm` package: `gnupg2-2.0.22-5.amzn2.0.6.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gnupg2-2.0.22-5.amzn2.0.5
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/9f862452182adbc3431f0dcf54ac57a518f3e987d65b6b61bd3455cc477e12d5/../../../../../blobstore/189e1bdc950a8e13918173d73835981842c90ee3b3cef07c116152a00b8b8a59/gnupg2-2.0.22-5.amzn2.0.5.src.rpm
+$ dnf --quiet download --source --url gnupg2-2.0.22-5.amzn2.0.6
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/9f862452182adbc3431f0dcf54ac57a518f3e987d65b6b61bd3455cc477e12d5/../../../../../blobstore/a191b7f4429dbd4ba8b9fbb8262a9b5f691d17216a6376eeeab112a202ff6074/gnupg2-2.0.22-5.amzn2.0.6.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-b04f24e3-68acbaeb`
@@ -1029,15 +1029,15 @@ $ dnf --quiet download --source --url pyliblzma-0.5.3-25.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/9f862452182adbc3431f0dcf54ac57a518f3e987d65b6b61bd3455cc477e12d5/../../../../../blobstore/860af43ebf61fc4b2c6c02ec914630e76e68197a77f6b7318b92f5059c7673d1/pyliblzma-0.5.3-25.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-2.7.18-1.amzn2.0.14.x86_64`
+### `rpm` package: `python-2.7.18-1.amzn2.0.15.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.14
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/9f862452182adbc3431f0dcf54ac57a518f3e987d65b6b61bd3455cc477e12d5/../../../../../blobstore/c55218e92e1a02ee7ac3aa8e3531e26727579df5479ae06fe232ec72028442bb/python-2.7.18-1.amzn2.0.14.src.rpm
+$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.15
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/9f862452182adbc3431f0dcf54ac57a518f3e987d65b6b61bd3455cc477e12d5/../../../../../blobstore/8c4d1fa05c368d82a160848e4cf49cebb343b9d6255d304d0111ddd85d9be5f9/python-2.7.18-1.amzn2.0.15.src.rpm
 ```
 
 ### `rpm` package: `python-iniparse-0.4-9.amzn2.noarch`
@@ -1051,15 +1051,15 @@ $ dnf --quiet download --source --url python-iniparse-0.4-9.amzn2.noarch
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/9f862452182adbc3431f0dcf54ac57a518f3e987d65b6b61bd3455cc477e12d5/../../../../../blobstore/c44ed4bc8040ce8e74624bd74404387f1c5320ee6b6d975a81e358ab7919b11a/python-iniparse-0.4-9.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-libs-2.7.18-1.amzn2.0.14.x86_64`
+### `rpm` package: `python-libs-2.7.18-1.amzn2.0.15.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.14
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/9f862452182adbc3431f0dcf54ac57a518f3e987d65b6b61bd3455cc477e12d5/../../../../../blobstore/c55218e92e1a02ee7ac3aa8e3531e26727579df5479ae06fe232ec72028442bb/python-2.7.18-1.amzn2.0.14.src.rpm
+$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.15
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/9f862452182adbc3431f0dcf54ac57a518f3e987d65b6b61bd3455cc477e12d5/../../../../../blobstore/8c4d1fa05c368d82a160848e4cf49cebb343b9d6255d304d0111ddd85d9be5f9/python-2.7.18-1.amzn2.0.15.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-19.amzn2.0.2.x86_64`
@@ -1205,15 +1205,15 @@ $ dnf --quiet download --source --url system-release-2-17.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/9f862452182adbc3431f0dcf54ac57a518f3e987d65b6b61bd3455cc477e12d5/../../../../../blobstore/3599cf903c2cf24f55b835d112c54dd1283447c2aeec26d6effcf2c8e28916fd/system-release-2-17.amzn2.src.rpm
 ```
 
-### `rpm` package: `tzdata-2025b-1.amzn2.0.1.noarch`
+### `rpm` package: `tzdata-2025c-1.amzn2.0.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2025b-1.amzn2.0.1.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/9f862452182adbc3431f0dcf54ac57a518f3e987d65b6b61bd3455cc477e12d5/../../../../../blobstore/bc2e0795c76e9b9b2985cc8de89d57928c2829bd4ac13c361c517fff50520275/tzdata-2025b-1.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url tzdata-2025c-1.amzn2.0.1.noarch
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/9f862452182adbc3431f0dcf54ac57a518f3e987d65b6b61bd3455cc477e12d5/../../../../../blobstore/6808977be8bc9d8c1399dd3d0791f7c1ac1944a9496fbc866d1e8e48734165d3/tzdata-2025c-1.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `vim-data-9.0.2153-1.amzn2.0.4.noarch`
