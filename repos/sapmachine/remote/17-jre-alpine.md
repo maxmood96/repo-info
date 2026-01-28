@@ -1,7 +1,7 @@
 ## `sapmachine:17-jre-alpine`
 
 ```console
-$ docker pull sapmachine@sha256:131b9032a3a9a7bbfb406de3cb2e4a64140577d4a81cc61738d5d6bd3536775a
+$ docker pull sapmachine@sha256:6b0d97b04ee723430617d0a056865ef330bf1f6bea85de7f52f51a94f53fdc9e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,58 +12,58 @@ $ docker pull sapmachine@sha256:131b9032a3a9a7bbfb406de3cb2e4a64140577d4a81cc617
 ### `sapmachine:17-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull sapmachine@sha256:6dbeb797825c9f5d108922be53144f4120fa543bd82b7207589e321d5389f4ad
+$ docker pull sapmachine@sha256:02b61d6a2526fbb2019e8a1860bb18f8b9b947e734cc9a42a9b49bad08dae579
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **58.8 MB (58806603 bytes)**  
+-	Total Size: **58.8 MB (58808902 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41f1a6cd80b8ebe877f7719db5d702cf35129c722be4c23083cdbbe1ad2e64cd`
+-	Image ID: `sha256:d6ff2f2555d5104afffa24b0acc84e193edbf659d39c4f00faf78de771707908`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 08 Oct 2025 11:04:56 GMT
-ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
-# Wed, 08 Oct 2025 11:04:56 GMT
+# Wed, 28 Jan 2026 01:18:40 GMT
+ADD alpine-minirootfs-3.22.3-x86_64.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:18:40 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Jan 2026 20:05:04 GMT
+# Wed, 28 Jan 2026 03:49:01 GMT
 RUN wget -qO /etc/apk/keys/sapmachine-apk.rsa.pub https://dist.sapmachine.io/alpine/sapmachine-apk.rsa.pub &&     echo "4444e47cabf35695f9406692848de191d3b7cbd47dcdc1ffb62f4f70aea06e89 /etc/apk/keys/sapmachine-apk.rsa.pub" | sha256sum -c - &&     echo "https://dist.sapmachine.io/alpine" >> /etc/apk/repositories &&     apk add sapmachine-17-jre=17.0.18-r0 # buildkit
-# Wed, 21 Jan 2026 20:05:04 GMT
+# Wed, 28 Jan 2026 03:49:01 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-17-sapmachine-jre
-# Wed, 21 Jan 2026 20:05:04 GMT
+# Wed, 28 Jan 2026 03:49:01 GMT
 CMD ["sh"]
 ```
 
 -	Layers:
-	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
-		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
-		Size: 3.8 MB (3802452 bytes)  
+	-	`sha256:d49a2dee86fb12766dd648402d010ca105846a41bd58738454e53780d4bb8e97`  
+		Last Modified: Wed, 28 Jan 2026 01:18:46 GMT  
+		Size: 3.8 MB (3804875 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:27ebb13e12e4ee8336688bcb332291f9fa595b09a559bff8b0b28033de5c3624`  
-		Last Modified: Wed, 21 Jan 2026 20:05:15 GMT  
-		Size: 55.0 MB (55004151 bytes)  
+	-	`sha256:db6c350aea95e3650291c286981689f2b46e682a51cf9fcd14704d0ed2560f11`  
+		Last Modified: Wed, 28 Jan 2026 03:49:13 GMT  
+		Size: 55.0 MB (55004027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `sapmachine:17-jre-alpine` - unknown; unknown
 
 ```console
-$ docker pull sapmachine@sha256:9f6c3444573d667aad5d8de53cc27b0f06670f95b65dfced71e247bbfe47bea4
+$ docker pull sapmachine@sha256:8ef64412924f341d4dd6bbebcb82f0d77eec9162cf1073d0adaf3856f9642bc2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **433.6 KB (433606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78f8bb26d4fb2c3cb6b9ecd99f02c8072f10e33cd03db488356f61f99eee0bb1`
+-	Image ID: `sha256:46fcb00abe6d053f23c7d3e5e52dde50c3b447943ba199075155dbf02df7c0e4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b1b9450fd9d3cae0b3c74a9c148d1b73c2beed46abd459b84b7391a171fd7ff6`  
-		Last Modified: Wed, 21 Jan 2026 20:05:14 GMT  
+	-	`sha256:d4a8d414a9007ab7a1b983d868d049c98628a0c9a1b1afefc2c254d6275f355c`  
+		Last Modified: Wed, 28 Jan 2026 03:49:11 GMT  
 		Size: 426.0 KB (425996 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3598208d3e02065532b6513c1a69a916bb42be435e18cc3151ed0359c02ed66e`  
-		Last Modified: Wed, 21 Jan 2026 20:05:14 GMT  
+	-	`sha256:6c9e5d1bdf1e45704fbec571c934b6d4f6adaba44726f8748e28f834ebd71e6e`  
+		Last Modified: Wed, 28 Jan 2026 03:49:11 GMT  
 		Size: 7.6 KB (7610 bytes)  
 		MIME: application/vnd.in-toto+json
