@@ -34,6 +34,18 @@
 -	[`xwiki:17.4.8-mariadb-tomcat`](#xwiki1748-mariadb-tomcat)
 -	[`xwiki:17.4.8-mysql-tomcat`](#xwiki1748-mysql-tomcat)
 -	[`xwiki:17.4.8-postgres-tomcat`](#xwiki1748-postgres-tomcat)
+-	[`xwiki:18`](#xwiki18)
+-	[`xwiki:18-mariadb-tomcat`](#xwiki18-mariadb-tomcat)
+-	[`xwiki:18-mysql-tomcat`](#xwiki18-mysql-tomcat)
+-	[`xwiki:18-postgres-tomcat`](#xwiki18-postgres-tomcat)
+-	[`xwiki:18.0`](#xwiki180)
+-	[`xwiki:18.0-mariadb-tomcat`](#xwiki180-mariadb-tomcat)
+-	[`xwiki:18.0-mysql-tomcat`](#xwiki180-mysql-tomcat)
+-	[`xwiki:18.0-postgres-tomcat`](#xwiki180-postgres-tomcat)
+-	[`xwiki:18.0.0`](#xwiki1800)
+-	[`xwiki:18.0.0-mariadb-tomcat`](#xwiki1800-mariadb-tomcat)
+-	[`xwiki:18.0.0-mysql-tomcat`](#xwiki1800-mysql-tomcat)
+-	[`xwiki:18.0.0-postgres-tomcat`](#xwiki1800-postgres-tomcat)
 -	[`xwiki:latest`](#xwikilatest)
 -	[`xwiki:lts`](#xwikilts)
 -	[`xwiki:lts-mariadb`](#xwikilts-mariadb)
@@ -14420,6 +14432,114 @@ $ docker pull xwiki@sha256:5c8e739d87a5a34c9b66890912c76ba16b9b723d22751a5d9aff9
 		Last Modified: Fri, 16 Jan 2026 03:25:38 GMT  
 		Size: 39.6 KB (39594 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `xwiki:18`
+
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `xwiki:18-mariadb-tomcat`
+
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `xwiki:18-mysql-tomcat`
+
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `xwiki:18-postgres-tomcat`
+
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `xwiki:18.0`
+
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `xwiki:18.0-mariadb-tomcat`
+
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `xwiki:18.0-mysql-tomcat`
+
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `xwiki:18.0-postgres-tomcat`
+
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `xwiki:18.0.0`
+
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `xwiki:18.0.0-mariadb-tomcat`
+
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `xwiki:18.0.0-mysql-tomcat`
+
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `xwiki:18.0.0-postgres-tomcat`
+
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `xwiki:latest`
 
