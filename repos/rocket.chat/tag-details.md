@@ -4,13 +4,13 @@
 
 -	[`rocket.chat:7`](#rocketchat7)
 -	[`rocket.chat:7.10`](#rocketchat710)
--	[`rocket.chat:7.10.6`](#rocketchat7106)
+-	[`rocket.chat:7.10.7`](#rocketchat7107)
 -	[`rocket.chat:7.11`](#rocketchat711)
 -	[`rocket.chat:7.11.3`](#rocketchat7113)
 -	[`rocket.chat:7.12`](#rocketchat712)
 -	[`rocket.chat:7.12.3`](#rocketchat7123)
 -	[`rocket.chat:7.13`](#rocketchat713)
--	[`rocket.chat:7.13.2`](#rocketchat7132)
+-	[`rocket.chat:7.13.3`](#rocketchat7133)
 -	[`rocket.chat:7.8`](#rocketchat78)
 -	[`rocket.chat:7.8.4`](#rocketchat784)
 -	[`rocket.chat:7.9`](#rocketchat79)
@@ -23,7 +23,7 @@
 ## `rocket.chat:7`
 
 ```console
-$ docker pull rocket.chat@sha256:e7cbc2b8a999dc8eef41b4f7337838b8896a0aaca6a36cf4472260635b8ef0d1
+$ docker pull rocket.chat@sha256:68ac1859954e961157a4d90a6705d1ef9ae16604ac51fd2b461650aef8e20f34
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -34,13 +34,13 @@ $ docker pull rocket.chat@sha256:e7cbc2b8a999dc8eef41b4f7337838b8896a0aaca6a36cf
 ### `rocket.chat:7` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:dbbb7665aed5bb52808aa7ca2f1ec3013bef26603e2ed077a27f2f583cd5618f
+$ docker pull rocket.chat@sha256:cfd6deb6985f1069bb33624e86ac2f7fff2206738d94aa6e021c25bdeaca79ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **469.9 MB (469893096 bytes)**  
+-	Total Size: **469.9 MB (469896794 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8335368f74dd3422be1d33e9f5dcc1cb9520c8302b81095f4c680d45cd9aa0dc`
+-	Image ID: `sha256:8549a74130a4e83d9c64178e137a7a37c36e26e73e41b85303a162f27d4b9808`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
@@ -63,31 +63,31 @@ COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Wed, 14 Jan 2026 17:59:23 GMT
 CMD ["node"]
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 VOLUME [/app/uploads]
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 WORKDIR /app
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 ENV NODE_ENV=production
-# Wed, 14 Jan 2026 18:11:28 GMT
-ENV RC_VERSION=7.13.2
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
+ENV RC_VERSION=7.13.3
+# Wed, 28 Jan 2026 19:29:38 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 USER rocketchat
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 WORKDIR /app/bundle
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 CMD ["node" "main.js"]
 ```
 
@@ -112,21 +112,21 @@ CMD ["node" "main.js"]
 		Last Modified: Wed, 14 Jan 2026 17:59:36 GMT  
 		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ead69d1e1204079b67da83fb632135c154324718a06d55ef14ebb18ef69cbbc4`  
-		Last Modified: Wed, 14 Jan 2026 18:13:12 GMT  
-		Size: 48.7 MB (48723734 bytes)  
+	-	`sha256:b1b3a91154c5a1b795f0ece63dd7885668de8395dae34bd939e1149242c337d4`  
+		Last Modified: Wed, 28 Jan 2026 19:30:24 GMT  
+		Size: 48.7 MB (48723821 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb9a9771915defe5e0e29867468852eebd547e8c96fb19fe8d1d3285982f1394`  
-		Last Modified: Wed, 14 Jan 2026 18:13:09 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:93daf5519333f6f78b3adfac2dbec740cc9fd9ee93644a9474097e0a4f23e7b2`  
+		Last Modified: Wed, 28 Jan 2026 19:30:22 GMT  
+		Size: 1.2 KB (1175 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2e2f2820bd81759640d4ecb9a46ec33b364751274c393aa7d0ba6ac7f6babec`  
-		Last Modified: Wed, 14 Jan 2026 18:13:17 GMT  
-		Size: 341.8 MB (341750423 bytes)  
+	-	`sha256:e49694fb0ba2bbd4054703f92efd989b1bed74919d09460dcbe032aad1d5c116`  
+		Last Modified: Wed, 28 Jan 2026 19:30:30 GMT  
+		Size: 341.8 MB (341754029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -136,27 +136,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:d7d215b9314865b4e77a3f85ae28b36f91b5d99d405f38eb06d12cccfe3b3446
+$ docker pull rocket.chat@sha256:03e0e7a709a6a553e4d742ca6d1e3c7064376891c2d9a85734c4af7035d74b7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.4 KB (23364 bytes)**  
+-	Total Size: **23.4 KB (23365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a527a7b69bc54d7398d51373e68a84109d44e6d050c45bda1bd6e3b19f9ce4eb`
+-	Image ID: `sha256:5898d0320fb0a18f89895b0f1f8495cc380f88d8ea717eb8a3dad99400b80cf2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:61c52fce1c147d7433dd2e10466e8fb456cac2bcee436e85485bb1a404c15111`  
-		Last Modified: Wed, 14 Jan 2026 18:13:09 GMT  
-		Size: 23.4 KB (23364 bytes)  
+	-	`sha256:7a1ad1c5c1f80cbf6135be11b86c9b0378bd1133e42dc171a201132bc21ad074`  
+		Last Modified: Wed, 28 Jan 2026 19:30:22 GMT  
+		Size: 23.4 KB (23365 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.10`
 
 ```console
-$ docker pull rocket.chat@sha256:e0ea89ab8213d7c02fa7c03a809c06443f875d92c9c15733643a85e827158100
+$ docker pull rocket.chat@sha256:ecf8de5362d6c405033ebae1b899f5231791fc69e9948d3f11682b528ac50c0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -167,13 +167,13 @@ $ docker pull rocket.chat@sha256:e0ea89ab8213d7c02fa7c03a809c06443f875d92c9c1573
 ### `rocket.chat:7.10` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:d3ff194b9bffea2030d1142ff2919d21f8a47cdc5090d76f777040a6a22c4f42
+$ docker pull rocket.chat@sha256:4f20b48b25133030e76224bd33d1bad9b69b5fc0600397fe7d5520b116a789f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **472.2 MB (472197683 bytes)**  
+-	Total Size: **472.2 MB (472190302 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01a646001c6413bb9c87faf5a6c7d2c88c03f34d7bad39a2d8b76f9b198cc334`
+-	Image ID: `sha256:8b886ca8734f6bbf71a947dc1dd04bf743e3ba5f22e54e8fec30f689d9d4ad33`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
@@ -196,31 +196,31 @@ COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Wed, 14 Jan 2026 17:59:23 GMT
 CMD ["node"]
-# Wed, 14 Jan 2026 18:11:24 GMT
+# Wed, 28 Jan 2026 19:30:44 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 14 Jan 2026 18:11:24 GMT
+# Wed, 28 Jan 2026 19:30:44 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 14 Jan 2026 18:11:24 GMT
+# Wed, 28 Jan 2026 19:30:45 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 14 Jan 2026 18:11:24 GMT
+# Wed, 28 Jan 2026 19:30:45 GMT
 VOLUME [/app/uploads]
-# Wed, 14 Jan 2026 18:11:24 GMT
+# Wed, 28 Jan 2026 19:30:45 GMT
 WORKDIR /app
-# Wed, 14 Jan 2026 18:11:24 GMT
+# Wed, 28 Jan 2026 19:30:45 GMT
 ENV NODE_ENV=production
-# Wed, 14 Jan 2026 18:11:24 GMT
-ENV RC_VERSION=7.10.6
-# Wed, 14 Jan 2026 18:16:28 GMT
+# Wed, 28 Jan 2026 19:30:45 GMT
+ENV RC_VERSION=7.10.7
+# Wed, 28 Jan 2026 19:31:52 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 14 Jan 2026 18:16:28 GMT
+# Wed, 28 Jan 2026 19:31:52 GMT
 USER rocketchat
-# Wed, 14 Jan 2026 18:16:28 GMT
+# Wed, 28 Jan 2026 19:31:53 GMT
 WORKDIR /app/bundle
-# Wed, 14 Jan 2026 18:16:28 GMT
+# Wed, 28 Jan 2026 19:31:53 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 14 Jan 2026 18:16:28 GMT
+# Wed, 28 Jan 2026 19:31:53 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 14 Jan 2026 18:16:28 GMT
+# Wed, 28 Jan 2026 19:31:53 GMT
 CMD ["node" "main.js"]
 ```
 
@@ -245,21 +245,21 @@ CMD ["node" "main.js"]
 		Last Modified: Wed, 14 Jan 2026 17:59:36 GMT  
 		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcb3f855339934f0538adf5b7985489f2e2c7eada660996c77ffed2ac1dec9ec`  
-		Last Modified: Wed, 14 Jan 2026 18:13:05 GMT  
-		Size: 48.7 MB (48723732 bytes)  
+	-	`sha256:4e2c64d0a241299b3c03e49eba95e4e24133bcfc1e132b46f8c4291de38a4fc9`  
+		Last Modified: Wed, 28 Jan 2026 19:32:39 GMT  
+		Size: 48.7 MB (48723825 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a5a0385efd2b60a9a6d8e58deebcc47af2afcdda4903e2d1f3d966fc16af234`  
-		Last Modified: Wed, 14 Jan 2026 18:13:02 GMT  
-		Size: 1.2 KB (1173 bytes)  
+	-	`sha256:02da55bd54339ebd49b763381bb87d4781e5e27e9717f8dee731f28f813c251a`  
+		Last Modified: Wed, 28 Jan 2026 19:32:36 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a53ffc844dd07bd2fcd33616f8502362d44e22b090ed8880f9587c765d8800a`  
-		Last Modified: Wed, 14 Jan 2026 18:17:28 GMT  
-		Size: 344.1 MB (344055009 bytes)  
+	-	`sha256:97e6ca09716bbc4a7049ab8ffdf561b503b53cfda2f9810e1dbf85dbcc5127af`  
+		Last Modified: Wed, 28 Jan 2026 19:32:45 GMT  
+		Size: 344.0 MB (344047530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -269,27 +269,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.10` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:804879274ff39ba71ec4e3e3a927b7b3c0b3ff13b10110fa1563de56f361e788
+$ docker pull rocket.chat@sha256:58c3d51dd70094bbe650995b13658cfe4f11468df48f19835977f5c49ac03c4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80372bacf347fb1ac6c42a4fa5ab0f5889bb3202db12c6b98b301f79f53f3083`
+-	Image ID: `sha256:b2b64a31e14970f02576d80ac4cdbfe305818df23231a95fbf6ec95a5de332d0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:963740b11e9a0f0a59a0d9d30ae28dc616e6073a0c1aa3edca5a342f3fd6a8fa`  
-		Last Modified: Wed, 14 Jan 2026 18:17:19 GMT  
+	-	`sha256:6b7e213ca0e8bf092f87fba0fb2ae74e2de099246899747f3eeeb40701076556`  
+		Last Modified: Wed, 28 Jan 2026 19:32:36 GMT  
 		Size: 23.1 KB (23067 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `rocket.chat:7.10.6`
+## `rocket.chat:7.10.7`
 
 ```console
-$ docker pull rocket.chat@sha256:e0ea89ab8213d7c02fa7c03a809c06443f875d92c9c15733643a85e827158100
+$ docker pull rocket.chat@sha256:ecf8de5362d6c405033ebae1b899f5231791fc69e9948d3f11682b528ac50c0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -297,16 +297,16 @@ $ docker pull rocket.chat@sha256:e0ea89ab8213d7c02fa7c03a809c06443f875d92c9c1573
 	-	linux; amd64
 	-	unknown; unknown
 
-### `rocket.chat:7.10.6` - linux; amd64
+### `rocket.chat:7.10.7` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:d3ff194b9bffea2030d1142ff2919d21f8a47cdc5090d76f777040a6a22c4f42
+$ docker pull rocket.chat@sha256:4f20b48b25133030e76224bd33d1bad9b69b5fc0600397fe7d5520b116a789f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **472.2 MB (472197683 bytes)**  
+-	Total Size: **472.2 MB (472190302 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01a646001c6413bb9c87faf5a6c7d2c88c03f34d7bad39a2d8b76f9b198cc334`
+-	Image ID: `sha256:8b886ca8734f6bbf71a947dc1dd04bf743e3ba5f22e54e8fec30f689d9d4ad33`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
@@ -329,31 +329,31 @@ COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Wed, 14 Jan 2026 17:59:23 GMT
 CMD ["node"]
-# Wed, 14 Jan 2026 18:11:24 GMT
+# Wed, 28 Jan 2026 19:30:44 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 14 Jan 2026 18:11:24 GMT
+# Wed, 28 Jan 2026 19:30:44 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 14 Jan 2026 18:11:24 GMT
+# Wed, 28 Jan 2026 19:30:45 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 14 Jan 2026 18:11:24 GMT
+# Wed, 28 Jan 2026 19:30:45 GMT
 VOLUME [/app/uploads]
-# Wed, 14 Jan 2026 18:11:24 GMT
+# Wed, 28 Jan 2026 19:30:45 GMT
 WORKDIR /app
-# Wed, 14 Jan 2026 18:11:24 GMT
+# Wed, 28 Jan 2026 19:30:45 GMT
 ENV NODE_ENV=production
-# Wed, 14 Jan 2026 18:11:24 GMT
-ENV RC_VERSION=7.10.6
-# Wed, 14 Jan 2026 18:16:28 GMT
+# Wed, 28 Jan 2026 19:30:45 GMT
+ENV RC_VERSION=7.10.7
+# Wed, 28 Jan 2026 19:31:52 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 14 Jan 2026 18:16:28 GMT
+# Wed, 28 Jan 2026 19:31:52 GMT
 USER rocketchat
-# Wed, 14 Jan 2026 18:16:28 GMT
+# Wed, 28 Jan 2026 19:31:53 GMT
 WORKDIR /app/bundle
-# Wed, 14 Jan 2026 18:16:28 GMT
+# Wed, 28 Jan 2026 19:31:53 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 14 Jan 2026 18:16:28 GMT
+# Wed, 28 Jan 2026 19:31:53 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 14 Jan 2026 18:16:28 GMT
+# Wed, 28 Jan 2026 19:31:53 GMT
 CMD ["node" "main.js"]
 ```
 
@@ -378,44 +378,44 @@ CMD ["node" "main.js"]
 		Last Modified: Wed, 14 Jan 2026 17:59:36 GMT  
 		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcb3f855339934f0538adf5b7985489f2e2c7eada660996c77ffed2ac1dec9ec`  
-		Last Modified: Wed, 14 Jan 2026 18:13:05 GMT  
-		Size: 48.7 MB (48723732 bytes)  
+	-	`sha256:4e2c64d0a241299b3c03e49eba95e4e24133bcfc1e132b46f8c4291de38a4fc9`  
+		Last Modified: Wed, 28 Jan 2026 19:32:39 GMT  
+		Size: 48.7 MB (48723825 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a5a0385efd2b60a9a6d8e58deebcc47af2afcdda4903e2d1f3d966fc16af234`  
-		Last Modified: Wed, 14 Jan 2026 18:13:02 GMT  
-		Size: 1.2 KB (1173 bytes)  
+	-	`sha256:02da55bd54339ebd49b763381bb87d4781e5e27e9717f8dee731f28f813c251a`  
+		Last Modified: Wed, 28 Jan 2026 19:32:36 GMT  
+		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a53ffc844dd07bd2fcd33616f8502362d44e22b090ed8880f9587c765d8800a`  
-		Last Modified: Wed, 14 Jan 2026 18:17:28 GMT  
-		Size: 344.1 MB (344055009 bytes)  
+	-	`sha256:97e6ca09716bbc4a7049ab8ffdf561b503b53cfda2f9810e1dbf85dbcc5127af`  
+		Last Modified: Wed, 28 Jan 2026 19:32:45 GMT  
+		Size: 344.0 MB (344047530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `rocket.chat:7.10.6` - unknown; unknown
+### `rocket.chat:7.10.7` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:804879274ff39ba71ec4e3e3a927b7b3c0b3ff13b10110fa1563de56f361e788
+$ docker pull rocket.chat@sha256:58c3d51dd70094bbe650995b13658cfe4f11468df48f19835977f5c49ac03c4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80372bacf347fb1ac6c42a4fa5ab0f5889bb3202db12c6b98b301f79f53f3083`
+-	Image ID: `sha256:b2b64a31e14970f02576d80ac4cdbfe305818df23231a95fbf6ec95a5de332d0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:963740b11e9a0f0a59a0d9d30ae28dc616e6073a0c1aa3edca5a342f3fd6a8fa`  
-		Last Modified: Wed, 14 Jan 2026 18:17:19 GMT  
+	-	`sha256:6b7e213ca0e8bf092f87fba0fb2ae74e2de099246899747f3eeeb40701076556`  
+		Last Modified: Wed, 28 Jan 2026 19:32:36 GMT  
 		Size: 23.1 KB (23067 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -954,7 +954,7 @@ $ docker pull rocket.chat@sha256:6ac3605f2bcb954e1189c4836e473a8042b8ccd690d4786
 ## `rocket.chat:7.13`
 
 ```console
-$ docker pull rocket.chat@sha256:e7cbc2b8a999dc8eef41b4f7337838b8896a0aaca6a36cf4472260635b8ef0d1
+$ docker pull rocket.chat@sha256:68ac1859954e961157a4d90a6705d1ef9ae16604ac51fd2b461650aef8e20f34
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -965,13 +965,13 @@ $ docker pull rocket.chat@sha256:e7cbc2b8a999dc8eef41b4f7337838b8896a0aaca6a36cf
 ### `rocket.chat:7.13` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:dbbb7665aed5bb52808aa7ca2f1ec3013bef26603e2ed077a27f2f583cd5618f
+$ docker pull rocket.chat@sha256:cfd6deb6985f1069bb33624e86ac2f7fff2206738d94aa6e021c25bdeaca79ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **469.9 MB (469893096 bytes)**  
+-	Total Size: **469.9 MB (469896794 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8335368f74dd3422be1d33e9f5dcc1cb9520c8302b81095f4c680d45cd9aa0dc`
+-	Image ID: `sha256:8549a74130a4e83d9c64178e137a7a37c36e26e73e41b85303a162f27d4b9808`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
@@ -994,31 +994,31 @@ COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Wed, 14 Jan 2026 17:59:23 GMT
 CMD ["node"]
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 VOLUME [/app/uploads]
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 WORKDIR /app
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 ENV NODE_ENV=production
-# Wed, 14 Jan 2026 18:11:28 GMT
-ENV RC_VERSION=7.13.2
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
+ENV RC_VERSION=7.13.3
+# Wed, 28 Jan 2026 19:29:38 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 USER rocketchat
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 WORKDIR /app/bundle
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 CMD ["node" "main.js"]
 ```
 
@@ -1043,21 +1043,21 @@ CMD ["node" "main.js"]
 		Last Modified: Wed, 14 Jan 2026 17:59:36 GMT  
 		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ead69d1e1204079b67da83fb632135c154324718a06d55ef14ebb18ef69cbbc4`  
-		Last Modified: Wed, 14 Jan 2026 18:13:12 GMT  
-		Size: 48.7 MB (48723734 bytes)  
+	-	`sha256:b1b3a91154c5a1b795f0ece63dd7885668de8395dae34bd939e1149242c337d4`  
+		Last Modified: Wed, 28 Jan 2026 19:30:24 GMT  
+		Size: 48.7 MB (48723821 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb9a9771915defe5e0e29867468852eebd547e8c96fb19fe8d1d3285982f1394`  
-		Last Modified: Wed, 14 Jan 2026 18:13:09 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:93daf5519333f6f78b3adfac2dbec740cc9fd9ee93644a9474097e0a4f23e7b2`  
+		Last Modified: Wed, 28 Jan 2026 19:30:22 GMT  
+		Size: 1.2 KB (1175 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2e2f2820bd81759640d4ecb9a46ec33b364751274c393aa7d0ba6ac7f6babec`  
-		Last Modified: Wed, 14 Jan 2026 18:13:17 GMT  
-		Size: 341.8 MB (341750423 bytes)  
+	-	`sha256:e49694fb0ba2bbd4054703f92efd989b1bed74919d09460dcbe032aad1d5c116`  
+		Last Modified: Wed, 28 Jan 2026 19:30:30 GMT  
+		Size: 341.8 MB (341754029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1067,27 +1067,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.13` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:d7d215b9314865b4e77a3f85ae28b36f91b5d99d405f38eb06d12cccfe3b3446
+$ docker pull rocket.chat@sha256:03e0e7a709a6a553e4d742ca6d1e3c7064376891c2d9a85734c4af7035d74b7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.4 KB (23364 bytes)**  
+-	Total Size: **23.4 KB (23365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a527a7b69bc54d7398d51373e68a84109d44e6d050c45bda1bd6e3b19f9ce4eb`
+-	Image ID: `sha256:5898d0320fb0a18f89895b0f1f8495cc380f88d8ea717eb8a3dad99400b80cf2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:61c52fce1c147d7433dd2e10466e8fb456cac2bcee436e85485bb1a404c15111`  
-		Last Modified: Wed, 14 Jan 2026 18:13:09 GMT  
-		Size: 23.4 KB (23364 bytes)  
+	-	`sha256:7a1ad1c5c1f80cbf6135be11b86c9b0378bd1133e42dc171a201132bc21ad074`  
+		Last Modified: Wed, 28 Jan 2026 19:30:22 GMT  
+		Size: 23.4 KB (23365 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `rocket.chat:7.13.2`
+## `rocket.chat:7.13.3`
 
 ```console
-$ docker pull rocket.chat@sha256:e7cbc2b8a999dc8eef41b4f7337838b8896a0aaca6a36cf4472260635b8ef0d1
+$ docker pull rocket.chat@sha256:68ac1859954e961157a4d90a6705d1ef9ae16604ac51fd2b461650aef8e20f34
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1095,16 +1095,16 @@ $ docker pull rocket.chat@sha256:e7cbc2b8a999dc8eef41b4f7337838b8896a0aaca6a36cf
 	-	linux; amd64
 	-	unknown; unknown
 
-### `rocket.chat:7.13.2` - linux; amd64
+### `rocket.chat:7.13.3` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:dbbb7665aed5bb52808aa7ca2f1ec3013bef26603e2ed077a27f2f583cd5618f
+$ docker pull rocket.chat@sha256:cfd6deb6985f1069bb33624e86ac2f7fff2206738d94aa6e021c25bdeaca79ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **469.9 MB (469893096 bytes)**  
+-	Total Size: **469.9 MB (469896794 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8335368f74dd3422be1d33e9f5dcc1cb9520c8302b81095f4c680d45cd9aa0dc`
+-	Image ID: `sha256:8549a74130a4e83d9c64178e137a7a37c36e26e73e41b85303a162f27d4b9808`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
@@ -1127,31 +1127,31 @@ COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Wed, 14 Jan 2026 17:59:23 GMT
 CMD ["node"]
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 ENV DENO_VERSION=1.43.5
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in   amd64) ARCH='x86_64';;   arm64) ARCH='aarch64';;   *) echo "unsupported Deno architecture"; exit 1 ;;   esac   && set -ex   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl unzip && rm -rf /var/lib/apt/lists/*   && curl -fsSL https://dl.deno.land/release/v${DENO_VERSION}/deno-${ARCH}-unknown-linux-gnu.zip --output /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && echo "246bf818932c5e11adb85afaaf3c90e65d5cbe14bcaa8ea14d35fc085869775d /tmp/deno-x86_64-unknown-linux-gnu.zip" | sha256sum -c -   && unzip /tmp/deno-${ARCH}-unknown-linux-gnu.zip -d /tmp   && rm /tmp/deno-${ARCH}-unknown-linux-gnu.zip   && chmod 755 /tmp/deno   && mv /tmp/deno /usr/local/bin/deno   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads # buildkit
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 VOLUME [/app/uploads]
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 WORKDIR /app
-# Wed, 14 Jan 2026 18:11:28 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
 ENV NODE_ENV=production
-# Wed, 14 Jan 2026 18:11:28 GMT
-ENV RC_VERSION=7.13.2
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:28:36 GMT
+ENV RC_VERSION=7.13.3
+# Wed, 28 Jan 2026 19:29:38 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python3 ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install --unsafe-perm=true   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app # buildkit
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 USER rocketchat
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 WORKDIR /app/bundle
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 EXPOSE map[3000/tcp:{}]
-# Wed, 14 Jan 2026 18:12:26 GMT
+# Wed, 28 Jan 2026 19:29:38 GMT
 CMD ["node" "main.js"]
 ```
 
@@ -1176,45 +1176,45 @@ CMD ["node" "main.js"]
 		Last Modified: Wed, 14 Jan 2026 17:59:36 GMT  
 		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ead69d1e1204079b67da83fb632135c154324718a06d55ef14ebb18ef69cbbc4`  
-		Last Modified: Wed, 14 Jan 2026 18:13:12 GMT  
-		Size: 48.7 MB (48723734 bytes)  
+	-	`sha256:b1b3a91154c5a1b795f0ece63dd7885668de8395dae34bd939e1149242c337d4`  
+		Last Modified: Wed, 28 Jan 2026 19:30:24 GMT  
+		Size: 48.7 MB (48723821 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb9a9771915defe5e0e29867468852eebd547e8c96fb19fe8d1d3285982f1394`  
-		Last Modified: Wed, 14 Jan 2026 18:13:09 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:93daf5519333f6f78b3adfac2dbec740cc9fd9ee93644a9474097e0a4f23e7b2`  
+		Last Modified: Wed, 28 Jan 2026 19:30:22 GMT  
+		Size: 1.2 KB (1175 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2e2f2820bd81759640d4ecb9a46ec33b364751274c393aa7d0ba6ac7f6babec`  
-		Last Modified: Wed, 14 Jan 2026 18:13:17 GMT  
-		Size: 341.8 MB (341750423 bytes)  
+	-	`sha256:e49694fb0ba2bbd4054703f92efd989b1bed74919d09460dcbe032aad1d5c116`  
+		Last Modified: Wed, 28 Jan 2026 19:30:30 GMT  
+		Size: 341.8 MB (341754029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `rocket.chat:7.13.2` - unknown; unknown
+### `rocket.chat:7.13.3` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:d7d215b9314865b4e77a3f85ae28b36f91b5d99d405f38eb06d12cccfe3b3446
+$ docker pull rocket.chat@sha256:03e0e7a709a6a553e4d742ca6d1e3c7064376891c2d9a85734c4af7035d74b7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.4 KB (23364 bytes)**  
+-	Total Size: **23.4 KB (23365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a527a7b69bc54d7398d51373e68a84109d44e6d050c45bda1bd6e3b19f9ce4eb`
+-	Image ID: `sha256:5898d0320fb0a18f89895b0f1f8495cc380f88d8ea717eb8a3dad99400b80cf2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:61c52fce1c147d7433dd2e10466e8fb456cac2bcee436e85485bb1a404c15111`  
-		Last Modified: Wed, 14 Jan 2026 18:13:09 GMT  
-		Size: 23.4 KB (23364 bytes)  
+	-	`sha256:7a1ad1c5c1f80cbf6135be11b86c9b0378bd1133e42dc171a201132bc21ad074`  
+		Last Modified: Wed, 28 Jan 2026 19:30:22 GMT  
+		Size: 23.4 KB (23365 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.8`
