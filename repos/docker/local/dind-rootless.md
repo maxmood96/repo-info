@@ -1,18 +1,18 @@
-# `docker:29.1.5-dind-rootless`
+# `docker:29.2.0-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd11b6e29c5be04e5fd396b251314fa0639890ee0b7375134e92b9f8e972ed00`
-- Created: `2026-01-17T00:14:47.746882955Z`
-- Virtual Size: ~ 421.37 Mb  
+- Image ID: `sha256:893377b7f16e5efd1e758a1c978a11516ff914ffd6896497463fae305e6732d9`
+- Created: `2026-01-28T04:49:52.287231911Z`
+- Virtual Size: ~ 447.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.1.5`
-  - `DOCKER_BUILDX_VERSION=0.30.1`
-  - `DOCKER_COMPOSE_VERSION=5.0.1`
+  - `DOCKER_VERSION=29.2.0`
+  - `DOCKER_BUILDX_VERSION=0.31.0`
+  - `DOCKER_COMPOSE_VERSION=5.0.2`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -72,16 +72,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.2-r0 description:
+alpine-release-3.23.3-r0 description:
 Alpine release data
 
-alpine-release-3.23.2-r0 webpage:
+alpine-release-3.23.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.2-r0 installed size:
+alpine-release-3.23.3-r0 installed size:
 343 B
 
-alpine-release-3.23.2-r0 license:
+alpine-release-3.23.3-r0 license:
 MIT
 
 ```
@@ -667,16 +667,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.4-r0 description:
+libcrypto3-3.5.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.4-r0 webpage:
+libcrypto3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.4-r0 installed size:
+libcrypto3-3.5.5-r0 installed size:
 5083 KiB
 
-libcrypto3-3.5.4-r0 license:
+libcrypto3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -701,16 +701,16 @@ curl
 ### `apk` package: `libeconf`
 
 ```console
-libeconf-0.8.0-r0 description:
+libeconf-0.8.3-r0 description:
 Enhanced Config File Parser
 
-libeconf-0.8.0-r0 webpage:
+libeconf-0.8.3-r0 webpage:
 https://github.com/openSUSE/libeconf
 
-libeconf-0.8.0-r0 installed size:
+libeconf-0.8.3-r0 installed size:
 64 KiB
 
-libeconf-0.8.0-r0 license:
+libeconf-0.8.3-r0 license:
 MIT
 
 ```
@@ -990,16 +990,16 @@ BSD-3-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.4-r0 description:
+libssl3-3.5.5-r0 description:
 SSL shared libraries
 
-libssl3-3.5.4-r0 webpage:
+libssl3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.4-r0 installed size:
+libssl3-3.5.5-r0 installed size:
 819 KiB
 
-libssl3-3.5.4-r0 license:
+libssl3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -1279,16 +1279,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.4-r0 description:
+openssl-3.5.5-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.4-r0 webpage:
+openssl-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.4-r0 installed size:
+openssl-3.5.5-r0 installed size:
 801 KiB
 
-openssl-3.5.4-r0 license:
+openssl-3.5.5-r0 license:
 Apache-2.0
 
 ```
