@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6caf2a7dc3d55706db655e5c7bf3e6247260ce34e94611739e48d4026f92958`
-- Created: `2026-01-16T02:00:32.331359337Z`
-- Virtual Size: ~ 585.72 Mb  
+- Image ID: `sha256:38ac4c9ad9d9616b7e461070fc14ad416f7dbe35e68a88ee2fd108117196993a`
+- Created: `2026-01-28T18:05:57.92845928Z`
+- Virtual Size: ~ 585.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `CLOJURE_VERSION=1.12.4.1582`
+  - `CLOJURE_VERSION=1.12.4.1602`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2585,14 +2585,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python3-defaults/3.9.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python3-defaults/3.9.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.9=3.9.2-1+deb11u3`
+### `dpkg` source package: `python3.9=3.9.2-1+deb11u5`
 
 Binary Packages:
 
-- `libpython3.9-minimal:amd64=3.9.2-1+deb11u3`
-- `libpython3.9-stdlib:amd64=3.9.2-1+deb11u3`
-- `python3.9=3.9.2-1+deb11u3`
-- `python3.9-minimal=3.9.2-1+deb11u3`
+- `libpython3.9-minimal:amd64=3.9.2-1+deb11u5`
+- `libpython3.9-stdlib:amd64=3.9.2-1+deb11u5`
+- `python3.9=3.9.2-1+deb11u5`
+- `python3.9-minimal=3.9.2-1+deb11u5`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/share/doc/libpython3.9-stdlib/copyright`, `/usr/share/doc/python3.9/copyright`, `/usr/share/doc/python3.9-minimal/copyright`)
 
@@ -2614,13 +2614,20 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris python3.9=3.9.2-1+deb11u5
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u5.dsc' python3.9_3.9.2-1+deb11u5.dsc 3007 SHA256:e1484a80600e726c3e6d0790c2f07a3fdc984c16f8464124f8fdacd587bd5fb8
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2.orig.tar.xz' python3.9_3.9.2.orig.tar.xz 18889164 SHA256:3c2034c54f811448f516668dce09d24008a0716c3a794dd8639b5388cbde247d
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u5.debian.tar.xz' python3.9_3.9.2-1+deb11u5.debian.tar.xz 302112 SHA256:b6731f8cb7800ee81512086b36dcffd1a8358a98bdb02f1c31677f0812df526a
+```
 
-- http://snapshot.debian.org/package/python3.9/3.9.2-1+deb11u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u5/ (for browsing the source)
+- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.9/3.9.2-1+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.1-1`
 

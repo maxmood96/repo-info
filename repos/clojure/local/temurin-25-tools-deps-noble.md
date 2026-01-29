@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:025551ac8606395f5ee723191cb33f6b4622ab137d28b3083e215ddf46946047`
-- Created: `2026-01-16T02:07:17.092912611Z`
+- Image ID: `sha256:30e10837d5bb38c85221d12ed47eea101df2349b0c99f6fabceeb7b30fc1b902`
+- Created: `2026-01-28T18:06:59.243004581Z`
 - Virtual Size: ~ 530.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-25.0.1+8`
-  - `CLOJURE_VERSION=1.12.4.1582`
+  - `CLOJURE_VERSION=1.12.4.1602`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
@@ -2066,14 +2066,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.6.dsc' openssl_3.0.13-0ubuntu3.6.dsc 2512 SHA512:e57effde33e3e978184e1c2d5167d8f8c1c881aae59f81dfbedeca0004488434c3dff227bec9ca6e3f701c01a9c5a7a3c8ffb3fef3533d9dee0f46b64d03e535
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.6.debian.tar.xz' openssl_3.0.13-0ubuntu3.6.debian.tar.xz 169500 SHA512:bc33f7a4d5c577cc622062b2337a2b897bc06dd6592f6e636832529ff8ebde4f5fcb5d35589d041ec498386d7ec63df2b76f37aaab0b0cddf35a4d53c8a5cc3f
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 

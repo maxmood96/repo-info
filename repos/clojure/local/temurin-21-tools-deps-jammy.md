@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:364656c274cf98c16979731efc7545b24641073ba5ddfe0bdc24e1b61e4a9fea`
-- Created: `2026-01-16T02:01:21.994017407Z`
+- Image ID: `sha256:a0517f7bae53fbe662c3e2de3c4e57ae784d22c012bb9f7f2335ae5c774b8a5d`
+- Created: `2026-01-28T18:06:00.583827844Z`
 - Virtual Size: ~ 561.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.9+10`
-  - `CLOJURE_VERSION=1.12.4.1582`
+  - `CLOJURE_VERSION=1.12.4.1602`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -739,9 +739,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.11
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.11.dsc' glibc_2.35-0ubuntu3.11.dsc 8888 SHA512:513445f41ac47bc28f9c30bbdace95938cbd4c8af26fc192808ac2940d56503e09761b1cec6ecec6d3eebd21cca8fb34f2f57fb046d715407e9d67cd48d08f0c
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.11.debian.tar.xz' glibc_2.35-0ubuntu3.11.debian.tar.xz 940076 SHA512:3a946e60393f09557fdf8cd4f5ad0041301b07da2b11bc5307f2ec15a7926924de0a0648f78879b28a86fd1cc5d20df9963f7c164cef01ea1d5a3d03c3ab2392
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -2025,15 +2031,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.20
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.20.dsc' openssl_3.0.2-0ubuntu1.20.dsc 2730 SHA512:973fdaac3db4ee13e4fb3907cbf5f6966c816de9e7a76165769562596a1aa533e68be64678da84dd400ef2ef3a37bc0ff2598bf8314654bec894e64e115663b3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.20.debian.tar.xz' openssl_3.0.2-0ubuntu1.20.debian.tar.xz 266660 SHA512:99203365623b8360b2a9997fa7c8d3b56424518f30e20411cb7d2921041f696a7877372dfd23e58ad63af5d4159e0b66e94049fa64bbb16ba80898c680d10260
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
