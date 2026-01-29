@@ -1,7 +1,7 @@
 ## `traefik:mimolette`
 
 ```console
-$ docker pull traefik@sha256:fd45c6ea00e3c5d32bcf62fb3876aea090ba5fdbd5ae731bad48d35fb43ceb1a
+$ docker pull traefik@sha256:0d1c89f4d55012ad419fc1e41893fe629b841274c8e4d3b6ce2df064f8f624f7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -322,76 +322,76 @@ $ docker pull traefik@sha256:2d6c5b0fddf8698a4717cd4702ba07bfac14339f4771103228d
 ### `traefik:mimolette` - linux; riscv64
 
 ```console
-$ docker pull traefik@sha256:1bb550f23710150a0f8629759ca269686be18835c93a120c8a1042697c00f5b0
+$ docker pull traefik@sha256:74ebe09868f81a2e9e0444d0a1de76aba73a45df6d8513285890f27023bb4fbc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.4 MB (49370747 bytes)**  
+-	Total Size: **49.4 MB (49372033 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b855538d46c2caca4847e9347abff49de20a54de7084dfb06518a84f8741642a`
+-	Image ID: `sha256:2a72913bdaaed333ef8ad012d63dc268f23081f78ef2c8c3ac8c1d3df3205d49`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["traefik"]`
 
 ```dockerfile
-# Thu, 18 Dec 2025 02:40:00 GMT
-ADD alpine-minirootfs-3.23.2-riscv64.tar.gz / # buildkit
-# Thu, 18 Dec 2025 02:40:00 GMT
+# Wed, 28 Jan 2026 03:47:28 GMT
+ADD alpine-minirootfs-3.23.3-riscv64.tar.gz / # buildkit
+# Wed, 28 Jan 2026 03:47:28 GMT
 CMD ["/bin/sh"]
-# Sun, 18 Jan 2026 21:37:10 GMT
+# Thu, 29 Jan 2026 18:59:42 GMT
 RUN apk --no-cache add ca-certificates tzdata # buildkit
-# Sun, 18 Jan 2026 21:43:12 GMT
+# Thu, 29 Jan 2026 19:06:31 GMT
 RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='armv6' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		riscv64) arch='riscv64' ;; 		s390x) arch='s390x' ;; 		ppc64le) arch='ppc64le' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget --quiet -O /tmp/traefik.tar.gz "https://github.com/traefik/traefik/releases/download/v2.11.35/traefik_v2.11.35_linux_$arch.tar.gz"; 	tar xzvf /tmp/traefik.tar.gz -C /usr/local/bin traefik; 	rm -f /tmp/traefik.tar.gz; 	chmod +x /usr/local/bin/traefik # buildkit
-# Sun, 18 Jan 2026 21:43:12 GMT
+# Thu, 29 Jan 2026 19:06:31 GMT
 COPY entrypoint.sh / # buildkit
-# Sun, 18 Jan 2026 21:43:12 GMT
+# Thu, 29 Jan 2026 19:06:31 GMT
 EXPOSE map[80/tcp:{}]
-# Sun, 18 Jan 2026 21:43:12 GMT
+# Thu, 29 Jan 2026 19:06:31 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sun, 18 Jan 2026 21:43:12 GMT
+# Thu, 29 Jan 2026 19:06:31 GMT
 CMD ["traefik"]
-# Sun, 18 Jan 2026 21:43:12 GMT
+# Thu, 29 Jan 2026 19:06:31 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.35 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:b4b94acc94b4406ae94f444e29a6c06ae16918e74a98367370cf7529ea8d988c`  
-		Last Modified: Thu, 18 Dec 2025 02:40:23 GMT  
-		Size: 3.6 MB (3583938 bytes)  
+	-	`sha256:9da5d16b2a566416844fd0c62fa81165037aa0b7f154a5c1f58f06412739471c`  
+		Last Modified: Wed, 28 Jan 2026 03:48:00 GMT  
+		Size: 3.6 MB (3585287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e8f6050919dcc147463011bfb7da4ddca06017004c11be2a6a0c980c90384f8`  
-		Last Modified: Sun, 18 Jan 2026 21:42:25 GMT  
-		Size: 461.3 KB (461258 bytes)  
+	-	`sha256:85e1b25cf06842e0b0dcc119934ca6989dad15a41bc8c8574921d34cc831ce01`  
+		Last Modified: Thu, 29 Jan 2026 19:05:37 GMT  
+		Size: 461.2 KB (461183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d76c89edb9cec0112584aaefe2c3feb8fdca4cc93696fb4509d5fe167782dd14`  
-		Last Modified: Sun, 18 Jan 2026 21:48:36 GMT  
-		Size: 45.3 MB (45325181 bytes)  
+	-	`sha256:ec037c2d893d7d29b7afede297802111719ead4b63664808242a3630fb16b91a`  
+		Last Modified: Thu, 29 Jan 2026 19:11:27 GMT  
+		Size: 45.3 MB (45325193 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7364b694a7c94a209a40e6c4b6ae7889df7df47114744c8fc0d2790458263e0`  
-		Last Modified: Sun, 18 Jan 2026 21:48:29 GMT  
+	-	`sha256:b63acc32e46aa68086758b34a77f1e96b4d4d6e7808474c578ab6d07791bda83`  
+		Last Modified: Thu, 29 Jan 2026 19:11:21 GMT  
 		Size: 370.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `traefik:mimolette` - unknown; unknown
 
 ```console
-$ docker pull traefik@sha256:65366d6b2445130003ed8f8703a47de058250a5597e5f951f693aca20914888f
+$ docker pull traefik@sha256:574c6c8cc03fe79bf98cf9b54cd3ad40b5ce4d0ae959a228982998fd2dccb746
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **866.9 KB (866916 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8240e9bb617ddcbe998d89cd408903fbee1c4c5d8517062f55f13815c041fc2a`
+-	Image ID: `sha256:8c66325e70ceb1c7e41957f16488f268f9ab12fcc781cda3ae1dd6304c74193a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3fc64f0d8cea94f66131ab104ea1633a2dea5b3587a364690cd15e4804e923a9`  
-		Last Modified: Sun, 18 Jan 2026 21:48:29 GMT  
+	-	`sha256:59dcd5eedbfd366ebe44be1ae13702861d40f3e00c4234cf6aa4616f2bde44dd`  
+		Last Modified: Thu, 29 Jan 2026 19:11:21 GMT  
 		Size: 854.4 KB (854357 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:30b567289c2ce260f593e61636c160970eabeafc9134517df0ced1beeb368905`  
-		Last Modified: Sun, 18 Jan 2026 21:48:29 GMT  
+	-	`sha256:5bfd7f8f4b46f541575dc51c3c2c718782b260d479bf557c37eafdf78b0aee03`  
+		Last Modified: Thu, 29 Jan 2026 19:11:21 GMT  
 		Size: 12.6 KB (12559 bytes)  
 		MIME: application/vnd.in-toto+json
 
