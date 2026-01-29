@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b0c9d5e6f9e0303f23d30b5072d6908f7e900f813623f37968b326d0d18b2069`
-- Created: `2025-12-19T17:28:16.246083805Z`
+- Image ID: `sha256:08b290285c277c143ad7f067d88153004feaf6301ca6bca9cf017e455399da04`
+- Created: `2026-01-28T02:58:30.609167196Z`
 - Virtual Size: ~ 192.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -89,16 +89,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.2-r0 description:
+alpine-release-3.23.3-r0 description:
 Alpine release data
 
-alpine-release-3.23.2-r0 webpage:
+alpine-release-3.23.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.2-r0 installed size:
+alpine-release-3.23.3-r0 installed size:
 343 B
 
-alpine-release-3.23.2-r0 license:
+alpine-release-3.23.3-r0 license:
 MIT
 
 ```
@@ -378,16 +378,16 @@ LGPL-3.0-or-later OR GPL-2.0-or-later
 ### `apk` package: `gnupg`
 
 ```console
-gnupg-2.4.8-r1 description:
+gnupg-2.4.9-r0 description:
 GNU Privacy Guard 2 - meta package for full GnuPG suite
 
-gnupg-2.4.8-r1 webpage:
+gnupg-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-2.4.8-r1 installed size:
+gnupg-2.4.9-r0 installed size:
 0 B
 
-gnupg-2.4.8-r1 license:
+gnupg-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -395,16 +395,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-dirmngr`
 
 ```console
-gnupg-dirmngr-2.4.8-r1 description:
+gnupg-dirmngr-2.4.9-r0 description:
 GNU Privacy Guard 2 - network certificate management service
 
-gnupg-dirmngr-2.4.8-r1 webpage:
+gnupg-dirmngr-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-dirmngr-2.4.8-r1 installed size:
+gnupg-dirmngr-2.4.9-r0 installed size:
 625 KiB
 
-gnupg-dirmngr-2.4.8-r1 license:
+gnupg-dirmngr-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -412,16 +412,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-gpgconf`
 
 ```console
-gnupg-gpgconf-2.4.8-r1 description:
+gnupg-gpgconf-2.4.9-r0 description:
 GNU Privacy Guard 2 - core configuration utilities
 
-gnupg-gpgconf-2.4.8-r1 webpage:
+gnupg-gpgconf-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-gpgconf-2.4.8-r1 installed size:
+gnupg-gpgconf-2.4.9-r0 installed size:
 233 KiB
 
-gnupg-gpgconf-2.4.8-r1 license:
+gnupg-gpgconf-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -429,16 +429,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-keyboxd`
 
 ```console
-gnupg-keyboxd-2.4.8-r1 description:
+gnupg-keyboxd-2.4.9-r0 description:
 GNU Privacy Guard 2 - keyboxd manager
 
-gnupg-keyboxd-2.4.8-r1 webpage:
+gnupg-keyboxd-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-keyboxd-2.4.8-r1 installed size:
+gnupg-keyboxd-2.4.9-r0 installed size:
 223 KiB
 
-gnupg-keyboxd-2.4.8-r1 license:
+gnupg-keyboxd-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -446,16 +446,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-utils`
 
 ```console
-gnupg-utils-2.4.8-r1 description:
+gnupg-utils-2.4.9-r0 description:
 GNU Privacy Guard 2 - utility programs
 
-gnupg-utils-2.4.8-r1 webpage:
+gnupg-utils-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-utils-2.4.8-r1 installed size:
+gnupg-utils-2.4.9-r0 installed size:
 824 KiB
 
-gnupg-utils-2.4.8-r1 license:
+gnupg-utils-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -463,16 +463,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-wks-client`
 
 ```console
-gnupg-wks-client-2.4.8-r1 description:
+gnupg-wks-client-2.4.9-r0 description:
 GNU Privacy Guard 2 - Web Key Service client
 
-gnupg-wks-client-2.4.8-r1 webpage:
+gnupg-wks-client-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-wks-client-2.4.8-r1 installed size:
+gnupg-wks-client-2.4.9-r0 installed size:
 167 KiB
 
-gnupg-wks-client-2.4.8-r1 license:
+gnupg-wks-client-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -497,16 +497,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gpg`
 
 ```console
-gpg-2.4.8-r1 description:
+gpg-2.4.9-r0 description:
 GNU Privacy Guard 2 - public key operations only
 
-gpg-2.4.8-r1 webpage:
+gpg-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gpg-2.4.8-r1 installed size:
+gpg-2.4.9-r0 installed size:
 925 KiB
 
-gpg-2.4.8-r1 license:
+gpg-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -514,16 +514,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpg-agent`
 
 ```console
-gpg-agent-2.4.8-r1 description:
+gpg-agent-2.4.9-r0 description:
 GNU Privacy Guard 2 - cryptographic agent
 
-gpg-agent-2.4.8-r1 webpage:
+gpg-agent-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gpg-agent-2.4.8-r1 installed size:
+gpg-agent-2.4.9-r0 installed size:
 634 KiB
 
-gpg-agent-2.4.8-r1 license:
+gpg-agent-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -531,16 +531,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpg-wks-server`
 
 ```console
-gpg-wks-server-2.4.8-r1 description:
+gpg-wks-server-2.4.9-r0 description:
 GNU Privacy Guard 2 - Web Key Service server
 
-gpg-wks-server-2.4.8-r1 webpage:
+gpg-wks-server-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gpg-wks-server-2.4.8-r1 installed size:
+gpg-wks-server-2.4.9-r0 installed size:
 150 KiB
 
-gpg-wks-server-2.4.8-r1 license:
+gpg-wks-server-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -548,16 +548,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpgsm`
 
 ```console
-gpgsm-2.4.8-r1 description:
+gpgsm-2.4.9-r0 description:
 GNU Privacy Guard 2 - S/MIME version
 
-gpgsm-2.4.8-r1 webpage:
+gpgsm-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gpgsm-2.4.8-r1 installed size:
+gpgsm-2.4.9-r0 installed size:
 477 KiB
 
-gpgsm-2.4.8-r1 license:
+gpgsm-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -565,16 +565,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpgv`
 
 ```console
-gpgv-2.4.8-r1 description:
+gpgv-2.4.9-r0 description:
 GNU Privacy Guard 2 - signature verification only
 
-gpgv-2.4.8-r1 webpage:
+gpgv-2.4.9-r0 webpage:
 https://www.gnupg.org/
 
-gpgv-2.4.8-r1 installed size:
+gpgv-2.4.9-r0 installed size:
 428 KiB
 
-gpgv-2.4.8-r1 license:
+gpgv-2.4.9-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -650,16 +650,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.4-r0 description:
+libcrypto3-3.5.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.4-r0 webpage:
+libcrypto3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.4-r0 installed size:
+libcrypto3-3.5.5-r0 installed size:
 5083 KiB
 
-libcrypto3-3.5.4-r0 license:
+libcrypto3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -837,16 +837,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.53-r0 description:
+libpng-1.6.54-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.53-r0 webpage:
+libpng-1.6.54-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.53-r0 installed size:
-181 KiB
+libpng-1.6.54-r0 installed size:
+177 KiB
 
-libpng-1.6.53-r0 license:
+libpng-1.6.54-r0 license:
 Libpng
 
 ```
@@ -871,16 +871,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.4-r0 description:
+libssl3-3.5.5-r0 description:
 SSL shared libraries
 
-libssl3-3.5.4-r0 webpage:
+libssl3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.4-r0 installed size:
+libssl3-3.5.5-r0 installed size:
 819 KiB
 
-libssl3-3.5.4-r0 license:
+libssl3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -888,16 +888,16 @@ Apache-2.0
 ### `apk` package: `libtasn1`
 
 ```console
-libtasn1-4.20.0-r0 description:
+libtasn1-4.21.0-r0 description:
 The ASN.1 library used in GNUTLS
 
-libtasn1-4.20.0-r0 webpage:
+libtasn1-4.21.0-r0 webpage:
 https://www.gnu.org/software/gnutls/
 
-libtasn1-4.20.0-r0 installed size:
+libtasn1-4.21.0-r0 installed size:
 65 KiB
 
-libtasn1-4.20.0-r0 license:
+libtasn1-4.21.0-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1058,16 +1058,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.4-r0 description:
+openssl-3.5.5-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.4-r0 webpage:
+openssl-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.4-r0 installed size:
+openssl-3.5.5-r0 installed size:
 801 KiB
 
-openssl-3.5.4-r0 license:
+openssl-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -1160,16 +1160,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.51.1-r0 description:
+sqlite-libs-3.51.2-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.51.1-r0 webpage:
+sqlite-libs-3.51.2-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.51.1-r0 installed size:
+sqlite-libs-3.51.2-r0 installed size:
 1577 KiB
 
-sqlite-libs-3.51.1-r0 license:
+sqlite-libs-3.51.2-r0 license:
 blessing
 
 ```

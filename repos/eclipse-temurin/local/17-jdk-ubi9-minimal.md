@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8762deb8e5d9403ee7c4fda1ffcbb4e61e04440b5dc4cd94fbf03e47e4a8e411`
-- Created: `2026-01-20T19:15:32.935758696Z`
+- Image ID: `sha256:79ecb1ae64a76992f6a1a335bb7cb3c2ebca4fd2efd5853958f71a331a0141d9`
+- Created: `2026-01-26T22:05:15.602499207Z`
 - Virtual Size: ~ 466.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `JAVA_VERSION=jdk-17.0.17+10`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-01-19T00:53:42Z`
+  - `build-date=2026-01-22T05:09:47Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-01-19T00:53:42Z`
-  - `org.opencontainers.image.revision=d9151f7dd4dfe1cc8a2df524b85cddd483628d5e`
-  - `release=1768783948`
+  - `org.opencontainers.image.created=2026-01-22T05:09:47Z`
+  - `org.opencontainers.image.revision=812a20485e9d8d728e95b468c2886da21352b9fc`
+  - `release=1769056855`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=d9151f7dd4dfe1cc8a2df524b85cddd483628d5e`
+  - `vcs-ref=812a20485e9d8d728e95b468c2886da21352b9fc`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -191,12 +191,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url curl-minimal-7.76.1-34.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-34.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-22.el9.x86_64`
 
@@ -407,11 +402,16 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gdbm-1.23-1.el9.src.rpm
 ```
 
-### `rpm` package: `glib2-2.68.4-18.el9_7.x86_64`
+### `rpm` package: `glib2-2.68.4-18.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url glib2-2.68.4-18.el9_7.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-18.el9_7.1.src.rpm
+```
 
 ### `rpm` package: `glibc-2.34-231.el9_7.2.x86_64`
 
@@ -759,12 +759,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libcurl-minimal-7.76.1-34.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-34.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
 
@@ -1309,12 +1304,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Apache-2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url openssl-3.5.1-5.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-5.el9_7.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `openssl-fips-provider-3.0.7-8.el9.x86_64`
 
@@ -1342,12 +1332,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Apache-2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url openssl-libs-3.5.1-5.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-5.el9_7.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `p11-kit-0.25.3-3.el9_5.x86_64`
 

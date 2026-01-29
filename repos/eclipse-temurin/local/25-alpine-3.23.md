@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e0305900d51d5036ec91ab1f97e5bc1c8e307cea5581a9db87508f2f6265f6ac`
-- Created: `2025-12-19T17:30:03.767905369Z`
+- Image ID: `sha256:d9f1d681f2e18d429e013a512412c00201de8722f37ce3c13b89c79e491f6e8e`
+- Created: `2026-01-28T03:14:14.884744461Z`
 - Virtual Size: ~ 301.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -90,16 +90,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.2-r0 description:
+alpine-release-3.23.3-r0 description:
 Alpine release data
 
-alpine-release-3.23.2-r0 webpage:
+alpine-release-3.23.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.2-r0 installed size:
+alpine-release-3.23.3-r0 installed size:
 343 B
 
-alpine-release-3.23.2-r0 license:
+alpine-release-3.23.3-r0 license:
 MIT
 
 ```
@@ -430,16 +430,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.4-r0 description:
+libcrypto3-3.5.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.4-r0 webpage:
+libcrypto3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.4-r0 installed size:
+libcrypto3-3.5.5-r0 installed size:
 5083 KiB
 
-libcrypto3-3.5.4-r0 license:
+libcrypto3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -532,16 +532,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.53-r0 description:
+libpng-1.6.54-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.53-r0 webpage:
+libpng-1.6.54-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.53-r0 installed size:
-181 KiB
+libpng-1.6.54-r0 installed size:
+177 KiB
 
-libpng-1.6.53-r0 license:
+libpng-1.6.54-r0 license:
 Libpng
 
 ```
@@ -549,16 +549,16 @@ Libpng
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.4-r0 description:
+libssl3-3.5.5-r0 description:
 SSL shared libraries
 
-libssl3-3.5.4-r0 webpage:
+libssl3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.4-r0 installed size:
+libssl3-3.5.5-r0 installed size:
 819 KiB
 
-libssl3-3.5.4-r0 license:
+libssl3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -583,16 +583,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libtasn1`
 
 ```console
-libtasn1-4.20.0-r0 description:
+libtasn1-4.21.0-r0 description:
 The ASN.1 library used in GNUTLS
 
-libtasn1-4.20.0-r0 webpage:
+libtasn1-4.21.0-r0 webpage:
 https://www.gnu.org/software/gnutls/
 
-libtasn1-4.20.0-r0 installed size:
+libtasn1-4.21.0-r0 installed size:
 65 KiB
 
-libtasn1-4.20.0-r0 license:
+libtasn1-4.21.0-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -685,16 +685,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.4-r0 description:
+openssl-3.5.5-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.4-r0 webpage:
+openssl-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.4-r0 installed size:
+openssl-3.5.5-r0 installed size:
 801 KiB
 
-openssl-3.5.4-r0 license:
+openssl-3.5.5-r0 license:
 Apache-2.0
 
 ```
