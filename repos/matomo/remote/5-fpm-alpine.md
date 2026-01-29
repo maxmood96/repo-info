@@ -1,7 +1,7 @@
 ## `matomo:5-fpm-alpine`
 
 ```console
-$ docker pull matomo@sha256:543b68dbd668e1355299e4ee10d97a3655c2318301096b3addd6c1d161c3ba3c
+$ docker pull matomo@sha256:935c36d16f965965d54304f2933fb29fb0a69c2dfe84767e03b5742bb03e73bd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,13 +26,13 @@ $ docker pull matomo@sha256:543b68dbd668e1355299e4ee10d97a3655c2318301096b3addd6
 ### `matomo:5-fpm-alpine` - linux; amd64
 
 ```console
-$ docker pull matomo@sha256:11be447f3bc18ce6a59d1d384251359f098f4113b272947a5f39d327599ec0c4
+$ docker pull matomo@sha256:7d73e3826212d7a88f313d4985226922eb6501881457d42fe0ecb0f3bcda7fb5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.4 MB (61375062 bytes)**  
+-	Total Size: **61.5 MB (61455663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f29aff1a90dee2fec0fa3370f8310f361b4d85f8d4a8eb1575f73c14773fc95e`
+-	Image ID: `sha256:9c73cea5370aa1a2d981698b26d3b92d152d45f327aab955e4adbfc028ad357b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -89,25 +89,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Wed, 28 Jan 2026 02:25:20 GMT
 CMD ["php-fpm"]
-# Wed, 28 Jan 2026 04:19:42 GMT
+# Thu, 29 Jan 2026 19:48:16 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Wed, 28 Jan 2026 04:19:42 GMT
+# Thu, 29 Jan 2026 19:48:16 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 		procps 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .matomo-phpext-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Wed, 28 Jan 2026 04:19:42 GMT
+# Thu, 29 Jan 2026 19:48:16 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 28 Jan 2026 04:19:42 GMT
-ENV MATOMO_VERSION=5.6.2
-# Wed, 28 Jan 2026 04:19:48 GMT
+# Thu, 29 Jan 2026 19:48:16 GMT
+ENV MATOMO_VERSION=5.7.0
+# Thu, 29 Jan 2026 19:48:21 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps # buildkit
-# Wed, 28 Jan 2026 04:19:48 GMT
+# Thu, 29 Jan 2026 19:48:21 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Wed, 28 Jan 2026 04:19:48 GMT
+# Thu, 29 Jan 2026 19:48:22 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 28 Jan 2026 04:19:48 GMT
+# Thu, 29 Jan 2026 19:48:22 GMT
 VOLUME [/var/www/html]
-# Wed, 28 Jan 2026 04:19:48 GMT
+# Thu, 29 Jan 2026 19:48:22 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 28 Jan 2026 04:19:48 GMT
+# Thu, 29 Jan 2026 19:48:22 GMT
 CMD ["php-fpm"]
 ```
 
@@ -160,57 +160,57 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 28 Jan 2026 02:25:29 GMT  
 		Size: 9.3 KB (9265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2507ceb06a5cd4426becc2da4b189bdabdf34169cf4c30e1c650f0555bd9b4ce`  
-		Last Modified: Wed, 28 Jan 2026 04:19:55 GMT  
-		Size: 2.8 MB (2830796 bytes)  
+	-	`sha256:4c92fef503175b8ab854ee44832d46a141df948eff34d9a2362217423a5b6548`  
+		Last Modified: Thu, 29 Jan 2026 19:48:28 GMT  
+		Size: 2.8 MB (2830780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5562d971e5a14fc63ff7e78f79deb4a1e8b6121a442c46821f417976d3ee472b`  
-		Last Modified: Wed, 28 Jan 2026 04:19:55 GMT  
-		Size: 324.0 B  
+	-	`sha256:f2f828704b5cfd7c24a471be26e60a930366e1b1c19f4b33086873c4746f4029`  
+		Last Modified: Thu, 29 Jan 2026 19:48:28 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87cadf9e9c30bf495eb539a73e3007881c389086bddea7f526b2359005f8ab94`  
-		Last Modified: Wed, 28 Jan 2026 04:19:55 GMT  
-		Size: 22.2 MB (22151127 bytes)  
+	-	`sha256:cee9d2a9bff0bbad1994ef10e9e98c7c9445b5312719af97da6082e8ed639f2f`  
+		Last Modified: Thu, 29 Jan 2026 19:48:29 GMT  
+		Size: 22.2 MB (22231744 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dddd67265a4a94f6eb312a79cebf8b2a736ba7afdc94354d0ca8f0a316a685a3`  
-		Last Modified: Wed, 28 Jan 2026 04:19:55 GMT  
-		Size: 339.0 B  
+	-	`sha256:0c3d9fdb8a209cee5eb6874eb468c0ff5bb450e58d01361a6823aadf94bdf516`  
+		Last Modified: Thu, 29 Jan 2026 19:48:28 GMT  
+		Size: 340.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:971e6d7110230bdc66202b3dc4132b9e5c2c1b3a4868934dc5371424f1110f52`  
-		Last Modified: Wed, 28 Jan 2026 04:19:56 GMT  
-		Size: 823.0 B  
+	-	`sha256:f0c60002b86c43c9d7533fcd70aafd5b2ff8fd482d6f015f99b61d196d96302b`  
+		Last Modified: Thu, 29 Jan 2026 19:48:29 GMT  
+		Size: 824.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:625152f77082c4cfb8a1132343508ee84c845971797c15c2198be7220ed2db2f
+$ docker pull matomo@sha256:dd1e98b373a71424f0c8fa0609d8123d7aa05049363eeefce05af27e05965098
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **31.5 KB (31504 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f9b06e56b140aee301d17b58127666ba45cb1009fb4543560531491c9dfa98e`
+-	Image ID: `sha256:b1f8fd8f732f2f2720942b51e0d48b4f739c700d6646a949de3c877f571ff019`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b16d88e43bd3e9f4d3943e700416a5bb50e2a69b949b8034c9f06e2494bbf72a`  
-		Last Modified: Wed, 28 Jan 2026 04:19:54 GMT  
+	-	`sha256:1ef1b6706c2359a9bda98f2ba598f460afbe19a2931570ff8dc3fa04fa79813e`  
+		Last Modified: Thu, 29 Jan 2026 19:48:28 GMT  
 		Size: 31.5 KB (31504 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:5-fpm-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull matomo@sha256:abf999dd704981b21b3dd259f6130a0b2aed8cb34c50f62b5f2eae60bcc7c702
+$ docker pull matomo@sha256:cb083841d115d34ab037910ce7408a22fd52b739449c33d3bfc7749921ed4b78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **59.4 MB (59380505 bytes)**  
+-	Total Size: **59.5 MB (59460092 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3427d994e4201860596ed2e099f0acc308eb66fcc31aa42de48ae743c2a94400`
+-	Image ID: `sha256:227a74099bcccd0c3dd5de3dc7ca70fa19a9117d09ce3fab5c21dd4e410a9a53`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -267,25 +267,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Wed, 28 Jan 2026 02:35:48 GMT
 CMD ["php-fpm"]
-# Wed, 28 Jan 2026 04:01:24 GMT
+# Thu, 29 Jan 2026 20:06:13 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Wed, 28 Jan 2026 04:01:24 GMT
+# Thu, 29 Jan 2026 20:06:13 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 		procps 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .matomo-phpext-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Wed, 28 Jan 2026 04:01:24 GMT
+# Thu, 29 Jan 2026 20:06:13 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 28 Jan 2026 04:01:24 GMT
-ENV MATOMO_VERSION=5.6.2
-# Wed, 28 Jan 2026 04:01:30 GMT
+# Thu, 29 Jan 2026 20:06:13 GMT
+ENV MATOMO_VERSION=5.7.0
+# Thu, 29 Jan 2026 20:06:19 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps # buildkit
-# Wed, 28 Jan 2026 04:01:30 GMT
+# Thu, 29 Jan 2026 20:06:19 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Wed, 28 Jan 2026 04:01:30 GMT
+# Thu, 29 Jan 2026 20:06:19 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 28 Jan 2026 04:01:30 GMT
+# Thu, 29 Jan 2026 20:06:19 GMT
 VOLUME [/var/www/html]
-# Wed, 28 Jan 2026 04:01:30 GMT
+# Thu, 29 Jan 2026 20:06:19 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 28 Jan 2026 04:01:30 GMT
+# Thu, 29 Jan 2026 20:06:19 GMT
 CMD ["php-fpm"]
 ```
 
@@ -338,57 +338,57 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 28 Jan 2026 02:35:55 GMT  
 		Size: 9.3 KB (9270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68b692e029727e9cef8697430a05f1d885e32f2ed3cdb91948d56cb8da1d7007`  
-		Last Modified: Wed, 28 Jan 2026 04:01:37 GMT  
-		Size: 2.7 MB (2686824 bytes)  
+	-	`sha256:3c8ea2f1f767a5bc3003faaded99e7defd66540358f62cb0946f78ecd3973892`  
+		Last Modified: Thu, 29 Jan 2026 20:06:26 GMT  
+		Size: 2.7 MB (2686803 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1388be78962605680ff10cb20a2e4ac0295e6d32c7ea51c8a0d0dd80ad7652e7`  
-		Last Modified: Wed, 28 Jan 2026 04:01:36 GMT  
-		Size: 325.0 B  
+	-	`sha256:9c393934bb8b7f63807312901b853a49301d1f3a8f498908e426e7365fe38feb`  
+		Last Modified: Thu, 29 Jan 2026 20:06:26 GMT  
+		Size: 324.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1723052c8d106e03db19e894e7489ffcbf458101db7ad573dd13b29f35cbe8c`  
-		Last Modified: Wed, 28 Jan 2026 04:01:37 GMT  
-		Size: 22.2 MB (22151369 bytes)  
+	-	`sha256:ae5b5e281ac13a7263781ebfed984a17cb1f1175432741442f8f0deafe4d6f4a`  
+		Last Modified: Thu, 29 Jan 2026 20:06:27 GMT  
+		Size: 22.2 MB (22230980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22e41449c2e4fc773f713e7813349b42ecb3bbfa8385cf8c40a5b6e305d961f2`  
-		Last Modified: Wed, 28 Jan 2026 04:01:36 GMT  
-		Size: 344.0 B  
+	-	`sha256:67d4a6dfb1c61bc4032f7fd0321e7f99bea29bcfe93f2b5e0942d3005f8e68e2`  
+		Last Modified: Thu, 29 Jan 2026 20:06:26 GMT  
+		Size: 341.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29750b11be8f3dbd66602c42d5822b92fa664bfb9e27a7aa5583972ff2c625bc`  
-		Last Modified: Wed, 28 Jan 2026 04:01:38 GMT  
-		Size: 824.0 B  
+	-	`sha256:4ea9fcfef381c566ec94d9c3e50df4b8377cccaa3bde70233a390bfd812354fd`  
+		Last Modified: Thu, 29 Jan 2026 20:06:27 GMT  
+		Size: 825.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:e0d511206a07c650482eab2df8e3b746c5f76c8449eb7258a7836c11742099e6
+$ docker pull matomo@sha256:6523107ddffacd7f11f6577871279bcf41829e47035c37b0b66d91172f6d6ebb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.6 KB (31610 bytes)**  
+-	Total Size: **31.6 KB (31609 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b88ff67c45578113749ffc2b8a08a90133ae4fd1d88eff48dcf347def525e44`
+-	Image ID: `sha256:1e995f64ec504bccde642f70e52f6d5d5ae75268e7bbeb672445bfd010640f43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:df200b3194bb5eb38eea9cd86d0a532a15d794cf5e926538ade061b3a5def449`  
-		Last Modified: Wed, 28 Jan 2026 04:01:36 GMT  
-		Size: 31.6 KB (31610 bytes)  
+	-	`sha256:215e3a5da89bbe47e876cad2f5dbd3a2d4f60bd4fe6b80940ca07cb25811a175`  
+		Last Modified: Thu, 29 Jan 2026 20:06:26 GMT  
+		Size: 31.6 KB (31609 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:5-fpm-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull matomo@sha256:bca3f5a136bd1093832565249dfcc8fc58f49991e8259bb2631b505896ff18d2
+$ docker pull matomo@sha256:04653b813293e31ef91d113d70b1876ae11360c604430081af53aed09d71dda9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **58.0 MB (57991835 bytes)**  
+-	Total Size: **58.1 MB (58071481 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99b999c2a852c2bd880a873754325d276b913ba0486c8c7e283f536b383f1c79`
+-	Image ID: `sha256:a5f6a56cfe85a394e0d25c87af1d3f2a44d09f310059a82fad2088205ffba433`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -445,25 +445,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Wed, 28 Jan 2026 02:31:06 GMT
 CMD ["php-fpm"]
-# Wed, 28 Jan 2026 04:06:47 GMT
+# Thu, 29 Jan 2026 19:50:23 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Wed, 28 Jan 2026 04:06:47 GMT
+# Thu, 29 Jan 2026 19:50:23 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 		procps 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .matomo-phpext-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Wed, 28 Jan 2026 04:06:47 GMT
+# Thu, 29 Jan 2026 19:50:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 28 Jan 2026 04:06:47 GMT
-ENV MATOMO_VERSION=5.6.2
-# Wed, 28 Jan 2026 04:06:53 GMT
+# Thu, 29 Jan 2026 19:50:23 GMT
+ENV MATOMO_VERSION=5.7.0
+# Thu, 29 Jan 2026 19:50:29 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps # buildkit
-# Wed, 28 Jan 2026 04:06:53 GMT
+# Thu, 29 Jan 2026 19:50:29 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Wed, 28 Jan 2026 04:06:53 GMT
+# Thu, 29 Jan 2026 19:50:29 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 28 Jan 2026 04:06:53 GMT
+# Thu, 29 Jan 2026 19:50:29 GMT
 VOLUME [/var/www/html]
-# Wed, 28 Jan 2026 04:06:53 GMT
+# Thu, 29 Jan 2026 19:50:29 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 28 Jan 2026 04:06:53 GMT
+# Thu, 29 Jan 2026 19:50:29 GMT
 CMD ["php-fpm"]
 ```
 
@@ -516,57 +516,57 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 28 Jan 2026 02:31:14 GMT  
 		Size: 9.3 KB (9271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f29c755db3907534536468370a631237667daa59a630f6f367b0c97e5acada`  
-		Last Modified: Wed, 28 Jan 2026 04:07:00 GMT  
-		Size: 2.5 MB (2548465 bytes)  
+	-	`sha256:e08d8566b6344fc481081d08423587df1c0ac36ba13ee75d70ad224c6cbb92cd`  
+		Last Modified: Thu, 29 Jan 2026 19:50:36 GMT  
+		Size: 2.5 MB (2548478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b092e2b1e64194413b8bbf1b0086a0188fabf2074f2809286320910ad2b59c4`  
-		Last Modified: Wed, 28 Jan 2026 04:07:00 GMT  
+	-	`sha256:ef44af39929fc92fe9af41abc5a3e27f5170b8cfcfadbbc9ce04c8fec383d4ef`  
+		Last Modified: Thu, 29 Jan 2026 19:50:35 GMT  
 		Size: 322.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29952d69272b397df3a8893191801cac930e090f17a70038d79b95c6e816c811`  
-		Last Modified: Wed, 28 Jan 2026 04:07:00 GMT  
-		Size: 22.2 MB (22151352 bytes)  
+	-	`sha256:63018a30805f30e878d14d7c236f378127c834e4416ce9dcd03e7772aa7935c0`  
+		Last Modified: Thu, 29 Jan 2026 19:50:36 GMT  
+		Size: 22.2 MB (22230981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f275e5c5bbc3fae36b04eafe4cac576f5ba8c387da074519b6c69f73c7ae6547`  
-		Last Modified: Wed, 28 Jan 2026 04:07:00 GMT  
-		Size: 341.0 B  
+	-	`sha256:053049a2edc792b58ec71d2a3062ce5ab2d9d47b88e8cb65912e92cc3c16abf4`  
+		Last Modified: Thu, 29 Jan 2026 19:50:35 GMT  
+		Size: 343.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed88dfc29474c44325df0067654b04447d848ae1c7045f4389f99693a78ba9cb`  
-		Last Modified: Wed, 28 Jan 2026 04:07:01 GMT  
-		Size: 823.0 B  
+	-	`sha256:7f636851ca9a029f1bcad6f3ad970d1c4ae0cd2b5b3c4caaba735e5e460309ea`  
+		Last Modified: Thu, 29 Jan 2026 19:50:36 GMT  
+		Size: 825.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:7953d0135c4e15735c23eb23a9e830cd4a51c6b897de74acb6aa7821de2bdd91
+$ docker pull matomo@sha256:02d5bf9cbdc00151f4c989daf5253698f0d91fa0683621262ac39ea90088575b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.6 KB (31610 bytes)**  
+-	Total Size: **31.6 KB (31609 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcde85d9e0d5d05dd5f8d7777d70357d4820e3cd77370d34179dfaefbc6537cc`
+-	Image ID: `sha256:c07aff34df2156de1f8458aa71234450c7477a7b558bfe0da814fe7d479c4445`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fada799dca202e61357d06bcfdb8edb6973808a0efd8e58dea93e9859f069b7a`  
-		Last Modified: Wed, 28 Jan 2026 04:06:59 GMT  
-		Size: 31.6 KB (31610 bytes)  
+	-	`sha256:8d0a8686b0bae1499fc7aad78a61370369577569515d43fbe180d429c894ba57`  
+		Last Modified: Thu, 29 Jan 2026 19:50:35 GMT  
+		Size: 31.6 KB (31609 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:5-fpm-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull matomo@sha256:406e937eb8943a84f77fd5d360d239ec82faf064d315868a6090261e7d1fb787
+$ docker pull matomo@sha256:e01b5f01206cd71706601243942e9cb1ef6e8d102373b3e87066d0fa582622d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.2 MB (61231329 bytes)**  
+-	Total Size: **61.3 MB (61310969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34de696edee86f9bb0500eb2c012c6635ee37047a887fff8c00f116e28b67414`
+-	Image ID: `sha256:6f9b4eec95cb01cd46f2ac846cf021216a7d4b26e627857f9b380f62c08af547`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -623,25 +623,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Wed, 28 Jan 2026 02:25:33 GMT
 CMD ["php-fpm"]
-# Wed, 28 Jan 2026 04:39:07 GMT
+# Thu, 29 Jan 2026 19:51:53 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Wed, 28 Jan 2026 04:39:07 GMT
+# Thu, 29 Jan 2026 19:51:53 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 		procps 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .matomo-phpext-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Wed, 28 Jan 2026 04:39:07 GMT
+# Thu, 29 Jan 2026 19:51:53 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 28 Jan 2026 04:39:07 GMT
-ENV MATOMO_VERSION=5.6.2
-# Wed, 28 Jan 2026 04:39:13 GMT
+# Thu, 29 Jan 2026 19:51:53 GMT
+ENV MATOMO_VERSION=5.7.0
+# Thu, 29 Jan 2026 19:51:58 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps # buildkit
-# Wed, 28 Jan 2026 04:39:13 GMT
+# Thu, 29 Jan 2026 19:51:58 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Wed, 28 Jan 2026 04:39:13 GMT
+# Thu, 29 Jan 2026 19:51:58 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 28 Jan 2026 04:39:13 GMT
+# Thu, 29 Jan 2026 19:51:58 GMT
 VOLUME [/var/www/html]
-# Wed, 28 Jan 2026 04:39:13 GMT
+# Thu, 29 Jan 2026 19:51:58 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 28 Jan 2026 04:39:13 GMT
+# Thu, 29 Jan 2026 19:51:58 GMT
 CMD ["php-fpm"]
 ```
 
@@ -694,57 +694,57 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 28 Jan 2026 02:25:43 GMT  
 		Size: 9.3 KB (9266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:608423ed98b4601680208de2513dc5ef46cedde620048e3dab372f26bbb42759`  
-		Last Modified: Wed, 28 Jan 2026 04:39:19 GMT  
-		Size: 2.8 MB (2836093 bytes)  
+	-	`sha256:cce39876be581d0554bedc006ce767ac23ee5ac194ab9eb7dbdb54321c284273`  
+		Last Modified: Thu, 29 Jan 2026 19:52:05 GMT  
+		Size: 2.8 MB (2836104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc59f8b4b110c1c94b758255dc7abdf434464506a733fc84f7f7f53289a89b59`  
-		Last Modified: Wed, 28 Jan 2026 04:39:19 GMT  
-		Size: 323.0 B  
+	-	`sha256:418a0b6a0644c79dbe23a37cdc1c522c4f501efb94eac92ccd1242e69e579237`  
+		Last Modified: Thu, 29 Jan 2026 19:52:05 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e960b557138272ed8c30fba32e538973b9220e55e96b7136f6923c7e493b786`  
-		Last Modified: Wed, 28 Jan 2026 04:39:20 GMT  
-		Size: 22.2 MB (22151357 bytes)  
+	-	`sha256:ba375636d32792cc94b731f1fdea57b6fef6a74ba391cd9970169d19803dd014`  
+		Last Modified: Thu, 29 Jan 2026 19:52:05 GMT  
+		Size: 22.2 MB (22230988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f281c73dc9d309bfec36db2c924fd55cd9f25aa7f19001d6895d7bdfa798cc7e`  
-		Last Modified: Wed, 28 Jan 2026 04:39:19 GMT  
-		Size: 342.0 B  
+	-	`sha256:4e7d43d99e78a25456a5a1c364b915631e560d2150b1e35a814d81992cde9fec`  
+		Last Modified: Thu, 29 Jan 2026 19:52:05 GMT  
+		Size: 341.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c14e65f7c2dcb3f03aec845337a39631f456a06cb39a775ec13304a9e4a1b0fb`  
-		Last Modified: Wed, 28 Jan 2026 04:39:20 GMT  
+	-	`sha256:b136b520b146fad21067794e9b4f99d021a5d8e217e43bf89ebee04704165627`  
+		Last Modified: Thu, 29 Jan 2026 19:52:06 GMT  
 		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:a98a8aa7b953fcf725cc7432f5fb76041fb8c41ee1f536e9363d81792da5ec48
+$ docker pull matomo@sha256:2e7770fe306a851faed7dcd5b70a627c2b2c2cf8837bff704dc95460329f88f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.6 KB (31637 bytes)**  
+-	Total Size: **31.6 KB (31638 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb9d9372f727a00538c8fff8f04ff597a59b952592147bb5c8471f694e033063`
+-	Image ID: `sha256:d4bcc386634c758bb4b6772a1d2c7ed41c24bce3cd79f5e9635e7f5e68fcae11`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c680eea7a3d9a88314e4490c7de785b042e14846daadf5ebe3725b8f19787563`  
-		Last Modified: Wed, 28 Jan 2026 04:39:19 GMT  
-		Size: 31.6 KB (31637 bytes)  
+	-	`sha256:0693f783b08a085ca2698efe9652c789fd74ead9fa7c435442ab8884ab0137ba`  
+		Last Modified: Thu, 29 Jan 2026 19:52:04 GMT  
+		Size: 31.6 KB (31638 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:5-fpm-alpine` - linux; 386
 
 ```console
-$ docker pull matomo@sha256:ec58271bb144ab992d890ca5862a7f81bb9938517213767a4111a510ee0f6dcc
+$ docker pull matomo@sha256:a51238629e01b00bd8b8ff57a958e174e20bc71a4d5562c25fca3c4d5aa4c52d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.6 MB (61552828 bytes)**  
+-	Total Size: **61.6 MB (61633515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c384f2e63bb68db2f573938aa077857f8b92ef625e2a7ce2dfe731a453d40e5`
+-	Image ID: `sha256:d042abc20d8a57dab6a974e6189069db463684f2ef478b5a552599b80407e9f2`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -801,25 +801,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Wed, 28 Jan 2026 02:21:40 GMT
 CMD ["php-fpm"]
-# Wed, 28 Jan 2026 03:50:17 GMT
+# Thu, 29 Jan 2026 19:49:52 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Wed, 28 Jan 2026 03:50:17 GMT
+# Thu, 29 Jan 2026 19:49:52 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 		procps 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .matomo-phpext-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Wed, 28 Jan 2026 03:50:17 GMT
+# Thu, 29 Jan 2026 19:49:52 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 28 Jan 2026 03:50:17 GMT
-ENV MATOMO_VERSION=5.6.2
-# Wed, 28 Jan 2026 03:50:23 GMT
+# Thu, 29 Jan 2026 19:49:52 GMT
+ENV MATOMO_VERSION=5.7.0
+# Thu, 29 Jan 2026 19:49:57 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps # buildkit
-# Wed, 28 Jan 2026 03:50:24 GMT
+# Thu, 29 Jan 2026 19:49:57 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Wed, 28 Jan 2026 03:50:24 GMT
+# Thu, 29 Jan 2026 19:49:57 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 28 Jan 2026 03:50:24 GMT
+# Thu, 29 Jan 2026 19:49:57 GMT
 VOLUME [/var/www/html]
-# Wed, 28 Jan 2026 03:50:24 GMT
+# Thu, 29 Jan 2026 19:49:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 28 Jan 2026 03:50:24 GMT
+# Thu, 29 Jan 2026 19:49:57 GMT
 CMD ["php-fpm"]
 ```
 
@@ -872,57 +872,57 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 28 Jan 2026 02:21:49 GMT  
 		Size: 9.3 KB (9266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a051ea12dd3b2e6cced6355643f753410b18566d8f4b959ff418000a96242d58`  
-		Last Modified: Wed, 28 Jan 2026 03:50:30 GMT  
-		Size: 2.8 MB (2834611 bytes)  
+	-	`sha256:7dff896ca79d854d23a62fbeec70e1644f0091dd351eedea58ade8ce8e4e4302`  
+		Last Modified: Thu, 29 Jan 2026 19:50:03 GMT  
+		Size: 2.8 MB (2834639 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:100edcf8b54067c5f2c4097cd5178c73a455b73d8a0fc9ccf323f6470aed56c3`  
-		Last Modified: Wed, 28 Jan 2026 03:50:30 GMT  
-		Size: 321.0 B  
+	-	`sha256:c8fe3db3f5f8068e6039ea0cab28a4d8023a5ec00c79f33f66806267c0c2e665`  
+		Last Modified: Thu, 29 Jan 2026 19:50:03 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:376397a1a9b24dc69223e35c794320205a94d09a0ba291ca345e1aec1893a22b`  
-		Last Modified: Wed, 28 Jan 2026 03:50:31 GMT  
-		Size: 22.2 MB (22151038 bytes)  
+	-	`sha256:580888f87ea6636b15b64e6edf7356c691cb0b00cca201dbb117560da324649d`  
+		Last Modified: Thu, 29 Jan 2026 19:50:04 GMT  
+		Size: 22.2 MB (22231694 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1edecf3389872c11b29c5f3885ab65f110c72b1787ed84b8fd138bf69802b0`  
-		Last Modified: Wed, 28 Jan 2026 03:50:30 GMT  
-		Size: 340.0 B  
+	-	`sha256:03806a39c8742356a96c818d2017e347126fab5b4b978b234e5e95ae5ff3a417`  
+		Last Modified: Thu, 29 Jan 2026 19:50:03 GMT  
+		Size: 339.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44d267b83f91a05f51727171ee5d7041b2ec4a621d49c341c3443277fc42b44e`  
-		Last Modified: Wed, 28 Jan 2026 03:50:31 GMT  
+	-	`sha256:469e2fdaf9a6d40633eb33bcc309e30a44eb7fb343659a95b0d2440a8c3bba4a`  
+		Last Modified: Thu, 29 Jan 2026 19:50:04 GMT  
 		Size: 824.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:92cd7a143460f0fe56b3a99f3a8bafe4ef0b5f7fd2945b93a750cee9ef4ae83d
+$ docker pull matomo@sha256:77fff1be4d91b83416c8954e08d41f76477768274295dc19c65ad1a7c78283e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **31.5 KB (31468 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ef3c0545dbf40e0fe1f94a829ee036c3709c770cf3a3287ea392eedfd5c0829`
+-	Image ID: `sha256:0b888fc477736d82b3ef252f547e6dcbee05efa626bbe81ec6434c8b96ddce0d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d22f52072c5e43bf8dfc9eb8d6f135dac3d1f1569ae09841c3d2bc86958d0898`  
-		Last Modified: Wed, 28 Jan 2026 03:50:29 GMT  
+	-	`sha256:e254cea31032678c0ef82b49272be21a700271fad43eade10fd4ed2920d478dd`  
+		Last Modified: Thu, 29 Jan 2026 19:50:03 GMT  
 		Size: 31.5 KB (31468 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:5-fpm-alpine` - linux; ppc64le
 
 ```console
-$ docker pull matomo@sha256:a2c8e963dbc08b283a12dd12ab2c8d0143fd2e02fd912142bb8ba2b863b90683
+$ docker pull matomo@sha256:618576e64df8c73367dbe6e76049b714d8b787d6dbd775697de47932ae2e8b70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.3 MB (62285064 bytes)**  
+-	Total Size: **62.4 MB (62364920 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c0398297edddaea8658a072a30cd3473d2e5c557dda520f1074e5de7b24270c`
+-	Image ID: `sha256:352e80a1e50a0c363620697f0dd0382273cebe392f65c3bf9462db26e4a61df8`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -979,25 +979,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Wed, 28 Jan 2026 02:58:38 GMT
 CMD ["php-fpm"]
-# Wed, 28 Jan 2026 06:33:42 GMT
+# Thu, 29 Jan 2026 19:59:49 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Wed, 28 Jan 2026 06:33:42 GMT
+# Thu, 29 Jan 2026 19:59:49 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 		procps 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .matomo-phpext-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Wed, 28 Jan 2026 06:33:42 GMT
+# Thu, 29 Jan 2026 19:59:50 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 28 Jan 2026 06:33:42 GMT
-ENV MATOMO_VERSION=5.6.2
-# Wed, 28 Jan 2026 06:33:50 GMT
+# Thu, 29 Jan 2026 19:59:50 GMT
+ENV MATOMO_VERSION=5.7.0
+# Thu, 29 Jan 2026 19:59:57 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps # buildkit
-# Wed, 28 Jan 2026 06:33:50 GMT
+# Thu, 29 Jan 2026 19:59:57 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Wed, 28 Jan 2026 06:33:51 GMT
+# Thu, 29 Jan 2026 19:59:57 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 28 Jan 2026 06:33:51 GMT
+# Thu, 29 Jan 2026 19:59:57 GMT
 VOLUME [/var/www/html]
-# Wed, 28 Jan 2026 06:33:51 GMT
+# Thu, 29 Jan 2026 19:59:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 28 Jan 2026 06:33:51 GMT
+# Thu, 29 Jan 2026 19:59:57 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1050,45 +1050,45 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 28 Jan 2026 02:58:53 GMT  
 		Size: 9.3 KB (9268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c47ab05ff836965ab86ccf2ffe0a114d5610fbf2f44d72d4d878919ce04f244f`  
-		Last Modified: Wed, 28 Jan 2026 06:34:03 GMT  
-		Size: 3.1 MB (3055698 bytes)  
+	-	`sha256:56b4c74259d33533ee380314a82e3daa10b24edcb513f099be11ffa924098c1d`  
+		Last Modified: Thu, 29 Jan 2026 20:00:11 GMT  
+		Size: 3.1 MB (3055824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8bfe6027846bbf50d090ddaeee2eda0e2caef19c2579aba5a874f66e4b8afd9`  
-		Last Modified: Wed, 28 Jan 2026 06:34:03 GMT  
-		Size: 326.0 B  
+	-	`sha256:de4e581b8928a0ec66d2aa4b7739f9a2ca28143862757687ba3a3e445bfaca2a`  
+		Last Modified: Thu, 29 Jan 2026 20:00:10 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90106fa687dd952f19376d91806a8b5435a9d6747175bdcadcbf514060ed38e2`  
-		Last Modified: Wed, 28 Jan 2026 06:34:04 GMT  
-		Size: 22.2 MB (22151334 bytes)  
+	-	`sha256:7deb1a662d3c8d4a37e6d8dee53d8ac9d0a3c9c42ece24d26a5290bdef564d90`  
+		Last Modified: Thu, 29 Jan 2026 20:00:13 GMT  
+		Size: 22.2 MB (22231067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa860ecbf778ba0e53d3ed7ce46fd2d844b36212173dc9c414a8aa3bea2f9b2b`  
-		Last Modified: Wed, 28 Jan 2026 06:34:03 GMT  
-		Size: 341.0 B  
+	-	`sha256:dff0106feef6c12c432eee34726bc51c7f256b95911e6e571772b76b59e109a6`  
+		Last Modified: Thu, 29 Jan 2026 20:00:15 GMT  
+		Size: 340.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fced8916bd7e276b861474cf6a03fad6bb2ec6e73eb8a3962ed3f051fcc49609`  
-		Last Modified: Wed, 28 Jan 2026 06:34:04 GMT  
-		Size: 824.0 B  
+	-	`sha256:e5e7dba9c8c74bd67c87b3cc2d835cd4a15103ce8feb34bacc420cbfe72e5b83`  
+		Last Modified: Thu, 29 Jan 2026 20:00:12 GMT  
+		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:7f38bf89aaec649c796a06e27c45071ec0a98aea218a88b96df8dcaf227558ff
+$ docker pull matomo@sha256:54242fb170a93982b7e214ffe9d989477fb6953f54f8fa5a1f38742180f930f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.6 KB (31552 bytes)**  
+-	Total Size: **31.6 KB (31551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba3080a96f82512c4782b906fdc7b51f786d60babd195d2a303f9ceaa168c844`
+-	Image ID: `sha256:dca4fc05c1123b4b4ca182ec064b98ab7a7228875ee8eeface88738465af7b46`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a92e129d858edffbe7911c0bec3c7daa2a7a69200ec2c52d61648ab4669f1a9`  
-		Last Modified: Wed, 28 Jan 2026 06:34:03 GMT  
-		Size: 31.6 KB (31552 bytes)  
+	-	`sha256:7efb18f3eae49c1d32aaf0b79a0aaefeb9ea0a2fae678f0cbd1622b290f81e64`  
+		Last Modified: Thu, 29 Jan 2026 20:00:09 GMT  
+		Size: 31.6 KB (31551 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:5-fpm-alpine` - linux; riscv64
@@ -1272,13 +1272,13 @@ $ docker pull matomo@sha256:b0604624f63a54adf9983294f34e3aec0b69f185b978fba546f3
 ### `matomo:5-fpm-alpine` - linux; s390x
 
 ```console
-$ docker pull matomo@sha256:9fd16ce9a379a60851574de87f09b5fba07b9eaa4aba31bc66de43eaa6bf2af8
+$ docker pull matomo@sha256:9a56866b14f14944f8ec4c6b8d77e66a40990407051b3df19d3651fe917ea648
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.3 MB (61275195 bytes)**  
+-	Total Size: **61.4 MB (61354879 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a90b0c85768e59358751f2fdad34db88527a8c004a4b37018b73c7e797e175e9`
+-	Image ID: `sha256:c9ee005d414a8f78a94c633123b7630d895c457487695dce7557b2c2d1452b7b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1335,25 +1335,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Wed, 28 Jan 2026 02:33:19 GMT
 CMD ["php-fpm"]
-# Wed, 28 Jan 2026 07:16:04 GMT
+# Thu, 29 Jan 2026 19:49:19 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Wed, 28 Jan 2026 07:16:04 GMT
+# Thu, 29 Jan 2026 19:49:19 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 		procps 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .matomo-phpext-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Wed, 28 Jan 2026 07:16:04 GMT
+# Thu, 29 Jan 2026 19:49:19 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 28 Jan 2026 07:16:04 GMT
-ENV MATOMO_VERSION=5.6.2
-# Wed, 28 Jan 2026 07:16:09 GMT
+# Thu, 29 Jan 2026 19:49:19 GMT
+ENV MATOMO_VERSION=5.7.0
+# Thu, 29 Jan 2026 19:49:24 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps # buildkit
-# Wed, 28 Jan 2026 07:16:09 GMT
+# Thu, 29 Jan 2026 19:49:24 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Wed, 28 Jan 2026 07:16:09 GMT
+# Thu, 29 Jan 2026 19:49:24 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 28 Jan 2026 07:16:09 GMT
+# Thu, 29 Jan 2026 19:49:24 GMT
 VOLUME [/var/www/html]
-# Wed, 28 Jan 2026 07:16:09 GMT
+# Thu, 29 Jan 2026 19:49:24 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 28 Jan 2026 07:16:09 GMT
+# Thu, 29 Jan 2026 19:49:24 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1406,43 +1406,43 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 28 Jan 2026 02:33:32 GMT  
 		Size: 9.3 KB (9265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e87d0cecca69dd6a78072a65298ff1e563bdc7d5164f46b0ecd33fe4045c070`  
-		Last Modified: Wed, 28 Jan 2026 07:16:18 GMT  
-		Size: 2.9 MB (2910182 bytes)  
+	-	`sha256:3c43ad364f25359ad62c5f8884a7e24728d28b503b21a575b3986cbe9b44a323`  
+		Last Modified: Thu, 29 Jan 2026 19:49:34 GMT  
+		Size: 2.9 MB (2910194 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:842f074c692a562b3889f07a845fadb627025c3c60b2fc72063d8b6c2bf04a78`  
-		Last Modified: Wed, 28 Jan 2026 07:16:18 GMT  
+	-	`sha256:a607ac1c0729def9970fa5d3c80c860d913d1473de616ef138f8db9d1446d082`  
+		Last Modified: Thu, 29 Jan 2026 19:49:34 GMT  
 		Size: 323.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02345ef60ec64e4d82ad2959d534ec192d5bf4e05e1f5c39e1f47d6fd861f9d4`  
-		Last Modified: Wed, 28 Jan 2026 07:16:19 GMT  
-		Size: 22.2 MB (22151329 bytes)  
+	-	`sha256:51fd826cc8bd8aa4cca68bbf612907a264ba479c0bbd1f0cedf093694760ef96`  
+		Last Modified: Thu, 29 Jan 2026 19:49:34 GMT  
+		Size: 22.2 MB (22230999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdb43767331b2c82a3f3a9c540fff2874a11e18347694133e99aa65a48987a53`  
-		Last Modified: Wed, 28 Jan 2026 07:16:18 GMT  
-		Size: 338.0 B  
+	-	`sha256:a7e0a70b61a3fa200399afcbf9d3bf22b50cfa3afb533da6c33f6b12ea7692ed`  
+		Last Modified: Thu, 29 Jan 2026 19:49:34 GMT  
+		Size: 340.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c01edc12615cc7f20074159d034aeea677eb90eba5552cd125ad7d975ba8ebb7`  
-		Last Modified: Wed, 28 Jan 2026 07:16:19 GMT  
+	-	`sha256:b5ddb91c63982b202824a2b33e706932c9b471d0b8eb9b52311c32d957b8436b`  
+		Last Modified: Thu, 29 Jan 2026 19:49:35 GMT  
 		Size: 824.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:0fab3ea235176adac365ad2e0b941ca130268897b76d7b9683320d9a619cda92
+$ docker pull matomo@sha256:958c3f0e297972b2d04b865f0031c99977d5b909c80eef2c596bb46dd1d4b9f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **31.5 KB (31504 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7adc08a32f9d464044c1294227307d7ff40f59a9e7c006f3151df45633f713f4`
+-	Image ID: `sha256:1954810dbeb4021ced8817ea3e1279dd22bae7e79938e3d7230fb4e4df66677b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8dd6a20434f9c4a9c9851460823b010846013fbe368850ba8b8ab7ee3a680050`  
-		Last Modified: Wed, 28 Jan 2026 07:16:18 GMT  
+	-	`sha256:febc2c98ec445581b230d050a3b09c4e6e1fa63455a13be48a8d85432614527f`  
+		Last Modified: Thu, 29 Jan 2026 19:49:34 GMT  
 		Size: 31.5 KB (31504 bytes)  
 		MIME: application/vnd.in-toto+json
