@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b97fe41a065781e884f8a23fd3dfd04c3348ce02d7a7c5cb2c0645317b4eb663`
-- Created: `2025-12-18T00:39:38.854800402Z`
+- Image ID: `sha256:d7ead3a9d3fe4f2906d95e00edc8b36b65749a00a49c47285a35d2be95e876dd`
+- Created: `2026-01-28T02:32:08.166838897Z`
 - Virtual Size: ~ 276.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -75,16 +75,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.2-r0 description:
+alpine-release-3.23.3-r0 description:
 Alpine release data
 
-alpine-release-3.23.2-r0 webpage:
+alpine-release-3.23.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.2-r0 installed size:
+alpine-release-3.23.3-r0 installed size:
 343 B
 
-alpine-release-3.23.2-r0 license:
+alpine-release-3.23.3-r0 license:
 MIT
 
 ```
@@ -313,16 +313,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.4-r0 description:
+libcrypto3-3.5.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.4-r0 webpage:
+libcrypto3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.4-r0 installed size:
+libcrypto3-3.5.5-r0 installed size:
 5083 KiB
 
-libcrypto3-3.5.4-r0 license:
+libcrypto3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -432,16 +432,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.4-r0 description:
+libssl3-3.5.5-r0 description:
 SSL shared libraries
 
-libssl3-3.5.4-r0 webpage:
+libssl3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.4-r0 installed size:
+libssl3-3.5.5-r0 installed size:
 819 KiB
 
-libssl3-3.5.4-r0 license:
+libssl3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -704,16 +704,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.1-r0 description:
+xz-libs-5.8.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.1-r0 webpage:
+xz-libs-5.8.2-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.1-r0 installed size:
+xz-libs-5.8.2-r0 installed size:
 221 KiB
 
-xz-libs-5.8.1-r0 license:
+xz-libs-5.8.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
