@@ -24,6 +24,12 @@
 -	[`haskell:9.12.2`](#haskell9122)
 -	[`haskell:9.12.2-bookworm`](#haskell9122-bookworm)
 -	[`haskell:9.12.2-slim-bookworm`](#haskell9122-slim-bookworm)
+-	[`haskell:9.14`](#haskell914)
+-	[`haskell:9.14-bookworm`](#haskell914-bookworm)
+-	[`haskell:9.14-slim-bookworm`](#haskell914-slim-bookworm)
+-	[`haskell:9.14.1`](#haskell9141)
+-	[`haskell:9.14.1-bookworm`](#haskell9141-bookworm)
+-	[`haskell:9.14.1-slim-bookworm`](#haskell9141-slim-bookworm)
 -	[`haskell:9.6`](#haskell96)
 -	[`haskell:9.6-bullseye`](#haskell96-bullseye)
 -	[`haskell:9.6-slim`](#haskell96-slim)
@@ -4380,6 +4386,30 @@ $ docker pull haskell@sha256:e3124e8a5d71958c986d6c1bcfbf85c3db103b6637281442759
 		Last Modified: Tue, 13 Jan 2026 01:20:16 GMT  
 		Size: 26.5 KB (26515 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `haskell:9.14`
+
+**does not exist** (yet?)
+
+## `haskell:9.14-bookworm`
+
+**does not exist** (yet?)
+
+## `haskell:9.14-slim-bookworm`
+
+**does not exist** (yet?)
+
+## `haskell:9.14.1`
+
+**does not exist** (yet?)
+
+## `haskell:9.14.1-bookworm`
+
+**does not exist** (yet?)
+
+## `haskell:9.14.1-slim-bookworm`
+
+**does not exist** (yet?)
 
 ## `haskell:9.6`
 
