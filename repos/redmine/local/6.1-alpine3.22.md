@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f35c49e9509fa1e6bd2cff0382116ffd9b0511e554d04d57b187800de0c6884`
-- Created: `2026-01-06T18:29:33.308272568Z`
-- Virtual Size: ~ 420.24 Mb  
+- Image ID: `sha256:64f1e3d390df36aa18708788371334e0f66bb0d75b3f1d512d66f5a3e2422408`
+- Created: `2026-01-28T05:05:53.377206167Z`
+- Virtual Size: ~ 420.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -82,16 +82,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.2-r0 description:
+alpine-release-3.22.3-r0 description:
 Alpine release data
 
-alpine-release-3.22.2-r0 webpage:
+alpine-release-3.22.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.2-r0 installed size:
+alpine-release-3.22.3-r0 installed size:
 343 B
 
-alpine-release-3.22.2-r0 license:
+alpine-release-3.22.3-r0 license:
 MIT
 
 ```
@@ -235,16 +235,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r19 description:
+busybox-1.37.0-r20 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r19 webpage:
+busybox-1.37.0-r20 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r19 installed size:
+busybox-1.37.0-r20 installed size:
 798 KiB
 
-busybox-1.37.0-r19 license:
+busybox-1.37.0-r20 license:
 GPL-2.0-only
 
 ```
@@ -252,16 +252,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r19 description:
+busybox-binsh-1.37.0-r20 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r19 webpage:
+busybox-binsh-1.37.0-r20 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r19 installed size:
+busybox-binsh-1.37.0-r20 installed size:
 1 B
 
-busybox-binsh-1.37.0-r19 license:
+busybox-binsh-1.37.0-r20 license:
 GPL-2.0-only
 
 ```
@@ -320,16 +320,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `cups-libs`
 
 ```console
-cups-libs-2.4.11-r0 description:
+cups-libs-2.4.16-r0 description:
 CUPS libraries
 
-cups-libs-2.4.11-r0 webpage:
+cups-libs-2.4.16-r0 webpage:
 https://github.com/OpenPrinting/cups/
 
-cups-libs-2.4.11-r0 installed size:
+cups-libs-2.4.16-r0 installed size:
 559 KiB
 
-cups-libs-2.4.11-r0 license:
+cups-libs-2.4.16-r0 license:
 Apache-2.0
 
 ```
@@ -745,16 +745,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.4-r0 description:
+libcrypto3-3.5.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.4-r0 webpage:
+libcrypto3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.4-r0 installed size:
+libcrypto3-3.5.5-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.4-r0 license:
+libcrypto3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -1000,16 +1000,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.53-r0 description:
+libpng-1.6.54-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.53-r0 webpage:
+libpng-1.6.54-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.53-r0 installed size:
+libpng-1.6.54-r0 installed size:
 181 KiB
 
-libpng-1.6.53-r0 license:
+libpng-1.6.54-r0 license:
 Libpng
 
 ```
@@ -1102,16 +1102,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.4-r0 description:
+libssl3-3.5.5-r0 description:
 SSL shared libraries
 
-libssl3-3.5.4-r0 webpage:
+libssl3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.4-r0 installed size:
+libssl3-3.5.5-r0 installed size:
 823 KiB
 
-libssl3-3.5.4-r0 license:
+libssl3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -1136,16 +1136,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libtasn1`
 
 ```console
-libtasn1-4.20.0-r0 description:
+libtasn1-4.21.0-r0 description:
 The ASN.1 library used in GNUTLS
 
-libtasn1-4.20.0-r0 webpage:
+libtasn1-4.21.0-r0 webpage:
 https://www.gnu.org/software/gnutls/
 
-libtasn1-4.20.0-r0 installed size:
+libtasn1-4.21.0-r0 installed size:
 65 KiB
 
-libtasn1-4.20.0-r0 license:
+libtasn1-4.21.0-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1799,16 +1799,16 @@ MIT
 ### `apk` package: `py3-urllib3`
 
 ```console
-py3-urllib3-1.26.20-r0 description:
+py3-urllib3-1.26.20-r1 description:
 HTTP library with thread-safe connection pooling, file post, and more
 
-py3-urllib3-1.26.20-r0 webpage:
+py3-urllib3-1.26.20-r1 webpage:
 https://github.com/urllib3/urllib3
 
-py3-urllib3-1.26.20-r0 installed size:
-442 KiB
+py3-urllib3-1.26.20-r1 installed size:
+443 KiB
 
-py3-urllib3-1.26.20-r0 license:
+py3-urllib3-1.26.20-r1 license:
 MIT
 
 ```
@@ -1816,16 +1816,16 @@ MIT
 ### `apk` package: `py3-urllib3-pyc`
 
 ```console
-py3-urllib3-pyc-1.26.20-r0 description:
+py3-urllib3-pyc-1.26.20-r1 description:
 Precompiled Python bytecode for py3-urllib3
 
-py3-urllib3-pyc-1.26.20-r0 webpage:
+py3-urllib3-pyc-1.26.20-r1 webpage:
 https://github.com/urllib3/urllib3
 
-py3-urllib3-pyc-1.26.20-r0 installed size:
+py3-urllib3-pyc-1.26.20-r1 installed size:
 425 KiB
 
-py3-urllib3-pyc-1.26.20-r0 license:
+py3-urllib3-pyc-1.26.20-r1 license:
 MIT
 
 ```
@@ -2003,16 +2003,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r19 description:
+ssl_client-1.37.0-r20 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r19 webpage:
+ssl_client-1.37.0-r20 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r19 installed size:
+ssl_client-1.37.0-r20 installed size:
 14 KiB
 
-ssl_client-1.37.0-r19 license:
+ssl_client-1.37.0-r20 license:
 GPL-2.0-only
 
 ```
