@@ -1,18 +1,18 @@
-# `bash:devel-20260118`
+# `bash:devel-20260123`
 
 ## Docker Metadata
 
-- Image ID: `sha256:becbb51d4717084c60f7964437d482ab9369c0d874c2da1bb1f63b2eb434fd1b`
-- Created: `2026-01-20T18:54:02.853096205Z`
-- Virtual Size: ~ 15.79 Mb  
+- Image ID: `sha256:ffc58289e81dc03bc1c714107ad3100d48e3c47de1e6a9268c4f975e90d5d516`
+- Created: `2026-01-28T18:34:14.936986638Z`
+- Virtual Size: ~ 15.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `_BASH_COMMIT=c4b56ed9ac00424bde0f9ce3adfb7edb3d19a557`
-  - `_BASH_VERSION=devel-20260118`
+  - `_BASH_COMMIT=b805bbec801b3ac9adf1e67707b2d5bd3da9e60b`
+  - `_BASH_VERSION=devel-20260123`
 
 ## `apk` (`.apk`-based packages)
 
@@ -70,16 +70,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.2-r0 description:
+alpine-release-3.23.3-r0 description:
 Alpine release data
 
-alpine-release-3.23.2-r0 webpage:
+alpine-release-3.23.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.2-r0 installed size:
+alpine-release-3.23.3-r0 installed size:
 343 B
 
-alpine-release-3.23.2-r0 license:
+alpine-release-3.23.3-r0 license:
 MIT
 
 ```
@@ -172,16 +172,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.4-r0 description:
+libcrypto3-3.5.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.4-r0 webpage:
+libcrypto3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.4-r0 installed size:
+libcrypto3-3.5.5-r0 installed size:
 5083 KiB
 
-libcrypto3-3.5.4-r0 license:
+libcrypto3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -206,16 +206,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.4-r0 description:
+libssl3-3.5.5-r0 description:
 SSL shared libraries
 
-libssl3-3.5.4-r0 webpage:
+libssl3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.4-r0 installed size:
+libssl3-3.5.5-r0 installed size:
 819 KiB
 
-libssl3-3.5.4-r0 license:
+libssl3-3.5.5-r0 license:
 Apache-2.0
 
 ```
