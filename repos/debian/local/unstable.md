@@ -1437,21 +1437,13 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.19.0-4
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.19.0-4.dsc' shadow_4.19.0-4.dsc 2872 SHA256:894b9875f82c59a54dae2e40be23c394450c0e5b434e8c5fded1636cace5c222
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.19.0.orig.tar.xz' shadow_4.19.0.orig.tar.xz 2383424 SHA256:9cb28ec40f19ee0a5ae8f4fd55539fed88ec41e336663d468cdeab739b632b33
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.19.0.orig.tar.xz.asc' shadow_4.19.0.orig.tar.xz.asc 488 SHA256:d4a690f4c1c3159e5913f55de3c565abb162f833eade448a86e04b4f8a387259
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.19.0-4.debian.tar.xz' shadow_4.19.0-4.debian.tar.xz 167552 SHA256:8899d73e789d4ca21c0b7751d77a31981e07de813d0f54ce29885726022a465d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.19.0-4/
 
-- https://sources.debian.net/src/shadow/1:4.19.0-4/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.19.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.19.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=259-1`
 

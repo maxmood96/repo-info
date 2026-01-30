@@ -57,19 +57,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.13
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.13.dsc' apt_3.1.13.dsc 3095 SHA256:7ddb51ca79c5885d37fc7ed1806b21df199ddd29eb66d6353dccfcad085e881a
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.13.tar.xz' apt_3.1.13.tar.xz 2467248 SHA256:bd9042ba5a1b9ee72da52e4ecab6d89e213111313727e398ca2046b9de213f7b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.1.13/
 
-- https://sources.debian.net/src/apt/3.1.13/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.1.13/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.1.13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
