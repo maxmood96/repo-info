@@ -1,10 +1,10 @@
-# `alpine:20251224`
+# `alpine:20260127`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b7117eab33437136c4aeae8a50452cbb500d1e027e3d695ead47fb2d00ed6ea`
-- Created: `2025-12-28T05:45:14.264361193Z`
-- Virtual Size: ~ 9.16 Mb  
+- Image ID: `sha256:2b7554f23c5c9d9e079716790f3eff14f5dfd04177622521cc616a5f0b663bac`
+- Created: `2026-01-28T01:17:51.839901194Z`
+- Virtual Size: ~ 8.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -67,16 +67,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.0_alpha20251224-r0 description:
+alpine-release-3.24.0_alpha20260127-r0 description:
 Alpine release data
 
-alpine-release-3.24.0_alpha20251224-r0 webpage:
+alpine-release-3.24.0_alpha20260127-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.0_alpha20251224-r0 installed size:
+alpine-release-3.24.0_alpha20260127-r0 installed size:
 391 B
 
-alpine-release-3.24.0_alpha20251224-r0 license:
+alpine-release-3.24.0_alpha20260127-r0 license:
 MIT
 
 ```
@@ -84,16 +84,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.3-r1 description:
+apk-tools-3.0.3-r2 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.3-r1 webpage:
+apk-tools-3.0.3-r2 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.3-r1 installed size:
+apk-tools-3.0.3-r2 installed size:
 112 KiB
 
-apk-tools-3.0.3-r1 license:
+apk-tools-3.0.3-r2 license:
 GPL-2.0-only
 
 ```
@@ -101,16 +101,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r30 description:
+busybox-1.37.0-r31 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r30 webpage:
+busybox-1.37.0-r31 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r30 installed size:
+busybox-1.37.0-r31 installed size:
 794 KiB
 
-busybox-1.37.0-r30 license:
+busybox-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -118,16 +118,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r30 description:
+busybox-binsh-1.37.0-r31 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r30 webpage:
+busybox-binsh-1.37.0-r31 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r30 installed size:
+busybox-binsh-1.37.0-r31 installed size:
 1 B
 
-busybox-binsh-1.37.0-r30 license:
+busybox-binsh-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -152,16 +152,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.3-r1 description:
+libapk-3.0.3-r2 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.3-r1 webpage:
+libapk-3.0.3-r2 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.3-r1 installed size:
-274 KiB
+libapk-3.0.3-r2 installed size:
+270 KiB
 
-libapk-3.0.3-r1 license:
+libapk-3.0.3-r2 license:
 GPL-2.0-only
 
 ```
@@ -169,16 +169,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.4-r0 description:
+libcrypto3-3.5.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.4-r0 webpage:
+libcrypto3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.4-r0 installed size:
+libcrypto3-3.5.5-r0 installed size:
 5083 KiB
 
-libcrypto3-3.5.4-r0 license:
+libcrypto3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -186,16 +186,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.4-r0 description:
+libssl3-3.5.5-r0 description:
 SSL shared libraries
 
-libssl3-3.5.4-r0 webpage:
+libssl3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.4-r0 installed size:
+libssl3-3.5.5-r0 installed size:
 819 KiB
 
-libssl3-3.5.4-r0 license:
+libssl3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -237,16 +237,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.3.8-r2 description:
+scanelf-1.3.9-r0 description:
 Scan ELF binaries for stuff
 
-scanelf-1.3.8-r2 webpage:
+scanelf-1.3.9-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.3.8-r2 installed size:
+scanelf-1.3.9-r0 installed size:
 65 KiB
 
-scanelf-1.3.8-r2 license:
+scanelf-1.3.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -254,16 +254,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r30 description:
+ssl_client-1.37.0-r31 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r30 webpage:
+ssl_client-1.37.0-r31 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r30 installed size:
+ssl_client-1.37.0-r31 installed size:
 14 KiB
 
-ssl_client-1.37.0-r30 license:
+ssl_client-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -282,22 +282,5 @@ zlib-1.3.1-r2 installed size:
 
 zlib-1.3.1-r2 license:
 Zlib
-
-```
-
-### `apk` package: `zstd-libs`
-
-```console
-zstd-libs-1.5.7-r2 description:
-Zstandard - Fast real-time compression algorithm (libraries)
-
-zstd-libs-1.5.7-r2 webpage:
-https://facebook.github.io/zstd/
-
-zstd-libs-1.5.7-r2 installed size:
-693 KiB
-
-zstd-libs-1.5.7-r2 license:
-BSD-3-Clause OR GPL-2.0-or-later
 
 ```
