@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4f4b94152587385a66b315ebbf3e9611ae3207a7b0a3040285025d1e98c0552e`
-- Created: `2026-01-16T23:17:58.718309694Z`
-- Virtual Size: ~ 516.17 Mb  
+- Image ID: `sha256:b4d003026a78d951fcd349480ab8eaca4552e1e8afa9522c5c15555dcc388b68`
+- Created: `2026-01-30T01:12:00.333400175Z`
+- Virtual Size: ~ 524.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -2302,13 +2302,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.6.10+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.6.10+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.4-1~deb13u1`
+### `dpkg` source package: `openssl=3.5.4-1~deb13u2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.4-1~deb13u1`
-- `openssl=3.5.4-1~deb13u1`
-- `openssl-provider-legacy=3.5.4-1~deb13u1`
+- `libssl3t64:amd64=3.5.4-1~deb13u2`
+- `openssl=3.5.4-1~deb13u2`
+- `openssl-provider-legacy=3.5.4-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -2320,18 +2320,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.4-1~deb13u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.4-1%7edeb13u1.dsc' openssl_3.5.4-1~deb13u1.dsc 2669 SHA256:3ae8c547928de96ab95f8ab281501c95dd76050cbf569dddadf05c1950dd7779
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.4.orig.tar.gz' openssl_3.5.4.orig.tar.gz 53190367 SHA256:967311f84955316969bdb1d8d4b983718ef42338639c621ec4c34fddef355e99
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.4.orig.tar.gz.asc' openssl_3.5.4.orig.tar.gz.asc 833 SHA256:cfcabcfc6e43237392e0ab42e2326fceb71037036c2adaa7ecc7e251778e38f4
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.4-1%7edeb13u1.debian.tar.xz' openssl_3.5.4-1~deb13u1.debian.tar.xz 49900 SHA256:3659d7e13ee91c9a97570b084f6e32c4f4a5fb29cd846be05863323ad312ce4e
+$ apt-get source -qq --print-uris openssl=3.5.4-1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.4-1%7edeb13u2.dsc' openssl_3.5.4-1~deb13u2.dsc 2707 SHA256:646eb71bec0d395e564f1dd88e26ddede052200d37293bb03aa1372897b17dd8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.4.orig.tar.gz' openssl_3.5.4.orig.tar.gz 53190367 SHA256:967311f84955316969bdb1d8d4b983718ef42338639c621ec4c34fddef355e99
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.4.orig.tar.gz.asc' openssl_3.5.4.orig.tar.gz.asc 833 SHA256:cfcabcfc6e43237392e0ab42e2326fceb71037036c2adaa7ecc7e251778e38f4
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.4-1%7edeb13u2.debian.tar.xz' openssl_3.5.4-1~deb13u2.debian.tar.xz 65020 SHA256:f9edcab4e1d849a6c29e1c7821516c19d7dead327bb78b015d07445622922437
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.4-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.4-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.4-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.4-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.4-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.4-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.25.5-3`
 
