@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:58b37ac0a9ef2ae28205490d5e2b349ed996b3a418b6d5afbdb067dcf29483ef`
-- Created: `2026-01-22T19:01:36.876175621Z`
+- Image ID: `sha256:86c5f8bd458109ef3a028b351f9f2edbd26fe6de8922a7de323e94feffd7112e`
+- Created: `2026-01-29T19:02:54.267909719Z`
 - Virtual Size: ~ 168.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -100,16 +100,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.2-r0 description:
+alpine-release-3.23.3-r0 description:
 Alpine release data
 
-alpine-release-3.23.2-r0 webpage:
+alpine-release-3.23.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.2-r0 installed size:
+alpine-release-3.23.3-r0 installed size:
 343 B
 
-alpine-release-3.23.2-r0 license:
+alpine-release-3.23.3-r0 license:
 MIT
 
 ```
@@ -321,16 +321,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.4-r0 description:
+libcrypto3-3.5.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.4-r0 webpage:
+libcrypto3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.4-r0 installed size:
+libcrypto3-3.5.5-r0 installed size:
 5083 KiB
 
-libcrypto3-3.5.4-r0 license:
+libcrypto3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -457,16 +457,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.4-r0 description:
+libssl3-3.5.5-r0 description:
 SSL shared libraries
 
-libssl3-3.5.4-r0 webpage:
+libssl3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.4-r0 installed size:
+libssl3-3.5.5-r0 installed size:
 819 KiB
 
-libssl3-3.5.4-r0 license:
+libssl3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -610,16 +610,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.4-r0 description:
+openssl-3.5.5-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.4-r0 webpage:
+openssl-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.4-r0 installed size:
+openssl-3.5.5-r0 installed size:
 801 KiB
 
-openssl-3.5.4-r0 license:
+openssl-3.5.5-r0 license:
 Apache-2.0
 
 ```
