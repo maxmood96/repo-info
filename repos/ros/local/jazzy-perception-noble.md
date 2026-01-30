@@ -3762,15 +3762,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.122-1~ubuntu0.24.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.122-1%7eubuntu0.24.04.2.dsc' libdrm_2.4.122-1~ubuntu0.24.04.2.dsc 3229 SHA512:e4231640e42a0964b6274e7052418d9fc345b55a61ffb0faed25a60d0b7a259f3503aaedbf14f7a03af15bd886fa0df5ffbece64e9f0aa1d61049b6d431dafc7
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.122.orig.tar.xz' libdrm_2.4.122.orig.tar.xz 481012 SHA512:ea6bac94416d4ba0e9805e142ae62904236bc49f803d4fc10c92968a4df64c818dd42524ad7a4e988062836783a148e27094050bb2754f751a368627f794ad13
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.122.orig.tar.xz.asc' libdrm_2.4.122.orig.tar.xz.asc 833 SHA512:af5ceab8c6dfa9a91f4c58dc89bfabfbf0566016bcbfa5a6d9b9c4079928907682ec63065c754ae021c051f6e70a163f833db822f3be5f8f8076f62fe5bc0d4d
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.122-1%7eubuntu0.24.04.2.debian.tar.xz' libdrm_2.4.122-1~ubuntu0.24.04.2.debian.tar.xz 64280 SHA512:3a702cfeb15b51ea0860ff3f6e96cb35ee256a37a5da311511b7940a5698e28af1634a2dfc52e8487f145571faa762445168a955e32b38a154a68324d81b26bb
-```
 
 ### `dpkg` source package: `libedit=3.1-20230828-1build1`
 
@@ -6003,9 +5997,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-90.91
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.dsc' linux_6.8.0-90.91.dsc 9362 SHA512:42abcfe6580eb6570fd83c3f819d27acfc94c00b40ddea17d1e7ac91b2b45b7f006bf9fa8b1acfe4c911040fb8ba878b3afb73d05494cd06cc44279b61b17890
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.diff.gz' linux_6.8.0-90.91.diff.gz 6075998 SHA512:e63209e51a8b6c9d38b3177e85a1a22f5c67eb9ab6eba8830caae022c155abee8ce44fb570b8ea87c3b8166f5d5f508928322932f4273356a46ab822eda98497
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.dsc' linux_6.8.0-90.91.dsc 9362 SHA512:42abcfe6580eb6570fd83c3f819d27acfc94c00b40ddea17d1e7ac91b2b45b7f006bf9fa8b1acfe4c911040fb8ba878b3afb73d05494cd06cc44279b61b17890
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.diff.gz' linux_6.8.0-90.91.diff.gz 6075998 SHA512:e63209e51a8b6c9d38b3177e85a1a22f5c67eb9ab6eba8830caae022c155abee8ce44fb570b8ea87c3b8166f5d5f508928322932f4273356a46ab822eda98497
 ```
 
 ### `dpkg` source package: `llvm-toolchain-15=1:15.0.7-14build3`
@@ -6390,15 +6384,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `MLAA`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=25.0.7-0ubuntu0.24.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_25.0.7-0ubuntu0.24.04.2.dsc' mesa_25.0.7-0ubuntu0.24.04.2.dsc 6812 SHA512:ecac1e0d75560d56052c3a75a10eb084cca4cbb463ec726ca10376a28cb73acee6ce954932282ab7e64ba8d1f27d5f2bf190b9074e8a9736b8ab54c21f8dd353
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_25.0.7.orig.tar.xz' mesa_25.0.7.orig.tar.xz 46849080 SHA512:825bbd8bc5507de147488519786c0200afacf97dae621c80ead24b2c5dd55c5a442757ac8452698ae611e9344025465080795cf8f2dc4eb7ce07b5cc521b2b5c
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_25.0.7.orig.tar.xz.asc' mesa_25.0.7.orig.tar.xz.asc 488 SHA512:70ed87ba852cf47e4095e85d1096a26d1b0a3b7220406e658898889ea64656f4f1fbf17c58805df231678131b6d793a23d60ea0de7df9cec677dc5a3ca5bc3c4
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_25.0.7-0ubuntu0.24.04.2.debian.tar.xz' mesa_25.0.7-0ubuntu0.24.04.2.debian.tar.xz 109972 SHA512:8c30e050d7e9863ff9c381f025ab4eb263728de242fffa7e82709ebc09aed1341141b30b1be2ebf2dc2cd1c0eb39d64ab26752fd6cd5e0f3ccb7407ca23ad17e
-```
 
 ### `dpkg` source package: `more-itertools=10.2.0-1`
 
@@ -7315,14 +7303,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.6.dsc' openssl_3.0.13-0ubuntu3.6.dsc 2512 SHA512:e57effde33e3e978184e1c2d5167d8f8c1c881aae59f81dfbedeca0004488434c3dff227bec9ca6e3f701c01a9c5a7a3c8ffb3fef3533d9dee0f46b64d03e535
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.6.debian.tar.xz' openssl_3.0.13-0ubuntu3.6.debian.tar.xz 169500 SHA512:bc33f7a4d5c577cc622062b2337a2b897bc06dd6592f6e636832529ff8ebde4f5fcb5d35589d041ec498386d7ec63df2b76f37aaab0b0cddf35a4d53c8a5cc3f
-```
 
 ### `dpkg` source package: `opus=1.4-1build1`
 
