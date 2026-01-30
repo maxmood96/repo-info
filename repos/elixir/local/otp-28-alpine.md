@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7a2fad4aa5b25115e5a1b0b449239047fa67c4bfccf8c00982ffdd8664466035`
-- Created: `2026-01-16T21:50:17.164034154Z`
+- Image ID: `sha256:65cab3fa2afa1b7a1491c012158a41978626fa63abf9e1afe0ed293105fc6b24`
+- Created: `2026-01-28T04:59:44.950749866Z`
 - Virtual Size: ~ 103.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -73,16 +73,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.2-r0 description:
+alpine-release-3.23.3-r0 description:
 Alpine release data
 
-alpine-release-3.23.2-r0 webpage:
+alpine-release-3.23.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.2-r0 installed size:
+alpine-release-3.23.3-r0 installed size:
 343 B
 
-alpine-release-3.23.2-r0 license:
+alpine-release-3.23.3-r0 license:
 MIT
 
 ```
@@ -192,16 +192,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.4-r0 description:
+libcrypto3-3.5.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.4-r0 webpage:
+libcrypto3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.4-r0 installed size:
+libcrypto3-3.5.5-r0 installed size:
 5083 KiB
 
-libcrypto3-3.5.4-r0 license:
+libcrypto3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -260,16 +260,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.4-r0 description:
+libssl3-3.5.5-r0 description:
 SSL shared libraries
 
-libssl3-3.5.4-r0 webpage:
+libssl3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.4-r0 installed size:
+libssl3-3.5.5-r0 installed size:
 819 KiB
 
-libssl3-3.5.4-r0 license:
+libssl3-3.5.5-r0 license:
 Apache-2.0
 
 ```
