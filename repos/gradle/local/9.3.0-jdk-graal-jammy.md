@@ -1750,9 +1750,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.15.0-164.174
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-164.174.dsc' linux_5.15.0-164.174.dsc 7799 SHA512:520117ee0fbd25642883d05ac27a799979ce57cc846106b390e927beb39cf6c2ba45e28f686007d897cbe3915d16eefc7d1424382fb5783ea7984e25b8efac92
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-164.174.diff.gz' linux_5.15.0-164.174.diff.gz 12293399 SHA512:e61b8d5208d1e1bd80aee02a4b126e408934b939d5be67f68b6641510f5007f99754dfb5357da3584384e21cc778ba523ea0c375e77c5fcfcd12950e4332547b
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-164.174.dsc' linux_5.15.0-164.174.dsc 7799 SHA512:520117ee0fbd25642883d05ac27a799979ce57cc846106b390e927beb39cf6c2ba45e28f686007d897cbe3915d16eefc7d1424382fb5783ea7984e25b8efac92
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-164.174.diff.gz' linux_5.15.0-164.174.diff.gz 12293399 SHA512:e61b8d5208d1e1bd80aee02a4b126e408934b939d5be67f68b6641510f5007f99754dfb5357da3584384e21cc778ba523ea0c375e77c5fcfcd12950e4332547b
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
@@ -2077,15 +2077,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.20
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.20.dsc' openssl_3.0.2-0ubuntu1.20.dsc 2730 SHA512:973fdaac3db4ee13e4fb3907cbf5f6966c816de9e7a76165769562596a1aa533e68be64678da84dd400ef2ef3a37bc0ff2598bf8314654bec894e64e115663b3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.20.debian.tar.xz' openssl_3.0.2-0ubuntu1.20.debian.tar.xz 266660 SHA512:99203365623b8360b2a9997fa7c8d3b56424518f30e20411cb7d2921041f696a7877372dfd23e58ad63af5d4159e0b66e94049fa64bbb16ba80898c680d10260
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
