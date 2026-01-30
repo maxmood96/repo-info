@@ -497,14 +497,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-15-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.2.0-11ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-11ubuntu1.dsc' gcc-15_15.2.0-11ubuntu1.dsc 52487 SHA512:0827e20f50c9fa9d11f434e2087b1a6806df2df6cd9b1b98b06e1a9d7d16e8c2ca99858418bed67fb1e29c3fa4470c5a5a065f9420b2640376d873d725cb2e16
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0.orig.tar.gz' gcc-15_15.2.0.orig.tar.gz 105962230 SHA512:83887af5c7798105d1ad85f0e9c794daa3cf030638bf40b3bff48771b8325d95c9a0d99d7d2c86c8e45499ff87f975e1914d00b72482862357645cc7ec330d38
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-11ubuntu1.debian.tar.xz' gcc-15_15.2.0-11ubuntu1.debian.tar.xz 2825792 SHA512:f4573538a8a3a960025fd4181a622767cb596aad6b94f3b1e7e93d8beb1fb47d60e58aec1cc5cb1bfc178dba3b752e55bb32e06af381a9bba4cfb31356dd2c21
-```
 
 ### `dpkg` source package: `glibc=2.42-2ubuntu2`
 
