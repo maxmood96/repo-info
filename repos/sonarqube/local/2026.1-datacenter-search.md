@@ -1,10 +1,10 @@
-# `sonarqube:2025.6.1-datacenter-search`
+# `sonarqube:2026.1.0-datacenter-search`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ef4a16d6ef6e2d700603c8daffbe3d36caaa375656eb18c8525a493e73dc3ec1`
-- Created: `2026-01-16T01:02:42.706942453Z`
-- Virtual Size: ~ 1.85 Gb  
+- Image ID: `sha256:4bd2ef331cd4ee3f0dba1c8efef36384c1b141b090b542868ac3f2ba41b869f2`
+- Created: `2026-01-29T21:36:34.059891506Z`
+- Virtual Size: ~ 1.98 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/docker/run.sh"]`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk-21.0.9+10`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=2025.6.1.117629`
+  - `SONAR_VERSION=2026.1.0.119033`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
@@ -211,6 +211,34 @@ $ apt-get source -qq --print-uris bash=5.2.21-2ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.21-2ubuntu4.dsc' bash_5.2.21-2ubuntu4.dsc 2437 SHA512:7e783b1a20b339b2c15070e1cf3419a10e94a17c9dda520025b6eeb07f285dcbe8455aa1647254fc422cb314dd1382ef97c65cab088793de699d4714f65eaa0d
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.21.orig.tar.xz' bash_5.2.21.orig.tar.xz 5598816 SHA512:ccfd5201ebc32feb302db324868bec42a525a6b08176c77e16feb191fcd6ee4240182dcad783e6e3f010c6d33f356b2c628758f0387ef488ab8b3f932e54babb
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.21-2ubuntu4.debian.tar.xz' bash_5.2.21-2ubuntu4.debian.tar.xz 94124 SHA512:cbe580880995984a6ceb6c980d2fa87bbb1ace85d834a147ce39eaf44692af654c2c537716a19c8ed21b20e8abad9240d3f3349cc51020aeba2cd6e490802725
+```
+
+### `dpkg` source package: `binutils=2.42-4ubuntu2.8`
+
+Binary Packages:
+
+- `binutils=2.42-4ubuntu2.8`
+- `binutils-common:amd64=2.42-4ubuntu2.8`
+- `binutils-x86-64-linux-gnu=2.42-4ubuntu2.8`
+- `libbinutils:amd64=2.42-4ubuntu2.8`
+- `libctf-nobfd0:amd64=2.42-4ubuntu2.8`
+- `libctf0:amd64=2.42-4ubuntu2.8`
+- `libgprofng0:amd64=2.42-4ubuntu2.8`
+- `libsframe1:amd64=2.42-4ubuntu2.8`
+
+Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`, `/usr/share/doc/libgprofng0/copyright`, `/usr/share/doc/libsframe1/copyright`)
+
+- `GFDL`
+- `GPL`
+- `LGPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris binutils=2.42-4ubuntu2.8
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.8.dsc' binutils_2.42-4ubuntu2.8.dsc 10148 SHA512:be5a842fcc21200b65dac1f276a61edab9107ce3720e0f8742125d07e4244e4040718719a84ff6c5daeb0b1c2575a57b1c4f824dc996bd4dd8271c4613fb1adc
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42.orig.tar.xz' binutils_2.42.orig.tar.xz 27567160 SHA512:155f3ba14cd220102f4f29a4f1e5cfee3c48aa03b74603460d05afb73c70d6657a9d87eee6eb88bf13203fe6f31177a5c9addc04384e956e7da8069c8ecd20a6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.8.debian.tar.xz' binutils_2.42-4ubuntu2.8.debian.tar.xz 189180 SHA512:3d7e00b2e49b6b50293fbf2933dfaa98f5ed9f290d807507bdc1f7e361248c45eefe48207c3f4e20340fcfa1d7e1d28bad2c148d36e30a573cb0ea6fac4fb0d5
 ```
 
 ### `dpkg` source package: `brotli=1.1.0-2build2`
@@ -1007,6 +1035,25 @@ $ apt-get source -qq --print-uris iptables=1.8.10-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.10-3ubuntu2.debian.tar.xz' iptables_1.8.10-3ubuntu2.debian.tar.xz 30692 SHA512:393d7fd413cf2fcb0e2001c3e0453c496dbb963abf1364b3c61fe0976c24d9ccfe751cd2670408631750c8bf4a2d85f08f6e812d007c9d1926a09cc82d54333b
 ```
 
+### `dpkg` source package: `jansson=2.14-2build2`
+
+Binary Packages:
+
+- `libjansson4:amd64=2.14-2build2`
+
+Licenses: (parsed from: `/usr/share/doc/libjansson4/copyright`)
+
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris jansson=2.14-2build2
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jansson/jansson_2.14-2build2.dsc' jansson_2.14-2build2.dsc 2120 SHA512:46ec9f5477e738ee6ed2c10b7406dd0edcfe0148a394af3ca3ee214b14c9de95e691fefa34c3aa9770c1e23ec77d26b1f5149cc8faa4201f15680ba9f3a6d754
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jansson/jansson_2.14.orig.tar.gz' jansson_2.14.orig.tar.gz 141500 SHA512:c56e2e8d18819e3f5caa46edd4819694a240aeb3524a6f9d9f4465edf65b183d1870bd5d256cdd378d411a52979121369b951406fdf7bf323db5c30001fa1bc4
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jansson/jansson_2.14-2build2.debian.tar.xz' jansson_2.14-2build2.debian.tar.xz 5580 SHA512:1eec1f274a77512033b857a64bb26f8bc2fa98212c33c17dcfedbbd7f82711d32a803ad4ea4d8d158ef9949be2a69f3d5d4126fc4ac3b63c9200c361bba0f939
+```
+
 ### `dpkg` source package: `keyutils=1.6.3-3build1`
 
 Binary Packages:
@@ -1777,14 +1824,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.6.dsc' openssl_3.0.13-0ubuntu3.6.dsc 2512 SHA512:e57effde33e3e978184e1c2d5167d8f8c1c881aae59f81dfbedeca0004488434c3dff227bec9ca6e3f701c01a9c5a7a3c8ffb3fef3533d9dee0f46b64d03e535
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.6.debian.tar.xz' openssl_3.0.13-0ubuntu3.6.debian.tar.xz 169500 SHA512:bc33f7a4d5c577cc622062b2337a2b897bc06dd6592f6e636832529ff8ebde4f5fcb5d35589d041ec498386d7ec63df2b76f37aaab0b0cddf35a4d53c8a5cc3f
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
