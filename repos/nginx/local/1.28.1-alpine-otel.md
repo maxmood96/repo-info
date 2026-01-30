@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9cb9225955e2b94dc1ae29fe35c40ae0d445362388ecfd26a177e2bdaeea2af2`
-- Created: `2026-01-14T01:10:53.956309006Z`
+- Image ID: `sha256:688bba2b2d174e39ed29f7e4cb2fd0d312a21febff063186805d5330a1fecf71`
+- Created: `2026-01-28T04:51:00.744757299Z`
 - Virtual Size: ~ 104.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1199,16 +1199,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.2-r0 description:
+alpine-release-3.23.3-r0 description:
 Alpine release data
 
-alpine-release-3.23.2-r0 webpage:
+alpine-release-3.23.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.2-r0 installed size:
+alpine-release-3.23.3-r0 installed size:
 343 B
 
-alpine-release-3.23.2-r0 license:
+alpine-release-3.23.3-r0 license:
 MIT
 
 ```
@@ -1437,16 +1437,16 @@ GPL-3.0-or-later AND LGPL-2.1-or-later AND MIT
 ### `apk` package: `grpc`
 
 ```console
-grpc-1.76.0-r1 description:
+grpc-1.76.0-r2 description:
 The C based gRPC
 
-grpc-1.76.0-r1 webpage:
+grpc-1.76.0-r2 webpage:
 https://grpc.io/
 
-grpc-1.76.0-r1 installed size:
+grpc-1.76.0-r2 installed size:
 260 KiB
 
-grpc-1.76.0-r1 license:
+grpc-1.76.0-r2 license:
 Apache-2.0 AND BSD-3-Clause AND MIT
 
 ```
@@ -1454,16 +1454,16 @@ Apache-2.0 AND BSD-3-Clause AND MIT
 ### `apk` package: `grpc-cpp`
 
 ```console
-grpc-cpp-1.76.0-r1 description:
+grpc-cpp-1.76.0-r2 description:
 C++ language bindings for gRPC
 
-grpc-cpp-1.76.0-r1 webpage:
+grpc-cpp-1.76.0-r2 webpage:
 https://grpc.io/
 
-grpc-cpp-1.76.0-r1 installed size:
+grpc-cpp-1.76.0-r2 installed size:
 2516 KiB
 
-grpc-cpp-1.76.0-r1 license:
+grpc-cpp-1.76.0-r2 license:
 Apache-2.0 AND BSD-3-Clause AND MIT
 
 ```
@@ -1505,16 +1505,16 @@ ICU
 ### `apk` package: `libaddress_sorting`
 
 ```console
-libaddress_sorting-1.76.0-r1 description:
+libaddress_sorting-1.76.0-r2 description:
 The C based gRPC (libaddress_sorting library)
 
-libaddress_sorting-1.76.0-r1 webpage:
+libaddress_sorting-1.76.0-r2 webpage:
 https://grpc.io/
 
-libaddress_sorting-1.76.0-r1 installed size:
+libaddress_sorting-1.76.0-r2 installed size:
 13 KiB
 
-libaddress_sorting-1.76.0-r1 license:
+libaddress_sorting-1.76.0-r2 license:
 Apache-2.0 AND BSD-3-Clause AND MIT
 
 ```
@@ -1590,16 +1590,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.4-r0 description:
+libcrypto3-3.5.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.4-r0 webpage:
+libcrypto3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.4-r0 installed size:
+libcrypto3-3.5.5-r0 installed size:
 5083 KiB
 
-libcrypto3-3.5.4-r0 license:
+libcrypto3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -1709,16 +1709,16 @@ GD
 ### `apk` package: `libgpr`
 
 ```console
-libgpr-1.76.0-r1 description:
+libgpr-1.76.0-r2 description:
 The C based gRPC (libgpr library)
 
-libgpr-1.76.0-r1 webpage:
+libgpr-1.76.0-r2 webpage:
 https://grpc.io/
 
-libgpr-1.76.0-r1 installed size:
+libgpr-1.76.0-r2 installed size:
 120 KiB
 
-libgpr-1.76.0-r1 license:
+libgpr-1.76.0-r2 license:
 Apache-2.0 AND BSD-3-Clause AND MIT
 
 ```
@@ -1726,16 +1726,16 @@ Apache-2.0 AND BSD-3-Clause AND MIT
 ### `apk` package: `libgrpc`
 
 ```console
-libgrpc-1.76.0-r1 description:
+libgrpc-1.76.0-r2 description:
 The C based gRPC (libgrpc library)
 
-libgrpc-1.76.0-r1 webpage:
+libgrpc-1.76.0-r2 webpage:
 https://grpc.io/
 
-libgrpc-1.76.0-r1 installed size:
+libgrpc-1.76.0-r2 installed size:
 10 MiB
 
-libgrpc-1.76.0-r1 license:
+libgrpc-1.76.0-r2 license:
 Apache-2.0 AND BSD-3-Clause AND MIT
 
 ```
@@ -1743,16 +1743,16 @@ Apache-2.0 AND BSD-3-Clause AND MIT
 ### `apk` package: `libgrpc_unsecure`
 
 ```console
-libgrpc_unsecure-1.76.0-r1 description:
+libgrpc_unsecure-1.76.0-r2 description:
 The C based gRPC (libgrpc_unsecure library)
 
-libgrpc_unsecure-1.76.0-r1 webpage:
+libgrpc_unsecure-1.76.0-r2 webpage:
 https://grpc.io/
 
-libgrpc_unsecure-1.76.0-r1 installed size:
+libgrpc_unsecure-1.76.0-r2 installed size:
 7200 KiB
 
-libgrpc_unsecure-1.76.0-r1 license:
+libgrpc_unsecure-1.76.0-r2 license:
 Apache-2.0 AND BSD-3-Clause AND MIT
 
 ```
@@ -1862,16 +1862,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.53-r0 description:
+libpng-1.6.54-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.53-r0 webpage:
+libpng-1.6.54-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.53-r0 installed size:
-181 KiB
+libpng-1.6.54-r0 installed size:
+177 KiB
 
-libpng-1.6.53-r0 license:
+libpng-1.6.54-r0 license:
 Libpng
 
 ```
@@ -1981,16 +1981,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.4-r0 description:
+libssl3-3.5.5-r0 description:
 SSL shared libraries
 
-libssl3-3.5.4-r0 webpage:
+libssl3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.4-r0 installed size:
+libssl3-3.5.5-r0 installed size:
 819 KiB
 
-libssl3-3.5.4-r0 license:
+libssl3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -2032,16 +2032,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libupb_base_lib`
 
 ```console
-libupb_base_lib-1.76.0-r1 description:
+libupb_base_lib-1.76.0-r2 description:
 The C based gRPC (libupb_base_lib library)
 
-libupb_base_lib-1.76.0-r1 webpage:
+libupb_base_lib-1.76.0-r2 webpage:
 https://grpc.io/
 
-libupb_base_lib-1.76.0-r1 installed size:
+libupb_base_lib-1.76.0-r2 installed size:
 13 KiB
 
-libupb_base_lib-1.76.0-r1 license:
+libupb_base_lib-1.76.0-r2 license:
 Apache-2.0 AND BSD-3-Clause AND MIT
 
 ```
@@ -2049,16 +2049,16 @@ Apache-2.0 AND BSD-3-Clause AND MIT
 ### `apk` package: `libupb_json_lib`
 
 ```console
-libupb_json_lib-1.76.0-r1 description:
+libupb_json_lib-1.76.0-r2 description:
 The C based gRPC (libupb_json_lib library)
 
-libupb_json_lib-1.76.0-r1 webpage:
+libupb_json_lib-1.76.0-r2 webpage:
 https://grpc.io/
 
-libupb_json_lib-1.76.0-r1 installed size:
+libupb_json_lib-1.76.0-r2 installed size:
 41 KiB
 
-libupb_json_lib-1.76.0-r1 license:
+libupb_json_lib-1.76.0-r2 license:
 Apache-2.0 AND BSD-3-Clause AND MIT
 
 ```
@@ -2066,16 +2066,16 @@ Apache-2.0 AND BSD-3-Clause AND MIT
 ### `apk` package: `libupb_mem_lib`
 
 ```console
-libupb_mem_lib-1.76.0-r1 description:
+libupb_mem_lib-1.76.0-r2 description:
 The C based gRPC (libupb_mem_lib library)
 
-libupb_mem_lib-1.76.0-r1 webpage:
+libupb_mem_lib-1.76.0-r2 webpage:
 https://grpc.io/
 
-libupb_mem_lib-1.76.0-r1 installed size:
+libupb_mem_lib-1.76.0-r2 installed size:
 13 KiB
 
-libupb_mem_lib-1.76.0-r1 license:
+libupb_mem_lib-1.76.0-r2 license:
 Apache-2.0 AND BSD-3-Clause AND MIT
 
 ```
@@ -2083,16 +2083,16 @@ Apache-2.0 AND BSD-3-Clause AND MIT
 ### `apk` package: `libupb_message_lib`
 
 ```console
-libupb_message_lib-1.76.0-r1 description:
+libupb_message_lib-1.76.0-r2 description:
 The C based gRPC (libupb_message_lib library)
 
-libupb_message_lib-1.76.0-r1 webpage:
+libupb_message_lib-1.76.0-r2 webpage:
 https://grpc.io/
 
-libupb_message_lib-1.76.0-r1 installed size:
+libupb_message_lib-1.76.0-r2 installed size:
 33 KiB
 
-libupb_message_lib-1.76.0-r1 license:
+libupb_message_lib-1.76.0-r2 license:
 Apache-2.0 AND BSD-3-Clause AND MIT
 
 ```
@@ -2100,16 +2100,16 @@ Apache-2.0 AND BSD-3-Clause AND MIT
 ### `apk` package: `libupb_textformat_lib`
 
 ```console
-libupb_textformat_lib-1.76.0-r1 description:
+libupb_textformat_lib-1.76.0-r2 description:
 The C based gRPC (libupb_textformat_lib library)
 
-libupb_textformat_lib-1.76.0-r1 webpage:
+libupb_textformat_lib-1.76.0-r2 webpage:
 https://grpc.io/
 
-libupb_textformat_lib-1.76.0-r1 installed size:
+libupb_textformat_lib-1.76.0-r2 installed size:
 21 KiB
 
-libupb_textformat_lib-1.76.0-r1 license:
+libupb_textformat_lib-1.76.0-r2 license:
 Apache-2.0 AND BSD-3-Clause AND MIT
 
 ```
@@ -2661,16 +2661,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.1-r0 description:
+xz-libs-5.8.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.1-r0 webpage:
+xz-libs-5.8.2-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.1-r0 installed size:
+xz-libs-5.8.2-r0 installed size:
 221 KiB
 
-xz-libs-5.8.1-r0 license:
+xz-libs-5.8.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
