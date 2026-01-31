@@ -1,7 +1,7 @@
 ## `php:8-fpm-alpine3.23`
 
 ```console
-$ docker pull php@sha256:1980e5261a4cce91ac8a0e5d19f9ae04dceece24f9a15152f7228e1b9c0023dc
+$ docker pull php@sha256:76ac6b60a1838ea3f3c76c8dbada94013992d7e134c13a38c6b953daacf9dab3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -838,13 +838,13 @@ $ docker pull php@sha256:0ab69e048cf54493ffd79f201c66a0c7e56306c717434f0faa099bd
 ### `php:8-fpm-alpine3.23` - linux; riscv64
 
 ```console
-$ docker pull php@sha256:b07cd19d031aadc048d9acaf850e23db4e8894d3e6d927cc7a62be643b636fd5
+$ docker pull php@sha256:5c7d9a365f2381c0529c1cdfaf40404f4ce7b31daf1036e36eecab97d685ca40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.1 MB (37097539 bytes)**  
+-	Total Size: **37.1 MB (37097544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc77e4fab37261747c755d49e7ec7fdc315c1c653e132a654825666cd2193ca1`
+-	Image ID: `sha256:29f1152ac6a9f798f73fc184bf4942cbb6512c0e605b77f4d46b28468b62ee92`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -891,13 +891,13 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Wed, 28 Jan 2026 11:14:10 GMT
 WORKDIR /var/www/html
-# Wed, 28 Jan 2026 11:14:11 GMT
-RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen adddress for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Wed, 28 Jan 2026 11:14:11 GMT
+# Sat, 31 Jan 2026 11:24:56 GMT
+RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
+# Sat, 31 Jan 2026 11:24:56 GMT
 STOPSIGNAL SIGQUIT
-# Wed, 28 Jan 2026 11:14:11 GMT
+# Sat, 31 Jan 2026 11:24:56 GMT
 EXPOSE map[9000/tcp:{}]
-# Wed, 28 Jan 2026 11:14:11 GMT
+# Sat, 31 Jan 2026 11:24:56 GMT
 CMD ["php-fpm"]
 ```
 
@@ -942,33 +942,33 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbf8bd00ed72de6a2be087511363e6b701e9efd745c122d947fce55dedaa1f3d`  
-		Last Modified: Wed, 28 Jan 2026 11:15:15 GMT  
-		Size: 9.3 KB (9265 bytes)  
+	-	`sha256:adf91c2c6714a86e47efb92f7a3e146a7290fc38aeefe9259cade6a46e0bfc18`  
+		Last Modified: Sat, 31 Jan 2026 11:25:32 GMT  
+		Size: 9.3 KB (9270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `php:8-fpm-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull php@sha256:19fc81ca30a64cc886fe4e9de729fe5e57a940484988e15b54c0d9e280900a60
+$ docker pull php@sha256:585c0cddfc46931311171eb965732b01c1d69e3d6c5c16a7f64e48bc62290db0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **327.6 KB (327613 bytes)**  
+-	Total Size: **327.6 KB (327612 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:656d8b0665316bfc12a3855c2b90dd0d7cb5fe26e13d0777163652aa93f8db07`
+-	Image ID: `sha256:037d8d38b2ad56025503d81764f11f0cca16bda6f0c2af5caea7c2845758c04c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eebc8317621422a4c0edb0d7384cbe35c9335d955e93ba2564e06c7bef554980`  
-		Last Modified: Wed, 28 Jan 2026 11:15:14 GMT  
+	-	`sha256:036727e71f54aec83e0d072e274841b41221f193cb980801f8bad9185de7b0de`  
+		Last Modified: Sat, 31 Jan 2026 11:25:32 GMT  
 		Size: 278.5 KB (278531 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b34b624c52bc1eda37f0e763b3f409adecf103f27b219308a4fe1a558ff2baca`  
-		Last Modified: Wed, 28 Jan 2026 11:15:14 GMT  
-		Size: 49.1 KB (49082 bytes)  
+	-	`sha256:08a178a8f44d430af9bd43abda705daf3bcdd64d38b37a678539a0eeec7327e5`  
+		Last Modified: Sat, 31 Jan 2026 11:25:32 GMT  
+		Size: 49.1 KB (49081 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `php:8-fpm-alpine3.23` - linux; s390x
