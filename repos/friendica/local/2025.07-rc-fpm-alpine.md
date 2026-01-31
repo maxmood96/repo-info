@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:04206763cd457850312957b724e62aaac217a809e50bcb12053e111de1102b0c`
-- Created: `2026-01-16T23:34:40.515338433Z`
-- Virtual Size: ~ 154.49 Mb  
+- Image ID: `sha256:a9d001e33bc0f5a6a5782d81c1332ee34cae0151f4a31135857025ae04b7b291`
+- Created: `2026-01-30T02:24:55.376065212Z`
+- Virtual Size: ~ 154.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -101,16 +101,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.2-r0 description:
+alpine-release-3.23.3-r0 description:
 Alpine release data
 
-alpine-release-3.23.2-r0 webpage:
+alpine-release-3.23.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.2-r0 installed size:
+alpine-release-3.23.3-r0 installed size:
 343 B
 
-alpine-release-3.23.2-r0 license:
+alpine-release-3.23.3-r0 license:
 MIT
 
 ```
@@ -679,16 +679,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.12-r0 description:
+imagemagick-7.1.2.13-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.12-r0 webpage:
+imagemagick-7.1.2.13-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.12-r0 installed size:
-3667 KiB
+imagemagick-7.1.2.13-r0 installed size:
+3663 KiB
 
-imagemagick-7.1.2.12-r0 license:
+imagemagick-7.1.2.13-r0 license:
 ImageMagick
 
 ```
@@ -696,16 +696,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.12-r0 description:
+imagemagick-jpeg-7.1.2.13-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.12-r0 webpage:
+imagemagick-jpeg-7.1.2.13-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.12-r0 installed size:
+imagemagick-jpeg-7.1.2.13-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.12-r0 license:
+imagemagick-jpeg-7.1.2.13-r0 license:
 ImageMagick
 
 ```
@@ -713,16 +713,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.12-r0 description:
+imagemagick-libs-7.1.2.13-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.12-r0 webpage:
+imagemagick-libs-7.1.2.13-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.12-r0 installed size:
+imagemagick-libs-7.1.2.13-r0 installed size:
 4245 KiB
 
-imagemagick-libs-7.1.2.12-r0 license:
+imagemagick-libs-7.1.2.13-r0 license:
 ImageMagick
 
 ```
@@ -730,16 +730,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.12-r0 description:
+imagemagick-webp-7.1.2.13-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.12-r0 webpage:
+imagemagick-webp-7.1.2.13-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.12-r0 installed size:
+imagemagick-webp-7.1.2.13-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.12-r0 license:
+imagemagick-webp-7.1.2.13-r0 license:
 ImageMagick
 
 ```
@@ -917,16 +917,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.4-r0 description:
+libcrypto3-3.5.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.4-r0 webpage:
+libcrypto3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.4-r0 installed size:
+libcrypto3-3.5.5-r0 installed size:
 5083 KiB
 
-libcrypto3-3.5.4-r0 license:
+libcrypto3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -951,16 +951,16 @@ curl
 ### `apk` package: `libeconf`
 
 ```console
-libeconf-0.8.0-r0 description:
+libeconf-0.8.3-r0 description:
 Enhanced Config File Parser
 
-libeconf-0.8.0-r0 webpage:
+libeconf-0.8.3-r0 webpage:
 https://github.com/openSUSE/libeconf
 
-libeconf-0.8.0-r0 installed size:
+libeconf-0.8.3-r0 installed size:
 64 KiB
 
-libeconf-0.8.0-r0 license:
+libeconf-0.8.3-r0 license:
 MIT
 
 ```
@@ -1274,16 +1274,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.53-r0 description:
+libpng-1.6.54-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.53-r0 webpage:
+libpng-1.6.54-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.53-r0 installed size:
-181 KiB
+libpng-1.6.54-r0 installed size:
+177 KiB
 
-libpng-1.6.53-r0 license:
+libpng-1.6.54-r0 license:
 Libpng
 
 ```
@@ -1393,16 +1393,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.4-r0 description:
+libssl3-3.5.5-r0 description:
 SSL shared libraries
 
-libssl3-3.5.4-r0 webpage:
+libssl3-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.4-r0 installed size:
+libssl3-3.5.5-r0 installed size:
 819 KiB
 
-libssl3-3.5.4-r0 license:
+libssl3-3.5.5-r0 license:
 Apache-2.0
 
 ```
@@ -1852,16 +1852,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.4-r0 description:
+openssl-3.5.5-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.4-r0 webpage:
+openssl-3.5.5-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.4-r0 installed size:
+openssl-3.5.5-r0 installed size:
 801 KiB
 
-openssl-3.5.4-r0 license:
+openssl-3.5.5-r0 license:
 Apache-2.0
 
 ```
