@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd98b0a3af5db208ddfb259bb5b6c299c0ae24d61a82784c4d69413a0be73800`
-- Created: `2026-01-05T18:21:58.425820868Z`
+- Image ID: `sha256:0d05b530a659afccf34d95082113c5be3ebacf05ef29ee195a0e1d3145144a8f`
+- Created: `2026-01-29T18:13:14.971719458Z`
 - Virtual Size: ~ 93.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -222,15 +222,15 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-1.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/gdbm-1.23-1.el9.src.rpm
 ```
 
-### `rpm` package: `glib2-2.68.4-18.el9_7.x86_64`
+### `rpm` package: `glib2-2.68.4-18.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.68.4-18.el9_7
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/glib2-2.68.4-18.el9_7.src.rpm
+$ dnf --quiet download --source --url glib2-2.68.4-18.el9_7.1
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/glib2-2.68.4-18.el9_7.1.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.34-231.el9_7.2.x86_64`
@@ -277,15 +277,15 @@ $ dnf --quiet download --source --url gmp-6.2.0-13.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/gmp-6.2.0-13.el9.src.rpm
 ```
 
-### `rpm` package: `gnupg2-2.3.3-4.el9.x86_64`
+### `rpm` package: `gnupg2-2.3.3-5.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gnupg2-2.3.3-4.el9
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/gnupg2-2.3.3-4.el9.src.rpm
+$ dnf --quiet download --source --url gnupg2-2.3.3-5.el9_7
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/gnupg2-2.3.3-5.el9_7.src.rpm
 ```
 
 ### `rpm` package: `gnutls-3.8.3-9.el9.x86_64`
@@ -910,26 +910,26 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-fips-provider-3.5.1-4.el9_7.x86_64`
+### `rpm` package: `openssl-fips-provider-3.5.1-7.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-fips-provider-3.5.1-4.el9_7
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/openssl-3.5.1-4.el9_7.src.rpm
+$ dnf --quiet download --source --url openssl-fips-provider-3.5.1-7.el9_7
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/openssl-3.5.1-7.el9_7.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.5.1-4.el9_7.x86_64`
+### `rpm` package: `openssl-libs-3.5.1-7.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-3.5.1-4.el9_7
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/openssl-3.5.1-4.el9_7.src.rpm
+$ dnf --quiet download --source --url openssl-libs-3.5.1-7.el9_7
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/openssl-3.5.1-7.el9_7.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.25.3-3.el9_5.x86_64`
