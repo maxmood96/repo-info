@@ -2176,9 +2176,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-90.91
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.dsc' linux_6.8.0-90.91.dsc 9362 SHA512:42abcfe6580eb6570fd83c3f819d27acfc94c00b40ddea17d1e7ac91b2b45b7f006bf9fa8b1acfe4c911040fb8ba878b3afb73d05494cd06cc44279b61b17890
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.diff.gz' linux_6.8.0-90.91.diff.gz 6075998 SHA512:e63209e51a8b6c9d38b3177e85a1a22f5c67eb9ab6eba8830caae022c155abee8ce44fb570b8ea87c3b8166f5d5f508928322932f4273356a46ab822eda98497
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.dsc' linux_6.8.0-90.91.dsc 9362 SHA512:42abcfe6580eb6570fd83c3f819d27acfc94c00b40ddea17d1e7ac91b2b45b7f006bf9fa8b1acfe4c911040fb8ba878b3afb73d05494cd06cc44279b61b17890
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.diff.gz' linux_6.8.0-90.91.diff.gz 6075998 SHA512:e63209e51a8b6c9d38b3177e85a1a22f5c67eb9ab6eba8830caae022c155abee8ce44fb570b8ea87c3b8166f5d5f508928322932f4273356a46ab822eda98497
 ```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
