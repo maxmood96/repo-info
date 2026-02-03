@@ -1287,15 +1287,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.6.dsc' glibc_2.39-0ubuntu8.6.dsc 9387 SHA512:6467b02c2dcf5a07856a3526ece393fdcd0f7c6aa9d22f20fd42a45a02ad050f995dabd7068f1ddd9aee6ab5ae7810590e00173ecf2ded40231c880d9bf28fe8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 18520988 SHA512:818f58172a52815b4338ea9f2a69ecaa3335492b9f8f64cbf8afb24c0d737982341968ecd79631cae3d3074ab0ae4bc6056fc4ba3ffe790849dc374835cd57e2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc' glibc_2.39.orig.tar.xz.asc 833 SHA512:5c054af523bbf5c2453363c023eadd1a75b6a5ff55c739011030115d3b117dbfc7d80cc74fbf157ea74a8d24aa14ff560c675374f875ec5c1ed3030e26a5ee07
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.6.debian.tar.xz' glibc_2.39-0ubuntu8.6.debian.tar.xz 467000 SHA512:5670e98edb2396b6f9fcf021c1f3da5fbb95ba7330e309f9039a5d0a3f148f4298454de70c565fdf9dfeb97edb4e9de6eeb65bd8e19d054c6346642867172d03
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6.1`
 
@@ -2499,14 +2493,9 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.43-5ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.3.dsc' libpng1.6_1.6.43-5ubuntu0.3.dsc 2384 SHA512:a4a024fbfe9728cb52028d729326427f945e529aeaf844b889d01eb4f4efa7b7a049ab3648895e2f8155d08b841467029371a36c12c14b21dac3234e1541bec8
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43.orig.tar.gz' libpng1.6_1.6.43.orig.tar.gz 1554715 SHA512:3bb2a7b73113be42b09c2116e6c6f5a7ddb4e2ab06e0b13e10b7314acdccc4bb624ff602e16140c0484f6cde80efa190296226be3da195c6926819f07c723c12
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.3.debian.tar.xz' libpng1.6_1.6.43-5ubuntu0.3.debian.tar.xz 38892 SHA512:e137bcb58708ed1e5658fab2e92587a2c251293c0a3bb86b1e2877d3cd98f6889314ba7c438bc505f7a011d98b15ee4edd933c946394ebf09c0eb2a6f9348a42
-```
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build1`
 
@@ -3165,9 +3154,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-90.91
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.dsc' linux_6.8.0-90.91.dsc 9362 SHA512:42abcfe6580eb6570fd83c3f819d27acfc94c00b40ddea17d1e7ac91b2b45b7f006bf9fa8b1acfe4c911040fb8ba878b3afb73d05494cd06cc44279b61b17890
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.diff.gz' linux_6.8.0-90.91.diff.gz 6075998 SHA512:e63209e51a8b6c9d38b3177e85a1a22f5c67eb9ab6eba8830caae022c155abee8ce44fb570b8ea87c3b8166f5d5f508928322932f4273356a46ab822eda98497
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.dsc' linux_6.8.0-90.91.dsc 9362 SHA512:42abcfe6580eb6570fd83c3f819d27acfc94c00b40ddea17d1e7ac91b2b45b7f006bf9fa8b1acfe4c911040fb8ba878b3afb73d05494cd06cc44279b61b17890
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.diff.gz' linux_6.8.0-90.91.diff.gz 6075998 SHA512:e63209e51a8b6c9d38b3177e85a1a22f5c67eb9ab6eba8830caae022c155abee8ce44fb570b8ea87c3b8166f5d5f508928322932f4273356a46ab822eda98497
 ```
 
 ### `dpkg` source package: `lto-disabled-list=47`
@@ -3437,14 +3426,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.0=8.0.44-0ubuntu0.24.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.44-0ubuntu0.24.04.2.dsc' mysql-8.0_8.0.44-0ubuntu0.24.04.2.dsc 3613 SHA512:6c8edaa09cef7c80bc179941be94081fd4ed3045a66cb6f08c70fdc2a05c051b8db444c08ebececc95056479baef3a0bc62741b26629e4e87559cfa49182a4aa
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.44.orig.tar.gz' mysql-8.0_8.0.44.orig.tar.gz 492448984 SHA512:f6881d6f88a4060796e1eac47c1ffe3ea005c27f1b0509fd97774ba5b1e7bf86d0f8c4e13126750f0cc3dd86af92c26459ae8fecf9e8f0f058dab43e93bb3b42
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.44-0ubuntu0.24.04.2.debian.tar.xz' mysql-8.0_8.0.44-0ubuntu0.24.04.2.debian.tar.xz 146428 SHA512:189f862edc0e65722954c321797eaf580fcb655912bb1479a45373b9dbd9d2a27f8ffacf2b8517851c9ae8ce6b290c5a982115d1a1248c84c605d11fa92800ce
-```
 
 ### `dpkg` source package: `mysql-defaults=1.1.0build1`
 
@@ -3669,14 +3653,9 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.6.7+dfsg-1~exp1ubuntu8.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.dsc' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.dsc 3488 SHA512:b262ce1ec8742801dadaa6c50393cd2da7359200f6c42c0f2573be883deb13b2e71b85169ba8db1edf5ec11ef5e0122c2f839f4320ead4041423e9a3fa03b679
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg.orig.tar.xz' openldap_2.6.7+dfsg.orig.tar.xz 3774648 SHA512:84e02268b096347049b61947a56b5aa13d4d8548eed1bd472821c99fcd0208293d300b6bb78c4acd0e30a20fdd1851894c2f89f6365a359de856e1b095506014
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.debian.tar.xz' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.debian.tar.xz 186792 SHA512:276056a2c445949ab7cba305eb760f8793b5bae6c487c9301da94553b1c8d83ada9279a537800deef7fc434af4352585071514bafdc9172ac766feb739c590cc
-```
 
 ### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.14`
 
@@ -3719,14 +3698,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.6.dsc' openssl_3.0.13-0ubuntu3.6.dsc 2512 SHA512:e57effde33e3e978184e1c2d5167d8f8c1c881aae59f81dfbedeca0004488434c3dff227bec9ca6e3f701c01a9c5a7a3c8ffb3fef3533d9dee0f46b64d03e535
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.6.debian.tar.xz' openssl_3.0.13-0ubuntu3.6.debian.tar.xz 169500 SHA512:bc33f7a4d5c577cc622062b2337a2b897bc06dd6592f6e636832529ff8ebde4f5fcb5d35589d041ec498386d7ec63df2b76f37aaab0b0cddf35a4d53c8a5cc3f
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 

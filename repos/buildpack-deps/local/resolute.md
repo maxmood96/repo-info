@@ -411,14 +411,9 @@ Licenses: (parsed from: `/usr/share/doc/bzip2/copyright`, `/usr/share/doc/libbz2
 - `BSD-variant`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bzip2=1.0.8-6build1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-6build1.dsc' bzip2_1.0.8-6build1.dsc 2205 SHA512:47d8fdf23ef3206d24a55f853c22afe119fd7477b5b4216124e660ed1bb480dc1a1e50e37ebbbe230f83ed98ff8df5bf6757637970f4ba4fac16933f3a6ca24a
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8.orig.tar.gz' bzip2_1.0.8.orig.tar.gz 810029 SHA512:083f5e675d73f3233c7930ebe20425a533feedeaaa9d8cc86831312a6581cefbe6ed0d08d2fa89be81082f2a5abdabca8b3c080bf97218a1bd59dc118a30b9f3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-6build1.debian.tar.bz2' bzip2_1.0.8-6build1.debian.tar.bz2 27106 SHA512:a2ff1b0103beb918d33f75d8e096e9af2c3911604f81468045aa5e7f659f7e203d1144977a52a52b9abc9f1348fff7ed5f2d5bc8874795e68335a939b58a9e13
-```
 
 ### `dpkg` source package: `ca-certificates=20250419`
 
@@ -866,14 +861,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.7.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.7.3-1.dsc' expat_2.7.3-1.dsc 1964 SHA512:6e1aa9b52d435a30bc0274f89d00418247d352740c3d95b4995a8f6267dd8b05f4f76cb257ad6fb3097806764bb7ef4cedf75447c5c5b54fda976d1abce0fa96
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.7.3.orig.tar.gz' expat_2.7.3.orig.tar.gz 8441347 SHA512:34400f7dff0151a38c5ff7d73b65b57c7fdf648cf407ed94beddf2d11511b650c4ea16e417a15ebe1707456e7279210e929cc97a0caf7a1ff45bf1d07275e815
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.7.3-1.debian.tar.xz' expat_2.7.3-1.debian.tar.xz 13480 SHA512:206335f0ff93e361dc6f72f0cac7dc78e7151c669f8b62f24afffe6df3d3cbcccb52b0c8b32f68370890c26d525c21b012a8691fd5e751acd5e0b09cabec832b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/expat/2.7.3-1/
+
 
 ### `dpkg` source package: `fftw3=3.3.10-2fakesync1build2`
 
@@ -1099,14 +1093,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-15/copyright`, `/usr/share/doc/cpp-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.2.0-11ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-11ubuntu1.dsc' gcc-15_15.2.0-11ubuntu1.dsc 52487 SHA512:0827e20f50c9fa9d11f434e2087b1a6806df2df6cd9b1b98b06e1a9d7d16e8c2ca99858418bed67fb1e29c3fa4470c5a5a065f9420b2640376d873d725cb2e16
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0.orig.tar.gz' gcc-15_15.2.0.orig.tar.gz 105962230 SHA512:83887af5c7798105d1ad85f0e9c794daa3cf030638bf40b3bff48771b8325d95c9a0d99d7d2c86c8e45499ff87f975e1914d00b72482862357645cc7ec330d38
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-11ubuntu1.debian.tar.xz' gcc-15_15.2.0-11ubuntu1.debian.tar.xz 2825792 SHA512:f4573538a8a3a960025fd4181a622767cb596aad6b94f3b1e7e93d8beb1fb47d60e58aec1cc5cb1bfc178dba3b752e55bb32e06af381a9bba4cfb31356dd2c21
-```
 
 ### `dpkg` source package: `gcc-defaults=1.229ubuntu1`
 
@@ -2853,14 +2842,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcb=1.17.0-2build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.17.0-2build1.dsc' libxcb_1.17.0-2build1.dsc 5342 SHA512:b5699ae99bea4417bbe0a782d0baeadd37eaf884849f445e599f7f2aee2df82eabb9f6f9d8277173cbf89983ca13d72832d683690955b7214ab3814a6211368d
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.17.0.orig.tar.gz' libxcb_1.17.0.orig.tar.gz 661593 SHA512:58624a33d39371a7ff58368ed5a09c1c31bea3abd040173db1d41018de4208bc52d2fb8cfd7382ff34d01b98d01a3e314a71a808533880564cd51cd96624a7bb
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.17.0-2build1.diff.gz' libxcb_1.17.0-2build1.diff.gz 28164 SHA512:9418678258175fe3159f983df25bafbb23224b986ff6ae201f165267beb2d0c99bf41956e7142746f4d76c9d3009a82539b0465ffb5fcf5b9856e9ff20b08c62
-```
 
 ### `dpkg` source package: `libxcrypt=1:4.5.1-1`
 
@@ -3997,14 +3981,13 @@ Licenses: (parsed from: `/usr/share/doc/rpcsvc-proto/copyright`)
 - `permissive-fsf`
 - `permissive-makefile-in`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rpcsvc-proto=1.4.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rpcsvc-proto/rpcsvc-proto_1.4.3-1.dsc' rpcsvc-proto_1.4.3-1.dsc 1999 SHA512:3b63c54c958b9b1e8d76fe59bfb91d8ace5727427daad8bd421ddf149a373f4ab4de6c9b3b1350149f0bbc1a6d394648e50d764261a6f0f8ee5b653b10899358
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rpcsvc-proto/rpcsvc-proto_1.4.3.orig.tar.xz' rpcsvc-proto_1.4.3.orig.tar.xz 167964 SHA512:e46ba9ccdd6c520128bf3a154db90742f288a4d593b094a630141cdc5aeb834ffebf9b0eb6d5d0aad9faef3c445c75e2355cbc3e1382b50d29f4d2799441c6e9
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rpcsvc-proto/rpcsvc-proto_1.4.3-1.debian.tar.xz' rpcsvc-proto_1.4.3-1.debian.tar.xz 4228 SHA512:16c6107db0a7ba3971bed2ddbb95a5a3ba24bc387f7ef3b869504d2488080c2957bacb48961a5f8b46433e323151ed2644858fffdad566bc4a424da60965309f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/rpcsvc-proto/1.4.3-1/
+
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-3`
 
@@ -4169,15 +4152,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-8.dsc' sqlite3_3.46.1-8.dsc 2632 SHA512:645ab3e91282c45ca08fcfbc583708bfbfe362fe7d10a8e32742fc3f7a6d962f7619213f152dd768ca3b1fd8d26f445936c336776c57c33b1f99b52ca7c9b3e1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-8.debian.tar.xz' sqlite3_3.46.1-8.debian.tar.xz 35784 SHA512:77d689cf1b072fd2250e4f651ac55ebc36f1b7194149fb70b8595a845bd2d6c0733f0bb74a5bda62ed9f37f8aafebc252a84f157709b6da9c2941c0fdc509ce5
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.46.1-8/
+
 
 ### `dpkg` source package: `subversion=1.14.5-5`
 
@@ -4603,15 +4584,9 @@ Licenses: (parsed from: `/usr/share/doc/x11proto-dev/copyright`)
 - `MIT`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xorgproto=2024.1-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorgproto/xorgproto_2024.1-1build1.dsc' xorgproto_2024.1-1build1.dsc 3360 SHA512:150ea532959f50cc84cf1d63d9f80da20d5198a9e9614eda9a9f193095fc2a20050508be695cba4f57583acba48b7e2e1ddc585b71186fdecfc1c9aab4d2808e
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorgproto/xorgproto_2024.1.orig.tar.gz' xorgproto_2024.1.orig.tar.gz 1115486 SHA512:c2d67a98c5ba9b2f4d0b844c96dab342c497710753a8878b75dbf12ecd64b105c9ee3c5fd11eb91e45960420cf8dd7d02547072a32d5c53e58e009394fe33666
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorgproto/xorgproto_2024.1.orig.tar.gz.asc' xorgproto_2024.1.orig.tar.gz.asc 195 SHA512:9dc7d40a50178f65b47bcd9a360b85f8d40f30e9151bf242d2eef9a12a3d8e5a1488af7e0c0c4c1dbc3e6cb447acd0735fe749290c46d021b4d7e10de3912a33
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorgproto/xorgproto_2024.1-1build1.diff.gz' xorgproto_2024.1-1build1.diff.gz 25183 SHA512:7146341cd53b4d6249a5dc86c55aa4d1e55cc9a03d68b53a63f9fb7f602493f2cd10ebb9f995548efe1d7e03bd83693d23798bd8779ef469191976846760e437
-```
 
 ### `dpkg` source package: `xtrans=1.6.0-1`
 
@@ -4623,14 +4598,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xtrans=1.6.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xtrans/xtrans_1.6.0-1.dsc' xtrans_1.6.0-1.dsc 1883 SHA512:5259522e4ca78afc47fbb175f9cfccfd7d02e7ef97ed0d980c82ae76e519851948604c284c0cd3370e40a903951f0007256732a356465325aa00bb7527512660
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xtrans/xtrans_1.6.0.orig.tar.gz' xtrans_1.6.0.orig.tar.gz 239113 SHA512:1165faf7e62ba3a1eb449867b7e626d21f4191a8980ab411ef4bae3875d60333739bb843559b9a1c7e01f7175e18fc9590cd340608d2939a7588989063cecb5f
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xtrans/xtrans_1.6.0-1.diff.gz' xtrans_1.6.0-1.diff.gz 18507 SHA512:f72e121ee8b8c3e50b184c4d53c47e489d7d343c7a12cbb57a392ccea2e6e7df0cac0ca0dd65b7795a52f44095c60e64d2734214273148e49b0af4cfca0af7b0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/xtrans/1.6.0-1/
+
 
 ### `dpkg` source package: `xxhash=0.8.3-2build1`
 
