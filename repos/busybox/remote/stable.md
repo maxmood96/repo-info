@@ -1,7 +1,7 @@
 ## `busybox:stable`
 
 ```console
-$ docker pull busybox@sha256:851281100cc5f93d8a8f8e1a8976a57ec40a9bc9edd66ad3a621e4aa63326915
+$ docker pull busybox@sha256:b9598f8c98e24d0ad42c1742c32516772c3aa2151011ebaf639089bd18c605b8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -113,18 +113,18 @@ $ docker pull busybox@sha256:238ac27d76a5036d1b30ecc63423f268ecb1d6daf27e30f88fe
 ### `busybox:stable` - linux; arm variant v6
 
 ```console
-$ docker pull busybox@sha256:d00b27e1d976d46a62c2f6072f6c68a4b8b58e9aa6899fef5771d6a27ace19e4
+$ docker pull busybox@sha256:410cc112a49bb59a661cb2431b15e16dcbd55145e7f0760233e785b8a9630f90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **951.2 KB (951204 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4c74f42c524af68e835723336f7584435715d39ce979a8f1d1511f7404bccd7`
+-	Image ID: `sha256:7b973fbce8b913cb5c242d3b9bca7c076ceca91945cec611c2d2ab02692db497`
 -	Default Command: `["sh"]`
 
 ```dockerfile
 # Thu, 18 May 2023 22:34:17 GMT
-RUN BusyBox 1.36.1 (musl), Alpine 3.23.2
+RUN BusyBox 1.36.1 (musl), Alpine 3.23.3
 ```
 
 -	Layers:
