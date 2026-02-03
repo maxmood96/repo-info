@@ -1,7 +1,7 @@
 ## `buildpack-deps:scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:f631bf9350714f68434d1e59476ed861b0511cb095d07210713434b1f2b76260
+$ docker pull buildpack-deps@sha256:8067fc571db66e697ad795a44ab941064729130fa95b94e53610d95d4d5cc437
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -321,60 +321,60 @@ $ docker pull buildpack-deps@sha256:a133febfa9433ee6723f0638968ef9d69e924006716a
 ### `buildpack-deps:scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:e9ef3588e582d716036b46b3cea0a0ef3087d286c7b815803b0decbb02d08f9c
+$ docker pull buildpack-deps@sha256:37236ae03f3a328f47c3ae3f91fc8e64c8a573aabb490ece17dbe25bf067a52a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.1 MB (153142622 bytes)**  
+-	Total Size: **153.1 MB (153142473 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:724533d97ca88754dd019fe93718b23914a53eb407cddf2cbfd6c8e4e0f3297a`
+-	Image ID: `sha256:59ccdbe3b593172ba3d997d4b2fa2e801b1cc2bf698cfaab4a9bfaf999ca39f0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 12 Jan 2026 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1768176000'
-# Tue, 13 Jan 2026 09:15:02 GMT
+# Mon, 02 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1769990400'
+# Tue, 03 Feb 2026 05:24:04 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 13 Jan 2026 15:18:56 GMT
+# Tue, 03 Feb 2026 10:37:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:6ff412c1efdf82a2030de7bb593b97f09e02e2b337f615eb1c3faedeef765d44`  
-		Last Modified: Tue, 13 Jan 2026 08:45:48 GMT  
-		Size: 53.1 MB (53106962 bytes)  
+	-	`sha256:6397fc946e64e7714633f42a4de42b00c617e66212cd1a0b61df76767b81f868`  
+		Last Modified: Tue, 03 Feb 2026 01:16:36 GMT  
+		Size: 53.1 MB (53112115 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f21554c0ffe7aa9121703873815aca94dbbdf6352a46266dc923fc9e36d0d58a`  
-		Last Modified: Tue, 13 Jan 2026 09:18:01 GMT  
-		Size: 27.0 MB (26998052 bytes)  
+	-	`sha256:c8bdc2ae5f94587ddf291ce56c3dd3c244bdeaf3ba39bf6598fe7a02816ade7e`  
+		Last Modified: Tue, 03 Feb 2026 05:24:24 GMT  
+		Size: 27.0 MB (26998144 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb58d20828d54df35a08218c574236606c9e3ab14d0f2ddf036e12abcf8c85d6`  
-		Last Modified: Tue, 13 Jan 2026 15:19:44 GMT  
-		Size: 73.0 MB (73037608 bytes)  
+	-	`sha256:ee79ae595ce83805d9060f1c610385dfe6280391251ea73a1f48c7cf8bcb3f09`  
+		Last Modified: Tue, 03 Feb 2026 10:38:14 GMT  
+		Size: 73.0 MB (73032214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:79133d6ea3b15bd38b4ddf35b938acebe8833849debdc608b764df6811a75141
+$ docker pull buildpack-deps@sha256:e9c88914ec18b09b5c09cc4f5fabf135adad764928d06bb879c2876d1d48bb11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.8 MB (7782877 bytes)**  
+-	Total Size: **7.8 MB (7782876 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e29c3dc2fecd5f53fe5ecaec87a106a215037149db7ed8b9034c2d62dd0fdf`
+-	Image ID: `sha256:60fd8df58da35ad447dcd2624b2862abad08f6e578fd050bf4bb31496c621c9f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:680bd22d091af24ea8e1f849f1fba33a962ac2b424501d61c1bdc3fc28f47180`  
-		Last Modified: Tue, 13 Jan 2026 15:19:42 GMT  
+	-	`sha256:b1fc0f46a74f56f309d54d710e9b626b7c3154afdbc9a17dc187d4375d94dc9e`  
+		Last Modified: Tue, 03 Feb 2026 10:38:12 GMT  
 		Size: 7.8 MB (7775262 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a21380fddd3f94a0c3c6b267d13cf32f3b935972d834a641f6dd56c9e8b264fc`  
-		Last Modified: Tue, 13 Jan 2026 15:19:41 GMT  
-		Size: 7.6 KB (7615 bytes)  
+	-	`sha256:f933f77fc364f36086e1fccfc319f16b8ac91638a7a40a471ffa0063d114aaac`  
+		Last Modified: Tue, 03 Feb 2026 10:38:12 GMT  
+		Size: 7.6 KB (7614 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:scm` - linux; riscv64
