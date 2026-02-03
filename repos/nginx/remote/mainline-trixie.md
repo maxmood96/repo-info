@@ -1,7 +1,7 @@
 ## `nginx:mainline-trixie`
 
 ```console
-$ docker pull nginx@sha256:6c9ab46b34b89274be77bf50253f97bf8f16eb11b98128d5694a8ae9b3efa2ed
+$ docker pull nginx@sha256:9dd288848f4495869f76676e419ae2d767ca99fece2ec37ec0261f9fdaab5204
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -662,107 +662,107 @@ $ docker pull nginx@sha256:1b9bdd8d58fabb2d6b6c43ce80865ea23c25bbe718bcc75a81aad
 ### `nginx:mainline-trixie` - linux; riscv64
 
 ```console
-$ docker pull nginx@sha256:9d1166a60894763e27289c9adb6a45b2195d465f7e25a596882ef4f5c67143a9
+$ docker pull nginx@sha256:e3a8c4cbc95f137ab273522699b715d8dd5756eb4c4e7bf2b1cdb8082ec4620f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **57.5 MB (57548287 bytes)**  
+-	Total Size: **57.6 MB (57552831 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fdb3784d9efd5db3b42712ffbcae01ba4ee01b6d0d2ed5df95b4839919ba856c`
+-	Image ID: `sha256:c7d5fee515cf99b2ecb7ea440741633e12bbdb4ab9df939f55f6c8b01e2cc270`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Mon, 12 Jan 2026 00:00:00 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1768176000'
-# Wed, 14 Jan 2026 09:27:48 GMT
+# Mon, 02 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1769990400'
+# Tue, 03 Feb 2026 14:24:10 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Wed, 14 Jan 2026 09:27:48 GMT
+# Tue, 03 Feb 2026 14:24:10 GMT
 ENV NGINX_VERSION=1.29.4
-# Wed, 14 Jan 2026 09:27:48 GMT
+# Tue, 03 Feb 2026 14:24:10 GMT
 ENV NJS_VERSION=0.9.4
-# Wed, 14 Jan 2026 09:27:48 GMT
+# Tue, 03 Feb 2026 14:24:10 GMT
 ENV NJS_RELEASE=1~trixie
-# Wed, 14 Jan 2026 09:27:48 GMT
+# Tue, 03 Feb 2026 14:24:10 GMT
 ENV ACME_VERSION=0.3.1
-# Wed, 14 Jan 2026 09:27:48 GMT
+# Tue, 03 Feb 2026 14:24:10 GMT
 ENV PKG_RELEASE=1~trixie
-# Wed, 14 Jan 2026 09:27:48 GMT
+# Tue, 03 Feb 2026 14:24:10 GMT
 ENV DYNPKG_RELEASE=1~trixie
-# Wed, 14 Jan 2026 09:27:48 GMT
+# Tue, 03 Feb 2026 14:24:10 GMT
 RUN set -x     && groupadd --system --gid 101 nginx     && useradd --system --gid nginx --no-create-home --home /nonexistent --comment "nginx user" --shell /bin/false --uid 101 nginx     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y gnupg1 ca-certificates     &&     NGINX_GPGKEYS="573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62 8540A6F18833A80E9C1653A42FD21310B49F6B46 9E9BE90EACBCDE69FE9B204CBCDCD8A38D88A2B3";     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;     export GNUPGHOME="$(mktemp -d)";     found='';     for NGINX_GPGKEY in $NGINX_GPGKEYS; do     for server in         hkp://keyserver.ubuntu.com:80         pgp.mit.edu     ; do         echo "Fetching GPG key $NGINX_GPGKEY from $server";         gpg1 --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$NGINX_GPGKEY" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch GPG key $NGINX_GPGKEY" && exit 1;     done;     gpg1 --batch --export $NGINX_GPGKEYS > "$NGINX_GPGKEY_PATH" ;     rm -rf "$GNUPGHOME";     apt-get remove --purge --auto-remove -y gnupg1 && rm -rf /var/lib/apt/lists/*     && dpkgArch="$(dpkg --print-architecture)"     && nginxPackages="         nginx=${NGINX_VERSION}-${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}+${NJS_VERSION}-${NJS_RELEASE}         nginx-module-acme=${NGINX_VERSION}+${ACME_VERSION}-${PKG_RELEASE}     "     && case "$dpkgArch" in         amd64|arm64)             echo "deb [signed-by=$NGINX_GPGKEY_PATH] https://nginx.org/packages/mainline/debian/ trixie nginx" >> /etc/apt/sources.list.d/nginx.list             && apt-get update             ;;         *)             tempDir="$(mktemp -d)"             && chmod 777 "$tempDir"                         && savedAptMark="$(apt-mark showmanual)"                         && apt-get update             && apt-get install --no-install-recommends --no-install-suggests -y                 cargo                 curl                 devscripts                 equivs                 git                 libxml2-utils                 lsb-release                 xsltproc             && (                 cd "$tempDir"                 && export CARGO_HOME="$tempDir/.cargo"                 && REVISION="${NGINX_VERSION}-${PKG_RELEASE}"                 && REVISION=${REVISION%~*}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${REVISION}.tar.gz                 && PKGOSSCHECKSUM="e8b08060e10b8d8819e03533cb4922992ea138bcbf16a89a90593db719f17d78afa1cc4785592260c9c897753ec28c8b0d02c01df4b7d0e0ed286d0a42cef68c *${REVISION}.tar.gz"                 && if [ "$(openssl sha512 -r ${REVISION}.tar.gz)" = "$PKGOSSCHECKSUM" ]; then                     echo "pkg-oss tarball checksum verification succeeded!";                 else                     echo "pkg-oss tarball checksum verification failed!";                     exit 1;                 fi                 && tar xzvf ${REVISION}.tar.gz                 && cd pkg-oss-${REVISION}                 && cd debian                 && for target in base module-geoip module-image-filter module-njs module-xslt module-acme; do                     make rules-$target;                     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --no-install-recommends --yes"                         debuild-$target/nginx-$NGINX_VERSION/debian/control;                 done                 && make base module-geoip module-image-filter module-njs module-xslt module-acme             )                         && apt-mark showmanual | xargs apt-mark auto > /dev/null             && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }                         && ls -lAFh "$tempDir"             && ( cd "$tempDir" && dpkg-scanpackages . > Packages )             && grep '^Package: ' "$tempDir/Packages"             && echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list             && apt-get -o Acquire::GzipIndexes=false update             ;;     esac         && apt-get install --no-install-recommends --no-install-suggests -y                         $nginxPackages                         gettext-base                         curl     && apt-get remove --purge --auto-remove -y && rm -rf /var/lib/apt/lists/* /etc/apt/sources.list.d/nginx.list         && if [ -n "$tempDir" ]; then         apt-get purge -y --auto-remove         && rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list;     fi     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit
-# Wed, 14 Jan 2026 09:27:48 GMT
+# Tue, 03 Feb 2026 14:24:11 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Wed, 14 Jan 2026 09:27:48 GMT
+# Tue, 03 Feb 2026 14:24:11 GMT
 COPY 10-listen-on-ipv6-by-default.sh /docker-entrypoint.d # buildkit
-# Wed, 14 Jan 2026 09:27:49 GMT
+# Tue, 03 Feb 2026 14:24:11 GMT
 COPY 15-local-resolvers.envsh /docker-entrypoint.d # buildkit
-# Wed, 14 Jan 2026 09:27:49 GMT
+# Tue, 03 Feb 2026 14:24:11 GMT
 COPY 20-envsubst-on-templates.sh /docker-entrypoint.d # buildkit
-# Wed, 14 Jan 2026 09:27:49 GMT
+# Tue, 03 Feb 2026 14:24:11 GMT
 COPY 30-tune-worker-processes.sh /docker-entrypoint.d # buildkit
-# Wed, 14 Jan 2026 09:27:49 GMT
+# Tue, 03 Feb 2026 14:24:11 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 14 Jan 2026 09:27:49 GMT
+# Tue, 03 Feb 2026 14:24:11 GMT
 EXPOSE map[80/tcp:{}]
-# Wed, 14 Jan 2026 09:27:49 GMT
+# Tue, 03 Feb 2026 14:24:11 GMT
 STOPSIGNAL SIGQUIT
-# Wed, 14 Jan 2026 09:27:49 GMT
+# Tue, 03 Feb 2026 14:24:11 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
 -	Layers:
-	-	`sha256:8c2d1639f4f145e07ecf59940bfa96f17083c024b5c96e8082c50d6075a08b82`  
-		Last Modified: Tue, 13 Jan 2026 01:07:54 GMT  
-		Size: 28.3 MB (28271687 bytes)  
+	-	`sha256:4526db52defd9278f79daec64ebfa633041460dbe0cfad19564ae34d84b13b4c`  
+		Last Modified: Tue, 03 Feb 2026 07:14:46 GMT  
+		Size: 28.3 MB (28276389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2471e10a3ba1bb86e7ca2ae452ef57942c397a3848dca56bb2176acba2010ecb`  
-		Last Modified: Wed, 14 Jan 2026 09:29:18 GMT  
-		Size: 29.3 MB (29271990 bytes)  
+	-	`sha256:e8624ee1efdd981e5b29a6537a947aed12839cc4a5b805c5afa53b7c5eb22a01`  
+		Last Modified: Tue, 03 Feb 2026 14:25:42 GMT  
+		Size: 29.3 MB (29271836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c1f6d0ce19b25db4bca22497caaf625274b286d4b542b7d8d3adb95f5708114`  
-		Last Modified: Sat, 10 Jan 2026 00:02:35 GMT  
+	-	`sha256:db9e9e4ef9581fb1758fa634672d3e591061e5104645a7fd3d33c02f60a826ae`  
+		Last Modified: Tue, 03 Feb 2026 14:25:37 GMT  
 		Size: 627.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99540469e7aa67c0fd81390879a959fbf51e392fa4f4293798c8fb00fc9bdb3e`  
-		Last Modified: Wed, 14 Jan 2026 09:29:13 GMT  
-		Size: 960.0 B  
+	-	`sha256:de3d7b35f50702d6e8d3b9e45ee68edc7272415dc478ed72df2aab4c9aa9eb1e`  
+		Last Modified: Tue, 03 Feb 2026 14:25:37 GMT  
+		Size: 958.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f27a56053e2701acb18f0612825535e01163e14b9bb36439de2aab5a8391919`  
-		Last Modified: Wed, 14 Jan 2026 09:29:13 GMT  
+	-	`sha256:c3f058056aa1a6ee997ae71fdf46e6e841fadbc8860eae24fec918f9bc6cdf24`  
+		Last Modified: Tue, 03 Feb 2026 14:25:38 GMT  
 		Size: 407.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7cc5d1d21c2f1f621443ff0c2a44a43a7c35fc35f37a97d1b30cbe729e87bdb0`  
-		Last Modified: Wed, 14 Jan 2026 09:29:13 GMT  
+	-	`sha256:eba17971bcbacce86025d34618c1e9a653bcc9796cc3785e30c1905d40d995c7`  
+		Last Modified: Tue, 03 Feb 2026 14:25:39 GMT  
 		Size: 1.2 KB (1213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73f054824f39e4ce6f93b76e31366939fea147dc6fe08a7d1d83fc831d2d3a6f`  
-		Last Modified: Wed, 14 Jan 2026 09:29:14 GMT  
-		Size: 1.4 KB (1403 bytes)  
+	-	`sha256:2a88be6275483d4d6a9bed42edd3fccf2ca0b75ab4c5406896e30fbebe85d036`  
+		Last Modified: Tue, 03 Feb 2026 14:25:39 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nginx:mainline-trixie` - unknown; unknown
 
 ```console
-$ docker pull nginx@sha256:aeb3d3b1e334a3a8cbdec39d23c684d28500e1d64fa5105fd22daf241df2cc45
+$ docker pull nginx@sha256:96eb2ccb369c5c3d49aad4c2445bf86e873c001900c36ff8296d70313a25feb9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2869776 bytes)**  
+-	Total Size: **2.9 MB (2869775 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1c0df456388ef6f9a45645aab0a64099ed1f80ae8d40e4811d966af1883133c`
+-	Image ID: `sha256:213f6ec45be13acedc18138637c21795f8e6886435be8a0833d7647bd87999cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc3f105d0477f9ea0a9f96eb2d5b9080f3449fc716499088a041d862f1a11d41`  
-		Last Modified: Wed, 14 Jan 2026 09:29:13 GMT  
+	-	`sha256:54f7383208e09a43c737747293b9d58ef66d6f7fa4634da588780780ee5ef6e5`  
+		Last Modified: Tue, 03 Feb 2026 14:25:38 GMT  
 		Size: 2.8 MB (2834540 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:072c6a7bde39281504976610188a0a1b88c83d4256c2aa3677565f7a39a91e5c`  
-		Last Modified: Wed, 14 Jan 2026 09:29:13 GMT  
-		Size: 35.2 KB (35236 bytes)  
+	-	`sha256:8eb11f33cb1f193adc9240643f0edc1d095bc5976da3e060ee2df19d08768c29`  
+		Last Modified: Tue, 03 Feb 2026 14:25:37 GMT  
+		Size: 35.2 KB (35235 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nginx:mainline-trixie` - linux; s390x
