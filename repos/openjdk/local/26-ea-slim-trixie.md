@@ -1,10 +1,10 @@
-# `openjdk:26-ea-32-jdk-slim-trixie`
+# `openjdk:26-ea-33-jdk-slim-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ddaeec35c00cf223ebc8f37015ece8feebdfe9f65cf1f2c23ecb0688a088ab3`
-- Created: `2026-01-26T22:10:55.929783171Z`
-- Virtual Size: ~ 493.22 Mb  
+- Image ID: `sha256:bbf3175e64f02f8e11a21b2c788b750ec9bf68bec4819e1b3b428dd268d8bf3a`
+- Created: `2026-02-03T02:50:24.812595478Z`
+- Virtual Size: ~ 493.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-26`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=26-ea+32`
+  - `JAVA_VERSION=26-ea+33`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1289,13 +1289,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.10.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.10.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.4-1~deb13u1`
+### `dpkg` source package: `openssl=3.5.4-1~deb13u2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.4-1~deb13u1`
-- `openssl=3.5.4-1~deb13u1`
-- `openssl-provider-legacy=3.5.4-1~deb13u1`
+- `libssl3t64:amd64=3.5.4-1~deb13u2`
+- `openssl=3.5.4-1~deb13u2`
+- `openssl-provider-legacy=3.5.4-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -1307,18 +1307,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.4-1~deb13u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.4-1%7edeb13u1.dsc' openssl_3.5.4-1~deb13u1.dsc 2669 SHA256:3ae8c547928de96ab95f8ab281501c95dd76050cbf569dddadf05c1950dd7779
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.4.orig.tar.gz' openssl_3.5.4.orig.tar.gz 53190367 SHA256:967311f84955316969bdb1d8d4b983718ef42338639c621ec4c34fddef355e99
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.4.orig.tar.gz.asc' openssl_3.5.4.orig.tar.gz.asc 833 SHA256:cfcabcfc6e43237392e0ab42e2326fceb71037036c2adaa7ecc7e251778e38f4
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.4-1%7edeb13u1.debian.tar.xz' openssl_3.5.4-1~deb13u1.debian.tar.xz 49900 SHA256:3659d7e13ee91c9a97570b084f6e32c4f4a5fb29cd846be05863323ad312ce4e
+$ apt-get source -qq --print-uris openssl=3.5.4-1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.4-1%7edeb13u2.dsc' openssl_3.5.4-1~deb13u2.dsc 2707 SHA256:646eb71bec0d395e564f1dd88e26ddede052200d37293bb03aa1372897b17dd8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.4.orig.tar.gz' openssl_3.5.4.orig.tar.gz 53190367 SHA256:967311f84955316969bdb1d8d4b983718ef42338639c621ec4c34fddef355e99
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.4.orig.tar.gz.asc' openssl_3.5.4.orig.tar.gz.asc 833 SHA256:cfcabcfc6e43237392e0ab42e2326fceb71037036c2adaa7ecc7e251778e38f4
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.4-1%7edeb13u2.debian.tar.xz' openssl_3.5.4-1~deb13u2.debian.tar.xz 65020 SHA256:f9edcab4e1d849a6c29e1c7821516c19d7dead327bb78b015d07445622922437
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.4-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.4-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.4-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.4-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.4-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.4-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.25.5-3`
 

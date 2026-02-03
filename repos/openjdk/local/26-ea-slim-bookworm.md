@@ -1,9 +1,9 @@
-# `openjdk:26-ea-32-jdk-slim-bookworm`
+# `openjdk:26-ea-33-jdk-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5642d82acb4de7a3ebd658a2cd8c2bf1f3939efc20124401c5ac2d63cd49aa20`
-- Created: `2026-01-26T22:11:04.723596476Z`
+- Image ID: `sha256:4fb7be9df0013455644166b94cc4ea019aa09b9024a9227c2d2e8c1ca722e152`
+- Created: `2026-02-03T02:50:22.95448181Z`
 - Virtual Size: ~ 492.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-26`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=26-ea+32`
+  - `JAVA_VERSION=26-ea+33`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1484,12 +1484,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.8.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.18-1~deb12u1`
+### `dpkg` source package: `openssl=3.0.18-1~deb12u2`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.18-1~deb12u1`
-- `openssl=3.0.18-1~deb12u1`
+- `libssl3:amd64=3.0.18-1~deb12u2`
+- `openssl=3.0.18-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -1501,18 +1501,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.18-1~deb12u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.18-1%7edeb12u1.dsc' openssl_3.0.18-1~deb12u1.dsc 2501 SHA256:385d26d331e517cd4ff9ac651be755c0a342c37fc5191fc4cb9e09551d1a32c6
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.18.orig.tar.gz' openssl_3.0.18.orig.tar.gz 15348046 SHA256:d80c34f5cf902dccf1f1b5df5ebb86d0392e37049e5d73df1b3abae72e4ffe8b
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.18.orig.tar.gz.asc' openssl_3.0.18.orig.tar.gz.asc 833 SHA256:2e6cdbdf18511d435bac10990be4a789f769b321c0db734c234cd736a73674de
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.18-1%7edeb12u1.debian.tar.xz' openssl_3.0.18-1~deb12u1.debian.tar.xz 52560 SHA256:038a492754b8d842fa2d4f994510c69cc361a1c692ed778bf0b08b69f47422dc
+$ apt-get source -qq --print-uris openssl=3.0.18-1~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18-1%7edeb12u2.dsc' openssl_3.0.18-1~deb12u2.dsc 2539 SHA256:506cc0573793b9e6b7f2f8fc7467ec36ade27bff46c6eed0c4244e29c682735f
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18.orig.tar.gz' openssl_3.0.18.orig.tar.gz 15348046 SHA256:d80c34f5cf902dccf1f1b5df5ebb86d0392e37049e5d73df1b3abae72e4ffe8b
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18.orig.tar.gz.asc' openssl_3.0.18.orig.tar.gz.asc 833 SHA256:2e6cdbdf18511d435bac10990be4a789f769b321c0db734c234cd736a73674de
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18-1%7edeb12u2.debian.tar.xz' openssl_3.0.18-1~deb12u2.debian.tar.xz 60008 SHA256:d98e15795a2c379039e62ec061ca750c310d3e7c962812bc15677d5e2dcf1794
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.0.18-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.18-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.18-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.0.18-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.18-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.18-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
