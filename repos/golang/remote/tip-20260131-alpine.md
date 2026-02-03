@@ -1,11 +1,11 @@
 ## `golang:tip-20260131-alpine`
 
 ```console
-$ docker pull golang@sha256:224c42478f9d0cb84398af852e6bb7aaa512cce84222f3d5022350e50e12da2b
+$ docker pull golang@sha256:73664d1ebb91c7813c230c25fb38c41112a73dfdd0c9cc524e63e5e35754d48a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 14
+-	Platforms: 16
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
@@ -17,6 +17,8 @@ $ docker pull golang@sha256:224c42478f9d0cb84398af852e6bb7aaa512cce84222f3d50223
 	-	linux; 386
 	-	unknown; unknown
 	-	linux; ppc64le
+	-	unknown; unknown
+	-	linux; riscv64
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
@@ -488,6 +490,85 @@ $ docker pull golang@sha256:d8c14440cc8a6352157a3cad0e257fb590c4ce3eda40d03e9bbb
 		MIME: application/vnd.in-toto+json
 	-	`sha256:04e71f86bef20c12b85706ee5f370b51b36d68426171f4370f65f02b3e8b6181`  
 		Last Modified: Mon, 02 Feb 2026 19:32:47 GMT  
+		Size: 25.2 KB (25153 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `golang:tip-20260131-alpine` - linux; riscv64
+
+```console
+$ docker pull golang@sha256:599a8cdf5e8e0a1f8ebd3e86c5ffd714a8cd2048ffd4d6b88a32a5cbd0623634
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **94.4 MB (94439249 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e51a2a0c919fdf90c3c6d0365278a9016f6e2ff9a1ff18c1d6f28d77a02a13c4`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 03:47:28 GMT
+ADD alpine-minirootfs-3.23.3-riscv64.tar.gz / # buildkit
+# Wed, 28 Jan 2026 03:47:28 GMT
+CMD ["/bin/sh"]
+# Thu, 29 Jan 2026 19:12:20 GMT
+RUN apk add --no-cache ca-certificates # buildkit
+# Tue, 03 Feb 2026 08:03:08 GMT
+ENV GOTOOLCHAIN=local
+# Tue, 03 Feb 2026 08:03:08 GMT
+ENV GOPATH=/go
+# Tue, 03 Feb 2026 08:03:08 GMT
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 03 Feb 2026 08:03:08 GMT
+COPY /target/ / # buildkit
+# Tue, 03 Feb 2026 08:03:25 GMT
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
+# Tue, 03 Feb 2026 08:03:25 GMT
+WORKDIR /go
+```
+
+-	Layers:
+	-	`sha256:9da5d16b2a566416844fd0c62fa81165037aa0b7f154a5c1f58f06412739471c`  
+		Last Modified: Wed, 28 Jan 2026 03:48:00 GMT  
+		Size: 3.6 MB (3585287 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:31f6a28a44ff91c18ab295ffef6822bbaccafe002bd1f4a117c179d363e86328`  
+		Last Modified: Thu, 29 Jan 2026 19:14:45 GMT  
+		Size: 296.5 KB (296505 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:dc3c8f3022c37addebb7f3bba04877b6aa3acbe5feb276f525d0db506f58caad`  
+		Last Modified: Tue, 03 Feb 2026 08:06:29 GMT  
+		Size: 90.6 MB (90557299 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cc906b07f89304c50db3daf7c402a93d81433a57a8d9e6c6cf3cf17e83e43249`  
+		Last Modified: Tue, 03 Feb 2026 08:06:15 GMT  
+		Size: 126.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `golang:tip-20260131-alpine` - unknown; unknown
+
+```console
+$ docker pull golang@sha256:53a827781e309b0cb5d418ed8eba36a80fe91d3f783a6e6d8fb467d63e546383
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **220.1 KB (220149 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8289624fc52a58a88451c69054ca366723d42c930471ef002d7742ecf5b36a52`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:5cc86a795a0368deeaaeab977d302c3fc316bb272f31f4b746d27527d6cc0825`  
+		Last Modified: Tue, 03 Feb 2026 08:06:15 GMT  
+		Size: 195.0 KB (194996 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:a12e9edebde42a744649e8a9cbb42272ebbfd02270925992c898955bbbc51225`  
+		Last Modified: Tue, 03 Feb 2026 08:06:15 GMT  
 		Size: 25.2 KB (25153 bytes)  
 		MIME: application/vnd.in-toto+json
 
