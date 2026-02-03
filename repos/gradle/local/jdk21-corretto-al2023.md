@@ -1,10 +1,10 @@
-# `gradle:9.3.0-jdk21-corretto`
+# `gradle:9.3.1-jdk21-corretto`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c668e984d98c361f62bdce870ad9b38f2ff6fea7a4deb3e0f1af86ba423c9098`
-- Created: `2026-01-28T05:33:32.957566819Z`
-- Virtual Size: ~ 900.13 Mb  
+- Image ID: `sha256:a8ea931d732c6ba36ef2d94defbbfcaad9807d77ae14f556694fa6396234b0f5`
+- Created: `2026-01-30T17:43:56.646159196Z`
+- Virtual Size: ~ 900.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.3.0`
+  - `GRADLE_VERSION=9.3.1`
 
 ## `rpm` (`.rpm`-based packages)
 

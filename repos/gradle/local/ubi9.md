@@ -1,10 +1,10 @@
-# `gradle:9.3.0-jdk21-ubi9`
+# `gradle:9.3.1-jdk21-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a450bee3613400b88debd3d878cbc69f6d43dcc3da235c8e635ec1ea43fdaf1a`
-- Created: `2026-01-26T22:19:49.245634269Z`
-- Virtual Size: ~ 756.52 Mb  
+- Image ID: `sha256:70383acdcd460392e0ca88f38aa464a8dee3f286b0383ec0e2fb858a9f0bd939`
+- Created: `2026-01-30T17:44:35.84908095Z`
+- Virtual Size: ~ 757.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.9+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.3.0`
+  - `GRADLE_VERSION=9.3.1`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-01-22T05:09:47Z`
@@ -233,11 +233,16 @@ $ dnf --quiet download --source --url crypto-policies-20250905-1.git377cc42.el9_
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20250905-1.git377cc42.el9_7.src.rpm
 ```
 
-### `rpm` package: `curl-minimal-7.76.1-34.el9.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-35.el9_7.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url curl-minimal-7.76.1-35.el9_7.3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-35.el9_7.3.src.rpm
+```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-22.el9.x86_64`
 
@@ -889,11 +894,16 @@ $ dnf --quiet download --source --url libcom_err-1.46.5-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/e2fsprogs-1.46.5-8.el9.src.rpm
 ```
 
-### `rpm` package: `libcurl-minimal-7.76.1-34.el9.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-35.el9_7.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcurl-minimal-7.76.1-35.el9_7.3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-35.el9_7.3.src.rpm
+```
 
 ### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
 
