@@ -6264,14 +6264,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.0=8.0.44-0ubuntu0.22.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.44-0ubuntu0.22.04.2.dsc' mysql-8.0_8.0.44-0ubuntu0.22.04.2.dsc 3568 SHA512:059eb09eb53a669731efa2e7c7e533ea073d52f288576b025516015aec28871c985b06c62a698e8beb9c708d243318679b36007afc7dce1fae49cd2f02de5f17
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.44.orig.tar.gz' mysql-8.0_8.0.44.orig.tar.gz 492448984 SHA512:f6881d6f88a4060796e1eac47c1ffe3ea005c27f1b0509fd97774ba5b1e7bf86d0f8c4e13126750f0cc3dd86af92c26459ae8fecf9e8f0f058dab43e93bb3b42
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.44-0ubuntu0.22.04.2.debian.tar.xz' mysql-8.0_8.0.44-0ubuntu0.22.04.2.debian.tar.xz 163056 SHA512:85f7c630fcd8f06c2b2cbe32f8a9dc1bf5fc6c13c6472c5585a5901139f6175cb9d2560f38fedd0bdbaa00fdccfc1987cdc08a977fe854719d886f57b5f34dfa
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.8`
 
