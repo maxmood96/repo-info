@@ -10860,7 +10860,12 @@ $ docker pull sonarqube@sha256:265666ca6f864019abc39f6681267c9a2eea5575937dc2b79
 
 ## `sonarqube:26.2.0.119303-community`
 
-**does not exist** (yet?)
+```console
+$ docker pull sonarqube@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sonarqube:community`
 
