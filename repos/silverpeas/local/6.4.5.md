@@ -1295,15 +1295,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.11
-'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.11.dsc' glibc_2.35-0ubuntu3.11.dsc 8888 SHA512:513445f41ac47bc28f9c30bbdace95938cbd4c8af26fc192808ac2940d56503e09761b1cec6ecec6d3eebd21cca8fb34f2f57fb046d715407e9d67cd48d08f0c
-'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
-'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
-'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.11.debian.tar.xz' glibc_2.35-0ubuntu3.11.debian.tar.xz 940076 SHA512:3a946e60393f09557fdf8cd4f5ad0041301b07da2b11bc5307f2ec15a7926924de0a0648f78879b28a86fd1cc5d20df9963f7c164cef01ea1d5a3d03c3ab2392
-```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -5233,14 +5227,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.29+7-1ubuntu1~22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.29%2b7-1ubuntu1%7e22.04.dsc' openjdk-lts_11.0.29+7-1ubuntu1~22.04.dsc 4516 SHA512:00644c1e12eef9cf65337c0ea362a935dbf12d7ae989e6cde3080e692e0b38cdc1a39831ce999e479d29ed73857136fcb43cb99dce3d51a880f2be584e64f166
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.29%2b7.orig.tar.xz' openjdk-lts_11.0.29+7.orig.tar.xz 69281604 SHA512:f503b3897aae22856114306fbe6530036f55442bcf9bbd6f215b5aab4e4f074aa6f9645f262759d1e420b91ff7365702d1bda0ac517eec7017c2c2ea26d4cc59
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.29%2b7-1ubuntu1%7e22.04.debian.tar.xz' openjdk-lts_11.0.29+7-1ubuntu1~22.04.debian.tar.xz 172768 SHA512:8ab8dc603b768131b1659012e488d09389b802a15838cb8cea50d39c59952667b98517242695e1fdb7ed2e6140d12aba617808262dcebbe7346a2b61a779a660
-```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6ubuntu0.4`
 
@@ -5279,14 +5268,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.19+dfsg-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.19%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.19+dfsg-0ubuntu0.22.04.1.dsc 3319 SHA512:14cf58886e69157bc11fccc9d20c9d63e45549b530d6ed5d1c05828a753ba73cbc81a22c6d2ed770cf74bed67268ed2f4aa6e50ee540d0fa7ca90aa1d83e2986
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.19%2bdfsg.orig.tar.xz' openldap_2.5.19+dfsg.orig.tar.xz 3718696 SHA512:ed029c62e889db318dd09849249403e5496a41c4dd351c16e3514e5bb3f12733ab0681ab25a07cb3b4541674305f39a51ae5aac9cbbee2f126fe5c31aee0860c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.19%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.19+dfsg-0ubuntu0.22.04.1.debian.tar.xz 173568 SHA512:ab691963c87b88a0d6158a69374fc7e3d46e842716cd2d8fcb939f711193d0d494e584828e0b44b45406aeeff785971e58bd12da353b2448e1ca461f3ed8e6dc
-```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.20`
 
