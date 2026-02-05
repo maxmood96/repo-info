@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4deb75c12e0d73da96f17d8f3de909c266734844255dcde301f4b3ade2e770de`
-- Created: `2026-01-26T22:04:28.223891384Z`
+- Image ID: `sha256:1694224a7a0bec502f49bcee0ddc50519099ac24708a0abcc51e79c9ef6016d8`
+- Created: `2026-02-05T00:07:48.232526706Z`
 - Virtual Size: ~ 1.54 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,13 +25,13 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-01-22T05:09:47Z`
+  - `build-date=2026-02-04T11:16:28Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
-  - `io.buildah.version=1.41.5`
+  - `io.buildah.version=1.42.2`
   - `io.k8s.description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 9 Minimal`
   - `io.openshift.expose-services=`
@@ -39,12 +39,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-01-22T05:09:47Z`
-  - `org.opencontainers.image.revision=812a20485e9d8d728e95b468c2886da21352b9fc`
-  - `release=1769056855`
+  - `org.opencontainers.image.created=2026-02-04T11:16:28Z`
+  - `org.opencontainers.image.revision=3ae6fd96d0d9bad11e8002483701f39edf2317f5`
+  - `release=1770203734`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=812a20485e9d8d728e95b468c2886da21352b9fc`
+  - `vcs-ref=3ae6fd96d0d9bad11e8002483701f39edf2317f5`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -167,11 +167,16 @@ $ dnf --quiet download --source --url crypto-policies-20250905-1.git377cc42.el9_
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20250905-1.git377cc42.el9_7.src.rpm
 ```
 
-### `rpm` package: `curl-minimal-7.76.1-34.el9.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-35.el9_7.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url curl-minimal-7.76.1-35.el9_7.3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-35.el9_7.3.src.rpm
+```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-22.el9.x86_64`
 
@@ -666,15 +671,15 @@ $ dnf --quiet download --source --url libattr-2.5.1-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/attr-2.5.1-3.el9.src.rpm
 ```
 
-### `rpm` package: `libblkid-2.37.4-21.el9.x86_64`
+### `rpm` package: `libblkid-2.37.4-21.el9_7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libblkid-2.37.4-21.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9.src.rpm
+$ dnf --quiet download --source --url libblkid-2.37.4-21.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9_7.src.rpm
 ```
 
 ### `rpm` package: `libcap-2.48-10.el9.x86_64`
@@ -710,11 +715,16 @@ $ dnf --quiet download --source --url libcom_err-1.46.5-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/e2fsprogs-1.46.5-8.el9.src.rpm
 ```
 
-### `rpm` package: `libcurl-minimal-7.76.1-34.el9.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-35.el9_7.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcurl-minimal-7.76.1-35.el9_7.3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-35.el9_7.3.src.rpm
+```
 
 ### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
 
@@ -760,15 +770,15 @@ $ dnf --quiet download --source --url libevent-2.1.12-8.el9_4
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libevent-2.1.12-8.el9_4.src.rpm
 ```
 
-### `rpm` package: `libfdisk-2.37.4-21.el9.x86_64`
+### `rpm` package: `libfdisk-2.37.4-21.el9_7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libfdisk-2.37.4-21.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9.src.rpm
+$ dnf --quiet download --source --url libfdisk-2.37.4-21.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9_7.src.rpm
 ```
 
 ### `rpm` package: `libffi-3.4.2-8.el9.x86_64`
@@ -859,15 +869,15 @@ $ dnf --quiet download --source --url libmodulemd-2.13.0-2.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libmodulemd-2.13.0-2.el9.src.rpm
 ```
 
-### `rpm` package: `libmount-2.37.4-21.el9.x86_64`
+### `rpm` package: `libmount-2.37.4-21.el9_7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libmount-2.37.4-21.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9.src.rpm
+$ dnf --quiet download --source --url libmount-2.37.4-21.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9_7.src.rpm
 ```
 
 ### `rpm` package: `libnghttp2-1.43.0-6.el9.x86_64`
@@ -1013,15 +1023,15 @@ $ dnf --quiet download --source --url libsigsegv-2.13-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libsigsegv-2.13-4.el9.src.rpm
 ```
 
-### `rpm` package: `libsmartcols-2.37.4-21.el9.x86_64`
+### `rpm` package: `libsmartcols-2.37.4-21.el9_7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libsmartcols-2.37.4-21.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9.src.rpm
+$ dnf --quiet download --source --url libsmartcols-2.37.4-21.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9_7.src.rpm
 ```
 
 ### `rpm` package: `libsolv-0.7.24-3.el9.x86_64`
@@ -1134,15 +1144,15 @@ $ dnf --quiet download --source --url libutempter-1.2.1-6.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libutempter-1.2.1-6.el9.src.rpm
 ```
 
-### `rpm` package: `libuuid-2.37.4-21.el9.x86_64`
+### `rpm` package: `libuuid-2.37.4-21.el9_7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libuuid-2.37.4-21.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9.src.rpm
+$ dnf --quiet download --source --url libuuid-2.37.4-21.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9_7.src.rpm
 ```
 
 ### `rpm` package: `libverto-0.3.2-3.el9.x86_64`
@@ -1343,17 +1353,27 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-3.5.1-5.el9_7.x86_64`
+### `rpm` package: `openssl-3.5.1-7.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `openssl-devel-3.5.1-5.el9_7.x86_64`
+```console
+$ dnf --quiet download --source --url openssl-3.5.1-7.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-7.el9_7.src.rpm
+```
+
+### `rpm` package: `openssl-devel-3.5.1-7.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-devel-3.5.1-7.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-7.el9_7.src.rpm
+```
 
 ### `rpm` package: `openssl-fips-provider-3.0.7-8.el9.x86_64`
 
@@ -1377,11 +1397,16 @@ $ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-8.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.5.1-5.el9_7.x86_64`
+### `rpm` package: `openssl-libs-3.5.1-7.el9_7.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-libs-3.5.1-7.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.1-7.el9_7.src.rpm
+```
 
 ### `rpm` package: `p11-kit-0.25.3-3.el9_5.x86_64`
 
@@ -1497,7 +1522,7 @@ Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affil
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-telemetry-agent-1.0.7-1.el9.x86_64`
+### `rpm` package: `percona-telemetry-agent-1.0.8-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3
 
@@ -2361,26 +2386,26 @@ $ dnf --quiet download --source --url tzdata-2025c-1.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2025c-1.el9.src.rpm
 ```
 
-### `rpm` package: `util-linux-2.37.4-21.el9.x86_64`
+### `rpm` package: `util-linux-2.37.4-21.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url util-linux-2.37.4-21.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9.src.rpm
+$ dnf --quiet download --source --url util-linux-2.37.4-21.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9_7.src.rpm
 ```
 
-### `rpm` package: `util-linux-core-2.37.4-21.el9.x86_64`
+### `rpm` package: `util-linux-core-2.37.4-21.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url util-linux-core-2.37.4-21.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9.src.rpm
+$ dnf --quiet download --source --url util-linux-core-2.37.4-21.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9_7.src.rpm
 ```
 
 ### `rpm` package: `which-2.21-30.el9_6.x86_64`
