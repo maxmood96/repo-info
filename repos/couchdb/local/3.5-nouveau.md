@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:036fec60d81a0640468c84a8ab8b24076fe4f18ffcaa319c5042beee216fa24e`
-- Created: `2026-01-13T02:15:35.89527028Z`
-- Virtual Size: ~ 368.01 Mb  
+- Image ID: `sha256:8b0f8c67278d19a9a18cdec7e5a892300ef237a9fcb7816241ddfc8788de4735`
+- Created: `2026-02-03T02:44:13.400595761Z`
+- Virtual Size: ~ 368.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/usr/bin/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","/opt/nouveau/lib/nouveau-1.0-SNAPSHOT.jar","server","/opt/nouveau/etc/nouveau.yaml"]`
@@ -2503,11 +2503,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.87.1-1+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.87.1-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-17=17.0.17+10-1~deb12u1`
+### `dpkg` source package: `openjdk-17=17.0.18+8-1~deb12u1`
 
 Binary Packages:
 
-- `openjdk-17-jre-headless:amd64=17.0.17+10-1~deb12u1`
+- `openjdk-17-jre-headless:amd64=17.0.18+8-1~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-17-jre-headless/copyright`)
 
@@ -2520,18 +2520,18 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-17-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-17=17.0.17+10-1~deb12u1
-'http://deb.debian.org/debian/pool/main/o/openjdk-17/openjdk-17_17.0.17%2b10-1%7edeb12u1.dsc' openjdk-17_17.0.17+10-1~deb12u1.dsc 4889 SHA256:82ac49bdbb9ad4d4e1ff5f2380b804e9e774736d945e2c33f2a75b98c37944a4
-'http://deb.debian.org/debian/pool/main/o/openjdk-17/openjdk-17_17.0.17%2b10.orig-googletest.tar.xz' openjdk-17_17.0.17+10.orig-googletest.tar.xz 616792 SHA256:db220ce29459378d5fd0d725da4379cac15f0158962e018b862fdb10b460a1ee
-'http://deb.debian.org/debian/pool/main/o/openjdk-17/openjdk-17_17.0.17%2b10.orig.tar.xz' openjdk-17_17.0.17+10.orig.tar.xz 63966128 SHA256:0428e6214ede98610a3a05869bbdbf7643303eafb6e2db90239aae53e35c2314
-'http://deb.debian.org/debian/pool/main/o/openjdk-17/openjdk-17_17.0.17%2b10-1%7edeb12u1.debian.tar.xz' openjdk-17_17.0.17+10-1~deb12u1.debian.tar.xz 204552 SHA256:75998b90aee10994082aa2aba600df51cdc2173792f4817a485dd63d4e2fb784
+$ apt-get source -qq --print-uris openjdk-17=17.0.18+8-1~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjdk-17/openjdk-17_17.0.18%2b8-1%7edeb12u1.dsc' openjdk-17_17.0.18+8-1~deb12u1.dsc 4879 SHA256:bce0d88ce929f4b5b1026787a245cf94398f38015a7b6d1318ac8ad3179473a2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjdk-17/openjdk-17_17.0.18%2b8.orig-googletest.tar.xz' openjdk-17_17.0.18+8.orig-googletest.tar.xz 613408 SHA256:6e6699c442cd6bc008140d159b43a7a39bb811d1ecd380cf3b707cc535e04393
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjdk-17/openjdk-17_17.0.18%2b8.orig.tar.xz' openjdk-17_17.0.18+8.orig.tar.xz 63904440 SHA256:4fcf04a097e76e2533bc11ac9f75ff2c175053431debc82ca37a00951a1f9915
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjdk-17/openjdk-17_17.0.18%2b8-1%7edeb12u1.debian.tar.xz' openjdk-17_17.0.18+8-1~deb12u1.debian.tar.xz 204664 SHA256:c38a6c0f44ee40c6ee1f79266ff62163a04eb6ba97f88dd268f67ec1f0811237
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-17/17.0.17+10-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-17/17.0.17+10-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-17/17.0.17+10-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-17/17.0.18+8-1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-17/17.0.18+8-1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-17/17.0.18+8-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.5.13+dfsg-5`
 
@@ -2581,12 +2581,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.5.13+dfsg-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.5.13+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.18-1~deb12u1`
+### `dpkg` source package: `openssl=3.0.18-1~deb12u2`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.18-1~deb12u1`
-- `openssl=3.0.18-1~deb12u1`
+- `libssl3:amd64=3.0.18-1~deb12u2`
+- `openssl=3.0.18-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -2598,18 +2598,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.18-1~deb12u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.18-1%7edeb12u1.dsc' openssl_3.0.18-1~deb12u1.dsc 2501 SHA256:385d26d331e517cd4ff9ac651be755c0a342c37fc5191fc4cb9e09551d1a32c6
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.18.orig.tar.gz' openssl_3.0.18.orig.tar.gz 15348046 SHA256:d80c34f5cf902dccf1f1b5df5ebb86d0392e37049e5d73df1b3abae72e4ffe8b
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.18.orig.tar.gz.asc' openssl_3.0.18.orig.tar.gz.asc 833 SHA256:2e6cdbdf18511d435bac10990be4a789f769b321c0db734c234cd736a73674de
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.18-1%7edeb12u1.debian.tar.xz' openssl_3.0.18-1~deb12u1.debian.tar.xz 52560 SHA256:038a492754b8d842fa2d4f994510c69cc361a1c692ed778bf0b08b69f47422dc
+$ apt-get source -qq --print-uris openssl=3.0.18-1~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18-1%7edeb12u2.dsc' openssl_3.0.18-1~deb12u2.dsc 2539 SHA256:506cc0573793b9e6b7f2f8fc7467ec36ade27bff46c6eed0c4244e29c682735f
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18.orig.tar.gz' openssl_3.0.18.orig.tar.gz 15348046 SHA256:d80c34f5cf902dccf1f1b5df5ebb86d0392e37049e5d73df1b3abae72e4ffe8b
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18.orig.tar.gz.asc' openssl_3.0.18.orig.tar.gz.asc 833 SHA256:2e6cdbdf18511d435bac10990be4a789f769b321c0db734c234cd736a73674de
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18-1%7edeb12u2.debian.tar.xz' openssl_3.0.18-1~deb12u2.debian.tar.xz 60008 SHA256:d98e15795a2c379039e62ec061ca750c310d3e7c962812bc15677d5e2dcf1794
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.0.18-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.18-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.18-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.0.18-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.18-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.18-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
