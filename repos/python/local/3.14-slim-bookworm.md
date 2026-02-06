@@ -1,17 +1,17 @@
-# `python:3.14.2-slim-bookworm`
+# `python:3.14.3-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e8890bea8466e8150f8451aea96c71f95824c2533b353e72c9bce3f1fa7780f7`
-- Created: `2026-02-03T03:11:43.687964446Z`
-- Virtual Size: ~ 121.78 Mb  
+- Image ID: `sha256:b3d531ef5290d570c7ba3afa50bde94f25aacafb64088da3488a9e76fe8ddda9`
+- Created: `2026-02-04T20:15:14.103062031Z`
+- Virtual Size: ~ 121.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.14.2`
-  - `PYTHON_SHA256=ce543ab854bc256b61b71e9b27f831ffd1bfd60a479d639f8be7f9757cf573e9`
+  - `PYTHON_VERSION=3.14.3`
+  - `PYTHON_SHA256=a97d5549e9ad81fe17159ed02c68774ad5d266c72f8d9a0b5a9c371fe85d902b`
 
 ## `dpkg` (`.deb`-based packages)
 
