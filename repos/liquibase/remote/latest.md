@@ -1,7 +1,7 @@
 ## `liquibase:latest`
 
 ```console
-$ docker pull liquibase@sha256:cfc2129209c46f5761c0b2e10242d9c3909e30b20a64e56408b0c222dce0760e
+$ docker pull liquibase@sha256:f37d1c72e9fde25e89b4a472cda73674ce98bde2d80e3755d544a222d4ac86f3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull liquibase@sha256:cfc2129209c46f5761c0b2e10242d9c3909e30b20a64e5640
 ### `liquibase:latest` - linux; amd64
 
 ```console
-$ docker pull liquibase@sha256:582fb237adcc6bfe24a76e91fc5a85937fafb12470f53e1c50946dd5ee9366e2
+$ docker pull liquibase@sha256:f4dc0b852d8f5a47b526f70bbe3caf969d0391e223ffd332023e6b17e9550772
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **111.1 MB (111101266 bytes)**  
+-	Total Size: **111.1 MB (111108844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72ccda79cfd81d9a11e1f7b9f895d924101074308a7c4f179867dd2f3469a1ab`
+-	Image ID: `sha256:3ed7b83e859920427bf69d10591b767cb4cfe95522eccdb29f92a916ed8f503c`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
@@ -37,67 +37,67 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:b499000226bd9a7c562ffa8eeb86e2d170f2a563310db6c2d79562ab53e5cb6e in / 
 # Fri, 09 Jan 2026 07:01:44 GMT
 CMD ["/bin/bash"]
-# Thu, 15 Jan 2026 22:20:10 GMT
+# Thu, 05 Feb 2026 22:20:52 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 15 Jan 2026 22:20:10 GMT
+# Thu, 05 Feb 2026 22:20:52 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 15 Jan 2026 22:20:10 GMT
+# Thu, 05 Feb 2026 22:20:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 15 Jan 2026 22:20:10 GMT
+# Thu, 05 Feb 2026 22:20:52 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 15 Jan 2026 22:20:10 GMT
-ENV JAVA_VERSION=jdk-21.0.9+10
-# Thu, 15 Jan 2026 22:20:13 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aeab55d064a1a27a3744b0880b9b414077b4ed2b1790817eea3df60aec946431';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_x64_linux_hotspot_21.0.9_10.tar.gz';          ;;        arm64)          ESUM='1d041073c65e834bdb4da732485a54ff829859dcd1549e7992f15bd73341be29';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.9_10.tar.gz';          ;;        ppc64el)          ESUM='4973d6a43393854ccabd32bf7a1306788831586166fc8f5fa34a9df428366014';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.9_10.tar.gz';          ;;        s390x)          ESUM='951eb9fd40e4478b0a7069b672bc0307f59045d756dd3ca6ed0b1ea12ab41ca2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_s390x_linux_hotspot_21.0.9_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 15 Jan 2026 22:20:13 GMT
+# Thu, 05 Feb 2026 22:20:52 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Thu, 05 Feb 2026 22:20:55 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Thu, 05 Feb 2026 22:20:55 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 15 Jan 2026 22:20:13 GMT
+# Thu, 05 Feb 2026 22:20:56 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 15 Jan 2026 22:20:13 GMT
+# Thu, 05 Feb 2026 22:20:56 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 16 Jan 2026 00:34:52 GMT
+# Thu, 05 Feb 2026 22:50:11 GMT
 RUN groupadd --gid 1001 liquibase &&     useradd --uid 1001 --gid liquibase --create-home --home-dir /liquibase liquibase &&     chown liquibase /liquibase # buildkit
-# Fri, 16 Jan 2026 00:34:52 GMT
+# Thu, 05 Feb 2026 22:50:11 GMT
 WORKDIR /liquibase
-# Fri, 16 Jan 2026 00:34:53 GMT
+# Thu, 05 Feb 2026 22:50:13 GMT
 ARG LIQUIBASE_VERSION=5.0.1
-# Fri, 16 Jan 2026 00:34:53 GMT
+# Thu, 05 Feb 2026 22:50:13 GMT
 ARG LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449
-# Fri, 16 Jan 2026 00:34:53 GMT
+# Thu, 05 Feb 2026 22:50:13 GMT
 # ARGS: LIQUIBASE_VERSION=5.0.1 LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449
 RUN wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz "https://package.liquibase.com/downloads/dockerhub/official/liquibase-${LIQUIBASE_VERSION}.tar.gz" &&     echo "$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz" | sha256sum -c - &&     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz &&     rm liquibase-${LIQUIBASE_VERSION}.tar.gz &&     ln -s /liquibase/liquibase /usr/local/bin/liquibase &&     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh &&     liquibase --version # buildkit
-# Fri, 16 Jan 2026 00:34:53 GMT
+# Thu, 05 Feb 2026 22:50:13 GMT
 ARG LPM_VERSION=0.2.14
-# Fri, 16 Jan 2026 00:34:53 GMT
+# Thu, 05 Feb 2026 22:50:13 GMT
 ARG LPM_SHA256=28750d84bf76d32ba3a2d51674a1b4e14205523c87e4655b2cd8de68b916758e
-# Fri, 16 Jan 2026 00:34:53 GMT
+# Thu, 05 Feb 2026 22:50:13 GMT
 ARG LPM_SHA256_ARM=541a220aa3c3227cc0fb40b15976b11011568a06a6499af090258bf604f45cc0
-# Fri, 16 Jan 2026 00:34:53 GMT
+# Thu, 05 Feb 2026 22:50:13 GMT
 LABEL org.opencontainers.image.description=Liquibase Container Image
-# Fri, 16 Jan 2026 00:34:53 GMT
+# Thu, 05 Feb 2026 22:50:13 GMT
 LABEL org.opencontainers.image.licenses=FSL-1.1-ALv2
-# Fri, 16 Jan 2026 00:34:53 GMT
+# Thu, 05 Feb 2026 22:50:13 GMT
 LABEL org.opencontainers.image.vendor=Liquibase
-# Fri, 16 Jan 2026 00:34:53 GMT
+# Thu, 05 Feb 2026 22:50:13 GMT
 LABEL org.opencontainers.image.version=5.0.1
-# Fri, 16 Jan 2026 00:34:53 GMT
+# Thu, 05 Feb 2026 22:50:13 GMT
 LABEL org.opencontainers.image.documentation=https://docs.liquibase.com
-# Fri, 16 Jan 2026 00:35:00 GMT
+# Thu, 05 Feb 2026 22:50:18 GMT
 # ARGS: LIQUIBASE_VERSION=5.0.1 LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449 LPM_VERSION=0.2.14 LPM_SHA256=28750d84bf76d32ba3a2d51674a1b4e14205523c87e4655b2cd8de68b916758e LPM_SHA256_ARM=541a220aa3c3227cc0fb40b15976b11011568a06a6499af090258bf604f45cc0
 RUN apt-get update &&     apt-get -yqq install unzip --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     mkdir /liquibase/bin &&     arch="$(dpkg --print-architecture)" &&     case "$arch" in     amd64)  DOWNLOAD_ARCH=""  ;;     arm64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM ;;     *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apt-get purge -y --auto-remove unzip &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version # buildkit
-# Fri, 16 Jan 2026 00:35:00 GMT
+# Thu, 05 Feb 2026 22:50:18 GMT
 ENV LIQUIBASE_HOME=/liquibase
-# Fri, 16 Jan 2026 00:35:00 GMT
+# Thu, 05 Feb 2026 22:50:18 GMT
 ENV DOCKER_LIQUIBASE=true
-# Fri, 16 Jan 2026 00:35:00 GMT
+# Thu, 05 Feb 2026 22:50:18 GMT
 COPY docker-entrypoint.sh ./ # buildkit
-# Fri, 16 Jan 2026 00:35:00 GMT
+# Thu, 05 Feb 2026 22:50:18 GMT
 COPY liquibase.docker.properties ./ # buildkit
-# Fri, 16 Jan 2026 00:35:00 GMT
+# Thu, 05 Feb 2026 22:50:18 GMT
 USER liquibase:liquibase
-# Fri, 16 Jan 2026 00:35:00 GMT
+# Thu, 05 Feb 2026 22:50:18 GMT
 ENTRYPOINT ["/liquibase/docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 00:35:00 GMT
+# Thu, 05 Feb 2026 22:50:18 GMT
 CMD ["--help"]
 ```
 
@@ -106,81 +106,81 @@ CMD ["--help"]
 		Last Modified: Fri, 09 Jan 2026 07:35:56 GMT  
 		Size: 29.5 MB (29536667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c302597d98839a67b2d0eb53131fa4ef7965592afa8c476b8a799849d09954c`  
-		Last Modified: Thu, 15 Jan 2026 22:20:26 GMT  
-		Size: 16.1 MB (16147367 bytes)  
+	-	`sha256:733f300e476a4af62d3eb8108d4414f528a092430562a81753005205bcd852d5`  
+		Last Modified: Thu, 05 Feb 2026 22:21:09 GMT  
+		Size: 16.1 MB (16147805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:530b8601c1ef3ef81eb5c67cd33025b6798a46aa1e38c5c216c3f27dc893757c`  
-		Last Modified: Thu, 15 Jan 2026 22:20:27 GMT  
-		Size: 53.0 MB (52978517 bytes)  
+	-	`sha256:96a332353d462dfe66edcfe8b1844d862a3845095c181d98f91b2dcbdfc75aee`  
+		Last Modified: Thu, 05 Feb 2026 22:21:10 GMT  
+		Size: 53.0 MB (52985637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aa93b68716d37237a828ea6838f2d363ff8db2cebb0701b5a6cc553c1e28a37`  
-		Last Modified: Thu, 15 Jan 2026 22:20:25 GMT  
-		Size: 159.0 B  
+	-	`sha256:8d9aef824f98f969525143a997286ac4aac37599778499b84734a6d04af5b62e`  
+		Last Modified: Thu, 05 Feb 2026 22:21:08 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce36aff9df917fee409541f259e7bf51507339b25d86a0bb2eebd24e393aaa4b`  
-		Last Modified: Thu, 15 Jan 2026 22:20:25 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:423a0e575c8a1cb7a4895e5ec1779c6054d9d9733556ce673d407cda3d3a3d0d`  
+		Last Modified: Thu, 05 Feb 2026 22:21:08 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a549396a76b3c938219daea79b77385a2b8b05e065e4a1210042351f19fc648f`  
-		Last Modified: Fri, 16 Jan 2026 00:35:09 GMT  
-		Size: 4.3 KB (4302 bytes)  
+	-	`sha256:20962ca6035a260202c37f7a6878989dd5abfc06f4c24165a962878a1652049d`  
+		Last Modified: Thu, 05 Feb 2026 22:50:27 GMT  
+		Size: 4.3 KB (4309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8a9f9ac0fad4eafbe3e0c81dda8aa0aee009d042368779cda82b637319e72d4`  
-		Last Modified: Fri, 16 Jan 2026 00:35:09 GMT  
-		Size: 8.7 MB (8665791 bytes)  
+	-	`sha256:4c93704037916a2073ac3b11be735de72a0b6f6ac4386fd13c2253f0f8ac50c5`  
+		Last Modified: Thu, 05 Feb 2026 22:50:27 GMT  
+		Size: 8.7 MB (8665794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80cbe5c0fd723ba18cbe2fb5abf15463a59b30d3a0537527e026c820482effd2`  
-		Last Modified: Fri, 16 Jan 2026 00:35:09 GMT  
-		Size: 3.8 MB (3764543 bytes)  
+	-	`sha256:e15a4f0cbf2da46812667b39f204938ccfeb3089852273444dc1b68b460080e0`  
+		Last Modified: Thu, 05 Feb 2026 22:50:27 GMT  
+		Size: 3.8 MB (3764560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:432e69e7f8a887e94d3d60fa8b18f9f0d9b31b0f7de40bc14e07b74f97860a1f`  
-		Last Modified: Fri, 16 Jan 2026 00:35:09 GMT  
-		Size: 1.4 KB (1432 bytes)  
+	-	`sha256:c0a8ceb04de66f09285e694a48cb3bf4d2ddca726573fa6ba3a2ea6f100ab7e9`  
+		Last Modified: Thu, 05 Feb 2026 22:50:27 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb9d316cdafd94c685d93d465c681f5f015230d91e77c07b56c11f5718f3f8d9`  
-		Last Modified: Fri, 16 Jan 2026 00:35:10 GMT  
-		Size: 173.0 B  
+	-	`sha256:0938fa6d99268e8d8a61f66f5599e10cefbcf21febe29e93115ede9de470848e`  
+		Last Modified: Thu, 05 Feb 2026 22:50:28 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `liquibase:latest` - unknown; unknown
 
 ```console
-$ docker pull liquibase@sha256:a593d967f52fc6cad0073d0e4f79243476c95923fdf5b47eceb5b49312ac6e6f
+$ docker pull liquibase@sha256:9180ae790b228d3eba04ab12bbca38f070f6d872e075da3cddca744f8556aebd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.9 MB (3922068 bytes)**  
+-	Total Size: **3.9 MB (3925579 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a186871750905cd53526a1e089dd59f5ed97b05359b629c64041e43ba6e1891e`
+-	Image ID: `sha256:79bd0e0a29b032b08c6e2dc67cf2c08e9cde77b3b64cdd1847affa33d2218567`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:649caab800b38204e7f19c87b7c8637e2dd99d2eb596004fd2d26667294938cf`  
-		Last Modified: Fri, 16 Jan 2026 00:35:09 GMT  
-		Size: 3.9 MB (3897745 bytes)  
+	-	`sha256:f51e456eb50cf3d8ed0b13c216b56730cb59d11ac6793290d309690b48725e5d`  
+		Last Modified: Thu, 05 Feb 2026 22:50:27 GMT  
+		Size: 3.9 MB (3901256 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2c5dac49e3f2470eee7f08dc6dc70713dd6fa1d00ff9077c8015bbd0c1fa0635`  
-		Last Modified: Fri, 16 Jan 2026 00:35:08 GMT  
+	-	`sha256:01f650ae90d40ba9b8359abb388200ce3598f15c5ac0b6bb13c21fb10bb8532e`  
+		Last Modified: Thu, 05 Feb 2026 22:50:27 GMT  
 		Size: 24.3 KB (24323 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `liquibase:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull liquibase@sha256:9448799ce0c8d2d4648ce7896ae87f1adae1f56765efa4f3f97b1ebbd1f80538
+$ docker pull liquibase@sha256:71712d682449119d870a3d6d437806c1433e8adbab0de81d61f15dc7a02597d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **107.7 MB (107713091 bytes)**  
+-	Total Size: **107.7 MB (107726025 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00abfb2c8f993c4ad9d9e2824b4fe6e3b1332e23e5b75ca9b80a61cf066d4117`
+-	Image ID: `sha256:23b8e22721a687f73748ccf9d04fabd0f43bd358d08b6f2e837ba1caccd0c061`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
@@ -197,67 +197,67 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:643ece0a7a3a6026f87ab17e08013e914d8971796eb302cfa051d97af4bf9939 in / 
 # Fri, 09 Jan 2026 07:03:30 GMT
 CMD ["/bin/bash"]
-# Thu, 15 Jan 2026 22:19:49 GMT
+# Thu, 05 Feb 2026 22:19:53 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 15 Jan 2026 22:19:49 GMT
+# Thu, 05 Feb 2026 22:19:53 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 15 Jan 2026 22:19:49 GMT
+# Thu, 05 Feb 2026 22:19:53 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 15 Jan 2026 22:19:49 GMT
+# Thu, 05 Feb 2026 22:19:53 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 15 Jan 2026 22:19:49 GMT
-ENV JAVA_VERSION=jdk-21.0.9+10
-# Thu, 15 Jan 2026 22:20:42 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aeab55d064a1a27a3744b0880b9b414077b4ed2b1790817eea3df60aec946431';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_x64_linux_hotspot_21.0.9_10.tar.gz';          ;;        arm64)          ESUM='1d041073c65e834bdb4da732485a54ff829859dcd1549e7992f15bd73341be29';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.9_10.tar.gz';          ;;        ppc64el)          ESUM='4973d6a43393854ccabd32bf7a1306788831586166fc8f5fa34a9df428366014';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.9_10.tar.gz';          ;;        s390x)          ESUM='951eb9fd40e4478b0a7069b672bc0307f59045d756dd3ca6ed0b1ea12ab41ca2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_s390x_linux_hotspot_21.0.9_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 15 Jan 2026 22:20:42 GMT
+# Thu, 05 Feb 2026 22:19:53 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Thu, 05 Feb 2026 22:19:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Thu, 05 Feb 2026 22:19:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 15 Jan 2026 22:20:42 GMT
+# Thu, 05 Feb 2026 22:19:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 15 Jan 2026 22:20:42 GMT
+# Thu, 05 Feb 2026 22:19:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 16 Jan 2026 00:38:26 GMT
+# Thu, 05 Feb 2026 22:50:08 GMT
 RUN groupadd --gid 1001 liquibase &&     useradd --uid 1001 --gid liquibase --create-home --home-dir /liquibase liquibase &&     chown liquibase /liquibase # buildkit
-# Fri, 16 Jan 2026 00:38:26 GMT
+# Thu, 05 Feb 2026 22:50:08 GMT
 WORKDIR /liquibase
-# Fri, 16 Jan 2026 00:38:27 GMT
+# Thu, 05 Feb 2026 22:50:10 GMT
 ARG LIQUIBASE_VERSION=5.0.1
-# Fri, 16 Jan 2026 00:38:27 GMT
+# Thu, 05 Feb 2026 22:50:10 GMT
 ARG LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449
-# Fri, 16 Jan 2026 00:38:27 GMT
+# Thu, 05 Feb 2026 22:50:10 GMT
 # ARGS: LIQUIBASE_VERSION=5.0.1 LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449
 RUN wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz "https://package.liquibase.com/downloads/dockerhub/official/liquibase-${LIQUIBASE_VERSION}.tar.gz" &&     echo "$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz" | sha256sum -c - &&     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz &&     rm liquibase-${LIQUIBASE_VERSION}.tar.gz &&     ln -s /liquibase/liquibase /usr/local/bin/liquibase &&     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh &&     liquibase --version # buildkit
-# Fri, 16 Jan 2026 00:38:27 GMT
+# Thu, 05 Feb 2026 22:50:10 GMT
 ARG LPM_VERSION=0.2.14
-# Fri, 16 Jan 2026 00:38:27 GMT
+# Thu, 05 Feb 2026 22:50:10 GMT
 ARG LPM_SHA256=28750d84bf76d32ba3a2d51674a1b4e14205523c87e4655b2cd8de68b916758e
-# Fri, 16 Jan 2026 00:38:27 GMT
+# Thu, 05 Feb 2026 22:50:10 GMT
 ARG LPM_SHA256_ARM=541a220aa3c3227cc0fb40b15976b11011568a06a6499af090258bf604f45cc0
-# Fri, 16 Jan 2026 00:38:27 GMT
+# Thu, 05 Feb 2026 22:50:10 GMT
 LABEL org.opencontainers.image.description=Liquibase Container Image
-# Fri, 16 Jan 2026 00:38:27 GMT
+# Thu, 05 Feb 2026 22:50:10 GMT
 LABEL org.opencontainers.image.licenses=FSL-1.1-ALv2
-# Fri, 16 Jan 2026 00:38:27 GMT
+# Thu, 05 Feb 2026 22:50:10 GMT
 LABEL org.opencontainers.image.vendor=Liquibase
-# Fri, 16 Jan 2026 00:38:27 GMT
+# Thu, 05 Feb 2026 22:50:10 GMT
 LABEL org.opencontainers.image.version=5.0.1
-# Fri, 16 Jan 2026 00:38:27 GMT
+# Thu, 05 Feb 2026 22:50:10 GMT
 LABEL org.opencontainers.image.documentation=https://docs.liquibase.com
-# Fri, 16 Jan 2026 00:38:37 GMT
+# Thu, 05 Feb 2026 22:50:17 GMT
 # ARGS: LIQUIBASE_VERSION=5.0.1 LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449 LPM_VERSION=0.2.14 LPM_SHA256=28750d84bf76d32ba3a2d51674a1b4e14205523c87e4655b2cd8de68b916758e LPM_SHA256_ARM=541a220aa3c3227cc0fb40b15976b11011568a06a6499af090258bf604f45cc0
 RUN apt-get update &&     apt-get -yqq install unzip --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     mkdir /liquibase/bin &&     arch="$(dpkg --print-architecture)" &&     case "$arch" in     amd64)  DOWNLOAD_ARCH=""  ;;     arm64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM ;;     *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apt-get purge -y --auto-remove unzip &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version # buildkit
-# Fri, 16 Jan 2026 00:38:37 GMT
+# Thu, 05 Feb 2026 22:50:17 GMT
 ENV LIQUIBASE_HOME=/liquibase
-# Fri, 16 Jan 2026 00:38:37 GMT
+# Thu, 05 Feb 2026 22:50:17 GMT
 ENV DOCKER_LIQUIBASE=true
-# Fri, 16 Jan 2026 00:38:37 GMT
+# Thu, 05 Feb 2026 22:50:17 GMT
 COPY docker-entrypoint.sh ./ # buildkit
-# Fri, 16 Jan 2026 00:38:37 GMT
+# Thu, 05 Feb 2026 22:50:17 GMT
 COPY liquibase.docker.properties ./ # buildkit
-# Fri, 16 Jan 2026 00:38:37 GMT
+# Thu, 05 Feb 2026 22:50:17 GMT
 USER liquibase:liquibase
-# Fri, 16 Jan 2026 00:38:37 GMT
+# Thu, 05 Feb 2026 22:50:17 GMT
 ENTRYPOINT ["/liquibase/docker-entrypoint.sh"]
-# Fri, 16 Jan 2026 00:38:37 GMT
+# Thu, 05 Feb 2026 22:50:17 GMT
 CMD ["--help"]
 ```
 
@@ -266,67 +266,67 @@ CMD ["--help"]
 		Last Modified: Fri, 09 Jan 2026 07:36:03 GMT  
 		Size: 27.4 MB (27383497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3fc3ef6de679ecac0a74cc044dd73825b9e6daa54ab0904bc8e9b9e898d5bdd`  
-		Last Modified: Thu, 15 Jan 2026 22:20:05 GMT  
-		Size: 16.1 MB (16065656 bytes)  
+	-	`sha256:5b74e59f4a2977bd147493969b81a71d324adcad8507f34dde0ce1dd8fb1d0f5`  
+		Last Modified: Thu, 05 Feb 2026 22:20:10 GMT  
+		Size: 16.1 MB (16071549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a219d36f811564c72bb7a6d0857ab0c8d89d075c294126c2b2a475008aa7a9f9`  
-		Last Modified: Thu, 15 Jan 2026 22:20:56 GMT  
-		Size: 52.1 MB (52148571 bytes)  
+	-	`sha256:e4019ee84927424dda11a3fe488d18dadfeb23ebc7519c133a5b805a59fd5080`  
+		Last Modified: Thu, 05 Feb 2026 22:20:11 GMT  
+		Size: 52.2 MB (52155593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47e1d55d5d40f3e93a56f24f668a26eea6fa6e5356a993c4e45d8e9953b76df9`  
-		Last Modified: Thu, 15 Jan 2026 22:20:54 GMT  
-		Size: 158.0 B  
+	-	`sha256:7a84a7cc0285e1dca907592ad680cc05983d6ff179bbaf8fde1b1f80173a77ee`  
+		Last Modified: Thu, 05 Feb 2026 22:20:10 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:999485e2399b87c1520ab9bc7b8571ffae8afc8ca4ae4945f41f8c3a95c1cf2d`  
-		Last Modified: Thu, 15 Jan 2026 22:20:55 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:616fa20b50908f47baf72d0006de80ad9488b904484955d5df94a41a5ae7032d`  
+		Last Modified: Thu, 05 Feb 2026 22:20:10 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b22339f329ed16bc5f366187b46d1ca874f94bbfefe2d3b247d431ea0d9ed553`  
-		Last Modified: Fri, 16 Jan 2026 00:38:46 GMT  
-		Size: 4.3 KB (4306 bytes)  
+	-	`sha256:4ad643b78a4a829362d794caca7094f739ff6cbec3bc4696da6b5fd4d2728ec1`  
+		Last Modified: Thu, 05 Feb 2026 22:50:25 GMT  
+		Size: 4.3 KB (4310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6f4cb2c9bc55b0157043710c4197f4f449ce7692a8a4eb7de4dde0a06640d66`  
-		Last Modified: Fri, 16 Jan 2026 00:38:46 GMT  
-		Size: 8.7 MB (8665802 bytes)  
+	-	`sha256:5d397dfccacd86bfe40faab651e6b286f8df966678811965d89b67018db0162c`  
+		Last Modified: Thu, 05 Feb 2026 22:50:26 GMT  
+		Size: 8.7 MB (8665796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28db09e6a55451e8b949647b1f6e506b0767d3970efff8f37b9e5ef720041e2c`  
-		Last Modified: Fri, 16 Jan 2026 00:38:46 GMT  
-		Size: 3.4 MB (3441183 bytes)  
+	-	`sha256:87840a19bbae44c5633bbb0207fb868a53fc9f8d1a7b99b2e2a7be33dbaa9bf2`  
+		Last Modified: Thu, 05 Feb 2026 22:50:26 GMT  
+		Size: 3.4 MB (3441210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a26ea193430c972e0a857d2fc3bd86bbfc5d433c341fd6a0d7c6c44223d3dd2`  
-		Last Modified: Fri, 16 Jan 2026 00:38:46 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:00710174575d8f3ec1256c5c7d2daff2ed429d8a109848af1e122f02827a8091`  
+		Last Modified: Thu, 05 Feb 2026 22:50:25 GMT  
+		Size: 1.4 KB (1427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b053658a2da6e5ccd5e53c5a6b69c16cc1d7f09b2480460f4d42c3e3825e5ef`  
-		Last Modified: Fri, 16 Jan 2026 00:38:47 GMT  
-		Size: 173.0 B  
+	-	`sha256:04c2fef01113a48e663cddeb0e38a10094655ce8f2666fb65ccd50a47e2cc276`  
+		Last Modified: Thu, 05 Feb 2026 22:50:26 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `liquibase:latest` - unknown; unknown
 
 ```console
-$ docker pull liquibase@sha256:794295721f42ae19cb6a361a7b98ab0431326a42e2cf4c51ccc4f92ab2f2f83e
+$ docker pull liquibase@sha256:79d31f528197d5ae04ea7072432131f27a4d62f0e4ddefa6407389d0dd85e6e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.9 MB (3921858 bytes)**  
+-	Total Size: **3.9 MB (3925369 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:abda0a1a21e80eb18b426ed1f2622a352fa869c41776d27b6898429975c0e04a`
+-	Image ID: `sha256:f3cbded76d99c940b42d54fb09cd786c2894b47c529bd28f77d8d5ba7a75530b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f1f064fa648f1bec9aa1afe1149562710297f451da24811f23a3b31a0ab3571a`  
-		Last Modified: Fri, 16 Jan 2026 00:38:46 GMT  
-		Size: 3.9 MB (3897413 bytes)  
+	-	`sha256:61f3bfabbec752dcf5e0c9d305aa9a5dc691c051628a52da2e60bce48475f4eb`  
+		Last Modified: Thu, 05 Feb 2026 22:50:25 GMT  
+		Size: 3.9 MB (3900924 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:568c19304eecceba457d093ad4154bc1c584c5e53aa9dc439cec5ee1f0a80f8a`  
-		Last Modified: Fri, 16 Jan 2026 00:38:46 GMT  
+	-	`sha256:139039470b53564f36b4b948d57af184a5538cd59dcb0dd4a2d8655823b046e6`  
+		Last Modified: Thu, 05 Feb 2026 22:50:25 GMT  
 		Size: 24.4 KB (24445 bytes)  
 		MIME: application/vnd.in-toto+json
