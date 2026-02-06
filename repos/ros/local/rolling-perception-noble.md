@@ -689,14 +689,9 @@ Licenses: (parsed from: `/usr/share/doc/libboost-atomic1.83-dev/copyright`, `/us
 - `Spencer`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris boost1.83=1.83.0-2.1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/boost1.83/boost1.83_1.83.0-2.1ubuntu3.1.dsc' boost1.83_1.83.0-2.1ubuntu3.1.dsc 10382 SHA512:086293d50b9118a7d5eeac5bb33717fa2e5d409ae68cbf8029394a17c1882b8cc7e51918ee7cea4ae9dd8b104fe1c1271a96b4874252eaab5ee5b26f516d201c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/boost1.83/boost1.83_1.83.0.orig.tar.xz' boost1.83_1.83.0.orig.tar.xz 77376520 SHA512:de285fe516794a888196c0b1fafd5b62dbd3acf7c2214287c3a51a02d127981fa56f09c436e8d5868ceb1f5e9e9490c96fe635ed9aa84fd96c21b557a23558c8
-'http://archive.ubuntu.com/ubuntu/pool/main/b/boost1.83/boost1.83_1.83.0-2.1ubuntu3.1.debian.tar.xz' boost1.83_1.83.0-2.1ubuntu3.1.debian.tar.xz 379096 SHA512:1e201bbbaff88ecd751e3787701f6413e330963027111805a56059113edeba252004c8b9807dbe4c46d2aee6197425987c8dee736b788e23b98051dc08d559ad
-```
 
 ### `dpkg` source package: `brotli=1.1.0-2build2`
 
@@ -2535,15 +2530,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.6.dsc' glibc_2.39-0ubuntu8.6.dsc 9387 SHA512:6467b02c2dcf5a07856a3526ece393fdcd0f7c6aa9d22f20fd42a45a02ad050f995dabd7068f1ddd9aee6ab5ae7810590e00173ecf2ded40231c880d9bf28fe8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 18520988 SHA512:818f58172a52815b4338ea9f2a69ecaa3335492b9f8f64cbf8afb24c0d737982341968ecd79631cae3d3074ab0ae4bc6056fc4ba3ffe790849dc374835cd57e2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc' glibc_2.39.orig.tar.xz.asc 833 SHA512:5c054af523bbf5c2453363c023eadd1a75b6a5ff55c739011030115d3b117dbfc7d80cc74fbf157ea74a8d24aa14ff560c675374f875ec5c1ed3030e26a5ee07
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.6.debian.tar.xz' glibc_2.39-0ubuntu8.6.debian.tar.xz 467000 SHA512:5670e98edb2396b6f9fcf021c1f3da5fbb95ba7330e309f9039a5d0a3f148f4298454de70c565fdf9dfeb97edb4e9de6eeb65bd8e19d054c6346642867172d03
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6.1`
 
@@ -6026,14 +6015,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-90.91
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.dsc' linux_6.8.0-90.91.dsc 9362 SHA512:42abcfe6580eb6570fd83c3f819d27acfc94c00b40ddea17d1e7ac91b2b45b7f006bf9fa8b1acfe4c911040fb8ba878b3afb73d05494cd06cc44279b61b17890
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.diff.gz' linux_6.8.0-90.91.diff.gz 6075998 SHA512:e63209e51a8b6c9d38b3177e85a1a22f5c67eb9ab6eba8830caae022c155abee8ce44fb570b8ea87c3b8166f5d5f508928322932f4273356a46ab822eda98497
-```
 
 ### `dpkg` source package: `llvm-toolchain-15=1:15.0.7-14build3`
 
@@ -7155,15 +7139,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-21-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-21=21.0.9+10-1~24.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.9%2b10-1%7e24.04.dsc' openjdk-21_21.0.9+10-1~24.04.dsc 5043 SHA512:0eca26a893f1566448ec47fd5c9ea8d7cd957ecdb8c782b239336bed428f54942da5438c4f44b6d82bbeecf153a5bd9c558502cdb4d0ba11c2cdd09d7547ec7c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.9%2b10.orig-googletest.tar.xz' openjdk-21_21.0.9+10.orig-googletest.tar.xz 616792 SHA512:f9f419254f9346dea707dc6ab2ed185dbe046677c057117730dc6844cc2cc9a910d494f7f868652e52e5d0879b49358e80fe6750600b8a9ce788f488b04b4289
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.9%2b10.orig.tar.xz' openjdk-21_21.0.9+10.orig.tar.xz 67600676 SHA512:546c7c4f4e4591fe949d6e02fe5db86ced2f3994481f63253a7876f432fd64102386e5bcd0250eac56104b37efe71b1c3e299c4155a5a55d81c94260d3148195
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.9%2b10-1%7e24.04.debian.tar.xz' openjdk-21_21.0.9+10-1~24.04.debian.tar.xz 216504 SHA512:2de0f2fc13ce029d3964195be497ab62ec262be5c2fbfb406d7abefd81bafb85ae36560b32b5992b18e4100a2dde352e50efc390b3a3a40f8da5b5a96c5ec33c
-```
 
 ### `dpkg` source package: `openjpeg2=2.5.0-2ubuntu0.4`
 
@@ -7226,14 +7204,9 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.6.7+dfsg-1~exp1ubuntu8.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.dsc' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.dsc 3488 SHA512:b262ce1ec8742801dadaa6c50393cd2da7359200f6c42c0f2573be883deb13b2e71b85169ba8db1edf5ec11ef5e0122c2f839f4320ead4041423e9a3fa03b679
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg.orig.tar.xz' openldap_2.6.7+dfsg.orig.tar.xz 3774648 SHA512:84e02268b096347049b61947a56b5aa13d4d8548eed1bd472821c99fcd0208293d300b6bb78c4acd0e30a20fdd1851894c2f89f6365a359de856e1b095506014
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.debian.tar.xz' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.debian.tar.xz 186792 SHA512:276056a2c445949ab7cba305eb760f8793b5bae6c487c9301da94553b1c8d83ada9279a537800deef7fc434af4352585071514bafdc9172ac766feb739c590cc
-```
 
 ### `dpkg` source package: `openmpi=4.1.6-7ubuntu2`
 
@@ -8963,14 +8936,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/shar
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.10.dsc' python3.12_3.12.3-1ubuntu0.10.dsc 3311 SHA512:74aac82ac030451df73fdf73dc4431284114c3da3e3d9eccc9a1c494d9a4e023cb7dda5ad43fa72ac3d95c1758d5987ab8638f924515032278bcf6ba5d4d597e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.10.debian.tar.xz' python3.12_3.12.3-1ubuntu0.10.debian.tar.xz 263188 SHA512:5631baea6248a5e60e4e49aaa12e48aa9d78315d361a1969aed1a72aca9c320ebad9d5b795996205d4c1bac037d34aed07ee8f76d2e772c662441ed9926682ce
-```
 
 ### `dpkg` source package: `pyyaml=6.0.1-2build2`
 
