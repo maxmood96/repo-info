@@ -1,20 +1,20 @@
-# `nginx:1.29.4-alpine`
+# `nginx:1.29.5-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a855eac5070cae618138dbc004d0324511caafb6703d0168509f4547cc97aaa`
-- Created: `2026-01-28T04:00:43.553894874Z`
-- Virtual Size: ~ 61.89 Mb  
+- Image ID: `sha256:b76de378d57272a1dd9091a05dd548a3639dfb792ebdbf95d06704d2950afdea`
+- Created: `2026-02-05T00:07:18.369897286Z`
+- Virtual Size: ~ 62.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.29.4`
+  - `NGINX_VERSION=1.29.5`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=0.9.4`
+  - `NJS_VERSION=0.9.5`
   - `NJS_RELEASE=1`
   - `ACME_VERSION=0.3.1`
 - Labels:
@@ -93,16 +93,16 @@ MIT
 ### `apk` package: `aom-libs`
 
 ```console
-aom-libs-3.13.1-r0 description:
+aom-libs-3.13.1-r1 description:
 Alliance for Open Media (AOM) AV1 codec SDK (libraries)
 
-aom-libs-3.13.1-r0 webpage:
+aom-libs-3.13.1-r1 webpage:
 https://aomedia.org/
 
-aom-libs-3.13.1-r0 installed size:
+aom-libs-3.13.1-r1 installed size:
 8140 KiB
 
-aom-libs-3.13.1-r0 license:
+aom-libs-3.13.1-r1 license:
 BSD-2-Clause AND custom
 
 ```
@@ -450,16 +450,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.3-r0 description:
+libexpat-2.7.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.3-r0 webpage:
+libexpat-2.7.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.3-r0 installed size:
+libexpat-2.7.4-r0 installed size:
 133 KiB
 
-libexpat-2.7.3-r0 license:
+libexpat-2.7.4-r0 license:
 MIT
 
 ```
@@ -1011,16 +1011,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.29.4-r1 description:
+nginx-1.29.5-r1 description:
 High performance web server
 
-nginx-1.29.4-r1 webpage:
+nginx-1.29.5-r1 webpage:
 https://nginx.org/
 
-nginx-1.29.4-r1 installed size:
-2702 KiB
+nginx-1.29.5-r1 installed size:
+2703 KiB
 
-nginx-1.29.4-r1 license:
+nginx-1.29.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1028,16 +1028,16 @@ nginx-1.29.4-r1 license:
 ### `apk` package: `nginx-module-acme`
 
 ```console
-nginx-module-acme-1.29.4.0.3.1-r1 description:
+nginx-module-acme-1.29.5.0.3.1-r1 description:
 nginx nginx-acme
 
-nginx-module-acme-1.29.4.0.3.1-r1 webpage:
+nginx-module-acme-1.29.5.0.3.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-acme-1.29.4.0.3.1-r1 installed size:
+nginx-module-acme-1.29.5.0.3.1-r1 installed size:
 7959 KiB
 
-nginx-module-acme-1.29.4.0.3.1-r1 license:
+nginx-module-acme-1.29.5.0.3.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1045,16 +1045,16 @@ nginx-module-acme-1.29.4.0.3.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.29.4-r1 description:
+nginx-module-geoip-1.29.5-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.29.4-r1 webpage:
+nginx-module-geoip-1.29.5-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.29.4-r1 installed size:
+nginx-module-geoip-1.29.5-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.29.4-r1 license:
+nginx-module-geoip-1.29.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1062,16 +1062,16 @@ nginx-module-geoip-1.29.4-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.29.4-r1 description:
+nginx-module-image-filter-1.29.5-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.29.4-r1 webpage:
+nginx-module-image-filter-1.29.5-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.29.4-r1 installed size:
+nginx-module-image-filter-1.29.5-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.29.4-r1 license:
+nginx-module-image-filter-1.29.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1079,16 +1079,16 @@ nginx-module-image-filter-1.29.4-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.29.4.0.9.4-r1 description:
+nginx-module-njs-1.29.5.0.9.5-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.29.4.0.9.4-r1 webpage:
+nginx-module-njs-1.29.5.0.9.5-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.29.4.0.9.4-r1 installed size:
-9120 KiB
+nginx-module-njs-1.29.5.0.9.5-r1 installed size:
+9341 KiB
 
-nginx-module-njs-1.29.4.0.9.4-r1 license:
+nginx-module-njs-1.29.5.0.9.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1096,16 +1096,16 @@ nginx-module-njs-1.29.4.0.9.4-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.29.4-r1 description:
+nginx-module-xslt-1.29.5-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.29.4-r1 webpage:
+nginx-module-xslt-1.29.5-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.29.4-r1 installed size:
+nginx-module-xslt-1.29.5-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.29.4-r1 license:
+nginx-module-xslt-1.29.5-r1 license:
 2-clause BSD-like license
 
 ```
