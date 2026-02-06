@@ -300,20 +300,13 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris brotli=1.2.0-1
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.2.0-1.dsc' brotli_1.2.0-1.dsc 2282 SHA256:04b49a59c0dc4f8ba715378f0a03911fab373443f0324544efa5b9ddfb849740
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.2.0.orig.tar.gz' brotli_1.2.0.orig.tar.gz 646398 SHA256:eb5f7dadf215d0670665fd81566e1fe2dfdc154d983f09142de7299df4c182e6
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.2.0-1.debian.tar.xz' brotli_1.2.0-1.debian.tar.xz 5188 SHA256:84628bcca644a4e4d7ecbd7b914eddbc0bf37661cff5c8ac28b5d2566ee7e804
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/brotli/1.2.0-1/
 
-- https://sources.debian.net/src/brotli/1.2.0-1/ (for browsing the source)
-- https://sources.debian.net/src/brotli/1.2.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/brotli/1.2.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.8-6`
 
@@ -2111,21 +2104,13 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 - `GPL-2.0-only`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mawk=1.3.4.20250131-2
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20250131-2.dsc' mawk_1.3.4.20250131-2.dsc 2969 SHA256:e0b020dbf75a7aa312b6938034c3e6c971b5d22dad1dccc43e42da918611650c
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20250131.orig.tar.gz' mawk_1.3.4.20250131.orig.tar.gz 433213 SHA256:51bcb82d577b141d896d9d9c3077d7aaa209490132e9f2b9573ba8511b3835be
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20250131.orig.tar.gz.asc' mawk_1.3.4.20250131.orig.tar.gz.asc 729 SHA256:bc83f127727edb42a91d516770c8d0d3cdb5f6e541aa3cb5213b79dae494db95
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20250131-2.debian.tar.xz' mawk_1.3.4.20250131-2.debian.tar.xz 16120 SHA256:aa9eb515b394eec97cdf28e0c3e52ec4519d63c42701bbc747613cf044d9271c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mawk/1.3.4.20250131-2/
 
-- https://sources.debian.net/src/mawk/1.3.4.20250131-2/ (for browsing the source)
-- https://sources.debian.net/src/mawk/1.3.4.20250131-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mawk/1.3.4.20250131-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `media-types=14.0.0`
 
@@ -2788,21 +2773,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.11-1
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.11-1.dsc' python3.13_3.13.11-1.dsc 3699 SHA256:89b7935367c17f06a45d1b8f07555e26be953a0eb3e6c92176e683d6650cd832
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.11.orig.tar.xz' python3.13_3.13.11.orig.tar.xz 22704352 SHA256:16ede7bb7cdbfa895d11b0642fa0e523f291e6487194d53cf6d3b338c3a17ea2
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.11.orig.tar.xz.asc' python3.13_3.13.11.orig.tar.xz.asc 963 SHA256:49508930206f812526482208c7ba44c80514ac3a5b8dab4505bd5a308439b16d
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.11-1.debian.tar.xz' python3.13_3.13.11-1.debian.tar.xz 261648 SHA256:7851f85a255b4bbd6f986a89115296e262ec222ed39fbf7a5bcebd4346048661
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.13/3.13.11-1/
 
-- https://sources.debian.net/src/python3.13/3.13.11-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.13/3.13.11-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.13/3.13.11-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.3-3`
 
