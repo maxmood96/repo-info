@@ -1,7 +1,7 @@
 ## `drupal:php8.4-fpm-alpine3.22`
 
 ```console
-$ docker pull drupal@sha256:c4f2bce3cd1245cbd8eb76e6ce0f54481bf89930ccce02e8dbb6e9f9cd83c2c0
+$ docker pull drupal@sha256:a1a59ba20591ae58012b6c3ead33f9bf374d8589dc48988641c99e36d6e8490f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1090,13 +1090,13 @@ $ docker pull drupal@sha256:fee9fcadb45a9bcf3d7cb7b30eb5f8d4b05edc20751326fb1464
 ### `drupal:php8.4-fpm-alpine3.22` - linux; riscv64
 
 ```console
-$ docker pull drupal@sha256:4cf98391b6a8e87306a44275fb20ad54d0fc840c53dfb9d685afa68d021e3fa7
+$ docker pull drupal@sha256:d72005635183bfd1e77ebb5d88a99b37bdf368535e614a02539a675da31de5db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **58.8 MB (58792355 bytes)**  
+-	Total Size: **58.8 MB (58798063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4019cc456456bdcb646491c98f2f8a145088422e521cceca59b96e54b4ef1766`
+-	Image ID: `sha256:94b36edb4c0554ba4593af055db019864f490c0373a490247c143a3e3e8b1839`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1160,14 +1160,14 @@ RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_
 # Mon, 02 Feb 2026 22:21:48 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
 # Mon, 02 Feb 2026 22:21:48 GMT
-ENV DRUPAL_VERSION=11.3.2
+ENV DRUPAL_VERSION=11.3.3
 # Mon, 02 Feb 2026 22:21:48 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
 # Mon, 02 Feb 2026 22:21:48 GMT
 WORKDIR /opt/drupal
-# Mon, 02 Feb 2026 22:22:30 GMT
+# Fri, 06 Feb 2026 09:10:26 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Mon, 02 Feb 2026 22:22:30 GMT
+# Fri, 06 Feb 2026 09:10:26 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -1236,33 +1236,33 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Mon, 02 Feb 2026 22:25:01 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd3afe41da1e854ef364ac134f4f03b2fad775ad4615e6a9aba88c10a46a843c`  
-		Last Modified: Mon, 02 Feb 2026 22:25:05 GMT  
-		Size: 21.3 MB (21294860 bytes)  
+	-	`sha256:81a65a30c791448aa328a6fd169bfd46968f9f81de972d7ac9855a5832947059`  
+		Last Modified: Fri, 06 Feb 2026 09:13:02 GMT  
+		Size: 21.3 MB (21300568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:php8.4-fpm-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:d6b5bd0a6d0de60bff46c34139972b7c803f3c33e4dacb5304bc24df93c3291c
+$ docker pull drupal@sha256:3b8c936e662780aca23389afda7f9c8ace2b4bd43917bb4f4ec9408acc078727
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **407.0 KB (407013 bytes)**  
+-	Total Size: **407.0 KB (407012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:924f0ab2935da139d68065f6bbfd8b9bb7ba382b89c326a0af888308d26391ad`
+-	Image ID: `sha256:ae1c2885e61b3ab18e4ffdeccfce668d0390e0869471d7fb0b27da818a7692f1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a2a62d8b4398e9357e99c5933311f1c107ea27ba633204c84f79f016d00d6213`  
-		Last Modified: Mon, 02 Feb 2026 22:25:01 GMT  
+	-	`sha256:54cb12c19011cf7af5966e63e371bb23f6daab4d8e0c68f9af82e65192f337e3`  
+		Last Modified: Fri, 06 Feb 2026 09:12:58 GMT  
 		Size: 372.4 KB (372431 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ff57680e00cf76b5ec34afc457a16b3f420f9352d2de9faebbf11bb0c993edae`  
-		Last Modified: Mon, 02 Feb 2026 22:25:00 GMT  
-		Size: 34.6 KB (34582 bytes)  
+	-	`sha256:307b6ef3514b282e02255c22fb41eb98d7cdcce35193d7a2bf056c322987b4b7`  
+		Last Modified: Fri, 06 Feb 2026 09:12:58 GMT  
+		Size: 34.6 KB (34581 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:php8.4-fpm-alpine3.22` - linux; s390x
