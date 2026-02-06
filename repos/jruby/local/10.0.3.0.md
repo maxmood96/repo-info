@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5bc2b203487c4fc0ae4fc1e19d7e6c04053a79503ad3b8be7a4ae70ef693ee65`
-- Created: `2026-01-16T00:16:18.958122005Z`
-- Virtual Size: ~ 411.88 Mb  
+- Image ID: `sha256:b98ff7d2dcc9358f21a8ce18ebdb0b3744e60cba47df992022e6710bcbaf94f8`
+- Created: `2026-02-05T17:49:12.717704591Z`
+- Virtual Size: ~ 453.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,8 +16,8 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.9+10`
-  - `JRUBY_VERSION=10.0.2.0`
-  - `JRUBY_SHA256=b8a026f38aa98461a04ed0aa0b20891ce257ecbe53e124719ce9ee5b804525f1`
+  - `JRUBY_VERSION=10.0.3.0`
+  - `JRUBY_SHA256=0edb5b02c3f482205d1cf8358f38e31d9e4c6d93a210039224750c72501e4717`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -721,15 +721,15 @@ $ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.debian.tar.xz' gcc-14_14.2.0-4ubuntu2~24.04.debian.tar.xz 1950240 SHA512:2b1894ebcb104b85da3c614e0a6c2e24b1f6c1f548645996d2cb0d274301284f1f4db0809c8355997b05fe64b76a73ee1b9499c7b1c229547bad79fee1954d59
 ```
 
-### `dpkg` source package: `glibc=2.39-0ubuntu8.6`
+### `dpkg` source package: `glibc=2.39-0ubuntu8.7`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu8.6`
-- `libc-dev-bin=2.39-0ubuntu8.6`
-- `libc6:amd64=2.39-0ubuntu8.6`
-- `libc6-dev:amd64=2.39-0ubuntu8.6`
-- `locales=2.39-0ubuntu8.6`
+- `libc-bin=2.39-0ubuntu8.7`
+- `libc-dev-bin=2.39-0ubuntu8.7`
+- `libc6:amd64=2.39-0ubuntu8.7`
+- `libc6-dev:amd64=2.39-0ubuntu8.7`
+- `locales=2.39-0ubuntu8.7`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -740,11 +740,11 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.6.dsc' glibc_2.39-0ubuntu8.6.dsc 9387 SHA512:6467b02c2dcf5a07856a3526ece393fdcd0f7c6aa9d22f20fd42a45a02ad050f995dabd7068f1ddd9aee6ab5ae7810590e00173ecf2ded40231c880d9bf28fe8
+$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.7.dsc' glibc_2.39-0ubuntu8.7.dsc 9257 SHA512:413efc529754f26d91d4c9efb8b697df56dce1650c58016463795c487e9c11e6c296ee97ae652a1a4d395921075b85929ac02c649e19e5ecb2c24a300942003f
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 18520988 SHA512:818f58172a52815b4338ea9f2a69ecaa3335492b9f8f64cbf8afb24c0d737982341968ecd79631cae3d3074ab0ae4bc6056fc4ba3ffe790849dc374835cd57e2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc' glibc_2.39.orig.tar.xz.asc 833 SHA512:5c054af523bbf5c2453363c023eadd1a75b6a5ff55c739011030115d3b117dbfc7d80cc74fbf157ea74a8d24aa14ff560c675374f875ec5c1ed3030e26a5ee07
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.6.debian.tar.xz' glibc_2.39-0ubuntu8.6.debian.tar.xz 467000 SHA512:5670e98edb2396b6f9fcf021c1f3da5fbb95ba7330e309f9039a5d0a3f148f4298454de70c565fdf9dfeb97edb4e9de6eeb65bd8e19d054c6346642867172d03
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.7.debian.tar.xz' glibc_2.39-0ubuntu8.7.debian.tar.xz 469880 SHA512:12758ed1b5e0337ad202f8a66332fdbea8a217531a2a01819847d08207afa65b114943d712b8b27f83f0f370c07371fddd9ed20661f683fbb4d9386cd4f57893
 ```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6.1`
@@ -1211,14 +1211,9 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.43-5ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.3.dsc' libpng1.6_1.6.43-5ubuntu0.3.dsc 2384 SHA512:a4a024fbfe9728cb52028d729326427f945e529aeaf844b889d01eb4f4efa7b7a049ab3648895e2f8155d08b841467029371a36c12c14b21dac3234e1541bec8
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43.orig.tar.gz' libpng1.6_1.6.43.orig.tar.gz 1554715 SHA512:3bb2a7b73113be42b09c2116e6c6f5a7ddb4e2ab06e0b13e10b7314acdccc4bb624ff602e16140c0484f6cde80efa190296226be3da195c6926819f07c723c12
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.3.debian.tar.xz' libpng1.6_1.6.43-5ubuntu0.3.debian.tar.xz 38892 SHA512:e137bcb58708ed1e5658fab2e92587a2c251293c0a3bb86b1e2877d3cd98f6889314ba7c438bc505f7a011d98b15ee4edd933c946394ebf09c0eb2a6f9348a42
-```
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build1`
 
@@ -1449,11 +1444,11 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-90.91`
+### `dpkg` source package: `linux=6.8.0-94.96`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-90.91`
+- `linux-libc-dev:amd64=6.8.0-94.96`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1462,10 +1457,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.8.0-90.91
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.dsc' linux_6.8.0-90.91.dsc 9362 SHA512:42abcfe6580eb6570fd83c3f819d27acfc94c00b40ddea17d1e7ac91b2b45b7f006bf9fa8b1acfe4c911040fb8ba878b3afb73d05494cd06cc44279b61b17890
+$ apt-get source -qq --print-uris linux=6.8.0-94.96
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-94.96.dsc' linux_6.8.0-94.96.dsc 9362 SHA512:c0212fd5752ecc9a5c4d2b1d48308897c4eb66444c49c8521b8da2fb0bad484574e04b2230b56125cc40c153b56e16b773dd2a07ce6325aadbdba4ce67f72d69
 'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-90.91.diff.gz' linux_6.8.0-90.91.diff.gz 6075998 SHA512:e63209e51a8b6c9d38b3177e85a1a22f5c67eb9ab6eba8830caae022c155abee8ce44fb570b8ea87c3b8166f5d5f508928322932f4273356a46ab822eda98497
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-94.96.diff.gz' linux_6.8.0-94.96.diff.gz 6077075 SHA512:3c4fa61f2537f94e7a55975989dbef130ace4ebd94476dabb64ebf41df421bbdb4aeb6ee4e69301e166cc7a75dc047c0debc162a3f386a2322c92cec255435dd
 ```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
@@ -1665,14 +1660,9 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.6.7+dfsg-1~exp1ubuntu8.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.dsc' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.dsc 3488 SHA512:b262ce1ec8742801dadaa6c50393cd2da7359200f6c42c0f2573be883deb13b2e71b85169ba8db1edf5ec11ef5e0122c2f839f4320ead4041423e9a3fa03b679
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg.orig.tar.xz' openldap_2.6.7+dfsg.orig.tar.xz 3774648 SHA512:84e02268b096347049b61947a56b5aa13d4d8548eed1bd472821c99fcd0208293d300b6bb78c4acd0e30a20fdd1851894c2f89f6365a359de856e1b095506014
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.debian.tar.xz' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.debian.tar.xz 186792 SHA512:276056a2c445949ab7cba305eb760f8793b5bae6c487c9301da94553b1c8d83ada9279a537800deef7fc434af4352585071514bafdc9172ac766feb739c590cc
-```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.6`
 
