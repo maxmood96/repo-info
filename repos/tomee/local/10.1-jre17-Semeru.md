@@ -1,10 +1,10 @@
-# `tomee:10.1.3-jre17-Semeru-ubuntu-microprofile`
+# `tomee:10.1.4-jre17-Semeru-ubuntu-microprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d6af89f161a5f0416f5990beda526b0f02f82ce3f4ec1a73279ea7ffd21b1f6`
-- Created: `2026-01-16T01:30:59.726904901Z`
-- Virtual Size: ~ 379.87 Mb  
+- Image ID: `sha256:f8954c647e5283ff93901b91f8f3a6dd1bdcb51805f93cc3f222c3f52ec3428b`
+- Created: `2026-02-04T18:04:30.627773117Z`
+- Virtual Size: ~ 380.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -16,7 +16,7 @@
   - `JAVA_VERSION=jdk-17.0.17+10_openj9-0.56.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
-  - `TOMEE_VER=10.1.3`
+  - `TOMEE_VER=10.1.4`
   - `TOMEE_BUILD=microprofile`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`

@@ -1,10 +1,10 @@
-# `tomee:10.1.3-jre21-Temurin-ubuntu-webprofile`
+# `tomee:10.1.4-jre21-Temurin-ubuntu-webprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:967125368ee6aa2967b09e022dd3535671046d8b2ff54d92ae0ad92ceafc426b`
-- Created: `2026-01-16T01:27:03.301085692Z`
-- Virtual Size: ~ 356.39 Mb  
+- Image ID: `sha256:4e57a3d6b71c18df9334bd3ce083cf43052df9b115af73f9f834d94d72ebf8da`
+- Created: `2026-02-05T22:59:26.786358012Z`
+- Virtual Size: ~ 378.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,8 +15,8 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.9+10`
-  - `TOMEE_VER=10.1.3`
+  - `JAVA_VERSION=jdk-21.0.10+7`
+  - `TOMEE_VER=10.1.4`
   - `TOMEE_BUILD=webprofile`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -718,13 +718,13 @@ $ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.debian.tar.xz' gcc-14_14.2.0-4ubuntu2~24.04.debian.tar.xz 1950240 SHA512:2b1894ebcb104b85da3c614e0a6c2e24b1f6c1f548645996d2cb0d274301284f1f4db0809c8355997b05fe64b76a73ee1b9499c7b1c229547bad79fee1954d59
 ```
 
-### `dpkg` source package: `glibc=2.39-0ubuntu8.6`
+### `dpkg` source package: `glibc=2.39-0ubuntu8.7`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu8.6`
-- `libc6:amd64=2.39-0ubuntu8.6`
-- `locales=2.39-0ubuntu8.6`
+- `libc-bin=2.39-0ubuntu8.7`
+- `libc6:amd64=2.39-0ubuntu8.7`
+- `locales=2.39-0ubuntu8.7`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -732,9 +732,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.7.dsc' glibc_2.39-0ubuntu8.7.dsc 9257 SHA512:413efc529754f26d91d4c9efb8b697df56dce1650c58016463795c487e9c11e6c296ee97ae652a1a4d395921075b85929ac02c649e19e5ecb2c24a300942003f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 18520988 SHA512:818f58172a52815b4338ea9f2a69ecaa3335492b9f8f64cbf8afb24c0d737982341968ecd79631cae3d3074ab0ae4bc6056fc4ba3ffe790849dc374835cd57e2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc' glibc_2.39.orig.tar.xz.asc 833 SHA512:5c054af523bbf5c2453363c023eadd1a75b6a5ff55c739011030115d3b117dbfc7d80cc74fbf157ea74a8d24aa14ff560c675374f875ec5c1ed3030e26a5ee07
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.7.debian.tar.xz' glibc_2.39-0ubuntu8.7.debian.tar.xz 469880 SHA512:12758ed1b5e0337ad202f8a66332fdbea8a217531a2a01819847d08207afa65b114943d712b8b27f83f0f370c07371fddd9ed20661f683fbb4d9386cd4f57893
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6.1`
 
@@ -1183,11 +1189,11 @@ $ apt-get source -qq --print-uris libmd=1.1.0-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmd/libmd_1.1.0-2build1.1.debian.tar.xz' libmd_1.1.0-2build1.1.debian.tar.xz 8448 SHA512:b013b32fbc71ca9195e4ce9b25f5440cf746e539d72090a0f50e226783ee4885050f8e245fe75fe76775c84d6dcaf6ce684cbd9dd89d09265fae3c9f27a885af
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.43-5ubuntu0.3`
+### `dpkg` source package: `libpng1.6=1.6.43-5ubuntu0.4`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.43-5ubuntu0.3`
+- `libpng16-16t64:amd64=1.6.43-5ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -1200,9 +1206,14 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libpng1.6=1.6.43-5ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.4.dsc' libpng1.6_1.6.43-5ubuntu0.4.dsc 2384 SHA512:2c54205f27107dcd5eac158a6e5d1bb42b71359f61d97c5dfae5c0ecaaf658e17152dab68aa0bc2642c02d1bf3208d0e69f957208aaea9f1f300fbf1a4b78b80
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43.orig.tar.gz' libpng1.6_1.6.43.orig.tar.gz 1554715 SHA512:3bb2a7b73113be42b09c2116e6c6f5a7ddb4e2ab06e0b13e10b7314acdccc4bb624ff602e16140c0484f6cde80efa190296226be3da195c6926819f07c723c12
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.4.debian.tar.xz' libpng1.6_1.6.43-5ubuntu0.4.debian.tar.xz 40308 SHA512:fc76fb1ea44b8f35555b506c7e4b79c3bd641a8504618119c4a75eaea42333aa7aec7a7e978ac3d38295f7052bd8e59f5be85b8b21dee31b1b75f1ade9077b05
+```
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build1`
 
@@ -1576,11 +1587,11 @@ $ apt-get source -qq --print-uris npth=1.6-3.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3.1build1.debian.tar.xz' npth_1.6-3.1build1.debian.tar.xz 11036 SHA512:caf36d8727c335bbcf996421e65cf044d6468d95d70e9b671b57196341e49e67f687d6c80cab78d6c0388a90f795e4ed0ff28aaa0d4e7dd6f4701abdfc77a09a
 ```
 
-### `dpkg` source package: `openldap=2.6.7+dfsg-1~exp1ubuntu8.2`
+### `dpkg` source package: `openldap=2.6.10+dfsg-0ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `libldap2:amd64=2.6.7+dfsg-1~exp1ubuntu8.2`
+- `libldap2:amd64=2.6.10+dfsg-0ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 
@@ -1609,16 +1620,21 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 - `UMich`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.6.10+dfsg-0ubuntu0.24.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg-0ubuntu0.24.04.1.dsc' openldap_2.6.10+dfsg-0ubuntu0.24.04.1.dsc 3653 SHA512:828b648db337736f5560dd9a9a8d1b49cd3a6c642cb0891091879a48783fdd9a38a074e5b8b244524021a2c4949e93edaba4e712870c1da8614c647ab8603319
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg.orig.tar.xz' openldap_2.6.10+dfsg.orig.tar.xz 3754560 SHA512:9c24cab12ea4002560670d1a6053c00582aea1713e3db262bbf5aae7666c6d50ef28e7b59ca4dbe5c5b5903e56268911a935a58ef852239c259830458e804f62
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg-0ubuntu0.24.04.1.debian.tar.xz' openldap_2.6.10+dfsg-0ubuntu0.24.04.1.debian.tar.xz 191132 SHA512:5a64a165cd7602cff38528b117e8b5f29b8953cf3edf3cc8ff87b68ce8a84b60a0dc7c3a346dab38d0fde602a2b0a8f490af221a02891dc9624a454121dc1c00
+```
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.6`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.7`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.6`
-- `openssl=3.0.13-0ubuntu3.6`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.7`
+- `openssl=3.0.13-0ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -1627,9 +1643,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.7.dsc' openssl_3.0.13-0ubuntu3.7.dsc 2512 SHA512:cd164a3e4bb504d5022d7012610f6f77e0953903f6cc9e0ba455c215a252593326f2ef010244da494c01f115b572ff548f608745f7d1c35ce7e3641da1326240
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.7.debian.tar.xz' openssl_3.0.13-0ubuntu3.7.debian.tar.xz 174788 SHA512:c396fd3603fa0ee909f8d637e82b395a338133074c1c83c4b0ffbf1cb1c791c7fb9680fa5837d761e47d47909312d9f850894ba4cf2aa40a9f2768a0a47b5c28
+```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
