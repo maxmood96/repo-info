@@ -236,14 +236,13 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris brotli=1.2.0-1
-'http://http.debian.net/debian/pool/main/b/brotli/brotli_1.2.0-1.dsc' brotli_1.2.0-1.dsc 2282 SHA256:04b49a59c0dc4f8ba715378f0a03911fab373443f0324544efa5b9ddfb849740
-'http://http.debian.net/debian/pool/main/b/brotli/brotli_1.2.0.orig.tar.gz' brotli_1.2.0.orig.tar.gz 646398 SHA256:eb5f7dadf215d0670665fd81566e1fe2dfdc154d983f09142de7299df4c182e6
-'http://http.debian.net/debian/pool/main/b/brotli/brotli_1.2.0-1.debian.tar.xz' brotli_1.2.0-1.debian.tar.xz 5188 SHA256:84628bcca644a4e4d7ecbd7b914eddbc0bf37661cff5c8ac28b5d2566ee7e804
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/brotli/1.2.0-1/
+
 
 ### `dpkg` source package: `build-essential=12.12`
 
@@ -360,10 +359,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cluster=2.1.8.1-1
-'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.1.8.1-1.dsc' cluster_2.1.8.1-1.dsc 1845 SHA256:c085f1ba08fb98239dd0f65f49262ae77d835056d8998e5179695aae65f85152
-'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.1.8.1.orig.tar.gz' cluster_2.1.8.1.orig.tar.gz 372103 SHA256:4b95b78e09b17ddca72edc0bb180c753c004ed2f61c3eb12e0451ac77f441e57
-'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.1.8.1-1.debian.tar.xz' cluster_2.1.8.1-1.debian.tar.xz 4392 SHA256:e4a98e91a7f14ae37690affc02c8f18553563c80d8dfbb886206b5b53f634b3c
+'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.1.8.1-1.dsc' cluster_2.1.8.1-1.dsc 1845 SHA256:c085f1ba08fb98239dd0f65f49262ae77d835056d8998e5179695aae65f85152
+'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.1.8.1.orig.tar.gz' cluster_2.1.8.1.orig.tar.gz 372103 SHA256:4b95b78e09b17ddca72edc0bb180c753c004ed2f61c3eb12e0451ac77f441e57
+'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.1.8.1-1.debian.tar.xz' cluster_2.1.8.1-1.debian.tar.xz 4392 SHA256:e4a98e91a7f14ae37690affc02c8f18553563c80d8dfbb886206b5b53f634b3c
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/cluster/2.1.8.1-1/ (for browsing the source)
+- https://sources.debian.net/src/cluster/2.1.8.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cluster/2.1.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `codetools=0.2-20-1`
 
@@ -784,10 +789,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris fontconfig=2.17.1-3
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.17.1-3.dsc' fontconfig_2.17.1-3.dsc 2644 SHA256:fb23b4ae71c2aab2e2162be1a98373e4e1a800e7ddcd1b22ca8260c357112c5d
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.17.1.orig.tar.gz' fontconfig_2.17.1.orig.tar.gz 622045 SHA256:f07504cef87f171ee1748352e2df9b9f125352f620fa0d03a9284306ea2c40a4
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.17.1-3.debian.tar.xz' fontconfig_2.17.1-3.debian.tar.xz 57728 SHA256:87c028a1e0a60cdb503a28cc3b167cc44f6373a3eea88bbaa8ea4fe3e56d540b
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.17.1-3.dsc' fontconfig_2.17.1-3.dsc 2644 SHA256:fb23b4ae71c2aab2e2162be1a98373e4e1a800e7ddcd1b22ca8260c357112c5d
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.17.1.orig.tar.gz' fontconfig_2.17.1.orig.tar.gz 622045 SHA256:f07504cef87f171ee1748352e2df9b9f125352f620fa0d03a9284306ea2c40a4
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.17.1-3.debian.tar.xz' fontconfig_2.17.1-3.debian.tar.xz 57728 SHA256:87c028a1e0a60cdb503a28cc3b167cc44f6373a3eea88bbaa8ea4fe3e56d540b
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/fontconfig/2.17.1-3/ (for browsing the source)
+- https://sources.debian.net/src/fontconfig/2.17.1-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/fontconfig/2.17.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `foreign=0.8.91-1`
 
@@ -2410,10 +2421,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris littler=0.3.21-2
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.21-2.dsc' littler_0.3.21-2.dsc 1888 SHA256:b6ec506a7b7d2ae8cde91ebce2764311c5243f7fe792c3bfd2b1eb080dda91d0
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.21.orig.tar.gz' littler_0.3.21.orig.tar.gz 129864 SHA256:9e8be7aca97ef31ecc7af845954caddf52f9dad4d28ee1392dca829b75e64085
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.21-2.debian.tar.xz' littler_0.3.21-2.debian.tar.xz 5484 SHA256:5d0cde944c93edbd2064320942b1718d46562321dc77a2062a5cda5c0b9134b9
+'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.21-2.dsc' littler_0.3.21-2.dsc 1888 SHA256:b6ec506a7b7d2ae8cde91ebce2764311c5243f7fe792c3bfd2b1eb080dda91d0
+'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.21.orig.tar.gz' littler_0.3.21.orig.tar.gz 129864 SHA256:9e8be7aca97ef31ecc7af845954caddf52f9dad4d28ee1392dca829b75e64085
+'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.21-2.debian.tar.xz' littler_0.3.21-2.debian.tar.xz 5484 SHA256:5d0cde944c93edbd2064320942b1718d46562321dc77a2062a5cda5c0b9134b9
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/littler/0.3.21-2/ (for browsing the source)
+- https://sources.debian.net/src/littler/0.3.21-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/littler/0.3.21-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-6`
 
@@ -2469,15 +2486,13 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 - `GPL-2.0-only`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mawk=1.3.4.20250131-2
-'http://http.debian.net/debian/pool/main/m/mawk/mawk_1.3.4.20250131-2.dsc' mawk_1.3.4.20250131-2.dsc 2969 SHA256:e0b020dbf75a7aa312b6938034c3e6c971b5d22dad1dccc43e42da918611650c
-'http://http.debian.net/debian/pool/main/m/mawk/mawk_1.3.4.20250131.orig.tar.gz' mawk_1.3.4.20250131.orig.tar.gz 433213 SHA256:51bcb82d577b141d896d9d9c3077d7aaa209490132e9f2b9573ba8511b3835be
-'http://http.debian.net/debian/pool/main/m/mawk/mawk_1.3.4.20250131.orig.tar.gz.asc' mawk_1.3.4.20250131.orig.tar.gz.asc 729 SHA256:bc83f127727edb42a91d516770c8d0d3cdb5f6e541aa3cb5213b79dae494db95
-'http://http.debian.net/debian/pool/main/m/mawk/mawk_1.3.4.20250131-2.debian.tar.xz' mawk_1.3.4.20250131-2.debian.tar.xz 16120 SHA256:aa9eb515b394eec97cdf28e0c3e52ec4519d63c42701bbc747613cf044d9271c
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mawk/1.3.4.20250131-2/
+
 
 ### `dpkg` source package: `mgcv=1.9-4-1`
 
