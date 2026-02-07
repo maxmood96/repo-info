@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3668239cd7f8a6b281d690a589d567b175f21fba417acc0617f30a038bfbbf42`
-- Created: `2026-01-28T19:36:45.122376421Z`
-- Virtual Size: ~ 419.83 Mb  
+- Image ID: `sha256:4e3ffc0a8b0ca98f4cfaaadace294416b0b38af485844b3e3a5a5f3c939043ec`
+- Created: `2026-02-05T22:57:20.237428729Z`
+- Virtual Size: ~ 435.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-25.0.1+8`
+  - `JAVA_VERSION=jdk-25.0.2+10`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -703,13 +703,13 @@ $ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.debian.tar.xz' gcc-14_14.2.0-4ubuntu2~24.04.debian.tar.xz 1950240 SHA512:2b1894ebcb104b85da3c614e0a6c2e24b1f6c1f548645996d2cb0d274301284f1f4db0809c8355997b05fe64b76a73ee1b9499c7b1c229547bad79fee1954d59
 ```
 
-### `dpkg` source package: `glibc=2.39-0ubuntu8.6`
+### `dpkg` source package: `glibc=2.39-0ubuntu8.7`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu8.6`
-- `libc6:amd64=2.39-0ubuntu8.6`
-- `locales=2.39-0ubuntu8.6`
+- `libc-bin=2.39-0ubuntu8.7`
+- `libc6:amd64=2.39-0ubuntu8.7`
+- `locales=2.39-0ubuntu8.7`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -717,9 +717,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.7.dsc' glibc_2.39-0ubuntu8.7.dsc 9257 SHA512:413efc529754f26d91d4c9efb8b697df56dce1650c58016463795c487e9c11e6c296ee97ae652a1a4d395921075b85929ac02c649e19e5ecb2c24a300942003f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 18520988 SHA512:818f58172a52815b4338ea9f2a69ecaa3335492b9f8f64cbf8afb24c0d737982341968ecd79631cae3d3074ab0ae4bc6056fc4ba3ffe790849dc374835cd57e2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc' glibc_2.39.orig.tar.xz.asc 833 SHA512:5c054af523bbf5c2453363c023eadd1a75b6a5ff55c739011030115d3b117dbfc7d80cc74fbf157ea74a8d24aa14ff560c675374f875ec5c1ed3030e26a5ee07
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.7.debian.tar.xz' glibc_2.39-0ubuntu8.7.debian.tar.xz 469880 SHA512:12758ed1b5e0337ad202f8a66332fdbea8a217531a2a01819847d08207afa65b114943d712b8b27f83f0f370c07371fddd9ed20661f683fbb4d9386cd4f57893
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6.1`
 
@@ -1112,11 +1118,11 @@ $ apt-get source -qq --print-uris libmd=1.1.0-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmd/libmd_1.1.0-2build1.1.debian.tar.xz' libmd_1.1.0-2build1.1.debian.tar.xz 8448 SHA512:b013b32fbc71ca9195e4ce9b25f5440cf746e539d72090a0f50e226783ee4885050f8e245fe75fe76775c84d6dcaf6ce684cbd9dd89d09265fae3c9f27a885af
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.43-5ubuntu0.3`
+### `dpkg` source package: `libpng1.6=1.6.43-5ubuntu0.4`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.43-5ubuntu0.3`
+- `libpng16-16t64:amd64=1.6.43-5ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -1129,9 +1135,14 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libpng1.6=1.6.43-5ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.4.dsc' libpng1.6_1.6.43-5ubuntu0.4.dsc 2384 SHA512:2c54205f27107dcd5eac158a6e5d1bb42b71359f61d97c5dfae5c0ecaaf658e17152dab68aa0bc2642c02d1bf3208d0e69f957208aaea9f1f300fbf1a4b78b80
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43.orig.tar.gz' libpng1.6_1.6.43.orig.tar.gz 1554715 SHA512:3bb2a7b73113be42b09c2116e6c6f5a7ddb4e2ab06e0b13e10b7314acdccc4bb624ff602e16140c0484f6cde80efa190296226be3da195c6926819f07c723c12
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.4.debian.tar.xz' libpng1.6_1.6.43-5ubuntu0.4.debian.tar.xz 40308 SHA512:fc76fb1ea44b8f35555b506c7e4b79c3bd641a8504618119c4a75eaea42333aa7aec7a7e978ac3d38295f7052bd8e59f5be85b8b21dee31b1b75f1ade9077b05
+```
 
 ### `dpkg` source package: `libseccomp=2.5.5-1ubuntu3.1`
 

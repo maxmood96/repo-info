@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9d1508620bfb63eced481cd6be6ee0f9561985b504ff6261f02e61119da43442`
-- Created: `2026-01-26T22:14:11.263753898Z`
-- Virtual Size: ~ 422.60 Mb  
+- Image ID: `sha256:222378c2188957c06a3332f43c0e68b80a246c9a054d16f404c9f7a5eaf28939`
+- Created: `2026-02-05T22:56:40.077318583Z`
+- Virtual Size: ~ 429.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-25.0.1+8`
+  - `JAVA_VERSION=jdk-25.0.2+10`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -629,9 +629,8 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04.2
 Binary Packages:
 
 - `libc-bin=2.35-0ubuntu3.11`
-- `locales=2.35-0ubuntu3.11`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
@@ -641,21 +640,28 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/loc
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.12`
+### `dpkg` source package: `glibc=2.35-0ubuntu3.13`
 
 Binary Packages:
 
-- `libc6:amd64=2.35-0ubuntu3.12`
+- `libc6:amd64=2.35-0ubuntu3.13`
+- `locales=2.35-0ubuntu3.13`
 
-Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.13
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.13.dsc' glibc_2.35-0ubuntu3.13.dsc 8758 SHA512:50389ac5696e2778dc579c9b01193b216380fe2042f361b99bb3868362ad8fea465e8ebde1d2b213211b8fe0618819026b0e1369f71e9d5bf044591508effa59
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.13.debian.tar.xz' glibc_2.35-0ubuntu3.13.debian.tar.xz 943368 SHA512:ace487d154c8039b45e69bf190d0a8e575292f0e4b7bc689ffe99a3b2f0d4272a896114d37f38352d598e5bcbb3b3c2d4d8cf0c0bc20eec532803a5ce6c16446
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -1370,12 +1376,12 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3-1build2.debian.tar.xz' nettle_3.7.3-1build2.debian.tar.xz 22100 SHA512:c1935d35e9f04798273053ab92c7405ec225a5d72ba6c2869b0f2bf54b459ac428e113bc149796e91834a8b56082f8bbfbb906a6cd6787142b8932bd1dd83cec
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.20`
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.21`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.2-0ubuntu1.20`
-- `openssl=3.0.2-0ubuntu1.20`
+- `libssl3:amd64=3.0.2-0ubuntu1.21`
+- `openssl=3.0.2-0ubuntu1.21`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -1384,9 +1390,15 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.21
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.21.dsc' openssl_3.0.2-0ubuntu1.21.dsc 2730 SHA512:d44268af95768ef47713202c8f544f58e78e4849ac594344cf538c4a3b4e315673424258b51e41753b0a071091d2d601e59c1cc3a91ee7228feacbf008b967bf
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.21.debian.tar.xz' openssl_3.0.2-0ubuntu1.21.debian.tar.xz 271652 SHA512:fc8b09b1ef6832af36384b3e1c1b2c8e0e435ea82375cb3e4f7eedae6965a0280abcd7f3b7cb497902929422b93e4fdf4dad7a9dd1938b993add3d4b4ab66785
+```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 

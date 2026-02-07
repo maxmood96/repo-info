@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:08c6646e3d45290e3d5e7c0f66eda807fb7307bf06852b4a0f68350177b08475`
-- Created: `2026-01-28T20:11:47.699057364Z`
-- Virtual Size: ~ 289.17 Mb  
+- Image ID: `sha256:a367c140c73d42b682151ed67e9b15a128f8b5c0f71324390ac783f8a83c8854`
+- Created: `2026-02-05T23:27:47.946000828Z`
+- Virtual Size: ~ 290.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.29+7`
+  - `JAVA_VERSION=jdk-11.0.30+7`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -667,9 +667,8 @@ Binary Packages:
 
 - `libc-bin=2.35-0ubuntu3.11`
 - `libc6:amd64=2.35-0ubuntu3.11`
-- `locales=2.35-0ubuntu3.11`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
@@ -678,6 +677,28 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.35-0ubuntu3.13`
+
+Binary Packages:
+
+- `locales=2.35-0ubuntu3.13`
+
+Licenses: (parsed from: `/usr/share/doc/locales/copyright`)
+
+- `GFDL-1.3`
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.13
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.13.dsc' glibc_2.35-0ubuntu3.13.dsc 8758 SHA512:50389ac5696e2778dc579c9b01193b216380fe2042f361b99bb3868362ad8fea465e8ebde1d2b213211b8fe0618819026b0e1369f71e9d5bf044591508effa59
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.13.debian.tar.xz' glibc_2.35-0ubuntu3.13.debian.tar.xz 943368 SHA512:ace487d154c8039b45e69bf190d0a8e575292f0e4b7bc689ffe99a3b2f0d4272a896114d37f38352d598e5bcbb3b3c2d4d8cf0c0bc20eec532803a5ce6c16446
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -1543,44 +1564,33 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `openldap=2.5.19+dfsg-0ubuntu0.22.04.1`
+### `dpkg` source package: `openldap=2.5.20+dfsg-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `libldap-2.5-0:amd64=2.5.19+dfsg-0ubuntu0.22.04.1`
+- `libldap-2.5-0:amd64=2.5.20+dfsg-0ubuntu0.22.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.20`
-
-Binary Packages:
-
-- `openssl=3.0.2-0ubuntu1.20`
-
-Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
-
-- `Apache-2.0`
-- `Artistic`
-- `GPL-1`
-- `GPL-1+`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
+```console
+$ apt-get source -qq --print-uris openldap=2.5.20+dfsg-0ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.dsc 3473 SHA512:8691bcf8b37fcc6d966082180995640144033e24b0e5e41d8d02a9a3a6bb3690bf4d765cd2942f578d0f7cee4f4dd44ec87d619d146cba46f6a7ef913cfc46ec
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg.orig.tar.gz' openldap_2.5.20+dfsg.orig.tar.gz 5626931 SHA512:956dde588cb03643cf60954c3ebc1a1303e5b56e5d86214cb27b7d3fe7f2880ac684c5c40f3c2bbc8e17877ca166d890cab14e5abc8c71cdc329a40d59aa9152
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.debian.tar.xz 178364 SHA512:1c16d4050864511b688889b9ac3c375168111cd2d3b9b9633d594b2fc8881dca9bb4fb2f2fbbfe249a3a2d7525900e8249948bfcfe8f92ee975d2a45fb77c586
+```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.21`
 
 Binary Packages:
 
 - `libssl3:amd64=3.0.2-0ubuntu1.21`
+- `openssl=3.0.2-0ubuntu1.21`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
