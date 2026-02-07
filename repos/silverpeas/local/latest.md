@@ -5740,14 +5740,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.13
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.13.dsc' python3.10_3.10.12-1~22.04.13.dsc 3110 SHA512:36de03acd77925bcc301442290e7fc52d37e0df923705e5bf1f11e6e55441e555e4feabc8530be6405d2b28904d8fdfe4c393da01a33282e5644e4982a003775
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.13.debian.tar.xz' python3.10_3.10.12-1~22.04.13.debian.tar.xz 261444 SHA512:d860a3d1cc84822c36672ff581ed4eb279e3f7a946b587453d8ca771c2fef6f885b4a92d3c7f565401d6dec750d92adeb56bc7c8a19b92ac91bdd00de4cd58c7
-```
 
 ### `dpkg` source package: `raptor2=2.0.15-0ubuntu4.1`
 
