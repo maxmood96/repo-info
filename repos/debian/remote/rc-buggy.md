@@ -1,7 +1,7 @@
 ## `debian:rc-buggy`
 
 ```console
-$ docker pull debian@sha256:c63ebe4e5a54df6bca1a8aea14984d62a32988a4efcaa7937a771fd445abfb28
+$ docker pull debian@sha256:2f8d36f10b757d603ed9e16fc84e14973b45ba00b02225689fcda9ed109cb08e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -289,53 +289,53 @@ $ docker pull debian@sha256:07c26ae71a24580ae0d32388ad3740f8cd8023f4e2dee9b5b49a
 ### `debian:rc-buggy` - linux; riscv64
 
 ```console
-$ docker pull debian@sha256:1f68b880d1bbdf03ff1b34aa7e72a54e50a0b3619ec404072dbe2af767e2a172
+$ docker pull debian@sha256:c276c3f851534c6c6b6599885523e46c66d82e014918d2b50885aee7e808bba6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.9 MB (46856977 bytes)**  
+-	Total Size: **46.9 MB (46890367 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a412d27a8df43eddb3f988280ed8e36e1c71505a2955c88708fbb6908bac7d7`
+-	Image ID: `sha256:c92fae64500970cd6bad0694325e20f75676eb840002c82b150903eb50b73ee1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 12 Jan 2026 00:00:00 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'sid' '@1768176000'
-# Wed, 14 Jan 2026 04:13:10 GMT
+# Mon, 02 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'sid' '@1769990400'
+# Sat, 07 Feb 2026 18:18:40 GMT
 RUN echo 'deb http://deb.debian.org/debian rc-buggy main' > /etc/apt/sources.list.d/experimental.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:3f1a05ef5786076b47fcd681b3f4ff2ab26c932b463a6ab7c885cf7684b1355a`  
-		Last Modified: Tue, 13 Jan 2026 00:55:56 GMT  
-		Size: 46.9 MB (46856753 bytes)  
+	-	`sha256:48f09a2bb3a57a16959e5ae66db8cd1e1c1ed0c93449352dcc6fc0b64e55cbda`  
+		Last Modified: Tue, 03 Feb 2026 07:02:16 GMT  
+		Size: 46.9 MB (46890143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79f98fdaa99731cf7dbca7c09d326229882d57b4b385cbbfa855708f81e33d4e`  
-		Last Modified: Wed, 14 Jan 2026 04:14:04 GMT  
+	-	`sha256:6d815d1c88bdf2124c0c6353db528401260c4d52ba97e847b9a6e973e1f46652`  
+		Last Modified: Sat, 07 Feb 2026 18:19:35 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:rc-buggy` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:e640f0fea8a9d939da840b7f67a394cb06f44a59416ae474e8cb855f40370fa8
+$ docker pull debian@sha256:b00d85c65a99f54d028df5467269445e326a0d3c84339b470c4f720c815c38b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3140724 bytes)**  
+-	Total Size: **3.1 MB (3148065 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:488e456510dc205e4ae0bde1fd310e46026dbce5edd0b54232487a3109f9d86c`
+-	Image ID: `sha256:e743a141933dbe6a1b4a266746a68e21a30fe9147c7283a3a7663ee0d222f67d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19269312e4aa867ffb098f29fbeb5f0322d35a722f9a4bf9754908b8e6febb91`  
-		Last Modified: Wed, 14 Jan 2026 04:14:05 GMT  
-		Size: 3.1 MB (3134636 bytes)  
+	-	`sha256:608b25e2660db278fe064424e8228dd434f96fb08fef9f485cb8ca1ae3445825`  
+		Last Modified: Sat, 07 Feb 2026 18:19:35 GMT  
+		Size: 3.1 MB (3141977 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:92cc42e916d1d837dd2cb6d59554a6bffc1d151f3a9208bae946f36883d502d5`  
-		Last Modified: Wed, 14 Jan 2026 04:14:04 GMT  
+	-	`sha256:eea046fcfd8c071ff0f4f0dd2d537d81e263c55625c824cbe781638fad2208c3`  
+		Last Modified: Sat, 07 Feb 2026 18:19:35 GMT  
 		Size: 6.1 KB (6088 bytes)  
 		MIME: application/vnd.in-toto+json
 
