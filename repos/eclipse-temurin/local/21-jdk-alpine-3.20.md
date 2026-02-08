@@ -1,10 +1,10 @@
-# `eclipse-temurin:21.0.9_10-jdk-alpine-3.20`
+# `eclipse-temurin:21.0.10_7-jdk-alpine-3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:567a8724f1e13abf6ce3c5f3b9af2b2b7d97e7624826c1f139f85022c287b2fb`
-- Created: `2026-01-28T03:09:55.137317822Z`
-- Virtual Size: ~ 359.76 Mb  
+- Image ID: `sha256:35558f58da1a33eb023693e6417e26283fbc6f24da4f8a521e3ed2c89466f59f`
+- Created: `2026-02-05T22:19:05.343771077Z`
+- Virtual Size: ~ 359.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.9+10`
+  - `JAVA_VERSION=jdk-21.0.10+7`
 
 ## `apk` (`.apk`-based packages)
 
@@ -668,16 +668,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.3-r0 description:
+libexpat-2.7.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.3-r0 webpage:
+libexpat-2.7.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.3-r0 installed size:
+libexpat-2.7.4-r0 installed size:
 148 KiB
 
-libexpat-2.7.3-r0 license:
+libexpat-2.7.4-r0 license:
 MIT
 
 ```
@@ -1195,16 +1195,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.45.3-r2 description:
+sqlite-libs-3.45.3-r3 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.45.3-r2 webpage:
+sqlite-libs-3.45.3-r3 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.45.3-r2 installed size:
+sqlite-libs-3.45.3-r3 installed size:
 1428 KiB
 
-sqlite-libs-3.45.3-r2 license:
+sqlite-libs-3.45.3-r3 license:
 blessing
 
 ```
