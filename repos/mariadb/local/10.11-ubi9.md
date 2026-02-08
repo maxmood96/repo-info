@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f3c30f79fa634a0a79cba96b4f8c16d2eca866b5653ce282dfbb3ffa1386568c`
-- Created: `2026-02-05T00:11:12.482180531Z`
-- Virtual Size: ~ 517.54 Mb  
+- Image ID: `sha256:4b2635618893254ffdc0e5ce53dea07376e1efd207b5da9d6e2b6ab7fdc5bf71`
+- Created: `2026-02-05T19:52:29.019497062Z`
+- Virtual Size: ~ 516.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=10.11.15`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-02-04T11:16:28Z`
+  - `build-date=2026-02-05T04:57:10Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-02-04T11:16:28Z`
+  - `org.opencontainers.image.created=2026-02-05T04:57:10Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=3ae6fd96d0d9bad11e8002483701f39edf2317f5`
+  - `org.opencontainers.image.revision=21849199b7179dc3074812b8e24698ec609d6a5c`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=3ae6fd96d0d9bad11e8002483701f39edf2317f5`
+  - `vcs-ref=21849199b7179dc3074812b8e24698ec609d6a5c`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=10.11.15`
@@ -57,13 +57,13 @@ Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-client-10.11.15-1.el9.x86_64`
+### `rpm` package: `MariaDB-client-10.11.16-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-common-10.11.15-1.el9.x86_64`
+### `rpm` package: `MariaDB-common-10.11.16-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -75,7 +75,7 @@ Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-shared-10.11.15-1.el9.x86_64`
+### `rpm` package: `MariaDB-shared-10.11.16-1.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2.1
 
@@ -309,7 +309,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-5.el9_7.1.x86_64`
@@ -367,7 +367,7 @@ $ dnf --quiet download --source --url fonts-filesystem-2.0.5-7.el9.1.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/f/fonts-rpm-macros-2.0.5-7.el9.1.src.rpm
 ```
 
-### `rpm` package: `galera-4-26.4.24-1.el9.x86_64`
+### `rpm` package: `galera-4-26.4.25-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0
 
@@ -491,7 +491,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -581,7 +581,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1164,7 +1164,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.6.2-1.el9
-http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
+http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.5-1.el9.x86_64`
@@ -2231,7 +2231,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2242,7 +2242,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`

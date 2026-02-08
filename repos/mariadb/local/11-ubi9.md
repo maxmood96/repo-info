@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9e69b24c5cd4a9cf74db51749413b1b15784dce204504e4fec79a5ed02716054`
-- Created: `2026-02-05T00:10:02.956632941Z`
-- Virtual Size: ~ 521.04 Mb  
+- Image ID: `sha256:9814b8062d1bfa8275b3024928e17d4152a20a5b53dfd3c4386283700d1b5395`
+- Created: `2026-02-05T19:50:50.750167275Z`
+- Virtual Size: ~ 520.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.8.5`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-02-04T11:16:28Z`
+  - `build-date=2026-02-05T04:57:10Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-02-04T11:16:28Z`
+  - `org.opencontainers.image.created=2026-02-05T04:57:10Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=3ae6fd96d0d9bad11e8002483701f39edf2317f5`
+  - `org.opencontainers.image.revision=21849199b7179dc3074812b8e24698ec609d6a5c`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=3ae6fd96d0d9bad11e8002483701f39edf2317f5`
+  - `vcs-ref=21849199b7179dc3074812b8e24698ec609d6a5c`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.8.5`
@@ -321,7 +321,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-https://mirror.servaxnet.com/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+http://epel.mirror.constant.com/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-5.el9_7.1.x86_64`
@@ -503,7 +503,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-https://mirror.servaxnet.com/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+http://epel.mirror.constant.com/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -593,7 +593,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-https://mirror.servaxnet.com/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://epel.mirror.constant.com/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1176,7 +1176,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.6.2-1.el9
-https://mirror.servaxnet.com/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
+http://epel.mirror.constant.com/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.5-1.el9.x86_64`
@@ -2243,7 +2243,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-https://mirror.servaxnet.com/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://epel.mirror.constant.com/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2254,7 +2254,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-https://mirror.servaxnet.com/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://epel.mirror.constant.com/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
