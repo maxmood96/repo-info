@@ -1,7 +1,7 @@
 ## `clojure:temurin-21-lein-noble`
 
 ```console
-$ docker pull clojure@sha256:d7e56014b8a3451c22c7237614ffd81723f74596aa59cd9cc5630daa013f0536
+$ docker pull clojure@sha256:4c63e97e38025a1bcb7dfdb5a54ada0e1a18e10c844eb83a999a4e8d1c725a0c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -410,13 +410,13 @@ $ docker pull clojure@sha256:7dc79d9b7c7be7593809d2779ab4fcf01e9f4d68c80841f2ea6
 ### `clojure:temurin-21-lein-noble` - linux; riscv64
 
 ```console
-$ docker pull clojure@sha256:c42d1988c6e0706e827b3d0984a4b11d48ac1d534c3ea0cb12daa5df20b68c43
+$ docker pull clojure@sha256:d1b036c2171cfd26f62340a74172294f62e4e1a56abca9ed312997ac6d231785
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **227.3 MB (227302805 bytes)**  
+-	Total Size: **227.3 MB (227321906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a35eee768f8ccdecc6d5ee78c9cdb1558b60f0e9772b9a790fc04e4336ed0b50`
+-	Image ID: `sha256:cffb3759ee0e44d8238a7c51c77543c23281945765e075d255cf23dacbc22cb4`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -442,36 +442,36 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Mon, 19 Jan 2026 18:08:38 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 19 Jan 2026 18:08:38 GMT
-ENV JAVA_VERSION=jdk-21.0.9+10
-# Mon, 19 Jan 2026 18:20:11 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='810d3773df7e0d6c4394e4e244b264c8b30e0b05a0acf542d065fd78a6b65c2f';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jdk_x64_linux_hotspot_21.0.9_10.tar.gz';          ;;        arm64)          ESUM='edf0da4debe7cf475dbe320d174d6eed81479eb363f41e38a2efb740428c603a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.9_10.tar.gz';          ;;        ppc64el)          ESUM='ac5a0394a234269b4e20459649ac93cb702cde29b3e46a0bcf3aa53958f2d4a4';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.9_10.tar.gz';          ;;        riscv64)          ESUM='ac411d52862fe8a4a48a6c3546bebced8f4879cd728746fc4ee4b06151aa9f8b';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jdk_riscv64_linux_hotspot_21.0.9_10.tar.gz';          ;;        s390x)          ESUM='e8ede0fb48aaa3a0cc1ac7c8522f8ca7938bdbb8be0d603b61134de7f898aff4';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.9_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 19 Jan 2026 18:20:25 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Sun, 08 Feb 2026 00:20:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='ea3b9bd464d6dd253e9a7accf59f7ccd2a36e4aa69640b7251e3370caef896a4';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='357fee29fb0d5c079f6730db98b28942df13a6eed426f6c61cd4ad703ab27b9a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='33bdaec351f40cc70d44e251a54c23e4dd15fed8adc041e35c57461c706cf948';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='a57fd486c3c24ed615eb91ef9421ddd38c720e7398df5a161872fb26ad825936';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='eabb069b59a2e6b9e9926d9c533186aabf1ff3b4af683d0a3620bb7c7d9770c0';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Sun, 08 Feb 2026 00:20:20 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 19 Jan 2026 18:20:25 GMT
+# Sun, 08 Feb 2026 00:20:20 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 19 Jan 2026 18:20:25 GMT
+# Sun, 08 Feb 2026 00:20:20 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 19 Jan 2026 18:20:25 GMT
+# Sun, 08 Feb 2026 00:20:20 GMT
 CMD ["jshell"]
-# Thu, 22 Jan 2026 03:46:45 GMT
+# Mon, 09 Feb 2026 12:09:47 GMT
 ENV LEIN_VERSION=2.12.0
-# Thu, 22 Jan 2026 03:46:45 GMT
+# Mon, 09 Feb 2026 12:09:47 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 22 Jan 2026 03:46:45 GMT
+# Mon, 09 Feb 2026 12:09:47 GMT
 WORKDIR /tmp
-# Thu, 22 Jan 2026 03:47:38 GMT
+# Mon, 09 Feb 2026 12:10:43 GMT
 RUN set -eux; apt-get update && apt-get install -y make gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "12a9c5e3a2471619ca3d64a7462f920fdf713ae8959eb4fcd6257c23332b5aa4 *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Thu, 22 Jan 2026 03:47:38 GMT
+# Mon, 09 Feb 2026 12:10:43 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 22 Jan 2026 03:47:38 GMT
+# Mon, 09 Feb 2026 12:10:43 GMT
 ENV LEIN_ROOT=1
-# Thu, 22 Jan 2026 03:47:54 GMT
+# Mon, 09 Feb 2026 12:11:00 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.1"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Thu, 22 Jan 2026 03:47:54 GMT
+# Mon, 09 Feb 2026 12:11:00 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Thu, 22 Jan 2026 03:47:54 GMT
+# Mon, 09 Feb 2026 12:11:00 GMT
 ENTRYPOINT ["entrypoint"]
-# Thu, 22 Jan 2026 03:47:54 GMT
+# Mon, 09 Feb 2026 12:11:00 GMT
 CMD ["repl"]
 ```
 
@@ -484,56 +484,56 @@ CMD ["repl"]
 		Last Modified: Mon, 19 Jan 2026 18:13:27 GMT  
 		Size: 20.1 MB (20146747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e7129b12392276ddcd35d062b7ad7b792dd1162fc5a8ecf39d9b81e82d8ca5f`  
-		Last Modified: Mon, 19 Jan 2026 18:24:40 GMT  
-		Size: 157.2 MB (157204208 bytes)  
+	-	`sha256:865232191e24416597addda8a817293a473fded7b3df2e76fcb21057d461492d`  
+		Last Modified: Sun, 08 Feb 2026 00:24:37 GMT  
+		Size: 157.2 MB (157223281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7eab84ed7067882dc66b8252e8e4f713a994edb287031e670d4e2c9a85a81f8e`  
-		Last Modified: Mon, 19 Jan 2026 18:24:17 GMT  
+	-	`sha256:22e346c28b85ec9958b6e3edcf3a5ce6d1bf85e92ab61f9236bf1ced989bc660`  
+		Last Modified: Sun, 08 Feb 2026 00:24:12 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b0f74ac509577a84ea3b869445f56d09dea3fde780f6c6d7a98ffad252490e6`  
-		Last Modified: Mon, 19 Jan 2026 18:24:17 GMT  
-		Size: 2.3 KB (2284 bytes)  
+	-	`sha256:4acbe95eb4de112a5d659035ba523acf94b8e2c2ddb339e8c81ad3f053ab351c`  
+		Last Modified: Sun, 08 Feb 2026 00:24:12 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61b0bee8c3aebb52ddc42686a09f0dcfc482275ea7cf36e689ad804fb30499cf`  
-		Last Modified: Thu, 22 Jan 2026 03:50:13 GMT  
-		Size: 14.5 MB (14478136 bytes)  
+	-	`sha256:bd5e9b1047da98e27fa177ad5a4e81d38fc56c37f5b76035fc56b585d6aaf1ba`  
+		Last Modified: Mon, 09 Feb 2026 12:13:21 GMT  
+		Size: 14.5 MB (14478156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd2befed752e53add6921040d31a272bbea41fc38c8b22fffdfd49cf854baf4e`  
-		Last Modified: Thu, 22 Jan 2026 03:50:11 GMT  
-		Size: 4.5 MB (4517748 bytes)  
+	-	`sha256:6c6619a014ea3534e4072121247e1411b926a12693f8dfd773c3a3c603a5a206`  
+		Last Modified: Mon, 09 Feb 2026 12:13:19 GMT  
+		Size: 4.5 MB (4517756 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b6dd282fb67a413d666827b9d083e6ab4823d08af0d3d51366c9408a8d2972c`  
-		Last Modified: Thu, 22 Jan 2026 03:50:10 GMT  
-		Size: 399.0 B  
+	-	`sha256:71209b048b3920f06cfe92ec9742fe60239bfeda929af6d011e0965446352b34`  
+		Last Modified: Mon, 09 Feb 2026 12:13:18 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-21-lein-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:23817eed099e9365beaa7c635db5e61a86f16615a89264a5b774b5b3d094d2af
+$ docker pull clojure@sha256:0465de3d1c6b84eb9f44edae6db8700173ef1a741819dd73bef962b9a0066410
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3623086 bytes)**  
+-	Total Size: **3.6 MB (3623088 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2578c1624953082ab2965ad6faefb776859e3b0a8626d7ca885c2e8113774f5`
+-	Image ID: `sha256:fb3812a2e6ca99175cf78d6524cc1e96cec5c1352ff099b46822a8e358889d91`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a6bc5f2bcfbc7a09c55e42209d7d8941e371629e0fc97f9e6765ede8b42852d1`  
-		Last Modified: Thu, 22 Jan 2026 03:50:11 GMT  
-		Size: 3.6 MB (3604676 bytes)  
+	-	`sha256:268691b1d2b662aae1a26ff022877494de55ab9ef019d440738c77a10f66447d`  
+		Last Modified: Mon, 09 Feb 2026 12:13:18 GMT  
+		Size: 3.6 MB (3604678 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:350d50893cfee6cbc5e5e01ff7ab59a53e5c32d69c6640336175500a48767475`  
-		Last Modified: Thu, 22 Jan 2026 03:50:10 GMT  
+	-	`sha256:61df83a02ad5a8ae7d78c3c87176c29582aaf933e714da590ef9537d4bc59ca9`  
+		Last Modified: Mon, 09 Feb 2026 12:13:17 GMT  
 		Size: 18.4 KB (18410 bytes)  
 		MIME: application/vnd.in-toto+json
 

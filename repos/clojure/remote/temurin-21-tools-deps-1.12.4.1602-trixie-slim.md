@@ -1,7 +1,7 @@
 ## `clojure:temurin-21-tools-deps-1.12.4.1602-trixie-slim`
 
 ```console
-$ docker pull clojure@sha256:130fc8085d210389754537dcb796d87003411c69ff06fcad94f4c3e3b0407ccf
+$ docker pull clojure@sha256:66fb1123770685504846d2bcc00d298cf7a616993ae18c34c1e57b5e1cd85b0b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -284,38 +284,38 @@ $ docker pull clojure@sha256:6a277f05786eed439f792da2c119098ae9a8609eeec3116c411
 ### `clojure:temurin-21-tools-deps-1.12.4.1602-trixie-slim` - linux; riscv64
 
 ```console
-$ docker pull clojure@sha256:2446e5b896ea2cdf62132abe239d4d5bdaf103ad5a6c2db5e9ee551f579000df
+$ docker pull clojure@sha256:7f9dbd3a84040835f3acb7023b924fb2e555bd1c3bb7c88c7f15a3568be9b26e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.4 MB (256350917 bytes)**  
+-	Total Size: **256.4 MB (256373573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3b09515d829d663d53c9562dba739a2fa7f5dc394982064722d7ad1f9da246b`
+-	Image ID: `sha256:ef70d6eb49ee71c4dfdb5aab34665c3ee674a330eb77e3fe466c28b5b8e9e530`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
 # Mon, 02 Feb 2026 00:00:00 GMT
 RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1769990400'
-# Thu, 05 Feb 2026 20:50:06 GMT
+# Mon, 09 Feb 2026 12:21:24 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Feb 2026 20:50:06 GMT
+# Mon, 09 Feb 2026 12:21:24 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 05 Feb 2026 20:50:06 GMT
+# Mon, 09 Feb 2026 12:21:24 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Feb 2026 20:50:06 GMT
+# Mon, 09 Feb 2026 12:21:24 GMT
 ENV CLOJURE_VERSION=1.12.4.1602
-# Thu, 05 Feb 2026 20:50:06 GMT
+# Mon, 09 Feb 2026 12:21:24 GMT
 WORKDIR /tmp
-# Thu, 05 Feb 2026 21:07:44 GMT
+# Mon, 09 Feb 2026 12:45:06 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "61a43afdb55328e75b7a4752960c8c353755a5a2e3a4c485cca2e3ac92481138 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apt-get purge -y --auto-remove curl # buildkit
-# Thu, 05 Feb 2026 21:07:44 GMT
+# Mon, 09 Feb 2026 12:45:07 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Thu, 05 Feb 2026 21:07:44 GMT
+# Mon, 09 Feb 2026 12:45:07 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Thu, 05 Feb 2026 21:07:44 GMT
+# Mon, 09 Feb 2026 12:45:07 GMT
 ENTRYPOINT ["entrypoint"]
-# Thu, 05 Feb 2026 21:07:44 GMT
+# Mon, 09 Feb 2026 12:45:07 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -324,48 +324,48 @@ CMD ["-M" "--repl"]
 		Last Modified: Tue, 03 Feb 2026 07:14:46 GMT  
 		Size: 28.3 MB (28276389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080871d584089d7c07fc75a8f84b6f61cae2c9a7204a550f8b8dcad13b49c423`  
-		Last Modified: Thu, 05 Feb 2026 20:56:46 GMT  
-		Size: 157.2 MB (157194292 bytes)  
+	-	`sha256:d28f24ba54976c45441db0230fa1714d82b492b6ad8590ec1b4c327b709e7e83`  
+		Last Modified: Mon, 09 Feb 2026 12:27:28 GMT  
+		Size: 157.2 MB (157216910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:346ee878cdf42cb464edc491dc5e0d64d0f9de09df3e571c4188935353e7f02c`  
-		Last Modified: Thu, 05 Feb 2026 21:11:34 GMT  
-		Size: 70.9 MB (70879189 bytes)  
+	-	`sha256:d77bf493b9c1e5f3f025f75579a796da1a09e109ebb88882f8b62265a2b107de`  
+		Last Modified: Mon, 09 Feb 2026 12:49:07 GMT  
+		Size: 70.9 MB (70879227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e97538da92def49be7476848e779ea76103ab7fc72a5856a62063189822c22f`  
-		Last Modified: Thu, 05 Feb 2026 21:11:23 GMT  
+	-	`sha256:d803c8f4b3d83ae2e5a139a646d207f76362b1cefb23d03c9e1a549e5c0d7b23`  
+		Last Modified: Mon, 09 Feb 2026 12:48:55 GMT  
 		Size: 616.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba8dfc424548cf665622dc62b2a61b302d9c5261dae641848e04270ccddaaeec`  
-		Last Modified: Thu, 05 Feb 2026 21:11:23 GMT  
+	-	`sha256:809237e34caa1fe3be21026e08f8b9a3180f6d9e3bf3c36403f7e5f5e6a31e5a`  
+		Last Modified: Mon, 09 Feb 2026 12:48:55 GMT  
 		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-21-tools-deps-1.12.4.1602-trixie-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c63f0a79fc5a6d959d0a03c6cb5cf9d77d0a393ed4740170960c60636f3cf6db
+$ docker pull clojure@sha256:b8eccd9ff75f45dc6b3fa5af1ec597457da3f89c9350180bca34b63065c13c9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5264725 bytes)**  
+-	Total Size: **5.3 MB (5264727 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bd4fdc4b93833a20f603141916f8c2b19d83028b2973cd7129f4e5c4bdf9d9c`
+-	Image ID: `sha256:510b493359f71f3b57f8da3f3635ea55e4ab5cac13f3c78b4e9d6f7a7cca3fb3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ade1ecda0245d282b7cee0e96b03b1410f40f6e082a305610f0e8d3f76314a94`  
-		Last Modified: Thu, 05 Feb 2026 21:11:24 GMT  
-		Size: 5.2 MB (5248865 bytes)  
+	-	`sha256:131b8c70e07988369df75563885cfd63ef83e817883b6050b3911e92c1fd1dba`  
+		Last Modified: Mon, 09 Feb 2026 12:48:57 GMT  
+		Size: 5.2 MB (5248867 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cf0ab1aa122b621b57e257c44cc81d8ed74fb57d1904ff1f12feb9a17db42692`  
-		Last Modified: Thu, 05 Feb 2026 21:11:23 GMT  
+	-	`sha256:dd2bbe9dce59938c5616489ff847b4fd64b1c612d8bda9d2b08b1591333a250a`  
+		Last Modified: Mon, 09 Feb 2026 12:48:55 GMT  
 		Size: 15.9 KB (15860 bytes)  
 		MIME: application/vnd.in-toto+json
 
