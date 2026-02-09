@@ -4,19 +4,19 @@
 
 -	[`odoo:17`](#odoo17)
 -	[`odoo:17.0`](#odoo170)
--	[`odoo:17.0-20260119`](#odoo170-20260119)
+-	[`odoo:17.0-20260209`](#odoo170-20260209)
 -	[`odoo:18`](#odoo18)
 -	[`odoo:18.0`](#odoo180)
--	[`odoo:18.0-20260119`](#odoo180-20260119)
+-	[`odoo:18.0-20260209`](#odoo180-20260209)
 -	[`odoo:19`](#odoo19)
 -	[`odoo:19.0`](#odoo190)
--	[`odoo:19.0-20260119`](#odoo190-20260119)
+-	[`odoo:19.0-20260209`](#odoo190-20260209)
 -	[`odoo:latest`](#odoolatest)
 
 ## `odoo:17`
 
 ```console
-$ docker pull odoo@sha256:cfe26f3017df442161df8db55d0f1f67d5f4e486efb38297f3262f855c10c59e
+$ docker pull odoo@sha256:794b0b37ec542d8913f520b131ce28468b02c1b6226f4b4cb44005442805ad26
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29,13 +29,13 @@ $ docker pull odoo@sha256:cfe26f3017df442161df8db55d0f1f67d5f4e486efb38297f3262f
 ### `odoo:17` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:0e0ef85637b280be6d882856563cdb0831a0c5a7cdf75e8fd15bb662299c306c
+$ docker pull odoo@sha256:3eee30600db1d86dadeafe0d5aef9a7dd6609e27f65b5c694884ca26c1157d0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **608.5 MB (608525289 bytes)**  
+-	Total Size: **611.2 MB (611186884 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3df51d9355ac0e60dee0fa861dee0b86a858132095415023d3f803c84c8102ab`
+-	Image ID: `sha256:45d04d61161c909099ed662bec758d445a1b4b5783f63cf1de724d10b415382a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -53,52 +53,52 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:b499000226bd9a7c562ffa8eeb86e2d170f2a563310db6c2d79562ab53e5cb6e in / 
 # Fri, 09 Jan 2026 07:01:44 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 ARG TARGETARCH=amd64
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 # ARGS: TARGETARCH=amd64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:52:03 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 # ARGS: TARGETARCH=amd64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:52:04 GMT
+# Mon, 09 Feb 2026 19:56:11 GMT
 # ARGS: TARGETARCH=amd64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:52:04 GMT
+# Mon, 09 Feb 2026 19:56:11 GMT
 ENV ODOO_VERSION=17.0
-# Tue, 20 Jan 2026 17:52:04 GMT
-ARG ODOO_RELEASE=20260119
-# Tue, 20 Jan 2026 17:52:04 GMT
-ARG ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
-# Tue, 20 Jan 2026 17:53:07 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260119 ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
+# Mon, 09 Feb 2026 19:56:11 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:56:11 GMT
+ARG ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
+# Mon, 09 Feb 2026 19:57:11 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:53:07 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:53:08 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260119 ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
+# Mon, 09 Feb 2026 19:57:11 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 CMD ["odoo"]
 ```
 
@@ -107,73 +107,73 @@ CMD ["odoo"]
 		Last Modified: Fri, 09 Jan 2026 07:35:56 GMT  
 		Size: 29.5 MB (29536667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40e741c97709b1945785bb53d1468bae62143260cfbf4ca227b59c1dabf30416`  
-		Last Modified: Tue, 20 Jan 2026 17:54:43 GMT  
-		Size: 233.8 MB (233821310 bytes)  
+	-	`sha256:f74673ada0a426239c35b369d058ef07586e47faf632ba1501e16d1e20d04747`  
+		Last Modified: Mon, 09 Feb 2026 19:58:28 GMT  
+		Size: 236.1 MB (236101165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28390ae38c9dd94c36611b82d8e2d6d818f10ce955dca25afc72137f4423628a`  
-		Last Modified: Tue, 20 Jan 2026 17:54:22 GMT  
-		Size: 2.6 MB (2597186 bytes)  
+	-	`sha256:1e808234b1498e9d32d17e0e56fdc190de28ed89870baea81f0e0b11f9ff0484`  
+		Last Modified: Mon, 09 Feb 2026 19:58:19 GMT  
+		Size: 2.6 MB (2597377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4da17589aa8b3903d6bec34094d847b747ce96cfe0f25f84be54619dfaa32038`  
-		Last Modified: Tue, 20 Jan 2026 17:54:22 GMT  
-		Size: 480.2 KB (480248 bytes)  
+	-	`sha256:8cddc83afc298e1222ef9416879b8226802dea19271643c108c97c3f295117ef`  
+		Last Modified: Mon, 09 Feb 2026 19:58:19 GMT  
+		Size: 480.3 KB (480316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6a843ca5ec6d229414e48d9bdfb8d48cab0bb8e8849c7c314ddc3ea591f838b`  
-		Last Modified: Tue, 20 Jan 2026 17:54:46 GMT  
-		Size: 342.1 MB (342087437 bytes)  
+	-	`sha256:4842a4d3465714f53f704d31d6563b2bd3d77e9846315eb91f06ac0b51c0d792`  
+		Last Modified: Mon, 09 Feb 2026 19:58:29 GMT  
+		Size: 342.5 MB (342468920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60e6d89ffc94252c614c733cf467cb09cc61184a5146966c64b45bbed4ec39ee`  
-		Last Modified: Tue, 20 Jan 2026 17:54:23 GMT  
-		Size: 705.0 B  
+	-	`sha256:488c86bde99ac15f4ebfc2ec5e9034b5005cadec0facf165384750847d2fd9ce`  
+		Last Modified: Mon, 09 Feb 2026 19:58:20 GMT  
+		Size: 704.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b64da99e41198dc12b33a019f1207b64fc310de7fcc7392d67a31c05a06e00bc`  
-		Last Modified: Tue, 20 Jan 2026 17:54:24 GMT  
-		Size: 556.0 B  
+	-	`sha256:1f35dafb4cd4158cc6f8e6c2f2c7ab5579690c6d111ce5bbd59ba5f448dcd6a1`  
+		Last Modified: Mon, 09 Feb 2026 19:58:21 GMT  
+		Size: 557.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f172676cdce88f98abc1108f734e7f36cbe17726aaa529d4754adbe741ca7bc`  
-		Last Modified: Tue, 20 Jan 2026 17:54:25 GMT  
-		Size: 599.0 B  
+	-	`sha256:318405d9dcaf104575b0775862709abf0d1d92ca8929776016aa310ce27335a8`  
+		Last Modified: Mon, 09 Feb 2026 19:58:21 GMT  
+		Size: 595.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90eedb380b91e821460a816448670993169dbd16d979049c7b9ef6f07d5b8d49`  
-		Last Modified: Tue, 20 Jan 2026 17:54:26 GMT  
-		Size: 581.0 B  
+	-	`sha256:7a7b5dcc310287f7d0ca4390c9f735b43ef600cc7acdc224cffdf896396655ad`  
+		Last Modified: Mon, 09 Feb 2026 19:58:22 GMT  
+		Size: 583.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:17` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:8f2fcb002161837bf8ce6611a91e15f4f1df8b548cf055b227644bcce4c338e7
+$ docker pull odoo@sha256:d28b9b7f8d0253fceed533059179d54ab7ee6076edf4eb187c35f40cd40f82eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.9 MB (41896634 bytes)**  
+-	Total Size: **42.0 MB (41990643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06776438d0ffde02be25f6246f48b95d62eb4d4ed0e1d8e67d59a73842a0ac48`
+-	Image ID: `sha256:33cc8eb043d08f47e0de09f0d6573de0aadaf0429c419a551c8fd1959e9ab2f2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1bfe9fa79b0bc357c6e8da24e8f28e43cc7cd9d609ecebc35e2ac3c8b20e2234`  
-		Last Modified: Tue, 20 Jan 2026 17:54:25 GMT  
-		Size: 41.9 MB (41869842 bytes)  
+	-	`sha256:38ad442b2eb0e482bd9dcf2915d3fa7e5300494a2dc4d478a3479ddb9ad549db`  
+		Last Modified: Mon, 09 Feb 2026 19:58:21 GMT  
+		Size: 42.0 MB (41963851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:41625ece780f199de4e132eb53515e811fe9d22f54e2668371dd59c00e34f06e`  
-		Last Modified: Tue, 20 Jan 2026 17:54:22 GMT  
+	-	`sha256:d92b5a096b0d22a8d8b772fb3d2f49a2dd5982228092e6c9b97d85910c85f72a`  
+		Last Modified: Mon, 09 Feb 2026 19:58:19 GMT  
 		Size: 26.8 KB (26792 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:17` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:ece7235d839d8dc762ca6b9cbc5f80f1bd49ec352373fd158c0116584c14d078
+$ docker pull odoo@sha256:032bae1e4f003688c346f664fcecd033689bfe30744cb6b1a3aaac878fc87245
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **603.4 MB (603360603 bytes)**  
+-	Total Size: **605.9 MB (605889904 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc0e2430e0c55cb24f8607fe43b0c5715f738f4a58cdec70c4c287a49ca68bc0`
+-	Image ID: `sha256:7746b7d7ad5b744d9f7961b09a8a87fc86d626a27e7ac7ab4a5f787bb1489989`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -191,52 +191,52 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:643ece0a7a3a6026f87ab17e08013e914d8971796eb302cfa051d97af4bf9939 in / 
 # Fri, 09 Jan 2026 07:03:30 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 ARG TARGETARCH=arm64
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 # ARGS: TARGETARCH=arm64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:57:14 GMT
+# Mon, 09 Feb 2026 19:55:50 GMT
 # ARGS: TARGETARCH=arm64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:57:15 GMT
+# Mon, 09 Feb 2026 19:55:51 GMT
 # ARGS: TARGETARCH=arm64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:57:15 GMT
+# Mon, 09 Feb 2026 19:55:51 GMT
 ENV ODOO_VERSION=17.0
-# Tue, 20 Jan 2026 17:57:15 GMT
-ARG ODOO_RELEASE=20260119
-# Tue, 20 Jan 2026 17:57:15 GMT
-ARG ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
-# Tue, 20 Jan 2026 17:58:18 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260119 ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
+# Mon, 09 Feb 2026 19:55:51 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:55:51 GMT
+ARG ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
+# Mon, 09 Feb 2026 19:56:53 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260119 ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
+# Mon, 09 Feb 2026 19:56:53 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 CMD ["odoo"]
 ```
 
@@ -245,67 +245,67 @@ CMD ["odoo"]
 		Last Modified: Fri, 09 Jan 2026 07:36:03 GMT  
 		Size: 27.4 MB (27383497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5392e9f9b8c753242dc56bde2aceb7d245e6bb193dc1eebb2e5a3c6ec657c55`  
-		Last Modified: Tue, 20 Jan 2026 17:59:45 GMT  
-		Size: 231.2 MB (231194081 bytes)  
+	-	`sha256:3e0cc8b89293c1dd30213c28e4dac09778d1e993082527ffdc5686b9d46f266e`  
+		Last Modified: Mon, 09 Feb 2026 19:58:23 GMT  
+		Size: 233.3 MB (233341303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a7366455d1a3fff67f027823303fc7b0fd56d093ea8f5abfa3b6d51eca0ddd4`  
-		Last Modified: Tue, 20 Jan 2026 17:59:36 GMT  
-		Size: 2.6 MB (2592358 bytes)  
+	-	`sha256:28940497bf3d465fd6fcbf29bd55cf5c6ab17ef7ca5fafc96889ba09eede35ab`  
+		Last Modified: Mon, 09 Feb 2026 19:58:10 GMT  
+		Size: 2.6 MB (2592561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bbfdd80d68f54e67a87e1f84db2b3b3c2ceeaeb2b1306e6c2ae91bd2290ad26`  
-		Last Modified: Tue, 20 Jan 2026 17:59:36 GMT  
-		Size: 480.3 KB (480266 bytes)  
+	-	`sha256:9156a05280718d11fe02486bddb831d0137b99b936ae88f0d07258d76ac842e5`  
+		Last Modified: Mon, 09 Feb 2026 19:58:10 GMT  
+		Size: 480.2 KB (480250 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:713b3a37e8bf6c1ece6b3c1a81d742ebd5c8c1ca80eb01e4c16aae614df64593`  
-		Last Modified: Tue, 20 Jan 2026 17:59:47 GMT  
-		Size: 341.7 MB (341707961 bytes)  
+	-	`sha256:0cf9fa5cda61c53af067ebe2c323c622bd15f6bff1946b2d50e640353f0ab3ad`  
+		Last Modified: Mon, 09 Feb 2026 19:58:20 GMT  
+		Size: 342.1 MB (342089855 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66167b6041274176f6cb491f67e5874173e01af02da49a266d5ca8ef17b21ad`  
-		Last Modified: Tue, 20 Jan 2026 17:59:38 GMT  
-		Size: 707.0 B  
+	-	`sha256:d11a4843caaf61bb0a59fd0030c2e1f12c88851c5d3acd12218b387a73535de3`  
+		Last Modified: Mon, 09 Feb 2026 19:58:11 GMT  
+		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1a827cb477712c85fbb9b54ff0acc6177ce25cf8b121234047eecf2bf9381a00`  
-		Last Modified: Tue, 20 Jan 2026 17:59:38 GMT  
-		Size: 555.0 B  
+	-	`sha256:4345a726bdfd9d20a77bd8058d3dd6d59a8f3104c9253ebddde51853bcf6cf29`  
+		Last Modified: Mon, 09 Feb 2026 19:58:11 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21ee1430abc8b8b5e4ee47d6126793c5529cae65b4f26492b65bb29dc5e5234d`  
-		Last Modified: Tue, 20 Jan 2026 17:59:39 GMT  
-		Size: 596.0 B  
+	-	`sha256:563ddf84e6e779db1507725723e5c0220e94a39db136a4c38d827476a7fd675a`  
+		Last Modified: Mon, 09 Feb 2026 19:58:12 GMT  
+		Size: 595.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4bced3890d693b31e366af7e1497f0b581599347d1e78bc5666a89068f89407`  
-		Last Modified: Tue, 20 Jan 2026 17:59:39 GMT  
-		Size: 582.0 B  
+	-	`sha256:e32f26e32c1da72a587ec486e9d65672311b9470d96a6d9e91b3cccaea71c179`  
+		Last Modified: Mon, 09 Feb 2026 19:58:12 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:17` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:f49295abac8fba19d879c3b82c12c24f73111f4ab5c135e35ce81f87343ceab0
+$ docker pull odoo@sha256:4bdb6654c8a177e46ae3267241c94c86ea1e4c81345d792c7061e1834498ddfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.9 MB (41903292 bytes)**  
+-	Total Size: **42.0 MB (41997301 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73f7e56e20ac407f2b090ba02876a58fee91e5e76b672b1658c6371ae087dae1`
+-	Image ID: `sha256:00949fd695dfab22b4e65dc4aab52e88bafeaedb0a90640d6f91550df4818a0f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ec4733103790c18fdc83b53f4f7cbfab32dd775b7b1b124ea8017f703ed38465`  
-		Last Modified: Tue, 20 Jan 2026 17:59:39 GMT  
-		Size: 41.9 MB (41876349 bytes)  
+	-	`sha256:124921ce1ad7a4ac581bcf15a2b93c04879242bc6ea8e52651e02dc9325d359d`  
+		Last Modified: Mon, 09 Feb 2026 19:58:12 GMT  
+		Size: 42.0 MB (41970358 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b6af40fea65ea0951c7d9137222989eb7c2365a2b20357556c87a15c2229cc2f`  
-		Last Modified: Tue, 20 Jan 2026 17:59:36 GMT  
+	-	`sha256:3de16b58e4b5a46aa3028d2c7e38de26a5136a1ef00f02b157c6170cd2ddbd5e`  
+		Last Modified: Mon, 09 Feb 2026 19:58:09 GMT  
 		Size: 26.9 KB (26943 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `odoo:17.0`
 
 ```console
-$ docker pull odoo@sha256:cfe26f3017df442161df8db55d0f1f67d5f4e486efb38297f3262f855c10c59e
+$ docker pull odoo@sha256:794b0b37ec542d8913f520b131ce28468b02c1b6226f4b4cb44005442805ad26
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -318,13 +318,13 @@ $ docker pull odoo@sha256:cfe26f3017df442161df8db55d0f1f67d5f4e486efb38297f3262f
 ### `odoo:17.0` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:0e0ef85637b280be6d882856563cdb0831a0c5a7cdf75e8fd15bb662299c306c
+$ docker pull odoo@sha256:3eee30600db1d86dadeafe0d5aef9a7dd6609e27f65b5c694884ca26c1157d0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **608.5 MB (608525289 bytes)**  
+-	Total Size: **611.2 MB (611186884 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3df51d9355ac0e60dee0fa861dee0b86a858132095415023d3f803c84c8102ab`
+-	Image ID: `sha256:45d04d61161c909099ed662bec758d445a1b4b5783f63cf1de724d10b415382a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -342,52 +342,52 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:b499000226bd9a7c562ffa8eeb86e2d170f2a563310db6c2d79562ab53e5cb6e in / 
 # Fri, 09 Jan 2026 07:01:44 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 ARG TARGETARCH=amd64
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 # ARGS: TARGETARCH=amd64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:52:03 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 # ARGS: TARGETARCH=amd64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:52:04 GMT
+# Mon, 09 Feb 2026 19:56:11 GMT
 # ARGS: TARGETARCH=amd64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:52:04 GMT
+# Mon, 09 Feb 2026 19:56:11 GMT
 ENV ODOO_VERSION=17.0
-# Tue, 20 Jan 2026 17:52:04 GMT
-ARG ODOO_RELEASE=20260119
-# Tue, 20 Jan 2026 17:52:04 GMT
-ARG ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
-# Tue, 20 Jan 2026 17:53:07 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260119 ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
+# Mon, 09 Feb 2026 19:56:11 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:56:11 GMT
+ARG ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
+# Mon, 09 Feb 2026 19:57:11 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:53:07 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:53:08 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260119 ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
+# Mon, 09 Feb 2026 19:57:11 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 CMD ["odoo"]
 ```
 
@@ -396,73 +396,73 @@ CMD ["odoo"]
 		Last Modified: Fri, 09 Jan 2026 07:35:56 GMT  
 		Size: 29.5 MB (29536667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40e741c97709b1945785bb53d1468bae62143260cfbf4ca227b59c1dabf30416`  
-		Last Modified: Tue, 20 Jan 2026 17:54:43 GMT  
-		Size: 233.8 MB (233821310 bytes)  
+	-	`sha256:f74673ada0a426239c35b369d058ef07586e47faf632ba1501e16d1e20d04747`  
+		Last Modified: Mon, 09 Feb 2026 19:58:28 GMT  
+		Size: 236.1 MB (236101165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28390ae38c9dd94c36611b82d8e2d6d818f10ce955dca25afc72137f4423628a`  
-		Last Modified: Tue, 20 Jan 2026 17:54:22 GMT  
-		Size: 2.6 MB (2597186 bytes)  
+	-	`sha256:1e808234b1498e9d32d17e0e56fdc190de28ed89870baea81f0e0b11f9ff0484`  
+		Last Modified: Mon, 09 Feb 2026 19:58:19 GMT  
+		Size: 2.6 MB (2597377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4da17589aa8b3903d6bec34094d847b747ce96cfe0f25f84be54619dfaa32038`  
-		Last Modified: Tue, 20 Jan 2026 17:54:22 GMT  
-		Size: 480.2 KB (480248 bytes)  
+	-	`sha256:8cddc83afc298e1222ef9416879b8226802dea19271643c108c97c3f295117ef`  
+		Last Modified: Mon, 09 Feb 2026 19:58:19 GMT  
+		Size: 480.3 KB (480316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6a843ca5ec6d229414e48d9bdfb8d48cab0bb8e8849c7c314ddc3ea591f838b`  
-		Last Modified: Tue, 20 Jan 2026 17:54:46 GMT  
-		Size: 342.1 MB (342087437 bytes)  
+	-	`sha256:4842a4d3465714f53f704d31d6563b2bd3d77e9846315eb91f06ac0b51c0d792`  
+		Last Modified: Mon, 09 Feb 2026 19:58:29 GMT  
+		Size: 342.5 MB (342468920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60e6d89ffc94252c614c733cf467cb09cc61184a5146966c64b45bbed4ec39ee`  
-		Last Modified: Tue, 20 Jan 2026 17:54:23 GMT  
-		Size: 705.0 B  
+	-	`sha256:488c86bde99ac15f4ebfc2ec5e9034b5005cadec0facf165384750847d2fd9ce`  
+		Last Modified: Mon, 09 Feb 2026 19:58:20 GMT  
+		Size: 704.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b64da99e41198dc12b33a019f1207b64fc310de7fcc7392d67a31c05a06e00bc`  
-		Last Modified: Tue, 20 Jan 2026 17:54:24 GMT  
-		Size: 556.0 B  
+	-	`sha256:1f35dafb4cd4158cc6f8e6c2f2c7ab5579690c6d111ce5bbd59ba5f448dcd6a1`  
+		Last Modified: Mon, 09 Feb 2026 19:58:21 GMT  
+		Size: 557.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f172676cdce88f98abc1108f734e7f36cbe17726aaa529d4754adbe741ca7bc`  
-		Last Modified: Tue, 20 Jan 2026 17:54:25 GMT  
-		Size: 599.0 B  
+	-	`sha256:318405d9dcaf104575b0775862709abf0d1d92ca8929776016aa310ce27335a8`  
+		Last Modified: Mon, 09 Feb 2026 19:58:21 GMT  
+		Size: 595.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90eedb380b91e821460a816448670993169dbd16d979049c7b9ef6f07d5b8d49`  
-		Last Modified: Tue, 20 Jan 2026 17:54:26 GMT  
-		Size: 581.0 B  
+	-	`sha256:7a7b5dcc310287f7d0ca4390c9f735b43ef600cc7acdc224cffdf896396655ad`  
+		Last Modified: Mon, 09 Feb 2026 19:58:22 GMT  
+		Size: 583.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:17.0` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:8f2fcb002161837bf8ce6611a91e15f4f1df8b548cf055b227644bcce4c338e7
+$ docker pull odoo@sha256:d28b9b7f8d0253fceed533059179d54ab7ee6076edf4eb187c35f40cd40f82eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.9 MB (41896634 bytes)**  
+-	Total Size: **42.0 MB (41990643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06776438d0ffde02be25f6246f48b95d62eb4d4ed0e1d8e67d59a73842a0ac48`
+-	Image ID: `sha256:33cc8eb043d08f47e0de09f0d6573de0aadaf0429c419a551c8fd1959e9ab2f2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1bfe9fa79b0bc357c6e8da24e8f28e43cc7cd9d609ecebc35e2ac3c8b20e2234`  
-		Last Modified: Tue, 20 Jan 2026 17:54:25 GMT  
-		Size: 41.9 MB (41869842 bytes)  
+	-	`sha256:38ad442b2eb0e482bd9dcf2915d3fa7e5300494a2dc4d478a3479ddb9ad549db`  
+		Last Modified: Mon, 09 Feb 2026 19:58:21 GMT  
+		Size: 42.0 MB (41963851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:41625ece780f199de4e132eb53515e811fe9d22f54e2668371dd59c00e34f06e`  
-		Last Modified: Tue, 20 Jan 2026 17:54:22 GMT  
+	-	`sha256:d92b5a096b0d22a8d8b772fb3d2f49a2dd5982228092e6c9b97d85910c85f72a`  
+		Last Modified: Mon, 09 Feb 2026 19:58:19 GMT  
 		Size: 26.8 KB (26792 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:17.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:ece7235d839d8dc762ca6b9cbc5f80f1bd49ec352373fd158c0116584c14d078
+$ docker pull odoo@sha256:032bae1e4f003688c346f664fcecd033689bfe30744cb6b1a3aaac878fc87245
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **603.4 MB (603360603 bytes)**  
+-	Total Size: **605.9 MB (605889904 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc0e2430e0c55cb24f8607fe43b0c5715f738f4a58cdec70c4c287a49ca68bc0`
+-	Image ID: `sha256:7746b7d7ad5b744d9f7961b09a8a87fc86d626a27e7ac7ab4a5f787bb1489989`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -480,52 +480,52 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:643ece0a7a3a6026f87ab17e08013e914d8971796eb302cfa051d97af4bf9939 in / 
 # Fri, 09 Jan 2026 07:03:30 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 ARG TARGETARCH=arm64
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 # ARGS: TARGETARCH=arm64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:57:14 GMT
+# Mon, 09 Feb 2026 19:55:50 GMT
 # ARGS: TARGETARCH=arm64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:57:15 GMT
+# Mon, 09 Feb 2026 19:55:51 GMT
 # ARGS: TARGETARCH=arm64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:57:15 GMT
+# Mon, 09 Feb 2026 19:55:51 GMT
 ENV ODOO_VERSION=17.0
-# Tue, 20 Jan 2026 17:57:15 GMT
-ARG ODOO_RELEASE=20260119
-# Tue, 20 Jan 2026 17:57:15 GMT
-ARG ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
-# Tue, 20 Jan 2026 17:58:18 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260119 ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
+# Mon, 09 Feb 2026 19:55:51 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:55:51 GMT
+ARG ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
+# Mon, 09 Feb 2026 19:56:53 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260119 ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
+# Mon, 09 Feb 2026 19:56:53 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 CMD ["odoo"]
 ```
 
@@ -534,67 +534,67 @@ CMD ["odoo"]
 		Last Modified: Fri, 09 Jan 2026 07:36:03 GMT  
 		Size: 27.4 MB (27383497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5392e9f9b8c753242dc56bde2aceb7d245e6bb193dc1eebb2e5a3c6ec657c55`  
-		Last Modified: Tue, 20 Jan 2026 17:59:45 GMT  
-		Size: 231.2 MB (231194081 bytes)  
+	-	`sha256:3e0cc8b89293c1dd30213c28e4dac09778d1e993082527ffdc5686b9d46f266e`  
+		Last Modified: Mon, 09 Feb 2026 19:58:23 GMT  
+		Size: 233.3 MB (233341303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a7366455d1a3fff67f027823303fc7b0fd56d093ea8f5abfa3b6d51eca0ddd4`  
-		Last Modified: Tue, 20 Jan 2026 17:59:36 GMT  
-		Size: 2.6 MB (2592358 bytes)  
+	-	`sha256:28940497bf3d465fd6fcbf29bd55cf5c6ab17ef7ca5fafc96889ba09eede35ab`  
+		Last Modified: Mon, 09 Feb 2026 19:58:10 GMT  
+		Size: 2.6 MB (2592561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bbfdd80d68f54e67a87e1f84db2b3b3c2ceeaeb2b1306e6c2ae91bd2290ad26`  
-		Last Modified: Tue, 20 Jan 2026 17:59:36 GMT  
-		Size: 480.3 KB (480266 bytes)  
+	-	`sha256:9156a05280718d11fe02486bddb831d0137b99b936ae88f0d07258d76ac842e5`  
+		Last Modified: Mon, 09 Feb 2026 19:58:10 GMT  
+		Size: 480.2 KB (480250 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:713b3a37e8bf6c1ece6b3c1a81d742ebd5c8c1ca80eb01e4c16aae614df64593`  
-		Last Modified: Tue, 20 Jan 2026 17:59:47 GMT  
-		Size: 341.7 MB (341707961 bytes)  
+	-	`sha256:0cf9fa5cda61c53af067ebe2c323c622bd15f6bff1946b2d50e640353f0ab3ad`  
+		Last Modified: Mon, 09 Feb 2026 19:58:20 GMT  
+		Size: 342.1 MB (342089855 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66167b6041274176f6cb491f67e5874173e01af02da49a266d5ca8ef17b21ad`  
-		Last Modified: Tue, 20 Jan 2026 17:59:38 GMT  
-		Size: 707.0 B  
+	-	`sha256:d11a4843caaf61bb0a59fd0030c2e1f12c88851c5d3acd12218b387a73535de3`  
+		Last Modified: Mon, 09 Feb 2026 19:58:11 GMT  
+		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1a827cb477712c85fbb9b54ff0acc6177ce25cf8b121234047eecf2bf9381a00`  
-		Last Modified: Tue, 20 Jan 2026 17:59:38 GMT  
-		Size: 555.0 B  
+	-	`sha256:4345a726bdfd9d20a77bd8058d3dd6d59a8f3104c9253ebddde51853bcf6cf29`  
+		Last Modified: Mon, 09 Feb 2026 19:58:11 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21ee1430abc8b8b5e4ee47d6126793c5529cae65b4f26492b65bb29dc5e5234d`  
-		Last Modified: Tue, 20 Jan 2026 17:59:39 GMT  
-		Size: 596.0 B  
+	-	`sha256:563ddf84e6e779db1507725723e5c0220e94a39db136a4c38d827476a7fd675a`  
+		Last Modified: Mon, 09 Feb 2026 19:58:12 GMT  
+		Size: 595.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4bced3890d693b31e366af7e1497f0b581599347d1e78bc5666a89068f89407`  
-		Last Modified: Tue, 20 Jan 2026 17:59:39 GMT  
-		Size: 582.0 B  
+	-	`sha256:e32f26e32c1da72a587ec486e9d65672311b9470d96a6d9e91b3cccaea71c179`  
+		Last Modified: Mon, 09 Feb 2026 19:58:12 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:17.0` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:f49295abac8fba19d879c3b82c12c24f73111f4ab5c135e35ce81f87343ceab0
+$ docker pull odoo@sha256:4bdb6654c8a177e46ae3267241c94c86ea1e4c81345d792c7061e1834498ddfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.9 MB (41903292 bytes)**  
+-	Total Size: **42.0 MB (41997301 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73f7e56e20ac407f2b090ba02876a58fee91e5e76b672b1658c6371ae087dae1`
+-	Image ID: `sha256:00949fd695dfab22b4e65dc4aab52e88bafeaedb0a90640d6f91550df4818a0f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ec4733103790c18fdc83b53f4f7cbfab32dd775b7b1b124ea8017f703ed38465`  
-		Last Modified: Tue, 20 Jan 2026 17:59:39 GMT  
-		Size: 41.9 MB (41876349 bytes)  
+	-	`sha256:124921ce1ad7a4ac581bcf15a2b93c04879242bc6ea8e52651e02dc9325d359d`  
+		Last Modified: Mon, 09 Feb 2026 19:58:12 GMT  
+		Size: 42.0 MB (41970358 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b6af40fea65ea0951c7d9137222989eb7c2365a2b20357556c87a15c2229cc2f`  
-		Last Modified: Tue, 20 Jan 2026 17:59:36 GMT  
+	-	`sha256:3de16b58e4b5a46aa3028d2c7e38de26a5136a1ef00f02b157c6170cd2ddbd5e`  
+		Last Modified: Mon, 09 Feb 2026 19:58:09 GMT  
 		Size: 26.9 KB (26943 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `odoo:17.0-20260119`
+## `odoo:17.0-20260209`
 
 ```console
-$ docker pull odoo@sha256:cfe26f3017df442161df8db55d0f1f67d5f4e486efb38297f3262f855c10c59e
+$ docker pull odoo@sha256:794b0b37ec542d8913f520b131ce28468b02c1b6226f4b4cb44005442805ad26
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -604,16 +604,16 @@ $ docker pull odoo@sha256:cfe26f3017df442161df8db55d0f1f67d5f4e486efb38297f3262f
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `odoo:17.0-20260119` - linux; amd64
+### `odoo:17.0-20260209` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:0e0ef85637b280be6d882856563cdb0831a0c5a7cdf75e8fd15bb662299c306c
+$ docker pull odoo@sha256:3eee30600db1d86dadeafe0d5aef9a7dd6609e27f65b5c694884ca26c1157d0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **608.5 MB (608525289 bytes)**  
+-	Total Size: **611.2 MB (611186884 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3df51d9355ac0e60dee0fa861dee0b86a858132095415023d3f803c84c8102ab`
+-	Image ID: `sha256:45d04d61161c909099ed662bec758d445a1b4b5783f63cf1de724d10b415382a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -631,52 +631,52 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:b499000226bd9a7c562ffa8eeb86e2d170f2a563310db6c2d79562ab53e5cb6e in / 
 # Fri, 09 Jan 2026 07:01:44 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 ARG TARGETARCH=amd64
-# Tue, 20 Jan 2026 17:51:55 GMT
+# Mon, 09 Feb 2026 19:56:03 GMT
 # ARGS: TARGETARCH=amd64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:52:03 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 # ARGS: TARGETARCH=amd64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:52:04 GMT
+# Mon, 09 Feb 2026 19:56:11 GMT
 # ARGS: TARGETARCH=amd64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:52:04 GMT
+# Mon, 09 Feb 2026 19:56:11 GMT
 ENV ODOO_VERSION=17.0
-# Tue, 20 Jan 2026 17:52:04 GMT
-ARG ODOO_RELEASE=20260119
-# Tue, 20 Jan 2026 17:52:04 GMT
-ARG ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
-# Tue, 20 Jan 2026 17:53:07 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260119 ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
+# Mon, 09 Feb 2026 19:56:11 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:56:11 GMT
+ARG ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
+# Mon, 09 Feb 2026 19:57:11 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:53:07 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:53:08 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260119 ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
+# Mon, 09 Feb 2026 19:57:11 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:53:08 GMT
+# Mon, 09 Feb 2026 19:57:11 GMT
 CMD ["odoo"]
 ```
 
@@ -685,73 +685,73 @@ CMD ["odoo"]
 		Last Modified: Fri, 09 Jan 2026 07:35:56 GMT  
 		Size: 29.5 MB (29536667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40e741c97709b1945785bb53d1468bae62143260cfbf4ca227b59c1dabf30416`  
-		Last Modified: Tue, 20 Jan 2026 17:54:43 GMT  
-		Size: 233.8 MB (233821310 bytes)  
+	-	`sha256:f74673ada0a426239c35b369d058ef07586e47faf632ba1501e16d1e20d04747`  
+		Last Modified: Mon, 09 Feb 2026 19:58:28 GMT  
+		Size: 236.1 MB (236101165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28390ae38c9dd94c36611b82d8e2d6d818f10ce955dca25afc72137f4423628a`  
-		Last Modified: Tue, 20 Jan 2026 17:54:22 GMT  
-		Size: 2.6 MB (2597186 bytes)  
+	-	`sha256:1e808234b1498e9d32d17e0e56fdc190de28ed89870baea81f0e0b11f9ff0484`  
+		Last Modified: Mon, 09 Feb 2026 19:58:19 GMT  
+		Size: 2.6 MB (2597377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4da17589aa8b3903d6bec34094d847b747ce96cfe0f25f84be54619dfaa32038`  
-		Last Modified: Tue, 20 Jan 2026 17:54:22 GMT  
-		Size: 480.2 KB (480248 bytes)  
+	-	`sha256:8cddc83afc298e1222ef9416879b8226802dea19271643c108c97c3f295117ef`  
+		Last Modified: Mon, 09 Feb 2026 19:58:19 GMT  
+		Size: 480.3 KB (480316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6a843ca5ec6d229414e48d9bdfb8d48cab0bb8e8849c7c314ddc3ea591f838b`  
-		Last Modified: Tue, 20 Jan 2026 17:54:46 GMT  
-		Size: 342.1 MB (342087437 bytes)  
+	-	`sha256:4842a4d3465714f53f704d31d6563b2bd3d77e9846315eb91f06ac0b51c0d792`  
+		Last Modified: Mon, 09 Feb 2026 19:58:29 GMT  
+		Size: 342.5 MB (342468920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60e6d89ffc94252c614c733cf467cb09cc61184a5146966c64b45bbed4ec39ee`  
-		Last Modified: Tue, 20 Jan 2026 17:54:23 GMT  
-		Size: 705.0 B  
+	-	`sha256:488c86bde99ac15f4ebfc2ec5e9034b5005cadec0facf165384750847d2fd9ce`  
+		Last Modified: Mon, 09 Feb 2026 19:58:20 GMT  
+		Size: 704.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b64da99e41198dc12b33a019f1207b64fc310de7fcc7392d67a31c05a06e00bc`  
-		Last Modified: Tue, 20 Jan 2026 17:54:24 GMT  
-		Size: 556.0 B  
+	-	`sha256:1f35dafb4cd4158cc6f8e6c2f2c7ab5579690c6d111ce5bbd59ba5f448dcd6a1`  
+		Last Modified: Mon, 09 Feb 2026 19:58:21 GMT  
+		Size: 557.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f172676cdce88f98abc1108f734e7f36cbe17726aaa529d4754adbe741ca7bc`  
-		Last Modified: Tue, 20 Jan 2026 17:54:25 GMT  
-		Size: 599.0 B  
+	-	`sha256:318405d9dcaf104575b0775862709abf0d1d92ca8929776016aa310ce27335a8`  
+		Last Modified: Mon, 09 Feb 2026 19:58:21 GMT  
+		Size: 595.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90eedb380b91e821460a816448670993169dbd16d979049c7b9ef6f07d5b8d49`  
-		Last Modified: Tue, 20 Jan 2026 17:54:26 GMT  
-		Size: 581.0 B  
+	-	`sha256:7a7b5dcc310287f7d0ca4390c9f735b43ef600cc7acdc224cffdf896396655ad`  
+		Last Modified: Mon, 09 Feb 2026 19:58:22 GMT  
+		Size: 583.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `odoo:17.0-20260119` - unknown; unknown
+### `odoo:17.0-20260209` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:8f2fcb002161837bf8ce6611a91e15f4f1df8b548cf055b227644bcce4c338e7
+$ docker pull odoo@sha256:d28b9b7f8d0253fceed533059179d54ab7ee6076edf4eb187c35f40cd40f82eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.9 MB (41896634 bytes)**  
+-	Total Size: **42.0 MB (41990643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06776438d0ffde02be25f6246f48b95d62eb4d4ed0e1d8e67d59a73842a0ac48`
+-	Image ID: `sha256:33cc8eb043d08f47e0de09f0d6573de0aadaf0429c419a551c8fd1959e9ab2f2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1bfe9fa79b0bc357c6e8da24e8f28e43cc7cd9d609ecebc35e2ac3c8b20e2234`  
-		Last Modified: Tue, 20 Jan 2026 17:54:25 GMT  
-		Size: 41.9 MB (41869842 bytes)  
+	-	`sha256:38ad442b2eb0e482bd9dcf2915d3fa7e5300494a2dc4d478a3479ddb9ad549db`  
+		Last Modified: Mon, 09 Feb 2026 19:58:21 GMT  
+		Size: 42.0 MB (41963851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:41625ece780f199de4e132eb53515e811fe9d22f54e2668371dd59c00e34f06e`  
-		Last Modified: Tue, 20 Jan 2026 17:54:22 GMT  
+	-	`sha256:d92b5a096b0d22a8d8b772fb3d2f49a2dd5982228092e6c9b97d85910c85f72a`  
+		Last Modified: Mon, 09 Feb 2026 19:58:19 GMT  
 		Size: 26.8 KB (26792 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `odoo:17.0-20260119` - linux; arm64 variant v8
+### `odoo:17.0-20260209` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:ece7235d839d8dc762ca6b9cbc5f80f1bd49ec352373fd158c0116584c14d078
+$ docker pull odoo@sha256:032bae1e4f003688c346f664fcecd033689bfe30744cb6b1a3aaac878fc87245
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **603.4 MB (603360603 bytes)**  
+-	Total Size: **605.9 MB (605889904 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc0e2430e0c55cb24f8607fe43b0c5715f738f4a58cdec70c4c287a49ca68bc0`
+-	Image ID: `sha256:7746b7d7ad5b744d9f7961b09a8a87fc86d626a27e7ac7ab4a5f787bb1489989`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -769,52 +769,52 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:643ece0a7a3a6026f87ab17e08013e914d8971796eb302cfa051d97af4bf9939 in / 
 # Fri, 09 Jan 2026 07:03:30 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 ARG TARGETARCH=arm64
-# Tue, 20 Jan 2026 17:57:07 GMT
+# Mon, 09 Feb 2026 19:55:43 GMT
 # ARGS: TARGETARCH=arm64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:57:14 GMT
+# Mon, 09 Feb 2026 19:55:50 GMT
 # ARGS: TARGETARCH=arm64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:57:15 GMT
+# Mon, 09 Feb 2026 19:55:51 GMT
 # ARGS: TARGETARCH=arm64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:57:15 GMT
+# Mon, 09 Feb 2026 19:55:51 GMT
 ENV ODOO_VERSION=17.0
-# Tue, 20 Jan 2026 17:57:15 GMT
-ARG ODOO_RELEASE=20260119
-# Tue, 20 Jan 2026 17:57:15 GMT
-ARG ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
-# Tue, 20 Jan 2026 17:58:18 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260119 ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
+# Mon, 09 Feb 2026 19:55:51 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:55:51 GMT
+ARG ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
+# Mon, 09 Feb 2026 19:56:53 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260119 ODOO_SHA=d05da0fdc75fc57ccae2dd5b797183afb0be0ea8
+# Mon, 09 Feb 2026 19:56:53 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=85d9a4cee5bb0b500a9c8ea440ad731132deef36
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:58:18 GMT
+# Mon, 09 Feb 2026 19:56:53 GMT
 CMD ["odoo"]
 ```
 
@@ -823,67 +823,67 @@ CMD ["odoo"]
 		Last Modified: Fri, 09 Jan 2026 07:36:03 GMT  
 		Size: 27.4 MB (27383497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5392e9f9b8c753242dc56bde2aceb7d245e6bb193dc1eebb2e5a3c6ec657c55`  
-		Last Modified: Tue, 20 Jan 2026 17:59:45 GMT  
-		Size: 231.2 MB (231194081 bytes)  
+	-	`sha256:3e0cc8b89293c1dd30213c28e4dac09778d1e993082527ffdc5686b9d46f266e`  
+		Last Modified: Mon, 09 Feb 2026 19:58:23 GMT  
+		Size: 233.3 MB (233341303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a7366455d1a3fff67f027823303fc7b0fd56d093ea8f5abfa3b6d51eca0ddd4`  
-		Last Modified: Tue, 20 Jan 2026 17:59:36 GMT  
-		Size: 2.6 MB (2592358 bytes)  
+	-	`sha256:28940497bf3d465fd6fcbf29bd55cf5c6ab17ef7ca5fafc96889ba09eede35ab`  
+		Last Modified: Mon, 09 Feb 2026 19:58:10 GMT  
+		Size: 2.6 MB (2592561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bbfdd80d68f54e67a87e1f84db2b3b3c2ceeaeb2b1306e6c2ae91bd2290ad26`  
-		Last Modified: Tue, 20 Jan 2026 17:59:36 GMT  
-		Size: 480.3 KB (480266 bytes)  
+	-	`sha256:9156a05280718d11fe02486bddb831d0137b99b936ae88f0d07258d76ac842e5`  
+		Last Modified: Mon, 09 Feb 2026 19:58:10 GMT  
+		Size: 480.2 KB (480250 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:713b3a37e8bf6c1ece6b3c1a81d742ebd5c8c1ca80eb01e4c16aae614df64593`  
-		Last Modified: Tue, 20 Jan 2026 17:59:47 GMT  
-		Size: 341.7 MB (341707961 bytes)  
+	-	`sha256:0cf9fa5cda61c53af067ebe2c323c622bd15f6bff1946b2d50e640353f0ab3ad`  
+		Last Modified: Mon, 09 Feb 2026 19:58:20 GMT  
+		Size: 342.1 MB (342089855 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66167b6041274176f6cb491f67e5874173e01af02da49a266d5ca8ef17b21ad`  
-		Last Modified: Tue, 20 Jan 2026 17:59:38 GMT  
-		Size: 707.0 B  
+	-	`sha256:d11a4843caaf61bb0a59fd0030c2e1f12c88851c5d3acd12218b387a73535de3`  
+		Last Modified: Mon, 09 Feb 2026 19:58:11 GMT  
+		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1a827cb477712c85fbb9b54ff0acc6177ce25cf8b121234047eecf2bf9381a00`  
-		Last Modified: Tue, 20 Jan 2026 17:59:38 GMT  
-		Size: 555.0 B  
+	-	`sha256:4345a726bdfd9d20a77bd8058d3dd6d59a8f3104c9253ebddde51853bcf6cf29`  
+		Last Modified: Mon, 09 Feb 2026 19:58:11 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21ee1430abc8b8b5e4ee47d6126793c5529cae65b4f26492b65bb29dc5e5234d`  
-		Last Modified: Tue, 20 Jan 2026 17:59:39 GMT  
-		Size: 596.0 B  
+	-	`sha256:563ddf84e6e779db1507725723e5c0220e94a39db136a4c38d827476a7fd675a`  
+		Last Modified: Mon, 09 Feb 2026 19:58:12 GMT  
+		Size: 595.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4bced3890d693b31e366af7e1497f0b581599347d1e78bc5666a89068f89407`  
-		Last Modified: Tue, 20 Jan 2026 17:59:39 GMT  
-		Size: 582.0 B  
+	-	`sha256:e32f26e32c1da72a587ec486e9d65672311b9470d96a6d9e91b3cccaea71c179`  
+		Last Modified: Mon, 09 Feb 2026 19:58:12 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `odoo:17.0-20260119` - unknown; unknown
+### `odoo:17.0-20260209` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:f49295abac8fba19d879c3b82c12c24f73111f4ab5c135e35ce81f87343ceab0
+$ docker pull odoo@sha256:4bdb6654c8a177e46ae3267241c94c86ea1e4c81345d792c7061e1834498ddfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.9 MB (41903292 bytes)**  
+-	Total Size: **42.0 MB (41997301 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73f7e56e20ac407f2b090ba02876a58fee91e5e76b672b1658c6371ae087dae1`
+-	Image ID: `sha256:00949fd695dfab22b4e65dc4aab52e88bafeaedb0a90640d6f91550df4818a0f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ec4733103790c18fdc83b53f4f7cbfab32dd775b7b1b124ea8017f703ed38465`  
-		Last Modified: Tue, 20 Jan 2026 17:59:39 GMT  
-		Size: 41.9 MB (41876349 bytes)  
+	-	`sha256:124921ce1ad7a4ac581bcf15a2b93c04879242bc6ea8e52651e02dc9325d359d`  
+		Last Modified: Mon, 09 Feb 2026 19:58:12 GMT  
+		Size: 42.0 MB (41970358 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b6af40fea65ea0951c7d9137222989eb7c2365a2b20357556c87a15c2229cc2f`  
-		Last Modified: Tue, 20 Jan 2026 17:59:36 GMT  
+	-	`sha256:3de16b58e4b5a46aa3028d2c7e38de26a5136a1ef00f02b157c6170cd2ddbd5e`  
+		Last Modified: Mon, 09 Feb 2026 19:58:09 GMT  
 		Size: 26.9 KB (26943 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `odoo:18`
 
 ```console
-$ docker pull odoo@sha256:a419f4e386bbc4826b0850907e5831c94d2a963a0f067fe53205cea365678e01
+$ docker pull odoo@sha256:3463e2149083239556a97df1ea4e23f36c71577833fdde9c3f0db6f6a722fa0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -898,13 +898,13 @@ $ docker pull odoo@sha256:a419f4e386bbc4826b0850907e5831c94d2a963a0f067fe53205ce
 ### `odoo:18` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:76e9e8eaf613bb2b5637713672073ea410964f69cde25ef5fad883931f43a381
+$ docker pull odoo@sha256:1139a5a5f07531a00dd6b7dbaac81bb6232a279afda1ef010a13cc00c84dca9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **681.6 MB (681595307 bytes)**  
+-	Total Size: **684.7 MB (684743144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1abef02c36e0ed230a09003ff4b8309c7ad7d76ac165ec18a6982c0f63bc2a68`
+-	Image ID: `sha256:34341223607b1e77e5e37e6837c482c13a99eeb255f411fd24a702aec96a401f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -922,52 +922,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:3077ee44db3cc7d38740d60a05c81418dd3825a007db473658464f52689e867b in / 
 # Tue, 13 Jan 2026 05:37:27 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 ARG TARGETARCH=amd64
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 # ARGS: TARGETARCH=amd64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:49:30 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 # ARGS: TARGETARCH=amd64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:49:31 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 # ARGS: TARGETARCH=amd64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:49:31 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 ENV ODOO_VERSION=18.0
-# Tue, 20 Jan 2026 17:49:31 GMT
-ARG ODOO_RELEASE=20260119
-# Tue, 20 Jan 2026 17:49:31 GMT
-ARG ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
-# Tue, 20 Jan 2026 17:50:23 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
+# Mon, 09 Feb 2026 19:57:09 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:57:09 GMT
+ARG ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
+# Mon, 09 Feb 2026 19:58:05 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:50:23 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:50:23 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:50:24 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
+# Mon, 09 Feb 2026 19:58:06 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 CMD ["odoo"]
 ```
 
@@ -976,73 +976,73 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7363844a9bc712673d51387979446fdce76368a200cbbab0c1d05ae9323dc2d`  
-		Last Modified: Tue, 20 Jan 2026 17:52:21 GMT  
-		Size: 254.6 MB (254560463 bytes)  
+	-	`sha256:8bb3eb599c6f15838ba29d7f6e71276428cfd1b82ab490751569bf845437dd08`  
+		Last Modified: Mon, 09 Feb 2026 20:00:01 GMT  
+		Size: 257.0 MB (256965635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2636cfedf2cc50a6ba3fa7daa0edaa97f3c68d73d534b92d9137cf7e0b1ca30f`  
-		Last Modified: Tue, 20 Jan 2026 17:52:11 GMT  
-		Size: 14.4 MB (14356570 bytes)  
+	-	`sha256:76b7fe2a52458c7a932244e72f75b79ea2fb4fb612855415762f963e339647e9`  
+		Last Modified: Mon, 09 Feb 2026 19:59:53 GMT  
+		Size: 14.4 MB (14356805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c7e32146e066915a3cd972249a3d3679ac9951c0ab5e1e14df0aa2a1b33884c`  
-		Last Modified: Tue, 20 Jan 2026 17:52:09 GMT  
-		Size: 480.0 KB (480006 bytes)  
+	-	`sha256:a8a191b5dc5c35dc44caba690ab95d5e2e7b4c2363e4da481fbb1cf8ed1f224e`  
+		Last Modified: Mon, 09 Feb 2026 19:59:52 GMT  
+		Size: 480.0 KB (480009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd1077dc2224aa904b91214a8eb092a0d6247f9026ad2f7df6464519d41a61b`  
-		Last Modified: Tue, 20 Jan 2026 17:52:24 GMT  
-		Size: 382.5 MB (382469811 bytes)  
+	-	`sha256:37ba8b956f47c0af5c836d937772c2542b593db49b37643068809c1edcdff130`  
+		Last Modified: Mon, 09 Feb 2026 20:00:04 GMT  
+		Size: 383.2 MB (383212242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cb87d02673c980537bd2c1cc6742d8bb2c8731d1bb4a01a22e37417388f3056`  
-		Last Modified: Tue, 20 Jan 2026 17:52:11 GMT  
-		Size: 706.0 B  
+	-	`sha256:345daf9a4d3921d73ee80687be69e573c246cddf82714d9fb0e2b6332747fe53`  
+		Last Modified: Mon, 09 Feb 2026 19:59:53 GMT  
+		Size: 707.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8872d6b9f48ebb41841c693a4628a0af85850e4600f20dd431a60530af9e31d4`  
-		Last Modified: Tue, 20 Jan 2026 17:52:12 GMT  
-		Size: 557.0 B  
+	-	`sha256:45aeafb0f9dd3bfe7f27c84e782ae334549a93c2e0b1251913f332bebbe902e8`  
+		Last Modified: Mon, 09 Feb 2026 19:59:54 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6377734303d8c7cf0751e8a54a3dfd3998e85078935d354600b0a6b938873185`  
-		Last Modified: Tue, 20 Jan 2026 17:52:12 GMT  
-		Size: 600.0 B  
+	-	`sha256:f726aafa079b7233e2c25f3fc7097261979307441e71f511d0c4128b3499158f`  
+		Last Modified: Mon, 09 Feb 2026 19:59:55 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58b9d1364c0e7b7089dadd9921e3c95308e6581176a4c89790205d9cb1fb0dce`  
-		Last Modified: Tue, 20 Jan 2026 17:52:14 GMT  
+	-	`sha256:c8d4d05d36ca428368ac5895b44c4767c0c78a51340c7f32f18842d3c2a795ca`  
+		Last Modified: Mon, 09 Feb 2026 19:59:56 GMT  
 		Size: 583.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:18` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:ef56218008dba19c636ab4e82fcb242ff4dccf0e51b01dec944a5e964d7257a2
+$ docker pull odoo@sha256:5ea3bd2e68befb695d1b07c7b0c1e14411bdad65db7367dc7615e5b523be1931
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.5 MB (61535848 bytes)**  
+-	Total Size: **61.6 MB (61636642 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69e77a3c65ebf4bebcca6a33b0349bd4097168450116afc93bb1b2e4ee718463`
+-	Image ID: `sha256:24f3769d4b08de557b8472560a676389ee12e92561808b709bd98ac9bb20b42c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:34bb2887b84f8e243809158cf4e9aa25db9c14e2402f1bd5b3c39d011a8f7c08`  
-		Last Modified: Tue, 20 Jan 2026 17:52:13 GMT  
-		Size: 61.5 MB (61509049 bytes)  
+	-	`sha256:b060391de139fea765bd51a7680d332d561fff9d671ba52a03a5d9d4ad6f1ecf`  
+		Last Modified: Mon, 09 Feb 2026 19:59:56 GMT  
+		Size: 61.6 MB (61609843 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1f11503b5a84104cc758f0f55e85689eae2c94742ed5d422eafc2c7e22a81ec8`  
-		Last Modified: Tue, 20 Jan 2026 17:52:09 GMT  
+	-	`sha256:b8086b6bb3617cf3b1db65819d715be2a69b60d2ee42268f4ab2a4bc8ff69f83`  
+		Last Modified: Mon, 09 Feb 2026 19:59:52 GMT  
 		Size: 26.8 KB (26799 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:18` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:079e5c9cfc52338568a989787d13c09a1b9f6ae38fb4a1564650ba2feb64e69e
+$ docker pull odoo@sha256:32ef0e228acc5ae27234ad27cc5a843fc950292fb7872fef43caf93681679072
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **677.9 MB (677947851 bytes)**  
+-	Total Size: **680.9 MB (680908467 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d94afee94a68ebfe770653d251b9e3139efb6c2be5a713d5540a3d04b315eabc`
+-	Image ID: `sha256:9c8a2318db3332a21f3d573ed783ff72709e3bf72d934e0a836e90de9b77b223`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -1060,52 +1060,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:6089c6bede9eca8ec4f424e5798a0ae0712a6fe38c9b97f9afb9d24d9675024e in / 
 # Tue, 13 Jan 2026 05:40:17 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 ARG TARGETARCH=arm64
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 # ARGS: TARGETARCH=arm64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:54:45 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 # ARGS: TARGETARCH=arm64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:54:46 GMT
+# Mon, 09 Feb 2026 19:56:12 GMT
 # ARGS: TARGETARCH=arm64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:54:46 GMT
+# Mon, 09 Feb 2026 19:56:12 GMT
 ENV ODOO_VERSION=18.0
-# Tue, 20 Jan 2026 17:54:46 GMT
-ARG ODOO_RELEASE=20260119
-# Tue, 20 Jan 2026 17:54:46 GMT
-ARG ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
-# Tue, 20 Jan 2026 17:55:44 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
+# Mon, 09 Feb 2026 19:56:12 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:56:12 GMT
+ARG ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
+# Mon, 09 Feb 2026 19:57:09 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
+# Mon, 09 Feb 2026 19:57:09 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 CMD ["odoo"]
 ```
 
@@ -1114,60 +1114,60 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:502ab2f5931c1623660fb8dc5db8ff82bb9884cc727525c9ac04f76d51001d57`  
-		Last Modified: Tue, 20 Jan 2026 17:58:07 GMT  
-		Size: 252.0 MB (251961272 bytes)  
+	-	`sha256:b0ec8fd0ceb3ed748781ccce161e63153534458f91aa49e7a56fc172912b2c60`  
+		Last Modified: Mon, 09 Feb 2026 19:59:35 GMT  
+		Size: 254.2 MB (254183436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58af47750d61fc39caa1c4d35bbc58c386bc34ca91782d75579236a4753a1f63`  
-		Last Modified: Tue, 20 Jan 2026 17:57:59 GMT  
-		Size: 14.3 MB (14334313 bytes)  
+	-	`sha256:c9068f4fec96aa4ac307e3cbd59f0a59cbe2608fc46cc6a3f07de16c5ce13d69`  
+		Last Modified: Mon, 09 Feb 2026 19:59:13 GMT  
+		Size: 14.3 MB (14334533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:903dab9fea90d8828b7be83e5b62f1f16f5744b9d1b0d762e0e097cb3f844086`  
-		Last Modified: Tue, 20 Jan 2026 17:57:58 GMT  
-		Size: 480.0 KB (480003 bytes)  
+	-	`sha256:8d0ca558957cf6e23cc505a96ec3af01b980393fa3b8529a8ee72b3fe06a37ea`  
+		Last Modified: Mon, 09 Feb 2026 19:59:12 GMT  
+		Size: 480.0 KB (480027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1efbebb20f3a7dd01870e80e74a0932f24526ec58124a5ef980126f15440f019`  
-		Last Modified: Tue, 20 Jan 2026 17:58:09 GMT  
-		Size: 382.3 MB (382306002 bytes)  
+	-	`sha256:7fd446edf299d41cf55563a6bb13da0e34f94fc11e0bd7f1930d399482bcc13d`  
+		Last Modified: Mon, 09 Feb 2026 19:59:42 GMT  
+		Size: 383.0 MB (383044210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:667551ff79de8eda7221cede516782f210f76be7c31930074e44bf63a1190c21`  
-		Last Modified: Tue, 20 Jan 2026 17:57:59 GMT  
+	-	`sha256:7e98ae45d01f2522fc5fa1a2b1ea23a4e6859b8e6273aace01b4379ec4415e66`  
+		Last Modified: Mon, 09 Feb 2026 19:59:13 GMT  
 		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26b9389214953a48b5ee96ab920ed2208a9ebd64967934d0a0e1946ccf2917b1`  
-		Last Modified: Tue, 20 Jan 2026 17:58:00 GMT  
-		Size: 556.0 B  
+	-	`sha256:a3e6872f008300d327e6f61e9d746b97c240d672cd5d5182a330872c4454025f`  
+		Last Modified: Mon, 09 Feb 2026 19:59:15 GMT  
+		Size: 555.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48ecbeb1053a9b4fa1ff62b29cc89d992ebbd04d1e6f9d15fc595f83ec4d7e56`  
-		Last Modified: Tue, 20 Jan 2026 17:58:01 GMT  
+	-	`sha256:9e7afcc22e5650cae1b0b66ad38113f7b461f2138e033f259db0b926af75e522`  
+		Last Modified: Mon, 09 Feb 2026 19:59:15 GMT  
 		Size: 595.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:221c7876fb9b357663b740b143e681cf807c2e3157516cd08f2bff488d922958`  
-		Last Modified: Tue, 20 Jan 2026 17:58:02 GMT  
-		Size: 580.0 B  
+	-	`sha256:4438259077244979e9f740e1966a652040596526d12cb51b4fcd8a907dba9130`  
+		Last Modified: Mon, 09 Feb 2026 19:59:16 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:18` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:9dcb38d774a449e95adc4e57c4ae4a5719671ad26226d09b1c3aa80b1e7d993e
+$ docker pull odoo@sha256:ec5c534306f314d165cbf06f365507d116f9e013c3a4dc54ba6419b14582db82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.5 MB (61543275 bytes)**  
+-	Total Size: **61.6 MB (61644069 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dac4d1306fd5237891c9882ff7d90155fda787d2ec7530f00eca5c623ed5fb0`
+-	Image ID: `sha256:0d945a40f4f4880239f0534e873e171d6ce1972438f1df62fab2199de58f451f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:29247df502690c4cda4175004f4782feb32cbaef9ecfc2241444a2bcb530f47f`  
-		Last Modified: Tue, 20 Jan 2026 17:58:01 GMT  
-		Size: 61.5 MB (61516324 bytes)  
+	-	`sha256:3e939d667be6841c88a51729b4bf662db0886af292761daad6ff6c6defe821a1`  
+		Last Modified: Mon, 09 Feb 2026 19:59:16 GMT  
+		Size: 61.6 MB (61617118 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5d578c25730bcc92567f5ef3d916d3dcc5a468501d9700d16fdcf0e5eb32b4cb`  
-		Last Modified: Tue, 20 Jan 2026 17:57:58 GMT  
+	-	`sha256:6d38ef89e6a4213d196f4e36553ed88d8f2c4023690700f6a455806998fd6e9f`  
+		Last Modified: Mon, 09 Feb 2026 19:59:12 GMT  
 		Size: 27.0 KB (26951 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1312,7 +1312,7 @@ $ docker pull odoo@sha256:b5efadad7d1a76d57fc27ef9cbeaa6e7d003ad911ac8dcc654b2ed
 ## `odoo:18.0`
 
 ```console
-$ docker pull odoo@sha256:a419f4e386bbc4826b0850907e5831c94d2a963a0f067fe53205cea365678e01
+$ docker pull odoo@sha256:3463e2149083239556a97df1ea4e23f36c71577833fdde9c3f0db6f6a722fa0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1327,13 +1327,13 @@ $ docker pull odoo@sha256:a419f4e386bbc4826b0850907e5831c94d2a963a0f067fe53205ce
 ### `odoo:18.0` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:76e9e8eaf613bb2b5637713672073ea410964f69cde25ef5fad883931f43a381
+$ docker pull odoo@sha256:1139a5a5f07531a00dd6b7dbaac81bb6232a279afda1ef010a13cc00c84dca9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **681.6 MB (681595307 bytes)**  
+-	Total Size: **684.7 MB (684743144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1abef02c36e0ed230a09003ff4b8309c7ad7d76ac165ec18a6982c0f63bc2a68`
+-	Image ID: `sha256:34341223607b1e77e5e37e6837c482c13a99eeb255f411fd24a702aec96a401f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -1351,52 +1351,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:3077ee44db3cc7d38740d60a05c81418dd3825a007db473658464f52689e867b in / 
 # Tue, 13 Jan 2026 05:37:27 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 ARG TARGETARCH=amd64
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 # ARGS: TARGETARCH=amd64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:49:30 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 # ARGS: TARGETARCH=amd64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:49:31 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 # ARGS: TARGETARCH=amd64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:49:31 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 ENV ODOO_VERSION=18.0
-# Tue, 20 Jan 2026 17:49:31 GMT
-ARG ODOO_RELEASE=20260119
-# Tue, 20 Jan 2026 17:49:31 GMT
-ARG ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
-# Tue, 20 Jan 2026 17:50:23 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
+# Mon, 09 Feb 2026 19:57:09 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:57:09 GMT
+ARG ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
+# Mon, 09 Feb 2026 19:58:05 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:50:23 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:50:23 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:50:24 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
+# Mon, 09 Feb 2026 19:58:06 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 CMD ["odoo"]
 ```
 
@@ -1405,73 +1405,73 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7363844a9bc712673d51387979446fdce76368a200cbbab0c1d05ae9323dc2d`  
-		Last Modified: Tue, 20 Jan 2026 17:52:21 GMT  
-		Size: 254.6 MB (254560463 bytes)  
+	-	`sha256:8bb3eb599c6f15838ba29d7f6e71276428cfd1b82ab490751569bf845437dd08`  
+		Last Modified: Mon, 09 Feb 2026 20:00:01 GMT  
+		Size: 257.0 MB (256965635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2636cfedf2cc50a6ba3fa7daa0edaa97f3c68d73d534b92d9137cf7e0b1ca30f`  
-		Last Modified: Tue, 20 Jan 2026 17:52:11 GMT  
-		Size: 14.4 MB (14356570 bytes)  
+	-	`sha256:76b7fe2a52458c7a932244e72f75b79ea2fb4fb612855415762f963e339647e9`  
+		Last Modified: Mon, 09 Feb 2026 19:59:53 GMT  
+		Size: 14.4 MB (14356805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c7e32146e066915a3cd972249a3d3679ac9951c0ab5e1e14df0aa2a1b33884c`  
-		Last Modified: Tue, 20 Jan 2026 17:52:09 GMT  
-		Size: 480.0 KB (480006 bytes)  
+	-	`sha256:a8a191b5dc5c35dc44caba690ab95d5e2e7b4c2363e4da481fbb1cf8ed1f224e`  
+		Last Modified: Mon, 09 Feb 2026 19:59:52 GMT  
+		Size: 480.0 KB (480009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd1077dc2224aa904b91214a8eb092a0d6247f9026ad2f7df6464519d41a61b`  
-		Last Modified: Tue, 20 Jan 2026 17:52:24 GMT  
-		Size: 382.5 MB (382469811 bytes)  
+	-	`sha256:37ba8b956f47c0af5c836d937772c2542b593db49b37643068809c1edcdff130`  
+		Last Modified: Mon, 09 Feb 2026 20:00:04 GMT  
+		Size: 383.2 MB (383212242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cb87d02673c980537bd2c1cc6742d8bb2c8731d1bb4a01a22e37417388f3056`  
-		Last Modified: Tue, 20 Jan 2026 17:52:11 GMT  
-		Size: 706.0 B  
+	-	`sha256:345daf9a4d3921d73ee80687be69e573c246cddf82714d9fb0e2b6332747fe53`  
+		Last Modified: Mon, 09 Feb 2026 19:59:53 GMT  
+		Size: 707.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8872d6b9f48ebb41841c693a4628a0af85850e4600f20dd431a60530af9e31d4`  
-		Last Modified: Tue, 20 Jan 2026 17:52:12 GMT  
-		Size: 557.0 B  
+	-	`sha256:45aeafb0f9dd3bfe7f27c84e782ae334549a93c2e0b1251913f332bebbe902e8`  
+		Last Modified: Mon, 09 Feb 2026 19:59:54 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6377734303d8c7cf0751e8a54a3dfd3998e85078935d354600b0a6b938873185`  
-		Last Modified: Tue, 20 Jan 2026 17:52:12 GMT  
-		Size: 600.0 B  
+	-	`sha256:f726aafa079b7233e2c25f3fc7097261979307441e71f511d0c4128b3499158f`  
+		Last Modified: Mon, 09 Feb 2026 19:59:55 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58b9d1364c0e7b7089dadd9921e3c95308e6581176a4c89790205d9cb1fb0dce`  
-		Last Modified: Tue, 20 Jan 2026 17:52:14 GMT  
+	-	`sha256:c8d4d05d36ca428368ac5895b44c4767c0c78a51340c7f32f18842d3c2a795ca`  
+		Last Modified: Mon, 09 Feb 2026 19:59:56 GMT  
 		Size: 583.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:18.0` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:ef56218008dba19c636ab4e82fcb242ff4dccf0e51b01dec944a5e964d7257a2
+$ docker pull odoo@sha256:5ea3bd2e68befb695d1b07c7b0c1e14411bdad65db7367dc7615e5b523be1931
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.5 MB (61535848 bytes)**  
+-	Total Size: **61.6 MB (61636642 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69e77a3c65ebf4bebcca6a33b0349bd4097168450116afc93bb1b2e4ee718463`
+-	Image ID: `sha256:24f3769d4b08de557b8472560a676389ee12e92561808b709bd98ac9bb20b42c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:34bb2887b84f8e243809158cf4e9aa25db9c14e2402f1bd5b3c39d011a8f7c08`  
-		Last Modified: Tue, 20 Jan 2026 17:52:13 GMT  
-		Size: 61.5 MB (61509049 bytes)  
+	-	`sha256:b060391de139fea765bd51a7680d332d561fff9d671ba52a03a5d9d4ad6f1ecf`  
+		Last Modified: Mon, 09 Feb 2026 19:59:56 GMT  
+		Size: 61.6 MB (61609843 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1f11503b5a84104cc758f0f55e85689eae2c94742ed5d422eafc2c7e22a81ec8`  
-		Last Modified: Tue, 20 Jan 2026 17:52:09 GMT  
+	-	`sha256:b8086b6bb3617cf3b1db65819d715be2a69b60d2ee42268f4ab2a4bc8ff69f83`  
+		Last Modified: Mon, 09 Feb 2026 19:59:52 GMT  
 		Size: 26.8 KB (26799 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:18.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:079e5c9cfc52338568a989787d13c09a1b9f6ae38fb4a1564650ba2feb64e69e
+$ docker pull odoo@sha256:32ef0e228acc5ae27234ad27cc5a843fc950292fb7872fef43caf93681679072
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **677.9 MB (677947851 bytes)**  
+-	Total Size: **680.9 MB (680908467 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d94afee94a68ebfe770653d251b9e3139efb6c2be5a713d5540a3d04b315eabc`
+-	Image ID: `sha256:9c8a2318db3332a21f3d573ed783ff72709e3bf72d934e0a836e90de9b77b223`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -1489,52 +1489,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:6089c6bede9eca8ec4f424e5798a0ae0712a6fe38c9b97f9afb9d24d9675024e in / 
 # Tue, 13 Jan 2026 05:40:17 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 ARG TARGETARCH=arm64
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 # ARGS: TARGETARCH=arm64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:54:45 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 # ARGS: TARGETARCH=arm64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:54:46 GMT
+# Mon, 09 Feb 2026 19:56:12 GMT
 # ARGS: TARGETARCH=arm64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:54:46 GMT
+# Mon, 09 Feb 2026 19:56:12 GMT
 ENV ODOO_VERSION=18.0
-# Tue, 20 Jan 2026 17:54:46 GMT
-ARG ODOO_RELEASE=20260119
-# Tue, 20 Jan 2026 17:54:46 GMT
-ARG ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
-# Tue, 20 Jan 2026 17:55:44 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
+# Mon, 09 Feb 2026 19:56:12 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:56:12 GMT
+ARG ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
+# Mon, 09 Feb 2026 19:57:09 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
+# Mon, 09 Feb 2026 19:57:09 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 CMD ["odoo"]
 ```
 
@@ -1543,60 +1543,60 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:502ab2f5931c1623660fb8dc5db8ff82bb9884cc727525c9ac04f76d51001d57`  
-		Last Modified: Tue, 20 Jan 2026 17:58:07 GMT  
-		Size: 252.0 MB (251961272 bytes)  
+	-	`sha256:b0ec8fd0ceb3ed748781ccce161e63153534458f91aa49e7a56fc172912b2c60`  
+		Last Modified: Mon, 09 Feb 2026 19:59:35 GMT  
+		Size: 254.2 MB (254183436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58af47750d61fc39caa1c4d35bbc58c386bc34ca91782d75579236a4753a1f63`  
-		Last Modified: Tue, 20 Jan 2026 17:57:59 GMT  
-		Size: 14.3 MB (14334313 bytes)  
+	-	`sha256:c9068f4fec96aa4ac307e3cbd59f0a59cbe2608fc46cc6a3f07de16c5ce13d69`  
+		Last Modified: Mon, 09 Feb 2026 19:59:13 GMT  
+		Size: 14.3 MB (14334533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:903dab9fea90d8828b7be83e5b62f1f16f5744b9d1b0d762e0e097cb3f844086`  
-		Last Modified: Tue, 20 Jan 2026 17:57:58 GMT  
-		Size: 480.0 KB (480003 bytes)  
+	-	`sha256:8d0ca558957cf6e23cc505a96ec3af01b980393fa3b8529a8ee72b3fe06a37ea`  
+		Last Modified: Mon, 09 Feb 2026 19:59:12 GMT  
+		Size: 480.0 KB (480027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1efbebb20f3a7dd01870e80e74a0932f24526ec58124a5ef980126f15440f019`  
-		Last Modified: Tue, 20 Jan 2026 17:58:09 GMT  
-		Size: 382.3 MB (382306002 bytes)  
+	-	`sha256:7fd446edf299d41cf55563a6bb13da0e34f94fc11e0bd7f1930d399482bcc13d`  
+		Last Modified: Mon, 09 Feb 2026 19:59:42 GMT  
+		Size: 383.0 MB (383044210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:667551ff79de8eda7221cede516782f210f76be7c31930074e44bf63a1190c21`  
-		Last Modified: Tue, 20 Jan 2026 17:57:59 GMT  
+	-	`sha256:7e98ae45d01f2522fc5fa1a2b1ea23a4e6859b8e6273aace01b4379ec4415e66`  
+		Last Modified: Mon, 09 Feb 2026 19:59:13 GMT  
 		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26b9389214953a48b5ee96ab920ed2208a9ebd64967934d0a0e1946ccf2917b1`  
-		Last Modified: Tue, 20 Jan 2026 17:58:00 GMT  
-		Size: 556.0 B  
+	-	`sha256:a3e6872f008300d327e6f61e9d746b97c240d672cd5d5182a330872c4454025f`  
+		Last Modified: Mon, 09 Feb 2026 19:59:15 GMT  
+		Size: 555.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48ecbeb1053a9b4fa1ff62b29cc89d992ebbd04d1e6f9d15fc595f83ec4d7e56`  
-		Last Modified: Tue, 20 Jan 2026 17:58:01 GMT  
+	-	`sha256:9e7afcc22e5650cae1b0b66ad38113f7b461f2138e033f259db0b926af75e522`  
+		Last Modified: Mon, 09 Feb 2026 19:59:15 GMT  
 		Size: 595.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:221c7876fb9b357663b740b143e681cf807c2e3157516cd08f2bff488d922958`  
-		Last Modified: Tue, 20 Jan 2026 17:58:02 GMT  
-		Size: 580.0 B  
+	-	`sha256:4438259077244979e9f740e1966a652040596526d12cb51b4fcd8a907dba9130`  
+		Last Modified: Mon, 09 Feb 2026 19:59:16 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:18.0` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:9dcb38d774a449e95adc4e57c4ae4a5719671ad26226d09b1c3aa80b1e7d993e
+$ docker pull odoo@sha256:ec5c534306f314d165cbf06f365507d116f9e013c3a4dc54ba6419b14582db82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.5 MB (61543275 bytes)**  
+-	Total Size: **61.6 MB (61644069 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dac4d1306fd5237891c9882ff7d90155fda787d2ec7530f00eca5c623ed5fb0`
+-	Image ID: `sha256:0d945a40f4f4880239f0534e873e171d6ce1972438f1df62fab2199de58f451f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:29247df502690c4cda4175004f4782feb32cbaef9ecfc2241444a2bcb530f47f`  
-		Last Modified: Tue, 20 Jan 2026 17:58:01 GMT  
-		Size: 61.5 MB (61516324 bytes)  
+	-	`sha256:3e939d667be6841c88a51729b4bf662db0886af292761daad6ff6c6defe821a1`  
+		Last Modified: Mon, 09 Feb 2026 19:59:16 GMT  
+		Size: 61.6 MB (61617118 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5d578c25730bcc92567f5ef3d916d3dcc5a468501d9700d16fdcf0e5eb32b4cb`  
-		Last Modified: Tue, 20 Jan 2026 17:57:58 GMT  
+	-	`sha256:6d38ef89e6a4213d196f4e36553ed88d8f2c4023690700f6a455806998fd6e9f`  
+		Last Modified: Mon, 09 Feb 2026 19:59:12 GMT  
 		Size: 27.0 KB (26951 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1738,31 +1738,29 @@ $ docker pull odoo@sha256:b5efadad7d1a76d57fc27ef9cbeaa6e7d003ad911ac8dcc654b2ed
 		Size: 26.9 KB (26855 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `odoo:18.0-20260119`
+## `odoo:18.0-20260209`
 
 ```console
-$ docker pull odoo@sha256:a419f4e386bbc4826b0850907e5831c94d2a963a0f067fe53205cea365678e01
+$ docker pull odoo@sha256:c10a1a81ffa57ce945c1309597cec2b9b6ca68e3af576741529215718737b552
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 6
+-	Platforms: 4
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm64 variant v8
 	-	unknown; unknown
-	-	linux; ppc64le
-	-	unknown; unknown
 
-### `odoo:18.0-20260119` - linux; amd64
+### `odoo:18.0-20260209` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:76e9e8eaf613bb2b5637713672073ea410964f69cde25ef5fad883931f43a381
+$ docker pull odoo@sha256:1139a5a5f07531a00dd6b7dbaac81bb6232a279afda1ef010a13cc00c84dca9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **681.6 MB (681595307 bytes)**  
+-	Total Size: **684.7 MB (684743144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1abef02c36e0ed230a09003ff4b8309c7ad7d76ac165ec18a6982c0f63bc2a68`
+-	Image ID: `sha256:34341223607b1e77e5e37e6837c482c13a99eeb255f411fd24a702aec96a401f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -1780,52 +1778,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:3077ee44db3cc7d38740d60a05c81418dd3825a007db473658464f52689e867b in / 
 # Tue, 13 Jan 2026 05:37:27 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 ARG TARGETARCH=amd64
-# Tue, 20 Jan 2026 17:49:21 GMT
+# Mon, 09 Feb 2026 19:56:59 GMT
 # ARGS: TARGETARCH=amd64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:49:30 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 # ARGS: TARGETARCH=amd64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:49:31 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 # ARGS: TARGETARCH=amd64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:49:31 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 ENV ODOO_VERSION=18.0
-# Tue, 20 Jan 2026 17:49:31 GMT
-ARG ODOO_RELEASE=20260119
-# Tue, 20 Jan 2026 17:49:31 GMT
-ARG ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
-# Tue, 20 Jan 2026 17:50:23 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
+# Mon, 09 Feb 2026 19:57:09 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:57:09 GMT
+ARG ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
+# Mon, 09 Feb 2026 19:58:05 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:50:23 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:50:23 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:50:24 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
+# Mon, 09 Feb 2026 19:58:06 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:50:24 GMT
+# Mon, 09 Feb 2026 19:58:06 GMT
 CMD ["odoo"]
 ```
 
@@ -1834,73 +1832,73 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7363844a9bc712673d51387979446fdce76368a200cbbab0c1d05ae9323dc2d`  
-		Last Modified: Tue, 20 Jan 2026 17:52:21 GMT  
-		Size: 254.6 MB (254560463 bytes)  
+	-	`sha256:8bb3eb599c6f15838ba29d7f6e71276428cfd1b82ab490751569bf845437dd08`  
+		Last Modified: Mon, 09 Feb 2026 20:00:01 GMT  
+		Size: 257.0 MB (256965635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2636cfedf2cc50a6ba3fa7daa0edaa97f3c68d73d534b92d9137cf7e0b1ca30f`  
-		Last Modified: Tue, 20 Jan 2026 17:52:11 GMT  
-		Size: 14.4 MB (14356570 bytes)  
+	-	`sha256:76b7fe2a52458c7a932244e72f75b79ea2fb4fb612855415762f963e339647e9`  
+		Last Modified: Mon, 09 Feb 2026 19:59:53 GMT  
+		Size: 14.4 MB (14356805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c7e32146e066915a3cd972249a3d3679ac9951c0ab5e1e14df0aa2a1b33884c`  
-		Last Modified: Tue, 20 Jan 2026 17:52:09 GMT  
-		Size: 480.0 KB (480006 bytes)  
+	-	`sha256:a8a191b5dc5c35dc44caba690ab95d5e2e7b4c2363e4da481fbb1cf8ed1f224e`  
+		Last Modified: Mon, 09 Feb 2026 19:59:52 GMT  
+		Size: 480.0 KB (480009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd1077dc2224aa904b91214a8eb092a0d6247f9026ad2f7df6464519d41a61b`  
-		Last Modified: Tue, 20 Jan 2026 17:52:24 GMT  
-		Size: 382.5 MB (382469811 bytes)  
+	-	`sha256:37ba8b956f47c0af5c836d937772c2542b593db49b37643068809c1edcdff130`  
+		Last Modified: Mon, 09 Feb 2026 20:00:04 GMT  
+		Size: 383.2 MB (383212242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cb87d02673c980537bd2c1cc6742d8bb2c8731d1bb4a01a22e37417388f3056`  
-		Last Modified: Tue, 20 Jan 2026 17:52:11 GMT  
-		Size: 706.0 B  
+	-	`sha256:345daf9a4d3921d73ee80687be69e573c246cddf82714d9fb0e2b6332747fe53`  
+		Last Modified: Mon, 09 Feb 2026 19:59:53 GMT  
+		Size: 707.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8872d6b9f48ebb41841c693a4628a0af85850e4600f20dd431a60530af9e31d4`  
-		Last Modified: Tue, 20 Jan 2026 17:52:12 GMT  
-		Size: 557.0 B  
+	-	`sha256:45aeafb0f9dd3bfe7f27c84e782ae334549a93c2e0b1251913f332bebbe902e8`  
+		Last Modified: Mon, 09 Feb 2026 19:59:54 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6377734303d8c7cf0751e8a54a3dfd3998e85078935d354600b0a6b938873185`  
-		Last Modified: Tue, 20 Jan 2026 17:52:12 GMT  
-		Size: 600.0 B  
+	-	`sha256:f726aafa079b7233e2c25f3fc7097261979307441e71f511d0c4128b3499158f`  
+		Last Modified: Mon, 09 Feb 2026 19:59:55 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58b9d1364c0e7b7089dadd9921e3c95308e6581176a4c89790205d9cb1fb0dce`  
-		Last Modified: Tue, 20 Jan 2026 17:52:14 GMT  
+	-	`sha256:c8d4d05d36ca428368ac5895b44c4767c0c78a51340c7f32f18842d3c2a795ca`  
+		Last Modified: Mon, 09 Feb 2026 19:59:56 GMT  
 		Size: 583.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `odoo:18.0-20260119` - unknown; unknown
+### `odoo:18.0-20260209` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:ef56218008dba19c636ab4e82fcb242ff4dccf0e51b01dec944a5e964d7257a2
+$ docker pull odoo@sha256:5ea3bd2e68befb695d1b07c7b0c1e14411bdad65db7367dc7615e5b523be1931
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.5 MB (61535848 bytes)**  
+-	Total Size: **61.6 MB (61636642 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69e77a3c65ebf4bebcca6a33b0349bd4097168450116afc93bb1b2e4ee718463`
+-	Image ID: `sha256:24f3769d4b08de557b8472560a676389ee12e92561808b709bd98ac9bb20b42c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:34bb2887b84f8e243809158cf4e9aa25db9c14e2402f1bd5b3c39d011a8f7c08`  
-		Last Modified: Tue, 20 Jan 2026 17:52:13 GMT  
-		Size: 61.5 MB (61509049 bytes)  
+	-	`sha256:b060391de139fea765bd51a7680d332d561fff9d671ba52a03a5d9d4ad6f1ecf`  
+		Last Modified: Mon, 09 Feb 2026 19:59:56 GMT  
+		Size: 61.6 MB (61609843 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1f11503b5a84104cc758f0f55e85689eae2c94742ed5d422eafc2c7e22a81ec8`  
-		Last Modified: Tue, 20 Jan 2026 17:52:09 GMT  
+	-	`sha256:b8086b6bb3617cf3b1db65819d715be2a69b60d2ee42268f4ab2a4bc8ff69f83`  
+		Last Modified: Mon, 09 Feb 2026 19:59:52 GMT  
 		Size: 26.8 KB (26799 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `odoo:18.0-20260119` - linux; arm64 variant v8
+### `odoo:18.0-20260209` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:079e5c9cfc52338568a989787d13c09a1b9f6ae38fb4a1564650ba2feb64e69e
+$ docker pull odoo@sha256:32ef0e228acc5ae27234ad27cc5a843fc950292fb7872fef43caf93681679072
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **677.9 MB (677947851 bytes)**  
+-	Total Size: **680.9 MB (680908467 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d94afee94a68ebfe770653d251b9e3139efb6c2be5a713d5540a3d04b315eabc`
+-	Image ID: `sha256:9c8a2318db3332a21f3d573ed783ff72709e3bf72d934e0a836e90de9b77b223`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -1918,52 +1916,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:6089c6bede9eca8ec4f424e5798a0ae0712a6fe38c9b97f9afb9d24d9675024e in / 
 # Tue, 13 Jan 2026 05:40:17 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 ARG TARGETARCH=arm64
-# Tue, 20 Jan 2026 17:54:36 GMT
+# Mon, 09 Feb 2026 19:56:01 GMT
 # ARGS: TARGETARCH=arm64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:54:45 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 # ARGS: TARGETARCH=arm64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:54:46 GMT
+# Mon, 09 Feb 2026 19:56:12 GMT
 # ARGS: TARGETARCH=arm64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:54:46 GMT
+# Mon, 09 Feb 2026 19:56:12 GMT
 ENV ODOO_VERSION=18.0
-# Tue, 20 Jan 2026 17:54:46 GMT
-ARG ODOO_RELEASE=20260119
-# Tue, 20 Jan 2026 17:54:46 GMT
-ARG ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
-# Tue, 20 Jan 2026 17:55:44 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
+# Mon, 09 Feb 2026 19:56:12 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:56:12 GMT
+ARG ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
+# Mon, 09 Feb 2026 19:57:09 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
+# Mon, 09 Feb 2026 19:57:09 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=791ed4bab149a07c756b5188f69f600b40cefd46
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:55:44 GMT
+# Mon, 09 Feb 2026 19:57:09 GMT
 CMD ["odoo"]
 ```
 
@@ -1972,205 +1970,67 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:502ab2f5931c1623660fb8dc5db8ff82bb9884cc727525c9ac04f76d51001d57`  
-		Last Modified: Tue, 20 Jan 2026 17:58:07 GMT  
-		Size: 252.0 MB (251961272 bytes)  
+	-	`sha256:b0ec8fd0ceb3ed748781ccce161e63153534458f91aa49e7a56fc172912b2c60`  
+		Last Modified: Mon, 09 Feb 2026 19:59:35 GMT  
+		Size: 254.2 MB (254183436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58af47750d61fc39caa1c4d35bbc58c386bc34ca91782d75579236a4753a1f63`  
-		Last Modified: Tue, 20 Jan 2026 17:57:59 GMT  
-		Size: 14.3 MB (14334313 bytes)  
+	-	`sha256:c9068f4fec96aa4ac307e3cbd59f0a59cbe2608fc46cc6a3f07de16c5ce13d69`  
+		Last Modified: Mon, 09 Feb 2026 19:59:13 GMT  
+		Size: 14.3 MB (14334533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:903dab9fea90d8828b7be83e5b62f1f16f5744b9d1b0d762e0e097cb3f844086`  
-		Last Modified: Tue, 20 Jan 2026 17:57:58 GMT  
-		Size: 480.0 KB (480003 bytes)  
+	-	`sha256:8d0ca558957cf6e23cc505a96ec3af01b980393fa3b8529a8ee72b3fe06a37ea`  
+		Last Modified: Mon, 09 Feb 2026 19:59:12 GMT  
+		Size: 480.0 KB (480027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1efbebb20f3a7dd01870e80e74a0932f24526ec58124a5ef980126f15440f019`  
-		Last Modified: Tue, 20 Jan 2026 17:58:09 GMT  
-		Size: 382.3 MB (382306002 bytes)  
+	-	`sha256:7fd446edf299d41cf55563a6bb13da0e34f94fc11e0bd7f1930d399482bcc13d`  
+		Last Modified: Mon, 09 Feb 2026 19:59:42 GMT  
+		Size: 383.0 MB (383044210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:667551ff79de8eda7221cede516782f210f76be7c31930074e44bf63a1190c21`  
-		Last Modified: Tue, 20 Jan 2026 17:57:59 GMT  
+	-	`sha256:7e98ae45d01f2522fc5fa1a2b1ea23a4e6859b8e6273aace01b4379ec4415e66`  
+		Last Modified: Mon, 09 Feb 2026 19:59:13 GMT  
 		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26b9389214953a48b5ee96ab920ed2208a9ebd64967934d0a0e1946ccf2917b1`  
-		Last Modified: Tue, 20 Jan 2026 17:58:00 GMT  
-		Size: 556.0 B  
+	-	`sha256:a3e6872f008300d327e6f61e9d746b97c240d672cd5d5182a330872c4454025f`  
+		Last Modified: Mon, 09 Feb 2026 19:59:15 GMT  
+		Size: 555.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48ecbeb1053a9b4fa1ff62b29cc89d992ebbd04d1e6f9d15fc595f83ec4d7e56`  
-		Last Modified: Tue, 20 Jan 2026 17:58:01 GMT  
+	-	`sha256:9e7afcc22e5650cae1b0b66ad38113f7b461f2138e033f259db0b926af75e522`  
+		Last Modified: Mon, 09 Feb 2026 19:59:15 GMT  
 		Size: 595.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:221c7876fb9b357663b740b143e681cf807c2e3157516cd08f2bff488d922958`  
-		Last Modified: Tue, 20 Jan 2026 17:58:02 GMT  
-		Size: 580.0 B  
+	-	`sha256:4438259077244979e9f740e1966a652040596526d12cb51b4fcd8a907dba9130`  
+		Last Modified: Mon, 09 Feb 2026 19:59:16 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `odoo:18.0-20260119` - unknown; unknown
+### `odoo:18.0-20260209` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:9dcb38d774a449e95adc4e57c4ae4a5719671ad26226d09b1c3aa80b1e7d993e
+$ docker pull odoo@sha256:ec5c534306f314d165cbf06f365507d116f9e013c3a4dc54ba6419b14582db82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.5 MB (61543275 bytes)**  
+-	Total Size: **61.6 MB (61644069 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dac4d1306fd5237891c9882ff7d90155fda787d2ec7530f00eca5c623ed5fb0`
+-	Image ID: `sha256:0d945a40f4f4880239f0534e873e171d6ce1972438f1df62fab2199de58f451f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:29247df502690c4cda4175004f4782feb32cbaef9ecfc2241444a2bcb530f47f`  
-		Last Modified: Tue, 20 Jan 2026 17:58:01 GMT  
-		Size: 61.5 MB (61516324 bytes)  
+	-	`sha256:3e939d667be6841c88a51729b4bf662db0886af292761daad6ff6c6defe821a1`  
+		Last Modified: Mon, 09 Feb 2026 19:59:16 GMT  
+		Size: 61.6 MB (61617118 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5d578c25730bcc92567f5ef3d916d3dcc5a468501d9700d16fdcf0e5eb32b4cb`  
-		Last Modified: Tue, 20 Jan 2026 17:57:58 GMT  
+	-	`sha256:6d38ef89e6a4213d196f4e36553ed88d8f2c4023690700f6a455806998fd6e9f`  
+		Last Modified: Mon, 09 Feb 2026 19:59:12 GMT  
 		Size: 27.0 KB (26951 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `odoo:18.0-20260119` - linux; ppc64le
-
-```console
-$ docker pull odoo@sha256:6c65a9488771d2393814178a6ce8c9d566df3a8b7b99e19bc2ce9f4f9b85688a
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **697.8 MB (697772779 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23e91b4206a914ec7bb5ce34d6289bed577c94f3501d3d18c759a27ba841c274`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["odoo"]`
--	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
-
-```dockerfile
-# Tue, 13 Jan 2026 05:39:44 GMT
-ARG RELEASE
-# Tue, 13 Jan 2026 05:39:44 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 13 Jan 2026 05:39:44 GMT
-LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 13 Jan 2026 05:39:44 GMT
-LABEL org.opencontainers.image.version=24.04
-# Tue, 13 Jan 2026 05:39:47 GMT
-ADD file:2f07f2a41a0f9535d0bb4dbf76ba28288335a19d601419d55d8004fa2b0faf12 in / 
-# Tue, 13 Jan 2026 05:39:48 GMT
-CMD ["/bin/bash"]
-# Thu, 15 Jan 2026 23:03:41 GMT
-MAINTAINER Odoo S.A. <info@odoo.com>
-# Thu, 15 Jan 2026 23:03:41 GMT
-SHELL [/bin/bash -xo pipefail -c]
-# Thu, 15 Jan 2026 23:03:41 GMT
-ENV LANG=en_US.UTF-8
-# Thu, 15 Jan 2026 23:03:41 GMT
-ARG TARGETARCH=ppc64le
-# Thu, 15 Jan 2026 23:03:41 GMT
-# ARGS: TARGETARCH=ppc64le
-RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Thu, 15 Jan 2026 23:03:56 GMT
-# ARGS: TARGETARCH=ppc64le
-RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 15 Jan 2026 23:03:58 GMT
-# ARGS: TARGETARCH=ppc64le
-RUN npm install -g rtlcss # buildkit
-# Thu, 15 Jan 2026 23:03:58 GMT
-ENV ODOO_VERSION=18.0
-# Thu, 15 Jan 2026 23:03:58 GMT
-ARG ODOO_RELEASE=20260119
-# Thu, 15 Jan 2026 23:03:58 GMT
-ARG ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
-# Tue, 20 Jan 2026 17:56:04 GMT
-# ARGS: TARGETARCH=ppc64le ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
-RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:56:07 GMT
-COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:56:08 GMT
-COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:56:09 GMT
-# ARGS: TARGETARCH=ppc64le ODOO_RELEASE=20260119 ODOO_SHA=798dfc952eed08e0d976364c26dc47a45535be70
-RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:56:09 GMT
-VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:56:09 GMT
-EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:56:09 GMT
-ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:56:11 GMT
-COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:56:11 GMT
-USER odoo
-# Tue, 20 Jan 2026 17:56:11 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:56:11 GMT
-CMD ["odoo"]
-```
-
--	Layers:
-	-	`sha256:0dea13cf1fe062734821309e5f773a18c9ad629d9e93e3eba340bea036bccd8a`  
-		Last Modified: Tue, 13 Jan 2026 06:35:59 GMT  
-		Size: 34.3 MB (34306159 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a90922f8e214809ab22624ef8a00b7369f6a658b7732c295be899ed3323d50f6`  
-		Last Modified: Thu, 15 Jan 2026 23:14:14 GMT  
-		Size: 265.1 MB (265085598 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9198399be59b7de3ad3af18163a31dde6f48c7e75b3981d7fc88e8ad3599c79`  
-		Last Modified: Thu, 15 Jan 2026 23:13:39 GMT  
-		Size: 14.9 MB (14885574 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c09b670fa7165a2e583eda3cbcaa02efa51bcb326123cb766a798ffff02ae8a8`  
-		Last Modified: Thu, 15 Jan 2026 23:13:38 GMT  
-		Size: 480.1 KB (480100 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:94e509c5c3b02efb80337015753b7d257c985e4f304db03c2943f1c45e512774`  
-		Last Modified: Tue, 20 Jan 2026 18:04:28 GMT  
-		Size: 383.0 MB (383012912 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b09e58a51b871e85dd6fdf0f7b31b3d40df6625754922822638fa31fd2c331c9`  
-		Last Modified: Tue, 20 Jan 2026 18:04:17 GMT  
-		Size: 704.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e35aeed090e81e665e0004cc8b08a79072b7c4fad395e7f8919d8651b3671187`  
-		Last Modified: Tue, 20 Jan 2026 18:04:17 GMT  
-		Size: 553.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77847d86d593de0147b4a1d18d28018aeecff6e8ccbd2a24844ba38a06fb708b`  
-		Last Modified: Tue, 20 Jan 2026 18:04:17 GMT  
-		Size: 597.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9839fceb73b302378716ab1ff923eb98668576ddd7c022bc33ca4ab61b2e27b2`  
-		Last Modified: Tue, 20 Jan 2026 18:04:19 GMT  
-		Size: 582.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `odoo:18.0-20260119` - unknown; unknown
-
-```console
-$ docker pull odoo@sha256:b5efadad7d1a76d57fc27ef9cbeaa6e7d003ad911ac8dcc654b2ed5f1a282f40
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.5 MB (61544287 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05ea98e1bb65829c5e2cdb5700f8f858f87af7eb23ab62c4a52ad4055172f7c8`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:78617c40eea03bdee11a9c75a6f51bb103766b5e4ea43e167206734f12ca0d07`  
-		Last Modified: Tue, 20 Jan 2026 18:04:21 GMT  
-		Size: 61.5 MB (61517432 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:349f75b1329f69dd70d7d6f4b9c4215a9301667a7e525455d201b9d26955ddda`  
-		Last Modified: Tue, 20 Jan 2026 18:04:17 GMT  
-		Size: 26.9 KB (26855 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `odoo:19`
 
 ```console
-$ docker pull odoo@sha256:6116ea0d16e143c780d065316bba04e8f68d93d8418eaf1672f417b368b0a5fe
+$ docker pull odoo@sha256:45913840242e936f477357cbfc2e6ef5f952cf65f3660e353674b59d7f2c76d7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2185,13 +2045,13 @@ $ docker pull odoo@sha256:6116ea0d16e143c780d065316bba04e8f68d93d8418eaf1672f417
 ### `odoo:19` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:9f84fca1a2a5669177e38e90a53200401adfe4f26b14b6834cee0a7879c2db4c
+$ docker pull odoo@sha256:f7d987696b508501fdc3d381a0ccf0c52444a2e6e556474d2c17eab73789630a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **696.2 MB (696151267 bytes)**  
+-	Total Size: **700.3 MB (700293836 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:375997b4a9ea1b4a5a073a19fc914ac63a0a1a1a3676c67ef3db8bd93cf1e0f2`
+-	Image ID: `sha256:3393af1bc362d71d1d7680ccfaf9d6c289a411cbe788e55f6ef13464eaf5b634`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -2209,52 +2069,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:3077ee44db3cc7d38740d60a05c81418dd3825a007db473658464f52689e867b in / 
 # Tue, 13 Jan 2026 05:37:27 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 ARG TARGETARCH=amd64
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 # ARGS: TARGETARCH=amd64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:48:27 GMT
+# Mon, 09 Feb 2026 19:57:04 GMT
 # ARGS: TARGETARCH=amd64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:48:28 GMT
+# Mon, 09 Feb 2026 19:57:05 GMT
 # ARGS: TARGETARCH=amd64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:48:28 GMT
+# Mon, 09 Feb 2026 19:57:05 GMT
 ENV ODOO_VERSION=19.0
-# Tue, 20 Jan 2026 17:48:28 GMT
-ARG ODOO_RELEASE=20260118
-# Tue, 20 Jan 2026 17:48:28 GMT
-ARG ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
-# Tue, 20 Jan 2026 17:49:28 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:57:05 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:57:05 GMT
+ARG ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
+# Mon, 09 Feb 2026 19:58:08 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:49:28 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:49:28 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:49:29 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:58:09 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 CMD ["odoo"]
 ```
 
@@ -2263,73 +2123,73 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af2e32c44d64b22b09f9b27047dd9d078509daa81ea8cc7c59831f2ff6befd57`  
-		Last Modified: Tue, 20 Jan 2026 17:51:42 GMT  
-		Size: 254.6 MB (254560297 bytes)  
+	-	`sha256:6ec7d2f393023c8d47fc7fc8dfbb08513f89551d289f7b4a785d69cdd7a12562`  
+		Last Modified: Mon, 09 Feb 2026 20:00:28 GMT  
+		Size: 257.0 MB (256965528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e21283126d6c3bbdb627e3db9f3fd50783640a49de04ba2796b7889fcdd4fcb`  
-		Last Modified: Tue, 20 Jan 2026 17:51:34 GMT  
-		Size: 14.4 MB (14356589 bytes)  
+	-	`sha256:2836245bd2f95f29af22c2e06ab84fe3458b4403fec2e9720657e3c411b02aa7`  
+		Last Modified: Mon, 09 Feb 2026 20:00:19 GMT  
+		Size: 14.4 MB (14356868 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fa583dfe843366b6ca2700914026e1a6867c21ea46ecc8444ca75c0d8cb423a`  
-		Last Modified: Tue, 20 Jan 2026 17:51:33 GMT  
-		Size: 480.0 KB (479991 bytes)  
+	-	`sha256:22260229f8546eeed152c530b0cc61b5addd22637914fe5e75872d329adb6b11`  
+		Last Modified: Mon, 09 Feb 2026 20:00:20 GMT  
+		Size: 480.0 KB (480018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b3ebfd50b36d69135a863f2796eb6d703981b97f26b2a570274dbd0a024e88`  
-		Last Modified: Tue, 20 Jan 2026 17:51:45 GMT  
-		Size: 397.0 MB (397025938 bytes)  
+	-	`sha256:92e37bcfab968f994d1585aa3324712c5b7d8afcd705ac75f5106a7bb8d2f6b9`  
+		Last Modified: Mon, 09 Feb 2026 20:00:31 GMT  
+		Size: 398.8 MB (398762970 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10f24605144f794459756dd6e6a45533cba89c4216ca6f4f919f139939951eac`  
-		Last Modified: Tue, 20 Jan 2026 17:51:35 GMT  
+	-	`sha256:345daf9a4d3921d73ee80687be69e573c246cddf82714d9fb0e2b6332747fe53`  
+		Last Modified: Mon, 09 Feb 2026 19:59:53 GMT  
 		Size: 707.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2546c91a4bd0c90145324305aff6536e6ca5a74fb0cd1a1f706b904272daebe`  
-		Last Modified: Tue, 20 Jan 2026 17:51:36 GMT  
-		Size: 556.0 B  
+	-	`sha256:917ba9419a22df211490f683e76f115fdccdbcf84fb5832c31154192533090a4`  
+		Last Modified: Mon, 09 Feb 2026 20:00:25 GMT  
+		Size: 557.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae10fefbbe87fc9f138f54688ea28d77514fb10f581e284976d80c21db02b54`  
-		Last Modified: Tue, 20 Jan 2026 17:51:36 GMT  
-		Size: 595.0 B  
+	-	`sha256:4a88d0100f22822999d96b572e093222869f3f6a30e5ab43b55aecd6b0789a75`  
+		Last Modified: Mon, 09 Feb 2026 20:00:23 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2fa435c5f17762fe361d40de34745d9aa8e31cb4d4e5cb7ecf9c3949be897c1d`  
-		Last Modified: Tue, 20 Jan 2026 17:51:37 GMT  
-		Size: 583.0 B  
+	-	`sha256:8926765bd0fe3659e76bb30bef41068700ae06e0b62e2e911bdfdb44145c0405`  
+		Last Modified: Mon, 09 Feb 2026 20:00:25 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:19` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:ab577b18cce05ed8d8cf55df209a1aab88871fd8e8e8a838cd7cae184115f3c5
+$ docker pull odoo@sha256:fffa1db1bb40e8e29aaba9d5779b56a31d420011bf857a498d015768faade245
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69262293 bytes)**  
+-	Total Size: **69.6 MB (69645340 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6eed4058ffe6e3d2d0bb402d76545097fc61b9da69a197cad7e854bef8ff6e09`
+-	Image ID: `sha256:987c6e9ddebf1097835adce06f6d8d20006e88a9584e01897373066fe81fc557`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03de055bb367e59e8e1210ccf50bbb3b35d8309cdca25458ab538a33eabc23f1`  
-		Last Modified: Tue, 20 Jan 2026 17:51:37 GMT  
-		Size: 69.2 MB (69235200 bytes)  
+	-	`sha256:05979d955e2dfac59d07ecb8ae00a300160c0dfe0ac77c4608658fad7cec371e`  
+		Last Modified: Mon, 09 Feb 2026 20:00:23 GMT  
+		Size: 69.6 MB (69618247 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0a778bc765d0a3169bbc8c628f33dd0ffdab45add71fcfe8bc3b95aaaf504e75`  
-		Last Modified: Tue, 20 Jan 2026 17:51:33 GMT  
+	-	`sha256:5939f6c0882d38cce3539cedca5930a96a06a64813e2f33e0bef88ae77367e44`  
+		Last Modified: Mon, 09 Feb 2026 20:00:19 GMT  
 		Size: 27.1 KB (27093 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:19` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:e035eb915c3a6e68734810d287d8ac28d9ceab8116389ce99e2b25b97a637120
+$ docker pull odoo@sha256:b339dae8d638cd34570947c8e1aab5202dc86008766631b4acf4c2ea2f5bcd8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **692.5 MB (692520977 bytes)**  
+-	Total Size: **696.5 MB (696459479 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c27d1e3e4b23fc8a5da3581690f44a07df0f5d24c9ea706e4dbd692f7bfc8a37`
+-	Image ID: `sha256:dad49ed2e141f820bb565f0f38a1584b3672f732f990067a131476300dff526f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -2347,52 +2207,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:6089c6bede9eca8ec4f424e5798a0ae0712a6fe38c9b97f9afb9d24d9675024e in / 
 # Tue, 13 Jan 2026 05:40:17 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 ARG TARGETARCH=arm64
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 # ARGS: TARGETARCH=arm64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:53:47 GMT
+# Mon, 09 Feb 2026 19:56:09 GMT
 # ARGS: TARGETARCH=arm64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:53:48 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 # ARGS: TARGETARCH=arm64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:53:48 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 ENV ODOO_VERSION=19.0
-# Tue, 20 Jan 2026 17:53:48 GMT
-ARG ODOO_RELEASE=20260118
-# Tue, 20 Jan 2026 17:53:48 GMT
-ARG ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
-# Tue, 20 Jan 2026 17:54:54 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:56:10 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:56:10 GMT
+ARG ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
+# Mon, 09 Feb 2026 19:57:14 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:14 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:57:15 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 CMD ["odoo"]
 ```
 
@@ -2401,61 +2261,61 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25d3f7efb0b6437e6dad992249a9e9f212f4c429f91c18e1dd089be44e839eca`  
-		Last Modified: Tue, 20 Jan 2026 17:57:50 GMT  
-		Size: 252.0 MB (251960576 bytes)  
+	-	`sha256:33f5d6664d6a5c9795c9d514cf35fc214711e2152f8ba79a763890c5708fc95e`  
+		Last Modified: Mon, 09 Feb 2026 20:00:08 GMT  
+		Size: 254.2 MB (254183363 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25358a67828d3d7ef6213e1eaeb9ad2660e4adaa4d1045483b465f96f6241b4c`  
-		Last Modified: Tue, 20 Jan 2026 17:57:42 GMT  
-		Size: 14.3 MB (14334234 bytes)  
+	-	`sha256:73e7ce57e304c1337a29b440be387ac917c5af7767a356c2fff7067ffcac9ec7`  
+		Last Modified: Mon, 09 Feb 2026 19:59:59 GMT  
+		Size: 14.3 MB (14334632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:baa0707f65e802f83913204602cbb05dc9fcc134626f7dc580d58a445b250fa9`  
-		Last Modified: Tue, 20 Jan 2026 17:57:41 GMT  
-		Size: 480.0 KB (480004 bytes)  
+	-	`sha256:2cfbfb903b36e2dfa1a14a11d1ff9fa952f3c3cfb54484fe0319ad78bb46344c`  
+		Last Modified: Mon, 09 Feb 2026 19:59:58 GMT  
+		Size: 480.1 KB (480082 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf3919195b79dea6685eec4fb80e6282fd7f0c9ef1483d8d949a2dab30496fb9`  
-		Last Modified: Tue, 20 Jan 2026 17:57:53 GMT  
-		Size: 396.9 MB (396879902 bytes)  
+	-	`sha256:b588d32cfe5a2cf2979215040091176629fbc4c0f94bae1313e299cb1901cab7`  
+		Last Modified: Mon, 09 Feb 2026 20:00:17 GMT  
+		Size: 398.6 MB (398595138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91f41f0f5bdbc86cb88249d87017d8984b91c56043b40d472af5ae0a894127be`  
-		Last Modified: Tue, 20 Jan 2026 17:57:42 GMT  
+	-	`sha256:7e98ae45d01f2522fc5fa1a2b1ea23a4e6859b8e6273aace01b4379ec4415e66`  
+		Last Modified: Mon, 09 Feb 2026 19:59:13 GMT  
 		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:652adaa52722dd1cbcb106e97d293ede808015890010e4de5cec1de7b983f524`  
-		Last Modified: Tue, 20 Jan 2026 17:57:44 GMT  
-		Size: 555.0 B  
+	-	`sha256:f185c9023ed275cb5c9c0e9abda5b77359a4d51f76b72612646d298361a57731`  
+		Last Modified: Mon, 09 Feb 2026 19:59:59 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76a70e3e541f9b9f69ac58af6c7f14bc609065396f4d4b94dbca35e70c1118c1`  
-		Last Modified: Tue, 20 Jan 2026 17:57:44 GMT  
+	-	`sha256:8f6434875651c3bbf667e88e105eb388c2188f0c53f32b08f94dc581351744d3`  
+		Last Modified: Mon, 09 Feb 2026 20:00:00 GMT  
 		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00a9d8e8a22ca44f40837c40ee3fd9ef6c602f5d8580019f150efb926895b4a5`  
-		Last Modified: Tue, 20 Jan 2026 17:57:45 GMT  
-		Size: 580.0 B  
+	-	`sha256:3d2a48cfc7b5eff2436b4800acb5929fc36a508ad65fdb519041c8b1c40925d8`  
+		Last Modified: Mon, 09 Feb 2026 20:00:01 GMT  
+		Size: 582.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:19` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:88c7505587a949ee392a0b1d9d547e0545403385261a6f847d1c77ba46c9b154
+$ docker pull odoo@sha256:151964dd22130ac1f674898d1aec91ce471dd4c86fe531962f2d5a1d0fb4c31d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69269743 bytes)**  
+-	Total Size: **69.7 MB (69652791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22e16f0d2ac1ab59b61d795b2d232c0803dd6f657541b92c1b82abab1ea65d20`
+-	Image ID: `sha256:9a087f300e7dbf259adba1d18102b1f776f261dcca172b1afd53cbbb46d26629`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aa63d456dfdc200fbfc53f2b4b3fa6d0c037a64a00a799d9b3e0b48efeec2938`  
-		Last Modified: Tue, 20 Jan 2026 17:57:45 GMT  
-		Size: 69.2 MB (69242487 bytes)  
+	-	`sha256:ad9e422fcb0894199e21880589b22e93031eb9409cb161a74e5992b288220509`  
+		Last Modified: Mon, 09 Feb 2026 20:00:02 GMT  
+		Size: 69.6 MB (69625534 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a8ae7028b78d75057cae67cb5e00d79d3d23023bde2352f3377118078720d14`  
-		Last Modified: Tue, 20 Jan 2026 17:57:41 GMT  
-		Size: 27.3 KB (27256 bytes)  
+	-	`sha256:dac00cc5dcd5b61e0fb23cb18bd515973d75ab6b1ee26ac429e1c927596f18df`  
+		Last Modified: Mon, 09 Feb 2026 19:59:58 GMT  
+		Size: 27.3 KB (27257 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:19` - linux; ppc64le
@@ -2599,7 +2459,7 @@ $ docker pull odoo@sha256:d638e1a531945adf4046a18205acf241355cd86f5f379b57922e75
 ## `odoo:19.0`
 
 ```console
-$ docker pull odoo@sha256:6116ea0d16e143c780d065316bba04e8f68d93d8418eaf1672f417b368b0a5fe
+$ docker pull odoo@sha256:45913840242e936f477357cbfc2e6ef5f952cf65f3660e353674b59d7f2c76d7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2614,13 +2474,13 @@ $ docker pull odoo@sha256:6116ea0d16e143c780d065316bba04e8f68d93d8418eaf1672f417
 ### `odoo:19.0` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:9f84fca1a2a5669177e38e90a53200401adfe4f26b14b6834cee0a7879c2db4c
+$ docker pull odoo@sha256:f7d987696b508501fdc3d381a0ccf0c52444a2e6e556474d2c17eab73789630a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **696.2 MB (696151267 bytes)**  
+-	Total Size: **700.3 MB (700293836 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:375997b4a9ea1b4a5a073a19fc914ac63a0a1a1a3676c67ef3db8bd93cf1e0f2`
+-	Image ID: `sha256:3393af1bc362d71d1d7680ccfaf9d6c289a411cbe788e55f6ef13464eaf5b634`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -2638,52 +2498,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:3077ee44db3cc7d38740d60a05c81418dd3825a007db473658464f52689e867b in / 
 # Tue, 13 Jan 2026 05:37:27 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 ARG TARGETARCH=amd64
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 # ARGS: TARGETARCH=amd64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:48:27 GMT
+# Mon, 09 Feb 2026 19:57:04 GMT
 # ARGS: TARGETARCH=amd64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:48:28 GMT
+# Mon, 09 Feb 2026 19:57:05 GMT
 # ARGS: TARGETARCH=amd64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:48:28 GMT
+# Mon, 09 Feb 2026 19:57:05 GMT
 ENV ODOO_VERSION=19.0
-# Tue, 20 Jan 2026 17:48:28 GMT
-ARG ODOO_RELEASE=20260118
-# Tue, 20 Jan 2026 17:48:28 GMT
-ARG ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
-# Tue, 20 Jan 2026 17:49:28 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:57:05 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:57:05 GMT
+ARG ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
+# Mon, 09 Feb 2026 19:58:08 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:49:28 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:49:28 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:49:29 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:58:09 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 CMD ["odoo"]
 ```
 
@@ -2692,73 +2552,73 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af2e32c44d64b22b09f9b27047dd9d078509daa81ea8cc7c59831f2ff6befd57`  
-		Last Modified: Tue, 20 Jan 2026 17:51:42 GMT  
-		Size: 254.6 MB (254560297 bytes)  
+	-	`sha256:6ec7d2f393023c8d47fc7fc8dfbb08513f89551d289f7b4a785d69cdd7a12562`  
+		Last Modified: Mon, 09 Feb 2026 20:00:28 GMT  
+		Size: 257.0 MB (256965528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e21283126d6c3bbdb627e3db9f3fd50783640a49de04ba2796b7889fcdd4fcb`  
-		Last Modified: Tue, 20 Jan 2026 17:51:34 GMT  
-		Size: 14.4 MB (14356589 bytes)  
+	-	`sha256:2836245bd2f95f29af22c2e06ab84fe3458b4403fec2e9720657e3c411b02aa7`  
+		Last Modified: Mon, 09 Feb 2026 20:00:19 GMT  
+		Size: 14.4 MB (14356868 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fa583dfe843366b6ca2700914026e1a6867c21ea46ecc8444ca75c0d8cb423a`  
-		Last Modified: Tue, 20 Jan 2026 17:51:33 GMT  
-		Size: 480.0 KB (479991 bytes)  
+	-	`sha256:22260229f8546eeed152c530b0cc61b5addd22637914fe5e75872d329adb6b11`  
+		Last Modified: Mon, 09 Feb 2026 20:00:20 GMT  
+		Size: 480.0 KB (480018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b3ebfd50b36d69135a863f2796eb6d703981b97f26b2a570274dbd0a024e88`  
-		Last Modified: Tue, 20 Jan 2026 17:51:45 GMT  
-		Size: 397.0 MB (397025938 bytes)  
+	-	`sha256:92e37bcfab968f994d1585aa3324712c5b7d8afcd705ac75f5106a7bb8d2f6b9`  
+		Last Modified: Mon, 09 Feb 2026 20:00:31 GMT  
+		Size: 398.8 MB (398762970 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10f24605144f794459756dd6e6a45533cba89c4216ca6f4f919f139939951eac`  
-		Last Modified: Tue, 20 Jan 2026 17:51:35 GMT  
+	-	`sha256:345daf9a4d3921d73ee80687be69e573c246cddf82714d9fb0e2b6332747fe53`  
+		Last Modified: Mon, 09 Feb 2026 19:59:53 GMT  
 		Size: 707.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2546c91a4bd0c90145324305aff6536e6ca5a74fb0cd1a1f706b904272daebe`  
-		Last Modified: Tue, 20 Jan 2026 17:51:36 GMT  
-		Size: 556.0 B  
+	-	`sha256:917ba9419a22df211490f683e76f115fdccdbcf84fb5832c31154192533090a4`  
+		Last Modified: Mon, 09 Feb 2026 20:00:25 GMT  
+		Size: 557.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae10fefbbe87fc9f138f54688ea28d77514fb10f581e284976d80c21db02b54`  
-		Last Modified: Tue, 20 Jan 2026 17:51:36 GMT  
-		Size: 595.0 B  
+	-	`sha256:4a88d0100f22822999d96b572e093222869f3f6a30e5ab43b55aecd6b0789a75`  
+		Last Modified: Mon, 09 Feb 2026 20:00:23 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2fa435c5f17762fe361d40de34745d9aa8e31cb4d4e5cb7ecf9c3949be897c1d`  
-		Last Modified: Tue, 20 Jan 2026 17:51:37 GMT  
-		Size: 583.0 B  
+	-	`sha256:8926765bd0fe3659e76bb30bef41068700ae06e0b62e2e911bdfdb44145c0405`  
+		Last Modified: Mon, 09 Feb 2026 20:00:25 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:19.0` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:ab577b18cce05ed8d8cf55df209a1aab88871fd8e8e8a838cd7cae184115f3c5
+$ docker pull odoo@sha256:fffa1db1bb40e8e29aaba9d5779b56a31d420011bf857a498d015768faade245
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69262293 bytes)**  
+-	Total Size: **69.6 MB (69645340 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6eed4058ffe6e3d2d0bb402d76545097fc61b9da69a197cad7e854bef8ff6e09`
+-	Image ID: `sha256:987c6e9ddebf1097835adce06f6d8d20006e88a9584e01897373066fe81fc557`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03de055bb367e59e8e1210ccf50bbb3b35d8309cdca25458ab538a33eabc23f1`  
-		Last Modified: Tue, 20 Jan 2026 17:51:37 GMT  
-		Size: 69.2 MB (69235200 bytes)  
+	-	`sha256:05979d955e2dfac59d07ecb8ae00a300160c0dfe0ac77c4608658fad7cec371e`  
+		Last Modified: Mon, 09 Feb 2026 20:00:23 GMT  
+		Size: 69.6 MB (69618247 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0a778bc765d0a3169bbc8c628f33dd0ffdab45add71fcfe8bc3b95aaaf504e75`  
-		Last Modified: Tue, 20 Jan 2026 17:51:33 GMT  
+	-	`sha256:5939f6c0882d38cce3539cedca5930a96a06a64813e2f33e0bef88ae77367e44`  
+		Last Modified: Mon, 09 Feb 2026 20:00:19 GMT  
 		Size: 27.1 KB (27093 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:19.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:e035eb915c3a6e68734810d287d8ac28d9ceab8116389ce99e2b25b97a637120
+$ docker pull odoo@sha256:b339dae8d638cd34570947c8e1aab5202dc86008766631b4acf4c2ea2f5bcd8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **692.5 MB (692520977 bytes)**  
+-	Total Size: **696.5 MB (696459479 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c27d1e3e4b23fc8a5da3581690f44a07df0f5d24c9ea706e4dbd692f7bfc8a37`
+-	Image ID: `sha256:dad49ed2e141f820bb565f0f38a1584b3672f732f990067a131476300dff526f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -2776,52 +2636,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:6089c6bede9eca8ec4f424e5798a0ae0712a6fe38c9b97f9afb9d24d9675024e in / 
 # Tue, 13 Jan 2026 05:40:17 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 ARG TARGETARCH=arm64
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 # ARGS: TARGETARCH=arm64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:53:47 GMT
+# Mon, 09 Feb 2026 19:56:09 GMT
 # ARGS: TARGETARCH=arm64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:53:48 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 # ARGS: TARGETARCH=arm64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:53:48 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 ENV ODOO_VERSION=19.0
-# Tue, 20 Jan 2026 17:53:48 GMT
-ARG ODOO_RELEASE=20260118
-# Tue, 20 Jan 2026 17:53:48 GMT
-ARG ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
-# Tue, 20 Jan 2026 17:54:54 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:56:10 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:56:10 GMT
+ARG ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
+# Mon, 09 Feb 2026 19:57:14 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:14 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:57:15 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 CMD ["odoo"]
 ```
 
@@ -2830,61 +2690,61 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25d3f7efb0b6437e6dad992249a9e9f212f4c429f91c18e1dd089be44e839eca`  
-		Last Modified: Tue, 20 Jan 2026 17:57:50 GMT  
-		Size: 252.0 MB (251960576 bytes)  
+	-	`sha256:33f5d6664d6a5c9795c9d514cf35fc214711e2152f8ba79a763890c5708fc95e`  
+		Last Modified: Mon, 09 Feb 2026 20:00:08 GMT  
+		Size: 254.2 MB (254183363 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25358a67828d3d7ef6213e1eaeb9ad2660e4adaa4d1045483b465f96f6241b4c`  
-		Last Modified: Tue, 20 Jan 2026 17:57:42 GMT  
-		Size: 14.3 MB (14334234 bytes)  
+	-	`sha256:73e7ce57e304c1337a29b440be387ac917c5af7767a356c2fff7067ffcac9ec7`  
+		Last Modified: Mon, 09 Feb 2026 19:59:59 GMT  
+		Size: 14.3 MB (14334632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:baa0707f65e802f83913204602cbb05dc9fcc134626f7dc580d58a445b250fa9`  
-		Last Modified: Tue, 20 Jan 2026 17:57:41 GMT  
-		Size: 480.0 KB (480004 bytes)  
+	-	`sha256:2cfbfb903b36e2dfa1a14a11d1ff9fa952f3c3cfb54484fe0319ad78bb46344c`  
+		Last Modified: Mon, 09 Feb 2026 19:59:58 GMT  
+		Size: 480.1 KB (480082 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf3919195b79dea6685eec4fb80e6282fd7f0c9ef1483d8d949a2dab30496fb9`  
-		Last Modified: Tue, 20 Jan 2026 17:57:53 GMT  
-		Size: 396.9 MB (396879902 bytes)  
+	-	`sha256:b588d32cfe5a2cf2979215040091176629fbc4c0f94bae1313e299cb1901cab7`  
+		Last Modified: Mon, 09 Feb 2026 20:00:17 GMT  
+		Size: 398.6 MB (398595138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91f41f0f5bdbc86cb88249d87017d8984b91c56043b40d472af5ae0a894127be`  
-		Last Modified: Tue, 20 Jan 2026 17:57:42 GMT  
+	-	`sha256:7e98ae45d01f2522fc5fa1a2b1ea23a4e6859b8e6273aace01b4379ec4415e66`  
+		Last Modified: Mon, 09 Feb 2026 19:59:13 GMT  
 		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:652adaa52722dd1cbcb106e97d293ede808015890010e4de5cec1de7b983f524`  
-		Last Modified: Tue, 20 Jan 2026 17:57:44 GMT  
-		Size: 555.0 B  
+	-	`sha256:f185c9023ed275cb5c9c0e9abda5b77359a4d51f76b72612646d298361a57731`  
+		Last Modified: Mon, 09 Feb 2026 19:59:59 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76a70e3e541f9b9f69ac58af6c7f14bc609065396f4d4b94dbca35e70c1118c1`  
-		Last Modified: Tue, 20 Jan 2026 17:57:44 GMT  
+	-	`sha256:8f6434875651c3bbf667e88e105eb388c2188f0c53f32b08f94dc581351744d3`  
+		Last Modified: Mon, 09 Feb 2026 20:00:00 GMT  
 		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00a9d8e8a22ca44f40837c40ee3fd9ef6c602f5d8580019f150efb926895b4a5`  
-		Last Modified: Tue, 20 Jan 2026 17:57:45 GMT  
-		Size: 580.0 B  
+	-	`sha256:3d2a48cfc7b5eff2436b4800acb5929fc36a508ad65fdb519041c8b1c40925d8`  
+		Last Modified: Mon, 09 Feb 2026 20:00:01 GMT  
+		Size: 582.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:19.0` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:88c7505587a949ee392a0b1d9d547e0545403385261a6f847d1c77ba46c9b154
+$ docker pull odoo@sha256:151964dd22130ac1f674898d1aec91ce471dd4c86fe531962f2d5a1d0fb4c31d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69269743 bytes)**  
+-	Total Size: **69.7 MB (69652791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22e16f0d2ac1ab59b61d795b2d232c0803dd6f657541b92c1b82abab1ea65d20`
+-	Image ID: `sha256:9a087f300e7dbf259adba1d18102b1f776f261dcca172b1afd53cbbb46d26629`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aa63d456dfdc200fbfc53f2b4b3fa6d0c037a64a00a799d9b3e0b48efeec2938`  
-		Last Modified: Tue, 20 Jan 2026 17:57:45 GMT  
-		Size: 69.2 MB (69242487 bytes)  
+	-	`sha256:ad9e422fcb0894199e21880589b22e93031eb9409cb161a74e5992b288220509`  
+		Last Modified: Mon, 09 Feb 2026 20:00:02 GMT  
+		Size: 69.6 MB (69625534 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a8ae7028b78d75057cae67cb5e00d79d3d23023bde2352f3377118078720d14`  
-		Last Modified: Tue, 20 Jan 2026 17:57:41 GMT  
-		Size: 27.3 KB (27256 bytes)  
+	-	`sha256:dac00cc5dcd5b61e0fb23cb18bd515973d75ab6b1ee26ac429e1c927596f18df`  
+		Last Modified: Mon, 09 Feb 2026 19:59:58 GMT  
+		Size: 27.3 KB (27257 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:19.0` - linux; ppc64le
@@ -3025,31 +2885,29 @@ $ docker pull odoo@sha256:d638e1a531945adf4046a18205acf241355cd86f5f379b57922e75
 		Size: 27.2 KB (27155 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `odoo:19.0-20260119`
+## `odoo:19.0-20260209`
 
 ```console
-$ docker pull odoo@sha256:6116ea0d16e143c780d065316bba04e8f68d93d8418eaf1672f417b368b0a5fe
+$ docker pull odoo@sha256:d2e20646f313124c5157b8bede649528f1c363554ffed546a5c6dd47a776989f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 6
+-	Platforms: 4
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm64 variant v8
 	-	unknown; unknown
-	-	linux; ppc64le
-	-	unknown; unknown
 
-### `odoo:19.0-20260119` - linux; amd64
+### `odoo:19.0-20260209` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:9f84fca1a2a5669177e38e90a53200401adfe4f26b14b6834cee0a7879c2db4c
+$ docker pull odoo@sha256:f7d987696b508501fdc3d381a0ccf0c52444a2e6e556474d2c17eab73789630a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **696.2 MB (696151267 bytes)**  
+-	Total Size: **700.3 MB (700293836 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:375997b4a9ea1b4a5a073a19fc914ac63a0a1a1a3676c67ef3db8bd93cf1e0f2`
+-	Image ID: `sha256:3393af1bc362d71d1d7680ccfaf9d6c289a411cbe788e55f6ef13464eaf5b634`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -3067,52 +2925,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:3077ee44db3cc7d38740d60a05c81418dd3825a007db473658464f52689e867b in / 
 # Tue, 13 Jan 2026 05:37:27 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 ARG TARGETARCH=amd64
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 # ARGS: TARGETARCH=amd64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:48:27 GMT
+# Mon, 09 Feb 2026 19:57:04 GMT
 # ARGS: TARGETARCH=amd64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:48:28 GMT
+# Mon, 09 Feb 2026 19:57:05 GMT
 # ARGS: TARGETARCH=amd64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:48:28 GMT
+# Mon, 09 Feb 2026 19:57:05 GMT
 ENV ODOO_VERSION=19.0
-# Tue, 20 Jan 2026 17:48:28 GMT
-ARG ODOO_RELEASE=20260118
-# Tue, 20 Jan 2026 17:48:28 GMT
-ARG ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
-# Tue, 20 Jan 2026 17:49:28 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:57:05 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:57:05 GMT
+ARG ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
+# Mon, 09 Feb 2026 19:58:08 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:49:28 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:49:28 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:49:29 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:58:09 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 CMD ["odoo"]
 ```
 
@@ -3121,73 +2979,73 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af2e32c44d64b22b09f9b27047dd9d078509daa81ea8cc7c59831f2ff6befd57`  
-		Last Modified: Tue, 20 Jan 2026 17:51:42 GMT  
-		Size: 254.6 MB (254560297 bytes)  
+	-	`sha256:6ec7d2f393023c8d47fc7fc8dfbb08513f89551d289f7b4a785d69cdd7a12562`  
+		Last Modified: Mon, 09 Feb 2026 20:00:28 GMT  
+		Size: 257.0 MB (256965528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e21283126d6c3bbdb627e3db9f3fd50783640a49de04ba2796b7889fcdd4fcb`  
-		Last Modified: Tue, 20 Jan 2026 17:51:34 GMT  
-		Size: 14.4 MB (14356589 bytes)  
+	-	`sha256:2836245bd2f95f29af22c2e06ab84fe3458b4403fec2e9720657e3c411b02aa7`  
+		Last Modified: Mon, 09 Feb 2026 20:00:19 GMT  
+		Size: 14.4 MB (14356868 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fa583dfe843366b6ca2700914026e1a6867c21ea46ecc8444ca75c0d8cb423a`  
-		Last Modified: Tue, 20 Jan 2026 17:51:33 GMT  
-		Size: 480.0 KB (479991 bytes)  
+	-	`sha256:22260229f8546eeed152c530b0cc61b5addd22637914fe5e75872d329adb6b11`  
+		Last Modified: Mon, 09 Feb 2026 20:00:20 GMT  
+		Size: 480.0 KB (480018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b3ebfd50b36d69135a863f2796eb6d703981b97f26b2a570274dbd0a024e88`  
-		Last Modified: Tue, 20 Jan 2026 17:51:45 GMT  
-		Size: 397.0 MB (397025938 bytes)  
+	-	`sha256:92e37bcfab968f994d1585aa3324712c5b7d8afcd705ac75f5106a7bb8d2f6b9`  
+		Last Modified: Mon, 09 Feb 2026 20:00:31 GMT  
+		Size: 398.8 MB (398762970 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10f24605144f794459756dd6e6a45533cba89c4216ca6f4f919f139939951eac`  
-		Last Modified: Tue, 20 Jan 2026 17:51:35 GMT  
+	-	`sha256:345daf9a4d3921d73ee80687be69e573c246cddf82714d9fb0e2b6332747fe53`  
+		Last Modified: Mon, 09 Feb 2026 19:59:53 GMT  
 		Size: 707.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2546c91a4bd0c90145324305aff6536e6ca5a74fb0cd1a1f706b904272daebe`  
-		Last Modified: Tue, 20 Jan 2026 17:51:36 GMT  
-		Size: 556.0 B  
+	-	`sha256:917ba9419a22df211490f683e76f115fdccdbcf84fb5832c31154192533090a4`  
+		Last Modified: Mon, 09 Feb 2026 20:00:25 GMT  
+		Size: 557.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae10fefbbe87fc9f138f54688ea28d77514fb10f581e284976d80c21db02b54`  
-		Last Modified: Tue, 20 Jan 2026 17:51:36 GMT  
-		Size: 595.0 B  
+	-	`sha256:4a88d0100f22822999d96b572e093222869f3f6a30e5ab43b55aecd6b0789a75`  
+		Last Modified: Mon, 09 Feb 2026 20:00:23 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2fa435c5f17762fe361d40de34745d9aa8e31cb4d4e5cb7ecf9c3949be897c1d`  
-		Last Modified: Tue, 20 Jan 2026 17:51:37 GMT  
-		Size: 583.0 B  
+	-	`sha256:8926765bd0fe3659e76bb30bef41068700ae06e0b62e2e911bdfdb44145c0405`  
+		Last Modified: Mon, 09 Feb 2026 20:00:25 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `odoo:19.0-20260119` - unknown; unknown
+### `odoo:19.0-20260209` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:ab577b18cce05ed8d8cf55df209a1aab88871fd8e8e8a838cd7cae184115f3c5
+$ docker pull odoo@sha256:fffa1db1bb40e8e29aaba9d5779b56a31d420011bf857a498d015768faade245
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69262293 bytes)**  
+-	Total Size: **69.6 MB (69645340 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6eed4058ffe6e3d2d0bb402d76545097fc61b9da69a197cad7e854bef8ff6e09`
+-	Image ID: `sha256:987c6e9ddebf1097835adce06f6d8d20006e88a9584e01897373066fe81fc557`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03de055bb367e59e8e1210ccf50bbb3b35d8309cdca25458ab538a33eabc23f1`  
-		Last Modified: Tue, 20 Jan 2026 17:51:37 GMT  
-		Size: 69.2 MB (69235200 bytes)  
+	-	`sha256:05979d955e2dfac59d07ecb8ae00a300160c0dfe0ac77c4608658fad7cec371e`  
+		Last Modified: Mon, 09 Feb 2026 20:00:23 GMT  
+		Size: 69.6 MB (69618247 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0a778bc765d0a3169bbc8c628f33dd0ffdab45add71fcfe8bc3b95aaaf504e75`  
-		Last Modified: Tue, 20 Jan 2026 17:51:33 GMT  
+	-	`sha256:5939f6c0882d38cce3539cedca5930a96a06a64813e2f33e0bef88ae77367e44`  
+		Last Modified: Mon, 09 Feb 2026 20:00:19 GMT  
 		Size: 27.1 KB (27093 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `odoo:19.0-20260119` - linux; arm64 variant v8
+### `odoo:19.0-20260209` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:e035eb915c3a6e68734810d287d8ac28d9ceab8116389ce99e2b25b97a637120
+$ docker pull odoo@sha256:b339dae8d638cd34570947c8e1aab5202dc86008766631b4acf4c2ea2f5bcd8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **692.5 MB (692520977 bytes)**  
+-	Total Size: **696.5 MB (696459479 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c27d1e3e4b23fc8a5da3581690f44a07df0f5d24c9ea706e4dbd692f7bfc8a37`
+-	Image ID: `sha256:dad49ed2e141f820bb565f0f38a1584b3672f732f990067a131476300dff526f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -3205,52 +3063,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:6089c6bede9eca8ec4f424e5798a0ae0712a6fe38c9b97f9afb9d24d9675024e in / 
 # Tue, 13 Jan 2026 05:40:17 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 ARG TARGETARCH=arm64
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 # ARGS: TARGETARCH=arm64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:53:47 GMT
+# Mon, 09 Feb 2026 19:56:09 GMT
 # ARGS: TARGETARCH=arm64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:53:48 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 # ARGS: TARGETARCH=arm64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:53:48 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 ENV ODOO_VERSION=19.0
-# Tue, 20 Jan 2026 17:53:48 GMT
-ARG ODOO_RELEASE=20260118
-# Tue, 20 Jan 2026 17:53:48 GMT
-ARG ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
-# Tue, 20 Jan 2026 17:54:54 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:56:10 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:56:10 GMT
+ARG ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
+# Mon, 09 Feb 2026 19:57:14 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:14 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:57:15 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 CMD ["odoo"]
 ```
 
@@ -3259,205 +3117,67 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25d3f7efb0b6437e6dad992249a9e9f212f4c429f91c18e1dd089be44e839eca`  
-		Last Modified: Tue, 20 Jan 2026 17:57:50 GMT  
-		Size: 252.0 MB (251960576 bytes)  
+	-	`sha256:33f5d6664d6a5c9795c9d514cf35fc214711e2152f8ba79a763890c5708fc95e`  
+		Last Modified: Mon, 09 Feb 2026 20:00:08 GMT  
+		Size: 254.2 MB (254183363 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25358a67828d3d7ef6213e1eaeb9ad2660e4adaa4d1045483b465f96f6241b4c`  
-		Last Modified: Tue, 20 Jan 2026 17:57:42 GMT  
-		Size: 14.3 MB (14334234 bytes)  
+	-	`sha256:73e7ce57e304c1337a29b440be387ac917c5af7767a356c2fff7067ffcac9ec7`  
+		Last Modified: Mon, 09 Feb 2026 19:59:59 GMT  
+		Size: 14.3 MB (14334632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:baa0707f65e802f83913204602cbb05dc9fcc134626f7dc580d58a445b250fa9`  
-		Last Modified: Tue, 20 Jan 2026 17:57:41 GMT  
-		Size: 480.0 KB (480004 bytes)  
+	-	`sha256:2cfbfb903b36e2dfa1a14a11d1ff9fa952f3c3cfb54484fe0319ad78bb46344c`  
+		Last Modified: Mon, 09 Feb 2026 19:59:58 GMT  
+		Size: 480.1 KB (480082 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf3919195b79dea6685eec4fb80e6282fd7f0c9ef1483d8d949a2dab30496fb9`  
-		Last Modified: Tue, 20 Jan 2026 17:57:53 GMT  
-		Size: 396.9 MB (396879902 bytes)  
+	-	`sha256:b588d32cfe5a2cf2979215040091176629fbc4c0f94bae1313e299cb1901cab7`  
+		Last Modified: Mon, 09 Feb 2026 20:00:17 GMT  
+		Size: 398.6 MB (398595138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91f41f0f5bdbc86cb88249d87017d8984b91c56043b40d472af5ae0a894127be`  
-		Last Modified: Tue, 20 Jan 2026 17:57:42 GMT  
+	-	`sha256:7e98ae45d01f2522fc5fa1a2b1ea23a4e6859b8e6273aace01b4379ec4415e66`  
+		Last Modified: Mon, 09 Feb 2026 19:59:13 GMT  
 		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:652adaa52722dd1cbcb106e97d293ede808015890010e4de5cec1de7b983f524`  
-		Last Modified: Tue, 20 Jan 2026 17:57:44 GMT  
-		Size: 555.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76a70e3e541f9b9f69ac58af6c7f14bc609065396f4d4b94dbca35e70c1118c1`  
-		Last Modified: Tue, 20 Jan 2026 17:57:44 GMT  
-		Size: 596.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00a9d8e8a22ca44f40837c40ee3fd9ef6c602f5d8580019f150efb926895b4a5`  
-		Last Modified: Tue, 20 Jan 2026 17:57:45 GMT  
-		Size: 580.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `odoo:19.0-20260119` - unknown; unknown
-
-```console
-$ docker pull odoo@sha256:88c7505587a949ee392a0b1d9d547e0545403385261a6f847d1c77ba46c9b154
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69269743 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22e16f0d2ac1ab59b61d795b2d232c0803dd6f657541b92c1b82abab1ea65d20`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:aa63d456dfdc200fbfc53f2b4b3fa6d0c037a64a00a799d9b3e0b48efeec2938`  
-		Last Modified: Tue, 20 Jan 2026 17:57:45 GMT  
-		Size: 69.2 MB (69242487 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:9a8ae7028b78d75057cae67cb5e00d79d3d23023bde2352f3377118078720d14`  
-		Last Modified: Tue, 20 Jan 2026 17:57:41 GMT  
-		Size: 27.3 KB (27256 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `odoo:19.0-20260119` - linux; ppc64le
-
-```console
-$ docker pull odoo@sha256:9833984eb447737f2fcda5c0ad5553e08c302136773fa19a378dd96968ad6e63
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **712.3 MB (712333291 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a2838fcf1b6bc1ce44196fea1c9ee681af72f3a3b1578f1db8fdf4fce21957e`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["odoo"]`
--	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
-
-```dockerfile
-# Tue, 13 Jan 2026 05:39:44 GMT
-ARG RELEASE
-# Tue, 13 Jan 2026 05:39:44 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 13 Jan 2026 05:39:44 GMT
-LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 13 Jan 2026 05:39:44 GMT
-LABEL org.opencontainers.image.version=24.04
-# Tue, 13 Jan 2026 05:39:47 GMT
-ADD file:2f07f2a41a0f9535d0bb4dbf76ba28288335a19d601419d55d8004fa2b0faf12 in / 
-# Tue, 13 Jan 2026 05:39:48 GMT
-CMD ["/bin/bash"]
-# Thu, 15 Jan 2026 23:03:41 GMT
-MAINTAINER Odoo S.A. <info@odoo.com>
-# Thu, 15 Jan 2026 23:03:41 GMT
-SHELL [/bin/bash -xo pipefail -c]
-# Thu, 15 Jan 2026 23:03:41 GMT
-ENV LANG=en_US.UTF-8
-# Thu, 15 Jan 2026 23:03:41 GMT
-ARG TARGETARCH=ppc64le
-# Thu, 15 Jan 2026 23:03:41 GMT
-# ARGS: TARGETARCH=ppc64le
-RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Thu, 15 Jan 2026 23:03:56 GMT
-# ARGS: TARGETARCH=ppc64le
-RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 15 Jan 2026 23:03:58 GMT
-# ARGS: TARGETARCH=ppc64le
-RUN npm install -g rtlcss # buildkit
-# Thu, 15 Jan 2026 23:03:58 GMT
-ENV ODOO_VERSION=19.0
-# Thu, 15 Jan 2026 23:03:58 GMT
-ARG ODOO_RELEASE=20260118
-# Thu, 15 Jan 2026 23:03:58 GMT
-ARG ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
-# Tue, 20 Jan 2026 17:56:04 GMT
-# ARGS: TARGETARCH=ppc64le ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
-RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:56:07 GMT
-COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:56:08 GMT
-COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:56:10 GMT
-# ARGS: TARGETARCH=ppc64le ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
-RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:56:10 GMT
-VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:56:10 GMT
-EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:56:10 GMT
-ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:56:11 GMT
-COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:56:11 GMT
-USER odoo
-# Tue, 20 Jan 2026 17:56:11 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:56:11 GMT
-CMD ["odoo"]
-```
-
--	Layers:
-	-	`sha256:0dea13cf1fe062734821309e5f773a18c9ad629d9e93e3eba340bea036bccd8a`  
-		Last Modified: Tue, 13 Jan 2026 06:35:59 GMT  
-		Size: 34.3 MB (34306159 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a90922f8e214809ab22624ef8a00b7369f6a658b7732c295be899ed3323d50f6`  
-		Last Modified: Thu, 15 Jan 2026 23:14:14 GMT  
-		Size: 265.1 MB (265085598 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9198399be59b7de3ad3af18163a31dde6f48c7e75b3981d7fc88e8ad3599c79`  
-		Last Modified: Thu, 15 Jan 2026 23:13:39 GMT  
-		Size: 14.9 MB (14885574 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c09b670fa7165a2e583eda3cbcaa02efa51bcb326123cb766a798ffff02ae8a8`  
-		Last Modified: Thu, 15 Jan 2026 23:13:38 GMT  
-		Size: 480.1 KB (480100 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a151ffb267c0a5be1759a65975327bab5213504b6c8bc3ea17de7b5a0b34a594`  
-		Last Modified: Tue, 20 Jan 2026 18:04:29 GMT  
-		Size: 397.6 MB (397573416 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76da15feec4aba697fcd38284d523426609089fc0119fe707762686d3398604c`  
-		Last Modified: Tue, 20 Jan 2026 18:04:17 GMT  
-		Size: 707.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1ea6c0b655df738672b31a89ff5484495408fc1f6585df60070e67c5b77be5f`  
-		Last Modified: Tue, 20 Jan 2026 18:04:17 GMT  
+	-	`sha256:f185c9023ed275cb5c9c0e9abda5b77359a4d51f76b72612646d298361a57731`  
+		Last Modified: Mon, 09 Feb 2026 19:59:59 GMT  
 		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8ab1b831bf4246d4385d80d093f81276ec85cfff2b85373698308100858b7d4`  
-		Last Modified: Tue, 20 Jan 2026 18:04:18 GMT  
-		Size: 599.0 B  
+	-	`sha256:8f6434875651c3bbf667e88e105eb388c2188f0c53f32b08f94dc581351744d3`  
+		Last Modified: Mon, 09 Feb 2026 20:00:00 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:969f868fad0c0bd07e104728719b1a389633405002728f82258eaa94072a4913`  
-		Last Modified: Tue, 20 Jan 2026 18:04:19 GMT  
+	-	`sha256:3d2a48cfc7b5eff2436b4800acb5929fc36a508ad65fdb519041c8b1c40925d8`  
+		Last Modified: Mon, 09 Feb 2026 20:00:01 GMT  
 		Size: 582.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `odoo:19.0-20260119` - unknown; unknown
+### `odoo:19.0-20260209` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:d638e1a531945adf4046a18205acf241355cd86f5f379b57922e75c9884006f2
+$ docker pull odoo@sha256:151964dd22130ac1f674898d1aec91ce471dd4c86fe531962f2d5a1d0fb4c31d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69270744 bytes)**  
+-	Total Size: **69.7 MB (69652791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43168bb406f693b975ad2749638d6e7f202905a70c08860fdf2725f50be00027`
+-	Image ID: `sha256:9a087f300e7dbf259adba1d18102b1f776f261dcca172b1afd53cbbb46d26629`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bad7b514a7cfe62c5e6bb9f9973d52c5cfcdbf7c66f32c7b71603f3a42397b7e`  
-		Last Modified: Tue, 20 Jan 2026 18:04:22 GMT  
-		Size: 69.2 MB (69243589 bytes)  
+	-	`sha256:ad9e422fcb0894199e21880589b22e93031eb9409cb161a74e5992b288220509`  
+		Last Modified: Mon, 09 Feb 2026 20:00:02 GMT  
+		Size: 69.6 MB (69625534 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cb21a1984fa2c6049eed77bbcef06aaee981d00b8733f7a8772c877809cb98af`  
-		Last Modified: Tue, 20 Jan 2026 18:04:17 GMT  
-		Size: 27.2 KB (27155 bytes)  
+	-	`sha256:dac00cc5dcd5b61e0fb23cb18bd515973d75ab6b1ee26ac429e1c927596f18df`  
+		Last Modified: Mon, 09 Feb 2026 19:59:58 GMT  
+		Size: 27.3 KB (27257 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `odoo:latest`
 
 ```console
-$ docker pull odoo@sha256:6116ea0d16e143c780d065316bba04e8f68d93d8418eaf1672f417b368b0a5fe
+$ docker pull odoo@sha256:45913840242e936f477357cbfc2e6ef5f952cf65f3660e353674b59d7f2c76d7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3472,13 +3192,13 @@ $ docker pull odoo@sha256:6116ea0d16e143c780d065316bba04e8f68d93d8418eaf1672f417
 ### `odoo:latest` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:9f84fca1a2a5669177e38e90a53200401adfe4f26b14b6834cee0a7879c2db4c
+$ docker pull odoo@sha256:f7d987696b508501fdc3d381a0ccf0c52444a2e6e556474d2c17eab73789630a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **696.2 MB (696151267 bytes)**  
+-	Total Size: **700.3 MB (700293836 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:375997b4a9ea1b4a5a073a19fc914ac63a0a1a1a3676c67ef3db8bd93cf1e0f2`
+-	Image ID: `sha256:3393af1bc362d71d1d7680ccfaf9d6c289a411cbe788e55f6ef13464eaf5b634`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -3496,52 +3216,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:3077ee44db3cc7d38740d60a05c81418dd3825a007db473658464f52689e867b in / 
 # Tue, 13 Jan 2026 05:37:27 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 ARG TARGETARCH=amd64
-# Tue, 20 Jan 2026 17:48:17 GMT
+# Mon, 09 Feb 2026 19:56:55 GMT
 # ARGS: TARGETARCH=amd64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:48:27 GMT
+# Mon, 09 Feb 2026 19:57:04 GMT
 # ARGS: TARGETARCH=amd64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:48:28 GMT
+# Mon, 09 Feb 2026 19:57:05 GMT
 # ARGS: TARGETARCH=amd64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:48:28 GMT
+# Mon, 09 Feb 2026 19:57:05 GMT
 ENV ODOO_VERSION=19.0
-# Tue, 20 Jan 2026 17:48:28 GMT
-ARG ODOO_RELEASE=20260118
-# Tue, 20 Jan 2026 17:48:28 GMT
-ARG ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
-# Tue, 20 Jan 2026 17:49:28 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:57:05 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:57:05 GMT
+ARG ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
+# Mon, 09 Feb 2026 19:58:08 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:49:28 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:49:28 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:49:29 GMT
-# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:58:09 GMT
+# ARGS: TARGETARCH=amd64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:49:29 GMT
+# Mon, 09 Feb 2026 19:58:09 GMT
 CMD ["odoo"]
 ```
 
@@ -3550,73 +3270,73 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:38 GMT  
 		Size: 29.7 MB (29726011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af2e32c44d64b22b09f9b27047dd9d078509daa81ea8cc7c59831f2ff6befd57`  
-		Last Modified: Tue, 20 Jan 2026 17:51:42 GMT  
-		Size: 254.6 MB (254560297 bytes)  
+	-	`sha256:6ec7d2f393023c8d47fc7fc8dfbb08513f89551d289f7b4a785d69cdd7a12562`  
+		Last Modified: Mon, 09 Feb 2026 20:00:28 GMT  
+		Size: 257.0 MB (256965528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e21283126d6c3bbdb627e3db9f3fd50783640a49de04ba2796b7889fcdd4fcb`  
-		Last Modified: Tue, 20 Jan 2026 17:51:34 GMT  
-		Size: 14.4 MB (14356589 bytes)  
+	-	`sha256:2836245bd2f95f29af22c2e06ab84fe3458b4403fec2e9720657e3c411b02aa7`  
+		Last Modified: Mon, 09 Feb 2026 20:00:19 GMT  
+		Size: 14.4 MB (14356868 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fa583dfe843366b6ca2700914026e1a6867c21ea46ecc8444ca75c0d8cb423a`  
-		Last Modified: Tue, 20 Jan 2026 17:51:33 GMT  
-		Size: 480.0 KB (479991 bytes)  
+	-	`sha256:22260229f8546eeed152c530b0cc61b5addd22637914fe5e75872d329adb6b11`  
+		Last Modified: Mon, 09 Feb 2026 20:00:20 GMT  
+		Size: 480.0 KB (480018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b3ebfd50b36d69135a863f2796eb6d703981b97f26b2a570274dbd0a024e88`  
-		Last Modified: Tue, 20 Jan 2026 17:51:45 GMT  
-		Size: 397.0 MB (397025938 bytes)  
+	-	`sha256:92e37bcfab968f994d1585aa3324712c5b7d8afcd705ac75f5106a7bb8d2f6b9`  
+		Last Modified: Mon, 09 Feb 2026 20:00:31 GMT  
+		Size: 398.8 MB (398762970 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10f24605144f794459756dd6e6a45533cba89c4216ca6f4f919f139939951eac`  
-		Last Modified: Tue, 20 Jan 2026 17:51:35 GMT  
+	-	`sha256:345daf9a4d3921d73ee80687be69e573c246cddf82714d9fb0e2b6332747fe53`  
+		Last Modified: Mon, 09 Feb 2026 19:59:53 GMT  
 		Size: 707.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2546c91a4bd0c90145324305aff6536e6ca5a74fb0cd1a1f706b904272daebe`  
-		Last Modified: Tue, 20 Jan 2026 17:51:36 GMT  
-		Size: 556.0 B  
+	-	`sha256:917ba9419a22df211490f683e76f115fdccdbcf84fb5832c31154192533090a4`  
+		Last Modified: Mon, 09 Feb 2026 20:00:25 GMT  
+		Size: 557.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dae10fefbbe87fc9f138f54688ea28d77514fb10f581e284976d80c21db02b54`  
-		Last Modified: Tue, 20 Jan 2026 17:51:36 GMT  
-		Size: 595.0 B  
+	-	`sha256:4a88d0100f22822999d96b572e093222869f3f6a30e5ab43b55aecd6b0789a75`  
+		Last Modified: Mon, 09 Feb 2026 20:00:23 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2fa435c5f17762fe361d40de34745d9aa8e31cb4d4e5cb7ecf9c3949be897c1d`  
-		Last Modified: Tue, 20 Jan 2026 17:51:37 GMT  
-		Size: 583.0 B  
+	-	`sha256:8926765bd0fe3659e76bb30bef41068700ae06e0b62e2e911bdfdb44145c0405`  
+		Last Modified: Mon, 09 Feb 2026 20:00:25 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:latest` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:ab577b18cce05ed8d8cf55df209a1aab88871fd8e8e8a838cd7cae184115f3c5
+$ docker pull odoo@sha256:fffa1db1bb40e8e29aaba9d5779b56a31d420011bf857a498d015768faade245
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69262293 bytes)**  
+-	Total Size: **69.6 MB (69645340 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6eed4058ffe6e3d2d0bb402d76545097fc61b9da69a197cad7e854bef8ff6e09`
+-	Image ID: `sha256:987c6e9ddebf1097835adce06f6d8d20006e88a9584e01897373066fe81fc557`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03de055bb367e59e8e1210ccf50bbb3b35d8309cdca25458ab538a33eabc23f1`  
-		Last Modified: Tue, 20 Jan 2026 17:51:37 GMT  
-		Size: 69.2 MB (69235200 bytes)  
+	-	`sha256:05979d955e2dfac59d07ecb8ae00a300160c0dfe0ac77c4608658fad7cec371e`  
+		Last Modified: Mon, 09 Feb 2026 20:00:23 GMT  
+		Size: 69.6 MB (69618247 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0a778bc765d0a3169bbc8c628f33dd0ffdab45add71fcfe8bc3b95aaaf504e75`  
-		Last Modified: Tue, 20 Jan 2026 17:51:33 GMT  
+	-	`sha256:5939f6c0882d38cce3539cedca5930a96a06a64813e2f33e0bef88ae77367e44`  
+		Last Modified: Mon, 09 Feb 2026 20:00:19 GMT  
 		Size: 27.1 KB (27093 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:e035eb915c3a6e68734810d287d8ac28d9ceab8116389ce99e2b25b97a637120
+$ docker pull odoo@sha256:b339dae8d638cd34570947c8e1aab5202dc86008766631b4acf4c2ea2f5bcd8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **692.5 MB (692520977 bytes)**  
+-	Total Size: **696.5 MB (696459479 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c27d1e3e4b23fc8a5da3581690f44a07df0f5d24c9ea706e4dbd692f7bfc8a37`
+-	Image ID: `sha256:dad49ed2e141f820bb565f0f38a1584b3672f732f990067a131476300dff526f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -3634,52 +3354,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:6089c6bede9eca8ec4f424e5798a0ae0712a6fe38c9b97f9afb9d24d9675024e in / 
 # Tue, 13 Jan 2026 05:40:17 GMT
 CMD ["/bin/bash"]
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 SHELL [/bin/bash -xo pipefail -c]
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 ARG TARGETARCH=arm64
-# Tue, 20 Jan 2026 17:53:37 GMT
+# Mon, 09 Feb 2026 19:55:58 GMT
 # ARGS: TARGETARCH=arm64
 RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         curl         dirmngr         fonts-noto-cjk         gnupg         libssl-dev         node-less         npm         python3-magic         python3-num2words         python3-odf         python3-pdfminer         python3-pip         python3-phonenumbers         python3-pyldap         python3-qrcode         python3-renderpm         python3-setuptools         python3-slugify         python3-vobject         python3-watchdog         python3-xlrd         python3-xlwt         xz-utils &&     if [ -z "${TARGETARCH}" ]; then         TARGETARCH="$(dpkg --print-architecture)";     fi;     WKHTMLTOPDF_ARCH=${TARGETARCH} &&     case ${TARGETARCH} in     "amd64") WKHTMLTOPDF_ARCH=amd64 && WKHTMLTOPDF_SHA=967390a759707337b46d1c02452e2bb6b2dc6d59  ;;     "arm64")  WKHTMLTOPDF_SHA=90f6e69896d51ef77339d3f3a20f8582bdf496cc  ;;     "ppc64le" | "ppc64el") WKHTMLTOPDF_ARCH=ppc64el && WKHTMLTOPDF_SHA=5312d7d34a25b321282929df82e3574319aed25c  ;;     esac     && curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_${WKHTMLTOPDF_ARCH}.deb     && echo ${WKHTMLTOPDF_SHA} wkhtmltox.deb | sha1sum -c -     && apt-get install -y --no-install-recommends ./wkhtmltox.deb     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb # buildkit
-# Tue, 20 Jan 2026 17:53:47 GMT
+# Mon, 09 Feb 2026 19:56:09 GMT
 # ARGS: TARGETARCH=arm64
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ noble-pgdg main' > /etc/apt/sources.list.d/pgdg.list     && GNUPGHOME="$(mktemp -d)"     && export GNUPGHOME     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${repokey}"     && gpg --batch --armor --export "${repokey}" > /etc/apt/trusted.gpg.d/pgdg.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && apt-get update      && apt-get install --no-install-recommends -y postgresql-client     && rm -f /etc/apt/sources.list.d/pgdg.list     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 20 Jan 2026 17:53:48 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 # ARGS: TARGETARCH=arm64
 RUN npm install -g rtlcss # buildkit
-# Tue, 20 Jan 2026 17:53:48 GMT
+# Mon, 09 Feb 2026 19:56:10 GMT
 ENV ODOO_VERSION=19.0
-# Tue, 20 Jan 2026 17:53:48 GMT
-ARG ODOO_RELEASE=20260118
-# Tue, 20 Jan 2026 17:53:48 GMT
-ARG ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
-# Tue, 20 Jan 2026 17:54:54 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:56:10 GMT
+ARG ODOO_RELEASE=20260209
+# Mon, 09 Feb 2026 19:56:10 GMT
+ARG ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
+# Mon, 09 Feb 2026 19:57:14 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:14 GMT
 COPY ./entrypoint.sh / # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 COPY ./odoo.conf /etc/odoo/ # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
-# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260118 ODOO_SHA=9cb5691e31d2d8831887e85cc07268016f522f4d
+# Mon, 09 Feb 2026 19:57:15 GMT
+# ARGS: TARGETARCH=arm64 ODOO_RELEASE=20260209 ODOO_SHA=593907b836bf5c4c075bb7345277707c448d4bd5
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 EXPOSE map[8069/tcp:{} 8071/tcp:{} 8072/tcp:{}]
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py # buildkit
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 USER odoo
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 20 Jan 2026 17:54:55 GMT
+# Mon, 09 Feb 2026 19:57:15 GMT
 CMD ["odoo"]
 ```
 
@@ -3688,61 +3408,61 @@ CMD ["odoo"]
 		Last Modified: Tue, 13 Jan 2026 06:35:45 GMT  
 		Size: 28.9 MB (28863824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25d3f7efb0b6437e6dad992249a9e9f212f4c429f91c18e1dd089be44e839eca`  
-		Last Modified: Tue, 20 Jan 2026 17:57:50 GMT  
-		Size: 252.0 MB (251960576 bytes)  
+	-	`sha256:33f5d6664d6a5c9795c9d514cf35fc214711e2152f8ba79a763890c5708fc95e`  
+		Last Modified: Mon, 09 Feb 2026 20:00:08 GMT  
+		Size: 254.2 MB (254183363 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25358a67828d3d7ef6213e1eaeb9ad2660e4adaa4d1045483b465f96f6241b4c`  
-		Last Modified: Tue, 20 Jan 2026 17:57:42 GMT  
-		Size: 14.3 MB (14334234 bytes)  
+	-	`sha256:73e7ce57e304c1337a29b440be387ac917c5af7767a356c2fff7067ffcac9ec7`  
+		Last Modified: Mon, 09 Feb 2026 19:59:59 GMT  
+		Size: 14.3 MB (14334632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:baa0707f65e802f83913204602cbb05dc9fcc134626f7dc580d58a445b250fa9`  
-		Last Modified: Tue, 20 Jan 2026 17:57:41 GMT  
-		Size: 480.0 KB (480004 bytes)  
+	-	`sha256:2cfbfb903b36e2dfa1a14a11d1ff9fa952f3c3cfb54484fe0319ad78bb46344c`  
+		Last Modified: Mon, 09 Feb 2026 19:59:58 GMT  
+		Size: 480.1 KB (480082 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf3919195b79dea6685eec4fb80e6282fd7f0c9ef1483d8d949a2dab30496fb9`  
-		Last Modified: Tue, 20 Jan 2026 17:57:53 GMT  
-		Size: 396.9 MB (396879902 bytes)  
+	-	`sha256:b588d32cfe5a2cf2979215040091176629fbc4c0f94bae1313e299cb1901cab7`  
+		Last Modified: Mon, 09 Feb 2026 20:00:17 GMT  
+		Size: 398.6 MB (398595138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91f41f0f5bdbc86cb88249d87017d8984b91c56043b40d472af5ae0a894127be`  
-		Last Modified: Tue, 20 Jan 2026 17:57:42 GMT  
+	-	`sha256:7e98ae45d01f2522fc5fa1a2b1ea23a4e6859b8e6273aace01b4379ec4415e66`  
+		Last Modified: Mon, 09 Feb 2026 19:59:13 GMT  
 		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:652adaa52722dd1cbcb106e97d293ede808015890010e4de5cec1de7b983f524`  
-		Last Modified: Tue, 20 Jan 2026 17:57:44 GMT  
-		Size: 555.0 B  
+	-	`sha256:f185c9023ed275cb5c9c0e9abda5b77359a4d51f76b72612646d298361a57731`  
+		Last Modified: Mon, 09 Feb 2026 19:59:59 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76a70e3e541f9b9f69ac58af6c7f14bc609065396f4d4b94dbca35e70c1118c1`  
-		Last Modified: Tue, 20 Jan 2026 17:57:44 GMT  
+	-	`sha256:8f6434875651c3bbf667e88e105eb388c2188f0c53f32b08f94dc581351744d3`  
+		Last Modified: Mon, 09 Feb 2026 20:00:00 GMT  
 		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00a9d8e8a22ca44f40837c40ee3fd9ef6c602f5d8580019f150efb926895b4a5`  
-		Last Modified: Tue, 20 Jan 2026 17:57:45 GMT  
-		Size: 580.0 B  
+	-	`sha256:3d2a48cfc7b5eff2436b4800acb5929fc36a508ad65fdb519041c8b1c40925d8`  
+		Last Modified: Mon, 09 Feb 2026 20:00:01 GMT  
+		Size: 582.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:latest` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:88c7505587a949ee392a0b1d9d547e0545403385261a6f847d1c77ba46c9b154
+$ docker pull odoo@sha256:151964dd22130ac1f674898d1aec91ce471dd4c86fe531962f2d5a1d0fb4c31d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69269743 bytes)**  
+-	Total Size: **69.7 MB (69652791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22e16f0d2ac1ab59b61d795b2d232c0803dd6f657541b92c1b82abab1ea65d20`
+-	Image ID: `sha256:9a087f300e7dbf259adba1d18102b1f776f261dcca172b1afd53cbbb46d26629`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aa63d456dfdc200fbfc53f2b4b3fa6d0c037a64a00a799d9b3e0b48efeec2938`  
-		Last Modified: Tue, 20 Jan 2026 17:57:45 GMT  
-		Size: 69.2 MB (69242487 bytes)  
+	-	`sha256:ad9e422fcb0894199e21880589b22e93031eb9409cb161a74e5992b288220509`  
+		Last Modified: Mon, 09 Feb 2026 20:00:02 GMT  
+		Size: 69.6 MB (69625534 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a8ae7028b78d75057cae67cb5e00d79d3d23023bde2352f3377118078720d14`  
-		Last Modified: Tue, 20 Jan 2026 17:57:41 GMT  
-		Size: 27.3 KB (27256 bytes)  
+	-	`sha256:dac00cc5dcd5b61e0fb23cb18bd515973d75ab6b1ee26ac429e1c927596f18df`  
+		Last Modified: Mon, 09 Feb 2026 19:59:58 GMT  
+		Size: 27.3 KB (27257 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:latest` - linux; ppc64le
