@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a29b5b4cfe0ecba5dc487aa90fc91a478f6ce97b41dc4c1413b3c5d07289347`
-- Created: `2026-02-05T00:07:59.694034519Z`
-- Virtual Size: ~ 800.49 Mb  
+- Image ID: `sha256:b918a4204db19fe2e956e94b41cdfbba0abd8969f8122a2fe4a55aef3a136b42`
+- Created: `2026-02-05T19:49:31.529045444Z`
+- Virtual Size: ~ 799.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-02-04T11:16:28Z`
+  - `build-date=2026-02-05T04:57:10Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -37,12 +37,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-02-04T11:16:28Z`
-  - `org.opencontainers.image.revision=3ae6fd96d0d9bad11e8002483701f39edf2317f5`
-  - `release=1770203734`
+  - `org.opencontainers.image.created=2026-02-05T04:57:10Z`
+  - `org.opencontainers.image.revision=21849199b7179dc3074812b8e24698ec609d6a5c`
+  - `release=1770267347`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=3ae6fd96d0d9bad11e8002483701f39edf2317f5`
+  - `vcs-ref=21849199b7179dc3074812b8e24698ec609d6a5c`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
