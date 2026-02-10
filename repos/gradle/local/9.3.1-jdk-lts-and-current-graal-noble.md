@@ -180,13 +180,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13ubuntu10.3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.3.dsc' base-files_13ubuntu10.3.dsc 1377 SHA512:616eacb8d3217d4c3e8a57f5f3561411933ffdf680a4161cdf96cc39494f093933667d59263e77db92725ccfbf22fbbc60f0b6c94fce853a3e15d5e046e8b3fb
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.3.tar.xz' base-files_13ubuntu10.3.tar.xz 94184 SHA512:9fe21ced2bbb578c164f7cd60e6068a7b66d5e62848b6e7b2ea5670fba48d692a0ab477210bbcc92e41ce16b4ae589784c7168979b5b2727a16c4d1df5f8b22b
-```
 
 ### `dpkg` source package: `base-passwd=3.6.3build1`
 
@@ -1862,14 +1858,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-94.96
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-94.96.dsc' linux_6.8.0-94.96.dsc 9362 SHA512:c0212fd5752ecc9a5c4d2b1d48308897c4eb66444c49c8521b8da2fb0bad484574e04b2230b56125cc40c153b56e16b773dd2a07ce6325aadbdba4ce67f72d69
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-94.96.diff.gz' linux_6.8.0-94.96.diff.gz 6077075 SHA512:3c4fa61f2537f94e7a55975989dbef130ace4ebd94476dabb64ebf41df421bbdb4aeb6ee4e69301e166cc7a75dc047c0debc162a3f386a2322c92cec255435dd
-```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
