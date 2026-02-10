@@ -1,3 +1,792 @@
 ## `redis:8-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:7b6fb55d8b0adcd77269dc52b3cfffe5f59ca5d43dec3c90dbe18aacce7942e1
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 16
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm variant v5
+	-	unknown; unknown
+	-	linux; arm variant v7
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+	-	linux; 386
+	-	unknown; unknown
+	-	linux; ppc64le
+	-	unknown; unknown
+	-	linux; riscv64
+	-	unknown; unknown
+	-	linux; s390x
+	-	unknown; unknown
+
+### `redis:8-trixie` - linux; amd64
+
+```console
+$ docker pull redis@sha256:dbd224829d1c2b732cec08779d6233da898ffd7428c932b7978484c0dff56d87
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **53.2 MB (53223493 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6a157c60baea57f89bd85e03292aaf76af36d30235524baeda5623f3d52ccd88`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 02 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1769990400'
+# Tue, 10 Feb 2026 19:04:06 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Tue, 10 Feb 2026 19:04:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 10 Feb 2026 19:09:37 GMT
+ARG REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz
+# Tue, 10 Feb 2026 19:09:37 GMT
+ARG REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+# Tue, 10 Feb 2026 19:09:37 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 		dpkg-dev 		gcc 		g++ 		libc6-dev 		libssl-dev 		make; 		arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		'arm64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		*) echo >&2 "Modules are NOT supported! unsupported architecture: '$arch'"; export BUILD_WITH_MODULES=no ;; 	esac; 	if [ "$BUILD_WITH_MODULES" = "yes" ]; then 		apt-get update; 		apt-get install -y --no-install-recommends 			git 			cmake 			python3 			python3-pip 			python3-venv 			python3-dev 			unzip 			rsync 			clang 			automake 			autoconf 			libtool 			g++; 	fi; 		rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	case "${arch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		make -C /usr/src/redis distclean; 	rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/cache/debconf/*; 		redis-cli --version; 	redis-server --version # buildkit
+# Tue, 10 Feb 2026 19:09:37 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Tue, 10 Feb 2026 19:09:37 GMT
+WORKDIR /data
+# Tue, 10 Feb 2026 19:09:37 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Tue, 10 Feb 2026 19:09:37 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 10 Feb 2026 19:09:37 GMT
+EXPOSE map[6379/tcp:{}]
+# Tue, 10 Feb 2026 19:09:37 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:0c8d55a45c0dc58de60579b9cc5b708de9e7957f4591fc7de941b67c7e245da0`  
+		Last Modified: Tue, 03 Feb 2026 01:15:17 GMT  
+		Size: 29.8 MB (29778596 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bbed7540f43485a21490c64799940477e2c9d78687630b61fff893b9b15d23b7`  
+		Last Modified: Tue, 10 Feb 2026 19:09:45 GMT  
+		Size: 1.1 KB (1105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:35b667b631ff2a2263471756fafcea7392500a0664e6deaa7b47ac8bfb8e8cb1`  
+		Last Modified: Tue, 10 Feb 2026 19:09:45 GMT  
+		Size: 827.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a15985f29cdfb4b011bf8bdd5c6cd335fc6d4f4d90afed8ce6e3e069df529a71`  
+		Last Modified: Tue, 10 Feb 2026 19:09:46 GMT  
+		Size: 23.4 MB (23440729 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6397ab5638485424d084b425636d3aea1e60ee7c7314c63b6b047ab2d47e99b8`  
+		Last Modified: Tue, 10 Feb 2026 19:09:45 GMT  
+		Size: 96.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4a43643650f6b48d427c784bc251cfad04956078a3121abe0eae495512524522`  
+		Last Modified: Tue, 10 Feb 2026 19:09:46 GMT  
+		Size: 2.1 KB (2108 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:8-trixie` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:173e725cc2cb6f57587f8ed63191a3ea6e4a4b783071f6eccf1a63b32db0e81d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.0 MB (2009479 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4ca2ce2fa7fee4ed6a33e15965e51331823765bb8310cde53f4fad9e9541161b`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:14bb7a3bd12b6295d4d419ce4e9798cdde4c3f896c5a0a67b84f725839445976`  
+		Last Modified: Tue, 10 Feb 2026 19:09:45 GMT  
+		Size: 2.0 MB (1979801 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:c9d74f9db85e142778484d01efd96c23e1d03f7d32c7e109c55f6ab1d84b7c30`  
+		Last Modified: Tue, 10 Feb 2026 19:09:45 GMT  
+		Size: 29.7 KB (29678 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:8-trixie` - linux; arm variant v5
+
+```console
+$ docker pull redis@sha256:e69053f93539d87f3125d675ac893dd53c875e2aee99af9f0a9a0c7d79271057
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **42.2 MB (42178620 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5ea1bda98ba8d5abece87cfb79313c95ee7eea35d4e0aaea3cb1b4838817830f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 02 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1769990400'
+# Tue, 10 Feb 2026 19:05:51 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Tue, 10 Feb 2026 19:05:55 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 10 Feb 2026 19:07:12 GMT
+ARG REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz
+# Tue, 10 Feb 2026 19:07:12 GMT
+ARG REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+# Tue, 10 Feb 2026 19:07:12 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 		dpkg-dev 		gcc 		g++ 		libc6-dev 		libssl-dev 		make; 		arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		'arm64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		*) echo >&2 "Modules are NOT supported! unsupported architecture: '$arch'"; export BUILD_WITH_MODULES=no ;; 	esac; 	if [ "$BUILD_WITH_MODULES" = "yes" ]; then 		apt-get update; 		apt-get install -y --no-install-recommends 			git 			cmake 			python3 			python3-pip 			python3-venv 			python3-dev 			unzip 			rsync 			clang 			automake 			autoconf 			libtool 			g++; 	fi; 		rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	case "${arch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		make -C /usr/src/redis distclean; 	rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/cache/debconf/*; 		redis-cli --version; 	redis-server --version # buildkit
+# Tue, 10 Feb 2026 19:07:12 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Tue, 10 Feb 2026 19:07:12 GMT
+WORKDIR /data
+# Tue, 10 Feb 2026 19:07:12 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Tue, 10 Feb 2026 19:07:12 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 10 Feb 2026 19:07:12 GMT
+EXPOSE map[6379/tcp:{}]
+# Tue, 10 Feb 2026 19:07:12 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:2a2986ba48ae233640829460f6772db2ffbc330d97d2b29a533694dfdc7dc893`  
+		Last Modified: Tue, 03 Feb 2026 01:14:07 GMT  
+		Size: 27.9 MB (27947555 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4d3463aa261a0dedaad7dc9018637e6b44d71b972aaa6b11b95b642a92d9e89a`  
+		Last Modified: Tue, 10 Feb 2026 19:07:19 GMT  
+		Size: 1.1 KB (1105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:16dc6b06038aa042601def4e9199e031ff56fbc413331c9a03c440f2918e9178`  
+		Last Modified: Tue, 10 Feb 2026 19:07:19 GMT  
+		Size: 833.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:37152622c8d30d0adfe3842bbd37073a689069bf65e3bb95c9615c3a511205e1`  
+		Last Modified: Tue, 10 Feb 2026 19:07:20 GMT  
+		Size: 14.2 MB (14226892 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fcaa42d6f99d2781428e55a187c5aeb24eb3c27837b8937a1d4175a22763feeb`  
+		Last Modified: Tue, 10 Feb 2026 19:07:19 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7d651b1298145597538faf70ffb88b41c7af4be10f1506e3a13245e968c7508b`  
+		Last Modified: Tue, 10 Feb 2026 19:07:20 GMT  
+		Size: 2.1 KB (2106 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:8-trixie` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:7aa63cca9d774dcf0eeb05db519ec2244f338af15abfead65e4d19d9bab6f969
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.0 MB (2012623 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3f31512d91ee2531779a7b84e25100f3cfbf0e8fc04acd1186dff060a40d30b9`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:112278a30ee8b920193056260b6545d963e3974a96729bc8971f24040057f9c0`  
+		Last Modified: Tue, 10 Feb 2026 19:07:19 GMT  
+		Size: 2.0 MB (1982794 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:edd1cd5c0d27ea044bc125cafd558aa15dccb5c8725c7a890cd764424a97daf4`  
+		Last Modified: Tue, 10 Feb 2026 19:07:19 GMT  
+		Size: 29.8 KB (29829 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:8-trixie` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:e38c647b2812278cf8b976d9bd2c7c5d62a4beebe0f4d802ba809549f23b9216
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **40.2 MB (40206835 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7caec5045d74c4fcf22297e3c5f3b8d97e91db6fc7acc79121875a815b1755d2`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 02 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1769990400'
+# Tue, 10 Feb 2026 19:04:21 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Tue, 10 Feb 2026 19:04:24 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 10 Feb 2026 19:05:26 GMT
+ARG REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz
+# Tue, 10 Feb 2026 19:05:26 GMT
+ARG REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+# Tue, 10 Feb 2026 19:05:26 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 		dpkg-dev 		gcc 		g++ 		libc6-dev 		libssl-dev 		make; 		arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		'arm64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		*) echo >&2 "Modules are NOT supported! unsupported architecture: '$arch'"; export BUILD_WITH_MODULES=no ;; 	esac; 	if [ "$BUILD_WITH_MODULES" = "yes" ]; then 		apt-get update; 		apt-get install -y --no-install-recommends 			git 			cmake 			python3 			python3-pip 			python3-venv 			python3-dev 			unzip 			rsync 			clang 			automake 			autoconf 			libtool 			g++; 	fi; 		rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	case "${arch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		make -C /usr/src/redis distclean; 	rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/cache/debconf/*; 		redis-cli --version; 	redis-server --version # buildkit
+# Tue, 10 Feb 2026 19:05:26 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Tue, 10 Feb 2026 19:05:26 GMT
+WORKDIR /data
+# Tue, 10 Feb 2026 19:05:26 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Tue, 10 Feb 2026 19:05:26 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 10 Feb 2026 19:05:26 GMT
+EXPOSE map[6379/tcp:{}]
+# Tue, 10 Feb 2026 19:05:26 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:abdd0f3062e6238c89a40b3e40277debcba2796d6736373219a089086718b8b4`  
+		Last Modified: Tue, 03 Feb 2026 01:14:48 GMT  
+		Size: 26.2 MB (26213748 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e74a1a19370befa5ff52c81c68dcabf08fcef7d1ab72b66abfcc7e33d53f5dd0`  
+		Last Modified: Tue, 10 Feb 2026 19:05:34 GMT  
+		Size: 1.1 KB (1105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4852bf90e61a60f07b913551b042bed1a2839568d52806350f4f084200e9870e`  
+		Last Modified: Tue, 10 Feb 2026 19:05:34 GMT  
+		Size: 827.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5fcb3bd5ac02cf69263bbfd4d5eab73828f71ffa345e48402d2a4a1bcd397028`  
+		Last Modified: Tue, 10 Feb 2026 19:05:34 GMT  
+		Size: 14.0 MB (13988918 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa585e83ef77458df6f4e37d221199431a4c18e23874071ddba921ec6e78ea6d`  
+		Last Modified: Tue, 10 Feb 2026 19:05:34 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d1ce4bee7c62d09644b47f33c167b969defc2760a90d5c6f7f2f4d1aee47e223`  
+		Last Modified: Tue, 10 Feb 2026 19:05:35 GMT  
+		Size: 2.1 KB (2108 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:8-trixie` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:9cab4b597f8d142ff20ee690c220b55ffe559cdaaebe6246bd48ff8353dafe57
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.0 MB (2011060 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1540f9db97f689ee17dd5409360c73a218b6a9cd0829ba43383191e3d10be0d2`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:8953e5ff9b302b59e7476495103b292e86ac262d72eeaed637f2f05b3482d172`  
+		Last Modified: Tue, 10 Feb 2026 19:05:34 GMT  
+		Size: 2.0 MB (1981231 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:45932951a260775e54f93a30f48a49b05887d766147cd28026edde524617a1c0`  
+		Last Modified: Tue, 10 Feb 2026 19:05:34 GMT  
+		Size: 29.8 KB (29829 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:8-trixie` - linux; arm64 variant v8
+
+```console
+$ docker pull redis@sha256:a8598e288ca5d037dc8e3ae2a9c33537a023e53594b30f46341dcdf3e0134b0b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **53.3 MB (53330870 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5144e0a43b37bfd76915362a5f510ef954418a605f9b676ae8a35c911843c49b`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 02 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1769990400'
+# Tue, 10 Feb 2026 19:04:14 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Tue, 10 Feb 2026 19:04:17 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 10 Feb 2026 19:10:04 GMT
+ARG REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz
+# Tue, 10 Feb 2026 19:10:04 GMT
+ARG REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+# Tue, 10 Feb 2026 19:10:04 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 		dpkg-dev 		gcc 		g++ 		libc6-dev 		libssl-dev 		make; 		arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		'arm64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		*) echo >&2 "Modules are NOT supported! unsupported architecture: '$arch'"; export BUILD_WITH_MODULES=no ;; 	esac; 	if [ "$BUILD_WITH_MODULES" = "yes" ]; then 		apt-get update; 		apt-get install -y --no-install-recommends 			git 			cmake 			python3 			python3-pip 			python3-venv 			python3-dev 			unzip 			rsync 			clang 			automake 			autoconf 			libtool 			g++; 	fi; 		rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	case "${arch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		make -C /usr/src/redis distclean; 	rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/cache/debconf/*; 		redis-cli --version; 	redis-server --version # buildkit
+# Tue, 10 Feb 2026 19:10:04 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Tue, 10 Feb 2026 19:10:04 GMT
+WORKDIR /data
+# Tue, 10 Feb 2026 19:10:04 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Tue, 10 Feb 2026 19:10:04 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 10 Feb 2026 19:10:04 GMT
+EXPOSE map[6379/tcp:{}]
+# Tue, 10 Feb 2026 19:10:04 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c`  
+		Last Modified: Tue, 03 Feb 2026 01:15:22 GMT  
+		Size: 30.1 MB (30140064 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1fc80b1ed24d13c4f74118a435b3d82ce2df3451fd891f1baee86640de72b991`  
+		Last Modified: Tue, 10 Feb 2026 19:10:13 GMT  
+		Size: 1.1 KB (1105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6b74532966cb052b24e9703d4fd7554ffc41d0a01c7a7910470857cbd0925ea8`  
+		Last Modified: Tue, 10 Feb 2026 19:10:13 GMT  
+		Size: 828.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e2e14d4080fc081ee3309f434523126ab7480cd7811f16e37681a91e339b841a`  
+		Last Modified: Tue, 10 Feb 2026 19:10:14 GMT  
+		Size: 23.2 MB (23186638 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7ba8d09ad3f04512e66108b480ee268ebdde0b6eaa29e271382b20350ca215b9`  
+		Last Modified: Tue, 10 Feb 2026 19:10:13 GMT  
+		Size: 95.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f770de043bcfdfee093ab311251339fd2f43c68b6df8f6a0ed695c5a433efde5`  
+		Last Modified: Tue, 10 Feb 2026 19:10:14 GMT  
+		Size: 2.1 KB (2108 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:8-trixie` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:f0b39d1bff68af175951487ff3af5858e4aa4466ce1db57a912374a9ff1f05bd
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.0 MB (2009982 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6653ab55a966cc6fd420fe37ad64bc53aa9a7ec3dc760237aa5e006c4208e53b`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:6f99da519dd02b6b18fe24f7186bfacbfb67ac655bdffffca3b7a86ad5070bd7`  
+		Last Modified: Tue, 10 Feb 2026 19:10:13 GMT  
+		Size: 2.0 MB (1980107 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:84dd3812a6dad4f10fc26837dedca96037f1fe67d59d7868d1d3b31f55816c6d`  
+		Last Modified: Tue, 10 Feb 2026 19:10:13 GMT  
+		Size: 29.9 KB (29875 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:8-trixie` - linux; 386
+
+```console
+$ docker pull redis@sha256:1700aa3c95c20a138bf93c0b1c997c984b6a6f19d8ab03c75c1498692b4178e6
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **45.1 MB (45056856 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3a3292609e585dda4122a2ea5538ba1adbc752600c50e61895bf16fe558caf3f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 02 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1769990400'
+# Tue, 10 Feb 2026 19:04:37 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Tue, 10 Feb 2026 19:04:39 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 10 Feb 2026 19:05:46 GMT
+ARG REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz
+# Tue, 10 Feb 2026 19:05:46 GMT
+ARG REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+# Tue, 10 Feb 2026 19:05:46 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 		dpkg-dev 		gcc 		g++ 		libc6-dev 		libssl-dev 		make; 		arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		'arm64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		*) echo >&2 "Modules are NOT supported! unsupported architecture: '$arch'"; export BUILD_WITH_MODULES=no ;; 	esac; 	if [ "$BUILD_WITH_MODULES" = "yes" ]; then 		apt-get update; 		apt-get install -y --no-install-recommends 			git 			cmake 			python3 			python3-pip 			python3-venv 			python3-dev 			unzip 			rsync 			clang 			automake 			autoconf 			libtool 			g++; 	fi; 		rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	case "${arch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		make -C /usr/src/redis distclean; 	rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/cache/debconf/*; 		redis-cli --version; 	redis-server --version # buildkit
+# Tue, 10 Feb 2026 19:05:46 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Tue, 10 Feb 2026 19:05:46 GMT
+WORKDIR /data
+# Tue, 10 Feb 2026 19:05:46 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Tue, 10 Feb 2026 19:05:46 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 10 Feb 2026 19:05:46 GMT
+EXPOSE map[6379/tcp:{}]
+# Tue, 10 Feb 2026 19:05:46 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:169fd34ed51dc04ba419a375bd69752b6d59f872027dfb0b9fc2763b36ffde10`  
+		Last Modified: Tue, 03 Feb 2026 01:15:01 GMT  
+		Size: 31.3 MB (31293855 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7b8a8c1d1b2a1328c5791d65668f48f483deae6ac46f2d29c9a614c33685fbbf`  
+		Last Modified: Tue, 10 Feb 2026 19:05:53 GMT  
+		Size: 1.1 KB (1104 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c3c4d353dcc29f432dde70f0aa6ba221cac47314b1a9bc2d789b4c64c140fd3e`  
+		Last Modified: Tue, 10 Feb 2026 19:05:53 GMT  
+		Size: 829.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6f407e0c0fbebaaf752b15d7033f788c64f2d575f243f3747b36ff767205ebf3`  
+		Last Modified: Tue, 10 Feb 2026 19:05:54 GMT  
+		Size: 13.8 MB (13758832 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:02f54021c40c4d6c3609675e422533a2f82f7868681f0643e4cb4df233005e18`  
+		Last Modified: Tue, 10 Feb 2026 19:05:53 GMT  
+		Size: 96.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:097e7799fe8c8ddc9f243e01bb8e39f36c96faf20baca230f6132c2067c20d5e`  
+		Last Modified: Tue, 10 Feb 2026 19:05:55 GMT  
+		Size: 2.1 KB (2108 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:8-trixie` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:29317a82c5652859f5fda6c0f7b79db47c8b2b2b1b917ad05c6944d0daa49fe1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.0 MB (2006598 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:47b8101665462b7185a87bf3eba280c3d426f2acae3d499d5c5ed1e741e64ffb`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:114c5bfd806cbd171693eed53e4f01f45bffbed8e1531d9b473633d6e2433020`  
+		Last Modified: Tue, 10 Feb 2026 19:05:54 GMT  
+		Size: 2.0 MB (1976978 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:9af9fe4fb9d0ec14aa0e33ea8b2d083c5bca8f08f9e621122dd11f4095ac2874`  
+		Last Modified: Tue, 10 Feb 2026 19:05:53 GMT  
+		Size: 29.6 KB (29620 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:8-trixie` - linux; ppc64le
+
+```console
+$ docker pull redis@sha256:745a7ab8d95799934794687e8809917ae3a71ef3bb53cbe06c93a006f5aef642
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **48.8 MB (48826353 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6e42702b5371cd9468c9b712c17ed91bc1ff07d1ba6b9b69b307fb77ad8f71ed`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 02 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1769990400'
+# Tue, 10 Feb 2026 19:03:46 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Tue, 10 Feb 2026 19:03:53 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 10 Feb 2026 19:05:53 GMT
+ARG REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz
+# Tue, 10 Feb 2026 19:05:53 GMT
+ARG REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+# Tue, 10 Feb 2026 19:05:53 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 		dpkg-dev 		gcc 		g++ 		libc6-dev 		libssl-dev 		make; 		arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		'arm64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		*) echo >&2 "Modules are NOT supported! unsupported architecture: '$arch'"; export BUILD_WITH_MODULES=no ;; 	esac; 	if [ "$BUILD_WITH_MODULES" = "yes" ]; then 		apt-get update; 		apt-get install -y --no-install-recommends 			git 			cmake 			python3 			python3-pip 			python3-venv 			python3-dev 			unzip 			rsync 			clang 			automake 			autoconf 			libtool 			g++; 	fi; 		rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	case "${arch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		make -C /usr/src/redis distclean; 	rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/cache/debconf/*; 		redis-cli --version; 	redis-server --version # buildkit
+# Tue, 10 Feb 2026 19:05:54 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Tue, 10 Feb 2026 19:05:54 GMT
+WORKDIR /data
+# Tue, 10 Feb 2026 19:05:54 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Tue, 10 Feb 2026 19:05:54 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 10 Feb 2026 19:05:54 GMT
+EXPOSE map[6379/tcp:{}]
+# Tue, 10 Feb 2026 19:05:54 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:1aee42d34fb7e3a2db6f83f2a84e17846ac990ed8ecf693a309ae759efdbdaa3`  
+		Last Modified: Tue, 03 Feb 2026 01:16:35 GMT  
+		Size: 33.6 MB (33600184 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d4e15f524567fd84c65a1882209b262142d489a5cfc2fe5c6fb7899016a6c848`  
+		Last Modified: Tue, 10 Feb 2026 19:06:12 GMT  
+		Size: 1.1 KB (1105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e7e28724f2ee579fe71f1089b38ad4635b03b42e6ac6642e3b20cd6de546e77e`  
+		Last Modified: Tue, 10 Feb 2026 19:06:12 GMT  
+		Size: 829.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:11ad7c2c231fd589e4135b1fd62ad74e795ead7ca9b2d4784779289856297095`  
+		Last Modified: Tue, 10 Feb 2026 19:06:13 GMT  
+		Size: 15.2 MB (15222003 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:afde0f7b6d42789d5cdf071f25257d6129566c82ac3fdc1ee1a06c64be63cd10`  
+		Last Modified: Tue, 10 Feb 2026 19:06:12 GMT  
+		Size: 96.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:95eda90d24c08ca38e3fb3cacca95c730a258b0b56b78ddd5b281dd370b57c72`  
+		Last Modified: Tue, 10 Feb 2026 19:06:13 GMT  
+		Size: 2.1 KB (2104 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:8-trixie` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:db64b4c0800fb0938b0c2b5f04e1a3c3e50f7ae06bf8b94afde57d7508753006
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.0 MB (2013088 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b5bee25c066702178297dce354c7afbb99f49eb825888152d1decf022b162586`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:1e7799c2a582f8ab758fc24d07953b25df512e1f1354ada095c68b1768586973`  
+		Last Modified: Tue, 10 Feb 2026 19:06:12 GMT  
+		Size: 2.0 MB (1983336 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:fb76cc0c948b2fc2cc0179ce55838cdbf96d57ddd0ddef64378b6755611f5d88`  
+		Last Modified: Tue, 10 Feb 2026 19:06:12 GMT  
+		Size: 29.8 KB (29752 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:8-trixie` - linux; riscv64
+
+```console
+$ docker pull redis@sha256:5c68dc82f7e7e93bcacd21461cc5966ae27d45a04205074c7013eeef4628ae6e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **41.8 MB (41788994 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:67bbc94fc8cfde6cc3f6dadfe13d6e081c0a511bbc4002849ef2364dc7fa3453`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 02 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1769990400'
+# Thu, 05 Feb 2026 02:45:23 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Thu, 05 Feb 2026 02:45:53 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 10 Feb 2026 19:21:44 GMT
+ARG REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz
+# Tue, 10 Feb 2026 19:21:44 GMT
+ARG REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+# Tue, 10 Feb 2026 19:21:44 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 		dpkg-dev 		gcc 		g++ 		libc6-dev 		libssl-dev 		make; 		arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		'arm64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		*) echo >&2 "Modules are NOT supported! unsupported architecture: '$arch'"; export BUILD_WITH_MODULES=no ;; 	esac; 	if [ "$BUILD_WITH_MODULES" = "yes" ]; then 		apt-get update; 		apt-get install -y --no-install-recommends 			git 			cmake 			python3 			python3-pip 			python3-venv 			python3-dev 			unzip 			rsync 			clang 			automake 			autoconf 			libtool 			g++; 	fi; 		rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	case "${arch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		make -C /usr/src/redis distclean; 	rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/cache/debconf/*; 		redis-cli --version; 	redis-server --version # buildkit
+# Tue, 10 Feb 2026 19:21:44 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Tue, 10 Feb 2026 19:21:44 GMT
+WORKDIR /data
+# Tue, 10 Feb 2026 19:21:44 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Tue, 10 Feb 2026 19:21:44 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 10 Feb 2026 19:21:44 GMT
+EXPOSE map[6379/tcp:{}]
+# Tue, 10 Feb 2026 19:21:44 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:4526db52defd9278f79daec64ebfa633041460dbe0cfad19564ae34d84b13b4c`  
+		Last Modified: Tue, 03 Feb 2026 07:14:46 GMT  
+		Size: 28.3 MB (28276389 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:93a2a1a3f6a1a1e5156270a50f9575d68a42cf3b8eb587ff9352d2c2e83082ac`  
+		Last Modified: Thu, 05 Feb 2026 03:03:46 GMT  
+		Size: 1.1 KB (1104 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a61bd258636fe983951acc02a14d38cce087951863519b649aa900c501b320a3`  
+		Last Modified: Thu, 05 Feb 2026 03:03:46 GMT  
+		Size: 821.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c2199e999245a15633e3423676619c44357aee24d1039b1ca662b24b8a9694ca`  
+		Last Modified: Tue, 10 Feb 2026 19:22:59 GMT  
+		Size: 13.5 MB (13508445 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2b406e99aff8d2e5004684448ff2d0bdb5229c0d83dd84e9a82c1020aae77381`  
+		Last Modified: Tue, 10 Feb 2026 19:22:57 GMT  
+		Size: 95.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:149e88277920d0965986cb15682d99514cd280c3167512ecfc6cc623a724a385`  
+		Last Modified: Tue, 10 Feb 2026 19:22:57 GMT  
+		Size: 2.1 KB (2108 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:8-trixie` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:1824e6a719197231c04e67790565c7c3f1b6d6042a0cb911b0c5818dd0288f3c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.0 MB (2003491 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:806c021bfb6ba9817e564c0997afbf9af76dbe3c8fca638c5ae5e047d8f2dc73`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:961711d7d2b93174cd4b99028f6a89bc703ac6636eceb1b93d62e08792c02a6d`  
+		Last Modified: Tue, 10 Feb 2026 19:22:57 GMT  
+		Size: 2.0 MB (1973739 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:636f00e4b66fb943c27fe9115bf81c0d36bcc23f3492d2f57996998081fcc542`  
+		Last Modified: Tue, 10 Feb 2026 19:22:57 GMT  
+		Size: 29.8 KB (29752 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:8-trixie` - linux; s390x
+
+```console
+$ docker pull redis@sha256:5da433dbbf13b0d098ef22280503fbdb53da98589374d1bec8977aa0ed2a80de
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **44.7 MB (44672836 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9bd25a2c28b9b8f74cf6010e63b6e0df2aee230599465268fe6dd30c651de97c`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 02 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1769990400'
+# Tue, 10 Feb 2026 19:03:16 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Tue, 10 Feb 2026 19:03:19 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 10 Feb 2026 19:04:52 GMT
+ARG REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz
+# Tue, 10 Feb 2026 19:04:52 GMT
+ARG REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+# Tue, 10 Feb 2026 19:04:52 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 		dpkg-dev 		gcc 		g++ 		libc6-dev 		libssl-dev 		make; 		arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		'arm64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; 		*) echo >&2 "Modules are NOT supported! unsupported architecture: '$arch'"; export BUILD_WITH_MODULES=no ;; 	esac; 	if [ "$BUILD_WITH_MODULES" = "yes" ]; then 		apt-get update; 		apt-get install -y --no-install-recommends 			git 			cmake 			python3 			python3-pip 			python3-venv 			python3-dev 			unzip 			rsync 			clang 			automake 			autoconf 			libtool 			g++; 	fi; 		rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	case "${arch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		make -C /usr/src/redis distclean; 	rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/cache/debconf/*; 		redis-cli --version; 	redis-server --version # buildkit
+# Tue, 10 Feb 2026 19:04:52 GMT
+# ARGS: REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.0.tar.gz REDIS_DOWNLOAD_SHA=74261ece988fd2e1526e5aea9f8b9853217d71e2ef2dafaa624ed9579b5f4317
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Tue, 10 Feb 2026 19:04:52 GMT
+WORKDIR /data
+# Tue, 10 Feb 2026 19:04:52 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Tue, 10 Feb 2026 19:04:52 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 10 Feb 2026 19:04:52 GMT
+EXPOSE map[6379/tcp:{}]
+# Tue, 10 Feb 2026 19:04:52 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:809310277795fa02ff585c83bc37c8fb5e06066ee7e053bab5d08bf186beeae9`  
+		Last Modified: Tue, 03 Feb 2026 01:14:11 GMT  
+		Size: 29.8 MB (29838149 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:949063c2f0661e20a90e63721ea5ec4b5ead746d497820c290aa69b12cbad860`  
+		Last Modified: Tue, 10 Feb 2026 19:05:04 GMT  
+		Size: 1.1 KB (1105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fc0ca078209531028a095e5fce80e4e73b570f58458a76664f108c55ac49efc9`  
+		Last Modified: Tue, 10 Feb 2026 19:05:04 GMT  
+		Size: 828.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9448724c2c7c210707666c1ae797b8bd85d89fcf433b5a7daa87d1def2538d6f`  
+		Last Modified: Tue, 10 Feb 2026 19:05:05 GMT  
+		Size: 14.8 MB (14830519 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8fb9552f357c577fa94e9715cbaa9536996a5f69438c29312803f845eb5d6797`  
+		Last Modified: Tue, 10 Feb 2026 19:05:05 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:018870ced155533fc08831b4a248f0a140f1ce46c0a0f783eb2efe8378c09655`  
+		Last Modified: Tue, 10 Feb 2026 19:05:05 GMT  
+		Size: 2.1 KB (2106 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:8-trixie` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:24b4e62b9c7253427fed32751aa0c98772fe7d3617f09f5a7d717b8802f17db6
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.0 MB (2010926 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a98aad34475d8ef74d428a0fe0e1aa1b2cb0b5ac2ca5231538d85dc592189cd6`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:31b1438a2abe7abf6ca21c07202cfb8fc8f2f5fbdde3ffa12022be5e15cf8c7c`  
+		Last Modified: Tue, 10 Feb 2026 19:05:05 GMT  
+		Size: 2.0 MB (1981248 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:d99d026f78f5f6bf063d24270e604f9ccce51b29674a19b6e59e34630a7b31d6`  
+		Last Modified: Tue, 10 Feb 2026 19:05:04 GMT  
+		Size: 29.7 KB (29678 bytes)  
+		MIME: application/vnd.in-toto+json
