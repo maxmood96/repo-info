@@ -444,20 +444,13 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli-dev/copyright`, `/usr/share/do
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris brotli=1.1.0-2
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-2.dsc' brotli_1.1.0-2.dsc 2261 SHA256:39b06802a852629132d549a7f7449dee7f435e801706714a4bc2ea2f15b28f36
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-2.debian.tar.xz' brotli_1.1.0-2.debian.tar.xz 5480 SHA256:3d913a3740bcad9a294007575a6beb1846beadbd62b44fb2bf9fdaeddea3236f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/brotli/1.1.0-2/
 
-- https://sources.debian.net/src/brotli/1.1.0-2/ (for browsing the source)
-- https://sources.debian.net/src/brotli/1.1.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/brotli/1.1.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.8-6`
 
@@ -1194,20 +1187,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.17.1-3
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.17.1-3.dsc' fontconfig_2.17.1-3.dsc 2644 SHA256:fb23b4ae71c2aab2e2162be1a98373e4e1a800e7ddcd1b22ca8260c357112c5d
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.17.1.orig.tar.gz' fontconfig_2.17.1.orig.tar.gz 622045 SHA256:f07504cef87f171ee1748352e2df9b9f125352f620fa0d03a9284306ea2c40a4
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.17.1-3.debian.tar.xz' fontconfig_2.17.1-3.debian.tar.xz 57728 SHA256:87c028a1e0a60cdb503a28cc3b167cc44f6373a3eea88bbaa8ea4fe3e56d540b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/fontconfig/2.17.1-3/
 
-- https://sources.debian.net/src/fontconfig/2.17.1-3/ (for browsing the source)
-- https://sources.debian.net/src/fontconfig/2.17.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fontconfig/2.17.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fonts-dejavu=2.37-8`
 
@@ -1371,19 +1357,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/cpp-x86-
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.229
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.229.dsc' gcc-defaults_1.229.dsc 37836 SHA256:17bf3650515a1b279ad7c3274320cfd0356eefa6d7fbdc7e5cb8d58253cfba3f
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.229.tar.xz' gcc-defaults_1.229.tar.xz 55528 SHA256:8d13cad4125379ac070a4c6b63e76d0a4d70f1fa4367fe4c6b6fa1f1995e9955
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.229/
 
-- https://sources.debian.net/src/gcc-defaults/1.229/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.229/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.229/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.26-1`
 
@@ -2714,20 +2694,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.21.2-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.21.2-1.dsc' libheif_1.21.2-1.dsc 3713 SHA256:2385db1db279f3c51ac12f7774cc86e52e8026e864ae95a56af1e7710c370246
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.21.2.orig.tar.gz' libheif_1.21.2.orig.tar.gz 1859435 SHA256:75f530b7154bc93e7ecf846edfc0416bf5f490612de8c45983c36385aa742b42
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.21.2-1.debian.tar.xz' libheif_1.21.2-1.debian.tar.xz 13144 SHA256:7836bde69e3a4f6c82d07396fd065330772a82c2d3d701c6755472f1d4c64f20
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.21.2-1/
 
-- https://sources.debian.net/src/libheif/1.21.2-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.21.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.21.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -3851,21 +3824,13 @@ Licenses: (parsed from: `/usr/share/doc/m4/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris m4=1.4.20-2
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.20-2.dsc' m4_1.4.20-2.dsc 1783 SHA256:b504d274f28317c614bcf3e091c9f581e43b1b26a016414729100543cc637175
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.20.orig.tar.xz' m4_1.4.20.orig.tar.xz 2044756 SHA256:e236ea3a1ccf5f6c270b1c4bb60726f371fa49459a8eaaebc90b216b328daf2b
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.20.orig.tar.xz.asc' m4_1.4.20.orig.tar.xz.asc 488 SHA256:dbb30ea5940f7a18708e9d25c08358841c36ad356747a09555f5d5eaa0690e61
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.20-2.debian.tar.xz' m4_1.4.20-2.debian.tar.xz 17608 SHA256:f6d6229545346b0003c009828f727e1b2f354de30d5da582e2fec4ed85fd296d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/m4/1.4.20-2/
 
-- https://sources.debian.net/src/m4/1.4.20-2/ (for browsing the source)
-- https://sources.debian.net/src/m4/1.4.20-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/m4/1.4.20-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `make-dfsg=4.4.1-3`
 
@@ -4958,21 +4923,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.11-1
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.11-1.dsc' python3.13_3.13.11-1.dsc 3699 SHA256:89b7935367c17f06a45d1b8f07555e26be953a0eb3e6c92176e683d6650cd832
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.11.orig.tar.xz' python3.13_3.13.11.orig.tar.xz 22704352 SHA256:16ede7bb7cdbfa895d11b0642fa0e523f291e6487194d53cf6d3b338c3a17ea2
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.11.orig.tar.xz.asc' python3.13_3.13.11.orig.tar.xz.asc 963 SHA256:49508930206f812526482208c7ba44c80514ac3a5b8dab4505bd5a308439b16d
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.11-1.debian.tar.xz' python3.13_3.13.11-1.debian.tar.xz 261648 SHA256:7851f85a255b4bbd6f986a89115296e262ec222ed39fbf7a5bcebd4346048661
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.13/3.13.11-1/
 
-- https://sources.debian.net/src/python3.13/3.13.11-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.13/3.13.11-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.13/3.13.11-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.3-3`
 
@@ -5357,20 +5314,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=259-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_259-1.dsc' systemd_259-1.dsc 8690 SHA256:6c7fa02ae6215a7240b8087269e77abc3d422ba7934490b88de3aeba227653ee
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_259.orig.tar.gz' systemd_259.orig.tar.gz 17250241 SHA256:a84123692d1add7f9c48fd11cdf5f901393008c2d2ade667c18f25a20bf1290d
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_259-1.debian.tar.xz' systemd_259-1.debian.tar.xz 185568 SHA256:a7d59268e759334bdc6d32fb32f8ad0ca91d31471399a2f1c8d0aa19dcab6e97
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/259-1/
 
-- https://sources.debian.net/src/systemd/259-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/259-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/259-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.15-6`
 
@@ -5743,21 +5693,13 @@ Licenses: (parsed from: `/usr/share/doc/x11proto-dev/copyright`)
 - `MIT`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xorgproto=2024.1-1
-'http://deb.debian.org/debian/pool/main/x/xorgproto/xorgproto_2024.1-1.dsc' xorgproto_2024.1-1.dsc 3336 SHA256:56c08773592f3cf529bc087449de421aac0645b5c43fad41387b856b5e29fab7
-'http://deb.debian.org/debian/pool/main/x/xorgproto/xorgproto_2024.1.orig.tar.gz' xorgproto_2024.1.orig.tar.gz 1115486 SHA256:4f6b9b4faf91e5df8265b71843a91fc73dc895be6210c84117a996545df296ce
-'http://deb.debian.org/debian/pool/main/x/xorgproto/xorgproto_2024.1.orig.tar.gz.asc' xorgproto_2024.1.orig.tar.gz.asc 195 SHA256:41d650fd19f3df1ae8ad24c2570638d5cdadff819613f8cff96d17310d35347c
-'http://deb.debian.org/debian/pool/main/x/xorgproto/xorgproto_2024.1-1.diff.gz' xorgproto_2024.1-1.diff.gz 25061 SHA256:f250a5bc693079f84dc0caad3cc282433940d3665ff9a77b8dc4dc0961f83d1b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xorgproto/2024.1-1/
 
-- https://sources.debian.net/src/xorgproto/2024.1-1/ (for browsing the source)
-- https://sources.debian.net/src/xorgproto/2024.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xorgproto/2024.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xtrans=1.6.0-1`
 

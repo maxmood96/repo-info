@@ -1500,21 +1500,13 @@ Licenses: (parsed from: `/usr/share/doc/girepository-tools/copyright`, `/usr/sha
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.86.3-5
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.3-5.dsc' glib2.0_2.86.3-5.dsc 4965 SHA256:e177c600ff21b6e8eb8bdd460288e762c081dff93f840953a02120e7fa44bf72
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.3.orig-unicode-data.tar.xz' glib2.0_2.86.3.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.3.orig.tar.xz' glib2.0_2.86.3.orig.tar.xz 5674820 SHA256:b3211d8d34b9df5dca05787ef0ad5d7ca75dec998b970e1aab0001d229977c65
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.3-5.debian.tar.xz' glib2.0_2.86.3-5.debian.tar.xz 148316 SHA256:f017c585a6df84f17973faf09fe27087755e3090ec9b300cb92d506fa4e542af
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.86.3-5/
 
-- https://sources.debian.net/src/glib2.0/2.86.3-5/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.86.3-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.86.3-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.42-11`
 
@@ -2720,20 +2712,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.21.2-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.21.2-1.dsc' libheif_1.21.2-1.dsc 3713 SHA256:2385db1db279f3c51ac12f7774cc86e52e8026e864ae95a56af1e7710c370246
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.21.2.orig.tar.gz' libheif_1.21.2.orig.tar.gz 1859435 SHA256:75f530b7154bc93e7ecf846edfc0416bf5f490612de8c45983c36385aa742b42
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.21.2-1.debian.tar.xz' libheif_1.21.2-1.debian.tar.xz 13144 SHA256:7836bde69e3a4f6c82d07396fd065330772a82c2d3d701c6755472f1d4c64f20
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.21.2-1/
 
-- https://sources.debian.net/src/libheif/1.21.2-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.21.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.21.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -3850,21 +3835,13 @@ Licenses: (parsed from: `/usr/share/doc/m4/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris m4=1.4.20-2
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.20-2.dsc' m4_1.4.20-2.dsc 1783 SHA256:b504d274f28317c614bcf3e091c9f581e43b1b26a016414729100543cc637175
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.20.orig.tar.xz' m4_1.4.20.orig.tar.xz 2044756 SHA256:e236ea3a1ccf5f6c270b1c4bb60726f371fa49459a8eaaebc90b216b328daf2b
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.20.orig.tar.xz.asc' m4_1.4.20.orig.tar.xz.asc 488 SHA256:dbb30ea5940f7a18708e9d25c08358841c36ad356747a09555f5d5eaa0690e61
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.20-2.debian.tar.xz' m4_1.4.20-2.debian.tar.xz 17608 SHA256:f6d6229545346b0003c009828f727e1b2f354de30d5da582e2fec4ed85fd296d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/m4/1.4.20-2/
 
-- https://sources.debian.net/src/m4/1.4.20-2/ (for browsing the source)
-- https://sources.debian.net/src/m4/1.4.20-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/m4/1.4.20-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `make-dfsg=4.4.1-3`
 
@@ -3921,21 +3898,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:11.8.5-4
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5-4.dsc' mariadb_11.8.5-4.dsc 5597 SHA256:10cd99fc02f93741a34fe7cc44e7a94b2af6fc8c29f558e349ab3acb1128b23f
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5.orig.tar.gz' mariadb_11.8.5.orig.tar.gz 119948843 SHA256:bcb7394569c08877c283e1649869504531bee8caafa30288f078e30d99fcb9f6
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5.orig.tar.gz.asc' mariadb_11.8.5.orig.tar.gz.asc 833 SHA256:2e7d4c763e0b5580f6788d57005aaeb3d0742ab6d7e4b89fbc0c9f5d3ea96f21
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5-4.debian.tar.xz' mariadb_11.8.5-4.debian.tar.xz 298076 SHA256:9a986885a9e1ead87cc2993208adf7e5f58ac5542c7db49febfd674affb29d25
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:11.8.5-4/
 
-- https://sources.debian.net/src/mariadb/1:11.8.5-4/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:11.8.5-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:11.8.5-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20250131-2`
 
@@ -4200,20 +4169,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`, `/usr/share/do
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.64.0-1.1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.64.0-1.1.dsc' nghttp2_1.64.0-1.1.dsc 2514 SHA256:1d0393fc66b1db3e9e842a2a02bf41e7c25b020704ef601b7e5d3f5a0e74cc00
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.64.0.orig.tar.gz' nghttp2_1.64.0.orig.tar.gz 1069782 SHA256:b452dc69a1fcbc9375389b8b154175d8b7b125cdd713fc426774c2b79a1ebd77
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.64.0-1.1.debian.tar.xz' nghttp2_1.64.0-1.1.debian.tar.xz 39356 SHA256:02b15d82ad6b62a149481fd2871bda26486457821e9a4fa28897f55e1294f379
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.64.0-1.1/
 
-- https://sources.debian.net/src/nghttp2/1.64.0-1.1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.64.0-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.64.0-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp3=1.12.0-1`
 
@@ -4791,20 +4753,13 @@ Licenses: (parsed from: `/usr/share/doc/libpkgconf7/copyright`, `/usr/share/doc/
 - `ISC`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pkgconf=2.5.1-2
-'http://deb.debian.org/debian/pool/main/p/pkgconf/pkgconf_2.5.1-2.dsc' pkgconf_2.5.1-2.dsc 1772 SHA256:0799c78b93f42fe640a10bd44ff08673c65c3ac3cbdb1057b3584227ee932182
-'http://deb.debian.org/debian/pool/main/p/pkgconf/pkgconf_2.5.1.orig.tar.xz' pkgconf_2.5.1.orig.tar.xz 328064 SHA256:cd05c9589b9f86ecf044c10a2269822bc9eb001eced2582cfffd658b0a50c243
-'http://deb.debian.org/debian/pool/main/p/pkgconf/pkgconf_2.5.1-2.debian.tar.xz' pkgconf_2.5.1-2.debian.tar.xz 11372 SHA256:06f84e1a6f44fcb96c43097dcc34162ece4902e377cc0ec54530c56c1840a2a6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pkgconf/2.5.1-2/
 
-- https://sources.debian.net/src/pkgconf/2.5.1-2/ (for browsing the source)
-- https://sources.debian.net/src/pkgconf/2.5.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pkgconf/2.5.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `postgresql-18=18.1-2`
 
@@ -5348,20 +5303,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=259-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_259-1.dsc' systemd_259-1.dsc 8690 SHA256:6c7fa02ae6215a7240b8087269e77abc3d422ba7934490b88de3aeba227653ee
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_259.orig.tar.gz' systemd_259.orig.tar.gz 17250241 SHA256:a84123692d1add7f9c48fd11cdf5f901393008c2d2ade667c18f25a20bf1290d
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_259-1.debian.tar.xz' systemd_259-1.debian.tar.xz 185568 SHA256:a7d59268e759334bdc6d32fb32f8ad0ca91d31471399a2f1c8d0aa19dcab6e97
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/259-1/
 
-- https://sources.debian.net/src/systemd/259-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/259-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/259-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.15-6`
 
