@@ -1,7 +1,7 @@
 ## `golang:tip-alpine`
 
 ```console
-$ docker pull golang@sha256:5306c15221f9ff95db65b6a735b8577a5a967a7d9db31f15b347b746b56e57e8
+$ docker pull golang@sha256:97bb206b7c74d47809e953083083d6e1e04fe0cf7b8428be6e318232f559bae7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -496,7 +496,7 @@ $ docker pull golang@sha256:764f133c733a59766356e032afc94001ddb9264cf4a1132932e5
 ### `golang:tip-alpine` - linux; riscv64
 
 ```console
-$ docker pull golang@sha256:0f4c94c22b8b2b0abf66c56b73cadffe099d11f6fbca607e9eb878cbc870596e
+$ docker pull golang@sha256:9608ee03911757e67412ed595854d5f7d6b1a48c6ca79aea4ded118fc7f5c9bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -551,24 +551,24 @@ WORKDIR /go
 ### `golang:tip-alpine` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:cfc0128c6478ad0a0f315e7dc96e4233235e26579a616467042c5528e55a19d9
+$ docker pull golang@sha256:b09a688dfc0607863f4c7b8b9e77d9099c7f53b01cb7c29c549b8bab2a31b992
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **220.1 KB (220149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d1f074d8d156d8106d8da3b145d85bb78f72e1906fcbaa446ff23e31cb61a62`
+-	Image ID: `sha256:93a549029b46d3d8b4e11217a8fcc993b61556e9f1edb3d5de3c3d01b323c984`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:605fbd1fd0b500ea1f9f65f1db81da7a30173b102c13fe642021fd8c8096e0a2`  
-		Last Modified: Mon, 09 Feb 2026 21:24:14 GMT  
+	-	`sha256:8f78d03a75c829190532191b070a9f0a14f6a7ea218d11d3058b8203e991bf80`  
+		Last Modified: Tue, 10 Feb 2026 23:10:49 GMT  
 		Size: 195.0 KB (194996 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0c7bec450d55446931dfd7e80dc302e24303d5569008cbf3321a77500ec0ba0b`  
-		Last Modified: Mon, 09 Feb 2026 21:24:14 GMT  
+	-	`sha256:850ebe197b29fdde63963ca4a0506f125d1b4e1124ef12b3f1544896fd385533`  
+		Last Modified: Tue, 10 Feb 2026 23:10:49 GMT  
 		Size: 25.2 KB (25153 bytes)  
 		MIME: application/vnd.in-toto+json
 
