@@ -1,18 +1,18 @@
-# `eclipse-mosquitto:2.1.1-alpine`
+# `eclipse-mosquitto:2.1.2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e32c4d42a65d5a2f5d89888536657885b0c3b81c30cbb395c6d72ab45e93b00e`
-- Created: `2026-02-05T17:54:47.212287998Z`
-- Virtual Size: ~ 21.54 Mb  
+- Image ID: `sha256:f803c9aab1b4f5457fe7b80c40254916e3d76722d2873f9f12a55b519cca5140`
+- Created: `2026-02-09T20:01:28.45764521Z`
+- Virtual Size: ~ 22.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["/usr/sbin/mosquitto","-c","/mosquitto/config/mosquitto.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `VERSION=2.1.1`
-  - `DOWNLOAD_SHA256=d93026a8f8255a32fe146ca77df5e26259b7947745370a3944a68ddb4ec663ff`
+  - `VERSION=2.1.2`
+  - `DOWNLOAD_SHA256=fd905380691ac65ea5a93779e8214941829e3d6e038d5edff9eac5fd74cbed02`
   - `GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7`
 - Labels:
   - `org.opencontainers.image.authors=Roger Light <roger@atchoo.org>`
@@ -22,7 +22,7 @@
   - `org.opencontainers.image.source=https://github.com/eclipse-mosquitto/mosquitto`
   - `org.opencontainers.image.title=eclipse-mosquitto`
   - `org.opencontainers.image.url=https://mosquitto.org/`
-  - `org.opencontainers.image.version=2.1.1`
+  - `org.opencontainers.image.version=2.1.2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -298,6 +298,23 @@ Apache-2.0
 
 ```
 
+### `apk` package: `libedit`
+
+```console
+libedit-20251016.3.1-r0 description:
+BSD line editing library
+
+libedit-20251016.3.1-r0 webpage:
+https://www.thrysoee.dk/editline
+
+libedit-20251016.3.1-r0 installed size:
+173 KiB
+
+libedit-20251016.3.1-r0 license:
+BSD-3-Clause
+
+```
+
 ### `apk` package: `libffi`
 
 ```console
@@ -346,6 +363,23 @@ libmicrohttpd-1.0.2-r1 installed size:
 
 libmicrohttpd-1.0.2-r1 license:
 LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libncursesw`
+
+```console
+libncursesw-6.5_p20251123-r0 description:
+Console display library (libncursesw)
+
+libncursesw-6.5_p20251123-r0 webpage:
+https://invisible-island.net/ncurses/
+
+libncursesw-6.5_p20251123-r0 installed size:
+334 KiB
+
+libncursesw-6.5_p20251123-r0 license:
+X11
 
 ```
 
@@ -431,6 +465,23 @@ musl-utils-1.2.5-r21 installed size:
 
 musl-utils-1.2.5-r21 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
+
+```
+
+### `apk` package: `ncurses-terminfo-base`
+
+```console
+ncurses-terminfo-base-6.5_p20251123-r0 description:
+Descriptions of common terminals
+
+ncurses-terminfo-base-6.5_p20251123-r0 webpage:
+https://invisible-island.net/ncurses/
+
+ncurses-terminfo-base-6.5_p20251123-r0 installed size:
+98 KiB
+
+ncurses-terminfo-base-6.5_p20251123-r0 license:
+X11
 
 ```
 
