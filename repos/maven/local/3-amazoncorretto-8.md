@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c84ae88bee751f1e268de47afc8390232696679bf60af6510b7eb3fc27ed93a`
-- Created: `2026-02-05T23:31:12.948673254Z`
-- Virtual Size: ~ 908.64 Mb  
+- Image ID: `sha256:ee1352884266dc2d93b32962c79c97b17180ed184250972271ae60030f81df13`
+- Created: `2026-02-10T19:11:29.564551595Z`
+- Virtual Size: ~ 908.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -932,15 +932,15 @@ $ dnf --quiet download --source --url libstdc++-7.3.1-18.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/5c6fef27354d4abb2fae03725436346c134b4d9683f8f64279a2b307ef2b13dc/../../../../../blobstore/558c4cf21593ab12959af6d4dd00e3877700a59693886b804a36498e3e5c372f/gcc-7.3.1-18.amzn2.src.rpm
 ```
 
-### `rpm` package: `libtasn1-4.10-1.amzn2.0.7.x86_64`
+### `rpm` package: `libtasn1-4.10-1.amzn2.0.8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libtasn1-4.10-1.amzn2.0.7
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/5c6fef27354d4abb2fae03725436346c134b4d9683f8f64279a2b307ef2b13dc/../../../../../blobstore/d552793af3625c2f1d593bc8e1b81e5acece892c17f16882edb55ff89dbae395/libtasn1-4.10-1.amzn2.0.7.src.rpm
+$ dnf --quiet download --source --url libtasn1-4.10-1.amzn2.0.8
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/5c6fef27354d4abb2fae03725436346c134b4d9683f8f64279a2b307ef2b13dc/../../../../../blobstore/5a0de19487d5f7ad2dd3ac47f6d4a8a09f3dd13f285e4b030fc31b65485a1b23/libtasn1-4.10-1.amzn2.0.8.src.rpm
 ```
 
 ### `rpm` package: `libunistring-0.9.3-9.amzn2.0.2.x86_64`
@@ -987,15 +987,15 @@ $ dnf --quiet download --source --url libverto-0.2.5-4.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/5c6fef27354d4abb2fae03725436346c134b4d9683f8f64279a2b307ef2b13dc/../../../../../blobstore/23eb8faf40e93c9ecbfeccc868d2e42b65bde82f92e1af0b0e9e17c387f1b049/libverto-0.2.5-4.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.1-6.amzn2.5.21.x86_64`
+### `rpm` package: `libxml2-2.9.1-6.amzn2.5.23.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.21
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/5c6fef27354d4abb2fae03725436346c134b4d9683f8f64279a2b307ef2b13dc/../../../../../blobstore/9343de0beb1ef49efe2eaca2e7454e27ddfa83139f891fe0bc482fb03bfbcf7e/libxml2-2.9.1-6.amzn2.5.21.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.23
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/5c6fef27354d4abb2fae03725436346c134b4d9683f8f64279a2b307ef2b13dc/../../../../../blobstore/855b11fc6f4236215a79f677ab50115a3c27ced74605fd29a7708a38e5499cf1/libxml2-2.9.1-6.amzn2.5.23.src.rpm
 ```
 
 ### `rpm` package: `lua-5.1.4-15.amzn2.0.2.x86_64`
