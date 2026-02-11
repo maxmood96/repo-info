@@ -355,20 +355,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-cluster/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cluster=2.1.8.1-1
-'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.1.8.1-1.dsc' cluster_2.1.8.1-1.dsc 1845 SHA256:c085f1ba08fb98239dd0f65f49262ae77d835056d8998e5179695aae65f85152
-'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.1.8.1.orig.tar.gz' cluster_2.1.8.1.orig.tar.gz 372103 SHA256:4b95b78e09b17ddca72edc0bb180c753c004ed2f61c3eb12e0451ac77f441e57
-'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.1.8.1-1.debian.tar.xz' cluster_2.1.8.1-1.debian.tar.xz 4392 SHA256:e4a98e91a7f14ae37690affc02c8f18553563c80d8dfbb886206b5b53f634b3c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cluster/2.1.8.1-1/
 
-- https://sources.debian.net/src/cluster/2.1.8.1-1/ (for browsing the source)
-- https://sources.debian.net/src/cluster/2.1.8.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cluster/2.1.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `codetools=0.2-20-1`
 
@@ -785,20 +778,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.17.1-3
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.17.1-3.dsc' fontconfig_2.17.1-3.dsc 2644 SHA256:fb23b4ae71c2aab2e2162be1a98373e4e1a800e7ddcd1b22ca8260c357112c5d
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.17.1.orig.tar.gz' fontconfig_2.17.1.orig.tar.gz 622045 SHA256:f07504cef87f171ee1748352e2df9b9f125352f620fa0d03a9284306ea2c40a4
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.17.1-3.debian.tar.xz' fontconfig_2.17.1-3.debian.tar.xz 57728 SHA256:87c028a1e0a60cdb503a28cc3b167cc44f6373a3eea88bbaa8ea4fe3e56d540b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/fontconfig/2.17.1-3/
 
-- https://sources.debian.net/src/fontconfig/2.17.1-3/ (for browsing the source)
-- https://sources.debian.net/src/fontconfig/2.17.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fontconfig/2.17.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `foreign=0.8.91-1`
 
@@ -1011,11 +997,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.86.3-5
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.86.3-5.dsc' glib2.0_2.86.3-5.dsc 4965 SHA256:e177c600ff21b6e8eb8bdd460288e762c081dff93f840953a02120e7fa44bf72
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.86.3.orig-unicode-data.tar.xz' glib2.0_2.86.3.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.86.3.orig.tar.xz' glib2.0_2.86.3.orig.tar.xz 5674820 SHA256:b3211d8d34b9df5dca05787ef0ad5d7ca75dec998b970e1aab0001d229977c65
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.86.3-5.debian.tar.xz' glib2.0_2.86.3-5.debian.tar.xz 148316 SHA256:f017c585a6df84f17973faf09fe27087755e3090ec9b300cb92d506fa4e542af
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.3-5.dsc' glib2.0_2.86.3-5.dsc 4965 SHA256:e177c600ff21b6e8eb8bdd460288e762c081dff93f840953a02120e7fa44bf72
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.3.orig-unicode-data.tar.xz' glib2.0_2.86.3.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.3.orig.tar.xz' glib2.0_2.86.3.orig.tar.xz 5674820 SHA256:b3211d8d34b9df5dca05787ef0ad5d7ca75dec998b970e1aab0001d229977c65
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.3-5.debian.tar.xz' glib2.0_2.86.3-5.debian.tar.xz 148316 SHA256:f017c585a6df84f17973faf09fe27087755e3090ec9b300cb92d506fa4e542af
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glib2.0/2.86.3-5/ (for browsing the source)
+- https://sources.debian.net/src/glib2.0/2.86.3-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glib2.0/2.86.3-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.42-11`
 
@@ -1478,10 +1470,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lattice=0.22-7-1
-'http://http.debian.net/debian/pool/main/l/lattice/lattice_0.22-7-1.dsc' lattice_0.22-7-1.dsc 1838 SHA256:65cab033d638165efe6b8998d9d70603f5c8ec7b339bc9b2e6ef99a4c296432d
-'http://http.debian.net/debian/pool/main/l/lattice/lattice_0.22-7.orig.tar.gz' lattice_0.22-7.orig.tar.gz 598622 SHA256:400fa62b95e90410d52a36cee2ddeb025dd49695e55fe3db709fe60886bff9f7
-'http://http.debian.net/debian/pool/main/l/lattice/lattice_0.22-7-1.debian.tar.xz' lattice_0.22-7-1.debian.tar.xz 5400 SHA256:6992ffd8f0603cfafae3983913627cf40ef6a8c8cc4291580aa5eb1598d1db13
+'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.22-7-1.dsc' lattice_0.22-7-1.dsc 1838 SHA256:65cab033d638165efe6b8998d9d70603f5c8ec7b339bc9b2e6ef99a4c296432d
+'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.22-7.orig.tar.gz' lattice_0.22-7.orig.tar.gz 598622 SHA256:400fa62b95e90410d52a36cee2ddeb025dd49695e55fe3db709fe60886bff9f7
+'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.22-7-1.debian.tar.xz' lattice_0.22-7-1.debian.tar.xz 5400 SHA256:6992ffd8f0603cfafae3983913627cf40ef6a8c8cc4291580aa5eb1598d1db13
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/lattice/0.22-7-1/ (for browsing the source)
+- https://sources.debian.net/src/lattice/0.22-7-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lattice/0.22-7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lerc=4.0.0+ds-5`
 
@@ -2417,20 +2415,13 @@ Licenses: (parsed from: `/usr/share/doc/littler/copyright`, `/usr/share/doc/r-cr
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris littler=0.3.21-2
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.21-2.dsc' littler_0.3.21-2.dsc 1888 SHA256:b6ec506a7b7d2ae8cde91ebce2764311c5243f7fe792c3bfd2b1eb080dda91d0
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.21.orig.tar.gz' littler_0.3.21.orig.tar.gz 129864 SHA256:9e8be7aca97ef31ecc7af845954caddf52f9dad4d28ee1392dca829b75e64085
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.21-2.debian.tar.xz' littler_0.3.21-2.debian.tar.xz 5484 SHA256:5d0cde944c93edbd2064320942b1718d46562321dc77a2062a5cda5c0b9134b9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/littler/0.3.21-2/
 
-- https://sources.debian.net/src/littler/0.3.21-2/ (for browsing the source)
-- https://sources.debian.net/src/littler/0.3.21-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/littler/0.3.21-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-6`
 
@@ -2629,10 +2620,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nghttp2=1.64.0-1.1
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.64.0-1.1.dsc' nghttp2_1.64.0-1.1.dsc 2514 SHA256:1d0393fc66b1db3e9e842a2a02bf41e7c25b020704ef601b7e5d3f5a0e74cc00
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.64.0.orig.tar.gz' nghttp2_1.64.0.orig.tar.gz 1069782 SHA256:b452dc69a1fcbc9375389b8b154175d8b7b125cdd713fc426774c2b79a1ebd77
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.64.0-1.1.debian.tar.xz' nghttp2_1.64.0-1.1.debian.tar.xz 39356 SHA256:02b15d82ad6b62a149481fd2871bda26486457821e9a4fa28897f55e1294f379
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.64.0-1.1.dsc' nghttp2_1.64.0-1.1.dsc 2514 SHA256:1d0393fc66b1db3e9e842a2a02bf41e7c25b020704ef601b7e5d3f5a0e74cc00
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.64.0.orig.tar.gz' nghttp2_1.64.0.orig.tar.gz 1069782 SHA256:b452dc69a1fcbc9375389b8b154175d8b7b125cdd713fc426774c2b79a1ebd77
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.64.0-1.1.debian.tar.xz' nghttp2_1.64.0-1.1.debian.tar.xz 39356 SHA256:02b15d82ad6b62a149481fd2871bda26486457821e9a4fa28897f55e1294f379
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/nghttp2/1.64.0-1.1/ (for browsing the source)
+- https://sources.debian.net/src/nghttp2/1.64.0-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp2/1.64.0-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp3=1.12.0-1`
 
@@ -3031,14 +3028,13 @@ Licenses: (parsed from: `/usr/share/doc/libpkgconf7/copyright`, `/usr/share/doc/
 - `ISC`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pkgconf=2.5.1-2
-'http://http.debian.net/debian/pool/main/p/pkgconf/pkgconf_2.5.1-2.dsc' pkgconf_2.5.1-2.dsc 1772 SHA256:0799c78b93f42fe640a10bd44ff08673c65c3ac3cbdb1057b3584227ee932182
-'http://http.debian.net/debian/pool/main/p/pkgconf/pkgconf_2.5.1.orig.tar.xz' pkgconf_2.5.1.orig.tar.xz 328064 SHA256:cd05c9589b9f86ecf044c10a2269822bc9eb001eced2582cfffd658b0a50c243
-'http://http.debian.net/debian/pool/main/p/pkgconf/pkgconf_2.5.1-2.debian.tar.xz' pkgconf_2.5.1-2.debian.tar.xz 11372 SHA256:06f84e1a6f44fcb96c43097dcc34162ece4902e377cc0ec54530c56c1840a2a6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pkgconf/2.5.1-2/
+
 
 ### `dpkg` source package: `procps=2:4.0.4-9`
 
@@ -3446,14 +3442,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=259-1
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_259-1.dsc' systemd_259-1.dsc 8690 SHA256:6c7fa02ae6215a7240b8087269e77abc3d422ba7934490b88de3aeba227653ee
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_259.orig.tar.gz' systemd_259.orig.tar.gz 17250241 SHA256:a84123692d1add7f9c48fd11cdf5f901393008c2d2ade667c18f25a20bf1290d
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_259-1.debian.tar.xz' systemd_259-1.debian.tar.xz 185568 SHA256:a7d59268e759334bdc6d32fb32f8ad0ca91d31471399a2f1c8d0aa19dcab6e97
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/systemd/259-1/
+
 
 ### `dpkg` source package: `sysvinit=3.15-6`
 
@@ -3728,10 +3723,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris vim=2:9.1.2103-1
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.2103-1.dsc' vim_9.1.2103-1.dsc 3198 SHA256:2e53cedd594fa746e65ed21582903668d441ec2d6721a0d1985bfb944e157567
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.2103.orig.tar.xz' vim_9.1.2103.orig.tar.xz 12968388 SHA256:ddaa3df9a666f50e30306c7ca7046f00a30e8524166b951f9dc48bb2b27b4de4
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.2103-1.debian.tar.xz' vim_9.1.2103-1.debian.tar.xz 192436 SHA256:c93e8e7b8eec8ccf4ea817434934a9d13a79fe9bf591b69ea530760318007dd4
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.2103-1.dsc' vim_9.1.2103-1.dsc 3198 SHA256:2e53cedd594fa746e65ed21582903668d441ec2d6721a0d1985bfb944e157567
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.2103.orig.tar.xz' vim_9.1.2103.orig.tar.xz 12968388 SHA256:ddaa3df9a666f50e30306c7ca7046f00a30e8524166b951f9dc48bb2b27b4de4
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.2103-1.debian.tar.xz' vim_9.1.2103-1.debian.tar.xz 192436 SHA256:c93e8e7b8eec8ccf4ea817434934a9d13a79fe9bf591b69ea530760318007dd4
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/vim/2:9.1.2103-1/ (for browsing the source)
+- https://sources.debian.net/src/vim/2:9.1.2103-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/vim/2:9.1.2103-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
