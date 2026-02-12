@@ -1,10 +1,10 @@
-# `mongo:8.2.4-noble`
+# `mongo:8.2.5-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:45787d3b0f929dcf0d2708e49957282a491813e1bf01287f2d044814d090ac37`
-- Created: `2026-01-28T18:57:13.760793622Z`
-- Virtual Size: ~ 923.35 Mb  
+- Image ID: `sha256:9b2e4f1b70edc3580eb1cba1081eb2774e9098e850e892103c5171087a646552`
+- Created: `2026-02-10T20:06:12.564720457Z`
+- Virtual Size: ~ 922.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=8.2`
-  - `MONGO_VERSION=8.2.4`
+  - `MONGO_VERSION=8.2.5`
   - `HOME=/data/db`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
 - Labels:
@@ -145,13 +145,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13ubuntu10.3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.3.dsc' base-files_13ubuntu10.3.dsc 1377 SHA512:616eacb8d3217d4c3e8a57f5f3561411933ffdf680a4161cdf96cc39494f093933667d59263e77db92725ccfbf22fbbc60f0b6c94fce853a3e15d5e046e8b3fb
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.3.tar.xz' base-files_13ubuntu10.3.tar.xz 94184 SHA512:9fe21ced2bbb578c164f7cd60e6068a7b66d5e62848b6e7b2ea5670fba48d692a0ab477210bbcc92e41ce16b4ae589784c7168979b5b2727a16c4d1df5f8b22b
-```
 
 ### `dpkg` source package: `base-passwd=3.6.3build1`
 
@@ -1374,11 +1370,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20240123-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20240123-1build1.debian.tar.xz' mawk_1.3.4.20240123-1build1.debian.tar.xz 15704 SHA512:53a4367656e29f5897ba29cf38b30e2b3a2758d990bbd3a90bdbceb5d3c467615496407af8bd437b4df2e9518096865b7ec6739b0465e8bba20d87ed71782268
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.14.0`
+### `dpkg` source package: `mongodb-database-tools=100.14.1`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.14.0`
+- `mongodb-database-tools=100.14.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1403,17 +1399,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=8.2.4`
+### `dpkg` source package: `mongodb-org=8.2.5`
 
 Binary Packages:
 
-- `mongodb-org=8.2.4`
-- `mongodb-org-database=8.2.4`
-- `mongodb-org-database-tools-extra=8.2.4`
-- `mongodb-org-mongos=8.2.4`
-- `mongodb-org-server=8.2.4`
-- `mongodb-org-shell=8.2.4`
-- `mongodb-org-tools=8.2.4`
+- `mongodb-org=8.2.5`
+- `mongodb-org-database=8.2.5`
+- `mongodb-org-database-tools-extra=8.2.5`
+- `mongodb-org-mongos=8.2.5`
+- `mongodb-org-server=8.2.5`
+- `mongodb-org-shell=8.2.5`
+- `mongodb-org-tools=8.2.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1544,12 +1540,12 @@ $ apt-get source -qq --print-uris numactl=2.0.18-1ubuntu0.24.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/numactl_2.0.18-1ubuntu0.24.04.1.debian.tar.xz' numactl_2.0.18-1ubuntu0.24.04.1.debian.tar.xz 7936 SHA512:dfa172698cb88e33a00b88735b9b643538471786c4b0e54160e8c10004b82a7b94cd0466bb8206bb632710512964298cc32f2341d8f0983b9cf6235057b4bc8d
 ```
 
-### `dpkg` source package: `openldap=2.6.7+dfsg-1~exp1ubuntu8.2`
+### `dpkg` source package: `openldap=2.6.10+dfsg-0ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `libldap-common=2.6.7+dfsg-1~exp1ubuntu8.2`
-- `libldap2:amd64=2.6.7+dfsg-1~exp1ubuntu8.2`
+- `libldap-common=2.6.10+dfsg-0ubuntu0.24.04.1`
+- `libldap2:amd64=2.6.10+dfsg-0ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libldap-common/copyright`, `/usr/share/doc/libldap2/copyright`)
 
@@ -1578,9 +1574,14 @@ Licenses: (parsed from: `/usr/share/doc/libldap-common/copyright`, `/usr/share/d
 - `UMich`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.6.10+dfsg-0ubuntu0.24.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg-0ubuntu0.24.04.1.dsc' openldap_2.6.10+dfsg-0ubuntu0.24.04.1.dsc 3653 SHA512:828b648db337736f5560dd9a9a8d1b49cd3a6c642cb0891091879a48783fdd9a38a074e5b8b244524021a2c4949e93edaba4e712870c1da8614c647ab8603319
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg.orig.tar.xz' openldap_2.6.10+dfsg.orig.tar.xz 3754560 SHA512:9c24cab12ea4002560670d1a6053c00582aea1713e3db262bbf5aae7666c6d50ef28e7b59ca4dbe5c5b5903e56268911a935a58ef852239c259830458e804f62
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg-0ubuntu0.24.04.1.debian.tar.xz' openldap_2.6.10+dfsg-0ubuntu0.24.04.1.debian.tar.xz 191132 SHA512:5a64a165cd7602cff38528b117e8b5f29b8953cf3edf3cc8ff87b68ce8a84b60a0dc7c3a346dab38d0fde602a2b0a8f490af221a02891dc9624a454121dc1c00
+```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.7`
 

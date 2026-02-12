@@ -1,10 +1,10 @@
-# `mongo:7.0.29-jammy`
+# `mongo:7.0.30-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1eca0e3663c3af7947a57444cc8fd76963f08a51518b50f3ec4c466abb579e2b`
-- Created: `2026-01-28T18:58:51.227455783Z`
-- Virtual Size: ~ 844.86 Mb  
+- Image ID: `sha256:4bcad3bdc122497675b8b5f7edbd62b3cb2366fa6d1f01932dc9739a2b918241`
+- Created: `2026-02-10T20:07:48.900040518Z`
+- Virtual Size: ~ 844.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=7.0`
-  - `MONGO_VERSION=7.0.29`
+  - `MONGO_VERSION=7.0.30`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1280,11 +1280,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20200120-3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20200120-3.debian.tar.xz' mawk_1.3.4.20200120-3.debian.tar.xz 7520 SHA512:bc4f5401de313108595ba91b17f44b5c67d7650b5557eef8a6c63c75e2ccee5dfd8900576d7e81f0ab1ac2e570f64fa75f38f56f6d4535437c803029216501af
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.14.0`
+### `dpkg` source package: `mongodb-database-tools=100.14.1`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.14.0`
+- `mongodb-database-tools=100.14.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1309,17 +1309,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=7.0.29`
+### `dpkg` source package: `mongodb-org=7.0.30`
 
 Binary Packages:
 
-- `mongodb-org=7.0.29`
-- `mongodb-org-database=7.0.29`
-- `mongodb-org-database-tools-extra=7.0.29`
-- `mongodb-org-mongos=7.0.29`
-- `mongodb-org-server=7.0.29`
-- `mongodb-org-shell=7.0.29`
-- `mongodb-org-tools=7.0.29`
+- `mongodb-org=7.0.30`
+- `mongodb-org-database=7.0.30`
+- `mongodb-org-database-tools-extra=7.0.30`
+- `mongodb-org-mongos=7.0.30`
+- `mongodb-org-server=7.0.30`
+- `mongodb-org-shell=7.0.30`
+- `mongodb-org-tools=7.0.30`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1432,20 +1432,25 @@ $ apt-get source -qq --print-uris numactl=2.0.14-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/numactl_2.0.14-3ubuntu2.debian.tar.xz' numactl_2.0.14-3ubuntu2.debian.tar.xz 7588 SHA512:f3e34577c93c315047be275596d59e0481f177e090cd0c7ca8ef6ac3a79eab1ee988003afd49053a0cc6a86bf3f4b0ea387f53da279f9dcbc0d9ed7ca3815fd1
 ```
 
-### `dpkg` source package: `openldap=2.5.19+dfsg-0ubuntu0.22.04.1`
+### `dpkg` source package: `openldap=2.5.20+dfsg-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `libldap-2.5-0:amd64=2.5.19+dfsg-0ubuntu0.22.04.1`
-- `libldap-common=2.5.19+dfsg-0ubuntu0.22.04.1`
+- `libldap-2.5-0:amd64=2.5.20+dfsg-0ubuntu0.22.04.1`
+- `libldap-common=2.5.20+dfsg-0ubuntu0.22.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.5.20+dfsg-0ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.dsc 3473 SHA512:8691bcf8b37fcc6d966082180995640144033e24b0e5e41d8d02a9a3a6bb3690bf4d765cd2942f578d0f7cee4f4dd44ec87d619d146cba46f6a7ef913cfc46ec
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg.orig.tar.gz' openldap_2.5.20+dfsg.orig.tar.gz 5626931 SHA512:956dde588cb03643cf60954c3ebc1a1303e5b56e5d86214cb27b7d3fe7f2880ac684c5c40f3c2bbc8e17877ca166d890cab14e5abc8c71cdc329a40d59aa9152
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.debian.tar.xz 178364 SHA512:1c16d4050864511b688889b9ac3c375168111cd2d3b9b9633d594b2fc8881dca9bb4fb2f2fbbfe249a3a2d7525900e8249948bfcfe8f92ee975d2a45fb77c586
+```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.20`
 
