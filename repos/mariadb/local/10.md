@@ -1,10 +1,10 @@
-# `mariadb:10.11.15-jammy`
+# `mariadb:10.11.16-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:90c7b3b2c9724d9b9f3766d159e77564a30d016b9790ab897170569f642aa91c`
-- Created: `2026-01-15T22:32:53.032107496Z`
-- Virtual Size: ~ 330.76 Mb  
+- Image ID: `sha256:1b9cb5c062445269a3c89cf302c51f1cc7a00f305ab2fa40d94db5002714630e`
+- Created: `2026-02-09T19:56:08.99362371Z`
+- Virtual Size: ~ 330.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.19`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:10.11.15+maria~ubu2204`
+  - `MARIADB_VERSION=1:10.11.16+maria~ubu2204`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:jammy`
@@ -25,7 +25,7 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=10.11.15`
+  - `org.opencontainers.image.version=10.11.16`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -461,11 +461,11 @@ $ apt-get source -qq --print-uris findutils=4.8.0-1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.8.0-1ubuntu3.debian.tar.xz' findutils_4.8.0-1ubuntu3.debian.tar.xz 27716 SHA512:f0ce8b61f4e0beabad3178424c804468dc4c57f37794887954df28c36227ce77f00383903274a1995a104f9def44270070b9e033eb46d52f5aaaedb1f5883587
 ```
 
-### `dpkg` source package: `galera-4=26.4.24-ubu2204`
+### `dpkg` source package: `galera-4=26.4.25-ubu2204`
 
 Binary Packages:
 
-- `galera-4=26.4.24-ubu2204`
+- `galera-4=26.4.25-ubu2204`
 
 Licenses: (parsed from: `/usr/share/doc/galera-4/copyright`)
 
@@ -1563,18 +1563,18 @@ $ apt-get source -qq --print-uris lz4=1.9.3-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.9.3-2build2.debian.tar.xz' lz4_1.9.3-2build2.debian.tar.xz 14088 SHA512:9f61516a672186299a96aee5b7a71d9cb1ad3db2697fa10b802fef14a63587bb3459281f7300726711a116893c10858914f558aece1d224876e287020a23dde6
 ```
 
-### `dpkg` source package: `mariadb=1:10.11.15+maria~ubu2204`
+### `dpkg` source package: `mariadb=1:10.11.16+maria~ubu2204`
 
 Binary Packages:
 
-- `libmariadb3:amd64=1:10.11.15+maria~ubu2204`
-- `mariadb-backup=1:10.11.15+maria~ubu2204`
-- `mariadb-client=1:10.11.15+maria~ubu2204`
-- `mariadb-client-core=1:10.11.15+maria~ubu2204`
-- `mariadb-common=1:10.11.15+maria~ubu2204`
-- `mariadb-server=1:10.11.15+maria~ubu2204`
-- `mariadb-server-core=1:10.11.15+maria~ubu2204`
-- `mysql-common=1:10.11.15+maria~ubu2204`
+- `libmariadb3:amd64=1:10.11.16+maria~ubu2204`
+- `mariadb-backup=1:10.11.16+maria~ubu2204`
+- `mariadb-client=1:10.11.16+maria~ubu2204`
+- `mariadb-client-core=1:10.11.16+maria~ubu2204`
+- `mariadb-common=1:10.11.16+maria~ubu2204`
+- `mariadb-server=1:10.11.16+maria~ubu2204`
+- `mariadb-server-core=1:10.11.16+maria~ubu2204`
+- `mysql-common=1:10.11.16+maria~ubu2204`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1583,9 +1583,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb=1:10.11.15+maria~ubu2204
-'http://archive.mariadb.org/mariadb-10.11.15/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.15%2bmaria%7eubu2204.dsc' mariadb_10.11.15+maria~ubu2204.dsc 4305 SHA256:f83a4c2b96270d2eba1a47c581a5ae259909a9489ac7d1288757f78b6490ec5c
-'http://archive.mariadb.org/mariadb-10.11.15/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.15%2bmaria%7eubu2204.tar.xz' mariadb_10.11.15+maria~ubu2204.tar.xz 180600564 SHA256:5e3aa3c271f3243333567315073947e4baa2e826b63bc03f779d27b7355dea0c
+$ apt-get source -qq --print-uris mariadb=1:10.11.16+maria~ubu2204
+'http://archive.mariadb.org/mariadb-10.11.16/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.16%2bmaria%7eubu2204.dsc' mariadb_10.11.16+maria~ubu2204.dsc 4305 SHA256:0b45ea6470ddfd06e4a240c2823478b24f2e8454d41f751bb39ec989dff84f9f
+'http://archive.mariadb.org/mariadb-10.11.16/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.16%2bmaria%7eubu2204.tar.xz' mariadb_10.11.16+maria~ubu2204.tar.xz 183111832 SHA256:8198b67a36a6ac5b41d10c5769bfc0ece53e335853d0006ae5cc1cb5e3219c53
 ```
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-3`
@@ -1689,9 +1689,8 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 Binary Packages:
 
 - `libssl3:amd64=3.0.2-0ubuntu1.20`
-- `openssl=3.0.2-0ubuntu1.20`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1701,6 +1700,29 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.21`
+
+Binary Packages:
+
+- `openssl=3.0.2-0ubuntu1.21`
+
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.21
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.21.dsc' openssl_3.0.2-0ubuntu1.21.dsc 2730 SHA512:d44268af95768ef47713202c8f544f58e78e4849ac594344cf538c4a3b4e315673424258b51e41753b0a071091d2d601e59c1cc3a91ee7228feacbf008b967bf
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.21.debian.tar.xz' openssl_3.0.2-0ubuntu1.21.debian.tar.xz 271652 SHA512:fc8b09b1ef6832af36384b3e1c1b2c8e0e435ea82375cb3e4f7eedae6965a0280abcd7f3b7cb497902929422b93e4fdf4dad7a9dd1938b993add3d4b4ab66785
+```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 

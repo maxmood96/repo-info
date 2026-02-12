@@ -1,10 +1,10 @@
-# `mariadb:10.11.15-ubi9`
+# `mariadb:10.11.16-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4b2635618893254ffdc0e5ce53dea07376e1efd207b5da9d6e2b6ab7fdc5bf71`
-- Created: `2026-02-05T19:52:29.019497062Z`
-- Virtual Size: ~ 516.81 Mb  
+- Image ID: `sha256:ab6ce6b18e670b1beab78320a5ced878e76bd402409475aa3c3f8d038e129c97`
+- Created: `2026-02-09T20:02:48.082784212Z`
+- Virtual Size: ~ 516.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
   - `GOSU_VERSION=1.19`
-  - `MARIADB_VERSION=10.11.15`
+  - `MARIADB_VERSION=10.11.16`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-02-05T04:57:10Z`
@@ -40,18 +40,18 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=10.11.15`
+  - `org.opencontainers.image.version=10.11.16`
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
   - `vcs-ref=21849199b7179dc3074812b8e24698ec609d6a5c`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
-  - `version=10.11.15`
+  - `version=10.11.16`
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `MariaDB-backup-10.11.15-1.el9.x86_64`
+### `rpm` package: `MariaDB-backup-10.11.16-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -69,7 +69,7 @@ Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-server-10.11.15-1.el9.x86_64`
+### `rpm` package: `MariaDB-server-10.11.16-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -309,7 +309,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-http://mirror.sfo12.us.leaseweb.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-5.el9_7.1.x86_64`
@@ -491,7 +491,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-http://mirror.sfo12.us.leaseweb.net/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -581,7 +581,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://mirror.sfo12.us.leaseweb.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1164,7 +1164,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.6.2-1.el9
-http://mirror.sfo12.us.leaseweb.net/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.5-1.el9.x86_64`
@@ -2231,7 +2231,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://mirror.sfo12.us.leaseweb.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2242,7 +2242,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://mirror.sfo12.us.leaseweb.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
