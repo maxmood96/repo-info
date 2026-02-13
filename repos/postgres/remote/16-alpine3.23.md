@@ -1,7 +1,7 @@
 ## `postgres:16-alpine3.23`
 
 ```console
-$ docker pull postgres@sha256:4327b9fd295502f326f44153a1045a7170ddbfffed1c3829798328556cfd09e2
+$ docker pull postgres@sha256:0780ef0827baebe99b75a7feb7d97110d6ec1e4df3e5c4ec5b9a5143ef90ac3a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,13 +26,13 @@ $ docker pull postgres@sha256:4327b9fd295502f326f44153a1045a7170ddbfffed1c382979
 ### `postgres:16-alpine3.23` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:63cf43b1a12b5b9d1f7a576f8f5852d7ce0792618661969135ac6c276237eec9
+$ docker pull postgres@sha256:129fbfd388241accda7b15e38ada14b11c70698e01e5c8072265b0eaa03af010
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.0 MB (109959711 bytes)**  
+-	Total Size: **110.0 MB (109975665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7ead3a9d3fe4f2906d95e00edc8b36b65749a00a49c47285a35d2be95e876dd`
+-	Image ID: `sha256:87e04d274d186c7331d0e13c7c90c8b9f63b0d7ae94476c98a229a94d62c9745`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -41,49 +41,49 @@ $ docker pull postgres@sha256:63cf43b1a12b5b9d1f7a576f8f5852d7ce0792618661969135
 ADD alpine-minirootfs-3.23.3-x86_64.tar.gz / # buildkit
 # Wed, 28 Jan 2026 01:18:04 GMT
 CMD ["/bin/sh"]
-# Wed, 28 Jan 2026 02:29:53 GMT
+# Thu, 12 Feb 2026 21:04:48 GMT
 RUN set -eux; 	addgroup -g 70 -S postgres; 	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; 	install --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit
-# Wed, 28 Jan 2026 02:29:56 GMT
+# Thu, 12 Feb 2026 21:04:51 GMT
 ENV GOSU_VERSION=1.19
-# Wed, 28 Jan 2026 02:29:56 GMT
+# Thu, 12 Feb 2026 21:04:51 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 28 Jan 2026 02:29:56 GMT
+# Thu, 12 Feb 2026 21:04:51 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (removed in PostgreSQL 17+) # buildkit
-# Wed, 28 Jan 2026 02:29:56 GMT
+# Thu, 12 Feb 2026 21:04:51 GMT
 ENV LANG=en_US.utf8
-# Wed, 28 Jan 2026 02:29:56 GMT
+# Thu, 12 Feb 2026 21:04:51 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 28 Jan 2026 02:29:56 GMT
+# Thu, 12 Feb 2026 21:04:51 GMT
 ENV PG_MAJOR=16
-# Wed, 28 Jan 2026 02:29:56 GMT
-ENV PG_VERSION=16.11
-# Wed, 28 Jan 2026 02:29:56 GMT
-ENV PG_SHA256=6deb08c23d03d77d8f8bd1c14049eeef64aef8968fd8891df2dfc0b42f178eac
-# Wed, 28 Jan 2026 02:29:56 GMT
+# Thu, 12 Feb 2026 21:04:51 GMT
+ENV PG_VERSION=16.12
+# Thu, 12 Feb 2026 21:04:51 GMT
+ENV PG_SHA256=b253ee949303ef5df00e24002600da4fb37e5ccfafa78718c6ea6a936b4d97f1
+# Thu, 12 Feb 2026 21:04:51 GMT
 ENV DOCKER_PG_LLVM_DEPS=llvm19-dev 		clang19
-# Wed, 28 Jan 2026 02:32:07 GMT
+# Thu, 12 Feb 2026 21:07:08 GMT
 RUN set -eux; 		wget -O postgresql.tar.bz2 "https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2"; 	echo "$PG_SHA256 *postgresql.tar.bz2" | sha256sum -c -; 	mkdir -p /usr/src/postgresql; 	tar 		--extract 		--file postgresql.tar.bz2 		--directory /usr/src/postgresql 		--strip-components 1 	; 	rm postgresql.tar.bz2; 		apk add --no-cache --virtual .build-deps 		$DOCKER_PG_LLVM_DEPS 		bison 		coreutils 		dpkg-dev dpkg 		flex 		g++ 		gcc 		krb5-dev 		libc-dev 		libedit-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		make 		openldap-dev 		openssl-dev 		perl-dev 		perl-ipc-run 		perl-utils 		python3-dev 		tcl-dev 		util-linux-dev 		zlib-dev 		icu-dev 		lz4-dev 		zstd-dev 	; 		cd /usr/src/postgresql; 	awk '$1 == "#define" && $2 == "DEFAULT_PGSOCKET_DIR" && $3 == "\"/tmp\"" { $3 = "\"/var/run/postgresql\""; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; 	grep '/var/run/postgresql' src/include/pg_config_manual.h.new; 	mv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		export LLVM_CONFIG="/usr/lib/llvm19/bin/llvm-config"; 	export CLANG=clang-19; 		./configure 		--enable-option-checking=fatal 		--build="$gnuArch" 		--enable-integer-datetimes 		--enable-thread-safety 		--enable-tap-tests 		--disable-rpath 		--with-uuid=e2fs 		--with-pgport=5432 		--with-system-tzdata=/usr/share/zoneinfo 		--prefix=/usr/local 		--with-includes=/usr/local/include 		--with-libraries=/usr/local/lib 		--with-gssapi 		--with-icu 		--with-ldap 		--with-libxml 		--with-libxslt 		--with-llvm 		--with-lz4 		--with-openssl 		--with-perl 		--with-python 		--with-tcl 		--with-zstd 	; 	make -j "$(nproc)" world-bin; 	make install-world-bin; 	make -C contrib install; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 			| grep -v -e perl -e python -e tcl 	)"; 	apk add --no-cache --virtual .postgresql-rundeps 		$runDeps 		bash 		tzdata 		zstd 		icu-data-full 		$([ "$(apk --print-arch)" != 'ppc64le' ] && echo 'nss_wrapper') 	; 	apk del --no-network .build-deps; 	cd /; 	rm -rf 		/usr/src/postgresql 		/usr/local/share/doc 		/usr/local/share/man 	; 		postgres --version # buildkit
-# Wed, 28 Jan 2026 02:32:07 GMT
+# Thu, 12 Feb 2026 21:07:08 GMT
 RUN set -eux; 	cp -v /usr/local/share/postgresql/postgresql.conf.sample /usr/local/share/postgresql/postgresql.conf.sample.orig; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/local/share/postgresql/postgresql.conf.sample # buildkit
-# Wed, 28 Jan 2026 02:32:07 GMT
+# Thu, 12 Feb 2026 21:07:08 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
-# Wed, 28 Jan 2026 02:32:07 GMT
+# Thu, 12 Feb 2026 21:07:08 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Wed, 28 Jan 2026 02:32:08 GMT
+# Thu, 12 Feb 2026 21:07:08 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 1777 "$PGDATA" # buildkit
-# Wed, 28 Jan 2026 02:32:08 GMT
+# Thu, 12 Feb 2026 21:07:08 GMT
 VOLUME [/var/lib/postgresql/data]
-# Wed, 28 Jan 2026 02:32:08 GMT
+# Thu, 12 Feb 2026 21:07:08 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:32:08 GMT
+# Thu, 12 Feb 2026 21:07:08 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Wed, 28 Jan 2026 02:32:08 GMT
+# Thu, 12 Feb 2026 21:07:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 28 Jan 2026 02:32:08 GMT
+# Thu, 12 Feb 2026 21:07:08 GMT
 STOPSIGNAL SIGINT
-# Wed, 28 Jan 2026 02:32:08 GMT
+# Thu, 12 Feb 2026 21:07:08 GMT
 EXPOSE map[5432/tcp:{}]
-# Wed, 28 Jan 2026 02:32:08 GMT
+# Thu, 12 Feb 2026 21:07:08 GMT
 CMD ["postgres"]
 ```
 
@@ -92,81 +92,81 @@ CMD ["postgres"]
 		Last Modified: Wed, 28 Jan 2026 01:18:09 GMT  
 		Size: 3.9 MB (3861821 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37ddbca09bc259f23951c7ece1e6808d682239756da51a54a872cdb533cba11e`  
-		Last Modified: Wed, 28 Jan 2026 02:32:22 GMT  
-		Size: 971.0 B  
+	-	`sha256:5ffb427686b69a212d45ab3d395b74f935308942b1cdf14680441bd6cd8e77e4`  
+		Last Modified: Thu, 12 Feb 2026 21:07:24 GMT  
+		Size: 972.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4caa03786d3da665528ed28c460f6f82e02fc235529d610154b7230f8a9a63e9`  
-		Last Modified: Wed, 28 Jan 2026 02:32:23 GMT  
-		Size: 922.9 KB (922913 bytes)  
+	-	`sha256:630177b003522c8250821d96d1593e46fc8527aee7ae58bdb1dfc31af8635353`  
+		Last Modified: Thu, 12 Feb 2026 21:07:24 GMT  
+		Size: 922.9 KB (922942 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73e9afde5b6bd69a1781a6821065f0cbd1673515862062721f0c9e499cc87d54`  
-		Last Modified: Wed, 28 Jan 2026 02:32:23 GMT  
-		Size: 171.0 B  
+	-	`sha256:6c18ff1f33d0f0d0baa87fa31957beccd7e9fa54e39ef4179fe829c50dddf3a0`  
+		Last Modified: Thu, 12 Feb 2026 21:07:24 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42ff12e8060e11c9430be7b6d9f24fa7040afc805f089bb81a5099fa7bb9b265`  
-		Last Modified: Wed, 28 Jan 2026 02:32:23 GMT  
+	-	`sha256:13e46e455d3b6e2afda6cdabd64609577eee48201d09db8fc9e2f90a3c341e5d`  
+		Last Modified: Thu, 12 Feb 2026 21:07:24 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7070ff9d4b708882ddb54f241e82810ffcecef1aea1d0bac91fb5c75c0cfd814`  
-		Last Modified: Wed, 28 Jan 2026 02:32:26 GMT  
-		Size: 105.2 MB (105157842 bytes)  
+	-	`sha256:b4403f29458afcf99bd5624722cc365f4561c00d91aeaea21db1affad6cfef35`  
+		Last Modified: Thu, 12 Feb 2026 21:07:28 GMT  
+		Size: 105.2 MB (105173697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6daf4ec1dec224375ee5d4ecdea24a99f3630cef1f1ab6b7ccc5f93efa4f5f79`  
-		Last Modified: Wed, 28 Jan 2026 02:32:24 GMT  
-		Size: 9.6 KB (9559 bytes)  
+	-	`sha256:40aaa75af6ced0dc2573c61db114b07d45f376984102021af3c3c1377c2209c0`  
+		Last Modified: Thu, 12 Feb 2026 21:07:25 GMT  
+		Size: 9.6 KB (9620 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:514526dc419dc1720b497bf2e6b4fe30e9068d2d9f16c8d06d7498751d2fcf28`  
-		Last Modified: Wed, 28 Jan 2026 02:32:24 GMT  
-		Size: 129.0 B  
+	-	`sha256:162bdab1e0a7a1f23a9700c3bada28d5623ce00e739a8aa42417def18b3fefe9`  
+		Last Modified: Thu, 12 Feb 2026 21:07:24 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c4deacffb95eba4a9940349f2c23ea99f7bbc90999dce035ecbf15daafafbed`  
-		Last Modified: Wed, 28 Jan 2026 02:32:24 GMT  
-		Size: 169.0 B  
+	-	`sha256:ebff7b0ec73e7b517ebf080c88be87fc682bc57c464ccc622f8137b621fc0341`  
+		Last Modified: Thu, 12 Feb 2026 21:07:26 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c769f6af60d9fdc567335fa6652b8212466bce43cc58ad69378e06df8ca2bfc9`  
-		Last Modified: Wed, 28 Jan 2026 02:32:25 GMT  
-		Size: 5.8 KB (5837 bytes)  
+	-	`sha256:c02179436571639d24dc3588fee138a2e9dfe7a7d1dee608b1a1634f1d1016f8`  
+		Last Modified: Thu, 12 Feb 2026 21:07:26 GMT  
+		Size: 5.8 KB (5840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03e9530e5ed7bd1a92ec7a21c054d1505c07089576b6592a0861779824043c4e`  
-		Last Modified: Wed, 28 Jan 2026 02:32:25 GMT  
-		Size: 183.0 B  
+	-	`sha256:8243369e98669b4b458faaf8a16603579ccb8f0ecb8eaa91255e6426294c3d68`  
+		Last Modified: Thu, 12 Feb 2026 21:07:27 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:16-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:b26ad8492a671c6cac6af26c40bbb22c907bbeff04e5401e3951ece541f93565
+$ docker pull postgres@sha256:aa5a28c2a039d7a93176030b294ccde1e71927b3c0e04afbdd4511e142a5ea48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **642.4 KB (642386 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41764543e36434f5af1f4995a6ee9f0bfabfb4ac85bdc2f20b9b804f99a2a152`
+-	Image ID: `sha256:c28c14b06776def659a57e9fee739b89b0945819950081613749e0683b67a692`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4ba93bb41d54429517e0f28fb74cad4a65601344fb4c793ab8058f043ff0d6eb`  
-		Last Modified: Wed, 28 Jan 2026 02:32:23 GMT  
+	-	`sha256:1eaa8a41a070d470eac0ab74b8eb184fd68f2f088d460a3eb9b554ff007c32a0`  
+		Last Modified: Thu, 12 Feb 2026 21:07:24 GMT  
 		Size: 598.1 KB (598080 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:be3a6cab230a6910faee525df9af99d021b1656ead941763edc67ce21b364802`  
-		Last Modified: Wed, 28 Jan 2026 02:32:23 GMT  
+	-	`sha256:8c68e283f362d2703e4cb630d417b263f77535bad8e7bdb465a1b5ecc4f36b8e`  
+		Last Modified: Thu, 12 Feb 2026 21:07:24 GMT  
 		Size: 44.3 KB (44306 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `postgres:16-alpine3.23` - linux; arm variant v6
 
 ```console
-$ docker pull postgres@sha256:e6ce9e95f94ddc7bd33c3cc3ab474db60b75d4844be7d4c025996ed1bd2562f7
+$ docker pull postgres@sha256:e20f49299d78e326200a6bcf41e3bc2abf390c364919139ac77cce569be3e9bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.4 MB (89375390 bytes)**  
+-	Total Size: **89.4 MB (89405152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1df65a26d14fcdbb5c5a576cb7723979e92c44e9c44efcf14e4b6d8a1c34d6b2`
+-	Image ID: `sha256:54392ef056d0b1cefc23d037a586f13224f3395d03eecf2d5bd1aac846edb49f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -175,49 +175,49 @@ $ docker pull postgres@sha256:e6ce9e95f94ddc7bd33c3cc3ab474db60b75d4844be7d4c025
 ADD alpine-minirootfs-3.23.3-armhf.tar.gz / # buildkit
 # Wed, 28 Jan 2026 01:17:52 GMT
 CMD ["/bin/sh"]
-# Wed, 28 Jan 2026 02:48:42 GMT
+# Thu, 12 Feb 2026 21:19:40 GMT
 RUN set -eux; 	addgroup -g 70 -S postgres; 	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; 	install --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit
-# Wed, 28 Jan 2026 02:48:47 GMT
+# Thu, 12 Feb 2026 21:19:45 GMT
 ENV GOSU_VERSION=1.19
-# Wed, 28 Jan 2026 02:48:47 GMT
+# Thu, 12 Feb 2026 21:19:45 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 28 Jan 2026 02:48:47 GMT
+# Thu, 12 Feb 2026 21:23:02 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (removed in PostgreSQL 17+) # buildkit
-# Wed, 28 Jan 2026 02:48:47 GMT
+# Thu, 12 Feb 2026 21:23:02 GMT
 ENV LANG=en_US.utf8
-# Wed, 28 Jan 2026 02:48:48 GMT
+# Thu, 12 Feb 2026 21:23:02 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 28 Jan 2026 02:48:48 GMT
+# Thu, 12 Feb 2026 21:23:02 GMT
 ENV PG_MAJOR=16
-# Wed, 28 Jan 2026 02:48:48 GMT
-ENV PG_VERSION=16.11
-# Wed, 28 Jan 2026 02:48:48 GMT
-ENV PG_SHA256=6deb08c23d03d77d8f8bd1c14049eeef64aef8968fd8891df2dfc0b42f178eac
-# Wed, 28 Jan 2026 02:48:48 GMT
+# Thu, 12 Feb 2026 21:23:02 GMT
+ENV PG_VERSION=16.12
+# Thu, 12 Feb 2026 21:23:02 GMT
+ENV PG_SHA256=b253ee949303ef5df00e24002600da4fb37e5ccfafa78718c6ea6a936b4d97f1
+# Thu, 12 Feb 2026 21:23:02 GMT
 ENV DOCKER_PG_LLVM_DEPS=llvm19-dev 		clang19
-# Wed, 28 Jan 2026 02:51:39 GMT
+# Thu, 12 Feb 2026 21:25:56 GMT
 RUN set -eux; 		wget -O postgresql.tar.bz2 "https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2"; 	echo "$PG_SHA256 *postgresql.tar.bz2" | sha256sum -c -; 	mkdir -p /usr/src/postgresql; 	tar 		--extract 		--file postgresql.tar.bz2 		--directory /usr/src/postgresql 		--strip-components 1 	; 	rm postgresql.tar.bz2; 		apk add --no-cache --virtual .build-deps 		$DOCKER_PG_LLVM_DEPS 		bison 		coreutils 		dpkg-dev dpkg 		flex 		g++ 		gcc 		krb5-dev 		libc-dev 		libedit-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		make 		openldap-dev 		openssl-dev 		perl-dev 		perl-ipc-run 		perl-utils 		python3-dev 		tcl-dev 		util-linux-dev 		zlib-dev 		icu-dev 		lz4-dev 		zstd-dev 	; 		cd /usr/src/postgresql; 	awk '$1 == "#define" && $2 == "DEFAULT_PGSOCKET_DIR" && $3 == "\"/tmp\"" { $3 = "\"/var/run/postgresql\""; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; 	grep '/var/run/postgresql' src/include/pg_config_manual.h.new; 	mv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		export LLVM_CONFIG="/usr/lib/llvm19/bin/llvm-config"; 	export CLANG=clang-19; 		./configure 		--enable-option-checking=fatal 		--build="$gnuArch" 		--enable-integer-datetimes 		--enable-thread-safety 		--enable-tap-tests 		--disable-rpath 		--with-uuid=e2fs 		--with-pgport=5432 		--with-system-tzdata=/usr/share/zoneinfo 		--prefix=/usr/local 		--with-includes=/usr/local/include 		--with-libraries=/usr/local/lib 		--with-gssapi 		--with-icu 		--with-ldap 		--with-libxml 		--with-libxslt 		--with-llvm 		--with-lz4 		--with-openssl 		--with-perl 		--with-python 		--with-tcl 		--with-zstd 	; 	make -j "$(nproc)" world-bin; 	make install-world-bin; 	make -C contrib install; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 			| grep -v -e perl -e python -e tcl 	)"; 	apk add --no-cache --virtual .postgresql-rundeps 		$runDeps 		bash 		tzdata 		zstd 		icu-data-full 		$([ "$(apk --print-arch)" != 'ppc64le' ] && echo 'nss_wrapper') 	; 	apk del --no-network .build-deps; 	cd /; 	rm -rf 		/usr/src/postgresql 		/usr/local/share/doc 		/usr/local/share/man 	; 		postgres --version # buildkit
-# Wed, 28 Jan 2026 02:51:39 GMT
+# Thu, 12 Feb 2026 21:25:56 GMT
 RUN set -eux; 	cp -v /usr/local/share/postgresql/postgresql.conf.sample /usr/local/share/postgresql/postgresql.conf.sample.orig; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/local/share/postgresql/postgresql.conf.sample # buildkit
-# Wed, 28 Jan 2026 02:51:39 GMT
+# Thu, 12 Feb 2026 21:25:56 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
-# Wed, 28 Jan 2026 02:51:39 GMT
+# Thu, 12 Feb 2026 21:25:56 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Wed, 28 Jan 2026 02:51:39 GMT
+# Thu, 12 Feb 2026 21:25:56 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 1777 "$PGDATA" # buildkit
-# Wed, 28 Jan 2026 02:51:39 GMT
+# Thu, 12 Feb 2026 21:25:56 GMT
 VOLUME [/var/lib/postgresql/data]
-# Wed, 28 Jan 2026 02:51:39 GMT
+# Thu, 12 Feb 2026 21:25:56 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:51:40 GMT
+# Thu, 12 Feb 2026 21:25:56 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Wed, 28 Jan 2026 02:51:40 GMT
+# Thu, 12 Feb 2026 21:25:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 28 Jan 2026 02:51:40 GMT
+# Thu, 12 Feb 2026 21:25:56 GMT
 STOPSIGNAL SIGINT
-# Wed, 28 Jan 2026 02:51:40 GMT
+# Thu, 12 Feb 2026 21:25:56 GMT
 EXPOSE map[5432/tcp:{}]
-# Wed, 28 Jan 2026 02:51:40 GMT
+# Thu, 12 Feb 2026 21:25:56 GMT
 CMD ["postgres"]
 ```
 
@@ -226,77 +226,77 @@ CMD ["postgres"]
 		Last Modified: Wed, 28 Jan 2026 01:17:56 GMT  
 		Size: 3.6 MB (3569821 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ce85bdd6d33c65ff6cfe47c571bb173cacb0cbf1a33d5078b3b9770bf76ad7d`  
-		Last Modified: Wed, 28 Jan 2026 02:51:50 GMT  
-		Size: 968.0 B  
+	-	`sha256:6dbe5e121835e3f7c5b6dd5244d1bc0956a4f2b2eef40677906f8152b8951b72`  
+		Last Modified: Thu, 12 Feb 2026 21:22:53 GMT  
+		Size: 970.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:163a51a3d40bb745fa492c90f21ed8fa849f033f048937010ae14ffc6d3a9bfd`  
-		Last Modified: Wed, 28 Jan 2026 02:51:50 GMT  
-		Size: 889.5 KB (889470 bytes)  
+	-	`sha256:6e5b66aed209904f198e42bc4ec51044961dd9ca8c9af63dfc3b05132855b446`  
+		Last Modified: Thu, 12 Feb 2026 21:22:53 GMT  
+		Size: 889.5 KB (889473 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a7e04a7d3888609a01abe3acf43595ff25073246d94104d4cd1bfa7c4bfc966`  
-		Last Modified: Wed, 28 Jan 2026 02:51:50 GMT  
-		Size: 171.0 B  
+	-	`sha256:ac25b6f79f951f1b8f34046d5c0925cce1c16cc40218f55623b2be0b4ebfb77e`  
+		Last Modified: Thu, 12 Feb 2026 21:26:07 GMT  
+		Size: 177.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb63ac667d86e230389e7b62f61fabc7754cffbf3c37dfcdfc157d7adb092ece`  
-		Last Modified: Wed, 28 Jan 2026 02:51:50 GMT  
+	-	`sha256:1ebd0e74ca8b9e5362855c2ebaad1ab72494ab9759cff8139360e4b3815127e0`  
+		Last Modified: Thu, 12 Feb 2026 21:26:07 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb66407cf286d662b51ca0d7499f163fd773262d1c01f0cc2565f0d038a8cd77`  
-		Last Modified: Wed, 28 Jan 2026 02:51:55 GMT  
-		Size: 84.9 MB (84898965 bytes)  
+	-	`sha256:b055e0a042f9b35ac94eaca65afc951aac21694a329a64362ad39818e4b1eeed`  
+		Last Modified: Thu, 12 Feb 2026 21:26:09 GMT  
+		Size: 84.9 MB (84928653 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d381ed030b5343cca7fd29c5305deeca1241e7d5d56ce86fdb788302d8cf99c`  
-		Last Modified: Wed, 28 Jan 2026 02:51:51 GMT  
-		Size: 9.6 KB (9561 bytes)  
+	-	`sha256:c30949a8cb831002736b2cc9b900d457cd51fef1d9c241a6f8c885b3d714be54`  
+		Last Modified: Thu, 12 Feb 2026 21:26:07 GMT  
+		Size: 9.6 KB (9620 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d30531f71d459a05b06f86e9d4299a0f789ecedd64c96be2b864c44d510ea54`  
-		Last Modified: Wed, 28 Jan 2026 02:51:51 GMT  
+	-	`sha256:912ace5155362ec2702dd807ed4c42d80b6d0cdc4c5ba3e64396c63c9384d391`  
+		Last Modified: Thu, 12 Feb 2026 21:26:08 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d06a5eb7981cfab2e5548ef4d0f72cb54baac85518889f3d4509174e1087a8f`  
-		Last Modified: Wed, 28 Jan 2026 02:51:51 GMT  
-		Size: 167.0 B  
+	-	`sha256:fd6e5214857d0722718a8cfad8cb1ab6f2299c829702b0f4cd3f35b41a61edf0`  
+		Last Modified: Thu, 12 Feb 2026 21:26:08 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3f43299ef78460b49f689d9dae1fe08d17f39d489f87ca16f28c5b43c8cfbf3`  
-		Last Modified: Wed, 28 Jan 2026 02:51:52 GMT  
-		Size: 5.8 KB (5837 bytes)  
+	-	`sha256:f3dc03265755764faba230f748d1c9d1e484199f4dd5f088bff8b8bc9885e4c7`  
+		Last Modified: Thu, 12 Feb 2026 21:26:08 GMT  
+		Size: 5.8 KB (5839 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2307c00850cda488da8f74d3c6deabf403d65fc299d0e3d050fbe7133b83a8a8`  
-		Last Modified: Wed, 28 Jan 2026 02:51:52 GMT  
-		Size: 185.0 B  
+	-	`sha256:bfe5eb0e0d3cd86d76845e5217f284e904e23451cdf32d238509ae67e7aa5f29`  
+		Last Modified: Thu, 12 Feb 2026 21:26:09 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:16-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:a1b7b5f2d48909baa6211bccf567d1e7558eeb2fe2d811ed1c3d26c63869fdb9
+$ docker pull postgres@sha256:23d3235c872ccd31bc1b282ade0b9e95ca7d731688cca5bb9034cdad46d6653c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **44.3 KB (44268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71b231e4d10d1238078c2bca8b48fda8c4b35d7cbd9c575d5e7a871fdd5af8f7`
+-	Image ID: `sha256:4468235a1482ad500868e94de8b7f98a7054d6130ed563bf4546e1714cbcedbe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:41ec6c688565e0e38c3e7311c72e9972e7f09e70a50c7981d37d828d540e06ee`  
-		Last Modified: Wed, 28 Jan 2026 02:51:50 GMT  
+	-	`sha256:9e816b74ba1c9eea2a74a8e4d82e3466c691c41307d57068572ea3d0c2a1bdab`  
+		Last Modified: Thu, 12 Feb 2026 21:26:07 GMT  
 		Size: 44.3 KB (44268 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `postgres:16-alpine3.23` - linux; arm variant v7
 
 ```console
-$ docker pull postgres@sha256:4f49d9c3bd9e5d2c13d7de1d306003d2539989493b9e01321eda92b0dde52ab1
+$ docker pull postgres@sha256:280002dc07bd45fbb599420319ea96d91e19e6ba2b511ad633014a33645ee6be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.6 MB (84611926 bytes)**  
+-	Total Size: **84.6 MB (84639747 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d760cb412365f55d30ab66ba3c2ac3056c8657576183e28116bfba9fdb2a63b`
+-	Image ID: `sha256:544158de73145231204bb0a5a30546b5e456efe0398e0a52069ed0b272a28b55`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -305,49 +305,49 @@ $ docker pull postgres@sha256:4f49d9c3bd9e5d2c13d7de1d306003d2539989493b9e01321e
 ADD alpine-minirootfs-3.23.3-armv7.tar.gz / # buildkit
 # Wed, 28 Jan 2026 01:18:44 GMT
 CMD ["/bin/sh"]
-# Wed, 28 Jan 2026 02:45:51 GMT
+# Thu, 12 Feb 2026 21:25:48 GMT
 RUN set -eux; 	addgroup -g 70 -S postgres; 	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; 	install --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit
-# Wed, 28 Jan 2026 02:45:56 GMT
+# Thu, 12 Feb 2026 21:25:52 GMT
 ENV GOSU_VERSION=1.19
-# Wed, 28 Jan 2026 02:45:56 GMT
+# Thu, 12 Feb 2026 21:25:52 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 28 Jan 2026 02:45:56 GMT
+# Thu, 12 Feb 2026 21:25:52 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (removed in PostgreSQL 17+) # buildkit
-# Wed, 28 Jan 2026 02:45:56 GMT
+# Thu, 12 Feb 2026 21:25:52 GMT
 ENV LANG=en_US.utf8
-# Wed, 28 Jan 2026 02:45:56 GMT
+# Thu, 12 Feb 2026 21:25:52 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 28 Jan 2026 02:45:56 GMT
+# Thu, 12 Feb 2026 21:25:52 GMT
 ENV PG_MAJOR=16
-# Wed, 28 Jan 2026 02:45:56 GMT
-ENV PG_VERSION=16.11
-# Wed, 28 Jan 2026 02:45:56 GMT
-ENV PG_SHA256=6deb08c23d03d77d8f8bd1c14049eeef64aef8968fd8891df2dfc0b42f178eac
-# Wed, 28 Jan 2026 02:45:56 GMT
+# Thu, 12 Feb 2026 21:25:52 GMT
+ENV PG_VERSION=16.12
+# Thu, 12 Feb 2026 21:25:52 GMT
+ENV PG_SHA256=b253ee949303ef5df00e24002600da4fb37e5ccfafa78718c6ea6a936b4d97f1
+# Thu, 12 Feb 2026 21:25:52 GMT
 ENV DOCKER_PG_LLVM_DEPS=llvm19-dev 		clang19
-# Wed, 28 Jan 2026 02:48:42 GMT
+# Thu, 12 Feb 2026 21:28:41 GMT
 RUN set -eux; 		wget -O postgresql.tar.bz2 "https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2"; 	echo "$PG_SHA256 *postgresql.tar.bz2" | sha256sum -c -; 	mkdir -p /usr/src/postgresql; 	tar 		--extract 		--file postgresql.tar.bz2 		--directory /usr/src/postgresql 		--strip-components 1 	; 	rm postgresql.tar.bz2; 		apk add --no-cache --virtual .build-deps 		$DOCKER_PG_LLVM_DEPS 		bison 		coreutils 		dpkg-dev dpkg 		flex 		g++ 		gcc 		krb5-dev 		libc-dev 		libedit-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		make 		openldap-dev 		openssl-dev 		perl-dev 		perl-ipc-run 		perl-utils 		python3-dev 		tcl-dev 		util-linux-dev 		zlib-dev 		icu-dev 		lz4-dev 		zstd-dev 	; 		cd /usr/src/postgresql; 	awk '$1 == "#define" && $2 == "DEFAULT_PGSOCKET_DIR" && $3 == "\"/tmp\"" { $3 = "\"/var/run/postgresql\""; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; 	grep '/var/run/postgresql' src/include/pg_config_manual.h.new; 	mv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		export LLVM_CONFIG="/usr/lib/llvm19/bin/llvm-config"; 	export CLANG=clang-19; 		./configure 		--enable-option-checking=fatal 		--build="$gnuArch" 		--enable-integer-datetimes 		--enable-thread-safety 		--enable-tap-tests 		--disable-rpath 		--with-uuid=e2fs 		--with-pgport=5432 		--with-system-tzdata=/usr/share/zoneinfo 		--prefix=/usr/local 		--with-includes=/usr/local/include 		--with-libraries=/usr/local/lib 		--with-gssapi 		--with-icu 		--with-ldap 		--with-libxml 		--with-libxslt 		--with-llvm 		--with-lz4 		--with-openssl 		--with-perl 		--with-python 		--with-tcl 		--with-zstd 	; 	make -j "$(nproc)" world-bin; 	make install-world-bin; 	make -C contrib install; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 			| grep -v -e perl -e python -e tcl 	)"; 	apk add --no-cache --virtual .postgresql-rundeps 		$runDeps 		bash 		tzdata 		zstd 		icu-data-full 		$([ "$(apk --print-arch)" != 'ppc64le' ] && echo 'nss_wrapper') 	; 	apk del --no-network .build-deps; 	cd /; 	rm -rf 		/usr/src/postgresql 		/usr/local/share/doc 		/usr/local/share/man 	; 		postgres --version # buildkit
-# Wed, 28 Jan 2026 02:48:42 GMT
+# Thu, 12 Feb 2026 21:28:41 GMT
 RUN set -eux; 	cp -v /usr/local/share/postgresql/postgresql.conf.sample /usr/local/share/postgresql/postgresql.conf.sample.orig; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/local/share/postgresql/postgresql.conf.sample # buildkit
-# Wed, 28 Jan 2026 02:48:42 GMT
+# Thu, 12 Feb 2026 21:28:41 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
-# Wed, 28 Jan 2026 02:48:42 GMT
+# Thu, 12 Feb 2026 21:28:41 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Wed, 28 Jan 2026 02:48:42 GMT
+# Thu, 12 Feb 2026 21:28:41 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 1777 "$PGDATA" # buildkit
-# Wed, 28 Jan 2026 02:48:42 GMT
+# Thu, 12 Feb 2026 21:28:41 GMT
 VOLUME [/var/lib/postgresql/data]
-# Wed, 28 Jan 2026 02:48:42 GMT
+# Thu, 12 Feb 2026 21:28:41 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:48:42 GMT
+# Thu, 12 Feb 2026 21:28:41 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Wed, 28 Jan 2026 02:48:42 GMT
+# Thu, 12 Feb 2026 21:28:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 28 Jan 2026 02:48:42 GMT
+# Thu, 12 Feb 2026 21:28:41 GMT
 STOPSIGNAL SIGINT
-# Wed, 28 Jan 2026 02:48:42 GMT
+# Thu, 12 Feb 2026 21:28:41 GMT
 EXPOSE map[5432/tcp:{}]
-# Wed, 28 Jan 2026 02:48:42 GMT
+# Thu, 12 Feb 2026 21:28:41 GMT
 CMD ["postgres"]
 ```
 
@@ -356,81 +356,81 @@ CMD ["postgres"]
 		Last Modified: Wed, 28 Jan 2026 01:18:50 GMT  
 		Size: 3.3 MB (3281724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59c5bb267b57caa587fbf0f21e81ca2c0225981ed9dfb158457c27aba6fdb0ab`  
-		Last Modified: Wed, 28 Jan 2026 02:48:54 GMT  
+	-	`sha256:b135fc1a155db6ff110355832a48ce41604c676d73b794d9e76f5f49f6f3c6ad`  
+		Last Modified: Thu, 12 Feb 2026 21:28:53 GMT  
 		Size: 969.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf61348b4616ce5a538252d53a937c04d1c0fd425fadcb84cb494024d6a2826b`  
-		Last Modified: Wed, 28 Jan 2026 02:48:54 GMT  
-		Size: 889.5 KB (889505 bytes)  
+	-	`sha256:c827aaa0135fd1dd4446d8acdf70b055373219c3732facb7447ffd2f85d15d77`  
+		Last Modified: Thu, 12 Feb 2026 21:28:53 GMT  
+		Size: 889.5 KB (889522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da04026bcefe8827be8be8e47b299e08851c1d5183799b85f6cfcfb9b8b7f915`  
-		Last Modified: Wed, 28 Jan 2026 02:48:54 GMT  
-		Size: 171.0 B  
+	-	`sha256:01296ca8d7f6db8b294b6549050fbf6be87f0d70d99779da299119046ed887b0`  
+		Last Modified: Thu, 12 Feb 2026 21:28:53 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ff1e345b8fee891436bdb06e434a6d2997fd34efbb9deec5cec209efd7a4575`  
-		Last Modified: Wed, 28 Jan 2026 02:48:54 GMT  
+	-	`sha256:58f90b6615f91d5ec814eda52bb40539fbaddc5cca33f80b556c09046c9b2227`  
+		Last Modified: Thu, 12 Feb 2026 21:28:53 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7c43419a61a6437434b11e2966f7416a0ac178c5aaf84ae293d9286c61cf8ca`  
-		Last Modified: Wed, 28 Jan 2026 02:48:57 GMT  
-		Size: 80.4 MB (80423562 bytes)  
+	-	`sha256:153fbc932e1d5a75e350a8d653b1eb59e9131dd839e6b3f7d4587e740ca15f08`  
+		Last Modified: Thu, 12 Feb 2026 21:28:56 GMT  
+		Size: 80.5 MB (80451298 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e048d0b582483692c604ffccc94aa27d448e608313e619507060545aebbd1ec`  
-		Last Modified: Wed, 28 Jan 2026 02:48:55 GMT  
-		Size: 9.6 KB (9560 bytes)  
+	-	`sha256:c144cad3da6385d7ddcac9580248205a15eae9a54201e8e35bc658ac576ff5c7`  
+		Last Modified: Thu, 12 Feb 2026 21:28:54 GMT  
+		Size: 9.6 KB (9621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2df4fc94b945e0402aceebc8ff1e079e427465d22e3830eaf5c24d5f6b3c0634`  
-		Last Modified: Wed, 28 Jan 2026 02:48:55 GMT  
-		Size: 129.0 B  
+	-	`sha256:bd77544cb28ba0bfab46a4c362825b5f75080161df8aca718614cb677a5bf3ef`  
+		Last Modified: Thu, 12 Feb 2026 21:28:54 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d072c2b4dab8c975b6b27b5d83108ddeef0b668208e7c7fa39b7a47e76e9c7b5`  
-		Last Modified: Wed, 28 Jan 2026 02:48:55 GMT  
-		Size: 167.0 B  
+	-	`sha256:b972260229b7ecac6189892af5c513692e9aba4a5598065a1073c41c0d7141db`  
+		Last Modified: Thu, 12 Feb 2026 21:28:54 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6257f135b730de7046c2b35b9a134dd92cfefda791bfbe454dff35903f7ad85`  
-		Last Modified: Wed, 28 Jan 2026 02:48:56 GMT  
-		Size: 5.8 KB (5839 bytes)  
+	-	`sha256:e6221e9770b9b949e629622f2a7a9dba4f3290005c80a1f9acafab5d15d30cb1`  
+		Last Modified: Thu, 12 Feb 2026 21:28:55 GMT  
+		Size: 5.8 KB (5840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35a4bed03e014c43653fc8c91fcfdce3813458710061242dad00dec32ad31fbf`  
-		Last Modified: Wed, 28 Jan 2026 02:48:56 GMT  
+	-	`sha256:54b66dbaebf2d4487f864bedaf90e93e1bb83813e1c4feaf2b16c0352a5baad5`  
+		Last Modified: Thu, 12 Feb 2026 21:28:55 GMT  
 		Size: 184.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:16-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:a76c3ebc09f03b610c15dbd186257797c310e32045863f0183741f4c5c3089d3
+$ docker pull postgres@sha256:dc005c33c4398b26cb7022718c84afab9d50a6a0588333b95ad29e7298f7ad51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **642.0 KB (641950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6ac312574db78d0a994080aba95e128476a2f0f05e3cb9e391adf5adda22cbd`
+-	Image ID: `sha256:cb7bd666e17f509e657f459dcb74718b9420da843075c0246ade445f19958883`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a06d110053ff4091ded9d03b47dc25070aa4c45d70533b46ec529d0ef4427ccf`  
-		Last Modified: Wed, 28 Jan 2026 02:48:54 GMT  
+	-	`sha256:13244dbf5eaa8b8ff02f76e017e5e044960e32be2c88ee0963a2f6e2e9a2ec53`  
+		Last Modified: Thu, 12 Feb 2026 21:28:53 GMT  
 		Size: 597.5 KB (597466 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1c8e4dbe1bd60068e1e00e008bb139ae0c3ee3305f4dcbc57d7d3a548e98f117`  
-		Last Modified: Wed, 28 Jan 2026 02:48:54 GMT  
+	-	`sha256:2712fdfd7979c06682c4b9839d3dac7bd6cdd88162f62c09c6a61ce1d987e621`  
+		Last Modified: Thu, 12 Feb 2026 21:28:53 GMT  
 		Size: 44.5 KB (44484 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `postgres:16-alpine3.23` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:8c9a0a2a8d37c21daffac4f1c40dff2d34fe227630fc503fca842022032661db
+$ docker pull postgres@sha256:6b61a2ed1f8931c6a4e76ae7af0e970e5e1d1d4094f14cdd776b6e2b642f3a87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **108.1 MB (108127936 bytes)**  
+-	Total Size: **108.2 MB (108167793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55d7756631809b941005e45cd70885cabc16cd734d0aaa0ec52fc4f13abb6b0d`
+-	Image ID: `sha256:656ce000ee1e70a2049e29dc885ea0002c3d66b0e6148868c6253766f13cd481`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -439,49 +439,49 @@ $ docker pull postgres@sha256:8c9a0a2a8d37c21daffac4f1c40dff2d34fe227630fc503fca
 ADD alpine-minirootfs-3.23.3-aarch64.tar.gz / # buildkit
 # Wed, 28 Jan 2026 01:18:09 GMT
 CMD ["/bin/sh"]
-# Wed, 28 Jan 2026 02:31:51 GMT
+# Thu, 12 Feb 2026 21:04:18 GMT
 RUN set -eux; 	addgroup -g 70 -S postgres; 	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; 	install --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit
-# Wed, 28 Jan 2026 02:31:54 GMT
+# Thu, 12 Feb 2026 21:04:21 GMT
 ENV GOSU_VERSION=1.19
-# Wed, 28 Jan 2026 02:31:54 GMT
+# Thu, 12 Feb 2026 21:04:21 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 28 Jan 2026 02:31:54 GMT
+# Thu, 12 Feb 2026 21:04:21 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (removed in PostgreSQL 17+) # buildkit
-# Wed, 28 Jan 2026 02:31:54 GMT
+# Thu, 12 Feb 2026 21:04:21 GMT
 ENV LANG=en_US.utf8
-# Wed, 28 Jan 2026 02:31:55 GMT
+# Thu, 12 Feb 2026 21:04:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 28 Jan 2026 02:31:55 GMT
+# Thu, 12 Feb 2026 21:04:21 GMT
 ENV PG_MAJOR=16
-# Wed, 28 Jan 2026 02:31:55 GMT
-ENV PG_VERSION=16.11
-# Wed, 28 Jan 2026 02:31:55 GMT
-ENV PG_SHA256=6deb08c23d03d77d8f8bd1c14049eeef64aef8968fd8891df2dfc0b42f178eac
-# Wed, 28 Jan 2026 02:31:55 GMT
+# Thu, 12 Feb 2026 21:04:21 GMT
+ENV PG_VERSION=16.12
+# Thu, 12 Feb 2026 21:04:21 GMT
+ENV PG_SHA256=b253ee949303ef5df00e24002600da4fb37e5ccfafa78718c6ea6a936b4d97f1
+# Thu, 12 Feb 2026 21:04:21 GMT
 ENV DOCKER_PG_LLVM_DEPS=llvm19-dev 		clang19
-# Wed, 28 Jan 2026 02:34:08 GMT
+# Thu, 12 Feb 2026 21:06:33 GMT
 RUN set -eux; 		wget -O postgresql.tar.bz2 "https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2"; 	echo "$PG_SHA256 *postgresql.tar.bz2" | sha256sum -c -; 	mkdir -p /usr/src/postgresql; 	tar 		--extract 		--file postgresql.tar.bz2 		--directory /usr/src/postgresql 		--strip-components 1 	; 	rm postgresql.tar.bz2; 		apk add --no-cache --virtual .build-deps 		$DOCKER_PG_LLVM_DEPS 		bison 		coreutils 		dpkg-dev dpkg 		flex 		g++ 		gcc 		krb5-dev 		libc-dev 		libedit-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		make 		openldap-dev 		openssl-dev 		perl-dev 		perl-ipc-run 		perl-utils 		python3-dev 		tcl-dev 		util-linux-dev 		zlib-dev 		icu-dev 		lz4-dev 		zstd-dev 	; 		cd /usr/src/postgresql; 	awk '$1 == "#define" && $2 == "DEFAULT_PGSOCKET_DIR" && $3 == "\"/tmp\"" { $3 = "\"/var/run/postgresql\""; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; 	grep '/var/run/postgresql' src/include/pg_config_manual.h.new; 	mv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		export LLVM_CONFIG="/usr/lib/llvm19/bin/llvm-config"; 	export CLANG=clang-19; 		./configure 		--enable-option-checking=fatal 		--build="$gnuArch" 		--enable-integer-datetimes 		--enable-thread-safety 		--enable-tap-tests 		--disable-rpath 		--with-uuid=e2fs 		--with-pgport=5432 		--with-system-tzdata=/usr/share/zoneinfo 		--prefix=/usr/local 		--with-includes=/usr/local/include 		--with-libraries=/usr/local/lib 		--with-gssapi 		--with-icu 		--with-ldap 		--with-libxml 		--with-libxslt 		--with-llvm 		--with-lz4 		--with-openssl 		--with-perl 		--with-python 		--with-tcl 		--with-zstd 	; 	make -j "$(nproc)" world-bin; 	make install-world-bin; 	make -C contrib install; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 			| grep -v -e perl -e python -e tcl 	)"; 	apk add --no-cache --virtual .postgresql-rundeps 		$runDeps 		bash 		tzdata 		zstd 		icu-data-full 		$([ "$(apk --print-arch)" != 'ppc64le' ] && echo 'nss_wrapper') 	; 	apk del --no-network .build-deps; 	cd /; 	rm -rf 		/usr/src/postgresql 		/usr/local/share/doc 		/usr/local/share/man 	; 		postgres --version # buildkit
-# Wed, 28 Jan 2026 02:34:08 GMT
+# Thu, 12 Feb 2026 21:06:33 GMT
 RUN set -eux; 	cp -v /usr/local/share/postgresql/postgresql.conf.sample /usr/local/share/postgresql/postgresql.conf.sample.orig; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/local/share/postgresql/postgresql.conf.sample # buildkit
-# Wed, 28 Jan 2026 02:34:08 GMT
+# Thu, 12 Feb 2026 21:06:33 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
-# Wed, 28 Jan 2026 02:34:08 GMT
+# Thu, 12 Feb 2026 21:06:33 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Wed, 28 Jan 2026 02:34:08 GMT
+# Thu, 12 Feb 2026 21:06:33 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 1777 "$PGDATA" # buildkit
-# Wed, 28 Jan 2026 02:34:08 GMT
+# Thu, 12 Feb 2026 21:06:33 GMT
 VOLUME [/var/lib/postgresql/data]
-# Wed, 28 Jan 2026 02:34:08 GMT
+# Thu, 12 Feb 2026 21:06:34 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:34:08 GMT
+# Thu, 12 Feb 2026 21:06:34 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Wed, 28 Jan 2026 02:34:08 GMT
+# Thu, 12 Feb 2026 21:06:34 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 28 Jan 2026 02:34:08 GMT
+# Thu, 12 Feb 2026 21:06:34 GMT
 STOPSIGNAL SIGINT
-# Wed, 28 Jan 2026 02:34:08 GMT
+# Thu, 12 Feb 2026 21:06:34 GMT
 EXPOSE map[5432/tcp:{}]
-# Wed, 28 Jan 2026 02:34:08 GMT
+# Thu, 12 Feb 2026 21:06:34 GMT
 CMD ["postgres"]
 ```
 
@@ -490,81 +490,81 @@ CMD ["postgres"]
 		Last Modified: Wed, 28 Jan 2026 01:18:15 GMT  
 		Size: 4.2 MB (4197091 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04cb8e709569103ca1cabc05f2225849024f5e3c566b2963d33ec14698c423a4`  
-		Last Modified: Wed, 28 Jan 2026 02:34:23 GMT  
-		Size: 969.0 B  
+	-	`sha256:3ebf431205a8fdc25051420d950c9b1b4054f999864fc0a23ef68b3d5791a681`  
+		Last Modified: Thu, 12 Feb 2026 21:06:48 GMT  
+		Size: 971.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c11ae1a332aa3ea7a87314d4ba697cdf5614fedb14a901aa39566d729930f346`  
-		Last Modified: Wed, 28 Jan 2026 02:34:23 GMT  
-		Size: 876.5 KB (876484 bytes)  
+	-	`sha256:fa795c98b4b1396a3ec1bdfb51a6a5dcfc2c5383dba6eab05c1b62a972ce493a`  
+		Last Modified: Thu, 12 Feb 2026 21:06:49 GMT  
+		Size: 876.5 KB (876490 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7a7726d58f36a5bc41cd95bcdcb160f549b87b3bd41731852ed9157a424dc16`  
-		Last Modified: Wed, 28 Jan 2026 02:34:23 GMT  
-		Size: 170.0 B  
+	-	`sha256:60dcb855238511b8fce3b81da54e851b7e2b4cd5044392518531b4d8999ab22b`  
+		Last Modified: Thu, 12 Feb 2026 21:06:48 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11fda14b93cc6255c525f36d81e85b2396f0a6d9e3b85187246cc8543d0b8856`  
-		Last Modified: Wed, 28 Jan 2026 02:34:23 GMT  
+	-	`sha256:df763b93bdfc1a3d91b21217f206da148e08e97aa4b15c95d89727d65e7829e8`  
+		Last Modified: Thu, 12 Feb 2026 21:06:49 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4dd79d1893d2863a0936d09be31ac0f47a810c4b4a847e927c4576d8c136904`  
-		Last Modified: Wed, 28 Jan 2026 02:34:27 GMT  
-		Size: 103.0 MB (103037226 bytes)  
+	-	`sha256:9a5b13f4885c01cade7b64bfebdaee5ecd27334cf68b4df170a448a774cd57a1`  
+		Last Modified: Thu, 12 Feb 2026 21:06:52 GMT  
+		Size: 103.1 MB (103077008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50c78c6f89360c9bd78e1248432692b48368ec0b4cea82e99e31cb723e34412f`  
-		Last Modified: Wed, 28 Jan 2026 02:34:24 GMT  
-		Size: 9.6 KB (9561 bytes)  
+	-	`sha256:bfc06bc5eb69cc57a2955e966e5c0a757949019e5a6645131c035a3ea82eb650`  
+		Last Modified: Thu, 12 Feb 2026 21:06:50 GMT  
+		Size: 9.6 KB (9621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb49efea2689b8164f8427a143bdec1af746663257289d579c2facf01d733839`  
-		Last Modified: Wed, 28 Jan 2026 02:34:24 GMT  
-		Size: 128.0 B  
+	-	`sha256:b397aa398d6807c9b2b964728694ca4b49eae909198aec36b342dd242c4ebde3`  
+		Last Modified: Thu, 12 Feb 2026 21:06:50 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91611946482889d806afacaf714dce642dbb470ca99f0c15ee5f2b2e2f0a86e9`  
-		Last Modified: Wed, 28 Jan 2026 02:34:24 GMT  
-		Size: 169.0 B  
+	-	`sha256:f3f6f0eb7fd1aa32b35012404c9c64295e2ab90c1943be129cb0692058710133`  
+		Last Modified: Thu, 12 Feb 2026 21:06:50 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d34fbf63512c17d8b220b7e5541a37d05022385ccf0fa7dc5c8c8cad5dcd583b`  
-		Last Modified: Wed, 28 Jan 2026 02:34:25 GMT  
-		Size: 5.8 KB (5839 bytes)  
+	-	`sha256:0cdb9f321db64200489c103540f7abde0b1609fd1e198b0595aafc074fbcb023`  
+		Last Modified: Thu, 12 Feb 2026 21:06:51 GMT  
+		Size: 5.8 KB (5840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70ac803ab4603d78c9aadb9d30f7fd3edbe92273e94cb52682922bda335459dd`  
-		Last Modified: Wed, 28 Jan 2026 02:34:26 GMT  
-		Size: 183.0 B  
+	-	`sha256:85793b37ace8cfa1f788ab77d201cbf8c3ab47833d2bab431addab1ea66815ff`  
+		Last Modified: Thu, 12 Feb 2026 21:06:51 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:16-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:c41e319e2af2aa77b25415ca3cf3984a4711ed6a8ad2203a51456d0eb6659a9f
+$ docker pull postgres@sha256:cf672d1f4f589a531b7d36bf8f5f96e26411b62ff5b7bd9d928f8d75cf9c7437
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **642.0 KB (642014 bytes)**  
+-	Total Size: **642.0 KB (642016 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f975afd183981a21b1e3c70baabbfa543d26fe80ce21faf8154e637293a10650`
+-	Image ID: `sha256:1adbf272dbd0866dac6974779c12fab6a96dc95d46f2c46e9e05f87f1a10966b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:36477a73f10aa5d86cabe8fb77fc592605f19f1d8b68482bf52d76470136d791`  
-		Last Modified: Wed, 28 Jan 2026 02:34:23 GMT  
+	-	`sha256:d1bf1573f50a97afbb4caf1f366e71a06a7a49fa2b8d60b6ff71ddb132107898`  
+		Last Modified: Thu, 12 Feb 2026 21:06:49 GMT  
 		Size: 597.5 KB (597486 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:39e25fe2054859f48fe181a3181287d6db9f667ae3ff19e119ae03ecd90f4631`  
-		Last Modified: Wed, 28 Jan 2026 02:34:23 GMT  
-		Size: 44.5 KB (44528 bytes)  
+	-	`sha256:9bc537bd2b0aa1cb6fc7b2e1a7ba24bd9c91992aacb84c7efd0abc3720299c70`  
+		Last Modified: Thu, 12 Feb 2026 21:06:48 GMT  
+		Size: 44.5 KB (44530 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `postgres:16-alpine3.23` - linux; 386
 
 ```console
-$ docker pull postgres@sha256:fe3d03b27e08cd967d720a6408c0b27ce48e661a9844711941840124cbe946fe
+$ docker pull postgres@sha256:7580f72dc65bd16887b9c4443feab19130d52371f6b8aceaf21e848ad9e951ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.0 MB (115978023 bytes)**  
+-	Total Size: **116.0 MB (116003641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0dff1f90684516826ca63ddc5ff2e66d4c9f8b3f417d269bc4688250d47263a8`
+-	Image ID: `sha256:3f890bd6525a270960af064b97de92f4a4153b13a5a3a6a08cd9e67d05da0126`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -573,49 +573,49 @@ $ docker pull postgres@sha256:fe3d03b27e08cd967d720a6408c0b27ce48e661a9844711941
 ADD alpine-minirootfs-3.23.3-x86.tar.gz / # buildkit
 # Wed, 28 Jan 2026 01:18:11 GMT
 CMD ["/bin/sh"]
-# Wed, 28 Jan 2026 02:26:43 GMT
+# Thu, 12 Feb 2026 21:04:21 GMT
 RUN set -eux; 	addgroup -g 70 -S postgres; 	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; 	install --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit
-# Wed, 28 Jan 2026 02:26:47 GMT
+# Thu, 12 Feb 2026 21:04:25 GMT
 ENV GOSU_VERSION=1.19
-# Wed, 28 Jan 2026 02:26:47 GMT
+# Thu, 12 Feb 2026 21:04:25 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 28 Jan 2026 02:26:47 GMT
+# Thu, 12 Feb 2026 21:07:34 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (removed in PostgreSQL 17+) # buildkit
-# Wed, 28 Jan 2026 02:26:47 GMT
+# Thu, 12 Feb 2026 21:07:34 GMT
 ENV LANG=en_US.utf8
-# Wed, 28 Jan 2026 02:26:47 GMT
+# Thu, 12 Feb 2026 21:07:34 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 28 Jan 2026 02:26:47 GMT
+# Thu, 12 Feb 2026 21:07:34 GMT
 ENV PG_MAJOR=16
-# Wed, 28 Jan 2026 02:26:47 GMT
-ENV PG_VERSION=16.11
-# Wed, 28 Jan 2026 02:26:47 GMT
-ENV PG_SHA256=6deb08c23d03d77d8f8bd1c14049eeef64aef8968fd8891df2dfc0b42f178eac
-# Wed, 28 Jan 2026 02:26:47 GMT
+# Thu, 12 Feb 2026 21:07:34 GMT
+ENV PG_VERSION=16.12
+# Thu, 12 Feb 2026 21:07:34 GMT
+ENV PG_SHA256=b253ee949303ef5df00e24002600da4fb37e5ccfafa78718c6ea6a936b4d97f1
+# Thu, 12 Feb 2026 21:07:34 GMT
 ENV DOCKER_PG_LLVM_DEPS=llvm19-dev 		clang19
-# Wed, 28 Jan 2026 02:29:31 GMT
+# Thu, 12 Feb 2026 21:09:54 GMT
 RUN set -eux; 		wget -O postgresql.tar.bz2 "https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2"; 	echo "$PG_SHA256 *postgresql.tar.bz2" | sha256sum -c -; 	mkdir -p /usr/src/postgresql; 	tar 		--extract 		--file postgresql.tar.bz2 		--directory /usr/src/postgresql 		--strip-components 1 	; 	rm postgresql.tar.bz2; 		apk add --no-cache --virtual .build-deps 		$DOCKER_PG_LLVM_DEPS 		bison 		coreutils 		dpkg-dev dpkg 		flex 		g++ 		gcc 		krb5-dev 		libc-dev 		libedit-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		make 		openldap-dev 		openssl-dev 		perl-dev 		perl-ipc-run 		perl-utils 		python3-dev 		tcl-dev 		util-linux-dev 		zlib-dev 		icu-dev 		lz4-dev 		zstd-dev 	; 		cd /usr/src/postgresql; 	awk '$1 == "#define" && $2 == "DEFAULT_PGSOCKET_DIR" && $3 == "\"/tmp\"" { $3 = "\"/var/run/postgresql\""; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; 	grep '/var/run/postgresql' src/include/pg_config_manual.h.new; 	mv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		export LLVM_CONFIG="/usr/lib/llvm19/bin/llvm-config"; 	export CLANG=clang-19; 		./configure 		--enable-option-checking=fatal 		--build="$gnuArch" 		--enable-integer-datetimes 		--enable-thread-safety 		--enable-tap-tests 		--disable-rpath 		--with-uuid=e2fs 		--with-pgport=5432 		--with-system-tzdata=/usr/share/zoneinfo 		--prefix=/usr/local 		--with-includes=/usr/local/include 		--with-libraries=/usr/local/lib 		--with-gssapi 		--with-icu 		--with-ldap 		--with-libxml 		--with-libxslt 		--with-llvm 		--with-lz4 		--with-openssl 		--with-perl 		--with-python 		--with-tcl 		--with-zstd 	; 	make -j "$(nproc)" world-bin; 	make install-world-bin; 	make -C contrib install; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 			| grep -v -e perl -e python -e tcl 	)"; 	apk add --no-cache --virtual .postgresql-rundeps 		$runDeps 		bash 		tzdata 		zstd 		icu-data-full 		$([ "$(apk --print-arch)" != 'ppc64le' ] && echo 'nss_wrapper') 	; 	apk del --no-network .build-deps; 	cd /; 	rm -rf 		/usr/src/postgresql 		/usr/local/share/doc 		/usr/local/share/man 	; 		postgres --version # buildkit
-# Wed, 28 Jan 2026 02:29:31 GMT
+# Thu, 12 Feb 2026 21:09:55 GMT
 RUN set -eux; 	cp -v /usr/local/share/postgresql/postgresql.conf.sample /usr/local/share/postgresql/postgresql.conf.sample.orig; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/local/share/postgresql/postgresql.conf.sample # buildkit
-# Wed, 28 Jan 2026 02:29:31 GMT
+# Thu, 12 Feb 2026 21:09:55 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
-# Wed, 28 Jan 2026 02:29:31 GMT
+# Thu, 12 Feb 2026 21:09:55 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Wed, 28 Jan 2026 02:29:31 GMT
+# Thu, 12 Feb 2026 21:09:55 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 1777 "$PGDATA" # buildkit
-# Wed, 28 Jan 2026 02:29:31 GMT
+# Thu, 12 Feb 2026 21:09:55 GMT
 VOLUME [/var/lib/postgresql/data]
-# Wed, 28 Jan 2026 02:29:31 GMT
+# Thu, 12 Feb 2026 21:09:55 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:29:31 GMT
+# Thu, 12 Feb 2026 21:09:55 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Wed, 28 Jan 2026 02:29:31 GMT
+# Thu, 12 Feb 2026 21:09:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 28 Jan 2026 02:29:31 GMT
+# Thu, 12 Feb 2026 21:09:55 GMT
 STOPSIGNAL SIGINT
-# Wed, 28 Jan 2026 02:29:31 GMT
+# Thu, 12 Feb 2026 21:09:55 GMT
 EXPOSE map[5432/tcp:{}]
-# Wed, 28 Jan 2026 02:29:31 GMT
+# Thu, 12 Feb 2026 21:09:55 GMT
 CMD ["postgres"]
 ```
 
@@ -624,81 +624,81 @@ CMD ["postgres"]
 		Last Modified: Wed, 28 Jan 2026 01:18:16 GMT  
 		Size: 3.7 MB (3686998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2520fcb81dd029e3ba573d7424335a985f7c8ce583bfccc8361debd140ae0e79`  
-		Last Modified: Wed, 28 Jan 2026 02:29:47 GMT  
-		Size: 966.0 B  
+	-	`sha256:b2b162e1781be1658aaf3b531e283e1d5db965949a8c81ebe713062231f58833`  
+		Last Modified: Thu, 12 Feb 2026 21:07:23 GMT  
+		Size: 969.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3420c7f6090364628d9e4ffb380ee6fc529237f8a4f4b3c309a37730b31781cd`  
-		Last Modified: Wed, 28 Jan 2026 02:29:47 GMT  
-		Size: 893.3 KB (893256 bytes)  
+	-	`sha256:d9f67441b167b495755b60a871a4380cf47f86ab348e59ff5fcb40bf4d7afcb2`  
+		Last Modified: Thu, 12 Feb 2026 21:07:23 GMT  
+		Size: 893.2 KB (893249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:160d62f6da7929ed724ca7e52d8c028c6dde86852d131677eed8068a5ee14a37`  
-		Last Modified: Wed, 28 Jan 2026 02:29:47 GMT  
-		Size: 170.0 B  
+	-	`sha256:f4454be357c636158771724b6a0c6c331001cfc4e2cec83fcd65f52560c8e02b`  
+		Last Modified: Thu, 12 Feb 2026 21:10:10 GMT  
+		Size: 176.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59912df68560be83c08f21a47d5136fddd4ff5d971bc5f7cf3e5ab3ca8fb2b0b`  
-		Last Modified: Wed, 28 Jan 2026 02:29:47 GMT  
+	-	`sha256:3e6385c0a318ac2435dc9f529fdce891d75e0523276c38eaa05204b479aa19e0`  
+		Last Modified: Thu, 12 Feb 2026 21:10:10 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28e869a5a0491d6f91fc2969d85b4ff63cc5f63bed1f18bd3937d7b16f7371c7`  
-		Last Modified: Wed, 28 Jan 2026 02:29:51 GMT  
-		Size: 111.4 MB (111380638 bytes)  
+	-	`sha256:c2c9c1a965fb2692d8740ae0a1a21866dbe2111dce4550a140f841bcd1d137a2`  
+		Last Modified: Thu, 12 Feb 2026 21:10:12 GMT  
+		Size: 111.4 MB (111406186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:652fef460d7b3716cad89e71c49cc4ed888f258b119414ced9394408751cba3b`  
-		Last Modified: Wed, 28 Jan 2026 02:29:49 GMT  
-		Size: 9.6 KB (9560 bytes)  
+	-	`sha256:4255ffe293e0432d8f3b6c87f4f9ca5a46bd268c2a0665de1e26a2e5b8b49275`  
+		Last Modified: Thu, 12 Feb 2026 21:10:10 GMT  
+		Size: 9.6 KB (9620 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f8aaeb70d3cfeee2b25c4bf3c4b130a35659ec6ba2cb2fa4e3e99e4b0f0b413`  
-		Last Modified: Wed, 28 Jan 2026 02:29:49 GMT  
+	-	`sha256:e52b057912d10f89098b1b989864c8207f0af5e37d1faf6c96274c5233cd3276`  
+		Last Modified: Thu, 12 Feb 2026 21:10:11 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5f22f5f9fa1c2cd67f63599ea889ac74cf6ebed3a4be9a2db90173b28d42e67`  
-		Last Modified: Wed, 28 Jan 2026 02:29:49 GMT  
-		Size: 169.0 B  
+	-	`sha256:572eb8c2506c74f5d5a53b1a654bbced3da604a45000fad81309883eeb769ba5`  
+		Last Modified: Thu, 12 Feb 2026 21:10:11 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c25bd1cac8aa42597f06e2976aca4e2db2a5c0f4412a5a1fb0fcf397ade16b77`  
-		Last Modified: Wed, 28 Jan 2026 02:29:50 GMT  
-		Size: 5.8 KB (5839 bytes)  
+	-	`sha256:3920f3edb47f0670bf5fe7c0581bc21cce7c56b7bda19e532b5af64b7996d620`  
+		Last Modified: Thu, 12 Feb 2026 21:10:11 GMT  
+		Size: 5.8 KB (5842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a28d6e97f60ec5025296d7b363c623db2a1f34057391b6bab90ddb3097db6292`  
-		Last Modified: Wed, 28 Jan 2026 02:29:50 GMT  
-		Size: 183.0 B  
+	-	`sha256:438d80d38559be3d3d9bdb2e3e0e9311bda6f739ec6c0add596b0302ff531401`  
+		Last Modified: Thu, 12 Feb 2026 21:10:12 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:16-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:61657a5fd445bfbdc5b96af25385d11f8bf59695b80221b3380fc272750e47e8
+$ docker pull postgres@sha256:c8bb65d642d0e0327053abd8787c5c74d9425c017de5346b1cd2dfcb64a5fd4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **642.3 KB (642312 bytes)**  
+-	Total Size: **642.3 KB (642313 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47ccb4585d3dc0efbb57ab600f5eb28c05ab357c0f4ae27c7993ff1acdec9b00`
+-	Image ID: `sha256:2b8085cf3fe0c6256a05ca55f5835f962513dfeadf88fa5044e041e4680ab5c9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6e3c49c6f820be5381b011a59958bd2c96416d4d5fd64cf15e50194ad60ac057`  
-		Last Modified: Wed, 28 Jan 2026 02:29:47 GMT  
+	-	`sha256:69e3507d8743d7a155923fa79b4ab60df34cf7b9df8afa09efbb599876c951ae`  
+		Last Modified: Thu, 12 Feb 2026 21:10:10 GMT  
 		Size: 598.1 KB (598055 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:86decd82ab5d609fd0fdb6e1c59a53908336fa7fcb7b4f8f2062598f4bdb3af4`  
-		Last Modified: Wed, 28 Jan 2026 02:29:47 GMT  
-		Size: 44.3 KB (44257 bytes)  
+	-	`sha256:c5d8e61a3d1e391b76675887b63355684cc85c21b5bb5fa5f12ea479b18556f6`  
+		Last Modified: Thu, 12 Feb 2026 21:10:10 GMT  
+		Size: 44.3 KB (44258 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `postgres:16-alpine3.23` - linux; ppc64le
 
 ```console
-$ docker pull postgres@sha256:fb2fe5a438741687a5b7fab263769942ea69b411036892cd1f986535eb0b3f11
+$ docker pull postgres@sha256:948cbef54a0cf25ef435e5091b91ce92b242e369a4b7358f53a5f33ed99613bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.9 MB (94865557 bytes)**  
+-	Total Size: **94.9 MB (94896351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d15db77186f21c032597d6fc7a5fb488a6b0e750fcfbcaa090cb2051bdaf8f6b`
+-	Image ID: `sha256:229c790585fc63fb82fc2294f2379c797ff420a840f8b40e29236a99e7eceb12`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -707,49 +707,49 @@ $ docker pull postgres@sha256:fb2fe5a438741687a5b7fab263769942ea69b411036892cd1f
 ADD alpine-minirootfs-3.23.3-ppc64le.tar.gz / # buildkit
 # Wed, 28 Jan 2026 01:17:01 GMT
 CMD ["/bin/sh"]
-# Wed, 28 Jan 2026 03:31:57 GMT
+# Thu, 12 Feb 2026 21:05:39 GMT
 RUN set -eux; 	addgroup -g 70 -S postgres; 	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; 	install --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit
-# Wed, 28 Jan 2026 03:32:03 GMT
+# Thu, 12 Feb 2026 21:05:44 GMT
 ENV GOSU_VERSION=1.19
-# Wed, 28 Jan 2026 03:32:03 GMT
+# Thu, 12 Feb 2026 21:05:44 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 28 Jan 2026 03:40:28 GMT
+# Thu, 12 Feb 2026 21:20:13 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (removed in PostgreSQL 17+) # buildkit
-# Wed, 28 Jan 2026 03:40:28 GMT
+# Thu, 12 Feb 2026 21:20:13 GMT
 ENV LANG=en_US.utf8
-# Wed, 28 Jan 2026 03:40:29 GMT
+# Thu, 12 Feb 2026 21:20:14 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 28 Jan 2026 03:40:29 GMT
+# Thu, 12 Feb 2026 21:20:14 GMT
 ENV PG_MAJOR=16
-# Wed, 28 Jan 2026 03:40:29 GMT
-ENV PG_VERSION=16.11
-# Wed, 28 Jan 2026 03:40:29 GMT
-ENV PG_SHA256=6deb08c23d03d77d8f8bd1c14049eeef64aef8968fd8891df2dfc0b42f178eac
-# Wed, 28 Jan 2026 03:40:29 GMT
+# Thu, 12 Feb 2026 21:20:14 GMT
+ENV PG_VERSION=16.12
+# Thu, 12 Feb 2026 21:20:14 GMT
+ENV PG_SHA256=b253ee949303ef5df00e24002600da4fb37e5ccfafa78718c6ea6a936b4d97f1
+# Thu, 12 Feb 2026 21:20:14 GMT
 ENV DOCKER_PG_LLVM_DEPS=llvm19-dev 		clang19
-# Wed, 28 Jan 2026 03:43:24 GMT
+# Thu, 12 Feb 2026 21:23:59 GMT
 RUN set -eux; 		wget -O postgresql.tar.bz2 "https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2"; 	echo "$PG_SHA256 *postgresql.tar.bz2" | sha256sum -c -; 	mkdir -p /usr/src/postgresql; 	tar 		--extract 		--file postgresql.tar.bz2 		--directory /usr/src/postgresql 		--strip-components 1 	; 	rm postgresql.tar.bz2; 		apk add --no-cache --virtual .build-deps 		$DOCKER_PG_LLVM_DEPS 		bison 		coreutils 		dpkg-dev dpkg 		flex 		g++ 		gcc 		krb5-dev 		libc-dev 		libedit-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		make 		openldap-dev 		openssl-dev 		perl-dev 		perl-ipc-run 		perl-utils 		python3-dev 		tcl-dev 		util-linux-dev 		zlib-dev 		icu-dev 		lz4-dev 		zstd-dev 	; 		cd /usr/src/postgresql; 	awk '$1 == "#define" && $2 == "DEFAULT_PGSOCKET_DIR" && $3 == "\"/tmp\"" { $3 = "\"/var/run/postgresql\""; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; 	grep '/var/run/postgresql' src/include/pg_config_manual.h.new; 	mv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		export LLVM_CONFIG="/usr/lib/llvm19/bin/llvm-config"; 	export CLANG=clang-19; 		./configure 		--enable-option-checking=fatal 		--build="$gnuArch" 		--enable-integer-datetimes 		--enable-thread-safety 		--enable-tap-tests 		--disable-rpath 		--with-uuid=e2fs 		--with-pgport=5432 		--with-system-tzdata=/usr/share/zoneinfo 		--prefix=/usr/local 		--with-includes=/usr/local/include 		--with-libraries=/usr/local/lib 		--with-gssapi 		--with-icu 		--with-ldap 		--with-libxml 		--with-libxslt 		--with-llvm 		--with-lz4 		--with-openssl 		--with-perl 		--with-python 		--with-tcl 		--with-zstd 	; 	make -j "$(nproc)" world-bin; 	make install-world-bin; 	make -C contrib install; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 			| grep -v -e perl -e python -e tcl 	)"; 	apk add --no-cache --virtual .postgresql-rundeps 		$runDeps 		bash 		tzdata 		zstd 		icu-data-full 		$([ "$(apk --print-arch)" != 'ppc64le' ] && echo 'nss_wrapper') 	; 	apk del --no-network .build-deps; 	cd /; 	rm -rf 		/usr/src/postgresql 		/usr/local/share/doc 		/usr/local/share/man 	; 		postgres --version # buildkit
-# Wed, 28 Jan 2026 03:43:24 GMT
+# Thu, 12 Feb 2026 21:23:59 GMT
 RUN set -eux; 	cp -v /usr/local/share/postgresql/postgresql.conf.sample /usr/local/share/postgresql/postgresql.conf.sample.orig; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/local/share/postgresql/postgresql.conf.sample # buildkit
-# Wed, 28 Jan 2026 03:43:25 GMT
+# Thu, 12 Feb 2026 21:24:00 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
-# Wed, 28 Jan 2026 03:43:25 GMT
+# Thu, 12 Feb 2026 21:24:00 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Wed, 28 Jan 2026 03:43:25 GMT
+# Thu, 12 Feb 2026 21:24:01 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 1777 "$PGDATA" # buildkit
-# Wed, 28 Jan 2026 03:43:25 GMT
+# Thu, 12 Feb 2026 21:24:01 GMT
 VOLUME [/var/lib/postgresql/data]
-# Wed, 28 Jan 2026 03:43:26 GMT
+# Thu, 12 Feb 2026 21:24:01 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 03:43:27 GMT
+# Thu, 12 Feb 2026 21:24:02 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Wed, 28 Jan 2026 03:43:27 GMT
+# Thu, 12 Feb 2026 21:24:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 28 Jan 2026 03:43:27 GMT
+# Thu, 12 Feb 2026 21:24:02 GMT
 STOPSIGNAL SIGINT
-# Wed, 28 Jan 2026 03:43:27 GMT
+# Thu, 12 Feb 2026 21:24:02 GMT
 EXPOSE map[5432/tcp:{}]
-# Wed, 28 Jan 2026 03:43:27 GMT
+# Thu, 12 Feb 2026 21:24:02 GMT
 CMD ["postgres"]
 ```
 
@@ -758,69 +758,69 @@ CMD ["postgres"]
 		Last Modified: Wed, 28 Jan 2026 01:17:23 GMT  
 		Size: 3.8 MB (3829643 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6dd4e647df17c82db9ca398b2f463b9b25ee74420a55b31a9516facb1afa9c46`  
-		Last Modified: Wed, 28 Jan 2026 03:35:18 GMT  
+	-	`sha256:f3303791000843bb87e4139ec69d0072bf49042341568a87e31e34fee9bb6b8d`  
+		Last Modified: Thu, 12 Feb 2026 21:10:41 GMT  
 		Size: 973.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f71de422e36f20b27957805987c70f9baf3d78aeb5185cefb6ba5e8f87a61453`  
-		Last Modified: Wed, 28 Jan 2026 03:35:19 GMT  
-		Size: 881.5 KB (881539 bytes)  
+	-	`sha256:6b84c177f4fdd062892cae0bf053756f85b594952f273a772df42fab740e47f3`  
+		Last Modified: Thu, 12 Feb 2026 21:10:41 GMT  
+		Size: 881.5 KB (881516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77cf74e995b3eb5bda2a0a5450ee9699ea1b33c26c2df9881fa295efba513429`  
-		Last Modified: Wed, 28 Jan 2026 03:44:00 GMT  
-		Size: 175.0 B  
+	-	`sha256:fe5c2b538dfb06dace37986f411966827fb126b105e5c672fd572c190a045e4a`  
+		Last Modified: Thu, 12 Feb 2026 21:24:34 GMT  
+		Size: 177.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1825ae71f923b564d2d7e0d2c089aa9e2ba51c8a6ac633c77b1b1881c2d2991`  
-		Last Modified: Wed, 28 Jan 2026 03:44:00 GMT  
+	-	`sha256:9b16eb133bf59fc60bbad5078ca0631e836e2b7c82264e85a4dfb22de76ecc67`  
+		Last Modified: Thu, 12 Feb 2026 21:24:34 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a9525d3b5b72d52953f638753f8025eb571048c04f328cd5d502cc98fc79bc8`  
-		Last Modified: Wed, 28 Jan 2026 03:44:03 GMT  
-		Size: 90.1 MB (90137225 bytes)  
+	-	`sha256:d5e2f161a890575fa221edd9bde96d21a2b6f3de6edc2a55896d4b53940fb049`  
+		Last Modified: Thu, 12 Feb 2026 21:24:37 GMT  
+		Size: 90.2 MB (90167972 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bac375fb3ac1c531bba10c7c3e1353106ee20a49e6db88f74ea877ccc6689939`  
-		Last Modified: Wed, 28 Jan 2026 03:44:00 GMT  
-		Size: 9.6 KB (9563 bytes)  
+	-	`sha256:03977ef5bfa064712f1ca5a07c80097e3a350c3bc6e5da2d9bf36e30c5338d65`  
+		Last Modified: Thu, 12 Feb 2026 21:24:34 GMT  
+		Size: 9.6 KB (9627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22cf43e2fb95112b5136da4905c86ba2daef63ff7f21b402e32be55aaa7d94f6`  
-		Last Modified: Wed, 28 Jan 2026 03:44:02 GMT  
-		Size: 128.0 B  
+	-	`sha256:0d0d085349a07e80e94f83d10c5cccb47fbabab4c6e6f6b265bd4772939e8ab0`  
+		Last Modified: Thu, 12 Feb 2026 21:24:35 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47ff775f605d7cc46cb80b9ad8b749c905205fd92f5d5dcd8f967ec0e2472fc3`  
-		Last Modified: Wed, 28 Jan 2026 03:44:01 GMT  
-		Size: 169.0 B  
+	-	`sha256:b1d7037ceb6e182688a34d47dc77cff5b2132f92b755d31b2c0d3c4274e2cffc`  
+		Last Modified: Thu, 12 Feb 2026 21:24:35 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fac5c00634de1f176d3d36e34699f2bac99828e007cca4f6afc625500af87cd9`  
-		Last Modified: Wed, 28 Jan 2026 03:44:01 GMT  
+	-	`sha256:9f7f8e4488c5727b81835c467e95b43969d1d7d27ef6071ec583865fc033fc95`  
+		Last Modified: Thu, 12 Feb 2026 21:24:35 GMT  
 		Size: 5.8 KB (5840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11b45f51fdbf81d1d4f48a8b7190e9bffcee8cfb9ab10f59c9cbb3ee1b9e83a0`  
-		Last Modified: Wed, 28 Jan 2026 03:44:03 GMT  
-		Size: 186.0 B  
+	-	`sha256:cbadeb2622cf2fa9b4025ec8b856d0d3632061b9e8b704111af25acc360281fc`  
+		Last Modified: Thu, 12 Feb 2026 21:24:36 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:16-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:d5206e6e74d390ea698f29d26e08aa70bff16a36c35270fba191413da65b48c3
+$ docker pull postgres@sha256:64b497f04722a971145033939ff08e43a89c4832e056fb0459d0eef793605f26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **640.2 KB (640161 bytes)**  
+-	Total Size: **640.2 KB (640159 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c98495f5b6357bde4803af0281ce2b744d81a034c40607de8ced832bd0a804e`
+-	Image ID: `sha256:a68148453bb3adb1e6ad4b62112277355b8fd1c900d3138305f2af512ecde452`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:04dbc3271c5b22e09852d7003752111d65708245758c4bf0427729887d172cb4`  
-		Last Modified: Wed, 28 Jan 2026 03:44:00 GMT  
+	-	`sha256:ac7716500a41f140b3ff3abfaa381244a2514c24c1e4b05a39f56502c4bb3ffc`  
+		Last Modified: Thu, 12 Feb 2026 21:24:34 GMT  
 		Size: 595.8 KB (595801 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:630a8cc2f0837c060c526ea5a3ffb421060566efb8b75d74869da3554978ce72`  
-		Last Modified: Wed, 28 Jan 2026 03:44:00 GMT  
-		Size: 44.4 KB (44360 bytes)  
+	-	`sha256:d71aa00b685c7dabb6aa58b0ef7719000d22cbc3ff48afa8124bae1531a7e73b`  
+		Last Modified: Thu, 12 Feb 2026 21:24:34 GMT  
+		Size: 44.4 KB (44358 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `postgres:16-alpine3.23` - linux; riscv64
@@ -960,13 +960,13 @@ $ docker pull postgres@sha256:d485c37c3424008ab511d262debfae5875f71718f23cbb43b2
 ### `postgres:16-alpine3.23` - linux; s390x
 
 ```console
-$ docker pull postgres@sha256:d150a3bf57fc569b0ba162747a56fd5a3afd91a687baaada4da683543281e148
+$ docker pull postgres@sha256:0e955f7840f4d7f21d9e405c27591131d4b7f231f298b708af979f9f5174ada7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.1 MB (118080237 bytes)**  
+-	Total Size: **118.1 MB (118095159 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69d7d9d5734a8145b66f9fb5d54378170329f49700b195bb55f524a1f4f31fbd`
+-	Image ID: `sha256:8358c46a5b05982b1a39240f045e99b88ef2207db28b84a52b01295dcb842446`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -975,49 +975,49 @@ $ docker pull postgres@sha256:d150a3bf57fc569b0ba162747a56fd5a3afd91a687baaada4d
 ADD alpine-minirootfs-3.23.3-s390x.tar.gz / # buildkit
 # Wed, 28 Jan 2026 01:17:06 GMT
 CMD ["/bin/sh"]
-# Wed, 28 Jan 2026 02:49:20 GMT
+# Thu, 12 Feb 2026 21:02:35 GMT
 RUN set -eux; 	addgroup -g 70 -S postgres; 	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; 	install --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit
-# Wed, 28 Jan 2026 02:49:28 GMT
+# Thu, 12 Feb 2026 21:02:40 GMT
 ENV GOSU_VERSION=1.19
-# Wed, 28 Jan 2026 02:49:28 GMT
+# Thu, 12 Feb 2026 21:02:40 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 28 Jan 2026 02:54:14 GMT
+# Thu, 12 Feb 2026 21:21:43 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (removed in PostgreSQL 17+) # buildkit
-# Wed, 28 Jan 2026 02:54:14 GMT
+# Thu, 12 Feb 2026 21:21:43 GMT
 ENV LANG=en_US.utf8
-# Wed, 28 Jan 2026 02:54:14 GMT
+# Thu, 12 Feb 2026 21:21:43 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 28 Jan 2026 02:54:14 GMT
+# Thu, 12 Feb 2026 21:21:43 GMT
 ENV PG_MAJOR=16
-# Wed, 28 Jan 2026 02:54:14 GMT
-ENV PG_VERSION=16.11
-# Wed, 28 Jan 2026 02:54:14 GMT
-ENV PG_SHA256=6deb08c23d03d77d8f8bd1c14049eeef64aef8968fd8891df2dfc0b42f178eac
-# Wed, 28 Jan 2026 02:54:14 GMT
+# Thu, 12 Feb 2026 21:21:43 GMT
+ENV PG_VERSION=16.12
+# Thu, 12 Feb 2026 21:21:43 GMT
+ENV PG_SHA256=b253ee949303ef5df00e24002600da4fb37e5ccfafa78718c6ea6a936b4d97f1
+# Thu, 12 Feb 2026 21:21:43 GMT
 ENV DOCKER_PG_LLVM_DEPS=llvm19-dev 		clang19
-# Wed, 28 Jan 2026 02:57:14 GMT
+# Thu, 12 Feb 2026 21:24:41 GMT
 RUN set -eux; 		wget -O postgresql.tar.bz2 "https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2"; 	echo "$PG_SHA256 *postgresql.tar.bz2" | sha256sum -c -; 	mkdir -p /usr/src/postgresql; 	tar 		--extract 		--file postgresql.tar.bz2 		--directory /usr/src/postgresql 		--strip-components 1 	; 	rm postgresql.tar.bz2; 		apk add --no-cache --virtual .build-deps 		$DOCKER_PG_LLVM_DEPS 		bison 		coreutils 		dpkg-dev dpkg 		flex 		g++ 		gcc 		krb5-dev 		libc-dev 		libedit-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		make 		openldap-dev 		openssl-dev 		perl-dev 		perl-ipc-run 		perl-utils 		python3-dev 		tcl-dev 		util-linux-dev 		zlib-dev 		icu-dev 		lz4-dev 		zstd-dev 	; 		cd /usr/src/postgresql; 	awk '$1 == "#define" && $2 == "DEFAULT_PGSOCKET_DIR" && $3 == "\"/tmp\"" { $3 = "\"/var/run/postgresql\""; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; 	grep '/var/run/postgresql' src/include/pg_config_manual.h.new; 	mv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		export LLVM_CONFIG="/usr/lib/llvm19/bin/llvm-config"; 	export CLANG=clang-19; 		./configure 		--enable-option-checking=fatal 		--build="$gnuArch" 		--enable-integer-datetimes 		--enable-thread-safety 		--enable-tap-tests 		--disable-rpath 		--with-uuid=e2fs 		--with-pgport=5432 		--with-system-tzdata=/usr/share/zoneinfo 		--prefix=/usr/local 		--with-includes=/usr/local/include 		--with-libraries=/usr/local/lib 		--with-gssapi 		--with-icu 		--with-ldap 		--with-libxml 		--with-libxslt 		--with-llvm 		--with-lz4 		--with-openssl 		--with-perl 		--with-python 		--with-tcl 		--with-zstd 	; 	make -j "$(nproc)" world-bin; 	make install-world-bin; 	make -C contrib install; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 			| grep -v -e perl -e python -e tcl 	)"; 	apk add --no-cache --virtual .postgresql-rundeps 		$runDeps 		bash 		tzdata 		zstd 		icu-data-full 		$([ "$(apk --print-arch)" != 'ppc64le' ] && echo 'nss_wrapper') 	; 	apk del --no-network .build-deps; 	cd /; 	rm -rf 		/usr/src/postgresql 		/usr/local/share/doc 		/usr/local/share/man 	; 		postgres --version # buildkit
-# Wed, 28 Jan 2026 02:57:14 GMT
+# Thu, 12 Feb 2026 21:24:41 GMT
 RUN set -eux; 	cp -v /usr/local/share/postgresql/postgresql.conf.sample /usr/local/share/postgresql/postgresql.conf.sample.orig; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/local/share/postgresql/postgresql.conf.sample # buildkit
-# Wed, 28 Jan 2026 02:57:14 GMT
+# Thu, 12 Feb 2026 21:24:41 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
-# Wed, 28 Jan 2026 02:57:14 GMT
+# Thu, 12 Feb 2026 21:24:41 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Wed, 28 Jan 2026 02:57:14 GMT
+# Thu, 12 Feb 2026 21:24:42 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 1777 "$PGDATA" # buildkit
-# Wed, 28 Jan 2026 02:57:14 GMT
+# Thu, 12 Feb 2026 21:24:42 GMT
 VOLUME [/var/lib/postgresql/data]
-# Wed, 28 Jan 2026 02:57:14 GMT
+# Thu, 12 Feb 2026 21:24:42 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:57:14 GMT
+# Thu, 12 Feb 2026 21:24:42 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Wed, 28 Jan 2026 02:57:14 GMT
+# Thu, 12 Feb 2026 21:24:42 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 28 Jan 2026 02:57:14 GMT
+# Thu, 12 Feb 2026 21:24:42 GMT
 STOPSIGNAL SIGINT
-# Wed, 28 Jan 2026 02:57:14 GMT
+# Thu, 12 Feb 2026 21:24:42 GMT
 EXPOSE map[5432/tcp:{}]
-# Wed, 28 Jan 2026 02:57:14 GMT
+# Thu, 12 Feb 2026 21:24:42 GMT
 CMD ["postgres"]
 ```
 
@@ -1026,67 +1026,67 @@ CMD ["postgres"]
 		Last Modified: Wed, 28 Jan 2026 01:17:15 GMT  
 		Size: 3.7 MB (3725333 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1fbf24c2e83b9c01201ca76d0a4e3840b930d1d881ebfeed131e53116c28472`  
-		Last Modified: Wed, 28 Jan 2026 02:53:09 GMT  
-		Size: 971.0 B  
+	-	`sha256:915db86606c3965b2bbcb157bebba9a685fced6d53839f64dcad52d883bb9a6d`  
+		Last Modified: Thu, 12 Feb 2026 21:06:20 GMT  
+		Size: 973.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7c1d356a9c7ec6c78f8eea92af3e68a6942fdcbf19e4d27ae4133bc86433924`  
-		Last Modified: Wed, 28 Jan 2026 02:53:09 GMT  
-		Size: 897.4 KB (897413 bytes)  
+	-	`sha256:3967549b827d64fe46392dafed3c7cf52feb9091d58940d9473a94dd9f775842`  
+		Last Modified: Thu, 12 Feb 2026 21:06:20 GMT  
+		Size: 897.4 KB (897423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9070c8bfee140bc1c3f07a7f5a2bacf57b95afb77d2012a1e323964d38d691a`  
-		Last Modified: Wed, 28 Jan 2026 02:57:39 GMT  
-		Size: 174.0 B  
+	-	`sha256:145f8a61ea8834f701d64d1d04c6e297fbb7a9cb97a8169154908ce9d07fb7a6`  
+		Last Modified: Thu, 12 Feb 2026 21:25:05 GMT  
+		Size: 178.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4c417c9a2756a305f8aea6dcf5a2317eec0ae1eccfa3857434847510b425e09`  
-		Last Modified: Wed, 28 Jan 2026 02:57:39 GMT  
+	-	`sha256:53151d2ae8e3a6eeca5607c0502b531953c5c57328c68d263a541f6504700f10`  
+		Last Modified: Thu, 12 Feb 2026 21:25:02 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5d93973726ec67bf0e9ff24ab71dcdf3b6db6b6d9dd835ca40b352995c91739`  
-		Last Modified: Wed, 28 Jan 2026 02:57:41 GMT  
-		Size: 113.4 MB (113440349 bytes)  
+	-	`sha256:f60afe2ce4c0c5e2eca26ce293a51b80d784b2beac3d30822328801d141d87e3`  
+		Last Modified: Thu, 12 Feb 2026 21:25:07 GMT  
+		Size: 113.5 MB (113455193 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfb0f581ab76d28ddcbad00cb214b71699e691cb2dddc6b315275801d3f5c9d9`  
-		Last Modified: Wed, 28 Jan 2026 02:57:39 GMT  
-		Size: 9.6 KB (9560 bytes)  
+	-	`sha256:6b021e9c74b51ea0d48c5b46a5dbf2605cd3ba99f7c91f5120a9bc3f7114ca22`  
+		Last Modified: Thu, 12 Feb 2026 21:25:05 GMT  
+		Size: 9.6 KB (9618 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c75c52490c9e7568a770141f0688ca8a81569e32e950fa396633d1d5ef484454`  
-		Last Modified: Wed, 28 Jan 2026 02:57:40 GMT  
-		Size: 128.0 B  
+	-	`sha256:6caf775b56b313726836ebbda35d96c50e751d91a3e9b3e9ffde9f9b0df76598`  
+		Last Modified: Thu, 12 Feb 2026 21:25:05 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5eb54f6ff9708aa62b37cbb8d3aa29f8142a50086a2c19faa14d54794191d211`  
-		Last Modified: Wed, 28 Jan 2026 02:57:40 GMT  
-		Size: 169.0 B  
+	-	`sha256:242f8a9a2bfc0bf5182ac7f01cb09f8c97d036a1d12cb1952223152fb8689faa`  
+		Last Modified: Thu, 12 Feb 2026 21:25:06 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e8c907fb7533e699f6d01c755faa97bd3d5aae445489cb194a27eaff695b76a`  
-		Last Modified: Wed, 28 Jan 2026 02:57:40 GMT  
+	-	`sha256:aaf9ed300241c85da840522fa01e1adefbb0bd9398ec8ab5740fd8ee83392cd5`  
+		Last Modified: Thu, 12 Feb 2026 21:25:06 GMT  
 		Size: 5.8 KB (5839 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ae2643243983bbfb37217f4c03867aa6a4780043efb06df51a1dbba11cfb81a3`  
-		Last Modified: Wed, 28 Jan 2026 02:57:41 GMT  
+	-	`sha256:7450c2ba6c8dd68ddc319cabdff7a3712ff2fc08c6e960b85b14ca557127e429`  
+		Last Modified: Thu, 12 Feb 2026 21:25:06 GMT  
 		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:16-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:cce86795aec6bfd4ecb5d6abdd32801874778e5ab8e55f127a490bb7f7ef0675
+$ docker pull postgres@sha256:b8e490c4c491fe9b7814f464b9dc5c24d4bda82143646bb2b46ac6d5bda8705e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **641.7 KB (641735 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68e86b27c4c9cba972622455644681264bde0e9690dbed07ef812729f97a95ce`
+-	Image ID: `sha256:4490de3ac2eeebdb460b4cb4259bde59f07d7c8dfdecbd04f8dbd0c1871d67dd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f3570dc916b1677887388b4be4970483db605aedc8e7cf9a2d5e748cfc49832c`  
-		Last Modified: Wed, 28 Jan 2026 02:57:39 GMT  
+	-	`sha256:4ca2f06d402ab2b83ea27164bdbd85cd01c225fc95dd99190e9f46ffe8b2f2c1`  
+		Last Modified: Thu, 12 Feb 2026 21:25:05 GMT  
 		Size: 597.4 KB (597429 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:facd1976734d93d5f33c711f764feb302b40a28ea69809ed5862fd0c5052e4ff`  
-		Last Modified: Wed, 28 Jan 2026 02:57:39 GMT  
+	-	`sha256:b78f895e6463e239e57ce7d090339c5eb839fb0989abe0cd48a849add01ea759`  
+		Last Modified: Thu, 12 Feb 2026 21:25:05 GMT  
 		Size: 44.3 KB (44306 bytes)  
 		MIME: application/vnd.in-toto+json
