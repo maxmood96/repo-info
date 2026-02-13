@@ -1084,21 +1084,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `MIT OR Unlicense`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.11-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11-3.dsc' gnutls28_3.8.11-3.dsc 3249 SHA256:a6b7c28d4ce47cc81c1d869c06223f73ecd0f5d1416e5b4ca4537aa83ec6c5d0
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11.orig.tar.xz' gnutls28_3.8.11.orig.tar.xz 6939944 SHA256:91bd23c4a86ebc6152e81303d20cf6ceaeb97bc8f84266d0faec6e29f17baa20
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11.orig.tar.xz.asc' gnutls28_3.8.11.orig.tar.xz.asc 833 SHA256:6bcfeee1548a8d2afe8997a4015b3a55422cfdadc14524d14400cb3ad716a81a
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11-3.debian.tar.xz' gnutls28_3.8.11-3.debian.tar.xz 173820 SHA256:4da2d1e5232cf5fa3192c00686afede92d0002d156bae45d33b877e114b0d782
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.11-3/
 
-- https://sources.debian.net/src/gnutls28/3.8.11-3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.11-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.11-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.12-1`
 
@@ -3050,21 +3042,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.5-5
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.5-5.dsc' subversion_1.14.5-5.dsc 4074 SHA256:f2d54ba05c9c15ec1171d71b274d80e1252f40b7a703efa6a5261d4b0a36bfd8
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.5.orig.tar.gz' subversion_1.14.5.orig.tar.gz 11645728 SHA256:cd143fe8fdb1cd506c438eef1c772a2e87e1519e6b0be3fcd54a8c59e9022390
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.5.orig.tar.gz.asc' subversion_1.14.5.orig.tar.gz.asc 2382 SHA256:91384669ad9125c6919b0b2ab0c345e6de3cd0f89affe04ab66dfe9c5e19d673
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.5-5.debian.tar.xz' subversion_1.14.5-5.debian.tar.xz 300656 SHA256:210b6a243cc23af3bf1053f99ccc627ba5b8c6f5bdbbdf7c75a562fb589040eb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.14.5-5/
 
-- https://sources.debian.net/src/subversion/1.14.5-5/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.14.5-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.14.5-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=259-1`
 
