@@ -1,10 +1,10 @@
-# `neo4j:2026.01.3-community-trixie`
+# `neo4j:2026.01.4-community-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f59093d74e3227dfd7a405098cc3c8aab649f49beb9d6bbce293905dd7cf28dc`
-- Created: `2026-02-05T22:50:40.268259216Z`
-- Virtual Size: ~ 606.95 Mb  
+- Image ID: `sha256:5a72197e1185962b60778668e3b5e784df1c9e3bdbfa591943a91a997de2f7c2`
+- Created: `2026-02-10T19:18:26.744839893Z`
+- Virtual Size: ~ 606.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `NEO4J_SHA256=fd9376186034a84eeca384971b2e9e3e80f8e41166529843f49c48e390a48694`
-  - `NEO4J_TARBALL=neo4j-community-2026.01.3-unix.tar.gz`
+  - `NEO4J_SHA256=f026977b1559a9a5e796faf6b0d3da3ecf8fae4d2bfb3a3c01ce9980f8010de2`
+  - `NEO4J_TARBALL=neo4j-community-2026.01.4-unix.tar.gz`
   - `NEO4J_EDITION=community`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
@@ -1380,11 +1380,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.63-1`
+### `dpkg` source package: `linux=6.12.69-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.63-1`
+- `linux-libc-dev=6.12.69-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1398,17 +1398,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.63-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.63-1.dsc' linux_6.12.63-1.dsc 288306 SHA256:2e7b38c1073ca491e9b24f6981c17a0943454059ffba7c3e4274cea547c04f50
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.63.orig.tar.xz' linux_6.12.63.orig.tar.xz 151136276 SHA256:2099134675f27ceb1aad46e956c12a9b72a3fe8cf8eb5893ae56e3ef86c3af28
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.63-1.debian.tar.xz' linux_6.12.63-1.debian.tar.xz 1751700 SHA256:599c7b9f80f7fd9f24f6344c8bdd407dfb9ca9c14b8c34570a003a780759a4b8
+$ apt-get source -qq --print-uris linux=6.12.69-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.69-1.dsc' linux_6.12.69-1.dsc 288306 SHA256:7f023b9a1f86f38be5fa822d117f44fc1d251d22ccda87322df768b0ab353c52
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.69.orig.tar.xz' linux_6.12.69.orig.tar.xz 151161204 SHA256:972fea525fd0b218320a9315dc3b575b70c02878b8fc8ee4f612d2dcfa66b81f
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.69-1.debian.tar.xz' linux_6.12.69-1.debian.tar.xz 1766680 SHA256:b47716fee600e8643f47d9341741eb6f1e988982702a0e258ef449a606c1624e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.63-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.63-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.63-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.69-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.69-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.69-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 

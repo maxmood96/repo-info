@@ -1,9 +1,9 @@
-# `neo4j:2026.01.3-community-bullseye`
+# `neo4j:2026.01.4-community-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:58d1410464aa4cd09ea2b26e92a14f2846ff5a10386957245b44f2dde0a9b61b`
-- Created: `2026-02-05T22:50:40.272273526Z`
+- Image ID: `sha256:01af5b75942147e9c231453701d477b521744bd6d9650e5b94924b33364f36f0`
+- Created: `2026-02-10T19:18:39.868227876Z`
 - Virtual Size: ~ 648.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `NEO4J_SHA256=fd9376186034a84eeca384971b2e9e3e80f8e41166529843f49c48e390a48694`
-  - `NEO4J_TARBALL=neo4j-community-2026.01.3-unix.tar.gz`
+  - `NEO4J_SHA256=f026977b1559a9a5e796faf6b0d3da3ecf8fae4d2bfb3a3c01ce9980f8010de2`
+  - `NEO4J_TARBALL=neo4j-community-2026.01.4-unix.tar.gz`
   - `NEO4J_EDITION=community`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
