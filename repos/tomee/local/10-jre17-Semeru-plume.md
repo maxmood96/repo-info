@@ -506,14 +506,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.4.7-1ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.6.dsc' expat_2.4.7-1ubuntu0.6.dsc 1491 SHA512:b127ec7ab60ea354ed05bccc38b4f022d4c62e2778e0f7b68a7da2d06910281d1833642b1cecb9a63d4a875adce31e4d992a4f894e6d8b21109f553980c3a260
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7.orig.tar.gz' expat_2.4.7.orig.tar.gz 8316374 SHA512:91bc9792c4ba1d0ad835f633d8cfa62130692f48308eea8932ec5e13a01542120561b0f255b4adc58b1adae6f83632cbabf428b5b5c0d2ac6de542478a951232
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.6.debian.tar.xz' expat_2.4.7-1ubuntu0.6.debian.tar.xz 36504 SHA512:02f1657eb320a635fcceda6b2f7e2757df02c106da9a475e230f58c32178bc4e481162d635eb7a8b8d72644704d427fcbc04b98e94ef61fafa0cf898f651cd4b
-```
 
 ### `dpkg` source package: `findutils=4.8.0-1ubuntu3`
 
@@ -1126,14 +1121,9 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.37-3ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.3.dsc' libpng1.6_1.6.37-3ubuntu0.3.dsc 2340 SHA512:e533d10c49c266712ced3f5c18f2ad6dc8304999db6876779810c5b052b51437e6c89691512059e0c7dfa568c23136f44eb35495a24297a029bd762ce6ef200d
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA512:ccb3705c23b2724e86d072e2ac8cfc380f41fadfd6977a248d588a8ad57b6abe0e4155e525243011f245e98d9b7afbe2e8cc7fd4ff7d82fcefb40c0f48f88918
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.3.debian.tar.xz' libpng1.6_1.6.37-3ubuntu0.3.debian.tar.xz 39676 SHA512:0df6cb5417f891c42387c861e2da4669934a7c50d1cf1d77192248673e1c7aaca23b3de9b588b3a2b63cb342c094e15b319bc0113582606ae3fc1c2b1b75e43e
-```
 
 ### `dpkg` source package: `libpsl=0.21.0-1.2build2`
 
