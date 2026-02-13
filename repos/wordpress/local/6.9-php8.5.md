@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e8c801f1439b26c3ab04f8327e3d2bcef1928aff08694cd136ec1d3b9e240143`
-- Created: `2026-02-03T22:12:33.877552973Z`
-- Virtual Size: ~ 755.30 Mb  
+- Image ID: `sha256:1913428dbe95791837693e3e6e970a12aafd6be80fcd3e032fdbcef2b7cc5117`
+- Created: `2026-02-11T19:35:00.198422208Z`
+- Virtual Size: ~ 772.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -2378,11 +2378,13 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libheif-plugin-aomenc:amd64=1.19.8-1`
 - `libheif-plugin-dav1d:amd64=1.19.8-1`
 - `libheif-plugin-libde265:amd64=1.19.8-1`
+- `libheif-plugin-x265:amd64=1.19.8-1`
 - `libheif1:amd64=1.19.8-1`
 
-Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/share/doc/libheif-plugin-libde265/copyright`, `/usr/share/doc/libheif1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomenc/copyright`, `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/share/doc/libheif-plugin-libde265/copyright`, `/usr/share/doc/libheif-plugin-x265/copyright`, `/usr/share/doc/libheif1/copyright`)
 
 - `BSD-2-clause`
 - `BSD-3-clause`
@@ -3734,6 +3736,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp3/1.8.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp3/1.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `numactl=2.0.19-1`
+
+Binary Packages:
+
+- `libnuma1:amd64=2.0.19-1`
+
+Licenses: (parsed from: `/usr/share/doc/libnuma1/copyright`)
+
+- `GPL`
+- `LGPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris numactl=2.0.19-1
+'http://deb.debian.org/debian/pool/main/n/numactl/numactl_2.0.19-1.dsc' numactl_2.0.19-1.dsc 1967 SHA256:b56e7893fc7da5374946f3767518e8d7b3707e0487a4d92fb76d672a988921e2
+'http://deb.debian.org/debian/pool/main/n/numactl/numactl_2.0.19.orig.tar.gz' numactl_2.0.19.orig.tar.gz 218333 SHA256:8b84ffdebfa0d730fb2fc71bb7ec96bb2d38bf76fb67246fde416a68e04125e4
+'http://deb.debian.org/debian/pool/main/n/numactl/numactl_2.0.19-1.debian.tar.xz' numactl_2.0.19-1.debian.tar.xz 7340 SHA256:93b4e00d8b7b1e465d931b29e65d220fadd84ac76431437307ecd075277355d3
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/numactl/2.0.19-1/ (for browsing the source)
+- https://sources.debian.net/src/numactl/2.0.19-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/numactl/2.0.19-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `openjpeg2=2.5.3-2.1~deb13u1`
 
 Binary Packages:
@@ -4618,6 +4646,36 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.41-5/ (for browsing the source)
 - https://sources.debian.net/src/util-linux/2.41-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.41-5/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `x265=4.1-2`
+
+Binary Packages:
+
+- `libx265-215:amd64=4.1-2`
+
+Licenses: (parsed from: `/usr/share/doc/libx265-215/copyright`)
+
+- `Expat`
+- `GPL-2`
+- `GPL-2+`
+- `ISC`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris x265=4.1-2
+'http://deb.debian.org/debian/pool/main/x/x265/x265_4.1-2.dsc' x265_4.1-2.dsc 1695 SHA256:eaa5b43fbc4b6878a0d18751e6e0d8d087b416b2a11c8f1671659b4f8502cb31
+'http://deb.debian.org/debian/pool/main/x/x265/x265_4.1.orig.tar.xz' x265_4.1.orig.tar.xz 1113508 SHA256:85abb8a850000bf693947459c42a666a3ecd6de10a2ac6b3c6647554b14d3270
+'http://deb.debian.org/debian/pool/main/x/x265/x265_4.1-2.debian.tar.xz' x265_4.1-2.debian.tar.xz 13920 SHA256:05daa2bd9395f3e5cc6eed64aa47c044856b38a3dab12cd59008d60ec9f8c3cb
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/x265/4.1-2/ (for browsing the source)
+- https://sources.debian.net/src/x265/4.1-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/x265/4.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xfonts-encodings=1:1.0.4-2.2`
 
