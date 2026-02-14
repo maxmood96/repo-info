@@ -993,21 +993,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.86.3-5
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.3-5.dsc' glib2.0_2.86.3-5.dsc 4965 SHA256:e177c600ff21b6e8eb8bdd460288e762c081dff93f840953a02120e7fa44bf72
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.3.orig-unicode-data.tar.xz' glib2.0_2.86.3.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.3.orig.tar.xz' glib2.0_2.86.3.orig.tar.xz 5674820 SHA256:b3211d8d34b9df5dca05787ef0ad5d7ca75dec998b970e1aab0001d229977c65
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.3-5.debian.tar.xz' glib2.0_2.86.3-5.debian.tar.xz 148316 SHA256:f017c585a6df84f17973faf09fe27087755e3090ec9b300cb92d506fa4e542af
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.86.3-5/
 
-- https://sources.debian.net/src/glib2.0/2.86.3-5/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.86.3-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.86.3-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.42-11`
 
@@ -1118,11 +1110,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gnutls28=3.8.11-3
-'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.8.11-3.dsc' gnutls28_3.8.11-3.dsc 3249 SHA256:a6b7c28d4ce47cc81c1d869c06223f73ecd0f5d1416e5b4ca4537aa83ec6c5d0
-'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.8.11.orig.tar.xz' gnutls28_3.8.11.orig.tar.xz 6939944 SHA256:91bd23c4a86ebc6152e81303d20cf6ceaeb97bc8f84266d0faec6e29f17baa20
-'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.8.11.orig.tar.xz.asc' gnutls28_3.8.11.orig.tar.xz.asc 833 SHA256:6bcfeee1548a8d2afe8997a4015b3a55422cfdadc14524d14400cb3ad716a81a
-'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.8.11-3.debian.tar.xz' gnutls28_3.8.11-3.debian.tar.xz 173820 SHA256:4da2d1e5232cf5fa3192c00686afede92d0002d156bae45d33b877e114b0d782
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11-3.dsc' gnutls28_3.8.11-3.dsc 3249 SHA256:a6b7c28d4ce47cc81c1d869c06223f73ecd0f5d1416e5b4ca4537aa83ec6c5d0
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11.orig.tar.xz' gnutls28_3.8.11.orig.tar.xz 6939944 SHA256:91bd23c4a86ebc6152e81303d20cf6ceaeb97bc8f84266d0faec6e29f17baa20
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11.orig.tar.xz.asc' gnutls28_3.8.11.orig.tar.xz.asc 833 SHA256:6bcfeee1548a8d2afe8997a4015b3a55422cfdadc14524d14400cb3ad716a81a
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11-3.debian.tar.xz' gnutls28_3.8.11-3.debian.tar.xz 173820 SHA256:4da2d1e5232cf5fa3192c00686afede92d0002d156bae45d33b877e114b0d782
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gnutls28/3.8.11-3/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.8.11-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.8.11-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-11`
 
@@ -1822,10 +1820,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.54-1
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.54-1.dsc' libpng1.6_1.6.54-1.dsc 2254 SHA256:dff12a8ad32ced0b8b0c51522806da7c592d41ecb59977239fcdb25d47431890
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.54.orig.tar.gz' libpng1.6_1.6.54.orig.tar.gz 1585700 SHA256:ba7efce137409079989df4667706c339bebfbb10e9f413474718012a13c8cd4c
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.54-1.debian.tar.xz' libpng1.6_1.6.54-1.debian.tar.xz 33516 SHA256:12290f527b91445e7fae947333bbc22b17463cc93c8b7be03dcccf203bfef5a0
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.54-1.dsc' libpng1.6_1.6.54-1.dsc 2254 SHA256:dff12a8ad32ced0b8b0c51522806da7c592d41ecb59977239fcdb25d47431890
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.54.orig.tar.gz' libpng1.6_1.6.54.orig.tar.gz 1585700 SHA256:ba7efce137409079989df4667706c339bebfbb10e9f413474718012a13c8cd4c
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.54-1.debian.tar.xz' libpng1.6_1.6.54-1.debian.tar.xz 33516 SHA256:12290f527b91445e7fae947333bbc22b17463cc93c8b7be03dcccf203bfef5a0
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libpng1.6/1.6.54-1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.54-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.54-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -3209,10 +3213,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris readline=8.3-3
-'http://http.debian.net/debian/pool/main/r/readline/readline_8.3-3.dsc' readline_8.3-3.dsc 2817 SHA256:eb1a1b3c36b5e3b127adf941dd2c861157b5861016ae2b63efc27f1b80742776
-'http://http.debian.net/debian/pool/main/r/readline/readline_8.3.orig.tar.gz' readline_8.3.orig.tar.gz 3419642 SHA256:fe5383204467828cd495ee8d1d3c037a7eba1389c22bc6a041f627976f9061cc
-'http://http.debian.net/debian/pool/main/r/readline/readline_8.3-3.debian.tar.xz' readline_8.3-3.debian.tar.xz 34188 SHA256:7c6bfc62ecdcc8d311534cfd01ef8c24117650a95aead8d2625c7f12f5793ad9
+'http://deb.debian.org/debian/pool/main/r/readline/readline_8.3-3.dsc' readline_8.3-3.dsc 2817 SHA256:eb1a1b3c36b5e3b127adf941dd2c861157b5861016ae2b63efc27f1b80742776
+'http://deb.debian.org/debian/pool/main/r/readline/readline_8.3.orig.tar.gz' readline_8.3.orig.tar.gz 3419642 SHA256:fe5383204467828cd495ee8d1d3c037a7eba1389c22bc6a041f627976f9061cc
+'http://deb.debian.org/debian/pool/main/r/readline/readline_8.3-3.debian.tar.xz' readline_8.3-3.debian.tar.xz 34188 SHA256:7c6bfc62ecdcc8d311534cfd01ef8c24117650a95aead8d2625c7f12f5793ad9
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/readline/8.3-3/ (for browsing the source)
+- https://sources.debian.net/src/readline/8.3-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/readline/8.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rmatrix=1.7-4-1`
 
