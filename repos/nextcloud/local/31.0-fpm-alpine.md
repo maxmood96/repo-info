@@ -1,9 +1,9 @@
-# `nextcloud:31.0.13-fpm-alpine`
+# `nextcloud:31.0.14-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:de6b86ba5c1927d72e7d0ff3ad7f7774df8c8d7f795ab59ec465e8173b939aa9`
-- Created: `2026-01-30T02:30:21.904614231Z`
+- Image ID: `sha256:d08a4c2717b2f13dc068e3f87dbe3bb8a47271b4921bc7a6422cce04769f8c38`
+- Created: `2026-02-13T18:25:39.415749594Z`
 - Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,7 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=31.0.13`
+  - `NEXTCLOUD_VERSION=31.0.14`
 
 ## `apk` (`.apk`-based packages)
 
@@ -116,16 +116,16 @@ MIT
 ### `apk` package: `aom-libs`
 
 ```console
-aom-libs-3.13.1-r0 description:
+aom-libs-3.13.1-r1 description:
 Alliance for Open Media (AOM) AV1 codec SDK (libraries)
 
-aom-libs-3.13.1-r0 webpage:
+aom-libs-3.13.1-r1 webpage:
 https://aomedia.org/
 
-aom-libs-3.13.1-r0 installed size:
+aom-libs-3.13.1-r1 installed size:
 8140 KiB
 
-aom-libs-3.13.1-r0 license:
+aom-libs-3.13.1-r1 license:
 BSD-2-Clause AND custom
 
 ```
@@ -983,16 +983,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.3-r0 description:
+libexpat-2.7.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.3-r0 webpage:
+libexpat-2.7.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.3-r0 installed size:
+libexpat-2.7.4-r0 installed size:
 133 KiB
 
-libexpat-2.7.3-r0 license:
+libexpat-2.7.4-r0 license:
 MIT
 
 ```
@@ -1051,16 +1051,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libheif`
 
 ```console
-libheif-1.20.2-r1 description:
+libheif-1.21.2-r0 description:
 ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 
-libheif-1.20.2-r1 webpage:
+libheif-1.21.2-r0 webpage:
 https://www.libde265.org/
 
-libheif-1.20.2-r1 installed size:
-1274 KiB
+libheif-1.21.2-r0 installed size:
+1430 KiB
 
-libheif-1.20.2-r1 license:
+libheif-1.21.2-r0 license:
 LGPL-3.0-or-later
 
 ```
