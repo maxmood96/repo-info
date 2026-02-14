@@ -22,7 +22,7 @@
 ## `yourls:1`
 
 ```console
-$ docker pull yourls@sha256:ad17372b3de61f8621c914097cf38004c4b64a152a74d8e89679b9d8b1acecda
+$ docker pull yourls@sha256:59fd5c18341bdc5db614c6f9be1ba431bd9e951fe6f9a9e74b2721688927173b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1162,13 +1162,13 @@ $ docker pull yourls@sha256:ea259b81bf5620bb6cc921b3e5dab5d1f935592ec11daca22ee3
 ### `yourls:1` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:728df7209d7dd41bab28d94f9c86ae53c7e1b3714fb3772f4d3e326580daac2e
+$ docker pull yourls@sha256:0449bf961ca8be05590fbd7e5e166fd7343ff57382f72662c52987b3bcc2a3ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **183.7 MB (183745238 bytes)**  
+-	Total Size: **183.8 MB (183755502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3db0eecaa805e5924056600d72bf29a405ec00dee7219edb41c41617f754611`
+-	Image ID: `sha256:ebf9bc7827ad660ae2f9387495ca86e1b50be2e289a1f4b81efee2a0ee50dc86`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1204,67 +1204,67 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 03 Feb 2026 02:48:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Tue, 03 Feb 2026 03:13:34 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 18:52:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 03:13:35 GMT
+# Fri, 13 Feb 2026 18:52:26 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:37 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 03 Feb 2026 03:18:38 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 03 Feb 2026 03:18:40 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 WORKDIR /var/www/html
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 CMD ["apache2-foreground"]
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Tue, 03 Feb 2026 10:34:35 GMT
+# Fri, 13 Feb 2026 20:34:03 GMT
 RUN a2enmod rewrite expires # buildkit
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Tue, 03 Feb 2026 10:34:39 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost.conf /etc/apache2/sites-available/000-default.conf # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost-https.conf /etc/apache2/sites-available/default-ssl.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/ports.conf /etc/apache2/ports.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8443/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1297,88 +1297,88 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 03 Feb 2026 02:54:27 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37489437b7bd991bc6450be50991be0f11c9ccfc9d760499e70e0fdf08af0f4d`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 14.5 MB (14505926 bytes)  
+	-	`sha256:dbc574d3b8ba422c4d5f96b41738d0e06931790cfb9bd195dfa6db0663a47b88`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 14.5 MB (14514461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4cd8b4b757df91e84911310b2f0eea1d3bb6cc83a9ff9c1e9511b4bced3e960b`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
+	-	`sha256:344fe9bbecbda240ba480c8a42053c671ddf1e0682432933aa1abfb620959ca0`  
+		Last Modified: Fri, 13 Feb 2026 18:58:20 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a25c903830feabe365ac63eb3243a13caba7805042ad051c2fc04fd067813cea`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 15.0 MB (14982915 bytes)  
+	-	`sha256:e59d1601451b89978be52a445035cb0a54adf429c794cbf69004f364884fce47`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 15.0 MB (14984656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5aaaaca50c7e7eff4db1035eafd5ae1612a4211af69ad6c33cb59486b7d70a80`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:aa482acd178d2f9e5576faa5a27c544ea9ed0e8862c62dd869d41b359422b0d2`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7de69eca5c4d0d3845f2ae389af8e9f91dfbc4593d939b4d9a77aa1199727ebd`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 249.0 B  
+	-	`sha256:686e9c0037ff1f57e1a847ab36648eb318b266b0f5177abf6cd25115e5beaa73`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90d2529c10307836bc2760f82a2ed75e598d7a3b5b9e4495846970abb5599bd7`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 893.0 B  
+	-	`sha256:19a0e5208af9c82d162891798b50196b53dcb7570c3a81a8f56797a08430fda8`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 895.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bef6c506b818e12f6224f3b2466f5380410c6e3f45538d4bc77c00f1decf7fb9`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 117.3 KB (117325 bytes)  
+	-	`sha256:e00771525320bb238613b2c175543d993d9486bf7d6c64e9a6a60a12bcbc1cd4`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 117.3 KB (117322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:977033595c486c9b32c89df4cbff08374b552bddb0bb8521e33e226b5a321c12`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ecd9d622694b7b0178bc397fd4b77c3234015a095d31aa156b55d6727ed3f3eb`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
 		Size: 327.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe78afeb8111f168eecd522ce53c8bc68078eae4f96bb3b1e02bddc806e27369`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 347.0 B  
+	-	`sha256:06ab24b7f470bef9dd33d1404438eddfb749a86fbacda61bc97462aa2ffe221f`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80b553de1db16fc012e027a6150d856921edc5576a21901db65626a4b304b300`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 6.0 MB (6048926 bytes)  
+	-	`sha256:332455bdca4ba3b398b9a9f2a830186fcceef4a7c8882166b11a5566d6ff595a`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 6.0 MB (6048925 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c037da02b98c39eb25e027f55cdd672e7c4538ab38845bc03d5bfbf89d2dd3a6`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 2.1 KB (2096 bytes)  
+	-	`sha256:8f316f19fbe9bb33c7fbe1d5cf40a168cf4d7c1a689a7db2cfbf9291ead69744`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 2.1 KB (2092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b995b7b92e3adfb777523b13abe2039cbce52b305109a0c2579d869e99a4859`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 1.7 KB (1693 bytes)  
+	-	`sha256:eb5ad88823f6ac4db6c86c6d4293f40a2db6f5520cc9243968680d50dbbb9356`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaad58a31c53598dcca2a176770d4425697c08e2aa844bd0103fad103d374a28`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 504.0 B  
+	-	`sha256:61c9c04745b3f1f30c3e176c73f797abee4a2ad0efcdf916ea3e7153efdeddd3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 500.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a977ceb85ed4027690941427063c6bab5b8b178b49021705e2884b8d8772e3a2`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 549.0 B  
+	-	`sha256:0dfc9f3e79393434594ef6e69b7aa3cc6fd9eb41a54fbe6836eb2a4752d916a2`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 545.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b7c9876896b763a77ed813630bf3132b56599792a5d72a768ed958b1598691f`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 329.0 B  
+	-	`sha256:afb054cf7d3c59d92d55553bcc94677d2b2160b2a3488fe18aa34f429114e6f3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:1` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:1113a227850b54b379fd7ba7af38a186d6c9c94d2a22aa515b8420293da2f15d
+$ docker pull yourls@sha256:25fca6b05aba99ec7c5b6e3e0f3bed96bf4a64664a8089952b783d642a448bab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **47.7 KB (47663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f1ff7637042bc6538c91b1b1a8a9699b4e2c35140b8421f93e4c98101f4e1ca`
+-	Image ID: `sha256:71ad87cb9956d3ea3eea44e65939fb3823e7ad7bfbd2bfd7171228540d730908`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e0e009795b3320ce7e4019a1505c3a2788ea7064023b2628b9041872392ebf7`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ff1946fa847e298660f42fcc2ace6bc1b18b2749e0b618e27add9bac5a708f42`  
+		Last Modified: Fri, 13 Feb 2026 20:34:17 GMT  
 		Size: 47.7 KB (47663 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1831,7 +1831,7 @@ $ docker pull yourls@sha256:062459b136d681cb8acc2670ae24394938ba0ff331e4a7d966ff
 ## `yourls:1-apache`
 
 ```console
-$ docker pull yourls@sha256:ad17372b3de61f8621c914097cf38004c4b64a152a74d8e89679b9d8b1acecda
+$ docker pull yourls@sha256:59fd5c18341bdc5db614c6f9be1ba431bd9e951fe6f9a9e74b2721688927173b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2971,13 +2971,13 @@ $ docker pull yourls@sha256:ea259b81bf5620bb6cc921b3e5dab5d1f935592ec11daca22ee3
 ### `yourls:1-apache` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:728df7209d7dd41bab28d94f9c86ae53c7e1b3714fb3772f4d3e326580daac2e
+$ docker pull yourls@sha256:0449bf961ca8be05590fbd7e5e166fd7343ff57382f72662c52987b3bcc2a3ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **183.7 MB (183745238 bytes)**  
+-	Total Size: **183.8 MB (183755502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3db0eecaa805e5924056600d72bf29a405ec00dee7219edb41c41617f754611`
+-	Image ID: `sha256:ebf9bc7827ad660ae2f9387495ca86e1b50be2e289a1f4b81efee2a0ee50dc86`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -3013,67 +3013,67 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 03 Feb 2026 02:48:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Tue, 03 Feb 2026 03:13:34 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 18:52:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 03:13:35 GMT
+# Fri, 13 Feb 2026 18:52:26 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:37 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 03 Feb 2026 03:18:38 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 03 Feb 2026 03:18:40 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 WORKDIR /var/www/html
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 CMD ["apache2-foreground"]
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Tue, 03 Feb 2026 10:34:35 GMT
+# Fri, 13 Feb 2026 20:34:03 GMT
 RUN a2enmod rewrite expires # buildkit
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Tue, 03 Feb 2026 10:34:39 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost.conf /etc/apache2/sites-available/000-default.conf # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost-https.conf /etc/apache2/sites-available/default-ssl.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/ports.conf /etc/apache2/ports.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8443/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -3106,88 +3106,88 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 03 Feb 2026 02:54:27 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37489437b7bd991bc6450be50991be0f11c9ccfc9d760499e70e0fdf08af0f4d`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 14.5 MB (14505926 bytes)  
+	-	`sha256:dbc574d3b8ba422c4d5f96b41738d0e06931790cfb9bd195dfa6db0663a47b88`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 14.5 MB (14514461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4cd8b4b757df91e84911310b2f0eea1d3bb6cc83a9ff9c1e9511b4bced3e960b`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
+	-	`sha256:344fe9bbecbda240ba480c8a42053c671ddf1e0682432933aa1abfb620959ca0`  
+		Last Modified: Fri, 13 Feb 2026 18:58:20 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a25c903830feabe365ac63eb3243a13caba7805042ad051c2fc04fd067813cea`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 15.0 MB (14982915 bytes)  
+	-	`sha256:e59d1601451b89978be52a445035cb0a54adf429c794cbf69004f364884fce47`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 15.0 MB (14984656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5aaaaca50c7e7eff4db1035eafd5ae1612a4211af69ad6c33cb59486b7d70a80`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:aa482acd178d2f9e5576faa5a27c544ea9ed0e8862c62dd869d41b359422b0d2`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7de69eca5c4d0d3845f2ae389af8e9f91dfbc4593d939b4d9a77aa1199727ebd`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 249.0 B  
+	-	`sha256:686e9c0037ff1f57e1a847ab36648eb318b266b0f5177abf6cd25115e5beaa73`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90d2529c10307836bc2760f82a2ed75e598d7a3b5b9e4495846970abb5599bd7`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 893.0 B  
+	-	`sha256:19a0e5208af9c82d162891798b50196b53dcb7570c3a81a8f56797a08430fda8`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 895.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bef6c506b818e12f6224f3b2466f5380410c6e3f45538d4bc77c00f1decf7fb9`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 117.3 KB (117325 bytes)  
+	-	`sha256:e00771525320bb238613b2c175543d993d9486bf7d6c64e9a6a60a12bcbc1cd4`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 117.3 KB (117322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:977033595c486c9b32c89df4cbff08374b552bddb0bb8521e33e226b5a321c12`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ecd9d622694b7b0178bc397fd4b77c3234015a095d31aa156b55d6727ed3f3eb`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
 		Size: 327.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe78afeb8111f168eecd522ce53c8bc68078eae4f96bb3b1e02bddc806e27369`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 347.0 B  
+	-	`sha256:06ab24b7f470bef9dd33d1404438eddfb749a86fbacda61bc97462aa2ffe221f`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80b553de1db16fc012e027a6150d856921edc5576a21901db65626a4b304b300`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 6.0 MB (6048926 bytes)  
+	-	`sha256:332455bdca4ba3b398b9a9f2a830186fcceef4a7c8882166b11a5566d6ff595a`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 6.0 MB (6048925 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c037da02b98c39eb25e027f55cdd672e7c4538ab38845bc03d5bfbf89d2dd3a6`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 2.1 KB (2096 bytes)  
+	-	`sha256:8f316f19fbe9bb33c7fbe1d5cf40a168cf4d7c1a689a7db2cfbf9291ead69744`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 2.1 KB (2092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b995b7b92e3adfb777523b13abe2039cbce52b305109a0c2579d869e99a4859`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 1.7 KB (1693 bytes)  
+	-	`sha256:eb5ad88823f6ac4db6c86c6d4293f40a2db6f5520cc9243968680d50dbbb9356`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaad58a31c53598dcca2a176770d4425697c08e2aa844bd0103fad103d374a28`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 504.0 B  
+	-	`sha256:61c9c04745b3f1f30c3e176c73f797abee4a2ad0efcdf916ea3e7153efdeddd3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 500.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a977ceb85ed4027690941427063c6bab5b8b178b49021705e2884b8d8772e3a2`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 549.0 B  
+	-	`sha256:0dfc9f3e79393434594ef6e69b7aa3cc6fd9eb41a54fbe6836eb2a4752d916a2`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 545.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b7c9876896b763a77ed813630bf3132b56599792a5d72a768ed958b1598691f`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 329.0 B  
+	-	`sha256:afb054cf7d3c59d92d55553bcc94677d2b2160b2a3488fe18aa34f429114e6f3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:1-apache` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:1113a227850b54b379fd7ba7af38a186d6c9c94d2a22aa515b8420293da2f15d
+$ docker pull yourls@sha256:25fca6b05aba99ec7c5b6e3e0f3bed96bf4a64664a8089952b783d642a448bab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **47.7 KB (47663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f1ff7637042bc6538c91b1b1a8a9699b4e2c35140b8421f93e4c98101f4e1ca`
+-	Image ID: `sha256:71ad87cb9956d3ea3eea44e65939fb3823e7ad7bfbd2bfd7171228540d730908`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e0e009795b3320ce7e4019a1505c3a2788ea7064023b2628b9041872392ebf7`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ff1946fa847e298660f42fcc2ace6bc1b18b2749e0b618e27add9bac5a708f42`  
+		Last Modified: Fri, 13 Feb 2026 20:34:17 GMT  
 		Size: 47.7 KB (47663 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3640,7 +3640,7 @@ $ docker pull yourls@sha256:062459b136d681cb8acc2670ae24394938ba0ff331e4a7d966ff
 ## `yourls:1-fpm`
 
 ```console
-$ docker pull yourls@sha256:1307ea6aa5faa63053df254f8eddc3dc98e710a84e6fabf8a762fae9ac60a178
+$ docker pull yourls@sha256:594b30698ff652beb8be443b000f89d170639020c138ebe3b7e0a9efa5cf1e10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4530,13 +4530,13 @@ $ docker pull yourls@sha256:491d838a095ea5ca4fe403905da7d6804731c43e78a569006447
 ### `yourls:1-fpm` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:6d22f8db86be4b9294e7a65fc0ec9fde7d7f86a1564e207c5bbb1f2b8711d4d9
+$ docker pull yourls@sha256:7e4dbd9e484ee65f5bd5c33a0384def21ae90fa49161f81c55f0a7175bf9f712
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **179.1 MB (179085346 bytes)**  
+-	Total Size: **179.1 MB (179094950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf155f1bbae1d458f0cb4a993ce92d65ab95652b49e9df971f462349bcf15d66`
+-	Image ID: `sha256:56ea9f855a358ab03e5d3122b812260e51727ed6d34240f6bc48ac42569ff806`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -4562,55 +4562,55 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 03 Feb 2026 02:47:45 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Tue, 03 Feb 2026 02:47:45 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Tue, 03 Feb 2026 02:47:45 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Tue, 03 Feb 2026 02:47:45 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Tue, 03 Feb 2026 03:12:57 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 18:52:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 03:12:58 GMT
+# Fri, 13 Feb 2026 18:52:26 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:23:41 GMT
+# Fri, 13 Feb 2026 19:03:40 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 03 Feb 2026 03:23:42 GMT
+# Fri, 13 Feb 2026 19:03:40 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:23:43 GMT
+# Fri, 13 Feb 2026 19:03:41 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 03 Feb 2026 03:23:43 GMT
+# Fri, 13 Feb 2026 19:03:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 03 Feb 2026 03:23:45 GMT
+# Fri, 13 Feb 2026 19:03:41 GMT
 WORKDIR /var/www/html
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 EXPOSE map[9000/tcp:{}]
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 CMD ["php-fpm"]
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:56 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Tue, 03 Feb 2026 10:34:34 GMT
+# Fri, 13 Feb 2026 20:34:57 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ARG YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ENV YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Tue, 03 Feb 2026 10:34:39 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:35:02 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:35:02 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:35:02 GMT
 CMD ["php-fpm"]
 ```
 
@@ -4631,72 +4631,72 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 03 Feb 2026 02:53:13 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9bc87899150d849fc38933ed0467671ba953269a75fcc118adaae79276a2e8f`  
-		Last Modified: Tue, 03 Feb 2026 03:18:22 GMT  
-		Size: 14.5 MB (14487061 bytes)  
+	-	`sha256:26a24c5b513b4ab85182cfcbb06ca3cc7972a607497c059558ed0efb533823fb`  
+		Last Modified: Fri, 13 Feb 2026 18:58:21 GMT  
+		Size: 14.5 MB (14495601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9c0572347c11048d11c1d0f0264155ace3d698621431b809899640903c1b10c`  
-		Last Modified: Tue, 03 Feb 2026 03:18:21 GMT  
-		Size: 489.0 B  
+	-	`sha256:344fe9bbecbda240ba480c8a42053c671ddf1e0682432933aa1abfb620959ca0`  
+		Last Modified: Fri, 13 Feb 2026 18:58:20 GMT  
+		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:523d0ee97ec1a68c56d3b3d882e68ee86779cca86e0c9cabfb811a698687971c`  
-		Last Modified: Tue, 03 Feb 2026 03:24:18 GMT  
-		Size: 15.2 MB (15217434 bytes)  
+	-	`sha256:21b3309e578ebbd2b80b8a62b66dc710382223f4824673bc49df4c6af5bebb20`  
+		Last Modified: Fri, 13 Feb 2026 19:04:10 GMT  
+		Size: 15.2 MB (15218512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a4b2621e734c575cbf1730fd61e739277f4d8ab1a9eb586215622ea8e7ca132`  
-		Last Modified: Tue, 03 Feb 2026 03:24:17 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:5b1f7fabe59f1c8144a020af82b6566bed550ea283af357b174bdd70ea6ad997`  
+		Last Modified: Fri, 13 Feb 2026 19:04:10 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d4e289919b5cb2a4c48726c6f5dbf98e0bbe312aa60ae48f80ea2cc147c8055`  
-		Last Modified: Tue, 03 Feb 2026 03:24:17 GMT  
-		Size: 246.0 B  
+	-	`sha256:37ead6a8af3de665ba04e3dca7c9570b7e442664472f09540d45a39be09feb5a`  
+		Last Modified: Fri, 13 Feb 2026 19:04:09 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e16c683a13c7e32d1f5681e9ed73d637dfb40838b2090aae5ec23b27b3889419`  
-		Last Modified: Tue, 03 Feb 2026 03:24:17 GMT  
+	-	`sha256:204c123d09973bf73c7800f7b627e9bb4198850b5a30d02e5ed558dd47c82770`  
+		Last Modified: Fri, 13 Feb 2026 19:04:10 GMT  
 		Size: 9.3 KB (9265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da8ec1ae6126a595a16263c04a6a371aa2849f6ad942b83982ef41733725b8ea`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
-		Size: 117.3 KB (117328 bytes)  
+	-	`sha256:1a736cb169f373071b19fb5d9715eaa2ed33d9f78769aa387c8428539a6f9b0f`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
+		Size: 117.3 KB (117310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5ca642dbae1981c74e88a1759b3bb5d583a5c4e0687f3bc9699ef8ed2efb6e0`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
-		Size: 329.0 B  
+	-	`sha256:6eb118692e7d8194a338c7315f5b082a88d360cf38f7c658b2326878494dd050`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
+		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a90108de500d4657ac4b33100e86012dae4e07bec26edcfe16cec2599cf9e6c`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:a507eac032eb61dc7f56eb83c23f7010e87e36061f0427041eded0c5aefd80f8`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
 		Size: 6.0 MB (6048926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e4d0903fb434b814089450d6a8b24891b05ef4895266eebb882624e671a7c6a`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
-		Size: 2.1 KB (2097 bytes)  
+	-	`sha256:758c03d2a0694f4aa30e9bd30e0aa37d1f500556253216365e9e573bba207b29`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
+		Size: 2.1 KB (2096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61e1404c2afd3d6fce91ffc0140bddece586f4bc63b47bf35b7ec0396b57372e`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 1.7 KB (1692 bytes)  
+	-	`sha256:de40c517e748d7ca997b086c491802e10e69ffdf973452fa21a81f7d281b82ad`  
+		Last Modified: Fri, 13 Feb 2026 20:35:12 GMT  
+		Size: 1.7 KB (1693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:1-fpm` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:d1f7ee078f08dce26baae150494935ba89d585185e5650734282286bfad23e76
+$ docker pull yourls@sha256:bbac88f99e009c50e487cf08bf9785b3070b242b337e9e53b2e0528eef97cf4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **26.7 KB (26722 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b55dcc2f4e58ec23330692d328c82ef3289cdd46f9cb56882028844de8ac62c`
+-	Image ID: `sha256:2e805ffd910df7dbe313619ae66797f3d374f2086f6a506331c5c49f293a1906`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:02ff40e740ece5b55fdcc8eff0bdd6a9ba8ce6d062982ba89db979e0a9a14bce`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
+	-	`sha256:bbc7198630e30a7b793818602f1f6c82068a2bb4faba587677b1c0ad65db7492`  
+		Last Modified: Fri, 13 Feb 2026 20:35:10 GMT  
 		Size: 26.7 KB (26722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5049,7 +5049,7 @@ $ docker pull yourls@sha256:ba8b86b0a89cd91b9fdc968e56ccca3b7e4098db0f9871aa13b4
 ## `yourls:1-fpm-alpine`
 
 ```console
-$ docker pull yourls@sha256:86408bc6f86de53c87eceba2ec15963aed03af7b60824fa033b54e21d789f863
+$ docker pull yourls@sha256:dda733cda3929993c62c4865ef66b0db2b20e66dfd6818481764e9a4e328114f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5979,13 +5979,13 @@ $ docker pull yourls@sha256:5c0ba59d365a070d55ce369b29ff008058a55197663bf73f5af2
 ### `yourls:1-fpm-alpine` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:23e9032a217af99c6b9b42ac79a093b4cf6eae7d5c6f8830db0f16ece22ac5aa
+$ docker pull yourls@sha256:a51214639b43fcc8fdb03fc57b6d31dbe6f1e8657f5d4a14db2c4a64b4c2054b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.5 MB (45514155 bytes)**  
+-	Total Size: **45.5 MB (45518905 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8028c5f2242332f5efe0219706fa0f1a33106b6e3abffb25632d0fe9916a8e8b`
+-	Image ID: `sha256:7ff2f552fa34e4fc83730a9890d81eeec3b99a7e7e1dc825293abf19040ec17c`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -6013,57 +6013,57 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Wed, 28 Jan 2026 02:38:57 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Wed, 28 Jan 2026 02:38:57 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Wed, 28 Jan 2026 02:38:57 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Wed, 28 Jan 2026 02:38:57 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Wed, 28 Jan 2026 02:39:03 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 19:16:21 GMT
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
-# Wed, 28 Jan 2026 02:39:03 GMT
+# Fri, 13 Feb 2026 19:16:21 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:43:35 GMT
+# Fri, 13 Feb 2026 19:22:30 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 						--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Wed, 28 Jan 2026 02:43:36 GMT
+# Fri, 13 Feb 2026 19:22:30 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:43:37 GMT
+# Fri, 13 Feb 2026 19:22:31 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Wed, 28 Jan 2026 02:43:37 GMT
+# Fri, 13 Feb 2026 19:22:31 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 28 Jan 2026 02:43:37 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 WORKDIR /var/www/html
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 EXPOSE map[9000/tcp:{}]
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 CMD ["php-fpm"]
-# Fri, 30 Jan 2026 02:26:17 GMT
+# Fri, 13 Feb 2026 20:35:20 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Fri, 30 Jan 2026 02:26:17 GMT
+# Fri, 13 Feb 2026 20:35:20 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Fri, 30 Jan 2026 02:26:19 GMT
+# Fri, 13 Feb 2026 20:35:23 GMT
 RUN apk add --no-cache bash # buildkit
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ARG YOURLS_VERSION=1.10.3
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ENV YOURLS_VERSION=1.10.3
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:26 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:26 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:26 GMT
 CMD ["php-fpm"]
 ```
 
@@ -6084,76 +6084,76 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 28 Jan 2026 02:43:14 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30d0240c66f2f649263f65cb23040d6f3e01923bdaa3db18a3b086e8299546b3`  
-		Last Modified: Wed, 28 Jan 2026 02:43:14 GMT  
-		Size: 14.4 MB (14355584 bytes)  
+	-	`sha256:566f99cafde0f397256493135fb5a020de181b7a90ec95e51a81d8ce54baa1a6`  
+		Last Modified: Fri, 13 Feb 2026 19:22:04 GMT  
+		Size: 14.4 MB (14357425 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c4c1916d8ab04d5c7c614bc2f69c44eab90c83dc656fc76685e7d66c35c7643`  
-		Last Modified: Wed, 28 Jan 2026 02:43:15 GMT  
-		Size: 487.0 B  
+	-	`sha256:c322b30c3b4e11ab429a18376322e0624d845c6d030b0122cf5af57ea1dd0c43`  
+		Last Modified: Fri, 13 Feb 2026 19:22:03 GMT  
+		Size: 497.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0547a7133de0304ca6a07c58b21880785621db75c5b0e1fa934608c373e3c221`  
-		Last Modified: Wed, 28 Jan 2026 02:43:53 GMT  
-		Size: 16.7 MB (16729418 bytes)  
+	-	`sha256:310c0e22a18e8b9edc572f5ca859f692ee500d569ee9130143028f7e1802aec9`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 16.7 MB (16732276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53dea240310066542b4ea8ee2b02ed4966152e2fb6dbb0aaf59e86e4b3982731`  
-		Last Modified: Wed, 28 Jan 2026 02:43:52 GMT  
-		Size: 2.4 KB (2447 bytes)  
+	-	`sha256:15fbda1e86475651cf4d5ddcdd2b959100e7b252916ec1255a61de776166ea92`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb04dbd3ff07fe59f20057d2b8a9b83020f981b2a42764c844f7fc6d6dbfd857`  
-		Last Modified: Wed, 28 Jan 2026 02:43:52 GMT  
-		Size: 23.3 KB (23331 bytes)  
+	-	`sha256:ad36c15f11b34482944dd80a8e0ae47e8133bd93dc40c828a36011f2f1ab119b`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 23.4 KB (23353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bc05318795bf13ef7c6e33444f387b343ac882538585787a1f85d727fa47e31`  
-		Last Modified: Fri, 30 Jan 2026 01:42:37 GMT  
-		Size: 9.3 KB (9264 bytes)  
+	-	`sha256:1f3400d56a4ba79f95bb453817245a85d646dcbee0ac01a5d62db00d2e798f74`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 9.3 KB (9259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f12f169d28e26b761dbb67808c54e749520c0a082f933243d623c929253ef2e4`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 142.3 KB (142265 bytes)  
+	-	`sha256:cd198a3fd233b5ed7d6fb607f40ed85eadfd53550592ecce30129d015a771ca5`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 142.3 KB (142282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:099868ac3833e139e50743fe187993c8add31f892c46f1915824b73257d8662c`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 329.0 B  
+	-	`sha256:0c578bd5c92ecbe2e0e55b0b9ad4052a9c7ef84b8fbd0785b8b6b8326c073dc3`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6ffe7711f66f919bc2c1977562437c987d1805ef90a3cbfe87b8763b543cf4b`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 598.7 KB (598660 bytes)  
+	-	`sha256:6588a6a2459df837b9b07ba53fe7ff452a8bc8419fbcb45309a51ac8193ff991`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 598.7 KB (598665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:483e29ed95813bbfb1b8021087985ad6b6e6ba946f9be82b1967b1191ae3dd41`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 6.0 MB (6048909 bytes)  
+	-	`sha256:5c6be7f4ec7a3660d8b79b71edb880f3fad5e75e36ab2de7b62d497b4d933f09`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 6.0 MB (6048910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c752837b19f29272b90ba65e05746a62621110eb7f600a8be209d94bc09bdccb`  
-		Last Modified: Fri, 30 Jan 2026 02:26:30 GMT  
-		Size: 2.1 KB (2095 bytes)  
+	-	`sha256:0195f2d077116a602c47b10f241688a1e433e2108f1250e6a05856bff6b3db18`  
+		Last Modified: Fri, 13 Feb 2026 20:35:35 GMT  
+		Size: 2.1 KB (2094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32a32cb5aa79b5083d883d3250c5caebb92a9146207f242b7b21ce15cfd8edee`  
-		Last Modified: Fri, 30 Jan 2026 02:26:30 GMT  
-		Size: 1.7 KB (1691 bytes)  
+	-	`sha256:a52badae59ffa0b38518f5af2ea62e93bbac91ef9a38db6e595de449b69c8653`  
+		Last Modified: Fri, 13 Feb 2026 20:35:35 GMT  
+		Size: 1.7 KB (1692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:1-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:42f45e821711fcae5e1e0f4740ccf08b39c20267f63f5734939c35e7b7d43ea9
+$ docker pull yourls@sha256:da88a98c1fec22aad7e8df48269083f9e0599139393f5c99addd8f1d69d8f659
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **30.8 KB (30766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a46bd49a3a4b718e16e8d280d76993354a4e3a4041cad911137ee648abb70ca1`
+-	Image ID: `sha256:2a49ee103df8c5e6b6c525f551c81894aee827fa93b7a90b75990a092740ada0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bd9fd5209d0a592642ee7ce0b43c6af4383fb098670752b98b94a996240fef5c`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
+	-	`sha256:d16249321815a98213a21e78e048cf748d036bc93a957306b42a29c9e9d5c437`  
+		Last Modified: Fri, 13 Feb 2026 20:35:33 GMT  
 		Size: 30.8 KB (30766 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6522,7 +6522,7 @@ $ docker pull yourls@sha256:15f97b3a12701c90b3d0543386394228d09aee4e7d1921e7abf6
 ## `yourls:1.10`
 
 ```console
-$ docker pull yourls@sha256:ad17372b3de61f8621c914097cf38004c4b64a152a74d8e89679b9d8b1acecda
+$ docker pull yourls@sha256:59fd5c18341bdc5db614c6f9be1ba431bd9e951fe6f9a9e74b2721688927173b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7662,13 +7662,13 @@ $ docker pull yourls@sha256:ea259b81bf5620bb6cc921b3e5dab5d1f935592ec11daca22ee3
 ### `yourls:1.10` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:728df7209d7dd41bab28d94f9c86ae53c7e1b3714fb3772f4d3e326580daac2e
+$ docker pull yourls@sha256:0449bf961ca8be05590fbd7e5e166fd7343ff57382f72662c52987b3bcc2a3ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **183.7 MB (183745238 bytes)**  
+-	Total Size: **183.8 MB (183755502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3db0eecaa805e5924056600d72bf29a405ec00dee7219edb41c41617f754611`
+-	Image ID: `sha256:ebf9bc7827ad660ae2f9387495ca86e1b50be2e289a1f4b81efee2a0ee50dc86`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -7704,67 +7704,67 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 03 Feb 2026 02:48:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Tue, 03 Feb 2026 03:13:34 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 18:52:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 03:13:35 GMT
+# Fri, 13 Feb 2026 18:52:26 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:37 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 03 Feb 2026 03:18:38 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 03 Feb 2026 03:18:40 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 WORKDIR /var/www/html
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 CMD ["apache2-foreground"]
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Tue, 03 Feb 2026 10:34:35 GMT
+# Fri, 13 Feb 2026 20:34:03 GMT
 RUN a2enmod rewrite expires # buildkit
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Tue, 03 Feb 2026 10:34:39 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost.conf /etc/apache2/sites-available/000-default.conf # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost-https.conf /etc/apache2/sites-available/default-ssl.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/ports.conf /etc/apache2/ports.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8443/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -7797,88 +7797,88 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 03 Feb 2026 02:54:27 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37489437b7bd991bc6450be50991be0f11c9ccfc9d760499e70e0fdf08af0f4d`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 14.5 MB (14505926 bytes)  
+	-	`sha256:dbc574d3b8ba422c4d5f96b41738d0e06931790cfb9bd195dfa6db0663a47b88`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 14.5 MB (14514461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4cd8b4b757df91e84911310b2f0eea1d3bb6cc83a9ff9c1e9511b4bced3e960b`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
+	-	`sha256:344fe9bbecbda240ba480c8a42053c671ddf1e0682432933aa1abfb620959ca0`  
+		Last Modified: Fri, 13 Feb 2026 18:58:20 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a25c903830feabe365ac63eb3243a13caba7805042ad051c2fc04fd067813cea`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 15.0 MB (14982915 bytes)  
+	-	`sha256:e59d1601451b89978be52a445035cb0a54adf429c794cbf69004f364884fce47`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 15.0 MB (14984656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5aaaaca50c7e7eff4db1035eafd5ae1612a4211af69ad6c33cb59486b7d70a80`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:aa482acd178d2f9e5576faa5a27c544ea9ed0e8862c62dd869d41b359422b0d2`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7de69eca5c4d0d3845f2ae389af8e9f91dfbc4593d939b4d9a77aa1199727ebd`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 249.0 B  
+	-	`sha256:686e9c0037ff1f57e1a847ab36648eb318b266b0f5177abf6cd25115e5beaa73`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90d2529c10307836bc2760f82a2ed75e598d7a3b5b9e4495846970abb5599bd7`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 893.0 B  
+	-	`sha256:19a0e5208af9c82d162891798b50196b53dcb7570c3a81a8f56797a08430fda8`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 895.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bef6c506b818e12f6224f3b2466f5380410c6e3f45538d4bc77c00f1decf7fb9`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 117.3 KB (117325 bytes)  
+	-	`sha256:e00771525320bb238613b2c175543d993d9486bf7d6c64e9a6a60a12bcbc1cd4`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 117.3 KB (117322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:977033595c486c9b32c89df4cbff08374b552bddb0bb8521e33e226b5a321c12`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ecd9d622694b7b0178bc397fd4b77c3234015a095d31aa156b55d6727ed3f3eb`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
 		Size: 327.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe78afeb8111f168eecd522ce53c8bc68078eae4f96bb3b1e02bddc806e27369`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 347.0 B  
+	-	`sha256:06ab24b7f470bef9dd33d1404438eddfb749a86fbacda61bc97462aa2ffe221f`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80b553de1db16fc012e027a6150d856921edc5576a21901db65626a4b304b300`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 6.0 MB (6048926 bytes)  
+	-	`sha256:332455bdca4ba3b398b9a9f2a830186fcceef4a7c8882166b11a5566d6ff595a`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 6.0 MB (6048925 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c037da02b98c39eb25e027f55cdd672e7c4538ab38845bc03d5bfbf89d2dd3a6`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 2.1 KB (2096 bytes)  
+	-	`sha256:8f316f19fbe9bb33c7fbe1d5cf40a168cf4d7c1a689a7db2cfbf9291ead69744`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 2.1 KB (2092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b995b7b92e3adfb777523b13abe2039cbce52b305109a0c2579d869e99a4859`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 1.7 KB (1693 bytes)  
+	-	`sha256:eb5ad88823f6ac4db6c86c6d4293f40a2db6f5520cc9243968680d50dbbb9356`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaad58a31c53598dcca2a176770d4425697c08e2aa844bd0103fad103d374a28`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 504.0 B  
+	-	`sha256:61c9c04745b3f1f30c3e176c73f797abee4a2ad0efcdf916ea3e7153efdeddd3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 500.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a977ceb85ed4027690941427063c6bab5b8b178b49021705e2884b8d8772e3a2`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 549.0 B  
+	-	`sha256:0dfc9f3e79393434594ef6e69b7aa3cc6fd9eb41a54fbe6836eb2a4752d916a2`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 545.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b7c9876896b763a77ed813630bf3132b56599792a5d72a768ed958b1598691f`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 329.0 B  
+	-	`sha256:afb054cf7d3c59d92d55553bcc94677d2b2160b2a3488fe18aa34f429114e6f3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:1.10` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:1113a227850b54b379fd7ba7af38a186d6c9c94d2a22aa515b8420293da2f15d
+$ docker pull yourls@sha256:25fca6b05aba99ec7c5b6e3e0f3bed96bf4a64664a8089952b783d642a448bab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **47.7 KB (47663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f1ff7637042bc6538c91b1b1a8a9699b4e2c35140b8421f93e4c98101f4e1ca`
+-	Image ID: `sha256:71ad87cb9956d3ea3eea44e65939fb3823e7ad7bfbd2bfd7171228540d730908`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e0e009795b3320ce7e4019a1505c3a2788ea7064023b2628b9041872392ebf7`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ff1946fa847e298660f42fcc2ace6bc1b18b2749e0b618e27add9bac5a708f42`  
+		Last Modified: Fri, 13 Feb 2026 20:34:17 GMT  
 		Size: 47.7 KB (47663 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8331,7 +8331,7 @@ $ docker pull yourls@sha256:062459b136d681cb8acc2670ae24394938ba0ff331e4a7d966ff
 ## `yourls:1.10-apache`
 
 ```console
-$ docker pull yourls@sha256:ad17372b3de61f8621c914097cf38004c4b64a152a74d8e89679b9d8b1acecda
+$ docker pull yourls@sha256:59fd5c18341bdc5db614c6f9be1ba431bd9e951fe6f9a9e74b2721688927173b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9471,13 +9471,13 @@ $ docker pull yourls@sha256:ea259b81bf5620bb6cc921b3e5dab5d1f935592ec11daca22ee3
 ### `yourls:1.10-apache` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:728df7209d7dd41bab28d94f9c86ae53c7e1b3714fb3772f4d3e326580daac2e
+$ docker pull yourls@sha256:0449bf961ca8be05590fbd7e5e166fd7343ff57382f72662c52987b3bcc2a3ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **183.7 MB (183745238 bytes)**  
+-	Total Size: **183.8 MB (183755502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3db0eecaa805e5924056600d72bf29a405ec00dee7219edb41c41617f754611`
+-	Image ID: `sha256:ebf9bc7827ad660ae2f9387495ca86e1b50be2e289a1f4b81efee2a0ee50dc86`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -9513,67 +9513,67 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 03 Feb 2026 02:48:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Tue, 03 Feb 2026 03:13:34 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 18:52:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 03:13:35 GMT
+# Fri, 13 Feb 2026 18:52:26 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:37 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 03 Feb 2026 03:18:38 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 03 Feb 2026 03:18:40 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 WORKDIR /var/www/html
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 CMD ["apache2-foreground"]
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Tue, 03 Feb 2026 10:34:35 GMT
+# Fri, 13 Feb 2026 20:34:03 GMT
 RUN a2enmod rewrite expires # buildkit
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Tue, 03 Feb 2026 10:34:39 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost.conf /etc/apache2/sites-available/000-default.conf # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost-https.conf /etc/apache2/sites-available/default-ssl.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/ports.conf /etc/apache2/ports.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8443/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -9606,88 +9606,88 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 03 Feb 2026 02:54:27 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37489437b7bd991bc6450be50991be0f11c9ccfc9d760499e70e0fdf08af0f4d`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 14.5 MB (14505926 bytes)  
+	-	`sha256:dbc574d3b8ba422c4d5f96b41738d0e06931790cfb9bd195dfa6db0663a47b88`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 14.5 MB (14514461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4cd8b4b757df91e84911310b2f0eea1d3bb6cc83a9ff9c1e9511b4bced3e960b`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
+	-	`sha256:344fe9bbecbda240ba480c8a42053c671ddf1e0682432933aa1abfb620959ca0`  
+		Last Modified: Fri, 13 Feb 2026 18:58:20 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a25c903830feabe365ac63eb3243a13caba7805042ad051c2fc04fd067813cea`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 15.0 MB (14982915 bytes)  
+	-	`sha256:e59d1601451b89978be52a445035cb0a54adf429c794cbf69004f364884fce47`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 15.0 MB (14984656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5aaaaca50c7e7eff4db1035eafd5ae1612a4211af69ad6c33cb59486b7d70a80`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:aa482acd178d2f9e5576faa5a27c544ea9ed0e8862c62dd869d41b359422b0d2`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7de69eca5c4d0d3845f2ae389af8e9f91dfbc4593d939b4d9a77aa1199727ebd`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 249.0 B  
+	-	`sha256:686e9c0037ff1f57e1a847ab36648eb318b266b0f5177abf6cd25115e5beaa73`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90d2529c10307836bc2760f82a2ed75e598d7a3b5b9e4495846970abb5599bd7`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 893.0 B  
+	-	`sha256:19a0e5208af9c82d162891798b50196b53dcb7570c3a81a8f56797a08430fda8`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 895.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bef6c506b818e12f6224f3b2466f5380410c6e3f45538d4bc77c00f1decf7fb9`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 117.3 KB (117325 bytes)  
+	-	`sha256:e00771525320bb238613b2c175543d993d9486bf7d6c64e9a6a60a12bcbc1cd4`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 117.3 KB (117322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:977033595c486c9b32c89df4cbff08374b552bddb0bb8521e33e226b5a321c12`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ecd9d622694b7b0178bc397fd4b77c3234015a095d31aa156b55d6727ed3f3eb`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
 		Size: 327.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe78afeb8111f168eecd522ce53c8bc68078eae4f96bb3b1e02bddc806e27369`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 347.0 B  
+	-	`sha256:06ab24b7f470bef9dd33d1404438eddfb749a86fbacda61bc97462aa2ffe221f`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80b553de1db16fc012e027a6150d856921edc5576a21901db65626a4b304b300`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 6.0 MB (6048926 bytes)  
+	-	`sha256:332455bdca4ba3b398b9a9f2a830186fcceef4a7c8882166b11a5566d6ff595a`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 6.0 MB (6048925 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c037da02b98c39eb25e027f55cdd672e7c4538ab38845bc03d5bfbf89d2dd3a6`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 2.1 KB (2096 bytes)  
+	-	`sha256:8f316f19fbe9bb33c7fbe1d5cf40a168cf4d7c1a689a7db2cfbf9291ead69744`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 2.1 KB (2092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b995b7b92e3adfb777523b13abe2039cbce52b305109a0c2579d869e99a4859`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 1.7 KB (1693 bytes)  
+	-	`sha256:eb5ad88823f6ac4db6c86c6d4293f40a2db6f5520cc9243968680d50dbbb9356`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaad58a31c53598dcca2a176770d4425697c08e2aa844bd0103fad103d374a28`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 504.0 B  
+	-	`sha256:61c9c04745b3f1f30c3e176c73f797abee4a2ad0efcdf916ea3e7153efdeddd3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 500.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a977ceb85ed4027690941427063c6bab5b8b178b49021705e2884b8d8772e3a2`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 549.0 B  
+	-	`sha256:0dfc9f3e79393434594ef6e69b7aa3cc6fd9eb41a54fbe6836eb2a4752d916a2`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 545.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b7c9876896b763a77ed813630bf3132b56599792a5d72a768ed958b1598691f`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 329.0 B  
+	-	`sha256:afb054cf7d3c59d92d55553bcc94677d2b2160b2a3488fe18aa34f429114e6f3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:1.10-apache` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:1113a227850b54b379fd7ba7af38a186d6c9c94d2a22aa515b8420293da2f15d
+$ docker pull yourls@sha256:25fca6b05aba99ec7c5b6e3e0f3bed96bf4a64664a8089952b783d642a448bab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **47.7 KB (47663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f1ff7637042bc6538c91b1b1a8a9699b4e2c35140b8421f93e4c98101f4e1ca`
+-	Image ID: `sha256:71ad87cb9956d3ea3eea44e65939fb3823e7ad7bfbd2bfd7171228540d730908`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e0e009795b3320ce7e4019a1505c3a2788ea7064023b2628b9041872392ebf7`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ff1946fa847e298660f42fcc2ace6bc1b18b2749e0b618e27add9bac5a708f42`  
+		Last Modified: Fri, 13 Feb 2026 20:34:17 GMT  
 		Size: 47.7 KB (47663 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10140,7 +10140,7 @@ $ docker pull yourls@sha256:062459b136d681cb8acc2670ae24394938ba0ff331e4a7d966ff
 ## `yourls:1.10-fpm`
 
 ```console
-$ docker pull yourls@sha256:1307ea6aa5faa63053df254f8eddc3dc98e710a84e6fabf8a762fae9ac60a178
+$ docker pull yourls@sha256:594b30698ff652beb8be443b000f89d170639020c138ebe3b7e0a9efa5cf1e10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11030,13 +11030,13 @@ $ docker pull yourls@sha256:491d838a095ea5ca4fe403905da7d6804731c43e78a569006447
 ### `yourls:1.10-fpm` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:6d22f8db86be4b9294e7a65fc0ec9fde7d7f86a1564e207c5bbb1f2b8711d4d9
+$ docker pull yourls@sha256:7e4dbd9e484ee65f5bd5c33a0384def21ae90fa49161f81c55f0a7175bf9f712
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **179.1 MB (179085346 bytes)**  
+-	Total Size: **179.1 MB (179094950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf155f1bbae1d458f0cb4a993ce92d65ab95652b49e9df971f462349bcf15d66`
+-	Image ID: `sha256:56ea9f855a358ab03e5d3122b812260e51727ed6d34240f6bc48ac42569ff806`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -11062,55 +11062,55 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 03 Feb 2026 02:47:45 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Tue, 03 Feb 2026 02:47:45 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Tue, 03 Feb 2026 02:47:45 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Tue, 03 Feb 2026 02:47:45 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Tue, 03 Feb 2026 03:12:57 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 18:52:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 03:12:58 GMT
+# Fri, 13 Feb 2026 18:52:26 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:23:41 GMT
+# Fri, 13 Feb 2026 19:03:40 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 03 Feb 2026 03:23:42 GMT
+# Fri, 13 Feb 2026 19:03:40 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:23:43 GMT
+# Fri, 13 Feb 2026 19:03:41 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 03 Feb 2026 03:23:43 GMT
+# Fri, 13 Feb 2026 19:03:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 03 Feb 2026 03:23:45 GMT
+# Fri, 13 Feb 2026 19:03:41 GMT
 WORKDIR /var/www/html
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 EXPOSE map[9000/tcp:{}]
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 CMD ["php-fpm"]
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:56 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Tue, 03 Feb 2026 10:34:34 GMT
+# Fri, 13 Feb 2026 20:34:57 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ARG YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ENV YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Tue, 03 Feb 2026 10:34:39 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:35:02 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:35:02 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:35:02 GMT
 CMD ["php-fpm"]
 ```
 
@@ -11131,72 +11131,72 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 03 Feb 2026 02:53:13 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9bc87899150d849fc38933ed0467671ba953269a75fcc118adaae79276a2e8f`  
-		Last Modified: Tue, 03 Feb 2026 03:18:22 GMT  
-		Size: 14.5 MB (14487061 bytes)  
+	-	`sha256:26a24c5b513b4ab85182cfcbb06ca3cc7972a607497c059558ed0efb533823fb`  
+		Last Modified: Fri, 13 Feb 2026 18:58:21 GMT  
+		Size: 14.5 MB (14495601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9c0572347c11048d11c1d0f0264155ace3d698621431b809899640903c1b10c`  
-		Last Modified: Tue, 03 Feb 2026 03:18:21 GMT  
-		Size: 489.0 B  
+	-	`sha256:344fe9bbecbda240ba480c8a42053c671ddf1e0682432933aa1abfb620959ca0`  
+		Last Modified: Fri, 13 Feb 2026 18:58:20 GMT  
+		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:523d0ee97ec1a68c56d3b3d882e68ee86779cca86e0c9cabfb811a698687971c`  
-		Last Modified: Tue, 03 Feb 2026 03:24:18 GMT  
-		Size: 15.2 MB (15217434 bytes)  
+	-	`sha256:21b3309e578ebbd2b80b8a62b66dc710382223f4824673bc49df4c6af5bebb20`  
+		Last Modified: Fri, 13 Feb 2026 19:04:10 GMT  
+		Size: 15.2 MB (15218512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a4b2621e734c575cbf1730fd61e739277f4d8ab1a9eb586215622ea8e7ca132`  
-		Last Modified: Tue, 03 Feb 2026 03:24:17 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:5b1f7fabe59f1c8144a020af82b6566bed550ea283af357b174bdd70ea6ad997`  
+		Last Modified: Fri, 13 Feb 2026 19:04:10 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d4e289919b5cb2a4c48726c6f5dbf98e0bbe312aa60ae48f80ea2cc147c8055`  
-		Last Modified: Tue, 03 Feb 2026 03:24:17 GMT  
-		Size: 246.0 B  
+	-	`sha256:37ead6a8af3de665ba04e3dca7c9570b7e442664472f09540d45a39be09feb5a`  
+		Last Modified: Fri, 13 Feb 2026 19:04:09 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e16c683a13c7e32d1f5681e9ed73d637dfb40838b2090aae5ec23b27b3889419`  
-		Last Modified: Tue, 03 Feb 2026 03:24:17 GMT  
+	-	`sha256:204c123d09973bf73c7800f7b627e9bb4198850b5a30d02e5ed558dd47c82770`  
+		Last Modified: Fri, 13 Feb 2026 19:04:10 GMT  
 		Size: 9.3 KB (9265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da8ec1ae6126a595a16263c04a6a371aa2849f6ad942b83982ef41733725b8ea`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
-		Size: 117.3 KB (117328 bytes)  
+	-	`sha256:1a736cb169f373071b19fb5d9715eaa2ed33d9f78769aa387c8428539a6f9b0f`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
+		Size: 117.3 KB (117310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5ca642dbae1981c74e88a1759b3bb5d583a5c4e0687f3bc9699ef8ed2efb6e0`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
-		Size: 329.0 B  
+	-	`sha256:6eb118692e7d8194a338c7315f5b082a88d360cf38f7c658b2326878494dd050`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
+		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a90108de500d4657ac4b33100e86012dae4e07bec26edcfe16cec2599cf9e6c`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:a507eac032eb61dc7f56eb83c23f7010e87e36061f0427041eded0c5aefd80f8`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
 		Size: 6.0 MB (6048926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e4d0903fb434b814089450d6a8b24891b05ef4895266eebb882624e671a7c6a`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
-		Size: 2.1 KB (2097 bytes)  
+	-	`sha256:758c03d2a0694f4aa30e9bd30e0aa37d1f500556253216365e9e573bba207b29`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
+		Size: 2.1 KB (2096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61e1404c2afd3d6fce91ffc0140bddece586f4bc63b47bf35b7ec0396b57372e`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 1.7 KB (1692 bytes)  
+	-	`sha256:de40c517e748d7ca997b086c491802e10e69ffdf973452fa21a81f7d281b82ad`  
+		Last Modified: Fri, 13 Feb 2026 20:35:12 GMT  
+		Size: 1.7 KB (1693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:1.10-fpm` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:d1f7ee078f08dce26baae150494935ba89d585185e5650734282286bfad23e76
+$ docker pull yourls@sha256:bbac88f99e009c50e487cf08bf9785b3070b242b337e9e53b2e0528eef97cf4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **26.7 KB (26722 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b55dcc2f4e58ec23330692d328c82ef3289cdd46f9cb56882028844de8ac62c`
+-	Image ID: `sha256:2e805ffd910df7dbe313619ae66797f3d374f2086f6a506331c5c49f293a1906`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:02ff40e740ece5b55fdcc8eff0bdd6a9ba8ce6d062982ba89db979e0a9a14bce`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
+	-	`sha256:bbc7198630e30a7b793818602f1f6c82068a2bb4faba587677b1c0ad65db7492`  
+		Last Modified: Fri, 13 Feb 2026 20:35:10 GMT  
 		Size: 26.7 KB (26722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11549,7 +11549,7 @@ $ docker pull yourls@sha256:ba8b86b0a89cd91b9fdc968e56ccca3b7e4098db0f9871aa13b4
 ## `yourls:1.10-fpm-alpine`
 
 ```console
-$ docker pull yourls@sha256:86408bc6f86de53c87eceba2ec15963aed03af7b60824fa033b54e21d789f863
+$ docker pull yourls@sha256:dda733cda3929993c62c4865ef66b0db2b20e66dfd6818481764e9a4e328114f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12479,13 +12479,13 @@ $ docker pull yourls@sha256:5c0ba59d365a070d55ce369b29ff008058a55197663bf73f5af2
 ### `yourls:1.10-fpm-alpine` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:23e9032a217af99c6b9b42ac79a093b4cf6eae7d5c6f8830db0f16ece22ac5aa
+$ docker pull yourls@sha256:a51214639b43fcc8fdb03fc57b6d31dbe6f1e8657f5d4a14db2c4a64b4c2054b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.5 MB (45514155 bytes)**  
+-	Total Size: **45.5 MB (45518905 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8028c5f2242332f5efe0219706fa0f1a33106b6e3abffb25632d0fe9916a8e8b`
+-	Image ID: `sha256:7ff2f552fa34e4fc83730a9890d81eeec3b99a7e7e1dc825293abf19040ec17c`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -12513,57 +12513,57 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Wed, 28 Jan 2026 02:38:57 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Wed, 28 Jan 2026 02:38:57 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Wed, 28 Jan 2026 02:38:57 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Wed, 28 Jan 2026 02:38:57 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Wed, 28 Jan 2026 02:39:03 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 19:16:21 GMT
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
-# Wed, 28 Jan 2026 02:39:03 GMT
+# Fri, 13 Feb 2026 19:16:21 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:43:35 GMT
+# Fri, 13 Feb 2026 19:22:30 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 						--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Wed, 28 Jan 2026 02:43:36 GMT
+# Fri, 13 Feb 2026 19:22:30 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:43:37 GMT
+# Fri, 13 Feb 2026 19:22:31 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Wed, 28 Jan 2026 02:43:37 GMT
+# Fri, 13 Feb 2026 19:22:31 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 28 Jan 2026 02:43:37 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 WORKDIR /var/www/html
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 EXPOSE map[9000/tcp:{}]
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 CMD ["php-fpm"]
-# Fri, 30 Jan 2026 02:26:17 GMT
+# Fri, 13 Feb 2026 20:35:20 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Fri, 30 Jan 2026 02:26:17 GMT
+# Fri, 13 Feb 2026 20:35:20 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Fri, 30 Jan 2026 02:26:19 GMT
+# Fri, 13 Feb 2026 20:35:23 GMT
 RUN apk add --no-cache bash # buildkit
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ARG YOURLS_VERSION=1.10.3
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ENV YOURLS_VERSION=1.10.3
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:26 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:26 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:26 GMT
 CMD ["php-fpm"]
 ```
 
@@ -12584,76 +12584,76 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 28 Jan 2026 02:43:14 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30d0240c66f2f649263f65cb23040d6f3e01923bdaa3db18a3b086e8299546b3`  
-		Last Modified: Wed, 28 Jan 2026 02:43:14 GMT  
-		Size: 14.4 MB (14355584 bytes)  
+	-	`sha256:566f99cafde0f397256493135fb5a020de181b7a90ec95e51a81d8ce54baa1a6`  
+		Last Modified: Fri, 13 Feb 2026 19:22:04 GMT  
+		Size: 14.4 MB (14357425 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c4c1916d8ab04d5c7c614bc2f69c44eab90c83dc656fc76685e7d66c35c7643`  
-		Last Modified: Wed, 28 Jan 2026 02:43:15 GMT  
-		Size: 487.0 B  
+	-	`sha256:c322b30c3b4e11ab429a18376322e0624d845c6d030b0122cf5af57ea1dd0c43`  
+		Last Modified: Fri, 13 Feb 2026 19:22:03 GMT  
+		Size: 497.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0547a7133de0304ca6a07c58b21880785621db75c5b0e1fa934608c373e3c221`  
-		Last Modified: Wed, 28 Jan 2026 02:43:53 GMT  
-		Size: 16.7 MB (16729418 bytes)  
+	-	`sha256:310c0e22a18e8b9edc572f5ca859f692ee500d569ee9130143028f7e1802aec9`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 16.7 MB (16732276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53dea240310066542b4ea8ee2b02ed4966152e2fb6dbb0aaf59e86e4b3982731`  
-		Last Modified: Wed, 28 Jan 2026 02:43:52 GMT  
-		Size: 2.4 KB (2447 bytes)  
+	-	`sha256:15fbda1e86475651cf4d5ddcdd2b959100e7b252916ec1255a61de776166ea92`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb04dbd3ff07fe59f20057d2b8a9b83020f981b2a42764c844f7fc6d6dbfd857`  
-		Last Modified: Wed, 28 Jan 2026 02:43:52 GMT  
-		Size: 23.3 KB (23331 bytes)  
+	-	`sha256:ad36c15f11b34482944dd80a8e0ae47e8133bd93dc40c828a36011f2f1ab119b`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 23.4 KB (23353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bc05318795bf13ef7c6e33444f387b343ac882538585787a1f85d727fa47e31`  
-		Last Modified: Fri, 30 Jan 2026 01:42:37 GMT  
-		Size: 9.3 KB (9264 bytes)  
+	-	`sha256:1f3400d56a4ba79f95bb453817245a85d646dcbee0ac01a5d62db00d2e798f74`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 9.3 KB (9259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f12f169d28e26b761dbb67808c54e749520c0a082f933243d623c929253ef2e4`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 142.3 KB (142265 bytes)  
+	-	`sha256:cd198a3fd233b5ed7d6fb607f40ed85eadfd53550592ecce30129d015a771ca5`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 142.3 KB (142282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:099868ac3833e139e50743fe187993c8add31f892c46f1915824b73257d8662c`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 329.0 B  
+	-	`sha256:0c578bd5c92ecbe2e0e55b0b9ad4052a9c7ef84b8fbd0785b8b6b8326c073dc3`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6ffe7711f66f919bc2c1977562437c987d1805ef90a3cbfe87b8763b543cf4b`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 598.7 KB (598660 bytes)  
+	-	`sha256:6588a6a2459df837b9b07ba53fe7ff452a8bc8419fbcb45309a51ac8193ff991`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 598.7 KB (598665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:483e29ed95813bbfb1b8021087985ad6b6e6ba946f9be82b1967b1191ae3dd41`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 6.0 MB (6048909 bytes)  
+	-	`sha256:5c6be7f4ec7a3660d8b79b71edb880f3fad5e75e36ab2de7b62d497b4d933f09`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 6.0 MB (6048910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c752837b19f29272b90ba65e05746a62621110eb7f600a8be209d94bc09bdccb`  
-		Last Modified: Fri, 30 Jan 2026 02:26:30 GMT  
-		Size: 2.1 KB (2095 bytes)  
+	-	`sha256:0195f2d077116a602c47b10f241688a1e433e2108f1250e6a05856bff6b3db18`  
+		Last Modified: Fri, 13 Feb 2026 20:35:35 GMT  
+		Size: 2.1 KB (2094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32a32cb5aa79b5083d883d3250c5caebb92a9146207f242b7b21ce15cfd8edee`  
-		Last Modified: Fri, 30 Jan 2026 02:26:30 GMT  
-		Size: 1.7 KB (1691 bytes)  
+	-	`sha256:a52badae59ffa0b38518f5af2ea62e93bbac91ef9a38db6e595de449b69c8653`  
+		Last Modified: Fri, 13 Feb 2026 20:35:35 GMT  
+		Size: 1.7 KB (1692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:1.10-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:42f45e821711fcae5e1e0f4740ccf08b39c20267f63f5734939c35e7b7d43ea9
+$ docker pull yourls@sha256:da88a98c1fec22aad7e8df48269083f9e0599139393f5c99addd8f1d69d8f659
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **30.8 KB (30766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a46bd49a3a4b718e16e8d280d76993354a4e3a4041cad911137ee648abb70ca1`
+-	Image ID: `sha256:2a49ee103df8c5e6b6c525f551c81894aee827fa93b7a90b75990a092740ada0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bd9fd5209d0a592642ee7ce0b43c6af4383fb098670752b98b94a996240fef5c`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
+	-	`sha256:d16249321815a98213a21e78e048cf748d036bc93a957306b42a29c9e9d5c437`  
+		Last Modified: Fri, 13 Feb 2026 20:35:33 GMT  
 		Size: 30.8 KB (30766 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13022,7 +13022,7 @@ $ docker pull yourls@sha256:15f97b3a12701c90b3d0543386394228d09aee4e7d1921e7abf6
 ## `yourls:1.10.3`
 
 ```console
-$ docker pull yourls@sha256:ad17372b3de61f8621c914097cf38004c4b64a152a74d8e89679b9d8b1acecda
+$ docker pull yourls@sha256:59fd5c18341bdc5db614c6f9be1ba431bd9e951fe6f9a9e74b2721688927173b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14162,13 +14162,13 @@ $ docker pull yourls@sha256:ea259b81bf5620bb6cc921b3e5dab5d1f935592ec11daca22ee3
 ### `yourls:1.10.3` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:728df7209d7dd41bab28d94f9c86ae53c7e1b3714fb3772f4d3e326580daac2e
+$ docker pull yourls@sha256:0449bf961ca8be05590fbd7e5e166fd7343ff57382f72662c52987b3bcc2a3ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **183.7 MB (183745238 bytes)**  
+-	Total Size: **183.8 MB (183755502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3db0eecaa805e5924056600d72bf29a405ec00dee7219edb41c41617f754611`
+-	Image ID: `sha256:ebf9bc7827ad660ae2f9387495ca86e1b50be2e289a1f4b81efee2a0ee50dc86`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -14204,67 +14204,67 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 03 Feb 2026 02:48:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Tue, 03 Feb 2026 03:13:34 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 18:52:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 03:13:35 GMT
+# Fri, 13 Feb 2026 18:52:26 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:37 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 03 Feb 2026 03:18:38 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 03 Feb 2026 03:18:40 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 WORKDIR /var/www/html
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 CMD ["apache2-foreground"]
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Tue, 03 Feb 2026 10:34:35 GMT
+# Fri, 13 Feb 2026 20:34:03 GMT
 RUN a2enmod rewrite expires # buildkit
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Tue, 03 Feb 2026 10:34:39 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost.conf /etc/apache2/sites-available/000-default.conf # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost-https.conf /etc/apache2/sites-available/default-ssl.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/ports.conf /etc/apache2/ports.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8443/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -14297,88 +14297,88 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 03 Feb 2026 02:54:27 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37489437b7bd991bc6450be50991be0f11c9ccfc9d760499e70e0fdf08af0f4d`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 14.5 MB (14505926 bytes)  
+	-	`sha256:dbc574d3b8ba422c4d5f96b41738d0e06931790cfb9bd195dfa6db0663a47b88`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 14.5 MB (14514461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4cd8b4b757df91e84911310b2f0eea1d3bb6cc83a9ff9c1e9511b4bced3e960b`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
+	-	`sha256:344fe9bbecbda240ba480c8a42053c671ddf1e0682432933aa1abfb620959ca0`  
+		Last Modified: Fri, 13 Feb 2026 18:58:20 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a25c903830feabe365ac63eb3243a13caba7805042ad051c2fc04fd067813cea`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 15.0 MB (14982915 bytes)  
+	-	`sha256:e59d1601451b89978be52a445035cb0a54adf429c794cbf69004f364884fce47`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 15.0 MB (14984656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5aaaaca50c7e7eff4db1035eafd5ae1612a4211af69ad6c33cb59486b7d70a80`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:aa482acd178d2f9e5576faa5a27c544ea9ed0e8862c62dd869d41b359422b0d2`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7de69eca5c4d0d3845f2ae389af8e9f91dfbc4593d939b4d9a77aa1199727ebd`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 249.0 B  
+	-	`sha256:686e9c0037ff1f57e1a847ab36648eb318b266b0f5177abf6cd25115e5beaa73`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90d2529c10307836bc2760f82a2ed75e598d7a3b5b9e4495846970abb5599bd7`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 893.0 B  
+	-	`sha256:19a0e5208af9c82d162891798b50196b53dcb7570c3a81a8f56797a08430fda8`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 895.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bef6c506b818e12f6224f3b2466f5380410c6e3f45538d4bc77c00f1decf7fb9`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 117.3 KB (117325 bytes)  
+	-	`sha256:e00771525320bb238613b2c175543d993d9486bf7d6c64e9a6a60a12bcbc1cd4`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 117.3 KB (117322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:977033595c486c9b32c89df4cbff08374b552bddb0bb8521e33e226b5a321c12`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ecd9d622694b7b0178bc397fd4b77c3234015a095d31aa156b55d6727ed3f3eb`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
 		Size: 327.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe78afeb8111f168eecd522ce53c8bc68078eae4f96bb3b1e02bddc806e27369`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 347.0 B  
+	-	`sha256:06ab24b7f470bef9dd33d1404438eddfb749a86fbacda61bc97462aa2ffe221f`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80b553de1db16fc012e027a6150d856921edc5576a21901db65626a4b304b300`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 6.0 MB (6048926 bytes)  
+	-	`sha256:332455bdca4ba3b398b9a9f2a830186fcceef4a7c8882166b11a5566d6ff595a`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 6.0 MB (6048925 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c037da02b98c39eb25e027f55cdd672e7c4538ab38845bc03d5bfbf89d2dd3a6`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 2.1 KB (2096 bytes)  
+	-	`sha256:8f316f19fbe9bb33c7fbe1d5cf40a168cf4d7c1a689a7db2cfbf9291ead69744`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 2.1 KB (2092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b995b7b92e3adfb777523b13abe2039cbce52b305109a0c2579d869e99a4859`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 1.7 KB (1693 bytes)  
+	-	`sha256:eb5ad88823f6ac4db6c86c6d4293f40a2db6f5520cc9243968680d50dbbb9356`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaad58a31c53598dcca2a176770d4425697c08e2aa844bd0103fad103d374a28`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 504.0 B  
+	-	`sha256:61c9c04745b3f1f30c3e176c73f797abee4a2ad0efcdf916ea3e7153efdeddd3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 500.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a977ceb85ed4027690941427063c6bab5b8b178b49021705e2884b8d8772e3a2`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 549.0 B  
+	-	`sha256:0dfc9f3e79393434594ef6e69b7aa3cc6fd9eb41a54fbe6836eb2a4752d916a2`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 545.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b7c9876896b763a77ed813630bf3132b56599792a5d72a768ed958b1598691f`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 329.0 B  
+	-	`sha256:afb054cf7d3c59d92d55553bcc94677d2b2160b2a3488fe18aa34f429114e6f3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:1.10.3` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:1113a227850b54b379fd7ba7af38a186d6c9c94d2a22aa515b8420293da2f15d
+$ docker pull yourls@sha256:25fca6b05aba99ec7c5b6e3e0f3bed96bf4a64664a8089952b783d642a448bab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **47.7 KB (47663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f1ff7637042bc6538c91b1b1a8a9699b4e2c35140b8421f93e4c98101f4e1ca`
+-	Image ID: `sha256:71ad87cb9956d3ea3eea44e65939fb3823e7ad7bfbd2bfd7171228540d730908`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e0e009795b3320ce7e4019a1505c3a2788ea7064023b2628b9041872392ebf7`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ff1946fa847e298660f42fcc2ace6bc1b18b2749e0b618e27add9bac5a708f42`  
+		Last Modified: Fri, 13 Feb 2026 20:34:17 GMT  
 		Size: 47.7 KB (47663 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14831,7 +14831,7 @@ $ docker pull yourls@sha256:062459b136d681cb8acc2670ae24394938ba0ff331e4a7d966ff
 ## `yourls:1.10.3-apache`
 
 ```console
-$ docker pull yourls@sha256:ad17372b3de61f8621c914097cf38004c4b64a152a74d8e89679b9d8b1acecda
+$ docker pull yourls@sha256:59fd5c18341bdc5db614c6f9be1ba431bd9e951fe6f9a9e74b2721688927173b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15971,13 +15971,13 @@ $ docker pull yourls@sha256:ea259b81bf5620bb6cc921b3e5dab5d1f935592ec11daca22ee3
 ### `yourls:1.10.3-apache` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:728df7209d7dd41bab28d94f9c86ae53c7e1b3714fb3772f4d3e326580daac2e
+$ docker pull yourls@sha256:0449bf961ca8be05590fbd7e5e166fd7343ff57382f72662c52987b3bcc2a3ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **183.7 MB (183745238 bytes)**  
+-	Total Size: **183.8 MB (183755502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3db0eecaa805e5924056600d72bf29a405ec00dee7219edb41c41617f754611`
+-	Image ID: `sha256:ebf9bc7827ad660ae2f9387495ca86e1b50be2e289a1f4b81efee2a0ee50dc86`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -16013,67 +16013,67 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 03 Feb 2026 02:48:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Tue, 03 Feb 2026 03:13:34 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 18:52:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 03:13:35 GMT
+# Fri, 13 Feb 2026 18:52:26 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:37 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 03 Feb 2026 03:18:38 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 03 Feb 2026 03:18:40 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 WORKDIR /var/www/html
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 CMD ["apache2-foreground"]
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Tue, 03 Feb 2026 10:34:35 GMT
+# Fri, 13 Feb 2026 20:34:03 GMT
 RUN a2enmod rewrite expires # buildkit
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Tue, 03 Feb 2026 10:34:39 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost.conf /etc/apache2/sites-available/000-default.conf # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost-https.conf /etc/apache2/sites-available/default-ssl.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/ports.conf /etc/apache2/ports.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8443/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -16106,88 +16106,88 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 03 Feb 2026 02:54:27 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37489437b7bd991bc6450be50991be0f11c9ccfc9d760499e70e0fdf08af0f4d`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 14.5 MB (14505926 bytes)  
+	-	`sha256:dbc574d3b8ba422c4d5f96b41738d0e06931790cfb9bd195dfa6db0663a47b88`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 14.5 MB (14514461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4cd8b4b757df91e84911310b2f0eea1d3bb6cc83a9ff9c1e9511b4bced3e960b`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
+	-	`sha256:344fe9bbecbda240ba480c8a42053c671ddf1e0682432933aa1abfb620959ca0`  
+		Last Modified: Fri, 13 Feb 2026 18:58:20 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a25c903830feabe365ac63eb3243a13caba7805042ad051c2fc04fd067813cea`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 15.0 MB (14982915 bytes)  
+	-	`sha256:e59d1601451b89978be52a445035cb0a54adf429c794cbf69004f364884fce47`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 15.0 MB (14984656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5aaaaca50c7e7eff4db1035eafd5ae1612a4211af69ad6c33cb59486b7d70a80`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:aa482acd178d2f9e5576faa5a27c544ea9ed0e8862c62dd869d41b359422b0d2`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7de69eca5c4d0d3845f2ae389af8e9f91dfbc4593d939b4d9a77aa1199727ebd`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 249.0 B  
+	-	`sha256:686e9c0037ff1f57e1a847ab36648eb318b266b0f5177abf6cd25115e5beaa73`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90d2529c10307836bc2760f82a2ed75e598d7a3b5b9e4495846970abb5599bd7`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 893.0 B  
+	-	`sha256:19a0e5208af9c82d162891798b50196b53dcb7570c3a81a8f56797a08430fda8`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 895.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bef6c506b818e12f6224f3b2466f5380410c6e3f45538d4bc77c00f1decf7fb9`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 117.3 KB (117325 bytes)  
+	-	`sha256:e00771525320bb238613b2c175543d993d9486bf7d6c64e9a6a60a12bcbc1cd4`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 117.3 KB (117322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:977033595c486c9b32c89df4cbff08374b552bddb0bb8521e33e226b5a321c12`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ecd9d622694b7b0178bc397fd4b77c3234015a095d31aa156b55d6727ed3f3eb`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
 		Size: 327.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe78afeb8111f168eecd522ce53c8bc68078eae4f96bb3b1e02bddc806e27369`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 347.0 B  
+	-	`sha256:06ab24b7f470bef9dd33d1404438eddfb749a86fbacda61bc97462aa2ffe221f`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80b553de1db16fc012e027a6150d856921edc5576a21901db65626a4b304b300`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 6.0 MB (6048926 bytes)  
+	-	`sha256:332455bdca4ba3b398b9a9f2a830186fcceef4a7c8882166b11a5566d6ff595a`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 6.0 MB (6048925 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c037da02b98c39eb25e027f55cdd672e7c4538ab38845bc03d5bfbf89d2dd3a6`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 2.1 KB (2096 bytes)  
+	-	`sha256:8f316f19fbe9bb33c7fbe1d5cf40a168cf4d7c1a689a7db2cfbf9291ead69744`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 2.1 KB (2092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b995b7b92e3adfb777523b13abe2039cbce52b305109a0c2579d869e99a4859`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 1.7 KB (1693 bytes)  
+	-	`sha256:eb5ad88823f6ac4db6c86c6d4293f40a2db6f5520cc9243968680d50dbbb9356`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaad58a31c53598dcca2a176770d4425697c08e2aa844bd0103fad103d374a28`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 504.0 B  
+	-	`sha256:61c9c04745b3f1f30c3e176c73f797abee4a2ad0efcdf916ea3e7153efdeddd3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 500.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a977ceb85ed4027690941427063c6bab5b8b178b49021705e2884b8d8772e3a2`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 549.0 B  
+	-	`sha256:0dfc9f3e79393434594ef6e69b7aa3cc6fd9eb41a54fbe6836eb2a4752d916a2`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 545.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b7c9876896b763a77ed813630bf3132b56599792a5d72a768ed958b1598691f`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 329.0 B  
+	-	`sha256:afb054cf7d3c59d92d55553bcc94677d2b2160b2a3488fe18aa34f429114e6f3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:1.10.3-apache` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:1113a227850b54b379fd7ba7af38a186d6c9c94d2a22aa515b8420293da2f15d
+$ docker pull yourls@sha256:25fca6b05aba99ec7c5b6e3e0f3bed96bf4a64664a8089952b783d642a448bab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **47.7 KB (47663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f1ff7637042bc6538c91b1b1a8a9699b4e2c35140b8421f93e4c98101f4e1ca`
+-	Image ID: `sha256:71ad87cb9956d3ea3eea44e65939fb3823e7ad7bfbd2bfd7171228540d730908`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e0e009795b3320ce7e4019a1505c3a2788ea7064023b2628b9041872392ebf7`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ff1946fa847e298660f42fcc2ace6bc1b18b2749e0b618e27add9bac5a708f42`  
+		Last Modified: Fri, 13 Feb 2026 20:34:17 GMT  
 		Size: 47.7 KB (47663 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16640,7 +16640,7 @@ $ docker pull yourls@sha256:062459b136d681cb8acc2670ae24394938ba0ff331e4a7d966ff
 ## `yourls:1.10.3-fpm`
 
 ```console
-$ docker pull yourls@sha256:1307ea6aa5faa63053df254f8eddc3dc98e710a84e6fabf8a762fae9ac60a178
+$ docker pull yourls@sha256:594b30698ff652beb8be443b000f89d170639020c138ebe3b7e0a9efa5cf1e10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17530,13 +17530,13 @@ $ docker pull yourls@sha256:491d838a095ea5ca4fe403905da7d6804731c43e78a569006447
 ### `yourls:1.10.3-fpm` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:6d22f8db86be4b9294e7a65fc0ec9fde7d7f86a1564e207c5bbb1f2b8711d4d9
+$ docker pull yourls@sha256:7e4dbd9e484ee65f5bd5c33a0384def21ae90fa49161f81c55f0a7175bf9f712
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **179.1 MB (179085346 bytes)**  
+-	Total Size: **179.1 MB (179094950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf155f1bbae1d458f0cb4a993ce92d65ab95652b49e9df971f462349bcf15d66`
+-	Image ID: `sha256:56ea9f855a358ab03e5d3122b812260e51727ed6d34240f6bc48ac42569ff806`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -17562,55 +17562,55 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 03 Feb 2026 02:47:45 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Tue, 03 Feb 2026 02:47:45 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Tue, 03 Feb 2026 02:47:45 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Tue, 03 Feb 2026 02:47:45 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Tue, 03 Feb 2026 03:12:57 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 18:52:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 03:12:58 GMT
+# Fri, 13 Feb 2026 18:52:26 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:23:41 GMT
+# Fri, 13 Feb 2026 19:03:40 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 03 Feb 2026 03:23:42 GMT
+# Fri, 13 Feb 2026 19:03:40 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:23:43 GMT
+# Fri, 13 Feb 2026 19:03:41 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 03 Feb 2026 03:23:43 GMT
+# Fri, 13 Feb 2026 19:03:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 03 Feb 2026 03:23:45 GMT
+# Fri, 13 Feb 2026 19:03:41 GMT
 WORKDIR /var/www/html
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 EXPOSE map[9000/tcp:{}]
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 CMD ["php-fpm"]
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:56 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Tue, 03 Feb 2026 10:34:34 GMT
+# Fri, 13 Feb 2026 20:34:57 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ARG YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ENV YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Tue, 03 Feb 2026 10:34:39 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:35:02 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:35:02 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:35:02 GMT
 CMD ["php-fpm"]
 ```
 
@@ -17631,72 +17631,72 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 03 Feb 2026 02:53:13 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9bc87899150d849fc38933ed0467671ba953269a75fcc118adaae79276a2e8f`  
-		Last Modified: Tue, 03 Feb 2026 03:18:22 GMT  
-		Size: 14.5 MB (14487061 bytes)  
+	-	`sha256:26a24c5b513b4ab85182cfcbb06ca3cc7972a607497c059558ed0efb533823fb`  
+		Last Modified: Fri, 13 Feb 2026 18:58:21 GMT  
+		Size: 14.5 MB (14495601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9c0572347c11048d11c1d0f0264155ace3d698621431b809899640903c1b10c`  
-		Last Modified: Tue, 03 Feb 2026 03:18:21 GMT  
-		Size: 489.0 B  
+	-	`sha256:344fe9bbecbda240ba480c8a42053c671ddf1e0682432933aa1abfb620959ca0`  
+		Last Modified: Fri, 13 Feb 2026 18:58:20 GMT  
+		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:523d0ee97ec1a68c56d3b3d882e68ee86779cca86e0c9cabfb811a698687971c`  
-		Last Modified: Tue, 03 Feb 2026 03:24:18 GMT  
-		Size: 15.2 MB (15217434 bytes)  
+	-	`sha256:21b3309e578ebbd2b80b8a62b66dc710382223f4824673bc49df4c6af5bebb20`  
+		Last Modified: Fri, 13 Feb 2026 19:04:10 GMT  
+		Size: 15.2 MB (15218512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a4b2621e734c575cbf1730fd61e739277f4d8ab1a9eb586215622ea8e7ca132`  
-		Last Modified: Tue, 03 Feb 2026 03:24:17 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:5b1f7fabe59f1c8144a020af82b6566bed550ea283af357b174bdd70ea6ad997`  
+		Last Modified: Fri, 13 Feb 2026 19:04:10 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d4e289919b5cb2a4c48726c6f5dbf98e0bbe312aa60ae48f80ea2cc147c8055`  
-		Last Modified: Tue, 03 Feb 2026 03:24:17 GMT  
-		Size: 246.0 B  
+	-	`sha256:37ead6a8af3de665ba04e3dca7c9570b7e442664472f09540d45a39be09feb5a`  
+		Last Modified: Fri, 13 Feb 2026 19:04:09 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e16c683a13c7e32d1f5681e9ed73d637dfb40838b2090aae5ec23b27b3889419`  
-		Last Modified: Tue, 03 Feb 2026 03:24:17 GMT  
+	-	`sha256:204c123d09973bf73c7800f7b627e9bb4198850b5a30d02e5ed558dd47c82770`  
+		Last Modified: Fri, 13 Feb 2026 19:04:10 GMT  
 		Size: 9.3 KB (9265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da8ec1ae6126a595a16263c04a6a371aa2849f6ad942b83982ef41733725b8ea`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
-		Size: 117.3 KB (117328 bytes)  
+	-	`sha256:1a736cb169f373071b19fb5d9715eaa2ed33d9f78769aa387c8428539a6f9b0f`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
+		Size: 117.3 KB (117310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5ca642dbae1981c74e88a1759b3bb5d583a5c4e0687f3bc9699ef8ed2efb6e0`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
-		Size: 329.0 B  
+	-	`sha256:6eb118692e7d8194a338c7315f5b082a88d360cf38f7c658b2326878494dd050`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
+		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a90108de500d4657ac4b33100e86012dae4e07bec26edcfe16cec2599cf9e6c`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:a507eac032eb61dc7f56eb83c23f7010e87e36061f0427041eded0c5aefd80f8`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
 		Size: 6.0 MB (6048926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e4d0903fb434b814089450d6a8b24891b05ef4895266eebb882624e671a7c6a`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
-		Size: 2.1 KB (2097 bytes)  
+	-	`sha256:758c03d2a0694f4aa30e9bd30e0aa37d1f500556253216365e9e573bba207b29`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
+		Size: 2.1 KB (2096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61e1404c2afd3d6fce91ffc0140bddece586f4bc63b47bf35b7ec0396b57372e`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 1.7 KB (1692 bytes)  
+	-	`sha256:de40c517e748d7ca997b086c491802e10e69ffdf973452fa21a81f7d281b82ad`  
+		Last Modified: Fri, 13 Feb 2026 20:35:12 GMT  
+		Size: 1.7 KB (1693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:1.10.3-fpm` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:d1f7ee078f08dce26baae150494935ba89d585185e5650734282286bfad23e76
+$ docker pull yourls@sha256:bbac88f99e009c50e487cf08bf9785b3070b242b337e9e53b2e0528eef97cf4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **26.7 KB (26722 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b55dcc2f4e58ec23330692d328c82ef3289cdd46f9cb56882028844de8ac62c`
+-	Image ID: `sha256:2e805ffd910df7dbe313619ae66797f3d374f2086f6a506331c5c49f293a1906`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:02ff40e740ece5b55fdcc8eff0bdd6a9ba8ce6d062982ba89db979e0a9a14bce`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
+	-	`sha256:bbc7198630e30a7b793818602f1f6c82068a2bb4faba587677b1c0ad65db7492`  
+		Last Modified: Fri, 13 Feb 2026 20:35:10 GMT  
 		Size: 26.7 KB (26722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18049,7 +18049,7 @@ $ docker pull yourls@sha256:ba8b86b0a89cd91b9fdc968e56ccca3b7e4098db0f9871aa13b4
 ## `yourls:1.10.3-fpm-alpine`
 
 ```console
-$ docker pull yourls@sha256:86408bc6f86de53c87eceba2ec15963aed03af7b60824fa033b54e21d789f863
+$ docker pull yourls@sha256:dda733cda3929993c62c4865ef66b0db2b20e66dfd6818481764e9a4e328114f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18979,13 +18979,13 @@ $ docker pull yourls@sha256:5c0ba59d365a070d55ce369b29ff008058a55197663bf73f5af2
 ### `yourls:1.10.3-fpm-alpine` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:23e9032a217af99c6b9b42ac79a093b4cf6eae7d5c6f8830db0f16ece22ac5aa
+$ docker pull yourls@sha256:a51214639b43fcc8fdb03fc57b6d31dbe6f1e8657f5d4a14db2c4a64b4c2054b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.5 MB (45514155 bytes)**  
+-	Total Size: **45.5 MB (45518905 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8028c5f2242332f5efe0219706fa0f1a33106b6e3abffb25632d0fe9916a8e8b`
+-	Image ID: `sha256:7ff2f552fa34e4fc83730a9890d81eeec3b99a7e7e1dc825293abf19040ec17c`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -19013,57 +19013,57 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Wed, 28 Jan 2026 02:38:57 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Wed, 28 Jan 2026 02:38:57 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Wed, 28 Jan 2026 02:38:57 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Wed, 28 Jan 2026 02:38:57 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Wed, 28 Jan 2026 02:39:03 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 19:16:21 GMT
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
-# Wed, 28 Jan 2026 02:39:03 GMT
+# Fri, 13 Feb 2026 19:16:21 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:43:35 GMT
+# Fri, 13 Feb 2026 19:22:30 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 						--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Wed, 28 Jan 2026 02:43:36 GMT
+# Fri, 13 Feb 2026 19:22:30 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:43:37 GMT
+# Fri, 13 Feb 2026 19:22:31 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Wed, 28 Jan 2026 02:43:37 GMT
+# Fri, 13 Feb 2026 19:22:31 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 28 Jan 2026 02:43:37 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 WORKDIR /var/www/html
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 EXPOSE map[9000/tcp:{}]
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 CMD ["php-fpm"]
-# Fri, 30 Jan 2026 02:26:17 GMT
+# Fri, 13 Feb 2026 20:35:20 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Fri, 30 Jan 2026 02:26:17 GMT
+# Fri, 13 Feb 2026 20:35:20 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Fri, 30 Jan 2026 02:26:19 GMT
+# Fri, 13 Feb 2026 20:35:23 GMT
 RUN apk add --no-cache bash # buildkit
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ARG YOURLS_VERSION=1.10.3
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ENV YOURLS_VERSION=1.10.3
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:26 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:26 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:26 GMT
 CMD ["php-fpm"]
 ```
 
@@ -19084,76 +19084,76 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 28 Jan 2026 02:43:14 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30d0240c66f2f649263f65cb23040d6f3e01923bdaa3db18a3b086e8299546b3`  
-		Last Modified: Wed, 28 Jan 2026 02:43:14 GMT  
-		Size: 14.4 MB (14355584 bytes)  
+	-	`sha256:566f99cafde0f397256493135fb5a020de181b7a90ec95e51a81d8ce54baa1a6`  
+		Last Modified: Fri, 13 Feb 2026 19:22:04 GMT  
+		Size: 14.4 MB (14357425 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c4c1916d8ab04d5c7c614bc2f69c44eab90c83dc656fc76685e7d66c35c7643`  
-		Last Modified: Wed, 28 Jan 2026 02:43:15 GMT  
-		Size: 487.0 B  
+	-	`sha256:c322b30c3b4e11ab429a18376322e0624d845c6d030b0122cf5af57ea1dd0c43`  
+		Last Modified: Fri, 13 Feb 2026 19:22:03 GMT  
+		Size: 497.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0547a7133de0304ca6a07c58b21880785621db75c5b0e1fa934608c373e3c221`  
-		Last Modified: Wed, 28 Jan 2026 02:43:53 GMT  
-		Size: 16.7 MB (16729418 bytes)  
+	-	`sha256:310c0e22a18e8b9edc572f5ca859f692ee500d569ee9130143028f7e1802aec9`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 16.7 MB (16732276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53dea240310066542b4ea8ee2b02ed4966152e2fb6dbb0aaf59e86e4b3982731`  
-		Last Modified: Wed, 28 Jan 2026 02:43:52 GMT  
-		Size: 2.4 KB (2447 bytes)  
+	-	`sha256:15fbda1e86475651cf4d5ddcdd2b959100e7b252916ec1255a61de776166ea92`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb04dbd3ff07fe59f20057d2b8a9b83020f981b2a42764c844f7fc6d6dbfd857`  
-		Last Modified: Wed, 28 Jan 2026 02:43:52 GMT  
-		Size: 23.3 KB (23331 bytes)  
+	-	`sha256:ad36c15f11b34482944dd80a8e0ae47e8133bd93dc40c828a36011f2f1ab119b`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 23.4 KB (23353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bc05318795bf13ef7c6e33444f387b343ac882538585787a1f85d727fa47e31`  
-		Last Modified: Fri, 30 Jan 2026 01:42:37 GMT  
-		Size: 9.3 KB (9264 bytes)  
+	-	`sha256:1f3400d56a4ba79f95bb453817245a85d646dcbee0ac01a5d62db00d2e798f74`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 9.3 KB (9259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f12f169d28e26b761dbb67808c54e749520c0a082f933243d623c929253ef2e4`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 142.3 KB (142265 bytes)  
+	-	`sha256:cd198a3fd233b5ed7d6fb607f40ed85eadfd53550592ecce30129d015a771ca5`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 142.3 KB (142282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:099868ac3833e139e50743fe187993c8add31f892c46f1915824b73257d8662c`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 329.0 B  
+	-	`sha256:0c578bd5c92ecbe2e0e55b0b9ad4052a9c7ef84b8fbd0785b8b6b8326c073dc3`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6ffe7711f66f919bc2c1977562437c987d1805ef90a3cbfe87b8763b543cf4b`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 598.7 KB (598660 bytes)  
+	-	`sha256:6588a6a2459df837b9b07ba53fe7ff452a8bc8419fbcb45309a51ac8193ff991`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 598.7 KB (598665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:483e29ed95813bbfb1b8021087985ad6b6e6ba946f9be82b1967b1191ae3dd41`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 6.0 MB (6048909 bytes)  
+	-	`sha256:5c6be7f4ec7a3660d8b79b71edb880f3fad5e75e36ab2de7b62d497b4d933f09`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 6.0 MB (6048910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c752837b19f29272b90ba65e05746a62621110eb7f600a8be209d94bc09bdccb`  
-		Last Modified: Fri, 30 Jan 2026 02:26:30 GMT  
-		Size: 2.1 KB (2095 bytes)  
+	-	`sha256:0195f2d077116a602c47b10f241688a1e433e2108f1250e6a05856bff6b3db18`  
+		Last Modified: Fri, 13 Feb 2026 20:35:35 GMT  
+		Size: 2.1 KB (2094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32a32cb5aa79b5083d883d3250c5caebb92a9146207f242b7b21ce15cfd8edee`  
-		Last Modified: Fri, 30 Jan 2026 02:26:30 GMT  
-		Size: 1.7 KB (1691 bytes)  
+	-	`sha256:a52badae59ffa0b38518f5af2ea62e93bbac91ef9a38db6e595de449b69c8653`  
+		Last Modified: Fri, 13 Feb 2026 20:35:35 GMT  
+		Size: 1.7 KB (1692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:1.10.3-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:42f45e821711fcae5e1e0f4740ccf08b39c20267f63f5734939c35e7b7d43ea9
+$ docker pull yourls@sha256:da88a98c1fec22aad7e8df48269083f9e0599139393f5c99addd8f1d69d8f659
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **30.8 KB (30766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a46bd49a3a4b718e16e8d280d76993354a4e3a4041cad911137ee648abb70ca1`
+-	Image ID: `sha256:2a49ee103df8c5e6b6c525f551c81894aee827fa93b7a90b75990a092740ada0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bd9fd5209d0a592642ee7ce0b43c6af4383fb098670752b98b94a996240fef5c`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
+	-	`sha256:d16249321815a98213a21e78e048cf748d036bc93a957306b42a29c9e9d5c437`  
+		Last Modified: Fri, 13 Feb 2026 20:35:33 GMT  
 		Size: 30.8 KB (30766 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19522,7 +19522,7 @@ $ docker pull yourls@sha256:15f97b3a12701c90b3d0543386394228d09aee4e7d1921e7abf6
 ## `yourls:apache`
 
 ```console
-$ docker pull yourls@sha256:ad17372b3de61f8621c914097cf38004c4b64a152a74d8e89679b9d8b1acecda
+$ docker pull yourls@sha256:59fd5c18341bdc5db614c6f9be1ba431bd9e951fe6f9a9e74b2721688927173b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20662,13 +20662,13 @@ $ docker pull yourls@sha256:ea259b81bf5620bb6cc921b3e5dab5d1f935592ec11daca22ee3
 ### `yourls:apache` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:728df7209d7dd41bab28d94f9c86ae53c7e1b3714fb3772f4d3e326580daac2e
+$ docker pull yourls@sha256:0449bf961ca8be05590fbd7e5e166fd7343ff57382f72662c52987b3bcc2a3ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **183.7 MB (183745238 bytes)**  
+-	Total Size: **183.8 MB (183755502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3db0eecaa805e5924056600d72bf29a405ec00dee7219edb41c41617f754611`
+-	Image ID: `sha256:ebf9bc7827ad660ae2f9387495ca86e1b50be2e289a1f4b81efee2a0ee50dc86`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -20704,67 +20704,67 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 03 Feb 2026 02:48:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Tue, 03 Feb 2026 03:13:34 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 18:52:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 03:13:35 GMT
+# Fri, 13 Feb 2026 18:52:26 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:37 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 03 Feb 2026 03:18:38 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 03 Feb 2026 03:18:40 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 WORKDIR /var/www/html
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 CMD ["apache2-foreground"]
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Tue, 03 Feb 2026 10:34:35 GMT
+# Fri, 13 Feb 2026 20:34:03 GMT
 RUN a2enmod rewrite expires # buildkit
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Tue, 03 Feb 2026 10:34:39 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost.conf /etc/apache2/sites-available/000-default.conf # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost-https.conf /etc/apache2/sites-available/default-ssl.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/ports.conf /etc/apache2/ports.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8443/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -20797,88 +20797,88 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 03 Feb 2026 02:54:27 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37489437b7bd991bc6450be50991be0f11c9ccfc9d760499e70e0fdf08af0f4d`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 14.5 MB (14505926 bytes)  
+	-	`sha256:dbc574d3b8ba422c4d5f96b41738d0e06931790cfb9bd195dfa6db0663a47b88`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 14.5 MB (14514461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4cd8b4b757df91e84911310b2f0eea1d3bb6cc83a9ff9c1e9511b4bced3e960b`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
+	-	`sha256:344fe9bbecbda240ba480c8a42053c671ddf1e0682432933aa1abfb620959ca0`  
+		Last Modified: Fri, 13 Feb 2026 18:58:20 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a25c903830feabe365ac63eb3243a13caba7805042ad051c2fc04fd067813cea`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 15.0 MB (14982915 bytes)  
+	-	`sha256:e59d1601451b89978be52a445035cb0a54adf429c794cbf69004f364884fce47`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 15.0 MB (14984656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5aaaaca50c7e7eff4db1035eafd5ae1612a4211af69ad6c33cb59486b7d70a80`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:aa482acd178d2f9e5576faa5a27c544ea9ed0e8862c62dd869d41b359422b0d2`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7de69eca5c4d0d3845f2ae389af8e9f91dfbc4593d939b4d9a77aa1199727ebd`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 249.0 B  
+	-	`sha256:686e9c0037ff1f57e1a847ab36648eb318b266b0f5177abf6cd25115e5beaa73`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90d2529c10307836bc2760f82a2ed75e598d7a3b5b9e4495846970abb5599bd7`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 893.0 B  
+	-	`sha256:19a0e5208af9c82d162891798b50196b53dcb7570c3a81a8f56797a08430fda8`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 895.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bef6c506b818e12f6224f3b2466f5380410c6e3f45538d4bc77c00f1decf7fb9`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 117.3 KB (117325 bytes)  
+	-	`sha256:e00771525320bb238613b2c175543d993d9486bf7d6c64e9a6a60a12bcbc1cd4`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 117.3 KB (117322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:977033595c486c9b32c89df4cbff08374b552bddb0bb8521e33e226b5a321c12`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ecd9d622694b7b0178bc397fd4b77c3234015a095d31aa156b55d6727ed3f3eb`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
 		Size: 327.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe78afeb8111f168eecd522ce53c8bc68078eae4f96bb3b1e02bddc806e27369`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 347.0 B  
+	-	`sha256:06ab24b7f470bef9dd33d1404438eddfb749a86fbacda61bc97462aa2ffe221f`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80b553de1db16fc012e027a6150d856921edc5576a21901db65626a4b304b300`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 6.0 MB (6048926 bytes)  
+	-	`sha256:332455bdca4ba3b398b9a9f2a830186fcceef4a7c8882166b11a5566d6ff595a`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 6.0 MB (6048925 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c037da02b98c39eb25e027f55cdd672e7c4538ab38845bc03d5bfbf89d2dd3a6`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 2.1 KB (2096 bytes)  
+	-	`sha256:8f316f19fbe9bb33c7fbe1d5cf40a168cf4d7c1a689a7db2cfbf9291ead69744`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 2.1 KB (2092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b995b7b92e3adfb777523b13abe2039cbce52b305109a0c2579d869e99a4859`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 1.7 KB (1693 bytes)  
+	-	`sha256:eb5ad88823f6ac4db6c86c6d4293f40a2db6f5520cc9243968680d50dbbb9356`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaad58a31c53598dcca2a176770d4425697c08e2aa844bd0103fad103d374a28`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 504.0 B  
+	-	`sha256:61c9c04745b3f1f30c3e176c73f797abee4a2ad0efcdf916ea3e7153efdeddd3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 500.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a977ceb85ed4027690941427063c6bab5b8b178b49021705e2884b8d8772e3a2`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 549.0 B  
+	-	`sha256:0dfc9f3e79393434594ef6e69b7aa3cc6fd9eb41a54fbe6836eb2a4752d916a2`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 545.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b7c9876896b763a77ed813630bf3132b56599792a5d72a768ed958b1598691f`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 329.0 B  
+	-	`sha256:afb054cf7d3c59d92d55553bcc94677d2b2160b2a3488fe18aa34f429114e6f3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:apache` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:1113a227850b54b379fd7ba7af38a186d6c9c94d2a22aa515b8420293da2f15d
+$ docker pull yourls@sha256:25fca6b05aba99ec7c5b6e3e0f3bed96bf4a64664a8089952b783d642a448bab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **47.7 KB (47663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f1ff7637042bc6538c91b1b1a8a9699b4e2c35140b8421f93e4c98101f4e1ca`
+-	Image ID: `sha256:71ad87cb9956d3ea3eea44e65939fb3823e7ad7bfbd2bfd7171228540d730908`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e0e009795b3320ce7e4019a1505c3a2788ea7064023b2628b9041872392ebf7`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ff1946fa847e298660f42fcc2ace6bc1b18b2749e0b618e27add9bac5a708f42`  
+		Last Modified: Fri, 13 Feb 2026 20:34:17 GMT  
 		Size: 47.7 KB (47663 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21331,7 +21331,7 @@ $ docker pull yourls@sha256:062459b136d681cb8acc2670ae24394938ba0ff331e4a7d966ff
 ## `yourls:fpm`
 
 ```console
-$ docker pull yourls@sha256:1307ea6aa5faa63053df254f8eddc3dc98e710a84e6fabf8a762fae9ac60a178
+$ docker pull yourls@sha256:594b30698ff652beb8be443b000f89d170639020c138ebe3b7e0a9efa5cf1e10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22221,13 +22221,13 @@ $ docker pull yourls@sha256:491d838a095ea5ca4fe403905da7d6804731c43e78a569006447
 ### `yourls:fpm` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:6d22f8db86be4b9294e7a65fc0ec9fde7d7f86a1564e207c5bbb1f2b8711d4d9
+$ docker pull yourls@sha256:7e4dbd9e484ee65f5bd5c33a0384def21ae90fa49161f81c55f0a7175bf9f712
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **179.1 MB (179085346 bytes)**  
+-	Total Size: **179.1 MB (179094950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf155f1bbae1d458f0cb4a993ce92d65ab95652b49e9df971f462349bcf15d66`
+-	Image ID: `sha256:56ea9f855a358ab03e5d3122b812260e51727ed6d34240f6bc48ac42569ff806`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -22253,55 +22253,55 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 03 Feb 2026 02:47:45 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Tue, 03 Feb 2026 02:47:45 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Tue, 03 Feb 2026 02:47:45 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Tue, 03 Feb 2026 02:47:45 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Tue, 03 Feb 2026 03:12:57 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 18:52:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 03:12:58 GMT
+# Fri, 13 Feb 2026 18:52:26 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:23:41 GMT
+# Fri, 13 Feb 2026 19:03:40 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 03 Feb 2026 03:23:42 GMT
+# Fri, 13 Feb 2026 19:03:40 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:23:43 GMT
+# Fri, 13 Feb 2026 19:03:41 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 03 Feb 2026 03:23:43 GMT
+# Fri, 13 Feb 2026 19:03:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 03 Feb 2026 03:23:45 GMT
+# Fri, 13 Feb 2026 19:03:41 GMT
 WORKDIR /var/www/html
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 EXPOSE map[9000/tcp:{}]
-# Tue, 03 Feb 2026 03:23:47 GMT
+# Fri, 13 Feb 2026 19:03:42 GMT
 CMD ["php-fpm"]
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:56 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Tue, 03 Feb 2026 10:34:34 GMT
+# Fri, 13 Feb 2026 20:34:57 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ARG YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ENV YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:37 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Tue, 03 Feb 2026 10:34:39 GMT
+# Fri, 13 Feb 2026 20:35:01 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:35:02 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:35:02 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:35:02 GMT
 CMD ["php-fpm"]
 ```
 
@@ -22322,72 +22322,72 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 03 Feb 2026 02:53:13 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9bc87899150d849fc38933ed0467671ba953269a75fcc118adaae79276a2e8f`  
-		Last Modified: Tue, 03 Feb 2026 03:18:22 GMT  
-		Size: 14.5 MB (14487061 bytes)  
+	-	`sha256:26a24c5b513b4ab85182cfcbb06ca3cc7972a607497c059558ed0efb533823fb`  
+		Last Modified: Fri, 13 Feb 2026 18:58:21 GMT  
+		Size: 14.5 MB (14495601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9c0572347c11048d11c1d0f0264155ace3d698621431b809899640903c1b10c`  
-		Last Modified: Tue, 03 Feb 2026 03:18:21 GMT  
-		Size: 489.0 B  
+	-	`sha256:344fe9bbecbda240ba480c8a42053c671ddf1e0682432933aa1abfb620959ca0`  
+		Last Modified: Fri, 13 Feb 2026 18:58:20 GMT  
+		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:523d0ee97ec1a68c56d3b3d882e68ee86779cca86e0c9cabfb811a698687971c`  
-		Last Modified: Tue, 03 Feb 2026 03:24:18 GMT  
-		Size: 15.2 MB (15217434 bytes)  
+	-	`sha256:21b3309e578ebbd2b80b8a62b66dc710382223f4824673bc49df4c6af5bebb20`  
+		Last Modified: Fri, 13 Feb 2026 19:04:10 GMT  
+		Size: 15.2 MB (15218512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a4b2621e734c575cbf1730fd61e739277f4d8ab1a9eb586215622ea8e7ca132`  
-		Last Modified: Tue, 03 Feb 2026 03:24:17 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:5b1f7fabe59f1c8144a020af82b6566bed550ea283af357b174bdd70ea6ad997`  
+		Last Modified: Fri, 13 Feb 2026 19:04:10 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d4e289919b5cb2a4c48726c6f5dbf98e0bbe312aa60ae48f80ea2cc147c8055`  
-		Last Modified: Tue, 03 Feb 2026 03:24:17 GMT  
-		Size: 246.0 B  
+	-	`sha256:37ead6a8af3de665ba04e3dca7c9570b7e442664472f09540d45a39be09feb5a`  
+		Last Modified: Fri, 13 Feb 2026 19:04:09 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e16c683a13c7e32d1f5681e9ed73d637dfb40838b2090aae5ec23b27b3889419`  
-		Last Modified: Tue, 03 Feb 2026 03:24:17 GMT  
+	-	`sha256:204c123d09973bf73c7800f7b627e9bb4198850b5a30d02e5ed558dd47c82770`  
+		Last Modified: Fri, 13 Feb 2026 19:04:10 GMT  
 		Size: 9.3 KB (9265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da8ec1ae6126a595a16263c04a6a371aa2849f6ad942b83982ef41733725b8ea`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
-		Size: 117.3 KB (117328 bytes)  
+	-	`sha256:1a736cb169f373071b19fb5d9715eaa2ed33d9f78769aa387c8428539a6f9b0f`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
+		Size: 117.3 KB (117310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5ca642dbae1981c74e88a1759b3bb5d583a5c4e0687f3bc9699ef8ed2efb6e0`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
-		Size: 329.0 B  
+	-	`sha256:6eb118692e7d8194a338c7315f5b082a88d360cf38f7c658b2326878494dd050`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
+		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a90108de500d4657ac4b33100e86012dae4e07bec26edcfe16cec2599cf9e6c`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:a507eac032eb61dc7f56eb83c23f7010e87e36061f0427041eded0c5aefd80f8`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
 		Size: 6.0 MB (6048926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e4d0903fb434b814089450d6a8b24891b05ef4895266eebb882624e671a7c6a`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
-		Size: 2.1 KB (2097 bytes)  
+	-	`sha256:758c03d2a0694f4aa30e9bd30e0aa37d1f500556253216365e9e573bba207b29`  
+		Last Modified: Fri, 13 Feb 2026 20:35:11 GMT  
+		Size: 2.1 KB (2096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61e1404c2afd3d6fce91ffc0140bddece586f4bc63b47bf35b7ec0396b57372e`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 1.7 KB (1692 bytes)  
+	-	`sha256:de40c517e748d7ca997b086c491802e10e69ffdf973452fa21a81f7d281b82ad`  
+		Last Modified: Fri, 13 Feb 2026 20:35:12 GMT  
+		Size: 1.7 KB (1693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:fpm` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:d1f7ee078f08dce26baae150494935ba89d585185e5650734282286bfad23e76
+$ docker pull yourls@sha256:bbac88f99e009c50e487cf08bf9785b3070b242b337e9e53b2e0528eef97cf4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **26.7 KB (26722 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b55dcc2f4e58ec23330692d328c82ef3289cdd46f9cb56882028844de8ac62c`
+-	Image ID: `sha256:2e805ffd910df7dbe313619ae66797f3d374f2086f6a506331c5c49f293a1906`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:02ff40e740ece5b55fdcc8eff0bdd6a9ba8ce6d062982ba89db979e0a9a14bce`  
-		Last Modified: Tue, 03 Feb 2026 10:34:51 GMT  
+	-	`sha256:bbc7198630e30a7b793818602f1f6c82068a2bb4faba587677b1c0ad65db7492`  
+		Last Modified: Fri, 13 Feb 2026 20:35:10 GMT  
 		Size: 26.7 KB (26722 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22740,7 +22740,7 @@ $ docker pull yourls@sha256:ba8b86b0a89cd91b9fdc968e56ccca3b7e4098db0f9871aa13b4
 ## `yourls:fpm-alpine`
 
 ```console
-$ docker pull yourls@sha256:86408bc6f86de53c87eceba2ec15963aed03af7b60824fa033b54e21d789f863
+$ docker pull yourls@sha256:dda733cda3929993c62c4865ef66b0db2b20e66dfd6818481764e9a4e328114f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23670,13 +23670,13 @@ $ docker pull yourls@sha256:5c0ba59d365a070d55ce369b29ff008058a55197663bf73f5af2
 ### `yourls:fpm-alpine` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:23e9032a217af99c6b9b42ac79a093b4cf6eae7d5c6f8830db0f16ece22ac5aa
+$ docker pull yourls@sha256:a51214639b43fcc8fdb03fc57b6d31dbe6f1e8657f5d4a14db2c4a64b4c2054b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.5 MB (45514155 bytes)**  
+-	Total Size: **45.5 MB (45518905 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8028c5f2242332f5efe0219706fa0f1a33106b6e3abffb25632d0fe9916a8e8b`
+-	Image ID: `sha256:7ff2f552fa34e4fc83730a9890d81eeec3b99a7e7e1dc825293abf19040ec17c`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -23704,57 +23704,57 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Wed, 28 Jan 2026 02:38:57 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Wed, 28 Jan 2026 02:38:57 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Wed, 28 Jan 2026 02:38:57 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Wed, 28 Jan 2026 02:38:57 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Wed, 28 Jan 2026 02:39:03 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 19:16:21 GMT
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
-# Wed, 28 Jan 2026 02:39:03 GMT
+# Fri, 13 Feb 2026 19:16:21 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:43:35 GMT
+# Fri, 13 Feb 2026 19:22:30 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 						--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Wed, 28 Jan 2026 02:43:36 GMT
+# Fri, 13 Feb 2026 19:22:30 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Wed, 28 Jan 2026 02:43:37 GMT
+# Fri, 13 Feb 2026 19:22:31 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Wed, 28 Jan 2026 02:43:37 GMT
+# Fri, 13 Feb 2026 19:22:31 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 28 Jan 2026 02:43:37 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 WORKDIR /var/www/html
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 EXPOSE map[9000/tcp:{}]
-# Fri, 30 Jan 2026 01:42:24 GMT
+# Fri, 13 Feb 2026 19:22:32 GMT
 CMD ["php-fpm"]
-# Fri, 30 Jan 2026 02:26:17 GMT
+# Fri, 13 Feb 2026 20:35:20 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Fri, 30 Jan 2026 02:26:17 GMT
+# Fri, 13 Feb 2026 20:35:20 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Fri, 30 Jan 2026 02:26:19 GMT
+# Fri, 13 Feb 2026 20:35:23 GMT
 RUN apk add --no-cache bash # buildkit
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ARG YOURLS_VERSION=1.10.3
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ENV YOURLS_VERSION=1.10.3
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Fri, 30 Jan 2026 02:26:20 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:25 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:26 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:26 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Fri, 30 Jan 2026 02:26:21 GMT
+# Fri, 13 Feb 2026 20:35:26 GMT
 CMD ["php-fpm"]
 ```
 
@@ -23775,76 +23775,76 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 28 Jan 2026 02:43:14 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30d0240c66f2f649263f65cb23040d6f3e01923bdaa3db18a3b086e8299546b3`  
-		Last Modified: Wed, 28 Jan 2026 02:43:14 GMT  
-		Size: 14.4 MB (14355584 bytes)  
+	-	`sha256:566f99cafde0f397256493135fb5a020de181b7a90ec95e51a81d8ce54baa1a6`  
+		Last Modified: Fri, 13 Feb 2026 19:22:04 GMT  
+		Size: 14.4 MB (14357425 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c4c1916d8ab04d5c7c614bc2f69c44eab90c83dc656fc76685e7d66c35c7643`  
-		Last Modified: Wed, 28 Jan 2026 02:43:15 GMT  
-		Size: 487.0 B  
+	-	`sha256:c322b30c3b4e11ab429a18376322e0624d845c6d030b0122cf5af57ea1dd0c43`  
+		Last Modified: Fri, 13 Feb 2026 19:22:03 GMT  
+		Size: 497.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0547a7133de0304ca6a07c58b21880785621db75c5b0e1fa934608c373e3c221`  
-		Last Modified: Wed, 28 Jan 2026 02:43:53 GMT  
-		Size: 16.7 MB (16729418 bytes)  
+	-	`sha256:310c0e22a18e8b9edc572f5ca859f692ee500d569ee9130143028f7e1802aec9`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 16.7 MB (16732276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53dea240310066542b4ea8ee2b02ed4966152e2fb6dbb0aaf59e86e4b3982731`  
-		Last Modified: Wed, 28 Jan 2026 02:43:52 GMT  
-		Size: 2.4 KB (2447 bytes)  
+	-	`sha256:15fbda1e86475651cf4d5ddcdd2b959100e7b252916ec1255a61de776166ea92`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb04dbd3ff07fe59f20057d2b8a9b83020f981b2a42764c844f7fc6d6dbfd857`  
-		Last Modified: Wed, 28 Jan 2026 02:43:52 GMT  
-		Size: 23.3 KB (23331 bytes)  
+	-	`sha256:ad36c15f11b34482944dd80a8e0ae47e8133bd93dc40c828a36011f2f1ab119b`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 23.4 KB (23353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bc05318795bf13ef7c6e33444f387b343ac882538585787a1f85d727fa47e31`  
-		Last Modified: Fri, 30 Jan 2026 01:42:37 GMT  
-		Size: 9.3 KB (9264 bytes)  
+	-	`sha256:1f3400d56a4ba79f95bb453817245a85d646dcbee0ac01a5d62db00d2e798f74`  
+		Last Modified: Fri, 13 Feb 2026 19:22:50 GMT  
+		Size: 9.3 KB (9259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f12f169d28e26b761dbb67808c54e749520c0a082f933243d623c929253ef2e4`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 142.3 KB (142265 bytes)  
+	-	`sha256:cd198a3fd233b5ed7d6fb607f40ed85eadfd53550592ecce30129d015a771ca5`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 142.3 KB (142282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:099868ac3833e139e50743fe187993c8add31f892c46f1915824b73257d8662c`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 329.0 B  
+	-	`sha256:0c578bd5c92ecbe2e0e55b0b9ad4052a9c7ef84b8fbd0785b8b6b8326c073dc3`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6ffe7711f66f919bc2c1977562437c987d1805ef90a3cbfe87b8763b543cf4b`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 598.7 KB (598660 bytes)  
+	-	`sha256:6588a6a2459df837b9b07ba53fe7ff452a8bc8419fbcb45309a51ac8193ff991`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 598.7 KB (598665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:483e29ed95813bbfb1b8021087985ad6b6e6ba946f9be82b1967b1191ae3dd41`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
-		Size: 6.0 MB (6048909 bytes)  
+	-	`sha256:5c6be7f4ec7a3660d8b79b71edb880f3fad5e75e36ab2de7b62d497b4d933f09`  
+		Last Modified: Fri, 13 Feb 2026 20:35:34 GMT  
+		Size: 6.0 MB (6048910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c752837b19f29272b90ba65e05746a62621110eb7f600a8be209d94bc09bdccb`  
-		Last Modified: Fri, 30 Jan 2026 02:26:30 GMT  
-		Size: 2.1 KB (2095 bytes)  
+	-	`sha256:0195f2d077116a602c47b10f241688a1e433e2108f1250e6a05856bff6b3db18`  
+		Last Modified: Fri, 13 Feb 2026 20:35:35 GMT  
+		Size: 2.1 KB (2094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32a32cb5aa79b5083d883d3250c5caebb92a9146207f242b7b21ce15cfd8edee`  
-		Last Modified: Fri, 30 Jan 2026 02:26:30 GMT  
-		Size: 1.7 KB (1691 bytes)  
+	-	`sha256:a52badae59ffa0b38518f5af2ea62e93bbac91ef9a38db6e595de449b69c8653`  
+		Last Modified: Fri, 13 Feb 2026 20:35:35 GMT  
+		Size: 1.7 KB (1692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:42f45e821711fcae5e1e0f4740ccf08b39c20267f63f5734939c35e7b7d43ea9
+$ docker pull yourls@sha256:da88a98c1fec22aad7e8df48269083f9e0599139393f5c99addd8f1d69d8f659
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **30.8 KB (30766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a46bd49a3a4b718e16e8d280d76993354a4e3a4041cad911137ee648abb70ca1`
+-	Image ID: `sha256:2a49ee103df8c5e6b6c525f551c81894aee827fa93b7a90b75990a092740ada0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bd9fd5209d0a592642ee7ce0b43c6af4383fb098670752b98b94a996240fef5c`  
-		Last Modified: Fri, 30 Jan 2026 02:26:29 GMT  
+	-	`sha256:d16249321815a98213a21e78e048cf748d036bc93a957306b42a29c9e9d5c437`  
+		Last Modified: Fri, 13 Feb 2026 20:35:33 GMT  
 		Size: 30.8 KB (30766 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24213,7 +24213,7 @@ $ docker pull yourls@sha256:15f97b3a12701c90b3d0543386394228d09aee4e7d1921e7abf6
 ## `yourls:latest`
 
 ```console
-$ docker pull yourls@sha256:ad17372b3de61f8621c914097cf38004c4b64a152a74d8e89679b9d8b1acecda
+$ docker pull yourls@sha256:59fd5c18341bdc5db614c6f9be1ba431bd9e951fe6f9a9e74b2721688927173b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25353,13 +25353,13 @@ $ docker pull yourls@sha256:ea259b81bf5620bb6cc921b3e5dab5d1f935592ec11daca22ee3
 ### `yourls:latest` - linux; ppc64le
 
 ```console
-$ docker pull yourls@sha256:728df7209d7dd41bab28d94f9c86ae53c7e1b3714fb3772f4d3e326580daac2e
+$ docker pull yourls@sha256:0449bf961ca8be05590fbd7e5e166fd7343ff57382f72662c52987b3bcc2a3ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **183.7 MB (183745238 bytes)**  
+-	Total Size: **183.8 MB (183755502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3db0eecaa805e5924056600d72bf29a405ec00dee7219edb41c41617f754611`
+-	Image ID: `sha256:ebf9bc7827ad660ae2f9387495ca86e1b50be2e289a1f4b81efee2a0ee50dc86`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -25395,67 +25395,67 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 03 Feb 2026 02:48:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_VERSION=8.5.2
+ENV PHP_VERSION=8.5.3
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc
 # Tue, 03 Feb 2026 02:48:44 GMT
-ENV PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1
-# Tue, 03 Feb 2026 03:13:34 GMT
+ENV PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9
+# Fri, 13 Feb 2026 18:52:26 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 03:13:35 GMT
+# Fri, 13 Feb 2026 18:52:26 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:37 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 03 Feb 2026 03:18:38 GMT
+# Fri, 13 Feb 2026 18:58:25 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 03 Feb 2026 03:18:39 GMT
+# Fri, 13 Feb 2026 18:58:26 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 03 Feb 2026 03:18:40 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 WORKDIR /var/www/html
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 03 Feb 2026 03:18:41 GMT
+# Fri, 13 Feb 2026 18:58:27 GMT
 CMD ["apache2-foreground"]
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Tue, 03 Feb 2026 10:34:33 GMT
+# Fri, 13 Feb 2026 20:34:02 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Tue, 03 Feb 2026 10:34:35 GMT
+# Fri, 13 Feb 2026 20:34:03 GMT
 RUN a2enmod rewrite expires # buildkit
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ARG YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_VERSION=1.10.3
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 ENV YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
-# Tue, 03 Feb 2026 10:34:38 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 # ARGS: YOURLS_VERSION=1.10.3 YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Tue, 03 Feb 2026 10:34:39 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Tue, 03 Feb 2026 10:34:40 GMT
+# Fri, 13 Feb 2026 20:34:05 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost.conf /etc/apache2/sites-available/000-default.conf # buildkit
-# Tue, 03 Feb 2026 10:34:41 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/vhost-https.conf /etc/apache2/sites-available/default-ssl.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 COPY files/ports.conf /etc/apache2/ports.conf # buildkit
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 EXPOSE map[8443/tcp:{}]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Tue, 03 Feb 2026 10:34:42 GMT
+# Fri, 13 Feb 2026 20:34:06 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -25488,88 +25488,88 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 03 Feb 2026 02:54:27 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37489437b7bd991bc6450be50991be0f11c9ccfc9d760499e70e0fdf08af0f4d`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 14.5 MB (14505926 bytes)  
+	-	`sha256:dbc574d3b8ba422c4d5f96b41738d0e06931790cfb9bd195dfa6db0663a47b88`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 14.5 MB (14514461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4cd8b4b757df91e84911310b2f0eea1d3bb6cc83a9ff9c1e9511b4bced3e960b`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
+	-	`sha256:344fe9bbecbda240ba480c8a42053c671ddf1e0682432933aa1abfb620959ca0`  
+		Last Modified: Fri, 13 Feb 2026 18:58:20 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a25c903830feabe365ac63eb3243a13caba7805042ad051c2fc04fd067813cea`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 15.0 MB (14982915 bytes)  
+	-	`sha256:e59d1601451b89978be52a445035cb0a54adf429c794cbf69004f364884fce47`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 15.0 MB (14984656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5aaaaca50c7e7eff4db1035eafd5ae1612a4211af69ad6c33cb59486b7d70a80`  
-		Last Modified: Tue, 03 Feb 2026 03:19:10 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:aa482acd178d2f9e5576faa5a27c544ea9ed0e8862c62dd869d41b359422b0d2`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7de69eca5c4d0d3845f2ae389af8e9f91dfbc4593d939b4d9a77aa1199727ebd`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 249.0 B  
+	-	`sha256:686e9c0037ff1f57e1a847ab36648eb318b266b0f5177abf6cd25115e5beaa73`  
+		Last Modified: Fri, 13 Feb 2026 18:58:57 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90d2529c10307836bc2760f82a2ed75e598d7a3b5b9e4495846970abb5599bd7`  
-		Last Modified: Tue, 03 Feb 2026 03:19:11 GMT  
-		Size: 893.0 B  
+	-	`sha256:19a0e5208af9c82d162891798b50196b53dcb7570c3a81a8f56797a08430fda8`  
+		Last Modified: Fri, 13 Feb 2026 18:58:58 GMT  
+		Size: 895.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bef6c506b818e12f6224f3b2466f5380410c6e3f45538d4bc77c00f1decf7fb9`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 117.3 KB (117325 bytes)  
+	-	`sha256:e00771525320bb238613b2c175543d993d9486bf7d6c64e9a6a60a12bcbc1cd4`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 117.3 KB (117322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:977033595c486c9b32c89df4cbff08374b552bddb0bb8521e33e226b5a321c12`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ecd9d622694b7b0178bc397fd4b77c3234015a095d31aa156b55d6727ed3f3eb`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
 		Size: 327.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe78afeb8111f168eecd522ce53c8bc68078eae4f96bb3b1e02bddc806e27369`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 347.0 B  
+	-	`sha256:06ab24b7f470bef9dd33d1404438eddfb749a86fbacda61bc97462aa2ffe221f`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80b553de1db16fc012e027a6150d856921edc5576a21901db65626a4b304b300`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
-		Size: 6.0 MB (6048926 bytes)  
+	-	`sha256:332455bdca4ba3b398b9a9f2a830186fcceef4a7c8882166b11a5566d6ff595a`  
+		Last Modified: Fri, 13 Feb 2026 20:34:18 GMT  
+		Size: 6.0 MB (6048925 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c037da02b98c39eb25e027f55cdd672e7c4538ab38845bc03d5bfbf89d2dd3a6`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 2.1 KB (2096 bytes)  
+	-	`sha256:8f316f19fbe9bb33c7fbe1d5cf40a168cf4d7c1a689a7db2cfbf9291ead69744`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 2.1 KB (2092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b995b7b92e3adfb777523b13abe2039cbce52b305109a0c2579d869e99a4859`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 1.7 KB (1693 bytes)  
+	-	`sha256:eb5ad88823f6ac4db6c86c6d4293f40a2db6f5520cc9243968680d50dbbb9356`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaad58a31c53598dcca2a176770d4425697c08e2aa844bd0103fad103d374a28`  
-		Last Modified: Tue, 03 Feb 2026 10:34:53 GMT  
-		Size: 504.0 B  
+	-	`sha256:61c9c04745b3f1f30c3e176c73f797abee4a2ad0efcdf916ea3e7153efdeddd3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:19 GMT  
+		Size: 500.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a977ceb85ed4027690941427063c6bab5b8b178b49021705e2884b8d8772e3a2`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 549.0 B  
+	-	`sha256:0dfc9f3e79393434594ef6e69b7aa3cc6fd9eb41a54fbe6836eb2a4752d916a2`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 545.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b7c9876896b763a77ed813630bf3132b56599792a5d72a768ed958b1598691f`  
-		Last Modified: Tue, 03 Feb 2026 10:34:54 GMT  
-		Size: 329.0 B  
+	-	`sha256:afb054cf7d3c59d92d55553bcc94677d2b2160b2a3488fe18aa34f429114e6f3`  
+		Last Modified: Fri, 13 Feb 2026 20:34:20 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:latest` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:1113a227850b54b379fd7ba7af38a186d6c9c94d2a22aa515b8420293da2f15d
+$ docker pull yourls@sha256:25fca6b05aba99ec7c5b6e3e0f3bed96bf4a64664a8089952b783d642a448bab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **47.7 KB (47663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f1ff7637042bc6538c91b1b1a8a9699b4e2c35140b8421f93e4c98101f4e1ca`
+-	Image ID: `sha256:71ad87cb9956d3ea3eea44e65939fb3823e7ad7bfbd2bfd7171228540d730908`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e0e009795b3320ce7e4019a1505c3a2788ea7064023b2628b9041872392ebf7`  
-		Last Modified: Tue, 03 Feb 2026 10:34:52 GMT  
+	-	`sha256:ff1946fa847e298660f42fcc2ace6bc1b18b2749e0b618e27add9bac5a708f42`  
+		Last Modified: Fri, 13 Feb 2026 20:34:17 GMT  
 		Size: 47.7 KB (47663 bytes)  
 		MIME: application/vnd.in-toto+json
 
