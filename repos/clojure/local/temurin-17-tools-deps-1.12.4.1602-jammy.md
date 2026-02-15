@@ -1379,14 +1379,9 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.37-3ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.3.dsc' libpng1.6_1.6.37-3ubuntu0.3.dsc 2340 SHA512:e533d10c49c266712ced3f5c18f2ad6dc8304999db6876779810c5b052b51437e6c89691512059e0c7dfa568c23136f44eb35495a24297a029bd762ce6ef200d
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA512:ccb3705c23b2724e86d072e2ac8cfc380f41fadfd6977a248d588a8ad57b6abe0e4155e525243011f245e98d9b7afbe2e8cc7fd4ff7d82fcefb40c0f48f88918
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.3.debian.tar.xz' libpng1.6_1.6.37-3ubuntu0.3.debian.tar.xz 39676 SHA512:0df6cb5417f891c42387c861e2da4669934a7c50d1cf1d77192248673e1c7aaca23b3de9b588b3a2b63cb342c094e15b319bc0113582606ae3fc1c2b1b75e43e
-```
 
 ### `dpkg` source package: `libpsl=0.21.0-1.2build2`
 
