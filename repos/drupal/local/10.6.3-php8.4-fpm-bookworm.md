@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3feeb03e7c603247e1d265c235562198aff963aab5f419bc158ecf291a197da2`
-- Created: `2026-02-05T18:49:08.228316897Z`
-- Virtual Size: ~ 601.13 Mb  
+- Image ID: `sha256:bebe66b13c09e506d77c7bd1446ef342977d38e4711c895c72b4da8254f588eb`
+- Created: `2026-02-13T20:13:57.576459805Z`
+- Virtual Size: ~ 601.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.17`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.17.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.17.tar.xz.asc`
-  - `PHP_SHA256=28b234e347286158cae921d61283eb1169d89bc9d2e5f5976567260ff38b0bfa`
+  - `PHP_VERSION=8.4.18`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.18.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.18.tar.xz.asc`
+  - `PHP_SHA256=957a9b19b4a8e965ee0cc788ca74333bfffaadc206b58611b6cd3cc8b2f40110`
   - `DRUPAL_VERSION=10.6.3`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
@@ -2188,11 +2188,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.159-1`
+### `dpkg` source package: `linux=6.1.162-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.159-1`
+- `linux-libc-dev:amd64=6.1.162-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2207,17 +2207,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.159-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.159-1.dsc' linux_6.1.159-1.dsc 399396 SHA256:2e05b8b357b6810c021b4a0a6ae89c2845976bf6e3461602ad1d136b0a822557
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.159.orig.tar.xz' linux_6.1.159.orig.tar.xz 137840844 SHA256:aee9073581b7b34d516ca28ec2a8473dccb9d169118b587dcbfea5deb269a711
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.159-1.debian.tar.xz' linux_6.1.159-1.debian.tar.xz 1797540 SHA256:1b360e038ac5fc42fd258e64c3fff5bb8ccfb1516feb1d69f17c2eb239ec113e
+$ apt-get source -qq --print-uris linux=6.1.162-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.162-1.dsc' linux_6.1.162-1.dsc 399396 SHA256:6a96b1a6eb221d1b1879af5e0d2669b99c9b96386f639b28ae82f0737f5da52a
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.162.orig.tar.xz' linux_6.1.162.orig.tar.xz 137860740 SHA256:6dc3e1f5ccd1c5da226d7fd42670e2e471398ec1bd5a8848292c491a672c6ad5
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.162-1.debian.tar.xz' linux_6.1.162-1.debian.tar.xz 1812632 SHA256:da60fd225c47642bdf348f8be30b2aad6b71540dd74a70ae97e23762e31f2d1d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.159-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.159-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.159-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.162-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.162-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.162-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
@@ -2766,11 +2766,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkgconf/1.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkgconf/1.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-15=15.15-0+deb12u1`
+### `dpkg` source package: `postgresql-15=15.16-0+deb12u1`
 
 Binary Packages:
 
-- `libpq5:amd64=15.15-0+deb12u1`
+- `libpq5:amd64=15.16-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2790,17 +2790,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-15=15.15-0+deb12u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.15-0%2bdeb12u1.dsc' postgresql-15_15.15-0+deb12u1.dsc 3926 SHA256:c9ead6801944f2715b561b88df836535cc90c93f1a00f6616f8df6a298543120
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.15.orig.tar.bz2' postgresql-15_15.15.orig.tar.bz2 23246368 SHA256:5753aaeb8b09cbf61016f78aa69bf5cbdf01b43263f010cbf168c82896213aaa
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.15-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.15-0+deb12u1.debian.tar.xz 29532 SHA256:83751a83673b099d333f287860b83f75e12114d92010d8d3d43affdf9268ac80
+$ apt-get source -qq --print-uris postgresql-15=15.16-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.16-0%2bdeb12u1.dsc' postgresql-15_15.16-0+deb12u1.dsc 3942 SHA256:04fb4798890e19df8cea289e6efbc709b761b1b13b56755712ba04f9b0d79da6
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.16.orig.tar.bz2' postgresql-15_15.16.orig.tar.bz2 23350381 SHA256:695ee29a77be1f5010e10f3667696f29871587f7aa311eadc1f809bea287cf48
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.16-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.16-0+deb12u1.debian.tar.xz 30176 SHA256:4e9b1eb2567f9ee11512cdb490d77372526a43cccf8970e9ee5b6cc83da2854f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-15/15.15-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.15-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.15-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-15/15.16-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-15/15.16-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-15/15.16-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=3.0-2`
 
