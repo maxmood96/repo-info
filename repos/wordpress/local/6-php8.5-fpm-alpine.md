@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c79345dd3281c43262fc7ee0d3cf213fed977550baadeb0808ae309d67c1d787`
-- Created: `2026-02-03T22:02:39.515319343Z`
-- Virtual Size: ~ 312.33 Mb  
+- Image ID: `sha256:5b2920349e89588a382f70d440ed4eee2a89fc77afd6eed4a4e6380555eb2905`
+- Created: `2026-02-13T19:13:18.582016201Z`
+- Virtual Size: ~ 312.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.2`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.2.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.2.tar.xz.asc`
-  - `PHP_SHA256=cb75a9b00a2806f7390dd64858ef42a47b443b3475769c8af6af33a18b1381f1`
+  - `PHP_VERSION=8.5.3`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc`
+  - `PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9`
 
 ## `apk` (`.apk`-based packages)
 
@@ -112,16 +112,16 @@ MIT
 ### `apk` package: `aom-libs`
 
 ```console
-aom-libs-3.13.1-r0 description:
+aom-libs-3.13.1-r1 description:
 Alliance for Open Media (AOM) AV1 codec SDK (libraries)
 
-aom-libs-3.13.1-r0 webpage:
+aom-libs-3.13.1-r1 webpage:
 https://aomedia.org/
 
-aom-libs-3.13.1-r0 installed size:
+aom-libs-3.13.1-r1 installed size:
 8140 KiB
 
-aom-libs-3.13.1-r0 license:
+aom-libs-3.13.1-r1 license:
 BSD-2-Clause AND custom
 
 ```

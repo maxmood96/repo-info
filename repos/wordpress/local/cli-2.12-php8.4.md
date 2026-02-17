@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9a61cfca486bc64f4752f8b3e89758690269813101b58afd745abbe1d77aae09`
-- Created: `2026-01-28T04:05:54.137527382Z`
-- Virtual Size: ~ 209.88 Mb  
+- Image ID: `sha256:58758f42f92643f9fee28c8b883b60806d32ac96148dff4eeedfa11cf6a669fe`
+- Created: `2026-02-13T19:13:00.220470284Z`
+- Virtual Size: ~ 209.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.17`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.17.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.17.tar.xz.asc`
-  - `PHP_SHA256=28b234e347286158cae921d61283eb1169d89bc9d2e5f5976567260ff38b0bfa`
+  - `PHP_VERSION=8.4.18`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.18.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.18.tar.xz.asc`
+  - `PHP_SHA256=957a9b19b4a8e965ee0cc788ca74333bfffaadc206b58611b6cd3cc8b2f40110`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.12.0`
   - `WORDPRESS_CLI_SHA512=be928f6b8ca1e8dfb9d2f4b75a13aa4aee0896f8a9a0a1c45cd5d2c98605e6172e6d014dda2e27f88c98befc16c040cbb2bd1bfa121510ea5cdf5f6a30fe8832`
@@ -115,16 +115,16 @@ MIT
 ### `apk` package: `aom-libs`
 
 ```console
-aom-libs-3.13.1-r0 description:
+aom-libs-3.13.1-r1 description:
 Alliance for Open Media (AOM) AV1 codec SDK (libraries)
 
-aom-libs-3.13.1-r0 webpage:
+aom-libs-3.13.1-r1 webpage:
 https://aomedia.org/
 
-aom-libs-3.13.1-r0 installed size:
+aom-libs-3.13.1-r1 installed size:
 8140 KiB
 
-aom-libs-3.13.1-r0 license:
+aom-libs-3.13.1-r1 license:
 BSD-2-Clause AND custom
 
 ```
@@ -676,16 +676,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.3-r0 description:
+libexpat-2.7.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.3-r0 webpage:
+libexpat-2.7.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.3-r0 installed size:
+libexpat-2.7.4-r0 installed size:
 133 KiB
 
-libexpat-2.7.3-r0 license:
+libexpat-2.7.4-r0 license:
 MIT
 
 ```
