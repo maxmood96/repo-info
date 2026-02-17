@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9de305fff0affe48a0b8a9ac3b7df8472bfe00bd8dd9f4cdd77664d29660f36b`
-- Created: `2026-02-03T03:39:40.546187457Z`
+- Image ID: `sha256:29f781cf5f59fef43760835bfe14c6b7d669e861ce0fc65a3caa46bacf88025b`
+- Created: `2026-02-13T20:16:11.658704252Z`
 - Virtual Size: ~ 580.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2581,11 +2581,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkgconf/1.8.1-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkgconf/1.8.1-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-17=17.7-0+deb13u1`
+### `dpkg` source package: `postgresql-17=17.8-0+deb13u1`
 
 Binary Packages:
 
-- `libpq5:amd64=17.7-0+deb13u1`
+- `libpq5:amd64=17.8-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2605,17 +2605,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-17=17.7-0+deb13u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.7-0%2bdeb13u1.dsc' postgresql-17_17.7-0+deb13u1.dsc 4277 SHA256:c648dbc8092f1dc92d36d437d2e9a11b1c15dbef89cbf26dd71d4dfc5908a6f2
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.7.orig.tar.bz2' postgresql-17_17.7.orig.tar.bz2 21646334 SHA256:ef9e343302eccd33112f1b2f0247be493cb5768313adeb558b02de8797a2e9b5
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.7-0%2bdeb13u1.debian.tar.xz' postgresql-17_17.7-0+deb13u1.debian.tar.xz 28916 SHA256:19c872ab156451593a11e4de10f72cee0d50119bc2cff8b1148052a2a9c8ce95
+$ apt-get source -qq --print-uris postgresql-17=17.8-0+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-17/postgresql-17_17.8-0%2bdeb13u1.dsc' postgresql-17_17.8-0+deb13u1.dsc 4515 SHA256:ed1dfa21a7444e35c93b5925c15bb9fb17ffcd1250f35e9fba6432b691e07041
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-17/postgresql-17_17.8.orig.tar.bz2' postgresql-17_17.8.orig.tar.bz2 21637088 SHA256:a88d195dd93730452d0cfa1a11896720d6d1ba084bc2be7d7fc557fa4e4158a0
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-17/postgresql-17_17.8-0%2bdeb13u1.debian.tar.xz' postgresql-17_17.8-0+deb13u1.debian.tar.xz 29540 SHA256:561c09dfb5f5e282790acf511bcb882c3827c83009397ab9b29a36871bfea5e0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-17/17.7-0+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-17/17.7-0+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-17/17.7-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-17/17.8-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-17/17.8-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-17/17.8-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=4.1-1`
 
