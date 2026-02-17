@@ -860,14 +860,9 @@ Licenses: (parsed from: `/usr/share/doc/libfftw3-bin/copyright`, `/usr/share/doc
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fftw3=3.3.10-2fakesync1build2
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fftw3/fftw3_3.3.10-2fakesync1build2.dsc' fftw3_3.3.10-2fakesync1build2.dsc 2893 SHA512:f87f249e4cdfe01455e70947cf2c3db3a87733f79a35a9fe9bea8efd7150b7d55f925b86a913ed29c1169816f39a73d3ff956e4a44f9704fe3c06fb1c6caa522
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fftw3/fftw3_3.3.10.orig.tar.gz' fftw3_3.3.10.orig.tar.gz 4262403 SHA512:fa2ea740449fd06c833a82e1fff82bacd554188d500cbedff5a0bc185551799ef9ef9b8b1c227283abdbbdd185424d19df9c0f06ed88d5fe3d9c001d6fab6109
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fftw3/fftw3_3.3.10-2fakesync1build2.debian.tar.xz' fftw3_3.3.10-2fakesync1build2.debian.tar.xz 14828 SHA512:de62d3653d40d54e788285912ff6e2e31d5ddddab9d728f6b3f582253caf2e0cfa3e8e79883324f79a954d59a87f2e3369a0ed7fd8cce71c185ac1c356644932
-```
 
 ### `dpkg` source package: `file=1:5.46-5build1`
 
@@ -1268,14 +1263,9 @@ Licenses: (parsed from: `/usr/share/doc/libgmp-dev/copyright`, `/usr/share/doc/l
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.3.0+dfsg-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg-5ubuntu1.dsc' gmp_6.3.0+dfsg-5ubuntu1.dsc 2337 SHA512:bb1aeca249c2c1f1bc969af7263ce3ee41ac41f8d14b8df1e5e6d000427b93c0a75d35b533968e83a75d50bc8cebec4f0fe339527abd9ad04f06f6c65aab5685
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg.orig.tar.xz' gmp_6.3.0+dfsg.orig.tar.xz 1870556 SHA512:a422b29024464aeb26c69f64be1bc37407d74e0290f44f67fc040fe38b97f3eb7aa6ba8380722ef36cac39816d1c4f24b771159fb86d5979ef0791dcdef708bc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg-5ubuntu1.debian.tar.xz' gmp_6.3.0+dfsg-5ubuntu1.debian.tar.xz 40264 SHA512:a03385d079b3917af6d6760e8b1055499052562a532c4eea72ef8c5fd95422094b8c2435f7cd3ee4f0a2d007c07cf3947c23a42080cbf77e02c37febc97339c5
-```
 
 ### `dpkg` source package: `gnupg2=2.4.8-4ubuntu1`
 
@@ -2717,15 +2707,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libx11=2:1.8.12-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.12-1build1.dsc' libx11_1.8.12-1build1.dsc 2514 SHA512:e7a0f289b8104e63662b44590673293d5dea0096d1781d221699c39b5d190830fcabb7dce7dbf32476dde8cc114a434fa0537bb9d0c3f7a6b68191dfe0fde02c
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.12.orig.tar.gz' libx11_1.8.12.orig.tar.gz 3215077 SHA512:82d62d01176bbb8ee225f6dba741dcbccded62486ae4c70bc7158aa2a19dcf4a795ee9d475a875ed8843a4ae185eb4899d06dac4000b5fe8b5bbb5e13b450153
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.12.orig.tar.gz.asc' libx11_1.8.12.orig.tar.gz.asc 833 SHA512:37b5f57a55cb75cb218937175ad06752ab85391c23ac91006a19fe32b82fc86f4b5eca11dba9b38c7d38efbf98aba3eeadcf3cf7bddf11175334ebe8e4d94d23
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.12-1build1.diff.gz' libx11_1.8.12-1build1.diff.gz 74565 SHA512:f1ce092475fd7063bbeb2015a2027da7f884b3563a5dacf4879689676fce54509f49cc3b09139aad0b778330cc899e88cfbe159336145cda9be452064830d29d
-```
 
 ### `dpkg` source package: `libxau=1:1.0.11-1build1`
 
@@ -2850,15 +2834,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxrender=1:0.9.12-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxrender/libxrender_0.9.12-1.dsc' libxrender_0.9.12-1.dsc 2258 SHA512:b8b744c8946fffcaf089dcfe8001a52be38efd3f19bfc87a4d2d454913ad0c8059d83d336de8ccbdd7c7bc92f28981289f63f77c70dfd537d31d7373200c2886
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxrender/libxrender_0.9.12.orig.tar.gz' libxrender_0.9.12.orig.tar.gz 450034 SHA512:b7cbe8ead3a4eeb7c42acede8569361cf11818d98d05ede75a5f0c48c3fb6b1c0b3b62bb2ba6aea19b4804938512e63ebed127928b1a553b518e3ab974bd089d
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxrender/libxrender_0.9.12.orig.tar.gz.asc' libxrender_0.9.12.orig.tar.gz.asc 833 SHA512:299b2654f2bd2b51033072a225a42f75b5e16aff65f6ff171defe9f692f95f69fbcda0b121caf7f4706ee0dd5f9ecef9b2d2ff50a729d40b280fbdeb80ff17cf
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxrender/libxrender_0.9.12-1.diff.gz' libxrender_0.9.12-1.diff.gz 21464 SHA512:91501f3b9bd7a6e2ae0f6038fa7b4e0ac036dcd9c0e58e4f2dbe2a8b7730a54eb506e61727a2822c7008a3693a1fe0dac107937cc79ea31c611fe2ada7198a10
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libxrender/1:0.9.12-1/
+
 
 ### `dpkg` source package: `libxslt=1.1.43-0.3`
 
@@ -2891,15 +2873,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxt=1:1.2.1-1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxt/libxt_1.2.1-1.3.dsc' libxt_1.2.1-1.3.dsc 2359 SHA512:7dcadb318ab382b0af8e8b1406afae48249bc0ca4f490568a4929166091ef3106239027c1e6f3abe1a7a2464fcf65e4060225f0131f2dd54132f7b8f47ced884
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxt/libxt_1.2.1.orig.tar.gz' libxt_1.2.1.orig.tar.gz 1024473 SHA512:73c2fd8a6590ab5ee93cf646e4f41fb71d424961ecbf9bc13c68abdf539c63ab0c59a4d3b22195ba21859523f4cf0e937648424532794a1350a5891061096503
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxt/libxt_1.2.1.orig.tar.gz.asc' libxt_1.2.1.orig.tar.gz.asc 358 SHA512:135e01b8a79beac9530087dee1a5458c359b4f1ae8346e2502f72f4fc24be400477fda90944315c585e3416e80cb74d1a140d5dfec81e854a4996199a8b221dc
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxt/libxt_1.2.1-1.3.diff.gz' libxt_1.2.1-1.3.diff.gz 46408 SHA512:427103983c1df7f82c4eeb845376a0f5ef547235e811c5b68fe8a9c83729207841a8ecf09b07afbb090d28235f19e6011e9148ec814523da2508ab6f1577b21e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libxt/1:1.2.1-1.3/
+
 
 ### `dpkg` source package: `libyaml=0.2.5-2build2`
 
@@ -3812,15 +3792,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.11-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.11-1.dsc' python3.13_3.13.11-1.dsc 3699 SHA512:5f8ec535986e77fe4e25ddf81a3dc02df91ed559a7af9a9025fedfff6232a77475264c935e4037be1cac4e015ef2bbaf21f22f6afc2905ab3050d267738afc7e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.11.orig.tar.xz' python3.13_3.13.11.orig.tar.xz 22704352 SHA512:11a910785bb3edeb3888331f29d2514d539f08b07d3125186364ab0e261dab29c7e7c70fe08d89718c38b6053cbe932ac4a6062ac291871e6f4173d29425264a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.11.orig.tar.xz.asc' python3.13_3.13.11.orig.tar.xz.asc 963 SHA512:10beaba6d0e84f0335c0add480114e98a64133ec70d320593349de86091ccbdd69743559297f9c8c5e9926089890fd0e7881388e86084f46a413e9579c59d23c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.11-1.debian.tar.xz' python3.13_3.13.11-1.debian.tar.xz 261648 SHA512:0f473fd01f42015e1c47d34c2ba4058ec89e15f6427e08a635c7abd0602d7fce6186b56ad8b42a2be0552a7ffbad4cb2caa7fa5b5cb70d35eca7d14aa76debaa
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.13/3.13.11-1/
+
 
 ### `dpkg` source package: `readline=8.3-3`
 
@@ -4060,15 +4038,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.5-5
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.5-5.dsc' subversion_1.14.5-5.dsc 4074 SHA512:d3967627842e76b30a2bec87e4eb577430425f6acd8ee893cd50c4897b62fa8d5cd2a1395956812692448ed6cbf3b8e8105c1c3b091ae08e354d88c26f544065
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.5.orig.tar.gz' subversion_1.14.5.orig.tar.gz 11645728 SHA512:a8e9f5bf9f32e4fa9a5873544c9228a392af0b4ec1126389a98cd8830c0644fc9d4b88bcb800c0e2c40bd58517cfaba23d79164c774d2cb3267a897c1d599634
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.5.orig.tar.gz.asc' subversion_1.14.5.orig.tar.gz.asc 2382 SHA512:b85c4d6e77194b5edff12e3e57c7d673226253048ddf3b622bb4dee6a8aed9153d3c69477876a7caae9eebe2ff5930e42993e34c8fc33d9fa65f9a57bc005d24
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.5-5.debian.tar.xz' subversion_1.14.5-5.debian.tar.xz 300656 SHA512:ed80ee81cb405ff7c6e487e49fa03d37c6f6ed33f0fd3ccd433e7ae72e8da5dce3627b2341c8b8c06f2dea40a469589c863b6df6aab247a50b4969fd8a3c222a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/subversion/1.14.5-5/
+
 
 ### `dpkg` source package: `sysprof=49.0-5`
 
