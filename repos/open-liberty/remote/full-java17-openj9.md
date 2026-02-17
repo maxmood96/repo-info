@@ -1,7 +1,7 @@
 ## `open-liberty:full-java17-openj9`
 
 ```console
-$ docker pull open-liberty@sha256:ef12f4874c9e613b7f0909610ce5031690d887477029d44da507731666606dc0
+$ docker pull open-liberty@sha256:61f1e0282edf2d91e63123b79e31d42eb0a2f430be9f996914e433e83f2b7a90
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -513,164 +513,164 @@ $ docker pull open-liberty@sha256:f494be999829d26f04bfe7e9aedf1ce741a07f77d37082
 ### `open-liberty:full-java17-openj9` - linux; s390x
 
 ```console
-$ docker pull open-liberty@sha256:2322ad7e3a2bb45dd96de4e8a95a53b48eabcccfb2d35e2d678d2c17e5ffbc2f
+$ docker pull open-liberty@sha256:ed27c7d637051bdfa4ec79a2e858af3be72ecf65cc74e529179967721304c116
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **470.0 MB (470012219 bytes)**  
+-	Total Size: **462.8 MB (462831580 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a5019c81bcafab41f8380259f31b15e2e62b25c6593c7763a688ac510c67c4d`
+-	Image ID: `sha256:fe6ae3e0b1674c8639e08df4b216f32b50b0a644667bd2833996e16cd381c6f4`
 -	Entrypoint: `["\/opt\/ol\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ol\/wlp\/bin\/server","run","defaultServer"]`
 
 ```dockerfile
-# Tue, 13 Jan 2026 06:29:20 GMT
+# Tue, 10 Feb 2026 16:50:51 GMT
 ARG RELEASE
-# Tue, 13 Jan 2026 06:29:20 GMT
+# Tue, 10 Feb 2026 16:50:51 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 13 Jan 2026 06:29:20 GMT
+# Tue, 10 Feb 2026 16:50:51 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 13 Jan 2026 06:29:20 GMT
+# Tue, 10 Feb 2026 16:50:51 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 13 Jan 2026 06:29:22 GMT
-ADD file:55a7874afa0094b7b4c6edc68b58164a34177fa761bc6e673ddb0c846b91f26f in / 
-# Tue, 13 Jan 2026 06:29:22 GMT
+# Tue, 10 Feb 2026 16:50:52 GMT
+ADD file:be1799101a7a15f881e3aebea1e86fa6a156760dc7688b1affe179e948814a3b in / 
+# Tue, 10 Feb 2026 16:50:52 GMT
 CMD ["/bin/bash"]
-# Mon, 09 Feb 2026 20:11:01 GMT
+# Tue, 17 Feb 2026 20:17:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 09 Feb 2026 20:11:01 GMT
+# Tue, 17 Feb 2026 20:17:22 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 09 Feb 2026 20:11:01 GMT
+# Tue, 17 Feb 2026 20:17:22 GMT
 ENV JAVA_VERSION=jdk-17.0.18+8_openj9-0.57.0
-# Mon, 09 Feb 2026 20:21:46 GMT
+# Tue, 17 Feb 2026 20:40:07 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a01d4aec9c66e9f8cefd63564ee5be9d31df01b5bab8007ba7ed0410fa97a490';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.18%2B8_openj9-0.57.0/ibm-semeru-open-jre_aarch64_linux_17.0.18_8_openj9-0.57.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='e62c6f38315bbabcfedc1c69ab4cf2f0619314cddeaffb517b593aae7141fd3d';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.18%2B8_openj9-0.57.0/ibm-semeru-open-jre_ppc64le_linux_17.0.18_8_openj9-0.57.0.tar.gz';          ;;        amd64|x86_64)          ESUM='b6c43cc8b824d69338e15ea220f2ca5b94a04ae657c95ad4372560b4ba0163e7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.18%2B8_openj9-0.57.0/ibm-semeru-open-jre_x64_linux_17.0.18_8_openj9-0.57.0.tar.gz';          ;;        s390x)          ESUM='fb4714fd7096537e366abcd2d817d3fbbf21f81458766cec9340302755a15107';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.18%2B8_openj9-0.57.0/ibm-semeru-open-jre_s390x_linux_17.0.18_8_openj9-0.57.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
-# Mon, 09 Feb 2026 20:21:46 GMT
+# Tue, 17 Feb 2026 20:40:07 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 09 Feb 2026 20:21:46 GMT
+# Tue, 17 Feb 2026 20:40:07 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Mon, 09 Feb 2026 20:22:50 GMT
+# Tue, 17 Feb 2026 20:41:18 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     export CATALINA_PID=/opt/tomcat-home/tomcat.pid;     TOMCAT_CHECKSUM="fc55589f28bf6659928167461c741649b6005b64285dd81df05bb5ee40f4c6de59b8ee3af84ff756ae1513fc47f5f73070e29313b555e27f096f25881c69841d";     TOMCAT_VERSION="9.0.112";     TOMCAT_FILENAME="apache-tomcat-${TOMCAT_VERSION}.tar.gz";     SUCCESS=;         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     for baseUrl in         https://dlcdn.apache.org/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin         https://archive.apache.org/dist/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin     ; do         if curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${baseUrl}/${TOMCAT_FILENAME}" && [ -s "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz ]; then             SUCCESS=1;             break;         fi;     done;     [ -n "$SUCCESS" ];     echo "${TOMCAT_CHECKSUM}  ${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 20;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 20;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     unset CATALINA_PID;     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
-# Mon, 09 Feb 2026 21:10:16 GMT
+# Tue, 17 Feb 2026 21:29:12 GMT
 USER root
-# Mon, 09 Feb 2026 21:10:16 GMT
+# Tue, 17 Feb 2026 21:29:12 GMT
 ARG LIBERTY_VERSION=26.0.0.1
-# Mon, 09 Feb 2026 21:10:16 GMT
+# Tue, 17 Feb 2026 21:29:12 GMT
 ARG LIBERTY_SHA=3ae4f8ddca8dd363663792245edbb23c555d735e
-# Mon, 09 Feb 2026 21:10:16 GMT
+# Tue, 17 Feb 2026 21:29:12 GMT
 ARG LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/openliberty-runtime/26.0.0.1/openliberty-runtime-26.0.0.1.zip
-# Mon, 09 Feb 2026 21:10:16 GMT
+# Tue, 17 Feb 2026 21:29:12 GMT
 ARG LIBERTY_BUILD_LABEL=cl260120260112-1902
-# Mon, 09 Feb 2026 21:10:16 GMT
+# Tue, 17 Feb 2026 21:29:12 GMT
 ARG OPENJ9_SCC=true
-# Mon, 09 Feb 2026 21:10:16 GMT
+# Tue, 17 Feb 2026 21:29:12 GMT
 ARG VERBOSE=false
-# Mon, 09 Feb 2026 21:10:16 GMT
+# Tue, 17 Feb 2026 21:29:12 GMT
 LABEL org.opencontainers.image.authors=Leo Christy Jesuraj, Melissa Lee, Thomas Watson, Michal Broz, Wendy Raschke org.opencontainers.image.vendor=Open Liberty org.opencontainers.image.url=https://openliberty.io/ org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker org.opencontainers.image.revision=cl260120260112-1902 org.opencontainers.image.description=This image contains the Open Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image org.opencontainers.image.title=Open Liberty org.opencontainers.image.version=26.0.0.1 liberty.version=26.0.0.1 io.openliberty.version=26.0.0.1
-# Mon, 09 Feb 2026 21:10:16 GMT
+# Tue, 17 Feb 2026 21:29:12 GMT
 COPY NOTICES /opt/ol/NOTICES # buildkit
-# Mon, 09 Feb 2026 21:11:01 GMT
+# Tue, 17 Feb 2026 21:29:15 GMT
 COPY helpers /opt/ol/helpers # buildkit
-# Mon, 09 Feb 2026 21:11:01 GMT
+# Tue, 17 Feb 2026 21:29:16 GMT
 COPY fixes/ /opt/ol/fixes/ # buildkit
-# Mon, 09 Feb 2026 21:11:01 GMT
+# Tue, 17 Feb 2026 21:29:17 GMT
 # ARGS: LIBERTY_VERSION=26.0.0.1 LIBERTY_SHA=3ae4f8ddca8dd363663792245edbb23c555d735e LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/openliberty-runtime/26.0.0.1/openliberty-runtime-26.0.0.1.zip LIBERTY_BUILD_LABEL=cl260120260112-1902 OPENJ9_SCC=true VERBOSE=false
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_aarch64';          DUMB_INIT_SHA256=b7d648f97154a99c539b63c55979cd29f005f88430fb383007fe3458340b795e;          ;;        amd64|x86_64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64';          DUMB_INIT_SHA256=e874b55f3279ca41415d290c512a7ba9d08f98041b28ae7c2acb19a545f1c4df;          ;;        ppc64el|ppc64le)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_ppc64le';          DUMB_INIT_SHA256=3d15e80e29f0f4fa1fc686b00613a2220bc37e83a35283d4b4cca1fbd0a5609f;          ;;        s390x)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_s390x';          DUMB_INIT_SHA256=47e4601b152fc6dcb1891e66c30ecc62a2939fd7ffd1515a7c30f281cfec53b7;          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /usr/bin/dumb-init ${DUMB_INIT_URL};     echo "${DUMB_INIT_SHA256} */usr/bin/dumb-init" | sha256sum -c -;     chmod +x /usr/bin/dumb-init; # buildkit
-# Mon, 09 Feb 2026 21:11:17 GMT
+# Tue, 17 Feb 2026 21:29:40 GMT
 # ARGS: LIBERTY_VERSION=26.0.0.1 LIBERTY_SHA=3ae4f8ddca8dd363663792245edbb23c555d735e LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/openliberty-runtime/26.0.0.1/openliberty-runtime-26.0.0.1.zip LIBERTY_BUILD_LABEL=cl260120260112-1902 OPENJ9_SCC=true VERBOSE=false
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip openssl wget     && wget -q $LIBERTY_DOWNLOAD_URL -U UA-Open-Liberty-Docker -O /tmp/wlp.zip     && echo "$LIBERTY_SHA  /tmp/wlp.zip" > /tmp/wlp.zip.sha1     && sha1sum -c /tmp/wlp.zip.sha1     && unzip -q /tmp/wlp.zip -d /opt/ol     && rm /tmp/wlp.zip     && rm /tmp/wlp.zip.sha1     && mkdir -p /licenses     && cp /opt/ol/wlp/LICENSE /licenses/     && apt-get remove -y unzip     && apt-get remove -y wget     && rm -rf /var/lib/apt/lists/*     && useradd -u 1001 -r -g 0 -s /usr/sbin/nologin default     && chown -R 1001:0 /opt/ol/wlp     && chmod -R g+rw /opt/ol/wlp # buildkit
-# Mon, 09 Feb 2026 21:11:17 GMT
+# Tue, 17 Feb 2026 21:29:40 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ol/wlp/bin:/opt/ol/helpers/build:/opt/ol/helpers/runtime LOG_DIR=/liberty/logs WLP_OUTPUT_DIR=/opt/ol/wlp/output WLP_SKIP_MAXPERMSIZE=true OPENJ9_SCC=true
-# Mon, 09 Feb 2026 21:11:18 GMT
+# Tue, 17 Feb 2026 21:29:42 GMT
 # ARGS: LIBERTY_VERSION=26.0.0.1 LIBERTY_SHA=3ae4f8ddca8dd363663792245edbb23c555d735e LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/openliberty-runtime/26.0.0.1/openliberty-runtime-26.0.0.1.zip LIBERTY_BUILD_LABEL=cl260120260112-1902 OPENJ9_SCC=true VERBOSE=false
 RUN /opt/ol/wlp/bin/server create --template=javaee8     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && rm -rf /opt/ol/wlp/usr/servers/defaultServer/server.env # buildkit
-# Mon, 09 Feb 2026 21:11:18 GMT
+# Tue, 17 Feb 2026 21:29:43 GMT
 # ARGS: LIBERTY_VERSION=26.0.0.1 LIBERTY_SHA=3ae4f8ddca8dd363663792245edbb23c555d735e LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/openliberty-runtime/26.0.0.1/openliberty-runtime-26.0.0.1.zip LIBERTY_BUILD_LABEL=cl260120260112-1902 OPENJ9_SCC=true VERBOSE=false
 RUN mkdir /logs     && chown -R 1001:0 /logs     && chmod -R g+rw /logs     && mkdir -p /opt/ol/wlp/usr/shared/resources/lib.index.cache     && ln -s /opt/ol/wlp/usr/shared/resources/lib.index.cache /lib.index.cache     && mkdir -p $WLP_OUTPUT_DIR/defaultServer     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ol/wlp/usr/servers/defaultServer /config     && mkdir -p /config/configDropins/defaults     && mkdir -p /config/configDropins/overrides     && mkdir -p /config/dropins     && mkdir -p /config/apps     && ln -s /opt/ol/wlp /liberty     && ln -s /opt/ol/fixes /fixes     && chown -R 1001:0 /config     && chmod -R g+rw /config     && chown -R 1001:0 /opt/ol/wlp/usr     && chmod -R g+rw /opt/ol/wlp/usr     && chown -R 1001:0 /opt/ol/wlp/output     && chmod -R g+rw /opt/ol/wlp/output     && chown -R 1001:0 /opt/ol/helpers     && chmod -R ug+rwx /opt/ol/helpers     && chown -R 1001:0 /opt/ol/fixes     && chmod -R g+rwx /opt/ol/fixes     && mkdir /etc/wlp     && chown -R 1001:0 /etc/wlp     && chmod -R g+rw /etc/wlp     && echo "<server description=\"Default Server\"><httpEndpoint id=\"defaultHttpEndpoint\" host=\"*\" /></server>" > /config/configDropins/defaults/open-default-port.xml     && ln -s /logs /liberty/logs     && mkdir /serviceability     && chown -R 1001:0 /serviceability     && chmod -R g+rw /serviceability # buildkit
-# Mon, 09 Feb 2026 21:11:43 GMT
+# Tue, 17 Feb 2026 21:30:26 GMT
 # ARGS: LIBERTY_VERSION=26.0.0.1 LIBERTY_SHA=3ae4f8ddca8dd363663792245edbb23c555d735e LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/openliberty-runtime/26.0.0.1/openliberty-runtime-26.0.0.1.zip LIBERTY_BUILD_LABEL=cl260120260112-1902 OPENJ9_SCC=true VERBOSE=false
 RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /output/messaging /output/resources/security /logs/* $WLP_OUTPUT_DIR/.classCache     && chown -R 1001:0 /opt/ol/wlp/output     && chmod -R g+rwx /opt/ol/wlp/output # buildkit
-# Mon, 09 Feb 2026 21:11:43 GMT
+# Tue, 17 Feb 2026 21:30:26 GMT
 ENV RANDFILE=/tmp/.rnd OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false
-# Mon, 09 Feb 2026 21:11:43 GMT
+# Tue, 17 Feb 2026 21:30:26 GMT
 USER 1001
-# Mon, 09 Feb 2026 21:11:43 GMT
+# Tue, 17 Feb 2026 21:30:26 GMT
 EXPOSE map[9080/tcp:{} 9443/tcp:{}]
-# Mon, 09 Feb 2026 21:11:43 GMT
+# Tue, 17 Feb 2026 21:30:26 GMT
 ENTRYPOINT ["/opt/ol/helpers/runtime/docker-server.sh"]
-# Mon, 09 Feb 2026 21:11:43 GMT
+# Tue, 17 Feb 2026 21:30:26 GMT
 CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ```
 
 -	Layers:
-	-	`sha256:88318e41cf944fd93c8b2fdfaeb1378b17ed0e2440ef9811f9820449bf19a6ad`  
-		Last Modified: Tue, 13 Jan 2026 06:36:13 GMT  
-		Size: 29.9 MB (29909204 bytes)  
+	-	`sha256:8b6ba492713239cba0554ce53d24405e1285684fa64bcfb05df4af8037ba5836`  
+		Last Modified: Tue, 10 Feb 2026 17:42:12 GMT  
+		Size: 29.9 MB (29909784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d7c7cad99caef52ede636ac1355f65db6d1c6c6122f538f2519f19091e57987`  
-		Last Modified: Mon, 09 Feb 2026 20:12:37 GMT  
-		Size: 20.5 MB (20450262 bytes)  
+	-	`sha256:8b2ce3b2a70015000a5b0ceaa4885f1aceec67cb23d3ef542311e0f5506c39b0`  
+		Last Modified: Tue, 17 Feb 2026 20:19:02 GMT  
+		Size: 13.1 MB (13118433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1c9fb680adc3d1dfd88b195908f7af10e1ff7e2caa98c53855f94c5d4fcdef9`  
-		Last Modified: Mon, 09 Feb 2026 20:23:11 GMT  
-		Size: 54.3 MB (54312568 bytes)  
+	-	`sha256:a126ffcb9b8a68f40af722d4890772c7757035bb9b385f2b9267477328e0ca4d`  
+		Last Modified: Tue, 17 Feb 2026 20:41:48 GMT  
+		Size: 54.3 MB (54312562 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d42c52868b0aa6f9d1decb9572b9f117769e2e7496d36c77a7400115de1150d5`  
-		Last Modified: Mon, 09 Feb 2026 20:23:10 GMT  
-		Size: 5.1 MB (5120581 bytes)  
+	-	`sha256:6cbb2daf00932057db75fddac5172011fc3a3c91e2ec551d3d5421f11059b3db`  
+		Last Modified: Tue, 17 Feb 2026 20:41:47 GMT  
+		Size: 5.1 MB (5127220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfb581c66527fb2d7683541fd948bafadcc3b3517093c730ef5d8dcd347ca966`  
-		Last Modified: Mon, 09 Feb 2026 21:10:42 GMT  
-		Size: 1.1 KB (1050 bytes)  
+	-	`sha256:daff8d496f9c0a6f59dbea9292fde4c7e4604fdc73bff05951ad56f1992be972`  
+		Last Modified: Tue, 17 Feb 2026 21:30:12 GMT  
+		Size: 1.1 KB (1051 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56cd48dc7157a48f8789d6ad48e8c9daa3a83f8cd3bccff08eb6a48ae0e786f2`  
-		Last Modified: Mon, 09 Feb 2026 21:12:16 GMT  
-		Size: 12.3 KB (12283 bytes)  
+	-	`sha256:00f6213e32066f65527bdf1928b4f1a9d57076a70883b47635310889abae7165`  
+		Last Modified: Tue, 17 Feb 2026 21:31:18 GMT  
+		Size: 12.3 KB (12282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbda1559d6a4caf5e56a5ea66acd4f1bfc3da5b4c31e402b2e2f42b3ec5c5d4d`  
-		Last Modified: Mon, 09 Feb 2026 21:12:16 GMT  
-		Size: 244.0 B  
+	-	`sha256:526ccc88f0f159883bee98fd22eca3c03e5e46e8281cd4fa192990d7e3a1ed28`  
+		Last Modified: Tue, 17 Feb 2026 21:31:18 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9f76e63b21789a082bd7cfef59ac63247e8e13d594b36903cc9f04abe24738a`  
-		Last Modified: Mon, 09 Feb 2026 21:12:12 GMT  
-		Size: 33.1 KB (33113 bytes)  
+	-	`sha256:fd0428240768ed1ba5c05a4fb8e1acb3c8d6de41a0da086fd742dd28948af04c`  
+		Last Modified: Tue, 17 Feb 2026 21:31:18 GMT  
+		Size: 33.1 KB (33111 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3190b46d922224e7ef697a47a1fea8b38a6f7b58fe916e42d3c4607866e0687b`  
-		Last Modified: Mon, 09 Feb 2026 21:12:23 GMT  
-		Size: 346.5 MB (346494384 bytes)  
+	-	`sha256:bad81d52f0c94b8ae2c6297069064e6867a0c61183a7f726ad6f66d3afee06f6`  
+		Last Modified: Tue, 17 Feb 2026 21:31:27 GMT  
+		Size: 346.5 MB (346494283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3099839b11da2d7e2eac6db917b40ba3f2b30edae1fae5083df8c7e57d7160b4`  
-		Last Modified: Mon, 09 Feb 2026 21:12:16 GMT  
+	-	`sha256:87dca8acf2824971ae3aa2d0ee9b17c5d4b73a55ec8eb00e311477fc028e8cae`  
+		Last Modified: Tue, 17 Feb 2026 21:31:20 GMT  
 		Size: 1.1 KB (1056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc1615699d5c39696d8b726fe6d03030b3ee5dbdc95432ad00d98817a7e49ae7`  
-		Last Modified: Mon, 09 Feb 2026 21:12:17 GMT  
-		Size: 13.7 KB (13722 bytes)  
+	-	`sha256:fbeaaf974da8e26f1bfb6c69e983d89e8dc305b1cfaea18398ecca98ddda81fb`  
+		Last Modified: Tue, 17 Feb 2026 21:31:20 GMT  
+		Size: 13.8 KB (13750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb047c33b2921725d49697b024696e0861d2a2586429d8898d54a417ebf23d05`  
-		Last Modified: Mon, 09 Feb 2026 21:12:17 GMT  
-		Size: 13.7 MB (13663752 bytes)  
+	-	`sha256:6cd0328c2d8af1c7698b140487a171b56190da5682cd3d5835465915aa5649a2`  
+		Last Modified: Tue, 17 Feb 2026 21:31:21 GMT  
+		Size: 13.8 MB (13807806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `open-liberty:full-java17-openj9` - unknown; unknown
 
 ```console
-$ docker pull open-liberty@sha256:0ed33a39a27451fde6412eb1dcdf0194f3c77ee07f4bae9ad77965321f65f9b1
+$ docker pull open-liberty@sha256:2f2b220f4edb20248e4346a91d0d1f64b34245bf0f7fc5e20f9303ff56e18da9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5186721 bytes)**  
+-	Total Size: **5.2 MB (5185917 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c0ca5ade7b519523fa732e12f8196d0412edea504c55068f3a22d54d425aa71`
+-	Image ID: `sha256:d9967a584fba87191473c8b9c4ffc94a9b3601b94a86ea58f7d9a385c680fe94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:38c844b3706b5c4333401053a80122809ef0099d4d3fd12bc783d2a1b7136c6e`  
-		Last Modified: Mon, 09 Feb 2026 21:12:16 GMT  
+	-	`sha256:ab57939b21a49ef69d25f4f0faa2d6db6adb3120b0866c67a1fca638c425348b`  
+		Last Modified: Tue, 17 Feb 2026 21:31:19 GMT  
 		Size: 5.1 MB (5147372 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1006bb243b922c76fe80165baccde167ed5911a0d682429397ce494a24b3f6b3`  
-		Last Modified: Mon, 09 Feb 2026 21:12:16 GMT  
-		Size: 39.3 KB (39349 bytes)  
+	-	`sha256:f91072f09c8668cfeb2cc0c98bc1186b199ad6350c7cd07c772b4c6d2096315b`  
+		Last Modified: Tue, 17 Feb 2026 21:31:18 GMT  
+		Size: 38.5 KB (38545 bytes)  
 		MIME: application/vnd.in-toto+json
