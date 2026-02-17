@@ -108,15 +108,9 @@ Licenses: (parsed from: `/usr/share/doc/libasound2-data/copyright`, `/usr/share/
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-lib=1.2.11-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11-1ubuntu0.1.dsc' alsa-lib_1.2.11-1ubuntu0.1.dsc 3034 SHA512:9d3365367d31026c5270766f00ca42b5c0ed7763703fd2ee014b53ad331152915ea2a7583bbc3521f8e4afde9a8c3cd35a30ff7a4b0af9966bf4ae8dfb645fc2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11.orig.tar.bz2' alsa-lib_1.2.11.orig.tar.bz2 1107150 SHA512:7bf2c541dff5262c0302a1c716ca10cdb5105f4e0ad48f3341c3c7e975b0c3ea835a298a05974c3e216a85912c368d8025ba3cdda3ff04a7683133ce5b2a286d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11.orig.tar.bz2.asc' alsa-lib_1.2.11.orig.tar.bz2.asc 833 SHA512:22ebba05f37ffe8e38644907e9037379c826ff36940f0c5a96f1c7abd5c2a87109899c362e242d12f079251b8423b8234ae4b333feddad5e220351828e30c732
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11-1ubuntu0.1.debian.tar.xz' alsa-lib_1.2.11-1ubuntu0.1.debian.tar.xz 33912 SHA512:a0ffe096b22003213378d62414301f750d9e1e75ac6ff55398ee776527fdefa199a1419bddaa85a7d85e1525c414fec3579ad86b9592356ada2cde514b00a69d
-```
 
 ### `dpkg` source package: `ann=1.1.2+doc-9build1`
 
@@ -1669,14 +1663,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.6.1-2ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.3.dsc' expat_2.6.1-2ubuntu0.3.dsc 1474 SHA512:2331ab71158152f87fffa9e05e04b6f79bbeee7842cd957e3237847684b3508fb193850ca47049f1ed3284cc54d553183d9886de595a5ada114da20bf0119c69
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1.orig.tar.gz' expat_2.6.1.orig.tar.gz 8414649 SHA512:cf6c64fc0ca55dd172ca8a6ca10d1fb2c915d0f941b0068f42cb90488022dea73e04119c49a1bd4ab9a5d425ddc132ae5f22260ff6d2e25204637a1169e7bd4f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.3.debian.tar.xz' expat_2.6.1-2ubuntu0.3.debian.tar.xz 30100 SHA512:9b71cdafaacb1148f3e22cef6bde49f2701339a15c78ccf0df954c19bdba6b6f8ee778ab2227c8543f75bcc8b6e5f8e380e99d6d0c7ea4660526669e4d97df0e
-```
 
 ### `dpkg` source package: `ffmpeg=7:6.1.1-3ubuntu5`
 
@@ -2164,9 +2153,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-13=13.3.0-6ubuntu2~24.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.3.0-6ubuntu2%7e24.04.dsc' gcc-13_13.3.0-6ubuntu2~24.04.dsc 39532 SHA512:57de6461f2370233f418d6041794db86104bfb47be2e1514061b8a1d53c4e9ccecc8fed0b475c148a43dddc646c3e5362ba2248457debdc76067198b97dac385
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.3.0.orig.tar.gz' gcc-13_13.3.0.orig.tar.gz 92761021 SHA512:78a3040d19618d2264544d6db9b237180735213af3d1e578641cc1e6809fa04bb39c5e8da67f9c637a213c3a24ec03688b2fa67dd30515eaaa41ac50733233e1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.3.0-6ubuntu2%7e24.04.debian.tar.xz' gcc-13_13.3.0-6ubuntu2~24.04.debian.tar.xz 646192 SHA512:217913c9e14a6ee123588a688df164f593db23fb40b29cbcf174aee7841866cfb56624870bb6d1291f62410497c8ed0adcc78dcf9552c54dda1958330f1602c1
+'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.3.0-6ubuntu2%7e24.04.dsc' gcc-13_13.3.0-6ubuntu2~24.04.dsc 39532 SHA512:57de6461f2370233f418d6041794db86104bfb47be2e1514061b8a1d53c4e9ccecc8fed0b475c148a43dddc646c3e5362ba2248457debdc76067198b97dac385
+'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.3.0.orig.tar.gz' gcc-13_13.3.0.orig.tar.gz 92761021 SHA512:78a3040d19618d2264544d6db9b237180735213af3d1e578641cc1e6809fa04bb39c5e8da67f9c637a213c3a24ec03688b2fa67dd30515eaaa41ac50733233e1
+'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.3.0-6ubuntu2%7e24.04.debian.tar.xz' gcc-13_13.3.0-6ubuntu2~24.04.debian.tar.xz 646192 SHA512:217913c9e14a6ee123588a688df164f593db23fb40b29cbcf174aee7841866cfb56624870bb6d1291f62410497c8ed0adcc78dcf9552c54dda1958330f1602c1
 ```
 
 ### `dpkg` source package: `gcc-14=14.2.0-4ubuntu2~24.04`
@@ -2200,9 +2189,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.dsc' gcc-14_14.2.0-4ubuntu2~24.04.dsc 46922 SHA512:95abfd5811a313d7f7571376f927cd956a29d33927b4ffe37f2d795dfa4475e371795b25977373617df61c32f85b87fcf46f2f66a1c67147e82a68db3c5d279f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0.orig.tar.gz' gcc-14_14.2.0.orig.tar.gz 97158172 SHA512:88621e344786a78d825110dbd46a9dc811ab0a3414bde97a700b0c90991020dc31dbba89cdbed24ef2875a63ae9c0adffdbc1064262e5270d80920c9964bfb21
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.debian.tar.xz' gcc-14_14.2.0-4ubuntu2~24.04.debian.tar.xz 1950240 SHA512:2b1894ebcb104b85da3c614e0a6c2e24b1f6c1f548645996d2cb0d274301284f1f4db0809c8355997b05fe64b76a73ee1b9499c7b1c229547bad79fee1954d59
+'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.dsc' gcc-14_14.2.0-4ubuntu2~24.04.dsc 46922 SHA512:95abfd5811a313d7f7571376f927cd956a29d33927b4ffe37f2d795dfa4475e371795b25977373617df61c32f85b87fcf46f2f66a1c67147e82a68db3c5d279f
+'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0.orig.tar.gz' gcc-14_14.2.0.orig.tar.gz 97158172 SHA512:88621e344786a78d825110dbd46a9dc811ab0a3414bde97a700b0c90991020dc31dbba89cdbed24ef2875a63ae9c0adffdbc1064262e5270d80920c9964bfb21
+'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.debian.tar.xz' gcc-14_14.2.0-4ubuntu2~24.04.debian.tar.xz 1950240 SHA512:2b1894ebcb104b85da3c614e0a6c2e24b1f6c1f548645996d2cb0d274301284f1f4db0809c8355997b05fe64b76a73ee1b9499c7b1c229547bad79fee1954d59
 ```
 
 ### `dpkg` source package: `gcc-defaults=1.214ubuntu1`
@@ -2638,15 +2627,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.3-1.1ubuntu3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.4.dsc' gnutls28_3.8.3-1.1ubuntu3.4.dsc 3397 SHA512:f0ba3871d3cf4b1325b0c0efa412146468fbf2fb0007972427cef545c6e84694b647b3a420e34ebfa689ccc3e2cc00166f42f84cb57f46c6d3fe9b9c6462af78
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz' gnutls28_3.8.3.orig.tar.xz 6463720 SHA512:74eddba01ce4c2ffdca781c85db3bb52c85f1db3c09813ee2b8ceea0608f92ca3912fd9266f55deb36a8ba4d01802895ca5d5d219e7d9caec45e1a8534e45a84
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz.asc' gnutls28_3.8.3.orig.tar.xz.asc 854 SHA512:8a13a834b57172b9504313eeb7d733d2c3d72971dd8adaa837bbd9d73b12fe2a67f7d07fbbaf643a34ff95acaa82458a88ce4118152ede8ece9be5a089b693c8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.4.debian.tar.xz' gnutls28_3.8.3-1.1ubuntu3.4.debian.tar.xz 100104 SHA512:aab92b406ef2b833d663f7662fd2ac61cada09251710b44d689c1ff73bbc5b451dce04675893a752392564048b78b19118ce23532d9ce7e726a678d92e7e3d1d
-```
 
 ### `dpkg` source package: `googletest=1.14.0-1`
 
