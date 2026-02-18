@@ -26383,159 +26383,354 @@ $ docker pull sapmachine@sha256:0c4609909560d530b39988d160cbd76e77f1dc0340d90e3e
 
 ## `sapmachine:21.0.10.0.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-alpine-3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-alpine-3.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-alpine-3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-alpine-3.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-headless`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-headless-ubuntu`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-headless-ubuntu-22.04`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-headless-ubuntu-24.04`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-headless-ubuntu-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-headless-ubuntu-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-ubuntu`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-ubuntu-22.04`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-ubuntu-24.04`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-ubuntu-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jdk-ubuntu-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-alpine-3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-alpine-3.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-headless`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-headless-ubuntu`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-headless-ubuntu-22.04`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-headless-ubuntu-24.04`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-headless-ubuntu-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-headless-ubuntu-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-ubuntu`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-ubuntu-22.04`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-ubuntu-24.04`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-ubuntu-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-jre-ubuntu-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-ubuntu`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-ubuntu-22.04`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-ubuntu-24.04`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-ubuntu-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:21.0.10.0.1-ubuntu-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull sapmachine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sapmachine:25`
 
