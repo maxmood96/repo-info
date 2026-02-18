@@ -1,7 +1,7 @@
 ## `clojure:latest`
 
 ```console
-$ docker pull clojure@sha256:179b96964ee81b0a07d634e6c08508e4e5cf3d0603b02910937608c7c7f119ab
+$ docker pull clojure@sha256:4941c8581ddccfd204db7cdb0f524bbb330a17ca757b031d8915062e713e65ed
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -246,7 +246,7 @@ $ docker pull clojure@sha256:3a597b093990894c730e517e2c4a3d131287c3204f87be8ddf5
 ### `clojure:latest` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:c19345b9815e826c918dbfa0a9987d8fc90ad32c8ed2362392bc3c21d89ad02e
+$ docker pull clojure@sha256:3c7c67bd36fdb88626466df25f9020cf97fc19efbb5e6f683696dc8aa9ac53b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -336,24 +336,24 @@ CMD ["-M" "--repl"]
 ### `clojure:latest` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:835688d4bd0ad4121aeef9c45e59805b4176eb643c7b3d3d164240bd2f697741
+$ docker pull clojure@sha256:9e7fc87ee639b8604560be9e2245e4624a1a760d5c4fcdf51f0e9d1e805bfabb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **7.5 MB (7451523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa0db4635929ad775ba273ca31885bd1a183d68d09847a86222194cc97241ea0`
+-	Image ID: `sha256:72857e983ed04aac77864a11144a1ef7e12156d2275ce8d94f6146c5e177cb4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4713847a8ce1c4468dd16644e4850e221955e537cdd0c97c58009960ab2c6906`  
-		Last Modified: Thu, 05 Feb 2026 23:56:56 GMT  
+	-	`sha256:6de541bc2d517381d22e5e098a4786c21911103059a53ca924dd728a474e6a6b`  
+		Last Modified: Tue, 17 Feb 2026 23:26:30 GMT  
 		Size: 7.4 MB (7425874 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:638dc1cc91a0782914422fa5e36d7cb585ef28e77c23a3a0e2274c91938798b8`  
-		Last Modified: Thu, 05 Feb 2026 23:56:55 GMT  
+	-	`sha256:37427ce4cfe2599d751200b91251f1f106a568bb3db6d51a68b15b160560a8a1`  
+		Last Modified: Tue, 17 Feb 2026 23:26:30 GMT  
 		Size: 25.6 KB (25649 bytes)  
 		MIME: application/vnd.in-toto+json
 
