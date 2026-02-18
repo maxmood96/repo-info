@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ab6ce6b18e670b1beab78320a5ced878e76bd402409475aa3c3f8d038e129c97`
-- Created: `2026-02-09T20:02:48.082784212Z`
-- Virtual Size: ~ 516.84 Mb  
+- Image ID: `sha256:6f9e797e875d4db763dac4e81432eea748f0a7a0c7d87aa4cf7bec29241396df`
+- Created: `2026-02-17T18:53:04.193410673Z`
+- Virtual Size: ~ 532.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -309,7 +309,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-https://mirror.fcix.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+http://fedora-mirror-atl.gigsouth.com/pub/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-5.el9_7.1.x86_64`
@@ -406,37 +406,48 @@ $ dnf --quiet download --source --url glib2-2.68.4-18.el9_7.1
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-18.el9_7.1.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-231.el9_7.2.x86_64`
+### `rpm` package: `glibc-2.34-231.el9_7.10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-231.el9_7.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.2.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-231.el9_7.10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.10.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-231.el9_7.2.x86_64`
+### `rpm` package: `glibc-common-2.34-231.el9_7.10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-231.el9_7.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.2.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-231.el9_7.10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.10.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-231.el9_7.2.x86_64`
+### `rpm` package: `glibc-langpack-en-2.34-231.el9_7.10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-231.el9_7.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.2.src.rpm
+$ dnf --quiet download --source --url glibc-langpack-en-2.34-231.el9_7.10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.10.src.rpm
+```
+
+### `rpm` package: `glibc-minimal-langpack-2.34-231.el9_7.10.x86_64`
+
+Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+
+Source:
+
+```console
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-231.el9_7.10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.10.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
@@ -491,7 +502,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-https://mirror.fcix.net/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+http://fedora-mirror-atl.gigsouth.com/pub/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -581,7 +592,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-https://mirror.fcix.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://fedora-mirror-atl.gigsouth.com/pub/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -804,15 +815,15 @@ $ dnf --quiet download --source --url libdb-5.3.28-57.el9_6
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libdb-5.3.28-57.el9_6.src.rpm
 ```
 
-### `rpm` package: `libdnf-0.69.0-16.el9.x86_64`
+### `rpm` package: `libdnf-0.69.0-17.el9_7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libdnf-0.69.0-16.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libdnf-0.69.0-16.el9.src.rpm
+$ dnf --quiet download --source --url libdnf-0.69.0-17.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libdnf-0.69.0-17.el9_7.src.rpm
 ```
 
 ### `rpm` package: `libeconf-0.4.1-4.el9.x86_64`
@@ -1164,7 +1175,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.6.2-1.el9
-https://mirror.fcix.net/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
+http://fedora-mirror-atl.gigsouth.com/pub/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.5-1.el9.x86_64`
@@ -2231,7 +2242,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-https://mirror.fcix.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://fedora-mirror-atl.gigsouth.com/pub/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2242,7 +2253,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-https://mirror.fcix.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://fedora-mirror-atl.gigsouth.com/pub/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
