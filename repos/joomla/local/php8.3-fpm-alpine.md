@@ -1,10 +1,10 @@
-# `joomla:6.0.2-php8.3-fpm-alpine`
+# `joomla:6.0.3-php8.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:188a8b0cbc50a04f2b0af1f51e1c83c066169b23ae2416cac641b10d35e35212`
-- Created: `2026-01-30T02:25:05.982275423Z`
-- Virtual Size: ~ 295.84 Mb  
+- Image ID: `sha256:2314e46d503ab49306e1ad218a7bd626abc3e55381d40435818413c14f63c9f0`
+- Created: `2026-02-17T21:49:16.769325064Z`
+- Virtual Size: ~ 294.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.30.tar.xz.asc`
   - `PHP_SHA256=67f084d36852daab6809561a7c8023d130ca07fc6af8fb040684dd1414934d48`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=6.0.2`
-  - `JOOMLA_SHA512=a79d95d23b3d75b4e72e47e076f7b96f381f9fae7d3b1f402d2f7120fac76dfd17aa6fba386db00d84913f40791f04b89435ca04636437af2ef7a9d78af472db`
+  - `JOOMLA_VERSION=6.0.3`
+  - `JOOMLA_SHA512=2390bd8b741e948d8b5b93b14b16a7aa7d6e60b8d0a18eb678be5ae11b664cfd375def9a8398b979a7fdcbe8eb30b75ae0ef25d95fcbd11a5f435450c8a75608`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -848,16 +848,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.3-r0 description:
+libexpat-2.7.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.3-r0 webpage:
+libexpat-2.7.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.3-r0 installed size:
+libexpat-2.7.4-r0 installed size:
 133 KiB
 
-libexpat-2.7.3-r0 license:
+libexpat-2.7.4-r0 license:
 MIT
 
 ```
@@ -1103,16 +1103,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.1-r0 description:
+libpq-18.2-r0 description:
 PostgreSQL client library
 
-libpq-18.1-r0 webpage:
+libpq-18.2-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.1-r0 installed size:
+libpq-18.2-r0 installed size:
 350 KiB
 
-libpq-18.1-r0 license:
+libpq-18.2-r0 license:
 PostgreSQL
 
 ```
