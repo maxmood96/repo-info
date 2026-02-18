@@ -1,7 +1,7 @@
 ## `swift:rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:195f68cdcddeec6aa1da468f771c9062e670671d53e422d4859cc3606b7878e7
+$ docker pull swift@sha256:06ecb36aa3c011758a5b6849436d41bdcf4b390e4ea81e73e1fe62e942d11d2e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,237 +14,237 @@ $ docker pull swift@sha256:195f68cdcddeec6aa1da468f771c9062e670671d53e422d4859cc
 ### `swift:rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:f67071714428372c5602e9d8db08b4e83dd3d0e3eb4d832f7bfb7db5db12d953
+$ docker pull swift@sha256:bb7e248fb8026a732baf1980869c54d8e638b2f02b2029722eaadcfd2864cbd5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 GB (1227275262 bytes)**  
+-	Total Size: **1.2 GB (1227280411 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c2010cd5aab14d4b35754e4dbc17e638ff8c5a3c6f368008a4d0d5db134d7c9`
+-	Image ID: `sha256:06e22a577d15b194447c5541275be129ad5a0c9904c4c7b663ab9bf8c77d23d0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 04 Feb 2026 20:53:28 GMT
+# Tue, 17 Feb 2026 16:48:05 GMT
 LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
-# Wed, 04 Feb 2026 20:53:28 GMT
+# Tue, 17 Feb 2026 16:48:05 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Wed, 04 Feb 2026 20:53:28 GMT
+# Tue, 17 Feb 2026 16:48:05 GMT
 LABEL com.redhat.component="ubi9-container"       name="ubi9/ubi"       version="9.7"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Wed, 04 Feb 2026 20:53:28 GMT
+# Tue, 17 Feb 2026 16:48:05 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Wed, 04 Feb 2026 20:53:28 GMT
+# Tue, 17 Feb 2026 16:48:05 GMT
 LABEL summary="Provides the latest release of Red Hat Universal Base Image 9."
-# Wed, 04 Feb 2026 20:53:28 GMT
+# Tue, 17 Feb 2026 16:48:05 GMT
 LABEL description="The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 04 Feb 2026 20:53:28 GMT
+# Tue, 17 Feb 2026 16:48:05 GMT
 LABEL io.k8s.description="The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 04 Feb 2026 20:53:28 GMT
+# Tue, 17 Feb 2026 16:48:06 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9"
-# Wed, 04 Feb 2026 20:53:28 GMT
+# Tue, 17 Feb 2026 16:48:06 GMT
 LABEL io.openshift.expose-services=""
-# Wed, 04 Feb 2026 20:53:28 GMT
+# Tue, 17 Feb 2026 16:48:06 GMT
 LABEL io.openshift.tags="base rhel9"
-# Wed, 04 Feb 2026 20:53:28 GMT
+# Tue, 17 Feb 2026 16:48:06 GMT
 ENV container oci
-# Wed, 04 Feb 2026 20:53:30 GMT
-COPY dir:75c1944b605c6238e7537ce1826765270ad772b5de9ff080fca4175e7f223593 in /      
-# Wed, 04 Feb 2026 20:53:30 GMT
+# Tue, 17 Feb 2026 16:48:08 GMT
+COPY dir:044009bcad68a63810df7b2a79a5fbd57bbd048f70aed9c80fca25b3757f2cb8 in /      
+# Tue, 17 Feb 2026 16:48:08 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Wed, 04 Feb 2026 20:53:30 GMT
+# Tue, 17 Feb 2026 16:48:09 GMT
 CMD ["/bin/bash"]
-# Wed, 04 Feb 2026 20:53:30 GMT
+# Tue, 17 Feb 2026 16:48:09 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Wed, 04 Feb 2026 20:53:30 GMT
+# Tue, 17 Feb 2026 16:48:09 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Wed, 04 Feb 2026 20:53:30 GMT
-COPY file:30a4f3ca5fb0c9d9069ad660018f4eb12404d9126db94e97835a50d93631421e in /usr/share/buildinfo/labels.json      
-# Wed, 04 Feb 2026 20:53:30 GMT
-COPY file:30a4f3ca5fb0c9d9069ad660018f4eb12404d9126db94e97835a50d93631421e in /root/buildinfo/labels.json      
-# Wed, 04 Feb 2026 20:53:31 GMT
-LABEL "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="3b3eb7b1f3c89853047f60be9f9f826a76691726" "org.opencontainers.image.revision"="3b3eb7b1f3c89853047f60be9f9f826a76691726" "build-date"="2026-02-04T20:53:07Z" "org.opencontainers.image.created"="2026-02-04T20:53:07Z" "release"="1770238273"org.opencontainers.image.revision=3b3eb7b1f3c89853047f60be9f9f826a76691726,org.opencontainers.image.created=2026-02-04T20:53:07Z
-# Thu, 05 Feb 2026 19:53:22 GMT
+# Tue, 17 Feb 2026 16:48:10 GMT
+COPY file:ab0176372e5af8a8d1c3b049741d0c5e75d527a597b7c8a836b568335bef6b28 in /usr/share/buildinfo/labels.json      
+# Tue, 17 Feb 2026 16:48:10 GMT
+COPY file:ab0176372e5af8a8d1c3b049741d0c5e75d527a597b7c8a836b568335bef6b28 in /root/buildinfo/labels.json      
+# Tue, 17 Feb 2026 16:48:11 GMT
+LABEL "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="8726709260f051bcc33519b9b82af822eb97f840" "org.opencontainers.image.revision"="8726709260f051bcc33519b9b82af822eb97f840" "build-date"="2026-02-17T16:47:43Z" "org.opencontainers.image.created"="2026-02-17T16:47:43Z" "release"="1771346757"org.opencontainers.image.revision=8726709260f051bcc33519b9b82af822eb97f840,org.opencontainers.image.created=2026-02-17T16:47:43Z
+# Wed, 18 Feb 2026 19:23:49 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Thu, 05 Feb 2026 19:53:22 GMT
+# Wed, 18 Feb 2026 19:23:49 GMT
 LABEL description=Docker Container for the Swift programming language
-# Thu, 05 Feb 2026 19:53:22 GMT
+# Wed, 18 Feb 2026 19:23:49 GMT
 RUN yum -y install   git                 gcc-c++             libcurl-devel       libedit-devel       libuuid-devel       libxml2-devel       ncurses-devel       python3-devel       rsync               sqlite-devel        unzip               zip # buildkit
-# Thu, 05 Feb 2026 19:53:22 GMT
+# Wed, 18 Feb 2026 19:23:49 GMT
 ARG SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F
-# Thu, 05 Feb 2026 19:53:22 GMT
+# Wed, 18 Feb 2026 19:23:49 GMT
 ARG SWIFT_PLATFORM=ubi9
-# Thu, 05 Feb 2026 19:53:22 GMT
+# Wed, 18 Feb 2026 19:23:49 GMT
 ARG SWIFT_BRANCH=swift-6.2.3-release
-# Thu, 05 Feb 2026 19:53:22 GMT
+# Wed, 18 Feb 2026 19:23:49 GMT
 ARG SWIFT_VERSION=swift-6.2.3-RELEASE
-# Thu, 05 Feb 2026 19:53:22 GMT
+# Wed, 18 Feb 2026 19:23:49 GMT
 ARG SWIFT_WEBROOT=https://download.swift.org
-# Thu, 05 Feb 2026 19:53:22 GMT
+# Wed, 18 Feb 2026 19:23:49 GMT
 ENV SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.2.3-release SWIFT_VERSION=swift-6.2.3-RELEASE SWIFT_WEBROOT=https://download.swift.org
-# Thu, 05 Feb 2026 19:53:59 GMT
+# Wed, 18 Feb 2026 19:24:26 GMT
 # ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.2.3-release SWIFT_VERSION=swift-6.2.3-RELEASE SWIFT_WEBROOT=https://download.swift.org
 RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH_NAME##*-}" in         'x86_64')             OS_ARCH_SUFFIX='';             ;;         'aarch64')             OS_ARCH_SUFFIX='-aarch64';             ;;         *) echo >&2 "error: unsupported architecture: '$ARCH_NAME'"; exit 1 ;;     esac;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)$OS_ARCH_SUFFIX"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && echo $SWIFT_BIN_URL     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver keyserver.ubuntu.com --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz # buildkit
-# Thu, 05 Feb 2026 19:53:59 GMT
+# Wed, 18 Feb 2026 19:24:26 GMT
 # ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.2.3-release SWIFT_VERSION=swift-6.2.3-RELEASE SWIFT_WEBROOT=https://download.swift.org
 RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:f8fe0499d2ad5092c7d5d5010ab3f3db5ff7670b956d06919f47909300f0ea0d`  
-		Last Modified: Wed, 04 Feb 2026 23:45:02 GMT  
-		Size: 80.0 MB (79983132 bytes)  
+	-	`sha256:56b2ec53eb90753f4259bc1fd55c9b03d2aeb15f32351977d3513cdfc735b78c`  
+		Last Modified: Tue, 17 Feb 2026 18:40:27 GMT  
+		Size: 80.0 MB (79983951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf24adf0e475a6d038ef83cd2c0797a7f74af2bd4b51ec42df2b435dfdd87e42`  
-		Last Modified: Thu, 05 Feb 2026 19:56:00 GMT  
-		Size: 124.7 MB (124733791 bytes)  
+	-	`sha256:3af91f38c840d7fd5074085d0929809c152a346bd5f14d228e00554e18086056`  
+		Last Modified: Wed, 18 Feb 2026 19:26:24 GMT  
+		Size: 124.7 MB (124738121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5fc0e106ef704982969b3e90271f78f768ed1d02b9fc9dcf75437b65cb0a25fc`  
 		Last Modified: Fri, 12 Dec 2025 22:46:46 GMT  
 		Size: 1.0 GB (1022558165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef1e8e535fa56c8dc44ad4852cdea3a299ea7cbb2cde7485faeeb4c2b1fdfb67`  
-		Last Modified: Thu, 05 Feb 2026 19:55:56 GMT  
+	-	`sha256:3280180e29f3d86c703432555084178a6d56a0ffe2428bc3ee0b16787fec1ef0`  
+		Last Modified: Wed, 18 Feb 2026 19:26:21 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:fec23484ddcdb7040207364c1b474c3d5dd818edbca7d5255b9a561d1ca4d15f
+$ docker pull swift@sha256:6fb6d3848056680775619e4683f495e910c4c1865d1b0af78e216730c091fdbc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12999411 bytes)**  
+-	Total Size: **13.0 MB (12999434 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d777166e6e327829aa1c7e0539f9cb5b9a8fa5dcbc51aec989dfe9b2e00ed6e`
+-	Image ID: `sha256:9b0e103d6ce73bc97b91c281c192405ecc27520e945e4bba9c2c730c490f0b87`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5edbc12e6dd8ddffdb19b48f347c2ca2ba61dcdf652e3f50e200e0d4ebfaaf53`  
-		Last Modified: Thu, 05 Feb 2026 19:55:58 GMT  
-		Size: 13.0 MB (12984970 bytes)  
+	-	`sha256:864d9cfc55e6ae9f4bab33fb0d6f2f841d89f1ac287f5e97df5c80f35cfd3f8b`  
+		Last Modified: Wed, 18 Feb 2026 19:26:22 GMT  
+		Size: 13.0 MB (12984992 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:befa7a7b16f8a82627fcf5f0a571bdab70f117383a96d513c015e6df61956e88`  
-		Last Modified: Thu, 05 Feb 2026 19:55:56 GMT  
-		Size: 14.4 KB (14441 bytes)  
+	-	`sha256:0063c0f1b03de32c89ff66e6a6c17ef8b7c57cfb380309925a41412248bf5f56`  
+		Last Modified: Wed, 18 Feb 2026 19:26:21 GMT  
+		Size: 14.4 KB (14442 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:97cdf0101f9691a7e3294735001cd90de97a85492038ead1bd1688db699b2ac7
+$ docker pull swift@sha256:1fe4518d459d5f68ce41910fe339e1e65ad5319c25c0403bdbd54b1f12b5dcda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 GB (1214756093 bytes)**  
+-	Total Size: **1.2 GB (1214758407 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c74c0c60680d4cb41e2bca4efea971ce08e8cacda708acc1abf48b596cafc82f`
+-	Image ID: `sha256:c91335d2fd599a1d326a7c7dfcb3fdac8f5eb92683b3ae8660d3c218e1c47304`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 04 Feb 2026 20:58:10 GMT
+# Tue, 17 Feb 2026 16:49:44 GMT
 LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
-# Wed, 04 Feb 2026 20:58:10 GMT
+# Tue, 17 Feb 2026 16:49:44 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Wed, 04 Feb 2026 20:58:10 GMT
+# Tue, 17 Feb 2026 16:49:44 GMT
 LABEL com.redhat.component="ubi9-container"       name="ubi9/ubi"       version="9.7"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Wed, 04 Feb 2026 20:58:10 GMT
+# Tue, 17 Feb 2026 16:49:44 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Wed, 04 Feb 2026 20:58:10 GMT
+# Tue, 17 Feb 2026 16:49:44 GMT
 LABEL summary="Provides the latest release of Red Hat Universal Base Image 9."
-# Wed, 04 Feb 2026 20:58:10 GMT
+# Tue, 17 Feb 2026 16:49:44 GMT
 LABEL description="The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 04 Feb 2026 20:58:10 GMT
+# Tue, 17 Feb 2026 16:49:44 GMT
 LABEL io.k8s.description="The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 04 Feb 2026 20:58:10 GMT
+# Tue, 17 Feb 2026 16:49:44 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9"
-# Wed, 04 Feb 2026 20:58:10 GMT
+# Tue, 17 Feb 2026 16:49:44 GMT
 LABEL io.openshift.expose-services=""
-# Wed, 04 Feb 2026 20:58:10 GMT
+# Tue, 17 Feb 2026 16:49:45 GMT
 LABEL io.openshift.tags="base rhel9"
-# Wed, 04 Feb 2026 20:58:10 GMT
+# Tue, 17 Feb 2026 16:49:45 GMT
 ENV container oci
-# Wed, 04 Feb 2026 20:58:13 GMT
-COPY dir:0f09dfb13f2b834b6cfb2bb08db90d8dc43705400f2f09211463b92ed8799f8c in /      
-# Wed, 04 Feb 2026 20:58:13 GMT
+# Tue, 17 Feb 2026 16:49:48 GMT
+COPY dir:fe5bb3dc6233e05c0db4d9e9ac24173fdde10a4e3a3f958ab4e4c567c15fe9fb in /      
+# Tue, 17 Feb 2026 16:49:48 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Wed, 04 Feb 2026 20:58:13 GMT
+# Tue, 17 Feb 2026 16:49:48 GMT
 CMD ["/bin/bash"]
-# Wed, 04 Feb 2026 20:58:13 GMT
+# Tue, 17 Feb 2026 16:49:48 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Wed, 04 Feb 2026 20:58:13 GMT
+# Tue, 17 Feb 2026 16:49:48 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Wed, 04 Feb 2026 20:58:14 GMT
-COPY file:614e17d501b94ac27f9d2b6a757c00d12bb1d62a4369afae80cc52173fb02dee in /usr/share/buildinfo/labels.json      
-# Wed, 04 Feb 2026 20:58:14 GMT
-COPY file:614e17d501b94ac27f9d2b6a757c00d12bb1d62a4369afae80cc52173fb02dee in /root/buildinfo/labels.json      
-# Wed, 04 Feb 2026 20:58:14 GMT
-LABEL "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="3b3eb7b1f3c89853047f60be9f9f826a76691726" "org.opencontainers.image.revision"="3b3eb7b1f3c89853047f60be9f9f826a76691726" "build-date"="2026-02-04T20:57:52Z" "org.opencontainers.image.created"="2026-02-04T20:57:52Z" "release"="1770238273"org.opencontainers.image.revision=3b3eb7b1f3c89853047f60be9f9f826a76691726,org.opencontainers.image.created=2026-02-04T20:57:52Z
-# Thu, 05 Feb 2026 19:52:44 GMT
+# Tue, 17 Feb 2026 16:49:48 GMT
+COPY file:08d009316d9d419ba8cfeaa9c1c45c2b75422378e0b92b9f0861e4ba6eb7d7f5 in /usr/share/buildinfo/labels.json      
+# Tue, 17 Feb 2026 16:49:48 GMT
+COPY file:08d009316d9d419ba8cfeaa9c1c45c2b75422378e0b92b9f0861e4ba6eb7d7f5 in /root/buildinfo/labels.json      
+# Tue, 17 Feb 2026 16:49:49 GMT
+LABEL "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="8726709260f051bcc33519b9b82af822eb97f840" "org.opencontainers.image.revision"="8726709260f051bcc33519b9b82af822eb97f840" "build-date"="2026-02-17T16:49:28Z" "org.opencontainers.image.created"="2026-02-17T16:49:28Z" "release"="1771346757"org.opencontainers.image.revision=8726709260f051bcc33519b9b82af822eb97f840,org.opencontainers.image.created=2026-02-17T16:49:28Z
+# Wed, 18 Feb 2026 19:22:09 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Thu, 05 Feb 2026 19:52:44 GMT
+# Wed, 18 Feb 2026 19:22:09 GMT
 LABEL description=Docker Container for the Swift programming language
-# Thu, 05 Feb 2026 19:52:44 GMT
+# Wed, 18 Feb 2026 19:22:09 GMT
 RUN yum -y install   git                 gcc-c++             libcurl-devel       libedit-devel       libuuid-devel       libxml2-devel       ncurses-devel       python3-devel       rsync               sqlite-devel        unzip               zip # buildkit
-# Thu, 05 Feb 2026 19:52:44 GMT
+# Wed, 18 Feb 2026 19:22:09 GMT
 ARG SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F
-# Thu, 05 Feb 2026 19:52:44 GMT
+# Wed, 18 Feb 2026 19:22:09 GMT
 ARG SWIFT_PLATFORM=ubi9
-# Thu, 05 Feb 2026 19:52:44 GMT
+# Wed, 18 Feb 2026 19:22:09 GMT
 ARG SWIFT_BRANCH=swift-6.2.3-release
-# Thu, 05 Feb 2026 19:52:44 GMT
+# Wed, 18 Feb 2026 19:22:09 GMT
 ARG SWIFT_VERSION=swift-6.2.3-RELEASE
-# Thu, 05 Feb 2026 19:52:44 GMT
+# Wed, 18 Feb 2026 19:22:09 GMT
 ARG SWIFT_WEBROOT=https://download.swift.org
-# Thu, 05 Feb 2026 19:52:44 GMT
+# Wed, 18 Feb 2026 19:22:09 GMT
 ENV SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.2.3-release SWIFT_VERSION=swift-6.2.3-RELEASE SWIFT_WEBROOT=https://download.swift.org
-# Thu, 05 Feb 2026 19:53:22 GMT
+# Wed, 18 Feb 2026 19:22:55 GMT
 # ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.2.3-release SWIFT_VERSION=swift-6.2.3-RELEASE SWIFT_WEBROOT=https://download.swift.org
 RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH_NAME##*-}" in         'x86_64')             OS_ARCH_SUFFIX='';             ;;         'aarch64')             OS_ARCH_SUFFIX='-aarch64';             ;;         *) echo >&2 "error: unsupported architecture: '$ARCH_NAME'"; exit 1 ;;     esac;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)$OS_ARCH_SUFFIX"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && echo $SWIFT_BIN_URL     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver keyserver.ubuntu.com --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz # buildkit
-# Thu, 05 Feb 2026 19:53:22 GMT
+# Wed, 18 Feb 2026 19:22:55 GMT
 # ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.2.3-release SWIFT_VERSION=swift-6.2.3-RELEASE SWIFT_WEBROOT=https://download.swift.org
 RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:fcf648cad812fb5b145c9f7807e8d4eca2219f0b868be3727d5486db11e29b5b`  
-		Last Modified: Wed, 04 Feb 2026 21:52:52 GMT  
-		Size: 77.7 MB (77693109 bytes)  
+	-	`sha256:b421874d977add29d57baaaa2863eab6b8bab43f7b364a22264ad51b223156a4`  
+		Last Modified: Tue, 17 Feb 2026 18:40:36 GMT  
+		Size: 77.7 MB (77698505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85f59dd0c00d5313b1bafd25bab76bee05f40f01c640fe1e46590f0cc1bcd3f7`  
-		Last Modified: Thu, 05 Feb 2026 19:55:27 GMT  
-		Size: 118.2 MB (118231306 bytes)  
+	-	`sha256:cd8b2f57b2534d811fbb31404e52978e47371f80b69ac32edeceaa4065c12463`  
+		Last Modified: Wed, 18 Feb 2026 19:24:59 GMT  
+		Size: 118.2 MB (118228223 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:31b167ffd31ed78c1696bf65d2b800745a3fdb21176ef4c8f31317e8023e9c14`  
 		Last Modified: Fri, 12 Dec 2025 22:46:35 GMT  
 		Size: 1.0 GB (1018831504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ba382a04bf44282fd7da01026dc22a6d98b045514ae1b201e67af5310d4be54`  
-		Last Modified: Thu, 05 Feb 2026 19:55:24 GMT  
-		Size: 174.0 B  
+	-	`sha256:881cf9812e12db1e5bc6475f95afcba0d42f81ecad596a0b00f9b0fd8bb5268b`  
+		Last Modified: Wed, 18 Feb 2026 19:24:57 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:5b743595fdd4cc8b2d8a0b6f83861d4c2775994d858bb2b8f8382c6bc7802901
+$ docker pull swift@sha256:4817f7d8892cd03d9cf0ad37586acfa5804d82c55d07a0e7b864f52358b7bbf2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.9 MB (12872767 bytes)**  
+-	Total Size: **12.9 MB (12872787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8368cd63a8ba8001f8477839449f822e4670107bbab0facb05420736980fb3a5`
+-	Image ID: `sha256:27c3f3dbe479c2300cc1dcf78a2e60b57a844c2ab4e496810190b878ddb2533c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0f1a43a6f7a96350436db409a295249672418b2ad3f9a2c27d93a76044ec39df`  
-		Last Modified: Thu, 05 Feb 2026 19:55:25 GMT  
-		Size: 12.9 MB (12858209 bytes)  
+	-	`sha256:1a958fe6a5c0035e3e3a8ff196f776464bec9658867df92cb83defbc9013f4ec`  
+		Last Modified: Wed, 18 Feb 2026 19:24:57 GMT  
+		Size: 12.9 MB (12858229 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:07f77c4c9113cf8fbd3982e5d8ba6e57a9991ae2d56d156ed7cad75a1b1e3687`  
-		Last Modified: Thu, 05 Feb 2026 19:55:24 GMT  
+	-	`sha256:9d8e340fff7eb05f51639988c379c6c3668043bd92eb421013270827e722cd6f`  
+		Last Modified: Wed, 18 Feb 2026 19:24:57 GMT  
 		Size: 14.6 KB (14558 bytes)  
 		MIME: application/vnd.in-toto+json
