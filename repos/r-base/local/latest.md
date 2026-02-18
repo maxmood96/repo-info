@@ -84,11 +84,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris attr=1:2.5.2-3
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.2-3.dsc' attr_2.5.2-3.dsc 2576 SHA256:c2ae3e15db059029030ddf4fdac179d8f90d423f2310a6ef8c745ba28ac18b0a
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.2.orig.tar.xz' attr_2.5.2.orig.tar.xz 334180 SHA256:f2e97b0ab7ce293681ab701915766190d607a1dba7fae8a718138150b700a70b
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.2.orig.tar.xz.asc' attr_2.5.2.orig.tar.xz.asc 833 SHA256:eeac729088d3c6379e91b7596cb3582e46b047c47f0fa3c5c77f9c9e84dc3a4c
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.2-3.debian.tar.xz' attr_2.5.2-3.debian.tar.xz 32260 SHA256:153f98c87575277ea021e24dae36293b7738699174438a2060b47e8312b771e3
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2-3.dsc' attr_2.5.2-3.dsc 2576 SHA256:c2ae3e15db059029030ddf4fdac179d8f90d423f2310a6ef8c745ba28ac18b0a
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2.orig.tar.xz' attr_2.5.2.orig.tar.xz 334180 SHA256:f2e97b0ab7ce293681ab701915766190d607a1dba7fae8a718138150b700a70b
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2.orig.tar.xz.asc' attr_2.5.2.orig.tar.xz.asc 833 SHA256:eeac729088d3c6379e91b7596cb3582e46b047c47f0fa3c5c77f9c9e84dc3a4c
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2-3.debian.tar.xz' attr_2.5.2-3.debian.tar.xz 32260 SHA256:153f98c87575277ea021e24dae36293b7738699174438a2060b47e8312b771e3
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/attr/1:2.5.2-3/ (for browsing the source)
+- https://sources.debian.net/src/attr/1:2.5.2-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/attr/1:2.5.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `audit=1:4.1.2-1`
 
@@ -174,10 +180,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bash=5.3-1
-'http://http.debian.net/debian/pool/main/b/bash/bash_5.3-1.dsc' bash_5.3-1.dsc 2141 SHA256:48fc3b83911ae279877f37efa489d67e91ce2b62ea7ffd81a9770fbec1949021
-'http://http.debian.net/debian/pool/main/b/bash/bash_5.3.orig.tar.xz' bash_5.3.orig.tar.xz 5571836 SHA256:a70de6bb41f5e192534a5a1836b1d7fad9a8d4818a6e1506d70f38441552c17a
-'http://http.debian.net/debian/pool/main/b/bash/bash_5.3-1.debian.tar.xz' bash_5.3-1.debian.tar.xz 88912 SHA256:e011bc46fc8d3c3a0cf2a349bf7c7da9b2d5237384b3c92297ae8e8181e2b612
+'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3-1.dsc' bash_5.3-1.dsc 2141 SHA256:48fc3b83911ae279877f37efa489d67e91ce2b62ea7ffd81a9770fbec1949021
+'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3.orig.tar.xz' bash_5.3.orig.tar.xz 5571836 SHA256:a70de6bb41f5e192534a5a1836b1d7fad9a8d4818a6e1506d70f38441552c17a
+'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3-1.debian.tar.xz' bash_5.3-1.debian.tar.xz 88912 SHA256:e011bc46fc8d3c3a0cf2a349bf7c7da9b2d5237384b3c92297ae8e8181e2b612
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/bash/5.3-1/ (for browsing the source)
+- https://sources.debian.net/src/bash/5.3-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bash/5.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.45.90.20260201-1`
 
@@ -539,9 +551,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris debconf=1.5.91
-'http://http.debian.net/debian/pool/main/d/debconf/debconf_1.5.91.dsc' debconf_1.5.91.dsc 2035 SHA256:1aa3ceaef24ef533cfffe7f9ca750c6325dbaea86a7abca77cb4439ceae930d8
-'http://http.debian.net/debian/pool/main/d/debconf/debconf_1.5.91.tar.xz' debconf_1.5.91.tar.xz 609964 SHA256:18f3f43924ccc870be483d7c5f1a9be59e51ae1da403059d654666b5a175bf15
+'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.91.dsc' debconf_1.5.91.dsc 2035 SHA256:1aa3ceaef24ef533cfffe7f9ca750c6325dbaea86a7abca77cb4439ceae930d8
+'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.91.tar.xz' debconf_1.5.91.tar.xz 609964 SHA256:18f3f43924ccc870be483d7c5f1a9be59e51ae1da403059d654666b5a175bf15
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/debconf/1.5.91/ (for browsing the source)
+- https://sources.debian.net/src/debconf/1.5.91/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debconf/1.5.91/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2025.1`
 
@@ -2733,10 +2751,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openblas=0.3.30+ds-3
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.30%2bds-3.dsc' openblas_0.3.30+ds-3.dsc 4670 SHA256:90fe8597825336678fa037eed6214231dfea3fdcdada6e950dceb248a9016e9b
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.30%2bds.orig.tar.xz' openblas_0.3.30+ds.orig.tar.xz 2230516 SHA256:441ce70583c6d5d18a727b9b20110818f7794cf8209859969d95edc1c5eda30b
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.30%2bds-3.debian.tar.xz' openblas_0.3.30+ds-3.debian.tar.xz 25832 SHA256:9407f9cbfc618636fdb0b47ceae7fb4358a917bf350bc9250f014279293d71ef
+'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.30%2bds-3.dsc' openblas_0.3.30+ds-3.dsc 4670 SHA256:90fe8597825336678fa037eed6214231dfea3fdcdada6e950dceb248a9016e9b
+'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.30%2bds.orig.tar.xz' openblas_0.3.30+ds.orig.tar.xz 2230516 SHA256:441ce70583c6d5d18a727b9b20110818f7794cf8209859969d95edc1c5eda30b
+'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.30%2bds-3.debian.tar.xz' openblas_0.3.30+ds-3.debian.tar.xz 25832 SHA256:9407f9cbfc618636fdb0b47ceae7fb4358a917bf350bc9250f014279293d71ef
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openblas/0.3.30+ds-3/ (for browsing the source)
+- https://sources.debian.net/src/openblas/0.3.30+ds-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openblas/0.3.30+ds-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.6.10+dfsg-1`
 
