@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:01af5b75942147e9c231453701d477b521744bd6d9650e5b94924b33364f36f0`
-- Created: `2026-02-10T19:18:39.868227876Z`
+- Image ID: `sha256:82581d83093da580e906f5863610f5599002892d1ce69511506110103e373750`
+- Created: `2026-02-17T21:24:57.69658637Z`
 - Virtual Size: ~ 648.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1452,11 +1452,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.247-1`
+### `dpkg` source package: `linux=5.10.249-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.247-1`
+- `linux-libc-dev:amd64=5.10.249-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1472,17 +1472,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.247-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.247-1.dsc' linux_5.10.247-1.dsc 209429 SHA256:4decac0295de58278eab28e88c98ecc4df8eeaa320f197a4b3a4211b77a065f5
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.247.orig.tar.xz' linux_5.10.247.orig.tar.xz 122115324 SHA256:dce0db938fd1bd36b619301e2abaee5126420add50d8851a4312e5dad1abc3b1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.247-1.debian.tar.xz' linux_5.10.247-1.debian.tar.xz 1769544 SHA256:90014e16f6627a6b14733d55901580f5be24f99d510d5ece0228b54bcea033c1
+$ apt-get source -qq --print-uris linux=5.10.249-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.249-1.dsc' linux_5.10.249-1.dsc 209429 SHA256:77353ec581c5c9676e2ac45871e6f1175730399d96a9f82b61375d222d2ac696
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.249.orig.tar.xz' linux_5.10.249.orig.tar.xz 122140068 SHA256:5a9bd7c084550883261646b859d1c6c04b2a07dbe9eb3a153800e7eef547f6f4
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.249-1.debian.tar.xz' linux_5.10.249-1.debian.tar.xz 1777276 SHA256:f01ab4b1d529b1596b328c8962431d4069c3c1c83b4667b0261fd3e6cb174d4c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.247-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.247-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.247-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.249-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.249-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.249-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
