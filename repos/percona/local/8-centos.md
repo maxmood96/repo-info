@@ -1,10 +1,10 @@
-# `percona:8.0.44-35-centos`
+# `percona:8.0.45-36-centos`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e0c189462fbf26bfb99294400c920672f585c9081426d503f83d20958424b87f`
-- Created: `2026-02-05T19:49:07.339989552Z`
-- Virtual Size: ~ 1.54 Gb  
+- Image ID: `sha256:95c0c0ff9d215be0f4fb0813dd710a0cf41a8505c166af62fe12e591e5f4a52e`
+- Created: `2026-02-18T19:17:52.284760005Z`
+- Virtual Size: ~ 1.55 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,20 +12,20 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PS_VERSION=8.0.44-35.1`
-  - `MYSQL_SHELL_VERSION=8.0.44-1`
+  - `PS_VERSION=8.0.45-36.1`
+  - `MYSQL_SHELL_VERSION=8.0.45-1`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=8.0.44-35.1.el9`
-  - `FULL_MYSQL_SHELL_VERSION=8.0.44-1.el9`
+  - `FULL_PERCONA_VERSION=8.0.45-36.1.el9`
+  - `FULL_MYSQL_SHELL_VERSION=8.0.45-1.el9`
   - `PS_REPO=testing`
-  - `PS_TELEMETRY_VERSION=8.0.44-35-1`
+  - `PS_TELEMETRY_VERSION=8.0.45-36-1`
   - `CALL_HOME_DOWNLOAD_SHA256=5e84d2f1a5d57f44c46e6a1f16794d649d3de09fe8021f0294bc321c89e51068`
   - `KEY_RPM_DOWNLOAD_SHA256=fcf0eab4f05a1c0de6363ac4b707600a27a9d774e9b491059e59e6921b255a84`
   - `CALL_HOME_VERSION=0.1`
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-02-05T04:57:10Z`
+  - `build-date=2026-02-17T16:42:34Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -39,12 +39,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-02-05T04:57:10Z`
-  - `org.opencontainers.image.revision=21849199b7179dc3074812b8e24698ec609d6a5c`
-  - `release=1770267347`
+  - `org.opencontainers.image.created=2026-02-17T16:42:34Z`
+  - `org.opencontainers.image.revision=0ced2bbee24d5463d4530756a57f8db895246c48`
+  - `release=1771346502`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=21849199b7179dc3074812b8e24698ec609d6a5c`
+  - `vcs-ref=0ced2bbee24d5463d4530756a57f8db895246c48`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -349,37 +349,37 @@ $ dnf --quiet download --source --url glib2-2.68.4-18.el9_7.1
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-18.el9_7.1.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-231.el9_7.2.x86_64`
+### `rpm` package: `glibc-2.34-231.el9_7.10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-231.el9_7.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.2.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-231.el9_7.10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.10.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-231.el9_7.2.x86_64`
+### `rpm` package: `glibc-common-2.34-231.el9_7.10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-231.el9_7.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.2.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-231.el9_7.10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.10.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-231.el9_7.2.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-231.el9_7.10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-231.el9_7.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.2.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-231.el9_7.10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.10.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
@@ -737,15 +737,15 @@ $ dnf --quiet download --source --url libdb-5.3.28-57.el9_6
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libdb-5.3.28-57.el9_6.src.rpm
 ```
 
-### `rpm` package: `libdnf-0.69.0-16.el9.x86_64`
+### `rpm` package: `libdnf-0.69.0-17.el9_7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libdnf-0.69.0-16.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libdnf-0.69.0-16.el9.src.rpm
+$ dnf --quiet download --source --url libdnf-0.69.0-17.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libdnf-0.69.0-17.el9_7.src.rpm
 ```
 
 ### `rpm` package: `libeconf-0.4.1-4.el9.x86_64`
@@ -1474,13 +1474,13 @@ $ dnf --quiet download --source --url pcre2-syntax-10.40-6.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-6.el9.src.rpm
 ```
 
-### `rpm` package: `percona-icu-data-files-8.0.44-35.1.el9.x86_64`
+### `rpm` package: `percona-icu-data-files-8.0.45-36.1.el9.x86_64`
 
-Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+Licenses (from `rpm --query`): Copyright (c) 2000, 2026, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-mysql-shell-8.0.44-1.el9.x86_64`
+### `rpm` package: `percona-mysql-shell-8.0.45-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -1492,37 +1492,37 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-client-8.0.44-35.1.el9.x86_64`
+### `rpm` package: `percona-server-client-8.0.45-36.1.el9.x86_64`
 
-Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `percona-server-devel-8.0.44-35.1.el9.x86_64`
-
-Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+Licenses (from `rpm --query`): Copyright (c) 2000, 2026, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-rocksdb-8.0.44-35.1.el9.x86_64`
+### `rpm` package: `percona-server-devel-8.0.45-36.1.el9.x86_64`
 
-Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `percona-server-server-8.0.44-35.1.el9.x86_64`
-
-Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+Licenses (from `rpm --query`): Copyright (c) 2000, 2026, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-shared-8.0.44-35.1.el9.x86_64`
+### `rpm` package: `percona-server-rocksdb-8.0.45-36.1.el9.x86_64`
 
-Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+Licenses (from `rpm --query`): Copyright (c) 2000, 2026, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-telemetry-agent-1.0.8-1.el9.x86_64`
+### `rpm` package: `percona-server-server-8.0.45-36.1.el9.x86_64`
+
+Licenses (from `rpm --query`): Copyright (c) 2000, 2026, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
+### `rpm` package: `percona-server-shared-8.0.45-36.1.el9.x86_64`
+
+Licenses (from `rpm --query`): Copyright (c) 2000, 2026, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
+### `rpm` package: `percona-telemetry-agent-1.0.9-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3
 
