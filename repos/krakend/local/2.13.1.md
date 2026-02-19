@@ -1,10 +1,10 @@
-# `krakend:2.13.0`
+# `krakend:2.13.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:301673f8f503947025bec62b83125398faf9c3340cff7654bd3c4f60c0fa5f8d`
-- Created: `2026-02-10T18:29:44.987811626Z`
-- Virtual Size: ~ 127.45 Mb  
+- Image ID: `sha256:f5146b8a5c1295d85b80f7a8b715a101150eff34a100301d626f40cd4de8e81f`
+- Created: `2026-02-18T18:36:16.446076311Z`
+- Virtual Size: ~ 127.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
