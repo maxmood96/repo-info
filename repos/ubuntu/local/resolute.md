@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d92a6abc129dcf0ad899cc339da85b29a76fc8cec85cf343e20c446a8c69c9d7`
-- Created: `2026-01-06T16:11:47.855481522Z`
-- Virtual Size: ~ 88.31 Mb  
+- Image ID: `sha256:ec90772179318f186810ff22a3e4e1c5de8a97f4f1d56652c558761220128b2b`
+- Created: `2026-01-21T02:04:55.676161646Z`
+- Virtual Size: ~ 88.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1293,18 +1293,18 @@ $ apt-get source -qq --print-uris ubuntu-keyring=2023.11.28.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2023.11.28.1build1.tar.xz' ubuntu-keyring_2023.11.28.1build1.tar.xz 20300 SHA512:5f6d23d46b4f6d0b0e894ca54509aa4cc6fcd3904ab58ed275111d7a5612b05ddc07664e30e516c5315f73ac28a3d81c23618fcef185cde8599131f5775b64e5
 ```
 
-### `dpkg` source package: `util-linux=2.41.2-4ubuntu1`
+### `dpkg` source package: `util-linux=2.41.2-4ubuntu2`
 
 Binary Packages:
 
-- `bsdutils=1:2.41.2-4ubuntu1`
-- `libblkid1:amd64=2.41.2-4ubuntu1`
-- `libmount1:amd64=2.41.2-4ubuntu1`
-- `libsmartcols1:amd64=2.41.2-4ubuntu1`
-- `libuuid1:amd64=2.41.2-4ubuntu1`
-- `login=1:4.16.0-2+really2.41.2-4ubuntu1`
-- `mount=2.41.2-4ubuntu1`
-- `util-linux=2.41.2-4ubuntu1`
+- `bsdutils=1:2.41.2-4ubuntu2`
+- `libblkid1:amd64=2.41.2-4ubuntu2`
+- `libmount1:amd64=2.41.2-4ubuntu2`
+- `libsmartcols1:amd64=2.41.2-4ubuntu2`
+- `libuuid1:amd64=2.41.2-4ubuntu2`
+- `login=1:4.16.0-2+really2.41.2-4ubuntu2`
+- `mount=2.41.2-4ubuntu2`
+- `util-linux=2.41.2-4ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/login/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
