@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1873db7f1638e5d04cc510ca2dcc79e1ce095db581ed1bbd3034fe1524d2c141`
-- Created: `2026-02-12T21:06:28.63081732Z`
-- Virtual Size: ~ 280.37 Mb  
+- Image ID: `sha256:590fab55fbb714b067d02d23dc8c6f62c9b8d76e317236df03d0f4848060e477`
+- Created: `2026-02-18T23:39:48.360572132Z`
+- Virtual Size: ~ 284.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -123,6 +123,23 @@ GPL-3.0-or-later
 
 ```
 
+### `apk` package: `brotli-libs`
+
+```console
+brotli-libs-1.1.0-r2 description:
+Generic lossless compressor (libraries)
+
+brotli-libs-1.1.0-r2 webpage:
+https://github.com/google/brotli
+
+brotli-libs-1.1.0-r2 installed size:
+913 KiB
+
+brotli-libs-1.1.0-r2 license:
+MIT
+
+```
+
 ### `apk` package: `busybox`
 
 ```console
@@ -154,6 +171,23 @@ busybox-binsh-1.37.0-r20 installed size:
 
 busybox-binsh-1.37.0-r20 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `c-ares`
+
+```console
+c-ares-1.34.6-r0 description:
+Asynchronous DNS/names resolver library
+
+c-ares-1.34.6-r0 webpage:
+https://c-ares.org/
+
+c-ares-1.34.6-r0 installed size:
+233 KiB
+
+c-ares-1.34.6-r0 license:
+MIT
 
 ```
 
@@ -327,6 +361,23 @@ Apache-2.0
 
 ```
 
+### `apk` package: `libcurl`
+
+```console
+libcurl-8.14.1-r2 description:
+The multiprotocol file transfer library
+
+libcurl-8.14.1-r2 webpage:
+https://curl.se/
+
+libcurl-8.14.1-r2 installed size:
+669 KiB
+
+libcurl-8.14.1-r2 license:
+curl
+
+```
+
 ### `apk` package: `libedit`
 
 ```console
@@ -378,6 +429,23 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
+### `apk` package: `libidn2`
+
+```console
+libidn2-2.3.7-r0 description:
+Encode/Decode library for internationalized domain names
+
+libidn2-2.3.7-r0 webpage:
+https://www.gnu.org/software/libidn#libidn2
+
+libidn2-2.3.7-r0 installed size:
+193 KiB
+
+libidn2-2.3.7-r0 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
 ### `apk` package: `libldap`
 
 ```console
@@ -409,6 +477,23 @@ libncursesw-6.5_p20250503-r0 installed size:
 
 libncursesw-6.5_p20250503-r0 license:
 X11
+
+```
+
+### `apk` package: `libpsl`
+
+```console
+libpsl-0.21.5-r3 description:
+C library for the Publix Suffix List
+
+libpsl-0.21.5-r3 webpage:
+https://rockdaboot.github.io/libpsl
+
+libpsl-0.21.5-r3 installed size:
+73 KiB
+
+libpsl-0.21.5-r3 license:
+MIT
 
 ```
 
@@ -460,6 +545,23 @@ libstdc++-14.2.0-r6 installed size:
 
 libstdc++-14.2.0-r6 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libunistring`
+
+```console
+libunistring-1.3-r0 description:
+Library for manipulating Unicode strings and C strings
+
+libunistring-1.3-r0 webpage:
+https://www.gnu.org/software/libunistring/
+
+libunistring-1.3-r0 installed size:
+1857 KiB
+
+libunistring-1.3-r0 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
 
 ```
 
@@ -630,6 +732,23 @@ ncurses-terminfo-base-6.5_p20250503-r0 installed size:
 
 ncurses-terminfo-base-6.5_p20250503-r0 license:
 X11
+
+```
+
+### `apk` package: `nghttp2-libs`
+
+```console
+nghttp2-libs-1.65.0-r0 description:
+HTTP/2 C client, server and proxy (libraries)
+
+nghttp2-libs-1.65.0-r0 webpage:
+https://nghttp2.org
+
+nghttp2-libs-1.65.0-r0 installed size:
+129 KiB
+
+nghttp2-libs-1.65.0-r0 license:
+MIT
 
 ```
 
