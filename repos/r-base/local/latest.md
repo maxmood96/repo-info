@@ -1124,21 +1124,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `MIT OR Unlicense`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.11-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11-3.dsc' gnutls28_3.8.11-3.dsc 3249 SHA256:a6b7c28d4ce47cc81c1d869c06223f73ecd0f5d1416e5b4ca4537aa83ec6c5d0
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11.orig.tar.xz' gnutls28_3.8.11.orig.tar.xz 6939944 SHA256:91bd23c4a86ebc6152e81303d20cf6ceaeb97bc8f84266d0faec6e29f17baa20
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11.orig.tar.xz.asc' gnutls28_3.8.11.orig.tar.xz.asc 833 SHA256:6bcfeee1548a8d2afe8997a4015b3a55422cfdadc14524d14400cb3ad716a81a
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11-3.debian.tar.xz' gnutls28_3.8.11-3.debian.tar.xz 173820 SHA256:4da2d1e5232cf5fa3192c00686afede92d0002d156bae45d33b877e114b0d782
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.11-3/
 
-- https://sources.debian.net/src/gnutls28/3.8.11-3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.11-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.11-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-11`
 
@@ -1258,10 +1250,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris harfbuzz=12.3.2-1
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_12.3.2-1.dsc' harfbuzz_12.3.2-1.dsc 2573 SHA256:4d197956638777bbc00cdccfb897094b1fc788d73035bbf7d27ba9a91b214a7a
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_12.3.2.orig.tar.xz' harfbuzz_12.3.2.orig.tar.xz 19282952 SHA256:6f6db164359a2da5a84ef826615b448b33e6306067ad829d85d5b0bf936f1bb8
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_12.3.2-1.debian.tar.xz' harfbuzz_12.3.2-1.debian.tar.xz 19772 SHA256:c221362644a434f21b06e3775559815152f8a116116b3105d22342fc80c637ff
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.3.2-1.dsc' harfbuzz_12.3.2-1.dsc 2573 SHA256:4d197956638777bbc00cdccfb897094b1fc788d73035bbf7d27ba9a91b214a7a
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.3.2.orig.tar.xz' harfbuzz_12.3.2.orig.tar.xz 19282952 SHA256:6f6db164359a2da5a84ef826615b448b33e6306067ad829d85d5b0bf936f1bb8
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_12.3.2-1.debian.tar.xz' harfbuzz_12.3.2-1.debian.tar.xz 19772 SHA256:c221362644a434f21b06e3775559815152f8a116116b3105d22342fc80c637ff
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/harfbuzz/12.3.2-1/ (for browsing the source)
+- https://sources.debian.net/src/harfbuzz/12.3.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/harfbuzz/12.3.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.25`
 
@@ -1482,20 +1480,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-lattice/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lattice=0.22-7-1
-'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.22-7-1.dsc' lattice_0.22-7-1.dsc 1838 SHA256:65cab033d638165efe6b8998d9d70603f5c8ec7b339bc9b2e6ef99a4c296432d
-'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.22-7.orig.tar.gz' lattice_0.22-7.orig.tar.gz 598622 SHA256:400fa62b95e90410d52a36cee2ddeb025dd49695e55fe3db709fe60886bff9f7
-'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.22-7-1.debian.tar.xz' lattice_0.22-7-1.debian.tar.xz 5400 SHA256:6992ffd8f0603cfafae3983913627cf40ef6a8c8cc4291580aa5eb1598d1db13
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lattice/0.22-7-1/
 
-- https://sources.debian.net/src/lattice/0.22-7-1/ (for browsing the source)
-- https://sources.debian.net/src/lattice/0.22-7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lattice/0.22-7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lerc=4.0.0+ds-5`
 
@@ -1593,10 +1584,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libcap-ng=0.8.5-4
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4.dsc' libcap-ng_0.8.5-4.dsc 1710 SHA256:a5745b7d68a11068ae5beddcc7fbc94cd87dd81cb2d7495e7d48610603be3526
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5.orig.tar.gz' libcap-ng_0.8.5.orig.tar.gz 59265 SHA256:e4be07fdd234f10b866433f224d183626003c65634ed0552b02e654a380244c2
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4.debian.tar.xz' libcap-ng_0.8.5-4.debian.tar.xz 7816 SHA256:f5d4e7f38bdbca87de77317ce95f973883081370ef257019b484e29e3368a20d
+'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4.dsc' libcap-ng_0.8.5-4.dsc 1710 SHA256:a5745b7d68a11068ae5beddcc7fbc94cd87dd81cb2d7495e7d48610603be3526
+'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5.orig.tar.gz' libcap-ng_0.8.5.orig.tar.gz 59265 SHA256:e4be07fdd234f10b866433f224d183626003c65634ed0552b02e654a380244c2
+'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4.debian.tar.xz' libcap-ng_0.8.5-4.debian.tar.xz 7816 SHA256:f5d4e7f38bdbca87de77317ce95f973883081370ef257019b484e29e3368a20d
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libcap-ng/0.8.5-4/ (for browsing the source)
+- https://sources.debian.net/src/libcap-ng/0.8.5-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libcap-ng/0.8.5-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap2=1:2.75-10`
 
@@ -1834,20 +1831,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.54-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.54-1.dsc' libpng1.6_1.6.54-1.dsc 2254 SHA256:dff12a8ad32ced0b8b0c51522806da7c592d41ecb59977239fcdb25d47431890
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.54.orig.tar.gz' libpng1.6_1.6.54.orig.tar.gz 1585700 SHA256:ba7efce137409079989df4667706c339bebfbb10e9f413474718012a13c8cd4c
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.54-1.debian.tar.xz' libpng1.6_1.6.54-1.debian.tar.xz 33516 SHA256:12290f527b91445e7fae947333bbc22b17463cc93c8b7be03dcccf203bfef5a0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.54-1/
 
-- https://sources.debian.net/src/libpng1.6/1.6.54-1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.54-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.54-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -3531,10 +3521,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tar=1.35+dfsg-3.1
-'http://http.debian.net/debian/pool/main/t/tar/tar_1.35%2bdfsg-3.1.dsc' tar_1.35+dfsg-3.1.dsc 2017 SHA256:5bb58d4966d94c99a9f1b182676089ecc05058d62fdb927f5c07539d9cda4077
-'http://http.debian.net/debian/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA256:9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8
-'http://http.debian.net/debian/pool/main/t/tar/tar_1.35%2bdfsg-3.1.debian.tar.xz' tar_1.35+dfsg-3.1.debian.tar.xz 21540 SHA256:0d0278034b82ed84dce04a461879b6e1871e4cb416a0ff04d3d35ff05fc30a53
+'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-3.1.dsc' tar_1.35+dfsg-3.1.dsc 2017 SHA256:5bb58d4966d94c99a9f1b182676089ecc05058d62fdb927f5c07539d9cda4077
+'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA256:9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8
+'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-3.1.debian.tar.xz' tar_1.35+dfsg-3.1.debian.tar.xz 21540 SHA256:0d0278034b82ed84dce04a461879b6e1871e4cb416a0ff04d3d35ff05fc30a53
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tar/1.35+dfsg-3.1/ (for browsing the source)
+- https://sources.debian.net/src/tar/1.35+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tcl8.6=8.6.17+dfsg-1`
 
@@ -3753,20 +3749,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.1.2103-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.2103-1.dsc' vim_9.1.2103-1.dsc 3198 SHA256:2e53cedd594fa746e65ed21582903668d441ec2d6721a0d1985bfb944e157567
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.2103.orig.tar.xz' vim_9.1.2103.orig.tar.xz 12968388 SHA256:ddaa3df9a666f50e30306c7ca7046f00a30e8524166b951f9dc48bb2b27b4de4
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.2103-1.debian.tar.xz' vim_9.1.2103-1.debian.tar.xz 192436 SHA256:c93e8e7b8eec8ccf4ea817434934a9d13a79fe9bf591b69ea530760318007dd4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.1.2103-1/
 
-- https://sources.debian.net/src/vim/2:9.1.2103-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.1.2103-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.1.2103-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
