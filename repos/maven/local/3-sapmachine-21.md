@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c7789e85bb4891f4255b72a9c6534577c0ec27495748e74692c6be88a376ce84`
-- Created: `2026-02-17T22:30:55.221177746Z`
-- Virtual Size: ~ 543.18 Mb  
+- Image ID: `sha256:d3b13537e9cb6a8957570be46c52945a1a5ca02b67b314b1fa4e961627f7d3d8`
+- Created: `2026-02-18T20:11:54.527753654Z`
+- Virtual Size: ~ 543.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -1487,11 +1487,11 @@ $ apt-get source -qq --print-uris libsepol=3.5-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.5-2build1.debian.tar.xz' libsepol_3.5-2build1.debian.tar.xz 27716 SHA512:9b2b126368c5e4f80d80940f7611103745b1da92bec6319f43f64cc3f6a5e13bab25758bad645e973773a4aab74fa3600694061a8368ca2176252320c0d9ebf6
 ```
 
-### `dpkg` source package: `libssh=0.10.6-2ubuntu0.2`
+### `dpkg` source package: `libssh=0.10.6-2ubuntu0.3`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.10.6-2ubuntu0.2`
+- `libssh-4:amd64=0.10.6-2ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 
@@ -1504,11 +1504,11 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libssh=0.10.6-2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.2.dsc' libssh_0.10.6-2ubuntu0.2.dsc 2723 SHA512:0ce4ad1a7c238fa3dca8523f49833309c47aa55535c7d438d0c7d6a985e5346d2071d791c1847cbeea76502ca73276e1235dda81f075fc3e0ce90240656065f0
+$ apt-get source -qq --print-uris libssh=0.10.6-2ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.3.dsc' libssh_0.10.6-2ubuntu0.3.dsc 2857 SHA512:40e7531177144800d6768e181bff13010ad5f2be13cd46886b50552486de8290a93fd853d9154d240d7543de850d890a2aa7a609ce64a67c01ffbe8ca5f5a093
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz' libssh_0.10.6.orig.tar.xz 561036 SHA512:40c62d63c44e882999b71552c237d73fc7364313bd00b15a211a34aeff1b73693da441d2c8d4e40108d00fb7480ec7c5b6d472f9c0784b2359a179632ab0d6c1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz.asc' libssh_0.10.6.orig.tar.xz.asc 833 SHA512:214d7920bebc80a8e6838c64ed06e070709a96fabfb4fff657b55f9588bc0e1612887fe887d23de73ad3540f3bb85288e62eb6a11ccd4bc80afbd44d34ba70d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.2.debian.tar.xz' libssh_0.10.6-2ubuntu0.2.debian.tar.xz 47820 SHA512:92e9d5c401b22570cabac5c80c984b809d8fbcc537b464b7e5ec69eae254046cb56bb1d5029cc7ac11c0e8010f5501bf8495261f1022770eded064e4f6bb637c
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.3.debian.tar.xz' libssh_0.10.6-2ubuntu0.3.debian.tar.xz 56132 SHA512:d67a49e2ebd02bfc96fd424e9a8201eeedaa51279fd4d7264a22cd6b7262908adea1cef61711a9c8b8305872297c9920f1da5101dcbf96b164f6ae13135da99b
 ```
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3ubuntu0.24.04.2`
@@ -2215,11 +2215,11 @@ $ apt-get source -qq --print-uris rtmpdump=2.4+20151223.gitfa8646d.1-2build7
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1-2build7.debian.tar.xz' rtmpdump_2.4+20151223.gitfa8646d.1-2build7.debian.tar.xz 8464 SHA512:812edf4f933ad0f723404192bfbfceca86e58303169a30e3b1f47781b709b91a259621293533d31d7abd16bc522824e2db325426a4ce9a6b428b88d492ae4c6c
 ```
 
-### `dpkg` source package: `sapmachine-21-jdk=21.0.10`
+### `dpkg` source package: `sapmachine-21-jdk=21.0.10.0.1`
 
 Binary Packages:
 
-- `sapmachine-21-jdk=21.0.10`
+- `sapmachine-21-jdk=21.0.10.0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
