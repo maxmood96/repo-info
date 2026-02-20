@@ -134,19 +134,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.15
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.15.dsc' apt_3.1.15.dsc 3095 SHA256:9b1ecc5f1b27af44e6e06c446d22a5a8210e82a8994f9423aed2654a519bab4e
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.15.tar.xz' apt_3.1.15.tar.xz 2467572 SHA256:208d58ff5bf6d9ebb93da0d77d480ef87b4618b0210dc88cb977aadd88d1c1c6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.1.15/
 
-- https://sources.debian.net/src/apt/3.1.15/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.1.15/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.1.15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -2416,21 +2410,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:10.2p1-3
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.2p1-3.dsc' openssh_10.2p1-3.dsc 3654 SHA256:2feb1fd79406e742e8c7d703f85384372b88eb1ac9728e20261f7031092d4f62
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.2p1.orig.tar.gz' openssh_10.2p1.orig.tar.gz 1974519 SHA256:ccc42c0419937959263fa1dbd16dafc18c56b984c03562d2937ce56a60f798b2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.2p1.orig.tar.gz.asc' openssh_10.2p1.orig.tar.gz.asc 833 SHA256:9abf9435ca9d437b896e14bf35c63993f523aea34795d93fc03539f9bf780fd7
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.2p1-3.debian.tar.xz' openssh_10.2p1-3.debian.tar.xz 199212 SHA256:93fae03539ca7a119d4742af6115e1e56953f721a7c6a42f7dd53390d28699aa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:10.2p1-3/
 
-- https://sources.debian.net/src/openssh/1:10.2p1-3/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:10.2p1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:10.2p1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.5.5-1`
 
@@ -3097,20 +3083,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-3.1
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-3.1.dsc' tar_1.35+dfsg-3.1.dsc 2017 SHA256:5bb58d4966d94c99a9f1b182676089ecc05058d62fdb927f5c07539d9cda4077
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA256:9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-3.1.debian.tar.xz' tar_1.35+dfsg-3.1.debian.tar.xz 21540 SHA256:0d0278034b82ed84dce04a461879b6e1871e4cb416a0ff04d3d35ff05fc30a53
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/
 
-- https://sources.debian.net/src/tar/1.35+dfsg-3.1/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.35+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2025c-3`
 

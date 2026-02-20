@@ -1654,21 +1654,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-dane0t64/copyright`, `/usr/sha
 - `MIT OR Unlicense`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.11-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11-3.dsc' gnutls28_3.8.11-3.dsc 3249 SHA256:a6b7c28d4ce47cc81c1d869c06223f73ecd0f5d1416e5b4ca4537aa83ec6c5d0
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11.orig.tar.xz' gnutls28_3.8.11.orig.tar.xz 6939944 SHA256:91bd23c4a86ebc6152e81303d20cf6ceaeb97bc8f84266d0faec6e29f17baa20
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11.orig.tar.xz.asc' gnutls28_3.8.11.orig.tar.xz.asc 833 SHA256:6bcfeee1548a8d2afe8997a4015b3a55422cfdadc14524d14400cb3ad716a81a
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.11-3.debian.tar.xz' gnutls28_3.8.11-3.debian.tar.xz 173820 SHA256:4da2d1e5232cf5fa3192c00686afede92d0002d156bae45d33b877e114b0d782
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.11-3/
 
-- https://sources.debian.net/src/gnutls28/3.8.11-3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.11-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.11-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-11`
 
@@ -2927,20 +2919,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.54-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.54-1.dsc' libpng1.6_1.6.54-1.dsc 2254 SHA256:dff12a8ad32ced0b8b0c51522806da7c592d41ecb59977239fcdb25d47431890
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.54.orig.tar.gz' libpng1.6_1.6.54.orig.tar.gz 1585700 SHA256:ba7efce137409079989df4667706c339bebfbb10e9f413474718012a13c8cd4c
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.54-1.debian.tar.xz' libpng1.6_1.6.54-1.debian.tar.xz 33516 SHA256:12290f527b91445e7fae947333bbc22b17463cc93c8b7be03dcccf203bfef5a0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.54-1/
 
-- https://sources.debian.net/src/libpng1.6/1.6.54-1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.54-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.54-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -4786,20 +4771,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-18=18.1-2
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.1-2.dsc' postgresql-18_18.1-2.dsc 4443 SHA256:efde07cb45d7673e3db9124ea2854f33b36bb4cb9b22607dadbc0312007f8d43
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.1.orig.tar.bz2' postgresql-18_18.1.orig.tar.bz2 22423920 SHA256:ff86675c336c46e98ac991ebb306d1b67621ece1d06787beaade312c2c915d54
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.1-2.debian.tar.xz' postgresql-18_18.1-2.debian.tar.xz 24444 SHA256:429a28f3d3ef2b63ab4c0abd96d7309b617e09ecfce33286a2bd910cbfa4bee3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-18/18.1-2/
 
-- https://sources.debian.net/src/postgresql-18/18.1-2/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-18/18.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-18/18.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-9`
 
@@ -5231,21 +5209,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.5-5
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.5-5.dsc' subversion_1.14.5-5.dsc 4074 SHA256:f2d54ba05c9c15ec1171d71b274d80e1252f40b7a703efa6a5261d4b0a36bfd8
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.5.orig.tar.gz' subversion_1.14.5.orig.tar.gz 11645728 SHA256:cd143fe8fdb1cd506c438eef1c772a2e87e1519e6b0be3fcd54a8c59e9022390
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.5.orig.tar.gz.asc' subversion_1.14.5.orig.tar.gz.asc 2382 SHA256:91384669ad9125c6919b0b2ab0c345e6de3cd0f89affe04ab66dfe9c5e19d673
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.5-5.debian.tar.xz' subversion_1.14.5-5.debian.tar.xz 300656 SHA256:210b6a243cc23af3bf1053f99ccc627ba5b8c6f5bdbbdf7c75a562fb589040eb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.14.5-5/
 
-- https://sources.debian.net/src/subversion/1.14.5-5/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.14.5-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.14.5-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysprof=49.0-5`
 
