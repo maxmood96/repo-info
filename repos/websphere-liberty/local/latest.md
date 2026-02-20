@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca94ebc1707b9cfb048c14cf9728b00d5eca02aa6f9fc60ffaa4b6ff567f9e9c`
-- Created: `2026-01-27T21:20:53.108336594Z`
-- Virtual Size: ~ 844.60 Mb  
+- Image ID: `sha256:6011aa90885ef6f1a64324752dbd9e0a9dacc9bd3863be08ce0952ecc27c4eb3`
+- Created: `2026-02-17T22:11:09.488229821Z`
+- Virtual Size: ~ 843.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -474,12 +474,12 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.2.debian.tar.xz 587544 SHA512:84c4e03cba3f408e752690a34b32fa1e231b501ebd502e4cb4843d74fda287704ff60b8be1d6482297f987fa4ab651a0a605fde27dfdbd364cf7ef2c03e39847
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.11`
+### `dpkg` source package: `glibc=2.35-0ubuntu3.13`
 
 Binary Packages:
 
-- `libc-bin=2.35-0ubuntu3.11`
-- `libc6:amd64=2.35-0ubuntu3.11`
+- `libc-bin=2.35-0ubuntu3.13`
+- `libc6:amd64=2.35-0ubuntu3.13`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -487,9 +487,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.13
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.13.dsc' glibc_2.35-0ubuntu3.13.dsc 8758 SHA512:50389ac5696e2778dc579c9b01193b216380fe2042f361b99bb3868362ad8fea465e8ebde1d2b213211b8fe0618819026b0e1369f71e9d5bf044591508effa59
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.13.debian.tar.xz' glibc_2.35-0ubuntu3.13.debian.tar.xz 943368 SHA512:ace487d154c8039b45e69bf190d0a8e575292f0e4b7bc689ffe99a3b2f0d4272a896114d37f38352d598e5bcbb3b3c2d4d8cf0c0bc20eec532803a5ce6c16446
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -942,11 +948,11 @@ $ apt-get source -qq --print-uris libsepol=3.3-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.3-1build1.debian.tar.xz' libsepol_3.3-1build1.debian.tar.xz 15068 SHA512:adb210e2dab83baa49cee624dc5ae44e9f2dff6eb4a0a7bee4b958e99871580df159d0ca339feca31d9c4cdd92d0022a841c35d615436278046379eeb766f1f2
 ```
 
-### `dpkg` source package: `libtasn1-6=4.18.0-4ubuntu0.1`
+### `dpkg` source package: `libtasn1-6=4.18.0-4ubuntu0.2`
 
 Binary Packages:
 
-- `libtasn1-6:amd64=4.18.0-4ubuntu0.1`
+- `libtasn1-6:amd64=4.18.0-4ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
@@ -955,9 +961,15 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libtasn1-6=4.18.0-4ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0-4ubuntu0.2.dsc' libtasn1-6_4.18.0-4ubuntu0.2.dsc 2777 SHA512:76f8b50124689bee4c365df96a2086d7e281a14f15ba625dd02e688c3d85643e0f55757d11aff290fbc4f1d0a418e0a73ba362833308ce67b7f3313656460d4c
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0.orig.tar.gz' libtasn1-6_4.18.0.orig.tar.gz 1724441 SHA512:4f2f4afc7561fda7a1f1c6c525c3c3b08228a1a4aa8c3d3d5e02e993d8f83ccee1dd0f1b201cec0fbfc97043d4b1d7a95ffd34d65422a38b85b931ac7a015831
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0.orig.tar.gz.asc' libtasn1-6_4.18.0.orig.tar.gz.asc 228 SHA512:8ef3918a3130f695d2d5b26dd945084b931005eff8914c50a0ac9795d4cc6ec9e9645e2941ff4235cba3b4b2987ab1c7da65225e24ce16aaab844352ecdafbf6
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0-4ubuntu0.2.debian.tar.xz' libtasn1-6_4.18.0-4ubuntu0.2.debian.tar.xz 25324 SHA512:81237d28d0490af47955c5d759f283f0ab2dc6d961fe18193daf406b63d4773bddd53914382d4ca061f7a6b2e4fe8dd456be88537ebe0dbe2085874b70b20737
+```
 
 ### `dpkg` source package: `libtirpc=1.3.2-2ubuntu0.1`
 
@@ -1172,30 +1184,14 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3-1build2.debian.tar.xz' nettle_3.7.3-1build2.debian.tar.xz 22100 SHA512:c1935d35e9f04798273053ab92c7405ec225a5d72ba6c2869b0f2bf54b459ac428e113bc149796e91834a8b56082f8bbfbb906a6cd6787142b8932bd1dd83cec
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.20`
-
-Binary Packages:
-
-- `libssl3:amd64=3.0.2-0ubuntu1.20`
-
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
-
-- `Apache-2.0`
-- `Artistic`
-- `GPL-1`
-- `GPL-1+`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.21`
 
 Binary Packages:
 
+- `libssl3:amd64=3.0.2-0ubuntu1.21`
 - `openssl=3.0.2-0ubuntu1.21`
 
-Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
