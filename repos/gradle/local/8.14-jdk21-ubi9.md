@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0224145aea66a89a3288bdd863d6e140066b9d32e7cc4a52dda125d5241e77f1`
-- Created: `2026-02-05T22:43:38.748147647Z`
-- Virtual Size: ~ 756.80 Mb  
+- Image ID: `sha256:05b80b8c3c42f50c0dc318e8efb49ba876ff1277e4ece09deb1858d3879c0cb4`
+- Created: `2026-02-18T20:10:53.807929803Z`
+- Virtual Size: ~ 756.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=8.14.4`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-02-05T04:57:10Z`
+  - `build-date=2026-02-17T16:42:34Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-02-05T04:57:10Z`
-  - `org.opencontainers.image.revision=21849199b7179dc3074812b8e24698ec609d6a5c`
-  - `release=1770267347`
+  - `org.opencontainers.image.created=2026-02-17T16:42:34Z`
+  - `org.opencontainers.image.revision=0ced2bbee24d5463d4530756a57f8db895246c48`
+  - `release=1771346502`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=21849199b7179dc3074812b8e24698ec609d6a5c`
+  - `vcs-ref=0ced2bbee24d5463d4530756a57f8db895246c48`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -519,29 +519,49 @@ $ dnf --quiet download --source --url glib2-2.68.4-18.el9_7.1
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-18.el9_7.1.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-231.el9_7.2.x86_64`
+### `rpm` package: `glibc-2.34-231.el9_7.10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `glibc-common-2.34-231.el9_7.2.x86_64`
+```console
+$ dnf --quiet download --source --url glibc-2.34-231.el9_7.10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.10.src.rpm
+```
 
-Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `glibc-langpack-en-2.34-231.el9_7.2.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `glibc-minimal-langpack-2.34-231.el9_7.2.x86_64`
+### `rpm` package: `glibc-common-2.34-231.el9_7.10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url glibc-common-2.34-231.el9_7.10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.10.src.rpm
+```
+
+### `rpm` package: `glibc-langpack-en-2.34-231.el9_7.10.x86_64`
+
+Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+
+Source:
+
+```console
+$ dnf --quiet download --source --url glibc-langpack-en-2.34-231.el9_7.10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.10.src.rpm
+```
+
+### `rpm` package: `glibc-minimal-langpack-2.34-231.el9_7.10.x86_64`
+
+Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+
+Source:
+
+```console
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-231.el9_7.10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.10.src.rpm
+```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
 
@@ -896,11 +916,16 @@ $ dnf --quiet download --source --url libdb-5.3.28-57.el9_6
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libdb-5.3.28-57.el9_6.src.rpm
 ```
 
-### `rpm` package: `libdnf-0.69.0-16.el9.x86_64`
+### `rpm` package: `libdnf-0.69.0-17.el9_7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libdnf-0.69.0-17.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libdnf-0.69.0-17.el9_7.src.rpm
+```
 
 ### `rpm` package: `libeconf-0.4.1-4.el9.x86_64`
 
