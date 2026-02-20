@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0e71b825ab5bf4b21f792087ba4c659d068b9241e7e6df43f6ae34221e7ba315`
-- Created: `2026-02-17T20:12:43.216255663Z`
-- Virtual Size: ~ 857.66 Mb  
+- Image ID: `sha256:2c8c12f754b92a416f907484e935779f5f778ab7840b980c3937026b337e43e1`
+- Created: `2026-02-20T18:56:35.77523459Z`
+- Virtual Size: ~ 857.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -258,13 +258,13 @@ $ apt-get source -qq --print-uris cdebconf=0.261ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.261ubuntu1.tar.xz' cdebconf_0.261ubuntu1.tar.xz 297016 SHA512:6c2c8e2dccdb923ae6dc6a6b3873e6a56f6bdc4a6298c0576f60cb8d5c63bd06c4b9dac4ada4abd0d672a4e54509ad558fc9d1424a8029568d8d86cb54926390
 ```
 
-### `dpkg` source package: `clickhouse=26.1.2.11`
+### `dpkg` source package: `clickhouse=26.1.3.52`
 
 Binary Packages:
 
-- `clickhouse-client=26.1.2.11`
-- `clickhouse-common-static=26.1.2.11`
-- `clickhouse-server=26.1.2.11`
+- `clickhouse-client=26.1.3.52`
+- `clickhouse-common-static=26.1.3.52`
+- `clickhouse-server=26.1.3.52`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
