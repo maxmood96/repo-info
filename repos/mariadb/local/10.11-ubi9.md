@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6f9e797e875d4db763dac4e81432eea748f0a7a0c7d87aa4cf7bec29241396df`
-- Created: `2026-02-17T18:53:04.193410673Z`
-- Virtual Size: ~ 532.20 Mb  
+- Image ID: `sha256:557982efd2a8ea8c7c5d632484777fe062a014fc0a95f2d176b1a1ce37838699`
+- Created: `2026-02-18T19:21:12.075755177Z`
+- Virtual Size: ~ 516.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=10.11.16`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-02-05T04:57:10Z`
+  - `build-date=2026-02-17T16:42:34Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-02-05T04:57:10Z`
+  - `org.opencontainers.image.created=2026-02-17T16:42:34Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=21849199b7179dc3074812b8e24698ec609d6a5c`
+  - `org.opencontainers.image.revision=0ced2bbee24d5463d4530756a57f8db895246c48`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=21849199b7179dc3074812b8e24698ec609d6a5c`
+  - `vcs-ref=0ced2bbee24d5463d4530756a57f8db895246c48`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=10.11.16`
@@ -425,17 +425,6 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url glibc-common-2.34-231.el9_7.10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.10.src.rpm
-```
-
-### `rpm` package: `glibc-langpack-en-2.34-231.el9_7.10.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
-
-Source:
-
-```console
-$ dnf --quiet download --source --url glibc-langpack-en-2.34-231.el9_7.10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-231.el9_7.10.src.rpm
 ```
 
