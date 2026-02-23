@@ -1,10 +1,10 @@
-# `percona:psmdb-7.0.28`
+# `percona:psmdb-7.0.30`
 
 ## Docker Metadata
 
-- Image ID: `sha256:37233816623d01eea23cf06124b860b35eef88a03214defffbfb351d25c6f4c3`
-- Created: `2026-02-18T19:19:34.071369234Z`
-- Virtual Size: ~ 888.23 Mb  
+- Image ID: `sha256:e913c59a3f301febe8d0cc562ed0625ad8ed47ef7fa5e18ec3413493f0cf2d6d`
+- Created: `2026-02-19T18:46:15.047106311Z`
+- Virtual Size: ~ 888.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PSMDB_VERSION=7.0.28-15`
+  - `PSMDB_VERSION=7.0.30-16`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=7.0.28-15.el9`
+  - `FULL_PERCONA_VERSION=7.0.30-16.el9`
   - `K8S_TOOLS_VERSION=0.5.0`
   - `PSMDB_REPO=release`
   - `CALL_HOME_DOWNLOAD_SHA256=5e84d2f1a5d57f44c46e6a1f16794d649d3de09fe8021f0294bc321c89e51068`
@@ -1395,19 +1395,19 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-mongos-7.0.28-15.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-7.0.30-16.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-server-7.0.28-15.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-server-7.0.30-16.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-tools-7.0.28-15.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-tools-7.0.30-16.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
