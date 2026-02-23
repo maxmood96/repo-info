@@ -1,10 +1,10 @@
-# `rocket.chat:8.0.1`
+# `rocket.chat:8.1.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5851c74103183025ce1d0d959c08aeef5c7b7f388fec292b623652acdc2df4f0`
-- Created: `2026-02-03T03:40:28.411402167Z`
-- Virtual Size: ~ 1.51 Gb  
+- Image ID: `sha256:c0328a4a85a1e94d0a97ad93202d9e05ca63be4be6c379aea62f9a94fc265307`
+- Created: `2026-02-20T19:08:09.254122898Z`
+- Virtual Size: ~ 1.53 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `YARN_VERSION=1.22.22`
   - `DENO_VERSION=1.43.5`
   - `NODE_ENV=production`
-  - `RC_VERSION=8.0.1`
+  - `RC_VERSION=8.1.1`
   - `DEPLOY_METHOD=docker-official`
   - `MONGO_URL=mongodb://db:27017/meteor`
   - `HOME=/tmp`
@@ -1258,11 +1258,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libmd/1.0.4-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libmd/1.0.4-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.39-2+deb12u1`
+### `dpkg` source package: `libpng1.6=1.6.39-2+deb12u3`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.39-2+deb12u1`
+- `libpng16-16:amd64=1.6.39-2+deb12u3`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -1278,17 +1278,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u1.dsc' libpng1.6_1.6.39-2+deb12u1.dsc 2273 SHA256:6b663fc339dbe78547d442c70e82096efee15840ba63681b0073d57a658b7a10
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u1.debian.tar.xz' libpng1.6_1.6.39-2+deb12u1.debian.tar.xz 37092 SHA256:a73d8896e915e623873902ec2f1f51d0aa4c93d8f51c11f56a627cd79336c9ba
+$ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u3
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u3.dsc' libpng1.6_1.6.39-2+deb12u3.dsc 2292 SHA256:4f5e97c47006358f1d749164d899eba56680956ad98ffa21795772612506e70d
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u3.debian.tar.xz' libpng1.6_1.6.39-2+deb12u3.debian.tar.xz 39752 SHA256:92e2c156f9be57eab8bc6cbe8c07ad1fc8323e1945bfa284da8592d749faa962
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.5.4-1+deb12u1`
 
