@@ -1,7 +1,7 @@
 ## `r-base:latest`
 
 ```console
-$ docker pull r-base@sha256:cea411ec12e3c541b470d585436d9181c8ab2c4f82c70c4daad927fe47697f0b
+$ docker pull r-base@sha256:d87597e48514a3a2cb822321b6e755110e2ce2562e4a56340c7b6ba88a87fe09
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,174 +18,174 @@ $ docker pull r-base@sha256:cea411ec12e3c541b470d585436d9181c8ab2c4f82c70c4daad9
 ### `r-base:latest` - linux; amd64
 
 ```console
-$ docker pull r-base@sha256:0f451fb3308a4961b4c0177f9c86850bc4dd5d7d233e6fee3385541301c515f3
+$ docker pull r-base@sha256:fe0a52868f4f0eef7808fd8ea226368c556a6af1357867dec355682e279b716b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **365.8 MB (365841261 bytes)**  
+-	Total Size: **367.4 MB (367407258 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c522375070e91d31658ecf2055e085da378852e009ea29696269e511f34e5449`
+-	Image ID: `sha256:e0cdab98616ac2ca81313d6adb8b38fc3ab89a44e6e3b425e9e6aed981069a4d`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Mon, 02 Feb 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'testing' '@1769990400'
-# Tue, 03 Feb 2026 02:39:24 GMT
+# Mon, 23 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'testing' '@1771804800'
+# Tue, 24 Feb 2026 19:16:47 GMT
 LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>
-# Tue, 03 Feb 2026 02:39:24 GMT
+# Tue, 24 Feb 2026 19:16:47 GMT
 RUN useradd -s /bin/bash -m docker 	&& usermod -a -G staff docker # buildkit
-# Tue, 03 Feb 2026 02:39:33 GMT
+# Tue, 24 Feb 2026 19:16:53 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Feb 2026 02:39:34 GMT
+# Tue, 24 Feb 2026 19:16:54 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8 # buildkit
-# Tue, 03 Feb 2026 02:39:34 GMT
+# Tue, 24 Feb 2026 19:16:54 GMT
 ENV LC_ALL=en_US.UTF-8
-# Tue, 03 Feb 2026 02:39:34 GMT
+# Tue, 24 Feb 2026 19:16:54 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 03 Feb 2026 02:39:34 GMT
+# Tue, 24 Feb 2026 19:16:54 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends # buildkit
-# Tue, 03 Feb 2026 02:39:34 GMT
+# Tue, 24 Feb 2026 19:16:54 GMT
 ENV R_BASE_VERSION=4.5.2
-# Tue, 03 Feb 2026 02:40:16 GMT
+# Tue, 24 Feb 2026 19:17:34 GMT
 RUN apt-get update         && apt-get install -y -t unstable --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-docopt                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& chown root:staff "/usr/local/lib/R/site-library" 	&& chmod g+ws "/usr/local/lib/R/site-library" 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Feb 2026 02:40:16 GMT
+# Tue, 24 Feb 2026 19:17:34 GMT
 CMD ["R"]
 ```
 
 -	Layers:
-	-	`sha256:5195bf09170e6f427c63401408925ebdcc18df14385049cc0921fa4e070abc9b`  
-		Last Modified: Tue, 03 Feb 2026 01:15:55 GMT  
-		Size: 48.7 MB (48655738 bytes)  
+	-	`sha256:34be0fb38bdb10b6efea64895d8af767ee0135f3467c8cbf6b2a7ad809ff66f7`  
+		Last Modified: Tue, 24 Feb 2026 18:43:18 GMT  
+		Size: 48.7 MB (48677181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d9975f51a91bcb0bbfee61eac34ede0cca253f737ba0566723dd7f86ae0f3b2`  
-		Last Modified: Tue, 03 Feb 2026 02:40:56 GMT  
-		Size: 3.3 KB (3314 bytes)  
+	-	`sha256:0d8a3e4d41ac08127f084914f46ca7b89b6fdc3f4135c9a893c0b0804c9aa163`  
+		Last Modified: Tue, 24 Feb 2026 19:18:11 GMT  
+		Size: 3.3 KB (3311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05d0af0dafd2a6a59a3c08d7eaa697841bccb7e519f46352b989882d26c752e8`  
-		Last Modified: Tue, 03 Feb 2026 02:40:57 GMT  
-		Size: 27.0 MB (27048830 bytes)  
+	-	`sha256:66b0817fbd3b27538f04f7ffc54b2a1350d508c9293e2279481d269d0da701aa`  
+		Last Modified: Tue, 24 Feb 2026 19:18:12 GMT  
+		Size: 27.2 MB (27185628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c5e1a149de68203e25b1c5bf1c33411bb24c42f3bfb0cb66f1805e2392ec9a74`  
-		Last Modified: Tue, 03 Feb 2026 02:40:56 GMT  
-		Size: 868.5 KB (868489 bytes)  
+	-	`sha256:9b506feb40b987fc7a1ba5b8dedeb980bbf58e66baf23eb80f0846aae4167f3e`  
+		Last Modified: Tue, 24 Feb 2026 19:18:11 GMT  
+		Size: 868.5 KB (868488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de8c7ab08d5a8df0f02955f8b8bfea31235ce2b138e8c6fe26a83be8b55c8549`  
-		Last Modified: Tue, 03 Feb 2026 02:40:56 GMT  
+	-	`sha256:240aebf5aedd5592967725cf55d004773b1bf6cc7b7c6473161100f2d127e876`  
+		Last Modified: Tue, 24 Feb 2026 19:18:11 GMT  
 		Size: 350.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb8ad8a9d0773b2b4ab448eae44558037e3b2bb1f0f50646ce68aa86b03e7ff1`  
-		Last Modified: Tue, 03 Feb 2026 02:41:03 GMT  
-		Size: 289.3 MB (289264540 bytes)  
+	-	`sha256:1a61a7d01545dd0f7b1e3e042860c5be90d3bc4fe5fa52248d14d25a65be4457`  
+		Last Modified: Tue, 24 Feb 2026 19:18:18 GMT  
+		Size: 290.7 MB (290672300 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `r-base:latest` - unknown; unknown
 
 ```console
-$ docker pull r-base@sha256:286fffee8f22c7456cc5b6ba88105c61b26d35be481434c1514a47d3440afa0b
+$ docker pull r-base@sha256:f5d3bca8b428aadc7a241ad89cb7532fe4f8442b61085ab04c1e4e1deb07ccac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (13039397 bytes)**  
+-	Total Size: **13.0 MB (13043125 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d13b40a7c8c0110d09603c91aa4713701c2d6615fca0e54c1952be6489233f5`
+-	Image ID: `sha256:119a4ae93124f8dbcce21edea1e32a0c9270bb45d20f7824ac8f94e4d895a5c3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:24366fc9dca2cd157b6f9af2caf62806f530b0b0bcc935d6ca0887ba2402a00b`  
-		Last Modified: Tue, 03 Feb 2026 02:40:56 GMT  
-		Size: 13.0 MB (13021299 bytes)  
+	-	`sha256:54422e88fa2a4608ec1623f0d4233cc065175805e518820ec4c9912f2f6d62a4`  
+		Last Modified: Tue, 24 Feb 2026 19:18:12 GMT  
+		Size: 13.0 MB (13025028 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:60cf19584ef7a268b8ed01cfb136f1e1bae337c3cf26ecf86c2a0a07ad43d825`  
-		Last Modified: Tue, 03 Feb 2026 02:40:56 GMT  
-		Size: 18.1 KB (18098 bytes)  
+	-	`sha256:abc36a0c7f5e4155f806aec9580e41ff7f5de515e6d23c3b275d4a5a14ac5226`  
+		Last Modified: Tue, 24 Feb 2026 19:18:11 GMT  
+		Size: 18.1 KB (18097 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `r-base:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull r-base@sha256:5240e2205173265b608f0ea97fefb1fa24784470cce7f6ad914cafb442cfd556
+$ docker pull r-base@sha256:7a3839d56e712718883edda43ad7e0349f82f33c942d1b9efb31450489e4e5a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **349.2 MB (349160928 bytes)**  
+-	Total Size: **350.9 MB (350860814 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7bec0774f9db9c84d389aea7439cbe24b90c5385cae6b5b5575b7ea5b2640ba`
+-	Image ID: `sha256:9929dfcb31a05667cb24e26ec389d17b3d3a07279478eaa23595eb5006a6ed3a`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Mon, 02 Feb 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'testing' '@1769990400'
-# Tue, 03 Feb 2026 02:42:36 GMT
+# Mon, 23 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'testing' '@1771804800'
+# Tue, 24 Feb 2026 19:21:44 GMT
 LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>
-# Tue, 03 Feb 2026 02:42:36 GMT
+# Tue, 24 Feb 2026 19:21:44 GMT
 RUN useradd -s /bin/bash -m docker 	&& usermod -a -G staff docker # buildkit
-# Tue, 03 Feb 2026 02:42:43 GMT
+# Tue, 24 Feb 2026 19:21:51 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Feb 2026 02:42:45 GMT
+# Tue, 24 Feb 2026 19:21:53 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8 # buildkit
-# Tue, 03 Feb 2026 02:42:45 GMT
+# Tue, 24 Feb 2026 19:21:53 GMT
 ENV LC_ALL=en_US.UTF-8
-# Tue, 03 Feb 2026 02:42:45 GMT
+# Tue, 24 Feb 2026 19:21:53 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 03 Feb 2026 02:42:45 GMT
+# Tue, 24 Feb 2026 19:21:53 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends # buildkit
-# Tue, 03 Feb 2026 02:42:45 GMT
+# Tue, 24 Feb 2026 19:21:53 GMT
 ENV R_BASE_VERSION=4.5.2
-# Tue, 03 Feb 2026 02:43:28 GMT
+# Tue, 24 Feb 2026 19:22:35 GMT
 RUN apt-get update         && apt-get install -y -t unstable --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-docopt                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& chown root:staff "/usr/local/lib/R/site-library" 	&& chmod g+ws "/usr/local/lib/R/site-library" 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Feb 2026 02:43:28 GMT
+# Tue, 24 Feb 2026 19:22:35 GMT
 CMD ["R"]
 ```
 
 -	Layers:
-	-	`sha256:123ecc6af9e1da19ff84499fdeec8618c28ddf6a280f4f81cc8a607c8f700da0`  
-		Last Modified: Tue, 03 Feb 2026 01:15:56 GMT  
-		Size: 48.7 MB (48678526 bytes)  
+	-	`sha256:c8a993150206adc8ed6d5444bc6073fe1f1f2401037e10aa375ccb6fbef8932e`  
+		Last Modified: Tue, 24 Feb 2026 18:42:52 GMT  
+		Size: 48.7 MB (48705026 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22439bbe9699f9180e5c19e6d30a9e621397a249406a57c8e8562b3d245d8db5`  
-		Last Modified: Tue, 03 Feb 2026 02:44:05 GMT  
-		Size: 3.3 KB (3316 bytes)  
+	-	`sha256:946399acf8fdbe7d29ab7bc1ad53cda8107dccf9f0e1dda58fa133e2bfc9933d`  
+		Last Modified: Tue, 24 Feb 2026 19:23:12 GMT  
+		Size: 3.3 KB (3311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00429e7e0cff341beff7de80e4bd1b84c5a3f2160ce590c5ef82a3d507cf2a09`  
-		Last Modified: Tue, 03 Feb 2026 02:44:06 GMT  
-		Size: 26.9 MB (26899139 bytes)  
+	-	`sha256:c7d15b773937636fd63bf05eaf9273fff9845dd4b1e1d526e9bb131184998b7a`  
+		Last Modified: Tue, 24 Feb 2026 19:23:12 GMT  
+		Size: 27.0 MB (27038086 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd5410dffc015efac66ad23bf7d38565aa96bf450b4d32e5cfd5b40fd3819d5b`  
-		Last Modified: Tue, 03 Feb 2026 02:44:05 GMT  
-		Size: 868.5 KB (868488 bytes)  
+	-	`sha256:08b676b1954861e4e4a35d6f58dbe78f6ae5297a634632126c6bc922c7649f91`  
+		Last Modified: Tue, 24 Feb 2026 19:23:12 GMT  
+		Size: 868.5 KB (868489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96ea8459cb097f22b1815a8d408e259b99c6293facaa47a4120fde5b9a8d133f`  
-		Last Modified: Tue, 03 Feb 2026 02:44:05 GMT  
-		Size: 351.0 B  
+	-	`sha256:0860fd7b110fe11a960c8321d5ad87a367b7e325526866d047edd167d10f44f8`  
+		Last Modified: Tue, 24 Feb 2026 19:23:12 GMT  
+		Size: 349.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67765b6b94a796db21ca5bf41cd6616eea46e1ed434f4431a9f0da81671cdd8c`  
-		Last Modified: Tue, 03 Feb 2026 02:44:11 GMT  
-		Size: 272.7 MB (272711108 bytes)  
+	-	`sha256:296032745e08c0b390659b295700ca6dacfa37f9ff2c6129394a4a84f99636a5`  
+		Last Modified: Tue, 24 Feb 2026 19:23:18 GMT  
+		Size: 274.2 MB (274245553 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `r-base:latest` - unknown; unknown
 
 ```console
-$ docker pull r-base@sha256:1be9c9a7556a787599cce83b35fb4c759f66333d03876132b80489d1bd596a83
+$ docker pull r-base@sha256:9631e920ae328badad6b6348d3f94f6b6e108fb1b5ea4bf46ce268675d557108
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.1 MB (13148601 bytes)**  
+-	Total Size: **13.1 MB (13149244 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b0aefa50b2e23343aaa602e70ff5d07147b6812a147fb4fb55e723ee746bfda`
+-	Image ID: `sha256:aac7f39c6e87290d628ec040f4b6a2a4340ed0499305ab3697ac3377fb4c39d1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:397e22f41792020ec4e79b283559c835f623dc87852937cf25e3a699e840bf65`  
-		Last Modified: Tue, 03 Feb 2026 02:44:05 GMT  
-		Size: 13.1 MB (13130363 bytes)  
+	-	`sha256:439a891fa0b366299260a2784c364ee47e41396c5674c0a6af7ff9dc61687976`  
+		Last Modified: Tue, 24 Feb 2026 19:23:12 GMT  
+		Size: 13.1 MB (13131006 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:885aec3aa08a8234fe0193b18124ec004282064532429aade5c483e459c0fdb4`  
-		Last Modified: Tue, 03 Feb 2026 02:44:05 GMT  
+	-	`sha256:cd38b4c950a2a744b06ef988c1581c50343dcdbe9f75e55a89549b5a0a436699`  
+		Last Modified: Tue, 24 Feb 2026 19:23:12 GMT  
 		Size: 18.2 KB (18238 bytes)  
 		MIME: application/vnd.in-toto+json
 
