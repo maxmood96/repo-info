@@ -1,10 +1,10 @@
-# `openjdk:27-ea-9-jdk-bookworm`
+# `openjdk:27-ea-10-jdk-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4b5046abc51eb4a53b0556a1c337c44065b47c9252d7414baa41d325384f296a`
-- Created: `2026-02-17T19:32:31.469526723Z`
-- Virtual Size: ~ 795.61 Mb  
+- Image ID: `sha256:913659c195d1f3eae088c7ee3f60283d629c829c4b4f534da8ccbaa614aeb175`
+- Created: `2026-02-21T01:29:49.833196194Z`
+- Virtual Size: ~ 795.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-27/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-27`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=27-ea+9`
+  - `JAVA_VERSION=27-ea+10`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1860,11 +1860,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libnsl/1.3.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libnsl/1.3.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.39-2+deb12u1`
+### `dpkg` source package: `libpng1.6=1.6.39-2+deb12u3`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.39-2+deb12u1`
+- `libpng16-16:amd64=1.6.39-2+deb12u3`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -1880,17 +1880,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u1.dsc' libpng1.6_1.6.39-2+deb12u1.dsc 2273 SHA256:6b663fc339dbe78547d442c70e82096efee15840ba63681b0073d57a658b7a10
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u1.debian.tar.xz' libpng1.6_1.6.39-2+deb12u1.debian.tar.xz 37092 SHA256:a73d8896e915e623873902ec2f1f51d0aa4c93d8f51c11f56a627cd79336c9ba
+$ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u3
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u3.dsc' libpng1.6_1.6.39-2+deb12u3.dsc 2292 SHA256:4f5e97c47006358f1d749164d899eba56680956ad98ffa21795772612506e70d
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u3.debian.tar.xz' libpng1.6_1.6.39-2+deb12u3.debian.tar.xz 39752 SHA256:92e2c156f9be57eab8bc6cbe8c07ad1fc8323e1945bfa284da8592d749faa962
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1`
 
