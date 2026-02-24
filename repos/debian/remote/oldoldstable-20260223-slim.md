@@ -1,4 +1,4 @@
-## `debian:oldoldstable-slim`
+## `debian:oldoldstable-20260223-slim`
 
 ```console
 $ docker pull debian@sha256:45382a2ad0eecdbc81af0fddf502a5e86c71bb05b5d38e2d054a39c13376ab75
@@ -15,7 +15,7 @@ $ docker pull debian@sha256:45382a2ad0eecdbc81af0fddf502a5e86c71bb05b5d38e2d054a
 	-	linux; 386
 	-	unknown; unknown
 
-### `debian:oldoldstable-slim` - linux; amd64
+### `debian:oldoldstable-20260223-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:f94ea144be36cb614eed336ec8f69e02be85edeca8f76943c512539044daff75
@@ -38,7 +38,7 @@ RUN # debian.sh --arch 'amd64' out/ 'oldoldstable' '@1771804800'
 		Size: 30.3 MB (30258382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:oldoldstable-slim` - unknown; unknown
+### `debian:oldoldstable-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:0316a991f4e7bd8ecb17cc4e3dc693fb464257459ab851942bb97a4af6f65b33
@@ -58,7 +58,7 @@ $ docker pull debian@sha256:0316a991f4e7bd8ecb17cc4e3dc693fb464257459ab851942bb9
 		Size: 2.7 MB (2667340 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:oldoldstable-slim` - linux; arm variant v7
+### `debian:oldoldstable-20260223-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:5b8ed4811cf364ad8f41449a220ea9cd2722c52e8695bea91b5cc529671d23bf
@@ -81,7 +81,7 @@ RUN # debian.sh --arch 'armhf' out/ 'oldoldstable' '@1771804800'
 		Size: 25.5 MB (25546149 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:oldoldstable-slim` - unknown; unknown
+### `debian:oldoldstable-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:cf7717cb296c3e3360b53d305efd05d8d811eb2cbee8cff99ed2360d0367c5bf
@@ -101,7 +101,7 @@ $ docker pull debian@sha256:cf7717cb296c3e3360b53d305efd05d8d811eb2cbee8cff99ed2
 		Size: 2.7 MB (2669524 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:oldoldstable-slim` - linux; arm64 variant v8
+### `debian:oldoldstable-20260223-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:b1a38399590741845cecff0657a821db38816ae905ee72a22310b43baef2ff3a
@@ -124,7 +124,7 @@ RUN # debian.sh --arch 'arm64' out/ 'oldoldstable' '@1771804800'
 		Size: 28.7 MB (28744468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:oldoldstable-slim` - unknown; unknown
+### `debian:oldoldstable-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:e12c5b4373c014b9ee1fa89344accfc89974a6a9b69044f7938afe0eb816e238
@@ -144,7 +144,7 @@ $ docker pull debian@sha256:e12c5b4373c014b9ee1fa89344accfc89974a6a9b69044f7938a
 		Size: 2.7 MB (2667536 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:oldoldstable-slim` - linux; 386
+### `debian:oldoldstable-20260223-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:430b32c4756cec5042ec775ad2c295a7e99d745abc60dfcedb553fa63d51b7c7
@@ -167,7 +167,7 @@ RUN # debian.sh --arch 'i386' out/ 'oldoldstable' '@1771804800'
 		Size: 31.2 MB (31191558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:oldoldstable-slim` - unknown; unknown
+### `debian:oldoldstable-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:03961b2f4469841d2c77c2e6b3e7bd20e0e195a785c44ef2738dd1cb5e60334f

@@ -1,4 +1,4 @@
-## `debian:stable-slim`
+## `debian:stable-20260223-slim`
 
 ```console
 $ docker pull debian@sha256:85dfcffff3c1e193877f143d05eaba8ae7f3f95cb0a32e0bc04a448077e1ac69
@@ -23,7 +23,7 @@ $ docker pull debian@sha256:85dfcffff3c1e193877f143d05eaba8ae7f3f95cb0a32e0bc04a
 	-	linux; s390x
 	-	unknown; unknown
 
-### `debian:stable-slim` - linux; amd64
+### `debian:stable-20260223-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:331e25079be1ba066fea798645e250080a263857016f12be094d7257d378865e
@@ -46,7 +46,7 @@ RUN # debian.sh --arch 'amd64' out/ 'stable' '@1771804800'
 		Size: 29.8 MB (29778637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:stable-slim` - unknown; unknown
+### `debian:stable-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:21b5e973bdc46433d7902c6827487c2f334c50a88d1fa9f50a67bf3733d5ed35
@@ -66,7 +66,7 @@ $ docker pull debian@sha256:21b5e973bdc46433d7902c6827487c2f334c50a88d1fa9f50a67
 		Size: 2.0 MB (1976005 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:stable-slim` - linux; arm variant v5
+### `debian:stable-20260223-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:4ed777647d6f11de0de689bfe5e84bd8b4fe4a4241794d05812c05dbb52170f5
@@ -89,7 +89,7 @@ RUN # debian.sh --arch 'armel' out/ 'stable' '@1771804800'
 		Size: 27.9 MB (27947603 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:stable-slim` - unknown; unknown
+### `debian:stable-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:7b94a69e6b2a7294d8a8ea529d7728f6cc7b24ed5d28df98ba9700a691e6a3c9
@@ -109,7 +109,7 @@ $ docker pull debian@sha256:7b94a69e6b2a7294d8a8ea529d7728f6cc7b24ed5d28df98ba97
 		Size: 2.0 MB (1978929 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:stable-slim` - linux; arm variant v7
+### `debian:stable-20260223-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:4f19a7bc43678f81f0b407e45e2be18385826fd810384179144177569fae64a9
@@ -132,7 +132,7 @@ RUN # debian.sh --arch 'armhf' out/ 'stable' '@1771804800'
 		Size: 26.2 MB (26213744 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:stable-slim` - unknown; unknown
+### `debian:stable-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:b7a1fa6983e36e81304b3c20579250e9c981d1c879130f7eef17055c96c241a2
@@ -152,7 +152,7 @@ $ docker pull debian@sha256:b7a1fa6983e36e81304b3c20579250e9c981d1c879130f7eef17
 		Size: 2.0 MB (1977366 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:stable-slim` - linux; arm64 variant v8
+### `debian:stable-20260223-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:4ceb5a24280e23710ab7cc94a788a54967dba3ffa924c1d33fa08f77ce80f442
@@ -175,7 +175,7 @@ RUN # debian.sh --arch 'arm64' out/ 'stable' '@1771804800'
 		Size: 30.1 MB (30140100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:stable-slim` - unknown; unknown
+### `debian:stable-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:e5203d0239f3ced5e7f9cc52dc7439952b725dfb1523bb882fd9e0b03c76c9fc
@@ -195,7 +195,7 @@ $ docker pull debian@sha256:e5203d0239f3ced5e7f9cc52dc7439952b725dfb1523bb882fd9
 		Size: 2.0 MB (1976208 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:stable-slim` - linux; 386
+### `debian:stable-20260223-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:aa12c38095915cd0e99658234057bfb8b8e37c60732f84b7289b2b43cfdab5bc
@@ -218,7 +218,7 @@ RUN # debian.sh --arch 'i386' out/ 'stable' '@1771804800'
 		Size: 31.3 MB (31293916 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:stable-slim` - unknown; unknown
+### `debian:stable-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:b4919a8bce75dbd21a040be9ae92bb2f69eacc0896985b67781a7134724f9d7c
@@ -238,7 +238,7 @@ $ docker pull debian@sha256:b4919a8bce75dbd21a040be9ae92bb2f69eacc0896985b67781a
 		Size: 2.0 MB (1973225 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:stable-slim` - linux; ppc64le
+### `debian:stable-20260223-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:fc1701408dcea2acb7ef2758c5eaf879a70585f6c6ba1c2bb840504ff383523a
@@ -261,7 +261,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'stable' '@1771804800'
 		Size: 33.6 MB (33600214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:stable-slim` - unknown; unknown
+### `debian:stable-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:32361cfeded3b828c4f9e3112aba67043757927f055656da4fb0078023a2a997
@@ -281,7 +281,7 @@ $ docker pull debian@sha256:32361cfeded3b828c4f9e3112aba67043757927f055656da4fb0
 		Size: 2.0 MB (1979488 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:stable-slim` - linux; riscv64
+### `debian:stable-20260223-slim` - linux; riscv64
 
 ```console
 $ docker pull debian@sha256:5cb7601bc934c7a0fdbb119b42399897db4c0a2aa7b621299d3e7124a8f857a5
@@ -304,7 +304,7 @@ RUN # debian.sh --arch 'riscv64' out/ 'stable' '@1771804800'
 		Size: 28.3 MB (28276417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:stable-slim` - unknown; unknown
+### `debian:stable-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:d09c92d35d7da1b6409f370a25617b715e5c49924f1e2a78e0e3de109a28099a
@@ -324,7 +324,7 @@ $ docker pull debian@sha256:d09c92d35d7da1b6409f370a25617b715e5c49924f1e2a78e0e3
 		Size: 2.0 MB (1969891 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:stable-slim` - linux; s390x
+### `debian:stable-20260223-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:bf139f069114054860dc2834165a8832c1859cca9555de5e2acf84070932161d
@@ -347,7 +347,7 @@ RUN # debian.sh --arch 's390x' out/ 'stable' '@1771804800'
 		Size: 29.8 MB (29838180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:stable-slim` - unknown; unknown
+### `debian:stable-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:5c7be1b1e0317fe0589b186df96eb4be85938bd24805155e744f9110156cbd43

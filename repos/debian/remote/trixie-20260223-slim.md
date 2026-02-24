@@ -1,4 +1,4 @@
-## `debian:trixie-slim`
+## `debian:trixie-20260223-slim`
 
 ```console
 $ docker pull debian@sha256:1d3c811171a08a5adaa4a163fbafd96b61b87aa871bbc7aa15431ac275d3d430
@@ -23,7 +23,7 @@ $ docker pull debian@sha256:1d3c811171a08a5adaa4a163fbafd96b61b87aa871bbc7aa1543
 	-	linux; s390x
 	-	unknown; unknown
 
-### `debian:trixie-slim` - linux; amd64
+### `debian:trixie-20260223-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:b29a157cc8540addda9836c23750e389693bf3b6d9a932a55504899e5601a66b
@@ -46,7 +46,7 @@ RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1771804800'
 		Size: 29.8 MB (29778632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:trixie-slim` - unknown; unknown
+### `debian:trixie-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:0a41a38516b2f07ccda257c85ade65b71384c20a7a51b1d5f74752290a05ff20
@@ -66,7 +66,7 @@ $ docker pull debian@sha256:0a41a38516b2f07ccda257c85ade65b71384c20a7a51b1d5f747
 		Size: 2.0 MB (1976005 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:trixie-slim` - linux; arm variant v5
+### `debian:trixie-20260223-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:339fa3adeddf6f75f086b6497b74583c634113ee0c84e68cf470b7d3490dc0db
@@ -89,7 +89,7 @@ RUN # debian.sh --arch 'armel' out/ 'trixie' '@1771804800'
 		Size: 27.9 MB (27947608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:trixie-slim` - unknown; unknown
+### `debian:trixie-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:fd3cd2171a7aebbc649f5bcb4b0a311ec64156e5a908c2b5d70a42a4cfc632bb
@@ -109,7 +109,7 @@ $ docker pull debian@sha256:fd3cd2171a7aebbc649f5bcb4b0a311ec64156e5a908c2b5d70a
 		Size: 2.0 MB (1978929 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:trixie-slim` - linux; arm variant v7
+### `debian:trixie-20260223-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:b8b8eea0d8ffeb076620986c9731526ec84a4977a2f3f1770fc2356e8dbc0177
@@ -132,7 +132,7 @@ RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1771804800'
 		Size: 26.2 MB (26213745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:trixie-slim` - unknown; unknown
+### `debian:trixie-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:75ef0b39dc9d4aa7f1d9f1a2d9f301463c5e16cc305db1151aca7504976abef3
@@ -152,7 +152,7 @@ $ docker pull debian@sha256:75ef0b39dc9d4aa7f1d9f1a2d9f301463c5e16cc305db1151aca
 		Size: 2.0 MB (1977366 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:trixie-slim` - linux; arm64 variant v8
+### `debian:trixie-20260223-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:fe8092b22e202f36de71030f43b52f97ceb79f649d91ed9bdd9d8881a011c1e3
@@ -175,7 +175,7 @@ RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1771804800'
 		Size: 30.1 MB (30140098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:trixie-slim` - unknown; unknown
+### `debian:trixie-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:e536560a428f2d8a4eba3e10dba9edaabbecc23db48ff8737d88bf0798d631db
@@ -195,7 +195,7 @@ $ docker pull debian@sha256:e536560a428f2d8a4eba3e10dba9edaabbecc23db48ff8737d88
 		Size: 2.0 MB (1976208 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:trixie-slim` - linux; 386
+### `debian:trixie-20260223-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:3b688c3b069da7a7c5dba3b7a5ec8e3744e8d03a5ec40e9eba8ca95dfe732fe6
@@ -218,7 +218,7 @@ RUN # debian.sh --arch 'i386' out/ 'trixie' '@1771804800'
 		Size: 31.3 MB (31293918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:trixie-slim` - unknown; unknown
+### `debian:trixie-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:65e0e7048fc88881a7b2621fd56053bc1ab7fe68eef2ca150a8538f2d5b24334
@@ -238,7 +238,7 @@ $ docker pull debian@sha256:65e0e7048fc88881a7b2621fd56053bc1ab7fe68eef2ca150a85
 		Size: 2.0 MB (1973225 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:trixie-slim` - linux; ppc64le
+### `debian:trixie-20260223-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:3c24b57b900db2150608efaa9f3646a8385f0df253bc14db17a09a8b4816d2ca
@@ -261,7 +261,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1771804800'
 		Size: 33.6 MB (33600216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:trixie-slim` - unknown; unknown
+### `debian:trixie-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:ce5f1f546cef6dfe1e7081fff7dae21f58cfa195fe675453e67e1efcd772b7c2
@@ -281,7 +281,7 @@ $ docker pull debian@sha256:ce5f1f546cef6dfe1e7081fff7dae21f58cfa195fe675453e67e
 		Size: 2.0 MB (1979488 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:trixie-slim` - linux; riscv64
+### `debian:trixie-20260223-slim` - linux; riscv64
 
 ```console
 $ docker pull debian@sha256:554b57ed3869f9c453a154f49a086a12bb759671c36e1fbe5c51b8c331e82e7f
@@ -304,7 +304,7 @@ RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1771804800'
 		Size: 28.3 MB (28276417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:trixie-slim` - unknown; unknown
+### `debian:trixie-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:7d648aeae44101343aab6dda8f804a9436cf05855b7e8fb93ad9bbec8aeda572
@@ -324,7 +324,7 @@ $ docker pull debian@sha256:7d648aeae44101343aab6dda8f804a9436cf05855b7e8fb93ad9
 		Size: 2.0 MB (1969891 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:trixie-slim` - linux; s390x
+### `debian:trixie-20260223-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:c8eef745fec300b22b859b4c7a04e7c1610bfc1721b7137adf8689eaa88f8553
@@ -347,7 +347,7 @@ RUN # debian.sh --arch 's390x' out/ 'trixie' '@1771804800'
 		Size: 29.8 MB (29838179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:trixie-slim` - unknown; unknown
+### `debian:trixie-20260223-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:c3211b3611eef8422dc177d6c0d1badf4c7fc717926b1d5a4de188fe693e68a4
