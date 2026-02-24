@@ -2251,20 +2251,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.8.5-4
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4.dsc' libcap-ng_0.8.5-4.dsc 1710 SHA256:a5745b7d68a11068ae5beddcc7fbc94cd87dd81cb2d7495e7d48610603be3526
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5.orig.tar.gz' libcap-ng_0.8.5.orig.tar.gz 59265 SHA256:e4be07fdd234f10b866433f224d183626003c65634ed0552b02e654a380244c2
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4.debian.tar.xz' libcap-ng_0.8.5-4.debian.tar.xz 7816 SHA256:f5d4e7f38bdbca87de77317ce95f973883081370ef257019b484e29e3368a20d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap-ng/0.8.5-4/
 
-- https://sources.debian.net/src/libcap-ng/0.8.5-4/ (for browsing the source)
-- https://sources.debian.net/src/libcap-ng/0.8.5-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap-ng/0.8.5-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap2=1:2.75-10`
 
@@ -4417,21 +4410,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit-dev/copyright`, `/usr/share/d
 - `X11`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.10-1
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.10-1.dsc' p11-kit_0.25.10-1.dsc 2548 SHA256:b190dc31128ae7f53c55adb2c4c6c8cba0acdbf67200709f44aa269211605484
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.10.orig.tar.xz' p11-kit_0.25.10.orig.tar.xz 1053532 SHA256:a62a137a966fb3a9bbfa670b4422161e369ddea216be51425e3be0ab2096e408
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.10.orig.tar.xz.asc' p11-kit_0.25.10.orig.tar.xz.asc 228 SHA256:d18f6b1956bb040455e83774410fcfd23952d0f83f8893bf297b7dc15de7c184
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.10-1.debian.tar.xz' p11-kit_0.25.10-1.debian.tar.xz 24308 SHA256:78846d266dcd6c75fa0bb9d7f6d116aaa472dfb86a017a0ab56c94fac64c917d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.25.10-1/
 
-- https://sources.debian.net/src/p11-kit/0.25.10-1/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.25.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.25.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-5`
 
@@ -5095,21 +5080,13 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.19.2-1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.19.2-1.dsc' shadow_4.19.2-1.dsc 2871 SHA256:b151c21ecb0107b3c381bc103c9aaa300137f4510108f5ed55323ff53842132b
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.19.2.orig.tar.xz' shadow_4.19.2.orig.tar.xz 2339472 SHA256:f4b73a206169e426c13d418947a9b9ebce71117c108136e0846c4b7d88e41120
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.19.2.orig.tar.xz.asc' shadow_4.19.2.orig.tar.xz.asc 488 SHA256:8e359e89931f588348bc03f888d38aff283736ba6c989f3bfc0c4be537e58555
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.19.2-1.debian.tar.xz' shadow_4.19.2-1.debian.tar.xz 166960 SHA256:248ff85a6a39a18921f9f7d2f1d4b8dc1417c37951d187aa5059f72ea4837598
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.19.2-1/
 
-- https://sources.debian.net/src/shadow/1:4.19.2-1/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.19.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.19.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.46.1-9`
 
@@ -5487,20 +5464,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.41.3-3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3-3.dsc' util-linux_2.41.3-3.dsc 5332 SHA256:3f12e1fd7eafe52e8c4765aa1b1b4850f3b0153f7a8a5646210f1cfacc4415d2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3.orig.tar.xz' util-linux_2.41.3.orig.tar.xz 9467224 SHA256:3330d873f0fceb5560b89a7dc14e4f3288bbd880e96903ed9b50ec2b5799e58b
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3-3.debian.tar.xz' util-linux_2.41.3-3.debian.tar.xz 108832 SHA256:b952a76225e9c52782dae94ad21e104452cff1f7b9bcc8dad9dbae6fb9f42c57
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.41.3-3/
 
-- https://sources.debian.net/src/util-linux/2.41.3-3/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.41.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.41.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 

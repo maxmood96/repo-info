@@ -738,14 +738,9 @@ Licenses: (parsed from: `/usr/share/doc/libdjvulibre-dev/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris djvulibre=3.5.28-2ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.28-2ubuntu0.24.04.1.dsc' djvulibre_3.5.28-2ubuntu0.24.04.1.dsc 2506 SHA512:fffad2f15719ca84b398ab422e21c9c4754bb452d31525e6372df98f93815ec5560d9468427a69c9d1475448660fec621411837780079feb0315a6b6800c7e02
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.28.orig.tar.xz' djvulibre_3.5.28.orig.tar.xz 2959024 SHA512:4fdbecd2b7b583ee4211c9cda6638a3a831c883e2552b3c8ad09f69e8734831addc14f590faab8c58d7f9f017b527abccc384f6066e674e341cf43c96db49cb7
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.28-2ubuntu0.24.04.1.debian.tar.xz' djvulibre_3.5.28-2ubuntu0.24.04.1.debian.tar.xz 18304 SHA512:e9fdd8a60bcb9dfe5f8c7df4882578b717604c25d300f5404caef60e0ec97be70f016ec72bf63c1b84a77e5d6e80e5937378335095c4aeb96fd781de559d1dc5
-```
 
 ### `dpkg` source package: `dpkg=1.22.6ubuntu6.5`
 
@@ -3164,9 +3159,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-100.100
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-100.100.dsc' linux_6.8.0-100.100.dsc 9407 SHA512:eb960ed45236c0d3c0b7a80d6d8748ace2742b8c77984593210d48c7658d47ac1a5d823867e44e56631bb10ee3c2d92f3498a231607f6e3ffe1d04dfe568a9c6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-100.100.diff.gz' linux_6.8.0-100.100.diff.gz 7516751 SHA512:78e6b3031067ce61d772e2592c24e2193f7f2bffe15227de77de1b8988c4edd8825c1bfca19de1d403a3ba8d5b026099e1d7907978ea8300a7164055961d5bbf
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-100.100.dsc' linux_6.8.0-100.100.dsc 9407 SHA512:eb960ed45236c0d3c0b7a80d6d8748ace2742b8c77984593210d48c7658d47ac1a5d823867e44e56631bb10ee3c2d92f3498a231607f6e3ffe1d04dfe568a9c6
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-100.100.diff.gz' linux_6.8.0-100.100.diff.gz 7516751 SHA512:78e6b3031067ce61d772e2592c24e2193f7f2bffe15227de77de1b8988c4edd8825c1bfca19de1d403a3ba8d5b026099e1d7907978ea8300a7164055961d5bbf
 ```
 
 ### `dpkg` source package: `lto-disabled-list=47`

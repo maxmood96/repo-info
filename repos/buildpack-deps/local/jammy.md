@@ -689,14 +689,9 @@ Licenses: (parsed from: `/usr/share/doc/libdjvulibre-dev/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris djvulibre=3.5.28-2ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.28-2ubuntu0.22.04.1.dsc' djvulibre_3.5.28-2ubuntu0.22.04.1.dsc 2506 SHA512:cbf886fd821f1256dd985aa21633ae53c8b43ba44fb3e81e13028634209dbdcfab34fd1b9b8b225b64e95f6da4657b9885dcb80751fc89024b9bd304d225c8bf
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.28.orig.tar.xz' djvulibre_3.5.28.orig.tar.xz 2959024 SHA512:4fdbecd2b7b583ee4211c9cda6638a3a831c883e2552b3c8ad09f69e8734831addc14f590faab8c58d7f9f017b527abccc384f6066e674e341cf43c96db49cb7
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.28-2ubuntu0.22.04.1.debian.tar.xz' djvulibre_3.5.28-2ubuntu0.22.04.1.debian.tar.xz 18172 SHA512:a8d3bdac457c78c795ac04a06496079463cefc7995f280cc906c9262fb884462ebf9593969fae013671873a4417e60dbb60fd5e4438eabd8acd6621dca3f1db9
-```
 
 ### `dpkg` source package: `dpkg=1.21.1ubuntu2.6`
 
@@ -2998,9 +2993,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.15.0-170.180
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-170.180.dsc' linux_5.15.0-170.180.dsc 7758 SHA512:0b3a5784471540ad3734e20f799918f2bf998e40efe5e2a9dbc65c4211a042702248395744f4aa0a20fbc5b38180fd6b46191719ab86d271f2868cf9cf2f6b37
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-170.180.diff.gz' linux_5.15.0-170.180.diff.gz 12448231 SHA512:795d3366c6b2b43d67433f972e23eefe3aad08d8b83e853763504bce19b2594d309beced07d3b7c77ac790c23a77586d4167a73f6999b0bc1670f87f238a12db
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-170.180.dsc' linux_5.15.0-170.180.dsc 7758 SHA512:0b3a5784471540ad3734e20f799918f2bf998e40efe5e2a9dbc65c4211a042702248395744f4aa0a20fbc5b38180fd6b46191719ab86d271f2868cf9cf2f6b37
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-170.180.diff.gz' linux_5.15.0-170.180.diff.gz 12448231 SHA512:795d3366c6b2b43d67433f972e23eefe3aad08d8b83e853763504bce19b2594d309beced07d3b7c77ac790c23a77586d4167a73f6999b0bc1670f87f238a12db
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
