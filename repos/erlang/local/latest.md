@@ -1,20 +1,20 @@
-# `erlang:28.3.1.0`
+# `erlang:28.3.2.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8ceeb52b931e6d5905773e66c0092293e5b464b2f20f9036be88873e773d28bd`
-- Created: `2026-02-03T05:17:14.760683359Z`
+- Image ID: `sha256:6cb92b827274fd498d9a05e22e226e97c7c67d25e97c2761176d854c4c46b677`
+- Created: `2026-02-23T21:30:55.2898593Z`
 - Virtual Size: ~ 1.80 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=28.3.1`
+  - `OTP_VERSION=28.3.2`
   - `REBAR3_VERSION=3.26.0`
   - `REBAR_VERSION=2.6.4`
 - Labels:
-  - `org.opencontainers.image.version=28.3.1`
+  - `org.opencontainers.image.version=28.3.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -5517,11 +5517,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libvorbis/1.3.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libvorbis/1.3.7-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libvpx=1.15.0-2.1`
+### `dpkg` source package: `libvpx=1.15.0-2.1+deb13u1`
 
 Binary Packages:
 
-- `libvpx9:amd64=1.15.0-2.1`
+- `libvpx9:amd64=1.15.0-2.1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libvpx9/copyright`)
 
@@ -5532,17 +5532,17 @@ Licenses: (parsed from: `/usr/share/doc/libvpx9/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libvpx=1.15.0-2.1
-'http://deb.debian.org/debian/pool/main/libv/libvpx/libvpx_1.15.0-2.1.dsc' libvpx_1.15.0-2.1.dsc 2388 SHA256:2d41548d2bdb4d0b13428367642c27d7840fdf3a3d7c32c31a88d249e5289d66
-'http://deb.debian.org/debian/pool/main/libv/libvpx/libvpx_1.15.0.orig.tar.xz' libvpx_1.15.0.orig.tar.xz 4394516 SHA256:a6cfd199c5c567cfa4e6d991ec36690d9af801585b5db959c1494b5b15f821a5
-'http://deb.debian.org/debian/pool/main/libv/libvpx/libvpx_1.15.0-2.1.debian.tar.xz' libvpx_1.15.0-2.1.debian.tar.xz 14096 SHA256:269e4f3c22dc9a930fa0bd160f45d10ced3ea21ac01361c707f89e0cb29c83dd
+$ apt-get source -qq --print-uris libvpx=1.15.0-2.1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libv/libvpx/libvpx_1.15.0-2.1%2bdeb13u1.dsc' libvpx_1.15.0-2.1+deb13u1.dsc 2265 SHA256:a882592ba7c6c6cd465348859307faeec5b3ce92751b700c8bf808d25e51181a
+'http://deb.debian.org/debian-security/pool/updates/main/libv/libvpx/libvpx_1.15.0.orig.tar.xz' libvpx_1.15.0.orig.tar.xz 4394516 SHA256:a6cfd199c5c567cfa4e6d991ec36690d9af801585b5db959c1494b5b15f821a5
+'http://deb.debian.org/debian-security/pool/updates/main/libv/libvpx/libvpx_1.15.0-2.1%2bdeb13u1.debian.tar.xz' libvpx_1.15.0-2.1+deb13u1.debian.tar.xz 15256 SHA256:5305c07e08d604e56acf27a7bba32e49133456da83ff2f29eb899b5fa2f89625
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libvpx/1.15.0-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libvpx/1.15.0-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libvpx/1.15.0-2.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libvpx/1.15.0-2.1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libvpx/1.15.0-2.1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libvpx/1.15.0-2.1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwebp=1.5.0-0.1`
 
