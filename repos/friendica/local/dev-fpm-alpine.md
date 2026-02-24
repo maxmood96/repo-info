@@ -1,10 +1,10 @@
-# `friendica:2025.02-dev-fpm-alpine`
+# `friendica:2026.04-dev-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e4de48c9f62aa914221ba27d86aa1675bd017c294b078e84fc604df712cb096c`
-- Created: `2026-01-30T02:24:14.508467007Z`
-- Virtual Size: ~ 155.29 Mb  
+- Image ID: `sha256:8ba5affc2340f6ad5bc29e02872211cebd16319e3486721d6a1229f005fe47a0`
+- Created: `2026-02-23T19:03:53.057183255Z`
+- Virtual Size: ~ 154.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -25,8 +25,7 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
-  - `FRIENDICA_VERSION=2025.02-dev`
-  - `FRIENDICA_ADDONS=2025.02-dev`
+  - `FRIENDICA_VERSION=2026.04-dev`
 
 ## `apk` (`.apk`-based packages)
 
@@ -968,16 +967,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.3-r0 description:
+libexpat-2.7.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.3-r0 webpage:
+libexpat-2.7.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.3-r0 installed size:
+libexpat-2.7.4-r0 installed size:
 133 KiB
 
-libexpat-2.7.3-r0 license:
+libexpat-2.7.4-r0 license:
 MIT
 
 ```
