@@ -1,7 +1,7 @@
 ## `buildpack-deps:bookworm-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:d2b147d392ea36fe62f95d09e5fa6c21ba4ff788cbcdf3f0e212fb56690cd95b
+$ docker pull buildpack-deps@sha256:1af821cd80bb3b0c8fb2e7c87324781fa8abebeb5aae9af2e8b17ba0e344e271
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -321,56 +321,56 @@ $ docker pull buildpack-deps@sha256:04fe9c72d7fa8d2bd1d4f2b2c4e0ee114d0eea8ab54b
 ### `buildpack-deps:bookworm-scm` - linux; mips64le
 
 ```console
-$ docker pull buildpack-deps@sha256:7a32433cd56f1f31eb109dfd82d4c327949c05b22c99c61767451a6ce893c678
+$ docker pull buildpack-deps@sha256:ebdcebfda908cc3ffcb0d46ff6f1405c082f6d7c8569fcd8c88f2b9c3169b3b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.7 MB (135688763 bytes)**  
+-	Total Size: **135.7 MB (135707973 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d08758f28469338dadbdf1ed32baa80fb05f77a65cb4806c65e361066ffe6bc6`
+-	Image ID: `sha256:b43085805e3c00d97b071d6386b93e4aaa932a6949359d136d13df63b9e3cc6b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 02 Feb 2026 00:00:00 GMT
-RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1769990400'
-# Tue, 03 Feb 2026 16:06:48 GMT
+# Mon, 23 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1771804800'
+# Wed, 25 Feb 2026 06:07:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Feb 2026 21:28:40 GMT
+# Wed, 25 Feb 2026 11:29:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
-	-	`sha256:001d31ce76be3df3174382025b0b9e2985ddc96d785143497e14a46cdcdcf951`  
-		Last Modified: Tue, 03 Feb 2026 01:12:32 GMT  
-		Size: 48.8 MB (48763257 bytes)  
+	-	`sha256:6ec71ee94fb878725e70f6a21c20349985b89066361ee1f753b3854cfa2c839a`  
+		Last Modified: Tue, 24 Feb 2026 18:41:37 GMT  
+		Size: 48.8 MB (48782510 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e910e12f1ba466db5d640f799037fd1161885165d6ef1a46de53b55b08cfb02`  
-		Last Modified: Tue, 03 Feb 2026 16:07:24 GMT  
-		Size: 23.6 MB (23615398 bytes)  
+	-	`sha256:6ea2283ea3597dab73b85bc0ebe9635f3297b9d6d4b8ff5df7913003859ba369`  
+		Last Modified: Wed, 25 Feb 2026 06:07:50 GMT  
+		Size: 23.6 MB (23615315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e0ad746711a3754afd4dc1df1be9308a858da3b48f46cc1d318cd1dbf2cb47`  
-		Last Modified: Tue, 03 Feb 2026 21:29:58 GMT  
-		Size: 63.3 MB (63310108 bytes)  
+	-	`sha256:372ec86799dac23af2f0ffbced98ecf9eceeaa5ddf68be3af3cc474182e97448`  
+		Last Modified: Wed, 25 Feb 2026 11:30:27 GMT  
+		Size: 63.3 MB (63310148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:bookworm-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:3311450b458a6185e8fb0e80f3a9e961ca2a9d92737c05b66ae73aaeee4045dc
+$ docker pull buildpack-deps@sha256:a148930c294517d33f059a560ee75528dc73d1a72cc69c8365d1f6d88607d748
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.1 KB (7142 bytes)**  
+-	Total Size: **7.1 KB (7143 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79506d16b61b0e5a7fd99bbf0c88a10b1dad5ddc3d031061cd0fe41e16701066`
+-	Image ID: `sha256:175d650ca4234692b72bec7da03c5b798750a692c4cb825557131e429ba1cd14`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:85dba8d5df2ee0b6d6efba7370d977b78d7810e08c666e5f10492e6b26015328`  
-		Last Modified: Tue, 03 Feb 2026 21:29:52 GMT  
-		Size: 7.1 KB (7142 bytes)  
+	-	`sha256:0a6ec48d7830aa19c5cff28bb4f66d9228b10c91c72d39237456681af21fa89d`  
+		Last Modified: Wed, 25 Feb 2026 11:30:20 GMT  
+		Size: 7.1 KB (7143 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:bookworm-scm` - linux; ppc64le
