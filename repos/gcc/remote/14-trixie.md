@@ -1,7 +1,7 @@
 ## `gcc:14-trixie`
 
 ```console
-$ docker pull gcc@sha256:b363ff35deab3393fa745913eeea7aaef5a2e5049eabdba7713db7fd3e35772e
+$ docker pull gcc@sha256:938e397662e8837b96d8f2e52eefe71e437b6d14fc0b7885ad6ea8ec47a354ce
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -117,285 +117,285 @@ $ docker pull gcc@sha256:359d4fbbdde07c860710c86593d7c7ece49617c21d66119022ecde7
 ### `gcc:14-trixie` - linux; arm variant v5
 
 ```console
-$ docker pull gcc@sha256:28e088556458c5079a38fbce9372a860c9292f530635e79631c67ce59dabc36b
+$ docker pull gcc@sha256:0c4f28d3fd1cd13f8f84f2189fec6d49c34a892278846f00d81636c288a77e18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **474.0 MB (473963286 bytes)**  
+-	Total Size: **474.0 MB (473991559 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40be3f26b8122044c5d7744122775af950810d0a8d75f8d913986ad2f7f564d2`
+-	Image ID: `sha256:7ccb5f1a5e55bc394fe09116c9855c76d04253ded31480f7f60473a4b178a557`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 02 Feb 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1769990400'
-# Tue, 03 Feb 2026 03:26:30 GMT
+# Mon, 23 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1771804800'
+# Tue, 24 Feb 2026 19:56:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 03 Feb 2026 05:17:13 GMT
+# Tue, 24 Feb 2026 21:15:20 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 03 Feb 2026 06:18:04 GMT
+# Tue, 24 Feb 2026 22:18:10 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Tue, 03 Feb 2026 07:16:50 GMT
+# Tue, 24 Feb 2026 23:13:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Feb 2026 08:14:56 GMT
+# Wed, 25 Feb 2026 00:09:42 GMT
 ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Tue, 03 Feb 2026 08:14:56 GMT
+# Wed, 25 Feb 2026 00:09:42 GMT
 ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Tue, 03 Feb 2026 08:14:56 GMT
+# Wed, 25 Feb 2026 00:09:42 GMT
 ENV GCC_VERSION=14.3.0
-# Tue, 03 Feb 2026 08:14:56 GMT
+# Wed, 25 Feb 2026 00:09:42 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 08:14:56 GMT
+# Wed, 25 Feb 2026 00:09:42 GMT
 RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Tue, 03 Feb 2026 08:14:57 GMT
+# Wed, 25 Feb 2026 00:09:42 GMT
 RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
 ```
 
 -	Layers:
-	-	`sha256:ba31dc65cf53cae37b5517f251f4d408e91109de491cbd8816a9f21c33a05203`  
-		Last Modified: Tue, 03 Feb 2026 01:14:09 GMT  
-		Size: 47.5 MB (47453997 bytes)  
+	-	`sha256:6c0530a0840df8a05679f77d095cbed0674c87160dab8f0e65ed5257ed4b0ca9`  
+		Last Modified: Tue, 24 Feb 2026 18:42:14 GMT  
+		Size: 47.5 MB (47454162 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91afe525ee94a6eec8f0285b6d37bd019b53a0d3e972edf130127870dbcc171e`  
-		Last Modified: Tue, 03 Feb 2026 03:26:40 GMT  
-		Size: 24.4 MB (24355517 bytes)  
+	-	`sha256:15cc237884c34f3f7758c4fcaea06d5eb8bbc53d28e124d2e90e646c55a9ccd0`  
+		Last Modified: Tue, 24 Feb 2026 19:56:25 GMT  
+		Size: 24.4 MB (24361479 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:648cbf60fd3bc74c2c5bd50ba637a7b59518c4e57992aeed5e381e96d894fe6e`  
-		Last Modified: Tue, 03 Feb 2026 05:17:31 GMT  
-		Size: 65.3 MB (65318442 bytes)  
+	-	`sha256:667af045e313c4df4ebab8d75985bcd9590a6b8f2ba5798c2335e4044f0dd348`  
+		Last Modified: Tue, 24 Feb 2026 21:15:38 GMT  
+		Size: 65.3 MB (65318351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa81d14f2f4b5520f7fd704ffec92d5671ccc4f12e6d6ac5b8e88424ba2bb47f`  
-		Last Modified: Tue, 03 Feb 2026 06:18:47 GMT  
-		Size: 205.7 MB (205732815 bytes)  
+	-	`sha256:6104518ec1f97effebacccbf9d0438c1fff0bef6004e07b9f85505e98f238aab`  
+		Last Modified: Tue, 24 Feb 2026 22:18:53 GMT  
+		Size: 205.8 MB (205754325 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9768646484320a21fc740f460386c725871736bd0cc4ae0d68768aad14b511ac`  
-		Last Modified: Tue, 03 Feb 2026 08:15:33 GMT  
-		Size: 4.4 MB (4440016 bytes)  
+	-	`sha256:bd81200ad72014bbf050ea234c996a18ec99296d6f7270c7f1aa6d9fb224d79f`  
+		Last Modified: Wed, 25 Feb 2026 00:10:15 GMT  
+		Size: 4.4 MB (4440004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8a6872652e91114c7d6966c21306397c6f4a4d9acdaddb8867487cd605daafa`  
-		Last Modified: Tue, 03 Feb 2026 08:15:36 GMT  
-		Size: 126.7 MB (126650507 bytes)  
+	-	`sha256:ee5a79a9cb37e4fa29d4bd90c9531ee019795a27791811978f69bced0e5d502d`  
+		Last Modified: Wed, 25 Feb 2026 00:10:19 GMT  
+		Size: 126.7 MB (126651266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92c6bfcb1e7e1307e0daa7e24bb0e7511e52f89db9502cbe711dc5d07d89f926`  
-		Last Modified: Tue, 03 Feb 2026 08:15:33 GMT  
-		Size: 10.0 KB (9992 bytes)  
+	-	`sha256:87f74264840d902da8cea06f04261efed0329455b186379b957494b55e27109d`  
+		Last Modified: Wed, 25 Feb 2026 00:10:15 GMT  
+		Size: 10.0 KB (9973 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:835284832b6fb6b7ecaf9c63bec15035d6e38f927f77f400faf5d9577e6a76ac`  
-		Last Modified: Tue, 03 Feb 2026 08:15:33 GMT  
-		Size: 2.0 KB (2000 bytes)  
+	-	`sha256:498f6f47582fded6ef514fba67cd0a3bb07a3c941ff3338df94d28b094bef05a`  
+		Last Modified: Wed, 25 Feb 2026 00:10:15 GMT  
+		Size: 2.0 KB (1999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:927256bfffef62102a6af05e55331a4a8224740ab66a37d3f98330cd9e8b78d5
+$ docker pull gcc@sha256:f94ac5975f267f55a86d3c1d7fb84c04864a5b4d2d5632569e5841acb21a17e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17173718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2e073dede8a8a68e502e1734ed7aae13f38317b00e503002eba41aa2ec6fd10`
+-	Image ID: `sha256:2324a556229a39afd123d0136d5b5d98c1e5d26d0a04327a93b68166619f2494`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b6a2cd2639948325f6f77ffb0e018799077969a7972986f7dfc29113253c6b73`  
-		Last Modified: Tue, 03 Feb 2026 08:15:34 GMT  
+	-	`sha256:34bade07ba21b094671d90215794b6a68fb01808a742ab0a6394cf56e7b37dd5`  
+		Last Modified: Wed, 25 Feb 2026 00:10:16 GMT  
 		Size: 17.1 MB (17143884 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d6579a8b1a83d9a86922eb37c62efd28bdfc4ca15d38d8cb1608fa266c061981`  
-		Last Modified: Tue, 03 Feb 2026 08:15:33 GMT  
+	-	`sha256:a47d9f1c4121e3a96f84cc7b9397ed9b7ed001764f99b56a942c8c0d1be63a70`  
+		Last Modified: Wed, 25 Feb 2026 00:10:15 GMT  
 		Size: 29.8 KB (29834 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14-trixie` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:b42807f4576eb1689a1b21898a31775c531059a3f4dd1986010725bc5ff87a08
+$ docker pull gcc@sha256:3a2a5dbb18fd3d1e9a36b648cad4aaac9e3cac42553ce0c333bf11ff5d3da521
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **447.7 MB (447671393 bytes)**  
+-	Total Size: **447.7 MB (447705306 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4587d57dc458453948b7f7694d6295fb3e68b0aeed5ee9849d896aa5197b1867`
+-	Image ID: `sha256:e45ae9a88042a7996c13beb4be999d30eb17cf5c3f696d080a17bc559d29ca08`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 02 Feb 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1769990400'
-# Tue, 03 Feb 2026 03:32:27 GMT
+# Mon, 23 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1771804800'
+# Tue, 24 Feb 2026 20:04:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 03 Feb 2026 05:01:18 GMT
+# Tue, 24 Feb 2026 21:34:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 03 Feb 2026 05:21:51 GMT
+# Tue, 24 Feb 2026 22:16:46 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Tue, 03 Feb 2026 06:17:17 GMT
+# Wed, 25 Feb 2026 00:53:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Feb 2026 07:15:30 GMT
+# Wed, 25 Feb 2026 01:49:14 GMT
 ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Tue, 03 Feb 2026 07:15:30 GMT
+# Wed, 25 Feb 2026 01:49:14 GMT
 ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Tue, 03 Feb 2026 07:15:30 GMT
+# Wed, 25 Feb 2026 01:49:14 GMT
 ENV GCC_VERSION=14.3.0
-# Tue, 03 Feb 2026 07:15:30 GMT
+# Wed, 25 Feb 2026 01:49:14 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 07:15:30 GMT
+# Wed, 25 Feb 2026 01:49:14 GMT
 RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Tue, 03 Feb 2026 07:15:30 GMT
+# Wed, 25 Feb 2026 01:49:15 GMT
 RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
 ```
 
 -	Layers:
-	-	`sha256:e712004ad7e72ac7b512e7e067d08c1f627b7b81a230302cbad4864b08acbdff`  
-		Last Modified: Tue, 03 Feb 2026 01:14:45 GMT  
-		Size: 45.7 MB (45724966 bytes)  
+	-	`sha256:e7e4c87ce6959403c140ef3f01bab08f94d7dd517c0acf6ae810804957e70b9d`  
+		Last Modified: Tue, 24 Feb 2026 18:42:48 GMT  
+		Size: 45.7 MB (45725086 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db74387350d2cb71494f8cd51684a1223fa4d67c2770958430649aa3d99f0d84`  
-		Last Modified: Tue, 03 Feb 2026 03:32:37 GMT  
-		Size: 23.6 MB (23628323 bytes)  
+	-	`sha256:77120a84626d4a7f2d6bdca75bb942d16ac419ff1bc25fc6e9d95035fe35f65e`  
+		Last Modified: Tue, 24 Feb 2026 20:04:48 GMT  
+		Size: 23.6 MB (23633662 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:27eaf2b8f43157ee85fb0c9ace18005d09181f51842f1543a4a0e4d1072f633e`  
-		Last Modified: Tue, 03 Feb 2026 05:01:35 GMT  
-		Size: 62.7 MB (62713563 bytes)  
+	-	`sha256:c27016c2923c40df4d7f8b1909d8aac2050fedaaac6d29c1a4942dcab0ae038b`  
+		Last Modified: Tue, 24 Feb 2026 21:35:13 GMT  
+		Size: 62.7 MB (62713584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5c5d525e14902ad210e5a6126a0f6db1a0db5f1566825247283b80dd0ba7089`  
-		Last Modified: Tue, 03 Feb 2026 05:22:31 GMT  
-		Size: 193.3 MB (193308109 bytes)  
+	-	`sha256:2bbf4b90de2b937492c4bacf02a3eeb82d2fd107f5038d0f566247a589e7f935`  
+		Last Modified: Tue, 24 Feb 2026 22:17:23 GMT  
+		Size: 193.3 MB (193338870 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4a7a4e838ad867506197ba58230c2d45ca1d03d585dfd17472c4dada2eeea4a`  
-		Last Modified: Tue, 03 Feb 2026 07:16:01 GMT  
-		Size: 4.2 MB (4206771 bytes)  
+	-	`sha256:7e29379733c9328ac9a42d7a5dfde98c1e67f65a140d6684bf392bb6b607d6a2`  
+		Last Modified: Wed, 25 Feb 2026 01:49:53 GMT  
+		Size: 4.2 MB (4206830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72efe5665fb9c2ced5fad9a9e2d5fb734d704cedf2eb6e2df363bb6f8212144b`  
-		Last Modified: Tue, 03 Feb 2026 07:16:03 GMT  
-		Size: 118.1 MB (118077643 bytes)  
+	-	`sha256:1eee55d6ea150e12287753057f0e491965334c0cb390a24a38e979b4e333809a`  
+		Last Modified: Wed, 25 Feb 2026 01:49:56 GMT  
+		Size: 118.1 MB (118075231 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:077454d868b67fccdf73fb573e4b33eba0d9fd2a2bd0820cc3defdd6cb709a9f`  
-		Last Modified: Tue, 03 Feb 2026 07:16:01 GMT  
-		Size: 10.0 KB (10012 bytes)  
+	-	`sha256:229216edcd270a944eed482c47c27d66a68a687f376176921c867a84ba419547`  
+		Last Modified: Wed, 25 Feb 2026 01:49:53 GMT  
+		Size: 10.0 KB (10038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da48f5f5c63546ebc5b6e76342f76e316b905cc23b422c2a6490ad4f58cca824`  
-		Last Modified: Tue, 03 Feb 2026 07:16:01 GMT  
-		Size: 2.0 KB (2006 bytes)  
+	-	`sha256:91e288d3720be4fe87714d2e7b1d32af90d89178ca239aeea4365e8e1b39fb23`  
+		Last Modified: Wed, 25 Feb 2026 01:49:53 GMT  
+		Size: 2.0 KB (2005 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:3420ee08944d566270127e104676ca3f19bb7b2af4b3b752d927767962b9bec3
+$ docker pull gcc@sha256:518d09a4dc370be34e08c7946e85f2ae81e0e2d57788c0a5dce679a31eae6b94
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17179517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7adee220be662a9bc5eefb4714c8cd50fea4d67c11731ce8f80f4630447ba9a`
+-	Image ID: `sha256:43b027c11e2304c1604d720806e4da26f98e89858b591d8ec08d492cf3903ac7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b022536d85f2e497be99d2e4b3daa0c249f37c506460fdba30ca468be390db80`  
-		Last Modified: Tue, 03 Feb 2026 07:16:01 GMT  
+	-	`sha256:52dbf5df45627a60080e97d86c63f7dccd2d2ac4d22260cf8a315be23af6bcf6`  
+		Last Modified: Wed, 25 Feb 2026 01:49:53 GMT  
 		Size: 17.1 MB (17149682 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a87c4d8e1fb80aacf8972ec38022ce5e8403871f3c73a23acfa371da303ce231`  
-		Last Modified: Tue, 03 Feb 2026 07:16:00 GMT  
+	-	`sha256:2c6b4a93598c59429fe83e3e5e34d7df7b830451cad878fe97e08eb28a3be200`  
+		Last Modified: Wed, 25 Feb 2026 01:49:53 GMT  
 		Size: 29.8 KB (29835 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull gcc@sha256:291b9eb29277a687e700bf29bb67e8e9e52dbba42d2c5211ca7c7f35662d0004
+$ docker pull gcc@sha256:993974a4179c8e1e7c50be0296710cb83fd272367a3f77d805c316e93cd9d48e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **521.2 MB (521151752 bytes)**  
+-	Total Size: **521.2 MB (521163518 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:244b6f23b76e4dff75445b6c302b4ee4f237d40425a12b476fbca6421e6433a9`
+-	Image ID: `sha256:90ded35829d842beffee44d7d654b83df0594da0c5c1ec9a091b3b53bece068a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 02 Feb 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1769990400'
-# Tue, 03 Feb 2026 02:46:01 GMT
+# Mon, 23 Feb 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1771804800'
+# Tue, 24 Feb 2026 19:24:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 03 Feb 2026 03:47:12 GMT
+# Tue, 24 Feb 2026 20:14:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 03 Feb 2026 04:22:30 GMT
+# Tue, 24 Feb 2026 21:30:40 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Tue, 03 Feb 2026 05:15:03 GMT
+# Tue, 24 Feb 2026 22:16:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Feb 2026 06:05:10 GMT
+# Tue, 24 Feb 2026 23:05:30 GMT
 ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Tue, 03 Feb 2026 06:05:10 GMT
+# Tue, 24 Feb 2026 23:05:30 GMT
 ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Tue, 03 Feb 2026 06:05:10 GMT
+# Tue, 24 Feb 2026 23:05:30 GMT
 ENV GCC_VERSION=14.3.0
-# Tue, 03 Feb 2026 06:05:10 GMT
+# Tue, 24 Feb 2026 23:05:30 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 03 Feb 2026 06:05:10 GMT
+# Tue, 24 Feb 2026 23:05:30 GMT
 RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Tue, 03 Feb 2026 06:05:10 GMT
+# Tue, 24 Feb 2026 23:05:30 GMT
 RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
 ```
 
 -	Layers:
-	-	`sha256:1bd4defc8c5e5cda3d1685bbe52bfcd79e4448ee97883913300e5d29ca8fdb89`  
-		Last Modified: Tue, 03 Feb 2026 01:15:56 GMT  
-		Size: 49.7 MB (49652017 bytes)  
+	-	`sha256:ac9148dc57ca750b09f3f3da6f16324e1a3b62432b2726734535ec610e1a9232`  
+		Last Modified: Tue, 24 Feb 2026 18:42:56 GMT  
+		Size: 49.7 MB (49652168 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cace8fbd9245d4cb1b11d410baa101c40f315e70bee7d3ba014bb966a4da4517`  
-		Last Modified: Tue, 03 Feb 2026 02:46:11 GMT  
-		Size: 25.0 MB (25022688 bytes)  
+	-	`sha256:95da832d1713c4ed161275cd40c4161680fbdd97c6faf23e71654d26bb2e58d6`  
+		Last Modified: Tue, 24 Feb 2026 19:25:09 GMT  
+		Size: 25.0 MB (25023493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc8128ce97ccffb1094b6eafc78b5827499d0496944f3d357e222bfc29f01968`  
-		Last Modified: Tue, 03 Feb 2026 03:47:30 GMT  
-		Size: 67.6 MB (67593005 bytes)  
+	-	`sha256:f0c46eec5989abc098640d80ee9b97658d4487864f3268219dadc63c0a047866`  
+		Last Modified: Tue, 24 Feb 2026 20:15:09 GMT  
+		Size: 67.6 MB (67585551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:642b703f20ff3b5542fbad2e6a1427564db5472e2cdb9317bae6a64ac490e2e2`  
-		Last Modified: Tue, 03 Feb 2026 04:23:14 GMT  
-		Size: 226.1 MB (226145665 bytes)  
+	-	`sha256:201c8c69ba46d9fc7a70eadebc93f11cafc4cb32146aeb3e3cb9076d26ba5ded`  
+		Last Modified: Tue, 24 Feb 2026 21:31:25 GMT  
+		Size: 226.2 MB (226163828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a50ee50dca4dac61f29d87e10ef676a76093262002892da64699b37e1b999171`  
-		Last Modified: Tue, 03 Feb 2026 06:05:58 GMT  
-		Size: 4.5 MB (4498451 bytes)  
+	-	`sha256:4ff28a47b2da8d1afe62a3dd7af9c4f4718f86fb43826340c8121b93afb088f0`  
+		Last Modified: Tue, 24 Feb 2026 23:06:16 GMT  
+		Size: 4.5 MB (4498511 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ffd4c464a04d2e62c0b7a4ba31f77d5464771a9e4e1d7f93668fa73d1222ec1`  
-		Last Modified: Tue, 03 Feb 2026 06:06:02 GMT  
-		Size: 148.2 MB (148227639 bytes)  
+	-	`sha256:4ae0a3f483e14786e981d57bf0cc3a3db40d98788e0c3412c5220451ca4078b2`  
+		Last Modified: Tue, 24 Feb 2026 23:06:19 GMT  
+		Size: 148.2 MB (148227654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:78ce54bc08c5be9b093cef8fc5baae92d4683fa27581e0cf356bad7fbcb72d01`  
-		Last Modified: Tue, 03 Feb 2026 06:05:58 GMT  
-		Size: 10.3 KB (10291 bytes)  
+	-	`sha256:ee374c8f5435041606aac7728e35ed45f0c7c5e667cd6b9bf1cb840a6e3f51f4`  
+		Last Modified: Tue, 24 Feb 2026 23:06:16 GMT  
+		Size: 10.3 KB (10315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1ca8f53da3eb55a4d44269d2cebf398b4d04cd5df4e7c0242367e4a9b8a9c0a`  
-		Last Modified: Tue, 03 Feb 2026 06:05:58 GMT  
-		Size: 2.0 KB (1996 bytes)  
+	-	`sha256:9670ca1ff3254f6c71ddae8db9afc24942bb0e18105a0b989b44b4c953b79510`  
+		Last Modified: Tue, 24 Feb 2026 23:06:16 GMT  
+		Size: 2.0 KB (1998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:d59911f2cb769624a3be7f2e1d1f76a6fc1a4f1b88f5dea0bd5c90ede7ef28bd
+$ docker pull gcc@sha256:3cf492d65e9fa0fb9749707ee420798093e1249597654145b2b90d167b4a0ab6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.5 MB (17495866 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9235451756a64b17dd0791d1078f68b9da3c1086bbac066320e8f27daf0c5343`
+-	Image ID: `sha256:f4eb82430c855dc7b1b65ae88ebd2220475a15beb5e17654788b0230d35673e3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:57674cf513ca4e58e058ba3d6a356db0885f254dbf7e4c499b145774d6c4ca32`  
-		Last Modified: Tue, 03 Feb 2026 06:05:59 GMT  
+	-	`sha256:6320e030863e67fcfbd53f2e490705c69d8821d2f10b4a2f93f86c43e3a55b17`  
+		Last Modified: Tue, 24 Feb 2026 23:06:16 GMT  
 		Size: 17.5 MB (17465992 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8c9ae2d82a5bef057c65988b37530baae780e6ffa19965728d264d8f09d13474`  
-		Last Modified: Tue, 03 Feb 2026 06:05:58 GMT  
+	-	`sha256:b66aa9dd3333d54897ebe55b7975c98ffdfd580e6d77ffe131459c30f0964c9a`  
+		Last Modified: Tue, 24 Feb 2026 23:06:16 GMT  
 		Size: 29.9 KB (29874 bytes)  
 		MIME: application/vnd.in-toto+json
 
