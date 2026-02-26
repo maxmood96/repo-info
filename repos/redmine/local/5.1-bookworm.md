@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c7502b20f5475e31dfc0ef5d8746504c6d59cdee9e41424e1a710fa083a627f5`
-- Created: `2026-02-03T04:25:46.293011178Z`
-- Virtual Size: ~ 602.13 Mb  
+- Image ID: `sha256:6d297f1c5c38f0b773ea95b349a3b53bb97d3cd5a00754b68118b6aeca574c1b`
+- Created: `2026-02-24T20:22:30.960833142Z`
+- Virtual Size: ~ 602.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1572,11 +1572,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.40-1.1+deb12u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.40-1.1+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.7.9-2+deb12u5`
+### `dpkg` source package: `gnutls28=3.7.9-2+deb12u6`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.9-2+deb12u5`
+- `libgnutls30:amd64=3.7.9-2+deb12u6`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1597,18 +1597,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.7.9-2+deb12u5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9-2%2bdeb12u5.dsc' gnutls28_3.7.9-2+deb12u5.dsc 3421 SHA256:47301d7eab05f68530111dd78ac03de9ecbc842d8783de2d4147e4f122ad81d1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz' gnutls28_3.7.9.orig.tar.xz 6377212 SHA256:aaa03416cdbd54eb155187b359e3ec3ed52ec73df4df35a0edd49429ff64d844
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz.asc' gnutls28_3.7.9.orig.tar.xz.asc 996 SHA256:da4a96b14edd3cd44971a36ba1e976af1057e57a2d6c21b0cc7025c983ee84cc
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9-2%2bdeb12u5.debian.tar.xz' gnutls28_3.7.9-2+deb12u5.debian.tar.xz 116888 SHA256:70cf23e06e4bb67463c11ee0c9bb27cc78654e6e005782990ffd8b6846964259
+$ apt-get source -qq --print-uris gnutls28=3.7.9-2+deb12u6
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.9-2%2bdeb12u6.dsc' gnutls28_3.7.9-2+deb12u6.dsc 3421 SHA256:d11d49acfd2529b80e514166c409a78d9eb047838609b0dc2b36e291e009c139
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz' gnutls28_3.7.9.orig.tar.xz 6377212 SHA256:aaa03416cdbd54eb155187b359e3ec3ed52ec73df4df35a0edd49429ff64d844
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz.asc' gnutls28_3.7.9.orig.tar.xz.asc 996 SHA256:da4a96b14edd3cd44971a36ba1e976af1057e57a2d6c21b0cc7025c983ee84cc
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.9-2%2bdeb12u6.debian.tar.xz' gnutls28_3.7.9-2+deb12u6.debian.tar.xz 129728 SHA256:0aeb12e674609b71cbaad84f12c9b9a2746136edbd35f26a3df92ff8218fd58b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.7.9-2+deb12u5/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.9-2+deb12u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.9-2+deb12u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.7.9-2+deb12u6/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.7.9-2+deb12u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.7.9-2+deb12u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.8-5`
 
@@ -2677,11 +2677,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libpaper/1.1.29/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libpaper/1.1.29/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.39-2+deb12u1`
+### `dpkg` source package: `libpng1.6=1.6.39-2+deb12u3`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.39-2+deb12u1`
+- `libpng16-16:amd64=1.6.39-2+deb12u3`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -2697,17 +2697,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u1.dsc' libpng1.6_1.6.39-2+deb12u1.dsc 2273 SHA256:6b663fc339dbe78547d442c70e82096efee15840ba63681b0073d57a658b7a10
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u1.debian.tar.xz' libpng1.6_1.6.39-2+deb12u1.debian.tar.xz 37092 SHA256:a73d8896e915e623873902ec2f1f51d0aa4c93d8f51c11f56a627cd79336c9ba
+$ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u3
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u3.dsc' libpng1.6_1.6.39-2+deb12u3.dsc 2292 SHA256:4f5e97c47006358f1d749164d899eba56680956ad98ffa21795772612506e70d
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u3.debian.tar.xz' libpng1.6_1.6.39-2+deb12u3.debian.tar.xz 39752 SHA256:92e2c156f9be57eab8bc6cbe8c07ad1fc8323e1945bfa284da8592d749faa962
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1`
 
@@ -3968,11 +3968,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/poppler-data/0.4.12-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/poppler-data/0.4.12-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-15=15.15-0+deb12u1`
+### `dpkg` source package: `postgresql-15=15.16-0+deb12u1`
 
 Binary Packages:
 
-- `libpq5:amd64=15.15-0+deb12u1`
+- `libpq5:amd64=15.16-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -3992,17 +3992,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-15=15.15-0+deb12u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.15-0%2bdeb12u1.dsc' postgresql-15_15.15-0+deb12u1.dsc 3926 SHA256:c9ead6801944f2715b561b88df836535cc90c93f1a00f6616f8df6a298543120
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.15.orig.tar.bz2' postgresql-15_15.15.orig.tar.bz2 23246368 SHA256:5753aaeb8b09cbf61016f78aa69bf5cbdf01b43263f010cbf168c82896213aaa
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.15-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.15-0+deb12u1.debian.tar.xz 29532 SHA256:83751a83673b099d333f287860b83f75e12114d92010d8d3d43affdf9268ac80
+$ apt-get source -qq --print-uris postgresql-15=15.16-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.16-0%2bdeb12u1.dsc' postgresql-15_15.16-0+deb12u1.dsc 3942 SHA256:04fb4798890e19df8cea289e6efbc709b761b1b13b56755712ba04f9b0d79da6
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.16.orig.tar.bz2' postgresql-15_15.16.orig.tar.bz2 23350381 SHA256:695ee29a77be1f5010e10f3667696f29871587f7aa311eadc1f809bea287cf48
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.16-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.16-0+deb12u1.debian.tar.xz 30176 SHA256:4e9b1eb2567f9ee11512cdb490d77372526a43cccf8970e9ee5b6cc83da2854f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-15/15.15-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.15-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.15-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-15/15.16-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-15/15.16-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-15/15.16-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python-fastbencode=0.2-1`
 
