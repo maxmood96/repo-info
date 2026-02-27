@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:94d89ab7703666e67c3606548f21bfb723bdad64966357caadae7ee1d74eddd3`
-- Created: `2026-02-03T02:19:30.956897283Z`
+- Image ID: `sha256:2cb9180fc56fd0cd38e3794f6e7223bc8d3db11394415fe570855c5f1fab6629`
+- Created: `2026-02-24T19:01:15.371759682Z`
 - Virtual Size: ~ 3.51 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -308,11 +308,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20210119`
+### `dpkg` source package: `ca-certificates=20230311+deb12u1~deb11u1`
 
 Binary Packages:
 
-- `ca-certificates=20210119`
+- `ca-certificates=20230311+deb12u1~deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -323,16 +323,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20210119
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20210119.dsc' ca-certificates_20210119.dsc 1868 SHA256:51e5c099ab976f50f4d2f3c5ea0ad49853024cdb3e630322cbd7e02b05a034f4
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20210119.tar.xz' ca-certificates_20210119.tar.xz 232964 SHA256:daa3afae563711c30a0586ddae4336e8e3974c2b627faaca404c4e0141b64665
+$ apt-get source -qq --print-uris ca-certificates=20230311+deb12u1~deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1%7edeb11u1.dsc' ca-certificates_20230311+deb12u1~deb11u1.dsc 1803 SHA256:f9a7dfde551005b522e1d6e421fd9d690c56f70d7b5d083a422cbfa499cf7326
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1%7edeb11u1.tar.xz' ca-certificates_20230311+deb12u1~deb11u1.tar.xz 260104 SHA256:4491564ba510e58aa65ae0c8d6d912cf047e10cc224cf235c96bef4e30d7daae
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20210119/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20210119/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20210119/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20230311+deb12u1~deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20230311+deb12u1~deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20230311+deb12u1~deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.260`
 
@@ -1804,11 +1804,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.247-1`
+### `dpkg` source package: `linux=5.10.249-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.247-1`
+- `linux-libc-dev:amd64=5.10.249-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1824,17 +1824,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.247-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.247-1.dsc' linux_5.10.247-1.dsc 209429 SHA256:4decac0295de58278eab28e88c98ecc4df8eeaa320f197a4b3a4211b77a065f5
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.247.orig.tar.xz' linux_5.10.247.orig.tar.xz 122115324 SHA256:dce0db938fd1bd36b619301e2abaee5126420add50d8851a4312e5dad1abc3b1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.247-1.debian.tar.xz' linux_5.10.247-1.debian.tar.xz 1769544 SHA256:90014e16f6627a6b14733d55901580f5be24f99d510d5ece0228b54bcea033c1
+$ apt-get source -qq --print-uris linux=5.10.249-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.249-1.dsc' linux_5.10.249-1.dsc 209429 SHA256:77353ec581c5c9676e2ac45871e6f1175730399d96a9f82b61375d222d2ac696
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.249.orig.tar.xz' linux_5.10.249.orig.tar.xz 122140068 SHA256:5a9bd7c084550883261646b859d1c6c04b2a07dbe9eb3a153800e7eef547f6f4
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.249-1.debian.tar.xz' linux_5.10.249-1.debian.tar.xz 1777276 SHA256:f01ab4b1d529b1596b328c8962431d4069c3c1c83b4667b0261fd3e6cb174d4c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.247-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.247-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.247-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.249-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.249-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.249-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -2199,7 +2199,6 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libssl1.1:amd64=1.1.1w-0+deb11u4`
-- `openssl=1.1.1w-0+deb11u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2212,6 +2211,32 @@ The source package *may* still be available for download from:
 
 - http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u4/
 
+
+### `dpkg` source package: `openssl=1.1.1w-0+deb11u5`
+
+Binary Packages:
+
+- `openssl=1.1.1w-0+deb11u5`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1w-0+deb11u5
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u5.dsc' openssl_1.1.1w-0+deb11u5.dsc 2655 SHA256:283ca1b13a08bbaebb95f53f8ed1105ce4a6eee4d89277e46c38d32dd90de5c3
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz' openssl_1.1.1w.orig.tar.gz 9893384 SHA256:cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz.asc' openssl_1.1.1w.orig.tar.gz.asc 833 SHA256:5e5c3694cda755231c0438ac3c96af00d7510abd7b916d79c51bb979567040db
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u5.debian.tar.xz' openssl_1.1.1w-0+deb11u5.debian.tar.xz 107184 SHA256:2e36a934591efe4da50f2fb9d9847580c6d81935020d54bf495cc3ad7163a1ff
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u5/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
