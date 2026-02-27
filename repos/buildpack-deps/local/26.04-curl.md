@@ -530,15 +530,9 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `Latex2e`
 - `MIT-US-export`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.47.2-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.2-3ubuntu2.dsc' e2fsprogs_1.47.2-3ubuntu2.dsc 3292 SHA512:8a406035cf48048d701fb111a2b005be8e6a2844f0ab6f45730c992bd69b54039fdfacc6a23254728b0c980215c25cf415e2fdc322416e0767c4d60e5532d905
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.2.orig.tar.gz' e2fsprogs_1.47.2.orig.tar.gz 9996725 SHA512:dd89139c5e2bf999a22d999686ef06ab42f6ad537c6aeaa3fe68d9734d734b7396fd7ab2fd8002be26860c5653991a666d0df06c804c2f1f07f1274468ec728f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.2.orig.tar.gz.asc' e2fsprogs_1.47.2.orig.tar.gz.asc 488 SHA512:a22d46cc37497861d5a7e50076b40b8be6f459790f6eaacf0446200776fb74492ca9bfc7abc19edda3c9f7f722c318827b02f9cfbbb2118a8e86bce4d446d56b
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.2-3ubuntu2.debian.tar.xz' e2fsprogs_1.47.2-3ubuntu2.debian.tar.xz 105644 SHA512:8e4ad2ba2648b6a59682a2330e03d08fe60c14bc42ccacd65d433a2d97fdd3a4c17445b93ab262cd760d53820b5c06bd1d16cf682de4a635a7ed787d00e75adf
-```
 
 ### `dpkg` source package: `findutils=4.10.0-3build1`
 
@@ -901,15 +895,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.22.1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2.dsc' krb5_1.22.1-2.dsc 3378 SHA512:41e045d9b0ef3d793c32c26c2b4995a197e9dfd6e820e6d9c7edd85f102f9ea825f7af9ff3f69acfa830a9ea91a090055f90d8126c135772f53d83f8bb855bc1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1.orig.tar.gz' krb5_1.22.1.orig.tar.gz 8747101 SHA512:c33bfada5e0c035133436031d9818ad97b0ff08578691c832b743c55751a2cf9460501d3cc658ab79655ed7a0f9f4795ba94b363d6b616795d9bdca668825c52
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1.orig.tar.gz.asc' krb5_1.22.1.orig.tar.gz.asc 833 SHA512:83354b1e4f71cfb52ba8b921740c5abd4941563f4f8ed880f1feacb173aec2d1b6efbe94d21b062418a73b47d81e2e734fdd47805a07278dbc4945975b9f1267
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2.debian.tar.xz' krb5_1.22.1-2.debian.tar.xz 102864 SHA512:e345b670cb39866f7f7d3ba2495b28fd0470795feb5405a4ce781971beccfb94fb739d9e93ac716b086ea6c01dae96c9dc7091f60511f7d756d0c785f9436ee3
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/krb5/1.22.1-2/
+
 
 ### `dpkg` source package: `libassuan=3.0.2-2build1`
 
@@ -1791,14 +1783,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline8t64/copyright`, `/usr/share/
 - `GPL-3+`
 - `ISC-no-attribution`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.3-3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.3-3.dsc' readline_8.3-3.dsc 2817 SHA512:da2062b49605d9fec2bec460bd724b333b52464506013086d5912b27a0c429753d463830f58223a718c620cc3c47249b715360374f57ed299373b9fa1dee508a
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.3.orig.tar.gz' readline_8.3.orig.tar.gz 3419642 SHA512:513002753dcf5db9213dbbb61d51217245f6a40d33b1dd45238e8062dfa8eef0c890b87a5548e11db959e842724fb572c4d3d7fb433773762a63c30efe808344
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.3-3.debian.tar.xz' readline_8.3-3.debian.tar.xz 34188 SHA512:3296406f695d9828dccbc8ed6dde856951fc96a625e31cbf43e59986cefb48267514062c76818914b7402fda4f95016ce2ef7cc6ab62f0a7440b91a6edc49f58
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/readline/8.3-3/
+
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-3`
 

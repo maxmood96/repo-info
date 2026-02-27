@@ -812,15 +812,9 @@ Licenses: (parsed from: `/usr/share/doc/comerr-dev/copyright`, `/usr/share/doc/e
 - `Latex2e`
 - `MIT-US-export`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.47.2-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.2-3ubuntu2.dsc' e2fsprogs_1.47.2-3ubuntu2.dsc 3292 SHA512:8a406035cf48048d701fb111a2b005be8e6a2844f0ab6f45730c992bd69b54039fdfacc6a23254728b0c980215c25cf415e2fdc322416e0767c4d60e5532d905
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.2.orig.tar.gz' e2fsprogs_1.47.2.orig.tar.gz 9996725 SHA512:dd89139c5e2bf999a22d999686ef06ab42f6ad537c6aeaa3fe68d9734d734b7396fd7ab2fd8002be26860c5653991a666d0df06c804c2f1f07f1274468ec728f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.2.orig.tar.gz.asc' e2fsprogs_1.47.2.orig.tar.gz.asc 488 SHA512:a22d46cc37497861d5a7e50076b40b8be6f459790f6eaacf0446200776fb74492ca9bfc7abc19edda3c9f7f722c318827b02f9cfbbb2118a8e86bce4d446d56b
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.2-3ubuntu2.debian.tar.xz' e2fsprogs_1.47.2-3ubuntu2.debian.tar.xz 105644 SHA512:8e4ad2ba2648b6a59682a2330e03d08fe60c14bc42ccacd65d433a2d97fdd3a4c17445b93ab262cd760d53820b5c06bd1d16cf682de4a635a7ed787d00e75adf
-```
 
 ### `dpkg` source package: `elfutils=0.194-1`
 
@@ -1136,13 +1130,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/cpp-x86-
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.229ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.229ubuntu1.dsc' gcc-defaults_1.229ubuntu1.dsc 38342 SHA512:814e39c4bb9a562e5c87b2c111c2b5af1ec641c0e5bfe84929c83bca9045859b73c900baa40ffc350515b6653142ba7e035cf0269a360adf163c2d8cbb3b9318
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.229ubuntu1.tar.xz' gcc-defaults_1.229ubuntu1.tar.xz 58296 SHA512:01038a0c30fd0fa724e08ec397361c2bf5b42040761508ff6297dc92ebe7b29eb8a0f8679b9e20128aebea78df77d325f2927343a4b7089dc49a3c8e92e5d892
-```
 
 ### `dpkg` source package: `gdbm=1.26-1build1`
 
@@ -1847,15 +1837,13 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.22.1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2.dsc' krb5_1.22.1-2.dsc 3378 SHA512:41e045d9b0ef3d793c32c26c2b4995a197e9dfd6e820e6d9c7edd85f102f9ea825f7af9ff3f69acfa830a9ea91a090055f90d8126c135772f53d83f8bb855bc1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1.orig.tar.gz' krb5_1.22.1.orig.tar.gz 8747101 SHA512:c33bfada5e0c035133436031d9818ad97b0ff08578691c832b743c55751a2cf9460501d3cc658ab79655ed7a0f9f4795ba94b363d6b616795d9bdca668825c52
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1.orig.tar.gz.asc' krb5_1.22.1.orig.tar.gz.asc 833 SHA512:83354b1e4f71cfb52ba8b921740c5abd4941563f4f8ed880f1feacb173aec2d1b6efbe94d21b062418a73b47d81e2e734fdd47805a07278dbc4945975b9f1267
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2.debian.tar.xz' krb5_1.22.1-2.debian.tar.xz 102864 SHA512:e345b670cb39866f7f7d3ba2495b28fd0470795feb5405a4ce781971beccfb94fb739d9e93ac716b086ea6c01dae96c9dc7091f60511f7d756d0c785f9436ee3
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/krb5/1.22.1-2/
+
 
 ### `dpkg` source package: `lcms2=2.17-1`
 
@@ -2560,14 +2548,13 @@ Licenses: (parsed from: `/usr/share/doc/libraw23t64/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.21.4-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.21.4-2.dsc' libraw_0.21.4-2.dsc 2187 SHA512:fa920e02921a34543f86a5433821165f324f84e58293121da452ca7db48a21739f84a46f5581d0e300e35d8475c88a132384b0345659759dfa71b4d093aef5d7
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.21.4.orig.tar.gz' libraw_0.21.4.orig.tar.gz 566327 SHA512:d8366d62f32f02466128ecfedf9a9b39289834a73d89d57004cf7df63919e66808ba283cddf5843b25fe903d72eb988ac5b490525083e2b5d84a05c7679b4014
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.21.4-2.debian.tar.xz' libraw_0.21.4-2.debian.tar.xz 24312 SHA512:baa743a17360c6acf002d628e1b7a8c8fea3c6d6aaaa160e991f7fbc9252217ac1e0c0d642062b200f2a0e1b27f31bde1fa9a40c915a6a515594fd71f04fb1e6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libraw/0.21.4-2/
+
 
 ### `dpkg` source package: `libseccomp=2.6.0-2ubuntu3`
 
@@ -4068,14 +4055,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GPL-3+`
 - `ISC-no-attribution`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.3-3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.3-3.dsc' readline_8.3-3.dsc 2817 SHA512:da2062b49605d9fec2bec460bd724b333b52464506013086d5912b27a0c429753d463830f58223a718c620cc3c47249b715360374f57ed299373b9fa1dee508a
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.3.orig.tar.gz' readline_8.3.orig.tar.gz 3419642 SHA512:513002753dcf5db9213dbbb61d51217245f6a40d33b1dd45238e8062dfa8eef0c890b87a5548e11db959e842724fb572c4d3d7fb433773762a63c30efe808344
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.3-3.debian.tar.xz' readline_8.3-3.debian.tar.xz 34188 SHA512:3296406f695d9828dccbc8ed6dde856951fc96a625e31cbf43e59986cefb48267514062c76818914b7402fda4f95016ce2ef7cc6ab62f0a7440b91a6edc49f58
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/readline/8.3-3/
+
 
 ### `dpkg` source package: `rpcsvc-proto=1.4.3-1build1`
 
@@ -4623,14 +4609,9 @@ Licenses: (parsed from: `/usr/share/doc/libblkid-dev/copyright`, `/usr/share/doc
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.41.2-4ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41.2-4ubuntu3.dsc' util-linux_2.41.2-4ubuntu3.dsc 5035 SHA512:bb203bfd7ad6f76d5f2fc13a70e88f0e10f61248d3e0a204040a885b9e97437aaa8bbba7f91a3f065ff11af854aa155f43d57e5012a8235bb5913487abe87b5c
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41.2.orig.tar.xz' util-linux_2.41.2.orig.tar.xz 9612488 SHA512:696c87e7cf185acc9b4b969ddade6155ea2945ae494eaecfd7b1f35d9607166cb09be79878fb793dd31b4d4dcac8c9be4be76af3886185db7ae8b58c303fb0cf
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41.2-4ubuntu3.debian.tar.xz' util-linux_2.41.2-4ubuntu3.debian.tar.xz 113324 SHA512:5a6d6c20c92437737c5bc01f4e598774f54cf371e3439f88f49fb07179bdd643df87cd3941f383a3e0a3c142b700074c7c26d0c585e3965970793ed4de74309a
-```
 
 ### `dpkg` source package: `wget=1.25.0-2ubuntu4`
 
