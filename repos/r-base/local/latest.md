@@ -2621,15 +2621,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.68.0-1
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.68.0-1.dsc' nghttp2_1.68.0-1.dsc 2753 SHA256:1d5016d599ffd762482ad439b0df9258be605d5fffdf42be9ceaa3b0e668bee0
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.68.0.orig.tar.gz' nghttp2_1.68.0.orig.tar.gz 2638098 SHA256:2c16ffc588ad3f9e2613c3fad72db48ecb5ce15bc362fcc85b342e48daf51013
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.68.0.orig.tar.gz.asc' nghttp2_1.68.0.orig.tar.gz.asc 833 SHA256:be8b3ff79aa9f374cb5b1127ac686520e0291627e4e9c5faac6d730640dc3155
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.68.0-1.debian.tar.xz' nghttp2_1.68.0-1.debian.tar.xz 14920 SHA256:1e5ab0e0ea8b9608b6ac8078d255ceee2dc9c4bda17f2b79efbabb283e5ba8d2
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nghttp2/1.68.0-1/
+
 
 ### `dpkg` source package: `nghttp3=1.12.0-1`
 
@@ -2822,21 +2820,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `X11`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.10-1
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.10-1.dsc' p11-kit_0.25.10-1.dsc 2548 SHA256:b190dc31128ae7f53c55adb2c4c6c8cba0acdbf67200709f44aa269211605484
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.10.orig.tar.xz' p11-kit_0.25.10.orig.tar.xz 1053532 SHA256:a62a137a966fb3a9bbfa670b4422161e369ddea216be51425e3be0ab2096e408
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.10.orig.tar.xz.asc' p11-kit_0.25.10.orig.tar.xz.asc 228 SHA256:d18f6b1956bb040455e83774410fcfd23952d0f83f8893bf297b7dc15de7c184
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.10-1.debian.tar.xz' p11-kit_0.25.10-1.debian.tar.xz 24308 SHA256:78846d266dcd6c75fa0bb9d7f6d116aaa472dfb86a017a0ab56c94fac64c917d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.25.10-1/
 
-- https://sources.debian.net/src/p11-kit/0.25.10-1/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.25.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.25.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-5`
 
@@ -3454,10 +3444,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=259.1-1
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_259.1-1.dsc' systemd_259.1-1.dsc 8647 SHA256:25949eb4cfe73c592de1a5052e02f20a4125aed0913ba6576e13148357958cc8
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_259.1.orig.tar.gz' systemd_259.1.orig.tar.gz 17274033 SHA256:7af4f36db512ad2f0f749a0f9886370edeb2bb5128014fc47cdf73702c7e1911
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_259.1-1.debian.tar.xz' systemd_259.1-1.debian.tar.xz 184820 SHA256:c6ea5dfbc003cfcb6087029b5b5b6df960f191a330458071d8b5a2e41f9956ba
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_259.1-1.dsc' systemd_259.1-1.dsc 8647 SHA256:25949eb4cfe73c592de1a5052e02f20a4125aed0913ba6576e13148357958cc8
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_259.1.orig.tar.gz' systemd_259.1.orig.tar.gz 17274033 SHA256:7af4f36db512ad2f0f749a0f9886370edeb2bb5128014fc47cdf73702c7e1911
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_259.1-1.debian.tar.xz' systemd_259.1-1.debian.tar.xz 184820 SHA256:c6ea5dfbc003cfcb6087029b5b5b6df960f191a330458071d8b5a2e41f9956ba
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/systemd/259.1-1/ (for browsing the source)
+- https://sources.debian.net/src/systemd/259.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/259.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.15-6`
 
@@ -3502,20 +3498,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-3.1
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-3.1.dsc' tar_1.35+dfsg-3.1.dsc 2017 SHA256:5bb58d4966d94c99a9f1b182676089ecc05058d62fdb927f5c07539d9cda4077
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA256:9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-3.1.debian.tar.xz' tar_1.35+dfsg-3.1.debian.tar.xz 21540 SHA256:0d0278034b82ed84dce04a461879b6e1871e4cb416a0ff04d3d35ff05fc30a53
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/
 
-- https://sources.debian.net/src/tar/1.35+dfsg-3.1/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.35+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tcl8.6=8.6.17+dfsg-1`
 
