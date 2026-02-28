@@ -679,14 +679,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.15
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.15.dsc' git_2.34.1-1ubuntu1.15.dsc 2976 SHA512:d44beec21fa01d5b030e4aa3e26fe085cf3d900da7498fa91effcd5c34707aa7f2a421316756c5ae3d94cdf93e75642d01121fb82e68c4c87b9e47a0ea022bbd
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1.orig.tar.xz' git_2.34.1.orig.tar.xz 6623760 SHA512:a1a8e9e6f64b1da25508fbd2f783564dcdbe181fb5ff1ebab3bdac6db6094e18acc334479a1abf22ac17ce4f733cc3e10a664db9ab234cd523735a3f027b42db
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.15.debian.tar.xz' git_2.34.1-1ubuntu1.15.debian.tar.xz 786596 SHA512:e9cde169fe60dae852a05505c8c8d9e76c7e147c6a8ee0adea014aa3031de05363626bb4762d0fad3180bd9b269c9a4bd54b3abc695c9a81cb3a380d3c7d41de
-```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.13`
 
