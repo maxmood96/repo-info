@@ -1,9 +1,9 @@
-# `postgres:16.12`
+# `postgres:16.13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:23d19d971a56051f2509bb6e20efb9a96e225a336ce8174ad78c3e5d050a3610`
-- Created: `2026-02-24T19:16:17.375067726Z`
+- Image ID: `sha256:11ea9d908f285359c7ade748db20089bc3025aafde9754298c9e2feecc1c4830`
+- Created: `2026-02-26T19:26:37.650879507Z`
 - Virtual Size: ~ 450.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,5 +14,5 @@
   - `GOSU_VERSION=1.19`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=16`
-  - `PG_VERSION=16.12-1.pgdg13+1`
+  - `PG_VERSION=16.13-1.pgdg13+1`
   - `PGDATA=/var/lib/postgresql/data`

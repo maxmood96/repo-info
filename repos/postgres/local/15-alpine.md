@@ -1,9 +1,9 @@
-# `postgres:15.16-alpine3.23`
+# `postgres:15.17-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:15283455b75304c90f51bf16b42c272a25fb52807945dc24830ec88e63cd896d`
-- Created: `2026-02-12T21:07:31.932662329Z`
+- Image ID: `sha256:cd848ee12e8efaf62a09b7e7290a287c21f332a32779048afb970d497374bb04`
+- Created: `2026-02-26T19:30:38.62435082Z`
 - Virtual Size: ~ 273.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,8 +14,8 @@
   - `GOSU_VERSION=1.19`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=15`
-  - `PG_VERSION=15.16`
-  - `PG_SHA256=695ee29a77be1f5010e10f3667696f29871587f7aa311eadc1f809bea287cf48`
+  - `PG_VERSION=15.17`
+  - `PG_SHA256=ae14f24c14727e0b2ded1c5553031666099bd1054db3ef44bfa6e2bd6d554a56`
   - `DOCKER_PG_LLVM_DEPS=llvm19-dev 		clang19`
   - `PGDATA=/var/lib/postgresql/data`
 
