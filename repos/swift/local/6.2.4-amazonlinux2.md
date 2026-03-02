@@ -1,10 +1,10 @@
-# `swift:6.2.3-amazonlinux2`
+# `swift:6.2.4-amazonlinux2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:767ee55b1bfdee4644ee9c36b93a50d8d6e6b4d9db321e96d9ea1acfe7ba5dd7`
-- Created: `2026-02-10T18:33:20.991866013Z`
-- Virtual Size: ~ 4.35 Gb  
+- Image ID: `sha256:efa0f73b5ba61c5ec431e16d7a7057fb23daa8d08b061bdaf9943f9b50d0a748`
+- Created: `2026-02-27T22:44:21.738865725Z`
+- Virtual Size: ~ 4.36 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=amazonlinux2`
-  - `SWIFT_BRANCH=swift-6.2.3-release`
-  - `SWIFT_VERSION=swift-6.2.3-RELEASE`
+  - `SWIFT_BRANCH=swift-6.2.4-release`
+  - `SWIFT_VERSION=swift-6.2.4-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -186,15 +186,15 @@ $ dnf --quiet download --source --url cryptsetup-libs-1.7.4-4.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/ad16b6f4596e77afa5ae62a92ff619786518ab11b2a6644d0ee53a146b10b021/cryptsetup-1.7.4-4.amzn2.src.rpm
 ```
 
-### `rpm` package: `curl-8.3.0-1.amzn2.0.11.x86_64`
+### `rpm` package: `curl-8.3.0-1.amzn2.0.12.x86_64`
 
 Licenses (from `rpm --query`): curl
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-8.3.0-1.amzn2.0.11
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/fe446b5d7495e444a367174db045d8ef26f90fc1092eff44ac64c521bc6384f4/curl-8.3.0-1.amzn2.0.11.src.rpm
+$ dnf --quiet download --source --url curl-8.3.0-1.amzn2.0.12
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/811c4634801cc0fe1d16d6d044edf03618d44f33fe20a63564ff66db69600a70/curl-8.3.0-1.amzn2.0.12.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-24.amzn2.0.1.x86_64`
@@ -819,26 +819,26 @@ $ dnf --quiet download --source --url libcrypt-2.26-64.amzn2.0.5
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/e90a9820e7394f50b5b7dd022630bcff3220d7062a174854270bd065b0479eae/glibc-2.26-64.amzn2.0.5.src.rpm
 ```
 
-### `rpm` package: `libcurl-8.3.0-1.amzn2.0.11.x86_64`
+### `rpm` package: `libcurl-8.3.0-1.amzn2.0.12.x86_64`
 
 Licenses (from `rpm --query`): curl
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-8.3.0-1.amzn2.0.11
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/fe446b5d7495e444a367174db045d8ef26f90fc1092eff44ac64c521bc6384f4/curl-8.3.0-1.amzn2.0.11.src.rpm
+$ dnf --quiet download --source --url libcurl-8.3.0-1.amzn2.0.12
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/811c4634801cc0fe1d16d6d044edf03618d44f33fe20a63564ff66db69600a70/curl-8.3.0-1.amzn2.0.12.src.rpm
 ```
 
-### `rpm` package: `libcurl-devel-8.3.0-1.amzn2.0.11.x86_64`
+### `rpm` package: `libcurl-devel-8.3.0-1.amzn2.0.12.x86_64`
 
 Licenses (from `rpm --query`): curl
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-devel-8.3.0-1.amzn2.0.11
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/fe446b5d7495e444a367174db045d8ef26f90fc1092eff44ac64c521bc6384f4/curl-8.3.0-1.amzn2.0.11.src.rpm
+$ dnf --quiet download --source --url libcurl-devel-8.3.0-1.amzn2.0.12
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/811c4634801cc0fe1d16d6d044edf03618d44f33fe20a63564ff66db69600a70/curl-8.3.0-1.amzn2.0.12.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.21-24.amzn2.0.5.x86_64`
@@ -1424,48 +1424,48 @@ $ dnf --quiet download --source --url openldap-2.4.44-25.amzn2.0.7
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/db7da8ae89a175ef6835a375dec2b69b3eaecc676cb58b8dd9c1f8e769fb0fc2/openldap-2.4.44-25.amzn2.0.7.src.rpm
 ```
 
-### `rpm` package: `openssh-7.4p1-22.amzn2.0.10.x86_64`
+### `rpm` package: `openssh-7.4p1-22.amzn2.0.11.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssh-7.4p1-22.amzn2.0.10
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/257ade676ce923338da34eaf24cb29221913f1708b522e38d0745b68dda210a0/openssh-7.4p1-22.amzn2.0.10.src.rpm
+$ dnf --quiet download --source --url openssh-7.4p1-22.amzn2.0.11
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/4d8f5c7ce2d6b635d27193f4a2eba38402394b9a104c14b4a71a7d7d9d1a139d/openssh-7.4p1-22.amzn2.0.11.src.rpm
 ```
 
-### `rpm` package: `openssh-clients-7.4p1-22.amzn2.0.10.x86_64`
+### `rpm` package: `openssh-clients-7.4p1-22.amzn2.0.11.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssh-clients-7.4p1-22.amzn2.0.10
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/257ade676ce923338da34eaf24cb29221913f1708b522e38d0745b68dda210a0/openssh-7.4p1-22.amzn2.0.10.src.rpm
+$ dnf --quiet download --source --url openssh-clients-7.4p1-22.amzn2.0.11
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/4d8f5c7ce2d6b635d27193f4a2eba38402394b9a104c14b4a71a7d7d9d1a139d/openssh-7.4p1-22.amzn2.0.11.src.rpm
 ```
 
-### `rpm` package: `openssl-devel-1.0.2k-24.amzn2.0.16.x86_64`
+### `rpm` package: `openssl-devel-1.0.2k-24.amzn2.0.17.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-devel-1.0.2k-24.amzn2.0.16
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/b7e36db3331fe5772827d2dba7087d077539512f67b14b2e77494f40904cf06e/openssl-1.0.2k-24.amzn2.0.16.src.rpm
+$ dnf --quiet download --source --url openssl-devel-1.0.2k-24.amzn2.0.17
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/77cbcf79b3d34aedf681709892f364e25b40e0a7d4a4838f342c318b81f14993/openssl-1.0.2k-24.amzn2.0.17.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.16.x86_64`
+### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.17.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.16
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/b7e36db3331fe5772827d2dba7087d077539512f67b14b2e77494f40904cf06e/openssl-1.0.2k-24.amzn2.0.16.src.rpm
+$ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.17
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/77cbcf79b3d34aedf681709892f364e25b40e0a7d4a4838f342c318b81f14993/openssl-1.0.2k-24.amzn2.0.17.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.23.22-1.amzn2.0.1.x86_64`
