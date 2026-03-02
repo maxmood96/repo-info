@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3e52a73bd06c9759bd4433c27b69afd58457bdb3174e0153ecf3089eea25736`
-- Created: `2026-02-03T18:56:44.408249005Z`
-- Virtual Size: ~ 447.21 Mb  
+- Image ID: `sha256:e095376b1219c57b174714bd2cb2119f6fbb53eed15b522810c059b24393a183`
+- Created: `2026-02-28T02:10:18.563215735Z`
+- Virtual Size: ~ 447.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=29.2.1`
   - `DOCKER_BUILDX_VERSION=0.31.1`
-  - `DOCKER_COMPOSE_VERSION=5.0.2`
+  - `DOCKER_COMPOSE_VERSION=5.1.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -752,16 +752,16 @@ GPL-3.0-or-later AND ( GPL-2.0-or-later OR LGPL-3.0-or-later )
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.3-r0 description:
+libexpat-2.7.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.3-r0 webpage:
+libexpat-2.7.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.3-r0 installed size:
+libexpat-2.7.4-r0 installed size:
 133 KiB
 
-libexpat-2.7.3-r0 license:
+libexpat-2.7.4-r0 license:
 MIT
 
 ```
