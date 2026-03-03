@@ -255,20 +255,13 @@ Licenses: (parsed from: `/usr/share/doc/autoconf/copyright`)
 - `permissive-without-disclaimer`
 - `permissive-without-notices-or-disclaimer`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris autoconf=2.72-3.1
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.72-3.1.dsc' autoconf_2.72-3.1.dsc 1746 SHA256:211a4dbec6467f6f4b3137edb2c51466e4147a57143a3365efcba46b486464c2
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.72.orig.tar.xz' autoconf_2.72.orig.tar.xz 1389680 SHA256:ba885c1319578d6c94d46e9b0dceb4014caafe2490e437a0dbca3f270a223f5a
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.72-3.1.debian.tar.xz' autoconf_2.72-3.1.debian.tar.xz 24096 SHA256:4f235b135ef2d19b7f7b2831dac859ca42582599a817fd2d14e871f2e720eec9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/autoconf/2.72-3.1/
 
-- https://sources.debian.net/src/autoconf/2.72-3.1/ (for browsing the source)
-- https://sources.debian.net/src/autoconf/2.72-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/autoconf/2.72-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `automake=1:1.18.1-3`
 
@@ -2581,20 +2574,13 @@ Licenses: (parsed from: `/usr/share/doc/libexif-dev/copyright`, `/usr/share/doc/
 - `LicenseRef-Wrobel`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libexif=0.6.25-1
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.25-1.dsc' libexif_0.6.25-1.dsc 2091 SHA256:7ab0af52a1679e23e45cae31b3f8c83323ac5d5b7c731516abbbd182b7babff7
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.25.orig.tar.gz' libexif_0.6.25.orig.tar.gz 1253324 SHA256:ee0795432c20d2fdb2a8a579dd6fc0e19d402e36f14f42c03ab60d2345950f09
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.25-1.debian.tar.xz' libexif_0.6.25-1.debian.tar.xz 12104 SHA256:d0e5ebb493300088ea83b3e9110dcb4d2bf86d6870dd02c01668b6fdc00eeca1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libexif/0.6.25-1/
 
-- https://sources.debian.net/src/libexif/0.6.25-1/ (for browsing the source)
-- https://sources.debian.net/src/libexif/0.6.25-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libexif/0.6.25-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.5.2-3`
 
@@ -2698,21 +2684,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `LGPL-2.1+`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.58-2
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.58-2.dsc' libgpg-error_1.58-2.dsc 2961 SHA256:076b92cc3a6c7a8815a7772220544581e6cc79ecfd13573512403d8417f7e9b9
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.58.orig.tar.bz2' libgpg-error_1.58.orig.tar.bz2 1123899 SHA256:f943aea9a830a8bd938e5124b579efaece24a3225ff4c3d27611a80ce1260c27
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.58.orig.tar.bz2.asc' libgpg-error_1.58.orig.tar.bz2.asc 265 SHA256:400e445b7c6c52555033805f45b11a76fe4995675fdd4b0ff41ee7799cec1c3b
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.58-2.debian.tar.xz' libgpg-error_1.58-2.debian.tar.xz 19792 SHA256:2e4f501ba6b2375ce23492d65192bfaf4658b68daa9c03965720bb1bc3a52cac
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgpg-error/1.58-2/
 
-- https://sources.debian.net/src/libgpg-error/1.58-2/ (for browsing the source)
-- https://sources.debian.net/src/libgpg-error/1.58-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgpg-error/1.58-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libheif=1.21.2-3`
 
@@ -3465,20 +3443,13 @@ Licenses: (parsed from: `/usr/share/doc/libwmf-0.2-7/copyright`, `/usr/share/doc
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwmf=0.2.13-2
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.13-2.dsc' libwmf_0.2.13-2.dsc 2368 SHA256:600595e6e06b556695a885a609307be6a6a259a9d7e7447a6f0083cbc4a70c64
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.13.orig.tar.gz' libwmf_0.2.13.orig.tar.gz 3044235 SHA256:18ba69febd2f515d98a2352de284a8051896062ac9728d2ead07bc39ea75a068
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.13-2.debian.tar.xz' libwmf_0.2.13-2.debian.tar.xz 25572 SHA256:6fa6d8e84ac623a2adebd52f6e8bdedaf056df8fd9c64cb6ffa92646c4c509ed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libwmf/0.2.13-2/
 
-- https://sources.debian.net/src/libwmf/0.2.13-2/ (for browsing the source)
-- https://sources.debian.net/src/libwmf/0.2.13-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libwmf/0.2.13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.8.12-1`
 
@@ -3942,21 +3913,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:11.8.5-4
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5-4.dsc' mariadb_11.8.5-4.dsc 5597 SHA256:10cd99fc02f93741a34fe7cc44e7a94b2af6fc8c29f558e349ab3acb1128b23f
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5.orig.tar.gz' mariadb_11.8.5.orig.tar.gz 119948843 SHA256:bcb7394569c08877c283e1649869504531bee8caafa30288f078e30d99fcb9f6
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5.orig.tar.gz.asc' mariadb_11.8.5.orig.tar.gz.asc 833 SHA256:2e7d4c763e0b5580f6788d57005aaeb3d0742ab6d7e4b89fbc0c9f5d3ea96f21
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.5-4.debian.tar.xz' mariadb_11.8.5-4.debian.tar.xz 298076 SHA256:9a986885a9e1ead87cc2993208adf7e5f58ac5542c7db49febfd674affb29d25
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:11.8.5-4/
 
-- https://sources.debian.net/src/mariadb/1:11.8.5-4/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:11.8.5-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:11.8.5-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20260129-1`
 
@@ -4842,20 +4805,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-18=18.2-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.2-1.dsc' postgresql-18_18.2-1.dsc 4752 SHA256:0503b1027889da889922dc573f4bde10246858ba18f88f8310d0f18bd4962ac3
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.2.orig.tar.bz2' postgresql-18_18.2.orig.tar.bz2 22492584 SHA256:5245bd1b79700d55b8e0575be0325ef61e7bbef627e6a616e4cf36ad4687be36
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.2-1.debian.tar.xz' postgresql-18_18.2-1.debian.tar.xz 24220 SHA256:8d765faaea7827293470e23557e05bb660087b5b94cd7fc02b7d8815e0fe5ef7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-18/18.2-1/
 
-- https://sources.debian.net/src/postgresql-18/18.2-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-18/18.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-18/18.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-9`
 

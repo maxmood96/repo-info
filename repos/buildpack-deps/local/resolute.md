@@ -2290,14 +2290,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.21.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-1.dsc' libheif_1.21.2-1.dsc 3713 SHA512:c189b7577c51382aa72e1c18670bde351480a10fffd9af978f1ce12c093d049a841377215d30332217f097dbbe907597af8ee2f65ff5c10772cbaf2596877098
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2.orig.tar.gz' libheif_1.21.2.orig.tar.gz 1859435 SHA512:ec7cf3a1ceafc6df01fa57b488c763da8b88971f01b71385d377036e4301d1145d743af942654e5b741468fd9d0c8ab520a9bf205c5a7d3cdd60767cec4df232
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-1.debian.tar.xz' libheif_1.21.2-1.debian.tar.xz 13144 SHA512:afb5c7df0c0892d323da7f2975efac2a1a99164f25f1520d9b2830efb5037ffbad519270c6ebdd96da16e59a2c5a1dbca9756260ec91f322662be44f4205d151
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libheif/1.21.2-1/
+
 
 ### `dpkg` source package: `libice=2:1.1.1-1build1`
 
@@ -2823,15 +2822,13 @@ Licenses: (parsed from: `/usr/share/doc/libunistring5/copyright`)
 - `public-domain`
 - `unicode-dfs-2016`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libunistring=1.3-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_1.3-2.dsc' libunistring_1.3-2.dsc 2215 SHA512:b5f352f94a03ff54581afe4cd88b1e5ffac6ae7fd45c95bc55f2cc3de24090a0c18d948a43405443388d42e537488c36d4638e33b81061f45f5c591d472148f9
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_1.3.orig.tar.xz' libunistring_1.3.orig.tar.xz 2753448 SHA512:864d42b1d4ae4941fe5c8327d6726ab8e3a35d2d5f9d25ce4859a72ab2f549a7b68f58638cf8767d863f58161d1a4053495d185860964a942d6750e42facf931
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_1.3.orig.tar.xz.asc' libunistring_1.3.orig.tar.xz.asc 833 SHA512:829229528acc8f9d13de4c43fea6caddacaf1f1cc201a7927b2c140d7ac5a81e213a1a20ba67766d6867fbe301ddddf78685f5af54e67906160807d6e8028b5a
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_1.3-2.debian.tar.xz' libunistring_1.3-2.debian.tar.xz 28480 SHA512:31079e73da30c7e0eab7bf1fa81936d2655df6f7d216fdfae418c54b8c168828d467af9cde17c2f9102a4479260c74a63cb50701ede8652097efbe47eb6086e5
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libunistring/1.3-2/
+
 
 ### `dpkg` source package: `libwebp=1.5.0-0.1build1`
 
@@ -3163,13 +3160,9 @@ Licenses: (parsed from: `/usr/share/doc/lto-disabled-list/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lto-disabled-list=77
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_77.dsc' lto-disabled-list_77.dsc 1441 SHA512:dcf480fffebc2123b107038c31434ce5c2c95c14f16a685f1f9e3ae6ab4d979f2636118e580b2591b65a545659f37a7245e7ffdfb27bcda2703020b7d6e2a5cf
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_77.tar.xz' lto-disabled-list_77.tar.xz 14512 SHA512:03c5a47b31fe3e2af140b73b9800120f49f625fd5cc59ed25078e4703ca411df76b44bbf6ebee5862fc010e6d5edaee714af6d995d76e185520eecb162a31d1f
-```
 
 ### `dpkg` source package: `lz4=1.10.0-6`
 
@@ -3666,15 +3659,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit-dev/copyright`, `/usr/share/d
 - `X11`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.10-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.10-1ubuntu1.dsc' p11-kit_0.25.10-1ubuntu1.dsc 2671 SHA512:b20de07535fe5f76b052185887361f8cba7a16873a349e739672409c9ce78d6c5dbad9341f80020528d7b796675c327fb3bd400fd6503522e7dd86ffa28f7130
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.10.orig.tar.xz' p11-kit_0.25.10.orig.tar.xz 1053532 SHA512:c5a5dfb6bd46e8964a70f2fc601bd5b61bf88f79d1011c70e6f37a62130c4aad692d8bac83aff2fd2728543274e198d2946ded7a53636835aefb13b9a3155527
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.10.orig.tar.xz.asc' p11-kit_0.25.10.orig.tar.xz.asc 228 SHA512:5c0e711fa1ef619bfd8ea479c45a6c76d22721549eb2a802f18644411fab6983fc09854677fac22b228e323a505e20036a9cfe4007f504567c5dd2bb1a3e6976
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.10-1ubuntu1.debian.tar.xz' p11-kit_0.25.10-1ubuntu1.debian.tar.xz 25172 SHA512:ff65c5bad2a8ff89a41f08f05a77ce7016ece719ae6a01b9fff273bc939d67d2b6fd82f7689939523cda323c416de2ef10685c474c41280ed849408b9f647e6d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/p11-kit/0.25.10-1/
+
 
 ### `dpkg` source package: `pam=1.7.0-5ubuntu2`
 
@@ -4662,13 +4653,9 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xorg=1:7.7+24ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7%2b24ubuntu2.dsc' xorg_7.7+24ubuntu2.dsc 2061 SHA512:86ddfe02615fe8205d2e5549b9a3c07a820d8acdc8432a840e99298e7affb42a85560f94b53795b67cbadbe564f196299e977ecf252c0226ca07dc176168c2aa
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7%2b24ubuntu2.tar.xz' xorg_7.7+24ubuntu2.tar.xz 241656 SHA512:47805cbd512ebb7e522134736efb224f7ad53c6f9a306f6643f3ad79928f1137afa7b3b677d0e193c91308058667cbf982bb1ac0b5f9a400078f7e3b68ed8ae6
-```
 
 ### `dpkg` source package: `xorgproto=2025.1-1`
 

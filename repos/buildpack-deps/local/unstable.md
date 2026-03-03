@@ -579,21 +579,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=9.7-3
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7-3.dsc' coreutils_9.7-3.dsc 2122 SHA256:c3a207e3aaad165765c7a6fab89045f5fd20035fea6830b9f9ebbb92ebfbff89
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7.orig.tar.xz' coreutils_9.7.orig.tar.xz 6158960 SHA256:e8bb26ad0293f9b5a1fc43fb42ba970e312c66ce92c1b0b16713d7500db251bf
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7.orig.tar.xz.asc' coreutils_9.7.orig.tar.xz.asc 833 SHA256:5070e9428bd372a7fa1f66b395b81092bb40c98f9f56a2e2bc55c47fd387e901
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7-3.debian.tar.xz' coreutils_9.7-3.debian.tar.xz 26820 SHA256:483f77876a080577f63da1d004cc1cf17d16df65d6925aefdd3294c6101eccfb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/coreutils/9.7-3/
 
-- https://sources.debian.net/src/coreutils/9.7-3/ (for browsing the source)
-- https://sources.debian.net/src/coreutils/9.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/coreutils/9.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=8.19.0~rc2-2`
 
@@ -618,20 +610,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.19.0~rc2-2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.19.0%7erc2-2.dsc' curl_8.19.0~rc2-2.dsc 3104 SHA256:0420c5b4b0031aedd34fb31aa59a167afe6f07f579f8be9e51111cd64a100765
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.19.0%7erc2.orig.tar.xz' curl_8.19.0~rc2.orig.tar.xz 2782276 SHA256:2231e09378db9b94f030c7ed56baac4b186095d9c90ab154f3d6232ffc0183a3
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.19.0%7erc2-2.debian.tar.xz' curl_8.19.0~rc2-2.debian.tar.xz 53864 SHA256:7d38d666d1da1d1cb9e0751d56f48badcf13257d3660e08c07c6f43f701f3e3b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.19.0~rc2-2/
 
-- https://sources.debian.net/src/curl/8.19.0~rc2-2/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.19.0~rc2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.19.0~rc2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-10`
 
@@ -1441,20 +1426,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.51.0-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.51.0-1.dsc' git_2.51.0-1.dsc 2641 SHA256:65de507b7ab663cbfb079e2b10f0321309bd788ca62d5eb1d64014886adfacba
-'http://deb.debian.org/debian/pool/main/g/git/git_2.51.0.orig.tar.xz' git_2.51.0.orig.tar.xz 7857228 SHA256:60a7c2251cc2e588d5cd87bae567260617c6de0c22dca9cdbfc4c7d2b8990b62
-'http://deb.debian.org/debian/pool/main/g/git/git_2.51.0-1.debian.tar.xz' git_2.51.0-1.debian.tar.xz 818516 SHA256:793b1557c45cc952ee155771c5aa4df58d3bb76fb5f708d299135dfeba4f6a22
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.51.0-1/
 
-- https://sources.debian.net/src/git/1:2.51.0-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.51.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.51.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.87.2-3`
 
@@ -1938,20 +1916,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.2.13+dfsg1-1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.13%2bdfsg1-1.dsc' imagemagick_7.1.2.13+dfsg1-1.dsc 5202 SHA256:47f3ad7fa7667bad841ec5cfa2c82432f346eb407b55abaaf2fcd4afe0372b95
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.13%2bdfsg1.orig.tar.xz' imagemagick_7.1.2.13+dfsg1.orig.tar.xz 10524452 SHA256:491e46c2dea8bc92de69d41cb80e9a4cf6a8db1778742f99f82f47203c0e8106
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.13%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.2.13+dfsg1-1.debian.tar.xz 268004 SHA256:18793469ad352b48c006fa07fb471f52efbffbaf6751afee9e0886f70506c638
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:7.1.2.13+dfsg1-1/
 
-- https://sources.debian.net/src/imagemagick/8:7.1.2.13+dfsg1-1/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.2.13+dfsg1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.2.13+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
@@ -4804,20 +4775,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-18=18.2-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.2-1.dsc' postgresql-18_18.2-1.dsc 4752 SHA256:0503b1027889da889922dc573f4bde10246858ba18f88f8310d0f18bd4962ac3
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.2.orig.tar.bz2' postgresql-18_18.2.orig.tar.bz2 22492584 SHA256:5245bd1b79700d55b8e0575be0325ef61e7bbef627e6a616e4cf36ad4687be36
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.2-1.debian.tar.xz' postgresql-18_18.2-1.debian.tar.xz 24220 SHA256:8d765faaea7827293470e23557e05bb660087b5b94cd7fc02b7d8815e0fe5ef7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-18/18.2-1/
 
-- https://sources.debian.net/src/postgresql-18/18.2-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-18/18.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-18/18.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-9`
 

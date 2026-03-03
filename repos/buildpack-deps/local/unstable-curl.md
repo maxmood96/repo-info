@@ -358,21 +358,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=9.7-3
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7-3.dsc' coreutils_9.7-3.dsc 2122 SHA256:c3a207e3aaad165765c7a6fab89045f5fd20035fea6830b9f9ebbb92ebfbff89
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7.orig.tar.xz' coreutils_9.7.orig.tar.xz 6158960 SHA256:e8bb26ad0293f9b5a1fc43fb42ba970e312c66ce92c1b0b16713d7500db251bf
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7.orig.tar.xz.asc' coreutils_9.7.orig.tar.xz.asc 833 SHA256:5070e9428bd372a7fa1f66b395b81092bb40c98f9f56a2e2bc55c47fd387e901
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7-3.debian.tar.xz' coreutils_9.7-3.debian.tar.xz 26820 SHA256:483f77876a080577f63da1d004cc1cf17d16df65d6925aefdd3294c6101eccfb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/coreutils/9.7-3/
 
-- https://sources.debian.net/src/coreutils/9.7-3/ (for browsing the source)
-- https://sources.debian.net/src/coreutils/9.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/coreutils/9.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=8.19.0~rc2-2`
 
@@ -395,20 +387,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.19.0~rc2-2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.19.0%7erc2-2.dsc' curl_8.19.0~rc2-2.dsc 3104 SHA256:0420c5b4b0031aedd34fb31aa59a167afe6f07f579f8be9e51111cd64a100765
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.19.0%7erc2.orig.tar.xz' curl_8.19.0~rc2.orig.tar.xz 2782276 SHA256:2231e09378db9b94f030c7ed56baac4b186095d9c90ab154f3d6232ffc0183a3
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.19.0%7erc2-2.debian.tar.xz' curl_8.19.0~rc2-2.debian.tar.xz 53864 SHA256:7d38d666d1da1d1cb9e0751d56f48badcf13257d3660e08c07c6f43f701f3e3b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.19.0~rc2-2/
 
-- https://sources.debian.net/src/curl/8.19.0~rc2-2/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.19.0~rc2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.19.0~rc2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-10`
 
