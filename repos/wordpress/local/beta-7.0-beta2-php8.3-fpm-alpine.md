@@ -1,10 +1,10 @@
-# `wordpress:beta-7.0-beta1-fpm-alpine`
+# `wordpress:beta-7.0-beta2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0fc1ad5ce925fc9d3588198f192a36ca2646f74285a230b0567caff130f1b78c`
-- Created: `2026-02-20T20:39:25.314749836Z`
-- Virtual Size: ~ 354.10 Mb  
+- Image ID: `sha256:1aaea05f63027ab4db15568bccbc32390002ede5e7813dae6e22e835070cf8da`
+- Created: `2026-02-27T00:13:24.09796432Z`
+- Virtual Size: ~ 354.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -486,16 +486,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.11-r0 description:
+gnutls-3.8.12-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.11-r0 webpage:
+gnutls-3.8.12-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.11-r0 installed size:
-1916 KiB
+gnutls-3.8.12-r0 installed size:
+1920 KiB
 
-gnutls-3.8.11-r0 license:
+gnutls-3.8.12-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1081,16 +1081,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.54-r0 description:
+libpng-1.6.55-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.54-r0 webpage:
+libpng-1.6.55-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.54-r0 installed size:
+libpng-1.6.55-r0 installed size:
 177 KiB
 
-libpng-1.6.54-r0 license:
+libpng-1.6.55-r0 license:
 Libpng
 
 ```

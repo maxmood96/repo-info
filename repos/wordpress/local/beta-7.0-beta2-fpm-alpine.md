@@ -1,10 +1,10 @@
-# `wordpress:beta-7.0-beta1-php8.5-fpm-alpine`
+# `wordpress:beta-7.0-beta2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5dabf5635aa5e2d7de6e26d08eee7e2f073c23d6f33756d78f3a1553840dc118`
-- Created: `2026-02-20T20:40:31.550217546Z`
-- Virtual Size: ~ 375.72 Mb  
+- Image ID: `sha256:1aaea05f63027ab4db15568bccbc32390002ede5e7813dae6e22e835070cf8da`
+- Created: `2026-02-27T00:13:24.09796432Z`
+- Virtual Size: ~ 354.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.3`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc`
-  - `PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
+  - `PHP_VERSION=8.3.30`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.30.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.30.tar.xz.asc`
+  - `PHP_SHA256=67f084d36852daab6809561a7c8023d130ca07fc6af8fb040684dd1414934d48`
 
 ## `apk` (`.apk`-based packages)
 
@@ -486,16 +486,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.11-r0 description:
+gnutls-3.8.12-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.11-r0 webpage:
+gnutls-3.8.12-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.11-r0 installed size:
-1916 KiB
+gnutls-3.8.12-r0 installed size:
+1920 KiB
 
-gnutls-3.8.11-r0 license:
+gnutls-3.8.12-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1081,16 +1081,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.54-r0 description:
+libpng-1.6.55-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.54-r0 webpage:
+libpng-1.6.55-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.54-r0 installed size:
+libpng-1.6.55-r0 installed size:
 177 KiB
 
-libpng-1.6.54-r0 license:
+libpng-1.6.55-r0 license:
 Libpng
 
 ```
