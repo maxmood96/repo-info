@@ -1,10 +1,10 @@
-# `ibm-semeru-runtimes:open-8u482-b08-jdk-noble`
+# `ibm-semeru-runtimes:open-8u482-b08.1-jdk-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:67c3b193f6b2bb242d00c81755248aa4f7fe3500b9ea98e3d5daac7c30b7f3de`
-- Created: `2026-02-17T20:24:07.646900079Z`
-- Virtual Size: ~ 369.10 Mb  
+- Image ID: `sha256:fcdf5cc61e27b6c8084bd104f6edf6f790b63922c73c67534ae6d4f6dc09f85a`
+- Created: `2026-03-03T20:14:14.203863273Z`
+- Virtual Size: ~ 370.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u482-b08_openj9-0.57.0`
+  - `JAVA_VERSION=jdk8u482-b08.1_openj9-0.57.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
 - Labels:
@@ -283,12 +283,12 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.1.debian.tar.xz' coreutils_9.4-3ubuntu6.1.debian.tar.xz 41308 SHA512:abbd5d534ad307d8244f5ae6112ebe050306459ec5de4231e5dd1266361157b307c821e8c1e2bbd41f7cf6c7ab796a592fb8d2ef1cb516ae90e8050fb84c1502
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.6`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.7`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.6`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.6`
+- `curl=8.5.0-2ubuntu10.7`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -305,9 +305,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.7.dsc' curl_8.5.0-2ubuntu10.7.dsc 3051 SHA512:6dc7a2bb3ac02511df39b5d54d01c8c82fd37d2ec9f38280b3b72ee5d24caebf9f99509a60408098a0b1253d7a1d03763b989a02d34b73f0cc021bad020a92da
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.7.debian.tar.xz' curl_8.5.0-2ubuntu10.7.debian.tar.xz 66108 SHA512:8d76a18ca019987ca46e45bc8d8d5dca691f07d7689e19bd2de321b9960a5d060d2d5031c3d778be35aab88cd630e1a5ac2b1f66d07ee80a22d6a115988c0f3a
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
@@ -1262,11 +1267,11 @@ $ apt-get source -qq --print-uris libsepol=3.5-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.5-2build1.debian.tar.xz' libsepol_3.5-2build1.debian.tar.xz 27716 SHA512:9b2b126368c5e4f80d80940f7611103745b1da92bec6319f43f64cc3f6a5e13bab25758bad645e973773a4aab74fa3600694061a8368ca2176252320c0d9ebf6
 ```
 
-### `dpkg` source package: `libssh=0.10.6-2ubuntu0.2`
+### `dpkg` source package: `libssh=0.10.6-2ubuntu0.3`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.10.6-2ubuntu0.2`
+- `libssh-4:amd64=0.10.6-2ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 
@@ -1276,9 +1281,15 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libssh=0.10.6-2ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.3.dsc' libssh_0.10.6-2ubuntu0.3.dsc 2857 SHA512:40e7531177144800d6768e181bff13010ad5f2be13cd46886b50552486de8290a93fd853d9154d240d7543de850d890a2aa7a609ce64a67c01ffbe8ca5f5a093
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz' libssh_0.10.6.orig.tar.xz 561036 SHA512:40c62d63c44e882999b71552c237d73fc7364313bd00b15a211a34aeff1b73693da441d2c8d4e40108d00fb7480ec7c5b6d472f9c0784b2359a179632ab0d6c1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz.asc' libssh_0.10.6.orig.tar.xz.asc 833 SHA512:214d7920bebc80a8e6838c64ed06e070709a96fabfb4fff657b55f9588bc0e1612887fe887d23de73ad3540f3bb85288e62eb6a11ccd4bc80afbd44d34ba70d4
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.3.debian.tar.xz' libssh_0.10.6-2ubuntu0.3.debian.tar.xz 56132 SHA512:d67a49e2ebd02bfc96fd424e9a8201eeedaa51279fd4d7264a22cd6b7262908adea1cef61711a9c8b8305872297c9920f1da5101dcbf96b164f6ae13135da99b
+```
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3ubuntu0.24.04.2`
 
