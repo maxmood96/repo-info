@@ -1,0 +1,3 @@
+## `solr:10-slim`
+
+**does not exist** (yet?)

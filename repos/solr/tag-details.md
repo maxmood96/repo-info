@@ -2,6 +2,12 @@
 
 # Tags of `solr`
 
+-	[`solr:10`](#solr10)
+-	[`solr:10-slim`](#solr10-slim)
+-	[`solr:10.0`](#solr100)
+-	[`solr:10.0-slim`](#solr100-slim)
+-	[`solr:10.0.0`](#solr1000)
+-	[`solr:10.0.0-slim`](#solr1000-slim)
 -	[`solr:9`](#solr9)
 -	[`solr:9-slim`](#solr9-slim)
 -	[`solr:9.10`](#solr910)
@@ -14,6 +20,30 @@
 -	[`solr:9.9.0-slim`](#solr990-slim)
 -	[`solr:latest`](#solrlatest)
 -	[`solr:slim`](#solrslim)
+
+## `solr:10`
+
+**does not exist** (yet?)
+
+## `solr:10-slim`
+
+**does not exist** (yet?)
+
+## `solr:10.0`
+
+**does not exist** (yet?)
+
+## `solr:10.0-slim`
+
+**does not exist** (yet?)
+
+## `solr:10.0.0`
+
+**does not exist** (yet?)
+
+## `solr:10.0.0-slim`
+
+**does not exist** (yet?)
 
 ## `solr:9`
 
