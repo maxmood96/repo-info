@@ -1,9 +1,9 @@
-# `silverpeas:6.4.5`
+# `silverpeas:6.4.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6946270ed7a6950df793c34820d5526188cc57bb2d3dd9f6f65e149caedbf920`
-- Created: `2026-02-17T20:40:07.355963613Z`
+- Image ID: `sha256:b45b2040d9b6e3a214c2cfdee3723240eef6deb39563dc8dc565456ba10000cf`
+- Created: `2026-03-02T19:53:18.34546875Z`
 - Virtual Size: ~ 2.87 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,16 +18,16 @@
   - `JAVA_HOME=/docker-java-home`
   - `SILVERPEAS_HOME=/opt/silverpeas`
   - `JBOSS_HOME=/opt/wildfly`
-  - `SILVERPEAS_VERSION=6.4.5`
+  - `SILVERPEAS_VERSION=6.4.6`
   - `WILDFLY_VERSION=26.1.3`
 - Labels:
   - `build=1`
-  - `description=Image to install and to run Silverpeas 6.4.5`
-  - `name=Silverpeas 6.4.5`
+  - `description=Image to install and to run Silverpeas 6.4.6`
+  - `name=Silverpeas 6.4.6`
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
   - `vendor=Silverpeas`
-  - `version=6.4.5`
+  - `version=6.4.6`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -572,13 +572,13 @@ $ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.16
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.16.debian.tar.xz' cups_2.4.1op1-1ubuntu4.16.debian.tar.xz 373352 SHA512:507dad6404b26c7dd3068909b05bf9b7268107681aaf743b172c47289cc19f8d1eada1d1fa20364738accfb6f898d578f94d2b1908a28283e17b8c2b2ea2fcbc
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.21`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.22`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.21`
-- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.21`
-- `libcurl4:amd64=7.81.0-1ubuntu1.21`
+- `curl=7.81.0-1ubuntu1.22`
+- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.22`
+- `libcurl4:amd64=7.81.0-1ubuntu1.22`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -589,9 +589,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.22
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.22.dsc' curl_7.81.0-1ubuntu1.22.dsc 3143 SHA512:7e63b90ddaa9951597a1047a3628c7fb5db3e012bb13e25ebb76c2211cac957103c7d5289c20efb7fcac138db632338570e70049dc4af7f2a15d4571fc36e483
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.22.debian.tar.xz' curl_7.81.0-1ubuntu1.22.debian.tar.xz 84604 SHA512:3beaa199b3f7d53ab9267682fd434107581c8a3c7ef1ed58d81b1a3d2ba0c68ec83d952f41e264afe830c12afcaf18c834c02c82eebc0c83086616ea4be18929
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -1140,16 +1146,16 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.3-2
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.3-2.debian.tar.xz' game-music-emu_0.6.3-2.debian.tar.xz 4284 SHA512:3aa6b247cc2ecaa9baa9e97355c1081a024bb971f732189ef3bbcfa99fe716350e1b9854f52e7d3e279e7dbcbaef0b046fc57b9b96284b7960cb67fd854c006c
 ```
 
-### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04.2`
+### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04.3`
 
 Binary Packages:
 
-- `gcc-12-base:amd64=12.3.0-1ubuntu1~22.04.2`
-- `libgcc-s1:amd64=12.3.0-1ubuntu1~22.04.2`
-- `libgfortran5:amd64=12.3.0-1ubuntu1~22.04.2`
-- `libgomp1:amd64=12.3.0-1ubuntu1~22.04.2`
-- `libquadmath0:amd64=12.3.0-1ubuntu1~22.04.2`
-- `libstdc++6:amd64=12.3.0-1ubuntu1~22.04.2`
+- `gcc-12-base:amd64=12.3.0-1ubuntu1~22.04.3`
+- `libgcc-s1:amd64=12.3.0-1ubuntu1~22.04.3`
+- `libgfortran5:amd64=12.3.0-1ubuntu1~22.04.3`
+- `libgomp1:amd64=12.3.0-1ubuntu1~22.04.3`
+- `libquadmath0:amd64=12.3.0-1ubuntu1~22.04.3`
+- `libstdc++6:amd64=12.3.0-1ubuntu1~22.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libgfortran5/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -1160,9 +1166,14 @@ Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.3.dsc' gcc-12_12.3.0-1ubuntu1~22.04.3.dsc 27845 SHA512:8e4d9743dc772aefc525a1ee04055e6c814e0a36b929ee2d2660bb341d44c06641b860fd567a750bc4fb3e90f1f5f9b6480931018a1681a6a87326e2200baffa
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0.orig.tar.gz' gcc-12_12.3.0.orig.tar.gz 91555468 SHA512:a33ce506594e13cf96f0419e6d62b71f8906c87c69426218bf8679d281865f1b170bc2f7379216ae1d6ad9f6bdbf5819c34c65c7537fdb74179c27b0d4ab7b48
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.3.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.3.debian.tar.xz 587456 SHA512:d7721ad3f05f4918ac658b7df557db130cd5549b138578a212f616dec53485d4e80a59c4ef2afc7b46ddd66e51dd77a4036d57e8f99a44a4c4be3eff854f62e3
+```
 
 ### `dpkg` source package: `gdk-pixbuf=2.42.8+dfsg-1ubuntu0.4`
 
@@ -3829,12 +3840,12 @@ $ apt-get source -qq --print-uris libsoxr=0.1.3-4build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsoxr/libsoxr_0.1.3-4build2.debian.tar.xz' libsoxr_0.1.3-4build2.debian.tar.xz 5204 SHA512:1d035d3401469e531eb4a1552e5cbbaece8b0c455fe75f73898b925752a42c1c8e008440f450f0d1c6d70f52735dba673f72f019ae84cd38f9052e5dc177da00
 ```
 
-### `dpkg` source package: `libssh=0.9.6-2ubuntu0.22.04.5`
+### `dpkg` source package: `libssh=0.9.6-2ubuntu0.22.04.6`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.9.6-2ubuntu0.22.04.5`
-- `libssh-gcrypt-4:amd64=0.9.6-2ubuntu0.22.04.5`
+- `libssh-4:amd64=0.9.6-2ubuntu0.22.04.6`
+- `libssh-gcrypt-4:amd64=0.9.6-2ubuntu0.22.04.6`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`, `/usr/share/doc/libssh-gcrypt-4/copyright`)
 
@@ -3844,9 +3855,15 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`, `/usr/share/doc/lib
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libssh=0.9.6-2ubuntu0.22.04.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.6.dsc' libssh_0.9.6-2ubuntu0.22.04.6.dsc 2884 SHA512:e627cb31d8ce8d312b8e497a26defe40b15a2b7cd378268c2fb83329114a3cbcc682c6eb2f21c0faeaf69c6d247e2964afff7596a9d4211fbe42a6b8f840ece9
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz' libssh_0.9.6.orig.tar.xz 1053056 SHA512:4040ec4af937e95be2e41313ef6d4db60b46b8d4dea10c09402398127c1d1ca8843392d207088aeee3c7ef631c6ae7b66861327dcebf78ed3af0723777619fd1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz.asc' libssh_0.9.6.orig.tar.xz.asc 833 SHA512:1b6223efe9e4ce864cd8d97d517f9f0d38c1cd502b5874fdc6a58731038c2830a72ce753f02fc062d9d4d5922107ec9a2e62fe24a704bb5dec0dcfecdb569fe6
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.6.debian.tar.xz' libssh_0.9.6-2ubuntu0.22.04.6.debian.tar.xz 75504 SHA512:bf6cdca5b5b4171e7ced772bfd6283b0a5af95a0194c30911079d1d2b4bd62781de96251a1a9ade495d6dfd4ddb1885a617baf5b8a04e8e8737add6a698a51a3
+```
 
 ### `dpkg` source package: `libtasn1-6=4.18.0-4ubuntu0.2`
 
@@ -4161,11 +4178,11 @@ $ apt-get source -qq --print-uris libvorbis=1.3.7-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis_1.3.7-1build2.debian.tar.xz' libvorbis_1.3.7-1build2.debian.tar.xz 11748 SHA512:c9fa8e209f79edd59fc38cc586a3afca7d5d98829d6546193f22e046b0d040310f7b8d110ec2e3298ac554d174d9e4d7530ebcf93da5f20b3b3c6ce9279edbab
 ```
 
-### `dpkg` source package: `libvpx=1.11.0-2ubuntu2.4`
+### `dpkg` source package: `libvpx=1.11.0-2ubuntu2.5`
 
 Binary Packages:
 
-- `libvpx7:amd64=1.11.0-2ubuntu2.4`
+- `libvpx7:amd64=1.11.0-2ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/libvpx7/copyright`)
 
@@ -4173,9 +4190,14 @@ Licenses: (parsed from: `/usr/share/doc/libvpx7/copyright`)
 - `ISC`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libvpx=1.11.0-2ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.11.0-2ubuntu2.5.dsc' libvpx_1.11.0-2ubuntu2.5.dsc 2360 SHA512:24225be0b22d54866cc5d4ace688d67810871b95f482af38b9a5d4c09e1dbf4e626dc31ad1dca72860d5198b9bd388c62916c48590cf80f812bea6521c1ac736
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.11.0.orig.tar.gz' libvpx_1.11.0.orig.tar.gz 5347256 SHA512:7aa5d30afa956dccda60917fd82f6f9992944ca893437c8cd53a04d1b7a94e0210431954aa136594dc400340123cc166dcc855753e493c8d929667f4c42b65a5
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.11.0-2ubuntu2.5.debian.tar.xz' libvpx_1.11.0-2ubuntu2.5.debian.tar.xz 20012 SHA512:bd2d432d825848928579d0e11f679bedb94be54ef7be2e97272bc8aa08eab52a1fd2bc7fc0e5a0842e9723a6dbc604b8ddda7adce0891277beaa9ffaf4f6d7cf
+```
 
 ### `dpkg` source package: `libwebp=1.2.2-2ubuntu0.22.04.2`
 
