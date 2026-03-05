@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f486bf281e919d19fdbad5ea8d3c6cfac599a1656392fbc614f49280bf199b64`
-- Created: `2026-02-10T19:18:21.175416717Z`
-- Virtual Size: ~ 733.10 Mb  
+- Image ID: `sha256:2da1cb7cf148f5711af3d8bcd478879d2d176e8cc34449394d11102ee5477325`
+- Created: `2026-03-02T22:07:14.419053608Z`
+- Virtual Size: ~ 733.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-02-04T04:54:43Z`
+  - `build-date=2026-03-02T08:55:38Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.1`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-02-04T04:54:43Z`
-  - `org.opencontainers.image.revision=1b6103ed0475d35e7b65ab0a0bcaa2f6d4bde92b`
-  - `release=1770180557`
+  - `org.opencontainers.image.created=2026-03-02T08:55:38Z`
+  - `org.opencontainers.image.revision=22680d9fff6e4cead236be943e791fde5247c69a`
+  - `release=1772441549`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=1b6103ed0475d35e7b65ab0a0bcaa2f6d4bde92b`
+  - `vcs-ref=22680d9fff6e4cead236be943e791fde5247c69a`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.1`
