@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d30f9416c014006171d663166203c648e3dbb243a857bf4e01f68eb399d6659`
-- Created: `2026-02-17T21:21:46.686025278Z`
-- Virtual Size: ~ 417.65 Mb  
+- Image ID: `sha256:5d8774631e3a9a3a113d7b77f13a308073a65e166767323d34f88dfbc2e887c2`
+- Created: `2026-03-04T19:02:01.625215333Z`
+- Virtual Size: ~ 417.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,8 +16,8 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.10+7`
-  - `JRUBY_VERSION=10.0.3.0`
-  - `JRUBY_SHA256=0edb5b02c3f482205d1cf8358f38e31d9e4c6d93a210039224750c72501e4717`
+  - `JRUBY_VERSION=10.0.4.0`
+  - `JRUBY_SHA256=d0260ebc753a5e9ae49be1eec0e4eec907aaf2b7184faaafc879b0ec3253ca24`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -1432,19 +1432,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-100.100`
+### `dpkg` source package: `linux=6.8.0-101.101`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-100.100`
+- `linux-libc-dev:amd64=6.8.0-101.101`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-101.101
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-101.101.dsc' linux_6.8.0-101.101.dsc 9448 SHA512:e2bcf8066c7fbacc16867c076ac58001d9f051c5cba111ab24877910b259dc1efdea6548f494fe5675193a6e1f07a00787850fa265b9fb74ba8b38af0474828b
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-101.101.diff.gz' linux_6.8.0-101.101.diff.gz 7518547 SHA512:793c160837128b1024909a5895ef7408fa0dcb3914e0fc4babc02bd8e667598007a25fa0c04e051f4b46092932cb09435615f45b5df0cb2d0baba488a38f6d6f
+```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
