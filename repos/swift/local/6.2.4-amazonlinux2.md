@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:efa0f73b5ba61c5ec431e16d7a7057fb23daa8d08b061bdaf9943f9b50d0a748`
-- Created: `2026-02-27T22:44:21.738865725Z`
-- Virtual Size: ~ 4.36 Gb  
+- Image ID: `sha256:b73030d431199ee4480c74b45970094291c119775fa8904b095071dc11d7b595`
+- Created: `2026-03-02T23:16:02.749300608Z`
+- Virtual Size: ~ 4.35 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -296,15 +296,15 @@ $ dnf --quiet download --source --url elfutils-libs-0.176-2.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/1c91483c986f8c6728684f387c271636212f24068e329c1b81b7502fdeeadddc/elfutils-0.176-2.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `expat-2.1.0-15.amzn2.0.5.x86_64`
+### `rpm` package: `expat-2.1.0-15.amzn2.0.6.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.1.0-15.amzn2.0.5
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/39cb8c3ec35dfbe505eeb66cc9a7abf92ea4e556cec3dfcbc1440461be75a7ce/expat-2.1.0-15.amzn2.0.5.src.rpm
+$ dnf --quiet download --source --url expat-2.1.0-15.amzn2.0.6
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/cb76372c7dd7f0831630d6065a92440477bc5d2290f30454701f425445700db8/../../../../../blobstore/acb46a8d20e2dbed13de17d598579c51f44e602a204689a111aca2224a01b701/expat-2.1.0-15.amzn2.0.6.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.11-36.amzn2.0.1.x86_64`
