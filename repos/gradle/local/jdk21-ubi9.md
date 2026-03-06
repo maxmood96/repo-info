@@ -1,10 +1,10 @@
-# `gradle:9.3.1-jdk21-ubi9`
+# `gradle:9.4.0-jdk21-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9576d9e94d6c3b52f66fdb146873c7874c40c6ecce6ae43367f6ab2d36d00073`
-- Created: `2026-02-18T20:10:12.042048179Z`
-- Virtual Size: ~ 756.54 Mb  
+- Image ID: `sha256:fb348ba4b1e1a08eff5ec56073f2d1c6d08d8b14d30d8a2453e7e42768ed81b4`
+- Created: `2026-03-04T17:54:42.0230506Z`
+- Virtual Size: ~ 757.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.10+7`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.3.1`
+  - `GRADLE_VERSION=9.4.0`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-02-17T16:42:34Z`
@@ -501,12 +501,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/sourc
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url git-lfs-3.6.1-4.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-lfs-3.6.1-4.el9_7.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `glib2-2.68.4-18.el9_7.1.x86_64`
 

@@ -1,10 +1,10 @@
-# `gradle:9.3.1-jdk-lts-and-current-alpine`
+# `gradle:9.4.0-jdk-lts-and-current-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:df2016d9d6acc93e97c5250dcf2cf869e2a91495ae12cef1d6657a9a4c381d92`
-- Created: `2026-02-05T22:40:42.084383375Z`
-- Virtual Size: ~ 576.00 Mb  
+- Image ID: `sha256:b105dd8ebaf3065e58f5b240ef905d7edb6cdfef2a4ffa7ac2ad83b410cff947`
+- Created: `2026-03-04T17:55:47.216866286Z`
+- Virtual Size: ~ 576.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `JAVA_CURRENT_HOME=/opt/java/openjdk25`
   - `JAVA_LTS_HOME=/opt/java/openjdk25`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.3.1`
+  - `GRADLE_VERSION=9.4.0`
 
 ## `apk` (`.apk`-based packages)
 

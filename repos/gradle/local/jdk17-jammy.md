@@ -1,10 +1,10 @@
-# `gradle:9.3.1-jdk17-jammy`
+# `gradle:9.4.0-jdk17-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f8344aaaa9f0e50a9edae417d1f499dcfe9ad999d89c328414bc1c17cc101cc3`
-- Created: `2026-02-17T21:18:42.536825874Z`
-- Virtual Size: ~ 723.95 Mb  
+- Image ID: `sha256:42ac36fc30df1bad5d5f770393768facc3a6be177fda7a436967af6fd38ab1e3`
+- Created: `2026-03-04T17:55:10.636139374Z`
+- Virtual Size: ~ 725.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.18+8`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.3.1`
+  - `GRADLE_VERSION=9.4.0`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -389,13 +389,13 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.debian.tar.xz' coreutils_8.32-4.1ubuntu1.2.debian.tar.xz 44868 SHA512:7718e917f8f2c5c5574e73a079ea8fd3b32bc898f2e12168dc3711dfdd896e4727283011050b80f65e60994fca49da031d70901d453612132764dca7dec99543
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.21`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.22`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.21`
-- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.21`
-- `libcurl4:amd64=7.81.0-1ubuntu1.21`
+- `curl=7.81.0-1ubuntu1.22`
+- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.22`
+- `libcurl4:amd64=7.81.0-1ubuntu1.22`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -406,9 +406,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.22
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.22.dsc' curl_7.81.0-1ubuntu1.22.dsc 3143 SHA512:7e63b90ddaa9951597a1047a3628c7fb5db3e012bb13e25ebb76c2211cac957103c7d5289c20efb7fcac138db632338570e70049dc4af7f2a15d4571fc36e483
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.22.debian.tar.xz' curl_7.81.0-1ubuntu1.22.debian.tar.xz 84604 SHA512:3beaa199b3f7d53ab9267682fd434107581c8a3c7ef1ed58d81b1a3d2ba0c68ec83d952f41e264afe830c12afcaf18c834c02c82eebc0c83086616ea4be18929
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -800,12 +806,12 @@ $ apt-get source -qq --print-uris git-lfs=3.0.2-1ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1ubuntu0.3.debian.tar.xz' git-lfs_3.0.2-1ubuntu0.3.debian.tar.xz 4432 SHA512:023ef83d2682cf50b7d9d38c272cbd009eb4c8ce7ef046a04c8f4750bd634cc9ab43307a46faa16c77d84f942670491bd6033ab949990d79fb8344d4afb54c75
 ```
 
-### `dpkg` source package: `git=1:2.34.1-1ubuntu1.15`
+### `dpkg` source package: `git=1:2.34.1-1ubuntu1.17`
 
 Binary Packages:
 
-- `git=1:2.34.1-1ubuntu1.15`
-- `git-man=1:2.34.1-1ubuntu1.15`
+- `git=1:2.34.1-1ubuntu1.17`
+- `git-man=1:2.34.1-1ubuntu1.17`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -827,9 +833,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.17
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.17.dsc' git_2.34.1-1ubuntu1.17.dsc 2976 SHA512:9d1d28d9dd12727e504fcde25be88b6434c4a066ffa717384e69c6e3ad553671775f58a87f9d61dfbe518999b18ff50615b1c48445322a02990c9e8ccd26eee9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1.orig.tar.xz' git_2.34.1.orig.tar.xz 6623760 SHA512:a1a8e9e6f64b1da25508fbd2f783564dcdbe181fb5ff1ebab3bdac6db6094e18acc334479a1abf22ac17ce4f733cc3e10a664db9ab234cd523735a3f027b42db
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.17.debian.tar.xz' git_2.34.1-1ubuntu1.17.debian.tar.xz 789788 SHA512:93417529c6e674a0b8be999c61a15a36cb79b6bb40d25db323bfd9fd92250f505b8cca4913327eca4dbc093bb813a407806196362f0eae750556b91c233ebbf6
+```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.13`
 
