@@ -1,10 +1,10 @@
-# `matomo:5.7.1-fpm-alpine`
+# `matomo:5.8.0-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d9e9d6ceeee701f03904aad1d16f88ea809c59dda43b6c185a483ad7dde6c352`
-- Created: `2026-02-13T19:14:46.444206405Z`
-- Virtual Size: ~ 170.02 Mb  
+- Image ID: `sha256:84fb17d3457dd3c0aec5fc75cc0befc70f6b69633c3c57de626644dd7b30b12b`
+- Created: `2026-03-05T00:22:38.564736812Z`
+- Virtual Size: ~ 170.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.18.tar.xz.asc`
   - `PHP_SHA256=957a9b19b4a8e965ee0cc788ca74333bfffaadc206b58611b6cd3cc8b2f40110`
   - `PHP_MEMORY_LIMIT=256M`
-  - `MATOMO_VERSION=5.7.1`
+  - `MATOMO_VERSION=5.8.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -471,16 +471,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.54-r0 description:
+libpng-1.6.55-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.54-r0 webpage:
+libpng-1.6.55-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.54-r0 installed size:
+libpng-1.6.55-r0 installed size:
 177 KiB
 
-libpng-1.6.54-r0 license:
+libpng-1.6.55-r0 license:
 Libpng
 
 ```
