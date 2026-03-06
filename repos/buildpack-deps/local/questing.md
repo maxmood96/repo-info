@@ -3875,14 +3875,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-17=17.7-0ubuntu0.25.10.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.7-0ubuntu0.25.10.1.dsc' postgresql-17_17.7-0ubuntu0.25.10.1.dsc 4381 SHA512:39311d7d44bb87b0cd882ccdd3b6319067a00441b195f9c46f1826a6d03e6a90e8075b415eaadfb7457fc18f2e5418284b0063c1a599c397219b4812f9641832
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.7.orig.tar.gz' postgresql-17_17.7.orig.tar.gz 28186920 SHA512:1beaab709e5747138f1d4c0e1da460ac7e4215f4bb9e64b06227ceaeb12134c8c180d42599e95988ace8f466aa3bed70a2ddd8f81824ea926b0bd363cdda41f1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.7-0ubuntu0.25.10.1.debian.tar.xz' postgresql-17_17.7-0ubuntu0.25.10.1.debian.tar.xz 27552 SHA512:b8792481eb8556d043f2f9754337329e3418c777a15975fdc545519aaf4fab68a39b01473b5bf9a6972b6436fa81aaaf580d68d6e9f89e7f28a44706c96dcea7
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-8ubuntu3`
 

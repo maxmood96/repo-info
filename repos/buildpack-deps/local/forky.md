@@ -279,21 +279,13 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake=1:1.18.1-3
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.18.1-3.dsc' automake_1.18.1-3.dsc 2483 SHA256:67798dc5a99169225f9d05f140b11e7af9a4be4c950240e7631c8acd49aecf3e
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.18.1.orig.tar.xz' automake_1.18.1.orig.tar.xz 1652392 SHA256:168aa363278351b89af56684448f525a5bce5079d0b6842bd910fdd3f1646887
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.18.1.orig.tar.xz.asc' automake_1.18.1.orig.tar.xz.asc 488 SHA256:728ce05b02f123ea360ab9d168111bc98470afc7568253e93ee2a7582ef5ddb4
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.18.1-3.debian.tar.xz' automake_1.18.1-3.debian.tar.xz 22712 SHA256:1912eaece78d7599784546aa86db0fb1d038e4988a5392e763f7f6af7637923a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/automake/1:1.18.1-3/
 
-- https://sources.debian.net/src/automake/1:1.18.1-3/ (for browsing the source)
-- https://sources.debian.net/src/automake/1:1.18.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/automake/1:1.18.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autotools-dev=20240727.1`
 
@@ -811,19 +803,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.91
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.91.dsc' debconf_1.5.91.dsc 2035 SHA256:1aa3ceaef24ef533cfffe7f9ca750c6325dbaea86a7abca77cb4439ceae930d8
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.91.tar.xz' debconf_1.5.91.tar.xz 609964 SHA256:18f3f43924ccc870be483d7c5f1a9be59e51ae1da403059d654666b5a175bf15
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.91/
 
-- https://sources.debian.net/src/debconf/1.5.91/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.91/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.91/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2025.1`
 
@@ -1948,20 +1934,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.2.13+dfsg1-1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.13%2bdfsg1-1.dsc' imagemagick_7.1.2.13+dfsg1-1.dsc 5202 SHA256:47f3ad7fa7667bad841ec5cfa2c82432f346eb407b55abaaf2fcd4afe0372b95
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.13%2bdfsg1.orig.tar.xz' imagemagick_7.1.2.13+dfsg1.orig.tar.xz 10524452 SHA256:491e46c2dea8bc92de69d41cb80e9a4cf6a8db1778742f99f82f47203c0e8106
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.13%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.2.13+dfsg1-1.debian.tar.xz 268004 SHA256:18793469ad352b48c006fa07fb471f52efbffbaf6751afee9e0886f70506c638
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:7.1.2.13+dfsg1-1/
 
-- https://sources.debian.net/src/imagemagick/8:7.1.2.13+dfsg1-1/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.2.13+dfsg1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.2.13+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
@@ -3789,20 +3768,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.18.12-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.18.12-1.dsc' linux_6.18.12-1.dsc 183309 SHA256:dfb2631dbef6545a0d82cda27255ecb9b4d422b5c33fea95d044063c2514f36a
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.18.12.orig.tar.xz' linux_6.18.12.orig.tar.xz 157399424 SHA256:cdd35bf421e4c2c480ab333ef82053d3244e913c08ea7c1fe7ee387e10adb395
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.18.12-1.debian.tar.xz' linux_6.18.12-1.debian.tar.xz 1463996 SHA256:fa3e0f2a3e7dd9fc8cc18e4fbf0da2f1921f8d893e6108261872d9688b3936c4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/6.18.12-1/
 
-- https://sources.debian.net/src/linux/6.18.12-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.18.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.18.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-6`
 

@@ -368,14 +368,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.46-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.46-1ubuntu1.dsc' binutils_2.46-1ubuntu1.dsc 9064 SHA512:b16aed586fdb141163747dba315c500bb1844e2dd3630150ad7dc8a3b02da5e2bfa5f776d32a9b951be44630f868abfacdcd3faba500ecfb16717fa06dcb4025
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.46.orig.tar.xz' binutils_2.46.orig.tar.xz 29830224 SHA512:20540d217cd57c53bc51151046b3e406ee75b80917c9b0b6c37aafaf61702ea4caec533b5554f4dea12e6e211452a6adbaa02004fec12c56e0ef31028acc427a
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.46-1ubuntu1.debian.tar.xz' binutils_2.46-1ubuntu1.debian.tar.xz 135728 SHA512:4567a3a61e7e40d57c3023adb74946090eeadd5fa358361c73e1adfc8c9945d2963bda0144694449ae0d58aca04d5000c1f232eab869303b81aac29b9a114388
-```
 
 ### `dpkg` source package: `brotli=1.2.0-3`
 
@@ -905,15 +900,9 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.46-5build1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.46-5build1.dsc' file_5.46-5build1.dsc 2292 SHA512:3a7c29f9b78adda5049a56ec26f03679a51ba974bc36be0f7de8ff3eee33b933584840203b6923a79ab3a92a3d0e8eb17a64d6ea46c9d8991472c50c13291e7e
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.46.orig.tar.gz' file_5.46.orig.tar.gz 1312892 SHA512:a6cb7325c49fd4af159b7555bdd38149e48a5097207acbe5e36deb5b7493ad6ea94d703da6e0edece5bb32959581741f4213707e5cb0528cd46d75a97a5242dc
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.46.orig.tar.gz.asc' file_5.46.orig.tar.gz.asc 201 SHA512:a6e6fe92d909a9b153c88828942c2963b3b683cda5f6d7ae281e4ca42b30a582e82094b182976515ee85689200b8f6512d34b7f39291cbf9623d583ce688530a
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.46-5build1.debian.tar.xz' file_5.46-5build1.debian.tar.xz 37088 SHA512:16a41aec0f608438508a9d3ddb67eef430e3bd8ed874b0dc8e03b07c84d15d2653a21b9a450f872b70b9925383ca8897e7eccbbdd5bd0a5dae87c3700e57cfe2
-```
 
 ### `dpkg` source package: `findutils=4.10.0-3build1`
 
@@ -1238,15 +1227,13 @@ Licenses: (parsed from: `/usr/share/doc/girepository-tools/copyright`, `/usr/sha
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.87.2-3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.87.2-3.dsc' glib2.0_2.87.2-3.dsc 4684 SHA512:dda0b0752a67e22d93dc42d8b48b3c290b951a8f1fcb81d1bfb1cc8d787637a4e76ea811a7b483702c2e927283c676fb2d3cc20ee728840343f224081d32728e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.87.2.orig-unicode-data.tar.xz' glib2.0_2.87.2.orig-unicode-data.tar.xz 666552 SHA512:32c5e2303868cd80b85f83e94e3f1418ea050fde2f892db0463a41040db2ff0e6db7b29b0af5d0a7bd355976765d1f23ad947230d8c46696a6fd249fc465de6c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.87.2.orig.tar.xz' glib2.0_2.87.2.orig.tar.xz 5747156 SHA512:6156cdf2cf88672ba23c0ffb133af0dedd65b18df318ba3a99a691678c514af8a30680082ffc86f15c25050f49668382ea81aef9642cb28a4227a3e35aacbde8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.87.2-3.debian.tar.xz' glib2.0_2.87.2-3.debian.tar.xz 148168 SHA512:a7ed17411052b0bb8ed8179c4a6c20388c84692d2dc3de6fc79b3a2e271be41a065743fb5d4af5b7409291b27fe9625f86a5d653bed158cc8adbdac588c7e628
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.87.2-3/
+
 
 ### `dpkg` source package: `glibc=2.42-2ubuntu2`
 
@@ -1560,14 +1547,9 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.13-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.13-1ubuntu4.dsc' gzip_1.13-1ubuntu4.dsc 1933 SHA512:28e928fb761398aed1e66355c6cdba4042842bcd4f8288f89f2f711675ddfb310afc5fd84319a95360b9d532d18a059055f8b0915d834313cf51c5e627c4c85c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.13.orig.tar.xz' gzip_1.13.orig.tar.xz 838248 SHA512:e3d4d4aa4b2e53fdad980620307257c91dfbbc40bcec9baa8d4e85e8327f55e2ece552c9baf209df7b66a07103ab92d4954ac53c86c57fbde5e1dd461143f94c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.13-1ubuntu4.debian.tar.xz' gzip_1.13-1ubuntu4.debian.tar.xz 21444 SHA512:0fe5f34300df6de43d296bf03a4dc1a73c744b46b091afe4fab273efd1cc2abb50ad471b7b999399cf2c5405c128ec0b8df58dc4d4b0a2ec75913e57687e06f5
-```
 
 ### `dpkg` source package: `harfbuzz=12.3.2-1`
 
@@ -2067,14 +2049,9 @@ Licenses: (parsed from: `/usr/share/doc/libdeflate-dev/copyright`, `/usr/share/d
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdeflate=1.23-2build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdeflate/libdeflate_1.23-2build1.dsc' libdeflate_1.23-2build1.dsc 2257 SHA512:ae4f6624fad59f7dbc01cd8e8ea4c84a0417fc5075edf0b7bc6f8b1164a22862004f283b794546a2c13eeabb010837533fab26fe63147c30d5ba1b8c511d9f0b
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdeflate/libdeflate_1.23.orig.tar.gz' libdeflate_1.23.orig.tar.gz 197519 SHA512:c1effb9c5ee8d65bc12ae3d0669a4a394acace13cc146300ed24a7f12a0ec058f66729e1ffbae268711bdcc4151143752ab2d56a099dd6394b2735e8e2f1b671
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdeflate/libdeflate_1.23-2build1.debian.tar.xz' libdeflate_1.23-2build1.debian.tar.xz 5696 SHA512:8f371affa26c020b4b7555c2f28f0b7f2b075ed072f25bc022e1a267dace5e0bc6886729b0920a0bb69166ea3c2c2df308c24e575e6f88b991d24fe1a47570ac
-```
 
 ### `dpkg` source package: `libedit=3.1-20251016-1`
 
@@ -3217,14 +3194,13 @@ Licenses: (parsed from: `/usr/share/doc/make/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris make-dfsg=4.4.1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/make-dfsg/make-dfsg_4.4.1-2.dsc' make-dfsg_4.4.1-2.dsc 1976 SHA512:7b9ea0aeda776b1724c74b0aa2857d3effda31b029a7b47a9d77a509ef33185d72d61827eb2e2bc81170f2172bd961e60379e30b5d1382859aee8181339f0685
-'http://archive.ubuntu.com/ubuntu/pool/main/m/make-dfsg/make-dfsg_4.4.1.orig.tar.xz' make-dfsg_4.4.1.orig.tar.xz 1125180 SHA512:7efa533e7c85e0f394d2a9c422c1cf854f304871f0c692ff74eac18597fa53d1a79b41ba1c56b88d8c79f2e6dfb8c3c3ba8640af15756f455167d62e7ed7b04c
-'http://archive.ubuntu.com/ubuntu/pool/main/m/make-dfsg/make-dfsg_4.4.1-2.debian.tar.xz' make-dfsg_4.4.1-2.debian.tar.xz 44088 SHA512:dd9442a94e3cd75ec0f2cc3f2f349fd34c25a0ba1dd5e24a62f5778b5002d9b7a4768578b9f814266fceb51b69726c9d37d33f66f3d7f3effca9d1ec786e187f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/make-dfsg/4.4.1-2/
+
 
 ### `dpkg` source package: `mawk=1.3.4.20250131-2`
 
@@ -3913,14 +3889,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-18=18.1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-18/postgresql-18_18.1-2.dsc' postgresql-18_18.1-2.dsc 4443 SHA512:e3d90f581698ba0e6a97eca5df32bb14d3c5b1c62582fbb4fbb7221c3a62b09a343132cc838ed12b17ea65707ab2a554ff60d82e2d2b15ae01e0106065cc2470
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-18/postgresql-18_18.1.orig.tar.bz2' postgresql-18_18.1.orig.tar.bz2 22423920 SHA512:bac8a9bfb12c0c70b5870d92c6f322edbfd559e9ac939e841f16d8271b5c2bc4fb2628e053b407aed71b4032e9f4cba55f1e0a8dc6a3bd4933c2b701fe69ec08
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-18/postgresql-18_18.1-2.debian.tar.xz' postgresql-18_18.1-2.debian.tar.xz 24444 SHA512:95038efc414e1400cffc26f47ec77725715b3fb6e14daf4b18704be9c4b0813832b39d926ddab1d38136ad995ca7b2b88af8c3d28abd55d2aa0978d353a44fe8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/postgresql-18/18.1-2/
+
 
 ### `dpkg` source package: `procps=2:4.0.4-9ubuntu1`
 
