@@ -2048,7 +2048,7 @@ $ docker pull rabbitmq@sha256:9af63a9979b506e01021a33721d62dead537ffef5b9ede45fc
 ## `rabbitmq:4-management`
 
 ```console
-$ docker pull rabbitmq@sha256:1dd8956ec57b0ec4f0488f7b4b705710536a0c4a9707eba0e81cb49fbd512056
+$ docker pull rabbitmq@sha256:e24c4f044b5fe04c02ba9791d6a0cd324a7ab8efbfb73821985f57f4ba36ffb2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2069,13 +2069,13 @@ $ docker pull rabbitmq@sha256:1dd8956ec57b0ec4f0488f7b4b705710536a0c4a9707eba0e8
 ### `rabbitmq:4-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:c6c17c27992a924f54b6807050deea4d0b96660d2f02dc2429d4bc593762aaef
+$ docker pull rabbitmq@sha256:ead0bc61315912c89bc3be129c85a18f86ecf72fa9f7a155ec0ba0285d65a7ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.5 MB (117485950 bytes)**  
+-	Total Size: **117.5 MB (117476873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:db2f2c58bfe46b1469a620f5913e65ecf775768434f400a28cd8f6c523273088`
+-	Image ID: `sha256:15bb315154062c4e4628ba3f26fc7cb66c1b8036ac958b041bd333ba843eaf69`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -2138,11 +2138,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:13:29 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:15:44 GMT
+# Mon, 09 Mar 2026 18:34:54 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:15:54 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:15:54 GMT
+# Mon, 09 Mar 2026 18:35:06 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:35:06 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -2183,49 +2183,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:54 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64334d258bd21250a619cbcdc0d985eda0990988cbd5dd84c4eeef5f8c249478`  
-		Last Modified: Tue, 24 Feb 2026 20:16:02 GMT  
-		Size: 274.0 B  
+	-	`sha256:1ec444487e8766fb5810ece85b7d6f05a3b2f21e5b5c9d1cdee9824f1f993761`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dae2927970cda1d06b6ff951e408f79642b775c4c05c5edf7639f2868cea9e2`  
-		Last Modified: Tue, 24 Feb 2026 20:16:03 GMT  
-		Size: 4.5 MB (4521994 bytes)  
+	-	`sha256:89f959a50a37c495453ccbc852ec87640c382688a1143fa509406aaf2417613f`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
+		Size: 4.5 MB (4512915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:2314b04bc636e3f56e20f9a3881999c4d8cd540de6264b487b5d8c8f42ca61af
+$ docker pull rabbitmq@sha256:c4531b280309520587b1d9d467d54d72af146948b98b48145af833e11ed4a652
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2502942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2c6820bee1f6cac6922f0432530d8482a70a9aeb8ef1179422d59f47cb6ef1d`
+-	Image ID: `sha256:59af29530c77d97840c2a7bee7942d897adc6ac0b1bd6ce3bde5bf8c1bdae23d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0779ebe34c553fb2ff742bea08ac6447403c362e5c2ad95831788ca2a016b54`  
-		Last Modified: Tue, 24 Feb 2026 20:16:02 GMT  
+	-	`sha256:6bc3d3d3a67ea19da663cb0efe6942e48995519df9a39bf6c6ad9d994b71006c`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
 		Size: 2.5 MB (2486673 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4b5dc74791af17a0634d4f2bdd9fdf204deea8935e132a60b75c89a9b91bd9d9`  
-		Last Modified: Tue, 24 Feb 2026 20:16:02 GMT  
+	-	`sha256:c16f1a954df1eb3e8cd28dc8c30f5fcc2ff8b5a046a5cb9944820779718dab3c`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
 		Size: 16.3 KB (16269 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:34ef27f685c574f330fc8c0231b2d6be544cb08fa5ee7c167b525e03dfd3bc30
+$ docker pull rabbitmq@sha256:fae94225610b8db05b67f1c421f54de76698352032a6d01b23471e3fe75cc4fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.3 MB (95342926 bytes)**  
+-	Total Size: **95.3 MB (95342928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c60d81d009ed21c8ea0687d6c5dcab57a6ad7af409a8454b0997440e6bee781`
+-	Image ID: `sha256:fb05b21cb774feb835451b4d6451a4fd482c6180c728bcdd49c6560e4e421993`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -2288,11 +2288,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:12:52 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:47:43 GMT
+# Mon, 09 Mar 2026 18:52:47 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:47:43 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:47:43 GMT
+# Mon, 09 Mar 2026 18:52:47 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:52:47 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -2333,9 +2333,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:18 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9171b2d7a8bf7cacd797ba223081948c495f24b79c4439b46dea40bec84cb1d0`  
-		Last Modified: Tue, 24 Feb 2026 21:47:50 GMT  
-		Size: 273.0 B  
+	-	`sha256:3ead6daaedb66453dc19d813a3388f39ea88405763287e39348dcd6472258445`  
+		Last Modified: Mon, 09 Mar 2026 18:52:55 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2345,37 +2345,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:ac338320c385eb722f501ffc2b007fa424c44faf869ff93f580b56e99e6b6544
+$ docker pull rabbitmq@sha256:6481334695d308ad2d3391a1c58c4230e5f5d76b345b6041aa05440f9051931c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2503830 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28f09c50339c7f737afadcc61c430e3b44796b3cd111e7d05c2eb4592ece17d5`
+-	Image ID: `sha256:3ae32b2e0027cea037a25f6405776328ff38aa1460df25e382de8aba47e4ddda`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91aee14d643493651b5017c190c345dd01ea9d571a86438bd819d560d67771cd`  
-		Last Modified: Tue, 24 Feb 2026 21:47:50 GMT  
+	-	`sha256:aea3c2043c6653921ddf074739978ef3c42a10c7b332a74cf03ba883d48ecb61`  
+		Last Modified: Mon, 09 Mar 2026 18:52:55 GMT  
 		Size: 2.5 MB (2487473 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:71408ee6a545cef806b252336d325c29f8086a8b0063dca34b4dd6b9fb69aa8c`  
-		Last Modified: Tue, 24 Feb 2026 21:47:50 GMT  
+	-	`sha256:59d6ad5a0184f4da755f73734e714265e9cb5cae8797e3a664a7b5f9a9da65d9`  
+		Last Modified: Mon, 09 Mar 2026 18:52:55 GMT  
 		Size: 16.4 KB (16357 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:3cdacffb9c7a477f76f79a2b51a0b052531a5992935e1ca20065ddf4a4b26e9f
+$ docker pull rabbitmq@sha256:841164a65b40c2af2621415fb6a2afc6187ad5ef97ef4d75db3df38d999d8d56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.1 MB (115129888 bytes)**  
+-	Total Size: **115.1 MB (115118404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cf168e0fe04e2d9b35599f08fd4b24cb0daaf08c79ef30c7e361d61ed415578`
+-	Image ID: `sha256:c40708241e06cc425d50f7be602bd948cc53ab5b5dcd30617961d95f45f388fa`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -2438,11 +2438,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:14:34 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:28:42 GMT
+# Mon, 09 Mar 2026 18:36:17 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
+# Mon, 09 Mar 2026 18:36:31 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:31 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -2483,37 +2483,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:15:01 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:160cd735a496288f5ec5a55d15b7ceb3f2d27c142367fe36586467ef8d6b7d7c`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 274.0 B  
+	-	`sha256:904d8832bc51e2f558b758403f7124e6691f1a945b3f877c4eff0525969fa77c`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
+		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a982de54673799e6bbee20017e5da2603ace4929676311e48cb8049c51ce7d8f`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 4.3 MB (4287756 bytes)  
+	-	`sha256:baf25fcbded3882b6893f82f4abbeaf45799ed0929d0a7016556edb7055556b1`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
+		Size: 4.3 MB (4276269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:18fa18f4516892b8499ebd682c0d29b526a33bed47738534ff94bc820d72de63
+$ docker pull rabbitmq@sha256:ff0bf2a55abb64efe1abcf88f38082a0474462a7dc91001c88e8fa876d92c4b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2504121 bytes)**  
+-	Total Size: **2.5 MB (2504120 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:739093d701af4f9b199636e7836c03a701469230288f4791c310b42ee5df1970`
+-	Image ID: `sha256:70928dd3c8c3463c379dfb1bd65c149eccd9adc22f8013ad02b2bffe09d090a8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7094eff595d992e9a1a40b742ac2a63a9097e9d7fef8c36f8fb4148534237ea5`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:18bb13853e48ab6db000be8c3d59efaffdcfb0af7acac89e617bbb07c811089d`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
 		Size: 2.5 MB (2487733 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ace710879c37a7475d6c2102f321d293fd0e69bf33615bef38dd77f7666c73ca`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 16.4 KB (16388 bytes)  
+	-	`sha256:ee4fbea2acd9709fccd365f51b8988eb2f397fd12cd50537841c35ec50db6c50`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
+		Size: 16.4 KB (16387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4-management` - linux; ppc64le
@@ -2819,13 +2819,13 @@ $ docker pull rabbitmq@sha256:e0b7e11e0362a65a22bf0de9058a9eb1489b244dfdc047d129
 ### `rabbitmq:4-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:25562e19fd580fe683f5b9c8f5064d364a20cdb6d3d97331d82e5d7c4256fd04
+$ docker pull rabbitmq@sha256:89419caf2c88a0d99ca9b4829813a0a819fa647341e8d848714084de7d88e533
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.1 MB (105095189 bytes)**  
+-	Total Size: **105.1 MB (105095192 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bd80ab0c4d0f85951f3a54a7c4788d93463e5d2836a2c728bf2701568ca5abc`
+-	Image ID: `sha256:67c9738ac67c3396d81342ef13bd8b7126373551bdf7faa6ceca2f2eaaf82560`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -2888,11 +2888,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:16 GMT
 CMD ["rabbitmq-server"]
-# Fri, 20 Feb 2026 20:09:57 GMT
+# Mon, 09 Mar 2026 19:05:50 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:06:13 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:06:13 GMT
+# Mon, 09 Mar 2026 19:05:50 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:05:50 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -2933,9 +2933,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:20:13 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ab5f27d11663c4af8571b58dbfa9ced85e1eab5029057eeba374eb30b512c6b`  
-		Last Modified: Fri, 20 Feb 2026 20:10:12 GMT  
-		Size: 273.0 B  
+	-	`sha256:c9dd1dafdde0962cebba72e18d7dc2ebadf62cde402e7c6f2ab1255709f6061f`  
+		Last Modified: Mon, 09 Mar 2026 19:06:03 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2945,31 +2945,31 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:1f62079a26e900fed9a44e5c1927cd6f13f5021aabe776e4753b0e8d1a32c7a6
+$ docker pull rabbitmq@sha256:7f23f570119f36adc5270e9d0f947c67fd62ace065c0470b81cfeeb6167f68cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2505047 bytes)**  
+-	Total Size: **2.5 MB (2505046 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bceff5b29c6da3741b9b1a3bb9d3778b44cb6945e82b229e9fac1cb66ed6629`
+-	Image ID: `sha256:6d2e02002c6273e2d487e5244455a205b1808c71f2d6266f2c8812d8737659b8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e09ff95e00d624dafc6ab2e55facf87ebf446dc849b1950d4b5e018687465ef`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:6adeb1e07626aee22ea5f243e56a0bf41d25a11cbbf70a8cb195b35757515b5f`  
+		Last Modified: Mon, 09 Mar 2026 19:06:03 GMT  
 		Size: 2.5 MB (2488783 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:942f686933ed9154958e24db9e8807b88b1a964fdde382a601ee729143e1e9c1`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
-		Size: 16.3 KB (16264 bytes)  
+	-	`sha256:151efcbac0642495acf885c19fa46fb8179ad2e39cb2bb9717f0a2832be2998f`  
+		Last Modified: Mon, 09 Mar 2026 19:06:03 GMT  
+		Size: 16.3 KB (16263 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:4-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:d1245c056d85a0fe8de57954150de95ad20f57cbe6696622a92787c381c6f46b
+$ docker pull rabbitmq@sha256:1d3ca02a9fc930e576973a6eb11a22ecb5618e77fbdab31987829422e5eba654
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2994,13 +2994,13 @@ $ docker pull rabbitmq@sha256:d1245c056d85a0fe8de57954150de95ad20f57cbe6696622a9
 ### `rabbitmq:4-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:a46633653ed6f618b169386b0960c2c8f26bfebecf7d86937d8a50bb403977a6
+$ docker pull rabbitmq@sha256:b5dc901c459f066f38f76de716dc3418f63d12e53fd06fcdc6b0a113b82a9572
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.9 MB (87921171 bytes)**  
+-	Total Size: **87.9 MB (87905763 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8982de7a0ff82cf04c292f9589e1b9f3f8f827ee1ca7b075bbb4c1c3472f1ca`
+-	Image ID: `sha256:4b302c4f96cd3d57c9c8757a7254d61be2f5df128d2c5576cf02884e3a8424c2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -3055,11 +3055,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:30 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:15:48 GMT
+# Mon, 09 Mar 2026 18:34:55 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:15:49 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:15:49 GMT
+# Mon, 09 Mar 2026 18:34:56 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:34:56 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -3100,49 +3100,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:17:46 GMT  
 		Size: 828.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b804474412424ba1d00e898b8252e7547686a6d1a2a8883785fad87657ec9558`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
-		Size: 272.0 B  
+	-	`sha256:f889afe89c2f4e897f19917bb28e9ddec0eaf580ffc8633230ddbf765423c942`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55ca8e363c03813e8735e6e2b860a23466c3f2405c1d151fb5d5299bf5a74958`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
-		Size: 4.4 MB (4368727 bytes)  
+	-	`sha256:70bf1724e09e3acb6105735a49b29f4baf8c2f5a77477f9237eefb70994d1e8b`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
+		Size: 4.4 MB (4353316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:83073f46e7fa409b77ac56994f82f38c5f525b53ddf868495cedabda2badee8f
+$ docker pull rabbitmq@sha256:fcec33cfd1401007d4c2008d4f36f0bff65a25a2d13a1b1a2ebccb2d09a3863a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **691.0 KB (691035 bytes)**  
+-	Total Size: **691.0 KB (691036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00f8cfb8f16d8e34a76e846250b5833e23e67b668c294d4bd48a17d7f68d3cf1`
+-	Image ID: `sha256:871122845ae5304c3083eaa689837536ac5016703e186c7ca1e0df6896137f9c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d3069e174f944cd5a1248fcfc0f3df453848def76a26c6fa1ce763763f50534f`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
+	-	`sha256:b5b088daf11edb2d3f54f1bfda21e68e1534c17678443eb1b5397327b7a2e35c`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
 		Size: 675.8 KB (675797 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e245349be8bf5558422581e5ae55d7835bf34c9b4bce89bfbab6457bf9ddf5b1`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
-		Size: 15.2 KB (15238 bytes)  
+	-	`sha256:625edda311399aca56a6753f6d55e83b7dc193392ea0a97b2c9d951d1327fa4d`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
+		Size: 15.2 KB (15239 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:86845bc41050e0e3a6f08e2b1405b3dde2005713c9b6a46fc8a35f6d513a0c95
+$ docker pull rabbitmq@sha256:2a2509011db339690d7b6815c1d8397213190d7db7e2e8740ad6c15e8efbf4c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.8 MB (71750513 bytes)**  
+-	Total Size: **71.8 MB (71750514 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32ac52b084678bdbe9ce538b739176250296c6dc7bb14af9f84f49e776b87fdc`
+-	Image ID: `sha256:3ae48fd57a6cb32b11b9296af4c17cb694d184ac653be6cc628702353bde6e28`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -3197,11 +3197,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:41 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:27:36 GMT
+# Mon, 09 Mar 2026 18:48:57 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:27:36 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:27:36 GMT
+# Mon, 09 Mar 2026 18:48:57 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:48:57 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -3242,9 +3242,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:17:50 GMT  
 		Size: 828.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0fd54892bb5fd5ab50335ed7b33692f2e52220e4a1ee830123803a56ef86a05`  
-		Last Modified: Tue, 24 Feb 2026 21:27:40 GMT  
-		Size: 275.0 B  
+	-	`sha256:9c23222d05ed6f5bfd2aca70fb4ab347a2bfec6536d8b5bfd310c48f67086b20`  
+		Last Modified: Mon, 09 Mar 2026 18:49:01 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -3254,33 +3254,33 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:0e90de89482f36f4d88ae0a94e7e7706f6c78e8d73e8fb0ae53577c909227a21
+$ docker pull rabbitmq@sha256:635b52e6c39c51ee3990eb8f2e48c0554d1033049af993a353d521c04182783d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.1 KB (15111 bytes)**  
+-	Total Size: **15.1 KB (15112 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a352b4979af6e88fd3f23c00ddfb70ae2192c2af240e3ef8671fdbb9550eef50`
+-	Image ID: `sha256:0f67a6a35a7a24408144ad8440150eed21b581fdf77015096e366ed9750d86aa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:da68ccd6244daeb11414c1e9ceae3e4a7b742d324db5c8ae60c4b19effe9bcf3`  
-		Last Modified: Tue, 24 Feb 2026 21:27:39 GMT  
-		Size: 15.1 KB (15111 bytes)  
+	-	`sha256:599070a9e428e3daaf9146d8c77e1afd43da59866b4e6b53fcd0fc48712568e9`  
+		Last Modified: Mon, 09 Mar 2026 18:49:01 GMT  
+		Size: 15.1 KB (15112 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:ebb9d075442278577ea22b6b870fb5f0fc8272d0709ba015b2bf26a23dcb1867
+$ docker pull rabbitmq@sha256:63331852cead64a4c1be3e178a1119f1485c309e538085c9da643544f20a7911
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.8 MB (70845495 bytes)**  
+-	Total Size: **70.8 MB (70845496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6061e48e0cfcc49ff66dda638863763ee9085aac2c0458c715dd69b80aafafa5`
+-	Image ID: `sha256:2f2e0f99fc01dbc904cb699a8fdaf06b5a0f88895dfa92b472218785eed7d2d9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -3335,11 +3335,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:18 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:47:56 GMT
+# Mon, 09 Mar 2026 18:52:53 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:47:56 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:47:56 GMT
+# Mon, 09 Mar 2026 18:52:53 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:52:53 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -3380,9 +3380,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:36 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2aa67a16c0325593922dd3ac4285321f7d52bfa2c135d6e4bb699a2c008ca236`  
-		Last Modified: Tue, 24 Feb 2026 21:48:02 GMT  
-		Size: 274.0 B  
+	-	`sha256:ba8b99af2b657c88c83ec2ed4bbc2aa9a799075deee6014b7e495d06aa91a9cb`  
+		Last Modified: Mon, 09 Mar 2026 18:52:58 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -3392,37 +3392,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:b3973a6119ccd341b77e0c3200a7209fae55b9e6308a2a457ddc74a92759f80c
+$ docker pull rabbitmq@sha256:b1510ea58ee81316e02fac411cd8f77894a0cb7a664e22c040bc24c769460785
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **686.3 KB (686267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b50cfee83571ca4b7dce8deaa6e0c2fcba914f936ccb8289e58ca02e4840f5a`
+-	Image ID: `sha256:66ed63ea37d0e120a2a49e5cfe3b17101c7adb4a623326a05926699e1751a562`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1cb03400d6abcb26cd48e68fdc6d7fdbb21103906cebdddf62d37ed144c74974`  
-		Last Modified: Tue, 24 Feb 2026 21:48:02 GMT  
+	-	`sha256:f2232ae86e8e1d9ad56885d03b0c6da54924357d7a59bffa3b04f2250110404a`  
+		Last Modified: Mon, 09 Mar 2026 18:52:58 GMT  
 		Size: 670.9 KB (670940 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33ee514a380267c397a4bb0029f4bf1f4f00ecfb2f329480b29c13afe5b08957`  
-		Last Modified: Tue, 24 Feb 2026 21:48:02 GMT  
+	-	`sha256:ab080b8f0e2b839fe890d0dece46d625683ec351c133eb1137bf44d9e0a89925`  
+		Last Modified: Mon, 09 Mar 2026 18:52:58 GMT  
 		Size: 15.3 KB (15327 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:18613fe7dcad03f8c7f41261888a8106d30ec01dfb00e17c4f7a0e593415d945
+$ docker pull rabbitmq@sha256:691efa1621262317372aa0926bc79d8d6b600cd52ca60b050aafc439b92c7303
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.6 MB (86623554 bytes)**  
+-	Total Size: **86.6 MB (86615471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:621217ce002ccd4d3b77f426e6fbc3256fd50f89e7ee5e76a149a3f801e7c4dd`
+-	Image ID: `sha256:d0acdfaab6166c3f6aeec18144043e0ecc25f64a41197d9d50fd4168bb514323`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -3477,11 +3477,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:01 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:28:53 GMT
+# Mon, 09 Mar 2026 18:36:17 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
+# Mon, 09 Mar 2026 18:36:18 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:18 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -3522,49 +3522,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:20 GMT  
 		Size: 827.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24bf1644aada7383c511fb368f47e8b76f854c8da74e9ed8c59fcb9e65c3d0f1`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:b1f323d301926f9df48c14f1b1e4eeb48c61b8bae5b4072770848e62801bb298`  
+		Last Modified: Mon, 09 Mar 2026 18:36:25 GMT  
 		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f64848e9c283f5c402e84b08cb4421cfb4761142ac9f4b7bd7a181a0823a30e1`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 4.0 MB (4048713 bytes)  
+	-	`sha256:29ce5f12a8509821c98c33cc61b458e4217dec2c135a5a4dc852f8e8db1c451a`  
+		Last Modified: Mon, 09 Mar 2026 18:36:25 GMT  
+		Size: 4.0 MB (4040630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:ca6911998d4bc3da18634e2e63a0714f9319831d883babafdec16898c28ae12c
+$ docker pull rabbitmq@sha256:96d92d2fd74c04b79285da9dee3c1fa37544a2501545f80790365eee26494c92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **691.3 KB (691298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e66010c14a7a5db6f0d0ee7e551a9b44bf1c120d6bfd180d99d09aa3f989fa8`
+-	Image ID: `sha256:7251314e6e7cc605a047d69421cf3e78fa134e7ea0db71b66eff6def6be8fa95`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ced11d30eb5d25e9d4c5a3995fb6047eaa61a46f6dd4d10d81a9225fdce06a8a`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:1021e921bbc42668781507b1940e1f86724a30ef2b716221b70e2bfc8be5a9ca`  
+		Last Modified: Mon, 09 Mar 2026 18:36:25 GMT  
 		Size: 675.9 KB (675940 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2410bae2d66c28de77386be49cb4ea79cebf82e493ef0164de879439ea281b44`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:861f4d080f6a98dcc302296376086099d75f8d64f4f40391258d18f7524e9d7b`  
+		Last Modified: Mon, 09 Mar 2026 18:36:24 GMT  
 		Size: 15.4 KB (15358 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:b04c599e052d0ba53ff841d2faef1497f8771cfb179708d8a0058a2fc6f63bba
+$ docker pull rabbitmq@sha256:e7dccd6b66f0e19ae7647ca4af612ca4d9d4403b32c62642ae43f543c1ec3672
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.2 MB (73169257 bytes)**  
+-	Total Size: **73.2 MB (73169259 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9756ec3289c3c3876e8755e2b329a2f487a3bbda3ccc166e714f9ce6cb7e2de1`
+-	Image ID: `sha256:1e9c7bec6b1d7d8845dcc2c8319473a0bce0f52fbd94df6f62671ec471551af1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -3619,11 +3619,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:13:04 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:08:11 GMT
+# Mon, 09 Mar 2026 18:21:30 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:08:11 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:08:11 GMT
+# Mon, 09 Mar 2026 18:21:30 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:21:30 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -3664,9 +3664,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:21 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3254f4f6906e886a9c915a36907222a710d10f0baa9f91cec0abd8ae2ffa3b44`  
-		Last Modified: Tue, 24 Feb 2026 20:08:17 GMT  
-		Size: 273.0 B  
+	-	`sha256:6d90cb4c5608d568932a043a2fa14e88ec192dacf0433da206d37a90e7ec1137`  
+		Last Modified: Mon, 09 Mar 2026 18:21:36 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -3676,24 +3676,24 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:039e169c55add45496b44dbfda78ef260ecc5bbea42112842c7ba40bd773ecd9
+$ docker pull rabbitmq@sha256:82d474b50a1a5f495031d264d56562409b7ff9158d0cf02037735c3200258c95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **686.0 KB (685992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:315fc833fb6e998f2d8100f07a7a5a694e6a166f97724b704e52f2c776256b84`
+-	Image ID: `sha256:4ca891f7e116c76c47dc8a6b2b681f9d100b273cda18d6622ab62fc0f350f740`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a371a13d9978fd55b484a944d0204d326c7eaff37a84c442f7822826e7c12abf`  
-		Last Modified: Tue, 24 Feb 2026 20:08:17 GMT  
+	-	`sha256:31e9bc5fee51759be4069e2617ed3f6cccf68aeb7c06d84af64fcc3114eb9207`  
+		Last Modified: Mon, 09 Mar 2026 18:21:36 GMT  
 		Size: 670.8 KB (670792 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cee2ad38e98a6db64f39cd0b0ed89c18c9b55ed4571e5485a82febc8313b8c71`  
-		Last Modified: Tue, 24 Feb 2026 20:08:17 GMT  
+	-	`sha256:9fa1a1cb865c7b1d6f22f9b2385f415174375c470a6e9a725aac42f27e7d790e`  
+		Last Modified: Mon, 09 Mar 2026 18:21:36 GMT  
 		Size: 15.2 KB (15200 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3984,13 +3984,13 @@ $ docker pull rabbitmq@sha256:21757e9746105f453a17a649d61ff970c4c2fd1c056d2a75fa
 ### `rabbitmq:4-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:84e5149a2bbd59f4392102affb87787ae309854c73129702b2ccacc534c8d60a
+$ docker pull rabbitmq@sha256:68559b280b672a2ea44843bd330db06967c6b25f4f11c09103c1e9ef5837fc1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **72.9 MB (72913363 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c92a5dff91a4d1464de73ca0d4e868007503a76fafa86c96af7e143b5571495`
+-	Image ID: `sha256:b807626ede7f113af8ff4a8f273e913c5acdc9ace2c1c576a35d64d7f81fcc95`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -4045,11 +4045,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:24 GMT
 CMD ["rabbitmq-server"]
-# Wed, 25 Feb 2026 01:06:22 GMT
+# Mon, 09 Mar 2026 19:05:51 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:06:23 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:06:23 GMT
+# Mon, 09 Mar 2026 19:05:51 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:05:51 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -4090,8 +4090,8 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:01 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea98401813358164d5165778d738445599e6dbf9d781e91e00db980c26144d4b`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:1d02e8d369386bf5dabfa35857479fe6b67fb80fbe1ee65d5876cadd304df956`  
+		Last Modified: Mon, 09 Mar 2026 19:06:01 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -4102,24 +4102,24 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:ff2d18ed31bf47b01a1f5f27402efad59edd93dfb130ce1b2d5e0b16ed3d1529
+$ docker pull rabbitmq@sha256:a27843d809f262e673caea8f7373caff8544452fc34d0c8aa41f034b12b12ac3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **686.1 KB (686137 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:129969d2adc671079b0f83308001bb878829b7269bbeab9b69ca8feec2cb2f4d`
+-	Image ID: `sha256:dd98fa78623e6f4240bec06b389d04901aad69dd7a4e86afd3c1d6b42394eca0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5fd786335dc71e891953736f386e99b0e93fe67fb0383cdb791cc5fd20b82f57`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:a868a685020bf54a025c07e7b3ab8258ebf288de86ea25d423d47b77004275e9`  
+		Last Modified: Mon, 09 Mar 2026 19:06:01 GMT  
 		Size: 670.9 KB (670903 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:339ab83004c78ddae315435fcdcc7b54e619f3af4029d2c65615314b1f92fba4`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:be6d02f510fcc1e1d40dbbbc4106c8fabb007f93b5d579757f2d7d2827f0d1c1`  
+		Last Modified: Mon, 09 Mar 2026 19:06:01 GMT  
 		Size: 15.2 KB (15234 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6136,7 +6136,7 @@ $ docker pull rabbitmq@sha256:9f715d22012c3bd5c53ae55aeebd980464fbfb6c4a6b6e367c
 ## `rabbitmq:4.0-management`
 
 ```console
-$ docker pull rabbitmq@sha256:2429a205170513f39604a46dd24cda34b85f3311f0ffa33858cf944bdab75716
+$ docker pull rabbitmq@sha256:1793b7b49d3bf897c20da08530eca185ea3e0830bdaee6390c2f2a190d097941
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6157,13 +6157,13 @@ $ docker pull rabbitmq@sha256:2429a205170513f39604a46dd24cda34b85f3311f0ffa33858
 ### `rabbitmq:4.0-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:2e84c40062542a4838aeb9ff7ac172ab4be25807f91374ca84a0a48d3bdcd33b
+$ docker pull rabbitmq@sha256:51057773a65f241a0b3c161b5dfc5dd3eca2e21bcfa872e0c95ea665b3b5322d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.4 MB (110416385 bytes)**  
+-	Total Size: **110.4 MB (110407252 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4394694ab4e19db1d9315d85fbe94d9598bb9ac9741aca394b1ddd4dedff3ff8`
+-	Image ID: `sha256:546e617ec8f816ddf740e15136965d26f5ecfd5f8d0c99bb0601a54076fa720d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -6226,11 +6226,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:19 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:16:11 GMT
+# Mon, 09 Mar 2026 18:35:13 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:16:21 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:16:21 GMT
+# Mon, 09 Mar 2026 18:35:24 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:35:24 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -6271,49 +6271,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:45 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12779db79fdef0a6740525b1f21f65d4ede6fe7787cf7c1f92c2e3bba94c32d0`  
-		Last Modified: Tue, 24 Feb 2026 20:16:29 GMT  
-		Size: 275.0 B  
+	-	`sha256:7c986518259274bd56132390f17664d9e5042c71e09e91beb2543eb91d714819`  
+		Last Modified: Mon, 09 Mar 2026 18:35:32 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6baf97b653648bf578970d2f24892974c6eed215e5632c36a382747a5f1acc53`  
-		Last Modified: Tue, 24 Feb 2026 20:16:29 GMT  
-		Size: 4.5 MB (4522034 bytes)  
+	-	`sha256:6a14138d49659bc5678fb5f22e947875710d9c09621dd65e574bb5ee3cdff51a`  
+		Last Modified: Mon, 09 Mar 2026 18:35:32 GMT  
+		Size: 4.5 MB (4512900 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.0-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:e64d7b8e7232800770b1f3cd4d78c4add03d6099b783a8561bf71012aef3c614
+$ docker pull rabbitmq@sha256:ef9458b401c4a85bd7063624c409e883c3e5373a1ef616ec3b7f7ae645d72b17
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2495267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7f871f8f1baef1904c4ff3055ccb8dd23145d72a9f189cadf84e7040d716130`
+-	Image ID: `sha256:d7b8915721d100fbe50cb4ad34114081f7672b56311e9a4d3282c335587e45b6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f885366ebe768e6f751a86d16d751857b7b7b805c5477203522b163e3d2f1edb`  
-		Last Modified: Tue, 24 Feb 2026 20:16:29 GMT  
+	-	`sha256:1284bb760511162fcd7ba2e1187062a9aa4069b4974ab9883aa36245bb762569`  
+		Last Modified: Mon, 09 Mar 2026 18:35:32 GMT  
 		Size: 2.5 MB (2479622 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fdf1cf65260c52d7850a92e1ee478598d3e05bf243e904a010f55b3690a9f3a5`  
-		Last Modified: Tue, 24 Feb 2026 20:16:29 GMT  
+	-	`sha256:a2da6999c55e20f604a5414f9493452f3cb64e19fe7193cde49705fc6eeb6293`  
+		Last Modified: Mon, 09 Mar 2026 18:35:32 GMT  
 		Size: 15.6 KB (15645 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:2241817e8a64bd6fa5657dc5fd298bb85b7f37366a228dc7ed7c1f1a3af1ef16
+$ docker pull rabbitmq@sha256:a878a627e8f2e3046294cfca56d839032373dade488df4e50a7516dffb5be0a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.3 MB (88274983 bytes)**  
+-	Total Size: **88.3 MB (88274985 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2f9a734162103e1b29c629bdf776d9bfe161cdf518a0f4b1f69228d624a33f7`
+-	Image ID: `sha256:013d711df0637ed17d80520c659045de0c36c224a663b04522285cd3d24c6fed`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -6376,11 +6376,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:58 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:48:07 GMT
+# Mon, 09 Mar 2026 18:53:03 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:48:08 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:48:08 GMT
+# Mon, 09 Mar 2026 18:53:03 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:53:03 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -6421,9 +6421,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:24 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f573fc62287f14af7e7a4b0df33dd14959bc5d438d330137177078e2bde51b2`  
-		Last Modified: Tue, 24 Feb 2026 21:48:15 GMT  
-		Size: 274.0 B  
+	-	`sha256:2a04b8e0ad1cd61f512f413ceee2159657ea72cd9717148b48fbefaa0cda53a8`  
+		Last Modified: Mon, 09 Mar 2026 18:53:10 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6433,37 +6433,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.0-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:31133aa451e5daf50d92894d1cd80b40d1effe02372cbab377bdbd4df99abf8e
+$ docker pull rabbitmq@sha256:86417d911eba9389f92f0b9ff7203fdae0f6cbec0b7f88e8bec6e3b63cfc8e8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2496123 bytes)**  
+-	Total Size: **2.5 MB (2496122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b152822a9638a851ce8cd157a08ec7ac1d2523822f5cc1761bf36fd35f5847fc`
+-	Image ID: `sha256:b0535a0486006300c69f7ef4b89a5ddee1fbd4c8d9cd7a9734928ef5591ddafd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e7c3d3c32a32a0127d3ff95eabc9c641b1aedd2fdbcefa150115127334cdddc3`  
-		Last Modified: Tue, 24 Feb 2026 21:48:14 GMT  
+	-	`sha256:239e96320942d35276a3a9f80ea04a986f94725ec61faea353803a8b339b59b8`  
+		Last Modified: Mon, 09 Mar 2026 18:53:10 GMT  
 		Size: 2.5 MB (2480406 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:96363ba588ecb1b8e6e51004c90897b6cb97808bba10cbef7d08cea59912d21d`  
-		Last Modified: Tue, 24 Feb 2026 21:48:15 GMT  
-		Size: 15.7 KB (15717 bytes)  
+	-	`sha256:15782c8909ace8f0abc785d042a2f9bfa379bd9228615d3eb34082d37d9772dc`  
+		Last Modified: Mon, 09 Mar 2026 18:53:10 GMT  
+		Size: 15.7 KB (15716 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:370cbeb2cca416405cfe4ce363bf6adce4a9c439fdd3a1bc8f7c0836612c92f7
+$ docker pull rabbitmq@sha256:f4ad7e592b68ea17f5c7b07d48085e6bfc5a4c7bd9869394542613acae000a1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **108.1 MB (108058358 bytes)**  
+-	Total Size: **108.0 MB (108046930 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e6c55c0dd164642423c65bcd7e6be8f6df6eb739e42c91db6c087db228a6c81`
+-	Image ID: `sha256:e55b579fa108f4d540cb691fa3768448c4b8620deeb7d6b594d1dcfbe41c330e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -6526,11 +6526,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:15 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:29:10 GMT
+# Mon, 09 Mar 2026 18:36:36 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:29:21 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:29:21 GMT
+# Mon, 09 Mar 2026 18:36:51 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:51 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -6571,36 +6571,36 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:42 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc768db5700fddb188bc621d4247515664a4c004411f862837776f88d7675340`  
-		Last Modified: Tue, 24 Feb 2026 20:29:30 GMT  
-		Size: 274.0 B  
+	-	`sha256:5381f70dfffe571f0eb5aba6c08385d3078c7576c80988ebc687ac64e5bbb0b1`  
+		Last Modified: Mon, 09 Mar 2026 18:36:58 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59d890944489224fb070669b1d5bae12a2c886d374b929fddbafbbf5069c5163`  
-		Last Modified: Tue, 24 Feb 2026 20:29:30 GMT  
-		Size: 4.3 MB (4287709 bytes)  
+	-	`sha256:f58111f2b7f151a8c38e8bda52338ad7bda74670ea1c9af7f71c83ea8ba5d9d9`  
+		Last Modified: Mon, 09 Mar 2026 18:36:59 GMT  
+		Size: 4.3 MB (4276279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.0-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:c7bf86cb404df96c4ef6c6dc3cd62487fbb083a138092f31c3c58b5611c5bc5c
+$ docker pull rabbitmq@sha256:693ac3227b5c361dd67def9c0105bf39f74bcb00f6d886af8464aa8a9e049078
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2496398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cda64c7478de9747a939d1d53de8ced3117ba0ff7e63b8ba7c36b258d955cab9`
+-	Image ID: `sha256:5924babbad28c90a1c5f6cbcdc353516c0d86093e19c4b47460886758d4b4fc8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:673ba5564e2008897a81bbeb6e76104aa58efcc755c2af77a201627f28caeb6a`  
-		Last Modified: Tue, 24 Feb 2026 20:29:30 GMT  
+	-	`sha256:2247a25f726bf7af27c856bfa4152ec9a48513a3bc5e988a65898837040f698f`  
+		Last Modified: Mon, 09 Mar 2026 18:36:59 GMT  
 		Size: 2.5 MB (2480658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:040e2b3bf759f71c92cbf67b6805d6f18c3ba7182969eebf89515ed9c7d01ce7`  
-		Last Modified: Tue, 24 Feb 2026 20:29:30 GMT  
+	-	`sha256:5bd1fb4b02d236f6bf672388890f2b7066cbccfa64dd66632c821e10a3cc6e33`  
+		Last Modified: Mon, 09 Mar 2026 18:36:58 GMT  
 		Size: 15.7 KB (15740 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6907,13 +6907,13 @@ $ docker pull rabbitmq@sha256:f470ae584f30ad04633d7c082fa6808ae00d7aaf0cc0f632cb
 ### `rabbitmq:4.0-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:2f9736c239c67d15bf682f56280bd959a0019da383311843086546eb0d354ebe
+$ docker pull rabbitmq@sha256:3249adf72323e7b351f8f41157b4da03bdc148903d368d42e49da1d842001efa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **98.0 MB (98024680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:907dbff398937230423bf1278f77fa161e3292e4356b9b1cd7212939f9a6a58a`
+-	Image ID: `sha256:50342723a973ec83b109bfdde512ed7639fc492704629cab66b772a200ce20c3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -6976,11 +6976,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:57 GMT
 CMD ["rabbitmq-server"]
-# Wed, 25 Feb 2026 01:07:21 GMT
+# Mon, 09 Mar 2026 19:06:21 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:07:22 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:07:22 GMT
+# Mon, 09 Mar 2026 19:06:21 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:06:21 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -7021,8 +7021,8 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:20:45 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1ba19f96633f4ce53cbcbcfd51bc1df07167363b7e19398e064e063ab73fcdc`  
-		Last Modified: Wed, 25 Feb 2026 01:07:51 GMT  
+	-	`sha256:5fdc12b46bfcc6324a15bc060610c63862ab7781a4f6ce794e377f3d6a7ad358`  
+		Last Modified: Mon, 09 Mar 2026 19:06:32 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -7033,31 +7033,31 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.0-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:bf6ab60174164743b73d5335942e51e99f76b92945d0cdfd3464f80fe673e32e
+$ docker pull rabbitmq@sha256:7dd31ba0860d545a39db480d808db05582cef53c90d493628898383ec558cb10
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2497372 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9dec1aaeddcf1fecfbed754ef4ad40cabd0010dfee47b397a549b94fa5e6a490`
+-	Image ID: `sha256:8b95979f191a63dc883388eb294c6912ec67bd5e5dd8f593260ce7e43ca288f6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f8ec7eaced1db9f9be6648db11e0a7bbda2a9b9bdf251a7a58ff0a00e67ef043`  
-		Last Modified: Wed, 25 Feb 2026 01:07:51 GMT  
+	-	`sha256:29a324a675b0197c58022f635dbdf55b43cc335bbcd974e1af8cb152834aa451`  
+		Last Modified: Mon, 09 Mar 2026 19:06:32 GMT  
 		Size: 2.5 MB (2481732 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3bea51922cc7c05b3e4730d993170457e45327cfb0d322ef27a9b12db59f26a4`  
-		Last Modified: Wed, 25 Feb 2026 01:07:51 GMT  
+	-	`sha256:f195ae6092b269585bd61d15c792b67eea04324b7b7a2075fa646989d6d7c1db`  
+		Last Modified: Mon, 09 Mar 2026 19:06:32 GMT  
 		Size: 15.6 KB (15640 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:4.0-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:99416d2bdede9526a26c4fd212dd41a707a1b0353428f957e8c86f6940943eab
+$ docker pull rabbitmq@sha256:4e1bfe4f3462fe6c9c422b0b2ce6135a0e5333c740e77202b2ef51f0b586e0a1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7082,13 +7082,13 @@ $ docker pull rabbitmq@sha256:99416d2bdede9526a26c4fd212dd41a707a1b0353428f957e8
 ### `rabbitmq:4.0-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:fb80a4e3620c9b592d87d3d81e1f54c2d795354b0d644f7f004e764172cbe945
+$ docker pull rabbitmq@sha256:7a35c19907576a993121ef9e5e909486dc37a9d646936a5f75f8ebb86ba62753
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.9 MB (80856963 bytes)**  
+-	Total Size: **80.8 MB (80841540 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11e5b37077d4987204da340bc06b00bf0cc83023ca711da402decb58d4674ca8`
+-	Image ID: `sha256:97aee095b35dc1dca0262eb9d63a01b08c26d2a6bf85b80751de3c3152337fba`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7143,11 +7143,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:58 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:16:12 GMT
+# Mon, 09 Mar 2026 18:35:11 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:16:13 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:16:13 GMT
+# Mon, 09 Mar 2026 18:35:12 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:35:12 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -7188,49 +7188,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:15 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90ede9cee951c65abea153b42fb6bb2509472f678af2271bbc60c06c0468f3cb`  
-		Last Modified: Tue, 24 Feb 2026 20:16:20 GMT  
-		Size: 272.0 B  
+	-	`sha256:8a3bce890aa70fa3416f9c4232e9aef3d2c73f04e60130b1b21985628a843643`  
+		Last Modified: Mon, 09 Mar 2026 18:35:18 GMT  
+		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:079f652cf391f7d10f032f59dad632adbf7b2bab727af7b977315b1f52bddcf5`  
-		Last Modified: Tue, 24 Feb 2026 20:16:20 GMT  
-		Size: 4.4 MB (4368736 bytes)  
+	-	`sha256:fca8b562fca3ee01d50695f72e69c5d88f79a5b3bfc5cdbd8a0f92c2ff5ccaf5`  
+		Last Modified: Mon, 09 Mar 2026 18:35:18 GMT  
+		Size: 4.4 MB (4353311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.0-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:70209d2d42babad6d6540879aa34727b3a96a629f7026a50195dbf18f136714b
+$ docker pull rabbitmq@sha256:fb12edeb23656ebce9a6082cb12a533e7356f3bb20104ab5914d2d3f7a033192
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **683.3 KB (683305 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37acd7a112b81d8bc23209b9c3eb99ebcc65a0bdad2256e4cd2f97ce8f3e19f2`
+-	Image ID: `sha256:c7e1a017c477d147beca2d3424e6d59a4e92b029dcee647fa599e4c694a73374`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9150b881141686cf7ec0d1d0f651d6d8f7db07047499c400b0d717964d33acee`  
-		Last Modified: Tue, 24 Feb 2026 20:16:20 GMT  
+	-	`sha256:7248d5c1df4abafc3bd6a246b90b031c819f86a65cb55b60ca61f35219c9acf8`  
+		Last Modified: Mon, 09 Mar 2026 18:35:18 GMT  
 		Size: 668.7 KB (668718 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9e71007149f2bc30af87cd423d1a0795d448b85c5ddbb520ec85aab820905c93`  
-		Last Modified: Tue, 24 Feb 2026 20:16:20 GMT  
+	-	`sha256:2ba2d7429cae6b72afcb7a2bf5ecf22a87bda5e0fa2c680dda732f010e3468bc`  
+		Last Modified: Mon, 09 Mar 2026 18:35:18 GMT  
 		Size: 14.6 KB (14587 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:61fcc34002f68a5b9d3d27309dbf7eae9b6d84b9141133598ed76dbd65eeea2e
+$ docker pull rabbitmq@sha256:bcac85df8636274806399e0b0e05c3b5763d9a32068da22ba1884217eddc4eda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.7 MB (64686415 bytes)**  
+-	Total Size: **64.7 MB (64686414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8e18f70391aa8adc6e832806c394fe4b6304845820aa034e029208f45ced80f1`
+-	Image ID: `sha256:a5a16d664114a0429f90a42dd7aea91a4bdc90e224a58cee97ddcacfec406c71`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7285,11 +7285,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:32 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:27:36 GMT
+# Mon, 09 Mar 2026 18:49:03 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:27:36 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:27:36 GMT
+# Mon, 09 Mar 2026 18:49:03 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:49:03 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -7330,9 +7330,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:41 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68334c2eda1f8aa6a752977be920966940dedf1df33b06fcbd1b31e47b817932`  
-		Last Modified: Tue, 24 Feb 2026 21:27:40 GMT  
-		Size: 275.0 B  
+	-	`sha256:85d5cd35a18d5dbdf75389423b924230f6bd2da2ba8b4c1f47cf018f5cdb42e6`  
+		Last Modified: Mon, 09 Mar 2026 18:49:07 GMT  
+		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -7342,33 +7342,33 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.0-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:5668e9cba2d9574ebeda079f30218db47a26b1d0053e75ec4ab3d2c43578ad69
+$ docker pull rabbitmq@sha256:4ebe5a1073938ac0db3d2688deb6159b9cdfd0687ecac3be737890e9fe56f9d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.4 KB (14444 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e921eb13c8689804e25b144eaa52184087df23e5430062a208b16c9455e55e4a`
+-	Image ID: `sha256:1c3f6b6ad86466f76cef1cf19e9d607e1fabb761e83e004601b132102f65350a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6cb9671117a7f6eaa4d81d43f4873e13e28a0062acfc00a4ba3e657efba492db`  
-		Last Modified: Tue, 24 Feb 2026 21:27:40 GMT  
+	-	`sha256:c42d03425631bba80d4619bdf2642c3610ab93014cd6b6ba0f7f9f82fe50546a`  
+		Last Modified: Mon, 09 Mar 2026 18:49:07 GMT  
 		Size: 14.4 KB (14444 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:5cc55538851958c1d0c6404be340040df19a359dda82a2fa251d5adda30389da
+$ docker pull rabbitmq@sha256:76c3688a0249726be08e129a592ce86ea450184f4f7f883f11474044398ae1db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.8 MB (63781568 bytes)**  
+-	Total Size: **63.8 MB (63781566 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1254c9981909ed71116e76a639fa88ad8980f045a9617f8711c5138ba6c15df5`
+-	Image ID: `sha256:724f2702c418d355c6603206046330243b873f0b6ab21c1a3f3b4bc4e447ffb9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7423,11 +7423,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:30 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:48:10 GMT
+# Mon, 09 Mar 2026 18:53:06 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:48:10 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:48:10 GMT
+# Mon, 09 Mar 2026 18:53:06 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:53:06 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -7468,9 +7468,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:46 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a44441979d9ad258115d216120b5e30e09615d22fd77469551857ffecfa0dbb2`  
-		Last Modified: Tue, 24 Feb 2026 21:48:16 GMT  
-		Size: 274.0 B  
+	-	`sha256:e228f4671707d51aafc1dd64b7596660d04022d8bd698bf4f4a5318ba9513290`  
+		Last Modified: Mon, 09 Mar 2026 18:53:12 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -7480,37 +7480,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.0-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:617ac964334abae2686211cea9316ac89388e3cc914337b6facc5f5e4cbd0361
+$ docker pull rabbitmq@sha256:5ae65fb4624ebc68cd8bd38d63b6c271e33d851e9b39e4792f00af80a8700ef3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **678.5 KB (678504 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c4453bf27ce90e32d2675048a08f4d2820a103ac3b9bb6c898bca5dcdbdca16`
+-	Image ID: `sha256:17111f83d90647cf365fb82a45e9091102c3884933305f00a1c7cf45c254e980`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eb8ecda440cda5da8cc2873870e13795d4e96f17084c65fa8e5e165afec14849`  
-		Last Modified: Tue, 24 Feb 2026 21:48:16 GMT  
+	-	`sha256:612fcfa5d852b029bbbdac637a4bea54d0fa9d98b6b126defec64aebaf896e8d`  
+		Last Modified: Mon, 09 Mar 2026 18:53:12 GMT  
 		Size: 663.8 KB (663845 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9ea467f0cb54e36140f2e0df519f878d813ea7f095b8dc477ecd27af1462bccd`  
-		Last Modified: Tue, 24 Feb 2026 21:48:16 GMT  
+	-	`sha256:b78bb6a89fcc3842e80596b4dab589f3e64efdc82bbd3f7ba2fcd4f5b48b4abf`  
+		Last Modified: Mon, 09 Mar 2026 18:53:12 GMT  
 		Size: 14.7 KB (14659 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:ff488d463b159f475be4413f4c7ee0ae1cf1218cd7114949e1e754ec470edca9
+$ docker pull rabbitmq@sha256:0df757b16daa8cfdf2bd66a07f3ebaf3f7143061110243133434db47b80d06d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.6 MB (79559486 bytes)**  
+-	Total Size: **79.6 MB (79551412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84a3f114cbadedb9dcb5990b324974e7bc6d785a1a5fec816c65a15d8970bdcc`
+-	Image ID: `sha256:f44a96fbaa31d38593acdb5e1d35fd14648aac3530c4f740e1775ee748c9e896`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7565,11 +7565,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:43 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:29:17 GMT
+# Mon, 09 Mar 2026 18:36:44 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:29:18 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:29:18 GMT
+# Mon, 09 Mar 2026 18:36:44 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:44 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -7610,49 +7610,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:01 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d553ea3b2e36b09a953f588d15b65f735a907a22f97419e1fcdc1aa5b0277ac2`  
-		Last Modified: Tue, 24 Feb 2026 20:29:25 GMT  
+	-	`sha256:550d918298b4b984d859694e94aebc16eaed7e183b3854f58739d95502f18e19`  
+		Last Modified: Mon, 09 Mar 2026 18:36:50 GMT  
 		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bd18d4eaa5414e12cb192f3242eaad58a7fb25af0d12f3a05f314f42adf83de`  
-		Last Modified: Tue, 24 Feb 2026 20:29:25 GMT  
-		Size: 4.0 MB (4048712 bytes)  
+	-	`sha256:c214bd9f5773029e01e4677b8489e561862d5b07a893eff350eb28ad6176d85a`  
+		Last Modified: Mon, 09 Mar 2026 18:36:50 GMT  
+		Size: 4.0 MB (4040638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.0-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:68933ed9468d4283f7e4f480841ecec0c365b422cd3499a1b57c2295b6e6b50a
+$ docker pull rabbitmq@sha256:93aa071c37edcef9eb1fdac184c3ce2713605169e6911ab401fa950110768d40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **683.5 KB (683518 bytes)**  
+-	Total Size: **683.5 KB (683519 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fcb8c05fa946bea891660e5792f3189938ef1c8a28ff22ee24b9d1f58a9fce7d`
+-	Image ID: `sha256:a05e88a028aa63be81530aa462b8fd5b5b3eeb730bbd93ddb07d74293144e085`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:74fe9a27137e329a7302c0056d9781a8f8a6e6b48ddf286af385adc01615169f`  
-		Last Modified: Tue, 24 Feb 2026 20:29:25 GMT  
+	-	`sha256:c5378ce65afa440a1eb48011adf427c60ec61d18249bf2082093b667a3055029`  
+		Last Modified: Mon, 09 Mar 2026 18:36:50 GMT  
 		Size: 668.8 KB (668837 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ff089f1fa12b307c562756642f3227456d852db312ba3b1070890b3b150eb959`  
-		Last Modified: Tue, 24 Feb 2026 20:29:25 GMT  
-		Size: 14.7 KB (14681 bytes)  
+	-	`sha256:5839387981559784e45f7cb78dfe779722258d99f8a22507c8f65db091335b94`  
+		Last Modified: Mon, 09 Mar 2026 18:36:50 GMT  
+		Size: 14.7 KB (14682 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:f6454e9a301199b456f0a8cc4e794aa5344709c1fa704b2bfe1116144ec89d67
+$ docker pull rabbitmq@sha256:4a7b4c34a4ef34c174046705ca7e5c037d1601441f37654f36270da2b76ee2df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **66.1 MB (66105369 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:838aa089ca784b93cd4ca3bdd77ba2bc6aa12721262faaa140d874c14b1d971c`
+-	Image ID: `sha256:48f72b4e8993b4f031ae3bd46ecca925404dceadf10b30c0944bb55e0c6607fe`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7707,11 +7707,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:14:01 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:08:24 GMT
+# Mon, 09 Mar 2026 18:21:38 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:08:24 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:08:24 GMT
+# Mon, 09 Mar 2026 18:21:38 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:21:38 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -7752,8 +7752,8 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:14:14 GMT  
 		Size: 824.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afd34d6a7847d7fed60c49294ac86b4d9007fa95747ad19b89396541d42e1ab5`  
-		Last Modified: Tue, 24 Feb 2026 20:08:29 GMT  
+	-	`sha256:4713308b5fdff709522ce444f4d9da63711cdd7ad73a5ef47ecde90dbf229c39`  
+		Last Modified: Mon, 09 Mar 2026 18:21:44 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -7764,25 +7764,25 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.0-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:2c60a5541062e817d1719660467b9495241af81c047aa8cafc7b3b845ad2adb9
+$ docker pull rabbitmq@sha256:e43956e7501c164e191fcb4e2245864c7dcbd41799126211914bafce3a259ddc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **678.3 KB (678281 bytes)**  
+-	Total Size: **678.3 KB (678280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac67c272128424d6139406cb1a0ec02fcc91475f7405e542ddc684cc7118a1bd`
+-	Image ID: `sha256:e44720230260f6d60d837c821a84fb98fa4b1776513bdd2c7ad308519c0a1590`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44ac738b17778251de7a384a4fb95f4e4ba2ea8bbdc6f4bb7ff67488d9cccc5b`  
-		Last Modified: Tue, 24 Feb 2026 20:08:29 GMT  
+	-	`sha256:c0f8746044aa452d6b0b6157fe0908845b395622c420a4372cea735abf49683d`  
+		Last Modified: Mon, 09 Mar 2026 18:21:44 GMT  
 		Size: 663.7 KB (663723 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4073236c54c80a49581d50e4b21412017ad58dc073d7882c0436c3824a02485`  
-		Last Modified: Tue, 24 Feb 2026 20:08:29 GMT  
-		Size: 14.6 KB (14558 bytes)  
+	-	`sha256:aa2a5bb773f1a469fc6e98e5fc6f789e899d9ef885114cc44509c4abb5583380`  
+		Last Modified: Mon, 09 Mar 2026 18:21:44 GMT  
+		Size: 14.6 KB (14557 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0-management-alpine` - linux; ppc64le
@@ -8072,13 +8072,13 @@ $ docker pull rabbitmq@sha256:81803d12d8ccff154d5c29c532283e00687d92bd5577147b4d
 ### `rabbitmq:4.0-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:8ea0c0c79d8b35a1d42c6f2034f82a7b76c5fb02ee18cc26196cd012f4857362
+$ docker pull rabbitmq@sha256:4302eb2e0907c9ec84899ea5c57944359ff87de2a8dc9aa6d7569f952a10c1a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **65.8 MB (65849495 bytes)**  
+-	Total Size: **65.8 MB (65849491 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6899ca846e8774f2a916efbb6a112af9a94409fdacd12c3ceaf5a5061e0c4e93`
+-	Image ID: `sha256:dd729a6d1c09410036d8b6db28d9f86183f7ce85ee5037a00e286e3d195ddae6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -8133,11 +8133,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:34 GMT
 CMD ["rabbitmq-server"]
-# Wed, 25 Feb 2026 01:07:38 GMT
+# Mon, 09 Mar 2026 19:06:22 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:07:39 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:07:39 GMT
+# Mon, 09 Mar 2026 19:06:23 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:06:23 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -8178,9 +8178,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:25:11 GMT  
 		Size: 826.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82497b300198d66e97a8c0faa9d3d9e61d2aa27ddda57b62158301711b78e432`  
-		Last Modified: Wed, 25 Feb 2026 01:08:27 GMT  
-		Size: 276.0 B  
+	-	`sha256:2c128b5d30e363fe4f02a319e1f12483a2dbf05ee273e082bba997ac7d9edbe1`  
+		Last Modified: Mon, 09 Mar 2026 19:06:32 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -8190,24 +8190,24 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.0-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:c09bd397f514408fb4b9a743dba08c15e5b1429b9cf752b9f01758dd98a77d0f
+$ docker pull rabbitmq@sha256:bc3051b6e7d1c70c540d9b0cfaf4a275be70b78c29b5d5d08722d660e479e76b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **678.4 KB (678406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85038040a8a5096f6db843a3a7c30f01440b9d58f63f25102302297fc1079bc5`
+-	Image ID: `sha256:05d453b630b1ea51645bcf19936bafcd07301b6b0c57de1d49f74986c5261dcc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bb573846ae0b46471d4084bfe85d741e428a76d3e1a76f1d8fdc3615b4ee7428`  
-		Last Modified: Wed, 25 Feb 2026 01:08:27 GMT  
+	-	`sha256:1c57477e44cb9536e56f9aa260b4744e105374fe6953aa87e4040821e1b93f16`  
+		Last Modified: Mon, 09 Mar 2026 19:06:32 GMT  
 		Size: 663.8 KB (663824 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c97f76a89c5e738bd7443b380216a19c8207ca5b9f1e1da9eb13b42896e285e9`  
-		Last Modified: Wed, 25 Feb 2026 01:08:27 GMT  
+	-	`sha256:fd8a8b7f6e59c88880a99a3228e272166296dcab0e1fc399425990f0a58d9bd3`  
+		Last Modified: Mon, 09 Mar 2026 19:06:31 GMT  
 		Size: 14.6 KB (14582 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10224,7 +10224,7 @@ $ docker pull rabbitmq@sha256:9f715d22012c3bd5c53ae55aeebd980464fbfb6c4a6b6e367c
 ## `rabbitmq:4.0.9-management`
 
 ```console
-$ docker pull rabbitmq@sha256:2429a205170513f39604a46dd24cda34b85f3311f0ffa33858cf944bdab75716
+$ docker pull rabbitmq@sha256:1793b7b49d3bf897c20da08530eca185ea3e0830bdaee6390c2f2a190d097941
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10245,13 +10245,13 @@ $ docker pull rabbitmq@sha256:2429a205170513f39604a46dd24cda34b85f3311f0ffa33858
 ### `rabbitmq:4.0.9-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:2e84c40062542a4838aeb9ff7ac172ab4be25807f91374ca84a0a48d3bdcd33b
+$ docker pull rabbitmq@sha256:51057773a65f241a0b3c161b5dfc5dd3eca2e21bcfa872e0c95ea665b3b5322d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.4 MB (110416385 bytes)**  
+-	Total Size: **110.4 MB (110407252 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4394694ab4e19db1d9315d85fbe94d9598bb9ac9741aca394b1ddd4dedff3ff8`
+-	Image ID: `sha256:546e617ec8f816ddf740e15136965d26f5ecfd5f8d0c99bb0601a54076fa720d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -10314,11 +10314,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:19 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:16:11 GMT
+# Mon, 09 Mar 2026 18:35:13 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:16:21 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:16:21 GMT
+# Mon, 09 Mar 2026 18:35:24 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:35:24 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -10359,49 +10359,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:45 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12779db79fdef0a6740525b1f21f65d4ede6fe7787cf7c1f92c2e3bba94c32d0`  
-		Last Modified: Tue, 24 Feb 2026 20:16:29 GMT  
-		Size: 275.0 B  
+	-	`sha256:7c986518259274bd56132390f17664d9e5042c71e09e91beb2543eb91d714819`  
+		Last Modified: Mon, 09 Mar 2026 18:35:32 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6baf97b653648bf578970d2f24892974c6eed215e5632c36a382747a5f1acc53`  
-		Last Modified: Tue, 24 Feb 2026 20:16:29 GMT  
-		Size: 4.5 MB (4522034 bytes)  
+	-	`sha256:6a14138d49659bc5678fb5f22e947875710d9c09621dd65e574bb5ee3cdff51a`  
+		Last Modified: Mon, 09 Mar 2026 18:35:32 GMT  
+		Size: 4.5 MB (4512900 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.0.9-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:e64d7b8e7232800770b1f3cd4d78c4add03d6099b783a8561bf71012aef3c614
+$ docker pull rabbitmq@sha256:ef9458b401c4a85bd7063624c409e883c3e5373a1ef616ec3b7f7ae645d72b17
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2495267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7f871f8f1baef1904c4ff3055ccb8dd23145d72a9f189cadf84e7040d716130`
+-	Image ID: `sha256:d7b8915721d100fbe50cb4ad34114081f7672b56311e9a4d3282c335587e45b6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f885366ebe768e6f751a86d16d751857b7b7b805c5477203522b163e3d2f1edb`  
-		Last Modified: Tue, 24 Feb 2026 20:16:29 GMT  
+	-	`sha256:1284bb760511162fcd7ba2e1187062a9aa4069b4974ab9883aa36245bb762569`  
+		Last Modified: Mon, 09 Mar 2026 18:35:32 GMT  
 		Size: 2.5 MB (2479622 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fdf1cf65260c52d7850a92e1ee478598d3e05bf243e904a010f55b3690a9f3a5`  
-		Last Modified: Tue, 24 Feb 2026 20:16:29 GMT  
+	-	`sha256:a2da6999c55e20f604a5414f9493452f3cb64e19fe7193cde49705fc6eeb6293`  
+		Last Modified: Mon, 09 Mar 2026 18:35:32 GMT  
 		Size: 15.6 KB (15645 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0.9-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:2241817e8a64bd6fa5657dc5fd298bb85b7f37366a228dc7ed7c1f1a3af1ef16
+$ docker pull rabbitmq@sha256:a878a627e8f2e3046294cfca56d839032373dade488df4e50a7516dffb5be0a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.3 MB (88274983 bytes)**  
+-	Total Size: **88.3 MB (88274985 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2f9a734162103e1b29c629bdf776d9bfe161cdf518a0f4b1f69228d624a33f7`
+-	Image ID: `sha256:013d711df0637ed17d80520c659045de0c36c224a663b04522285cd3d24c6fed`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -10464,11 +10464,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:58 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:48:07 GMT
+# Mon, 09 Mar 2026 18:53:03 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:48:08 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:48:08 GMT
+# Mon, 09 Mar 2026 18:53:03 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:53:03 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -10509,9 +10509,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:24 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f573fc62287f14af7e7a4b0df33dd14959bc5d438d330137177078e2bde51b2`  
-		Last Modified: Tue, 24 Feb 2026 21:48:15 GMT  
-		Size: 274.0 B  
+	-	`sha256:2a04b8e0ad1cd61f512f413ceee2159657ea72cd9717148b48fbefaa0cda53a8`  
+		Last Modified: Mon, 09 Mar 2026 18:53:10 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -10521,37 +10521,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.0.9-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:31133aa451e5daf50d92894d1cd80b40d1effe02372cbab377bdbd4df99abf8e
+$ docker pull rabbitmq@sha256:86417d911eba9389f92f0b9ff7203fdae0f6cbec0b7f88e8bec6e3b63cfc8e8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2496123 bytes)**  
+-	Total Size: **2.5 MB (2496122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b152822a9638a851ce8cd157a08ec7ac1d2523822f5cc1761bf36fd35f5847fc`
+-	Image ID: `sha256:b0535a0486006300c69f7ef4b89a5ddee1fbd4c8d9cd7a9734928ef5591ddafd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e7c3d3c32a32a0127d3ff95eabc9c641b1aedd2fdbcefa150115127334cdddc3`  
-		Last Modified: Tue, 24 Feb 2026 21:48:14 GMT  
+	-	`sha256:239e96320942d35276a3a9f80ea04a986f94725ec61faea353803a8b339b59b8`  
+		Last Modified: Mon, 09 Mar 2026 18:53:10 GMT  
 		Size: 2.5 MB (2480406 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:96363ba588ecb1b8e6e51004c90897b6cb97808bba10cbef7d08cea59912d21d`  
-		Last Modified: Tue, 24 Feb 2026 21:48:15 GMT  
-		Size: 15.7 KB (15717 bytes)  
+	-	`sha256:15782c8909ace8f0abc785d042a2f9bfa379bd9228615d3eb34082d37d9772dc`  
+		Last Modified: Mon, 09 Mar 2026 18:53:10 GMT  
+		Size: 15.7 KB (15716 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0.9-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:370cbeb2cca416405cfe4ce363bf6adce4a9c439fdd3a1bc8f7c0836612c92f7
+$ docker pull rabbitmq@sha256:f4ad7e592b68ea17f5c7b07d48085e6bfc5a4c7bd9869394542613acae000a1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **108.1 MB (108058358 bytes)**  
+-	Total Size: **108.0 MB (108046930 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e6c55c0dd164642423c65bcd7e6be8f6df6eb739e42c91db6c087db228a6c81`
+-	Image ID: `sha256:e55b579fa108f4d540cb691fa3768448c4b8620deeb7d6b594d1dcfbe41c330e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -10614,11 +10614,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:15 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:29:10 GMT
+# Mon, 09 Mar 2026 18:36:36 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:29:21 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:29:21 GMT
+# Mon, 09 Mar 2026 18:36:51 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:51 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -10659,36 +10659,36 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:42 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc768db5700fddb188bc621d4247515664a4c004411f862837776f88d7675340`  
-		Last Modified: Tue, 24 Feb 2026 20:29:30 GMT  
-		Size: 274.0 B  
+	-	`sha256:5381f70dfffe571f0eb5aba6c08385d3078c7576c80988ebc687ac64e5bbb0b1`  
+		Last Modified: Mon, 09 Mar 2026 18:36:58 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59d890944489224fb070669b1d5bae12a2c886d374b929fddbafbbf5069c5163`  
-		Last Modified: Tue, 24 Feb 2026 20:29:30 GMT  
-		Size: 4.3 MB (4287709 bytes)  
+	-	`sha256:f58111f2b7f151a8c38e8bda52338ad7bda74670ea1c9af7f71c83ea8ba5d9d9`  
+		Last Modified: Mon, 09 Mar 2026 18:36:59 GMT  
+		Size: 4.3 MB (4276279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.0.9-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:c7bf86cb404df96c4ef6c6dc3cd62487fbb083a138092f31c3c58b5611c5bc5c
+$ docker pull rabbitmq@sha256:693ac3227b5c361dd67def9c0105bf39f74bcb00f6d886af8464aa8a9e049078
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2496398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cda64c7478de9747a939d1d53de8ced3117ba0ff7e63b8ba7c36b258d955cab9`
+-	Image ID: `sha256:5924babbad28c90a1c5f6cbcdc353516c0d86093e19c4b47460886758d4b4fc8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:673ba5564e2008897a81bbeb6e76104aa58efcc755c2af77a201627f28caeb6a`  
-		Last Modified: Tue, 24 Feb 2026 20:29:30 GMT  
+	-	`sha256:2247a25f726bf7af27c856bfa4152ec9a48513a3bc5e988a65898837040f698f`  
+		Last Modified: Mon, 09 Mar 2026 18:36:59 GMT  
 		Size: 2.5 MB (2480658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:040e2b3bf759f71c92cbf67b6805d6f18c3ba7182969eebf89515ed9c7d01ce7`  
-		Last Modified: Tue, 24 Feb 2026 20:29:30 GMT  
+	-	`sha256:5bd1fb4b02d236f6bf672388890f2b7066cbccfa64dd66632c821e10a3cc6e33`  
+		Last Modified: Mon, 09 Mar 2026 18:36:58 GMT  
 		Size: 15.7 KB (15740 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10995,13 +10995,13 @@ $ docker pull rabbitmq@sha256:f470ae584f30ad04633d7c082fa6808ae00d7aaf0cc0f632cb
 ### `rabbitmq:4.0.9-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:2f9736c239c67d15bf682f56280bd959a0019da383311843086546eb0d354ebe
+$ docker pull rabbitmq@sha256:3249adf72323e7b351f8f41157b4da03bdc148903d368d42e49da1d842001efa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **98.0 MB (98024680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:907dbff398937230423bf1278f77fa161e3292e4356b9b1cd7212939f9a6a58a`
+-	Image ID: `sha256:50342723a973ec83b109bfdde512ed7639fc492704629cab66b772a200ce20c3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11064,11 +11064,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:57 GMT
 CMD ["rabbitmq-server"]
-# Wed, 25 Feb 2026 01:07:21 GMT
+# Mon, 09 Mar 2026 19:06:21 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:07:22 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:07:22 GMT
+# Mon, 09 Mar 2026 19:06:21 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:06:21 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -11109,8 +11109,8 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:20:45 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1ba19f96633f4ce53cbcbcfd51bc1df07167363b7e19398e064e063ab73fcdc`  
-		Last Modified: Wed, 25 Feb 2026 01:07:51 GMT  
+	-	`sha256:5fdc12b46bfcc6324a15bc060610c63862ab7781a4f6ce794e377f3d6a7ad358`  
+		Last Modified: Mon, 09 Mar 2026 19:06:32 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -11121,31 +11121,31 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.0.9-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:bf6ab60174164743b73d5335942e51e99f76b92945d0cdfd3464f80fe673e32e
+$ docker pull rabbitmq@sha256:7dd31ba0860d545a39db480d808db05582cef53c90d493628898383ec558cb10
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2497372 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9dec1aaeddcf1fecfbed754ef4ad40cabd0010dfee47b397a549b94fa5e6a490`
+-	Image ID: `sha256:8b95979f191a63dc883388eb294c6912ec67bd5e5dd8f593260ce7e43ca288f6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f8ec7eaced1db9f9be6648db11e0a7bbda2a9b9bdf251a7a58ff0a00e67ef043`  
-		Last Modified: Wed, 25 Feb 2026 01:07:51 GMT  
+	-	`sha256:29a324a675b0197c58022f635dbdf55b43cc335bbcd974e1af8cb152834aa451`  
+		Last Modified: Mon, 09 Mar 2026 19:06:32 GMT  
 		Size: 2.5 MB (2481732 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3bea51922cc7c05b3e4730d993170457e45327cfb0d322ef27a9b12db59f26a4`  
-		Last Modified: Wed, 25 Feb 2026 01:07:51 GMT  
+	-	`sha256:f195ae6092b269585bd61d15c792b67eea04324b7b7a2075fa646989d6d7c1db`  
+		Last Modified: Mon, 09 Mar 2026 19:06:32 GMT  
 		Size: 15.6 KB (15640 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:4.0.9-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:99416d2bdede9526a26c4fd212dd41a707a1b0353428f957e8c86f6940943eab
+$ docker pull rabbitmq@sha256:4e1bfe4f3462fe6c9c422b0b2ce6135a0e5333c740e77202b2ef51f0b586e0a1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11170,13 +11170,13 @@ $ docker pull rabbitmq@sha256:99416d2bdede9526a26c4fd212dd41a707a1b0353428f957e8
 ### `rabbitmq:4.0.9-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:fb80a4e3620c9b592d87d3d81e1f54c2d795354b0d644f7f004e764172cbe945
+$ docker pull rabbitmq@sha256:7a35c19907576a993121ef9e5e909486dc37a9d646936a5f75f8ebb86ba62753
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.9 MB (80856963 bytes)**  
+-	Total Size: **80.8 MB (80841540 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11e5b37077d4987204da340bc06b00bf0cc83023ca711da402decb58d4674ca8`
+-	Image ID: `sha256:97aee095b35dc1dca0262eb9d63a01b08c26d2a6bf85b80751de3c3152337fba`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11231,11 +11231,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:58 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:16:12 GMT
+# Mon, 09 Mar 2026 18:35:11 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:16:13 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:16:13 GMT
+# Mon, 09 Mar 2026 18:35:12 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:35:12 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -11276,49 +11276,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:15 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90ede9cee951c65abea153b42fb6bb2509472f678af2271bbc60c06c0468f3cb`  
-		Last Modified: Tue, 24 Feb 2026 20:16:20 GMT  
-		Size: 272.0 B  
+	-	`sha256:8a3bce890aa70fa3416f9c4232e9aef3d2c73f04e60130b1b21985628a843643`  
+		Last Modified: Mon, 09 Mar 2026 18:35:18 GMT  
+		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:079f652cf391f7d10f032f59dad632adbf7b2bab727af7b977315b1f52bddcf5`  
-		Last Modified: Tue, 24 Feb 2026 20:16:20 GMT  
-		Size: 4.4 MB (4368736 bytes)  
+	-	`sha256:fca8b562fca3ee01d50695f72e69c5d88f79a5b3bfc5cdbd8a0f92c2ff5ccaf5`  
+		Last Modified: Mon, 09 Mar 2026 18:35:18 GMT  
+		Size: 4.4 MB (4353311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.0.9-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:70209d2d42babad6d6540879aa34727b3a96a629f7026a50195dbf18f136714b
+$ docker pull rabbitmq@sha256:fb12edeb23656ebce9a6082cb12a533e7356f3bb20104ab5914d2d3f7a033192
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **683.3 KB (683305 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37acd7a112b81d8bc23209b9c3eb99ebcc65a0bdad2256e4cd2f97ce8f3e19f2`
+-	Image ID: `sha256:c7e1a017c477d147beca2d3424e6d59a4e92b029dcee647fa599e4c694a73374`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9150b881141686cf7ec0d1d0f651d6d8f7db07047499c400b0d717964d33acee`  
-		Last Modified: Tue, 24 Feb 2026 20:16:20 GMT  
+	-	`sha256:7248d5c1df4abafc3bd6a246b90b031c819f86a65cb55b60ca61f35219c9acf8`  
+		Last Modified: Mon, 09 Mar 2026 18:35:18 GMT  
 		Size: 668.7 KB (668718 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9e71007149f2bc30af87cd423d1a0795d448b85c5ddbb520ec85aab820905c93`  
-		Last Modified: Tue, 24 Feb 2026 20:16:20 GMT  
+	-	`sha256:2ba2d7429cae6b72afcb7a2bf5ecf22a87bda5e0fa2c680dda732f010e3468bc`  
+		Last Modified: Mon, 09 Mar 2026 18:35:18 GMT  
 		Size: 14.6 KB (14587 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0.9-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:61fcc34002f68a5b9d3d27309dbf7eae9b6d84b9141133598ed76dbd65eeea2e
+$ docker pull rabbitmq@sha256:bcac85df8636274806399e0b0e05c3b5763d9a32068da22ba1884217eddc4eda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.7 MB (64686415 bytes)**  
+-	Total Size: **64.7 MB (64686414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8e18f70391aa8adc6e832806c394fe4b6304845820aa034e029208f45ced80f1`
+-	Image ID: `sha256:a5a16d664114a0429f90a42dd7aea91a4bdc90e224a58cee97ddcacfec406c71`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11373,11 +11373,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:32 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:27:36 GMT
+# Mon, 09 Mar 2026 18:49:03 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:27:36 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:27:36 GMT
+# Mon, 09 Mar 2026 18:49:03 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:49:03 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -11418,9 +11418,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:41 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68334c2eda1f8aa6a752977be920966940dedf1df33b06fcbd1b31e47b817932`  
-		Last Modified: Tue, 24 Feb 2026 21:27:40 GMT  
-		Size: 275.0 B  
+	-	`sha256:85d5cd35a18d5dbdf75389423b924230f6bd2da2ba8b4c1f47cf018f5cdb42e6`  
+		Last Modified: Mon, 09 Mar 2026 18:49:07 GMT  
+		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -11430,33 +11430,33 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.0.9-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:5668e9cba2d9574ebeda079f30218db47a26b1d0053e75ec4ab3d2c43578ad69
+$ docker pull rabbitmq@sha256:4ebe5a1073938ac0db3d2688deb6159b9cdfd0687ecac3be737890e9fe56f9d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.4 KB (14444 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e921eb13c8689804e25b144eaa52184087df23e5430062a208b16c9455e55e4a`
+-	Image ID: `sha256:1c3f6b6ad86466f76cef1cf19e9d607e1fabb761e83e004601b132102f65350a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6cb9671117a7f6eaa4d81d43f4873e13e28a0062acfc00a4ba3e657efba492db`  
-		Last Modified: Tue, 24 Feb 2026 21:27:40 GMT  
+	-	`sha256:c42d03425631bba80d4619bdf2642c3610ab93014cd6b6ba0f7f9f82fe50546a`  
+		Last Modified: Mon, 09 Mar 2026 18:49:07 GMT  
 		Size: 14.4 KB (14444 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0.9-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:5cc55538851958c1d0c6404be340040df19a359dda82a2fa251d5adda30389da
+$ docker pull rabbitmq@sha256:76c3688a0249726be08e129a592ce86ea450184f4f7f883f11474044398ae1db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.8 MB (63781568 bytes)**  
+-	Total Size: **63.8 MB (63781566 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1254c9981909ed71116e76a639fa88ad8980f045a9617f8711c5138ba6c15df5`
+-	Image ID: `sha256:724f2702c418d355c6603206046330243b873f0b6ab21c1a3f3b4bc4e447ffb9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11511,11 +11511,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:30 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:48:10 GMT
+# Mon, 09 Mar 2026 18:53:06 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:48:10 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:48:10 GMT
+# Mon, 09 Mar 2026 18:53:06 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:53:06 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -11556,9 +11556,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:46 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a44441979d9ad258115d216120b5e30e09615d22fd77469551857ffecfa0dbb2`  
-		Last Modified: Tue, 24 Feb 2026 21:48:16 GMT  
-		Size: 274.0 B  
+	-	`sha256:e228f4671707d51aafc1dd64b7596660d04022d8bd698bf4f4a5318ba9513290`  
+		Last Modified: Mon, 09 Mar 2026 18:53:12 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -11568,37 +11568,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.0.9-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:617ac964334abae2686211cea9316ac89388e3cc914337b6facc5f5e4cbd0361
+$ docker pull rabbitmq@sha256:5ae65fb4624ebc68cd8bd38d63b6c271e33d851e9b39e4792f00af80a8700ef3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **678.5 KB (678504 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c4453bf27ce90e32d2675048a08f4d2820a103ac3b9bb6c898bca5dcdbdca16`
+-	Image ID: `sha256:17111f83d90647cf365fb82a45e9091102c3884933305f00a1c7cf45c254e980`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eb8ecda440cda5da8cc2873870e13795d4e96f17084c65fa8e5e165afec14849`  
-		Last Modified: Tue, 24 Feb 2026 21:48:16 GMT  
+	-	`sha256:612fcfa5d852b029bbbdac637a4bea54d0fa9d98b6b126defec64aebaf896e8d`  
+		Last Modified: Mon, 09 Mar 2026 18:53:12 GMT  
 		Size: 663.8 KB (663845 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9ea467f0cb54e36140f2e0df519f878d813ea7f095b8dc477ecd27af1462bccd`  
-		Last Modified: Tue, 24 Feb 2026 21:48:16 GMT  
+	-	`sha256:b78bb6a89fcc3842e80596b4dab589f3e64efdc82bbd3f7ba2fcd4f5b48b4abf`  
+		Last Modified: Mon, 09 Mar 2026 18:53:12 GMT  
 		Size: 14.7 KB (14659 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0.9-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:ff488d463b159f475be4413f4c7ee0ae1cf1218cd7114949e1e754ec470edca9
+$ docker pull rabbitmq@sha256:0df757b16daa8cfdf2bd66a07f3ebaf3f7143061110243133434db47b80d06d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.6 MB (79559486 bytes)**  
+-	Total Size: **79.6 MB (79551412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84a3f114cbadedb9dcb5990b324974e7bc6d785a1a5fec816c65a15d8970bdcc`
+-	Image ID: `sha256:f44a96fbaa31d38593acdb5e1d35fd14648aac3530c4f740e1775ee748c9e896`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11653,11 +11653,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:43 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:29:17 GMT
+# Mon, 09 Mar 2026 18:36:44 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:29:18 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:29:18 GMT
+# Mon, 09 Mar 2026 18:36:44 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:44 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -11698,49 +11698,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:01 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d553ea3b2e36b09a953f588d15b65f735a907a22f97419e1fcdc1aa5b0277ac2`  
-		Last Modified: Tue, 24 Feb 2026 20:29:25 GMT  
+	-	`sha256:550d918298b4b984d859694e94aebc16eaed7e183b3854f58739d95502f18e19`  
+		Last Modified: Mon, 09 Mar 2026 18:36:50 GMT  
 		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bd18d4eaa5414e12cb192f3242eaad58a7fb25af0d12f3a05f314f42adf83de`  
-		Last Modified: Tue, 24 Feb 2026 20:29:25 GMT  
-		Size: 4.0 MB (4048712 bytes)  
+	-	`sha256:c214bd9f5773029e01e4677b8489e561862d5b07a893eff350eb28ad6176d85a`  
+		Last Modified: Mon, 09 Mar 2026 18:36:50 GMT  
+		Size: 4.0 MB (4040638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.0.9-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:68933ed9468d4283f7e4f480841ecec0c365b422cd3499a1b57c2295b6e6b50a
+$ docker pull rabbitmq@sha256:93aa071c37edcef9eb1fdac184c3ce2713605169e6911ab401fa950110768d40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **683.5 KB (683518 bytes)**  
+-	Total Size: **683.5 KB (683519 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fcb8c05fa946bea891660e5792f3189938ef1c8a28ff22ee24b9d1f58a9fce7d`
+-	Image ID: `sha256:a05e88a028aa63be81530aa462b8fd5b5b3eeb730bbd93ddb07d74293144e085`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:74fe9a27137e329a7302c0056d9781a8f8a6e6b48ddf286af385adc01615169f`  
-		Last Modified: Tue, 24 Feb 2026 20:29:25 GMT  
+	-	`sha256:c5378ce65afa440a1eb48011adf427c60ec61d18249bf2082093b667a3055029`  
+		Last Modified: Mon, 09 Mar 2026 18:36:50 GMT  
 		Size: 668.8 KB (668837 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ff089f1fa12b307c562756642f3227456d852db312ba3b1070890b3b150eb959`  
-		Last Modified: Tue, 24 Feb 2026 20:29:25 GMT  
-		Size: 14.7 KB (14681 bytes)  
+	-	`sha256:5839387981559784e45f7cb78dfe779722258d99f8a22507c8f65db091335b94`  
+		Last Modified: Mon, 09 Mar 2026 18:36:50 GMT  
+		Size: 14.7 KB (14682 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0.9-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:f6454e9a301199b456f0a8cc4e794aa5344709c1fa704b2bfe1116144ec89d67
+$ docker pull rabbitmq@sha256:4a7b4c34a4ef34c174046705ca7e5c037d1601441f37654f36270da2b76ee2df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **66.1 MB (66105369 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:838aa089ca784b93cd4ca3bdd77ba2bc6aa12721262faaa140d874c14b1d971c`
+-	Image ID: `sha256:48f72b4e8993b4f031ae3bd46ecca925404dceadf10b30c0944bb55e0c6607fe`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11795,11 +11795,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:14:01 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:08:24 GMT
+# Mon, 09 Mar 2026 18:21:38 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:08:24 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:08:24 GMT
+# Mon, 09 Mar 2026 18:21:38 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:21:38 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -11840,8 +11840,8 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:14:14 GMT  
 		Size: 824.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afd34d6a7847d7fed60c49294ac86b4d9007fa95747ad19b89396541d42e1ab5`  
-		Last Modified: Tue, 24 Feb 2026 20:08:29 GMT  
+	-	`sha256:4713308b5fdff709522ce444f4d9da63711cdd7ad73a5ef47ecde90dbf229c39`  
+		Last Modified: Mon, 09 Mar 2026 18:21:44 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -11852,25 +11852,25 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.0.9-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:2c60a5541062e817d1719660467b9495241af81c047aa8cafc7b3b845ad2adb9
+$ docker pull rabbitmq@sha256:e43956e7501c164e191fcb4e2245864c7dcbd41799126211914bafce3a259ddc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **678.3 KB (678281 bytes)**  
+-	Total Size: **678.3 KB (678280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac67c272128424d6139406cb1a0ec02fcc91475f7405e542ddc684cc7118a1bd`
+-	Image ID: `sha256:e44720230260f6d60d837c821a84fb98fa4b1776513bdd2c7ad308519c0a1590`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44ac738b17778251de7a384a4fb95f4e4ba2ea8bbdc6f4bb7ff67488d9cccc5b`  
-		Last Modified: Tue, 24 Feb 2026 20:08:29 GMT  
+	-	`sha256:c0f8746044aa452d6b0b6157fe0908845b395622c420a4372cea735abf49683d`  
+		Last Modified: Mon, 09 Mar 2026 18:21:44 GMT  
 		Size: 663.7 KB (663723 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4073236c54c80a49581d50e4b21412017ad58dc073d7882c0436c3824a02485`  
-		Last Modified: Tue, 24 Feb 2026 20:08:29 GMT  
-		Size: 14.6 KB (14558 bytes)  
+	-	`sha256:aa2a5bb773f1a469fc6e98e5fc6f789e899d9ef885114cc44509c4abb5583380`  
+		Last Modified: Mon, 09 Mar 2026 18:21:44 GMT  
+		Size: 14.6 KB (14557 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.0.9-management-alpine` - linux; ppc64le
@@ -12160,13 +12160,13 @@ $ docker pull rabbitmq@sha256:81803d12d8ccff154d5c29c532283e00687d92bd5577147b4d
 ### `rabbitmq:4.0.9-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:8ea0c0c79d8b35a1d42c6f2034f82a7b76c5fb02ee18cc26196cd012f4857362
+$ docker pull rabbitmq@sha256:4302eb2e0907c9ec84899ea5c57944359ff87de2a8dc9aa6d7569f952a10c1a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **65.8 MB (65849495 bytes)**  
+-	Total Size: **65.8 MB (65849491 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6899ca846e8774f2a916efbb6a112af9a94409fdacd12c3ceaf5a5061e0c4e93`
+-	Image ID: `sha256:dd729a6d1c09410036d8b6db28d9f86183f7ce85ee5037a00e286e3d195ddae6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -12221,11 +12221,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:34 GMT
 CMD ["rabbitmq-server"]
-# Wed, 25 Feb 2026 01:07:38 GMT
+# Mon, 09 Mar 2026 19:06:22 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:07:39 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:07:39 GMT
+# Mon, 09 Mar 2026 19:06:23 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:06:23 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -12266,9 +12266,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:25:11 GMT  
 		Size: 826.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82497b300198d66e97a8c0faa9d3d9e61d2aa27ddda57b62158301711b78e432`  
-		Last Modified: Wed, 25 Feb 2026 01:08:27 GMT  
-		Size: 276.0 B  
+	-	`sha256:2c128b5d30e363fe4f02a319e1f12483a2dbf05ee273e082bba997ac7d9edbe1`  
+		Last Modified: Mon, 09 Mar 2026 19:06:32 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -12278,24 +12278,24 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.0.9-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:c09bd397f514408fb4b9a743dba08c15e5b1429b9cf752b9f01758dd98a77d0f
+$ docker pull rabbitmq@sha256:bc3051b6e7d1c70c540d9b0cfaf4a275be70b78c29b5d5d08722d660e479e76b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **678.4 KB (678406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85038040a8a5096f6db843a3a7c30f01440b9d58f63f25102302297fc1079bc5`
+-	Image ID: `sha256:05d453b630b1ea51645bcf19936bafcd07301b6b0c57de1d49f74986c5261dcc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bb573846ae0b46471d4084bfe85d741e428a76d3e1a76f1d8fdc3615b4ee7428`  
-		Last Modified: Wed, 25 Feb 2026 01:08:27 GMT  
+	-	`sha256:1c57477e44cb9536e56f9aa260b4744e105374fe6953aa87e4040821e1b93f16`  
+		Last Modified: Mon, 09 Mar 2026 19:06:32 GMT  
 		Size: 663.8 KB (663824 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c97f76a89c5e738bd7443b380216a19c8207ca5b9f1e1da9eb13b42896e285e9`  
-		Last Modified: Wed, 25 Feb 2026 01:08:27 GMT  
+	-	`sha256:fd8a8b7f6e59c88880a99a3228e272166296dcab0e1fc399425990f0a58d9bd3`  
+		Last Modified: Mon, 09 Mar 2026 19:06:31 GMT  
 		Size: 14.6 KB (14582 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14312,7 +14312,7 @@ $ docker pull rabbitmq@sha256:5bb06c3d1e0f12301dc69b808c7979bb5d5dc158acd8464b1c
 ## `rabbitmq:4.1-management`
 
 ```console
-$ docker pull rabbitmq@sha256:1bed85ab8821559c96eb61945a84448801d0e3f2553745fc4680c90ba28be767
+$ docker pull rabbitmq@sha256:b2d5d54586ffc22ccf23057b24c291868af4fba86911fddf184e36064bb6c182
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14333,13 +14333,13 @@ $ docker pull rabbitmq@sha256:1bed85ab8821559c96eb61945a84448801d0e3f2553745fc46
 ### `rabbitmq:4.1-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:b296440e57d384cdbcc2c79983e90bb39e692a4fb4f94e10b1d6b70d36e3dc64
+$ docker pull rabbitmq@sha256:6885eb09cd97b7933a5973e290aec8044bcd3077343a479c6bc4cec68ed460d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.0 MB (116970336 bytes)**  
+-	Total Size: **117.0 MB (116961247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e766a0f9b1e32f9a402f7d42170749d2b0a53f58ae6ba2e940897086c83799f2`
+-	Image ID: `sha256:e3ad05d7aa3f6f69f6a49bc0d4688177c9019a915f352c9992a95457410317f7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -14402,11 +14402,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:52 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:15:55 GMT
+# Mon, 09 Mar 2026 18:35:02 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:16:07 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:16:07 GMT
+# Mon, 09 Mar 2026 18:35:14 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:35:14 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -14447,49 +14447,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:17 GMT  
 		Size: 827.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a420fb90d4760dfe13ec71c7eb63a2a7f950783c445aa9ce4edad9997ae86baf`  
-		Last Modified: Tue, 24 Feb 2026 20:16:15 GMT  
-		Size: 274.0 B  
+	-	`sha256:82b0cd32651fce21cd0713f5857b08ddc59e6c93ca9a875d1b01126d4e67a644`  
+		Last Modified: Mon, 09 Mar 2026 18:35:21 GMT  
+		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e314e59a6bc5f09ab2fb887b12c9a9edc7e257c7baee991d702e010e340bee8`  
-		Last Modified: Tue, 24 Feb 2026 20:16:15 GMT  
-		Size: 4.5 MB (4522037 bytes)  
+	-	`sha256:4cf57353efda04f3cdf5975732cd725c1b772f840239b3640cb44992d9bcd3ef`  
+		Last Modified: Mon, 09 Mar 2026 18:35:21 GMT  
+		Size: 4.5 MB (4512945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:2ff3e1d60dde1eed279819c4f369d83e95cf35edab5e7e202887a1b17ded271e
+$ docker pull rabbitmq@sha256:6083a33a39fa51aac8695af3380b61768c18af5b16898e48f6c9203c60e579bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2499051 bytes)**  
+-	Total Size: **2.5 MB (2499050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e07559a069f6b0e2cb401116e46ca5677c4f64c35cf4209a8672d8b423c495d`
+-	Image ID: `sha256:c74856a5bc5d8c9b18d26dee68beeb8d712c6437c1586b5cf5bcec8779f306d6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2ae23e0d09e10f525e8bcee400640c07fbac56c9065f82c89a4c9ce1a3b05511`  
-		Last Modified: Tue, 24 Feb 2026 20:16:15 GMT  
+	-	`sha256:38d3d02f2de6d22ef7271aa2d9381ff45fe09412da33e3a1c101672bf8343f5a`  
+		Last Modified: Mon, 09 Mar 2026 18:35:21 GMT  
 		Size: 2.5 MB (2483406 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:77aa30a2fbdf47675c5a1c6e81eb7c66687782acda011f073549fb1ed33607ee`  
-		Last Modified: Tue, 24 Feb 2026 20:16:15 GMT  
-		Size: 15.6 KB (15645 bytes)  
+	-	`sha256:c76b0d2c340c1270b2895d507811b7d74f09d208a7e21283ae125b3affcdb339`  
+		Last Modified: Mon, 09 Mar 2026 18:35:21 GMT  
+		Size: 15.6 KB (15644 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:a29e058e0458a8cff4e6b3f463cd930bd0b222c0022a7563d5287ab6861623a8
+$ docker pull rabbitmq@sha256:78c7bb0d84d7cb7d829724b49ff26c7de1529b42bf2d19422c27a0ae2924b31d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.8 MB (94827380 bytes)**  
+-	Total Size: **94.8 MB (94827383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8da3c86bb4951b10fddbf6824552ded605de2f8ec8e430e479078cba7cbdbad`
+-	Image ID: `sha256:39a0a62dc6f0ec2c1986a6d4fe05a845f4eedf8e38d72e873903da2f7e5b4389`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -14552,11 +14552,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:06 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:47:59 GMT
+# Mon, 09 Mar 2026 18:52:57 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:48:00 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:48:00 GMT
+# Mon, 09 Mar 2026 18:52:57 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:52:57 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -14597,9 +14597,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:32 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b84fab0300c379bd6286c4ac072be2c016a9482e08f177b018851fd0a413e6b6`  
-		Last Modified: Tue, 24 Feb 2026 21:48:06 GMT  
-		Size: 274.0 B  
+	-	`sha256:2e47728fc46ae0e870a5879d3d9ca95ec0279b0118906aa521a5d99199420443`  
+		Last Modified: Mon, 09 Mar 2026 18:53:04 GMT  
+		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -14609,37 +14609,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.1-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:0e5711a95185a86fc1aa70a0667b1c3f0821fdb51848d87cd1f694053e512ca4
+$ docker pull rabbitmq@sha256:31b056aed4295839dcd95748b1b09d885831198ad011eec836c50cd1e0109dd5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2499907 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f03a0632f698a29d9dae8bd8731444fa26d16502811a0dffa933ac303c9c6138`
+-	Image ID: `sha256:27579ca9d9e4a1c8962e9a2f9314a0ac8a7f4dac8fc654e4b8a5da0e4587af89`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:27de328755368e61284e3b3e23600a14d73f8074902efbf19cd8908e17320081`  
-		Last Modified: Tue, 24 Feb 2026 21:48:07 GMT  
+	-	`sha256:a30d824e70e643cc0524500328509e4e78db8d04271b270dd2f4c008dfdfc64d`  
+		Last Modified: Mon, 09 Mar 2026 18:53:04 GMT  
 		Size: 2.5 MB (2484190 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ed7bff6604314093ffe3b8ef21b00b3aeae0dc2cbd48ba193020c8a6ce87b28f`  
-		Last Modified: Tue, 24 Feb 2026 21:48:06 GMT  
+	-	`sha256:658c9ec6f56754e95d68dde8fac7d9479069847b73672c5f7b3c3eb40f2c21fa`  
+		Last Modified: Mon, 09 Mar 2026 18:53:04 GMT  
 		Size: 15.7 KB (15717 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:85a3be68c8862f6b77defb67667f374bd4e736b4e888a7cf37b25760260b6048
+$ docker pull rabbitmq@sha256:fc606f8b6989317bb9508f28de04df61c6d5a0b96f4ac62fc9776180394839e3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.6 MB (114613991 bytes)**  
+-	Total Size: **114.6 MB (114602482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef5c636c60689f1a728de21628ebd7e1611aecb9d1fb3f14dbf36f3a49107517`
+-	Image ID: `sha256:1e648d8a3c7739466c58525f138ec1359909dee64a6b3b93ed78f3009f40de0e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -14702,11 +14702,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:05 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:29:12 GMT
+# Mon, 09 Mar 2026 18:36:27 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:29:24 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:29:24 GMT
+# Mon, 09 Mar 2026 18:36:41 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:41 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -14747,36 +14747,36 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:33 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:950bf794613e8f8862f40a969ad49bbc5ae84766ed18c7764cf0278309bbbf40`  
-		Last Modified: Tue, 24 Feb 2026 20:29:33 GMT  
-		Size: 274.0 B  
+	-	`sha256:8b9ea432e77aafec86d82cb7f9eb35ad990b469a707831599197625d90074ef6`  
+		Last Modified: Mon, 09 Mar 2026 18:36:48 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:473f9ef3b64b1871bdd1226c309ff1309ead89fbe044de919720edd0af08fa23`  
-		Last Modified: Tue, 24 Feb 2026 20:29:33 GMT  
-		Size: 4.3 MB (4287773 bytes)  
+	-	`sha256:a70dba2745e088681288689ea45366254201ad6db44f3b1e5b5b94251ffa0f09`  
+		Last Modified: Mon, 09 Mar 2026 18:36:48 GMT  
+		Size: 4.3 MB (4276263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:002e3f1101f07c0d2b71084918e6e97ef96b032d8b30eb4ce305da5f4cb66084
+$ docker pull rabbitmq@sha256:39c0af642ee10b031ac12fe413d41f1eb6661ba250839936c07a36f4bec0c830
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2500182 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aff077f98c3dc012d3b12582fa270e1ae5f0ad8f509f927cf3fa09431c4527f7`
+-	Image ID: `sha256:15306323ca5cbde7eb8282133465c64ac8186a390e8ea3a08685daca72176fe4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:894617bceca24e969bad79d74c1f1eaff989364d800b1671cff31d685261c221`  
-		Last Modified: Tue, 24 Feb 2026 20:29:33 GMT  
+	-	`sha256:d7e60921110feab7c5051b071dc31b3326a3856fe6bd239358cb34b994d10bb8`  
+		Last Modified: Mon, 09 Mar 2026 18:36:48 GMT  
 		Size: 2.5 MB (2484442 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8731f825a80705aa6e0ca432763c8ee8628cf3e5a3ac7b51e53fca41e3e52c94`  
-		Last Modified: Tue, 24 Feb 2026 20:29:33 GMT  
+	-	`sha256:60927380344983b3f271ddb528898d5954c21b5e1b33f657d80c8e7ea705abce`  
+		Last Modified: Mon, 09 Mar 2026 18:36:48 GMT  
 		Size: 15.7 KB (15740 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15083,13 +15083,13 @@ $ docker pull rabbitmq@sha256:c2bb17470a432149aabdc3bd644d57ae3a832e7227656b4b05
 ### `rabbitmq:4.1-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:fee29d3e101363029d480b11e2acf977cd69b3b7425f3837c5dceb50b83c76f0
+$ docker pull rabbitmq@sha256:3a464292bcb642cad62a541645ac8dae52f547240db58d69e816529713d5d324
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **104.6 MB (104579889 bytes)**  
+-	Total Size: **104.6 MB (104579892 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f89212f57fbe2884e014335970202a861a0691413ff32e5679e2cebe54afe1c8`
+-	Image ID: `sha256:3d34cdba0a58e93b50c3ca31aebb3017daf0443f7b971f00863069200a5a75c6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15152,11 +15152,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:11 GMT
 CMD ["rabbitmq-server"]
-# Fri, 20 Feb 2026 20:09:58 GMT
+# Mon, 09 Mar 2026 19:05:59 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:06:32 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:06:32 GMT
+# Mon, 09 Mar 2026 19:06:00 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:06:00 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -15197,9 +15197,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:20:09 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31610530a1e100c62180d16f49575584a73cb11728716d54e607e697c3bba531`  
-		Last Modified: Fri, 20 Feb 2026 20:10:12 GMT  
-		Size: 272.0 B  
+	-	`sha256:092ef8dd46f2528beb05903d77a232fa4475c6afc2a8c7b75a629682c43a65cf`  
+		Last Modified: Mon, 09 Mar 2026 19:06:12 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -15209,31 +15209,31 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.1-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:b22332eee9b748f1068c6659b04e30b796819fcf40e119daa0c83c3fb93ef477
+$ docker pull rabbitmq@sha256:2595eeccf5c892d3f494d925e2f4bfd9255592dc16ccf0e0d53029888c5e0cb1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2501156 bytes)**  
+-	Total Size: **2.5 MB (2501155 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d89b79b845092924e819475d8743d05eb35a5ada7e4d79b27dadadc81bf2ffb2`
+-	Image ID: `sha256:f2d9a5c5279b5d28da3c0219200885fdbe74a754170d100103317069a83ca387`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:044af705f5683b1dda3d8fda2580245693abcf66b0e6e0d7becde2d8d978baee`  
-		Last Modified: Wed, 25 Feb 2026 01:07:08 GMT  
+	-	`sha256:7f4524d394b3f576105c0847edddf3eaebfdf904c5d21b0c5401f46d6f606e6d`  
+		Last Modified: Mon, 09 Mar 2026 19:06:12 GMT  
 		Size: 2.5 MB (2485516 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eb6e58dbc582dd25e21e7eae4231f3cfe76c0458842b923b11e4a89de5667d6e`  
-		Last Modified: Wed, 25 Feb 2026 01:07:08 GMT  
-		Size: 15.6 KB (15640 bytes)  
+	-	`sha256:3d1ebc8a63695e8370acaa762c30af87053b77df07fc151515bb445fa7c70959`  
+		Last Modified: Mon, 09 Mar 2026 19:06:12 GMT  
+		Size: 15.6 KB (15639 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:4.1-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:b31befe79cbec030387f6ad454fddb22fd1217e71be8827d53eaa333159d67f6
+$ docker pull rabbitmq@sha256:91e4908f59ad93fc7d55b64fe3fceaf2c9752b79eeae04021b5fd4e8f8a48165
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15258,13 +15258,13 @@ $ docker pull rabbitmq@sha256:b31befe79cbec030387f6ad454fddb22fd1217e71be8827d53
 ### `rabbitmq:4.1-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:e4ddc6897b1255056edd821bd1aee81af4d1151216cd583a9bb2fbea4250f94d
+$ docker pull rabbitmq@sha256:e16ef0b285a61169ff3243228c5be693b71dcd1cbbcf35ad566f90dceaf5335a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.4 MB (87404542 bytes)**  
+-	Total Size: **87.4 MB (87389117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:278813f4fbfaab31d54902258cda9e775304c923f7fa56237832571c62dd9ed4`
+-	Image ID: `sha256:d256b6c7a043dada866d0c8bd4b92115a4563172d4dd527e12ccd965c0337ae0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15319,11 +15319,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:58 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:16:11 GMT
+# Mon, 09 Mar 2026 18:35:11 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:16:12 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:16:12 GMT
+# Mon, 09 Mar 2026 18:35:11 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:35:11 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -15364,49 +15364,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:16 GMT  
 		Size: 827.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8314dace3db2e9f477f1f25dd7fc83b3864f5ab10aa6466946641a54b196ae7`  
-		Last Modified: Tue, 24 Feb 2026 20:16:19 GMT  
-		Size: 275.0 B  
+	-	`sha256:d892c09f28a8b3502df277546469bf85d1560b8eac856915e04409a300fd0c2d`  
+		Last Modified: Mon, 09 Mar 2026 18:35:17 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a3928d215f226606eb97495f79cacb3f3d088707cfcc3925305ff609f86017a`  
-		Last Modified: Tue, 24 Feb 2026 20:16:19 GMT  
-		Size: 4.4 MB (4368736 bytes)  
+	-	`sha256:81e813d86a6c2840c7eb9a106222b6ad0c83ef5f29d4325457579f1b721fce77`  
+		Last Modified: Mon, 09 Mar 2026 18:35:18 GMT  
+		Size: 4.4 MB (4353314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:0b76f16dcecd67f8b1c6047283091c4dc41d429f7dbef2b1f100ed5163f3b9c2
+$ docker pull rabbitmq@sha256:e9db3156e78f4e3e74a1c0a81670f8a8d4eebf41373a600f16b53e468692b92f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **687.1 KB (687089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:645b5e7283158cd4e2119e27ce4177e0327c9fbfc1e6e69720a81590970f5948`
+-	Image ID: `sha256:114a365d0b5aadcd8ee8d110b65519e1041d21948881c253774c85bc1f8e3798`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4d633e9172cbb3f24d4e496acc77f0b97f2d1f82954f0693e40ee71627633624`  
-		Last Modified: Tue, 24 Feb 2026 20:16:19 GMT  
+	-	`sha256:401149baf3538baa38c8362811528a40672af4348dbf5ae31a5805a664c54704`  
+		Last Modified: Mon, 09 Mar 2026 18:35:17 GMT  
 		Size: 672.5 KB (672502 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d903265929c20600ef7c181d07ba0c53b194567f8fe42347187c0ed7a33f7d53`  
-		Last Modified: Tue, 24 Feb 2026 20:16:19 GMT  
+	-	`sha256:003d12c977ee8236c21a95d17776cc24e9480b425ae53af180e9c4ff3ee987c1`  
+		Last Modified: Mon, 09 Mar 2026 18:35:17 GMT  
 		Size: 14.6 KB (14587 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:8f3a973fbadda53e30ff284edb608968dfee952255e533c3a1319f05e9293275
+$ docker pull rabbitmq@sha256:98f2d322c1a0de5ed53a03df5346f7d7a8a5d85eed710e6e751e51248bedd13f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.2 MB (71232876 bytes)**  
+-	Total Size: **71.2 MB (71232875 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f0510e007dcd5e2e9ae83238f2d4d0766cd3e46b8225ab15d7450382fc2d6d19`
+-	Image ID: `sha256:3d2f7fb21be6ee1c49e0693e620034f5950f40fe4649574cf9b1ea0c466e6879`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15461,11 +15461,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:17 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:27:26 GMT
+# Mon, 09 Mar 2026 18:49:15 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:27:27 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:27:27 GMT
+# Mon, 09 Mar 2026 18:49:15 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:49:15 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -15506,9 +15506,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:26 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45530240241f7e9f5565bda2f3aa4081c773bd5f5ba01ef0bd0d49e250840dd7`  
-		Last Modified: Tue, 24 Feb 2026 21:27:30 GMT  
-		Size: 275.0 B  
+	-	`sha256:1a57a7233b01bbd64a65df0cc739e6db4e38f0db7259b4628640fcc68d90adc6`  
+		Last Modified: Mon, 09 Mar 2026 18:49:19 GMT  
+		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -15518,33 +15518,33 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.1-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:d11c8d49bed0c51a5a0ff7454d9d962cd6a65f8d1893707450596b98f39bc4d3
+$ docker pull rabbitmq@sha256:31342ec948a5df50d30becda2671dc95b442f3af9e071b0a2d09f870a82b19cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.4 KB (14444 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:add4015a838c6b8543ce4d14e9f77fddb42e297941b4fe5c7f691892c0d1e071`
+-	Image ID: `sha256:66b34609649daed63975b6bb7d2327be46dd115cbe647f7f7d86f04850479c7f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc6406d4e913f85b951a64c68a054908e5dac93655bd4cb370e007ffb9db1723`  
-		Last Modified: Tue, 24 Feb 2026 21:27:30 GMT  
+	-	`sha256:f9af21cdb33fedf18a813366c5dda337b5d567f93b7a0b24a63946f5543a0567`  
+		Last Modified: Mon, 09 Mar 2026 18:49:19 GMT  
 		Size: 14.4 KB (14444 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:4bffbbdafccace7be4584ba355aaf1d366a6d60ae0aa26cf40d206ba746d03fd
+$ docker pull rabbitmq@sha256:ee2244d065dcc27cd6d763a521cc74d08bafd91bb90994e55bd24b5dbf5feb3c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.3 MB (70328926 bytes)**  
+-	Total Size: **70.3 MB (70328927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0716a98ce09e335441466c4a1903e6002ad4f7ed104c988ffd68d0c1e346ad2e`
+-	Image ID: `sha256:d0dfbdca98574b1b3dc88b47769c2c3317ed3c010f7743231c7354fe92a139e0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15599,11 +15599,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:17 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:48:03 GMT
+# Mon, 09 Mar 2026 18:53:04 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:48:03 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:48:03 GMT
+# Mon, 09 Mar 2026 18:53:04 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:53:04 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -15644,9 +15644,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:34 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ca9b0a2f00d523e6be093f81cb610a556047c0709be009128c650735b5d4ca1`  
-		Last Modified: Tue, 24 Feb 2026 21:48:09 GMT  
-		Size: 274.0 B  
+	-	`sha256:2e968284482b10944f100f9e83c62b679921081cb69f89ffd01f01d6d64c7504`  
+		Last Modified: Mon, 09 Mar 2026 18:53:10 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -15656,37 +15656,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.1-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:52158057946b5246240553e8b6f643ff20565a2aa1980b657de02e965df5e6aa
+$ docker pull rabbitmq@sha256:ab5f1f36c7d48dcb6b5cbb2be8dba2b199d8a9e46b38544205de019204edb044
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **682.3 KB (682288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d5665eece9d9a954ea2518380a53a00f48978a8541128d85aac187e7fc1487c`
+-	Image ID: `sha256:075e9a7f5047410ffbf661051d92da97c11d4368b9a2a65e7e5e3cd45ce8da84`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:34c9e3ed91e1441cad9f0d25475027d655c7528c4393e1258fb92b4da6a2ba5a`  
-		Last Modified: Tue, 24 Feb 2026 21:48:09 GMT  
+	-	`sha256:e64a25dfc54f61b8baf103e3d69c2eeba133cc975fbc8384bc5559a1d825732f`  
+		Last Modified: Mon, 09 Mar 2026 18:53:10 GMT  
 		Size: 667.6 KB (667629 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:06c69e308f5e06da8b4e61736768779ef357ecd282a2e4631f5c468a6755a04d`  
-		Last Modified: Tue, 24 Feb 2026 21:48:09 GMT  
+	-	`sha256:f46f460921cce7df2648f6ae994a67466d9bbceee68ff70fec3a5468a370a56f`  
+		Last Modified: Mon, 09 Mar 2026 18:53:10 GMT  
 		Size: 14.7 KB (14659 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:899f9176e4e8297ce5125cc71abe5679009c39e9e50a76faef9948c46d6030da
+$ docker pull rabbitmq@sha256:fb47e1d33affc2c4656f243f7348b00bd2ea141dcf60a437e37eed1a15977de3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.1 MB (86107075 bytes)**  
+-	Total Size: **86.1 MB (86099000 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60d075b7a6505f0bdaccb18aae156f9c5ac40bc1d497cb183450a3be506066f0`
+-	Image ID: `sha256:99df411c7759bc8719036a4ba9ecbd74d11a56f8758ad5cd800477258704921f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15741,11 +15741,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:54 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:29:09 GMT
+# Mon, 09 Mar 2026 18:36:33 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:29:10 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:29:10 GMT
+# Mon, 09 Mar 2026 18:36:34 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:34 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -15786,49 +15786,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:13 GMT  
 		Size: 828.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0014f628c8af90ed74ed7cce048a9f63f8066c8faf79c257a0123a61079d14d0`  
-		Last Modified: Tue, 24 Feb 2026 20:29:16 GMT  
+	-	`sha256:727ff8282e8cc716ac732b6eade98f10e615e405c0c130c08688f99c189bbc6b`  
+		Last Modified: Mon, 09 Mar 2026 18:36:41 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb508bf59f4bb24f0ff706a43eb91a0b8c6c9cc15bbaf80a8d5c494dc992f12b`  
-		Last Modified: Tue, 24 Feb 2026 20:29:16 GMT  
-		Size: 4.0 MB (4048713 bytes)  
+	-	`sha256:8c80f88c7daffd56064418586f209198b14a5fdc0d8be0a4f266efc78e007b50`  
+		Last Modified: Mon, 09 Mar 2026 18:36:41 GMT  
+		Size: 4.0 MB (4040638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:89959553dba6a71e0b8044e212af6fccd8f182908282158c495922f4da835f72
+$ docker pull rabbitmq@sha256:8290bffa0481e95b73d46c2a0d13e6c82af1f697ef50c851d9c6dac484be3117
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **687.3 KB (687303 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c92c35e931dedcbcb7f5556026521bd6e5253a20a20a0f2a78e53b5f6d73fea4`
+-	Image ID: `sha256:c723e61ead3aa93e6cb245f1c7e3689e41bbf6aaa6ac4f2c80308830e6a7e5ba`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:af6424386f80e02fbaf6c73651eb7dc635f534fd3e0d04a5ae5bd92508eb689a`  
-		Last Modified: Tue, 24 Feb 2026 20:29:16 GMT  
+	-	`sha256:64f81fcc27d4e332f71be4eb5fdb17126b9064bb578fe9597c81e095fadf0efc`  
+		Last Modified: Mon, 09 Mar 2026 18:36:41 GMT  
 		Size: 672.6 KB (672621 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:06cd0f295bc141144fcdeb1d2c741ef0b6db43acf5ea23615cbdf44490fb61ec`  
-		Last Modified: Tue, 24 Feb 2026 20:29:16 GMT  
+	-	`sha256:cb4b75efbaf7671f2a6e3648a0546ec7c0689fb81c5d583f5d82b2c70db6a318`  
+		Last Modified: Mon, 09 Mar 2026 18:36:40 GMT  
 		Size: 14.7 KB (14682 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:49d73dfc5abcfd88848c3c91fa48a3650b4ce20c6efa14c6b2324e915c000239
+$ docker pull rabbitmq@sha256:7ff0c4fa647c8c5030d042e87f97e558d2473e2a06bd658afddc4ed0f4e73969
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.7 MB (72652625 bytes)**  
+-	Total Size: **72.7 MB (72652626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9171c84cf96c50569baa956db410fcc7e64983ab709ccd54bdcd3560c224a290`
+-	Image ID: `sha256:d63930dea0bef9462136442084ee12bb5011461a2bc0e9ee2590aa305df2c0db`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15883,11 +15883,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:13:34 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:08:18 GMT
+# Mon, 09 Mar 2026 18:21:33 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:08:18 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:08:18 GMT
+# Mon, 09 Mar 2026 18:21:33 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:21:33 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -15928,9 +15928,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:49 GMT  
 		Size: 824.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddc894fd071edc91ded93320237b69a315a6839a835438b7917941490519862d`  
-		Last Modified: Tue, 24 Feb 2026 20:08:24 GMT  
-		Size: 274.0 B  
+	-	`sha256:37d574dbaa2650946e25e832626ad690fac4615de18af45a14881c29ac663318`  
+		Last Modified: Mon, 09 Mar 2026 18:21:39 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -15940,24 +15940,24 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.1-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:9958ede32e6b161a94991e596bd84e3872ab46a528ea9e3a50b639d6db15dc79
+$ docker pull rabbitmq@sha256:2fb03bc2e7221324f57e5994a419a24af16c8e24851c8543b0fad7f5bb37500a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **682.1 KB (682065 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a749acba3fd113df934d520b1b4ac387460f8494a97839f804f77a7cffb7e657`
+-	Image ID: `sha256:25590cd141978c64505992f7d612dd2e3b61f9b9569d82ef0108438f39a376b5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:402c03c6c00f23b46c58580f9060de5f3796b5682bccabf04cad646ed3c255eb`  
-		Last Modified: Tue, 24 Feb 2026 20:08:24 GMT  
+	-	`sha256:6b1f122461892111ca8654426d6834a6621c81c8f26e9e781040230eaf6e13eb`  
+		Last Modified: Mon, 09 Mar 2026 18:21:39 GMT  
 		Size: 667.5 KB (667507 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:090c4fc566818e70391d8194249239e757146ed16e15bb9678187c52ac8f3788`  
-		Last Modified: Tue, 24 Feb 2026 20:08:24 GMT  
+	-	`sha256:1362419bf2a5d04db4eb9021c3866f12bc87c6d387bedfcd8681b597c1bacf7b`  
+		Last Modified: Mon, 09 Mar 2026 18:21:39 GMT  
 		Size: 14.6 KB (14558 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16248,13 +16248,13 @@ $ docker pull rabbitmq@sha256:fa86d94b9940d8a7e6411720f25eb89973270b75d065d01946
 ### `rabbitmq:4.1-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:dd72399917c4defc278f2b4f55ca7b3cb0baa7e2536976331898c78640c86154
+$ docker pull rabbitmq@sha256:6910c67deaeca5e467c4f14a06d3fdfb5ab78e7d7e611c2e881060db58e5dde4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.4 MB (72396802 bytes)**  
+-	Total Size: **72.4 MB (72396801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3115b083efd4edc4f7e1baa83beb8d4ee6dc33bbf4484d64a974bf9f1b2df99`
+-	Image ID: `sha256:58a6d61c95cbee6080465236fbb93e04b6baf68a71a73101e6531092d4002df2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -16309,11 +16309,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:21 GMT
 CMD ["rabbitmq-server"]
-# Fri, 20 Feb 2026 20:09:57 GMT
+# Mon, 09 Mar 2026 19:05:59 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:07:18 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:07:18 GMT
+# Mon, 09 Mar 2026 19:05:59 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:05:59 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -16354,9 +16354,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:55 GMT  
 		Size: 828.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:870e08668950e4b0af31ffb9aa9bcf5ba1abf190a568b3d7fbc16039c5330238`  
-		Last Modified: Fri, 20 Feb 2026 20:10:11 GMT  
-		Size: 275.0 B  
+	-	`sha256:aff9abe049c3ab316921af7e8f6080508f4e7e54cba2cc74b6f6b182fc2a43ac`  
+		Last Modified: Mon, 09 Mar 2026 19:06:09 GMT  
+		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -16366,25 +16366,25 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.1-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:e18ec0a5669527944013174f65353070b34d858c300b1b0fa0b33b46466280a4
+$ docker pull rabbitmq@sha256:e3a4939a3064a9c7e41b641db4f877e778234447baa00bac50c36cd4d9163e66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **682.2 KB (682188 bytes)**  
+-	Total Size: **682.2 KB (682190 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c14e0af51449cd4d6060b7f242e364ffe44117d7882c6f1cefb479ded4279c64`
+-	Image ID: `sha256:5bfe6ef0fc8bcfa1d108665073be3d63541dff803c20fb0ce9bd607ff8696de4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:253bd1f2eda3e44a612c59146db8a683747716bc71be8d42f0b7dee3bdd0fcb9`  
-		Last Modified: Wed, 25 Feb 2026 01:07:51 GMT  
+	-	`sha256:07ce95e6bbecc01b3d45c128db7e3337e38dd2765ad784d678be3ba68cd34433`  
+		Last Modified: Mon, 09 Mar 2026 19:06:09 GMT  
 		Size: 667.6 KB (667608 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a912028fce85b001689a6c2eff49c0a613fd7aa1604a53ecd7f81a275bd37c9`  
-		Last Modified: Wed, 25 Feb 2026 01:07:51 GMT  
-		Size: 14.6 KB (14580 bytes)  
+	-	`sha256:4a488cf13276765ecc234c59d45c1e771daa8949512c3d46104130663fa35436`  
+		Last Modified: Mon, 09 Mar 2026 19:06:09 GMT  
+		Size: 14.6 KB (14582 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:4.1.8`
@@ -18400,7 +18400,7 @@ $ docker pull rabbitmq@sha256:5bb06c3d1e0f12301dc69b808c7979bb5d5dc158acd8464b1c
 ## `rabbitmq:4.1.8-management`
 
 ```console
-$ docker pull rabbitmq@sha256:1bed85ab8821559c96eb61945a84448801d0e3f2553745fc4680c90ba28be767
+$ docker pull rabbitmq@sha256:b2d5d54586ffc22ccf23057b24c291868af4fba86911fddf184e36064bb6c182
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18421,13 +18421,13 @@ $ docker pull rabbitmq@sha256:1bed85ab8821559c96eb61945a84448801d0e3f2553745fc46
 ### `rabbitmq:4.1.8-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:b296440e57d384cdbcc2c79983e90bb39e692a4fb4f94e10b1d6b70d36e3dc64
+$ docker pull rabbitmq@sha256:6885eb09cd97b7933a5973e290aec8044bcd3077343a479c6bc4cec68ed460d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.0 MB (116970336 bytes)**  
+-	Total Size: **117.0 MB (116961247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e766a0f9b1e32f9a402f7d42170749d2b0a53f58ae6ba2e940897086c83799f2`
+-	Image ID: `sha256:e3ad05d7aa3f6f69f6a49bc0d4688177c9019a915f352c9992a95457410317f7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -18490,11 +18490,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:52 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:15:55 GMT
+# Mon, 09 Mar 2026 18:35:02 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:16:07 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:16:07 GMT
+# Mon, 09 Mar 2026 18:35:14 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:35:14 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -18535,49 +18535,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:17 GMT  
 		Size: 827.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a420fb90d4760dfe13ec71c7eb63a2a7f950783c445aa9ce4edad9997ae86baf`  
-		Last Modified: Tue, 24 Feb 2026 20:16:15 GMT  
-		Size: 274.0 B  
+	-	`sha256:82b0cd32651fce21cd0713f5857b08ddc59e6c93ca9a875d1b01126d4e67a644`  
+		Last Modified: Mon, 09 Mar 2026 18:35:21 GMT  
+		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e314e59a6bc5f09ab2fb887b12c9a9edc7e257c7baee991d702e010e340bee8`  
-		Last Modified: Tue, 24 Feb 2026 20:16:15 GMT  
-		Size: 4.5 MB (4522037 bytes)  
+	-	`sha256:4cf57353efda04f3cdf5975732cd725c1b772f840239b3640cb44992d9bcd3ef`  
+		Last Modified: Mon, 09 Mar 2026 18:35:21 GMT  
+		Size: 4.5 MB (4512945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.8-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:2ff3e1d60dde1eed279819c4f369d83e95cf35edab5e7e202887a1b17ded271e
+$ docker pull rabbitmq@sha256:6083a33a39fa51aac8695af3380b61768c18af5b16898e48f6c9203c60e579bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2499051 bytes)**  
+-	Total Size: **2.5 MB (2499050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e07559a069f6b0e2cb401116e46ca5677c4f64c35cf4209a8672d8b423c495d`
+-	Image ID: `sha256:c74856a5bc5d8c9b18d26dee68beeb8d712c6437c1586b5cf5bcec8779f306d6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2ae23e0d09e10f525e8bcee400640c07fbac56c9065f82c89a4c9ce1a3b05511`  
-		Last Modified: Tue, 24 Feb 2026 20:16:15 GMT  
+	-	`sha256:38d3d02f2de6d22ef7271aa2d9381ff45fe09412da33e3a1c101672bf8343f5a`  
+		Last Modified: Mon, 09 Mar 2026 18:35:21 GMT  
 		Size: 2.5 MB (2483406 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:77aa30a2fbdf47675c5a1c6e81eb7c66687782acda011f073549fb1ed33607ee`  
-		Last Modified: Tue, 24 Feb 2026 20:16:15 GMT  
-		Size: 15.6 KB (15645 bytes)  
+	-	`sha256:c76b0d2c340c1270b2895d507811b7d74f09d208a7e21283ae125b3affcdb339`  
+		Last Modified: Mon, 09 Mar 2026 18:35:21 GMT  
+		Size: 15.6 KB (15644 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.8-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:a29e058e0458a8cff4e6b3f463cd930bd0b222c0022a7563d5287ab6861623a8
+$ docker pull rabbitmq@sha256:78c7bb0d84d7cb7d829724b49ff26c7de1529b42bf2d19422c27a0ae2924b31d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.8 MB (94827380 bytes)**  
+-	Total Size: **94.8 MB (94827383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8da3c86bb4951b10fddbf6824552ded605de2f8ec8e430e479078cba7cbdbad`
+-	Image ID: `sha256:39a0a62dc6f0ec2c1986a6d4fe05a845f4eedf8e38d72e873903da2f7e5b4389`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -18640,11 +18640,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:06 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:47:59 GMT
+# Mon, 09 Mar 2026 18:52:57 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:48:00 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:48:00 GMT
+# Mon, 09 Mar 2026 18:52:57 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:52:57 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -18685,9 +18685,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:32 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b84fab0300c379bd6286c4ac072be2c016a9482e08f177b018851fd0a413e6b6`  
-		Last Modified: Tue, 24 Feb 2026 21:48:06 GMT  
-		Size: 274.0 B  
+	-	`sha256:2e47728fc46ae0e870a5879d3d9ca95ec0279b0118906aa521a5d99199420443`  
+		Last Modified: Mon, 09 Mar 2026 18:53:04 GMT  
+		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -18697,37 +18697,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.1.8-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:0e5711a95185a86fc1aa70a0667b1c3f0821fdb51848d87cd1f694053e512ca4
+$ docker pull rabbitmq@sha256:31b056aed4295839dcd95748b1b09d885831198ad011eec836c50cd1e0109dd5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2499907 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f03a0632f698a29d9dae8bd8731444fa26d16502811a0dffa933ac303c9c6138`
+-	Image ID: `sha256:27579ca9d9e4a1c8962e9a2f9314a0ac8a7f4dac8fc654e4b8a5da0e4587af89`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:27de328755368e61284e3b3e23600a14d73f8074902efbf19cd8908e17320081`  
-		Last Modified: Tue, 24 Feb 2026 21:48:07 GMT  
+	-	`sha256:a30d824e70e643cc0524500328509e4e78db8d04271b270dd2f4c008dfdfc64d`  
+		Last Modified: Mon, 09 Mar 2026 18:53:04 GMT  
 		Size: 2.5 MB (2484190 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ed7bff6604314093ffe3b8ef21b00b3aeae0dc2cbd48ba193020c8a6ce87b28f`  
-		Last Modified: Tue, 24 Feb 2026 21:48:06 GMT  
+	-	`sha256:658c9ec6f56754e95d68dde8fac7d9479069847b73672c5f7b3c3eb40f2c21fa`  
+		Last Modified: Mon, 09 Mar 2026 18:53:04 GMT  
 		Size: 15.7 KB (15717 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.8-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:85a3be68c8862f6b77defb67667f374bd4e736b4e888a7cf37b25760260b6048
+$ docker pull rabbitmq@sha256:fc606f8b6989317bb9508f28de04df61c6d5a0b96f4ac62fc9776180394839e3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.6 MB (114613991 bytes)**  
+-	Total Size: **114.6 MB (114602482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef5c636c60689f1a728de21628ebd7e1611aecb9d1fb3f14dbf36f3a49107517`
+-	Image ID: `sha256:1e648d8a3c7739466c58525f138ec1359909dee64a6b3b93ed78f3009f40de0e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -18790,11 +18790,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:05 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:29:12 GMT
+# Mon, 09 Mar 2026 18:36:27 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:29:24 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:29:24 GMT
+# Mon, 09 Mar 2026 18:36:41 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:41 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -18835,36 +18835,36 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:33 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:950bf794613e8f8862f40a969ad49bbc5ae84766ed18c7764cf0278309bbbf40`  
-		Last Modified: Tue, 24 Feb 2026 20:29:33 GMT  
-		Size: 274.0 B  
+	-	`sha256:8b9ea432e77aafec86d82cb7f9eb35ad990b469a707831599197625d90074ef6`  
+		Last Modified: Mon, 09 Mar 2026 18:36:48 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:473f9ef3b64b1871bdd1226c309ff1309ead89fbe044de919720edd0af08fa23`  
-		Last Modified: Tue, 24 Feb 2026 20:29:33 GMT  
-		Size: 4.3 MB (4287773 bytes)  
+	-	`sha256:a70dba2745e088681288689ea45366254201ad6db44f3b1e5b5b94251ffa0f09`  
+		Last Modified: Mon, 09 Mar 2026 18:36:48 GMT  
+		Size: 4.3 MB (4276263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.8-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:002e3f1101f07c0d2b71084918e6e97ef96b032d8b30eb4ce305da5f4cb66084
+$ docker pull rabbitmq@sha256:39c0af642ee10b031ac12fe413d41f1eb6661ba250839936c07a36f4bec0c830
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2500182 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aff077f98c3dc012d3b12582fa270e1ae5f0ad8f509f927cf3fa09431c4527f7`
+-	Image ID: `sha256:15306323ca5cbde7eb8282133465c64ac8186a390e8ea3a08685daca72176fe4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:894617bceca24e969bad79d74c1f1eaff989364d800b1671cff31d685261c221`  
-		Last Modified: Tue, 24 Feb 2026 20:29:33 GMT  
+	-	`sha256:d7e60921110feab7c5051b071dc31b3326a3856fe6bd239358cb34b994d10bb8`  
+		Last Modified: Mon, 09 Mar 2026 18:36:48 GMT  
 		Size: 2.5 MB (2484442 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8731f825a80705aa6e0ca432763c8ee8628cf3e5a3ac7b51e53fca41e3e52c94`  
-		Last Modified: Tue, 24 Feb 2026 20:29:33 GMT  
+	-	`sha256:60927380344983b3f271ddb528898d5954c21b5e1b33f657d80c8e7ea705abce`  
+		Last Modified: Mon, 09 Mar 2026 18:36:48 GMT  
 		Size: 15.7 KB (15740 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19171,13 +19171,13 @@ $ docker pull rabbitmq@sha256:c2bb17470a432149aabdc3bd644d57ae3a832e7227656b4b05
 ### `rabbitmq:4.1.8-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:fee29d3e101363029d480b11e2acf977cd69b3b7425f3837c5dceb50b83c76f0
+$ docker pull rabbitmq@sha256:3a464292bcb642cad62a541645ac8dae52f547240db58d69e816529713d5d324
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **104.6 MB (104579889 bytes)**  
+-	Total Size: **104.6 MB (104579892 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f89212f57fbe2884e014335970202a861a0691413ff32e5679e2cebe54afe1c8`
+-	Image ID: `sha256:3d34cdba0a58e93b50c3ca31aebb3017daf0443f7b971f00863069200a5a75c6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -19240,11 +19240,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:11 GMT
 CMD ["rabbitmq-server"]
-# Fri, 20 Feb 2026 20:09:58 GMT
+# Mon, 09 Mar 2026 19:05:59 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:06:32 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:06:32 GMT
+# Mon, 09 Mar 2026 19:06:00 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:06:00 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -19285,9 +19285,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:20:09 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31610530a1e100c62180d16f49575584a73cb11728716d54e607e697c3bba531`  
-		Last Modified: Fri, 20 Feb 2026 20:10:12 GMT  
-		Size: 272.0 B  
+	-	`sha256:092ef8dd46f2528beb05903d77a232fa4475c6afc2a8c7b75a629682c43a65cf`  
+		Last Modified: Mon, 09 Mar 2026 19:06:12 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -19297,31 +19297,31 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.1.8-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:b22332eee9b748f1068c6659b04e30b796819fcf40e119daa0c83c3fb93ef477
+$ docker pull rabbitmq@sha256:2595eeccf5c892d3f494d925e2f4bfd9255592dc16ccf0e0d53029888c5e0cb1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2501156 bytes)**  
+-	Total Size: **2.5 MB (2501155 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d89b79b845092924e819475d8743d05eb35a5ada7e4d79b27dadadc81bf2ffb2`
+-	Image ID: `sha256:f2d9a5c5279b5d28da3c0219200885fdbe74a754170d100103317069a83ca387`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:044af705f5683b1dda3d8fda2580245693abcf66b0e6e0d7becde2d8d978baee`  
-		Last Modified: Wed, 25 Feb 2026 01:07:08 GMT  
+	-	`sha256:7f4524d394b3f576105c0847edddf3eaebfdf904c5d21b0c5401f46d6f606e6d`  
+		Last Modified: Mon, 09 Mar 2026 19:06:12 GMT  
 		Size: 2.5 MB (2485516 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eb6e58dbc582dd25e21e7eae4231f3cfe76c0458842b923b11e4a89de5667d6e`  
-		Last Modified: Wed, 25 Feb 2026 01:07:08 GMT  
-		Size: 15.6 KB (15640 bytes)  
+	-	`sha256:3d1ebc8a63695e8370acaa762c30af87053b77df07fc151515bb445fa7c70959`  
+		Last Modified: Mon, 09 Mar 2026 19:06:12 GMT  
+		Size: 15.6 KB (15639 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:4.1.8-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:b31befe79cbec030387f6ad454fddb22fd1217e71be8827d53eaa333159d67f6
+$ docker pull rabbitmq@sha256:91e4908f59ad93fc7d55b64fe3fceaf2c9752b79eeae04021b5fd4e8f8a48165
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19346,13 +19346,13 @@ $ docker pull rabbitmq@sha256:b31befe79cbec030387f6ad454fddb22fd1217e71be8827d53
 ### `rabbitmq:4.1.8-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:e4ddc6897b1255056edd821bd1aee81af4d1151216cd583a9bb2fbea4250f94d
+$ docker pull rabbitmq@sha256:e16ef0b285a61169ff3243228c5be693b71dcd1cbbcf35ad566f90dceaf5335a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.4 MB (87404542 bytes)**  
+-	Total Size: **87.4 MB (87389117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:278813f4fbfaab31d54902258cda9e775304c923f7fa56237832571c62dd9ed4`
+-	Image ID: `sha256:d256b6c7a043dada866d0c8bd4b92115a4563172d4dd527e12ccd965c0337ae0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -19407,11 +19407,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:58 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:16:11 GMT
+# Mon, 09 Mar 2026 18:35:11 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:16:12 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:16:12 GMT
+# Mon, 09 Mar 2026 18:35:11 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:35:11 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -19452,49 +19452,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:16 GMT  
 		Size: 827.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8314dace3db2e9f477f1f25dd7fc83b3864f5ab10aa6466946641a54b196ae7`  
-		Last Modified: Tue, 24 Feb 2026 20:16:19 GMT  
-		Size: 275.0 B  
+	-	`sha256:d892c09f28a8b3502df277546469bf85d1560b8eac856915e04409a300fd0c2d`  
+		Last Modified: Mon, 09 Mar 2026 18:35:17 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a3928d215f226606eb97495f79cacb3f3d088707cfcc3925305ff609f86017a`  
-		Last Modified: Tue, 24 Feb 2026 20:16:19 GMT  
-		Size: 4.4 MB (4368736 bytes)  
+	-	`sha256:81e813d86a6c2840c7eb9a106222b6ad0c83ef5f29d4325457579f1b721fce77`  
+		Last Modified: Mon, 09 Mar 2026 18:35:18 GMT  
+		Size: 4.4 MB (4353314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.8-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:0b76f16dcecd67f8b1c6047283091c4dc41d429f7dbef2b1f100ed5163f3b9c2
+$ docker pull rabbitmq@sha256:e9db3156e78f4e3e74a1c0a81670f8a8d4eebf41373a600f16b53e468692b92f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **687.1 KB (687089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:645b5e7283158cd4e2119e27ce4177e0327c9fbfc1e6e69720a81590970f5948`
+-	Image ID: `sha256:114a365d0b5aadcd8ee8d110b65519e1041d21948881c253774c85bc1f8e3798`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4d633e9172cbb3f24d4e496acc77f0b97f2d1f82954f0693e40ee71627633624`  
-		Last Modified: Tue, 24 Feb 2026 20:16:19 GMT  
+	-	`sha256:401149baf3538baa38c8362811528a40672af4348dbf5ae31a5805a664c54704`  
+		Last Modified: Mon, 09 Mar 2026 18:35:17 GMT  
 		Size: 672.5 KB (672502 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d903265929c20600ef7c181d07ba0c53b194567f8fe42347187c0ed7a33f7d53`  
-		Last Modified: Tue, 24 Feb 2026 20:16:19 GMT  
+	-	`sha256:003d12c977ee8236c21a95d17776cc24e9480b425ae53af180e9c4ff3ee987c1`  
+		Last Modified: Mon, 09 Mar 2026 18:35:17 GMT  
 		Size: 14.6 KB (14587 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.8-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:8f3a973fbadda53e30ff284edb608968dfee952255e533c3a1319f05e9293275
+$ docker pull rabbitmq@sha256:98f2d322c1a0de5ed53a03df5346f7d7a8a5d85eed710e6e751e51248bedd13f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.2 MB (71232876 bytes)**  
+-	Total Size: **71.2 MB (71232875 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f0510e007dcd5e2e9ae83238f2d4d0766cd3e46b8225ab15d7450382fc2d6d19`
+-	Image ID: `sha256:3d2f7fb21be6ee1c49e0693e620034f5950f40fe4649574cf9b1ea0c466e6879`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -19549,11 +19549,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:17 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:27:26 GMT
+# Mon, 09 Mar 2026 18:49:15 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:27:27 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:27:27 GMT
+# Mon, 09 Mar 2026 18:49:15 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:49:15 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -19594,9 +19594,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:26 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45530240241f7e9f5565bda2f3aa4081c773bd5f5ba01ef0bd0d49e250840dd7`  
-		Last Modified: Tue, 24 Feb 2026 21:27:30 GMT  
-		Size: 275.0 B  
+	-	`sha256:1a57a7233b01bbd64a65df0cc739e6db4e38f0db7259b4628640fcc68d90adc6`  
+		Last Modified: Mon, 09 Mar 2026 18:49:19 GMT  
+		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -19606,33 +19606,33 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.1.8-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:d11c8d49bed0c51a5a0ff7454d9d962cd6a65f8d1893707450596b98f39bc4d3
+$ docker pull rabbitmq@sha256:31342ec948a5df50d30becda2671dc95b442f3af9e071b0a2d09f870a82b19cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.4 KB (14444 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:add4015a838c6b8543ce4d14e9f77fddb42e297941b4fe5c7f691892c0d1e071`
+-	Image ID: `sha256:66b34609649daed63975b6bb7d2327be46dd115cbe647f7f7d86f04850479c7f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc6406d4e913f85b951a64c68a054908e5dac93655bd4cb370e007ffb9db1723`  
-		Last Modified: Tue, 24 Feb 2026 21:27:30 GMT  
+	-	`sha256:f9af21cdb33fedf18a813366c5dda337b5d567f93b7a0b24a63946f5543a0567`  
+		Last Modified: Mon, 09 Mar 2026 18:49:19 GMT  
 		Size: 14.4 KB (14444 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.8-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:4bffbbdafccace7be4584ba355aaf1d366a6d60ae0aa26cf40d206ba746d03fd
+$ docker pull rabbitmq@sha256:ee2244d065dcc27cd6d763a521cc74d08bafd91bb90994e55bd24b5dbf5feb3c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.3 MB (70328926 bytes)**  
+-	Total Size: **70.3 MB (70328927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0716a98ce09e335441466c4a1903e6002ad4f7ed104c988ffd68d0c1e346ad2e`
+-	Image ID: `sha256:d0dfbdca98574b1b3dc88b47769c2c3317ed3c010f7743231c7354fe92a139e0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -19687,11 +19687,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:17 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:48:03 GMT
+# Mon, 09 Mar 2026 18:53:04 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:48:03 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:48:03 GMT
+# Mon, 09 Mar 2026 18:53:04 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:53:04 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -19732,9 +19732,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:34 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ca9b0a2f00d523e6be093f81cb610a556047c0709be009128c650735b5d4ca1`  
-		Last Modified: Tue, 24 Feb 2026 21:48:09 GMT  
-		Size: 274.0 B  
+	-	`sha256:2e968284482b10944f100f9e83c62b679921081cb69f89ffd01f01d6d64c7504`  
+		Last Modified: Mon, 09 Mar 2026 18:53:10 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -19744,37 +19744,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.1.8-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:52158057946b5246240553e8b6f643ff20565a2aa1980b657de02e965df5e6aa
+$ docker pull rabbitmq@sha256:ab5f1f36c7d48dcb6b5cbb2be8dba2b199d8a9e46b38544205de019204edb044
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **682.3 KB (682288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d5665eece9d9a954ea2518380a53a00f48978a8541128d85aac187e7fc1487c`
+-	Image ID: `sha256:075e9a7f5047410ffbf661051d92da97c11d4368b9a2a65e7e5e3cd45ce8da84`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:34c9e3ed91e1441cad9f0d25475027d655c7528c4393e1258fb92b4da6a2ba5a`  
-		Last Modified: Tue, 24 Feb 2026 21:48:09 GMT  
+	-	`sha256:e64a25dfc54f61b8baf103e3d69c2eeba133cc975fbc8384bc5559a1d825732f`  
+		Last Modified: Mon, 09 Mar 2026 18:53:10 GMT  
 		Size: 667.6 KB (667629 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:06c69e308f5e06da8b4e61736768779ef357ecd282a2e4631f5c468a6755a04d`  
-		Last Modified: Tue, 24 Feb 2026 21:48:09 GMT  
+	-	`sha256:f46f460921cce7df2648f6ae994a67466d9bbceee68ff70fec3a5468a370a56f`  
+		Last Modified: Mon, 09 Mar 2026 18:53:10 GMT  
 		Size: 14.7 KB (14659 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.8-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:899f9176e4e8297ce5125cc71abe5679009c39e9e50a76faef9948c46d6030da
+$ docker pull rabbitmq@sha256:fb47e1d33affc2c4656f243f7348b00bd2ea141dcf60a437e37eed1a15977de3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.1 MB (86107075 bytes)**  
+-	Total Size: **86.1 MB (86099000 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60d075b7a6505f0bdaccb18aae156f9c5ac40bc1d497cb183450a3be506066f0`
+-	Image ID: `sha256:99df411c7759bc8719036a4ba9ecbd74d11a56f8758ad5cd800477258704921f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -19829,11 +19829,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:54 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:29:09 GMT
+# Mon, 09 Mar 2026 18:36:33 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:29:10 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:29:10 GMT
+# Mon, 09 Mar 2026 18:36:34 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:34 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -19874,49 +19874,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:13 GMT  
 		Size: 828.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0014f628c8af90ed74ed7cce048a9f63f8066c8faf79c257a0123a61079d14d0`  
-		Last Modified: Tue, 24 Feb 2026 20:29:16 GMT  
+	-	`sha256:727ff8282e8cc716ac732b6eade98f10e615e405c0c130c08688f99c189bbc6b`  
+		Last Modified: Mon, 09 Mar 2026 18:36:41 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb508bf59f4bb24f0ff706a43eb91a0b8c6c9cc15bbaf80a8d5c494dc992f12b`  
-		Last Modified: Tue, 24 Feb 2026 20:29:16 GMT  
-		Size: 4.0 MB (4048713 bytes)  
+	-	`sha256:8c80f88c7daffd56064418586f209198b14a5fdc0d8be0a4f266efc78e007b50`  
+		Last Modified: Mon, 09 Mar 2026 18:36:41 GMT  
+		Size: 4.0 MB (4040638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.8-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:89959553dba6a71e0b8044e212af6fccd8f182908282158c495922f4da835f72
+$ docker pull rabbitmq@sha256:8290bffa0481e95b73d46c2a0d13e6c82af1f697ef50c851d9c6dac484be3117
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **687.3 KB (687303 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c92c35e931dedcbcb7f5556026521bd6e5253a20a20a0f2a78e53b5f6d73fea4`
+-	Image ID: `sha256:c723e61ead3aa93e6cb245f1c7e3689e41bbf6aaa6ac4f2c80308830e6a7e5ba`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:af6424386f80e02fbaf6c73651eb7dc635f534fd3e0d04a5ae5bd92508eb689a`  
-		Last Modified: Tue, 24 Feb 2026 20:29:16 GMT  
+	-	`sha256:64f81fcc27d4e332f71be4eb5fdb17126b9064bb578fe9597c81e095fadf0efc`  
+		Last Modified: Mon, 09 Mar 2026 18:36:41 GMT  
 		Size: 672.6 KB (672621 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:06cd0f295bc141144fcdeb1d2c741ef0b6db43acf5ea23615cbdf44490fb61ec`  
-		Last Modified: Tue, 24 Feb 2026 20:29:16 GMT  
+	-	`sha256:cb4b75efbaf7671f2a6e3648a0546ec7c0689fb81c5d583f5d82b2c70db6a318`  
+		Last Modified: Mon, 09 Mar 2026 18:36:40 GMT  
 		Size: 14.7 KB (14682 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.8-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:49d73dfc5abcfd88848c3c91fa48a3650b4ce20c6efa14c6b2324e915c000239
+$ docker pull rabbitmq@sha256:7ff0c4fa647c8c5030d042e87f97e558d2473e2a06bd658afddc4ed0f4e73969
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.7 MB (72652625 bytes)**  
+-	Total Size: **72.7 MB (72652626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9171c84cf96c50569baa956db410fcc7e64983ab709ccd54bdcd3560c224a290`
+-	Image ID: `sha256:d63930dea0bef9462136442084ee12bb5011461a2bc0e9ee2590aa305df2c0db`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -19971,11 +19971,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:13:34 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:08:18 GMT
+# Mon, 09 Mar 2026 18:21:33 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:08:18 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:08:18 GMT
+# Mon, 09 Mar 2026 18:21:33 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:21:33 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -20016,9 +20016,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:49 GMT  
 		Size: 824.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddc894fd071edc91ded93320237b69a315a6839a835438b7917941490519862d`  
-		Last Modified: Tue, 24 Feb 2026 20:08:24 GMT  
-		Size: 274.0 B  
+	-	`sha256:37d574dbaa2650946e25e832626ad690fac4615de18af45a14881c29ac663318`  
+		Last Modified: Mon, 09 Mar 2026 18:21:39 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -20028,24 +20028,24 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.1.8-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:9958ede32e6b161a94991e596bd84e3872ab46a528ea9e3a50b639d6db15dc79
+$ docker pull rabbitmq@sha256:2fb03bc2e7221324f57e5994a419a24af16c8e24851c8543b0fad7f5bb37500a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **682.1 KB (682065 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a749acba3fd113df934d520b1b4ac387460f8494a97839f804f77a7cffb7e657`
+-	Image ID: `sha256:25590cd141978c64505992f7d612dd2e3b61f9b9569d82ef0108438f39a376b5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:402c03c6c00f23b46c58580f9060de5f3796b5682bccabf04cad646ed3c255eb`  
-		Last Modified: Tue, 24 Feb 2026 20:08:24 GMT  
+	-	`sha256:6b1f122461892111ca8654426d6834a6621c81c8f26e9e781040230eaf6e13eb`  
+		Last Modified: Mon, 09 Mar 2026 18:21:39 GMT  
 		Size: 667.5 KB (667507 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:090c4fc566818e70391d8194249239e757146ed16e15bb9678187c52ac8f3788`  
-		Last Modified: Tue, 24 Feb 2026 20:08:24 GMT  
+	-	`sha256:1362419bf2a5d04db4eb9021c3866f12bc87c6d387bedfcd8681b597c1bacf7b`  
+		Last Modified: Mon, 09 Mar 2026 18:21:39 GMT  
 		Size: 14.6 KB (14558 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20336,13 +20336,13 @@ $ docker pull rabbitmq@sha256:fa86d94b9940d8a7e6411720f25eb89973270b75d065d01946
 ### `rabbitmq:4.1.8-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:dd72399917c4defc278f2b4f55ca7b3cb0baa7e2536976331898c78640c86154
+$ docker pull rabbitmq@sha256:6910c67deaeca5e467c4f14a06d3fdfb5ab78e7d7e611c2e881060db58e5dde4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.4 MB (72396802 bytes)**  
+-	Total Size: **72.4 MB (72396801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3115b083efd4edc4f7e1baa83beb8d4ee6dc33bbf4484d64a974bf9f1b2df99`
+-	Image ID: `sha256:58a6d61c95cbee6080465236fbb93e04b6baf68a71a73101e6531092d4002df2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -20397,11 +20397,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:21 GMT
 CMD ["rabbitmq-server"]
-# Fri, 20 Feb 2026 20:09:57 GMT
+# Mon, 09 Mar 2026 19:05:59 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:07:18 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:07:18 GMT
+# Mon, 09 Mar 2026 19:05:59 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:05:59 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -20442,9 +20442,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:55 GMT  
 		Size: 828.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:870e08668950e4b0af31ffb9aa9bcf5ba1abf190a568b3d7fbc16039c5330238`  
-		Last Modified: Fri, 20 Feb 2026 20:10:11 GMT  
-		Size: 275.0 B  
+	-	`sha256:aff9abe049c3ab316921af7e8f6080508f4e7e54cba2cc74b6f6b182fc2a43ac`  
+		Last Modified: Mon, 09 Mar 2026 19:06:09 GMT  
+		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -20454,25 +20454,25 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.1.8-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:e18ec0a5669527944013174f65353070b34d858c300b1b0fa0b33b46466280a4
+$ docker pull rabbitmq@sha256:e3a4939a3064a9c7e41b641db4f877e778234447baa00bac50c36cd4d9163e66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **682.2 KB (682188 bytes)**  
+-	Total Size: **682.2 KB (682190 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c14e0af51449cd4d6060b7f242e364ffe44117d7882c6f1cefb479ded4279c64`
+-	Image ID: `sha256:5bfe6ef0fc8bcfa1d108665073be3d63541dff803c20fb0ce9bd607ff8696de4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:253bd1f2eda3e44a612c59146db8a683747716bc71be8d42f0b7dee3bdd0fcb9`  
-		Last Modified: Wed, 25 Feb 2026 01:07:51 GMT  
+	-	`sha256:07ce95e6bbecc01b3d45c128db7e3337e38dd2765ad784d678be3ba68cd34433`  
+		Last Modified: Mon, 09 Mar 2026 19:06:09 GMT  
 		Size: 667.6 KB (667608 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a912028fce85b001689a6c2eff49c0a613fd7aa1604a53ecd7f81a275bd37c9`  
-		Last Modified: Wed, 25 Feb 2026 01:07:51 GMT  
-		Size: 14.6 KB (14580 bytes)  
+	-	`sha256:4a488cf13276765ecc234c59d45c1e771daa8949512c3d46104130663fa35436`  
+		Last Modified: Mon, 09 Mar 2026 19:06:09 GMT  
+		Size: 14.6 KB (14582 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:4.2`
@@ -22488,7 +22488,7 @@ $ docker pull rabbitmq@sha256:9af63a9979b506e01021a33721d62dead537ffef5b9ede45fc
 ## `rabbitmq:4.2-management`
 
 ```console
-$ docker pull rabbitmq@sha256:1dd8956ec57b0ec4f0488f7b4b705710536a0c4a9707eba0e81cb49fbd512056
+$ docker pull rabbitmq@sha256:e24c4f044b5fe04c02ba9791d6a0cd324a7ab8efbfb73821985f57f4ba36ffb2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22509,13 +22509,13 @@ $ docker pull rabbitmq@sha256:1dd8956ec57b0ec4f0488f7b4b705710536a0c4a9707eba0e8
 ### `rabbitmq:4.2-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:c6c17c27992a924f54b6807050deea4d0b96660d2f02dc2429d4bc593762aaef
+$ docker pull rabbitmq@sha256:ead0bc61315912c89bc3be129c85a18f86ecf72fa9f7a155ec0ba0285d65a7ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.5 MB (117485950 bytes)**  
+-	Total Size: **117.5 MB (117476873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:db2f2c58bfe46b1469a620f5913e65ecf775768434f400a28cd8f6c523273088`
+-	Image ID: `sha256:15bb315154062c4e4628ba3f26fc7cb66c1b8036ac958b041bd333ba843eaf69`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -22578,11 +22578,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:13:29 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:15:44 GMT
+# Mon, 09 Mar 2026 18:34:54 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:15:54 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:15:54 GMT
+# Mon, 09 Mar 2026 18:35:06 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:35:06 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -22623,49 +22623,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:54 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64334d258bd21250a619cbcdc0d985eda0990988cbd5dd84c4eeef5f8c249478`  
-		Last Modified: Tue, 24 Feb 2026 20:16:02 GMT  
-		Size: 274.0 B  
+	-	`sha256:1ec444487e8766fb5810ece85b7d6f05a3b2f21e5b5c9d1cdee9824f1f993761`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dae2927970cda1d06b6ff951e408f79642b775c4c05c5edf7639f2868cea9e2`  
-		Last Modified: Tue, 24 Feb 2026 20:16:03 GMT  
-		Size: 4.5 MB (4521994 bytes)  
+	-	`sha256:89f959a50a37c495453ccbc852ec87640c382688a1143fa509406aaf2417613f`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
+		Size: 4.5 MB (4512915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.2-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:2314b04bc636e3f56e20f9a3881999c4d8cd540de6264b487b5d8c8f42ca61af
+$ docker pull rabbitmq@sha256:c4531b280309520587b1d9d467d54d72af146948b98b48145af833e11ed4a652
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2502942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2c6820bee1f6cac6922f0432530d8482a70a9aeb8ef1179422d59f47cb6ef1d`
+-	Image ID: `sha256:59af29530c77d97840c2a7bee7942d897adc6ac0b1bd6ce3bde5bf8c1bdae23d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0779ebe34c553fb2ff742bea08ac6447403c362e5c2ad95831788ca2a016b54`  
-		Last Modified: Tue, 24 Feb 2026 20:16:02 GMT  
+	-	`sha256:6bc3d3d3a67ea19da663cb0efe6942e48995519df9a39bf6c6ad9d994b71006c`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
 		Size: 2.5 MB (2486673 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4b5dc74791af17a0634d4f2bdd9fdf204deea8935e132a60b75c89a9b91bd9d9`  
-		Last Modified: Tue, 24 Feb 2026 20:16:02 GMT  
+	-	`sha256:c16f1a954df1eb3e8cd28dc8c30f5fcc2ff8b5a046a5cb9944820779718dab3c`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
 		Size: 16.3 KB (16269 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:34ef27f685c574f330fc8c0231b2d6be544cb08fa5ee7c167b525e03dfd3bc30
+$ docker pull rabbitmq@sha256:fae94225610b8db05b67f1c421f54de76698352032a6d01b23471e3fe75cc4fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.3 MB (95342926 bytes)**  
+-	Total Size: **95.3 MB (95342928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c60d81d009ed21c8ea0687d6c5dcab57a6ad7af409a8454b0997440e6bee781`
+-	Image ID: `sha256:fb05b21cb774feb835451b4d6451a4fd482c6180c728bcdd49c6560e4e421993`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -22728,11 +22728,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:12:52 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:47:43 GMT
+# Mon, 09 Mar 2026 18:52:47 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:47:43 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:47:43 GMT
+# Mon, 09 Mar 2026 18:52:47 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:52:47 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -22773,9 +22773,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:18 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9171b2d7a8bf7cacd797ba223081948c495f24b79c4439b46dea40bec84cb1d0`  
-		Last Modified: Tue, 24 Feb 2026 21:47:50 GMT  
-		Size: 273.0 B  
+	-	`sha256:3ead6daaedb66453dc19d813a3388f39ea88405763287e39348dcd6472258445`  
+		Last Modified: Mon, 09 Mar 2026 18:52:55 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -22785,37 +22785,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.2-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:ac338320c385eb722f501ffc2b007fa424c44faf869ff93f580b56e99e6b6544
+$ docker pull rabbitmq@sha256:6481334695d308ad2d3391a1c58c4230e5f5d76b345b6041aa05440f9051931c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2503830 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28f09c50339c7f737afadcc61c430e3b44796b3cd111e7d05c2eb4592ece17d5`
+-	Image ID: `sha256:3ae32b2e0027cea037a25f6405776328ff38aa1460df25e382de8aba47e4ddda`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91aee14d643493651b5017c190c345dd01ea9d571a86438bd819d560d67771cd`  
-		Last Modified: Tue, 24 Feb 2026 21:47:50 GMT  
+	-	`sha256:aea3c2043c6653921ddf074739978ef3c42a10c7b332a74cf03ba883d48ecb61`  
+		Last Modified: Mon, 09 Mar 2026 18:52:55 GMT  
 		Size: 2.5 MB (2487473 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:71408ee6a545cef806b252336d325c29f8086a8b0063dca34b4dd6b9fb69aa8c`  
-		Last Modified: Tue, 24 Feb 2026 21:47:50 GMT  
+	-	`sha256:59d6ad5a0184f4da755f73734e714265e9cb5cae8797e3a664a7b5f9a9da65d9`  
+		Last Modified: Mon, 09 Mar 2026 18:52:55 GMT  
 		Size: 16.4 KB (16357 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:3cdacffb9c7a477f76f79a2b51a0b052531a5992935e1ca20065ddf4a4b26e9f
+$ docker pull rabbitmq@sha256:841164a65b40c2af2621415fb6a2afc6187ad5ef97ef4d75db3df38d999d8d56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.1 MB (115129888 bytes)**  
+-	Total Size: **115.1 MB (115118404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cf168e0fe04e2d9b35599f08fd4b24cb0daaf08c79ef30c7e361d61ed415578`
+-	Image ID: `sha256:c40708241e06cc425d50f7be602bd948cc53ab5b5dcd30617961d95f45f388fa`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -22878,11 +22878,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:14:34 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:28:42 GMT
+# Mon, 09 Mar 2026 18:36:17 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
+# Mon, 09 Mar 2026 18:36:31 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:31 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -22923,37 +22923,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:15:01 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:160cd735a496288f5ec5a55d15b7ceb3f2d27c142367fe36586467ef8d6b7d7c`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 274.0 B  
+	-	`sha256:904d8832bc51e2f558b758403f7124e6691f1a945b3f877c4eff0525969fa77c`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
+		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a982de54673799e6bbee20017e5da2603ace4929676311e48cb8049c51ce7d8f`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 4.3 MB (4287756 bytes)  
+	-	`sha256:baf25fcbded3882b6893f82f4abbeaf45799ed0929d0a7016556edb7055556b1`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
+		Size: 4.3 MB (4276269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.2-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:18fa18f4516892b8499ebd682c0d29b526a33bed47738534ff94bc820d72de63
+$ docker pull rabbitmq@sha256:ff0bf2a55abb64efe1abcf88f38082a0474462a7dc91001c88e8fa876d92c4b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2504121 bytes)**  
+-	Total Size: **2.5 MB (2504120 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:739093d701af4f9b199636e7836c03a701469230288f4791c310b42ee5df1970`
+-	Image ID: `sha256:70928dd3c8c3463c379dfb1bd65c149eccd9adc22f8013ad02b2bffe09d090a8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7094eff595d992e9a1a40b742ac2a63a9097e9d7fef8c36f8fb4148534237ea5`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:18bb13853e48ab6db000be8c3d59efaffdcfb0af7acac89e617bbb07c811089d`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
 		Size: 2.5 MB (2487733 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ace710879c37a7475d6c2102f321d293fd0e69bf33615bef38dd77f7666c73ca`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 16.4 KB (16388 bytes)  
+	-	`sha256:ee4fbea2acd9709fccd365f51b8988eb2f397fd12cd50537841c35ec50db6c50`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
+		Size: 16.4 KB (16387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2-management` - linux; ppc64le
@@ -23259,13 +23259,13 @@ $ docker pull rabbitmq@sha256:e0b7e11e0362a65a22bf0de9058a9eb1489b244dfdc047d129
 ### `rabbitmq:4.2-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:25562e19fd580fe683f5b9c8f5064d364a20cdb6d3d97331d82e5d7c4256fd04
+$ docker pull rabbitmq@sha256:89419caf2c88a0d99ca9b4829813a0a819fa647341e8d848714084de7d88e533
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.1 MB (105095189 bytes)**  
+-	Total Size: **105.1 MB (105095192 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bd80ab0c4d0f85951f3a54a7c4788d93463e5d2836a2c728bf2701568ca5abc`
+-	Image ID: `sha256:67c9738ac67c3396d81342ef13bd8b7126373551bdf7faa6ceca2f2eaaf82560`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -23328,11 +23328,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:16 GMT
 CMD ["rabbitmq-server"]
-# Fri, 20 Feb 2026 20:09:57 GMT
+# Mon, 09 Mar 2026 19:05:50 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:06:13 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:06:13 GMT
+# Mon, 09 Mar 2026 19:05:50 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:05:50 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -23373,9 +23373,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:20:13 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ab5f27d11663c4af8571b58dbfa9ced85e1eab5029057eeba374eb30b512c6b`  
-		Last Modified: Fri, 20 Feb 2026 20:10:12 GMT  
-		Size: 273.0 B  
+	-	`sha256:c9dd1dafdde0962cebba72e18d7dc2ebadf62cde402e7c6f2ab1255709f6061f`  
+		Last Modified: Mon, 09 Mar 2026 19:06:03 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -23385,31 +23385,31 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.2-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:1f62079a26e900fed9a44e5c1927cd6f13f5021aabe776e4753b0e8d1a32c7a6
+$ docker pull rabbitmq@sha256:7f23f570119f36adc5270e9d0f947c67fd62ace065c0470b81cfeeb6167f68cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2505047 bytes)**  
+-	Total Size: **2.5 MB (2505046 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bceff5b29c6da3741b9b1a3bb9d3778b44cb6945e82b229e9fac1cb66ed6629`
+-	Image ID: `sha256:6d2e02002c6273e2d487e5244455a205b1808c71f2d6266f2c8812d8737659b8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e09ff95e00d624dafc6ab2e55facf87ebf446dc849b1950d4b5e018687465ef`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:6adeb1e07626aee22ea5f243e56a0bf41d25a11cbbf70a8cb195b35757515b5f`  
+		Last Modified: Mon, 09 Mar 2026 19:06:03 GMT  
 		Size: 2.5 MB (2488783 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:942f686933ed9154958e24db9e8807b88b1a964fdde382a601ee729143e1e9c1`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
-		Size: 16.3 KB (16264 bytes)  
+	-	`sha256:151efcbac0642495acf885c19fa46fb8179ad2e39cb2bb9717f0a2832be2998f`  
+		Last Modified: Mon, 09 Mar 2026 19:06:03 GMT  
+		Size: 16.3 KB (16263 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:4.2-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:d1245c056d85a0fe8de57954150de95ad20f57cbe6696622a92787c381c6f46b
+$ docker pull rabbitmq@sha256:1d3ca02a9fc930e576973a6eb11a22ecb5618e77fbdab31987829422e5eba654
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23434,13 +23434,13 @@ $ docker pull rabbitmq@sha256:d1245c056d85a0fe8de57954150de95ad20f57cbe6696622a9
 ### `rabbitmq:4.2-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:a46633653ed6f618b169386b0960c2c8f26bfebecf7d86937d8a50bb403977a6
+$ docker pull rabbitmq@sha256:b5dc901c459f066f38f76de716dc3418f63d12e53fd06fcdc6b0a113b82a9572
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.9 MB (87921171 bytes)**  
+-	Total Size: **87.9 MB (87905763 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8982de7a0ff82cf04c292f9589e1b9f3f8f827ee1ca7b075bbb4c1c3472f1ca`
+-	Image ID: `sha256:4b302c4f96cd3d57c9c8757a7254d61be2f5df128d2c5576cf02884e3a8424c2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -23495,11 +23495,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:30 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:15:48 GMT
+# Mon, 09 Mar 2026 18:34:55 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:15:49 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:15:49 GMT
+# Mon, 09 Mar 2026 18:34:56 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:34:56 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -23540,49 +23540,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:17:46 GMT  
 		Size: 828.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b804474412424ba1d00e898b8252e7547686a6d1a2a8883785fad87657ec9558`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
-		Size: 272.0 B  
+	-	`sha256:f889afe89c2f4e897f19917bb28e9ddec0eaf580ffc8633230ddbf765423c942`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55ca8e363c03813e8735e6e2b860a23466c3f2405c1d151fb5d5299bf5a74958`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
-		Size: 4.4 MB (4368727 bytes)  
+	-	`sha256:70bf1724e09e3acb6105735a49b29f4baf8c2f5a77477f9237eefb70994d1e8b`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
+		Size: 4.4 MB (4353316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.2-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:83073f46e7fa409b77ac56994f82f38c5f525b53ddf868495cedabda2badee8f
+$ docker pull rabbitmq@sha256:fcec33cfd1401007d4c2008d4f36f0bff65a25a2d13a1b1a2ebccb2d09a3863a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **691.0 KB (691035 bytes)**  
+-	Total Size: **691.0 KB (691036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00f8cfb8f16d8e34a76e846250b5833e23e67b668c294d4bd48a17d7f68d3cf1`
+-	Image ID: `sha256:871122845ae5304c3083eaa689837536ac5016703e186c7ca1e0df6896137f9c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d3069e174f944cd5a1248fcfc0f3df453848def76a26c6fa1ce763763f50534f`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
+	-	`sha256:b5b088daf11edb2d3f54f1bfda21e68e1534c17678443eb1b5397327b7a2e35c`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
 		Size: 675.8 KB (675797 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e245349be8bf5558422581e5ae55d7835bf34c9b4bce89bfbab6457bf9ddf5b1`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
-		Size: 15.2 KB (15238 bytes)  
+	-	`sha256:625edda311399aca56a6753f6d55e83b7dc193392ea0a97b2c9d951d1327fa4d`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
+		Size: 15.2 KB (15239 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:86845bc41050e0e3a6f08e2b1405b3dde2005713c9b6a46fc8a35f6d513a0c95
+$ docker pull rabbitmq@sha256:2a2509011db339690d7b6815c1d8397213190d7db7e2e8740ad6c15e8efbf4c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.8 MB (71750513 bytes)**  
+-	Total Size: **71.8 MB (71750514 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32ac52b084678bdbe9ce538b739176250296c6dc7bb14af9f84f49e776b87fdc`
+-	Image ID: `sha256:3ae48fd57a6cb32b11b9296af4c17cb694d184ac653be6cc628702353bde6e28`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -23637,11 +23637,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:41 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:27:36 GMT
+# Mon, 09 Mar 2026 18:48:57 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:27:36 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:27:36 GMT
+# Mon, 09 Mar 2026 18:48:57 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:48:57 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -23682,9 +23682,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:17:50 GMT  
 		Size: 828.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0fd54892bb5fd5ab50335ed7b33692f2e52220e4a1ee830123803a56ef86a05`  
-		Last Modified: Tue, 24 Feb 2026 21:27:40 GMT  
-		Size: 275.0 B  
+	-	`sha256:9c23222d05ed6f5bfd2aca70fb4ab347a2bfec6536d8b5bfd310c48f67086b20`  
+		Last Modified: Mon, 09 Mar 2026 18:49:01 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -23694,33 +23694,33 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.2-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:0e90de89482f36f4d88ae0a94e7e7706f6c78e8d73e8fb0ae53577c909227a21
+$ docker pull rabbitmq@sha256:635b52e6c39c51ee3990eb8f2e48c0554d1033049af993a353d521c04182783d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.1 KB (15111 bytes)**  
+-	Total Size: **15.1 KB (15112 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a352b4979af6e88fd3f23c00ddfb70ae2192c2af240e3ef8671fdbb9550eef50`
+-	Image ID: `sha256:0f67a6a35a7a24408144ad8440150eed21b581fdf77015096e366ed9750d86aa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:da68ccd6244daeb11414c1e9ceae3e4a7b742d324db5c8ae60c4b19effe9bcf3`  
-		Last Modified: Tue, 24 Feb 2026 21:27:39 GMT  
-		Size: 15.1 KB (15111 bytes)  
+	-	`sha256:599070a9e428e3daaf9146d8c77e1afd43da59866b4e6b53fcd0fc48712568e9`  
+		Last Modified: Mon, 09 Mar 2026 18:49:01 GMT  
+		Size: 15.1 KB (15112 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:ebb9d075442278577ea22b6b870fb5f0fc8272d0709ba015b2bf26a23dcb1867
+$ docker pull rabbitmq@sha256:63331852cead64a4c1be3e178a1119f1485c309e538085c9da643544f20a7911
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.8 MB (70845495 bytes)**  
+-	Total Size: **70.8 MB (70845496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6061e48e0cfcc49ff66dda638863763ee9085aac2c0458c715dd69b80aafafa5`
+-	Image ID: `sha256:2f2e0f99fc01dbc904cb699a8fdaf06b5a0f88895dfa92b472218785eed7d2d9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -23775,11 +23775,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:18 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:47:56 GMT
+# Mon, 09 Mar 2026 18:52:53 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:47:56 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:47:56 GMT
+# Mon, 09 Mar 2026 18:52:53 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:52:53 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -23820,9 +23820,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:36 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2aa67a16c0325593922dd3ac4285321f7d52bfa2c135d6e4bb699a2c008ca236`  
-		Last Modified: Tue, 24 Feb 2026 21:48:02 GMT  
-		Size: 274.0 B  
+	-	`sha256:ba8b99af2b657c88c83ec2ed4bbc2aa9a799075deee6014b7e495d06aa91a9cb`  
+		Last Modified: Mon, 09 Mar 2026 18:52:58 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -23832,37 +23832,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.2-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:b3973a6119ccd341b77e0c3200a7209fae55b9e6308a2a457ddc74a92759f80c
+$ docker pull rabbitmq@sha256:b1510ea58ee81316e02fac411cd8f77894a0cb7a664e22c040bc24c769460785
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **686.3 KB (686267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b50cfee83571ca4b7dce8deaa6e0c2fcba914f936ccb8289e58ca02e4840f5a`
+-	Image ID: `sha256:66ed63ea37d0e120a2a49e5cfe3b17101c7adb4a623326a05926699e1751a562`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1cb03400d6abcb26cd48e68fdc6d7fdbb21103906cebdddf62d37ed144c74974`  
-		Last Modified: Tue, 24 Feb 2026 21:48:02 GMT  
+	-	`sha256:f2232ae86e8e1d9ad56885d03b0c6da54924357d7a59bffa3b04f2250110404a`  
+		Last Modified: Mon, 09 Mar 2026 18:52:58 GMT  
 		Size: 670.9 KB (670940 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33ee514a380267c397a4bb0029f4bf1f4f00ecfb2f329480b29c13afe5b08957`  
-		Last Modified: Tue, 24 Feb 2026 21:48:02 GMT  
+	-	`sha256:ab080b8f0e2b839fe890d0dece46d625683ec351c133eb1137bf44d9e0a89925`  
+		Last Modified: Mon, 09 Mar 2026 18:52:58 GMT  
 		Size: 15.3 KB (15327 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:18613fe7dcad03f8c7f41261888a8106d30ec01dfb00e17c4f7a0e593415d945
+$ docker pull rabbitmq@sha256:691efa1621262317372aa0926bc79d8d6b600cd52ca60b050aafc439b92c7303
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.6 MB (86623554 bytes)**  
+-	Total Size: **86.6 MB (86615471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:621217ce002ccd4d3b77f426e6fbc3256fd50f89e7ee5e76a149a3f801e7c4dd`
+-	Image ID: `sha256:d0acdfaab6166c3f6aeec18144043e0ecc25f64a41197d9d50fd4168bb514323`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -23917,11 +23917,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:01 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:28:53 GMT
+# Mon, 09 Mar 2026 18:36:17 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
+# Mon, 09 Mar 2026 18:36:18 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:18 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -23962,49 +23962,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:20 GMT  
 		Size: 827.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24bf1644aada7383c511fb368f47e8b76f854c8da74e9ed8c59fcb9e65c3d0f1`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:b1f323d301926f9df48c14f1b1e4eeb48c61b8bae5b4072770848e62801bb298`  
+		Last Modified: Mon, 09 Mar 2026 18:36:25 GMT  
 		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f64848e9c283f5c402e84b08cb4421cfb4761142ac9f4b7bd7a181a0823a30e1`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 4.0 MB (4048713 bytes)  
+	-	`sha256:29ce5f12a8509821c98c33cc61b458e4217dec2c135a5a4dc852f8e8db1c451a`  
+		Last Modified: Mon, 09 Mar 2026 18:36:25 GMT  
+		Size: 4.0 MB (4040630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.2-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:ca6911998d4bc3da18634e2e63a0714f9319831d883babafdec16898c28ae12c
+$ docker pull rabbitmq@sha256:96d92d2fd74c04b79285da9dee3c1fa37544a2501545f80790365eee26494c92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **691.3 KB (691298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e66010c14a7a5db6f0d0ee7e551a9b44bf1c120d6bfd180d99d09aa3f989fa8`
+-	Image ID: `sha256:7251314e6e7cc605a047d69421cf3e78fa134e7ea0db71b66eff6def6be8fa95`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ced11d30eb5d25e9d4c5a3995fb6047eaa61a46f6dd4d10d81a9225fdce06a8a`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:1021e921bbc42668781507b1940e1f86724a30ef2b716221b70e2bfc8be5a9ca`  
+		Last Modified: Mon, 09 Mar 2026 18:36:25 GMT  
 		Size: 675.9 KB (675940 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2410bae2d66c28de77386be49cb4ea79cebf82e493ef0164de879439ea281b44`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:861f4d080f6a98dcc302296376086099d75f8d64f4f40391258d18f7524e9d7b`  
+		Last Modified: Mon, 09 Mar 2026 18:36:24 GMT  
 		Size: 15.4 KB (15358 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:b04c599e052d0ba53ff841d2faef1497f8771cfb179708d8a0058a2fc6f63bba
+$ docker pull rabbitmq@sha256:e7dccd6b66f0e19ae7647ca4af612ca4d9d4403b32c62642ae43f543c1ec3672
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.2 MB (73169257 bytes)**  
+-	Total Size: **73.2 MB (73169259 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9756ec3289c3c3876e8755e2b329a2f487a3bbda3ccc166e714f9ce6cb7e2de1`
+-	Image ID: `sha256:1e9c7bec6b1d7d8845dcc2c8319473a0bce0f52fbd94df6f62671ec471551af1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -24059,11 +24059,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:13:04 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:08:11 GMT
+# Mon, 09 Mar 2026 18:21:30 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:08:11 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:08:11 GMT
+# Mon, 09 Mar 2026 18:21:30 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:21:30 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -24104,9 +24104,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:21 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3254f4f6906e886a9c915a36907222a710d10f0baa9f91cec0abd8ae2ffa3b44`  
-		Last Modified: Tue, 24 Feb 2026 20:08:17 GMT  
-		Size: 273.0 B  
+	-	`sha256:6d90cb4c5608d568932a043a2fa14e88ec192dacf0433da206d37a90e7ec1137`  
+		Last Modified: Mon, 09 Mar 2026 18:21:36 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -24116,24 +24116,24 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.2-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:039e169c55add45496b44dbfda78ef260ecc5bbea42112842c7ba40bd773ecd9
+$ docker pull rabbitmq@sha256:82d474b50a1a5f495031d264d56562409b7ff9158d0cf02037735c3200258c95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **686.0 KB (685992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:315fc833fb6e998f2d8100f07a7a5a694e6a166f97724b704e52f2c776256b84`
+-	Image ID: `sha256:4ca891f7e116c76c47dc8a6b2b681f9d100b273cda18d6622ab62fc0f350f740`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a371a13d9978fd55b484a944d0204d326c7eaff37a84c442f7822826e7c12abf`  
-		Last Modified: Tue, 24 Feb 2026 20:08:17 GMT  
+	-	`sha256:31e9bc5fee51759be4069e2617ed3f6cccf68aeb7c06d84af64fcc3114eb9207`  
+		Last Modified: Mon, 09 Mar 2026 18:21:36 GMT  
 		Size: 670.8 KB (670792 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cee2ad38e98a6db64f39cd0b0ed89c18c9b55ed4571e5485a82febc8313b8c71`  
-		Last Modified: Tue, 24 Feb 2026 20:08:17 GMT  
+	-	`sha256:9fa1a1cb865c7b1d6f22f9b2385f415174375c470a6e9a725aac42f27e7d790e`  
+		Last Modified: Mon, 09 Mar 2026 18:21:36 GMT  
 		Size: 15.2 KB (15200 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24424,13 +24424,13 @@ $ docker pull rabbitmq@sha256:21757e9746105f453a17a649d61ff970c4c2fd1c056d2a75fa
 ### `rabbitmq:4.2-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:84e5149a2bbd59f4392102affb87787ae309854c73129702b2ccacc534c8d60a
+$ docker pull rabbitmq@sha256:68559b280b672a2ea44843bd330db06967c6b25f4f11c09103c1e9ef5837fc1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **72.9 MB (72913363 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c92a5dff91a4d1464de73ca0d4e868007503a76fafa86c96af7e143b5571495`
+-	Image ID: `sha256:b807626ede7f113af8ff4a8f273e913c5acdc9ace2c1c576a35d64d7f81fcc95`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -24485,11 +24485,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:24 GMT
 CMD ["rabbitmq-server"]
-# Wed, 25 Feb 2026 01:06:22 GMT
+# Mon, 09 Mar 2026 19:05:51 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:06:23 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:06:23 GMT
+# Mon, 09 Mar 2026 19:05:51 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:05:51 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -24530,8 +24530,8 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:01 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea98401813358164d5165778d738445599e6dbf9d781e91e00db980c26144d4b`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:1d02e8d369386bf5dabfa35857479fe6b67fb80fbe1ee65d5876cadd304df956`  
+		Last Modified: Mon, 09 Mar 2026 19:06:01 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -24542,24 +24542,24 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.2-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:ff2d18ed31bf47b01a1f5f27402efad59edd93dfb130ce1b2d5e0b16ed3d1529
+$ docker pull rabbitmq@sha256:a27843d809f262e673caea8f7373caff8544452fc34d0c8aa41f034b12b12ac3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **686.1 KB (686137 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:129969d2adc671079b0f83308001bb878829b7269bbeab9b69ca8feec2cb2f4d`
+-	Image ID: `sha256:dd98fa78623e6f4240bec06b389d04901aad69dd7a4e86afd3c1d6b42394eca0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5fd786335dc71e891953736f386e99b0e93fe67fb0383cdb791cc5fd20b82f57`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:a868a685020bf54a025c07e7b3ab8258ebf288de86ea25d423d47b77004275e9`  
+		Last Modified: Mon, 09 Mar 2026 19:06:01 GMT  
 		Size: 670.9 KB (670903 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:339ab83004c78ddae315435fcdcc7b54e619f3af4029d2c65615314b1f92fba4`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:be6d02f510fcc1e1d40dbbbc4106c8fabb007f93b5d579757f2d7d2827f0d1c1`  
+		Last Modified: Mon, 09 Mar 2026 19:06:01 GMT  
 		Size: 15.2 KB (15234 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -26576,7 +26576,7 @@ $ docker pull rabbitmq@sha256:9af63a9979b506e01021a33721d62dead537ffef5b9ede45fc
 ## `rabbitmq:4.2.4-management`
 
 ```console
-$ docker pull rabbitmq@sha256:1dd8956ec57b0ec4f0488f7b4b705710536a0c4a9707eba0e81cb49fbd512056
+$ docker pull rabbitmq@sha256:e24c4f044b5fe04c02ba9791d6a0cd324a7ab8efbfb73821985f57f4ba36ffb2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26597,13 +26597,13 @@ $ docker pull rabbitmq@sha256:1dd8956ec57b0ec4f0488f7b4b705710536a0c4a9707eba0e8
 ### `rabbitmq:4.2.4-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:c6c17c27992a924f54b6807050deea4d0b96660d2f02dc2429d4bc593762aaef
+$ docker pull rabbitmq@sha256:ead0bc61315912c89bc3be129c85a18f86ecf72fa9f7a155ec0ba0285d65a7ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.5 MB (117485950 bytes)**  
+-	Total Size: **117.5 MB (117476873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:db2f2c58bfe46b1469a620f5913e65ecf775768434f400a28cd8f6c523273088`
+-	Image ID: `sha256:15bb315154062c4e4628ba3f26fc7cb66c1b8036ac958b041bd333ba843eaf69`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -26666,11 +26666,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:13:29 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:15:44 GMT
+# Mon, 09 Mar 2026 18:34:54 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:15:54 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:15:54 GMT
+# Mon, 09 Mar 2026 18:35:06 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:35:06 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -26711,49 +26711,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:54 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64334d258bd21250a619cbcdc0d985eda0990988cbd5dd84c4eeef5f8c249478`  
-		Last Modified: Tue, 24 Feb 2026 20:16:02 GMT  
-		Size: 274.0 B  
+	-	`sha256:1ec444487e8766fb5810ece85b7d6f05a3b2f21e5b5c9d1cdee9824f1f993761`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dae2927970cda1d06b6ff951e408f79642b775c4c05c5edf7639f2868cea9e2`  
-		Last Modified: Tue, 24 Feb 2026 20:16:03 GMT  
-		Size: 4.5 MB (4521994 bytes)  
+	-	`sha256:89f959a50a37c495453ccbc852ec87640c382688a1143fa509406aaf2417613f`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
+		Size: 4.5 MB (4512915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.2.4-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:2314b04bc636e3f56e20f9a3881999c4d8cd540de6264b487b5d8c8f42ca61af
+$ docker pull rabbitmq@sha256:c4531b280309520587b1d9d467d54d72af146948b98b48145af833e11ed4a652
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2502942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2c6820bee1f6cac6922f0432530d8482a70a9aeb8ef1179422d59f47cb6ef1d`
+-	Image ID: `sha256:59af29530c77d97840c2a7bee7942d897adc6ac0b1bd6ce3bde5bf8c1bdae23d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0779ebe34c553fb2ff742bea08ac6447403c362e5c2ad95831788ca2a016b54`  
-		Last Modified: Tue, 24 Feb 2026 20:16:02 GMT  
+	-	`sha256:6bc3d3d3a67ea19da663cb0efe6942e48995519df9a39bf6c6ad9d994b71006c`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
 		Size: 2.5 MB (2486673 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4b5dc74791af17a0634d4f2bdd9fdf204deea8935e132a60b75c89a9b91bd9d9`  
-		Last Modified: Tue, 24 Feb 2026 20:16:02 GMT  
+	-	`sha256:c16f1a954df1eb3e8cd28dc8c30f5fcc2ff8b5a046a5cb9944820779718dab3c`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
 		Size: 16.3 KB (16269 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2.4-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:34ef27f685c574f330fc8c0231b2d6be544cb08fa5ee7c167b525e03dfd3bc30
+$ docker pull rabbitmq@sha256:fae94225610b8db05b67f1c421f54de76698352032a6d01b23471e3fe75cc4fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.3 MB (95342926 bytes)**  
+-	Total Size: **95.3 MB (95342928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c60d81d009ed21c8ea0687d6c5dcab57a6ad7af409a8454b0997440e6bee781`
+-	Image ID: `sha256:fb05b21cb774feb835451b4d6451a4fd482c6180c728bcdd49c6560e4e421993`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -26816,11 +26816,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:12:52 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:47:43 GMT
+# Mon, 09 Mar 2026 18:52:47 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:47:43 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:47:43 GMT
+# Mon, 09 Mar 2026 18:52:47 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:52:47 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -26861,9 +26861,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:18 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9171b2d7a8bf7cacd797ba223081948c495f24b79c4439b46dea40bec84cb1d0`  
-		Last Modified: Tue, 24 Feb 2026 21:47:50 GMT  
-		Size: 273.0 B  
+	-	`sha256:3ead6daaedb66453dc19d813a3388f39ea88405763287e39348dcd6472258445`  
+		Last Modified: Mon, 09 Mar 2026 18:52:55 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -26873,37 +26873,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.2.4-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:ac338320c385eb722f501ffc2b007fa424c44faf869ff93f580b56e99e6b6544
+$ docker pull rabbitmq@sha256:6481334695d308ad2d3391a1c58c4230e5f5d76b345b6041aa05440f9051931c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2503830 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28f09c50339c7f737afadcc61c430e3b44796b3cd111e7d05c2eb4592ece17d5`
+-	Image ID: `sha256:3ae32b2e0027cea037a25f6405776328ff38aa1460df25e382de8aba47e4ddda`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91aee14d643493651b5017c190c345dd01ea9d571a86438bd819d560d67771cd`  
-		Last Modified: Tue, 24 Feb 2026 21:47:50 GMT  
+	-	`sha256:aea3c2043c6653921ddf074739978ef3c42a10c7b332a74cf03ba883d48ecb61`  
+		Last Modified: Mon, 09 Mar 2026 18:52:55 GMT  
 		Size: 2.5 MB (2487473 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:71408ee6a545cef806b252336d325c29f8086a8b0063dca34b4dd6b9fb69aa8c`  
-		Last Modified: Tue, 24 Feb 2026 21:47:50 GMT  
+	-	`sha256:59d6ad5a0184f4da755f73734e714265e9cb5cae8797e3a664a7b5f9a9da65d9`  
+		Last Modified: Mon, 09 Mar 2026 18:52:55 GMT  
 		Size: 16.4 KB (16357 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2.4-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:3cdacffb9c7a477f76f79a2b51a0b052531a5992935e1ca20065ddf4a4b26e9f
+$ docker pull rabbitmq@sha256:841164a65b40c2af2621415fb6a2afc6187ad5ef97ef4d75db3df38d999d8d56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.1 MB (115129888 bytes)**  
+-	Total Size: **115.1 MB (115118404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cf168e0fe04e2d9b35599f08fd4b24cb0daaf08c79ef30c7e361d61ed415578`
+-	Image ID: `sha256:c40708241e06cc425d50f7be602bd948cc53ab5b5dcd30617961d95f45f388fa`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -26966,11 +26966,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:14:34 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:28:42 GMT
+# Mon, 09 Mar 2026 18:36:17 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
+# Mon, 09 Mar 2026 18:36:31 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:31 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -27011,37 +27011,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:15:01 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:160cd735a496288f5ec5a55d15b7ceb3f2d27c142367fe36586467ef8d6b7d7c`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 274.0 B  
+	-	`sha256:904d8832bc51e2f558b758403f7124e6691f1a945b3f877c4eff0525969fa77c`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
+		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a982de54673799e6bbee20017e5da2603ace4929676311e48cb8049c51ce7d8f`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 4.3 MB (4287756 bytes)  
+	-	`sha256:baf25fcbded3882b6893f82f4abbeaf45799ed0929d0a7016556edb7055556b1`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
+		Size: 4.3 MB (4276269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.2.4-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:18fa18f4516892b8499ebd682c0d29b526a33bed47738534ff94bc820d72de63
+$ docker pull rabbitmq@sha256:ff0bf2a55abb64efe1abcf88f38082a0474462a7dc91001c88e8fa876d92c4b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2504121 bytes)**  
+-	Total Size: **2.5 MB (2504120 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:739093d701af4f9b199636e7836c03a701469230288f4791c310b42ee5df1970`
+-	Image ID: `sha256:70928dd3c8c3463c379dfb1bd65c149eccd9adc22f8013ad02b2bffe09d090a8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7094eff595d992e9a1a40b742ac2a63a9097e9d7fef8c36f8fb4148534237ea5`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:18bb13853e48ab6db000be8c3d59efaffdcfb0af7acac89e617bbb07c811089d`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
 		Size: 2.5 MB (2487733 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ace710879c37a7475d6c2102f321d293fd0e69bf33615bef38dd77f7666c73ca`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 16.4 KB (16388 bytes)  
+	-	`sha256:ee4fbea2acd9709fccd365f51b8988eb2f397fd12cd50537841c35ec50db6c50`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
+		Size: 16.4 KB (16387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2.4-management` - linux; ppc64le
@@ -27347,13 +27347,13 @@ $ docker pull rabbitmq@sha256:e0b7e11e0362a65a22bf0de9058a9eb1489b244dfdc047d129
 ### `rabbitmq:4.2.4-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:25562e19fd580fe683f5b9c8f5064d364a20cdb6d3d97331d82e5d7c4256fd04
+$ docker pull rabbitmq@sha256:89419caf2c88a0d99ca9b4829813a0a819fa647341e8d848714084de7d88e533
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.1 MB (105095189 bytes)**  
+-	Total Size: **105.1 MB (105095192 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bd80ab0c4d0f85951f3a54a7c4788d93463e5d2836a2c728bf2701568ca5abc`
+-	Image ID: `sha256:67c9738ac67c3396d81342ef13bd8b7126373551bdf7faa6ceca2f2eaaf82560`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -27416,11 +27416,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:16 GMT
 CMD ["rabbitmq-server"]
-# Fri, 20 Feb 2026 20:09:57 GMT
+# Mon, 09 Mar 2026 19:05:50 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:06:13 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:06:13 GMT
+# Mon, 09 Mar 2026 19:05:50 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:05:50 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -27461,9 +27461,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:20:13 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ab5f27d11663c4af8571b58dbfa9ced85e1eab5029057eeba374eb30b512c6b`  
-		Last Modified: Fri, 20 Feb 2026 20:10:12 GMT  
-		Size: 273.0 B  
+	-	`sha256:c9dd1dafdde0962cebba72e18d7dc2ebadf62cde402e7c6f2ab1255709f6061f`  
+		Last Modified: Mon, 09 Mar 2026 19:06:03 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -27473,31 +27473,31 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.2.4-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:1f62079a26e900fed9a44e5c1927cd6f13f5021aabe776e4753b0e8d1a32c7a6
+$ docker pull rabbitmq@sha256:7f23f570119f36adc5270e9d0f947c67fd62ace065c0470b81cfeeb6167f68cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2505047 bytes)**  
+-	Total Size: **2.5 MB (2505046 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bceff5b29c6da3741b9b1a3bb9d3778b44cb6945e82b229e9fac1cb66ed6629`
+-	Image ID: `sha256:6d2e02002c6273e2d487e5244455a205b1808c71f2d6266f2c8812d8737659b8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e09ff95e00d624dafc6ab2e55facf87ebf446dc849b1950d4b5e018687465ef`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:6adeb1e07626aee22ea5f243e56a0bf41d25a11cbbf70a8cb195b35757515b5f`  
+		Last Modified: Mon, 09 Mar 2026 19:06:03 GMT  
 		Size: 2.5 MB (2488783 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:942f686933ed9154958e24db9e8807b88b1a964fdde382a601ee729143e1e9c1`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
-		Size: 16.3 KB (16264 bytes)  
+	-	`sha256:151efcbac0642495acf885c19fa46fb8179ad2e39cb2bb9717f0a2832be2998f`  
+		Last Modified: Mon, 09 Mar 2026 19:06:03 GMT  
+		Size: 16.3 KB (16263 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:4.2.4-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:d1245c056d85a0fe8de57954150de95ad20f57cbe6696622a92787c381c6f46b
+$ docker pull rabbitmq@sha256:1d3ca02a9fc930e576973a6eb11a22ecb5618e77fbdab31987829422e5eba654
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27522,13 +27522,13 @@ $ docker pull rabbitmq@sha256:d1245c056d85a0fe8de57954150de95ad20f57cbe6696622a9
 ### `rabbitmq:4.2.4-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:a46633653ed6f618b169386b0960c2c8f26bfebecf7d86937d8a50bb403977a6
+$ docker pull rabbitmq@sha256:b5dc901c459f066f38f76de716dc3418f63d12e53fd06fcdc6b0a113b82a9572
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.9 MB (87921171 bytes)**  
+-	Total Size: **87.9 MB (87905763 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8982de7a0ff82cf04c292f9589e1b9f3f8f827ee1ca7b075bbb4c1c3472f1ca`
+-	Image ID: `sha256:4b302c4f96cd3d57c9c8757a7254d61be2f5df128d2c5576cf02884e3a8424c2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -27583,11 +27583,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:30 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:15:48 GMT
+# Mon, 09 Mar 2026 18:34:55 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:15:49 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:15:49 GMT
+# Mon, 09 Mar 2026 18:34:56 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:34:56 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -27628,49 +27628,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:17:46 GMT  
 		Size: 828.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b804474412424ba1d00e898b8252e7547686a6d1a2a8883785fad87657ec9558`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
-		Size: 272.0 B  
+	-	`sha256:f889afe89c2f4e897f19917bb28e9ddec0eaf580ffc8633230ddbf765423c942`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55ca8e363c03813e8735e6e2b860a23466c3f2405c1d151fb5d5299bf5a74958`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
-		Size: 4.4 MB (4368727 bytes)  
+	-	`sha256:70bf1724e09e3acb6105735a49b29f4baf8c2f5a77477f9237eefb70994d1e8b`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
+		Size: 4.4 MB (4353316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.2.4-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:83073f46e7fa409b77ac56994f82f38c5f525b53ddf868495cedabda2badee8f
+$ docker pull rabbitmq@sha256:fcec33cfd1401007d4c2008d4f36f0bff65a25a2d13a1b1a2ebccb2d09a3863a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **691.0 KB (691035 bytes)**  
+-	Total Size: **691.0 KB (691036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00f8cfb8f16d8e34a76e846250b5833e23e67b668c294d4bd48a17d7f68d3cf1`
+-	Image ID: `sha256:871122845ae5304c3083eaa689837536ac5016703e186c7ca1e0df6896137f9c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d3069e174f944cd5a1248fcfc0f3df453848def76a26c6fa1ce763763f50534f`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
+	-	`sha256:b5b088daf11edb2d3f54f1bfda21e68e1534c17678443eb1b5397327b7a2e35c`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
 		Size: 675.8 KB (675797 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e245349be8bf5558422581e5ae55d7835bf34c9b4bce89bfbab6457bf9ddf5b1`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
-		Size: 15.2 KB (15238 bytes)  
+	-	`sha256:625edda311399aca56a6753f6d55e83b7dc193392ea0a97b2c9d951d1327fa4d`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
+		Size: 15.2 KB (15239 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2.4-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:86845bc41050e0e3a6f08e2b1405b3dde2005713c9b6a46fc8a35f6d513a0c95
+$ docker pull rabbitmq@sha256:2a2509011db339690d7b6815c1d8397213190d7db7e2e8740ad6c15e8efbf4c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.8 MB (71750513 bytes)**  
+-	Total Size: **71.8 MB (71750514 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32ac52b084678bdbe9ce538b739176250296c6dc7bb14af9f84f49e776b87fdc`
+-	Image ID: `sha256:3ae48fd57a6cb32b11b9296af4c17cb694d184ac653be6cc628702353bde6e28`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -27725,11 +27725,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:41 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:27:36 GMT
+# Mon, 09 Mar 2026 18:48:57 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:27:36 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:27:36 GMT
+# Mon, 09 Mar 2026 18:48:57 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:48:57 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -27770,9 +27770,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:17:50 GMT  
 		Size: 828.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0fd54892bb5fd5ab50335ed7b33692f2e52220e4a1ee830123803a56ef86a05`  
-		Last Modified: Tue, 24 Feb 2026 21:27:40 GMT  
-		Size: 275.0 B  
+	-	`sha256:9c23222d05ed6f5bfd2aca70fb4ab347a2bfec6536d8b5bfd310c48f67086b20`  
+		Last Modified: Mon, 09 Mar 2026 18:49:01 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -27782,33 +27782,33 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.2.4-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:0e90de89482f36f4d88ae0a94e7e7706f6c78e8d73e8fb0ae53577c909227a21
+$ docker pull rabbitmq@sha256:635b52e6c39c51ee3990eb8f2e48c0554d1033049af993a353d521c04182783d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.1 KB (15111 bytes)**  
+-	Total Size: **15.1 KB (15112 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a352b4979af6e88fd3f23c00ddfb70ae2192c2af240e3ef8671fdbb9550eef50`
+-	Image ID: `sha256:0f67a6a35a7a24408144ad8440150eed21b581fdf77015096e366ed9750d86aa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:da68ccd6244daeb11414c1e9ceae3e4a7b742d324db5c8ae60c4b19effe9bcf3`  
-		Last Modified: Tue, 24 Feb 2026 21:27:39 GMT  
-		Size: 15.1 KB (15111 bytes)  
+	-	`sha256:599070a9e428e3daaf9146d8c77e1afd43da59866b4e6b53fcd0fc48712568e9`  
+		Last Modified: Mon, 09 Mar 2026 18:49:01 GMT  
+		Size: 15.1 KB (15112 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2.4-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:ebb9d075442278577ea22b6b870fb5f0fc8272d0709ba015b2bf26a23dcb1867
+$ docker pull rabbitmq@sha256:63331852cead64a4c1be3e178a1119f1485c309e538085c9da643544f20a7911
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.8 MB (70845495 bytes)**  
+-	Total Size: **70.8 MB (70845496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6061e48e0cfcc49ff66dda638863763ee9085aac2c0458c715dd69b80aafafa5`
+-	Image ID: `sha256:2f2e0f99fc01dbc904cb699a8fdaf06b5a0f88895dfa92b472218785eed7d2d9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -27863,11 +27863,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:18 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:47:56 GMT
+# Mon, 09 Mar 2026 18:52:53 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:47:56 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:47:56 GMT
+# Mon, 09 Mar 2026 18:52:53 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:52:53 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -27908,9 +27908,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:36 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2aa67a16c0325593922dd3ac4285321f7d52bfa2c135d6e4bb699a2c008ca236`  
-		Last Modified: Tue, 24 Feb 2026 21:48:02 GMT  
-		Size: 274.0 B  
+	-	`sha256:ba8b99af2b657c88c83ec2ed4bbc2aa9a799075deee6014b7e495d06aa91a9cb`  
+		Last Modified: Mon, 09 Mar 2026 18:52:58 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -27920,37 +27920,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.2.4-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:b3973a6119ccd341b77e0c3200a7209fae55b9e6308a2a457ddc74a92759f80c
+$ docker pull rabbitmq@sha256:b1510ea58ee81316e02fac411cd8f77894a0cb7a664e22c040bc24c769460785
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **686.3 KB (686267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b50cfee83571ca4b7dce8deaa6e0c2fcba914f936ccb8289e58ca02e4840f5a`
+-	Image ID: `sha256:66ed63ea37d0e120a2a49e5cfe3b17101c7adb4a623326a05926699e1751a562`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1cb03400d6abcb26cd48e68fdc6d7fdbb21103906cebdddf62d37ed144c74974`  
-		Last Modified: Tue, 24 Feb 2026 21:48:02 GMT  
+	-	`sha256:f2232ae86e8e1d9ad56885d03b0c6da54924357d7a59bffa3b04f2250110404a`  
+		Last Modified: Mon, 09 Mar 2026 18:52:58 GMT  
 		Size: 670.9 KB (670940 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33ee514a380267c397a4bb0029f4bf1f4f00ecfb2f329480b29c13afe5b08957`  
-		Last Modified: Tue, 24 Feb 2026 21:48:02 GMT  
+	-	`sha256:ab080b8f0e2b839fe890d0dece46d625683ec351c133eb1137bf44d9e0a89925`  
+		Last Modified: Mon, 09 Mar 2026 18:52:58 GMT  
 		Size: 15.3 KB (15327 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2.4-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:18613fe7dcad03f8c7f41261888a8106d30ec01dfb00e17c4f7a0e593415d945
+$ docker pull rabbitmq@sha256:691efa1621262317372aa0926bc79d8d6b600cd52ca60b050aafc439b92c7303
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.6 MB (86623554 bytes)**  
+-	Total Size: **86.6 MB (86615471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:621217ce002ccd4d3b77f426e6fbc3256fd50f89e7ee5e76a149a3f801e7c4dd`
+-	Image ID: `sha256:d0acdfaab6166c3f6aeec18144043e0ecc25f64a41197d9d50fd4168bb514323`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -28005,11 +28005,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:01 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:28:53 GMT
+# Mon, 09 Mar 2026 18:36:17 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
+# Mon, 09 Mar 2026 18:36:18 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:18 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -28050,49 +28050,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:20 GMT  
 		Size: 827.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24bf1644aada7383c511fb368f47e8b76f854c8da74e9ed8c59fcb9e65c3d0f1`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:b1f323d301926f9df48c14f1b1e4eeb48c61b8bae5b4072770848e62801bb298`  
+		Last Modified: Mon, 09 Mar 2026 18:36:25 GMT  
 		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f64848e9c283f5c402e84b08cb4421cfb4761142ac9f4b7bd7a181a0823a30e1`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 4.0 MB (4048713 bytes)  
+	-	`sha256:29ce5f12a8509821c98c33cc61b458e4217dec2c135a5a4dc852f8e8db1c451a`  
+		Last Modified: Mon, 09 Mar 2026 18:36:25 GMT  
+		Size: 4.0 MB (4040630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.2.4-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:ca6911998d4bc3da18634e2e63a0714f9319831d883babafdec16898c28ae12c
+$ docker pull rabbitmq@sha256:96d92d2fd74c04b79285da9dee3c1fa37544a2501545f80790365eee26494c92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **691.3 KB (691298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e66010c14a7a5db6f0d0ee7e551a9b44bf1c120d6bfd180d99d09aa3f989fa8`
+-	Image ID: `sha256:7251314e6e7cc605a047d69421cf3e78fa134e7ea0db71b66eff6def6be8fa95`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ced11d30eb5d25e9d4c5a3995fb6047eaa61a46f6dd4d10d81a9225fdce06a8a`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:1021e921bbc42668781507b1940e1f86724a30ef2b716221b70e2bfc8be5a9ca`  
+		Last Modified: Mon, 09 Mar 2026 18:36:25 GMT  
 		Size: 675.9 KB (675940 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2410bae2d66c28de77386be49cb4ea79cebf82e493ef0164de879439ea281b44`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:861f4d080f6a98dcc302296376086099d75f8d64f4f40391258d18f7524e9d7b`  
+		Last Modified: Mon, 09 Mar 2026 18:36:24 GMT  
 		Size: 15.4 KB (15358 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.2.4-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:b04c599e052d0ba53ff841d2faef1497f8771cfb179708d8a0058a2fc6f63bba
+$ docker pull rabbitmq@sha256:e7dccd6b66f0e19ae7647ca4af612ca4d9d4403b32c62642ae43f543c1ec3672
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.2 MB (73169257 bytes)**  
+-	Total Size: **73.2 MB (73169259 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9756ec3289c3c3876e8755e2b329a2f487a3bbda3ccc166e714f9ce6cb7e2de1`
+-	Image ID: `sha256:1e9c7bec6b1d7d8845dcc2c8319473a0bce0f52fbd94df6f62671ec471551af1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -28147,11 +28147,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:13:04 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:08:11 GMT
+# Mon, 09 Mar 2026 18:21:30 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:08:11 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:08:11 GMT
+# Mon, 09 Mar 2026 18:21:30 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:21:30 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -28192,9 +28192,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:21 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3254f4f6906e886a9c915a36907222a710d10f0baa9f91cec0abd8ae2ffa3b44`  
-		Last Modified: Tue, 24 Feb 2026 20:08:17 GMT  
-		Size: 273.0 B  
+	-	`sha256:6d90cb4c5608d568932a043a2fa14e88ec192dacf0433da206d37a90e7ec1137`  
+		Last Modified: Mon, 09 Mar 2026 18:21:36 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -28204,24 +28204,24 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.2.4-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:039e169c55add45496b44dbfda78ef260ecc5bbea42112842c7ba40bd773ecd9
+$ docker pull rabbitmq@sha256:82d474b50a1a5f495031d264d56562409b7ff9158d0cf02037735c3200258c95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **686.0 KB (685992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:315fc833fb6e998f2d8100f07a7a5a694e6a166f97724b704e52f2c776256b84`
+-	Image ID: `sha256:4ca891f7e116c76c47dc8a6b2b681f9d100b273cda18d6622ab62fc0f350f740`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a371a13d9978fd55b484a944d0204d326c7eaff37a84c442f7822826e7c12abf`  
-		Last Modified: Tue, 24 Feb 2026 20:08:17 GMT  
+	-	`sha256:31e9bc5fee51759be4069e2617ed3f6cccf68aeb7c06d84af64fcc3114eb9207`  
+		Last Modified: Mon, 09 Mar 2026 18:21:36 GMT  
 		Size: 670.8 KB (670792 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cee2ad38e98a6db64f39cd0b0ed89c18c9b55ed4571e5485a82febc8313b8c71`  
-		Last Modified: Tue, 24 Feb 2026 20:08:17 GMT  
+	-	`sha256:9fa1a1cb865c7b1d6f22f9b2385f415174375c470a6e9a725aac42f27e7d790e`  
+		Last Modified: Mon, 09 Mar 2026 18:21:36 GMT  
 		Size: 15.2 KB (15200 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -28512,13 +28512,13 @@ $ docker pull rabbitmq@sha256:21757e9746105f453a17a649d61ff970c4c2fd1c056d2a75fa
 ### `rabbitmq:4.2.4-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:84e5149a2bbd59f4392102affb87787ae309854c73129702b2ccacc534c8d60a
+$ docker pull rabbitmq@sha256:68559b280b672a2ea44843bd330db06967c6b25f4f11c09103c1e9ef5837fc1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **72.9 MB (72913363 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c92a5dff91a4d1464de73ca0d4e868007503a76fafa86c96af7e143b5571495`
+-	Image ID: `sha256:b807626ede7f113af8ff4a8f273e913c5acdc9ace2c1c576a35d64d7f81fcc95`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -28573,11 +28573,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:24 GMT
 CMD ["rabbitmq-server"]
-# Wed, 25 Feb 2026 01:06:22 GMT
+# Mon, 09 Mar 2026 19:05:51 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:06:23 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:06:23 GMT
+# Mon, 09 Mar 2026 19:05:51 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:05:51 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -28618,8 +28618,8 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:01 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea98401813358164d5165778d738445599e6dbf9d781e91e00db980c26144d4b`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:1d02e8d369386bf5dabfa35857479fe6b67fb80fbe1ee65d5876cadd304df956`  
+		Last Modified: Mon, 09 Mar 2026 19:06:01 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -28630,24 +28630,24 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4.2.4-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:ff2d18ed31bf47b01a1f5f27402efad59edd93dfb130ce1b2d5e0b16ed3d1529
+$ docker pull rabbitmq@sha256:a27843d809f262e673caea8f7373caff8544452fc34d0c8aa41f034b12b12ac3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **686.1 KB (686137 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:129969d2adc671079b0f83308001bb878829b7269bbeab9b69ca8feec2cb2f4d`
+-	Image ID: `sha256:dd98fa78623e6f4240bec06b389d04901aad69dd7a4e86afd3c1d6b42394eca0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5fd786335dc71e891953736f386e99b0e93fe67fb0383cdb791cc5fd20b82f57`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:a868a685020bf54a025c07e7b3ab8258ebf288de86ea25d423d47b77004275e9`  
+		Last Modified: Mon, 09 Mar 2026 19:06:01 GMT  
 		Size: 670.9 KB (670903 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:339ab83004c78ddae315435fcdcc7b54e619f3af4029d2c65615314b1f92fba4`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:be6d02f510fcc1e1d40dbbbc4106c8fabb007f93b5d579757f2d7d2827f0d1c1`  
+		Last Modified: Mon, 09 Mar 2026 19:06:01 GMT  
 		Size: 15.2 KB (15234 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -30664,7 +30664,7 @@ $ docker pull rabbitmq@sha256:dd34883eecea67b9927a7f8b715e1f1d417da33431cd5c3791
 ## `rabbitmq:management`
 
 ```console
-$ docker pull rabbitmq@sha256:1dd8956ec57b0ec4f0488f7b4b705710536a0c4a9707eba0e81cb49fbd512056
+$ docker pull rabbitmq@sha256:e24c4f044b5fe04c02ba9791d6a0cd324a7ab8efbfb73821985f57f4ba36ffb2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30685,13 +30685,13 @@ $ docker pull rabbitmq@sha256:1dd8956ec57b0ec4f0488f7b4b705710536a0c4a9707eba0e8
 ### `rabbitmq:management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:c6c17c27992a924f54b6807050deea4d0b96660d2f02dc2429d4bc593762aaef
+$ docker pull rabbitmq@sha256:ead0bc61315912c89bc3be129c85a18f86ecf72fa9f7a155ec0ba0285d65a7ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.5 MB (117485950 bytes)**  
+-	Total Size: **117.5 MB (117476873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:db2f2c58bfe46b1469a620f5913e65ecf775768434f400a28cd8f6c523273088`
+-	Image ID: `sha256:15bb315154062c4e4628ba3f26fc7cb66c1b8036ac958b041bd333ba843eaf69`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -30754,11 +30754,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:13:29 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:15:44 GMT
+# Mon, 09 Mar 2026 18:34:54 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:15:54 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:15:54 GMT
+# Mon, 09 Mar 2026 18:35:06 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:35:06 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -30799,49 +30799,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:54 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64334d258bd21250a619cbcdc0d985eda0990988cbd5dd84c4eeef5f8c249478`  
-		Last Modified: Tue, 24 Feb 2026 20:16:02 GMT  
-		Size: 274.0 B  
+	-	`sha256:1ec444487e8766fb5810ece85b7d6f05a3b2f21e5b5c9d1cdee9824f1f993761`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dae2927970cda1d06b6ff951e408f79642b775c4c05c5edf7639f2868cea9e2`  
-		Last Modified: Tue, 24 Feb 2026 20:16:03 GMT  
-		Size: 4.5 MB (4521994 bytes)  
+	-	`sha256:89f959a50a37c495453ccbc852ec87640c382688a1143fa509406aaf2417613f`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
+		Size: 4.5 MB (4512915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:2314b04bc636e3f56e20f9a3881999c4d8cd540de6264b487b5d8c8f42ca61af
+$ docker pull rabbitmq@sha256:c4531b280309520587b1d9d467d54d72af146948b98b48145af833e11ed4a652
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2502942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2c6820bee1f6cac6922f0432530d8482a70a9aeb8ef1179422d59f47cb6ef1d`
+-	Image ID: `sha256:59af29530c77d97840c2a7bee7942d897adc6ac0b1bd6ce3bde5bf8c1bdae23d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0779ebe34c553fb2ff742bea08ac6447403c362e5c2ad95831788ca2a016b54`  
-		Last Modified: Tue, 24 Feb 2026 20:16:02 GMT  
+	-	`sha256:6bc3d3d3a67ea19da663cb0efe6942e48995519df9a39bf6c6ad9d994b71006c`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
 		Size: 2.5 MB (2486673 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4b5dc74791af17a0634d4f2bdd9fdf204deea8935e132a60b75c89a9b91bd9d9`  
-		Last Modified: Tue, 24 Feb 2026 20:16:02 GMT  
+	-	`sha256:c16f1a954df1eb3e8cd28dc8c30f5fcc2ff8b5a046a5cb9944820779718dab3c`  
+		Last Modified: Mon, 09 Mar 2026 18:35:14 GMT  
 		Size: 16.3 KB (16269 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:34ef27f685c574f330fc8c0231b2d6be544cb08fa5ee7c167b525e03dfd3bc30
+$ docker pull rabbitmq@sha256:fae94225610b8db05b67f1c421f54de76698352032a6d01b23471e3fe75cc4fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.3 MB (95342926 bytes)**  
+-	Total Size: **95.3 MB (95342928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c60d81d009ed21c8ea0687d6c5dcab57a6ad7af409a8454b0997440e6bee781`
+-	Image ID: `sha256:fb05b21cb774feb835451b4d6451a4fd482c6180c728bcdd49c6560e4e421993`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -30904,11 +30904,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:12:52 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:47:43 GMT
+# Mon, 09 Mar 2026 18:52:47 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:47:43 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:47:43 GMT
+# Mon, 09 Mar 2026 18:52:47 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:52:47 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -30949,9 +30949,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:18 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9171b2d7a8bf7cacd797ba223081948c495f24b79c4439b46dea40bec84cb1d0`  
-		Last Modified: Tue, 24 Feb 2026 21:47:50 GMT  
-		Size: 273.0 B  
+	-	`sha256:3ead6daaedb66453dc19d813a3388f39ea88405763287e39348dcd6472258445`  
+		Last Modified: Mon, 09 Mar 2026 18:52:55 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -30961,37 +30961,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:ac338320c385eb722f501ffc2b007fa424c44faf869ff93f580b56e99e6b6544
+$ docker pull rabbitmq@sha256:6481334695d308ad2d3391a1c58c4230e5f5d76b345b6041aa05440f9051931c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2503830 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28f09c50339c7f737afadcc61c430e3b44796b3cd111e7d05c2eb4592ece17d5`
+-	Image ID: `sha256:3ae32b2e0027cea037a25f6405776328ff38aa1460df25e382de8aba47e4ddda`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91aee14d643493651b5017c190c345dd01ea9d571a86438bd819d560d67771cd`  
-		Last Modified: Tue, 24 Feb 2026 21:47:50 GMT  
+	-	`sha256:aea3c2043c6653921ddf074739978ef3c42a10c7b332a74cf03ba883d48ecb61`  
+		Last Modified: Mon, 09 Mar 2026 18:52:55 GMT  
 		Size: 2.5 MB (2487473 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:71408ee6a545cef806b252336d325c29f8086a8b0063dca34b4dd6b9fb69aa8c`  
-		Last Modified: Tue, 24 Feb 2026 21:47:50 GMT  
+	-	`sha256:59d6ad5a0184f4da755f73734e714265e9cb5cae8797e3a664a7b5f9a9da65d9`  
+		Last Modified: Mon, 09 Mar 2026 18:52:55 GMT  
 		Size: 16.4 KB (16357 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:3cdacffb9c7a477f76f79a2b51a0b052531a5992935e1ca20065ddf4a4b26e9f
+$ docker pull rabbitmq@sha256:841164a65b40c2af2621415fb6a2afc6187ad5ef97ef4d75db3df38d999d8d56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.1 MB (115129888 bytes)**  
+-	Total Size: **115.1 MB (115118404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cf168e0fe04e2d9b35599f08fd4b24cb0daaf08c79ef30c7e361d61ed415578`
+-	Image ID: `sha256:c40708241e06cc425d50f7be602bd948cc53ab5b5dcd30617961d95f45f388fa`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -31054,11 +31054,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:14:34 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:28:42 GMT
+# Mon, 09 Mar 2026 18:36:17 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
+# Mon, 09 Mar 2026 18:36:31 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:31 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -31099,37 +31099,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:15:01 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:160cd735a496288f5ec5a55d15b7ceb3f2d27c142367fe36586467ef8d6b7d7c`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 274.0 B  
+	-	`sha256:904d8832bc51e2f558b758403f7124e6691f1a945b3f877c4eff0525969fa77c`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
+		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a982de54673799e6bbee20017e5da2603ace4929676311e48cb8049c51ce7d8f`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 4.3 MB (4287756 bytes)  
+	-	`sha256:baf25fcbded3882b6893f82f4abbeaf45799ed0929d0a7016556edb7055556b1`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
+		Size: 4.3 MB (4276269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:18fa18f4516892b8499ebd682c0d29b526a33bed47738534ff94bc820d72de63
+$ docker pull rabbitmq@sha256:ff0bf2a55abb64efe1abcf88f38082a0474462a7dc91001c88e8fa876d92c4b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2504121 bytes)**  
+-	Total Size: **2.5 MB (2504120 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:739093d701af4f9b199636e7836c03a701469230288f4791c310b42ee5df1970`
+-	Image ID: `sha256:70928dd3c8c3463c379dfb1bd65c149eccd9adc22f8013ad02b2bffe09d090a8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7094eff595d992e9a1a40b742ac2a63a9097e9d7fef8c36f8fb4148534237ea5`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:18bb13853e48ab6db000be8c3d59efaffdcfb0af7acac89e617bbb07c811089d`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
 		Size: 2.5 MB (2487733 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ace710879c37a7475d6c2102f321d293fd0e69bf33615bef38dd77f7666c73ca`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 16.4 KB (16388 bytes)  
+	-	`sha256:ee4fbea2acd9709fccd365f51b8988eb2f397fd12cd50537841c35ec50db6c50`  
+		Last Modified: Mon, 09 Mar 2026 18:36:38 GMT  
+		Size: 16.4 KB (16387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:management` - linux; ppc64le
@@ -31435,13 +31435,13 @@ $ docker pull rabbitmq@sha256:e0b7e11e0362a65a22bf0de9058a9eb1489b244dfdc047d129
 ### `rabbitmq:management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:25562e19fd580fe683f5b9c8f5064d364a20cdb6d3d97331d82e5d7c4256fd04
+$ docker pull rabbitmq@sha256:89419caf2c88a0d99ca9b4829813a0a819fa647341e8d848714084de7d88e533
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.1 MB (105095189 bytes)**  
+-	Total Size: **105.1 MB (105095192 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bd80ab0c4d0f85951f3a54a7c4788d93463e5d2836a2c728bf2701568ca5abc`
+-	Image ID: `sha256:67c9738ac67c3396d81342ef13bd8b7126373551bdf7faa6ceca2f2eaaf82560`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -31504,11 +31504,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:16 GMT
 CMD ["rabbitmq-server"]
-# Fri, 20 Feb 2026 20:09:57 GMT
+# Mon, 09 Mar 2026 19:05:50 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:06:13 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-gnu'; digest='66b56f0aa975142035d58ff5c652dfbf466b2bb848fc8183d72f5eb304aa308c' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-gnu'; digest='af39eb11a8c4b8dd4ebd1d0a4e50c27aa100b516f9c42cc1e63aad700da8d923' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:06:13 GMT
+# Mon, 09 Mar 2026 19:05:50 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-gnu'; digest='291d8ce7fa85a374cc613a9ddff0bbce0b65ac50d1e44e0386ab960677be20c5' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-gnu'; digest='da3acbe998ec06bc9dfe41bd7b5c49365b60366f03d6481badfcf1a430221b1b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:05:50 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -31549,9 +31549,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:20:13 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ab5f27d11663c4af8571b58dbfa9ced85e1eab5029057eeba374eb30b512c6b`  
-		Last Modified: Fri, 20 Feb 2026 20:10:12 GMT  
-		Size: 273.0 B  
+	-	`sha256:c9dd1dafdde0962cebba72e18d7dc2ebadf62cde402e7c6f2ab1255709f6061f`  
+		Last Modified: Mon, 09 Mar 2026 19:06:03 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -31561,31 +31561,31 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:1f62079a26e900fed9a44e5c1927cd6f13f5021aabe776e4753b0e8d1a32c7a6
+$ docker pull rabbitmq@sha256:7f23f570119f36adc5270e9d0f947c67fd62ace065c0470b81cfeeb6167f68cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2505047 bytes)**  
+-	Total Size: **2.5 MB (2505046 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bceff5b29c6da3741b9b1a3bb9d3778b44cb6945e82b229e9fac1cb66ed6629`
+-	Image ID: `sha256:6d2e02002c6273e2d487e5244455a205b1808c71f2d6266f2c8812d8737659b8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e09ff95e00d624dafc6ab2e55facf87ebf446dc849b1950d4b5e018687465ef`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:6adeb1e07626aee22ea5f243e56a0bf41d25a11cbbf70a8cb195b35757515b5f`  
+		Last Modified: Mon, 09 Mar 2026 19:06:03 GMT  
 		Size: 2.5 MB (2488783 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:942f686933ed9154958e24db9e8807b88b1a964fdde382a601ee729143e1e9c1`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
-		Size: 16.3 KB (16264 bytes)  
+	-	`sha256:151efcbac0642495acf885c19fa46fb8179ad2e39cb2bb9717f0a2832be2998f`  
+		Last Modified: Mon, 09 Mar 2026 19:06:03 GMT  
+		Size: 16.3 KB (16263 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:d1245c056d85a0fe8de57954150de95ad20f57cbe6696622a92787c381c6f46b
+$ docker pull rabbitmq@sha256:1d3ca02a9fc930e576973a6eb11a22ecb5618e77fbdab31987829422e5eba654
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31610,13 +31610,13 @@ $ docker pull rabbitmq@sha256:d1245c056d85a0fe8de57954150de95ad20f57cbe6696622a9
 ### `rabbitmq:management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:a46633653ed6f618b169386b0960c2c8f26bfebecf7d86937d8a50bb403977a6
+$ docker pull rabbitmq@sha256:b5dc901c459f066f38f76de716dc3418f63d12e53fd06fcdc6b0a113b82a9572
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.9 MB (87921171 bytes)**  
+-	Total Size: **87.9 MB (87905763 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8982de7a0ff82cf04c292f9589e1b9f3f8f827ee1ca7b075bbb4c1c3472f1ca`
+-	Image ID: `sha256:4b302c4f96cd3d57c9c8757a7254d61be2f5df128d2c5576cf02884e3a8424c2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -31671,11 +31671,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:30 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:15:48 GMT
+# Mon, 09 Mar 2026 18:34:55 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:15:49 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:15:49 GMT
+# Mon, 09 Mar 2026 18:34:56 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:34:56 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -31716,49 +31716,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:17:46 GMT  
 		Size: 828.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b804474412424ba1d00e898b8252e7547686a6d1a2a8883785fad87657ec9558`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
-		Size: 272.0 B  
+	-	`sha256:f889afe89c2f4e897f19917bb28e9ddec0eaf580ffc8633230ddbf765423c942`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55ca8e363c03813e8735e6e2b860a23466c3f2405c1d151fb5d5299bf5a74958`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
-		Size: 4.4 MB (4368727 bytes)  
+	-	`sha256:70bf1724e09e3acb6105735a49b29f4baf8c2f5a77477f9237eefb70994d1e8b`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
+		Size: 4.4 MB (4353316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:83073f46e7fa409b77ac56994f82f38c5f525b53ddf868495cedabda2badee8f
+$ docker pull rabbitmq@sha256:fcec33cfd1401007d4c2008d4f36f0bff65a25a2d13a1b1a2ebccb2d09a3863a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **691.0 KB (691035 bytes)**  
+-	Total Size: **691.0 KB (691036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00f8cfb8f16d8e34a76e846250b5833e23e67b668c294d4bd48a17d7f68d3cf1`
+-	Image ID: `sha256:871122845ae5304c3083eaa689837536ac5016703e186c7ca1e0df6896137f9c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d3069e174f944cd5a1248fcfc0f3df453848def76a26c6fa1ce763763f50534f`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
+	-	`sha256:b5b088daf11edb2d3f54f1bfda21e68e1534c17678443eb1b5397327b7a2e35c`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
 		Size: 675.8 KB (675797 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e245349be8bf5558422581e5ae55d7835bf34c9b4bce89bfbab6457bf9ddf5b1`  
-		Last Modified: Tue, 24 Feb 2026 20:15:55 GMT  
-		Size: 15.2 KB (15238 bytes)  
+	-	`sha256:625edda311399aca56a6753f6d55e83b7dc193392ea0a97b2c9d951d1327fa4d`  
+		Last Modified: Mon, 09 Mar 2026 18:35:02 GMT  
+		Size: 15.2 KB (15239 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:86845bc41050e0e3a6f08e2b1405b3dde2005713c9b6a46fc8a35f6d513a0c95
+$ docker pull rabbitmq@sha256:2a2509011db339690d7b6815c1d8397213190d7db7e2e8740ad6c15e8efbf4c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.8 MB (71750513 bytes)**  
+-	Total Size: **71.8 MB (71750514 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32ac52b084678bdbe9ce538b739176250296c6dc7bb14af9f84f49e776b87fdc`
+-	Image ID: `sha256:3ae48fd57a6cb32b11b9296af4c17cb694d184ac653be6cc628702353bde6e28`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -31813,11 +31813,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:17:41 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:27:36 GMT
+# Mon, 09 Mar 2026 18:48:57 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:27:36 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:27:36 GMT
+# Mon, 09 Mar 2026 18:48:57 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:48:57 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -31858,9 +31858,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:17:50 GMT  
 		Size: 828.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0fd54892bb5fd5ab50335ed7b33692f2e52220e4a1ee830123803a56ef86a05`  
-		Last Modified: Tue, 24 Feb 2026 21:27:40 GMT  
-		Size: 275.0 B  
+	-	`sha256:9c23222d05ed6f5bfd2aca70fb4ab347a2bfec6536d8b5bfd310c48f67086b20`  
+		Last Modified: Mon, 09 Mar 2026 18:49:01 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -31870,33 +31870,33 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:0e90de89482f36f4d88ae0a94e7e7706f6c78e8d73e8fb0ae53577c909227a21
+$ docker pull rabbitmq@sha256:635b52e6c39c51ee3990eb8f2e48c0554d1033049af993a353d521c04182783d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.1 KB (15111 bytes)**  
+-	Total Size: **15.1 KB (15112 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a352b4979af6e88fd3f23c00ddfb70ae2192c2af240e3ef8671fdbb9550eef50`
+-	Image ID: `sha256:0f67a6a35a7a24408144ad8440150eed21b581fdf77015096e366ed9750d86aa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:da68ccd6244daeb11414c1e9ceae3e4a7b742d324db5c8ae60c4b19effe9bcf3`  
-		Last Modified: Tue, 24 Feb 2026 21:27:39 GMT  
-		Size: 15.1 KB (15111 bytes)  
+	-	`sha256:599070a9e428e3daaf9146d8c77e1afd43da59866b4e6b53fcd0fc48712568e9`  
+		Last Modified: Mon, 09 Mar 2026 18:49:01 GMT  
+		Size: 15.1 KB (15112 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:ebb9d075442278577ea22b6b870fb5f0fc8272d0709ba015b2bf26a23dcb1867
+$ docker pull rabbitmq@sha256:63331852cead64a4c1be3e178a1119f1485c309e538085c9da643544f20a7911
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.8 MB (70845495 bytes)**  
+-	Total Size: **70.8 MB (70845496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6061e48e0cfcc49ff66dda638863763ee9085aac2c0458c715dd69b80aafafa5`
+-	Image ID: `sha256:2f2e0f99fc01dbc904cb699a8fdaf06b5a0f88895dfa92b472218785eed7d2d9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -31951,11 +31951,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:19:18 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 21:47:56 GMT
+# Mon, 09 Mar 2026 18:52:53 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 21:47:56 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 21:47:56 GMT
+# Mon, 09 Mar 2026 18:52:53 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:52:53 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -31996,9 +31996,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:36 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2aa67a16c0325593922dd3ac4285321f7d52bfa2c135d6e4bb699a2c008ca236`  
-		Last Modified: Tue, 24 Feb 2026 21:48:02 GMT  
-		Size: 274.0 B  
+	-	`sha256:ba8b99af2b657c88c83ec2ed4bbc2aa9a799075deee6014b7e495d06aa91a9cb`  
+		Last Modified: Mon, 09 Mar 2026 18:52:58 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -32008,37 +32008,37 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:b3973a6119ccd341b77e0c3200a7209fae55b9e6308a2a457ddc74a92759f80c
+$ docker pull rabbitmq@sha256:b1510ea58ee81316e02fac411cd8f77894a0cb7a664e22c040bc24c769460785
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **686.3 KB (686267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b50cfee83571ca4b7dce8deaa6e0c2fcba914f936ccb8289e58ca02e4840f5a`
+-	Image ID: `sha256:66ed63ea37d0e120a2a49e5cfe3b17101c7adb4a623326a05926699e1751a562`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1cb03400d6abcb26cd48e68fdc6d7fdbb21103906cebdddf62d37ed144c74974`  
-		Last Modified: Tue, 24 Feb 2026 21:48:02 GMT  
+	-	`sha256:f2232ae86e8e1d9ad56885d03b0c6da54924357d7a59bffa3b04f2250110404a`  
+		Last Modified: Mon, 09 Mar 2026 18:52:58 GMT  
 		Size: 670.9 KB (670940 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33ee514a380267c397a4bb0029f4bf1f4f00ecfb2f329480b29c13afe5b08957`  
-		Last Modified: Tue, 24 Feb 2026 21:48:02 GMT  
+	-	`sha256:ab080b8f0e2b839fe890d0dece46d625683ec351c133eb1137bf44d9e0a89925`  
+		Last Modified: Mon, 09 Mar 2026 18:52:58 GMT  
 		Size: 15.3 KB (15327 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:18613fe7dcad03f8c7f41261888a8106d30ec01dfb00e17c4f7a0e593415d945
+$ docker pull rabbitmq@sha256:691efa1621262317372aa0926bc79d8d6b600cd52ca60b050aafc439b92c7303
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.6 MB (86623554 bytes)**  
+-	Total Size: **86.6 MB (86615471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:621217ce002ccd4d3b77f426e6fbc3256fd50f89e7ee5e76a149a3f801e7c4dd`
+-	Image ID: `sha256:d0acdfaab6166c3f6aeec18144043e0ecc25f64a41197d9d50fd4168bb514323`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -32093,11 +32093,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:01 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:28:53 GMT
+# Mon, 09 Mar 2026 18:36:17 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:28:54 GMT
+# Mon, 09 Mar 2026 18:36:18 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:36:18 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -32138,49 +32138,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:18:20 GMT  
 		Size: 827.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24bf1644aada7383c511fb368f47e8b76f854c8da74e9ed8c59fcb9e65c3d0f1`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:b1f323d301926f9df48c14f1b1e4eeb48c61b8bae5b4072770848e62801bb298`  
+		Last Modified: Mon, 09 Mar 2026 18:36:25 GMT  
 		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f64848e9c283f5c402e84b08cb4421cfb4761142ac9f4b7bd7a181a0823a30e1`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
-		Size: 4.0 MB (4048713 bytes)  
+	-	`sha256:29ce5f12a8509821c98c33cc61b458e4217dec2c135a5a4dc852f8e8db1c451a`  
+		Last Modified: Mon, 09 Mar 2026 18:36:25 GMT  
+		Size: 4.0 MB (4040630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:ca6911998d4bc3da18634e2e63a0714f9319831d883babafdec16898c28ae12c
+$ docker pull rabbitmq@sha256:96d92d2fd74c04b79285da9dee3c1fa37544a2501545f80790365eee26494c92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **691.3 KB (691298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e66010c14a7a5db6f0d0ee7e551a9b44bf1c120d6bfd180d99d09aa3f989fa8`
+-	Image ID: `sha256:7251314e6e7cc605a047d69421cf3e78fa134e7ea0db71b66eff6def6be8fa95`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ced11d30eb5d25e9d4c5a3995fb6047eaa61a46f6dd4d10d81a9225fdce06a8a`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:1021e921bbc42668781507b1940e1f86724a30ef2b716221b70e2bfc8be5a9ca`  
+		Last Modified: Mon, 09 Mar 2026 18:36:25 GMT  
 		Size: 675.9 KB (675940 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2410bae2d66c28de77386be49cb4ea79cebf82e493ef0164de879439ea281b44`  
-		Last Modified: Tue, 24 Feb 2026 20:29:01 GMT  
+	-	`sha256:861f4d080f6a98dcc302296376086099d75f8d64f4f40391258d18f7524e9d7b`  
+		Last Modified: Mon, 09 Mar 2026 18:36:24 GMT  
 		Size: 15.4 KB (15358 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:b04c599e052d0ba53ff841d2faef1497f8771cfb179708d8a0058a2fc6f63bba
+$ docker pull rabbitmq@sha256:e7dccd6b66f0e19ae7647ca4af612ca4d9d4403b32c62642ae43f543c1ec3672
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.2 MB (73169257 bytes)**  
+-	Total Size: **73.2 MB (73169259 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9756ec3289c3c3876e8755e2b329a2f487a3bbda3ccc166e714f9ce6cb7e2de1`
+-	Image ID: `sha256:1e9c7bec6b1d7d8845dcc2c8319473a0bce0f52fbd94df6f62671ec471551af1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -32235,11 +32235,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:13:04 GMT
 CMD ["rabbitmq-server"]
-# Tue, 24 Feb 2026 20:08:11 GMT
+# Mon, 09 Mar 2026 18:21:30 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Tue, 24 Feb 2026 20:08:11 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Tue, 24 Feb 2026 20:08:11 GMT
+# Mon, 09 Mar 2026 18:21:30 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 18:21:30 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -32280,9 +32280,9 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:13:21 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3254f4f6906e886a9c915a36907222a710d10f0baa9f91cec0abd8ae2ffa3b44`  
-		Last Modified: Tue, 24 Feb 2026 20:08:17 GMT  
-		Size: 273.0 B  
+	-	`sha256:6d90cb4c5608d568932a043a2fa14e88ec192dacf0433da206d37a90e7ec1137`  
+		Last Modified: Mon, 09 Mar 2026 18:21:36 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -32292,24 +32292,24 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:039e169c55add45496b44dbfda78ef260ecc5bbea42112842c7ba40bd773ecd9
+$ docker pull rabbitmq@sha256:82d474b50a1a5f495031d264d56562409b7ff9158d0cf02037735c3200258c95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **686.0 KB (685992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:315fc833fb6e998f2d8100f07a7a5a694e6a166f97724b704e52f2c776256b84`
+-	Image ID: `sha256:4ca891f7e116c76c47dc8a6b2b681f9d100b273cda18d6622ab62fc0f350f740`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a371a13d9978fd55b484a944d0204d326c7eaff37a84c442f7822826e7c12abf`  
-		Last Modified: Tue, 24 Feb 2026 20:08:17 GMT  
+	-	`sha256:31e9bc5fee51759be4069e2617ed3f6cccf68aeb7c06d84af64fcc3114eb9207`  
+		Last Modified: Mon, 09 Mar 2026 18:21:36 GMT  
 		Size: 670.8 KB (670792 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cee2ad38e98a6db64f39cd0b0ed89c18c9b55ed4571e5485a82febc8313b8c71`  
-		Last Modified: Tue, 24 Feb 2026 20:08:17 GMT  
+	-	`sha256:9fa1a1cb865c7b1d6f22f9b2385f415174375c470a6e9a725aac42f27e7d790e`  
+		Last Modified: Mon, 09 Mar 2026 18:21:36 GMT  
 		Size: 15.2 KB (15200 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -32600,13 +32600,13 @@ $ docker pull rabbitmq@sha256:21757e9746105f453a17a649d61ff970c4c2fd1c056d2a75fa
 ### `rabbitmq:management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:84e5149a2bbd59f4392102affb87787ae309854c73129702b2ccacc534c8d60a
+$ docker pull rabbitmq@sha256:68559b280b672a2ea44843bd330db06967c6b25f4f11c09103c1e9ef5837fc1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **72.9 MB (72913363 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c92a5dff91a4d1464de73ca0d4e868007503a76fafa86c96af7e143b5571495`
+-	Image ID: `sha256:b807626ede7f113af8ff4a8f273e913c5acdc9ace2c1c576a35d64d7f81fcc95`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -32661,11 +32661,11 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
 # Fri, 20 Feb 2026 19:18:24 GMT
 CMD ["rabbitmq-server"]
-# Wed, 25 Feb 2026 01:06:22 GMT
+# Mon, 09 Mar 2026 19:05:51 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 25 Feb 2026 01:06:23 GMT
-RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-x86_64-unknown-linux-musl'; digest='fd01f8e7429c685cd844441ca2474ae28e863fd3d5b7a8ffc083b22967892dd1' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.26.0/rabbitmqadmin-2.26.0-aarch64-unknown-linux-musl'; digest='4da07a3b6aa01649d20205b8da5a059a7172276824e1c732d5a063b599a54fc6' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 25 Feb 2026 01:06:23 GMT
+# Mon, 09 Mar 2026 19:05:51 GMT
+RUN set -eux; 	arch="$(apk --print-arch)"; 		case "$arch" in 		'x86_64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-x86_64-unknown-linux-musl'; digest='19597fe995ada6603aee6c0bb2ce6f0db894858f51a40d35ee9f8eb5cc49aa54' ;; 		'aarch64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.27.0/rabbitmqadmin-2.27.0-aarch64-unknown-linux-musl'; digest='2984085052189414af736b4947f5e8ff35c3457c3e9aa7ab2eedeec9b800d71b' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum -c -; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Mon, 09 Mar 2026 19:05:51 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -32706,8 +32706,8 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 20 Feb 2026 19:19:01 GMT  
 		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea98401813358164d5165778d738445599e6dbf9d781e91e00db980c26144d4b`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:1d02e8d369386bf5dabfa35857479fe6b67fb80fbe1ee65d5876cadd304df956`  
+		Last Modified: Mon, 09 Mar 2026 19:06:01 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -32718,23 +32718,23 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:ff2d18ed31bf47b01a1f5f27402efad59edd93dfb130ce1b2d5e0b16ed3d1529
+$ docker pull rabbitmq@sha256:a27843d809f262e673caea8f7373caff8544452fc34d0c8aa41f034b12b12ac3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **686.1 KB (686137 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:129969d2adc671079b0f83308001bb878829b7269bbeab9b69ca8feec2cb2f4d`
+-	Image ID: `sha256:dd98fa78623e6f4240bec06b389d04901aad69dd7a4e86afd3c1d6b42394eca0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5fd786335dc71e891953736f386e99b0e93fe67fb0383cdb791cc5fd20b82f57`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:a868a685020bf54a025c07e7b3ab8258ebf288de86ea25d423d47b77004275e9`  
+		Last Modified: Mon, 09 Mar 2026 19:06:01 GMT  
 		Size: 670.9 KB (670903 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:339ab83004c78ddae315435fcdcc7b54e619f3af4029d2c65615314b1f92fba4`  
-		Last Modified: Wed, 25 Feb 2026 01:06:56 GMT  
+	-	`sha256:be6d02f510fcc1e1d40dbbbc4106c8fabb007f93b5d579757f2d7d2827f0d1c1`  
+		Last Modified: Mon, 09 Mar 2026 19:06:01 GMT  
 		Size: 15.2 KB (15234 bytes)  
 		MIME: application/vnd.in-toto+json
