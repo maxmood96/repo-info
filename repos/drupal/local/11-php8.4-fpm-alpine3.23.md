@@ -1,10 +1,10 @@
-# `drupal:11.3.3-php8.4-fpm-alpine3.23`
+# `drupal:11.3.5-php8.4-fpm-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb5dff957906bd7ddf0d91a9e1edf8b709a900c22985265590f88eb9e455d3f9`
-- Created: `2026-02-13T20:12:57.266740026Z`
-- Virtual Size: ~ 190.84 Mb  
+- Image ID: `sha256:5547fa3a3803f1c8fb3c8d13d45fcf654bfd314993f30c5435af5ac1e6639098`
+- Created: `2026-03-06T18:33:36.603222717Z`
+- Virtual Size: ~ 191.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.18.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.18.tar.xz.asc`
   - `PHP_SHA256=957a9b19b4a8e965ee0cc788ca74333bfffaadc206b58611b6cd3cc8b2f40110`
-  - `DRUPAL_VERSION=11.3.3`
+  - `DRUPAL_VERSION=11.3.5`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -437,16 +437,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.54-r0 description:
+libpng-1.6.55-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.54-r0 webpage:
+libpng-1.6.55-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.54-r0 installed size:
+libpng-1.6.55-r0 installed size:
 177 KiB
 
-libpng-1.6.54-r0 license:
+libpng-1.6.55-r0 license:
 Libpng
 
 ```
@@ -454,16 +454,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.1-r0 description:
+libpq-18.2-r0 description:
 PostgreSQL client library
 
-libpq-18.1-r0 webpage:
+libpq-18.2-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.1-r0 installed size:
+libpq-18.2-r0 installed size:
 350 KiB
 
-libpq-18.1-r0 license:
+libpq-18.2-r0 license:
 PostgreSQL
 
 ```
@@ -845,16 +845,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.1-r2 description:
+zlib-1.3.2-r0 description:
 A compression/decompression Library
 
-zlib-1.3.1-r2 webpage:
+zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.1-r2 installed size:
-101 KiB
+zlib-1.3.2-r0 installed size:
+105 KiB
 
-zlib-1.3.1-r2 license:
+zlib-1.3.2-r0 license:
 Zlib
 
 ```

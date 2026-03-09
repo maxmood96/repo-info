@@ -1,10 +1,10 @@
-# `drupal:11.3.3-php8.4-fpm-alpine3.22`
+# `drupal:11.3.5-php8.4-fpm-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd9aae561d95b01df6020abca2531e0f7d9d11b179a35d83bf12fd3252cb03bd`
-- Created: `2026-02-13T20:13:15.154487018Z`
-- Virtual Size: ~ 190.28 Mb  
+- Image ID: `sha256:cd6fb7127d5ce946e4b1f3d82a27b3d495d9110e84944536c7c46b6a7cf2cbe2`
+- Created: `2026-03-06T18:33:39.396918838Z`
+- Virtual Size: ~ 190.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.18.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.18.tar.xz.asc`
   - `PHP_SHA256=957a9b19b4a8e965ee0cc788ca74333bfffaadc206b58611b6cd3cc8b2f40110`
-  - `DRUPAL_VERSION=11.3.3`
+  - `DRUPAL_VERSION=11.3.5`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -437,16 +437,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.54-r0 description:
+libpng-1.6.55-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.54-r0 webpage:
+libpng-1.6.55-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.54-r0 installed size:
+libpng-1.6.55-r0 installed size:
 181 KiB
 
-libpng-1.6.54-r0 license:
+libpng-1.6.55-r0 license:
 Libpng
 
 ```
@@ -454,16 +454,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.7-r0 description:
+libpq-17.8-r0 description:
 PostgreSQL client library
 
-libpq-17.7-r0 webpage:
+libpq-17.8-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.7-r0 installed size:
+libpq-17.8-r0 installed size:
 322 KiB
 
-libpq-17.7-r0 license:
+libpq-17.8-r0 license:
 PostgreSQL
 
 ```
