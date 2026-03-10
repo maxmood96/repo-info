@@ -1,19 +1,19 @@
-# `haproxy:3.2.13-alpine`
+# `haproxy:3.2.14-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c1dfd30ad4827fb1ec385057826fcf96fb11b7d6b33b0fb6d37a399e87bc9db3`
-- Created: `2026-02-19T19:37:46.542001574Z`
-- Virtual Size: ~ 37.95 Mb  
+- Image ID: `sha256:30bd8a47a8129939613ba58d624db1d40d752599c324d869e092968d1496010a`
+- Created: `2026-03-09T18:34:17.033539236Z`
+- Virtual Size: ~ 38.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["haproxy","-f","/usr/local/etc/haproxy/haproxy.cfg"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `HAPROXY_VERSION=3.2.13`
-  - `HAPROXY_URL=https://www.haproxy.org/download/3.2/src/haproxy-3.2.13.tar.gz`
-  - `HAPROXY_SHA256=9cf45dadca6899908049d4c098d29ad866d89ba8a283d78a9c10890e157f6185`
+  - `HAPROXY_VERSION=3.2.14`
+  - `HAPROXY_URL=https://www.haproxy.org/download/3.2/src/haproxy-3.2.14.tar.gz`
+  - `HAPROXY_SHA256=b21f50a790aa8cb0cf8dc505f1f8d849799eafe4d31c14b86a34409ccf4ae5e4`
 
 ## `apk` (`.apk`-based packages)
 
@@ -394,16 +394,16 @@ GPL-2.0-only
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.1-r2 description:
+zlib-1.3.2-r0 description:
 A compression/decompression Library
 
-zlib-1.3.1-r2 webpage:
+zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.1-r2 installed size:
-101 KiB
+zlib-1.3.2-r0 installed size:
+105 KiB
 
-zlib-1.3.1-r2 license:
+zlib-1.3.2-r0 license:
 Zlib
 
 ```
