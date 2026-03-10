@@ -1,17 +1,17 @@
-# `telegraf:1.37-alpine`
+# `telegraf:1.38-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:38efb96d204dcce61a2419f13705ddf967966bbf6c20b8dc214d6cd4917df5cc`
-- Created: `2026-02-23T22:13:15.238885501Z`
-- Virtual Size: ~ 314.23 Mb  
+- Image ID: `sha256:9b59eede2f675a1f762db0a0339825209fcab763d83ea784f586f04075362c90`
+- Created: `2026-03-09T21:50:04.663868295Z`
+- Virtual Size: ~ 315.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.37.3`
+  - `TELEGRAF_VERSION=1.38.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -698,16 +698,16 @@ GPL-2.0-only AND LGPL-2.1-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025c-r0 description:
+tzdata-2026a-r0 description:
 Timezone data
 
-tzdata-2025c-r0 webpage:
+tzdata-2026a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025c-r0 installed size:
+tzdata-2026a-r0 installed size:
 436 KiB
 
-tzdata-2025c-r0 license:
+tzdata-2026a-r0 license:
 Public-Domain
 
 ```
