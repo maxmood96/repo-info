@@ -4943,14 +4943,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/shar
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.11
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.11.dsc' python3.12_3.12.3-1ubuntu0.11.dsc 3924 SHA512:99e717fa24a3d8a3cd55b98cb08002f0ceac8a21ff2deaa8d7efd3b9b91e35d22b39440008b38e7ec936a3917a6ffdf38a43beb010b064885b27ea783e0273c1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.11.debian.tar.xz' python3.12_3.12.3-1ubuntu0.11.debian.tar.xz 270800 SHA512:f5ad7dd3d93f96372d3ada21fe00a51662851170f4e55d37254be5a19fb340ac32bb6e6608c8ac011ea57b099295d4a8c1be2098345f185ac7dba99ee02b4ebc
-```
 
 ### `dpkg` source package: `pyyaml=6.0.1-2build2`
 
