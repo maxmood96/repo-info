@@ -1,10 +1,10 @@
-# `maven:3.9.12-amazoncorretto-17-debian`
+# `maven:3.9.13-amazoncorretto-17-debian`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dbf6338199ea37960d183d1aeb6c3ae8691b3aacaa0fc286970f7f596d5c5f12`
-- Created: `2026-01-16T02:44:58.915635147Z`
-- Virtual Size: ~ 442.53 Mb  
+- Image ID: `sha256:93367a252b867b6056ef2ed069cbf32ee0e79327b6ecc136d952e92cbb7b2cd5`
+- Created: `2026-03-09T19:14:15.752516983Z`
+- Virtual Size: ~ 443.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -910,11 +910,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/init-system-helpers/1.69~deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/init-system-helpers/1.69~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `java-17-amazon-corretto-jdk=1:17.0.17.10-1`
+### `dpkg` source package: `java-17-amazon-corretto-jdk=1:17.0.18.9-1`
 
 Binary Packages:
 
-- `java-17-amazon-corretto-jdk:amd64=1:17.0.17.10-1`
+- `java-17-amazon-corretto-jdk:amd64=1:17.0.18.9-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1771,13 +1771,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssh/1:10.0p1-7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssh/1:10.0p1-7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.4-1~deb13u1`
+### `dpkg` source package: `openssl=3.5.4-1~deb13u2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.4-1~deb13u1`
-- `openssl=3.5.4-1~deb13u1`
-- `openssl-provider-legacy=3.5.4-1~deb13u1`
+- `libssl3t64:amd64=3.5.4-1~deb13u2`
+- `openssl=3.5.4-1~deb13u2`
+- `openssl-provider-legacy=3.5.4-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -1789,18 +1789,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.4-1~deb13u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.4-1%7edeb13u1.dsc' openssl_3.5.4-1~deb13u1.dsc 2669 SHA256:3ae8c547928de96ab95f8ab281501c95dd76050cbf569dddadf05c1950dd7779
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.4.orig.tar.gz' openssl_3.5.4.orig.tar.gz 53190367 SHA256:967311f84955316969bdb1d8d4b983718ef42338639c621ec4c34fddef355e99
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.4.orig.tar.gz.asc' openssl_3.5.4.orig.tar.gz.asc 833 SHA256:cfcabcfc6e43237392e0ab42e2326fceb71037036c2adaa7ecc7e251778e38f4
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.4-1%7edeb13u1.debian.tar.xz' openssl_3.5.4-1~deb13u1.debian.tar.xz 49900 SHA256:3659d7e13ee91c9a97570b084f6e32c4f4a5fb29cd846be05863323ad312ce4e
+$ apt-get source -qq --print-uris openssl=3.5.4-1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.4-1%7edeb13u2.dsc' openssl_3.5.4-1~deb13u2.dsc 2707 SHA256:646eb71bec0d395e564f1dd88e26ddede052200d37293bb03aa1372897b17dd8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.4.orig.tar.gz' openssl_3.5.4.orig.tar.gz 53190367 SHA256:967311f84955316969bdb1d8d4b983718ef42338639c621ec4c34fddef355e99
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.4.orig.tar.gz.asc' openssl_3.5.4.orig.tar.gz.asc 833 SHA256:cfcabcfc6e43237392e0ab42e2326fceb71037036c2adaa7ecc7e251778e38f4
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.4-1%7edeb13u2.debian.tar.xz' openssl_3.5.4-1~deb13u2.debian.tar.xz 65020 SHA256:f9edcab4e1d849a6c29e1c7821516c19d7dead327bb78b015d07445622922437
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.4-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.4-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.4-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.4-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.4-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.4-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-5`
 
