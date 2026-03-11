@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d1adc3ff3bcf156be7d0ca161cad0fb623d92ba7713ac29901c5b11f1c47cbdd`
-- Created: `2026-02-18T19:20:25.156609526Z`
+- Image ID: `sha256:b1b512571b8d254947a673b64e9e5e4b7092f302dad57ae601b939638f6807a7`
+- Created: `2026-03-11T18:35:06.641810833Z`
 - Virtual Size: ~ 494.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `JAVA_VERSION=jdk-21.0.10+7`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-02-17T16:42:34Z`
+  - `build-date=2026-03-11T04:51:18Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-02-17T16:42:34Z`
-  - `org.opencontainers.image.revision=0ced2bbee24d5463d4530756a57f8db895246c48`
-  - `release=1771346502`
+  - `org.opencontainers.image.created=2026-03-11T04:51:18Z`
+  - `org.opencontainers.image.revision=ddf3e9d218968613397a7b4df7547f25ad755449`
+  - `release=1773204619`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=0ced2bbee24d5463d4530756a57f8db895246c48`
+  - `vcs-ref=ddf3e9d218968613397a7b4df7547f25ad755449`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -484,15 +484,15 @@ $ dnf --quiet download --source --url gnupg2-2.3.3-5.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnupg2-2.3.3-5.el9_7.src.rpm
 ```
 
-### `rpm` package: `gnutls-3.8.3-9.el9.x86_64`
+### `rpm` package: `gnutls-3.8.3-10.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gnutls-3.8.3-9.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.3-9.el9.src.rpm
+$ dnf --quiet download --source --url gnutls-3.8.3-10.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.3-10.el9_7.src.rpm
 ```
 
 ### `rpm` package: `gobject-introspection-1.68.0-11.el9.x86_64`
@@ -936,11 +936,16 @@ $ dnf --quiet download --source --url libpeas-1.30.0-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libpeas-1.30.0-4.el9.src.rpm
 ```
 
-### `rpm` package: `libpng-1.6.37-12.el9_7.1.x86_64`
+### `rpm` package: `libpng-1.6.37-12.el9_7.2.x86_64`
 
 Licenses (from `rpm --query`): zlib
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libpng-1.6.37-12.el9_7.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libpng-1.6.37-12.el9_7.2.src.rpm
+```
 
 ### `rpm` package: `libpsl-0.21.1-5.el9.x86_64`
 
