@@ -1,9 +1,9 @@
-# `clojure:temurin-21-tools-deps-1.12.4.1612-trixie`
+# `clojure:temurin-21-tools-deps-1.12.4.1618-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f04cf6789f0d567e7ad0734a1ea555ce12412f9b42dfedfa3fb6d62310a439f9`
-- Created: `2026-03-04T17:51:23.9152175Z`
+- Image ID: `sha256:432ae8db81780cc045dc34b56707742d70d2d63dc1df27589c08ed7e0dd24f6f`
+- Created: `2026-03-09T20:36:17.239545002Z`
 - Virtual Size: ~ 621.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `CLOJURE_VERSION=1.12.4.1612`
+  - `CLOJURE_VERSION=1.12.4.1618`
 
 ## `dpkg` (`.deb`-based packages)
 

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:39bfca2fdf4c4a77efc12dc16fe6a9504974bc4c88810b88a6e94dfea51ccb35`
-- Created: `2026-03-04T17:49:07.592533926Z`
+- Image ID: `sha256:0cd9ab274ea5bf7263a6c1478db2934e4d5a63e960c4d15fe42c264f58f06a24`
+- Created: `2026-03-09T20:34:06.448787068Z`
 - Virtual Size: ~ 394.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u482-b08`
-  - `CLOJURE_VERSION=1.12.4.1612`
+  - `CLOJURE_VERSION=1.12.4.1618`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -2230,14 +2230,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.14`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.15`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.14`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.14`
-- `python3.10=3.10.12-1~22.04.14`
-- `python3.10-minimal=3.10.12-1~22.04.14`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.15`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.15`
+- `python3.10=3.10.12-1~22.04.15`
+- `python3.10-minimal=3.10.12-1~22.04.15`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2262,10 +2262,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.14
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.14.dsc' python3.10_3.10.12-1~22.04.14.dsc 3723 SHA512:76695575536cb5959604d7badaedf4077523a1ea7829b53c64791f8c1baf3103e0eaec5d0bde52e2cb100360e4026970d3c4bf7c34f2c1aa591a16cb3158b7c6
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.15
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.15.dsc' python3.10_3.10.12-1~22.04.15.dsc 3110 SHA512:8ea2ec7063033873b4f53f039578d9de318b61240db5dc13a6e947803681d9bd66da508fa4d2a78ad89cf3715ffb9a57c046a89b1d1e674433e7c14a20875012
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.14.debian.tar.xz' python3.10_3.10.12-1~22.04.14.debian.tar.xz 269092 SHA512:c0d379b440a251f995162d0cc354a4ff142ca567b4677422aa8473e5c476858daabc902ed81ae6c05ab455f45a1d6aa5fa3bd0c6b058a6d602c9915f31b4da96
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.15.debian.tar.xz' python3.10_3.10.12-1~22.04.15.debian.tar.xz 269472 SHA512:8c46f573b40044406a8d596fdd3991139350eb86257c65ca01744f2f9504c4e4070302de52938a48272a56bfdbb676eee19756b719c1ed372f93a5b79335b80f
 ```
 
 ### `dpkg` source package: `readline=8.1.2-1`
