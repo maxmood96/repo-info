@@ -514,14 +514,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.7.dsc' curl_8.5.0-2ubuntu10.7.dsc 3051 SHA512:6dc7a2bb3ac02511df39b5d54d01c8c82fd37d2ec9f38280b3b72ee5d24caebf9f99509a60408098a0b1253d7a1d03763b989a02d34b73f0cc021bad020a92da
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.7.debian.tar.xz' curl_8.5.0-2ubuntu10.7.debian.tar.xz 66108 SHA512:8d76a18ca019987ca46e45bc8d8d5dca691f07d7689e19bd2de321b9960a5d060d2d5031c3d778be35aab88cd630e1a5ac2b1f66d07ee80a22d6a115988c0f3a
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
@@ -11508,14 +11503,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.11
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.11.dsc' python3.12_3.12.3-1ubuntu0.11.dsc 3924 SHA512:99e717fa24a3d8a3cd55b98cb08002f0ceac8a21ff2deaa8d7efd3b9b91e35d22b39440008b38e7ec936a3917a6ffdf38a43beb010b064885b27ea783e0273c1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.11.debian.tar.xz' python3.12_3.12.3-1ubuntu0.11.debian.tar.xz 270800 SHA512:f5ad7dd3d93f96372d3ada21fe00a51662851170f4e55d37254be5a19fb340ac32bb6e6608c8ac011ea57b099295d4a8c1be2098345f185ac7dba99ee02b4ebc
-```
 
 ### `dpkg` source package: `pyusb=1.2.1-2`
 
