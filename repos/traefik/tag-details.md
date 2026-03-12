@@ -20,6 +20,12 @@
 -	[`traefik:3.6.10`](#traefik3610)
 -	[`traefik:3.6.10-nanoserver-ltsc2022`](#traefik3610-nanoserver-ltsc2022)
 -	[`traefik:3.6.10-windowsservercore-ltsc2022`](#traefik3610-windowsservercore-ltsc2022)
+-	[`traefik:3.7.0-ea.1`](#traefik370-ea1)
+-	[`traefik:3.7.0-ea.1-nanoserver-ltsc2022`](#traefik370-ea1-nanoserver-ltsc2022)
+-	[`traefik:3.7.0-ea.1-windowsservercore-ltsc2022`](#traefik370-ea1-windowsservercore-ltsc2022)
+-	[`traefik:langres`](#traefiklangres)
+-	[`traefik:langres-nanoserver-ltsc2022`](#traefiklangres-nanoserver-ltsc2022)
+-	[`traefik:langres-windowsservercore-ltsc2022`](#traefiklangres-windowsservercore-ltsc2022)
 -	[`traefik:latest`](#traefiklatest)
 -	[`traefik:mimolette`](#traefikmimolette)
 -	[`traefik:mimolette-nanoserver-ltsc2022`](#traefikmimolette-nanoserver-ltsc2022)
@@ -46,6 +52,9 @@
 -	[`traefik:v3.6.10`](#traefikv3610)
 -	[`traefik:v3.6.10-nanoserver-ltsc2022`](#traefikv3610-nanoserver-ltsc2022)
 -	[`traefik:v3.6.10-windowsservercore-ltsc2022`](#traefikv3610-windowsservercore-ltsc2022)
+-	[`traefik:v3.7.0-ea.1`](#traefikv370-ea1)
+-	[`traefik:v3.7.0-ea.1-nanoserver-ltsc2022`](#traefikv370-ea1-nanoserver-ltsc2022)
+-	[`traefik:v3.7.0-ea.1-windowsservercore-ltsc2022`](#traefikv370-ea1-windowsservercore-ltsc2022)
 -	[`traefik:windowsservercore-ltsc2022`](#traefikwindowsservercore-ltsc2022)
 
 ## `traefik:2`
@@ -3659,6 +3668,30 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Mar 2026 22:04:52 GMT  
 		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `traefik:3.7.0-ea.1`
+
+**does not exist** (yet?)
+
+## `traefik:3.7.0-ea.1-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `traefik:3.7.0-ea.1-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `traefik:langres`
+
+**does not exist** (yet?)
+
+## `traefik:langres-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `traefik:langres-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `traefik:latest`
 
@@ -9006,6 +9039,18 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Mar 2026 22:04:52 GMT  
 		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `traefik:v3.7.0-ea.1`
+
+**does not exist** (yet?)
+
+## `traefik:v3.7.0-ea.1-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `traefik:v3.7.0-ea.1-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `traefik:windowsservercore-ltsc2022`
 
