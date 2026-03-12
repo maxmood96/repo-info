@@ -1,13 +1,13 @@
-# `perl:5.42.0`
+# `perl:5.42.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7df658e8309f5b7baefdf7ff50c3917a3723cb1807dc0a9d171af5cac88274e8`
-- Created: `2026-02-24T21:24:43.006727431Z`
+- Image ID: `sha256:f416979bd433d65a32e07e25cddd644053620061d03beb95339e42728447a864`
+- Created: `2026-03-09T18:08:46.651386375Z`
 - Virtual Size: ~ 1.08 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.42.0","-de0"]`
+- Command: `["perl5.42.1","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
@@ -2075,20 +2075,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u5
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u5.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u5.dsc 5136 SHA256:8cc5522d20d13c8aefd519b8154adabd57d45e77a6e4d41dad53e41dd6270282
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u5.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u5.debian.tar.xz 290680 SHA256:a73149ec1064a299323306cf9a86392b4789735c3e47012c50315f19320a36ef
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u5/
 
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u5/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 

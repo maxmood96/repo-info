@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2850947f851a5d67dae345b5ab2102b2ad3176fc824088d4fc8264e22d8a2e27`
-- Created: `2026-02-24T21:35:24.156975777Z`
-- Virtual Size: ~ 992.02 Mb  
+- Image ID: `sha256:da9da643a1621212467012666014a2f58e7620be9edc7b372511e3a88586deec`
+- Created: `2026-03-09T18:27:39.481488667Z`
+- Virtual Size: ~ 992.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl5.43.8","-de0"]`
@@ -2022,20 +2022,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.6+deb12u6
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u6.dsc' imagemagick_6.9.11.60+dfsg-1.6+deb12u6.dsc 5106 SHA256:799fed83cad9abf34645cc9390620c6fe4b01a00544e3f52416a0e2dbdef8b26
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u6.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.6+deb12u6.debian.tar.xz 279512 SHA256:7519571167b790528dcee982ba97f5e2ac0c685a7b63215e47c72fb673f87920
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u6/
 
-- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u6/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.6-1`
 
