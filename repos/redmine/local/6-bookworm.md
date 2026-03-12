@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:01b11cad1396019baf48f88d591339a3a85ca95ca1a90279c831d0452549a06c`
-- Created: `2026-02-24T20:22:33.440700321Z`
-- Virtual Size: ~ 649.43 Mb  
+- Image ID: `sha256:b45548ccc023b66d0483698cc209ef71c2fcc39d572a299689829425bae8b135`
+- Created: `2026-03-11T19:18:27.794745736Z`
+- Virtual Size: ~ 649.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.8`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.8.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=53a8ec71111449cbbd42224d8d27c493fa6ded228636731051c48604d4255d68`
+  - `RUBY_VERSION=3.4.9`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.9.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=4231c54072601a171faed1699f105985e9971c94cd382b78feb4eb44eec2dd1a`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -1777,15 +1777,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ijs/0.35-15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ijs/0.35-15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u6`
+### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u7`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u6`
-- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u6`
-- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u6`
-- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u6`
-- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u6`
+- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u7`
+- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u7`
+- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u7`
+- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u7`
+- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u7`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6.q16-6/copyright`, `/usr/share/doc/libmagickwand-6.q16-6/copyright`)
 
@@ -1819,17 +1819,17 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.6+deb12u6
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u6.dsc' imagemagick_6.9.11.60+dfsg-1.6+deb12u6.dsc 5106 SHA256:799fed83cad9abf34645cc9390620c6fe4b01a00544e3f52416a0e2dbdef8b26
+$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.6+deb12u7
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u7.dsc' imagemagick_6.9.11.60+dfsg-1.6+deb12u7.dsc 5105 SHA256:f8f56e4b746d30860ce1f0c3e7df2a16655a67ec78b409fce0c1ed0a6b3ef3d6
 'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u6.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.6+deb12u6.debian.tar.xz 279512 SHA256:7519571167b790528dcee982ba97f5e2ac0c685a7b63215e47c72fb673f87920
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u7.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.6+deb12u7.debian.tar.xz 296184 SHA256:e15571777dd71a89aef7dd5f595cf788c9a18320ba483fc93caa096834509cfa
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u6/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u7/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.65.2+deb12u1`
 
