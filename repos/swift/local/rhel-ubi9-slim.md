@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8b6e85e8336fc7841fdec7b23a2bbd247a756e45ce6253b039f4fae0c25c1f29`
-- Created: `2026-02-27T22:44:20.434311273Z`
-- Virtual Size: ~ 373.75 Mb  
+- Image ID: `sha256:d340b6b0b3c8ad9d4990a666a6f9fe653538387a1fd6519e870ac47fc06bf56e`
+- Created: `2026-03-11T18:40:49.73437014Z`
+- Virtual Size: ~ 373.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-02-17T16:47:43Z`
+  - `build-date=2026-03-11T04:52:42Z`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9/ubi`
-  - `org.opencontainers.image.created=2026-02-17T16:47:43Z`
-  - `org.opencontainers.image.revision=8726709260f051bcc33519b9b82af822eb97f840`
-  - `release=1771346757`
+  - `org.opencontainers.image.created=2026-03-11T04:52:42Z`
+  - `org.opencontainers.image.revision=153ac4cef6743cee84c3d5850db2b2b8ac851e06`
+  - `release=1773204657`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=8726709260f051bcc33519b9b82af822eb97f840`
+  - `vcs-ref=153ac4cef6743cee84c3d5850db2b2b8ac851e06`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -478,15 +478,15 @@ $ dnf --quiet download --source --url gnupg2-2.3.3-5.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnupg2-2.3.3-5.el9_7.src.rpm
 ```
 
-### `rpm` package: `gnutls-3.8.3-9.el9.x86_64`
+### `rpm` package: `gnutls-3.8.3-10.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gnutls-3.8.3-9.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.3-9.el9.src.rpm
+$ dnf --quiet download --source --url gnutls-3.8.3-10.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.3-10.el9_7.src.rpm
 ```
 
 ### `rpm` package: `gobject-introspection-1.68.0-11.el9.x86_64`
@@ -1458,15 +1458,15 @@ $ dnf --quiet download --source --url psmisc-23.4-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/psmisc-23.4-3.el9.src.rpm
 ```
 
-### `rpm` package: `python3-3.9.25-3.el9_7.x86_64`
+### `rpm` package: `python3-3.9.25-3.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-3.9.25-3.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.25-3.el9_7.src.rpm
+$ dnf --quiet download --source --url python3-3.9.25-3.el9_7.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.25-3.el9_7.1.src.rpm
 ```
 
 ### `rpm` package: `python3-chardet-4.0.0-5.el9.noarch`
@@ -1656,15 +1656,15 @@ $ dnf --quiet download --source --url python3-librepo-1.14.5-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/librepo-1.14.5-3.el9.src.rpm
 ```
 
-### `rpm` package: `python3-libs-3.9.25-3.el9_7.x86_64`
+### `rpm` package: `python3-libs-3.9.25-3.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-libs-3.9.25-3.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.25-3.el9_7.src.rpm
+$ dnf --quiet download --source --url python3-libs-3.9.25-3.el9_7.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.25-3.el9_7.1.src.rpm
 ```
 
 ### `rpm` package: `python3-pip-wheel-21.3.1-1.el9.noarch`
