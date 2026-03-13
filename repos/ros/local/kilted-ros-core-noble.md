@@ -2680,14 +2680,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-cryptography/copyright`)
 - `Apache-2.0`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-cryptography=41.0.7-4ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_41.0.7-4ubuntu0.1.dsc' python-cryptography_41.0.7-4ubuntu0.1.dsc 3412 SHA512:8fc7b6ef5dc010bae649968fef2031111225764ebcb9770127f2ef1a94d725fc50d5a1eb8e1515b4184a6e4d49f5a493d340b96e935cdd4f960082e90ee66b9d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_41.0.7.orig.tar.gz' python-cryptography_41.0.7.orig.tar.gz 630892 SHA512:c678da6dfc02d84ca9a26bc42844da8ba356f5dc839fefa0b63636c99107b18415b5970d721b72075fc0f8aefc3785dbf143327ceb7f4ebd075df41291b63219
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_41.0.7-4ubuntu0.1.debian.tar.xz' python-cryptography_41.0.7-4ubuntu0.1.debian.tar.xz 11512 SHA512:039007135ac2cf4c9f848160cf8bb1562d8a593d92ec37f3282f5800f2f51262c5b7c85ecfc692d921251a4866890a73b8e8b31e864420c5b4664872b909dec6
-```
 
 ### `dpkg` source package: `python-dateutil=2.8.2-3ubuntu1`
 
