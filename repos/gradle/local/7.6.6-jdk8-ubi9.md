@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b298d217708f63fb5c0796a4f04daef0371012957b0ba9f6446af279e8aa2465`
-- Created: `2026-02-18T20:12:01.018703579Z`
-- Virtual Size: ~ 593.18 Mb  
+- Image ID: `sha256:5b588db17b8e0e81d73a7b2517595fb1439da235638b2a45b64fd04c46c1d208`
+- Created: `2026-03-11T19:14:19.571033373Z`
+- Virtual Size: ~ 593.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=7.6.6`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-02-17T16:42:34Z`
+  - `build-date=2026-03-11T04:51:18Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-02-17T16:42:34Z`
-  - `org.opencontainers.image.revision=0ced2bbee24d5463d4530756a57f8db895246c48`
-  - `release=1771346502`
+  - `org.opencontainers.image.created=2026-03-11T04:51:18Z`
+  - `org.opencontainers.image.revision=ddf3e9d218968613397a7b4df7547f25ad755449`
+  - `release=1773204619`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=0ced2bbee24d5463d4530756a57f8db895246c48`
+  - `vcs-ref=ddf3e9d218968613397a7b4df7547f25ad755449`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -497,11 +497,16 @@ $ dnf --quiet download --source --url git-core-doc-2.47.3-1.el9_6.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-2.47.3-1.el9_6.src.rpm
 ```
 
-### `rpm` package: `git-lfs-3.6.1-4.el9_7.x86_64`
+### `rpm` package: `git-lfs-3.6.1-7.el9_7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url git-lfs-3.6.1-7.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-lfs-3.6.1-7.el9_7.src.rpm
+```
 
 ### `rpm` package: `glib2-2.68.4-18.el9_7.1.x86_64`
 
@@ -580,15 +585,15 @@ $ dnf --quiet download --source --url gnupg2-2.3.3-5.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnupg2-2.3.3-5.el9_7.src.rpm
 ```
 
-### `rpm` package: `gnutls-3.8.3-9.el9.x86_64`
+### `rpm` package: `gnutls-3.8.3-10.el9_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gnutls-3.8.3-9.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.3-9.el9.src.rpm
+$ dnf --quiet download --source --url gnutls-3.8.3-10.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.3-10.el9_7.src.rpm
 ```
 
 ### `rpm` package: `gobject-introspection-1.68.0-11.el9.x86_64`
@@ -1087,11 +1092,16 @@ $ dnf --quiet download --source --url libpeas-1.30.0-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libpeas-1.30.0-4.el9.src.rpm
 ```
 
-### `rpm` package: `libpng-1.6.37-12.el9_7.1.x86_64`
+### `rpm` package: `libpng-1.6.37-12.el9_7.2.x86_64`
 
 Licenses (from `rpm --query`): zlib
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libpng-1.6.37-12.el9_7.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libpng-1.6.37-12.el9_7.2.src.rpm
+```
 
 ### `rpm` package: `libpsl-0.21.1-5.el9.x86_64`
 
