@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:87c8082b9ea89ba10dd14ba8474d93326997330d66ae446e617a54beae7d7670`
-- Created: `2026-02-13T19:13:42.953638675Z`
-- Virtual Size: ~ 227.39 Mb  
+- Image ID: `sha256:4307ac4c8fe9593e60585ce7740f7a3acb2231e4c13b42c21cc41793c5c8f0ec`
+- Created: `2026-03-13T00:14:57.979333338Z`
+- Virtual Size: ~ 227.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.3`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc`
-  - `PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9`
+  - `PHP_VERSION=8.5.4`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.4.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.4.tar.xz.asc`
+  - `PHP_SHA256=c1569f1f543f6b025c583cdc0e730e5c5833c603618613f1aa8e75d1524b8c91`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
   - `COMPOSER_VERSION=2.9.5`
@@ -132,16 +132,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.4-r0 description:
+apk-tools-3.0.5-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.4-r0 webpage:
+apk-tools-3.0.5-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.4-r0 installed size:
+apk-tools-3.0.5-r0 installed size:
 112 KiB
 
-apk-tools-3.0.4-r0 license:
+apk-tools-3.0.5-r0 license:
 GPL-2.0-only
 
 ```
@@ -472,16 +472,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.4-r0 description:
+libapk-3.0.5-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.4-r0 webpage:
+libapk-3.0.5-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.4-r0 installed size:
+libapk-3.0.5-r0 installed size:
 270 KiB
 
-libapk-3.0.4-r0 license:
+libapk-3.0.5-r0 license:
 GPL-2.0-only
 
 ```
@@ -1441,16 +1441,16 @@ Info-ZIP
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.1-r2 description:
+zlib-1.3.2-r0 description:
 A compression/decompression Library
 
-zlib-1.3.1-r2 webpage:
+zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.1-r2 installed size:
-101 KiB
+zlib-1.3.2-r0 installed size:
+105 KiB
 
-zlib-1.3.1-r2 license:
+zlib-1.3.2-r0 license:
 Zlib
 
 ```
