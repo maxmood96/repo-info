@@ -1,10 +1,10 @@
-# `maven:3.9.13-ibmjava-8`
+# `maven:3.9.14-ibmjava-8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ec6ff7c6cb352cae29e68d12e9eb6edbdb84792d2990d3a1dbcf8da49b575621`
-- Created: `2026-03-09T19:13:41.183071748Z`
-- Virtual Size: ~ 354.25 Mb  
+- Image ID: `sha256:d8606e68d1bfded0625fe0f7be305c75603e5bcdfefc8c91a2175021176071b3`
+- Created: `2026-03-12T20:12:38.889904367Z`
+- Virtual Size: ~ 353.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -285,12 +285,12 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.debian.tar.xz' coreutils_8.32-4.1ubuntu1.2.debian.tar.xz 44868 SHA512:7718e917f8f2c5c5574e73a079ea8fd3b32bc898f2e12168dc3711dfdd896e4727283011050b80f65e60994fca49da031d70901d453612132764dca7dec99543
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.22`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.23`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.22`
-- `libcurl4:amd64=7.81.0-1ubuntu1.22`
+- `curl=7.81.0-1ubuntu1.23`
+- `libcurl4:amd64=7.81.0-1ubuntu1.23`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -304,11 +304,11 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.22
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.22.dsc' curl_7.81.0-1ubuntu1.22.dsc 3143 SHA512:7e63b90ddaa9951597a1047a3628c7fb5db3e012bb13e25ebb76c2211cac957103c7d5289c20efb7fcac138db632338570e70049dc4af7f2a15d4571fc36e483
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.23
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.23.dsc' curl_7.81.0-1ubuntu1.23.dsc 3143 SHA512:9038c454e1d7c358914c6031934b2088c08f5a86a3bc21516c5d88a1ed039258e8f5f3f9fc99b084937080f5d263a9508e184eacccc541bc2a647afbd5e69c58
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.22.debian.tar.xz' curl_7.81.0-1ubuntu1.22.debian.tar.xz 84604 SHA512:3beaa199b3f7d53ab9267682fd434107581c8a3c7ef1ed58d81b1a3d2ba0c68ec83d952f41e264afe830c12afcaf18c834c02c82eebc0c83086616ea4be18929
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.23.debian.tar.xz' curl_7.81.0-1ubuntu1.23.debian.tar.xz 86808 SHA512:d98d9f3ffc6a5742139745821711b915b7bb9f8ff8e0827c10cc9f96516e95f626275fe0aade377f07aa525e2e3d00881289aeda53144edc0f6b61a737ada2e2
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
@@ -1478,15 +1478,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.13
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.13.dsc' openssh_8.9p1-3ubuntu0.13.dsc 3380 SHA512:291cce2ece6b52fd39ef9e1fe98a421eb95d9b6edec9aaa00e7706206431554fe40a7624d6a9cc1656d0ce72234b9204d6b5611a8ea8cc6d242e630951bef1e8
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz.asc' openssh_8.9p1.orig.tar.gz.asc 833 SHA512:fd0bbd285ff2f8791f5a512f087f32bce026b716d5ac213cd4ef28f08722601fb943514bee71b2ac4b9f9363e2f120ce6c60fed952d1d8e53dbcf2a6fe2e706b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.13.debian.tar.xz' openssh_8.9p1-3ubuntu0.13.debian.tar.xz 201972 SHA512:c90e26e350b49ced428b27fc2b413b474f6f6ed0d303ac824e934d13b73d8573ddbb857abd649c6debd349ff36c16945874f4ffecf843b3d727174cb5ba6ab72
-```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.21`
 
@@ -1888,14 +1882,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.37.2-4ubuntu3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.4.dsc' util-linux_2.37.2-4ubuntu3.4.dsc 4550 SHA512:b0d37cbcd57000cf45ad6c6769e51bc0cc81a4ad9f3906e09b7f814a3638db0013c7213847c9c90f519f21896fdb5592a8ea839a1277d4e7629a01f84a535957
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2.orig.tar.xz' util-linux_2.37.2.orig.tar.xz 5621624 SHA512:38f0fe820445e3bfa79550e6581c230f98c7661566ccc4daa51c7208a5f972c61b4e57dfc86bed074fdbc7c40bc79f856be8f6a05a8860c1c0cecc4208e8b81d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.4.debian.tar.xz' util-linux_2.37.2-4ubuntu3.4.debian.tar.xz 114096 SHA512:8e1a3832d116062881d7823baafcf574cc252490e7e25144efa34cfd65a35b590b454298507940399568716c0ccb9533b01f2c9665f92aa2082d91e5ca8e9c9c
-```
 
 ### `dpkg` source package: `wget=1.21.2-2ubuntu1.1`
 
