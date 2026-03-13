@@ -1,20 +1,20 @@
-# `nginx:1.29.5-alpine-otel`
+# `nginx:1.29.6-alpine-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a6bd8380b7e76b18d2ded54bff47b1f3b85ef92b44571075462bb551efddc32`
-- Created: `2026-02-05T01:11:05.056376369Z`
-- Virtual Size: ~ 105.18 Mb  
+- Image ID: `sha256:d542d06ef2c9621f1492c75886daa98b12543a456a574dc08deba27c46e7fe8f`
+- Created: `2026-03-10T23:10:49.516164494Z`
+- Virtual Size: ~ 105.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.29.5`
+  - `NGINX_VERSION=1.29.6`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=0.9.5`
+  - `NJS_VERSION=0.9.6`
   - `NJS_RELEASE=1`
   - `ACME_VERSION=0.3.1`
   - `OTEL_VERSION=0.1.2`
@@ -1862,16 +1862,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.54-r0 description:
+libpng-1.6.55-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.54-r0 webpage:
+libpng-1.6.55-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.54-r0 installed size:
+libpng-1.6.55-r0 installed size:
 177 KiB
 
-libpng-1.6.54-r0 license:
+libpng-1.6.55-r0 license:
 Libpng
 
 ```
@@ -2406,16 +2406,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.29.5-r1 description:
+nginx-1.29.6-r1 description:
 High performance web server
 
-nginx-1.29.5-r1 webpage:
+nginx-1.29.6-r1 webpage:
 https://nginx.org/
 
-nginx-1.29.5-r1 installed size:
-2703 KiB
+nginx-1.29.6-r1 installed size:
+2728 KiB
 
-nginx-1.29.5-r1 license:
+nginx-1.29.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2423,16 +2423,16 @@ nginx-1.29.5-r1 license:
 ### `apk` package: `nginx-module-acme`
 
 ```console
-nginx-module-acme-1.29.5.0.3.1-r1 description:
+nginx-module-acme-1.29.6.0.3.1-r1 description:
 nginx nginx-acme
 
-nginx-module-acme-1.29.5.0.3.1-r1 webpage:
+nginx-module-acme-1.29.6.0.3.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-acme-1.29.5.0.3.1-r1 installed size:
+nginx-module-acme-1.29.6.0.3.1-r1 installed size:
 7959 KiB
 
-nginx-module-acme-1.29.5.0.3.1-r1 license:
+nginx-module-acme-1.29.6.0.3.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2440,16 +2440,16 @@ nginx-module-acme-1.29.5.0.3.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.29.5-r1 description:
+nginx-module-geoip-1.29.6-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.29.5-r1 webpage:
+nginx-module-geoip-1.29.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.29.5-r1 installed size:
+nginx-module-geoip-1.29.6-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.29.5-r1 license:
+nginx-module-geoip-1.29.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2457,16 +2457,16 @@ nginx-module-geoip-1.29.5-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.29.5-r1 description:
+nginx-module-image-filter-1.29.6-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.29.5-r1 webpage:
+nginx-module-image-filter-1.29.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.29.5-r1 installed size:
+nginx-module-image-filter-1.29.6-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.29.5-r1 license:
+nginx-module-image-filter-1.29.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2474,16 +2474,16 @@ nginx-module-image-filter-1.29.5-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.29.5.0.9.5-r1 description:
+nginx-module-njs-1.29.6.0.9.6-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.29.5.0.9.5-r1 webpage:
+nginx-module-njs-1.29.6.0.9.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.29.5.0.9.5-r1 installed size:
-9341 KiB
+nginx-module-njs-1.29.6.0.9.6-r1 installed size:
+9367 KiB
 
-nginx-module-njs-1.29.5.0.9.5-r1 license:
+nginx-module-njs-1.29.6.0.9.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2491,16 +2491,16 @@ nginx-module-njs-1.29.5.0.9.5-r1 license:
 ### `apk` package: `nginx-module-otel`
 
 ```console
-nginx-module-otel-1.29.5.0.1.2-r1 description:
+nginx-module-otel-1.29.6.0.1.2-r1 description:
 nginx OpenTelemetry dynamic module
 
-nginx-module-otel-1.29.5.0.1.2-r1 webpage:
+nginx-module-otel-1.29.6.0.1.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-otel-1.29.5.0.1.2-r1 installed size:
+nginx-module-otel-1.29.6.0.1.2-r1 installed size:
 724 KiB
 
-nginx-module-otel-1.29.5.0.1.2-r1 license:
+nginx-module-otel-1.29.6.0.1.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2508,16 +2508,16 @@ nginx-module-otel-1.29.5.0.1.2-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.29.5-r1 description:
+nginx-module-xslt-1.29.6-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.29.5-r1 webpage:
+nginx-module-xslt-1.29.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.29.5-r1 installed size:
+nginx-module-xslt-1.29.6-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.29.5-r1 license:
+nginx-module-xslt-1.29.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2644,16 +2644,16 @@ libtiff
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025c-r0 description:
+tzdata-2026a-r0 description:
 Timezone data
 
-tzdata-2025c-r0 webpage:
+tzdata-2026a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025c-r0 installed size:
+tzdata-2026a-r0 installed size:
 436 KiB
 
-tzdata-2025c-r0 license:
+tzdata-2026a-r0 license:
 Public-Domain
 
 ```

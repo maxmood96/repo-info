@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5bae2010137439bb1a244b32bf25b1219784bd26eed7cdc786690beb8aedb42d`
-- Created: `2026-02-05T01:11:26.218276197Z`
+- Image ID: `sha256:54244b5140f25b9278f8f961da8e7bac6cfc079036a357c808de48631c9c7e7c`
+- Created: `2026-03-10T21:38:23.042050347Z`
 - Virtual Size: ~ 102.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -603,16 +603,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.54-r0 description:
+libpng-1.6.55-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.54-r0 webpage:
+libpng-1.6.55-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.54-r0 installed size:
+libpng-1.6.55-r0 installed size:
 177 KiB
 
-libpng-1.6.54-r0 license:
+libpng-1.6.55-r0 license:
 Libpng
 
 ```
@@ -1215,16 +1215,16 @@ libtiff
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025c-r0 description:
+tzdata-2026a-r0 description:
 Timezone data
 
-tzdata-2025c-r0 webpage:
+tzdata-2026a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025c-r0 installed size:
+tzdata-2026a-r0 installed size:
 436 KiB
 
-tzdata-2025c-r0 license:
+tzdata-2026a-r0 license:
 Public-Domain
 
 ```
