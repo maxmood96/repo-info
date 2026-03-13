@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6f2086f039c4bb909033050f4bf08ae4fb16b04e201d0a01970b3cd1e82b33d5`
-- Created: `2026-02-20T19:13:29.028584934Z`
-- Virtual Size: ~ 238.31 Mb  
+- Image ID: `sha256:ef7c654d7ee063cc8c054b6550153df356a4cba1b7010cb6f8f1d979b5388320`
+- Created: `2026-03-12T23:41:09.136350831Z`
+- Virtual Size: ~ 238.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1669,14 +1669,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.39.3-9ubuntu6.4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.4.dsc' util-linux_2.39.3-9ubuntu6.4.dsc 4755 SHA512:600d87df4b7d5484d1313e12d57f5691266becd893b4818ef7da4471939138d67d0e8aad624c61ba36afa351b764dfadfdff60eb26d8005721e530b9ad342f2d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA512:a2de1672f06ca5d2d431db1265a8499808770c3781019ec4a3a40170df4685826d8e3ca120841dcc5df4681ca8c935a993317bd0dc70465b21bf8e0efef65afa
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.4.debian.tar.xz' util-linux_2.39.3-9ubuntu6.4.debian.tar.xz 146780 SHA512:3a86146601d3d0a1b39fc6bc899d570cc11f65e214ab3e33f1286c7a8ffdaaef9537ea946f6618571eb32f7bc207087ac55f82bfc5fbdec3e63d7d3c21023ead
-```
 
 ### `dpkg` source package: `xxhash=0.8.2-2build1`
 
