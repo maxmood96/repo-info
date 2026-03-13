@@ -1,9 +1,9 @@
-# `ruby:3.4.8-trixie`
+# `ruby:3.4.9-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8b77caf522fce5f29c5b4503c40b95aaf6bf974cc381378fc8a767055d436c21`
-- Created: `2026-02-24T21:56:24.432463392Z`
+- Image ID: `sha256:e5c1ce3b604cccdc1dcacd5c46c831f1b17f1c6521dd02d93eeedaaf74267c6b`
+- Created: `2026-03-11T18:39:27.813657637Z`
 - Virtual Size: ~ 1.10 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,9 +11,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.8`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.8.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=53a8ec71111449cbbd42224d8d27c493fa6ded228636731051c48604d4255d68`
+  - `RUBY_VERSION=3.4.9`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.9.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=4231c54072601a171faed1699f105985e9971c94cd382b78feb4eb44eec2dd1a`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
