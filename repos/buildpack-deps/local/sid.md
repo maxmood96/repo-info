@@ -3313,21 +3313,13 @@ Licenses: (parsed from: `/usr/share/doc/libunistring5/copyright`)
 - `public-domain`
 - `unicode-dfs-2016`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libunistring=1.3-2
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.3-2.dsc' libunistring_1.3-2.dsc 2215 SHA256:0c09938cace7fbbf36c73af8bc2243fd2f70d3fe336539e8d4c10d0e61742571
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.3.orig.tar.xz' libunistring_1.3.orig.tar.xz 2753448 SHA256:f245786c831d25150f3dfb4317cda1acc5e3f79a5da4ad073ddca58886569527
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.3.orig.tar.xz.asc' libunistring_1.3.orig.tar.xz.asc 833 SHA256:62201b5b7ce9c0b033c50cefa5d7769dff4b7cee8205572e0cf917653cae9e33
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.3-2.debian.tar.xz' libunistring_1.3-2.debian.tar.xz 28480 SHA256:feaf9761d365430178ea46feefeb602b435c21acf5924918e2257238e0378fc9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libunistring/1.3-2/
 
-- https://sources.debian.net/src/libunistring/1.3-2/ (for browsing the source)
-- https://sources.debian.net/src/libunistring/1.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libunistring/1.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwebp=1.5.0-0.1`
 
@@ -4228,20 +4220,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-3-1-30/copyright`, `/usr/shar
 - `BSD-3-clause`
 - `openexr`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openexr=3.1.13-2
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_3.1.13-2.dsc' openexr_3.1.13-2.dsc 2144 SHA256:a44f8572a8018ce8b51a35fd2e8a90492b2358b434b8e2beba66f4dd6dd944f8
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_3.1.13.orig.tar.gz' openexr_3.1.13.orig.tar.gz 20542408 SHA256:26d265d8cf8df4dad115b066ba209118ca8832cda076ec704ce1a57f827c75c6
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_3.1.13-2.debian.tar.xz' openexr_3.1.13-2.debian.tar.xz 19268 SHA256:5e0e5768b1577dd604bb410666d3420566ac1f8858e69a234633259c3efb52a3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openexr/3.1.13-2/
 
-- https://sources.debian.net/src/openexr/3.1.13-2/ (for browsing the source)
-- https://sources.debian.net/src/openexr/3.1.13-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openexr/3.1.13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjpeg2=2.5.4-1`
 
@@ -4778,20 +4763,13 @@ Licenses: (parsed from: `/usr/share/doc/python3-packaging/copyright`)
 - `BSD-3-clause`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-packaging=25.0-2
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_25.0-2.dsc' python-packaging_25.0-2.dsc 2526 SHA256:5b7cb05c8ab31166f8b7a315d954c21ca0c414e475864e69b81ee18a040a7cab
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_25.0.orig.tar.gz' python-packaging_25.0.orig.tar.gz 165727 SHA256:d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_25.0-2.debian.tar.xz' python-packaging_25.0-2.debian.tar.xz 4232 SHA256:1bc8a69a700dfa8e6172d64c6f839a4d8e05cd4caca6f69f66cebc9e75532971
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python-packaging/25.0-2/
 
-- https://sources.debian.net/src/python-packaging/25.0-2/ (for browsing the source)
-- https://sources.debian.net/src/python-packaging/25.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-packaging/25.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.13.9-3`
 
@@ -5376,19 +5354,13 @@ Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ucf=3.0052
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0052.dsc' ucf_3.0052.dsc 1512 SHA256:9117f54533d23ad74371e91c3038e13b1aa0fabd51a382f47a5af81e9b5ee591
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0052.tar.xz' ucf_3.0052.tar.xz 71488 SHA256:94130b4840618a65543ca4c12f4de062081008f42f36d0abfbd75098ebe9a7eb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ucf/3.0052/
 
-- https://sources.debian.net/src/ucf/3.0052/ (for browsing the source)
-- https://sources.debian.net/src/ucf/3.0052/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ucf/3.0052/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unbound=1.24.2-1`
 

@@ -2044,13 +2044,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.13.9-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.13.9-3.dsc' python3-defaults_3.13.9-3.dsc 2479 SHA512:d6a7959844c4a787e3c6641fdc33fcbf9ab6b63631a8535b008b99ee5aa9914a4c7d366345667372246673010cc6d00091171694ebdb1d7491efa387c3260d92
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.13.9-3.tar.gz' python3-defaults_3.13.9-3.tar.gz 146945 SHA512:587863d8775c25a9dab05461517e48ef65e921836fb3429c2c30c8e89de2e98f1770f6a58fc61f37fec69e943033cc1bfc112ce68aa8fc2a4ca7716c93c46242
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3-defaults/3.13.9-3/
+
 
 ### `dpkg` source package: `python3.13=3.13.12-1`
 

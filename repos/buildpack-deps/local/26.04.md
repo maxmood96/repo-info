@@ -1668,15 +1668,9 @@ Licenses: (parsed from: `/usr/share/doc/libimath-3-1-29t64/copyright`, `/usr/sha
 
 - `imath`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imath=3.1.12-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imath/imath_3.1.12-1ubuntu3.dsc' imath_3.1.12-1ubuntu3.dsc 2728 SHA512:d63dc15bf0401348cf5b8f3b931d2ef070651076bc092343d9599754c8f5392b7e4ea801db890b7e6176a11de3537dcf825cc10db230feeed34473dce95b1f8a
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imath/imath_3.1.12.orig.tar.gz' imath_3.1.12.orig.tar.gz 604232 SHA512:32628dfcacb610310b81ffe017a66215cf5fb84c2e0a6ac8c94a68c048be3d2b97eb57965dd253770184d5824cce1e5440b8eefb2834666b273b3193ff108343
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imath/imath_3.1.12.orig.tar.gz.asc' imath_3.1.12.orig.tar.gz.asc 287 SHA512:9b3978e44b531429aba42b9cc4969a470898d9d74652e3809edb0273ba9b127c471aec6570b5d352be738f59810091c0df2c70d39c16d2c32833d173b270f72c
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imath/imath_3.1.12-1ubuntu3.debian.tar.xz' imath_3.1.12-1ubuntu3.debian.tar.xz 10224 SHA512:a17231679aec8877a0c301068ea46b6c314d61a25c562ef4956f9957a209c72a58cb511733faa6faa204a9f91ff063a5c504df40f820244666fc22ada5e12c3f
-```
 
 ### `dpkg` source package: `init-system-helpers=1.69`
 
@@ -3921,13 +3915,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.13.9-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.13.9-3.dsc' python3-defaults_3.13.9-3.dsc 2479 SHA512:d6a7959844c4a787e3c6641fdc33fcbf9ab6b63631a8535b008b99ee5aa9914a4c7d366345667372246673010cc6d00091171694ebdb1d7491efa387c3260d92
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.13.9-3.tar.gz' python3-defaults_3.13.9-3.tar.gz 146945 SHA512:587863d8775c25a9dab05461517e48ef65e921836fb3429c2c30c8e89de2e98f1770f6a58fc61f37fec69e943033cc1bfc112ce68aa8fc2a4ca7716c93c46242
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3-defaults/3.13.9-3/
+
 
 ### `dpkg` source package: `python3.13=3.13.12-1`
 
@@ -4414,14 +4408,9 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.24.2-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.24.2-1ubuntu1.dsc' unbound_1.24.2-1ubuntu1.dsc 3037 SHA512:a7ca49f341cb7f987ef3067b9c62075668a759f5454075e2628818e137aa32e5ed9886e911e59d5b5d048079cb1edda52ae695ac4f56794907f457713641ea31
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.24.2.orig.tar.gz' unbound_1.24.2.orig.tar.gz 6905018 SHA512:655d63ec5305323e84d82691425d74d98c332d0028517bd729d191e5f968ce9481b49ec7447d4c4906dce7997a998a115db36e911a59d2d877da5840c2080261
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.24.2-1ubuntu1.debian.tar.xz' unbound_1.24.2-1ubuntu1.debian.tar.xz 37036 SHA512:598c8da14428479dea634d793890223091f940b2b0ba343b0d70376da67e6a2619a4f2b42ba0c145798d75084f09dc189150981ade2a3a906a6e6f1fc95985f9
-```
 
 ### `dpkg` source package: `unzip=6.0-29ubuntu1`
 
