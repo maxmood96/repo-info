@@ -170,19 +170,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8+deb13u3
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u3.dsc' base-files_13.8+deb13u3.dsc 1247 SHA256:6a1014d933408bc9af0de9c40348b420a1dd4ad72426f725a4556b3c0eaae826
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u3.tar.xz' base-files_13.8+deb13u3.tar.xz 68680 SHA256:4b374947c6d0c71c605a8c9661f54b572f412d75c134af78b3dcc698542a9d64
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8+deb13u3/
 
-- https://sources.debian.net/src/base-files/13.8+deb13u3/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8+deb13u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8+deb13u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -549,19 +543,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.21
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.21.dsc' dpkg_1.22.21.dsc 3449 SHA256:912c9d515a372064b019ae59ec343359f473fef982d1a084b4937c83de5dc222
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.21.tar.xz' dpkg_1.22.21.tar.xz 5743920 SHA256:57e6cc8408d8ebe08ef22f72149c2bf6b0f2ad62eea13db88e0b23bfd73303db
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.22.21/
 
-- https://sources.debian.net/src/dpkg/1.22.21/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.22.21/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.22.21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -715,20 +703,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.41-12+deb13u1
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u1.dsc' glibc_2.41-12+deb13u1.dsc 7576 SHA256:a5f8dff3c6b7330f3faecab25bba83579068adc3de4910195e6b25619aae52da
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 20323540 SHA256:f24aa441021121a79266f0d75242706cab8843a47901fefe74527491807f1998
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u1.debian.tar.xz' glibc_2.41-12+deb13u1.debian.tar.xz 459896 SHA256:6891522908b43466b8908332ab2a362041e82c68b583b0b34a50227cba97f4e7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.41-12+deb13u1/
 
-- https://sources.debian.net/src/glibc/2.41-12+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.41-12+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.41-12+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3`
 
@@ -1629,10 +1610,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.46.1-7
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-7.dsc' sqlite3_3.46.1-7.dsc 2632 SHA256:a832512ba6bfe3ae15e7174e8e8c975b04ea00ff75cb445b32c0087258ac2aa4
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-7%2bdeb13u1.dsc' sqlite3_3.46.1-7+deb13u1.dsc 2673 SHA256:d96b624e3d5319aec6030e31c1047372f06dd23b7c76e18e312b1a0b355b2b52
 'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA256:648df41a8e532882b1905df45919aae4bafaf74c455f66bc86f1f52f45c8b8f0
 'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA256:d0cdd2ece271b29e7ce18095745d892517ee26d0f270065b3a25c2e9eb11639c
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-7.debian.tar.xz' sqlite3_3.46.1-7.debian.tar.xz 35444 SHA256:dabc7eefd60b137bc2e838555450fc2d1e0eb2ebd7ec3a711d313fa78288acce
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-7%2bdeb13u1.debian.tar.xz' sqlite3_3.46.1-7+deb13u1.debian.tar.xz 35840 SHA256:2f2135b8b9ca37d607422f0f590ab45dc64c17fed71bb019fd1f69894637ce21
 ```
 
 Other potentially useful URLs:
@@ -1748,21 +1729,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-4+deb13u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-4%2bdeb13u1.dsc' tzdata_2025b-4+deb13u1.dsc 2466 SHA256:01dcaa5d8e5325c314e281c79cb3adff261eba8b45aea04b52349371023be954
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-4%2bdeb13u1.debian.tar.xz' tzdata_2025b-4+deb13u1.debian.tar.xz 127508 SHA256:cf2c8e632b4391f274e094b9417b07fa2aad5270a3126b024ff88de537d15849
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2025b-4+deb13u1/
 
-- https://sources.debian.net/src/tzdata/2025b-4+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2025b-4+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2025b-4+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.41-5`
 
