@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:adaede03665bfc584c4653b3617f9177595168d17d0ce73506a1a97ea3e356de`
-- Created: `2026-03-06T18:33:10.462129128Z`
-- Virtual Size: ~ 208.59 Mb  
+- Image ID: `sha256:062b7fbf169c520f4240fadb2bed3bb2e66a69ee7a79a52960d780a34cff7f99`
+- Created: `2026-03-13T01:12:56.365303046Z`
+- Virtual Size: ~ 208.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.3`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc`
-  - `PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9`
+  - `PHP_VERSION=8.5.4`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.4.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.4.tar.xz.asc`
+  - `PHP_SHA256=c1569f1f543f6b025c583cdc0e730e5c5833c603618613f1aa8e75d1524b8c91`
   - `DRUPAL_VERSION=11.3.5`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
@@ -454,16 +454,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.8-r0 description:
+libpq-17.9-r0 description:
 PostgreSQL client library
 
-libpq-17.8-r0 webpage:
+libpq-17.9-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.8-r0 installed size:
+libpq-17.9-r0 installed size:
 322 KiB
 
-libpq-17.8-r0 license:
+libpq-17.9-r0 license:
 PostgreSQL
 
 ```
