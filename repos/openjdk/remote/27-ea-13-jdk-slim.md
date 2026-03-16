@@ -1,4 +1,4 @@
-## `openjdk:27-ea-jdk-slim`
+## `openjdk:27-ea-13-jdk-slim`
 
 ```console
 $ docker pull openjdk@sha256:7929ab3b113180b90fc114e9c32e9b72b172a37410a5244308d9f311d8e2c392
@@ -11,7 +11,7 @@ $ docker pull openjdk@sha256:7929ab3b113180b90fc114e9c32e9b72b172a37410a5244308d
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `openjdk:27-ea-jdk-slim` - linux; amd64
+### `openjdk:27-ea-13-jdk-slim` - linux; amd64
 
 ```console
 $ docker pull openjdk@sha256:17cd55199209c64f36214be99363c301b814371cd7f2d5b22fdf2160124673fd
@@ -56,7 +56,7 @@ CMD ["jshell"]
 		Size: 228.6 MB (228606745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `openjdk:27-ea-jdk-slim` - unknown; unknown
+### `openjdk:27-ea-13-jdk-slim` - unknown; unknown
 
 ```console
 $ docker pull openjdk@sha256:9578f801460c6d4fabcc261512736a53e914f0212a247294154ab0fc9b100610
@@ -80,7 +80,7 @@ $ docker pull openjdk@sha256:9578f801460c6d4fabcc261512736a53e914f0212a247294154
 		Size: 18.1 KB (18109 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `openjdk:27-ea-jdk-slim` - linux; arm64 variant v8
+### `openjdk:27-ea-13-jdk-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull openjdk@sha256:39c3c09dc2a008b894184ad9b2bf57be6ac9d5678a5503693777c9bb9af7f941
@@ -125,7 +125,7 @@ CMD ["jshell"]
 		Size: 226.6 MB (226572355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `openjdk:27-ea-jdk-slim` - unknown; unknown
+### `openjdk:27-ea-13-jdk-slim` - unknown; unknown
 
 ```console
 $ docker pull openjdk@sha256:72dc70a82d9dfa16c42d935543a4b192c23fe3c34cbd0809c8c5e3be5588acc2

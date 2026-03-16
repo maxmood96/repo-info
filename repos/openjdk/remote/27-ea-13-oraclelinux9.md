@@ -1,4 +1,4 @@
-## `openjdk:27-ea-jdk-oraclelinux9`
+## `openjdk:27-ea-13-oraclelinux9`
 
 ```console
 $ docker pull openjdk@sha256:8745cbef9f4c370b6610226ab7cdd9094189d664ae7cf269617c593b45f7f2a6
@@ -11,7 +11,7 @@ $ docker pull openjdk@sha256:8745cbef9f4c370b6610226ab7cdd9094189d664ae7cf269617
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `openjdk:27-ea-jdk-oraclelinux9` - linux; amd64
+### `openjdk:27-ea-13-oraclelinux9` - linux; amd64
 
 ```console
 $ docker pull openjdk@sha256:0a4b173f7b65421734cf0973f8e312082142b45458f99a1b4dbd5a597eedef7f
@@ -58,7 +58,7 @@ CMD ["jshell"]
 		Size: 228.4 MB (228435510 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `openjdk:27-ea-jdk-oraclelinux9` - unknown; unknown
+### `openjdk:27-ea-13-oraclelinux9` - unknown; unknown
 
 ```console
 $ docker pull openjdk@sha256:7334640cf4a46bae2d93e0e5f846bbb59694333cdbd7b67ffe7a746f171dfb6c
@@ -82,7 +82,7 @@ $ docker pull openjdk@sha256:7334640cf4a46bae2d93e0e5f846bbb59694333cdbd7b67ffe7
 		Size: 17.8 KB (17838 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `openjdk:27-ea-jdk-oraclelinux9` - linux; arm64 variant v8
+### `openjdk:27-ea-13-oraclelinux9` - linux; arm64 variant v8
 
 ```console
 $ docker pull openjdk@sha256:af1489f3ee73cb15806d002235df45364ecc6902110c85cdf77c4d266d0c8053
@@ -129,7 +129,7 @@ CMD ["jshell"]
 		Size: 226.4 MB (226408087 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `openjdk:27-ea-jdk-oraclelinux9` - unknown; unknown
+### `openjdk:27-ea-13-oraclelinux9` - unknown; unknown
 
 ```console
 $ docker pull openjdk@sha256:07cf699e34644ea1bab35987abd0b1be9e9bff3a04bd006ace7f821235a97567
