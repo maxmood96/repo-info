@@ -1,7 +1,7 @@
 ## `pypy:2-7-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:927e902ecc1577ad035b5c85398ffa3936648529a6f5645bf2269cebf55d05ae
+$ docker pull pypy@sha256:c442c01a6e27f488fd235f258d4f62e76f6f2ff2bf61137a657f411eb783a3a4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,29 +16,29 @@ $ docker pull pypy@sha256:927e902ecc1577ad035b5c85398ffa3936648529a6f5645bf2269c
 ### `pypy:2-7-slim-bookworm` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:628f9824cf5f31ce306a58be86089fe38c2031831e258d25803984798a9e4edb
+$ docker pull pypy@sha256:2f55d32c27c4ef161d7c66b411f7bbefa245d52cfe06713c531c559f1a0c210c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **66.1 MB (66146639 bytes)**  
+-	Total Size: **64.8 MB (64770021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c70ac680fda238c7ff0462fffb2961b1292d0a7e2818b31995ba1c4bdd2e48ba`
+-	Image ID: `sha256:17c1fe8e2e87947c669a173b0a6aa515a6596c9f8083eacfbd42a24e4b87da62`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
 # Mon, 23 Feb 2026 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1771804800'
-# Tue, 24 Feb 2026 19:38:40 GMT
+# Mon, 16 Mar 2026 19:00:42 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 24 Feb 2026 19:38:51 GMT
+# Mon, 16 Mar 2026 19:00:55 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 Feb 2026 19:38:51 GMT
+# Mon, 16 Mar 2026 19:00:55 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 24 Feb 2026 19:38:51 GMT
-ENV PYPY_VERSION=7.3.20
-# Tue, 24 Feb 2026 19:38:51 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Tue, 24 Feb 2026 19:38:51 GMT
+# Mon, 16 Mar 2026 19:00:55 GMT
+ENV PYPY_VERSION=7.3.21
+# Mon, 16 Mar 2026 19:00:55 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.21-linux64.tar.bz2'; 			sha256='d560f4043180b0df5826396af17d060bd731e4fee34755167040924ece876f3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.21-aarch64.tar.bz2'; 			sha256='8aaed1e612e6874235ee9d5bd545a8dcc7b86c867d305351df37969390b0c47b'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.21-linux32.tar.bz2'; 			sha256='14cb624e60b3012b4e5605571ab1477cea732a04e1c1385cc492d99f427a477f'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		rm -v /opt/pypy/lib/libtk*.so /opt/pypy/lib/libz.so*; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
+# Mon, 16 Mar 2026 19:00:55 GMT
 CMD ["pypy"]
 ```
 
@@ -47,65 +47,65 @@ CMD ["pypy"]
 		Last Modified: Tue, 24 Feb 2026 18:43:00 GMT  
 		Size: 28.2 MB (28236279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb5b02da5cb0f6d666f3a7d8607c906ee37b2d2c91310ee135770b5e170bccf`  
-		Last Modified: Tue, 24 Feb 2026 19:39:02 GMT  
-		Size: 3.5 MB (3510208 bytes)  
+	-	`sha256:69b6c536a50f2aa4782ae3b5d7f607fc5ed1710298286ce467918e34897e38c6`  
+		Last Modified: Mon, 16 Mar 2026 19:01:10 GMT  
+		Size: 3.5 MB (3510213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bab435becb6672271d0d43a025eb131cc1ec14ec8f336b6078f85a092b0ffbad`  
-		Last Modified: Tue, 24 Feb 2026 19:39:03 GMT  
-		Size: 34.4 MB (34400152 bytes)  
+	-	`sha256:789d1925e02f204101c1d1920f0fcecc7a171d5b206e63e897aaad78d53f455c`  
+		Last Modified: Mon, 16 Mar 2026 19:01:07 GMT  
+		Size: 33.0 MB (33023529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2-7-slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:bda6b3a36f16a229ede1f31c700f49a260a19505c8e9d62f5cc1db319702971e
+$ docker pull pypy@sha256:bd92f9285f616ac4b31aa02caa7eeff23d71e9963f44aed5c2183417d3208774
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2537030 bytes)**  
+-	Total Size: **2.5 MB (2514682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f793f3c2b7b76ec859820d183fef67d2121c5d75ab9c70c548589e25661547c7`
+-	Image ID: `sha256:678ede168e7a01993705aaad94f64980927d0461a886bd07e1b054371800d7c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1c36971569055aa7186db5a6f49206c40caddde42fdbcc5cd0be8838839b53ec`  
-		Last Modified: Tue, 24 Feb 2026 19:39:02 GMT  
-		Size: 2.5 MB (2518197 bytes)  
+	-	`sha256:06850fd3f6428b577d1997982957ade76f2afe4d9ff7e591f7e946ca05ad15db`  
+		Last Modified: Mon, 16 Mar 2026 19:01:06 GMT  
+		Size: 2.5 MB (2495515 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:04421cf4d7ed31f83884e9920321e6b8aea142000bd6910b3e9286539aa06978`  
-		Last Modified: Tue, 24 Feb 2026 19:39:01 GMT  
-		Size: 18.8 KB (18833 bytes)  
+	-	`sha256:a00da5cbfcb2d21ba5319790df948cf585eb2c87cba4d70719f07e9d7deeba4a`  
+		Last Modified: Mon, 16 Mar 2026 19:01:05 GMT  
+		Size: 19.2 KB (19167 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2-7-slim-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull pypy@sha256:d516af15d766a1f576f99fd95f196aca7e2c63b4ec4f3542d77dd29988c66411
+$ docker pull pypy@sha256:784bb12772d2ec0a641a5d291ef912b8272aa7067e08777d9749dd2b3cf2ed78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.8 MB (63768580 bytes)**  
+-	Total Size: **62.4 MB (62390310 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fd5228d8e159060d5a8d175a738cee0c571824b3b7f70687d7bd18923935be6`
+-	Image ID: `sha256:3f45520c920bb36f18fd666bf31658f9706d8317abceeab290dfcf9c60de8597`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
 # Mon, 23 Feb 2026 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1771804800'
-# Tue, 24 Feb 2026 19:43:43 GMT
+# Mon, 16 Mar 2026 19:00:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 24 Feb 2026 19:43:57 GMT
+# Mon, 16 Mar 2026 19:00:50 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 Feb 2026 19:43:57 GMT
+# Mon, 16 Mar 2026 19:00:50 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 24 Feb 2026 19:43:57 GMT
-ENV PYPY_VERSION=7.3.20
-# Tue, 24 Feb 2026 19:43:57 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Tue, 24 Feb 2026 19:43:57 GMT
+# Mon, 16 Mar 2026 19:00:50 GMT
+ENV PYPY_VERSION=7.3.21
+# Mon, 16 Mar 2026 19:00:50 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.21-linux64.tar.bz2'; 			sha256='d560f4043180b0df5826396af17d060bd731e4fee34755167040924ece876f3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.21-aarch64.tar.bz2'; 			sha256='8aaed1e612e6874235ee9d5bd545a8dcc7b86c867d305351df37969390b0c47b'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.21-linux32.tar.bz2'; 			sha256='14cb624e60b3012b4e5605571ab1477cea732a04e1c1385cc492d99f427a477f'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		rm -v /opt/pypy/lib/libtk*.so /opt/pypy/lib/libz.so*; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
+# Mon, 16 Mar 2026 19:00:50 GMT
 CMD ["pypy"]
 ```
 
@@ -114,65 +114,65 @@ CMD ["pypy"]
 		Last Modified: Tue, 24 Feb 2026 18:42:16 GMT  
 		Size: 28.1 MB (28116081 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e88274e796fcb67d47febbd7453ff137a3128f5330ed487e55cafe9fd7a6ba0`  
-		Last Modified: Tue, 24 Feb 2026 19:44:07 GMT  
-		Size: 3.3 MB (3341515 bytes)  
+	-	`sha256:30dca3132548e77ee504dce3b8bfd7914e0a914b2f6c90c185c169cec712c534`  
+		Last Modified: Mon, 16 Mar 2026 19:01:00 GMT  
+		Size: 3.3 MB (3341538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d7e53ef8cd44743fe9f8c2ade9a1761a50b3863b65661e0a00b20294807cae2`  
-		Last Modified: Tue, 24 Feb 2026 19:44:08 GMT  
-		Size: 32.3 MB (32310984 bytes)  
+	-	`sha256:1f0c23a9346fa950e4fb0b8c9ecd78584401274f1f5ace480d418d3f25b5bab9`  
+		Last Modified: Mon, 16 Mar 2026 19:01:01 GMT  
+		Size: 30.9 MB (30932691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2-7-slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:3e88a2da0a08742ac30b7a67c868571ac1cd66e611621f659cf5a1849a33317c
+$ docker pull pypy@sha256:69bb37524f76250d4b1a72070a6915d7428c56086a17fe1f1fe0b034884b1858
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2537507 bytes)**  
+-	Total Size: **2.5 MB (2515154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f4805234b5d005a295a50f71d3224aeb7501d7dada23bebd8df9989efd61038`
+-	Image ID: `sha256:82c8890354171c3a380bea5f47576dfa419a6c85983def5bfd3797b6fcc00d79`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f8d12623bac3d73d0a81ff090bcae2d2d70e028ceaad4038b00b3e2bda9bd7f6`  
-		Last Modified: Tue, 24 Feb 2026 19:44:07 GMT  
-		Size: 2.5 MB (2518507 bytes)  
+	-	`sha256:9b060569d4701e1a21c4a55b999723554f055ca345a50d4b08d6f74e0f69c3a2`  
+		Last Modified: Mon, 16 Mar 2026 19:01:00 GMT  
+		Size: 2.5 MB (2495820 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:63767bb50ffb165a948173ebdd59ca43015c5b73da013a6c7374561599170928`  
-		Last Modified: Tue, 24 Feb 2026 19:44:07 GMT  
-		Size: 19.0 KB (19000 bytes)  
+	-	`sha256:878e550f1f7ab7008e5fadc1d8a101bb0128972f753aef4b700b3ed6cc2e0482`  
+		Last Modified: Mon, 16 Mar 2026 19:01:00 GMT  
+		Size: 19.3 KB (19334 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:2-7-slim-bookworm` - linux; 386
 
 ```console
-$ docker pull pypy@sha256:844cd3f4c686d093dc7f49a1c353e998f0d8f215aec301b80d79a18d3f09e35b
+$ docker pull pypy@sha256:73f2ef0d46bc6835e9b01c7591c3035ca6e156b6f682d51924184a7512bfbaf5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.7 MB (62697509 bytes)**  
+-	Total Size: **61.3 MB (61317792 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d32a457900897e82e70bd831cf64c38d5caff14d27972603f89d28e5d0a5476`
+-	Image ID: `sha256:5125c9666cc8c30cc0f09f30e5ea5ed1b2974072c42e6a464626d55c18bb58f5`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
 # Mon, 23 Feb 2026 00:00:00 GMT
 RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1771804800'
-# Tue, 24 Feb 2026 19:34:51 GMT
+# Mon, 16 Mar 2026 19:00:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 24 Feb 2026 19:35:05 GMT
+# Mon, 16 Mar 2026 19:00:58 GMT
 ENV LANG=C.UTF-8
-# Tue, 24 Feb 2026 19:35:05 GMT
+# Mon, 16 Mar 2026 19:00:58 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 24 Feb 2026 19:35:05 GMT
-ENV PYPY_VERSION=7.3.20
-# Tue, 24 Feb 2026 19:35:05 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Tue, 24 Feb 2026 19:35:05 GMT
+# Mon, 16 Mar 2026 19:00:58 GMT
+ENV PYPY_VERSION=7.3.21
+# Mon, 16 Mar 2026 19:00:58 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.21-linux64.tar.bz2'; 			sha256='d560f4043180b0df5826396af17d060bd731e4fee34755167040924ece876f3e'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.21-aarch64.tar.bz2'; 			sha256='8aaed1e612e6874235ee9d5bd545a8dcc7b86c867d305351df37969390b0c47b'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.21-linux32.tar.bz2'; 			sha256='14cb624e60b3012b4e5605571ab1477cea732a04e1c1385cc492d99f427a477f'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libfreetype6 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		rm -v /opt/pypy/lib/libtk*.so /opt/pypy/lib/libz.so*; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
+# Mon, 16 Mar 2026 19:00:58 GMT
 CMD ["pypy"]
 ```
 
@@ -181,35 +181,35 @@ CMD ["pypy"]
 		Last Modified: Tue, 24 Feb 2026 18:42:08 GMT  
 		Size: 29.2 MB (29221705 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5af18b81eeb1e5efc4e0dfe1cf16bc9f5f753b995b3bf624ffa6a4a87a1b3d12`  
-		Last Modified: Tue, 24 Feb 2026 19:35:15 GMT  
-		Size: 3.5 MB (3512930 bytes)  
+	-	`sha256:1ef48a803e19cfaa58f9b28a4575a801504e4e3a3dd0dc9f6496ae38a17ad068`  
+		Last Modified: Mon, 16 Mar 2026 19:01:13 GMT  
+		Size: 3.5 MB (3512900 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f64cdb4d8185a89b1f350cb4e1cc4a4b149cb8568159377cc0ca851006cb7976`  
-		Last Modified: Tue, 24 Feb 2026 19:35:16 GMT  
-		Size: 30.0 MB (29962874 bytes)  
+	-	`sha256:01662ce3ff6258f8bef40391e78b7566c82ab1c6e6244de69da2464216cc3207`  
+		Last Modified: Mon, 16 Mar 2026 19:01:09 GMT  
+		Size: 28.6 MB (28583187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2-7-slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:26361550512df58b3e0a29350360462b66c8411df2a9fe850893255f2da42f8f
+$ docker pull pypy@sha256:d3a1646fc86bc67b9050983d7af48e75317c73a2f5e9b63ef8b0d4bc5a4d566d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2534129 bytes)**  
+-	Total Size: **2.5 MB (2511791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f8c9f050de362a14212c74900d718b9a9bf9818d4eb6d0025685c931806c0c8`
+-	Image ID: `sha256:6d83cc60fd954c3dfe19138a3b79c6aab7b889105adc94919774c93825a0c9e3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:21615746a93c6e957f0efeea48a61ada35aee24457f84f9a52c1ffff45859d24`  
-		Last Modified: Tue, 24 Feb 2026 19:35:15 GMT  
-		Size: 2.5 MB (2515350 bytes)  
+	-	`sha256:e43df4208effc49199033361d94c47fbed86fecadf5e8c6cd9c28b8e8180699d`  
+		Last Modified: Mon, 16 Mar 2026 19:01:10 GMT  
+		Size: 2.5 MB (2492678 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:95acf938af48748b2dd83349d79d9b3fe3d690e7e32adf95363bce3b7bda9ecb`  
-		Last Modified: Tue, 24 Feb 2026 19:35:15 GMT  
-		Size: 18.8 KB (18779 bytes)  
+	-	`sha256:d90cfabb2480c866bba39d34f0e87e90ceb3e8584c649ca1fa97a18c65c85240`  
+		Last Modified: Mon, 16 Mar 2026 19:01:09 GMT  
+		Size: 19.1 KB (19113 bytes)  
 		MIME: application/vnd.in-toto+json
