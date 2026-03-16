@@ -2623,14 +2623,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-cryptography/copyright`)
 - `Apache-2.0`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-cryptography=41.0.7-4ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_41.0.7-4ubuntu0.1.dsc' python-cryptography_41.0.7-4ubuntu0.1.dsc 3412 SHA512:8fc7b6ef5dc010bae649968fef2031111225764ebcb9770127f2ef1a94d725fc50d5a1eb8e1515b4184a6e4d49f5a493d340b96e935cdd4f960082e90ee66b9d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_41.0.7.orig.tar.gz' python-cryptography_41.0.7.orig.tar.gz 630892 SHA512:c678da6dfc02d84ca9a26bc42844da8ba356f5dc839fefa0b63636c99107b18415b5970d721b72075fc0f8aefc3785dbf143327ceb7f4ebd075df41291b63219
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_41.0.7-4ubuntu0.1.debian.tar.xz' python-cryptography_41.0.7-4ubuntu0.1.debian.tar.xz 11512 SHA512:039007135ac2cf4c9f848160cf8bb1562d8a593d92ec37f3282f5800f2f51262c5b7c85ecfc692d921251a4866890a73b8e8b31e864420c5b4664872b909dec6
-```
 
 ### `dpkg` source package: `python-dateutil=2.8.2-3ubuntu1`
 
@@ -5796,14 +5791,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.39.3-9ubuntu6.4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.4.dsc' util-linux_2.39.3-9ubuntu6.4.dsc 4755 SHA512:600d87df4b7d5484d1313e12d57f5691266becd893b4818ef7da4471939138d67d0e8aad624c61ba36afa351b764dfadfdff60eb26d8005721e530b9ad342f2d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA512:a2de1672f06ca5d2d431db1265a8499808770c3781019ec4a3a40170df4685826d8e3ca120841dcc5df4681ca8c935a993317bd0dc70465b21bf8e0efef65afa
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.4.debian.tar.xz' util-linux_2.39.3-9ubuntu6.4.debian.tar.xz 146780 SHA512:3a86146601d3d0a1b39fc6bc899d570cc11f65e214ab3e33f1286c7a8ffdaaef9537ea946f6618571eb32f7bc207087ac55f82bfc5fbdec3e63d7d3c21023ead
-```
 
 ### `dpkg` source package: `xml-core=0.19`
 
