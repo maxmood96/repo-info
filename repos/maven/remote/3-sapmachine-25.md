@@ -1,7 +1,7 @@
 ## `maven:3-sapmachine-25`
 
 ```console
-$ docker pull maven@sha256:266313709e27b9c99c9d4d798e671956764e57a3fb22eaaa18370495ad89bcba
+$ docker pull maven@sha256:f83549805ffde9d413f6903296dde5e53c133045da2884e0a0b3727a171c1202
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,236 +16,236 @@ $ docker pull maven@sha256:266313709e27b9c99c9d4d798e671956764e57a3fb22eaaa18370
 ### `maven:3-sapmachine-25` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:4360d92476e30eb26114be5dd6a3bc8f8e114a42b490043b8a8e7d50f02c94eb
+$ docker pull maven@sha256:7696cf54dac0687f36270e81eec45bd1960aa92124f12e896061c19c76f26f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **286.0 MB (285961646 bytes)**  
+-	Total Size: **286.0 MB (285966640 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:15f2aae027aa069b89b7a19d1de51087b44b34d8c0b1c89dc8550618ee8b5a98`
+-	Image ID: `sha256:6353d6d4000d71188ab13717c44043b6461ed2d902a7c0be0b9be5514d469db2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Tue, 10 Feb 2026 16:49:54 GMT
+# Mon, 23 Feb 2026 17:17:53 GMT
 ARG RELEASE
-# Tue, 10 Feb 2026 16:49:54 GMT
+# Mon, 23 Feb 2026 17:17:53 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Feb 2026 16:49:54 GMT
+# Mon, 23 Feb 2026 17:17:53 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Feb 2026 16:49:54 GMT
+# Mon, 23 Feb 2026 17:17:53 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 10 Feb 2026 16:49:56 GMT
-ADD file:1ae27d2ef4369361104b699712f3897141e394785df5d193d67b44626f57eb87 in / 
-# Tue, 10 Feb 2026 16:49:57 GMT
+# Mon, 23 Feb 2026 17:17:55 GMT
+ADD file:3f78aa860931e0853077f09eb31eddbeeef8a9dd70977305b4876aa176770721 in / 
+# Mon, 23 Feb 2026 17:17:56 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Feb 2026 20:32:14 GMT
+# Tue, 17 Mar 2026 02:23:20 GMT
 RUN apt-get update &&     apt-get -y --no-install-recommends install ca-certificates gnupg &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23 &&     chmod 644 /etc/apt/trusted.gpg.d/sapmachine.gpg &&     echo "deb http://dist.sapmachine.io/debian/$(dpkg --print-architecture)/ ./" > /etc/apt/sources.list.d/sapmachine.list &&     apt-get update &&     apt-get -y --no-install-recommends install sapmachine-25-jdk=25.0.2 &&     apt-get remove -y --purge --autoremove ca-certificates gnupg &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* # buildkit
-# Tue, 17 Feb 2026 20:32:14 GMT
+# Tue, 17 Mar 2026 02:23:20 GMT
 ENV JAVA_HOME=/usr/lib/jvm/sapmachine-25
-# Tue, 17 Feb 2026 20:32:14 GMT
+# Tue, 17 Mar 2026 02:23:20 GMT
 CMD ["jshell"]
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:53 GMT
 RUN apt-get update   && apt-get install -y ca-certificates curl git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 LABEL org.opencontainers.image.title=Apache Maven
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 ARG MAVEN_VERSION=3.9.14
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 ARG USER_HOME_DIR=/root
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Thu, 12 Mar 2026 20:14:34 GMT
+# Tue, 17 Mar 2026 03:51:54 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:01d7766a2e4a62b74e0bebf2cd12c47e675e9221174f6570854203e84ffe68b0`  
-		Last Modified: Tue, 10 Feb 2026 17:41:34 GMT  
-		Size: 29.7 MB (29727611 bytes)  
+	-	`sha256:817807f3c64e0b90b66edc7d90297f121cad2a7c2a3ee05a731557762f91e6c7`  
+		Last Modified: Mon, 23 Feb 2026 17:51:17 GMT  
+		Size: 29.7 MB (29731993 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59dd241bd37e489d34f787cd165d1a11f24b0c28a00cfa30c44e70c91094c547`  
-		Last Modified: Tue, 17 Feb 2026 20:32:38 GMT  
-		Size: 221.5 MB (221452841 bytes)  
+	-	`sha256:c03356429c9f16378949f55501f5e5cc658efdbb0428fd5185fb62ab541ca846`  
+		Last Modified: Tue, 17 Mar 2026 02:23:46 GMT  
+		Size: 221.5 MB (221453161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddbb5de4678dd5fb0dff4f87e7d12c28c61ea50177996222299e6720dcf2ce95`  
-		Last Modified: Thu, 12 Mar 2026 20:14:48 GMT  
-		Size: 25.5 MB (25468980 bytes)  
+	-	`sha256:ee738e52445e13d89da2b017a02e2a820faa9bcedc1ead93c2104cd93411d1af`  
+		Last Modified: Tue, 17 Mar 2026 03:52:08 GMT  
+		Size: 25.5 MB (25469270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e42fc5c08db026dd3b814a48bf0a7605720d1bdd9408e09eeda38710748085c8`  
-		Last Modified: Thu, 12 Mar 2026 20:14:47 GMT  
+	-	`sha256:4c5d48ff2e45767bf771694835454cccc2490ab24f2be6157ae9a95d26d0a847`  
+		Last Modified: Tue, 17 Mar 2026 03:52:08 GMT  
 		Size: 9.3 MB (9311178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24addddb3eee21282437063ef3a6fd4868615c722d83e3714d1edb0c6057372a`  
-		Last Modified: Thu, 12 Mar 2026 20:14:47 GMT  
-		Size: 849.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50d54fa107d3fb95e61bb0a49d8f47fa81306b6669f3a34ac52bf3c183ab2e18`  
-		Last Modified: Thu, 12 Mar 2026 20:14:47 GMT  
-		Size: 155.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `maven:3-sapmachine-25` - unknown; unknown
-
-```console
-$ docker pull maven@sha256:818a91b227a5f27ca1bc9ebe9b1bc130241906c567ad413a6a08444d95b1aea4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4330793 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da3f0cec0bf2f7a98cb0b2f0af40970a2f370667b6c4529670bb7cfd8ee1d54e`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:7808aa6f47a8a0e3d6b9f087934e6616859e62547e0acc48110cda0ee1687519`  
-		Last Modified: Thu, 12 Mar 2026 20:14:47 GMT  
-		Size: 4.3 MB (4313048 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:7fe6e424ef81d572746bc3e1cd1589fea71c8d012c8cfcc9f78c337d6517be00`  
-		Last Modified: Thu, 12 Mar 2026 20:14:47 GMT  
-		Size: 17.7 KB (17745 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `maven:3-sapmachine-25` - linux; arm64 variant v8
-
-```console
-$ docker pull maven@sha256:5775ef2471b7872c1fbb013bede99eb65adc5934111ae01640643feee4666801
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **283.0 MB (282976674 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86c5afdb0de98e8e7c126210aa109492cd08f52c5842828a70ed723664dae3fc`
--	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
--	Default Command: `["mvn"]`
-
-```dockerfile
-# Tue, 10 Feb 2026 16:52:26 GMT
-ARG RELEASE
-# Tue, 10 Feb 2026 16:52:26 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Feb 2026 16:52:27 GMT
-LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Feb 2026 16:52:27 GMT
-LABEL org.opencontainers.image.version=24.04
-# Tue, 10 Feb 2026 16:52:29 GMT
-ADD file:25d708bf0b30ddee20c0b2764034e065aca922cafd48eb9c662e35ba02ccf1de in / 
-# Tue, 10 Feb 2026 16:52:29 GMT
-CMD ["/bin/bash"]
-# Tue, 17 Feb 2026 20:31:21 GMT
-RUN apt-get update &&     apt-get -y --no-install-recommends install ca-certificates gnupg &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23 &&     chmod 644 /etc/apt/trusted.gpg.d/sapmachine.gpg &&     echo "deb http://dist.sapmachine.io/debian/$(dpkg --print-architecture)/ ./" > /etc/apt/sources.list.d/sapmachine.list &&     apt-get update &&     apt-get -y --no-install-recommends install sapmachine-25-jdk=25.0.2 &&     apt-get remove -y --purge --autoremove ca-certificates gnupg &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* # buildkit
-# Tue, 17 Feb 2026 20:31:21 GMT
-ENV JAVA_HOME=/usr/lib/jvm/sapmachine-25
-# Tue, 17 Feb 2026 20:31:21 GMT
-CMD ["jshell"]
-# Thu, 12 Mar 2026 20:13:21 GMT
-RUN apt-get update   && apt-get install -y ca-certificates curl git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 12 Mar 2026 20:13:21 GMT
-LABEL org.opencontainers.image.title=Apache Maven
-# Thu, 12 Mar 2026 20:13:21 GMT
-LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Thu, 12 Mar 2026 20:13:21 GMT
-LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Thu, 12 Mar 2026 20:13:21 GMT
-LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Thu, 12 Mar 2026 20:13:21 GMT
-ENV MAVEN_HOME=/usr/share/maven
-# Thu, 12 Mar 2026 20:13:21 GMT
-COPY /usr/share/maven /usr/share/maven # buildkit
-# Thu, 12 Mar 2026 20:13:21 GMT
-COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Thu, 12 Mar 2026 20:13:21 GMT
-COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Thu, 12 Mar 2026 20:13:21 GMT
-RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Thu, 12 Mar 2026 20:13:21 GMT
-ARG MAVEN_VERSION=3.9.14
-# Thu, 12 Mar 2026 20:13:21 GMT
-ARG USER_HOME_DIR=/root
-# Thu, 12 Mar 2026 20:13:21 GMT
-ENV MAVEN_CONFIG=/root/.m2
-# Thu, 12 Mar 2026 20:13:21 GMT
-ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Thu, 12 Mar 2026 20:13:21 GMT
-CMD ["mvn"]
-```
-
--	Layers:
-	-	`sha256:66a4bbbfab887561d75f1fdb3c6221c974346f82c9229f5ef99f96b7e6c25704`  
-		Last Modified: Tue, 10 Feb 2026 17:41:42 GMT  
-		Size: 28.9 MB (28865120 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63210ec8e29a90dd08e5d25f72bdeb405e7aa2e604119720f6cb0ee9275c1387`  
-		Last Modified: Tue, 17 Feb 2026 20:31:45 GMT  
-		Size: 219.3 MB (219265992 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:985497a1b3f45ffb5d38c681d938b62d9f47209712ef7d0552e0f8b210bad034`  
-		Last Modified: Thu, 12 Mar 2026 20:13:35 GMT  
-		Size: 25.5 MB (25533343 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8775e8dce4bc85e07bd755d9980a48382867d7b0d40e5d9f9e12427f969a007`  
-		Last Modified: Thu, 12 Mar 2026 20:13:34 GMT  
-		Size: 9.3 MB (9311181 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e8ad9d5ab8530908c6e4b10a7e4c2ce5a654361ec03e75ca58e2e4e696a0827`  
-		Last Modified: Thu, 12 Mar 2026 20:13:34 GMT  
+	-	`sha256:b1e413672edae1e44fe726bcbb067499b01bf9fda715c020ac4e94939295e922`  
+		Last Modified: Tue, 17 Mar 2026 03:52:06 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c652beb2e046b50742b1cbdbc04c940775e2020f85715e95a15d95b65cc2b6a`  
-		Last Modified: Thu, 12 Mar 2026 20:13:34 GMT  
+	-	`sha256:629e7fcd34750be1ce9d6ee134979bdc2bdd04dc955345e57cd44ae1fc2a2324`  
+		Last Modified: Tue, 17 Mar 2026 03:52:07 GMT  
 		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-sapmachine-25` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:319d7c08cbf77550e69cc74cac760ae245c4f9455452df24295fb17792f73f4a
+$ docker pull maven@sha256:6f10a11d625e31ecd8f5368205b7f7ab3d964656985745944645ca4d0b954d78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4337541 bytes)**  
+-	Total Size: **4.3 MB (4330833 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa1de6418e5c7d3ecc00ff7e0e64c197611e016e009c105745c1a5aaaacddd67`
+-	Image ID: `sha256:1c586d3f29d606d5e6267a746848f2b2a7efe9bf23c882b4afa9351818a76454`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e7d7e72d1d9990714ca263b2b3fad5f5b70dea532271db9e943aa799debfebcf`  
-		Last Modified: Thu, 12 Mar 2026 20:13:34 GMT  
-		Size: 4.3 MB (4319615 bytes)  
+	-	`sha256:31497b055642de87ba73478dcaa7eb1ca0ba636a934157d0c840d21a935c0872`  
+		Last Modified: Tue, 17 Mar 2026 03:52:07 GMT  
+		Size: 4.3 MB (4313088 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e98e0c1c6c71fbb8ead62cff0cee66dcfd9277102c3658552a640bd3108309a2`  
-		Last Modified: Thu, 12 Mar 2026 20:13:34 GMT  
+	-	`sha256:cc36e8d8d0d7a6c3f0711288c170408860e75f6e03bf0edb3d58326fe963ec5e`  
+		Last Modified: Tue, 17 Mar 2026 03:52:07 GMT  
+		Size: 17.7 KB (17745 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `maven:3-sapmachine-25` - linux; arm64 variant v8
+
+```console
+$ docker pull maven@sha256:4648d7f159d69bc734a89079cabfe204d8deb0823ff7dea574f29f7f9e853b77
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **283.0 MB (282981960 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:40ecf1b2cf35b89e15869d70de26136693a414ddd8ea1cdcdce9802da475370c`
+-	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
+-	Default Command: `["mvn"]`
+
+```dockerfile
+# Mon, 23 Feb 2026 17:19:30 GMT
+ARG RELEASE
+# Mon, 23 Feb 2026 17:19:30 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Mon, 23 Feb 2026 17:19:30 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Mon, 23 Feb 2026 17:19:30 GMT
+LABEL org.opencontainers.image.version=24.04
+# Mon, 23 Feb 2026 17:19:32 GMT
+ADD file:2763d61bc43bd178306ae0d4151c2477166ebf199b8d7294d9ea410f9891993f in / 
+# Mon, 23 Feb 2026 17:19:33 GMT
+CMD ["/bin/bash"]
+# Tue, 17 Mar 2026 02:29:50 GMT
+RUN apt-get update &&     apt-get -y --no-install-recommends install ca-certificates gnupg &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23 &&     chmod 644 /etc/apt/trusted.gpg.d/sapmachine.gpg &&     echo "deb http://dist.sapmachine.io/debian/$(dpkg --print-architecture)/ ./" > /etc/apt/sources.list.d/sapmachine.list &&     apt-get update &&     apt-get -y --no-install-recommends install sapmachine-25-jdk=25.0.2 &&     apt-get remove -y --purge --autoremove ca-certificates gnupg &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* # buildkit
+# Tue, 17 Mar 2026 02:29:50 GMT
+ENV JAVA_HOME=/usr/lib/jvm/sapmachine-25
+# Tue, 17 Mar 2026 02:29:50 GMT
+CMD ["jshell"]
+# Tue, 17 Mar 2026 03:50:40 GMT
+RUN apt-get update   && apt-get install -y ca-certificates curl git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 17 Mar 2026 03:50:40 GMT
+LABEL org.opencontainers.image.title=Apache Maven
+# Tue, 17 Mar 2026 03:50:40 GMT
+LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
+# Tue, 17 Mar 2026 03:50:40 GMT
+LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
+# Tue, 17 Mar 2026 03:50:40 GMT
+LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+# Tue, 17 Mar 2026 03:50:40 GMT
+ENV MAVEN_HOME=/usr/share/maven
+# Tue, 17 Mar 2026 03:50:40 GMT
+COPY /usr/share/maven /usr/share/maven # buildkit
+# Tue, 17 Mar 2026 03:50:40 GMT
+COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
+# Tue, 17 Mar 2026 03:50:40 GMT
+COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
+# Tue, 17 Mar 2026 03:50:40 GMT
+RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
+# Tue, 17 Mar 2026 03:50:40 GMT
+ARG MAVEN_VERSION=3.9.14
+# Tue, 17 Mar 2026 03:50:40 GMT
+ARG USER_HOME_DIR=/root
+# Tue, 17 Mar 2026 03:50:40 GMT
+ENV MAVEN_CONFIG=/root/.m2
+# Tue, 17 Mar 2026 03:50:40 GMT
+ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
+# Tue, 17 Mar 2026 03:50:40 GMT
+CMD ["mvn"]
+```
+
+-	Layers:
+	-	`sha256:86790fc5660dcd86928b849ae0826aba701bf9e005e92c8f9e06c917e82c87f7`  
+		Last Modified: Mon, 23 Feb 2026 17:51:24 GMT  
+		Size: 28.9 MB (28869709 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4bc13511e880c0df6cd7f945fa934e24ae2f33c796fdd717f78075a5af41e430`  
+		Last Modified: Tue, 17 Mar 2026 02:30:14 GMT  
+		Size: 219.3 MB (219266669 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:43b656a27a99725d28c9053015cd1fa8a2d9b14c873bb704651796b444be692c`  
+		Last Modified: Tue, 17 Mar 2026 03:50:53 GMT  
+		Size: 25.5 MB (25533371 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d7fc656ebd06e9ac08cd7e315d1ef10073b57c0e75336d02c07882e91a494fbe`  
+		Last Modified: Tue, 17 Mar 2026 03:50:53 GMT  
+		Size: 9.3 MB (9311173 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e4d09d5ddf0775b01c94fd16380cf29444ec55731d4aa8ef2713a684298713c8`  
+		Last Modified: Tue, 17 Mar 2026 03:50:53 GMT  
+		Size: 851.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4968da7b7d2807eee4d91cf6112ca2913446c91da82fcff2c2a31a0252360dd1`  
+		Last Modified: Tue, 17 Mar 2026 03:50:53 GMT  
+		Size: 155.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `maven:3-sapmachine-25` - unknown; unknown
+
+```console
+$ docker pull maven@sha256:11df2b6ae13a99c72078de9bbbbae4d9b74b40ffa4046f466aaa779b160e8d5c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.3 MB (4337581 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0c2ba0af6ffe9707fe68d7015da003ada32bc5398e8337ae8a44fefffd3c00a9`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:54b271e99dadd7ec9faf2bae1eb01fcb9203b65f3318cf68724b9d157604d199`  
+		Last Modified: Tue, 17 Mar 2026 03:50:53 GMT  
+		Size: 4.3 MB (4319655 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:f8bbc294159812f6910c6551dd5ea3a80eddcb2086b9dd6e75ec2b6c2565cc4c`  
+		Last Modified: Tue, 17 Mar 2026 03:50:53 GMT  
 		Size: 17.9 KB (17926 bytes)  
 		MIME: application/vnd.in-toto+json
 
