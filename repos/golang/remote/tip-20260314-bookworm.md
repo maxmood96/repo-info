@@ -1,7 +1,7 @@
 ## `golang:tip-20260314-bookworm`
 
 ```console
-$ docker pull golang@sha256:e9c063ee64a874f73359ac80014d6417672c80a13676440fd69b5967c1f3c859
+$ docker pull golang@sha256:1e9a93bffe7ed3dad1a5ad5cd775c512e8203cb1854fff50c8c84fdb80e28913
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -380,61 +380,61 @@ $ docker pull golang@sha256:5abd5d27a21732ebfbbe6cc418ee711673476e879f6f38e88911
 ### `golang:tip-20260314-bookworm` - linux; mips64le
 
 ```console
-$ docker pull golang@sha256:a9e31e14eba1fee28b9aff855e646a979d6fd39915537f161e3df34357bf547b
+$ docker pull golang@sha256:2407a7e9a4b2dcc5497ed26bfe25b4528ecf6455d83ef6850dddcfc524743546
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.3 MB (293326203 bytes)**  
+-	Total Size: **293.3 MB (293323579 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e7bba2011e9036b378b7d9aa963f0a2757d5edbb2ee39d1a14e4033f69ac6f3`
+-	Image ID: `sha256:580b1ceae1ae7fd6354166c1232594e0dc560bef441e2c3a72f2d6e14201daff`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 23 Feb 2026 00:00:00 GMT
-RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1771804800'
-# Wed, 25 Feb 2026 06:07:15 GMT
+# Mon, 16 Mar 2026 00:00:00 GMT
+RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1773619200'
+# Tue, 17 Mar 2026 09:32:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 25 Feb 2026 11:29:09 GMT
+# Tue, 17 Mar 2026 15:09:28 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 25 Feb 2026 12:18:13 GMT
+# Tue, 17 Mar 2026 16:29:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 16 Mar 2026 18:24:48 GMT
+# Tue, 17 Mar 2026 18:45:05 GMT
 ENV GOTOOLCHAIN=local
-# Mon, 16 Mar 2026 18:24:48 GMT
+# Tue, 17 Mar 2026 18:45:05 GMT
 ENV GOPATH=/go
-# Mon, 16 Mar 2026 18:24:48 GMT
+# Tue, 17 Mar 2026 18:45:05 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 16 Mar 2026 18:24:48 GMT
+# Tue, 17 Mar 2026 18:45:05 GMT
 COPY /target/ / # buildkit
-# Mon, 16 Mar 2026 18:25:02 GMT
+# Tue, 17 Mar 2026 18:45:20 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Mon, 16 Mar 2026 18:25:03 GMT
+# Tue, 17 Mar 2026 18:45:22 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:6ec71ee94fb878725e70f6a21c20349985b89066361ee1f753b3854cfa2c839a`  
-		Last Modified: Tue, 24 Feb 2026 18:41:37 GMT  
-		Size: 48.8 MB (48782510 bytes)  
+	-	`sha256:55bd01c42402ce77937fae9abfba9b351fd4b3fab7f1f58eccf5b2fcf0ac8978`  
+		Last Modified: Mon, 16 Mar 2026 21:51:11 GMT  
+		Size: 48.8 MB (48782288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea2283ea3597dab73b85bc0ebe9635f3297b9d6d4b8ff5df7913003859ba369`  
-		Last Modified: Wed, 25 Feb 2026 06:07:50 GMT  
-		Size: 23.6 MB (23615315 bytes)  
+	-	`sha256:6a46874b19723e755d13ba2292477f479fd221937f5480b97990afd32f94b3d6`  
+		Last Modified: Tue, 17 Mar 2026 09:32:54 GMT  
+		Size: 23.6 MB (23615153 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:372ec86799dac23af2f0ffbced98ecf9eceeaa5ddf68be3af3cc474182e97448`  
-		Last Modified: Wed, 25 Feb 2026 11:30:27 GMT  
-		Size: 63.3 MB (63310148 bytes)  
+	-	`sha256:510757183cb1996fa93fc6110a5644d68f4a47cbb4c8f08c9a7376b57b6600e1`  
+		Last Modified: Tue, 17 Mar 2026 15:10:46 GMT  
+		Size: 63.3 MB (63310157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd8358d10d80c9af8f69fd6083cd0982ee261a68e3865c0f029247660744e146`  
-		Last Modified: Wed, 25 Feb 2026 12:20:12 GMT  
-		Size: 70.1 MB (70053345 bytes)  
+	-	`sha256:a29a828b5f824da9f5aea9f29bedbcb4f1d9ba92baa7cf5754cbe01210a2d907`  
+		Last Modified: Tue, 17 Mar 2026 16:31:43 GMT  
+		Size: 70.1 MB (70051096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff347f6a145f7f93bbfb2eb74f5a1a353cbf6b3881958a27e04c5d6b711e338b`  
 		Last Modified: Mon, 16 Mar 2026 18:27:00 GMT  
 		Size: 87.6 MB (87564728 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b407766a3ae114da28fcc9b1a90384b81c510e9bc6657645365cc48235c14ac6`  
-		Last Modified: Mon, 16 Mar 2026 18:26:50 GMT  
+	-	`sha256:9aecbb7b6fb6b9fc2b81f8e6c7497f47e675a6fc830a0fe96ecbce98e24f9d5c`  
+		Last Modified: Tue, 17 Mar 2026 18:47:07 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -445,21 +445,21 @@ WORKDIR /go
 ### `golang:tip-20260314-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:60d950f7a2c9efe6cf0e67744713ccbe84c51b8bf25c1b270ddd4b45f53d34a8
+$ docker pull golang@sha256:1f2c973b862224599d4f145b38b5631ecaefb4ec2962ef46cf193c9963ae043d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.2 KB (28239 bytes)**  
+-	Total Size: **28.2 KB (28238 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d079cfe4f93f19f30ad72a7286e0d017bb8f23a4822a4c66f32a0f6b1dfe9d4`
+-	Image ID: `sha256:9ad128b140a83adaeaa3439196f7f7a9628a110121b5578015a7eac910bc3bb0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7eb96918b2aed91f9e0af860166212bede559e527e41add350c0fbe5f78427d8`  
-		Last Modified: Mon, 16 Mar 2026 18:26:50 GMT  
-		Size: 28.2 KB (28239 bytes)  
+	-	`sha256:4f8bf46315b72072139ba77fa920e9ab756359d81f5ccf8cbbbf2049f623b322`  
+		Last Modified: Tue, 17 Mar 2026 18:47:07 GMT  
+		Size: 28.2 KB (28238 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:tip-20260314-bookworm` - linux; ppc64le
