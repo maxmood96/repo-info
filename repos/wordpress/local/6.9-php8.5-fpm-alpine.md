@@ -1,10 +1,10 @@
-# `wordpress:6.9.1-php8.5-fpm-alpine`
+# `wordpress:6.9.4-php8.5-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5b2920349e89588a382f70d440ed4eee2a89fc77afd6eed4a4e6380555eb2905`
-- Created: `2026-02-13T19:13:18.582016201Z`
-- Virtual Size: ~ 312.34 Mb  
+- Image ID: `sha256:84e203f1ffe6b9b6c7bb7affa622250757a1e5aaeca84c270fb9024346f03434`
+- Created: `2026-03-13T00:13:36.554627244Z`
+- Virtual Size: ~ 312.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.3`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.3.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.3.tar.xz.asc`
-  - `PHP_SHA256=ce65725b8af07356b69a6046d21487040b11f2acfde786de38b2bfb712c36eb9`
+  - `PHP_VERSION=8.5.4`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.4.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.4.tar.xz.asc`
+  - `PHP_SHA256=c1569f1f543f6b025c583cdc0e730e5c5833c603618613f1aa8e75d1524b8c91`
 
 ## `apk` (`.apk`-based packages)
 
@@ -486,16 +486,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.11-r0 description:
+gnutls-3.8.12-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.11-r0 webpage:
+gnutls-3.8.12-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.11-r0 installed size:
-1916 KiB
+gnutls-3.8.12-r0 installed size:
+1920 KiB
 
-gnutls-3.8.11-r0 license:
+gnutls-3.8.12-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -571,16 +571,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.13-r0 description:
+imagemagick-7.1.2.15-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.13-r0 webpage:
+imagemagick-7.1.2.15-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.13-r0 installed size:
-3663 KiB
+imagemagick-7.1.2.15-r0 installed size:
+3675 KiB
 
-imagemagick-7.1.2.13-r0 license:
+imagemagick-7.1.2.15-r0 license:
 ImageMagick
 
 ```
@@ -588,16 +588,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.13-r0 description:
+imagemagick-jp2-7.1.2.15-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.13-r0 webpage:
+imagemagick-jp2-7.1.2.15-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.13-r0 installed size:
+imagemagick-jp2-7.1.2.15-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.13-r0 license:
+imagemagick-jp2-7.1.2.15-r0 license:
 ImageMagick
 
 ```
@@ -605,16 +605,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.13-r0 description:
+imagemagick-jpeg-7.1.2.15-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.13-r0 webpage:
+imagemagick-jpeg-7.1.2.15-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.13-r0 installed size:
+imagemagick-jpeg-7.1.2.15-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.13-r0 license:
+imagemagick-jpeg-7.1.2.15-r0 license:
 ImageMagick
 
 ```
@@ -622,16 +622,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.13-r0 description:
+imagemagick-libs-7.1.2.15-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.13-r0 webpage:
+imagemagick-libs-7.1.2.15-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.13-r0 installed size:
-4245 KiB
+imagemagick-libs-7.1.2.15-r0 installed size:
+4249 KiB
 
-imagemagick-libs-7.1.2.13-r0 license:
+imagemagick-libs-7.1.2.15-r0 license:
 ImageMagick
 
 ```
@@ -639,16 +639,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.13-r0 description:
+imagemagick-pdf-7.1.2.15-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.13-r0 webpage:
+imagemagick-pdf-7.1.2.15-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.13-r0 installed size:
-117 KiB
+imagemagick-pdf-7.1.2.15-r0 installed size:
+121 KiB
 
-imagemagick-pdf-7.1.2.13-r0 license:
+imagemagick-pdf-7.1.2.15-r0 license:
 ImageMagick
 
 ```
@@ -656,16 +656,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.13-r0 description:
+imagemagick-tiff-7.1.2.15-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.13-r0 webpage:
+imagemagick-tiff-7.1.2.15-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.13-r0 installed size:
+imagemagick-tiff-7.1.2.15-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.2.13-r0 license:
+imagemagick-tiff-7.1.2.15-r0 license:
 ImageMagick
 
 ```
@@ -673,16 +673,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.13-r0 description:
+imagemagick-webp-7.1.2.15-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.13-r0 webpage:
+imagemagick-webp-7.1.2.15-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.13-r0 installed size:
+imagemagick-webp-7.1.2.15-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.13-r0 license:
+imagemagick-webp-7.1.2.15-r0 license:
 ImageMagick
 
 ```
@@ -1081,16 +1081,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.54-r0 description:
+libpng-1.6.55-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.54-r0 webpage:
+libpng-1.6.55-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.54-r0 installed size:
+libpng-1.6.55-r0 installed size:
 177 KiB
 
-libpng-1.6.54-r0 license:
+libpng-1.6.55-r0 license:
 Libpng
 
 ```
@@ -1795,16 +1795,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.1-r2 description:
+zlib-1.3.2-r0 description:
 A compression/decompression Library
 
-zlib-1.3.1-r2 webpage:
+zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.1-r2 installed size:
-101 KiB
+zlib-1.3.2-r0 installed size:
+105 KiB
 
-zlib-1.3.1-r2 license:
+zlib-1.3.2-r0 license:
 Zlib
 
 ```

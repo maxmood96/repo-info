@@ -1,10 +1,10 @@
-# `wordpress:beta-7.0-beta3-fpm-alpine`
+# `wordpress:beta-7.0-beta5-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c80bb09fbd7e10dac7adb5077ede11dad936e841dfe668207a9a49c5b75e9e90`
-- Created: `2026-03-05T21:55:39.572441291Z`
-- Virtual Size: ~ 316.06 Mb  
+- Image ID: `sha256:3899fa279cddea7ea9faa3811b67c1cf889db2fa27b944eaae2d52971a362bed`
+- Created: `2026-03-12T23:26:54.523399014Z`
+- Virtual Size: ~ 339.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1795,16 +1795,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.1-r2 description:
+zlib-1.3.2-r0 description:
 A compression/decompression Library
 
-zlib-1.3.1-r2 webpage:
+zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.1-r2 installed size:
-101 KiB
+zlib-1.3.2-r0 installed size:
+105 KiB
 
-zlib-1.3.1-r2 license:
+zlib-1.3.2-r0 license:
 Zlib
 
 ```
