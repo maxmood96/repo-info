@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2b3da74d62d901f94ccf94471e899009c600ce5b12c4e872f5ee5c49d4d7b6c9`
-- Created: `2026-02-24T18:57:17.80117541Z`
+- Image ID: `sha256:b68207adfb5dd5ff00eb3dea29af5b4750ee5f4db7d05f11c4637d1c1e90bd37`
+- Created: `2026-03-16T22:18:59.87051729Z`
 - Virtual Size: ~ 4.44 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1988,11 +1988,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.162-1`
+### `dpkg` source package: `linux=6.1.164-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.162-1`
+- `linux-libc-dev:amd64=6.1.164-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2007,17 +2007,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.162-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.162-1.dsc' linux_6.1.162-1.dsc 399396 SHA256:6a96b1a6eb221d1b1879af5e0d2669b99c9b96386f639b28ae82f0737f5da52a
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.162.orig.tar.xz' linux_6.1.162.orig.tar.xz 137860740 SHA256:6dc3e1f5ccd1c5da226d7fd42670e2e471398ec1bd5a8848292c491a672c6ad5
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.162-1.debian.tar.xz' linux_6.1.162-1.debian.tar.xz 1812632 SHA256:da60fd225c47642bdf348f8be30b2aad6b71540dd74a70ae97e23762e31f2d1d
+$ apt-get source -qq --print-uris linux=6.1.164-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.164-1.dsc' linux_6.1.164-1.dsc 399396 SHA256:a16375d86e1ec7fcb7e16e3d6dbcb08cab098aca04bfb7510b10befaf7e13e26
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.164.orig.tar.xz' linux_6.1.164.orig.tar.xz 137862600 SHA256:d2971cca3c00dbaa0da62660790ff9ef77b271afc42df468a182d3852d8c1c47
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.164-1.debian.tar.xz' linux_6.1.164-1.debian.tar.xz 1830072 SHA256:7eceed389147fe334a6df3071e2f6b7963b9ac2ec3b6387fd34a26aae0e8fda7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.162-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.162-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.162-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.164-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.164-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.164-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
