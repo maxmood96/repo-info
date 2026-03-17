@@ -1645,15 +1645,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh=0.10.6-2ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.3.dsc' libssh_0.10.6-2ubuntu0.3.dsc 2857 SHA512:40e7531177144800d6768e181bff13010ad5f2be13cd46886b50552486de8290a93fd853d9154d240d7543de850d890a2aa7a609ce64a67c01ffbe8ca5f5a093
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz' libssh_0.10.6.orig.tar.xz 561036 SHA512:40c62d63c44e882999b71552c237d73fc7364313bd00b15a211a34aeff1b73693da441d2c8d4e40108d00fb7480ec7c5b6d472f9c0784b2359a179632ab0d6c1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz.asc' libssh_0.10.6.orig.tar.xz.asc 833 SHA512:214d7920bebc80a8e6838c64ed06e070709a96fabfb4fff657b55f9588bc0e1612887fe887d23de73ad3540f3bb85288e62eb6a11ccd4bc80afbd44d34ba70d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.3.debian.tar.xz' libssh_0.10.6-2ubuntu0.3.debian.tar.xz 56132 SHA512:d67a49e2ebd02bfc96fd424e9a8201eeedaa51279fd4d7264a22cd6b7262908adea1cef61711a9c8b8305872297c9920f1da5101dcbf96b164f6ae13135da99b
-```
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3ubuntu0.24.04.2`
 
@@ -2052,15 +2046,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.14
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.14.dsc' openssh_9.6p1-3ubuntu13.14.dsc 3346 SHA512:c2e1c8ad4d1ecba42638a259f5d21f99e2e46f1181572c98b41c514e3e33b421afa2d575f7276773f8812c7211bcdb2789160d0f1cd617b040419f244f03ccc9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.14.debian.tar.xz' openssh_9.6p1-3ubuntu13.14.debian.tar.xz 207248 SHA512:17d6fc517e8d700ae43ee9a8049ab27482fcce1119ddd615b49c30458d22412c2dd8a641ad41f9dbc09d4b4e6c726fb5ffe8594fd310cb5748d3f4c38c17e5c9
-```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.7`
 
@@ -2831,14 +2819,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.39.3-9ubuntu6.4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.4.dsc' util-linux_2.39.3-9ubuntu6.4.dsc 4755 SHA512:600d87df4b7d5484d1313e12d57f5691266becd893b4818ef7da4471939138d67d0e8aad624c61ba36afa351b764dfadfdff60eb26d8005721e530b9ad342f2d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA512:a2de1672f06ca5d2d431db1265a8499808770c3781019ec4a3a40170df4685826d8e3ca120841dcc5df4681ca8c935a993317bd0dc70465b21bf8e0efef65afa
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.4.debian.tar.xz' util-linux_2.39.3-9ubuntu6.4.debian.tar.xz 146780 SHA512:3a86146601d3d0a1b39fc6bc899d570cc11f65e214ab3e33f1286c7a8ffdaaef9537ea946f6618571eb32f7bc207087ac55f82bfc5fbdec3e63d7d3c21023ead
-```
 
 ### `dpkg` source package: `wget=1.21.4-1ubuntu4.1`
 
