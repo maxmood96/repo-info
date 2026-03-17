@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:de04b08274a9455fa7a05114302d5c4160c4b6a21e3120d6e4b9484a3a76b6e3`
-- Created: `2026-02-24T19:25:44.627765904Z`
-- Virtual Size: ~ 284.10 Mb  
+- Image ID: `sha256:5aa415e50d2892f6a422ce1d91c0edae44f05bc4c0cacc2c8cedd899d93cdd4b`
+- Created: `2026-03-16T22:44:16.38195199Z`
+- Virtual Size: ~ 280.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
@@ -699,11 +699,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.27-2+deb11u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.27-2+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.7.1-5+deb11u8`
+### `dpkg` source package: `gnutls28=3.7.1-5+deb11u9`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.1-5+deb11u8`
+- `libgnutls30:amd64=3.7.1-5+deb11u9`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -724,18 +724,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u8
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u8.dsc' gnutls28_3.7.1-5+deb11u8.dsc 3522 SHA256:c3f51e97ea6488c9b512067ad333d124739ceeba5f92003eacf85cbf94a098d3
+$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u9
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u9.dsc' gnutls28_3.7.1-5+deb11u9.dsc 3541 SHA256:43651971eb727d20ef648dc033e20fcb620c276687a6b8afa9832be165f38b33
 'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
 'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u8.debian.tar.xz' gnutls28_3.7.1-5+deb11u8.debian.tar.xz 119824 SHA256:095475aa4bb4c400ea5058057a7192fa8096d83591bffeac865c8bc7d24a1a13
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u9.debian.tar.xz' gnutls28_3.7.1-5+deb11u9.debian.tar.xz 132768 SHA256:fb421a35577a7d9885de48f100f25d13eee9d18185c4a211141f1b167d67fcab
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u8/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u9/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.6-1+deb11u1`
 
