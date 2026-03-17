@@ -2,16 +2,18 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8324e71acc24adb0423f7eb4de13354493b40f765bdb36448d77ce375caa87c3`
-- Created: `2026-01-28T03:24:11.66736925Z`
-- Virtual Size: ~ 145.00 Mb  
+- Image ID: `sha256:0349bbaf083804873fbb03e5d51d6762630274c9fddcd6d18d97809096a67f24`
+- Created: `2026-03-14T00:10:32.043001462Z`
+- Virtual Size: ~ 147.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["influxd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `INFLUXDB_VERSION=1.12.2-c1.12.2`
+  - `INFLUXDB_VERSION=1.12.3-c1.12.3`
+  - `INFLUXDB_PR=`
+  - `INFLUXDB_PV=1.12.3-c1.12.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -341,16 +343,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025c-r0 description:
+tzdata-2026a-r0 description:
 Timezone data
 
-tzdata-2025c-r0 webpage:
+tzdata-2026a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025c-r0 installed size:
+tzdata-2026a-r0 installed size:
 436 KiB
 
-tzdata-2025c-r0 license:
+tzdata-2026a-r0 license:
 Public-Domain
 
 ```
