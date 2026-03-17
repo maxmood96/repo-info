@@ -2160,14 +2160,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.41-4ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu4.1.dsc' util-linux_2.41-4ubuntu4.1.dsc 5086 SHA512:c373a65a0164a033f5be210864dc11db05d68ee0a1494bd17f47c4552470bb93f2c32b629e748c1c44be415d37cec78711ea3104cb699f925775c64d3f9506d4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41.orig.tar.xz' util-linux_2.41.orig.tar.xz 9535724 SHA512:800ff92ee7a047732c0accb9dd759d6ed659947373ca72e0dd3ca601d0a6fed9db92c0838cfaff6bcdb8c08bdc1ffa675721893f42945885c57ccd59ab676318
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu4.1.debian.tar.xz' util-linux_2.41-4ubuntu4.1.debian.tar.xz 127456 SHA512:9ca20fd849d2d5711fa3edf0b047add1f4f81dbfa55e930c123465dabb6c7fea619fad27184bb4cd7cccb742b6f3f8176a0c169c1aaade30ce272a1f3298d877
-```
 
 ### `dpkg` source package: `wget=1.25.0-2ubuntu3`
 
