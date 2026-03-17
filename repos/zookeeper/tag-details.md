@@ -15,7 +15,7 @@
 ## `zookeeper:3.8`
 
 ```console
-$ docker pull zookeeper@sha256:c3537f7050d949c18347c41f35c433c93cc4d8b59fa3c6475caeefebaebe0af2
+$ docker pull zookeeper@sha256:1e748974c86de0d11d94309303a1e0b1fab529a35814137f71d22bb4b197b671
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -314,142 +314,142 @@ $ docker pull zookeeper@sha256:3d355567ff9a3a4309807338e194c3f07c82948433fcd8065
 ### `zookeeper:3.8` - linux; ppc64le
 
 ```console
-$ docker pull zookeeper@sha256:d3500035badcdebf5f4cfa134f853b0022d2c9843a4e00392313349a22b010bf
+$ docker pull zookeeper@sha256:1af2be1933636acb503596ab4ed6d4192797e27362ed7c47d4c043c1b169cfaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.0 MB (116962489 bytes)**  
+-	Total Size: **117.0 MB (116972870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32cb6627081e75de84707257c5908f118e2b2d2273c69ee82c0bc55f4dad30ce`
+-	Image ID: `sha256:0ca06d4c2fbf4b75429e77c6129925d75ba7b4f162a929af408fc5af5a84251a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG RELEASE
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 10 Feb 2026 17:41:39 GMT
-ADD file:0418bf4995f9b54380cc1e509e3f7d65bb07aed9a367528d0b1084f0a34f3bf3 in / 
-# Tue, 10 Feb 2026 17:41:39 GMT
+# Tue, 24 Feb 2026 07:34:16 GMT
+ADD file:8cdc5dcac981a23986a941c048f55a86d8ba46328e91ad30db9af43286781c61 in / 
+# Tue, 24 Feb 2026 07:34:16 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_VERSION=jdk-17.0.18+8
-# Tue, 17 Feb 2026 20:19:07 GMT
+# Tue, 17 Mar 2026 08:34:45 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b418e38cca87945858ae911988401720095eb671357d47437b4adb49c28dcab';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_x64_linux_hotspot_17.0.18_8.tar.gz';          ;;        arm64)          ESUM='88727c16610d118c0e739f62e6c99dc1cb5a7b4a93a27054fe2a3aa7150e7b5d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.18_8.tar.gz';          ;;        armhf)          ESUM='437c30e861fb091d4bb2ff66a28b1d09e7ac9167f6163e286cb2968d29864e1b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.18_8.tar.gz';          ;;        ppc64el)          ESUM='62a8263401366dea8a41c44a4e5d8b0d22b1f682e9084f124483441fee57044e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.18_8.tar.gz';          ;;        s390x)          ESUM='b8801322ff3bf58ba06efde1ef4a23edc728de3d58e7bf6fd1e58815b0e8d6ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_s390x_linux_hotspot_17.0.18_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 17 Feb 2026 23:22:10 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Tue, 17 Feb 2026 23:22:10 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR" # buildkit
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true # buildkit
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.8.6
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.8.6-bin
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 # ARGS: GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA SHORT_DISTRO_NAME=zookeeper-3.8.6 DISTRO_NAME=apache-zookeeper-3.8.6-bin
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME" # buildkit
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 WORKDIR /apache-zookeeper-3.8.6-bin
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 VOLUME [/data /datalog /logs]
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 EXPOSE map[2181/tcp:{} 2888/tcp:{} 3888/tcp:{} 8080/tcp:{}]
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.8.6-bin/bin ZOOCFGDIR=/conf
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:27 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:27 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:95401e425d899946469007a0ce4b02622cf84a67cdd684aa25d61d472fffc38f`  
-		Last Modified: Tue, 10 Feb 2026 18:13:52 GMT  
-		Size: 34.4 MB (34446102 bytes)  
+	-	`sha256:31e4dc9ee1718c21d378c7cdb3929e157eabf4d70fe4bbe2e6b8ec5289e836dc`  
+		Last Modified: Tue, 24 Feb 2026 08:08:05 GMT  
+		Size: 34.5 MB (34453448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09208b6847dfa6f5490506d2bee63693e328ebe8d9f225275578ecadc7fc35c0`  
-		Last Modified: Tue, 17 Feb 2026 20:13:03 GMT  
-		Size: 17.6 MB (17619110 bytes)  
+	-	`sha256:d9dfccd4bd959ddb60fe973d79544b531c56c792667c929465975638cd29ad37`  
+		Last Modified: Tue, 17 Mar 2026 08:28:58 GMT  
+		Size: 17.6 MB (17622291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8303684a7a826717048188d2ff057664ca6a98321430f0aa53fb1b27f038b329`  
-		Last Modified: Tue, 17 Feb 2026 20:19:41 GMT  
-		Size: 47.3 MB (47331436 bytes)  
+	-	`sha256:fc8134fae8753fed6c545cb387b4eaddde7465baab7cb082d8e58a7884ae07a6`  
+		Last Modified: Tue, 17 Mar 2026 08:35:15 GMT  
+		Size: 47.3 MB (47331392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4510d40d77c8d8b57ca547880766c7f582d2aa4dc9e4959ad89cda6019870e6f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 158.0 B  
+	-	`sha256:a1a50798c3d3c71253b348d7cd1c587e5ee2f032f4701caab985320306411cb7`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac997d838a9e36f770f7a140ce79875b841cc6e6ad27d09efd8d4264d9c11f0f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:bebc145cbf015b8221169c6ba862f2e438d8cb79bdce73991c34827260748695`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fd171a8e3560f27075aef7726e37a22a27851491e735d7b9801d1d4cda05ff`  
-		Last Modified: Tue, 17 Feb 2026 23:23:10 GMT  
-		Size: 1.8 KB (1792 bytes)  
+	-	`sha256:b9c1c69e3f31830ad4177e43791aac0ff464f6e4854910c0d0185e1f9ab0719e`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65c3cca70133d03f542bdc7671365e050ad5905b33d335293713cda3b8f3c303`  
-		Last Modified: Tue, 17 Feb 2026 23:23:10 GMT  
-		Size: 1.1 MB (1090028 bytes)  
+	-	`sha256:5955c202e6225da87ffee7566dd0a471e85fe55e39932c1889a340ca56c9d108`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.1 MB (1090032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:891ad1c4e3ea5940cb4d1988f777aaab3c15debc73ede53e3ead850e13d81be7`  
-		Last Modified: Mon, 23 Feb 2026 20:07:04 GMT  
-		Size: 16.5 MB (16470772 bytes)  
+	-	`sha256:3186a1e65f5224a35a3ae5987417c12c7d4493d971e3407f74928e21b1081908`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 16.5 MB (16470665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:876dd1eb7e7a338ad4b86f6d777c5a73d5e42e61e08f3aa7f959964f272c35e9`  
-		Last Modified: Mon, 23 Feb 2026 20:07:04 GMT  
+	-	`sha256:2b91052cec771bd1da7842730c62d5d5c9975b1d903bb3d2d82b534e47173dfd`  
+		Last Modified: Tue, 17 Mar 2026 18:00:54 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.8` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:2d6e1f03d44c114cc50b4d62373ed792e0f8c418298cdec3ea2d5d4803f91672
+$ docker pull zookeeper@sha256:9e47d6d18050a10055c7dad13aba59cab2be5a232e2363d8e6a31b8fb4520ed5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (4007157 bytes)**  
+-	Total Size: **4.0 MB (4007156 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10d60217095d53df4cac8833af1e9aba4c2a134e0a1290b291732756a4b28cf5`
+-	Image ID: `sha256:63cfb4cdf07e6c6e7ea345eb514c12f3e54e49c27f511d98652a9438f6481ffa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fa2ba413c8d301b9efdc3102f67c44f4f8cbac2f19b92190331e3150ff274370`  
-		Last Modified: Mon, 23 Feb 2026 20:07:04 GMT  
+	-	`sha256:a1a4cfacb2643224c162803312eafe2f149336a3764b8d9bdacf4ad5c4b89554`  
+		Last Modified: Tue, 17 Mar 2026 18:00:52 GMT  
 		Size: 4.0 MB (3982836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:278d7082e4a362b40404b068e990c7eb746b67b93f88660df582389b6072af11`  
-		Last Modified: Mon, 23 Feb 2026 20:07:03 GMT  
-		Size: 24.3 KB (24321 bytes)  
+	-	`sha256:1b4279ad9c784a5784cf4024f41aa08b5f43f4a672ca57b35de826179f5e5a1e`  
+		Last Modified: Tue, 17 Mar 2026 18:00:52 GMT  
+		Size: 24.3 KB (24320 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `zookeeper:3.8` - linux; s390x
@@ -596,7 +596,7 @@ $ docker pull zookeeper@sha256:24abcecd006e846f3f27d533038aa98e2079a8cc1ce585795
 ## `zookeeper:3.8-jre-17`
 
 ```console
-$ docker pull zookeeper@sha256:c3537f7050d949c18347c41f35c433c93cc4d8b59fa3c6475caeefebaebe0af2
+$ docker pull zookeeper@sha256:1e748974c86de0d11d94309303a1e0b1fab529a35814137f71d22bb4b197b671
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -895,142 +895,142 @@ $ docker pull zookeeper@sha256:3d355567ff9a3a4309807338e194c3f07c82948433fcd8065
 ### `zookeeper:3.8-jre-17` - linux; ppc64le
 
 ```console
-$ docker pull zookeeper@sha256:d3500035badcdebf5f4cfa134f853b0022d2c9843a4e00392313349a22b010bf
+$ docker pull zookeeper@sha256:1af2be1933636acb503596ab4ed6d4192797e27362ed7c47d4c043c1b169cfaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.0 MB (116962489 bytes)**  
+-	Total Size: **117.0 MB (116972870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32cb6627081e75de84707257c5908f118e2b2d2273c69ee82c0bc55f4dad30ce`
+-	Image ID: `sha256:0ca06d4c2fbf4b75429e77c6129925d75ba7b4f162a929af408fc5af5a84251a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG RELEASE
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 10 Feb 2026 17:41:39 GMT
-ADD file:0418bf4995f9b54380cc1e509e3f7d65bb07aed9a367528d0b1084f0a34f3bf3 in / 
-# Tue, 10 Feb 2026 17:41:39 GMT
+# Tue, 24 Feb 2026 07:34:16 GMT
+ADD file:8cdc5dcac981a23986a941c048f55a86d8ba46328e91ad30db9af43286781c61 in / 
+# Tue, 24 Feb 2026 07:34:16 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_VERSION=jdk-17.0.18+8
-# Tue, 17 Feb 2026 20:19:07 GMT
+# Tue, 17 Mar 2026 08:34:45 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b418e38cca87945858ae911988401720095eb671357d47437b4adb49c28dcab';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_x64_linux_hotspot_17.0.18_8.tar.gz';          ;;        arm64)          ESUM='88727c16610d118c0e739f62e6c99dc1cb5a7b4a93a27054fe2a3aa7150e7b5d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.18_8.tar.gz';          ;;        armhf)          ESUM='437c30e861fb091d4bb2ff66a28b1d09e7ac9167f6163e286cb2968d29864e1b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.18_8.tar.gz';          ;;        ppc64el)          ESUM='62a8263401366dea8a41c44a4e5d8b0d22b1f682e9084f124483441fee57044e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.18_8.tar.gz';          ;;        s390x)          ESUM='b8801322ff3bf58ba06efde1ef4a23edc728de3d58e7bf6fd1e58815b0e8d6ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_s390x_linux_hotspot_17.0.18_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 17 Feb 2026 23:22:10 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Tue, 17 Feb 2026 23:22:10 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR" # buildkit
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true # buildkit
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.8.6
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.8.6-bin
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 # ARGS: GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA SHORT_DISTRO_NAME=zookeeper-3.8.6 DISTRO_NAME=apache-zookeeper-3.8.6-bin
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME" # buildkit
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 WORKDIR /apache-zookeeper-3.8.6-bin
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 VOLUME [/data /datalog /logs]
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 EXPOSE map[2181/tcp:{} 2888/tcp:{} 3888/tcp:{} 8080/tcp:{}]
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.8.6-bin/bin ZOOCFGDIR=/conf
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:27 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:27 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:95401e425d899946469007a0ce4b02622cf84a67cdd684aa25d61d472fffc38f`  
-		Last Modified: Tue, 10 Feb 2026 18:13:52 GMT  
-		Size: 34.4 MB (34446102 bytes)  
+	-	`sha256:31e4dc9ee1718c21d378c7cdb3929e157eabf4d70fe4bbe2e6b8ec5289e836dc`  
+		Last Modified: Tue, 24 Feb 2026 08:08:05 GMT  
+		Size: 34.5 MB (34453448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09208b6847dfa6f5490506d2bee63693e328ebe8d9f225275578ecadc7fc35c0`  
-		Last Modified: Tue, 17 Feb 2026 20:13:03 GMT  
-		Size: 17.6 MB (17619110 bytes)  
+	-	`sha256:d9dfccd4bd959ddb60fe973d79544b531c56c792667c929465975638cd29ad37`  
+		Last Modified: Tue, 17 Mar 2026 08:28:58 GMT  
+		Size: 17.6 MB (17622291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8303684a7a826717048188d2ff057664ca6a98321430f0aa53fb1b27f038b329`  
-		Last Modified: Tue, 17 Feb 2026 20:19:41 GMT  
-		Size: 47.3 MB (47331436 bytes)  
+	-	`sha256:fc8134fae8753fed6c545cb387b4eaddde7465baab7cb082d8e58a7884ae07a6`  
+		Last Modified: Tue, 17 Mar 2026 08:35:15 GMT  
+		Size: 47.3 MB (47331392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4510d40d77c8d8b57ca547880766c7f582d2aa4dc9e4959ad89cda6019870e6f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 158.0 B  
+	-	`sha256:a1a50798c3d3c71253b348d7cd1c587e5ee2f032f4701caab985320306411cb7`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac997d838a9e36f770f7a140ce79875b841cc6e6ad27d09efd8d4264d9c11f0f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:bebc145cbf015b8221169c6ba862f2e438d8cb79bdce73991c34827260748695`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fd171a8e3560f27075aef7726e37a22a27851491e735d7b9801d1d4cda05ff`  
-		Last Modified: Tue, 17 Feb 2026 23:23:10 GMT  
-		Size: 1.8 KB (1792 bytes)  
+	-	`sha256:b9c1c69e3f31830ad4177e43791aac0ff464f6e4854910c0d0185e1f9ab0719e`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65c3cca70133d03f542bdc7671365e050ad5905b33d335293713cda3b8f3c303`  
-		Last Modified: Tue, 17 Feb 2026 23:23:10 GMT  
-		Size: 1.1 MB (1090028 bytes)  
+	-	`sha256:5955c202e6225da87ffee7566dd0a471e85fe55e39932c1889a340ca56c9d108`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.1 MB (1090032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:891ad1c4e3ea5940cb4d1988f777aaab3c15debc73ede53e3ead850e13d81be7`  
-		Last Modified: Mon, 23 Feb 2026 20:07:04 GMT  
-		Size: 16.5 MB (16470772 bytes)  
+	-	`sha256:3186a1e65f5224a35a3ae5987417c12c7d4493d971e3407f74928e21b1081908`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 16.5 MB (16470665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:876dd1eb7e7a338ad4b86f6d777c5a73d5e42e61e08f3aa7f959964f272c35e9`  
-		Last Modified: Mon, 23 Feb 2026 20:07:04 GMT  
+	-	`sha256:2b91052cec771bd1da7842730c62d5d5c9975b1d903bb3d2d82b534e47173dfd`  
+		Last Modified: Tue, 17 Mar 2026 18:00:54 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.8-jre-17` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:2d6e1f03d44c114cc50b4d62373ed792e0f8c418298cdec3ea2d5d4803f91672
+$ docker pull zookeeper@sha256:9e47d6d18050a10055c7dad13aba59cab2be5a232e2363d8e6a31b8fb4520ed5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (4007157 bytes)**  
+-	Total Size: **4.0 MB (4007156 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10d60217095d53df4cac8833af1e9aba4c2a134e0a1290b291732756a4b28cf5`
+-	Image ID: `sha256:63cfb4cdf07e6c6e7ea345eb514c12f3e54e49c27f511d98652a9438f6481ffa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fa2ba413c8d301b9efdc3102f67c44f4f8cbac2f19b92190331e3150ff274370`  
-		Last Modified: Mon, 23 Feb 2026 20:07:04 GMT  
+	-	`sha256:a1a4cfacb2643224c162803312eafe2f149336a3764b8d9bdacf4ad5c4b89554`  
+		Last Modified: Tue, 17 Mar 2026 18:00:52 GMT  
 		Size: 4.0 MB (3982836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:278d7082e4a362b40404b068e990c7eb746b67b93f88660df582389b6072af11`  
-		Last Modified: Mon, 23 Feb 2026 20:07:03 GMT  
-		Size: 24.3 KB (24321 bytes)  
+	-	`sha256:1b4279ad9c784a5784cf4024f41aa08b5f43f4a672ca57b35de826179f5e5a1e`  
+		Last Modified: Tue, 17 Mar 2026 18:00:52 GMT  
+		Size: 24.3 KB (24320 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `zookeeper:3.8-jre-17` - linux; s390x
@@ -1177,7 +1177,7 @@ $ docker pull zookeeper@sha256:24abcecd006e846f3f27d533038aa98e2079a8cc1ce585795
 ## `zookeeper:3.8.6`
 
 ```console
-$ docker pull zookeeper@sha256:c3537f7050d949c18347c41f35c433c93cc4d8b59fa3c6475caeefebaebe0af2
+$ docker pull zookeeper@sha256:1e748974c86de0d11d94309303a1e0b1fab529a35814137f71d22bb4b197b671
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1476,142 +1476,142 @@ $ docker pull zookeeper@sha256:3d355567ff9a3a4309807338e194c3f07c82948433fcd8065
 ### `zookeeper:3.8.6` - linux; ppc64le
 
 ```console
-$ docker pull zookeeper@sha256:d3500035badcdebf5f4cfa134f853b0022d2c9843a4e00392313349a22b010bf
+$ docker pull zookeeper@sha256:1af2be1933636acb503596ab4ed6d4192797e27362ed7c47d4c043c1b169cfaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.0 MB (116962489 bytes)**  
+-	Total Size: **117.0 MB (116972870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32cb6627081e75de84707257c5908f118e2b2d2273c69ee82c0bc55f4dad30ce`
+-	Image ID: `sha256:0ca06d4c2fbf4b75429e77c6129925d75ba7b4f162a929af408fc5af5a84251a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG RELEASE
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 10 Feb 2026 17:41:39 GMT
-ADD file:0418bf4995f9b54380cc1e509e3f7d65bb07aed9a367528d0b1084f0a34f3bf3 in / 
-# Tue, 10 Feb 2026 17:41:39 GMT
+# Tue, 24 Feb 2026 07:34:16 GMT
+ADD file:8cdc5dcac981a23986a941c048f55a86d8ba46328e91ad30db9af43286781c61 in / 
+# Tue, 24 Feb 2026 07:34:16 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_VERSION=jdk-17.0.18+8
-# Tue, 17 Feb 2026 20:19:07 GMT
+# Tue, 17 Mar 2026 08:34:45 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b418e38cca87945858ae911988401720095eb671357d47437b4adb49c28dcab';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_x64_linux_hotspot_17.0.18_8.tar.gz';          ;;        arm64)          ESUM='88727c16610d118c0e739f62e6c99dc1cb5a7b4a93a27054fe2a3aa7150e7b5d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.18_8.tar.gz';          ;;        armhf)          ESUM='437c30e861fb091d4bb2ff66a28b1d09e7ac9167f6163e286cb2968d29864e1b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.18_8.tar.gz';          ;;        ppc64el)          ESUM='62a8263401366dea8a41c44a4e5d8b0d22b1f682e9084f124483441fee57044e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.18_8.tar.gz';          ;;        s390x)          ESUM='b8801322ff3bf58ba06efde1ef4a23edc728de3d58e7bf6fd1e58815b0e8d6ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_s390x_linux_hotspot_17.0.18_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 17 Feb 2026 23:22:10 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Tue, 17 Feb 2026 23:22:10 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR" # buildkit
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true # buildkit
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.8.6
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.8.6-bin
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 # ARGS: GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA SHORT_DISTRO_NAME=zookeeper-3.8.6 DISTRO_NAME=apache-zookeeper-3.8.6-bin
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME" # buildkit
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 WORKDIR /apache-zookeeper-3.8.6-bin
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 VOLUME [/data /datalog /logs]
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 EXPOSE map[2181/tcp:{} 2888/tcp:{} 3888/tcp:{} 8080/tcp:{}]
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.8.6-bin/bin ZOOCFGDIR=/conf
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:27 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:27 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:95401e425d899946469007a0ce4b02622cf84a67cdd684aa25d61d472fffc38f`  
-		Last Modified: Tue, 10 Feb 2026 18:13:52 GMT  
-		Size: 34.4 MB (34446102 bytes)  
+	-	`sha256:31e4dc9ee1718c21d378c7cdb3929e157eabf4d70fe4bbe2e6b8ec5289e836dc`  
+		Last Modified: Tue, 24 Feb 2026 08:08:05 GMT  
+		Size: 34.5 MB (34453448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09208b6847dfa6f5490506d2bee63693e328ebe8d9f225275578ecadc7fc35c0`  
-		Last Modified: Tue, 17 Feb 2026 20:13:03 GMT  
-		Size: 17.6 MB (17619110 bytes)  
+	-	`sha256:d9dfccd4bd959ddb60fe973d79544b531c56c792667c929465975638cd29ad37`  
+		Last Modified: Tue, 17 Mar 2026 08:28:58 GMT  
+		Size: 17.6 MB (17622291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8303684a7a826717048188d2ff057664ca6a98321430f0aa53fb1b27f038b329`  
-		Last Modified: Tue, 17 Feb 2026 20:19:41 GMT  
-		Size: 47.3 MB (47331436 bytes)  
+	-	`sha256:fc8134fae8753fed6c545cb387b4eaddde7465baab7cb082d8e58a7884ae07a6`  
+		Last Modified: Tue, 17 Mar 2026 08:35:15 GMT  
+		Size: 47.3 MB (47331392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4510d40d77c8d8b57ca547880766c7f582d2aa4dc9e4959ad89cda6019870e6f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 158.0 B  
+	-	`sha256:a1a50798c3d3c71253b348d7cd1c587e5ee2f032f4701caab985320306411cb7`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac997d838a9e36f770f7a140ce79875b841cc6e6ad27d09efd8d4264d9c11f0f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:bebc145cbf015b8221169c6ba862f2e438d8cb79bdce73991c34827260748695`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fd171a8e3560f27075aef7726e37a22a27851491e735d7b9801d1d4cda05ff`  
-		Last Modified: Tue, 17 Feb 2026 23:23:10 GMT  
-		Size: 1.8 KB (1792 bytes)  
+	-	`sha256:b9c1c69e3f31830ad4177e43791aac0ff464f6e4854910c0d0185e1f9ab0719e`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65c3cca70133d03f542bdc7671365e050ad5905b33d335293713cda3b8f3c303`  
-		Last Modified: Tue, 17 Feb 2026 23:23:10 GMT  
-		Size: 1.1 MB (1090028 bytes)  
+	-	`sha256:5955c202e6225da87ffee7566dd0a471e85fe55e39932c1889a340ca56c9d108`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.1 MB (1090032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:891ad1c4e3ea5940cb4d1988f777aaab3c15debc73ede53e3ead850e13d81be7`  
-		Last Modified: Mon, 23 Feb 2026 20:07:04 GMT  
-		Size: 16.5 MB (16470772 bytes)  
+	-	`sha256:3186a1e65f5224a35a3ae5987417c12c7d4493d971e3407f74928e21b1081908`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 16.5 MB (16470665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:876dd1eb7e7a338ad4b86f6d777c5a73d5e42e61e08f3aa7f959964f272c35e9`  
-		Last Modified: Mon, 23 Feb 2026 20:07:04 GMT  
+	-	`sha256:2b91052cec771bd1da7842730c62d5d5c9975b1d903bb3d2d82b534e47173dfd`  
+		Last Modified: Tue, 17 Mar 2026 18:00:54 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.8.6` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:2d6e1f03d44c114cc50b4d62373ed792e0f8c418298cdec3ea2d5d4803f91672
+$ docker pull zookeeper@sha256:9e47d6d18050a10055c7dad13aba59cab2be5a232e2363d8e6a31b8fb4520ed5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (4007157 bytes)**  
+-	Total Size: **4.0 MB (4007156 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10d60217095d53df4cac8833af1e9aba4c2a134e0a1290b291732756a4b28cf5`
+-	Image ID: `sha256:63cfb4cdf07e6c6e7ea345eb514c12f3e54e49c27f511d98652a9438f6481ffa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fa2ba413c8d301b9efdc3102f67c44f4f8cbac2f19b92190331e3150ff274370`  
-		Last Modified: Mon, 23 Feb 2026 20:07:04 GMT  
+	-	`sha256:a1a4cfacb2643224c162803312eafe2f149336a3764b8d9bdacf4ad5c4b89554`  
+		Last Modified: Tue, 17 Mar 2026 18:00:52 GMT  
 		Size: 4.0 MB (3982836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:278d7082e4a362b40404b068e990c7eb746b67b93f88660df582389b6072af11`  
-		Last Modified: Mon, 23 Feb 2026 20:07:03 GMT  
-		Size: 24.3 KB (24321 bytes)  
+	-	`sha256:1b4279ad9c784a5784cf4024f41aa08b5f43f4a672ca57b35de826179f5e5a1e`  
+		Last Modified: Tue, 17 Mar 2026 18:00:52 GMT  
+		Size: 24.3 KB (24320 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `zookeeper:3.8.6` - linux; s390x
@@ -1758,7 +1758,7 @@ $ docker pull zookeeper@sha256:24abcecd006e846f3f27d533038aa98e2079a8cc1ce585795
 ## `zookeeper:3.8.6-jre-17`
 
 ```console
-$ docker pull zookeeper@sha256:c3537f7050d949c18347c41f35c433c93cc4d8b59fa3c6475caeefebaebe0af2
+$ docker pull zookeeper@sha256:1e748974c86de0d11d94309303a1e0b1fab529a35814137f71d22bb4b197b671
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2057,142 +2057,142 @@ $ docker pull zookeeper@sha256:3d355567ff9a3a4309807338e194c3f07c82948433fcd8065
 ### `zookeeper:3.8.6-jre-17` - linux; ppc64le
 
 ```console
-$ docker pull zookeeper@sha256:d3500035badcdebf5f4cfa134f853b0022d2c9843a4e00392313349a22b010bf
+$ docker pull zookeeper@sha256:1af2be1933636acb503596ab4ed6d4192797e27362ed7c47d4c043c1b169cfaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.0 MB (116962489 bytes)**  
+-	Total Size: **117.0 MB (116972870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32cb6627081e75de84707257c5908f118e2b2d2273c69ee82c0bc55f4dad30ce`
+-	Image ID: `sha256:0ca06d4c2fbf4b75429e77c6129925d75ba7b4f162a929af408fc5af5a84251a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG RELEASE
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 10 Feb 2026 17:41:39 GMT
-ADD file:0418bf4995f9b54380cc1e509e3f7d65bb07aed9a367528d0b1084f0a34f3bf3 in / 
-# Tue, 10 Feb 2026 17:41:39 GMT
+# Tue, 24 Feb 2026 07:34:16 GMT
+ADD file:8cdc5dcac981a23986a941c048f55a86d8ba46328e91ad30db9af43286781c61 in / 
+# Tue, 24 Feb 2026 07:34:16 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_VERSION=jdk-17.0.18+8
-# Tue, 17 Feb 2026 20:19:07 GMT
+# Tue, 17 Mar 2026 08:34:45 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b418e38cca87945858ae911988401720095eb671357d47437b4adb49c28dcab';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_x64_linux_hotspot_17.0.18_8.tar.gz';          ;;        arm64)          ESUM='88727c16610d118c0e739f62e6c99dc1cb5a7b4a93a27054fe2a3aa7150e7b5d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.18_8.tar.gz';          ;;        armhf)          ESUM='437c30e861fb091d4bb2ff66a28b1d09e7ac9167f6163e286cb2968d29864e1b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.18_8.tar.gz';          ;;        ppc64el)          ESUM='62a8263401366dea8a41c44a4e5d8b0d22b1f682e9084f124483441fee57044e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.18_8.tar.gz';          ;;        s390x)          ESUM='b8801322ff3bf58ba06efde1ef4a23edc728de3d58e7bf6fd1e58815b0e8d6ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_s390x_linux_hotspot_17.0.18_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 17 Feb 2026 23:22:10 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Tue, 17 Feb 2026 23:22:10 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR" # buildkit
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true # buildkit
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.8.6
-# Tue, 17 Feb 2026 23:22:20 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.8.6-bin
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 # ARGS: GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA SHORT_DISTRO_NAME=zookeeper-3.8.6 DISTRO_NAME=apache-zookeeper-3.8.6-bin
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME" # buildkit
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 WORKDIR /apache-zookeeper-3.8.6-bin
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 VOLUME [/data /datalog /logs]
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 EXPOSE map[2181/tcp:{} 2888/tcp:{} 3888/tcp:{} 8080/tcp:{}]
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.8.6-bin/bin ZOOCFGDIR=/conf
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:27 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 23 Feb 2026 20:06:41 GMT
+# Tue, 17 Mar 2026 18:00:27 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:95401e425d899946469007a0ce4b02622cf84a67cdd684aa25d61d472fffc38f`  
-		Last Modified: Tue, 10 Feb 2026 18:13:52 GMT  
-		Size: 34.4 MB (34446102 bytes)  
+	-	`sha256:31e4dc9ee1718c21d378c7cdb3929e157eabf4d70fe4bbe2e6b8ec5289e836dc`  
+		Last Modified: Tue, 24 Feb 2026 08:08:05 GMT  
+		Size: 34.5 MB (34453448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09208b6847dfa6f5490506d2bee63693e328ebe8d9f225275578ecadc7fc35c0`  
-		Last Modified: Tue, 17 Feb 2026 20:13:03 GMT  
-		Size: 17.6 MB (17619110 bytes)  
+	-	`sha256:d9dfccd4bd959ddb60fe973d79544b531c56c792667c929465975638cd29ad37`  
+		Last Modified: Tue, 17 Mar 2026 08:28:58 GMT  
+		Size: 17.6 MB (17622291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8303684a7a826717048188d2ff057664ca6a98321430f0aa53fb1b27f038b329`  
-		Last Modified: Tue, 17 Feb 2026 20:19:41 GMT  
-		Size: 47.3 MB (47331436 bytes)  
+	-	`sha256:fc8134fae8753fed6c545cb387b4eaddde7465baab7cb082d8e58a7884ae07a6`  
+		Last Modified: Tue, 17 Mar 2026 08:35:15 GMT  
+		Size: 47.3 MB (47331392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4510d40d77c8d8b57ca547880766c7f582d2aa4dc9e4959ad89cda6019870e6f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 158.0 B  
+	-	`sha256:a1a50798c3d3c71253b348d7cd1c587e5ee2f032f4701caab985320306411cb7`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac997d838a9e36f770f7a140ce79875b841cc6e6ad27d09efd8d4264d9c11f0f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:bebc145cbf015b8221169c6ba862f2e438d8cb79bdce73991c34827260748695`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fd171a8e3560f27075aef7726e37a22a27851491e735d7b9801d1d4cda05ff`  
-		Last Modified: Tue, 17 Feb 2026 23:23:10 GMT  
-		Size: 1.8 KB (1792 bytes)  
+	-	`sha256:b9c1c69e3f31830ad4177e43791aac0ff464f6e4854910c0d0185e1f9ab0719e`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65c3cca70133d03f542bdc7671365e050ad5905b33d335293713cda3b8f3c303`  
-		Last Modified: Tue, 17 Feb 2026 23:23:10 GMT  
-		Size: 1.1 MB (1090028 bytes)  
+	-	`sha256:5955c202e6225da87ffee7566dd0a471e85fe55e39932c1889a340ca56c9d108`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.1 MB (1090032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:891ad1c4e3ea5940cb4d1988f777aaab3c15debc73ede53e3ead850e13d81be7`  
-		Last Modified: Mon, 23 Feb 2026 20:07:04 GMT  
-		Size: 16.5 MB (16470772 bytes)  
+	-	`sha256:3186a1e65f5224a35a3ae5987417c12c7d4493d971e3407f74928e21b1081908`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 16.5 MB (16470665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:876dd1eb7e7a338ad4b86f6d777c5a73d5e42e61e08f3aa7f959964f272c35e9`  
-		Last Modified: Mon, 23 Feb 2026 20:07:04 GMT  
+	-	`sha256:2b91052cec771bd1da7842730c62d5d5c9975b1d903bb3d2d82b534e47173dfd`  
+		Last Modified: Tue, 17 Mar 2026 18:00:54 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.8.6-jre-17` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:2d6e1f03d44c114cc50b4d62373ed792e0f8c418298cdec3ea2d5d4803f91672
+$ docker pull zookeeper@sha256:9e47d6d18050a10055c7dad13aba59cab2be5a232e2363d8e6a31b8fb4520ed5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (4007157 bytes)**  
+-	Total Size: **4.0 MB (4007156 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10d60217095d53df4cac8833af1e9aba4c2a134e0a1290b291732756a4b28cf5`
+-	Image ID: `sha256:63cfb4cdf07e6c6e7ea345eb514c12f3e54e49c27f511d98652a9438f6481ffa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fa2ba413c8d301b9efdc3102f67c44f4f8cbac2f19b92190331e3150ff274370`  
-		Last Modified: Mon, 23 Feb 2026 20:07:04 GMT  
+	-	`sha256:a1a4cfacb2643224c162803312eafe2f149336a3764b8d9bdacf4ad5c4b89554`  
+		Last Modified: Tue, 17 Mar 2026 18:00:52 GMT  
 		Size: 4.0 MB (3982836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:278d7082e4a362b40404b068e990c7eb746b67b93f88660df582389b6072af11`  
-		Last Modified: Mon, 23 Feb 2026 20:07:03 GMT  
-		Size: 24.3 KB (24321 bytes)  
+	-	`sha256:1b4279ad9c784a5784cf4024f41aa08b5f43f4a672ca57b35de826179f5e5a1e`  
+		Last Modified: Tue, 17 Mar 2026 18:00:52 GMT  
+		Size: 24.3 KB (24320 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `zookeeper:3.8.6-jre-17` - linux; s390x
@@ -2339,7 +2339,7 @@ $ docker pull zookeeper@sha256:24abcecd006e846f3f27d533038aa98e2079a8cc1ce585795
 ## `zookeeper:3.9`
 
 ```console
-$ docker pull zookeeper@sha256:bf7d74a7f5e137f9579efac9e65016353d2984cf5fd5955f0b286675ead68c86
+$ docker pull zookeeper@sha256:fc17a45b74b4330fe2a02c1f0f1790696cc097695a967a32a203875814d44c17
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2638,141 +2638,141 @@ $ docker pull zookeeper@sha256:ce628502b8109b2ef75dce4d4c4fb4404f7287e200caab113
 ### `zookeeper:3.9` - linux; ppc64le
 
 ```console
-$ docker pull zookeeper@sha256:0f26475022c2dcd2ae19ff4ff5008e30e814ed02a8e3af536563a55f0158e32f
+$ docker pull zookeeper@sha256:3693f5d7a361fdc59ac55b9c05358a5a30489bfff7d94e9021f3a5b8572fc156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.3 MB (123333240 bytes)**  
+-	Total Size: **123.3 MB (123343820 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c01b7aa177ca96fe764de539296673e31eab739a4e244df28d40daade697c676`
+-	Image ID: `sha256:9141840bc39fb34a26872862efc53d9a0d80eba8238886437fc57ee41bc4d47c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG RELEASE
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 10 Feb 2026 17:41:39 GMT
-ADD file:0418bf4995f9b54380cc1e509e3f7d65bb07aed9a367528d0b1084f0a34f3bf3 in / 
-# Tue, 10 Feb 2026 17:41:39 GMT
+# Tue, 24 Feb 2026 07:34:16 GMT
+ADD file:8cdc5dcac981a23986a941c048f55a86d8ba46328e91ad30db9af43286781c61 in / 
+# Tue, 24 Feb 2026 07:34:16 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_VERSION=jdk-17.0.18+8
-# Tue, 17 Feb 2026 20:19:07 GMT
+# Tue, 17 Mar 2026 08:34:45 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b418e38cca87945858ae911988401720095eb671357d47437b4adb49c28dcab';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_x64_linux_hotspot_17.0.18_8.tar.gz';          ;;        arm64)          ESUM='88727c16610d118c0e739f62e6c99dc1cb5a7b4a93a27054fe2a3aa7150e7b5d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.18_8.tar.gz';          ;;        armhf)          ESUM='437c30e861fb091d4bb2ff66a28b1d09e7ac9167f6163e286cb2968d29864e1b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.18_8.tar.gz';          ;;        ppc64el)          ESUM='62a8263401366dea8a41c44a4e5d8b0d22b1f682e9084f124483441fee57044e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.18_8.tar.gz';          ;;        s390x)          ESUM='b8801322ff3bf58ba06efde1ef4a23edc728de3d58e7bf6fd1e58815b0e8d6ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_s390x_linux_hotspot_17.0.18_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 12 Mar 2026 18:45:31 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Thu, 12 Mar 2026 18:45:31 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR" # buildkit
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true # buildkit
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.9.5
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.9.5-bin
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:27 GMT
 # ARGS: GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA SHORT_DISTRO_NAME=zookeeper-3.9.5 DISTRO_NAME=apache-zookeeper-3.9.5-bin
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME" # buildkit
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 WORKDIR /apache-zookeeper-3.9.5-bin
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 VOLUME [/data /datalog /logs]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 EXPOSE map[2181/tcp:{} 2888/tcp:{} 3888/tcp:{} 8080/tcp:{}]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.9.5-bin/bin ZOOCFGDIR=/conf
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:95401e425d899946469007a0ce4b02622cf84a67cdd684aa25d61d472fffc38f`  
-		Last Modified: Tue, 10 Feb 2026 18:13:52 GMT  
-		Size: 34.4 MB (34446102 bytes)  
+	-	`sha256:31e4dc9ee1718c21d378c7cdb3929e157eabf4d70fe4bbe2e6b8ec5289e836dc`  
+		Last Modified: Tue, 24 Feb 2026 08:08:05 GMT  
+		Size: 34.5 MB (34453448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09208b6847dfa6f5490506d2bee63693e328ebe8d9f225275578ecadc7fc35c0`  
-		Last Modified: Tue, 17 Feb 2026 20:13:03 GMT  
-		Size: 17.6 MB (17619110 bytes)  
+	-	`sha256:d9dfccd4bd959ddb60fe973d79544b531c56c792667c929465975638cd29ad37`  
+		Last Modified: Tue, 17 Mar 2026 08:28:58 GMT  
+		Size: 17.6 MB (17622291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8303684a7a826717048188d2ff057664ca6a98321430f0aa53fb1b27f038b329`  
-		Last Modified: Tue, 17 Feb 2026 20:19:41 GMT  
-		Size: 47.3 MB (47331436 bytes)  
+	-	`sha256:fc8134fae8753fed6c545cb387b4eaddde7465baab7cb082d8e58a7884ae07a6`  
+		Last Modified: Tue, 17 Mar 2026 08:35:15 GMT  
+		Size: 47.3 MB (47331392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4510d40d77c8d8b57ca547880766c7f582d2aa4dc9e4959ad89cda6019870e6f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 158.0 B  
+	-	`sha256:a1a50798c3d3c71253b348d7cd1c587e5ee2f032f4701caab985320306411cb7`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac997d838a9e36f770f7a140ce79875b841cc6e6ad27d09efd8d4264d9c11f0f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:bebc145cbf015b8221169c6ba862f2e438d8cb79bdce73991c34827260748695`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:883040d3ac73b653b836af96c0cb0f842079a048279c3a904909d70cc91d8c48`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 1.8 KB (1794 bytes)  
+	-	`sha256:b9c1c69e3f31830ad4177e43791aac0ff464f6e4854910c0d0185e1f9ab0719e`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67e5e275ff7119dde4f35ac5b88ee309de3713bacf818f24f5b58f0050e51d37`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 1.1 MB (1090025 bytes)  
+	-	`sha256:5955c202e6225da87ffee7566dd0a471e85fe55e39932c1889a340ca56c9d108`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.1 MB (1090032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f155114964013f55da45b3ab923a04e2f2e0109d3719597fe18f84825b4aa93`  
-		Last Modified: Thu, 12 Mar 2026 18:46:22 GMT  
-		Size: 22.8 MB (22841526 bytes)  
+	-	`sha256:889c057934d8fa82bfb2fb32767d837362b79382b329c4eaef555724db3ed8a5`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
+		Size: 22.8 MB (22841615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f1bd833200dbcb695cd3791ba6cf6652f488c398ac10dec6e30f1fa9b79d842`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 774.0 B  
+	-	`sha256:c28a4b3d0810bfe72ecd3ea5c6374445e72909dd3034ee8d0ac72eefdfc4e265`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
+		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.9` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:5fd0afbd268cd71132f17631afbc3af945184a4920b593ede6a502b4d7630f73
+$ docker pull zookeeper@sha256:09b817801d0abe5b120cfa8f3ea347b8eca28c8e5e6eae9634c676f00d1e03e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.0 MB (4014249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b44f468b996121b0ea8d293b2578b4040037950291935f0019c6e158a8f5b1fe`
+-	Image ID: `sha256:cf41203e537bb7b48750ad59876fcee3c19e48c236354de33cc30c69a01aecaf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fb7d23992290d35eadd204f7b0ad76f61b64644d18c2e28658d841eb610a5aac`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
+	-	`sha256:9480e07f96b27ddd949078de7d005ab846974417dd312bc1de957db5d55decbd`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
 		Size: 4.0 MB (3989618 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b548206ac6f76feac252ceed3040ad0888502f452505be6bf32dbbe5787e8f74`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
+	-	`sha256:2f6c2db3ed48a46526b87a2d1a6893879dae90b6041b00998d8e34b3927f2f19`  
+		Last Modified: Tue, 17 Mar 2026 18:01:47 GMT  
 		Size: 24.6 KB (24631 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2920,7 +2920,7 @@ $ docker pull zookeeper@sha256:3e2ac0567fbe2cb0be857e74bfd5aa5353358e5c5b01364ea
 ## `zookeeper:3.9-jre-17`
 
 ```console
-$ docker pull zookeeper@sha256:bf7d74a7f5e137f9579efac9e65016353d2984cf5fd5955f0b286675ead68c86
+$ docker pull zookeeper@sha256:fc17a45b74b4330fe2a02c1f0f1790696cc097695a967a32a203875814d44c17
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3219,141 +3219,141 @@ $ docker pull zookeeper@sha256:ce628502b8109b2ef75dce4d4c4fb4404f7287e200caab113
 ### `zookeeper:3.9-jre-17` - linux; ppc64le
 
 ```console
-$ docker pull zookeeper@sha256:0f26475022c2dcd2ae19ff4ff5008e30e814ed02a8e3af536563a55f0158e32f
+$ docker pull zookeeper@sha256:3693f5d7a361fdc59ac55b9c05358a5a30489bfff7d94e9021f3a5b8572fc156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.3 MB (123333240 bytes)**  
+-	Total Size: **123.3 MB (123343820 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c01b7aa177ca96fe764de539296673e31eab739a4e244df28d40daade697c676`
+-	Image ID: `sha256:9141840bc39fb34a26872862efc53d9a0d80eba8238886437fc57ee41bc4d47c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG RELEASE
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 10 Feb 2026 17:41:39 GMT
-ADD file:0418bf4995f9b54380cc1e509e3f7d65bb07aed9a367528d0b1084f0a34f3bf3 in / 
-# Tue, 10 Feb 2026 17:41:39 GMT
+# Tue, 24 Feb 2026 07:34:16 GMT
+ADD file:8cdc5dcac981a23986a941c048f55a86d8ba46328e91ad30db9af43286781c61 in / 
+# Tue, 24 Feb 2026 07:34:16 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_VERSION=jdk-17.0.18+8
-# Tue, 17 Feb 2026 20:19:07 GMT
+# Tue, 17 Mar 2026 08:34:45 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b418e38cca87945858ae911988401720095eb671357d47437b4adb49c28dcab';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_x64_linux_hotspot_17.0.18_8.tar.gz';          ;;        arm64)          ESUM='88727c16610d118c0e739f62e6c99dc1cb5a7b4a93a27054fe2a3aa7150e7b5d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.18_8.tar.gz';          ;;        armhf)          ESUM='437c30e861fb091d4bb2ff66a28b1d09e7ac9167f6163e286cb2968d29864e1b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.18_8.tar.gz';          ;;        ppc64el)          ESUM='62a8263401366dea8a41c44a4e5d8b0d22b1f682e9084f124483441fee57044e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.18_8.tar.gz';          ;;        s390x)          ESUM='b8801322ff3bf58ba06efde1ef4a23edc728de3d58e7bf6fd1e58815b0e8d6ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_s390x_linux_hotspot_17.0.18_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 12 Mar 2026 18:45:31 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Thu, 12 Mar 2026 18:45:31 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR" # buildkit
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true # buildkit
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.9.5
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.9.5-bin
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:27 GMT
 # ARGS: GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA SHORT_DISTRO_NAME=zookeeper-3.9.5 DISTRO_NAME=apache-zookeeper-3.9.5-bin
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME" # buildkit
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 WORKDIR /apache-zookeeper-3.9.5-bin
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 VOLUME [/data /datalog /logs]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 EXPOSE map[2181/tcp:{} 2888/tcp:{} 3888/tcp:{} 8080/tcp:{}]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.9.5-bin/bin ZOOCFGDIR=/conf
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:95401e425d899946469007a0ce4b02622cf84a67cdd684aa25d61d472fffc38f`  
-		Last Modified: Tue, 10 Feb 2026 18:13:52 GMT  
-		Size: 34.4 MB (34446102 bytes)  
+	-	`sha256:31e4dc9ee1718c21d378c7cdb3929e157eabf4d70fe4bbe2e6b8ec5289e836dc`  
+		Last Modified: Tue, 24 Feb 2026 08:08:05 GMT  
+		Size: 34.5 MB (34453448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09208b6847dfa6f5490506d2bee63693e328ebe8d9f225275578ecadc7fc35c0`  
-		Last Modified: Tue, 17 Feb 2026 20:13:03 GMT  
-		Size: 17.6 MB (17619110 bytes)  
+	-	`sha256:d9dfccd4bd959ddb60fe973d79544b531c56c792667c929465975638cd29ad37`  
+		Last Modified: Tue, 17 Mar 2026 08:28:58 GMT  
+		Size: 17.6 MB (17622291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8303684a7a826717048188d2ff057664ca6a98321430f0aa53fb1b27f038b329`  
-		Last Modified: Tue, 17 Feb 2026 20:19:41 GMT  
-		Size: 47.3 MB (47331436 bytes)  
+	-	`sha256:fc8134fae8753fed6c545cb387b4eaddde7465baab7cb082d8e58a7884ae07a6`  
+		Last Modified: Tue, 17 Mar 2026 08:35:15 GMT  
+		Size: 47.3 MB (47331392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4510d40d77c8d8b57ca547880766c7f582d2aa4dc9e4959ad89cda6019870e6f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 158.0 B  
+	-	`sha256:a1a50798c3d3c71253b348d7cd1c587e5ee2f032f4701caab985320306411cb7`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac997d838a9e36f770f7a140ce79875b841cc6e6ad27d09efd8d4264d9c11f0f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:bebc145cbf015b8221169c6ba862f2e438d8cb79bdce73991c34827260748695`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:883040d3ac73b653b836af96c0cb0f842079a048279c3a904909d70cc91d8c48`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 1.8 KB (1794 bytes)  
+	-	`sha256:b9c1c69e3f31830ad4177e43791aac0ff464f6e4854910c0d0185e1f9ab0719e`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67e5e275ff7119dde4f35ac5b88ee309de3713bacf818f24f5b58f0050e51d37`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 1.1 MB (1090025 bytes)  
+	-	`sha256:5955c202e6225da87ffee7566dd0a471e85fe55e39932c1889a340ca56c9d108`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.1 MB (1090032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f155114964013f55da45b3ab923a04e2f2e0109d3719597fe18f84825b4aa93`  
-		Last Modified: Thu, 12 Mar 2026 18:46:22 GMT  
-		Size: 22.8 MB (22841526 bytes)  
+	-	`sha256:889c057934d8fa82bfb2fb32767d837362b79382b329c4eaef555724db3ed8a5`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
+		Size: 22.8 MB (22841615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f1bd833200dbcb695cd3791ba6cf6652f488c398ac10dec6e30f1fa9b79d842`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 774.0 B  
+	-	`sha256:c28a4b3d0810bfe72ecd3ea5c6374445e72909dd3034ee8d0ac72eefdfc4e265`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
+		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.9-jre-17` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:5fd0afbd268cd71132f17631afbc3af945184a4920b593ede6a502b4d7630f73
+$ docker pull zookeeper@sha256:09b817801d0abe5b120cfa8f3ea347b8eca28c8e5e6eae9634c676f00d1e03e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.0 MB (4014249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b44f468b996121b0ea8d293b2578b4040037950291935f0019c6e158a8f5b1fe`
+-	Image ID: `sha256:cf41203e537bb7b48750ad59876fcee3c19e48c236354de33cc30c69a01aecaf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fb7d23992290d35eadd204f7b0ad76f61b64644d18c2e28658d841eb610a5aac`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
+	-	`sha256:9480e07f96b27ddd949078de7d005ab846974417dd312bc1de957db5d55decbd`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
 		Size: 4.0 MB (3989618 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b548206ac6f76feac252ceed3040ad0888502f452505be6bf32dbbe5787e8f74`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
+	-	`sha256:2f6c2db3ed48a46526b87a2d1a6893879dae90b6041b00998d8e34b3927f2f19`  
+		Last Modified: Tue, 17 Mar 2026 18:01:47 GMT  
 		Size: 24.6 KB (24631 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3501,7 +3501,7 @@ $ docker pull zookeeper@sha256:3e2ac0567fbe2cb0be857e74bfd5aa5353358e5c5b01364ea
 ## `zookeeper:3.9.5`
 
 ```console
-$ docker pull zookeeper@sha256:bf7d74a7f5e137f9579efac9e65016353d2984cf5fd5955f0b286675ead68c86
+$ docker pull zookeeper@sha256:fc17a45b74b4330fe2a02c1f0f1790696cc097695a967a32a203875814d44c17
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3800,141 +3800,141 @@ $ docker pull zookeeper@sha256:ce628502b8109b2ef75dce4d4c4fb4404f7287e200caab113
 ### `zookeeper:3.9.5` - linux; ppc64le
 
 ```console
-$ docker pull zookeeper@sha256:0f26475022c2dcd2ae19ff4ff5008e30e814ed02a8e3af536563a55f0158e32f
+$ docker pull zookeeper@sha256:3693f5d7a361fdc59ac55b9c05358a5a30489bfff7d94e9021f3a5b8572fc156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.3 MB (123333240 bytes)**  
+-	Total Size: **123.3 MB (123343820 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c01b7aa177ca96fe764de539296673e31eab739a4e244df28d40daade697c676`
+-	Image ID: `sha256:9141840bc39fb34a26872862efc53d9a0d80eba8238886437fc57ee41bc4d47c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG RELEASE
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 10 Feb 2026 17:41:39 GMT
-ADD file:0418bf4995f9b54380cc1e509e3f7d65bb07aed9a367528d0b1084f0a34f3bf3 in / 
-# Tue, 10 Feb 2026 17:41:39 GMT
+# Tue, 24 Feb 2026 07:34:16 GMT
+ADD file:8cdc5dcac981a23986a941c048f55a86d8ba46328e91ad30db9af43286781c61 in / 
+# Tue, 24 Feb 2026 07:34:16 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_VERSION=jdk-17.0.18+8
-# Tue, 17 Feb 2026 20:19:07 GMT
+# Tue, 17 Mar 2026 08:34:45 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b418e38cca87945858ae911988401720095eb671357d47437b4adb49c28dcab';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_x64_linux_hotspot_17.0.18_8.tar.gz';          ;;        arm64)          ESUM='88727c16610d118c0e739f62e6c99dc1cb5a7b4a93a27054fe2a3aa7150e7b5d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.18_8.tar.gz';          ;;        armhf)          ESUM='437c30e861fb091d4bb2ff66a28b1d09e7ac9167f6163e286cb2968d29864e1b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.18_8.tar.gz';          ;;        ppc64el)          ESUM='62a8263401366dea8a41c44a4e5d8b0d22b1f682e9084f124483441fee57044e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.18_8.tar.gz';          ;;        s390x)          ESUM='b8801322ff3bf58ba06efde1ef4a23edc728de3d58e7bf6fd1e58815b0e8d6ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_s390x_linux_hotspot_17.0.18_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 12 Mar 2026 18:45:31 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Thu, 12 Mar 2026 18:45:31 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR" # buildkit
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true # buildkit
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.9.5
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.9.5-bin
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:27 GMT
 # ARGS: GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA SHORT_DISTRO_NAME=zookeeper-3.9.5 DISTRO_NAME=apache-zookeeper-3.9.5-bin
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME" # buildkit
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 WORKDIR /apache-zookeeper-3.9.5-bin
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 VOLUME [/data /datalog /logs]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 EXPOSE map[2181/tcp:{} 2888/tcp:{} 3888/tcp:{} 8080/tcp:{}]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.9.5-bin/bin ZOOCFGDIR=/conf
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:95401e425d899946469007a0ce4b02622cf84a67cdd684aa25d61d472fffc38f`  
-		Last Modified: Tue, 10 Feb 2026 18:13:52 GMT  
-		Size: 34.4 MB (34446102 bytes)  
+	-	`sha256:31e4dc9ee1718c21d378c7cdb3929e157eabf4d70fe4bbe2e6b8ec5289e836dc`  
+		Last Modified: Tue, 24 Feb 2026 08:08:05 GMT  
+		Size: 34.5 MB (34453448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09208b6847dfa6f5490506d2bee63693e328ebe8d9f225275578ecadc7fc35c0`  
-		Last Modified: Tue, 17 Feb 2026 20:13:03 GMT  
-		Size: 17.6 MB (17619110 bytes)  
+	-	`sha256:d9dfccd4bd959ddb60fe973d79544b531c56c792667c929465975638cd29ad37`  
+		Last Modified: Tue, 17 Mar 2026 08:28:58 GMT  
+		Size: 17.6 MB (17622291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8303684a7a826717048188d2ff057664ca6a98321430f0aa53fb1b27f038b329`  
-		Last Modified: Tue, 17 Feb 2026 20:19:41 GMT  
-		Size: 47.3 MB (47331436 bytes)  
+	-	`sha256:fc8134fae8753fed6c545cb387b4eaddde7465baab7cb082d8e58a7884ae07a6`  
+		Last Modified: Tue, 17 Mar 2026 08:35:15 GMT  
+		Size: 47.3 MB (47331392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4510d40d77c8d8b57ca547880766c7f582d2aa4dc9e4959ad89cda6019870e6f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 158.0 B  
+	-	`sha256:a1a50798c3d3c71253b348d7cd1c587e5ee2f032f4701caab985320306411cb7`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac997d838a9e36f770f7a140ce79875b841cc6e6ad27d09efd8d4264d9c11f0f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:bebc145cbf015b8221169c6ba862f2e438d8cb79bdce73991c34827260748695`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:883040d3ac73b653b836af96c0cb0f842079a048279c3a904909d70cc91d8c48`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 1.8 KB (1794 bytes)  
+	-	`sha256:b9c1c69e3f31830ad4177e43791aac0ff464f6e4854910c0d0185e1f9ab0719e`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67e5e275ff7119dde4f35ac5b88ee309de3713bacf818f24f5b58f0050e51d37`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 1.1 MB (1090025 bytes)  
+	-	`sha256:5955c202e6225da87ffee7566dd0a471e85fe55e39932c1889a340ca56c9d108`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.1 MB (1090032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f155114964013f55da45b3ab923a04e2f2e0109d3719597fe18f84825b4aa93`  
-		Last Modified: Thu, 12 Mar 2026 18:46:22 GMT  
-		Size: 22.8 MB (22841526 bytes)  
+	-	`sha256:889c057934d8fa82bfb2fb32767d837362b79382b329c4eaef555724db3ed8a5`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
+		Size: 22.8 MB (22841615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f1bd833200dbcb695cd3791ba6cf6652f488c398ac10dec6e30f1fa9b79d842`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 774.0 B  
+	-	`sha256:c28a4b3d0810bfe72ecd3ea5c6374445e72909dd3034ee8d0ac72eefdfc4e265`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
+		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.9.5` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:5fd0afbd268cd71132f17631afbc3af945184a4920b593ede6a502b4d7630f73
+$ docker pull zookeeper@sha256:09b817801d0abe5b120cfa8f3ea347b8eca28c8e5e6eae9634c676f00d1e03e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.0 MB (4014249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b44f468b996121b0ea8d293b2578b4040037950291935f0019c6e158a8f5b1fe`
+-	Image ID: `sha256:cf41203e537bb7b48750ad59876fcee3c19e48c236354de33cc30c69a01aecaf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fb7d23992290d35eadd204f7b0ad76f61b64644d18c2e28658d841eb610a5aac`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
+	-	`sha256:9480e07f96b27ddd949078de7d005ab846974417dd312bc1de957db5d55decbd`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
 		Size: 4.0 MB (3989618 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b548206ac6f76feac252ceed3040ad0888502f452505be6bf32dbbe5787e8f74`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
+	-	`sha256:2f6c2db3ed48a46526b87a2d1a6893879dae90b6041b00998d8e34b3927f2f19`  
+		Last Modified: Tue, 17 Mar 2026 18:01:47 GMT  
 		Size: 24.6 KB (24631 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4082,7 +4082,7 @@ $ docker pull zookeeper@sha256:3e2ac0567fbe2cb0be857e74bfd5aa5353358e5c5b01364ea
 ## `zookeeper:3.9.5-jre-17`
 
 ```console
-$ docker pull zookeeper@sha256:bf7d74a7f5e137f9579efac9e65016353d2984cf5fd5955f0b286675ead68c86
+$ docker pull zookeeper@sha256:fc17a45b74b4330fe2a02c1f0f1790696cc097695a967a32a203875814d44c17
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4381,141 +4381,141 @@ $ docker pull zookeeper@sha256:ce628502b8109b2ef75dce4d4c4fb4404f7287e200caab113
 ### `zookeeper:3.9.5-jre-17` - linux; ppc64le
 
 ```console
-$ docker pull zookeeper@sha256:0f26475022c2dcd2ae19ff4ff5008e30e814ed02a8e3af536563a55f0158e32f
+$ docker pull zookeeper@sha256:3693f5d7a361fdc59ac55b9c05358a5a30489bfff7d94e9021f3a5b8572fc156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.3 MB (123333240 bytes)**  
+-	Total Size: **123.3 MB (123343820 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c01b7aa177ca96fe764de539296673e31eab739a4e244df28d40daade697c676`
+-	Image ID: `sha256:9141840bc39fb34a26872862efc53d9a0d80eba8238886437fc57ee41bc4d47c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG RELEASE
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 10 Feb 2026 17:41:39 GMT
-ADD file:0418bf4995f9b54380cc1e509e3f7d65bb07aed9a367528d0b1084f0a34f3bf3 in / 
-# Tue, 10 Feb 2026 17:41:39 GMT
+# Tue, 24 Feb 2026 07:34:16 GMT
+ADD file:8cdc5dcac981a23986a941c048f55a86d8ba46328e91ad30db9af43286781c61 in / 
+# Tue, 24 Feb 2026 07:34:16 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_VERSION=jdk-17.0.18+8
-# Tue, 17 Feb 2026 20:19:07 GMT
+# Tue, 17 Mar 2026 08:34:45 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b418e38cca87945858ae911988401720095eb671357d47437b4adb49c28dcab';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_x64_linux_hotspot_17.0.18_8.tar.gz';          ;;        arm64)          ESUM='88727c16610d118c0e739f62e6c99dc1cb5a7b4a93a27054fe2a3aa7150e7b5d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.18_8.tar.gz';          ;;        armhf)          ESUM='437c30e861fb091d4bb2ff66a28b1d09e7ac9167f6163e286cb2968d29864e1b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.18_8.tar.gz';          ;;        ppc64el)          ESUM='62a8263401366dea8a41c44a4e5d8b0d22b1f682e9084f124483441fee57044e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.18_8.tar.gz';          ;;        s390x)          ESUM='b8801322ff3bf58ba06efde1ef4a23edc728de3d58e7bf6fd1e58815b0e8d6ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_s390x_linux_hotspot_17.0.18_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 12 Mar 2026 18:45:31 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Thu, 12 Mar 2026 18:45:31 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR" # buildkit
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true # buildkit
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.9.5
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.9.5-bin
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:27 GMT
 # ARGS: GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA SHORT_DISTRO_NAME=zookeeper-3.9.5 DISTRO_NAME=apache-zookeeper-3.9.5-bin
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME" # buildkit
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 WORKDIR /apache-zookeeper-3.9.5-bin
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 VOLUME [/data /datalog /logs]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 EXPOSE map[2181/tcp:{} 2888/tcp:{} 3888/tcp:{} 8080/tcp:{}]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.9.5-bin/bin ZOOCFGDIR=/conf
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:95401e425d899946469007a0ce4b02622cf84a67cdd684aa25d61d472fffc38f`  
-		Last Modified: Tue, 10 Feb 2026 18:13:52 GMT  
-		Size: 34.4 MB (34446102 bytes)  
+	-	`sha256:31e4dc9ee1718c21d378c7cdb3929e157eabf4d70fe4bbe2e6b8ec5289e836dc`  
+		Last Modified: Tue, 24 Feb 2026 08:08:05 GMT  
+		Size: 34.5 MB (34453448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09208b6847dfa6f5490506d2bee63693e328ebe8d9f225275578ecadc7fc35c0`  
-		Last Modified: Tue, 17 Feb 2026 20:13:03 GMT  
-		Size: 17.6 MB (17619110 bytes)  
+	-	`sha256:d9dfccd4bd959ddb60fe973d79544b531c56c792667c929465975638cd29ad37`  
+		Last Modified: Tue, 17 Mar 2026 08:28:58 GMT  
+		Size: 17.6 MB (17622291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8303684a7a826717048188d2ff057664ca6a98321430f0aa53fb1b27f038b329`  
-		Last Modified: Tue, 17 Feb 2026 20:19:41 GMT  
-		Size: 47.3 MB (47331436 bytes)  
+	-	`sha256:fc8134fae8753fed6c545cb387b4eaddde7465baab7cb082d8e58a7884ae07a6`  
+		Last Modified: Tue, 17 Mar 2026 08:35:15 GMT  
+		Size: 47.3 MB (47331392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4510d40d77c8d8b57ca547880766c7f582d2aa4dc9e4959ad89cda6019870e6f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 158.0 B  
+	-	`sha256:a1a50798c3d3c71253b348d7cd1c587e5ee2f032f4701caab985320306411cb7`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac997d838a9e36f770f7a140ce79875b841cc6e6ad27d09efd8d4264d9c11f0f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:bebc145cbf015b8221169c6ba862f2e438d8cb79bdce73991c34827260748695`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:883040d3ac73b653b836af96c0cb0f842079a048279c3a904909d70cc91d8c48`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 1.8 KB (1794 bytes)  
+	-	`sha256:b9c1c69e3f31830ad4177e43791aac0ff464f6e4854910c0d0185e1f9ab0719e`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67e5e275ff7119dde4f35ac5b88ee309de3713bacf818f24f5b58f0050e51d37`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 1.1 MB (1090025 bytes)  
+	-	`sha256:5955c202e6225da87ffee7566dd0a471e85fe55e39932c1889a340ca56c9d108`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.1 MB (1090032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f155114964013f55da45b3ab923a04e2f2e0109d3719597fe18f84825b4aa93`  
-		Last Modified: Thu, 12 Mar 2026 18:46:22 GMT  
-		Size: 22.8 MB (22841526 bytes)  
+	-	`sha256:889c057934d8fa82bfb2fb32767d837362b79382b329c4eaef555724db3ed8a5`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
+		Size: 22.8 MB (22841615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f1bd833200dbcb695cd3791ba6cf6652f488c398ac10dec6e30f1fa9b79d842`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 774.0 B  
+	-	`sha256:c28a4b3d0810bfe72ecd3ea5c6374445e72909dd3034ee8d0ac72eefdfc4e265`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
+		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.9.5-jre-17` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:5fd0afbd268cd71132f17631afbc3af945184a4920b593ede6a502b4d7630f73
+$ docker pull zookeeper@sha256:09b817801d0abe5b120cfa8f3ea347b8eca28c8e5e6eae9634c676f00d1e03e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.0 MB (4014249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b44f468b996121b0ea8d293b2578b4040037950291935f0019c6e158a8f5b1fe`
+-	Image ID: `sha256:cf41203e537bb7b48750ad59876fcee3c19e48c236354de33cc30c69a01aecaf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fb7d23992290d35eadd204f7b0ad76f61b64644d18c2e28658d841eb610a5aac`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
+	-	`sha256:9480e07f96b27ddd949078de7d005ab846974417dd312bc1de957db5d55decbd`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
 		Size: 4.0 MB (3989618 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b548206ac6f76feac252ceed3040ad0888502f452505be6bf32dbbe5787e8f74`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
+	-	`sha256:2f6c2db3ed48a46526b87a2d1a6893879dae90b6041b00998d8e34b3927f2f19`  
+		Last Modified: Tue, 17 Mar 2026 18:01:47 GMT  
 		Size: 24.6 KB (24631 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4663,7 +4663,7 @@ $ docker pull zookeeper@sha256:3e2ac0567fbe2cb0be857e74bfd5aa5353358e5c5b01364ea
 ## `zookeeper:latest`
 
 ```console
-$ docker pull zookeeper@sha256:bf7d74a7f5e137f9579efac9e65016353d2984cf5fd5955f0b286675ead68c86
+$ docker pull zookeeper@sha256:fc17a45b74b4330fe2a02c1f0f1790696cc097695a967a32a203875814d44c17
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4962,141 +4962,141 @@ $ docker pull zookeeper@sha256:ce628502b8109b2ef75dce4d4c4fb4404f7287e200caab113
 ### `zookeeper:latest` - linux; ppc64le
 
 ```console
-$ docker pull zookeeper@sha256:0f26475022c2dcd2ae19ff4ff5008e30e814ed02a8e3af536563a55f0158e32f
+$ docker pull zookeeper@sha256:3693f5d7a361fdc59ac55b9c05358a5a30489bfff7d94e9021f3a5b8572fc156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.3 MB (123333240 bytes)**  
+-	Total Size: **123.3 MB (123343820 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c01b7aa177ca96fe764de539296673e31eab739a4e244df28d40daade697c676`
+-	Image ID: `sha256:9141840bc39fb34a26872862efc53d9a0d80eba8238886437fc57ee41bc4d47c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG RELEASE
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Feb 2026 17:41:33 GMT
+# Tue, 24 Feb 2026 07:34:11 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 10 Feb 2026 17:41:39 GMT
-ADD file:0418bf4995f9b54380cc1e509e3f7d65bb07aed9a367528d0b1084f0a34f3bf3 in / 
-# Tue, 10 Feb 2026 17:41:39 GMT
+# Tue, 24 Feb 2026 07:34:16 GMT
+ADD file:8cdc5dcac981a23986a941c048f55a86d8ba46328e91ad30db9af43286781c61 in / 
+# Tue, 24 Feb 2026 07:34:16 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Feb 2026 20:12:14 GMT
+# Tue, 17 Mar 2026 08:28:22 GMT
 ENV JAVA_VERSION=jdk-17.0.18+8
-# Tue, 17 Feb 2026 20:19:07 GMT
+# Tue, 17 Mar 2026 08:34:45 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b418e38cca87945858ae911988401720095eb671357d47437b4adb49c28dcab';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_x64_linux_hotspot_17.0.18_8.tar.gz';          ;;        arm64)          ESUM='88727c16610d118c0e739f62e6c99dc1cb5a7b4a93a27054fe2a3aa7150e7b5d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.18_8.tar.gz';          ;;        armhf)          ESUM='437c30e861fb091d4bb2ff66a28b1d09e7ac9167f6163e286cb2968d29864e1b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.18_8.tar.gz';          ;;        ppc64el)          ESUM='62a8263401366dea8a41c44a4e5d8b0d22b1f682e9084f124483441fee57044e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.18_8.tar.gz';          ;;        s390x)          ESUM='b8801322ff3bf58ba06efde1ef4a23edc728de3d58e7bf6fd1e58815b0e8d6ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_s390x_linux_hotspot_17.0.18_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 17 Feb 2026 20:19:08 GMT
+# Tue, 17 Mar 2026 08:34:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 12 Mar 2026 18:45:31 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Thu, 12 Mar 2026 18:45:31 GMT
+# Tue, 17 Mar 2026 18:00:11 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR" # buildkit
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true # buildkit
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.9.5
-# Thu, 12 Mar 2026 18:45:54 GMT
+# Tue, 17 Mar 2026 18:00:19 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.9.5-bin
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:27 GMT
 # ARGS: GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA SHORT_DISTRO_NAME=zookeeper-3.9.5 DISTRO_NAME=apache-zookeeper-3.9.5-bin
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME" # buildkit
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 WORKDIR /apache-zookeeper-3.9.5-bin
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 VOLUME [/data /datalog /logs]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 EXPOSE map[2181/tcp:{} 2888/tcp:{} 3888/tcp:{} 8080/tcp:{}]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.9.5-bin/bin ZOOCFGDIR=/conf
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 12 Mar 2026 18:46:01 GMT
+# Tue, 17 Mar 2026 18:01:28 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:95401e425d899946469007a0ce4b02622cf84a67cdd684aa25d61d472fffc38f`  
-		Last Modified: Tue, 10 Feb 2026 18:13:52 GMT  
-		Size: 34.4 MB (34446102 bytes)  
+	-	`sha256:31e4dc9ee1718c21d378c7cdb3929e157eabf4d70fe4bbe2e6b8ec5289e836dc`  
+		Last Modified: Tue, 24 Feb 2026 08:08:05 GMT  
+		Size: 34.5 MB (34453448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09208b6847dfa6f5490506d2bee63693e328ebe8d9f225275578ecadc7fc35c0`  
-		Last Modified: Tue, 17 Feb 2026 20:13:03 GMT  
-		Size: 17.6 MB (17619110 bytes)  
+	-	`sha256:d9dfccd4bd959ddb60fe973d79544b531c56c792667c929465975638cd29ad37`  
+		Last Modified: Tue, 17 Mar 2026 08:28:58 GMT  
+		Size: 17.6 MB (17622291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8303684a7a826717048188d2ff057664ca6a98321430f0aa53fb1b27f038b329`  
-		Last Modified: Tue, 17 Feb 2026 20:19:41 GMT  
-		Size: 47.3 MB (47331436 bytes)  
+	-	`sha256:fc8134fae8753fed6c545cb387b4eaddde7465baab7cb082d8e58a7884ae07a6`  
+		Last Modified: Tue, 17 Mar 2026 08:35:15 GMT  
+		Size: 47.3 MB (47331392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4510d40d77c8d8b57ca547880766c7f582d2aa4dc9e4959ad89cda6019870e6f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 158.0 B  
+	-	`sha256:a1a50798c3d3c71253b348d7cd1c587e5ee2f032f4701caab985320306411cb7`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac997d838a9e36f770f7a140ce79875b841cc6e6ad27d09efd8d4264d9c11f0f`  
-		Last Modified: Tue, 17 Feb 2026 20:19:38 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:bebc145cbf015b8221169c6ba862f2e438d8cb79bdce73991c34827260748695`  
+		Last Modified: Tue, 17 Mar 2026 08:35:13 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:883040d3ac73b653b836af96c0cb0f842079a048279c3a904909d70cc91d8c48`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 1.8 KB (1794 bytes)  
+	-	`sha256:b9c1c69e3f31830ad4177e43791aac0ff464f6e4854910c0d0185e1f9ab0719e`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67e5e275ff7119dde4f35ac5b88ee309de3713bacf818f24f5b58f0050e51d37`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 1.1 MB (1090025 bytes)  
+	-	`sha256:5955c202e6225da87ffee7566dd0a471e85fe55e39932c1889a340ca56c9d108`  
+		Last Modified: Tue, 17 Mar 2026 18:00:53 GMT  
+		Size: 1.1 MB (1090032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f155114964013f55da45b3ab923a04e2f2e0109d3719597fe18f84825b4aa93`  
-		Last Modified: Thu, 12 Mar 2026 18:46:22 GMT  
-		Size: 22.8 MB (22841526 bytes)  
+	-	`sha256:889c057934d8fa82bfb2fb32767d837362b79382b329c4eaef555724db3ed8a5`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
+		Size: 22.8 MB (22841615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f1bd833200dbcb695cd3791ba6cf6652f488c398ac10dec6e30f1fa9b79d842`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
-		Size: 774.0 B  
+	-	`sha256:c28a4b3d0810bfe72ecd3ea5c6374445e72909dd3034ee8d0ac72eefdfc4e265`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
+		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:latest` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:5fd0afbd268cd71132f17631afbc3af945184a4920b593ede6a502b4d7630f73
+$ docker pull zookeeper@sha256:09b817801d0abe5b120cfa8f3ea347b8eca28c8e5e6eae9634c676f00d1e03e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.0 MB (4014249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b44f468b996121b0ea8d293b2578b4040037950291935f0019c6e158a8f5b1fe`
+-	Image ID: `sha256:cf41203e537bb7b48750ad59876fcee3c19e48c236354de33cc30c69a01aecaf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fb7d23992290d35eadd204f7b0ad76f61b64644d18c2e28658d841eb610a5aac`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
+	-	`sha256:9480e07f96b27ddd949078de7d005ab846974417dd312bc1de957db5d55decbd`  
+		Last Modified: Tue, 17 Mar 2026 18:01:48 GMT  
 		Size: 4.0 MB (3989618 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b548206ac6f76feac252ceed3040ad0888502f452505be6bf32dbbe5787e8f74`  
-		Last Modified: Thu, 12 Mar 2026 18:46:21 GMT  
+	-	`sha256:2f6c2db3ed48a46526b87a2d1a6893879dae90b6041b00998d8e34b3927f2f19`  
+		Last Modified: Tue, 17 Mar 2026 18:01:47 GMT  
 		Size: 24.6 KB (24631 bytes)  
 		MIME: application/vnd.in-toto+json
 
