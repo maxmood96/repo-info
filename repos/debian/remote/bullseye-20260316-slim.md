@@ -1,3 +1,188 @@
 ## `debian:bullseye-20260316-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:95a3884fee36b8f33bf32a6bbffa8dffe6cab6089b841cec45fb47c581a2709d
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 8
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm variant v7
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+	-	linux; 386
+	-	unknown; unknown
+
+### `debian:bullseye-20260316-slim` - linux; amd64
+
+```console
+$ docker pull debian@sha256:040964add8da2d945de53cd2b29aa3fd2aa402b6d6de437aca2edbeb9d1cf3f4
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.3 MB (30257826 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fa549c2c1e9dc41640ca6b8cc341cb54b21800e7a8824ab3ee0765ed52b65bfb`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 16 Mar 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1773619200'
+```
+
+-	Layers:
+	-	`sha256:2def39ba61d018877eab029bb49f5312188fcf3f564be382981f921d932f625f`  
+		Last Modified: Mon, 16 Mar 2026 21:58:52 GMT  
+		Size: 30.3 MB (30257826 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:bullseye-20260316-slim` - unknown; unknown
+
+```console
+$ docker pull debian@sha256:616fe85bf3140409d3f6ce9cfd1ef2de33109bedda79b71819371f226028cdf1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 MB (2667340 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:73993229757d83ef27fd1ed5229492cbef895333f47a5dc692f9dd4c9183efb9`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:22981976aa23d32b7cb3b4515220356ef8c3eabd6ec3e8181ddf9d9402c00ee3`  
+		Last Modified: Mon, 16 Mar 2026 21:58:51 GMT  
+		Size: 2.7 MB (2667340 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `debian:bullseye-20260316-slim` - linux; arm variant v7
+
+```console
+$ docker pull debian@sha256:3bfaa0329b618f704412f83e15eadebeeca24ad9d2b66e9646994ef681e26d63
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.6 MB (25551392 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e6011f5f46efe5fa8798fc966fa4aa89f2cfb39ec2063b10d3ccaec717be4303`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 16 Mar 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1773619200'
+```
+
+-	Layers:
+	-	`sha256:3bc17afcb32786a635d7faf13a7aa3a4142ac1a648b659c697f5e02460592774`  
+		Last Modified: Mon, 16 Mar 2026 21:52:44 GMT  
+		Size: 25.6 MB (25551392 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:bullseye-20260316-slim` - unknown; unknown
+
+```console
+$ docker pull debian@sha256:0045b847133f16ff749518d0bede039d72987a08bf2e4b7066bcae0e8a51af3e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 MB (2669524 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c54955b6ea34ab9d25b7b55d853a1a4b0776694d29b7be8d7e5bf9aaadb8fca6`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:01e297d697086669acc9deb8e9867a6bcf4be46ea7ae8ad8eeecd8b103fd0fba`  
+		Last Modified: Mon, 16 Mar 2026 21:52:44 GMT  
+		Size: 2.7 MB (2669524 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `debian:bullseye-20260316-slim` - linux; arm64 variant v8
+
+```console
+$ docker pull debian@sha256:c0ff7b4010dd05ead9f4d29f1f6ffc138788ac9593b4d7e76a75b9387bbe749e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **28.7 MB (28744526 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:22fc31ac4d992c44c33aaa6e8609eaea4bfd27ad533a5bcd76825fbbac319d37`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 16 Mar 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1773619200'
+```
+
+-	Layers:
+	-	`sha256:345f33ba283982a717a4e5e736aae0d965b9ea4497df11e15c24675df605ff01`  
+		Last Modified: Mon, 16 Mar 2026 21:53:13 GMT  
+		Size: 28.7 MB (28744526 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:bullseye-20260316-slim` - unknown; unknown
+
+```console
+$ docker pull debian@sha256:922f77b66b1c76aef1531aad66ad7f4b9e7624209764ebb3ff03c2fa9aba3311
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 MB (2667536 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:27d38e142f449d618aef19f6b32d1f9098548425f6eb45972fd2a475a1c11ea7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:85e63decb82cfa2731f9fdf0be21512a6d7dfcdb8ec69242687c659b873993dd`  
+		Last Modified: Mon, 16 Mar 2026 21:53:12 GMT  
+		Size: 2.7 MB (2667536 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `debian:bullseye-20260316-slim` - linux; 386
+
+```console
+$ docker pull debian@sha256:f34adeab1a23bab80f0dbf1a1cb92424c3e9b4b1b1ab6923c86d888c1abb2272
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **31.2 MB (31191663 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:bae3d273ced0753437d01eaeba84a6cf0ca2054323b8e239e93087fe88e2fb9a`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 16 Mar 2026 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'bullseye' '@1773619200'
+```
+
+-	Layers:
+	-	`sha256:f9a1ac4759c4f531107bbcb94882648bc1b2c093ca00c3ddc1fe3d72957fb19a`  
+		Last Modified: Mon, 16 Mar 2026 21:57:07 GMT  
+		Size: 31.2 MB (31191663 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:bullseye-20260316-slim` - unknown; unknown
+
+```console
+$ docker pull debian@sha256:bf8ae6e2d4b831ab1340917bd5ea15578bdd35d5d1af2562531731680a9a64bb
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 MB (2664542 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f63ba843067298960465127a072a83f991fd0f3512fa4f4219e49f9ca87e9482`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:177d7b90b61cafc019243f85cb1e460b2339e648e90f8a9db0986acd95e8ac0c`  
+		Last Modified: Mon, 16 Mar 2026 21:57:06 GMT  
+		Size: 2.7 MB (2664542 bytes)  
+		MIME: application/vnd.in-toto+json
