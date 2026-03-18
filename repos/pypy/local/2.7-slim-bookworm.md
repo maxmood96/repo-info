@@ -1,17 +1,17 @@
-# `pypy:2.7-7.3.20-slim-bookworm`
+# `pypy:2.7-7.3.21-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c70ac680fda238c7ff0462fffb2961b1292d0a7e2818b31995ba1c4bdd2e48ba`
-- Created: `2026-02-24T19:38:51.603630546Z`
-- Virtual Size: ~ 207.92 Mb  
+- Image ID: `sha256:60df4c18941b06f458842554c45b88a756d4dc9c92973c33642c2622d7cf0dcb`
+- Created: `2026-03-16T22:57:27.251093025Z`
+- Virtual Size: ~ 205.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.3.20`
+  - `PYPY_VERSION=7.3.21`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -237,31 +237,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bash/5.2.15-2/ (for browsing the source)
 - https://sources.debian.net/src/bash/5.2.15-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bash/5.2.15-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `brotli=1.0.9-2`
-
-Binary Packages:
-
-- `libbrotli1:amd64=1.0.9-2+b6`
-
-Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
-
-- `MIT`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris brotli=1.0.9-2
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.0.9-2.dsc' brotli_1.0.9-2.dsc 2261 SHA256:8c4c86748ec9770e08b60233d658593650444b04a452dc5b607ed5b5537b683e
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.0.9.orig.tar.gz' brotli_1.0.9.orig.tar.gz 486984 SHA256:f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.0.9-2.debian.tar.xz' brotli_1.0.9-2.debian.tar.xz 5552 SHA256:ab81b1db852c8d01e0fa5b0b650bb486f32a232b35336828423af50af6fecca0
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/brotli/1.0.9-2/ (for browsing the source)
-- https://sources.debian.net/src/brotli/1.0.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/brotli/1.0.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.8-5`
 
@@ -671,46 +646,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/findutils/4.9.0-4/ (for browsing the source)
 - https://sources.debian.net/src/findutils/4.9.0-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/findutils/4.9.0-4/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `freetype=2.12.1+dfsg-5+deb12u4`
-
-Binary Packages:
-
-- `libfreetype6:amd64=2.12.1+dfsg-5+deb12u4`
-
-Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
-
-- `BSD-3-Clause`
-- `BSL-1.0`
-- `FSFAP`
-- `FTL`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-3`
-- `GPL-3+`
-- `MIT`
-- `OpenGroup-BSD-like`
-- `Public-Domain`
-- `Zlib`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris freetype=2.12.1+dfsg-5+deb12u4
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg-5%2bdeb12u4.dsc' freetype_2.12.1+dfsg-5+deb12u4.dsc 3918 SHA256:eead829b4bc79107e8e79c4da006110dffe264f9d48b3ba02f76cf7e84b64389
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2demos.tar.xz' freetype_2.12.1+dfsg.orig-ft2demos.tar.xz 263656 SHA256:ce729d97f166a919a6a3037c949af01d5d6e1783614024d72683153f0bc5ef05
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.12.1+dfsg.orig-ft2demos.tar.xz.asc 833 SHA256:0303e45fe1dc659f14353c276ac0ea1025b30e19ac8138c52d5df79b55726f14
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2docs.tar.xz' freetype_2.12.1+dfsg.orig-ft2docs.tar.xz 2038632 SHA256:6664a32e4eedaa89f45422c1150e32da46fd301c972cbfd19d2dcc6dd96f07d1
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.12.1+dfsg.orig-ft2docs.tar.xz.asc 833 SHA256:e686683830c782c30cdd83278c8d5ed7ab930ae7d548682565b706322f44007f
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig.tar.xz' freetype_2.12.1+dfsg.orig.tar.xz 2188492 SHA256:7dedb6b9adf331559daea614a83b8de42a753e685ec8e1c4bdb4529eb880b0d1
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg-5%2bdeb12u4.debian.tar.xz' freetype_2.12.1+dfsg-5+deb12u4.debian.tar.xz 44844 SHA256:c625a97a78e4c74acd32e5b63b3973c9ea8a5c3d7b7f8f7c02def4421589c61b
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/freetype/2.12.1+dfsg-5+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/freetype/2.12.1+dfsg-5+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/freetype/2.12.1+dfsg-5+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-12=12.2.0-14+deb12u1`
 
@@ -1195,38 +1130,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libmd/1.0.4-2/ (for browsing the source)
 - https://sources.debian.net/src/libmd/1.0.4-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libmd/1.0.4-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `libpng1.6=1.6.39-2+deb12u3`
-
-Binary Packages:
-
-- `libpng16-16:amd64=1.6.39-2+deb12u3`
-
-Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
-
-- `Apache-2.0`
-- `BSD-3-clause`
-- `BSD-like-with-advertising-clause`
-- `GPL-2`
-- `GPL-2+`
-- `expat`
-- `libpng`
-- `libpng OR Apache-2.0 OR BSD-3-clause`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u3
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u3.dsc' libpng1.6_1.6.39-2+deb12u3.dsc 2292 SHA256:4f5e97c47006358f1d749164d899eba56680956ad98ffa21795772612506e70d
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u3.debian.tar.xz' libpng1.6_1.6.39-2+deb12u3.debian.tar.xz 39752 SHA256:92e2c156f9be57eab8bc6cbe8c07ad1fc8323e1945bfa284da8592d749faa962
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u3/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.5.4-1+deb12u1`
 
