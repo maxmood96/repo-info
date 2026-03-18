@@ -1,10 +1,10 @@
-# `mongo:8.2.5-noble`
+# `mongo:8.2.6-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f0286cc181898f3800665c63e6c51638a308d8ba97ed1c199e8ffa79db122780`
-- Created: `2026-02-17T20:29:04.41922308Z`
-- Virtual Size: ~ 941.72 Mb  
+- Image ID: `sha256:b6fc3eda4f9a20a603760951ba923b2904f477a5e5efef1b220ac4b572b0f4ff`
+- Created: `2026-03-17T18:10:36.354267351Z`
+- Virtual Size: ~ 949.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=8.2`
-  - `MONGO_VERSION=8.2.5`
+  - `MONGO_VERSION=8.2.6`
   - `HOME=/data/db`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
 - Labels:
@@ -297,20 +297,15 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.1.dsc' coreutils_9.4-3ubuntu6.1.dsc 2030 SHA512:dc10ff1405ba4f50260e3d63b62162e4b9c7d4d258da785f956e008f63ed7dfbf2e10753643e688658957ce0d185b4b31e4c22e8e08007112f2102264926fc6f
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz' coreutils_9.4.orig.tar.xz 5979200 SHA512:7c55ee23b685a0462bbbd118b04d25278c902604a0dcf3bf4f8bf81faa0500dee5a7813cba6f586d676c98e520cafd420f16479619305e94ea6798d8437561f5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.1.debian.tar.xz' coreutils_9.4-3ubuntu6.1.debian.tar.xz 41308 SHA512:abbd5d534ad307d8244f5ae6112ebe050306459ec5de4231e5dd1266361157b307c821e8c1e2bbd41f7cf6c7ab796a592fb8d2ef1cb516ae90e8050fb84c1502
-```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.6`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.8`
 
 Binary Packages:
 
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.6`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.8`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -327,9 +322,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.8
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.8.dsc' curl_8.5.0-2ubuntu10.8.dsc 3051 SHA512:cdff7efe8d9e9693e138fbe1ac018e0f0ace38d4fcd68f1829fb7eb2f506b592e048b56109a89a54a0032fc7faa9b77a1655af7f956eca1152b9dfa811ed943f
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.8.debian.tar.xz' curl_8.5.0-2ubuntu10.8.debian.tar.xz 68580 SHA512:77e8200e621f66172bc9b53c25d0c53dc5ec08add353c2c72f2584b6e0fb15937e01611c6c8d5795ad8d3186bf60327e4ddaf3b3d48cbac97f2d080c3a1ffc18
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
@@ -592,13 +592,13 @@ $ apt-get source -qq --print-uris findutils=4.9.0-5build1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.9.0-5build1.debian.tar.xz' findutils_4.9.0-5build1.debian.tar.xz 32864 SHA512:501c6e0100ac4a7b304700518c9d45c2f8a1f76bd5f12914c9b136e3b3d117115090177d5e6c863333982ca8ded70d188bbde2ff98d51c1d3c51ff247f5eb95b
 ```
 
-### `dpkg` source package: `gcc-14=14.2.0-4ubuntu2~24.04`
+### `dpkg` source package: `gcc-14=14.2.0-4ubuntu2~24.04.1`
 
 Binary Packages:
 
-- `gcc-14-base:amd64=14.2.0-4ubuntu2~24.04`
-- `libgcc-s1:amd64=14.2.0-4ubuntu2~24.04`
-- `libstdc++6:amd64=14.2.0-4ubuntu2~24.04`
+- `gcc-14-base:amd64=14.2.0-4ubuntu2~24.04.1`
+- `libgcc-s1:amd64=14.2.0-4ubuntu2~24.04.1`
+- `libstdc++6:amd64=14.2.0-4ubuntu2~24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -611,7 +611,7 @@ Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04
+$ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.1.dsc' gcc-14_14.2.0-4ubuntu2~24.04.1.dsc 46930 SHA512:e73c3c31529bf34e4cc91360a18ceed91c752bcd8344da68a0b9e9a178b0981fac02e88f12861b4dc60b261fe51fe931b4b27955d39191bc2c84142d704f4d51
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0.orig.tar.gz' gcc-14_14.2.0.orig.tar.gz 97158172 SHA512:88621e344786a78d825110dbd46a9dc811ab0a3414bde97a700b0c90991020dc31dbba89cdbed24ef2875a63ae9c0adffdbc1064262e5270d80920c9964bfb21
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.1.debian.tar.xz' gcc-14_14.2.0-4ubuntu2~24.04.1.debian.tar.xz 1950432 SHA512:039f728b7fd2256dad82e120d48dbec7fbece9c1fb5bbfca9019312d5a4e6a799d2c81fa09b377b850375a89be262aa080587df562f4bd6b7b6eba17ab9e29f9
@@ -698,11 +698,11 @@ $ apt-get source -qq --print-uris gnupg2=2.4.4-2ubuntu17.4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.4.debian.tar.xz' gnupg2_2.4.4-2ubuntu17.4.debian.tar.xz 97376 SHA512:61b874e2aa964df31649d1344281b7f99f1bde0b414719f1ff525f2e631729480d0eabf3c3e94643178a6674b3816e40ea92658e84ace8474351ef35620a464b
 ```
 
-### `dpkg` source package: `gnutls28=3.8.3-1.1ubuntu3.4`
+### `dpkg` source package: `gnutls28=3.8.3-1.1ubuntu3.5`
 
 Binary Packages:
 
-- `libgnutls30t64:amd64=3.8.3-1.1ubuntu3.4`
+- `libgnutls30t64:amd64=3.8.3-1.1ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 
@@ -720,9 +720,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.8.3-1.1ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.5.dsc' gnutls28_3.8.3-1.1ubuntu3.5.dsc 3397 SHA512:f27e044c5a43a466d94883b9578e7e5b8dda3b807de4dbbf533e34701c2146f43696260a47c18bf85d8801db1ab457d5a6772741f0f1dffcd31120203181ad5d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz' gnutls28_3.8.3.orig.tar.xz 6463720 SHA512:74eddba01ce4c2ffdca781c85db3bb52c85f1db3c09813ee2b8ceea0608f92ca3912fd9266f55deb36a8ba4d01802895ca5d5d219e7d9caec45e1a8534e45a84
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz.asc' gnutls28_3.8.3.orig.tar.xz.asc 854 SHA512:8a13a834b57172b9504313eeb7d733d2c3d72971dd8adaa837bbd9d73b12fe2a67f7d07fbbaf643a34ff95acaa82458a88ce4118152ede8ece9be5a089b693c8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.5.debian.tar.xz' gnutls28_3.8.3-1.1ubuntu3.5.debian.tar.xz 109884 SHA512:66368bfc1a4266368bef58642388468f00e6da678632b7d7fb3d19c06f95d8b5187be80732d1b1b3c38dd1cdc280fc978b73e5f25a88baa74129e2185258e819
+```
 
 ### `dpkg` source package: `grep=3.11-4build1`
 
@@ -1206,11 +1212,11 @@ $ apt-get source -qq --print-uris libsepol=3.5-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.5-2build1.debian.tar.xz' libsepol_3.5-2build1.debian.tar.xz 27716 SHA512:9b2b126368c5e4f80d80940f7611103745b1da92bec6319f43f64cc3f6a5e13bab25758bad645e973773a4aab74fa3600694061a8368ca2176252320c0d9ebf6
 ```
 
-### `dpkg` source package: `libssh=0.10.6-2ubuntu0.2`
+### `dpkg` source package: `libssh=0.10.6-2ubuntu0.4`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.10.6-2ubuntu0.2`
+- `libssh-4:amd64=0.10.6-2ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 
@@ -1220,9 +1226,15 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libssh=0.10.6-2ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.4.dsc' libssh_0.10.6-2ubuntu0.4.dsc 2723 SHA512:ac04327b00245b0587b437293e7294bdb42f62463e1213a335e5ddb52d80332bb1abe0b7d7bea2a80ef7bd60597aeb809a9c657632d17c02d088af35b7e2c4d7
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz' libssh_0.10.6.orig.tar.xz 561036 SHA512:40c62d63c44e882999b71552c237d73fc7364313bd00b15a211a34aeff1b73693da441d2c8d4e40108d00fb7480ec7c5b6d472f9c0784b2359a179632ab0d6c1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz.asc' libssh_0.10.6.orig.tar.xz.asc 833 SHA512:214d7920bebc80a8e6838c64ed06e070709a96fabfb4fff657b55f9588bc0e1612887fe887d23de73ad3540f3bb85288e62eb6a11ccd4bc80afbd44d34ba70d4
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.4.debian.tar.xz' libssh_0.10.6-2ubuntu0.4.debian.tar.xz 56400 SHA512:6cbb685d4e981014fa7aa01509ead2ab95ce665ed94d2ccbeb2c8394e972c40567543cd7e9e9cd6eba77af1ff9212dd2493a9e45150179caaa6c40a7c4e2fa9b
+```
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3ubuntu0.24.04.2`
 
@@ -1363,11 +1375,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20240123-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20240123-1build1.debian.tar.xz' mawk_1.3.4.20240123-1build1.debian.tar.xz 15704 SHA512:53a4367656e29f5897ba29cf38b30e2b3a2758d990bbd3a90bdbceb5d3c467615496407af8bd437b4df2e9518096865b7ec6739b0465e8bba20d87ed71782268
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.14.1`
+### `dpkg` source package: `mongodb-database-tools=100.15.0`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.14.1`
+- `mongodb-database-tools=100.15.0`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1377,11 +1389,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.7.0`
+### `dpkg` source package: `mongodb-mongosh=2.8.1`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.7.0`
+- `mongodb-mongosh=2.8.1`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1392,17 +1404,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=8.2.5`
+### `dpkg` source package: `mongodb-org=8.2.6`
 
 Binary Packages:
 
-- `mongodb-org=8.2.5`
-- `mongodb-org-database=8.2.5`
-- `mongodb-org-database-tools-extra=8.2.5`
-- `mongodb-org-mongos=8.2.5`
-- `mongodb-org-server=8.2.5`
-- `mongodb-org-shell=8.2.5`
-- `mongodb-org-tools=8.2.5`
+- `mongodb-org=8.2.6`
+- `mongodb-org-database=8.2.6`
+- `mongodb-org-database-tools-extra=8.2.6`
+- `mongodb-org-mongos=8.2.6`
+- `mongodb-org-server=8.2.6`
+- `mongodb-org-shell=8.2.6`
+- `mongodb-org-tools=8.2.6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
