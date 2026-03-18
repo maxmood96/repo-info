@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2bb31c7c9ec56344894c3aa47b9218d9348de0be852858fdf4c25a5826bc3593`
-- Created: `2026-02-17T20:28:04.850301183Z`
-- Virtual Size: ~ 335.56 Mb  
+- Image ID: `sha256:16a5cac035622f78e3c8f3c08803ca983575b7811a8dc69c22251ef4f40fafe2`
+- Created: `2026-03-17T01:40:59.089658851Z`
+- Virtual Size: ~ 335.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -281,14 +281,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.1.dsc' coreutils_9.4-3ubuntu6.1.dsc 2030 SHA512:dc10ff1405ba4f50260e3d63b62162e4b9c7d4d258da785f956e008f63ed7dfbf2e10753643e688658957ce0d185b4b31e4c22e8e08007112f2102264926fc6f
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz' coreutils_9.4.orig.tar.xz 5979200 SHA512:7c55ee23b685a0462bbbd118b04d25278c902604a0dcf3bf4f8bf81faa0500dee5a7813cba6f586d676c98e520cafd420f16479619305e94ea6798d8437561f5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.1.debian.tar.xz' coreutils_9.4-3ubuntu6.1.debian.tar.xz 41308 SHA512:abbd5d534ad307d8244f5ae6112ebe050306459ec5de4231e5dd1266361157b307c821e8c1e2bbd41f7cf6c7ab796a592fb8d2ef1cb516ae90e8050fb84c1502
-```
 
 ### `dpkg` source package: `dash=0.5.12-6ubuntu5`
 
@@ -583,13 +578,13 @@ $ apt-get source -qq --print-uris gawk=1:5.2.1-2build3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gawk/gawk_5.2.1-2build3.debian.tar.xz' gawk_5.2.1-2build3.debian.tar.xz 15348 SHA512:d58372900cbc62c81ba7716a2176a89b829725ffb2eccebd54e3e07ba94da9e9a667409cddac5f34f38e46c4f25087928a2abb138398d5adfc4cecf6eafbe463
 ```
 
-### `dpkg` source package: `gcc-14=14.2.0-4ubuntu2~24.04`
+### `dpkg` source package: `gcc-14=14.2.0-4ubuntu2~24.04.1`
 
 Binary Packages:
 
-- `gcc-14-base:amd64=14.2.0-4ubuntu2~24.04`
-- `libgcc-s1:amd64=14.2.0-4ubuntu2~24.04`
-- `libstdc++6:amd64=14.2.0-4ubuntu2~24.04`
+- `gcc-14-base:amd64=14.2.0-4ubuntu2~24.04.1`
+- `libgcc-s1:amd64=14.2.0-4ubuntu2~24.04.1`
+- `libstdc++6:amd64=14.2.0-4ubuntu2~24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -602,7 +597,7 @@ Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04
+$ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.1.dsc' gcc-14_14.2.0-4ubuntu2~24.04.1.dsc 46930 SHA512:e73c3c31529bf34e4cc91360a18ceed91c752bcd8344da68a0b9e9a178b0981fac02e88f12861b4dc60b261fe51fe931b4b27955d39191bc2c84142d704f4d51
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0.orig.tar.gz' gcc-14_14.2.0.orig.tar.gz 97158172 SHA512:88621e344786a78d825110dbd46a9dc811ab0a3414bde97a700b0c90991020dc31dbba89cdbed24ef2875a63ae9c0adffdbc1064262e5270d80920c9964bfb21
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.1.debian.tar.xz' gcc-14_14.2.0-4ubuntu2~24.04.1.debian.tar.xz 1950432 SHA512:039f728b7fd2256dad82e120d48dbec7fbece9c1fb5bbfca9019312d5a4e6a799d2c81fa09b377b850375a89be262aa080587df562f4bd6b7b6eba17ab9e29f9
@@ -716,11 +711,11 @@ $ apt-get source -qq --print-uris gnupg2=2.4.4-2ubuntu17.4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.4.debian.tar.xz' gnupg2_2.4.4-2ubuntu17.4.debian.tar.xz 97376 SHA512:61b874e2aa964df31649d1344281b7f99f1bde0b414719f1ff525f2e631729480d0eabf3c3e94643178a6674b3816e40ea92658e84ace8474351ef35620a464b
 ```
 
-### `dpkg` source package: `gnutls28=3.8.3-1.1ubuntu3.4`
+### `dpkg` source package: `gnutls28=3.8.3-1.1ubuntu3.5`
 
 Binary Packages:
 
-- `libgnutls30t64:amd64=3.8.3-1.1ubuntu3.4`
+- `libgnutls30t64:amd64=3.8.3-1.1ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 
@@ -738,9 +733,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.8.3-1.1ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.5.dsc' gnutls28_3.8.3-1.1ubuntu3.5.dsc 3397 SHA512:f27e044c5a43a466d94883b9578e7e5b8dda3b807de4dbbf533e34701c2146f43696260a47c18bf85d8801db1ab457d5a6772741f0f1dffcd31120203181ad5d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz' gnutls28_3.8.3.orig.tar.xz 6463720 SHA512:74eddba01ce4c2ffdca781c85db3bb52c85f1db3c09813ee2b8ceea0608f92ca3912fd9266f55deb36a8ba4d01802895ca5d5d219e7d9caec45e1a8534e45a84
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz.asc' gnutls28_3.8.3.orig.tar.xz.asc 854 SHA512:8a13a834b57172b9504313eeb7d733d2c3d72971dd8adaa837bbd9d73b12fe2a67f7d07fbbaf643a34ff95acaa82458a88ce4118152ede8ece9be5a089b693c8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.5.debian.tar.xz' gnutls28_3.8.3-1.1ubuntu3.5.debian.tar.xz 109884 SHA512:66368bfc1a4266368bef58642388468f00e6da678632b7d7fb3d19c06f95d8b5187be80732d1b1b3c38dd1cdc280fc978b73e5f25a88baa74129e2185258e819
+```
 
 ### `dpkg` source package: `google-perftools=2.15-3build1`
 
