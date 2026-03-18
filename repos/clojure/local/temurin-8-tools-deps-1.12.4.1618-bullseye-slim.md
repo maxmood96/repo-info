@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:df490865cd7ee77a16d3e442c45e49eca3a989f47ed4211957e8bb771bd0c4c5`
-- Created: `2026-03-09T20:34:06.303699318Z`
-- Virtual Size: ~ 369.82 Mb  
+- Image ID: `sha256:775bcbb822b1360f337777b7da198b9881ae5deb7a9ed1e36d9cbbfa50ab708d`
+- Created: `2026-03-17T02:56:25.197784084Z`
+- Virtual Size: ~ 369.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["clj"]`
@@ -905,11 +905,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.27-2+deb11u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.27-2+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.7.1-5+deb11u8`
+### `dpkg` source package: `gnutls28=3.7.1-5+deb11u9`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.1-5+deb11u8`
+- `libgnutls30:amd64=3.7.1-5+deb11u9`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -930,18 +930,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u8
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u8.dsc' gnutls28_3.7.1-5+deb11u8.dsc 3522 SHA256:c3f51e97ea6488c9b512067ad333d124739ceeba5f92003eacf85cbf94a098d3
+$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u9
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u9.dsc' gnutls28_3.7.1-5+deb11u9.dsc 3541 SHA256:43651971eb727d20ef648dc033e20fcb620c276687a6b8afa9832be165f38b33
 'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
 'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u8.debian.tar.xz' gnutls28_3.7.1-5+deb11u8.debian.tar.xz 119824 SHA256:095475aa4bb4c400ea5058057a7192fa8096d83591bffeac865c8bc7d24a1a13
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u9.debian.tar.xz' gnutls28_3.7.1-5+deb11u9.debian.tar.xz 132768 SHA256:fb421a35577a7d9885de48f100f25d13eee9d18185c4a211141f1b167d67fcab
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u8/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u9/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gpm=1.20.7-8`
 
@@ -2316,28 +2316,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.1w-0+deb11u4`
-
-Binary Packages:
-
-- `libssl1.1:amd64=1.1.1w-0+deb11u4`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u4/
-
-
 ### `dpkg` source package: `openssl=1.1.1w-0+deb11u5`
 
 Binary Packages:
 
+- `libssl1.1:amd64=1.1.1w-0+deb11u5`
 - `openssl=1.1.1w-0+deb11u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
