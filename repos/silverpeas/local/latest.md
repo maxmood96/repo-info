@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b45b2040d9b6e3a214c2cfdee3723240eef6deb39563dc8dc565456ba10000cf`
-- Created: `2026-03-02T19:53:18.34546875Z`
+- Image ID: `sha256:f83a8e6c32d2f39e8caa3a92ebcebf1edc927a1afbd6d161c17df4f55e746c09`
+- Created: `2026-03-17T02:30:03.022650784Z`
 - Virtual Size: ~ 2.87 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -538,15 +538,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.dsc' coreutils_8.32-4.1ubuntu1.2.dsc 2299 SHA512:e6de4621a13517800b91a5990f4506c9d3287ee94346694a1844c4dff113288a2f8eb1bc6531b74096a4125f8a69c76ee59fd300cfe3a44867c8307ce878187f
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz' coreutils_8.32.orig.tar.xz 5547836 SHA512:1c8f3584efd61b4b02e7ac5db8e103b63cfb2063432caaf1e64cb2dcc56d8c657d1133bbf10bd41468d6a1f31142e6caa81d16ae68fa3e6e84075c253613a145
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz.asc' coreutils_8.32.orig.tar.xz.asc 833 SHA512:9c73b35c9e8f7c2b8eff317afcb5aa3234c5f41c80d1882f3c2342906f3fdc876ae45d1256dd1b8fd3cb58c50925f3c13f93de5018626634fdca3c72c14a9acb
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.debian.tar.xz' coreutils_8.32-4.1ubuntu1.2.debian.tar.xz 44868 SHA512:7718e917f8f2c5c5574e73a079ea8fd3b32bc898f2e12168dc3711dfdd896e4727283011050b80f65e60994fca49da031d70901d453612132764dca7dec99543
-```
 
 ### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.16`
 
@@ -572,13 +566,13 @@ $ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.16
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.16.debian.tar.xz' cups_2.4.1op1-1ubuntu4.16.debian.tar.xz 373352 SHA512:507dad6404b26c7dd3068909b05bf9b7268107681aaf743b172c47289cc19f8d1eada1d1fa20364738accfb6f898d578f94d2b1908a28283e17b8c2b2ea2fcbc
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.22`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.23`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.22`
-- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.22`
-- `libcurl4:amd64=7.81.0-1ubuntu1.22`
+- `curl=7.81.0-1ubuntu1.23`
+- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.23`
+- `libcurl4:amd64=7.81.0-1ubuntu1.23`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -589,9 +583,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.23
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.23.dsc' curl_7.81.0-1ubuntu1.23.dsc 3143 SHA512:9038c454e1d7c358914c6031934b2088c08f5a86a3bc21516c5d88a1ed039258e8f5f3f9fc99b084937080f5d263a9508e184eacccc541bc2a647afbd5e69c58
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.23.debian.tar.xz' curl_7.81.0-1ubuntu1.23.debian.tar.xz 86808 SHA512:d98d9f3ffc6a5742139745821711b915b7bb9f8ff8e0827c10cc9f96516e95f626275fe0aade377f07aa525e2e3d00881289aeda53144edc0f6b61a737ada2e2
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -1371,11 +1371,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2.5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.5.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.5.debian.tar.xz 76672 SHA512:f3fd10428b50fca815afe5bdad9ee8db17f0eb3a8871a7935f94fc28da188cc1779e18bb84ed5a1cf86a464f46e818768d63aa61db9fac36a93ea05a37be9851
 ```
 
-### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.7`
+### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.8`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.3-4ubuntu1.7`
+- `libgnutls30:amd64=3.7.3-4ubuntu1.8`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1393,9 +1393,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.7.3-4ubuntu1.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.8.dsc' gnutls28_3.7.3-4ubuntu1.8.dsc 3575 SHA512:929c2320207c79ae6966863a6d30b0e916fd82af5ce1ad44439828699826c9a8e579dd06a6036371f6f3bf5ac2d8599db73f4543c91bcd76f430161b5be15a4c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz' gnutls28_3.7.3.orig.tar.xz 6119292 SHA512:3ace744affe23e284342658d6d2d2de49dd50065489cbc8be18fc7d38187253e5268ca54027ce5cd517056c249ac039a7481e4548cec04325de37ae85617d077
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz.asc' gnutls28_3.7.3.orig.tar.xz.asc 833 SHA512:cd0d30298377deddf20a835863b71e3f119588061f659906ad2684004758943179531508b1c77c730e930e2131148095e60ad9be365353cce772472d5f5345df
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.8.debian.tar.xz' gnutls28_3.7.3-4ubuntu1.8.debian.tar.xz 109652 SHA512:85cc05681f4aaea91faf6474c41a1866ee47835eb94d79030723c33e6effd6668412191e8bf675033fb52c1bc69e16e050583641c7b7898af08b23218e0d6e36
+```
 
 ### `dpkg` source package: `gpgme1.0=1.16.0-1.2ubuntu4.2`
 
@@ -3834,12 +3840,12 @@ $ apt-get source -qq --print-uris libsoxr=0.1.3-4build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsoxr/libsoxr_0.1.3-4build2.debian.tar.xz' libsoxr_0.1.3-4build2.debian.tar.xz 5204 SHA512:1d035d3401469e531eb4a1552e5cbbaece8b0c455fe75f73898b925752a42c1c8e008440f450f0d1c6d70f52735dba673f72f019ae84cd38f9052e5dc177da00
 ```
 
-### `dpkg` source package: `libssh=0.9.6-2ubuntu0.22.04.6`
+### `dpkg` source package: `libssh=0.9.6-2ubuntu0.22.04.7`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.9.6-2ubuntu0.22.04.6`
-- `libssh-gcrypt-4:amd64=0.9.6-2ubuntu0.22.04.6`
+- `libssh-4:amd64=0.9.6-2ubuntu0.22.04.7`
+- `libssh-gcrypt-4:amd64=0.9.6-2ubuntu0.22.04.7`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`, `/usr/share/doc/libssh-gcrypt-4/copyright`)
 
@@ -3852,11 +3858,11 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libssh=0.9.6-2ubuntu0.22.04.6
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.6.dsc' libssh_0.9.6-2ubuntu0.22.04.6.dsc 2884 SHA512:e627cb31d8ce8d312b8e497a26defe40b15a2b7cd378268c2fb83329114a3cbcc682c6eb2f21c0faeaf69c6d247e2964afff7596a9d4211fbe42a6b8f840ece9
+$ apt-get source -qq --print-uris libssh=0.9.6-2ubuntu0.22.04.7
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.7.dsc' libssh_0.9.6-2ubuntu0.22.04.7.dsc 2750 SHA512:3acf89ed9d648f06bdbefa325719b6ac37047ee12c76bb13ae2614ed8a1795da6812652ddba1df8f6769742b93b6a2d10c70b54eb41ca13b29246914f37c7f7a
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz' libssh_0.9.6.orig.tar.xz 1053056 SHA512:4040ec4af937e95be2e41313ef6d4db60b46b8d4dea10c09402398127c1d1ca8843392d207088aeee3c7ef631c6ae7b66861327dcebf78ed3af0723777619fd1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz.asc' libssh_0.9.6.orig.tar.xz.asc 833 SHA512:1b6223efe9e4ce864cd8d97d517f9f0d38c1cd502b5874fdc6a58731038c2830a72ce753f02fc062d9d4d5922107ec9a2e62fe24a704bb5dec0dcfecdb569fe6
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.6.debian.tar.xz' libssh_0.9.6-2ubuntu0.22.04.6.debian.tar.xz 75504 SHA512:bf6cdca5b5b4171e7ced772bfd6283b0a5af95a0194c30911079d1d2b4bd62781de96251a1a9ade495d6dfd4ddb1885a617baf5b8a04e8e8737add6a698a51a3
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.7.debian.tar.xz' libssh_0.9.6-2ubuntu0.22.04.7.debian.tar.xz 75780 SHA512:56afabedcd355ba0e8c9935d446c2098c098f112a7aee8d3ec2916c8638c3ca77442bb06b883e260690876a668fa41b2d7e9a83694484f5eb095f206653244e7
 ```
 
 ### `dpkg` source package: `libtasn1-6=4.18.0-4ubuntu0.2`
@@ -5136,11 +5142,11 @@ $ apt-get source -qq --print-uris nspr=2:4.35-0ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nspr/nspr_4.35-0ubuntu0.22.04.1.debian.tar.xz' nspr_4.35-0ubuntu0.22.04.1.debian.tar.xz 11384 SHA512:70aafc40c11aa995ce9fb3a2182f90c84011beaa3bcf8e33b19e0d1c398979833326cf891d45f27308f64f242ea3b14a2304e31fed4bdfd0f9555db754b6b6f5
 ```
 
-### `dpkg` source package: `nss=2:3.98-0ubuntu0.22.04.2`
+### `dpkg` source package: `nss=2:3.98-0ubuntu0.22.04.3`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.98-0ubuntu0.22.04.2`
+- `libnss3:amd64=2:3.98-0ubuntu0.22.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 
@@ -5150,9 +5156,14 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nss=2:3.98-0ubuntu0.22.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.98-0ubuntu0.22.04.3.dsc' nss_3.98-0ubuntu0.22.04.3.dsc 2294 SHA512:498729d71e707dc4fe1b80ca76213d5024dc16c4e676e61064cbe1a57179b067f0d0dc83aa9ef4208b112e02aaeaa4356614682b7202df85e8031e65501c8b4a
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.98.orig.tar.gz' nss_3.98.orig.tar.gz 76685475 SHA512:4f335c5c284eff6424745cc15e32037715a915f6f61687ec36a8ffaef0e45d152602a1be275bbb2f14650c7d258d6488430cdcf512b18ba7cb73cd43ac625681
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.98-0ubuntu0.22.04.3.debian.tar.xz' nss_3.98-0ubuntu0.22.04.3.debian.tar.xz 26520 SHA512:7b46a9d69d524b2e4f25622ffdfd2387edbdbe72bdb93dae04ed2dbbb1360a9b5a8fd10e0fc0ec7b0792a616f7f508d55953439948dd4cc296590478fa606b19
+```
 
 ### `dpkg` source package: `numactl=2.0.14-3ubuntu2`
 
@@ -5736,15 +5747,15 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.14`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.15`
 
 Binary Packages:
 
-- `libpython3.10:amd64=3.10.12-1~22.04.14`
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.14`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.14`
-- `python3.10=3.10.12-1~22.04.14`
-- `python3.10-minimal=3.10.12-1~22.04.14`
+- `libpython3.10:amd64=3.10.12-1~22.04.15`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.15`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.15`
+- `python3.10=3.10.12-1~22.04.15`
+- `python3.10-minimal=3.10.12-1~22.04.15`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -5766,9 +5777,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.15
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.15.dsc' python3.10_3.10.12-1~22.04.15.dsc 3110 SHA512:8ea2ec7063033873b4f53f039578d9de318b61240db5dc13a6e947803681d9bd66da508fa4d2a78ad89cf3715ffb9a57c046a89b1d1e674433e7c14a20875012
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.15.debian.tar.xz' python3.10_3.10.12-1~22.04.15.debian.tar.xz 269472 SHA512:8c46f573b40044406a8d596fdd3991139350eb86257c65ca01744f2f9504c4e4070302de52938a48272a56bfdbb676eee19756b719c1ed372f93a5b79335b80f
+```
 
 ### `dpkg` source package: `raptor2=2.0.15-0ubuntu4.1`
 
@@ -6524,14 +6540,9 @@ Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-comm
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.2.3995-1ubuntu2.24
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995-1ubuntu2.24.dsc' vim_8.2.3995-1ubuntu2.24.dsc 3078 SHA512:336ab46d8e91c95b423623688c87b3cc8f2f77570966bd9ce49dc33d2cc5c6d7bd304cdc35d549426f4ce49605232af95f2c90b1dbfa432a970b5060531c505a
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995.orig.tar.xz' vim_8.2.3995.orig.tar.xz 10377164 SHA512:2326b3484858c92f55076bcd2336290cc292b35c9a8963e3b14e7140dd1fe36179fe8431d71b0121f8345dac3627c80cd016899aa6120f3354fa882144a28b07
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995-1ubuntu2.24.debian.tar.xz' vim_8.2.3995-1ubuntu2.24.debian.tar.xz 305600 SHA512:94b96dd570396ae079e0e68d7c485d58ad67c25ecc170c73390c9b10f1bcc55d4363f703d406b566be20f8c4708f290cae54159ef426f499a779b493f28350d3
-```
 
 ### `dpkg` source package: `wayland=1.20.0-1ubuntu0.1`
 
