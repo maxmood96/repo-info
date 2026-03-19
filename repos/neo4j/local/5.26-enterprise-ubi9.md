@@ -1,10 +1,10 @@
-# `neo4j:5.26.22-enterprise-ubi9`
+# `neo4j:5.26.23-enterprise-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e78dfcf747db6f339c8b571c57ebe678dc07d17f9487a9fe07432db754198a6f`
-- Created: `2026-03-11T18:37:10.341220882Z`
-- Virtual Size: ~ 911.48 Mb  
+- Image ID: `sha256:f6156fcc2c8fdb544f1f5bbd7c2b966f96c52c0e11f9be2e01201f265d01fc1c`
+- Created: `2026-03-18T23:12:40.064948322Z`
+- Virtual Size: ~ 913.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=72fd5f116ab82e853661c644ae6de36548cb38e0c0bc237b1e766aec5b123194`
-  - `NEO4J_TARBALL=neo4j-enterprise-5.26.22-unix.tar.gz`
+  - `NEO4J_SHA256=b45d9ede6bd79ced9ec6f9efbedd1b098e9553439fddf8c74cdf96f968fb1520`
+  - `NEO4J_TARBALL=neo4j-enterprise-5.26.23-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
@@ -583,12 +583,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): BSD
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libarchive-3.5.3-6.el9_6
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.5.3-6.el9_6.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
 
@@ -1551,22 +1546,17 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url tzdata-2025c-1.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2025c-1.el9.src.rpm
-```
-
-### `rpm` package: `tzdata-java-2025c-1.el9.noarch`
+### `rpm` package: `tzdata-java-2026a-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-java-2025c-1.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2025c-1.el9.src.rpm
+$ dnf --quiet download --source --url tzdata-java-2026a-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026a-1.el9.src.rpm
 ```
 
 ### `rpm` package: `wget-1.21.1-8.el9_4.x86_64`
