@@ -1,4 +1,4 @@
-# `sapmachine:17-alpine`
+# `sapmachine:17-alpine-3.22`
 
 ## Docker Metadata
 

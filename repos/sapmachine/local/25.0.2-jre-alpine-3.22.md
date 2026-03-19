@@ -1,4 +1,4 @@
-# `sapmachine:jre-alpine`
+# `sapmachine:lts-jre-alpine-3.22`
 
 ## Docker Metadata
 

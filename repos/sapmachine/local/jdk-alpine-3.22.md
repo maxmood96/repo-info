@@ -1,16 +1,16 @@
-# `sapmachine:alpine`
+# `sapmachine:alpine-3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee2e70b7754190a1d37e576be70d3c5533c9e5fb20b7d8b8699e080902d6dbed`
-- Created: `2026-01-28T03:48:09.8774427Z`
-- Virtual Size: ~ 377.88 Mb  
+- Image ID: `sha256:4dd5b633a37b3d77bfb93dab31ed3c29e02f182c378ccc8bfbbdb59ac0cb3076`
+- Created: `2026-03-18T17:50:11.583435906Z`
+- Virtual Size: ~ 386.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/java-25-sapmachine-jdk`
+  - `JAVA_HOME=/usr/lib/jvm/java-26-sapmachine-jdk`
 
 ## `apk` (`.apk`-based packages)
 
@@ -306,16 +306,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.3-r0 description:
+libexpat-2.7.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.3-r0 webpage:
+libexpat-2.7.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.3-r0 installed size:
+libexpat-2.7.5-r0 installed size:
 133 KiB
 
-libexpat-2.7.3-r0 license:
+libexpat-2.7.5-r0 license:
 MIT
 
 ```
@@ -340,16 +340,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.54-r0 description:
+libpng-1.6.55-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.54-r0 webpage:
+libpng-1.6.55-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.54-r0 installed size:
+libpng-1.6.55-r0 installed size:
 181 KiB
 
-libpng-1.6.54-r0 license:
+libpng-1.6.55-r0 license:
 Libpng
 
 ```
@@ -575,19 +575,19 @@ MPL-2.0
 
 ```
 
-### `apk` package: `sapmachine-25-jdk`
+### `apk` package: `sapmachine-26-jdk`
 
 ```console
-sapmachine-25-jdk-25.0.2-r0 description:
+sapmachine-26-jdk-26-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-25-jdk-25.0.2-r0 webpage:
+sapmachine-26-jdk-26-r0 webpage:
 https://sapmachine.io
 
-sapmachine-25-jdk-25.0.2-r0 installed size:
-337 MiB
+sapmachine-26-jdk-26-r0 installed size:
+345 MiB
 
-sapmachine-25-jdk-25.0.2-r0 license:
+sapmachine-26-jdk-26-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
