@@ -1,7 +1,7 @@
 ## `ubuntu:resolute`
 
 ```console
-$ docker pull ubuntu@sha256:5798086f1a3a79f93e33f22d50cb326ebe769272cb84f646259d4995c019877b
+$ docker pull ubuntu@sha256:91832dcd7bc5e44c098ecefc0a251a5c5d596dae494b33fb248e01b6840f8ce0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -258,55 +258,60 @@ $ docker pull ubuntu@sha256:8ea0afc091153d70ed48c88e0984e9c9df05eff57ce5fde303e4
 ### `ubuntu:resolute` - linux; riscv64
 
 ```console
-$ docker pull ubuntu@sha256:5157dd19305a31dde2078e2bccc50e3a2eab9bb5a01bd8ed0cb0094c53afa4df
+$ docker pull ubuntu@sha256:680563eb39f9a7b1289b4d450ef30f70b4b2c3c00a770f7390a620b71babb587
 ```
 
--	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.4 MB (34440477 bytes)**  
+-	Total Size: **42.7 MB (42673130 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69724bee0647e7131fade88f193f4d054f873a7a554dd6c578f95b922655aeac`
+-	Image ID: `sha256:f48a402ab5dff3de6edc7987e9a1f5d16ffc5196296a94c5420ae043d7e458b0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 21 Jan 2026 02:43:49 GMT
-ARG RELEASE
-# Wed, 21 Jan 2026 02:43:50 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 21 Jan 2026 02:43:50 GMT
-LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 21 Jan 2026 02:43:51 GMT
-LABEL org.opencontainers.image.version=26.04
-# Wed, 21 Jan 2026 02:44:52 GMT
-ADD file:746ed237ef450d9524b2e11e5076781d4bb74a6e33ac720c0873f155a9479ad6 in / 
-# Wed, 21 Jan 2026 02:44:58 GMT
-CMD ["/bin/bash"]
+# Thu, 12 Mar 2026 20:57:38 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-76cf8b7096278e896cac0fa322ab7d79/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-76cf8b7096278e896cac0fa322ab7d79/images/.temp_layer.4557.tar --tag 26.04
+# Thu, 12 Mar 2026 20:57:46 GMT
+RUN umoci config
+# Thu, 12 Mar 2026 20:57:46 GMT
+RUN umoci config
+# Thu, 12 Mar 2026 20:57:47 GMT
+RUN umoci config
+# Thu, 12 Mar 2026 20:57:47 GMT
+RUN umoci config
+# Thu, 12 Mar 2026 20:57:47 GMT
+RUN umoci config
+# Thu, 12 Mar 2026 20:57:48 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-76cf8b7096278e896cac0fa322ab7d79/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-76cf8b7096278e896cac0fa322ab7d79/images/.temp_layer.control_data.4557.tar
 ```
 
 -	Layers:
-	-	`sha256:6bab161f2c69407f9d7cb5b9b043bac5f1245885094de34780495ccd6ff9ed2e`  
-		Last Modified: Wed, 21 Jan 2026 02:54:01 GMT  
-		Size: 34.4 MB (34440477 bytes)  
+	-	`sha256:3be81e937818e94fac09f534936996087a07c82c085d2264d55d1f73cb7a88a0`  
+		Last Modified: Thu, 12 Mar 2026 21:06:36 GMT  
+		Size: 42.7 MB (42672720 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:18180822e90c7c8a60438c98fd6b5828425bf522e3dde219f4f9c4e3548c3ab0`  
+		Last Modified: Thu, 12 Mar 2026 21:06:39 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:resolute` - unknown; unknown
 
 ```console
-$ docker pull ubuntu@sha256:0f322830966038fc84f12bc6dd066d655ef3cb03349d983dfa28ca16701dc375
+$ docker pull ubuntu@sha256:f01440e2dd1f3ddc6d377b1724d9105899c0c7a7ecbc56f5e636a2c51d0a5555
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2214692 bytes)**  
+-	Total Size: **3.5 MB (3463963 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:483ba5ef3096187e47ee47d261d811cfec87606acac8342576d5537564709de9`
+-	Image ID: `sha256:aef846686c6b03736bc49c19c3ef7466567022f997a986d122905fc6270bbba9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c0fad2867146d039c0b70e6df9b9f5fedd13e5376abebaaee1b52dedc81a9848`  
-		Last Modified: Tue, 17 Feb 2026 21:42:44 GMT  
-		Size: 2.2 MB (2214692 bytes)  
+	-	`sha256:51583af2cc4fbd471899d75796dabca149b256c8a8309dfa0936eb74bf99f704`  
+		Last Modified: Thu, 19 Mar 2026 02:31:03 GMT  
+		Size: 3.5 MB (3463963 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ubuntu:resolute` - linux; s390x
