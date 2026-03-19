@@ -1,10 +1,10 @@
-# `redmine:5.1.11-bookworm`
+# `redmine:5.1.12-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d297f1c5c38f0b773ea95b349a3b53bb97d3cd5a00754b68118b6aeca574c1b`
-- Created: `2026-02-24T20:22:30.960833142Z`
-- Virtual Size: ~ 602.14 Mb  
+- Image ID: `sha256:9c5a7e80be46fe82ce0f5ca57208e0aee298a4bee69796516fca326a8c4c14a8`
+- Created: `2026-03-17T16:34:05.843410327Z`
+- Virtual Size: ~ 601.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.19`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=5.1.11`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.11.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=5320bf7a35d3e9feb90c52d8bd018aa263dc77eb17c96001d8b3223c59549049`
+  - `REDMINE_VERSION=5.1.12`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.12.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=686a9508a5df438728f03f4f930005349ed14571fadc7a365a1426a797fa0056`
   - `RAILS_LOG_TO_STDOUT=true`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1777,15 +1777,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ijs/0.35-15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ijs/0.35-15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u6`
+### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u7`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u6`
-- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u6`
-- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u6`
-- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u6`
-- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u6`
+- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u7`
+- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u7`
+- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u7`
+- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u7`
+- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u7`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6.q16-6/copyright`, `/usr/share/doc/libmagickwand-6.q16-6/copyright`)
 
@@ -1816,13 +1816,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.6+deb12u7
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u7.dsc' imagemagick_6.9.11.60+dfsg-1.6+deb12u7.dsc 5105 SHA256:f8f56e4b746d30860ce1f0c3e7df2a16655a67ec78b409fce0c1ed0a6b3ef3d6
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u7.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.6+deb12u7.debian.tar.xz 296184 SHA256:e15571777dd71a89aef7dd5f595cf788c9a18320ba483fc93caa096834509cfa
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u7/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.65.2+deb12u1`
 

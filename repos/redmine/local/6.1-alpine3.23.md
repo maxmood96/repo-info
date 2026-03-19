@@ -1,10 +1,10 @@
-# `redmine:6.1.1-alpine3.23`
+# `redmine:6.1.2-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ab826f39645b5430ea1bfa63af0071d52f64f0193a50d6e096b78205ca137144`
-- Created: `2026-03-11T19:18:09.055408858Z`
-- Virtual Size: ~ 440.28 Mb  
+- Image ID: `sha256:fc50712643012c0dfa6bba01f851522bc1eef8963c9346c32498e24fb4004aef`
+- Created: `2026-03-17T16:32:05.20757704Z`
+- Virtual Size: ~ 440.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.19`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=6.1.1`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.1.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=1f2e6dd0697062fc733701f88b5041dc0dfc6b536255eb7902f21fb0970e603e`
+  - `REDMINE_VERSION=6.1.2`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.2.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=938e975e808ccfb4b0dcbad8b42f02aacf0ca9ef15491c38c5af4756740ccf08`
   - `RAILS_LOG_TO_STDOUT=true`
 
 ## `apk` (`.apk`-based packages)
@@ -1153,16 +1153,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.2-r0 description:
+libpq-18.3-r0 description:
 PostgreSQL client library
 
-libpq-18.2-r0 webpage:
+libpq-18.3-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.2-r0 installed size:
+libpq-18.3-r0 installed size:
 350 KiB
 
-libpq-18.2-r0 license:
+libpq-18.3-r0 license:
 PostgreSQL
 
 ```

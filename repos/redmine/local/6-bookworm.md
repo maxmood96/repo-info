@@ -1,10 +1,10 @@
-# `redmine:6.1.1-bookworm`
+# `redmine:6.1.2-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b45548ccc023b66d0483698cc209ef71c2fcc39d572a299689829425bae8b135`
-- Created: `2026-03-11T19:18:27.794745736Z`
-- Virtual Size: ~ 649.17 Mb  
+- Image ID: `sha256:178b61c35af37c5c7a4f3ebb3d4b9f3e5ce47e46c61a72b3eff4e31719f8cdae`
+- Created: `2026-03-17T16:32:25.417448683Z`
+- Virtual Size: ~ 649.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.19`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=6.1.1`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.1.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=1f2e6dd0697062fc733701f88b5041dc0dfc6b536255eb7902f21fb0970e603e`
+  - `REDMINE_VERSION=6.1.2`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.2.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=938e975e808ccfb4b0dcbad8b42f02aacf0ca9ef15491c38c5af4756740ccf08`
   - `RAILS_LOG_TO_STDOUT=true`
 
 ## `dpkg` (`.deb`-based packages)
