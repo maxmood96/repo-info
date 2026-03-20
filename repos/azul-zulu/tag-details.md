@@ -70,6 +70,23 @@
 -	[`azul-zulu:25.32-25.0.2-jdk-headless-debian13`](#azul-zulu2532-2502-jdk-headless-debian13)
 -	[`azul-zulu:25.32-25.0.2-jre-debian13`](#azul-zulu2532-2502-jre-debian13)
 -	[`azul-zulu:25.32-25.0.2-jre-headless-debian13`](#azul-zulu2532-2502-jre-headless-debian13)
+-	[`azul-zulu:26`](#azul-zulu26)
+-	[`azul-zulu:26-headless`](#azul-zulu26-headless)
+-	[`azul-zulu:26-headless-debian`](#azul-zulu26-headless-debian)
+-	[`azul-zulu:26-headless-debian13`](#azul-zulu26-headless-debian13)
+-	[`azul-zulu:26-jdk`](#azul-zulu26-jdk)
+-	[`azul-zulu:26-jdk-debian`](#azul-zulu26-jdk-debian)
+-	[`azul-zulu:26-jdk-debian13`](#azul-zulu26-jdk-debian13)
+-	[`azul-zulu:26-jre`](#azul-zulu26-jre)
+-	[`azul-zulu:26-jre-debian`](#azul-zulu26-jre-debian)
+-	[`azul-zulu:26-jre-debian13`](#azul-zulu26-jre-debian13)
+-	[`azul-zulu:26-jre-headless`](#azul-zulu26-jre-headless)
+-	[`azul-zulu:26-jre-headless-debian`](#azul-zulu26-jre-headless-debian)
+-	[`azul-zulu:26-jre-headless-debian13`](#azul-zulu26-jre-headless-debian13)
+-	[`azul-zulu:26.28-26.0.0-jdk-debian13`](#azul-zulu2628-2600-jdk-debian13)
+-	[`azul-zulu:26.28-26.0.0-jdk-headless-debian13`](#azul-zulu2628-2600-jdk-headless-debian13)
+-	[`azul-zulu:26.28-26.0.0-jre-debian13`](#azul-zulu2628-2600-jre-debian13)
+-	[`azul-zulu:26.28-26.0.0-jre-headless-debian13`](#azul-zulu2628-2600-jre-headless-debian13)
 -	[`azul-zulu:8`](#azul-zulu8)
 -	[`azul-zulu:8-headless`](#azul-zulu8-headless)
 -	[`azul-zulu:8-headless-debian`](#azul-zulu8-headless-debian)
@@ -8731,6 +8748,74 @@ $ docker pull azul-zulu@sha256:af8946643971a2fa05278c7e59bb805fd24d3e3680050bfd3
 		Last Modified: Tue, 17 Mar 2026 22:12:33 GMT  
 		Size: 9.4 KB (9402 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:26`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-headless`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-headless-debian`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-headless-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-jdk`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-jdk-debian`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-jdk-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-jre`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-jre-debian`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-jre-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-jre-headless`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-jre-headless-debian`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-jre-headless-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26.28-26.0.0-jdk-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26.28-26.0.0-jdk-headless-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26.28-26.0.0-jre-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26.28-26.0.0-jre-headless-debian13`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:8`
 
