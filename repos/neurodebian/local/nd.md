@@ -1741,21 +1741,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.6.1-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.1-2.dsc' openssl_3.6.1-2.dsc 2675 SHA256:52237b79b96df257e1fe0144a588f746b9b7ecb7b61b09fa08b101d5336b15fe
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.1.orig.tar.gz' openssl_3.6.1.orig.tar.gz 54891951 SHA256:b1bfedcd5b289ff22aee87c9d600f515767ebf45f77168cb6d64f231f518a82e
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.1.orig.tar.gz.asc' openssl_3.6.1.orig.tar.gz.asc 833 SHA256:a549571f98ac883a6eca7a2c21021a9d2129e6f4bcad2a261f9bd2487fb80f4b
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.1-2.debian.tar.xz' openssl_3.6.1-2.debian.tar.xz 48112 SHA256:bf3072727d466a79f39b98dd19c21ada71e81e22a3c540d4ab4e600538b61af3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.6.1-2/
 
-- https://sources.debian.net/src/openssl/3.6.1-2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.6.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.6.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.26.2-2`
 
@@ -2109,20 +2101,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=260~rc4-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_260%7erc4-1.dsc' systemd_260~rc4-1.dsc 8634 SHA256:f3623bfa31a1d84018522f4ab6b12bf9977aed4f0698d1ba2248a95d7de2636c
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_260%7erc4.orig.tar.gz' systemd_260~rc4.orig.tar.gz 17557713 SHA256:30bafb84164c3ed54f4d2ee250e25ac40a92624a06373f38385c6ccb7d3cf93d
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_260%7erc4-1.debian.tar.xz' systemd_260~rc4-1.debian.tar.xz 185076 SHA256:ce8c9eb79b13d84b55555f0803644a141b7f87a59a6abef7e0e2fd6d6d25edec
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/260~rc4-1/
 
-- https://sources.debian.net/src/systemd/260~rc4-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/260~rc4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/260~rc4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.15-6`
 
