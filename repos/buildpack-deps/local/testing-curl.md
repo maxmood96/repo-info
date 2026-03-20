@@ -2478,20 +2478,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=260~rc2-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_260%7erc2-1.dsc' systemd_260~rc2-1.dsc 8634 SHA256:034400395faf6ebaa97f5d83a5579f70296b5f5923d57d790e2cdb728178ecf2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_260%7erc2.orig.tar.gz' systemd_260~rc2.orig.tar.gz 17531526 SHA256:a4232d479b8e19f63ef907df06d148bc32b4f872d212bb60739cf045a89475c6
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_260%7erc2-1.debian.tar.xz' systemd_260~rc2-1.debian.tar.xz 185032 SHA256:522e21d3f717e12615c7bec2bab00604c80839dc26fe9d7d82558bddb5fc9c08
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/260~rc2-1/
 
-- https://sources.debian.net/src/systemd/260~rc2-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/260~rc2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/260~rc2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.15-6`
 
