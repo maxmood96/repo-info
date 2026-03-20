@@ -720,10 +720,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris expat=2.7.4-1
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.7.4-1.dsc' expat_2.7.4-1.dsc 1970 SHA256:2b8d94bbc4e830fb7268be91ff18dc24cfdc88608399311af85737cf360da3a0
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.7.4.orig.tar.gz' expat_2.7.4.orig.tar.gz 8448897 SHA256:5b356795b889d3e5b379433ece069b8781bf0727f6959ad3bbc9da0c22164f59
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.7.4-1.debian.tar.xz' expat_2.7.4-1.debian.tar.xz 13420 SHA256:d58d2cb39825e385b7063eca491ce1b34299b047bce45d9ef0b42666a289a9b0
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.4-1.dsc' expat_2.7.4-1.dsc 1970 SHA256:2b8d94bbc4e830fb7268be91ff18dc24cfdc88608399311af85737cf360da3a0
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.4.orig.tar.gz' expat_2.7.4.orig.tar.gz 8448897 SHA256:5b356795b889d3e5b379433ece069b8781bf0727f6959ad3bbc9da0c22164f59
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.4-1.debian.tar.xz' expat_2.7.4-1.debian.tar.xz 13420 SHA256:d58d2cb39825e385b7063eca491ce1b34299b047bce45d9ef0b42666a289a9b0
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/expat/2.7.4-1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.7.4-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.7.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -1303,11 +1309,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris icu=78.2-2
-'http://http.debian.net/debian/pool/main/i/icu/icu_78.2-2.dsc' icu_78.2-2.dsc 2236 SHA256:762b9a3e3bf243721b396d9e9483fb3f686f07ccdf3ad0d3d76a471d0ec34091
-'http://http.debian.net/debian/pool/main/i/icu/icu_78.2.orig.tar.gz' icu_78.2.orig.tar.gz 27970651 SHA256:3e99687b5c435d4b209630e2d2ebb79906c984685e78635078b672e03c89df35
-'http://http.debian.net/debian/pool/main/i/icu/icu_78.2.orig.tar.gz.asc' icu_78.2.orig.tar.gz.asc 228 SHA256:09220c6136a2f451a7ba0fc6fb96c1d393464cd0ba44953085f9a23c454fae66
-'http://http.debian.net/debian/pool/main/i/icu/icu_78.2-2.debian.tar.xz' icu_78.2-2.debian.tar.xz 64412 SHA256:bb7fa392aa7df3e87aaa65e13d6bcb0562ccd8ea478e631b1094ed7e526e6a5d
+'http://deb.debian.org/debian/pool/main/i/icu/icu_78.2-2.dsc' icu_78.2-2.dsc 2236 SHA256:762b9a3e3bf243721b396d9e9483fb3f686f07ccdf3ad0d3d76a471d0ec34091
+'http://deb.debian.org/debian/pool/main/i/icu/icu_78.2.orig.tar.gz' icu_78.2.orig.tar.gz 27970651 SHA256:3e99687b5c435d4b209630e2d2ebb79906c984685e78635078b672e03c89df35
+'http://deb.debian.org/debian/pool/main/i/icu/icu_78.2.orig.tar.gz.asc' icu_78.2.orig.tar.gz.asc 228 SHA256:09220c6136a2f451a7ba0fc6fb96c1d393464cd0ba44953085f9a23c454fae66
+'http://deb.debian.org/debian/pool/main/i/icu/icu_78.2-2.debian.tar.xz' icu_78.2-2.debian.tar.xz 64412 SHA256:bb7fa392aa7df3e87aaa65e13d6bcb0562ccd8ea478e631b1094ed7e526e6a5d
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/icu/78.2-2/ (for browsing the source)
+- https://sources.debian.net/src/icu/78.2-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/78.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.69`
 
@@ -1506,20 +1518,13 @@ Licenses: (parsed from: `/usr/share/doc/liblerc4/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lerc=4.0.0+ds-5
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.0.0%2bds-5.dsc' lerc_4.0.0+ds-5.dsc 2673 SHA256:84de8dac3dd5f5edc005c5c02be58c1f549f9365ad4147c138c85e07d624cc12
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.0.0%2bds.orig.tar.xz' lerc_4.0.0+ds.orig.tar.xz 348140 SHA256:acf855502fd3b950ee78f0b67bc9e9b39316b3526fbf6d8b8b1a9482fb756723
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.0.0%2bds-5.debian.tar.xz' lerc_4.0.0+ds-5.debian.tar.xz 8576 SHA256:28ab2b1c19c845cd493e804bb9c43b47f72d5852281ebf832ed68a7576afbf6d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lerc/4.0.0+ds-5/
 
-- https://sources.debian.net/src/lerc/4.0.0+ds-5/ (for browsing the source)
-- https://sources.debian.net/src/lerc/4.0.0+ds-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lerc/4.0.0+ds-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `less=668-1`
 
@@ -1970,11 +1975,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libssh2=1.11.1-1
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.11.1-1.dsc' libssh2_1.11.1-1.dsc 2319 SHA256:f97f7ac25300908b255a29c63055e78684e68c12c308edb016747da1de592377
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA256:d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA256:f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.11.1-1.debian.tar.xz' libssh2_1.11.1-1.debian.tar.xz 17136 SHA256:f3b9e55f706c89e9408478a1eecb0067b8e18902e0cab168f44194fcc53641cf
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-1.dsc' libssh2_1.11.1-1.dsc 2319 SHA256:f97f7ac25300908b255a29c63055e78684e68c12c308edb016747da1de592377
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA256:d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA256:f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-1.debian.tar.xz' libssh2_1.11.1-1.debian.tar.xz 17136 SHA256:f3b9e55f706c89e9408478a1eecb0067b8e18902e0cab168f44194fcc53641cf
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libssh2/1.11.1-1/ (for browsing the source)
+- https://sources.debian.net/src/libssh2/1.11.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libssh2/1.11.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.21.0-2`
 
