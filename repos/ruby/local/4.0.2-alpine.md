@@ -1,19 +1,19 @@
-# `ruby:4.0.1-alpine3.23`
+# `ruby:4.0.2-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d1c6655e6ed952ef36cf532b7fd945f16dfce6fd7a98fe9da9847accc2a04341`
-- Created: `2026-01-28T03:44:34.478201902Z`
-- Virtual Size: ~ 89.26 Mb  
+- Image ID: `sha256:df8c65def7554807b0fcdfdb1be5aef7aeb619f1e407ba1f3651b2c013cf9b7d`
+- Created: `2026-03-17T16:29:29.087623952Z`
+- Virtual Size: ~ 89.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=4.0.1`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.1.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=0531fe57dfdb56bf591620d2450642ea0e0964f3512a6ebee7dc9305de69395f`
+  - `RUBY_VERSION=4.0.2`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.2.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=4618db85bb9ec04d8152d0099db488694a3d3c4f52106625e4ad547f1318db87`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -346,16 +346,16 @@ MIT
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.1-r2 description:
+zlib-1.3.2-r0 description:
 A compression/decompression Library
 
-zlib-1.3.1-r2 webpage:
+zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.1-r2 installed size:
-101 KiB
+zlib-1.3.2-r0 installed size:
+105 KiB
 
-zlib-1.3.1-r2 license:
+zlib-1.3.2-r0 license:
 Zlib
 
 ```
