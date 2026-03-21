@@ -1,7 +1,7 @@
 ## `buildpack-deps:noble-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:667f42297ba216aa61ad0f12847e44c8053e14183259b3a84f61d6f60a1efdcc
+$ docker pull buildpack-deps@sha256:063c8c84355a91d90b216dea62a6a9b462367ad136158f88a157f6f206364e3c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -274,64 +274,64 @@ $ docker pull buildpack-deps@sha256:4e9ef5401735ab48ba96ea7f21b601569cbd9563fb83
 ### `buildpack-deps:noble-curl` - linux; riscv64
 
 ```console
-$ docker pull buildpack-deps@sha256:e85f3d197cd01e7d9d5028a79343bc330292607ca5cd6bb5a3ad60e71bf3c809
+$ docker pull buildpack-deps@sha256:ae930e2b521063e6400b58ca00d46287bfc6d1a35d1b9b2e3289a36a27b43efa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.3 MB (45287217 bytes)**  
+-	Total Size: **45.3 MB (45297023 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb3f5c5e4ef368b9f85a5fd993038ec0fda662baa1c5f6d1fd191d96c93a284`
+-	Image ID: `sha256:a7878d004c9ac704233c7343cb1a202b742e89464ced8dcf24bc5c4799e95319`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 10 Feb 2026 17:33:09 GMT
+# Mon, 23 Feb 2026 17:42:34 GMT
 ARG RELEASE
-# Tue, 10 Feb 2026 17:33:09 GMT
+# Mon, 23 Feb 2026 17:42:34 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Feb 2026 17:33:10 GMT
+# Mon, 23 Feb 2026 17:42:35 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Feb 2026 17:33:10 GMT
+# Mon, 23 Feb 2026 17:42:35 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 10 Feb 2026 17:33:55 GMT
-ADD file:b4821892707dbb5cc8e8eb3b4e757edc2d124db81fcdedfc3b244dcb5c1fa6c0 in / 
-# Tue, 10 Feb 2026 17:34:00 GMT
+# Mon, 23 Feb 2026 17:43:25 GMT
+ADD file:1243b7db425cac690d91f87ad37c1beec0d95da6b3942dc8084039fe1cc2baf4 in / 
+# Mon, 23 Feb 2026 17:43:30 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Feb 2026 23:51:39 GMT
+# Sat, 21 Mar 2026 03:06:04 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:f2683d5e2cbe038b4f1178e139d507e705e0a3a566f8b9c89bf3484f426119af`  
-		Last Modified: Tue, 10 Feb 2026 17:42:05 GMT  
-		Size: 31.0 MB (30954431 bytes)  
+	-	`sha256:866473980fd7aa6ac5a8a995315a35248ab945008a1938bd15f65082df53b2d3`  
+		Last Modified: Mon, 23 Feb 2026 17:51:46 GMT  
+		Size: 31.0 MB (30960145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d37a7e09736ece201cac91607fd45b546145661c1936ccaf437107414a69ca71`  
-		Last Modified: Tue, 17 Feb 2026 23:53:08 GMT  
-		Size: 14.3 MB (14332786 bytes)  
+	-	`sha256:ee039942c223db7740f8c7ddba0be9d66f5b268eae6ff09af10e8dfe9568a44b`  
+		Last Modified: Sat, 21 Mar 2026 03:07:14 GMT  
+		Size: 14.3 MB (14336878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:noble-curl` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:d425d7a71695fa0d5432dd314f11f078e0f6d8049f03b93eb872e6453601e2b1
+$ docker pull buildpack-deps@sha256:f42d1e3229aee1ae47cfa2acd05315c257a6f709a1ed85b2076f52c437a85bd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2608667 bytes)**  
+-	Total Size: **2.6 MB (2608681 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5534da502bc217021704b8c8f4acc1a3e207c9c9570d98b24b44356894c58be2`
+-	Image ID: `sha256:050c66dfdb1697967ead56a11b17d18fd1d903acd50a1d5f26d283936684d2e8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d76faafcb848ad84b14f807f14334d48cee7ca69dfedab836c37e4a7fd4bb6d0`  
-		Last Modified: Tue, 17 Feb 2026 23:53:07 GMT  
-		Size: 2.6 MB (2601720 bytes)  
+	-	`sha256:d5d9ee3c17495a5b17b26a797f3b10df39374f444602896d3bec8913bd1c923f`  
+		Last Modified: Sat, 21 Mar 2026 03:07:12 GMT  
+		Size: 2.6 MB (2601736 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e829fa5e912dca0197bcc1032888f2ce36b6975b8a6929e6f5ad4546b7c97c38`  
-		Last Modified: Tue, 17 Feb 2026 23:53:06 GMT  
-		Size: 6.9 KB (6947 bytes)  
+	-	`sha256:46fddca8c363b3474ad0dffb5ea7b5c0dfb3e9a5572a71512ee21ee9150a90c2`  
+		Last Modified: Sat, 21 Mar 2026 03:07:11 GMT  
+		Size: 6.9 KB (6945 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:noble-curl` - linux; s390x
