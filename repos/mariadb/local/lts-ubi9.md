@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b50763f284118fc6cfe7a34e6749878007fdad2d31f5f2c45341d4641eba9a52`
-- Created: `2026-03-11T18:35:44.527553956Z`
-- Virtual Size: ~ 520.40 Mb  
+- Image ID: `sha256:17124e031674c6307926193839578f9d5ebce1d314ff4c59c7adb920695552dc`
+- Created: `2026-03-20T00:18:47.538376823Z`
+- Virtual Size: ~ 520.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.8.6`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-03-11T04:51:18Z`
+  - `build-date=2026-03-19T17:02:39Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-03-11T04:51:18Z`
+  - `org.opencontainers.image.created=2026-03-19T17:02:39Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=ddf3e9d218968613397a7b4df7547f25ad755449`
+  - `org.opencontainers.image.revision=d0c250a501ab44b94ebea3e751fcaa45749a08a2`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=ddf3e9d218968613397a7b4df7547f25ad755449`
+  - `vcs-ref=d0c250a501ab44b94ebea3e751fcaa45749a08a2`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.8.6`
@@ -321,7 +321,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-rsync://plug-mirror.rcac.purdue.edu/fedora-epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+rsync://ftp-osl.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-5.el9_7.1.x86_64`
@@ -503,7 +503,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-rsync://plug-mirror.rcac.purdue.edu/fedora-epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+rsync://ftp-osl.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -593,7 +593,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-rsync://plug-mirror.rcac.purdue.edu/fedora-epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+rsync://ftp-osl.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -706,15 +706,15 @@ $ dnf --quiet download --source --url libaio-0.3.111-13.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libaio-0.3.111-13.el9.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.5.3-6.el9_6.x86_64`
+### `rpm` package: `libarchive-3.5.3-7.el9_7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libarchive-3.5.3-6.el9_6
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.5.3-6.el9_6.src.rpm
+$ dnf --quiet download --source --url libarchive-3.5.3-7.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.5.3-7.el9_7.src.rpm
 ```
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
@@ -1176,7 +1176,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.6.2-1.el9
-rsync://plug-mirror.rcac.purdue.edu/fedora-epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
+rsync://ftp-osl.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.5-1.el9.x86_64`
@@ -2243,7 +2243,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-rsync://plug-mirror.rcac.purdue.edu/fedora-epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+rsync://ftp-osl.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2254,7 +2254,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-rsync://plug-mirror.rcac.purdue.edu/fedora-epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+rsync://ftp-osl.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -2433,11 +2433,16 @@ $ dnf --quiet download --source --url tar-1.34-9.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-9.el9_7.src.rpm
 ```
 
-### `rpm` package: `tzdata-2025c-1.el9.noarch`
+### `rpm` package: `tzdata-2026a-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2026a-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026a-1.el9.src.rpm
+```
 
 ### `rpm` package: `util-linux-2.37.4-21.el9_7.x86_64`
 
