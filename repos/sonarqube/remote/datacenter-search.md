@@ -1,7 +1,7 @@
 ## `sonarqube:datacenter-search`
 
 ```console
-$ docker pull sonarqube@sha256:23660d513ffb302ba940006bd8a3b4a0b105f7df74bd9af49cc37e9f3b8f2344
+$ docker pull sonarqube@sha256:ac34c438dcd1e6fccb2c5c30c93905a442dcadadbdd4ec64af83403a1d04142b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull sonarqube@sha256:23660d513ffb302ba940006bd8a3b4a0b105f7df74bd9af49
 ### `sonarqube:datacenter-search` - linux; amd64
 
 ```console
-$ docker pull sonarqube@sha256:0caa2bac4664b7a4d6ddaf37df6498df62930b19e90dfca2d16194fe4d49f34f
+$ docker pull sonarqube@sha256:e0e8b752097de44468d2c0ce09bf491e81a8cc09c1ac084f92caa9c4ea31bb26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 GB (1628793121 bytes)**  
+-	Total Size: **1.6 GB (1627221090 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b45670d673499d6cb8a2334663765851486ae3f9a4ccb6d7f883545c86344669`
+-	Image ID: `sha256:ec454398adfa326a5f40a934186aeef88803d2d6d3b44352219aad69f867b917`
 -	Entrypoint: `["\/opt\/sonarqube\/docker\/run.sh"]`
 -	Default Command: `["\/opt\/sonarqube\/docker\/sonar.sh"]`
 
@@ -37,66 +37,66 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:3f78aa860931e0853077f09eb31eddbeeef8a9dd70977305b4876aa176770721 in / 
 # Mon, 23 Feb 2026 17:17:56 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Mar 2026 01:23:19 GMT
+# Tue, 17 Mar 2026 01:23:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 17 Mar 2026 01:23:19 GMT
+# Tue, 17 Mar 2026 01:23:33 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Mar 2026 01:23:19 GMT
+# Tue, 17 Mar 2026 01:23:33 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Mar 2026 01:23:19 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Mar 2026 01:23:19 GMT
-ENV JAVA_VERSION=jdk-21.0.10+7
-# Tue, 17 Mar 2026 01:23:25 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='ea3b9bd464d6dd253e9a7accf59f7ccd2a36e4aa69640b7251e3370caef896a4';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='357fee29fb0d5c079f6730db98b28942df13a6eed426f6c61cd4ad703ab27b9a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='33bdaec351f40cc70d44e251a54c23e4dd15fed8adc041e35c57461c706cf948';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='a57fd486c3c24ed615eb91ef9421ddd38c720e7398df5a161872fb26ad825936';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='eabb069b59a2e6b9e9926d9c533186aabf1ff3b4af683d0a3620bb7c7d9770c0';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 17 Mar 2026 01:23:26 GMT
+# Tue, 17 Mar 2026 01:23:33 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 17 Mar 2026 01:23:33 GMT
+ENV JAVA_VERSION=jdk-25.0.2+10
+# Tue, 17 Mar 2026 01:23:51 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='987387933b64b9833846dee373b640440d3e1fd48a04804ec01a6dbf718e8ab8';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_x64_linux_hotspot_25.0.2_10.tar.gz';          ;;        arm64)          ESUM='a9d73e711d967dc44896d4f430f73a68fd33590dabc29a7f2fb9f593425b854c';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.2_10.tar.gz';          ;;        ppc64el)          ESUM='b262b735b215173003766da36588d5f717dceada0286db41b439f93fb2ada468';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_ppc64le_linux_hotspot_25.0.2_10.tar.gz';          ;;        riscv64)          ESUM='168119e4fba350f4e6b3ca92450a2b90a8502b89a235a04415e9adf9f5d3164e';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_riscv64_linux_hotspot_25.0.2_10.tar.gz';          ;;        s390x)          ESUM='15e5cbcadcf3d43623c31b825063cdc2817b9f1ba840b51dc6ef70e5d33c84e3';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_s390x_linux_hotspot_25.0.2_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 17 Mar 2026 01:23:52 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 17 Mar 2026 01:23:26 GMT
+# Tue, 17 Mar 2026 01:23:52 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 17 Mar 2026 01:23:26 GMT
+# Tue, 17 Mar 2026 01:23:52 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 17 Mar 2026 01:23:26 GMT
+# Tue, 17 Mar 2026 01:23:52 GMT
 CMD ["jshell"]
-# Tue, 17 Mar 2026 02:46:36 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 LABEL io.k8s.description=SonarQube Server is a self-managed, automatic code review tool that systematically helps you deliver Clean Code.
-# Tue, 17 Mar 2026 02:46:36 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 LABEL io.openshift.min-cpu=400m
-# Tue, 17 Mar 2026 02:46:36 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 LABEL io.openshift.min-memory=2048M
-# Tue, 17 Mar 2026 02:46:36 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 LABEL io.openshift.non-scalable=false
-# Tue, 17 Mar 2026 02:46:36 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 LABEL io.openshift.tags=sonarqube,static-code-analysis,code-quality,clean-code
-# Tue, 17 Mar 2026 02:46:36 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 LABEL org.opencontainers.image.url=https://github.com/SonarSource/docker-sonarqube
-# Tue, 17 Mar 2026 02:46:36 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Mar 2026 02:46:36 GMT
-ARG SONARQUBE_VERSION=2026.1.0.119033
-# Tue, 17 Mar 2026 02:46:36 GMT
-ARG SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-2026.1.0.119033.zip
-# Tue, 17 Mar 2026 02:46:36 GMT
-ENV DOCKER_RUNNING=true JAVA_HOME=/opt/java/openjdk SONARQUBE_HOME=/opt/sonarqube SONAR_VERSION=2026.1.0.119033 SQ_DATA_DIR=/opt/sonarqube/data SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions SQ_LOGS_DIR=/opt/sonarqube/logs SQ_TEMP_DIR=/opt/sonarqube/temp SONAR_CLUSTER_NODE_TYPE=search SONAR_CLUSTER_ENABLED=true
-# Tue, 17 Mar 2026 02:46:36 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
+ARG SONARQUBE_VERSION=2026.2.0.121184
+# Mon, 23 Mar 2026 17:52:49 GMT
+ARG SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-2026.2.0.121184.zip
+# Mon, 23 Mar 2026 17:52:49 GMT
+ENV DOCKER_RUNNING=true JAVA_HOME=/opt/java/openjdk SONARQUBE_HOME=/opt/sonarqube SONAR_VERSION=2026.2.0.121184 SQ_DATA_DIR=/opt/sonarqube/data SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions SQ_LOGS_DIR=/opt/sonarqube/logs SQ_TEMP_DIR=/opt/sonarqube/temp SONAR_CLUSTER_NODE_TYPE=search SONAR_CLUSTER_ENABLED=true
+# Mon, 23 Mar 2026 17:52:49 GMT
 ENV ES_TMPDIR=/opt/sonarqube/temp
-# Tue, 17 Mar 2026 02:46:36 GMT
-# ARGS: SONARQUBE_VERSION=2026.1.0.119033 SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-2026.1.0.119033.zip
-RUN set -eux;     deluser ubuntu;     useradd --system --uid 1000 --gid 0 sonarqube;     apt-get update;     apt-get --no-install-recommends -y install         bash         curl         fonts-dejavu         gnupg         iproute2         unzip;     echo "networkaddress.cache.ttl=5" >> "${JAVA_HOME}/conf/security/java.security";     sed --in-place --expression="s?securerandom.source=file:/dev/random?securerandom.source=file:/dev/urandom?g" "${JAVA_HOME}/conf/security/java.security";     for server in $(shuf -e hkps://keyserver.ubuntu.com) ; do         gpg --batch --keyserver "${server}" --recv-keys 679F1EE92B19609DE816FDE81DB198F93525EC1A && break || : ;     done;     mkdir --parents /opt;     cd /opt;     curl --proto "=https" --fail --output sonarqube.zip --silent --show-error "${SONARQUBE_ZIP_URL}";     curl --proto "=https" --fail --output sonarqube.zip.asc --silent --show-error "${SONARQUBE_ZIP_URL}.asc";     gpg --batch --verify sonarqube.zip.asc sonarqube.zip;     unzip -q sonarqube.zip;     mv "sonarqube-${SONARQUBE_VERSION}" sonarqube;     rm sonarqube.zip*;     rm -rf ${SONARQUBE_HOME}/bin/*;     ln -s "${SONARQUBE_HOME}/lib/sonar-application-${SONARQUBE_VERSION}.jar" "${SONARQUBE_HOME}/lib/sonarqube.jar";     chown -R sonarqube:root ${SONARQUBE_HOME};     chown -R sonarqube:root "${SQ_DATA_DIR}" "${SQ_EXTENSIONS_DIR}" "${SQ_LOGS_DIR}" "${SQ_TEMP_DIR}";     chmod -R 550 ${SONARQUBE_HOME};     chmod -R 770 "${SQ_DATA_DIR}" "${SQ_EXTENSIONS_DIR}" "${SQ_LOGS_DIR}" "${SQ_TEMP_DIR}";     apt-get remove -y gnupg unzip curl;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Tue, 17 Mar 2026 02:46:36 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
+# ARGS: SONARQUBE_VERSION=2026.2.0.121184 SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-2026.2.0.121184.zip
+RUN set -eux;     deluser ubuntu;     useradd --system --uid 1000 --gid 0 sonarqube;     apt-get update;     apt-get --no-install-recommends -y install         bash         curl         fonts-dejavu         gnupg         iproute2         unzip;     echo "networkaddress.cache.ttl=5" >> "${JAVA_HOME}/conf/security/java.security";     sed --in-place --expression="s?securerandom.source=file:/dev/random?securerandom.source=file:/dev/urandom?g" "${JAVA_HOME}/conf/security/java.security";     for server in $(shuf -e hkps://keyserver.ubuntu.com) ; do         gpg --batch --keyserver "${server}" --recv-keys 679F1EE92B19609DE816FDE81DB198F93525EC1A && break || : ;     done;     cd /opt;     curl --proto "=https" --fail --output sonarqube.zip --silent --show-error "${SONARQUBE_ZIP_URL}";     curl --proto "=https" --fail --output sonarqube.zip.asc --silent --show-error "${SONARQUBE_ZIP_URL}.asc";     gpg --batch --verify sonarqube.zip.asc sonarqube.zip;     unzip -q sonarqube.zip;     mv "sonarqube-${SONARQUBE_VERSION}" sonarqube;     rm sonarqube.zip*;     rm -rf ${SONARQUBE_HOME}/bin/*;     ln -s "${SONARQUBE_HOME}/lib/sonar-application-${SONARQUBE_VERSION}.jar" "${SONARQUBE_HOME}/lib/sonarqube.jar";     chown -R sonarqube:root ${SONARQUBE_HOME};     chown -R sonarqube:root "${SQ_DATA_DIR}" "${SQ_EXTENSIONS_DIR}" "${SQ_LOGS_DIR}" "${SQ_TEMP_DIR}";     chmod -R 550 ${SONARQUBE_HOME};     chmod -R 770 "${SQ_DATA_DIR}" "${SQ_EXTENSIONS_DIR}" "${SQ_LOGS_DIR}" "${SQ_TEMP_DIR}";     apt-get remove -y gnupg unzip;     rm -rf /var/lib/apt/lists/*; # buildkit
+# Mon, 23 Mar 2026 17:52:49 GMT
 VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions /opt/sonarqube/logs /opt/sonarqube/temp]
-# Tue, 17 Mar 2026 02:46:37 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 COPY --chown=root:root --chmod=555 run.sh sonar.sh /opt/sonarqube/docker/ # buildkit
-# Tue, 17 Mar 2026 02:46:37 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 WORKDIR /opt/sonarqube
-# Tue, 17 Mar 2026 02:46:37 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 EXPOSE map[9000/tcp:{}]
-# Tue, 17 Mar 2026 02:46:37 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 USER sonarqube
-# Tue, 17 Mar 2026 02:46:37 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 STOPSIGNAL SIGINT
-# Tue, 17 Mar 2026 02:46:37 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 ENTRYPOINT ["/opt/sonarqube/docker/run.sh"]
-# Tue, 17 Mar 2026 02:46:37 GMT
+# Mon, 23 Mar 2026 17:52:49 GMT
 CMD ["/opt/sonarqube/docker/sonar.sh"]
 ```
 
@@ -105,28 +105,28 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 		Last Modified: Mon, 23 Feb 2026 17:51:17 GMT  
 		Size: 29.7 MB (29731993 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e9e66015a4106ba6a33506aa8681e1e826f3acd628c6ef01dcc42970432c062`  
-		Last Modified: Tue, 17 Mar 2026 01:23:44 GMT  
-		Size: 23.0 MB (22963852 bytes)  
+	-	`sha256:de9be28b95192c91c53b88e11c9949a475df4ba95e71ca9a2ec1dad33873891c`  
+		Last Modified: Tue, 17 Mar 2026 01:24:08 GMT  
+		Size: 17.5 MB (17462244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c25811b013510224fb88be99e66652561dfb1e6878aced0885c7da14e1245164`  
-		Last Modified: Tue, 17 Mar 2026 01:23:47 GMT  
-		Size: 157.9 MB (157867645 bytes)  
+	-	`sha256:c318c44e952a3391b86e5db6a972878c9a4f3f9b51cfbf6d22dcb6d19db6084f`  
+		Last Modified: Tue, 17 Mar 2026 01:24:10 GMT  
+		Size: 92.4 MB (92388668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b1a2f3bb5f3b740bf5ee456c4430e1f1cd3944bb8dfd30eddb42c39222cc651`  
-		Last Modified: Tue, 17 Mar 2026 01:23:43 GMT  
-		Size: 158.0 B  
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91e1054453cc8ad0c2fc8f173ab87276807c498c0f9856f5ed9c62761776bf51`  
-		Last Modified: Tue, 17 Mar 2026 01:23:43 GMT  
-		Size: 2.3 KB (2281 bytes)  
+	-	`sha256:cc1e0a39126833701e554d624057517d5d5863a8905ba55396be02741c872e51`  
+		Last Modified: Tue, 17 Mar 2026 01:24:07 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdd644af98f2542d309a37d9dda77c884daf8dfb0fb40569614587f44530e7ba`  
-		Last Modified: Tue, 17 Mar 2026 02:48:24 GMT  
-		Size: 1.4 GB (1418226328 bytes)  
+	-	`sha256:047b0b778f4f1bdd9b4b95049f8e70b65c915686610067268d9e3c388d961a37`  
+		Last Modified: Mon, 23 Mar 2026 17:54:29 GMT  
+		Size: 1.5 GB (1487635006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18fe95bb22f2f304c03fe159169b6c9a18b0ac00ae5ffce0c6e657d2faca8cfe`  
-		Last Modified: Tue, 17 Mar 2026 02:47:50 GMT  
+	-	`sha256:7d948e0d6a5ad7acab3b54d3ce9d0d7f530139bd1dd81f956534fffd8c705e76`  
+		Last Modified: Mon, 23 Mar 2026 17:54:01 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -137,37 +137,37 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 ### `sonarqube:datacenter-search` - unknown; unknown
 
 ```console
-$ docker pull sonarqube@sha256:71525bf99a036fdb7e8da7f398f598189585c325e096f36a72e878d2e062e2f9
+$ docker pull sonarqube@sha256:48de10f8c22093217845bc43cec31b48a2049cb6bd8e57da6c5af56317223cc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5126030 bytes)**  
+-	Total Size: **5.2 MB (5167658 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6df5db70ec1ebb35d6a3ec64d5d590cf1173b4eed896811c220a9ded889bba4f`
+-	Image ID: `sha256:fdec12c3fea2d28e11a9db89462b469ae044f6759219946361d3a78b561b245d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9a0b7288e5a1049fd1d27d5f10f0eee763c7290bd3352ff86184e8312dad37cc`  
-		Last Modified: Tue, 17 Mar 2026 02:47:50 GMT  
-		Size: 5.1 MB (5105894 bytes)  
+	-	`sha256:76bad042873ea184339ded464cd1e6ab2c7eb393fe676c03c491ccad75d9be08`  
+		Last Modified: Mon, 23 Mar 2026 17:54:01 GMT  
+		Size: 5.1 MB (5147989 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a93e50c473841a5672fd522559709b7e8b995d45bd4885347d86cbf097a04708`  
-		Last Modified: Tue, 17 Mar 2026 02:47:50 GMT  
-		Size: 20.1 KB (20136 bytes)  
+	-	`sha256:ee006bda33ae82d52dba986c205031931f3853799aeb56cc5cf659ea19162027`  
+		Last Modified: Mon, 23 Mar 2026 17:54:01 GMT  
+		Size: 19.7 KB (19669 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `sonarqube:datacenter-search` - linux; arm64 variant v8
 
 ```console
-$ docker pull sonarqube@sha256:9e787c59618650dd9e0b5bc2664ff6aab863b4a3edad8eddb44a4dbd200017a0
+$ docker pull sonarqube@sha256:79b769ae51d9e1e141c28a897e48dbee04075c342a75774bb725442903b9a113
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 GB (1627443159 bytes)**  
+-	Total Size: **1.6 GB (1626636846 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2dd4f91e979d159e780a463f1a2c600e8ca6bd8d829f33dcd78cb7ea21082032`
+-	Image ID: `sha256:01fd1222f6c70c526629a8a39c248d46375e5bb2379e3ccc8b419d72a0b58282`
 -	Entrypoint: `["\/opt\/sonarqube\/docker\/run.sh"]`
 -	Default Command: `["\/opt\/sonarqube\/docker\/sonar.sh"]`
 
@@ -184,66 +184,66 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:2763d61bc43bd178306ae0d4151c2477166ebf199b8d7294d9ea410f9891993f in / 
 # Mon, 23 Feb 2026 17:19:33 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Mar 2026 01:24:50 GMT
+# Tue, 17 Mar 2026 01:24:56 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 17 Mar 2026 01:24:50 GMT
+# Tue, 17 Mar 2026 01:24:56 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Mar 2026 01:24:50 GMT
+# Tue, 17 Mar 2026 01:24:56 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Mar 2026 01:24:50 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Mar 2026 01:24:50 GMT
-ENV JAVA_VERSION=jdk-21.0.10+7
-# Tue, 17 Mar 2026 01:24:57 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='ea3b9bd464d6dd253e9a7accf59f7ccd2a36e4aa69640b7251e3370caef896a4';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='357fee29fb0d5c079f6730db98b28942df13a6eed426f6c61cd4ad703ab27b9a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='33bdaec351f40cc70d44e251a54c23e4dd15fed8adc041e35c57461c706cf948';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='a57fd486c3c24ed615eb91ef9421ddd38c720e7398df5a161872fb26ad825936';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='eabb069b59a2e6b9e9926d9c533186aabf1ff3b4af683d0a3620bb7c7d9770c0';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 17 Mar 2026 01:24:59 GMT
+# Tue, 17 Mar 2026 01:24:56 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 17 Mar 2026 01:24:56 GMT
+ENV JAVA_VERSION=jdk-25.0.2+10
+# Tue, 17 Mar 2026 01:25:19 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='987387933b64b9833846dee373b640440d3e1fd48a04804ec01a6dbf718e8ab8';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_x64_linux_hotspot_25.0.2_10.tar.gz';          ;;        arm64)          ESUM='a9d73e711d967dc44896d4f430f73a68fd33590dabc29a7f2fb9f593425b854c';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.2_10.tar.gz';          ;;        ppc64el)          ESUM='b262b735b215173003766da36588d5f717dceada0286db41b439f93fb2ada468';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_ppc64le_linux_hotspot_25.0.2_10.tar.gz';          ;;        riscv64)          ESUM='168119e4fba350f4e6b3ca92450a2b90a8502b89a235a04415e9adf9f5d3164e';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_riscv64_linux_hotspot_25.0.2_10.tar.gz';          ;;        s390x)          ESUM='15e5cbcadcf3d43623c31b825063cdc2817b9f1ba840b51dc6ef70e5d33c84e3';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_s390x_linux_hotspot_25.0.2_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 17 Mar 2026 01:25:20 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 17 Mar 2026 01:24:59 GMT
+# Tue, 17 Mar 2026 01:25:20 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 17 Mar 2026 01:24:59 GMT
+# Tue, 17 Mar 2026 01:25:20 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 17 Mar 2026 01:24:59 GMT
+# Tue, 17 Mar 2026 01:25:20 GMT
 CMD ["jshell"]
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 LABEL io.k8s.description=SonarQube Server is a self-managed, automatic code review tool that systematically helps you deliver Clean Code.
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 LABEL io.openshift.min-cpu=400m
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 LABEL io.openshift.min-memory=2048M
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 LABEL io.openshift.non-scalable=false
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 LABEL io.openshift.tags=sonarqube,static-code-analysis,code-quality,clean-code
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 LABEL org.opencontainers.image.url=https://github.com/SonarSource/docker-sonarqube
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Mar 2026 02:51:12 GMT
-ARG SONARQUBE_VERSION=2026.1.0.119033
-# Tue, 17 Mar 2026 02:51:12 GMT
-ARG SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-2026.1.0.119033.zip
-# Tue, 17 Mar 2026 02:51:12 GMT
-ENV DOCKER_RUNNING=true JAVA_HOME=/opt/java/openjdk SONARQUBE_HOME=/opt/sonarqube SONAR_VERSION=2026.1.0.119033 SQ_DATA_DIR=/opt/sonarqube/data SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions SQ_LOGS_DIR=/opt/sonarqube/logs SQ_TEMP_DIR=/opt/sonarqube/temp SONAR_CLUSTER_NODE_TYPE=search SONAR_CLUSTER_ENABLED=true
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
+ARG SONARQUBE_VERSION=2026.2.0.121184
+# Mon, 23 Mar 2026 17:51:28 GMT
+ARG SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-2026.2.0.121184.zip
+# Mon, 23 Mar 2026 17:51:28 GMT
+ENV DOCKER_RUNNING=true JAVA_HOME=/opt/java/openjdk SONARQUBE_HOME=/opt/sonarqube SONAR_VERSION=2026.2.0.121184 SQ_DATA_DIR=/opt/sonarqube/data SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions SQ_LOGS_DIR=/opt/sonarqube/logs SQ_TEMP_DIR=/opt/sonarqube/temp SONAR_CLUSTER_NODE_TYPE=search SONAR_CLUSTER_ENABLED=true
+# Mon, 23 Mar 2026 17:51:28 GMT
 ENV ES_TMPDIR=/opt/sonarqube/temp
-# Tue, 17 Mar 2026 02:51:12 GMT
-# ARGS: SONARQUBE_VERSION=2026.1.0.119033 SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-2026.1.0.119033.zip
-RUN set -eux;     deluser ubuntu;     useradd --system --uid 1000 --gid 0 sonarqube;     apt-get update;     apt-get --no-install-recommends -y install         bash         curl         fonts-dejavu         gnupg         iproute2         unzip;     echo "networkaddress.cache.ttl=5" >> "${JAVA_HOME}/conf/security/java.security";     sed --in-place --expression="s?securerandom.source=file:/dev/random?securerandom.source=file:/dev/urandom?g" "${JAVA_HOME}/conf/security/java.security";     for server in $(shuf -e hkps://keyserver.ubuntu.com) ; do         gpg --batch --keyserver "${server}" --recv-keys 679F1EE92B19609DE816FDE81DB198F93525EC1A && break || : ;     done;     mkdir --parents /opt;     cd /opt;     curl --proto "=https" --fail --output sonarqube.zip --silent --show-error "${SONARQUBE_ZIP_URL}";     curl --proto "=https" --fail --output sonarqube.zip.asc --silent --show-error "${SONARQUBE_ZIP_URL}.asc";     gpg --batch --verify sonarqube.zip.asc sonarqube.zip;     unzip -q sonarqube.zip;     mv "sonarqube-${SONARQUBE_VERSION}" sonarqube;     rm sonarqube.zip*;     rm -rf ${SONARQUBE_HOME}/bin/*;     ln -s "${SONARQUBE_HOME}/lib/sonar-application-${SONARQUBE_VERSION}.jar" "${SONARQUBE_HOME}/lib/sonarqube.jar";     chown -R sonarqube:root ${SONARQUBE_HOME};     chown -R sonarqube:root "${SQ_DATA_DIR}" "${SQ_EXTENSIONS_DIR}" "${SQ_LOGS_DIR}" "${SQ_TEMP_DIR}";     chmod -R 550 ${SONARQUBE_HOME};     chmod -R 770 "${SQ_DATA_DIR}" "${SQ_EXTENSIONS_DIR}" "${SQ_LOGS_DIR}" "${SQ_TEMP_DIR}";     apt-get remove -y gnupg unzip curl;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
+# ARGS: SONARQUBE_VERSION=2026.2.0.121184 SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-2026.2.0.121184.zip
+RUN set -eux;     deluser ubuntu;     useradd --system --uid 1000 --gid 0 sonarqube;     apt-get update;     apt-get --no-install-recommends -y install         bash         curl         fonts-dejavu         gnupg         iproute2         unzip;     echo "networkaddress.cache.ttl=5" >> "${JAVA_HOME}/conf/security/java.security";     sed --in-place --expression="s?securerandom.source=file:/dev/random?securerandom.source=file:/dev/urandom?g" "${JAVA_HOME}/conf/security/java.security";     for server in $(shuf -e hkps://keyserver.ubuntu.com) ; do         gpg --batch --keyserver "${server}" --recv-keys 679F1EE92B19609DE816FDE81DB198F93525EC1A && break || : ;     done;     cd /opt;     curl --proto "=https" --fail --output sonarqube.zip --silent --show-error "${SONARQUBE_ZIP_URL}";     curl --proto "=https" --fail --output sonarqube.zip.asc --silent --show-error "${SONARQUBE_ZIP_URL}.asc";     gpg --batch --verify sonarqube.zip.asc sonarqube.zip;     unzip -q sonarqube.zip;     mv "sonarqube-${SONARQUBE_VERSION}" sonarqube;     rm sonarqube.zip*;     rm -rf ${SONARQUBE_HOME}/bin/*;     ln -s "${SONARQUBE_HOME}/lib/sonar-application-${SONARQUBE_VERSION}.jar" "${SONARQUBE_HOME}/lib/sonarqube.jar";     chown -R sonarqube:root ${SONARQUBE_HOME};     chown -R sonarqube:root "${SQ_DATA_DIR}" "${SQ_EXTENSIONS_DIR}" "${SQ_LOGS_DIR}" "${SQ_TEMP_DIR}";     chmod -R 550 ${SONARQUBE_HOME};     chmod -R 770 "${SQ_DATA_DIR}" "${SQ_EXTENSIONS_DIR}" "${SQ_LOGS_DIR}" "${SQ_TEMP_DIR}";     apt-get remove -y gnupg unzip;     rm -rf /var/lib/apt/lists/*; # buildkit
+# Mon, 23 Mar 2026 17:51:28 GMT
 VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions /opt/sonarqube/logs /opt/sonarqube/temp]
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 COPY --chown=root:root --chmod=555 run.sh sonar.sh /opt/sonarqube/docker/ # buildkit
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 WORKDIR /opt/sonarqube
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 EXPOSE map[9000/tcp:{}]
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 USER sonarqube
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 STOPSIGNAL SIGINT
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 ENTRYPOINT ["/opt/sonarqube/docker/run.sh"]
-# Tue, 17 Mar 2026 02:51:12 GMT
+# Mon, 23 Mar 2026 17:51:28 GMT
 CMD ["/opt/sonarqube/docker/sonar.sh"]
 ```
 
@@ -252,28 +252,28 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 		Last Modified: Mon, 23 Feb 2026 17:51:24 GMT  
 		Size: 28.9 MB (28869709 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9037bd81beb0e70bff52640592f63e192661f73a6a3a8b49648bd8aafbd778f8`  
-		Last Modified: Tue, 17 Mar 2026 01:25:17 GMT  
-		Size: 24.2 MB (24170398 bytes)  
+	-	`sha256:ba3d70b58e831f52fbc6dce33d3ff1038690642b16b38b6f7db8f98ac5492973`  
+		Last Modified: Tue, 17 Mar 2026 01:25:36 GMT  
+		Size: 18.7 MB (18654274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b1c743c5b7ba0fb25e36c3d6f0903b9bef565f53db6ced6873f24d95f0e48c1`  
-		Last Modified: Tue, 17 Mar 2026 01:25:20 GMT  
-		Size: 156.1 MB (156139422 bytes)  
+	-	`sha256:94752467d7f7e9b696ae83bfed06b478285d7bde18613ae8de5a2f8bb50fe418`  
+		Last Modified: Tue, 17 Mar 2026 01:25:41 GMT  
+		Size: 91.4 MB (91424581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e90ef8e3c48d2c74984b340f12aca394cd704085e3fd8bf2739d6e3a019d9b0f`  
-		Last Modified: Tue, 17 Mar 2026 01:25:16 GMT  
-		Size: 160.0 B  
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97f42adf5c10b40811d2213dd9231d004c92cab7d8049b84a72af374cc967163`  
-		Last Modified: Tue, 17 Mar 2026 01:24:46 GMT  
-		Size: 2.3 KB (2281 bytes)  
+	-	`sha256:bc4349cc07e9d498e29dc68dab8a1e3ad74d586b4b48867318c2d5fadf02c343`  
+		Last Modified: Tue, 17 Mar 2026 01:25:36 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc34edd35c7e980fcbac0663e466a67e69370e994926965375f931bc31294e2f`  
-		Last Modified: Tue, 17 Mar 2026 02:52:57 GMT  
-		Size: 1.4 GB (1418260323 bytes)  
+	-	`sha256:c15429dd575bda3e0f283c5b3068385be5e6c09032efbf7d5d2a16be197c6907`  
+		Last Modified: Mon, 23 Mar 2026 17:53:08 GMT  
+		Size: 1.5 GB (1487685101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c3c137aecd94668af2698178c4ebfe70114d824dec35a8111df23eb2677bf02`  
-		Last Modified: Tue, 17 Mar 2026 02:52:24 GMT  
+	-	`sha256:aa19523dd4555fc4472f312f35805319eb9d4f11a82b28d414512496f3d616f1`  
+		Last Modified: Mon, 23 Mar 2026 17:52:41 GMT  
 		Size: 834.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -284,23 +284,23 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 ### `sonarqube:datacenter-search` - unknown; unknown
 
 ```console
-$ docker pull sonarqube@sha256:80cd51a9e15ef0e408a77d84459eadc14b2f882ad967aa2d8ccd0a12ce85f426
+$ docker pull sonarqube@sha256:1e9f4b79512b80d8d072125a61a21ed08fcf798843b6198c015dc89a2a239420
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5257665 bytes)**  
+-	Total Size: **5.3 MB (5299264 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c36d29dd204b96816a66748717d68102d10136f19ccdaefe50652e20d0917a2d`
+-	Image ID: `sha256:3c4e550068a1856010f4273b02091ae773f5a91a93a134b031a08d55c4940e2b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:25a9c75cf30efa8ecd3aedfcf9f003cc32536f7b465fb0bb15eef2d18d49c91c`  
-		Last Modified: Tue, 17 Mar 2026 02:52:24 GMT  
-		Size: 5.2 MB (5237425 bytes)  
+	-	`sha256:0d1f807489755bfc287268c6333487e36856d678c55f821952b70cdf4f909461`  
+		Last Modified: Mon, 23 Mar 2026 17:52:41 GMT  
+		Size: 5.3 MB (5279505 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:af3eaf929f59a50986886cdbc0bd52cf63d2a95710d549720169a08926ac5afa`  
-		Last Modified: Tue, 17 Mar 2026 02:52:24 GMT  
-		Size: 20.2 KB (20240 bytes)  
+	-	`sha256:6132a949be29a63a5b10512ef854ce1ff77d863ee0415faa475f8461e724b856`  
+		Last Modified: Mon, 23 Mar 2026 17:52:40 GMT  
+		Size: 19.8 KB (19759 bytes)  
 		MIME: application/vnd.in-toto+json
