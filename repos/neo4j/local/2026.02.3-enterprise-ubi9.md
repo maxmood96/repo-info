@@ -1,10 +1,10 @@
-# `neo4j:2026.02.2-enterprise-ubi9`
+# `neo4j:2026.02.3-enterprise-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4dc947e0aa01524a2225996f27123a476af0b11f279114483fbefb94255d107d`
-- Created: `2026-03-11T18:36:48.899543842Z`
-- Virtual Size: ~ 800.06 Mb  
+- Image ID: `sha256:45033bbb705b38d13e0f3210124254da9d7a695065bbfabc2dab7873dddf90d6`
+- Created: `2026-03-20T17:50:22.252103653Z`
+- Virtual Size: ~ 800.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,14 +12,14 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=3edc16e54b70b190f460fed9a5eb31e7e4e8c6a52aa823bff6b18dd2d2183c8a`
-  - `NEO4J_TARBALL=neo4j-enterprise-2026.02.2-unix.tar.gz`
+  - `NEO4J_SHA256=0587f264954dfea33cfec36f442c8aca5156a5db6fbca73d3a3c2523130d2408`
+  - `NEO4J_TARBALL=neo4j-enterprise-2026.02.3-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-03-11T04:51:18Z`
+  - `build-date=2026-03-19T17:02:39Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-03-11T04:51:18Z`
-  - `org.opencontainers.image.revision=ddf3e9d218968613397a7b4df7547f25ad755449`
-  - `release=1773204619`
+  - `org.opencontainers.image.created=2026-03-19T17:02:39Z`
+  - `org.opencontainers.image.revision=d0c250a501ab44b94ebea3e751fcaa45749a08a2`
+  - `release=1773939694`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=ddf3e9d218968613397a7b4df7547f25ad755449`
+  - `vcs-ref=d0c250a501ab44b94ebea3e751fcaa45749a08a2`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -579,11 +579,16 @@ $ dnf --quiet download --source --url libacl-2.3.1-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/acl-2.3.1-4.el9.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.5.3-6.el9_6.x86_64`
+### `rpm` package: `libarchive-3.5.3-7.el9_7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libarchive-3.5.3-7.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.5.3-7.el9_7.src.rpm
+```
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
 
@@ -1161,67 +1166,37 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url nspr-4.36.0-4.el9_4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-4.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `nss-3.112.0-4.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url nss-3.112.0-4.el9_4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-4.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `nss-softokn-3.112.0-4.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url nss-softokn-3.112.0-4.el9_4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-4.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `nss-softokn-freebl-3.112.0-4.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url nss-softokn-freebl-3.112.0-4.el9_4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-4.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `nss-sysinit-3.112.0-4.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url nss-sysinit-3.112.0-4.el9_4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-4.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `nss-util-3.112.0-4.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url nss-util-3.112.0-4.el9_4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-4.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `oniguruma-6.9.6-1.el9.5.x86_64`
 
@@ -1542,17 +1517,27 @@ $ dnf --quiet download --source --url tar-1.34-9.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-9.el9_7.src.rpm
 ```
 
-### `rpm` package: `tzdata-2025c-1.el9.noarch`
+### `rpm` package: `tzdata-2026a-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `tzdata-java-2025c-1.el9.noarch`
+```console
+$ dnf --quiet download --source --url tzdata-2026a-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026a-1.el9.src.rpm
+```
+
+### `rpm` package: `tzdata-java-2026a-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-java-2026a-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026a-1.el9.src.rpm
+```
 
 ### `rpm` package: `wget-1.21.1-8.el9_4.x86_64`
 

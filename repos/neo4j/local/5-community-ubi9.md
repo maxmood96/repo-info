@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0d6cc6791f61d892b4cca63f7defaa5dce9dadaea87e498afd21a1ca123f68c3`
-- Created: `2026-03-18T23:13:32.191406228Z`
+- Image ID: `sha256:ac516943cf8ec321f079147a33c16ab08a109e4989d124b655d28c830a19f238`
+- Created: `2026-03-20T00:20:19.898766346Z`
 - Virtual Size: ~ 553.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-03-11T04:51:18Z`
+  - `build-date=2026-03-19T17:02:39Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-03-11T04:51:18Z`
-  - `org.opencontainers.image.revision=ddf3e9d218968613397a7b4df7547f25ad755449`
-  - `release=1773204619`
+  - `org.opencontainers.image.created=2026-03-19T17:02:39Z`
+  - `org.opencontainers.image.revision=d0c250a501ab44b94ebea3e751fcaa45749a08a2`
+  - `release=1773939694`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=ddf3e9d218968613397a7b4df7547f25ad755449`
+  - `vcs-ref=d0c250a501ab44b94ebea3e751fcaa45749a08a2`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -579,11 +579,16 @@ $ dnf --quiet download --source --url libacl-2.3.1-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/acl-2.3.1-4.el9.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.5.3-6.el9_6.x86_64`
+### `rpm` package: `libarchive-3.5.3-7.el9_7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libarchive-3.5.3-7.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.5.3-7.el9_7.src.rpm
+```
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
 
@@ -1161,67 +1166,37 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url nspr-4.36.0-4.el9_4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-4.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `nss-3.112.0-4.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url nss-3.112.0-4.el9_4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-4.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `nss-softokn-3.112.0-4.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url nss-softokn-3.112.0-4.el9_4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-4.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `nss-softokn-freebl-3.112.0-4.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url nss-softokn-freebl-3.112.0-4.el9_4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-4.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `nss-sysinit-3.112.0-4.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url nss-sysinit-3.112.0-4.el9_4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-4.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `nss-util-3.112.0-4.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url nss-util-3.112.0-4.el9_4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-4.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `oniguruma-6.9.6-1.el9.5.x86_64`
 
@@ -1542,11 +1517,16 @@ $ dnf --quiet download --source --url tar-1.34-9.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-9.el9_7.src.rpm
 ```
 
-### `rpm` package: `tzdata-2025c-1.el9.noarch`
+### `rpm` package: `tzdata-2026a-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2026a-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026a-1.el9.src.rpm
+```
 
 ### `rpm` package: `tzdata-java-2026a-1.el9.noarch`
 
