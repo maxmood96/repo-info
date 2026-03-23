@@ -923,15 +923,13 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.9-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.9-1.dsc' libsemanage_3.9-1.dsc 2965 SHA512:5f8155f4ac62eaf2b18df571224bc98c7a0aab4851f5f648d08b19d6960aabfcdd4cb7809f7c97a2923a63fbe59b0c1f692451bfc9423ab33200965e4bad4ece
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.9.orig.tar.gz' libsemanage_3.9.orig.tar.gz 185278 SHA512:a859e8d9313c922942a9be0477b387775b19c41bd108f80992112dcd2696701f40a890f5e6fc3087e7bfe69b382a1bcffa3e02c8996a719e763fbe2f6787c61c
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.9.orig.tar.gz.asc' libsemanage_3.9.orig.tar.gz.asc 833 SHA512:d01aa5d26c88c66f3f283aba9a4abf8df059180d96f557b4abc20f9d5d9a80fdf868767fb29d631d420febeb17453369d5c50fe92749c39cb5dca8a0fe5ba2b2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.9-1.debian.tar.xz' libsemanage_3.9-1.debian.tar.xz 38028 SHA512:8a6011c97c1f8e9b6c42d1742dd9bacb482cd51f6be9efdad92ee1fb4377e1ea734b51093328fe7cc943c95943b393ee19c75f801f65732f8cead4ea225b83e2
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libsemanage/3.9-1/
+
 
 ### `dpkg` source package: `libsepol=3.9-2`
 
@@ -1324,14 +1322,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=259.3-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.3-0ubuntu1.dsc' systemd_259.3-0ubuntu1.dsc 8517 SHA512:fa568ef05edbc1d3b231deb028f8f506709a9c7550e112bea6adff78c5aeae7f8fb5a16adf299ef03c7daf89e194a2128b066f6d950f93fa75e1e9fbadc77dcb
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.3.orig.tar.gz' systemd_259.3.orig.tar.gz 17285135 SHA512:ea7314fcde3c0e541c9399f2d165f114bd7bf37cec294680964352da374435ddd3949432f939f35ecb49f0ce6a3b7aaaddf2b65cc8107abc65e2ec3806c99dac
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.3-0ubuntu1.debian.tar.xz' systemd_259.3-0ubuntu1.debian.tar.xz 246796 SHA512:5417a096a38298fc16e7927d89b1985129cac2a1fe3f20d229ebe66aec2cbef229cdfd2b5b4f5e9da61828db34e0cbf87e94edbe9f49891cebe2dd57e9567b82
-```
 
 ### `dpkg` source package: `sysvinit=3.15-5ubuntu1`
 
