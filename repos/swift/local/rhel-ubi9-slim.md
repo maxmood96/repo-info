@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d340b6b0b3c8ad9d4990a666a6f9fe653538387a1fd6519e870ac47fc06bf56e`
-- Created: `2026-03-11T18:40:49.73437014Z`
+- Image ID: `sha256:440d27a8fbba628c7f1c96c392f078229b13290b7c8bbf6745e9270dd7525a6c`
+- Created: `2026-03-20T00:21:06.489488167Z`
 - Virtual Size: ~ 373.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-03-11T04:52:42Z`
+  - `build-date=2026-03-19T04:42:55Z`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9/ubi`
-  - `org.opencontainers.image.created=2026-03-11T04:52:42Z`
-  - `org.opencontainers.image.revision=153ac4cef6743cee84c3d5850db2b2b8ac851e06`
-  - `release=1773204657`
+  - `org.opencontainers.image.created=2026-03-19T04:42:55Z`
+  - `org.opencontainers.image.revision=3943a0caf19195893dd00d23f77268f16aa1d417`
+  - `release=1773895171`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=153ac4cef6743cee84c3d5850db2b2b8ac851e06`
+  - `vcs-ref=3943a0caf19195893dd00d23f77268f16aa1d417`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -681,12 +681,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): BSD
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libarchive-3.5.3-6.el9_6
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.5.3-6.el9_6.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
 
@@ -1986,11 +1981,16 @@ $ dnf --quiet download --source --url tpm2-tss-3.2.3-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tpm2-tss-3.2.3-1.el9.src.rpm
 ```
 
-### `rpm` package: `tzdata-2025c-1.el9.noarch`
+### `rpm` package: `tzdata-2026a-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2026a-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026a-1.el9.src.rpm
+```
 
 ### `rpm` package: `usermode-1.114-7.el9.x86_64`
 
