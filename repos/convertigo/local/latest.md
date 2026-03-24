@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bf00ecf80127f60029018ff51bfff279ac1243cc8e58af36d08108ad9dd98f43`
-- Created: `2026-03-18T17:46:18.923954702Z`
-- Virtual Size: ~ 642.55 Mb  
+- Image ID: `sha256:fa66da3238ec6f699ee8c072eb03fa2dafdca19e67e083db15be57b5b6a0a09e`
+- Created: `2026-03-20T21:02:38.540699032Z`
+- Virtual Size: ~ 642.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.115`
-  - `TOMCAT_SHA512=8e6fa92883c161523269560a7dc9e8d58fd1199b29c630f681aa3ec2975b59d94674d2881331076b55f5ee0439748931d87c099c79d7bcea909303739e612e4b`
+  - `TOMCAT_VERSION=9.0.116`
+  - `TOMCAT_SHA512=a0992861f7615f0a79d372e84969a1bb48f603ef1687380d9a3579164dae7a1dea6b440e1bad27447f91a676528b2951634a0707616707f1df73cd27534ea5f9`
   - `SWT_GTK3=0`
   - `CONVERTIGO_VERSION=8.4.1`
   - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.4.1/convertigo-8.4.1.war`
@@ -1988,14 +1988,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.12
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.12.dsc' systemd_255.4-1ubuntu8.12.dsc 7324 SHA512:ff1c3392b079861cdfdb41e0624166d6a7e0459b7e2a7ce13fdc0814c5d593e3ceba6c73e53c6ab617fb455d8fe07904c55c0081a1d94d1e40e3c3b3667eb321
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.12.debian.tar.xz' systemd_255.4-1ubuntu8.12.debian.tar.xz 257724 SHA512:0394efde0f11cee00b37b232373e400ef1a3cae666fbbab6c732fe4de241ef32b588619bdfd1101be9752370d16958505ea42c8ac5681d1448c780faa0233227
-```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
