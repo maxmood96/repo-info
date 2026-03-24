@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3e698028ffb2a79c9ea2c565fa85479eba6a460cd8e9581f0cf492d79fbf5603`
-- Created: `2026-03-17T04:17:55.6976786Z`
+- Image ID: `sha256:13dcd5bf9efe2d2d89b54d41ac7991eeb330822bd743797354c6a8c9b0d5c3b3`
+- Created: `2026-03-20T21:09:31.258081803Z`
 - Virtual Size: ~ 1.25 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.115`
-  - `TOMCAT_SHA512=8e6fa92883c161523269560a7dc9e8d58fd1199b29c630f681aa3ec2975b59d94674d2881331076b55f5ee0439748931d87c099c79d7bcea909303739e612e4b`
+  - `TOMCAT_VERSION=9.0.116`
+  - `TOMCAT_SHA512=a0992861f7615f0a79d372e84969a1bb48f603ef1687380d9a3579164dae7a1dea6b440e1bad27447f91a676528b2951634a0707616707f1df73cd27534ea5f9`
   - `XWIKI_VERSION=16.10.17`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.17`
   - `XWIKI_DOWNLOAD_SHA256=4e43dde6d4f971e789b8d38c06404ce14f40c65e2e541303fbb7d2151c113a85`
@@ -3962,14 +3962,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.5.1+git230720-4ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.4.dsc' tiff_4.5.1+git230720-4ubuntu2.4.dsc 2488 SHA512:ee2188d0a1e0fa447ac5bfe8ac86aa6989081c78a5204b9f8dd1e890249cf7b74f46d69e9ff64e249ba583065c7918cbdba366f57a0a384c4815f3bb059bfe8c
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720.orig.tar.xz' tiff_4.5.1+git230720.orig.tar.xz 1781896 SHA512:6bf9653f5c65d17c2944b20d14a5d5ab3b89d461bc6eb935a54aa8df99ce7221aeb2172f06b44affd06d81aeaab5698b90b07fde883167d0abf51debaaa6f71b
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.4.debian.tar.xz' tiff_4.5.1+git230720-4ubuntu2.4.debian.tar.xz 32700 SHA512:e1452bc15b6212755b9e5e5fb4f7e15b28f7506a08cfb17ae3b1931174af229f459f4fb02dc0bd07c7faded43d3e59744c2dd6659ad188b8874ed4e90a7ae09b
-```
 
 ### `dpkg` source package: `tzdata=2025b-0ubuntu0.24.04.1`
 

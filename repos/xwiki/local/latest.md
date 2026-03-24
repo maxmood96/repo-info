@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7face0787c548f9c8bbb024eaa6540e44c827c4d2fd970cb7bdf784a068f2990`
-- Created: `2026-03-17T04:15:43.40199687Z`
+- Image ID: `sha256:1591e0c2cd607e4cbd3ce80e9c67c93cccafc02767dab25e53d167fdddd609c4`
+- Created: `2026-03-23T22:11:40.55420959Z`
 - Virtual Size: ~ 1.33 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=10`
-  - `TOMCAT_VERSION=10.1.52`
-  - `TOMCAT_SHA512=241183fe5dec15936205ec495b65e04218117affc10e90c5fbc56bce0b4f031ee944d468c128f0ae484fd1d5bd9bec22b65a95a8cfd94cb7fc1f12c7ef434d99`
+  - `TOMCAT_VERSION=10.1.53`
+  - `TOMCAT_SHA512=0b21ad1e61b3163125866e8f5f317b23886998fccb4398f305c39a0bc1f688f6c566ab040da9f559ab50af4d699bda771d1ca89e229ead052336559a25753b45`
   - `XWIKI_VERSION=18.1.0`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.1.0`
   - `XWIKI_DOWNLOAD_SHA256=0f7d70d190ebf20483b3afd79b006050bbe4618ca1dab02bc74e1c3202bd63c0`
@@ -3952,11 +3952,11 @@ $ apt-get source -qq --print-uris tar=1.35+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3build1.debian.tar.xz' tar_1.35+dfsg-3build1.debian.tar.xz 20948 SHA512:82b1a9f70c99c17f5288a4a9fbe8b1bef0adcd9543f97f876ee81afc16e3ac02e46182557406ff434ae90c81950f22346c3229ee3e5f5f9578dcf09a20053e9f
 ```
 
-### `dpkg` source package: `tiff=4.5.1+git230720-4ubuntu2.4`
+### `dpkg` source package: `tiff=4.5.1+git230720-4ubuntu2.5`
 
 Binary Packages:
 
-- `libtiff6:amd64=4.5.1+git230720-4ubuntu2.4`
+- `libtiff6:amd64=4.5.1+git230720-4ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
@@ -3965,10 +3965,10 @@ Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.5.1+git230720-4ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.4.dsc' tiff_4.5.1+git230720-4ubuntu2.4.dsc 2488 SHA512:ee2188d0a1e0fa447ac5bfe8ac86aa6989081c78a5204b9f8dd1e890249cf7b74f46d69e9ff64e249ba583065c7918cbdba366f57a0a384c4815f3bb059bfe8c
+$ apt-get source -qq --print-uris tiff=4.5.1+git230720-4ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.5.dsc' tiff_4.5.1+git230720-4ubuntu2.5.dsc 2309 SHA512:e701ab6ae6250e22c2e49d58a8cf9615ba3034f6c55b2cfe78d64a8fde6c84eccb7cc95a8548be4af7a714c816ebeb5256204ed5dd75218a8e6095e1b3f5ec90
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720.orig.tar.xz' tiff_4.5.1+git230720.orig.tar.xz 1781896 SHA512:6bf9653f5c65d17c2944b20d14a5d5ab3b89d461bc6eb935a54aa8df99ce7221aeb2172f06b44affd06d81aeaab5698b90b07fde883167d0abf51debaaa6f71b
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.4.debian.tar.xz' tiff_4.5.1+git230720-4ubuntu2.4.debian.tar.xz 32700 SHA512:e1452bc15b6212755b9e5e5fb4f7e15b28f7506a08cfb17ae3b1931174af229f459f4fb02dc0bd07c7faded43d3e59744c2dd6659ad188b8874ed4e90a7ae09b
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.5.debian.tar.xz' tiff_4.5.1+git230720-4ubuntu2.5.debian.tar.xz 33152 SHA512:cb76f5d937dc2bb9f0dd8fe2f99b7c97972068e3f5618976fd759d998009d46998fecc82673452e5cd966c71fe472031023b3ecd8fbd9e61605613f2d827c391
 ```
 
 ### `dpkg` source package: `tzdata=2025b-0ubuntu0.24.04.1`
