@@ -716,20 +716,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.7.4-1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.4-1.dsc' expat_2.7.4-1.dsc 1970 SHA256:2b8d94bbc4e830fb7268be91ff18dc24cfdc88608399311af85737cf360da3a0
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.4.orig.tar.gz' expat_2.7.4.orig.tar.gz 8448897 SHA256:5b356795b889d3e5b379433ece069b8781bf0727f6959ad3bbc9da0c22164f59
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.4-1.debian.tar.xz' expat_2.7.4-1.debian.tar.xz 13420 SHA256:d58d2cb39825e385b7063eca491ce1b34299b047bce45d9ef0b42666a289a9b0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.7.4-1/
 
-- https://sources.debian.net/src/expat/2.7.4-1/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.7.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.7.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -934,14 +927,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-16-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-16=16-20260315-1
-'http://http.debian.net/debian/pool/main/g/gcc-16/gcc-16_16-20260315-1.dsc' gcc-16_16-20260315-1.dsc 52607 SHA256:c0a8163ec5576a88c884858b627f97ef584e96cf689f76e758cb38898faad4b0
-'http://http.debian.net/debian/pool/main/g/gcc-16/gcc-16_16-20260315.orig.tar.gz' gcc-16_16-20260315.orig.tar.gz 100119932 SHA256:0b40fd98e2e76e2616512507e807462c31e10db6ae55a1aeb972e19f647d769b
-'http://http.debian.net/debian/pool/main/g/gcc-16/gcc-16_16-20260315-1.debian.tar.xz' gcc-16_16-20260315-1.debian.tar.xz 625076 SHA256:5bcaa178876b700bc3fd90a5f17e52dfe9253ac768160d6814de18339f8d1a1b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gcc-16/16-20260315-1/
+
 
 ### `dpkg` source package: `gcc-defaults=1.230`
 
@@ -1030,11 +1022,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.87.2-3
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.87.2-3.dsc' glib2.0_2.87.2-3.dsc 4684 SHA256:35a2b63c50656992540d69c155ba319f0e0a516382767385fe8ab313e4a710a7
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.87.2.orig-unicode-data.tar.xz' glib2.0_2.87.2.orig-unicode-data.tar.xz 666552 SHA256:4b55352323696c72187f855981ed1f7d1594a53f257f7803a928749cab9f9f44
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.87.2.orig.tar.xz' glib2.0_2.87.2.orig.tar.xz 5747156 SHA256:d6eb74a4f4ffc0b56df79ae3a939463b1d92c623f6c167d51aab24e303a851f3
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.87.2-3.debian.tar.xz' glib2.0_2.87.2-3.debian.tar.xz 148168 SHA256:c8e2578926743bb7fd29dfd471f7e1a90fd05019fe130ded1123585ccfac5e09
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.87.2-3.dsc' glib2.0_2.87.2-3.dsc 4684 SHA256:35a2b63c50656992540d69c155ba319f0e0a516382767385fe8ab313e4a710a7
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.87.2.orig-unicode-data.tar.xz' glib2.0_2.87.2.orig-unicode-data.tar.xz 666552 SHA256:4b55352323696c72187f855981ed1f7d1594a53f257f7803a928749cab9f9f44
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.87.2.orig.tar.xz' glib2.0_2.87.2.orig.tar.xz 5747156 SHA256:d6eb74a4f4ffc0b56df79ae3a939463b1d92c623f6c167d51aab24e303a851f3
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.87.2-3.debian.tar.xz' glib2.0_2.87.2-3.debian.tar.xz 148168 SHA256:c8e2578926743bb7fd29dfd471f7e1a90fd05019fe130ded1123585ccfac5e09
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glib2.0/2.87.2-3/ (for browsing the source)
+- https://sources.debian.net/src/glib2.0/2.87.2-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glib2.0/2.87.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.42-13`
 
@@ -1305,21 +1303,13 @@ Licenses: (parsed from: `/usr/share/doc/icu-devtools/copyright`, `/usr/share/doc
 - `GPL-3`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=78.2-2
-'http://deb.debian.org/debian/pool/main/i/icu/icu_78.2-2.dsc' icu_78.2-2.dsc 2236 SHA256:762b9a3e3bf243721b396d9e9483fb3f686f07ccdf3ad0d3d76a471d0ec34091
-'http://deb.debian.org/debian/pool/main/i/icu/icu_78.2.orig.tar.gz' icu_78.2.orig.tar.gz 27970651 SHA256:3e99687b5c435d4b209630e2d2ebb79906c984685e78635078b672e03c89df35
-'http://deb.debian.org/debian/pool/main/i/icu/icu_78.2.orig.tar.gz.asc' icu_78.2.orig.tar.gz.asc 228 SHA256:09220c6136a2f451a7ba0fc6fb96c1d393464cd0ba44953085f9a23c454fae66
-'http://deb.debian.org/debian/pool/main/i/icu/icu_78.2-2.debian.tar.xz' icu_78.2-2.debian.tar.xz 64412 SHA256:bb7fa392aa7df3e87aaa65e13d6bcb0562ccd8ea478e631b1094ed7e526e6a5d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/icu/78.2-2/
 
-- https://sources.debian.net/src/icu/78.2-2/ (for browsing the source)
-- https://sources.debian.net/src/icu/78.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/78.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.69`
 
@@ -1971,21 +1961,13 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 - `BSD3`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.11.1-1
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-1.dsc' libssh2_1.11.1-1.dsc 2319 SHA256:f97f7ac25300908b255a29c63055e78684e68c12c308edb016747da1de592377
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA256:d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA256:f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-1.debian.tar.xz' libssh2_1.11.1-1.debian.tar.xz 17136 SHA256:f3b9e55f706c89e9408478a1eecb0067b8e18902e0cab168f44194fcc53641cf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libssh2/1.11.1-1/
 
-- https://sources.debian.net/src/libssh2/1.11.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.11.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.11.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.21.0-2`
 
@@ -3244,10 +3226,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rmatrix=1.7-4-1
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.7-4-1.dsc' rmatrix_1.7-4-1.dsc 1860 SHA256:adcb2800928bbc526d22f27257b44a3a98aaa9bf3b37966037735c4499daaf1c
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.7-4.orig.tar.gz' rmatrix_1.7-4.orig.tar.gz 2485182 SHA256:7b131ecb6a21ff09a33691dac7bf8a7bc2eab9fd1dd09ef14856d74346eb4779
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.7-4-1.debian.tar.xz' rmatrix_1.7-4-1.debian.tar.xz 6100 SHA256:37dba8e241c16a9f8651596065425727d487e785eada99010041920eff17ef9f
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-4-1.dsc' rmatrix_1.7-4-1.dsc 1860 SHA256:adcb2800928bbc526d22f27257b44a3a98aaa9bf3b37966037735c4499daaf1c
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-4.orig.tar.gz' rmatrix_1.7-4.orig.tar.gz 2485182 SHA256:7b131ecb6a21ff09a33691dac7bf8a7bc2eab9fd1dd09ef14856d74346eb4779
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-4-1.debian.tar.xz' rmatrix_1.7-4-1.debian.tar.xz 6100 SHA256:37dba8e241c16a9f8651596065425727d487e785eada99010041920eff17ef9f
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/rmatrix/1.7-4-1/ (for browsing the source)
+- https://sources.debian.net/src/rmatrix/1.7-4-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rmatrix/1.7-4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1.24-1`
 
@@ -3737,10 +3725,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris vim=2:9.1.2141-1
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.2141-1.dsc' vim_9.1.2141-1.dsc 3198 SHA256:4a8c3c05a76db159ab43622f125c7196a6856d0c94e7088f65512ab86144b088
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.2141.orig.tar.xz' vim_9.1.2141.orig.tar.xz 13177468 SHA256:d4de759838a10f610ef4a121b84c6ed937f68cc0e15a9af6763904081aa78758
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.2141-1.debian.tar.xz' vim_9.1.2141-1.debian.tar.xz 192420 SHA256:d875890965b62d003ff627dba5ced892799b1dc15fae6f5ad58dac0ac53e0d21
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.2141-1.dsc' vim_9.1.2141-1.dsc 3198 SHA256:4a8c3c05a76db159ab43622f125c7196a6856d0c94e7088f65512ab86144b088
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.2141.orig.tar.xz' vim_9.1.2141.orig.tar.xz 13177468 SHA256:d4de759838a10f610ef4a121b84c6ed937f68cc0e15a9af6763904081aa78758
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.2141-1.debian.tar.xz' vim_9.1.2141-1.debian.tar.xz 192420 SHA256:d875890965b62d003ff627dba5ced892799b1dc15fae6f5ad58dac0ac53e0d21
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/vim/2:9.1.2141-1/ (for browsing the source)
+- https://sources.debian.net/src/vim/2:9.1.2141-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/vim/2:9.1.2141-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
