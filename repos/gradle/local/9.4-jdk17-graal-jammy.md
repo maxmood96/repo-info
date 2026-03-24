@@ -1,9 +1,9 @@
-# `gradle:9.4.0-jdk17-graal-jammy`
+# `gradle:9.4.1-jdk17-graal-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:899a82efb475a2dd42eaa229a53f2c11e6cf3860038d93fb0243dfe1a38be905`
-- Created: `2026-03-17T01:31:00.41854104Z`
+- Image ID: `sha256:f84c0d06be60bcc4fdd9c7f85a1a81436f4e317889757f83731aa8316e49bfcb`
+- Created: `2026-03-20T17:12:21.959100704Z`
 - Virtual Size: ~ 1.16 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=17.0.9`
-  - `GRADLE_VERSION=9.4.0`
+  - `GRADLE_VERSION=9.4.1`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`

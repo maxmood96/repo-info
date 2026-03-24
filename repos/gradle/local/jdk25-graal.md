@@ -1,9 +1,9 @@
-# `gradle:9.4.0-jdk25-graal`
+# `gradle:9.4.1-jdk25-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f0e96e55d7dce12f4b3b7a94bc2c0ed1d78ca216362b523c3d0560441d62e574`
-- Created: `2026-03-17T01:28:12.046365958Z`
+- Image ID: `sha256:2c4239a8148f425c866ec3b2f032653d3fe5ad1af4191a75f8375b1849a918da`
+- Created: `2026-03-20T17:10:46.593683084Z`
 - Virtual Size: ~ 1.40 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=25.0.2`
-  - `GRADLE_VERSION=9.4.0`
+  - `GRADLE_VERSION=9.4.1`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
@@ -235,18 +235,18 @@ $ apt-get source -qq --print-uris bash=5.2.21-2ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.21-2ubuntu4.debian.tar.xz' bash_5.2.21-2ubuntu4.debian.tar.xz 94124 SHA512:cbe580880995984a6ceb6c980d2fa87bbb1ace85d834a147ce39eaf44692af654c2c537716a19c8ed21b20e8abad9240d3f3349cc51020aeba2cd6e490802725
 ```
 
-### `dpkg` source package: `binutils=2.42-4ubuntu2.8`
+### `dpkg` source package: `binutils=2.42-4ubuntu2.10`
 
 Binary Packages:
 
-- `binutils=2.42-4ubuntu2.8`
-- `binutils-common:amd64=2.42-4ubuntu2.8`
-- `binutils-x86-64-linux-gnu=2.42-4ubuntu2.8`
-- `libbinutils:amd64=2.42-4ubuntu2.8`
-- `libctf-nobfd0:amd64=2.42-4ubuntu2.8`
-- `libctf0:amd64=2.42-4ubuntu2.8`
-- `libgprofng0:amd64=2.42-4ubuntu2.8`
-- `libsframe1:amd64=2.42-4ubuntu2.8`
+- `binutils=2.42-4ubuntu2.10`
+- `binutils-common:amd64=2.42-4ubuntu2.10`
+- `binutils-x86-64-linux-gnu=2.42-4ubuntu2.10`
+- `libbinutils:amd64=2.42-4ubuntu2.10`
+- `libctf-nobfd0:amd64=2.42-4ubuntu2.10`
+- `libctf0:amd64=2.42-4ubuntu2.10`
+- `libgprofng0:amd64=2.42-4ubuntu2.10`
+- `libsframe1:amd64=2.42-4ubuntu2.10`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`, `/usr/share/doc/libgprofng0/copyright`, `/usr/share/doc/libsframe1/copyright`)
 
@@ -257,10 +257,10 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 Source:
 
 ```console
-$ apt-get source -qq --print-uris binutils=2.42-4ubuntu2.8
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.8.dsc' binutils_2.42-4ubuntu2.8.dsc 10148 SHA512:be5a842fcc21200b65dac1f276a61edab9107ce3720e0f8742125d07e4244e4040718719a84ff6c5daeb0b1c2575a57b1c4f824dc996bd4dd8271c4613fb1adc
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42.orig.tar.xz' binutils_2.42.orig.tar.xz 27567160 SHA512:155f3ba14cd220102f4f29a4f1e5cfee3c48aa03b74603460d05afb73c70d6657a9d87eee6eb88bf13203fe6f31177a5c9addc04384e956e7da8069c8ecd20a6
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.8.debian.tar.xz' binutils_2.42-4ubuntu2.8.debian.tar.xz 189180 SHA512:3d7e00b2e49b6b50293fbf2933dfaa98f5ed9f290d807507bdc1f7e361248c45eefe48207c3f4e20340fcfa1d7e1d28bad2c148d36e30a573cb0ea6fac4fb0d5
+$ apt-get source -qq --print-uris binutils=2.42-4ubuntu2.10
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.10.dsc' binutils_2.42-4ubuntu2.10.dsc 10152 SHA512:0e8e50a3777bfd6ebf0aa51c93554a25fbfe06c51a53b058a835e58cb752acef90a88715f21c4364d55006fc323c843a718381af586023c41fc8ec862681b0e0
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42.orig.tar.xz' binutils_2.42.orig.tar.xz 27567160 SHA512:155f3ba14cd220102f4f29a4f1e5cfee3c48aa03b74603460d05afb73c70d6657a9d87eee6eb88bf13203fe6f31177a5c9addc04384e956e7da8069c8ecd20a6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.10.debian.tar.xz' binutils_2.42-4ubuntu2.10.debian.tar.xz 196552 SHA512:4b96812b4a3adc8b825ca97fd31b9091f13953bdde67e0a917c5f8bd1d2a096fee2dd0a315ca01f76944795b81fd297ff3df4a25b3ed32ac2ac317e3de633943
 ```
 
 ### `dpkg` source package: `breezy=3.3.5-6build2`

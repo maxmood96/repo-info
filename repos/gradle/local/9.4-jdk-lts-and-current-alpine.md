@@ -1,10 +1,10 @@
-# `gradle:9.4.0-jdk-lts-and-current-alpine`
+# `gradle:9.4.1-jdk-lts-and-current-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b105dd8ebaf3065e58f5b240ef905d7edb6cdfef2a4ffa7ac2ad83b410cff947`
-- Created: `2026-03-04T17:55:47.216866286Z`
-- Virtual Size: ~ 576.88 Mb  
+- Image ID: `sha256:83567d888ed6786046636437f00bf9902e21ed657e370dbbc41d2dbbc07b0552`
+- Created: `2026-03-20T17:11:51.407465562Z`
+- Virtual Size: ~ 576.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `JAVA_CURRENT_HOME=/opt/java/openjdk25`
   - `JAVA_LTS_HOME=/opt/java/openjdk25`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.4.0`
+  - `GRADLE_VERSION=9.4.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -519,16 +519,16 @@ GPL-2.0-only
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.7.0-r6 description:
+git-lfs-3.7.0-r7 description:
 Git extension for versioning large files
 
-git-lfs-3.7.0-r6 webpage:
+git-lfs-3.7.0-r7 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.7.0-r6 installed size:
+git-lfs-3.7.0-r7 installed size:
 13 MiB
 
-git-lfs-3.7.0-r6 license:
+git-lfs-3.7.0-r7 license:
 MIT
 
 ```
