@@ -1,10 +1,10 @@
-# `sonarqube:2026.1.0-enterprise`
+# `sonarqube:2026.2.0-enterprise`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0155e3ecaf15bb44b39dbab97526ccaebea05ac93fe193ea08fe967805d9b2c2`
-- Created: `2026-03-17T02:47:11.298810418Z`
-- Virtual Size: ~ 1.97 Gb  
+- Image ID: `sha256:8b929b306490b59b6b3eebce4f30e5fc6fe7dd6fd67872cbfb419a79cd1ff1cf`
+- Created: `2026-03-23T17:51:58.245315283Z`
+- Virtual Size: ~ 1.99 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/docker/entrypoint.sh"]`
@@ -14,10 +14,10 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.10+7`
+  - `JAVA_VERSION=jdk-25.0.2+10`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=2026.1.0.119033`
+  - `SONAR_VERSION=2026.2.0.121184`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
@@ -2046,14 +2046,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.12
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.12.dsc' systemd_255.4-1ubuntu8.12.dsc 7324 SHA512:ff1c3392b079861cdfdb41e0624166d6a7e0459b7e2a7ce13fdc0814c5d593e3ceba6c73e53c6ab617fb455d8fe07904c55c0081a1d94d1e40e3c3b3667eb321
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.12.debian.tar.xz' systemd_255.4-1ubuntu8.12.debian.tar.xz 257724 SHA512:0394efde0f11cee00b37b232373e400ef1a3cae666fbbab6c732fe4de241ef32b588619bdfd1101be9752370d16958505ea42c8ac5681d1448c780faa0233227
-```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
@@ -2199,27 +2194,6 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-
-### `dpkg` source package: `wget=1.21.4-1ubuntu4.1`
-
-Binary Packages:
-
-- `wget=1.21.4-1ubuntu4.1`
-
-Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
-
-- `GFDL-1.2`
-- `GPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris wget=1.21.4-1ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.1.dsc' wget_1.21.4-1ubuntu4.1.dsc 2251 SHA512:d7b0fab6350ba51e5783ff8e931fd20894c8334c9f78f9f1c970a755d93e54ae501bdc5f5050d536a99472b536acb141ae67a4cbd43f014acbcaf2828ab3e6fb
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz' wget_1.21.4.orig.tar.gz 5059591 SHA512:7a1539045174f6b97ab6980811c2ac1799edc20db72987b5ba9b1710cffb19669a7736813d15c8da3aa2d4a384246ff946b77ecb0baeb6fd3e12ae591f1bf6a3
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz.asc' wget_1.21.4.orig.tar.gz.asc 854 SHA512:72603493c2d799dca08700175a2010d8736fd6d3cb9bea3987db8814e9f133ab0fbd1477892115f7fbbd1a7d4d416ec370bdbff6dbe8f00d1eea84f0c4f8d84b
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.1.debian.tar.xz' wget_1.21.4-1ubuntu4.1.debian.tar.xz 65000 SHA512:7f8d94188f21aeddf4a2b845839994f1ec90a1727891ad5496bdc3841600abed8d58b3c111a2ef33329d85b57dcd8364b4ab174acf93cfd5a0c3eb8487c917da
-```
 
 ### `dpkg` source package: `xxhash=0.8.2-2build1`
 
