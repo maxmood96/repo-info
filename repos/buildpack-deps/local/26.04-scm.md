@@ -254,9 +254,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris brotli=1.2.0-3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.2.0-3.dsc' brotli_1.2.0-3.dsc 2282 SHA512:21fe8c94dc028383956dcef999adf20dadecabf870cf300ac5609f6215a138112ab7d023619c620b138ac9c3cea7fdf7844633f952da94f7eb82b01ae54f75fb
+'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.2.0-3build1.dsc' brotli_1.2.0-3build1.dsc 2281 SHA512:8a47d671763614d0413611bc14733fd75f116cb22d5d7530edc87a19c7de0d5a83c8723389b9800628f17e00099158e23987e77a5d35b55c11f63248a1d3b5f1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.2.0.orig.tar.gz' brotli_1.2.0.orig.tar.gz 646398 SHA512:ceb2a1a5661296885a2f67bd2d6b02ad467cdc5fb39a82ec8e5fde26633ef4df354ebf7491c8442b090cdd38dc607857c4f9bee8aebb8ff63d44ae7322faceae
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.2.0-3.debian.tar.xz' brotli_1.2.0-3.debian.tar.xz 5896 SHA512:487698ab1f4da26d51788e0a836f801d25dfcde52b313433384a2ee8d40e05eb5190465dd1a14d72e91e8959b509b5d735568ce2cc7a10150eca540c2661a429
+'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.2.0-3build1.debian.tar.xz' brotli_1.2.0-3build1.debian.tar.xz 5976 SHA512:5ba45f6142daccab0f2dc71da08ecc8f8ecec5370923db06450ef0628b4c1eb5e5f805ba5d02b57b6ad14884f0cb89bb6895a9290e83e5e249ad3fe16cdccf86
 ```
 
 ### `dpkg` source package: `bzip2=1.0.8-6build2`
@@ -1030,14 +1030,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.22.1-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu3.dsc' krb5_1.22.1-2ubuntu3.dsc 3267 SHA512:67c5aab72d87cf435ff8bf2f8ce2aea08d61b27a38ff40eddccbd8c9a0fe12c45e6270e15d5bda2fb224ad1280c6832b64f46f5dcf606b70021f8e9204f37969
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1.orig.tar.gz' krb5_1.22.1.orig.tar.gz 8747101 SHA512:c33bfada5e0c035133436031d9818ad97b0ff08578691c832b743c55751a2cf9460501d3cc658ab79655ed7a0f9f4795ba94b363d6b616795d9bdca668825c52
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu3.debian.tar.xz' krb5_1.22.1-2ubuntu3.debian.tar.xz 105896 SHA512:0b14124a1bcc53061a4ae2c2e60018c4af798180b541eebe062f66bf913687ead9b409f89ff28a0c30a51872bd696e804291dc5d0456431d871b1bb7fb37e00b
-```
 
 ### `dpkg` source package: `libassuan=3.0.2-2build1`
 
@@ -1120,14 +1115,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.8.5-4build4
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4build4.dsc' libcap-ng_0.8.5-4build4.dsc 2307 SHA512:4c83de218fbe2266309fd39e85fd1f55f6ddef4575867047ed614c8ba2f5cce0b68e93921785ab3daf2677633ad1a26acd2cc5b2993cafe9be782cbe29db9062
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.5.orig.tar.gz' libcap-ng_0.8.5.orig.tar.gz 59265 SHA512:3bd868c7f263b77edd2feda831470b407f1086b434618e54336fb78bbf8bf3bad53f4c006a2118fb594b16554f8f7ec2acb76e08be5586d0261684e9ba139231
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4build4.debian.tar.xz' libcap-ng_0.8.5-4build4.debian.tar.xz 8004 SHA512:0fdc5f1ced8b34cd8d91cf040929142a02b28d37eb3bfb27f7e672c86195c5ca9b95eb7d8d2dd08b26c3cf9014f311d39132f0f3fe61c950baf3656af3bad59e
-```
 
 ### `dpkg` source package: `libcap2=1:2.75-10ubuntu1`
 
@@ -1459,15 +1449,13 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.9-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.9-1.dsc' libsemanage_3.9-1.dsc 2965 SHA512:5f8155f4ac62eaf2b18df571224bc98c7a0aab4851f5f648d08b19d6960aabfcdd4cb7809f7c97a2923a63fbe59b0c1f692451bfc9423ab33200965e4bad4ece
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.9.orig.tar.gz' libsemanage_3.9.orig.tar.gz 185278 SHA512:a859e8d9313c922942a9be0477b387775b19c41bd108f80992112dcd2696701f40a890f5e6fc3087e7bfe69b382a1bcffa3e02c8996a719e763fbe2f6787c61c
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.9.orig.tar.gz.asc' libsemanage_3.9.orig.tar.gz.asc 833 SHA512:d01aa5d26c88c66f3f283aba9a4abf8df059180d96f557b4abc20f9d5d9a80fdf868767fb29d631d420febeb17453369d5c50fe92749c39cb5dca8a0fe5ba2b2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.9-1.debian.tar.xz' libsemanage_3.9-1.debian.tar.xz 38028 SHA512:8a6011c97c1f8e9b6c42d1742dd9bacb482cd51f6be9efdad92ee1fb4377e1ea734b51093328fe7cc943c95943b393ee19c75f801f65732f8cead4ea225b83e2
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libsemanage/3.9-1/
+
 
 ### `dpkg` source package: `libsepol=3.9-2`
 
@@ -1739,15 +1727,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=7.2-3
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_7.2-3.dsc' mercurial_7.2-3.dsc 2861 SHA512:4f74a89c82b79d256f88a30244963629edcbd232ac0664e19f228551b8f8531fb9058c74b8e8684d116a0e66eefb5af4c27676c635e1dc886841044c7679deb3
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_7.2.orig.tar.gz' mercurial_7.2.orig.tar.gz 9244423 SHA512:716203e038959e6641fdd8ed4bbcff8774f0d525f1709a20f51fe4faf0545bdbef1c567b382378b7bc07a3f08c620ea6a600ada2bb5a99d8da69be0155be1f7e
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_7.2.orig.tar.gz.asc' mercurial_7.2.orig.tar.gz.asc 659 SHA512:03aae2720cc4b9e130e8e2d9ab0a3551192e466416811dbd2f6f239f1de51161ad0421f9ee37c40e434f15a1b5c3969558b8d185c0cf1412a12823106b122a36
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_7.2-3.debian.tar.xz' mercurial_7.2-3.debian.tar.xz 54896 SHA512:bd929fd05f2c58be8be1233d5722982e3dfb3e35c7a135a432b91ee3f07e22f6acaf31e55de29170d4173000f1c5f8e4aa55d3d15abed1aed136e62dee5288dd
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mercurial/7.2-3/
+
 
 ### `dpkg` source package: `ncurses=6.6+20251231-1`
 
