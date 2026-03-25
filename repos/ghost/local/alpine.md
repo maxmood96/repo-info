@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a3802b840661c732064b534a5e4509d3813ea9ec0d265d2ace4109bdae38ecc`
-- Created: `2026-03-20T21:04:45.333553455Z`
-- Virtual Size: ~ 810.85 Mb  
+- Image ID: `sha256:4a12d8a5f0844d7eebaf1a0193281509a2cc5e793babb6f0ac8211a3677e90e9`
+- Created: `2026-03-23T21:32:15.252035843Z`
+- Virtual Size: ~ 815.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `YARN_VERSION=1.22.22`
   - `GOSU_VERSION=1.19`
   - `NODE_ENV=production`
-  - `GHOST_CLI_VERSION=1.28.4`
+  - `GHOST_CLI_VERSION=1.28.6`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
   - `GHOST_VERSION=6.22.1`
