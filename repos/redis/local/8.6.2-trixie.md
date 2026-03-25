@@ -1,10 +1,10 @@
-# `redis:8.6.1`
+# `redis:8.6.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f67c1d840f274a20f22bcb2fea1d66d4c978dab0b5f19e0893178de44498bf9d`
-- Created: `2026-03-16T22:41:08.88930508Z`
-- Virtual Size: ~ 139.81 Mb  
+- Image ID: `sha256:3848bb827e715170d369bb18cfa38b7c1a465eda4c899cf005babf94812d832c`
+- Created: `2026-03-24T18:18:47.473581651Z`
+- Virtual Size: ~ 139.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
