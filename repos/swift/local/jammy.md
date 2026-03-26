@@ -1,10 +1,10 @@
-# `swift:6.2.4-jammy`
+# `swift:6.3.0-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad568f66caf1570c6c19623c1dc6a653ccb622576e8cc238f5d6fa5e3fe359b0`
-- Created: `2026-03-17T02:27:53.088683765Z`
-- Virtual Size: ~ 3.97 Gb  
+- Image ID: `sha256:ce54c09b1cf7124cd02a36a855accb12a7dbcea76d93869b300c0f762f658ed6`
+- Created: `2026-03-24T22:14:10.226227058Z`
+- Virtual Size: ~ 4.13 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu22.04`
-  - `SWIFT_BRANCH=swift-6.2.4-release`
-  - `SWIFT_VERSION=swift-6.2.4-RELEASE`
+  - `SWIFT_BRANCH=swift-6.3-release`
+  - `SWIFT_VERSION=swift-6.3-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -2907,14 +2907,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.17
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.17.dsc' systemd_249.11-0ubuntu3.17.dsc 5907 SHA512:083cd0d255916c4752afc9d0ca867376727788c9acedf65f731c24a6dd5ca49f8fe6d68ea59be6f4a590d7807cfc34cb52b4a588b9cb98407f36878b32b8ec6a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.17.debian.tar.xz' systemd_249.11-0ubuntu3.17.debian.tar.xz 262436 SHA512:c8d14b5c6dd6396dafaaa9acfa6ce65297b8ca63869cc97cda98ff3f8e9ecf6daa2d2696e16eb7e780a3429f508457fa5dae6a34c9ba75a4f44dc3d1840cae2a
-```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
@@ -2956,11 +2951,11 @@ $ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.04.2.debian.tar.xz 20544 SHA512:9840407a1364154c831665c3f1739c80a84806567fe5ad27ee3ac70f4c18e27d7f2f9e0557b6e2a634ab39449a8fc95b96f1813f5c203df8ece5226a6afe8c7c
 ```
 
-### `dpkg` source package: `tiff=4.3.0-6ubuntu0.12`
+### `dpkg` source package: `tiff=4.3.0-6ubuntu0.13`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.3.0-6ubuntu0.12`
+- `libtiff5:amd64=4.3.0-6ubuntu0.13`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
@@ -2969,11 +2964,11 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.12
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.12.dsc' tiff_4.3.0-6ubuntu0.12.dsc 2581 SHA512:60e65cbaeae1c7401506d4aa79bb2b3f870c429152cdd9337e00c1e7134759a71850c0a5af75800285ac1b2b91dda43697c79f284a6230276beb0def259ac591
+$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.13
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.13.dsc' tiff_4.3.0-6ubuntu0.13.dsc 2402 SHA512:b7ad1983cf6397e41231ab0050fa6757a18fe2aa95cea926925574ffdd5e0e636c49a810b46d180c337036de8ea04e5d506807f8642e91f53804b83e231ec5fe
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.12.debian.tar.xz' tiff_4.3.0-6ubuntu0.12.debian.tar.xz 53444 SHA512:1f62ce006a8c5161b142dac9266f99de54ce9c21059a01f2c49bf7a9d7c36214bc85ab1a2a8c3355807f8c8733af89a8a2a2180dc745e1bcb7520216d137bd55
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.13.debian.tar.xz' tiff_4.3.0-6ubuntu0.13.debian.tar.xz 53840 SHA512:2fbf8913cac1fa7d81e6f065fdfee494a54fbbcdd2a7e3725d772287bd5169dcdb70e6a758158b72d7292234f94c754c153f4265f27cbeaed6f6cb7c8dadaf73
 ```
 
 ### `dpkg` source package: `tzdata=2025b-0ubuntu0.22.04.1`
