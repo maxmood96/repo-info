@@ -1,18 +1,18 @@
-# `docker:29.3.0-dind-rootless`
+# `docker:29.3.1-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:089ebb0bf68cbe13e627bb94ebca07973c936be52099f607c90ededbd35a2a90`
-- Created: `2026-03-05T19:51:36.423059221Z`
-- Virtual Size: ~ 448.67 Mb  
+- Image ID: `sha256:b63dcd0ff06a6c083e04cd635036a87678b57555e8ee3d6110496f1b795183aa`
+- Created: `2026-03-25T20:10:11.185646036Z`
+- Virtual Size: ~ 448.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.3.0`
+  - `DOCKER_VERSION=29.3.1`
   - `DOCKER_BUILDX_VERSION=0.32.1`
-  - `DOCKER_COMPOSE_VERSION=5.1.0`
+  - `DOCKER_COMPOSE_VERSION=5.1.1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -752,16 +752,16 @@ GPL-3.0-or-later AND ( GPL-2.0-or-later OR LGPL-3.0-or-later )
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.4-r0 description:
+libexpat-2.7.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.4-r0 webpage:
+libexpat-2.7.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.4-r0 installed size:
+libexpat-2.7.5-r0 installed size:
 133 KiB
 
-libexpat-2.7.4-r0 license:
+libexpat-2.7.5-r0 license:
 MIT
 
 ```
@@ -1517,16 +1517,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zfs`
 
 ```console
-zfs-2.4.0-r0 description:
+zfs-2.4.1-r0 description:
 Advanced filesystem and volume manager
 
-zfs-2.4.0-r0 webpage:
+zfs-2.4.1-r0 webpage:
 https://openzfs.org
 
-zfs-2.4.0-r0 installed size:
-1244 KiB
+zfs-2.4.1-r0 installed size:
+1252 KiB
 
-zfs-2.4.0-r0 license:
+zfs-2.4.1-r0 license:
 CDDL-1.0
 
 ```
@@ -1534,16 +1534,16 @@ CDDL-1.0
 ### `apk` package: `zfs-libs`
 
 ```console
-zfs-libs-2.4.0-r0 description:
+zfs-libs-2.4.1-r0 description:
 Advanced filesystem and volume manager (libraries)
 
-zfs-libs-2.4.0-r0 webpage:
+zfs-libs-2.4.1-r0 webpage:
 https://openzfs.org
 
-zfs-libs-2.4.0-r0 installed size:
-4106 KiB
+zfs-libs-2.4.1-r0 installed size:
+4114 KiB
 
-zfs-libs-2.4.0-r0 license:
+zfs-libs-2.4.1-r0 license:
 CDDL-1.0
 
 ```
