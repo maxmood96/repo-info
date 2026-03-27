@@ -1833,14 +1833,13 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5t64/copyright`)
 - `MIT`
 - `gnulib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.21.2-1.1
-'http://http.debian.net/debian/pool/main/libp/libpsl/libpsl_0.21.2-1.1.dsc' libpsl_0.21.2-1.1.dsc 2285 SHA256:b9b5496ca2bffb827cb0b2d997469908a2b7a7475c20a11c02f9dcd1ed2a0cc9
-'http://http.debian.net/debian/pool/main/libp/libpsl/libpsl_0.21.2.orig.tar.xz' libpsl_0.21.2.orig.tar.xz 1870352 SHA256:11e34380f2c81d6e72c710464aae3b680df4ddcc1007826c630fb03c7ca6aa54
-'http://http.debian.net/debian/pool/main/libp/libpsl/libpsl_0.21.2-1.1.debian.tar.xz' libpsl_0.21.2-1.1.debian.tar.xz 12120 SHA256:0eccab147b6dfbfb7f5ad40fb5bd9f888d72a0fe44e7d1801811c34a9acad1a7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpsl/0.21.2-1.1/
+
 
 ### `dpkg` source package: `libseccomp=2.6.0-2`
 
@@ -3721,20 +3720,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.1.2141-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.2141-1.dsc' vim_9.1.2141-1.dsc 3198 SHA256:4a8c3c05a76db159ab43622f125c7196a6856d0c94e7088f65512ab86144b088
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.2141.orig.tar.xz' vim_9.1.2141.orig.tar.xz 13177468 SHA256:d4de759838a10f610ef4a121b84c6ed937f68cc0e15a9af6763904081aa78758
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.2141-1.debian.tar.xz' vim_9.1.2141-1.debian.tar.xz 192420 SHA256:d875890965b62d003ff627dba5ced892799b1dc15fae6f5ad58dac0ac53e0d21
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.1.2141-1/
 
-- https://sources.debian.net/src/vim/2:9.1.2141-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.1.2141-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.1.2141-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
