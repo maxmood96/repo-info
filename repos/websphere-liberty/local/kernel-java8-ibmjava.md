@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f2a927fc63023bb5de02e05513c3a913d8588a27b0b39d2b58c31bfe0ccbc3ac`
-- Created: `2026-03-17T02:54:44.251114487Z`
-- Virtual Size: ~ 343.29 Mb  
+- Image ID: `sha256:f04d587a3adff365c2fbd36a4e9f6f1bcaa97404e25146224804bed42e2504e2`
+- Created: `2026-03-25T17:54:36.018685551Z`
+- Virtual Size: ~ 343.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -19,21 +19,21 @@
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
 - Labels:
-  - `BuildLabel=cl260220260207-1901`
+  - `BuildLabel=cl260320260309-1102`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=26.0.0.2`
-  - `com.ibm.websphere.liberty.version=26.0.0.2`
-  - `liberty.version=26.0.0.2`
+  - `ProductVersion=26.0.0.3`
+  - `com.ibm.websphere.liberty.version=26.0.0.3`
+  - `liberty.version=26.0.0.3`
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Thomas Watson, Wendy Raschke, Michal Broz`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://ibm.biz/wl-app-image-template`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
   - `org.opencontainers.image.ref.name=ubuntu`
-  - `org.opencontainers.image.revision=cl260220260207-1901`
+  - `org.opencontainers.image.revision=cl260320260309-1102`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=https://github.com/WASdev/ci.docker`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=26.0.0.2`
+  - `org.opencontainers.image.version=26.0.0.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1441,14 +1441,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.17
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.17.dsc' systemd_249.11-0ubuntu3.17.dsc 5907 SHA512:083cd0d255916c4752afc9d0ca867376727788c9acedf65f731c24a6dd5ca49f8fe6d68ea59be6f4a590d7807cfc34cb52b4a588b9cb98407f36878b32b8ec6a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.17.debian.tar.xz' systemd_249.11-0ubuntu3.17.debian.tar.xz 262436 SHA512:c8d14b5c6dd6396dafaaa9acfa6ce65297b8ca63869cc97cda98ff3f8e9ecf6daa2d2696e16eb7e780a3429f508457fa5dae6a34c9ba75a4f44dc3d1840cae2a
-```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
