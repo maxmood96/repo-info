@@ -1,20 +1,20 @@
-# `nginx:1.28.2-alpine-otel`
+# `nginx:1.28.3-alpine-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e1a93ed6b326a848a825c6e06f8e9182899137a442d50d57c6872dc3d58f71c`
-- Created: `2026-03-10T21:38:28.580517826Z`
-- Virtual Size: ~ 105.16 Mb  
+- Image ID: `sha256:4bd84dacde60a2a2e1130a602717df5022c2e9801dde95cabeaa3e92061c2a81`
+- Created: `2026-03-25T00:10:47.676669816Z`
+- Virtual Size: ~ 105.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.28.2`
+  - `NGINX_VERSION=1.28.3`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=0.9.5`
+  - `NJS_VERSION=0.9.6`
   - `NJS_RELEASE=1`
   - `ACME_VERSION=0.3.1`
   - `OTEL_VERSION=0.1.2`
@@ -1658,16 +1658,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.4-r0 description:
+libexpat-2.7.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.4-r0 webpage:
+libexpat-2.7.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.4-r0 installed size:
+libexpat-2.7.5-r0 installed size:
 133 KiB
 
-libexpat-2.7.4-r0 license:
+libexpat-2.7.5-r0 license:
 MIT
 
 ```
@@ -2406,16 +2406,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.28.2-r1 description:
+nginx-1.28.3-r1 description:
 High performance web server
 
-nginx-1.28.2-r1 webpage:
+nginx-1.28.3-r1 webpage:
 https://nginx.org/
 
-nginx-1.28.2-r1 installed size:
+nginx-1.28.3-r1 installed size:
 2651 KiB
 
-nginx-1.28.2-r1 license:
+nginx-1.28.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2423,16 +2423,16 @@ nginx-1.28.2-r1 license:
 ### `apk` package: `nginx-module-acme`
 
 ```console
-nginx-module-acme-1.28.2.0.3.1-r1 description:
+nginx-module-acme-1.28.3.0.3.1-r1 description:
 nginx nginx-acme
 
-nginx-module-acme-1.28.2.0.3.1-r1 webpage:
+nginx-module-acme-1.28.3.0.3.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-acme-1.28.2.0.3.1-r1 installed size:
+nginx-module-acme-1.28.3.0.3.1-r1 installed size:
 7959 KiB
 
-nginx-module-acme-1.28.2.0.3.1-r1 license:
+nginx-module-acme-1.28.3.0.3.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2440,16 +2440,16 @@ nginx-module-acme-1.28.2.0.3.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.28.2-r1 description:
+nginx-module-geoip-1.28.3-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.28.2-r1 webpage:
+nginx-module-geoip-1.28.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.28.2-r1 installed size:
+nginx-module-geoip-1.28.3-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.28.2-r1 license:
+nginx-module-geoip-1.28.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2457,16 +2457,16 @@ nginx-module-geoip-1.28.2-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.28.2-r1 description:
+nginx-module-image-filter-1.28.3-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.28.2-r1 webpage:
+nginx-module-image-filter-1.28.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.28.2-r1 installed size:
+nginx-module-image-filter-1.28.3-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.28.2-r1 license:
+nginx-module-image-filter-1.28.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2474,16 +2474,16 @@ nginx-module-image-filter-1.28.2-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.28.2.0.9.5-r1 description:
+nginx-module-njs-1.28.3.0.9.6-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.28.2.0.9.5-r1 webpage:
+nginx-module-njs-1.28.3.0.9.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.28.2.0.9.5-r1 installed size:
-9341 KiB
+nginx-module-njs-1.28.3.0.9.6-r1 installed size:
+9367 KiB
 
-nginx-module-njs-1.28.2.0.9.5-r1 license:
+nginx-module-njs-1.28.3.0.9.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2491,16 +2491,16 @@ nginx-module-njs-1.28.2.0.9.5-r1 license:
 ### `apk` package: `nginx-module-otel`
 
 ```console
-nginx-module-otel-1.28.2.0.1.2-r1 description:
+nginx-module-otel-1.28.3.0.1.2-r1 description:
 nginx OpenTelemetry dynamic module
 
-nginx-module-otel-1.28.2.0.1.2-r1 webpage:
+nginx-module-otel-1.28.3.0.1.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-otel-1.28.2.0.1.2-r1 installed size:
+nginx-module-otel-1.28.3.0.1.2-r1 installed size:
 755 KiB
 
-nginx-module-otel-1.28.2.0.1.2-r1 license:
+nginx-module-otel-1.28.3.0.1.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2508,16 +2508,16 @@ nginx-module-otel-1.28.2.0.1.2-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.28.2-r1 description:
+nginx-module-xslt-1.28.3-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.28.2-r1 webpage:
+nginx-module-xslt-1.28.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.28.2-r1 installed size:
+nginx-module-xslt-1.28.3-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.28.2-r1 license:
+nginx-module-xslt-1.28.3-r1 license:
 2-clause BSD-like license
 
 ```
