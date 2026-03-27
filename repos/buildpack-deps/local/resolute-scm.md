@@ -163,14 +163,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:4.1.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2-1.dsc' audit_4.1.2-1.dsc 2546 SHA512:e15a01ca5f2f34698c3e8fdf2d0f3c020c2e3e14efa7df3e9652db7663cf0f2b7c6cdd44abe8c90fa0388f03d6840ea6eef59978debde12782ff1fda630ea9f5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2.orig.tar.gz' audit_4.1.2.orig.tar.gz 656095 SHA512:a47fec1041e11a76ad57b57bcf6e9b454188d95ec26cabf15e92e114d46c7c8f09ddb251d5aebef8bc7faacc6ccffe44c73543d8234af237548b4ad89a408fc3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2-1.debian.tar.xz' audit_4.1.2-1.debian.tar.xz 19712 SHA512:517cbcfaad3e2310535c349c74a3173b3fbd30e8ff0828ba844204bab43cc0a69fde1227944bb449a2c7eb2d9e906cdbe08f4e6494014e632d11be14a9ef47c7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/audit/1:4.1.2-1/
+
 
 ### `dpkg` source package: `base-files=14ubuntu5`
 
@@ -1405,15 +1404,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.6.0-2ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.6.0-2ubuntu4.dsc' libseccomp_2.6.0-2ubuntu4.dsc 2745 SHA512:8777c7eae6c5bf2a121f13f12bd33b13063331f9a2fe2c251500a5a048fb77142f6475c4b272fc13b1a6eb86f88fade4567dce58dfdddc42423873e65be06730
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.6.0.orig.tar.gz' libseccomp_2.6.0.orig.tar.gz 685655 SHA512:9039478656d9b670af2ff4cb67b6b1fa315821e59d2f82ba6247e988859ddc7e3d15fea159eccca161bf2890828bb62aa6ab4d6b7ff55f27a9d6bd9532eeee1b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.6.0.orig.tar.gz.asc' libseccomp_2.6.0.orig.tar.gz.asc 833 SHA512:973b69c58085a1567f860e621e3a197be02c0ca71dad664234418cf5c00c39767efd37a7c4016f1be5bd588262617b6603855262db2ee6f31bc16061bc130e0f
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.6.0-2ubuntu4.debian.tar.xz' libseccomp_2.6.0-2ubuntu4.debian.tar.xz 27904 SHA512:c49468a06508b128836d37060de7db558a455b27afc26e2d1542f3dbbf2f40348fad89c9ce29aab733e5129123bb574ab2223478dd0028129f08c92cd8a87a81
-```
 
 ### `dpkg` source package: `libselinux=3.9-4`
 
@@ -1426,15 +1419,13 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.9-4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.9-4.dsc' libselinux_3.9-4.dsc 2905 SHA512:690e8bd153b1f9bb81620e47c69a68953b38fad796478a202a9888746eeeef42709588a78bdc105f09c6c07578268e45d263a1171e3d03a103efbd5eb773b0c0
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.9.orig.tar.gz' libselinux_3.9.orig.tar.gz 205334 SHA512:a91942e7d16673396610d969f2471173989995a048edacf6076f6df3200a0d541a1c9932a7632d70aa7c728de7e7d3c62712e5aab6c0b763826e7ffef808cadb
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.9.orig.tar.gz.asc' libselinux_3.9.orig.tar.gz.asc 833 SHA512:20bd4eaa75c0830b10fa8116ab787ca9d5099330c270e2e620220144b9fd239e1e2ca1ddc7ea79c1c3c6863b672530b4f875d6e68043de0da44e035b42d7d132
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.9-4.debian.tar.xz' libselinux_3.9-4.debian.tar.xz 38096 SHA512:862f74bbb23bcfadf517c5a669d65d3242fd28c9bd35090b0195231d3ac9042450b1d8248f0dc02c409de6ad85c6183dbcc2ae4ff913b4f33515b97936a0c5e8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libselinux/3.9-4/
+
 
 ### `dpkg` source package: `libsemanage=3.9-1`
 
@@ -1663,14 +1654,13 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lz4=1.10.0-6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.10.0-6.dsc' lz4_1.10.0-6.dsc 1941 SHA512:39bbc7ecc070543781a46a8a1dd8fce7d2f1458aad8b01d391dff05f1047686053196a4079427b5d647f18a436032900fcdf4f981b32aa1793c8f23f2e8303d8
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.10.0.orig.tar.gz' lz4_1.10.0.orig.tar.gz 387114 SHA512:8c4ceb217e6dc8e7e0beba99adc736aca8963867bcf9f970d621978ba11ce92855912f8b66138037a1d2ae171e8e17beb7be99281fea840106aa60373c455b28
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.10.0-6.debian.tar.xz' lz4_1.10.0-6.debian.tar.xz 9236 SHA512:ba2bac25a9bdb688132e28eed6712de0c087f2f031c6a8b72fb3a6d0b1e8a7e0052e861d5fe4506109ab5ff536c9a3d3f7d00a152253e81c937d433cfe2ad11d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/lz4/1.10.0-6/
+
 
 ### `dpkg` source package: `mawk=1.3.4.20260129-1`
 
@@ -1914,15 +1904,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:10.2p1-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu1.dsc' openssh_10.2p1-2ubuntu1.dsc 3499 SHA512:08eb87a6f300981e2ee35541582747b093d9d7bb9f9f45ae1c1b250df8c92e67972fd84b7267c1fd25bc6bcf2f32eec243e9da0735c6cfebea5a1686b03cbac2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1.orig.tar.gz' openssh_10.2p1.orig.tar.gz 1974519 SHA512:66f3dd646179e71aaf41c33b6f14a207dc873d71d24f11c130a89dee317ee45398b818e5b94887b5913240964a38630d7bca3e481e0f1eff2e41d9e1cfdbdfc5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1.orig.tar.gz.asc' openssh_10.2p1.orig.tar.gz.asc 833 SHA512:f1f71700b1b0b2117aed505488b98b7ebb51ce26e53184b08df0b07aa2c5a1e54dc4d3cbcbe871b5ad849a2a0e22b02af318ff22a68c980ab53b04be03c9bf3c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu1.debian.tar.xz' openssh_10.2p1-2ubuntu1.debian.tar.xz 214552 SHA512:337a353a47f03a0acd9e4c3391cdd1d3a3e84b729620c5f30713623340a955403e1efbda18edf79ae782a15dfce7e3af1628181e73eec674366462cbd633f400
-```
 
 ### `dpkg` source package: `openssl=3.5.5-1ubuntu1`
 
@@ -2073,15 +2057,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.40.1-6build1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-6build1.dsc' perl_5.40.1-6build1.dsc 2932 SHA512:249bedfe2613348fd33408c66d957102ac235c7d94473e90641bf60bdf7db600ac0300208b843145c5494f82988bfb6284018554bc78a84173e16884bc07a426
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-6build1.debian.tar.xz' perl_5.40.1-6build1.debian.tar.xz 172908 SHA512:c8a4135968ee5a462f853a2651b570e9c9bff5305f4f6dc8dd5356904aa97d4f148eca8ce32cb12515e284f4067b8a4408cdb47f2675b43183017721c41b6dd3
-```
 
 ### `dpkg` source package: `pinentry=1.3.2-3ubuntu1`
 
@@ -2409,15 +2387,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.5-6
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.5-6.dsc' subversion_1.14.5-6.dsc 3976 SHA512:010f1fae3d096cc60f8ef652ecfd86bba6eeba55c14910d603c4ba3dce95055e87d8d666163dae2deb2333d7c2d5f576a1e4b3c3b563b98fa13facbb9c5c2138
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.5.orig.tar.gz' subversion_1.14.5.orig.tar.gz 11645728 SHA512:a8e9f5bf9f32e4fa9a5873544c9228a392af0b4ec1126389a98cd8830c0644fc9d4b88bcb800c0e2c40bd58517cfaba23d79164c774d2cb3267a897c1d599634
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.5.orig.tar.gz.asc' subversion_1.14.5.orig.tar.gz.asc 2382 SHA512:b85c4d6e77194b5edff12e3e57c7d673226253048ddf3b622bb4dee6a8aed9153d3c69477876a7caae9eebe2ff5930e42993e34c8fc33d9fa65f9a57bc005d24
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.5-6.debian.tar.xz' subversion_1.14.5-6.debian.tar.xz 300584 SHA512:fa67d398bf1c8a4b3d17ee5830893597411bbac3d51fcc54cb878c009d0340b6ac30697a6b7355840fb39c3cd5083c41146d9a421f929683ad20e0954d66ff06
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/subversion/1.14.5-6/
+
 
 ### `dpkg` source package: `systemd=259.3-0ubuntu1`
 

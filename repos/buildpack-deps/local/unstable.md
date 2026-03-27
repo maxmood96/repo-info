@@ -2950,20 +2950,13 @@ Licenses: (parsed from: `/usr/share/doc/libpsl-dev/copyright`, `/usr/share/doc/l
 - `MIT`
 - `gnulib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.21.2-1.1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.21.2-1.1.dsc' libpsl_0.21.2-1.1.dsc 2285 SHA256:b9b5496ca2bffb827cb0b2d997469908a2b7a7475c20a11c02f9dcd1ed2a0cc9
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.21.2.orig.tar.xz' libpsl_0.21.2.orig.tar.xz 1870352 SHA256:11e34380f2c81d6e72c710464aae3b680df4ddcc1007826c630fb03c7ca6aa54
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.21.2-1.1.debian.tar.xz' libpsl_0.21.2-1.1.debian.tar.xz 12120 SHA256:0eccab147b6dfbfb7f5ad40fb5bd9f888d72a0fe44e7d1801811c34a9acad1a7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpsl/0.21.2-1.1/
 
-- https://sources.debian.net/src/libpsl/0.21.2-1.1/ (for browsing the source)
-- https://sources.debian.net/src/libpsl/0.21.2-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpsl/0.21.2-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libraw=0.21.5b-1`
 
@@ -3634,20 +3627,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.43-0.3
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.43-0.3.dsc' libxslt_1.1.43-0.3.dsc 2183 SHA256:9e34bd60c75eb2fbdef1794258d030a131514629f8b54439795737e991c8631c
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.43.orig.tar.xz' libxslt_1.1.43.orig.tar.xz 1518364 SHA256:5a3d6b383ca5afc235b171118e90f5ff6aa27e9fea3303065231a6d403f0183a
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.43-0.3.debian.tar.xz' libxslt_1.1.43-0.3.debian.tar.xz 27452 SHA256:f6f15f9e9885e919682e87c329d9f04a2cbd2fa32d47afc55942892568bbea86
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxslt/1.1.43-0.3/
 
-- https://sources.debian.net/src/libxslt/1.1.43-0.3/ (for browsing the source)
-- https://sources.debian.net/src/libxslt/1.1.43-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxslt/1.1.43-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxt=1:1.2.1-1.3`
 
