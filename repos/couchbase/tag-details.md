@@ -23,6 +23,7 @@
 -	[`couchbase:7.6.8`](#couchbase768)
 -	[`couchbase:7.6.9`](#couchbase769)
 -	[`couchbase:8.0.0`](#couchbase800)
+-	[`couchbase:8.0.1`](#couchbase801)
 -	[`couchbase:community`](#couchbasecommunity)
 -	[`couchbase:community-7.2.0`](#couchbasecommunity-720)
 -	[`couchbase:community-7.2.2`](#couchbasecommunity-722)
@@ -31,6 +32,7 @@
 -	[`couchbase:community-7.6.1`](#couchbasecommunity-761)
 -	[`couchbase:community-7.6.2`](#couchbasecommunity-762)
 -	[`couchbase:community-8.0.0`](#couchbasecommunity-800)
+-	[`couchbase:community-8.0.1`](#couchbasecommunity-801)
 -	[`couchbase:enterprise`](#couchbaseenterprise)
 -	[`couchbase:enterprise-7.2.0`](#couchbaseenterprise-720)
 -	[`couchbase:enterprise-7.2.2`](#couchbaseenterprise-722)
@@ -53,6 +55,7 @@
 -	[`couchbase:enterprise-7.6.8`](#couchbaseenterprise-768)
 -	[`couchbase:enterprise-7.6.9`](#couchbaseenterprise-769)
 -	[`couchbase:enterprise-8.0.0`](#couchbaseenterprise-800)
+-	[`couchbase:enterprise-8.0.1`](#couchbaseenterprise-801)
 -	[`couchbase:latest`](#couchbaselatest)
 
 ## `couchbase:7.2.0`
@@ -6628,6 +6631,10 @@ $ docker pull couchbase@sha256:d60b8e0022c81a39435d1ee42af5261bc9eee650ccf9d8ee0
 		Size: 38.3 KB (38346 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `couchbase:8.0.1`
+
+**does not exist** (yet?)
+
 ## `couchbase:community`
 
 ```console
@@ -9131,6 +9138,10 @@ $ docker pull couchbase@sha256:7ffbbb2920749a047ff82c1ad55432d5b0fd210c748f590ac
 		Last Modified: Tue, 17 Mar 2026 01:18:07 GMT  
 		Size: 37.7 KB (37704 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `couchbase:community-8.0.1`
+
+**does not exist** (yet?)
 
 ## `couchbase:enterprise`
 
@@ -16017,6 +16028,10 @@ $ docker pull couchbase@sha256:d60b8e0022c81a39435d1ee42af5261bc9eee650ccf9d8ee0
 		Last Modified: Tue, 17 Mar 2026 01:18:33 GMT  
 		Size: 38.3 KB (38346 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `couchbase:enterprise-8.0.1`
+
+**does not exist** (yet?)
 
 ## `couchbase:latest`
 
