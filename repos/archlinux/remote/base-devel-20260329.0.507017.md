@@ -1,4 +1,4 @@
-## `archlinux:base-devel`
+## `archlinux:base-devel-20260329.0.507017`
 
 ```console
 $ docker pull archlinux@sha256:0cce2e42862208217cb44f67feb93630e45300619d293601202d34bb6cf77d98
@@ -9,7 +9,7 @@ $ docker pull archlinux@sha256:0cce2e42862208217cb44f67feb93630e45300619d2936012
 	-	linux; amd64
 	-	unknown; unknown
 
-### `archlinux:base-devel` - linux; amd64
+### `archlinux:base-devel-20260329.0.507017` - linux; amd64
 
 ```console
 $ docker pull archlinux@sha256:123b63f10fdac8af4bbcf2bf0565082b9e19eaef311da03a523a4995e07393e0
@@ -62,7 +62,7 @@ CMD ["/usr/bin/bash"]
 		Size: 9.1 KB (9126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `archlinux:base-devel` - unknown; unknown
+### `archlinux:base-devel-20260329.0.507017` - unknown; unknown
 
 ```console
 $ docker pull archlinux@sha256:ffc17fca7797f937b5429bf427a22af764033b39344a6bd41079e10ba16332be
