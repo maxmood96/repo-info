@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d04d30466cddd7824c39d1058b59374c981d8ea32d78df20687dbe4d578b71de`
-- Created: `2026-03-17T16:35:05.051314396Z`
-- Virtual Size: ~ 416.62 Mb  
+- Image ID: `sha256:942e1432eff4f23a6ceef5db9535760db776a64058d6dc339e3d7b4330ba90d0`
+- Created: `2026-03-27T19:14:55.203753498Z`
+- Virtual Size: ~ 416.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.2.10`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.10.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=a64a8a910ac2f28834b2170dedea688f06cbc6431fcd65eb18cc49ddbf3826ae`
+  - `RUBY_VERSION=3.2.11`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.11.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=c13aec0c206725d5d356acbae6e5fd8bffd92dc325aec14fd5dd7795d4b763d2`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -797,16 +797,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.4-r0 description:
+libexpat-2.7.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.4-r0 webpage:
+libexpat-2.7.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.4-r0 installed size:
+libexpat-2.7.5-r0 installed size:
 133 KiB
 
-libexpat-2.7.4-r0 license:
+libexpat-2.7.5-r0 license:
 MIT
 
 ```
@@ -1001,16 +1001,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.55-r0 description:
+libpng-1.6.56-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.55-r0 webpage:
+libpng-1.6.56-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.55-r0 installed size:
+libpng-1.6.56-r0 installed size:
 181 KiB
 
-libpng-1.6.55-r0 license:
+libpng-1.6.56-r0 license:
 Libpng
 
 ```
