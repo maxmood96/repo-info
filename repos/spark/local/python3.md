@@ -1,10 +1,10 @@
-# `spark:4.0.1-scala2.13-java21-python3-ubuntu`
+# `spark:4.1.1-scala2.13-java21-python3-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d27d7351d81e77e8db6a3a023cc191159f53717ced85b94e3862312b4e992652`
-- Created: `2026-03-17T03:25:08.441683672Z`
-- Virtual Size: ~ 1.31 Gb  
+- Image ID: `sha256:20f2dc1a0678ac545e69ebeca353a8264aa2d054919967033f6e60b59f394ad6`
+- Created: `2026-03-30T18:12:26.738434125Z`
+- Virtual Size: ~ 1.33 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.10+7`
-  - `SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.0.1/spark-4.0.1-bin-hadoop3.tgz?action=download`
-  - `SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.0.1/spark-4.0.1-bin-hadoop3.tgz.asc?action=download`
-  - `GPG_KEY=F28C9C925C188C35E345614DEDA00CE834F0FC5C`
+  - `SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.1/spark-4.1.1-bin-hadoop3.tgz?action=download`
+  - `SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.1/spark-4.1.1-bin-hadoop3.tgz.asc?action=download`
+  - `GPG_KEY=0FE4571297AB84440673665669600C8338F65970`
   - `SPARK_HOME=/opt/spark`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -187,12 +187,12 @@ $ apt-get source -qq --print-uris bash=5.1-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.debian.tar.xz' bash_5.1-6ubuntu1.1.debian.tar.xz 99944 SHA512:d7fb6110df70232bd3280c1140a812a1903968792f6608481c184bd28760d03323ada75ed3ca4da4eb6c56a84781d6e2f441e0ee83dd9364a9e37fd0fa2211e9
 ```
 
-### `dpkg` source package: `bind9=1:9.18.39-0ubuntu0.22.04.2`
+### `dpkg` source package: `bind9=1:9.18.39-0ubuntu0.22.04.3`
 
 Binary Packages:
 
-- `bind9-host=1:9.18.39-0ubuntu0.22.04.2`
-- `bind9-libs:amd64=1:9.18.39-0ubuntu0.22.04.2`
+- `bind9-host=1:9.18.39-0ubuntu0.22.04.3`
+- `bind9-libs:amd64=1:9.18.39-0ubuntu0.22.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/bind9-libs/copyright`)
 
@@ -203,9 +203,15 @@ Licenses: (parsed from: `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/b
 - `MPL-2.0`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris bind9=1:9.18.39-0ubuntu0.22.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39-0ubuntu0.22.04.3.dsc' bind9_9.18.39-0ubuntu0.22.04.3.dsc 3295 SHA512:005ec665f2263cfbbff568fcf887bb3f1b8481e70431fab5d63335f0325e4b4690da1caffb63d22d34e281c2f644d29678e14990aac884845fecbdec4d23ddcf
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39.orig.tar.xz' bind9_9.18.39.orig.tar.xz 5383056 SHA512:fd6d45c9cb9c599d8770c18801fad2f177faf3a8af82948800d186ae6dc9eb2c894b61802def0841eb722c615c93c077b55368204f0cf2737a3c50d949efca07
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39.orig.tar.xz.asc' bind9_9.18.39.orig.tar.xz.asc 833 SHA512:17e8aad74f1eaa42119f84ab3df05e85a1775f97c628259e00f7224d4f0d250050d022db670bc036b0ba05a3cd586de331da0b77c42ab58307711fed36c7ee9e
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39-0ubuntu0.22.04.3.debian.tar.xz' bind9_9.18.39-0ubuntu0.22.04.3.debian.tar.xz 106432 SHA512:a82ad0dee11c7a2122e89880f12cf55cc1711ba452b26e865656e6009849ac46d27d4cd0f3095e5e475727fdfdc88fb36f8a8a82b49d8c9e3a28371cd7e111d3
+```
 
 ### `dpkg` source package: `binutils=2.38-4ubuntu2.12`
 
@@ -3232,19 +3238,25 @@ $ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.04.2.debian.tar.xz 20544 SHA512:9840407a1364154c831665c3f1739c80a84806567fe5ad27ee3ac70f4c18e27d7f2f9e0557b6e2a634ab39449a8fc95b96f1813f5c203df8ece5226a6afe8c7c
 ```
 
-### `dpkg` source package: `tiff=4.3.0-6ubuntu0.12`
+### `dpkg` source package: `tiff=4.3.0-6ubuntu0.13`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.3.0-6ubuntu0.12`
+- `libtiff5:amd64=4.3.0-6ubuntu0.13`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.13
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.13.dsc' tiff_4.3.0-6ubuntu0.13.dsc 2402 SHA512:b7ad1983cf6397e41231ab0050fa6757a18fe2aa95cea926925574ffdd5e0e636c49a810b46d180c337036de8ea04e5d506807f8642e91f53804b83e231ec5fe
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.13.debian.tar.xz' tiff_4.3.0-6ubuntu0.13.debian.tar.xz 53840 SHA512:2fbf8913cac1fa7d81e6f065fdfee494a54fbbcdd2a7e3725d772287bd5169dcdb70e6a758158b72d7292234f94c754c153f4265f27cbeaed6f6cb7c8dadaf73
+```
 
 ### `dpkg` source package: `tini=0.19.0-1`
 
