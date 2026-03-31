@@ -434,11 +434,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=8.19.0-1
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.19.0-1.dsc' curl_8.19.0-1.dsc 3307 SHA256:54ac610465592fad918e428bda6029a21ff081226f6a0ca32a6733c56f4cf4ce
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.19.0.orig.tar.gz' curl_8.19.0.orig.tar.gz 4159039 SHA256:2a2c11db4c122691aa23b4363befda1bfd801770bfebf41e1d21cee4f2ab0f71
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.19.0.orig.tar.gz.asc' curl_8.19.0.orig.tar.gz.asc 488 SHA256:0dc120d688b71b6f50d5efa198b2419ca85e4396de8209fee131e40dacb96866
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.19.0-1.debian.tar.xz' curl_8.19.0-1.debian.tar.xz 52728 SHA256:bcd1dfdbb37d07bbf0842019782fe21ac63d760eab4e684c7237c5dc85eab30b
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.19.0-1.dsc' curl_8.19.0-1.dsc 3307 SHA256:54ac610465592fad918e428bda6029a21ff081226f6a0ca32a6733c56f4cf4ce
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.19.0.orig.tar.gz' curl_8.19.0.orig.tar.gz 4159039 SHA256:2a2c11db4c122691aa23b4363befda1bfd801770bfebf41e1d21cee4f2ab0f71
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.19.0.orig.tar.gz.asc' curl_8.19.0.orig.tar.gz.asc 488 SHA256:0dc120d688b71b6f50d5efa198b2419ca85e4396de8209fee131e40dacb96866
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.19.0-1.debian.tar.xz' curl_8.19.0-1.debian.tar.xz 52728 SHA256:bcd1dfdbb37d07bbf0842019782fe21ac63d760eab4e684c7237c5dc85eab30b
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/8.19.0-1/ (for browsing the source)
+- https://sources.debian.net/src/curl/8.19.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/8.19.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-10`
 
@@ -1172,10 +1178,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris graphite2=1.3.14-11
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.14-11.dsc' graphite2_1.3.14-11.dsc 2570 SHA256:871f8acc979bbc4b1b54a9e1780f67c520bb4f61babc19c4ecfe145afacf7cf9
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.14.orig.tar.gz' graphite2_1.3.14.orig.tar.gz 6629829 SHA256:7a3b342c5681921ce2e0c2496509d30b5b078399d5a7bd2358f95166d57d91df
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.14-11.debian.tar.xz' graphite2_1.3.14-11.debian.tar.xz 15760 SHA256:6cb334d0b855139ba69084b2755c2453a9a51e53b1209766965206a6d32ab6b3
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.14-11.dsc' graphite2_1.3.14-11.dsc 2570 SHA256:871f8acc979bbc4b1b54a9e1780f67c520bb4f61babc19c4ecfe145afacf7cf9
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.14.orig.tar.gz' graphite2_1.3.14.orig.tar.gz 6629829 SHA256:7a3b342c5681921ce2e0c2496509d30b5b078399d5a7bd2358f95166d57d91df
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.14-11.debian.tar.xz' graphite2_1.3.14-11.debian.tar.xz 15760 SHA256:6cb334d0b855139ba69084b2755c2453a9a51e53b1209766965206a6d32ab6b3
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/graphite2/1.3.14-11/ (for browsing the source)
+- https://sources.debian.net/src/graphite2/1.3.14-11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/graphite2/1.3.14-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.12-1`
 
@@ -1348,10 +1360,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris isl=0.27-1
-'http://http.debian.net/debian/pool/main/i/isl/isl_0.27-1.dsc' isl_0.27-1.dsc 1829 SHA256:35ceb67dbb1b4098431b184e342143c2bd94c4a41ebfb3a983e3be31440b0453
-'http://http.debian.net/debian/pool/main/i/isl/isl_0.27.orig.tar.xz' isl_0.27.orig.tar.xz 2056436 SHA256:6d8babb59e7b672e8cb7870e874f3f7b813b6e00e6af3f8b04f7579965643d5c
-'http://http.debian.net/debian/pool/main/i/isl/isl_0.27-1.debian.tar.xz' isl_0.27-1.debian.tar.xz 24868 SHA256:1ac2e33075903489d4284ff4e86645405e68a282a80432ee4ee0c43397f59224
+'http://deb.debian.org/debian/pool/main/i/isl/isl_0.27-1.dsc' isl_0.27-1.dsc 1829 SHA256:35ceb67dbb1b4098431b184e342143c2bd94c4a41ebfb3a983e3be31440b0453
+'http://deb.debian.org/debian/pool/main/i/isl/isl_0.27.orig.tar.xz' isl_0.27.orig.tar.xz 2056436 SHA256:6d8babb59e7b672e8cb7870e874f3f7b813b6e00e6af3f8b04f7579965643d5c
+'http://deb.debian.org/debian/pool/main/i/isl/isl_0.27-1.debian.tar.xz' isl_0.27-1.debian.tar.xz 24868 SHA256:1ac2e33075903489d4284ff4e86645405e68a282a80432ee4ee0c43397f59224
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/isl/0.27-1/ (for browsing the source)
+- https://sources.debian.net/src/isl/0.27-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/isl/0.27-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jansson=2.14-2`
 
@@ -1593,10 +1611,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libcap-ng=0.9.1-1
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.1-1.dsc' libcap-ng_0.9.1-1.dsc 1740 SHA256:374fcf278e4a20cd6ddaa8b0d2402e1f09d5408e16e8c96ec8237c9849090b6a
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.1.orig.tar.gz' libcap-ng_0.9.1.orig.tar.gz 85576 SHA256:007a0e69ad0d8721fd6281d5671744d1f655eca7541a4b98c1d05fd2df50f60b
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.1-1.debian.tar.xz' libcap-ng_0.9.1-1.debian.tar.xz 7448 SHA256:e765c4a3f5037452fe36e5943225b00a5e24527842d1622f1e13ed18bfdd4fa5
+'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.1-1.dsc' libcap-ng_0.9.1-1.dsc 1740 SHA256:374fcf278e4a20cd6ddaa8b0d2402e1f09d5408e16e8c96ec8237c9849090b6a
+'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.1.orig.tar.gz' libcap-ng_0.9.1.orig.tar.gz 85576 SHA256:007a0e69ad0d8721fd6281d5671744d1f655eca7541a4b98c1d05fd2df50f60b
+'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.1-1.debian.tar.xz' libcap-ng_0.9.1-1.debian.tar.xz 7448 SHA256:e765c4a3f5037452fe36e5943225b00a5e24527842d1622f1e13ed18bfdd4fa5
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libcap-ng/0.9.1-1/ (for browsing the source)
+- https://sources.debian.net/src/libcap-ng/0.9.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libcap-ng/0.9.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdatrie=0.2.14-1`
 
@@ -1661,10 +1685,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libffi=3.5.2-3
-'http://http.debian.net/debian/pool/main/libf/libffi/libffi_3.5.2-3.dsc' libffi_3.5.2-3.dsc 1954 SHA256:ed67eb00402650aafdc76a7f491a64889fcf5b2da70c6bbb43ffab2e480cffc9
-'http://http.debian.net/debian/pool/main/libf/libffi/libffi_3.5.2.orig.tar.gz' libffi_3.5.2.orig.tar.gz 598870 SHA256:dd19253d3007f366319a51d248a40c9e5fcace4498cbea990b566291844e4e30
-'http://http.debian.net/debian/pool/main/libf/libffi/libffi_3.5.2-3.debian.tar.xz' libffi_3.5.2-3.debian.tar.xz 10928 SHA256:682fc1b23da5ece07584e30263c4dd178ebc819a8d8ec2ac5e5fd7c67c247d30
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2-3.dsc' libffi_3.5.2-3.dsc 1954 SHA256:ed67eb00402650aafdc76a7f491a64889fcf5b2da70c6bbb43ffab2e480cffc9
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2.orig.tar.gz' libffi_3.5.2.orig.tar.gz 598870 SHA256:dd19253d3007f366319a51d248a40c9e5fcace4498cbea990b566291844e4e30
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2-3.debian.tar.xz' libffi_3.5.2-3.debian.tar.xz 10928 SHA256:682fc1b23da5ece07584e30263c4dd178ebc819a8d8ec2ac5e5fd7c67c247d30
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libffi/3.5.2-3/ (for browsing the source)
+- https://sources.debian.net/src/libffi/3.5.2-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libffi/3.5.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -1816,10 +1846,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.55-1
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.55-1.dsc' libpng1.6_1.6.55-1.dsc 2254 SHA256:86f30af94c8b4e508eb471ae7686518fe2a1eb14e325829b7b154e78d0b0f7b0
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.55.orig.tar.gz' libpng1.6_1.6.55.orig.tar.gz 1586616 SHA256:71a2c5b1218f60c4c6d2f1954c7eb20132156cae90bdb90b566c24db002782a6
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.55-1.debian.tar.xz' libpng1.6_1.6.55-1.debian.tar.xz 33544 SHA256:d3294e8e1adea044a78558943a2dbc3b9c25d226fd6d9abb5e4fb942f37bd5d7
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.55-1.dsc' libpng1.6_1.6.55-1.dsc 2254 SHA256:86f30af94c8b4e508eb471ae7686518fe2a1eb14e325829b7b154e78d0b0f7b0
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.55.orig.tar.gz' libpng1.6_1.6.55.orig.tar.gz 1586616 SHA256:71a2c5b1218f60c4c6d2f1954c7eb20132156cae90bdb90b566c24db002782a6
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.55-1.debian.tar.xz' libpng1.6_1.6.55-1.debian.tar.xz 33544 SHA256:d3294e8e1adea044a78558943a2dbc3b9c25d226fd6d9abb5e4fb942f37bd5d7
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libpng1.6/1.6.55-1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.55-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.55-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -2078,10 +2114,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libtirpc=1.3.6+ds-1
-'http://http.debian.net/debian/pool/main/libt/libtirpc/libtirpc_1.3.6%2bds-1.dsc' libtirpc_1.3.6+ds-1.dsc 2154 SHA256:737f9f15b21f8ea4226a2aa8c18c956e69e6eb3546c4c8ec9f5194380e2cd4e6
-'http://http.debian.net/debian/pool/main/libt/libtirpc/libtirpc_1.3.6%2bds.orig.tar.gz' libtirpc_1.3.6+ds.orig.tar.gz 704513 SHA256:f9eeeb368d733e11f18ddb750a41bdf9089ba5f9476404da848c2cd295624f0d
-'http://http.debian.net/debian/pool/main/libt/libtirpc/libtirpc_1.3.6%2bds-1.debian.tar.xz' libtirpc_1.3.6+ds-1.debian.tar.xz 11924 SHA256:3aecc6669961a233b6adda8a1d2136777b68dcf64c61dd6986262199b2e5b95b
+'http://deb.debian.org/debian/pool/main/libt/libtirpc/libtirpc_1.3.6%2bds-1.dsc' libtirpc_1.3.6+ds-1.dsc 2154 SHA256:737f9f15b21f8ea4226a2aa8c18c956e69e6eb3546c4c8ec9f5194380e2cd4e6
+'http://deb.debian.org/debian/pool/main/libt/libtirpc/libtirpc_1.3.6%2bds.orig.tar.gz' libtirpc_1.3.6+ds.orig.tar.gz 704513 SHA256:f9eeeb368d733e11f18ddb750a41bdf9089ba5f9476404da848c2cd295624f0d
+'http://deb.debian.org/debian/pool/main/libt/libtirpc/libtirpc_1.3.6%2bds-1.debian.tar.xz' libtirpc_1.3.6+ds-1.debian.tar.xz 11924 SHA256:3aecc6669961a233b6adda8a1d2136777b68dcf64c61dd6986262199b2e5b95b
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libtirpc/1.3.6+ds-1/ (for browsing the source)
+- https://sources.debian.net/src/libtirpc/1.3.6+ds-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libtirpc/1.3.6+ds-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=1.4.2-1`
 
@@ -2516,10 +2558,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mpclib3=1.3.1-2
-'http://http.debian.net/debian/pool/main/m/mpclib3/mpclib3_1.3.1-2.dsc' mpclib3_1.3.1-2.dsc 1919 SHA256:829425b2e64d5e68541daafb80bc7f1b0a47dc1f3d5870f406aeddf5f11ef179
-'http://http.debian.net/debian/pool/main/m/mpclib3/mpclib3_1.3.1.orig.tar.gz' mpclib3_1.3.1.orig.tar.gz 773573 SHA256:ab642492f5cf882b74aa0cb730cd410a81edcdbec895183ce930e706c1c759b8
-'http://http.debian.net/debian/pool/main/m/mpclib3/mpclib3_1.3.1-2.debian.tar.xz' mpclib3_1.3.1-2.debian.tar.xz 4628 SHA256:54e2beb85863fec85a30ca0a5d3f119111f8f1047be7549604377a74c18d6a9f
+'http://deb.debian.org/debian/pool/main/m/mpclib3/mpclib3_1.3.1-2.dsc' mpclib3_1.3.1-2.dsc 1919 SHA256:829425b2e64d5e68541daafb80bc7f1b0a47dc1f3d5870f406aeddf5f11ef179
+'http://deb.debian.org/debian/pool/main/m/mpclib3/mpclib3_1.3.1.orig.tar.gz' mpclib3_1.3.1.orig.tar.gz 773573 SHA256:ab642492f5cf882b74aa0cb730cd410a81edcdbec895183ce930e706c1c759b8
+'http://deb.debian.org/debian/pool/main/m/mpclib3/mpclib3_1.3.1-2.debian.tar.xz' mpclib3_1.3.1-2.debian.tar.xz 4628 SHA256:54e2beb85863fec85a30ca0a5d3f119111f8f1047be7549604377a74c18d6a9f
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/mpclib3/1.3.1-2/ (for browsing the source)
+- https://sources.debian.net/src/mpclib3/1.3.1-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mpclib3/1.3.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpfr4=4.2.2-2`
 
@@ -2536,10 +2584,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mpfr4=4.2.2-2
-'http://http.debian.net/debian/pool/main/m/mpfr4/mpfr4_4.2.2-2.dsc' mpfr4_4.2.2-2.dsc 2007 SHA256:dce07f556eb43b02367d42768a695b46530b93848fe04e858f29528d2703aaf4
-'http://http.debian.net/debian/pool/main/m/mpfr4/mpfr4_4.2.2.orig.tar.xz' mpfr4_4.2.2.orig.tar.xz 1505596 SHA256:b67ba0383ef7e8a8563734e2e889ef5ec3c3b898a01d00fa0a6869ad81c6ce01
-'http://http.debian.net/debian/pool/main/m/mpfr4/mpfr4_4.2.2-2.debian.tar.xz' mpfr4_4.2.2-2.debian.tar.xz 12616 SHA256:6607b4e9395c5af5bc32ad51bfcdf45ac2ff3406540d39df18676714df32aaaf
+'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.2.2-2.dsc' mpfr4_4.2.2-2.dsc 2007 SHA256:dce07f556eb43b02367d42768a695b46530b93848fe04e858f29528d2703aaf4
+'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.2.2.orig.tar.xz' mpfr4_4.2.2.orig.tar.xz 1505596 SHA256:b67ba0383ef7e8a8563734e2e889ef5ec3c3b898a01d00fa0a6869ad81c6ce01
+'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.2.2-2.debian.tar.xz' mpfr4_4.2.2-2.debian.tar.xz 12616 SHA256:6607b4e9395c5af5bc32ad51bfcdf45ac2ff3406540d39df18676714df32aaaf
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/mpfr4/4.2.2-2/ (for browsing the source)
+- https://sources.debian.net/src/mpfr4/4.2.2-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mpfr4/4.2.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.6+20251231-1`
 
@@ -2618,11 +2672,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nghttp2=1.68.0-2
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.68.0-2.dsc' nghttp2_1.68.0-2.dsc 2753 SHA256:c712f36f3325d5dd0b464b03a6b808f6c4d8bb8a750466ccd6b3959ded27a332
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.68.0.orig.tar.gz' nghttp2_1.68.0.orig.tar.gz 2638098 SHA256:2c16ffc588ad3f9e2613c3fad72db48ecb5ce15bc362fcc85b342e48daf51013
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.68.0.orig.tar.gz.asc' nghttp2_1.68.0.orig.tar.gz.asc 833 SHA256:be8b3ff79aa9f374cb5b1127ac686520e0291627e4e9c5faac6d730640dc3155
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.68.0-2.debian.tar.xz' nghttp2_1.68.0-2.debian.tar.xz 14976 SHA256:67d17fb0ccc21349cbf197648627df8932e60544151e2a7d3e674b19a2a2476c
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.68.0-2.dsc' nghttp2_1.68.0-2.dsc 2753 SHA256:c712f36f3325d5dd0b464b03a6b808f6c4d8bb8a750466ccd6b3959ded27a332
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.68.0.orig.tar.gz' nghttp2_1.68.0.orig.tar.gz 2638098 SHA256:2c16ffc588ad3f9e2613c3fad72db48ecb5ce15bc362fcc85b342e48daf51013
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.68.0.orig.tar.gz.asc' nghttp2_1.68.0.orig.tar.gz.asc 833 SHA256:be8b3ff79aa9f374cb5b1127ac686520e0291627e4e9c5faac6d730640dc3155
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.68.0-2.debian.tar.xz' nghttp2_1.68.0-2.debian.tar.xz 14976 SHA256:67d17fb0ccc21349cbf197648627df8932e60544151e2a7d3e674b19a2a2476c
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/nghttp2/1.68.0-2/ (for browsing the source)
+- https://sources.debian.net/src/nghttp2/1.68.0-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp2/1.68.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp3=1.15.0-1`
 
@@ -3221,20 +3281,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-matrix/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rmatrix=1.7-4-1
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-4-1.dsc' rmatrix_1.7-4-1.dsc 1860 SHA256:adcb2800928bbc526d22f27257b44a3a98aaa9bf3b37966037735c4499daaf1c
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-4.orig.tar.gz' rmatrix_1.7-4.orig.tar.gz 2485182 SHA256:7b131ecb6a21ff09a33691dac7bf8a7bc2eab9fd1dd09ef14856d74346eb4779
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-4-1.debian.tar.xz' rmatrix_1.7-4-1.debian.tar.xz 6100 SHA256:37dba8e241c16a9f8651596065425727d487e785eada99010041920eff17ef9f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rmatrix/1.7-4-1/
 
-- https://sources.debian.net/src/rmatrix/1.7-4-1/ (for browsing the source)
-- https://sources.debian.net/src/rmatrix/1.7-4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rmatrix/1.7-4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1.24-1`
 
@@ -3251,10 +3304,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rpart=4.1.24-1
-'http://http.debian.net/debian/pool/main/r/rpart/rpart_4.1.24-1.dsc' rpart_4.1.24-1.dsc 1843 SHA256:bc9677338746e43252b9e23974bb64365143d04db7b2cdd457ddb807e75b77a0
-'http://http.debian.net/debian/pool/main/r/rpart/rpart_4.1.24.orig.tar.gz' rpart_4.1.24.orig.tar.gz 620065 SHA256:4ab169a764d9857d299313aae0e7764bcea9220576e537cf165d4f8117e72f29
-'http://http.debian.net/debian/pool/main/r/rpart/rpart_4.1.24-1.debian.tar.xz' rpart_4.1.24-1.debian.tar.xz 4436 SHA256:471f830d8b7eb7ca5acde84993e2920a0ad771707f7549893cbb290195597565
+'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1.24-1.dsc' rpart_4.1.24-1.dsc 1843 SHA256:bc9677338746e43252b9e23974bb64365143d04db7b2cdd457ddb807e75b77a0
+'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1.24.orig.tar.gz' rpart_4.1.24.orig.tar.gz 620065 SHA256:4ab169a764d9857d299313aae0e7764bcea9220576e537cf165d4f8117e72f29
+'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1.24-1.debian.tar.xz' rpart_4.1.24-1.debian.tar.xz 4436 SHA256:471f830d8b7eb7ca5acde84993e2920a0ad771707f7549893cbb290195597565
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/rpart/4.1.24-1/ (for browsing the source)
+- https://sources.debian.net/src/rpart/4.1.24-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rpart/4.1.24-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpcsvc-proto=1.4.3-1`
 
@@ -3471,10 +3530,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sysvinit=3.15-6
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.15-6.dsc' sysvinit_3.15-6.dsc 2382 SHA256:07f2bb807af3823e2b1fc7f202b4ad6b4701cfb51f7e5fe586a13473e68c03a8
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.15.orig.tar.gz' sysvinit_3.15.orig.tar.gz 516469 SHA256:0979dd582056130a45bf70738260fb7f3da5cca989509b1e37ad5ad1d4cbe0bf
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.15-6.debian.tar.xz' sysvinit_3.15-6.debian.tar.xz 122884 SHA256:c5114a70a202cd5570c03c9834ae222aac343e9aac8428e0e910210870efacac
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.15-6.dsc' sysvinit_3.15-6.dsc 2382 SHA256:07f2bb807af3823e2b1fc7f202b4ad6b4701cfb51f7e5fe586a13473e68c03a8
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.15.orig.tar.gz' sysvinit_3.15.orig.tar.gz 516469 SHA256:0979dd582056130a45bf70738260fb7f3da5cca989509b1e37ad5ad1d4cbe0bf
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.15-6.debian.tar.xz' sysvinit_3.15-6.debian.tar.xz 122884 SHA256:c5114a70a202cd5570c03c9834ae222aac343e9aac8428e0e910210870efacac
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/sysvinit/3.15-6/ (for browsing the source)
+- https://sources.debian.net/src/sysvinit/3.15-6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sysvinit/3.15-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-4`
 
