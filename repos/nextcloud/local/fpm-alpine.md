@@ -1,9 +1,9 @@
-# `nextcloud:33.0.0-fpm-alpine`
+# `nextcloud:33.0.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ef29bc893cecd005687cb8aea56fb2bc354dd9f7e68f731877acea89e838f60b`
-- Created: `2026-03-13T00:18:19.383177178Z`
+- Image ID: `sha256:dcd40009d61d65d2f28c1a1febd0abda05359891e4b20ecb6422da358d0b67c9`
+- Created: `2026-03-27T18:02:15.899718841Z`
 - Virtual Size: ~ 1.04 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,7 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=33.0.0`
+  - `NEXTCLOUD_VERSION=33.0.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -609,16 +609,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.15-r0 description:
+imagemagick-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.15-r0 webpage:
+imagemagick-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.15-r0 installed size:
-3675 KiB
+imagemagick-7.1.2.17-r0 installed size:
+3687 KiB
 
-imagemagick-7.1.2.15-r0 license:
+imagemagick-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -626,16 +626,16 @@ ImageMagick
 ### `apk` package: `imagemagick-heic`
 
 ```console
-imagemagick-heic-7.1.2.15-r0 description:
+imagemagick-heic-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (HEIC support modules)
 
-imagemagick-heic-7.1.2.15-r0 webpage:
+imagemagick-heic-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-heic-7.1.2.15-r0 installed size:
+imagemagick-heic-7.1.2.17-r0 installed size:
 30 KiB
 
-imagemagick-heic-7.1.2.15-r0 license:
+imagemagick-heic-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -643,16 +643,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.15-r0 description:
+imagemagick-jp2-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.15-r0 webpage:
+imagemagick-jp2-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.15-r0 installed size:
+imagemagick-jp2-7.1.2.17-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.15-r0 license:
+imagemagick-jp2-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -660,16 +660,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.15-r0 description:
+imagemagick-jpeg-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.15-r0 webpage:
+imagemagick-jpeg-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.15-r0 installed size:
+imagemagick-jpeg-7.1.2.17-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.15-r0 license:
+imagemagick-jpeg-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -677,16 +677,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.15-r0 description:
+imagemagick-libs-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.15-r0 webpage:
+imagemagick-libs-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.15-r0 installed size:
-4249 KiB
+imagemagick-libs-7.1.2.17-r0 installed size:
+4257 KiB
 
-imagemagick-libs-7.1.2.15-r0 license:
+imagemagick-libs-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -694,16 +694,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pango`
 
 ```console
-imagemagick-pango-7.1.2.15-r0 description:
+imagemagick-pango-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (pango support modules)
 
-imagemagick-pango-7.1.2.15-r0 webpage:
+imagemagick-pango-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pango-7.1.2.15-r0 installed size:
+imagemagick-pango-7.1.2.17-r0 installed size:
 22 KiB
 
-imagemagick-pango-7.1.2.15-r0 license:
+imagemagick-pango-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -711,16 +711,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.15-r0 description:
+imagemagick-pdf-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.15-r0 webpage:
+imagemagick-pdf-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.15-r0 installed size:
+imagemagick-pdf-7.1.2.17-r0 installed size:
 121 KiB
 
-imagemagick-pdf-7.1.2.15-r0 license:
+imagemagick-pdf-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -728,16 +728,16 @@ ImageMagick
 ### `apk` package: `imagemagick-raw`
 
 ```console
-imagemagick-raw-7.1.2.15-r0 description:
+imagemagick-raw-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (RAW support modules)
 
-imagemagick-raw-7.1.2.15-r0 webpage:
+imagemagick-raw-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-raw-7.1.2.15-r0 installed size:
+imagemagick-raw-7.1.2.17-r0 installed size:
 22 KiB
 
-imagemagick-raw-7.1.2.15-r0 license:
+imagemagick-raw-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -745,16 +745,16 @@ ImageMagick
 ### `apk` package: `imagemagick-svg`
 
 ```console
-imagemagick-svg-7.1.2.15-r0 description:
+imagemagick-svg-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (SVG support modules)
 
-imagemagick-svg-7.1.2.15-r0 webpage:
+imagemagick-svg-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-svg-7.1.2.15-r0 installed size:
+imagemagick-svg-7.1.2.17-r0 installed size:
 75 KiB
 
-imagemagick-svg-7.1.2.15-r0 license:
+imagemagick-svg-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -762,16 +762,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.15-r0 description:
+imagemagick-tiff-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.15-r0 webpage:
+imagemagick-tiff-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.15-r0 installed size:
+imagemagick-tiff-7.1.2.17-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.2.15-r0 license:
+imagemagick-tiff-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -779,16 +779,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.15-r0 description:
+imagemagick-webp-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.15-r0 webpage:
+imagemagick-webp-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.15-r0 installed size:
+imagemagick-webp-7.1.2.17-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.15-r0 license:
+imagemagick-webp-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -983,16 +983,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.4-r0 description:
+libexpat-2.7.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.4-r0 webpage:
+libexpat-2.7.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.4-r0 installed size:
+libexpat-2.7.5-r0 installed size:
 133 KiB
 
-libexpat-2.7.4-r0 license:
+libexpat-2.7.5-r0 license:
 MIT
 
 ```
@@ -1238,16 +1238,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.55-r0 description:
+libpng-1.6.56-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.55-r0 webpage:
+libpng-1.6.56-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.55-r0 installed size:
-177 KiB
+libpng-1.6.56-r0 installed size:
+181 KiB
 
-libpng-1.6.55-r0 license:
+libpng-1.6.56-r0 license:
 Libpng
 
 ```

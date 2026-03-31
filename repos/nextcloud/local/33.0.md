@@ -1,9 +1,9 @@
-# `nextcloud:33.0.0-apache`
+# `nextcloud:33.0.1-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb8d83c1f251b314315cdd3c8d28fd2a9fca2111625c9e4e0b30bee0e5d32be4`
-- Created: `2026-03-16T23:38:47.00255724Z`
+- Image ID: `sha256:67676c08b3b80120fcef1dbbbfae98b3a8cae0129ba6cedfdd46e4614de9795f`
+- Created: `2026-03-27T18:02:18.695344058Z`
 - Virtual Size: ~ 1.45 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -27,7 +27,7 @@
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
   - `APACHE_BODY_LIMIT=1073741824`
-  - `NEXTCLOUD_VERSION=33.0.0`
+  - `NEXTCLOUD_VERSION=33.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1274,11 +1274,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/fonts-dejavu/2.37-8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/fonts-dejavu/2.37-8/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `freetype=2.13.3+dfsg-1`
+### `dpkg` source package: `freetype=2.13.3+dfsg-1+deb13u1`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.13.3+dfsg-1`
+- `libfreetype6:amd64=2.13.3+dfsg-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -1300,21 +1300,21 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freetype=2.13.3+dfsg-1
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.13.3%2bdfsg-1.dsc' freetype_2.13.3+dfsg-1.dsc 3680 SHA256:122104ec96184391361f4ee9e5c70e83b05a5c0b90030f2b94befb0fad0664c3
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.13.3%2bdfsg.orig-ft2demos.tar.xz' freetype_2.13.3+dfsg.orig-ft2demos.tar.xz 342404 SHA256:8775e5ffded1a885ba2ccb3ea0e82c73306a03b764080c3e4c79da15b5c9a28a
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.13.3%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.13.3+dfsg.orig-ft2demos.tar.xz.asc 833 SHA256:931bfa17e59c0ec7db391160f43977e0907f36ea3c39d7e6063731cd4612dd51
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.13.3%2bdfsg.orig-ft2docs.tar.xz' freetype_2.13.3+dfsg.orig-ft2docs.tar.xz 2173852 SHA256:b7b66149bea769e226fd3d6d1eee6160e5b6beb4249b088071434fbe85fd1070
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.13.3%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.13.3+dfsg.orig-ft2docs.tar.xz.asc 833 SHA256:65c66aec6244d247540430b21d3e80b677f1361906347a5be7fad371d46655da
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.13.3%2bdfsg.orig.tar.xz' freetype_2.13.3+dfsg.orig.tar.xz 2201416 SHA256:686ec73cbf6783b245dd068a09ce807b729ac0f8a46dd70f7867923c32fdf4de
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.13.3%2bdfsg-1.debian.tar.xz' freetype_2.13.3+dfsg-1.debian.tar.xz 43904 SHA256:e2de836c8bb52c5a59173465bfddbf476a277f3f065ba322d111c5046ef8b8c8
+$ apt-get source -qq --print-uris freetype=2.13.3+dfsg-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.13.3%2bdfsg-1%2bdeb13u1.dsc' freetype_2.13.3+dfsg-1+deb13u1.dsc 3691 SHA256:8aa6e936f4b8ce5b1ac530d3c1bc7c5c36e6432ef81385c29ce649a3ed79e8cd
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.13.3%2bdfsg.orig-ft2demos.tar.xz' freetype_2.13.3+dfsg.orig-ft2demos.tar.xz 342404 SHA256:8775e5ffded1a885ba2ccb3ea0e82c73306a03b764080c3e4c79da15b5c9a28a
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.13.3%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.13.3+dfsg.orig-ft2demos.tar.xz.asc 833 SHA256:931bfa17e59c0ec7db391160f43977e0907f36ea3c39d7e6063731cd4612dd51
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.13.3%2bdfsg.orig-ft2docs.tar.xz' freetype_2.13.3+dfsg.orig-ft2docs.tar.xz 2173852 SHA256:b7b66149bea769e226fd3d6d1eee6160e5b6beb4249b088071434fbe85fd1070
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.13.3%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.13.3+dfsg.orig-ft2docs.tar.xz.asc 833 SHA256:65c66aec6244d247540430b21d3e80b677f1361906347a5be7fad371d46655da
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.13.3%2bdfsg.orig.tar.xz' freetype_2.13.3+dfsg.orig.tar.xz 2201416 SHA256:686ec73cbf6783b245dd068a09ce807b729ac0f8a46dd70f7867923c32fdf4de
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.13.3%2bdfsg-1%2bdeb13u1.debian.tar.xz' freetype_2.13.3+dfsg-1+deb13u1.debian.tar.xz 44488 SHA256:e7a07cad1b9c803457ec310bc87132429f52171c89f9126c09eb62e203c8c84b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/freetype/2.13.3+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/freetype/2.13.3+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/freetype/2.13.3+dfsg-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/freetype/2.13.3+dfsg-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/freetype/2.13.3+dfsg-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/freetype/2.13.3+dfsg-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fribidi=1.0.16-1`
 
@@ -1825,14 +1825,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/icu/76.1-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/icu/76.1-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u6`
+### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u7`
 
 Binary Packages:
 
-- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u6`
-- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u6`
-- `libmagickcore-7.q16-10-extra:amd64=8:7.1.1.43+dfsg1-1+deb13u6`
-- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u6`
+- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u7`
+- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u7`
+- `libmagickcore-7.q16-10-extra:amd64=8:7.1.1.43+dfsg1-1+deb13u7`
+- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u7`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/share/doc/libmagickcore-7.q16-10/copyright`, `/usr/share/doc/libmagickcore-7.q16-10-extra/copyright`, `/usr/share/doc/libmagickwand-7.q16-10/copyright`)
 
@@ -1862,13 +1862,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/s
 - `Perllikelicence`
 - `aclocal`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u7
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u7.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u7.dsc 5136 SHA256:21d15ec531e5f7a540c3e3a56ec96568c65149a509c3acad4e6d0f857dfeff0a
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u7.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u7.debian.tar.xz 329408 SHA256:d96f2576d7e7f2d03819d680a01c9382eae036472026b54b6b6194bec96327c5
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u7/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
