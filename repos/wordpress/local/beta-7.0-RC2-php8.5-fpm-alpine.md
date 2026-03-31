@@ -1,10 +1,10 @@
-# `wordpress:beta-7.0-RC1-php8.4-fpm-alpine`
+# `wordpress:beta-7.0-RC2-php8.5-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:216ab060442dc5b0e8f589b56dfea30d2439045290173933caaf40c739753ee8`
-- Created: `2026-03-25T17:48:14.828752185Z`
-- Virtual Size: ~ 303.48 Mb  
+- Image ID: `sha256:a15c4a89b84da56d517b5fa129f959a7c5c3460e47a8b54a14cfd6488c040efa`
+- Created: `2026-03-27T18:43:07.420683789Z`
+- Virtual Size: ~ 321.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.19`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.19.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.19.tar.xz.asc`
-  - `PHP_SHA256=11f7164ab26d356c31f94d3d69cc0e0707d5d2d6494a221aaeae307c08eaaa1c`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
+  - `PHP_VERSION=8.5.4`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.4.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.4.tar.xz.asc`
+  - `PHP_SHA256=c1569f1f543f6b025c583cdc0e730e5c5833c603618613f1aa8e75d1524b8c91`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1081,16 +1081,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.55-r0 description:
+libpng-1.6.56-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.55-r0 webpage:
+libpng-1.6.56-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.55-r0 installed size:
-177 KiB
+libpng-1.6.56-r0 installed size:
+181 KiB
 
-libpng-1.6.55-r0 license:
+libpng-1.6.56-r0 license:
 Libpng
 
 ```

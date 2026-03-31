@@ -1,10 +1,10 @@
-# `wordpress:beta-7.0-RC1-fpm-alpine`
+# `wordpress:beta-7.0-RC2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:73f0391a5253324678229f36bc288ca46d3ce07288cbabc9eaf569e1b0cd3462`
-- Created: `2026-03-25T17:55:41.400302207Z`
-- Virtual Size: ~ 299.99 Mb  
+- Image ID: `sha256:b81988e573701e426dbe384ecc643f65ca39b82376194b5113218edaacf05ef5`
+- Created: `2026-03-27T18:41:46.291198611Z`
+- Virtual Size: ~ 300.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1081,16 +1081,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.55-r0 description:
+libpng-1.6.56-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.55-r0 webpage:
+libpng-1.6.56-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.55-r0 installed size:
-177 KiB
+libpng-1.6.56-r0 installed size:
+181 KiB
 
-libpng-1.6.55-r0 license:
+libpng-1.6.56-r0 license:
 Libpng
 
 ```
