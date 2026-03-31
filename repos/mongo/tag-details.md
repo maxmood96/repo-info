@@ -100,6 +100,20 @@
 -	[`mongo:8.2.7-rc0-windowsservercore`](#mongo827-rc0-windowsservercore)
 -	[`mongo:8.2.7-rc0-windowsservercore-ltsc2022`](#mongo827-rc0-windowsservercore-ltsc2022)
 -	[`mongo:8.2.7-rc0-windowsservercore-ltsc2025`](#mongo827-rc0-windowsservercore-ltsc2025)
+-	[`mongo:8.3-rc`](#mongo83-rc)
+-	[`mongo:8.3-rc-nanoserver`](#mongo83-rc-nanoserver)
+-	[`mongo:8.3-rc-nanoserver-ltsc2022`](#mongo83-rc-nanoserver-ltsc2022)
+-	[`mongo:8.3-rc-noble`](#mongo83-rc-noble)
+-	[`mongo:8.3-rc-windowsservercore`](#mongo83-rc-windowsservercore)
+-	[`mongo:8.3-rc-windowsservercore-ltsc2022`](#mongo83-rc-windowsservercore-ltsc2022)
+-	[`mongo:8.3-rc-windowsservercore-ltsc2025`](#mongo83-rc-windowsservercore-ltsc2025)
+-	[`mongo:8.3.0-rc3`](#mongo830-rc3)
+-	[`mongo:8.3.0-rc3-nanoserver`](#mongo830-rc3-nanoserver)
+-	[`mongo:8.3.0-rc3-nanoserver-ltsc2022`](#mongo830-rc3-nanoserver-ltsc2022)
+-	[`mongo:8.3.0-rc3-noble`](#mongo830-rc3-noble)
+-	[`mongo:8.3.0-rc3-windowsservercore`](#mongo830-rc3-windowsservercore)
+-	[`mongo:8.3.0-rc3-windowsservercore-ltsc2022`](#mongo830-rc3-windowsservercore-ltsc2022)
+-	[`mongo:8.3.0-rc3-windowsservercore-ltsc2025`](#mongo830-rc3-windowsservercore-ltsc2025)
 -	[`mongo:latest`](#mongolatest)
 -	[`mongo:nanoserver`](#mongonanoserver)
 -	[`mongo:nanoserver-ltsc2022`](#mongonanoserver-ltsc2022)
@@ -17805,6 +17819,62 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Fri, 27 Mar 2026 18:34:31 GMT  
 		Size: 1.3 KB (1324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:8.3-rc`
+
+**does not exist** (yet?)
+
+## `mongo:8.3-rc-nanoserver`
+
+**does not exist** (yet?)
+
+## `mongo:8.3-rc-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:8.3-rc-noble`
+
+**does not exist** (yet?)
+
+## `mongo:8.3-rc-windowsservercore`
+
+**does not exist** (yet?)
+
+## `mongo:8.3-rc-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:8.3-rc-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
+## `mongo:8.3.0-rc3`
+
+**does not exist** (yet?)
+
+## `mongo:8.3.0-rc3-nanoserver`
+
+**does not exist** (yet?)
+
+## `mongo:8.3.0-rc3-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:8.3.0-rc3-noble`
+
+**does not exist** (yet?)
+
+## `mongo:8.3.0-rc3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `mongo:8.3.0-rc3-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:8.3.0-rc3-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `mongo:latest`
 
