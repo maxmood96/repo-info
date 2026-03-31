@@ -1078,14 +1078,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-15/copyright`, `/usr/share/doc/cpp-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.2.0-15ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-15ubuntu1.dsc' gcc-15_15.2.0-15ubuntu1.dsc 47488 SHA512:cab1faf932bec5511bd87dfc6d14c0d827a521bf8470a4add7c4519a86f76e2c83ce25cd8d477b88f7dce713df8411c1261629e7830d38cc487314c8c15de2d6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0.orig.tar.gz' gcc-15_15.2.0.orig.tar.gz 105962230 SHA512:83887af5c7798105d1ad85f0e9c794daa3cf030638bf40b3bff48771b8325d95c9a0d99d7d2c86c8e45499ff87f975e1914d00b72482862357645cc7ec330d38
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-15ubuntu1.debian.tar.xz' gcc-15_15.2.0-15ubuntu1.debian.tar.xz 2964596 SHA512:b6f00251360adc4a3531c156b6512945de584eb07af8b1d8ff0c371359575c5ae23d7ad94a57cf96a7080d033c1fdcd19cd3b7a348a298c4dfa006e688fa6b25
-```
 
 ### `dpkg` source package: `gcc-16=16-20260308-1ubuntu1`
 
@@ -1613,14 +1608,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.2.15+dfsg1-1
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.2.15%2bdfsg1-1.dsc' imagemagick_7.1.2.15+dfsg1-1.dsc 5202 SHA512:97b59142556599054bb98e028087491ac342eb7cc531102603bf68ceaf78d912ed6260141d30fda4240c970dcf01e29209d8747b088a6c258f0851a93cac3345
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.2.15%2bdfsg1.orig.tar.xz' imagemagick_7.1.2.15+dfsg1.orig.tar.xz 10528648 SHA512:f7140960228e6f3c744e5d3dbde6229ed164ea017489d18e95b5cddef44256501b675b1aa38e5ae57e89a84bde69a948ddaca695f020b294bca4e6bca3b538de
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.2.15%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.2.15+dfsg1-1.debian.tar.xz 272436 SHA512:e89f4263ff98b8c7b73be1b79baf52d4f22df534492c4a81223f7653a8a2cd4c137aa0ba4550a3d2c8d4e8c3cc8b8310a13f15ee4559675f774cd2b13bd76842
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/imagemagick/8:7.1.2.15+dfsg1-1/
+
 
 ### `dpkg` source package: `imath=3.1.12-1ubuntu5`
 
@@ -2972,14 +2966,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.43-0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.43-0.3.dsc' libxslt_1.1.43-0.3.dsc 2183 SHA512:988e63062b3b0ccfa76e5c54b87256da9a5cf5fcec2d024dd4765d429600e7b198045e5c2804c4c2128d60de4f2e72a4ad59b1d89888efe50eef190753546609
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.43.orig.tar.xz' libxslt_1.1.43.orig.tar.xz 1518364 SHA512:96110b0397a8f5791f489127574e2143845feb61bea0581d7b7e3c1101fd0718483bae81a7ce417b971bd678293bfd95daddad0dadd3e256c87d41a69faed85a
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.43-0.3.debian.tar.xz' libxslt_1.1.43-0.3.debian.tar.xz 27452 SHA512:644ae78884010fd2cf29505c9a3f5c45bc0b6800b2ab04be3e60ef9862e150c6dfa8af5955abaedfc3b6078d306a1773514c38c6afe206ccf0ddbbe3d00295b1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libxslt/1.1.43-0.3/
+
 
 ### `dpkg` source package: `libxt=1:1.2.1-1.3build1`
 
@@ -3071,13 +3064,9 @@ Licenses: (parsed from: `/usr/share/doc/lto-disabled-list/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lto-disabled-list=78
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_78.dsc' lto-disabled-list_78.dsc 1474 SHA512:2804089f549e310e6ef873ce22ee327a1805d55ae0a0e63c925f695da429706bec69dbf20363db69156267644382d5a22a783e70f3b42a35886aed411891f9c9
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_78.tar.xz' lto-disabled-list_78.tar.xz 14560 SHA512:a7a133b220694fc85601043e0b1a81816a3efe3d48e514f0299ad02db9e6219a12622b44ca27f5df3ec2af531ac59ce47b8a5f124cc890fed59c27f6b4990e13
-```
 
 ### `dpkg` source package: `lz4=1.10.0-6`
 
@@ -4218,14 +4207,13 @@ Licenses: (parsed from: `/usr/share/doc/libsysprof-capture-4-dev/copyright`)
 - `LGPL-3.0+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysprof=50~beta-1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysprof/sysprof_50%7ebeta-1.dsc' sysprof_50~beta-1.dsc 3582 SHA512:14a44b6210d3d6565cae40f257cf3f6064e40ccd18c2136c0d5d2cd9cea5d77a79c752146501a9524b38b27508679bd02b324342512c8f2e3c7afae2b68e920c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysprof/sysprof_50%7ebeta.orig.tar.xz' sysprof_50~beta.orig.tar.xz 1275596 SHA512:2a87a3641b9f68c9b01f1097282cc2a318e675df56a3c16c48ba1cef21e04458d21b651b162a9a8960234cb6407e9528915474e86464e803665ff95a548f32ad
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysprof/sysprof_50%7ebeta-1.debian.tar.xz' sysprof_50~beta-1.debian.tar.xz 16940 SHA512:ec3b9ac7f2cf2c3cd7b4638529266190ee0dc42197c2bac06cfe43a716b8f9d56813a879b67316319535b6284b5164471ad020ebbb63a586405b4fc5d65aa9db
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sysprof/50~beta-1/
+
 
 ### `dpkg` source package: `systemd=259.3-0ubuntu1`
 

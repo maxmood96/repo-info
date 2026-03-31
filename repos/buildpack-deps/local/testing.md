@@ -1345,20 +1345,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-16-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-16=16-20260308-1
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16-20260308-1.dsc' gcc-16_16-20260308-1.dsc 52607 SHA256:3b8480dd63757c1cb9cc2814d63804c7c022f763778b065ce0bef364f90aef55
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16-20260308.orig.tar.gz' gcc-16_16-20260308.orig.tar.gz 100061050 SHA256:d2f27f5b30cfa5dea5a644debc38637d3e0d677aa902f969aa51207aa2a05d26
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16-20260308-1.debian.tar.xz' gcc-16_16-20260308-1.debian.tar.xz 623156 SHA256:b5bbc234d62e77d98e2855794886fb38b51ba88ee9a365ca7e9c7db471f17be3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-16/16-20260308-1/
 
-- https://sources.debian.net/src/gcc-16/16-20260308-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-16/16-20260308-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-16/16-20260308-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.230`
 
@@ -1938,20 +1931,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.2.15+dfsg1-2
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.15%2bdfsg1-2.dsc' imagemagick_7.1.2.15+dfsg1-2.dsc 5202 SHA256:a6d732bb7d9ff400df563b3ba1f1330f945adb91cc9770a142d7b3c4cdbdbaa4
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.15%2bdfsg1.orig.tar.xz' imagemagick_7.1.2.15+dfsg1.orig.tar.xz 10528648 SHA256:051b7969e97a3b6ca5611c0dbf92b01ed5a6b2ee7bee933c628d59da120a263c
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.15%2bdfsg1-2.debian.tar.xz' imagemagick_7.1.2.15+dfsg1-2.debian.tar.xz 272800 SHA256:25775e4df9ae6748eada64bdb38d3f006a025d5af5b60fd3da4e3c309022f792
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:7.1.2.15+dfsg1-2/
 
-- https://sources.debian.net/src/imagemagick/8:7.1.2.15+dfsg1-2/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.2.15+dfsg1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.2.15+dfsg1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
@@ -3642,20 +3628,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.43-0.3
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.43-0.3.dsc' libxslt_1.1.43-0.3.dsc 2183 SHA256:9e34bd60c75eb2fbdef1794258d030a131514629f8b54439795737e991c8631c
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.43.orig.tar.xz' libxslt_1.1.43.orig.tar.xz 1518364 SHA256:5a3d6b383ca5afc235b171118e90f5ff6aa27e9fea3303065231a6d403f0183a
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.43-0.3.debian.tar.xz' libxslt_1.1.43-0.3.debian.tar.xz 27452 SHA256:f6f15f9e9885e919682e87c329d9f04a2cbd2fa32d47afc55942892568bbea86
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxslt/1.1.43-0.3/
 
-- https://sources.debian.net/src/libxslt/1.1.43-0.3/ (for browsing the source)
-- https://sources.debian.net/src/libxslt/1.1.43-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxslt/1.1.43-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxt=1:1.2.1-1.3`
 
@@ -4282,20 +4261,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-3-1-30/copyright`, `/usr/shar
 - `BSD-3-clause`
 - `openexr`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openexr=3.1.13-2
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_3.1.13-2.dsc' openexr_3.1.13-2.dsc 2144 SHA256:a44f8572a8018ce8b51a35fd2e8a90492b2358b434b8e2beba66f4dd6dd944f8
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_3.1.13.orig.tar.gz' openexr_3.1.13.orig.tar.gz 20542408 SHA256:26d265d8cf8df4dad115b066ba209118ca8832cda076ec704ce1a57f827c75c6
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_3.1.13-2.debian.tar.xz' openexr_3.1.13-2.debian.tar.xz 19268 SHA256:5e0e5768b1577dd604bb410666d3420566ac1f8858e69a234633259c3efb52a3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openexr/3.1.13-2/
 
-- https://sources.debian.net/src/openexr/3.1.13-2/ (for browsing the source)
-- https://sources.debian.net/src/openexr/3.1.13-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openexr/3.1.13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjpeg2=2.5.4-1`
 
@@ -5275,20 +5247,13 @@ Licenses: (parsed from: `/usr/share/doc/libsysprof-capture-4-dev/copyright`)
 - `LGPL-3.0+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysprof=50~beta-1
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_50%7ebeta-1.dsc' sysprof_50~beta-1.dsc 3582 SHA256:5d8b09b1f8d40870ad15e6833dd5c37f4b059cbd0e69aef1e1c59a32fd97bc5f
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_50%7ebeta.orig.tar.xz' sysprof_50~beta.orig.tar.xz 1275596 SHA256:8a9ab3dac51266dad49b5c608610401e19c98141747ce797b2f8f2caa1d3c07e
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_50%7ebeta-1.debian.tar.xz' sysprof_50~beta-1.debian.tar.xz 16940 SHA256:d0fb3a54ad4608e3a85a3f2cdf84bbffa40ecebaa1a5c3454e6e8131a0cdf0f1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysprof/50~beta-1/
 
-- https://sources.debian.net/src/sysprof/50~beta-1/ (for browsing the source)
-- https://sources.debian.net/src/sysprof/50~beta-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysprof/50~beta-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=260~rc2-1`
 
