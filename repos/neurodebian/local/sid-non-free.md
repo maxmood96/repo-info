@@ -1022,20 +1022,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.9.1-1
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.1-1.dsc' libcap-ng_0.9.1-1.dsc 1740 SHA256:374fcf278e4a20cd6ddaa8b0d2402e1f09d5408e16e8c96ec8237c9849090b6a
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.1.orig.tar.gz' libcap-ng_0.9.1.orig.tar.gz 85576 SHA256:007a0e69ad0d8721fd6281d5671744d1f655eca7541a4b98c1d05fd2df50f60b
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.1-1.debian.tar.xz' libcap-ng_0.9.1-1.debian.tar.xz 7448 SHA256:e765c4a3f5037452fe36e5943225b00a5e24527842d1622f1e13ed18bfdd4fa5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap-ng/0.9.1-1/
 
-- https://sources.debian.net/src/libcap-ng/0.9.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libcap-ng/0.9.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap-ng/0.9.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libeatmydata=131-2`
 
@@ -1082,20 +1075,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi8/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.5.2-3
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2-3.dsc' libffi_3.5.2-3.dsc 1954 SHA256:ed67eb00402650aafdc76a7f491a64889fcf5b2da70c6bbb43ffab2e480cffc9
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2.orig.tar.gz' libffi_3.5.2.orig.tar.gz 598870 SHA256:dd19253d3007f366319a51d248a40c9e5fcace4498cbea990b566291844e4e30
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.5.2-3.debian.tar.xz' libffi_3.5.2-3.debian.tar.xz 10928 SHA256:682fc1b23da5ece07584e30263c4dd178ebc819a8d8ec2ac5e5fd7c67c247d30
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libffi/3.5.2-3/
 
-- https://sources.debian.net/src/libffi/3.5.2-3/ (for browsing the source)
-- https://sources.debian.net/src/libffi/3.5.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libffi/3.5.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt20=1.12.1-2`
 

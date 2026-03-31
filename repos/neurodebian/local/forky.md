@@ -613,20 +613,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-16-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-16=16-20260308-1
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16-20260308-1.dsc' gcc-16_16-20260308-1.dsc 52607 SHA256:3b8480dd63757c1cb9cc2814d63804c7c022f763778b065ce0bef364f90aef55
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16-20260308.orig.tar.gz' gcc-16_16-20260308.orig.tar.gz 100061050 SHA256:d2f27f5b30cfa5dea5a644debc38637d3e0d677aa902f969aa51207aa2a05d26
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16-20260308-1.debian.tar.xz' gcc-16_16-20260308-1.debian.tar.xz 623156 SHA256:b5bbc234d62e77d98e2855794886fb38b51ba88ee9a365ca7e9c7db471f17be3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-16/16-20260308-1/
 
-- https://sources.debian.net/src/gcc-16/16-20260308-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-16/16-20260308-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-16/16-20260308-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.42-13`
 
