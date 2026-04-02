@@ -1,10 +1,10 @@
-# `mediawiki:1.43.6-fpm-alpine`
+# `mediawiki:1.43.8-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e0519480a6193686f94949211c190277d7561a59bdbd12aad2647e008ce5a995`
-- Created: `2026-01-30T02:27:45.641101312Z`
-- Virtual Size: ~ 532.76 Mb  
+- Image ID: `sha256:f88c4bb59809b9c3c76d4a356c70207281c6be020da670dba57682a9836a63a6`
+- Created: `2026-04-01T18:19:22.695060787Z`
+- Virtual Size: ~ 534.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.30.tar.xz.asc`
   - `PHP_SHA256=67f084d36852daab6809561a7c8023d130ca07fc6af8fb040684dd1414934d48`
   - `MEDIAWIKI_MAJOR_VERSION=1.43`
-  - `MEDIAWIKI_VERSION=1.43.6`
+  - `MEDIAWIKI_VERSION=1.43.8`
 
 ## `apk` (`.apk`-based packages)
 
@@ -488,16 +488,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.13-r0 description:
+imagemagick-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.13-r0 webpage:
+imagemagick-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.13-r0 installed size:
-3663 KiB
+imagemagick-7.1.2.17-r0 installed size:
+3687 KiB
 
-imagemagick-7.1.2.13-r0 license:
+imagemagick-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -505,16 +505,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.13-r0 description:
+imagemagick-libs-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.13-r0 webpage:
+imagemagick-libs-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.13-r0 installed size:
-4245 KiB
+imagemagick-libs-7.1.2.17-r0 installed size:
+4257 KiB
 
-imagemagick-libs-7.1.2.13-r0 license:
+imagemagick-libs-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -658,16 +658,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.3-r0 description:
+libexpat-2.7.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.3-r0 webpage:
+libexpat-2.7.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.3-r0 installed size:
+libexpat-2.7.5-r0 installed size:
 133 KiB
 
-libexpat-2.7.3-r0 license:
+libexpat-2.7.5-r0 license:
 MIT
 
 ```
@@ -845,16 +845,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.54-r0 description:
+libpng-1.6.56-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.54-r0 webpage:
+libpng-1.6.56-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.54-r0 installed size:
-177 KiB
+libpng-1.6.56-r0 installed size:
+181 KiB
 
-libpng-1.6.54-r0 license:
+libpng-1.6.56-r0 license:
 Libpng
 
 ```
