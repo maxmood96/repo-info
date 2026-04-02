@@ -10520,14 +10520,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-pyasn1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pyasn1=0.4.8-4ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pyasn1/pyasn1_0.4.8-4ubuntu0.1.dsc' pyasn1_0.4.8-4ubuntu0.1.dsc 2283 SHA512:9a953f884f8db36e5b2b0468c8cf64751731b5b4034f1e28e9f1431d8afb15b5613e4c76cc5ccc2af94c5cb293001b5d0495f3074e94702caf2bff6b62d07dec
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pyasn1/pyasn1_0.4.8.orig.tar.gz' pyasn1_0.4.8.orig.tar.gz 146820 SHA512:e64e70b325c8067f87ace7c0673149e82fe564aa4b0fa146d29b43cb588ecd6e81b1b82803b8cfa7a17d3d0489b6d88b4af5afb3aa0052bf92e8a1769fe8f7b0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pyasn1/pyasn1_0.4.8-4ubuntu0.1.debian.tar.xz' pyasn1_0.4.8-4ubuntu0.1.debian.tar.xz 7284 SHA512:200ae84c6c2c3d2c1b5d74e4a52028c7449b7b2647a238706ca7f12500343ef6a29861e6b2d130aa79ad3125577ffa5177d04b1370109c404687888545ab7145
-```
 
 ### `dpkg` source package: `pycairo=1.25.1-2build2`
 
@@ -11959,15 +11954,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.24.04.1.dsc' tzdata_2025b-0ubuntu0.24.04.1.dsc 2728 SHA512:e717b51a15bbdd64183841b5136194f75bc2affece27101e3d03ed5b4614959a7810d7e1cfc8e59d846fe87dec7ed01c1cc739a25a0abf95552215f0929ea318
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA512:ad39fe16b32fad7eee27ff968b4e8af23267ce586629ad70e7625136d2c3cc3a42295a87b3dc770c291aa9112c56301629c1fe379735f70008e62864ce4e735a
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2025b-0ubuntu0.24.04.1.debian.tar.xz 188052 SHA512:8120a6b7f4381ce8f5e67b58f0cdc144905c8eed387c5b3ea820c19464308b0b2c9010ad498fe69e5161f4c23ccba78ee7f6d9dc7ac0caa23b18509ea4d8dad4
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 
