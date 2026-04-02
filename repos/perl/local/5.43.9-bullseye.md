@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9275011fb15f230a748bab33f505b462ae4b10f7314fe4f199de52be23a48817`
-- Created: `2026-03-23T17:17:16.987940922Z`
-- Virtual Size: ~ 896.79 Mb  
+- Image ID: `sha256:d6df5d5bf85b6d900aa3da4196c91b96221e41395d55ee7a85ec5172e4647312`
+- Created: `2026-04-01T17:58:08.281574077Z`
+- Virtual Size: ~ 896.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl5.43.9","-de0"]`
@@ -2841,20 +2841,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.37-3+deb11u2
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.37-3%2bdeb11u2.dsc' libpng1.6_1.6.37-3+deb11u2.dsc 2257 SHA256:d096eb4db55c57c2b4bc36218c767e9aadc9d2bcfa6dbb6e3757dbb2766dd8d4
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA256:ca74a0dace179a8422187671aee97dd3892b53e168627145271cad5b5ac81307
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.37-3%2bdeb11u2.debian.tar.xz' libpng1.6_1.6.37-3+deb11u2.debian.tar.xz 40832 SHA256:2da748a9a0aea17d990ee91417f61592ea99f0b0312802d6dfedb9080c3470f3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.37-3+deb11u2/
 
-- https://sources.debian.net/src/libpng1.6/1.6.37-3+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.37-3+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.37-3+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.0-1.2`
 
