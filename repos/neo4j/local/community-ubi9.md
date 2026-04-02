@@ -1,10 +1,10 @@
-# `neo4j:2026.02.3-community-ubi9`
+# `neo4j:2026.03.1-community-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:76eea90acbf009fcf6923803a4c9f5f875a07b68f4f4a8b5ce784968f4e2063c`
-- Created: `2026-03-20T17:49:45.234875367Z`
-- Virtual Size: ~ 666.61 Mb  
+- Image ID: `sha256:f54680d6049b6ed40c2a5c4a190c6588d583171aff97964a7c210e8c3b2c3cf8`
+- Created: `2026-04-01T21:10:14.768098494Z`
+- Virtual Size: ~ 653.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=63d4382d553d2d159e2da4c10a37a46f635e0a4418c5dac75887f7c88911823b`
-  - `NEO4J_TARBALL=neo4j-community-2026.02.3-unix.tar.gz`
+  - `NEO4J_SHA256=419c5a471a8b6918570da687215d7d3406983a6ae209fd3d96c2de2a90a5dcfb`
+  - `NEO4J_TARBALL=neo4j-community-2026.03.1-unix.tar.gz`
   - `NEO4J_EDITION=community`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
@@ -1162,41 +1162,71 @@ $ dnf --quiet download --source --url npth-1.6-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/npth-1.6-8.el9.src.rpm
 ```
 
-### `rpm` package: `nspr-4.36.0-4.el9_4.x86_64`
+### `rpm` package: `nspr-4.36.0-8.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `nss-3.112.0-4.el9_4.x86_64`
+```console
+$ dnf --quiet download --source --url nspr-4.36.0-8.el9_4
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-8.el9_4.src.rpm
+```
 
-Licenses (from `rpm --query`): MPLv2.0
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `nss-softokn-3.112.0-4.el9_4.x86_64`
-
-Licenses (from `rpm --query`): MPLv2.0
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `nss-softokn-freebl-3.112.0-4.el9_4.x86_64`
+### `rpm` package: `nss-3.112.0-8.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `nss-sysinit-3.112.0-4.el9_4.x86_64`
+```console
+$ dnf --quiet download --source --url nss-3.112.0-8.el9_4
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-8.el9_4.src.rpm
+```
+
+### `rpm` package: `nss-softokn-3.112.0-8.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `nss-util-3.112.0-4.el9_4.x86_64`
+```console
+$ dnf --quiet download --source --url nss-softokn-3.112.0-8.el9_4
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-8.el9_4.src.rpm
+```
+
+### `rpm` package: `nss-softokn-freebl-3.112.0-8.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url nss-softokn-freebl-3.112.0-8.el9_4
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-8.el9_4.src.rpm
+```
+
+### `rpm` package: `nss-sysinit-3.112.0-8.el9_4.x86_64`
+
+Licenses (from `rpm --query`): MPLv2.0
+
+Source:
+
+```console
+$ dnf --quiet download --source --url nss-sysinit-3.112.0-8.el9_4
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-8.el9_4.src.rpm
+```
+
+### `rpm` package: `nss-util-3.112.0-8.el9_4.x86_64`
+
+Licenses (from `rpm --query`): MPLv2.0
+
+Source:
+
+```console
+$ dnf --quiet download --source --url nss-util-3.112.0-8.el9_4
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/n/nss-3.112.0-8.el9_4.src.rpm
+```
 
 ### `rpm` package: `oniguruma-6.9.6-1.el9.5.x86_64`
 
