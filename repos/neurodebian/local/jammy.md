@@ -2,16 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1ebb4f514f1106446659c0c35b5cc154c33519bede72d75513eeea1e81f3011f`
-- Created: `2026-03-17T01:43:18.729841732Z`
-- Virtual Size: ~ 86.33 Mb  
+- Image ID: `sha256:3a59724e8c9582356746478c7557741e3e11c464edd6a3e13ee3ab2c3baaeba8`
+- Created: `2026-04-01T20:15:06.752122644Z`
+- Virtual Size: ~ 86.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
 
 ## `dpkg` (`.deb`-based packages)
@@ -216,19 +215,24 @@ $ apt-get source -qq --print-uris cdebconf=0.261ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.261ubuntu1.tar.xz' cdebconf_0.261ubuntu1.tar.xz 297016 SHA512:6c2c8e2dccdb923ae6dc6a6b3873e6a56f6bdc4a6298c0576f60cb8d5c63bd06c4b9dac4ada4abd0d672a4e54509ad558fc9d1424a8029568d8d86cb54926390
 ```
 
-### `dpkg` source package: `coreutils=8.32-4.1ubuntu1.2`
+### `dpkg` source package: `coreutils=8.32-4.1ubuntu1.3`
 
 Binary Packages:
 
-- `coreutils=8.32-4.1ubuntu1.2`
+- `coreutils=8.32-4.1ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.dsc' coreutils_8.32-4.1ubuntu1.3.dsc 2027 SHA512:ba25132bbf90edf93c1636827ea14f92643cbb530803cea5dc8a81b8b781c0d1b6eb60a0a29331dff12429a60fb8c8bd2e291da03c7a3e69f643a98fc967ff04
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz' coreutils_8.32.orig.tar.xz 5547836 SHA512:1c8f3584efd61b4b02e7ac5db8e103b63cfb2063432caaf1e64cb2dcc56d8c657d1133bbf10bd41468d6a1f31142e6caa81d16ae68fa3e6e84075c253613a145
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.debian.tar.xz' coreutils_8.32-4.1ubuntu1.3.debian.tar.xz 45556 SHA512:9a0addab05c94029ec9087b4b5c521a8380e061a45bbb1f05dd37bef7f79f6a07b15b21bd906ef31019738c0110896190959ff517ea7bd0de31a697462f66ffa
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -438,13 +442,13 @@ $ apt-get source -qq --print-uris findutils=4.8.0-1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.8.0-1ubuntu3.debian.tar.xz' findutils_4.8.0-1ubuntu3.debian.tar.xz 27716 SHA512:f0ce8b61f4e0beabad3178424c804468dc4c57f37794887954df28c36227ce77f00383903274a1995a104f9def44270070b9e033eb46d52f5aaaedb1f5883587
 ```
 
-### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04.2`
+### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04.3`
 
 Binary Packages:
 
-- `gcc-12-base:amd64=12.3.0-1ubuntu1~22.04.2`
-- `libgcc-s1:amd64=12.3.0-1ubuntu1~22.04.2`
-- `libstdc++6:amd64=12.3.0-1ubuntu1~22.04.2`
+- `gcc-12-base:amd64=12.3.0-1ubuntu1~22.04.3`
+- `libgcc-s1:amd64=12.3.0-1ubuntu1~22.04.3`
+- `libstdc++6:amd64=12.3.0-1ubuntu1~22.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -455,9 +459,14 @@ Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.3.dsc' gcc-12_12.3.0-1ubuntu1~22.04.3.dsc 27845 SHA512:8e4d9743dc772aefc525a1ee04055e6c814e0a36b929ee2d2660bb341d44c06641b860fd567a750bc4fb3e90f1f5f9b6480931018a1681a6a87326e2200baffa
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0.orig.tar.gz' gcc-12_12.3.0.orig.tar.gz 91555468 SHA512:a33ce506594e13cf96f0419e6d62b71f8906c87c69426218bf8679d281865f1b170bc2f7379216ae1d6ad9f6bdbf5819c34c65c7537fdb74179c27b0d4ab7b48
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.3.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.3.debian.tar.xz 587456 SHA512:d7721ad3f05f4918ac658b7df557db130cd5549b138578a212f616dec53485d4e80a59c4ef2afc7b46ddd66e51dd77a4036d57e8f99a44a4c4be3eff854f62e3
+```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.13`
 
@@ -1729,17 +1738,17 @@ $ apt-get source -qq --print-uris usrmerge=25ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_25ubuntu2.tar.xz' usrmerge_25ubuntu2.tar.xz 12812 SHA512:dac8ccc7e2b75c424990713869f80d62d22e1cd86cb35c1784c7e76a12096b8c3f3000cefb406456f6f5c459d14858e710d426ee11714d1a5e342e04186f8353
 ```
 
-### `dpkg` source package: `util-linux=2.37.2-4ubuntu3.4`
+### `dpkg` source package: `util-linux=2.37.2-4ubuntu3.5`
 
 Binary Packages:
 
-- `bsdutils=1:2.37.2-4ubuntu3.4`
-- `libblkid1:amd64=2.37.2-4ubuntu3.4`
-- `libmount1:amd64=2.37.2-4ubuntu3.4`
-- `libsmartcols1:amd64=2.37.2-4ubuntu3.4`
-- `libuuid1:amd64=2.37.2-4ubuntu3.4`
-- `mount=2.37.2-4ubuntu3.4`
-- `util-linux=2.37.2-4ubuntu3.4`
+- `bsdutils=1:2.37.2-4ubuntu3.5`
+- `libblkid1:amd64=2.37.2-4ubuntu3.5`
+- `libmount1:amd64=2.37.2-4ubuntu3.5`
+- `libsmartcols1:amd64=2.37.2-4ubuntu3.5`
+- `libuuid1:amd64=2.37.2-4ubuntu3.5`
+- `mount=2.37.2-4ubuntu3.5`
+- `util-linux=2.37.2-4ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -1760,9 +1769,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.37.2-4ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.dsc' util-linux_2.37.2-4ubuntu3.5.dsc 4550 SHA512:c4236797fd341679e55cf4137c5c48a1dcd22975b1f5787b1ec0fa539f3f3d7dfe559601f26501fe1227e87f623cde6e8d299ff34580bd4d25d8862e83fbecb7
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2.orig.tar.xz' util-linux_2.37.2.orig.tar.xz 5621624 SHA512:38f0fe820445e3bfa79550e6581c230f98c7661566ccc4daa51c7208a5f972c61b4e57dfc86bed074fdbc7c40bc79f856be8f6a05a8860c1c0cecc4208e8b81d
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.debian.tar.xz' util-linux_2.37.2-4ubuntu3.5.debian.tar.xz 115268 SHA512:e0cd54819b53c5787ad0f96caea67ecaf6264a656f534296487bcfd2af520c51918aef8694294602aa899808a9dc76de3d69f138b16b23170f500b2ef92db242
+```
 
 ### `dpkg` source package: `xxhash=0.8.1-1`
 
