@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e9f12c16b00b46a73f19fd8e5f51165d2de6db21f6aa5ea0ad0061ec0f243650`
-- Created: `2026-03-17T01:33:05.994910362Z`
-- Virtual Size: ~ 1.15 Gb  
+- Image ID: `sha256:953ef14d97d72e3098aaad37271cbdaca6de77c4df433f79c58963905d4032e0`
+- Created: `2026-04-01T20:11:39.905242572Z`
+- Virtual Size: ~ 1.14 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -15,7 +15,6 @@
   - `JAVA_VERSION=17.0.9`
   - `GRADLE_VERSION=7.6.6`
 - Labels:
-  - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
 
 ## `dpkg` (`.deb`-based packages)
@@ -365,19 +364,24 @@ $ apt-get source -qq --print-uris configobj=5.0.6-5ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-5ubuntu0.1.debian.tar.xz' configobj_5.0.6-5ubuntu0.1.debian.tar.xz 8132 SHA512:969f90e9ff7110d678f838106f0feaaf324d538951f88974f76973cd54ca1a9312ae14e74aea0157213f467bd4a85322ab5b39b3284ab14fe6d95d00546cea3a
 ```
 
-### `dpkg` source package: `coreutils=8.32-4.1ubuntu1.2`
+### `dpkg` source package: `coreutils=8.32-4.1ubuntu1.3`
 
 Binary Packages:
 
-- `coreutils=8.32-4.1ubuntu1.2`
+- `coreutils=8.32-4.1ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.dsc' coreutils_8.32-4.1ubuntu1.3.dsc 2027 SHA512:ba25132bbf90edf93c1636827ea14f92643cbb530803cea5dc8a81b8b781c0d1b6eb60a0a29331dff12429a60fb8c8bd2e291da03c7a3e69f643a98fc967ff04
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz' coreutils_8.32.orig.tar.xz 5547836 SHA512:1c8f3584efd61b4b02e7ac5db8e103b63cfb2063432caaf1e64cb2dcc56d8c657d1133bbf10bd41468d6a1f31142e6caa81d16ae68fa3e6e84075c253613a145
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.debian.tar.xz' coreutils_8.32-4.1ubuntu1.3.debian.tar.xz 45556 SHA512:9a0addab05c94029ec9087b4b5c521a8380e061a45bbb1f05dd37bef7f79f6a07b15b21bd906ef31019738c0110896190959ff517ea7bd0de31a697462f66ffa
+```
 
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.23`
 
@@ -1736,11 +1740,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-173.183`
+### `dpkg` source package: `linux=5.15.0-174.184`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-173.183`
+- `linux-libc-dev:amd64=5.15.0-174.184`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1749,10 +1753,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.15.0-173.183
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-173.183.dsc' linux_5.15.0-173.183.dsc 7758 SHA512:76e13be0b5b3aed0a0ba1ebd3994087c3633ebfb2e8965124b9afc2bfc66d04d44d245e1c60f2806a351327025168e7629f6d076ff5ddc6b53cbc6203d6c0cfd
+$ apt-get source -qq --print-uris linux=5.15.0-174.184
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-174.184.dsc' linux_5.15.0-174.184.dsc 7799 SHA512:dc7a409e3d1a5c014e98060e564ec7b454b5c1384d4940da1e553eb5ce8b146d0197001b6bdca7539d75cb278df9cc72e4f02b8d930a2a3f8c1f26ecd8c71895
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-173.183.diff.gz' linux_5.15.0-173.183.diff.gz 12716083 SHA512:e3e1a065ab2897c682d92fa62229eae0e753076a27a3a5baa1e585357e991b5ed25a74aa21eb6557fe1efeb2942b5992046edd58456323cb6420a958e8fa3ac2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-174.184.diff.gz' linux_5.15.0-174.184.diff.gz 12717022 SHA512:5fc70824c4f020df754858180a6821f576ad0f9d6198fe7ed243cbeb06d7e4227a40418dfb0c58d175d59ae467460831b3e37207b6c9669e8271071275a58b36
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
@@ -2686,10 +2690,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2025b-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.dsc' tzdata_2025b-0ubuntu0.22.04.1.dsc 2541 SHA512:7e9735cd0230941067895eb4ba5ccbe881347e1114c0dcae4def86a35e66d5bbdbc35cf2d7e26936cbbe4aec1f45d546caf4d7a16143eab6ec4c3bab0dc0d280
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA512:ad39fe16b32fad7eee27ff968b4e8af23267ce586629ad70e7625136d2c3cc3a42295a87b3dc770c291aa9112c56301629c1fe379735f70008e62864ce4e735a
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz 181492 SHA512:0acbc2b6326c9b51bc10dec5cb28cfa2b66346620755388fe5ce7d87edf4e4f435804c696c7f635bea15e0d306302be789c8f8f5f65cd3b2437b3d2dd21a80c2
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.dsc' tzdata_2025b-0ubuntu0.22.04.1.dsc 2541 SHA512:7e9735cd0230941067895eb4ba5ccbe881347e1114c0dcae4def86a35e66d5bbdbc35cf2d7e26936cbbe4aec1f45d546caf4d7a16143eab6ec4c3bab0dc0d280
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA512:ad39fe16b32fad7eee27ff968b4e8af23267ce586629ad70e7625136d2c3cc3a42295a87b3dc770c291aa9112c56301629c1fe379735f70008e62864ce4e735a
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz 181492 SHA512:0acbc2b6326c9b51bc10dec5cb28cfa2b66346620755388fe5ce7d87edf4e4f435804c696c7f635bea15e0d306302be789c8f8f5f65cd3b2437b3d2dd21a80c2
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
@@ -2787,17 +2791,17 @@ $ apt-get source -qq --print-uris utf8proc=2.7.0-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.7.0-3.debian.tar.xz' utf8proc_2.7.0-3.debian.tar.xz 5608 SHA512:b0c8e5c7d348d7fa66c55872c88c8698aab33734cea340ed851a10da55f786b1ccd27098f075a72eb3711435de119873b2938a031e0de38d7b2710d024d1dc7f
 ```
 
-### `dpkg` source package: `util-linux=2.37.2-4ubuntu3.4`
+### `dpkg` source package: `util-linux=2.37.2-4ubuntu3.5`
 
 Binary Packages:
 
-- `bsdutils=1:2.37.2-4ubuntu3.4`
-- `libblkid1:amd64=2.37.2-4ubuntu3.4`
-- `libmount1:amd64=2.37.2-4ubuntu3.4`
-- `libsmartcols1:amd64=2.37.2-4ubuntu3.4`
-- `libuuid1:amd64=2.37.2-4ubuntu3.4`
-- `mount=2.37.2-4ubuntu3.4`
-- `util-linux=2.37.2-4ubuntu3.4`
+- `bsdutils=1:2.37.2-4ubuntu3.5`
+- `libblkid1:amd64=2.37.2-4ubuntu3.5`
+- `libmount1:amd64=2.37.2-4ubuntu3.5`
+- `libsmartcols1:amd64=2.37.2-4ubuntu3.5`
+- `libuuid1:amd64=2.37.2-4ubuntu3.5`
+- `mount=2.37.2-4ubuntu3.5`
+- `util-linux=2.37.2-4ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2818,9 +2822,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.37.2-4ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.dsc' util-linux_2.37.2-4ubuntu3.5.dsc 4550 SHA512:c4236797fd341679e55cf4137c5c48a1dcd22975b1f5787b1ec0fa539f3f3d7dfe559601f26501fe1227e87f623cde6e8d299ff34580bd4d25d8862e83fbecb7
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2.orig.tar.xz' util-linux_2.37.2.orig.tar.xz 5621624 SHA512:38f0fe820445e3bfa79550e6581c230f98c7661566ccc4daa51c7208a5f972c61b4e57dfc86bed074fdbc7c40bc79f856be8f6a05a8860c1c0cecc4208e8b81d
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.debian.tar.xz' util-linux_2.37.2-4ubuntu3.5.debian.tar.xz 115268 SHA512:e0cd54819b53c5787ad0f96caea67ecaf6264a656f534296487bcfd2af520c51918aef8694294602aa899808a9dc76de3d69f138b16b23170f500b2ef92db242
+```
 
 ### `dpkg` source package: `wget=1.21.2-2ubuntu1.1`
 
