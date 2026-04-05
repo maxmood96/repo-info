@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f968b89d4d970dc86b45f41f1f79b035051ad034f2b177e89932680a2719d5d0`
-- Created: `2026-03-25T13:30:21.008434951Z`
+- Image ID: `sha256:b5f350aa3536b7e634ed215ac63ef0263dc176825a92c09a576b7de14ad5e195`
+- Created: `2026-04-01T23:41:19.543568856Z`
 - Virtual Size: ~ 1.04 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=25.8.2`
+  - `NODE_VERSION=25.9.0`
   - `YARN_VERSION=1.22.22`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2844,20 +2844,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.37-3+deb11u2
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.37-3%2bdeb11u2.dsc' libpng1.6_1.6.37-3+deb11u2.dsc 2257 SHA256:d096eb4db55c57c2b4bc36218c767e9aadc9d2bcfa6dbb6e3757dbb2766dd8d4
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA256:ca74a0dace179a8422187671aee97dd3892b53e168627145271cad5b5ac81307
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.37-3%2bdeb11u2.debian.tar.xz' libpng1.6_1.6.37-3+deb11u2.debian.tar.xz 40832 SHA256:2da748a9a0aea17d990ee91417f61592ea99f0b0312802d6dfedb9080c3470f3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.37-3+deb11u2/
 
-- https://sources.debian.net/src/libpng1.6/1.6.37-3+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.37-3+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.37-3+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.0-1.2`
 
