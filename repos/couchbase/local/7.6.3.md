@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3bd1852d09678339acf49f68cad4eafaa3555f4438a7cbb19952c438bd391ecd`
-- Created: `2026-03-17T01:18:20.115093917Z`
+- Image ID: `sha256:ff7ad6ff7b1b1e37d1a78051cc22516d9c7f0a66f1ec5a3703988d470c9a1567`
+- Created: `2026-04-01T20:07:44.991112296Z`
 - Virtual Size: ~ 1.74 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,6 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install`
 - Labels:
   - `maintainer=docker@couchbase.com`
-  - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
 
 ## `dpkg` (`.deb`-based packages)
@@ -282,19 +281,24 @@ $ apt-get source -qq --print-uris cdebconf=0.261ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.261ubuntu1.tar.xz' cdebconf_0.261ubuntu1.tar.xz 297016 SHA512:6c2c8e2dccdb923ae6dc6a6b3873e6a56f6bdc4a6298c0576f60cb8d5c63bd06c4b9dac4ada4abd0d672a4e54509ad558fc9d1424a8029568d8d86cb54926390
 ```
 
-### `dpkg` source package: `coreutils=8.32-4.1ubuntu1.2`
+### `dpkg` source package: `coreutils=8.32-4.1ubuntu1.3`
 
 Binary Packages:
 
-- `coreutils=8.32-4.1ubuntu1.2`
+- `coreutils=8.32-4.1ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.dsc' coreutils_8.32-4.1ubuntu1.3.dsc 2027 SHA512:ba25132bbf90edf93c1636827ea14f92643cbb530803cea5dc8a81b8b781c0d1b6eb60a0a29331dff12429a60fb8c8bd2e291da03c7a3e69f643a98fc967ff04
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz' coreutils_8.32.orig.tar.xz 5547836 SHA512:1c8f3584efd61b4b02e7ac5db8e103b63cfb2063432caaf1e64cb2dcc56d8c657d1133bbf10bd41468d6a1f31142e6caa81d16ae68fa3e6e84075c253613a145
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.debian.tar.xz' coreutils_8.32-4.1ubuntu1.3.debian.tar.xz 45556 SHA512:9a0addab05c94029ec9087b4b5c521a8380e061a45bbb1f05dd37bef7f79f6a07b15b21bd906ef31019738c0110896190959ff517ea7bd0de31a697462f66ffa
+```
 
 ### `dpkg` source package: `couchbase-server=7.6.3-4200-1`
 
@@ -1414,11 +1418,11 @@ $ apt-get source -qq --print-uris lsb=11.1.0ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_11.1.0ubuntu4.tar.xz' lsb_11.1.0ubuntu4.tar.xz 46152 SHA512:03469c3b85facd88fb4c24b85eb42d6aeab171aa6e5860147ad947e2bbc2f2fe5f78ebd4a457f6af194d33173dccec4f672d1b9d460c070765377d9456bc73da
 ```
 
-### `dpkg` source package: `lshw=02.19.git.2021.06.19.996aaad9c7-2build1`
+### `dpkg` source package: `lshw=02.19.git.2021.06.19.996aaad9c7-2ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `lshw=02.19.git.2021.06.19.996aaad9c7-2build1`
+- `lshw=02.19.git.2021.06.19.996aaad9c7-2ubuntu0.22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/lshw/copyright`)
 
@@ -1427,10 +1431,10 @@ Licenses: (parsed from: `/usr/share/doc/lshw/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lshw=02.19.git.2021.06.19.996aaad9c7-2build1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.19.git.2021.06.19.996aaad9c7-2build1.dsc' lshw_02.19.git.2021.06.19.996aaad9c7-2build1.dsc 2250 SHA512:3f2f77c39b62445941725a8e1f10fd443fd763c4653f1e4cdcf070ad0d956b9cf421dcbf3f388a85f86328e168b9813c8be4a22564dbfecae24afa5a375f3c72
+$ apt-get source -qq --print-uris lshw=02.19.git.2021.06.19.996aaad9c7-2ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.19.git.2021.06.19.996aaad9c7-2ubuntu0.22.04.1.dsc' lshw_02.19.git.2021.06.19.996aaad9c7-2ubuntu0.22.04.1.dsc 2257 SHA512:b9fc224118e3a7757a217e3ba94181fdf218027036e78f5422137a17b54503b96f08f65e1072801b6615f98f9b611756ae223ffe830b1f9924730a099efa5ee2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.19.git.2021.06.19.996aaad9c7.orig.tar.xz' lshw_02.19.git.2021.06.19.996aaad9c7.orig.tar.xz 1734544 SHA512:75779d39119cec00454e12510c61fba252ece06e30597894d3849fad6d319bc76089f7994351a62789ce64fafdc753f38e584f3133c607e5ce4d687d35f3c2bc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.19.git.2021.06.19.996aaad9c7-2build1.debian.tar.xz' lshw_02.19.git.2021.06.19.996aaad9c7-2build1.debian.tar.xz 17744 SHA512:a72fd47b2dff8d09e5e69d6b40866521dff498bc26089bf9ce4f9ac8fe8476aa8db3e037a92023f7615a055e205c882edf066b6d213f2b525fc8e4a889c1bac7
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.19.git.2021.06.19.996aaad9c7-2ubuntu0.22.04.1.debian.tar.xz' lshw_02.19.git.2021.06.19.996aaad9c7-2ubuntu0.22.04.1.debian.tar.xz 18684 SHA512:6705d230a786923b59037285e5d64ee69613f3c2fb35a1600e9bd8e109f2345859b4af1b9aa8fff46bfc1da96fb0d65209019e9dc689a62fe0f8edde4d4e2d9b
 ```
 
 ### `dpkg` source package: `lsof=4.93.2+dfsg-1.1build2`
@@ -2130,12 +2134,9 @@ $ apt-get source -qq --print-uris sysstat=12.5.2-2ubuntu0.2
 
 Binary Packages:
 
-- `libsystemd0:amd64=249.11-0ubuntu3.17`
 - `libudev1:amd64=249.11-0ubuntu3.17`
-- `systemd=249.11-0ubuntu3.17`
-- `systemd-timesyncd=249.11-0ubuntu3.17`
 
-Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-timesyncd/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`)
 
 - `CC0-1.0`
 - `Expat`
@@ -2149,6 +2150,34 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `systemd=249.11-0ubuntu3.19`
+
+Binary Packages:
+
+- `libsystemd0:amd64=249.11-0ubuntu3.19`
+- `systemd=249.11-0ubuntu3.19`
+- `systemd-timesyncd=249.11-0ubuntu3.19`
+
+Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-timesyncd/copyright`)
+
+- `CC0-1.0`
+- `Expat`
+- `GPL-2`
+- `GPL-2 with Linux-syscall-note exception`
+- `GPL-2+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.19
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.19.dsc' systemd_249.11-0ubuntu3.19.dsc 5907 SHA512:d46fe1f092c431e4e5a7e8fccc11030fde7aaf406db0fa1a8aadf65ebbc3519e9a85be7bad9ec918b15118b557d5fe0c0f5a07f1a7bd2e8b00c0ecf4c2b9fbad
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.19.debian.tar.xz' systemd_249.11-0ubuntu3.19.debian.tar.xz 266012 SHA512:581e1a988873037088832e7d6e29a1f6dc718f410f0afbece702f104d6f30a0dcb4757c015b7a3e874cce6435d98a2fcc06a613db9bd8a63f86941dc26838e9a
+```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
@@ -2204,10 +2233,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2025b-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.dsc' tzdata_2025b-0ubuntu0.22.04.1.dsc 2541 SHA512:7e9735cd0230941067895eb4ba5ccbe881347e1114c0dcae4def86a35e66d5bbdbc35cf2d7e26936cbbe4aec1f45d546caf4d7a16143eab6ec4c3bab0dc0d280
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA512:ad39fe16b32fad7eee27ff968b4e8af23267ce586629ad70e7625136d2c3cc3a42295a87b3dc770c291aa9112c56301629c1fe379735f70008e62864ce4e735a
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz 181492 SHA512:0acbc2b6326c9b51bc10dec5cb28cfa2b66346620755388fe5ce7d87edf4e4f435804c696c7f635bea15e0d306302be789c8f8f5f65cd3b2437b3d2dd21a80c2
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.dsc' tzdata_2025b-0ubuntu0.22.04.1.dsc 2541 SHA512:7e9735cd0230941067895eb4ba5ccbe881347e1114c0dcae4def86a35e66d5bbdbc35cf2d7e26936cbbe4aec1f45d546caf4d7a16143eab6ec4c3bab0dc0d280
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA512:ad39fe16b32fad7eee27ff968b4e8af23267ce586629ad70e7625136d2c3cc3a42295a87b3dc770c291aa9112c56301629c1fe379735f70008e62864ce4e735a
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz 181492 SHA512:0acbc2b6326c9b51bc10dec5cb28cfa2b66346620755388fe5ce7d87edf4e4f435804c696c7f635bea15e0d306302be789c8f8f5f65cd3b2437b3d2dd21a80c2
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
@@ -2285,17 +2314,17 @@ $ apt-get source -qq --print-uris usrmerge=25ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_25ubuntu2.tar.xz' usrmerge_25ubuntu2.tar.xz 12812 SHA512:dac8ccc7e2b75c424990713869f80d62d22e1cd86cb35c1784c7e76a12096b8c3f3000cefb406456f6f5c459d14858e710d426ee11714d1a5e342e04186f8353
 ```
 
-### `dpkg` source package: `util-linux=2.37.2-4ubuntu3.4`
+### `dpkg` source package: `util-linux=2.37.2-4ubuntu3.5`
 
 Binary Packages:
 
-- `bsdutils=1:2.37.2-4ubuntu3.4`
-- `libblkid1:amd64=2.37.2-4ubuntu3.4`
-- `libmount1:amd64=2.37.2-4ubuntu3.4`
-- `libsmartcols1:amd64=2.37.2-4ubuntu3.4`
-- `libuuid1:amd64=2.37.2-4ubuntu3.4`
-- `mount=2.37.2-4ubuntu3.4`
-- `util-linux=2.37.2-4ubuntu3.4`
+- `bsdutils=1:2.37.2-4ubuntu3.5`
+- `libblkid1:amd64=2.37.2-4ubuntu3.5`
+- `libmount1:amd64=2.37.2-4ubuntu3.5`
+- `libsmartcols1:amd64=2.37.2-4ubuntu3.5`
+- `libuuid1:amd64=2.37.2-4ubuntu3.5`
+- `mount=2.37.2-4ubuntu3.5`
+- `util-linux=2.37.2-4ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2316,9 +2345,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.37.2-4ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.dsc' util-linux_2.37.2-4ubuntu3.5.dsc 4550 SHA512:c4236797fd341679e55cf4137c5c48a1dcd22975b1f5787b1ec0fa539f3f3d7dfe559601f26501fe1227e87f623cde6e8d299ff34580bd4d25d8862e83fbecb7
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2.orig.tar.xz' util-linux_2.37.2.orig.tar.xz 5621624 SHA512:38f0fe820445e3bfa79550e6581c230f98c7661566ccc4daa51c7208a5f972c61b4e57dfc86bed074fdbc7c40bc79f856be8f6a05a8860c1c0cecc4208e8b81d
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.debian.tar.xz' util-linux_2.37.2-4ubuntu3.5.debian.tar.xz 115268 SHA512:e0cd54819b53c5787ad0f96caea67ecaf6264a656f534296487bcfd2af520c51918aef8694294602aa899808a9dc76de3d69f138b16b23170f500b2ef92db242
+```
 
 ### `dpkg` source package: `wget=1.21.2-2ubuntu1.1`
 
