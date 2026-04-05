@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f83a8e6c32d2f39e8caa3a92ebcebf1edc927a1afbd6d161c17df4f55e746c09`
-- Created: `2026-03-17T02:30:03.022650784Z`
+- Image ID: `sha256:20267922e5c1ae699030e17279cc135bd9d3045bcfed7cf593c5b692d30d36af`
+- Created: `2026-04-01T20:21:20.371389856Z`
 - Virtual Size: ~ 2.87 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,6 @@
   - `build=1`
   - `description=Image to install and to run Silverpeas 6.4.6`
   - `name=Silverpeas 6.4.6`
-  - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
   - `vendor=Silverpeas`
   - `version=6.4.6`
@@ -384,11 +383,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5build1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5build1.debian.tar.bz2' bzip2_1.0.8-5build1.debian.tar.bz2 26870 SHA512:e030c257c3458d780fd0ffc6f328efd69d0e875e81acd7441a7c6651194ebded61017c96aad7c99061f93d50dfc33056abe98c9a599abc900f49d51c4a1eed6f
 ```
 
-### `dpkg` source package: `ca-certificates-java=20190909ubuntu1.2`
+### `dpkg` source package: `ca-certificates-java=20190909ubuntu1.3`
 
 Binary Packages:
 
-- `ca-certificates-java=20190909ubuntu1.2`
+- `ca-certificates-java=20190909ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
@@ -397,9 +396,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates-java=20190909ubuntu1.2
-'http://security.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20190909ubuntu1.2.dsc' ca-certificates-java_20190909ubuntu1.2.dsc 1903 SHA512:032b574ee3b55656a248c02c4186942e92d2e35e598481b01ab253a16f00883faad5ef1a063666c7e62f307189713e81b5c82612a02c93e24b040930f01e97be
-'http://security.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20190909ubuntu1.2.tar.xz' ca-certificates-java_20190909ubuntu1.2.tar.xz 17588 SHA512:b020e1121c82bc37b916c0a6a70f5d326dbc0dbf703507ae58911841207d22a1de3fe98b7ec5595c1179bb23ccf496563570f426a730bbf378493c5bf7b2a0d2
+$ apt-get source -qq --print-uris ca-certificates-java=20190909ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20190909ubuntu1.3.dsc' ca-certificates-java_20190909ubuntu1.3.dsc 1903 SHA512:4cdf27d7e8dfcca636bb59bc2836a0b3505d03a4a76e609133b6b51274a8b7104d56742ce3de7fcc06a0a7ef6064aada4f7de15547b92c521abadf8dc6f0d716
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20190909ubuntu1.3.tar.xz' ca-certificates-java_20190909ubuntu1.3.tar.xz 17812 SHA512:1ff0286ccc5d9063ae829439af8f2508ab0fe7442c5a4c1f9693fbeb1f2ecc1cb86e937e6f31213d3c515fcb9b75a01fb5e09e9b624e2981c1a60082333d3109
 ```
 
 ### `dpkg` source package: `ca-certificates=20240203~22.04.1`
@@ -422,12 +421,12 @@ $ apt-get source -qq --print-uris ca-certificates=20240203~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20240203%7e22.04.1.tar.xz' ca-certificates_20240203~22.04.1.tar.xz 263132 SHA512:64e97c5b258dfede258dd9b447d2a1f5a43db0e70309bb4e0259b8ed9d103e1a751fb563bb4902460667385d38325945e806726aa6db8876920dff670034f3f1
 ```
 
-### `dpkg` source package: `cairo=1.16.0-5ubuntu2`
+### `dpkg` source package: `cairo=1.16.0-5ubuntu2.1`
 
 Binary Packages:
 
-- `libcairo-gobject2:amd64=1.16.0-5ubuntu2`
-- `libcairo2:amd64=1.16.0-5ubuntu2`
+- `libcairo-gobject2:amd64=1.16.0-5ubuntu2.1`
+- `libcairo2:amd64=1.16.0-5ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/share/doc/libcairo2/copyright`)
 
@@ -436,10 +435,10 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cairo=1.16.0-5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.16.0-5ubuntu2.dsc' cairo_1.16.0-5ubuntu2.dsc 2880 SHA512:e9415592136e7f42794f20d8c74fed895347a95d3ffd89621440c1e12212f65083926613e87fc6ad6df8f669058dc20ad12b2e1bdee2d7a7f85ec0b7c0dd4e26
+$ apt-get source -qq --print-uris cairo=1.16.0-5ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.16.0-5ubuntu2.1.dsc' cairo_1.16.0-5ubuntu2.1.dsc 2838 SHA512:35ebe44e8464fd64b789be309e1bf25b108878a27081f80ea74e6ace698b4876b5ab9e75f64f5bace556c9fcb20fa0839b183af53cbdd48fbcdb1ff344d0688b
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.16.0.orig.tar.xz' cairo_1.16.0.orig.tar.xz 41997432 SHA512:9eb27c4cf01c0b8b56f2e15e651f6d4e52c99d0005875546405b64f1132aed12fbf84727273f493d84056a13105e065009d89e94a8bfaf2be2649e232b82377f
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.16.0-5ubuntu2.debian.tar.xz' cairo_1.16.0-5ubuntu2.debian.tar.xz 33368 SHA512:d51b6655b5ea60420bb80252fbcfe2e31cbef6242043457195eab60716b84dc9ae68eb4de95214b10a5ec6d5675891067a4940b58c2249602f0f355b9d31d8d4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.16.0-5ubuntu2.1.debian.tar.xz' cairo_1.16.0-5ubuntu2.1.debian.tar.xz 35940 SHA512:cf90fbc96bf39e67f171e84f585b86573b8f31cd257e2f4c468d4f054512f8e1acbfd8dcee6a0735a7158e8a2a6128f79e4e96b5a64be0be99193a1c334dec54
 ```
 
 ### `dpkg` source package: `cdebconf=0.261ubuntu1`
@@ -528,19 +527,24 @@ $ apt-get source -qq --print-uris codec2=1.0.1-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/codec2/codec2_1.0.1-3.debian.tar.xz' codec2_1.0.1-3.debian.tar.xz 135608 SHA512:9e73eec0d45176227f1dff6c6dca50cc2b14813e0840441e3416c6de015a2aff6da357b0ee8a01c52f0f185ad7faf548ddc5696f180f03cc555c401fecb0f128
 ```
 
-### `dpkg` source package: `coreutils=8.32-4.1ubuntu1.2`
+### `dpkg` source package: `coreutils=8.32-4.1ubuntu1.3`
 
 Binary Packages:
 
-- `coreutils=8.32-4.1ubuntu1.2`
+- `coreutils=8.32-4.1ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.dsc' coreutils_8.32-4.1ubuntu1.3.dsc 2027 SHA512:ba25132bbf90edf93c1636827ea14f92643cbb530803cea5dc8a81b8b781c0d1b6eb60a0a29331dff12429a60fb8c8bd2e291da03c7a3e69f643a98fc967ff04
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz' coreutils_8.32.orig.tar.xz 5547836 SHA512:1c8f3584efd61b4b02e7ac5db8e103b63cfb2063432caaf1e64cb2dcc56d8c657d1133bbf10bd41468d6a1f31142e6caa81d16ae68fa3e6e84075c253613a145
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.debian.tar.xz' coreutils_8.32-4.1ubuntu1.3.debian.tar.xz 45556 SHA512:9a0addab05c94029ec9087b4b5c521a8380e061a45bbb1f05dd37bef7f79f6a07b15b21bd906ef31019738c0110896190959ff517ea7bd0de31a697462f66ffa
+```
 
 ### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.16`
 
@@ -1504,11 +1508,11 @@ $ apt-get source -qq --print-uris grep=3.7-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.7-1build1.debian.tar.xz' grep_3.7-1build1.debian.tar.xz 18184 SHA512:cbefc3635a0b0acc33d8a052d3ca7d583adbd1bcfc384559076b5e4f5508b4a8301b0dd54a029aecbab925a6f916c99a2d5bebe0a6936fe5ffeb5a07a0d9a917
 ```
 
-### `dpkg` source package: `gst-plugins-base1.0=1.20.1-1ubuntu0.5`
+### `dpkg` source package: `gst-plugins-base1.0=1.20.1-1ubuntu0.6`
 
 Binary Packages:
 
-- `libgstreamer-plugins-base1.0-0:amd64=1.20.1-1ubuntu0.5`
+- `libgstreamer-plugins-base1.0-0:amd64=1.20.1-1ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright`)
 
@@ -1519,9 +1523,14 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gst-plugins-base1.0=1.20.1-1ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.6.dsc' gst-plugins-base1.0_1.20.1-1ubuntu0.6.dsc 3796 SHA512:bd8d94a5eee50c549d0ccaf13144bc5a15fe32f0d7daffe8ae332d0fa9e3ad5ab27c7f32f8755fb55cd5c53f1269b016a17dbee7f97fa2c8835b7b97e3cb6ab5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1.orig.tar.xz' gst-plugins-base1.0_1.20.1.orig.tar.xz 3290068 SHA512:679a0eee1973fa9612e2e24978e2c2d9d8fdc5732e1699b4a87712881f1549d0811719a13ff4fe77b91322ca4425c39623b371703f6b3a36fb7238b977d3e541
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.6.debian.tar.xz' gst-plugins-base1.0_1.20.1-1ubuntu0.6.debian.tar.xz 52584 SHA512:fdc712672a99e3034d4a06a5dff5d32dc88a6bb277165b75e279173cddbfd4413d0a5b35d3387ad3569eaec7a467d280b8470e4a8c9c8ea9a533c26426674372
+```
 
 ### `dpkg` source package: `gstreamer1.0=1.20.3-0ubuntu1.1`
 
@@ -6323,19 +6332,25 @@ $ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.04.2.debian.tar.xz 20544 SHA512:9840407a1364154c831665c3f1739c80a84806567fe5ad27ee3ac70f4c18e27d7f2f9e0557b6e2a634ab39449a8fc95b96f1813f5c203df8ece5226a6afe8c7c
 ```
 
-### `dpkg` source package: `tiff=4.3.0-6ubuntu0.12`
+### `dpkg` source package: `tiff=4.3.0-6ubuntu0.13`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.3.0-6ubuntu0.12`
+- `libtiff5:amd64=4.3.0-6ubuntu0.13`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.13
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.13.dsc' tiff_4.3.0-6ubuntu0.13.dsc 2402 SHA512:b7ad1983cf6397e41231ab0050fa6757a18fe2aa95cea926925574ffdd5e0e636c49a810b46d180c337036de8ea04e5d506807f8642e91f53804b83e231ec5fe
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.13.debian.tar.xz' tiff_4.3.0-6ubuntu0.13.debian.tar.xz 53840 SHA512:2fbf8913cac1fa7d81e6f065fdfee494a54fbbcdd2a7e3725d772287bd5169dcdb70e6a758158b72d7292234f94c754c153f4265f27cbeaed6f6cb7c8dadaf73
+```
 
 ### `dpkg` source package: `twolame=0.4.0-2build2`
 
@@ -6371,10 +6386,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2025b-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.dsc' tzdata_2025b-0ubuntu0.22.04.1.dsc 2541 SHA512:7e9735cd0230941067895eb4ba5ccbe881347e1114c0dcae4def86a35e66d5bbdbc35cf2d7e26936cbbe4aec1f45d546caf4d7a16143eab6ec4c3bab0dc0d280
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA512:ad39fe16b32fad7eee27ff968b4e8af23267ce586629ad70e7625136d2c3cc3a42295a87b3dc770c291aa9112c56301629c1fe379735f70008e62864ce4e735a
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz 181492 SHA512:0acbc2b6326c9b51bc10dec5cb28cfa2b66346620755388fe5ce7d87edf4e4f435804c696c7f635bea15e0d306302be789c8f8f5f65cd3b2437b3d2dd21a80c2
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.dsc' tzdata_2025b-0ubuntu0.22.04.1.dsc 2541 SHA512:7e9735cd0230941067895eb4ba5ccbe881347e1114c0dcae4def86a35e66d5bbdbc35cf2d7e26936cbbe4aec1f45d546caf4d7a16143eab6ec4c3bab0dc0d280
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA512:ad39fe16b32fad7eee27ff968b4e8af23267ce586629ad70e7625136d2c3cc3a42295a87b3dc770c291aa9112c56301629c1fe379735f70008e62864ce4e735a
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz 181492 SHA512:0acbc2b6326c9b51bc10dec5cb28cfa2b66346620755388fe5ce7d87edf4e4f435804c696c7f635bea15e0d306302be789c8f8f5f65cd3b2437b3d2dd21a80c2
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
@@ -6452,17 +6467,17 @@ $ apt-get source -qq --print-uris usrmerge=25ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_25ubuntu2.tar.xz' usrmerge_25ubuntu2.tar.xz 12812 SHA512:dac8ccc7e2b75c424990713869f80d62d22e1cd86cb35c1784c7e76a12096b8c3f3000cefb406456f6f5c459d14858e710d426ee11714d1a5e342e04186f8353
 ```
 
-### `dpkg` source package: `util-linux=2.37.2-4ubuntu3.4`
+### `dpkg` source package: `util-linux=2.37.2-4ubuntu3.5`
 
 Binary Packages:
 
-- `bsdutils=1:2.37.2-4ubuntu3.4`
-- `libblkid1:amd64=2.37.2-4ubuntu3.4`
-- `libmount1:amd64=2.37.2-4ubuntu3.4`
-- `libsmartcols1:amd64=2.37.2-4ubuntu3.4`
-- `libuuid1:amd64=2.37.2-4ubuntu3.4`
-- `mount=2.37.2-4ubuntu3.4`
-- `util-linux=2.37.2-4ubuntu3.4`
+- `bsdutils=1:2.37.2-4ubuntu3.5`
+- `libblkid1:amd64=2.37.2-4ubuntu3.5`
+- `libmount1:amd64=2.37.2-4ubuntu3.5`
+- `libsmartcols1:amd64=2.37.2-4ubuntu3.5`
+- `libuuid1:amd64=2.37.2-4ubuntu3.5`
+- `mount=2.37.2-4ubuntu3.5`
+- `util-linux=2.37.2-4ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -6483,18 +6498,23 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.37.2-4ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.dsc' util-linux_2.37.2-4ubuntu3.5.dsc 4550 SHA512:c4236797fd341679e55cf4137c5c48a1dcd22975b1f5787b1ec0fa539f3f3d7dfe559601f26501fe1227e87f623cde6e8d299ff34580bd4d25d8862e83fbecb7
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2.orig.tar.xz' util-linux_2.37.2.orig.tar.xz 5621624 SHA512:38f0fe820445e3bfa79550e6581c230f98c7661566ccc4daa51c7208a5f972c61b4e57dfc86bed074fdbc7c40bc79f856be8f6a05a8860c1c0cecc4208e8b81d
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.debian.tar.xz' util-linux_2.37.2-4ubuntu3.5.debian.tar.xz 115268 SHA512:e0cd54819b53c5787ad0f96caea67ecaf6264a656f534296487bcfd2af520c51918aef8694294602aa899808a9dc76de3d69f138b16b23170f500b2ef92db242
+```
 
-### `dpkg` source package: `vim=2:8.2.3995-1ubuntu2.24`
+### `dpkg` source package: `vim=2:8.2.3995-1ubuntu2.26`
 
 Binary Packages:
 
-- `vim=2:8.2.3995-1ubuntu2.24`
-- `vim-common=2:8.2.3995-1ubuntu2.24`
-- `vim-runtime=2:8.2.3995-1ubuntu2.24`
-- `xxd=2:8.2.3995-1ubuntu2.24`
+- `vim=2:8.2.3995-1ubuntu2.26`
+- `vim-common=2:8.2.3995-1ubuntu2.26`
+- `vim-runtime=2:8.2.3995-1ubuntu2.26`
+- `xxd=2:8.2.3995-1ubuntu2.26`
 
 Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/vim-runtime/copyright`, `/usr/share/doc/xxd/copyright`)
 
@@ -6524,9 +6544,14 @@ Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-comm
 - `XPM`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris vim=2:8.2.3995-1ubuntu2.26
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995-1ubuntu2.26.dsc' vim_8.2.3995-1ubuntu2.26.dsc 2859 SHA512:ef681f7766beac0e3fdcb759cf920624650895232c0830e12a51225b232b09929b8af8959f9f6f257146931ba1fef398e6c4357522a9e9ee517cee57ea88042d
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995.orig.tar.xz' vim_8.2.3995.orig.tar.xz 10377164 SHA512:2326b3484858c92f55076bcd2336290cc292b35c9a8963e3b14e7140dd1fe36179fe8431d71b0121f8345dac3627c80cd016899aa6120f3354fa882144a28b07
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995-1ubuntu2.26.debian.tar.xz' vim_8.2.3995-1ubuntu2.26.debian.tar.xz 310600 SHA512:91c246f43b32ea16407f755779f4970ded56ca55b0adb470d6cda0713bfe1ada3aec1ab1cc55cd929cc46e44319c75e1b354ad56d4978ca0cddbe1292fc53f5d
+```
 
 ### `dpkg` source package: `wayland=1.20.0-1ubuntu0.1`
 
