@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad9dfeb15cf9dd0010a9ddd7e4938e03a6c544adb4a84edc2b3ebf14219bbe3f`
-- Created: `2026-02-02T19:19:20.001901089Z`
-- Virtual Size: ~ 214.92 Mb  
+- Image ID: `sha256:4866304546cd1c6d056b4d5e205407d4abaa3e015ad0ef0a105d8555849752f2`
+- Created: `2026-04-03T17:04:33.060542829Z`
+- Virtual Size: ~ 215.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["raku"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin`
-  - `rakudo_version=2026.01-01`
+  - `rakudo_version=2026.02-01`
 
 ## `apk` (`.apk`-based packages)
 
@@ -272,16 +272,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.3-r0 description:
+libexpat-2.7.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.3-r0 webpage:
+libexpat-2.7.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.3-r0 installed size:
+libexpat-2.7.5-r0 installed size:
 133 KiB
 
-libexpat-2.7.3-r0 license:
+libexpat-2.7.5-r0 license:
 MIT
 
 ```
