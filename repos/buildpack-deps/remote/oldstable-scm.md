@@ -1,7 +1,7 @@
 ## `buildpack-deps:oldstable-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:2c14894a045f765f841aac1a0f4030a671632d68c1dafccde0c3cdcc85cc9141
+$ docker pull buildpack-deps@sha256:bd9c4a3249e057aebeb294e37f41fe5bac23c4398bb746b42156fcbc939b603a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -321,56 +321,56 @@ $ docker pull buildpack-deps@sha256:321ca0988914e8a48dfc0025c07b985943811297dc89
 ### `buildpack-deps:oldstable-scm` - linux; mips64le
 
 ```console
-$ docker pull buildpack-deps@sha256:8242e5f88cf12019c84731425495b8bf67a0c28499ee18026162c79834d0d85d
+$ docker pull buildpack-deps@sha256:73b61e07215a42a847ec7407f96ca84b74b350d3e6792adc0e347dce2b46c345
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.7 MB (135707598 bytes)**  
+-	Total Size: **135.7 MB (135707915 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:12806cd449482851c416b19b2202bc56a8bdb0162e27a5284ce817b9eee6fe83`
+-	Image ID: `sha256:0e01ce3cdb32424d2af694072eec6901872e59ec88b888d8dcf5228ea45b0ca0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 16 Mar 2026 00:00:00 GMT
-RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1773619200'
-# Tue, 17 Mar 2026 09:32:19 GMT
+# Mon, 06 Apr 2026 00:00:00 GMT
+RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1775433600'
+# Tue, 07 Apr 2026 15:01:02 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Mar 2026 15:09:28 GMT
+# Tue, 07 Apr 2026 20:27:00 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
-	-	`sha256:55bd01c42402ce77937fae9abfba9b351fd4b3fab7f1f58eccf5b2fcf0ac8978`  
-		Last Modified: Mon, 16 Mar 2026 21:51:11 GMT  
-		Size: 48.8 MB (48782288 bytes)  
+	-	`sha256:7a9b4a7963b008240d9a254ca4fd1193c938bed0a9c6fe9c04630f13b1a17a44`  
+		Last Modified: Tue, 07 Apr 2026 00:09:37 GMT  
+		Size: 48.8 MB (48782593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a46874b19723e755d13ba2292477f479fd221937f5480b97990afd32f94b3d6`  
-		Last Modified: Tue, 17 Mar 2026 09:32:54 GMT  
-		Size: 23.6 MB (23615153 bytes)  
+	-	`sha256:e5370b42611bdad35bb24b3e5a6a342f00eb8523dc8562b7babeca6f19608f4c`  
+		Last Modified: Tue, 07 Apr 2026 15:01:37 GMT  
+		Size: 23.6 MB (23615262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:510757183cb1996fa93fc6110a5644d68f4a47cbb4c8f08c9a7376b57b6600e1`  
-		Last Modified: Tue, 17 Mar 2026 15:10:46 GMT  
-		Size: 63.3 MB (63310157 bytes)  
+	-	`sha256:df968e8deea10f7e740272ffa34126abe9d9673e41bbeb7f3f0d785055e19a4d`  
+		Last Modified: Tue, 07 Apr 2026 20:28:18 GMT  
+		Size: 63.3 MB (63310060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:oldstable-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:bbf79f59b3dd31266a8876fe21634e7487cf7e4b08f047a4561255c65bcc4f24
+$ docker pull buildpack-deps@sha256:e619bc61e501434dd27f89110c66abe62b87fe084d2dd79996da2c81d2db7845
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.1 KB (7143 bytes)**  
+-	Total Size: **7.1 KB (7142 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88b9618533f00e2b4661c2b37e387740ca639c5a019735a2b4aaf454d7c341f2`
+-	Image ID: `sha256:62eb03865a3ba5d604dab939e5da79123bbb7f3252f2efb99033e650760c86ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0f356c461d423df37fcd9e1cd6b67069fb806fd113d981e9533d1c824d2ee9d0`  
-		Last Modified: Tue, 17 Mar 2026 15:10:40 GMT  
-		Size: 7.1 KB (7143 bytes)  
+	-	`sha256:3b4c25d28e0a67edfdedd2916913199c314710196e1321eb9860fd2d06dc106e`  
+		Last Modified: Tue, 07 Apr 2026 20:28:11 GMT  
+		Size: 7.1 KB (7142 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:oldstable-scm` - linux; ppc64le
