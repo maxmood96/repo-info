@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7cdd31773ce057908dfe7cab1b4aacc0e6f58c2d95a6b546ce029d4652d5412e`
-- Created: `2026-03-24T23:10:57.374833547Z`
-- Virtual Size: ~ 169.43 Mb  
+- Image ID: `sha256:2a82e7d3cd8bcf9f1b27db4950317710606a70345df1d1f28afdd35e7807b17e`
+- Created: `2026-04-07T02:38:50.138823319Z`
+- Virtual Size: ~ 169.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1932,11 +1932,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libmd/1.1.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libmd/1.1.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u3`
+### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u4`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.48-1+deb13u3`
+- `libpng16-16t64:amd64=1.6.48-1+deb13u4`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -1952,17 +1952,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u3
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u3.dsc' libpng1.6_1.6.48-1+deb13u3.dsc 2305 SHA256:a65071c790b9c8e5bb5eea8ad9fa93c844045c85cec86ac73f6cc34a57c1b9e5
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u3.debian.tar.xz' libpng1.6_1.6.48-1+deb13u3.debian.tar.xz 41976 SHA256:44669e466062d3ed1bc4a2b52b6e45899945d9327e380cdfc38d888d5aa8caca
+$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u4
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u4.dsc' libpng1.6_1.6.48-1+deb13u4.dsc 2286 SHA256:b220c572561d36d334d755c189390fde61291d833828761d82454b512b2d61bc
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u4.debian.tar.xz' libpng1.6_1.6.48-1+deb13u4.debian.tar.xz 46420 SHA256:dd9b025d82ba032d544ba56e301b05601f20104e7d36fcb2006082b104b50a3c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u3/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u4/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
