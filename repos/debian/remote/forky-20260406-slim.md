@@ -1,4 +1,4 @@
-## `debian:forky-slim`
+## `debian:forky-20260406-slim`
 
 ```console
 $ docker pull debian@sha256:b7359d57e5994019490688c67033dd46c6106e482ee12101e6942a54434013db
@@ -21,7 +21,7 @@ $ docker pull debian@sha256:b7359d57e5994019490688c67033dd46c6106e482ee12101e694
 	-	linux; s390x
 	-	unknown; unknown
 
-### `debian:forky-slim` - linux; amd64
+### `debian:forky-20260406-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:993b9a8c028899cb819ddd131cc90a3915c3361ddf9ccfe75c89bb1acc990d2b
@@ -44,7 +44,7 @@ RUN # debian.sh --arch 'amd64' out/ 'forky' '@1775433600'
 		Size: 29.2 MB (29219679 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:forky-slim` - unknown; unknown
+### `debian:forky-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:17b2e2a0f8ea19303c5b6db9d272a778482f30abd7feab232a8c876e10c46f57
@@ -64,7 +64,7 @@ $ docker pull debian@sha256:17b2e2a0f8ea19303c5b6db9d272a778482f30abd7feab232a8c
 		Size: 2.0 MB (1953080 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:forky-slim` - linux; arm variant v7
+### `debian:forky-20260406-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:18912ddff45665546b02eadfe041b79c6cd4854cbd62b02a07c55f3cdc0fedf2
@@ -87,7 +87,7 @@ RUN # debian.sh --arch 'armhf' out/ 'forky' '@1775433600'
 		Size: 26.2 MB (26172762 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:forky-slim` - unknown; unknown
+### `debian:forky-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:658a715a7f79c4c30c494aa7de10e96f42a75666b8e421bf082706434aaffb3a
@@ -107,7 +107,7 @@ $ docker pull debian@sha256:658a715a7f79c4c30c494aa7de10e96f42a75666b8e421bf0827
 		Size: 2.0 MB (1954429 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:forky-slim` - linux; arm64 variant v8
+### `debian:forky-20260406-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:4de003c7bbaa2e626e66aa73ae2ddd3db8805ac3b901e9494cc2c77b09f1400f
@@ -130,7 +130,7 @@ RUN # debian.sh --arch 'arm64' out/ 'forky' '@1775433600'
 		Size: 29.3 MB (29266010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:forky-slim` - unknown; unknown
+### `debian:forky-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:698f8566aad77cea1dc77308ecd5ef99df42f5665877037771718601885858d8
@@ -150,7 +150,7 @@ $ docker pull debian@sha256:698f8566aad77cea1dc77308ecd5ef99df42f566587703777171
 		Size: 2.0 MB (1953335 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:forky-slim` - linux; 386
+### `debian:forky-20260406-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:33919f0c5b80192008afc5249ba84de7d7d2c60b11767b95b50cf9e044076c13
@@ -173,7 +173,7 @@ RUN # debian.sh --arch 'i386' out/ 'forky' '@1775433600'
 		Size: 30.5 MB (30507890 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:forky-slim` - unknown; unknown
+### `debian:forky-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:98e45e7bf5f5ed31d07b1d6976e295e6e0751be855af5a9de592b748e1967254
@@ -193,7 +193,7 @@ $ docker pull debian@sha256:98e45e7bf5f5ed31d07b1d6976e295e6e0751be855af5a9de592
 		Size: 2.0 MB (1950308 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:forky-slim` - linux; ppc64le
+### `debian:forky-20260406-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:70106ce8a81f20030b9db0198014fe86f6ec5e5f3320efefdaaf4553e4b70dd7
@@ -216,7 +216,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'forky' '@1775433600'
 		Size: 34.5 MB (34478329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:forky-slim` - unknown; unknown
+### `debian:forky-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:6cd88f6bb6a6eec01b988370e12a02d9430cdcfe23ea700c5545cc62fce74e96
@@ -236,7 +236,7 @@ $ docker pull debian@sha256:6cd88f6bb6a6eec01b988370e12a02d9430cdcfe23ea700c5545
 		Size: 2.0 MB (1956535 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:forky-slim` - linux; riscv64
+### `debian:forky-20260406-slim` - linux; riscv64
 
 ```console
 $ docker pull debian@sha256:9014b767551123cfc2924378ad73879b4d286ad9cdc4821493ca4e43c149843b
@@ -259,7 +259,7 @@ RUN # debian.sh --arch 'riscv64' out/ 'forky' '@1775433600'
 		Size: 27.3 MB (27329812 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:forky-slim` - unknown; unknown
+### `debian:forky-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:4caf462f8f3f32c86d5ffe22c2821772a93b2ed6f056eba33c23da2ab03909ce
@@ -279,7 +279,7 @@ $ docker pull debian@sha256:4caf462f8f3f32c86d5ffe22c2821772a93b2ed6f056eba33c23
 		Size: 1.9 MB (1946936 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:forky-slim` - linux; s390x
+### `debian:forky-20260406-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:76e8bb18ed6f329e9c1134f94ce278e629c87c77c098cc1b7399eff5b008d34f
@@ -302,7 +302,7 @@ RUN # debian.sh --arch 's390x' out/ 'forky' '@1775433600'
 		Size: 28.9 MB (28925551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:forky-slim` - unknown; unknown
+### `debian:forky-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:c952d968a9eb74815d67fca747fc72cef2b89143fccf3dbae6f5bc4eede5f822

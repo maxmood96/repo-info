@@ -1,4 +1,4 @@
-## `debian:13-slim`
+## `debian:trixie-20260406-slim`
 
 ```console
 $ docker pull debian@sha256:4ffb3a1511099754cddc70eb1b12e50ffdb67619aa0ab6c13fcd800a78ef7c7a
@@ -23,7 +23,7 @@ $ docker pull debian@sha256:4ffb3a1511099754cddc70eb1b12e50ffdb67619aa0ab6c13fcd
 	-	linux; s390x
 	-	unknown; unknown
 
-### `debian:13-slim` - linux; amd64
+### `debian:trixie-20260406-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:5fb70129351edec3723d13f427400ecae3f13b83750e23ad47c46721effcf2db
@@ -46,7 +46,7 @@ RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1775433600'
 		Size: 29.8 MB (29775640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:13-slim` - unknown; unknown
+### `debian:trixie-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:8bb2cf66db990103088b8894c447b1d5bbd4c4fc1b3c3b75279ce6b9b1c51be4
@@ -66,7 +66,7 @@ $ docker pull debian@sha256:8bb2cf66db990103088b8894c447b1d5bbd4c4fc1b3c3b75279c
 		Size: 2.0 MB (1976041 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:13-slim` - linux; arm variant v5
+### `debian:trixie-20260406-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:fbe4ecb2effbeb562756cc6ab9625c41963e8449c541be37ae5dcfcb4b0cdf77
@@ -89,7 +89,7 @@ RUN # debian.sh --arch 'armel' out/ 'trixie' '@1775433600'
 		Size: 27.9 MB (27943808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:13-slim` - unknown; unknown
+### `debian:trixie-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:64821cd422dcacc83097ae555c96f578a4ac991aa9a96327939e12da60779a69
@@ -109,7 +109,7 @@ $ docker pull debian@sha256:64821cd422dcacc83097ae555c96f578a4ac991aa9a96327939e
 		Size: 2.0 MB (1978965 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:13-slim` - linux; arm variant v7
+### `debian:trixie-20260406-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:26dde3a683985f6f2e8fad99acc45601ab388d55ac2967dea22c7c2f94638683
@@ -132,7 +132,7 @@ RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1775433600'
 		Size: 26.2 MB (26209653 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:13-slim` - unknown; unknown
+### `debian:trixie-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:4afd8fc42558954e4c9b059f2f17ea6b26b95d4a11fd88ea1674d6fcffcfbc01
@@ -152,7 +152,7 @@ $ docker pull debian@sha256:4afd8fc42558954e4c9b059f2f17ea6b26b95d4a11fd88ea1674
 		Size: 2.0 MB (1977402 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:13-slim` - linux; arm64 variant v8
+### `debian:trixie-20260406-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:27c9a4272205cdaccb6451774ddedb9ad443b8fa8051f3a983264ee219e22b23
@@ -175,7 +175,7 @@ RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1775433600'
 		Size: 30.1 MB (30138551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:13-slim` - unknown; unknown
+### `debian:trixie-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:49a2786cb8b98b9f5b99fdc44ba3b3dea735c463d8e92580e2a2f12c7b25294b
@@ -195,7 +195,7 @@ $ docker pull debian@sha256:49a2786cb8b98b9f5b99fdc44ba3b3dea735c463d8e92580e2a2
 		Size: 2.0 MB (1976244 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:13-slim` - linux; 386
+### `debian:trixie-20260406-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:918bc7bcda74e7ed51e0777746f2697bfb23a0d55f1f547d896f8955c3b8ef6a
@@ -218,7 +218,7 @@ RUN # debian.sh --arch 'i386' out/ 'trixie' '@1775433600'
 		Size: 31.3 MB (31291252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:13-slim` - unknown; unknown
+### `debian:trixie-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:0bddd1e737b557cccda73fa06d1ddd54c73e8fa84cf6f96738388ef88c939c33
@@ -238,7 +238,7 @@ $ docker pull debian@sha256:0bddd1e737b557cccda73fa06d1ddd54c73e8fa84cf6f9673838
 		Size: 2.0 MB (1973261 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:13-slim` - linux; ppc64le
+### `debian:trixie-20260406-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:08c55c173ea7894b6c807b487a681a156b347ec76def22d0c17fea3356f8d470
@@ -261,7 +261,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1775433600'
 		Size: 33.6 MB (33593016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:13-slim` - unknown; unknown
+### `debian:trixie-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:9fe34bef00612057c17d6ee668e77fd66c7a24767fb6cae635cabb4e1ca4874a
@@ -281,7 +281,7 @@ $ docker pull debian@sha256:9fe34bef00612057c17d6ee668e77fd66c7a24767fb6cae635ca
 		Size: 2.0 MB (1979524 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:13-slim` - linux; riscv64
+### `debian:trixie-20260406-slim` - linux; riscv64
 
 ```console
 $ docker pull debian@sha256:5d32e604e986a90ad5b879faf471d48f0621e71eedacc9f56e8bc9fec099fd54
@@ -304,7 +304,7 @@ RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1775433600'
 		Size: 28.3 MB (28275778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:13-slim` - unknown; unknown
+### `debian:trixie-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:a1741526cddf8dceab11d5882cf32e5775698f8b9c1c3e584ba2b4dfa38e6ecd
@@ -324,7 +324,7 @@ $ docker pull debian@sha256:a1741526cddf8dceab11d5882cf32e5775698f8b9c1c3e584ba2
 		Size: 2.0 MB (1969927 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:13-slim` - linux; s390x
+### `debian:trixie-20260406-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:b09ac33dfad9563562e6ce53db5aa0d7826b572e9db1ac2e3dfd5dbf8186cc11
@@ -347,7 +347,7 @@ RUN # debian.sh --arch 's390x' out/ 'trixie' '@1775433600'
 		Size: 29.8 MB (29835418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:13-slim` - unknown; unknown
+### `debian:trixie-20260406-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:af234e264a799496d36687d14610d7f78b7d8a05d9a0ebd0e84ed51358c4547d
