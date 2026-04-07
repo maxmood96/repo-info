@@ -1,10 +1,10 @@
-# `joomla:6.0.3-php8.4-fpm-alpine`
+# `joomla:6.0.4-php8.4-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:90bf69cfe04daf887b12c32ff0d1a4588fe5e4ed9918fb8806d31aea8b58f1c6`
-- Created: `2026-03-13T00:16:33.486755013Z`
-- Virtual Size: ~ 298.27 Mb  
+- Image ID: `sha256:a9d0d7a9657f81b7e2dcf2dbdd4e036a1553c19ecaa2fd28515a3998f0f2b5d8`
+- Created: `2026-04-06T18:04:10.652686036Z`
+- Virtual Size: ~ 298.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.19.tar.xz.asc`
   - `PHP_SHA256=11f7164ab26d356c31f94d3d69cc0e0707d5d2d6494a221aaeae307c08eaaa1c`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=6.0.3`
-  - `JOOMLA_SHA512=2390bd8b741e948d8b5b93b14b16a7aa7d6e60b8d0a18eb678be5ae11b664cfd375def9a8398b979a7fdcbe8eb30b75ae0ef25d95fcbd11a5f435450c8a75608`
+  - `JOOMLA_VERSION=6.0.4`
+  - `JOOMLA_SHA512=c1d98a550c43dbbd68b9be369352f015a05e858d6e163e5fdb909fa40563d34dee268f2fcb64b122deb8bb025b4c6af27d391e26563a58a3350c4875a2e1b3e8`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -576,16 +576,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.15-r0 description:
+imagemagick-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.15-r0 webpage:
+imagemagick-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.15-r0 installed size:
-3675 KiB
+imagemagick-7.1.2.17-r0 installed size:
+3687 KiB
 
-imagemagick-7.1.2.15-r0 license:
+imagemagick-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -593,16 +593,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.15-r0 description:
+imagemagick-jp2-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.15-r0 webpage:
+imagemagick-jp2-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.15-r0 installed size:
+imagemagick-jp2-7.1.2.17-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.15-r0 license:
+imagemagick-jp2-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -610,16 +610,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.15-r0 description:
+imagemagick-jpeg-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.15-r0 webpage:
+imagemagick-jpeg-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.15-r0 installed size:
+imagemagick-jpeg-7.1.2.17-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.15-r0 license:
+imagemagick-jpeg-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -627,16 +627,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.15-r0 description:
+imagemagick-libs-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.15-r0 webpage:
+imagemagick-libs-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.15-r0 installed size:
-4249 KiB
+imagemagick-libs-7.1.2.17-r0 installed size:
+4257 KiB
 
-imagemagick-libs-7.1.2.15-r0 license:
+imagemagick-libs-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -644,16 +644,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.15-r0 description:
+imagemagick-pdf-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.15-r0 webpage:
+imagemagick-pdf-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.15-r0 installed size:
+imagemagick-pdf-7.1.2.17-r0 installed size:
 121 KiB
 
-imagemagick-pdf-7.1.2.15-r0 license:
+imagemagick-pdf-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -661,16 +661,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.15-r0 description:
+imagemagick-tiff-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.15-r0 webpage:
+imagemagick-tiff-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.15-r0 installed size:
+imagemagick-tiff-7.1.2.17-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.2.15-r0 license:
+imagemagick-tiff-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -678,16 +678,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.15-r0 description:
+imagemagick-webp-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.15-r0 webpage:
+imagemagick-webp-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.15-r0 installed size:
+imagemagick-webp-7.1.2.17-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.15-r0 license:
+imagemagick-webp-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -848,16 +848,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.4-r0 description:
+libexpat-2.7.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.4-r0 webpage:
+libexpat-2.7.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.4-r0 installed size:
+libexpat-2.7.5-r0 installed size:
 133 KiB
 
-libexpat-2.7.4-r0 license:
+libexpat-2.7.5-r0 license:
 MIT
 
 ```
@@ -1086,16 +1086,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.55-r0 description:
+libpng-1.6.56-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.55-r0 webpage:
+libpng-1.6.56-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.55-r0 installed size:
-177 KiB
+libpng-1.6.56-r0 installed size:
+181 KiB
 
-libpng-1.6.55-r0 license:
+libpng-1.6.56-r0 license:
 Libpng
 
 ```
