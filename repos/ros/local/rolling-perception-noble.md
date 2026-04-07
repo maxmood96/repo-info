@@ -3531,15 +3531,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13t64/copyright`)
 - `OpenSSL+SSLeay`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.7.2-2ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.5.dsc' libarchive_3.7.2-2ubuntu0.5.dsc 2558 SHA512:e79445b3eaf1f19733ff9032f30ea854ff8749d3c33edc3f308d3c4a13af2fb38180ae4986f7dbc8060bf613ebdfd335839e6791f0281e8a7653025a478b06e3
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz' libarchive_3.7.2.orig.tar.xz 5237056 SHA512:a21bebb27b808cb7d2ed13a70739904a1b7b55661d8dea83c9897a0129cf71e20c962f13666c571782ff0f4f753ca885619c2097d9e7691c2dee4e6e4b9a2971
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz.asc' libarchive_3.7.2.orig.tar.xz.asc 659 SHA512:c2ce850088245d7723720737d74d1cc1819984d01b3f9e4ed96b0757f4c6d6d511b78792181a12400c563632d74edcd0c2c3a4b7527cba40ada7ef74488078fc
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.5.debian.tar.xz' libarchive_3.7.2-2ubuntu0.5.debian.tar.xz 34236 SHA512:5b91c3314610755887e439998c5c4d5a3c016e83068c81a9a8c0c07e2d30cfd2c84c0c59674ecff25dea838fbbe4fb98cface151d2f05f95e62f80b06b9bcd1a
-```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
 
