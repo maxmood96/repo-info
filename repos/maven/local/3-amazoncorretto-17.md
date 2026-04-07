@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f0a83b1dc837ea0047cbfd057d414396e4a78ce6b1a23cf2edcf9fbd0d5c39a`
-- Created: `2026-03-17T03:46:40.90056552Z`
-- Virtual Size: ~ 1.02 Gb  
+- Image ID: `sha256:07f43cacaee4a0a133c016615c0cc00a382aa03ecec42056e34cf65ba0a63f72`
+- Created: `2026-04-07T05:07:59.759539928Z`
+- Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -1295,15 +1295,15 @@ $ dnf --quiet download --source --url pyliblzma-0.5.3-25.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11fa660d12e87d634746f13807724be1cedc5b3d36d7f18a8f7c456b58ccee81/../../../../../blobstore/860af43ebf61fc4b2c6c02ec914630e76e68197a77f6b7318b92f5059c7673d1/pyliblzma-0.5.3-25.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-2.7.18-1.amzn2.0.16.x86_64`
+### `rpm` package: `python-2.7.18-1.amzn2.0.17.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.16
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11fa660d12e87d634746f13807724be1cedc5b3d36d7f18a8f7c456b58ccee81/../../../../../blobstore/28f93ca1468150f63d51ec01b3803e7a9212eb119f6b45aee075eccddcfb028a/python-2.7.18-1.amzn2.0.16.src.rpm
+$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.17
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11fa660d12e87d634746f13807724be1cedc5b3d36d7f18a8f7c456b58ccee81/../../../../../blobstore/69f52e2e97d4fccc5a2a1649369493fd70dfbf1071bea63301ec061ae70b3c4d/python-2.7.18-1.amzn2.0.17.src.rpm
 ```
 
 ### `rpm` package: `python-iniparse-0.4-9.amzn2.noarch`
@@ -1317,15 +1317,15 @@ $ dnf --quiet download --source --url python-iniparse-0.4-9.amzn2.noarch
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11fa660d12e87d634746f13807724be1cedc5b3d36d7f18a8f7c456b58ccee81/../../../../../blobstore/c44ed4bc8040ce8e74624bd74404387f1c5320ee6b6d975a81e358ab7919b11a/python-iniparse-0.4-9.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-libs-2.7.18-1.amzn2.0.16.x86_64`
+### `rpm` package: `python-libs-2.7.18-1.amzn2.0.17.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.16
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11fa660d12e87d634746f13807724be1cedc5b3d36d7f18a8f7c456b58ccee81/../../../../../blobstore/28f93ca1468150f63d51ec01b3803e7a9212eb119f6b45aee075eccddcfb028a/python-2.7.18-1.amzn2.0.16.src.rpm
+$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.17
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11fa660d12e87d634746f13807724be1cedc5b3d36d7f18a8f7c456b58ccee81/../../../../../blobstore/69f52e2e97d4fccc5a2a1649369493fd70dfbf1071bea63301ec061ae70b3c4d/python-2.7.18-1.amzn2.0.17.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-19.amzn2.0.2.x86_64`
@@ -1526,15 +1526,15 @@ $ dnf --quiet download --source --url tar-1.26-35.amzn2.0.4
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11fa660d12e87d634746f13807724be1cedc5b3d36d7f18a8f7c456b58ccee81/../../../../../blobstore/3b8c768a35cd5e74262981801949409fe7f858b60551129dc34dd70ba7a6c92c/tar-1.26-35.amzn2.0.4.src.rpm
 ```
 
-### `rpm` package: `tzdata-2025c-1.amzn2.0.1.noarch`
+### `rpm` package: `tzdata-2026a-1.amzn2.0.1.noarch`
 
-Licenses (from `rpm --query`): Public Domain
+Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain AND (GPL-2.0-only WITH ClassPath-exception-2.0)
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2025c-1.amzn2.0.1.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11fa660d12e87d634746f13807724be1cedc5b3d36d7f18a8f7c456b58ccee81/../../../../../blobstore/6808977be8bc9d8c1399dd3d0791f7c1ac1944a9496fbc866d1e8e48734165d3/tzdata-2025c-1.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url tzdata-2026a-1.amzn2.0.1.noarch
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11fa660d12e87d634746f13807724be1cedc5b3d36d7f18a8f7c456b58ccee81/../../../../../blobstore/846cccc90714edef84ec46b81b9b33be3e9222428bc7201284ead03dc3143538/tzdata-2026a-1.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `ustr-1.0.4-16.amzn2.0.3.x86_64`
