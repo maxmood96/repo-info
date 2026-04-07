@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0919cefbc5b0a7cfe2983b3b9a834ed29eb7e28b40df6ad506738a008e637253`
-- Created: `2026-03-17T00:20:02.749279583Z`
+- Image ID: `sha256:6e63b3a5a835cb3eea498f1a0bf221c74c7d4db63e5d184c7cb9c88bdb74c20d`
+- Created: `2026-04-07T03:23:25.517345692Z`
 - Virtual Size: ~ 834.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2823,12 +2823,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libnsl/1.3.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libnsl/1.3.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.37-3+deb11u2`
+### `dpkg` source package: `libpng1.6=1.6.37-3+deb11u3`
 
 Binary Packages:
 
-- `libpng-dev:amd64=1.6.37-3+deb11u2`
-- `libpng16-16:amd64=1.6.37-3+deb11u2`
+- `libpng-dev:amd64=1.6.37-3+deb11u3`
+- `libpng16-16:amd64=1.6.37-3+deb11u3`
 
 Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/libpng16-16/copyright`)
 
@@ -2841,13 +2841,20 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libpng1.6=1.6.37-3+deb11u3
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.37-3%2bdeb11u3.dsc' libpng1.6_1.6.37-3+deb11u3.dsc 2257 SHA256:e6d98f927c1998d63737ebfaa6a2abe12bdbe559163ae657dea4b4357c2fe1f1
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA256:ca74a0dace179a8422187671aee97dd3892b53e168627145271cad5b5ac81307
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.37-3%2bdeb11u3.debian.tar.xz' libpng1.6_1.6.37-3+deb11u3.debian.tar.xz 44908 SHA256:362923e895dfd9300cb935a3997e51784b0506cec40b2332e0a726a110c3de31
+```
 
-- http://snapshot.debian.org/package/libpng1.6/1.6.37-3+deb11u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libpng1.6/1.6.37-3+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.37-3+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.37-3+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.0-1.2`
 

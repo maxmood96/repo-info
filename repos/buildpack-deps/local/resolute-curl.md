@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f4bbda63097d3fae1baac493896581e2c5793d6797bafa4c91539b323c358737`
-- Created: `2026-04-01T20:05:35.977763976Z`
-- Virtual Size: ~ 148.62 Mb  
+- Image ID: `sha256:2d333511f87ed89841549bbb1a19c2d4c7eda2391fefe044ea15475e573dff23`
+- Created: `2026-04-07T01:47:27.910282483Z`
+- Virtual Size: ~ 148.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.created=2026-04-01T04:01:06.856839+00:00`
+  - `org.opencontainers.image.created=2026-04-04T04:05:33.447700+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -514,11 +514,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.12-1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.12-1.debian.tar.xz' diffutils_3.12-1.debian.tar.xz 14752 SHA512:e2054eac9f98935f28d8335e2d06ac7ee55bf9d1f0ea0d4ff0eed2efe2e2cb2e717d732f04a6197027a8146e78931cc13bbb96dc3223cbdecb4e259549125515
 ```
 
-### `dpkg` source package: `dpkg=1.23.6ubuntu2`
+### `dpkg` source package: `dpkg=1.23.7ubuntu1`
 
 Binary Packages:
 
-- `dpkg=1.23.6ubuntu2`
+- `dpkg=1.23.7ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -529,9 +529,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dpkg=1.23.6ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.23.6ubuntu2.dsc' dpkg_1.23.6ubuntu2.dsc 3482 SHA512:fcc183eb85b329c161f2dd88797e6aa248b07d496cddd41bda6d37fa85d36307b568406348408ea7ee8fb425faea111cb32fe680414ac1110527e8707dc681b2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.23.6ubuntu2.tar.xz' dpkg_1.23.6ubuntu2.tar.xz 5774512 SHA512:50c165788262cdfc8b6dfc34fdea1793ae9ebb7ba93643bfeeacfd3622bdf0355f1c7503a293509ba3ccb0b2fb2b310c7e3cbe8f425b6d58022577c00255642d
+$ apt-get source -qq --print-uris dpkg=1.23.7ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.23.7ubuntu1.dsc' dpkg_1.23.7ubuntu1.dsc 3482 SHA512:b8af1554884f9057bfca85a0dc20a7c18f6ef1773b4ab423148360b069b99bed9624c8fdbbf9c0cc0626df9ea993b3f833ba7c2112c12157fd4d7696b3e8dc3a
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.23.7ubuntu1.tar.xz' dpkg_1.23.7ubuntu1.tar.xz 5773036 SHA512:94489c924b7d8588ea156fc9593fb576c1fce1b6e159d5095aacbea33c257459af523f77a5c471bbf54f3fb7787c554e90705e40d048db28c00d2e756525c6df
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.47.2-3ubuntu4`

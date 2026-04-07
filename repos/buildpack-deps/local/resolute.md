@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:305094f186e578732c7964700186f181d4e7a888d2f89b19478fd595eaa42b15`
-- Created: `2026-04-01T21:05:29.38766062Z`
-- Virtual Size: ~ 796.13 Mb  
+- Image ID: `sha256:c7732c3a432edc4489e3fd488c9028d39998fc8c5e4abaa8cb1b7b822ebb547e`
+- Created: `2026-04-07T03:23:48.648497652Z`
+- Virtual Size: ~ 795.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.created=2026-04-01T04:01:06.856839+00:00`
+  - `org.opencontainers.image.created=2026-04-04T04:05:33.447700+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -769,13 +769,13 @@ $ apt-get source -qq --print-uris djvulibre=3.5.29-1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.29-1.debian.tar.xz' djvulibre_3.5.29-1.debian.tar.xz 16780 SHA512:3180f3d9bc8fe344fd94429accd72eb89c151ed8e94ed8fcda7514f121efc84d9235313673b5c2dd8422503a7a36fb97ff74053a8add754591897cf64080741c
 ```
 
-### `dpkg` source package: `dpkg=1.23.6ubuntu2`
+### `dpkg` source package: `dpkg=1.23.7ubuntu1`
 
 Binary Packages:
 
-- `dpkg=1.23.6ubuntu2`
-- `dpkg-dev=1.23.6ubuntu2`
-- `libdpkg-perl=1.23.6ubuntu2`
+- `dpkg=1.23.7ubuntu1`
+- `dpkg-dev=1.23.7ubuntu1`
+- `libdpkg-perl=1.23.7ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-dev/copyright`, `/usr/share/doc/libdpkg-perl/copyright`)
 
@@ -786,9 +786,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dpkg=1.23.6ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.23.6ubuntu2.dsc' dpkg_1.23.6ubuntu2.dsc 3482 SHA512:fcc183eb85b329c161f2dd88797e6aa248b07d496cddd41bda6d37fa85d36307b568406348408ea7ee8fb425faea111cb32fe680414ac1110527e8707dc681b2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.23.6ubuntu2.tar.xz' dpkg_1.23.6ubuntu2.tar.xz 5774512 SHA512:50c165788262cdfc8b6dfc34fdea1793ae9ebb7ba93643bfeeacfd3622bdf0355f1c7503a293509ba3ccb0b2fb2b310c7e3cbe8f425b6d58022577c00255642d
+$ apt-get source -qq --print-uris dpkg=1.23.7ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.23.7ubuntu1.dsc' dpkg_1.23.7ubuntu1.dsc 3482 SHA512:b8af1554884f9057bfca85a0dc20a7c18f6ef1773b4ab423148360b069b99bed9624c8fdbbf9c0cc0626df9ea993b3f833ba7c2112c12157fd4d7696b3e8dc3a
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.23.7ubuntu1.tar.xz' dpkg_1.23.7ubuntu1.tar.xz 5773036 SHA512:94489c924b7d8588ea156fc9593fb576c1fce1b6e159d5095aacbea33c257459af523f77a5c471bbf54f3fb7787c554e90705e40d048db28c00d2e756525c6df
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.47.2-3ubuntu4`
@@ -1598,23 +1598,23 @@ $ apt-get source -qq --print-uris hostname=3.25build1
 'http://archive.ubuntu.com/ubuntu/pool/main/h/hostname/hostname_3.25build1.tar.xz' hostname_3.25build1.tar.xz 12896 SHA512:b99c6e870198c1be17e5a4e68cecfe40e1f28b1e43595ab960c79afdd94877f0e34903dbb33d845060fa76e9ed64298c250bd27a03446ba6e0b61d135ed97e11
 ```
 
-### `dpkg` source package: `imagemagick=8:7.1.2.16+dfsg1-1`
+### `dpkg` source package: `imagemagick=8:7.1.2.18+dfsg1-1`
 
 Binary Packages:
 
-- `imagemagick=8:7.1.2.16+dfsg1-1`
-- `imagemagick-7-common=8:7.1.2.16+dfsg1-1`
-- `imagemagick-7.q16=8:7.1.2.16+dfsg1-1`
-- `libmagickcore-7-arch-config:amd64=8:7.1.2.16+dfsg1-1`
-- `libmagickcore-7-headers=8:7.1.2.16+dfsg1-1`
-- `libmagickcore-7.q16-10:amd64=8:7.1.2.16+dfsg1-1`
-- `libmagickcore-7.q16-10-extra:amd64=8:7.1.2.16+dfsg1-1`
-- `libmagickcore-7.q16-dev:amd64=8:7.1.2.16+dfsg1-1`
-- `libmagickcore-dev=8:7.1.2.16+dfsg1-1`
-- `libmagickwand-7-headers=8:7.1.2.16+dfsg1-1`
-- `libmagickwand-7.q16-10:amd64=8:7.1.2.16+dfsg1-1`
-- `libmagickwand-7.q16-dev:amd64=8:7.1.2.16+dfsg1-1`
-- `libmagickwand-dev=8:7.1.2.16+dfsg1-1`
+- `imagemagick=8:7.1.2.18+dfsg1-1`
+- `imagemagick-7-common=8:7.1.2.18+dfsg1-1`
+- `imagemagick-7.q16=8:7.1.2.18+dfsg1-1`
+- `libmagickcore-7-arch-config:amd64=8:7.1.2.18+dfsg1-1`
+- `libmagickcore-7-headers=8:7.1.2.18+dfsg1-1`
+- `libmagickcore-7.q16-10:amd64=8:7.1.2.18+dfsg1-1`
+- `libmagickcore-7.q16-10-extra:amd64=8:7.1.2.18+dfsg1-1`
+- `libmagickcore-7.q16-dev:amd64=8:7.1.2.18+dfsg1-1`
+- `libmagickcore-dev=8:7.1.2.18+dfsg1-1`
+- `libmagickwand-7-headers=8:7.1.2.18+dfsg1-1`
+- `libmagickwand-7.q16-10:amd64=8:7.1.2.18+dfsg1-1`
+- `libmagickwand-7.q16-dev:amd64=8:7.1.2.18+dfsg1-1`
+- `libmagickwand-dev=8:7.1.2.18+dfsg1-1`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/share/doc/imagemagick-7.q16/copyright`, `/usr/share/doc/libmagickcore-7-arch-config/copyright`, `/usr/share/doc/libmagickcore-7-headers/copyright`, `/usr/share/doc/libmagickcore-7.q16-10/copyright`, `/usr/share/doc/libmagickcore-7.q16-10-extra/copyright`, `/usr/share/doc/libmagickcore-7.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-7-headers/copyright`, `/usr/share/doc/libmagickwand-7.q16-10/copyright`, `/usr/share/doc/libmagickwand-7.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -1644,13 +1644,14 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/imagemagick/8:7.1.2.16+dfsg1-1/
-
+```console
+$ apt-get source -qq --print-uris imagemagick=8:7.1.2.18+dfsg1-1
+'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.2.18%2bdfsg1-1.dsc' imagemagick_7.1.2.18+dfsg1-1.dsc 5202 SHA512:4b028784fb63e6680bc1e9c4edac26ad5d4431b5297465731e5244d26888c2a048d58f37fcd6bfc29c34035189fc5e2e33eaa7f3ed99bade73709e62bb37d06f
+'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.2.18%2bdfsg1.orig.tar.xz' imagemagick_7.1.2.18+dfsg1.orig.tar.xz 10531512 SHA512:e25e6783e110a84aa5a0f2fdbc4837dc8d449f36efa4125f9d49ff50fb029221ea90812e78eef75cdd512596c9bc793dbdbec2c6b76e799e686ec9a7dfbb977c
+'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.2.18%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.2.18+dfsg1-1.debian.tar.xz 271492 SHA512:971e8c86e48453f24b4496daf137c839cf1c87068ea64e3faa705fb2dece12fb0e6672cc2c131026e72c4f2b4d7b14a1b5ae1bc55317f435002cc91db338372e
+```
 
 ### `dpkg` source package: `imath=3.1.12-1ubuntu5`
 
@@ -3105,11 +3106,11 @@ $ apt-get source -qq --print-uris libzstd=1.5.7+dfsg-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg-3.debian.tar.xz' libzstd_1.5.7+dfsg-3.debian.tar.xz 23164 SHA512:c96d7ca533284c04a1c74362b206eface7460f24ce8cea18c6ebe6109d0d264ccd57ad23a3d11684a0810c5f879de455f197f3f8d88941ac420d0b6e25dfe388
 ```
 
-### `dpkg` source package: `linux=7.0.0-10.10`
+### `dpkg` source package: `linux=7.0.0-12.12`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=7.0.0-10.10`
+- `linux-libc-dev:amd64=7.0.0-12.12`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3118,9 +3119,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=7.0.0-10.10
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-10.10.dsc' linux_7.0.0-10.10.dsc 7161 SHA512:8ef97649b1384f9ae46e741c2c05215b2a8f87f43773e90868c2f250a0314bfd0070d9cc0d57b212328d45229adeb86085830c231e9b331ba795a96433801ecc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-10.10.tar.gz' linux_7.0.0-10.10.tar.gz 263758683 SHA512:2a88cb181f180da2ece7aeba9160aa0ddb04f9f44ce82bb0fc07f8a16106bf272149f937a37bbb090ff58c7ca1b89740b6afc07d32a34c5fcf09809013109e4e
+$ apt-get source -qq --print-uris linux=7.0.0-12.12
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-12.12.dsc' linux_7.0.0-12.12.dsc 7618 SHA512:8142e90a95db73f93f4b6507910281a62ec0e6fd0badababb11e69f6d9e8ad8fe4f231014c3e95cb2fd4abbf50e8db1648c493208a311aa3e154a3615a467db9
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-12.12.tar.gz' linux_7.0.0-12.12.tar.gz 263845119 SHA512:0c16edd7ae8ecab9bea018febfb891238fcb0fd972987cfdd8ca082ab17239550c7cfe6feed06be1737bcb3a2d05881cadddd4cdd39078ca3b420b2f52209caa
 ```
 
 ### `dpkg` source package: `lto-disabled-list=79`
