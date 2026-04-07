@@ -1,10 +1,10 @@
-# `debian:oldoldstable`
+# `debian:bullseye-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:37deb4fdee302692d6c16f37d2149b790d63b7cc28acbaa3e2f16fb0569b325a`
-- Created: `2026-03-16T00:00:00Z`
-- Virtual Size: ~ 124.32 Mb  
+- Image ID: `sha256:44499ebb18a385091d1cf41e2b4c4d124d6839e31638d80971f5c6922bc27834`
+- Created: `2026-04-06T00:00:00Z`
+- Virtual Size: ~ 80.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
