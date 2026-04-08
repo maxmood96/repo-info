@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:39f8c0adb65b11a3221bb19bb15afabdfdcc96dfb0c89478a1bbbd2fdffea2be`
-- Created: `2026-03-23T22:05:30.110357574Z`
+- Image ID: `sha256:10e00b89fbf0596b55704ba5c7d7ed48254e55137c43f3104bd5d49b3741719f`
+- Created: `2026-04-07T03:12:09.944704674Z`
 - Virtual Size: ~ 356.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1899,21 +1899,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.18-1~deb12u2
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18-1%7edeb12u2.dsc' openssl_3.0.18-1~deb12u2.dsc 2539 SHA256:506cc0573793b9e6b7f2f8fc7467ec36ade27bff46c6eed0c4244e29c682735f
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18.orig.tar.gz' openssl_3.0.18.orig.tar.gz 15348046 SHA256:d80c34f5cf902dccf1f1b5df5ebb86d0392e37049e5d73df1b3abae72e4ffe8b
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18.orig.tar.gz.asc' openssl_3.0.18.orig.tar.gz.asc 833 SHA256:2e6cdbdf18511d435bac10990be4a789f769b321c0db734c234cd736a73674de
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18-1%7edeb12u2.debian.tar.xz' openssl_3.0.18-1~deb12u2.debian.tar.xz 60008 SHA256:d98e15795a2c379039e62ec061ca750c310d3e7c962812bc15677d5e2dcf1794
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.0.18-1~deb12u2/
 
-- https://sources.debian.net/src/openssl/3.0.18-1~deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.18-1~deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.18-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
