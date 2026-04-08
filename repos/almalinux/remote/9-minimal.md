@@ -1,7 +1,7 @@
 ## `almalinux:9-minimal`
 
 ```console
-$ docker pull almalinux@sha256:27858957170709e8b4114d4772c323e700c863e56716de705206f4f7aa66caef
+$ docker pull almalinux@sha256:fb3377c233c7797b84cd18ccfc479fbb5fb8321d0e997bb12e10cd204ef5649b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -116,49 +116,49 @@ $ docker pull almalinux@sha256:9056a32d24f2187cd0f183335ee548dd3dd3d4bfa8b3e31ed
 ### `almalinux:9-minimal` - linux; ppc64le
 
 ```console
-$ docker pull almalinux@sha256:d5390f3b2fed6f55869b503d604c9ec62993297362019b1bf36f04123142560e
+$ docker pull almalinux@sha256:0ebe1ecc05d64158273611faf8083ab76bc4c84d44b8557fdcd5474e119189e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.4 MB (40429167 bytes)**  
+-	Total Size: **40.4 MB (40429137 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb866b9305af22bd2ab29c10175314315c0084f8855f0cc5aed57d12163d945e`
+-	Image ID: `sha256:ecc3c1b4fbe9bf4234e31195538260eba4188a0125574f7bc2bbd13a8268544c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 30 Mar 2026 18:10:39 GMT
+# Tue, 07 Apr 2026 21:26:25 GMT
 ADD almalinux-9-minimal-ppc64le.tar.xz / # buildkit
-# Mon, 30 Mar 2026 18:10:39 GMT
+# Tue, 07 Apr 2026 21:26:25 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:1348d4ac3fb5ed8f66a8c630df28f8ee6839fd69e1e18717da0428f3f0809597`  
-		Last Modified: Mon, 30 Mar 2026 15:37:40 GMT  
-		Size: 40.4 MB (40429167 bytes)  
+	-	`sha256:a29e28d64c7567ed69525fbce69690213f3e063884ae17b426ad54dad6d17598`  
+		Last Modified: Tue, 07 Apr 2026 13:53:07 GMT  
+		Size: 40.4 MB (40429137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `almalinux:9-minimal` - unknown; unknown
 
 ```console
-$ docker pull almalinux@sha256:4db88f2bde9734fdc47ce04805388f8e701fde578c4756d5af8d8446cf5442ab
+$ docker pull almalinux@sha256:fded4524f75380507f9c35855c019b06002af95cf5cb0496c48f7bc88b3aa624
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.1 MB (2109799 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f081af163c0b17b63731c4dc25430dc59b20a3dfe493b8ed547f6d018820ceee`
+-	Image ID: `sha256:390c6f74eb29d480d7f41656da3f3402e3a9f97c46100b3512e811a5c8d3fc5b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43d974c247000da71e6d368a2168e8e2a09fa0a0e75e10cbdae73a7937ef65fb`  
-		Last Modified: Mon, 30 Mar 2026 18:11:00 GMT  
+	-	`sha256:7acd025b4b1bfa743b94ea670b1e448a062418f1d508dadcc48afa9f25d10443`  
+		Last Modified: Tue, 07 Apr 2026 21:26:52 GMT  
 		Size: 2.1 MB (2104258 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:05c7a3a1d16a826d4bf78fd5f3949088991f40c756f26ba9ba74cc02e218fccd`  
-		Last Modified: Mon, 30 Mar 2026 18:10:59 GMT  
+	-	`sha256:f247990860a754fcf5ca62403fe175e2723eb8d3f8c0641f3b29532501ef066a`  
+		Last Modified: Tue, 07 Apr 2026 21:26:52 GMT  
 		Size: 5.5 KB (5541 bytes)  
 		MIME: application/vnd.in-toto+json
 
