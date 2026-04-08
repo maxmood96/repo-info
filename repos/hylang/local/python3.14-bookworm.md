@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1651f1b432159f2aa6187079a2b047bd9a7e43ca76e9334748edcffa9abb94ab`
-- Created: `2026-03-16T23:42:05.050430442Z`
-- Virtual Size: ~ 133.35 Mb  
+- Image ID: `sha256:a7871ea6ed810f38c61b84b798f8014e5d5e5c05c3a2066c7482e4c6ee5a6b8e`
+- Created: `2026-04-08T18:13:28.73002788Z`
+- Virtual Size: ~ 133.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.14.3`
-  - `PYTHON_SHA256=a97d5549e9ad81fe17159ed02c68774ad5d266c72f8d9a0b5a9c371fe85d902b`
+  - `PYTHON_VERSION=3.14.4`
+  - `PYTHON_SHA256=d923c51303e38e249136fc1bdf3568d56ecb03214efdef48516176d3d7faaef8`
   - `HY_VERSION=1.2.0`
   - `HYRULE_VERSION=1.0.1`
 
@@ -1540,12 +1540,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.8.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.18-1~deb12u2`
+### `dpkg` source package: `openssl=3.0.19-1~deb12u2`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.18-1~deb12u2`
-- `openssl=3.0.18-1~deb12u2`
+- `libssl3:amd64=3.0.19-1~deb12u2`
+- `openssl=3.0.19-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -1557,18 +1557,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.18-1~deb12u2
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18-1%7edeb12u2.dsc' openssl_3.0.18-1~deb12u2.dsc 2539 SHA256:506cc0573793b9e6b7f2f8fc7467ec36ade27bff46c6eed0c4244e29c682735f
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18.orig.tar.gz' openssl_3.0.18.orig.tar.gz 15348046 SHA256:d80c34f5cf902dccf1f1b5df5ebb86d0392e37049e5d73df1b3abae72e4ffe8b
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18.orig.tar.gz.asc' openssl_3.0.18.orig.tar.gz.asc 833 SHA256:2e6cdbdf18511d435bac10990be4a789f769b321c0db734c234cd736a73674de
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18-1%7edeb12u2.debian.tar.xz' openssl_3.0.18-1~deb12u2.debian.tar.xz 60008 SHA256:d98e15795a2c379039e62ec061ca750c310d3e7c962812bc15677d5e2dcf1794
+$ apt-get source -qq --print-uris openssl=3.0.19-1~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.19-1%7edeb12u2.dsc' openssl_3.0.19-1~deb12u2.dsc 2539 SHA256:41e248cd9117c13ab0b7fdd2b54451630697c07bf2428dba2cc604e397d79fe6
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.19.orig.tar.gz' openssl_3.0.19.orig.tar.gz 15280904 SHA256:fa5a4143b8aae18be53ef2f3caf29a2e0747430b8bc74d32d88335b94ab63072
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.19.orig.tar.gz.asc' openssl_3.0.19.orig.tar.gz.asc 833 SHA256:06da7f8f3e4663f58aaa86001923077b0fc98ebffe0673e1d2d733b0f0405d68
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.19-1%7edeb12u2.debian.tar.xz' openssl_3.0.19-1~deb12u2.debian.tar.xz 65088 SHA256:0c6c01d2a92f6b5f02fed230047461d2e8069f0112505686f51e4c9c8d8d5b8d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.0.18-1~deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.18-1~deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.18-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.0.19-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.19-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.19-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 

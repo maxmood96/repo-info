@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d652a4841a275f8a65002a172bdf30017f334b36ed667870b0dc7f4e5ebcf9f7`
-- Created: `2026-03-17T00:26:05.548007148Z`
-- Virtual Size: ~ 145.15 Mb  
+- Image ID: `sha256:7a8402bb8525089d83a4f80af57aa925a4290dff106070bd152575a901b7ac87`
+- Created: `2026-04-07T03:34:13.828188929Z`
+- Virtual Size: ~ 145.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -1684,21 +1684,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.18-1~deb12u2
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18-1%7edeb12u2.dsc' openssl_3.0.18-1~deb12u2.dsc 2539 SHA256:506cc0573793b9e6b7f2f8fc7467ec36ade27bff46c6eed0c4244e29c682735f
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18.orig.tar.gz' openssl_3.0.18.orig.tar.gz 15348046 SHA256:d80c34f5cf902dccf1f1b5df5ebb86d0392e37049e5d73df1b3abae72e4ffe8b
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18.orig.tar.gz.asc' openssl_3.0.18.orig.tar.gz.asc 833 SHA256:2e6cdbdf18511d435bac10990be4a789f769b321c0db734c234cd736a73674de
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.18-1%7edeb12u2.debian.tar.xz' openssl_3.0.18-1~deb12u2.debian.tar.xz 60008 SHA256:d98e15795a2c379039e62ec061ca750c310d3e7c962812bc15677d5e2dcf1794
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.0.18-1~deb12u2/
 
-- https://sources.debian.net/src/openssl/3.0.18-1~deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.18-1~deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.18-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
