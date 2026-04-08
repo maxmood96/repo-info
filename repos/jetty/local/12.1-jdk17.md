@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e0c37b9e4df24005f8b397cb7e14fc1036f5912e60a489636fa89e08ba498d88`
-- Created: `2026-04-02T18:38:50.23552939Z`
+- Image ID: `sha256:4dd53083861f71adfedfa7db431e6087d804f95f272547de61a22cb3cf2fed7d`
+- Created: `2026-04-07T02:50:41.707383276Z`
 - Virtual Size: ~ 474.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,7 +23,6 @@
   - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.8/jetty-home-12.1.8.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3`
 - Labels:
-  - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
 
 ## `dpkg` (`.deb`-based packages)
@@ -203,18 +202,18 @@ $ apt-get source -qq --print-uris bash=5.2.21-2ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.21-2ubuntu4.debian.tar.xz' bash_5.2.21-2ubuntu4.debian.tar.xz 94124 SHA512:cbe580880995984a6ceb6c980d2fa87bbb1ace85d834a147ce39eaf44692af654c2c537716a19c8ed21b20e8abad9240d3f3349cc51020aeba2cd6e490802725
 ```
 
-### `dpkg` source package: `binutils=2.42-4ubuntu2.8`
+### `dpkg` source package: `binutils=2.42-4ubuntu2.10`
 
 Binary Packages:
 
-- `binutils=2.42-4ubuntu2.8`
-- `binutils-common:amd64=2.42-4ubuntu2.8`
-- `binutils-x86-64-linux-gnu=2.42-4ubuntu2.8`
-- `libbinutils:amd64=2.42-4ubuntu2.8`
-- `libctf-nobfd0:amd64=2.42-4ubuntu2.8`
-- `libctf0:amd64=2.42-4ubuntu2.8`
-- `libgprofng0:amd64=2.42-4ubuntu2.8`
-- `libsframe1:amd64=2.42-4ubuntu2.8`
+- `binutils=2.42-4ubuntu2.10`
+- `binutils-common:amd64=2.42-4ubuntu2.10`
+- `binutils-x86-64-linux-gnu=2.42-4ubuntu2.10`
+- `libbinutils:amd64=2.42-4ubuntu2.10`
+- `libctf-nobfd0:amd64=2.42-4ubuntu2.10`
+- `libctf0:amd64=2.42-4ubuntu2.10`
+- `libgprofng0:amd64=2.42-4ubuntu2.10`
+- `libsframe1:amd64=2.42-4ubuntu2.10`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`, `/usr/share/doc/libgprofng0/copyright`, `/usr/share/doc/libsframe1/copyright`)
 
@@ -225,10 +224,10 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 Source:
 
 ```console
-$ apt-get source -qq --print-uris binutils=2.42-4ubuntu2.8
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.8.dsc' binutils_2.42-4ubuntu2.8.dsc 10148 SHA512:be5a842fcc21200b65dac1f276a61edab9107ce3720e0f8742125d07e4244e4040718719a84ff6c5daeb0b1c2575a57b1c4f824dc996bd4dd8271c4613fb1adc
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42.orig.tar.xz' binutils_2.42.orig.tar.xz 27567160 SHA512:155f3ba14cd220102f4f29a4f1e5cfee3c48aa03b74603460d05afb73c70d6657a9d87eee6eb88bf13203fe6f31177a5c9addc04384e956e7da8069c8ecd20a6
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.8.debian.tar.xz' binutils_2.42-4ubuntu2.8.debian.tar.xz 189180 SHA512:3d7e00b2e49b6b50293fbf2933dfaa98f5ed9f290d807507bdc1f7e361248c45eefe48207c3f4e20340fcfa1d7e1d28bad2c148d36e30a573cb0ea6fac4fb0d5
+$ apt-get source -qq --print-uris binutils=2.42-4ubuntu2.10
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.10.dsc' binutils_2.42-4ubuntu2.10.dsc 10152 SHA512:0e8e50a3777bfd6ebf0aa51c93554a25fbfe06c51a53b058a835e58cb752acef90a88715f21c4364d55006fc323c843a718381af586023c41fc8ec862681b0e0
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42.orig.tar.xz' binutils_2.42.orig.tar.xz 27567160 SHA512:155f3ba14cd220102f4f29a4f1e5cfee3c48aa03b74603460d05afb73c70d6657a9d87eee6eb88bf13203fe6f31177a5c9addc04384e956e7da8069c8ecd20a6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.10.debian.tar.xz' binutils_2.42-4ubuntu2.10.debian.tar.xz 196552 SHA512:4b96812b4a3adc8b825ca97fd31b9091f13953bdde67e0a917c5f8bd1d2a096fee2dd0a315ca01f76944795b81fd297ff3df4a25b3ed32ac2ac317e3de633943
 ```
 
 ### `dpkg` source package: `brotli=1.1.0-2build2`
@@ -311,11 +310,11 @@ $ apt-get source -qq --print-uris cdebconf=0.271ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.271ubuntu3.tar.xz' cdebconf_0.271ubuntu3.tar.xz 285500 SHA512:f9a3204842db5e0f0e042c9df72dee17692422bc4c745bc0c332317ec87dc219e26eda94404c1d7b0a6d5d6c2105da0b9ebe615c4897f012883bc8222f9ac85d
 ```
 
-### `dpkg` source package: `coreutils=9.4-3ubuntu6.1`
+### `dpkg` source package: `coreutils=9.4-3ubuntu6.2`
 
 Binary Packages:
 
-- `coreutils=9.4-3ubuntu6.1`
+- `coreutils=9.4-3ubuntu6.2`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
@@ -327,9 +326,14 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA512:b885d99011e59f8af8972a546b7d2f764367dd78ffe5df19e9b28903ed82d1d1db3fbbea8d2e9f16f16344c147b8bb61de41d9f6c2f71c4bf274d820bc0d802e
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz' coreutils_9.4.orig.tar.xz 5979200 SHA512:7c55ee23b685a0462bbbd118b04d25278c902604a0dcf3bf4f8bf81faa0500dee5a7813cba6f586d676c98e520cafd420f16479619305e94ea6798d8437561f5
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.debian.tar.xz' coreutils_9.4-3ubuntu6.2.debian.tar.xz 42032 SHA512:7f80c2e3bca8b6bd8fa099a8604b308703052e2be2cd68d340c03440124fa55d1a3c4fa1cbeb628b066a6cda107cbe6c909f9fdcf1052697fc4255276f34506b
+```
 
 ### `dpkg` source package: `curl=8.5.0-2ubuntu10.8`
 
@@ -2020,12 +2024,12 @@ $ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.5
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.5.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.5.debian.tar.xz 35260 SHA512:a031e8f6aeefbb9ea45439a24dc82f9e74b12c3e92b6444057648cc07187c00a0ca6cf32a6c51c0e50787f41d525c687cc3dad7492b46d785fa1088b04d10ea1
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.12`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.14`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.12`
-- `libudev1:amd64=255.4-1ubuntu8.12`
+- `libsystemd0:amd64=255.4-1ubuntu8.14`
+- `libudev1:amd64=255.4-1ubuntu8.14`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2038,9 +2042,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.14
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.dsc' systemd_255.4-1ubuntu8.14.dsc 7324 SHA512:cc3b0d413b31e1995708683ea8bfb139952b74783ccfcc8c4dcc1d0b3950ebecfa58eeb54f01a5d44e38ee85b55107c830ce42d2571c2042da8d0cc2a204aa1e
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.debian.tar.xz' systemd_255.4-1ubuntu8.14.debian.tar.xz 262172 SHA512:a7e3657be6aebac7b2baeacc4e179db686565a3db05f0730ce8f10e36d075dc8db8af43433ec712c3f45331b061614f76dedbfe08d00dd7f06c4a79e2fdde11d
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
@@ -2094,20 +2103,26 @@ $ apt-get source -qq --print-uris tar=1.35+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3build1.debian.tar.xz' tar_1.35+dfsg-3build1.debian.tar.xz 20948 SHA512:82b1a9f70c99c17f5288a4a9fbe8b1bef0adcd9543f97f876ee81afc16e3ac02e46182557406ff434ae90c81950f22346c3229ee3e5f5f9578dcf09a20053e9f
 ```
 
-### `dpkg` source package: `tzdata=2025b-0ubuntu0.24.04.1`
+### `dpkg` source package: `tzdata=2026a-0ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `tzdata=2025b-0ubuntu0.24.04.1`
+- `tzdata=2026a-0ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2026a-0ubuntu0.24.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.24.04.1.dsc' tzdata_2026a-0ubuntu0.24.04.1.dsc 2728 SHA512:a798cda54f303c368e7a8b650bc17589573286744ccd32feb7023c654ee8b656d66038e144bbfc5c489f313d426ab0b10e62f4772b28c9dadcb036f3a3435c34
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz' tzdata_2026a.orig.tar.gz 471812 SHA512:407e8e93aaa054a22a4a7d6d8cf480a20630073bf1a00956df16b10318f239a12015de38fad3072249193e314d6fddbff4e74afa40a88f7bf5c9eecc7659ea15
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz.asc' tzdata_2026a.orig.tar.gz.asc 833 SHA512:e84300a1a26c9bcd1f53dc9807794fc3424a362dff7101615592c8f323c4e5ad72be82c4d36220e2666376945f4aaaaa2fbcb87486eda90f23ea1b37e4cf3833
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2026a-0ubuntu0.24.04.1.debian.tar.xz 188416 SHA512:84d284dba6a64e9b0b3d26f5b74a4ab57907edf0643f7e97393801aff6fa2ae70c1d94493111165c825fff41911f14da58f067c71fb9017e27b2578fad44f089
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 
@@ -2146,17 +2161,17 @@ $ apt-get source -qq --print-uris unminimize=0.2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/u/unminimize/unminimize_0.2.1.tar.xz' unminimize_0.2.1.tar.xz 9400 SHA512:692ed9d0bb2d42ab5c74ef0f4c86d8f5922e4d1ee9d8efa8a03490437aff35c13b0114f7a62aa5464e95d4014db2745605a83fe7d9bfc81977de8ad56e3e901e
 ```
 
-### `dpkg` source package: `util-linux=2.39.3-9ubuntu6.4`
+### `dpkg` source package: `util-linux=2.39.3-9ubuntu6.5`
 
 Binary Packages:
 
-- `bsdutils=1:2.39.3-9ubuntu6.4`
-- `libblkid1:amd64=2.39.3-9ubuntu6.4`
-- `libmount1:amd64=2.39.3-9ubuntu6.4`
-- `libsmartcols1:amd64=2.39.3-9ubuntu6.4`
-- `libuuid1:amd64=2.39.3-9ubuntu6.4`
-- `mount=2.39.3-9ubuntu6.4`
-- `util-linux=2.39.3-9ubuntu6.4`
+- `bsdutils=1:2.39.3-9ubuntu6.5`
+- `libblkid1:amd64=2.39.3-9ubuntu6.5`
+- `libmount1:amd64=2.39.3-9ubuntu6.5`
+- `libsmartcols1:amd64=2.39.3-9ubuntu6.5`
+- `libuuid1:amd64=2.39.3-9ubuntu6.5`
+- `mount=2.39.3-9ubuntu6.5`
+- `util-linux=2.39.3-9ubuntu6.5`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2177,9 +2192,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.39.3-9ubuntu6.5
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.5.dsc' util-linux_2.39.3-9ubuntu6.5.dsc 4726 SHA512:be8fead4961e232992465ff9fce0286fda32445e44d1c9cc6b7b1135c1efea1ac941bb3e497f273e9af9414e299bce942eb677eebff5fc625533f6d02dd1b9cf
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA512:a2de1672f06ca5d2d431db1265a8499808770c3781019ec4a3a40170df4685826d8e3ca120841dcc5df4681ca8c935a993317bd0dc70465b21bf8e0efef65afa
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.5.debian.tar.xz' util-linux_2.39.3-9ubuntu6.5.debian.tar.xz 148016 SHA512:8c6db47b20b6a9dfe18a37b77308e0f99756f10e837f09cc7afe550b55a43f904fd2d6b5457b4a5519df9ca5422f4df76609e2bece2ffae84c6186cdb0cd4cb5
+```
 
 ### `dpkg` source package: `wget=1.21.4-1ubuntu4.1`
 
