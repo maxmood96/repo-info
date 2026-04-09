@@ -1,7 +1,7 @@
 ## `traefik:langres`
 
 ```console
-$ docker pull traefik@sha256:566d5a6906c33532245992c73f6ef137b79156712554c0aa925081cc080a5153
+$ docker pull traefik@sha256:4ed84af37add1d510ef521479b1a1be87c417cc2cc1693bb78c5872371fd96ea
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -322,13 +322,13 @@ $ docker pull traefik@sha256:b368deaba22fea84081349d62656af4f74e9ca3122cd59fea08
 ### `traefik:langres` - linux; riscv64
 
 ```console
-$ docker pull traefik@sha256:d59d96aab640487f03c26b3ad5a9f9370af814fdc8bf5d02e40d2c3704fe21a0
+$ docker pull traefik@sha256:8171fbd9a4f8983a416615ea594327a0931cd2aa553c4d1d5937a06f3352b9c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.4 MB (50363581 bytes)**  
+-	Total Size: **50.4 MB (50387608 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c19a91c330a5689d829c1ed4bd1f2c857a0829b0b020e7eaaad2d97e10d9fed`
+-	Image ID: `sha256:0308e54f8f7fca0ddad539409f19144ca8f1935ad5ae6360c2cb052f411379d5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["traefik"]`
 
@@ -339,18 +339,18 @@ ADD alpine-minirootfs-3.23.3-riscv64.tar.gz / # buildkit
 CMD ["/bin/sh"]
 # Fri, 20 Mar 2026 21:32:13 GMT
 RUN apk --no-cache add ca-certificates tzdata # buildkit
-# Thu, 26 Mar 2026 17:10:54 GMT
-RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='armv6' ;;         armv7) arch='armv7' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		riscv64) arch='riscv64' ;; 		s390x) arch='s390x' ;; 		ppc64le) arch='ppc64le' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget --quiet -O /tmp/traefik.tar.gz "https://github.com/traefik/traefik/releases/download/v3.7.0-ea.3/traefik_v3.7.0-ea.3_linux_$arch.tar.gz"; 	tar xzvf /tmp/traefik.tar.gz -C /usr/local/bin traefik; 	rm -f /tmp/traefik.tar.gz; 	chmod +x /usr/local/bin/traefik # buildkit
-# Thu, 26 Mar 2026 17:10:54 GMT
+# Thu, 09 Apr 2026 00:15:00 GMT
+RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='armv6' ;;         armv7) arch='armv7' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		riscv64) arch='riscv64' ;; 		s390x) arch='s390x' ;; 		ppc64le) arch='ppc64le' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget --quiet -O /tmp/traefik.tar.gz "https://github.com/traefik/traefik/releases/download/v3.7.0-rc.1/traefik_v3.7.0-rc.1_linux_$arch.tar.gz"; 	tar xzvf /tmp/traefik.tar.gz -C /usr/local/bin traefik; 	rm -f /tmp/traefik.tar.gz; 	chmod +x /usr/local/bin/traefik # buildkit
+# Thu, 09 Apr 2026 00:15:00 GMT
 COPY entrypoint.sh / # buildkit
-# Thu, 26 Mar 2026 17:10:54 GMT
+# Thu, 09 Apr 2026 00:15:00 GMT
 EXPOSE map[80/tcp:{}]
-# Thu, 26 Mar 2026 17:10:54 GMT
+# Thu, 09 Apr 2026 00:15:00 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 26 Mar 2026 17:10:54 GMT
+# Thu, 09 Apr 2026 00:15:00 GMT
 CMD ["traefik"]
-# Thu, 26 Mar 2026 17:10:54 GMT
-LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.0-ea.3 org.opencontainers.image.documentation=https://docs.traefik.io
+# Thu, 09 Apr 2026 00:15:00 GMT
+LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.0-rc.1 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
@@ -362,37 +362,37 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Fri, 20 Mar 2026 21:38:03 GMT  
 		Size: 461.0 KB (460986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ccafdce6b86a4a6c6a07f59cda5a2ed7638ea167e0ac31d60cd2428eaa9be27`  
-		Last Modified: Thu, 26 Mar 2026 17:15:42 GMT  
-		Size: 46.3 MB (46316940 bytes)  
+	-	`sha256:06d2bb5f37de278aaeffc3b31bccfe3b50a51a50a4def8b1d37fab6c5c7069a9`  
+		Last Modified: Thu, 09 Apr 2026 00:20:14 GMT  
+		Size: 46.3 MB (46340965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a05f0c01e51371f466c4f949e06fe11dd2ecd85e95d4911316f52e8f1a8ec36`  
-		Last Modified: Thu, 26 Mar 2026 17:15:34 GMT  
-		Size: 368.0 B  
+	-	`sha256:94d981b5ada06c21ae28d6ae5ea64bbb5f30e419afb420f9c4e003d6d0d74bef`  
+		Last Modified: Thu, 09 Apr 2026 00:20:06 GMT  
+		Size: 370.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `traefik:langres` - unknown; unknown
 
 ```console
-$ docker pull traefik@sha256:381da69d99d7bf2fc015d236fe981f61f8bc7497d633f191607d534f65b65c23
+$ docker pull traefik@sha256:aa2b246f527b397d68ef2b6c459d27c3a2f0f9325a93808e33c32a5c0f15faed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **853.4 KB (853395 bytes)**  
+-	Total Size: **853.4 KB (853393 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:081795d98fab8763b214dc798a64854b21faaeadae174fb97a963616925894e4`
+-	Image ID: `sha256:b28a994a99e5ce4a08ae128837073341cc6e3c1bd6740bb698653c14bc7743b8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0b0f53aad0c0a83581f0164d0caa804775cab537480ffe9facfd32b8ba6c83c`  
-		Last Modified: Thu, 26 Mar 2026 17:15:34 GMT  
+	-	`sha256:320a8efc86b959f461c427129a3a1ee0fbcf0bdabeddfb5d7d3fea1751c9037d`  
+		Last Modified: Thu, 09 Apr 2026 00:20:07 GMT  
 		Size: 841.9 KB (841898 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:48d8fb6286d72e4e0daeaefa35569f0d3c694ee5837fdec4810b3e022a40db78`  
-		Last Modified: Thu, 26 Mar 2026 17:15:34 GMT  
-		Size: 11.5 KB (11497 bytes)  
+	-	`sha256:f51808a2086d6225bc567a22fe4d5baf241aab3ecdb5c04a2ea79de82d79f97b`  
+		Last Modified: Thu, 09 Apr 2026 00:20:06 GMT  
+		Size: 11.5 KB (11495 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `traefik:langres` - linux; s390x
