@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1aba64bcfdc8e12d3fcc1c644b875e6b046bb7380b91347b44d01e863d938e49`
-- Created: `2026-04-01T03:59:40.642338586Z`
+- Image ID: `sha256:a9685fee5cc6de5ed36ea9b182021675d2e82db4e62af153c2833242b44f8ea3`
+- Created: `2026-04-04T04:04:21.042912249Z`
 - Virtual Size: ~ 100.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.created=2026-04-01T04:01:06.856839+00:00`
+  - `org.opencontainers.image.created=2026-04-04T04:05:33.447700+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -390,11 +390,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.12-1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.12-1.debian.tar.xz' diffutils_3.12-1.debian.tar.xz 14752 SHA512:e2054eac9f98935f28d8335e2d06ac7ee55bf9d1f0ea0d4ff0eed2efe2e2cb2e717d732f04a6197027a8146e78931cc13bbb96dc3223cbdecb4e259549125515
 ```
 
-### `dpkg` source package: `dpkg=1.23.6ubuntu2`
+### `dpkg` source package: `dpkg=1.23.7ubuntu1`
 
 Binary Packages:
 
-- `dpkg=1.23.6ubuntu2`
+- `dpkg=1.23.7ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -402,9 +402,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.23.7ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.23.7ubuntu1.dsc' dpkg_1.23.7ubuntu1.dsc 3482 SHA512:b8af1554884f9057bfca85a0dc20a7c18f6ef1773b4ab423148360b069b99bed9624c8fdbbf9c0cc0626df9ea993b3f833ba7c2112c12157fd4d7696b3e8dc3a
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.23.7ubuntu1.tar.xz' dpkg_1.23.7ubuntu1.tar.xz 5773036 SHA512:94489c924b7d8588ea156fc9593fb576c1fce1b6e159d5095aacbea33c257459af523f77a5c471bbf54f3fb7787c554e90705e40d048db28c00d2e756525c6df
+```
 
 ### `dpkg` source package: `e2fsprogs=1.47.2-3ubuntu4`
 
@@ -1342,14 +1346,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=259.5-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu1.dsc' systemd_259.5-0ubuntu1.dsc 8517 SHA512:31f6ad61e57cfdd372797e42de8ad2ae3be42caf77e0cf658171f31d007078b0dcc51edc9b84e1440624d1e2571864a6d83b437e51c7e3d53a495e721d4333ad
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5.orig.tar.gz' systemd_259.5.orig.tar.gz 17336729 SHA512:cb76b3a11b400fea94de2be74bcd9178b2e986c1965cbc19824114fe14fdd9b6aed43ae325cf5bc505efa1333adc71e131e0a8b54519e6741baa090392bf0a98
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu1.debian.tar.xz' systemd_259.5-0ubuntu1.debian.tar.xz 247324 SHA512:4fe1ec0f4c8956c50dcf15793aad7588436df98e443572ffee00f62d4f53b10f1566e3ddfca093d1b09cbadbcc110e1bf9e0388dec205fb13e4838839b8ab319
-```
 
 ### `dpkg` source package: `sysvinit=3.15-5ubuntu1`
 
