@@ -1,7 +1,7 @@
 ## `php:8-alpine3.23`
 
 ```console
-$ docker pull php@sha256:78669917d3956007464a9f60186e84bbccf32fa5e6136af18e06a3650bf80162
+$ docker pull php@sha256:fa8599174dc8a1a8a9dabb42e054e6874d0f69bc3ea0a14176b7f9f74b7765e9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -742,13 +742,13 @@ $ docker pull php@sha256:e60994902241d793f2c0200e6d669627009fc800608506e4c006005
 ### `php:8-alpine3.23` - linux; riscv64
 
 ```console
-$ docker pull php@sha256:66702eb4ded96321dcec67a48655c294b96a33acd2f6a23128c0be4fa355c69d
+$ docker pull php@sha256:e6e22a8ccef653fed82004953d240a4c9b8d2d915998f315f1287905226582e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.5 MB (42488867 bytes)**  
+-	Total Size: **42.5 MB (42505178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88e494754167e2926ea4c2682a6059c2b21e53f0fead3a6dc5e6285538974ebd`
+-	Image ID: `sha256:3bd79b439fb11af082494bb132384be0f029dad26cf9801f89196ec03ef02ff6`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -776,24 +776,24 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Wed, 28 Jan 2026 09:13:07 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
 # Wed, 28 Jan 2026 09:13:07 GMT
-ENV PHP_VERSION=8.5.4
+ENV PHP_VERSION=8.5.5
 # Wed, 28 Jan 2026 09:13:07 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.5.4.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.4.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
 # Wed, 28 Jan 2026 09:13:07 GMT
-ENV PHP_SHA256=c1569f1f543f6b025c583cdc0e730e5c5833c603618613f1aa8e75d1524b8c91
-# Fri, 13 Mar 2026 03:59:35 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Fri, 10 Apr 2026 09:29:21 GMT
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
-# Fri, 13 Mar 2026 03:59:35 GMT
+# Fri, 10 Apr 2026 09:29:21 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 13 Mar 2026 04:59:43 GMT
+# Fri, 10 Apr 2026 10:28:28 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 13 Mar 2026 04:59:43 GMT
+# Fri, 10 Apr 2026 10:28:28 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 13 Mar 2026 04:59:47 GMT
+# Fri, 10 Apr 2026 10:28:33 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 13 Mar 2026 04:59:47 GMT
+# Fri, 10 Apr 2026 10:28:33 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 13 Mar 2026 04:59:47 GMT
+# Fri, 10 Apr 2026 10:28:33 GMT
 CMD ["php" "-a"]
 ```
 
@@ -814,48 +814,48 @@ CMD ["php" "-a"]
 		Last Modified: Wed, 28 Jan 2026 10:13:58 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b50a8991f7884a8d0b7a1fae82561b122988b8ccbdb0cff545c69fb3908d98dd`  
-		Last Modified: Fri, 13 Mar 2026 05:01:00 GMT  
-		Size: 14.4 MB (14373358 bytes)  
+	-	`sha256:20501e9e3d17b72af47b7d522d0c369998be222ed66ed9070ed2cbc45e500ca7`  
+		Last Modified: Fri, 10 Apr 2026 10:29:42 GMT  
+		Size: 14.4 MB (14379290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5733bac5831abd7ee8674df6d188dfe950729a76e65b91aee19abb037070b599`  
-		Last Modified: Fri, 13 Mar 2026 05:00:53 GMT  
-		Size: 495.0 B  
+	-	`sha256:0f7fa0bbe8ea35a7aeededb6a1c62d4e192d88a3cbaa6a9ac613390cef5f797e`  
+		Last Modified: Fri, 10 Apr 2026 10:29:38 GMT  
+		Size: 493.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad8987013c5721e9eccd24a9c57b83b7e29e947dd38af821c980bb3a9ada1184`  
-		Last Modified: Fri, 13 Mar 2026 05:00:58 GMT  
-		Size: 20.8 MB (20761779 bytes)  
+	-	`sha256:3c00b6c348638ca2fb138534e98df3a83c5788350e7f682c5dab61388d5988a1`  
+		Last Modified: Fri, 10 Apr 2026 10:29:43 GMT  
+		Size: 20.8 MB (20772153 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de3bfd4b6f124d03346b88bd1a08594078b52861ddd3085d0884518d8d18d002`  
-		Last Modified: Fri, 13 Mar 2026 05:00:53 GMT  
-		Size: 2.5 KB (2452 bytes)  
+	-	`sha256:ddf32615937490fdbee93796b59955ce07e051f019b76917819692421da228ef`  
+		Last Modified: Fri, 10 Apr 2026 10:29:38 GMT  
+		Size: 2.5 KB (2451 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e0859af6486c89a6d837e59f31d4859dd68abc557947eeabd819ff71f2523ab`  
-		Last Modified: Fri, 13 Mar 2026 05:00:56 GMT  
-		Size: 23.3 KB (23341 bytes)  
+	-	`sha256:491cab84c5a842c690a34c22c4cfe20f23d7b27019ca9d80e387fd23ef96828d`  
+		Last Modified: Fri, 10 Apr 2026 10:29:39 GMT  
+		Size: 23.3 KB (23349 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `php:8-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull php@sha256:52eccc38b92e69642bfc92982b4f1fe68a6682d0602541df995f2cd84a84b48b
+$ docker pull php@sha256:36c8c18e256c81498f6c94d7a673b7d00608adeaa98597d6d8816410c96525f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **320.3 KB (320287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:598f48c70673921a76f2e92f2d8f7a79c4489f4597ede3f08f05e1dbabd0ea7d`
+-	Image ID: `sha256:c0870c32edcee72a024c5d685ba490f13b40ad96ccd50f4283872ecaebf579da`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f9f53ffc69cc63357f55f71673f494d7b5690223ab64939ffc38e0801317db63`  
-		Last Modified: Fri, 13 Mar 2026 05:00:53 GMT  
+	-	`sha256:94aa3b36a6bc26dafd67e0f520b159ca27aab83f5622476e20d7b7adf469d3fc`  
+		Last Modified: Fri, 10 Apr 2026 10:29:38 GMT  
 		Size: 279.8 KB (279793 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:052a62c5be6b76c29cda6a3eb651c7588f01056b6239ab28d7ad61dfd2ae9810`  
-		Last Modified: Fri, 13 Mar 2026 05:00:53 GMT  
+	-	`sha256:e6728dc679c08e26f9177a068f3cac5379bb5e790bef7a100afdea7e1786a1a9`  
+		Last Modified: Fri, 10 Apr 2026 10:29:37 GMT  
 		Size: 40.5 KB (40494 bytes)  
 		MIME: application/vnd.in-toto+json
 
